@@ -2,11 +2,13 @@
 
 import { useMemo, useState } from "react";
 import {
+  CategoryKey,
   Product,
   TeamKey,
   TypeKey,
   bestPrice,
   products,
+  teamCategory,
   teamFlags,
   teamNames,
   typeNames,
@@ -24,6 +26,7 @@ export default function SearchExplorer() {
   const { locale, t } = useLanguage();
   const [query, setQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState<TypeKey | "all">("all");
+  const [categoryFilter, setCategoryFilter] = useState<CategoryKey | "all">("all");
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -34,7 +37,9 @@ export default function SearchExplorer() {
           teamNames[p.teamKey].en.toLowerCase().includes(normalized)
         : true;
       const matchesType = typeFilter === "all" || p.typeKey === typeFilter;
-      return matchesQuery && matchesType;
+      const matchesCategory =
+        categoryFilter === "all" || teamCategory[p.teamKey] === categoryFilter;
+      return matchesQuery && matchesType && matchesCategory;
     });
 
     return [...filtered].sort((a, b) => {
@@ -42,7 +47,7 @@ export default function SearchExplorer() {
       const priceB = bestPrice(b)?.price ?? Infinity;
       return priceA - priceB;
     });
-  }, [query, typeFilter]);
+  }, [query, typeFilter, categoryFilter]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -113,7 +118,42 @@ export default function SearchExplorer() {
           })}
         </div>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs text-zinc-500">{t.nav.categories}:</span>
+          <button
+            onClick={() => setCategoryFilter("all")}
+            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
+              categoryFilter === "all"
+                ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
+                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
+            }`}
+          >
+            {t.search.allCategories}
+          </button>
+          <button
+            onClick={() => setCategoryFilter("national")}
+            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
+              categoryFilter === "national"
+                ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
+                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
+            }`}
+          >
+            {t.search.categoryNational}
+          </button>
+          <button
+            onClick={() => setCategoryFilter("club")}
+            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
+              categoryFilter === "club"
+                ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
+                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
+            }`}
+          >
+            {t.search.categoryClubs}
+          </button>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs text-zinc-500">{t.search.typeLabel}:</span>
           <button
             onClick={() => setTypeFilter("all")}
             className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${

@@ -12,14 +12,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image
-            src="/images/stadium-crowd.jpg"
-            alt="Hinchada de fútbol en un estadio"
-            fill
-            priority
-            className="object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05060a] via-[#05060a]/80 to-[#05060a]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#05060a]/20 via-[#05060a]/50 to-[#05060a]" />
           <div className="absolute -left-32 top-10 h-72 w-72 animate-float rounded-full bg-cyan-500/20 blur-3xl" />
           <div className="absolute -right-24 top-40 h-80 w-80 animate-float rounded-full bg-violet-500/20 blur-3xl [animation-delay:2s]" />
         </div>
@@ -30,8 +23,12 @@ export default function Home() {
           </span>
           <h1 className="max-w-3xl text-4xl font-extrabold tracking-tight sm:text-6xl">
             {t.hero.titlePre}{" "}
-            <span className="text-gradient">{t.hero.titleHighlight}</span>{" "}
-            {t.hero.titlePost}
+            <span className="font-display text-gradient block sm:inline">
+              {t.hero.titleHighlight}
+            </span>{" "}
+            <span className="block text-2xl font-normal text-zinc-300 sm:inline sm:text-3xl">
+              {t.hero.titlePost}
+            </span>
           </h1>
           <p className="max-w-2xl text-lg text-zinc-400">{t.hero.subtitle}</p>
         </div>

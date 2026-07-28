@@ -23,37 +23,37 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_40px_-10px_rgba(34,211,238,0.35)]">
       <div
-        className="relative flex h-16 items-center justify-center overflow-hidden text-xs font-semibold text-white sm:h-20"
+        className="relative flex min-h-16 items-center justify-center overflow-hidden px-2 py-2 text-center text-xs font-semibold leading-tight text-white sm:min-h-20"
         style={{
           background: `linear-gradient(135deg, ${product.colorHex}, #05060a)`,
         }}
       >
         <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:bg-black/0" />
-        <span className="relative truncate px-2 tracking-wide">
+        <span className="relative tracking-wide">
           {team} · {type}
         </span>
       </div>
       <div className="flex flex-1 flex-col gap-2 p-3 sm:p-4">
-        <h3 className="truncate text-sm font-semibold text-zinc-50 sm:text-base">
+        <h3 className="text-sm font-semibold leading-snug text-zinc-50 sm:text-base">
           {team} {type} {product.season}
         </h3>
 
         {best ? (
-          <div className="flex items-center justify-between gap-2">
-            <div className="min-w-0">
+          <div className="flex flex-col gap-2">
+            <div>
               <p className="text-[11px] uppercase tracking-wide text-zinc-500">
                 {t.product.bestPrice}
               </p>
-              <p className="text-gradient truncate text-lg font-bold sm:text-xl">
+              <p className="text-gradient text-lg font-bold leading-tight sm:text-xl">
                 {formatPrice(best.price, best.currency, locale)}
               </p>
-              <p className="truncate text-xs text-zinc-500">
+              <p className="break-words text-xs text-zinc-500">
                 {t.product.in} {best.store}
               </p>
             </div>
             <a
               href={best.url}
-              className="shrink-0 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 px-3 py-2 text-xs font-medium text-black transition-opacity hover:opacity-90 sm:px-4 sm:text-sm"
+              className="w-full rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 px-3 py-2 text-center text-xs font-medium text-black transition-opacity hover:opacity-90 sm:text-sm"
             >
               {t.product.buy}
             </a>
@@ -78,18 +78,18 @@ export default function ProductCard({ product }: { product: Product }) {
                 {otherOffers.map((offer) => (
                   <li
                     key={offer.store}
-                    className="flex items-center justify-between gap-2 rounded-lg border border-white/5 bg-white/[0.03] px-3 py-2"
+                    className="flex flex-col gap-2 rounded-lg border border-white/5 bg-white/[0.03] px-3 py-2"
                   >
                     <span
                       className={
                         offer.inStock
-                          ? "truncate text-zinc-300"
-                          : "truncate text-zinc-600 line-through"
+                          ? "break-words text-zinc-300"
+                          : "break-words text-zinc-600 line-through"
                       }
                     >
                       {offer.store}
                     </span>
-                    <div className="flex shrink-0 items-center gap-2">
+                    <div className="flex items-center justify-between gap-2">
                       <span className="font-medium text-zinc-50">
                         {formatPrice(offer.price, offer.currency, locale)}
                       </span>

@@ -27,8 +27,8 @@ export default function CategoriesMenu() {
     {
       label: t.categoriesMenu.clubs,
       desc: t.categoriesMenu.clubsDesc,
-      href: "#",
-      available: false,
+      href: "/",
+      available: true,
     },
     {
       label: t.categoriesMenu.retro,

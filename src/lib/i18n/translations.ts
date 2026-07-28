@@ -39,6 +39,9 @@ export interface Translations {
     placeholder: string;
     noResults: string;
     allCategories: string;
+    categoryNational: string;
+    categoryClubs: string;
+    typeLabel: string;
     quickSelectLabel: string;
     clearAria: string;
     resultsCount: string;
@@ -121,24 +124,27 @@ export const translations: Record<Locale, Translations> = {
     hero: {
       badge: "⚡ Comparamos precios en segundos",
       titlePre: "Encontrá la",
-      titleHighlight: "camiseta más barata",
-      titlePost: "de tu selección",
+      titleHighlight: "camiseta de fútbol más barata",
+      titlePost: "sea de tu selección, tu club o tu liga favorita",
       subtitle:
-        "Buscamos entre distintas tiendas para mostrarte el mejor precio. Vos comprás directo en la tienda, nosotros hacemos la comparación por vos.",
+        "Selecciones, clubes, ligas de cualquier parte del mundo. Buscamos entre distintas tiendas para mostrarte el mejor precio, vos comprás directo donde quieras.",
     },
     steps: {
       title1: "Buscá",
-      text1: "Escribí tu selección o club favorito.",
+      text1: "Escribí el nombre de tu equipo, selección o liga.",
       title2: "Comparamos",
       text2: "Cruzamos precios de distintas tiendas al instante.",
       title3: "Comprás",
       text3: "Te llevamos directo a la mejor oferta disponible.",
     },
     search: {
-      label: "Buscá tu selección o club",
-      placeholder: "Ej: Argentina, Brasil, España...",
+      label: "Buscá tu selección, club o liga favorita",
+      placeholder: "Ej: Real Madrid, Boca, Argentina, Premier League...",
       noResults: 'No encontramos camisetas para "{query}" todavía. Estamos sumando más tiendas cada semana.',
       allCategories: "Todas",
+      categoryNational: "Selecciones",
+      categoryClubs: "Clubes",
+      typeLabel: "Tipo",
       quickSelectLabel: "Accesos rápidos",
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
@@ -162,7 +168,7 @@ export const translations: Record<Locale, Translations> = {
     },
     about: {
       title: "Sobre nosotros",
-      p1: "Football Cult nació con una idea simple: encontrar la camiseta de tu selección o club favorito no debería significar abrir veinte pestañas del navegador para comparar precios.",
+      p1: "Football Cult nació con una idea simple: encontrar la camiseta de tu selección, tu club o tu liga favorita —de cualquier parte del mundo— no debería significar abrir veinte pestañas del navegador para comparar precios.",
       p2: "Somos un comparador de precios independiente. Buscamos entre distintas tiendas online y te mostramos las mejores opciones disponibles para que decidas dónde comprar con toda la información a mano.",
       p3: 'Football Cult no vende productos directamente ni maneja pagos, envíos o devoluciones. Cuando hacés clic en "Comprar", te llevamos a la tienda correspondiente para que completes tu compra ahí. Algunos de esos enlaces son enlaces de afiliado: si comprás a través de ellos, podemos recibir una pequeña comisión de la tienda, sin ningún costo adicional para vos.',
     },
@@ -228,24 +234,27 @@ export const translations: Record<Locale, Translations> = {
     hero: {
       badge: "⚡ We compare prices in seconds",
       titlePre: "Find the",
-      titleHighlight: "cheapest jersey",
-      titlePost: "for your team",
+      titleHighlight: "cheapest football jersey",
+      titlePost: "from your national team, club, or league",
       subtitle:
-        "We search across different stores to show you the best price. You buy directly from the store, we just do the comparison for you.",
+        "National teams, clubs, leagues from anywhere in the world. We search across different stores to show you the best price, you buy directly wherever you want.",
     },
     steps: {
       title1: "Search",
-      text1: "Type your national team or club.",
+      text1: "Type your team, national side, or league.",
       title2: "We compare",
       text2: "We cross-check prices across stores instantly.",
       title3: "You buy",
       text3: "We take you straight to the best deal available.",
     },
     search: {
-      label: "Search your national team or club",
-      placeholder: "E.g: Argentina, Brazil, Spain...",
+      label: "Search your national team, club, or league",
+      placeholder: "E.g: Real Madrid, Boca, Argentina, Premier League...",
       noResults: 'We couldn\'t find jerseys for "{query}" yet. We\'re adding more stores every week.',
       allCategories: "All",
+      categoryNational: "National teams",
+      categoryClubs: "Clubs",
+      typeLabel: "Type",
       quickSelectLabel: "Quick picks",
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",
@@ -269,7 +278,7 @@ export const translations: Record<Locale, Translations> = {
     },
     about: {
       title: "About us",
-      p1: "Football Cult was born from a simple idea: finding your national team or club jersey shouldn't mean opening twenty browser tabs to compare prices.",
+      p1: "Football Cult was born from a simple idea: finding the jersey of your national team, club, or favorite league — from anywhere in the world — shouldn't mean opening twenty browser tabs to compare prices.",
       p2: "We're an independent price comparison site. We search across different online stores and show you the best available options so you can decide where to buy with all the information at hand.",
       p3: 'Football Cult doesn\'t sell products directly and doesn\'t handle payments, shipping, or returns. When you click "Buy," we take you to the corresponding store to complete your purchase there. Some of those links are affiliate links: if you buy through them, we may earn a small commission from the store, at no extra cost to you.',
     },

@@ -1,13 +1,35 @@
 import { Locale } from "@/lib/i18n/translations";
 
-export type TeamKey = "argentina" | "brasil" | "espana" | "francia";
+export type TeamKey =
+  | "argentina"
+  | "brasil"
+  | "espana"
+  | "francia"
+  | "realmadrid"
+  | "boca"
+  | "manutd";
+
 export type TypeKey = "home" | "away" | "third" | "goalkeeper";
+export type CategoryKey = "national" | "club";
+
+export const teamCategory: Record<TeamKey, CategoryKey> = {
+  argentina: "national",
+  brasil: "national",
+  espana: "national",
+  francia: "national",
+  realmadrid: "club",
+  boca: "club",
+  manutd: "club",
+};
 
 export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   argentina: { es: "Argentina", en: "Argentina" },
   brasil: { es: "Brasil", en: "Brazil" },
   espana: { es: "España", en: "Spain" },
   francia: { es: "Francia", en: "France" },
+  realmadrid: { es: "Real Madrid", en: "Real Madrid" },
+  boca: { es: "Boca Juniors", en: "Boca Juniors" },
+  manutd: { es: "Manchester United", en: "Manchester United" },
 };
 
 export const teamFlags: Record<TeamKey, string> = {
@@ -15,6 +37,9 @@ export const teamFlags: Record<TeamKey, string> = {
   brasil: "🇧🇷",
   espana: "🇪🇸",
   francia: "🇫🇷",
+  realmadrid: "⚪",
+  boca: "💙",
+  manutd: "🔴",
 };
 
 export const typeNames: Record<TypeKey, Record<Locale, string>> = {
@@ -101,6 +126,39 @@ export const products: Product[] = [
     offers: [
       { store: "Tienda Ejemplo B", price: 72.0, currency: "EUR", url: "#", inStock: true },
       { store: "Tienda Ejemplo E", price: 67.3, currency: "EUR", url: "#", inStock: true },
+    ],
+  },
+  {
+    id: "rma-home-2025",
+    teamKey: "realmadrid",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#F5F5F5",
+    offers: [
+      { store: "Tienda Ejemplo A", price: 89.99, currency: "EUR", url: "#", inStock: true },
+      { store: "Tienda Ejemplo C", price: 84.5, currency: "EUR", url: "#", inStock: true },
+    ],
+  },
+  {
+    id: "boca-home-2025",
+    teamKey: "boca",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#1B3A6B",
+    offers: [
+      { store: "Tienda Ejemplo B", price: 66.0, currency: "EUR", url: "#", inStock: true },
+      { store: "Tienda Ejemplo D", price: 61.75, currency: "EUR", url: "#", inStock: true },
+    ],
+  },
+  {
+    id: "manutd-home-2025",
+    teamKey: "manutd",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#DA020E",
+    offers: [
+      { store: "Tienda Ejemplo A", price: 91.0, currency: "EUR", url: "#", inStock: true },
+      { store: "Tienda Ejemplo E", price: 87.25, currency: "EUR", url: "#", inStock: true },
     ],
   },
 ];
