@@ -46,7 +46,7 @@ export default function CategoriesMenu() {
     >
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-1 transition-colors hover:text-white"
+        className="flex items-center gap-1 transition-colors hover:text-[#1a1a1a]"
         aria-expanded={open}
       >
         {t.nav.categories}
@@ -66,16 +66,16 @@ export default function CategoriesMenu() {
       </button>
 
       {open && (
-        <div className="glass absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl p-2 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.6)]">
+        <div className="absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl border border-black/[0.06] bg-white p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)]">
           {items.map((item) =>
             item.available ? (
               <a
                 key={item.label}
                 href={item.href}
-                className="block rounded-xl px-4 py-3 transition-colors hover:bg-white/5"
+                className="block rounded-xl px-4 py-3 transition-colors hover:bg-black/[0.03]"
               >
-                <p className="text-sm font-medium text-zinc-50">{item.label}</p>
-                <p className="text-xs text-zinc-500">{item.desc}</p>
+                <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
+                <p className="text-xs text-[#8a8a84]">{item.desc}</p>
               </a>
             ) : (
               <div
@@ -83,10 +83,10 @@ export default function CategoriesMenu() {
                 className="flex cursor-not-allowed items-center justify-between rounded-xl px-4 py-3 opacity-50"
               >
                 <div>
-                  <p className="text-sm font-medium text-zinc-50">{item.label}</p>
-                  <p className="text-xs text-zinc-500">{item.desc}</p>
+                  <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
+                  <p className="text-xs text-[#8a8a84]">{item.desc}</p>
                 </div>
-                <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-medium text-zinc-300">
+                <span className="rounded-full bg-black/[0.05] px-2 py-0.5 text-[10px] font-medium text-[#6b6b66]">
                   {t.categoriesMenu.soon}
                 </span>
               </div>

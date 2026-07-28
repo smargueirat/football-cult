@@ -54,6 +54,20 @@ export interface Translations {
     soldOut: string;
     viewStores: string;
     hideStores: string;
+    inStores: string;
+    sizesRange: string;
+  };
+  detail: {
+    backToCatalog: string;
+    chooseSize: string;
+    allSizes: string;
+    notAvailableInSize: string;
+    storesCompared: string;
+    basePrice: string;
+    shipping: string;
+    total: string;
+    viewInStore: string;
+    photoPlaceholder: string;
   };
   footer: {
     about: string;
@@ -157,6 +171,20 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Agotado",
       viewStores: "Ver otras tiendas ({n})",
       hideStores: "Ocultar tiendas",
+      inStores: "En {n} tiendas",
+      sizesRange: "Tallas {range}",
+    },
+    detail: {
+      backToCatalog: "Volver al catálogo",
+      chooseSize: "Elegí tu talla",
+      allSizes: "Todas las tiendas",
+      notAvailableInSize: "No disponible en talla {size}",
+      storesCompared: "{n} tiendas comparadas",
+      basePrice: "Precio",
+      shipping: "Envío",
+      total: "Total",
+      viewInStore: "Ver en tienda",
+      photoPlaceholder: "Foto de producto próximamente",
     },
     footer: {
       about: "Sobre nosotros",
@@ -267,6 +295,20 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Sold out",
       viewStores: "Other stores ({n})",
       hideStores: "Hide stores",
+      inStores: "At {n} stores",
+      sizesRange: "Sizes {range}",
+    },
+    detail: {
+      backToCatalog: "Back to catalog",
+      chooseSize: "Choose your size",
+      allSizes: "All stores",
+      notAvailableInSize: "Not available in size {size}",
+      storesCompared: "{n} stores compared",
+      basePrice: "Price",
+      shipping: "Shipping",
+      total: "Total",
+      viewInStore: "View in store",
+      photoPlaceholder: "Product photo coming soon",
     },
     footer: {
       about: "About us",

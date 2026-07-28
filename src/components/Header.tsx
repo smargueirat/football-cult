@@ -10,24 +10,24 @@ export default function Header() {
   const { t } = useLanguage();
 
   return (
-    <header className="glass sticky top-0 z-50">
+    <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-[#f7f5f0]/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2.5">
           <Logo className="h-8 w-8 sm:h-9 sm:w-9" />
-          <span className="font-display text-lg uppercase tracking-wide text-zinc-50 sm:text-xl">
+          <span className="text-lg font-semibold tracking-tight text-[#1a1a1a] sm:text-xl">
             {t.brand}
           </span>
         </Link>
         <div className="flex items-center gap-6">
-          <nav className="hidden items-center gap-6 text-sm text-zinc-400 sm:flex">
-            <Link href="/" className="transition-colors hover:text-white">
+          <nav className="hidden items-center gap-6 text-sm text-[#5b5b57] sm:flex">
+            <Link href="/" className="transition-colors hover:text-[#1a1a1a]">
               {t.nav.search}
             </Link>
             <CategoriesMenu />
-            <Link href="/sobre-nosotros" className="transition-colors hover:text-white">
+            <Link href="/sobre-nosotros" className="transition-colors hover:text-[#1a1a1a]">
               {t.nav.about}
             </Link>
-            <Link href="/contacto" className="transition-colors hover:text-white">
+            <Link href="/contacto" className="transition-colors hover:text-[#1a1a1a]">
               {t.nav.contact}
             </Link>
           </nav>

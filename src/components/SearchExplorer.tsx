@@ -6,7 +6,8 @@ import {
   Product,
   TeamKey,
   TypeKey,
-  bestPrice,
+  bestOffer,
+  offerTotal,
   products,
   teamCategory,
   teamFlags,
@@ -21,6 +22,36 @@ const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper"];
 const TEAM_KEYS: TeamKey[] = Array.from(
   new Set(products.map((p) => p.teamKey))
 );
+
+function Chip({
+  active,
+  onClick,
+  children,
+  accent = "green",
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+  accent?: "green" | "amber";
+}) {
+  const activeClasses =
+    accent === "green"
+      ? "border-[#1F6F4C] bg-[#1F6F4C]/10 text-[#1F6F4C]"
+      : "border-[#B45309] bg-[#B45309]/10 text-[#B45309]";
+
+  return (
+    <button
+      onClick={onClick}
+      className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
+        active
+          ? activeClasses
+          : "border-black/[0.08] bg-white text-[#5b5b57] hover:border-black/20 hover:text-[#1a1a1a]"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
 
 export default function SearchExplorer() {
   const { locale, t } = useLanguage();
@@ -43,22 +74,22 @@ export default function SearchExplorer() {
     });
 
     return [...filtered].sort((a, b) => {
-      const priceA = bestPrice(a)?.price ?? Infinity;
-      const priceB = bestPrice(b)?.price ?? Infinity;
-      return priceA - priceB;
+      const totalA = bestOffer(a) ? offerTotal(bestOffer(a)!) : Infinity;
+      const totalB = bestOffer(b) ? offerTotal(bestOffer(b)!) : Infinity;
+      return totalA - totalB;
     });
   }, [query, typeFilter, categoryFilter]);
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 rounded-3xl border border-black/[0.06] bg-white p-5 shadow-sm sm:p-6">
         <div className="flex flex-col gap-2">
-          <label htmlFor="search" className="text-sm font-medium text-zinc-300">
+          <label htmlFor="search" className="text-sm font-medium text-[#3a3a36]">
             {t.search.label}
           </label>
           <div className="relative">
             <svg
-              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-zinc-500"
+              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-[#9a9a94]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -76,13 +107,13 @@ export default function SearchExplorer() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={t.search.placeholder}
-              className="w-full rounded-2xl border border-white/10 bg-white/5 py-4 pl-12 pr-11 text-base text-zinc-50 placeholder-zinc-500 outline-none transition focus:border-cyan-400/60 focus:bg-white/10 focus:ring-2 focus:ring-cyan-400/20"
+              className="w-full rounded-2xl border border-black/[0.08] bg-[#faf9f5] py-4 pl-12 pr-11 text-base text-[#1a1a1a] placeholder-[#9a9a94] outline-none transition focus:border-[#1F6F4C]/50 focus:bg-white focus:ring-2 focus:ring-[#1F6F4C]/15"
             />
             {query && (
               <button
                 onClick={() => setQuery("")}
                 aria-label={t.search.clearAria}
-                className="absolute right-3 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-zinc-500 transition-colors hover:bg-white/10 hover:text-zinc-200"
+                className="absolute right-3 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-[#9a9a94] transition-colors hover:bg-black/[0.05] hover:text-[#1a1a1a]"
               >
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
                   <path
@@ -98,98 +129,58 @@ export default function SearchExplorer() {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-zinc-500">{t.search.quickSelectLabel}:</span>
+          <span className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}:</span>
           {TEAM_KEYS.map((key) => {
             const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
             return (
-              <button
+              <Chip
                 key={key}
+                active={active}
                 onClick={() => setQuery(active ? "" : teamNames[key][locale])}
-                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm transition-colors ${
-                  active
-                    ? "border-cyan-400/60 bg-cyan-400/10 text-cyan-300"
-                    : "border-white/10 bg-white/5 text-zinc-300 hover:text-white"
-                }`}
               >
                 <span>{teamFlags[key]}</span>
                 {teamNames[key][locale]}
-              </button>
+              </Chip>
             );
           })}
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-zinc-500">{t.nav.categories}:</span>
-          <button
-            onClick={() => setCategoryFilter("all")}
-            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-              categoryFilter === "all"
-                ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
-                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
-            }`}
-          >
+          <span className="text-xs text-[#9a9a94]">{t.nav.categories}:</span>
+          <Chip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} accent="amber">
             {t.search.allCategories}
-          </button>
-          <button
-            onClick={() => setCategoryFilter("national")}
-            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-              categoryFilter === "national"
-                ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
-                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
-            }`}
-          >
+          </Chip>
+          <Chip active={categoryFilter === "national"} onClick={() => setCategoryFilter("national")} accent="amber">
             {t.search.categoryNational}
-          </button>
-          <button
-            onClick={() => setCategoryFilter("club")}
-            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-              categoryFilter === "club"
-                ? "border-violet-400/60 bg-violet-400/10 text-violet-300"
-                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
-            }`}
-          >
+          </Chip>
+          <Chip active={categoryFilter === "club"} onClick={() => setCategoryFilter("club")} accent="amber">
             {t.search.categoryClubs}
-          </button>
+          </Chip>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-zinc-500">{t.search.typeLabel}:</span>
-          <button
-            onClick={() => setTypeFilter("all")}
-            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-              typeFilter === "all"
-                ? "border-cyan-400/60 bg-cyan-400/10 text-cyan-300"
-                : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
-            }`}
-          >
+          <span className="text-xs text-[#9a9a94]">{t.search.typeLabel}:</span>
+          <Chip active={typeFilter === "all"} onClick={() => setTypeFilter("all")}>
             {t.search.allCategories}
-          </button>
+          </Chip>
           {TYPE_FILTERS.map((key) => (
-            <button
-              key={key}
-              onClick={() => setTypeFilter(key)}
-              className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-                typeFilter === key
-                  ? "border-cyan-400/60 bg-cyan-400/10 text-cyan-300"
-                  : "border-white/10 bg-white/5 text-zinc-400 hover:text-zinc-200"
-              }`}
-            >
+            <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
               {typeNames[key][locale]}
-            </button>
+            </Chip>
           ))}
         </div>
       </div>
 
       {results.length === 0 ? (
-        <p className="text-zinc-500">
+        <p className="text-[#8a8a84]">
           {t.search.noResults.replace("{query}", query)}
         </p>
       ) : (
         <>
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-[#9a9a94]">
             {t.search.resultsCount.replace("{n}", String(results.length))}
           </p>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
             {results.map((product: Product) => (
               <ProductCard key={product.id} product={product} />
             ))}
