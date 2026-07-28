@@ -10,6 +10,13 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   francia: { es: "Francia", en: "France" },
 };
 
+export const teamFlags: Record<TeamKey, string> = {
+  argentina: "🇦🇷",
+  brasil: "🇧🇷",
+  espana: "🇪🇸",
+  francia: "🇫🇷",
+};
+
 export const typeNames: Record<TypeKey, Record<Locale, string>> = {
   home: { es: "Titular", en: "Home" },
   away: { es: "Suplente", en: "Away" },

@@ -39,6 +39,9 @@ export interface Translations {
     placeholder: string;
     noResults: string;
     allCategories: string;
+    quickSelectLabel: string;
+    clearAria: string;
+    resultsCount: string;
   };
   product: {
     bestPrice: string;
@@ -46,6 +49,8 @@ export interface Translations {
     outOfStockLabel: string;
     buy: string;
     soldOut: string;
+    viewStores: string;
+    hideStores: string;
   };
   footer: {
     about: string;
@@ -134,6 +139,9 @@ export const translations: Record<Locale, Translations> = {
       placeholder: "Ej: Argentina, Brasil, España...",
       noResults: 'No encontramos camisetas para "{query}" todavía. Estamos sumando más tiendas cada semana.',
       allCategories: "Todas",
+      quickSelectLabel: "Accesos rápidos",
+      clearAria: "Limpiar búsqueda",
+      resultsCount: "{n} camisetas encontradas",
     },
     product: {
       bestPrice: "Mejor precio",
@@ -141,6 +149,8 @@ export const translations: Record<Locale, Translations> = {
       outOfStockLabel: "Sin stock disponible",
       buy: "Comprar",
       soldOut: "Agotado",
+      viewStores: "Ver otras tiendas ({n})",
+      hideStores: "Ocultar tiendas",
     },
     footer: {
       about: "Sobre nosotros",
@@ -236,6 +246,9 @@ export const translations: Record<Locale, Translations> = {
       placeholder: "E.g: Argentina, Brazil, Spain...",
       noResults: 'We couldn\'t find jerseys for "{query}" yet. We\'re adding more stores every week.',
       allCategories: "All",
+      quickSelectLabel: "Quick picks",
+      clearAria: "Clear search",
+      resultsCount: "{n} jerseys found",
     },
     product: {
       bestPrice: "Best price",
@@ -243,6 +256,8 @@ export const translations: Record<Locale, Translations> = {
       outOfStockLabel: "No stock available",
       buy: "Buy",
       soldOut: "Sold out",
+      viewStores: "Other stores ({n})",
+      hideStores: "Hide stores",
     },
     footer: {
       about: "About us",
