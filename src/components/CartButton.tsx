@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import Portal from "./Portal";
 
 export default function CartButton() {
   const { t } = useLanguage();
@@ -26,7 +27,9 @@ export default function CartButton() {
 
       {open && (
         <>
-          <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
+          <Portal>
+            <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
+          </Portal>
           <div className="solid-panel absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]">
             <p className="text-sm font-medium text-[#1a1a1a]">{t.cartPanel.title}</p>
             <p className="mt-1 text-xs text-[#8a8a84]">{t.cartPanel.text}</p>

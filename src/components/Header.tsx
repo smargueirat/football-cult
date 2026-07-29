@@ -16,17 +16,17 @@ export default function Header() {
 
   return (
     <header className="glass-panel sticky top-0 z-50 border-b border-black/[0.06]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
-        <div className="flex items-center gap-2 sm:gap-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-3 py-3 sm:px-6 sm:py-4">
+        <div className="flex items-center gap-1.5 sm:gap-4">
           <MobileMenu />
-          <Link href="/" className="flex items-center gap-2">
-            <Logo className="h-8 w-8 sm:h-9 sm:w-9" />
-            <span className="font-vintage text-xl leading-none text-[#1B3B2B] sm:text-2xl">
+          <Link href="/" className="flex items-center gap-1.5 sm:gap-2">
+            <Logo className="h-7 w-7 sm:h-9 sm:w-9" />
+            <span className="font-vintage text-lg leading-none text-[#1B3B2B] sm:text-2xl">
               {t.brand}
             </span>
           </Link>
         </div>
-        <div className="flex items-center gap-3 sm:gap-5">
+        <div className="flex items-center gap-1 sm:gap-5">
           <nav className="hidden items-center gap-6 text-sm text-[#5b5b57] lg:flex">
             <Link href="/" className="transition-colors hover:text-[#1a1a1a]">
               {t.nav.search}
@@ -39,7 +39,7 @@ export default function Header() {
               {t.nav.contact}
             </Link>
           </nav>
-          <div className="hidden items-center gap-0.5 border-l border-black/[0.08] pl-3 sm:flex sm:gap-1 sm:pl-4">
+          <div className="flex items-center gap-0 border-l border-black/[0.08] pl-1.5 sm:gap-1 sm:pl-4">
             <LoginButton />
             <FavoritesButton />
             <CartButton />

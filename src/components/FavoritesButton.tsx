@@ -13,6 +13,7 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
+import Portal from "./Portal";
 
 export default function FavoritesButton() {
   const { locale, t } = useLanguage();
@@ -48,7 +49,9 @@ export default function FavoritesButton() {
 
       {open && (
         <>
-          <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
+          <Portal>
+            <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
+          </Portal>
           <div className="solid-panel absolute right-0 top-full z-50 mt-2 w-72 rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]">
             <p className="mb-2 text-sm font-medium text-[#1a1a1a]">
               {t.favoritesPanel.title}
