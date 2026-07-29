@@ -1,21 +1,35 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { CategoryKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import Portal from "./Portal";
 
 export default function MobileMenu() {
   const { t } = useLanguage();
+  const { setCategoryFilter, setQuery } = useSearchFilter();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { label: t.nav.search, href: "/" },
-    { label: t.categoriesMenu.national, href: "/" },
-    { label: t.categoriesMenu.clubs, href: "/" },
+  const links: { label: string; href: string; category?: CategoryKey | "all" }[] = [
+    { label: t.nav.search, href: "/", category: "all" },
+    { label: t.categoriesMenu.national, href: "/", category: "national" },
+    { label: t.categoriesMenu.clubs, href: "/", category: "club" },
     { label: t.nav.about, href: "/sobre-nosotros" },
     { label: t.nav.contact, href: "/contacto" },
   ];
+
+  function handleClick(link: (typeof links)[number]) {
+    setOpen(false);
+    if (link.category) {
+      setQuery("");
+      setCategoryFilter(link.category);
+    }
+    router.push(link.href);
+  }
 
   return (
     <div className="lg:hidden">
@@ -54,7 +68,10 @@ export default function MobileMenu() {
                   <Link
                     key={link.label}
                     href={link.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleClick(link);
+                    }}
                     className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
                   >
                     {link.label}

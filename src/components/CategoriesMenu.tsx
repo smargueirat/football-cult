@@ -1,10 +1,15 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
+import { CategoryKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 
 export default function CategoriesMenu() {
   const { t } = useLanguage();
+  const { setCategoryFilter, setQuery } = useSearchFilter();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -17,26 +22,32 @@ export default function CategoriesMenu() {
     closeTimeout.current = setTimeout(() => setOpen(false), 150);
   }
 
-  const items = [
+  const items: {
+    label: string;
+    desc: string;
+    category: CategoryKey;
+    available: boolean;
+  }[] = [
     {
       label: t.categoriesMenu.national,
       desc: t.categoriesMenu.nationalDesc,
-      href: "/",
+      category: "national",
       available: true,
     },
     {
       label: t.categoriesMenu.clubs,
       desc: t.categoriesMenu.clubsDesc,
-      href: "/",
+      category: "club",
       available: true,
     },
-    {
-      label: t.categoriesMenu.retro,
-      desc: t.categoriesMenu.retroDesc,
-      href: "#",
-      available: false,
-    },
   ];
+
+  function goToCategory(category: CategoryKey) {
+    setQuery("");
+    setCategoryFilter(category);
+    setOpen(false);
+    router.push("/");
+  }
 
   return (
     <div
@@ -67,31 +78,25 @@ export default function CategoriesMenu() {
 
       {open && (
         <div className="solid-panel absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl border border-black/[0.06] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)]">
-          {items.map((item) =>
-            item.available ? (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block rounded-xl px-4 py-3 transition-colors hover:bg-black/[0.03]"
-              >
-                <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
-                <p className="text-xs text-[#8a8a84]">{item.desc}</p>
-              </a>
-            ) : (
-              <div
-                key={item.label}
-                className="flex cursor-not-allowed items-center justify-between rounded-xl px-4 py-3 opacity-50"
-              >
-                <div>
-                  <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
-                  <p className="text-xs text-[#8a8a84]">{item.desc}</p>
-                </div>
-                <span className="rounded-full bg-black/[0.05] px-2 py-0.5 text-[10px] font-medium text-[#6b6b66]">
-                  {t.categoriesMenu.soon}
-                </span>
-              </div>
-            )
-          )}
+          {items.map((item) => (
+            <button
+              key={item.label}
+              onClick={() => goToCategory(item.category)}
+              className="block w-full rounded-xl px-4 py-3 text-left transition-colors hover:bg-black/[0.03]"
+            >
+              <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
+              <p className="text-xs text-[#8a8a84]">{item.desc}</p>
+            </button>
+          ))}
+          <div className="flex cursor-not-allowed items-center justify-between rounded-xl px-4 py-3 opacity-50">
+            <div>
+              <p className="text-sm font-medium text-[#1a1a1a]">{t.categoriesMenu.retro}</p>
+              <p className="text-xs text-[#8a8a84]">{t.categoriesMenu.retroDesc}</p>
+            </div>
+            <span className="rounded-full bg-black/[0.05] px-2 py-0.5 text-[10px] font-medium text-[#6b6b66]">
+              {t.categoriesMenu.soon}
+            </span>
+          </div>
         </div>
       )}
     </div>

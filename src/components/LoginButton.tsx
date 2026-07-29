@@ -26,15 +26,13 @@ export default function LoginButton() {
       </button>
 
       {open && (
-        <>
-          <Portal>
-            <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          </Portal>
-          <div className="solid-panel absolute right-0 top-full z-50 mt-2 w-64 rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]">
+        <Portal>
+          <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
+          <div className="solid-panel fixed right-3 top-14 z-50 w-64 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
             <p className="text-sm font-medium text-[#1a1a1a]">{t.loginPanel.title}</p>
             <p className="mt-1 text-xs text-[#8a8a84]">{t.loginPanel.text}</p>
           </div>
-        </>
+        </Portal>
       )}
     </div>
   );

@@ -3,13 +3,12 @@
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
 
 export default function Home() {
   const { t } = useLanguage();
 
   return (
-    <SearchFilterProvider>
+    <>
       <div className="flex flex-1 flex-col">
         {/* Hero */}
         <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-2 px-6 pb-4 pt-4 text-center sm:gap-6 sm:pb-20 sm:pt-28">
@@ -58,6 +57,6 @@ export default function Home() {
       </div>
 
       <FloatingFilterButton />
-    </SearchFilterProvider>
+    </>
   );
 }

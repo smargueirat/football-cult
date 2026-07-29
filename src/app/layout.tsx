@@ -7,6 +7,7 @@ import StadiumWatermark from "@/components/StadiumWatermark";
 import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import { FavoritesProvider } from "@/lib/favorites/FavoritesContext";
 import { CountryProvider } from "@/lib/country/CountryContext";
+import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,9 +41,11 @@ export default function RootLayout({
         <LanguageProvider>
           <CountryProvider>
             <FavoritesProvider>
-              <Header />
-              <main className="flex flex-1 flex-col">{children}</main>
-              <Footer />
+              <SearchFilterProvider>
+                <Header />
+                <main className="flex flex-1 flex-col">{children}</main>
+                <Footer />
+              </SearchFilterProvider>
             </FavoritesProvider>
           </CountryProvider>
         </LanguageProvider>
