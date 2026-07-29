@@ -7,21 +7,39 @@ export default function StadiumWatermark() {
         style={{
           backgroundImage:
             "repeating-linear-gradient(90deg, #2F6F4E 0px, #2F6F4E 90px, #245A3F 90px, #245A3F 180px)",
-          opacity: 0.14,
+          opacity: 0.18,
         }}
       />
 
-      {/* líneas de cancha: círculo central y línea de mitad */}
+      {/* cancha completa: líneas, área, semicírculos, córners */}
       <svg
-        className="absolute left-1/2 top-1/2 h-[70vmax] w-[70vmax] -translate-x-1/2 -translate-y-1/2 opacity-[0.05]"
-        viewBox="0 0 1000 1000"
+        className="absolute left-1/2 top-1/2 h-[85vmin] w-[85vmin] -translate-x-1/2 -translate-y-1/2 opacity-[0.1]"
+        viewBox="0 0 1050 680"
         fill="none"
+        preserveAspectRatio="xMidYMid meet"
       >
-        <line x1="500" y1="0" x2="500" y2="1000" stroke="#FFFFFF" strokeWidth="4" />
-        <circle cx="500" cy="500" r="160" stroke="#FFFFFF" strokeWidth="4" />
-        <circle cx="500" cy="500" r="6" fill="#FFFFFF" />
-        <path d="M 500 -50 A 260 260 0 0 1 500 250" stroke="#FFFFFF" strokeWidth="4" />
-        <path d="M 500 750 A 260 260 0 0 1 500 1050" stroke="#FFFFFF" strokeWidth="4" />
+        <rect x="20" y="20" width="1010" height="640" stroke="#FFFFFF" strokeWidth="5" />
+        <line x1="525" y1="20" x2="525" y2="660" stroke="#FFFFFF" strokeWidth="5" />
+        <circle cx="525" cy="340" r="91.5" stroke="#FFFFFF" strokeWidth="5" />
+        <circle cx="525" cy="340" r="5" fill="#FFFFFF" />
+
+        {/* área y semicírculo izquierdo */}
+        <rect x="20" y="138" width="165" height="404" stroke="#FFFFFF" strokeWidth="5" />
+        <rect x="20" y="249" width="55" height="182" stroke="#FFFFFF" strokeWidth="5" />
+        <circle cx="131" cy="340" r="5" fill="#FFFFFF" />
+        <path d="M 185 266 A 91.5 91.5 0 0 1 185 414" stroke="#FFFFFF" strokeWidth="5" />
+
+        {/* área y semicírculo derecho */}
+        <rect x="865" y="138" width="165" height="404" stroke="#FFFFFF" strokeWidth="5" />
+        <rect x="975" y="249" width="55" height="182" stroke="#FFFFFF" strokeWidth="5" />
+        <circle cx="919" cy="340" r="5" fill="#FFFFFF" />
+        <path d="M 865 266 A 91.5 91.5 0 0 0 865 414" stroke="#FFFFFF" strokeWidth="5" />
+
+        {/* arcos de córner */}
+        <path d="M 20 45 A 25 25 0 0 1 45 20" stroke="#FFFFFF" strokeWidth="5" />
+        <path d="M 1005 20 A 25 25 0 0 1 1030 45" stroke="#FFFFFF" strokeWidth="5" />
+        <path d="M 45 660 A 25 25 0 0 1 20 635" stroke="#FFFFFF" strokeWidth="5" />
+        <path d="M 1030 635 A 25 25 0 0 1 1005 660" stroke="#FFFFFF" strokeWidth="5" />
       </svg>
 
       {/* viñeta radial, profundidad de estadio nocturno */}
