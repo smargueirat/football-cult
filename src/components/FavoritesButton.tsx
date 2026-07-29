@@ -88,6 +88,15 @@ export default function FavoritesButton() {
                 })}
               </ul>
             )}
+            {savedProducts.length > 0 && (
+              <Link
+                href="/favoritos"
+                onClick={() => setOpen(false)}
+                className="mt-2 flex items-center justify-center rounded-xl border-t border-black/[0.06] pt-3 text-sm font-medium text-[#1F6F4C] transition-colors hover:text-[#18573c]"
+              >
+                {t.favoritesPanel.viewAll}
+              </Link>
+            )}
           </div>
         </>
       )}
