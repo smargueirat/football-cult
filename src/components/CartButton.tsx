@@ -12,7 +12,7 @@ export default function CartButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.cart}
-        className="flex h-9 w-9 items-center justify-center rounded-full text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
+        className="flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path

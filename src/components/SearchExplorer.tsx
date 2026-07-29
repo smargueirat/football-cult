@@ -5,9 +5,10 @@ import {
   Product,
   TeamKey,
   TypeKey,
-  bestOffer,
+  bestOfferForCountry,
   offerTotal,
   products,
+  shipsToCountry,
   teamCategory,
   teamColors,
   teamNames,
@@ -15,6 +16,7 @@ import {
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useSearchFilter } from "@/lib/search/SearchFilterContext";
+import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard";
 import Chip from "./Chip";
 
@@ -28,6 +30,7 @@ export default function SearchExplorer() {
   const { locale, t } = useLanguage();
   const { query, setQuery, typeFilter, setTypeFilter, categoryFilter, setCategoryFilter } =
     useSearchFilter();
+  const { countryCode } = useCountry();
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -40,15 +43,18 @@ export default function SearchExplorer() {
       const matchesType = typeFilter === "all" || p.typeKey === typeFilter;
       const matchesCategory =
         categoryFilter === "all" || teamCategory[p.teamKey] === categoryFilter;
-      return matchesQuery && matchesType && matchesCategory;
+      const matchesShipping = shipsToCountry(p, countryCode);
+      return matchesQuery && matchesType && matchesCategory && matchesShipping;
     });
 
     return [...filtered].sort((a, b) => {
-      const totalA = bestOffer(a) ? offerTotal(bestOffer(a)!) : Infinity;
-      const totalB = bestOffer(b) ? offerTotal(bestOffer(b)!) : Infinity;
+      const bestA = bestOfferForCountry(a, countryCode);
+      const bestB = bestOfferForCountry(b, countryCode);
+      const totalA = bestA ? offerTotal(bestA) : Infinity;
+      const totalB = bestB ? offerTotal(bestB) : Infinity;
       return totalA - totalB;
     });
-  }, [query, typeFilter, categoryFilter]);
+  }, [query, typeFilter, categoryFilter, countryCode]);
 
   return (
     <div className="flex flex-col gap-6">

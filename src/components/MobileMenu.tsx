@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import LoginButton from "./LoginButton";
+import FavoritesButton from "./FavoritesButton";
+import CartButton from "./CartButton";
 
 export default function MobileMenu() {
   const { t } = useLanguage();
@@ -21,7 +24,7 @@ export default function MobileMenu() {
       <button
         onClick={() => setOpen(true)}
         aria-label={t.nav.categories}
-        className="flex h-9 w-9 items-center justify-center rounded-full text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
+        className="flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -46,6 +49,11 @@ export default function MobileMenu() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
+            </div>
+            <div className="mb-4 flex items-center gap-1 border-b border-black/[0.06] pb-4 sm:hidden">
+              <LoginButton />
+              <FavoritesButton />
+              <CartButton />
             </div>
             <nav className="flex flex-col gap-1">
               {links.map((link) => (

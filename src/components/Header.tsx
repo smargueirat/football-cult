@@ -9,6 +9,7 @@ import MobileMenu from "./MobileMenu";
 import LoginButton from "./LoginButton";
 import FavoritesButton from "./FavoritesButton";
 import CartButton from "./CartButton";
+import CountrySelector from "./CountrySelector";
 
 export default function Header() {
   const { t } = useLanguage();
@@ -18,9 +19,9 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <div className="flex items-center gap-2 sm:gap-4">
           <MobileMenu />
-          <Link href="/" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2">
             <Logo className="h-8 w-8 sm:h-9 sm:w-9" />
-            <span className="hidden text-lg font-semibold tracking-tight text-[#1a1a1a] sm:inline sm:text-xl">
+            <span className="font-vintage text-xl leading-none text-[#1B3B2B] sm:text-2xl">
               {t.brand}
             </span>
           </Link>
@@ -38,11 +39,12 @@ export default function Header() {
               {t.nav.contact}
             </Link>
           </nav>
-          <div className="flex items-center gap-0.5 border-l border-black/[0.08] pl-3 sm:gap-1 sm:pl-4">
+          <div className="hidden items-center gap-0.5 border-l border-black/[0.08] pl-3 sm:flex sm:gap-1 sm:pl-4">
             <LoginButton />
             <FavoritesButton />
             <CartButton />
           </div>
+          <CountrySelector />
           <LanguageSwitcher />
         </div>
       </div>

@@ -3,24 +3,20 @@
 import Link from "next/link";
 import { useState } from "react";
 import {
-  bestOffer,
+  bestOfferForCountry,
   findProduct,
+  formatMoney,
   offerTotal,
   teamNames,
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
-
-function formatPrice(value: number, currency: string, locale: string) {
-  return new Intl.NumberFormat(locale === "en" ? "en-US" : "es-ES", {
-    style: "currency",
-    currency,
-  }).format(value);
-}
+import { useCountry } from "@/lib/country/CountryContext";
 
 export default function FavoritesButton() {
   const { locale, t } = useLanguage();
+  const { country, countryCode } = useCountry();
   const { favorites } = useFavorites();
   const [open, setOpen] = useState(false);
 
@@ -33,7 +29,7 @@ export default function FavoritesButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.favorites}
-        className="relative flex h-9 w-9 items-center justify-center rounded-full text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
+        className="relative flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
@@ -62,7 +58,7 @@ export default function FavoritesButton() {
             ) : (
               <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
                 {savedProducts.map((product) => {
-                  const best = bestOffer(product);
+                  const best = bestOfferForCountry(product, countryCode);
                   return (
                     <li key={product.id}>
                       <Link
@@ -74,9 +70,13 @@ export default function FavoritesButton() {
                           {teamNames[product.teamKey][locale]}{" "}
                           {typeNames[product.typeKey][locale]}
                         </span>
-                        {best && (
+                        {best ? (
                           <span className="text-sm font-semibold text-[#B45309]">
-                            {formatPrice(offerTotal(best), best.currency, locale)}
+                            {formatMoney(offerTotal(best), country)}
+                          </span>
+                        ) : (
+                          <span className="text-xs text-[#b3b3ad]">
+                            {t.countryPanel.notAvailable}
                           </span>
                         )}
                       </Link>

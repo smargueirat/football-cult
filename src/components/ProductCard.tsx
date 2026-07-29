@@ -4,30 +4,28 @@ import Link from "next/link";
 import {
   Product,
   SIZES,
-  availableSizes,
-  bestOffer,
-  offerTotal,
+  availableSizesForCountry,
+  bestOfferForCountry,
+  formatMoney,
+  offerShipsTo,
   teamNames,
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
+import { useCountry } from "@/lib/country/CountryContext";
 import JerseyIcon from "./JerseyIcon";
-
-function formatPrice(price: number, currency: string, locale: string) {
-  return new Intl.NumberFormat(locale === "en" ? "en-US" : "es-ES", {
-    style: "currency",
-    currency,
-  }).format(price);
-}
 
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
+  const { country, countryCode } = useCountry();
   const favorite = isFavorite(product.id);
-  const best = bestOffer(product);
-  const storeCount = product.offers.filter((o) => o.inStock).length;
-  const sizes = availableSizes(product);
+  const best = bestOfferForCountry(product, countryCode);
+  const storeCount = product.offers.filter(
+    (o) => o.inStock && offerShipsTo(o.store, countryCode)
+  ).length;
+  const sizes = availableSizesForCountry(product, countryCode);
   const sizeRange =
     sizes.length > 0
       ? sizes[0] === sizes[sizes.length - 1]
@@ -58,7 +56,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {best && (
           <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full bg-gradient-to-br from-[#FDE68A] to-[#D97706] px-3 py-1.5 text-sm font-semibold text-[#4A2E04] shadow-md">
             <span className="text-xs">🥇</span>
-            {formatPrice(offerTotal(best), best.currency, locale)}
+            {formatMoney(best.price + best.shipping, country)}
           </div>
         )}
 
@@ -97,7 +95,7 @@ export default function ProductCard({ product }: { product: Product }) {
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (
-          <p className="text-xs text-[#8a8a84]">{t.product.outOfStockLabel}</p>
+          <p className="text-xs text-[#8a8a84]">{t.countryPanel.notAvailable}</p>
         )}
       </div>
     </Link>

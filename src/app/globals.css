@@ -29,3 +29,8 @@ body {
 .solid-panel {
   background: #fbf9f5;
 }
+
+.font-vintage {
+  font-family: var(--font-vintage);
+  letter-spacing: 0.04em;
+}

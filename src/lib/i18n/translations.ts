@@ -12,6 +12,12 @@ export interface Translations {
     login: string;
     favorites: string;
     cart: string;
+    shipTo: string;
+  };
+  countryPanel: {
+    title: string;
+    note: string;
+    notAvailable: string;
   };
   favoritesPanel: {
     empty: string;
@@ -143,6 +149,12 @@ export const translations: Record<Locale, Translations> = {
       login: "Ingresar",
       favorites: "Favoritos",
       cart: "Carrito",
+      shipTo: "Enviar a",
+    },
+    countryPanel: {
+      title: "¿A dónde enviamos?",
+      note: "Filtramos las tiendas que envían a tu país y mostramos precios en tu moneda (conversión aproximada).",
+      notAvailable: "Ninguna tienda envía a este país todavía para este producto.",
     },
     favoritesPanel: {
       empty: "Todavía no guardaste ninguna camiseta. Tocá el corazón en una tarjeta para guardarla acá.",
@@ -282,6 +294,12 @@ export const translations: Record<Locale, Translations> = {
       login: "Sign in",
       favorites: "Favorites",
       cart: "Cart",
+      shipTo: "Ship to",
+    },
+    countryPanel: {
+      title: "Where should we ship?",
+      note: "We filter stores that ship to your country and show prices in your currency (approximate conversion).",
+      notAvailable: "No store ships to this country yet for this product.",
     },
     favoritesPanel: {
       empty: "You haven't saved any jerseys yet. Tap the heart on a card to save it here.",

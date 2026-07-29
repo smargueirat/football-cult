@@ -58,6 +58,67 @@ export const teamColors: Record<TeamKey, [string, string]> = {
 
 export type JerseyPattern = "solid" | "stripes" | "band";
 
+export type CountryCode = "AR" | "ES" | "MX" | "BR" | "CL" | "US" | "GB" | "FR";
+
+export interface Country {
+  code: CountryCode;
+  name: Record<Locale, string>;
+  flag: string;
+  currency: string;
+  // Locale usado solo para formatear el símbolo/posición de la moneda.
+  formatLocale: string;
+  // Tasa aproximada respecto al EUR (nuestra moneda base de datos).
+  // NOTA: valor ilustrativo y estático — una integración real necesitaría
+  // un proveedor de tipo de cambio en vivo.
+  rateFromEUR: number;
+}
+
+export const countries: Country[] = [
+  { code: "AR", name: { es: "Argentina", en: "Argentina" }, flag: "🇦🇷", currency: "ARS", formatLocale: "es-AR", rateFromEUR: 1400 },
+  { code: "ES", name: { es: "España", en: "Spain" }, flag: "🇪🇸", currency: "EUR", formatLocale: "es-ES", rateFromEUR: 1 },
+  { code: "MX", name: { es: "México", en: "Mexico" }, flag: "🇲🇽", currency: "MXN", formatLocale: "es-MX", rateFromEUR: 19.5 },
+  { code: "BR", name: { es: "Brasil", en: "Brazil" }, flag: "🇧🇷", currency: "BRL", formatLocale: "pt-BR", rateFromEUR: 6.1 },
+  { code: "CL", name: { es: "Chile", en: "Chile" }, flag: "🇨🇱", currency: "CLP", formatLocale: "es-CL", rateFromEUR: 1030 },
+  { code: "US", name: { es: "Estados Unidos", en: "United States" }, flag: "🇺🇸", currency: "USD", formatLocale: "en-US", rateFromEUR: 1.08 },
+  { code: "GB", name: { es: "Reino Unido", en: "United Kingdom" }, flag: "🇬🇧", currency: "GBP", formatLocale: "en-GB", rateFromEUR: 0.84 },
+  { code: "FR", name: { es: "Francia", en: "France" }, flag: "🇫🇷", currency: "EUR", formatLocale: "fr-FR", rateFromEUR: 1 },
+];
+
+export function findCountry(code: CountryCode): Country {
+  return countries.find((c) => c.code === code) ?? countries[0];
+}
+
+export function convertFromEUR(amountEUR: number, country: Country): number {
+  return amountEUR * country.rateFromEUR;
+}
+
+export function formatMoney(amountEUR: number, country: Country): string {
+  const converted = convertFromEUR(amountEUR, country);
+  const maximumFractionDigits = converted >= 100 ? 0 : 2;
+  return new Intl.NumberFormat(country.formatLocale, {
+    style: "currency",
+    currency: country.currency,
+    maximumFractionDigits,
+  }).format(converted);
+}
+
+// A qué países envía cada tienda (ficticia). "all" = envío global.
+// NOTA: datos de ejemplo — en la integración real esto vendría del feed
+// de cada tienda afiliada.
+export const storeShipping: Record<string, CountryCode[] | "all"> = {
+  "Kit Center": "all",
+  "Elite Jerseys": "all",
+  "MatchDay Shop": ["ES", "FR", "GB"],
+  "ProSoccer Store": ["US", "MX", "AR"],
+  "GoalGear": ["AR", "BR", "CL", "MX"],
+};
+
+export function offerShipsTo(store: string, country: CountryCode): boolean {
+  const shipping = storeShipping[store];
+  if (!shipping) return true;
+  return shipping === "all" || shipping.includes(country);
+}
+
 export const typeNames: Record<TypeKey, Record<Locale, string>> = {
   home: { es: "Titular", en: "Home" },
   away: { es: "Suplente", en: "Away" },
@@ -210,10 +271,34 @@ export function bestOffer(product: Product): Offer | undefined {
     .sort((a, b) => offerTotal(a) - offerTotal(b))[0];
 }
 
+export function bestOfferForCountry(
+  product: Product,
+  country: CountryCode
+): Offer | undefined {
+  return [...product.offers]
+    .filter((o) => o.inStock && offerShipsTo(o.store, country))
+    .sort((a, b) => offerTotal(a) - offerTotal(b))[0];
+}
+
+export function shipsToCountry(product: Product, country: CountryCode): boolean {
+  return product.offers.some((o) => o.inStock && offerShipsTo(o.store, country));
+}
+
 export function availableSizes(product: Product): Size[] {
   const set = new Set<Size>();
   product.offers.forEach((o) => {
     if (o.inStock) o.sizes.forEach((s) => set.add(s));
+  });
+  return SIZES.filter((s) => set.has(s));
+}
+
+export function availableSizesForCountry(
+  product: Product,
+  country: CountryCode
+): Size[] {
+  const set = new Set<Size>();
+  product.offers.forEach((o) => {
+    if (o.inStock && offerShipsTo(o.store, country)) o.sizes.forEach((s) => set.add(s));
   });
   return SIZES.filter((s) => set.has(s));
 }
