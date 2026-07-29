@@ -82,7 +82,7 @@ export default function SearchExplorer() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-4 rounded-3xl border border-black/[0.06] bg-white/70 p-5 shadow-sm backdrop-blur-lg sm:p-6">
+      <div className="glass-panel flex flex-col gap-4 rounded-3xl border border-black/[0.06] p-5 shadow-sm sm:p-6">
         <div className="flex flex-col gap-2">
           <label htmlFor="search" className="text-sm font-medium text-[#3a3a36]">
             {t.search.label}

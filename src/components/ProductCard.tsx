@@ -37,7 +37,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/camiseta/${product.id}`}
-      className="group flex flex-col overflow-hidden rounded-2xl bg-white/80 shadow-sm backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+      className="glass-panel group flex flex-col overflow-hidden rounded-2xl shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center p-6"

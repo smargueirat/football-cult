@@ -130,7 +130,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 return (
                   <div
                     key={offer.store}
-                    className={`flex flex-col gap-3 rounded-2xl border bg-white/80 p-4 shadow-sm backdrop-blur-md transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
+                    className={`glass-panel flex flex-col gap-3 rounded-2xl border p-4 shadow-sm transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
                       isBest ? "border-[#D97706]/40 ring-1 ring-[#D97706]/20" : "border-black/[0.06]"
                     } ${match ? "" : "pointer-events-none opacity-40"}`}
                   >

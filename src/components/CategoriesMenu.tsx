@@ -66,7 +66,7 @@ export default function CategoriesMenu() {
       </button>
 
       {open && (
-        <div className="absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl border border-black/[0.06] bg-white/80 p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)] backdrop-blur-lg">
+        <div className="glass-panel absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl border border-black/[0.06] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)]">
           {items.map((item) =>
             item.available ? (
               <a
