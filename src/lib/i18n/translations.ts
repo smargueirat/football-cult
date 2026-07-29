@@ -9,6 +9,16 @@ export interface Translations {
     categories: string;
     about: string;
     contact: string;
+    login: string;
+    favorites: string;
+  };
+  favoritesPanel: {
+    empty: string;
+    title: string;
+  };
+  loginPanel: {
+    title: string;
+    text: string;
   };
   categoriesMenu: {
     national: string;
@@ -125,6 +135,16 @@ export const translations: Record<Locale, Translations> = {
       categories: "Categorías",
       about: "Sobre nosotros",
       contact: "Contacto",
+      login: "Ingresar",
+      favorites: "Favoritos",
+    },
+    favoritesPanel: {
+      empty: "Todavía no guardaste ninguna camiseta. Tocá el corazón en una tarjeta para guardarla acá.",
+      title: "Tus favoritos",
+    },
+    loginPanel: {
+      title: "Próximamente",
+      text: "Estamos trabajando en cuentas de usuario para guardar alertas de precio y favoritos entre dispositivos.",
     },
     categoriesMenu: {
       national: "Selecciones",
@@ -249,6 +269,16 @@ export const translations: Record<Locale, Translations> = {
       categories: "Categories",
       about: "About us",
       contact: "Contact",
+      login: "Sign in",
+      favorites: "Favorites",
+    },
+    favoritesPanel: {
+      empty: "You haven't saved any jerseys yet. Tap the heart on a card to save it here.",
+      title: "Your favorites",
+    },
+    loginPanel: {
+      title: "Coming soon",
+      text: "We're working on user accounts to save price alerts and favorites across devices.",
     },
     categoriesMenu: {
       national: "National teams",

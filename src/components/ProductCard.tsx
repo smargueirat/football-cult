@@ -11,6 +11,7 @@ import {
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import JerseyIcon from "./JerseyIcon";
 
 function formatPrice(price: number, currency: string, locale: string) {
@@ -22,6 +23,8 @@ function formatPrice(price: number, currency: string, locale: string) {
 
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
+  const { isFavorite, toggleFavorite } = useFavorites();
+  const favorite = isFavorite(product.id);
   const best = bestOffer(product);
   const storeCount = product.offers.filter((o) => o.inStock).length;
   const sizes = availableSizes(product);
@@ -58,6 +61,30 @@ export default function ProductCard({ product }: { product: Product }) {
             {formatPrice(offerTotal(best), best.currency, locale)}
           </div>
         )}
+
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleFavorite(product.id);
+          }}
+          aria-label={t.nav.favorites}
+          className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+        >
+          <svg
+            className="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill={favorite ? "currentColor" : "none"}
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-8.318a4.5 4.5 0 010-6.364z"
+            />
+          </svg>
+        </button>
       </div>
 
       <div className="flex flex-col gap-0.5 p-3 sm:p-4">

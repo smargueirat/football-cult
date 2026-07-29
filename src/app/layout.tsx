@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StadiumWatermark from "@/components/StadiumWatermark";
 import { LanguageProvider } from "@/lib/i18n/LanguageContext";
+import { FavoritesProvider } from "@/lib/favorites/FavoritesContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,9 +28,11 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-[#f7f5f0] text-[#1a1a1a]">
         <StadiumWatermark />
         <LanguageProvider>
-          <Header />
-          <main className="flex flex-1 flex-col">{children}</main>
-          <Footer />
+          <FavoritesProvider>
+            <Header />
+            <main className="flex flex-1 flex-col">{children}</main>
+            <Footer />
+          </FavoritesProvider>
         </LanguageProvider>
       </body>
     </html>
