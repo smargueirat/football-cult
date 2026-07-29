@@ -10,7 +10,7 @@ export default function Header() {
   const { t } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-[#f7f5f0]/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-white/60 backdrop-blur-lg">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2.5">
           <Logo className="h-8 w-8 sm:h-9 sm:w-9" />

@@ -10,7 +10,7 @@ import {
   offerTotal,
   products,
   teamCategory,
-  teamFlags,
+  teamColors,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -82,7 +82,7 @@ export default function SearchExplorer() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-4 rounded-3xl border border-black/[0.06] bg-white p-5 shadow-sm sm:p-6">
+      <div className="flex flex-col gap-4 rounded-3xl border border-black/[0.06] bg-white/70 p-5 shadow-sm backdrop-blur-lg sm:p-6">
         <div className="flex flex-col gap-2">
           <label htmlFor="search" className="text-sm font-medium text-[#3a3a36]">
             {t.search.label}
@@ -132,13 +132,17 @@ export default function SearchExplorer() {
           <span className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}:</span>
           {TEAM_KEYS.map((key) => {
             const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
+            const [c1, c2] = teamColors[key];
             return (
               <Chip
                 key={key}
                 active={active}
                 onClick={() => setQuery(active ? "" : teamNames[key][locale])}
               >
-                <span>{teamFlags[key]}</span>
+                <span
+                  className="h-4 w-4 rounded-full ring-1 ring-black/10"
+                  style={{ background: `linear-gradient(135deg, ${c1}, ${c2})` }}
+                />
                 {teamNames[key][locale]}
               </Chip>
             );

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import StadiumWatermark from "@/components/StadiumWatermark";
 import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 
 const inter = Inter({
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-[#f7f5f0] text-[#1a1a1a]">
+        <StadiumWatermark />
         <LanguageProvider>
           <Header />
           <main className="flex flex-1 flex-col">{children}</main>

@@ -42,6 +42,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   );
 
   const inStockCount = product.offers.filter((o) => o.inStock).length;
+  const bestStore = sortedOffers.find((o) => o.inStock)?.store;
 
   function matchesSize(offer: Offer) {
     return !selectedSize || offer.sizes.includes(selectedSize);
@@ -65,10 +66,15 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
           <div
             className="flex aspect-square items-center justify-center rounded-3xl p-16"
             style={{
-              background: `linear-gradient(135deg, ${product.colorHexSecondary}, ${product.colorHex})`,
+              background: `linear-gradient(135deg, #ffffff, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
             }}
           >
-            <JerseyIcon className="h-2/3 w-2/3 text-black/70" />
+            <JerseyIcon
+              className="h-2/3 w-2/3 drop-shadow-sm"
+              primary={product.colorHex}
+              secondary={product.colorHexSecondary}
+              pattern={product.jerseyPattern}
+            />
           </div>
           <p className="mt-3 text-center text-xs text-[#9a9a94]">
             {t.detail.photoPlaceholder}
@@ -120,12 +126,13 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             <div className="flex flex-col gap-3">
               {sortedOffers.map((offer) => {
                 const match = offer.inStock && matchesSize(offer);
+                const isBest = offer.store === bestStore && match;
                 return (
                   <div
                     key={offer.store}
-                    className={`flex flex-col gap-3 rounded-2xl border border-black/[0.06] bg-white p-4 shadow-sm transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
-                      match ? "" : "pointer-events-none opacity-40"
-                    }`}
+                    className={`flex flex-col gap-3 rounded-2xl border bg-white/80 p-4 shadow-sm backdrop-blur-md transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
+                      isBest ? "border-[#D97706]/40 ring-1 ring-[#D97706]/20" : "border-black/[0.06]"
+                    } ${match ? "" : "pointer-events-none opacity-40"}`}
                   >
                     <div className="flex items-center gap-3">
                       <span
@@ -135,7 +142,10 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                         {offer.store.charAt(0)}
                       </span>
                       <div>
-                        <p className="text-sm font-medium text-[#1a1a1a]">{offer.store}</p>
+                        <p className="flex items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
+                          {offer.store}
+                          {isBest && <span className="text-xs">🥇</span>}
+                        </p>
                         {!offer.inStock ? (
                           <p className="text-xs text-[#b3b3ad]">{t.product.soldOut}</p>
                         ) : !match ? (
@@ -155,7 +165,11 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                         <p className="text-[10px] uppercase tracking-wide text-[#9a9a94]">
                           {t.detail.total}
                         </p>
-                        <p className="text-lg font-semibold text-[#B45309]">
+                        <p
+                          className={`text-lg font-semibold ${
+                            isBest ? "text-[#B45309]" : "text-[#3a3a36]"
+                          }`}
+                        >
                           {formatPrice(offerTotal(offer), offer.currency, locale)}
                         </p>
                       </div>

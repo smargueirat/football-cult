@@ -136,7 +136,7 @@ export const translations: Record<Locale, Translations> = {
       soon: "Próximamente",
     },
     hero: {
-      badge: "⚡ Comparamos precios en segundos",
+      badge: "🚩 Fuera de juego a los precios caros",
       titlePre: "Encontrá la",
       titleHighlight: "camiseta de fútbol más barata",
       titlePost: "sea de tu selección, tu club o tu liga favorita",
@@ -153,7 +153,7 @@ export const translations: Record<Locale, Translations> = {
     },
     search: {
       label: "Buscá tu selección, club o liga favorita",
-      placeholder: "Ej: Real Madrid, Boca, Argentina, Premier League...",
+      placeholder: "Buscá una camiseta, un dorsal, una época... (Ej: Riquelme 2001, Italia 2006, Real Madrid)",
       noResults: 'No encontramos camisetas para "{query}" todavía. Estamos sumando más tiendas cada semana.',
       allCategories: "Todas",
       categoryNational: "Selecciones",
@@ -260,7 +260,7 @@ export const translations: Record<Locale, Translations> = {
       soon: "Coming soon",
     },
     hero: {
-      badge: "⚡ We compare prices in seconds",
+      badge: "🚩 Offside on rip-off prices",
       titlePre: "Find the",
       titleHighlight: "cheapest football jersey",
       titlePost: "from your national team, club, or league",
@@ -277,7 +277,7 @@ export const translations: Record<Locale, Translations> = {
     },
     search: {
       label: "Search your national team, club, or league",
-      placeholder: "E.g: Real Madrid, Boca, Argentina, Premier League...",
+      placeholder: "Search a jersey, a squad number, an era... (E.g: Riquelme 2001, Italy 2006, Real Madrid)",
       noResults: 'We couldn\'t find jerseys for "{query}" yet. We\'re adding more stores every week.',
       allCategories: "All",
       categoryNational: "National teams",

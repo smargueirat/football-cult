@@ -37,18 +37,24 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/camiseta/${product.id}`}
-      className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-2xl bg-white/80 shadow-sm backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center p-6"
         style={{
-          background: `linear-gradient(135deg, ${product.colorHexSecondary}, ${product.colorHex})`,
+          background: `linear-gradient(135deg, #ffffff, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
         }}
       >
-        <JerseyIcon className="h-2/3 w-2/3 text-black/70 transition-transform duration-300 group-hover:scale-105" />
+        <JerseyIcon
+          className="h-2/3 w-2/3 drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+          primary={product.colorHex}
+          secondary={product.colorHexSecondary}
+          pattern={product.jerseyPattern}
+        />
 
         {best && (
-          <div className="absolute bottom-3 right-3 rounded-full bg-white px-3 py-1.5 text-sm font-semibold text-[#1a1a1a] shadow-md">
+          <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full bg-gradient-to-br from-[#FDE68A] to-[#D97706] px-3 py-1.5 text-sm font-semibold text-[#4A2E04] shadow-md">
+            <span className="text-xs">🥇</span>
             {formatPrice(offerTotal(best), best.currency, locale)}
           </div>
         )}

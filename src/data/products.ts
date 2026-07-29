@@ -45,6 +45,19 @@ export const teamFlags: Record<TeamKey, string> = {
   manutd: "🔴",
 };
 
+// Colores icónicos por equipo, usados en los accesos rápidos y avatares.
+export const teamColors: Record<TeamKey, [string, string]> = {
+  argentina: ["#75AADB", "#FFFFFF"],
+  brasil: ["#FFCC29", "#0F5A2E"],
+  espana: ["#C60B1E", "#F5B942"],
+  francia: ["#0055A4", "#EF4135"],
+  realmadrid: ["#FEBE10", "#FFFFFF"],
+  boca: ["#1B3A6B", "#FFD400"],
+  manutd: ["#DA020E", "#000000"],
+};
+
+export type JerseyPattern = "solid" | "stripes" | "band";
+
 export const typeNames: Record<TypeKey, Record<Locale, string>> = {
   home: { es: "Titular", en: "Home" },
   away: { es: "Suplente", en: "Away" },
@@ -69,6 +82,7 @@ export interface Product {
   typeKey: TypeKey;
   colorHex: string;
   colorHexSecondary: string;
+  jerseyPattern: JerseyPattern;
   offers: Offer[];
 }
 
@@ -85,6 +99,7 @@ export const products: Product[] = [
     typeKey: "home",
     colorHex: "#75AADB",
     colorHexSecondary: "#F4F7FA",
+    jerseyPattern: "stripes",
     offers: [
       { store: "Kit Center", price: 74.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
       { store: "MatchDay Shop", price: 69.5, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
@@ -98,6 +113,7 @@ export const products: Product[] = [
     typeKey: "away",
     colorHex: "#1A1A2E",
     colorHexSecondary: "#75AADB",
+    jerseyPattern: "solid",
     offers: [
       { store: "Kit Center", price: 79.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "L", "XL"] },
       { store: "GoalGear", price: 71.25, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
@@ -110,6 +126,7 @@ export const products: Product[] = [
     typeKey: "home",
     colorHex: "#FFCC29",
     colorHexSecondary: "#0F5A2E",
+    jerseyPattern: "solid",
     offers: [
       { store: "MatchDay Shop", price: 68.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
       { store: "ProSoccer Store", price: 73.4, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
@@ -121,7 +138,8 @@ export const products: Product[] = [
     season: "2026",
     typeKey: "home",
     colorHex: "#C60B1E",
-    colorHexSecondary: "#F4B8C0",
+    colorHexSecondary: "#F5B942",
+    jerseyPattern: "solid",
     offers: [
       { store: "Kit Center", price: 76.5, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "XL"] },
       { store: "GoalGear", price: 70.0, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
@@ -135,6 +153,7 @@ export const products: Product[] = [
     typeKey: "home",
     colorHex: "#0055A4",
     colorHexSecondary: "#E8EDF5",
+    jerseyPattern: "solid",
     offers: [
       { store: "MatchDay Shop", price: 72.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
       { store: "Elite Jerseys", price: 67.3, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
@@ -147,6 +166,7 @@ export const products: Product[] = [
     typeKey: "home",
     colorHex: "#F5F5F5",
     colorHexSecondary: "#8FB8E8",
+    jerseyPattern: "solid",
     offers: [
       { store: "Kit Center", price: 89.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
       { store: "ProSoccer Store", price: 84.5, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
@@ -159,6 +179,7 @@ export const products: Product[] = [
     typeKey: "home",
     colorHex: "#1B3A6B",
     colorHexSecondary: "#F5C742",
+    jerseyPattern: "band",
     offers: [
       { store: "MatchDay Shop", price: 66.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
       { store: "GoalGear", price: 61.75, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
@@ -171,6 +192,7 @@ export const products: Product[] = [
     typeKey: "home",
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
+    jerseyPattern: "solid",
     offers: [
       { store: "Kit Center", price: 91.0, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
       { store: "Elite Jerseys", price: 87.25, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
