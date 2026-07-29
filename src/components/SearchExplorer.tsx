@@ -11,6 +11,7 @@ import {
   shipsToCountry,
   teamCategory,
   teamColors,
+  teamFlags,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -19,6 +20,7 @@ import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard";
 import Chip from "./Chip";
+import TeamBadge from "./TeamBadge";
 
 const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper"];
 
@@ -108,17 +110,17 @@ export default function SearchExplorer() {
           <span className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}:</span>
           {TEAM_KEYS.map((key) => {
             const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
-            const [c1, c2] = teamColors[key];
             return (
               <Chip
                 key={key}
                 active={active}
                 onClick={() => setQuery(active ? "" : teamNames[key][locale])}
               >
-                <span
-                  className="h-4 w-4 rounded-full ring-1 ring-black/10"
-                  style={{ background: `linear-gradient(135deg, ${c1}, ${c2})` }}
-                />
+                {teamCategory[key] === "national" ? (
+                  <span className="text-base leading-none">{teamFlags[key]}</span>
+                ) : (
+                  <TeamBadge colors={teamColors[key]} className="h-4 w-4" />
+                )}
                 {teamNames[key][locale]}
               </Chip>
             );
