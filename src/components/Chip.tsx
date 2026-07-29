@@ -3,11 +3,13 @@ export default function Chip({
   onClick,
   children,
   accent = "green",
+  className = "",
 }: {
   active: boolean;
   onClick: () => void;
   children: React.ReactNode;
   accent?: "green" | "amber";
+  className?: string;
 }) {
   const activeClasses =
     accent === "green"
@@ -21,7 +23,7 @@ export default function Chip({
         active
           ? activeClasses
           : "border-black/[0.08] bg-white text-[#5b5b57] hover:border-black/20 hover:text-[#1a1a1a]"
-      }`}
+      } ${className}`}
     >
       {children}
     </button>

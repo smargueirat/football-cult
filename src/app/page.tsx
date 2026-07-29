@@ -12,20 +12,22 @@ export default function Home() {
     <SearchFilterProvider>
       <div className="flex flex-1 flex-col">
         {/* Hero */}
-        <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-6 px-6 pb-16 pt-20 text-center sm:pb-20 sm:pt-28">
-          <span className="rounded-full border border-black/[0.08] bg-white px-4 py-1.5 text-xs font-medium tracking-wide text-[#5b5b57]">
+        <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-2 px-6 pb-4 pt-4 text-center sm:gap-6 sm:pb-20 sm:pt-28">
+          <span className="hidden rounded-full border border-black/[0.08] bg-white px-4 py-1.5 text-xs font-medium tracking-wide text-[#5b5b57] sm:inline-block">
             {t.hero.badge}
           </span>
-          <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-[#1a1a1a] sm:text-6xl">
+          <h1 className="max-w-3xl text-xl font-semibold leading-tight tracking-tight text-[#1a1a1a] sm:text-6xl">
             {t.hero.titlePre}{" "}
-            <span className="block text-[#B45309] sm:inline">
+            <span className="text-[#B45309]">
               {t.hero.titleHighlight}
             </span>{" "}
-            <span className="block text-2xl font-normal text-[#6b6b66] sm:inline sm:text-3xl">
+            <span className="hidden font-normal text-[#6b6b66] sm:inline sm:text-3xl">
               {t.hero.titlePost}
             </span>
           </h1>
-          <p className="max-w-2xl text-lg text-[#6b6b66]">{t.hero.subtitle}</p>
+          <p className="hidden max-w-2xl text-lg text-[#6b6b66] sm:block">
+            {t.hero.subtitle}
+          </p>
         </section>
 
         {/* Search + results */}

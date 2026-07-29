@@ -106,25 +106,28 @@ export default function SearchExplorer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}:</span>
-          {TEAM_KEYS.map((key) => {
-            const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
-            return (
-              <Chip
-                key={key}
-                active={active}
-                onClick={() => setQuery(active ? "" : teamNames[key][locale])}
-              >
-                {teamCategory[key] === "national" ? (
-                  <span className="text-base leading-none">{teamFlags[key]}</span>
-                ) : (
-                  <TeamBadge colors={teamColors[key]} className="h-4 w-4" />
-                )}
-                {teamNames[key][locale]}
-              </Chip>
-            );
-          })}
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {TEAM_KEYS.map((key) => {
+              const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
+              return (
+                <Chip
+                  key={key}
+                  active={active}
+                  onClick={() => setQuery(active ? "" : teamNames[key][locale])}
+                  className="shrink-0"
+                >
+                  {teamCategory[key] === "national" ? (
+                    <span className="text-base leading-none">{teamFlags[key]}</span>
+                  ) : (
+                    <TeamBadge colors={teamColors[key]} className="h-4 w-4" />
+                  )}
+                  {teamNames[key][locale]}
+                </Chip>
+              );
+            })}
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
