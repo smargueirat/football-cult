@@ -17,7 +17,7 @@ export default function MobileMenu() {
   ];
 
   return (
-    <div className="sm:hidden">
+    <div className="lg:hidden">
       <button
         onClick={() => setOpen(true)}
         aria-label={t.nav.categories}
@@ -34,7 +34,7 @@ export default function MobileMenu() {
             className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"
             onClick={() => setOpen(false)}
           />
-          <div className="glass-panel absolute left-0 top-0 h-full w-72 border-r border-black/[0.06] p-6 shadow-2xl">
+          <div className="solid-panel absolute left-0 top-0 h-full w-72 border-r border-black/[0.06] p-6 shadow-2xl">
             <div className="mb-6 flex items-center justify-between">
               <span className="text-sm font-medium text-[#5b5b57]">{t.brand}</span>
               <button

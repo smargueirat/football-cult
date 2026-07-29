@@ -11,12 +11,17 @@ export interface Translations {
     contact: string;
     login: string;
     favorites: string;
+    cart: string;
   };
   favoritesPanel: {
     empty: string;
     title: string;
   };
   loginPanel: {
+    title: string;
+    text: string;
+  };
+  cartPanel: {
     title: string;
     text: string;
   };
@@ -137,6 +142,7 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contacto",
       login: "Ingresar",
       favorites: "Favoritos",
+      cart: "Carrito",
     },
     favoritesPanel: {
       empty: "Todavía no guardaste ninguna camiseta. Tocá el corazón en una tarjeta para guardarla acá.",
@@ -145,6 +151,10 @@ export const translations: Record<Locale, Translations> = {
     loginPanel: {
       title: "Próximamente",
       text: "Estamos trabajando en cuentas de usuario para guardar alertas de precio y favoritos entre dispositivos.",
+    },
+    cartPanel: {
+      title: "Football Cult no vende directamente",
+      text: "Somos un comparador: cada compra se completa en la tienda que elijas. Guardá camisetas en Favoritos para armar tu lista y comprarlas en cada tienda.",
     },
     categoriesMenu: {
       national: "Selecciones",
@@ -271,6 +281,7 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contact",
       login: "Sign in",
       favorites: "Favorites",
+      cart: "Cart",
     },
     favoritesPanel: {
       empty: "You haven't saved any jerseys yet. Tap the heart on a card to save it here.",
@@ -279,6 +290,10 @@ export const translations: Record<Locale, Translations> = {
     loginPanel: {
       title: "Coming soon",
       text: "We're working on user accounts to save price alerts and favorites across devices.",
+    },
+    cartPanel: {
+      title: "Football Cult doesn't sell directly",
+      text: "We're a comparator: every purchase is completed on the store you pick. Save jerseys to Favorites to build your list and buy them at each store.",
     },
     categoriesMenu: {
       national: "National teams",

@@ -23,3 +23,9 @@ body {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
+/* Paneles flotantes/desplegables: fondo opaco para garantizar contraste
+   de lectura, sin depender de lo que haya detrás. */
+.solid-panel {
+  background: #fbf9f5;
+}
