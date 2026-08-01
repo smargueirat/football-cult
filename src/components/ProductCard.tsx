@@ -34,6 +34,7 @@ export default function ProductCard({ product }: { product: Product }) {
       : SIZES[0];
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
+  const photo = product.offers.find((o) => o.imageUrl)?.imageUrl;
 
   return (
     <Link
@@ -41,17 +42,26 @@ export default function ProductCard({ product }: { product: Product }) {
       className="glass-panel group flex flex-col overflow-hidden rounded-2xl shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div
-        className="relative flex aspect-[4/5] items-center justify-center p-6"
+        className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
         style={{
           background: `linear-gradient(135deg, #ffffff, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
         }}
       >
-        <JerseyIcon
-          className="h-2/3 w-2/3 drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
-          primary={product.colorHex}
-          secondary={product.colorHexSecondary}
-          pattern={product.jerseyPattern}
-        />
+        {photo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={photo}
+            alt={`${team} ${type} ${product.season}`}
+            className="h-full w-full object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <JerseyIcon
+            className="h-2/3 w-2/3 drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+            primary={product.colorHex}
+            secondary={product.colorHexSecondary}
+            pattern={product.jerseyPattern}
+          />
+        )}
 
         {best && (
           <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full bg-gradient-to-br from-[#FDE68A] to-[#D97706] px-3 py-1.5 text-sm font-semibold text-[#4A2E04] shadow-md">

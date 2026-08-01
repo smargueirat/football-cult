@@ -38,6 +38,8 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
     [product.offers]
   );
 
+  const photo = sortedOffers.find((o) => o.imageUrl)?.imageUrl;
+
   function shipsHere(offer: Offer) {
     return offerShipsTo(offer.store, countryCode);
   }
@@ -67,21 +69,32 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
         {/* Left: showcase */}
         <div className="lg:sticky lg:top-24 lg:self-start">
           <div
-            className="flex aspect-square items-center justify-center rounded-3xl p-16"
+            className="flex aspect-square items-center justify-center overflow-hidden rounded-3xl p-16"
             style={{
               background: `linear-gradient(135deg, #ffffff, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
             }}
           >
-            <JerseyIcon
-              className="h-2/3 w-2/3 drop-shadow-sm"
-              primary={product.colorHex}
-              secondary={product.colorHexSecondary}
-              pattern={product.jerseyPattern}
-            />
+            {photo ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={photo}
+                alt={`${team} ${type} ${product.season}`}
+                className="h-full w-full object-contain drop-shadow-sm"
+              />
+            ) : (
+              <JerseyIcon
+                className="h-2/3 w-2/3 drop-shadow-sm"
+                primary={product.colorHex}
+                secondary={product.colorHexSecondary}
+                pattern={product.jerseyPattern}
+              />
+            )}
           </div>
-          <p className="mt-3 text-center text-xs text-[#9a9a94]">
-            {t.detail.photoPlaceholder}
-          </p>
+          {!photo && (
+            <p className="mt-3 text-center text-xs text-[#9a9a94]">
+              {t.detail.photoPlaceholder}
+            </p>
+          )}
         </div>
 
         {/* Right: hunter column */}
