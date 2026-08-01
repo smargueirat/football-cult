@@ -4,6 +4,7 @@ export const locales: Locale[] = ["es", "en"];
 
 export interface Translations {
   brand: string;
+  brandTagline: string;
   nav: {
     search: string;
     categories: string;
@@ -42,11 +43,10 @@ export interface Translations {
     soon: string;
   };
   hero: {
-    badge: string;
-    titlePre: string;
-    titleHighlight: string;
-    titlePost: string;
+    eyebrow: string;
+    title: string;
     subtitle: string;
+    cta: string;
   };
   steps: {
     title1: string;
@@ -142,6 +142,7 @@ export interface Translations {
 export const translations: Record<Locale, Translations> = {
   es: {
     brand: "Football Cult",
+    brandTagline: "Un legado del fútbol.",
     nav: {
       search: "Buscar",
       categories: "Categorías",
@@ -180,12 +181,11 @@ export const translations: Record<Locale, Translations> = {
       soon: "Próximamente",
     },
     hero: {
-      badge: "🚩 Fuera de juego a los precios caros",
-      titlePre: "Encontrá la",
-      titleHighlight: "camiseta de fútbol más barata",
-      titlePost: "sea de tu selección, tu club o tu liga favorita",
+      eyebrow: "Descubrí tu herencia futbolera",
+      title: "Explorá nuestro archivo",
       subtitle:
-        "Selecciones, clubes, ligas de cualquier parte del mundo. Buscamos entre distintas tiendas para mostrarte el mejor precio, vos comprás directo donde quieras.",
+        "Comparamos precios de camisetas de selecciones, clubes y ligas de todo el mundo. Vos comprás directo donde quieras.",
+      cta: "Ver catálogo",
     },
     steps: {
       title1: "Buscá",
@@ -288,6 +288,7 @@ export const translations: Record<Locale, Translations> = {
   },
   en: {
     brand: "Football Cult",
+    brandTagline: "A legacy collective.",
     nav: {
       search: "Search",
       categories: "Categories",
@@ -326,12 +327,11 @@ export const translations: Record<Locale, Translations> = {
       soon: "Coming soon",
     },
     hero: {
-      badge: "🚩 Offside on rip-off prices",
-      titlePre: "Find the",
-      titleHighlight: "cheapest football jersey",
-      titlePost: "from your national team, club, or league",
+      eyebrow: "Discover your football heritage",
+      title: "Explore our archive",
       subtitle:
-        "National teams, clubs, leagues from anywhere in the world. We search across different stores to show you the best price, you buy directly wherever you want.",
+        "We compare prices on national team, club, and league jerseys from all over the world. You buy directly wherever you want.",
+      cta: "Shop now",
     },
     steps: {
       title1: "Search",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue } from "next/font/google";
+import { Inter, Alfa_Slab_One, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,9 +14,15 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const bebasNeue = Bebas_Neue({
+const alfaSlabOne = Alfa_Slab_One({
   variable: "--font-vintage",
   weight: "400",
+  subsets: ["latin"],
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-tagline",
+  weight: ["500", "600"],
   subsets: ["latin"],
 });
 
@@ -34,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${bebasNeue.variable} h-full antialiased`}
+      className={`${inter.variable} ${alfaSlabOne.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-[#f7f5f0] text-[#1a1a1a]">
         <StadiumWatermark />

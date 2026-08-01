@@ -10,27 +10,31 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-1 flex-col">
-        {/* Hero */}
-        <section className="mx-auto flex w-full max-w-6xl flex-col items-center gap-2 px-6 pb-4 pt-4 text-center sm:gap-6 sm:pb-20 sm:pt-28">
-          <span className="hidden rounded-full border border-black/[0.08] bg-white px-4 py-1.5 text-xs font-medium tracking-wide text-[#5b5b57] sm:inline-block">
-            {t.hero.badge}
-          </span>
-          <h1 className="max-w-3xl text-xl font-semibold leading-tight tracking-tight text-[#1a1a1a] sm:text-6xl">
-            {t.hero.titlePre}{" "}
-            <span className="text-[#B45309]">
-              {t.hero.titleHighlight}
-            </span>{" "}
-            <span className="hidden font-normal text-[#6b6b66] sm:inline sm:text-3xl">
-              {t.hero.titlePost}
+        {/* Hero: banner vintage inspirado en el escudo dorado */}
+        <section className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 sm:pt-8">
+          <div className="vintage-banner relative flex flex-col items-center gap-2 overflow-hidden rounded-2xl px-6 py-8 text-center sm:gap-3 sm:rounded-3xl sm:px-10 sm:py-12">
+            <div className="vintage-banner-rays absolute inset-0" aria-hidden />
+            <span className="font-tagline relative text-[11px] uppercase text-[#C9A24B] sm:text-sm">
+              {t.hero.eyebrow}
             </span>
-          </h1>
-          <p className="hidden max-w-2xl text-lg text-[#6b6b66] sm:block">
-            {t.hero.subtitle}
-          </p>
+            <h1 className="font-vintage relative text-2xl leading-tight text-[#F3E9C9] sm:text-5xl">
+              {t.hero.title}
+            </h1>
+            <p className="relative max-w-xl text-sm text-[#CFC7B0] sm:text-base">
+              {t.hero.subtitle}
+            </p>
+            <a
+              href="#catalogo"
+              className="relative mt-2 inline-flex items-center gap-2 rounded-full border border-[#C9A24B] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-[#2A2410] shadow-md transition-transform hover:scale-[1.03] sm:text-sm"
+            >
+              {t.hero.cta}
+              <span aria-hidden>→</span>
+            </a>
+          </div>
         </section>
 
         {/* Search + results */}
-        <section className="mx-auto w-full max-w-6xl flex-1 px-6 pb-24">
+        <section id="catalogo" className="mx-auto w-full max-w-6xl flex-1 scroll-mt-20 px-6 pb-24">
           <SearchExplorer />
         </section>
 
