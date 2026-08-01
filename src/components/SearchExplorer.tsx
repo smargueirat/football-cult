@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   Product,
   SEASONS,
@@ -29,6 +29,15 @@ const TEAM_KEYS: TeamKey[] = Array.from(
   new Set(products.map((p) => p.teamKey))
 );
 
+type SortKey = "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
+
+// "2025/26" -> 2025, "2026" -> 2026. Sirve para poder ordenar temporadas
+// cronológicamente sin importar el formato con el que se cargó cada una.
+function seasonSortValue(season: string): number {
+  const match = season.match(/\d{4}/);
+  return match ? parseInt(match[0], 10) : 0;
+}
+
 export default function SearchExplorer() {
   const { locale, t } = useLanguage();
   const {
@@ -42,6 +51,7 @@ export default function SearchExplorer() {
     setSeasonFilter,
   } = useSearchFilter();
   const { countryCode } = useCountry();
+  const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -60,13 +70,17 @@ export default function SearchExplorer() {
     });
 
     return [...filtered].sort((a, b) => {
+      if (sortBy === "seasonNewest" || sortBy === "seasonOldest") {
+        const diff = seasonSortValue(a.season) - seasonSortValue(b.season);
+        return sortBy === "seasonNewest" ? -diff : diff;
+      }
       const bestA = bestOfferForCountry(a, countryCode);
       const bestB = bestOfferForCountry(b, countryCode);
       const totalA = bestA ? offerTotal(bestA) : Infinity;
       const totalB = bestB ? offerTotal(bestB) : Infinity;
-      return totalA - totalB;
+      return sortBy === "priceDesc" ? totalB - totalA : totalA - totalB;
     });
-  }, [query, typeFilter, categoryFilter, seasonFilter, countryCode]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, countryCode, sortBy]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -184,9 +198,24 @@ export default function SearchExplorer() {
         </p>
       ) : (
         <>
-          <p className="text-xs text-[#8a7a5a]">
-            {t.search.resultsCount.replace("{n}", String(results.length))}
-          </p>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <p className="text-xs text-[#8a7a5a]">
+              {t.search.resultsCount.replace("{n}", String(results.length))}
+            </p>
+            <label className="flex items-center gap-2 text-xs text-[#8a7a5a]">
+              {t.search.sortLabel}
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as SortKey)}
+                className="rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-1.5 text-xs text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40"
+              >
+                <option value="priceAsc">{t.search.sortPriceAsc}</option>
+                <option value="priceDesc">{t.search.sortPriceDesc}</option>
+                <option value="seasonNewest">{t.search.sortNewest}</option>
+                <option value="seasonOldest">{t.search.sortOldest}</option>
+              </select>
+            </label>
+          </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
             {results.map((product: Product) => (
               <ProductCard key={product.id} product={product} />

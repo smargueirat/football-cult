@@ -1,6 +1,6 @@
-export type Locale = "es" | "en";
+export type Locale = "es" | "en" | "pt";
 
-export const locales: Locale[] = ["es", "en"];
+export const locales: Locale[] = ["es", "en", "pt"];
 
 export interface Translations {
   brand: string;
@@ -70,6 +70,11 @@ export interface Translations {
     quickSelectLabel: string;
     clearAria: string;
     resultsCount: string;
+    sortLabel: string;
+    sortPriceAsc: string;
+    sortPriceDesc: string;
+    sortNewest: string;
+    sortOldest: string;
   };
   product: {
     bestPrice: string;
@@ -212,6 +217,11 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Accesos rápidos",
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
+      sortLabel: "Ordenar por",
+      sortPriceAsc: "Precio: menor a mayor",
+      sortPriceDesc: "Precio: mayor a menor",
+      sortNewest: "Más reciente",
+      sortOldest: "Más antigua",
     },
     product: {
       bestPrice: "Mejor precio",
@@ -292,6 +302,160 @@ export const translations: Record<Locale, Translations> = {
       note: "Nota: este texto es un punto de partida general, no asesoramiento legal. Revisalo con un profesional antes de publicar el sitio.",
     },
   },
+  pt: {
+    brand: "Football Cult",
+    brandTagline: "Um legado do futebol.",
+    nav: {
+      search: "Buscar",
+      categories: "Categorias",
+      about: "Sobre nós",
+      contact: "Contato",
+      login: "Entrar",
+      favorites: "Favoritos",
+      shipTo: "Enviar para",
+    },
+    countryPanel: {
+      title: "Para onde enviamos?",
+      note: "Filtramos as lojas que enviam para o seu país e mostramos os preços na sua moeda (conversão aproximada).",
+      notAvailable: "Nenhuma loja ainda envia para este país para este produto.",
+      searchPlaceholder: "Buscar país...",
+      noMatches: "Não encontramos esse país.",
+    },
+    favoritesPanel: {
+      empty: "Você ainda não salvou nenhuma camisa. Toque no coração em um card para salvá-lo aqui.",
+      title: "Seus favoritos",
+      viewAll: "Ver todos os favoritos",
+    },
+    favoritesPage: {
+      title: "Seus favoritos",
+      empty: "Você ainda não salvou nenhuma camisa.",
+      browse: "Explorar camisas",
+    },
+    loginPanel: {
+      title: "Em breve",
+      text: "Estamos trabalhando em contas de usuário para salvar alertas de preço e favoritos entre dispositivos.",
+    },
+    categoriesMenu: {
+      national: "Seleções",
+      nationalDesc: "Camisas de seleções nacionais",
+      clubs: "Clubes",
+      clubsDesc: "Camisas de clubes e ligas",
+      retro: "Retrô",
+      retroDesc: "Edições clássicas e vintage",
+      soon: "Em breve",
+    },
+    hero: {
+      eyebrow: "Descubra sua herança futebolística",
+      title: "Explore nosso arquivo",
+      subtitle:
+        "Comparamos preços de camisas de seleções, clubes e ligas do mundo todo. Você compra direto onde quiser.",
+      cta: "Ver catálogo",
+    },
+    steps: {
+      title1: "Busque",
+      text1: "Digite o nome do seu time, seleção ou liga.",
+      title2: "Comparamos",
+      text2: "Cruzamos preços de diferentes lojas na hora.",
+      title3: "Você compra",
+      text3: "Te levamos direto para a melhor oferta disponível.",
+    },
+    search: {
+      label: "Busque sua seleção, clube ou liga favorita",
+      placeholder: "Busque uma camisa, um número, uma época... (Ex: Riquelme 2001, Itália 2006, Real Madrid)",
+      noResults: 'Ainda não encontramos camisas para "{query}". Estamos adicionando mais lojas toda semana.',
+      allCategories: "Todas",
+      categoryNational: "Seleções",
+      categoryClubs: "Clubes",
+      typeLabel: "Tipo",
+      seasonLabel: "Temporada",
+      quickSelectLabel: "Acessos rápidos",
+      clearAria: "Limpar busca",
+      resultsCount: "{n} camisas encontradas",
+      sortLabel: "Ordenar por",
+      sortPriceAsc: "Preço: menor para maior",
+      sortPriceDesc: "Preço: maior para menor",
+      sortNewest: "Mais recente",
+      sortOldest: "Mais antiga",
+    },
+    product: {
+      bestPrice: "Melhor preço",
+      in: "em",
+      outOfStockLabel: "Sem estoque disponível",
+      buy: "Comprar",
+      soldOut: "Esgotado",
+      viewStores: "Ver outras lojas ({n})",
+      hideStores: "Ocultar lojas",
+      inStores: "Em {n} lojas",
+      sizesRange: "Tamanhos {range}",
+    },
+    detail: {
+      backToCatalog: "Voltar ao catálogo",
+      chooseSize: "Escolha seu tamanho",
+      allSizes: "Todas as lojas",
+      notAvailableInSize: "Não disponível no tamanho {size}",
+      storesCompared: "{n} lojas comparadas",
+      basePrice: "Preço",
+      shipping: "Frete",
+      total: "Total",
+      viewInStore: "Ver na loja",
+      photoPlaceholder: "Foto do produto em breve",
+    },
+    footer: {
+      about: "Sobre nós",
+      contact: "Contato",
+      privacy: "Privacidade",
+      terms: "Termos",
+      disclaimer:
+        "Football Cult é um comparador de preços. Não vendemos produtos diretamente: te redirecionamos para lojas terceiras para concluir sua compra. Alguns links são links de afiliado, o que significa que podemos receber uma comissão sem custo adicional para você.",
+    },
+    about: {
+      title: "Sobre nós",
+      p1: "Football Cult nasceu de uma ideia simples: encontrar a camisa da sua seleção, do seu clube ou da sua liga favorita — de qualquer parte do mundo — não deveria significar abrir vinte abas do navegador para comparar preços.",
+      p2: "Somos um comparador de preços independente. Buscamos em diferentes lojas online e mostramos as melhores opções disponíveis para você decidir onde comprar com todas as informações em mãos.",
+      p3: 'Football Cult não vende produtos diretamente nem processa pagamentos, envios ou devoluções. Quando você clica em "Comprar", te levamos até a loja correspondente para concluir sua compra lá. Alguns desses links são links de afiliado: se você comprar através deles, podemos receber uma pequena comissão da loja, sem nenhum custo adicional para você.',
+    },
+    contact: {
+      title: "Contato",
+      p1: "Encontrou um preço desatualizado, uma loja que deveríamos adicionar, ou tem alguma dúvida? Fale conosco.",
+      emailLabel: "Email",
+      note: "(Substituir pelo email real e, se aplicável, um formulário de contato antes de publicar o site.)",
+    },
+    privacy: {
+      title: "Política de privacidade",
+      updated: "Última atualização: [preencher antes de publicar].",
+      intro:
+        'Football Cult ("nós") opera este site. Esta página explica quais informações coletamos e como as usamos.',
+      collectTitle: "Informações que coletamos",
+      collectText:
+        "Podemos coletar dados básicos de uso (páginas visitadas, buscas realizadas) por meio de cookies ou ferramentas de análise, e o endereço de email caso você entre em contato conosco ou se inscreva em alertas de preço.",
+      affiliateTitle: "Links de afiliado",
+      affiliateText:
+        "Este site participa de programas de afiliados (como Awin, CJ Affiliate ou Rakuten Advertising). Isso significa que alguns links para lojas terceiras são links de afiliado: se você comprar através deles, a loja pode compartilhar informações da transação (não seus dados pessoais) conosco para calcular a comissão correspondente.",
+      thirdPartyTitle: "Terceiros",
+      thirdPartyText:
+        "Não vendemos suas informações pessoais para terceiros. As lojas para as quais te redirecionamos têm suas próprias políticas de privacidade, que recomendamos revisar antes de comprar.",
+      contactTitle: "Contato",
+      contactText: "Para qualquer dúvida sobre esta política, escreva para",
+      note: "Nota: este texto é um ponto de partida. Antes de publicar o site, é recomendável adaptá-lo com assessoria jurídica de acordo com a jurisdição onde você opera (LGPD no Brasil, RGPD na UE, etc.).",
+    },
+    terms: {
+      title: "Termos e condições",
+      updated: "Última atualização: [preencher antes de publicar].",
+      whatTitle: "O que é o Football Cult",
+      whatText:
+        "Football Cult é um serviço de comparação de preços. Não vendemos produtos, não processamos pagamentos e não somos parte do contrato de compra entre o usuário e a loja selecionada.",
+      accuracyTitle: "Precisão dos preços",
+      accuracyText:
+        "Fazemos o possível para manter os preços atualizados, mas não garantimos que reflitam o preço final no momento da compra (podem variar por estoque, tamanho, custos de envio ou mudanças da loja). O preço final válido é sempre o exibido pela loja no momento do pagamento.",
+      ordersTitle: "Compras, envios e devoluções",
+      ordersText:
+        "Qualquer dúvida sobre sua compra, envio, devolução ou garantia deve ser direcionada diretamente à loja onde você comprou, já que é ela quem processa a venda.",
+      affiliateTitle: "Links de afiliado",
+      affiliateText:
+        "Football Cult participa de programas de afiliados e pode receber uma comissão pelas compras feitas através dos nossos links, sem custo adicional para o usuário.",
+      note: "Nota: este texto é um ponto de partida geral, não é aconselhamento jurídico. Revise com um profissional antes de publicar o site.",
+    },
+  },
   en: {
     brand: "Football Cult",
     brandTagline: "A legacy collective.",
@@ -361,6 +525,11 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Quick picks",
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",
+      sortLabel: "Sort by",
+      sortPriceAsc: "Price: low to high",
+      sortPriceDesc: "Price: high to low",
+      sortNewest: "Newest first",
+      sortOldest: "Oldest first",
     },
     product: {
       bestPrice: "Best price",

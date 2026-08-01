@@ -26,13 +26,15 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY) as Locale | null;
-    if (stored === "es" || stored === "en") {
+    if (stored === "es" || stored === "en" || stored === "pt") {
       setLocaleState(stored);
       return;
     }
     const browserLang = window.navigator.language?.toLowerCase();
     if (browserLang && browserLang.startsWith("en")) {
       setLocaleState("en");
+    } else if (browserLang && browserLang.startsWith("pt")) {
+      setLocaleState("pt");
     }
   }, []);
 
