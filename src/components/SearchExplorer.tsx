@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import {
   Product,
+  SEASONS,
   TeamKey,
   TypeKey,
   bestOfferForCountry,
@@ -30,8 +31,16 @@ const TEAM_KEYS: TeamKey[] = Array.from(
 
 export default function SearchExplorer() {
   const { locale, t } = useLanguage();
-  const { query, setQuery, typeFilter, setTypeFilter, categoryFilter, setCategoryFilter } =
-    useSearchFilter();
+  const {
+    query,
+    setQuery,
+    typeFilter,
+    setTypeFilter,
+    categoryFilter,
+    setCategoryFilter,
+    seasonFilter,
+    setSeasonFilter,
+  } = useSearchFilter();
   const { countryCode } = useCountry();
 
   const results = useMemo(() => {
@@ -45,8 +54,9 @@ export default function SearchExplorer() {
       const matchesType = typeFilter === "all" || p.typeKey === typeFilter;
       const matchesCategory =
         categoryFilter === "all" || teamCategory[p.teamKey] === categoryFilter;
+      const matchesSeason = seasonFilter === "all" || p.season === seasonFilter;
       const matchesShipping = shipsToCountry(p, countryCode);
-      return matchesQuery && matchesType && matchesCategory && matchesShipping;
+      return matchesQuery && matchesType && matchesCategory && matchesSeason && matchesShipping;
     });
 
     return [...filtered].sort((a, b) => {
@@ -56,7 +66,7 @@ export default function SearchExplorer() {
       const totalB = bestB ? offerTotal(bestB) : Infinity;
       return totalA - totalB;
     });
-  }, [query, typeFilter, categoryFilter, countryCode]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, countryCode]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -151,6 +161,18 @@ export default function SearchExplorer() {
           {TYPE_FILTERS.map((key) => (
             <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
               {typeNames[key][locale]}
+            </Chip>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs text-[#8a7a5a]">{t.search.seasonLabel}:</span>
+          <Chip active={seasonFilter === "all"} onClick={() => setSeasonFilter("all")}>
+            {t.search.allCategories}
+          </Chip>
+          {SEASONS.map((season) => (
+            <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)}>
+              {season}
             </Chip>
           ))}
         </div>

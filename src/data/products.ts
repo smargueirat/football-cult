@@ -138,7 +138,86 @@ export const teamColors: Record<TeamKey, [string, string]> = {
 
 export type JerseyPattern = "solid" | "stripes" | "band";
 
-export type CountryCode = "AR" | "ES" | "MX" | "BR" | "CL" | "US" | "GB" | "FR";
+export type CountryCode =
+  // América
+  | "AR"
+  | "MX"
+  | "BR"
+  | "CL"
+  | "US"
+  | "CA"
+  | "CO"
+  | "PE"
+  | "UY"
+  | "PY"
+  | "BO"
+  | "VE"
+  | "EC"
+  | "CR"
+  | "PA"
+  | "GT"
+  | "HN"
+  | "NI"
+  | "DO"
+  | "CU"
+  // Europa
+  | "ES"
+  | "GB"
+  | "FR"
+  | "DE"
+  | "IT"
+  | "PT"
+  | "NL"
+  | "BE"
+  | "AT"
+  | "IE"
+  | "GR"
+  | "FI"
+  | "SE"
+  | "NO"
+  | "DK"
+  | "CH"
+  | "PL"
+  | "CZ"
+  | "HU"
+  | "RO"
+  | "BG"
+  | "HR"
+  | "SK"
+  | "SI"
+  | "UA"
+  | "IS"
+  // Asia
+  | "JP"
+  | "CN"
+  | "KR"
+  | "IN"
+  | "ID"
+  | "SG"
+  | "TH"
+  | "MY"
+  | "PH"
+  | "VN"
+  | "AE"
+  | "SA"
+  | "QA"
+  | "IL"
+  | "TR"
+  | "HK"
+  | "TW"
+  | "PK"
+  // Oceanía
+  | "AU"
+  | "NZ"
+  // África
+  | "ZA"
+  | "NG"
+  | "EG"
+  | "MA"
+  | "KE"
+  | "GH"
+  | "TN"
+  | "DZ";
 
 export interface Country {
   code: CountryCode;
@@ -154,14 +233,89 @@ export interface Country {
 }
 
 export const countries: Country[] = [
+  // --- América ---
   { code: "AR", name: { es: "Argentina", en: "Argentina" }, flag: "🇦🇷", currency: "ARS", formatLocale: "es-AR", rateFromEUR: 1400 },
-  { code: "ES", name: { es: "España", en: "Spain" }, flag: "🇪🇸", currency: "EUR", formatLocale: "es-ES", rateFromEUR: 1 },
   { code: "MX", name: { es: "México", en: "Mexico" }, flag: "🇲🇽", currency: "MXN", formatLocale: "es-MX", rateFromEUR: 19.5 },
   { code: "BR", name: { es: "Brasil", en: "Brazil" }, flag: "🇧🇷", currency: "BRL", formatLocale: "pt-BR", rateFromEUR: 6.1 },
   { code: "CL", name: { es: "Chile", en: "Chile" }, flag: "🇨🇱", currency: "CLP", formatLocale: "es-CL", rateFromEUR: 1030 },
   { code: "US", name: { es: "Estados Unidos", en: "United States" }, flag: "🇺🇸", currency: "USD", formatLocale: "en-US", rateFromEUR: 1.08 },
+  { code: "CA", name: { es: "Canadá", en: "Canada" }, flag: "🇨🇦", currency: "CAD", formatLocale: "en-CA", rateFromEUR: 1.48 },
+  { code: "CO", name: { es: "Colombia", en: "Colombia" }, flag: "🇨🇴", currency: "COP", formatLocale: "es-CO", rateFromEUR: 4600 },
+  { code: "PE", name: { es: "Perú", en: "Peru" }, flag: "🇵🇪", currency: "PEN", formatLocale: "es-PE", rateFromEUR: 4.05 },
+  { code: "UY", name: { es: "Uruguay", en: "Uruguay" }, flag: "🇺🇾", currency: "UYU", formatLocale: "es-UY", rateFromEUR: 45 },
+  { code: "PY", name: { es: "Paraguay", en: "Paraguay" }, flag: "🇵🇾", currency: "PYG", formatLocale: "es-PY", rateFromEUR: 8400 },
+  { code: "BO", name: { es: "Bolivia", en: "Bolivia" }, flag: "🇧🇴", currency: "BOB", formatLocale: "es-BO", rateFromEUR: 7.45 },
+  { code: "VE", name: { es: "Venezuela", en: "Venezuela" }, flag: "🇻🇪", currency: "VES", formatLocale: "es-VE", rateFromEUR: 55 },
+  { code: "EC", name: { es: "Ecuador", en: "Ecuador" }, flag: "🇪🇨", currency: "USD", formatLocale: "es-EC", rateFromEUR: 1.08 },
+  { code: "CR", name: { es: "Costa Rica", en: "Costa Rica" }, flag: "🇨🇷", currency: "CRC", formatLocale: "es-CR", rateFromEUR: 550 },
+  { code: "PA", name: { es: "Panamá", en: "Panama" }, flag: "🇵🇦", currency: "USD", formatLocale: "es-PA", rateFromEUR: 1.08 },
+  { code: "GT", name: { es: "Guatemala", en: "Guatemala" }, flag: "🇬🇹", currency: "GTQ", formatLocale: "es-GT", rateFromEUR: 8.3 },
+  { code: "HN", name: { es: "Honduras", en: "Honduras" }, flag: "🇭🇳", currency: "HNL", formatLocale: "es-HN", rateFromEUR: 27 },
+  { code: "NI", name: { es: "Nicaragua", en: "Nicaragua" }, flag: "🇳🇮", currency: "NIO", formatLocale: "es-NI", rateFromEUR: 40 },
+  { code: "DO", name: { es: "República Dominicana", en: "Dominican Republic" }, flag: "🇩🇴", currency: "DOP", formatLocale: "es-DO", rateFromEUR: 65 },
+  { code: "CU", name: { es: "Cuba", en: "Cuba" }, flag: "🇨🇺", currency: "CUP", formatLocale: "es-CU", rateFromEUR: 26 },
+
+  // --- Europa ---
+  { code: "ES", name: { es: "España", en: "Spain" }, flag: "🇪🇸", currency: "EUR", formatLocale: "es-ES", rateFromEUR: 1 },
   { code: "GB", name: { es: "Reino Unido", en: "United Kingdom" }, flag: "🇬🇧", currency: "GBP", formatLocale: "en-GB", rateFromEUR: 0.84 },
   { code: "FR", name: { es: "Francia", en: "France" }, flag: "🇫🇷", currency: "EUR", formatLocale: "fr-FR", rateFromEUR: 1 },
+  { code: "DE", name: { es: "Alemania", en: "Germany" }, flag: "🇩🇪", currency: "EUR", formatLocale: "de-DE", rateFromEUR: 1 },
+  { code: "IT", name: { es: "Italia", en: "Italy" }, flag: "🇮🇹", currency: "EUR", formatLocale: "it-IT", rateFromEUR: 1 },
+  { code: "PT", name: { es: "Portugal", en: "Portugal" }, flag: "🇵🇹", currency: "EUR", formatLocale: "pt-PT", rateFromEUR: 1 },
+  { code: "NL", name: { es: "Países Bajos", en: "Netherlands" }, flag: "🇳🇱", currency: "EUR", formatLocale: "nl-NL", rateFromEUR: 1 },
+  { code: "BE", name: { es: "Bélgica", en: "Belgium" }, flag: "🇧🇪", currency: "EUR", formatLocale: "nl-BE", rateFromEUR: 1 },
+  { code: "AT", name: { es: "Austria", en: "Austria" }, flag: "🇦🇹", currency: "EUR", formatLocale: "de-AT", rateFromEUR: 1 },
+  { code: "IE", name: { es: "Irlanda", en: "Ireland" }, flag: "🇮🇪", currency: "EUR", formatLocale: "en-IE", rateFromEUR: 1 },
+  { code: "GR", name: { es: "Grecia", en: "Greece" }, flag: "🇬🇷", currency: "EUR", formatLocale: "el-GR", rateFromEUR: 1 },
+  { code: "FI", name: { es: "Finlandia", en: "Finland" }, flag: "🇫🇮", currency: "EUR", formatLocale: "fi-FI", rateFromEUR: 1 },
+  { code: "SE", name: { es: "Suecia", en: "Sweden" }, flag: "🇸🇪", currency: "SEK", formatLocale: "sv-SE", rateFromEUR: 11.3 },
+  { code: "NO", name: { es: "Noruega", en: "Norway" }, flag: "🇳🇴", currency: "NOK", formatLocale: "nb-NO", rateFromEUR: 11.6 },
+  { code: "DK", name: { es: "Dinamarca", en: "Denmark" }, flag: "🇩🇰", currency: "DKK", formatLocale: "da-DK", rateFromEUR: 7.46 },
+  { code: "CH", name: { es: "Suiza", en: "Switzerland" }, flag: "🇨🇭", currency: "CHF", formatLocale: "de-CH", rateFromEUR: 0.95 },
+  { code: "PL", name: { es: "Polonia", en: "Poland" }, flag: "🇵🇱", currency: "PLN", formatLocale: "pl-PL", rateFromEUR: 4.3 },
+  { code: "CZ", name: { es: "República Checa", en: "Czech Republic" }, flag: "🇨🇿", currency: "CZK", formatLocale: "cs-CZ", rateFromEUR: 25.1 },
+  { code: "HU", name: { es: "Hungría", en: "Hungary" }, flag: "🇭🇺", currency: "HUF", formatLocale: "hu-HU", rateFromEUR: 395 },
+  { code: "RO", name: { es: "Rumania", en: "Romania" }, flag: "🇷🇴", currency: "RON", formatLocale: "ro-RO", rateFromEUR: 4.97 },
+  { code: "BG", name: { es: "Bulgaria", en: "Bulgaria" }, flag: "🇧🇬", currency: "BGN", formatLocale: "bg-BG", rateFromEUR: 1.96 },
+  { code: "HR", name: { es: "Croacia", en: "Croatia" }, flag: "🇭🇷", currency: "EUR", formatLocale: "hr-HR", rateFromEUR: 1 },
+  { code: "SK", name: { es: "Eslovaquia", en: "Slovakia" }, flag: "🇸🇰", currency: "EUR", formatLocale: "sk-SK", rateFromEUR: 1 },
+  { code: "SI", name: { es: "Eslovenia", en: "Slovenia" }, flag: "🇸🇮", currency: "EUR", formatLocale: "sl-SI", rateFromEUR: 1 },
+  { code: "UA", name: { es: "Ucrania", en: "Ukraine" }, flag: "🇺🇦", currency: "UAH", formatLocale: "uk-UA", rateFromEUR: 45 },
+  { code: "IS", name: { es: "Islandia", en: "Iceland" }, flag: "🇮🇸", currency: "ISK", formatLocale: "is-IS", rateFromEUR: 150 },
+
+  // --- Asia ---
+  { code: "JP", name: { es: "Japón", en: "Japan" }, flag: "🇯🇵", currency: "JPY", formatLocale: "ja-JP", rateFromEUR: 165 },
+  { code: "CN", name: { es: "China", en: "China" }, flag: "🇨🇳", currency: "CNY", formatLocale: "zh-CN", rateFromEUR: 7.85 },
+  { code: "KR", name: { es: "Corea del Sur", en: "South Korea" }, flag: "🇰🇷", currency: "KRW", formatLocale: "ko-KR", rateFromEUR: 1480 },
+  { code: "IN", name: { es: "India", en: "India" }, flag: "🇮🇳", currency: "INR", formatLocale: "en-IN", rateFromEUR: 90 },
+  { code: "ID", name: { es: "Indonesia", en: "Indonesia" }, flag: "🇮🇩", currency: "IDR", formatLocale: "id-ID", rateFromEUR: 17200 },
+  { code: "SG", name: { es: "Singapur", en: "Singapore" }, flag: "🇸🇬", currency: "SGD", formatLocale: "en-SG", rateFromEUR: 1.45 },
+  { code: "TH", name: { es: "Tailandia", en: "Thailand" }, flag: "🇹🇭", currency: "THB", formatLocale: "th-TH", rateFromEUR: 37.5 },
+  { code: "MY", name: { es: "Malasia", en: "Malaysia" }, flag: "🇲🇾", currency: "MYR", formatLocale: "ms-MY", rateFromEUR: 4.85 },
+  { code: "PH", name: { es: "Filipinas", en: "Philippines" }, flag: "🇵🇭", currency: "PHP", formatLocale: "en-PH", rateFromEUR: 61 },
+  { code: "VN", name: { es: "Vietnam", en: "Vietnam" }, flag: "🇻🇳", currency: "VND", formatLocale: "vi-VN", rateFromEUR: 27500 },
+  { code: "AE", name: { es: "Emiratos Árabes Unidos", en: "United Arab Emirates" }, flag: "🇦🇪", currency: "AED", formatLocale: "ar-AE", rateFromEUR: 3.97 },
+  { code: "SA", name: { es: "Arabia Saudita", en: "Saudi Arabia" }, flag: "🇸🇦", currency: "SAR", formatLocale: "ar-SA", rateFromEUR: 4.05 },
+  { code: "QA", name: { es: "Catar", en: "Qatar" }, flag: "🇶🇦", currency: "QAR", formatLocale: "ar-QA", rateFromEUR: 3.93 },
+  { code: "IL", name: { es: "Israel", en: "Israel" }, flag: "🇮🇱", currency: "ILS", formatLocale: "he-IL", rateFromEUR: 4.0 },
+  { code: "TR", name: { es: "Turquía", en: "Turkey" }, flag: "🇹🇷", currency: "TRY", formatLocale: "tr-TR", rateFromEUR: 37 },
+  { code: "HK", name: { es: "Hong Kong", en: "Hong Kong" }, flag: "🇭🇰", currency: "HKD", formatLocale: "zh-HK", rateFromEUR: 8.4 },
+  { code: "TW", name: { es: "Taiwán", en: "Taiwan" }, flag: "🇹🇼", currency: "TWD", formatLocale: "zh-TW", rateFromEUR: 34.5 },
+  { code: "PK", name: { es: "Pakistán", en: "Pakistan" }, flag: "🇵🇰", currency: "PKR", formatLocale: "en-PK", rateFromEUR: 300 },
+
+  // --- Oceanía ---
+  { code: "AU", name: { es: "Australia", en: "Australia" }, flag: "🇦🇺", currency: "AUD", formatLocale: "en-AU", rateFromEUR: 1.63 },
+  { code: "NZ", name: { es: "Nueva Zelanda", en: "New Zealand" }, flag: "🇳🇿", currency: "NZD", formatLocale: "en-NZ", rateFromEUR: 1.77 },
+
+  // --- África ---
+  { code: "ZA", name: { es: "Sudáfrica", en: "South Africa" }, flag: "🇿🇦", currency: "ZAR", formatLocale: "en-ZA", rateFromEUR: 20 },
+  { code: "NG", name: { es: "Nigeria", en: "Nigeria" }, flag: "🇳🇬", currency: "NGN", formatLocale: "en-NG", rateFromEUR: 1700 },
+  { code: "EG", name: { es: "Egipto", en: "Egypt" }, flag: "🇪🇬", currency: "EGP", formatLocale: "ar-EG", rateFromEUR: 52 },
+  { code: "MA", name: { es: "Marruecos", en: "Morocco" }, flag: "🇲🇦", currency: "MAD", formatLocale: "ar-MA", rateFromEUR: 10.8 },
+  { code: "KE", name: { es: "Kenia", en: "Kenya" }, flag: "🇰🇪", currency: "KES", formatLocale: "en-KE", rateFromEUR: 140 },
+  { code: "GH", name: { es: "Ghana", en: "Ghana" }, flag: "🇬🇭", currency: "GHS", formatLocale: "en-GH", rateFromEUR: 16 },
+  { code: "TN", name: { es: "Túnez", en: "Tunisia" }, flag: "🇹🇳", currency: "TND", formatLocale: "ar-TN", rateFromEUR: 3.35 },
+  { code: "DZ", name: { es: "Argelia", en: "Algeria" }, flag: "🇩🇿", currency: "DZD", formatLocale: "ar-DZ", rateFromEUR: 145 },
 ];
 
 export function findCountry(code: CountryCode): Country {
@@ -182,16 +336,10 @@ export function formatMoney(amountEUR: number, country: Country): string {
   }).format(converted);
 }
 
-// A qué países envía cada tienda (ficticia). "all" = envío global.
-// NOTA: datos de ejemplo — en la integración real esto vendría del feed
-// de cada tienda afiliada.
-export const storeShipping: Record<string, CountryCode[] | "all"> = {
-  "Kit Center": "all",
-  "Elite Jerseys": "all",
-  "MatchDay Shop": ["ES", "FR", "GB"],
-  "ProSoccer Store": ["US", "MX", "AR"],
-  "GoalGear": ["AR", "BR", "CL", "MX"],
-};
+// A qué países envía cada tienda. "all" = envío global.
+// Las tiendas reales (Awin) no tienen reglas de envío por país todavía,
+// así que por defecto se asume que envían a todos lados (ver offerShipsTo).
+export const storeShipping: Record<string, CountryCode[] | "all"> = {};
 
 export function offerShipsTo(store: string, country: CountryCode): boolean {
   const shipping = storeShipping[store];
@@ -1080,3 +1228,7 @@ export function availableSizesForCountry(
 export function findProduct(id: string): Product | undefined {
   return products.find((p) => p.id === id);
 }
+
+export const SEASONS: string[] = Array.from(
+  new Set(products.map((p) => p.season))
+).sort((a, b) => b.localeCompare(a));

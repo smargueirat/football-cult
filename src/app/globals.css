@@ -42,22 +42,22 @@ body {
 }
 
 .vintage-banner {
-  background: linear-gradient(160deg, #2a4436, #14261c 70%);
-  border: 1px solid rgba(201, 162, 75, 0.4);
+  background: linear-gradient(175deg, #fffdf8, #f2e6c8 75%);
+  border: 1px solid rgba(180, 146, 63, 0.4);
   box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
-    0 12px 30px -14px rgba(20, 30, 10, 0.45);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    0 10px 24px -16px rgba(43, 32, 10, 0.3);
 }
 
 .vintage-banner-rays {
   background: repeating-conic-gradient(
     from 0deg,
-    rgba(201, 162, 75, 0.1) 0deg 3deg,
+    rgba(160, 122, 45, 0.16) 0deg 3deg,
     transparent 3deg 12deg
   );
   mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 70%);
   -webkit-mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 70%);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* --- Sistema vintage: tarjetas, plaquetas, texturas --- */
@@ -67,6 +67,7 @@ body {
   border: 1px solid rgba(180, 146, 63, 0.35);
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    inset 0 0 0 4px rgba(180, 146, 63, 0.08),
     0 10px 24px -14px rgba(43, 32, 10, 0.35);
 }
 

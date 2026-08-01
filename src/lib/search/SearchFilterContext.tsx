@@ -10,6 +10,8 @@ interface SearchFilterValue {
   setTypeFilter: (t: TypeKey | "all") => void;
   categoryFilter: CategoryKey | "all";
   setCategoryFilter: (c: CategoryKey | "all") => void;
+  seasonFilter: string | "all";
+  setSeasonFilter: (s: string | "all") => void;
   activeFilterCount: number;
 }
 
@@ -19,9 +21,12 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [query, setQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState<TypeKey | "all">("all");
   const [categoryFilter, setCategoryFilter] = useState<CategoryKey | "all">("all");
+  const [seasonFilter, setSeasonFilter] = useState<string | "all">("all");
 
   const activeFilterCount =
-    (typeFilter !== "all" ? 1 : 0) + (categoryFilter !== "all" ? 1 : 0);
+    (typeFilter !== "all" ? 1 : 0) +
+    (categoryFilter !== "all" ? 1 : 0) +
+    (seasonFilter !== "all" ? 1 : 0);
 
   return (
     <SearchFilterContext.Provider
@@ -32,6 +37,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         setTypeFilter,
         categoryFilter,
         setCategoryFilter,
+        seasonFilter,
+        setSeasonFilter,
         activeFilterCount,
       }}
     >

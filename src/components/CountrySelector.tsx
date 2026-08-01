@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { countries } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -10,6 +10,18 @@ export default function CountrySelector() {
   const { locale, t } = useLanguage();
   const { country, setCountryCode } = useCountry();
   const [open, setOpen] = useState(false);
+  const [search, setSearch] = useState("");
+
+  const filtered = useMemo(() => {
+    const normalized = search.trim().toLowerCase();
+    if (!normalized) return countries;
+    return countries.filter(
+      (c) =>
+        c.name[locale].toLowerCase().includes(normalized) ||
+        c.code.toLowerCase().includes(normalized) ||
+        c.currency.toLowerCase().includes(normalized)
+    );
+  }, [search, locale]);
 
   return (
     <div className="relative">
@@ -26,31 +38,49 @@ export default function CountrySelector() {
 
       {open && (
         <Portal>
-          <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="solid-panel fixed right-3 top-14 z-50 w-64 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[#C9A24B]/25 p-3 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
+          <div
+            className="fixed inset-0 z-40"
+            onClick={() => {
+              setOpen(false);
+              setSearch("");
+            }}
+          />
+          <div className="solid-panel fixed right-3 top-14 z-50 flex w-72 max-w-[calc(100vw-1.5rem)] flex-col rounded-2xl border border-[#C9A24B]/25 p-3 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
             <p className="mb-2 px-1 text-sm font-medium text-[#1a1a1a]">
               {t.countryPanel.title}
             </p>
-            <ul className="flex flex-col gap-0.5">
-              {countries.map((c) => (
-                <li key={c.code}>
-                  <button
-                    onClick={() => {
-                      setCountryCode(c.code);
-                      setOpen(false);
-                    }}
-                    className={`flex w-full items-center justify-between gap-2 rounded-xl px-2 py-2 text-left text-sm transition-colors hover:bg-black/[0.04] ${
-                      c.code === country.code ? "bg-[#1F6F4C]/10 text-[#1F6F4C]" : "text-[#1a1a1a]"
-                    }`}
-                  >
-                    <span className="flex items-center gap-2">
-                      <span className="text-base leading-none">{c.flag}</span>
-                      {c.name[locale]}
-                    </span>
-                    <span className="text-xs text-[#8a7a5a]">{c.currency}</span>
-                  </button>
-                </li>
-              ))}
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder={t.countryPanel.searchPlaceholder}
+              className="mb-2 w-full rounded-xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-2 text-sm text-[#1a1a1a] placeholder-[#a8926a] outline-none focus:border-[#1B3B2B]/40"
+            />
+            <ul className="flex max-h-72 flex-col gap-0.5 overflow-y-auto">
+              {filtered.length === 0 ? (
+                <p className="px-2 py-3 text-sm text-[#8a7a5a]">{t.countryPanel.noMatches}</p>
+              ) : (
+                filtered.map((c) => (
+                  <li key={c.code}>
+                    <button
+                      onClick={() => {
+                        setCountryCode(c.code);
+                        setOpen(false);
+                        setSearch("");
+                      }}
+                      className={`flex w-full items-center justify-between gap-2 rounded-xl px-2 py-2 text-left text-sm transition-colors hover:bg-[#C9A24B]/10 ${
+                        c.code === country.code ? "bg-[#1F6F4C]/10 text-[#1F6F4C]" : "text-[#1a1a1a]"
+                      }`}
+                    >
+                      <span className="flex items-center gap-2">
+                        <span className="text-base leading-none">{c.flag}</span>
+                        {c.name[locale]}
+                      </span>
+                      <span className="text-xs text-[#8a7a5a]">{c.currency}</span>
+                    </button>
+                  </li>
+                ))
+              )}
             </ul>
             <p className="mt-2 border-t border-[#C9A24B]/25 px-1 pt-2 text-[11px] text-[#8a7a5a]">
               {t.countryPanel.note}

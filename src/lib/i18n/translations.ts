@@ -18,6 +18,8 @@ export interface Translations {
     title: string;
     note: string;
     notAvailable: string;
+    searchPlaceholder: string;
+    noMatches: string;
   };
   favoritesPanel: {
     empty: string;
@@ -64,6 +66,7 @@ export interface Translations {
     categoryNational: string;
     categoryClubs: string;
     typeLabel: string;
+    seasonLabel: string;
     quickSelectLabel: string;
     clearAria: string;
     resultsCount: string;
@@ -156,6 +159,8 @@ export const translations: Record<Locale, Translations> = {
       title: "¿A dónde enviamos?",
       note: "Filtramos las tiendas que envían a tu país y mostramos precios en tu moneda (conversión aproximada).",
       notAvailable: "Ninguna tienda envía a este país todavía para este producto.",
+      searchPlaceholder: "Buscar país...",
+      noMatches: "No encontramos ese país.",
     },
     favoritesPanel: {
       empty: "Todavía no guardaste ninguna camiseta. Tocá el corazón en una tarjeta para guardarla acá.",
@@ -203,6 +208,7 @@ export const translations: Record<Locale, Translations> = {
       categoryNational: "Selecciones",
       categoryClubs: "Clubes",
       typeLabel: "Tipo",
+      seasonLabel: "Temporada",
       quickSelectLabel: "Accesos rápidos",
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
@@ -302,6 +308,8 @@ export const translations: Record<Locale, Translations> = {
       title: "Where should we ship?",
       note: "We filter stores that ship to your country and show prices in your currency (approximate conversion).",
       notAvailable: "No store ships to this country yet for this product.",
+      searchPlaceholder: "Search country...",
+      noMatches: "We couldn't find that country.",
     },
     favoritesPanel: {
       empty: "You haven't saved any jerseys yet. Tap the heart on a card to save it here.",
@@ -349,6 +357,7 @@ export const translations: Record<Locale, Translations> = {
       categoryNational: "National teams",
       categoryClubs: "Clubs",
       typeLabel: "Type",
+      seasonLabel: "Season",
       quickSelectLabel: "Quick picks",
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",

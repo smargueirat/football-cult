@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { TypeKey, typeNames } from "@/data/products";
+import { SEASONS, TypeKey, typeNames } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import Chip from "./Chip";
@@ -15,6 +15,8 @@ export default function FloatingFilterButton() {
     setTypeFilter,
     categoryFilter,
     setCategoryFilter,
+    seasonFilter,
+    setSeasonFilter,
     activeFilterCount,
   } = useSearchFilter();
   const [visible, setVisible] = useState(false);
@@ -58,6 +60,19 @@ export default function FloatingFilterButton() {
               {TYPE_FILTERS.map((key) => (
                 <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
                   {typeNames[key][locale]}
+                </Chip>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-2 text-xs text-[#9a9a94]">{t.search.seasonLabel}</p>
+            <div className="flex flex-wrap gap-1.5">
+              <Chip active={seasonFilter === "all"} onClick={() => setSeasonFilter("all")}>
+                {t.search.allCategories}
+              </Chip>
+              {SEASONS.map((season) => (
+                <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)}>
+                  {season}
                 </Chip>
               ))}
             </div>
