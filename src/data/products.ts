@@ -232,6 +232,14 @@ export interface Product {
 // Una vez aprobadas, este archivo se reemplaza por datos que vienen
 // de los feeds de producto de cada red. Los nombres de tienda son
 // ficticios a propósito.
+// Catálogo con ofertas reales de los programas de afiliados ya aprobados en Awin
+// (FansJerseyHub, PlanetFoot) para las camisetas que matchean nuestros equipos
+// curados. Donde todavía no hay una tienda aprobada que venda esa camiseta,
+// se mantienen datos de ejemplo (placeholder) hasta conseguir esa afiliación.
+// Nota: "shipping" real no viene en el feed usado (Google Shopping format),
+// se asume 0 hasta tener ese dato. FansJerseyHub reporta "out_of_stock" para
+// TODO su catálogo en el feed (bug de su lado) por lo que inStock se fuerza
+// a true para esa tienda; PlanetFoot sí usa su disponibilidad real.
 export const products: Product[] = [
   {
     id: "arg-home-2026",
@@ -242,9 +250,7 @@ export const products: Product[] = [
     colorHexSecondary: "#F4F7FA",
     jerseyPattern: "stripes",
     offers: [
-      { store: "Kit Center", price: 74.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "MatchDay Shop", price: 69.5, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
-      { store: "ProSoccer Store", price: 82.0, shipping: 0, currency: "EUR", url: "#", inStock: false, sizes: ["S", "M"] },
+      { store: "FansJerseyHub", price: 43.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fargentina-home-soccer-jersey-kit-2026-world-cup%3Fvariant%3D42724228989033", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -256,8 +262,7 @@ export const products: Product[] = [
     colorHexSecondary: "#75AADB",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 79.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "L", "XL"] },
-      { store: "GoalGear", price: 71.25, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "FansJerseyHub", price: 42.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fl-martinez-22-argentina-away-soccer-jersey-2026-world-cup%3Fvariant%3D47752567259241", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -269,8 +274,7 @@ export const products: Product[] = [
     colorHexSecondary: "#0F5A2E",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 68.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "ProSoccer Store", price: 73.4, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-home-soccer-jersey-2026-world-cup%3Fvariant%3D42706934825065", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -282,9 +286,8 @@ export const products: Product[] = [
     colorHexSecondary: "#F5B942",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 76.5, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "XL"] },
-      { store: "GoalGear", price: 70.0, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
-      { store: "Elite Jerseys", price: 65.99, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"] },
+      { store: "PlanetFoot", price: 54.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000086793%3Fvariant%3D53957404787029", inStock: true, sizes: ["M"] },
+      { store: "FansJerseyHub", price: 41.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fspain-player-version-home-soccer-jersey-2026-world-cup%3Fvariant%3D42669729644649", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -296,8 +299,8 @@ export const products: Product[] = [
     colorHexSecondary: "#E8EDF5",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 72.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Elite Jerseys", price: 67.3, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "PlanetFoot", price: 24.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-france-dkali-adulte-2025-26-bleu%3Fvariant%3D50991716663637", inStock: true, sizes: ["S", "M"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-home-soccer-jersey-2026-world-cup%3Fvariant%3D42634036936809", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -309,8 +312,8 @@ export const products: Product[] = [
     colorHexSecondary: "#8FB8E8",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 89.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "ProSoccer Store", price: 84.5, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "PlanetFoot", price: 39.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Ft-shirt-sport-real-madrid-noir-bleu-2026-black-blue%3Fvariant%3D53802751099221", inStock: true, sizes: ["L", "XL"] },
+      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-madrid-1996-97-home-retro-soccer-jersey%3Fvariant%3D42557216129129", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -322,8 +325,7 @@ export const products: Product[] = [
     colorHexSecondary: "#F5C742",
     jerseyPattern: "band",
     offers: [
-      { store: "MatchDay Shop", price: 66.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "GoalGear", price: 61.75, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-home-soccer-jersey-2025-26%3Fvariant%3D42557169860713", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -335,8 +337,8 @@ export const products: Product[] = [
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 91.0, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Elite Jerseys", price: 87.25, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "PlanetFoot", price: 89.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-domicile-homme-rouge%3Fvariant%3D49228463079765", inStock: true, sizes: ["S"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-us-pack-shirt-2025-26%3Fvariant%3D42557153575017", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -348,8 +350,8 @@ export const products: Product[] = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 78.0, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Elite Jerseys", price: 72.5, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL", "XXL"] },
+      { store: "PlanetFoot", price: 59.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000087110%3Fvariant%3D53957425398101", inStock: true, sizes: ["S", "M"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-tiro-polo-shirt-world-cup-2026-white%3Fvariant%3D43129060851817", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -361,8 +363,7 @@ export const products: Product[] = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 73.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "Elite Jerseys", price: 69.9, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fitaly-home-soccer-jersey-2026-world-cup%3Fvariant%3D42634053779561", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -374,8 +375,7 @@ export const products: Product[] = [
     colorHexSecondary: "#1B3A6B",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 80.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Kit Center", price: 84.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fengland-2026-world-cup-home-football-jersey%3Fvariant%3D42742727868521", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -387,8 +387,8 @@ export const products: Product[] = [
     colorHexSecondary: "#046A38",
     jerseyPattern: "solid",
     offers: [
-      { store: "GoalGear", price: 65.0, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XXL"] },
-      { store: "Elite Jerseys", price: 68.4, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "PlanetFoot", price: 44.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Ft-shirt-portugal-pumatech-homme-bleu-seafoam-coupe-du-monde%3Fvariant%3D53556155842901", inStock: true, sizes: ["S", "M"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fportugal-home-soccer-jersey-2026-world-cup%3Fvariant%3D42634047160425", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -400,8 +400,7 @@ export const products: Product[] = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "GoalGear", price: 62.0, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "ProSoccer Store", price: 66.75, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Furuguay-home-football-jersey-world-cup-2026%3Fvariant%3D42735948300393", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -413,8 +412,7 @@ export const products: Product[] = [
     colorHexSecondary: "#003893",
     jerseyPattern: "solid",
     offers: [
-      { store: "GoalGear", price: 63.5, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "ProSoccer Store", price: 67.0, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcolombia-home-soccer-jersey-2026-world-cup%3Fvariant%3D42632125677673", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -426,8 +424,7 @@ export const products: Product[] = [
     colorHexSecondary: "#1B3A6B",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 71.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Kit Center", price: 75.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnetherlands-2026-world-cup-home-football-jersey%3Fvariant%3D42961846501481", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -439,8 +436,7 @@ export const products: Product[] = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "stripes",
     offers: [
-      { store: "Elite Jerseys", price: 69.0, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Kit Center", price: 73.5, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcroatia-2026-world-cup-home-football-jersey%3Fvariant%3D42736040411241", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -452,8 +448,8 @@ export const products: Product[] = [
     colorHexSecondary: "#A50044",
     jerseyPattern: "stripes",
     offers: [
-      { store: "Kit Center", price: 94.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "MatchDay Shop", price: 89.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "PlanetFoot", price: 39.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-barcelone-connect-blaugrana-navy-2026%3Fvariant%3D53802756211029", inStock: true, sizes: ["S", "L", "XL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-home-soccer-jersey-2025-26%3Fvariant%3D42557200597097", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -465,8 +461,7 @@ export const products: Product[] = [
     colorHexSecondary: "#F5C742",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 92.0, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "Elite Jerseys", price: 88.5, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-x-kobe-away-soccer-jersey-2025-26%3Fvariant%3D42557195419753", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -478,8 +473,8 @@ export const products: Product[] = [
     colorHexSecondary: "#F6EB61",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 82.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Kit Center", price: 86.99, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "PlanetFoot", price: 39.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-chemise-liverpool-f-c-us-pack-adulte-2025-26-rouge%3Fvariant%3D51159085646165", inStock: true, sizes: ["S"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-home-soccer-jersey-2025-26%3Fvariant%3D42557153345641", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -491,8 +486,8 @@ export const products: Product[] = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "Elite Jerseys", price: 85.0, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Kit Center", price: 89.5, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "PlanetFoot", price: 89.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-stadium-2026-27-homme-rouge%3Fvariant%3D53957414977877", inStock: true, sizes: ["S", "M", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-us-pack-shirt-2025-26%3Fvariant%3D42557137715305", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -504,8 +499,8 @@ export const products: Product[] = [
     colorHexSecondary: "#DA291C",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 90.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "Elite Jerseys", price: 86.75, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
+      { store: "PlanetFoot", price: 24.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-paris-saint-germain-fan-adulte-2025-26-bleu%3Fvariant%3D51402024649045", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"] },
+      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-player-version-home-soccer-jersey-2025-26-navy-club-world-cup%3Fvariant%3D42557261906025", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -517,8 +512,7 @@ export const products: Product[] = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "stripes",
     offers: [
-      { store: "Kit Center", price: 87.0, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Elite Jerseys", price: 83.4, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "PlanetFoot", price: 59.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-juventus-turin-domicile-homme-2025-26-blanc%3Fvariant%3D50897551950165", inStock: true, sizes: ["S", "M", "XL"] },
     ],
   },
   {
@@ -530,8 +524,7 @@ export const products: Product[] = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "Kit Center", price: 85.0, shipping: 4.99, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "MatchDay Shop", price: 81.5, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
+      { store: "PlanetFoot", price: 69.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000091377%3Fvariant%3D54464904102229", inStock: true, sizes: ["S", "M", "L"] },
     ],
   },
   {
@@ -543,8 +536,8 @@ export const products: Product[] = [
     colorHexSecondary: "#E30613",
     jerseyPattern: "band",
     offers: [
-      { store: "GoalGear", price: 60.0, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "ProSoccer Store", price: 64.25, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XXL"] },
+      { store: "PlanetFoot", price: 60.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-river-plate-domicile-homme-2025-26-blanc%3Fvariant%3D51421275455829", inStock: true, sizes: ["S"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-terrace-icon-jersey-2025-26-white%3Fvariant%3D42719395283049", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -556,8 +549,7 @@ export const products: Product[] = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "MatchDay Shop", price: 79.0, shipping: 3.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L", "XL"] },
-      { store: "Elite Jerseys", price: 76.5, shipping: 6.95, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-home-soccer-jersey-2025-26-blue%3Fvariant%3D42557244113001", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
   {
@@ -568,9 +560,474 @@ export const products: Product[] = [
     colorHex: "#D2001C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    // Todavía sin tienda afiliada aprobada que venda esta camiseta.
+    offers: [],
+  },
+  {
+    id: "ale-away-2026",
+    teamKey: "alemania",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#000000",
+    colorHexSecondary: "#F5F5F5",
+    jerseyPattern: "solid",
     offers: [
-      { store: "GoalGear", price: 58.0, shipping: 5.5, currency: "EUR", url: "#", inStock: true, sizes: ["S", "M", "L"] },
-      { store: "ProSoccer Store", price: 61.5, shipping: 0, currency: "EUR", url: "#", inStock: true, sizes: ["M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 47.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fhavertz-7-germany-player-version-away-soccer-jersey-2026-world-cup%3Fvariant%3D47711689408617", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "ale-goalkeeper-2026",
+    teamKey: "alemania",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-goalkeeper-soccer-jersey-2026-world-cup%3Fvariant%3D42791058767977", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bar-third-202526",
+    teamKey: "barcelona",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#004D98",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-third-away-soccer-jersey-2025-26%3Fvariant%3D42557191553129", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bay-away-202526",
+    teamKey: "bayern",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#DC052D",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-away-soccer-jersey-2025-26-white%3Fvariant%3D42557241917545", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bay-third-202526",
+    teamKey: "bayern",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#DC052D",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 74.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-third-homme-2025-26-noir%3Fvariant%3D51353837535573", inStock: true, sizes: ["S", "M"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-third-away-soccer-jersey-2025-26%3Fvariant%3D42557143744617", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bay-goalkeeper-202526",
+    teamKey: "bayern",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 64.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-third-gardien-homme-2025-26-rouge%3Fvariant%3D51325544235349", inStock: true, sizes: ["S", "M", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-goalkeeper-soccer-jersey-2025-26%3Fvariant%3D42557136175209", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "boca-away-202526",
+    teamKey: "boca",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFD400",
+    colorHexSecondary: "#1B3A6B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-away-soccer-jersey-2025-26%3Fvariant%3D42557168484457", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bra-away-2026",
+    teamKey: "brasil",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0F5A2E",
+    colorHexSecondary: "#FFCC29",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-away-soccer-jersey-2026-world-cup%3Fvariant%3D42710746693737", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bra-third-2026",
+    teamKey: "brasil",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#FFCC29",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-player-version-third-away-soccer-jersey-2026-world-cup%3Fvariant%3D42707026968681", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "bra-goalkeeper-2026",
+    teamKey: "brasil",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-goalkeeper-soccer-jersey-world-cup-2026%3Fvariant%3D43162048397417", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "che-away-202526",
+    teamKey: "chelsea",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#034694",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-away-soccer-jersey-2025-26-white%3Fvariant%3D42557257744489", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "che-third-202526",
+    teamKey: "chelsea",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#034694",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-third-away-soccer-jersey-2025-26%3Fvariant%3D42591174819945", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "col-away-2026",
+    teamKey: "colombia",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#003893",
+    colorHexSecondary: "#FCD116",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcolombia-player-version-away-soccer-jersey-2026-world-cup%3Fvariant%3D42729803022441", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "cro-away-2026",
+    teamKey: "croacia",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#ED1C24",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcroatia-2026-world-cup-away-football-jersey%3Fvariant%3D42973969973353", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "esp-away-2026",
+    teamKey: "espana",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#F5B942",
+    colorHexSecondary: "#C60B1E",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 37.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fspain-away-soccer-jersey-2026-world-cup-long-sleeve%3Fvariant%3D43131519271017", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "esp-goalkeeper-2026",
+    teamKey: "espana",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 34.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fspain-home-goalkeeper-jersey-2026-world-cup%3Fvariant%3D42713300172905", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "fra-away-2026",
+    teamKey: "francia",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#EF4135",
+    colorHexSecondary: "#0055A4",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-away-soccer-jersey-2026-world-cup%3Fvariant%3D43013419106409", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "fra-goalkeeper-2026",
+    teamKey: "francia",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 32.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-hollywood-goalkeeper-lifestyle-jersey-2025%3Fvariant%3D42818196013161", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "ing-away-2026",
+    teamKey: "inglaterra",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#1B3A6B",
+    colorHexSecondary: "#F5F5F5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fengland-away-soccer-jersey-2026-world-cup%3Fvariant%3D42634045194345", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "ing-goalkeeper-2026",
+    teamKey: "inglaterra",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fengland-hollywood-lifestyle-goalkeeper-jersey-world-cup-2026%3Fvariant%3D43093713846377", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "ita-away-2026",
+    teamKey: "italia",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#003D7C",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 99.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000088506%3Fvariant%3D54053031346517", inStock: true, sizes: ["S", "L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fitaly-away-soccer-jersey-2026-world-cup%3Fvariant%3D42648228823145", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "juv-third-202526",
+    teamKey: "juventus",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 44.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-juventus-turin-third-junior-2025-26-noir%3Fvariant%3D51534371389781", inStock: true, sizes: ["M"] },
+    ],
+  },
+  {
+    id: "juv-goalkeeper-202526",
+    teamKey: "juventus",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 50.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-juventus-turin-domicile-gardien-homme-2025-26-noir%3Fvariant%3D50981178310997", inStock: true, sizes: ["M", "L"] },
+    ],
+  },
+  {
+    id: "liv-away-202526",
+    teamKey: "liverpool",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#F6EB61",
+    colorHexSecondary: "#C8102E",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 50.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-liverpool-f-c-exterieur-homme-2025-26-beige%3Fvariant%3D51325520838997", inStock: true, sizes: ["S"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-away-soccer-jersey-2025-26%3Fvariant%3D42557140729961", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "liv-third-202526",
+    teamKey: "liverpool",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#C8102E",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 39.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-liverpool-f-c-third-junior-2025-26-vert%3Fvariant%3D51385406619989", inStock: true, sizes: ["S", "M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-third-away-soccer-jersey-2025-26%3Fvariant%3D42591141724265", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "liv-goalkeeper-202526",
+    teamKey: "liverpool",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 34.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-liverpool-f-c-domicile-gardien-junior-2025-26-vert%3Fvariant%3D51325535191381", inStock: true, sizes: ["L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-third-goalkeeper-jersey-2025-26%3Fvariant%3D42658393194601", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "manutd-away-202526",
+    teamKey: "manutd",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#000000",
+    colorHexSecondary: "#DA020E",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 49.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-exterieur-homme-2025-26-blanc%3Fvariant%3D51325538664789", inStock: true, sizes: ["S", "M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fred-devils-away-soccer-jersey-2026-27%3Fvariant%3D47839276630121", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "manutd-third-202526",
+    teamKey: "manutd",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#DA020E",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 49.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-third-homme-2025-26-noir%3Fvariant%3D51385053184341", inStock: true, sizes: ["S"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-third-away-soccer-jersey-2026-27%3Fvariant%3D47839298945129", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "manutd-goalkeeper-202526",
+    teamKey: "manutd",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 44.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-third-gardien-junior-2025-26-vert%3Fvariant%3D51385052823893", inStock: true, sizes: ["M", "L"] },
+    ],
+  },
+  {
+    id: "ned-away-2026",
+    teamKey: "paisesbajos",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#1B3A6B",
+    colorHexSecondary: "#FF6600",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnetherlands-2026-world-cup-away-football-jersey%3Fvariant%3D42961849253993", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "por-away-2026",
+    teamKey: "portugal",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#046A38",
+    colorHexSecondary: "#A5001E",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 54.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-portugal-ronaldo-away-blanc-vert-2026-homme%3Fvariant%3D53802754081109", inStock: true, sizes: ["L"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fportugal-away-soccer-jersey-2026-world-cup%3Fvariant%3D42706804179049", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "psg-away-202526",
+    teamKey: "psg",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#DA291C",
+    colorHexSecondary: "#001E62",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-fourth-away-soccer-jersey-2025-26%3Fvariant%3D42697531752553", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "psg-third-202526",
+    teamKey: "psg",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#001E62",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-third-away-player-version-soccer-jersey-2025-26%3Fvariant%3D42616145444969", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "rma-away-202526",
+    teamKey: "realmadrid",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#FEBE10",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 49.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-exterieur-homme-2025-26-bleu%3Fvariant%3D51159086367061", inStock: true, sizes: ["S", "M", "L", "XL"] },
+      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-madrid-2016-17-away-retro-soccer-jersey%3Fvariant%3D42557230907497", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "rma-third-202526",
+    teamKey: "realmadrid",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#FEBE10",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 99.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-third-homme-2024-25-beige-hp%3Fvariant%3D50258487411029", inStock: true, sizes: ["M"] },
+    ],
+  },
+  {
+    id: "rma-goalkeeper-202526",
+    teamKey: "realmadrid",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 54.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-domicile-gardien-homme-2025-26-bleu%3Fvariant%3D50923096572245", inStock: true, sizes: ["S"] },
+    ],
+  },
+  {
+    id: "riv-away-202526",
+    teamKey: "riverplate",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#E30613",
+    colorHexSecondary: "#F5F5F5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 59.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-river-plate-exterieur-homme-2025-26-noir%3Fvariant%3D51494762905941", inStock: true, sizes: ["S"] },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-away-soccer-jersey-2025-26%3Fvariant%3D42724207853673", inStock: true, sizes: ["S", "M", "L", "XL"] },
+    ],
+  },
+  {
+    id: "uru-away-2026",
+    teamKey: "uruguay",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#000000",
+    colorHexSecondary: "#75C6E8",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Furuguay-away-football-jersey-world-cup-2026%3Fvariant%3D42762193862761", inStock: true, sizes: ["S", "M", "L", "XL"] },
     ],
   },
 ];
