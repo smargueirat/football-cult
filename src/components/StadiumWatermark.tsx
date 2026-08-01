@@ -12,7 +12,7 @@ export default function StadiumWatermark() {
       />
 
       {/* pátina cálida para que la foto se integre con la paleta marfil */}
-      <div className="absolute inset-0 bg-[#F7F5F0] mix-blend-color opacity-40" />
+      <div className="absolute inset-0 bg-[#EDE0C4] mix-blend-color opacity-45" />
 
       {/* boca del túnel: paneles oscuros a los costados, arriba */}
       <svg
