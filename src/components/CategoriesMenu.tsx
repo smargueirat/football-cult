@@ -77,7 +77,7 @@ export default function CategoriesMenu() {
       </button>
 
       {open && (
-        <div className="solid-panel absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl border border-black/[0.06] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)]">
+        <div className="solid-panel absolute left-1/2 top-full mt-2 w-64 -translate-x-1/2 rounded-2xl border border-[#C9A24B]/25 p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)]">
           {items.map((item) => (
             <button
               key={item.label}
@@ -85,15 +85,15 @@ export default function CategoriesMenu() {
               className="block w-full rounded-xl px-4 py-3 text-left transition-colors hover:bg-black/[0.03]"
             >
               <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
-              <p className="text-xs text-[#8a8a84]">{item.desc}</p>
+              <p className="text-xs text-[#8a7a5a]">{item.desc}</p>
             </button>
           ))}
           <div className="flex cursor-not-allowed items-center justify-between rounded-xl px-4 py-3 opacity-50">
             <div>
               <p className="text-sm font-medium text-[#1a1a1a]">{t.categoriesMenu.retro}</p>
-              <p className="text-xs text-[#8a8a84]">{t.categoriesMenu.retroDesc}</p>
+              <p className="text-xs text-[#8a7a5a]">{t.categoriesMenu.retroDesc}</p>
             </div>
-            <span className="rounded-full bg-black/[0.05] px-2 py-0.5 text-[10px] font-medium text-[#6b6b66]">
+            <span className="rounded-full bg-[#C9A24B]/10 px-2 py-0.5 text-[10px] font-medium text-[#6b5f47]">
               {t.categoriesMenu.soon}
             </span>
           </div>

@@ -7,8 +7,8 @@ export default function Privacidad() {
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-6 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">{t.privacy.title}</h1>
-      <div className="rounded-3xl border border-black/[0.06] bg-white p-8 shadow-sm text-[#3a3a36]">
+      <h1 className="font-card-title text-4xl text-[#1a1a1a]">{t.privacy.title}</h1>
+      <div className="vintage-card rounded-3xl p-8 text-[#3a3a36]">
         <p>{t.privacy.updated}</p>
         <p>{t.privacy.intro}</p>
         <h2 className="text-xl font-semibold text-[#1a1a1a]">
@@ -36,7 +36,7 @@ export default function Privacidad() {
           </a>
           .
         </p>
-        <p className="text-sm text-[#8a8a84]">{t.privacy.note}</p>
+        <p className="text-sm text-[#8a7a5a]">{t.privacy.note}</p>
       </div>
     </div>
   );

@@ -14,17 +14,17 @@ export default function Header() {
   const { t } = useLanguage();
 
   return (
-    <header className="glass-panel sticky top-0 z-50 border-b border-black/[0.06]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-2.5 py-2.5 sm:px-6 sm:py-4">
+    <header className="glass-panel sticky top-0 z-50 border-b border-[#C9A24B]/25">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-2.5 py-2 sm:px-6 sm:py-2.5">
         <div className="flex items-center gap-1 sm:gap-4">
           <MobileMenu />
           <Link href="/" className="flex items-center gap-1.5 sm:gap-2.5">
             <Image
               src="/logo-badge.png"
               alt={t.brand}
-              width={44}
-              height={44}
-              className="h-8 w-8 sm:h-11 sm:w-11"
+              width={56}
+              height={56}
+              className="h-10 w-10 sm:h-14 sm:w-14"
               priority
             />
             <span className="flex flex-col leading-none">

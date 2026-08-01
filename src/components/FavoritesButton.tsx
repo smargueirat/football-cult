@@ -30,7 +30,7 @@ export default function FavoritesButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.favorites}
-        className="relative flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-black/[0.05]"
+        className="relative flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
@@ -50,12 +50,12 @@ export default function FavoritesButton() {
       {open && (
         <Portal>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="solid-panel fixed right-3 top-14 z-50 w-72 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
+          <div className="solid-panel fixed right-3 top-14 z-50 w-72 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[#C9A24B]/25 p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
             <p className="mb-2 text-sm font-medium text-[#1a1a1a]">
               {t.favoritesPanel.title}
             </p>
             {savedProducts.length === 0 ? (
-              <p className="text-xs text-[#8a8a84]">{t.favoritesPanel.empty}</p>
+              <p className="text-xs text-[#8a7a5a]">{t.favoritesPanel.empty}</p>
             ) : (
               <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
                 {savedProducts.map((product) => {
@@ -90,7 +90,7 @@ export default function FavoritesButton() {
               <Link
                 href="/favoritos"
                 onClick={() => setOpen(false)}
-                className="mt-2 flex items-center justify-center rounded-xl border-t border-black/[0.06] pt-3 text-sm font-medium text-[#1F6F4C] transition-colors hover:text-[#18573c]"
+                className="mt-2 flex items-center justify-center rounded-xl border-t border-[#C9A24B]/25 pt-3 text-sm font-medium text-[#1F6F4C] transition-colors hover:text-[#18573c]"
               >
                 {t.favoritesPanel.viewAll}
               </Link>

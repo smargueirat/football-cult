@@ -39,12 +39,12 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/camiseta/${product.id}`}
-      className="glass-panel group flex flex-col overflow-hidden rounded-2xl shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+      className="vintage-card group flex flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
         style={{
-          background: `linear-gradient(135deg, #ffffff, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
+          background: `linear-gradient(135deg, #fffdf8, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
         }}
       >
         {photo ? (
@@ -63,8 +63,12 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         )}
 
+        <span className="vintage-plaque absolute left-3 top-3 rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
+          {product.season}
+        </span>
+
         {best && (
-          <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full bg-gradient-to-br from-[#FDE68A] to-[#D97706] px-3 py-1.5 text-sm font-semibold text-[#4A2E04] shadow-md">
+          <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-sm font-semibold text-[#2A2410] shadow-md">
             <span className="text-xs">🥇</span>
             {formatMoney(best.price + best.shipping, country)}
           </div>
@@ -77,7 +81,7 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
-          className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+          className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
         >
           <svg
             className="h-4 w-4"
@@ -95,17 +99,19 @@ export default function ProductCard({ product }: { product: Product }) {
         </button>
       </div>
 
+      <div className="vintage-divider" />
+
       <div className="flex flex-col gap-0.5 p-3 sm:p-4">
-        <h3 className="text-sm font-medium leading-snug text-[#1a1a1a] sm:text-base">
-          {team} {type} {product.season}
+        <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] sm:text-lg">
+          {team} {type}
         </h3>
         {best ? (
-          <p className="text-xs text-[#8a8a84]">
+          <p className="text-xs text-[#8a7a5a]">
             {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (
-          <p className="text-xs text-[#8a8a84]">{t.countryPanel.notAvailable}</p>
+          <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
         )}
       </div>
     </Link>

@@ -60,14 +60,14 @@ export default function SearchExplorer() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="glass-panel flex flex-col gap-4 rounded-3xl border border-black/[0.06] p-5 shadow-sm sm:p-6">
+      <div className="vintage-card flex flex-col gap-4 rounded-3xl p-5 sm:p-6">
         <div className="flex flex-col gap-2">
-          <label htmlFor="search" className="text-sm font-medium text-[#3a3a36]">
+          <label htmlFor="search" className="font-tagline text-sm not-italic text-[#5b5442]">
             {t.search.label}
           </label>
           <div className="relative">
             <svg
-              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-[#9a9a94]"
+              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-[#a8926a]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -85,13 +85,13 @@ export default function SearchExplorer() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={t.search.placeholder}
-              className="w-full rounded-2xl border border-black/[0.08] bg-[#faf9f5] py-4 pl-12 pr-11 text-base text-[#1a1a1a] placeholder-[#9a9a94] outline-none transition focus:border-[#1F6F4C]/50 focus:bg-white focus:ring-2 focus:ring-[#1F6F4C]/15"
+              className="w-full rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-4 pl-12 pr-11 text-base text-[#1a1a1a] placeholder-[#a8926a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
             />
             {query && (
               <button
                 onClick={() => setQuery("")}
                 aria-label={t.search.clearAria}
-                className="absolute right-3 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-[#9a9a94] transition-colors hover:bg-black/[0.05] hover:text-[#1a1a1a]"
+                className="absolute right-3 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-[#8a7a5a] transition-colors hover:bg-black/[0.05] hover:text-[#1a1a1a]"
               >
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
                   <path
@@ -107,7 +107,7 @@ export default function SearchExplorer() {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <span className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}:</span>
+          <span className="text-xs text-[#8a7a5a]">{t.search.quickSelectLabel}:</span>
           <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {TEAM_KEYS.map((key) => {
               const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
@@ -131,7 +131,7 @@ export default function SearchExplorer() {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-[#9a9a94]">{t.nav.categories}:</span>
+          <span className="text-xs text-[#8a7a5a]">{t.nav.categories}:</span>
           <Chip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} accent="amber">
             {t.search.allCategories}
           </Chip>
@@ -144,7 +144,7 @@ export default function SearchExplorer() {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-[#9a9a94]">{t.search.typeLabel}:</span>
+          <span className="text-xs text-[#8a7a5a]">{t.search.typeLabel}:</span>
           <Chip active={typeFilter === "all"} onClick={() => setTypeFilter("all")}>
             {t.search.allCategories}
           </Chip>
@@ -162,7 +162,7 @@ export default function SearchExplorer() {
         </p>
       ) : (
         <>
-          <p className="text-xs text-[#9a9a94]">
+          <p className="text-xs text-[#8a7a5a]">
             {t.search.resultsCount.replace("{n}", String(results.length))}
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">

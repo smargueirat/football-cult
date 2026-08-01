@@ -11,21 +11,21 @@ export default function Home() {
     <>
       <div className="flex flex-1 flex-col">
         {/* Hero: banner vintage inspirado en el escudo dorado */}
-        <section className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 sm:pt-8">
-          <div className="vintage-banner relative flex flex-col items-center gap-2 overflow-hidden rounded-2xl px-6 py-8 text-center sm:gap-3 sm:rounded-3xl sm:px-10 sm:py-12">
+        <section className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 sm:pt-6">
+          <div className="vintage-banner relative flex flex-col items-center gap-1.5 overflow-hidden rounded-2xl px-6 py-5 text-center sm:gap-2 sm:rounded-3xl sm:px-10 sm:py-7">
             <div className="vintage-banner-rays absolute inset-0" aria-hidden />
-            <span className="font-tagline relative text-[11px] uppercase text-[#C9A24B] sm:text-sm">
+            <span className="font-tagline relative text-[10px] uppercase text-[#C9A24B] sm:text-xs">
               {t.hero.eyebrow}
             </span>
-            <h1 className="font-vintage relative text-2xl leading-tight text-[#F3E9C9] sm:text-5xl">
+            <h1 className="font-vintage relative text-xl leading-tight text-[#F3E9C9] sm:text-3xl">
               {t.hero.title}
             </h1>
-            <p className="relative max-w-xl text-sm text-[#CFC7B0] sm:text-base">
+            <p className="relative max-w-xl text-xs text-[#CFC7B0] sm:text-sm">
               {t.hero.subtitle}
             </p>
             <a
               href="#catalogo"
-              className="relative mt-2 inline-flex items-center gap-2 rounded-full border border-[#C9A24B] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-5 py-2 text-xs font-semibold uppercase tracking-wide text-[#2A2410] shadow-md transition-transform hover:scale-[1.03] sm:text-sm"
+              className="relative mt-1.5 inline-flex items-center gap-2 rounded-full border border-[#C9A24B] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] shadow-md transition-transform hover:scale-[1.03] sm:text-xs"
             >
               {t.hero.cta}
               <span aria-hidden>→</span>
@@ -39,21 +39,21 @@ export default function Home() {
         </section>
 
         {/* Steps */}
-        <section className="border-t border-black/[0.06] bg-white">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-16 sm:grid-cols-3">
+        <section className="vintage-dark border-y border-[#C9A24B]/20">
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-6 py-14 sm:grid-cols-3 sm:gap-10 sm:py-20">
             {[
               { title: t.steps.title1, text: t.steps.text1 },
               { title: t.steps.title2, text: t.steps.text2 },
               { title: t.steps.title3, text: t.steps.text3 },
             ].map((step, i) => (
-              <div key={step.title}>
-                <span className="text-2xl font-semibold text-[#1F6F4C]">
+              <div key={step.title} className="flex flex-col items-start gap-2">
+                <span className="vintage-plaque flex h-10 w-10 items-center justify-center rounded-full text-sm font-semibold">
                   0{i + 1}
                 </span>
-                <h3 className="mt-2 text-lg font-semibold text-[#1a1a1a]">
+                <h3 className="font-card-title mt-1 text-xl text-[#F3E9C9]">
                   {step.title}
                 </h3>
-                <p className="mt-1 text-sm text-[#6b6b66]">{step.text}</p>
+                <p className="text-sm text-[#B8AF98]">{step.text}</p>
               </div>
             ))}
           </div>

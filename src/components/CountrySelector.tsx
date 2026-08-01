@@ -16,7 +16,7 @@ export default function CountrySelector() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.shipTo}
-        className="flex h-8 items-center gap-1 rounded-full px-2 text-sm text-[#1a1a1a] transition-colors hover:bg-black/[0.05] sm:h-9"
+        className="flex h-8 items-center gap-1 rounded-full px-2 text-sm text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10 sm:h-9"
       >
         <span className="text-base leading-none">{country.flag}</span>
         <span className="hidden text-xs font-medium text-[#5b5b57] md:inline">
@@ -27,7 +27,7 @@ export default function CountrySelector() {
       {open && (
         <Portal>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="solid-panel fixed right-3 top-14 z-50 w-64 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-black/[0.06] p-3 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
+          <div className="solid-panel fixed right-3 top-14 z-50 w-64 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[#C9A24B]/25 p-3 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
             <p className="mb-2 px-1 text-sm font-medium text-[#1a1a1a]">
               {t.countryPanel.title}
             </p>
@@ -47,12 +47,12 @@ export default function CountrySelector() {
                       <span className="text-base leading-none">{c.flag}</span>
                       {c.name[locale]}
                     </span>
-                    <span className="text-xs text-[#9a9a94]">{c.currency}</span>
+                    <span className="text-xs text-[#8a7a5a]">{c.currency}</span>
                   </button>
                 </li>
               ))}
             </ul>
-            <p className="mt-2 border-t border-black/[0.06] px-1 pt-2 text-[11px] text-[#9a9a94]">
+            <p className="mt-2 border-t border-[#C9A24B]/25 px-1 pt-2 text-[11px] text-[#8a7a5a]">
               {t.countryPanel.note}
             </p>
           </div>

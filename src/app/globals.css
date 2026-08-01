@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f5f0;
-  --foreground: #1a1a1a;
+  --background: #f5f0e4;
+  --foreground: #201d16;
 }
 
 @theme inline {
@@ -58,4 +58,56 @@ body {
   mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 70%);
   -webkit-mask-image: radial-gradient(circle at 50% 40%, black 0%, transparent 70%);
   opacity: 0.7;
+}
+
+/* --- Sistema vintage: tarjetas, plaquetas, texturas --- */
+
+.vintage-card {
+  background: linear-gradient(175deg, #fffdf8, #f6efdd);
+  border: 1px solid rgba(180, 146, 63, 0.35);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    0 10px 24px -14px rgba(43, 32, 10, 0.35);
+}
+
+.vintage-plaque {
+  background: linear-gradient(180deg, #2a2410, #171407);
+  border: 1px solid rgba(201, 162, 75, 0.55);
+  color: #e9d38f;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.vintage-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(180, 146, 63, 0.5) 20%,
+    rgba(180, 146, 63, 0.5) 80%,
+    transparent
+  );
+}
+
+.vintage-dark {
+  background: linear-gradient(160deg, #1f1c17, #14120e 65%);
+}
+
+.paper-texture {
+  background-image:
+    radial-gradient(rgba(120, 96, 40, 0.05) 1px, transparent 1px),
+    radial-gradient(rgba(120, 96, 40, 0.04) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 2px 3px;
+}
+
+.eyebrow {
+  font-family: var(--font-tagline);
+  letter-spacing: 0.22em;
+  font-style: italic;
+}
+
+.font-card-title {
+  font-family: var(--font-tagline);
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }

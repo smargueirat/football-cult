@@ -16,13 +16,13 @@ export default function FavoritosPage() {
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
-      <h1 className="mb-6 text-2xl font-semibold tracking-tight text-[#1a1a1a] sm:text-3xl">
+      <h1 className="font-card-title mb-6 text-3xl text-[#1a1a1a] sm:text-4xl">
         {t.favoritesPage.title}
       </h1>
 
       {savedProducts.length === 0 ? (
-        <div className="glass-panel flex flex-col items-center gap-4 rounded-3xl border border-black/[0.06] p-10 text-center">
-          <p className="text-[#8a8a84]">{t.favoritesPage.empty}</p>
+        <div className="glass-panel flex flex-col items-center gap-4 rounded-3xl border border-[#C9A24B]/25 p-10 text-center">
+          <p className="text-[#8a7a5a]">{t.favoritesPage.empty}</p>
           <Link
             href="/"
             className="rounded-full bg-[#1F6F4C] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#18573c]"

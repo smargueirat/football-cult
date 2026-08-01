@@ -69,11 +69,14 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
         {/* Left: showcase */}
         <div className="lg:sticky lg:top-24 lg:self-start">
           <div
-            className="flex aspect-square items-center justify-center overflow-hidden rounded-3xl p-16"
+            className="vintage-card relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl p-16"
             style={{
-              background: `linear-gradient(135deg, #ffffff, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
+              background: `linear-gradient(135deg, #fffdf8, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
             }}
           >
+            <span className="vintage-plaque absolute left-4 top-4 rounded px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider">
+              {product.season}
+            </span>
             {photo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -100,24 +103,24 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
         {/* Right: hunter column */}
         <div className="flex flex-col gap-6">
           <div>
-            <h1 className="text-2xl font-semibold tracking-tight text-[#1a1a1a] sm:text-3xl">
-              {team} {type} {product.season}
+            <h1 className="font-card-title text-3xl text-[#1a1a1a] sm:text-4xl">
+              {team} {type}
             </h1>
-            <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a8a84]">
+            <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
               <span>{country.flag}</span>
               {t.detail.storesCompared.replace("{n}", String(shippableCount))}
             </p>
           </div>
 
           {shippableCount === 0 ? (
-            <p className="rounded-2xl border border-black/[0.06] bg-white/60 p-4 text-sm text-[#8a8a84]">
+            <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#8a7a5a]">
               {t.countryPanel.notAvailable}
             </p>
           ) : (
             <>
               {/* Size selector */}
               <div>
-                <p className="mb-2 text-sm font-medium text-[#3a3a36]">{t.detail.chooseSize}</p>
+                <p className="font-tagline mb-2 text-sm not-italic text-[#5b5442]">{t.detail.chooseSize}</p>
                 <div className="flex flex-wrap gap-2">
                   {sizes.map((size) => (
                     <button
@@ -125,8 +128,8 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                       onClick={() => setSelectedSize((s) => (s === size ? null : size))}
                       className={`flex h-11 w-11 items-center justify-center rounded-full border text-sm font-medium transition-colors ${
                         selectedSize === size
-                          ? "border-[#1F6F4C] bg-[#1F6F4C] text-white"
-                          : "border-black/[0.1] bg-white text-[#3a3a36] hover:border-[#1F6F4C]/50"
+                          ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                          : "border-[#C9A24B]/30 bg-white text-[#3a3a36] hover:border-[#1B3B2B]/50"
                       }`}
                     >
                       {size}
@@ -137,7 +140,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
               {/* Offers */}
               <div>
-                <p className="mb-3 text-sm font-medium text-[#3a3a36]">
+                <p className="font-tagline mb-3 text-sm not-italic text-[#5b5442]">
                   {selectedSize
                     ? t.detail.storesCompared.replace(
                         "{n}",
@@ -158,8 +161,8 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                     return (
                       <div
                         key={offer.store}
-                        className={`glass-panel flex flex-col gap-3 rounded-2xl border p-4 shadow-sm transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
-                          isBest ? "border-[#D97706]/40 ring-1 ring-[#D97706]/20" : "border-black/[0.06]"
+                        className={`vintage-card flex flex-col gap-3 rounded-2xl p-4 transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
+                          isBest ? "border-[#B8923F]/70 ring-1 ring-[#C9A24B]/30" : ""
                         } ${match ? "" : "pointer-events-none opacity-40"}`}
                       >
                         <div className="flex items-center gap-3">
@@ -175,17 +178,17 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               {isBest && <span className="text-xs">🥇</span>}
                             </p>
                             {!offer.inStock ? (
-                              <p className="text-xs text-[#b3b3ad]">{t.product.soldOut}</p>
+                              <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
                             ) : !ships ? (
-                              <p className="text-xs text-[#b3b3ad]">
+                              <p className="text-xs text-[#b3aa8f]">
                                 {t.countryPanel.notAvailable}
                               </p>
                             ) : !matchesSize(offer) ? (
-                              <p className="text-xs text-[#b3b3ad]">
+                              <p className="text-xs text-[#b3aa8f]">
                                 {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
                               </p>
                             ) : (
-                              <p className="text-xs text-[#8a8a84]">
+                              <p className="text-xs text-[#8a7a5a]">
                                 {formatMoney(offer.price, country)} + {formatMoney(offer.shipping, country)} {t.detail.shipping.toLowerCase()}
                               </p>
                             )}
@@ -194,7 +197,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
                         <div className="flex items-center justify-between gap-4 sm:justify-end">
                           <div className="text-right">
-                            <p className="text-[10px] uppercase tracking-wide text-[#9a9a94]">
+                            <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
                               {t.detail.total}
                             </p>
                             <p
@@ -207,7 +210,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                           </div>
                           <a
                             href={offer.url}
-                            className="group/btn flex items-center gap-1.5 rounded-full bg-[#1F6F4C] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#18573c]"
+                            className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                           >
                             {t.detail.viewInStore}
                             <svg

@@ -42,7 +42,7 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${alfaSlabOne.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-[#f7f5f0] text-[#1a1a1a]">
+      <body className="paper-texture flex min-h-full flex-col bg-[#f5f0e4] text-[#201d16]">
         <StadiumWatermark />
         <LanguageProvider>
           <CountryProvider>
