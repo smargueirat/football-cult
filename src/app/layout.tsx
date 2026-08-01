@@ -42,6 +42,19 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${alfaSlabOne.variable} ${cormorant.variable} h-full antialiased`}
     >
+      <head>
+        {/* Impact.com pide este tag con el atributo "value" (no "content"),
+            por eso el cast: el tipo de <meta> de React no lo contempla. */}
+        <meta
+          {...({
+            name: "impact-site-verification",
+            value: "8890468b-0e54-4e00-a128-a1a140108427",
+          } as React.DetailedHTMLProps<
+            React.MetaHTMLAttributes<HTMLMetaElement>,
+            HTMLMetaElement
+          >)}
+        />
+      </head>
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
         <StadiumWatermark />
         <LanguageProvider>
