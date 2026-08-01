@@ -154,41 +154,47 @@ export default function SearchExplorer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#8a7a5a]">{t.nav.categories}:</span>
-          <Chip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} accent="amber">
-            {t.search.allCategories}
-          </Chip>
-          <Chip active={categoryFilter === "national"} onClick={() => setCategoryFilter("national")} accent="amber">
-            {t.search.categoryNational}
-          </Chip>
-          <Chip active={categoryFilter === "club"} onClick={() => setCategoryFilter("club")} accent="amber">
-            {t.search.categoryClubs}
-          </Chip>
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <Chip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} accent="amber" className="shrink-0">
+              {t.search.allCategories}
+            </Chip>
+            <Chip active={categoryFilter === "national"} onClick={() => setCategoryFilter("national")} accent="amber" className="shrink-0">
+              {t.search.categoryNational}
+            </Chip>
+            <Chip active={categoryFilter === "club"} onClick={() => setCategoryFilter("club")} accent="amber" className="shrink-0">
+              {t.search.categoryClubs}
+            </Chip>
+          </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#8a7a5a]">{t.search.typeLabel}:</span>
-          <Chip active={typeFilter === "all"} onClick={() => setTypeFilter("all")}>
-            {t.search.allCategories}
-          </Chip>
-          {TYPE_FILTERS.map((key) => (
-            <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
-              {typeNames[key][locale]}
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <Chip active={typeFilter === "all"} onClick={() => setTypeFilter("all")} className="shrink-0">
+              {t.search.allCategories}
             </Chip>
-          ))}
+            {TYPE_FILTERS.map((key) => (
+              <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)} className="shrink-0">
+                {typeNames[key][locale]}
+              </Chip>
+            ))}
+          </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#8a7a5a]">{t.search.seasonLabel}:</span>
-          <Chip active={seasonFilter === "all"} onClick={() => setSeasonFilter("all")}>
-            {t.search.allCategories}
-          </Chip>
-          {SEASONS.map((season) => (
-            <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)}>
-              {season}
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <Chip active={seasonFilter === "all"} onClick={() => setSeasonFilter("all")} className="shrink-0">
+              {t.search.allCategories}
             </Chip>
-          ))}
+            {SEASONS.map((season) => (
+              <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)} className="shrink-0">
+                {season}
+              </Chip>
+            ))}
+          </div>
         </div>
       </div>
 
