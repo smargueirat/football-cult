@@ -68,6 +68,10 @@ export default function RootLayout({
             </FavoritesProvider>
           </CountryProvider>
         </LanguageProvider>
+        <script
+          type="text/javascript"
+          src="https://s.skimresources.com/js/307104X1795379.skimlinks.js"
+        />
       </body>
     </html>
   );
