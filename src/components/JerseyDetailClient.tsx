@@ -7,9 +7,10 @@ import {
   Product,
   Size,
   availableSizesForCountry,
-  formatMoney,
+  formatOfferMoney,
   offerShipsTo,
   offerTotal,
+  offerTotalInEUR,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -34,7 +35,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const sizes = availableSizesForCountry(product, countryCode);
 
   const sortedOffers = useMemo(
-    () => [...product.offers].sort((a, b) => offerTotal(a) - offerTotal(b)),
+    () => [...product.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
     [product.offers]
   );
 
@@ -189,7 +190,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               </p>
                             ) : (
                               <p className="text-xs text-[#8a7a5a]">
-                                {formatMoney(offer.price, country)} + {formatMoney(offer.shipping, country)} {t.detail.shipping.toLowerCase()}
+                                {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
                               </p>
                             )}
                           </div>
@@ -205,7 +206,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                 isBest ? "text-[#B45309]" : "text-[#3a3a36]"
                               }`}
                             >
-                              {formatMoney(offerTotal(offer), country)}
+                              {formatOfferMoney(offerTotal(offer), offer.currency)}
                             </p>
                           </div>
                           <a

@@ -6,8 +6,9 @@ import {
   SIZES,
   availableSizesForCountry,
   bestOfferForCountry,
-  formatMoney,
+  formatOfferMoney,
   offerShipsTo,
+  offerTotal,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -19,7 +20,7 @@ import JerseyIcon from "./JerseyIcon";
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
-  const { country, countryCode } = useCountry();
+  const { countryCode } = useCountry();
   const favorite = isFavorite(product.id);
   const best = bestOfferForCountry(product, countryCode);
   const storeCount = product.offers.filter(
@@ -70,7 +71,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {best && (
           <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-sm font-semibold text-[#2A2410] shadow-md">
             <span className="text-xs">🥇</span>
-            {formatMoney(best.price + best.shipping, country)}
+            {formatOfferMoney(offerTotal(best), best.currency)}
           </div>
         )}
 

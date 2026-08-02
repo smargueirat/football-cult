@@ -7,7 +7,7 @@ import {
   TeamKey,
   TypeKey,
   bestOfferForCountry,
-  offerTotal,
+  offerTotalInEUR,
   products,
   shipsToCountry,
   teamCategory,
@@ -76,8 +76,8 @@ export default function SearchExplorer() {
       }
       const bestA = bestOfferForCountry(a, countryCode);
       const bestB = bestOfferForCountry(b, countryCode);
-      const totalA = bestA ? offerTotal(bestA) : Infinity;
-      const totalB = bestB ? offerTotal(bestB) : Infinity;
+      const totalA = bestA ? offerTotalInEUR(bestA) : Infinity;
+      const totalB = bestB ? offerTotalInEUR(bestB) : Infinity;
       return sortBy === "priceDesc" ? totalB - totalA : totalA - totalB;
     });
   }, [query, typeFilter, categoryFilter, seasonFilter, countryCode, sortBy]);

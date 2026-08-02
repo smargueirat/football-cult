@@ -5,7 +5,7 @@ import { useState } from "react";
 import {
   bestOfferForCountry,
   findProduct,
-  formatMoney,
+  formatOfferMoney,
   offerTotal,
   teamNames,
   typeNames,
@@ -17,7 +17,7 @@ import Portal from "./Portal";
 
 export default function FavoritesButton() {
   const { locale, t } = useLanguage();
-  const { country, countryCode } = useCountry();
+  const { countryCode } = useCountry();
   const { favorites } = useFavorites();
   const [open, setOpen] = useState(false);
 
@@ -73,7 +73,7 @@ export default function FavoritesButton() {
                         </span>
                         {best ? (
                           <span className="text-sm font-semibold text-[#B45309]">
-                            {formatMoney(offerTotal(best), country)}
+                            {formatOfferMoney(offerTotal(best), best.currency)}
                           </span>
                         ) : (
                           <span className="text-xs text-[#b3b3ad]">
