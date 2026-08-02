@@ -34,6 +34,9 @@ export interface Translations {
   loginPanel: {
     title: string;
     text: string;
+    googleCta: string;
+    signedInAs: string;
+    signOut: string;
   };
   categoriesMenu: {
     national: string;
@@ -178,8 +181,11 @@ export const translations: Record<Locale, Translations> = {
       browse: "Explorar camisetas",
     },
     loginPanel: {
-      title: "Próximamente",
-      text: "Estamos trabajando en cuentas de usuario para guardar alertas de precio y favoritos entre dispositivos.",
+      title: "Tu cuenta",
+      text: "Iniciá sesión para guardar tus favoritos y accederlos desde cualquier dispositivo.",
+      googleCta: "Continuar con Google",
+      signedInAs: "Conectado como",
+      signOut: "Cerrar sesión",
     },
     categoriesMenu: {
       national: "Selecciones",
@@ -332,8 +338,11 @@ export const translations: Record<Locale, Translations> = {
       browse: "Explorar camisas",
     },
     loginPanel: {
-      title: "Em breve",
-      text: "Estamos trabalhando em contas de usuário para salvar alertas de preço e favoritos entre dispositivos.",
+      title: "Sua conta",
+      text: "Faça login para salvar seus favoritos e acessá-los de qualquer dispositivo.",
+      googleCta: "Continuar com o Google",
+      signedInAs: "Conectado como",
+      signOut: "Sair",
     },
     categoriesMenu: {
       national: "Seleções",
@@ -486,8 +495,11 @@ export const translations: Record<Locale, Translations> = {
       browse: "Browse jerseys",
     },
     loginPanel: {
-      title: "Coming soon",
-      text: "We're working on user accounts to save price alerts and favorites across devices.",
+      title: "Your account",
+      text: "Sign in to save your favorites and access them from any device.",
+      googleCta: "Continue with Google",
+      signedInAs: "Signed in as",
+      signOut: "Sign out",
     },
     categoriesMenu: {
       national: "National teams",

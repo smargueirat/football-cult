@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SessionProvider } from "next-auth/react";
 import { Inter, Alfa_Slab_One, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -57,17 +58,19 @@ export default function RootLayout({
       </head>
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
         <StadiumWatermark />
-        <LanguageProvider>
-          <CountryProvider>
-            <FavoritesProvider>
-              <SearchFilterProvider>
-                <Header />
-                <main className="flex flex-1 flex-col">{children}</main>
-                <Footer />
-              </SearchFilterProvider>
-            </FavoritesProvider>
-          </CountryProvider>
-        </LanguageProvider>
+        <SessionProvider>
+          <LanguageProvider>
+            <CountryProvider>
+              <FavoritesProvider>
+                <SearchFilterProvider>
+                  <Header />
+                  <main className="flex flex-1 flex-col">{children}</main>
+                  <Footer />
+                </SearchFilterProvider>
+              </FavoritesProvider>
+            </CountryProvider>
+          </LanguageProvider>
+        </SessionProvider>
         <script
           type="text/javascript"
           src="https://s.skimresources.com/js/307104X1795379.skimlinks.js"
