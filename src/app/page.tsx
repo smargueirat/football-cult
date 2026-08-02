@@ -2,6 +2,7 @@
 
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
+import RecentlyViewedSection from "@/components/RecentlyViewedSection";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Home() {
@@ -33,8 +34,13 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Vistos recientemente */}
+        <section className="mx-auto w-full max-w-6xl px-6 pt-6">
+          <RecentlyViewedSection />
+        </section>
+
         {/* Search + results */}
-        <section id="catalogo" className="mx-auto w-full max-w-6xl flex-1 scroll-mt-20 px-6 pb-24">
+        <section id="catalogo" className="mx-auto w-full max-w-6xl flex-1 scroll-mt-20 px-6 pb-24 pt-6">
           <SearchExplorer />
         </section>
 

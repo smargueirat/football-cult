@@ -1,6 +1,7 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
 
 const STORAGE_KEY = "football-cult-favorites";
 
@@ -12,26 +13,55 @@ interface FavoritesValue {
 
 const FavoritesContext = createContext<FavoritesValue | undefined>(undefined);
 
+function readLocalFavorites(): string[] {
+  const stored = window.localStorage.getItem(STORAGE_KEY);
+  if (!stored) return [];
+  try {
+    const parsed = JSON.parse(stored);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
 export function FavoritesProvider({ children }: { children: ReactNode }) {
-  const [favorites, setFavorites] = useState<string[]>([]);
+  const { data: session, status, update } = useSession();
+  const [localFavorites, setLocalFavorites] = useState<string[]>([]);
+  const mergedOnLogin = useRef(false);
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (!stored) return;
-    try {
-      const parsed = JSON.parse(stored);
-      if (Array.isArray(parsed)) setFavorites(parsed);
-    } catch {
-      // ignore malformed storage
-    }
+    setLocalFavorites(readLocalFavorites());
   }, []);
 
+  // Al loguearse, fusiona una única vez los favoritos guardados como
+  // invitado (localStorage) con los que ya tenga la cuenta.
+  useEffect(() => {
+    if (status !== "authenticated" || mergedOnLogin.current) return;
+    mergedOnLogin.current = true;
+    const local = readLocalFavorites();
+    if (local.length === 0) return;
+    const existing = session?.favorites ?? [];
+    const merged = Array.from(new Set([...existing, ...local]));
+    if (merged.length !== existing.length) {
+      update({ favorites: merged });
+    }
+    window.localStorage.removeItem(STORAGE_KEY);
+  }, [status, session?.favorites, update]);
+
+  const authenticated = status === "authenticated";
+  const favorites = authenticated ? session?.favorites ?? [] : localFavorites;
+
   function toggleFavorite(id: string) {
-    setFavorites((prev) => {
-      const next = prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id];
+    const next = favorites.includes(id)
+      ? favorites.filter((f) => f !== id)
+      : [...favorites, id];
+
+    if (authenticated) {
+      update({ favorites: next });
+    } else {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-      return next;
-    });
+      setLocalFavorites(next);
+    }
   }
 
   function isFavorite(id: string) {

@@ -131,3 +131,23 @@ body {
   font-weight: 600;
   letter-spacing: 0.01em;
 }
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    100deg,
+    rgba(180, 146, 63, 0.08) 30%,
+    rgba(180, 146, 63, 0.18) 50%,
+    rgba(180, 146, 63, 0.08) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

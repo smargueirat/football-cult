@@ -9,6 +9,9 @@ import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import { FavoritesProvider } from "@/lib/favorites/FavoritesContext";
 import { CountryProvider } from "@/lib/country/CountryContext";
 import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
+import { CompareProvider } from "@/lib/compare/CompareContext";
+import { PriceAlertsProvider } from "@/lib/priceAlerts/PriceAlertsContext";
+import CompareBar from "@/components/CompareBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -62,11 +65,16 @@ export default function RootLayout({
           <LanguageProvider>
             <CountryProvider>
               <FavoritesProvider>
-                <SearchFilterProvider>
-                  <Header />
-                  <main className="flex flex-1 flex-col">{children}</main>
-                  <Footer />
-                </SearchFilterProvider>
+                <PriceAlertsProvider>
+                  <SearchFilterProvider>
+                    <CompareProvider>
+                      <Header />
+                      <main className="flex flex-1 flex-col">{children}</main>
+                      <Footer />
+                      <CompareBar />
+                    </CompareProvider>
+                  </SearchFilterProvider>
+                </PriceAlertsProvider>
               </FavoritesProvider>
             </CountryProvider>
           </LanguageProvider>

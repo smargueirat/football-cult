@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import Portal from "./Portal";
@@ -15,14 +16,15 @@ export default function LoginButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.login}
-        className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+        className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
       >
         {session?.user?.image ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={session.user.image}
             alt={session.user.name ?? ""}
-            className="h-full w-full object-cover"
+            fill
+            sizes="36px"
+            className="object-cover"
           />
         ) : (
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

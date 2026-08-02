@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { addRecentlyViewed } from "@/lib/recentlyViewed";
 import {
   Offer,
   Product,
@@ -16,6 +18,8 @@ import {
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
+import { useCompare } from "@/lib/compare/CompareContext";
+import { usePriceAlerts } from "@/lib/priceAlerts/PriceAlertsContext";
 import JerseyIcon from "./JerseyIcon";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -28,7 +32,13 @@ function badgeColor(store: string) {
 export default function JerseyDetailClient({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
+  const { isComparing, toggleCompare, maxReached } = useCompare();
+  const { hasAlert, toggleAlert, needsLogin } = usePriceAlerts();
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
+  const [shareCopied, setShareCopied] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const comparing = isComparing(product.id);
+  const alertActive = hasAlert(product.id);
 
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
@@ -38,6 +48,26 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
     () => [...product.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
     [product.offers]
   );
+
+  useEffect(() => {
+    addRecentlyViewed(product.id);
+  }, [product.id]);
+
+  async function handleShare() {
+    const url = window.location.href;
+    const title = `${team} ${type} ${product.season} — Football Cult`;
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, url });
+      } catch {
+        // el usuario canceló el share sheet, no hacemos nada
+      }
+      return;
+    }
+    await navigator.clipboard.writeText(url);
+    setShareCopied(true);
+    setTimeout(() => setShareCopied(false), 2000);
+  }
 
   const photo = sortedOffers.find((o) => o.imageUrl)?.imageUrl;
 
@@ -79,12 +109,22 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
               {product.season}
             </span>
             {photo ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={photo}
-                alt={`${team} ${type} ${product.season}`}
-                className="h-full w-full object-contain drop-shadow-sm"
-              />
+              <>
+                {!imageLoaded && (
+                  <div className="skeleton-shimmer absolute inset-0" aria-hidden />
+                )}
+                <Image
+                  src={photo}
+                  alt={`${team} ${type} ${product.season}`}
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 90vw, 45vw"
+                  onLoad={() => setImageLoaded(true)}
+                  className={`object-contain drop-shadow-sm transition-opacity duration-300 ${
+                    imageLoaded ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              </>
             ) : (
               <JerseyIcon
                 className="h-2/3 w-2/3 drop-shadow-sm"
@@ -103,14 +143,52 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
         {/* Right: hunter column */}
         <div className="flex flex-col gap-6">
-          <div>
-            <h1 className="font-card-title text-3xl text-[#1a1a1a] sm:text-4xl">
-              {team} {type}
-            </h1>
-            <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
-              <span>{country.flag}</span>
-              {t.detail.storesCompared.replace("{n}", String(shippableCount))}
-            </p>
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <h1 className="font-card-title text-3xl text-[#1a1a1a] sm:text-4xl">
+                {team} {type}
+              </h1>
+              <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
+                <span>{country.flag}</span>
+                {t.detail.storesCompared.replace("{n}", String(shippableCount))}
+              </p>
+            </div>
+            <div className="flex shrink-0 gap-2">
+              <button
+                onClick={() => toggleCompare(product.id)}
+                disabled={!comparing && maxReached}
+                title={!comparing && maxReached ? t.compare.maxReached : undefined}
+                className={`flex items-center gap-1.5 rounded-full border px-3 py-2 text-xs font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                  comparing
+                    ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                    : "border-[#C9A24B]/30 bg-white/60 text-[#3a3a36] hover:border-[#1B3B2B]/40"
+                }`}
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                  />
+                </svg>
+                {t.compare.add}
+              </button>
+              <button
+                onClick={handleShare}
+                className="flex items-center gap-1.5 rounded-full border border-[#C9A24B]/30 bg-white/60 px-3 py-2 text-xs font-medium text-[#3a3a36] transition-colors hover:border-[#1B3B2B]/40"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M8.684 13.342a4 4 0 100-2.684l6.632-3.316a4 4 0 100-2.684 4 4 0 000 2.684L8.684 10.658a4 4 0 100 2.684l6.632 3.316a4 4 0 100-2.684l-6.632-3.316z"
+                  />
+                </svg>
+                {shareCopied ? t.share.copied : t.share.button}
+              </button>
+            </div>
           </div>
 
           {shippableCount === 0 ? (
@@ -138,6 +216,28 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                   ))}
                 </div>
               </div>
+
+              {/* Alerta de precio */}
+              <button
+                onClick={() => toggleAlert(product.id)}
+                disabled={needsLogin}
+                title={needsLogin ? t.priceAlert.needsLogin : undefined}
+                className={`flex w-fit items-center gap-1.5 rounded-full border px-3 py-2 text-xs font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                  alertActive
+                    ? "border-[#B8923F] bg-gradient-to-b from-[#F3D889] to-[#B8923F] text-[#2A2410]"
+                    : "border-[#C9A24B]/30 bg-white/60 text-[#3a3a36] hover:border-[#1B3B2B]/40"
+                }`}
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+                {alertActive ? t.priceAlert.active : t.priceAlert.button}
+              </button>
 
               {/* Offers */}
               <div>
@@ -211,6 +311,8 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                           </div>
                           <a
                             href={offer.url}
+                            target="_blank"
+                            rel="noopener noreferrer sponsored"
                             className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                           >
                             {t.detail.viewInStore}

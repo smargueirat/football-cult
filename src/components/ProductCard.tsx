@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import {
   Product,
   SIZES,
@@ -15,12 +17,15 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
+import { useCompare } from "@/lib/compare/CompareContext";
 import JerseyIcon from "./JerseyIcon";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
+  const { isComparing, toggleCompare, maxReached } = useCompare();
   const { countryCode } = useCountry();
+  const comparing = isComparing(product.id);
   const favorite = isFavorite(product.id);
   const best = bestOfferForCountry(product, countryCode);
   const storeCount = product.offers.filter(
@@ -36,6 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
   const photo = product.offers.find((o) => o.imageUrl)?.imageUrl;
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <Link
@@ -49,12 +55,21 @@ export default function ProductCard({ product }: { product: Product }) {
         }}
       >
         {photo ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={photo}
-            alt={`${team} ${type} ${product.season}`}
-            className="h-full w-full object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
-          />
+          <>
+            {!imageLoaded && (
+              <div className="skeleton-shimmer absolute inset-0" aria-hidden />
+            )}
+            <Image
+              src={photo}
+              alt={`${team} ${type} ${product.season}`}
+              fill
+              sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
+              onLoad={() => setImageLoaded(true)}
+              className={`object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
+                imageLoaded ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          </>
         ) : (
           <JerseyIcon
             className="h-2/3 w-2/3 drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
@@ -114,6 +129,31 @@ export default function ProductCard({ product }: { product: Product }) {
         ) : (
           <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
         )}
+
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleCompare(product.id);
+          }}
+          disabled={!comparing && maxReached}
+          title={!comparing && maxReached ? t.compare.maxReached : undefined}
+          className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+            comparing
+              ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+              : "border-[#C9A24B]/30 text-[#8a7a5a] hover:border-[#1B3B2B]/40"
+          }`}
+        >
+          <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+            />
+          </svg>
+          {t.compare.add}
+        </button>
       </div>
     </Link>
   );

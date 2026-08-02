@@ -148,6 +148,37 @@ export interface Translations {
     affiliateText: string;
     note: string;
   };
+  notFound: {
+    title: string;
+    text: string;
+    cta: string;
+  };
+  recentlyViewed: {
+    title: string;
+  };
+  share: {
+    button: string;
+    copied: string;
+  };
+  compare: {
+    add: string;
+    remove: string;
+    barTitle: string;
+    viewComparison: string;
+    clearAll: string;
+    maxReached: string;
+    pageTitle: string;
+    empty: string;
+    store: string;
+    price: string;
+    sizes: string;
+    viewProduct: string;
+  };
+  priceAlert: {
+    button: string;
+    active: string;
+    needsLogin: string;
+  };
 }
 
 export const translations: Record<Locale, Translations> = {
@@ -307,6 +338,37 @@ export const translations: Record<Locale, Translations> = {
         "Football Cult participa en programas de afiliados y puede recibir una comisión por las compras realizadas a través de nuestros enlaces, sin costo adicional para el usuario.",
       note: "Nota: este texto es un punto de partida general, no asesoramiento legal. Revisalo con un profesional antes de publicar el sitio.",
     },
+    notFound: {
+      title: "Fuera de juego",
+      text: "No encontramos esta página. Puede que el link esté roto o que la camiseta ya no esté en el catálogo.",
+      cta: "Volver al catálogo",
+    },
+    recentlyViewed: {
+      title: "Vistos recientemente",
+    },
+    share: {
+      button: "Compartir",
+      copied: "¡Link copiado!",
+    },
+    compare: {
+      add: "Comparar",
+      remove: "Quitar de comparar",
+      barTitle: "Comparando",
+      viewComparison: "Ver comparación",
+      clearAll: "Vaciar",
+      maxReached: "Podés comparar hasta 3 camisetas",
+      pageTitle: "Comparar camisetas",
+      empty: "Todavía no agregaste camisetas para comparar.",
+      store: "Tienda",
+      price: "Precio",
+      sizes: "Talles",
+      viewProduct: "Ver camiseta",
+    },
+    priceAlert: {
+      button: "Avisarme si baja",
+      active: "Te vamos a avisar",
+      needsLogin: "Iniciá sesión para activar avisos de precio",
+    },
   },
   pt: {
     brand: "Football Cult",
@@ -464,6 +526,37 @@ export const translations: Record<Locale, Translations> = {
         "Football Cult participa de programas de afiliados e pode receber uma comissão pelas compras feitas através dos nossos links, sem custo adicional para o usuário.",
       note: "Nota: este texto é um ponto de partida geral, não é aconselhamento jurídico. Revise com um profissional antes de publicar o site.",
     },
+    notFound: {
+      title: "Fora de jogo",
+      text: "Não encontramos esta página. O link pode estar quebrado ou a camisa já não está mais no catálogo.",
+      cta: "Voltar ao catálogo",
+    },
+    recentlyViewed: {
+      title: "Vistos recentemente",
+    },
+    share: {
+      button: "Compartilhar",
+      copied: "Link copiado!",
+    },
+    compare: {
+      add: "Comparar",
+      remove: "Remover da comparação",
+      barTitle: "Comparando",
+      viewComparison: "Ver comparação",
+      clearAll: "Limpar",
+      maxReached: "Você pode comparar até 3 camisas",
+      pageTitle: "Comparar camisas",
+      empty: "Você ainda não adicionou camisas para comparar.",
+      store: "Loja",
+      price: "Preço",
+      sizes: "Tamanhos",
+      viewProduct: "Ver camisa",
+    },
+    priceAlert: {
+      button: "Avisar se baixar",
+      active: "Vamos te avisar",
+      needsLogin: "Faça login para ativar avisos de preço",
+    },
   },
   en: {
     brand: "Football Cult",
@@ -620,6 +713,37 @@ export const translations: Record<Locale, Translations> = {
       affiliateText:
         "Football Cult participates in affiliate programs and may earn a commission from purchases made through our links, at no extra cost to the user.",
       note: "Note: this text is a general starting point, not legal advice. Have it reviewed by a professional before publishing the site.",
+    },
+    notFound: {
+      title: "Offside",
+      text: "We couldn't find this page. The link may be broken or the jersey may no longer be in the catalog.",
+      cta: "Back to catalog",
+    },
+    recentlyViewed: {
+      title: "Recently viewed",
+    },
+    share: {
+      button: "Share",
+      copied: "Link copied!",
+    },
+    compare: {
+      add: "Compare",
+      remove: "Remove from comparison",
+      barTitle: "Comparing",
+      viewComparison: "View comparison",
+      clearAll: "Clear",
+      maxReached: "You can compare up to 3 jerseys",
+      pageTitle: "Compare jerseys",
+      empty: "You haven't added any jerseys to compare yet.",
+      store: "Store",
+      price: "Price",
+      sizes: "Sizes",
+      viewProduct: "View jersey",
+    },
+    priceAlert: {
+      button: "Notify me on price drop",
+      active: "We'll notify you",
+      needsLogin: "Sign in to enable price alerts",
     },
   },
 };
