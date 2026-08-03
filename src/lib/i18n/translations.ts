@@ -155,6 +155,7 @@ export interface Translations {
   };
   recentlyViewed: {
     title: string;
+    empty: string;
   };
   share: {
     button: string;
@@ -345,6 +346,7 @@ export const translations: Record<Locale, Translations> = {
     },
     recentlyViewed: {
       title: "Vistos recientemente",
+      empty: "Todavía no visitaste ninguna camiseta.",
     },
     share: {
       button: "Compartir",
@@ -533,6 +535,7 @@ export const translations: Record<Locale, Translations> = {
     },
     recentlyViewed: {
       title: "Vistos recentemente",
+      empty: "Você ainda não visitou nenhuma camisa.",
     },
     share: {
       button: "Compartilhar",
@@ -721,6 +724,7 @@ export const translations: Record<Locale, Translations> = {
     },
     recentlyViewed: {
       title: "Recently viewed",
+      empty: "You haven't viewed any jerseys yet.",
     },
     share: {
       button: "Share",

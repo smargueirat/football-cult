@@ -2,7 +2,6 @@
 
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
-import RecentlyViewedSection from "@/components/RecentlyViewedSection";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Home() {
@@ -32,11 +31,6 @@ export default function Home() {
               <span aria-hidden>→</span>
             </a>
           </div>
-        </section>
-
-        {/* Vistos recientemente */}
-        <section className="mx-auto w-full max-w-6xl px-6 pt-6">
-          <RecentlyViewedSection />
         </section>
 
         {/* Search + results */}

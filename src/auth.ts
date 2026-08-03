@@ -5,9 +5,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [Google],
   session: {
     // JWT: no hace falta base de datos para tener cuentas/sesiones.
-    // Los favoritos y alertas de precio del usuario viajan dentro del
-    // propio token (ver callbacks abajo), alcanza para un catálogo de
-    // este tamaño.
+    // Los favoritos del usuario viajan dentro del propio token (ver
+    // callbacks abajo). Las alertas de precio, en cambio, se guardan en
+    // KV (ver /api/price-alerts) porque el cron que las revisa necesita
+    // poder encontrarlas sin depender de la sesión de nadie.
     strategy: "jwt",
   },
   pages: {
@@ -18,14 +19,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (trigger === "update" && session?.favorites) {
         token.favorites = session.favorites;
       }
-      if (trigger === "update" && session?.priceAlerts) {
-        token.priceAlerts = session.priceAlerts;
-      }
       return token;
     },
     async session({ session, token }) {
       session.favorites = (token.favorites as string[] | undefined) ?? [];
-      session.priceAlerts = (token.priceAlerts as string[] | undefined) ?? [];
       return session;
     },
   },

@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, ReactNode, useContext } from "react";
+import { createContext, ReactNode, useContext, useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 
 interface PriceAlertsValue {
@@ -15,16 +15,44 @@ interface PriceAlertsValue {
 const PriceAlertsContext = createContext<PriceAlertsValue | undefined>(undefined);
 
 export function PriceAlertsProvider({ children }: { children: ReactNode }) {
-  const { data: session, status, update } = useSession();
+  const { status } = useSession();
   const authenticated = status === "authenticated";
-  const priceAlerts = session?.priceAlerts ?? [];
+  const [priceAlerts, setPriceAlerts] = useState<string[]>([]);
 
-  function toggleAlert(id: string) {
+  useEffect(() => {
+    if (!authenticated) {
+      setPriceAlerts([]);
+      return;
+    }
+    fetch("/api/price-alerts")
+      .then((res) => res.json())
+      .then((data) => setPriceAlerts(data.productIds ?? []))
+      .catch(() => setPriceAlerts([]));
+  }, [authenticated]);
+
+  async function toggleAlert(id: string) {
     if (!authenticated) return;
-    const next = priceAlerts.includes(id)
-      ? priceAlerts.filter((a) => a !== id)
-      : [...priceAlerts, id];
-    update({ priceAlerts: next });
+    // Optimista: cambiamos ya la UI, y confirmamos con la respuesta real.
+    const wasActive = priceAlerts.includes(id);
+    setPriceAlerts((prev) => (wasActive ? prev.filter((p) => p !== id) : [...prev, id]));
+
+    try {
+      const res = await fetch("/api/price-alerts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId: id }),
+      });
+      const data = await res.json();
+      setPriceAlerts((prev) => {
+        const withoutId = prev.filter((p) => p !== id);
+        return data.active ? [...withoutId, id] : withoutId;
+      });
+    } catch {
+      // si falla la llamada, revertimos el cambio optimista
+      setPriceAlerts((prev) =>
+        wasActive ? [...prev, id] : prev.filter((p) => p !== id)
+      );
+    }
   }
 
   function hasAlert(id: string) {

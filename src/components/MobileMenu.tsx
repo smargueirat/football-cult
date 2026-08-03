@@ -18,6 +18,7 @@ export default function MobileMenu() {
     { label: t.nav.search, href: "/", category: "all" },
     { label: t.categoriesMenu.national, href: "/", category: "national" },
     { label: t.categoriesMenu.clubs, href: "/", category: "club" },
+    { label: t.recentlyViewed.title, href: "/vistos-recientemente" },
     { label: t.nav.about, href: "/sobre-nosotros" },
     { label: t.nav.contact, href: "/contacto" },
   ];
