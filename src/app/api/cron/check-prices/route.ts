@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { gunzipSync } from "zlib";
 import { parse } from "csv-parse/sync";
-import { kv } from "@vercel/kv";
 import { Resend } from "resend";
+import { getRedis, isRedisConfigured } from "@/lib/redis";
 import { products } from "@/data/products";
 
 export const maxDuration = 60;
@@ -32,14 +32,15 @@ function parsePrice(raw: string | undefined): number | null {
 }
 
 export async function GET(req: NextRequest) {
-  const auth = req.headers.get("authorization");
-  if (auth !== `Bearer ${process.env.CRON_SECRET}`) {
+  const authHeader = req.headers.get("authorization");
+  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
 
-  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
-    return NextResponse.json({ error: "KV not configured yet" }, { status: 503 });
+  if (!isRedisConfigured()) {
+    return NextResponse.json({ error: "Redis not configured yet" }, { status: 503 });
   }
+  const redis = await getRedis();
 
   const resendKey = process.env.RESEND_API_KEY;
   const resend = resendKey ? new Resend(resendKey) : null;
@@ -65,11 +66,11 @@ export async function GET(req: NextRequest) {
         if (currentPrice == null) continue;
 
         const priceKey = `lastPrice:${product.id}:${offer.store}`;
-        const storedRaw = await kv.get<number>(priceKey);
-        const lastKnownPrice = storedRaw ?? offer.price;
+        const storedRaw = await redis.get(priceKey);
+        const lastKnownPrice = storedRaw ? parseFloat(storedRaw) : offer.price;
 
         if (currentPrice < lastKnownPrice) {
-          const subscribers = await kv.smembers(`alerts:${product.id}`);
+          const subscribers = await redis.sMembers(`alerts:${product.id}`);
           let notified = 0;
 
           if (resend && subscribers.length > 0) {
@@ -93,7 +94,7 @@ export async function GET(req: NextRequest) {
           });
         }
 
-        await kv.set(priceKey, currentPrice);
+        await redis.set(priceKey, currentPrice.toString());
       } catch (err) {
         errors.push(`${product.id}/${offer.store}: ${(err as Error).message}`);
       }

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { kv } from "@vercel/kv";
+import { getRedis, isRedisConfigured } from "@/lib/redis";
 import { auth } from "@/auth";
 
 // Guarda, por producto, el set de emails que quieren que les avisemos
@@ -8,24 +8,19 @@ function alertsKey(productId: string) {
   return `alerts:${productId}`;
 }
 
-// El KV recién se crea del lado de Vercel; hasta que esté conectado,
-// degradamos con gracia en vez de romper el resto del sitio.
-function isKvConfigured() {
-  return Boolean(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
-}
-
 export async function GET() {
   const session = await auth();
   const email = session?.user?.email;
-  if (!email || !isKvConfigured()) {
+  if (!email || !isRedisConfigured()) {
     return NextResponse.json({ productIds: [] });
   }
 
   try {
-    const keys = await kv.keys("alerts:*");
+    const redis = await getRedis();
+    const keys = await redis.keys("alerts:*");
     const productIds: string[] = [];
     for (const key of keys) {
-      const isMember = await kv.sismember(key, email);
+      const isMember = await redis.sIsMember(key, email);
       if (isMember) {
         productIds.push(key.replace("alerts:", ""));
       }
@@ -42,7 +37,7 @@ export async function POST(req: NextRequest) {
   if (!email) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
-  if (!isKvConfigured()) {
+  if (!isRedisConfigured()) {
     return NextResponse.json({ error: "storage not configured yet" }, { status: 503 });
   }
 
@@ -51,12 +46,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "invalid productId" }, { status: 400 });
   }
 
+  const redis = await getRedis();
   const key = alertsKey(productId);
-  const isMember = await kv.sismember(key, email);
+  const isMember = await redis.sIsMember(key, email);
   if (isMember) {
-    await kv.srem(key, email);
+    await redis.sRem(key, email);
   } else {
-    await kv.sadd(key, email);
+    await redis.sAdd(key, email);
   }
 
   return NextResponse.json({ active: !isMember });
