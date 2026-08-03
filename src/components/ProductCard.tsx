@@ -40,7 +40,7 @@ export default function ProductCard({ product }: { product: Product }) {
       : SIZES[0];
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
-  const photo = product.offers.find((o) => o.imageUrl)?.imageUrl;
+  const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (

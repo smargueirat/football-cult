@@ -544,8 +544,6 @@ export const products: Product[] = [
     colorHexSecondary: "#8FB8E8",
     jerseyPattern: "solid",
     offers: [
-      { store: "PlanetFoot", price: 39.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Ft-shirt-sport-real-madrid-noir-bleu-2026-black-blue%3Fvariant%3D53802751099221", inStock: true, sizes: ["L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/t-shirt-sport-real-madrid-noir-bleu-2026-black-blue4.jpg?v=1777992819" },
-      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-madrid-1996-97-home-retro-soccer-jersey%3Fvariant%3D42557216129129", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/52ed0186609cc48b4c0864c3a2d8aad4.jpg?v=1758074303" },
       { store: "DeporteOutletES", price: 37.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44919264258&a=3013769&m=19598", inStock: true, sizes: ["S", "M"], imageUrl: "https://www.sportspar.de/media/image/29/34/fc/IX8095-1_600x600.jpg" },
       { store: "FootStoreES", price: 63.36, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41646236240&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8884_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=4be16423ba80eb06a0d89667afc592329abcf6d4" },
       { store: "FootStoreFR", price: 61.93, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1931-maillot-domicile-real-madrid-2025-26-white", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj1931_1_apparel_photography_front_center_view_white.webp" },
@@ -576,7 +574,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 89.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-domicile-homme-rouge%3Fvariant%3D49228463079765", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/IU1397_b2b012_plp.webp?v=1722949779" },
-      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-us-pack-shirt-2025-26%3Fvariant%3D42557153575017", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/e185cd3a1a8d902c3a4a4a4759982966.png?v=1758073816" },
       { store: "FootStoreFR", price: 58.61, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7428-maillot-domicile-manchester-united-2025-26-mufred", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ji7428_1_apparel_photography_front_center_view_white.jpg" },
       { store: "SportIsGoodFR", price: 59.95, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji7428-maillot-domicile-manchester-united-2025-26-mufred", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ji7428_1_apparel_photography_front_center_view_white.jpg" },
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41581831846&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9ae59d2a8c6249c9a3b1fefc31a9d595_9366%2FCamiseta_primera_equipacion_Manchester_United_25-26_Rojo_JI7428_21_model.jpg&feedId=92152&k=f644496248d2c1861b200bde48a29fdbec89637b" },
@@ -593,7 +590,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 59.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000087110%3Fvariant%3D53957425398101", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8711-1.jpg?v=1779201517" },
-      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-tiro-polo-shirt-world-cup-2026-white%3Fvariant%3D43129060851817", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Germany2026TiroPoloShirt_2.webp?v=1776237733" },
       { store: "FootStoreES", price: 66.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831994&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jm1380_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=1a9f3bc0e70afe7c2f888b91700182a560e0a9c5" },
       { store: "FootStoreFR", price: 62.81, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkd8363-maillot-domicile-allemagne-coupe-du-monde-2026-white", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_kd8363_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 66.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301932843&a=3013769&m=65906", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jm1380_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=1a9f3bc0e70afe7c2f888b91700182a560e0a9c5" },
@@ -724,18 +720,6 @@ export const products: Product[] = [
     ],
   },
   {
-    id: "bar-away-2025",
-    teamKey: "barcelona",
-    season: "2025/26",
-    typeKey: "away",
-    colorHex: "#0F5A2E",
-    colorHexSecondary: "#F5C742",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-x-kobe-away-soccer-jersey-2025-26%3Fvariant%3D42557195419753", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Barcelona_Away_Soccer_Jersey_2025_26-1.png?v=1760087121" },
-    ],
-  },
-  {
     id: "liv-home-2025",
     teamKey: "liverpool",
     season: "2025/26",
@@ -764,7 +748,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 89.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-stadium-2026-27-homme-rouge%3Fvariant%3D53957414977877", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-bayern-munich-stadium-2026-2027-homme-rouge-kg2243-1.webp?v=1784378540" },
-      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-us-pack-shirt-2025-26%3Fvariant%3D42557137715305", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/a925a912d8d9b02c6133d842a6d1d761.png?v=1758073706" },
       { store: "FootStoreES", price: 64.27, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41666325423&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_adidas_jj2137_0.webp&feedId=89032&k=3ebf6034a9eec25021e177a7c87578fc4174e582" },
       { store: "FootStoreFR", price: 62.81, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj2137-maillot-domicile-bayern-munich-2025-26-red", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_adidas_jj2137_0.jpg" },
       { store: "SportIsGoodES", price: 63.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301834694&a=3013769&m=65906", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_adidas_jj2137_0.webp&feedId=89044&k=3ebf6034a9eec25021e177a7c87578fc4174e582" },
@@ -831,7 +814,6 @@ export const products: Product[] = [
     jerseyPattern: "band",
     offers: [
       { store: "PlanetFoot", price: 60.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-river-plate-domicile-homme-2025-26-blanc%3Fvariant%3D51421275455829", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-river-plate-25-26-domicile-adulte-adidas-planetfoot1.webp?v=1758730642" },
-      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-terrace-icon-jersey-2025-26-white%3Fvariant%3D42719395283049", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/River_Plate_Terrace_Icons_Jersey_202526_2.jpg?v=1764595294" },
     ],
   },
   {
@@ -1110,7 +1092,6 @@ export const products: Product[] = [
     colorHexSecondary: "#39FF14",
     jerseyPattern: "solid",
     offers: [
-      { store: "FansJerseyHub", price: 32.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-hollywood-goalkeeper-lifestyle-jersey-2025%3Fvariant%3D42818196013161", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/FranceHollywoodGoalkeeperLifestyleJersey_2.webp?v=1768447784" },
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926234&a=3013769&m=65912", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5304-010_01.webp&feedId=89032&k=b16607e44bd3e5b0037a2e30581dc1143cb8b008" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5304-010-maillot-de-gardien-france-coupe-du-monde-2026-black-medium-ash-monarch-igloo", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5304-010_01.webp" },
     ],
@@ -1125,18 +1106,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fengland-away-soccer-jersey-2026-world-cup%3Fvariant%3D42634045194345", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Englandawayjersey2026_8.webp?v=1776328101" },
-    ],
-  },
-  {
-    id: "ing-goalkeeper-2026",
-    teamKey: "inglaterra",
-    season: "2026",
-    typeKey: "goalkeeper",
-    colorHex: "#1B1B1B",
-    colorHexSecondary: "#39FF14",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fengland-hollywood-lifestyle-goalkeeper-jersey-world-cup-2026%3Fvariant%3D43093713846377", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/EnglandHollywoodLifestyleGoalkeeperJerseyWorldCup2026_2.webp?v=1775128059" },
     ],
   },
   {
@@ -1353,7 +1322,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 49.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-exterieur-homme-2025-26-bleu%3Fvariant%3D51159086367061", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-real-madrid-25-26-adulte-adidas-planetfoot1.jpg?v=1755938674" },
-      { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-madrid-2016-17-away-retro-soccer-jersey%3Fvariant%3D42557230907497", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/7baa2713e1abd8e17e0981fd45656b0c.png?v=1769069522" },
       { store: "FootStoreES", price: 62.48, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41718361138&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_adidas_jj4182_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=0cfa015b02d52489201081e0a54e252c213094a0" },
       { store: "SportIsGoodES", price: 62.2, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45072984905&a=3013769&m=65906", inStock: true, sizes: ["S", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_adidas_jj4182_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=0cfa015b02d52489201081e0a54e252c213094a0" },
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41617120726&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F69b7b03005ed474e95c1bae97618e097_9366%2FCamiseta_segunda_equipacion_Real_Madrid_25-26_Azul_JJ4182_21_model.jpg&feedId=92152&k=cc9ae1669d7c92a3a506080bc2ff8bae5c3ac9e6" },

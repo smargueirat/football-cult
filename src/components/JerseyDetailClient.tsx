@@ -69,8 +69,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
     setTimeout(() => setShareCopied(false), 2000);
   }
 
-  const photo = sortedOffers.find((o) => o.imageUrl)?.imageUrl;
-
   function shipsHere(offer: Offer) {
     return offerShipsTo(offer.store, countryCode);
   }
@@ -82,7 +80,12 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const shippableCount = product.offers.filter(
     (o) => o.inStock && shipsHere(o)
   ).length;
-  const bestStore = sortedOffers.find((o) => o.inStock && shipsHere(o))?.store;
+  const bestOffer = sortedOffers.find((o) => o.inStock && shipsHere(o));
+  const bestStore = bestOffer?.store;
+  // La foto principal sale de la misma oferta que se muestra como "mejor
+  // precio", para que nunca se vea una camiseta distinta a la que el
+  // usuario termina comprando.
+  const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
