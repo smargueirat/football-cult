@@ -10,11 +10,24 @@ export const maxDuration = 60;
 const FEED_URLS: Record<string, string | undefined> = {
   PlanetFoot: process.env.AWIN_FEED_URL_PLANETFOOT,
   FansJerseyHub: process.env.AWIN_FEED_URL_FANSJERSEYHUB,
+  ComoFCShop: process.env.AWIN_FEED_URL_COMOFC,
+  DeporteOutletES: process.env.AWIN_FEED_URL_DEPORTEOUTLET,
+  FootStoreES: process.env.AWIN_FEED_URL_FOOTSTORE_ES,
+  FootStoreFR: process.env.AWIN_FEED_URL_FOOTSTORE_FR,
+  SportIsGoodES: process.env.AWIN_FEED_URL_SPORTISGOOD_ES,
+  SportIsGoodFR: process.env.AWIN_FEED_URL_SPORTISGOOD_FR,
+  AdidasES: process.env.AWIN_FEED_URL_ADIDAS_ES,
+  AdidasPT: process.env.AWIN_FEED_URL_ADIDAS_PT,
 };
 
 interface FeedRow {
   aw_deep_link?: string;
+  // Los feeds formato "Google" traen el precio de lista en "price" y el
+  // precio real (con descuento) en "sale_price" cuando existe. Los feeds
+  // formato "Awin" lo traen directamente en "search_price".
   price?: string;
+  sale_price?: string;
+  search_price?: string;
   [key: string]: string | undefined;
 }
 
@@ -62,7 +75,7 @@ export async function GET(req: NextRequest) {
         const match = rows.find((r) => r.aw_deep_link === offer.url);
         if (!match) continue;
 
-        const currentPrice = parsePrice(match.price);
+        const currentPrice = parsePrice(match.sale_price ?? match.price ?? match.search_price);
         if (currentPrice == null) continue;
 
         const priceKey = `lastPrice:${product.id}:${offer.store}`;
