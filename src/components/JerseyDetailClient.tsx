@@ -19,7 +19,6 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { usePriceAlerts } from "@/lib/priceAlerts/PriceAlertsContext";
 import JerseyIcon from "./JerseyIcon";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -33,12 +32,10 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
   const { isComparing, toggleCompare, maxReached } = useCompare();
-  const { hasAlert, toggleAlert, needsLogin } = usePriceAlerts();
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [shareCopied, setShareCopied] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const comparing = isComparing(product.id);
-  const alertActive = hasAlert(product.id);
 
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
@@ -224,28 +221,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 </div>
               </div>
 
-              {/* Alerta de precio */}
-              <button
-                onClick={() => toggleAlert(product.id)}
-                disabled={needsLogin}
-                title={needsLogin ? t.priceAlert.needsLogin : undefined}
-                className={`flex w-fit items-center gap-1.5 rounded-full border px-3 py-2 text-xs font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                  alertActive
-                    ? "border-[#B8923F] bg-gradient-to-b from-[#F3D889] to-[#B8923F] text-[#2A2410]"
-                    : "border-[#C9A24B]/30 bg-white/60 text-[#3a3a36] hover:border-[#1B3B2B]/40"
-                }`}
-              >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                  />
-                </svg>
-                {alertActive ? t.priceAlert.active : t.priceAlert.button}
-              </button>
-
               {/* Offers */}
               <div>
                 <p className="font-tagline mb-3 text-sm not-italic text-[#5b5442]">
@@ -288,6 +263,11 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                             </p>
                             {offer.title && (
                               <p className="text-xs text-[#a8926a]">{offer.title}</p>
+                            )}
+                            {offer.store === "FansJerseyHub" && (
+                              <p className="text-xs font-medium text-[#B45309]">
+                                {t.detail.replicaNotice}
+                              </p>
                             )}
                             {!offer.inStock ? (
                               <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>

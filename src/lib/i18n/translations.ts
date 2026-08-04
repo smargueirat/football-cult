@@ -106,6 +106,7 @@ export interface Translations {
     viewInStore: string;
     photoPlaceholder: string;
     currencyNote: string;
+    replicaNotice: string;
   };
   footer: {
     about: string;
@@ -179,11 +180,6 @@ export interface Translations {
     price: string;
     sizes: string;
     viewProduct: string;
-  };
-  priceAlert: {
-    button: string;
-    active: string;
-    needsLogin: string;
   };
 }
 
@@ -293,6 +289,7 @@ export const translations: Record<Locale, Translations> = {
       viewInStore: "Ver en tienda",
       photoPlaceholder: "Foto de producto próximamente",
       currencyNote: "Precio real de cada tienda en su moneda de origen. La tienda puede mostrarte otra moneda según tu ubicación, pero cobra este mismo precio.",
+      replicaNotice: "Esta tienda vende camisetas réplica (no oficiales).",
     },
     footer: {
       about: "Sobre nosotros",
@@ -375,11 +372,6 @@ export const translations: Record<Locale, Translations> = {
       price: "Precio",
       sizes: "Talles",
       viewProduct: "Ver camiseta",
-    },
-    priceAlert: {
-      button: "Avisarme si baja",
-      active: "Te vamos a avisar",
-      needsLogin: "Iniciá sesión para activar avisos de precio",
     },
   },
   pt: {
@@ -487,6 +479,7 @@ export const translations: Record<Locale, Translations> = {
       viewInStore: "Ver na loja",
       photoPlaceholder: "Foto do produto em breve",
       currencyNote: "Preço real de cada loja na sua moeda de origem. A loja pode te mostrar outra moeda de acordo com sua localização, mas cobra esse mesmo preço.",
+      replicaNotice: "Esta loja vende camisas réplica (não oficiais).",
     },
     footer: {
       about: "Sobre nós",
@@ -569,11 +562,6 @@ export const translations: Record<Locale, Translations> = {
       price: "Preço",
       sizes: "Tamanhos",
       viewProduct: "Ver camisa",
-    },
-    priceAlert: {
-      button: "Avisar se baixar",
-      active: "Vamos te avisar",
-      needsLogin: "Faça login para ativar avisos de preço",
     },
   },
   en: {
@@ -681,6 +669,7 @@ export const translations: Record<Locale, Translations> = {
       viewInStore: "View in store",
       photoPlaceholder: "Product photo coming soon",
       currencyNote: "Real price from each store in its original currency. The store may show you a different currency based on your location, but charges this same price.",
+      replicaNotice: "This store sells replica (unofficial) jerseys.",
     },
     footer: {
       about: "About us",
@@ -763,11 +752,6 @@ export const translations: Record<Locale, Translations> = {
       price: "Price",
       sizes: "Sizes",
       viewProduct: "View jersey",
-    },
-    priceAlert: {
-      button: "Notify me on price drop",
-      active: "We'll notify you",
-      needsLogin: "Sign in to enable price alerts",
     },
   },
 };

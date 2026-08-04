@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { gunzipSync } from "zlib";
 import { parse } from "csv-parse/sync";
-import { Resend } from "resend";
 import { getRedis, isRedisConfigured } from "@/lib/redis";
 import { products } from "@/data/products";
 
@@ -56,11 +55,8 @@ export async function GET(req: NextRequest) {
   }
   const redis = await getRedis();
 
-  const resendKey = process.env.RESEND_API_KEY;
-  const resend = resendKey ? new Resend(resendKey) : null;
-
   const feedCache = new Map<string, FeedRow[]>();
-  const summary: { productId: string; store: string; from: number; to: number; notified: number }[] = [];
+  const summary: { productId: string; store: string; from: number; to: number }[] = [];
   const errors: string[] = [];
 
   for (const product of products) {
@@ -84,27 +80,11 @@ export async function GET(req: NextRequest) {
         const lastKnownPrice = storedRaw ? parseFloat(storedRaw) : offer.price;
 
         if (currentPrice < lastKnownPrice) {
-          const subscribers = await redis.sMembers(`alerts:${product.id}`);
-          let notified = 0;
-
-          if (resend && subscribers.length > 0) {
-            for (const email of subscribers) {
-              await resend.emails.send({
-                from: "Football Cult <onboarding@resend.dev>",
-                to: email,
-                subject: `¡Bajó de precio! ${product.teamKey} ${product.typeKey}`,
-                html: `<p>El precio en ${offer.store} bajó de ${lastKnownPrice} a ${currentPrice} ${offer.currency}.</p><p><a href="https://football-cult.com/camiseta/${product.id}">Ver camiseta</a></p>`,
-              });
-              notified++;
-            }
-          }
-
           summary.push({
             productId: product.id,
             store: offer.store,
             from: lastKnownPrice,
             to: currentPrice,
-            notified,
           });
         }
 

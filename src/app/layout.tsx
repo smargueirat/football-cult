@@ -10,7 +10,6 @@ import { FavoritesProvider } from "@/lib/favorites/FavoritesContext";
 import { CountryProvider } from "@/lib/country/CountryContext";
 import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
 import { CompareProvider } from "@/lib/compare/CompareContext";
-import { PriceAlertsProvider } from "@/lib/priceAlerts/PriceAlertsContext";
 import CompareBar from "@/components/CompareBar";
 
 const inter = Inter({
@@ -65,16 +64,14 @@ export default function RootLayout({
           <LanguageProvider>
             <CountryProvider>
               <FavoritesProvider>
-                <PriceAlertsProvider>
-                  <SearchFilterProvider>
-                    <CompareProvider>
-                      <Header />
-                      <main className="flex flex-1 flex-col">{children}</main>
-                      <Footer />
-                      <CompareBar />
-                    </CompareProvider>
-                  </SearchFilterProvider>
-                </PriceAlertsProvider>
+                <SearchFilterProvider>
+                  <CompareProvider>
+                    <Header />
+                    <main className="flex flex-1 flex-col">{children}</main>
+                    <Footer />
+                    <CompareBar />
+                  </CompareProvider>
+                </SearchFilterProvider>
               </FavoritesProvider>
             </CountryProvider>
           </LanguageProvider>
