@@ -9,6 +9,7 @@ import {
   Product,
   Size,
   availableSizesForCountry,
+  displayTitleForCountry,
   formatOfferMoney,
   offerShipsTo,
   offerTotal,
@@ -84,9 +85,13 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   // usuario termina comprando.
   const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
   // Nombre real tal como aparece en la tienda, no un nombre armado por
-  // nosotros (equipo + tipo).
+  // nosotros (equipo + tipo). Se prefiere una oferta cuyo título esté en
+  // el idioma elegido en el sitio; si no hay ninguna, se usa el de la
+  // oferta más barata.
   const displayName =
-    bestOffer?.title ?? sortedOffers.find((o) => o.title)?.title ?? `${team} ${type}`;
+    displayTitleForCountry(product, countryCode, locale) ??
+    sortedOffers.find((o) => o.title)?.title ??
+    `${team} ${type}`;
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
@@ -257,17 +262,17 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                             {offer.store.charAt(0)}
                           </span>
                           <div>
-                            <p className="flex items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
+                            <p className="flex flex-wrap items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
                               {offer.store}
                               {isBest && <span className="text-xs">🥇</span>}
+                              {offer.store === "FansJerseyHub" && (
+                                <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
+                                  {t.detail.replicaBadge}
+                                </span>
+                              )}
                             </p>
                             {offer.title && (
                               <p className="text-xs text-[#a8926a]">{offer.title}</p>
-                            )}
-                            {offer.store === "FansJerseyHub" && (
-                              <p className="text-xs font-medium text-[#B45309]">
-                                {t.detail.replicaNotice}
-                              </p>
                             )}
                             {!offer.inStock ? (
                               <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>

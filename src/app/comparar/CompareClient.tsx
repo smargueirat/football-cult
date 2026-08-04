@@ -5,6 +5,7 @@ import Image from "next/image";
 import {
   Product,
   bestOffer,
+  displayTitleForCountry,
   findProduct,
   formatOfferMoney,
   offerTotal,
@@ -13,10 +14,12 @@ import {
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
+import { useCountry } from "@/lib/country/CountryContext";
 import JerseyIcon from "@/components/JerseyIcon";
 
 export default function CompareClient() {
   const { locale, t } = useLanguage();
+  const { countryCode } = useCountry();
   const { compareList, toggleCompare, clearCompare } = useCompare();
 
   const products = compareList
@@ -56,7 +59,8 @@ export default function CompareClient() {
             const type = typeNames[product.typeKey][locale];
             const best = bestOffer(product);
             const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
-            const displayName = best?.title ?? `${team} ${type}`;
+            const displayName =
+              displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
 
             return (
               <div key={product.id} className="vintage-card flex flex-col overflow-hidden rounded-2xl">

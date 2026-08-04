@@ -106,7 +106,7 @@ export interface Translations {
     viewInStore: string;
     photoPlaceholder: string;
     currencyNote: string;
-    replicaNotice: string;
+    replicaBadge: string;
   };
   footer: {
     about: string;
@@ -289,7 +289,7 @@ export const translations: Record<Locale, Translations> = {
       viewInStore: "Ver en tienda",
       photoPlaceholder: "Foto de producto próximamente",
       currencyNote: "Precio real de cada tienda en su moneda de origen. La tienda puede mostrarte otra moneda según tu ubicación, pero cobra este mismo precio.",
-      replicaNotice: "Esta tienda vende camisetas réplica (no oficiales).",
+      replicaBadge: "Réplica (no oficial)",
     },
     footer: {
       about: "Sobre nosotros",
@@ -479,7 +479,7 @@ export const translations: Record<Locale, Translations> = {
       viewInStore: "Ver na loja",
       photoPlaceholder: "Foto do produto em breve",
       currencyNote: "Preço real de cada loja na sua moeda de origem. A loja pode te mostrar outra moeda de acordo com sua localização, mas cobra esse mesmo preço.",
-      replicaNotice: "Esta loja vende camisas réplica (não oficiais).",
+      replicaBadge: "Réplica (não oficial)",
     },
     footer: {
       about: "Sobre nós",
@@ -669,7 +669,7 @@ export const translations: Record<Locale, Translations> = {
       viewInStore: "View in store",
       photoPlaceholder: "Product photo coming soon",
       currencyNote: "Real price from each store in its original currency. The store may show you a different currency based on your location, but charges this same price.",
-      replicaNotice: "This store sells replica (unofficial) jerseys.",
+      replicaBadge: "Replica (unofficial)",
     },
     footer: {
       about: "About us",

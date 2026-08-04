@@ -8,6 +8,7 @@ import {
   SIZES,
   availableSizesForCountry,
   bestOfferForCountry,
+  displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
   offerShipsTo,
@@ -43,9 +44,11 @@ export default function ProductCard({ product }: { product: Product }) {
   const type = typeNames[product.typeKey][locale];
   const isKids = getAgeGroup(product) === "kids";
   // Nombre real tal como aparece en la tienda, no un nombre armado por
-  // nosotros (equipo + tipo). Ese nombre armado queda solo como respaldo
-  // para los pocos casos sin oferta cargada todavía.
-  const displayName = best?.title ?? `${team} ${type}`;
+  // nosotros (equipo + tipo). Se prefiere una oferta cuyo título esté en
+  // el idioma elegido en el sitio; si no hay ninguna, se usa el de la
+  // oferta más barata. El nombre armado queda solo como respaldo para
+  // los pocos casos sin oferta cargada todavía.
+  const displayName = displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
   const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
 

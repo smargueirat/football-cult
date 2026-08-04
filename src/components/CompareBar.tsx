@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { bestOffer, findProduct, teamNames, typeNames } from "@/data/products";
+import { useCountry } from "@/lib/country/CountryContext";
+import { displayTitleForCountry, findProduct, teamNames, typeNames } from "@/data/products";
 
 export default function CompareBar() {
   const { locale, t } = useLanguage();
+  const { countryCode } = useCountry();
   const { compareList, toggleCompare, clearCompare } = useCompare();
 
   if (compareList.length === 0) return null;
@@ -23,9 +25,9 @@ export default function CompareBar() {
         </span>
         <div className="flex flex-1 items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {products.map((product) => {
-            const best = bestOffer(product);
             const displayName =
-              best?.title ?? `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
+              displayTitleForCountry(product, countryCode, locale) ??
+              `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
             return (
             <span
               key={product.id}

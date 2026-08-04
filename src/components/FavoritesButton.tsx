@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import {
   bestOfferForCountry,
+  displayTitleForCountry,
   findProduct,
   formatOfferMoney,
   offerTotal,
@@ -61,7 +62,7 @@ export default function FavoritesButton() {
                 {savedProducts.map((product) => {
                   const best = bestOfferForCountry(product, countryCode);
                   const displayName =
-                    best?.title ??
+                    displayTitleForCountry(product, countryCode, locale) ??
                     `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
                   return (
                     <li key={product.id}>

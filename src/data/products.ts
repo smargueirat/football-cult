@@ -6822,6 +6822,42 @@ export function bestOfferForCountry(
     .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
 }
 
+// Idioma "natural" de cada tienda, según en qué mercado vende (para
+// preferir, entre ofertas reales, un título en el idioma elegido en el
+// sitio en vez de mostrar siempre el de la oferta más barata sin importar
+// el idioma). Las tiendas que no venden en es/en/pt (FR, IT) no tienen
+// entrada acá: nunca "matchean" un idioma, pero siguen usándose como
+// resultado de reserva si ninguna oferta coincide con el idioma elegido.
+const STORE_LOCALE: Partial<Record<string, Locale>> = {
+  AdidasES: "es",
+  DeporteOutletES: "es",
+  FootStoreES: "es",
+  SportIsGoodES: "es",
+  AdidasPT: "pt",
+  FansJerseyHub: "en",
+  BSTNIT: "en",
+};
+
+// Nombre real (no inventado) a mostrar, priorizando -entre las ofertas
+// que de verdad llegan a este país- una cuyo título esté en el idioma
+// elegido en el sitio. Si ninguna coincide, cae al título de la oferta
+// más barata (bestOfferForCountry), y por último al nombre genérico
+// armado por nosotros (que resuelve el caller).
+export function displayTitleForCountry(
+  product: Product,
+  country: CountryCode,
+  locale: Locale
+): string | undefined {
+  const candidates = product.offers.filter(
+    (o) => o.inStock && offerShipsTo(o.store, country) && o.title
+  );
+  const inLocale = candidates
+    .filter((o) => STORE_LOCALE[o.store] === locale)
+    .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
+  if (inLocale) return inLocale.title;
+  return bestOfferForCountry(product, country)?.title;
+}
+
 export function shipsToCountry(product: Product, country: CountryCode): boolean {
   return product.offers.some((o) => o.inStock && offerShipsTo(o.store, country));
 }
