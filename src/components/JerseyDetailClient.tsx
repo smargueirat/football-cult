@@ -7,6 +7,7 @@ import { addRecentlyViewed } from "@/lib/recentlyViewed";
 import {
   Offer,
   Product,
+  STORE_LOCALE,
   Size,
   availableSizesForCountry,
   displayTitleForCountry,
@@ -271,9 +272,11 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                 </span>
                               )}
                             </p>
-                            {offer.title && (
-                              <p className="text-xs text-[#a8926a]">{offer.title}</p>
-                            )}
+                            <p className="text-xs text-[#a8926a]">
+                              {STORE_LOCALE[offer.store] === locale && offer.title
+                                ? offer.title
+                                : `${team} ${type}`}
+                            </p>
                             {!offer.inStock ? (
                               <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
                             ) : !ships ? (
