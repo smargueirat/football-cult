@@ -28,9 +28,41 @@ export type TeamKey =
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper";
 export type CategoryKey = "national" | "club";
-export type Size = "S" | "M" | "L" | "XL" | "XXL";
+export type AgeGroup = "adult" | "kids";
+export type Size =
+  | "S"
+  | "M"
+  | "L"
+  | "XL"
+  | "XXL"
+  | "5-6"
+  | "6-7"
+  | "7-8"
+  | "8-9"
+  | "8-10"
+  | "9-10"
+  | "10-11"
+  | "10-12"
+  | "11-12"
+  | "12-13"
+  | "13-14"
+  | "13-15"
+  | "14-15"
+  | "15-16";
 
-export const SIZES: Size[] = ["S", "M", "L", "XL", "XXL"];
+export const ADULT_SIZES: Size[] = ["S", "M", "L", "XL", "XXL"];
+// Distintas marcas usan distintas escalas de talles por edad (Nike, adidas,
+// Puma no coinciden), así que se muestra el talle real de cada oferta en
+// vez de forzarlo a una única escala "canónica".
+export const KIDS_SIZES: Size[] = [
+  "5-6", "6-7", "7-8", "8-9", "8-10", "9-10", "10-11", "10-12",
+  "11-12", "12-13", "13-14", "13-15", "14-15", "15-16",
+];
+export const SIZES: Size[] = [...ADULT_SIZES, ...KIDS_SIZES];
+
+export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
+  return product.ageGroup ?? "adult";
+}
 
 export const teamCategory: Record<TeamKey, CategoryKey> = {
   argentina: "national",
@@ -334,9 +366,15 @@ const OFFER_CURRENCY_LOCALE: Record<Offer["currency"], string> = {
 
 export function formatOfferMoney(amount: number, currency: Offer["currency"]): string {
   const maximumFractionDigits = amount >= 100 ? 0 : 2;
+  // currencyDisplay: "code" muestra "USD"/"EUR" en vez del símbolo ($/€),
+  // porque la tienda de destino puede mostrarle al usuario un precio
+  // convertido a SU propia moneda (ej. Shopify detecta la ubicación y
+  // muestra euros en vez de dólares), y un símbolo ambiguo hace parecer
+  // que el precio no coincide cuando en realidad es el mismo precio real.
   return new Intl.NumberFormat(OFFER_CURRENCY_LOCALE[currency], {
     style: "currency",
     currency,
+    currencyDisplay: "code",
     maximumFractionDigits,
   }).format(amount);
 }
@@ -438,6 +476,8 @@ export interface Product {
   colorHexSecondary: string;
   jerseyPattern: JerseyPattern;
   offers: Offer[];
+  // Ausente = "adult" (así no hay que tocar los productos ya existentes).
+  ageGroup?: AgeGroup;
 }
 
 // NOTA: datos de ejemplo (placeholder) para poder mostrar la interfaz

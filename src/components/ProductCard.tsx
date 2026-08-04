@@ -9,6 +9,7 @@ import {
   availableSizesForCountry,
   bestOfferForCountry,
   formatOfferMoney,
+  getAgeGroup,
   offerShipsTo,
   offerTotal,
   teamNames,
@@ -40,6 +41,7 @@ export default function ProductCard({ product }: { product: Product }) {
       : SIZES[0];
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
+  const isKids = getAgeGroup(product) === "kids";
   const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -79,8 +81,15 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         )}
 
-        <span className="vintage-plaque absolute left-3 top-3 rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
-          {product.season}
+        <span className="absolute left-3 top-3 flex flex-col items-start gap-1">
+          <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
+            {product.season}
+          </span>
+          {isKids && (
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#1F6F4C" }}>
+              {t.search.ageGroupKids}
+            </span>
+          )}
         </span>
 
         {best && (

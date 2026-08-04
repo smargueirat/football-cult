@@ -2,11 +2,13 @@
 
 import { useMemo, useState } from "react";
 import {
+  AgeGroup,
   Product,
   SEASONS,
   TeamKey,
   TypeKey,
   bestOfferForCountry,
+  getAgeGroup,
   offerTotalInEUR,
   products,
   shipsToCountry,
@@ -24,6 +26,7 @@ import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 
 const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper"];
+const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
 
 const TEAM_KEYS: TeamKey[] = Array.from(
   new Set(products.map((p) => p.teamKey))
@@ -49,6 +52,8 @@ export default function SearchExplorer() {
     setCategoryFilter,
     seasonFilter,
     setSeasonFilter,
+    ageGroupFilter,
+    setAgeGroupFilter,
   } = useSearchFilter();
   const { countryCode } = useCountry();
   const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
@@ -65,8 +70,16 @@ export default function SearchExplorer() {
       const matchesCategory =
         categoryFilter === "all" || teamCategory[p.teamKey] === categoryFilter;
       const matchesSeason = seasonFilter === "all" || p.season === seasonFilter;
+      const matchesAgeGroup = ageGroupFilter === "all" || getAgeGroup(p) === ageGroupFilter;
       const matchesShipping = shipsToCountry(p, countryCode);
-      return matchesQuery && matchesType && matchesCategory && matchesSeason && matchesShipping;
+      return (
+        matchesQuery &&
+        matchesType &&
+        matchesCategory &&
+        matchesSeason &&
+        matchesAgeGroup &&
+        matchesShipping
+      );
     });
 
     return [...filtered].sort((a, b) => {
@@ -80,7 +93,7 @@ export default function SearchExplorer() {
       const totalB = bestB ? offerTotalInEUR(bestB) : Infinity;
       return sortBy === "priceDesc" ? totalB - totalA : totalA - totalB;
     });
-  }, [query, typeFilter, categoryFilter, seasonFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, countryCode, sortBy]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -192,6 +205,20 @@ export default function SearchExplorer() {
             {SEASONS.map((season) => (
               <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)} className="shrink-0">
                 {season}
+              </Chip>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-1.5">
+          <span className="text-xs text-[#8a7a5a]">{t.search.ageGroupLabel}:</span>
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <Chip active={ageGroupFilter === "all"} onClick={() => setAgeGroupFilter("all")} className="shrink-0">
+              {t.search.allCategories}
+            </Chip>
+            {AGE_GROUP_FILTERS.map((key) => (
+              <Chip key={key} active={ageGroupFilter === key} onClick={() => setAgeGroupFilter(key)} className="shrink-0">
+                {key === "adult" ? t.search.ageGroupAdult : t.search.ageGroupKids}
               </Chip>
             ))}
           </div>

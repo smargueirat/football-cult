@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, ReactNode, useContext, useState } from "react";
-import { CategoryKey, TypeKey } from "@/data/products";
+import { AgeGroup, CategoryKey, TypeKey } from "@/data/products";
 
 interface SearchFilterValue {
   query: string;
@@ -12,6 +12,8 @@ interface SearchFilterValue {
   setCategoryFilter: (c: CategoryKey | "all") => void;
   seasonFilter: string | "all";
   setSeasonFilter: (s: string | "all") => void;
+  ageGroupFilter: AgeGroup | "all";
+  setAgeGroupFilter: (a: AgeGroup | "all") => void;
   activeFilterCount: number;
 }
 
@@ -22,11 +24,13 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [typeFilter, setTypeFilter] = useState<TypeKey | "all">("all");
   const [categoryFilter, setCategoryFilter] = useState<CategoryKey | "all">("all");
   const [seasonFilter, setSeasonFilter] = useState<string | "all">("all");
+  const [ageGroupFilter, setAgeGroupFilter] = useState<AgeGroup | "all">("all");
 
   const activeFilterCount =
     (typeFilter !== "all" ? 1 : 0) +
     (categoryFilter !== "all" ? 1 : 0) +
-    (seasonFilter !== "all" ? 1 : 0);
+    (seasonFilter !== "all" ? 1 : 0) +
+    (ageGroupFilter !== "all" ? 1 : 0);
 
   return (
     <SearchFilterContext.Provider
@@ -39,6 +43,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         setCategoryFilter,
         seasonFilter,
         setSeasonFilter,
+        ageGroupFilter,
+        setAgeGroupFilter,
         activeFilterCount,
       }}
     >

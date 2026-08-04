@@ -70,6 +70,9 @@ export interface Translations {
     categoryClubs: string;
     typeLabel: string;
     seasonLabel: string;
+    ageGroupLabel: string;
+    ageGroupAdult: string;
+    ageGroupKids: string;
     quickSelectLabel: string;
     clearAria: string;
     resultsCount: string;
@@ -102,6 +105,7 @@ export interface Translations {
     total: string;
     viewInStore: string;
     photoPlaceholder: string;
+    currencyNote: string;
   };
   footer: {
     about: string;
@@ -253,6 +257,9 @@ export const translations: Record<Locale, Translations> = {
       categoryClubs: "Clubes",
       typeLabel: "Tipo",
       seasonLabel: "Temporada",
+      ageGroupLabel: "Talle",
+      ageGroupAdult: "Adulto",
+      ageGroupKids: "Niño/a",
       quickSelectLabel: "Accesos rápidos",
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
@@ -285,6 +292,7 @@ export const translations: Record<Locale, Translations> = {
       total: "Total",
       viewInStore: "Ver en tienda",
       photoPlaceholder: "Foto de producto próximamente",
+      currencyNote: "Precio real de cada tienda en su moneda de origen. La tienda puede mostrarte otra moneda según tu ubicación, pero cobra este mismo precio.",
     },
     footer: {
       about: "Sobre nosotros",
@@ -443,6 +451,9 @@ export const translations: Record<Locale, Translations> = {
       categoryClubs: "Clubes",
       typeLabel: "Tipo",
       seasonLabel: "Temporada",
+      ageGroupLabel: "Tamanho",
+      ageGroupAdult: "Adulto",
+      ageGroupKids: "Infantil",
       quickSelectLabel: "Acessos rápidos",
       clearAria: "Limpar busca",
       resultsCount: "{n} camisas encontradas",
@@ -475,6 +486,7 @@ export const translations: Record<Locale, Translations> = {
       total: "Total",
       viewInStore: "Ver na loja",
       photoPlaceholder: "Foto do produto em breve",
+      currencyNote: "Preço real de cada loja na sua moeda de origem. A loja pode te mostrar outra moeda de acordo com sua localização, mas cobra esse mesmo preço.",
     },
     footer: {
       about: "Sobre nós",
@@ -633,6 +645,9 @@ export const translations: Record<Locale, Translations> = {
       categoryClubs: "Clubs",
       typeLabel: "Type",
       seasonLabel: "Season",
+      ageGroupLabel: "Size",
+      ageGroupAdult: "Adult",
+      ageGroupKids: "Kids",
       quickSelectLabel: "Quick picks",
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",
@@ -665,6 +680,7 @@ export const translations: Record<Locale, Translations> = {
       total: "Total",
       viewInStore: "View in store",
       photoPlaceholder: "Product photo coming soon",
+      currencyNote: "Real price from each store in its original currency. The store may show you a different currency based on your location, but charges this same price.",
     },
     footer: {
       about: "About us",
