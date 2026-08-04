@@ -162,6 +162,12 @@ export type TeamKey =
   | "austria"
   | "irlanda"
   | "irlandadelnorte"
+  | "sudafrica"
+  | "grecia"
+  | "haiti"
+  | "hungria"
+  | "rdcongo"
+  | "venezuela"
   | "islandia"
   | "serbia"
   | "qatar"
@@ -373,6 +379,12 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
   austria: "national",
   irlanda: "national",
   irlandadelnorte: "national",
+  sudafrica: "national",
+  grecia: "national",
+  haiti: "national",
+  hungria: "national",
+  rdcongo: "national",
+  venezuela: "national",
   islandia: "national",
   serbia: "national",
   qatar: "national",
@@ -547,6 +559,12 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   austria: { es: "Austria", en: "Austria", pt: "Áustria" },
   irlanda: { es: "Irlanda", en: "Republic of Ireland", pt: "Irlanda" },
   irlandadelnorte: { es: "Irlanda del Norte", en: "Northern Ireland", pt: "Irlanda do Norte" },
+  sudafrica: { es: "Sudáfrica", en: "South Africa", pt: "África do Sul" },
+  grecia: { es: "Grecia", en: "Greece", pt: "Grécia" },
+  haiti: { es: "Haití", en: "Haiti", pt: "Haiti" },
+  hungria: { es: "Hungría", en: "Hungary", pt: "Hungria" },
+  rdcongo: { es: "RD Congo", en: "DR Congo", pt: "RD Congo" },
+  venezuela: { es: "Venezuela", en: "Venezuela", pt: "Venezuela" },
   islandia: { es: "Islandia", en: "Iceland", pt: "Islândia" },
   serbia: { es: "Serbia", en: "Serbia", pt: "Sérvia" },
   qatar: { es: "Catar", en: "Qatar", pt: "Catar" },
@@ -721,6 +739,12 @@ export const teamFlags: Record<TeamKey, string> = {
   austria: "🇦🇹",
   irlanda: "🇮🇪",
   irlandadelnorte: "🏴",
+  sudafrica: "🇿🇦",
+  grecia: "🇬🇷",
+  haiti: "🇭🇹",
+  hungria: "🇭🇺",
+  rdcongo: "🇨🇩",
+  venezuela: "🇻🇪",
   islandia: "🇮🇸",
   serbia: "🇷🇸",
   qatar: "🇶🇦",
@@ -896,6 +920,12 @@ export const teamColors: Record<TeamKey, [string, string]> = {
   austria: ["#ED2939", "#FFFFFF"],
   irlanda: ["#169B62", "#FFFFFF"],
   irlandadelnorte: ["#00693E", "#FFFFFF"],
+  sudafrica: ["#007A4D", "#FFB81C"],
+  grecia: ["#0D5EAF", "#FFFFFF"],
+  haiti: ["#00209F", "#D21034"],
+  hungria: ["#CE2939", "#FFFFFF"],
+  rdcongo: ["#007FFF", "#CE1021"],
+  venezuela: ["#7B1E3A", "#FFFFFF"],
   islandia: ["#02529C", "#FFFFFF"],
   serbia: ["#C6363C", "#FFFFFF"],
   qatar: ["#8D1B3D", "#FFFFFF"],
@@ -1309,10 +1339,6 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-home-soccer-jersey-2026-world-cup%3Fvariant%3D42634036969577", title: "France Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/France_Home_Jersey_World_Cup_2026_2.webp?v=1766144118" },
       { store: "FootStoreES", price: 86.71, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44992302561&a=3013769&m=65912", title: "Camiseta Local Francia Coupe du monde 2026", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5300-480_01.webp&feedId=89032&k=29768505a38d91ac3ab2fa3e2f164bb1ae8d9a1c" },
       { store: "FootStoreFR", price: 85.72, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5300-480-maillot-domicile-france-coupe-du-monde-2026-game-royal-metallic-copper", title: "Maillot Domicile France Coupe du Monde 2026", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5300-480_01.webp" },
-      { store: "SportIsGoodES", price: 67.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015741&a=3013769&m=65906", title: "Camiseta Local Francia 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9a9425f3ee590c3d0e42a6ae50a407326e681e29" },
-      { store: "SportIsGoodFR", price: 66.56, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf1712-maillot-domicile-france-2025-26-semid-lucid-blue", title: "Maillot Domicile France 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp" },
-      { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44570682104&a=3013769&m=77008", title: "Camiseta primera equipación Francia", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7a998a6cdd5e4b91a6c834352367cb84_9366%2FCamiseta_primera_equipacion_Francia_Azul_JM6958_21_model.jpg&feedId=92152&k=96fd22295283f412b714c6c0899721d54339a9c0" },
-      { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44570678463&a=3013769&m=77026", title: "Camisola Principal da França", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7a998a6cdd5e4b91a6c834352367cb84_9366%2FCamisola_Principal_da_Franca_Azul_JM6958_21_model.jpg&feedId=92150&k=801684a1cc61304cee4e15bb5ecd26817862a6f7" },
     ],
   },
 {
@@ -1895,9 +1921,6 @@ export const products: Product[] = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-away-soccer-jersey-2026-world-cup%3Fvariant%3D43013419139177", title: "France Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/France2026awayjersey_1_8343c88f-f693-4341-92d5-f8ce052bf427.webp?v=1773914236" },
       { store: "FootStoreES", price: 149.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42613754369&a=3013769&m=65912", title: "Camiseta Exterior Auténtica Francia 2025", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ih0804-110_pale-ivory-sail-bright-blue-light-madder-root_7.webp&feedId=89032&k=8251273dcb1100b99d24d57d312352954f8e7a74" },
-      { store: "SportIsGoodES", price: 76.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015747&a=3013769&m=65906", title: "Camiseta de visitante de Francia 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jy0843_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=f57386e1dd5777d768d1db8c6deec43666f08eb2" },
-      { store: "AdidasES", price: 90.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44570679950&a=3013769&m=77008", title: "Camiseta segunda equipación Francia", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6d1f55123d6b469cbc50bdd4c1535ad7_9366%2FCamiseta_segunda_equipacion_Francia_Blanco_KA3300_21_model.jpg&feedId=92152&k=0990d94274f67a902a04e2d85c45e3021b0b144e" },
-      { store: "AdidasPT", price: 90.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44570674785&a=3013769&m=77026", title: "Camisola alternativa da França", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6d1f55123d6b469cbc50bdd4c1535ad7_9366%2FCamisola_alternativa_da_Franca_Branco_KA3300_21_model.jpg&feedId=92150&k=8b8ef16af3cab194d15cd10a1eec17eeb94f754e" },
     ],
   },
 {
@@ -2627,8 +2650,6 @@ export const products: Product[] = [
     offers: [
       { store: "FootStoreES", price: 59.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300834&a=3013769&m=65912", title: "Camiseta local niño Francia Coupe du monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5129-480_01.webp&feedId=89032&k=fc330f2aab6dd6028de1049780dff41deedbb1e4" },
       { store: "FootStoreFR", price: 59.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5129-480-maillot-domicile-enfant-france-coupe-du-monde-2026-royal-metallic-copper", title: "Maillot Domicile enfant France Coupe du Monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5129-480_01.webp" },
-      { store: "SportIsGoodES", price: 63.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015731&a=3013769&m=65906", title: "Camiseta local niño Francia 2025/26", inStock: true, sizes: ["8-9", "9-10", "11-12", "12-13", "13-14", "14-15", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf1711_2_apparel_photography_front_center_view_white.webp&feedId=89044&k=1e4b9d113d8d0116ce058332313d2d8d8086ae85" },
-      { store: "SportIsGoodFR", price: 55.18, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy1227-maillot-domicile-enfant-france-2025-26-selubl-white", title: "Maillot Domicile enfant France 2025/26", inStock: true, sizes: ["8-9", "9-10", "11-12", "12-13", "13-14", "14-15", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy1227_2_apparel_photography_front_center_view_white.webp" },
     ],
   },
 {
@@ -3070,8 +3091,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "SportIsGoodES", price: 46.78, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45443706479&a=3013769&m=65906", title: "Maillot Tercero niño Francia 2026/27", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_01_adidas_kg7528_1_apparel_photography_front_view_white.webp&feedId=89044&k=65255b2fe85b3a03d45d810c034c7c98cdc1843a" },
-      { store: "SportIsGoodFR", price: 45.77, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkg7528-maillot-third-enfant-france-2026-27-bliss-pink", title: "Maillot Third enfant France 2026/27", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_01_adidas_kg7528_1_apparel_photography_front_view_white.webp" },
     ],
   },
 {
@@ -5459,10 +5478,6 @@ export const products: Product[] = [
     colorHexSecondary: "#E8EDF5",
     jerseyPattern: "solid",
     offers: [
-      { store: "SportIsGoodES", price: 34.94, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301783943&a=3013769&m=65906", title: "Camiseta de Entrenamiento France 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp4256_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=7497996cf7b3a930304ac80a6abee1d3d9650b02" },
-      { store: "SportIsGoodFR", price: 41.28, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Ffm816c00010frv-maillot-training-france-2025-26-bianco", title: "Maillot Training France 2025/26", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea_fm816c00010frv_0.webp" },
-      { store: "AdidasES", price: 35.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44178358189&a=3013769&m=77008", title: "CAMISETA DE TRAINING DE FRANCIA", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6fd944f80f804cab91b6c38d16718fa1_9366%2FCAMISETA_DE_TRAINING_DE_FRANCIA_Azul_KA3374_21_model.jpg&feedId=92152&k=0f0bdb2af53e18d10afacd9d7f841972d8d125b9" },
-      { store: "AdidasPT", price: 35.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44176650360&a=3013769&m=77026", title: "T-SHIRT DE TREINO FRANCE", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6fd944f80f804cab91b6c38d16718fa1_9366%2FT-SHIRT_DE_TREINO_FRANCE_Azul_KA3374_21_model.jpg&feedId=92150&k=f7a2be70d759b30c865dda0f57b97dcdd44623d6" },
     ],
   },
 {
