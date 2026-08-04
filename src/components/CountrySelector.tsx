@@ -12,16 +12,21 @@ export default function CountrySelector() {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
 
+  const sorted = useMemo(
+    () => [...countries].sort((a, b) => a.name[locale].localeCompare(b.name[locale], locale)),
+    [locale]
+  );
+
   const filtered = useMemo(() => {
     const normalized = search.trim().toLowerCase();
-    if (!normalized) return countries;
-    return countries.filter(
+    if (!normalized) return sorted;
+    return sorted.filter(
       (c) =>
         c.name[locale].toLowerCase().includes(normalized) ||
         c.code.toLowerCase().includes(normalized) ||
         c.currency.toLowerCase().includes(normalized)
     );
-  }, [search, locale]);
+  }, [search, locale, sorted]);
 
   return (
     <div className="relative">

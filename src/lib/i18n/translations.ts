@@ -89,6 +89,7 @@ export interface Translations {
     hideStores: string;
     inStores: string;
     sizesRange: string;
+    shippingIncluded: string;
   };
   detail: {
     backToCatalog: string;
@@ -271,6 +272,7 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Ocultar tiendas",
       inStores: "En {n} tiendas",
       sizesRange: "Tallas {range}",
+      shippingIncluded: "envío incl.",
     },
     detail: {
       backToCatalog: "Volver al catálogo",
@@ -460,6 +462,7 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Ocultar lojas",
       inStores: "Em {n} lojas",
       sizesRange: "Tamanhos {range}",
+      shippingIncluded: "frete incl.",
     },
     detail: {
       backToCatalog: "Voltar ao catálogo",
@@ -649,6 +652,7 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Hide stores",
       inStores: "At {n} stores",
       sizesRange: "Sizes {range}",
+      shippingIncluded: "shipping incl.",
     },
     detail: {
       backToCatalog: "Back to catalog",

@@ -84,9 +84,16 @@ export default function ProductCard({ product }: { product: Product }) {
         </span>
 
         {best && (
-          <div className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-sm font-semibold text-[#2A2410] shadow-md">
-            <span className="text-xs">🥇</span>
-            {formatOfferMoney(offerTotal(best), best.currency)}
+          <div className="absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410] shadow-md">
+            <span className="flex items-center gap-1 text-sm font-semibold">
+              <span className="text-xs">🥇</span>
+              {formatOfferMoney(offerTotal(best), best.currency)}
+            </span>
+            {best.shipping > 0 && (
+              <span className="text-[9px] font-medium uppercase leading-none opacity-70">
+                {t.product.shippingIncluded}
+              </span>
+            )}
           </div>
         )}
 

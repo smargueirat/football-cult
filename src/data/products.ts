@@ -565,6 +565,22 @@ export const products: Product[] = [
     ],
   },
   {
+    // Producto de estilo "terrace" (casual, no es la réplica de partido
+    // oficial), listado aparte de boca-home-2025 a propósito para no
+    // repetir el mismo problema de mezclar dos diseños distintos como si
+    // fueran ofertas del mismo producto.
+    id: "boca-terrace-icon-2025",
+    teamKey: "boca",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#1B3A6B",
+    colorHexSecondary: "#F5C742",
+    jerseyPattern: "band",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-terrace-icon-jersey-2025-26%3Fvariant%3D42660270604393", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Boca_Juniors_Icon_Jersey_202526.png?v=1762224920" },
+    ],
+  },
+  {
     id: "manutd-home-2025",
     teamKey: "manutd",
     season: "2025/26",
@@ -851,6 +867,10 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 47.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fhavertz-7-germany-player-version-away-soccer-jersey-2026-world-cup%3Fvariant%3D47711689408617", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/germanyawayfan_7-2_aa5033f6-4ab7-4156-8981-647f24dd7720.webp?v=1782100554" },
+      { store: "FootStoreES", price: 66.16, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890852&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn2074_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=59b81a2f0c43c9df878660b1234b1cbc760c15c6" },
+      { store: "SportIsGoodES", price: 67.85, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365711&a=3013769&m=65906", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn2074_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=59b81a2f0c43c9df878660b1234b1cbc760c15c6" },
+      { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265204653&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa3eb6fcc22434146abe924050e0a91ad_9366%2FCamiseta_segunda_equipacion_Alemania_26_Azul_JN2074_21_model.jpg&feedId=92152&k=11a8a240e4958def20c236f9fa1de72176fccaf6" },
+      { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267895747&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb77fff63a8db4413b9422887ffa0ccfe_9366%2FCamisola_Alternativa_26_da_Alemanha_Azul_JZ4568_21_model.jpg&feedId=92150&k=ffef37a4ba5614a195f88ea48a0e7009400ff4e2" },
     ],
   },
   {
@@ -1460,21 +1480,6 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "ComoFCShop", price: 42.5, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fgoalkeeper-third-jersey-2025-26-jp4380-1%3Fvariant%3D56193832878462", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B6001_08_01.jpg?v=1757675978" },
-    ],
-  },
-  {
-    id: "ale-away-2026",
-    teamKey: "alemania",
-    season: "2026",
-    typeKey: "away",
-    colorHex: "#000000",
-    colorHexSecondary: "#F5F5F5",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "FootStoreES", price: 66.16, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890852&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn2074_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=59b81a2f0c43c9df878660b1234b1cbc760c15c6" },
-      { store: "SportIsGoodES", price: 67.85, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365711&a=3013769&m=65906", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn2074_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=59b81a2f0c43c9df878660b1234b1cbc760c15c6" },
-      { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265204653&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa3eb6fcc22434146abe924050e0a91ad_9366%2FCamiseta_segunda_equipacion_Alemania_26_Azul_JN2074_21_model.jpg&feedId=92152&k=11a8a240e4958def20c236f9fa1de72176fccaf6" },
-      { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267895747&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb77fff63a8db4413b9422887ffa0ccfe_9366%2FCamisola_Alternativa_26_da_Alemanha_Azul_JZ4568_21_model.jpg&feedId=92150&k=ffef37a4ba5614a195f88ea48a0e7009400ff4e2" },
     ],
   },
   {
