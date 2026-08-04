@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { findProduct, teamNames, typeNames } from "@/data/products";
+import { bestOffer, findProduct, teamNames, typeNames } from "@/data/products";
 
 export default function CompareBar() {
   const { locale, t } = useLanguage();
@@ -23,7 +23,9 @@ export default function CompareBar() {
         </span>
         <div className="flex flex-1 items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {products.map((product) => {
-            const displayName = `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
+            const best = bestOffer(product);
+            const displayName =
+              best?.title ?? `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
             return (
             <span
               key={product.id}

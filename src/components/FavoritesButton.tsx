@@ -60,7 +60,9 @@ export default function FavoritesButton() {
               <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
                 {savedProducts.map((product) => {
                   const best = bestOfferForCountry(product, countryCode);
-                  const displayName = `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
+                  const displayName =
+                    best?.title ??
+                    `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
                   return (
                     <li key={product.id}>
                       <Link
