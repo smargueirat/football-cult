@@ -494,7 +494,7 @@ export interface Product {
 // TODO su catálogo en el feed (bug de su lado) por lo que inStock se fuerza
 // a true para esa tienda; PlanetFoot sí usa su disponibilidad real.
 export const products: Product[] = [
-  {
+{
     id: "arg-home-2026",
     teamKey: "argentina",
     season: "2026",
@@ -510,7 +510,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096967179&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F841749a208934f2ab4a0cfa1a8ae237d_9366%2FCamisola_Principal_26_da_Argentina_Branco_JM8396_21_model.jpg&feedId=92150&k=9eed40cd2ecd528e3ed1bd8ff0c51de38b0c4198" },
     ],
   },
-  {
+{
     id: "arg-away-2026",
     teamKey: "argentina",
     season: "2026",
@@ -524,7 +524,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43692242689&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe1aababf51c948d68cdf4491cc33acba_9366%2FCamisola_Alternativa_26_da_Argentina_Azul_KF0321_HM1.jpg&feedId=92150&k=21ce26e766700c99e6179587121adb55e9e29557" },
     ],
   },
-  {
+{
     id: "bra-home-2026",
     teamKey: "brasil",
     season: "2026",
@@ -537,7 +537,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 86.71, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081627&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_if7054-724_01.webp&feedId=89032&k=72daf3c8a34828a58f79061845a8e0bfeb776364" },
     ],
   },
-  {
+{
     id: "esp-home-2026",
     teamKey: "espana",
     season: "2026",
@@ -556,7 +556,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966931&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F866664f412bb4443bca790fed9c9f0a3_9366%2FCamisola_Principal_26_da_Espanha_Vermelho_JN4390_21_model.jpg&feedId=92150&k=62e9e3c30e8bcdcb3ade8efee634bb03d13b28fe" },
     ],
   },
-  {
+{
     id: "fra-home-2026",
     teamKey: "francia",
     season: "2026",
@@ -575,7 +575,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44570678463&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7a998a6cdd5e4b91a6c834352367cb84_9366%2FCamisola_Principal_da_Franca_Azul_JM6958_21_model.jpg&feedId=92150&k=801684a1cc61304cee4e15bb5ecd26817862a6f7" },
     ],
   },
-  {
+{
     id: "rma-home-2025",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -591,7 +591,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41530602511&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0b3e6a5ef6cf471db6b0e17f0c22cc5c_9366%2FCamiseta_primera_equipacion_Real_Madrid_25-26_Blanco_JN8869_21_model.jpg&feedId=92152&k=2ca473787bb5b8b35a3fad1a6ac9e165e51d2e7e" },
     ],
   },
-  {
+{
     id: "boca-home-2025",
     teamKey: "boca",
     season: "2025/26",
@@ -603,7 +603,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-home-soccer-jersey-2025-26%3Fvariant%3D42557169860713", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/86c6d74da59cbd7b06e351d6fda018dc.png?v=1758073956" },
     ],
   },
-  {
+{
     // Producto de estilo "terrace" (casual, no es la réplica de partido
     // oficial), listado aparte de boca-home-2025 a propósito para no
     // repetir el mismo problema de mezclar dos diseños distintos como si
@@ -619,7 +619,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-terrace-icon-jersey-2025-26%3Fvariant%3D42660270604393", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Boca_Juniors_Icon_Jersey_202526.png?v=1762224920" },
     ],
   },
-  {
+{
     id: "manutd-home-2025",
     teamKey: "manutd",
     season: "2025/26",
@@ -635,7 +635,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcunha-10-manchester-united-home-soccer-jersey-2025-26%3Fvariant%3D42861871792233", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cunha10ManchesterUnitedHomeJersey202526.webp?v=1769590620" },
     ],
   },
-  {
+{
     id: "ale-home-2026",
     teamKey: "alemania",
     season: "2026",
@@ -654,7 +654,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 41.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-home-soccer-jersey-kit-2026-world-cup%3Fvariant%3D42748815573097", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Germany_Home_Jersey_Kit_World_Cup_2026_1.webp?v=1765780768" },
     ],
   },
-  {
+{
     id: "ita-home-2026",
     teamKey: "italia",
     season: "2026",
@@ -672,7 +672,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965381&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9716cb1d4ca14ca8a3ee4af6a3e2c31f_9366%2FCamisola_Principal_26_da_Italia_Azul_JY7586_21_model.jpg&feedId=92150&k=0946f5470c32292679753de0c7f6d65ed2941ed7" },
     ],
   },
-  {
+{
     id: "ing-home-2026",
     teamKey: "inglaterra",
     season: "2026",
@@ -686,7 +686,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5290-100-maillot-domicile-angleterre-coupe-du-monde-2026-white-speed-red-obsidian-obsidian", inStock: true, sizes: ["S", "M", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5290-100_01.webp" },
     ],
   },
-  {
+{
     id: "por-home-2026",
     teamKey: "portugal",
     season: "2026",
@@ -701,7 +701,7 @@ export const products: Product[] = [
       { store: "SportIsGoodES", price: 82.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43430682902&a=3013769&m=65906", inStock: true, sizes: ["S", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-783279-01-club-red-green-lagoon-1.webp&feedId=89044&k=f1cee1fc4b6a6df89fa403cdaa4b04326a064609" },
     ],
   },
-  {
+{
     id: "uru-home-2026",
     teamKey: "uruguay",
     season: "2026",
@@ -715,7 +715,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4680-425-maillot-domicile-uruguay-coupe-du-monde-2026-royal-tint-obsidian", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io4680-425-royal-tint-obsidian-69ca9a902cd7b-1.webp" },
     ],
   },
-  {
+{
     id: "col-home-2026",
     teamKey: "colombia",
     season: "2026",
@@ -731,7 +731,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096963439&a=3013769&m=77026", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb30bb7e33dc49afa7d3dcb0da3bdb4a_9366%2FCamisola_Principal_26_da_Colombia_Amarelo_JL6972_21_model.jpg&feedId=92150&k=accea9c86e1686b70ea41c12d78fde41644fbd13" },
     ],
   },
-  {
+{
     id: "ned-home-2026",
     teamKey: "paisesbajos",
     season: "2026",
@@ -745,7 +745,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5334-809-maillot-domicile-pays-bas-coupe-du-monde-2026-hyper-crimson-black", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5334-809_04.webp" },
     ],
   },
-  {
+{
     id: "cro-home-2026",
     teamKey: "croacia",
     season: "2026",
@@ -761,7 +761,7 @@ export const products: Product[] = [
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8621-100-maillot-domicile-croatie-coupe-du-monde-2026-white", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8621-100-white-69ef67d574381-1.webp" },
     ],
   },
-  {
+{
     id: "bar-home-2025",
     teamKey: "barcelona",
     season: "2025/26",
@@ -775,7 +775,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 73.1, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44291084666&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4590-456-phsfh001.webp&feedId=89032&k=97609522fc0d8f0c9d0156cefc15a48558a6c170" },
     ],
   },
-  {
+{
     id: "bar-away-2025",
     teamKey: "barcelona",
     season: "2025/26",
@@ -787,7 +787,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-third-away-soccer-jersey-2025-26%3Fvariant%3D42557191585897", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/barcelona_third_away_jersey_2025_1.png?v=1759219885" },
     ],
   },
-  {
+{
     id: "liv-home-2025",
     teamKey: "liverpool",
     season: "2025/26",
@@ -805,7 +805,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41972279593&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2e9b3d1665f944f09c921c0174b355bf_9366%2FCamisola_Principal_25-26_do_Liverpool_FC_Vermelho_JV6423_21_model.jpg&feedId=92150&k=d5bd5b8ce3f6be2203ce980140e2032d130609c9" },
     ],
   },
-  {
+{
     id: "bay-home-2025",
     teamKey: "bayern",
     season: "2025/26",
@@ -822,7 +822,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41562962668&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F637467085ad14aad8cb0acf249276c31_9366%2FCamisola_Principal_25-26_do_FC_Bayern_Munchen_Vermelho_JJ2137_21_model.jpg&feedId=92150&k=ef296570761f4bbe69e4caef77e758a94b224042" },
     ],
   },
-  {
+{
     id: "psg-home-2025",
     teamKey: "psg",
     season: "2025/26",
@@ -835,7 +835,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 109.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44783130096&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii1885-417_01.webp&feedId=89032&k=44e8a96c6fed9924a4ddd08aabd82f166cc7f203" },
     ],
   },
-  {
+{
     id: "juv-home-2025",
     teamKey: "juventus",
     season: "2025/26",
@@ -852,7 +852,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41299301716&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffe0a2e213d8d4ce2accb8324679b8e5a_9366%2FCamiseta_primera_equipacion_Juventus_25-26_Blanco_JJ4320_21_model.jpg&feedId=92152&k=50933479dcddaa1674736281986926603961b0c8" },
     ],
   },
-  {
+{
     id: "juv-away-2025",
     teamKey: "juventus",
     season: "2025/26",
@@ -866,7 +866,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41590987988&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8c6cd78831754419beba203bacb3d1f2_9366%2FCamiseta_segunda_equipacion_Juventus_25-26_Azul_JJ4323_21_model.jpg&feedId=92152&k=290f465711cbc768a25fc0307cc596106de0a24b" },
     ],
   },
-  {
+{
     id: "riv-home-2025",
     teamKey: "riverplate",
     season: "2025/26",
@@ -878,7 +878,7 @@ export const products: Product[] = [
       { store: "PlanetFoot", price: 60.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-river-plate-domicile-homme-2025-26-blanc%3Fvariant%3D51421275455829", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-river-plate-25-26-domicile-adulte-adidas-planetfoot1.webp?v=1758730642" },
     ],
   },
-  {
+{
     id: "che-home-2025",
     teamKey: "chelsea",
     season: "2025/26",
@@ -892,7 +892,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 71.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4589-496-maillot-domicile-chelsea-2025-26-rush-blue-white-speed-red-white", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4589-496_1.webp" },
     ],
   },
-  {
+{
     id: "ind-home-2025",
     teamKey: "independiente",
     season: "2025/26",
@@ -903,7 +903,7 @@ export const products: Product[] = [
     // Todavía sin tienda afiliada aprobada que venda esta camiseta.
     offers: [],
   },
-  {
+{
     id: "ale-away-2026",
     teamKey: "alemania",
     season: "2026",
@@ -919,7 +919,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267895747&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb77fff63a8db4413b9422887ffa0ccfe_9366%2FCamisola_Alternativa_26_da_Alemanha_Azul_JZ4568_21_model.jpg&feedId=92150&k=ffef37a4ba5614a195f88ea48a0e7009400ff4e2" },
     ],
   },
-  {
+{
     id: "ale-goalkeeper-2026",
     teamKey: "alemania",
     season: "2026",
@@ -937,7 +937,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096958515&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7549fd098cf04f7cad8a2af08f2bad9e_9366%2FCamisola_Principal_de_Guarda-redes_26_da_Alemanha_Verde_KD5121_21_model.jpg&feedId=92150&k=0d0e04d57e6b3107cdf6e32e3b7a25a4ac335965" },
     ],
   },
-  {
+{
     id: "bar-third-202526",
     teamKey: "barcelona",
     season: "2025/26",
@@ -950,7 +950,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 73.1, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42177817663&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm3201-855-phsfh001-ss25.webp&feedId=89032&k=74179f0a31d5c307468729e4432203e324bd1a31" },
     ],
   },
-  {
+{
     id: "bay-away-202526",
     teamKey: "bayern",
     season: "2025/26",
@@ -964,7 +964,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41205144020&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1e69f796f20e4af288539ad0fdab5eb4_9366%2FCamiseta_segunda_equipacion_FC_Bayern_25-26_Blanco_JJ2143_21_model.jpg&feedId=92152&k=a2623107242a7aa442ce4556355a5fc67083ae97" },
     ],
   },
-  {
+{
     id: "bay-third-202526",
     teamKey: "bayern",
     season: "2025/26",
@@ -980,7 +980,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 105.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41981561190&a=3013769&m=77026", inStock: true, sizes: ["S", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9b87e68616064dac999e972239f2aca5_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_FC_Bayern_Munchen_Preto_KE6802_HM1.jpg&feedId=92150&k=d8fe6c86db23304c5f0d289c99bd9481b711bc86" },
     ],
   },
-  {
+{
     id: "bay-goalkeeper-202526",
     teamKey: "bayern",
     season: "2025/26",
@@ -996,7 +996,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 48.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=37867478580&a=3013769&m=77026", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcc919d29365847b98019af5e00fcbdff_9366%2FCamisola_de_Guarda-redes_Icon_do_FC_Bayern_Munchen_Preto_HT8835_21_model.jpg&feedId=92150&k=4e70c139d38cb71e60baaba787168211feeadf7a" },
     ],
   },
-  {
+{
     id: "boca-away-202526",
     teamKey: "boca",
     season: "2025/26",
@@ -1008,7 +1008,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-away-soccer-jersey-2025-26%3Fvariant%3D42557168484457", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/441c3efad7fae985971a17f4b80580ea.png?v=1758073946" },
     ],
   },
-  {
+{
     id: "bra-away-2026",
     teamKey: "brasil",
     season: "2026",
@@ -1020,7 +1020,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-away-soccer-jersey-2026-world-cup%3Fvariant%3D42710746726505", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Brazil_Away_Jersey_World_Cup_2026_2.webp?v=1765245417" },
     ],
   },
-  {
+{
     id: "bra-third-2026",
     teamKey: "brasil",
     season: "2026",
@@ -1032,7 +1032,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 36.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-player-version-third-away-soccer-jersey-2026-world-cup%3Fvariant%3D42707026968681", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Brazil_Player_Version_Third_Away_Soccer_Jersey_2026_World_Cup_11.jpg?v=1764055948" },
     ],
   },
-  {
+{
     id: "bra-goalkeeper-2026",
     teamKey: "brasil",
     season: "2026",
@@ -1045,7 +1045,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 69.05, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300845&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_if3900-741_04.webp&feedId=89032&k=5e22c0d7ecbdfc4c32ca88061dd64a04e65d23e5" },
     ],
   },
-  {
+{
     id: "che-away-202526",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1057,7 +1057,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-away-soccer-jersey-2025-26-white%3Fvariant%3D42557257777257", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/eac3b5b68e76822f38daba2e8cea8fd7_32facad5-ad21-46d4-abe3-d2e581bec0c5.png?v=1758074597" },
     ],
   },
-  {
+{
     id: "che-third-202526",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1071,7 +1071,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3202-011-maillot-third-chelsea-2025-26-black-field-silver-field-silver", inStock: true, sizes: ["S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_09_nike_hm3202-011_0.jpg" },
     ],
   },
-  {
+{
     id: "col-away-2026",
     teamKey: "colombia",
     season: "2026",
@@ -1087,7 +1087,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267895140&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F70f4bc91f935442e8cac80543f1bb140_9366%2FCamisola_Alternativa_26_da_Colombia_Azul_JL6974_21_model.jpg&feedId=92150&k=4380d48d4f2255c00194e08d250f68197f02646b" },
     ],
   },
-  {
+{
     id: "cro-away-2026",
     teamKey: "croacia",
     season: "2026",
@@ -1101,7 +1101,7 @@ export const products: Product[] = [
       { store: "SportIsGoodES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44618335354&a=3013769&m=65906", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8619-455-deep-royal-blue-69ef682c1ed2e-4.webp&feedId=89044&k=446796584f92b8f8401d474f5db476f6dabd5255" },
     ],
   },
-  {
+{
     id: "esp-away-2026",
     teamKey: "espana",
     season: "2026",
@@ -1114,7 +1114,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44972135372&a=3013769&m=65912", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn4397_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=30bd73b835c97dd4e6d56a76f4a0880e9860377f" },
     ],
   },
-  {
+{
     id: "esp-goalkeeper-2026",
     teamKey: "espana",
     season: "2026",
@@ -1129,7 +1129,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096957488&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F306d4e607aee4a148d0367de314782ec_9366%2FCamisola_Principal_de_Guarda-Redes_26_da_Espanha_Azul_KB8371_21_model.jpg&feedId=92150&k=6aed226aeb383f4bedc3f9e04ea27cd01020541f" },
     ],
   },
-  {
+{
     id: "fra-away-2026",
     teamKey: "francia",
     season: "2026",
@@ -1145,7 +1145,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 90.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44570674785&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6d1f55123d6b469cbc50bdd4c1535ad7_9366%2FCamisola_alternativa_da_Franca_Branco_KA3300_21_model.jpg&feedId=92150&k=8b8ef16af3cab194d15cd10a1eec17eeb94f754e" },
     ],
   },
-  {
+{
     id: "fra-goalkeeper-2026",
     teamKey: "francia",
     season: "2026",
@@ -1158,7 +1158,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5304-010-maillot-de-gardien-france-coupe-du-monde-2026-black-medium-ash-monarch-igloo", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5304-010_01.webp" },
     ],
   },
-  {
+{
     id: "ing-away-2026",
     teamKey: "inglaterra",
     season: "2026",
@@ -1170,7 +1170,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fengland-away-soccer-jersey-2026-world-cup%3Fvariant%3D42634045227113", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Englandawayjersey2026_8.webp?v=1776328101" },
     ],
   },
-  {
+{
     id: "ita-away-2026",
     teamKey: "italia",
     season: "2026",
@@ -1187,7 +1187,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267899840&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F75936dd14cc7497f82e20014ecee59bf_9366%2FCamisola_Alternativa_26_da_Italia_Azul_JY5680_21_model.jpg&feedId=92150&k=34e4a6152c4e3ec1e223fc36a300166e11a23e28" },
     ],
   },
-  {
+{
     id: "juv-third-202526",
     teamKey: "juventus",
     season: "2025/26",
@@ -1205,7 +1205,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45256773512&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd5391efe8b6f4675a243e15c5f2aa956_9366%2FCamisola_do_Terceiro_Equipamento_25-26_da_Juventus_Preto_KC3491_21_model.jpg&feedId=92150&k=87687fa44c67f7b6cd1bfc7f59cbf649a1b873d6" },
     ],
   },
-  {
+{
     id: "juv-goalkeeper-202526",
     teamKey: "juventus",
     season: "2025/26",
@@ -1219,7 +1219,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 67.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5219-maillot-de-gardien-domicile-juventus-turin-2025-26-gris", inStock: true, sizes: ["M", "L"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn5219_gris_1.jpg" },
     ],
   },
-  {
+{
     id: "liv-away-202526",
     teamKey: "liverpool",
     season: "2025/26",
@@ -1232,7 +1232,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41972277361&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F96d873b3322b42a3afe56931da8f56be_9366%2FCamiseta_segunda_equipacion_Liverpool_FC_25-26_Blanco_JV6487_21_model.jpg&feedId=92152&k=320697cd5f84b18ae54a95e347aaf2bdcf240359" },
     ],
   },
-  {
+{
     id: "liv-third-202526",
     teamKey: "liverpool",
     season: "2025/26",
@@ -1250,7 +1250,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42382384159&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F21d0abf65dcd4eaebbb1b3e8f1ca3d99_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Liverpool_FC_Verde_JV6428_21_model.jpg&feedId=92150&k=8e495f38acfce47c0b6a9ccaf1e201f3ce78b681" },
     ],
   },
-  {
+{
     id: "liv-goalkeeper-202526",
     teamKey: "liverpool",
     season: "2025/26",
@@ -1264,7 +1264,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41972274257&a=3013769&m=77026", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff0b54147d3ad4a40b7e1d6add0de3b87_9366%2FCamisola_de_Guarda-Redes_25-26_do_Liverpool_FC_Verde_JZ4088_21_model.jpg&feedId=92150&k=aa2064b4085271f7c972cba2ba5b8b6d2fcc1cbb" },
     ],
   },
-  {
+{
     id: "manutd-away-202526",
     teamKey: "manutd",
     season: "2025/26",
@@ -1280,7 +1280,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41848202010&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1623df85821444868c899b09fd5c9a3c_9366%2FCamiseta_segunda_equipacion_Manchester_United_25-26_Blanco_JI7423_21_model.jpg&feedId=92152&k=a1f47608daf926a7217fde6420b83b5c8136c105" },
     ],
   },
-  {
+{
     id: "manutd-third-202526",
     teamKey: "manutd",
     season: "2025/26",
@@ -1296,7 +1296,7 @@ export const products: Product[] = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd4225-maillot-third-manchester-united-2025-26-black", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kd4225_1_apparel_photography_front_center_view_white.webp" },
     ],
   },
-  {
+{
     // Todavía sin oferta válida: la única disponible era de talla junior.
     id: "manutd-goalkeeper-202526",
     teamKey: "manutd",
@@ -1307,7 +1307,7 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [],
   },
-  {
+{
     id: "ned-away-2026",
     teamKey: "paisesbajos",
     season: "2026",
@@ -1320,7 +1320,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 149.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43406659936&a=3013769&m=65912", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ih0806-489_blue-beyond-noir_5.webp&feedId=89032&k=04fe3982cfb43bfc421b816f9b8d5a9fdad66de9" },
     ],
   },
-  {
+{
     id: "por-away-2026",
     teamKey: "portugal",
     season: "2026",
@@ -1335,7 +1335,7 @@ export const products: Product[] = [
       { store: "SportIsGoodES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45380187815&a=3013769&m=65906", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-783288-02-white-green-lagoon-69babe09f07cc-1.webp&feedId=89044&k=ac61552a06c41a5e7fa574881e51ebe4bcff1ef9" },
     ],
   },
-  {
+{
     id: "psg-away-202526",
     teamKey: "psg",
     season: "2025/26",
@@ -1347,7 +1347,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 119.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45263181337&a=3013769&m=65912", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iw9271-101-white-college-navy-college-navy-6a45a12f40f2f-1.webp&feedId=89032&k=8c11cff7c3650201cb3981654ec04e09596ac914" },
     ],
   },
-  {
+{
     id: "psg-third-202526",
     teamKey: "psg",
     season: "2025/26",
@@ -1359,7 +1359,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 83.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43745917174&a=3013769&m=65912", inStock: true, sizes: ["L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm3606-101_white-global-red_1.webp&feedId=89032&k=2e58deaeee8071150c777244cca3a2423906a3c9" },
     ],
   },
-  {
+{
     id: "rma-away-202526",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -1374,7 +1374,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41617120726&a=3013769&m=77008", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F69b7b03005ed474e95c1bae97618e097_9366%2FCamiseta_segunda_equipacion_Real_Madrid_25-26_Azul_JJ4182_21_model.jpg&feedId=92152&k=cc9ae1669d7c92a3a506080bc2ff8bae5c3ac9e6" },
     ],
   },
-  {
+{
     id: "rma-third-202526",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -1392,7 +1392,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 56.25, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42036951913&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7355abe9c0ce4ab9a6ae6b448cd03b15_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Real_Madrid_Azul_JV5845_21_model.jpg&feedId=92150&k=5df6e6ec9172e874ea2e2e9d34fb6d0ec31811d2" },
     ],
   },
-  {
+{
     id: "rma-goalkeeper-202526",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -1408,7 +1408,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 85.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41704988514&a=3013769&m=77026", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29dc1225fe254240a947e360e1fe27a4_9366%2FCamisola_Principal_de_Guarda-redes_25-26_do_Real_Madrid_Azul_JP4178_21_model.jpg&feedId=92150&k=2822f996edd7687930060cec4d6da60957802a67" },
     ],
   },
-  {
+{
     id: "riv-away-202526",
     teamKey: "riverplate",
     season: "2025/26",
@@ -1421,7 +1421,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-away-soccer-jersey-2025-26%3Fvariant%3D42724207886441", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RiverPlateAwaySoccerJersey202526_1.png?v=1764762115" },
     ],
   },
-  {
+{
     id: "uru-away-2026",
     teamKey: "uruguay",
     season: "2026",
@@ -1434,7 +1434,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 76.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926351&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io4681-451-obsidian-hyper-royal-69ca9aab64a88-1.webp&feedId=89032&k=e9d91af639ffe5d5b6786019048fab89d945d9d6" },
     ],
   },
-  {
+{
     id: "como-home-202526",
     teamKey: "como",
     season: "2025/26",
@@ -1446,7 +1446,7 @@ export const products: Product[] = [
       { store: "ComoFCShop", price: 110.0, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fhome-jersey-2025-26-jd7389-1%3Fvariant%3D55667122078078", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B1001_01.jpg?v=1758876217" },
     ],
   },
-  {
+{
     id: "como-away-202526",
     teamKey: "como",
     season: "2025/26",
@@ -1459,7 +1459,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcomo-1907-away-soccer-jersey-2025-26%3Fvariant%3D42712375197801", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Como_1907_Away_Jersey_202526_2.webp?v=1764227829" },
     ],
   },
-  {
+{
     id: "como-third-202526",
     teamKey: "como",
     season: "2025/26",
@@ -1471,7 +1471,7 @@ export const products: Product[] = [
       { store: "ComoFCShop", price: 110.0, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-maglia-third-2025-26%3Fvariant%3D55667125158270", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/1stImage.jpg?v=1764583746" },
     ],
   },
-  {
+{
     id: "como-goalkeeper-home-202526",
     teamKey: "como",
     season: "2025/26",
@@ -1483,7 +1483,7 @@ export const products: Product[] = [
       { store: "ComoFCShop", price: 42.5, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fgoalkeeper-home-jersey-2025-26-jn2032-1%3Fvariant%3D56086477308286", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_00347_01_e50516b8-fa7b-4078-ad8e-04edab096380.jpg?v=1758876738" },
     ],
   },
-  {
+{
     id: "como-goalkeeper-away-202526",
     teamKey: "como",
     season: "2025/26",
@@ -1495,7 +1495,7 @@ export const products: Product[] = [
       { store: "ComoFCShop", price: 42.5, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fgoalkeeper-away-jersey-2025-26-jn2033-1%3Fvariant%3D56182570582398", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B5001_09_01.jpg?v=1758876639" },
     ],
   },
-  {
+{
     id: "como-goalkeeper-third-202526",
     teamKey: "como",
     season: "2025/26",
@@ -1507,7 +1507,7 @@ export const products: Product[] = [
       { store: "ComoFCShop", price: 42.5, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fgoalkeeper-third-jersey-2025-26-jp4380-1%3Fvariant%3D56193832878462", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B6001_08_01.jpg?v=1757675978" },
     ],
   },
-  {
+{
     id: "bar-goalkeeper-202526",
     teamKey: "barcelona",
     season: "2025/26",
@@ -1519,7 +1519,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 109.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42805631887&a=3013769&m=65912", inStock: true, sizes: ["L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0477-311-phsym001.webp&feedId=89032&k=d5ea0c65a894acdb978e42af23924d9854efe8ae" },
     ],
   },
-  {
+{
     id: "ita-goalkeeper-2026",
     teamKey: "italia",
     season: "2026",
@@ -1534,7 +1534,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965775&a=3013769&m=77026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fffbebe63c7264f5685f8623206ecdcbc_9366%2FCamisola_Principal_de_Guarda-redes_26_da_ITALIA_Bordo_JN1979_21_model.jpg&feedId=92150&k=6a09c49c89949a40bf302884bc6e8d874b76d776" },
     ],
   },
-  {
+{
     id: "che-goalkeeper-202526",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1546,7 +1546,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 62.14, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43829770459&a=3013769&m=65912", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_01_nike_ib3830-012_15.webp&feedId=89032&k=467fdde996986625813f61f52625d138227cccfa" },
     ],
   },
-  {
+{
     id: "cro-goalkeeper-2026",
     teamKey: "croacia",
     season: "2026",
@@ -1561,7 +1561,7 @@ export const products: Product[] = [
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8620-718-maillot-de-gardien-croatie-coupe-du-monde-2026-lightening", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8620-718-lightening-69ef67d39f748-1.webp" },
     ],
   },
-  {
+{
     id: "psg-goalkeeper-202526",
     teamKey: "psg",
     season: "2025/26",
@@ -1572,7 +1572,7 @@ export const products: Product[] = [
     offers: [
       { store: "FootStoreFR", price: 109.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq9799-703-maillot-de-gardien-third-psg-2025-26-volt-white-black", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_08_nike_hq9799-703-phsfh001.webp" },
     ],
-  },  {
+  },{
     id: "alemania-away-kids",
     teamKey: "alemania",
     season: "2026",
@@ -1583,9 +1583,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 50.22, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890766&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz4569_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=61be843b7130d2ec904846bbc9c4c8c704ede557" },
+      { store: "SportIsGoodES", price: 51.48, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365594&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz4569_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=61be843b7130d2ec904846bbc9c4c8c704ede557" },
     ],
   },
-  {
+{
     id: "alemania-home-kids",
     teamKey: "alemania",
     season: "2026",
@@ -1596,9 +1597,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 50.22, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087832834&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz4560_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=e30858e73a026f6860fad497def37b8dfe15da95" },
+      { store: "FootStoreFR", price: 48.84, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4560-maillot-domicile-enfant-allemagne-coupe-du-monde-2026-white", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz4560_3_apparel_on_model_standard_view_white.webp" },
+      { store: "SportIsGoodES", price: 51.48, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301934153&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz4560_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=e30858e73a026f6860fad497def37b8dfe15da95" },
+      { store: "SportIsGoodFR", price: 50.29, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz4560-maillot-domicile-enfant-allemagne-coupe-du-monde-2026-white", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz4560_3_apparel_on_model_standard_view_white.webp" },
+      { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089541%3Fvariant%3D54228787364181", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8954-1.jpg?v=1782473252" },
     ],
   },
-  {
+{
     id: "argentina-away-kids",
     teamKey: "argentina",
     season: "2026",
@@ -1609,9 +1614,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890904&a=3013769&m=65912", inStock: true, sizes: ["11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_kb0626_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=f836f03d20de93b8f330c39b2c1f618da01a2895" },
+      { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365743&a=3013769&m=65906", inStock: true, sizes: ["11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_kb0626_2_apparel_photography_front_center_view_white.webp&feedId=89044&k=f836f03d20de93b8f330c39b2c1f618da01a2895" },
     ],
   },
-  {
+{
     id: "argentina-home-kids",
     teamKey: "argentina",
     season: "2026",
@@ -1622,9 +1628,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831955&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_ka8119_1_apparel_photography_front_view_white.webp&feedId=89032&k=d76759f9bfaddbacacf41c5f02513659cd88e430" },
+      { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301932811&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_ka8119_1_apparel_photography_front_view_white.webp&feedId=89044&k=d76759f9bfaddbacacf41c5f02513659cd88e430" },
+      { store: "PlanetFoot", price: 89.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000088070%3Fvariant%3D54010394378581", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8807-1.jpg?v=1779804027" },
     ],
   },
-  {
+{
     id: "barcelona-away-kids",
     teamKey: "barcelona",
     season: "2025/26",
@@ -1637,7 +1645,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 84.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45443804104&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii1674-505-field-purple-field-purple-metallic-gold-6a6a2762a5f3f-1.webp&feedId=89032&k=a83972c28a276baa4a95a80bd4bc87b346c155bd" },
     ],
   },
-  {
+{
     id: "barcelona-goalkeeper-kids",
     teamKey: "barcelona",
     season: "2025/26",
@@ -1650,7 +1658,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 89.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45263180656&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii3610-324.webp&feedId=89032&k=140791eb507c5bd4b3506ef0efd4908744904bd6" },
     ],
   },
-  {
+{
     id: "barcelona-home-kids",
     teamKey: "barcelona",
     season: "2025/26",
@@ -1663,7 +1671,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 129.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42969282893&a=3013769&m=65912", inStock: true, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj5216-456-phsfh001.webp&feedId=89032&k=ec98d4e4d639b1eb24f63bc0af3337acf8c5035b" },
     ],
   },
-  {
+{
     id: "barcelona-third-kids",
     teamKey: "barcelona",
     season: "2025/26",
@@ -1676,7 +1684,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 58.79, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43770970412&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm4122-855-phsfh001-ss25.webp&feedId=89032&k=81101ab40061a59846471176654953ead7eca001" },
     ],
   },
-  {
+{
     id: "bayern-away-kids",
     teamKey: "bayern",
     season: "2025/26",
@@ -1687,9 +1695,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41385744433&a=3013769&m=65912", inStock: true, sizes: ["9-10", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8524_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=c68ac8aee0b631d18f48adf3497905dc3ce7dc9c" },
+      { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301834732&a=3013769&m=65906", inStock: true, sizes: ["9-10", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8524_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=c68ac8aee0b631d18f48adf3497905dc3ce7dc9c" },
     ],
   },
-  {
+{
     id: "bayern-home-kids",
     teamKey: "bayern",
     season: "2025/26",
@@ -1700,9 +1709,12 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41666325429&a=3013769&m=65912", inStock: true, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8525_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=2be0bed85a6555727dc33cb2c4c5a1b84513665d" },
+      { store: "FootStoreFR", price: 44.16, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn8525-maillot-domicile-enfant-bayern-munich-2025-26-red", inStock: true, sizes: ["7-8"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn8525_3_apparel_on_model_standard_view_white.jpg" },
+      { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43324654331&a=3013769&m=65906", inStock: true, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8525_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=2be0bed85a6555727dc33cb2c4c5a1b84513665d" },
+      { store: "SportIsGoodFR", price: 45.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn8525-maillot-domicile-enfant-bayern-munich-2025-26-red", inStock: true, sizes: ["7-8"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn8525_3_apparel_on_model_standard_view_white.jpg" },
     ],
   },
-  {
+{
     id: "bayern-third-kids",
     teamKey: "bayern",
     season: "2025/26",
@@ -1713,9 +1725,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42331812898&a=3013769&m=65912", inStock: true, sizes: ["9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke6797_1_apparel_photography_front_view_white.webp&feedId=89032&k=ea88641cb6b713ee92c54d4847da9bf7e04edb7c" },
+      { store: "FootStoreFR", price: 45.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke6797-maillot-third-enfant-bayern-munich-2025-26-black-halivo", inStock: true, sizes: ["9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke6797_1_apparel_photography_front_view_white.webp" },
+      { store: "SportIsGoodES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844232&a=3013769&m=65906", inStock: true, sizes: ["9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke6797_1_apparel_photography_front_view_white.webp&feedId=89044&k=ea88641cb6b713ee92c54d4847da9bf7e04edb7c" },
+      { store: "SportIsGoodFR", price: 45.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke6797-maillot-third-enfant-bayern-munich-2025-26-black-halivo", inStock: true, sizes: ["9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke6797_1_apparel_photography_front_view_white.webp" },
+      { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-third-junior-2025-26-noir%3Fvariant%3D51494769099093", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-bayern-munich-25-26-junior-adidas-planetfoot1.webp?v=1759840239" },
     ],
   },
-  {
+{
     id: "brasil-home-kids",
     teamKey: "brasil",
     season: "2026",
@@ -1728,7 +1744,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 59.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081633&a=3013769&m=65912", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_io2231-724_01.webp&feedId=89032&k=6a5e17cb94416a8aa29e7de9fae10d3e1b140325" },
     ],
   },
-  {
+{
     id: "chelsea-away-kids",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1741,7 +1757,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 58.79, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41674758726&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj5284-031-phsfh001.webp&feedId=89032&k=3afede53a1c262f50054794edb1d2d52d3df08a2" },
     ],
   },
-  {
+{
     id: "chelsea-goalkeeper-kids",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1752,9 +1768,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 79.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42694572981&a=3013769&m=65912", inStock: true, sizes: ["10-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj5248-011-phsfh001.webp&feedId=89032&k=3ac511cb225ed8ed9d9d6bcf0c9042d99cb9fcc0" },
+      { store: "FootStoreFR", price: 79.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj5248-011-maillot-de-gardien-enfant-chelsea-2025-2026-noir-smoke-grey-blanc", inStock: true, sizes: ["10-12"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hj5248-011-phsfh001.webp" },
     ],
   },
-  {
+{
     id: "chelsea-home-kids",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1765,9 +1782,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 58.79, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44389415215&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj5285-496_1.webp&feedId=89032&k=b5283ddc5f4d46bcf89ccf777dc45701c2b9578d" },
+      { store: "FootStoreFR", price: 57.46, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj5285-496-maillot-domicile-enfant-chelsea-2025-26-rush-blue-white-speed-red-white", inStock: true, sizes: ["7-8", "8-10", "10-12"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj5285-496_1.webp" },
     ],
   },
-  {
+{
     id: "chelsea-third-kids",
     teamKey: "chelsea",
     season: "2025/26",
@@ -1778,9 +1796,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 58.79, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42441229555&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fm%2Fhm4123-011.webp&feedId=89032&k=a0604bb992def03aa8f2968de397064298d0ae92" },
+      { store: "FootStoreFR", price: 57.46, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm4123-011-maillot-third-enfant-chelsea-2025-26-black-field-silver-field-silver", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/h/m/hm4123-011.webp" },
     ],
   },
-  {
+{
     id: "colombia-home-kids",
     teamKey: "colombia",
     season: "2026",
@@ -1791,9 +1810,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43397425436&a=3013769&m=65912", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jz8797_0.webp&feedId=89032&k=823dac51aa58630c649059b37860c39b9a3d2c15" },
+      { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43398022730&a=3013769&m=65906", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jz8797_0.webp&feedId=89044&k=823dac51aa58630c649059b37860c39b9a3d2c15" },
     ],
   },
-  {
+{
     id: "croacia-home-kids",
     teamKey: "croacia",
     season: "2026",
@@ -1804,9 +1824,12 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 67.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44617973672&a=3013769&m=65912", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8704-100-white-69ef685db8975-1.webp&feedId=89032&k=07cb35e835273893c480080448407f6bf48f8704" },
+      { store: "FootStoreFR", price: 67.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8704-100-maillot-domicile-enfant-croatie-coupe-du-monde-2026-white", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8704-100-white-69ef685db8975-1.webp" },
+      { store: "SportIsGoodES", price: 67.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44618335329&a=3013769&m=65906", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8704-100-white-69ef685db8975-1.webp&feedId=89044&k=07cb35e835273893c480080448407f6bf48f8704" },
+      { store: "SportIsGoodFR", price: 67.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8704-100-maillot-domicile-enfant-croatie-coupe-du-monde-2026-white", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8704-100-white-69ef685db8975-1.webp" },
     ],
   },
-  {
+{
     id: "espana-away-kids",
     teamKey: "espana",
     season: "2026",
@@ -1819,7 +1842,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890777&a=3013769&m=65912", inStock: true, sizes: ["9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jz5728_1_apparel_photography_front_view_white.webp&feedId=89032&k=74e0077422be5bac36f0ef3ac80a537b906a8069" },
     ],
   },
-  {
+{
     id: "espana-home-kids",
     teamKey: "espana",
     season: "2026",
@@ -1830,9 +1853,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831910&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz5757_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=21ad4ffa814de2024c8c7483ef5187c4ebc1f304" },
+      { store: "FootStoreFR", price: 75.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz5757-maillot-domicile-enfant-espagne-coupe-du-monde-2026-vivid-red", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz5757_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301932736&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz5757_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=21ad4ffa814de2024c8c7483ef5187c4ebc1f304" },
+      { store: "SportIsGoodFR", price: 75.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz5757-maillot-domicile-enfant-espagne-coupe-du-monde-2026-vivid-red", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz5757_1_apparel_photography_front_center_view_white.webp" },
+      { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-espagne-domicile-junior-2026-rouge%3Fvariant%3D51806482104661", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-espagne-2026-rouge-junior-adidas-planetfoot1.webp?v=1762956843" },
     ],
   },
-  {
+{
     id: "francia-home-kids",
     teamKey: "francia",
     season: "2026",
@@ -1843,9 +1870,12 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 59.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300834&a=3013769&m=65912", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5129-480_01.webp&feedId=89032&k=fc330f2aab6dd6028de1049780dff41deedbb1e4" },
+      { store: "FootStoreFR", price: 59.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5129-480-maillot-domicile-enfant-france-coupe-du-monde-2026-royal-metallic-copper", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5129-480_01.webp" },
+      { store: "SportIsGoodES", price: 63.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015731&a=3013769&m=65906", inStock: true, sizes: ["8-9", "9-10", "11-12", "12-13", "13-14", "14-15", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf1711_2_apparel_photography_front_center_view_white.webp&feedId=89044&k=1e4b9d113d8d0116ce058332313d2d8d8086ae85" },
+      { store: "SportIsGoodFR", price: 55.18, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy1227-maillot-domicile-enfant-france-2025-26-selubl-white", inStock: true, sizes: ["8-9", "9-10", "11-12", "12-13", "13-14", "14-15", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy1227_2_apparel_photography_front_center_view_white.webp" },
     ],
   },
-  {
+{
     id: "inglaterra-away-kids",
     teamKey: "inglaterra",
     season: "2026",
@@ -1858,7 +1888,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 67.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926328&a=3013769&m=65912", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5197-624_01.webp&feedId=89032&k=93e21f4ddcbc8cee58456cbcf4d229ba2f69775c" },
     ],
   },
-  {
+{
     id: "inglaterra-home-kids",
     teamKey: "inglaterra",
     season: "2026",
@@ -1869,9 +1899,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 129.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087822558&a=3013769&m=65912", inStock: true, sizes: ["8-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9191-405_hyper-royal-blanc-blanc_1.webp&feedId=89032&k=be1e487e5e0a2e2d0bb234ac8b7a98a4a5d25615" },
+      { store: "FootStoreFR", price: 129.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9191-405-maillot-domicile-authentique-fille-angleterre-2025-hyper-royal-blanc-blanc", inStock: true, sizes: ["8-10"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz9191-405_hyper-royal-blanc-blanc_1.webp" },
     ],
   },
-  {
+{
     id: "italia-away-kids",
     teamKey: "italia",
     season: "2026",
@@ -1882,9 +1913,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 44.14, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301921942&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jy5681_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=5108ae04b5148d140918999465672643f2ba95c4" },
+      { store: "SportIsGoodES", price: 43.88, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44302792407&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jy5681_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=5108ae04b5148d140918999465672643f2ba95c4" },
+      { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000088490%3Fvariant%3D54053031084373", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8849-1.jpg?v=1780401353" },
     ],
   },
-  {
+{
     id: "italia-goalkeeper-kids",
     teamKey: "italia",
     season: "2026",
@@ -1895,9 +1928,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 54.97, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087832452&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jy7653_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=adca18c057d5f686407e23209b8116851bdf6806" },
+      { store: "FootStoreFR", price: 53.58, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7653-maillot-de-gardien-domicile-manches-longues-enfant-italie-coupe-du-monde-2026-tecobu", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_jy7653_1_apparel_photography_front_center_view_white.webp" },
     ],
   },
-  {
+{
     id: "italia-home-kids",
     teamKey: "italia",
     season: "2026",
@@ -1908,9 +1942,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 44.14, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831509&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=4f81c4e0da634c42a2bf232640d8bbb91f77c483" },
+      { store: "FootStoreFR", price: 42.96, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7585-maillot-domicile-enfant-italie-coupe-du-monde-2026-boblue", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp" },
+      { store: "SportIsGoodES", price: 43.88, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301927916&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=4f81c4e0da634c42a2bf232640d8bbb91f77c483" },
+      { store: "SportIsGoodFR", price: 44.26, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy7585-maillot-domicile-enfant-italie-coupe-du-monde-2026-boblue", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp" },
+      { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-italie-domicile-junior-2026-bleu%3Fvariant%3D51868458385749", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-italie-2026-bleu-junior-adidas-planetfoot1.webp?v=1763248956" },
     ],
   },
-  {
+{
     id: "juventus-away-kids",
     teamKey: "juventus",
     season: "2025/26",
@@ -1923,7 +1961,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 48.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41701521289&a=3013769&m=65912", inStock: true, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5236_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=05a309be7d37c85bf708297338a9a6eab15c0de3" },
     ],
   },
-  {
+{
     id: "juventus-goalkeeper-kids",
     teamKey: "juventus",
     season: "2025/26",
@@ -1934,9 +1972,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42530011697&a=3013769&m=65912", inStock: true, sizes: ["11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5217_gris_1.webp&feedId=89032&k=7924e9be31da6612809e203a5ad02e0ac9eef91f" },
+      { store: "FootStoreFR", price: 59.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5217-maillot-de-gardien-domicile-enfant-juventus-turin-2025-26-gris", inStock: true, sizes: ["11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5217_gris_1.webp" },
+      { store: "PlanetFoot", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-juventus-turin-domicile-gardien-junior-2025-26-noir%3Fvariant%3D50981178016085", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-juventus-turin-25-26-enfants-adidas-planetfoot1.jpg?v=1755180203" },
     ],
   },
-  {
+{
     id: "juventus-home-kids",
     teamKey: "juventus",
     season: "2025/26",
@@ -1947,9 +1987,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41446542656&a=3013769&m=65912", inStock: true, sizes: ["11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5237_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=cd7958f768f47139f841ff94bc936c801dc0c0aa" },
+      { store: "SportIsGoodES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845360&a=3013769&m=65906", inStock: true, sizes: ["11-12", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5237_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=cd7958f768f47139f841ff94bc936c801dc0c0aa" },
+      { store: "SportIsGoodFR", price: 45.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn5237-maillot-domicile-enfant-juventus-turin-2025-26-white-black", inStock: true, sizes: ["11-12", "15-16"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn5237_1_apparel_photography_front_center_view_white.jpg" },
     ],
   },
-  {
+{
     id: "juventus-third-kids",
     teamKey: "juventus",
     season: "2025/26",
@@ -1960,9 +2002,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 47.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42418817963&a=3013769&m=65912", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kc3497_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=109f8c7f20c007b59adf6fecb3d180571865c775" },
+      { store: "FootStoreFR", price: 46.06, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc3497-maillot-third-enfant-juventus-turin-2025-26-black-ecrtin", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kc3497_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodES", price: 47.07, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301840743&a=3013769&m=65906", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kc3497_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=109f8c7f20c007b59adf6fecb3d180571865c775" },
+      { store: "SportIsGoodFR", price: 47.44, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc3497-maillot-third-enfant-juventus-turin-2025-26-black-ecrtin", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kc3497_1_apparel_photography_front_center_view_white.webp" },
+      { store: "PlanetFoot", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-juventus-turin-third-junior-2025-26-noir%3Fvariant%3D51534371291477", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-juventus-25-26-junior-adidas-planetfoot1.webp?v=1759851355" },
     ],
   },
-  {
+{
     id: "liverpool-away-kids",
     teamKey: "liverpool",
     season: "2025/26",
@@ -1973,9 +2019,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42095532018&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6453_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=2825241be604f4930431c0af3b4474cf2645f4f1" },
+      { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844177&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6453_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=2825241be604f4930431c0af3b4474cf2645f4f1" },
     ],
   },
-  {
+{
     id: "liverpool-goalkeeper-kids",
     teamKey: "liverpool",
     season: "2025/26",
@@ -1986,9 +2033,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 64.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42530174568&a=3013769&m=65912", inStock: true, sizes: ["11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6475_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=fdaf99410a7065d812c878e71d8d25e1701d93aa" },
+      { store: "FootStoreFR", price: 48.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4089-maillot-de-gardien-de-but-enfant-liverpool-fc-2025-26-glomin", inStock: true, sizes: ["13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz4089_1_apparel_photography_front_center_view_white.webp" },
+      { store: "PlanetFoot", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-liverpool-f-c-third-gardien-junior-2025-26-noir%3Fvariant%3D51325539680597", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-liverpool-25-26-third-junior-adidas-planetfoot1.webp?v=1758728944" },
     ],
   },
-  {
+{
     id: "liverpool-home-kids",
     teamKey: "liverpool",
     season: "2025/26",
@@ -1999,9 +2048,12 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42095532062&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6436_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=938967b9662ed4e7e3b3b6e6b133a53d8efe7e16" },
+      { store: "FootStoreFR", price: 44.16, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6436-maillot-domicile-enfant-liverpool-fc-2025-26-strred", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6436_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845365&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6436_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=938967b9662ed4e7e3b3b6e6b133a53d8efe7e16" },
+      { store: "SportIsGoodFR", price: 45.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6436-maillot-domicile-enfant-liverpool-fc-2025-26-strred", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6436_1_apparel_photography_front_center_view_white.webp" },
     ],
   },
-  {
+{
     id: "liverpool-third-kids",
     teamKey: "liverpool",
     season: "2025/26",
@@ -2012,9 +2064,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42375647640&a=3013769&m=65912", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6468_seagre_1.webp&feedId=89032&k=d7987dbd7214a0dc71d3fe68150de820bc78269b" },
+      { store: "FootStoreFR", price: 44.16, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6468-maillot-third-enfant-liverpool-fc-2025-26-seagre", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6468_seagre_1.webp" },
+      { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844238&a=3013769&m=65906", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6468_seagre_1.webp&feedId=89044&k=d7987dbd7214a0dc71d3fe68150de820bc78269b" },
+      { store: "SportIsGoodFR", price: 45.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6468-maillot-third-enfant-liverpool-fc-2025-26-seagre", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6468_seagre_1.webp" },
+      { store: "PlanetFoot", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-liverpool-f-c-third-junior-2025-26-vert%3Fvariant%3D51385406554453", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-liverpool-fc-25-26-enfants-adulte-adidas-planetfoot1.webp?v=1757425405" },
     ],
   },
-  {
+{
     id: "manutd-away-kids",
     teamKey: "manutd",
     season: "2025/26",
@@ -2025,9 +2081,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 45.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41949206684&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3030_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=389e90b9bb897b28fed260cba6a3f9fb3ff053d3" },
+      { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836138&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3030_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=389e90b9bb897b28fed260cba6a3f9fb3ff053d3" },
     ],
   },
-  {
+{
     id: "manutd-goalkeeper-kids",
     teamKey: "manutd",
     season: "2025/26",
@@ -2038,9 +2095,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44790774888&a=3013769&m=65912", inStock: true, sizes: ["11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3054_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=3766aff07f8cd020669907bcdc4a65b5225cb555" },
+      { store: "FootStoreFR", price: 59.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3054-maillot-de-gardien-third-enfant-manchester-united-2025-26-sescgr", inStock: true, sizes: ["11-12", "13-14"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jp3054_1_apparel_photography_front_center_view_white.jpg" },
+      { store: "PlanetFoot", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-third-gardien-junior-2025-26-vert%3Fvariant%3D51385052725589", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-third-manchester-united-25-26-enfants-adidas-planetfoot1.webp?v=1757767447" },
     ],
   },
-  {
+{
     id: "manutd-home-kids",
     teamKey: "manutd",
     season: "2025/26",
@@ -2051,9 +2110,12 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 47.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41701521167&a=3013769&m=65912", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fp%2Fjp3013.webp&feedId=89032&k=d6bfe0ae94229cf82a0df7560a2c5400edb26f53" },
+      { store: "FootStoreFR", price: 46.06, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3013-maillot-domicile-enfant-manchester-united-2025-26-mufred", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/j/p/jp3013.webp" },
+      { store: "SportIsGoodES", price: 47.07, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836065&a=3013769&m=65906", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fp%2Fjp3013.webp&feedId=89044&k=d6bfe0ae94229cf82a0df7560a2c5400edb26f53" },
+      { store: "SportIsGoodFR", price: 47.44, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp3013-maillot-domicile-enfant-manchester-united-2025-26-mufred", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/j/p/jp3013.webp" },
     ],
   },
-  {
+{
     id: "manutd-third-kids",
     teamKey: "manutd",
     season: "2025/26",
@@ -2064,9 +2126,13 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 40.77, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42529915215&a=3013769&m=65912", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kd4227_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=fe807cee795f6d8cd3e6c3ecc14564858a6e1243" },
+      { store: "FootStoreFR", price: 39.7, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkd4227-maillot-third-enfant-manchester-united-2025-26-black", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kd4227_3_apparel_on_model_standard_view_white.webp" },
+      { store: "SportIsGoodES", price: 40.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844242&a=3013769&m=65906", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kd4227_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=fe807cee795f6d8cd3e6c3ecc14564858a6e1243" },
+      { store: "SportIsGoodFR", price: 40.91, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd4227-maillot-third-enfant-manchester-united-2025-26-black", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kd4227_3_apparel_on_model_standard_view_white.webp" },
+      { store: "PlanetFoot", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-third-junior-2025-26-noir%3Fvariant%3D51325528539477", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-manchester-united-25-26-junior-adidas-planetfoot1.webp?v=1756542906" },
     ],
   },
-  {
+{
     id: "portugal-away-kids",
     teamKey: "portugal",
     season: "2026",
@@ -2077,9 +2143,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 60.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44284203570&a=3013769&m=65912", inStock: true, sizes: ["5-6", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-783291-02-white-green-lagoon-69babfb8838ea-1.webp&feedId=89032&k=d8fcaab7090cca5a855a470216e09b7f0ced67e7" },
+      { store: "SportIsGoodES", price: 60.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44390069249&a=3013769&m=65906", inStock: true, sizes: ["5-6", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-783291-02-white-green-lagoon-69babfb8838ea-1.webp&feedId=89044&k=d8fcaab7090cca5a855a470216e09b7f0ced67e7" },
     ],
   },
-  {
+{
     id: "psg-away-kids",
     teamKey: "psg",
     season: "2025/26",
@@ -2092,7 +2159,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 57.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=38335048894&a=3013769&m=65912", inStock: true, sizes: ["6-7", "8-9", "10-11", "12-13", "14-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fn9126-101-phsfh001.webp&feedId=89032&k=7473c0539ae11e093f6ee9aa48b6b642aaff3579" },
     ],
   },
-  {
+{
     id: "psg-goalkeeper-kids",
     teamKey: "psg",
     season: "2025/26",
@@ -2103,9 +2170,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 89.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45081945842&a=3013769&m=65912", inStock: true, sizes: ["8-10", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii3616-011_01.webp&feedId=89032&k=931a4f699ee483abfcc4813b8ebedd895435f29b" },
+      { store: "FootStoreFR", price: 89.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3616-011-maillot-de-gardien-manches-longues-enfant-psg-2026-27-black-white", inStock: true, sizes: ["8-10", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ii3616-011_01.webp" },
     ],
   },
-  {
+{
     id: "psg-home-kids",
     teamKey: "psg",
     season: "2025/26",
@@ -2116,9 +2184,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 57.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41624817789&a=3013769&m=65912", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj5293-411_01.webp&feedId=89032&k=629e66305be0034e20ea1191cd3aa8ff623552d2" },
+      { store: "FootStoreFR", price: 55.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj5293-411-maillot-domicile-enfant-psg-2025-26-midnight-navy-midnight-navy-white", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_nike_hj5293-411_01.jpg" },
     ],
   },
-  {
+{
     id: "psg-third-kids",
     teamKey: "psg",
     season: "2025/26",
@@ -2129,9 +2198,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 57.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42246665414&a=3013769&m=65912", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_08_nike_hm4126-680-phsfh001.webp&feedId=89032&k=27bfddab8e28224f6a8cfc1be47042e0842586ba" },
+      { store: "FootStoreFR", price: 55.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm4126-680-maillot-third-enfant-psg-2025-26-global-red-sport-red-hyper-royal", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_08_nike_hm4126-680-phsfh001.jpg" },
     ],
   },
-  {
+{
     id: "realmadrid-away-kids",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -2142,9 +2212,10 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 47.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41718361168&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3947_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=1c3de2d62eee59c99b535e38a10d7d6afd4ee849" },
+      { store: "SportIsGoodES", price: 47.07, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845400&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3947_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=1c3de2d62eee59c99b535e38a10d7d6afd4ee849" },
     ],
   },
-  {
+{
     id: "realmadrid-goalkeeper-kids",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -2155,9 +2226,11 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45184773283&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kc3986-black-6a444bfa9e013-6.webp&feedId=89032&k=311c4af21071a4a961ce3ab7465c19383785a228" },
+      { store: "FootStoreFR", price: 62.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4176-maillot-de-gardien-domicile-enfant-real-madrid-2025-26-blubrs-rayblu", inStock: true, sizes: ["11-12"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp4176_0.webp" },
+      { store: "PlanetFoot", price: 64.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-domicile-gardien-junior-2025-26-bleu%3Fvariant%3D50923096146261", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-domicile-real-madrid-2025-26-adidas-junior1.jpg?v=1754908482" },
     ],
   },
-  {
+{
     id: "realmadrid-home-kids",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -2168,9 +2241,12 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 50.22, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41646236223&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_adidas_jn8887_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=71cf5f291f42f910f7ba404707343dcbed591dbc" },
+      { store: "FootStoreFR", price: 48.84, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn8887-maillot-domicile-enfant-real-madrid-2025-26-white", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_adidas_jn8887_3_apparel_on_model_standard_view_white.jpg" },
+      { store: "SportIsGoodES", price: 43.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43690621731&a=3013769&m=65906", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_10_adidas_kd4339_1_apparel_photography_front_view_white.webp&feedId=89044&k=601325266f3232753331f6382b38b5061387f0f6" },
+      { store: "SportIsGoodFR", price: 43.74, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd4339-maillot-domicile-enfant-real-madrid-white", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_10_adidas_kd4339_1_apparel_photography_front_view_white.webp" },
     ],
   },
-  {
+{
     id: "realmadrid-third-kids",
     teamKey: "realmadrid",
     season: "2025/26",
@@ -2181,9 +2257,93 @@ export const products: Product[] = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 47.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42270681136&a=3013769&m=65912", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3930_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=4e92b81d4c887b4e2ee5cb563e6042ec74ef5cf5" },
+      { store: "FootStoreFR", price: 46.06, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3930-maillot-third-enfant-real-madrid-2025-26-blubir", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3930_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodES", price: 47.07, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845428&a=3013769&m=65906", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3930_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=4e92b81d4c887b4e2ee5cb563e6042ec74ef5cf5" },
+      { store: "SportIsGoodFR", price: 47.44, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp3930-maillot-third-enfant-real-madrid-2025-26-blubir", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3930_1_apparel_photography_front_center_view_white.webp" },
+      { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-third-junior-2025-26-bleu%3Fvariant%3D51325515858261", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-real-madrid-25-26-junior-adidas-planetfoot1.webp?v=1756477772" },
     ],
   },
-
+{
+    id: "bayern-goalkeeper-kids",
+    teamKey: "bayern",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    ageGroup: "kids",
+    offers: [
+      { store: "FootStoreFR", price: 59.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3694-maillot-de-gardien-third-enfant-bayern-munich-2025-26-purrub", inStock: true, sizes: ["13-14"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jp3694_1_apparel_photography_front_center_view_white.jpg" },
+      { store: "PlanetFoot", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-third-gardien-junior-2025-26-rouge%3Fvariant%3D51325543547221", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-gardien-bayern-munich-25-26-junior-adidas-planetfoot3.webp?v=1756558034" },
+    ],
+  },
+{
+    id: "espana-goalkeeper-kids",
+    teamKey: "espana",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    ageGroup: "kids",
+    offers: [
+      { store: "FootStoreFR", price: 47.41, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb8372-maillot-domicile-gardien-enfant-espagne-coupe-du-monde-2026-boaqua", inStock: true, sizes: ["7-8", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_kb8372_0.webp" },
+      { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-espagne-domicile-gardien-junior-2026-bleu%3Fvariant%3D51868458615125", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-espagne-2026-domicile-junior-adidas-planetfoot1.webp?v=1763313675" },
+    ],
+  },
+{
+    id: "paisesbajos-home-kids",
+    teamKey: "paisesbajos",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#FF6600",
+    colorHexSecondary: "#1B3A6B",
+    jerseyPattern: "solid",
+    ageGroup: "kids",
+    offers: [
+      { store: "FootStoreFR", price: 59.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5165-809-maillot-domicile-enfant-pays-bas-coupe-du-monde-2026-hyper-crimson-black", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5165-809_01.webp" },
+    ],
+  },
+{
+    id: "francia-third-kids",
+    teamKey: "francia",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#1A1A1A",
+    colorHexSecondary: "#0055A4",
+    jerseyPattern: "solid",
+    ageGroup: "kids",
+    offers: [
+      { store: "SportIsGoodES", price: 46.78, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45443706479&a=3013769&m=65906", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_01_adidas_kg7528_1_apparel_photography_front_view_white.webp&feedId=89044&k=65255b2fe85b3a03d45d810c034c7c98cdc1843a" },
+      { store: "SportIsGoodFR", price: 45.77, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkg7528-maillot-third-enfant-france-2026-27-bliss-pink", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_01_adidas_kg7528_1_apparel_photography_front_view_white.webp" },
+    ],
+  },
+  {
+    id: "alemania-goalkeeper-kids",
+    teamKey: "alemania",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#1B1B1B",
+    colorHexSecondary: "#39FF14",
+    jerseyPattern: "solid",
+    ageGroup: "kids",
+    offers: [
+      { store: "PlanetFoot", price: 44.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-allemagne-125-ans-gardien-junior-2025-26-bleu%3Fvariant%3D51159079027029", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-anniversaire-allemagne-125-ans-enfant-adidas-planetfoot3.avif?v=1755695084" },
+    ],
+  },
+  {
+    id: "portugal-home-kids",
+    teamKey: "portugal",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#A5001E",
+    colorHexSecondary: "#046A38",
+    jerseyPattern: "solid",
+    ageGroup: "kids",
+    offers: [
+      { store: "PlanetFoot", price: 79.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-portugal-domicile-2026-junior-puma%3Fvariant%3D52090727661909", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-portugal-domicile-2026-junior-puma-planetfoot2.webp?v=1767451832" },
+    ],
+  },
 ];
 
 export function offerTotal(offer: Offer): number {
