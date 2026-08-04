@@ -24,7 +24,64 @@ export type TeamKey =
   | "riverplate"
   | "chelsea"
   | "independiente"
-  | "como";
+  | "como"
+  | "arsenal"
+  | "astonvilla"
+  | "bournemouth"
+  | "brentford"
+  | "brighton"
+  | "crystalpalace"
+  | "everton"
+  | "fulham"
+  | "leeds"
+  | "mancity"
+  | "newcastle"
+  | "nottinghamforest"
+  | "sunderland"
+  | "tottenham"
+  | "westham"
+  | "wolves"
+  | "atleticomadrid"
+  | "athleticbilbao"
+  | "realsociedad"
+  | "realbetis"
+  | "villarreal"
+  | "valencia"
+  | "sevilla"
+  | "celtavigo"
+  | "girona"
+  | "osasuna"
+  | "rayovallecano"
+  | "getafe"
+  | "mallorca"
+  | "alaves"
+  | "espanyol"
+  | "levante"
+  | "elche"
+  | "realoviedo"
+  | "intermilan"
+  | "acmilan"
+  | "napoli"
+  | "roma"
+  | "lazio"
+  | "atalanta"
+  | "fiorentina"
+  | "bologna"
+  | "torino"
+  | "udinese"
+  | "dortmund"
+  | "rbleipzig"
+  | "leverkusen"
+  | "frankfurt"
+  | "gladbach"
+  | "stuttgart"
+  | "wolfsburg"
+  | "marseille"
+  | "monaco"
+  | "lyon"
+  | "lille"
+  | "nice"
+  | "rennes";
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper";
 export type CategoryKey = "national" | "club";
@@ -89,6 +146,63 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
   chelsea: "club",
   independiente: "club",
   como: "club",
+  arsenal: "club",
+  astonvilla: "club",
+  bournemouth: "club",
+  brentford: "club",
+  brighton: "club",
+  crystalpalace: "club",
+  everton: "club",
+  fulham: "club",
+  leeds: "club",
+  mancity: "club",
+  newcastle: "club",
+  nottinghamforest: "club",
+  sunderland: "club",
+  tottenham: "club",
+  westham: "club",
+  wolves: "club",
+  atleticomadrid: "club",
+  athleticbilbao: "club",
+  realsociedad: "club",
+  realbetis: "club",
+  villarreal: "club",
+  valencia: "club",
+  sevilla: "club",
+  celtavigo: "club",
+  girona: "club",
+  osasuna: "club",
+  rayovallecano: "club",
+  getafe: "club",
+  mallorca: "club",
+  alaves: "club",
+  espanyol: "club",
+  levante: "club",
+  elche: "club",
+  realoviedo: "club",
+  intermilan: "club",
+  acmilan: "club",
+  napoli: "club",
+  roma: "club",
+  lazio: "club",
+  atalanta: "club",
+  fiorentina: "club",
+  bologna: "club",
+  torino: "club",
+  udinese: "club",
+  dortmund: "club",
+  rbleipzig: "club",
+  leverkusen: "club",
+  frankfurt: "club",
+  gladbach: "club",
+  stuttgart: "club",
+  wolfsburg: "club",
+  marseille: "club",
+  monaco: "club",
+  lyon: "club",
+  lille: "club",
+  nice: "club",
+  rennes: "club",
 };
 
 export const teamNames: Record<TeamKey, Record<Locale, string>> = {
@@ -116,6 +230,63 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   chelsea: { es: "Chelsea", en: "Chelsea", pt: "Chelsea" },
   independiente: { es: "Independiente", en: "Independiente", pt: "Independiente" },
   como: { es: "Como 1907", en: "Como 1907", pt: "Como 1907" },
+  arsenal: { es: "Arsenal", en: "Arsenal", pt: "Arsenal" },
+  astonvilla: { es: "Aston Villa", en: "Aston Villa", pt: "Aston Villa" },
+  bournemouth: { es: "Bournemouth", en: "Bournemouth", pt: "Bournemouth" },
+  brentford: { es: "Brentford", en: "Brentford", pt: "Brentford" },
+  brighton: { es: "Brighton", en: "Brighton", pt: "Brighton" },
+  crystalpalace: { es: "Crystal Palace", en: "Crystal Palace", pt: "Crystal Palace" },
+  everton: { es: "Everton", en: "Everton", pt: "Everton" },
+  fulham: { es: "Fulham", en: "Fulham", pt: "Fulham" },
+  leeds: { es: "Leeds United", en: "Leeds United", pt: "Leeds United" },
+  mancity: { es: "Manchester City", en: "Manchester City", pt: "Manchester City" },
+  newcastle: { es: "Newcastle United", en: "Newcastle United", pt: "Newcastle United" },
+  nottinghamforest: { es: "Nottingham Forest", en: "Nottingham Forest", pt: "Nottingham Forest" },
+  sunderland: { es: "Sunderland", en: "Sunderland", pt: "Sunderland" },
+  tottenham: { es: "Tottenham Hotspur", en: "Tottenham Hotspur", pt: "Tottenham Hotspur" },
+  westham: { es: "West Ham United", en: "West Ham United", pt: "West Ham United" },
+  wolves: { es: "Wolverhampton Wanderers", en: "Wolverhampton Wanderers", pt: "Wolverhampton Wanderers" },
+  atleticomadrid: { es: "Atlético de Madrid", en: "Atlético Madrid", pt: "Atlético de Madrid" },
+  athleticbilbao: { es: "Athletic Club", en: "Athletic Bilbao", pt: "Athletic Bilbao" },
+  realsociedad: { es: "Real Sociedad", en: "Real Sociedad", pt: "Real Sociedad" },
+  realbetis: { es: "Real Betis", en: "Real Betis", pt: "Real Betis" },
+  villarreal: { es: "Villarreal", en: "Villarreal", pt: "Villarreal" },
+  valencia: { es: "Valencia CF", en: "Valencia CF", pt: "Valencia CF" },
+  sevilla: { es: "Sevilla FC", en: "Sevilla FC", pt: "Sevilla FC" },
+  celtavigo: { es: "Celta de Vigo", en: "Celta Vigo", pt: "Celta de Vigo" },
+  girona: { es: "Girona FC", en: "Girona FC", pt: "Girona FC" },
+  osasuna: { es: "Osasuna", en: "Osasuna", pt: "Osasuna" },
+  rayovallecano: { es: "Rayo Vallecano", en: "Rayo Vallecano", pt: "Rayo Vallecano" },
+  getafe: { es: "Getafe CF", en: "Getafe CF", pt: "Getafe CF" },
+  mallorca: { es: "RCD Mallorca", en: "RCD Mallorca", pt: "RCD Mallorca" },
+  alaves: { es: "Deportivo Alavés", en: "Deportivo Alavés", pt: "Deportivo Alavés" },
+  espanyol: { es: "RCD Espanyol", en: "RCD Espanyol", pt: "RCD Espanyol" },
+  levante: { es: "Levante UD", en: "Levante UD", pt: "Levante UD" },
+  elche: { es: "Elche CF", en: "Elche CF", pt: "Elche CF" },
+  realoviedo: { es: "Real Oviedo", en: "Real Oviedo", pt: "Real Oviedo" },
+  intermilan: { es: "Inter de Milán", en: "Inter Milan", pt: "Inter de Milão" },
+  acmilan: { es: "AC Milan", en: "AC Milan", pt: "AC Milan" },
+  napoli: { es: "Napoli", en: "Napoli", pt: "Nápoles" },
+  roma: { es: "AS Roma", en: "AS Roma", pt: "AS Roma" },
+  lazio: { es: "Lazio", en: "Lazio", pt: "Lazio" },
+  atalanta: { es: "Atalanta", en: "Atalanta", pt: "Atalanta" },
+  fiorentina: { es: "Fiorentina", en: "Fiorentina", pt: "Fiorentina" },
+  bologna: { es: "Bologna", en: "Bologna", pt: "Bolonha" },
+  torino: { es: "Torino", en: "Torino", pt: "Torino" },
+  udinese: { es: "Udinese", en: "Udinese", pt: "Udinese" },
+  dortmund: { es: "Borussia Dortmund", en: "Borussia Dortmund", pt: "Borussia Dortmund" },
+  rbleipzig: { es: "RB Leipzig", en: "RB Leipzig", pt: "RB Leipzig" },
+  leverkusen: { es: "Bayer Leverkusen", en: "Bayer Leverkusen", pt: "Bayer Leverkusen" },
+  frankfurt: { es: "Eintracht Frankfurt", en: "Eintracht Frankfurt", pt: "Eintracht Frankfurt" },
+  gladbach: { es: "Borussia Mönchengladbach", en: "Borussia Mönchengladbach", pt: "Borussia Mönchengladbach" },
+  stuttgart: { es: "VfB Stuttgart", en: "VfB Stuttgart", pt: "VfB Stuttgart" },
+  wolfsburg: { es: "VfL Wolfsburg", en: "VfL Wolfsburg", pt: "VfL Wolfsburg" },
+  marseille: { es: "Olympique de Marsella", en: "Olympique de Marseille", pt: "Olympique de Marselha" },
+  monaco: { es: "AS Mónaco", en: "AS Monaco", pt: "AS Mônaco" },
+  lyon: { es: "Olympique de Lyon", en: "Olympique Lyonnais", pt: "Olympique de Lyon" },
+  lille: { es: "LOSC Lille", en: "LOSC Lille", pt: "LOSC Lille" },
+  nice: { es: "OGC Nice", en: "OGC Nice", pt: "OGC Nice" },
+  rennes: { es: "Stade Rennais", en: "Stade Rennes", pt: "Stade Rennes" },
 };
 
 export const teamFlags: Record<TeamKey, string> = {
@@ -143,6 +314,63 @@ export const teamFlags: Record<TeamKey, string> = {
   chelsea: "🔵",
   independiente: "🔴",
   como: "🔵",
+  arsenal: "🔴",
+  astonvilla: "🔵",
+  bournemouth: "🔴",
+  brentford: "🔴",
+  brighton: "🔵",
+  crystalpalace: "🔵",
+  everton: "🔵",
+  fulham: "⚪",
+  leeds: "⚪",
+  mancity: "🔵",
+  newcastle: "⚫",
+  nottinghamforest: "🔴",
+  sunderland: "🔴",
+  tottenham: "⚪",
+  westham: "🟤",
+  wolves: "🟡",
+  atleticomadrid: "🔴",
+  athleticbilbao: "🔴",
+  realsociedad: "🔵",
+  realbetis: "🟢",
+  villarreal: "🟡",
+  valencia: "⚪",
+  sevilla: "⚪",
+  celtavigo: "🔵",
+  girona: "🔴",
+  osasuna: "🔴",
+  rayovallecano: "⚪",
+  getafe: "🔵",
+  mallorca: "🔴",
+  alaves: "🔵",
+  espanyol: "🔵",
+  levante: "🔵",
+  elche: "🟢",
+  realoviedo: "🔵",
+  intermilan: "🔵",
+  acmilan: "🔴",
+  napoli: "🔵",
+  roma: "🟤",
+  lazio: "🔵",
+  atalanta: "🔵",
+  fiorentina: "🟣",
+  bologna: "🔴",
+  torino: "🟤",
+  udinese: "⚫",
+  dortmund: "🟡",
+  rbleipzig: "⚪",
+  leverkusen: "🔴",
+  frankfurt: "🔴",
+  gladbach: "⚫",
+  stuttgart: "🔴",
+  wolfsburg: "🟢",
+  marseille: "🔵",
+  monaco: "🔴",
+  lyon: "🔴",
+  lille: "🔴",
+  nice: "🔴",
+  rennes: "🔴",
 };
 
 // Colores icónicos por equipo, usados en los accesos rápidos y avatares.
@@ -171,6 +399,63 @@ export const teamColors: Record<TeamKey, [string, string]> = {
   chelsea: ["#034694", "#FFFFFF"],
   independiente: ["#D2001C", "#FFFFFF"],
   como: ["#0F3460", "#FFFFFF"],
+  arsenal: ["#EF0107", "#FFFFFF"],
+  astonvilla: ["#95BFE5", "#670E36"],
+  bournemouth: ["#DA291C", "#000000"],
+  brentford: ["#E30613", "#FFFFFF"],
+  brighton: ["#0057B8", "#FFFFFF"],
+  crystalpalace: ["#1B458F", "#C4122E"],
+  everton: ["#003399", "#FFFFFF"],
+  fulham: ["#FFFFFF", "#000000"],
+  leeds: ["#FFFFFF", "#1D428A"],
+  mancity: ["#6CABDD", "#1C2C5B"],
+  newcastle: ["#241F20", "#FFFFFF"],
+  nottinghamforest: ["#DD0000", "#FFFFFF"],
+  sunderland: ["#EB172B", "#FFFFFF"],
+  tottenham: ["#FFFFFF", "#132257"],
+  westham: ["#7A263A", "#1BB1E7"],
+  wolves: ["#FDB913", "#231F20"],
+  atleticomadrid: ["#CE3524", "#FFFFFF"],
+  athleticbilbao: ["#EE2523", "#FFFFFF"],
+  realsociedad: ["#0067B1", "#FFFFFF"],
+  realbetis: ["#00954C", "#FFFFFF"],
+  villarreal: ["#FFE667", "#005187"],
+  valencia: ["#FFFFFF", "#EE3524"],
+  sevilla: ["#FFFFFF", "#D2001C"],
+  celtavigo: ["#8AC3EE", "#FFFFFF"],
+  girona: ["#CB1120", "#FFFFFF"],
+  osasuna: ["#D2001C", "#001A4B"],
+  rayovallecano: ["#FFFFFF", "#E4022D"],
+  getafe: ["#005CA9", "#FFFFFF"],
+  mallorca: ["#CB0526", "#000000"],
+  alaves: ["#0F4DA1", "#FFFFFF"],
+  espanyol: ["#0A3F91", "#FFFFFF"],
+  levante: ["#0044A0", "#B4122A"],
+  elche: ["#00A650", "#FFFFFF"],
+  realoviedo: ["#0B4EA2", "#FFFFFF"],
+  intermilan: ["#010E80", "#000000"],
+  acmilan: ["#FB090B", "#000000"],
+  napoli: ["#12A0D7", "#FFFFFF"],
+  roma: ["#8E1F2F", "#F0BC42"],
+  lazio: ["#87D8F7", "#FFFFFF"],
+  atalanta: ["#1E71B8", "#000000"],
+  fiorentina: ["#642F8E", "#FFFFFF"],
+  bologna: ["#A61B22", "#1A2F42"],
+  torino: ["#881D1E", "#FFFFFF"],
+  udinese: ["#000000", "#FFFFFF"],
+  dortmund: ["#FDE100", "#000000"],
+  rbleipzig: ["#DD0741", "#FFFFFF"],
+  leverkusen: ["#E32221", "#000000"],
+  frankfurt: ["#E1000F", "#000000"],
+  gladbach: ["#000000", "#FFFFFF"],
+  stuttgart: ["#E32219", "#FFFFFF"],
+  wolfsburg: ["#65B32E", "#FFFFFF"],
+  marseille: ["#2FAEE0", "#FFFFFF"],
+  monaco: ["#E51B22", "#FFFFFF"],
+  lyon: ["#DA1D27", "#00338D"],
+  lille: ["#E0122A", "#004A94"],
+  nice: ["#CC0000", "#000000"],
+  rennes: ["#E2001A", "#000000"],
 };
 
 export type JerseyPattern = "solid" | "stripes" | "band";
@@ -2350,7 +2635,415 @@ export const products: Product[] = [
     offers: [
       { store: "PlanetFoot", price: 79.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-portugal-domicile-2026-junior-puma%3Fvariant%3D52090727661909", title: "Maillot Portugal Domicile Junior 2026 Rouge - Coupe du Monde", inStock: true, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-portugal-domicile-2026-junior-puma-planetfoot2.webp?v=1767451832" },
     ],
+  },  {
+    id: "acmilan-away-202526",
+    teamKey: "acmilan",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FB090B",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 51.76, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41781314365&a=3013769&m=65912", title: "Camiseta de visitante del AC Milan 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_puma_779971-02_01.webp&feedId=89032&k=c3f3ba39e893cf7b6a0c7584c62da1310a0d884d" },
+    ],
   },
+  {
+    id: "acmilan-home-202526",
+    teamKey: "acmilan",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#FB090B",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 77.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41435135380&a=3013769&m=65912", title: "Camiseta de Local de manga larga del AC Milan 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779963-01_1-nw082525.webp&feedId=89032&k=8846f60e87025fcb24878795e8fe7e8ec9277ddb" },
+    ],
+  },
+  {
+    id: "acmilan-third-202526",
+    teamKey: "acmilan",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#FB090B",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 65.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41929584438&a=3013769&m=65912", title: "Maillot Tercero AC Milan 2025/26", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779979-03_1-nw082525.webp&feedId=89032&k=b53f8ddebd5ee1e288d5765f5aa402c01ef9ac5c" },
+    ],
+  },
+  {
+    id: "arsenal-home-202627",
+    teamKey: "arsenal",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#EF0107",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44873054761&a=3013769&m=65912", title: "Camiseta Local Arsenal 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz3168_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=d26488b95b5f42d7cace2b773d022ea69044af6f" },
+    ],
+  },
+  {
+    id: "atleticomadrid-third-202526",
+    teamKey: "atleticomadrid",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#CE3524",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 73.1, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42403415953&a=3013769&m=65912", title: "Camiseta Third Atlético de Madrid 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fm%2Fhm3200-407.webp&feedId=89032&k=7cf2fd13acce425d5c4ad3bc0fecd2e598d707af" },
+    ],
+  },
+  {
+    id: "celtavigo-home-202526",
+    teamKey: "celtavigo",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#8AC3EE",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 79.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44896717934&a=3013769&m=65912", title: "Camiseta Local RC Celta Vigo 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F3%2F231421-7431.webp&feedId=89032&k=329704cbc43d6dab82f905830f31314722be7520" },
+    ],
+  },
+  {
+    id: "dortmund-away-202526",
+    teamKey: "dortmund",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FDE100",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 52.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42486174298&a=3013769&m=65912", title: "Camiseta de visitante Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F780104-02.webp&feedId=89032&k=02952af548aab91f071216dac6836ebc534f5f04" },
+    ],
+  },
+  {
+    id: "dortmund-home-202627",
+    teamKey: "dortmund",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#FDE100",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44873054845&a=3013769&m=65912", title: "Camiseta Local Borussia Dortmund 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784088-01-faster-yellow-puma-black-6a033c40d526e-1.webp&feedId=89032&k=66df735477d0d79926c37916a58af3bef58b5f0c" },
+    ],
+  },
+  {
+    id: "fiorentina-away-202526",
+    teamKey: "fiorentina",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#642F8E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43770970524&a=3013769&m=65912", title: "Camiseta de visitante Fiorentina 2025/26", inStock: true, sizes: ["S", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_38234zw-a08_white-whisper-violet-indigo_1.webp&feedId=89032&k=223899ec46b7b0e27184b0c939ad2a479bfa1da7" },
+    ],
+  },
+  {
+    id: "fiorentina-home-202526",
+    teamKey: "fiorentina",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#642F8E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 68.54, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44552706299&a=3013769&m=65912", title: "Camiseta Local Fiorentina 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_38234yw-a00_violet_4.webp&feedId=89032&k=6010163df8657d091d7c3f7ad5528bb03cb50596" },
+    ],
+  },
+  {
+    id: "fiorentina-third-2026",
+    teamKey: "fiorentina",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#642F8E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44179081263&a=3013769&m=65912", title: "Maillot Tercero Fiorentina 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-382441w-a22-turquoise-crystal-grey-silver-1.webp&feedId=89032&k=6132d366254d3506a60864e90a9f4a4934995d82" },
+    ],
+  },
+  {
+    id: "frankfurt-home-202627",
+    teamKey: "frankfurt",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#E1000F",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45081946539&a=3013769&m=65912", title: "Camiseta Local Eintracht Frankfurt 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kb1996_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=dad31b1d23c85cc325a9520eba50f629566da43c" },
+    ],
+  },
+  {
+    id: "girona-away-202526",
+    teamKey: "girona",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#CB1120",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 66.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41855851660&a=3013769&m=65912", title: "Camiseta de visitante Girona FC 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_783025-03_1.webp&feedId=89032&k=6266c5a9a62a6c73c11dcbf1bfcf89183bb5734e" },
+    ],
+  },
+  {
+    id: "girona-home-202526",
+    teamKey: "girona",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#CB1120",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 61.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41793758120&a=3013769&m=65912", title: "Camiseta Local Girona FC 2025/26", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_783021-01_1-nw082525.webp&feedId=89032&k=b41b07c9ceafa660d2ba7d5ead76cf8f48856495" },
+    ],
+  },
+  {
+    id: "lazio-away-202526",
+    teamKey: "lazio",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#87D8F7",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 74.33, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42270681625&a=3013769&m=65912", title: "Camiseta de Visitante Lazio Roma 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_p2gacx0807_off-white_1.webp&feedId=89032&k=e311a876ef2687c15429955ed1513ae47b0eb804" },
+    ],
+  },
+  {
+    id: "lazio-third-202526",
+    teamKey: "lazio",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#87D8F7",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 73.37, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42313341216&a=3013769&m=65912", title: "Maillot Tercero Lazio Roma 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_09_mizuno_p2gacx0914_0.webp&feedId=89032&k=0b7907b91f6c472e8043b83c64e849f6bed198cb" },
+    ],
+  },
+  {
+    id: "mancity-home-202526",
+    teamKey: "mancity",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#6CABDD",
+    colorHexSecondary: "#1C2C5B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41307393658&a=3013769&m=65912", title: "Camiseta Local Manchester City 2025/26", inStock: true, sizes: ["M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780338-01_1.webp&feedId=89032&k=c9694d5d0ffa6c6743f472bcea7195c41ed796cf" },
+    ],
+  },
+  {
+    id: "marseille-away-202526",
+    teamKey: "marseille",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#2FAEE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41641436520&a=3013769&m=65912", title: "Camiseta de visitante OM 2025/26", inStock: true, sizes: ["S", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779844-02_1.webp&feedId=89032&k=e9ef4f4c5865cd04b2e4592e98af5ee8f4e5ea6f" },
+    ],
+  },
+  {
+    id: "marseille-goalkeeper-202526",
+    teamKey: "marseille",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#2FAEE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 57.06, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395579449&a=3013769&m=65912", title: "Camiseta de portero OM 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780723-99_1.webp&feedId=89032&k=4339dfe95446db43abc8c9c04a88fd614693a082" },
+    ],
+  },
+  {
+    id: "marseille-home-202526",
+    teamKey: "marseille",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#2FAEE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45381239888&a=3013769&m=65912", title: "Camiseta Local OM 2025/26", inStock: true, sizes: ["S", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779801-01_1.webp&feedId=89032&k=e76118c678345f6da02d325a242ee8679def8091" },
+    ],
+  },
+  {
+    id: "marseille-third-202526",
+    teamKey: "marseille",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#2FAEE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 55.45, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45381239909&a=3013769&m=65912", title: "Maillot Tercero OM 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779853-03_01.webp&feedId=89032&k=66fbe05c015a6585ff537c58c543cb5cec524ae4" },
+    ],
+  },
+  {
+    id: "nice-away-202526",
+    teamKey: "nice",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#CC0000",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43654219311&a=3013769&m=65912", title: "Camiseta de visitante OGC Nice 2025/26", inStock: true, sizes: ["M", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_08_kappa_311q2cw-s03_0.webp&feedId=89032&k=3dc8cbfbfd12abd5ded0bf27510a78f2cfcd77f3" },
+    ],
+  },
+  {
+    id: "nice-home-202526",
+    teamKey: "nice",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#CC0000",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 63.18, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41962148213&a=3013769&m=65912", title: "Camiseta Local OGC Nice 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_kappa_311q2bw-s00_00.webp&feedId=89032&k=0088ff8947f1714017d4e3c1bdfe265706fe4cc0" },
+    ],
+  },
+  {
+    id: "nice-third-202526",
+    teamKey: "nice",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#CC0000",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 68.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43654217925&a=3013769&m=65912", title: "Maillot Tercero OGC Nice 2025/26", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_311q2dw-s05_bleu_1.webp&feedId=89032&k=0b6d9d59f657c50ea6edf602c34ae2adfb232c12" },
+    ],
+  },
+  {
+    id: "rbleipzig-away-202526",
+    teamKey: "rbleipzig",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#DD0741",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 52.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41641436528&a=3013769&m=65912", title: "Maillot Exterior RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779881-05_1.webp&feedId=89032&k=fabe17880934f07955a2a8df16b6389232486016" },
+    ],
+  },
+  {
+    id: "rbleipzig-home-202526",
+    teamKey: "rbleipzig",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#DD0741",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 52.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41332003660&a=3013769&m=65912", title: "Camiseta Local RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779876-01_1.webp&feedId=89032&k=2e0c452fc3ed4e43976d93f27d531e96579c5e18" },
+    ],
+  },
+  {
+    id: "rbleipzig-third-202526",
+    teamKey: "rbleipzig",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#DD0741",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 47.88, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41996330660&a=3013769&m=65912", title: "Camiseta Third RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779885-03_1.webp&feedId=89032&k=8d7b132330f30b4515ed5d98297a2a7a08ff1e1d" },
+    ],
+  },
+  {
+    id: "tottenham-away-202526",
+    teamKey: "tottenham",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#132257",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 71.21, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41740155672&a=3013769&m=65912", title: "Camiseta de visitante del Tottenham 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4609-011-phsfh001.webp&feedId=89032&k=06480cd00cc291cf85b6e7d63648914553c48e34" },
+    ],
+  },
+  {
+    id: "tottenham-home-202526",
+    teamKey: "tottenham",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#132257",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 106.14, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41738308561&a=3013769&m=65912", title: "Camiseta Local Auténtica Tottenham 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4550-101-phsfh001.webp&feedId=89032&k=3d3843296c91d1258be8a2db08dc2e6bc93b15c3" },
+    ],
+  },
+  {
+    id: "tottenham-third-202526",
+    teamKey: "tottenham",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#132257",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 103.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42293267895&a=3013769&m=65912", title: "Camiseta Third Auténtica Tottenham 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_09_nike_hm3199-741_0.webp&feedId=89032&k=0cbed5a0bd34e375c5755f8e25c04a7be64e7b3b" },
+    ],
+  },
+  {
+    id: "valencia-away-202526",
+    teamKey: "valencia",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#EE3524",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 55.45, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43945466847&a=3013769&m=65912", title: "Camiseta Visitante Valencia CF 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780194-05_1.webp&feedId=89032&k=c3993c73e4b69b84ab358a614caffed6ef3b4d30" },
+    ],
+  },
+  {
+    id: "valencia-third-202627",
+    teamKey: "valencia",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#EE3524",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45398897616&a=3013769&m=65912", title: "Camiseta Third Valencia CF 2026/27", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F784532-04.webp&feedId=89032&k=e2f17206aedbe13c4ab030d8527eedf035f9ca16" },
+    ],
+  },
+  {
+    id: "westham-away-202627",
+    teamKey: "westham",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#7A263A",
+    colorHexSecondary: "#1BB1E7",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 95.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45356588204&a=3013769&m=65912", title: "Camiseta exterior West Ham 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fe%2Fnew-balance-mt6288la-awy-blanc-6a5f9fa8057bb-1.webp&feedId=89032&k=11bf0d5360ef3d2415f30db2e517fab8a3d108c3" },
+    ],
+  },
+  {
+    id: "westham-home-202627",
+    teamKey: "westham",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#7A263A",
+    colorHexSecondary: "#1BB1E7",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 95.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45356588200&a=3013769&m=65912", title: "Camiseta Local West Ham 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fe%2Fnew-balance-mt62t9d7-hme-rouge-6a5f9f9e79bfe-1.webp&feedId=89032&k=d0f3ecbb94a22e444b39c172d349879b8f1c78ed" },
+    ],
+  },
+
 ];
 
 export function offerTotal(offer: Offer): number {
