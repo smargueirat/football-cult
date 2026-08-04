@@ -60,6 +60,9 @@ export default function FavoritesButton() {
               <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
                 {savedProducts.map((product) => {
                   const best = bestOfferForCountry(product, countryCode);
+                  const displayName =
+                    best?.title ??
+                    `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
                   return (
                     <li key={product.id}>
                       <Link
@@ -67,10 +70,7 @@ export default function FavoritesButton() {
                         onClick={() => setOpen(false)}
                         className="flex items-center justify-between gap-2 rounded-xl px-2 py-2 transition-colors hover:bg-black/[0.04]"
                       >
-                        <span className="text-sm text-[#1a1a1a]">
-                          {teamNames[product.teamKey][locale]}{" "}
-                          {typeNames[product.typeKey][locale]}
-                        </span>
+                        <span className="truncate text-sm text-[#1a1a1a]">{displayName}</span>
                         {best ? (
                           <span className="text-sm font-semibold text-[#B45309]">
                             {formatOfferMoney(offerTotal(best), best.currency)}

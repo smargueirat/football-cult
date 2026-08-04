@@ -42,6 +42,10 @@ export default function ProductCard({ product }: { product: Product }) {
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
   const isKids = getAgeGroup(product) === "kids";
+  // Nombre real tal como aparece en la tienda, no un nombre armado por
+  // nosotros (equipo + tipo). Ese nombre armado queda solo como respaldo
+  // para los pocos casos sin oferta cargada todavía.
+  const displayName = best?.title ?? `${team} ${type}`;
   const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -63,7 +67,7 @@ export default function ProductCard({ product }: { product: Product }) {
             )}
             <Image
               src={photo}
-              alt={`${team} ${type} ${product.season}`}
+              alt={displayName}
               fill
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
               onLoad={() => setImageLoaded(true)}
@@ -135,7 +139,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       <div className="flex flex-col gap-0.5 p-3 sm:p-4">
         <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] sm:text-lg">
-          {team} {type}
+          {displayName}
         </h3>
         {best ? (
           <p className="text-xs text-[#8a7a5a]">

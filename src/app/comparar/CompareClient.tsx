@@ -55,7 +55,8 @@ export default function CompareClient() {
             const team = teamNames[product.teamKey][locale];
             const type = typeNames[product.typeKey][locale];
             const best = bestOffer(product);
-            const photo = product.offers.find((o) => o.imageUrl)?.imageUrl;
+            const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
+            const displayName = best?.title ?? `${team} ${type}`;
 
             return (
               <div key={product.id} className="vintage-card flex flex-col overflow-hidden rounded-2xl">
@@ -68,7 +69,7 @@ export default function CompareClient() {
                   {photo ? (
                     <Image
                       src={photo}
-                      alt={`${team} ${type}`}
+                      alt={displayName}
                       fill
                       sizes="(max-width: 640px) 90vw, 30vw"
                       className="object-contain"
@@ -92,7 +93,7 @@ export default function CompareClient() {
                 <div className="vintage-divider" />
                 <div className="flex flex-col gap-3 p-4">
                   <h2 className="font-card-title text-lg text-[#1a1a1a]">
-                    {team} {type}
+                    {displayName}
                   </h2>
                   <dl className="flex flex-col gap-1.5 text-sm">
                     <div className="flex justify-between border-b border-[#C9A24B]/15 pb-1.5">

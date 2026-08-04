@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { findProduct, teamNames, typeNames } from "@/data/products";
+import { bestOffer, findProduct, teamNames, typeNames } from "@/data/products";
 
 export default function CompareBar() {
   const { locale, t } = useLanguage();
@@ -22,12 +22,16 @@ export default function CompareBar() {
           {t.compare.barTitle}
         </span>
         <div className="flex flex-1 items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {products.map((product) => (
+          {products.map((product) => {
+            const best = bestOffer(product);
+            const displayName =
+              best?.title ?? `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
+            return (
             <span
               key={product.id}
               className="flex shrink-0 items-center gap-1.5 rounded-full border border-[#C9A24B]/30 bg-white/70 px-3 py-1.5 text-xs text-[#3a3a36]"
             >
-              {teamNames[product.teamKey][locale]} {typeNames[product.typeKey][locale]}
+              <span className="max-w-[14rem] truncate">{displayName}</span>
               <button
                 onClick={() => toggleCompare(product.id)}
                 aria-label={t.compare.remove}
@@ -36,7 +40,8 @@ export default function CompareBar() {
                 ✕
               </button>
             </span>
-          ))}
+            );
+          })}
         </div>
         <button
           onClick={clearCompare}

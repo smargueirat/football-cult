@@ -55,7 +55,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
   async function handleShare() {
     const url = window.location.href;
-    const title = `${team} ${type} ${product.season} — Football Cult`;
+    const title = `${displayName} — Football Cult`;
     if (navigator.share) {
       try {
         await navigator.share({ title, url });
@@ -86,6 +86,10 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   // precio", para que nunca se vea una camiseta distinta a la que el
   // usuario termina comprando.
   const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
+  // Nombre real tal como aparece en la tienda, no un nombre armado por
+  // nosotros (equipo + tipo).
+  const displayName =
+    bestOffer?.title ?? sortedOffers.find((o) => o.title)?.title ?? `${team} ${type}`;
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
@@ -118,7 +122,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 )}
                 <Image
                   src={photo}
-                  alt={`${team} ${type} ${product.season}`}
+                  alt={displayName}
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 45vw"
@@ -149,7 +153,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
           <div className="flex items-start justify-between gap-3">
             <div>
               <h1 className="font-card-title text-3xl text-[#1a1a1a] sm:text-4xl">
-                {team} {type}
+                {displayName}
               </h1>
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
                 <span>{country.flag}</span>
@@ -282,6 +286,9 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               {offer.store}
                               {isBest && <span className="text-xs">🥇</span>}
                             </p>
+                            {offer.title && (
+                              <p className="text-xs text-[#a8926a]">{offer.title}</p>
+                            )}
                             {!offer.inStock ? (
                               <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
                             ) : !ships ? (
