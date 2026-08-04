@@ -25,7 +25,7 @@ import ProductCard from "./ProductCard";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 
-const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper"];
+const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training"];
 const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
 
 const TEAM_KEYS: TeamKey[] = Array.from(

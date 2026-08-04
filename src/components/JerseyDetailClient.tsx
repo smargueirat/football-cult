@@ -86,10 +86,10 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   // precio", para que nunca se vea una camiseta distinta a la que el
   // usuario termina comprando.
   const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
-  // Nombre real tal como aparece en la tienda, no un nombre armado por
-  // nosotros (equipo + tipo).
-  const displayName =
-    bestOffer?.title ?? sortedOffers.find((o) => o.title)?.title ?? `${team} ${type}`;
+  // Título principal siempre en el idioma elegido (equipo + tipo). El
+  // nombre real de la tienda se muestra junto a cada oferta más abajo,
+  // no acá, para no forzar un idioma ajeno como título del producto.
+  const displayName = `${team} ${type}`;
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">

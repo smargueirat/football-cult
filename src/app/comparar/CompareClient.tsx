@@ -56,7 +56,7 @@ export default function CompareClient() {
             const type = typeNames[product.typeKey][locale];
             const best = bestOffer(product);
             const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
-            const displayName = best?.title ?? `${team} ${type}`;
+            const displayName = `${team} ${type}`;
 
             return (
               <div key={product.id} className="vintage-card flex flex-col overflow-hidden rounded-2xl">

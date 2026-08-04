@@ -42,10 +42,11 @@ export default function ProductCard({ product }: { product: Product }) {
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
   const isKids = getAgeGroup(product) === "kids";
-  // Nombre real tal como aparece en la tienda, no un nombre armado por
-  // nosotros (equipo + tipo). Ese nombre armado queda solo como respaldo
-  // para los pocos casos sin oferta cargada todavía.
-  const displayName = best?.title ?? `${team} ${type}`;
+  // Título principal siempre en el idioma elegido (equipo + tipo). El
+  // nombre real de la tienda (que puede venir en otro idioma) se muestra
+  // aparte, junto a cada oferta, para poder verificarlo contra la página
+  // de destino sin forzar un idioma ajeno como título del producto.
+  const displayName = `${team} ${type}`;
   const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
 
