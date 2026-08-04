@@ -18,6 +18,7 @@ const FEED_URLS: Record<string, string | undefined> = {
   SportIsGoodFR: process.env.AWIN_FEED_URL_SPORTISGOOD_FR,
   AdidasES: process.env.AWIN_FEED_URL_ADIDAS_ES,
   AdidasPT: process.env.AWIN_FEED_URL_ADIDAS_PT,
+  BSTNIT: process.env.AWIN_FEED_URL_BSTN_IT,
 };
 
 interface FeedRow {

@@ -557,6 +557,7 @@ export const products: Product[] = [
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn4390-maillot-domicile-espagne-coupe-du-monde-2026-vivred", title: "Maillot Domicile Espagne Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jn4390_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094299250&a=3013769&m=77008", title: "Camiseta primera equipación España 26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F866664f412bb4443bca790fed9c9f0a3_9366%2FCamiseta_primera_equipacion_Espana_26_Rojo_JN4390_21_model.jpg&feedId=92152&k=3147fbc911758b33b863018c56285f93ba4baca0" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966931&a=3013769&m=77026", title: "Camisola Principal 26 da Espanha", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F866664f412bb4443bca790fed9c9f0a3_9366%2FCamisola_Principal_26_da_Espanha_Vermelho_JN4390_21_model.jpg&feedId=92150&k=62e9e3c30e8bcdcb3ade8efee634bb03d13b28fe" },
+      { store: "BSTNIT", price: 149.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43097018678&a=3013769&m=104981", title: "Spain 26 Home Authentic Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-spain-home-authentic-jersey-jn4366-0345534%2FJN4366%2FJN4366-01.jpg&feedId=99415&k=0885b4c4390c3a37728511e742db3000c9c0c078" },
     ],
   },
 {
@@ -673,6 +674,7 @@ export const products: Product[] = [
       { store: "SportIsGoodFR", price: 47.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094295102&a=3013769&m=77008", title: "Camiseta primera equipación Italia 26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9716cb1d4ca14ca8a3ee4af6a3e2c31f_9366%2FCamiseta_primera_equipacion_Italia_26_Azul_JY7586_21_model.jpg&feedId=92152&k=c90c1da5c2652fadfa28bad5f4448c941d356d88" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965381&a=3013769&m=77026", title: "Camisola Principal 26 da Itália", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9716cb1d4ca14ca8a3ee4af6a3e2c31f_9366%2FCamisola_Principal_26_da_Italia_Azul_JY7586_21_model.jpg&feedId=92150&k=0946f5470c32292679753de0c7f6d65ed2941ed7" },
+      { store: "BSTNIT", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43445633218&a=3013769&m=104981", title: "Italy 26 Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-figc-h-jsy-jl6937-0345532%2FJL6937%2FJL6937-01.jpg&feedId=99415&k=363e94a5155a4df3ee826047b31a9b5c6509cf7c" },
     ],
   },
 {
@@ -853,6 +855,7 @@ export const products: Product[] = [
       { store: "SportIsGoodES", price: 58.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836082&a=3013769&m=65906", title: "Camiseta Local Juventus de Turín 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj4320_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=2001bf1a1b3858c7d860f1ca8ec36793dcce2c85" },
       { store: "SportIsGoodFR", price: 58.38, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj4320-maillot-domicile-juventus-turin-2025-26-white-black", title: "Maillot Domicile Juventus Turin 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj4320_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41299301716&a=3013769&m=77008", title: "Camiseta primera equipación Juventus 25/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffe0a2e213d8d4ce2accb8324679b8e5a_9366%2FCamiseta_primera_equipacion_Juventus_25-26_Blanco_JJ4320_21_model.jpg&feedId=92152&k=50933479dcddaa1674736281986926603961b0c8" },
+      { store: "BSTNIT", price: 54.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41672553751&a=3013769&m=104981", title: "JUVENTUS 25/26 HOME JERSEY", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-juventus-turin-home-jersey-jj4320-0328680%2FJJ4320%2FJJ4320-01.jpg&feedId=99415&k=9313809b22015222d08a191fd6cf8d939c295538" },
     ],
   },
 {
@@ -867,6 +870,7 @@ export const products: Product[] = [
       { store: "PlanetFoot", price: 69.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000091377%3Fvariant%3D54464904102229", title: "Juventus 26/27 Away Pre-Match Jersey KG4514", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_9137-1.jpg?v=1785005278" },
       { store: "FootStoreES", price: 64.27, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41701521183&a=3013769&m=65912", title: "Camiseta de visitante Juventus de Turín 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj4323_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=a9102f210281a6fb0f0cbbf8ddbd74471bf2a949" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41590987988&a=3013769&m=77008", title: "Camiseta segunda equipación Juventus 25/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8c6cd78831754419beba203bacb3d1f2_9366%2FCamiseta_segunda_equipacion_Juventus_25-26_Azul_JJ4323_21_model.jpg&feedId=92152&k=290f465711cbc768a25fc0307cc596106de0a24b" },
+      { store: "BSTNIT", price: 59.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41699021834&a=3013769&m=104981", title: "JUVENTUS 25/26 AWAY JERSEY", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-juve-a-jersey-jj4323-0328681%2FJJ4323%2FJJ4323-01.jpg&feedId=99415&k=c6dc32804daaf4160b288c3198255dda08df5b10" },
     ],
   },
 {
@@ -2321,7 +2325,7 @@ export const products: Product[] = [
       { store: "SportIsGoodFR", price: 45.77, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkg7528-maillot-third-enfant-france-2026-27-bliss-pink", title: "Maillot Third enfant France 2026/27", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_01_adidas_kg7528_1_apparel_photography_front_view_white.webp" },
     ],
   },
-  {
+{
     id: "alemania-goalkeeper-kids",
     teamKey: "alemania",
     season: "2026",
@@ -2334,7 +2338,7 @@ export const products: Product[] = [
       { store: "PlanetFoot", price: 44.95, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-allemagne-125-ans-gardien-junior-2025-26-bleu%3Fvariant%3D51159079027029", title: "Maillot Allemagne 125 Ans Gardien Junior 2025/26 Bleu", inStock: true, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-anniversaire-allemagne-125-ans-enfant-adidas-planetfoot3.avif?v=1755695084" },
     ],
   },
-  {
+{
     id: "portugal-home-kids",
     teamKey: "portugal",
     season: "2026",
