@@ -29,9 +29,23 @@ import Portal from "./Portal";
 const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training"];
 const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
 
-const TEAM_KEYS: TeamKey[] = Array.from(
-  new Set(products.map((p) => p.teamKey))
-);
+// Selecciones/clubes más buscados: son un atajo, no un listado completo
+// (para eso ya está el buscador de texto), así que se mantiene corta a
+// propósito en vez de mostrar los ~90 equipos del catálogo.
+const QUICK_PICK_TEAMS: TeamKey[] = [
+  "argentina",
+  "brasil",
+  "espana",
+  "francia",
+  "realmadrid",
+  "barcelona",
+  "manutd",
+  "liverpool",
+  "psg",
+  "bayern",
+  "boca",
+  "riverplate",
+].filter((key) => products.some((p) => p.teamKey === key)) as TeamKey[];
 
 type SortKey = "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
 
@@ -239,7 +253,7 @@ export default function SearchExplorer() {
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.quickSelectLabel}:</span>
                 <div className="flex flex-wrap gap-2">
-                  {TEAM_KEYS.map((key) => {
+                  {QUICK_PICK_TEAMS.map((key) => {
                     const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
                     return (
                       <Chip
