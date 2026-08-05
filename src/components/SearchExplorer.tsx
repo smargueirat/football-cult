@@ -252,7 +252,7 @@ export default function SearchExplorer() {
             <div className="flex flex-col gap-5 overflow-y-auto px-5 py-5">
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.quickSelectLabel}:</span>
-                <div className="flex flex-wrap gap-2">
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   {QUICK_PICK_TEAMS.map((key) => {
                     const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
                     return (
@@ -260,6 +260,7 @@ export default function SearchExplorer() {
                         key={key}
                         active={active}
                         onClick={() => setQuery(active ? "" : teamNames[key][locale])}
+                        className="flex-shrink-0 whitespace-nowrap"
                       >
                         {teamCategory[key] === "national" ? (
                           <span className="text-base leading-none">{teamFlags[key]}</span>
