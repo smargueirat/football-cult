@@ -188,6 +188,15 @@ export type TeamKey =
   | "kallithea"
   | "wydad"
   | "seattlesounders"
+  | "clermontfoot"
+  | "genoa"
+  | "nycfc"
+  | "nyredbulls"
+  | "columbuscrew"
+  | "sandiegofc"
+  | "rbsalzburg"
+  | "deportivo"
+  | "partizanbelgrade"
   | "islandia"
   | "serbia"
   | "qatar"
@@ -428,6 +437,15 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
   kallithea: "club",
   wydad: "club",
   seattlesounders: "club",
+  clermontfoot: "club",
+  genoa: "club",
+  nycfc: "club",
+  nyredbulls: "club",
+  columbuscrew: "club",
+  sandiegofc: "club",
+  rbsalzburg: "club",
+  deportivo: "club",
+  partizanbelgrade: "club",
   islandia: "national",
   serbia: "national",
   qatar: "national",
@@ -628,6 +646,15 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   kallithea: { es: "GS Kallithéa", en: "GS Kallithea", pt: "GS Kallithéa" },
   wydad: { es: "Wydad AC", en: "Wydad AC", pt: "Wydad AC" },
   seattlesounders: { es: "Seattle Sounders", en: "Seattle Sounders", pt: "Seattle Sounders" },
+  clermontfoot: { es: "Clermont Foot 63", en: "Clermont Foot 63", pt: "Clermont Foot 63" },
+  genoa: { es: "Genoa CFC", en: "Genoa CFC", pt: "Genoa CFC" },
+  nycfc: { es: "New York City FC", en: "New York City FC", pt: "New York City FC" },
+  nyredbulls: { es: "New York Red Bulls", en: "New York Red Bulls", pt: "New York Red Bulls" },
+  columbuscrew: { es: "Columbus Crew", en: "Columbus Crew", pt: "Columbus Crew" },
+  sandiegofc: { es: "San Diego FC", en: "San Diego FC", pt: "San Diego FC" },
+  rbsalzburg: { es: "RB Salzburg", en: "RB Salzburg", pt: "RB Salzburg" },
+  deportivo: { es: "Deportivo La Coruña", en: "Deportivo La Coruña", pt: "Deportivo La Coruña" },
+  partizanbelgrade: { es: "FK Partizan Belgrado", en: "FK Partizan Belgrade", pt: "FK Partizan Belgrado" },
   islandia: { es: "Islandia", en: "Iceland", pt: "Islândia" },
   serbia: { es: "Serbia", en: "Serbia", pt: "Sérvia" },
   qatar: { es: "Catar", en: "Qatar", pt: "Catar" },
@@ -828,6 +855,15 @@ export const teamFlags: Record<TeamKey, string> = {
   kallithea: "🔵",
   wydad: "🔴",
   seattlesounders: "🟢",
+  clermontfoot: "🔴",
+  genoa: "🔴",
+  nycfc: "🔵",
+  nyredbulls: "🔴",
+  columbuscrew: "🟡",
+  sandiegofc: "🔵",
+  rbsalzburg: "🔴",
+  deportivo: "🔵",
+  partizanbelgrade: "⚫",
   islandia: "🇮🇸",
   serbia: "🇷🇸",
   qatar: "🇶🇦",
@@ -1029,6 +1065,15 @@ export const teamColors: Record<TeamKey, [string, string]> = {
   kallithea: ["#0057B7", "#87CEEB"],
   wydad: ["#E4002B", "#FFFFFF"],
   seattlesounders: ["#5D9732", "#0033A0"],
+  clermontfoot: ["#E30613", "#003DA5"],
+  genoa: ["#B71234", "#003DA5"],
+  nycfc: ["#6CADDF", "#003087"],
+  nyredbulls: ["#ED1E36", "#FFFFFF"],
+  columbuscrew: ["#FFD200", "#000000"],
+  sandiegofc: ["#00243D", "#7EC0E0"],
+  rbsalzburg: ["#ED1C24", "#FFFFFF"],
+  deportivo: ["#0072CE", "#FFFFFF"],
+  partizanbelgrade: ["#000000", "#FFFFFF"],
   islandia: ["#02529C", "#FFFFFF"],
   serbia: ["#C6363C", "#FFFFFF"],
   qatar: ["#8D1B3D", "#FFFFFF"],
@@ -1526,6 +1571,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094300482&a=3013769&m=77008", title: "Camiseta primera equipación Alemania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fad8d788b983145b9913d29c68367ecd6_9366%2FCamiseta_primera_equipacion_Alemania_26_Blanco_KD8363_21_model.jpg&feedId=92152&k=1193b6882b1631f4c4f794a0dd29ac312720f6e8" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966058&a=3013769&m=77026", title: "Camisola Principal 26 da Alemanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fad8d788b983145b9913d29c68367ecd6_9366%2FCamisola_Principal_26_da_Alemanha_Branco_KD8363_21_model.jpg&feedId=92150&k=e41795945f0b568908bcb62ce17594875b4c174a" },
       { store: "FansJerseyHub", price: 41.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-home-soccer-jersey-kit-2026-world-cup%3Fvariant%3D42748815573097", title: "Germany Home Soccer Jersey Kit 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Germany_Home_Jersey_Kit_World_Cup_2026_1.webp?v=1765780768" },
+      { store: "BSTNIT", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087183632&a=3013769&m=104981", title: "DFB Deutschland 26 Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-dfb-home-jersey-kd8363-0345518%2FKD8363%2FKD8363-01.jpg&feedId=99415&k=f38cbfb14738603c414043b7af6972ee86c156e1" },
     ],
   },
 {
@@ -1543,6 +1589,8 @@ export const products: Product[] = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094295102&a=3013769&m=77008", title: "Camiseta primera equipación Italia 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9716cb1d4ca14ca8a3ee4af6a3e2c31f_9366%2FCamiseta_primera_equipacion_Italia_26_Azul_JY7586_21_model.jpg&feedId=92152&k=c90c1da5c2652fadfa28bad5f4448c941d356d88" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965381&a=3013769&m=77026", title: "Camisola Principal 26 da Itália", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9716cb1d4ca14ca8a3ee4af6a3e2c31f_9366%2FCamisola_Principal_26_da_Italia_Azul_JY7586_21_model.jpg&feedId=92150&k=0946f5470c32292679753de0c7f6d65ed2941ed7" },
       { store: "BSTNIT", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43445633218&a=3013769&m=104981", title: "Italy 26 Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-figc-h-jsy-jl6937-0345532%2FJL6937%2FJL6937-01.jpg&feedId=99415&k=363e94a5155a4df3ee826047b31a9b5c6509cf7c" },
+      { store: "FootStoreFR", price: 45.64, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodFR", price: 47.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
     ],
   },
 {
@@ -1645,9 +1693,10 @@ export const products: Product[] = [
     colorHexSecondary: "#A50044",
     jerseyPattern: "stripes",
     offers: [
-      { store: "PlanetFoot", price: 39.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-barcelone-connect-blaugrana-navy-2026%3Fvariant%3D53802756211029", title: "Maillot FC Barcelone Connect 2026 - Blaugrana / Navy", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-football-fc-barcelone-connect-blaugrana-navy-20264.jpg?v=1778253327" },
+      { store: "PlanetFoot", price: 59.9, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-barcelone-domicile-homme-lamine-yamal-n-10-2025-26-blaugrana%3Fvariant%3D51353838813525", title: "Maillot FC Barcelone Domicile Homme Lamine Yamal N°10 2025/26 Blaugrana", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-fc-barcelone-25-26-adulte-lamine-yamal-10-planetfoot1.jpg?v=1756488044" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-home-soccer-jersey-2025-26%3Fvariant%3D42557200629865", title: "Barcelona Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Barcelona_Home_Soccer_Jersey_2025_26_Barcelona_Home_Soccer_Jersey_2025_26-1.png?v=1760082704" },
       { store: "FootStoreES", price: 73.1, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44291084666&a=3013769&m=65912", title: "Camiseta Local FC Barcelona 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4590-456-phsfh001.webp&feedId=89032&k=97609522fc0d8f0c9d0156cefc15a48558a6c170" },
+      { store: "FootStoreFR", price: 71.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4590-456-maillot-domicile-fc-barcelone-2025-26-deep-royal-blue-midwest-gold", title: "Maillot Domicile FC Barcelone 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj4590-456-phsfh001.jpg" },
     ],
   },
 {
@@ -1660,6 +1709,7 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-third-away-soccer-jersey-2025-26%3Fvariant%3D42557191585897", title: "Barcelona Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/barcelona_third_away_jersey_2025_1.png?v=1759219885" },
+      { store: "FootStoreFR", price: 104.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4554-784-maillot-exterieur-authentique-fc-barcelone-2025-26-yellow", title: "Maillot Extérieur Authentique FC Barcelone 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4554-784-phsfh001.webp" },
     ],
   },
 {
@@ -1806,6 +1856,7 @@ export const products: Product[] = [
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267895747&a=3013769&m=77026", title: "Camisola Alternativa 26 da Alemanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb77fff63a8db4413b9422887ffa0ccfe_9366%2FCamisola_Alternativa_26_da_Alemanha_Azul_JZ4568_21_model.jpg&feedId=92150&k=ffef37a4ba5614a195f88ea48a0e7009400ff4e2" },
       { store: "FootStoreFR", price: 64.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn2074-maillot-exterieur-allemagne-coupe-du-monde-2026-collegiate-navy", title: "Maillot Extérieur Allemagne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn2074_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 66.1, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn2074-maillot-exterieur-allemagne-coupe-du-monde-2026-collegiate-navy", title: "Maillot Extérieur Allemagne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn2074_1_apparel_photography_front_center_view_white.webp" },
+      { store: "BSTNIT", price: 84.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265212001&a=3013769&m=104981", title: "DFB Deutschland 26 Away Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-dfb-away-jersey-jn2074-0347224%2FJN2074%2FJN2074-01.jpg&feedId=99415&k=104260f5afe2b49d6e3a3070801d61cbeb687c7f" },
     ],
   },
 {
@@ -1825,6 +1876,7 @@ export const products: Product[] = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094289571&a=3013769&m=77008", title: "Camiseta de portero primera equipación Alemania 26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7549fd098cf04f7cad8a2af08f2bad9e_9366%2FCamiseta_de_portero_primera_equipacion_Alemania_26_Verde_KD5121_21_model.jpg&feedId=92152&k=772fb18e9c429ed564771e02b20d723037ccc0cb" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096958515&a=3013769&m=77026", title: "Camisola Principal de Guarda-redes 26 da Alemanha", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7549fd098cf04f7cad8a2af08f2bad9e_9366%2FCamisola_Principal_de_Guarda-redes_26_da_Alemanha_Verde_KD5121_21_model.jpg&feedId=92150&k=0d0e04d57e6b3107cdf6e32e3b7a25a4ac335965" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-gardien-allemagne-domicile-homme-2026-vert%3Fvariant%3D53907027689813", title: "Maillot Gardien Allemagne Domicile Homme 2026 Vert - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-allemagne-domicile-homme-2026-vert-climacool-kd51212.webp?v=1782483765" },
+      { store: "BSTNIT", price: 79.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265212026&a=3013769&m=104981", title: "DFB Deutschland 26 Away Goalkeeper Jersey", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-dfb-away-goalkeeper-jersey-kd5113-0347243%2FKD5113%2FKD5113-01.jpg&feedId=99415&k=f73f0508561d11bdeb1281a06043c4c3af322e37" },
     ],
   },
 {
@@ -1838,6 +1890,8 @@ export const products: Product[] = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-third-away-soccer-jersey-2025-26%3Fvariant%3D42557191553129", title: "Barcelona Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/barcelona_third_away_jersey_2025_1.png?v=1759219885" },
       { store: "FootStoreES", price: 73.1, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42177817663&a=3013769&m=65912", title: "Camiseta Third FC Barcelona 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm3201-855-phsfh001-ss25.webp&feedId=89032&k=74179f0a31d5c307468729e4432203e324bd1a31" },
+      { store: "FootStoreFR", price: 71.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3201-855-maillot-third-fc-barcelone-2025-26-bright-mango-midnight-navy-midnight-navy", title: "Maillot Third FC Barcelone 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hm3201-855-phsfh001-ss25.webp" },
+      { store: "PlanetFoot", price: 59.9, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-barcelone-third-homme-lamine-yamal-n-10-2025-26-orange%3Fvariant%3D52191025299797", title: "Maillot FC Barcelone Third Homme Lamine Yamal N°10 2025/26 Orange", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-fc-barcelone-third-lamine-yamal-10-25-26-homme-planetfoot9.jpg?v=1767391828" },
     ],
   },
 {
@@ -2433,6 +2487,7 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "FootStoreES", price: 109.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43745917504&a=3013769&m=65912", title: "Camiseta de portero local de manga larga FC Barcelona 2025/26", inStock: true, sizes: ["XS", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0477-311-phsym001.webp&feedId=89032&k=d5ea0c65a894acdb978e42af23924d9854efe8ae" },
+      { store: "FootStoreFR", price: 109.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0477-311-maillot-de-gardien-domicile-manches-longues-fc-barcelone-2025-26-lucky-green-green-strike-black", title: "Maillot de gardien Domicile manches longues FC Barcelone 2025/26", inStock: true, sizes: ["XS", "L", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hq0477-311-phsym001.webp" },
     ],
   },
 {
@@ -4864,6 +4919,7 @@ export const products: Product[] = [
       { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44234270916&a=3013769&m=65906", title: "Camiseta de entrenamiento Argelia Coupe du Monde 2026", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz0211_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=2f3580ba0a5ac39e40fb3d2f909c75c8fcea3889" },
       { store: "SportIsGoodFR", price: 49.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz0273-maillot-domicile-prematch-algerie-coupe-du-monde-2026-white", title: "Maillot Domicile Prematch Algérie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz0273_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 70.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267909265&a=3013769&m=77008", title: "Camiseta calentamiento Argelia 26 primera equipación", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0688badd39544aaea939fbb1a0a1b878_9366%2FCamiseta_calentamiento_Argelia_26_primera_equipacion_Blanco_JZ0273_21_model.jpg&feedId=92152&k=e5dceb7d9bbd50ecce35efda1bea5001319d373f" },
+      { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-algerie-domicile-homme-2026-blanc-jz0273%3Fvariant%3D54043383333205", title: "Maillot Pré-Match Algérie Domicile Homme 2026 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-algerie-domicile-homme-2026-blanc-jz0273-1.webp?v=1785169311" },
     ],
   },
 {
@@ -5107,6 +5163,9 @@ export const products: Product[] = [
     offers: [
       { store: "FootStoreES", price: 36.3, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45018623086&a=3013769&m=65912", title: "Maillot de entrenamiento España Tiro Coupe du Monde 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_ka8194_0.webp&feedId=89032&k=d4a37629ce3b6c34c17c69f141d2b164cb3b167e" },
       { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965135&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Espanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fba71acfcbf0b41eab96d85713bf7ac93_9366%2FCamisola_de_Treino_Tiro_26_da_Espanha_Azul_KA8197_21_model.jpg&feedId=92150&k=a0c8273ede35fa0962b157e4ccae73b2d6c86b62" },
+      { store: "FootStoreFR", price: 44.3, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka1906-maillot-prematch-espagne-coupe-du-monde-2026-dark-blue", title: "Maillot Prematch Espagne Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka1906_1_apparel_photography_front_center_view_white.webp" },
+      { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-domicile-espagne-homme-2026-bleu-coupe-du-monde%3Fvariant%3D53957461279061", title: "Maillot Pré-Match Domicile Espagne Homme 2026 Bleu - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-domicile-espagne-homme-2026-bleu-climacool-ka1906-1.webp?v=1784557550" },
+      { store: "AdidasES", price: 80.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265205646&a=3013769&m=77008", title: "Camiseta calentamiento segunda equipación España 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F31856ac41bb448b0bcb1666062a5ab7b_9366%2FCamiseta_calentamiento_segunda_equipacion_Espana_26_Burgundy_KA1908_21_model.jpg&feedId=92152&k=99dd68ae130d2027a345f3dd96e0dfb54b9f9dad" },
     ],
   },
 {
@@ -5120,6 +5179,9 @@ export const products: Product[] = [
     offers: [
       { store: "FootStoreFR", price: 44.3, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka1906-maillot-prematch-espagne-coupe-du-monde-2026-dark-blue", title: "Maillot Prematch Espagne Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka1906_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-domicile-espagne-homme-2026-bleu-coupe-du-monde%3Fvariant%3D53957461279061", title: "Maillot Pré-Match Domicile Espagne Homme 2026 Bleu - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-domicile-espagne-homme-2026-bleu-climacool-ka1906-1.webp?v=1784557550" },
+      { store: "FootStoreES", price: 36.3, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45018623086&a=3013769&m=65912", title: "Maillot de entrenamiento España Tiro Coupe du Monde 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_ka8194_0.webp&feedId=89032&k=d4a37629ce3b6c34c17c69f141d2b164cb3b167e" },
+      { store: "AdidasES", price: 80.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265205646&a=3013769&m=77008", title: "Camiseta calentamiento segunda equipación España 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F31856ac41bb448b0bcb1666062a5ab7b_9366%2FCamiseta_calentamiento_segunda_equipacion_Espana_26_Burgundy_KA1908_21_model.jpg&feedId=92152&k=99dd68ae130d2027a345f3dd96e0dfb54b9f9dad" },
+      { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965135&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Espanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fba71acfcbf0b41eab96d85713bf7ac93_9366%2FCamisola_de_Treino_Tiro_26_da_Espanha_Azul_KA8197_21_model.jpg&feedId=92150&k=a0c8273ede35fa0962b157e4ccae73b2d6c86b62" },
     ],
   },
 {
@@ -5132,6 +5194,10 @@ export const products: Product[] = [
     jerseyPattern: "solid",
     offers: [
       { store: "AdidasES", price: 80.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265205646&a=3013769&m=77008", title: "Camiseta calentamiento segunda equipación España 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F31856ac41bb448b0bcb1666062a5ab7b_9366%2FCamiseta_calentamiento_segunda_equipacion_Espana_26_Burgundy_KA1908_21_model.jpg&feedId=92152&k=99dd68ae130d2027a345f3dd96e0dfb54b9f9dad" },
+      { store: "FootStoreES", price: 36.3, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45018623086&a=3013769&m=65912", title: "Maillot de entrenamiento España Tiro Coupe du Monde 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_ka8194_0.webp&feedId=89032&k=d4a37629ce3b6c34c17c69f141d2b164cb3b167e" },
+      { store: "FootStoreFR", price: 44.3, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka1906-maillot-prematch-espagne-coupe-du-monde-2026-dark-blue", title: "Maillot Prematch Espagne Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka1906_1_apparel_photography_front_center_view_white.webp" },
+      { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-domicile-espagne-homme-2026-bleu-coupe-du-monde%3Fvariant%3D53957461279061", title: "Maillot Pré-Match Domicile Espagne Homme 2026 Bleu - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-domicile-espagne-homme-2026-bleu-climacool-ka1906-1.webp?v=1784557550" },
+      { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965135&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Espanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fba71acfcbf0b41eab96d85713bf7ac93_9366%2FCamisola_de_Treino_Tiro_26_da_Espanha_Azul_KA8197_21_model.jpg&feedId=92150&k=a0c8273ede35fa0962b157e4ccae73b2d6c86b62" },
     ],
   },
 {
@@ -5251,6 +5317,10 @@ export const products: Product[] = [
       { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-domicile-italie-homme-2026-blanc-coupe-du-monde%3Fvariant%3D53957407506773", title: "Maillot Pré-Match Domicile Italie Homme 2026 Blanc - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-domicile-italie-homme-2026-blanc-climacool-jy5633-1.webp?v=1784375371" },
       { store: "FootStoreFR", price: 45.64, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 47.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
+      { store: "FootStoreES", price: 36.3, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44284201443&a=3013769&m=65912", title: "Maillot de entrenamiento Italia Tiro Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz9375_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=18048d995f5a3c426d6032a6a62ac7f07516ee55" },
+      { store: "SportIsGoodES", price: 33.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45246772834&a=3013769&m=65906", title: "Maillot de entrenamiento Italia Tiro Coupe du Monde 2026", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz9375_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=18048d995f5a3c426d6032a6a62ac7f07516ee55" },
+      { store: "AdidasES", price: 55.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094293343&a=3013769&m=77008", title: "Camiseta de entrenamiento Italia 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F85efe5c25dfd454ba1d4d74871e006b4_9366%2FCamiseta_de_entrenamiento_Italia_26_Verde_JZ9374_21_model.jpg&feedId=92152&k=d4d159b16323e206b6e1502c96c57b9b83c04a42" },
+      { store: "AdidasPT", price: 55.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096964043&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Itália", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F85efe5c25dfd454ba1d4d74871e006b4_9366%2FCamisola_de_Treino_Tiro_26_da_Italia_Verde_JZ9374_21_model.jpg&feedId=92150&k=0b60d7a7a8403cb70c664f7426b922d028d34e8a" },
     ],
   },
 {
@@ -6602,7 +6672,7 @@ export const products: Product[] = [
     colorHexSecondary: "#C8102E",
     jerseyPattern: "solid",
     offers: [
-      { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-rc-lens-sainte-barbe-gardien-homme-2026-blanc-puma-120-ans%3Fvariant%3D52296804925781", title: "Maillot RC Lens Sainte-Barbe Gardien Homme 2026 Blanc - Puma ( 120 Ans )", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-rc-lens-sainte-barbe-2026-officiel3.webp?v=1768916885" },
+      { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-rc-lens-sainte-barbe-gardien-homme-2026-blanc-puma-120-ans%3Fvariant%3D52296804925781", title: "Maillot RC Lens Sainte-Barbe Gardien Homme 2026 Blanc - Puma ( 120 Ans )", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-rc-lens-sainte-barbe-2026-officiel3.webp?v=1768916885" },
     ],
   },
 {
@@ -6832,6 +6902,290 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 54.87, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780429-02-maillot-exterieur-psv-eindhoven-2025-26-blue", title: "Maillot Extérieur PSV Eindhoven 2025/26", inStock: true, sizes: ["XS"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780429-02_1.webp" },
       { store: "SportIsGoodES", price: 55.97, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44235683797&a=3013769&m=65906", title: "Camiseta de visitante PSV Eindhoven 2025/26", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780429-02_1.webp&feedId=89044&k=d7f8b5e6cbf833f59b6dd2f7cf5993aee0f93018" },
       { store: "SportIsGoodFR", price: 56.27, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780429-02-maillot-exterieur-psv-eindhoven-2025-26-blue", title: "Maillot Extérieur PSV Eindhoven 2025/26", inStock: true, sizes: ["XS"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780429-02_1.webp" },
+    ],
+  },
+{
+    id: "clermontfoot-away-2026",
+    teamKey: "clermontfoot",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#E30613",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44544751194&a=3013769&m=65912", title: "Camiseta de Visitante Clermont Foot 63 2026", inStock: true, sizes: ["S", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-322d8zw-s01-white-whisper-red-winery-sponsor-1.webp&feedId=89032&k=739091b1ef791c1bba00aff583f654ed104a00dc" },
+      { store: "FootStoreFR", price: 67.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322d8zw-s01-maillot-exterieur-clermont-foot-63-2026-white-whisper-red-winery-sponsor", title: "Maillot Extérieur Clermont Foot 63 2026", inStock: true, sizes: ["S", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-322d8zw-s01-white-whisper-red-winery-sponsor-1.webp" },
+    ],
+  },
+{
+    id: "clermontfoot-home-2026",
+    teamKey: "clermontfoot",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#E30613",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44936962996&a=3013769&m=65912", title: "Camiseta Local Clermont Foot 63 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-322d8yw-s00-red-dk-blue-md-cobalt-sponsor-1.webp&feedId=89032&k=f881cfa52483780f06008a473d508acac2e114b7" },
+      { store: "FootStoreFR", price: 67.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322d8yw-s00-maillot-domicile-clermont-foot-63-2026-red-dk-blue-md-cobalt-sponsor", title: "Maillot Domicile Clermont Foot 63 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-322d8yw-s00-red-dk-blue-md-cobalt-sponsor-1.webp" },
+    ],
+  },
+{
+    id: "clermontfoot-third-2026",
+    teamKey: "clermontfoot",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#E30613",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44179081237&a=3013769&m=65912", title: "Camiseta Tercera Clermont Foot 63 2026", inStock: true, sizes: ["S", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-322e81w-s02-blue-iris-yellow-gold-rich-sponsor-1.webp&feedId=89032&k=245772a02b73c27d5ae8f6dfeea8d3ad8b12dde3" },
+      { store: "FootStoreFR", price: 67.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322e81w-s02-maillot-third-clermont-foot-63-2026-blue-iris-yellow-gold-rich-sponsor", title: "Maillot Third Clermont Foot 63 2026", inStock: true, sizes: ["S", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-322e81w-s02-blue-iris-yellow-gold-rich-sponsor-1.webp" },
+    ],
+  },
+{
+    id: "columbuscrew-away-202526",
+    teamKey: "columbuscrew",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFD200",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 47.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40418219919&a=3013769&m=65912", title: "Camiseta segunda equipación Columbus Crew 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iv5092_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=a82c17a3f4b2a5e6bd4f9acfe5395158f713a741" },
+      { store: "FootStoreFR", price: 47.5, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiv5092-maillot-exterieur-columbus-crew-2025-26-black", title: "Maillot Extérieur Columbus Crew 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iv5092_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodES", price: 47.9, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301793703&a=3013769&m=65906", title: "Camiseta segunda equipación Columbus Crew 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iv5092_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=a82c17a3f4b2a5e6bd4f9acfe5395158f713a741" },
+      { store: "SportIsGoodFR", price: 48.08, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fiv5092-maillot-exterieur-columbus-crew-2025-26-black", title: "Maillot Extérieur Columbus Crew 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iv5092_1_apparel_photography_front_center_view_white.webp" },
+      { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40432818370&a=3013769&m=77008", title: "Camiseta segunda equipación Columbus Crew 25/26 Authentic", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa1c7ddcc6fc04209a0cba62a4d76d819_9366%2FCamiseta_segunda_equipacion_Columbus_Crew_25-26_Authentic_Negro_IV5085_21_model.jpg&feedId=92152&k=ac12caf09b24a868936a02c28f91c64e2380564e" },
+      { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40432837553&a=3013769&m=77026", title: "Camisola Alternativa Oficial 25/26 do Columbus Crew", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa1c7ddcc6fc04209a0cba62a4d76d819_9366%2FCamisola_Alternativa_Oficial_25-26_do_Columbus_Crew_Preto_IV5085_21_model.jpg&feedId=92150&k=2046c222b078b515e0709d2b2da942921f4f356d" },
+    ],
+  },
+{
+    id: "fcmetz-home-202526",
+    teamKey: "fcmetz",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#7A1F2B",
+    colorHexSecondary: "#87CEEB",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41909878050&a=3013769&m=65912", title: "Camiseta Local Metz 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_35215iw-s02_rouge_1.webp&feedId=89032&k=03d007e7ebe477290c8bd2dff98ca87fa70ce161" },
+      { store: "FootStoreFR", price: 68.01, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35215iw-s02-maillot-domicile-metz-2025-26-rouge", title: "Maillot Domicile Metz 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_35215iw-s02_rouge_1.webp" },
+    ],
+  },
+{
+    id: "genoa-home-2026",
+    teamKey: "genoa",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#B71234",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44179081115&a=3013769&m=65912", title: "Camiseta Local Genoa 2026", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-311l5uw-a0k-red-dk-blue-dk-yellow-1.webp&feedId=89032&k=42c3ccad9c8d92842615f375d87cda2644c93e86" },
+      { store: "FootStoreFR", price: 67.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311l5uw-a0k-maillot-domicile-genoa-2026-red-dk-blue-dk-yellow", title: "Maillot Domicile Genoa 2026", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-311l5uw-a0k-red-dk-blue-dk-yellow-1.webp" },
+    ],
+  },
+{
+    id: "genoa-third-2026",
+    teamKey: "genoa",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#B71234",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44179081267&a=3013769&m=65912", title: "Maillot Tercero de Genoa 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-311p3dw-xmx-blue-dk-1.webp&feedId=89032&k=bfe93d024642a10a00f36594ffce07dbab950e04" },
+      { store: "FootStoreFR", price: 67.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311p3dw-xmx-maillot-third-genoa-2026-blue-dk", title: "Maillot Third Genoa 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-311p3dw-xmx-blue-dk-1.webp" },
+    ],
+  },
+{
+    id: "nycfc-home-202526",
+    teamKey: "nycfc",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#6CADDF",
+    colorHexSecondary: "#003087",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45319434999&a=3013769&m=65912", title: "Camiseta Local New York City FC 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kt3311_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=98f2d462434548d877e73a2ba9ae6f0a0730d8a9" },
+      { store: "FootStoreFR", price: 73.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkt3311-maillot-domicile-new-york-city-fc-2025-26-bahia-light-blue", title: "Maillot Domicile New York City FC 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kt3311_1_apparel_photography_front_center_view_white.webp" },
+    ],
+  },
+{
+    id: "nyredbulls-home-202627",
+    teamKey: "nyredbulls",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#ED1E36",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43994230916&a=3013769&m=65912", title: "Camiseta Local New York Red Bulls 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl6843_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=1995c93a4f4b7c83043eef2395018f9a441de916" },
+      { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl6843-maillot-domicile-new-york-red-bulls-2026-27-black", title: "Maillot Domicile New York Red Bulls 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl6843_1_apparel_photography_front_center_view_white.webp" },
+      { store: "SportIsGoodES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45131352846&a=3013769&m=65906", title: "Camiseta Local New York Red Bulls 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl6843_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=1995c93a4f4b7c83043eef2395018f9a441de916" },
+      { store: "SportIsGoodFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjl6843-maillot-domicile-new-york-red-bulls-2026-27-black", title: "Maillot Domicile New York Red Bulls 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl6843_1_apparel_photography_front_center_view_white.webp" },
+    ],
+  },
+{
+    id: "partizanbelgrade-away-202526",
+    teamKey: "partizanbelgrade",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#000000",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43770971024&a=3013769&m=65912", title: "Camiseta de visitante FK Partizan Belgrado 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_311q44w-a01_bleu-rouge_1.webp&feedId=89032&k=b38b1cf97658740551e919321cbc20a455bbbffc" },
+      { store: "FootStoreFR", price: 68.01, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q44w-a01-maillot-exterieur-fk-partizan-belgrade-2025-26-bleu-rouge", title: "Maillot extérieur FK Partizan Belgrade 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_311q44w-a01_bleu-rouge_1.webp" },
+    ],
+  },
+{
+    id: "partizanbelgrade-home-202526",
+    teamKey: "partizanbelgrade",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#000000",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 63.18, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43770971023&a=3013769&m=65912", title: "Camiseta local FK Partizan Belgrado 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_311q43w-a00_blanc-noir_1.webp&feedId=89032&k=cc4377ce3148e21b03d11ba7540fb59c9a062c49" },
+      { store: "FootStoreFR", price: 61.84, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q43w-a00-maillot-domicile-fk-partizan-belgrade-2025-26-blanc-noir", title: "Maillot domicile FK Partizan Belgrade 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_311q43w-a00_blanc-noir_1.webp" },
+      { store: "SportIsGoodES", price: 62.92, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45390609145&a=3013769&m=65906", title: "Camiseta local FK Partizan Belgrado 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_311q43w-a00_blanc-noir_1.webp&feedId=89044&k=cc4377ce3148e21b03d11ba7540fb59c9a062c49" },
+      { store: "SportIsGoodFR", price: 63.14, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F311q43w-a00-maillot-domicile-fk-partizan-belgrade-2025-26-blanc-noir", title: "Maillot domicile FK Partizan Belgrade 2025/26", inStock: true, sizes: ["3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_311q43w-a00_blanc-noir_1.webp" },
+    ],
+  },
+{
+    id: "rbsalzburg-away-202526",
+    teamKey: "rbsalzburg",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#ED1C24",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 55.45, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45398892210&a=3013769&m=65912", title: "Camiseta de visitante RB Salzburgo 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779934-02_blue_1.webp&feedId=89032&k=6ab30d957235f2e98c8697b3486d987949e5bfda" },
+      { store: "SportIsGoodES", price: 55.17, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45404232359&a=3013769&m=65906", title: "Camiseta de visitante RB Salzburgo 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779934-02_blue_1.webp&feedId=89044&k=6ab30d957235f2e98c8697b3486d987949e5bfda" },
+    ],
+  },
+{
+    id: "rbsalzburg-home-202526",
+    teamKey: "rbsalzburg",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#ED1C24",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 52.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41885924466&a=3013769&m=65912", title: "Camiseta Local RB Salzburgo 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779928-01_1.webp&feedId=89032&k=841119eb039d3ad96caf81cd5a66ab30dba6d7ea" },
+      { store: "SportIsGoodES", price: 52.2, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852351&a=3013769&m=65906", title: "Camiseta Local RB Salzburgo 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779928-01_1.webp&feedId=89044&k=841119eb039d3ad96caf81cd5a66ab30dba6d7ea" },
+    ],
+  },
+{
+    id: "rbsalzburg-third-202526",
+    teamKey: "rbsalzburg",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#ED1C24",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 52.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42246665270&a=3013769&m=65912", title: "Camiseta Third RB Salzburgo 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779938-04_red_1.webp&feedId=89032&k=46d45b757669b7ed16a2fe3626eb4c3e3e6e04f2" },
+      { store: "SportIsGoodES", price: 52.2, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301853749&a=3013769&m=65906", title: "Camiseta Third RB Salzburgo 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779938-04_red_1.webp&feedId=89044&k=46d45b757669b7ed16a2fe3626eb4c3e3e6e04f2" },
+    ],
+  },
+{
+    id: "rennes-third-202526",
+    teamKey: "rennes",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#E2001A",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 71.76, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45047888903&a=3013769&m=65912", title: "Maillot Tercero Stade Rennais 2025/26", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780225-03_black_1.webp&feedId=89032&k=81d0b22b7409934c41c9c4a9b2f8485376f3e815" },
+      { store: "FootStoreFR", price: 70.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780225-03-maillot-third-stade-rennais-2025-26-black", title: "Maillot Third Stade Rennais 2025/26", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780225-03_black_1.webp" },
+      { store: "SportIsGoodES", price: 71.48, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45048791566&a=3013769&m=65906", title: "Maillot Tercero Stade Rennais 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780225-03_black_1.webp&feedId=89044&k=81d0b22b7409934c41c9c4a9b2f8485376f3e815" },
+      { store: "SportIsGoodFR", price: 71.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780225-03-maillot-third-stade-rennais-2025-26-black", title: "Maillot Third Stade Rennais 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780225-03_black_1.webp" },
+    ],
+  },
+{
+    id: "sandiegofc-home-202526",
+    teamKey: "sandiegofc",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#00243D",
+    colorHexSecondary: "#7EC0E0",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreES", price: 94.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=39857790167&a=3013769&m=65912", title: "Camiseta 1ª Equipación San Diego FC 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jf2740_ntnavy_1.webp&feedId=89032&k=d52ac496cabbc3abc773e062f0b04e890144cc1f" },
+      { store: "FootStoreFR", price: 83.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf2740-maillot-domicile-san-diego-fc-2025-26-ntnavy", title: "Maillot Domicile San Diego FC 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jf2740_ntnavy_1.webp" },
+      { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42961488245&a=3013769&m=77008", title: "San Diego FC 25/26 Home Authentic Jersey", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6b1a9c1a23fa434d9328fecaf396cd24_9366%2FSan_Diego_FC_25-26_Home_Authentic_Jersey_Azul_JF2739_21_model.jpg&feedId=92152&k=5ddb8f4ef05012c5e5f85e5c37f90b4b8a999a85" },
+      { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42961466234&a=3013769&m=77026", title: "San Diego FC 25/26 Home Authentic Jersey", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6b1a9c1a23fa434d9328fecaf396cd24_9366%2FSan_Diego_FC_25-26_Home_Authentic_Jersey_Azul_JF2739_21_model.jpg&feedId=92150&k=5ddb8f4ef05012c5e5f85e5c37f90b4b8a999a85" },
+    ],
+  },
+{
+    id: "bologna-away-202526",
+    teamKey: "bologna",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#A61B22",
+    colorHexSecondary: "#1A2F42",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreFR", price: 99.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F70009930-maillot-exterieur-bologne-2025-26-blanc-noir", title: "Maillot Extérieur Bologne 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/7/0/70009930.jpg" },
+    ],
+  },
+{
+    id: "bologna-home-202526",
+    teamKey: "bologna",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#A61B22",
+    colorHexSecondary: "#1A2F42",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreFR", price: 72.16, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F700099180001-maillot-domicile-bologne-2025-26-rouge-bleu", title: "Maillot Domicile Bologne 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_700099180001_rouge-bleu_1.webp" },
+      { store: "SportIsGoodFR", price: 73.48, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F700099180001-maillot-domicile-bologne-2025-26-rouge-bleu", title: "Maillot Domicile Bologne 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_700099180001_rouge-bleu_1.webp" },
+    ],
+  },
+{
+    id: "partizanbelgrade-third-2026",
+    teamKey: "partizanbelgrade",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#000000",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreFR", price: 52.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q45w-a02-maillot-third-fk-partizan-belgrade-2026-white-black", title: "Maillot Third FK Partizan Belgrade 2026", inStock: true, sizes: ["3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-311q45w-a02-white-black-1.webp" },
+    ],
+  },
+{
+    id: "rennes-away-202526",
+    teamKey: "rennes",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#E2001A",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FootStoreFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780222-02-maillot-exterieur-stade-rennais-2025-26-white", title: "Maillot Extérieur Stade Rennais 2025/26", inStock: true, sizes: ["M", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780222-02_01.webp" },
+      { store: "SportIsGoodFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780222-02-maillot-exterieur-stade-rennais-2025-26-white", title: "Maillot Extérieur Stade Rennais 2025/26", inStock: true, sizes: ["M", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780222-02_01.webp" },
+    ],
+  },
+{
+    id: "nycfc-away-202627",
+    teamKey: "nycfc",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#6CADDF",
+    colorHexSecondary: "#003087",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000087486%3Fvariant%3D53957456691541", title: "Maillot New York City FC Extérieur 2026/27 Homme - Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-new-york-city-fc-exterieur-2026-2027-homme-bleu-climacool-jl6826-1.avif?v=1784553504" },
+      { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43981766383&a=3013769&m=77008", title: "Camiseta segunda equipación New York City FC 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa05146583dc949f1b883530c6f823476_9366%2FCamiseta_segunda_equipacion_New_York_City_FC_26-27_Azul_JL6826_21_model.jpg&feedId=92152&k=e8c26db033e2f79fc538f461778d64f9c888767d" },
+      { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43981766820&a=3013769&m=77026", title: "Camisola Alternativa 26/27 do New York City FC", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa05146583dc949f1b883530c6f823476_9366%2FCamisola_Alternativa_26-27_do_New_York_City_FC_Azul_JL6826_21_model.jpg&feedId=92150&k=7b3dac922fb67801b9b72c87a0035124ce35d362" },
     ],
   },
 ];
