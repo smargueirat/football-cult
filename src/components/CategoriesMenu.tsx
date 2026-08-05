@@ -44,15 +44,15 @@ export default function CategoriesMenu() {
 
   function goToCategory(category: CategoryKey) {
     setQuery("");
-    setCategoryFilter(category);
+    setCategoryFilter([category]);
     setOpen(false);
     router.push("/");
   }
 
   function goToRetro() {
     setQuery("");
-    setCategoryFilter("all");
-    setTypeFilter("retro");
+    setCategoryFilter([]);
+    setTypeFilter(["retro"]);
     setOpen(false);
     router.push("/");
   }

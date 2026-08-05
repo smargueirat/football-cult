@@ -15738,9 +15738,6 @@ export function findProduct(id: string): Product | undefined {
   return products.find((p) => p.id === id);
 }
 
-// Excluye "retro" acá: sus temporadas son decenas de años históricos
-// sueltos, no tiene sentido ofrecerlos como chips de filtro de temporada
-// (para eso ya está el filtro por tipo "Retro" + la búsqueda por equipo).
 export const SEASONS: string[] = Array.from(
-  new Set(products.filter((p) => p.typeKey !== "retro").map((p) => p.season))
+  new Set(products.map((p) => p.season))
 ).sort((a, b) => b.localeCompare(a));

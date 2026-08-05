@@ -12,10 +12,13 @@ export default function FloatingFilterButton() {
   const { locale, t } = useLanguage();
   const {
     typeFilter,
+    toggleTypeFilter,
     setTypeFilter,
     categoryFilter,
+    toggleCategoryFilter,
     setCategoryFilter,
     seasonFilter,
+    toggleSeasonFilter,
     setSeasonFilter,
     activeFilterCount,
   } = useSearchFilter();
@@ -40,13 +43,21 @@ export default function FloatingFilterButton() {
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.nav.categories}</p>
             <div className="flex flex-wrap gap-1.5">
-              <Chip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} accent="amber">
+              <Chip active={categoryFilter.length === 0} onClick={() => setCategoryFilter([])} accent="amber">
                 {t.search.allCategories}
               </Chip>
-              <Chip active={categoryFilter === "national"} onClick={() => setCategoryFilter("national")} accent="amber">
+              <Chip
+                active={categoryFilter.includes("national")}
+                onClick={() => toggleCategoryFilter("national")}
+                accent="amber"
+              >
                 {t.search.categoryNational}
               </Chip>
-              <Chip active={categoryFilter === "club"} onClick={() => setCategoryFilter("club")} accent="amber">
+              <Chip
+                active={categoryFilter.includes("club")}
+                onClick={() => toggleCategoryFilter("club")}
+                accent="amber"
+              >
                 {t.search.categoryClubs}
               </Chip>
             </div>
@@ -54,11 +65,11 @@ export default function FloatingFilterButton() {
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.search.typeLabel}</p>
             <div className="flex flex-wrap gap-1.5">
-              <Chip active={typeFilter === "all"} onClick={() => setTypeFilter("all")}>
+              <Chip active={typeFilter.length === 0} onClick={() => setTypeFilter([])}>
                 {t.search.allCategories}
               </Chip>
               {TYPE_FILTERS.map((key) => (
-                <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
+                <Chip key={key} active={typeFilter.includes(key)} onClick={() => toggleTypeFilter(key)}>
                   {typeNames[key][locale]}
                 </Chip>
               ))}
@@ -67,11 +78,11 @@ export default function FloatingFilterButton() {
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.search.seasonLabel}</p>
             <div className="flex flex-wrap gap-1.5">
-              <Chip active={seasonFilter === "all"} onClick={() => setSeasonFilter("all")}>
+              <Chip active={seasonFilter.length === 0} onClick={() => setSeasonFilter([])}>
                 {t.search.allCategories}
               </Chip>
               {SEASONS.map((season) => (
-                <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)}>
+                <Chip key={season} active={seasonFilter.includes(season)} onClick={() => toggleSeasonFilter(season)}>
                   {season}
                 </Chip>
               ))}

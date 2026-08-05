@@ -6,8 +6,10 @@ import {
   Brand,
   Product,
   SEASONS,
+  SIZES,
   TeamKey,
   TypeKey,
+  availableSizes,
   bestOfferForCountry,
   brandNames,
   getAgeGroup,
@@ -78,15 +80,23 @@ export default function SearchExplorer() {
     query,
     setQuery,
     typeFilter,
+    toggleTypeFilter,
     setTypeFilter,
     categoryFilter,
+    toggleCategoryFilter,
     setCategoryFilter,
     seasonFilter,
+    toggleSeasonFilter,
     setSeasonFilter,
     ageGroupFilter,
+    toggleAgeGroupFilter,
     setAgeGroupFilter,
     brandFilter,
+    toggleBrandFilter,
     setBrandFilter,
+    sizeFilter,
+    toggleSizeFilter,
+    setSizeFilter,
     sortBy,
     setSortBy,
     activeFilterCount,
@@ -104,12 +114,16 @@ export default function SearchExplorer() {
         ? teamNames[p.teamKey].es.toLowerCase().includes(normalized) ||
           teamNames[p.teamKey].en.toLowerCase().includes(normalized)
         : true;
-      const matchesType = typeFilter === "all" || p.typeKey === typeFilter;
+      const matchesType = typeFilter.length === 0 || typeFilter.includes(p.typeKey);
       const matchesCategory =
-        categoryFilter === "all" || teamCategory[p.teamKey] === categoryFilter;
-      const matchesSeason = seasonFilter === "all" || p.season === seasonFilter;
-      const matchesAgeGroup = ageGroupFilter === "all" || getAgeGroup(p) === ageGroupFilter;
-      const matchesBrand = brandFilter === "all" || p.brand === brandFilter;
+        categoryFilter.length === 0 || categoryFilter.includes(teamCategory[p.teamKey]);
+      const matchesSeason = seasonFilter.length === 0 || seasonFilter.includes(p.season);
+      const matchesAgeGroup =
+        ageGroupFilter.length === 0 || ageGroupFilter.includes(getAgeGroup(p));
+      const matchesBrand =
+        brandFilter.length === 0 || (!!p.brand && brandFilter.includes(p.brand));
+      const matchesSize =
+        sizeFilter.length === 0 || availableSizes(p).some((s) => sizeFilter.includes(s));
       const matchesShipping = shipsToCountry(p, countryCode);
       return (
         matchesQuery &&
@@ -118,6 +132,7 @@ export default function SearchExplorer() {
         matchesSeason &&
         matchesAgeGroup &&
         matchesBrand &&
+        matchesSize &&
         matchesShipping
       );
     });
@@ -140,6 +155,7 @@ export default function SearchExplorer() {
     seasonFilter,
     ageGroupFilter,
     brandFilter,
+    sizeFilter,
     countryCode,
     sortBy,
   ]);
@@ -328,13 +344,21 @@ export default function SearchExplorer() {
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.nav.categories}:</span>
                 <div className="flex flex-wrap gap-2">
-                  <Chip active={categoryFilter === "all"} onClick={() => setCategoryFilter("all")} accent="amber">
+                  <Chip active={categoryFilter.length === 0} onClick={() => setCategoryFilter([])} accent="amber">
                     {t.search.allCategories}
                   </Chip>
-                  <Chip active={categoryFilter === "national"} onClick={() => setCategoryFilter("national")} accent="amber">
+                  <Chip
+                    active={categoryFilter.includes("national")}
+                    onClick={() => toggleCategoryFilter("national")}
+                    accent="amber"
+                  >
                     {t.search.categoryNational}
                   </Chip>
-                  <Chip active={categoryFilter === "club"} onClick={() => setCategoryFilter("club")} accent="amber">
+                  <Chip
+                    active={categoryFilter.includes("club")}
+                    onClick={() => toggleCategoryFilter("club")}
+                    accent="amber"
+                  >
                     {t.search.categoryClubs}
                   </Chip>
                 </div>
@@ -343,11 +367,11 @@ export default function SearchExplorer() {
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.typeLabel}:</span>
                 <div className="flex flex-wrap gap-2">
-                  <Chip active={typeFilter === "all"} onClick={() => setTypeFilter("all")}>
+                  <Chip active={typeFilter.length === 0} onClick={() => setTypeFilter([])}>
                     {t.search.allCategories}
                   </Chip>
                   {TYPE_FILTERS.map((key) => (
-                    <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
+                    <Chip key={key} active={typeFilter.includes(key)} onClick={() => toggleTypeFilter(key)}>
                       {typeNames[key][locale]}
                     </Chip>
                   ))}
@@ -357,11 +381,11 @@ export default function SearchExplorer() {
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.brandLabel}:</span>
                 <div className="flex flex-wrap gap-2">
-                  <Chip active={brandFilter === "all"} onClick={() => setBrandFilter("all")}>
+                  <Chip active={brandFilter.length === 0} onClick={() => setBrandFilter([])}>
                     {t.search.allCategories}
                   </Chip>
                   {BRAND_FILTERS.map((key) => (
-                    <Chip key={key} active={brandFilter === key} onClick={() => setBrandFilter(key)}>
+                    <Chip key={key} active={brandFilter.includes(key)} onClick={() => toggleBrandFilter(key)}>
                       {brandNames[key]}
                     </Chip>
                   ))}
@@ -369,13 +393,45 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
+                <span className="text-xs text-[#8a7a5a]">{t.search.sizeLabel}:</span>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={sizeFilter.length === 0}
+                    onClick={() => setSizeFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {SIZES.map((size) => (
+                    <Chip
+                      key={size}
+                      active={sizeFilter.includes(size)}
+                      onClick={() => toggleSizeFilter(size)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {size}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.seasonLabel}:</span>
-                <div className="flex flex-wrap gap-2">
-                  <Chip active={seasonFilter === "all"} onClick={() => setSeasonFilter("all")}>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={seasonFilter.length === 0}
+                    onClick={() => setSeasonFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
                     {t.search.allCategories}
                   </Chip>
                   {SEASONS.map((season) => (
-                    <Chip key={season} active={seasonFilter === season} onClick={() => setSeasonFilter(season)}>
+                    <Chip
+                      key={season}
+                      active={seasonFilter.includes(season)}
+                      onClick={() => toggleSeasonFilter(season)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
                       {season}
                     </Chip>
                   ))}
@@ -385,11 +441,15 @@ export default function SearchExplorer() {
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.ageGroupLabel}:</span>
                 <div className="flex flex-wrap gap-2">
-                  <Chip active={ageGroupFilter === "all"} onClick={() => setAgeGroupFilter("all")}>
+                  <Chip active={ageGroupFilter.length === 0} onClick={() => setAgeGroupFilter([])}>
                     {t.search.allCategories}
                   </Chip>
                   {AGE_GROUP_FILTERS.map((key) => (
-                    <Chip key={key} active={ageGroupFilter === key} onClick={() => setAgeGroupFilter(key)}>
+                    <Chip
+                      key={key}
+                      active={ageGroupFilter.includes(key)}
+                      onClick={() => toggleAgeGroupFilter(key)}
+                    >
                       {key === "adult" ? t.search.ageGroupAdult : t.search.ageGroupKids}
                     </Chip>
                   ))}

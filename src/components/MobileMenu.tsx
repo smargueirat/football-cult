@@ -27,7 +27,7 @@ export default function MobileMenu() {
     setOpen(false);
     if (link.category) {
       setQuery("");
-      setCategoryFilter(link.category);
+      setCategoryFilter(link.category === "all" ? [] : [link.category]);
     }
     router.push(link.href);
   }

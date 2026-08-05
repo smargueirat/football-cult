@@ -85,6 +85,7 @@ export interface Translations {
     showResults: string;
     brandLabel: string;
     loadMore: string;
+    sizeLabel: string;
   };
   product: {
     bestPrice: string;
@@ -272,6 +273,7 @@ export const translations: Record<Locale, Translations> = {
       showResults: "Ver resultados",
       brandLabel: "Marca",
       loadMore: "Ver más",
+      sizeLabel: "Talle",
     },
     product: {
       bestPrice: "Mejor precio",
@@ -466,6 +468,7 @@ export const translations: Record<Locale, Translations> = {
       showResults: "Ver resultados",
       brandLabel: "Marca",
       loadMore: "Ver mais",
+      sizeLabel: "Tamanho",
     },
     product: {
       bestPrice: "Melhor preço",
@@ -660,6 +663,7 @@ export const translations: Record<Locale, Translations> = {
       showResults: "Show results",
       brandLabel: "Brand",
       loadMore: "Show more",
+      sizeLabel: "Size",
     },
     product: {
       bestPrice: "Best price",
