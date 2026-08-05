@@ -1,13 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   AgeGroup,
+  Brand,
   Product,
   SEASONS,
   TeamKey,
   TypeKey,
   bestOfferForCountry,
+  brandNames,
   getAgeGroup,
   offerTotalInEUR,
   products,
@@ -29,6 +31,20 @@ import Portal from "./Portal";
 const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "retro"];
 const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
 
+// Marcas más relevantes del catálogo: un atajo curado, no el listado
+// completo de valores de Brand (varios tienen apenas 1-2 productos y solo
+// generarían ruido, mismo criterio que Quick Picks).
+const BRAND_FILTERS: Brand[] = [
+  "adidas",
+  "nike",
+  "puma",
+  "kappa",
+  "hummel",
+  "umbro",
+  "newbalance",
+  "macron",
+].filter((key) => products.some((p) => p.brand === key)) as Brand[];
+
 // Selecciones/clubes más buscados: son un atajo, no un listado completo
 // (para eso ya está el buscador de texto), así que se mantiene corta a
 // propósito en vez de mostrar los ~90 equipos del catálogo.
@@ -47,7 +63,7 @@ const QUICK_PICK_TEAMS: TeamKey[] = [
   "riverplate",
 ].filter((key) => products.some((p) => p.teamKey === key)) as TeamKey[];
 
-type SortKey = "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
+const PAGE_SIZE = 24;
 
 // "2025/26" -> 2025, "2026" -> 2026. Sirve para poder ordenar temporadas
 // cronológicamente sin importar el formato con el que se cargó cada una.
@@ -69,12 +85,16 @@ export default function SearchExplorer() {
     setSeasonFilter,
     ageGroupFilter,
     setAgeGroupFilter,
+    brandFilter,
+    setBrandFilter,
+    sortBy,
+    setSortBy,
     activeFilterCount,
   } = useSearchFilter();
   const { countryCode } = useCountry();
-  const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortOpen, setSortOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -89,6 +109,7 @@ export default function SearchExplorer() {
         categoryFilter === "all" || teamCategory[p.teamKey] === categoryFilter;
       const matchesSeason = seasonFilter === "all" || p.season === seasonFilter;
       const matchesAgeGroup = ageGroupFilter === "all" || getAgeGroup(p) === ageGroupFilter;
+      const matchesBrand = brandFilter === "all" || p.brand === brandFilter;
       const matchesShipping = shipsToCountry(p, countryCode);
       return (
         matchesQuery &&
@@ -96,6 +117,7 @@ export default function SearchExplorer() {
         matchesCategory &&
         matchesSeason &&
         matchesAgeGroup &&
+        matchesBrand &&
         matchesShipping
       );
     });
@@ -111,9 +133,30 @@ export default function SearchExplorer() {
       const totalB = bestB ? offerTotalInEUR(bestB) : Infinity;
       return sortBy === "priceDesc" ? totalB - totalA : totalA - totalB;
     });
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, countryCode, sortBy]);
+  }, [
+    query,
+    typeFilter,
+    categoryFilter,
+    seasonFilter,
+    ageGroupFilter,
+    brandFilter,
+    countryCode,
+    sortBy,
+  ]);
 
-  const SORT_OPTIONS: { key: SortKey; label: string }[] = [
+  // Cada vez que cambian los filtros/orden/búsqueda (o sea, cada vez que
+  // `results` es un array distinto), volvemos a mostrar solo la primera
+  // tanda: sin esto, entrar a una camiseta y volver atrás mantendría
+  // renderizadas las +1000 tarjetas que se hubieran ido acumulando con
+  // "Ver más", y de paso evita quedar con el scroll "colgado" a mitad de
+  // una lista que ya no corresponde al nuevo filtro.
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [results]);
+
+  const visibleResults = results.slice(0, visibleCount);
+
+  const SORT_OPTIONS: { key: typeof sortBy; label: string }[] = [
     { key: "priceAsc", label: t.search.sortPriceAsc },
     { key: "priceDesc", label: t.search.sortPriceDesc },
     { key: "seasonNewest", label: t.search.sortNewest },
@@ -215,10 +258,18 @@ export default function SearchExplorer() {
             {t.search.resultsCount.replace("{n}", String(results.length))}
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
-            {results.map((product: Product) => (
+            {visibleResults.map((product: Product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
+          {visibleCount < results.length && (
+            <button
+              onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+              className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
+            >
+              {t.search.loadMore} ({results.length - visibleCount})
+            </button>
+          )}
         </>
       )}
 
@@ -298,6 +349,20 @@ export default function SearchExplorer() {
                   {TYPE_FILTERS.map((key) => (
                     <Chip key={key} active={typeFilter === key} onClick={() => setTypeFilter(key)}>
                       {typeNames[key][locale]}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <span className="text-xs text-[#8a7a5a]">{t.search.brandLabel}:</span>
+                <div className="flex flex-wrap gap-2">
+                  <Chip active={brandFilter === "all"} onClick={() => setBrandFilter("all")}>
+                    {t.search.allCategories}
+                  </Chip>
+                  {BRAND_FILTERS.map((key) => (
+                    <Chip key={key} active={brandFilter === key} onClick={() => setBrandFilter(key)}>
+                      {brandNames[key]}
                     </Chip>
                   ))}
                 </div>

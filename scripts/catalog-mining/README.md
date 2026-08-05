@@ -150,6 +150,30 @@ column layout, see the `FEED_URLS`/`FeedRow` handling in
 (Google-format feeds put the real charged price in `sale_price`, not
 `price`).
 
+## Brand field (`Product.brand`)
+
+Every store's feed already includes a manufacturer column — `brand_name`
+(Awin-native format), `brand` (Google format), or `vendor` (Mystery Shirt
+Club's Shopify JSON) — it just wasn't being captured. `brand_backfill.py
+<csv> <google|awin> <StoreName> <out_map.json>` builds a `url -> brand`
+map per store (normalizing raw strings like "uhlsport"/"Adidas
+Performance" to a fixed `Brand` key via `normalize_brand`); for Mystery
+Shirt Club, match by decoding the `ued=` param of the stored
+`aw_deep_link` back to the product handle and looking up `vendor` from a
+fresh `/products.json` fetch instead (see inline one-off in git history).
+`brand_apply.py <maps_dir> [--apply]` then walks every `products.ts`
+block, matches each offer's stored URL against that store's map, and
+assigns the product's `brand` by majority vote across its offers (a
+product with no match in any map is left without a `brand` — still shown
+under "all", just not filterable by brand). Re-run this whenever a new
+team/offer is mined so it also gets a brand.
+
+`BRAND_FILTERS` in `SearchExplorer.tsx` is a **curated** shortlist (same
+reasoning as `QUICK_PICK_TEAMS`) of the brands with real product counts,
+not the full `Brand` union — most values in that union exist for
+type-safety/future data, not because they're worth their own filter chip
+today.
+
 ## Retro/vintage jerseys (separate pipeline)
 
 Unlike the mainline pipeline (which deliberately excludes

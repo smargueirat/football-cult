@@ -83,6 +83,8 @@ export interface Translations {
     sortOldest: string;
     filtersButton: string;
     showResults: string;
+    brandLabel: string;
+    loadMore: string;
   };
   product: {
     bestPrice: string;
@@ -268,6 +270,8 @@ export const translations: Record<Locale, Translations> = {
       sortOldest: "Más antigua",
       filtersButton: "Filtros",
       showResults: "Ver resultados",
+      brandLabel: "Marca",
+      loadMore: "Ver más",
     },
     product: {
       bestPrice: "Mejor precio",
@@ -460,6 +464,8 @@ export const translations: Record<Locale, Translations> = {
       sortOldest: "Mais antiga",
       filtersButton: "Filtros",
       showResults: "Ver resultados",
+      brandLabel: "Marca",
+      loadMore: "Ver mais",
     },
     product: {
       bestPrice: "Melhor preço",
@@ -652,6 +658,8 @@ export const translations: Record<Locale, Translations> = {
       sortOldest: "Oldest first",
       filtersButton: "Filters",
       showResults: "Show results",
+      brandLabel: "Brand",
+      loadMore: "Show more",
     },
     product: {
       bestPrice: "Best price",
