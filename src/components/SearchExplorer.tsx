@@ -26,7 +26,7 @@ import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
 
-const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training"];
+const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "retro"];
 const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
 
 // Selecciones/clubes más buscados: son un atajo, no un listado completo

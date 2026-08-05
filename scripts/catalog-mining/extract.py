@@ -215,7 +215,7 @@ TEAM_PATTERNS = {
 TYPE_PATTERNS = {
     # goalkeeper se chequea primero: títulos como "Maillot de portero
     # local" contienen "local" pero son de arquero, no de titular.
-    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes",
+    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere",
     # training también se chequea antes que home/away/third: "Camiseta de
     # entrenamiento" no tiene un color titular/suplente definido, así que
     # si se la clasificara por esos patrones podría quedar mal etiquetada.
@@ -229,6 +229,7 @@ JERSEY_RE = re.compile(r"\b(camiseta|camisola|maillot|jersey|trikot|shirt|maglia
 EXCLUDE_RE = re.compile(
     r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
     r"infantil|niñ|nino|bebé|bebe|baby|kids?|junior|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"retro|vintage|clásic|classic|hist[oó]ric|retr[oò]|riedizione|años? \d0\b|"
     r"marvel|avengers|disney|maradona|"

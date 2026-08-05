@@ -8,7 +8,7 @@ import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 
 export default function CategoriesMenu() {
   const { t } = useLanguage();
-  const { setCategoryFilter, setQuery } = useSearchFilter();
+  const { setCategoryFilter, setTypeFilter, setQuery } = useSearchFilter();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -45,6 +45,14 @@ export default function CategoriesMenu() {
   function goToCategory(category: CategoryKey) {
     setQuery("");
     setCategoryFilter(category);
+    setOpen(false);
+    router.push("/");
+  }
+
+  function goToRetro() {
+    setQuery("");
+    setCategoryFilter("all");
+    setTypeFilter("retro");
     setOpen(false);
     router.push("/");
   }
@@ -88,15 +96,13 @@ export default function CategoriesMenu() {
               <p className="text-xs text-[#8a7a5a]">{item.desc}</p>
             </button>
           ))}
-          <div className="flex cursor-not-allowed items-center justify-between rounded-xl px-4 py-3 opacity-50">
-            <div>
-              <p className="text-sm font-medium text-[#1a1a1a]">{t.categoriesMenu.retro}</p>
-              <p className="text-xs text-[#8a7a5a]">{t.categoriesMenu.retroDesc}</p>
-            </div>
-            <span className="rounded-full bg-[#C9A24B]/10 px-2 py-0.5 text-[10px] font-medium text-[#6b5f47]">
-              {t.categoriesMenu.soon}
-            </span>
-          </div>
+          <button
+            onClick={goToRetro}
+            className="block w-full rounded-xl px-4 py-3 text-left transition-colors hover:bg-black/[0.03]"
+          >
+            <p className="text-sm font-medium text-[#1a1a1a]">{t.categoriesMenu.retro}</p>
+            <p className="text-xs text-[#8a7a5a]">{t.categoriesMenu.retroDesc}</p>
+          </button>
         </div>
       )}
     </div>

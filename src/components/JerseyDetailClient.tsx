@@ -87,12 +87,11 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
   // Nombre real tal como aparece en la tienda, no un nombre armado por
   // nosotros (equipo + tipo). Se prefiere una oferta cuyo título esté en
-  // el idioma elegido en el sitio; si no hay ninguna, se usa el de la
-  // oferta más barata.
+  // el idioma elegido en el sitio; si ninguna oferta está en ese idioma,
+  // se usa el nombre genérico traducido (nunca el título real de una
+  // oferta en OTRO idioma, ver comentario de displayTitleForCountry).
   const displayName =
-    displayTitleForCountry(product, countryCode, locale) ??
-    sortedOffers.find((o) => o.title)?.title ??
-    `${team} ${type}`;
+    displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">

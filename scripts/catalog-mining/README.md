@@ -150,6 +150,69 @@ column layout, see the `FEED_URLS`/`FeedRow` handling in
 (Google-format feeds put the real charged price in `sale_price`, not
 `price`).
 
+## Retro/vintage jerseys (separate pipeline)
+
+Unlike the mainline pipeline (which deliberately excludes
+retro/vintage/heritage listings and keeps only ONE current offer per
+team+type), the site also carries a **"Retro"** category (`typeKey:
+"retro"`, its own filter chip and nav item) covering every historic
+season we can find, for teams already in the catalog. This is a
+separate set of scripts because the identity key is different: retro
+needs MANY products per team (one per historic season found), not one.
+
+- `retro_extract.py <csv> <google|awin|msc> <StoreName> <out.json>` —
+  mines one store's feed for retro rows: jersey + team + type match,
+  same junk/kids/rugby/concept exclusions as the mainline `EXCLUDE_RE`
+  minus the retro/vintage/classic terms (those are wanted here), plus a
+  season genuinely older than 2025 (`parse_retro_season` — handles
+  2-digit-year pairs by century-guessing, unlike `split_picks.py`'s
+  `detect_season` which assumes 20xx and is only meant for current
+  seasons). Run once per store (these CSVs run 200-360MB — fetch,
+  extract, delete the raw CSV immediately, one store at a time, or you
+  will exhaust `/tmp`'s quota).
+- `retro_merge.py <retro_dir> <out.json>` — merges every store's
+  `picks_<store>.json` into one dict keyed by `team|type|season`, each
+  holding the list of per-store offers for that exact historic design
+  (cheapest-per-store, not collapsed further — a Barcelona 1991/92 home
+  shirt sold by two stores keeps both as separate offers on one product).
+- `retro_gen.py <merged.json> <out_blocks.ts>` — generates the TS product
+  blocks, reusing team metadata from `new_teams_batch*.py` first (for
+  teams that only have retro stock, no current product yet) and falling
+  back to any existing `products.ts` block for that team otherwise.
+- After generating, insert the blocks the same way as `gen_new_teams.py`
+  (see `refresh.py`'s `split_blocks`), then `npx tsc --noEmit`, dupe-check
+  ids, `npm run build`.
+- `SEASONS` in `products.ts` (the season-filter chip list) explicitly
+  excludes `typeKey: "retro"` products — dozens of loose historic years
+  would otherwise flood that filter; retro is browsed via the "Retro"
+  type filter/nav item and team search instead.
+
+**False-positive classes found and fixed while building this pipeline**
+(all in `extract.py`/`retro_extract.py`, so they benefit the mainline
+pipeline too):
+- A team's own name embedding a year ("Como 1907") was being read as the
+  season on CURRENT stock ("Como 1907 Coach Training Jersey" → wrongly
+  "season 1907"). Fixed by masking the matched `TEAM_PATTERNS` span
+  before running season detection.
+- Kids/age-range size suffixes formatted like a season ("... - 11/12")
+  were misread as "season 2011/12". Fixed by running season detection on
+  the title with any trailing size/age suffix already stripped (reusing
+  `TITLE_KIDS_AGE_SUFFIX_RE`).
+- Italian "portiere" (goalkeeper) wasn't in the `goalkeeper` `TYPE_PATTERNS`
+  entry, so Italian-store goalkeeper shirts were falling through and
+  getting mislabeled home/away/third. Added.
+- Italian/French kids terms ("bambino/a", "ragazzo/i", "enfant", "mini")
+  weren't in `EXCLUDE_RE`'s kids list (only es/en/pt terms were), letting
+  Italian/French kids items through as if they were adult sizing. Added.
+- "Concept"/AIRO unlicensed fan-made jerseys (see Mystery Shirt Club
+  section above) apply here too, already excluded.
+
+Given the false-positive history in this exact category (retro/heritage
+is explicitly called out in "Adding a team" above as one of the trickiest
+classes), **spot-check a diverse sample by photo** before trusting a full
+batch — different stores, teams, and decades — rather than assuming the
+regex pipeline alone is enough at this scale.
+
 ## Safety rule (standing, do not change)
 
 Never automate login/"Join"/apply/write actions on any affiliate network
