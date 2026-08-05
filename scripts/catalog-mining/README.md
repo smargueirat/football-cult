@@ -1,8 +1,24 @@
 # Catalog mining scripts
 
-Read-only extraction tooling used to find and add real jerseys from the
-approved Awin feeds (Foot-Store ES/FR, Sport is Good ES/FR, PlanetFoot,
-adidas ES/PT, BSTN IT) into `src/data/products.ts`.
+Read-only extraction tooling used to find and add real jerseys from every
+approved Awin feed into `src/data/products.ts`. The set of approved
+stores is not fixed — it's whatever has an `AWIN_FEED_URL_*` entry in
+`.env.local` at the time. **Always enumerate that list fresh (`grep
+'^AWIN_FEED_URL_' .env.local`) rather than hardcoding a store list**,
+so a newly-approved connection is picked up automatically the next time
+this runs. As of the last full mining pass it had 11 entries:
+PlanetFoot, FansJerseyHub, ComoFC, DeporteOutlet, Foot-Store ES/FR,
+Sport is Good ES/FR, adidas ES/PT, BSTN IT.
+
+If a store shows up with an `AWIN_FEED_URL_*` but has few or no offers
+yet in `products.ts` (check with `grep -c 'store: "StoreName"'`), treat
+it as a brand-new connection: do a **full** mining pass against its
+whole feed (every team we track, not just a spot-check), the same way
+each store above was first onboarded — not just an incremental
+re-scan. A newly-approved store can also be the source of teams/clubs
+we don't have yet, so run the unmatched-title scan against it too
+(see "Adding a team" below) instead of assuming its catalog only
+contains teams we already know.
 
 - `extract.py` — `TEAM_PATTERNS` / `TYPE_PATTERNS` regexes, jersey/exclude
   filters, season detection, kids-signal detection.
