@@ -81,6 +81,8 @@ export interface Translations {
     sortPriceDesc: string;
     sortNewest: string;
     sortOldest: string;
+    filtersButton: string;
+    showResults: string;
   };
   product: {
     bestPrice: string;
@@ -253,7 +255,7 @@ export const translations: Record<Locale, Translations> = {
       categoryClubs: "Clubes",
       typeLabel: "Tipo",
       seasonLabel: "Temporada",
-      ageGroupLabel: "Talle",
+      ageGroupLabel: "Edad",
       ageGroupAdult: "Adulto",
       ageGroupKids: "Niño/a",
       quickSelectLabel: "Accesos rápidos",
@@ -264,6 +266,8 @@ export const translations: Record<Locale, Translations> = {
       sortPriceDesc: "Precio: mayor a menor",
       sortNewest: "Más reciente",
       sortOldest: "Más antigua",
+      filtersButton: "Filtros",
+      showResults: "Ver resultados",
     },
     product: {
       bestPrice: "Mejor precio",
@@ -443,7 +447,7 @@ export const translations: Record<Locale, Translations> = {
       categoryClubs: "Clubes",
       typeLabel: "Tipo",
       seasonLabel: "Temporada",
-      ageGroupLabel: "Tamanho",
+      ageGroupLabel: "Idade",
       ageGroupAdult: "Adulto",
       ageGroupKids: "Infantil",
       quickSelectLabel: "Acessos rápidos",
@@ -454,6 +458,8 @@ export const translations: Record<Locale, Translations> = {
       sortPriceDesc: "Preço: maior para menor",
       sortNewest: "Mais recente",
       sortOldest: "Mais antiga",
+      filtersButton: "Filtros",
+      showResults: "Ver resultados",
     },
     product: {
       bestPrice: "Melhor preço",
@@ -633,7 +639,7 @@ export const translations: Record<Locale, Translations> = {
       categoryClubs: "Clubs",
       typeLabel: "Type",
       seasonLabel: "Season",
-      ageGroupLabel: "Size",
+      ageGroupLabel: "Age",
       ageGroupAdult: "Adult",
       ageGroupKids: "Kids",
       quickSelectLabel: "Quick picks",
@@ -644,6 +650,8 @@ export const translations: Record<Locale, Translations> = {
       sortPriceDesc: "Price: high to low",
       sortNewest: "Newest first",
       sortOldest: "Oldest first",
+      filtersButton: "Filters",
+      showResults: "Show results",
     },
     product: {
       bestPrice: "Best price",
