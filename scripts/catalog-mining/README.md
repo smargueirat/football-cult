@@ -8,7 +8,50 @@ stores is not fixed — it's whatever has an `AWIN_FEED_URL_*` entry in
 so a newly-approved connection is picked up automatically the next time
 this runs. As of the last full mining pass it had 11 entries:
 PlanetFoot, FansJerseyHub, ComoFC, DeporteOutlet, Foot-Store ES/FR,
-Sport is Good ES/FR, adidas ES/PT, BSTN IT.
+Sport is Good ES/FR, adidas ES/PT, BSTN IT — plus **Mystery Shirt Club**,
+onboarded without an `AWIN_FEED_URL_*` entry (see below).
+
+## Stores without an Awin datafeed CSV (Mystery Shirt Club)
+
+Not every newly-approved Awin advertiser has a CSV datafeed we can list —
+some newly-approved programs don't show up with a feed URL at all. For
+those, check whether the merchant runs a public Shopify storefront: its
+own `https://<domain>/products.json?limit=250&page=N` endpoint is public,
+unauthenticated, and paginates the whole catalog — no Awin login and no
+merchant login involved, same read-only-only-known-URL rule as any CSV
+feed, just a different URL shape. Confirm it's actually on Awin (and get
+the merchant/advertiser id needed for deep links) by fetching the store's
+homepage HTML and grepping for `awin-shopify-integration-code.js?aid=` —
+the `aid` query param is the `awinmid` to use in
+`https://www.awin1.com/cread.php?awinmid=<aid>&awinaffid=3013769&ued=<url-encoded product url>`.
+Mystery Shirt Club's `aid` is `124324`, domain `mysteryshirtclub.com`.
+Price re-checks for it are wired into
+`src/app/api/cron/check-prices/route.ts`'s `SHOPIFY_STORES` map/
+`fetchShopifyFeed`, parallel to `FEED_URLS`/`fetchFeed` for CSV stores.
+
+`shopify_feed_to_csv.py <domain> <awinmid> <out_csv>` turns the Shopify
+JSON into a CSV with the same column names `pick.py`/`extract.py` expect
+(`product_name`, `price`, `custom_1` for size, `aw_deep_link`,
+`aw_image_url`), so the rest of the pipeline runs unchanged from
+"3. Split against current catalog" onward — just run
+`python3 pick.py <out_csv> price "" /tmp/picks.json` (price col is
+`price`, not the Awin-CSV default `search_price`).
+
+**New false-positive class found in this store**: "Concept Football
+Shirt" listings (vendor tag/logo "AIRO Sportswear") are unlicensed
+fan-made mockups with a generic crest, not the real federation kit —
+excluded via `\bconcept\b|\bairo\b` in `EXCLUDE_RE`/`KIDS_EXCLUDE_RE`.
+Verified by photo: the "crest" reads e.g. "MEXICAN FOOTBALL 1923"
+instead of the real FMF badge.
+
+**Season-string bug found in this store**: `split_picks.py`'s
+`detect_season()` didn't handle `YYYY-YYYY` (4-digit hyphen 4-digit,
+e.g. "2026-2027") titles, only `YYYY/YY` — it fell through to matching
+just the bare first year ("2026"), which happened to coincide with our
+own bare-year convention for World Cup-year national team kits but
+produced spurious `season_conflict` skips for everything else. Fixed by
+adding a `YYYY-YYYY` branch that folds to the `YYYY/YY` form before the
+older patterns run.
 
 If a store shows up with an `AWIN_FEED_URL_*` but has few or no offers
 yet in `products.ts` (check with `grep -c 'store: "StoreName"'`), treat

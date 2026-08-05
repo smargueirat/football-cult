@@ -234,6 +234,7 @@ EXCLUDE_RE = re.compile(
     r"marvel|avengers|disney|maradona|"
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|"
+    r"\bconcept\b|\bairo\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq",
     re.I,
 )
@@ -249,6 +250,7 @@ KIDS_EXCLUDE_RE = re.compile(
     r"marvel|avengers|disney|maradona|"
     r"fan\b|aficionado|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|"
+    r"\bconcept\b|\bairo\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq",
     re.I,
 )

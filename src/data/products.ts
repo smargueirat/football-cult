@@ -1285,6 +1285,7 @@ export function findCountry(code: CountryCode): Country {
 const OFFER_CURRENCY_LOCALE: Record<Offer["currency"], string> = {
   EUR: "de-DE",
   USD: "en-US",
+  GBP: "en-GB",
 };
 
 export function formatOfferMoney(amount: number, currency: Offer["currency"]): string {
@@ -1308,6 +1309,7 @@ export function formatOfferMoney(amount: number, currency: Offer["currency"]): s
 const OFFER_CURRENCY_TO_EUR: Record<Offer["currency"], number> = {
   EUR: 1,
   USD: 1.08,
+  GBP: 0.86,
 };
 
 export function offerTotalInEUR(offer: Offer): number {
@@ -1382,7 +1384,7 @@ export interface Offer {
   store: string;
   price: number;
   shipping: number;
-  currency: "EUR" | "USD";
+  currency: "EUR" | "USD" | "GBP";
   url: string;
   inStock: boolean;
   sizes: Size[];
@@ -1467,6 +1469,7 @@ export const products: Product[] = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-home-soccer-jersey-2026-world-cup%3Fvariant%3D42706934857833", title: "Brazil Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/BrazilHomeSoccerJersey2026WorldCup_2.webp?v=1778049344" },
       { store: "FootStoreES", price: 86.71, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081627&a=3013769&m=65912", title: "Maillot Domicile Brasil Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_if7054-724_01.webp&feedId=89032&k=72daf3c8a34828a58f79061845a8e0bfeb776364" },
       { store: "FootStoreFR", price: 85.72, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif7054-724-maillot-domicile-bresil-coupe-du-monde-2026-canary-light-menta-geode-teal", title: "Maillot Domicile Brésil Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if7054-724_01.webp" },
+      { store: "MysteryShirtClub", price: 94.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-brazil-home-shirt-501805", title: "2026-2027 Brazil Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1776278304_2026-2027-brazil-nike-home-football-shirt.jpg?v=1783506015" },
     ],
   },
 {
@@ -1973,6 +1976,7 @@ export const products: Product[] = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-away-soccer-jersey-2026-world-cup%3Fvariant%3D42710746726505", title: "Brazil Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Brazil_Away_Jersey_World_Cup_2026_2.webp?v=1765245417" },
       { store: "FootStoreFR", price: 86.66, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiu1072-417-maillot-exterieur-bresil-coupe-du-monde-2026-old-royal-black-p109c", title: "Maillot Extérieur Brésil Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_nike_iu1072-417_00.webp" },
+      { store: "MysteryShirtClub", price: 74.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-brazil-away-shirt-502470", title: "2026-2027 Brazil Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1777318334_2026-2027-brazil-away-football-shirt.jpg?v=1783506024" },
     ],
   },
 {
@@ -2291,6 +2295,7 @@ export const products: Product[] = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnetherlands-2026-world-cup-away-football-jersey%3Fvariant%3D42961849286761", title: "Netherlands 2026 World Cup Away Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/netherlandsaway2026jersey.webp?v=1776235089" },
       { store: "FootStoreES", price: 149.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43406659936&a=3013769&m=65912", title: "Camiseta Exterior Países Bajos 2025", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ih0806-489_blue-beyond-noir_5.webp&feedId=89032&k=04fe3982cfb43bfc421b816f9b8d5a9fdad66de9" },
+      { store: "MysteryShirtClub", price: 64.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-netherlands-away-shirt-501804", title: "2026-2027 Netherlands Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1776278851_2026-2027-netherlands-nike-away-football-shirt.jpg?v=1782814820" },
     ],
   },
 {
@@ -3392,6 +3397,7 @@ export const products: Product[] = [
     offers: [
       { store: "FootStoreES", price: 73.1, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42403415953&a=3013769&m=65912", title: "Camiseta Third Atlético de Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fm%2Fhm3200-407.webp&feedId=89032&k=7cf2fd13acce425d5c4ad3bc0fecd2e598d707af" },
       { store: "FootStoreFR", price: 71.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3200-407-maillot-third-atletico-madrid-2025-26-photo-blue-sport-red-white-white", title: "Maillot Third Atlético Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/h/m/hm3200-407.webp" },
+      { store: "MysteryShirtClub", price: 84.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-atletico-madrid-authentic-third-shirt-494013", title: "2025-2026 Atletico Madrid Authentic Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1763999310_2025-2026-atletico-madrid-nike-authentic-third-shirt.jpg?v=1764850810" },
     ],
   },
 {
@@ -4254,6 +4260,7 @@ export const products: Product[] = [
     offers: [
       { store: "FootStoreES", price: 88.36, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45371031443&a=3013769&m=65912", title: "Maillot Exterior Corea del Sur Coupe du monde 2026", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5386-567_01.webp&feedId=89032&k=3a3908f9193f4cc42f43f906a6db88840d0554af" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5386-567-maillot-exterieur-coree-du-sud-coupe-du-monde-2026-space-purple-lt-liquid-lime", title: "Maillot Extérieur Corée du Sud Coupe du Monde 2026", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5386-567_01.webp" },
+      { store: "MysteryShirtClub", price: 94.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-south-korea-away-shirt-511948", title: "2026-2027 South Korea Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1782083036_2026-2027-south-korea-nike-away-shirt.jpg?v=1783506044" },
     ],
   },
 {
@@ -5285,6 +5292,7 @@ export const products: Product[] = [
       { store: "SportIsGoodES", price: 63.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395899781&a=3013769&m=65906", title: "Camiseta Local Inter Miami FC 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fj%2Fjj1392_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=b80f539715f8f4d250ff18559319c2bad2905335" },
       { store: "SportIsGoodFR", price: 64.23, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj1392-maillot-domicile-inter-miami-fc-2025-26-easpink", title: "Maillot Domicile Inter Miami FC 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/j/j/jj1392_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasPT", price: 150.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40432842730&a=3013769&m=77026", title: "Camisola Principal Oficial 25/26 do Inter Miami CF", inStock: true, sizes: ["XS", "S", "M", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F035f0f8d29584c4ea41dbb546454d2fd_9366%2FCamisola_Principal_Oficial_25-26_do_Inter_Miami_CF_Rosa_JJ1393_HM1.jpg&feedId=92150&k=22405733b12cf9f9cc024dd55c12041d219f065b" },
+      { store: "MysteryShirtClub", price: 69.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-inter-miami-lionel-messi-authentic-home-shirt-460716", title: "2025-2026 Inter Miami LIONEL MESSI Authentic Home Shirt", inStock: true, sizes: ["XS", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1739391059_inter-miami-2025-2026-authentic-home-football-shirt-messi-10-back.jpg?v=1763236195" },
     ],
   },
 {
@@ -5386,6 +5394,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka6785-maillot-prematch-juventus-turin-2025-26-black", title: "Maillot Prematch Juventus Turin 2025/26", inStock: true, sizes: ["S", "M", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka6785_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 32.94, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44476435185&a=3013769&m=65906", title: "Maillot de entrenamiento Juventus Turín EU 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn7472_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=233bfe055b46436579a513bf529045c5558bff29" },
       { store: "AdidasES", price: 70.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45361280109&a=3013769&m=77008", title: "CAMISETA CALENTAMIENTO JUVENTUS 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7bc52660b7e541779b30c97835dca6a5_9366%2FCAMISETA_CALENTAMIENTO_JUVENTUS_25-26_Negro_KA6785_HM1.jpg&feedId=92152&k=b87e073b3b47a7c3bc6ad8183898629a6e28eec5" },
+      { store: "MysteryShirtClub", price: 32.39, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-juventus-pre-match-shirt-yellow-461708", title: "2025 Juventus Pre-Match Shirt (Yellow)", inStock: true, sizes: ["L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1740952634_juventus-2024-2025-adidas-pre-match-shirt-yellow.jpg?v=1763627024" },
     ],
   },
 {
@@ -5560,6 +5569,7 @@ export const products: Product[] = [
       { store: "FootStoreES", price: 25.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45171893062&a=3013769&m=65912", title: "Camiseta de entrenamiento Portugal 2026", inStock: true, sizes: ["M", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-788574-03-black-6a42634c6f625-1.webp&feedId=89032&k=20f5013bdf25861e70faeaac97daa0d860ecec4e" },
       { store: "SportIsGoodES", price: 48.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44291547144&a=3013769&m=65906", title: "Maillot de calentamiento Portugal Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784788-37-club-red-green-lagoon-69c2bf7f4c626-1.webp&feedId=89044&k=18eef0ae9750814dd49e7ab56fd091800921f4c7" },
       { store: "PlanetFoot", price: 64.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-echauffement-portugal-puma-homme-vert-pre-match-coupe-du-monde%3Fvariant%3D53556160659797", title: "Maillot Portugal Puma Homme 2026 Pre-Match Vert - Coupe du monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-echauffement-portugal-puma-homme-pre-match-coupe-du-monde-vert1.avif?v=1777799456" },
+      { store: "MysteryShirtClub", price: 36.44, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-portugal-prematch-ss-jersey-black-454909", title: "2025-2026 Portugal Prematch SS Jersey (Black)", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1736476321_portugal-2024-2025-puma-prematch-ss-football-jersey-black.jpg?v=1763236283" },
     ],
   },
 {
@@ -6136,6 +6146,7 @@ export const products: Product[] = [
       { store: "FootStoreFR", price: 71.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F110-0100-001275-maillot-domicile-haiti-coupe-du-monde-2026-blue", title: "Maillot Domicile Haïti Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/s/e/seata-110-0100-001275-blue-69e9fe8ea1baf-1.webp" },
       { store: "SportIsGoodES", price: 71.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44567101377&a=3013769&m=65906", title: "Maillot Domicile Haïti Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fe%2Fseata-110-0100-001275-blue-69e9fe8ea1baf-1.webp&feedId=89044&k=00b4f5aa31655e68d3f95adbac348a78129a4513" },
       { store: "SportIsGoodFR", price: 71.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F110-0100-001275-maillot-domicile-haiti-coupe-du-monde-2026-blue", title: "Maillot Domicile Haïti Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/s/e/seata-110-0100-001275-blue-69e9fe8ea1baf-1.webp" },
+      { store: "MysteryShirtClub", price: 69.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-haiti-home-shirt-503495", title: "2026-2027 Haiti Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1777234985_2026-2027-haiti-saeta-home-football-shirt.jpg?v=1783506030" },
     ],
   },
 {

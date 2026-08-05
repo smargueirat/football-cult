@@ -19,6 +19,9 @@ def existing_products():
     return existing
 
 def detect_season(title):
+    m = re.search(r'\b(202[4-9])-(20\d{2})\b', title)
+    if m:
+        return f"{m.group(1)}/{m.group(2)[-2:]}"
     m = re.search(r'\b(202[4-9])[/-](\d{2})\b', title)
     if m:
         return f"{m.group(1)}/{m.group(2)}"

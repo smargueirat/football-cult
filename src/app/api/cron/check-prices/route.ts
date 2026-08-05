@@ -20,6 +20,14 @@ const FEED_URLS: Record<string, string | undefined> = {
   BSTNIT: process.env.AWIN_FEED_URL_BSTN_IT,
 };
 
+// Mystery Shirt Club isn't onboarded via an Awin datafeed CSV — it has none
+// registered — so we mine/re-price it straight from its public Shopify
+// storefront JSON API instead, building the same Awin cread.php deep link
+// (awinmid=124324, our publisher id 3013769) the datafeed would have used.
+const SHOPIFY_STORES: Record<string, { domain: string; awinmid: string } | undefined> = {
+  MysteryShirtClub: { domain: "mysteryshirtclub.com", awinmid: "124324" },
+};
+
 interface FeedRow {
   aw_deep_link?: string;
   // Los feeds formato "Google" traen el precio de lista en "price" y el
@@ -36,6 +44,35 @@ async function fetchFeed(url: string): Promise<FeedRow[]> {
   const buffer = Buffer.from(await res.arrayBuffer());
   const csv = gunzipSync(buffer).toString("utf-8");
   return parse(csv, { columns: true, skip_empty_lines: true, bom: true });
+}
+
+interface ShopifyVariant {
+  price: string;
+  available: boolean;
+}
+
+interface ShopifyProduct {
+  handle: string;
+  variants: ShopifyVariant[];
+}
+
+async function fetchShopifyFeed(domain: string, awinmid: string): Promise<FeedRow[]> {
+  const rows: FeedRow[] = [];
+  for (let page = 1; page <= 20; page++) {
+    const res = await fetch(`https://${domain}/products.json?limit=250&page=${page}`);
+    const data = (await res.json()) as { products?: ShopifyProduct[] };
+    const items = data.products ?? [];
+    if (items.length === 0) break;
+    for (const p of items) {
+      const variant = p.variants.find((v) => v.available) ?? p.variants[0];
+      if (!variant) continue;
+      const productUrl = `https://${domain}/products/${p.handle}`;
+      const deepLink = `https://www.awin1.com/cread.php?awinmid=${awinmid}&awinaffid=3013769&ued=${encodeURIComponent(productUrl)}`;
+      rows.push({ aw_deep_link: deepLink, price: variant.price });
+    }
+    if (items.length < 250) break;
+  }
+  return rows;
 }
 
 function parsePrice(raw: string | undefined): number | null {
@@ -62,11 +99,17 @@ export async function GET(req: NextRequest) {
   for (const product of products) {
     for (const offer of product.offers) {
       const feedUrl = FEED_URLS[offer.store];
-      if (!feedUrl) continue;
+      const shopifyStore = SHOPIFY_STORES[offer.store];
+      if (!feedUrl && !shopifyStore) continue;
 
       try {
         if (!feedCache.has(offer.store)) {
-          feedCache.set(offer.store, await fetchFeed(feedUrl));
+          feedCache.set(
+            offer.store,
+            shopifyStore
+              ? await fetchShopifyFeed(shopifyStore.domain, shopifyStore.awinmid)
+              : await fetchFeed(feedUrl!)
+          );
         }
         const rows = feedCache.get(offer.store)!;
         const match = rows.find((r) => r.aw_deep_link === offer.url);
