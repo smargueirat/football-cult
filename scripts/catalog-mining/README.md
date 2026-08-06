@@ -8,8 +8,70 @@ stores is not fixed — it's whatever has an `AWIN_FEED_URL_*` entry in
 so a newly-approved connection is picked up automatically the next time
 this runs. As of the last full mining pass it had 11 entries:
 PlanetFoot, FansJerseyHub, ComoFC, DeporteOutlet, Foot-Store ES/FR,
-Sport is Good ES/FR, adidas ES/PT, BSTN IT — plus **Mystery Shirt Club**,
+Sport is Good ES/FR, adidas ES/PT, BSTN IT — plus **Mystery Shirt Club**
+(Shopify, not Awin) and **eBay** (Partner Network, not Awin either), both
 onboarded without an `AWIN_FEED_URL_*` entry (see below).
+
+## eBay (Partner Network + Browse API — not Awin)
+
+Approved separately from Awin: eBay Partner Network (EPN, for affiliate
+commission/tracking — free to join, gives a numeric Campaign ID) plus a
+separate eBay Developer Program registration (also free) for API access
+(Browse API). Credentials live in `.env.local`/Vercel as
+`EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`, `EBAY_CAMPAIGN_ID`. The OAuth
+flow used (`client_credentials` grant, app-level token) is server-to-
+server with our own issued API keys — not a user login, same read-only
+posture as everything else here.
+
+Unlike every Awin store (one bulk feed to filter), eBay has **no bulk
+feed** — `ebay_mine.py` runs one Browse API search per (team, type),
+picks the cheapest result that survives filtering, then makes one more
+"get item" call just for that single winner to read its real size list
+(search results don't include sizes). Has resume support (re-run with
+the same `out_path` and it skips teams already in that file) since a
+full 208-team run is ~600+ API calls and can hit a transient network
+timeout partway through — don't lose partial progress on a crash.
+
+```bash
+cd scripts/catalog-mining
+python3 ebay_mine.py all /tmp/ebay_picks.json      # or a text file, one TeamKey per line, instead of "all"
+python3 split_picks.py /tmp/ebay_picks.json         # same new/add/season-conflict split as Awin stores
+python3 gen_new_teams.py /tmp/ebay_picks_NEW.json eBay USD /tmp/ebay_new_blocks.ts
+# ...then the same insert-blocks + refresh.py --apply steps as any other store (see below)
+```
+
+**False-positive classes found and fixed while building this**:
+- eBay is dominated by used/second-hand listings — filtered at the API
+  level via `filter=conditionIds:{1000|1500|1750}` (New / New with tags
+  / New without tags), not by trusting title wording.
+- SEO spam: a **$11.75 "Chelsea Home Jersey Sleeve Sponsor Patch Print"**
+  turned out to be just a sponsor logo decal, not a garment — "jersey"
+  in the title was enough to pass `JERSEY_RE` alone. Fixed with a
+  `MIN_JERSEY_PRICE` floor ($15) plus an `ACCESSORY_RE` check for
+  patch/decal/sticker/badge wording.
+- The opposite problem: a **$699.99 Sevilla listing** became "the"
+  price with no cheaper alternative found, which is useless for a
+  price-comparison site even though the listing itself was genuine.
+  Fixed with a `MAX_JERSEY_PRICE` ceiling ($500 — authentic/player-issue
+  tier jerseys legitimately run $150-400, so this only catches real
+  outliers).
+- `"youth"` wasn't in `EXCLUDE_RE`'s kids-signal list (only
+  `kids?|junior|niñ|bambin[oa]|...` etc.) — a **Man City "Youth" jersey**
+  was being picked as the cheapest "home" candidate. Added.
+- **Country/club name collision**: searching for national team "Ukraine"
+  matched a listing for club **Shakhtar Donetsk** that merely mentioned
+  "Ukraine" in its marketing title — a different entity entirely, not
+  the national team. No general regex fix applied (too narrow/risky to
+  generalize); dropped by hand. Watch for this class specifically when
+  reviewing eBay picks for any national team whose search terms overlap
+  with a well-known club's marketing copy.
+- `split_picks.py`'s `detect_season()` can misread a kids age-range
+  ("13-14 YEARS") or a no-separator "2025 2026" year pair as the wrong
+  season — same class of bug as the retro pipeline's Como-1907/kids-age
+  fixes below, not yet ported into `split_picks.py`/`gen_new_teams.py`.
+  Produces false `season_conflict` skips (harmless — same
+  skip-rather-than-guess default) rather than bad data, so left as a
+  known gap rather than blocking on it.
 
 ## Stores without an Awin datafeed CSV (Mystery Shirt Club)
 
