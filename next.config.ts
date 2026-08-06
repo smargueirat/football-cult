@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "cdn.blazimg.com" },
       { protocol: "https", hostname: "b2c.spacefoot.com" },
       { protocol: "https", hostname: "www.sportspar.de" },
+      { protocol: "https", hostname: "i.ebayimg.com" },
     ],
   },
 };
