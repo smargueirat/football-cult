@@ -75,7 +75,19 @@ contains teams we already know.
   team+type combos, pulling team metadata from `new_teams_batch*.py`,
   falling back to colors already in `products.ts` for older teams.
 - `refresh.py` — brace-depth-aware `products.ts` block parser + offer
-  inserter (`split_blocks`).
+  inserter (`split_blocks`). Looks for the array via the literal
+  `const productsData = [` marker (see "products.ts array size" below) —
+  if that declaration is ever renamed, update `start_marker` here too.
+- `unmatched_scan.py <csv> <google|awin> <out.json> [min_count]` — finds
+  jersey-titled rows that pass `JERSEY_RE`/`EXCLUDE_RE` but match no
+  `TEAM_PATTERNS` entry, clustered by normalized title and sorted by
+  frequency, for spotting teams/clubs we don't track yet. In practice
+  (checked across all 11 stores) the high-frequency clusters are almost
+  entirely **blank manufacturer template kits sold without any club
+  branding** — "Maillot Macron Rigel", "Camiseta Joma Championship VII",
+  "adidas Entrada26", "Uhlsport Distinction", referee shirts, plain
+  training tees, etc. — not real omitted teams. Don't assume a cluster is
+  a new team just because it's frequent; check the sample title/photo.
 - `new_teams_batch1.py`..`new_teams_batch5.py` — accumulated team
   metadata (name in es/en/pt, colorHex, colorHexSecondary, regex) for
   every team added beyond the original ~24. Add new teams to a new
@@ -236,6 +248,27 @@ is explicitly called out in "Adding a team" above as one of the trickiest
 classes), **spot-check a diverse sample by photo** before trusting a full
 batch — different stores, teams, and decades — rather than assuming the
 regex pipeline alone is enough at this scale.
+
+## products.ts array size (TS2590)
+
+Once `productsData` passed ~1,050 entries, `npx tsc --noEmit` started
+failing with `TS2590: Expression produces a union type that is too
+complex to represent` on the array literal itself — TypeScript's
+literal-type checker has a real ceiling when a huge array is checked
+directly against an explicitly-typed target (`Product[]`). Fixed by
+declaring the array as `const productsData = [...]` (no type annotation,
+so TS infers loosely) and casting once at the very end:
+`export const products: Product[] = productsData as Product[];` — much
+cheaper for the compiler than bidirectional inference over 1000+ object
+literals. If this error reappears as the catalog keeps growing, the next
+step would be splitting `productsData` into a few `const` chunks
+(`productsData1`, `productsData2`, ...) concatenated with `[...c1, ...c2]`
+before the cast, since the same TS2590 ceiling is per-literal, not
+per-file. Don't revert to a direct `: Product[]` annotation on the
+literal — re-run `npx tsc --noEmit` after any large batch add to catch
+this early. `refresh.py`'s `split_blocks()` looks for the
+`const productsData = [` marker, not the old `export const products`
+one — keep both in sync if either is renamed again.
 
 ## Safety rule (standing, do not change)
 

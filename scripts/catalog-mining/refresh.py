@@ -8,7 +8,7 @@ def split_blocks(content):
     """Split the products array into individual '  {...},\n' block strings
     by tracking brace depth, instead of one fragile regex over the whole
     file (which silently failed to match some blocks)."""
-    start_marker = "export const products: Product[] = [\n"
+    start_marker = "const productsData = [\n"
     start = content.index(start_marker) + len(start_marker)
     end = content.index("\n];", start) + 1
     body = content[start:end]
