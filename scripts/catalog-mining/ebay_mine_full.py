@@ -68,8 +68,14 @@ def save(picks, path):
 def mine_current(client, team_key, team_en, teams_re, types_re):
     out = {}
     for type_key in CURRENT_TYPES:
-        query = f"{team_en} {TYPE_QUERY_WORD[type_key]} soccer jersey 2025 2026"
-        results = client.search(query, limit=25)
+        # Bug found: baking "2025 2026" into the query text made eBay's
+        # relevance ranking treat it as near-required, so real current-stock
+        # listings titled "2024-25"-style (still in season right now) or with
+        # no year at all dropped out of the top results. Season filtering
+        # already happens via SEASON_OK_RE below -- the query itself should
+        # stay broad.
+        query = f"{team_en} {TYPE_QUERY_WORD[type_key]} soccer jersey"
+        results = client.search(query, limit=30)
         candidates = []
         for item in results:
             title = item.get("title") or ""
@@ -172,7 +178,12 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
     overall — one output entry per (team, type, season)."""
     out = {}
     for type_key in RETRO_TYPES:
-        query = f"{team_en} {TYPE_QUERY_WORD[type_key]} soccer jersey retro vintage"
+        # Same bug class as mine_current: many genuinely old listings (a
+        # reseller's "TEAM 2013/2014 SHIRT" with no "retro"/"vintage"
+        # wording at all) dropped out of results when those words were
+        # baked into the query. parse_retro_season() below already does
+        # the real classification -- broad query, then filter.
+        query = f"{team_en} {TYPE_QUERY_WORD[type_key]} soccer jersey"
         results = client.search(query, limit=50)
         by_season = {}
         for item in results:

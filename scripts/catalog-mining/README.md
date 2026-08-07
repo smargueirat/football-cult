@@ -73,6 +73,55 @@ python3 gen_new_teams.py /tmp/ebay_picks_NEW.json eBay USD /tmp/ebay_new_blocks.
   skip-rather-than-guess default) rather than bad data, so left as a
   known gap rather than blocking on it.
 
+### Full eBay pass (`ebay_mine_full.py`) — every type, kids, and retro
+
+`ebay_mine.py` (above) only ever covers current-season home/away/third
+for adults. `ebay_mine_full.py` covers everything else eBay actually has
+in New condition: goalkeeper and training (already recognized by
+`TYPE_PATTERNS`, just never queried before), a kids pass, and a retro
+pass that keeps **every** distinct historic season found per (team,
+type) — same "don't collapse to one" philosophy as the retro pipeline
+below, not just the cheapest overall.
+
+```bash
+cd scripts/catalog-mining
+python3 ebay_mine_full.py all /tmp/ebay_full      # writes current_picks.json, kids_picks.json, retro_picks.json
+# current_picks.json -> the normal split_picks.py -> gen_new_teams.py -> refresh.py flow
+# kids_picks.json    -> gen_kids_teams.py (gen_new_teams.py has no ageGroup support; id is
+#                        "{team}-{type}-kids", no season suffix, season field hardcoded "2026")
+# retro_picks.json   -> wrap each entry as {key: [offer]} with a "store": "eBay" field added,
+#                        then retro_gen.py (its input shape is normally multi-store, eBay is single-store)
+```
+
+Full team-list run is ~2000+ API calls (5 current types + 3 kids types +
+3 retro types per team) — budget several hours, run in the background.
+Same resume support as `ebay_mine.py` (per output file, keyed by team).
+
+**Bugs found and fixed while building this** (both live in the shared
+`extract.py`, so they also benefit the Awin pipeline):
+- **Query text was suppressing real results.** Baking `"2025 2026"` into
+  the current-pass query (or `"retro vintage"` into the retro pass) makes
+  eBay's relevance ranking treat those words as near-required — a
+  genuinely current listing titled `"...2024-25..."` (different season
+  notation) or a genuinely old listing with no "retro"/"vintage" wording
+  at all (just an old listing being resold as-is) silently drops out of
+  the results entirely, not just out of the winning pick. Confirmed by
+  hand: searching `"Heidenheim soccer jersey"` (no bias words) surfaced
+  real 2013/14 and 2017/18 shirts that `"Heidenheim ... retro vintage"`
+  never found. Fixed by dropping season/retro words from the query text
+  — `SEASON_OK_RE` / `parse_retro_season()` already do the real
+  classification on the results, so the query itself should stay broad.
+  The kids pass keeps `"kids youth"` in its query on purpose: unlike a
+  season year (which has many equally-common formats), "kids"/"youth" is
+  a near-universal, low-variance word sellers actually use, so biasing
+  toward it trades away much less recall than season/retro wording did.
+- `KIDS_SIGNAL_RE`'s bare `"N-N"` age-range fallback (no units word) also
+  matches a season suffix — a title ending in `"... 26-27"` (2026-27
+  season) was misread as ages 26-27 and mislabeled two adult jerseys
+  (Bosnia, Uzbekistan) as kids products. Fixed by restricting that
+  no-units fallback to plausible kid ages (0-17); a units word (ans/
+  years/años) still allows any digit count, same as before.
+
 ## Stores without an Awin datafeed CSV (Mystery Shirt Club)
 
 Not every newly-approved Awin advertiser has a CSV datafeed we can list —
