@@ -22,25 +22,15 @@ def colors_from_existing_products(team):
         return m.group(1), m.group(2)
     return None
 
-def detect_season(title):
-    m = re.search(r'\b(202[4-9])-(20\d{2})\b', title)
-    if m:
-        return f"{m.group(1)}/{m.group(2)[-2:]}"
-    m = re.search(r'\b(202[4-9])[/-](\d{2})\b', title)
-    if m:
-        return f"{m.group(1)}/{m.group(2)}"
-    m = re.search(r'\b(\d{2})[/-](\d{2})\b', title)
-    if m:
-        return f"20{m.group(1)}/{m.group(2)}"
-    m = re.search(r'\b(202[4-9])\b', title)
-    if m:
-        return m.group(1)
-    # títulos de selección estilo "Italy 26 Away Jersey" (año de mundial
-    # suelto, sin barra) -> temporada "2026", no el default de clubes.
-    m = re.search(r'\b(2[4-7])\b', title)
-    if m:
-        return f"20{m.group(1)}"
-    return "2025/26"
+# detect_season() used to be duplicated here with a narrower/buggier
+# implementation than split_picks.py's (no support for full "YYYY/YYYY"
+# titles, no guard against a kids age-suffix like "13-14 YEARS" being
+# misread as a season) -- real bug found: that drift caused new products
+# generated here to sometimes get a different season string than
+# split_picks.py would compute for the exact same title, so a later
+# re-mine of the same team+type would file a spurious season_conflict
+# against itself. Now imports the single shared implementation instead.
+from split_picks import detect_season
 
 def gen(picks_path, store_name, currency, out_path):
     picks = json.load(open(picks_path, encoding='utf-8'))
