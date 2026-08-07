@@ -174,6 +174,45 @@ contains teams we already know.
    cross-language team-name collisions, adidas items whose `custom_2`
    isn't football.
 
+**Retro/heritage items that only reveal themselves in the description,
+not the title** (found 2026-08-07): a bare 2-digit suffix in the title
+(e.g. "Maillot del portero de Dinamarca 86") is the only surface signal
+— `EXCLUDE_RE`'s `retro|vintage|...` words only appear in the feed's
+`description` column ("homenaje... época gloriosa... temporada 86"),
+which the pipeline doesn't scan. Since `pick.py`'s `PENALTY_RE` only
+*deprioritizes* bare 2-digit suffixes (not in the {24,25,26,27}
+near-current set) rather than excluding them, a heritage item can still
+win if it's the only/cheapest candidate for that (team, type) in a given
+store's feed. **Before applying `_ADD.json`/`_NEW.json`, grep every
+store's raw picks (not just the split output) for a title ending in a
+bare 2-digit number that isn't a 24-28 season/World-Cup year** — this
+catches items a same-season `detect_season()` match would otherwise let
+through silently as a normal current-season "add offer". Two real hits
+caught this way: BSTN IT's "Liverpool FC Away Jersey 95" (a genuine 1995
+Carlsberg-sponsor heritage reissue, confirmed by photo) and Foot-Store's
+"Maillot ... Dinamarca 86" (explicit "homenaje" reissue in the
+description) on both FootStoreES and FootStoreFR.
+
+**JELEX brand (Deporte Outlet / Sportspar's own house label) sells
+unlicensed "retro-style" reproductions** — generic embroidered team name
+instead of the real federation crest, describes itself as "aspecto
+retro" / "Retro History" even on lines not named that in the title
+(e.g. "Alemania 'Performante' JELEX ... Camiseta de tercera
+equipación"). Same class as the Concept/AIRO fan-made mockups already
+excluded — added `\bjelex\b` to `EXCLUDE_RE`/`KIDS_EXCLUDE_RE` in
+`extract.py`.
+
+**Special/anniversary-edition offers can pass season-detection as a
+normal current offer while being visually a different product** — e.g.
+Deporte Outlet's "S.S. Lazio ... primera equipación 125 años" is a white
+anniversary shirt, not Lazio's actual sky-blue home kit; `detect_season`
+correctly reads it as the current season so it would silently overwrite/
+sit alongside the real home-kit offer on the same product card. Caught
+by photo review, not by any regex — worth an explicit spot-check
+whenever a title mentions an anniversary ("años"/"aniversario"/
+"anniversary") even if the (team, type, season) key looks like a normal
+match.
+
 ## Running a full mining pass (one store)
 
 ```bash
@@ -218,11 +257,40 @@ python3 refresh.py ../../src/data/products.ts /tmp/picks_ADD.json FootStoreES EU
 ```
 
 Repeat per store: FootStoreES, FootStoreFR, SportIsGoodES, SportIsGoodFR,
-PlanetFoot, AdidasES, AdidasPT, BSTNIT — each has a slightly different
-column layout, see the `FEED_URLS`/`FeedRow` handling in
-`src/app/api/cron/check-prices/route.ts` for the price-field quirks
-(Google-format feeds put the real charged price in `sale_price`, not
-`price`).
+PlanetFoot, AdidasES, AdidasPT, BSTNIT, ComoFC, DeporteOutlet,
+FansJerseyHub — each has a slightly different column layout, see the
+`FEED_URLS`/`FeedRow` handling in `src/app/api/cron/check-prices/route.ts`
+for the price-field quirks (Google-format feeds put the real charged
+price in `sale_price`, not `price`).
+
+**Exact `pick.py` column args per store**, verified 2026-08-07 (running
+with wrong columns doesn't error — it silently returns zero picks, since
+`pick_best` just drops every row that has no size match; always sanity-
+check the output line count against the store's known catalog size
+before concluding a store has nothing new):
+
+```
+# Awin-native format (search_price, product_name, aw_deep_link, aw_image_url)
+python3 pick.py f.csv search_price delivery_cost out.json product_name custom_1        aw_deep_link aw_image_url            # FootStoreES, SportIsGoodES
+python3 pick.py f.csv search_price delivery_cost out.json product_name size_stock_status aw_deep_link aw_image_url          # DeporteOutlet — custom_1 holds "Envío inmediato" shipping text, NOT size
+python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url custom_2 # AdidasES, AdidasPT — custom_1 now holds "Adult"/"Kids", real size moved to Fashion:size; custom_2 is still the real sport-category column
+python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url          # BSTNIT — same Fashion:size relocation, no sport_category_col needed
+
+# Google-shopping format (price/sale_price, title, aw_deep_link, image_link)
+python3 pick.py f.csv price shipping out.json title size aw_deep_link image_link  # ComoFC, FansJerseyHub, FootStoreFR, PlanetFoot, SportIsGoodFR
+```
+
+The Awin-format stores' `custom_1` column is NOT a stable "size" column
+across merchants — it holds whatever that merchant's feed maps to
+`custom_1` (size for FootStoreES/SportIsGoodES, shipping text for
+DeporteOutlet, an age-group label for Adidas/BSTN). Google-format feeds
+all reliably expose real `size`/`shipping` columns (not just the title-
+suffix fallback `pick.py` falls back to) — use them explicitly rather
+than relying on `title_size` parsing, which silently drops every row
+for stores whose titles don't end in a "- SIZE" suffix (FootStoreFR/
+SportIsGoodFR titles never do, so the title-suffix fallback alone
+returns zero picks for those two even though real size data exists in
+the `size` column).
 
 ## Brand field (`Product.brand`)
 
