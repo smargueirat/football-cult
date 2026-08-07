@@ -57,6 +57,7 @@ export default function RootLayout({
             HTMLMetaElement
           >)}
         />
+        <meta name="verify-admidad" content="2666c15826" />
       </head>
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
         <StadiumWatermark />
