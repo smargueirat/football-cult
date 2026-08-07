@@ -7,7 +7,6 @@ import { addRecentlyViewed } from "@/lib/recentlyViewed";
 import {
   Offer,
   Product,
-  STORE_LOCALE,
   Size,
   availableSizesForCountry,
   displayTitleForCountry,
@@ -85,11 +84,9 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   // precio", para que nunca se vea una camiseta distinta a la que el
   // usuario termina comprando.
   const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
-  // Nombre real tal como aparece en la tienda, no un nombre armado por
-  // nosotros (equipo + tipo). Se prefiere una oferta cuyo título esté en
-  // el idioma elegido en el sitio; si ninguna oferta está en ese idioma,
-  // se usa el nombre genérico traducido (nunca el título real de una
-  // oferta en OTRO idioma, ver comentario de displayTitleForCountry).
+  // Nombre real tal como aparece en la tienda (siempre, sea cual sea su
+  // idioma), no un nombre armado por nosotros (equipo + tipo) -- ver
+  // displayTitleForCountry, regla fija, no volver a gatear esto por idioma.
   const displayName =
     displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
 
@@ -272,9 +269,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               )}
                             </p>
                             <p className="text-xs text-[#a8926a]">
-                              {STORE_LOCALE[offer.store] === locale && offer.title
-                                ? offer.title
-                                : `${team} ${type}`}
+                              {offer.title ?? `${team} ${type}`}
                             </p>
                             {!offer.inStock ? (
                               <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>

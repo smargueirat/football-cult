@@ -27753,12 +27753,9 @@ export function bestOfferForCountry(
     .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
 }
 
-// Idioma "natural" de cada tienda, según en qué mercado vende (para
-// preferir, entre ofertas reales, un título en el idioma elegido en el
-// sitio en vez de mostrar siempre el de la oferta más barata sin importar
-// el idioma). Las tiendas que no venden en es/en/pt (FR, IT) no tienen
-// entrada acá: nunca "matchean" un idioma, pero siguen usándose como
-// resultado de reserva si ninguna oferta coincide con el idioma elegido.
+// Idioma "natural" de cada tienda, según en qué mercado vende. Ya NO se usa
+// para elegir qué título mostrar (ver nota abajo) -- queda solo por si algún
+// otro caller la necesita para otra cosa (badges, agrupación, etc).
 export const STORE_LOCALE: Partial<Record<string, Locale>> = {
   AdidasES: "es",
   DeporteOutletES: "es",
@@ -27769,27 +27766,25 @@ export const STORE_LOCALE: Partial<Record<string, Locale>> = {
   BSTNIT: "en",
 };
 
-// Nombre real (no inventado) a mostrar, priorizando -entre las ofertas
-// que de verdad llegan a este país- una cuyo título esté en el idioma
-// elegido en el sitio. Si ninguna coincide, cae al título de la oferta
-// más barata (bestOfferForCountry), y por último al nombre genérico
-// armado por nosotros (que resuelve el caller).
+// Nombre real (no inventado) a mostrar: SIEMPRE el título literal de la
+// mejor oferta disponible en ese país, sea cual sea su idioma. Regla fija,
+// no volver a "arreglarla" filtrando por idioma -- eso ya se hizo antes y
+// se revirtió porque el usuario reportó específicamente que el nombre real
+// tiene que quedar igual que en la página de venta, aunque esté en otro
+// idioma que el del sitio (mostrar la oferta más barata en OTRO idioma es
+// preferible a inventar un nombre). Si la mejor oferta no tiene título
+// (dato faltante), se prueba con cualquier otra oferta que sí lo tenga
+// antes de caer al nombre genérico armado por nosotros (que resuelve el
+// caller como `${team} ${type}`).
 export function displayTitleForCountry(
   product: Product,
   country: CountryCode,
-  locale: Locale
+  _locale: Locale
 ): string | undefined {
-  const candidates = product.offers.filter(
-    (o) => o.inStock && offerShipsTo(o.store, country) && o.title
-  );
-  const inLocale = candidates
-    .filter((o) => STORE_LOCALE[o.store] === locale)
-    .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
-  // Si ninguna oferta real está en el idioma elegido, no mostramos el
-  // título real de una oferta en OTRO idioma (eso es justamente lo que
-  // el usuario reportó como mal); el caller cae al nombre genérico
-  // armado por nosotros (equipo + tipo), que sí está traducido siempre.
-  return inLocale?.title;
+  const best = bestOfferForCountry(product, country);
+  if (best?.title) return best.title;
+  const anyWithTitle = product.offers.find((o) => o.title);
+  return anyWithTitle?.title;
 }
 
 export function shipsToCountry(product: Product, country: CountryCode): boolean {
