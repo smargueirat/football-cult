@@ -151,6 +151,47 @@ Same resume support as `ebay_mine.py` (per output file, keyed by team).
   TeamKey later, that's the right fix; until then, this is a recurring
   false-positive class specifically for country keys whose domestic
   leagues are otherwise unrepresented in the catalog.
+- **`split_picks.py`'s season-conflict check was too strict — fixed, not
+  just documented as a known gap this time.** Running the full 208-team
+  pass, ~118 of ~373 current-season picks got skipped as
+  `season_conflict` even though most were the SAME season written
+  differently (our own `"2026"` bare-year convention for a national
+  team's World Cup kit vs. a listing titled `"2025/26"` — same season).
+  Fixed with `season_end_year()`/`seasons_equivalent()`: canonicalize to
+  the season's ending year (`"2026"` → 2026, `"2025/26"` → 2026,
+  `"2026/27"` → 2027) and compare that instead of the raw string — a
+  real next-season conflict (2026 vs 2027) still correctly skips.
+  Rescued ~60 legitimate offers. Also fixed two root causes in
+  `detect_season()` itself while in there: it had no pattern at all for
+  full `"YYYY/YYYY"`-style seasons (`"2025/2026"`, all 4 digits both
+  sides) — fell through to grabbing just the bare first year instead;
+  and its generic 2-digit `"NN-NN"` pattern (meant for `"25-26"`) had no
+  lower bound, so a kids age-suffix like `"...13-14 YEARS"` on an
+  **Italy** listing whose real season (`"2026 - 2027"`) was sitting
+  right there in the same title got misread as season `"2013/14"`
+  instead. Now strips a trailing age suffix first (same
+  `TITLE_KIDS_AGE_SUFFIX_RE` the retro pipeline already used for this)
+  and requires the 2-digit pair's first number to be a plausible
+  season-start year (24-30), not just any two consecutive digits.
+- **Retro picks can collide with a product `retro_gen.py` already
+  created from an Awin store** (same team+type+season, different
+  source) — `retro_gen.py` has no dedup check of its own, so blindly
+  running it on eBay's retro picks without checking first would produce
+  a duplicate `id`. Check existing retro product ids first (by parsing
+  `products.ts` for `typeKey: "retro"` blocks) and route collisions
+  through a normal "merge this store's offer into the existing block"
+  path instead of `retro_gen.py`, which should only ever see genuinely
+  new team+type+season combos.
+- **Kids products don't get their offers refreshed.** `refresh.py`
+  explicitly skips `ageGroup: "kids"` blocks (by design, since it has no
+  concept of age group at all) — so if a kids product already exists
+  from an earlier mining pass, a new eBay kids pick for that exact
+  team+type is silently dropped rather than added as a second offer or
+  used to refresh the price. `gen_kids_teams.py` only ever creates
+  genuinely new kids products. Known gap, not fixed yet — a
+  `refresh_kids.py` analogous to `refresh.py` (keyed by `id` ==
+  `"{team}-{type}-kids"` instead of team+type) would be the right fix
+  if this starts mattering (kids prices going stale).
 
 ## Stores without an Awin datafeed CSV (Mystery Shirt Club)
 
@@ -229,11 +270,15 @@ contains teams we already know.
   "adidas Entrada26", "Uhlsport Distinction", referee shirts, plain
   training tees, etc. — not real omitted teams. Don't assume a cluster is
   a new team just because it's frequent; check the sample title/photo.
-- `new_teams_batch1.py`..`new_teams_batch5.py` — accumulated team
+- `new_teams_batch1.py`..`new_teams_batch6.py` — accumulated team
   metadata (name in es/en/pt, colorHex, colorHexSecondary, regex) for
   every team added beyond the original ~24. Add new teams to a new
-  `new_teams_batch6.py` file and wire it into `gen_new_teams.py`'s
-  imports rather than editing old batch files.
+  `new_teams_batch7.py` file and wire it into **both**
+  `gen_new_teams.py`'s and `retro_gen.py`'s imports (both maintain their
+  own separate `BATCH1..N` merge — batch6 was added to the file but only
+  wired into one of the two once, and every pick for those teams
+  silently printed "no metadata found" until the second import was
+  added too) rather than editing old batch files.
 
 ## Adding a team found in the feeds
 
