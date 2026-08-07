@@ -121,6 +121,36 @@ Same resume support as `ebay_mine.py` (per output file, keyed by team).
   (Bosnia, Uzbekistan) as kids products. Fixed by restricting that
   no-units fallback to plausible kid ages (0-17); a units word (ans/
   years/años) still allows any digit count, same as before.
+- **Brand-name/country-name collision**: Jordan (the country)'s
+  `TEAM_PATTERNS` regex includes the bare word "jordan" — which also
+  matches Nike's "Jordan"/"Air Jordan" sub-brand, heavily used in PSG's
+  marketing copy (PSG's kits are a real Jordan Brand collaboration). A
+  "jordania" retro search came back ~80% PSG stadium/away/third shirts
+  ("Nike Jordan Paris Saint-Germain 2021/22...") with only a handful of
+  shirts that actually said "JORDAN NATIONAL TEAM FOOTBALL". A
+  goalkeeper current-pick had the same root cause from a different
+  angle: "JORDAN BRAZIL GOALKEEPER..." — Brazil's goalkeeper is named
+  Jordan, so this was a *player name*, not the country, on someone
+  else's national team shirt. No general regex fix applied (same call as
+  the standing Ukraine/Shakhtar collision below — too narrow/risky to
+  generalize past "the word happens to be a common name/brand too");
+  dropped by hand, keeping only listings that explicitly said "national
+  team". Watch for this whenever a country key is also a common first
+  name, brand, or word (Jordan, India below, and probably others not hit
+  yet — Georgia/the US state, Chad, Niger, Turkey/the bird are the
+  obvious next candidates to watch).
+- **National-team key matching domestic clubs**: "india" and "zambia"'s
+  retro/current picks included real jerseys from real teams that are NOT
+  the national team — Kerala Blasters, Real Kashmir, NorthEast United
+  (Indian Super League clubs) and Nkana FC (Zambian club, confirmed by
+  photo: Betway sponsor, club crest, not the copper/green national kit).
+  These countries don't have any of their domestic clubs in our catalog
+  as separate TeamKeys, so there was nothing for these picks to
+  correctly attach to — dropped by hand rather than mislabeling them as
+  the national team. If any of these clubs are worth adding as their own
+  TeamKey later, that's the right fix; until then, this is a recurring
+  false-positive class specifically for country keys whose domestic
+  leagues are otherwise unrepresented in the catalog.
 
 ## Stores without an Awin datafeed CSV (Mystery Shirt Club)
 
