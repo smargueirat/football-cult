@@ -208,7 +208,50 @@ export type TeamKey =
   | "nuevazelanda"
   | "costarica"
   | "jamaica"
-  | "panama";
+  | "panama"
+  | "burnley"
+  | "heidenheim"
+  | "auxerre"
+  | "angers"
+  | "lehavre"
+  | "parisfc"
+  | "cagliari"
+  | "cremonese"
+  | "hellasverona"
+  | "lecce"
+  | "parmacalcio"
+  | "pisa"
+  | "sassuolo"
+  | "paraguay"
+  | "bolivia"
+  | "canada"
+  | "honduras"
+  | "elsalvador"
+  | "guatemala"
+  | "trinidadytobago"
+  | "romania"
+  | "chequia"
+  | "eslovaquia"
+  | "eslovenia"
+  | "finlandia"
+  | "bosnia"
+  | "albania"
+  | "georgia"
+  | "macedoniadelnorte"
+  | "israel"
+  | "bulgaria"
+  | "iraq"
+  | "uzbekistan"
+  | "jordania"
+  | "india"
+  | "indonesia"
+  | "vietnam"
+  | "tailandia"
+  | "mali"
+  | "burkinafaso"
+  | "caboverde"
+  | "zambia"
+  | "gabon";
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper" | "training" | "retro";
 export type CategoryKey = "national" | "club";
@@ -272,6 +315,49 @@ export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
 }
 
 export const teamCategory: Record<TeamKey, CategoryKey> = {
+  burnley: "club",
+  heidenheim: "club",
+  auxerre: "club",
+  angers: "club",
+  lehavre: "club",
+  parisfc: "club",
+  cagliari: "club",
+  cremonese: "club",
+  hellasverona: "club",
+  lecce: "club",
+  parmacalcio: "club",
+  pisa: "club",
+  sassuolo: "club",
+  paraguay: "national",
+  bolivia: "national",
+  canada: "national",
+  honduras: "national",
+  elsalvador: "national",
+  guatemala: "national",
+  trinidadytobago: "national",
+  romania: "national",
+  chequia: "national",
+  eslovaquia: "national",
+  eslovenia: "national",
+  finlandia: "national",
+  bosnia: "national",
+  albania: "national",
+  georgia: "national",
+  macedoniadelnorte: "national",
+  israel: "national",
+  bulgaria: "national",
+  iraq: "national",
+  uzbekistan: "national",
+  jordania: "national",
+  india: "national",
+  indonesia: "national",
+  vietnam: "national",
+  tailandia: "national",
+  mali: "national",
+  burkinafaso: "national",
+  caboverde: "national",
+  zambia: "national",
+  gabon: "national",
   argentina: "national",
   brasil: "national",
   espana: "national",
@@ -483,6 +569,49 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
 };
 
 export const teamNames: Record<TeamKey, Record<Locale, string>> = {
+  burnley: { es: "Burnley FC", en: "Burnley FC", pt: "Burnley FC" },
+  heidenheim: { es: "1. FC Heidenheim", en: "1. FC Heidenheim", pt: "1. FC Heidenheim" },
+  auxerre: { es: "AJ Auxerre", en: "AJ Auxerre", pt: "AJ Auxerre" },
+  angers: { es: "Angers SCO", en: "Angers SCO", pt: "Angers SCO" },
+  lehavre: { es: "Le Havre AC", en: "Le Havre AC", pt: "Le Havre AC" },
+  parisfc: { es: "Paris FC", en: "Paris FC", pt: "Paris FC" },
+  cagliari: { es: "Cagliari Calcio", en: "Cagliari Calcio", pt: "Cagliari Calcio" },
+  cremonese: { es: "US Cremonese", en: "US Cremonese", pt: "US Cremonese" },
+  hellasverona: { es: "Hellas Verona", en: "Hellas Verona", pt: "Hellas Verona" },
+  lecce: { es: "US Lecce", en: "US Lecce", pt: "US Lecce" },
+  parmacalcio: { es: "Parma Calcio", en: "Parma Calcio", pt: "Parma Calcio" },
+  pisa: { es: "Pisa Sporting Club", en: "Pisa Sporting Club", pt: "Pisa Sporting Club" },
+  sassuolo: { es: "US Sassuolo", en: "US Sassuolo", pt: "US Sassuolo" },
+  paraguay: { es: "Paraguay", en: "Paraguay", pt: "Paraguai" },
+  bolivia: { es: "Bolivia", en: "Bolivia", pt: "Bolívia" },
+  canada: { es: "Canadá", en: "Canada", pt: "Canadá" },
+  honduras: { es: "Honduras", en: "Honduras", pt: "Honduras" },
+  elsalvador: { es: "El Salvador", en: "El Salvador", pt: "El Salvador" },
+  guatemala: { es: "Guatemala", en: "Guatemala", pt: "Guatemala" },
+  trinidadytobago: { es: "Trinidad y Tobago", en: "Trinidad and Tobago", pt: "Trinidad e Tobago" },
+  romania: { es: "Rumania", en: "Romania", pt: "Rom[eê]nia" },
+  chequia: { es: "Chequia", en: "Czech Republic", pt: "Rep[uú]blica Tcheca" },
+  eslovaquia: { es: "Eslovaquia", en: "Slovakia", pt: "Eslov[aá]quia" },
+  eslovenia: { es: "Eslovenia", en: "Slovenia", pt: "Eslov[eê]nia" },
+  finlandia: { es: "Finlandia", en: "Finland", pt: "Finl[aâ]ndia" },
+  bosnia: { es: "Bosnia", en: "Bosnia and Herzegovina", pt: "B[oó]snia" },
+  albania: { es: "Albania", en: "Albania", pt: "Alb[aâ]nia" },
+  georgia: { es: "Georgia", en: "Georgia", pt: "Ge[oó]rgia" },
+  macedoniadelnorte: { es: "Macedonia del Norte", en: "North Macedonia", pt: "Maced[oô]nia do Norte" },
+  israel: { es: "Israel", en: "Israel", pt: "Israel" },
+  bulgaria: { es: "Bulgaria", en: "Bulgaria", pt: "Bulg[aá]ria" },
+  iraq: { es: "Irak", en: "Iraq", pt: "Iraque" },
+  uzbekistan: { es: "Uzbekistán", en: "Uzbekistan", pt: "Uzbequist[aã]o" },
+  jordania: { es: "Jordania", en: "Jordan", pt: "Jord[aâ]nia" },
+  india: { es: "India", en: "India", pt: "[IÍ]ndia" },
+  indonesia: { es: "Indonesia", en: "Indonesia", pt: "Indon[eé]sia" },
+  vietnam: { es: "Vietnam", en: "Vietnam", pt: "Vietn[aã]" },
+  tailandia: { es: "Tailandia", en: "Thailand", pt: "Tail[aâ]ndia" },
+  mali: { es: "Malí", en: "Mali", pt: "Mali" },
+  burkinafaso: { es: "Burkina Faso", en: "Burkina Faso", pt: "Burkina Faso" },
+  caboverde: { es: "Cabo Verde", en: "Cape Verde", pt: "Cabo Verde" },
+  zambia: { es: "Zambia", en: "Zambia", pt: "Z[aâ]mbia" },
+  gabon: { es: "Gabón", en: "Gabon", pt: "Gab[aã]o" },
   argentina: { es: "Argentina", en: "Argentina", pt: "Argentina" },
   brasil: { es: "Brasil", en: "Brazil", pt: "Brasil" },
   espana: { es: "España", en: "Spain", pt: "Espanha" },
@@ -694,6 +823,49 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
 };
 
 export const teamFlags: Record<TeamKey, string> = {
+  burnley: "🟤",
+  heidenheim: "🔴",
+  auxerre: "⚪",
+  angers: "⚫",
+  lehavre: "🔵",
+  parisfc: "🔵",
+  cagliari: "🔴",
+  cremonese: "⚪",
+  hellasverona: "🟡",
+  lecce: "🟡",
+  parmacalcio: "🟡",
+  pisa: "🔵",
+  sassuolo: "🟢",
+  paraguay: "🇵🇾",
+  bolivia: "🇧🇴",
+  canada: "🇨🇦",
+  honduras: "🇭🇳",
+  elsalvador: "🇸🇻",
+  guatemala: "🇬🇹",
+  trinidadytobago: "🇹🇹",
+  romania: "🇷🇴",
+  chequia: "🇨🇿",
+  eslovaquia: "🇸🇰",
+  eslovenia: "🇸🇮",
+  finlandia: "🇫🇮",
+  bosnia: "🇧🇦",
+  albania: "🇦🇱",
+  georgia: "🇬🇪",
+  macedoniadelnorte: "🇲🇰",
+  israel: "🇮🇱",
+  bulgaria: "🇧🇬",
+  iraq: "🇮🇶",
+  uzbekistan: "🇺🇿",
+  jordania: "🇯🇴",
+  india: "🇮🇳",
+  indonesia: "🇮🇩",
+  vietnam: "🇻🇳",
+  tailandia: "🇹🇭",
+  mali: "🇲🇱",
+  burkinafaso: "🇧🇫",
+  caboverde: "🇨🇻",
+  zambia: "🇿🇲",
+  gabon: "🇬🇦",
   argentina: "🇦🇷",
   brasil: "🇧🇷",
   espana: "🇪🇸",
@@ -906,6 +1078,49 @@ export const teamFlags: Record<TeamKey, string> = {
 
 // Colores icónicos por equipo, usados en los accesos rápidos y avatares.
 export const teamColors: Record<TeamKey, [string, string]> = {
+  burnley: ["#6C1D45", "#99D6EA"],
+  heidenheim: ["#E2001A", "#002856"],
+  auxerre: ["#FFFFFF", "#002F6C"],
+  angers: ["#000000", "#FFFFFF"],
+  lehavre: ["#00AEEF", "#001E62"],
+  parisfc: ["#001E62", "#ED1C24"],
+  cagliari: ["#8B1E3F", "#002F6C"],
+  cremonese: ["#8B8B8B", "#CC0000"],
+  hellasverona: ["#FFD700", "#002F6C"],
+  lecce: ["#FFD700", "#CC0000"],
+  parmacalcio: ["#FFD700", "#002F6C"],
+  pisa: ["#002F6C", "#FFFFFF"],
+  sassuolo: ["#000000", "#00693E"],
+  paraguay: ["#DA121A", "#FFFFFF"],
+  bolivia: ["#007934", "#FFFFFF"],
+  canada: ["#FF0000", "#FFFFFF"],
+  honduras: ["#00287A", "#FFFFFF"],
+  elsalvador: ["#0047AB", "#FFFFFF"],
+  guatemala: ["#4997D0", "#FFFFFF"],
+  trinidadytobago: ["#DA291C", "#000000"],
+  romania: ["#FFD700", "#002868"],
+  chequia: ["#D7141A", "#FFFFFF"],
+  eslovaquia: ["#0B4EA2", "#FFFFFF"],
+  eslovenia: ["#FFFFFF", "#00A651"],
+  finlandia: ["#FFFFFF", "#003580"],
+  bosnia: ["#002F6C", "#FFCD00"],
+  albania: ["#E41E20", "#000000"],
+  georgia: ["#FFFFFF", "#FF0000"],
+  macedoniadelnorte: ["#D20000", "#FFD700"],
+  israel: ["#FFFFFF", "#0038B8"],
+  bulgaria: ["#00966E", "#FFFFFF"],
+  iraq: ["#FFFFFF", "#CE1126"],
+  uzbekistan: ["#FFFFFF", "#0099CC"],
+  jordania: ["#FFFFFF", "#CE1126"],
+  india: ["#1D4491", "#FF9933"],
+  indonesia: ["#E4032E", "#FFFFFF"],
+  vietnam: ["#DA251D", "#FFD700"],
+  tailandia: ["#A51931", "#FFFFFF"],
+  mali: ["#14B53A", "#FCD116"],
+  burkinafaso: ["#009639", "#FCD116"],
+  caboverde: ["#003893", "#FFFFFF"],
+  zambia: ["#198A00", "#FF8200"],
+  gabon: ["#009E60", "#FCD116"],
   argentina: ["#75AADB", "#FFFFFF"],
   brasil: ["#FFCC29", "#0F5A2E"],
   espana: ["#C60B1E", "#F5B942"],
