@@ -300,7 +300,12 @@ KIDS_EXCLUDE_RE = re.compile(
 )
 KIDS_SIGNAL_RE = re.compile(
     r"infantil|\bniñ|\bnino|\bkids?\b|\bjunior\b|\benfant|crian[çc]a|"
-    r"\b\d{1,2}\s*[/-]\s*\d{1,2}\s*(ans|years|anos|años)?\s*$|"
+    # Bare "N-N" at the end without a units word is only treated as a kids
+    # age range when both numbers are a plausible kid age (0-17) -- real bug
+    # found: a season suffix like "26-27" (2026-27) was matching this same
+    # shape and getting misread as ages 26-27, mislabeling adult jerseys as
+    # kids. A units word (ans/years/años) still allows any digit count.
+    r"\b(?:[0-9]|1[0-7])\s*[/-]\s*(?:[0-9]|1[0-7])\s*(ans|years|anos|años)?\s*$|"
     r"\b\d{1,2}-\d{1,2}\s*(ans|years|anos|años)\b",
     re.I,
 )
