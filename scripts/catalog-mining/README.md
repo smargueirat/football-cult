@@ -192,6 +192,42 @@ Same resume support as `ebay_mine.py` (per output file, keyed by team).
   `refresh_kids.py` analogous to `refresh.py` (keyed by `id` ==
   `"{team}-{type}-kids"` instead of team+type) would be the right fix
   if this starts mattering (kids prices going stale).
+- **Two much bigger bugs, found by asking "why does Boca Juniors have
+  zero eBay picks across every category despite being one of the most
+  commercially popular clubs in the catalog's own stated focus
+  (Argentina)":**
+  - `EXCLUDE_RE`/`RETRO_EXCLUDE_RE` had a bare `junior` (for excluding
+    kids sizing) with **no word boundary** — it matched as a *substring*
+    of "Juniors", so literally every "Boca **Juniors**" listing got
+    excluded, current AND retro, this whole project's history (Awin
+    included, not just eBay — only 3 hand-seeded Boca products existed
+    before this fix, all from the original MVP seed data). Fixed to
+    `\bjunior\b` in both files. Checked every other team's real name
+    against `EXCLUDE_RE` for the same self-collision class after fixing
+    this one — none currently hit it, but re-check this whenever a new
+    team gets added whose name might contain "kids"/"baby"/"mini"/
+    "short"/"fan"/etc. as a substring.
+  - `ebay_mine_full.py`'s `SEASON_OK_RE` (current-season filter) only
+    matched a full 4-digit-prefixed season (`"2025/26"`) or a bare
+    `"2026"` — but the large majority of real eBay titles use the short
+    2-digit form (`"25/26"`, see literally every real Boca/Valencia
+    result: `"Adidas Boca Juniors 25/26 Home..."`), so almost every
+    current-season listing using that extremely common notation was
+    silently rejected regardless of the junior bug. Replaced with
+    `is_current_season()`, which reuses `split_picks.py`'s
+    `detect_season()`/`season_end_year()` (already handles every width)
+    instead of a second, narrower hand-rolled regex — but guards against
+    `detect_season()`'s "assume 2025/26" default (fine for comparing
+    against an already-vetted catalog entry, not fine for deciding
+    whether to trust a brand-new eBay listing sight unseen): a title with
+    no season indicator at all must not silently pass as current.
+  - Between the two, this is likely the single highest-impact fix in
+    this pipeline's history — it wasn't just Boca, it was **every**
+    current-season pick across **every** team that happened to use
+    2-digit season notation, silently discarded before ever reaching the
+    price/photo filters. Re-ran the full team list after fixing both;
+    if a "why does team X have suspiciously little/no coverage" question
+    ever comes up again, check these two classes first.
 
 ## Stores without an Awin datafeed CSV (Mystery Shirt Club)
 

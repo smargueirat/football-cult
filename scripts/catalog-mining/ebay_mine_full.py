@@ -37,6 +37,7 @@ from extract import (
 )
 from retro_extract import parse_retro_season, RETRO_EXCLUDE_RE
 from ebay_mine import EbayClient, get_team_en_names, ACCESSORY_RE, MIN_JERSEY_PRICE, MAX_JERSEY_PRICE
+from split_picks import detect_season, season_end_year
 
 CURRENT_TYPES = ("home", "away", "third", "goalkeeper", "training")
 KIDS_TYPES = ("home", "away", "third")
@@ -49,7 +50,31 @@ TYPE_QUERY_WORD = {
     "goalkeeper": "goalkeeper",
     "training": "training",
 }
-SEASON_OK_RE = re.compile(r"\b(2025[/-]26|2025-2026|2026[/-]27|2026-2027|\b2026\b)\b")
+# Real bug found: the old hand-rolled regex here only matched a full
+# 4-digit-prefixed season ("2025/26") or a bare "2026" -- but the
+# overwhelming majority of real eBay titles use the short 2-digit form
+# ("25/26", see "Adidas Boca Juniors 25/26 Home..."), so almost every
+# current-season listing using that (extremely common) notation was
+# silently rejected. Confirmed by hand: Boca Juniors and Valencia CF
+# came back with zero picks despite real 25/26 stock being all over the
+# raw search results. Reuses split_picks.py's detect_season() (already
+# handles every notation width) instead of maintaining a second,
+# less-robust parser -- "current" means the season ends in 2026 or 2027,
+# both already treated as current elsewhere in products.ts.
+CURRENT_SEASON_END_YEARS = {2026, 2027}
+
+
+def is_current_season(title):
+    # detect_season() defaults to "2025/26" when it finds no season
+    # pattern at all (a reasonable default when comparing against an
+    # existing catalog entry, split_picks.py's use case) -- but here
+    # we're deciding whether to trust an eBay listing we've never seen
+    # before, so a title with NO season indicator at all must not
+    # silently pass as "current". Require an explicit match.
+    detected = detect_season(title)
+    if detected == "2025/26" and not re.search(r"25[/-]26", title):
+        return False
+    return season_end_year(detected) in CURRENT_SEASON_END_YEARS
 
 
 def load(path):
@@ -72,8 +97,8 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
         # relevance ranking treat it as near-required, so real current-stock
         # listings titled "2024-25"-style (still in season right now) or with
         # no year at all dropped out of the top results. Season filtering
-        # already happens via SEASON_OK_RE below -- the query itself should
-        # stay broad.
+        # already happens via is_current_season() below -- the query itself
+        # should stay broad.
         query = f"{team_en} {TYPE_QUERY_WORD[type_key]} soccer jersey"
         results = client.search(query, limit=30)
         candidates = []
@@ -85,7 +110,7 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
                 continue
             if ACCESSORY_RE.search(title):
                 continue
-            if not SEASON_OK_RE.search(title):
+            if not is_current_season(title):
                 continue
             if not teams_re[team_key].search(title):
                 continue

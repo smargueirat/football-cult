@@ -271,7 +271,13 @@ TYPE_PATTERNS = {
 JERSEY_RE = re.compile(r"\b(camiseta|camisola|maillot|jersey|trikot|shirt|maglia)\b", re.I)
 EXCLUDE_RE = re.compile(
     r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
-    r"infantil|niñ|nino|bebé|bebe|baby|kids?|junior|\byouth\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    # "junior" needs a word boundary -- real bug found: without it, this
+    # matched as a substring of "Juniors" and excluded EVERY Boca Juniors
+    # listing from EVERY mining pass, Awin and eBay both, this whole
+    # project's history (only 3 hand-seeded Boca products existed before
+    # this fix). Watch for the same class with any other club whose name
+    # contains a kids/youth/gender exclusion word as a substring.
+    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\byouth\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"retro|vintage|clásic|classic|hist[oó]ric|retr[oò]|riedizione|años? \d0\b|"
