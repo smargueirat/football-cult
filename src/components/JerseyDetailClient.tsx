@@ -263,83 +263,93 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                     return (
                       <div
                         key={offer.store}
-                        className={`vintage-card flex flex-col gap-3 rounded-2xl p-4 transition-opacity duration-300 sm:flex-row sm:items-center sm:justify-between ${
+                        className={`vintage-card relative overflow-hidden rounded-2xl transition-opacity duration-300 ${
                           isBest ? "border-[#B8923F]/70 ring-1 ring-[#C9A24B]/30" : ""
-                        } ${match ? "" : "pointer-events-none opacity-40"}`}
+                        }`}
                       >
-                        <div className="flex items-center gap-3">
-                          <span
-                            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
-                            style={{ backgroundColor: badgeColor(offer.store) }}
-                          >
-                            {offer.store.charAt(0)}
-                          </span>
-                          <div>
-                            <p className="flex flex-wrap items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
-                              {offer.store}
-                              {isBest && <span className="text-xs">🥇</span>}
-                              {offer.store === "FansJerseyHub" && (
-                                <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
-                                  {t.detail.replicaBadge}
-                                </span>
+                        <div
+                          className={`flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between ${
+                            match ? "" : "pointer-events-none opacity-40"
+                          }`}
+                        >
+                          <div className="flex items-center gap-3">
+                            <span
+                              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+                              style={{ backgroundColor: badgeColor(offer.store) }}
+                            >
+                              {offer.store.charAt(0)}
+                            </span>
+                            <div>
+                              <p className="flex flex-wrap items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
+                                {offer.store}
+                                {isBest && <span className="text-xs">🥇</span>}
+                                {offer.store === "FansJerseyHub" && (
+                                  <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
+                                    {t.detail.replicaBadge}
+                                  </span>
+                                )}
+                              </p>
+                              <p className="text-xs text-[#a8926a]">
+                                {offer.title ?? `${team} ${type}`}
+                              </p>
+                              {!offer.inStock ? (
+                                <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
+                              ) : !ships ? null : !matchesSize(offer) ? (
+                                <p className="text-xs text-[#b3aa8f]">
+                                  {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
+                                </p>
+                              ) : (
+                                <p className="text-xs text-[#8a7a5a]">
+                                  {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
+                                </p>
                               )}
-                            </p>
-                            <p className="text-xs text-[#a8926a]">
-                              {offer.title ?? `${team} ${type}`}
-                            </p>
-                            {!offer.inStock ? (
-                              <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
-                            ) : !ships ? (
-                              <p className="text-xs text-[#b3aa8f]">
-                                {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+                            </div>
+                          </div>
+
+                          <div className="flex items-center justify-between gap-4 sm:justify-end">
+                            <div className="text-right">
+                              <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
+                                {t.detail.total}
                               </p>
-                            ) : !matchesSize(offer) ? (
-                              <p className="text-xs text-[#b3aa8f]">
-                                {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
+                              <p
+                                className={`text-lg font-semibold ${
+                                  isBest ? "text-[#B45309]" : "text-[#3a3a36]"
+                                }`}
+                              >
+                                {formatOfferMoney(offerTotal(offer), offer.currency)}
                               </p>
-                            ) : (
-                              <p className="text-xs text-[#8a7a5a]">
-                                {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
-                              </p>
-                            )}
+                            </div>
+                            <a
+                              href={offer.url}
+                              target="_blank"
+                              rel="noopener noreferrer sponsored"
+                              className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
+                            >
+                              {t.detail.viewInStore}
+                              <svg
+                                className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 5l7 7-7 7"
+                                />
+                              </svg>
+                            </a>
                           </div>
                         </div>
 
-                        <div className="flex items-center justify-between gap-4 sm:justify-end">
-                          <div className="text-right">
-                            <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
-                              {t.detail.total}
-                            </p>
-                            <p
-                              className={`text-lg font-semibold ${
-                                isBest ? "text-[#B45309]" : "text-[#3a3a36]"
-                              }`}
-                            >
-                              {formatOfferMoney(offerTotal(offer), offer.currency)}
-                            </p>
+                        {!ships && (
+                          <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-[#f5f0e0]/75">
+                            <span className="-rotate-6 rounded border-2 border-[#8a7a5a]/60 bg-[#fffdf8] px-4 py-1.5 text-center text-xs font-bold uppercase tracking-widest text-[#8a7a5a] shadow-sm">
+                              {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+                            </span>
                           </div>
-                          <a
-                            href={offer.url}
-                            target="_blank"
-                            rel="noopener noreferrer sponsored"
-                            className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
-                          >
-                            {t.detail.viewInStore}
-                            <svg
-                              className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 5l7 7-7 7"
-                              />
-                            </svg>
-                          </a>
-                        </div>
+                        )}
                       </div>
                     );
                   })}
