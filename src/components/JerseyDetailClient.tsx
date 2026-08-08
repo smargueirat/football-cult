@@ -21,6 +21,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import JerseyIcon from "./JerseyIcon";
+import ReportProductModal from "./ReportProductModal";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
 
@@ -36,6 +37,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [shareCopied, setShareCopied] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [reportOpen, setReportOpen] = useState(false);
   const comparing = isComparing(product.id);
 
   const team = teamNames[product.teamKey][locale];
@@ -331,8 +333,23 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
               </div>
             </>
           )}
+
+          <button
+            onClick={() => setReportOpen(true)}
+            className="self-start text-xs text-[#a8926a] underline decoration-dotted underline-offset-2 transition-colors hover:text-[#8a7a5a]"
+          >
+            🚩 {t.reportProduct.button}
+          </button>
         </div>
       </div>
+
+      {reportOpen && (
+        <ReportProductModal
+          productId={product.id}
+          productUrl={typeof window !== "undefined" ? window.location.href : ""}
+          onClose={() => setReportOpen(false)}
+        />
+      )}
     </div>
   );
 }

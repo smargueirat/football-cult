@@ -172,6 +172,24 @@ export interface Translations {
     button: string;
     copied: string;
   };
+  reportProduct: {
+    button: string;
+    modalTitle: string;
+    modalIntro: string;
+    reasonLabel: string;
+    reasonWrongPhoto: string;
+    reasonWrongPrice: string;
+    reasonWrongName: string;
+    reasonBrokenLink: string;
+    reasonOther: string;
+    detailsLabel: string;
+    detailsPlaceholder: string;
+    submit: string;
+    submitting: string;
+    success: string;
+    error: string;
+    cancel: string;
+  };
   compare: {
     add: string;
     remove: string;
@@ -369,6 +387,24 @@ export const translations: Record<Locale, Translations> = {
       button: "Compartir",
       copied: "¡Link copiado!",
     },
+    reportProduct: {
+      button: "Reportar producto",
+      modalTitle: "Reportar este producto",
+      modalIntro: "Contanos qué está mal para que podamos revisarlo.",
+      reasonLabel: "Motivo",
+      reasonWrongPhoto: "La foto no corresponde",
+      reasonWrongPrice: "El precio está mal",
+      reasonWrongName: "El nombre o equipo está mal",
+      reasonBrokenLink: "El link a la tienda no funciona",
+      reasonOther: "Otro",
+      detailsLabel: "Contanos más (opcional)",
+      detailsPlaceholder: "Describí el problema...",
+      submit: "Enviar reporte",
+      submitting: "Enviando...",
+      success: "¡Gracias! Ya recibimos tu reporte.",
+      error: "No se pudo enviar el reporte. Intentá de nuevo.",
+      cancel: "Cancelar",
+    },
     compare: {
       add: "Comparar",
       remove: "Quitar de comparar",
@@ -564,6 +600,24 @@ export const translations: Record<Locale, Translations> = {
       button: "Compartilhar",
       copied: "Link copiado!",
     },
+    reportProduct: {
+      button: "Reportar produto",
+      modalTitle: "Reportar este produto",
+      modalIntro: "Conte-nos o que está errado para que possamos revisar.",
+      reasonLabel: "Motivo",
+      reasonWrongPhoto: "A foto não corresponde",
+      reasonWrongPrice: "O preço está errado",
+      reasonWrongName: "O nome ou time está errado",
+      reasonBrokenLink: "O link para a loja não funciona",
+      reasonOther: "Outro",
+      detailsLabel: "Conte mais (opcional)",
+      detailsPlaceholder: "Descreva o problema...",
+      submit: "Enviar relato",
+      submitting: "Enviando...",
+      success: "Obrigado! Já recebemos seu relato.",
+      error: "Não foi possível enviar o relato. Tente novamente.",
+      cancel: "Cancelar",
+    },
     compare: {
       add: "Comparar",
       remove: "Remover da comparação",
@@ -758,6 +812,24 @@ export const translations: Record<Locale, Translations> = {
     share: {
       button: "Share",
       copied: "Link copied!",
+    },
+    reportProduct: {
+      button: "Report product",
+      modalTitle: "Report this product",
+      modalIntro: "Tell us what's wrong so we can review it.",
+      reasonLabel: "Reason",
+      reasonWrongPhoto: "The photo doesn't match",
+      reasonWrongPrice: "The price is wrong",
+      reasonWrongName: "The name or team is wrong",
+      reasonBrokenLink: "The store link is broken",
+      reasonOther: "Other",
+      detailsLabel: "Tell us more (optional)",
+      detailsPlaceholder: "Describe the issue...",
+      submit: "Send report",
+      submitting: "Sending...",
+      success: "Thanks! We got your report.",
+      error: "Couldn't send the report. Please try again.",
+      cancel: "Cancel",
     },
     compare: {
       add: "Compare",
