@@ -256,8 +256,9 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 <p className="mb-3 text-xs text-[#a8926a]">{t.detail.currencyNote}</p>
 
                 <div className="flex flex-col gap-3">
-                  {sortedOffers.filter(shipsHere).map((offer) => {
-                    const match = offer.inStock && matchesSize(offer);
+                  {sortedOffers.map((offer) => {
+                    const ships = shipsHere(offer);
+                    const match = offer.inStock && ships && matchesSize(offer);
                     const isBest = offer.store === bestStore && match;
                     return (
                       <div
@@ -288,6 +289,10 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                             </p>
                             {!offer.inStock ? (
                               <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
+                            ) : !ships ? (
+                              <p className="text-xs text-[#b3aa8f]">
+                                {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+                              </p>
                             ) : !matchesSize(offer) ? (
                               <p className="text-xs text-[#b3aa8f]">
                                 {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}

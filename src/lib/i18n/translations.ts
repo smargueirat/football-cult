@@ -104,6 +104,7 @@ export interface Translations {
     chooseSize: string;
     allSizes: string;
     notAvailableInSize: string;
+    notAvailableInCountry: string;
     storesCompared: string;
     basePrice: string;
     shipping: string;
@@ -310,6 +311,7 @@ export const translations: Record<Locale, Translations> = {
       chooseSize: "Elegí tu talla",
       allSizes: "Todas las tiendas",
       notAvailableInSize: "No disponible en talla {size}",
+      notAvailableInCountry: "No disponible para envíos a {country}",
       storesCompared: "{n} tiendas comparadas",
       basePrice: "Precio",
       shipping: "Envío",
@@ -523,6 +525,7 @@ export const translations: Record<Locale, Translations> = {
       chooseSize: "Escolha seu tamanho",
       allSizes: "Todas as lojas",
       notAvailableInSize: "Não disponível no tamanho {size}",
+      notAvailableInCountry: "Não disponível para envio a {country}",
       storesCompared: "{n} lojas comparadas",
       basePrice: "Preço",
       shipping: "Frete",
@@ -736,6 +739,7 @@ export const translations: Record<Locale, Translations> = {
       chooseSize: "Choose your size",
       allSizes: "All stores",
       notAvailableInSize: "Not available in size {size}",
+      notAvailableInCountry: "Not available for shipping to {country}",
       storesCompared: "{n} stores compared",
       basePrice: "Price",
       shipping: "Shipping",
