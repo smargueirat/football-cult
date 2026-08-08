@@ -47,7 +47,11 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: "Football Cult <reportes@football-cult.com>",
+      // football-cult.com isn't verified as a sending domain in Resend
+      // yet (would need DNS records added) -- Resend's shared sandbox
+      // sender works today without that, confirmed by a real test send.
+      // Swap to reportes@football-cult.com once/if the domain is verified.
+      from: "Football Cult <onboarding@resend.dev>",
       to,
       subject: `Reporte de producto: ${productId}`,
       text: [
