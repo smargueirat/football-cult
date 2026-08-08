@@ -18,6 +18,12 @@ interface CountryContextValue {
 const CountryContext = createContext<CountryContextValue | undefined>(undefined);
 
 const STORAGE_KEY = "football-cult-country";
+const GEO_COOKIE = "football-cult-geo-country";
+
+function readGeoCookie(): CountryCode | null {
+  const match = document.cookie.match(new RegExp(`(?:^|; )${GEO_COOKIE}=([^;]*)`));
+  return (match?.[1] as CountryCode) ?? null;
+}
 
 function detectCountry(): CountryCode {
   const lang = window.navigator.language?.toLowerCase() ?? "";
@@ -38,6 +44,11 @@ export function CountryProvider({ children }: { children: ReactNode }) {
     const stored = window.localStorage.getItem(STORAGE_KEY) as CountryCode | null;
     if (stored && countries.some((c) => c.code === stored)) {
       setCountryCodeState(stored);
+      return;
+    }
+    const geo = readGeoCookie();
+    if (geo && countries.some((c) => c.code === geo)) {
+      setCountryCodeState(geo);
       return;
     }
     setCountryCodeState(detectCountry());
