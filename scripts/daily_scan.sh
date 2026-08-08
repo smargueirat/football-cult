@@ -7,7 +7,13 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily scan start ==="
 
-claude -p "Daily football-cult.com catalog scan: find and add any real football jerseys still missing from the site, across ALL currently-connected sources.
+# Real bug found (2026-08-08's cron run): cron runs with a minimal PATH
+# that doesn't include ~/.local/bin, so a bare `claude` failed every
+# night with "command not found" -- the first run after installing the
+# cron never actually did anything. Hardcoded full path now.
+CLAUDE_BIN="/home/piojo/.local/bin/claude"
+
+"$CLAUDE_BIN" -p "Daily football-cult.com catalog scan: find and add any real football jerseys still missing from the site, across ALL currently-connected sources.
 
 Repo: /home/piojo/football-cult. Reusable tooling: scripts/catalog-mining/ (read its README.md first — it documents the whole pipeline, false-positive classes found, and the standing safety rule). Enumerate connected Awin stores fresh via \`grep '^AWIN_FEED_URL_' .env.local\` rather than assuming a fixed list — plus Mystery Shirt Club (Shopify feed) and eBay (Partner Network + Browse API) which aren't in that env-var list.
 
@@ -17,5 +23,12 @@ For each store: mine for jerseys of teams/types not yet in src/data/products.ts 
   --permission-mode auto \
   --output-format text \
   --no-session-persistence
+CLAUDE_EXIT=$?
+# Real bug found: this used to read $? directly inside the echo below,
+# but $(date ...) in that same command substitutes and runs BEFORE $? is
+# evaluated, so it always reported date's own exit code (0), never
+# claude's -- which is exactly how the PATH failure above went
+# unnoticed (the log said "exit 0" while claude had actually failed
+# with 127, "command not found"). Capture it immediately instead.
 
-echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily scan end (exit $?) ==="
+echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily scan end (exit $CLAUDE_EXIT) ==="
