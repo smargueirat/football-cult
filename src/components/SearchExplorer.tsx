@@ -343,14 +343,20 @@ export default function SearchExplorer() {
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.nav.categories}:</span>
-                <div className="flex flex-wrap gap-2">
-                  <Chip active={categoryFilter.length === 0} onClick={() => setCategoryFilter([])} accent="amber">
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={categoryFilter.length === 0}
+                    onClick={() => setCategoryFilter([])}
+                    accent="amber"
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
                     {t.search.allCategories}
                   </Chip>
                   <Chip
                     active={categoryFilter.includes("national")}
                     onClick={() => toggleCategoryFilter("national")}
                     accent="amber"
+                    className="flex-shrink-0 whitespace-nowrap"
                   >
                     {t.search.categoryNational}
                   </Chip>
@@ -358,6 +364,7 @@ export default function SearchExplorer() {
                     active={categoryFilter.includes("club")}
                     onClick={() => toggleCategoryFilter("club")}
                     accent="amber"
+                    className="flex-shrink-0 whitespace-nowrap"
                   >
                     {t.search.categoryClubs}
                   </Chip>
@@ -366,12 +373,21 @@ export default function SearchExplorer() {
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.typeLabel}:</span>
-                <div className="flex flex-wrap gap-2">
-                  <Chip active={typeFilter.length === 0} onClick={() => setTypeFilter([])}>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={typeFilter.length === 0}
+                    onClick={() => setTypeFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
                     {t.search.allCategories}
                   </Chip>
                   {TYPE_FILTERS.map((key) => (
-                    <Chip key={key} active={typeFilter.includes(key)} onClick={() => toggleTypeFilter(key)}>
+                    <Chip
+                      key={key}
+                      active={typeFilter.includes(key)}
+                      onClick={() => toggleTypeFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
                       {typeNames[key][locale]}
                     </Chip>
                   ))}
@@ -380,12 +396,21 @@ export default function SearchExplorer() {
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.brandLabel}:</span>
-                <div className="flex flex-wrap gap-2">
-                  <Chip active={brandFilter.length === 0} onClick={() => setBrandFilter([])}>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={brandFilter.length === 0}
+                    onClick={() => setBrandFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
                     {t.search.allCategories}
                   </Chip>
                   {BRAND_FILTERS.map((key) => (
-                    <Chip key={key} active={brandFilter.includes(key)} onClick={() => toggleBrandFilter(key)}>
+                    <Chip
+                      key={key}
+                      active={brandFilter.includes(key)}
+                      onClick={() => toggleBrandFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
                       {brandNames[key]}
                     </Chip>
                   ))}
@@ -440,8 +465,12 @@ export default function SearchExplorer() {
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#8a7a5a]">{t.search.ageGroupLabel}:</span>
-                <div className="flex flex-wrap gap-2">
-                  <Chip active={ageGroupFilter.length === 0} onClick={() => setAgeGroupFilter([])}>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={ageGroupFilter.length === 0}
+                    onClick={() => setAgeGroupFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
                     {t.search.allCategories}
                   </Chip>
                   {AGE_GROUP_FILTERS.map((key) => (
@@ -449,6 +478,7 @@ export default function SearchExplorer() {
                       key={key}
                       active={ageGroupFilter.includes(key)}
                       onClick={() => toggleAgeGroupFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
                     >
                       {key === "adult" ? t.search.ageGroupAdult : t.search.ageGroupKids}
                     </Chip>

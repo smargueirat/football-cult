@@ -42,14 +42,20 @@ export default function FloatingFilterButton() {
         <div className="solid-panel flex w-64 flex-col gap-4 rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]">
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.nav.categories}</p>
-            <div className="flex flex-wrap gap-1.5">
-              <Chip active={categoryFilter.length === 0} onClick={() => setCategoryFilter([])} accent="amber">
+            <div className="-mx-4 flex gap-1.5 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <Chip
+                active={categoryFilter.length === 0}
+                onClick={() => setCategoryFilter([])}
+                accent="amber"
+                className="flex-shrink-0 whitespace-nowrap"
+              >
                 {t.search.allCategories}
               </Chip>
               <Chip
                 active={categoryFilter.includes("national")}
                 onClick={() => toggleCategoryFilter("national")}
                 accent="amber"
+                className="flex-shrink-0 whitespace-nowrap"
               >
                 {t.search.categoryNational}
               </Chip>
@@ -57,6 +63,7 @@ export default function FloatingFilterButton() {
                 active={categoryFilter.includes("club")}
                 onClick={() => toggleCategoryFilter("club")}
                 accent="amber"
+                className="flex-shrink-0 whitespace-nowrap"
               >
                 {t.search.categoryClubs}
               </Chip>
@@ -64,12 +71,21 @@ export default function FloatingFilterButton() {
           </div>
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.search.typeLabel}</p>
-            <div className="flex flex-wrap gap-1.5">
-              <Chip active={typeFilter.length === 0} onClick={() => setTypeFilter([])}>
+            <div className="-mx-4 flex gap-1.5 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <Chip
+                active={typeFilter.length === 0}
+                onClick={() => setTypeFilter([])}
+                className="flex-shrink-0 whitespace-nowrap"
+              >
                 {t.search.allCategories}
               </Chip>
               {TYPE_FILTERS.map((key) => (
-                <Chip key={key} active={typeFilter.includes(key)} onClick={() => toggleTypeFilter(key)}>
+                <Chip
+                  key={key}
+                  active={typeFilter.includes(key)}
+                  onClick={() => toggleTypeFilter(key)}
+                  className="flex-shrink-0 whitespace-nowrap"
+                >
                   {typeNames[key][locale]}
                 </Chip>
               ))}
@@ -77,12 +93,21 @@ export default function FloatingFilterButton() {
           </div>
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.search.seasonLabel}</p>
-            <div className="flex flex-wrap gap-1.5">
-              <Chip active={seasonFilter.length === 0} onClick={() => setSeasonFilter([])}>
+            <div className="-mx-4 flex gap-1.5 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <Chip
+                active={seasonFilter.length === 0}
+                onClick={() => setSeasonFilter([])}
+                className="flex-shrink-0 whitespace-nowrap"
+              >
                 {t.search.allCategories}
               </Chip>
               {SEASONS.map((season) => (
-                <Chip key={season} active={seasonFilter.includes(season)} onClick={() => toggleSeasonFilter(season)}>
+                <Chip
+                  key={season}
+                  active={seasonFilter.includes(season)}
+                  onClick={() => toggleSeasonFilter(season)}
+                  className="flex-shrink-0 whitespace-nowrap"
+                >
                   {season}
                 </Chip>
               ))}

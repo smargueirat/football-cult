@@ -151,9 +151,9 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
         {/* Right: hunter column */}
         <div className="flex flex-col gap-6">
-          <div className="flex items-start justify-between gap-3">
-            <div>
-              <h1 className="font-card-title text-3xl text-[#1a1a1a] sm:text-4xl">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div className="min-w-0">
+              <h1 className="font-card-title text-2xl text-[#1a1a1a] sm:text-3xl lg:text-4xl">
                 {displayName}
               </h1>
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
