@@ -251,7 +251,8 @@ export type TeamKey =
   | "burkinafaso"
   | "caboverde"
   | "zambia"
-  | "gabon";
+  | "gabon"
+  | "sportrecife";
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper" | "training" | "retro";
 export type CategoryKey = "national" | "club";
@@ -315,6 +316,7 @@ export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
 }
 
 export const teamCategory: Record<TeamKey, CategoryKey> = {
+  sportrecife: "club",
   burnley: "club",
   heidenheim: "club",
   auxerre: "club",
@@ -569,6 +571,7 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
 };
 
 export const teamNames: Record<TeamKey, Record<Locale, string>> = {
+  sportrecife: { es: "Sport Recife", en: "Sport Recife", pt: "Sport Recife" },
   burnley: { es: "Burnley FC", en: "Burnley FC", pt: "Burnley FC" },
   heidenheim: { es: "1. FC Heidenheim", en: "1. FC Heidenheim", pt: "1. FC Heidenheim" },
   auxerre: { es: "AJ Auxerre", en: "AJ Auxerre", pt: "AJ Auxerre" },
@@ -823,6 +826,7 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
 };
 
 export const teamFlags: Record<TeamKey, string> = {
+  sportrecife: "🔴",
   burnley: "🟤",
   heidenheim: "🔴",
   auxerre: "⚪",
@@ -1078,6 +1082,7 @@ export const teamFlags: Record<TeamKey, string> = {
 
 // Colores icónicos por equipo, usados en los accesos rápidos y avatares.
 export const teamColors: Record<TeamKey, [string, string]> = {
+  sportrecife: ["#C8102E", "#000000"],
   burnley: ["#6C1D45", "#99D6EA"],
   heidenheim: ["#E2001A", "#002856"],
   auxerre: ["#FFFFFF", "#002F6C"],
@@ -1521,6 +1526,7 @@ const OFFER_CURRENCY_LOCALE: Record<Offer["currency"], string> = {
   EUR: "de-DE",
   USD: "en-US",
   GBP: "en-GB",
+  BRL: "pt-BR",
 };
 
 export function formatOfferMoney(amount: number, currency: Offer["currency"]): string {
@@ -1545,6 +1551,7 @@ const OFFER_CURRENCY_TO_EUR: Record<Offer["currency"], number> = {
   EUR: 1,
   USD: 1.08,
   GBP: 0.86,
+  BRL: 0.155,
 };
 
 export function offerTotalInEUR(offer: Offer): number {
@@ -1599,6 +1606,19 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
     "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
     "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
   ],
+  // NOT independently verified against each store's own shipping policy
+  // page (unlike every entry above) -- fetching santosstore.com.br's
+  // policy page failed (socket hang up) and no clear answer turned up
+  // otherwise. Assuming Brazil-only since these are Brazilian club
+  // stores on what looks like a shared Netshoes-operated platform, with
+  // no evidence found of international shipping -- safer default than
+  // the implicit "ships everywhere" a missing entry would produce,
+  // which would be actively misleading. Revisit if this turns out wrong.
+  SantosStore: ["BR"],
+  InterStore: ["BR"],
+  CruzeiroStore: ["BR"],
+  ShopTimao: ["BR"],
+  LojaPST: ["BR"],
 };
 
 export function offerShipsTo(store: string, country: CountryCode): boolean {
@@ -1644,7 +1664,7 @@ export interface Offer {
   store: string;
   price: number;
   shipping: number;
-  currency: "EUR" | "USD" | "GBP";
+  currency: "EUR" | "USD" | "GBP" | "BRL";
   url: string;
   inStock: boolean;
   sizes: Size[];
@@ -16469,6 +16489,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcorinthians-away-soccer-jersey-2025-26%3Fvariant%3D42712492540009", title: "Corinthians Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Corinthians_Away_Jersey_2025-2026_2.webp?v=1764235505" },
       { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317912356062?_skw=Corinthians+away+soccer+jersey+2025+2026&hash=item4a050d94de%3Ag%3APkEAAeSwws5pm3Aw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Corinthians Away \"Todo Poderoso Timão \"Jersey 2025-26 Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PkEAAeSwws5pm3Aw/s-l225.jpg" },
+      { store: "ShopTimao", price: 349.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005481.5420011064380366749651477&type=15&murl=https%3A%2F%2Fwww.shoptimao.com.br%2FJD8-9918-026", title: "Camisa Corinthians Away 25/26 s/n Jogador Nike Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.shoptimao.com.br/produtos/camisa-corinthians-ii-2526-sn-jogador-nike-masculina/26/JD8-9918-026/JD8-9918-026_detalhe1.jpg?ts=1776222326" },
     ],
   },
 {
@@ -16494,6 +16515,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcruzeiro-ec-third-away-soccer-jersey-2025-26%3Fvariant%3D42749511827561", title: "Cruzeiro EC Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cruzeiro_EC_Third_Away_Soccer_Jersey_202526_2_7c0873c8-a334-4e99-8ffa-c47fcc0ebf80.webp?v=1765791493" },
+      { store: "CruzeiroStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541981510343915112738364&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-3558-044", title: "Camisa Cruzeiro Away 25/26 s/n Torcedor Adidas Masculina - Branco+Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-ii-2526-sn-torcedor-adidas-masculina/44/FBA-3558-044/FBA-3558-044_detalhe1.jpg?ts=1776223978" },
     ],
   },
 {
@@ -17172,6 +17194,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsantos-fc-home-soccer-jersey-2025-26%3Fvariant%3D42632278442089", title: "Santos FC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/santos_fc_home_soccer_jersey_2025_26.png?v=1761026606" },
       { store: "eBay", price: 90.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377260293470?_skw=Santos+FC+home+soccer+jersey+2025+2026&hash=item57d6773d5e%3Ag%3ADTwAAeSw9tRqLhDO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbBoSYICOsNL9X5vDNwsn%2BWOQVTG8oLc2JkGtK7n3%2ByO%2FiDtJyyAU62taAf%2FmCqS5AgdpoBWlGpL%2FUnRjDx7g7OskexYx7XOJImE2U4%2BLte1ihZDGplE7oaWl241K271zh4%2FSyMimR4XU5fiq6IXB%2FJ%2FsFYp9QXFhI1fSFRuIfV0L4N7qLdza8Nl7bmmIzl15ihSmD88nGFu7mFke%2F9yklEppK8GeunW%2BlIaNoHy5%2F7%2FoDqVLJ1vXl%2FkuIkyJCxuvAEPqyhas6FtX1F0MHs%2Bi83WJMcsLyatqHrwCMj2KLhuqyXqdEj8pGFi7X7n2GmVqw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Santos ( 2026 ) - Neymar Jr - Home Jersey - Mens", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/DTwAAeSw9tRqLhDO/s-l225.jpg" },
+      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614082531675509602129&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LW-014", title: "Camisa Masculina Santos Home 25/26 Jogador Umbro - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-i-2526-jogador-umbro/14/SID-00LW-014/SID-00LW-014_detalhe1.jpg?ts=1773246983" },
     ],
   },
 {
@@ -28972,6 +28995,102 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 78.29, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298554843117?_skw=Parma+Calcio+third+soccer+jersey&hash=item4583415fed%3Ag%3AnHQAAeSweRNpMjpR&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbXCk%2FSSdR85qHPp0s6F7SfNLtnhbe0nG6w9NdC4hFMyXZedCYOHq4ZAZJywgUyjshkaL%2F0oSC2F%2Bm1qrDKULRdLqqhNGUx0ElJqcIQQD9MKdHBxfSeEH3wPSVCpx07wSah57NLvyEtAUR36JUDgdRXIuPv%2FVw6piQGBE68ZJ2K4ppBaVng9bjo9yjE5xzq2QAbAsYtVJvTgkajhFuXapCWcNddOax8vBDlJJ3htv6f%2B%2FiL%2FPLiethRHNVaNRZaX8uWEE2p87Db4UzAkPz2XboGVIP0yCyEQWHIaIQkmWQXvbO9%2BjndZkbOvgpKi09tNt8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "AC Parma Calcio 23/24 Puma Third Soccer Football Jersey Shirt Kit NWT XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/nHQAAeSweRNpMjpR/s-l225.jpg" },
+    ],
+  },
+{
+    id: "santos-away-202526",
+    teamKey: "santos",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541963685641398786242413&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LX-026", title: "Camisa Masculina Santos Away 25/26 Jogador Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-ii-2526-jogador-umbro/26/SID-00LX-026/SID-00LX-026_detalhe1.jpg?ts=1773246982" },
+    ],
+  },
+{
+    id: "santos-goalkeeper-202526",
+    teamKey: "santos",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_detalhe1.jpg?ts=1775877982" },
+    ],
+  },
+{
+    id: "santos-training-202526",
+    teamKey: "santos",
+    season: "2025/26",
+    typeKey: "training",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "SantosStore", price: 159.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419618410730567720490619&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1510-274", title: "Camisa Santos 25/26 Treino Umbro Masculina - Amarelo+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-treino-umbro-masculina/74/2IB-1510-274/2IB-1510-274_detalhe1.jpg?ts=1776310131" },
+    ],
+  },
+{
+    id: "internacional-away-202526",
+    teamKey: "internacional",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "InterStore", price: 49.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975691426220107204972&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2F0LL-0266-006", title: "Camisa Internacional Away Masculina - Cinza", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-masculina/06/0LL-0266-006/0LL-0266-006_detalhe1.jpg?ts=1776223236" },
+    ],
+  },
+{
+    id: "internacional-goalkeeper-202526",
+    teamKey: "internacional",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "InterStore", price: 419.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541976435245123487642094&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFBA-3573-006", title: "Camisa Goleiro Home Internacional 25/26 Adidas Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-goleiro-i-internacional-2526-adidas-masculina/06/FBA-3573-006/FBA-3573-006_detalhe1.jpg?ts=1774305033" },
+    ],
+  },
+{
+    id: "internacional-training-202526",
+    teamKey: "internacional",
+    season: "2025/26",
+    typeKey: "training",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "InterStore", price: 74.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975841397249908672275&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2F0LL-02AW-006", title: "Camiseta Internacional Treino Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camiseta-internacional-treino-masculina/06/0LL-02AW-006/0LL-02AW-006_detalhe1.jpg?ts=1776136834" },
+    ],
+  },
+{
+    id: "sportrecife-goalkeeper-202526",
+    teamKey: "sportrecife",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#C8102E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "LojaPST", price: 79.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.542133752862603966674502&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-3149-008", title: "Sport Recife Camisa de Goleiro Umbro Gaudium Manga Longa Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-de-goleiro-umbro-gaudium-manga-longa-masculina/08/2IA-3149-008/2IA-3149-008_detalhe1.jpg?ts=1773631997" },
+    ],
+  },
+{
+    id: "sportrecife-home-202526",
+    teamKey: "sportrecife",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#C8102E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "LojaPST", price: 244.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.5421318231474841761807411&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IB-1784-068", title: "Sport Recife Camisa Sport Home 25/26 s/n Jogador Umbro Masculina - Vermelho+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-i-2526-sn-jogador-umbro-masculina/68/2IB-1784-068/2IB-1784-068_detalhe1.jpg?ts=1774431693" },
     ],
   },
 ];

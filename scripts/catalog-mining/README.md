@@ -560,6 +560,141 @@ this early. `refresh.py`'s `split_blocks()` looks for the
 `const productsData = [` marker, not the old `export const products`
 one — keep both in sync if either is renamed again.
 
+## Rakuten Advertising (FTP Product Catalog — not Awin, not eBay)
+
+A third affiliate network, approved for 5 Brazilian club stores: Santos
+Store (MID 54196), Inter Store/Internacional (54197), Cruzeiro Store
+(54198), Shop Timão/Corinthians (54200), Loja PST/Sport Recife (54213).
+Unlike Awin (one feed URL per store) and eBay (search API, no bulk
+feed), Rakuten publishes **every** approved advertiser's catalog to one
+shared FTP account:
+
+```
+Host: aftp.linksynergy.com  (creds in .env.local: RAKUTEN_FTP_HOST/USER/PASSWORD)
+File: {MID}_{SID}_mp.txt.gz   (SID is our channel id, 4733330)
+```
+
+**Getting FTP access provisioned is not fully self-service** — after
+requesting Product Feeds access from Rakuten support (they set up the
+FTP account manually, ~3hr turnaround in practice), the user *also*
+has to log into the Rakuten dashboard and click "Apply" per advertiser
+under a **Links → Product Feeds** page (in this UI, labeled "Noticias
+de productos" in the Spanish translation, not obviously named "Product
+Feeds" — easy to miss browsing the other Links submenus, which is what
+happened here first). Only after that does the FTP directory actually
+populate with that MID's file — same standing safety rule as
+everywhere else in this pipeline, the user does that click, not us.
+
+```bash
+curl -s --list-only "ftp://aftp.linksynergy.com/" --user "$RAKUTEN_FTP_USER:$RAKUTEN_FTP_PASSWORD"
+# lists MIDs and their {mid}_{sid}_mp.txt.gz etc once Apply has been clicked for that advertiser
+curl -s -o out.txt.gz "ftp://aftp.linksynergy.com/{mid}_4733330_mp.txt.gz" --user "$RAKUTEN_FTP_USER:$RAKUTEN_FTP_PASSWORD"
+```
+
+### Field format (reverse-engineered — official docs are behind a login wall)
+
+Pipe-delimited, **no header row** (first line is `HDR|{mid}|{platform}|{timestamp}`,
+last line starts `TRL|`), 38 fields per row, 0-indexed after `.split("|")`:
+
+| idx | field | idx | field |
+|---|---|---|---|
+| 0 | product id | 16 | brand |
+| 1 | product name | 19 | sku (dup) |
+| 2 | sku | 20 | brand (dup) |
+| 3 | category | 22 | stock status (`in-stock`/other) |
+| 5 | buy/click URL | 23 | EAN/barcode |
+| 6 | image URL | 25 | currency (`BRL`) |
+| 8, 9 | description (dup) | 27 | impression pixel URL |
+| 10 | discount amount | 28-37 | empty in every row checked |
+| 11 | discount type (`amount`) | | |
+| 12 | **sale price (the real price)** | | |
+| 13 | list/retail price | | |
+
+All other indices empty in every row sampled. Cross-checked across
+dozens of real rows (discount amount = field13 − field12 exactly, every
+time) before trusting this — don't take it on faith if a future field
+looks off, re-derive from real data the same way.
+
+**No decodable size field.** The SKU's trailing numeric suffix
+(`FBA-3556-008` → `-008`) looked like it might encode size, but 2-9
+variants per product with no consistent scale across products (not
+simple S/M/L/XL, not obviously numeric chest/shoe sizing either) — left
+unsolved. `rakuten_convert.py` fills a placeholder `"M"` for every row
+so `pick_best()` doesn't skip every real product for lacking a
+recognized size (same conservative-fallback pattern `ebay_mine.py`
+uses when it can't read real sizes) — sizes shown for these stores are
+not currently accurate, just non-blocking.
+
+### Pipeline: convert once, reuse everything else unchanged
+
+`rakuten_convert.py <in.txt.gz> <out.csv> [team_hint]` turns the pipe
+file into a synthetic Awin-shaped CSV (`product_name`, `search_price`,
+`aw_deep_link`, `aw_image_url`, `brand_name`, `in_stock`, `custom_1`) —
+from there, `pick.py` → `split_picks.py` → `gen_new_teams.py` →
+`refresh.py` run completely unchanged, same as any Awin store (see
+"Running a full mining pass" above; use `store_name=<StoreName>`,
+`currency=BRL`).
+
+Two things this converter does that a plain column-rename wouldn't:
+
+- **Roman-numeral kit type.** These stores' titles use Portuguese
+  convention `"Camisa Santos I 25/26"` = home, `"II"` = away, `"III"` =
+  third — not any word the shared `TYPE_PATTERNS` recognizes. Rewriting
+  bare `"I"/"II"/"III"` in the *shared* regex would be too risky (collides
+  with all sorts of unrelated things in other languages/stores), so this
+  substitution is scoped to the converter, and only applied to titles
+  that already matched a real team name first.
+- **`team_hint` for single-club stores whose titles sometimes drop the
+  club name.** Loja PST/Sport Recife's titles are inconsistent —
+  `"Camisa Sport Recife II..."` sometimes, bare `"Camisa Sport II..."`
+  other times (a generic word too risky to add to `TEAM_PATTERNS`
+  globally). Pass the real name as the 3rd CLI arg and it's prepended to
+  any title that doesn't already match a team — **must** happen before
+  roman-numeral rewriting, not as a post-hoc patch on the generated CSV
+  (real bug hit building this: patching the CSV after conversion means
+  `rewrite_roman_type()` already ran and no-opped, since no team had
+  matched yet at that point).
+
+### Bugs found and fixed (all in the shared `extract.py`/`retro_extract.py`)
+
+- **`JERSEY_RE` had no `camisa`** (Brazilian Portuguese for jersey —
+  distinct from Portugal's `camisola`, which was already there) —
+  blocked every single Rakuten Brazil listing from matching at all, the
+  same class of "whole store silently produces zero" bug as the
+  `junior`/Boca Juniors one. Added.
+- **`retr[oò]` didn't cover `ô` (circumflex)** — Brazilian Portuguese
+  spells "retro" as `retrô` (borrowed from French), so a real product
+  called `"Camisa Cruzeiro RetrôMania"` (an old heritage-reissue design,
+  not current stock) sailed straight past `EXCLUDE_RE`'s retro filter
+  and got picked as the "current" jersey. Fixed to `retr[oôò]`.
+- **`goleiro`** (Portuguese for goalkeeper) wasn't in the goalkeeper
+  `TYPE_PATTERNS` entry. Added.
+- **`juvenil`** (Portuguese/Spanish for youth/junior) wasn't in
+  `EXCLUDE_RE`/`KIDS_SIGNAL_RE` — youth-sized jerseys would've slipped
+  into the adult pipeline. Added to both.
+- **A "Street" collection item** (`"Camiseta Corinthians Street Third"`)
+  — a plain streetwear t-shirt with a small badge, not a match jersey —
+  passed every filter and was only caught by photo review. Added
+  `\bstreet\b` to `EXCLUDE_RE` (bounded, to be safe against any future
+  team/place name that might contain "street").
+
+### Currency and shipping additions needed
+
+`Offer["currency"]` only had `EUR | USD | GBP` — added `BRL`, plus a
+matching entry in `OFFER_CURRENCY_TO_EUR` (approximate rate, sorting
+only, never shown to the user) and `OFFER_CURRENCY_LOCALE` (`pt-BR`,
+for `Intl.NumberFormat`). Both are `Record<Offer["currency"], ...>`
+mapped types, so TypeScript itself catches a missing currency at
+compile time if a new one is ever added without updating both.
+
+`storeShipping` needed entries for all 5 new stores — **not verified
+against each store's own shipping policy page** the way every existing
+entry is (fetching santosstore.com.br's policy page failed); assumed
+Brazil-only (`["BR"]`) since there's no evidence of international
+shipping and a missing entry defaults to "ships everywhere" (`!shipping
+→ return true`), which would be actively misleading. Revisit if this
+turns out wrong.
+
 ## Safety rule (standing, do not change)
 
 Never automate login/"Join"/apply/write actions on any affiliate network

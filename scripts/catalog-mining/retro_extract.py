@@ -27,7 +27,7 @@ from extract import (
 # want here) and MINUS the bare "años \d0" old-decade filter (same reason).
 RETRO_EXCLUDE_RE = re.compile(
     r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
-    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"marvel|avengers|disney|maradona|"

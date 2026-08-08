@@ -2,6 +2,7 @@ import csv, re, sys, json
 from collections import defaultdict
 
 TEAM_PATTERNS = {
+    "sportrecife": r"sport (club )?recife|\bsport recife\b",
     "burnley": r"\bburnley\b",
     "heidenheim": r"heidenheim",
     "auxerre": r"\bauxerre\b",
@@ -258,7 +259,7 @@ TEAM_PATTERNS = {
 TYPE_PATTERNS = {
     # goalkeeper se chequea primero: títulos como "Maillot de portero
     # local" contienen "local" pero son de arquero, no de titular.
-    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere",
+    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere|goleiro",
     # training también se chequea antes que home/away/third: "Camiseta de
     # entrenamiento" no tiene un color titular/suplente definido, así que
     # si se la clasificara por esos patrones podría quedar mal etiquetada.
@@ -268,7 +269,10 @@ TYPE_PATTERNS = {
     "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b",
 }
 
-JERSEY_RE = re.compile(r"\b(camiseta|camisola|maillot|jersey|trikot|shirt|maglia)\b", re.I)
+# "camisa" (Brazilian Portuguese for jersey/shirt -- distinct from
+# Portugal's "camisola") added after finding it missing entirely blocked
+# every Rakuten Brazil store's listings from matching at all.
+JERSEY_RE = re.compile(r"\b(camisa|camiseta|camisola|maillot|jersey|trikot|shirt|maglia)\b", re.I)
 EXCLUDE_RE = re.compile(
     r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
     # "junior" needs a word boundary -- real bug found: without it, this
@@ -277,13 +281,13 @@ EXCLUDE_RE = re.compile(
     # project's history (only 3 hand-seeded Boca products existed before
     # this fix). Watch for the same class with any other club whose name
     # contains a kids/youth/gender exclusion word as a substring.
-    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\byouth\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
-    r"retro|vintage|clásic|classic|hist[oó]ric|retr[oò]|riedizione|años? \d0\b|"
+    r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
     r"marvel|avengers|disney|maradona|"
     r"fan\b|aficionado|réplica infantil|"
-    r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|"
+    r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq",
     re.I,
@@ -296,16 +300,16 @@ KIDS_EXCLUDE_RE = re.compile(
     r"bebé|bebe|\bbaby\b|\bmois\b|"
     r"mujer|women|dama|f[ée]minin|femenin|\bfemme\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
-    r"retro|vintage|clásic|classic|hist[oó]ric|retr[oò]|riedizione|años? \d0\b|"
+    r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
     r"marvel|avengers|disney|maradona|"
     r"fan\b|aficionado|"
-    r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|"
+    r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq",
     re.I,
 )
 KIDS_SIGNAL_RE = re.compile(
-    r"infantil|\bniñ|\bnino|\bkids?\b|\bjunior\b|\benfant|crian[çc]a|"
+    r"infantil|\bniñ|\bnino|\bkids?\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
     # Bare "N-N" at the end without a units word is only treated as a kids
     # age range when both numbers are a plausible kid age (0-17) -- real bug
     # found: a season suffix like "26-27" (2026-27) was matching this same
