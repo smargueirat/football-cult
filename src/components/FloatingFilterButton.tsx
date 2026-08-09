@@ -21,6 +21,7 @@ export default function FloatingFilterButton() {
     toggleSeasonFilter,
     setSeasonFilter,
     activeFilterCount,
+    clearAllFilters,
   } = useSearchFilter();
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
@@ -40,6 +41,14 @@ export default function FloatingFilterButton() {
     <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3">
       {open && (
         <div className="solid-panel flex w-64 flex-col gap-4 rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]">
+          {activeFilterCount > 0 && (
+            <button
+              onClick={clearAllFilters}
+              className="self-start text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+            >
+              {t.search.clearFilters}
+            </button>
+          )}
           <div>
             <p className="mb-2 text-xs text-[#9a9a94]">{t.nav.categories}</p>
             <div className="-mx-4 flex gap-1.5 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">

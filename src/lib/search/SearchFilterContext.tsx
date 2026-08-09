@@ -41,7 +41,17 @@ interface SearchFilterValue {
   sortBy: SortKey;
   setSortBy: (s: SortKey) => void;
   activeFilterCount: number;
+  clearAllFilters: () => void;
+  // Vive acá (no como useState local del componente de resultados) por la
+  // misma razón que sortBy: si viviera en SearchExplorer, entrar a una
+  // camiseta y volver (que desmonta y remonta ese componente) perdería
+  // cuántas tandas de "Ver más" había cargado el usuario, volviendo
+  // siempre al primer bloque -- justo el bug que se pidió corregir.
+  visibleCount: number;
+  setVisibleCount: (n: number | ((c: number) => number)) => void;
 }
+
+export const CATALOG_PAGE_SIZE = 24;
 
 const SearchFilterContext = createContext<SearchFilterValue | undefined>(undefined);
 
@@ -54,6 +64,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [brandFilter, setBrandFilter] = useState<Brand[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
   const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
+  const [visibleCount, setVisibleCount] = useState(CATALOG_PAGE_SIZE);
 
   const activeFilterCount =
     (typeFilter.length > 0 ? 1 : 0) +
@@ -89,6 +100,16 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         sortBy,
         setSortBy,
         activeFilterCount,
+        clearAllFilters: () => {
+          setTypeFilter([]);
+          setCategoryFilter([]);
+          setSeasonFilter([]);
+          setAgeGroupFilter([]);
+          setBrandFilter([]);
+          setSizeFilter([]);
+        },
+        visibleCount,
+        setVisibleCount,
       }}
     >
       {children}

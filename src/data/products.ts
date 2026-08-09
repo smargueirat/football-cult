@@ -256,7 +256,7 @@ export type TeamKey =
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper" | "training" | "prematch" | "retro";
 export type CategoryKey = "national" | "club";
-export type AgeGroup = "adult" | "kids";
+export type AgeGroup = "men" | "women" | "kids";
 export type Brand =
   | "adidas"
   | "nike"
@@ -312,7 +312,7 @@ export const KIDS_SIZES: Size[] = [
 export const SIZES: Size[] = [...ADULT_SIZES, ...KIDS_SIZES];
 
 export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
-  return product.ageGroup ?? "adult";
+  return product.ageGroup ?? "men";
 }
 
 export const teamCategory: Record<TeamKey, CategoryKey> = {
@@ -1686,7 +1686,7 @@ export interface Product {
   colorHexSecondary: string;
   jerseyPattern: JerseyPattern;
   offers: Offer[];
-  // Ausente = "adult" (así no hay que tocar los productos ya existentes).
+  // Ausente = "men" (así no hay que tocar los productos ya existentes).
   ageGroup?: AgeGroup;
   // Marca real del fabricante, sacada de la propia columna brand/brand_name
   // del feed de cada tienda (o "vendor" en el caso de Mystery Shirt Club).
@@ -8214,6 +8214,7 @@ const productsData = [
     colorHex: "#FB090B",
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "puma",
     offers: [
       { store: "MysteryShirtClub", price: 16.19, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-ac-milan-away-shirt-ladies-303756", title: "2023-2024 AC Milan Away Shirt (Ladies)", inStock: true, sizes: ["XS", "M"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1689948743_ac-milan-2023-2024-away-football-shirt-ladies.jpg?v=1763226047" },
@@ -8321,6 +8322,7 @@ const productsData = [
     colorHex: "#FB090B",
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "puma",
     offers: [
       { store: "MysteryShirtClub", price: 17.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-ac-milan-home-shirt-ladies-294680", title: "2023-2024 AC Milan Home Shirt (Ladies)", inStock: true, sizes: ["XS", "M", "L", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1685631514_ac-milan-2023-2024-home-football-shirt-ladies.jpg?v=1763226135" },
@@ -8789,6 +8791,7 @@ const productsData = [
     colorHex: "#F5F5F5",
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 20.66, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-germany-home-shirt-ladies-268019", title: "2022-2023 Germany Home Shirt (Ladies)", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666272784_germany-home-shirt-ladies.jpg?v=1763224430" },
@@ -8924,6 +8927,7 @@ const productsData = [
     colorHex: "#75AADB",
     colorHexSecondary: "#F4F7FA",
     jerseyPattern: "stripes",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 31.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-argentina-away-shirt-ladies-347374", title: "2024-2025 Argentina Away Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1712089631_argentina-2024-2025-away-football-shirt-ladies.jpg?v=1763231388" },
@@ -8978,6 +8982,7 @@ const productsData = [
     colorHex: "#75AADB",
     colorHexSecondary: "#F4F7FA",
     jerseyPattern: "stripes",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 53.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-argentina-home-shirt-ladies-347369", title: "2024-2025 Argentina Home Shirt (Ladies)", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1712087618_argentina-home-football-shirt-ladies.jpg?v=1763231406" },
@@ -9057,6 +9062,7 @@ const productsData = [
     colorHex: "#EF0107",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 22.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-arsenal-away-shirt-ladies-301668", title: "2023-2024 Arsenal Away Shirt (Ladies)", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1689692715_arsenal-2023-2024-away-football-shirt-ladies.jpg?v=1763226384" },
@@ -10016,6 +10022,7 @@ const productsData = [
     colorHex: "#ED2939",
     colorHexSecondary: "#FFD90C",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 17.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-belgium-away-shirt-ladies-292621", title: "2023-2024 Belgium Away Shirt (Ladies)", inStock: true, sizes: ["L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1683899075_belgium-2023-2024-football-away-shirt-ladies.jpg?v=1763226730" },
@@ -10834,6 +10841,7 @@ const productsData = [
     colorHex: "#FDE100",
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "puma",
     offers: [
       { store: "MysteryShirtClub", price: 16.19, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-borussia-dortmund-away-shirt-ladies-418058", title: "2024-2025 Borussia Dortmund Away Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1725274275_borussia-dortmund-2024-2025-puma-away-football-shirt-ladies.jpg?v=1763231907" },
@@ -10873,6 +10881,7 @@ const productsData = [
     colorHex: "#FDE100",
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "puma",
     offers: [
       { store: "MysteryShirtClub", price: 20.24, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-borussia-dortmund-home-shirt-ladies-368751", title: "2024-2025 Borussia Dortmund Home Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1716339055_borussia-dortmund-2024-2025-home-football-shirt-ladies-no-sponsor.jpg?v=1763231934" },
@@ -10979,6 +10988,7 @@ const productsData = [
     colorHex: "#C60B1E",
     colorHexSecondary: "#F5B942",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 34.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-spain-away-shirt-ladies-349054", title: "2024-2025 Spain Away Shirt (Ladies)", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1712785613_spain-2024-2025-football-away-shirt-ladies.jpg?v=1763234757" },
@@ -11112,6 +11122,7 @@ const productsData = [
     colorHex: "#B22234",
     colorHexSecondary: "#3C3B6E",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "nike",
     offers: [
       { store: "MysteryShirtClub", price: 34.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-usa-home-shirt-ladies-269313", title: "2022-2023 USA Home Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1667233150_usa-home-stadium-jersey-womens.jpg?v=1763225749" },
@@ -11743,6 +11754,7 @@ const productsData = [
     colorHex: "#F7B5CD",
     colorHexSecondary: "#231F20",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 31.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-inter-miami-away-lionel-messi-shirt-ladies-345528", title: "2024-2025 Inter Miami Away LIONEL MESSI Shirt (Ladies)", inStock: true, sizes: ["L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1710982192_inter-miami-2024-2025-away-football-shirt-messi-10-ladies-back.jpg?v=1763232655" },
@@ -12210,6 +12222,7 @@ const productsData = [
     colorHex: "#003D7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "puma",
     offers: [
       { store: "MysteryShirtClub", price: 13.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-italy-away-shirt-ladies-258872", title: "2022-2023 Italy Away Shirt (Ladies)", inStock: true, sizes: ["XS"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1662740771_italy-away-shirt-ladies.jpg?v=1763224571" },
@@ -12223,6 +12236,7 @@ const productsData = [
     colorHex: "#003D7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 32.47, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-italy-away-shirt-ladies-293154", title: "2023-2024 Italy Away Shirt (Ladies)", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1684765105_italy-2023-2024-away-football-shirt-ladies.jpg?v=1763227373" },
@@ -12236,6 +12250,7 @@ const productsData = [
     colorHex: "#003D7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 31.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-italy-away-shirt-ladies-347330", title: "2024-2025 Italy Away Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1711686107_italy-2024-2025-away-football-shirt-ladies.jpg?v=1763232741" },
@@ -12315,6 +12330,7 @@ const productsData = [
     colorHex: "#003D7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "puma",
     offers: [
       { store: "MysteryShirtClub", price: 19.68, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2018-2019-italy-home-shirt-ladies-241934", title: "2018-2019 Italy Home Shirt (Ladies)", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1641558120_2018-2019-italy-womens-home-shirt.jpg?v=1763222599" },
@@ -12341,6 +12357,7 @@ const productsData = [
     colorHex: "#003D7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 22.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-italy-home-shirt-ladies-285520", title: "2023-2024 Italy Home Shirt (Ladies)", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1680076392_italy-2023-2024-home-football-shirt-ladies.jpg?v=1763227440" },
@@ -12501,6 +12518,7 @@ const productsData = [
     colorHex: "#000000",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "stripes",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 22.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-juventus-home-shirt-ladies-294692", title: "2023-2024 Juventus Home Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1684942863_juventus-2023-2024-home-football-shirt-ladies.jpg?v=1763227626" },
@@ -12542,6 +12560,7 @@ const productsData = [
     colorHex: "#000000",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "stripes",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 20.24, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-juventus-third-shirt-ladies-318942", title: "2023-2024 Juventus Third Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1692957069_juventus-2023-2024-third-football-shirt-ladies.jpg?v=1763227696" },
@@ -13012,6 +13031,7 @@ const productsData = [
     colorHex: "#C8102E",
     colorHexSecondary: "#F6EB61",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "nike",
     offers: [
       { store: "MysteryShirtClub", price: 35.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-liverpool-home-shirt-ladies-296038", title: "2023-2024 Liverpool Home Shirt (Ladies)", inStock: true, sizes: ["XS", "XL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1686653525_2023-2024-liverpool-home-football-shirt-womens.jpg?v=1763227967" },
@@ -13393,6 +13413,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 16.19, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2Fman-utd-2021-2022-away-shirt-ladies-pogba-6-223576", title: "Man Utd 2021-2022 Away Shirt (Ladies) (POGBA 6)", inStock: true, sizes: ["XS", "S", "L", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re-man-utd-2021-2022-away-shirt-ladies-pogba-6-1628065051.png?v=1763236815" },
@@ -13406,6 +13427,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 17.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-man-utd-away-shirt-ladies-260953", title: "2022-2023 Man Utd Away Shirt (Ladies)", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1663774079_man-utd-away-shirt-ladies.jpg?v=1763224978" },
@@ -13420,6 +13442,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 24.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-man-utd-away-shirt-ladies-308740", title: "2023-2024 Man Utd Away Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1690810004_man-utd-2023-2024-away-football-shirt-ladies.jpg?v=1763228572" },
@@ -13630,6 +13653,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 18.22, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2Fman-utd-2021-2022-home-shirt-ladies-220627", title: "Man Utd 2021-2022 Home Shirt (Ladies)", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1626344930_manchester-united-home-shirt-2021-22-womens.jpg?v=1763236751" },
@@ -13659,6 +13683,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 24.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-man-utd-home-shirt-ladies-299401", title: "2023-2024 Man Utd Home Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1688390837_man-utd-2023-2024-home-football-shirt-ladies.jpg?v=1763228661" },
@@ -13729,6 +13754,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 17.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-man-utd-third-shirt-ladies-260962", title: "2022-2023 Man Utd Third Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L", "XL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1663773931_man-utd-third-shirt-ladies.jpg?v=1763225044" },
@@ -13743,6 +13769,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 20.24, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-man-utd-third-shirt-ladies-310203", title: "2023-2024 Man Utd Third Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1691483816_man-utd-2023-2024-third-football-shirt-ladies.jpg?v=1763228759" },
@@ -13798,6 +13825,7 @@ const productsData = [
     colorHex: "#DA020E",
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 13.49, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-man-utd-training-shirt-green-ladies-337659", title: "2023-2024 Man Utd Training Shirt (Green) - Ladies", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1705293868_man-utd-2023-2024-football-training-shirt-green-ladies.jpg?v=1763228804" },
@@ -14965,6 +14993,7 @@ const productsData = [
     colorHex: "#001E62",
     colorHexSecondary: "#DA291C",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "nike",
     offers: [
       { store: "MysteryShirtClub", price: 34.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-psg-home-shirt-ladies-299405", title: "2023-2024 PSG Home Shirt (Ladies)", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1688387781_psg-2023-2024-stadium-home-football-shirt-womens.jpg?v=1763229337" },
@@ -15109,6 +15138,7 @@ const productsData = [
     colorHex: "#1D3E7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "other",
     offers: [
       { store: "MysteryShirtClub", price: 7.28, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-rangers-away-shirt-ladies-268009", title: "2022-2023 Rangers Away Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666281499_rangers-2022-23-away-jersey-womens.jpg?v=1763225367" },
@@ -15122,6 +15152,7 @@ const productsData = [
     colorHex: "#1D3E7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "other",
     offers: [
       { store: "MysteryShirtClub", price: 18.6, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-rangers-away-shirt-ladies-310118", title: "2023-2024 Rangers Away Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1691410456_rangers-2023-2024-away-football-shirt-ladies.jpg?v=1763229418" },
@@ -15135,6 +15166,7 @@ const productsData = [
     colorHex: "#1D3E7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "other",
     offers: [
       { store: "MysteryShirtClub", price: 14.76, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-rangers-home-shirt-ladies-267659", title: "2022-2023 Rangers Home Shirt (Ladies)", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666101058_rangers-2022-23-home-shirt-women.jpg?v=1763225400" },
@@ -15148,6 +15180,7 @@ const productsData = [
     colorHex: "#1D3E7C",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "other",
     offers: [
       { store: "MysteryShirtClub", price: 14.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-rangers-home-shirt-ladies-300155", title: "2023-2024 Rangers Home Shirt (Ladies)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1689084744_rangers-2023-2024-football-home-shirt-ladies.jpg?v=1763229521" },
@@ -15736,6 +15769,7 @@ const productsData = [
     colorHex: "#006AA7",
     colorHexSecondary: "#FECC02",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 28.34, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-sweden-away-shirt-ladies-288518", title: "2023-2024 Sweden Away Shirt (Ladies)", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1682597749_sweden-2023-2024-away-football-shirt-ladies.jpg?v=1763230073" },
@@ -15788,6 +15822,7 @@ const productsData = [
     colorHex: "#FFFFFF",
     colorHexSecondary: "#132257",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "nike",
     offers: [
       { store: "MysteryShirtClub", price: 16.19, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-tottenham-away-shirt-ladies-251525", title: "2022-2023 Tottenham Away Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1658912837_tottenham-away-jersey.jpg?v=1763225682" },
@@ -15989,6 +16024,7 @@ const productsData = [
     colorHex: "#7A263A",
     colorHexSecondary: "#1BB1E7",
     jerseyPattern: "solid",
+    ageGroup: "women",
     brand: "umbro",
     offers: [
       { store: "MysteryShirtClub", price: 20.24, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-west-ham-united-away-shirt-ladies-312461", title: "2023-2024 West Ham United Away Shirt (Ladies)", inStock: true, sizes: ["M", "L", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1692008967_west-ham-2023-2024-away-jersey-s-s-wmns.jpg?v=1763230431" },
@@ -25174,6 +25210,7 @@ const productsData = [
     colorHex: "#EF2B2D",
     colorHexSecondary: "#002868",
     jerseyPattern: "solid",
+    ageGroup: "women",
     offers: [
       { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168495924260?_skw=Norway+home+soccer+jersey+retro+vintage&hash=item273b23c424%3Ag%3A0koAAeSwJwdqP4k9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norway National Football Team Home Umbro Ladies Jersey 2002 , BNWT, Size 44", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/0koAAeSwJwdqP4k9/s-l225.jpg" },
     ],
@@ -27802,6 +27839,7 @@ const productsData = [
     colorHex: "#FF0000",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     offers: [
       { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/386717105325?_skw=Canada+away+soccer+jersey&hash=item5a0a22bcad%3Ag%3A12oAAOSwlapltYp1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Canada Woman's Away Jersey 2020- White", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/12oAAOSwlapltYp1/s-l225.jpg" },
     ],
@@ -27838,6 +27876,7 @@ const productsData = [
     colorHex: "#FF0000",
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
+    ageGroup: "women",
     offers: [
       { store: "eBay", price: 99.88, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/116579916582?_skw=Canada+away+soccer+jersey&hash=item1b24b45b26%3Ag%3Ae%7E4AAOSwGy5oD9jx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canada 2023 Away Nike Stadium Soccer ADV Jersey Woman Medium Team Issue Sample", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/e~4AAOSwGy5oD9jx/s-l225.jpg" },
     ],

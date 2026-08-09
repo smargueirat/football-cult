@@ -71,7 +71,8 @@ export interface Translations {
     typeLabel: string;
     seasonLabel: string;
     ageGroupLabel: string;
-    ageGroupAdult: string;
+    ageGroupMen: string;
+    ageGroupWomen: string;
     ageGroupKids: string;
     quickSelectLabel: string;
     clearAria: string;
@@ -86,6 +87,7 @@ export interface Translations {
     brandLabel: string;
     loadMore: string;
     sizeLabel: string;
+    clearFilters: string;
   };
   product: {
     bestPrice: string;
@@ -278,7 +280,8 @@ export const translations: Record<Locale, Translations> = {
       typeLabel: "Tipo",
       seasonLabel: "Temporada",
       ageGroupLabel: "Edad",
-      ageGroupAdult: "Adulto",
+      ageGroupMen: "Hombre",
+      ageGroupWomen: "Mujer",
       ageGroupKids: "Niño/a",
       quickSelectLabel: "Accesos rápidos",
       clearAria: "Limpiar búsqueda",
@@ -293,6 +296,7 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Marca",
       loadMore: "Ver más",
       sizeLabel: "Talle",
+      clearFilters: "Borrar filtros",
     },
     product: {
       bestPrice: "Mejor precio",
@@ -492,7 +496,8 @@ export const translations: Record<Locale, Translations> = {
       typeLabel: "Tipo",
       seasonLabel: "Temporada",
       ageGroupLabel: "Idade",
-      ageGroupAdult: "Adulto",
+      ageGroupMen: "Homem",
+      ageGroupWomen: "Mulher",
       ageGroupKids: "Infantil",
       quickSelectLabel: "Acessos rápidos",
       clearAria: "Limpar busca",
@@ -507,6 +512,7 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Marca",
       loadMore: "Ver mais",
       sizeLabel: "Tamanho",
+      clearFilters: "Limpar filtros",
     },
     product: {
       bestPrice: "Melhor preço",
@@ -706,7 +712,8 @@ export const translations: Record<Locale, Translations> = {
       typeLabel: "Type",
       seasonLabel: "Season",
       ageGroupLabel: "Age",
-      ageGroupAdult: "Adult",
+      ageGroupMen: "Men",
+      ageGroupWomen: "Women",
       ageGroupKids: "Kids",
       quickSelectLabel: "Quick picks",
       clearAria: "Clear search",
@@ -721,6 +728,7 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Brand",
       loadMore: "Show more",
       sizeLabel: "Size",
+      clearFilters: "Clear filters",
     },
     product: {
       bestPrice: "Best price",

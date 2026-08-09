@@ -16,6 +16,14 @@ BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7}
 
 PRODUCTS_TS = "/home/piojo/football-cult/src/data/products.ts"
 
+# retro_extract.py's RETRO_EXCLUDE_RE doesn't filter out women's-cut
+# items the way the main pipeline's EXCLUDE_RE does (that's on purpose --
+# these are real, in-catalog products, not junk), so retro mining
+# regularly picks up "(Ladies)"-style FansJerseyHub titles. Tag them
+# ageGroup:"women" here so they show the WOMEN badge and the ageGroup
+# filter, instead of silently defaulting to "men".
+WOMEN_SIGNAL_RE = re.compile(r"\bwomen\b|\bwomens\b|\bdama\b|f[ée]minin|femenin|\bfemme\b|\bladies\b|\bwoman\b", re.I)
+
 
 def colors_for_team(content, team):
     # BATCH1..5 (new_teams_batch*.py) store (es, en, pt, colorHex,
@@ -77,6 +85,10 @@ def gen(merged_path, out_path):
         if not offer_lines:
             continue
 
+        age_group_line = ""
+        if any(WOMEN_SIGNAL_RE.search(o.get("title") or "") for o in offers):
+            age_group_line = f'    ageGroup: "women",\n'
+
         block = (
             f'{{\n'
             f'    id: "{pid}",\n'
@@ -86,6 +98,7 @@ def gen(merged_path, out_path):
             f'    colorHex: "{c1}",\n'
             f'    colorHexSecondary: "{c2}",\n'
             f'    jerseyPattern: "{pattern}",\n'
+            + age_group_line +
             f'    offers: [\n' + "\n".join(offer_lines) + "\n"
             f'    ],\n'
             f'  }},\n'

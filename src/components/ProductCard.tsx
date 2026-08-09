@@ -42,7 +42,9 @@ export default function ProductCard({ product }: { product: Product }) {
       : SIZES[0];
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
-  const isKids = getAgeGroup(product) === "kids";
+  const ageGroup = getAgeGroup(product);
+  const isKids = ageGroup === "kids";
+  const isWomen = ageGroup === "women";
   // Nombre real tal como aparece en la tienda, no un nombre armado por
   // nosotros (equipo + tipo). Se prefiere una oferta cuyo título esté en
   // el idioma elegido en el sitio; si no hay ninguna, se usa el de la
@@ -95,6 +97,11 @@ export default function ProductCard({ product }: { product: Product }) {
           {isKids && (
             <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#1F6F4C" }}>
               {t.search.ageGroupKids}
+            </span>
+          )}
+          {isWomen && (
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#DB2777" }}>
+              {t.search.ageGroupWomen}
             </span>
           )}
         </span>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AgeGroup,
   Brand,
@@ -23,7 +23,7 @@ import {
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { useSearchFilter } from "@/lib/search/SearchFilterContext";
+import { CATALOG_PAGE_SIZE, useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard";
 import Chip from "./Chip";
@@ -31,7 +31,7 @@ import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
 
 const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "prematch", "retro"];
-const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
+const AGE_GROUP_FILTERS: AgeGroup[] = ["men", "women", "kids"];
 
 // Marcas más relevantes del catálogo: un atajo curado, no el listado
 // completo de valores de Brand (varios tienen apenas 1-2 productos y solo
@@ -65,7 +65,7 @@ const QUICK_PICK_TEAMS: TeamKey[] = [
   "riverplate",
 ].filter((key) => products.some((p) => p.teamKey === key)) as TeamKey[];
 
-const PAGE_SIZE = 24;
+const SCROLL_KEY = "football-cult-catalog-scroll";
 
 // "2025/26" -> 2025, "2026" -> 2026. Sirve para poder ordenar temporadas
 // cronológicamente sin importar el formato con el que se cargó cada una.
@@ -100,19 +100,28 @@ export default function SearchExplorer() {
     sortBy,
     setSortBy,
     activeFilterCount,
+    clearAllFilters,
+    visibleCount,
+    setVisibleCount,
   } = useSearchFilter();
   const { countryCode } = useCountry();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortOpen, setSortOpen] = useState(false);
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const results = useMemo(() => {
     const normalized = query.trim().toLowerCase();
 
     const filtered = products.filter((p) => {
+      // Además del nombre del equipo, busca en el texto real de cada
+      // oferta -- así encuentra por jugador ("messi"), por variante
+      // ("pre-match") o cualquier otra palabra que solo aparezca en el
+      // título tal como lo puso la tienda, no en nuestros campos curados.
       const matchesQuery = normalized
         ? teamNames[p.teamKey].es.toLowerCase().includes(normalized) ||
-          teamNames[p.teamKey].en.toLowerCase().includes(normalized)
+          teamNames[p.teamKey].en.toLowerCase().includes(normalized) ||
+          teamNames[p.teamKey].pt.toLowerCase().includes(normalized) ||
+          typeNames[p.typeKey][locale].toLowerCase().includes(normalized) ||
+          p.offers.some((o) => o.title?.toLowerCase().includes(normalized))
         : true;
       // "retro" además exige temporada 2006 o anterior -- una camiseta de
       // 2023/24 ya reemplazada por la actual no es "retro" en el sentido
@@ -160,6 +169,7 @@ export default function SearchExplorer() {
     });
   }, [
     query,
+    locale,
     typeFilter,
     categoryFilter,
     seasonFilter,
@@ -170,15 +180,41 @@ export default function SearchExplorer() {
     sortBy,
   ]);
 
-  // Cada vez que cambian los filtros/orden/búsqueda (o sea, cada vez que
-  // `results` es un array distinto), volvemos a mostrar solo la primera
-  // tanda: sin esto, entrar a una camiseta y volver atrás mantendría
-  // renderizadas las +1000 tarjetas que se hubieran ido acumulando con
-  // "Ver más", y de paso evita quedar con el scroll "colgado" a mitad de
-  // una lista que ya no corresponde al nuevo filtro.
+  // Cuando el usuario cambia de verdad los filtros/orden/búsqueda mientras
+  // está en esta página, volvemos a mostrar solo la primera tanda. OJO:
+  // esto NO debe dispararse en el primer render tras un montaje -- entrar
+  // a una camiseta y volver (con "volver al catálogo" o con atrás del
+  // navegador) desmonta y remonta este componente con los mismos filtros
+  // de antes, y ahí es donde queremos CONSERVAR cuántas tandas de "Ver
+  // más" había cargado el usuario (visibleCount vive en el contexto de
+  // filtros, que no se desmonta, así que sobrevive solo si no lo
+  // reseteamos acá).
+  const isFirstRun = useRef(true);
   useEffect(() => {
-    setVisibleCount(PAGE_SIZE);
-  }, [results]);
+    if (isFirstRun.current) {
+      isFirstRun.current = false;
+      return;
+    }
+    setVisibleCount(CATALOG_PAGE_SIZE);
+    sessionStorage.removeItem(SCROLL_KEY);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, countryCode, sortBy]);
+
+  // Restaura la posición de scroll al volver de una camiseta -- Next.js
+  // solo restaura scroll nativamente en navegación "atrás" del navegador,
+  // no cuando se vuelve por el link "volver al catálogo" (es una
+  // navegación nueva, no un pop), así que lo hacemos a mano. Se guarda al
+  // desmontar (que es cuando el usuario se va de esta página) y se
+  // restaura al montar, después de que las cartas de visibleCount ya
+  // restaurado le dieron a la página el mismo alto que tenía antes.
+  useEffect(() => {
+    const saved = sessionStorage.getItem(SCROLL_KEY);
+    if (saved) {
+      requestAnimationFrame(() => window.scrollTo(0, parseInt(saved, 10)));
+    }
+    return () => {
+      sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
+    };
+  }, []);
 
   const visibleResults = results.slice(0, visibleCount);
 
@@ -272,6 +308,23 @@ export default function SearchExplorer() {
             {t.search.sortLabel}
           </button>
         </div>
+
+        {activeFilterCount > 0 && (
+          <button
+            onClick={clearAllFilters}
+            className="flex items-center gap-1.5 self-start text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+          >
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+            {t.search.clearFilters}
+          </button>
+        )}
       </div>
 
       {results.length === 0 ? (
@@ -290,7 +343,7 @@ export default function SearchExplorer() {
           </div>
           {visibleCount < results.length && (
             <button
-              onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+              onClick={() => setVisibleCount((c) => c + CATALOG_PAGE_SIZE)}
               className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
             >
               {t.search.loadMore} ({results.length - visibleCount})
@@ -310,20 +363,30 @@ export default function SearchExplorer() {
               <p className="font-card-title text-lg text-[#1a1a1a]">
                 {t.search.filtersButton}
               </p>
-              <button
-                onClick={() => setFiltersOpen(false)}
-                aria-label={t.search.clearAria}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-[#8a7a5a] hover:bg-black/[0.05] hover:text-[#1a1a1a]"
-              >
-                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+              <div className="flex items-center gap-3">
+                {activeFilterCount > 0 && (
+                  <button
+                    onClick={clearAllFilters}
+                    className="text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+                  >
+                    {t.search.clearFilters}
+                  </button>
+                )}
+                <button
+                  onClick={() => setFiltersOpen(false)}
+                  aria-label={t.search.clearAria}
+                  className="flex h-8 w-8 items-center justify-center rounded-full text-[#8a7a5a] hover:bg-black/[0.05] hover:text-[#1a1a1a]"
+                >
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
 
             <div className="flex flex-col gap-5 overflow-y-auto px-5 py-5">
@@ -490,7 +553,11 @@ export default function SearchExplorer() {
                       onClick={() => toggleAgeGroupFilter(key)}
                       className="flex-shrink-0 whitespace-nowrap"
                     >
-                      {key === "adult" ? t.search.ageGroupAdult : t.search.ageGroupKids}
+                      {key === "men"
+                        ? t.search.ageGroupMen
+                        : key === "women"
+                          ? t.search.ageGroupWomen
+                          : t.search.ageGroupKids}
                     </Chip>
                   ))}
                 </div>
