@@ -37,9 +37,10 @@ from extract import (
 )
 from retro_extract import parse_retro_season, RETRO_EXCLUDE_RE
 from ebay_mine import EbayClient, get_team_en_names, ACCESSORY_RE, MIN_JERSEY_PRICE, MAX_JERSEY_PRICE
+from manual_exclusions import is_manually_excluded
 from split_picks import detect_season, season_end_year
 
-CURRENT_TYPES = ("home", "away", "third", "goalkeeper", "training")
+CURRENT_TYPES = ("home", "away", "third", "goalkeeper", "training", "prematch")
 KIDS_TYPES = ("home", "away", "third")
 RETRO_TYPES = ("home", "away", "third")
 
@@ -49,6 +50,7 @@ TYPE_QUERY_WORD = {
     "third": "third",
     "goalkeeper": "goalkeeper",
     "training": "training",
+    "prematch": "pre-match",
 }
 # Real bug found: the old hand-rolled regex here only matched a full
 # 4-digit-prefixed season ("2025/26") or a bare "2026" -- but the
@@ -128,10 +130,13 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
                 continue
             if amount < MIN_JERSEY_PRICE or amount > MAX_JERSEY_PRICE:
                 continue
+            link = item.get("itemAffiliateWebUrl") or item.get("itemWebUrl")
+            if is_manually_excluded(link):
+                continue
             candidates.append({
                 "title": title, "price": amount, "shipping": 0.0,
                 "currency": price.get("currency", "USD"),
-                "link": item.get("itemAffiliateWebUrl") or item.get("itemWebUrl"),
+                "link": link,
                 "image": (item.get("image") or {}).get("imageUrl"),
                 "item_id": item.get("itemId"),
             })
@@ -180,10 +185,13 @@ def mine_kids(client, team_key, team_en, teams_re, types_re):
                 continue
             if amount < 10.0 or amount > 150.0:  # kids jerseys run cheaper; own outlier bounds
                 continue
+            link = item.get("itemAffiliateWebUrl") or item.get("itemWebUrl")
+            if is_manually_excluded(link):
+                continue
             candidates.append({
                 "title": title, "price": amount, "shipping": 0.0,
                 "currency": price.get("currency", "USD"),
-                "link": item.get("itemAffiliateWebUrl") or item.get("itemWebUrl"),
+                "link": link,
                 "image": (item.get("image") or {}).get("imageUrl"),
                 "item_id": item.get("itemId"),
             })
@@ -238,10 +246,13 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
                 continue
             if amount < MIN_JERSEY_PRICE or amount > MAX_JERSEY_PRICE:
                 continue
+            link = item.get("itemAffiliateWebUrl") or item.get("itemWebUrl")
+            if is_manually_excluded(link):
+                continue
             cand = {
                 "title": title, "price": amount, "shipping": 0.0,
                 "currency": price.get("currency", "USD"),
-                "link": item.get("itemAffiliateWebUrl") or item.get("itemWebUrl"),
+                "link": link,
                 "image": (item.get("image") or {}).get("imageUrl"),
                 "item_id": item.get("itemId"),
             }

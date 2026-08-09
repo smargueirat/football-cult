@@ -1,5 +1,6 @@
 import csv, re, sys, json
 from collections import defaultdict
+from manual_exclusions import is_manually_excluded
 
 TEAM_PATTERNS = {
     "sportrecife": r"sport (club )?recife|\bsport recife\b",
@@ -260,10 +261,20 @@ TYPE_PATTERNS = {
     # goalkeeper se chequea primero: títulos como "Maillot de portero
     # local" contienen "local" pero son de arquero, no de titular.
     "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere|goleiro",
+    # prematch se chequea antes que training: son productos distintos
+    # (remera de calentamiento pre-partido vs. buzo/conjunto de
+    # entrenamiento) aunque durante un tiempo compartieron el mismo
+    # patrón -- eso generó productos duplicados (mismo team/season/type
+    # real, tres ids distintos: "-training-", "-prematch-",
+    # "-calentamiento-") que había que fusionar a mano. "calentamiento"
+    # queda en training porque en la mayoría de las tiendas ES describe
+    # la remera de calentamiento del conjunto de entrenamiento, no la
+    # prenda que se usa el día del partido.
+    "prematch": r"pr[eé].?-?match|prematch",
     # training también se chequea antes que home/away/third: "Camiseta de
     # entrenamiento" no tiene un color titular/suplente definido, así que
     # si se la clasificara por esos patrones podría quedar mal etiquetada.
-    "training": r"entrenamiento|\btraining\b|treino|pr[eé].?match|calentamiento|prematch|calenta",
+    "training": r"entrenamiento|\btraining\b|treino|calentamiento|calenta",
     "home": r"\blocal\b|\bhome\b|\bdomicile\b|titular|\b1[ºª]?\s*equipaci[oó]n\b|primera equipaci[oó]n|principal\b",
     "away": r"\bexterior\b|\bext[ée]rieur\b|\bvisitante\b|\baway\b|segunda equipaci[oó]n|\b2[ºª]?\s*equipaci[oó]n\b|alternativ[oa]\b",
     "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b",
@@ -398,6 +409,8 @@ def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_c
             continue
         if EXCLUDE_RE.search(title):
             continue
+        if is_manually_excluded(r.get(link_col)):
+            continue
         team_match = None
         for tk, pat in teams.items():
             if pat.search(title):
@@ -438,6 +451,8 @@ def analyze_kids(csv_path, price_col, size_col=None, title_col="product_name", l
         if not JERSEY_RE.search(title):
             continue
         if KIDS_EXCLUDE_RE.search(title):
+            continue
+        if is_manually_excluded(r.get(link_col)):
             continue
         size_raw = (r.get(size_col) or "") if size_col else ""
         if not KIDS_SIGNAL_RE.search(title) and not KIDS_AGE_RE.search(size_raw):

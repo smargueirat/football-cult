@@ -6,7 +6,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import Chip from "./Chip";
 
-const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training"];
+const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "prematch"];
 
 export default function FloatingFilterButton() {
   const { locale, t } = useLanguage();

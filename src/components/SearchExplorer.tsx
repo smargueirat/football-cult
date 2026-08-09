@@ -30,7 +30,7 @@ import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
 
-const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "retro"];
+const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "prematch", "retro"];
 const AGE_GROUP_FILTERS: AgeGroup[] = ["adult", "kids"];
 
 // Marcas más relevantes del catálogo: un atajo curado, no el listado
@@ -114,7 +114,17 @@ export default function SearchExplorer() {
         ? teamNames[p.teamKey].es.toLowerCase().includes(normalized) ||
           teamNames[p.teamKey].en.toLowerCase().includes(normalized)
         : true;
-      const matchesType = typeFilter.length === 0 || typeFilter.includes(p.typeKey);
+      // "retro" además exige temporada 2006 o anterior -- una camiseta de
+      // 2023/24 ya reemplazada por la actual no es "retro" en el sentido
+      // en que el usuario espera navegar esa categoría (vintage real, no
+      // "temporada pasada reciente").
+      const matchesType =
+        typeFilter.length === 0 ||
+        typeFilter.some((tf) => {
+          if (p.typeKey !== tf) return false;
+          if (tf === "retro") return seasonSortValue(p.season) <= 2006;
+          return true;
+        });
       const matchesCategory =
         categoryFilter.length === 0 || categoryFilter.includes(teamCategory[p.teamKey]);
       const matchesSeason = seasonFilter.length === 0 || seasonFilter.includes(p.season);

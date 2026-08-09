@@ -21,6 +21,7 @@ from extract import (
     team_re_all,
     type_re_all,
 )
+from manual_exclusions import is_manually_excluded
 
 # Same junk/other-sport/wrong-audience exclusions as extract.py's EXCLUDE_RE,
 # MINUS the retro/vintage/classic/historic terms (those are exactly what we
@@ -131,6 +132,8 @@ def mine(csv_path, fmt, store_name):
             if not JERSEY_RE.search(title):
                 continue
             if RETRO_EXCLUDE_RE.search(title):
+                continue
+            if is_manually_excluded(r.get(link_col)):
                 continue
             if sport_col:
                 cat = (r.get(sport_col) or "").lower()
