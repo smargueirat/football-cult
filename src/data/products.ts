@@ -2158,7 +2158,6 @@ const productsData = [
     jerseyPattern: "band",
     brand: "adidas",
     offers: [
-      { store: "PlanetFoot", price: 60.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-river-plate-domicile-homme-2025-26-blanc%3Fvariant%3D51421275488597", title: "Maillot River Plate Domicile Homme 2025/26 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-river-plate-25-26-domicile-adulte-adidas-planetfoot1.webp?v=1758730642" },
       { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800017175401?_skw=River+Plate+home+soccer+jersey+2025+2026&hash=itemba44bd5369%3Ag%3AtqMAAeSweGNqBXaA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Home Mens Soccer 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/tqMAAeSweGNqBXaA/s-l225.jpg" },
     ],
   },
@@ -2806,7 +2805,6 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-away-soccer-jersey-2025-26%3Fvariant%3D42724207886441", title: "River Plate Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RiverPlateAwaySoccerJersey202526_1.png?v=1764762115" },
       { store: "FootStoreFR", price: 57.84, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7077-maillot-exterieur-ca-river-plate-2025-26-black-tepore", title: "Maillot Extérieur CA River Plate 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji7077_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 59.15, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji7077-maillot-exterieur-ca-river-plate-2025-26-black-tepore", title: "Maillot Extérieur CA River Plate 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji7077_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157925693239?_skw=River+Plate+away+soccer+jersey+2025+2026&hash=item24c51ad737%3Ag%3AIdoAAeSwX9xqDV4W&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Away Mens Soccer 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/IdoAAeSwX9xqDV4W/s-l225.jpg" },
     ],
   },
 {
