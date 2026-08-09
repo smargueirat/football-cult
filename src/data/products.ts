@@ -1,4 +1,5 @@
 import { Locale } from "@/lib/i18n/translations";
+import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 
 export type TeamKey =
   | "argentina"
@@ -29085,25 +29086,32 @@ export const STORE_LOCALE: Partial<Record<string, Locale>> = {
   BSTNIT: "en",
 };
 
-// Nombre real (no inventado) a mostrar: SIEMPRE el título literal de la
-// mejor oferta disponible en ese país, sea cual sea su idioma. Regla fija,
-// no volver a "arreglarla" filtrando por idioma -- eso ya se hizo antes y
-// se revirtió porque el usuario reportó específicamente que el nombre real
-// tiene que quedar igual que en la página de venta, aunque esté en otro
-// idioma que el del sitio (mostrar la oferta más barata en OTRO idioma es
-// preferible a inventar un nombre). Si la mejor oferta no tiene título
-// (dato faltante), se prueba con cualquier otra oferta que sí lo tenga
-// antes de caer al nombre genérico armado por nosotros (que resuelve el
-// caller como `${team} ${type}`).
+// Nombre real (no inventado) a mostrar: el título literal de la mejor
+// oferta disponible en ese país, con SOLO su vocabulario genérico
+// (tipo de camiseta, género, "réplica", etc. -- ver titleGlossary.ts)
+// traducido al idioma del sitio. Regla fija: nunca volver a reemplazar
+// el título entero por uno armado por nosotros -- eso ya se hizo antes
+// y se revirtió porque el usuario reportó que el nombre tiene que
+// coincidir con lo que ve en la página de venta real. La traducción de
+// vocabulario SÍ está pedida explícitamente ("el título real tiene que
+// ser traducido... no inventar uno nuevo"), a diferencia de reemplazar
+// el título por un template team+type. Si la mejor oferta no tiene
+// título (dato faltante), se prueba con cualquier otra oferta que sí lo
+// tenga antes de caer al nombre genérico armado por nosotros (que
+// resuelve el caller como `${team} ${type}`).
 export function displayTitleForCountry(
   product: Product,
   country: CountryCode,
-  _locale: Locale
+  locale: Locale
 ): string | undefined {
   const best = bestOfferForCountry(product, country);
-  if (best?.title) return best.title;
-  const anyWithTitle = product.offers.find((o) => o.title);
-  return anyWithTitle?.title;
+  const title = best?.title ?? product.offers.find((o) => o.title)?.title;
+  // El título real de la tienda sigue siendo la fuente de verdad (nunca
+  // se reemplaza por uno armado por nosotros -- ver
+  // feedback_realname_primary.md), pero acá se le traduce el vocabulario
+  // genérico conocido (tipo de camiseta, género, "réplica", etc.) al
+  // idioma del sitio, dejando nombres de equipo/jugador/marca intactos.
+  return title ? translateTitleVocabulary(title, locale) : undefined;
 }
 
 export function shipsToCountry(product: Product, country: CountryCode): boolean {

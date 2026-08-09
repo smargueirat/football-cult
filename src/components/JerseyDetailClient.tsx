@@ -18,6 +18,7 @@ import {
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import JerseyIcon from "./JerseyIcon";
@@ -290,7 +291,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                 )}
                               </p>
                               <p className="text-xs text-[#a8926a]">
-                                {offer.title ?? `${team} ${type}`}
+                                {offer.title ? translateTitleVocabulary(offer.title, locale) : `${team} ${type}`}
                               </p>
                               {!offer.inStock ? (
                                 <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
