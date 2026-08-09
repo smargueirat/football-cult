@@ -300,7 +300,17 @@ EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
-    r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq",
+    r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|"
+    # Low-trust eBay dropship template: bare "{Country} Football Soccer
+    # Jersey {year} {Home/Away/Third}" with nothing else (no brand, no
+    # size detail, no seller flavor text) -- every real listing we've
+    # seen has SOME extra text (brand, "Shirt", size, "Vintage", a player
+    # name). User flagged several of these by generic stock-photo (no
+    # visible brand logo) as untrustworthy (2026-08-09); anchored to the
+    # whole title so it only catches this exact bare template, not
+    # legitimate longer titles that happen to contain the same phrase
+    # (e.g. "Qatar Away Football Soccer Jersey Shirt - FIFA World Cup 2026!").
+    r"^[a-z ]+ football soccer jersey 20\d\d (home|away|third)$",
     re.I,
 )
 # Igual que EXCLUDE_RE pero sin filtrar por edad (para el modo "kids": acá
