@@ -29,10 +29,10 @@ export default function PrivacidadClient() {
         <p>
           {t.privacy.contactText}{" "}
           <a
-            href="mailto:hola@footballcult.example"
+            href="mailto:contact@football-cult.com"
             className="text-[#1F6F4C] underline"
           >
-            hola@footballcult.example
+            contact@football-cult.com
           </a>
           .
         </p>

@@ -13,13 +13,12 @@ export default function ContactoClient() {
         <p>
           {t.contact.emailLabel}:{" "}
           <a
-            href="mailto:hola@footballcult.example"
+            href="mailto:contact@football-cult.com"
             className="font-medium text-[#1F6F4C] underline"
           >
-            hola@footballcult.example
+            contact@football-cult.com
           </a>
         </p>
-        <p className="text-sm text-[#8a7a5a]">{t.contact.note}</p>
       </div>
     </div>
   );

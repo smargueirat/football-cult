@@ -133,7 +133,6 @@ export interface Translations {
     title: string;
     p1: string;
     emailLabel: string;
-    note: string;
   };
   privacy: {
     title: string;
@@ -343,7 +342,6 @@ export const translations: Record<Locale, Translations> = {
       title: "Contacto",
       p1: "¿Encontraste un precio desactualizado, una tienda que deberíamos sumar, o tenés alguna consulta? Escribinos.",
       emailLabel: "Email",
-      note: "(Reemplazar por el email real y, si corresponde, un formulario de contacto antes de publicar el sitio.)",
     },
     privacy: {
       title: "Política de privacidad",
@@ -559,7 +557,6 @@ export const translations: Record<Locale, Translations> = {
       title: "Contato",
       p1: "Encontrou um preço desatualizado, uma loja que deveríamos adicionar, ou tem alguma dúvida? Fale conosco.",
       emailLabel: "Email",
-      note: "(Substituir pelo email real e, se aplicável, um formulário de contato antes de publicar o site.)",
     },
     privacy: {
       title: "Política de privacidade",
@@ -775,7 +772,6 @@ export const translations: Record<Locale, Translations> = {
       title: "Contact",
       p1: "Found an outdated price, a store we should add, or have a question? Get in touch.",
       emailLabel: "Email",
-      note: "(Replace with the real email and, if applicable, a contact form before publishing the site.)",
     },
     privacy: {
       title: "Privacy Policy",
