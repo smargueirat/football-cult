@@ -65,7 +65,16 @@ def parse_retro_season(title):
     m = re.search(r"\b(19\d\d|20\d\d)[/-](19\d\d|20\d\d)\b", title)
     if m:
         return f"{m.group(1)}/{m.group(2)[-2:]}"
-    m = re.search(r"\b(19\d\d|20\d\d)[/](\d{2})\b", title)
+    # Real bug found (2026-08-10): only matched a slash here ("1995/96"),
+    # not the equally common hyphen short-form ("1995-96", "2023-24") --
+    # titles using the hyphen fell all the way through to the bare-year
+    # fallback below, silently dropping the season's end year. That made
+    # the same real jersey produce two different `season` strings (and
+    # so two different product ids) depending only on which store's
+    # title happened to use a slash vs a hyphen -- found via 444 pairs of
+    # genuine duplicate retro products (confirmed by photo) that only
+    # differed by this. `[/-]` matches both separators.
+    m = re.search(r"\b(19\d\d|20\d\d)[/-](\d{2})\b", title)
     if m:
         return f"{m.group(1)}/{m.group(2)}"
     m = re.search(r"\b(\d{2})[/-](\d{2})\b", title)
