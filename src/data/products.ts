@@ -343,7 +343,20 @@ export type TeamKey =
   | "montserrat"
   | "myanmar"
   | "keralablasters"
-  | "northeastunited";
+  | "northeastunited"
+  | "stetienne"
+  | "fcbasel"
+  | "brescia"
+  | "lechiagdansk"
+  | "manisaspor"
+  | "chanthaburi"
+  | "kurdistan"
+  | "kristiansundbk"
+  | "muangloeiutd"
+  | "biratnagarcity"
+  | "hashtagunited"
+  | "nakhonratchasima"
+  | "belarus";
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper" | "training" | "prematch" | "retro";
 export type CategoryKey = "national" | "club";
@@ -498,6 +511,19 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
   myanmar: "national",
   keralablasters: "club",
   northeastunited: "club",
+  stetienne: "club",
+  fcbasel: "club",
+  brescia: "club",
+  lechiagdansk: "club",
+  manisaspor: "club",
+  chanthaburi: "club",
+  kurdistan: "national",
+  kristiansundbk: "club",
+  muangloeiutd: "club",
+  biratnagarcity: "club",
+  hashtagunited: "club",
+  nakhonratchasima: "club",
+  belarus: "national",
   burnley: "club",
   heidenheim: "club",
   auxerre: "club",
@@ -843,6 +869,19 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   myanmar: { es: "Myanmar", en: "Myanmar", pt: "Myanmar" },
   keralablasters: { es: "Kerala Blasters", en: "Kerala Blasters", pt: "Kerala Blasters" },
   northeastunited: { es: "NorthEast United", en: "NorthEast United", pt: "NorthEast United" },
+  stetienne: { es: "Saint-Étienne", en: "Saint-Étienne", pt: "Saint-Étienne" },
+  fcbasel: { es: "FC Basel", en: "FC Basel", pt: "FC Basel" },
+  brescia: { es: "Brescia", en: "Brescia", pt: "Brescia" },
+  lechiagdansk: { es: "KS Lechia Gdańsk", en: "KS Lechia Gdańsk", pt: "KS Lechia Gdańsk" },
+  manisaspor: { es: "Manisaspor", en: "Manisaspor", pt: "Manisaspor" },
+  chanthaburi: { es: "Chanthaburi FC", en: "Chanthaburi FC", pt: "Chanthaburi FC" },
+  kurdistan: { es: "Kurdistán", en: "Kurdistan", pt: "Curdistão" },
+  kristiansundbk: { es: "Kristiansund BK", en: "Kristiansund BK", pt: "Kristiansund BK" },
+  muangloeiutd: { es: "Muang Loei United", en: "Muang Loei United", pt: "Muang Loei United" },
+  biratnagarcity: { es: "Biratnagar City", en: "Biratnagar City", pt: "Biratnagar City" },
+  hashtagunited: { es: "Hashtag United", en: "Hashtag United", pt: "Hashtag United" },
+  nakhonratchasima: { es: "Nakhonratchasima Mazda", en: "Nakhonratchasima Mazda", pt: "Nakhonratchasima Mazda" },
+  belarus: { es: "Bielorrusia", en: "Belarus", pt: "Bielorrússia" },
   burnley: { es: "Burnley FC", en: "Burnley FC", pt: "Burnley FC" },
   heidenheim: { es: "1. FC Heidenheim", en: "1. FC Heidenheim", pt: "1. FC Heidenheim" },
   auxerre: { es: "AJ Auxerre", en: "AJ Auxerre", pt: "AJ Auxerre" },
@@ -1188,6 +1227,19 @@ export const teamFlags: Record<TeamKey, string> = {
   myanmar: "🇲🇲",
   keralablasters: "🟡",
   northeastunited: "⚪",
+  stetienne: "⚪",
+  fcbasel: "🔴",
+  brescia: "🔵",
+  lechiagdansk: "⚪",
+  manisaspor: "⚪",
+  chanthaburi: "🟣",
+  kurdistan: "🔴",
+  kristiansundbk: "🔵",
+  muangloeiutd: "🔴",
+  biratnagarcity: "⚪",
+  hashtagunited: "⚫",
+  nakhonratchasima: "🟠",
+  belarus: "🇧🇾",
   burnley: "🟤",
   heidenheim: "🔴",
   auxerre: "⚪",
@@ -1534,6 +1586,19 @@ export const teamColors: Record<TeamKey, [string, string]> = {
   myanmar: ["#FECB00", "#34B233"],
   keralablasters: ["#FDB913", "#000080"],
   northeastunited: ["#8B0000", "#FFD700"],
+  stetienne: ["#00843D", "#FFFFFF"],
+  fcbasel: ["#ED1C24", "#002F6C"],
+  brescia: ["#003DA5", "#FFFFFF"],
+  lechiagdansk: ["#FFFFFF", "#00843D"],
+  manisaspor: ["#00843D", "#FFFFFF"],
+  chanthaburi: ["#663399", "#FFD700"],
+  kurdistan: ["#ED1C24", "#007A3D"],
+  kristiansundbk: ["#003DA5", "#FFFFFF"],
+  muangloeiutd: ["#DA020E", "#FFFFFF"],
+  biratnagarcity: ["#00843D", "#FFFFFF"],
+  hashtagunited: ["#000000", "#FFFFFF"],
+  nakhonratchasima: ["#F58220", "#000000"],
+  belarus: ["#D22730", "#007A3D"],
   burnley: ["#6C1D45", "#99D6EA"],
   heidenheim: ["#E2001A", "#002856"],
   auxerre: ["#FFFFFF", "#002F6C"],
@@ -2168,6 +2233,54 @@ export interface Product {
 // TODO su catálogo en el feed (bug de su lado) por lo que inStock se fuerza
 // a true para esa tienda; PlanetFoot sí usa su disponibilidad real.
 const productsData = [
+{
+    id: "kurdistan-retro-201920-away",
+    teamKey: "kurdistan",
+    season: "2019/20",
+    typeKey: "retro",
+    colorHex: "#ED1C24",
+    colorHexSecondary: "#007A3D",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "MysteryShirtClub", price: 32.39, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2019-2020-kurdistan-away-shirt-271050", title: "2019-2020 Kurdistan Away Shirt", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666115146_2019-2020-kurdistan-away-shirt.jpg?v=1763222680" },
+    ],
+  },
+{
+    id: "mancity-retro-202425-prematch",
+    teamKey: "mancity",
+    season: "2024/25",
+    typeKey: "retro",
+    colorHex: "#6CABDD",
+    colorHexSecondary: "#1C2C5B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "MysteryShirtClub", price: 14.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-man-city-pre-match-shirt-yellow-glow-400191", title: "2024-2025 Man City Pre-Match Shirt (Yellow Glow)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1723175411_man-city-2024-2025-puma-prematch-ss-football-shirt-yellow-glow.jpg?v=1763598243" },
+    ],
+  },
+{
+    id: "manisaspor-retro-201617-home",
+    teamKey: "manisaspor",
+    season: "2016/17",
+    typeKey: "retro",
+    colorHex: "#00843D",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "MysteryShirtClub", price: 17.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2016-2017-manisaspor-home-shirt-240467", title: "2016-2017 Manisaspor Home Shirt", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1643808907_2016-2017-manisaspor-home-football-shirt-front.jpg?v=1763222550" },
+    ],
+  },
+{
+    id: "stetienne-retro-202223-home",
+    teamKey: "stetienne",
+    season: "2022/23",
+    typeKey: "retro",
+    colorHex: "#00843D",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "MysteryShirtClub", price: 29.52, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-saint-etienne-home-shirt-280025", title: "2022-2023 Saint Etienne Home Shirt", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666556154_saint-etienne-home-football-shirt.jpg?v=1763225555" },
+    ],
+  },
 {
     id: "airdrie-retro-201516-away",
     teamKey: "airdrie",
