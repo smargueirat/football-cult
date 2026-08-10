@@ -28,6 +28,24 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # Germany/Mexico/Brazil eBay listings above -- user flagged by photo
     # (2026-08-10).
     "ebay.com/itm/236671403906",
+    # El Salvador away 2023 / Guatemala home+away 2023/24: same generic
+    # no-crest-no-brand template, confirmed by photo (2026-08-10).
+    "ebay.com/itm/277616599695",
+    "ebay.com/itm/277385867203",
+    "ebay.com/itm/277431029544",
+    # Valencia CF home 2019/20 "Puma": photo shows the real Valencia
+    # crest but no Puma logo anywhere despite the title (2026-08-10).
+    "ebay.com/itm/406861504071",
+    # USA home 2026 "Puma": actually IconSports, a generic fan-merch
+    # brand, not the team's real supplier Nike (2026-08-10).
+    "ebay.com/itm/267737837514",
+    # Man City prematch 2024/25 "Flaxen": both available product photos
+    # (front and back listing images) only show the back of the shirt --
+    # no visible Puma logo or club crest on either, confirmed by photo
+    # (2026-08-10). Unlike the same line's "Granola" colourway (which
+    # does show both clearly), this specific listing's own photos never
+    # show the front, so it can't be trusted.
+    "2024-2025-man-city-prematch-ss-shirt-flaxen-425784",
 ]
 
 
