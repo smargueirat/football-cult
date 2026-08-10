@@ -532,6 +532,21 @@ pipeline too):
   Italian/French kids items through as if they were adult sizing. Added.
 - "Concept"/AIRO unlicensed fan-made jerseys (see Mystery Shirt Club
   section above) apply here too, already excluded.
+- **2026-08-10**: after splitting `prematch` out of `training` in the
+  shared `TYPE_PATTERNS` (see the retro id like `chelsea-retro-202425-
+  training` above), re-running the retro pipeline against feeds
+  scraped fresh re-classified some already-catalogued "training" retro
+  items as "prematch" — same real offer (identical URL), new id, so it
+  got inserted as a second product instead of recognized as already
+  covered (the retro pipeline has no id-collision check the way
+  `gen_new_teams.py`'s callers are expected to add themselves). Found
+  by re-running the exact-duplicate-offer-URL scan from the "Adding a
+  team" dedup check further down this file, post-insertion, not by any
+  automatic guard in the pipeline itself. Same check also caught a few
+  pre-existing bare-year-vs-full-range season duplicates (`roma-retro-
+  1978-away` / `roma-retro-197879-away`) unrelated to this change.
+  **Always re-run that exact-duplicate-URL scan after any batch retro
+  insertion**, not just after adding a brand new team pattern.
 
 Given the false-positive history in this exact category (retro/heritage
 is explicitly called out in "Adding a team" above as one of the trickiest
