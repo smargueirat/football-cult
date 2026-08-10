@@ -9,7 +9,8 @@ from new_teams_batch6 import BATCH6 as _B6
 from new_teams_batch7 import BATCH7 as _B7
 from new_teams_batch8 import BATCH8 as _B8
 from new_teams_batch9 import BATCH9 as _B9
-BATCH1 = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9}
+from new_teams_batch10 import BATCH10 as _B10
+BATCH1 = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10}
 
 def colors_from_existing_products(team):
     """Fallback for teams already in products.ts (original 24 + earlier
