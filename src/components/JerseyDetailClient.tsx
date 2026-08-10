@@ -21,6 +21,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
+import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import JerseyIcon from "./JerseyIcon";
 import ReportProductModal from "./ReportProductModal";
 
@@ -35,11 +36,13 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
   const { isComparing, toggleCompare, maxReached } = useCompare();
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [shareCopied, setShareCopied] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [reportOpen, setReportOpen] = useState(false);
   const comparing = isComparing(product.id);
+  const favorite = isFavorite(product.id);
 
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
@@ -117,6 +120,25 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             <span className="vintage-plaque absolute left-4 top-4 rounded px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider">
               {product.season}
             </span>
+            <button
+              onClick={() => toggleFavorite(product.id)}
+              aria-label={t.nav.favorites}
+              className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+            >
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill={favorite ? "currentColor" : "none"}
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-8.318a4.5 4.5 0 010-6.364z"
+                />
+              </svg>
+            </button>
             {photo ? (
               <>
                 {!imageLoaded && (
