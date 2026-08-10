@@ -1,23 +1,25 @@
 import { createClient, RedisClientType } from "redis";
 
-// Reutilizamos la misma conexión entre invocaciones "calientes" de la
-// función serverless en vez de abrir una nueva cada vez.
-let client: RedisClientType | undefined;
-
 export function isRedisConfigured() {
   return Boolean(process.env.REDIS_URL);
 }
 
-export async function getRedis(): Promise<RedisClientType> {
-  if (!process.env.REDIS_URL) {
-    throw new Error("REDIS_URL is not set");
+// Serverless-safe singleton: Next.js can reuse the same Node process
+// across requests, so caching the connection (as a promise, not just the
+// client) avoids opening a new TCP connection to Redis on every request
+// and avoids a race where two requests both see "not yet connected" and
+// both call connect().
+let clientPromise: Promise<RedisClientType> | null = null;
+
+export function getRedis(): Promise<RedisClientType> {
+  if (!clientPromise) {
+    const url = process.env.REDIS_URL;
+    if (!url) {
+      throw new Error("REDIS_URL is not set");
+    }
+    const client: RedisClientType = createClient({ url });
+    client.on("error", (err) => console.error("Redis client error", err));
+    clientPromise = client.connect().then(() => client);
   }
-  if (!client) {
-    client = createClient({ url: process.env.REDIS_URL });
-    client.on("error", (err) => console.error("Redis error:", err));
-  }
-  if (!client.isOpen) {
-    await client.connect();
-  }
-  return client;
+  return clientPromise;
 }

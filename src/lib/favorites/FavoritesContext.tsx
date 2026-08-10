@@ -2,6 +2,7 @@
 
 import { createContext, ReactNode, useContext, useEffect, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
+import FavoritesSignInModal from "@/components/FavoritesSignInModal";
 
 const STORAGE_KEY = "football-cult-favorites";
 
@@ -27,6 +28,7 @@ function readLocalFavorites(): string[] {
 export function FavoritesProvider({ children }: { children: ReactNode }) {
   const { data: session, status, update } = useSession();
   const [localFavorites, setLocalFavorites] = useState<string[]>([]);
+  const [showSignIn, setShowSignIn] = useState(false);
   const mergedOnLogin = useRef(false);
 
   useEffect(() => {
@@ -52,16 +54,19 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   const favorites = authenticated ? session?.favorites ?? [] : localFavorites;
 
   function toggleFavorite(id: string) {
+    // Hay que estar logueado para usar favoritos -- así podemos guardarlos
+    // ligados a la cuenta (no solo a este navegador) y, más adelante, usar
+    // ese registro para avisar por mail. Si todavía no inició sesión, se
+    // le pide en vez de guardar solo en este dispositivo.
+    if (status !== "authenticated") {
+      setShowSignIn(true);
+      return;
+    }
+
     const next = favorites.includes(id)
       ? favorites.filter((f) => f !== id)
       : [...favorites, id];
-
-    if (authenticated) {
-      update({ favorites: next });
-    } else {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-      setLocalFavorites(next);
-    }
+    update({ favorites: next });
   }
 
   function isFavorite(id: string) {
@@ -71,6 +76,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   return (
     <FavoritesContext.Provider value={{ favorites, toggleFavorite, isFavorite }}>
       {children}
+      {showSignIn && <FavoritesSignInModal onClose={() => setShowSignIn(false)} />}
     </FavoritesContext.Provider>
   );
 }

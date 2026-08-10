@@ -35,8 +35,16 @@ export interface Translations {
     title: string;
     text: string;
     googleCta: string;
+    or: string;
+    emailPlaceholder: string;
+    emailCta: string;
+    emailSending: string;
+    emailSent: string;
+    emailError: string;
     signedInAs: string;
     signOut: string;
+    favoritesGateTitle: string;
+    favoritesGateText: string;
   };
   categoriesMenu: {
     national: string;
@@ -242,8 +250,16 @@ export const translations: Record<Locale, Translations> = {
       title: "Tu cuenta",
       text: "Iniciá sesión para guardar tus favoritos y accederlos desde cualquier dispositivo.",
       googleCta: "Continuar con Google",
+      or: "o",
+      emailPlaceholder: "Tu email",
+      emailCta: "Enviar link de acceso",
+      emailSending: "Enviando...",
+      emailSent: "Te enviamos un link para ingresar. Revisá tu correo.",
+      emailError: "No pudimos enviar el link. Probá de nuevo.",
       signedInAs: "Conectado como",
       signOut: "Cerrar sesión",
+      favoritesGateTitle: "Iniciá sesión para guardar favoritos",
+      favoritesGateText: "Para agregar camisetas a favoritos y verlas desde cualquier dispositivo, primero tenés que iniciar sesión.",
     },
     categoriesMenu: {
       national: "Selecciones",
@@ -457,8 +473,16 @@ export const translations: Record<Locale, Translations> = {
       title: "Sua conta",
       text: "Faça login para salvar seus favoritos e acessá-los de qualquer dispositivo.",
       googleCta: "Continuar com o Google",
+      or: "ou",
+      emailPlaceholder: "Seu email",
+      emailCta: "Enviar link de acesso",
+      emailSending: "Enviando...",
+      emailSent: "Enviamos um link para você entrar. Confira seu email.",
+      emailError: "Não conseguimos enviar o link. Tente novamente.",
       signedInAs: "Conectado como",
       signOut: "Sair",
+      favoritesGateTitle: "Faça login para salvar favoritos",
+      favoritesGateText: "Para adicionar camisas aos favoritos e vê-las em qualquer dispositivo, primeiro você precisa fazer login.",
     },
     categoriesMenu: {
       national: "Seleções",
@@ -672,8 +696,16 @@ export const translations: Record<Locale, Translations> = {
       title: "Your account",
       text: "Sign in to save your favorites and access them from any device.",
       googleCta: "Continue with Google",
+      or: "or",
+      emailPlaceholder: "Your email",
+      emailCta: "Send sign-in link",
+      emailSending: "Sending...",
+      emailSent: "We sent you a sign-in link. Check your email.",
+      emailError: "We couldn't send the link. Try again.",
       signedInAs: "Signed in as",
       signOut: "Sign out",
+      favoritesGateTitle: "Sign in to save favorites",
+      favoritesGateText: "To add jerseys to favorites and see them on any device, you need to sign in first.",
     },
     categoriesMenu: {
       national: "National teams",
