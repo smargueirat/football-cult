@@ -24,6 +24,10 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # PlanetFoot Real Madrid Bellingham away 2024/25 "Replica": unlicensed
     # replica, user wants only real-brand products.
     "maillot-real-madrid-exterieur-bellingham-homme-2024-25-replica",
+    # Albania home 2024: same no-visible-brand-logo red flag as the
+    # Germany/Mexico/Brazil eBay listings above -- user flagged by photo
+    # (2026-08-10).
+    "ebay.com/itm/236671403906",
 ]
 
 

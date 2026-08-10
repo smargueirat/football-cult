@@ -27621,18 +27621,6 @@ const productsData = [
     ],
   },
 {
-    id: "albania-retro-2024-home",
-    teamKey: "albania",
-    season: "2024",
-    typeKey: "retro",
-    colorHex: "#E41E20",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 18.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236671403906?_skw=Albania+home+soccer+jersey&hash=item371ab70782%3Ag%3AvikAAOSwJy5mY9RD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2024 Albania National Soccer Team Home Jersey - (Size Large)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/vikAAOSwJy5mY9RD/s-l225.jpg" },
-    ],
-  },
-{
     id: "canada-retro-2002-away",
     teamKey: "canada",
     season: "2002",
