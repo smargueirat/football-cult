@@ -754,6 +754,67 @@ shipping and a missing entry defaults to "ships everywhere" (`!shipping
 → return true`), which would be actively misleading. Revisit if this
 turns out wrong.
 
+## Post-batch quality bugs found 2026-08-10 (after the second full eBay re-mine)
+
+Found by the user browsing the live site right after this batch deployed,
+not by any automated check — worth re-reading before trusting a big
+batch is clean just because the mining scripts ran without errors.
+
+- **A `manual_exclusions.py` entry silently stopped applying because the
+  mining process was already running when the entry was added.**
+  `ebay_mine_full.py` imports `MANUAL_EXCLUDE_LINK_SUBSTRINGS` once at
+  process start; a ~4-hour background run that started *before* a new
+  entry gets appended to the file keeps using its stale in-memory copy
+  for its entire run, silently re-mining an item that was supposedly
+  already permanently blocked (the Albania home 2024 no-visible-brand
+  listing, `ebay.com/itm/236671403906`, came right back). **Standing
+  check: after any long-running mining pass finishes, re-grep every
+  `manual_exclusions.py` substring against the freshly-updated
+  `products.ts` before trusting the batch** — don't assume "it's in the
+  blocklist" means "it stayed excluded" if the process was started
+  earlier than the blocklist edit.
+- **More no-visible-brand-logo listings, same class as Albania**: two
+  Guatemala retro items (home+away 2023/24, a generic sash-pattern
+  template with no crest or manufacturer mark at all) and a "Puma"
+  Valencia CF listing whose photo shows the real Valencia crest but no
+  Puma logo anywhere (title claims a brand the photo doesn't back up) —
+  found by the user browsing, confirmed by photo, removed. Same
+  standing rule as always: if a jersey's own photo doesn't show a real
+  manufacturer's mark, don't trust the title.
+- **The retro pipeline's kids exclusion misses eBay's numeric
+  age-range template.** `extract.py`'s `KIDS_SIGNAL_RE` (used for
+  current-season and the dedicated kids pass) correctly catches
+  `"- 9/10 - (5-6 Years)"`-style titles (condition rating, then a kid
+  age range with an explicit units word) — but `retro_extract.py`'s
+  `RETRO_EXCLUDE_RE` only ever matched literal keywords like
+  "kids"/"niño"/"junior", not that numeric shape, so retro mining
+  (both `ebay_mine_full.py`'s own retro pass and the Awin-CSV retro
+  pipeline, since both share this one regex) let real kids-sized items
+  through as ordinary adult retro products. Found 16 candidates via a
+  catalog-wide scan for `KIDS_SIGNAL_RE` hits inside non-kids blocks;
+  13 were genuine (2 Sunderland ones is what the user actually spotted
+  browsing), 3 were false positives (bare "14/15"-style season numbers
+  that happen to look like a plausible kid age range, but the title
+  explicitly said "Men's" right next to it — kept those). Fixed
+  `RETRO_EXCLUDE_RE` to also match `\d{1,2}-\d{1,2}\s*(years|años|ans)`
+  — deliberately requires the units word, same reasoning
+  `KIDS_SIGNAL_RE` already uses, so it doesn't start rejecting retro
+  titles' own season ranges ("18/19"), which never carry a units word.
+  For the 10 single-offer retro blocks that were entirely a kids item,
+  tagged the existing block `ageGroup: "kids"` in place (same pattern
+  already used for `WOMEN_SIGNAL_RE`) rather than deleting/regenerating
+  — cheaper and keeps the real offer. For 3 blocks that mixed one kids
+  offer alongside genuinely-adult offers from other stores (Barcelona
+  retro, two current-season Liverpool products), removed just the
+  kids-signaling offer instead of tagging the whole block.
+- **General lesson**: a batch this size (today's re-mine added ~3650
+  products) cannot be fully hand-verified by photo before it ships —
+  but budget a first-week-after-deploy pass specifically re-checking
+  user-facing browsing reports against these known bug classes (no
+  visible brand, kids-mislabeled-as-adult, stale exclusions) rather
+  than assuming a clean `tsc`/`build`/dedup-check run means the data
+  itself is clean.
+
 ## Safety rule (standing, do not change)
 
 Never automate login/"Join"/apply/write actions on any affiliate network
