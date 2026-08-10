@@ -29,15 +29,20 @@ from manual_exclusions import is_manually_excluded
 RETRO_EXCLUDE_RE = re.compile(
     r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
     r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    # "youth" only, NOT "young" -- BSC Young Boys is a real club here and a
+    # bare "young" would exclude every one of its own retro listings.
+    r"\byouth\b|"
     # Real bug found (2026-08-10): unlike extract.py's KIDS_SIGNAL_RE, this
     # exclusion only caught the literal word "kids"/"niño"/etc, not eBay's
     # very common "- 9/10 - (5-6 Years)" condition-and-age-range template
     # (rating first, kid age second, no "kids" keyword anywhere) -- two
     # Sunderland retro shirts with real kids sizing slipped through as
-    # regular adult products. Requiring the units word (years/años/ans)
+    # regular adult products. Requiring the units word (years/años/ans/Y)
     # keeps this safe against retro titles' own season ranges ("18/19"),
     # which never carry a units word -- same reasoning as KIDS_SIGNAL_RE.
-    r"\b\d{1,2}-\d{1,2}\s*(ans|years|anos|años)\b|"
+    # "Y" added after finding "...Adidas Young L 13-14Y" (Union Berlin)
+    # slip through the same way with the abbreviated form.
+    r"\b\d{1,2}-\d{1,2}\s*(ans|years|anos|años|y)\b|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"marvel|avengers|disney|maradona|"

@@ -338,13 +338,18 @@ KIDS_EXCLUDE_RE = re.compile(
 )
 KIDS_SIGNAL_RE = re.compile(
     r"infantil|\bniñ|\bnino|\bkids?\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
+    # "youth" only, NOT "young" -- BSC Young Boys is a real club in the
+    # catalog and a bare "young" would flag every one of its own listings.
+    r"\byouth\b|"
     # Bare "N-N" at the end without a units word is only treated as a kids
     # age range when both numbers are a plausible kid age (0-17) -- real bug
     # found: a season suffix like "26-27" (2026-27) was matching this same
     # shape and getting misread as ages 26-27, mislabeling adult jerseys as
     # kids. A units word (ans/years/años) still allows any digit count.
     r"\b(?:[0-9]|1[0-7])\s*[/-]\s*(?:[0-9]|1[0-7])\s*(ans|years|anos|años)?\s*$|"
-    r"\b\d{1,2}-\d{1,2}\s*(ans|years|anos|años)\b",
+    # "Y" as a bare abbreviation for "years" (eBay listings like "13-14Y")
+    # found 2026-08-10 -- Union Berlin kids shirt slipped through as adult.
+    r"\b\d{1,2}-\d{1,2}\s*(ans|years|anos|años|y)\b",
     re.I,
 )
 KIDS_AGE_RE = re.compile(r"\b(\d{1,2})\s*[/-]\s*(\d{1,2})\b")
