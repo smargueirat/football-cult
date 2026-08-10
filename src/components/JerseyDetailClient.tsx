@@ -276,7 +276,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                       )
                     : t.detail.allSizes}
                 </p>
-                <p className="mb-3 text-xs text-[#a8926a]">{t.detail.currencyNote}</p>
+                <p className="mb-3 text-xs text-[#5b5442]">{t.detail.currencyNote}</p>
 
                 <div className="flex flex-col gap-3">
                   {sortedOffers.map((offer) => {
