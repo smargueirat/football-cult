@@ -4,6 +4,15 @@ from manual_exclusions import is_manually_excluded
 
 TEAM_PATTERNS = {
     "sportrecife": r"sport (club )?recife|\bsport recife\b",
+    "almirantebrown": r"almirante brown",
+    "almagro": r"\balmagro\b",
+    # No hay una sola tienda de referencia (a diferencia de Independiente
+    # Avellaneda/Santa Fe/Medellín) que aclare qué "Gimnasia" es en cada
+    # publicación -- ambos patrones son especificos a lo único encontrado
+    # hasta ahora (Mystery Shirt Club, 2026-08-10). Si aparece una camiseta
+    # de Gimnasia y Esgrima La Plata (u otra "Gimnasia" distinta a Jujuy),
+    # necesita su propio TeamKey, no reusar este.
+    "gimnasiajujuy": r"club atl[eé]tico gimnasia|gimnasia.*jujuy|jujuy.*gimnasia",
     "burnley": r"\bburnley\b",
     "heidenheim": r"heidenheim",
     "auxerre": r"\bauxerre\b",
@@ -87,7 +96,7 @@ TEAM_PATTERNS = {
     "everton": r"\beverton\b",
     "fulham": r"\bfulham\b",
     "leeds": r"leeds united",
-    "mancity": r"manchester city",
+    "mancity": r"manchester city|\bman city\b",
     "newcastle": r"newcastle",
     "nottinghamforest": r"nottingham forest",
     "sunderland": r"\bsunderland\b",
@@ -123,10 +132,10 @@ TEAM_PATTERNS = {
     "torino": r"\btorino\b",
     "udinese": r"\budinese\b",
     "dortmund": r"borussia dortmund|\bbvb\b",
-    "rbleipzig": r"rb leipzig",
+    "rbleipzig": r"rb leipzig|red bull leipzig",
     "leverkusen": r"bayer leverkusen",
     "frankfurt": r"eintracht frankfurt",
-    "gladbach": r"m[oö]nchengladbach",
+    "gladbach": r"m[oö]nchengladbach|borussia mgb",
     "stuttgart": r"vfb stuttgart",
     "wolfsburg": r"wolfsburg",
     "marseille": r"marseille|\bom\b",
@@ -257,7 +266,7 @@ TEAM_PATTERNS = {
     "nyredbulls": r"new york red bulls",
     "columbuscrew": r"columbus crew",
     "sandiegofc": r"san diego fc",
-    "rbsalzburg": r"rb salzbur(g|go|gh|ourg)",
+    "rbsalzburg": r"rb salzbur(g|go|gh|ourg)|red bull salzburg",
     "deportivo": r"deportivo la coru[ñn]a|deportivo la corogne",
     "partizanbelgrade": r"partizan belgrad",
     "lafc": r"los angeles fc",
