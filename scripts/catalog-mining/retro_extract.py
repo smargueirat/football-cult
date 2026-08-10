@@ -49,7 +49,7 @@ RETRO_EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|"
     r"\bconcept\b|\bairo\b|"
-    r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq",
+    r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b",
     re.I,
 )
 
@@ -122,11 +122,25 @@ SIZE_MAP = {
 def mine(csv_path, fmt, store_name):
     if fmt == "google":
         title_col, price_col, sale_col, link_col, image_col = "title", "price", "sale_price", "aw_deep_link", "image_link"
-        size_col = None
+        # Real bug found 2026-08-10: this never read a size column at all,
+        # relying only on a "- XL" style suffix in the title itself (via
+        # split_title_size() below) -- works for stores that encode size
+        # that way, but FootStoreFR's real size data lives in its own
+        # "size" column (same one pick.py already uses for this exact
+        # format, see the documented column args in README.md) and was
+        # never read, so every retro pick with no title suffix silently
+        # got an empty sizes list and got dropped by retro_gen.py.
+        size_col = "size"
         sport_col = None
     elif fmt == "awin":
         title_col, price_col, sale_col, link_col, image_col = "product_name", "search_price", None, "aw_deep_link", "aw_image_url"
-        size_col = "custom_1"
+        # Bug found 2026-08-10: this already special-cased Adidas for
+        # sport_col, but not size_col -- custom_1 holds "Adult"/"Kids" on
+        # Adidas feeds (real size moved to "Fashion:size", same as
+        # pick.py's documented column mapping), so every AdidasES/PT
+        # retro pick came back with an empty sizes list and got silently
+        # dropped by retro_gen.py's "no usable sizes" skip.
+        size_col = "Fashion:size" if store_name.startswith("Adidas") else "custom_1"
         sport_col = "custom_2" if store_name.startswith("Adidas") else None
     elif fmt == "msc":
         # shopify_feed_to_csv.py output (Mystery Shirt Club): same column

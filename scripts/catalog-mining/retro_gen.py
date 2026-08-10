@@ -15,7 +15,10 @@ from new_teams_batch7 import BATCH7 as _B7
 from new_teams_batch8 import BATCH8 as _B8
 from new_teams_batch9 import BATCH9 as _B9
 from new_teams_batch10 import BATCH10 as _B10
-BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10}
+from new_teams_batch11 import BATCH11 as _B11
+from new_teams_batch12 import BATCH12 as _B12
+from new_teams_batch13 import BATCH13 as _B13
+BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13}
 
 PRODUCTS_TS = "/home/piojo/football-cult/src/data/products.ts"
 
