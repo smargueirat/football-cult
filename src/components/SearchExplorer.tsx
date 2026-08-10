@@ -74,6 +74,16 @@ function seasonSortValue(season: string): number {
   return match ? parseInt(match[0], 10) : 0;
 }
 
+// Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
+// (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para
+// que la búsqueda no dependa de en qué idioma esté puesta la página.
+function normalizeSearchText(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 export default function SearchExplorer() {
   const { locale, t } = useLanguage();
   const {
@@ -109,20 +119,39 @@ export default function SearchExplorer() {
   const [sortOpen, setSortOpen] = useState(false);
 
   const results = useMemo(() => {
-    const normalized = query.trim().toLowerCase();
+    const queryWords = normalizeSearchText(query.trim())
+      .split(/\s+/)
+      .filter(Boolean);
 
     const filtered = products.filter((p) => {
-      // Además del nombre del equipo, busca en el texto real de cada
-      // oferta -- así encuentra por jugador ("messi"), por variante
-      // ("pre-match") o cualquier otra palabra que solo aparezca en el
-      // título tal como lo puso la tienda, no en nuestros campos curados.
-      const matchesQuery = normalized
-        ? teamNames[p.teamKey].es.toLowerCase().includes(normalized) ||
-          teamNames[p.teamKey].en.toLowerCase().includes(normalized) ||
-          teamNames[p.teamKey].pt.toLowerCase().includes(normalized) ||
-          typeNames[p.typeKey][locale].toLowerCase().includes(normalized) ||
-          p.offers.some((o) => o.title?.toLowerCase().includes(normalized))
-        : true;
+      // Cada palabra de la búsqueda tiene que aparecer en algún lado del
+      // texto del producto (no las tres seguidas como una sola frase) --
+      // así "boca 1993" encuentra "Boca Juniors 1993-95 Home Retro
+      // Jersey" aunque "juniors" quede en el medio. Junta el nombre del
+      // equipo y el tipo en los tres idiomas (no solo el de la página
+      // actual) más el texto real de cada oferta -- así la búsqueda no
+      // depende de en qué idioma esté puesta la página, y también
+      // encuentra por jugador ("messi"), por variante ("pre-match") o
+      // cualquier otra palabra que solo aparezca en el título tal como
+      // lo puso la tienda, no en nuestros campos curados.
+      const matchesQuery =
+        queryWords.length === 0
+          ? true
+          : (() => {
+              const haystack = normalizeSearchText(
+                [
+                  teamNames[p.teamKey].es,
+                  teamNames[p.teamKey].en,
+                  teamNames[p.teamKey].pt,
+                  typeNames[p.typeKey].es,
+                  typeNames[p.typeKey].en,
+                  typeNames[p.typeKey].pt,
+                  p.season,
+                  ...p.offers.map((o) => o.title ?? ""),
+                ].join(" ")
+              );
+              return queryWords.every((w) => haystack.includes(w));
+            })();
       // "retro" además exige temporada 2006 o anterior -- una camiseta de
       // 2023/24 ya reemplazada por la actual no es "retro" en el sentido
       // en que el usuario espera navegar esa categoría (vintage real, no
