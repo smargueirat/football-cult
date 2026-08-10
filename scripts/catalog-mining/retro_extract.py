@@ -27,7 +27,7 @@ from manual_exclusions import is_manually_excluded
 # MINUS the retro/vintage/classic/historic terms (those are exactly what we
 # want here) and MINUS the bare "años \d0" old-decade filter (same reason).
 RETRO_EXCLUDE_RE = re.compile(
-    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
+    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|árbitro|arbitro|\breferee\b|arbitre|"
     r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     # "youth" only, NOT "young" -- BSC Young Boys is a real club here and a
     # bare "young" would exclude every one of its own retro listings.

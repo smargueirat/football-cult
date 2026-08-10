@@ -420,7 +420,7 @@ TYPE_PATTERNS = {
 # every Rakuten Brazil store's listings from matching at all.
 JERSEY_RE = re.compile(r"\b(camisa|camiseta|camisola|maillot|jersey|trikot|shirt|maglia)\b", re.I)
 EXCLUDE_RE = re.compile(
-    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
+    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|árbitro|arbitro|\breferee\b|arbitre|"
     # "junior" needs a word boundary -- real bug found: without it, this
     # matched as a substring of "Juniors" and excluded EVERY Boca Juniors
     # listing from EVERY mining pass, Awin and eBay both, this whole
@@ -452,7 +452,7 @@ EXCLUDE_RE = re.compile(
 # SÍ queremos infantil/niño/kids/junior; el resto de las exclusiones
 # —entrenamiento, retro, merch, etc.— se mantienen igual).
 KIDS_EXCLUDE_RE = re.compile(
-    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|"
+    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|árbitro|arbitro|\breferee\b|arbitre|"
     r"bebé|bebe|\bbaby\b|\bmois\b|"
     r"mujer|women|dama|f[ée]minin|femenin|\bfemme\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
