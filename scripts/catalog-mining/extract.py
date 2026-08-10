@@ -243,7 +243,13 @@ TEAM_PATTERNS = {
     "intermilan": r"\binter (de )?mil[aá]n\b|internazionale",
     "acmilan": r"\b(ac )?milan\b|\bacm\b",
     "napoli": r"\bnapoli\b",
-    "roma": r"\bas roma\b|\broma\b",
+    # Bug found 2026-08-10: bare "roma" alone matched "Lazio Roma" titles
+    # (some stores' own naming just appends the city, "Lazio [de] Roma",
+    # for their Lazio listings) as if they were AS Roma products -- real
+    # Lazio jerseys (Mizuno, S.S. Lazio crest) ended up wrongly filed
+    # under both clubs. Excluding "lazio" keeps the bare-word convenience
+    # for genuine standalone "Roma" mentions.
+    "roma": r"\bas roma\b|(?<!lazio )\broma\b",
     "lazio": r"\blazio\b",
     "atalanta": r"\batalanta\b",
     "fiorentina": r"\bfiorentina\b",
