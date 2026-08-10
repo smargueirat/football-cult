@@ -229,6 +229,50 @@ Same resume support as `ebay_mine.py` (per output file, keyed by team).
     if a "why does team X have suspiciously little/no coverage" question
     ever comes up again, check these two classes first.
 
+### Second full eBay re-mine (2026-08-10) — more name-collision classes, and a rate-limit gap
+
+Re-ran `ebay_mine_full.py` end to end (this was a re-mine, not the first
+pass) to keep expanding coverage. Two things worth carrying forward:
+
+- **eBay's Browse API rate-limited hard partway through the ~2000-call
+  run** — the last ~77 of 252 teams (by request order) got a 429 "Too
+  many requests" on literally every query, meaning those teams were
+  never actually checked this pass, not "checked and found nothing".
+  Includes 4 Argentina clubs the site cares about: **Racing Club, San
+  Lorenzo, Vélez Sarsfield, Estudiantes de La Plata** — zero picks for
+  any of them this run, purely from being unlucky in queue order, not a
+  real coverage gap. Re-run `ebay_mine_full.py` for just the affected
+  teams once the quota window resets (a few hours to a day) rather than
+  assuming their eBay coverage is exhausted.
+- **"Independiente" (Club Atlético Independiente, Avellaneda) collides
+  with several other real clubs of the same name** — found by hand
+  auditing this run's retro picks (10 of 16 were actually Independiente
+  Santa Fe / Independiente Medellín, both Colombia; Independiente del
+  Valle, Ecuador; Independiente Rivadavia and Independiente de
+  Chivilcoy, both Argentina but different clubs). Unlike the
+  Jordan/Ukraine collisions elsewhere in this doc, this one *was* worth
+  a regex fix (enumerable, small set of known homonyms) — `extract.py`'s
+  `TEAM_PATTERNS["independiente"]` now excludes those five qualifiers
+  via a negative lookahead. Verified against all 17 real titles found
+  this run before applying.
+- **More one-off bare-word collisions, dropped by hand (not
+  regex-fixed — too broad to safely enumerate, same call as
+  Jordan/Ukraine)**: `espana`'s bare "Spain"/"España" match picked up
+  Real Madrid/Barcelona/Valencia/Real Betis/Sevilla club listings that
+  just mention Spain in passing (every single `espana|third` pick this
+  run was actually a club, not the national team — home/away were
+  clean); a `torino|away` and `sevilla|away` pick were actually
+  Juventus and Real Betis respectively (both clubs' listings happened
+  to mention the other club's city/name); three kids picks
+  (`ecuador|away`, `mexico|third`, `santos|home`) were actually
+  Ecuadorian/Mexican *club* jerseys (Barcelona SC-style crest,
+  Chivas Guadalajara, Santos Laguna) that only matched because the
+  bare country/city word appeared in the seller's title — confirmed by
+  photo, all dropped before generating. When auditing a large eBay
+  batch, budget time to actually read every title in `..._truly_new`
+  outputs by eye, not just trust `extract.py`'s existing filters — this
+  pass alone found name collisions across 5 different team keys.
+
 ## Stores without an Awin datafeed CSV (Mystery Shirt Club)
 
 Not every newly-approved Awin advertiser has a CSV datafeed we can list —

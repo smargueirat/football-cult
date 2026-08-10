@@ -69,7 +69,14 @@ TEAM_PATTERNS = {
     "juventus": r"juventus",
     "riverplate": r"river plate",
     "chelsea": r"\bchelsea\b",
-    "independiente": r"independiente",
+    # "Independiente" alone is Club Atlético Independiente (Avellaneda,
+    # Argentina) -- but several other real clubs across Latam share the
+    # exact same name/prefix (found by hand via a batch of eBay retro
+    # picks: Independiente Santa Fe and Independiente Medellín/DIM in
+    # Colombia, Independiente del Valle in Ecuador, Independiente
+    # Rivadavia and Independiente de Chivilcoy elsewhere in Argentina).
+    # Exclude those explicitly rather than matching the bare word.
+    "independiente": r"independiente(?!\s*(santa\s*fe|medell[ií]n|del\s*valle|rivadavia|de\s*chivilcoy))",
     "como": r"como 1907|como f\.?c\.?\s*1907|\bcomofootball\b",
     "arsenal": r"\barsenal\b",
     "astonvilla": r"aston villa",
