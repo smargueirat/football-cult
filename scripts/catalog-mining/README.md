@@ -867,6 +867,30 @@ product for that team+type, not just the one being refreshed) — cleaned
 up by hand again this pass, but expect it to keep recurring nightly
 until that's actually fixed.
 
+## Product id stability (favorites depend on this — read before renaming/deleting an id)
+
+`src/data/productAliases.ts` maps an old product `id` to whatever it
+became. This exists because favorites (and "recently viewed") are stored
+as raw id strings — either in a signed-in user's account or in the
+guest's `localStorage` — and `findProduct()` used to just return
+`undefined` for an id that no longer exists, which the favorites page
+silently filters out. A user's saved favorite would vanish with zero
+explanation the next time the catalog changed underneath it. Found and
+fixed 2026-08-11 after the user asked directly whether catalog updates
+could do this — they could, and several of that day's own fixes
+(retro id renames, exact-URL-duplicate merges) were live examples.
+
+**Whenever a change to `products.ts` renames, merges, or splits a
+product id — anything where the "same" real product keeps existing but
+under a different id — add an entry to `PRODUCT_ID_ALIASES`
+(`old id -> new id`) in the same commit.** Point it at the id's current,
+final form directly (never chain an alias to another alias — the lookup
+is single-hop by design). Do NOT add an entry when a product is deleted
+because it shouldn't have existed at all (wrong team, unlicensed
+reproduction, reserve-team collision, etc.) — that favorite disappearing
+is correct, not a bug, since there's no legitimate successor to redirect
+to.
+
 ## Safety rule (standing, do not change)
 
 Never automate login/"Join"/apply/write actions on any affiliate network

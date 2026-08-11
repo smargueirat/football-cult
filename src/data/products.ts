@@ -1,5 +1,6 @@
 import { Locale } from "@/lib/i18n/translations";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
+import { resolveProductId } from "@/data/productAliases";
 
 export type TeamKey =
   | "argentina"
@@ -50238,7 +50239,14 @@ export function availableSizesForCountry(
 }
 
 export function findProduct(id: string): Product | undefined {
-  return products.find((p) => p.id === id);
+  const direct = products.find((p) => p.id === id);
+  if (direct) return direct;
+  // Falls back to the alias map so a saved favorite pointing at an id that
+  // got renamed/merged in a catalog update still resolves, instead of
+  // silently vanishing from the user's favorites list.
+  const resolvedId = resolveProductId(id);
+  if (resolvedId === id) return undefined;
+  return products.find((p) => p.id === resolvedId);
 }
 
 export const SEASONS: string[] = Array.from(
