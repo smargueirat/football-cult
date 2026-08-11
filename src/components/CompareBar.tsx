@@ -19,7 +19,7 @@ export default function CompareBar() {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 flex justify-center px-4 pb-4">
-      <div className="vintage-card flex w-full max-w-xl items-center gap-3 rounded-2xl p-3 shadow-lg">
+      <div className="vintage-card flex w-full max-w-xl items-center gap-3 rounded-2xl p-3">
         <span className="font-tagline hidden shrink-0 text-xs not-italic text-[#5b5442] sm:block">
           {t.compare.barTitle}
         </span>

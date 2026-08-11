@@ -22,6 +22,7 @@ import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
+import JerseySkeleton from "./JerseySkeleton";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
@@ -58,7 +59,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/camiseta/${product.id}`}
-      className="vintage-card group flex flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+      className="vintage-card group flex flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
@@ -69,7 +70,7 @@ export default function ProductCard({ product }: { product: Product }) {
         {photo ? (
           <>
             {!imageLoaded && (
-              <div className="skeleton-shimmer absolute inset-0" aria-hidden />
+              <JerseySkeleton className="absolute inset-0 h-full w-full" />
             )}
             <Image
               src={getDisplaySrc(photo, 500)}
@@ -97,19 +98,19 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.season}
           </span>
           {isKids && (
-            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#1F6F4C" }}>
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-vintage-sm" style={{ backgroundColor: "#1F6F4C" }}>
               {t.search.ageGroupKids}
             </span>
           )}
           {isWomen && (
-            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#DB2777" }}>
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-vintage-sm" style={{ backgroundColor: "#DB2777" }}>
               {t.search.ageGroupWomen}
             </span>
           )}
         </span>
 
         {best && (
-          <div className="absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410] shadow-md">
+          <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
             <span className="flex items-center gap-1 text-sm font-semibold">
               <span className="text-xs">🥇</span>
               {formatOfferMoney(offerTotal(best), best.currency)}
@@ -129,7 +130,7 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
-          className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+          className="shadow-vintage-sm absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
         >
           <svg
             className="h-4 w-4"

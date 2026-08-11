@@ -2,6 +2,7 @@
 
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
+import FeaturedSection from "@/components/FeaturedSection";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Home() {
@@ -25,13 +26,15 @@ export default function Home() {
             </p>
             <a
               href="#catalogo"
-              className="relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] shadow-md transition-transform hover:scale-[1.03] sm:text-xs"
+              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:text-xs"
             >
               {t.hero.cta}
               <span aria-hidden>→</span>
             </a>
           </div>
         </section>
+
+        <FeaturedSection />
 
         {/* Search + results */}
         <section id="catalogo" className="mx-auto w-full max-w-6xl flex-1 scroll-mt-20 px-6 pb-24 pt-6">

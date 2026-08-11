@@ -24,6 +24,7 @@ import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
+import JerseySkeleton from "./JerseySkeleton";
 import ReportProductModal from "./ReportProductModal";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -143,7 +144,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             {photo ? (
               <>
                 {!imageLoaded && (
-                  <div className="skeleton-shimmer absolute inset-0" aria-hidden />
+                  <JerseySkeleton className="absolute inset-0 h-full w-full" />
                 )}
                 <Image
                   src={getDisplaySrc(photo, 1000)}
