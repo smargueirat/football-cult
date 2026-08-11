@@ -2,7 +2,6 @@
 
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
-import FeaturedSection from "@/components/FeaturedSection";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Home() {
@@ -33,8 +32,6 @@ export default function Home() {
             </a>
           </div>
         </section>
-
-        <FeaturedSection />
 
         {/* Search + results */}
         <section id="catalogo" className="mx-auto w-full max-w-6xl flex-1 scroll-mt-20 px-6 pb-24 pt-6">
