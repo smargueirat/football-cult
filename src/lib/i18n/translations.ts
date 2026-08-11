@@ -108,6 +108,8 @@ export interface Translations {
     inStores: string;
     sizesRange: string;
     shippingIncluded: string;
+    available: string;
+    unavailable: string;
   };
   detail: {
     backToCatalog: string;
@@ -320,6 +322,8 @@ export const translations: Record<Locale, Translations> = {
       viewStores: "Ver otras tiendas ({n})",
       hideStores: "Ocultar tiendas",
       inStores: "En {n} tiendas",
+      available: "Disponible",
+      unavailable: "No disponible",
       sizesRange: "Tallas {range}",
       shippingIncluded: "envío incl.",
     },
@@ -541,6 +545,8 @@ export const translations: Record<Locale, Translations> = {
       viewStores: "Ver outras lojas ({n})",
       hideStores: "Ocultar lojas",
       inStores: "Em {n} lojas",
+      available: "Disponível",
+      unavailable: "Indisponível",
       sizesRange: "Tamanhos {range}",
       shippingIncluded: "frete incl.",
     },
@@ -762,6 +768,8 @@ export const translations: Record<Locale, Translations> = {
       viewStores: "Other stores ({n})",
       hideStores: "Hide stores",
       inStores: "At {n} stores",
+      available: "Available",
+      unavailable: "Unavailable",
       sizesRange: "Sizes {range}",
       shippingIncluded: "shipping incl.",
     },
