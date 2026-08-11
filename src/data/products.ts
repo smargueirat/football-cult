@@ -3275,7 +3275,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675770&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de segunda equipación 773346-02", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F4e%2Ff4%2F773344-01-1neu4eBosddqmE9b3_600x600.jpg&feedId=99907&k=385eb1bb6cd5134e8cbdb7dac98b8231410c4304" },
+      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675770&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de segunda equipación 773346-02", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F23%2Fff%2F49%2F773346-02-19R58HCDP5SNAC_600x600.jpg&feedId=99907&k=202a1412b35ed6aae072b9431dff852e13d5832a" },
     ],
   },
 {
@@ -3287,7 +3287,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675767&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de primera equipación 773344-01", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F23%2Fff%2F49%2F773346-02-19R58HCDP5SNAC_600x600.jpg&feedId=99907&k=202a1412b35ed6aae072b9431dff852e13d5832a" },
+      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675767&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de primera equipación 773344-01", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F4e%2Ff4%2F773344-01-1neu4eBosddqmE9b3_600x600.jpg&feedId=99907&k=385eb1bb6cd5134e8cbdb7dac98b8231410c4304" },
     ],
   },
 {
