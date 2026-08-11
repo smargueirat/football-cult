@@ -14,6 +14,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 sm:pt-6">
           <div className="vintage-banner relative flex flex-col items-center gap-1 overflow-hidden rounded-2xl px-6 py-4 text-center sm:gap-1.5 sm:rounded-3xl sm:px-10 sm:py-5">
             <div className="vintage-banner-rays absolute inset-0" aria-hidden />
+            <div className="vintage-floodlight pointer-events-none absolute inset-0" aria-hidden />
             <span className="font-tagline relative text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
               {t.hero.eyebrow}
             </span>

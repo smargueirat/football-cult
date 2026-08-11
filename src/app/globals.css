@@ -76,6 +76,34 @@ body {
   opacity: 0.8;
 }
 
+/* Reflector de estadio cálido barriendo lento por el hero -- misma idea
+   detrás de un "spotlight" de UI moderna (glow que atraviesa la sección),
+   pero en dorado sobre crema en vez de blanco sobre negro, y evocando un
+   estadio/vitrina de trofeos en vez de un efecto de fondo genérico. Muy
+   sutil a propósito: nunca debe competir con el texto del hero.
+   prefers-reduced-motion ya lo congela por la regla global de arriba. */
+.vintage-floodlight {
+  background: radial-gradient(
+    ellipse 55% 130% at 50% 0%,
+    rgba(231, 197, 103, 0.45) 0%,
+    transparent 65%
+  );
+  filter: blur(3px);
+  animation: floodlight-sweep 16s ease-in-out infinite;
+}
+
+@keyframes floodlight-sweep {
+  0%,
+  100% {
+    transform: translateX(-32%);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateX(32%);
+    opacity: 1;
+  }
+}
+
 /* --- Sistema vintage: tarjetas, plaquetas, texturas --- */
 
 /* Sombras difuminadas de baja opacidad en tono cálido, en vez de los
