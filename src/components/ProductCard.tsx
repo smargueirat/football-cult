@@ -20,7 +20,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { isPreOptimizedImage } from "@/lib/images";
+import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
 
 export default function ProductCard({ product }: { product: Product }) {
@@ -72,11 +72,11 @@ export default function ProductCard({ product }: { product: Product }) {
               <div className="skeleton-shimmer absolute inset-0" aria-hidden />
             )}
             <Image
-              src={photo}
+              src={getDisplaySrc(photo, 500)}
               alt={displayName}
               fill
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
-              unoptimized={isPreOptimizedImage(photo)}
+              unoptimized
               onLoad={() => setImageLoaded(true)}
               className={`object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
                 imageLoaded ? "opacity-100" : "opacity-0"

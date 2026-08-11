@@ -22,7 +22,7 @@ import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
-import { isPreOptimizedImage } from "@/lib/images";
+import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
 import ReportProductModal from "./ReportProductModal";
 
@@ -146,12 +146,12 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                   <div className="skeleton-shimmer absolute inset-0" aria-hidden />
                 )}
                 <Image
-                  src={photo}
+                  src={getDisplaySrc(photo, 1000)}
                   alt={displayName}
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 45vw"
-                  unoptimized={isPreOptimizedImage(photo)}
+                  unoptimized
                   onLoad={() => setImageLoaded(true)}
                   className={`object-contain drop-shadow-sm transition-opacity duration-300 ${
                     imageLoaded ? "opacity-100" : "opacity-0"
