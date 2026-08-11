@@ -22482,7 +22482,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
-      { store: "DeporteOutletES", price: 37.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44919264259&a=3013769&m=19598", title: "Real Madrid C.F. adidas primera equipación AUTHENTIC Hombre Camiseta IX8095", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F29%2F34%2Ffc%2FIX8095-1_600x600.jpg&feedId=99907&k=1bf0d946bea3bff07df2efb313b6b486a283824c" },
       { store: "FootStoreES", price: 63.36, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41646236240&a=3013769&m=65912", title: "Camiseta Local Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8884_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=4be16423ba80eb06a0d89667afc592329abcf6d4" },
       { store: "FootStoreFR", price: 61.93, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1931-maillot-domicile-real-madrid-2025-26-white", title: "Maillot Domicile Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj1931_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 63.09, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845393&a=3013769&m=65906", title: "Camiseta Local Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8884_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=4be16423ba80eb06a0d89667afc592329abcf6d4" },
@@ -37509,7 +37508,6 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flazio-home-soccer-jersey-2025-26%3Fvariant%3D42557143548009", title: "Lazio Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/3ca7fcd5c67d2d299b9f8f487deaa988.png?v=1758073748" },
       { store: "eBay", price: 159.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236841212963?_skw=Lazio+home+soccer+jersey&hash=item3724d61c23%3Ag%3AtdoAAeSw3UtqFyfz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "S S LAZIO - ORIGINAL HOME Jersey 2026 - Mizuno - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/tdoAAeSw3UtqFyfz/s-l225.jpg" },
-      { store: "DeporteOutletES", price: 32.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44084163809&a=3013769&m=19598", title: "S.S. Lazio Mizuno Hombre primera equipación 125 años Camiseta MIZP2GABX75-01", inStock: true, sizes: ["XL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F07%2F02%2F38%2FMIZP2GABX75-01-1_600x600.jpg&feedId=99907&k=7d31af6db7e6b1c0b370b0353f978de43ccfecce" },
     ],
   },
 {
@@ -38793,18 +38791,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324660634&a=3013769&m=19598", title: "FC Sevilla CASTORE Hombre Camiseta de portero TM1914-BLAZINGYELLOW", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F7b%2Fb4%2F39%2FTM1914-BLAZINGYELLOW-1_600x600.jpg&feedId=99907&k=22194808e44c7f144ebe8f37a28c440277fb2d5c" },
-    ],
-  },
-{
-    id: "sevilla-home-202526",
-    teamKey: "sevilla",
-    season: "2025/26",
-    typeKey: "home",
-    colorHex: "#FFFFFF",
-    colorHexSecondary: "#D2001C",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "DeporteOutletES", price: 27.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324660657&a=3013769&m=19598", title: "Sevilla Atlético CASTORE Hombre Camiseta de primera equipación TM1138-TRUEREDWHITE", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fac%2F1e%2F2a%2FTM1138-TRUEREDWHITE-1_600x600.jpg&feedId=99907&k=f7edb61d3c2db9ec3d64527864776b841ffd8538" },
     ],
   },
 {
