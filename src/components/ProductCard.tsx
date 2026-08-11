@@ -8,7 +8,6 @@ import {
   SIZES,
   availableSizesForCountry,
   bestOfferForCountry,
-  brandNames,
   displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
@@ -109,12 +108,6 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </span>
 
-        {product.brand && (
-          <div className="absolute bottom-3 left-3 flex items-center gap-1 rounded-full border border-[#1B3B2B]/50 bg-[#1B3B2B] px-3 py-1.5 text-white shadow-md">
-            <span className="text-sm font-bold tracking-wide">{brandNames[product.brand]}</span>
-          </div>
-        )}
-
         {best && (
           <div className="absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410] shadow-md">
             <span className="flex items-center gap-1 text-sm font-semibold">
@@ -161,24 +154,12 @@ export default function ProductCard({ product }: { product: Product }) {
           {displayName}
         </h3>
         {best ? (
-          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
-            <span className="inline-flex items-center gap-1 rounded-full bg-[#1F6F4C]/12 px-2 py-0.5 text-[11px] font-semibold text-[#1F6F4C]">
-              <span className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#1F6F4C]" aria-hidden />
-              {t.product.available}
-            </span>
-            <p className="text-xs text-[#8a7a5a]">
-              {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
-              {t.product.sizesRange.replace("{range}", sizeRange)}
-            </p>
-          </div>
+          <p className="text-xs text-[#8a7a5a]">
+            {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
+            {t.product.sizesRange.replace("{range}", sizeRange)}
+          </p>
         ) : (
-          <div className="mt-1 flex flex-col items-start gap-1">
-            <span className="inline-flex items-center gap-1 rounded-full bg-[#B45309]/12 px-2 py-0.5 text-[11px] font-semibold text-[#B45309]">
-              <span className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#B45309]" aria-hidden />
-              {t.product.unavailable}
-            </span>
-            <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
-          </div>
+          <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
         )}
 
         <button
