@@ -26,7 +26,6 @@ export default function TerminosClient() {
           {t.terms.affiliateTitle}
         </h2>
         <p>{t.terms.affiliateText}</p>
-        <p className="text-sm text-[#8a7a5a]">{t.terms.note}</p>
       </div>
     </div>
   );

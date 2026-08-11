@@ -36,7 +36,6 @@ export default function PrivacidadClient() {
           </a>
           .
         </p>
-        <p className="text-sm text-[#8a7a5a]">{t.privacy.note}</p>
       </div>
     </div>
   );

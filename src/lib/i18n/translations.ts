@@ -154,7 +154,6 @@ export interface Translations {
     thirdPartyText: string;
     contactTitle: string;
     contactText: string;
-    note: string;
   };
   terms: {
     title: string;
@@ -167,7 +166,6 @@ export interface Translations {
     ordersText: string;
     affiliateTitle: string;
     affiliateText: string;
-    note: string;
   };
   notFound: {
     title: string;
@@ -375,7 +373,6 @@ export const translations: Record<Locale, Translations> = {
         "No vendemos tu información personal a terceros. Las tiendas a las que te redirigimos tienen sus propias políticas de privacidad, que te recomendamos revisar antes de comprar.",
       contactTitle: "Contacto",
       contactText: "Ante cualquier duda sobre esta política, escribinos a",
-      note: "Nota: este texto es un punto de partida. Antes de publicar el sitio, conviene adaptarlo con asesoría legal según la jurisdicción donde operes (RGPD si apunta a la UE, LOPD en España, etc.).",
     },
     terms: {
       title: "Términos y condiciones",
@@ -392,7 +389,6 @@ export const translations: Record<Locale, Translations> = {
       affiliateTitle: "Enlaces de afiliado",
       affiliateText:
         "Football Cult participa en programas de afiliados y puede recibir una comisión por las compras realizadas a través de nuestros enlaces, sin costo adicional para el usuario.",
-      note: "Nota: este texto es un punto de partida general, no asesoramiento legal. Revisalo con un profesional antes de publicar el sitio.",
     },
     notFound: {
       title: "Fuera de juego",
@@ -598,7 +594,6 @@ export const translations: Record<Locale, Translations> = {
         "Não vendemos suas informações pessoais para terceiros. As lojas para as quais te redirecionamos têm suas próprias políticas de privacidade, que recomendamos revisar antes de comprar.",
       contactTitle: "Contato",
       contactText: "Para qualquer dúvida sobre esta política, escreva para",
-      note: "Nota: este texto é um ponto de partida. Antes de publicar o site, é recomendável adaptá-lo com assessoria jurídica de acordo com a jurisdição onde você opera (LGPD no Brasil, RGPD na UE, etc.).",
     },
     terms: {
       title: "Termos e condições",
@@ -615,7 +610,6 @@ export const translations: Record<Locale, Translations> = {
       affiliateTitle: "Links de afiliado",
       affiliateText:
         "Football Cult participa de programas de afiliados e pode receber uma comissão pelas compras feitas através dos nossos links, sem custo adicional para o usuário.",
-      note: "Nota: este texto é um ponto de partida geral, não é aconselhamento jurídico. Revise com um profissional antes de publicar o site.",
     },
     notFound: {
       title: "Fora de jogo",
@@ -821,7 +815,6 @@ export const translations: Record<Locale, Translations> = {
         "We don't sell your personal information to third parties. The stores we redirect you to have their own privacy policies, which we recommend reviewing before buying.",
       contactTitle: "Contact",
       contactText: "For any questions about this policy, write to us at",
-      note: "Note: this text is a starting point. Before publishing the site, it should be adapted with legal advice according to the jurisdiction you operate in (GDPR for the EU, etc.).",
     },
     terms: {
       title: "Terms & Conditions",
@@ -838,7 +831,6 @@ export const translations: Record<Locale, Translations> = {
       affiliateTitle: "Affiliate links",
       affiliateText:
         "Football Cult participates in affiliate programs and may earn a commission from purchases made through our links, at no extra cost to the user.",
-      note: "Note: this text is a general starting point, not legal advice. Have it reviewed by a professional before publishing the site.",
     },
     notFound: {
       title: "Offside",
