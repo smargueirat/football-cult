@@ -22487,8 +22487,19 @@ const productsData = [
       { store: "SportIsGoodES", price: 63.09, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845393&a=3013769&m=65906", title: "Camiseta Local Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8884_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=4be16423ba80eb06a0d89667afc592329abcf6d4" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41530602511&a=3013769&m=77008", title: "Camiseta primera equipación Real Madrid 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0b3e6a5ef6cf471db6b0e17f0c22cc5c_9366%2FCamiseta_primera_equipacion_Real_Madrid_25-26_Blanco_JN8869_21_model.jpg&feedId=92152&k=2ca473787bb5b8b35a3fad1a6ac9e165e51d2e7e" },
       { store: "SportIsGoodFR", price: 63.33, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj1931-maillot-domicile-real-madrid-2025-26-white", title: "Maillot Domicile Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL", "XXL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jj1931_1_apparel_photography_front_center_view_white.jpg" },
+    ],
+  },
+  {
+    id: "rma-home-202627",
+    teamKey: "realmadrid",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#F5F5F5",
+    colorHexSecondary: "#D2001C",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
       { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800457035803?_skw=Real+Madrid+home+soccer+jersey&hash=itemba5ef5101b%3Ag%3A8-4AAeSwYV5qcUAE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "XL 2026/27 Real Madrid Home Fans Soccer Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/8-4AAeSwYV5qcUAE/s-l225.jpg" },
-      { store: "PlanetFoot", price: 60.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-domicile-homme-blanc%3Fvariant%3D49126909280597", title: "Maillot Real Madrid Domicile Homme Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/IU5011_b2b012_plp.webp?v=1766692870" },
     ],
   },
 {
@@ -36042,6 +36053,7 @@ const productsData = [
       { store: "AdidasPT", price: 50.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44565639648&a=3013769&m=77026", title: "Camisola Principal 24/25 do Real Madrid", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1c3572a2189542dd9051ad03a2874c61_9366%2FCamisola_Principal_24-25_do_Real_Madrid_Branco_JX2136_21_model.jpg&feedId=92150&k=7a704d647db1cdda72a09dedf87b01c026527957" },
       { store: "FootStoreFR", price: 57.84, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx2136-maillot-domicile-real-madrid-2024-25-white-white", title: "Maillot Domicile Real Madrid 2024/25", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx2136_1-nw121124.webp" },
       { store: "SportIsGoodFR", price: 59.15, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx2136-maillot-domicile-real-madrid-2024-25-white-white", title: "Maillot Domicile Real Madrid 2024/25", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx2136_1-nw121124.webp" },
+      { store: "PlanetFoot", price: 60.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-domicile-homme-blanc%3Fvariant%3D49126909280597", title: "Maillot Real Madrid Domicile Homme Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/IU5011_b2b012_plp.webp?v=1766692870" },
     ],
   },
 {
