@@ -815,6 +815,58 @@ batch is clean just because the mining scripts ran without errors.
   than assuming a clean `tsc`/`build`/dedup-check run means the data
   itself is clean.
 
+## DeporteOutletES full re-mine (2026-08-11) — three real pipeline bugs
+
+Re-ran DeporteOutletES/Sportspar end to end after the user reported
+missing jerseys on the live site. Its `merchant_product_category_path`
+isn't football-specific (a broad multi-sport discount outlet — "Moda y
+ropa deportiva > Ropa de hombre > Camisetas" mixes real jerseys with
+Lambretta/Ellesse/Ben Sherman/NASA/Marvel fashion tees), so filtering by
+category doesn't work here like it did for AdidasES/FootStoreES/Sport Is
+Good — filtered by `equipación|portero` signal words in the title
+instead and checked every unmatched title by hand.
+
+- **`pick.py`'s size parsing only understood bare sizes** (`"M"`) —
+  DeporteOutlet's `size_stock_status` column mixes that with a
+  `"Talla:M"` prefixed form in ~16% of rows (1422/8776), silently
+  dropping every jersey whose row happened to use the prefixed form.
+  Caught because a real Czech Republic PUMA jersey came back with zero
+  sizes and got dropped. Fixed by stripping a `"TALLA:"` prefix before
+  the `SIZE_MAP` lookup.
+- **`extract.py`'s `is_old_season()` had no team-name masking** before
+  searching the title for a season year — same "Como 1907" class of bug
+  the retro pipeline (`retro_extract.py`) already worked around, just
+  never ported to the main `analyze()`/`analyze_kids()` functions. "US
+  Salernitana **1919**" was reading its own founding year as an old
+  season and getting silently excluded entirely. Fixed by masking the
+  matched team-name span out of the title before calling
+  `is_old_season()`, in both `analyze()` and `analyze_kids()`. Also had
+  to extend `salernitana`'s own regex to `\bsalernitana\b(\s+1919)?` so
+  the mask actually covers the year too, not just the club name.
+- **"Sevilla Atlético" (Sevilla FC's reserve team) matched the
+  `"sevilla"` pattern** and would have overwritten Sevilla FC's real
+  home kit with the reserve team's jersey — a real, separate club with
+  its own different crest, confirmed by photo (fetched the full 600x600
+  source image, not just the 200x200 thumbnail, to see the crest
+  clearly). Same class as the Independiente homonym-club fix: excluded
+  via negative lookahead (`\bsevilla\b(?! atl[eé]tico)`) rather than
+  mislabeling it as the first team, since there's no separate TeamKey
+  for the reserve side.
+
+Also found (not a pipeline bug, a data artifact worth knowing about):
+the **daily automated re-mine reintroduces the prematch season-pair
+duplicates already fixed earlier this session** (Arsenal/Bayern/
+Benfica/Liverpool/ManUtd/RealMadrid/Ajax `-202526` vs `-202627`) —
+`refresh.py`'s add-offer path matches on `(team, type)` only, so when
+two products exist for the same team+type at different seasons, a
+store's offer can get inserted into the wrong (older) one on every
+re-mine even after being manually cleaned up once, since nothing dedupes
+an offer URL across *different* products. Not fixed at the pipeline
+level yet (would need `refresh.py` to check the offer URL against every
+product for that team+type, not just the one being refreshed) — cleaned
+up by hand again this pass, but expect it to keep recurring nightly
+until that's actually fixed.
+
 ## Safety rule (standing, do not change)
 
 Never automate login/"Join"/apply/write actions on any affiliate network
