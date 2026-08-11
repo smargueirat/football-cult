@@ -48,7 +48,7 @@ export default function SignInOptions() {
         {t.loginPanel.googleCta}
       </button>
 
-      <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-[#8a7a5a]">
+      <div className="flex items-center gap-2 text-[10px] uppercase tracking-wider text-[#675c44]">
         <span className="h-px flex-1 bg-[#C9A24B]/25" />
         {t.loginPanel.or}
         <span className="h-px flex-1 bg-[#C9A24B]/25" />
@@ -66,7 +66,7 @@ export default function SignInOptions() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t.loginPanel.emailPlaceholder}
-            className="w-full rounded-xl border border-[#C9A24B]/25 bg-white/60 px-3 py-2 text-sm text-[#1a1a1a] outline-none focus:border-[#1B3B2B]/50"
+            className="w-full rounded-xl border border-[#C9A24B]/25 bg-white/60 px-3 py-2 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/50 focus:ring-2 focus:ring-[#1B3B2B]/10"
           />
           <button
             type="submit"

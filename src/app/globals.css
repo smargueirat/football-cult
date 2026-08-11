@@ -18,6 +18,22 @@ body {
   font-feature-settings: "tnum" 1;
 }
 
+/* Ningún hover/transición del sitio (lift de tarjetas, shimmer del
+   skeleton, scale de fotos, etc.) respetaba antes esta preferencia del
+   sistema operativo. No saca los estados (el hover sigue cambiando algo),
+   solo los hace instantáneos en vez de animados -- el patrón estándar
+   para esto, sin tener que tocar cada transition-* uno por uno. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .glass-panel {
   background: rgba(255, 253, 246, 0.82);
   backdrop-filter: blur(8px);

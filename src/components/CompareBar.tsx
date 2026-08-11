@@ -37,7 +37,7 @@ export default function CompareBar() {
               <button
                 onClick={() => toggleCompare(product.id)}
                 aria-label={t.compare.remove}
-                className="text-[#8a7a5a] hover:text-[#1a1a1a]"
+                className="text-[#675c44] hover:text-[#1a1a1a]"
               >
                 ✕
               </button>
@@ -47,7 +47,7 @@ export default function CompareBar() {
         </div>
         <button
           onClick={clearCompare}
-          className="hidden shrink-0 text-xs text-[#8a7a5a] hover:text-[#1a1a1a] sm:block"
+          className="hidden shrink-0 text-xs text-[#675c44] hover:text-[#1a1a1a] sm:block"
         >
           {t.compare.clearAll}
         </button>

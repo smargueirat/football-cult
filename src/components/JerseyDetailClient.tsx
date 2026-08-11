@@ -125,7 +125,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             <button
               onClick={() => toggleFavorite(product.id)}
               aria-label={t.nav.favorites}
-              className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+              className="shadow-vintage-sm absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
             >
               <svg
                 className="h-4 w-4"
@@ -182,7 +182,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
               <h1 className="font-card-title text-2xl text-[#1a1a1a] sm:text-3xl lg:text-4xl">
                 {displayName}
               </h1>
-              <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
+              <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
                 <span>{country.flag}</span>
                 {t.detail.storesCompared.replace("{n}", String(shippableCount))}
               </p>
@@ -240,7 +240,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
           </div>
 
           {shippableCount === 0 ? (
-            <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#8a7a5a]">
+            <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#675c44]">
               {t.countryPanel.notAvailable}
             </p>
           ) : (
@@ -325,7 +325,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                   {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
                                 </p>
                               ) : (
-                                <p className="text-xs text-[#8a7a5a]">
+                                <p className="text-xs text-[#675c44]">
                                   {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
                                 </p>
                               )}
@@ -371,7 +371,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
                         {!ships && (
                           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-[#f5f0e0]/75">
-                            <span className="-rotate-6 rounded border-2 border-[#8a7a5a]/60 bg-[#fffdf8] px-4 py-1.5 text-center text-xs font-bold uppercase tracking-widest text-[#8a7a5a] shadow-sm">
+                            <span className="shadow-vintage-sm -rotate-6 rounded border-2 border-[#675c44]/60 bg-[#fffdf8] px-4 py-1.5 text-center text-xs font-bold uppercase tracking-widest text-[#675c44]">
                               {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
                             </span>
                           </div>

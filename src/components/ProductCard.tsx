@@ -130,7 +130,7 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
-          className="shadow-vintage-sm absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
+          className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
         >
           <svg
             className="h-4 w-4"
@@ -155,12 +155,12 @@ export default function ProductCard({ product }: { product: Product }) {
           {displayName}
         </h3>
         {best ? (
-          <p className="text-xs text-[#8a7a5a]">
+          <p className="text-xs text-[#675c44]">
             {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (
-          <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
+          <p className="text-xs text-[#675c44]">{t.countryPanel.notAvailable}</p>
         )}
 
         <button
@@ -174,7 +174,7 @@ export default function ProductCard({ product }: { product: Product }) {
           className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
             comparing
               ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-              : "border-[#C9A24B]/30 text-[#8a7a5a] hover:border-[#1B3B2B]/40"
+              : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40"
           }`}
         >
           <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">

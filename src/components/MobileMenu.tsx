@@ -37,7 +37,7 @@ export default function MobileMenu() {
       <button
         onClick={() => setOpen(true)}
         aria-label={t.nav.categories}
-        className="flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+        className="flex h-11 w-11 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -51,13 +51,13 @@ export default function MobileMenu() {
               className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"
               onClick={() => setOpen(false)}
             />
-            <div className="solid-panel absolute left-0 top-0 h-screen w-72 border-r border-[#C9A24B]/25 p-6 shadow-2xl">
+            <div className="shadow-vintage-lg solid-panel absolute left-0 top-0 h-screen w-72 border-r border-[#C9A24B]/25 p-6">
               <div className="mb-6 flex items-center justify-between">
                 <span className="font-vintage text-sm text-[#1B3B2B]">{t.brand}</span>
                 <button
                   onClick={() => setOpen(false)}
                   aria-label={t.detail.backToCatalog}
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-[#5b5b57] hover:bg-[#C9A24B]/10"
+                  className="flex h-11 w-11 items-center justify-center rounded-full text-[#5b5b57] hover:bg-[#C9A24B]/10"
                 >
                   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

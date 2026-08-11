@@ -59,11 +59,11 @@ export default function CountrySelector() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={t.countryPanel.searchPlaceholder}
-              className="mb-2 w-full rounded-xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-2 text-sm text-[#1a1a1a] placeholder-[#a8926a] outline-none focus:border-[#1B3B2B]/40"
+              className="mb-2 w-full rounded-xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-2 text-sm text-[#1a1a1a] placeholder-[#a8926a] outline-none transition focus:border-[#1B3B2B]/40 focus:ring-2 focus:ring-[#1B3B2B]/10"
             />
             <ul className="flex max-h-72 flex-col gap-0.5 overflow-y-auto">
               {filtered.length === 0 ? (
-                <p className="px-2 py-3 text-sm text-[#8a7a5a]">{t.countryPanel.noMatches}</p>
+                <p className="px-2 py-3 text-sm text-[#675c44]">{t.countryPanel.noMatches}</p>
               ) : (
                 filtered.map((c) => (
                   <li key={c.code}>
@@ -81,13 +81,13 @@ export default function CountrySelector() {
                         <span className="text-base leading-none">{c.flag}</span>
                         {c.name[locale]}
                       </span>
-                      <span className="text-xs text-[#8a7a5a]">{c.currency}</span>
+                      <span className="text-xs text-[#675c44]">{c.currency}</span>
                     </button>
                   </li>
                 ))
               )}
             </ul>
-            <p className="mt-2 border-t border-[#C9A24B]/25 px-1 pt-2 text-[11px] text-[#8a7a5a]">
+            <p className="mt-2 border-t border-[#C9A24B]/25 px-1 pt-2 text-[11px] text-[#675c44]">
               {t.countryPanel.note}
             </p>
           </div>

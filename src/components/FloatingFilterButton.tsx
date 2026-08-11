@@ -44,7 +44,7 @@ export default function FloatingFilterButton() {
           {activeFilterCount > 0 && (
             <button
               onClick={clearAllFilters}
-              className="self-start text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+              className="self-start text-xs font-medium text-[#675c44] transition-colors hover:text-[#1a1a1a]"
             >
               {t.search.clearFilters}
             </button>

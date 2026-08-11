@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
           className={`rounded-full px-2.5 py-1 transition-colors ${
             locale === opt.code
               ? "bg-[#1B3B2B] text-[#F3E9C9]"
-              : "text-[#8a7a5a] hover:text-[#1a1a1a]"
+              : "text-[#675c44] hover:text-[#1a1a1a]"
           }`}
           aria-pressed={locale === opt.code}
         >
