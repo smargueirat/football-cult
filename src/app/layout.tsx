@@ -29,10 +29,26 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
 });
 
+const SITE_TITLE = "Football Cult — Comparador de precios de camisetas de fútbol";
+const SITE_DESCRIPTION =
+  "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.";
+
 export const metadata: Metadata = {
-  title: "Football Cult — Comparador de precios de camisetas de fútbol",
-  description:
-    "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.",
+  metadataBase: new URL("https://www.football-cult.com"),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    siteName: "Football Cult",
+    type: "website",
+    locale: "es_ES",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({

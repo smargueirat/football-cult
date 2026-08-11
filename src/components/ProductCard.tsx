@@ -8,6 +8,7 @@ import {
   SIZES,
   availableSizesForCountry,
   bestOfferForCountry,
+  brandNames,
   displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
@@ -96,6 +97,11 @@ export default function ProductCard({ product }: { product: Product }) {
           <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
             {product.season}
           </span>
+          {product.brand && (
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#1B3B2B" }}>
+              {brandNames[product.brand]}
+            </span>
+          )}
           {isKids && (
             <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#1F6F4C" }}>
               {t.search.ageGroupKids}
@@ -154,12 +160,23 @@ export default function ProductCard({ product }: { product: Product }) {
           {displayName}
         </h3>
         {best ? (
-          <p className="text-xs text-[#8a7a5a]">
+          <p className="flex items-center gap-1.5 text-xs text-[#8a7a5a]">
+            <span
+              className="inline-block h-1.5 w-1.5 shrink-0 rounded-full"
+              style={{ backgroundColor: "#1F6F4C" }}
+              aria-hidden
+            />
             {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (
-          <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
+          <p className="flex items-center gap-1.5 text-xs text-[#8a7a5a]">
+            <span
+              className="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#B45309]"
+              aria-hidden
+            />
+            {t.countryPanel.notAvailable}
+          </p>
         )}
 
         <button
