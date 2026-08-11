@@ -15,6 +15,7 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
+import { isPreOptimizedImage } from "@/lib/images";
 import JerseyIcon from "@/components/JerseyIcon";
 
 export default function CompareClient() {
@@ -76,6 +77,7 @@ export default function CompareClient() {
                       alt={displayName}
                       fill
                       sizes="(max-width: 640px) 90vw, 30vw"
+                      unoptimized={isPreOptimizedImage(photo)}
                       className="object-contain"
                     />
                   ) : (

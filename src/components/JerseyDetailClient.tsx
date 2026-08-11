@@ -22,6 +22,7 @@ import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
+import { isPreOptimizedImage } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
 import ReportProductModal from "./ReportProductModal";
 
@@ -150,6 +151,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                   fill
                   priority
                   sizes="(max-width: 1024px) 90vw, 45vw"
+                  unoptimized={isPreOptimizedImage(photo)}
                   onLoad={() => setImageLoaded(true)}
                   className={`object-contain drop-shadow-sm transition-opacity duration-300 ${
                     imageLoaded ? "opacity-100" : "opacity-0"
