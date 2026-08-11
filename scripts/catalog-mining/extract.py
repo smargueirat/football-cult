@@ -376,7 +376,7 @@ TEAM_PATTERNS = {
     "hullcity": r"hull city",
     "speziacalcio": r"spezia calcio",
     "fcmetz": r"\bfc metz\b|\bmetz\b",
-    "asse": r"\basse\b|saint-[ée]tienne",
+    "asse": r"\basse\b|saint-[ée]tienne|st\.?\s+[ée]tienne",
     "guingamp": r"guingamp",
     "redstarfc": r"red star fc",
     "estunis": r"\bes tunis\b|esp[ée]rance.{0,3}tunis",

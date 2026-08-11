@@ -46,6 +46,38 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # does show both clearly), this specific listing's own photos never
     # show the front, so it can't be trusted.
     "2024-2025-man-city-prematch-ss-shirt-flaxen-425784",
+    # Denmark goalkeeper "86": genuine 1986 heritage reissue, same
+    # bare-2-digit-suffix class documented in the README (2026-08-11).
+    # FootStoreES lists this same product as several separate rows (one
+    # per size), each with its own p= id -- list every variant id, since
+    # the exclusion check runs per-row before size-grouping.
+    "p=45204856699",
+    "p=45195661895",
+    "p=45195661896",
+    "p=45195661897",
+    # Same Denmark goalkeeper "86" heritage reissue, FootStoreFR's own
+    # listing (different link shape -- ued= merchant slug, shared across
+    # its size variants unlike FootStoreES's per-size p= ids above).
+    "222880-3389-maillot-du-gardien-de-but-danemark-86",
+    # BSTN IT adidas heritage reissues: Man Utd "90/92" (SKU JM5495) and
+    # Liverpool "95" (SKU KA8093) away jerseys -- same bare-2-digit-suffix
+    # retro class as Denmark 86 above, one row per size with a different
+    # p= id each (2026-08-11).
+    "p=44509578130",
+    "p=44509578131",
+    "p=44509578132",
+    "p=44509578133",
+    "p=44245437967",
+    "p=44245437968",
+    "p=44245437969",
+    "p=44245437970",
+    "p=44245437971",
+    # Same Man Utd "90/92" heritage line, long-sleeve variant (SKU JM5498).
+    "p=44509578137",
+    # DeporteOutlet S.S. Lazio "125 anos" anniversary shirt: white special
+    # edition, not the real sky-blue home kit -- same anniversary-edition
+    # class already documented in the README (2026-08-11).
+    "p=44084163809",
 ]
 
 
