@@ -101,7 +101,7 @@ TEAM_PATTERNS = {
     "keralablasters": r"kerala blasters",
     "northeastunited": r"north\s?east united",
     "stetienne": r"saint.?[eé]tienne",
-    "fcbasel": r"\bfc basel\b",
+    "fcbasel": r"\bfc basel\b|\bfc basilea\b",
     "brescia": r"\bbrescia\b",
     "lechiagdansk": r"lechia gdansk|lechia gda[nń]sk",
     "manisaspor": r"\bmanisaspor\b",
@@ -153,7 +153,7 @@ TEAM_PATTERNS = {
     "guatemala": r"\bguatemala\b",
     "trinidadytobago": r"trinidad (y|and|e) tobago",
     "romania": r"\brumania\b|\bromania\b|\brom[eê]nia\b",
-    "chequia": r"\bchequia\b|czech republic|rep[uú]blica tcheca|\bczechia\b",
+    "chequia": r"\bchequia\b|czech republic|rep[uú]blica tcheca|rep[uú]blica checa|\bczechia\b",
     "eslovaquia": r"\beslovaquia\b|\bslovakia\b|\beslov[aá]quia\b",
     "eslovenia": r"\beslovenia\b|\bslovenia\b|\beslov[eê]nia\b",
     "finlandia": r"\bfinlandia\b|\bfinland\b|\bfinl[aâ]ndia\b",
@@ -228,7 +228,14 @@ TEAM_PATTERNS = {
     "realbetis": r"real betis|betis balompi[eé]",
     "villarreal": r"\bvillarreal\b",
     "valencia": r"valencia cf|valencia c\.f|valence cf|valence c\.f|\bvalencia\b",
-    "sevilla": r"\bsevilla\b|\bseville\b",
+    # "Sevilla Atlético" is Sevilla FC's reserve team -- a real, separate
+    # club with its own (different) crest, not the first team. Found
+    # 2026-08-11 (DeporteOutlet/Sportspar): a "primera equipación" pick
+    # under this key was actually Atlético's kit, confirmed by photo (crest
+    # doesn't match Sevilla FC's real badge). No separate TeamKey for the
+    # reserve team, so same call as the India/Zambia domestic-club class in
+    # the README -- excluded, not mislabeled.
+    "sevilla": r"\bsevilla\b(?! atl[eé]tico)|\bseville\b",
     "celtavigo": r"celta de vigo|celta vigo",
     "girona": r"\bgirona\b",
     "osasuna": r"\bosasuna\b",
@@ -263,7 +270,7 @@ TEAM_PATTERNS = {
     "gladbach": r"m[oö]nchengladbach|borussia mgb",
     "stuttgart": r"vfb stuttgart",
     "wolfsburg": r"wolfsburg",
-    "marseille": r"marseille|\bom\b",
+    "marseille": r"marseille|\bom\b|\bmarsella\b",
     "monaco": r"\bm[oó]naco\b",
     "lyon": r"\blyon\b|olympique lyonnais|\blyonnes\b",
     "lille": r"\blille\b|\blosc\b",
@@ -394,8 +401,10 @@ TEAM_PATTERNS = {
     "rbsalzburg": r"rb salzbur(g|go|gh|ourg)|red bull salzburg|rb salzbourg",
     "deportivo": r"deportivo la coru[ñn]a|deportivo la corogne",
     "partizanbelgrade": r"partizan belgrad",
+    "redstarbelgrade": r"red star belgrade|roter stern belgrad|estrella roja de belgrado|crvena zvezda|étoile rouge de belgrade|etoile rouge de belgrade",
     "lafc": r"los angeles fc|\blafc\b",
     "cerclebrugge": r"cercle bruges|cercle brugge|cercle de brujas",
+    "salernitana": r"\bsalernitana\b(\s+1919)?",
 }
 
 TYPE_PATTERNS = {
@@ -568,9 +577,12 @@ def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_c
         if is_manually_excluded(r.get(link_col)):
             continue
         team_match = None
+        team_m = None
         for tk, pat in teams.items():
-            if pat.search(title):
+            m = pat.search(title)
+            if m:
                 team_match = tk
+                team_m = m
                 break
         if not team_match:
             continue
@@ -582,7 +594,14 @@ def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_c
         if not type_match:
             continue
         base_title, title_size = split_title_size(title)
-        candidates[(team_match, type_match)].append((base_title, r, is_old_season(title), title_size))
+        # Un club puede traer su propio ano de fundacion en el nombre
+        # oficial ("US Salernitana 1919", mismo caso que "Como 1907" en el
+        # pipeline retro) -- sin enmascarar el nombre del equipo antes de
+        # buscar temporada, ese ano se lee como si fuera una temporada
+        # vieja y el pick se descarta entero. Se busca la temporada fuera
+        # de esa franja, no en el titulo crudo.
+        season_search_title = title[: team_m.start()] + " " + title[team_m.end() :]
+        candidates[(team_match, type_match)].append((base_title, r, is_old_season(season_search_title), title_size))
 
     return candidates, rows
 
@@ -614,9 +633,12 @@ def analyze_kids(csv_path, price_col, size_col=None, title_col="product_name", l
         if not KIDS_SIGNAL_RE.search(title) and not KIDS_AGE_RE.search(size_raw):
             continue
         team_match = None
+        team_m = None
         for tk, pat in teams.items():
-            if pat.search(title):
+            m = pat.search(title)
+            if m:
                 team_match = tk
+                team_m = m
                 break
         if not team_match:
             continue
@@ -628,7 +650,14 @@ def analyze_kids(csv_path, price_col, size_col=None, title_col="product_name", l
         if not type_match:
             continue
         base_title, title_size = split_title_size(title)
-        candidates[(team_match, type_match)].append((base_title, r, is_old_season(title), title_size))
+        # Un club puede traer su propio ano de fundacion en el nombre
+        # oficial ("US Salernitana 1919", mismo caso que "Como 1907" en el
+        # pipeline retro) -- sin enmascarar el nombre del equipo antes de
+        # buscar temporada, ese ano se lee como si fuera una temporada
+        # vieja y el pick se descarta entero. Se busca la temporada fuera
+        # de esa franja, no en el titulo crudo.
+        season_search_title = title[: team_m.start()] + " " + title[team_m.end() :]
+        candidates[(team_match, type_match)].append((base_title, r, is_old_season(season_search_title), title_size))
 
     return candidates, rows
 

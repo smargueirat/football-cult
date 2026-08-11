@@ -76,8 +76,10 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "p=44509578137",
     # DeporteOutlet S.S. Lazio "125 anos" anniversary shirt: white special
     # edition, not the real sky-blue home kit -- same anniversary-edition
-    # class already documented in the README (2026-08-11).
+    # class already documented in the README (2026-08-11). Two separate
+    # aw_product_ids carry this same SKU (MIZP2GABX75) in the feed.
     "p=44084163809",
+    "p=44084163810",
 ]
 
 

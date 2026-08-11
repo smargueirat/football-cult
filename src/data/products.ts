@@ -198,8 +198,10 @@ export type TeamKey =
   | "rbsalzburg"
   | "deportivo"
   | "partizanbelgrade"
+  | "redstarbelgrade"
   | "lafc"
   | "cerclebrugge"
+  | "salernitana"
   | "islandia"
   | "serbia"
   | "qatar"
@@ -801,6 +803,8 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
   rbsalzburg: "club",
   deportivo: "club",
   partizanbelgrade: "club",
+  redstarbelgrade: "club",
+  salernitana: "club",
   lafc: "club",
   cerclebrugge: "club",
   islandia: "national",
@@ -1178,6 +1182,8 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   rbsalzburg: { es: "RB Salzburg", en: "RB Salzburg", pt: "RB Salzburg" },
   deportivo: { es: "Deportivo La Coruña", en: "Deportivo La Coruña", pt: "Deportivo La Coruña" },
   partizanbelgrade: { es: "FK Partizan Belgrado", en: "FK Partizan Belgrade", pt: "FK Partizan Belgrado" },
+  redstarbelgrade: { es: "Estrella Roja de Belgrado", en: "Red Star Belgrade", pt: "Estrela Vermelha de Belgrado" },
+  salernitana: { es: "US Salernitana 1919", en: "US Salernitana 1919", pt: "US Salernitana 1919" },
   lafc: { es: "Los Angeles FC", en: "Los Angeles FC", pt: "Los Angeles FC" },
   cerclebrugge: { es: "Cercle Brugge", en: "Cercle Brugge", pt: "Cercle Brugge" },
   islandia: { es: "Islandia", en: "Iceland", pt: "Islândia" },
@@ -1555,8 +1561,10 @@ export const teamFlags: Record<TeamKey, string> = {
   rbsalzburg: "🔴",
   deportivo: "🔵",
   partizanbelgrade: "⚫",
+  redstarbelgrade: "🔴",
   lafc: "⚫",
   cerclebrugge: "🟢",
+  salernitana: "🟤",
   islandia: "🇮🇸",
   serbia: "🇷🇸",
   qatar: "🇶🇦",
@@ -1933,8 +1941,10 @@ export const teamColors: Record<TeamKey, [string, string]> = {
   rbsalzburg: ["#ED1C24", "#FFFFFF"],
   deportivo: ["#0072CE", "#FFFFFF"],
   partizanbelgrade: ["#000000", "#FFFFFF"],
+  redstarbelgrade: ["#C8102E", "#FFFFFF"],
   lafc: ["#000000", "#C39E6D"],
   cerclebrugge: ["#00A651", "#000000"],
+  salernitana: ["#6B1D2C", "#FFFFFF"],
   islandia: ["#02529C", "#FFFFFF"],
   serbia: ["#C6363C", "#FFFFFF"],
   qatar: ["#8D1B3D", "#FFFFFF"],
@@ -3275,7 +3285,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675770&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de segunda equipación 773346-02", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F23%2Fff%2F49%2F773346-02-19R58HCDP5SNAC_600x600.jpg&feedId=99907&k=202a1412b35ed6aae072b9431dff852e13d5832a" },
+      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675770&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de segunda equipación 773346-02", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F4e%2Ff4%2F773344-01-1neu4eBosddqmE9b3_600x600.jpg&feedId=99907&k=385eb1bb6cd5134e8cbdb7dac98b8231410c4304" },
     ],
   },
 {
@@ -3287,7 +3297,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675767&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de primera equipación 773344-01", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F4e%2Ff4%2F773344-01-1neu4eBosddqmE9b3_600x600.jpg&feedId=99907&k=385eb1bb6cd5134e8cbdb7dac98b8231410c4304" },
+      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675767&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de primera equipación 773344-01", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F23%2Fff%2F49%2F773346-02-19R58HCDP5SNAC_600x600.jpg&feedId=99907&k=202a1412b35ed6aae072b9431dff852e13d5832a" },
     ],
   },
 {
@@ -4254,6 +4264,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267614458696?_skw=Czech+Republic+away+soccer+jersey&hash=item3e4f109348%3Ag%3AzfEAAeSwbq5pvQM4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Czechia Czech Republic National Team Original Jersey Maglia Away 26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/zfEAAeSwbq5pvQM4/s-l225.jpg" },
+      { store: "DeporteOutletES", price: 15.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324660138&a=3013769&m=19598", title: "República Checa PUMA Hombre Camiseta de segunda equipación 756502-03", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F59%2Faa%2F5c%2F756502-03-1_600x600.jpg&feedId=99907&k=555c20fd43f7a7f797e384d466e125bf6e143cce" },
     ],
   },
 {
@@ -24746,6 +24757,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779844-02-maillot-exterieur-om-2025-26-blue", title: "Maillot Extérieur OM 2025/26", inStock: true, sizes: ["S", "L", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779844-02_1.webp" },
       { store: "PlanetFoot", price: 50.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-om-exterieur-homme-2025-26-bleu%3Fvariant%3D51026988499285", title: "Maillot OM Extérieur Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-om-25-26-homme-puma-planetfoot2.webp?v=1755348304" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmarseille-away-soccer-jersey-2025-26%3Fvariant%3D42557170122857", title: "Marseille Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/a31655caaca20ca97b2675a5d9c3c71f.png?v=1758073958" },
+      { store: "DeporteOutletES", price: 45.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41833171828&a=3013769&m=19598", title: "Olympique de Marsella PUMA Authentic Player Issue Hombre Camiseta de segunda equipación 771286-02", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F20%2Fcb%2F12%2F771286-02-1_600x600.jpg&feedId=99907&k=1ac1305cfcfad582c6456b236ca3ecf3e5e2b760" },
     ],
   },
 {
@@ -49012,8 +49024,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 44.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-arsenal-pre-match-homme-2025-26-bleu%3Fvariant%3D50745744228693", title: "Maillot Arsenal Pre-match Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/Maillot_Arsenal_Pre-match_Homme_2025_26_Bleu.jpg?v=1747315044" },
-      { store: "SportIsGoodES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44756303985&a=3013769&m=65906", title: "Camisa Prematch Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kc0011_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=00f89bc27ffffe67622701cd3813c3f1766bdff4" },
-      { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf2563-maillot-prematch-arsenal-2026-27-blefon", title: "Maillot Prematch Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kf2563-blefon-6a68dbb6db230-1.webp" },
     ],
   },
 {
@@ -49227,10 +49237,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fajax-pre-match-soccer-jersey-2025-26-colorful%3Fvariant%3D42799236022377", title: "Ajax Pre-Match Soccer Jersey 2025/26 Colorful", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Ajax_Pre-Match_Soccer_Jersey_202526_Colorful_1__2_1.webp?v=1767928964" },
-      { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45229569232&a=3013769&m=65912", title: "Maillot Prematch Ajax Amsterdam 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kc1877-rouecl-6a58bf46eb3cd-1.webp&feedId=89032&k=7cd72f5b613f388e4637d088e827b7e1a015ffb9" },
-      { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc1877-maillot-prematch-ajax-amsterdam-2026-27-rouecl", title: "Maillot Prematch Ajax Amsterdam 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kc1877-rouecl-6a58bf46eb3cd-1.webp" },
-      { store: "SportIsGoodES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45227109221&a=3013769&m=65906", title: "Maillot Prematch Ajax Amsterdam 2026/27", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kc1877-rouecl-6a58bf46eb3cd-1.webp&feedId=89044&k=7cd72f5b613f388e4637d088e827b7e1a015ffb9" },
-      { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc1877-maillot-prematch-ajax-amsterdam-2026-27-rouecl", title: "Maillot Prematch Ajax Amsterdam 2026/27", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kc1877-rouecl-6a58bf46eb3cd-1.webp" },
     ],
   },
 {
@@ -49269,10 +49275,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-pre-match-soccer-jersey-202526-red-white%3Fvariant%3D42799249981545", title: "Bayern Munich Pre-Match Soccer Jersey 202526 Red&White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Bayern_Munich_Pre-Match_Soccer_Jersey_202526_Red_White_2__1.webp?v=1767930121" },
       { store: "eBay", price: 33.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/205955321169?_skw=Bayern+Munich+pre-match+soccer+jersey&hash=item2ff3e4cd51%3Ag%3AP-gAAeSw1oBpUbFA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas FC Bayern Munich 25/26 Pre-Match Jersey Men’s Size Small New", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/P-gAAeSw1oBpUbFA/s-l225.jpg" },
-      { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43348644675&a=3013769&m=65912", title: "Camiseta Prematch Bayern Munich 2025/26", inStock: true, sizes: ["XS", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jz6260-nobink-hirblu-chapea-1.webp&feedId=89032&k=a9a91979a6dcb9f8eb726dd59f737e55bb8ea60c" },
-      { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6260-maillot-prematch-bayern-munich-2025-26-nobink-hirblu-chapea", title: "Maillot Prematch Bayern Munich 2025/26", inStock: true, sizes: ["XS", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jz6260-nobink-hirblu-chapea-1.webp" },
     ],
   },
 {
@@ -49325,10 +49328,7 @@ const productsData = [
     colorHexSecondary: "#F6EB61",
     jerseyPattern: "solid",
     offers: [
-      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-pre-match-soccer-jersey-202526-black%3Fvariant%3D42800386605161", title: "Liverpool Pre-Match Soccer Jersey 2025/26 Black", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Liverpool_Pre-Match_Soccer_Jersey_202526_Black_2__1.webp?v=1767937955" },
       { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406938269234?_skw=Liverpool+pre-match+soccer+jersey&hash=item5ebf693632%3Ag%3AlWYAAeSwNBlqDSnT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Liverpool Men's Pre-Match Soccer Jersey Medium NWT YNWA Reds ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lWYAAeSwNBlqDSnT/s-l225.jpg" },
-      { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-liverpool-fc-2026-homme-noir%3Fvariant%3D53957472649557", title: "Maillot Pré-Match Liverpool FC 2026 Homme - Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-liverpool-fc-2025-2026-homme-noir-aeroready-kb1447-1.avif?v=1784727997" },
-      { store: "BSTNIT", price: 41.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42468059689&a=3013769&m=104981", title: "LIVERPOOL FC 25/26 PRE MATCH JERSEY", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-liverpool-fc-preshi-jv9013-0328688%2FJV9013%2FJV9013-01.jpg&feedId=99415&k=6679aac0f929b3daa769a04e6cb1da8867b49ae7" },
     ],
   },
 {
@@ -49493,20 +49493,6 @@ const productsData = [
     ],
   },
 {
-    id: "benfica-prematch-202526",
-    teamKey: "benfica",
-    season: "2025/26",
-    typeKey: "prematch",
-    colorHex: "#E30613",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "FootStoreES", price: 58.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42530017866&a=3013769&m=65912", title: "Camiseta Prematch Benfica Lisboa 2025/26", inStock: true, sizes: ["M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl7937_black_1.webp&feedId=89032&k=1c64b16d9b8011b91d997b678aae6895b9f76c74" },
-      { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45183913448&a=3013769&m=77026", title: "SL Benfica Pre-Match Jersey", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7b51031fa2f04053896736f69adf05e8_9366%2FSL_Benfica_Pre-Match_Jersey_Vermelho_KL8682_21_model.jpg&feedId=92150&k=11f466ac0c03b438a6a185d109feadafc7be0bde" },
-      { store: "FootStoreFR", price: 48.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl7937-t-shirt-prematch-benfica-lisbonne-2025-26-black", title: "T-shirt Prematch Benfica Lisbonne 2025/26", inStock: true, sizes: ["M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl7937_black_1.webp" },
-    ],
-  },
-{
     id: "brasil-prematch-2026",
     teamKey: "brasil",
     season: "2026",
@@ -49543,11 +49529,7 @@ const productsData = [
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
     offers: [
-      { store: "FootStoreES", price: 56.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43362488433&a=3013769&m=65912", title: "Camiseta Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka6419_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=9f0badb14460518c71ab0a8eca43671197828780" },
       { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389802054401?_skw=Manchester+United+pre-match+soccer+jersey&hash=item5ac2035301%3Ag%3AMi0AAeSw28ppxSo8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United FC 2025/26 Puma Pre Match Training Soccer Jersey Mens M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Mi0AAeSw28ppxSo8/s-l225.jpg" },
-      { store: "FootStoreFR", price: 56.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka6419-maillot-prematch-manchester-united-2025-26-black", title: "Maillot Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka6419_1_apparel_photography_front_center_view_white.webp" },
-      { store: "SportIsGoodES", price: 56.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45131352849&a=3013769&m=65906", title: "Camiseta Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka6419_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9f0badb14460518c71ab0a8eca43671197828780" },
-      { store: "SportIsGoodFR", price: 56.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fka6419-maillot-prematch-manchester-united-2025-26-black", title: "Maillot Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka6419_1_apparel_photography_front_center_view_white.webp" },
     ],
   },
 {
@@ -49812,9 +49794,7 @@ const productsData = [
     colorHexSecondary: "#8FB8E8",
     jerseyPattern: "solid",
     offers: [
-      { store: "FootStoreFR", price: 38.5, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4155-maillot-real-madrid-preshi-2025-26-blubir", title: "Maillot Prematch Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jp4155_3_apparel_on_model_standard_view_white.jpg" },
       { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117320619506?_skw=Real+Madrid+pre-match+soccer+jersey&hash=item1b50da95f2%3Ag%3AalUAAeSwPGtqY9d6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYV0p6FhhSFpmLnTjs3thsZHSc51m6qDSRUiUxELXI0IA3DF76ReeoTEbG4%2BQAjST%2B3mOzjeVxgpLIgW5Y9l%2FJoK2Eut3msR8uktH6Pm%2BURJ9T1ZpaTpUnFkD5vfXB7BnSH5MtbHnxhnuBkAJ4uQt6DrtQ3dFUvkP9D3ihB3Jvm3E3x5eEJkrQJeqAI8rv%2FhYwc6vk7%2B6fCzQt9Nr%2FRM53V2o0eL5xrTAswkIgRKt9ooWoOM%2BKX2VbMBESw1FaNX8oLDyhBc1rIIPIXFIJosGTrLCK%2Bc385Qs2IsVvgMJEhP%2FCPKFaFNFllgCsDJnrOYgg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Real Madrid 2025/26 Pre-Match Football Jersey Number 9", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/alUAAeSwPGtqY9d6/s-l225.jpg" },
-      { store: "SportIsGoodFR", price: 38.5, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp4155-maillot-real-madrid-preshi-2025-26-blubir", title: "Maillot Prematch Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jp4155_3_apparel_on_model_standard_view_white.jpg" },
     ],
   },
 {
@@ -50130,6 +50110,42 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fipswich-town-home-soccer-jersey-2025-26%3Fvariant%3D42557149249641", title: "Ipswich Town Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/03c37c068f61aab48244118c27313b0f.png?v=1758073784" },
+    ],
+  },
+{
+    id: "fcbasel-goalkeeper-202526",
+    teamKey: "fcbasel",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#ED1C24",
+    colorHexSecondary: "#002F6C",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "DeporteOutletES", price: 19.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44540974979&a=3013769&m=19598", title: "FC Basilea macron Hombre Camiseta de portero 60002634", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F1b%2Fb8%2F07%2F60002634-1_600x600.jpg&feedId=99907&k=e180cbd11bbcc0a2674eadc06931314fddebf9b6" },
+    ],
+  },
+{
+    id: "redstarbelgrade-goalkeeper-202526",
+    teamKey: "redstarbelgrade",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#C8102E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "DeporteOutletES", price: 29.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43765341584&a=3013769&m=19598", title: "Roter Stern Belgrad macron Hombre Camiseta de portero 58580718", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F74%2Ffb%2Fe3%2F58580718-1_600x600.jpg&feedId=99907&k=15a927e5d4a878d140ec5b68d3066be6ccd682cb" },
+    ],
+  },
+{
+    id: "salernitana-away-202526",
+    teamKey: "salernitana",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#6B1D2C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "DeporteOutletES", price: 19.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41638451684&a=3013769&m=19598", title: "US Salernitana 1919 Zeus Hombre Camiseta de segunda equipación blanco", inStock: true, sizes: ["XS", "S", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fef%2F12%2F20%2F181620-1_600x600.jpg&feedId=99907&k=9332cd2c4498a3891ef58c97e85460b8f1837cee" },
     ],
   },
 ];

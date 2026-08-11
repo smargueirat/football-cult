@@ -59,6 +59,12 @@ def pick_best(csv_path, price_col="search_price", size_col="custom_1", link_col=
         rep_row = None
         for r, title_size in variant_rows:
             sz = (r.get(size_col) or "").strip().upper() or (title_size or "")
+            # DeporteOutlet mixes bare sizes ("M") with a "Talla:M" prefixed
+            # form in the same size_stock_status column (~16% of its rows) --
+            # found 2026-08-11 while a real jersey (Czech Republic, Salernitana)
+            # was silently getting zero sizes and dropped entirely.
+            if sz.startswith("TALLA:"):
+                sz = sz[len("TALLA:"):].strip()
             if sz in SIZE_MAP:
                 sizes.add(SIZE_MAP[sz])
                 if rep_row is None or SIZE_MAP[sz] == "M":
