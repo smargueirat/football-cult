@@ -361,8 +361,12 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               {offer.store.charAt(0)}
                             </span>
                             <div>
-                              <p className="flex flex-wrap items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
-                                {offer.store}
+                              <p className="text-sm font-medium text-[#1a1a1a]">{offer.store}</p>
+                              {/* Fila de badges con altura reservada fija -- así todas
+                                  las ofertas guardan el mismo ritmo vertical, tengan o
+                                  no badge, en vez de que el nombre de la tienda salte
+                                  de línea distinto según cuántos badges le tocaron. */}
+                              <div className="flex min-h-[20px] flex-wrap items-center gap-1.5">
                                 {isBest && (
                                   <span className="rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
                                     {t.detail.bestPriceBadge}
@@ -373,7 +377,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                     {t.detail.replicaBadge}
                                   </span>
                                 )}
-                              </p>
+                              </div>
                               <p className="text-xs text-[#a8926a]">
                                 {offer.title ? translateTitleVocabulary(offer.title, locale) : `${team} ${type}`}
                               </p>
