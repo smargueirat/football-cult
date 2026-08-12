@@ -26,7 +26,7 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { CATALOG_PAGE_SIZE, useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { useCountry } from "@/lib/country/CountryContext";
-import ProductCard from "./ProductCard";
+import ProductCard from "./ProductCard3D";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
