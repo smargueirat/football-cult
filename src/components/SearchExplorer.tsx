@@ -15,6 +15,7 @@ import {
   getAgeGroup,
   offerTotalInEUR,
   products,
+  isVintageRetro,
   seasonSortValue,
   shipsToCountry,
   teamCategory,
@@ -132,14 +133,22 @@ export default function SearchExplorer() {
         queryWords.length === 0
           ? true
           : (() => {
+              // La palabra "retro" (nuestra categoría interna, no el título
+              // real de la tienda) solo entra al haystack cuando la prenda
+              // es vintage de verdad -- si no, buscar "retro" traería
+              // reediciones modernas etiquetadas typeKey:"retro" por error
+              // de la minería. El título real de la oferta (offer.title)
+              // sigue intacto siempre, diga lo que diga la tienda.
+              const typeWords =
+                p.typeKey === "retro" && !isVintageRetro(p)
+                  ? []
+                  : [typeNames[p.typeKey].es, typeNames[p.typeKey].en, typeNames[p.typeKey].pt];
               const haystack = normalizeSearchText(
                 [
                   teamNames[p.teamKey].es,
                   teamNames[p.teamKey].en,
                   teamNames[p.teamKey].pt,
-                  typeNames[p.typeKey].es,
-                  typeNames[p.typeKey].en,
-                  typeNames[p.typeKey].pt,
+                  ...typeWords,
                   p.season,
                   ...p.offers.map((o) => o.title ?? ""),
                 ].join(" ")
