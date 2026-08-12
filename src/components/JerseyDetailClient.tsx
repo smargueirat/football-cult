@@ -236,7 +236,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div className="min-w-0">
-              <h1 className="font-card-title text-2xl text-[#1a1a1a] sm:text-3xl lg:text-4xl">
+              <h1 className="font-card-title text-xl leading-tight text-[#1a1a1a] sm:text-2xl lg:text-3xl">
                 {displayName}
               </h1>
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
