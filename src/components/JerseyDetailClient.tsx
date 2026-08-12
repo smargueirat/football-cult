@@ -433,7 +433,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               {offer.store.charAt(0)}
                             </span>
                             <div>
-                              <p className="text-sm font-medium text-[#1a1a1a]">{offer.store}</p>
+                              <p className="font-card-title text-base tracking-wide text-[#1B3B2B]">{offer.store}</p>
                               {/* Fila de badges con altura reservada fija -- así todas
                                   las ofertas guardan el mismo ritmo vertical, tengan o
                                   no badge, en vez de que el nombre de la tienda salte
@@ -517,7 +517,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               rel="noopener noreferrer sponsored"
                               className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                             >
-                              {`${t.detail.viewInStore} ${offer.store}`}
+                              {t.detail.viewInStore}
                               <svg
                                 className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5"
                                 fill="none"
