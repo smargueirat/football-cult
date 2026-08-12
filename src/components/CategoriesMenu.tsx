@@ -93,7 +93,7 @@ export default function CategoriesMenu() {
               className="block w-full rounded-xl px-4 py-3 text-left transition-colors hover:bg-black/[0.03]"
             >
               <p className="text-sm font-medium text-[#1a1a1a]">{item.label}</p>
-              <p className="text-xs text-[#8a7a5a]">{item.desc}</p>
+              <p className="text-xs text-[#675c44]">{item.desc}</p>
             </button>
           ))}
           <button
@@ -101,7 +101,7 @@ export default function CategoriesMenu() {
             className="block w-full rounded-xl px-4 py-3 text-left transition-colors hover:bg-black/[0.03]"
           >
             <p className="text-sm font-medium text-[#1a1a1a]">{t.categoriesMenu.retro}</p>
-            <p className="text-xs text-[#8a7a5a]">{t.categoriesMenu.retroDesc}</p>
+            <p className="text-xs text-[#675c44]">{t.categoriesMenu.retroDesc}</p>
           </button>
         </div>
       )}

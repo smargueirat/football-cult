@@ -13,8 +13,8 @@ export default function Chip({
 }) {
   const activeClasses =
     accent === "green"
-      ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9] shadow-sm"
-      : "border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] text-[#2A2410] shadow-sm";
+      ? "shadow-vintage-sm border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+      : "shadow-vintage-sm border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] text-[#2A2410]";
 
   return (
     <button

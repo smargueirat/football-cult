@@ -18,6 +18,22 @@ body {
   font-feature-settings: "tnum" 1;
 }
 
+/* Ningún hover/transición del sitio (lift de tarjetas, shimmer del
+   skeleton, scale de fotos, etc.) respetaba antes esta preferencia del
+   sistema operativo. No saca los estados (el hover sigue cambiando algo),
+   solo los hace instantáneos en vez de animados -- el patrón estándar
+   para esto, sin tener que tocar cada transition-* uno por uno. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 .glass-panel {
   background: rgba(255, 253, 246, 0.82);
   backdrop-filter: blur(8px);
@@ -60,7 +76,49 @@ body {
   opacity: 0.8;
 }
 
+/* Reflector de estadio cálido barriendo lento por el hero -- misma idea
+   detrás de un "spotlight" de UI moderna (glow que atraviesa la sección),
+   pero en dorado sobre crema en vez de blanco sobre negro, y evocando un
+   estadio/vitrina de trofeos en vez de un efecto de fondo genérico. Muy
+   sutil a propósito: nunca debe competir con el texto del hero.
+   prefers-reduced-motion ya lo congela por la regla global de arriba. */
+.vintage-floodlight {
+  background: radial-gradient(
+    ellipse 55% 130% at 50% 0%,
+    rgba(231, 197, 103, 0.45) 0%,
+    transparent 65%
+  );
+  filter: blur(3px);
+  animation: floodlight-sweep 16s ease-in-out infinite;
+}
+
+@keyframes floodlight-sweep {
+  0%,
+  100% {
+    transform: translateX(-32%);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateX(32%);
+    opacity: 1;
+  }
+}
+
 /* --- Sistema vintage: tarjetas, plaquetas, texturas --- */
+
+/* Sombras difuminadas de baja opacidad en tono cálido, en vez de los
+   shadow-sm/md/lg genéricos de Tailwind -- mismo tono/receta que ya usa
+   .vintage-card, en tres intensidades para reusar en badges, botones
+   flotantes y el hover de las tarjetas. */
+.shadow-vintage-sm {
+  box-shadow: 0 3px 8px -3px rgba(43, 32, 10, 0.28);
+}
+.shadow-vintage-md {
+  box-shadow: 0 8px 18px -8px rgba(43, 32, 10, 0.32);
+}
+.shadow-vintage-lg {
+  box-shadow: 0 16px 32px -14px rgba(43, 32, 10, 0.38);
+}
 
 .vintage-card {
   background: linear-gradient(175deg, #fffdf8, #f6efdd);
@@ -69,6 +127,14 @@ body {
     inset 0 0 0 1px rgba(255, 255, 255, 0.6),
     inset 0 0 0 4px rgba(180, 146, 63, 0.08),
     0 10px 24px -14px rgba(43, 32, 10, 0.35);
+  transition: box-shadow 200ms ease-out;
+}
+
+.vintage-card:hover {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    inset 0 0 0 4px rgba(180, 146, 63, 0.08),
+    0 18px 34px -14px rgba(43, 32, 10, 0.42);
 }
 
 .vintage-plaque {
@@ -132,22 +198,3 @@ body {
   letter-spacing: 0.01em;
 }
 
-.skeleton-shimmer {
-  background: linear-gradient(
-    100deg,
-    rgba(180, 146, 63, 0.08) 30%,
-    rgba(180, 146, 63, 0.18) 50%,
-    rgba(180, 146, 63, 0.08) 70%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.4s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}

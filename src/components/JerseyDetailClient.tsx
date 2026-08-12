@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
@@ -24,6 +23,7 @@ import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
+import JerseySkeleton from "./JerseySkeleton";
 import ReportProductModal from "./ReportProductModal";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -124,7 +124,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             <button
               onClick={() => toggleFavorite(product.id)}
               aria-label={t.nav.favorites}
-              className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+              className="shadow-vintage-sm absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
             >
               <svg
                 className="h-4 w-4"
@@ -143,17 +143,21 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             {photo ? (
               <>
                 {!imageLoaded && (
-                  <div className="skeleton-shimmer absolute inset-0" aria-hidden />
+                  <JerseySkeleton className="absolute inset-0 h-full w-full" />
                 )}
-                <Image
+                {/* <img> nativo (ver nota en ProductCard.tsx): mismo motivo,
+                    srcSet real en vez de bajar siempre el archivo de 1000px
+                    incluso en celular. fetchPriority reemplaza el
+                    `priority` de next/image para que siga cargando eager,
+                    sin lazy, al ser la foto principal sobre el pliegue. */}
+                <img
                   src={getDisplaySrc(photo, 1000)}
-                  alt={displayName}
-                  fill
-                  priority
+                  srcSet={`${getDisplaySrc(photo, 500)} 500w, ${getDisplaySrc(photo, 800)} 800w, ${getDisplaySrc(photo, 1200)} 1200w`}
                   sizes="(max-width: 1024px) 90vw, 45vw"
-                  unoptimized
+                  alt={displayName}
+                  fetchPriority="high"
                   onLoad={() => setImageLoaded(true)}
-                  className={`object-contain drop-shadow-sm transition-opacity duration-300 ${
+                  className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
                     imageLoaded ? "opacity-100" : "opacity-0"
                   }`}
                 />
@@ -181,7 +185,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
               <h1 className="font-card-title text-2xl text-[#1a1a1a] sm:text-3xl lg:text-4xl">
                 {displayName}
               </h1>
-              <p className="mt-1 flex items-center gap-1.5 text-sm text-[#8a7a5a]">
+              <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
                 <span>{country.flag}</span>
                 {t.detail.storesCompared.replace("{n}", String(shippableCount))}
               </p>
@@ -239,7 +243,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
           </div>
 
           {shippableCount === 0 ? (
-            <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#8a7a5a]">
+            <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#675c44]">
               {t.countryPanel.notAvailable}
             </p>
           ) : (
@@ -324,7 +328,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                   {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
                                 </p>
                               ) : (
-                                <p className="text-xs text-[#8a7a5a]">
+                                <p className="text-xs text-[#675c44]">
                                   {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
                                 </p>
                               )}
@@ -370,7 +374,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
 
                         {!ships && (
                           <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-[#f5f0e0]/75">
-                            <span className="-rotate-6 rounded border-2 border-[#8a7a5a]/60 bg-[#fffdf8] px-4 py-1.5 text-center text-xs font-bold uppercase tracking-widest text-[#8a7a5a] shadow-sm">
+                            <span className="shadow-vintage-sm -rotate-6 rounded border-2 border-[#675c44]/60 bg-[#fffdf8] px-4 py-1.5 text-center text-xs font-bold uppercase tracking-widest text-[#675c44]">
                               {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
                             </span>
                           </div>

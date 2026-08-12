@@ -75,7 +75,7 @@ export default function ReportProductModal({
               <h2 className="font-card-title text-xl text-[#1a1a1a]">
                 {t.reportProduct.modalTitle}
               </h2>
-              <p className="mt-1 text-sm text-[#8a7a5a]">{t.reportProduct.modalIntro}</p>
+              <p className="mt-1 text-sm text-[#675c44]">{t.reportProduct.modalIntro}</p>
             </div>
 
             <div>
@@ -116,7 +116,7 @@ export default function ReportProductModal({
                 placeholder={t.reportProduct.detailsPlaceholder}
                 rows={3}
                 maxLength={2000}
-                className="w-full rounded-xl border border-[#C9A24B]/25 bg-white/60 p-3 text-sm text-[#1a1a1a] outline-none focus:border-[#1B3B2B]/50"
+                className="w-full rounded-xl border border-[#C9A24B]/25 bg-white/60 p-3 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/50 focus:ring-2 focus:ring-[#1B3B2B]/10"
               />
             </div>
 

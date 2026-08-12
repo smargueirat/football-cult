@@ -14,6 +14,7 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 sm:pt-6">
           <div className="vintage-banner relative flex flex-col items-center gap-1 overflow-hidden rounded-2xl px-6 py-4 text-center sm:gap-1.5 sm:rounded-3xl sm:px-10 sm:py-5">
             <div className="vintage-banner-rays absolute inset-0" aria-hidden />
+            <div className="vintage-floodlight pointer-events-none absolute inset-0" aria-hidden />
             <span className="font-tagline relative text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
               {t.hero.eyebrow}
             </span>
@@ -25,7 +26,7 @@ export default function Home() {
             </p>
             <a
               href="#catalogo"
-              className="relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] shadow-md transition-transform hover:scale-[1.03] sm:text-xs"
+              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:text-xs"
             >
               {t.hero.cta}
               <span aria-hidden>→</span>

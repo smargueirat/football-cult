@@ -44,7 +44,7 @@ export default function FloatingFilterButton() {
           {activeFilterCount > 0 && (
             <button
               onClick={clearAllFilters}
-              className="self-start text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+              className="self-start text-xs font-medium text-[#675c44] transition-colors hover:text-[#1a1a1a]"
             >
               {t.search.clearFilters}
             </button>
@@ -127,7 +127,7 @@ export default function FloatingFilterButton() {
 
       <button
         onClick={() => setOpen((o) => !o)}
-        className="glass-panel relative flex h-12 w-12 items-center justify-center rounded-full border border-black/[0.08] text-[#1a1a1a] shadow-lg transition-transform hover:scale-105"
+        className="glass-panel shadow-vintage-md relative flex h-12 w-12 items-center justify-center rounded-full border border-black/[0.08] text-[#1a1a1a] transition-transform hover:scale-105"
         aria-label={t.search.typeLabel}
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

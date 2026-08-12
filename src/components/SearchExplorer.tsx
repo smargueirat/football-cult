@@ -287,7 +287,7 @@ export default function SearchExplorer() {
               <button
                 onClick={() => setQuery("")}
                 aria-label={t.search.clearAria}
-                className="absolute right-3 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-[#8a7a5a] transition-colors hover:bg-black/[0.05] hover:text-[#1a1a1a]"
+                className="absolute right-3 top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full text-[#675c44] transition-colors hover:bg-black/[0.05] hover:text-[#1a1a1a]"
               >
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
                   <path
@@ -341,7 +341,7 @@ export default function SearchExplorer() {
         {activeFilterCount > 0 && (
           <button
             onClick={clearAllFilters}
-            className="flex items-center gap-1.5 self-start text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+            className="flex items-center gap-1.5 self-start text-xs font-medium text-[#675c44] transition-colors hover:text-[#1a1a1a]"
           >
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -362,7 +362,7 @@ export default function SearchExplorer() {
         </p>
       ) : (
         <>
-          <p className="text-xs text-[#8a7a5a]">
+          <p className="text-xs text-[#675c44]">
             {t.search.resultsCount.replace("{n}", String(results.length))}
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
@@ -396,7 +396,7 @@ export default function SearchExplorer() {
                 {activeFilterCount > 0 && (
                   <button
                     onClick={clearAllFilters}
-                    className="text-xs font-medium text-[#8a7a5a] transition-colors hover:text-[#1a1a1a]"
+                    className="text-xs font-medium text-[#675c44] transition-colors hover:text-[#1a1a1a]"
                   >
                     {t.search.clearFilters}
                   </button>
@@ -404,7 +404,7 @@ export default function SearchExplorer() {
                 <button
                   onClick={() => setFiltersOpen(false)}
                   aria-label={t.search.clearAria}
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-[#8a7a5a] hover:bg-black/[0.05] hover:text-[#1a1a1a]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full text-[#675c44] hover:bg-black/[0.05] hover:text-[#1a1a1a]"
                 >
                   <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
                     <path
@@ -420,7 +420,7 @@ export default function SearchExplorer() {
 
             <div className="flex flex-col gap-5 overflow-y-auto px-5 py-5">
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.search.quickSelectLabel}:</span>
+                <span className="text-xs text-[#675c44]">{t.search.quickSelectLabel}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   {QUICK_PICK_TEAMS.map((key) => {
                     const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
@@ -444,7 +444,7 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.nav.categories}:</span>
+                <span className="text-xs text-[#675c44]">{t.nav.categories}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <Chip
                     active={categoryFilter.length === 0}
@@ -474,7 +474,7 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.search.typeLabel}:</span>
+                <span className="text-xs text-[#675c44]">{t.search.typeLabel}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <Chip
                     active={typeFilter.length === 0}
@@ -497,7 +497,7 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.search.brandLabel}:</span>
+                <span className="text-xs text-[#675c44]">{t.search.brandLabel}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <Chip
                     active={brandFilter.length === 0}
@@ -520,7 +520,7 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.search.sizeLabel}:</span>
+                <span className="text-xs text-[#675c44]">{t.search.sizeLabel}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <Chip
                     active={sizeFilter.length === 0}
@@ -543,7 +543,7 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.search.seasonLabel}:</span>
+                <span className="text-xs text-[#675c44]">{t.search.seasonLabel}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <Chip
                     active={seasonFilter.length === 0}
@@ -566,7 +566,7 @@ export default function SearchExplorer() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#8a7a5a]">{t.search.ageGroupLabel}:</span>
+                <span className="text-xs text-[#675c44]">{t.search.ageGroupLabel}:</span>
                 <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                   <Chip
                     active={ageGroupFilter.length === 0}
@@ -617,7 +617,7 @@ export default function SearchExplorer() {
               <button
                 onClick={() => setSortOpen(false)}
                 aria-label={t.search.clearAria}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-[#8a7a5a] hover:bg-black/[0.05] hover:text-[#1a1a1a]"
+                className="flex h-11 w-11 items-center justify-center rounded-full text-[#675c44] hover:bg-black/[0.05] hover:text-[#1a1a1a]"
               >
                 <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
                   <path

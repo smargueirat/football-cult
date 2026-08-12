@@ -61,6 +61,10 @@ export interface Translations {
     subtitle: string;
     cta: string;
   };
+  featured: {
+    eyebrow: string;
+    title: string;
+  };
   steps: {
     title1: string;
     text1: string;
@@ -269,11 +273,15 @@ export const translations: Record<Locale, Translations> = {
       soon: "Próximamente",
     },
     hero: {
-      eyebrow: "Descubrí tu herencia futbolera",
-      title: "Explorá nuestro archivo",
+      eyebrow: "Tu vitrina futbolera, en un solo lugar",
+      title: "El catálogo del hincha",
       subtitle:
         "Comparamos precios de camisetas de selecciones, clubes y ligas de todo el mundo. Vos comprás directo donde quieras.",
       cta: "Ver catálogo",
+    },
+    featured: {
+      eyebrow: "Joyas del catálogo",
+      title: "Camisetas destacadas",
     },
     steps: {
       title1: "Buscá",
@@ -490,11 +498,15 @@ export const translations: Record<Locale, Translations> = {
       soon: "Em breve",
     },
     hero: {
-      eyebrow: "Descubra sua herança futebolística",
-      title: "Explore nosso arquivo",
+      eyebrow: "Sua vitrine do futebol, em um só lugar",
+      title: "O catálogo do torcedor",
       subtitle:
         "Comparamos preços de camisas de seleções, clubes e ligas do mundo todo. Você compra direto onde quiser.",
       cta: "Ver catálogo",
+    },
+    featured: {
+      eyebrow: "Joias do catálogo",
+      title: "Camisas em destaque",
     },
     steps: {
       title1: "Busque",
@@ -711,11 +723,15 @@ export const translations: Record<Locale, Translations> = {
       soon: "Coming soon",
     },
     hero: {
-      eyebrow: "Discover your football heritage",
-      title: "Explore our archive",
+      eyebrow: "Football heritage, all in one place",
+      title: "The collector's catalog",
       subtitle:
         "We compare prices on national team, club, and league jerseys from all over the world. You buy directly wherever you want.",
       cta: "Shop now",
+    },
+    featured: {
+      eyebrow: "Catalog gems",
+      title: "Featured jerseys",
     },
     steps: {
       title1: "Search",

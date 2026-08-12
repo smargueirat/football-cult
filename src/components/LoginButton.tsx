@@ -17,16 +17,19 @@ export default function LoginButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.login}
-        className="relative flex h-8 w-8 items-center justify-center overflow-hidden rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+        className="relative flex h-8 w-8 items-center justify-center rounded-full text-[#1a1a1a] transition-colors before:absolute before:-inset-1.5 before:content-[''] hover:bg-[#C9A24B]/10 sm:h-9 sm:w-9"
       >
         {session?.user?.image ? (
-          <Image
-            src={session.user.image}
-            alt={session.user.name ?? ""}
-            fill
-            sizes="36px"
-            className="object-cover"
-          />
+          <span className="absolute inset-0 overflow-hidden rounded-full">
+            <Image
+              src={session.user.image}
+              alt={session.user.name ?? ""}
+              fill
+              sizes="36px"
+              unoptimized
+              className="object-cover"
+            />
+          </span>
         ) : (
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
@@ -45,7 +48,7 @@ export default function LoginButton() {
           <div className="solid-panel fixed right-3 top-14 z-50 w-64 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[#C9A24B]/25 p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
             {status === "authenticated" && session.user ? (
               <>
-                <p className="text-xs text-[#8a7a5a]">{t.loginPanel.signedInAs}</p>
+                <p className="text-xs text-[#675c44]">{t.loginPanel.signedInAs}</p>
                 <p className="mt-0.5 truncate text-sm font-medium text-[#1a1a1a]">
                   {session.user.name ?? session.user.email}
                 </p>
@@ -59,7 +62,7 @@ export default function LoginButton() {
             ) : (
               <>
                 <p className="text-sm font-medium text-[#1a1a1a]">{t.loginPanel.title}</p>
-                <p className="mt-1 text-xs text-[#8a7a5a]">{t.loginPanel.text}</p>
+                <p className="mt-1 text-xs text-[#675c44]">{t.loginPanel.text}</p>
                 <div className="mt-3">
                   <SignInOptions />
                 </div>

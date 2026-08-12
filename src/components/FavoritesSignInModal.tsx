@@ -20,7 +20,7 @@ export default function FavoritesSignInModal({ onClose }: { onClose: () => void 
           <h2 className="font-card-title text-xl text-[#1a1a1a]">
             {t.loginPanel.favoritesGateTitle}
           </h2>
-          <p className="mt-1 text-sm text-[#8a7a5a]">{t.loginPanel.favoritesGateText}</p>
+          <p className="mt-1 text-sm text-[#675c44]">{t.loginPanel.favoritesGateText}</p>
           <div className="mt-4">
             <SignInOptions />
           </div>

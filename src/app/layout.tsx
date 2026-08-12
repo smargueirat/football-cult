@@ -29,10 +29,26 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
 });
 
+const SITE_TITLE = "Football Cult — Comparador de precios de camisetas de fútbol";
+const SITE_DESCRIPTION =
+  "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.";
+
 export const metadata: Metadata = {
-  title: "Football Cult — Comparador de precios de camisetas de fútbol",
-  description:
-    "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.",
+  metadataBase: new URL("https://www.football-cult.com"),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    siteName: "Football Cult",
+    type: "website",
+    locale: "es_ES",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
@@ -58,6 +74,13 @@ export default function RootLayout({
           >)}
         />
         <meta name="verify-admitad" content="2666c15826" />
+        {/* Ahorra el DNS+TLS de la primera foto de cada dominio en vez de
+            pagarlo recién cuando el navegador la pide -- estos tres son
+            los que más se repiten en el catálogo (eBay, el proxy de Awin,
+            y wsrv.nl para las fuentes que no vienen ya achicadas). */}
+        <link rel="preconnect" href="https://i.ebayimg.com" />
+        <link rel="preconnect" href="https://images2.productserve.com" />
+        <link rel="preconnect" href="https://wsrv.nl" />
       </head>
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
         <StadiumWatermark />

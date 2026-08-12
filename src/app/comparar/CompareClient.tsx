@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import {
   Product,
   bestOffer,
@@ -36,7 +35,7 @@ export default function CompareClient() {
         {products.length > 0 && (
           <button
             onClick={clearCompare}
-            className="text-sm text-[#8a7a5a] hover:text-[#1a1a1a]"
+            className="text-sm text-[#675c44] hover:text-[#1a1a1a]"
           >
             {t.compare.clearAll}
           </button>
@@ -45,7 +44,7 @@ export default function CompareClient() {
 
       {products.length === 0 ? (
         <div className="glass-panel flex flex-col items-center gap-4 rounded-3xl border border-[#C9A24B]/25 p-10 text-center">
-          <p className="text-[#8a7a5a]">{t.compare.empty}</p>
+          <p className="text-[#675c44]">{t.compare.empty}</p>
           <Link
             href="/"
             className="rounded-full bg-[#1F6F4C] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#18573c]"
@@ -72,13 +71,13 @@ export default function CompareClient() {
                   }}
                 >
                   {photo ? (
-                    <Image
+                    <img
                       src={getDisplaySrc(photo, 700)}
-                      alt={displayName}
-                      fill
+                      srcSet={`${getDisplaySrc(photo, 350)} 350w, ${getDisplaySrc(photo, 600)} 600w, ${getDisplaySrc(photo, 900)} 900w`}
                       sizes="(max-width: 640px) 90vw, 30vw"
-                      unoptimized
-                      className="object-contain"
+                      alt={displayName}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-contain"
                     />
                   ) : (
                     <JerseyIcon
@@ -91,7 +90,7 @@ export default function CompareClient() {
                   <button
                     onClick={() => toggleCompare(product.id)}
                     aria-label={t.compare.remove}
-                    className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#8a7a5a] hover:text-[#1a1a1a]"
+                    className="absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#675c44] hover:text-[#1a1a1a]"
                   >
                     ✕
                   </button>
@@ -103,17 +102,17 @@ export default function CompareClient() {
                   </h2>
                   <dl className="flex flex-col gap-1.5 text-sm">
                     <div className="flex justify-between border-b border-[#C9A24B]/15 pb-1.5">
-                      <dt className="text-[#8a7a5a]">{t.compare.store}</dt>
+                      <dt className="text-[#675c44]">{t.compare.store}</dt>
                       <dd className="font-medium text-[#1a1a1a]">{best?.store ?? "—"}</dd>
                     </div>
                     <div className="flex justify-between border-b border-[#C9A24B]/15 pb-1.5">
-                      <dt className="text-[#8a7a5a]">{t.compare.price}</dt>
+                      <dt className="text-[#675c44]">{t.compare.price}</dt>
                       <dd className="font-semibold text-[#B45309]">
                         {best ? formatOfferMoney(offerTotal(best), best.currency) : "—"}
                       </dd>
                     </div>
                     <div className="flex justify-between">
-                      <dt className="text-[#8a7a5a]">{t.compare.sizes}</dt>
+                      <dt className="text-[#675c44]">{t.compare.sizes}</dt>
                       <dd className="font-medium text-[#1a1a1a]">
                         {best?.sizes.join(", ") ?? "—"}
                       </dd>

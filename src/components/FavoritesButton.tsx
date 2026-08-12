@@ -31,7 +31,7 @@ export default function FavoritesButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.favorites}
-        className="relative flex h-8 w-8 items-center justify-center rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+        className="relative flex h-8 w-8 items-center justify-center rounded-full text-[#1a1a1a] transition-colors before:absolute before:-inset-1.5 before:content-[''] hover:bg-[#C9A24B]/10 sm:h-9 sm:w-9"
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
@@ -56,7 +56,7 @@ export default function FavoritesButton() {
               {t.favoritesPanel.title}
             </p>
             {savedProducts.length === 0 ? (
-              <p className="text-xs text-[#8a7a5a]">{t.favoritesPanel.empty}</p>
+              <p className="text-xs text-[#675c44]">{t.favoritesPanel.empty}</p>
             ) : (
               <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
                 {savedProducts.map((product) => {

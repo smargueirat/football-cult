@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -22,6 +21,7 @@ import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
+import JerseySkeleton from "./JerseySkeleton";
 
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
@@ -58,7 +58,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/camiseta/${product.id}`}
-      className="vintage-card group flex flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+      className="vintage-card group flex flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
@@ -69,16 +69,22 @@ export default function ProductCard({ product }: { product: Product }) {
         {photo ? (
           <>
             {!imageLoaded && (
-              <div className="skeleton-shimmer absolute inset-0" aria-hidden />
+              <JerseySkeleton className="absolute inset-0 h-full w-full" />
             )}
-            <Image
+            {/* <img> nativo en vez de next/image: como las fotos ya se
+                sirven "unoptimized" (ver lib/images.ts), next/image nunca
+                generaba un srcSet real -- todas las pantallas bajaban el
+                mismo archivo de 500px, aunque en el grid de 2 columnas del
+                celular la tarjeta se ve a ~160-180px. Con srcSet real el
+                navegador elige el tamaño que realmente necesita. */}
+            <img
               src={getDisplaySrc(photo, 500)}
-              alt={displayName}
-              fill
+              srcSet={`${getDisplaySrc(photo, 260)} 260w, ${getDisplaySrc(photo, 420)} 420w, ${getDisplaySrc(photo, 600)} 600w`}
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
-              unoptimized
+              alt={displayName}
+              loading="lazy"
               onLoad={() => setImageLoaded(true)}
-              className={`object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
+              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
                 imageLoaded ? "opacity-100" : "opacity-0"
               }`}
             />
@@ -97,19 +103,19 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.season}
           </span>
           {isKids && (
-            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#1F6F4C" }}>
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-vintage-sm" style={{ backgroundColor: "#1F6F4C" }}>
               {t.search.ageGroupKids}
             </span>
           )}
           {isWomen && (
-            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-sm" style={{ backgroundColor: "#DB2777" }}>
+            <span className="rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-vintage-sm" style={{ backgroundColor: "#DB2777" }}>
               {t.search.ageGroupWomen}
             </span>
           )}
         </span>
 
         {best && (
-          <div className="absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410] shadow-md">
+          <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
             <span className="flex items-center gap-1 text-sm font-semibold">
               <span className="text-xs">🥇</span>
               {formatOfferMoney(offerTotal(best), best.currency)}
@@ -129,7 +135,7 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
-          className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] shadow-sm backdrop-blur-md transition-transform hover:scale-110"
+          className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
         >
           <svg
             className="h-4 w-4"
@@ -154,12 +160,12 @@ export default function ProductCard({ product }: { product: Product }) {
           {displayName}
         </h3>
         {best ? (
-          <p className="text-xs text-[#8a7a5a]">
+          <p className="text-xs text-[#675c44]">
             {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (
-          <p className="text-xs text-[#8a7a5a]">{t.countryPanel.notAvailable}</p>
+          <p className="text-xs text-[#675c44]">{t.countryPanel.notAvailable}</p>
         )}
 
         <button
@@ -173,7 +179,7 @@ export default function ProductCard({ product }: { product: Product }) {
           className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
             comparing
               ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-              : "border-[#C9A24B]/30 text-[#8a7a5a] hover:border-[#1B3B2B]/40"
+              : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40"
           }`}
         >
           <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
