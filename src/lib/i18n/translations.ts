@@ -138,6 +138,7 @@ export interface Translations {
     realShippingTo: string;
     importCharges: string;
     checkingRealShipping: string;
+    includedInTotal: string;
   };
   footer: {
     about: string;
@@ -367,6 +368,7 @@ export const translations: Record<Locale, Translations> = {
       realShippingTo: "Envío real a {country}",
       importCharges: "Impuestos",
       checkingRealShipping: "Calculando envío real a tu país…",
+      includedInTotal: "incluido en el total",
     },
     footer: {
       about: "Sobre nosotros",
@@ -603,6 +605,7 @@ export const translations: Record<Locale, Translations> = {
       realShippingTo: "Frete real para {country}",
       importCharges: "Impostos",
       checkingRealShipping: "Calculando frete real para o seu país…",
+      includedInTotal: "incluído no total",
     },
     footer: {
       about: "Sobre nós",
@@ -839,6 +842,7 @@ export const translations: Record<Locale, Translations> = {
       realShippingTo: "Real shipping to {country}",
       importCharges: "Import charges",
       checkingRealShipping: "Calculating real shipping to your country…",
+      includedInTotal: "included in the total",
     },
     footer: {
       about: "About us",

@@ -398,6 +398,21 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                     const ships = shipsHere(offer);
                     const match = offer.inStock && ships && matchesSize(offer);
                     const isBest = offer.store === bestStore && match;
+                    // Cuando eBay devolvió un costo real de envío (+ impuestos
+                    // si aplica) en la misma moneda que el precio del
+                    // producto, se suma directo al TOTAL en vez de quedar
+                    // solo como un dato informativo aparte -- si la moneda
+                    // no coincide (eBay a veces localiza el envío a la
+                    // moneda del país de destino), no se suman números de
+                    // monedas distintas: se mantiene el total con el
+                    // placeholder minado, y la línea de abajo sigue
+                    // mostrando el dato real por separado.
+                    const liveCost = offer.store === "eBay" ? liveEbayCosts[offer.url] : null;
+                    const liveTotal =
+                      liveCost && liveCost.currency === offer.currency
+                        ? offer.price + liveCost.shipping + (liveCost.importCharges ?? 0)
+                        : null;
+                    const displayTotal = liveTotal ?? offerTotal(offer);
                     return (
                       <div
                         key={offer.store}
@@ -471,6 +486,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                               {t.detail.importCharges.toLowerCase()}
                                             </>
                                           )}
+                                          {liveTotal != null && <> ({t.detail.includedInTotal})</>}
                                         </>
                                       ) : (
                                         t.detail.checkingRealShipping
@@ -492,7 +508,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                   isBest ? "text-[#B45309]" : "text-[#3a3a36]"
                                 }`}
                               >
-                                {formatOfferMoney(offerTotal(offer), offer.currency)}
+                                {formatOfferMoney(displayTotal, offer.currency)}
                               </p>
                             </div>
                             <a
@@ -566,7 +582,14 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 {t.detail.from}
               </p>
               <p className="text-lg font-semibold text-[#B45309]">
-                {formatOfferMoney(offerTotal(bestOffer), bestOffer.currency)}
+                {(() => {
+                  const bestLive = bestOffer.store === "eBay" ? liveEbayCosts[bestOffer.url] : null;
+                  const bestLiveTotal =
+                    bestLive && bestLive.currency === bestOffer.currency
+                      ? bestOffer.price + bestLive.shipping + (bestLive.importCharges ?? 0)
+                      : null;
+                  return formatOfferMoney(bestLiveTotal ?? offerTotal(bestOffer), bestOffer.currency);
+                })()}
               </p>
             </div>
             <a
