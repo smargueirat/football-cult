@@ -110,6 +110,8 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         )}
 
+        <div className="card-photo-glow pointer-events-none absolute inset-0" aria-hidden />
+
         <span className="absolute left-3 top-3 flex flex-col items-start gap-1">
           <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
             {product.season}
@@ -147,7 +149,7 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
-          className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
+          className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110 active:scale-90"
         >
           <svg
             className="h-4 w-4"
@@ -168,7 +170,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="vintage-divider" />
 
       <div className="flex flex-col gap-0.5 p-3 sm:p-4">
-        <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] sm:text-lg">
+        <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] transition-colors duration-200 group-hover:text-[#1B3B2B] sm:text-lg">
           {displayName}
         </h3>
         {best ? (
@@ -188,10 +190,10 @@ export default function ProductCard({ product }: { product: Product }) {
           }}
           disabled={!comparing && maxReached}
           title={!comparing && maxReached ? t.compare.maxReached : undefined}
-          className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+          className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all duration-150 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 disabled:active:scale-100 ${
             comparing
               ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-              : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40"
+              : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40 hover:bg-[#1B3B2B]/5"
           }`}
         >
           <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
