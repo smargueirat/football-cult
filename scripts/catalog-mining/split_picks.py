@@ -2,8 +2,10 @@ import sys, re, json, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from refresh import split_blocks
 
+PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src', 'data', 'products.ts')
+
 def existing_products():
-    content = open('/home/piojo/football-cult/src/data/products.ts', encoding='utf-8').read()
+    content = open(PRODUCTS_TS, encoding='utf-8').read()
     head, blocks, tail = split_blocks(content)
     existing = {}
     for b in blocks:

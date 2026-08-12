@@ -19,9 +19,10 @@ from new_teams_batch11 import BATCH11 as _B11
 from new_teams_batch12 import BATCH12 as _B12
 from new_teams_batch13 import BATCH13 as _B13
 from new_teams_batch14 import BATCH14 as _B14
-BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13, **_B14}
+from new_teams_batch15 import BATCH15 as _B15
+BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13, **_B14, **_B15}
 
-PRODUCTS_TS = "/home/piojo/football-cult/src/data/products.ts"
+PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "data", "products.ts")
 
 # retro_extract.py's RETRO_EXCLUDE_RE doesn't filter out women's-cut
 # items the way the main pipeline's EXCLUDE_RE does (that's on purpose --
