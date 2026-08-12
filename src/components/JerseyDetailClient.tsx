@@ -11,6 +11,7 @@ import {
   displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
+  isVintageRetro,
   offerShipsTo,
   offerTotal,
   offerTotalInEUR,
@@ -145,7 +146,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
       .slice(0, 10);
   }, [product.id, selectedSize, countryCode]);
 
-  const isRetro = product.typeKey === "retro";
+  const isRetro = isVintageRetro(product);
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10 pb-28 lg:pb-10">

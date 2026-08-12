@@ -1,9 +1,19 @@
 ---
 name: retro-fabric-loupe
-description: Inspección visual con lupa de detalles para tela, escudos y etiquetas.
+description: "DESCARTADA -- implementada y luego sacada por pedido explícito, no reimplementar sin que se pida de nuevo."
 ---
 
-# Retro Fabric Loupe
+# Retro Fabric Loupe (descartada)
+
+Se implementó en `JerseyGallery.tsx` (hover en desktop, touch en mobile)
+y se sacó por completo a pedido explícito del usuario: "lo de la lupa lo
+sacamos, queda raro". No reimplementar esta feature en futuras sesiones
+sin que se pida otra vez -- el resto de esta skill queda documentado
+abajo solo como referencia histórica de qué se probó y por qué no
+funcionó en la práctica (probablemente el zoom se veía tosco por la
+resolución real de las fotos de origen, que varía mucho según tienda).
+
+## Comportamiento (como se implementó, ya no vigente)
 
 Un coleccionista de camisetas mira de cerca la tela, el escudo bordado
 y la etiqueta antes de decidir -- la foto de producto sola no alcanza.

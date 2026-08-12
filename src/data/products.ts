@@ -50159,6 +50159,23 @@ export function offerTotal(offer: Offer): number {
   return offer.price + offer.shipping;
 }
 
+// "2025/26" -> 2025, "2026" -> 2026. Sirve para poder ordenar temporadas
+// cronológicamente sin importar el formato con el que se cargó cada una,
+// y para decidir qué es "retro" de verdad (ver isVintageRetro abajo).
+export function seasonSortValue(season: string): number {
+  const match = season.match(/\d{4}/);
+  return match ? parseInt(match[0], 10) : 0;
+}
+
+// "Retro" real = temporada 2006 o anterior. `typeKey === "retro"` no
+// alcanza: muchas tiendas usan ese typeKey también para reediciones
+// modernas de diseños clásicos (temporada 2022/23, 2024/25, etc.), que
+// no son vintage. Regla fija, ya definida y usada en el catálogo
+// (SearchExplorer) -- esta es la misma función, no una redefinición.
+export function isVintageRetro(product: Product): boolean {
+  return seasonSortValue(product.season) <= 2006;
+}
+
 export function bestOffer(product: Product): Offer | undefined {
   return [...product.offers]
     .filter((o) => o.inStock)

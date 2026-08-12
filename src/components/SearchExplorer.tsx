@@ -15,6 +15,7 @@ import {
   getAgeGroup,
   offerTotalInEUR,
   products,
+  seasonSortValue,
   shipsToCountry,
   teamCategory,
   teamColors,
@@ -66,13 +67,6 @@ const QUICK_PICK_TEAMS: TeamKey[] = [
 ].filter((key) => products.some((p) => p.teamKey === key)) as TeamKey[];
 
 const SCROLL_KEY = "football-cult-catalog-scroll";
-
-// "2025/26" -> 2025, "2026" -> 2026. Sirve para poder ordenar temporadas
-// cronológicamente sin importar el formato con el que se cargó cada una.
-function seasonSortValue(season: string): number {
-  const match = season.match(/\d{4}/);
-  return match ? parseInt(match[0], 10) : 0;
-}
 
 // Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
 // (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para

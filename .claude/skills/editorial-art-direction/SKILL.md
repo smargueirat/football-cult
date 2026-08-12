@@ -35,7 +35,9 @@ si es retro), nunca texto libre:
 - `[Entrenamiento]` / tipo real -- de `product.typeKey` vía `typeNames`.
 - `[Mujer]` / `[Niño/a]` -- de `getAgeGroup(product)`, solo cuando no
   es "men" (el default no lleva badge).
-- `[Retro/Colección]` -- cuando `typeKey === "retro"`.
+- `[Retro/Colección]` -- cuando `isVintageRetro(product)` (temporada 2006
+  o anterior; `typeKey === "retro"` NO alcanza, varias tiendas lo usan
+  también para reediciones modernas de diseños clásicos).
 - `[Oferta Top]` -- cuando la oferta mostrada es la más barata
   disponible para el país del usuario (ya existe como criterio en
   `bestOfferForCountry`).
