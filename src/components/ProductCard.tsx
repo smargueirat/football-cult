@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -72,14 +71,20 @@ export default function ProductCard({ product }: { product: Product }) {
             {!imageLoaded && (
               <JerseySkeleton className="absolute inset-0 h-full w-full" />
             )}
-            <Image
+            {/* <img> nativo en vez de next/image: como las fotos ya se
+                sirven "unoptimized" (ver lib/images.ts), next/image nunca
+                generaba un srcSet real -- todas las pantallas bajaban el
+                mismo archivo de 500px, aunque en el grid de 2 columnas del
+                celular la tarjeta se ve a ~160-180px. Con srcSet real el
+                navegador elige el tamaño que realmente necesita. */}
+            <img
               src={getDisplaySrc(photo, 500)}
-              alt={displayName}
-              fill
+              srcSet={`${getDisplaySrc(photo, 260)} 260w, ${getDisplaySrc(photo, 420)} 420w, ${getDisplaySrc(photo, 600)} 600w`}
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
-              unoptimized
+              alt={displayName}
+              loading="lazy"
               onLoad={() => setImageLoaded(true)}
-              className={`object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
+              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
                 imageLoaded ? "opacity-100" : "opacity-0"
               }`}
             />

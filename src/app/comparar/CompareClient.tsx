@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import {
   Product,
   bestOffer,
@@ -72,13 +71,13 @@ export default function CompareClient() {
                   }}
                 >
                   {photo ? (
-                    <Image
+                    <img
                       src={getDisplaySrc(photo, 700)}
-                      alt={displayName}
-                      fill
+                      srcSet={`${getDisplaySrc(photo, 350)} 350w, ${getDisplaySrc(photo, 600)} 600w, ${getDisplaySrc(photo, 900)} 900w`}
                       sizes="(max-width: 640px) 90vw, 30vw"
-                      unoptimized
-                      className="object-contain"
+                      alt={displayName}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-contain"
                     />
                   ) : (
                     <JerseyIcon

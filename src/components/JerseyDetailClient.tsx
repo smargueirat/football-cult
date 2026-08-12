@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
@@ -146,15 +145,19 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 {!imageLoaded && (
                   <JerseySkeleton className="absolute inset-0 h-full w-full" />
                 )}
-                <Image
+                {/* <img> nativo (ver nota en ProductCard.tsx): mismo motivo,
+                    srcSet real en vez de bajar siempre el archivo de 1000px
+                    incluso en celular. fetchPriority reemplaza el
+                    `priority` de next/image para que siga cargando eager,
+                    sin lazy, al ser la foto principal sobre el pliegue. */}
+                <img
                   src={getDisplaySrc(photo, 1000)}
-                  alt={displayName}
-                  fill
-                  priority
+                  srcSet={`${getDisplaySrc(photo, 500)} 500w, ${getDisplaySrc(photo, 800)} 800w, ${getDisplaySrc(photo, 1200)} 1200w`}
                   sizes="(max-width: 1024px) 90vw, 45vw"
-                  unoptimized
+                  alt={displayName}
+                  fetchPriority="high"
                   onLoad={() => setImageLoaded(true)}
-                  className={`object-contain drop-shadow-sm transition-opacity duration-300 ${
+                  className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
                     imageLoaded ? "opacity-100" : "opacity-0"
                   }`}
                 />

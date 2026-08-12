@@ -17,16 +17,19 @@ export default function LoginButton() {
       <button
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.login}
-        className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-full sm:h-9 sm:w-9 text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+        className="relative flex h-8 w-8 items-center justify-center rounded-full text-[#1a1a1a] transition-colors before:absolute before:-inset-1.5 before:content-[''] hover:bg-[#C9A24B]/10 sm:h-9 sm:w-9"
       >
         {session?.user?.image ? (
-          <Image
-            src={session.user.image}
-            alt={session.user.name ?? ""}
-            fill
-            sizes="36px"
-            className="object-cover"
-          />
+          <span className="absolute inset-0 overflow-hidden rounded-full">
+            <Image
+              src={session.user.image}
+              alt={session.user.name ?? ""}
+              fill
+              sizes="36px"
+              unoptimized
+              className="object-cover"
+            />
+          </span>
         ) : (
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
