@@ -73,6 +73,15 @@ export default function RootLayout({
             HTMLMetaElement
           >)}
         />
+        <meta
+          {...({
+            name: "impact-site-verification",
+            value: "8de79bb0-46f4-4bf9-be31-deac6e225a7f",
+          } as React.DetailedHTMLProps<
+            React.MetaHTMLAttributes<HTMLMetaElement>,
+            HTMLMetaElement
+          >)}
+        />
         <meta name="verify-admitad" content="2666c15826" />
         {/* Ahorra el DNS+TLS de la primera foto de cada dominio en vez de
             pagarlo recién cuando el navegador la pide -- estos tres son
