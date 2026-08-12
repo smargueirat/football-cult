@@ -13221,18 +13221,6 @@ const productsData = [
     ],
   },
 {
-    id: "japon-retro-2023-third",
-    teamKey: "japon",
-    season: "2023",
-    typeKey: "retro",
-    colorHex: "#BC002D",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318704005160?_skw=Japan+third+soccer+jersey&hash=item4a343d3028%3Ag%3A5MEAAeSwKuRqASPl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CORINTHIANS JAPAN THIRD JERSEY 2023- Men's- New Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/5MEAAeSwKuRqASPl/s-l225.jpg" },
-    ],
-  },
-{
     id: "jordania-retro-2024-home",
     teamKey: "jordania",
     season: "2024",
@@ -34516,6 +34504,18 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 20.24, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-man-utd-third-shirt-ladies-310203", title: "2023-2024 Man Utd Third Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1691483816_man-utd-2023-2024-third-football-shirt-ladies.jpg?v=1763228759" },
+    ],
+  },
+{
+    id: "manutd-retro-202324-third-mens",
+    teamKey: "manutd",
+    season: "2023/24",
+    typeKey: "retro",
+    colorHex: "#DA020E",
+    colorHexSecondary: "#F5D142",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
       { store: "eBay", price: 54.14, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407075326090?_skw=Manchester+United+third+soccer+jersey&hash=item5ec794888a%3Ag%3AYwQAAeSwVR1pkNsF&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Manchester United 23/24 Third Soccer Football Jersey IP1746 Men's Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/YwQAAeSwVR1pkNsF/s-l225.jpg" },
     ],
   },
