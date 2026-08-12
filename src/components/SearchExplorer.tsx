@@ -359,7 +359,7 @@ export default function SearchExplorer() {
           <p className="text-xs text-[#675c44]">
             {t.search.resultsCount.replace("{n}", String(results.length))}
           </p>
-          <div className="grid grid-cols-3 gap-2.5 sm:gap-5 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
             {visibleResults.map((product: Product, i) => (
               <div
                 key={product.id}
