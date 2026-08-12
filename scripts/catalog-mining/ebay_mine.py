@@ -128,7 +128,25 @@ class EbayClient:
                 time.sleep(2 * (attempt + 1))
         return []
 
-    def get_item_sizes(self, item_id):
+    def get_item_details(self, item_id):
+        """Same /item/{id} call as before (was get_item_sizes) — now also
+        reads shippingOptions, which was always present in this response
+        but discarded (shipping was hardcoded to 0.0). Returns
+        (sizes, shipping_cost) where shipping_cost is None if eBay didn't
+        report one (calculated at checkout, or item has local pickup
+        only) — caller decides the fallback, this function never guesses.
+
+        Marketplace/destination note: X-EBAY-C-MARKETPLACE-ID controls
+        which of eBay's ~20 site marketplaces answers the call (no
+        Argentina-specific one exists) and shippingOptions here reflects
+        shipping to that marketplace's default region (US for EBAY_US) —
+        NOT the actual buyer's country. Real per-buyer-country shipping
+        needs the X-EBAY-C-ENDUSERCTX header with a contextualLocation
+        override per destination, which means one extra API call *per
+        destination country* per item — a real quota cost, intentionally
+        not done here. See the note in refresh.py / products.ts about
+        this limitation.
+        """
         self._ensure_token()
         req = urllib.request.Request(
             f"https://api.ebay.com/buy/browse/v1/item/{urllib.parse.quote(item_id, safe='')}",
@@ -144,12 +162,12 @@ class EbayClient:
                 data = json.loads(resp.read())
                 break
             except urllib.error.HTTPError:
-                return []
+                return [], None
             except Exception as e:
                 print(f"  get_item retry {attempt + 1}/3 ({item_id!r}): {e}")
                 time.sleep(2 * (attempt + 1))
         if data is None:
-            return []
+            return [], None
         sizes = set()
         for v in data.get("localizedAspects", []):
             if v.get("name", "").lower() == "size":
@@ -158,7 +176,17 @@ class EbayClient:
                     sizes.add(SIZE_MAP[raw])
         for sel in data.get("variesBy", {}).get("aspectsImageVariesBy", []):
             pass  # sizes for multi-variation listings need /item/{id}?fieldgroups — skipped, single-size fallback below
-        return sorted(sizes, key=lambda s: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"].index(s))
+        sorted_sizes = sorted(sizes, key=lambda s: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"].index(s))
+        shipping_cost = None
+        for opt in data.get("shippingOptions", []):
+            cost = (opt.get("shippingCost") or {}).get("value")
+            if cost is not None:
+                try:
+                    shipping_cost = float(cost)
+                    break  # first option is eBay's primary/cheapest shipping choice
+                except (TypeError, ValueError):
+                    continue
+        return sorted_sizes, shipping_cost
 
 
 def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
@@ -194,10 +222,6 @@ def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
         candidates.append({
             "title": title,
             "price": amount,
-            "shipping": 0.0,  # eBay's real shipping cost needs a separate call; most jersey
-                              # sellers offer free shipping, and no other store's shipping
-                              # here is more than a rough estimate either — see products.ts's
-                              # own note on this ("se asume 0 hasta tener ese dato").
             "currency": price.get("currency", "USD"),
             "link": item.get("itemAffiliateWebUrl") or item.get("itemWebUrl"),
             "image": (item.get("image") or {}).get("imageUrl"),
@@ -206,10 +230,17 @@ def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
     if not candidates:
         return None
     best = min(candidates, key=lambda c: c["price"])
-    sizes = client.get_item_sizes(best["item_id"]) if best.get("item_id") else []
+    sizes, shipping = (
+        client.get_item_details(best["item_id"]) if best.get("item_id") else ([], None)
+    )
     if not sizes:
         sizes = ["M", "L"]  # conservative fallback when eBay doesn't expose size aspects
     best["sizes"] = sizes
+    # Real cost when eBay reports one (shipping to the EBAY_US marketplace
+    # default region -- see get_item_details' docstring); 0.0 only as a
+    # last-resort fallback when eBay genuinely didn't return an option
+    # (e.g. local-pickup-only listings), not as a stand-in for "unknown".
+    best["shipping"] = shipping if shipping is not None else 0.0
     return best
 
 

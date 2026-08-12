@@ -35,6 +35,21 @@ function badgeColor(store: string) {
   return BADGE_COLORS[sum % BADGE_COLORS.length];
 }
 
+const KNOWN_CURRENCIES = ["EUR", "USD", "GBP", "BRL"] as const;
+type KnownCurrency = (typeof KNOWN_CURRENCIES)[number];
+
+// eBay's live shipping endpoint can in principle return a currency for
+// a destination we don't otherwise handle (formatOfferMoney only knows
+// our 4 supported offer currencies) -- fall back to a plain "amount
+// CODE" string instead of a type-unsafe cast, for the rare country
+// where that happens.
+function formatMaybeKnownMoney(amount: number, currency: string): string {
+  if ((KNOWN_CURRENCIES as readonly string[]).includes(currency)) {
+    return formatOfferMoney(amount, currency as KnownCurrency);
+  }
+  return `${amount.toFixed(2)} ${currency}`;
+}
+
 // Vibración corta al guardar/sacar de favoritos -- puro progressive
 // enhancement: Safari/iOS no implementa la Vibration API para web y
 // simplemente no hace nada ahí, sin romper el resto de la interacción.
@@ -66,6 +81,46 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
     () => [...product.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
     [product.offers]
   );
+
+  // eBay no puede calcular el envío sin saber el destino (su propia API
+  // devuelve shippingOptions: null si no se lo mandamos) -- el número
+  // que ya viene minado en el catálogo es un placeholder, casi siempre
+  // 0. Acá se pide en vivo, por oferta de eBay visible en esta página,
+  // el costo real (envío + impuestos de importación si corresponde)
+  // para el país que el visitante tiene elegido arriba del sitio.
+  const [liveEbayCosts, setLiveEbayCosts] = useState<
+    Record<string, { shipping: number; currency: string; importCharges: number | null } | null>
+  >({});
+  useEffect(() => {
+    const ebayOffers = product.offers.filter((o) => o.store === "eBay");
+    if (ebayOffers.length === 0) return;
+    let cancelled = false;
+    setLiveEbayCosts({});
+    ebayOffers.forEach(async (offer) => {
+      try {
+        const res = await fetch(
+          `/api/ebay-shipping?url=${encodeURIComponent(offer.url)}&country=${countryCode}`
+        );
+        if (!res.ok) return;
+        const data = await res.json();
+        if (cancelled || data.shipping == null) return;
+        setLiveEbayCosts((prev) => ({
+          ...prev,
+          [offer.url]: {
+            shipping: data.shipping,
+            currency: data.currency ?? offer.currency,
+            importCharges: data.importCharges ?? null,
+          },
+        }));
+      } catch {
+        // sin conexión al endpoint en vivo -- se queda con el placeholder
+        // minado, no rompe el resto de la ficha.
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [product.offers, countryCode]);
 
   useEffect(() => {
     addRecentlyViewed(product.id);
@@ -390,12 +445,39 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                   {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
                                 </p>
                               ) : (
-                                <p className="text-xs text-[#675c44]">
-                                  {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
-                                  {offer.sizes.length > 0 && (
-                                    <> · {offer.sizes.join(", ")}</>
+                                <>
+                                  <p className="text-xs text-[#675c44]">
+                                    {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
+                                    {offer.sizes.length > 0 && (
+                                      <> · {offer.sizes.join(", ")}</>
+                                    )}
+                                  </p>
+                                  {offer.store === "eBay" && (
+                                    <p className="text-[11px] text-[#9C7A2E]">
+                                      {liveEbayCosts[offer.url] ? (
+                                        <>
+                                          {t.detail.realShippingTo.replace("{country}", country.name[locale])}:{" "}
+                                          {formatMaybeKnownMoney(
+                                            liveEbayCosts[offer.url]!.shipping,
+                                            liveEbayCosts[offer.url]!.currency
+                                          )}
+                                          {liveEbayCosts[offer.url]!.importCharges != null && (
+                                            <>
+                                              {" + "}
+                                              {formatMaybeKnownMoney(
+                                                liveEbayCosts[offer.url]!.importCharges!,
+                                                liveEbayCosts[offer.url]!.currency
+                                              )}{" "}
+                                              {t.detail.importCharges.toLowerCase()}
+                                            </>
+                                          )}
+                                        </>
+                                      ) : (
+                                        t.detail.checkingRealShipping
+                                      )}
+                                    </p>
                                   )}
-                                </p>
+                                </>
                               )}
                             </div>
                           </div>

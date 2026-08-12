@@ -135,6 +135,9 @@ export interface Translations {
     sameTeamTitle: string;
     sameSizeEyebrow: string;
     sameSizeTitle: string;
+    realShippingTo: string;
+    importCharges: string;
+    checkingRealShipping: string;
   };
   footer: {
     about: string;
@@ -361,6 +364,9 @@ export const translations: Record<Locale, Translations> = {
       sameTeamTitle: "Más de este equipo",
       sameSizeEyebrow: "En tu talla",
       sameSizeTitle: "Otras ofertas en tu talla",
+      realShippingTo: "Envío real a {country}",
+      importCharges: "Impuestos",
+      checkingRealShipping: "Calculando envío real a tu país…",
     },
     footer: {
       about: "Sobre nosotros",
@@ -594,6 +600,9 @@ export const translations: Record<Locale, Translations> = {
       sameTeamTitle: "Mais deste time",
       sameSizeEyebrow: "No seu tamanho",
       sameSizeTitle: "Outras ofertas no seu tamanho",
+      realShippingTo: "Frete real para {country}",
+      importCharges: "Impostos",
+      checkingRealShipping: "Calculando frete real para o seu país…",
     },
     footer: {
       about: "Sobre nós",
@@ -827,6 +836,9 @@ export const translations: Record<Locale, Translations> = {
       sameTeamTitle: "More from this team",
       sameSizeEyebrow: "In your size",
       sameSizeTitle: "Other deals in your size",
+      realShippingTo: "Real shipping to {country}",
+      importCharges: "Import charges",
+      checkingRealShipping: "Calculating real shipping to your country…",
     },
     footer: {
       about: "About us",

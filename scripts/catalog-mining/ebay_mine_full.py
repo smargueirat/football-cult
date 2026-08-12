@@ -134,7 +134,7 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
             if is_manually_excluded(link):
                 continue
             candidates.append({
-                "title": title, "price": amount, "shipping": 0.0,
+                "title": title, "price": amount,
                 "currency": price.get("currency", "USD"),
                 "link": link,
                 "image": (item.get("image") or {}).get("imageUrl"),
@@ -144,8 +144,11 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
             time.sleep(0.15)
             continue
         best = min(candidates, key=lambda c: c["price"])
-        sizes = client.get_item_sizes(best["item_id"]) if best.get("item_id") else []
+        sizes, shipping = (
+            client.get_item_details(best["item_id"]) if best.get("item_id") else ([], None)
+        )
         best["sizes"] = sizes or ["M", "L"]
+        best["shipping"] = shipping if shipping is not None else 0.0
         out[f"{team_key}|{type_key}"] = best
         time.sleep(0.15)
     return out
@@ -189,7 +192,7 @@ def mine_kids(client, team_key, team_en, teams_re, types_re):
             if is_manually_excluded(link):
                 continue
             candidates.append({
-                "title": title, "price": amount, "shipping": 0.0,
+                "title": title, "price": amount,
                 "currency": price.get("currency", "USD"),
                 "link": link,
                 "image": (item.get("image") or {}).get("imageUrl"),
@@ -199,8 +202,11 @@ def mine_kids(client, team_key, team_en, teams_re, types_re):
             time.sleep(0.15)
             continue
         best = min(candidates, key=lambda c: c["price"])
-        sizes = client.get_item_sizes(best["item_id"]) if best.get("item_id") else []
+        sizes, shipping = (
+            client.get_item_details(best["item_id"]) if best.get("item_id") else ([], None)
+        )
         best["sizes"] = sizes or ["9-10", "11-12"]
+        best["shipping"] = shipping if shipping is not None else 0.0
         out[f"{team_key}|{type_key}"] = best
         time.sleep(0.15)
     return out
@@ -250,7 +256,7 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
             if is_manually_excluded(link):
                 continue
             cand = {
-                "title": title, "price": amount, "shipping": 0.0,
+                "title": title, "price": amount,
                 "currency": price.get("currency", "USD"),
                 "link": link,
                 "image": (item.get("image") or {}).get("imageUrl"),
@@ -259,8 +265,11 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
             if season not in by_season or amount < by_season[season]["price"]:
                 by_season[season] = cand
         for season, best in by_season.items():
-            sizes = client.get_item_sizes(best["item_id"]) if best.get("item_id") else []
+            sizes, shipping = (
+                client.get_item_details(best["item_id"]) if best.get("item_id") else ([], None)
+            )
             best["sizes"] = sizes or ["M", "L"]
+            best["shipping"] = shipping if shipping is not None else 0.0
             best["season"] = season
             out[f"{team_key}|{type_key}|{season}"] = best
         time.sleep(0.15)
