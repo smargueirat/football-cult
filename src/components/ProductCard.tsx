@@ -11,7 +11,6 @@ import {
   formatOfferMoney,
   getAgeGroup,
   offerShipsTo,
-  offerTotal,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -20,6 +19,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
+import { useLiveOfferTotal } from "@/lib/useLiveOfferTotal";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
@@ -31,6 +31,7 @@ export default function ProductCard({ product }: { product: Product }) {
   const comparing = isComparing(product.id);
   const favorite = isFavorite(product.id);
   const best = bestOfferForCountry(product, countryCode);
+  const bestTotal = useLiveOfferTotal(best, countryCode);
   const storeCount = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
   ).length;
@@ -130,7 +131,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
             <span className="flex items-center gap-1 text-sm font-semibold">
               <span className="text-xs">🥇</span>
-              {formatOfferMoney(offerTotal(best), best.currency)}
+              {formatOfferMoney(bestTotal, best.currency)}
             </span>
             {best.shipping > 0 && (
               <span className="text-[9px] font-medium uppercase leading-none opacity-70">
