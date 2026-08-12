@@ -104,7 +104,7 @@ export default function ProductCard3D({ product }: { product: Product }) {
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform"
     >
       <div
-        className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
+        className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
         style={{
           background: `linear-gradient(135deg, #fffdf8, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
         }}
@@ -200,17 +200,17 @@ export default function ProductCard3D({ product }: { product: Product }) {
 
       <div className="vintage-divider" />
 
-      <div className="flex flex-col gap-0.5 p-3 sm:p-4">
-        <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] sm:text-lg">
+      <div className="flex flex-col gap-0.5 px-2 py-1.5 sm:p-4">
+        <h3 className="font-card-title text-xs leading-snug text-[#1a1a1a] sm:text-lg">
           {displayName}
         </h3>
         {best ? (
-          <p className="text-xs text-[#675c44]">
+          <p className="text-[10px] text-[#675c44] sm:text-xs">
             {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (
-          <p className="text-xs text-[#675c44]">{t.countryPanel.notAvailable}</p>
+          <p className="text-[10px] text-[#675c44] sm:text-xs">{t.countryPanel.notAvailable}</p>
         )}
 
         <button
@@ -221,7 +221,7 @@ export default function ProductCard3D({ product }: { product: Product }) {
           }}
           disabled={!comparing && maxReached}
           title={!comparing && maxReached ? t.compare.maxReached : undefined}
-          className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all duration-150 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 ${
+          className={`mt-1 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all duration-150 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 sm:mt-1.5 ${
             comparing
               ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
               : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40 hover:bg-[#1B3B2B]/5"
