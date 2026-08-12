@@ -69,7 +69,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       href={`/camiseta/${product.id}`}
-      className="vintage-card group flex flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
+      className="vintage-card group flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
