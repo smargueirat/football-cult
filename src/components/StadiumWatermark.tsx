@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+// "Estadio nocturno vivo": la misma escena de siempre (foto de cancha +
+// pátina + boca de túnel + viñeta), pero con varias capas de movimiento
+// lentísimo e independiente -- respiración tipo Ken Burns sobre la
+// foto, dos reflectores barriendo a distinta velocidad, y polvo
+// suspendido a la deriva. Cada capa por separado es casi
+// imperceptible; juntas dan la sensación de estar parado en la cancha
+// en vez de mirar una foto fija. Ver globals.css para los keyframes.
 export default function StadiumWatermark() {
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
@@ -8,11 +15,18 @@ export default function StadiumWatermark() {
         alt=""
         fill
         priority
-        className="object-cover opacity-[0.16]"
+        className="stadium-photo-breathe object-cover opacity-[0.16]"
       />
 
       {/* pátina cálida para que la foto se integre con la paleta marfil */}
       <div className="absolute inset-0 bg-[#EDE0C4] mix-blend-color opacity-45" />
+
+      {/* dos torres de luz independientes, tamaños/velocidades distintas */}
+      <div className="stadium-beam-a absolute inset-0" />
+      <div className="stadium-beam-b absolute inset-0" />
+
+      {/* polvo suspendido en el aire, deriva lentísima */}
+      <div className="stadium-dust-drift absolute inset-0" />
 
       {/* boca del túnel: paneles oscuros a los costados, arriba */}
       <svg
