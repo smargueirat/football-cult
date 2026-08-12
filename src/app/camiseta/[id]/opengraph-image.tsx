@@ -1,21 +1,36 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { bestOffer, brandNames, findProduct, teamNames, typeNames } from "@/data/products";
 
 export const alt = "Football Cult Archive";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Satori no puede usar next/font, así que traemos los mismos pesos de
-// Google Fonts que ya usa el sitio (Alfa Slab One para el titular) como
-// bytes crudos en tiempo de petición -- ver layout.tsx para la fuente
-// "oficial" usada en el resto de la interfaz.
-async function loadGoogleFont(family: string, weight: string, text: string) {
-  const cssUrl = `https://fonts.googleapis.com/css2?family=${family}:wght@${weight}&text=${encodeURIComponent(text)}`;
-  const css = await (await fetch(cssUrl)).text();
-  const match = css.match(/src: url\(([^)]+)\) format\('(?:opentype|truetype)'\)/);
-  if (!match) throw new Error(`No se pudo resolver la fuente ${family}`);
-  const res = await fetch(match[1]);
-  return res.arrayBuffer();
+// Satori no puede usar next/font, así que traemos los mismos pesos que
+// ya usa el sitio (Alfa Slab One para el titular, Cormorant Garamond
+// para el resto) como bytes crudos -- ver layout.tsx para la fuente
+// "oficial" usada en el resto de la interfaz. Antes esto pedía el CSS2
+// de Google Fonts + el archivo de la fuente por red en cada render
+// (2 round-trips a fonts.googleapis.com/fonts.gstatic.com por cada
+// bot/red social que pide la preview); ahora los .ttf viven en
+// public/fonts/ y se leen del disco -- sin red, y con un cache en
+// memoria por instancia tibia del runtime para no releerlos ni del
+// disco en cada request.
+let fontCache: ReturnType<typeof loadLocalFontsUncached> | null = null;
+
+function loadLocalFontsUncached() {
+  return Promise.all([
+    readFile(join(process.cwd(), "public/fonts/AlfaSlabOne-Regular.ttf")),
+    readFile(join(process.cwd(), "public/fonts/CormorantGaramond-SemiBold.ttf")),
+  ]).then(([title, signature]) => ({ title, signature }));
+}
+
+function loadLocalFonts() {
+  if (!fontCache) {
+    fontCache = loadLocalFontsUncached();
+  }
+  return fontCache;
 }
 
 export default async function Image({ params }: { params: Promise<{ id: string }> }) {
@@ -51,10 +66,7 @@ export default async function Image({ params }: { params: Promise<{ id: string }
   const titleText = `${team} ${type}`;
   const signatureText = "Football Cult Archive";
 
-  const [titleFont, signatureFont] = await Promise.all([
-    loadGoogleFont("Alfa+Slab+One", "400", titleText),
-    loadGoogleFont("Cormorant+Garamond", "600", signatureText + product.season + (brand ?? "")),
-  ]);
+  const { title: titleFont, signature: signatureFont } = await loadLocalFonts();
 
   return new ImageResponse(
     (

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   bestOfferForCountry,
   displayTitleForCountry,
@@ -15,12 +15,15 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import Portal from "./Portal";
+import { useAnchoredDropdown } from "@/lib/useAnchoredDropdown";
 
 export default function FavoritesButton() {
   const { locale, t } = useLanguage();
   const { countryCode } = useCountry();
   const { favorites } = useFavorites();
   const [open, setOpen] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const position = useAnchoredDropdown(buttonRef, open);
 
   const savedProducts = favorites
     .map((id) => findProduct(id))
@@ -29,6 +32,7 @@ export default function FavoritesButton() {
   return (
     <div className="relative">
       <button
+        ref={buttonRef}
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.favorites}
         className="relative flex h-8 w-8 items-center justify-center rounded-full text-[#1a1a1a] transition-colors before:absolute before:-inset-1.5 before:content-[''] hover:bg-[#C9A24B]/10 sm:h-9 sm:w-9"
@@ -51,7 +55,10 @@ export default function FavoritesButton() {
       {open && (
         <Portal>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="solid-panel fixed right-3 top-14 z-50 w-72 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[#C9A24B]/25 p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
+          <div
+            style={{ top: position?.top ?? 56, right: position?.right ?? 12 }}
+            className="solid-panel fixed z-50 w-72 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[#C9A24B]/25 p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]"
+          >
             <p className="mb-2 text-sm font-medium text-[#1a1a1a]">
               {t.favoritesPanel.title}
             </p>

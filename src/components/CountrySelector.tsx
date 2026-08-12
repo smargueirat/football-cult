@@ -1,16 +1,19 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { countries } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import Portal from "./Portal";
+import { useAnchoredDropdown } from "@/lib/useAnchoredDropdown";
 
 export default function CountrySelector() {
   const { locale, t } = useLanguage();
   const { country, setCountryCode } = useCountry();
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const position = useAnchoredDropdown(buttonRef, open);
 
   const sorted = useMemo(
     () => [...countries].sort((a, b) => a.name[locale].localeCompare(b.name[locale], locale)),
@@ -31,6 +34,7 @@ export default function CountrySelector() {
   return (
     <div className="relative">
       <button
+        ref={buttonRef}
         onClick={() => setOpen((o) => !o)}
         aria-label={t.nav.shipTo}
         className="flex h-8 items-center gap-1 rounded-full px-2 text-sm text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10 sm:h-9"
@@ -50,7 +54,10 @@ export default function CountrySelector() {
               setSearch("");
             }}
           />
-          <div className="solid-panel fixed right-3 top-14 z-50 flex w-72 max-w-[calc(100vw-1.5rem)] flex-col rounded-2xl border border-[#C9A24B]/25 p-3 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] sm:right-6 sm:top-16">
+          <div
+            style={{ top: position?.top ?? 56, right: position?.right ?? 12 }}
+            className="solid-panel fixed z-50 flex w-72 max-w-[calc(100vw-1.5rem)] flex-col rounded-2xl border border-[#C9A24B]/25 p-3 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]"
+          >
             <p className="mb-2 px-1 text-sm font-medium text-[#1a1a1a]">
               {t.countryPanel.title}
             </p>
