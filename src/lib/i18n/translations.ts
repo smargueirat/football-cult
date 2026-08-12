@@ -61,6 +61,12 @@ export interface Translations {
     subtitle: string;
     cta: string;
   };
+  heroSlides: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    cta: string;
+  }[];
   featured: {
     eyebrow: string;
     title: string;
@@ -291,6 +297,40 @@ export const translations: Record<Locale, Translations> = {
         "Comparamos precios de camisetas de selecciones, clubes y ligas de todo el mundo. Vos comprás directo donde quieras.",
       cta: "Ver catálogo",
     },
+    heroSlides: [
+      {
+        eyebrow: "Selecciones nacionales",
+        title: "La camiseta de tu selección",
+        subtitle:
+          "Argentina, Brasil, España y las camisetas de selecciones de todo el mundo, comparadas en un solo lugar.",
+        cta: "Ver selecciones",
+      },
+      {
+        eyebrow: "Grandes clubes",
+        title: "Los colores que elegiste de chico",
+        subtitle:
+          "Real Madrid, Boca, Manchester United y cientos de clubes más, al mejor precio real.",
+        cta: "Ver clubes",
+      },
+      {
+        eyebrow: "Colección retro",
+        title: "Reliquias de otra época",
+        subtitle: "Camisetas vintage de temporadas 2006 para atrás, verificadas una por una.",
+        cta: "Ver retro",
+      },
+      {
+        eyebrow: "Talles y cortes de mujer",
+        title: "Hecha a tu medida",
+        subtitle: "Camisetas oficiales con corte de mujer, de las tiendas que realmente tienen stock.",
+        cta: "Ver camisetas de mujer",
+      },
+      {
+        eyebrow: "Los hinchas más chicos",
+        title: "La próxima generación",
+        subtitle: "Camisetas infantiles de sus ídolos, en los talles que necesitás.",
+        cta: "Ver camisetas de niños",
+      },
+    ],
     featured: {
       eyebrow: "Joyas del catálogo",
       title: "Camisetas destacadas",
@@ -528,6 +568,39 @@ export const translations: Record<Locale, Translations> = {
         "Comparamos preços de camisas de seleções, clubes e ligas do mundo todo. Você compra direto onde quiser.",
       cta: "Ver catálogo",
     },
+    heroSlides: [
+      {
+        eyebrow: "Seleções nacionais",
+        title: "A camisa da sua seleção",
+        subtitle:
+          "Argentina, Brasil, Espanha e as camisas de seleções do mundo todo, comparadas em um só lugar.",
+        cta: "Ver seleções",
+      },
+      {
+        eyebrow: "Grandes clubes",
+        title: "As cores que você escolheu criança",
+        subtitle: "Real Madrid, Boca, Manchester United e centenas de outros clubes, pelo melhor preço real.",
+        cta: "Ver clubes",
+      },
+      {
+        eyebrow: "Coleção retrô",
+        title: "Relíquias de outra época",
+        subtitle: "Camisas retrô de temporadas até 2006, verificadas uma a uma.",
+        cta: "Ver retrô",
+      },
+      {
+        eyebrow: "Tamanhos e cortes femininos",
+        title: "Feita sob medida",
+        subtitle: "Camisas oficiais com corte feminino, das lojas que realmente têm estoque.",
+        cta: "Ver camisas femininas",
+      },
+      {
+        eyebrow: "Os torcedores mais novos",
+        title: "A próxima geração",
+        subtitle: "Camisas infantis dos ídolos deles, nos tamanhos que você precisa.",
+        cta: "Ver camisas infantis",
+      },
+    ],
     featured: {
       eyebrow: "Joias do catálogo",
       title: "Camisas em destaque",
@@ -765,6 +838,39 @@ export const translations: Record<Locale, Translations> = {
         "We compare prices on national team, club, and league jerseys from all over the world. You buy directly wherever you want.",
       cta: "Shop now",
     },
+    heroSlides: [
+      {
+        eyebrow: "National teams",
+        title: "Your national team's shirt",
+        subtitle:
+          "Argentina, Brazil, Spain and national team jerseys from all over the world, compared in one place.",
+        cta: "Shop national teams",
+      },
+      {
+        eyebrow: "The big clubs",
+        title: "The colors you picked as a kid",
+        subtitle: "Real Madrid, Boca, Manchester United and hundreds more clubs, at the best real price.",
+        cta: "Shop clubs",
+      },
+      {
+        eyebrow: "The retro collection",
+        title: "Relics from another era",
+        subtitle: "Vintage jerseys from 2006 and earlier, verified one by one.",
+        cta: "Shop retro",
+      },
+      {
+        eyebrow: "Women's sizing and cuts",
+        title: "Made to fit",
+        subtitle: "Official jerseys with a women's cut, from stores that actually have stock.",
+        cta: "Shop women's",
+      },
+      {
+        eyebrow: "The next generation of fans",
+        title: "Future legends",
+        subtitle: "Kids jerseys of their idols, in the sizes you need.",
+        cta: "Shop kids",
+      },
+    ],
     featured: {
       eyebrow: "Catalog gems",
       title: "Featured jerseys",
