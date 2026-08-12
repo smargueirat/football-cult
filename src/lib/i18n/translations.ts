@@ -127,6 +127,14 @@ export interface Translations {
     photoPlaceholder: string;
     currencyNote: string;
     replicaBadge: string;
+    bestPriceBadge: string;
+    retroBadge: string;
+    from: string;
+    viewFullComparison: string;
+    sameTeamEyebrow: string;
+    sameTeamTitle: string;
+    sameSizeEyebrow: string;
+    sameSizeTitle: string;
   };
   footer: {
     about: string;
@@ -345,6 +353,14 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Foto de producto próximamente",
       currencyNote: "Precio real de cada tienda en su moneda de origen. La tienda puede mostrarte otra moneda según tu ubicación, pero cobra este mismo precio.",
       replicaBadge: "Réplica (no oficial)",
+      bestPriceBadge: "Oferta Top",
+      retroBadge: "Retro / Colección",
+      from: "Desde",
+      viewFullComparison: "Ver comparativa completa",
+      sameTeamEyebrow: "Del mismo archivo",
+      sameTeamTitle: "Más de este equipo",
+      sameSizeEyebrow: "En tu talla",
+      sameSizeTitle: "Otras ofertas en tu talla",
     },
     footer: {
       about: "Sobre nosotros",
@@ -570,6 +586,14 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Foto do produto em breve",
       currencyNote: "Preço real de cada loja na sua moeda de origem. A loja pode te mostrar outra moeda de acordo com sua localização, mas cobra esse mesmo preço.",
       replicaBadge: "Réplica (não oficial)",
+      bestPriceBadge: "Oferta Top",
+      retroBadge: "Retrô / Coleção",
+      from: "A partir de",
+      viewFullComparison: "Ver comparação completa",
+      sameTeamEyebrow: "Do mesmo arquivo",
+      sameTeamTitle: "Mais deste time",
+      sameSizeEyebrow: "No seu tamanho",
+      sameSizeTitle: "Outras ofertas no seu tamanho",
     },
     footer: {
       about: "Sobre nós",
@@ -795,6 +819,14 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Product photo coming soon",
       currencyNote: "Real price from each store in its original currency. The store may show you a different currency based on your location, but charges this same price.",
       replicaBadge: "Replica (unofficial)",
+      bestPriceBadge: "Top Deal",
+      retroBadge: "Retro / Collection",
+      from: "From",
+      viewFullComparison: "View full comparison",
+      sameTeamEyebrow: "From the same archive",
+      sameTeamTitle: "More from this team",
+      sameSizeEyebrow: "In your size",
+      sameSizeTitle: "Other deals in your size",
     },
     footer: {
       about: "About us",

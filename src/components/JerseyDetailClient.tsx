@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
 import {
   Offer,
@@ -10,9 +10,11 @@ import {
   availableSizesForCountry,
   displayTitleForCountry,
   formatOfferMoney,
+  getAgeGroup,
   offerShipsTo,
   offerTotal,
   offerTotalInEUR,
+  products,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -21,9 +23,8 @@ import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
-import { getDisplaySrc } from "@/lib/images";
-import JerseyIcon from "./JerseyIcon";
-import JerseySkeleton from "./JerseySkeleton";
+import DiscoveryCarousel from "./DiscoveryCarousel";
+import JerseyGallery from "./JerseyGallery";
 import ReportProductModal from "./ReportProductModal";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -33,6 +34,17 @@ function badgeColor(store: string) {
   return BADGE_COLORS[sum % BADGE_COLORS.length];
 }
 
+// Vibración corta al guardar/sacar de favoritos -- puro progressive
+// enhancement: Safari/iOS no implementa la Vibration API para web y
+// simplemente no hace nada ahí, sin romper el resto de la interacción.
+function triggerHaptic() {
+  if (typeof navigator !== "undefined" && "vibrate" in navigator) {
+    navigator.vibrate(15);
+  }
+}
+
+const OFFERS_SECTION_ID = "comparativa-tiendas";
+
 export default function JerseyDetailClient({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
@@ -40,7 +52,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const { isFavorite, toggleFavorite } = useFavorites();
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [shareCopied, setShareCopied] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
   const [reportOpen, setReportOpen] = useState(false);
   const comparing = isComparing(product.id);
   const favorite = isFavorite(product.id);
@@ -48,6 +59,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const team = teamNames[product.teamKey][locale];
   const type = typeNames[product.typeKey][locale];
   const sizes = availableSizesForCountry(product, countryCode);
+  const ageGroup = getAgeGroup(product);
 
   const sortedOffers = useMemo(
     () => [...product.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
@@ -87,26 +99,56 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   ).length;
   const bestOffer = sortedOffers.find((o) => o.inStock && shipsHere(o));
   const bestStore = bestOffer?.store;
-  // La foto principal sale de la misma oferta que se muestra como "mejor
-  // precio", para que nunca se vea una camiseta distinta a la que el
-  // usuario termina comprando.
-  const photo = bestOffer?.imageUrl ?? sortedOffers.find((o) => o.imageUrl)?.imageUrl;
   // Nombre real tal como aparece en la tienda (siempre, sea cual sea su
   // idioma), no un nombre armado por nosotros (equipo + tipo) -- ver
   // displayTitleForCountry, regla fija, no volver a gatear esto por idioma.
   const displayName =
     displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
-  const imgRef = useRef<HTMLImageElement>(null);
-  // Ver la misma nota en ProductCard.tsx: si el navegador ya tenía la
-  // imagen en caché, el evento "load" puede no llegar a dispararse.
-  useEffect(() => {
-    if (imgRef.current?.complete) {
-      setImageLoaded(true);
+
+  // Galería: todas las fotos distintas entre ofertas (algunas tiendas
+  // fotografían la misma camiseta distinto), la de la mejor oferta
+  // primero para que nunca se vea una camiseta distinta a la que el
+  // usuario termina comprando.
+  const photos = useMemo(() => {
+    const ordered = bestOffer
+      ? [bestOffer, ...sortedOffers.filter((o) => o !== bestOffer)]
+      : sortedOffers;
+    const seen = new Set<string>();
+    const list: string[] = [];
+    for (const o of ordered) {
+      if (o.imageUrl && !seen.has(o.imageUrl)) {
+        seen.add(o.imageUrl);
+        list.push(o.imageUrl);
+      }
     }
-  }, [photo]);
+    return list;
+  }, [sortedOffers, bestOffer]);
+
+  // Descubrimiento: otros productos del mismo equipo (cualquier tipo o
+  // temporada), y -- solo si el usuario ya eligió una talla concreta --
+  // otros productos que tengan esa talla disponible en su país.
+  const sameTeamProducts = useMemo(
+    () =>
+      products
+        .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
+        .slice(0, 10),
+    [product.id, product.teamKey]
+  );
+  const sameSizeProducts = useMemo(() => {
+    if (!selectedSize) return [];
+    return products
+      .filter(
+        (p) =>
+          p.id !== product.id &&
+          availableSizesForCountry(p, countryCode).includes(selectedSize)
+      )
+      .slice(0, 10);
+  }, [product.id, selectedSize, countryCode]);
+
+  const isRetro = product.typeKey === "retro";
 
   return (
-    <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
+    <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10 pb-28 lg:pb-10">
       <Link
         href="/"
         className="mb-6 inline-flex items-center gap-1.5 text-sm text-[#5b5b57] transition-colors hover:text-[#1a1a1a]"
@@ -120,17 +162,15 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         {/* Left: showcase */}
         <div className="lg:sticky lg:top-24 lg:self-start">
-          <div
-            className="vintage-card relative flex aspect-square items-center justify-center overflow-hidden rounded-3xl p-16"
-            style={{
-              background: `linear-gradient(135deg, #fffdf8, ${product.colorHex}33, ${product.colorHexSecondary}22)`,
-            }}
-          >
-            <span className="vintage-plaque absolute left-4 top-4 rounded px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider">
+          <div className="relative">
+            <span className="vintage-plaque absolute left-4 top-4 z-10 rounded px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider">
               {product.season}
             </span>
             <button
-              onClick={() => toggleFavorite(product.id)}
+              onClick={() => {
+                triggerHaptic();
+                toggleFavorite(product.id);
+              }}
               aria-label={t.nav.favorites}
               className="shadow-vintage-sm absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
             >
@@ -148,44 +188,45 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 />
               </svg>
             </button>
-            {photo ? (
-              <>
-                {!imageLoaded && (
-                  <JerseySkeleton className="absolute inset-0 h-full w-full" />
-                )}
-                {/* <img> nativo (ver nota en ProductCard.tsx): mismo motivo,
-                    srcSet real en vez de bajar siempre el archivo de 1000px
-                    incluso en celular. fetchPriority reemplaza el
-                    `priority` de next/image para que siga cargando eager,
-                    sin lazy, al ser la foto principal sobre el pliegue. */}
-                <img
-                  ref={imgRef}
-                  src={getDisplaySrc(photo, 1000)}
-                  srcSet={`${getDisplaySrc(photo, 500)} 500w, ${getDisplaySrc(photo, 800)} 800w, ${getDisplaySrc(photo, 1200)} 1200w`}
-                  sizes="(max-width: 1024px) 90vw, 45vw"
-                  alt={displayName}
-                  fetchPriority="high"
-                  onLoad={() => setImageLoaded(true)}
-                  onError={() => setImageLoaded(true)}
-                  className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
-                    imageLoaded ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              </>
-            ) : (
-              <JerseyIcon
-                className="h-2/3 w-2/3 drop-shadow-sm"
-                primary={product.colorHex}
-                secondary={product.colorHexSecondary}
-                pattern={product.jerseyPattern}
-              />
-            )}
+            <JerseyGallery
+              photos={photos}
+              alt={displayName}
+              colorHex={product.colorHex}
+              colorHexSecondary={product.colorHexSecondary}
+              jerseyPattern={product.jerseyPattern}
+            />
           </div>
-          {!photo && (
+          {photos.length === 0 && (
             <p className="mt-3 text-center text-xs text-[#9a9a94]">
               {t.detail.photoPlaceholder}
             </p>
           )}
+
+          {/* Badges de tipo de producto, siempre derivadas de datos reales
+              (temporada/tipo/edad/retro/mejor oferta), nunca texto libre. */}
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            <span className="rounded-full border border-[#C9A24B]/40 bg-white/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#3a3a36]">
+              {type}
+            </span>
+            {ageGroup !== "men" && (
+              <span
+                className="rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white"
+                style={{ backgroundColor: ageGroup === "kids" ? "#1F6F4C" : "#DB2777" }}
+              >
+                {ageGroup === "kids" ? t.search.ageGroupKids : t.search.ageGroupWomen}
+              </span>
+            )}
+            {isRetro && (
+              <span className="rounded-full bg-[#7C3AED]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#7C3AED]">
+                {t.detail.retroBadge}
+              </span>
+            )}
+            {bestOffer && (
+              <span className="rounded-full bg-[#B45309]/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
+                {t.detail.bestPriceBadge}
+              </span>
+            )}
+          </div>
         </div>
 
         {/* Right: hunter column */}
@@ -279,7 +320,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
               </div>
 
               {/* Offers */}
-              <div>
+              <div id={OFFERS_SECTION_ID} className="scroll-mt-24">
                 <p className="font-tagline mb-3 text-sm not-italic text-[#5b5442]">
                   {selectedSize
                     ? t.detail.storesCompared.replace(
@@ -321,7 +362,11 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                             <div>
                               <p className="flex flex-wrap items-center gap-1.5 text-sm font-medium text-[#1a1a1a]">
                                 {offer.store}
-                                {isBest && <span className="text-xs">🥇</span>}
+                                {isBest && (
+                                  <span className="rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+                                    {t.detail.bestPriceBadge}
+                                  </span>
+                                )}
                                 {offer.store === "FansJerseyHub" && (
                                   <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
                                     {t.detail.replicaBadge}
@@ -340,6 +385,9 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               ) : (
                                 <p className="text-xs text-[#675c44]">
                                   {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
+                                  {offer.sizes.length > 0 && (
+                                    <> · {offer.sizes.join(", ")}</>
+                                  )}
                                 </p>
                               )}
                             </div>
@@ -364,7 +412,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               rel="noopener noreferrer sponsored"
                               className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                             >
-                              {t.detail.viewInStore}
+                              {`${t.detail.viewInStore} ${offer.store}`}
                               <svg
                                 className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5"
                                 fill="none"
@@ -399,12 +447,47 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
         </div>
       </div>
 
+      <DiscoveryCarousel
+        eyebrow={t.detail.sameTeamEyebrow}
+        title={t.detail.sameTeamTitle}
+        products={sameTeamProducts}
+      />
+      <DiscoveryCarousel
+        eyebrow={t.detail.sameSizeEyebrow}
+        title={t.detail.sameSizeTitle}
+        products={sameSizeProducts}
+      />
+
       {reportOpen && (
         <ReportProductModal
           productId={product.id}
           productUrl={typeof window !== "undefined" ? window.location.href : ""}
           onClose={() => setReportOpen(false)}
         />
+      )}
+
+      {/* Barra fija inferior en mobile: precio mínimo siempre a la vista
+          mientras se navega la página, con acceso directo a la
+          comparativa completa sin tener que buscarla. */}
+      {bestOffer && (
+        <div className="shadow-vintage-lg fixed inset-x-0 bottom-0 z-40 border-t border-[#C9A24B]/30 bg-[#fffdf8]/95 backdrop-blur-md lg:hidden">
+          <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+            <div>
+              <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
+                {t.detail.from}
+              </p>
+              <p className="text-lg font-semibold text-[#B45309]">
+                {formatOfferMoney(offerTotal(bestOffer), bestOffer.currency)}
+              </p>
+            </div>
+            <a
+              href={`#${OFFERS_SECTION_ID}`}
+              className="flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9]"
+            >
+              {t.detail.viewFullComparison}
+            </a>
+          </div>
+        </div>
       )}
     </div>
   );
