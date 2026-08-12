@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
@@ -22,6 +22,18 @@ export default function JerseyGallery({
   const [index, setIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
   const photo = photos[index];
+  const imgRef = useRef<HTMLImageElement>(null);
+  // Si el navegador ya tenía la imagen en caché (típico al refrescar la
+  // página), puede terminar de cargarla antes de que React llegue a
+  // enganchar onLoad -- el evento "load" del <img> nunca llega a
+  // dispararse en ese caso y la foto queda con el skeleton pegado para
+  // siempre. Se chequea `complete` al montar/cambiar de foto como red
+  // de seguridad (mismo patrón que ProductCard.tsx).
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      setImageLoaded(true);
+    }
+  }, [photo]);
 
   function goTo(i: number) {
     setImageLoaded(false);
@@ -42,6 +54,7 @@ export default function JerseyGallery({
               <JerseySkeleton className="absolute inset-0 h-full w-full" />
             )}
             <img
+              ref={imgRef}
               src={getDisplaySrc(photo, 1000)}
               srcSet={`${getDisplaySrc(photo, 500)} 500w, ${getDisplaySrc(photo, 800)} 800w, ${getDisplaySrc(photo, 1200)} 1200w`}
               sizes="(max-width: 1024px) 90vw, 45vw"

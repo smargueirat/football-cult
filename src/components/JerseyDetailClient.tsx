@@ -206,9 +206,16 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
           {/* Badges de tipo de producto, siempre derivadas de datos reales
               (temporada/tipo/edad/retro/mejor oferta), nunca texto libre. */}
           <div className="mt-3 flex flex-wrap gap-1.5">
-            <span className="rounded-full border border-[#C9A24B]/40 bg-white/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#3a3a36]">
-              {type}
-            </span>
+            {/* La categoría solo se muestra cuando no es engañosa: si el
+                typeKey es "retro" pero la temporada no es vintage de
+                verdad (isRetro), mostrar "Retro" acá confundiría al
+                usuario -- se omite en vez de mostrar una etiqueta que no
+                corresponde. */}
+            {!(product.typeKey === "retro" && !isRetro) && (
+              <span className="rounded-full border border-[#C9A24B]/40 bg-white/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#3a3a36]">
+                {type}
+              </span>
+            )}
             {ageGroup !== "men" && (
               <span
                 className="rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white"
@@ -220,11 +227,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             {isRetro && (
               <span className="rounded-full bg-[#7C3AED]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#7C3AED]">
                 {t.detail.retroBadge}
-              </span>
-            )}
-            {bestOffer && (
-              <span className="rounded-full bg-[#B45309]/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
-                {t.detail.bestPriceBadge}
               </span>
             )}
           </div>
