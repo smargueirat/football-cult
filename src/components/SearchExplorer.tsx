@@ -26,7 +26,7 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { CATALOG_PAGE_SIZE, useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { useCountry } from "@/lib/country/CountryContext";
-import ProductCard from "./ProductCard";
+import ProductCard from "./ProductCard3D";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
@@ -360,14 +360,20 @@ export default function SearchExplorer() {
             {t.search.resultsCount.replace("{n}", String(results.length))}
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
-            {visibleResults.map((product: Product) => (
-              <ProductCard key={product.id} product={product} />
+            {visibleResults.map((product: Product, i) => (
+              <div
+                key={product.id}
+                className="card-rise-in"
+                style={{ animationDelay: `${(i % 12) * 35}ms` }}
+              >
+                <ProductCard product={product} />
+              </div>
             ))}
           </div>
           {visibleCount < results.length && (
             <button
               onClick={() => setVisibleCount((c) => c + CATALOG_PAGE_SIZE)}
-              className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
+              className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] shadow-vintage-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-[#1B3B2B]/40 active:scale-95"
             >
               {t.search.loadMore} ({results.length - visibleCount})
             </button>

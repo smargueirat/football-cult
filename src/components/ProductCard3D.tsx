@@ -23,7 +23,14 @@ import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
-export default function ProductCard({ product }: { product: Product }) {
+const MAX_TILT_DEG = 9;
+
+// Variante experimental: misma tarjeta de siempre, pero con inclinación
+// 3D real que sigue al mouse (rotateX/rotateY calculados según dónde
+// está el cursor sobre la tarjeta) en vez de un brillo/luz sobre la
+// foto -- exactamente lo que se pidió sacar en la versión anterior.
+// Nada de esto se mueve si el usuario prefiere movimiento reducido.
+export default function ProductCard3D({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
@@ -46,30 +53,55 @@ export default function ProductCard({ product }: { product: Product }) {
   const ageGroup = getAgeGroup(product);
   const isKids = ageGroup === "kids";
   const isWomen = ageGroup === "women";
-  // Nombre real tal como aparece en la tienda, no un nombre armado por
-  // nosotros (equipo + tipo). Se prefiere una oferta cuyo título esté en
-  // el idioma elegido en el sitio; si no hay ninguna, se usa el de la
-  // oferta más barata. El nombre armado queda solo como respaldo para
-  // los pocos casos sin oferta cargada todavía.
   const displayName = displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
   const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
-  // Si el navegador ya tenía la imagen en caché, puede terminar de
-  // cargarla antes de que React llegue a enganchar onLoad -- el evento
-  // "load" del <img> nunca llega a dispararse en ese caso y la
-  // camiseta queda con el skeleton pegado para siempre. Se chequea
-  // `complete` al montar como red de seguridad.
   useEffect(() => {
     if (imgRef.current?.complete) {
       setImageLoaded(true);
     }
   }, [photo]);
 
+  const cardRef = useRef<HTMLAnchorElement>(null);
+  const reducedMotion = useRef(false);
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
+  const [tilting, setTilting] = useState(false);
+
+  useEffect(() => {
+    reducedMotion.current = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }, []);
+
+  function handleMouseMove(e: React.MouseEvent<HTMLAnchorElement>) {
+    if (reducedMotion.current || !cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    const px = (e.clientX - rect.left) / rect.width - 0.5;
+    const py = (e.clientY - rect.top) / rect.height - 0.5;
+    setTilt({ x: -py * MAX_TILT_DEG, y: px * MAX_TILT_DEG });
+    setTilting(true);
+  }
+
+  function handleMouseLeave() {
+    setTilt({ x: 0, y: 0 });
+    setTilting(false);
+  }
+
   return (
     <Link
+      ref={cardRef}
       href={`/camiseta/${product.id}`}
-      className="vintage-card group flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transform: `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${
+          tilting ? "scale3d(1.02, 1.02, 1.02)" : "scale3d(1, 1, 1)"
+        }`,
+        transformStyle: "preserve-3d",
+        boxShadow: tilting
+          ? `${-tilt.y * 1.8}px ${18 - tilt.x * 1.2}px 32px -14px rgba(43, 32, 10, 0.45), ${-tilt.y * 0.6}px ${6 - tilt.x * 0.4}px 10px -6px rgba(43, 32, 10, 0.3)`
+          : "0 10px 24px -14px rgba(43, 32, 10, 0.35)",
+      }}
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-6"
@@ -82,12 +114,6 @@ export default function ProductCard({ product }: { product: Product }) {
             {!imageLoaded && (
               <JerseySkeleton className="absolute inset-0 h-full w-full" />
             )}
-            {/* <img> nativo en vez de next/image: como las fotos ya se
-                sirven "unoptimized" (ver lib/images.ts), next/image nunca
-                generaba un srcSet real -- todas las pantallas bajaban el
-                mismo archivo de 500px, aunque en el grid de 2 columnas del
-                celular la tarjeta se ve a ~160-180px. Con srcSet real el
-                navegador elige el tamaño que realmente necesita. */}
             <img
               ref={imgRef}
               src={getDisplaySrc(photo, 500)}
@@ -96,21 +122,25 @@ export default function ProductCard({ product }: { product: Product }) {
               alt={displayName}
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
-              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
+              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
                 imageLoaded ? "opacity-100" : "opacity-0"
               }`}
+              style={{ transform: "translateZ(24px)" }}
             />
           </>
         ) : (
           <JerseyIcon
-            className="h-2/3 w-2/3 drop-shadow-sm transition-transform duration-300 group-hover:scale-105"
+            className="h-2/3 w-2/3 drop-shadow-sm"
             primary={product.colorHex}
             secondary={product.colorHexSecondary}
             pattern={product.jerseyPattern}
           />
         )}
 
-        <span className="absolute left-3 top-3 flex flex-col items-start gap-1">
+        <span
+          className="absolute left-3 top-3 flex flex-col items-start gap-1"
+          style={{ transform: "translateZ(36px)" }}
+        >
           <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
             {product.season}
           </span>
@@ -127,9 +157,11 @@ export default function ProductCard({ product }: { product: Product }) {
         </span>
 
         {best && (
-          <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
-            <span className="flex items-center gap-1 text-sm font-semibold">
-              <span className="text-xs">🥇</span>
+          <div
+            className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]"
+            style={{ transform: "translateZ(40px)" }}
+          >
+            <span className="text-sm font-semibold">
               {formatOfferMoney(offerTotal(best), best.currency)}
             </span>
             {best.shipping > 0 && (
@@ -147,6 +179,7 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
+          style={{ transform: "translateZ(40px)" }}
           className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110 active:scale-90"
         >
           <svg
@@ -168,7 +201,7 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="vintage-divider" />
 
       <div className="flex flex-col gap-0.5 p-3 sm:p-4">
-        <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] transition-colors duration-200 group-hover:text-[#1B3B2B] sm:text-lg">
+        <h3 className="font-card-title text-base leading-snug text-[#1a1a1a] sm:text-lg">
           {displayName}
         </h3>
         {best ? (
@@ -188,7 +221,7 @@ export default function ProductCard({ product }: { product: Product }) {
           }}
           disabled={!comparing && maxReached}
           title={!comparing && maxReached ? t.compare.maxReached : undefined}
-          className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all duration-150 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 disabled:active:scale-100 ${
+          className={`mt-1.5 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all duration-150 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 ${
             comparing
               ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
               : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40 hover:bg-[#1B3B2B]/5"

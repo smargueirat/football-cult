@@ -127,14 +127,22 @@ body {
     inset 0 0 0 1px rgba(255, 255, 255, 0.6),
     inset 0 0 0 4px rgba(180, 146, 63, 0.08),
     0 10px 24px -14px rgba(43, 32, 10, 0.35);
-  transition: box-shadow 200ms ease-out;
+  transition:
+    box-shadow 200ms ease-out,
+    border-color 200ms ease-out,
+    transform 150ms ease-out;
 }
 
 .vintage-card:hover {
+  border-color: rgba(27, 59, 43, 0.4);
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.6),
     inset 0 0 0 4px rgba(180, 146, 63, 0.08),
     0 18px 34px -14px rgba(43, 32, 10, 0.42);
+}
+
+.vintage-card:active {
+  transform: scale(0.98);
 }
 
 .vintage-plaque {
@@ -190,6 +198,23 @@ body {
   font-family: var(--font-tagline);
   letter-spacing: 0.22em;
   font-style: italic;
+}
+
+/* Entrada escalonada de las tarjetas del catálogo al aparecer/cambiar
+   los resultados -- cada una lleva su propio animation-delay via
+   style inline (ver SearchExplorer.tsx), acá solo el keyframe. */
+@keyframes card-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card-rise-in {
+  animation: card-rise-in 320ms ease-out both;
 }
 
 .font-card-title {
