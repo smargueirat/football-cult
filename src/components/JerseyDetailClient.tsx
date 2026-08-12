@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
 import {
   Offer,
@@ -96,6 +96,14 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   // displayTitleForCountry, regla fija, no volver a gatear esto por idioma.
   const displayName =
     displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
+  const imgRef = useRef<HTMLImageElement>(null);
+  // Ver la misma nota en ProductCard.tsx: si el navegador ya tenía la
+  // imagen en caché, el evento "load" puede no llegar a dispararse.
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      setImageLoaded(true);
+    }
+  }, [photo]);
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
@@ -151,12 +159,14 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                     `priority` de next/image para que siga cargando eager,
                     sin lazy, al ser la foto principal sobre el pliegue. */}
                 <img
+                  ref={imgRef}
                   src={getDisplaySrc(photo, 1000)}
                   srcSet={`${getDisplaySrc(photo, 500)} 500w, ${getDisplaySrc(photo, 800)} 800w, ${getDisplaySrc(photo, 1200)} 1200w`}
                   sizes="(max-width: 1024px) 90vw, 45vw"
                   alt={displayName}
                   fetchPriority="high"
                   onLoad={() => setImageLoaded(true)}
+                  onError={() => setImageLoaded(true)}
                   className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
                     imageLoaded ? "opacity-100" : "opacity-0"
                   }`}

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Product,
   SIZES,
@@ -54,6 +54,17 @@ export default function ProductCard({ product }: { product: Product }) {
   const displayName = displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
   const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
   const [imageLoaded, setImageLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+  // Si el navegador ya tenía la imagen en caché, puede terminar de
+  // cargarla antes de que React llegue a enganchar onLoad -- el evento
+  // "load" del <img> nunca llega a dispararse en ese caso y la
+  // camiseta queda con el skeleton pegado para siempre. Se chequea
+  // `complete` al montar como red de seguridad.
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      setImageLoaded(true);
+    }
+  }, [photo]);
 
   return (
     <Link
@@ -78,12 +89,13 @@ export default function ProductCard({ product }: { product: Product }) {
                 celular la tarjeta se ve a ~160-180px. Con srcSet real el
                 navegador elige el tamaño que realmente necesita. */}
             <img
+              ref={imgRef}
               src={getDisplaySrc(photo, 500)}
               srcSet={`${getDisplaySrc(photo, 260)} 260w, ${getDisplaySrc(photo, 420)} 420w, ${getDisplaySrc(photo, 600)} 600w`}
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
               alt={displayName}
-              loading="lazy"
               onLoad={() => setImageLoaded(true)}
+              onError={() => setImageLoaded(true)}
               className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
                 imageLoaded ? "opacity-100" : "opacity-0"
               }`}
