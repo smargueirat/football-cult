@@ -98,8 +98,8 @@ export default function ProductCard3D({ product }: { product: Product }) {
         }`,
         transformStyle: "preserve-3d",
         boxShadow: tilting
-          ? `${-tilt.y * 1.8}px ${18 - tilt.x * 1.2}px 32px -14px rgba(43, 32, 10, 0.45), ${-tilt.y * 0.6}px ${6 - tilt.x * 0.4}px 10px -6px rgba(43, 32, 10, 0.3)`
-          : "0 10px 24px -14px rgba(43, 32, 10, 0.35)",
+          ? `${-tilt.y * 1.8}px ${22 - tilt.x * 1.2}px 38px -10px rgba(43, 32, 10, 0.55), ${-tilt.y * 0.6}px ${8 - tilt.x * 0.4}px 14px -6px rgba(43, 32, 10, 0.35)`
+          : "0 14px 28px -10px rgba(43, 32, 10, 0.45)",
       }}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform"
     >
