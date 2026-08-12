@@ -11,7 +11,7 @@ from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from refresh import split_blocks
 
-PRODUCTS_TS = "/home/piojo/football-cult/src/data/products.ts"
+PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "data", "products.ts")
 
 
 def load_maps(maps_dir):

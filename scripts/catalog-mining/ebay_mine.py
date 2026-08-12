@@ -20,8 +20,9 @@ import base64, json, re, sys, os, time, urllib.request, urllib.parse, urllib.err
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import JERSEY_RE, EXCLUDE_RE, TEAM_PATTERNS, TYPE_PATTERNS, team_re_all, type_re_all
 
-ENV_PATH = "/home/piojo/football-cult/.env.local"
-TEAM_EN_PATH = "/home/piojo/football-cult/src/data/products.ts"
+_REPO_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
+ENV_PATH = os.path.join(_REPO_ROOT, ".env.local")
+TEAM_EN_PATH = os.path.join(_REPO_ROOT, "src", "data", "products.ts")
 
 TYPE_QUERY_WORD = {
     "home": "home",

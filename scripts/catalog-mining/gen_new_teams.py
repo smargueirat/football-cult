@@ -14,14 +14,16 @@ from new_teams_batch11 import BATCH11 as _B11
 from new_teams_batch12 import BATCH12 as _B12
 from new_teams_batch13 import BATCH13 as _B13
 from new_teams_batch14 import BATCH14 as _B14
-BATCH1 = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13, **_B14}
+from new_teams_batch15 import BATCH15 as _B15
+BATCH1 = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13, **_B14, **_B15}
 
 def colors_from_existing_products(team):
     """Fallback for teams already in products.ts (original 24 + earlier
     batches already applied as real product blocks) whose metadata isn't
     in the BATCH dicts: read colorHex/colorHexSecondary off any existing
     block for that team instead of erroring out."""
-    content = open('/home/piojo/football-cult/src/data/products.ts', encoding='utf-8').read()
+    products_ts = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src', 'data', 'products.ts')
+    content = open(products_ts, encoding='utf-8').read()
     m = re.search(
         r'teamKey: "' + re.escape(team) + r'",\s*\n\s*season: "[^"]*",\s*\n\s*typeKey: "[^"]*",\s*\n\s*colorHex: "([^"]*)",\s*\n\s*colorHexSecondary: "([^"]*)"',
         content,

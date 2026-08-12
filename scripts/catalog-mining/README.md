@@ -891,6 +891,105 @@ reproduction, reserve-team collision, etc.) — that favorite disappearing
 is correct, not a bug, since there's no legitimate successor to redirect
 to.
 
+## Full pass across all 11 Awin stores + MSC + eBay (2026-08-12)
+
+Ran a genuinely full daily pass (hadn't run yet that day) across every
+`AWIN_FEED_URL_*` store, Mystery Shirt Club, and `ebay_mine.py` end to end
+(completed all 376 teams × 3 types without hitting a rate limit this
+time). Net +49 product blocks (35 genuinely new team/type/store finds +
+14 from splitting merged gender products, see below), plus price/offer
+refreshes applied across every store. Worth carrying forward:
+
+- **A real environment bug, not a data bug: several scripts hardcoded
+  the absolute path `/home/piojo/football-cult/src/data/products.ts`
+  (and `.env.local`) instead of resolving relative to their own file
+  location.** Running from a git worktree (a different absolute path)
+  meant `split_picks.py`'s new-vs-add classification, `gen_new_teams.py`'s
+  color fallback, and `ebay_mine.py`'s team-name lookup were all silently
+  reading the *other* checkout's stale `products.ts` — not the one
+  actually being edited. Caused one real duplicate-id collision this run
+  (`monaco-third-202627` got generated twice, once each from FootStoreES
+  and SportIsGoodES, because neither run could see the other's insert).
+  Fixed in `split_picks.py`, `gen_new_teams.py`, `ebay_mine.py`,
+  `retro_gen.py`, `gen_kids_teams.py`, `brand_apply.py` to resolve off
+  `os.path.dirname(os.path.abspath(__file__))` instead. If this pipeline
+  is ever run from anywhere other than the main checkout again, verify
+  these paths still resolve correctly.
+- **The prematch season-pair duplicate bug (documented below under
+  DeporteOutletES 2026-08-11) recurred exactly as predicted** — 17 offers
+  across Real Madrid/Arsenal/Bayern/Liverpool/Man Utd/Ajax prematch
+  products got inserted into BOTH the `-202526` and `-202627` id for the
+  same team+type, since `refresh.py` matches on (team, type) only, not
+  season. Cleaned up by hand again (kept whichever id's `season` field
+  actually matched the offer title's detected season, dropped the other)
+  — still not fixed at the pipeline level, expect it to keep recurring.
+- **Real regex gaps for punctuation/abbreviation variants of
+  already-tracked teams**, found via PlanetFoot's unmatched-title scan:
+  `"RedBull Leipzig"` (no space) wasn't matching `rb leipzig|red bull
+  leipzig`; `"San Diego F.C."` (with periods) wasn't matching `san diego
+  fc`; `"L.A. Galaxy"` (with periods) wasn't matching `\bla galaxy\b`;
+  `"SRFC"`/`"GFC"` (bare abbreviations for Stade Rennais/Girona) matched
+  nothing at all. All fixed in `extract.py`. Also added a bare `\bbahia\b`
+  alternative (was requiring the full `esporte clube bahia|ec bahia`).
+- **FansJerseyHub uses invented SEO nicknames instead of real team names
+  for several listings** — "La Roja" (Spain), "Eagle Squad" (Germany —
+  not even Germany's real nickname, the store just riffed on the eagle
+  crest), "Yellow Wall FC" (Borussia Dortmund), "West London Blue"
+  (Chelsea), "Parisians" (PSG), "Samurai Blue" (Japan), "Bafana Bafana"
+  (South Africa), "La Vinotinto" (Venezuela), "Los Cafeteros" (Colombia).
+  Verified every single one by cross-checking the listing's image
+  filename against the nickname (e.g. `spainhomefan.jpg` under a "La
+  Roja" title) — 100% consistent across every sample checked. **Did not**
+  add these to the shared `TEAM_PATTERNS` in `extract.py`: several are
+  genuinely ambiguous for OTHER tracked teams if the pattern ever fired
+  elsewhere — "La Roja" is also Chile's nickname (tracked as `chile`),
+  "Parisians" could mean Red Star FC (also a Paris club, also tracked),
+  "Eagle(s)" is Benfica's nickname too (`Águias`) and Nigeria's ("Super
+  Eagles"). Instead wrote a one-off script
+  (`fansjerseyhub_nicknames.py`, not part of the standing pipeline) that
+  matches the nickname AND cross-checks the image filename before
+  attaching an offer, scoped to only this one store's CSV. If this
+  store's nickname convention shows up again on a future pass, re-run
+  that same filename-verification approach rather than trusting the
+  nickname text alone.
+- **New false-positive class on eBay: "Personalized"/"Custom ... 3D
+  Shirt" listings** (found: Club Tijuana, Pumas UNAM) are unlicensed
+  sublimation reproductions with visibly low-quality printed (not
+  embroidered) crests/sponsor logos — same class as the Concept/AIRO and
+  JELEX exclusions already in `EXCLUDE_RE`, just not yet covered by it.
+  Dropped both by hand rather than generalizing the regex (only 2 samples
+  seen so far, not enough to safely characterize the pattern).
+- **7 genuinely new teams added**, all found via unmatched-title scans
+  and verified by photo before adding: Portland Timbers, Vancouver
+  Whitecaps FC, Orlando City SC (MLS), Málaga CF (Spain), Club León
+  (Liga MX, Mexico), Olympiacos FC (Greece), Guinea (national team). Team
+  metadata in `new_teams_batch15.py`, wired into both `gen_new_teams.py`
+  and `retro_gen.py` (and `gen_kids_teams.py` for consistency).
+- **Re-audited the whole catalog for the two bug classes fixed earlier
+  that same day (exact-duplicate offer URL across different product
+  ids; a men's-cut and women's-cut offer merged into one product) before
+  starting new mining** — found 0 more exact-duplicate-URL cases (that
+  class was already clean), but found **14 more instances of the
+  gender-merge bug** beyond the 1 already fixed
+  (`manutd-retro-202324-third`): `mancity-retro-202223-away`,
+  `mancity-retro-202324-away`, `mancity-retro-202324-home`,
+  `acmilan-retro-202324-away`, `argentina-retro-202425-away`,
+  `intermiami-retro-202425-away`, `italia-retro-202223-away`,
+  `manutd-retro-202122-away`, `manutd-retro-202223-away`,
+  `manutd-retro-202324-away`, `manutd-retro-202122-home`,
+  `manutd-retro-202324-home`, `manutd-retro-202223-third`,
+  `roma-retro-202324-home`. Fixed the same way: original id keeps only
+  the explicitly-female-signaling offer(s) (`ageGroup: "women"`), a new
+  `<id>-mens` product holds everything else (explicit "Men's" offers AND
+  unmarked ones — an unmarked generic-store listing is far more likely to
+  be the standard/men's cut than the niche women's cut). A precise
+  detector script (only flags a block when it has BOTH an explicit
+  female-signal offer title AND an explicit male-signal one, or a
+  female-signal offer with no `ageGroup` tag at all) is worth keeping
+  around and re-running after any large retro batch — the first, cruder
+  attempt at this check (any block merely containing a "(Ladies)" offer)
+  produced way too many false positives to be usable by hand.
+
 ## Safety rule (standing, do not change)
 
 Never automate login/"Join"/apply/write actions on any affiliate network
