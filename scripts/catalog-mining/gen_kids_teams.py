@@ -51,7 +51,7 @@ def existing_kids(content):
     for b in blocks:
         if 'ageGroup: "kids"' not in b:
             continue
-        teamm = re.search(r'teamKey: "([a-z]+)"', b)
+        teamm = re.search(r'teamKey: "([a-z0-9]+)"', b)
         typem = re.search(r'typeKey: "([a-z]+)"', b)
         if teamm and typem:
             out.add((teamm.group(1), typem.group(1)))

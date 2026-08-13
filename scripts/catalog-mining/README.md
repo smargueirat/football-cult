@@ -996,3 +996,73 @@ Never automate login/"Join"/apply/write actions on any affiliate network
 account (Awin, CJ, Rakuten, Impact.com, Skimlinks, Webgains) or any
 store. Only read-only HTTP fetches of already-known feed URLs are
 permitted here. The user does every login/apply/signup step themselves.
+
+## Daily pass (2026-08-13) — teamKey regex missing digits, ebay_mine.py never checks manual_exclusions.py
+
+Ran a normal incremental daily pass across all 11 Awin stores (3 —
+PlanetFoot, FansJerseyHub, ComoFC — returned a persistent HTTP 500 from
+`ui.awin.com` across 6 retries over ~10 minutes on this run; a
+concurrent separate pass later the same day fetched all 11 fine, so
+this was transient, not a real outage), MysteryShirtClub, and
+`ebay_mine.py` (current season only, all teams, 384 picks). Two real
+pipeline bugs found:
+
+- **`TEAM_RE`'s `[a-z]+` character class in `split_picks.py`,
+  `refresh.py`, and `gen_kids_teams.py` doesn't match a `teamKey`
+  containing a digit** (`hannover96`, `versailles78` — both real,
+  already-catalogued teams). `existing_products()` silently skips any
+  block it can't parse a team from, so both teams were invisible to the
+  new-vs-add classifier: a fresh eBay pick for `hannover96|home`
+  (identical URL/price/title to the offer already on file) got
+  classified as a brand-new product, which would have created a
+  duplicate id if applied blindly. Caught by hand-checking each
+  "new_products" entry against the catalog before generating blocks
+  (as this doc already recommends) rather than by any automatic guard.
+  Fixed all three regexes to `[a-z0-9]+`. Since `refresh.py` has the
+  same bug, this also means offer-refresh passes have been silently
+  skipping these two teams entirely (missed price updates, not
+  corrupted data) — worth a manual price spot-check for hannover96 and
+  versailles78 next time.
+- **`ebay_mine.py` (unlike `ebay_mine_full.py`) never imports
+  `manual_exclusions.py`** — `pick_for_team_type()` filters by
+  `JERSEY_RE`/`EXCLUDE_RE`/`ACCESSORY_RE`/price/team/type only, so a
+  previously-blocklisted eBay listing (wrong-brand Wales listing,
+  `ebay.com/itm/206250291403`) can resurface through the plain
+  current-season miner even though it's permanently excluded from the
+  full miner — it did resurface, via a plain `refresh.py --apply` of
+  this run's eBay ADD offers, and had to be pulled back out by hand
+  after applying. Also found 4 more blocklisted links already sitting
+  in `products.ts` before this pass even started (2 BSTNIT heritage
+  reissues, the Denmark goalkeeper "86" heritage reissue on both
+  FootStoreES/FR — that product had ONLY those two blocklisted offers,
+  so the whole product was deleted, not just the offers). Not fixed at
+  the pipeline level yet (`ebay_mine.py` would need the same
+  `is_manually_excluded()` import as `ebay_mine_full.py`, and
+  `refresh.py` would need it too so a blocklisted offer can't be
+  reinserted by ANY store's apply step) — worked around this pass by
+  re-grepping every `MANUAL_EXCLUDE_LINK_SUBSTRINGS` entry against the
+  freshly-updated `products.ts` after every apply step, per the
+  standing check already documented above. **This standing check needs
+  to keep happening by hand until manual_exclusions.py is actually
+  wired into `ebay_mine.py` and `refresh.py`.**
+
+Also found (and fixed, same move-to-the-right-sibling-block approach as
+before) the still-unfixed "prematch season-pair duplicate" bug
+recurring again for 6 offers (Liverpool/Man Utd/Real Madrid prematch,
+PSG/Real Madrid home, Ajax prematch) — same root cause as documented
+above (`refresh.py` matches on team+type only, not season, so a store's
+offer can land in whichever of two same-team-type products happens to
+match first). The exact-duplicate-offer-URL and gender-merge audits
+were both clean this pass (0 flagged).
+
+New products this pass were unusually thin (1: Portland Timbers away,
+eBay) after dropping several false positives: two Jordan "national
+team" picks that were actually a Nike Jordan-brand PSG kit and Brazil's
+goalkeeper (real name Jordan) — the exact collision class already
+documented above — and 3 "Personalized/Custom ... 3D Shirt" unlicensed
+reproductions (Club Tijuana, Pumas UNAM, Club León), same class as the
+Tijuana/Pumas UNAM examples already documented above. Also dropped one
+more "S-5XL"-sizing print-on-demand-pattern listing (Norway, no
+"Personalized"/"Custom" wording but same tell-tale wide generic size
+range as the confirmed unlicensed ones) and 2 explicitly-"Personalized"
+Cruz Azul offers from the add-offers batch, on the same suspicion.

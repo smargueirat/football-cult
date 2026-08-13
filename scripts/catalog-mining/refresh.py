@@ -1,7 +1,7 @@
 import re, json, sys
 
 ID_RE = re.compile(r'^    id: "([^"]+)",$', re.M)
-TEAM_RE = re.compile(r'^    teamKey: "([a-z]+)",$', re.M)
+TEAM_RE = re.compile(r'^    teamKey: "([a-z0-9]+)",$', re.M)
 TYPE_RE = re.compile(r'^    typeKey: "([a-z]+)",$', re.M)
 
 def split_blocks(content):

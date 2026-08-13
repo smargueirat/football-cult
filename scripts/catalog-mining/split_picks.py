@@ -9,7 +9,7 @@ def existing_products():
     head, blocks, tail = split_blocks(content)
     existing = {}
     for b in blocks:
-        teamm = re.search(r'teamKey: "([a-z]+)"', b)
+        teamm = re.search(r'teamKey: "([a-z0-9]+)"', b)
         typem = re.search(r'typeKey: "([a-z]+)"', b)
         seasonm = re.search(r'season: "([^"]+)"', b)
         if not teamm or not typem:
