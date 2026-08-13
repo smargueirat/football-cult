@@ -26357,6 +26357,18 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45533542005&a=3013769&m=65912", title: "Maillot de entrenamiento Ajax Ámsterdam 2025/26", inStock: true, sizes: ["XS", "S", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp1753_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=eddaf668f16d023893adbd52fb68aa7a885cae84" },
       { store: "PlanetFoot", price: 29.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ajax-amsterdam-training-tiro-25-homme-2025-26-blanc%3Fvariant%3D50821163549013", title: "Maillot Ajax Amsterdam Training Tiro 25 Homme 2025/26 Blanc", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-ajax-amsterdam-adidas-training-tiro-25-Homme-2025_26-PlanetFoot-Blanc1.webp?v=1748098504" },
+    ],
+  },
+{
+    id: "ajax-training-jacket-2026",
+    teamKey: "ajax",
+    season: "2026",
+    typeKey: "training",
+    colorHex: "#D2122E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
       { store: "SportIsGoodES", price: 44.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44553261444&a=3013769&m=65906", title: "Camiseta de entrenamiento Ajax Amsterdam 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jm7356_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=b52b40347d0f50328c481439ec3c5165462ffafd" },
     ],
   },
