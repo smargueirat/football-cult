@@ -106,6 +106,17 @@ export default function ProductCard3D({ product }: { product: Product }) {
     prefetchDetailPhoto(photo);
   }
 
+  // Adelanta la descarga de la foto en el tamaño que pide la ficha de
+  // la camiseta (bien distinto del tamaño de la card) apenas el dedo
+  // toca la card en celular, o el mouse entra en desktop -- para cuando
+  // termina de cargar la página siguiente, la foto ya está lista.
+  const prefetched = useRef(false);
+  function handlePrefetchPhoto() {
+    if (prefetched.current) return;
+    prefetched.current = true;
+    prefetchDetailPhoto(photo);
+  }
+
   return (
     <Link
       ref={cardRef}
