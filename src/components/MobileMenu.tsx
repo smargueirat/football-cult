@@ -47,8 +47,15 @@ export default function MobileMenu() {
       {open && (
         <Portal>
           <div className="fixed inset-0 z-[60]">
+            {/* Antes tenía backdrop-blur-[2px]: un blur de pantalla
+                completa sobre un fondo que ahora anima todo el tiempo
+                (los orbes bokeh de StadiumWatermark) es una combinación
+                cara para el navegador, y se sentía como que el menú
+                tardaba/se trababa al abrir en celulares de gama media.
+                Un fondo más oscuro sin blur separa igual de bien sin
+                ese costo. */}
             <div
-              className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"
+              className="absolute inset-0 bg-black/35"
               onClick={() => setOpen(false)}
             />
             <div className="shadow-vintage-lg solid-panel absolute left-0 top-0 h-screen w-72 border-r border-[#C9A24B]/25 p-6">

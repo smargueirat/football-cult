@@ -12,18 +12,19 @@ const AUTO_ADVANCE_MS = 5500;
 // del catálogo (no cualquier oferta del producto: la URL puntual que
 // se ve acá) y se eligió la mejor concreta de cada categoría, con una
 // persona puesta la camiseta siempre que existiera esa toma en el
-// catálogo (selecciones/clubes/niños la tienen -- se encontraron vía
-// la variante "apparel_on_model" que algunos feeds de Awin traen). Ni
-// retro ni mujer tienen ninguna foto con modelo real en todo el
-// catálogo -- se revisó a mano -- así que ahí queda la mejor foto de
-// producto disponible. Se usa la URL de alta resolución del proveedor
-// directamente (no el thumbnail de 200px que guarda la oferta) para
-// que se vea nítida a este tamaño.
+// catálogo (selecciones/clubes/niños/mujer la tienen -- selecciones,
+// clubes y niños se encontraron vía la variante "apparel_on_model" que
+// algunos feeds de Awin traen; la de mujer es una oferta de eBay del
+// Tottenham away con modelo real). Retro es la única sin ninguna foto
+// con modelo en todo el catálogo (se revisó a mano), así que ahí queda
+// la mejor foto de producto disponible. Se usa la URL de alta
+// resolución del proveedor directamente (no el thumbnail chico que
+// guarda la oferta) para que se vea nítida a este tamaño.
 const CURATED_SLIDE_PHOTOS: string[] = [
   "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jm8396_4_apparel_on_model_standard_view_white.webp", // selecciones: Argentina 2026, con modelo
   "https://cdn.blazimg.com/1800/product/a/d/adidas_ji9511_3_apparel_on_model_standard_view_white.webp", // clubes: Arsenal 25/26, con modelo
   "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cantona_7_Retro_Manchester_United_Home_Jersey_199294_2.webp?v=1766469606", // retro: Cantona 7, Man United 1992/94
-  "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666272784_germany-home-shirt-ladies.jpg?v=1763224430", // mujer: Alemania, corte de mujer
+  "https://i.ebayimg.com/images/g/3yYAAOSwN8NniF15/s-l1600.jpg", // mujer: Tottenham away 2024/25, con modelo
   "https://cdn.blazimg.com/1800/product/2/0/2025_adidas_jn8887_3_apparel_on_model_standard_view_white.webp", // niños: Real Madrid, con modelo
 ];
 
