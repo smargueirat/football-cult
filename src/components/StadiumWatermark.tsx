@@ -5,24 +5,17 @@ import { useEffect, useRef } from "react";
 
 const MAX_TILT_DEG = 2.5;
 
-// Cuarto intento -- se pidió explícitamente algo nuevo de verdad, no
-// otra variación del mismo resultado, pero conservando la cancha
-// visible (no taparla con algo abstracto como los orbes anteriores).
-// Dos ideas nuevas, ninguna probada antes en este fondo:
-//
-// 1) Inclinación 3D sutil que sigue el mouse -- el mismo mecanismo que
-//    ya funcionó bien en las tarjetas de producto (ProductCard3D), acá
-//    aplicado a la foto de fondo entera. Dif clave: es UNA sola foto
-//    (nunca se duplica ni se desalinea, así que no puede "verse rota"
-//    como el intento del scroll-parallax) y el ángulo es mínimo (2.5°
-//    contra los 9° de las tarjetas -- a pantalla completa, más que eso
-//    marea). Solo en desktop con mouse de verdad (pointer: fine): en
-//    celular la foto queda fija, cero riesgo de mareo.
-// 2) Rayos de luz diagonales tipo "luz de reflector atravesando el
-//    techo del estadio", con mix-blend-mode: screen para que iluminen
-//    la propia foto en vez de tapar nada -- lenguaje visual distinto a
-//    los intentos anteriores (nunca hubo formas rectas/diagonales,
-//    solo manchas redondas u ondas verticales).
+// Quinto intento -- el anterior (rayos diagonales + inclinación con el
+// mouse) resultó imperceptible: los rayos eran finitos y el ciclo
+// (26-38s) demasiado largo como para notar el cambio mirando la
+// página unos segundos, y la inclinación necesitaba mover el mouse a
+// propósito. Esta vez el elemento vivo es grande y rápido de verdad --
+// tres manchas de color (dorado y verde bosque, los colores de la
+// marca) del tamaño de la pantalla, en movimiento continuo con un
+// ciclo corto (14-20s) para que el cambio sea obvio en cualquier
+// vistazo, sin necesitar que el usuario haga nada. La foto de la
+// cancha sigue de fondo, ahora un poco más visible (opacity 0.2), y la
+// inclinación con el mouse en desktop se mantiene como plus.
 export default function StadiumWatermark() {
   const photoRef = useRef<HTMLDivElement>(null);
 
@@ -74,17 +67,18 @@ export default function StadiumWatermark() {
           alt=""
           fill
           priority
-          className="object-cover opacity-[0.18]"
+          className="object-cover opacity-[0.2]"
         />
       </div>
 
       {/* pátina cálida para que la foto se integre con la paleta marfil */}
       <div className="absolute inset-0 bg-[#EDE0C4] mix-blend-color opacity-45" />
 
-      {/* rayos de luz diagonales -- iluminan la foto en vez de taparla */}
-      <div className="god-ray god-ray-1" />
-      <div className="god-ray god-ray-2" />
-      <div className="god-ray god-ray-3" />
+      {/* manchas de color en movimiento -- el elemento vivo, grande y
+          rápido a propósito para que se note sin tener que buscarlo */}
+      <div className="aurora-blob aurora-blob-1" />
+      <div className="aurora-blob aurora-blob-2" />
+      <div className="aurora-blob aurora-blob-3" />
 
       {/* viñeta radial, profundidad de estadio nocturno */}
       <div

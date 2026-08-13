@@ -168,13 +168,15 @@ export default function HeroCarousel() {
             </button>
           </div>
 
-          <div className="relative order-2 flex aspect-square h-[150px] items-center justify-center sm:h-auto sm:w-full">
+          <div className="relative order-2 flex aspect-square h-[150px] items-center justify-center overflow-hidden sm:h-auto sm:w-full">
             {slide.photo && (
               <img
                 src={getDisplaySrc(slide.photo, 600)}
                 alt=""
                 aria-hidden
-                className="h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.45)]"
+                className={`h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.45)] ${
+                  i === active ? "hero-photo-kenburns" : ""
+                }`}
               />
             )}
           </div>
