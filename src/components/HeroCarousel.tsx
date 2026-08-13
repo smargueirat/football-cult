@@ -1,13 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import {
-  Product,
-  getAgeGroup,
-  isVintageRetro,
-  products,
-  teamCategory,
-} from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { getDisplaySrc } from "@/lib/images";
@@ -15,48 +8,24 @@ import { getDisplaySrc } from "@/lib/images";
 const SLIDE_COUNT = 5;
 const AUTO_ADVANCE_MS = 5500;
 
-// Foto curada a mano por slide -- se revisaron las fotos reales
-// disponibles por categoría y se eligió la mejor concreta de cada una
-// (con una persona puesta la camiseta siempre que el catálogo tuviera
-// esa toma; si no, la mejor foto de producto disponible), en vez de
-// dejarlo en manos de una preferencia de equipo genérica. Si alguno de
-// estos productos puntuales llegara a desaparecer del catálogo (lo
-// borra una limpieza de datos, por ejemplo), cae al mejor disponible
-// de esa categoría para que el slide nunca quede vacío.
-const CURATED_SLIDE_IDS = [
-  "arg-home-2026", // selecciones: Argentina 2026, con modelo
-  "arsenal-away-202526", // clubes: Arsenal 25/26, con modelo
-  "manutd-retro-199294-home", // retro: Cantona 7, Man United 1992/94
-  "alemania-retro-202223-home", // mujer: Alemania, corte de mujer
-  "realmadrid-home-kids", // niños: Real Madrid, con modelo
-] as const;
-
-function matchesSlide(index: number, p: Product): boolean {
-  switch (index) {
-    case 0:
-      return teamCategory[p.teamKey] === "national";
-    case 1:
-      return teamCategory[p.teamKey] === "club";
-    case 2:
-      return isVintageRetro(p);
-    case 3:
-      return getAgeGroup(p) === "women";
-    default:
-      return getAgeGroup(p) === "kids";
-  }
-}
-
-// Se calcula una sola vez a nivel módulo (no en cada render): el
-// catálogo no cambia en caliente durante una sesión.
-function pickSlideProduct(index: number): Product | undefined {
-  const curated = products.find((p) => p.id === CURATED_SLIDE_IDS[index]);
-  if (curated && curated.offers.some((o) => o.imageUrl)) return curated;
-  return products.find(
-    (p) => matchesSlide(index, p) && p.offers.some((o) => o.imageUrl)
-  );
-}
-
-const SLIDE_PRODUCTS = Array.from({ length: SLIDE_COUNT }, (_, i) => pickSlideProduct(i));
+// Foto exacta curada a mano por slide -- se revisaron las fotos reales
+// del catálogo (no cualquier oferta del producto: la URL puntual que
+// se ve acá) y se eligió la mejor concreta de cada categoría, con una
+// persona puesta la camiseta siempre que existiera esa toma en el
+// catálogo (selecciones/clubes/niños la tienen -- se encontraron vía
+// la variante "apparel_on_model" que algunos feeds de Awin traen). Ni
+// retro ni mujer tienen ninguna foto con modelo real en todo el
+// catálogo -- se revisó a mano -- así que ahí queda la mejor foto de
+// producto disponible. Se usa la URL de alta resolución del proveedor
+// directamente (no el thumbnail de 200px que guarda la oferta) para
+// que se vea nítida a este tamaño.
+const CURATED_SLIDE_PHOTOS: string[] = [
+  "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jm8396_4_apparel_on_model_standard_view_white.webp", // selecciones: Argentina 2026, con modelo
+  "https://cdn.blazimg.com/1800/product/a/d/adidas_ji9511_3_apparel_on_model_standard_view_white.webp", // clubes: Arsenal 25/26, con modelo
+  "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cantona_7_Retro_Manchester_United_Home_Jersey_199294_2.webp?v=1766469606", // retro: Cantona 7, Man United 1992/94
+  "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1666272784_germany-home-shirt-ladies.jpg?v=1763224430", // mujer: Alemania, corte de mujer
+  "https://cdn.blazimg.com/1800/product/2/0/2025_adidas_jn8887_3_apparel_on_model_standard_view_white.webp", // niños: Real Madrid, con modelo
+];
 
 export default function HeroCarousel() {
   const { t } = useLanguage();
@@ -81,7 +50,7 @@ export default function HeroCarousel() {
     () =>
       t.heroSlides.map((text, i) => ({
         ...text,
-        product: SLIDE_PRODUCTS[i],
+        photo: CURATED_SLIDE_PHOTOS[i],
       })),
     [t.heroSlides]
   );
@@ -146,7 +115,7 @@ export default function HeroCarousel() {
 
   return (
     <div
-      className="vintage-dark shadow-vintage-lg relative min-h-[300px] overflow-hidden rounded-2xl sm:min-h-[360px] sm:rounded-3xl"
+      className="vintage-dark shadow-vintage-lg relative h-[420px] overflow-hidden rounded-2xl sm:h-[400px] sm:rounded-3xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -157,11 +126,16 @@ export default function HeroCarousel() {
     >
       <div className="stadium-beam-a pointer-events-none absolute inset-0 opacity-60" aria-hidden />
 
+      {/* Los slides SIEMPRE están en absolute (nunca "relative"/en el
+          flujo normal) -- así el tamaño del recuadro nunca depende de
+          cuánto texto tenga el slide activo. Antes solo el activo era
+          "relative", así que el recuadro crecía o encogía según el
+          largo del subtítulo de cada uno al ir cambiando. */}
       {slides.map((slide, i) => (
         <div
           key={slide.title}
-          className={`grid gap-4 px-6 py-8 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:items-center sm:gap-8 sm:px-12 sm:py-10 ${
-            i === active ? "relative opacity-100" : "pointer-events-none absolute inset-0 opacity-0"
+          className={`absolute inset-0 grid grid-cols-1 content-center gap-4 px-6 py-8 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:items-center sm:gap-8 sm:px-12 sm:py-10 ${
+            i === active ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           aria-hidden={i !== active}
         >
@@ -186,17 +160,14 @@ export default function HeroCarousel() {
           </div>
 
           <div className="relative order-1 flex aspect-[4/3] items-center justify-center sm:order-2 sm:aspect-square">
-            {slide.product ? (
+            {slide.photo && (
               <img
-                src={getDisplaySrc(
-                  slide.product.offers.find((o) => o.imageUrl)!.imageUrl!,
-                  600
-                )}
+                src={getDisplaySrc(slide.photo, 600)}
                 alt=""
                 aria-hidden
                 className="h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.45)]"
               />
-            ) : null}
+            )}
           </div>
         </div>
       ))}
