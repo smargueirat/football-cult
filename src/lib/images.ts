@@ -27,3 +27,19 @@ export function getDisplaySrc(url: string, width: number): string {
   }
   return `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=${width}&output=webp`;
 }
+
+// La ficha de la camiseta pide la foto en un ancho distinto (1200w) al
+// que ya se cargó en la card del catálogo (hasta 600w) -- por más que
+// sea la misma foto, es una URL distinta, así que siempre es un pedido
+// nuevo. Para wsrv.nl (el proxy que se usa para fotos que no vienen de
+// Shopify/eBay/Awin) la PRIMERA vez que se pide un ancho puntual es un
+// viaje real: wsrv tiene que ir a buscar la foto original y recién
+// devolverla -- eso es lo que se sentía como demora al entrar a una
+// camiseta desde el celular. Esto arranca esa descarga en cuanto el
+// dedo toca la card (o el mouse entra, en desktop), así para cuando
+// termina de cargar la página siguiente la foto ya está lista o casi.
+export function prefetchDetailPhoto(url: string | undefined): void {
+  if (!url || typeof window === "undefined") return;
+  const img = new window.Image();
+  img.src = getDisplaySrc(url, 1200);
+}
