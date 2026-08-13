@@ -339,7 +339,16 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                 <p className="mb-3 text-xs text-[#5b5442]">{t.detail.currencyNote}</p>
 
                 <div className="flex flex-col gap-3">
-                  {sortedOffers.map((offer) => {
+                  {/* Las ofertas agotadas (inStock: false) no se muestran --
+                      si ya no existe la oferta, no tiene sentido dejarla
+                      atenuada en la lista. Las que sí siguen en stock pero
+                      no envían al país del usuario se mantienen visibles
+                      con el sello "no disponible en {país}" (más abajo),
+                      porque ahí sí hay algo real que explicar. */}
+                  {sortedOffers.filter((offer) => offer.inStock).length === 0 && (
+                    <p className="text-sm text-[#8a8a84]">{t.detail.allSoldOut}</p>
+                  )}
+                  {sortedOffers.filter((offer) => offer.inStock).map((offer) => {
                     const ships = shipsHere(offer);
                     const match = offer.inStock && ships && matchesSize(offer);
                     const isBest = offer.store === bestStore && match;
@@ -383,9 +392,7 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               <p className="text-xs text-[#a8926a]">
                                 {offer.title ? translateTitleVocabulary(offer.title, locale) : `${team} ${type}`}
                               </p>
-                              {!offer.inStock ? (
-                                <p className="text-xs text-[#b3aa8f]">{t.product.soldOut}</p>
-                              ) : !ships ? null : !matchesSize(offer) ? (
+                              {!ships ? null : !matchesSize(offer) ? (
                                 <p className="text-xs text-[#b3aa8f]">
                                   {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
                                 </p>
