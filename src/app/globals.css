@@ -104,37 +104,11 @@ body {
   }
 }
 
-/* --- Fondo "estadio nocturno vivo" (v2-preview) ---
-   Evoluciona el watermark estático de siempre en una escena con
-   varias capas de movimiento MUY lento e independiente entre sí --
-   cada una por separado es casi imperceptible, pero juntas dan la
-   sensación de un estadio real respirando detrás del contenido, sin
-   competir nunca con lo que hay encima (todo pointer-events-none,
-   -z-10, opacidades bajas). prefers-reduced-motion las congela a
-   todas via la regla global de arriba. */
-
-/* Respiración lenta tipo Ken Burns sobre la foto de la cancha -- nunca
-   vuelve al mismo encuadre exacto en menos de un minuto, así que no se
-   percibe como un loop, se siente como una cámara fija de estadio. */
-@keyframes stadium-photo-breathe {
-  0% {
-    transform: scale(1) translate(0, 0);
-  }
-  50% {
-    transform: scale(1.07) translate(-1%, 1%);
-  }
-  100% {
-    transform: scale(1) translate(0, 0);
-  }
-}
-.stadium-photo-breathe {
-  animation: stadium-photo-breathe 48s ease-in-out infinite;
-}
-
-/* Dos reflectores independientes, con distinto tamaño/ángulo/velocidad,
-   para que se lean como dos torres de luz reales barriendo la cancha
-   en vez de un único glow -- offset de fase via animation-delay
-   negativo para que no arranquen sincronizados. */
+/* Reflector cálido de estadio -- lo sigue usando el CTA del carrusel
+   del home (HeroCarousel) como detalle de luz sobre el recuadro. El
+   watermark de fondo de todo el sitio (StadiumWatermark) ya no usa
+   animación ambiental propia: su profundidad ahora viene del scroll
+   real del usuario, no de un loop que se mueve solo. */
 @keyframes stadium-beam-sweep-a {
   0%,
   100% {
@@ -146,45 +120,10 @@ body {
     opacity: 0.75;
   }
 }
-@keyframes stadium-beam-sweep-b {
-  0%,
-  100% {
-    transform: translate(30%, 10%) rotate(5deg);
-    opacity: 0.25;
-  }
-  50% {
-    transform: translate(-30%, -8%) rotate(-3deg);
-    opacity: 0.6;
-  }
-}
 .stadium-beam-a {
   background: radial-gradient(ellipse 45% 70% at 50% 50%, rgba(231, 197, 103, 0.5) 0%, transparent 68%);
   filter: blur(30px);
   animation: stadium-beam-sweep-a 34s ease-in-out infinite;
-}
-.stadium-beam-b {
-  background: radial-gradient(ellipse 35% 55% at 50% 50%, rgba(201, 162, 75, 0.4) 0%, transparent 70%);
-  filter: blur(36px);
-  animation: stadium-beam-sweep-b 41s ease-in-out infinite;
-  animation-delay: -14s;
-}
-
-/* Polvo/atmósfera suspendida en el aire de la cancha -- misma receta de
-   puntitos que .paper-texture pero mucho más grande y a la deriva, muy
-   lento, para que se sienta suspendida en el aire en vez de impresa. */
-@keyframes stadium-dust-drift {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-3%, -4%);
-  }
-}
-.stadium-dust-drift {
-  background-image: radial-gradient(rgba(243, 216, 137, 0.5) 1px, transparent 1px);
-  background-size: 34px 34px;
-  opacity: 0.12;
-  animation: stadium-dust-drift 70s linear infinite alternate;
 }
 
 /* --- Sistema vintage: tarjetas, plaquetas, texturas --- */
