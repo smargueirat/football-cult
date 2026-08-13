@@ -116,7 +116,7 @@ export default function HeroCarousel() {
 
   return (
     <div
-      className="vintage-dark shadow-vintage-lg relative h-[460px] overflow-hidden rounded-2xl sm:h-[400px] sm:rounded-3xl"
+      className="vintage-dark shadow-vintage-lg relative h-[280px] overflow-hidden rounded-2xl sm:h-[400px] sm:rounded-3xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -135,24 +135,27 @@ export default function HeroCarousel() {
       {slides.map((slide, i) => (
         <div
           key={slide.title}
-          className={`absolute inset-0 grid grid-cols-1 content-start gap-3 px-6 pb-12 pt-6 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:content-center sm:items-center sm:gap-8 sm:px-12 sm:py-10 ${
+          className={`absolute inset-0 grid grid-cols-[1fr_auto] content-center items-center gap-3 px-5 py-5 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:gap-8 sm:px-12 sm:py-10 ${
             i === active ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           aria-hidden={i !== active}
         >
-          {/* Bloque de texto a una altura fija de arranque en mobile
-              (content-start, no content-center) -- así el botón dorado
-              siempre termina en el mismo lugar sea cual sea el largo
-              del subtítulo de cada slide, y nunca se mete en la zona de
-              los puntitos de abajo (reservada con el pb-12 de arriba). */}
-          <div className="relative z-10 order-2 flex flex-col items-start gap-1.5 text-left sm:order-1 sm:gap-2">
+          {/* Foto siempre cuadrada (nunca una caja corta y ancha que la
+              achicaba) -- mismo layout de 2 columnas en mobile y
+              escritorio, la única diferencia es cuánto lugar ocupa cada
+              lado. line-clamp en el subtítulo asegura que el bloque de
+              texto mida siempre lo mismo sea cual sea el largo real de
+              cada slide, así el botón dorado nunca se corre de lugar. */}
+          <div className="relative z-10 order-1 flex flex-col items-start gap-1 text-left sm:gap-2">
             <span className="font-tagline text-[10px] uppercase text-[#E7C567] sm:text-xs">
               {slide.eyebrow}
             </span>
-            <h1 className="font-vintage text-xl leading-tight text-[#F3E9C9] sm:text-4xl">
+            <h1 className="font-vintage text-lg leading-tight text-[#F3E9C9] sm:text-4xl">
               {slide.title}
             </h1>
-            <p className="max-w-md text-xs text-[#D9CFAE] sm:text-sm">{slide.subtitle}</p>
+            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:text-sm">
+              {slide.subtitle}
+            </p>
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -165,7 +168,7 @@ export default function HeroCarousel() {
             </button>
           </div>
 
-          <div className="relative order-1 flex h-[150px] items-center justify-center sm:order-2 sm:h-auto sm:aspect-square">
+          <div className="relative order-2 flex aspect-square h-[150px] items-center justify-center sm:h-auto sm:w-full">
             {slide.photo && (
               <img
                 src={getDisplaySrc(slide.photo, 600)}
