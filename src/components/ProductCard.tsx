@@ -17,7 +17,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { getDisplaySrc } from "@/lib/images";
+import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
@@ -65,9 +65,21 @@ export default function ProductCard({ product }: { product: Product }) {
     }
   }, [photo]);
 
+  // Adelanta la descarga de la foto en el tamaño que pide la ficha de
+  // la camiseta apenas el dedo toca la card en celular, o el mouse
+  // entra en desktop -- mismo motivo que el pattern de ProductCard3D.
+  const prefetched = useRef(false);
+  function handlePrefetchPhoto() {
+    if (prefetched.current) return;
+    prefetched.current = true;
+    prefetchDetailPhoto(photo);
+  }
+
   return (
     <Link
       href={`/camiseta/${product.id}`}
+      onMouseEnter={handlePrefetchPhoto}
+      onTouchStart={handlePrefetchPhoto}
       className="vintage-card group flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
     >
       <div

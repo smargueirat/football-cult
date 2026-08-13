@@ -17,7 +17,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
-import { getDisplaySrc } from "@/lib/images";
+import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
@@ -85,12 +85,25 @@ export default function ProductCard3D({ product }: { product: Product }) {
     setTilting(false);
   }
 
+  // Adelanta la descarga de la foto en el tamaño que pide la ficha de
+  // la camiseta (bien distinto del tamaño de la card) apenas el dedo
+  // toca la card en celular, o el mouse entra en desktop -- para cuando
+  // termina de cargar la página siguiente, la foto ya está lista.
+  const prefetched = useRef(false);
+  function handlePrefetchPhoto() {
+    if (prefetched.current) return;
+    prefetched.current = true;
+    prefetchDetailPhoto(photo);
+  }
+
   return (
     <Link
       ref={cardRef}
       href={`/camiseta/${product.id}`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onMouseEnter={handlePrefetchPhoto}
+      onTouchStart={handlePrefetchPhoto}
       style={{
         transform: `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${
           tilting ? "scale3d(1.02, 1.02, 1.02)" : "scale3d(1, 1, 1)"
