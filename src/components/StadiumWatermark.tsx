@@ -1,14 +1,18 @@
 import Image from "next/image";
 
-// Los dos intentos anteriores (respiración+reflectores+polvo; después
-// scroll-parallax con la misma foto duplicada en distintas capas) no
-// convencieron -- el segundo en particular se veía "borroso" porque
-// dos copias de la misma foto se separaban visualmente al scrollear.
-// Esta versión vuelve a una sola foto fija, sin transformar ni
-// duplicar (cero riesgo de artefactos), y deja lo "dinámico" a cargo
-// de un único reflector cálido que barre muy lento -- el mismo recurso
-// que ya funcionó bien en el CTA del carrusel del home. Nada se mueve
-// con el scroll, así que no hay forma de que maree.
+// Tercer intento, esta vez sin tocar la foto para nada -- los dos
+// anteriores (respiración+reflectores+polvo; después scroll-parallax
+// con la foto duplicada en capas) fallaron por el mismo lado: cualquier
+// manipulación de la propia foto (blur, escala, desplazamiento) termina
+// leyéndose como un error visual, no como atmósfera. Esta versión deja
+// la foto exactamente como estaba en la base original (fija, sin
+// transformar, sin duplicar) y pone lo "épico" en un elemento nuevo que
+// nunca puede verse "roto": orbes de luz dorada fuera de foco, como
+// reflectores de estadio de noche vistos en bokeh, flotando
+// larguísimo (70-105s por ciclo) y a baja opacidad. Es pura animación
+// CSS de transform/opacity -- la respeta automáticamente la regla
+// global de prefers-reduced-motion (ver arriba en este archivo), sin
+// necesitar JS ni listener de scroll.
 export default function StadiumWatermark() {
   return (
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
@@ -17,14 +21,17 @@ export default function StadiumWatermark() {
         alt=""
         fill
         priority
-        className="object-cover opacity-[0.16]"
+        className="object-cover opacity-[0.12]"
       />
 
       {/* pátina cálida para que la foto se integre con la paleta marfil */}
       <div className="absolute inset-0 bg-[#EDE0C4] mix-blend-color opacity-45" />
 
-      {/* único reflector, muy lento y sutil -- el único elemento vivo */}
-      <div className="stadium-beam-a absolute inset-0" />
+      {/* orbes de luz dorada en bokeh -- el elemento nuevo, único vivo */}
+      <div className="bokeh-orb bokeh-orb-1" />
+      <div className="bokeh-orb bokeh-orb-2" />
+      <div className="bokeh-orb bokeh-orb-3" />
+      <div className="bokeh-orb bokeh-orb-4" />
 
       {/* viñeta radial, profundidad de estadio nocturno */}
       <div
