@@ -21,6 +21,7 @@ import { getDisplaySrc } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
+import Spotlight from "./Spotlight";
 
 const MAX_TILT_DEG = 9;
 
@@ -74,15 +75,24 @@ export default function ProductCard3D({ product }: { product: Product }) {
   function handleMouseMove(e: React.MouseEvent<HTMLAnchorElement>) {
     if (reducedMotion.current || !cardRef.current) return;
     const rect = cardRef.current.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width - 0.5;
-    const py = (e.clientY - rect.top) / rect.height - 0.5;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const px = x / rect.width - 0.5;
+    const py = y / rect.height - 0.5;
     setTilt({ x: -py * MAX_TILT_DEG, y: px * MAX_TILT_DEG });
     setTilting(true);
+    // El brillo (Spotlight) lee estas variables directo del DOM en vez
+    // de pasar por estado de React -- se actualizan en cada mousemove,
+    // no hace falta un re-render por cada píxel que se mueve el mouse.
+    cardRef.current.style.setProperty("--spot-x", `${x}px`);
+    cardRef.current.style.setProperty("--spot-y", `${y}px`);
+    cardRef.current.style.setProperty("--spot-opacity", "1");
   }
 
   function handleMouseLeave() {
     setTilt({ x: 0, y: 0 });
     setTilting(false);
+    cardRef.current?.style.setProperty("--spot-opacity", "0");
   }
 
   return (
@@ -100,8 +110,9 @@ export default function ProductCard3D({ product }: { product: Product }) {
           ? `${-tilt.y * 1.8}px ${22 - tilt.x * 1.2}px 38px -10px rgba(43, 32, 10, 0.55), ${-tilt.y * 0.6}px ${8 - tilt.x * 0.4}px 14px -6px rgba(43, 32, 10, 0.35)`
           : "0 14px 28px -10px rgba(43, 32, 10, 0.45)",
       }}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform"
     >
+      <Spotlight className="z-20" />
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
         style={{
