@@ -21,11 +21,19 @@ interface BestOfferResult {
 // un placeholder/estimación, no lo que el comprador termina pagando
 // (ver useLiveOfferTotal). Sin esto, una oferta de eBay puede quedar
 // marcada como "mejor precio" en el catálogo cuando, sumado el envío
-// real a tu país, en realidad sale más cara que otra tienda. Acá se pide
-// el dato real solo para la oferta de eBay más barata según el
-// catálogo (si el producto tuviera más de una -- caso raro de datos
-// duplicados en la minería -- alcanza con esa para decidir si eBay le
-// gana o le pierde al resto, que ya tiene envío real cargado).
+// real a tu país, en realidad sale más cara que otra tienda.
+//
+// Importante para performance: el dato real solo se pide cuando eBay YA
+// es el líder según el precio estático (placeholder) -- si otra tienda
+// ya le gana sin ese chequeo, el envío real de eBay (nunca negativo)
+// jamás puede hacerla ganar, así que no hay nada que verificar. Antes se
+// pedía el dato en vivo para CUALQUIER producto que tuviera una oferta
+// de eBay, sea o no la más barata -- en una grilla de 24 tarjetas eso
+// disparaba decenas de pedidos en vivo simultáneos (bug real reportado:
+// "está lento, tarda en entrar a la camiseta"), saturando la conexión
+// del navegador justo cuando también tiene que cargar la navegación y
+// las fotos. Este chequeo reduce los pedidos a solo los productos donde
+// el resultado realmente puede cambiar.
 export function useBestOfferForCountry(
   product: Product,
   countryCode: CountryCode
@@ -35,32 +43,24 @@ export function useBestOfferForCountry(
     [product.offers, countryCode]
   );
 
-  const cheapestEbay = useMemo(() => {
-    const ebayOffers = eligible.filter((o) => o.store === "eBay");
-    if (ebayOffers.length === 0) return undefined;
-    return [...ebayOffers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
-  }, [eligible]);
+  const sortedByStatic = useMemo(
+    () => [...eligible].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
+    [eligible]
+  );
+  const staticBest = sortedByStatic[0];
+  const ebayToVerify = staticBest?.store === "eBay" ? staticBest : undefined;
 
-  const liveEbayTotal = useLiveOfferTotal(cheapestEbay, countryCode);
+  const liveEbayTotal = useLiveOfferTotal(ebayToVerify, countryCode);
 
   return useMemo(() => {
-    if (eligible.length === 0) return { offer: undefined, total: 0 };
+    if (!staticBest) return { offer: undefined, total: 0 };
+    if (!ebayToVerify) return { offer: staticBest, total: offerTotal(staticBest) };
 
-    const comparisonTotalEUR = (o: Offer): number =>
-      o === cheapestEbay
-        ? offerTotalInEUR({ ...o, price: liveEbayTotal, shipping: 0 })
-        : offerTotalInEUR(o);
-
-    let best = eligible[0];
-    let bestEUR = comparisonTotalEUR(eligible[0]);
-    for (let i = 1; i < eligible.length; i++) {
-      const eur = comparisonTotalEUR(eligible[i]);
-      if (eur < bestEUR) {
-        best = eligible[i];
-        bestEUR = eur;
-      }
+    const liveEbayEUR = offerTotalInEUR({ ...ebayToVerify, price: liveEbayTotal, shipping: 0 });
+    const runnerUp = sortedByStatic[1];
+    if (runnerUp && offerTotalInEUR(runnerUp) < liveEbayEUR) {
+      return { offer: runnerUp, total: offerTotal(runnerUp) };
     }
-    const total = best === cheapestEbay ? liveEbayTotal : offerTotal(best);
-    return { offer: best, total };
-  }, [eligible, cheapestEbay, liveEbayTotal]);
+    return { offer: ebayToVerify, total: liveEbayTotal };
+  }, [staticBest, ebayToVerify, liveEbayTotal, sortedByStatic]);
 }
