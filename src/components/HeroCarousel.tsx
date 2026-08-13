@@ -90,6 +90,33 @@ export default function HeroCarousel() {
     setActive(((index % SLIDE_COUNT) + SLIDE_COUNT) % SLIDE_COUNT);
   }
 
+  // Swipe táctil (celular): se guarda dónde arrancó el dedo y, si se
+  // suelta habiendo recorrido lo suficiente en horizontal (y más en
+  // horizontal que en vertical, para no robarle el swipe al scroll de
+  // la página), se cambia de slide. Umbral bajo a propósito -- es la
+  // única forma de navegar el carrusel en celular además de los
+  // puntitos, que son chicos para el dedo.
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const SWIPE_THRESHOLD = 40;
+
+  function handleTouchStart(e: React.TouchEvent) {
+    const t0 = e.touches[0];
+    touchStart.current = { x: t0.clientX, y: t0.clientY };
+    setPaused(true);
+  }
+
+  function handleTouchEnd(e: React.TouchEvent) {
+    setPaused(false);
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start) return;
+    const end = e.changedTouches[0];
+    const dx = end.clientX - start.x;
+    const dy = end.clientY - start.y;
+    if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dx) < Math.abs(dy)) return;
+    goTo(active + (dx < 0 ? 1 : -1));
+  }
+
   function applyFilterAndScroll(index: number) {
     filters.setQuery("");
     filters.clearAllFilters();
@@ -108,6 +135,8 @@ export default function HeroCarousel() {
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <div className="stadium-beam-a pointer-events-none absolute inset-0 opacity-60" aria-hidden />
 
