@@ -15,16 +15,21 @@ import { getDisplaySrc } from "@/lib/images";
 const SLIDE_COUNT = 5;
 const AUTO_ADVANCE_MS = 5500;
 
-// Equipos que preferimos mostrar como protagonistas de cada slide (si
-// el catálogo tiene foto real de alguno) -- selecciones/clubes muy
-// reconocibles primero, resto elegido por el pool general.
-const PREFERRED_TEAMS: string[][] = [
-  ["argentina", "brasil", "espana", "francia"],
-  ["realmadrid", "barcelona", "manutd", "boca"],
-  [],
-  [],
-  [],
-];
+// Foto curada a mano por slide -- se revisaron las fotos reales
+// disponibles por categoría y se eligió la mejor concreta de cada una
+// (con una persona puesta la camiseta siempre que el catálogo tuviera
+// esa toma; si no, la mejor foto de producto disponible), en vez de
+// dejarlo en manos de una preferencia de equipo genérica. Si alguno de
+// estos productos puntuales llegara a desaparecer del catálogo (lo
+// borra una limpieza de datos, por ejemplo), cae al mejor disponible
+// de esa categoría para que el slide nunca quede vacío.
+const CURATED_SLIDE_IDS = [
+  "arg-home-2026", // selecciones: Argentina 2026, con modelo
+  "arsenal-away-202526", // clubes: Arsenal 25/26, con modelo
+  "manutd-retro-199294-home", // retro: Cantona 7, Man United 1992/94
+  "alemania-retro-202223-home", // mujer: Alemania, corte de mujer
+  "realmadrid-home-kids", // niños: Real Madrid, con modelo
+] as const;
 
 function matchesSlide(index: number, p: Product): boolean {
   switch (index) {
@@ -42,18 +47,13 @@ function matchesSlide(index: number, p: Product): boolean {
 }
 
 // Se calcula una sola vez a nivel módulo (no en cada render): el
-// catálogo no cambia en caliente durante una sesión, y es la misma
-// lógica de "elegí una foto real de oferta" que ya usa ProductCard.
+// catálogo no cambia en caliente durante una sesión.
 function pickSlideProduct(index: number): Product | undefined {
-  const pool = products.filter(
+  const curated = products.find((p) => p.id === CURATED_SLIDE_IDS[index]);
+  if (curated && curated.offers.some((o) => o.imageUrl)) return curated;
+  return products.find(
     (p) => matchesSlide(index, p) && p.offers.some((o) => o.imageUrl)
   );
-  if (pool.length === 0) return undefined;
-  for (const team of PREFERRED_TEAMS[index]) {
-    const found = pool.find((p) => p.teamKey === team);
-    if (found) return found;
-  }
-  return pool[0];
 }
 
 const SLIDE_PRODUCTS = Array.from({ length: SLIDE_COUNT }, (_, i) => pickSlideProduct(i));
