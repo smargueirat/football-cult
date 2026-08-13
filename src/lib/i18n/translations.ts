@@ -125,6 +125,7 @@ export interface Translations {
     allSizes: string;
     notAvailableInSize: string;
     notAvailableInCountry: string;
+    allSoldOut: string;
     storesCompared: string;
     basePrice: string;
     shipping: string;
@@ -389,6 +390,7 @@ export const translations: Record<Locale, Translations> = {
       allSizes: "Todas las tiendas",
       notAvailableInSize: "No disponible en talla {size}",
       notAvailableInCountry: "No disponible para envíos a {country}",
+      allSoldOut: "Todas las ofertas de esta camiseta están agotadas por ahora.",
       storesCompared: "{n} tiendas comparadas",
       basePrice: "Precio",
       shipping: "Envío",
@@ -659,6 +661,7 @@ export const translations: Record<Locale, Translations> = {
       allSizes: "Todas as lojas",
       notAvailableInSize: "Não disponível no tamanho {size}",
       notAvailableInCountry: "Não disponível para envio a {country}",
+      allSoldOut: "Todas as ofertas desta camisa estão esgotadas por enquanto.",
       storesCompared: "{n} lojas comparadas",
       basePrice: "Preço",
       shipping: "Frete",
@@ -929,6 +932,7 @@ export const translations: Record<Locale, Translations> = {
       allSizes: "All stores",
       notAvailableInSize: "Not available in size {size}",
       notAvailableInCountry: "Not available for shipping to {country}",
+      allSoldOut: "All offers for this jersey are sold out for now.",
       storesCompared: "{n} stores compared",
       basePrice: "Price",
       shipping: "Shipping",
