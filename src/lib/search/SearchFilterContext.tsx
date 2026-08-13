@@ -101,6 +101,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         setSortBy,
         activeFilterCount,
         clearAllFilters: () => {
+          setQuery("");
           setTypeFilter([]);
           setCategoryFilter([]);
           setSeasonFilter([]);

@@ -341,7 +341,7 @@ export default function SearchExplorer() {
           </button>
         </div>
 
-        {activeFilterCount > 0 && (
+        {(activeFilterCount > 0 || query.trim().length > 0) && (
           <button
             onClick={clearAllFilters}
             className="flex items-center gap-1.5 self-start text-xs font-medium text-[#675c44] transition-colors hover:text-[#1a1a1a]"

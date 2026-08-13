@@ -97,6 +97,7 @@ export default function HeroCarousel() {
   // única forma de navegar el carrusel en celular además de los
   // puntitos, que son chicos para el dedo.
   const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const justSwiped = useRef(false);
   const SWIPE_THRESHOLD = 40;
 
   function handleTouchStart(e: React.TouchEvent) {
@@ -114,7 +115,22 @@ export default function HeroCarousel() {
     const dx = end.clientX - start.x;
     const dy = end.clientY - start.y;
     if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dx) < Math.abs(dy)) return;
+    // Un swipe real dispara además un click sintético al soltar el dedo --
+    // se lo ignora por un instante para no avanzar dos slides de una.
+    justSwiped.current = true;
+    setTimeout(() => {
+      justSwiped.current = false;
+    }, 300);
     goTo(active + (dx < 0 ? 1 : -1));
+  }
+
+  // Click en cualquier parte del recuadro (fuera del CTA/puntitos/flechas,
+  // que cortan la propagación) avanza al siguiente slide -- pedido
+  // explícito para la versión de escritorio, donde antes solo se podía
+  // navegar con los puntitos/flechas chicos.
+  function handleContainerClick() {
+    if (justSwiped.current) return;
+    setActive((cur) => (cur + 1) % SLIDE_COUNT);
   }
 
   function applyFilterAndScroll(index: number) {
@@ -137,6 +153,7 @@ export default function HeroCarousel() {
       onBlur={() => setPaused(false)}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
+      onClick={handleContainerClick}
     >
       <div className="stadium-beam-a pointer-events-none absolute inset-0 opacity-60" aria-hidden />
 
@@ -157,7 +174,10 @@ export default function HeroCarousel() {
             </h1>
             <p className="max-w-md text-xs text-[#D9CFAE] sm:text-sm">{slide.subtitle}</p>
             <button
-              onClick={() => applyFilterAndScroll(i)}
+              onClick={(e) => {
+                e.stopPropagation();
+                applyFilterAndScroll(i);
+              }}
               className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:text-xs"
             >
               {slide.cta}
@@ -185,7 +205,10 @@ export default function HeroCarousel() {
         {slides.map((slide, i) => (
           <button
             key={slide.title}
-            onClick={() => goTo(i)}
+            onClick={(e) => {
+              e.stopPropagation();
+              goTo(i);
+            }}
             aria-label={`Ver sección ${i + 1}`}
             className={`h-1.5 rounded-full transition-all ${
               i === active ? "w-5 bg-[#E7C567]" : "w-1.5 bg-[#F3E9C9]/35"
@@ -195,14 +218,20 @@ export default function HeroCarousel() {
       </div>
 
       <button
-        onClick={() => goTo(active - 1)}
+        onClick={(e) => {
+          e.stopPropagation();
+          goTo(active - 1);
+        }}
         aria-label="Sección anterior"
         className="absolute left-2 top-1/2 z-10 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-black/25 text-[#F3E9C9] backdrop-blur-sm transition-colors hover:bg-black/40 sm:flex"
       >
         ‹
       </button>
       <button
-        onClick={() => goTo(active + 1)}
+        onClick={(e) => {
+          e.stopPropagation();
+          goTo(active + 1);
+        }}
         aria-label="Sección siguiente"
         className="absolute right-2 top-1/2 z-10 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-black/25 text-[#F3E9C9] backdrop-blur-sm transition-colors hover:bg-black/40 sm:flex"
       >
