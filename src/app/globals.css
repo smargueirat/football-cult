@@ -306,10 +306,15 @@ body {
     transform: scale(1);
   }
   to {
-    transform: scale(1.08);
+    transform: scale(1.035);
   }
 }
 .hero-photo-kenburns {
+  /* Origen arriba (no al centro): así el crecimiento del zoom se nota
+     abajo (piernas/torso), no arriba -- con origen al centro el zoom
+     recortaba la cara del modelo en varias fotos contra el
+     overflow-hidden del recuadro. */
+  transform-origin: 50% 15%;
   animation: hero-photo-kenburns 6.5s ease-out forwards;
 }
 
