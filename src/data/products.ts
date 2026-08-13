@@ -20822,6 +20822,17 @@ const productsData = [
     ageGroup: "women",
     offers: [
       { store: "eBay", price: 16.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/205225930874?_skw=Tottenham+Hotspur+third+soccer+jersey&hash=item2fc86b307a%3Ag%3A3yYAAOSwN8NniF15&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZUK56sfBuvI509B0v89NKToYeWWDhKz30lhTc7PTBzfFGXDUruK2odCnaanilwrjxma%2Buqn4o0jPwhUVwvwZrQRsZRXihyH%2FQmegpvGPLA%2FDfHtZXm1n2XpDBEQoC9H0eCKh4ZagZ96hGD8PSwWFn5zDuharCAg8F596fD5NT73IamLerQoVLS1lNTadCAs5avQXLp6U2Z7FRPIPbz1wzy2iFTuO9u5qR0QQxhvGkiQvU9GfNDqnGnSRvQ5AmeWnPJ4if75WTZRtN7F60y%2Bf7%2Fe8lZS7%2F88MLi44%2ByJsW3bYwkoq0iZxsv%2Bz7aKZO21Xo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur 2024/25 Stadium Third Soccer Jersey FQ2226 Woman Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/3yYAAOSwN8NniF15/s-l225.jpg" },
+    ],
+  },
+{
+    id: "tottenham-retro-202425-third-mens",
+    teamKey: "tottenham",
+    season: "2024/25",
+    typeKey: "retro",
+    colorHex: "#FFE900",
+    colorHexSecondary: "#132257",
+    jerseyPattern: "solid",
+    offers: [
       { store: "eBay", price: 75.33, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/128018463443?_skw=Tottenham+Hotspur+third+soccer+jersey&hash=item1dce7ebad3%3Ag%3Af18AAeSwBUdqeS4H&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Tottenham Hotspur 2024-25 Third Jersey L New with Tags", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/f18AAeSwBUdqeS4H/s-l225.jpg" },
     ],
   },
@@ -34107,6 +34118,18 @@ const productsData = [
     offers: [
       { store: "SportIsGoodES", price: 24.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44291544215&a=3013769&m=65906", title: "Camiseta de entrenamiento Manchester City 2023/24", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_772855-19_1.webp&feedId=89044&k=421ed2d3e8643856e916a3f381ce07d5ea123f04" },
       { store: "FootStoreES", price: 24.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44291080185&a=3013769&m=65912", title: "Camiseta de entrenamiento Manchester City 2023/24", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_772855-19_1.webp&feedId=89032&k=421ed2d3e8643856e916a3f381ce07d5ea123f04" },
+    ],
+  },
+{
+    id: "mancity-retro-202324-training-sunsetglow",
+    teamKey: "mancity",
+    season: "2023/24",
+    typeKey: "retro",
+    colorHex: "#FF3D7F",
+    colorHexSecondary: "#1A1A1A",
+    jerseyPattern: "solid",
+    brand: "puma",
+    offers: [
       { store: "MysteryShirtClub", price: 14.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2023-2024-man-city-training-jersey-sunset-glow-313701", title: "2023-2024 Man City Training Jersey (Sunset Glow)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1692194343_man-city-2023-2024-training-football-jersey-sunset-glow.jpg?v=1763228436" },
     ],
   },
