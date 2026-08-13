@@ -1,37 +1,90 @@
-import Image from "next/image";
+"use client";
 
-// Tercer intento, esta vez sin tocar la foto para nada -- los dos
-// anteriores (respiración+reflectores+polvo; después scroll-parallax
-// con la foto duplicada en capas) fallaron por el mismo lado: cualquier
-// manipulación de la propia foto (blur, escala, desplazamiento) termina
-// leyéndose como un error visual, no como atmósfera. Esta versión deja
-// la foto exactamente como estaba en la base original (fija, sin
-// transformar, sin duplicar) y pone lo "épico" en un elemento nuevo que
-// nunca puede verse "roto": orbes de luz dorada fuera de foco, como
-// reflectores de estadio de noche vistos en bokeh, flotando
-// larguísimo (70-105s por ciclo) y a baja opacidad. Es pura animación
-// CSS de transform/opacity -- la respeta automáticamente la regla
-// global de prefers-reduced-motion (ver arriba en este archivo), sin
-// necesitar JS ni listener de scroll.
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+
+const MAX_TILT_DEG = 2.5;
+
+// Cuarto intento -- se pidió explícitamente algo nuevo de verdad, no
+// otra variación del mismo resultado, pero conservando la cancha
+// visible (no taparla con algo abstracto como los orbes anteriores).
+// Dos ideas nuevas, ninguna probada antes en este fondo:
+//
+// 1) Inclinación 3D sutil que sigue el mouse -- el mismo mecanismo que
+//    ya funcionó bien en las tarjetas de producto (ProductCard3D), acá
+//    aplicado a la foto de fondo entera. Dif clave: es UNA sola foto
+//    (nunca se duplica ni se desalinea, así que no puede "verse rota"
+//    como el intento del scroll-parallax) y el ángulo es mínimo (2.5°
+//    contra los 9° de las tarjetas -- a pantalla completa, más que eso
+//    marea). Solo en desktop con mouse de verdad (pointer: fine): en
+//    celular la foto queda fija, cero riesgo de mareo.
+// 2) Rayos de luz diagonales tipo "luz de reflector atravesando el
+//    techo del estadio", con mix-blend-mode: screen para que iluminen
+//    la propia foto en vez de tapar nada -- lenguaje visual distinto a
+//    los intentos anteriores (nunca hubo formas rectas/diagonales,
+//    solo manchas redondas u ondas verticales).
 export default function StadiumWatermark() {
+  const photoRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const canTilt =
+      window.matchMedia("(pointer: fine)").matches &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!canTilt || !photoRef.current) return;
+
+    let ticking = false;
+    let targetX = 0;
+    let targetY = 0;
+
+    function apply() {
+      if (photoRef.current) {
+        photoRef.current.style.transform = `scale(1.06) rotateX(${targetY}deg) rotateY(${targetX}deg)`;
+      }
+      ticking = false;
+    }
+
+    function onMouseMove(e: MouseEvent) {
+      const px = e.clientX / window.innerWidth - 0.5;
+      const py = e.clientY / window.innerHeight - 0.5;
+      targetX = px * MAX_TILT_DEG;
+      targetY = -py * MAX_TILT_DEG;
+      if (!ticking) {
+        window.requestAnimationFrame(apply);
+        ticking = true;
+      }
+    }
+
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMouseMove);
+  }, []);
+
   return (
-    <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
-      <Image
-        src="/images/pitch-ground-level.jpg"
-        alt=""
-        fill
-        priority
-        className="object-cover opacity-[0.12]"
-      />
+    <div
+      className="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+      style={{ perspective: "1400px" }}
+      aria-hidden="true"
+    >
+      <div
+        ref={photoRef}
+        className="absolute inset-0 will-change-transform"
+        style={{ transformStyle: "preserve-3d" }}
+      >
+        <Image
+          src="/images/pitch-ground-level.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-[0.18]"
+        />
+      </div>
 
       {/* pátina cálida para que la foto se integre con la paleta marfil */}
       <div className="absolute inset-0 bg-[#EDE0C4] mix-blend-color opacity-45" />
 
-      {/* orbes de luz dorada en bokeh -- el elemento nuevo, único vivo */}
-      <div className="bokeh-orb bokeh-orb-1" />
-      <div className="bokeh-orb bokeh-orb-2" />
-      <div className="bokeh-orb bokeh-orb-3" />
-      <div className="bokeh-orb bokeh-orb-4" />
+      {/* rayos de luz diagonales -- iluminan la foto en vez de taparla */}
+      <div className="god-ray god-ray-1" />
+      <div className="god-ray god-ray-2" />
+      <div className="god-ray god-ray-3" />
 
       {/* viñeta radial, profundidad de estadio nocturno */}
       <div
