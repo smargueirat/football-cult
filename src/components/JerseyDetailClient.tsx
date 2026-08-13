@@ -77,11 +77,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const sizes = availableSizesForCountry(product, countryCode);
   const ageGroup = getAgeGroup(product);
 
-  const sortedOffers = useMemo(
-    () => [...product.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
-    [product.offers]
-  );
-
   // eBay no puede calcular el envío sin saber el destino (su propia API
   // devuelve shippingOptions: null si no se lo mandamos) -- el número
   // que ya viene minado en el catálogo es un placeholder, casi siempre
@@ -121,6 +116,23 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
       cancelled = true;
     };
   }, [product.offers, countryCode]);
+
+  // Ordena (y decide "mejor precio") usando el envío real ya cargado
+  // arriba cuando está disponible, no el placeholder minado -- si no,
+  // una oferta de eBay podía quedar marcada como la más barata mientras
+  // en verdad, una vez sumado el envío real a tu país, terminaba
+  // costando más que otra tienda.
+  const sortedOffers = useMemo(() => {
+    function totalInEUR(offer: Offer): number {
+      const live = offer.store === "eBay" ? liveEbayCosts[offer.url] : null;
+      if (live && live.currency === offer.currency) {
+        const liveTotal = offer.price + live.shipping + (live.importCharges ?? 0);
+        return offerTotalInEUR({ ...offer, price: liveTotal, shipping: 0 });
+      }
+      return offerTotalInEUR(offer);
+    }
+    return [...product.offers].sort((a, b) => totalInEUR(a) - totalInEUR(b));
+  }, [product.offers, liveEbayCosts]);
 
   useEffect(() => {
     addRecentlyViewed(product.id);

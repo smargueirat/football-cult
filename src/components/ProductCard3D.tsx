@@ -6,7 +6,6 @@ import {
   Product,
   SIZES,
   availableSizesForCountry,
-  bestOfferForCountry,
   displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
@@ -19,7 +18,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
-import { useLiveOfferTotal } from "@/lib/useLiveOfferTotal";
+import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
@@ -37,8 +36,7 @@ export default function ProductCard3D({ product }: { product: Product }) {
   const { countryCode } = useCountry();
   const comparing = isComparing(product.id);
   const favorite = isFavorite(product.id);
-  const best = bestOfferForCountry(product, countryCode);
-  const bestTotal = useLiveOfferTotal(best, countryCode);
+  const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode);
   const storeCount = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
   ).length;
