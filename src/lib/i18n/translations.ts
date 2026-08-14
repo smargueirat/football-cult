@@ -96,6 +96,7 @@ export interface Translations {
     clearAria: string;
     resultsCount: string;
     sortLabel: string;
+    sortRelevance: string;
     sortPriceAsc: string;
     sortPriceDesc: string;
     sortNewest: string;
@@ -361,6 +362,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
       sortLabel: "Ordenar por",
+      sortRelevance: "Relevancia",
       sortPriceAsc: "Precio: menor a mayor",
       sortPriceDesc: "Precio: mayor a menor",
       sortNewest: "Más reciente",
@@ -632,6 +634,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Limpar busca",
       resultsCount: "{n} camisas encontradas",
       sortLabel: "Ordenar por",
+      sortRelevance: "Relevância",
       sortPriceAsc: "Preço: menor para maior",
       sortPriceDesc: "Preço: maior para menor",
       sortNewest: "Mais recente",
@@ -903,6 +906,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",
       sortLabel: "Sort by",
+      sortRelevance: "Relevance",
       sortPriceAsc: "Price: low to high",
       sortPriceDesc: "Price: high to low",
       sortNewest: "Newest first",

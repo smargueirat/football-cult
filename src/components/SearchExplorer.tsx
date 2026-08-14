@@ -22,6 +22,7 @@ import {
   teamColors,
   teamFlags,
   teamNames,
+  teamPopularity,
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -189,6 +190,14 @@ export default function SearchExplorer() {
     });
 
     return [...filtered].sort((a, b) => {
+      if (sortBy === "relevance") {
+        const diff = teamPopularity(b.teamKey) - teamPopularity(a.teamKey);
+        if (diff !== 0) return diff;
+        // Mismo nivel de popularidad (o ninguno de los dos tiene): orden
+        // estable por nombre de equipo, no al azar según el orden interno
+        // del catálogo.
+        return teamNames[a.teamKey][locale].localeCompare(teamNames[b.teamKey][locale]);
+      }
       if (sortBy === "seasonNewest" || sortBy === "seasonOldest") {
         const diff = seasonSortValue(a.season) - seasonSortValue(b.season);
         return sortBy === "seasonNewest" ? -diff : diff;
@@ -251,6 +260,7 @@ export default function SearchExplorer() {
   const visibleResults = results.slice(0, visibleCount);
 
   const SORT_OPTIONS: { key: typeof sortBy; label: string }[] = [
+    { key: "relevance", label: t.search.sortRelevance },
     { key: "priceAsc", label: t.search.sortPriceAsc },
     { key: "priceDesc", label: t.search.sortPriceDesc },
     { key: "seasonNewest", label: t.search.sortNewest },

@@ -3,7 +3,7 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 import { AgeGroup, Brand, CategoryKey, Size, TypeKey } from "@/data/products";
 
-export type SortKey = "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
+export type SortKey = "relevance" | "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
 
 function toggle<T>(list: T[], value: T): T[] {
   return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
