@@ -189,15 +189,41 @@ export default function SearchExplorer() {
       );
     });
 
-    return [...filtered].sort((a, b) => {
-      if (sortBy === "relevance") {
-        const diff = teamPopularity(b.teamKey) - teamPopularity(a.teamKey);
-        if (diff !== 0) return diff;
-        // Mismo nivel de popularidad (o ninguno de los dos tiene): orden
-        // estable por nombre de equipo, no al azar según el orden interno
-        // del catálogo.
-        return teamNames[a.teamKey][locale].localeCompare(teamNames[b.teamKey][locale]);
+    if (sortBy === "relevance") {
+      // No alcanza con ordenar por popularidad del equipo: eso deja todas
+      // las camisetas de un mismo club juntas (ej. 15 del Real Madrid
+      // seguidas) antes de pasar al próximo. El usuario pidió una MEZCLA:
+      // los equipos más importantes tienen que aparecer primero, pero
+      // intercalados entre sí, no en bloques por club. Agrupamos por
+      // equipo, ordenamos los grupos por popularidad, y los intercalamos
+      // round-robin (una camiseta de cada equipo por vuelta).
+      const groups = new Map<TeamKey, Product[]>();
+      for (const p of filtered) {
+        const g = groups.get(p.teamKey);
+        if (g) g.push(p);
+        else groups.set(p.teamKey, [p]);
       }
+      const orderedGroups = [...groups.entries()].sort(([teamA], [teamB]) => {
+        const diff = teamPopularity(teamB) - teamPopularity(teamA);
+        if (diff !== 0) return diff;
+        return teamNames[teamA][locale].localeCompare(teamNames[teamB][locale]);
+      });
+      const mixed: Product[] = [];
+      let round = 0;
+      let remaining = filtered.length;
+      while (remaining > 0) {
+        for (const [, group] of orderedGroups) {
+          if (round < group.length) {
+            mixed.push(group[round]);
+            remaining--;
+          }
+        }
+        round++;
+      }
+      return mixed;
+    }
+
+    return [...filtered].sort((a, b) => {
       if (sortBy === "seasonNewest" || sortBy === "seasonOldest") {
         const diff = seasonSortValue(a.season) - seasonSortValue(b.season);
         return sortBy === "seasonNewest" ? -diff : diff;
@@ -335,20 +361,68 @@ export default function SearchExplorer() {
               </span>
             )}
           </button>
-          <button
-            onClick={() => setSortOpen(true)}
-            className="flex items-center justify-center gap-2 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 7h10M3 12h6M3 17h3M17 4v16m0 0l-3.5-3.5M17 20l3.5-3.5"
-              />
-            </svg>
-            {t.search.sortLabel}
-          </button>
+          <div className="relative">
+            <button
+              onClick={() => setSortOpen((o) => !o)}
+              className="flex w-full items-center justify-center gap-2 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 7h10M3 12h6M3 17h3M17 4v16m0 0l-3.5-3.5M17 20l3.5-3.5"
+                />
+              </svg>
+              {t.search.sortLabel}
+            </button>
+
+            {sortOpen && (
+              <>
+                {/* En desktop el menú es un dropdown anclado al botón, no
+                    el bottom sheet de mobile (que ahí abajo no se veía).
+                    Este backdrop invisible solo sirve para cerrar al
+                    clickear afuera -- no oscurece la pantalla. */}
+                <div
+                  className="fixed inset-0 z-40 hidden md:block"
+                  onClick={() => setSortOpen(false)}
+                />
+                <div className="absolute right-0 top-[calc(100%+8px)] z-50 hidden w-64 flex-col gap-1 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] md:flex">
+                  {SORT_OPTIONS.map((opt) => (
+                    <button
+                      key={opt.key}
+                      onClick={() => {
+                        setSortBy(opt.key);
+                        setSortOpen(false);
+                      }}
+                      className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-left text-sm transition-colors ${
+                        sortBy === opt.key
+                          ? "bg-[#1B3B2B] text-[#F3E9C9]"
+                          : "text-[#3a3a36] hover:bg-black/[0.04]"
+                      }`}
+                    >
+                      {opt.label}
+                      {sortBy === opt.key && (
+                        <svg
+                          className="h-4 w-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
 
         {(activeFilterCount > 0 || query.trim().length > 0) && (
@@ -627,10 +701,10 @@ export default function SearchExplorer() {
       {sortOpen && (
         <Portal>
           <div
-            className="fixed inset-0 z-40 bg-black/30"
+            className="fixed inset-0 z-40 bg-black/30 md:hidden"
             onClick={() => setSortOpen(false)}
           />
-          <div className="fixed inset-x-0 bottom-0 z-50 flex flex-col rounded-t-3xl bg-[#FFFDF8] shadow-[0_-16px_40px_-12px_rgba(0,0,0,0.25)]">
+          <div className="fixed inset-x-0 bottom-0 z-50 flex flex-col rounded-t-3xl bg-[#FFFDF8] shadow-[0_-16px_40px_-12px_rgba(0,0,0,0.25)] md:hidden">
             <div className="flex items-center justify-between border-b border-[#C9A24B]/20 px-5 py-4">
               <p className="font-card-title text-lg text-[#1a1a1a]">{t.search.sortLabel}</p>
               <button
