@@ -1066,3 +1066,94 @@ more "S-5XL"-sizing print-on-demand-pattern listing (Norway, no
 "Personalized"/"Custom" wording but same tell-tale wide generic size
 range as the confirmed unlicensed ones) and 2 explicitly-"Personalized"
 Cruz Azul offers from the add-offers batch, on the same suspicion.
+
+## Daily pass (2026-08-14) — real `refresh.py` bug: offers duplicated across every product sharing a team+type
+
+Ran all 11 Awin stores fresh (PlanetFoot and ComoFC hit a persistent
+`ui.awin.com` HTTP 500 across 4 retries with 15s backoff — same transient
+class documented above, not retried further this pass), MysteryShirtClub,
+and — for the first time — Rakuten Advertising's FTP feed for all 5
+approved Brazilian club stores end to end (previously only documented,
+never actually run). 1 genuinely new product (`asse-away-202627`, ASSE's
+2026/27 away kit, found independently by both FootStoreFR and
+SportIsGoodFR — verified by photo: real crest, Hummel mark, Casino
+sponsor), ~1050 offers refreshed/added across the rest. Two "jordania"
+(Jordan the country) picks from FootStoreES/FR were dropped by hand —
+exactly the already-documented Jordan-brand/PSG and Brazil-goalkeeper
+name-collision class, not the real country team.
+
+**Found and fixed a real, previously-undocumented `refresh.py` bug, much
+bigger in scope than the already-documented "prematch season-pair"
+special case**: `refresh.py` matched every block sharing a
+`teamKey|typeKey` key and applied the store's *single* picked offer to
+**all** of them, not just one. Any team+type with more than one product
+(season variants like `-202526`/`-202627`, or color/style variants like
+`-green`/`-black`/`-jacket`/`-warmup`) got the same offer duplicated
+across every variant — 91 offers ended up duplicated across 2-5 products
+apiece this pass (found via a post-apply exact-duplicate-offer-URL scan
+that came back suspiciously high; the standing scan documented above only
+ever checked for the same URL landing on two *different* ids after the
+fact, never diagnosed *why* it kept happening at this scale).
+
+Cleaned up by reconciling against a pre-batch snapshot of `products.ts`:
+for each duplicated URL, if it already existed under some product id
+*before* this run, that id keeps it and every other copy is a bug to
+delete (82 of 91 resolved this way, fully mechanical). The remaining 9
+were genuinely new offers with no baseline precedent, requiring reading
+the offer's title text against each candidate product's own established
+title wording (season number, "home"/"away"/"local"/"domicile", or a
+matching SKU already seen on another store's offer for that exact
+variant) to decide the one correct home — see the git history for this
+commit for the reasoning kept per case. One of these (`bay-goalkeeper`)
+led to discovering `bay-home-heritage-2025` is itself a pre-existing,
+out-of-scope mislabeling bug (typeKey `"home"` but every offer on it is
+actually a goalkeeper jersey photo) — left alone, but flagged here since
+it explains why that id keeps attracting stray goalkeeper-titled offers
+from the `bayern|home` key. Two of the 91 were themselves fallout from a
+`replace` (matching by store name only, not URL) silently overwriting a
+correct existing offer with a same-store-different-SKU pick *before* the
+dupe was even visible — `ale-goalkeeper-away-2026`'s AdidasES offer and
+`argentina-prematch-stripes-2026`'s sole FootStoreFR offer were both
+fully destroyed this way (the latter left the product with zero offers
+entirely, caught by a `newly-empty-product` regression check added for
+this cleanup, not by the dupe scan). Both restored by hand from the
+pre-batch snapshot.
+
+**Fixed at the root in `refresh.py`**: it now only ever touches a block
+unambiguously — a plain replace when exactly one product sharing that
+team+type already carries the store's offer, or an insert when exactly
+one product shares the key at all. Any other shape (zero products have
+the store yet AND more than one product shares the key, or — in
+principle — more than one already does) is skipped and printed as
+`Skipped (ambiguous ...)` rather than guessed at, same skip-over-guess
+default used everywhere else in this pipeline. Verified against this
+session's own picks post-cleanup: re-running is fully idempotent (0
+inserted/replaced where already correctly applied) and correctly flags
+the real remaining multi-variant collisions (`alemania|goalkeeper`,
+`juventus|training`, `bayern|home`, `bayern|goalkeeper`) as ambiguous
+instead of re-duplicating them.
+
+**Rakuten store-name mismatch, caught immediately after applying**: used
+"Santos Store"/"Inter Store"/"Cruzeiro Store"/"Shop Timão"/"Loja PST"
+(spaced, readable names) when the catalog's actual established
+convention (set when these stores were first onboarded) is the unspaced
+`SantosStore`/`InterStore`/`CruzeiroStore`/`ShopTimao`/`LojaPST` — caused
+5 fresh inserts with a brand-new store-name variant instead of replacing
+the existing entries. Caught before commit by grepping both spellings'
+counts; removed the 10 wrongly-named offer lines and reapplied with the
+correct names (clean replaces, 0 inserts, as expected). **`ShopTimao`
+(no diacritic, no space) vs `Shop Timão` (with diacritic) was already
+inconsistent in the catalog before this pass** (1 pre-existing entry
+each) — not fixed, since neither is clearly "the" canonical one and
+picking wrong risks a second split; worth resolving explicitly next time
+someone's looking at Corinthians data.
+
+**eBay full pass (`ebay_mine_full.py`) hit near-total 429 rate-limiting
+almost immediately this run** — by team 41/383, 500 of 508 log lines were
+`429 Too many requests`, far earlier than the "partway through" pattern
+documented in every previous full-pass entry above. Left running in the
+background rather than killed (zero-cost to babysit, and the resume
+support means any teams that do get through still land in the output
+files), but did not wait on it to ship the rest of this pass — see commit
+history for whether a follow-up eBay-only commit landed same day or the
+picks got carried to the next daily pass instead.
