@@ -1,4 +1,6 @@
-import re, json, sys
+import re, json, sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from manual_exclusions import is_manually_excluded
 
 ID_RE = re.compile(r'^    id: "([^"]+)",$', re.M)
 TEAM_RE = re.compile(r'^    teamKey: "([a-z0-9]+)",$', re.M)
@@ -76,6 +78,8 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
     target_index = {}  # key -> block index to touch, or None to skip
     for key, indices in key_to_indices.items():
         if key not in picks or key in exclude_keys:
+            continue
+        if is_manually_excluded(picks[key].get("link")):
             continue
         with_store = [i for i in indices if store_offer_re.search(blocks[i])]
         if len(with_store) == 1:
