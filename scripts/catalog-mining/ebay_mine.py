@@ -19,6 +19,7 @@ import base64, json, re, sys, os, time, urllib.request, urllib.parse, urllib.err
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import JERSEY_RE, EXCLUDE_RE, TEAM_PATTERNS, TYPE_PATTERNS, team_re_all, type_re_all
+from manual_exclusions import is_manually_excluded
 
 _REPO_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 ENV_PATH = os.path.join(_REPO_ROOT, ".env.local")
@@ -220,11 +221,14 @@ def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
             continue
         if amount < MIN_JERSEY_PRICE or amount > MAX_JERSEY_PRICE:
             continue
+        link = item.get("itemAffiliateWebUrl") or item.get("itemWebUrl")
+        if is_manually_excluded(link):
+            continue
         candidates.append({
             "title": title,
             "price": amount,
             "currency": price.get("currency", "USD"),
-            "link": item.get("itemAffiliateWebUrl") or item.get("itemWebUrl"),
+            "link": link,
             "image": (item.get("image") or {}).get("imageUrl"),
             "item_id": item.get("itemId"),
         })
