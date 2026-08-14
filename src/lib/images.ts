@@ -28,18 +28,26 @@ export function getDisplaySrc(url: string, width: number): string {
   return `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=${width}&output=webp`;
 }
 
-// La ficha de la camiseta pide la foto en un ancho distinto (1200w) al
-// que ya se cargó en la card del catálogo (hasta 600w) -- por más que
-// sea la misma foto, es una URL distinta, así que siempre es un pedido
-// nuevo. Para wsrv.nl (el proxy que se usa para fotos que no vienen de
-// Shopify/eBay/Awin) la PRIMERA vez que se pide un ancho puntual es un
-// viaje real: wsrv tiene que ir a buscar la foto original y recién
-// devolverla -- eso es lo que se sentía como demora al entrar a una
-// camiseta desde el celular. Esto arranca esa descarga en cuanto el
-// dedo toca la card (o el mouse entra, en desktop), así para cuando
-// termina de cargar la página siguiente la foto ya está lista o casi.
+// La ficha de la camiseta pide la foto en anchos distintos (srcSet
+// 500w/800w/1200w, ver JerseyGallery.tsx) a los que ya se cargaron en
+// la card del catálogo -- por más que sea la misma foto, son URLs
+// distintas, así que siempre es un pedido nuevo. Para wsrv.nl (el
+// proxy que se usa para fotos que no vienen de Shopify/eBay/Awin) la
+// PRIMERA vez que se pide un ancho puntual es un viaje real: wsrv tiene
+// que ir a buscar la foto original y recién devolverla.
+//
+// Antes esto solo precargaba 1200w -- pero el navegador elige QUÉ ancho
+// del srcSet pedir según el viewport real (en desktop, 45vw de una
+// pantalla típica cae más cerca de 800w que de 1200w), así que en
+// desktop la precarga casi siempre calentaba el tamaño equivocado y la
+// demora seguía. Ahora precarga los tres, así el que el navegador
+// termine eligiendo ya está listo.
+const DETAIL_PHOTO_WIDTHS = [500, 800, 1200];
+
 export function prefetchDetailPhoto(url: string | undefined): void {
   if (!url || typeof window === "undefined") return;
-  const img = new window.Image();
-  img.src = getDisplaySrc(url, 1200);
+  for (const width of DETAIL_PHOTO_WIDTHS) {
+    const img = new window.Image();
+    img.src = getDisplaySrc(url, width);
+  }
 }
