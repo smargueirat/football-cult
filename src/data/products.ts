@@ -24733,18 +24733,6 @@ const productsData = [
     ],
   },
 {
-    id: "francia-third-kids",
-    teamKey: "francia",
-    season: "2026/27",
-    typeKey: "third",
-    colorHex: "#1A1A1A",
-    colorHexSecondary: "#0055A4",
-    jerseyPattern: "solid",
-    ageGroup: "kids",
-    offers: [
-    ],
-  },
-{
     id: "alemania-goalkeeper-kids",
     teamKey: "alemania",
     season: "2026",
@@ -49706,17 +49694,6 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44411930071&a=3013769&m=65912", title: "Maillot Prematch Jamaica Coupe du Monde 2026", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka1909_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=12dedb37762d31f48465b1a12fa9b8b3f7a0ea8f" },
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka1909-maillot-prematch-jamaique-coupe-du-monde-2026-black", title: "Maillot Prematch Jamaïque Coupe du Monde 2026", inStock: true, sizes: ["L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka1909_1_apparel_photography_front_center_view_white.webp" },
-    ],
-  },
-{
-    id: "liverpool-prematch-202627",
-    teamKey: "liverpool",
-    season: "2026/27",
-    typeKey: "prematch",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    offers: [
     ],
   },
 {
