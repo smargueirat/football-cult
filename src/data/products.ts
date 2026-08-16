@@ -23002,16 +23002,6 @@ const productsData = [
     ],
   },
 {
-    id: "psg-home-2025",
-    teamKey: "psg",
-    season: "2025/26",
-    typeKey: "home",
-    colorHex: "#001E62",
-    colorHexSecondary: "#DA291C",
-    jerseyPattern: "solid",
-    offers: [],
-  },
-{
     id: "psg-home-2026",
     teamKey: "psg",
     season: "2026/27",
@@ -23092,17 +23082,6 @@ const productsData = [
       { store: "FootStoreFR", price: 64.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4589-496-maillot-domicile-chelsea-2025-26-rush-blue-white-speed-red-white", title: "Maillot Domicile Chelsea 2025/26", inStock: true, sizes: ["XS", "S", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4589-496_1.webp" },
       { store: "eBay", price: 69.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397818578199?_skw=Chelsea+home+soccer+jersey+2025+2026&hash=item5c9fd5c517%3Ag%3AiW4AAeSwm6Zp1vJb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chelsea Nike Men's 2025/2026 Home Soccer Jersey Size 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/iW4AAeSwm6Zp1vJb/s-l225.jpg" },
     ],
-  },
-{
-    id: "ind-home-2025",
-    teamKey: "independiente",
-    season: "2025/26",
-    typeKey: "home",
-    colorHex: "#D2001C",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    // Todavía sin tienda afiliada aprobada que venda esta camiseta.
-    offers: [],
   },
 {
     id: "ale-away-2026",
@@ -23651,17 +23630,6 @@ const productsData = [
       { store: "AdidasPT", price: 80.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42071970523&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 do Manchester United FC", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8dd91b60f83f43179dda41bacebd7968_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Manchester_United_FC_Preto_KD4225_21_model.jpg&feedId=92150&k=52f8e0d78d1f5755970b1a397556f9a7fc01fda6" },
       { store: "eBay", price: 89.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377363301996?_skw=Manchester+United+third+soccer+jersey+2025+2026&hash=item57dc9b066c%3Ag%3Ahl8AAeSwhZ9qYYBz&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGbFiIIvDcL4d%2BdthxIoRaO8kFdbzlYD9F62KdHpaRyblvM3JOqI6Z%2Fpq223c2pD6n1drClKj5ZajCEuzmfVElw1GLFFeOpMYrfwocB50uL2KOaYvGYQ%2BtVDU2IzSkttYXei0ajqz%2FhwhQu43RDDRO0Fsmqw%2B%2BjO7jHOWZ%2F2CXtKPgTYTon1vNdMYlXe2ypCI5ulWB7p%2FzVtXE8katA%2FDOzOo5uji1%2FuBS0bndMZZl09HUXBtlMOA2zV9Y1frVMlXRUqM7u7O6Y2%2FfwAJTJxUnLkWGpTCj%2FoP5O4KkX1VePM7j6fZdeVqPCJKuLZexHr%2FV8NVkWVzE9blcb%2F0lgglDid&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Manchester United 2025/26 Third Jersey Men L Black KD4225 NWT Soccer", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hl8AAeSwhZ9qYYBz/s-l225.jpg" },
     ],
-  },
-{
-    // Todavía sin oferta válida: la única disponible era de talla junior.
-    id: "manutd-goalkeeper-202526",
-    teamKey: "manutd",
-    season: "2025/26",
-    typeKey: "goalkeeper",
-    colorHex: "#1B1B1B",
-    colorHexSecondary: "#39FF14",
-    jerseyPattern: "solid",
-    offers: [],
   },
 {
     id: "ned-away-2026",
