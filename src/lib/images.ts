@@ -12,9 +12,16 @@
 //  - Shopify CDN (cdn.shopify.com, MysteryShirtClub's ~1000px photos)
 //    supports a native `?width=` resize param -- free, no third party.
 //  - Everything else (mostly direct full-res store photos, 1800-2400px --
-//    FootStoreFR/SportIsGoodFR/AdidasES etc.) gets routed through wsrv.nl,
-//    an open-source, free, production-permitted image resize/cache proxy
-//    (https://wsrv.nl, backed by Cloudflare, edge-cached for a year).
+//    FootStoreFR/SportIsGoodFR/AdidasES etc.) gets routed through
+//    images.weserv.nl, an open-source, free, production-permitted image
+//    resize/cache proxy (backed by Cloudflare, edge-cached for a year).
+//
+// 2026-08-16: the short domain (wsrv.nl) started hanging indefinitely
+// (connection timeout, confirmed via curl -- other Cloudflare-backed
+// sites resolve and respond fine, so it's specific to that hostname),
+// breaking product photos site-wide for anything not already small or
+// Shopify-hosted. Switched to the original/alternate domain for the
+// same service, images.weserv.nl, which responds normally.
 const ALREADY_SMALL_HOSTS = ["i.ebayimg.com", "images2.productserve.com"];
 
 export function getDisplaySrc(url: string, width: number): string {
@@ -25,7 +32,7 @@ export function getDisplaySrc(url: string, width: number): string {
     const sep = url.includes("?") ? "&" : "?";
     return `${url}${sep}width=${width}`;
   }
-  return `https://wsrv.nl/?url=${encodeURIComponent(url)}&w=${width}&output=webp`;
+  return `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=${width}&output=webp`;
 }
 
 // La ficha de la camiseta pide la foto en anchos distintos (srcSet

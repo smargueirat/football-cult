@@ -86,10 +86,10 @@ export default function RootLayout({
         {/* Ahorra el DNS+TLS de la primera foto de cada dominio en vez de
             pagarlo recién cuando el navegador la pide -- estos tres son
             los que más se repiten en el catálogo (eBay, el proxy de Awin,
-            y wsrv.nl para las fuentes que no vienen ya achicadas). */}
+            y images.weserv.nl para las fuentes que no vienen ya achicadas). */}
         <link rel="preconnect" href="https://i.ebayimg.com" />
         <link rel="preconnect" href="https://images2.productserve.com" />
-        <link rel="preconnect" href="https://wsrv.nl" />
+        <link rel="preconnect" href="https://images.weserv.nl" />
       </head>
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
         <StadiumWatermark />

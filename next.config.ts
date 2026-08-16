@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "b2c.spacefoot.com" },
       { protocol: "https", hostname: "www.sportspar.de" },
       { protocol: "https", hostname: "i.ebayimg.com" },
-      { protocol: "https", hostname: "wsrv.nl" },
+      { protocol: "https", hostname: "images.weserv.nl" },
     ],
   },
 };
