@@ -3080,7 +3080,6 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-1995-97-home-retro-soccer-jersey%3Fvariant%3D43162091716713", title: "Bayern Munich 1995/97 Home Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/BayernMunich199597HomeRetroSoccerJersey-1_3.webp?v=1777282266" },
       { store: "eBay", price: 107.6, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178207745221?_skw=Bayern+Munich+home+soccer+jersey+retro+vintage&hash=item297e0264c5%3Ag%3A0T0AAOSw20Jgu5Gv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "4.5/5 Bayern Munich adults L #7 1995 home original football shirt jersey trikot", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/0T0AAOSw20Jgu5Gv/s-l225.jpg" },
     ],
   },
@@ -3131,7 +3130,6 @@ const productsData = [
     colorHexSecondary: "#F6EB61",
     jerseyPattern: "solid",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-1989-91-away-retro-soccer-jersey%3Fvariant%3D42833478418537", title: "Liverpool 1989/91 Away Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Liverpool198991awayjersey_2.webp?v=1768996209" },
       { store: "eBay", price: 22.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147229842043?_skw=Liverpool+away+soccer+jersey+retro+vintage&hash=item2247951a7b%3Ag%3A3l8AAeSw1pFpoxmD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool FC Shirt Mens Medium Grey 1989 1991 Away Candy Soccer Jersey Retro", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/3l8AAeSw1pFpoxmD/s-l225.jpg" },
     ],
   },
@@ -23712,7 +23710,6 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "FootStoreES", price: 119.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45263181337&a=3013769&m=65912", title: "Maillot de manga larga Exterior PSG 2026/27", inStock: false, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iw9271-101-white-college-navy-college-navy-6a45a12f40f2f-1.webp&feedId=89032&k=8c11cff7c3650201cb3981654ec04e09596ac914" },
-      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-fourth-away-soccer-jersey-2025-26%3Fvariant%3D42697531785321", title: "PSG Fourth Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/PSG_Fourth_Away_Soccer_Jersey_202526_2.webp?v=1763610832" },
       { store: "eBay", price: 159.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168596733981?_skw=Paris+Saint-Germain+away+soccer+jersey&hash=item274126001d%3Ag%3AhqsAAeSwO2lqdl6z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike PSG Paris Saint-Germain 2026/27 Away Authentic Jersey Men’s Medium NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/hqsAAeSwO2lqdl6z/s-l225.jpg" },
     ],
   },
@@ -23840,7 +23837,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "nike",
     offers: [
-      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Furuguay-away-football-jersey-world-cup-2026%3Fvariant%3D42762193895529", title: "Uruguay Away Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/uruguayawayjersey2026_1_1.webp?v=1776843683" },
       { store: "FootStoreES", price: 76.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926351&a=3013769&m=65912", title: "Camiseta de visitante Uruguay Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io4681-451-obsidian-hyper-royal-69ca9aab64a88-1.webp&feedId=89032&k=e9d91af639ffe5d5b6786019048fab89d945d9d6" },
       { store: "FootStoreFR", price: 76.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4681-451-maillot-exterieur-uruguay-coupe-du-monde-2026-obsidian-hyper-royal", title: "Maillot Extérieur Uruguay Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io4681-451-obsidian-hyper-royal-69ca9aab64a88-1.webp" },
       { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267227645777?_skw=Uruguay+away+soccer+jersey+2025+2026&hash=item3e38024751%3Ag%3A9soAAOSwBploBk9m&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uruguay Soccer Away Men 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/9soAAOSwBploBk9m/s-l225.jpg" },
@@ -29713,19 +29709,6 @@ const productsData = [
     ],
   },
 {
-    id: "ajax-retro-198990-away",
-    teamKey: "ajax",
-    season: "1989/90",
-    typeKey: "retro",
-    colorHex: "#D2122E",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fretro-ajax-away-soccer-jersey-1989-90-long-sleeve%3Fvariant%3D42968525537385", title: "Retro Ajax Away Soccer Jersey 1989/90 Long Sleeve", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Ajaxawayjersey198990longsleeve_1.webp?v=1773044354" },
-    ],
-  },
-{
     id: "ajax-retro-202324-away",
     teamKey: "ajax",
     season: "2023/24",
@@ -30400,7 +30383,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Farsenal-1995-96-away-retro-soccer-jersey%3Fvariant%3D42833471504489", title: "Arsenal 1995/96 Away Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Bergkamp_10_Retro_Arsenal_Away_Jersey_199596-1.webp?v=1767078034" },
       { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800305011496?_skw=Arsenal+away+soccer+jersey+retro+vintage&hash=itemba55e55b28%3Ag%3A2IsAAeSwy3xpuwvn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Arsenal away jersey 95-96 Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/2IsAAeSwy3xpuwvn/s-l225.jpg" },
     ],
   },
@@ -33374,19 +33356,6 @@ const productsData = [
     ],
   },
 {
-    id: "intermilan-retro-200708-home",
-    teamKey: "intermilan",
-    season: "2007/08",
-    typeKey: "retro",
-    colorHex: "#010E80",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Finter-milan-2007-08-home-retro-football-jersey%3Fvariant%3D42557220749417", title: "Inter Milan 2007/08 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/d20455e4dbffd71783d8748d9292318e.png?v=1758074336" },
-    ],
-  },
-{
     id: "intermilan-retro-200910-home",
     teamKey: "intermilan",
     season: "2009/10",
@@ -33396,7 +33365,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Finter-milan-2009-10-home-retro-football-jersey-ucl-final%3Fvariant%3D42557204529257", title: "Inter Milan 2009/10 Home Retro Football Jersey - UCL Final", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/7f9a5cf344c14dae7151f5bc005f6cd9.png?v=1758074213" },
       { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127872433071?_skw=Inter+Milan+home+soccer+jersey+retro+vintage&hash=item1dc5ca7baf%3Ag%3AoDIAAeSwrWdqC%7EG6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Milan 09/10 Home Retro Jersey Long Sleeve Football Shirt UCL Final Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/oDIAAeSwrWdqC~G6/s-l225.jpg" },
       { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318521010930?_skw=Inter+Milan+home+soccer+jersey+retro+vintage&hash=item4a2954eaf2%3Ag%3AB8kAAeSw4ulqQtJ8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Milan 2009 2010 Home Milito #22 UCL Final Retro Soccer Jersey L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/B8kAAeSw4ulqQtJ8/s-l225.jpg" },
     ],
@@ -33411,7 +33379,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Finter-milan-2011-12-home-retro-football-jersey%3Fvariant%3D43238524125289", title: "Inter Milan 2011/12 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroInterMilanHomeJersey201112_2.webp?v=1779432017" },
       { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168587033383?_skw=Inter+Milan+home+soccer+jersey&hash=item274091fb27%3Ag%3AVPYAAeSw0XBqcVWJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike 2011 - 2012 Inter Milan Home Soccer Jersey NWT Youth Large Blue/Black", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/VPYAAeSw0XBqcVWJ/s-l225.jpg" },
     ],
   },
@@ -33575,19 +33542,6 @@ const productsData = [
     ],
   },
 {
-    id: "italia-retro-1998-away",
-    teamKey: "italia",
-    season: "1998",
-    typeKey: "retro",
-    colorHex: "#003D7C",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fitaly-1998-away-retro-football-jersey%3Fvariant%3D42837748711529", title: "Italy 1998 Away Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroItalyAwayJerseyWorldCup1998_4.webp?v=1769074449" },
-    ],
-  },
-{
     id: "italia-retro-2004-away",
     teamKey: "italia",
     season: "2004",
@@ -33670,19 +33624,6 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fitaly-1996-home-retro-football-jersey%3Fvariant%3D42837007368297", title: "Italy 1996 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroItalyHomeJerseyEuroCup1996_1__1.webp?v=1769068652" },
-    ],
-  },
-{
-    id: "italia-retro-1998-home",
-    teamKey: "italia",
-    season: "1998",
-    typeKey: "retro",
-    colorHex: "#003D7C",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fitaly-1998-home-retro-football-jersey%3Fvariant%3D42557204693097", title: "Italy 1998 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/01231a6a278b498acc1e4a35bd86f91f.png?v=1758074214" },
     ],
   },
 {
@@ -34259,45 +34200,6 @@ const productsData = [
     ],
   },
 {
-    id: "liverpool-retro-199395-away",
-    teamKey: "liverpool",
-    season: "1993/95",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-1993-95-away-retro-football-jersey%3Fvariant%3D42557214163049", title: "Liverpool 1993/95 Away Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/87ae45cb3c5abf3360862b9b0bad8b40.png?v=1758074290" },
-    ],
-  },
-{
-    id: "liverpool-retro-199596-away",
-    teamKey: "liverpool",
-    season: "1995/96",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-1995-96-away-retro-football-jersey%3Fvariant%3D42985865281641", title: "Liverpool 1995/96 Away Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Liverpoolaway1995-96_6.webp?v=1773645143" },
-    ],
-  },
-{
-    id: "liverpool-retro-200001-away",
-    teamKey: "liverpool",
-    season: "2000/01",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-2000-01-away-retro-soccer-jersey%3Fvariant%3D42837010382953", title: "Liverpool 2000/01 Away Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroLiverpoolAwayJersey200001.webp?v=1769068884" },
-    ],
-  },
-{
     id: "liverpool-retro-202324-away",
     teamKey: "liverpool",
     season: "2023/24",
@@ -34350,47 +34252,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-1989-91-home-retro-soccer-jersey%3Fvariant%3D42833475371113", title: "Liverpool 1989/91 Home Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Liverpool198991Homejersey_5.webp?v=1768996097" },
       { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/136424374997?_skw=Liverpool+home+soccer+jersey+retro+vintage&hash=item1fc386c2d5%3Ag%3AoucAAeSwufBovFtX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Retro Replica Red Liverpool 1989-1991 Home Football/ Soccer Jersey Size Medium ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/oucAAeSwufBovFtX/s-l225.jpg" },
-    ],
-  },
-{
-    id: "liverpool-retro-199395-home",
-    teamKey: "liverpool",
-    season: "1993/95",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-1993-95-home-retro-football-jersey%3Fvariant%3D42639656747113", title: "Liverpool 1993/95 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Liverpool_Home_9395_2.png?v=1761287769" },
-    ],
-  },
-{
-    id: "liverpool-retro-199596-home",
-    teamKey: "liverpool",
-    season: "1995/96",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-1995-96-home-retro-soccer-jersey%3Fvariant%3D42833479336041", title: "Liverpool 1995/96 Home Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroSoccerJerseyLiverpoolHome199596_2__1.webp?v=1768996465" },
-    ],
-  },
-{
-    id: "liverpool-retro-2005-home",
-    teamKey: "liverpool",
-    season: "2005",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-2005-home-retro-football-jersey-ucl-final%3Fvariant%3D42557229629545", title: "Liverpool 2005 Home Retro Football Jersey - UCL Final", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/74ee693153985ae347d27d14728e68bb.png?v=1758074401" },
     ],
   },
 {
@@ -34403,7 +34265,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-2006-07-home-retro-soccer-jersey%3Fvariant%3D42557217439849", title: "Liverpool 2006/07 Home Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/5908ae8c1834620e1f0d75596f0b6e08.png?v=1758074313" },
       { store: "eBay", price: 40.19, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377349351924?_skw=Liverpool+home+soccer+jersey+retro+vintage&hash=item57dbc629f4%3Ag%3AawIAAeSwGs1qWhKA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool 2006/07 Home Retro Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/awIAAeSwGs1qWhKA/s-l225.jpg" },
     ],
   },
@@ -34543,7 +34404,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-city-2013-14-home-retro-football-jersey%3Fvariant%3D42557220585577", title: "Manchester City 2013/14 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/4425fdc5206feb52edc5476ae44be0b3_78a13e63-4b11-40ec-8f59-03e362dc06e9.jpg?v=1758074334" },
       { store: "eBay", price: 250.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178084565951?_skw=Manchester+City+home+soccer+jersey+retro+vintage&hash=item2976aad3bf%3Ag%3AE6wAAeSwFbNp7-5i&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "⚽Original Vintage MANCHESTER CITY 2013-2014 Home Soccer Jersey 🌟BNWT🌟 ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/E6wAAeSwFbNp7-5i/s-l225.jpg" },
     ],
   },
@@ -34727,19 +34587,6 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-united-2000-01-away-retro-soccer-jersey%3Fvariant%3D43111730610281", title: "Manchester United 2000/01 Away Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/BECKHAM_7RetroManchesterUnitedAwayJersey200001_2.webp?v=1775645745" },
-    ],
-  },
-{
-    id: "manutd-retro-200203-away",
-    teamKey: "manutd",
-    season: "2002/03",
-    typeKey: "retro",
-    colorHex: "#DA020E",
-    colorHexSecondary: "#F5D142",
-    jerseyPattern: "solid",
-    brand: "other",
-    offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fretro-manchester-united-2002-03-away-soccer-jersey%3Fvariant%3D42828079071337", title: "Retro Manchester United 2002/03 Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroManchesterUnitedAwayJersey200203_1.webp?v=1768879177" },
     ],
   },
 {
@@ -35946,7 +35793,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnetherlands-2014-world-cup-away-retro-soccer-jersey%3Fvariant%3D43150453178473", title: "Netherlands 2014 World Cup Away Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RetroNetherlandsAwayJerseyWorldCup2014_3.webp?v=1776852423" },
       { store: "eBay", price: 150.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397982106785?_skw=Netherlands+away+soccer+jersey&hash=item5ca99504a1%3Ag%3AyBkAAeSwyJ5qEhk9&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbbpyS09C%2F4X5a4%2B82iXJNwQC8OIUCtwGY--Qn3KXWCplysAjTXrLB%2F4q07BUouQWoJb%2FoIPvs8ZIpMLwi%2FG7zW4Rk5rucZ0THRPia8x4eiv9zw63nGZVVm23soUJMW6HsJwQQYwYQo%2BXc4d%2FwTcHHXvANcDFJlxum0WN8pXkT%2BextWteXndcdsMEYgvaL1xRkb1aihWDgRbLtck0wVanCvRZYQhWhkjFD9sawOiOIdqJTAmYGakREHZe21oLjImJbWykNO%2FGwlfWHMOTzvu690PpNcWjBp%2BiMZAzMCnNli6k547BLNFlEMrWoRZetTMm0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2014 World Cup Nike Netherlands Arjen Robben Authentic Away Jersey Shirt Kit", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/yBkAAeSwyJ5qEhk9/s-l225.jpg" },
     ],
   },
@@ -42724,30 +42570,6 @@ const productsData = [
     ],
   },
 {
-    id: "bournemouth-retro-1993-home",
-    teamKey: "bournemouth",
-    season: "1993",
-    typeKey: "retro",
-    colorHex: "#DA291C",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 31.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/314777753778?_skw=Bournemouth+home+soccer+jersey&hash=item494a3758b2%3Ag%3A7%7EEAAOSw4jFk3fWR&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bournemouth 1993 Home Shirt Personalised Vintage Beach Towel", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/7~EAAOSw4jFk3fWR/s-l225.jpg" },
-    ],
-  },
-{
-    id: "bournemouth-retro-2001-home",
-    teamKey: "bournemouth",
-    season: "2001",
-    typeKey: "retro",
-    colorHex: "#DA291C",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 31.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/204432163049?_skw=Bournemouth+home+soccer+jersey&hash=item2f991b40e9%3Ag%3AVVcAAOSwiw1k3fW7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bournemouth 2001 Home Shirt Personalised Vintage Beach Towel", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/VVcAAOSwiw1k3fW7/s-l225.jpg" },
-    ],
-  },
-{
     id: "brasil-retro-1998-away",
     teamKey: "brasil",
     season: "1998",
@@ -42769,18 +42591,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 174.86, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178040668313?_skw=Brazil+home+soccer+jersey+retro+vintage&hash=item29740d0099%3Ag%3ArH8AAOSwy7pfZ4g8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "4.5/5 Brazil (Brasil) adults L 1993 home retro football shirt jersey soccer", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/rH8AAOSwy7pfZ4g8/s-l225.jpg" },
-    ],
-  },
-{
-    id: "brentford-retro-1983-home",
-    teamKey: "brentford",
-    season: "1983",
-    typeKey: "retro",
-    colorHex: "#E30613",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 31.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/186039153097?_skw=Brentford+home+soccer+jersey+retro+vintage&hash=item2b50cc31c9%3Ag%3ADHoAAOSwIYdk3ezB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brentford - 1983 Home Shirt Personalised Vintage Beach Towel", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/DHoAAOSwIYdk3ezB/s-l225.jpg" },
     ],
   },
 {
@@ -46018,18 +45828,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 42.36, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168529679735?_skw=Newcastle+United+home+soccer+jersey+retro+vintage&hash=item273d26d577%3Ag%3AuVUAAOSwvJdmrNgl&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGbDJnbpsycRfZg8g5QZ0rbk0AvYLi7UKg%2Bf7TN2eYGpxqcVJZBPU6kWdQ19zpRumgIBzcUcsALtTg%2By6Wyuvy8HgEuKMUrnEii9oPblOr2TFIeB%2B7vqrTD%2BCj7pxRcLe%2FdMSm0ZXUGGNQJJSUlIgM9Yub6g40DKlTpNcPB0FdtFW4kE0HN76jyhb8SvwWAZE89vJOSA2%2BXHd74Jg%2B6i9GJ5vV6eDimeZMj95QB%2FeAFIVF4SEdrIu9umLjQYRmHYK%2F%2BW3vMC7mk7PvryQ8Khlu2HFknCRoqm2DtftuGO5H21zwb4j5lpcT0CmoLo5Fs8NyUcAtEyb%2Bz1lFe0FNP%2BK5hj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEWCASTLE UNITED 1993/1995 HOME FOOTBALL SHIRT REISSUE SIZE M ADULT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/uVUAAOSwvJdmrNgl/s-l225.jpg" },
-    ],
-  },
-{
-    id: "newcastle-retro-1996-home",
-    teamKey: "newcastle",
-    season: "1996",
-    typeKey: "retro",
-    colorHex: "#241F20",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 31.14, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/205607377344?_skw=Newcastle+United+home+soccer+jersey+retro+vintage&hash=item2fdf2799c0%3Ag%3A4y8AAeSw2xlobjpy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Newcastle - 1996 - Home Shirt - Personalised Retro Lightweight, Microfibre Beach", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/4y8AAeSw2xlobjpy/s-l225.jpg" },
     ],
   },
 {
