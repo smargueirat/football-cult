@@ -134,6 +134,27 @@ export default function SearchExplorer() {
   const { countryCode } = useCountry();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortOpen, setSortOpen] = useState(false);
+  const sortMenuRef = useRef<HTMLDivElement>(null);
+
+  // Cierra el dropdown de sort al clickear afuera. Antes esto se hacía con
+  // una capa invisible fixed+inset-0 detrás del panel (mismo patrón que el
+  // bottom sheet de filtros) -- pero se reportó que en desktop tocar una
+  // opción del menú "no hacía nada" (ni cerraba el menú ni cambiaba el
+  // orden). La sospecha es que esa capa, al ser un fixed inset-0 con
+  // z-index propio, en algún caso terminaba interceptando el click antes
+  // de que llegara al botón de la opción. Un listener en document que
+  // chequea si el click fue afuera del menú (por ref, no por una capa
+  // superpuesta) no tiene ese riesgo.
+  useEffect(() => {
+    if (!sortOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (sortMenuRef.current && !sortMenuRef.current.contains(e.target as Node)) {
+        setSortOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [sortOpen]);
 
   const results = useMemo(() => {
     const queryWords = normalizeSearchText(query.trim())
@@ -390,7 +411,7 @@ export default function SearchExplorer() {
               </span>
             )}
           </button>
-          <div className="relative">
+          <div className="relative" ref={sortMenuRef}>
             <button
               onClick={() => setSortOpen((o) => !o)}
               className="flex w-full items-center justify-center gap-2 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
@@ -407,16 +428,7 @@ export default function SearchExplorer() {
             </button>
 
             {sortOpen && (
-              <>
-                {/* En desktop el menú es un dropdown anclado al botón, no
-                    el bottom sheet de mobile (que ahí abajo no se veía).
-                    Este backdrop invisible solo sirve para cerrar al
-                    clickear afuera -- no oscurece la pantalla. */}
-                <div
-                  className="fixed inset-0 z-40 hidden md:block"
-                  onClick={() => setSortOpen(false)}
-                />
-                <div className="absolute right-0 top-[calc(100%+8px)] z-50 hidden w-64 flex-col gap-1 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] md:flex">
+              <div className="absolute right-0 top-[calc(100%+8px)] z-50 hidden w-64 flex-col gap-1 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] md:flex">
                   {SORT_OPTIONS.map((opt) => (
                     <button
                       key={opt.key}
@@ -449,7 +461,6 @@ export default function SearchExplorer() {
                     </button>
                   ))}
                 </div>
-              </>
             )}
           </div>
         </div>
