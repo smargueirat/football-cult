@@ -106,6 +106,7 @@ export interface Translations {
     brandLabel: string;
     loadMore: string;
     sizeLabel: string;
+    priceRangeLabel: string;
     clearFilters: string;
   };
   product: {
@@ -372,6 +373,7 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Marca",
       loadMore: "Ver más",
       sizeLabel: "Talle",
+      priceRangeLabel: "Rango de precio",
       clearFilters: "Borrar filtros",
     },
     product: {
@@ -644,6 +646,7 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Marca",
       loadMore: "Ver mais",
       sizeLabel: "Tamanho",
+      priceRangeLabel: "Faixa de preço",
       clearFilters: "Limpar filtros",
     },
     product: {
@@ -916,6 +919,7 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Brand",
       loadMore: "Show more",
       sizeLabel: "Size",
+      priceRangeLabel: "Price range",
       clearFilters: "Clear filters",
     },
     product: {

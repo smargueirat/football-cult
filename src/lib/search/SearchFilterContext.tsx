@@ -5,6 +5,12 @@ import { AgeGroup, Brand, CategoryKey, Size, TypeKey } from "@/data/products";
 
 export type SortKey = "relevance" | "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
 
+// Bandas fijas sobre el total normalizado en EUR (mismo valor que ya usa
+// el ordenamiento por precio, offerTotalInEUR) -- así el filtro es
+// consistente entre monedas distintas aunque cada card siga mostrando el
+// precio en la moneda real de su oferta.
+export type PriceBand = "under25" | "25to50" | "50to100" | "over100";
+
 function toggle<T>(list: T[], value: T): T[] {
   return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
 }
@@ -34,6 +40,9 @@ interface SearchFilterValue {
   sizeFilter: Size[];
   toggleSizeFilter: (s: Size) => void;
   setSizeFilter: (s: Size[]) => void;
+  priceBandFilter: PriceBand[];
+  togglePriceBandFilter: (p: PriceBand) => void;
+  setPriceBandFilter: (p: PriceBand[]) => void;
   // Vive acá (no como useState local del componente de resultados) para
   // que sobreviva cuando el usuario entra a una camiseta y vuelve atrás:
   // este contexto está montado en el layout raíz, no en la página de
@@ -63,6 +72,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [ageGroupFilter, setAgeGroupFilter] = useState<AgeGroup[]>([]);
   const [brandFilter, setBrandFilter] = useState<Brand[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
+  const [priceBandFilter, setPriceBandFilter] = useState<PriceBand[]>([]);
   const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
   const [visibleCount, setVisibleCount] = useState(CATALOG_PAGE_SIZE);
 
@@ -72,7 +82,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (seasonFilter.length > 0 ? 1 : 0) +
     (ageGroupFilter.length > 0 ? 1 : 0) +
     (brandFilter.length > 0 ? 1 : 0) +
-    (sizeFilter.length > 0 ? 1 : 0);
+    (sizeFilter.length > 0 ? 1 : 0) +
+    (priceBandFilter.length > 0 ? 1 : 0);
 
   return (
     <SearchFilterContext.Provider
@@ -97,6 +108,9 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         sizeFilter,
         toggleSizeFilter: (s) => setSizeFilter((cur) => toggle(cur, s)),
         setSizeFilter,
+        priceBandFilter,
+        togglePriceBandFilter: (p) => setPriceBandFilter((cur) => toggle(cur, p)),
+        setPriceBandFilter,
         sortBy,
         setSortBy,
         activeFilterCount,
@@ -108,6 +122,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setAgeGroupFilter([]);
           setBrandFilter([]);
           setSizeFilter([]);
+          setPriceBandFilter([]);
         },
         visibleCount,
         setVisibleCount,

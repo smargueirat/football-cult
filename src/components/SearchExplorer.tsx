@@ -26,7 +26,7 @@ import {
   typeNames,
 } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { CATALOG_PAGE_SIZE, useSearchFilter } from "@/lib/search/SearchFilterContext";
+import { CATALOG_PAGE_SIZE, PriceBand, useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard3D";
 import Chip from "./Chip";
@@ -70,6 +70,17 @@ const QUICK_PICK_TEAMS: TeamKey[] = [
 
 const SCROLL_KEY = "football-cult-catalog-scroll";
 
+// Bandas de precio: valores literales en EUR, no traducidos -- son
+// montos, no texto, así que se entienden igual en los tres idiomas
+// (mismo criterio que ya se usa para talles "S"/"M"/"L").
+const PRICE_BANDS: PriceBand[] = ["under25", "25to50", "50to100", "over100"];
+const PRICE_BAND_LABELS: Record<PriceBand, string> = {
+  under25: "< €25",
+  "25to50": "€25 – €50",
+  "50to100": "€50 – €100",
+  over100: "€100+",
+};
+
 // Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
 // (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para
 // que la búsqueda no dependa de en qué idioma esté puesta la página.
@@ -78,6 +89,13 @@ function normalizeSearchText(text: string): string {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase();
+}
+
+function priceBandOf(totalEUR: number): PriceBand {
+  if (totalEUR < 25) return "under25";
+  if (totalEUR < 50) return "25to50";
+  if (totalEUR < 100) return "50to100";
+  return "over100";
 }
 
 export default function SearchExplorer() {
@@ -103,6 +121,9 @@ export default function SearchExplorer() {
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
+    priceBandFilter,
+    togglePriceBandFilter,
+    setPriceBandFilter,
     sortBy,
     setSortBy,
     activeFilterCount,
@@ -177,6 +198,12 @@ export default function SearchExplorer() {
       const matchesSize =
         sizeFilter.length === 0 || availableSizes(p).some((s) => sizeFilter.includes(s));
       const matchesShipping = shipsToCountry(p, countryCode);
+      const matchesPriceBand = (() => {
+        if (priceBandFilter.length === 0) return true;
+        const best = bestOfferForCountry(p, countryCode);
+        if (!best) return false;
+        return priceBandFilter.includes(priceBandOf(offerTotalInEUR(best)));
+      })();
       return (
         matchesQuery &&
         matchesType &&
@@ -185,7 +212,8 @@ export default function SearchExplorer() {
         matchesAgeGroup &&
         matchesBrand &&
         matchesSize &&
-        matchesShipping
+        matchesShipping &&
+        matchesPriceBand
       );
     });
 
@@ -243,6 +271,7 @@ export default function SearchExplorer() {
     ageGroupFilter,
     brandFilter,
     sizeFilter,
+    priceBandFilter,
     countryCode,
     sortBy,
   ]);
@@ -264,7 +293,7 @@ export default function SearchExplorer() {
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, priceBandFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -607,6 +636,29 @@ export default function SearchExplorer() {
                       className="flex-shrink-0 whitespace-nowrap"
                     >
                       {brandNames[key]}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <span className="text-xs text-[#675c44]">{t.search.priceRangeLabel}:</span>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={priceBandFilter.length === 0}
+                    onClick={() => setPriceBandFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {PRICE_BANDS.map((band) => (
+                    <Chip
+                      key={band}
+                      active={priceBandFilter.includes(band)}
+                      onClick={() => togglePriceBandFilter(band)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {PRICE_BAND_LABELS[band]}
                     </Chip>
                   ))}
                 </div>
