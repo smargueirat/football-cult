@@ -2381,6 +2381,31 @@ export function offerTotalInEUR(offer: Offer): number {
   return (offer.price + offer.shipping) / OFFER_CURRENCY_TO_EUR[offer.currency];
 }
 
+// El envío de eBay cargado en el catálogo es, en el 92% de los casos, un
+// placeholder en 0 -- el costo real depende del país del comprador y solo
+// se sabe pidiéndolo en vivo (ver useLiveOfferTotal). Eso hace que, para
+// ORDENAR/FILTRAR por precio en la grilla completa (donde no es viable
+// pedir el envío real de cada oferta antes de mostrar algo), una camiseta
+// de eBay con envío internacional caro pueda aparecer como "la más
+// barata" aunque el total real termine siendo mucho mayor -- se reportó
+// justo este caso: $15 + $0 de envío en el catálogo, $33.38 real una vez
+// resuelto en vivo. Esta función NO se usa para lo que se le MUESTRA al
+// usuario (eso sigue viniendo de bestOfferForCountry/useLiveOfferTotal,
+// que sí verifican en vivo) -- solo para que el ORDEN no quede engañado
+// por ese placeholder. La estimación (~€13, la media real de los envíos
+// de eBay que sí vienen con dato en el feed) es aproximada a propósito:
+// mejor una estimación conservadora que confiar en un cero que sabemos
+// que casi nunca es real.
+const EBAY_ZERO_SHIPPING_SORT_ESTIMATE_EUR = 13;
+
+export function sortSafeOfferTotalInEUR(offer: Offer): number {
+  const total = offerTotalInEUR(offer);
+  if (offer.store === "eBay" && offer.shipping === 0) {
+    return total + EBAY_ZERO_SHIPPING_SORT_ESTIMATE_EUR;
+  }
+  return total;
+}
+
 // A qué países envía cada tienda. "all" = envío global.
 // El feed de producto (Awin) no trae este dato (columnas "shipping" y
 // "ships_from_country" vacías para las dos tiendas), así que se verificó

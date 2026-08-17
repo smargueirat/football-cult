@@ -13,11 +13,11 @@ import {
   bestOfferForCountry,
   brandNames,
   getAgeGroup,
-  offerTotalInEUR,
   products,
   isVintageRetro,
   seasonSortValue,
   shipsToCountry,
+  sortSafeOfferTotalInEUR,
   teamCategory,
   teamColors,
   teamFlags,
@@ -230,7 +230,7 @@ export default function SearchExplorer() {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
         const best = bestOfferForCountry(p, countryCode);
         if (!best) return false;
-        const totalEUR = offerTotalInEUR(best);
+        const totalEUR = sortSafeOfferTotalInEUR(best);
         // Llevar la manija de arriba al tope del slider quita el límite
         // superior por completo (ver comentario en SearchFilterContext.tsx).
         const withinMax = priceRange[1] === PRICE_RANGE_MAX || totalEUR <= priceRange[1];
@@ -290,8 +290,8 @@ export default function SearchExplorer() {
       }
       const bestA = bestOfferForCountry(a, countryCode);
       const bestB = bestOfferForCountry(b, countryCode);
-      const totalA = bestA ? offerTotalInEUR(bestA) : Infinity;
-      const totalB = bestB ? offerTotalInEUR(bestB) : Infinity;
+      const totalA = bestA ? sortSafeOfferTotalInEUR(bestA) : Infinity;
+      const totalB = bestB ? sortSafeOfferTotalInEUR(bestB) : Infinity;
       return sortBy === "priceDesc" ? totalB - totalA : totalA - totalB;
     });
   }, [
