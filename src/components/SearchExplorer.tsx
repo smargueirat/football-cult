@@ -122,21 +122,40 @@ export default function SearchExplorer() {
   const { countryCode } = useCountry();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortOpen, setSortOpen] = useState(false);
-  const sortMenuRef = useRef<HTMLDivElement>(null);
+  const sortButtonRef = useRef<HTMLButtonElement>(null);
+  const sortPanelRef = useRef<HTMLDivElement>(null);
+  const [sortPanelPos, setSortPanelPos] = useState({ top: 0, right: 0 });
 
-  // Cierra el dropdown de sort al clickear afuera. Antes esto se hacía con
-  // una capa invisible fixed+inset-0 detrás del panel (mismo patrón que el
-  // bottom sheet de filtros) -- pero se reportó que en desktop tocar una
-  // opción del menú "no hacía nada" (ni cerraba el menú ni cambiaba el
-  // orden). La sospecha es que esa capa, al ser un fixed inset-0 con
-  // z-index propio, en algún caso terminaba interceptando el click antes
-  // de que llegara al botón de la opción. Un listener en document que
-  // chequea si el click fue afuera del menú (por ref, no por una capa
-  // superpuesta) no tiene ese riesgo.
+  // Primer intento: dropdown posicionado con position:absolute dentro del
+  // flujo normal de la página, cerrado con un listener de click-afuera por
+  // ref. Se siguió reportando que en desktop tocar "Price: high to low" /
+  // "Newest first" / "Oldest first" (las opciones de más abajo del panel,
+  // justo donde el panel se superpone con la primera fila de tarjetas del
+  // catálogo) no hacía nada -- mientras que "Relevance"/"Price: low to
+  // high" (arriba del panel, sin superposición) sí andaban. Eso apunta a
+  // que ProductCard3D (tiene su propio stacking context por el tilt 3D
+  // con transform) termina ganándole al panel en esa franja, pese al
+  // z-index más alto del panel. La forma de sacarse esa duda de encima
+  // del todo es renderizar el panel con Portal (al final de <body>, como
+  // ya se hace con el bottom sheet de Filters) en vez de confiar en
+  // z-index relativo -- así queda garantizado por encima de cualquier
+  // otro stacking context de la página, sea cual sea la causa real.
+  useEffect(() => {
+    if (!sortOpen || !sortButtonRef.current) return;
+    const rect = sortButtonRef.current.getBoundingClientRect();
+    setSortPanelPos({ top: rect.bottom + 8, right: window.innerWidth - rect.right });
+  }, [sortOpen]);
+
   useEffect(() => {
     if (!sortOpen) return;
     const handleClickOutside = (e: MouseEvent) => {
-      if (sortMenuRef.current && !sortMenuRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      if (
+        sortButtonRef.current &&
+        !sortButtonRef.current.contains(target) &&
+        sortPanelRef.current &&
+        !sortPanelRef.current.contains(target)
+      ) {
         setSortOpen(false);
       }
     };
@@ -403,59 +422,59 @@ export default function SearchExplorer() {
               </span>
             )}
           </button>
-          <div className="relative" ref={sortMenuRef}>
-            <button
-              onClick={() => setSortOpen((o) => !o)}
-              className="flex w-full items-center justify-center gap-2 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
-            >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 7h10M3 12h6M3 17h3M17 4v16m0 0l-3.5-3.5M17 20l3.5-3.5"
-                />
-              </svg>
-              {t.search.sortLabel}
-            </button>
-
-            {sortOpen && (
-              <div className="absolute right-0 top-[calc(100%+8px)] z-50 hidden w-64 flex-col gap-1 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] md:flex">
-                  {SORT_OPTIONS.map((opt) => (
-                    <button
-                      key={opt.key}
-                      onClick={() => {
-                        setSortBy(opt.key);
-                        setSortOpen(false);
-                      }}
-                      className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-left text-sm transition-colors ${
-                        sortBy === opt.key
-                          ? "bg-[#1B3B2B] text-[#F3E9C9]"
-                          : "text-[#3a3a36] hover:bg-black/[0.04]"
-                      }`}
-                    >
-                      {opt.label}
-                      {sortBy === opt.key && (
-                        <svg
-                          className="h-4 w-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                      )}
-                    </button>
-                  ))}
-                </div>
-            )}
-          </div>
+          <button
+            ref={sortButtonRef}
+            onClick={() => setSortOpen((o) => !o)}
+            className="flex w-full items-center justify-center gap-2 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-3 text-sm font-medium text-[#1a1a1a] transition-colors hover:border-[#1B3B2B]/40"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 7h10M3 12h6M3 17h3M17 4v16m0 0l-3.5-3.5M17 20l3.5-3.5"
+              />
+            </svg>
+            {t.search.sortLabel}
+          </button>
         </div>
+
+        {sortOpen && (
+          <Portal>
+            <div
+              ref={sortPanelRef}
+              className="fixed z-50 hidden w-64 flex-col gap-1 rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] p-2 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)] md:flex"
+              style={{ top: sortPanelPos.top, right: sortPanelPos.right }}
+            >
+              {SORT_OPTIONS.map((opt) => (
+                <button
+                  key={opt.key}
+                  onClick={() => {
+                    setSortBy(opt.key);
+                    setSortOpen(false);
+                  }}
+                  className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-left text-sm transition-colors ${
+                    sortBy === opt.key
+                      ? "bg-[#1B3B2B] text-[#F3E9C9]"
+                      : "text-[#3a3a36] hover:bg-black/[0.04]"
+                  }`}
+                >
+                  {opt.label}
+                  {sortBy === opt.key && (
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  )}
+                </button>
+              ))}
+            </div>
+          </Portal>
+        )}
 
         {(activeFilterCount > 0 || query.trim().length > 0) && (
           <button
