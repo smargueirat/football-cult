@@ -2716,7 +2716,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 56.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F40009329-maillot-domicile-blackburn-rovers-fc-2025-26-bleu-blanc", title: "Maillot Domicile Blackburn Rovers FC 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-40009329-bleu-blanc-1.webp" },
       { store: "SportIsGoodFR", price: 57.97, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F40009329-maillot-domicile-blackburn-rovers-fc-2025-26-bleu-blanc", title: "Maillot Domicile Blackburn Rovers FC 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-40009329-bleu-blanc-1.webp" },
-      { store: "eBay", price: 99.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376794952339?_skw=Blackburn+Rovers+home+soccer+jersey+2025+2026&hash=item57babab293%3Ag%3AATgAAeSwRHFpSKbp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Blackburn Rovers Home Shirt 2025/26 Macron Licensed Soccer Jersey Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ATgAAeSwRHFpSKbp/s-l225.jpg" },
+      { store: "eBay", price: 99.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376794952339?_skw=Blackburn+Rovers+home+soccer+jersey&hash=item57babab293%3Ag%3AATgAAeSwRHFpSKbp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZfW6MVwKKBH236iIpPBqxTlx8ID%2F2DXXB4p24GCQ%2F8cKA%2FZ3T03MoMCPaX8urTAxSbyDjscg9xCxyxzY0P%2BZJa72aq9Yz9lwV%2BpmwaABW5dJF%2BpvnsykCUAF9awWHpV1Y%2FDcuUax3tDmkP96IWFXtdx34bruQbxjWtPbgXmatw9wieEg%2BbWw8Zv2phdR3spwyOC2yY%2BWyv4EBVhS30RAXZtByndGRP01pVKG4g4zs0JP4ec58sfwQ%2FfT2IWsN2pJf%2FlIjFYGIDvmCquw8z1gtPUs3ionATUOqILc8OU8N7fn%2FRE85Np8CFR6Ao2J2jtY4%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Blackburn Rovers Home Shirt 2025/26 Macron Licensed Soccer Jersey Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ATgAAeSwRHFpSKbp/s-l225.jpg" },
     ],
   },
 {
@@ -3294,6 +3294,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Faek-athens-away-jersey-2025-26%3Fvariant%3D42712261722217", title: "AEK Athens Away Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AEK_Athens_Away_Jersey_202526.webp?v=1764223775" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/357567423080?_skw=AEK+Athens+away+soccer+jersey&hash=item5340ade268%3Ag%3A-vUAAeSw9zJouUOJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY AEK Athens Away 2025-26 Mens", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/-vUAAeSw9zJouUOJ/s-l225.jpg" },
     ],
   },
 {
@@ -3332,7 +3333,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcuracao-home-soccer-jersey-2026-world-cup%3Fvariant%3D42963960430697", title: "Curaçao Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/CuracaoHomejersey2026WorldCup_1.webp?v=1772764410" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44808993204&a=3013769&m=77008", title: "Camiseta primera equipación Curaçao 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff650bc7e541544e6b89e1a3c30726bde_9366%2FCamiseta_primera_equipacion_Curacao_26_Azul_LE3408_21_model.jpg&feedId=92152&k=7224303554b95189a6ed1dc5ffc7f8d99deee702" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44808985745&a=3013769&m=77026", title: "Curacao 26 Camisola Principal", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb254fe7ab439401087113e932b95879b_9366%2FCuracao_26_Camisola_Principal_Azul_LE3401_21_model.jpg&feedId=92150&k=f403e4cf6b0132d846328b7c30c96a73425202ac" },
-      { store: "eBay", price: 26.55, shipping: 8.9, currency: "USD", url: "https://www.ebay.com/itm/318475554643?_skw=Cura%C3%A7ao+home+soccer+jersey+2025+2026&hash=item4a269f4f53%3Ag%3AUOwAAeSwPQNqNLiM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Curaçao Home/Away 2026 MEN Jersey Yellow", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/UOwAAeSwPQNqNLiM/s-l225.jpg" },
+      { store: "eBay", price: 26.55, shipping: 8.9, currency: "USD", url: "https://www.ebay.com/itm/318475554643?_skw=Cura%C3%A7ao+home+soccer+jersey&hash=item4a269f4f53%3Ag%3AUOwAAeSwPQNqNLiM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Curaçao Home/Away 2026 MEN Jersey Yellow", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/UOwAAeSwPQNqNLiM/s-l225.jpg" },
     ],
   },
 {
@@ -3357,7 +3358,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fleicester-city-home-soccer-jersey-2025-26%3Fvariant%3D42833495261289", title: "Leicester City Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/LeicesterCityJersey2025_26HomeFootballKit_2.webp?v=1768998341" },
-      { store: "eBay", price: 85.2, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/178274177040?_skw=Leicester+City+home+soccer+jersey+2025+2026&hash=item2981f81010%3Ag%3AWd0AAeSweFVp-ly4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "LEICESTER CITY Adidas Home Football Shirt 2025-2026 NEW Mens Sizes Jersey BNWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Wd0AAeSweFVp-ly4/s-l225.jpg" },
+      { store: "eBay", price: 48.44, shipping: 27.06, currency: "USD", url: "https://www.ebay.com/itm/178100540754?_skw=Leicester+City+home+soccer+jersey&hash=item29779e9552%3Ag%3Au5cAAeSwh5VqB6V8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leicester City football Shirt size XXL 2025-26 Home Soccer Jersey Official BNWT", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/u5cAAeSwh5VqB6V8/s-l225.jpg" },
     ],
   },
 {
@@ -3370,7 +3371,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpalermo-away-soccer-jersey-2025-26%3Fvariant%3D42712263426153", title: "Palermo Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Palermo_Away_Jersey_202526_2.webp?v=1764224350" },
-      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267367885430?_skw=Palermo+away+soccer+jersey+2025+2026&hash=item3e405e2a76%3Ag%3AtuEAAeSwLrBpXCM8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025-26 Palermo Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/tuEAAeSwLrBpXCM8/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267367885430?_skw=Palermo+away+soccer+jersey&hash=item3e405e2a76%3Ag%3AtuEAAeSwLrBpXCM8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025-26 Palermo Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/tuEAAeSwLrBpXCM8/s-l225.jpg" },
     ],
   },
 {
@@ -3383,7 +3384,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpalermo-home-soccer-jersey-2025-26%3Fvariant%3D42712263884905", title: "Palermo Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Palermo_Home_Jersey_202526_2.webp?v=1764224488" },
-      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267320362339?_skw=Palermo+home+soccer+jersey+2025+2026&hash=item3e3d890563%3Ag%3A3MEAAeSwQLZpXCLh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025-26 Palermo Men's Stadium Home Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/3MEAAeSwQLZpXCLh/s-l225.jpg" },
+      { store: "eBay", price: 48.3, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168561078695?_skw=Palermo+home+soccer+jersey&hash=item273f05f1a7%3Ag%3AcfsAAeSwVDJqY-Q0&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb5atfwgRGqHN3eHymAgXyrV%2BxHe6sZe85ALcq0KTmKEMddFMg2ec5KkjkeyB2lSrRH98JKH2myiLeLf137CgaL0sdWWmpPvFzUOBosrHcYtoO8tDaePm5QnwwoGXcGoa1fsumM3XS2l0RIO3H5J5MKrvYx5%2BQMPDAupnC7ZgsGZYuyjG%2FXdLjHZqrXj77PPGcYwYQMEPo9UXEx%2FRI2epf99YZx8VfGm6gX5ejGFgua%2FuGmWNra%2FVew8IggQeUDOl8Exn4uB7SGBMLGqCNyWUDCeaaf8slQmyEMJwaResPtTw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Palermo FC 25/26 Puma DryCell Home Soccer Jersey Shirt Kit Sicily Italy 2XL XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cfsAAeSwVDJqY-Q0/s-l225.jpg" },
     ],
   },
 {
@@ -3432,7 +3433,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fvenezia-fc-away-soccer-jersey-2025-26%3Fvariant%3D42719424675945", title: "Venezia FC Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Venezia_FC_Away_Soccer_Jersey_202526_2.jpg?v=1764596437" },
-      { store: "eBay", price: 199.99, shipping: 5.58, currency: "USD", url: "https://www.ebay.com/itm/267732711093?_skw=Venezia+FC+away+soccer+jersey+2025+2026&hash=item3e561cf6b5%3Ag%3AuDAAAeSw17BqXUNt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Nocta Venezia FC Away Mens Jersey 2025-2026 / Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/uDAAAeSw17BqXUNt/s-l225.jpg" },
+      { store: "eBay", price: 141.68, shipping: 28.34, currency: "USD", url: "https://www.ebay.com/itm/366471801828?_skw=Venezia+FC+away+soccer+jersey&hash=item55536bebe4%3Ag%3A2g4AAeSwKXRqKqpu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW Venezia FC - Away Jersey 25/26 XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/2g4AAeSwKXRqKqpu/s-l225.jpg" },
     ],
   },
 {
@@ -3457,6 +3458,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fvenezia-fc-home-soccer-jersey-2025-27%3Fvariant%3D42719406555241", title: "Venezia FC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Venezia_FC_Home_Soccer_Jersey_202526-_2.jpg?v=1764596192" },
+      { store: "eBay", price: 145.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/177843475325?_skw=Venezia+FC+home+soccer+jersey&hash=item29684c137d%3Ag%3AIxgAAeSwwiBph14e&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZWKdnxGx0Qzzwy1FLyO5hyIJI0oHpdtNB8ppI268BAkhV3beqxGLZTO1A8HG%2FIvVymxLw0DoHWaV6P3IKzFBFVTgYScaYT9IcwcmgC%2FmJgmeYk8efOkkO25HgSE6AVkMAG3b9jTnO0GVdTgnOx55Bi0BsMl%2FdgUVj7xvsoH3dmVLUs%2FGOrUkM4M4JJ4jUVGcMqgR6MXUK9nRjJXCWItHH5b1v2WdkkWgR%2B28dvA1Qmy1gfUCLSUI8PLAmXzPhplhVIjvyVjPbLApK6Fh9wbXZiqrnc2bmqGdgOk%2B2hIPsDL%2BSZaAkC%2BWJHKOlRDS71Y7g%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NOCTA Venezia FC 25/26 Home Jersey  Soccer NWT Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/IxgAAeSwwiBph14e/s-l225.jpg" },
     ],
   },
 {
@@ -4412,7 +4414,7 @@ const productsData = [
     colorHexSecondary: "#F5C742",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 51.99, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/287513496882?_skw=Boca+Juniors+third+soccer+jersey+2025+2026&hash=item42f123cd32%3Ag%3A5MUAAeSwpKlokQvn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT $150 Adidas Boca Juniors 2025/26 HEAT.RDY Authentic Third Jersey IV8212 Sz S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/5MUAAeSwpKlokQvn/s-l225.jpg" },
+      { store: "eBay", price: 51.99, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/287513496882?_skw=Boca+Juniors+third+soccer+jersey&hash=item42f123cd32%3Ag%3A5MUAAeSwpKlokQvn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT $150 Adidas Boca Juniors 2025/26 HEAT.RDY Authentic Third Jersey IV8212 Sz S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/5MUAAeSwpKlokQvn/s-l225.jpg" },
     ],
   },
 {
@@ -4424,7 +4426,7 @@ const productsData = [
     colorHexSecondary: "#F5C742",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 160.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178375626837?_skw=Boca+Juniors+training+soccer+jersey&hash=item2988041055%3Ag%3ABEQAAeSwSApqcr30&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Boca Juniors Shirt Jersey Training  Entrenamiento 2026 Tiro 26 Adidas Official", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/BEQAAeSwSApqcr30/s-l225.jpg" },
+      { store: "eBay", price: 160.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/178375626837?_skw=Boca+Juniors+training+soccer+jersey&hash=item2988041055%3Ag%3ABEQAAeSwSApqcr30&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Boca Juniors Shirt Jersey Training  Entrenamiento 2026 Tiro 26 Adidas Official", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/BEQAAeSwSApqcr30/s-l225.jpg" },
     ],
   },
 {
@@ -4436,7 +4438,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287423942571?_skw=Cape+Verde+pre-match+soccer+jersey&hash=item42ebcd4fab%3Ag%3AK7sAAeSw5zRqQMWa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cabo Verde Cape Verde 2026 World Cup Pre-Match Training Jersey Blue Shark", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/K7sAAeSw5zRqQMWa/s-l225.jpg" },
+      { store: "eBay", price: 28.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287423942571?_skw=Cape+Verde+pre-match+soccer+jersey&hash=item42ebcd4fab%3Ag%3AK7sAAeSw5zRqQMWa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cabo Verde Cape Verde 2026 World Cup Pre-Match Training Jersey Blue Shark", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/K7sAAeSw5zRqQMWa/s-l225.jpg" },
     ],
   },
 {
@@ -4448,7 +4450,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 57.39, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/257633328159?_skw=Canada+pre-match+soccer+jersey&hash=item3bfc249c1f%3Ag%3AH%7EkAAeSwBP1qN5SV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Large Nike x NOCTA Canada Soccer Pre-Match Jersey World Cup 2026 IH1657-010", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/H~kAAeSwBP1qN5SV/s-l225.jpg" },
+      { store: "eBay", price: 53.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227470352360?_skw=Canada+pre-match+soccer+jersey&hash=item34f64a1fe8%3Ag%3ApgIAAeSwMeVqeiTr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canada Soccer x NOCTA Nike Men's 2026 Dri-FIT Pre-Match Jersey NWT 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/pgIAAeSwMeVqeiTr/s-l225.jpg" },
     ],
   },
 {
@@ -4460,7 +4462,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 87.34, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298399244557?_skw=Celta+Vigo+away+soccer+jersey&hash=item4579fb210d%3Ag%3AihsAAeSwUyFpYsGw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Celta Vigo Third Jersey 25/26 Real Club Away Shirt M - 3XL", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ihsAAeSwUyFpYsGw/s-l225.jpg" },
+      { store: "eBay", price: 88.31, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/298399244557?_skw=Celta+Vigo+away+soccer+jersey&hash=item4579fb210d%3Ag%3AihsAAeSwUyFpYsGw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Celta Vigo Third Jersey 25/26 Real Club Away Shirt M - 3XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ihsAAeSwUyFpYsGw/s-l225.jpg" },
     ],
   },
 {
@@ -4472,7 +4474,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267614458696?_skw=Czech+Republic+away+soccer+jersey&hash=item3e4f109348%3Ag%3AzfEAAeSwbq5pvQM4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Czechia Czech Republic National Team Original Jersey Maglia Away 26", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/zfEAAeSwbq5pvQM4/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267754400749?_skw=Czech+Republic+away+soccer+jersey&hash=item3e5767ebed%3Ag%3ACiAAAeSw%7Ebxqe7Mi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2026 Czech Republic Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/CiAAAeSw~bxqe7Mi/s-l225.jpg" },
       { store: "DeporteOutletES", price: 15.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324660138&a=3013769&m=19598", title: "República Checa PUMA Hombre Camiseta de segunda equipación 756502-03", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F59%2Faa%2F5c%2F756502-03-1_600x600.jpg&feedId=99907&k=555c20fd43f7a7f797e384d466e125bf6e143cce" },
     ],
   },
@@ -4485,7 +4487,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227250776736?_skw=Colo-Colo+pre-match+soccer+jersey&hash=item34e933aaa0%3Ag%3ABE0AAeSw52VpsRL7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Men pre match camouflage Black 26", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BE0AAeSw52VpsRL7/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776736?_skw=Colo-Colo+pre-match+soccer+jersey&hash=item34e933aaa0%3Ag%3ABE0AAeSw52VpsRL7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Men pre match camouflage Black 26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BE0AAeSw52VpsRL7/s-l225.jpg" },
     ],
   },
 {
@@ -4497,7 +4499,7 @@ const productsData = [
     colorHexSecondary: "#003893",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 115.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800293685693?_skw=Colombia+pre-match+soccer+jersey&hash=itemba553889bd%3Ag%3AjFUAAeSwbA1qSebX&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb7NGPlmi8WlgGCpcyCK7Gh3gBsen7tPv4I0fLxCfep5Yc5hLZMusphEz09VQRSxvb4DyV8xrkBX5LuldKC72lkjZDmggeM0LuWfMGK8d%2FepuLXYyzhp4ZQpEk%2F3EuSOtqRyv2IAqGK%2F5Pwbtpk55CfQn5iO9EYHsQmCpA6I1ocSA4LIpEED7wfvPQ454t%2BYc%2FhIZ24bAJOnY1aBvajX2PDUJPNJMEq1hxbnggreUzt5x%2FJ815wNWOFvNWajUHH5fYOcVKElLqnBCI8x8dmyRvskbZ%2FHWRW%2BJemvrNkQJBKH0eR%2FWXV5DKEc%2FEgICcx0rI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Colombia 26 Home Pre Match Jersey L Large New Nwt", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/jFUAAeSwbA1qSebX/s-l225.jpg" },
+      { store: "eBay", price: 115.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/800293685693?_skw=Colombia+pre-match+soccer+jersey&hash=itemba553889bd%3Ag%3AjFUAAeSwbA1qSebX&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb7NGPlmi8WlgGCpcyCK7Gh3gBsen7tPv4I0fLxCfep5Yc5hLZMusphEz09VQRSxvb4DyV8xrkBX5LuldKC72lkjZDmggeM0LuWfMGK8d%2FepuLXYyzhp4ZQpEk%2F3EuSOtoJIl7wBmCMk65gW3j3QYCHKGBQ8q1VrMerlmUlwEkaBSprHUmZVJLauw3m5YCWUJpkXMxrtgvp2pjo2wAiltTX9HJRgNhAHGKrFeyqvyVOuXFZCl3rYhDpE2nQfIQWsWS0DVZ100wfbS5vNPdzWCqmkFFlG5SPjnxcn%2FflFKJt3BlEMPILFl1z7GpxrceHGTc%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Colombia 26 Home Pre Match Jersey L Large New Nwt", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/jFUAAeSwbA1qSebX/s-l225.jpg" },
     ],
   },
 {
@@ -4509,7 +4511,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 23.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318460876414?_skw=Borussia+Dortmund+pre-match+soccer+jersey&hash=item4a25bf567e%3Ag%3AKB8AAeSw6tJqMInE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Borussia Dortmund 2025/26 Pre-Match Training Jersey Mens Sz Small Authentic", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/KB8AAeSw6tJqMInE/s-l225.jpg" },
+      { store: "eBay", price: 23.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318715128791?_skw=Borussia+Dortmund+pre-match+soccer+jersey&hash=item4a34e6ebd7%3Ag%3AKB8AAeSw6tJqMInE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Borussia Dortmund 2025/26 Pre-Match Training Jersey Mens Sz Small Authentic", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/KB8AAeSw6tJqMInE/s-l225.jpg" },
     ],
   },
 {
@@ -4521,7 +4523,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 100.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358869630711?_skw=Borussia+Dortmund+third+soccer+jersey&hash=item538e4bfef7%3Ag%3AsYsAAeSwnxdqbbq5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  Purple Borussia Dortmund 2026/27 Third Replica Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sYsAAeSwnxdqbbq5/s-l225.jpg" },
+      { store: "eBay", price: 100.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/358869630711?_skw=Borussia+Dortmund+third+soccer+jersey&hash=item538e4bfef7%3Ag%3AsYsAAeSwnxdqbbq5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  Purple Borussia Dortmund 2026/27 Third Replica Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sYsAAeSwnxdqbbq5/s-l225.jpg" },
       { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45577429714&a=3013769&m=65912", title: "Maillot Tercero Borussia Dortmund 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F785663-17.webp&feedId=89032&k=dc81af8fa1a23a04250f1373cd77a832483a5cec" },
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45577502759&a=3013769&m=65906", title: "Maillot Tercero Borussia Dortmund 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F785663-17.webp&feedId=89044&k=dc81af8fa1a23a04250f1373cd77a832483a5cec" },
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F785663-17-maillot-third-borussia-dortmund-2026-27-purple-glimmer-yellow-alert", title: "Maillot Third Borussia Dortmund 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/7/8/785663-17.webp" },
@@ -4561,7 +4563,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 107.05, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227453349370?_skw=Everton+goalkeeper+soccer+jersey&hash=item34f546adfa%3Ag%3AWR8AAeSwN09qaeie&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Everton Castore Pro Goalkeeper Shirt 2026/27 Away Player Spec Jersey BNWT Men's", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/WR8AAeSwN09qaeie/s-l225.jpg" },
+      { store: "eBay", price: 92.62, shipping: 26.42, currency: "USD", url: "https://www.ebay.com/itm/227453349370?_skw=Everton+goalkeeper+soccer+jersey&hash=item34f546adfa%3Ag%3A1EwAAeSwYUhqaeRu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Everton Castore Pro Goalkeeper Shirt 2026/27 Away Player Spec Jersey BNWT Men's", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/1EwAAeSwYUhqaeRu/s-l225.jpg" },
     ],
   },
 {
@@ -4573,7 +4575,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198517030799?_skw=Flamengo+training+soccer+jersey&hash=item2e38897f8f%3Ag%3APz0AAeSwQBhqYUsR&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Flamengo 26/27 All sponsors Training - Apricot Jersey", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Pz0AAeSwQBhqYUsR/s-l225.jpg" },
+      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198517036199?_skw=Flamengo+training+soccer+jersey&hash=item2e388994a7%3Ag%3AYIwAAeSw1ihqYUyl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Flamengo 26/27 All sponsors Training - Apricot Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YIwAAeSw1ihqYUyl/s-l225.jpg" },
     ],
   },
 {
@@ -4597,7 +4599,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147462724345?_skw=Girona+FC+third+soccer+jersey&hash=item2255769af9%3Ag%3AYAoAAeSwzOhqZlB1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Girona FC 2025/26 Third Shirt Puma Men’s XL BNWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/YAoAAeSwzOhqZlB1/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147462724345?_skw=Girona+FC+third+soccer+jersey&hash=item2255769af9%3Ag%3AYAoAAeSwzOhqZlB1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Girona FC 2025/26 Third Shirt Puma Men’s XL BNWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/YAoAAeSwzOhqZlB1/s-l225.jpg" },
     ],
   },
 {
@@ -4621,7 +4623,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 37.46, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198499263942?_skw=Guatemala+pre-match+soccer+jersey&hash=item2e377a65c6%3Ag%3AygoAAeSwgPtqV1%7EC&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGby5xrmyvQLb5FS9cSnN4zbeWiTPYg39BbtI8tvlj4CAG9vYLuLIMe4fmavEnIGH2OQhWliEoALTVeXHly%2FqUvqxHOMKV%2BpaMwJVn%2BYAaigzgQJmX4llR493gmlE7zv9YgYaCSyt5cZyt24hQwx05xgc2NhsI9qpk8OKARHyLY6jEKWrdupFpEVrHSQAO6ESg%2Fp59j8zfkpWAbgw0lBQsRLw4TdBdj1ft%2BdIGU6znZDmsrIZjyaqKAvUEPHnrIPzKtXptvgRSwiP7OJqe0i25dtotV6kj8FiDPHHT6w%2B5GSk0ZLHlhWiYrY5ExjUMFuITc%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Guatemala National Team 2025/26 Pre Match Jersey Mens Medium $70", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ygoAAeSwgPtqV1~C/s-l225.jpg" },
+      { store: "eBay", price: 37.46, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/198499263942?_skw=Guatemala+pre-match+soccer+jersey&hash=item2e377a65c6%3Ag%3AygoAAeSwgPtqV1%7EC&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGby5xrmyvQLb5FS9cSnN4zbeWiTPYg39BbtI8tvlj4CAG9vYLuLIMe4fmavEnIGH2OQhWliEoALTVeXHly%2FqUvqxHOMKV%2BpaMwJVn%2BYAaigzgQJmX4llR493gmlE7zv9YhXr75KpEkPGdhgqqfsuyp9vALKPhVd4DvoQ1FN0C0OJD%2BHqokCfwEPsnwpbw0q2hcr9rBWfYgfZfLbFv0L85i7d2IHu5sfDgg2QlaWV96p1P4e%2BjdDCKYEH%2FmhHUsc1Bo%2Fmw6VXKdNEL3h4TCpUXuAv0%2B4TFqZnAFa8nGMhsH6k0R4hQsktXMlsRHWu4r%2B6KM%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Guatemala National Team 2025/26 Pre Match Jersey Mens Medium $70", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ygoAAeSwgPtqV1~C/s-l225.jpg" },
     ],
   },
 {
@@ -4633,7 +4635,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 143.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/128014310244?_skw=TSG+Hoffenheim+away+soccer+jersey&hash=item1dce3f5b64%3Ag%3AH8MAAeSwuZlqcOjA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron TSG Hoffenheim 2026 - 27 Authentic Away Jersey - Off White", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/H8MAAeSwuZlqcOjA/s-l225.jpg" },
+      { store: "eBay", price: 143.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/128014310244?_skw=TSG+Hoffenheim+away+soccer+jersey&hash=item1dce3f5b64%3Ag%3AH8MAAeSwuZlqcOjA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron TSG Hoffenheim 2026 - 27 Authentic Away Jersey - Off White", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/H8MAAeSwuZlqcOjA/s-l225.jpg" },
     ],
   },
 {
@@ -4645,7 +4647,7 @@ const productsData = [
     colorHexSecondary: "#CE1126",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137367103383?_skw=Iraq+home+soccer+jersey&hash=item1ffbb7a797%3Ag%3Abi8AAeSw%7EYdqHS8i&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Iraq Home Mens Soccer Jersey 26-27", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/bi8AAeSw~YdqHS8i/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/137367103383?_skw=Iraq+home+soccer+jersey&hash=item1ffbb7a797%3Ag%3Abi8AAeSw%7EYdqHS8i&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Iraq Home Mens Soccer Jersey 26-27", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/bi8AAeSw~YdqHS8i/s-l225.jpg" },
     ],
   },
 {
@@ -4657,7 +4659,7 @@ const productsData = [
     colorHexSecondary: "#CE1126",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137367102206?_skw=Iraq+third+soccer+jersey&hash=item1ffbb7a2fe%3Ag%3APfYAAeSwIiFqHS6p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Iraq Third Mens Soccer Jersey 26-27", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PfYAAeSwIiFqHS6p/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/137367102206?_skw=Iraq+third+soccer+jersey&hash=item1ffbb7a2fe%3Ag%3APfYAAeSwIiFqHS6p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Iraq Third Mens Soccer Jersey 26-27", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PfYAAeSwIiFqHS6p/s-l225.jpg" },
     ],
   },
 {
@@ -4669,7 +4671,7 @@ const productsData = [
     colorHexSecondary: "#B4122A",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/197692496259?_skw=Levante+UD+training+soccer+jersey&hash=item2e07641983%3Ag%3AZsEAAeSwMqRoxGQI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ9o%2BtK2IKDcosYmPt76ScSlZ6Rsiss7Af9rO3EL888YDxXpCN3tR9eIKBG6mtep2An3WxY4kWkdKSNLEy7lWCgX7x9IDRBhyNOj7u20UE9I8N4wAWX721vA3wETngcfsLQM1JMXMzaXqp7%2BA38K6XO45VF0WwTcMI40Xr2Si5zLXbm6eI2hiKofuM7byp4HeOLmmdnx704jHyyR3H7GUbXf4XlEsljkVCYbZL0et0ZW6q9B2HaeK8MyQ2l23ZoHiQ%2Fys80p%2FAXPKQsJuxR2ATiB%2B8H%2BWk%2FfRXtcDQhn3q7bqlDzWea39%2FuK25qVuF5ors%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Levante UD Adult Player Training Shirt 25/26 lilac base + navy blue Large / XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ZsEAAeSwMqRoxGQI/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/197692496259?_skw=Levante+UD+training+soccer+jersey&hash=item2e07641983%3Ag%3AZsEAAeSwMqRoxGQI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ9o%2BtK2IKDcosYmPt76ScSlZ6Rsiss7Af9rO3EL888YDxXpCN3tR9eIKBG6mtep2An3WxY4kWkdKSNLEy7lWCgX7x9IDRBhyNOj7u20UE9I8N4wAWX721vA3wETngcfsLPS0z7NesOQqKfEmSLFr%2B4yEVllXbxmXHyQRAByJdBV6Ypyw3KHbixMkcKUjQHsRyTCAF%2B9I8EeM6BdQ7hCDbp1OPavKQTa%2BqoPAJ2oX%2BpiN4nOYFIxsZqmNHyz735wIzHsEPFOinlLsJwL810uUUDwhlYbOQZy7QS3%2FCmc6K3AisMWV0dwgkqX6P450zGWL4%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Levante UD Adult Player Training Shirt 25/26 lilac base + navy blue Large / XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ZsEAAeSwMqRoxGQI/s-l225.jpg" },
     ],
   },
 {
@@ -4681,7 +4683,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 87.34, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298420463314?_skw=Mainz+05+away+soccer+jersey&hash=item457b3ee6d2%3Ag%3AOc0AAeSwH4hpcJfp&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZXCUpyI7bDaJcgVrpKYjLh%2FIMj%2F0jb17%2FfuwxLsfnuyHHs3HGvepdL8m9OYPOuFCqXNCeJjo4eg3rQWbB1SDanPWKA%2FGPighYmD4KVEv6o10BqcvZfGxjNeyaorVLOp%2BrjA2BBOVug%2FbaCLZdBsz8uWA9G1cXX9rj8HTmb3mAkwDx70wxL6f3rcWQsU4L7ey6wSCC4ZRcux1PGcva%2F1BgyjEU2MJmgWbV5skqD8HG8icAixJkEnlQ9vhauy%2FCxRdgHz0uczNgKbzyIlNjrwBFl0cw53fITXO8YC1Of%2BAkyAg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JAKO FSV Mainz 05 Away Jersey 25/26 M05 Third Shirt 3rd Jersey M-5XL", inStock: false, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/Oc0AAeSwH4hpcJfp/s-l225.jpg" },
+      { store: "eBay", price: 88.31, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/298420463314?_skw=Mainz+05+away+soccer+jersey&hash=item457b3ee6d2%3Ag%3AOc0AAeSwH4hpcJfp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JAKO FSV Mainz 05 Away Jersey 25/26 M05 Third Shirt 3rd Jersey M-5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Oc0AAeSwH4hpcJfp/s-l225.jpg" },
     ],
   },
 {
@@ -4693,7 +4695,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 42.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267338432900?_skw=Newcastle+United+pre-match+soccer+jersey&hash=item3e3e9cc184%3Ag%3AEdYAAeSw3zlpXCLr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Newcastle Men's Pre-Match Soccer Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/EdYAAeSw3zlpXCLr/s-l225.jpg" },
+      { store: "eBay", price: 42.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267338432900?_skw=Newcastle+United+pre-match+soccer+jersey&hash=item3e3e9cc184%3Ag%3AEdYAAeSw3zlpXCLr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Newcastle Men's Pre-Match Soccer Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/EdYAAeSw3zlpXCLr/s-l225.jpg" },
     ],
   },
 {
@@ -4705,7 +4707,7 @@ const productsData = [
     colorHexSecondary: "#002868",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 229.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127968471567?_skw=Norway+goalkeeper+soccer+jersey&hash=item1dcb83ea0f%3Ag%3Aq3gAAeSwAbdqUAOI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Norway 2026 World Cup GK Goalkeeper Soccer Jersey Authentic Yellow Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/q3gAAeSwAbdqUAOI/s-l225.jpg" },
+      { store: "eBay", price: 229.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127966583911?_skw=Norway+goalkeeper+soccer+jersey&hash=item1dcb671c67%3Ag%3Aq3gAAeSwAbdqUAOI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Norway 2026 World Cup GK Goalkeeper Soccer Jersey Authentic Yellow Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/q3gAAeSwAbdqUAOI/s-l225.jpg" },
     ],
   },
 {
@@ -4717,7 +4719,7 @@ const productsData = [
     colorHexSecondary: "#002868",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 249.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127992316686?_skw=Norway+pre-match+soccer+jersey&hash=item1dccefc30e%3Ag%3AOLUAAeSwUXxqX5sq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Norway 2026 World Cup Academy Pre Match Top Soccer Jersey Red Large New", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/OLUAAeSwUXxqX5sq/s-l225.jpg" },
+      { store: "eBay", price: 249.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127992316686?_skw=Norway+pre-match+soccer+jersey&hash=item1dccefc30e%3Ag%3AOLUAAeSwUXxqX5sq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Norway 2026 World Cup Academy Pre Match Top Soccer Jersey Red Large New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/OLUAAeSwUXxqX5sq/s-l225.jpg" },
       { store: "FootStoreES", price: 55.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45621379692&a=3013769&m=65912", title: "Maillot Prematch Noruega Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih1690-673-chile-red-blue-void-white-6a763ba0b3fd2-1.webp&feedId=89032&k=bfd1910661a49a7f3af7b95db4527085753b95b6" },
     ],
   },
@@ -4730,7 +4732,7 @@ const productsData = [
     colorHexSecondary: "#002868",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366401595519?_skw=Norway+training+soccer+jersey&hash=item554f3ca87f%3Ag%3A5mMAAeSwevZqAZBG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norway Training Blue Mens Jersey 26", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5mMAAeSwevZqAZBG/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/366401595519?_skw=Norway+training+soccer+jersey&hash=item554f3ca87f%3Ag%3A5mMAAeSwevZqAZBG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norway Training Blue Mens Jersey 26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5mMAAeSwevZqAZBG/s-l225.jpg" },
     ],
   },
 {
@@ -4742,7 +4744,7 @@ const productsData = [
     colorHexSecondary: "#001A4B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 77.7, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336688302353?_skw=Osasuna+third+soccer+jersey&hash=item4e642fc911%3Ag%3AcdQAAeSw2Adqbwwm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "OSASUNA - MATCH SHIRT THIRD - MACRON - Season 2025/26", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cdQAAeSw2Adqbwwm/s-l225.jpg" },
+      { store: "eBay", price: 77.7, shipping: 17.1, currency: "USD", url: "https://www.ebay.com/itm/336688302353?_skw=Osasuna+third+soccer+jersey&hash=item4e642fc911%3Ag%3AcdQAAeSw2Adqbwwm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "OSASUNA - MATCH SHIRT THIRD - MACRON - Season 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cdQAAeSw2Adqbwwm/s-l225.jpg" },
     ],
   },
 {
@@ -4754,7 +4756,7 @@ const productsData = [
     colorHexSecondary: "#001A4B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 52.6, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377342532272?_skw=Osasuna+training+soccer+jersey&hash=item57db5e1ab0%3Ag%3ArecAAeSwgUdqbwxi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "OSASUNA – TRAINING SHIRT PLAYER - MACRON - Season 2025/26", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/recAAeSwgUdqbwxi/s-l225.jpg" },
+      { store: "eBay", price: 52.6, shipping: 17.1, currency: "USD", url: "https://www.ebay.com/itm/377342532272?_skw=Osasuna+training+soccer+jersey&hash=item57db5e1ab0%3Ag%3ArecAAeSwgUdqbwxi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "OSASUNA – TRAINING SHIRT PLAYER - MACRON - Season 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/recAAeSwgUdqbwxi/s-l225.jpg" },
     ],
   },
 {
@@ -4766,7 +4768,7 @@ const productsData = [
     colorHexSecondary: "#046A38",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/257618983172?_skw=Portugal+goalkeeper+soccer+jersey&hash=item3bfb49b904%3Ag%3A6SYAAeSwt4FqVJB7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Portugal 2026 goalkeeper Pink Mens", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/6SYAAeSwt4FqVJB7/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/257618983172?_skw=Portugal+goalkeeper+soccer+jersey&hash=item3bfb49b904%3Ag%3A6SYAAeSwt4FqVJB7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Portugal 2026 goalkeeper Pink Mens", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/6SYAAeSwt4FqVJB7/s-l225.jpg" },
     ],
   },
 {
@@ -4790,7 +4792,7 @@ const productsData = [
     colorHexSecondary: "#E30613",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 229.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227459904343?_skw=River+Plate+goalkeeper+soccer+jersey&hash=item34f5aab357%3Ag%3AR4MAAeSwQtRqcELw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RIVER PLATE GOALKEEPER JERSEY 2027 - ORIGINAL ADIDAS - ASK FOR AVAILABLE SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/R4MAAeSwQtRqcELw/s-l225.jpg" },
+      { store: "eBay", price: 195.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/318737116537?_skw=River+Plate+goalkeeper+soccer+jersey&hash=item4a36366d79%3Ag%3A8U4AAeSwBXxqgTW9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RIVER PLATE 26/27 AWAY  GOALKEEPER JERSEY - ADIDAS KF4528", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/8U4AAeSwBXxqgTW9/s-l225.jpg" },
     ],
   },
 {
@@ -4802,7 +4804,7 @@ const productsData = [
     colorHexSecondary: "#E30613",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 170.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178365106858?_skw=River+Plate+pre-match+soccer+jersey&hash=item2987638aaa%3Ag%3AIfMAAeSwWkBqbrJ%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "River Plate Pre Match Training  2026 Shirt Jersey Official Adidas", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/IfMAAeSwWkBqbrJ~/s-l225.jpg" },
+      { store: "eBay", price: 170.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/178365106858?_skw=River+Plate+pre-match+soccer+jersey&hash=item2987638aaa%3Ag%3AIfMAAeSwWkBqbrJ%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "River Plate Pre Match Training  2026 Shirt Jersey Official Adidas", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/IfMAAeSwWkBqbrJ~/s-l225.jpg" },
     ],
   },
 {
@@ -4814,7 +4816,7 @@ const productsData = [
     colorHexSecondary: "#F0BC42",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397810351954?_skw=AS+Roma+pre-match+soccer+jersey&hash=item5c9f583f52%3Ag%3AyBIAAeSwAi5p1C75&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas AS Roma 25/26 Pre-Match Soccer Jersey Men's Size Medium JP4149", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/yBIAAeSwAi5p1C75/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/397810351954?_skw=AS+Roma+pre-match+soccer+jersey&hash=item5c9f583f52%3Ag%3AyBIAAeSwAi5p1C75&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas AS Roma 25/26 Pre-Match Soccer Jersey Men's Size Medium JP4149", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/yBIAAeSwAi5p1C75/s-l225.jpg" },
     ],
   },
 {
@@ -4826,7 +4828,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 64.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336708474705?_skw=Thailand+away+soccer+jersey&hash=item4e65639751%3Ag%3A0kgAAeSwnxdqZYQ0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Official Thailand National Football Soccer Team Jersey Away Shirt Red", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/0kgAAeSwnxdqZYQ0/s-l225.jpg" },
+      { store: "eBay", price: 47.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/307117692934?_skw=Thailand+away+soccer+jersey&hash=item4781a41806%3Ag%3A-c4AAeSw-zVqebFd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2025-26 Buriram United Thailand Football Soccer Jersey Shirt Away Beige", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/-c4AAeSw-zVqebFd/s-l225.jpg" },
     ],
   },
 {
@@ -4838,7 +4840,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 64.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336708903876?_skw=Thailand+home+soccer+jersey&hash=item4e656a23c4%3Ag%3AQ3AAAeSwOPZqZe16&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZyCJ4EbDiRSDMEXptCSLFPUipMgxtu6QrQHPaawklcnoEJUHK4BbEeb4Ce3VaOg3ABa8YzjjeGWS5m2fEOYoj%2BGzZiB%2Fh9QIJ%2FmpKpIcnoFi441Bv3Q%2FGDJPyNJUk7u7fVE4wL%2BYPnXWBKfCVdxcARr5XZdtmJ6JzYjtCyO%2FSllVd%2FPoUH7bkgSCk4cBophbXMD9mYOAYcPJnaV7cp%2BQcMNv7449elF8WWfAZ%2Bjtm5Dn7mXs0TZfL5NhvnTcbczlDhMtS6K6TmGOG8A8dvQzjjaF%2BlEeneWX1WYklZuLdAZA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Official Thailand National Football Soccer Team Jersey Home Shirt Blue", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Q3AAAeSwOPZqZe16/s-l225.jpg" },
+      { store: "eBay", price: 64.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/336708903876?_skw=Thailand+home+soccer+jersey&hash=item4e656a23c4%3Ag%3AQ3AAAeSwOPZqZe16&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Official Thailand National Football Soccer Team Jersey Home Shirt Blue", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Q3AAAeSwOPZqZe16/s-l225.jpg" },
     ],
   },
 {
@@ -4850,7 +4852,7 @@ const productsData = [
     colorHexSecondary: "#0099CC",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168524700183?_skw=Uzbekistan+home+soccer+jersey&hash=item273cdada17%3Ag%3ASRgAAeSweetqT01f&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uzbekistan Soccer Home  Men 26-27", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/SRgAAeSweetqT01f/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168524700183?_skw=Uzbekistan+home+soccer+jersey&hash=item273cdada17%3Ag%3ASRgAAeSweetqT01f&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uzbekistan Soccer Home  Men 26-27", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/SRgAAeSweetqT01f/s-l225.jpg" },
     ],
   },
 {
@@ -4862,7 +4864,7 @@ const productsData = [
     colorHexSecondary: "#FFD700",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 54.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336688992428?_skw=Vietnam+home+soccer+jersey&hash=item4e643a50ac%3Ag%3AhxkAAeSwN-lqVuMA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "100% Original - 2026 Vietnam National Football Soccer Team Jersey Home Red", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/hxkAAeSwN-lqVuMA/s-l225.jpg" },
+      { store: "eBay", price: 54.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/336688992428?_skw=Vietnam+home+soccer+jersey&hash=item4e643a50ac%3Ag%3AhxkAAeSwN-lqVuMA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "100% Original - 2026 Vietnam National Football Soccer Team Jersey Home Red", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/hxkAAeSwN-lqVuMA/s-l225.jpg" },
     ],
   },
 {
@@ -4874,7 +4876,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 54.03, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358861155136?_skw=Werder+Bremen+training+soccer+jersey&hash=item538dcaab40%3Ag%3A6O0AAeSwW3hqawGd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDxjI4F7LbmR81JkAiwM%2FDJfGdgScQg6cIeYzdCWG1EUjQQPG%2FUYklVGK9VGXmzaqhCidGmVEYC97KWkuc0RWA0M7AfbtyswWnONrGxgC5RS5%2BG9XvbuKF3ZfcqbJYMfJAd0Cuk019Uu%2B%2BRdY1VtvK%2F6oEYwSipswynRhDzRLm6XOjB%2FV4uROImIGBy%2BlqUQMRebKT0qLO85mt22c1h2jCoh3vn1ozmuvRKTuF4hXaaVyVuCb10mxo5v%2BqGjoZbHnB3Y963Zqoy4iOA4krXoELSNTRi%2B0fRy4coywUoAQWPLCaTGKTrJ4yhS8Mu%2BbaHXE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Werder Bremen Staff Training Jersey 26 27 Green SVW Training Shirt M - 4XL", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/6O0AAeSwW3hqawGd/s-l225.jpg" },
+      { store: "eBay", price: 54.08, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/358861155136?_skw=Werder+Bremen+training+soccer+jersey&hash=item538dcaab40%3Ag%3A6O0AAeSwW3hqawGd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYDxjI4F7LbmR81JkAiwM%2FDJfGdgScQg6cIeYzdCWG1EUjQQPG%2FUYklVGK9VGXmzaqhCidGmVEYC97KWkuc0RWA0M7AfbtyswWnONrGxgC5RS5%2BG9XvbuKF3ZfcqbJYMfLMrzWZKY4QxrXcLnzldOsDFcGFYJbip%2FQNb%2BCH55dd1RE5K0Q1WCY4O2fW5K%2BbFl7YtqalDNSuVqGNvZnmpxPmRXN%2Fik%2F9JM1TPx7Dp69TI%2BPrgn%2FdhB57QgDVWpLVZ8Sqy%2FNJpiEsF0wdtSGmmpWeMvCfZt5vXO%2Fh6co%2FTwuhwC8WuQpcq3XbkHcMGhZUNSo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Werder Bremen Staff Training Jersey 26 27 Green SVW Training Shirt M - 4XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/6O0AAeSwW3hqawGd/s-l225.jpg" },
     ],
   },
 {
@@ -22631,7 +22633,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjm8396-maillot-domicile-argentine-coupe-du-monde-2026-white", title: "Maillot Domicile Argentine Coupe du Monde 2026", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jm8396_4_apparel_on_model_standard_view_white.webp" },
       { store: "PlanetFoot", price: 54.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-argentine-messi-home-bleu-ciel-blanc-2026-homme%3Fvariant%3D53802753589589", title: "Maillot Argentine Messi 2026 Domicile Homme - Bleu Ciel / Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/Maillot_Argentine_Messi_2026_Domicile_Homme_-_Bleu_Ciel_Blanc.png?v=1778057866" },
       { store: "BSTNIT", price: 80.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44424845837&a=3013769&m=104981", title: "Argentina 26 Home Jersey", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-argentina-26-home-jersey-jm8396-0346575%2FJM8396%2FJM8396-01.jpg&feedId=99415&k=9f2e2214e5c6ecab6fe265e1eb19619ad72fc743" },
-      { store: "eBay", price: 229.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/267222675635?_skw=Argentina+home+soccer+jersey+2025+2026&hash=item3e37b670b3%3Ag%3AMo0AAOSwduRoAD7P&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Argentina 2025/26 Home World Cup Qualifiers Jersey Messi Shirt", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Mo0AAOSwduRoAD7P/s-l225.jpg" },
+      { store: "eBay", price: 33.98, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/236943601051?_skw=Argentina+home+soccer+jersey&hash=item372af06d9b%3Ag%3AaEwAAeSwbG9qWetr&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbNwJD8ncDytzrvrApfUkz97LWltSvkHQkS2iPSx38TBCurQMNPVOW%2F2ANk6gZb02rxJ7ouLZH7F6TB0dbDiCGcgKyFetXxq1rCrpFA5J1Y9C478aJUsgHSauwmefMezKXKlf2ncS7wLnvmSZzd6365FIMSnTI%2BpMu%2FoItU0etOdMvpCFRpJIydZjHpadFlXyScciSPyknEYPp0euVcDhQzZ1Ggrrt5sR%2BmfKhFUCRcdukSVqlLyEUrUwqEP4NBI6OvhgLQ%2F6ZZ7ailiBV7gRdHDNSzpuJe2Yn1yTXK55v74FUkwAqSnmxM1EDAMK3X93k%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Argentina Home Messi #10 Fans Version Jersey AFA World Champion Soccer", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/aEwAAeSwbG9qWetr/s-l225.jpg" },
     ],
   },
 {
@@ -22648,7 +22650,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265206984&a=3013769&m=77008", title: "Camiseta segunda equipación Argentina 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8379c4f319d34f948399a95e6f4b28ac_9366%2FCamiseta_segunda_equipacion_Argentina_26_Negro_JM8395_21_model.jpg&feedId=92152&k=40b92245b9cceb5fddba33f29e9fa302c14b2ad4" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43692242689&a=3013769&m=77026", title: "Camisola Alternativa 26 da Argentina", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe1aababf51c948d68cdf4491cc33acba_9366%2FCamisola_Alternativa_26_da_Argentina_Azul_KF0321_HM1.jpg&feedId=92150&k=21ce26e766700c99e6179587121adb55e9e29557" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089879%3Fvariant%3D54365454270805", title: "Argentina 26 Away Jersey AFA JM8395", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8987-1.jpg?v=1783947685" },
-      { store: "eBay", price: 49.98, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/236946522705?_skw=Argentina+away+soccer+jersey+2025+2026&hash=item372b1d0251%3Ag%3AkEsAAeSwuZlqW6uB&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbmLeJRfzQs50ymQ2iJZd2cFHCe4pPaMMLwK8ViyJvhI2xwY6sInX%2B0Lpc6Wm7SQPknl1uEaH%2FKZKW9pipQa8kgMIuFzLv80zKJuMSvZhRlm7NW6wru6y5qzXPyX41JHgHfBXYaMA035sGn2ciQjUzmWooSXYATVXzIqxfMmmvOjj9aUjUj02rCekQwl052dmoOnQYw0C7GYz%2FOHvlzQO4IAbSVl355tWvbzkC2Ypgm42pJfOzHXFH4kGDLWJ%2FYCFztuiLqG2gCW3XWsXtyMHRLwWJE2Lt74PKl%2Ft3yQ5POibH535399VCE%2Fjjifu--fqk%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Argentina 2026 Away Football Jersey Soccer", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/kEsAAeSwuZlqW6uB/s-l225.jpg" },
+      { store: "eBay", price: 49.98, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/236946522705?_skw=Argentina+away+soccer+jersey&hash=item372b1d0251%3Ag%3AkEsAAeSwuZlqW6uB&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbmLeJRfzQs50ymQ2iJZd2cFHCe4pPaMMLwK8ViyJvhI2xwY6sInX%2B0Lpc6Wm7SQPknl1uEaH%2FKZKW9pipQa8kgMIuFzLv80zKJuMSvZhRlm7NW6wru6y5qzXPyX41JHgFIoFMfnTW2ASlc2WT73c4mVWcUhnPgPQEtJ5l5%2F3JsCxDlRwG2cIL3FTHunKE6L4rQmpszBKK6GRHH7lyR4l%2FWs6B1is95AzCcRpt27cDByrKVwcOeg3DUGKzlaKlRNts420T2Tu%2FeORr1kwkUGkIs06wfimehUqEUMuei5iEr8SJa3PRO00Vz%2Bs3xrHmpL%2Bw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Argentina 2026 Away Football Jersey Soccer", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kEsAAeSwuZlqW6uB/s-l225.jpg" },
       { store: "FootStoreFR", price: 93.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5901-maillot-exterieur-authentique-argentine-coupe-du-monde-2026-black", title: "Maillot Extérieur Authentique Argentine Coupe du Monde 2026", inStock: true, sizes: ["XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jm5901_1_apparel_photography_front_center_view_white.webp" },
       { store: "BSTNIT", price: 89.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45512899523&a=3013769&m=104981", title: "Argentina 26 Away Jersey", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-argentina-26-away-jersey-jm8395-0347223%2FJM8395%2FJM8395-01.jpg&feedId=99415&k=e7a2a4d064f3ca4244b5d80eb20d56447b13b92c" },
     ],
@@ -22667,7 +22669,7 @@ const productsData = [
       { store: "FootStoreES", price: 86.71, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081627&a=3013769&m=65912", title: "Maillot Domicile Brasil Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_if7054-724_01.webp&feedId=89032&k=72daf3c8a34828a58f79061845a8e0bfeb776364" },
       { store: "FootStoreFR", price: 85.72, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif7054-724-maillot-domicile-bresil-coupe-du-monde-2026-canary-light-menta-geode-teal", title: "Maillot Domicile Brésil Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if7054-724_01.webp" },
       { store: "MysteryShirtClub", price: 94.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-brazil-home-shirt-501805", title: "2026-2027 Brazil Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1776278304_2026-2027-brazil-nike-home-football-shirt.jpg?v=1783506015" },
-      { store: "eBay", price: 29.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318705681382?_skw=Brazil+home+soccer+jersey+2025+2026&hash=item4a3456c3e6%3Ag%3AaqQAAeSw-BBqeWpB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SO HOT! Brazil 2026 World Cup Home Jersey, #10 Neymar, Sizes S–4XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/aqQAAeSw-BBqeWpB/s-l225.jpg" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358900781040?_skw=Brazil+home+soccer+jersey&hash=item5390274ff0%3Ag%3AXo0AAeSwU79qdzS5&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa047nqdyvlp83lKK%2BYfDO7BNsHsG%2FkmA7XHFJprhUuZbLbtpY33lKSQQ6InLqHPYuz5x82KVC5B0pKpZDe7AyvYFYnO5Z1jGu5B5q3uO44g%2FH5DguD9pFDhG54EymKcP0LJscU5dpAmuk0D%2B3MUfVfdZF%2FVNm9PQ7BqqDmY0RGoLMioeo2Wr89wDawOy%2BrqRSG4VjDiNZsTiQ%2B7dTe%2BfIN2BLQjJqrTTFnpsXBYYFXkvMd9HzY6qz77U2GQXtzAys8h%2Fd9aIUaBuKAkfAX5%2F23Q31ddtOwe6toDmnfDdmASg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brazil Home Nike Men’s World Cup 2026 Soccer Jersey- NEW *Various Sizes*", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Xo0AAeSwU79qdzS5/s-l225.jpg" },
     ],
   },
 {
@@ -22688,7 +22690,7 @@ const productsData = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094299250&a=3013769&m=77008", title: "Camiseta primera equipación España 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F866664f412bb4443bca790fed9c9f0a3_9366%2FCamiseta_primera_equipacion_Espana_26_Rojo_JN4390_21_model.jpg&feedId=92152&k=3147fbc911758b33b863018c56285f93ba4baca0" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966931&a=3013769&m=77026", title: "Camisola Principal 26 da Espanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F866664f412bb4443bca790fed9c9f0a3_9366%2FCamisola_Principal_26_da_Espanha_Vermelho_JN4390_21_model.jpg&feedId=92150&k=62e9e3c30e8bcdcb3ade8efee634bb03d13b28fe" },
       { store: "BSTNIT", price: 99.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45512898233&a=3013769&m=104981", title: "Spain 26 Home Jersey", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-spain-26-home-jersey-jn4390-0346576%2FJN4390%2FJN4390-01.jpg&feedId=99415&k=8060d5650a4ecd87eec0a2d50e82cc1f749e0f63" },
-      { store: "eBay", price: 43.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298564541510?_skw=Spain+home+soccer+jersey+2025+2026&hash=item4583d55c46%3Ag%3A4PQAAeSwbiNqdJhs&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Spain National Team Home Shirt 2026 (2 STARS)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/4PQAAeSwbiNqdJhs/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/117314532611?_skw=Spain+home+soccer+jersey&hash=item1b507db503%3Ag%3AvCEAAeSw7EhqcN9e&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Spain 2026 World Cup Champions Home Soccer Adidas Jersey Men’s M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/vCEAAeSw7EhqcN9e/s-l225.jpg" },
     ],
   },
 {
@@ -22704,7 +22706,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fdoue-20-france-home-soccer-jersey-2026-world-cup%3Fvariant%3D47753131655273", title: "Doue #20 France Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/francehomefan_202026.webp?v=1783247577" },
       { store: "FootStoreES", price: 88.36, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45130836897&a=3013769&m=65912", title: "Camiseta Local Francia Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5300-480_01.webp&feedId=89032&k=29768505a38d91ac3ab2fa3e2f164bb1ae8d9a1c" },
       { store: "FootStoreFR", price: 86.66, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5300-480-maillot-domicile-france-coupe-du-monde-2026-game-royal-metallic-copper", title: "Maillot Domicile France Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5300-480_01.webp" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318730119201?_skw=France+home+soccer+jersey+2025+2026&hash=item4a35cba821%3Ag%3AAeQAAeSwAQ9qYS9z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "France 2026 World Cup Home Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/AeQAAeSwAQ9qYS9z/s-l225.jpg" },
+      { store: "eBay", price: 25.99, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/398145598439?_skw=France+home+soccer+jersey&hash=item5cb353b3e7%3Ag%3A1rIAAeSwvaVqSNsu&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbw8kI%2FEONbGa3pG3xrGExib56Uw1L%2FIeaqns4NTvQ7omHXAJQiIdu74ftnGUpL5D%2FWPjTfcCpIQsDCmIzdEc81wn1CygPH8OlV2O7W1O9J6YxxbIXEWloPe7wmig4StlBjwYwF6ugkHe7le9aApbs2SFjVl2C0HFmYbl0dLEsNPXArOiIHMPWYY5vIrpuMYeT0DdW0XVSacUUidDruKJ8naPIzC%2FDjovb3RK1rt3RD7MjUbdrVH2i2c0E%2F61yoRN5XrdMpj2ftKmPq%2F1V7onWPIUlnXigQQsh1Hr%2Bve5EKdQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "S-2XL France Soccer Jersey 2026 Home", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/1rIAAeSwvaVqSNsu/s-l225.jpg" },
       { store: "SportIsGoodES", price: 67.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015741&a=3013769&m=65906", title: "Camiseta Local Francia 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9a9425f3ee590c3d0e42a6ae50a407326e681e29" },
       { store: "SportIsGoodFR", price: 66.56, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf1712-maillot-domicile-france-2025-26-semid-lucid-blue", title: "Maillot Domicile France 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp" },
     ],
@@ -22736,7 +22738,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800457035803?_skw=Real+Madrid+home+soccer+jersey&hash=itemba5ef5101b%3Ag%3A8-4AAeSwYV5qcUAE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "XL 2026/27 Real Madrid Home Fans Soccer Jersey", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/8-4AAeSwYV5qcUAE/s-l225.jpg" },
+      { store: "eBay", price: 34.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/398294547226?_skw=Real+Madrid+home+soccer+jersey&hash=item5cbc347b1a%3Ag%3AlYQAAeSw8Chqgo5X&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYMn6rXNwt1GJPTz3Pcq2ftOnpanYlf1xKy%2F2fUVVUOGbI7WfwdnSNUY6PohbzW4ivtLdqCtlOq%2BMfqkVlZ3ACZ8c%2BhdV%2BqlbGR19jA0SiSzDeWbQ7b9GnjL6JomNgyPciYmCHZGdlx4vs9wF%2Fp5Zbo9b%2FNQaEs61%2FIP2u1QMElFxKAfW%2BWX95jPVyY%2B7bPFGLjt%2Fbx%2FIsrqajoEK1%2Bzcj6v0ApHpPxG30iyahkQ7k6OXNUkGgpo2yySfg7QWbTBEfzF5aIPXPe5NTYSgo5MpR7nxeqEK5tAGCu1FPPl3zpgmpJ7JhI2yn%2B6cjflbcDpLo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "HOT!! Real Madrid #10 MBAPPE 2026/27 Home & Away Football Soccer Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/lYQAAeSw8Chqgo5X/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-home-soccer-jersey-2026-27-white%3Fvariant%3D43253832908905", title: "Los Blancos Home Soccer Jersey 2026/27 White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/realmadridhomefan2026_27.jpg?v=1785208489" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44926291670&a=3013769&m=77026", title: "Camisola Real Madrid 26/27 Home", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc548a2002b64469790374b51af279885_9366%2FCamisola_Real_Madrid_26-27_Home_Branco_KC3989_21_model.jpg&feedId=92150&k=8f217614e6a25c2336cc2f9eecd936094e887866" },
     ],
@@ -22752,7 +22754,7 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fboca-juniors-home-soccer-jersey-2025-26%3Fvariant%3D42557169893481", title: "Boca Juniors Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/86c6d74da59cbd7b06e351d6fda018dc.png?v=1758073956" },
-      { store: "eBay", price: 52.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397930463950?_skw=Boca+Juniors+home+soccer+jersey+2025+2026&hash=item5ca68102ce%3Ag%3A0V0AAeSwA7pp%7E8ea&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Boca Juniors 2025-2026 Home Jersey -120th Anniversary-New", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/0V0AAeSwA7pp~8ea/s-l225.jpg" },
+      { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377327235110?_skw=Boca+Juniors+home+soccer+jersey&hash=item57da74b026%3Ag%3AbgIAAeSwJY1qSCui&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Boca Juniors Home 25/26 Long Sleeve Jersey Player Version", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/bgIAAeSwJY1qSCui/s-l225.jpg" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45591187706&a=3013769&m=77008", title: "Camiseta primera equipación de Boca Juniors 25/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1326ee23fe114676909df9508f1e3b61_9366%2FCamiseta_primera_equipacion_de_Boca_Juniors_25-26_Azul_JJ4298_21_model.jpg&feedId=92152&k=3ac2750a7b7ca4db52b4ec09277371abf0471207" },
     ],
   },
@@ -22773,7 +22775,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcunha-10-manchester-united-home-soccer-jersey-2025-26%3Fvariant%3D42861871792233", title: "Cunha #10 Manchester United Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cunha10ManchesterUnitedHomeJersey202526.webp?v=1769590620" },
       { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41701521179&a=3013769&m=65912", title: "Camisa Local Manchester United 2025/26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji7428_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=08f93b571b4f2c9dc924b1b6ce2256ba00ea3178" },
       { store: "SportIsGoodES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836105&a=3013769&m=65906", title: "Camisa Local Manchester United 2025/26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji7428_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=08f93b571b4f2c9dc924b1b6ce2256ba00ea3178" },
-      { store: "eBay", price: 69.91, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407066522960?_skw=Manchester+United+home+soccer+jersey+2025+2026&hash=item5ec70e3550%3Ag%3ACn4AAeSw8vVqUugh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Manchester United 2025/26 Adidas Jersey Authentic Home Soccer Football Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Cn4AAeSw8vVqUugh/s-l225.jpg" },
+      { store: "eBay", price: 48.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198576115682?_skw=Manchester+United+home+soccer+jersey&hash=item2e3c0f0fe2%3Ag%3AN2YAAeSw5fZqgkuv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BNWT Manchester United 25/26 Authentic Home Jersey Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/N2YAAeSw5fZqgkuv/s-l225.jpg" },
     ],
   },
 {
@@ -22795,7 +22797,7 @@ const productsData = [
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096959465&a=3013769&m=77026", title: "Camisola Principal da Alemanha 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F55d6d19cfd744793a99f054c23c39de4_9366%2FCamisola_Principal_da_Alemanha_26_Branco_JZ4559_21_model.jpg&feedId=92150&k=43e6a3616f5dd9e1380e73367b4163b8544712dc" },
       { store: "FansJerseyHub", price: 41.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-home-soccer-jersey-kit-2026-world-cup%3Fvariant%3D42748815573097", title: "Germany Home Soccer Jersey Kit 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Germany_Home_Jersey_Kit_World_Cup_2026_1.webp?v=1765780768" },
       { store: "BSTNIT", price: 59.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087183632&a=3013769&m=104981", title: "DFB Deutschland 26 Home Jersey", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-dfb-home-jersey-kd8363-0345518%2FKD8363%2FKD8363-01.jpg&feedId=99415&k=f38cbfb14738603c414043b7af6972ee86c156e1" },
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800304549280?_skw=Germany+home+soccer+jersey+2025+2026&hash=itemba55de4da0%3Ag%3AaGoAAeSwSVtqTVSW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Germany Home Jersey 2026 World Cup Soccer Shirt S M L XL 2XL", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/aGoAAeSwSVtqTVSW/s-l225.jpg" },
+      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800304549280?_skw=Germany+home+soccer+jersey&hash=itemba55de4da0%3Ag%3AaGoAAeSwSVtqTVSW&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZvIz21dlV2Y2YJYA16sGxaGU%2FgcvZpQj8ftGKUnRoW8lOsmZ3IGUBrEnqSwYvQPD52jlIHhnUU6cDhnkHUcBu2mOnsj%2FbLR6Cggsg6SJ1mKu%2FQSbW0%2BclXTLV%2BUKulmr1dDPXhp0pbpdfmlp%2BliHQmWuTE5%2BvRfgSA%2FJL8gFObXM9SZlqKF8O0hac3x6rDlFuHo1sJ%2F0getnyJvFtfGSN5SZbfmmV6tikeSx1eEYzjWB2e%2FdXw0jTPXrqLYz6fatH8XzND%2BsRaqUPstLNSvr7quZ2QGrvX8JFzmL%2By0Co7MA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Germany Home Jersey 2026 World Cup Soccer Shirt S M L XL 2XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/aGoAAeSwSVtqTVSW/s-l225.jpg" },
     ],
   },
 {
@@ -22816,7 +22818,7 @@ const productsData = [
       { store: "BSTNIT", price: 64.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43445633218&a=3013769&m=104981", title: "Italy 26 Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-figc-h-jsy-jl6937-0345532%2FJL6937%2FJL6937-01.jpg&feedId=99415&k=363e94a5155a4df3ee826047b31a9b5c6509cf7c" },
       { store: "FootStoreFR", price: 45.64, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 47.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy5633-maillot-domicile-italie-2026-white", title: "Maillot Domicile Italie 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5633_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 35.99, shipping: 13.0, currency: "USD", url: "https://www.ebay.com/itm/306913498116?_skw=Italy+home+soccer+jersey+2025+2026&hash=item4775785404%3Ag%3AIiwAAeSw69Jp8I-%7E&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYX5lJEPYADjRW%2BryrEM8qShR2RSbnIC5CXd8UdUFQ4Xq6Lx3XKHHZZmPfXJYJcwRjCEv9ZN%2FL0PGByZPmTB7ibuD%2BpTh4UVr%2FJHR3Q1gU0B%2FFOreDXK2Dee%2F7FqeahiPg4H5lh8g2fWJcUhgyzkH6nRd37P%2BuJKcEfw9NTTuED6%2BX1k%2Fe5K17KKwNcDcZAv%2FRt%2FVdfH%2B%2F0CqhsJE%2FnRbjHkKVP28pDw1tjUgtHOIfBjmwKxVif4pToZz55nXxKmNQwox55curyU%2FdOHqKzi7Gvi3BdT50aoEFiHOjBxoTDB793dgBuyfoFES2j578VZJo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ITALY JERSEY HOME FOOTBALL SHIRT 2026 - 2027 ADIDAS YOUNG sz L 13-14 YEARS", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/IiwAAeSw69Jp8I-~/s-l225.jpg" },
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377345163505?_skw=Italy+home+soccer+jersey&hash=item57db8640f1%3Ag%3A-ngAAeSwx71qaRTr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Soccer Jersey Italy 2026 FIFA World Cup Home Large NWT Italia Azzurra", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/-ngAAeSwx71qaRTr/s-l225.jpg" },
     ],
   },
 {
@@ -22832,7 +22834,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsaka-7-england-2026-world-cup-home-football-jersey%3Fvariant%3D43080613658729", title: "Saka #7 England 2026 World Cup Home Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/EnglandNikeHomeStadiumShirt2026withSaka7printing.avif?v=1774856770" },
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081613&a=3013769&m=65912", title: "Camiseta Local Inglaterra Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5290-100_01.webp&feedId=89032&k=5bdb8ae4497cc5f7f438c91d9e656c4d86364915" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5290-100-maillot-domicile-angleterre-coupe-du-monde-2026-white-speed-red-obsidian-obsidian", title: "Maillot Domicile Angleterre Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5290-100_01.webp" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318730072602?_skw=England+home+soccer+jersey+2025+2026&hash=item4a35caf21a%3Ag%3AzecAAeSwDhxqZAgB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "England 2026 World Cup Home Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/zecAAeSwDhxqZAgB/s-l225.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318730072602?_skw=England+home+soccer+jersey&hash=item4a35caf21a%3Ag%3AzecAAeSwDhxqZAgB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "England 2026 World Cup Home Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/zecAAeSwDhxqZAgB/s-l225.jpg" },
     ],
   },
 {
@@ -22851,7 +22853,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43430682907&a=3013769&m=65906", title: "Camisa Local Portugal Coupe du Monde 2026", inStock: true, sizes: ["XS", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_09_puma_783278-01_1.webp&feedId=89044&k=0be45ceeb46316967f0675f1ea951c0383a54b12" },
       { store: "FootStoreFR", price: 75.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783278-01-maillot-domicile-portugal-coupe-du-monde-2026-club-red-green-lagoon", title: "Maillot Domicile Portugal Coupe du Monde 2026", inStock: true, sizes: ["XS", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_09_puma_783278-01_1.webp" },
       { store: "SportIsGoodFR", price: 75.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F783278-01-maillot-domicile-portugal-coupe-du-monde-2026-club-red-green-lagoon", title: "Maillot Domicile Portugal Coupe du Monde 2026", inStock: true, sizes: ["XS", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_09_puma_783278-01_1.webp" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318694686875?_skw=Portugal+home+soccer+jersey+2025+2026&hash=item4a33af009b%3Ag%3A-8AAAeSwtBlqdLi4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ronaldo 2025-2026 Portugal Home Jersey Player Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/-8AAAeSwtBlqdLi4/s-l225.jpg" },
+      { store: "eBay", price: 35.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/158157127096?_skw=Portugal+home+soccer+jersey&hash=item24d2e63db8%3Ag%3AWTsAAeSw7RNqcuDW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Portugal 2026 Home Soccer Jersey Cristiano Ronaldo #7 World Cup", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/WTsAAeSw7RNqcuDW/s-l225.jpg" },
     ],
   },
 {
@@ -22867,7 +22869,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Furuguay-home-football-jersey-world-cup-2026%3Fvariant%3D42735948333161", title: "Uruguay Home Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Uruguay_Home_Football_Jersey_World_Cup_2026_1.webp?v=1777537855" },
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926290&a=3013769&m=65912", title: "Camiseta Local Uruguay Coupe du monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io4680-425-royal-tint-obsidian-69ca9a902cd7b-1.webp&feedId=89032&k=4780a54f0874bb05eb7125178c79fd8c99232289" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4680-425-maillot-domicile-uruguay-coupe-du-monde-2026-royal-tint-obsidian", title: "Maillot Domicile Uruguay Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io4680-425-royal-tint-obsidian-69ca9a902cd7b-1.webp" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267229105542?_skw=Uruguay+home+soccer+jersey+2025+2026&hash=item3e38188d86%3Ag%3ATlMAAOSw1xtoCEmo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uruguay Soccer Home Men 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/TlMAAOSw1xtoCEmo/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267229105542?_skw=Uruguay+home+soccer+jersey&hash=item3e38188d86%3Ag%3ATlMAAOSw1xtoCEmo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uruguay Soccer Home Men 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/TlMAAOSw1xtoCEmo/s-l225.jpg" },
     ],
   },
 {
@@ -22887,7 +22889,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45405789837&a=3013769&m=77026", title: "Camisola Principal 26 da Colômbia", inStock: true, sizes: ["XS", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb30bb7e33dc49afa7d3dcb0da3bdb4a_9366%2FCamisola_Principal_26_da_Colombia_Amarelo_JL6972_21_model.jpg&feedId=92150&k=accea9c86e1686b70ea41c12d78fde41644fbd13" },
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl6972-maillot-domicile-colombie-coupe-du-monde-2026-impact-yellow", title: "Maillot Domicile Colombie Coupe du Monde 2026", inStock: true, sizes: ["XS", "L", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jl6972_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjl6972-maillot-domicile-colombie-coupe-du-monde-2026-impact-yellow", title: "Maillot Domicile Colombie Coupe du Monde 2026", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jl6972_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 31.49, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/198414559394?_skw=Colombia+home+soccer+jersey+2025+2026&hash=item2e326de8a2%3Ag%3Ah6YAAeSw7d5qKLVI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2025/26 Colombia Shirt Home Jersey Men’s Large New With Tags", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/h6YAAeSw7d5qKLVI/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398143437064?_skw=Colombia+home+soccer+jersey&hash=item5cb332b908%3Ag%3AjUYAAeSwebNqRYns&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbxH1nTXMjmANN5rTeBaP4oFTPhEoEw0shOkmoFs0T4WHfd66QghKDP9oOkaDU7o6f7z3z13eakzTDVAl2u0PbRg4w732ghRq8thWMoBX8MCImeH4yU%2Bu7v8GDne4sgda5%2B7I%2Bwc%2FlRvL6YVP%2Bjro0rlT5cpAU%2B9buByAkvo2L32uH0yc%2FQs8lvLDhuRn%2FT2Bg39GuPwXOPHXR6fuYN2bVuxo%2FQwOLuBT%2FfFYcM56zHiaiDwQpOEe6JVyUv3qL1kp%2FExA8x%2FhVh3BjHYGlgPxZpLJgew8TFSKyq1xGXNUOSBQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Colombia National Team adidas 2026 Home Replica Jersey - Yellow Colombia", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/jUYAAeSwebNqRYns/s-l225.jpg" },
     ],
   },
 {
@@ -22903,7 +22905,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ff-de-jong-21-netherlands-2026-world-cup-home-soccer-jersey%3Fvariant%3D43238579568745", title: "F.De JONG #21 Netherlands 2026 World Cup Home Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/F.DEJONG21NetherlandsHome_1_74ee957e-39ab-400f-8a97-1b091d887378.webp?v=1779436838" },
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926283&a=3013769&m=65912", title: "Camiseta Local Países Bajos Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5334-809_04.webp&feedId=89032&k=32c5cb1d07f1c1b97cc66447d87ece67823e2909" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5334-809-maillot-domicile-pays-bas-coupe-du-monde-2026-hyper-crimson-black", title: "Maillot Domicile Pays-Bas Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5334-809_04.webp" },
-      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800259666823?_skw=Netherlands+home+soccer+jersey+2025+2026&hash=itemba53317387%3Ag%3ACKAAAeSwZKtqQd7M&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Netherlands 2026 Home Jersey S-2XL Soccer Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/CKAAAeSwZKtqQd7M/s-l225.jpg" },
+      { store: "eBay", price: 139.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227451132219?_skw=Netherlands+home+soccer+jersey&hash=item34f524d93b%3Ag%3Ap1sAAeSwVDJqZ-%7El&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Netherlands National Team Nike 2026 Authentic Stadium Home Jersey Large 11", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/p1sAAeSwVDJqZ-~l/s-l225.jpg" },
     ],
   },
 {
@@ -22921,7 +22923,7 @@ const productsData = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8621-100-maillot-domicile-croatie-coupe-du-monde-2026-white", title: "Maillot Domicile Croatie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8621-100-white-69ef67d574381-1.webp" },
       { store: "SportIsGoodES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44618335325&a=3013769&m=65906", title: "Maillot Domicile Croacia Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8621-100-white-69ef67d574381-1.webp&feedId=89044&k=6fd1cb77c13c139317a6e4347de387bedd35d559" },
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8621-100-maillot-domicile-croatie-coupe-du-monde-2026-white", title: "Maillot Domicile Croatie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8621-100-white-69ef67d574381-1.webp" },
-      { store: "eBay", price: 39.5, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147457392904?_skw=Croatia+home+soccer+jersey+2025+2026&hash=item2255254108%3Ag%3Ae0oAAeSwINxqYsj6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Croatia Home Soccer Jersey World Cup 2026 Size LARGE", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/e0oAAeSwINxqYsj6/s-l225.jpg" },
+      { store: "eBay", price: 39.5, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147457392904?_skw=Croatia+home+soccer+jersey&hash=item2255254108%3Ag%3Ae0oAAeSwINxqYsj6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Croatia Home Soccer Jersey World Cup 2026 Size LARGE", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/e0oAAeSwINxqYsj6/s-l225.jpg" },
     ],
   },
 {
@@ -22953,7 +22955,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-third-away-soccer-jersey-2025-26%3Fvariant%3D42557191585897", title: "Barcelona Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/barcelona_third_away_jersey_2025_1.png?v=1759219885" },
       { store: "FootStoreFR", price: 104.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4554-784-maillot-exterieur-authentique-fc-barcelone-2025-26-yellow", title: "Maillot Extérieur Authentique FC Barcelone 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4554-784-phsfh001.webp" },
-      { store: "eBay", price: 99.99, shipping: 5.5, currency: "USD", url: "https://www.ebay.com/itm/326969342694?_skw=FC+Barcelona+away+soccer+jersey+2025+2026&hash=item4c20e43ae6%3Ag%3AbYsAAeSw-FJpdUcP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona Jersey 2025/2026 Away Stadium Nike Mens XL Lakers Kobe Bryant Mamba", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/bYsAAeSw-FJpdUcP/s-l225.jpg" },
+      { store: "eBay", price: 44.99, shipping: 7.99, currency: "USD", url: "https://www.ebay.com/itm/407147371634?_skw=FC+Barcelona+away+soccer+jersey&hash=item5ecbdfdc72%3Ag%3ARfYAAeSwaJdqgL-v&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC BARCELONA 2025/26 (AWAY X KOBE) Men’s Soccer Jersey S (Rashford #14)", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/RfYAAeSwaJdqgL-v/s-l225.jpg" },
     ],
   },
 {
@@ -23009,7 +23011,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 109.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44783130096&a=3013769&m=65912", title: "Camiseta Local PSG 2026/27", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii1885-417_01.webp&feedId=89032&k=44e8a96c6fed9924a4ddd08aabd82f166cc7f203" },
       { store: "FootStoreFR", price: 109.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii1885-417-maillot-domicile-psg-2026-27-old-royal-white-university-red-white", title: "Maillot Domicile PSG 2026/27", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ii1885-417_01.webp" },
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800336113282?_skw=Paris+Saint-Germain+home+soccer+jersey+2025+2026&hash=itemba57bfee82%3Ag%3AEO8AAeSwnN9qVV%7Ea&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGbvgAQRrBoBRqYyduuKFjH3J0iEYVHA7hU2RaKIc9z4xBxtQf6Oq8oIqjK3ewvtzcftuwGbNitFad7AoPx2UbZmriJkIpJkH6tL2lgn0NqrJzhI4OCMAdfylUkWV0x7CYhMxUxL6JtqCVQWIO4ATDm4O8J7N%2F6I%2BFJW0D4fVf5u6gpmrxdeZkhZmg6NJgtr1ciNLHdLCdhJzDWGFifoFkU3pzKaCptok9X3Qltd6Zkf30HwSQkotGwwrYRIvbfy0zdEAXP61IZDtzA%2BVbi3FvCbJ3dJ%2FI7VIQ9r8Ue6wM0uk6dNnnm4UtwAfRbjztKQOL%2BajQglQAMECl0FKwgRCM5Z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike PSG Paris Saint-Germain 2026/27 Home Soccer Jersey Kit Men's S M L XL New", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/EO8AAeSwnN9qVV~a/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/137502688829?_skw=Paris+Saint-Germain+home+soccer+jersey&hash=item2003cc863d%3Ag%3Aq88AAeSwhINqUVJK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Paris Saint-Germain PSG Replica 2026-27 Home Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/q88AAeSwhINqUVJK/s-l225.jpg" },
     ],
   },
 {
@@ -23029,7 +23031,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 54.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj4320-maillot-domicile-juventus-turin-2025-26-white-black", title: "Maillot Domicile Juventus Turin 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj4320_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41299309185&a=3013769&m=77008", title: "Camiseta primera equipación Juventus 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Faef425ccc92940b383cccae8c146271d_9366%2FCamiseta_primera_equipacion_Juventus_25-26_Blanco_JN5224_21_model.jpg&feedId=92152&k=7394c45a2185c1a9e91fcbd784dacd222033244d" },
       { store: "BSTNIT", price: 54.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41672553751&a=3013769&m=104981", title: "JUVENTUS 25/26 HOME JERSEY", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-juventus-turin-home-jersey-jj4320-0328680%2FJJ4320%2FJJ4320-01.jpg&feedId=99415&k=9313809b22015222d08a191fd6cf8d939c295538" },
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366464667003?_skw=Juventus+home+soccer+jersey+2025+2026&hash=item5552ff0d7b%3Ag%3Ar2gAAeSweGlqJubZ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZImMAzrCKINZnxk18ghKNSVWCcs4Vhh3YVKkwrxJ9kmEGlX5Y38ma%2FgGkqJxeiuM%2FtByZK0bOfqDrK8tlVAAonrusEx6bfM0kRr%2FdNbKhaVigoUEw2USyh06dJ%2FJ4223lzVoPcQZUGFaXe37Mn0Gzr2u%2BpZD7Z96vjnxSeSLcPMloXvQQMUBRlwWjxXVQrWZxwwU0xp%2BxMwX343IknPmL5NJIl4m81HLm5HYyAJkYwllx048VwR7cQeMWT71jAJS%2FYDh5Y5GUSnRuVpui7P7RegtU7%2FZxXsAJvJaZlNpyEBBECG4IdjSloTg69qRWOjPE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus 2025/26 Home Jersey – Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/r2gAAeSweGlqJubZ/s-l225.jpg" },
+      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127962851333?_skw=Juventus+home+soccer+jersey&hash=item1dcb2e2805%3Ag%3AcvsAAeSwfzZqTYw8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Juventus 25/26 Home Jersey SIZE M NO NAME", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/cvsAAeSwfzZqTYw8/s-l225.jpg" },
     ],
   },
 {
@@ -23047,7 +23049,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41590987758&a=3013769&m=77008", title: "Camiseta segunda equipación Juventus 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6cbd5ef29ede444eac6cd53ec0bc3cae_9366%2FCamiseta_segunda_equipacion_Juventus_25-26_Azul_JN5212_21_model.jpg&feedId=92152&k=0acb5cd9f303eed65ac2cc156117a51a81382189" },
       { store: "BSTNIT", price: 64.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41699021834&a=3013769&m=104981", title: "JUVENTUS 25/26 AWAY JERSEY", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-juve-a-jersey-jj4323-0328681%2FJJ4323%2FJJ4323-01.jpg&feedId=99415&k=c6dc32804daaf4160b288c3198255dda08df5b10" },
       { store: "FootStoreFR", price: 62.81, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj4323-maillot-exterieur-juventus-turin-2025-26-ashblu", title: "Maillot Extérieur Juventus Turin 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj4323_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366608530776?_skw=Juventus+away+soccer+jersey+2025+2026&hash=item555b923d58%3Ag%3Ar64AAeSwY5dqgUlr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus 2025/26 Away Jersey Men’s Medium M BNWT Authentic JJ4323", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/r64AAeSwY5dqgUlr/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366608530776?_skw=Juventus+away+soccer+jersey&hash=item555b923d58%3Ag%3Ar64AAeSwY5dqgUlr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus 2025/26 Away Jersey Men’s Medium M BNWT Authentic JJ4323", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/r64AAeSwY5dqgUlr/s-l225.jpg" },
     ],
   },
 {
@@ -23060,7 +23062,7 @@ const productsData = [
     jerseyPattern: "band",
     brand: "adidas",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017175401?_skw=River+Plate+home+soccer+jersey+2025+2026&hash=itemba44bd5369%3Ag%3AtqMAAeSweGNqBXaA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Home Mens Soccer 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/tqMAAeSweGNqBXaA/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017175401?_skw=River+Plate+home+soccer+jersey&hash=itemba44bd5369%3Ag%3AtqMAAeSweGNqBXaA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Home Mens Soccer 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/tqMAAeSweGNqBXaA/s-l225.jpg" },
       { store: "PlanetFoot", price: 60.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-river-plate-domicile-homme-2025-26-blanc%3Fvariant%3D51421275488597", title: "Maillot River Plate Domicile Homme 2025/26 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-river-plate-25-26-domicile-adulte-adidas-planetfoot1.webp?v=1758730642" },
     ],
   },
@@ -23077,7 +23079,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-home-soccer-jersey-2025-26-blue%3Fvariant%3D42557244145769", title: "Chelsea Home Soccer Jersey 2025/26 Blue", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Chelsea_Home_Soccer_Jersey_2025_26_Blue1.png?v=1760182866" },
       { store: "FootStoreES", price: 66.03, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41368868580&a=3013769&m=65912", title: "Camiseta Local Chelsea 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj4589-496_1.webp&feedId=89032&k=9f5b680c799085eb4705cf60f7ea408d6ac737df" },
       { store: "FootStoreFR", price: 64.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4589-496-maillot-domicile-chelsea-2025-26-rush-blue-white-speed-red-white", title: "Maillot Domicile Chelsea 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4589-496_1.webp" },
-      { store: "eBay", price: 69.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397818578199?_skw=Chelsea+home+soccer+jersey+2025+2026&hash=item5c9fd5c517%3Ag%3AiW4AAeSwm6Zp1vJb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chelsea Nike Men's 2025/2026 Home Soccer Jersey Size 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/iW4AAeSwm6Zp1vJb/s-l225.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298570256820?_skw=Chelsea+home+soccer+jersey&hash=item45842c91b4%3Ag%3ATmIAAeSw-wlqd3qD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chelsea 25/26 Home Jersey", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/TmIAAeSw-wlqd3qD/s-l225.jpg" },
     ],
   },
 {
@@ -23098,7 +23100,7 @@ const productsData = [
       { store: "FootStoreFR", price: 60.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn2074-maillot-exterieur-allemagne-coupe-du-monde-2026-collegiate-navy", title: "Maillot Extérieur Allemagne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn2074_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 60.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn2074-maillot-exterieur-allemagne-coupe-du-monde-2026-collegiate-navy", title: "Maillot Extérieur Allemagne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn2074_1_apparel_photography_front_center_view_white.webp" },
       { store: "BSTNIT", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265212001&a=3013769&m=104981", title: "DFB Deutschland 26 Away Jersey", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-dfb-away-jersey-jn2074-0347224%2FJN2074%2FJN2074-01.jpg&feedId=99415&k=104260f5afe2b49d6e3a3070801d61cbeb687c7f" },
-      { store: "eBay", price: 49.99, shipping: 6.89, currency: "USD", url: "https://www.ebay.com/itm/147501192686?_skw=Germany+away+soccer+jersey+2025+2026&hash=item2257c195ee%3Ag%3AP5IAAeSw0KxqfS6s&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Germany DFB Deutschland 2026 Adidas Away Soccer Jersey Shirt Kit JN2074 Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/P5IAAeSw0KxqfS6s/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 6.89, currency: "USD", url: "https://www.ebay.com/itm/147501192686?_skw=Germany+away+soccer+jersey&hash=item2257c195ee%3Ag%3AP5IAAeSw0KxqfS6s&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Germany DFB Deutschland 2026 Adidas Away Soccer Jersey Shirt Kit JN2074 Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/P5IAAeSw0KxqfS6s/s-l225.jpg" },
     ],
   },
 {
@@ -23118,7 +23120,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd5121-maillot-de-gardien-domicile-allemagne-coupe-du-monde-2026-actgrn", title: "Maillot de gardien Domicile Allemagne Coupe du Monde 2026", inStock: true, sizes: ["XS", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_kd5121_0.webp" },
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096958515&a=3013769&m=77026", title: "Camisola Principal de Guarda-redes 26 da Alemanha", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7549fd098cf04f7cad8a2af08f2bad9e_9366%2FCamisola_Principal_de_Guarda-redes_26_da_Alemanha_Verde_KD5121_21_model.jpg&feedId=92150&k=0d0e04d57e6b3107cdf6e32e3b7a25a4ac335965" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-gardien-allemagne-domicile-homme-2026-vert%3Fvariant%3D53907027689813", title: "Maillot Gardien Allemagne Domicile Homme 2026 Vert - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-allemagne-domicile-homme-2026-vert-climacool-kd51212.webp?v=1782483765" },
-      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206213717936?_skw=Germany+goalkeeper+soccer+jersey&hash=item30034b9fb0%3Ag%3AYYYAAeSwjapp4K4S&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Germany 2026 Goalkeeper - Green Jersey", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/YYYAAeSwjapp4K4S/s-l225.jpg" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206213717936?_skw=Germany+goalkeeper+soccer+jersey&hash=item30034b9fb0%3Ag%3AYYYAAeSwjapp4K4S&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Germany 2026 Goalkeeper - Green Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/YYYAAeSwjapp4K4S/s-l225.jpg" },
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094289571&a=3013769&m=77008", title: "Camiseta de portero primera equipación Alemania 26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7549fd098cf04f7cad8a2af08f2bad9e_9366%2FCamiseta_de_portero_primera_equipacion_Alemania_26_Verde_KD5121_21_model.jpg&feedId=92152&k=772fb18e9c429ed564771e02b20d723037ccc0cb" },
     ],
   },
@@ -23149,7 +23151,7 @@ const productsData = [
       { store: "FootStoreES", price: 66.03, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42177817663&a=3013769&m=65912", title: "Camiseta Third FC Barcelona 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm3201-855-phsfh001-ss25.webp&feedId=89032&k=74179f0a31d5c307468729e4432203e324bd1a31" },
       { store: "FootStoreFR", price: 64.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3201-855-maillot-third-fc-barcelone-2025-26-bright-mango-midnight-navy-midnight-navy", title: "Maillot Third FC Barcelone 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hm3201-855-phsfh001-ss25.webp" },
       { store: "PlanetFoot", price: 59.9, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-barcelone-third-homme-lamine-yamal-n-10-2025-26-orange%3Fvariant%3D52191025299797", title: "Maillot FC Barcelone Third Homme Lamine Yamal N°10 2025/26 Orange", inStock: false, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-fc-barcelone-third-lamine-yamal-10-25-26-homme-planetfoot9.jpg?v=1767391828" },
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158041858218?_skw=FC+Barcelona+third+soccer+jersey+2025+2026&hash=item24cc0760aa%3Ag%3Ad4EAAeSwQD1qRAdP&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ9Jy2IXqEEEwdqJ%2F6V2XRT1Lcag7lWiQKJt4QGkCC2H%2FAz76ajsSeb3YQrrufhntJgE67kMZcLlb5f1sKUO%2FYW%2B2MWg%2Bu%2BMM7eRYw%2FYudC4eWBDAH3QcndMPq88WzOAeGS8C83GEm6qKtYB1c5MIrYPyo6NwWJUkSquYkUkukITc%2B5SIhpB7AdwL%2BMXYpROP6uJVmP02AerPZzJJycww3676c4dXF5GkWBfsff9S3S1bHPtTk8lSXI0%2BI1nGxhlI5kZHt5P9DVNFMyYpyPpFwdXn9aCQvWXPT%2FhSGzoxtYly30fVlzxTcChmkuCKPUJnM%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona 2025-26 Third Kit Jersey Men's XL NWT Orange Barça Soccer Spotify", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/d4EAAeSwQD1qRAdP/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158041858218?_skw=FC+Barcelona+third+soccer+jersey&hash=item24cc0760aa%3Ag%3Ad4EAAeSwQD1qRAdP&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ9Jy2IXqEEEwdqJ%2F6V2XRT1Lcag7lWiQKJt4QGkCC2H%2FAz76ajsSeb3YQrrufhntJgE67kMZcLlb5f1sKUO%2FYW%2B2MWg%2Bu%2BMM7eRYw%2FYudC4eWBDAH3QcndMPq88WzOAeF7kMoEm9IGMabO9wGt2A8a5L2G8DZQCK8GDTlfwYzucWbfqEc9Z%2F4tiMm1PCy%2FOg1kxd13QKkkHPnAFqdRDVAbgyyMBRUhPT3kxA8IhAeBNDDGzsNa6mEetj8yqQIdLsh3Pm9zu4jGId3Q6FGJUY6DAnOQA8XHmRth18LbEoNIefb2%2F2ndi4ueeZpTrYxH454%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona 2025-26 Third Kit Jersey Men's XL NWT Orange Barça Soccer Spotify", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/d4EAAeSwQD1qRAdP/s-l225.jpg" },
     ],
   },
 {
@@ -23168,7 +23170,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbayern-munich-third-away-soccer-jersey-2025-26%3Fvariant%3D42557143777385", title: "Bayern Munich Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Bayern_Munich_Third_Away_Soccer_Jersey_2025_26.png?v=1760943255" },
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj2143-maillot-exterieur-bayern-munich-2025-26-white", title: "Maillot Extérieur Bayern Munich 2025/26", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj2143_0.webp" },
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj2143-maillot-exterieur-bayern-munich-2025-26-white", title: "Maillot Extérieur Bayern Munich 2025/26", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj2143_0.webp" },
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406891170342?_skw=Bayern+Munich+away+soccer+jersey+2025+2026&hash=item5ebc9a8a26%3Ag%3AczcAAeSw%7EF1p8Q8m&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW adidas 2025-26 Bayern Munich Men's Authentic Away Soccer Jersey Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/czcAAeSw~F1p8Q8m/s-l225.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298510418503?_skw=Bayern+Munich+away+soccer+jersey&hash=item45809b8247%3Ag%3AGJ4AAeSwlktqWTl8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bayern Munich 25/26 Away Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/GJ4AAeSwlktqWTl8/s-l225.jpg" },
     ],
   },
 {
@@ -23186,7 +23188,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 60.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke6801-maillot-third-bayern-munich-2025-26-black-halivo", title: "Maillot Third Bayern Munich 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke6801_3_apparel_on_model_standard_view_white.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41981562749&a=3013769&m=77008", title: "Camiseta tercera equipación FC Bayern 25/26", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F49bc73dfd3614dd8bbb60cee4331e882_9366%2FCamiseta_tercera_equipacion_FC_Bayern_25-26_Negro_KE6801_21_model.jpg&feedId=92152&k=272658667bf0d750fd2984be47794350a48b4439" },
       { store: "AdidasPT", price: 105.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41981561189&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 do FC Bayern München", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9b87e68616064dac999e972239f2aca5_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_FC_Bayern_Munchen_Preto_KE6802_HM1.jpg&feedId=92150&k=d8fe6c86db23304c5f0d289c99bd9481b711bc86" },
-      { store: "eBay", price: 64.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336567085799?_skw=Bayern+Munich+third+soccer+jersey+2025+2026&hash=item4e5cf62ae7%3Ag%3Ar24AAeSwcM9p-BxW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas FC Bayern Munich 2025/2026 Authentic Third Jersey Black Sz Medium KE6802", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/r24AAeSwcM9p-BxW/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336563586870?_skw=Bayern+Munich+third+soccer+jersey&hash=item4e5cc0c736%3Ag%3AojUAAeSwfLxp9WUo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Adidas FC Bayern Munich 25/26 Third Authentic Jersey Men’s Size Medium  ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ojUAAeSwfLxp9WUo/s-l225.jpg" },
       { store: "FootStoreES", price: 66.16, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42270681132&a=3013769&m=65912", title: "Maillot Third Bayern Munich 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke6801_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=e62d0bcee7f160965cd27367bf4532add4392ff7" },
       { store: "SportIsGoodES", price: 67.85, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845425&a=3013769&m=65906", title: "Maillot Third Bayern Munich 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke6801_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=e62d0bcee7f160965cd27367bf4532add4392ff7" },
     ],
@@ -23248,7 +23250,7 @@ const productsData = [
       { store: "FootStoreFR", price: 65.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj4281-maillot-exterieur-boca-juniors-2025-26-pyrite-shanav-ntnavy", title: "Maillot Extérieur Boca Juniors 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jj4281_1_apparel_photography_front_center_view_white.jpg" },
       { store: "SportIsGoodES", price: 65.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45470174221&a=3013769&m=65906", title: "Camiseta Visitante Boca Juniors 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj4281_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=2d6947d5cb8bdaf5d77a852aa50c62c6e5cde68b" },
       { store: "SportIsGoodFR", price: 65.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj4281-maillot-exterieur-boca-juniors-2025-26-pyrite-shanav-ntnavy", title: "Maillot Extérieur Boca Juniors 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jj4281_1_apparel_photography_front_center_view_white.jpg" },
-      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307096747403?_skw=Boca+Juniors+away+soccer+jersey+2025+2026&hash=item4780647d8b%3Ag%3AOUEAAeSwMndqa%7E-n&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Boca Juniors Adidas 2025-26 Med. Stadium Away Soccer Futbol Football Jersey NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/OUEAAeSwMndqa~-n/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307096747403?_skw=Boca+Juniors+away+soccer+jersey&hash=item4780647d8b%3Ag%3AOUEAAeSwMndqa%7E-n&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Boca Juniors Adidas 2025-26 Med. Stadium Away Soccer Futbol Football Jersey NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/OUEAAeSwMndqa~-n/s-l225.jpg" },
     ],
   },
 {
@@ -23264,7 +23266,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-away-soccer-jersey-2026-world-cup%3Fvariant%3D42710746726505", title: "Brazil Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Brazil_Away_Jersey_World_Cup_2026_2.webp?v=1765245417" },
       { store: "FootStoreFR", price: 86.66, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiu1072-417-maillot-exterieur-bresil-coupe-du-monde-2026-old-royal-black-p109c", title: "Maillot Extérieur Brésil Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_nike_iu1072-417_00.webp" },
       { store: "MysteryShirtClub", price: 74.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-brazil-away-shirt-502470", title: "2026-2027 Brazil Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1777318334_2026-2027-brazil-away-football-shirt.jpg?v=1783506024" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/286972918020?_skw=Brazil+away+soccer+jersey+2025+2026&hash=item42d0eb3904%3Ag%3AZzYAAeSw5tRpwL2H&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brazil national team Away Mens Soccer Jersey 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ZzYAAeSw5tRpwL2H/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/286972918020?_skw=Brazil+away+soccer+jersey&hash=item42d0eb3904%3Ag%3AZzYAAeSw5tRpwL2H&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brazil national team Away Mens Soccer Jersey 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ZzYAAeSw5tRpwL2H/s-l225.jpg" },
     ],
   },
 {
@@ -23293,7 +23295,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbrazil-goalkeeper-soccer-jersey-world-cup-2026%3Fvariant%3D43162048430185", title: "Brazil Goalkeeper Soccer Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/BrazilGoalkeeperJerseyWorldCup2026_3.webp?v=1777278166" },
       { store: "FootStoreES", price: 68.08, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300845&a=3013769&m=65912", title: "Maillot Gardien Brasil Jordan Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_if3900-741_04.webp&feedId=89032&k=5e22c0d7ecbdfc4c32ca88061dd64a04e65d23e5" },
       { store: "FootStoreFR", price: 68.22, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif3900-741-maillot-gardien-bresil-jordan-coupe-du-monde-2026-varsity-maize-lucky-green", title: "Maillot Gardien Brésil Jordan Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if3900-741_04.webp" },
-      { store: "eBay", price: 100.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267534310171?_skw=Brazil+goalkeeper+soccer+jersey&hash=item3e4a499b1b%3Ag%3A0wsAAeSwxbBpWzzK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike 2026 Goalkeeper Lifestyle Premium T-Shirt Brazil", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/0wsAAeSwxbBpWzzK/s-l225.jpg" },
+      { store: "eBay", price: 109.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398051650370?_skw=Brazil+goalkeeper+soccer+jersey&hash=item5cadba2b42%3Ag%3AFw4AAeSw7mFqKRGJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZEmM0neimzYjw6DlmpZxRPmyTpdCWZdguiPGU8ItTSPigJ7wgHGs87WdkObo7G5dQqFWF0ASdK0jFszH0AhV9IB8JJlUXdCg72GkA1GhJwhhC8iZmUVUnWpjfloj%2FJIClW%2BgOiVAFoUmSvtvQbx6VOnR0ZMoxEn%2BcnN06Sk78nASDTi7RERzqKUeN9qtL0rdJlKXlnZn8VfcUlUbq667e1A3nHbHfAbm2l58I0zit1MXwe0kmgiowczRw0snOO7ebO3WYlLSNb7NK%2FysPvG6U%2FfMizzsfdVyZFov7B%2FqTnSGa115mqsnt5z5Lef%2Bp0liI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Brasil 2026 Hollywood Goalkeeper Jersey IO0795-010 Men's XS NWT", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/Fw4AAeSw7mFqKRGJ/s-l225.jpg" },
     ],
   },
 {
@@ -23308,7 +23310,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-away-soccer-jersey-2025-26-white%3Fvariant%3D42557257777257", title: "Chelsea Away Soccer Jersey 2025/26 White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/eac3b5b68e76822f38daba2e8cea8fd7_32facad5-ad21-46d4-abe3-d2e581bec0c5.png?v=1758074597" },
       { store: "FootStoreFR", price: 64.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4602-031-maillot-exterieur-chelsea-2025-26-phantom-speed-red-galactic-jade", title: "Maillot Extérieur Chelsea 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj4602-031-phsfh001.jpg" },
-      { store: "eBay", price: 80.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287265625012?_skw=Chelsea+away+soccer+jersey+2025+2026&hash=item42e25d93b4%3Ag%3AcaYAAeSwvSpp2eTI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Chelsea FC 2025-2026 Away Jersey Sz  XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/caYAAeSwvSpp2eTI/s-l225.jpg" },
+      { store: "eBay", price: 70.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137243025057?_skw=Chelsea+away+soccer+jersey&hash=item1ff4525ea1%3Ag%3AtskAAeSwEpNp5m%7E6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chelsea Fc 25/26 Away Replica Jersey Size Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/tskAAeSwEpNp5m~6/s-l225.jpg" },
       { store: "FootStoreES", price: 103.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41680557622&a=3013769&m=65912", title: "Camisa de visitante auténtica Chelsea 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4553-031-phsfh001.webp&feedId=89032&k=31c2b35fd9ea406faa17e4d61a1071b9bbe934d8" },
     ],
   },
@@ -23325,7 +23327,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-third-away-soccer-jersey-2025-26%3Fvariant%3D42591174819945", title: "Chelsea Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ChelseaThirdAwaySoccerJersey2025_26_1.png?v=1759221142" },
       { store: "FootStoreES", price: 71.21, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42317471290&a=3013769&m=65912", title: "Maillot Tercero Chelsea 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_09_nike_hm3202-011_0.webp&feedId=89032&k=84ade01617c17927a67a8848fa10bdaf414696f6" },
       { store: "FootStoreFR", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3202-011-maillot-third-chelsea-2025-26-black-field-silver-field-silver", title: "Maillot Third Chelsea 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_09_nike_hm3202-011_0.webp" },
-      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389887971942?_skw=Chelsea+third+soccer+jersey&hash=item5ac7225266%3Ag%3AWxAAAeSwsL5p3dgA&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZfD9G0LhuyjvuZMmvK1t7D9CkrkycSxfNXtnG0A8BA%2FrjF2MfpW5zeOrjisdfal6N4P7nxHPPMFoIZbDX7cj6em9X%2Bd6Q8qaRqWBVJipJ6%2FwR27gqGkkjdrQ%2BJuDKPLduKQFpPrb5VRokfz2hly4w3PHT13UoeQnTeM1pKvQ1wav1%2B%2F4IEQOGJYkyHkSQsu8C03nRvmOON7aVlDuhC8YcyjjTLrzvXLls9I2PDQTVzum806ZMlcJDn0EgBz4BDo0NAEKFDHPEk4i0aa6i9OGhXbxBCK1Z6CMc1SKKjLr1B2Q%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Chelsea Third Nike Jersey, Nwt, Mens size M Soccerr teenager #131", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/WxAAAeSwsL5p3dgA/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 9.0, currency: "USD", url: "https://www.ebay.com/itm/389887971942?_skw=Chelsea+third+soccer+jersey&hash=item5ac7225266%3Ag%3AWxAAAeSwsL5p3dgA&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZfD9G0LhuyjvuZMmvK1t7D9CkrkycSxfNXtnG0A8BA%2FrjF2MfpW5zeOrjisdfal6N4P7nxHPPMFoIZbDX7cj6em9X%2Bd6Q8qaRqWBVJipJ6%2FwR27gqGkkjdrQ%2BJuDKPLdvBySuTo2OmhPqnPf9VsvXG%2BZ8tDat%2BVM0cj2LxJdNTy0Mu8qk51ALAGZk4B5qNnjPJY2s%2BZBNp%2FzXA%2FLtIZ%2FboM5Q7NZdv65I7MwMBJHcOCwRB%2FVF6awp7YatsfrrSzdxvq0HgmunWaELnjObV9xEpHuchXE1%2BF6%2Fgk9lcR1OSAg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Chelsea Third Nike Jersey, Nwt, Mens size M Soccerr teenager #131", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/WxAAAeSwsL5p3dgA/s-l225.jpg" },
     ],
   },
 {
@@ -23346,7 +23348,7 @@ const productsData = [
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl6974-maillot-exterieur-colombie-coupe-du-monde-2026-team-navy-blue-2", title: "Maillot Extérieur Colombie Coupe du Monde 2026", inStock: true, sizes: ["XS", "M", "L", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jl6974_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjl6974-maillot-exterieur-colombie-coupe-du-monde-2026-team-navy-blue-2", title: "Maillot Extérieur Colombie Coupe du Monde 2026", inStock: true, sizes: ["XS", "M", "L", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jl6974_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-colombie-exterieur-homme-2026-bleu-coupe-du-monde%3Fvariant%3D53957422252373", title: "Maillot Colombie Extérieur Homme 2026 Bleu - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-colombie-exterieur-homme-2026-bleu-climacool-jl6974-1.webp?v=1784383117" },
-      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147390216381?_skw=Colombia+away+soccer+jersey+2025+2026&hash=item22512438bd%3Ag%3AxZsAAeSw60hqOY9O&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ADIDAS Men's Authentic Colombia Away Jersey 2026 ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/xZsAAeSw60hqOY9O/s-l225.jpg" },
+      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147390216381?_skw=Colombia+away+soccer+jersey&hash=item22512438bd%3Ag%3AxZsAAeSw60hqOY9O&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ADIDAS Men's Authentic Colombia Away Jersey 2026 ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/xZsAAeSw60hqOY9O/s-l225.jpg" },
     ],
   },
 {
@@ -23364,7 +23366,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44618335354&a=3013769&m=65906", title: "Maillot Exterior Croacia Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8619-455-deep-royal-blue-69ef682c1ed2e-4.webp&feedId=89044&k=446796584f92b8f8401d474f5db476f6dabd5255" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8619-455-maillot-exterieur-croatie-coupe-du-monde-2026-deep-royal-blue", title: "Maillot Extérieur Croatie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8619-455-deep-royal-blue-69ef682c1ed2e-4.webp" },
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8619-455-maillot-exterieur-croatie-coupe-du-monde-2026-deep-royal-blue", title: "Maillot Extérieur Croatie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8619-455-deep-royal-blue-69ef682c1ed2e-4.webp" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318668415762?_skw=Croatia+away+soccer+jersey+2025+2026&hash=item4a321e2312%3Ag%3Au9gAAeSwYwRqYS2C&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Croatia 2026 World Cup Away Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/u9gAAeSwYwRqYS2C/s-l225.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318668415762?_skw=Croatia+away+soccer+jersey&hash=item4a321e2312%3Ag%3Au9gAAeSwYwRqYS2C&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbHFWGnp%2BayN9L9aRwZT3eaGfQoWvb1BK3nQSZr%2FEUhzCt%2BAhWN2BkHeru9Y3Pcozlc%2FZbiVXxAzIJt0Y1RfAtYYDrIX67fFUVjX8fLlV3RmkMSq058DHJYK7%2B%2BDi7nFB3hQjXe67nxmz2srcgN4Zm8uqcLA7OWTQvYYsUINlMVf0ZWkbFSJgMGR3i9SdZNffJjcE80oQoCJ9YOjeRmj9USiFLcF%2FLAIxhQmJ8Re1XmzHe78PZon72ePgD%2FP%2FgbU1iuWZ43VtrMK3060Qgxe86zXslMc4YRG3Y21mqY4MgDVg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Croatia 2026 World Cup Away Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/u9gAAeSwYwRqYS2C/s-l225.jpg" },
     ],
   },
 {
@@ -23414,7 +23416,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
-      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188740974722?_skw=Spain+goalkeeper+soccer+jersey&hash=item2bf1d6b882%3Ag%3A1n0AAeSwBGxqcZhc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Spain 2026 Goalkeeper Away Jersey (READ DESCRIPTION)", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/1n0AAeSwBGxqcZhc/s-l225.jpg" },
+      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188740974722?_skw=Spain+goalkeeper+soccer+jersey&hash=item2bf1d6b882%3Ag%3A1n0AAeSwBGxqcZhc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Spain 2026 Goalkeeper Away Jersey (READ DESCRIPTION)", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/1n0AAeSwBGxqcZhc/s-l225.jpg" },
     ],
   },
 {
@@ -23429,7 +23431,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-away-soccer-jersey-2026-world-cup%3Fvariant%3D43013419139177", title: "France Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/France2026awayjersey_1_8343c88f-f693-4341-92d5-f8ce052bf427.webp?v=1773914236" },
       { store: "FootStoreES", price: 89.64, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44927114129&a=3013769&m=65912", title: "Camiseta de visitante de Francia Coupe du Monde 2026", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5367-394_01.webp&feedId=89032&k=c1b7fd528d936c4acec41c40d389809f0ebee2be" },
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298574139025?_skw=France+away+soccer+jersey+2025+2026&hash=item458467ce91%3Ag%3AOgMAAeSwnCZqeVOx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW France 2026 World Cup Away Jersey With MBAPPE #10 on the back MEDIUM", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/OgMAAeSwnCZqeVOx/s-l225.jpg" },
+      { store: "eBay", price: 45.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/377347515111?_skw=France+away+soccer+jersey&hash=item57dbaa22e7%3Ag%3ASBwAAeSwmzVqKs72&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGY4VLIx9jQ8gtvSiHzNunGbdXHnFzpMscyfm8ZXIouMefju9%2BxZryL0amqAt4V9ONlZYIiJZ5WTTuJzGzZE%2FAuC72dxo4MNNqG6afSNjbYMekCWCjZG8wnpiurVr2xAo%2FmlgldLqYQlgY%2B%2BSxK6U2ZQXpgwm3wFeAMd9w3J1QadjyETYSWRg5l81MJicbhuJF5zI1%2BFYgOE3IeeKXiM4%2FW7dlzBowA2xU7Ne2xL9riw8dW7Y2mB0cuvTULd1jwpijVUrrxJw615HfydLdPSncF1Eu2XjGadvae4TP4ncpTMDw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JUST RELEASED!!! THE NEW France 2026 World Cup Away Jersey | Customizable", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/SBwAAeSwmzVqKs72/s-l225.jpg" },
       { store: "SportIsGoodES", price: 49.05, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015747&a=3013769&m=65906", title: "Camiseta de visitante de Francia 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jy0843_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=f57386e1dd5777d768d1db8c6deec43666f08eb2" },
       { store: "SportIsGoodFR", price: 62.19, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp4334-maillot-exterieur-france-2025-26-white", title: "Maillot Exterieur France 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp4334_2_apparel_photography_front_center_view_white.webp" },
       { store: "FootStoreFR", price: 89.2, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5367-394-maillot-exterieur-france-coupe-du-monde-2026-igloo-monarch-monarch", title: "Maillot Extérieur France Coupe du Monde 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5367-394_01.webp" },
@@ -23448,7 +23450,7 @@ const productsData = [
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926234&a=3013769&m=65912", title: "Maillot de Gardien Francia Coupe du monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5304-010_01.webp&feedId=89032&k=b16607e44bd3e5b0037a2e30581dc1143cb8b008" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5304-010-maillot-de-gardien-france-coupe-du-monde-2026-black-medium-ash-monarch-igloo", title: "Maillot de Gardien France Coupe du Monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5304-010_01.webp" },
       { store: "FansJerseyHub", price: 32.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffrance-hollywood-goalkeeper-lifestyle-jersey-2025%3Fvariant%3D42818196045929", title: "France Hollywood Goalkeeper Lifestyle Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/FranceHollywoodGoalkeeperLifestyleJersey_2.webp?v=1768447784" },
-      { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358812194209?_skw=France+goalkeeper+soccer+jersey&hash=item538adf95a1%3Ag%3Aj2MAAeSwsHRqW8gP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike France Hollywood Goalkeeper 2025/26 Soccer Football Jersey NWT Men’s L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/j2MAAeSwsHRqW8gP/s-l225.jpg" },
+      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188768755562?_skw=France+goalkeeper+soccer+jersey&hash=item2bf37e9f6a%3Ag%3ARpcAAeSwIvJqeRec&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike France FFF 2026 World Cup Goalkeeper T-Shirt  Size S Loose Fit Excellent", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/RpcAAeSwIvJqeRec/s-l225.jpg" },
     ],
   },
 {
@@ -23462,7 +23464,7 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Frice-4-england-away-soccer-jersey-2026-world-cup%3Fvariant%3D43093698936937", title: "Rice #4 England Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Rice4EnglandAwayJerseyWorldCup2026_1.webp?v=1775124529" },
-      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377409389940?_skw=England+away+soccer+jersey+2025+2026&hash=item57df5a4574%3Ag%3A8iQAAeSwR-Fqd0TP&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZX50kXWNXI0rchP7Lu%2BSrpZw3dCYU6BoJrtVT2fnzOzwKvXFwLTTJn8AJ2%2F0mqdifrb45odscQML4f0GHmSXGe8iu2cw%2Fswb59Llu7kGEWlRAvvbvZ7EBoMoCYJgjDuLoj57q2kHjptWMJUc8r7wXuyqIlxKgqqaBxDRGqgXzFq9QaUPADnhblUL92YuI%2FNWnw4zXlF3WjPuzUPoszFlgDXtqP%2B%2BHInlbW4CM6wC21d6KGtWbsL2EauISWMTUydE3%2FYOx%2Bn%2BQB00M4PJWLeEuIMqRoZfO1rw7jXwJOkdQ6Qhkur9Bjn35ZDO5thiIFcvQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 England World Cup Soccer Jersey #10 National Team Away Jersey", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/8iQAAeSwR-Fqd0TP/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/278280995578?_skw=England+away+soccer+jersey&hash=item40cad702fa%3Ag%3AFjsAAeSw87Bqf5uC&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGby21Nod62QMLAhmXF9yhb37TKuo7W7uOxKict7cTPzfPA4EldZ8F6QWORRUaeCez9oHL5Ye0UPXiLFtarfyAR1HbIO0hej8%2F03SGLsMR74BFgjKLBeddtiORg3ttOzlc0HsAHICvakdiOT%2FiTrrHdOlEZs3ztrbPqlRzOBHnv3mw90oMZsmlymPzvUgEvpk2uh%2B1L6T7m1Le1BSM4mtTfotAZAaiTFc%2BhpHNZXFJHufP6o6Mqzwf1ncq5N59ntZz3WIvdNPoKxildLwBMIVZIzXxX78je7i0k4ctnG2wHD8Q%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 England Away Jersey Harry Kane #9 Player Version", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/FjsAAeSw87Bqf5uC/s-l225.jpg" },
       { store: "FootStoreES", price: 127.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300776&a=3013769&m=65912", title: "Camisa Exterior Auténtica Inglaterra Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5195-624_01.webp&feedId=89032&k=2e991e3fc08729eaa7ffec602be17cc05a7581c2" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5361-624-maillot-exterieur-angleterre-coupe-du-monde-2026-speed-red-obsidian-white-obsidian", title: "Maillot Extérieur Angleterre Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5361-624_01.webp" },
     ],
@@ -23485,7 +23487,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267899840&a=3013769&m=77026", title: "Camisola Alternativa 26 da Itália", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F75936dd14cc7497f82e20014ecee59bf_9366%2FCamisola_Alternativa_26_da_Italia_Azul_JY5680_21_model.jpg&feedId=92150&k=34e4a6152c4e3ec1e223fc36a300166e11a23e28" },
       { store: "FootStoreFR", price: 64.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc8704-maillot-exterieur-italie-coupe-du-monde-2026-aero-blue", title: "Maillot Extérieur Italie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_kc8704_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 66.1, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc8704-maillot-exterieur-italie-coupe-du-monde-2026-aero-blue", title: "Maillot Extérieur Italie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_kc8704_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 65.0, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/377381958121?_skw=Italy+away+soccer+jersey+2025+2026&hash=item57ddb7b1e9%3Ag%3AyDMAAeSwkEFqPpw1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Italy 2026 Away Jersey Authentic Adidas / Size L New With Tags ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/yDMAAeSwkEFqPpw1/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/336650635929?_skw=Italy+away+soccer+jersey&hash=item4e61f10a99%3Ag%3AbZYAAeSwcVhqOGdB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Italy 2026 Barella #18 New Away Soccer White Jersey 2026 Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/bZYAAeSwcVhqOGdB/s-l225.jpg" },
     ],
   },
 {
@@ -23505,7 +23507,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 63.33, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc3486-maillot-third-juventus-turin-2025-26-black-ecrtin", title: "Maillot Third Juventus Turin 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kc3486-black-ecrtin-6a58becf55734-1.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45256778802&a=3013769&m=77008", title: "Camiseta tercera equipación Juventus 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd5391efe8b6f4675a243e15c5f2aa956_9366%2FCamiseta_tercera_equipacion_Juventus_25-26_Negro_KC3491_21_model.jpg&feedId=92152&k=b15cac81426f613a09955b5e7a788f5b35de2c00" },
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45256773512&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 da Juventus", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd5391efe8b6f4675a243e15c5f2aa956_9366%2FCamisola_do_Terceiro_Equipamento_25-26_da_Juventus_Preto_KC3491_21_model.jpg&feedId=92150&k=87687fa44c67f7b6cd1bfc7f59cbf649a1b873d6" },
-      { store: "eBay", price: 87.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406997028076?_skw=Juventus+third+soccer+jersey+2025+2026&hash=item5ec2e9ccec%3Ag%3ASUMAAeSw%7E49qLOLa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus Third Jersey 2025/2026 Men’s Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/SUMAAeSw~49qLOLa/s-l225.jpg" },
+      { store: "eBay", price: 67.97, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/389818549327?_skw=Juventus+third+soccer+jersey&hash=item5ac2ff044f%3Ag%3AzzcAAeSwdQBpycN%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus 25/26 Third Authentic Jersey Black Men’s Size Small KC3487", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/zzcAAeSwdQBpycN~/s-l225.jpg" },
     ],
   },
 {
@@ -23604,7 +23606,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41848202010&a=3013769&m=77008", title: "Camiseta segunda equipación Manchester United 25/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1623df85821444868c899b09fd5c9a3c_9366%2FCamiseta_segunda_equipacion_Manchester_United_25-26_Blanco_JI7423_21_model.jpg&feedId=92152&k=a1f47608daf926a7217fde6420b83b5c8136c105" },
       { store: "FootStoreFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7423-maillot-exterieur-manchester-united-2025-26-white", title: "Maillot Extérieur Manchester United 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji7423_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji7423-maillot-exterieur-manchester-united-2025-26-white", title: "Maillot Extérieur Manchester United 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji7423_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178406559657?_skw=Manchester+United+away+soccer+jersey+2025+2026&hash=item2989dc0fa9%3Ag%3AL5MAAeSwCGNqfy76&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Authentic Manchester United 2025/26 Away Soccer Football Jersey Men’s M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/L5MAAeSwCGNqfy76/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178406559657?_skw=Manchester+United+away+soccer+jersey&hash=item2989dc0fa9%3Ag%3AL5MAAeSwCGNqfy76&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Authentic Manchester United 2025/26 Away Soccer Football Jersey Men’s M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/L5MAAeSwCGNqfy76/s-l225.jpg" },
     ],
   },
 {
@@ -23624,7 +23626,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd4225-maillot-third-manchester-united-2025-26-black", title: "Maillot Third Manchester United 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kd4225_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42071970641&a=3013769&m=77008", title: "Camiseta tercera equipación Manchester United 25/26", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8dd91b60f83f43179dda41bacebd7968_9366%2FCamiseta_tercera_equipacion_Manchester_United_25-26_Negro_KD4225_21_model.jpg&feedId=92152&k=a805957cb95d4dbfef39f61d5343a70b879ad5d7" },
       { store: "AdidasPT", price: 80.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42071970523&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 do Manchester United FC", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8dd91b60f83f43179dda41bacebd7968_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Manchester_United_FC_Preto_KD4225_21_model.jpg&feedId=92150&k=52f8e0d78d1f5755970b1a397556f9a7fc01fda6" },
-      { store: "eBay", price: 89.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377363301996?_skw=Manchester+United+third+soccer+jersey+2025+2026&hash=item57dc9b066c%3Ag%3Ahl8AAeSwhZ9qYYBz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Manchester United 2025/26 Third Jersey Men L Black KD4225 NWT Soccer", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hl8AAeSwhZ9qYYBz/s-l225.jpg" },
+      { store: "eBay", price: 59.87, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/257659229005?_skw=Manchester+United+third+soccer+jersey&hash=item3bfdafd34d%3Ag%3A2SAAAeSwf79qcNPt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United 25/26 Third Jersey,  Men's L, Adidas Soccer Football Shirt NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/2SAAAeSwf79qcNPt/s-l225.jpg" },
     ],
   },
 {
@@ -23640,7 +23642,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnetherlands-away-player-version-football-jersey-2026-world-cup%3Fvariant%3D42881087832169", title: "Netherlands Away Player Version Football Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/NetherlandsAwayMatchJerseyPlayerVersionWorldCup2026_2.webp?v=1770097386" },
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926347&a=3013769&m=65912", title: "Camiseta Exterior Países Bajos Coupe du monde 2026", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5391-100_01.webp&feedId=89032&k=785ca8396b1c6cc49f48764a34129f7ec1c3e3c7" },
       { store: "MysteryShirtClub", price: 64.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-netherlands-away-shirt-501804", title: "2026-2027 Netherlands Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1776278851_2026-2027-netherlands-nike-away-football-shirt.jpg?v=1782814820" },
-      { store: "eBay", price: 35.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168314053112?_skw=Netherlands+away+soccer+jersey+2025+2026&hash=item27304ca1f8%3Ag%3AAKYAAeSwPIZp4fRY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Netherlands 2026 Away Player Version Jersey S-XL", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/AKYAAeSwPIZp4fRY/s-l225.jpg" },
+      { store: "eBay", price: 35.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168314053112?_skw=Netherlands+away+soccer+jersey&hash=item27304ca1f8%3Ag%3AAKYAAeSwPIZp4fRY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Netherlands 2026 Away Player Version Jersey S-XL", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/AKYAAeSwPIZp4fRY/s-l225.jpg" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5391-100-maillot-exterieur-pays-bas-coupe-du-monde-2026-white-hyper-crimson-black", title: "Maillot Extérieur Pays-Bas Coupe du Monde 2026", inStock: true, sizes: ["L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5391-100_01.webp" },
     ],
   },
@@ -23660,7 +23662,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 90.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395901461&a=3013769&m=65906", title: "Camiseta de Visitante Portugal Ronaldo Coupe du Monde 2026", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-788146-77-puma-white-green-lagoon-69babddb86232-1.webp&feedId=89044&k=808a1a4a2a0c5be3df60037c72180155a024e580" },
       { store: "FootStoreFR", price: 90.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F788146-77-maillot-exterieur-portugal-ronaldo-coupe-du-monde-2026-puma-white-green-lagoon", title: "Maillot Extérieur Portugal Ronaldo Coupe du Monde 2026", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-788146-77-puma-white-green-lagoon-69babddb86232-1.webp" },
       { store: "SportIsGoodFR", price: 90.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F788146-77-maillot-exterieur-portugal-ronaldo-coupe-du-monde-2026-puma-white-green-lagoon", title: "Maillot Extérieur Portugal Ronaldo Coupe du Monde 2026", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-788146-77-puma-white-green-lagoon-69babddb86232-1.webp" },
-      { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307090754452?_skw=Portugal+away+soccer+jersey+2025+2026&hash=item4780090b94%3Ag%3AGUIAAeSwFatqO1yP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Portugal 2026 Away Soccer Jersey Black Men’s National Team Shirt", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/GUIAAeSwFatqO1yP/s-l225.jpg" },
+      { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307090754452?_skw=Portugal+away+soccer+jersey&hash=item4780090b94%3Ag%3AGUIAAeSwFatqO1yP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Portugal 2026 Away Soccer Jersey Black Men’s National Team Shirt", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/GUIAAeSwFatqO1yP/s-l225.jpg" },
     ],
   },
 {
@@ -23689,7 +23691,7 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "FootStoreES", price: 83.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43745917174&a=3013769&m=65912", title: "Maillot Tercero PSG Strike 2025/26", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm3606-101_white-global-red_1.webp&feedId=89032&k=2e58deaeee8071150c777244cca3a2423906a3c9" },
-      { store: "eBay", price: 38.0, shipping: 12.0, currency: "USD", url: "https://www.ebay.com/itm/287495023239?_skw=Paris+Saint-Germain+third+soccer+jersey+2025+2026&hash=item42f009ea87%3Ag%3AwVsAAeSwrptqbMTo&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGbqO1QJsL%2FdbNXDjGzPopn42Dca%2BbCIAFKMABGPDSaFXzxdNqSVjdtn1cTlczgyeQ1H4Js%2BXWgyvzQT%2BLEV8tEG4EpW3RUk1xDUGpVczvjWk9W0u3ZWb%2B9pNT6QmfPJ3YeMVMQ7ly8vYHjKEmO1UoQ7McQetgdAzH0yOS6atGP--t7OwV61%2FHe4cZMcp12FfbMHHHkmd4mY9zOrL5o6NhQLzkEabgfOK09GhTEzb%2FL%2FSfUPY3XYeIiy1ik4VxzzRll7JBIBUHDGOkc0Iy7ztIfLupAIXHYKs8JAuYl0BqoowSgVZ1CfglmLACIjWRrGSdZ2ObtFdhQDcjjZUuZCE9HC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike PSG 2025/26 Third Soccer Jersey Men's Size Medium Paris Saint Germain", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/wVsAAeSwrptqbMTo/s-l225.jpg" },
+      { store: "eBay", price: 38.0, shipping: 12.0, currency: "USD", url: "https://www.ebay.com/itm/287495023239?_skw=Paris+Saint-Germain+third+soccer+jersey&hash=item42f009ea87%3Ag%3AwVsAAeSwrptqbMTo&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbqO1QJsL%2FdbNXDjGzPopn42Dca%2BbCIAFKMABGPDSaFXzxdNqSVjdtn1cTlczgyeQ1H4Js%2BXWgyvzQT%2BLEV8tEG4EpW3RUk1xDUGpVczvjWk9W0u3ZWb%2B9pNT6QmfPJ3Ye7aO97wwwCY%2BybdPkqfCZ8jo13f1L038eQdPgn8034QRhVS--hPJzpxGqixWW0qoW9TiIf30VbBuft7BmQSzDm0JcmMN8B2tOMTL1zwPdmSkTtN3kK3ZKzHVIxZwz0kmN9XpVClTMt5LO9CKNN7fAIoq1YwHhN0AUZ7%2FBPl0TZes6iCk711XQe%2Fsleuhi1Nco%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike PSG 2025/26 Third Soccer Jersey Men's Size Medium Paris Saint Germain", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/wVsAAeSwrptqbMTo/s-l225.jpg" },
       { store: "FootStoreFR", price: 82.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3606-101-maillot-third-psg-strike-2025-26-white-global-red", title: "Maillot Third PSG Strike 2025/26", inStock: true, sizes: ["L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hm3606-101_white-global-red_1.webp" },
     ],
   },
@@ -23729,7 +23731,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 66.1, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv5845-maillot-third-real-madrid-2025-26-blubir", title: "Maillot Third Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jv5845_blubir_1.jpg" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42036950039&a=3013769&m=77008", title: "Camiseta tercera equipación Real Madrid 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7355abe9c0ce4ab9a6ae6b448cd03b15_9366%2FCamiseta_tercera_equipacion_Real_Madrid_25-26_Azul_JV5845_21_model.jpg&feedId=92152&k=a59ef60598ec45123135f6a30b8cac8a9e0d276d" },
       { store: "AdidasPT", price: 56.25, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42036951913&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 do Real Madrid", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7355abe9c0ce4ab9a6ae6b448cd03b15_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Real_Madrid_Azul_JV5845_21_model.jpg&feedId=92150&k=5df6e6ec9172e874ea2e2e9d34fb6d0ec31811d2" },
-      { store: "eBay", price: 64.9, shipping: 6.5, currency: "USD", url: "https://www.ebay.com/itm/318695834233?_skw=Real+Madrid+third+soccer+jersey+2025+2026&hash=item4a33c08279%3Ag%3A8rUAAeSwNm9qaVNt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Real Madrid 2025/26 Third Jersey Men’s Medium Authentic Shirt Blue Logo", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/8rUAAeSwNm9qaVNt/s-l225.jpg" },
+      { store: "eBay", price: 61.74, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157897579929?_skw=Real+Madrid+third+soccer+jersey&hash=item24c36ddd99%3Ag%3AsSQAAeSwAFFp%7ELml&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas REAL MADRID 25/26 THIRD JERSEY JV5845", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/sSQAAeSwAFFp~Lml/s-l225.jpg" },
     ],
   },
 {
@@ -23789,7 +23791,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-away-soccer-jersey-2025-26%3Fvariant%3D42724207886441", title: "River Plate Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RiverPlateAwaySoccerJersey202526_1.png?v=1764762115" },
       { store: "FootStoreFR", price: 52.87, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7077-maillot-exterieur-ca-river-plate-2025-26-black-tepore", title: "Maillot Extérieur CA River Plate 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji7077_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 54.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji7077-maillot-exterieur-ca-river-plate-2025-26-black-tepore", title: "Maillot Extérieur CA River Plate 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji7077_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157925693239?_skw=River+Plate+away+soccer+jersey+2025+2026&hash=item24c51ad737%3Ag%3AIdoAAeSwX9xqDV4W&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Away Mens Soccer 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/IdoAAeSwX9xqDV4W/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157925693239?_skw=River+Plate+away+soccer+jersey&hash=item24c51ad737%3Ag%3AIdoAAeSwX9xqDV4W&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Away Mens Soccer 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/IdoAAeSwX9xqDV4W/s-l225.jpg" },
     ],
   },
 {
@@ -23804,7 +23806,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 76.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926351&a=3013769&m=65912", title: "Camiseta de visitante Uruguay Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io4681-451-obsidian-hyper-royal-69ca9aab64a88-1.webp&feedId=89032&k=e9d91af639ffe5d5b6786019048fab89d945d9d6" },
       { store: "FootStoreFR", price: 76.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4681-451-maillot-exterieur-uruguay-coupe-du-monde-2026-obsidian-hyper-royal", title: "Maillot Extérieur Uruguay Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io4681-451-obsidian-hyper-royal-69ca9aab64a88-1.webp" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267227645777?_skw=Uruguay+away+soccer+jersey+2025+2026&hash=item3e38024751%3Ag%3A9soAAOSwBploBk9m&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uruguay Soccer Away Men 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/9soAAOSwBploBk9m/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267227645777?_skw=Uruguay+away+soccer+jersey&hash=item3e38024751%3Ag%3A9soAAOSwBploBk9m&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uruguay Soccer Away Men 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/9soAAOSwBploBk9m/s-l225.jpg" },
     ],
   },
 {
@@ -23818,6 +23820,7 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "ComoFCShop", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fhome-jersey-2025-26-jd7389-1%3Fvariant%3D55667121979774", title: "Como 1907 Maglia Gara Home 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B1001_01.jpg?v=1758876217" },
+      { store: "eBay", price: 99.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267759485053?_skw=Como+1907+home+soccer+jersey&hash=item3e57b5807d%3Ag%3Ai-0AAeSwPGtpLF2n&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW Como 1907 25/26 Home Jersey “Nico Paz 10” (Medium)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/i-0AAeSwPGtpLF2n/s-l225.jpg" },
     ],
   },
 {
@@ -23902,7 +23905,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094298145&a=3013769&m=77008", title: "Camiseta de portero primera equipación Italia 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fffbebe63c7264f5685f8623206ecdcbc_9366%2FCamiseta_de_portero_primera_equipacion_Italia_26_Burgundy_JN1979_21_model.jpg&feedId=92152&k=065984b74a67cd9f363a6737e6d95aa612f91db1" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965775&a=3013769&m=77026", title: "Camisola Principal de Guarda-redes 26 da ITÁLIA", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fffbebe63c7264f5685f8623206ecdcbc_9366%2FCamisola_Principal_de_Guarda-redes_26_da_ITALIA_Bordo_JN1979_21_model.jpg&feedId=92150&k=6a09c49c89949a40bf302884bc6e8d874b76d776" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-italie-domicile-gardien-homme-2026-rouge%3Fvariant%3D51868459139413", title: "Maillot Italie Domicile Gardien Homme 2026 Rouge - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-gardien-italie-2026-domicile-rouge-adidas-planetfoot1.avif?v=1763313958" },
-      { store: "eBay", price: 64.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157855979884?_skw=Italy+goalkeeper+soccer+jersey&hash=item24c0f3196c%3Ag%3Aza0AAeSw7LFp6nIx&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYP2Ij76gvTAom7g4UHLk8NnU%2FIH81dblcWtObHwVKq5cLPebJf%2BskNpDtt2ssrZLq4CTLvE3YeChehjw2FTZt8O6x%2BCiJ7MMFwb4cSs4pYk%2B7%2Br6ry%2BAMqi408qx4qeaZ7lxRs8YK9yeDHbDVXOn06hLUJyAZjqMA9IUiRnMvaq1uoYwq%2BYJU0RiH98C0Ma84FZI3J5Pycbc5UBIyneDjQ%2BcLKLEavDNiVKvmTY3h9IEPB1yvFlVnryuIZnozAEBKqHbA0K%2FuWlmOUHqcx7rVU0gnAeVdf3jUxwf9MwyEsXRwTC1J1zOZmX7EMPrj03S8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas men Italy 26 Home Goalkeeper Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/za0AAeSw7LFp6nIx/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157855979884?_skw=Italy+goalkeeper+soccer+jersey&hash=item24c0f3196c%3Ag%3Aza0AAeSw7LFp6nIx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas men Italy 26 Home Goalkeeper Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/za0AAeSw7LFp6nIx/s-l225.jpg" },
     ],
   },
 {
@@ -24787,7 +24790,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 44.91, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44284785117&a=3013769&m=65906", title: "Camiseta Local Milan 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferrea_smkh6c0041300pow_01.webp&feedId=89044&k=30233c5cbd66af9f176bc8ddf02ed572a1e728f3" },
       { store: "SportIsGoodFR", price: 45.29, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fsmkh6c0041300pow-maillot-domicile-milan-2025-26-bia-blu-ros", title: "Maillot Domicile Milan 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea_smkh6c0041300pow_01.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fac-milan-home-soccer-jersey-2025-26-red-black%3Fvariant%3D42557245096041", title: "AC Milan Home Soccer Jersey 2025/26 Red&Black", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AC_Milan_Home_Soccer_Jersey_2025_26_Red_Black1.png?v=1759992926" },
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206312893638?_skw=AC+Milan+home+soccer+jersey+2025+2026&hash=item300934ecc6%3Ag%3A6vYAAeSwxEZqHNFm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma AC Milan Home 2025-2026 Jersey!", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/6vYAAeSwxEZqHNFm/s-l225.jpg" },
+      { store: "eBay", price: 99.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/278127907365?_skw=AC+Milan+home+soccer+jersey&hash=item40c1b71225%3Ag%3AkmEAAeSw8HVqPrsO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYefPYUTbSw4wAus%2BKxasoODwkydClHIpV1ZxPH3Ui8QWo9kM%2Bwpr7nWX7qvHXikFFO6iGMk0Ewf14XCL42TwK%2F9J3xXBpSvYnWkc6TlT06vlFnBjt5y4G6J3nRnhoAQ7jHJ53puCsD23kDX1EyHWo%2FGa69rrs5l7y7NvAem8HLoRo6mZ2ulNLa%2FDUbTjRrkxoNpdM0eIn09DDsDUKV9Hc4enEBhIhsUQra50cwWVm37pW0fkXPaGr3g6sUq7v693TSsUl5VShkUY9FBMb7esJygF7O1yvjPazIf1G7supoF2o30DRGUsWK37WlpXKfNSk%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "779961-01 Puma AC Milan 2025/26 Authentic Home Jersey Mens Red Black Sizes Vary", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kmEAAeSw8HVqPrsO/s-l225.jpg" },
     ],
   },
 {
@@ -24804,7 +24807,7 @@ const productsData = [
       { store: "FootStoreFR", price: 55.66, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779979-03-maillot-third-milan-ac-2025-26-yellow", title: "Maillot Third Milan AC 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779979-03_1-nw082525.webp" },
       { store: "SportIsGoodES", price: 65.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301853725&a=3013769&m=65906", title: "Maillot Tercero AC Milan 2025/26", inStock: true, sizes: ["S", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779979-03_1-nw082525.webp&feedId=89044&k=b53f8ddebd5ee1e288d5765f5aa402c01ef9ac5c" },
       { store: "SportIsGoodFR", price: 65.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779979-03-maillot-third-milan-ac-2025-26-yellow", title: "Maillot Third Milan AC 2025/26", inStock: true, sizes: ["S", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779979-03_1-nw082525.webp" },
-      { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358826242141?_skw=AC+Milan+third+soccer+jersey+2025+2026&hash=item538bb5f05d%3Ag%3A5-cAAeSw3yhqX6L1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma Yellow AC Milan 2025/26 Third Replica Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5-cAAeSw3yhqX6L1/s-l225.jpg" },
+      { store: "eBay", price: 88.88, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/128025228133?_skw=AC+Milan+third+soccer+jersey&hash=item1dcee5f365%3Ag%3AQuMAAeSwNz9qfiHU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma AC Milan 25/26 Third Jersey Authentic Size 2XL XXL (Fits Like L - XL) $150", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/QuMAAeSwNz9qfiHU/s-l225.jpg" },
     ],
   },
 {
@@ -24822,7 +24825,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44873544166&a=3013769&m=65906", title: "Camiseta Local Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz3168_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=d26488b95b5f42d7cace2b773d022ea69044af6f" },
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz3168-maillot-domicile-arsenal-2026-27-meipou", title: "Maillot Domicile Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz3168_1_apparel_photography_front_center_view_white.webp" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsaka-7-arsenal-home-soccer-jersey-2026-27-ucl%3Fvariant%3D47885539770473", title: "Saka #7 Arsenal Home Soccer Jersey 2026/27 - UCL", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/arsenalhomefan_7ucl2026_27.webp?v=1786343994" },
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800336153955?_skw=Arsenal+home+soccer+jersey+2025+2026&hash=itemba57c08d63%3Ag%3AZ7YAAeSwVDJqVWF%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Arsenal FC 2026/27 Home Soccer Jersey Kit Men's M L XL XXL New", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Z7YAAeSwVDJqVWF~/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/278281014324?_skw=Arsenal+home+soccer+jersey&hash=item40cad74c34%3Ag%3A4bEAAeSwa4Fqf5w2&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYwkFdsRGSwK9hfUZgHHHvtKZbIHV38DrVzMAmek51SX%2FggPQPahNop2kZT5%2FsuqmfxPQqPncg03CWFdh1kWVn0fRKMIimT1Ki5%2F2GuwmPe9GoA7%2F5%2BN8oRP1JW9hGAA%2B1GLZrYoRtHi875kbjmdl%2BeOP65aymbijclQZ%2BbEdrefP%2BngcmE5LwMv9z%2Bpb%2BRhnTb5jY1CFS4OSlARH%2Bx5co41nD%2FrEQuaVj5cGqfXud%2BXMMT7W2y9V9TYPRf9ig9R6epxKs7fw0NldNnkYAyEtZOuugPYsRI1hK04HdsJ3pnMQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Arsenal Home 26-27 Jersey Gyrokres #14 Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/4bEAAeSwa4Fqf5w2/s-l225.jpg" },
     ],
   },
 {
@@ -24852,7 +24855,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 79.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44896717934&a=3013769&m=65912", title: "Camiseta Local RC Celta Vigo 2025/26", inStock: false, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F3%2F231421-7431.webp&feedId=89032&k=329704cbc43d6dab82f905830f31314722be7520" },
       { store: "FootStoreFR", price: 79.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F231421-7431-maillot-domicile-rc-celta-vigo-2025-26-blue-bell", title: "Maillot Domicile RC Celta Vigo 2025/26", inStock: false, sizes: ["S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/3/231421-7431.jpg" },
-      { store: "eBay", price: 139.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278028213297?_skw=Celta+Vigo+home+soccer+jersey+2025+2026&hash=item40bbc5dc31%3Ag%3AyokAAeSwNBlqFyCJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZxYedRhfZ5mqMpC7bO5mJwaR6hplQGFzTMDKNLTPgtbr8LMjqWP64%2FYuTU6QxGVBheU4taASUTe26%2BZ7Le83DmGyo8oApXlk1UeymOTeCyxxZYeDKtxqnsXFVVjRtl791l7I7R5OsparV8zcnL6TlanKhesFj57OE%2FmsbHzHR21%2Bx%2FwGkRUJQ8zuMQIGWt8EWCboAju%2BopjwCav7WD6jEanCF3YccVhXxv4%2B%2BoBJOkOMOBHMv0BhEKF%2FgLysT7z3CBnGJLI7wkPQTvH4HnQ8qrYFb0Llox0NRG6zCvrCEt9%2BbUmSWtF7jQjHXtCZeNg4g%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CELTA DE VIGO - ORIGINAL HOME Jersey 2026 - Hummel - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/yokAAeSwNBlqFyCJ/s-l225.jpg" },
+      { store: "eBay", price: 139.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278028213297?_skw=Celta+Vigo+home+soccer+jersey&hash=item40bbc5dc31%3Ag%3AyokAAeSwNBlqFyCJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZxYedRhfZ5mqMpC7bO5mJwaR6hplQGFzTMDKNLTPgtbr8LMjqWP64%2FYuTU6QxGVBheU4taASUTe26%2BZ7Le83DmGyo8oApXlk1UeymOTeCyxxZYeDKtxqnsXFVVjRtl79023sKrtGJC6fLXUy9Kicy6xl2tVtgQ%2FbKk7w9dxQNcf23bLcR9SUl%2FakH0h%2B8IF78lqYBTkEZGz8f%2BXWSkSZMH59FVzgU2RcOrPyXuC1ofzlDg9bn6VVZfosE7m7XXFoCTvcEAPdGUzE124CA%2Bs2ntPDxzX8jpIr388WAITMUnpZoz0EGO93mSJ%2FfCnEn8D0k%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CELTA DE VIGO - ORIGINAL HOME Jersey 2026 - Hummel - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/yokAAeSwNBlqFyCJ/s-l225.jpg" },
     ],
   },
 {
@@ -24870,7 +24873,7 @@ const productsData = [
       { store: "FootStoreFR", price: 51.2, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780104-02-maillot-exterieur-borussia-dortmund-2025-26-gray", title: "Maillot Extérieur Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/7/8/780104-02.webp" },
       { store: "SportIsGoodFR", price: 52.52, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780104-02-maillot-exterieur-borussia-dortmund-2025-26-gray", title: "Maillot Extérieur Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/7/8/780104-02.webp" },
       { store: "PlanetFoot", price: 50.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-borussia-dortmund-exterieur-homme-2025-26-gris-jaune%3Fvariant%3D51494760415573", title: "Maillot Borussia Dortmund Extérieur Homme 2025/26 Gris-Jaune ( BVB )", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-dortmund-25-26-away-adulte-puma-planetfoot2.webp?v=1758815828" },
-      { store: "eBay", price: 49.99, shipping: 7.99, currency: "USD", url: "https://www.ebay.com/itm/278229551828?_skw=Borussia+Dortmund+away+soccer+jersey+2025+2026&hash=item40c7c60ad4%3Ag%3AnDMAAeSwJM5qZp08&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Borussia Dortmund Away 2025/2026 Soccer Fútbol Jersey Puma Men’s Size Large NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/nDMAAeSwJM5qZp08/s-l225.jpg" },
+      { store: "eBay", price: 70.0, shipping: 5.58, currency: "USD", url: "https://www.ebay.com/itm/358711307807?_skw=Borussia+Dortmund+away+soccer+jersey&hash=item5384dc2e1f%3Ag%3AQ-IAAeSw9AZqOcBw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025/26 Borussia Dortmund Neon Yellow/White Away Soccer Jersey Men’s Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Q-IAAeSw9AZqOcBw/s-l225.jpg" },
     ],
   },
 {
@@ -24923,7 +24926,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 68.26, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45229764644&a=3013769&m=65906", title: "Camiseta Local Fiorentina 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_38234yw-a00_violet_4.webp&feedId=89044&k=6010163df8657d091d7c3f7ad5528bb03cb50596" },
       { store: "SportIsGoodFR", price: 68.46, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F38234yw-a00-maillot-domicile-fiorentina-2025-26-violet", title: "Maillot Domicile Fiorentina 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_38234yw-a00_violet_4.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffiorentina-home-soccer-jersey-2025-26%3Fvariant%3D42557171335273", title: "Fiorentina Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/683023b1fa32793972f6d6abe5547380.png?v=1770196171" },
-      { store: "eBay", price: 139.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236800024594?_skw=Fiorentina+home+soccer+jersey+2025+2026&hash=item372261a012%3Ag%3A4sgAAeSwBi5p-jDk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYO9CZ98l6hKIBU%2FdefDA1v4Ga5MtFSzhG3QOrrrPK%2FXjq9jWQaxl2dWobDoUvN8drsdLaC6IGBWV3w1Pp9Z7OfaoxKfwU%2BiSvpiSp1aWH7BH9ZgxEV1rzLcBxJvLTmL5w3WyZ%2BehOkbI6Ks88GC0tc5US3Nc6tTqx6CYErM5%2ByfvqsDQBAXGYq3%2FBYZCa3HjbyxAIxYbElRKv0hS4RTfqfXd5AW8NJEjiPpScfrPAMFH5lCbzVRa5LGQZMCLXAl%2F6%2FWKdFxhoH40s6EHEvcuBOFYjzNFyAthKpu8XiIBXPESBKl34KzYMxA9aTrnCkIvg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ACF FIORENTINA - ORIGINAL HOME JERSEY - KAPPA 2026  - ASK FOR AVAILABLE SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/4sgAAeSwBi5p-jDk/s-l225.jpg" },
+      { store: "eBay", price: 139.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236800024594?_skw=Fiorentina+home+soccer+jersey&hash=item372261a012%3Ag%3A4sgAAeSwBi5p-jDk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYO9CZ98l6hKIBU%2FdefDA1v4Ga5MtFSzhG3QOrrrPK%2FXjq9jWQaxl2dWobDoUvN8drsdLaC6IGBWV3w1Pp9Z7OfaoxKfwU%2BiSvpiSp1aWH7BH9ZgxEV1rzLcBxJvLTmL5y8B8D2XjR2ej%2FhOLBa23hA8oeUcpiTDXVOs98%2BlawfOna3ZswGOHHAYN9jBgIWZlsXT7zw0krhOuf0RZnSDaKyqQTqBYw3wS%2FJxxzxznXPzR%2BgSA6zNpWat3SzsctuPA9RiaWT2o9BhRyDIC1aVcdvcXnGMqYi5QdCNutCJfI40UOg3dV1itaK7%2FU7DOsNAPU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ACF FIORENTINA - ORIGINAL HOME JERSEY - KAPPA 2026  - ASK FOR AVAILABLE SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/4sgAAeSwBi5p-jDk/s-l225.jpg" },
     ],
   },
 {
@@ -24989,7 +24992,7 @@ const productsData = [
       { store: "FootStoreFR", price: 61.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783021-01-maillot-domicile-girona-fc-2025-26-white", title: "Maillot Domicile Girona FC 2025/26", inStock: true, sizes: ["XS", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_783021-01_1-nw082525.webp" },
       { store: "SportIsGoodES", price: 61.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852308&a=3013769&m=65906", title: "Camiseta Local Girona FC 2025/26", inStock: true, sizes: ["XS", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_783021-01_1-nw082525.webp&feedId=89044&k=b41b07c9ceafa660d2ba7d5ead76cf8f48856495" },
       { store: "SportIsGoodFR", price: 61.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F783021-01-maillot-domicile-girona-fc-2025-26-white", title: "Maillot Domicile Girona FC 2025/26", inStock: true, sizes: ["XS", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_783021-01_1-nw082525.webp" },
-      { store: "eBay", price: 84.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376762128103?_skw=Girona+FC+home+soccer+jersey+2025+2026&hash=item57b8c5d6e7%3Ag%3Axj4AAeSwrEdpNkmA&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbG4SJKosMrEeHQLgv5qm35oPGM90HRzdWBnZCRdIKsOHLatc7drHrJrbzccjdiW0PtSv%2FDz5ghXFRDAQlLNGypJK6iIkbnQh2g%2B51c9RJ314uAEBIzpT3k2SYdo5%2F1PSdOqDdo0AQyaGQIUL7rNuM3DJKPJAKkjBzXKTRcjcJbjUPRgTMonV2EQXfSaSwYsBPFy85DSIWvJQ73F%2Fm3bQ1%2FoLfk9boS%2Fv8tRGM3onFYo%2BeplZOxXVkA9QbEfrNLdZL4BkUjrwMFGpj6mv4dfvK2xM0qzJRqS9OzFMqPnqoZsYhsPFyB0T3ppqmbNt25tfI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Girona FC Home Jersey 2025/26 PUMA Replica – White/Red – Size L Licensed Product", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/xj4AAeSwrEdpNkmA/s-l225.jpg" },
+      { store: "eBay", price: 43.24, shipping: 18.02, currency: "USD", url: "https://www.ebay.com/itm/800431375234?_skw=Girona+FC+home+soccer+jersey&hash=itemba5d6d8382%3Ag%3AJz4AAeSw7dlqav4o&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Girona FC 25/26 Home Puma Drycell 783021 01 Soccer Football Jersey Men Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Jz4AAeSw7dlqav4o/s-l225.jpg" },
     ],
   },
 {
@@ -25008,7 +25011,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 74.2, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fp2gacx0807-maillot-exterieur-lazio-rome-2025-26-off-white", title: "Maillot Extérieur Lazio Rome 2025/26", inStock: false, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p2gacx0807_off-white_1.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flazio-away-soccer-jersey-2025-26%3Fvariant%3D42557137191017", title: "Lazio Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/7d453a21fdd69945551038a62d3aafa4.png?v=1758073703" },
       { store: "DeporteOutletES", price: 32.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44074345520&a=3013769&m=19598", title: "S.S. Lazio Mizuno Hombre Camiseta de segunda equipación P2GABX08-43", inStock: true, sizes: ["L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F80%2Fce%2F80%2FP2GABX08-43-1_600x600.jpg&feedId=99907&k=6ec3a09047ad32bfe99cede4d003516f02fb4ab4" },
-      { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728949531?_skw=Lazio+away+soccer+jersey+2025+2026&hash=item371e251b1b%3Ag%3ANtoAAeSwdHtpb33H&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbgEQiuTSC6Fmm%2BHa3jMy7YRZd0ceKlS2qx8SRoRiPTDvV23oGMhqZo6C3BIhwVLR%2BSSvor%2BYStqyt6soj%2BeVfX9ZF9hSivvPq5MQR4WNXwJhJBmboqUs8GHDorH%2ByQmXi95AmEFZ8rMbGbo%2BXS%2B9lQNK%2FltnM6p6g7LJA7HPJN6Yz6%2BznL5yFDOuIyYIEDf3%2BTasMfMCEph7%2BsUB1kfQjAx5ZQkB3LJ0aTBHxLUoIIFeMKSiiNYhTALc525TLOsTbG0JPUFilb9MgU%2BaxtcT%2BrNY6WMIvOC%2BpsmBSp%2FCtFSxBdIcvYCsuspbuBX7mszpg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SS LAZIO - ORIGINAL WHITE AWAY Jersey 2026 - Mizuno - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/NtoAAeSwdHtpb33H/s-l225.jpg" },
+      { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728949531?_skw=Lazio+away+soccer+jersey&hash=item371e251b1b%3Ag%3ANtoAAeSwdHtpb33H&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbgEQiuTSC6Fmm%2BHa3jMy7YRZd0ceKlS2qx8SRoRiPTDvV23oGMhqZo6C3BIhwVLR%2BSSvor%2BYStqyt6soj%2BeVfX9ZF9hSivvPq5MQR4WNXwJhJBmboqUs8GHDorH%2ByQmXiREvCRkIbVNAapiGsgJrfjRolYHM7U46QUdXF6kSnKPOqtrnGbULbGuU1qTDkac%2Fn0DwqsuKwR4S65nVzsXN2qe%2BZXuIljn37fW4SRfHBskg1ep6%2FjOsot0dVcOMVssvwBgYb8FXkvksPPtaUQKnqL%2BavPbWppKHqxgeIKlrWEJQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SS LAZIO - ORIGINAL WHITE AWAY Jersey 2026 - Mizuno - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/NtoAAeSwdHtpb33H/s-l225.jpg" },
     ],
   },
 {
@@ -25043,7 +25046,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780338-01-maillot-domicile-manchester-city-2025-26-blue", title: "Maillot Domicile Manchester City 2025/26", inStock: true, sizes: ["M", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780338-01_1.webp" },
       { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-city-domicile-homme-2025-26-bleu%3Fvariant%3D50782926963029", title: "Maillot Manchester City Domicile Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/Maillot-Manchester-City-Domicile-homme-2025-2026-Bleu2.jpg?v=1747316328" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmanchester-city-home-soccer-jersey-2025-26-blue%3Fvariant%3D42557241720937", title: "Manchester City Home Soccer Jersey 2025/26 Blue", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Manchester_City_Home_Soccer_Jersey_2025_26_Blue-1.png?v=1760175487" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336728341808?_skw=Manchester+City+home+soccer+jersey+2025+2026&hash=item4e6692bd30%3Ag%3A0fcAAeSwdqlqc6P3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester City Puma Replica Soccer Football Jersey Blue Home 2025-26 XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/0fcAAeSwdqlqc6P3/s-l225.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336728345857?_skw=Manchester+City+home+soccer+jersey&hash=item4e6692cd01%3Ag%3APYsAAeSwf4Jqc6Ui&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester City Puma Replica Soccer Football Jersey Blue Home 2025-26 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/PYsAAeSwf4Jqc6Ui/s-l225.jpg" },
     ],
   },
 {
@@ -25126,7 +25129,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 69.51, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42736986224&a=3013769&m=65912", title: "Camiseta de visitante OGC Nice 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_08_kappa_311q2cw-s03_0.webp&feedId=89032&k=3dc8cbfbfd12abd5ded0bf27510a78f2cfcd77f3" },
       { store: "FootStoreFR", price: 68.01, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q2cw-s03-maillot-exterieur-ogc-nice-2025-26-white-vanilla-green-artichoke-orange-coral-sponsor", title: "Maillot Extérieur OGC Nice 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_08_kappa_311q2cw-s03_0.webp" },
-      { store: "eBay", price: 28.99, shipping: 2.99, currency: "USD", url: "https://www.ebay.com/itm/358826230219?_skw=OGC+Nice+away+soccer+jersey+2025+2026&hash=item538bb5c1cb%3Ag%3AgvMAAeSw2MxqX6Cc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY OGC Nice Away 2025-26, football jersey, men top", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/gvMAAeSw2MxqX6Cc/s-l225.jpg" },
+      { store: "eBay", price: 28.99, shipping: 2.99, currency: "USD", url: "https://www.ebay.com/itm/358826230219?_skw=OGC+Nice+away+soccer+jersey&hash=item538bb5c1cb%3Ag%3AgvMAAeSw2MxqX6Cc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY OGC Nice Away 2025-26, football jersey, men top", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/gvMAAeSw2MxqX6Cc/s-l225.jpg" },
     ],
   },
 {
@@ -25175,7 +25178,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 52.2, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852429&a=3013769&m=65906", title: "Maillot Exterior RB Leipzig 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779881-05_1.webp&feedId=89044&k=fabe17880934f07955a2a8df16b6389232486016" },
       { store: "FootStoreFR", price: 51.2, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779881-05-maillot-exterieur-rb-leipzig-2025-26-blue", title: "Maillot Extérieur RB Leipzig 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779881-05_1.webp" },
       { store: "SportIsGoodFR", price: 52.52, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779881-05-maillot-exterieur-rb-leipzig-2025-26-blue", title: "Maillot Extérieur RB Leipzig 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779881-05_1.webp" },
-      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327280005552?_skw=RB+Leipzig+away+soccer+jersey+2025+2026&hash=item4c336891b0%3Ag%3AQPUAAeSw-%7EpqZri6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma RB Leipzig 2025/26 Replica Away Jersey Sz L Bundesliga", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/QPUAAeSw-~pqZri6/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327280005552?_skw=RB+Leipzig+away+soccer+jersey&hash=item4c336891b0%3Ag%3AQPUAAeSw-%7EpqZri6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma RB Leipzig 2025/26 Replica Away Jersey Sz L Bundesliga", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/QPUAAeSw-~pqZri6/s-l225.jpg" },
       { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-redbull-leipzig-exterieur-homme-2025-26-bleu%3Fvariant%3D50939910193493", title: "Maillot RedBull Leipzig Extérieur Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-rb-leipzig-2025-26-puma-homme2.webp?v=1754921302" },
     ],
   },
@@ -25194,7 +25197,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 52.2, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852345&a=3013769&m=65906", title: "Camiseta Local RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779876-01_1.webp&feedId=89044&k=2e0c452fc3ed4e43976d93f27d531e96579c5e18" },
       { store: "SportIsGoodFR", price: 52.52, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779876-01-maillot-domicile-rb-leipzig-2025-26-white", title: "Maillot Domicile RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779876-01_1.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Frb-leipzig-home-soccer-jersey-2025-26%3Fvariant%3D42594270707817", title: "RB Leipzig Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RB_Leipzig_Home_Soccer_Jersey_202526_2.png?v=1759310801" },
-      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117346444203?_skw=RB+Leipzig+home+soccer+jersey+2025+2026&hash=item1b5264a3ab%3Ag%3AADgAAeSw3T9qdkVB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025-26 RB Leipzig Stadium Home Soccer Jersey - White - Men’s Size M NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ADgAAeSw3T9qdkVB/s-l225.jpg" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117346444203?_skw=RB+Leipzig+home+soccer+jersey&hash=item1b5264a3ab%3Ag%3AADgAAeSw3T9qdkVB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025-26 RB Leipzig Stadium Home Soccer Jersey - White - Men’s Size M NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ADgAAeSw3T9qdkVB/s-l225.jpg" },
       { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-redbull-leipzig-domicile-homme-2025-26-blanc%3Fvariant%3D50981180670293", title: "Maillot RedBull Leipzig Domicile Homme 2025/26 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-rb-leipzig-25-26-puma-planetfoot2.webp?v=1755271718" },
     ],
   },
@@ -25229,7 +25232,7 @@ const productsData = [
       { store: "FootStoreES", price: 71.21, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41740155672&a=3013769&m=65912", title: "Camiseta de visitante del Tottenham 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4609-011-phsfh001.webp&feedId=89032&k=06480cd00cc291cf85b6e7d63648914553c48e34" },
       { store: "FootStoreFR", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4609-011-maillot-exterieur-tottenham-2025-26-black-lt-iron-ore", title: "Maillot Extérieur Tottenham 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hj4609-011-phsfh001.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ftottenham-hotspur-away-soccer-jersey-2025-26%3Fvariant%3D42591286394985", title: "Tottenham Hotspur Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ebd210e7a7cc6462770475d2fe2e4170.png?v=1759222913" },
-      { store: "eBay", price: 89.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336508087430?_skw=Tottenham+Hotspur+away+soccer+jersey+2025+2026&hash=item4e5971ec86%3Ag%3ASDQAAeSwRUZpxaRQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur F.C. 2025/26 Match Away Men's Jersey Black Size: S NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/SDQAAeSwRUZpxaRQ/s-l225.jpg" },
+      { store: "eBay", price: 80.1, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/336508087430?_skw=Tottenham+Hotspur+away+soccer+jersey&hash=item4e5971ec86%3Ag%3ASDQAAeSwRUZpxaRQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur F.C. 2025/26 Match Away Men's Jersey Black Size: S NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/SDQAAeSwRUZpxaRQ/s-l225.jpg" },
     ],
   },
 {
@@ -25245,7 +25248,7 @@ const productsData = [
       { store: "FootStoreES", price: 71.21, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41576608402&a=3013769&m=65912", title: "Camisa local del Tottenham 2025/26", inStock: true, sizes: ["XS", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj4598-101_3.webp&feedId=89032&k=960792aad45daed2191faa3ab2bf46a3f821c4bf" },
       { store: "FootStoreFR", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4598-101-maillot-domicile-tottenham-2025-26-white-lt-iron-ore-binary-blue", title: "Maillot Domicile Tottenham 2025/26", inStock: true, sizes: ["XS", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4598-101_3.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ftottenham-hotspur-home-soccer-jersey-2025-26-white%3Fvariant%3D42557249618025", title: "Tottenham Hotspur Home Soccer Jersey 2025/26 White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/f12ae2910c4b8ebc64d3ff5a394b3048.png?v=1758074547" },
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127778817396?_skw=Tottenham+Hotspur+home+soccer+jersey+2025+2026&hash=item1dc0360574%3Ag%3AFdsAAeSwq4FpyTcO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Tottenham Hotspur 2026 Home Jersey XL Football Shirt Soccer Men's", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/FdsAAeSwq4FpyTcO/s-l225.jpg" },
+      { store: "eBay", price: 61.25, shipping: 18.01, currency: "USD", url: "https://www.ebay.com/itm/377021424388?_skw=Tottenham+Hotspur+home+soccer+jersey&hash=item57c83a6304%3Ag%3Av8QAAeSwu6hpr0lk&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYY%2Bc13pJ4W5sB3DOD%2FcogFTZhV4brXGXkf8iG8qYtiVIByQI6reqrOcKc5laAz1a%2BEF0TnpsU803Rn%2BLm%2BvTzbhJ66VqXLsJbDH7JHT9nvwsKrDitaEtdHt9ALU1T59QAgXMKKHFEo3e6LhPCxDznQ1b1GdtvNguYC51xvUh5PJosq8XBJKgGCLYb0E%2FXWjyq409%2F2wG1OZXaLX4M3usywR5FTIFjucnsN%2B%2FCTC62XM6Mx82pv9Na%2FV7WYT9%2FM6fKSJtz%2B3vGmxzLNskgdSiZDvAAF%2Fcg8MseAjNkxhwPFBkSgjjEqaL4%2FWRq4JauMl%2F0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Tottenham Hotspur Nike 2025/26 Home Jersey White Football Shirts Mens XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/v8QAAeSwu6hpr0lk/s-l225.jpg" },
     ],
   },
 {
@@ -25260,7 +25263,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 103.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42293267895&a=3013769&m=65912", title: "Camiseta Third Auténtica Tottenham 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_09_nike_hm3199-741_0.webp&feedId=89032&k=0cbed5a0bd34e375c5755f8e25c04a7be64e7b3b" },
       { store: "FootStoreFR", price: 68.04, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3207-741-maillot-third-tottenham-2025-26-dynamic-yellow-blue-void-blue-void", title: "Maillot Third Tottenham 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_09_nike_hm3207-741_0.webp" },
-      { store: "eBay", price: 64.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366575207740?_skw=Tottenham+Hotspur+third+soccer+jersey+2025+2026&hash=item555995c53c%3Ag%3A8w8AAeSwBDpqa6sd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur F.C. 2025/26 Third Staf Jersey Mens Size Large HM3199-741", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/8w8AAeSwBDpqa6sd/s-l225.jpg" },
+      { store: "eBay", price: 64.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366575207740?_skw=Tottenham+Hotspur+third+soccer+jersey&hash=item555995c53c%3Ag%3A8w8AAeSwBDpqa6sd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur F.C. 2025/26 Third Staf Jersey Mens Size Large HM3199-741", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/8w8AAeSwBDpqa6sd/s-l225.jpg" },
     ],
   },
 {
@@ -25366,7 +25369,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 68.04, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4587-615-maillot-domicile-atletico-madrid-2025-26-sport-red-white-hyper-royal", title: "Maillot Domicile Atlético Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hj4587-615-phsfh001.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fatletico-madrid-home-soccer-jersey-2025-26-red-white%3Fvariant%3D42557256925289", title: "Atletico Madrid Home Soccer Jersey 2025/26 Red&White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/1684ad537f38092e3a36021557d4653e.png?v=1760671048" },
-      { store: "eBay", price: 70.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407120416196?_skw=Atl%C3%A9tico+Madrid+home+soccer+jersey+2025+2026&hash=item5eca448dc4%3Ag%3AkmgAAeSwgMtqckG%7E&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGYmeEHHEL4nTneJJRuP1T9BHdJubE4OR%2BvqPAwk16URYAo2xxNOu%2FAUYXvx9YHZKTHioa4Mhq6vThM9HYp%2F0oQSnMunOUTcIOZ5ZLALGwOKDODeSTbBixcKBjBU9OB0K1GRaaFeQu2Jpr%2Fxp1TzoEtznBDAHfK8MIwjDcP%2F79esDG8tMCyB8N53dVpjEwHb1GW4uE0rtxx35G8h6XVihSCt9oJtvu4KcBUxVEZ%2FVnpNUC8Rku9s3oE97BDayoxPQvTSOZ8dAWM5Jflk%2Bt1SYwxGa2WKI8wWnSb8mgS%2FMVqebtGWgPuazrNkBf37q0f2XOnrHnjL%2BYqIW8vw4c8CmUgZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adult Atletico Madrid 2026 Home Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/kmgAAeSwgMtqckG~/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/287419054264?_skw=Atl%C3%A9tico+Madrid+home+soccer+jersey&hash=item42eb82b8b8%3Ag%3AN00AAeSw%7E4xqPav-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "La Liga Atletico Madrid Atleti Home 25/26 Jersey Various Sizes NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/N00AAeSw~4xqPav-/s-l225.jpg" },
       { store: "FootStoreES", price: 69.4, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44992247869&a=3013769&m=65912", title: "Camisa Local Atlético de Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4587-615-phsfh001.webp&feedId=89032&k=27421ca298805a6bbd04831be0342b30946349a7" },
     ],
   },
@@ -25396,7 +25399,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 105.78, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4545-439-maillot-domicile-authentique-inter-milan-2025-26-lyon-blue-black-chlorine-blue", title: "Maillot Domicile Authentique Inter Milan 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj4545-439-phsfh001.jpg" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fthuram-9-inter-milan-home-soccer-jersey-2025-26%3Fvariant%3D42618825146473", title: "THURAM #9 Inter Milan Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/INTER_MILAN_STARTS_6.png?v=1760344014" },
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198564918374?_skw=Inter+Milan+home+soccer+jersey+2025+2026&hash=item2e3b643466%3Ag%3AQlwAAeSwYOtp9lIm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men’s Nike Inter Milan 2025/26  Home Soccer Jersey Dri-Fit HJ4545-439 Sz Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/QlwAAeSwYOtp9lIm/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358752839839?_skw=Inter+Milan+home+soccer+jersey&hash=item538755e89f%3Ag%3A4osAAeSw82lqSDvh&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGatmp2uAEDg26t5p3wSP2NKmd%2BYCHH1VMhv04WRGfLIGk6PvUERA7J6FvNT6df2mRIZD0zIODo9tPKku1y7ehEFMFQczcoCNFwCvwahnfqIjfzVnXdzoIqo5fxIzC90ZVgcFhGHlPBY8S4cxaSO8Jlpxv2lqpgbGh1WWw7x9xgY608z7vHwktA3mh30rqkpqKFEaXFD7M8gPZQwdVJaXT080w2%2Frq%2FISLSWcMj0hEfVnqQafIyGRCl%2Fl%2FzuFHbRXLK0ODpoSfYlxq2VsJ9v%2FPj%2FLDCiwganiQdBLblVtVMdDGhuaCWwmegpKz8URyV1y0k%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Milan Nike Soccer Replica Jersey 25/26 Stadium Home Men's Size S BRAND NEW", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/4osAAeSw82lqSDvh/s-l225.jpg" },
     ],
   },
 {
@@ -25440,7 +25443,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 47.18, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F600096850001-maillot-domicile-club-atletico-osasuna-2025-26-rouge", title: "Maillot domicile Club Atlético Osasuna 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_600096850001_rouge_1.webp" },
       { store: "SportIsGoodFR", price: 48.57, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F600096850001-maillot-domicile-club-atletico-osasuna-2025-26-rouge", title: "Maillot domicile Club Atlético Osasuna 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_600096850001_rouge_1.webp" },
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327186678092?_skw=Osasuna+home+soccer+jersey+2025+2026&hash=item4c2dd8814c%3Ag%3A4yoAAeSw779qG1tp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Macron 2025-26 Osasuna Men's Authentic Home Soccer Jersey XL $119", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4yoAAeSw779qG1tp/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327186678092?_skw=Osasuna+home+soccer+jersey&hash=item4c2dd8814c%3Ag%3A4yoAAeSw779qG1tp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Macron 2025-26 Osasuna Men's Authentic Home Soccer Jersey XL $119", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4yoAAeSw779qG1tp/s-l225.jpg" },
     ],
   },
 {
@@ -25456,7 +25459,7 @@ const productsData = [
       { store: "PlanetFoot", price: 50.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-eintracht-frankfurt-third-homme-2025-26-gris%3Fvariant%3D51325538926933", title: "Maillot Eintracht Frankfurt Third Homme 2025/26 Gris", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-eintracht-frankfurt-25-26-adulte-adidas-planetfoot1.avif?v=1756552365" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45624338266&a=3013769&m=77008", title: "Eintracht Frankfurt 25/26 Third Jersey", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc85e6147f5874aad8ee3310e36782cc7_9366%2FEintracht_Frankfurt_25-26_Third_Jersey_Multicolor_KK6444_21_model.jpg&feedId=92152&k=411e70c7a55811a89a67a7509fe657c22722b36d" },
       { store: "AdidasPT", price: 80.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45624340913&a=3013769&m=77026", title: "Eintracht Frankfurt 25/26 Third Jersey", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc85e6147f5874aad8ee3310e36782cc7_9366%2FEintracht_Frankfurt_25-26_Third_Jersey_Multicolour_KK6444_21_model.jpg&feedId=92150&k=77dd574607c2b34b0c970fdc14b2139094bcce89" },
-      { store: "eBay", price: 44.99, shipping: 13.0, currency: "USD", url: "https://www.ebay.com/itm/377156867000?_skw=Eintracht+Frankfurt+third+soccer+jersey+2025+2026&hash=item57d04d13b8%3Ag%3AdzYAAeSwzdhp8HRM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Burkardt Eintracht Frankfurt Third football shirt 2025/26 Adidas Young M 11-12Y", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/dzYAAeSwzdhp8HRM/s-l225.jpg" },
+      { store: "eBay", price: 44.99, shipping: 13.0, currency: "USD", url: "https://www.ebay.com/itm/377156867000?_skw=Eintracht+Frankfurt+third+soccer+jersey&hash=item57d04d13b8%3Ag%3AdzYAAeSwzdhp8HRM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Burkardt Eintracht Frankfurt Third football shirt 2025/26 Adidas Young M 11-12Y", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/dzYAAeSwzdhp8HRM/s-l225.jpg" },
     ],
   },
 {
@@ -25470,7 +25473,7 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-olympique-lyonnais-domicile-homme-2026-27-blanc-kx0705%3Fvariant%3D54365469868373", title: "Maillot Olympique Lyonnais Domicile Homme 2026/27 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_9020-1.jpg?v=1783947756" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336670827236?_skw=Olympique+Lyonnais+home+soccer+jersey&hash=item4e632522e4%3Ag%3A9uAAAeSwoZhqSLFr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Olympique Lyonnais Home 26-27", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/9uAAAeSwoZhqSLFr/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/336670827236?_skw=Olympique+Lyonnais+home+soccer+jersey&hash=item4e632522e4%3Ag%3A9uAAAeSwoZhqSLFr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Olympique Lyonnais Home 26-27", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/9uAAAeSwoZhqSLFr/s-l225.jpg" },
     ],
   },
 {
@@ -25498,7 +25501,7 @@ const productsData = [
     brand: "puma",
     offers: [
       { store: "PlanetFoot", price: 55.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-city-third-homme-2025-26-gris%3Fvariant%3D51280999285077", title: "Maillot Manchester City Third Homme 2025/26 Gris", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-manchester-city-25-26-adulte-puma-planetfoot6.webp?v=1756468740" },
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206315383813?_skw=Manchester+City+third+soccer+jersey+2025+2026&hash=item30095aec05%3Ag%3AyRQAAeSwOzVqHhrT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Manchester City FC 2025/2026 Third Jersey Men’s Size Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/yRQAAeSwOzVqHhrT/s-l225.jpg" },
+      { store: "eBay", price: 70.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127971726763?_skw=Manchester+City+third+soccer+jersey&hash=item1dcbb595ab%3Ag%3AfNUAAeSwtWFqVGO2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester City 2025/26 Third Jersey Puma Authentic Mens Size XXL NWT Etihad", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/fNUAAeSwtWFqVGO2/s-l225.jpg" },
       { store: "FootStoreES", price: 57.06, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395578695&a=3013769&m=65912", title: "Maillot Third Manchester City 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_puma_780362-03_1.webp&feedId=89032&k=227bf2a1a5030450dc0fe5f3c501ca129e6d5f13" },
       { store: "FootStoreFR", price: 55.66, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780362-03-maillot-third-manchester-city-2025-26-blue", title: "Maillot Third Manchester City 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_puma_780362-03_1.webp" },
     ],
@@ -25514,7 +25517,7 @@ const productsData = [
     brand: "mizuno",
     offers: [
       { store: "PlanetFoot", price: 103.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000090455%3Fvariant%3D54410918265173", title: "AWAY JERSEY MONACO ASM Grape P2GADX77", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/51251AE8-41AB-4A26-979F-39B2C87B4241.jpg?v=1785222854" },
-      { store: "eBay", price: 139.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236841204460?_skw=AS+Monaco+away+soccer+jersey+2025+2026&hash=item3724d5faec%3Ag%3A3wYAAeSw4vpqFyav&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGa7OrcVEeStw9HizGgATcvaIA4l3krKRb%2FUChcwIzD%2Fg%2BX3LxA%2Bh5yhvYHwmkndqYHscW%2FpYqOMByokpeEmyE4D7PO%2BfFxfrTk0qErl0ASWRH%2FCQRLldPsmFWz2XdFa5xAwm5aR9B2PrCKX5P5mjnUEwE5q7zKU5O6JoP5eWUg6OC2La5lM%2BZSZbtAq5A1m4uZJ%2BfGXSwuljwUZlv0ofZCEazsCnznDiM4P%2BVhjPxH%2B1wm2qprAG%2Fy1pIGE0m%2FIE99cZs%2FLPBWDX7xdyZtknJT79zxwMS%2FiaWWdmerqmkb3xzBsclw93BIJADVfqUqxDtI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "A S MONACO F C - ORIGINAL AWAY Third Jersey 2026 - Mizuno - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/3wYAAeSw4vpqFyav/s-l225.jpg" },
+      { store: "eBay", price: 139.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236841204460?_skw=AS+Monaco+away+soccer+jersey&hash=item3724d5faec%3Ag%3A3wYAAeSw4vpqFyav&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "A S MONACO F C - ORIGINAL AWAY Third Jersey 2026 - Mizuno - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/3wYAAeSw4vpqFyav/s-l225.jpg" },
     ],
   },
 {
@@ -25529,7 +25532,7 @@ const productsData = [
     offers: [
       { store: "PlanetFoot", price: 103.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089473%3Fvariant%3D54228780122453", title: "HOME JERSEY MONACO P2GADX7559", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8947-1.jpg?v=1782473238" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fas-monaco-fc-home-soccer-jersey-2025_26%3Fvariant%3D42627591241833", title: "AS Monaco FC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AS_Monaco_FC_Home_Soccer_Jersey_2025_26_2.png?v=1760669316" },
-      { store: "eBay", price: 75.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800033003497?_skw=AS+Monaco+home+soccer+jersey&hash=itemba45aed7e9%3Ag%3ADtMAAeSwjiVqCkYH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Eric Dier AS Monaco 2025/26 Home Soccer Jersey Mizuno Size Medium #3 Dier", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/DtMAAeSwjiVqCkYH/s-l225.jpg" },
+      { store: "eBay", price: 99.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267756953147?_skw=AS+Monaco+home+soccer+jersey&hash=item3e578ede3b%3Ag%3AaIkAAeSwPNZo10u-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT AS Monaco 25/26 Home Jersey “Pogba 8” (Large)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/aIkAAeSwPNZo10u-/s-l225.jpg" },
     ],
   },
 {
@@ -25564,7 +25567,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42159075968&a=3013769&m=77008", title: "Camiseta tercera equipación Aston Villa FC 25/26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F292ee1f4a2cb429d9deceefa87087a2c_9366%2FCamiseta_tercera_equipacion_Aston_Villa_FC_25-26_Blanco_KA0858_21_model.jpg&feedId=92152&k=56b4e25020ed75b067bac49b91824134eb78c5df" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42159076840&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 do Aston Villa FC", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F292ee1f4a2cb429d9deceefa87087a2c_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Aston_Villa_FC_Branco_KA0858_21_model.jpg&feedId=92150&k=20cee57455fa1b1e600bd53896cca69ac437f59a" },
-      { store: "eBay", price: 59.95, shipping: 5.58, currency: "USD", url: "https://www.ebay.com/itm/397926506403?_skw=Aston+Villa+third+soccer+jersey+2025+2026&hash=item5ca6449fa3%3Ag%3AX1kAAeSwAU9p%7Eg52&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa FC 2025/26 Third Soccer Jersey KA0859 Men's Size S $100", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/X1kAAeSwAU9p~g52/s-l225.jpg" },
+      { store: "eBay", price: 59.95, shipping: 5.58, currency: "USD", url: "https://www.ebay.com/itm/397926506403?_skw=Aston+Villa+third+soccer+jersey&hash=item5ca6449fa3%3Ag%3AX1kAAeSwAU9p%7Eg52&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa FC 2025/26 Third Soccer Jersey KA0859 Men's Size S $100", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/X1kAAeSwAU9p~g52/s-l225.jpg" },
     ],
   },
 {
@@ -25655,7 +25658,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41972279427&a=3013769&m=77008", title: "Camiseta segunda equipación Newcastle United FC 25/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F44198017dc7c49d9b0b3cd628b509ea1_9366%2FCamiseta_segunda_equipacion_Newcastle_United_FC_25-26_Verde_JJ2245_21_model.jpg&feedId=92152&k=a707cf3312345223aa293b516644ae112570730d" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41972281941&a=3013769&m=77026", title: "Camisola Newcastle United FC 25/26 Away", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F44198017dc7c49d9b0b3cd628b509ea1_9366%2FCamisola_Newcastle_United_FC_25-26_Away_Verde_JJ2245_21_model.jpg&feedId=92150&k=cab97344f019ef7f8949c92f8054f2b4d6e82952" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnewcastle-united-away-soccer-jersey-2025-26%3Fvariant%3D42557147840617", title: "Newcastle United Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/6467746e639e781d731e9f899e4f39dd.png?v=1758073776" },
-      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168574278981?_skw=Newcastle+United+away+soccer+jersey&hash=item273fcf5d45%3Ag%3AsmAAAeSwKjRqTwu1&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaQkZT3h0Wtw0IDbQ%2BQsvcotqPR8Y5xSv6hUbKhpKKbuRy4wwkY8SleDht8m9yk3OJkbm3yJt75Mn5fp2tNsPxA2Sh5ZTa1lnydDGPpRciaMlf%2F6KbiCEqIHTArV%2FmZ9FrPR1%2FQnFhwU1YISRMIeEOeGHLCrYLD45rgcL9EkWrAIzpLa%2FH7rYhFmF%2FS7sIEQ55cH3gWnF6WrUONbJeMmrrCCkTHi2IhU%2FSRY5ZwESBVXHQbUXH1kHYRa6oqHkqOkWZN4q2e1K40%2BYR1%2F7SJKokGk%2FGoQsnvxGrya1LyPWT5kikfMR6PI2NJ56O64kJr%2Bps%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEWCASTLE UNITED FC 25/26 AWAY JERSEY Men’s 3XL", inStock: false, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/smAAAeSwKjRqTwu1/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/227287637885?_skw=Newcastle+United+away+soccer+jersey&hash=item34eb661f7d%3Ag%3Az-4AAeSwM9xp0bwJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Newcastle United FC 25/26 Away Jersey Authentic Soccer Green NWT $150 S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/z-4AAeSwM9xp0bwJ/s-l225.jpg" },
     ],
   },
 {
@@ -25670,7 +25673,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41472821421&a=3013769&m=77008", title: "Camiseta primera equipación Newcastle United FC 25/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3cc900ae3bc9495096d68eb971566998_9366%2FCamiseta_primera_equipacion_Newcastle_United_FC_25-26_Negro_JI7382_21_model.jpg&feedId=92152&k=d666eac47e7bf7a4556447ad0532416421b75d44" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnewcastle-united-home-soccer-jersey-2025-26-black-white%3Fvariant%3D42557261152361", title: "Newcastle United Home Soccer Jersey 2025/26 Black&White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/a95b5f92d6c25b93bbee24c8337015ab.png?v=1758074615" },
-      { store: "eBay", price: 89.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377141079833?_skw=Newcastle+United+home+soccer+jersey+2025+2026&hash=item57cf5c2f19%3Ag%3AONoAAeSwQIpp7MRS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Newcastle United 2025/26 Home Authentic Jersey Men’s Medium JI7391 NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ONoAAeSwQIpp7MRS/s-l225.jpg" },
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287517381667?_skw=Newcastle+United+home+soccer+jersey&hash=item42f15f1423%3Ag%3Ao0YAAeSwNOFqGdx5&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGby8Lt061nbFmXkbjjI2peAPBKtmJxuBn6T7fDGuikjr%2Bn5bR3fupegStY8JrtgWEuqUNdr9HG0v1ARjB%2BaTEEjcJ07u05BT7R90waziznQC3BwswT7Y8OV3LTNR8oeuJOg3rcHpi7vHIs4Jib1AbciU1JvTRlWmvclGvzZdWXTXbEUtDhxqV8YdIliy1YYEMeCSJFfJ7Fw4vZtW%2FLYp%2BYUaVDKRjsIIqP7RRwKfEve2%2FKo7KrYiQ3VkxV%2Bps%2BxOy7QCieWq%2FCdRECJpSPL4DFckzqdkNwd4UGaRq40fORc5dXFwC4t5PaDoFO1EU8zWBU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Newcastle United FC 25/26 Home Authentic Soccer Jersey JI7391 Size XS", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/o0YAAeSwNOFqGdx5/s-l225.jpg" },
     ],
   },
 {
@@ -25685,7 +25688,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41734271527&a=3013769&m=77008", title: "Camiseta tercera equipación Newcastle United FC 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6799c7a3f75c4d73a8cf6905b298a198_9366%2FCamiseta_tercera_equipacion_Newcastle_United_FC_25-26_Azul_JJ2243_21_model.jpg&feedId=92152&k=96305d6a4b96edbc372b37534f36c678e8ae834f" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41734281659&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 do Newcastle United FC", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6799c7a3f75c4d73a8cf6905b298a198_9366%2FCamisola_do_Terceiro_Equipamento_25-26_do_Newcastle_United_FC_Azul_JJ2243_21_model.jpg&feedId=92150&k=dd8bc5262cb5dba9a69d233e4ac406230ddad8aa" },
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157829353433?_skw=Newcastle+United+third+soccer+jersey+2025+2026&hash=item24bf5ccfd9%3Ag%3AMn8AAeSw7T5p3Cwu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Newcastle United Men's Third Soccer Jersey Kit 2025/26 Size L NWT Navy", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Mn8AAeSw7T5p3Cwu/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/358876145075?_skw=Newcastle+United+third+soccer+jersey&hash=item538eaf65b3%3Ag%3A5BYAAeSwPqFpqlF%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Newcastle United NUFC 25/26 Third Fans Version Soccer Jersey, SMALL", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/5BYAAeSwPqFpqlF~/s-l225.jpg" },
     ],
   },
 {
@@ -25700,7 +25703,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42247530590&a=3013769&m=77008", title: "Camiseta segunda equipación AS Roma 25/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F57231942833a415eb1792320b62b6984_9366%2FCamiseta_segunda_equipacion_AS_Roma_25-26_Naranja_JJ4187_21_model.jpg&feedId=92152&k=a52cc093b05731bdf9a472a8bec080720a5e5fac" },
       { store: "AdidasPT", price: 40.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42247534835&a=3013769&m=77026", title: "Camisola Alternativa 25/26 da AS Roma", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F57231942833a415eb1792320b62b6984_9366%2FCamisola_Alternativa_25-26_da_AS_Roma_Laranja_JJ4187_21_model.jpg&feedId=92150&k=7cf2576ad45f69b17c8ca31dc8c28617c2e0a344" },
-      { store: "eBay", price: 28.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178380346882?_skw=AS+Roma+away+soccer+jersey+2025+2026&hash=item29884c1602%3Ag%3AFC4AAeSwgGdqdMvG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's adidas Orange AS Roma 2025/26 Away Jersey Mens S NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/FC4AAeSwgGdqdMvG/s-l225.jpg" },
+      { store: "eBay", price: 28.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178380346882?_skw=AS+Roma+away+soccer+jersey&hash=item29884c1602%3Ag%3AFC4AAeSwgGdqdMvG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's adidas Orange AS Roma 2025/26 Away Jersey Mens S NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/FC4AAeSwgGdqdMvG/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Froma-away-soccer-jersey-2025-26%3Fvariant%3D42621087121513", title: "Roma Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Roma_Away_Soccer_Jersey_202526_1.png?v=1767930660" },
     ],
   },
@@ -25716,7 +25719,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44872367143&a=3013769&m=77008", title: "AS Roma 25/26 Home Jersey", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc4a377ae720f44b7abb944ab8f445c11_9366%2FAS_Roma_25-26_Home_Jersey_Burgundy_JX7635_21_model.jpg&feedId=92152&k=1d23b97b722a493eb91973f73991876ba091378b" },
       { store: "AdidasPT", price: 80.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44872358513&a=3013769&m=77026", title: "AS Roma 25/26 Home Jersey", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc4a377ae720f44b7abb944ab8f445c11_9366%2FAS_Roma_25-26_Home_Jersey_Bordo_JX7635_21_model.jpg&feedId=92150&k=7f0d538dceaac04edbe6ae747d6a7b5f1a9db4d5" },
-      { store: "eBay", price: 62.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/198554125974?_skw=AS+Roma+home+soccer+jersey+2025+2026&hash=item2e3abf8696%3Ag%3A7PQAAeSwrKZqdd4z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas AS Roma Home Soccer Jersey 2025/26 Size M New withTags", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/7PQAAeSwrKZqdd4z/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398289848072?_skw=AS+Roma+home+soccer+jersey&hash=item5cbbecc708%3Ag%3AYeoAAeSwvLhqgMgE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "AS Roma 2025/26 Home Adidas Authentic Soccer Jersey – Men’s Large – JP4185", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YeoAAeSwvLhqgMgE/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Froma-home-soccer-jersey-2025-26%3Fvariant%3D42557165305961", title: "Roma Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/fad2b7f9619c8841eb151b2479e4bedd.png?v=1760671906" },
     ],
   },
@@ -25732,7 +25735,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 70.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44337428273&a=3013769&m=77008", title: "Camiseta tercera equipación AS Roma 25/26", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F255daa5c32b748bd9d94c7cd200cf5ac_9366%2FCamiseta_tercera_equipacion_AS_Roma_25-26_Blanco_JJ4185_21_model.jpg&feedId=92152&k=4e16594696c08abf935a2a904e1c32af0f6456b3" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44371065026&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 25/26 da AS Roma", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F255daa5c32b748bd9d94c7cd200cf5ac_9366%2FCamisola_do_Terceiro_Equipamento_25-26_da_AS_Roma_Branco_JJ4185_21_model.jpg&feedId=92150&k=2ce8eac19c5d7ca172b90bf9c9f69e45d1e3effb" },
-      { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318720911569?_skw=AS+Roma+third+soccer+jersey+2025+2026&hash=item4a353f28d1%3Ag%3AN7AAAeSwaJdqfRAA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2025/2026 Adidas Roma Third Jersey Men’s Size XL - Dybala #21", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/N7AAAeSwaJdqfRAA/s-l225.jpg" },
+      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147357675382?_skw=AS+Roma+third+soccer+jersey&hash=item224f33af76%3Ag%3A0hgAAeSwJatqJXEf&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYSpLF5roCbJhjCg8RW7mjhWyLusXoiW%2BiTYbG9ciKjHhJTp72fk0vz9pqzSJlFrGpyhiiCfA4oP%2BtqJAZd8IEMoZtxRnko4OpEtFoiw8fps%2BjsbQpLhpLYE8aJQg4AnJegFFb5vNXvyy2xNnwH3e6X09uIkOVlklwyTmcT7cYLGRRT0ynVca1GAkZkL8%2FaHtdoybrxOtCourv2ymmTweam7Oh7pYFHZphqL6%2FAxYMw%2B%2Bq7grQuCEa1Hx6KsqlGZj%2B51ieWr%2BCIgLiFwSFgD4SLBqgI9c4FiIjfzvrf0RYZCQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas AS Roma Third Jersey 2025/26 Size 3XL NWT", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/0hgAAeSwJatqJXEf/s-l225.jpg" },
     ],
   },
 {
@@ -25747,7 +25750,7 @@ const productsData = [
     offers: [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41856371554&a=3013769&m=77026", title: "Aston Villa FC 25/26 Home Jersey", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F94c06cc296624a128d7e8c1e96e2d8d6_9366%2FAston_Villa_FC_25-26_Home_Jersey_Bordo_JN8061_21_model.jpg&feedId=92150&k=9feee796409fbb9c1a24ab0ff4a7f43912c76dfc" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Faston-villa-home-soccer-jersey-2025-26%3Fvariant%3D42557163110505", title: "Aston Villa Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/d657c2c3182e63abda17ca3117a0aaa8.png?v=1758073896" },
-      { store: "eBay", price: 55.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800361167639?_skw=Aston+Villa+home+soccer+jersey+2025+2026&hash=itemba593e3b17%3Ag%3AvIQAAeSwh%7ExqWqQT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa FC Home 2025/26 Soccer Football Jersey New W/Tags Men’s Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/vIQAAeSwh~xqWqQT/s-l225.jpg" },
+      { store: "eBay", price: 49.97, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/800417403154?_skw=Aston+Villa+home+soccer+jersey&hash=itemba5c985112%3Ag%3AqkYAAeSw9hFpyqCt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa FC 25/26 Home Jersey Maroon Red Men's Size XL Slim Fit JN8061", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qkYAAeSw9hFpyqCt/s-l225.jpg" },
       { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45585787771&a=3013769&m=77008", title: "Camiseta primera equipación Aston Villa FC 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa446816e1cfd4b5d997c7feaec695e8a_9366%2FCamiseta_primera_equipacion_Aston_Villa_FC_25-26_Burgundy_JN8032_21_model.jpg&feedId=92152&k=1666aef87c7706b084a581ad6201286f1490bdd0" },
     ],
   },
@@ -25764,7 +25767,7 @@ const productsData = [
       { store: "FootStoreES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44383400743&a=3013769&m=65912", title: "Maillot Exterior Arabia Saudita Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jl6953_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=4e74a83dddbca1fb00d16b6d7b8e7e4a7f0528ee" },
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl6953-maillot-exterieur-arabie-saoudite-coupe-du-monde-2026-white-khaki-aurivy", title: "Maillot Extérieur Arabie Saoudite Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jl6953_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-arabie-saoudite-exterieur-26-blanc%3Fvariant%3D53907020415317", title: "Maillot Arabie Saoudite Extérieur 2026 Homme Blanc - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-arabie-saoudite-exterieur-26-blanc-climacool-jl69531.webp?v=1780585509" },
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298584612196?_skw=Saudi+Arabia+away+soccer+jersey+2025+2026&hash=item4585079d64%3Ag%3AD3cAAeSwSwhqYB3M&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbJmbPZsNAALFv2jCHbp5nPLkJ8E5D5IeaGPl0bmWMdl636S%2F8BMkaIsCdVUQrLbjdhmkFuVmBP9%2FbIcSF%2BErMkDAnPkJmkVFWGOcsTxR9u2jezwr0P1qBbvILIRobPJEPHsej6RTmO1H0ACpyr2c%2BX2VdYdwDbyCsnUZKrzv%2FxssAZsMrKElVizms%2BAGeNP9dRVldvBci%2FGSGxQnQ6NLbpqpdtMbFWGf%2FRiajtvopUi7Oy6n4ki32T0wR4%2BTWtGeMChSPaa%2BT9%2FFu1EsAdWThhGuADIxtvaW1Ou5eYGxXoFXng95L%2F4ziQNAEDimwyf18%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Saudi Arabia 2026 Adidas Away Soccer Football Jersey Shirt Kit JL6953 NWT 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/D3cAAeSwSwhqYB3M/s-l225.jpg" },
+      { store: "eBay", price: 36.04, shipping: 18.74, currency: "USD", url: "https://www.ebay.com/itm/127933066100?_skw=Saudi+Arabia+away+soccer+jersey&hash=item1dc967ab74%3Ag%3ARBAAAeSw9XdqNs7J&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZu1igEh1rrV85pgA3jNVvWytBG1GBG4mOYgjWrr7lS8cs85vYMQG3eb2jpwi1fb1Qn7o8CqzAGV4a26pSi1BNPZuVJ80nP4fqZPSq70cT3GP6rUqNbvKay9%2FcGswLEElSs0puOPyuw3bRRUCtCyzhjWqWKqfBI1ptw5AlpD3ft0jIANCrIWmpKb611SwFmmzNUsysMwPVMh%2FEtqqqzJRIjWNRpwrhsFR37Y1ZKZncz4JQbTSua9fguNF%2BfVsejiXi4aE9GsiUb2IB67LRot4G9RSffMo4yS515A1WVRqXXMQkdatlkLoD99B%2FmhYDuWwQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Saudi Arabia World Cup 2026 Soccer Away Jersey Saudi Arabia JerseyHalf Sleeve-XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/RBAAAeSw9XdqNs7J/s-l225.jpg" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267908055&a=3013769&m=77008", title: "Camiseta segunda equipación Arabia Saudí 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff01a0902d9b2434c86835cf44088a23d_9366%2FCamiseta_segunda_equipacion_Arabia_Saudi_26_Blanco_JL6953_21_model.jpg&feedId=92152&k=76efdc2eba70efc8a9162866afb851fae792005b" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267894553&a=3013769&m=77026", title: "Camisola Alternativa 26 da Arábia Saudita", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff01a0902d9b2434c86835cf44088a23d_9366%2FCamisola_Alternativa_26_da_Arabia_Saudita_Branco_JL6953_21_model.jpg&feedId=92150&k=12b8d6a999b7a858fb400752ab08a3a417264a8a" },
     ],
@@ -25786,7 +25789,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-arabie-saoudite-domicile-homme-2026-vert%3Fvariant%3D51806475616597", title: "Maillot Arabie Saoudite Domicile Homme 2026 Vert", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-arabie-saoudite-2026-blanc-homme-adidas-planetfoot3.webp?v=1763038816" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094288656&a=3013769&m=77008", title: "Camiseta primera equipación Arabia Saudita 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fef77c92fad544323b9a0591843d7f9dd_9366%2FCamiseta_primera_equipacion_Arabia_Saudita_26_Verde_JL6948_21_model.jpg&feedId=92152&k=e7e49ebb81f9d83b1686d5c033eb8c11f63ba670" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsaudi-arabia-2026-world-cup-home-jersey%3Fvariant%3D42671975170153", title: "Saudi Arabia 2026 World Cup Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Saudi_Arabia_2026_World_Cup_Home_Jersey.png?v=1762757463" },
-      { store: "eBay", price: 79.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377352908729?_skw=Saudi+Arabia+home+soccer+jersey+2025+2026&hash=item57dbfc6fb9%3Ag%3AL3UAAeSwRo9qXAl0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Official adidas Saudi Arabia National Team 2026 Home Soccer Jersey.", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/L3UAAeSwRo9qXAl0/s-l225.jpg" },
+      { store: "eBay", price: 79.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377352908729?_skw=Saudi+Arabia+home+soccer+jersey&hash=item57dbfc6fb9%3Ag%3AL3UAAeSwRo9qXAl0&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGakLTFCi2HBcZUzXGUoe3Py%2FzS2baVVp6Oq2iY%2FjnT0g%2F8P1J8KF5E6X%2B6dEz%2BowFrtx3CEn1d5tsfXiuabHkVqCVDgpX%2Bs7CwkUcTeZOz9MkMFW5ruJMwlErmTyYMlBbzpg9DB3OpB8nbdLxAsPxrPxYYeHX7%2BT2zcyUT%2FzSZVixhOrYTUQUwPO0%2FePx2c9wVtzWVyuRxNm8KJQA%2BkwA%2BPjZaJKcUtR3yZ2%2Bsp6mSCLTR7C09NlfQk39ujWGjrG8IYHmGOQD%2B5AdGx6IlfWeXRO%2F6O4yy%2FrF9GSYgk0SpN0sLd6j%2FFLjgSqw0hxu2dz9w%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Official adidas Saudi Arabia National Team 2026 Home Soccer Jersey.", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/L3UAAeSwRo9qXAl0/s-l225.jpg" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096958165&a=3013769&m=77026", title: "Camisola Principal 26 da Arábi Saudita", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fef77c92fad544323b9a0591843d7f9dd_9366%2FCamisola_Principal_26_da_Arabi_Saudita_Verde_JL6948_21_model.jpg&feedId=92150&k=0b97c1a4d6e2572ed407389ee3599323faf823e5" },
     ],
   },
@@ -25802,7 +25805,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081655&a=3013769&m=65912", title: "Maillot Exterior Australia Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5347-367_01.webp&feedId=89032&k=1407ed7c25d6574a677330d0ef210f38510b8492" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Faustralia-2026-world-cup-away-soccer-jersey%3Fvariant%3D43115555455081", title: "Australia 2026 World Cup Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AustraliaAwayJerseyWorldCup2026_2.webp?v=1775801599" },
-      { store: "eBay", price: 89.0, shipping: 18.0, currency: "USD", url: "https://www.ebay.com/itm/398171713754?_skw=Australia+away+soccer+jersey+2025+2026&hash=item5cb4e230da%3Ag%3AXzoAAeSwk8ZqVabW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "100% ORIGINAL Australia Away World Cup 2026 Stadium Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/XzoAAeSwk8ZqVabW/s-l225.jpg" },
+      { store: "eBay", price: 53.13, shipping: 21.25, currency: "USD", url: "https://www.ebay.com/itm/358750119032?_skw=Australia+away+soccer+jersey&hash=item53872c6478%3Ag%3AH9oAAeSwbA1qR1Qx&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa5KL%2Baa72N8lpfjRpQpeXCK46nh7745Is0CY5IUux%2Fa8e0kevhUQOx3tXOvzcJvB5trWvgd6ZiEuRz13%2BgLpAP7TuBR3zKYR0KRIkQUptDnEcsyjx8qr1zA8GhQ5eBotYviWnsbz5blU4favMzM2ttX9N%2BKTVC%2BUMWkma0cxfOUbfKwAspL8kR7aLarAKPZhG63UwNsb0y7q23ju2uz7An3uUa9m8%2B7UjQijbh2Pa%2FVcNHb8qD57bhj4okmPavKS%2BEsHNioCcI1Og%2FeGoc0H%2Bh5KPoHOtD8ZlaX1rXte4tYg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "AUSTRALIA SOCCEROOS Away 25/26 Jersey For MEN Adults XL (RRP$125) BNWT New Tags", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/H9oAAeSwbA1qR1Qx/s-l225.jpg" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5347-367-maillot-exterieur-australie-coupe-du-monde-2026-bright-spruce-orange-pulse-white-white", title: "Maillot Extérieur Australie Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5347-367_01.webp" },
     ],
   },
@@ -25818,7 +25821,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44790777462&a=3013769&m=65912", title: "Maillot Domicile Australia Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5256-704_04.webp&feedId=89032&k=8aa543bbd6b182858165c74bb587b11e6cef2c94" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Faustralia-2026-world-cup-home-soccer-jersey%3Fvariant%3D43115555225705", title: "Australia 2026 World Cup Home Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AustraliaHomeJerseyWorldCup2026_1.webp?v=1775801453" },
-      { store: "eBay", price: 89.0, shipping: 18.0, currency: "USD", url: "https://www.ebay.com/itm/398171704599?_skw=Australia+home+soccer+jersey+2025+2026&hash=item5cb4e20d17%3Ag%3AX08AAeSwflRqVaXC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "100% ORIGINAL Australia Home World Cup 2026 Stadium Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/X08AAeSwflRqVaXC/s-l225.jpg" },
+      { store: "eBay", price: 63.05, shipping: 17.71, currency: "USD", url: "https://www.ebay.com/itm/287522156128?_skw=Australia+home+soccer+jersey&hash=item42f1a7ee60%3Ag%3AO7kAAeSwVnNqfXHc&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYFKPdYxJmDQeLlTtz9gQk%2FVL3qRHfpPYZXHYpkiY2X0mAQPG1pjJAvfZ1oDbFpPgYEaf4SKag8pdb24PH6dDmqvr0KkZBl2NZQsJbIbfY9wnjcubmfMgE4MWj46OtVODRj33Hd8QnZwaHZ8n9ezOKO0iqyDIptoyPQpKpfZIDUvCYOz%2F30C00DiE67ttT%2FGfP%2FyneIEy0%2FC3XssULyohZ58r%2BnRB%2B2iELbZatMP8zakBaFnwldFuIpE%2Fu6cH4yYmZv5haXj0EID%2Fu94lMMvcGbuCkm%2Fzp7LdatmmpXwpx6Bpx7vBuBD6saat1i0UjHmlo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Australia Socceroos 2026 Home Jersey Nike Football Shirt World Cup NWT Size M", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/O7kAAeSwVnNqfXHc/s-l225.jpg" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5256-704-maillot-domicile-australie-coupe-du-monde-2026-sport-gold-mystic-green-mystic-green", title: "Maillot Domicile Australie Coupe du Monde 2026", inStock: true, sizes: ["S", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5256-704_04.webp" },
     ],
   },
@@ -25838,7 +25841,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjm8381-maillot-domicile-belgique-coupe-du-monde-2026-red-bold-gold", title: "Maillot Domicile Belgique Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jm8381_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094300098&a=3013769&m=77008", title: "Camiseta primera equipación Bélgica 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F90d4b6018cb344808b4d17b65bc7e9f2_9366%2FCamiseta_primera_equipacion_Belgica_26_Rojo_JM8381_21_model.jpg&feedId=92152&k=760baf1915212117f1ee2f56f87dbb674b8a69bb" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966532&a=3013769&m=77026", title: "Camisola Principal 26 da Bélgica", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F90d4b6018cb344808b4d17b65bc7e9f2_9366%2FCamisola_Principal_26_da_Belgica_Vermelho_JM8381_21_model.jpg&feedId=92150&k=7787056a9d3e213b54e4d81168dda19da9ef6d8b" },
-      { store: "eBay", price: 30.12, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137537824430?_skw=Belgium+home+soccer+jersey+2025+2026&hash=item2005e4a6ae%3Ag%3AOdsAAeSwYrtqX955&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYPp5Jr6lf1SI1AMWCqO5u%2FdKVqxUIYheubHMACGf6uSkyklCmeJSeWm2zVa2YR71dWBgN9kzeuNgIUBPdRGrklAX8AFlKIov9sPYxTYgpawBZBi02dJnrqysW%2BCJbdhc4hmaJKzFtlLJzcfK1vnm%2Baer%2FzDTAAx3%2BTNNaGp4QcXCkVzkSbqTLd4Y6on8YQ94pOhiYmo21jg4HALyKEFf27Wp%2BlS70fPAM7%2FxHAInHJAyQAPefx%2BeE2Hb%2FOJst0%2BHY7jhAl67RZl6oeLbkF%2FQzToZJIEWML8vFT%2Bg3jSZUtIZgLewt%2BdzCXSFxFOXXkWtU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Belgium Soccer Adidas Jersey Mens Xl Red 2025-26 Home Kit JZ5990 NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/OdsAAeSwYrtqX955/s-l225.jpg" },
+      { store: "eBay", price: 30.12, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137537824430?_skw=Belgium+home+soccer+jersey&hash=item2005e4a6ae%3Ag%3AOdsAAeSwYrtqX955&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYPp5Jr6lf1SI1AMWCqO5u%2FdKVqxUIYheubHMACGf6uSkyklCmeJSeWm2zVa2YR71dWBgN9kzeuNgIUBPdRGrklAX8AFlKIov9sPYxTYgpawBZBi02dJnrqysW%2BCJbdhc6pctXLn0JJgRR%2FqJzfaz3r0yK3SCMWCgK6nKIhWuBDYHqw46fJPselcYDRHNEV5qBBiyssCnQMUkw50W2mImrJrl8qQ5vAFYJzl%2FclwmAp9bBMxW6clsIUnNkpARbizX2dq%2BzXyRTfTF8fZpWVMNbp5lb3F4ICzRwu9oPevOGsARGnVt1pVTuntmtQ1TTjnSE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Belgium Soccer Adidas Jersey Mens Xl Red 2025-26 Home Kit JZ5990 NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/OdsAAeSwYrtqX955/s-l225.jpg" },
     ],
   },
 {
@@ -25855,7 +25858,7 @@ const productsData = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5386-567-maillot-exterieur-coree-du-sud-coupe-du-monde-2026-space-purple-lt-liquid-lime", title: "Maillot Extérieur Corée du Sud Coupe du Monde 2026", inStock: false, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5386-567_01.webp" },
       { store: "MysteryShirtClub", price: 94.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-south-korea-away-shirt-511948", title: "2026-2027 South Korea Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1782083036_2026-2027-south-korea-nike-away-shirt.jpg?v=1783506044" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fheungmin-7-south-korea-2026-world-cup-away-soccer-jersey%3Fvariant%3D43076624744553", title: "HEUNGMIN #7 South Korea 2026 World Cup Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/HEUNGMIN7SouthKoreaAwayJerseyWorldCup2026_2.webp?v=1774841146" },
-      { store: "eBay", price: 36.55, shipping: 8.77, currency: "USD", url: "https://www.ebay.com/itm/407014207626?_skw=South+Korea+away+soccer+jersey+2025+2026&hash=item5ec3eff08a%3Ag%3A1fkAAeSwY5FqNhAH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "(MEN) South Korea #7 2026 Away Stadium Soccer Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/1fkAAeSwY5FqNhAH/s-l225.jpg" },
+      { store: "eBay", price: 35.55, shipping: 8.77, currency: "USD", url: "https://www.ebay.com/itm/407014207626?_skw=South+Korea+away+soccer+jersey&hash=item5ec3eff08a%3Ag%3A1fkAAeSwY5FqNhAH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "(MEN) South Korea #7 2026 Away Stadium Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/1fkAAeSwY5FqNhAH/s-l225.jpg" },
     ],
   },
 {
@@ -25872,7 +25875,7 @@ const productsData = [
       { store: "FootStoreFR", price: 64.32, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234191-3365-maillot-domicile-danemark-coupe-du-monde-2026-tango-red", title: "Maillot Domicile Danemark Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234191-3365-tango-red-3.webp" },
       { store: "SportIsGoodES", price: 68.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44201566087&a=3013769&m=65906", title: "Camiseta Local Dinamarca Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel-234191-3365-tango-red-3.webp&feedId=89044&k=bb909515cf64faf37829b8d70a7b7df0a378601b" },
       { store: "SportIsGoodFR", price: 64.32, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234191-3365-maillot-domicile-danemark-coupe-du-monde-2026-tango-red", title: "Maillot Domicile Danemark Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234191-3365-tango-red-3.webp" },
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298583135667?_skw=Denmark+home+soccer+jersey+2025+2026&hash=item4584f115b3%3Ag%3AlCwAAeSw76lqd-nr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Denmark 2026 Hummel Home Soccer Jersey Shirt Kit NWT EU 2XL US XL 24’ Pit2Pit", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/lCwAAeSw76lqd-nr/s-l225.jpg" },
+      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298583135667?_skw=Denmark+home+soccer+jersey&hash=item4584f115b3%3Ag%3AlCwAAeSw76lqd-nr&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGagmRg%2FwN4onCRZKheWVsq5APvzcyldg1EkOwlACVLMoNtFa6eOceR4eaXbEHHNVnyztE8mC6OCBvTtpdHxVbz6a18JpUPYg262Rj4n2EVxed3hptVVCSsYydYPy%2Ffd4u5l1UpSvY%2FdnJ8rJmAutYtOpksHHlu25LFXCaDP%2F8uhSL7%2B5cuUFzHbzIO0QGSL8XaTLVVgE66YyBB9zXL0072fY%2BfazOf51lDuEMfqe4ku5QWeLN%2BVsxJQ630Idip89WBQVbryqVw4xxk%2FlcPUJU0ylF2XO4liFRO3oo08aQ58pA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Denmark 2026 Hummel Home Soccer Jersey Shirt Kit NWT EU 2XL US XL 24’ Pit2Pit", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/lCwAAeSw76lqd-nr/s-l225.jpg" },
     ],
   },
 {
@@ -25908,7 +25911,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-cr-flamengo-third-homme-2025-26-or%3Fvariant%3D51494775619925", title: "Maillot CR Flamengo Third Homme 2025/26 Or", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-flamengo-25-26-adulte-adidas-planetfoot1.webp?v=1759844797" },
       { store: "SportIsGoodES", price: 58.89, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43677804585&a=3013769&m=65906", title: "Camiseta Tercera Flamengo 2025/26", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_adidas_ji7303_1_apparel_photography_front_center_view_transparent.webp&feedId=89044&k=58b65f1847043e3b0fc886718f6bc93377912ce2" },
       { store: "SportIsGoodFR", price: 59.15, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji7303-maillot-third-flamengo-2025-26-crewht", title: "Maillot Third Flamengo 2025/26", inStock: true, sizes: ["XS"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_adidas_ji7303_1_apparel_photography_front_center_view_transparent.webp" },
-      { store: "eBay", price: 79.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377404416764?_skw=Flamengo+third+soccer+jersey+2025+2026&hash=item57df0e62fc%3Ag%3ANeQAAeSwThVqd7cu&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYp3OyE1K2WPXIo10wEB8lodn5O5yK10LHiAcilyZMKYi1DoVud4BdR94%2Ff45HVgbeqn22XBvYDmy3%2B5W4C%2FHEW7NbQH1UkCwImS%2F6dGVDYgOOLJ%2F7zf9puGSrycR88k94CAEFRxTQfKSLCNUjwYw8ukNKmONyl4sgVnLWEHSvjpArTXalmgEeY8%2BQafQbFVebjisvYTbotydJfNS4v%2BRsRwsb0wKJdzLRc6P9S4PXBtQM3eLntwgqi%2FhXJI%2F4bqGqVLKnZxFYMRzZ%2BREPxkyY29l%2BqEgmJ20z%2BES0xm7uqSTHQn3RCNV1EjmkJorf463c%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Adidas 2025-26 CR Flamengo Player Issue Third Jersey Shirt Men’s Size Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/NeQAAeSwThVqd7cu/s-l225.jpg" },
+      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188753991975?_skw=Flamengo+third+soccer+jersey&hash=item2bf29d5927%3Ag%3AAuAAAeSw5zhp9zSa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Adidas Authentic 2025-26 CR Flamengo Player Issue Third Jersey JI7307 Men S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/AuAAAeSw5zhp9zSa/s-l225.jpg" },
     ],
   },
 {
@@ -25927,7 +25930,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd3345-maillot-domicile-japon-coupe-du-monde-2026-japanblue", title: "Maillot Domicile Japon Coupe du Monde 2026", inStock: true, sizes: ["S", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_kd3345_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-japon-domicile-homme-2026-bleu-kd3345%3Fvariant%3D54410915479893", title: "Maillot Japon Domicile Homme 2026 Bleu", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_9037-1.jpg?v=1784541688" },
       { store: "FansJerseyHub", price: 41.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fjapan-2026-world-cup-home-soccer-jersey-kit%3Fvariant%3D42724227907689", title: "Japan 2026 World Cup Home Soccer Jersey Kit", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/JapanHomeWorldCupJerseysKit2026_1.png?v=1764764170" },
-      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366591056502?_skw=Japan+home+soccer+jersey+2025+2026&hash=item555a879a76%3Ag%3A%7EssAAeSwk3lqdPxf&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Japan Home Jersey 2026", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/~ssAAeSwk3lqdPxf/s-l225.jpg" },
+      { store: "eBay", price: 36.04, shipping: 10.81, currency: "USD", url: "https://www.ebay.com/itm/287527290465?_skw=Japan+home+soccer+jersey&hash=item42f1f64661%3Ag%3AzugAAeSwAuVqgNVi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Adidas Japan 2026 World Cup Home Soccer Jersey", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/zugAAeSwAuVqgNVi/s-l225.jpg" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966680&a=3013769&m=77026", title: "Camisola Principal 26 do Japão", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc7017caf8161419691a16357f4270a7e_9366%2FCamisola_Principal_26_do_Japao_Azul_KD3345_21_model.jpg&feedId=92150&k=b18989f40d9363c070290a455a870bcb6a14bfae" },
     ],
   },
@@ -25979,7 +25982,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45376303154&a=3013769&m=65906", title: "Camiseta Local Marruecos Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-783317-01-fast-red-victory-gold-69babd07781c5-1.webp&feedId=89044&k=38e604bb6e6f1c689395e5dcb27a8fb89a6e7f42" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-maroc-adulte-domicile-2026-rouge-puma%3Fvariant%3D53556146700629", title: "Maillot Maroc Adulte Domicile 2026 Rouge Puma - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-maroc-adulte-domicile-2026-rouge-puma2.webp?v=1776693099" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmorocco-world-cup-2026-home-soccer-jersey%3Fvariant%3D42791057784937", title: "Morocco World Cup 2026 Home Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/MoroccoHomeSoccerJerseyWorldCup2026.webp?v=1770271896" },
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398100438450?_skw=Morocco+home+soccer+jersey+2025+2026&hash=item5cb0a29db2%3Ag%3AEmQAAeSwQl1qOzfm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Morocco 2026 FIFA World Cup Red Home Replica Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/EmQAAeSwQl1qOzfm/s-l225.jpg" },
+      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398100438450?_skw=Morocco+home+soccer+jersey&hash=item5cb0a29db2%3Ag%3AEmQAAeSwQl1qOzfm&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbeMMeq%2FeoUzGm5SCtzUoEJ4BLYOE04ZaW8EIgA4Z6Pzfp0HgBe2nXd%2BUh%2FmOqfHP87ZiSt%2BgVbRFfNV0zvRH5rvB9QgdNzepDW3eYWw3QU5%2BheArhH7PDciWRWwCqVEBDp1LGjKXj2GzipF9QySzxui%2BfiqKR6grBQiqHoQlwxkwSDCw2SLs1JRFXrDFO1I79JLM%2BqQYQABYcRRtDR%2FRxJObaxXBHnKWbeTtGUeVmxZtOyj%2Fxa%2FUenTx6iUfyq2O%2F7t9OKFuhg35bCNaKyiboU19A5T6IXbOCwFMhY9VkBpA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Morocco 2026 FIFA World Cup Red Home Replica Soccer Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/EmQAAeSwQl1qOzfm/s-l225.jpg" },
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783317-01-maillot-domicile-maroc-coupe-du-monde-2026-fast-red-victory-gold", title: "Maillot Domicile Maroc Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-783317-01-fast-red-victory-gold-69babd07781c5-1.webp" },
       { store: "SportIsGoodFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F783317-01-maillot-domicile-maroc-coupe-du-monde-2026-fast-red-victory-gold", title: "Maillot Domicile Maroc Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-783317-01-fast-red-victory-gold-69babd07781c5-1.webp" },
     ],
@@ -26002,7 +26005,7 @@ const productsData = [
       { store: "FootStoreFR", price: 64.65, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz0736-maillot-exterieur-mexique-coupe-du-monde-2026-white", title: "Maillot Extérieur Mexique Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz0736_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 66.1, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz0736-maillot-exterieur-mexique-coupe-du-monde-2026-white", title: "Maillot Extérieur Mexique Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz0736_1_apparel_photography_front_center_view_white.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fel-tri-away-soccer-jersey-2026-world-cup%3Fvariant%3D43253851488361", title: "El Tri Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/mexicoaway-1.jpg?v=1781665261" },
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168577238605?_skw=Mexico+away+soccer+jersey+2025+2026&hash=item273ffc864d%3Ag%3AqtsAAeSw6XlqbGO2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico Away jersey 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qtsAAeSw6XlqbGO2/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168577238605?_skw=Mexico+away+soccer+jersey&hash=item273ffc864d%3Ag%3AqtsAAeSw6XlqbGO2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico Away jersey 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/qtsAAeSw6XlqbGO2/s-l225.jpg" },
     ],
   },
 {
@@ -26023,7 +26026,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-mexique-domicile-homme-2026-vert%3Fvariant%3D51806484889941", title: "Maillot Mexique Domicile Homme 2026 Vert - Coupe du Monde", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-mexique-2026-vert-homme-adidas-planetfoot7.avif?v=1763039120" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fel-tri-home-soccer-jersey-2026-world-cup%3Fvariant%3D43253853093993", title: "El Tri Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/mexicohome-1.jpg?v=1781664843" },
       { store: "SportIsGoodFR", price: 88.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fka6059-maillot-domicile-manches-longues-mexique-coupe-du-monde-2026-bgreen", title: "Maillot Domicile manches longues Mexique Coupe du Monde 2026", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_ka6059_0.webp" },
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168577235839?_skw=Mexico+home+soccer+jersey+2025+2026&hash=item273ffc7b7f%3Ag%3AozsAAeSwvdxqW53u&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "mexico home jersey 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ozsAAeSwvdxqW53u/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168577235839?_skw=Mexico+home+soccer+jersey&hash=item273ffc7b7f%3Ag%3AozsAAeSwvdxqW53u&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "mexico home jersey 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ozsAAeSwvdxqW53u/s-l225.jpg" },
       { store: "SportIsGoodES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45565799055&a=3013769&m=65906", title: "Camiseta Local México Coupe du Monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jl8580_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=3af252f2981c088129b8f31973d18b8ecc6b037f" },
     ],
   },
@@ -26044,7 +26047,7 @@ const productsData = [
       { store: "FootStoreFR", price: 61.89, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl8545-maillot-third-mexique-coupe-du-monde-2026-noir", title: "Maillot Third Mexique Coupe du Monde 2026", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl8545_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 105.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjl8546-maillot-third-authentique-mexique-coupe-du-monde-2026-black", title: "Maillot Third Authentique Mexique Coupe du Monde 2026", inStock: false, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl8546_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-mexique-third-homme-2026-noir%3Fvariant%3D53957399052629", title: "Maillot Mexique Third Homme 2026 Noir - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-mexique-third-homme-2026-noir-climacool-jl8545_1.webp?v=1782489055" },
-      { store: "eBay", price: 21.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366601434933?_skw=Mexico+third+soccer+jersey+2025+2026&hash=item555b25f735%3Ag%3AdqIAAeSwDjZqe6ca&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "MEXICO NEW 2026 Third Black Shirt Jersey (PLAYER VERSION) US - FAST SHIPPING!!!", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/dqIAAeSwDjZqe6ca/s-l225.jpg" },
+      { store: "eBay", price: 17.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398259494251?_skw=Mexico+third+soccer+jersey&hash=item5cba1d9d6b%3Ag%3ATO8AAeSwbjtqdahO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYU%2B6ZtAqNzSYM%2BAFLQvmf%2FjtIDzam5nsaMuFvke%2B0eSRRMRrIELoTOLsstBbzNeIeGweiK%2B1MSHO%2Fm7UF9sOoNezU1babIw4JbjMBCF1ATLN9rN%2B305aeEsmgcDUa0pZqqkdHaowBpfwDHihM0KtjO%2FDyDKPFgsV9IlVt2svSNU6XiqCRdBnb%2F8TcTetOc%2FEwLPuBW0jCsNYrqgzL5jQ%2Bbz%2Baz5d%2FzwmX7Wuzr0TAW2UIQZGhPpPc5L4B8WXXEwyKc0yzcTqxOTCdF63CJ%2BzFPXEiQfKTNZhdYT2ccs19Dht4CZdxs7EW85Pzl5yEKAUk%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "MEXICO NEW 2026 Third Black Shirt Jersey US - FAST SHIPPING!!!", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/TO8AAeSwbjtqdahO/s-l225.jpg" },
     ],
   },
 {
@@ -26059,7 +26062,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 76.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300839&a=3013769&m=65912", title: "Camiseta de visitante Nigeria Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5376-100_01.webp&feedId=89032&k=d2635868226114df7402d6974f3c3ea3cd50482b" },
       { store: "FootStoreFR", price: 76.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5376-100-maillot-exterieur-nigeria-coupe-du-monde-2026-white-green-glow-black", title: "Maillot Extérieur Nigeria Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5376-100_01.webp" },
-      { store: "eBay", price: 63.74, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178322416481?_skw=Nigeria+away+soccer+jersey+2025+2026&hash=item2984d82361%3Ag%3Azs4AAeSwcXdqW64K&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb3FQCSAcTTua5K%2BU9ezBKKGRpCpyphhkwkiAopXJkSQC%2Bx6YobpcBl4HADaCXe73BZAN3nhZbAh2t8pMVsfbgV%2BrYLw1l%2FB7mBxsKaXPFrRev28jU51EQyCBzPrQSAk0bqLVxvm1yDUev5bRM%2FeiNTdEOffQLCQRjw52EJSxQnCBv%2BLFO25VDfJXtQ8Ar4y8rfI2DXrd%2BS2nOaBdeZ%2BBLqU5ztXegj5F47bOkg6Znzi7PMinfLrj9RIRaVAdngpljhmoi%2BgMlYNJyYG4httBrQMhMY3AwLmqu7s4btHjM%2FuVmNxqXl89%2BAsi6Dv47s%2BfU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nigeria National Team Nike 2026 World Cup Away Stadium Jersey Men Small $100", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/zs4AAeSwcXdqW64K/s-l225.jpg" },
+      { store: "eBay", price: 63.74, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178322416481?_skw=Nigeria+away+soccer+jersey&hash=item2984d82361%3Ag%3Azs4AAeSwcXdqW64K&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb3FQCSAcTTua5K%2BU9ezBKKGRpCpyphhkwkiAopXJkSQC%2Bx6YobpcBl4HADaCXe73BZAN3nhZbAh2t8pMVsfbgV%2BrYLw1l%2FB7mBxsKaXPFrRev28jU51EQyCBzPrQSAk0ZGgv%2BpnWsb09zXnve1JC59Z%2BazyKwJ4OQbDxvEi5grZP2PB%2BkiN5DhUfakY8Jaw9I1PWjlWf02rr1ntXjM%2FNNmQn4YYG60DbB7KibCjJhw%2BUhAe1RZHDZt3VroFScxeZIZsrFs%2BW4Nuyu%2FG2Cl83K7aiyln2mLGGKfDc%2FFOUY5WA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nigeria National Team Nike 2026 World Cup Away Stadium Jersey Men Small $100", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/zs4AAeSwcXdqW64K/s-l225.jpg" },
     ],
   },
 {
@@ -26089,7 +26092,7 @@ const productsData = [
       { store: "FootStoreES", price: 74.19, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926276&a=3013769&m=65912", title: "Camiseta Local Nigeria Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5308-302_04.webp&feedId=89032&k=ac619dd92ee5198fe84b31ad952b1c77dea42c68" },
       { store: "FootStoreFR", price: 73.58, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5308-302-maillot-domicile-nigeria-coupe-du-monde-2026-pine-green-electric-green-white", title: "Maillot Domicile Nigeria Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5308-302_04.webp" },
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnigeria-home-jersey-player-version-world-cup-2026%3Fvariant%3D43162069532777", title: "Nigeria Home Jersey Player Version World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/NigeriaHomeMatchJerseyPlayerVersionWorldCup2026_1.webp?v=1777281238" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205513536182?_skw=Nigeria+home+soccer+jersey+2025+2026&hash=item2fd98fb2b6%3Ag%3AkzcAAOSwlcxoNUuI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Nigeria Soccer Men Home 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/kzcAAOSwlcxoNUuI/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205513536182?_skw=Nigeria+home+soccer+jersey&hash=item2fd98fb2b6%3Ag%3AkzcAAOSwlcxoNUuI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Nigeria Soccer Men Home 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kzcAAOSwlcxoNUuI/s-l225.jpg" },
     ],
   },
 {
@@ -26104,7 +26107,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 109.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926356&a=3013769&m=65912", title: "Maillot Third Noruega Coupe du monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_iq7379-100_01.webp&feedId=89032&k=ecbe7421d93cb4523248a38221ed8a9e37ab3c9e" },
       { store: "FootStoreFR", price: 109.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq7379-100-maillot-third-norvege-coupe-du-monde-2026-white-pure-platinum-white", title: "Maillot Third Norvège Coupe du Monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_iq7379-100_01.webp" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366401589669?_skw=Norway+third+soccer+jersey&hash=item554f3c91a5%3Ag%3A740AAeSwf8FqAY9V&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norway Third Mens Jersey 26", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/740AAeSwf8FqAY9V/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/366401589669?_skw=Norway+third+soccer+jersey&hash=item554f3c91a5%3Ag%3A740AAeSwf8FqAY9V&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norway Third Mens Jersey 26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/740AAeSwf8FqAY9V/s-l225.jpg" },
     ],
   },
 {
@@ -26121,7 +26124,7 @@ const productsData = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8507-100-maillot-domicile-pologne-coupe-du-monde-2026-white", title: "Maillot Domicile Pologne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8507-100-white-69ef67eb7a1db-1.webp" },
       { store: "SportIsGoodES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44618335343&a=3013769&m=65906", title: "Maillot Domicile Pologne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8507-100-white-69ef67eb7a1db-1.webp&feedId=89044&k=991e0ff5847b5c63b10d327bd76488767145cd13" },
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8507-100-maillot-domicile-pologne-coupe-du-monde-2026-white", title: "Maillot Domicile Pologne Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8507-100-white-69ef67eb7a1db-1.webp" },
-      { store: "eBay", price: 85.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/335383364581?_skw=Poland+home+soccer+jersey+2025+2026&hash=item4e166803e5%3Ag%3AbicAAeSwO6Vp8Z4y&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 White Home Poland National Team Mens Size Large Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/bicAAeSwO6Vp8Z4y/s-l225.jpg" },
+      { store: "eBay", price: 85.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/335383364581?_skw=Poland+home+soccer+jersey&hash=item4e166803e5%3Ag%3AbicAAeSwO6Vp8Z4y&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 White Home Poland National Team Mens Size Large Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/bicAAeSwO6Vp8Z4y/s-l225.jpg" },
     ],
   },
 {
@@ -26140,7 +26143,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45176794898&a=3013769&m=77026", title: "Camisola Alternativa 26 da Suécia", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe997c8d01c674daf849fa5b345c57697_9366%2FCamisola_Alternativa_26_da_Suecia_Azul_JM5810_21_model.jpg&feedId=92150&k=a076a75afce6c6aa874a4eabd830990900a713d9" },
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5810-maillot-exterieur-suede-coupe-du-monde-2026-royblu", title: "Maillot Extérieur Suède Coupe du Monde 2026", inStock: true, sizes: ["S", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jm5810_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjm5810-maillot-exterieur-suede-coupe-du-monde-2026-royblu", title: "Maillot Extérieur Suède Coupe du Monde 2026", inStock: true, sizes: ["S", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jm5810_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 36.75, shipping: 8.45, currency: "USD", url: "https://www.ebay.com/itm/147428465982?_skw=Sweden+away+soccer+jersey+2025+2026&hash=item22536bdd3e%3Ag%3AKgAAAeSw1mNqUKbn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Sweden 2026 Away MEN Jersey Blue", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/KgAAAeSw1mNqUKbn/s-l225.jpg" },
+      { store: "eBay", price: 108.1, shipping: 18.02, currency: "USD", url: "https://www.ebay.com/itm/800389306850?_skw=Sweden+away+soccer+jersey&hash=itemba5aeb99e2%3Ag%3AxHYAAeSwDCFqYNml&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Sweden Adidas 2026 Away Soccer Football KC3041 Authentic Jersey Men XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/xHYAAeSwDCFqYNml/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fblagult-away-soccer-jersey-2026-world-cup%3Fvariant%3D43253818196073", title: "Blagult Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Swedenhomematch-2.jpg?v=1782116033" },
     ],
   },
@@ -26161,7 +26164,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44991526975&a=3013769&m=77008", title: "Camiseta primera equipación Suecia 26", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8078b6330377406b88624db1ff9e2ea1_9366%2FCamiseta_primera_equipacion_Suecia_26_Amarillo_JM5814_21_model.jpg&feedId=92152&k=ed16599cca4e902d56ba6e3accfa61693a562c97" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965193&a=3013769&m=77026", title: "Camisola Principal 26 da Suécia", inStock: true, sizes: ["XS", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8078b6330377406b88624db1ff9e2ea1_9366%2FCamisola_Principal_26_da_Suecia_Amarelo_JM5814_21_model.jpg&feedId=92150&k=48d8ee685aaf620daeb779d166827fcc2ff61664" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsweden-home-soccer-jersey-2026-world-cup%3Fvariant%3D42693422547049", title: "Sweden Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Sweden_Home_Soccer_Jersey_2026_World_Cup_2.webp?v=1763517594" },
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298584612163?_skw=Sweden+home+soccer+jersey+2025+2026&hash=item4585079d43%3Ag%3AHBsAAeSwXiNqYXpe&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Sweden 2026 Adidas Climacool Home Soccer Jersey Shirt Kit JM5814 NWT SFF XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/HBsAAeSwXiNqYXpe/s-l225.jpg" },
+      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298584612163?_skw=Sweden+home+soccer+jersey&hash=item4585079d43%3Ag%3AHBsAAeSwXiNqYXpe&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbRpl61qRmUXyYELiOC%2FNZkhr9lX4mSZEjupmvKkxeCo8ZvdpCe1c6MkzcLLyPExYf%2FJNI3nQ8ajmKRJBCiGsUd1AC8dG%2Fe3GazQusgXuCCODfekWxPViv8qgBeHW1gu5R0rnVid%2BlYyQdcIzE5QW1qxaa1TlCh4mtnDJhr9JG7E2bQzIh4FS%2BDLtYxDobbo%2FmSGWUt%2BUYSeOJu0T96CRpOH58mzoTLS0a7inKkUDak4ilDLsjoPJxLWdqiEd3zXSahSuy0Ej8p%2FqQRtHRh5nRW8cPg5YW9olcgb27Scu1bVA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Sweden 2026 Adidas Climacool Home Soccer Jersey Shirt Kit JM5814 NWT SFF XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/HBsAAeSwXiNqYXpe/s-l225.jpg" },
     ],
   },
 {
@@ -26180,7 +26183,7 @@ const productsData = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094292628&a=3013769&m=77008", title: "Camiseta primera equipación Ucrania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9dba9a5551ff46fa843d3613692d1000_9366%2FCamiseta_primera_equipacion_Ucrania_26_Amarillo_JZ4622_21_model.jpg&feedId=92152&k=c738ad7119d0c36559e23d4d3c30718da9f9a6d6" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096960025&a=3013769&m=77026", title: "Camisola Principal 26 da Ucrânia", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9dba9a5551ff46fa843d3613692d1000_9366%2FCamisola_Principal_26_da_Ucrania_Amarelo_JZ4622_21_model.jpg&feedId=92150&k=ef339aa8b28ce981c65c26c0736298ee25d4e013" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fukraine-2026-world-cup-home-football-jersey%3Fvariant%3D42833487724649", title: "Ukraine 2026 World Cup Home Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/UkraineHomeSoccerJerseyWorldCup2026_2.webp?v=1768997713" },
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377345117085?_skw=Ukraine+home+soccer+jersey+2025+2026&hash=item57db858b9d%3Ag%3APV8AAeSwMndqaRZM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ukraine adidas Soccer Jersey 2026 FIFA World Cup Home Yellow Large NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PV8AAeSwMndqaRZM/s-l225.jpg" },
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377345117085?_skw=Ukraine+home+soccer+jersey&hash=item57db858b9d%3Ag%3APV8AAeSwMndqaRZM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ukraine adidas Soccer Jersey 2026 FIFA World Cup Home Yellow Large NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PV8AAeSwMndqaRZM/s-l225.jpg" },
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4622-maillot-domicile-ukraine-coupe-du-monde-2026-byello", title: "Maillot Domicile Ukraine Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_jz4622_0.webp" },
     ],
   },
@@ -26196,7 +26199,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 76.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5328-679-maillot-domicile-coree-du-sud-coupe-du-monde-2026-global-red-black-white-club-gold", title: "Maillot Domicile Corée du Sud Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5328-679_01.webp" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fheungmin-7-south-korea-2026-world-cup-home-soccer-jersey%3Fvariant%3D43076625105001", title: "HEUNGMIN #7 South Korea 2026 World Cup Home Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/HEUNGMIN7SouthKoreaHomeJerseyWorldCup2026_1.webp?v=1774841190" },
-      { store: "eBay", price: 65.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358713548349?_skw=South+Korea+home+soccer+jersey+2025+2026&hash=item5384fe5e3d%3Ag%3ARMUAAeSwPpxqHC7e&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "South Korea Team World Cup 2026 Home Player Soccer Jersey Authentic FIT ADV-DRI", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/RMUAAeSwPpxqHC7e/s-l225.jpg" },
+      { store: "eBay", price: 65.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358713548349?_skw=South+Korea+home+soccer+jersey&hash=item5384fe5e3d%3Ag%3ARMUAAeSwPpxqHC7e&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "South Korea Team World Cup 2026 Home Player Soccer Jersey Authentic FIT ADV-DRI", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/RMUAAeSwPpxqHC7e/s-l225.jpg" },
       { store: "FootStoreES", price: 76.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926247&a=3013769&m=65912", title: "Camisa Local Corea del Sur Coupe du monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5328-679_01.webp&feedId=89032&k=c05952fd507e7e46ec394797727453b222901610" },
     ],
   },
@@ -26226,6 +26229,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 83.1, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5339-133-maillot-domicile-usa-coupe-du-monde-2026-sail-midnight-navy-midnight-navy", title: "Maillot Domicile USA Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5339-133_00.webp" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fdest-2-usmnt-usa-outlaws-home-soccer-jersey-2026%3Fvariant%3D43061696528489", title: "Dest #2 USMNT USA Outlaws Home Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Dest_2USMNTHomeJerseyWorldCup2026.webp?v=1774492877" },
+      { store: "eBay", price: 15.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227473434318?_skw=United+States+home+soccer+jersey&hash=item34f67926ce%3Ag%3A6uoAAeSwjRtqfPrx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "USA Home Team Jersey Sport FIFA World Cup United States 2026 Soccer XL US New", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/6uoAAeSwjRtqfPrx/s-l225.jpg" },
     ],
   },
 {
@@ -26241,6 +26245,7 @@ const productsData = [
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fku2880-maillot-domicile-fc-cologne-2026-27-white", title: "Maillot Domicile FC Cologne 2026/27", inStock: true, sizes: ["M", "L", "XL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/u/ku2880.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45183906924&a=3013769&m=77008", title: "Camiseta primera equipación 1. FC KOELN 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3ee37e55c5d4471ab62aa9b1e23646a0_9366%2FCamiseta_primera_equipacion_1._FC_KOELN_26-27_Blanco_KU2880_21_model.jpg&feedId=92152&k=6379a1ddae6fcb386af7517121feeab3e0d58e48" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45183908416&a=3013769&m=77026", title: "Camisola 1. FC KOELN 26/27 Home", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3ee37e55c5d4471ab62aa9b1e23646a0_9366%2FCamisola_1._FC_KOELN_26-27_Home_Branco_KU2880_21_model.jpg&feedId=92150&k=26c0ac914d328c492aba1c7f0372125a3d55cbe0" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/236915919189?_skw=1.+FC+K%C3%B6ln+home+soccer+jersey&hash=item37294a0955%3Ag%3AVzEAAeSwPghqSLBz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Jersey Koln Soccer Home Mens  26-27", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/VzEAAeSwPghqSLBz/s-l225.jpg" },
     ],
   },
 {
@@ -26285,7 +26290,7 @@ const productsData = [
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783165-01-maillot-domicile-senegal-coupe-du-monde-2026-white-wild-green", title: "Maillot Domicile Sénégal Coupe du Monde 2026", inStock: true, sizes: ["S", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-783165-01-white-wild-green-69babe3732673-1.webp" },
       { store: "SportIsGoodFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F783165-01-maillot-domicile-senegal-coupe-du-monde-2026-white-wild-green", title: "Maillot Domicile Sénégal Coupe du Monde 2026", inStock: true, sizes: ["S", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-783165-01-white-wild-green-69babe3732673-1.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsenegal-world-cup-2026-home-soccer-jersey%3Fvariant%3D42693458722921", title: "Senegal World Cup 2026 Home Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SenegalWorldCup2026homeSoccerJersey_5.webp?v=1782899579" },
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336643105732?_skw=Senegal+home+soccer+jersey+2025+2026&hash=item4e617e23c4%3Ag%3A704AAeSwpfdqOg69&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Senegal Home Unisex Soccer Jersey 2026 - M/XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/704AAeSwpfdqOg69/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336643105732?_skw=Senegal+home+soccer+jersey&hash=item4e617e23c4%3Ag%3A704AAeSwpfdqOg69&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Senegal Home Unisex Soccer Jersey 2026 - M/XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/704AAeSwpfdqOg69/s-l225.jpg" },
     ],
   },
 {
@@ -26299,7 +26304,7 @@ const productsData = [
     brand: "puma",
     offers: [
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783218-01-maillot-domicile-suisse-coupe-du-monde-2025-26-red-white", title: "Maillot Domicile Suisse Coupe du Monde 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-783218-01-red-white-1.webp" },
-      { store: "eBay", price: 35.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407057757973?_skw=Switzerland+home+soccer+jersey+2025+2026&hash=item5ec6887715%3Ag%3AJ8QAAeSwKA1qS0PT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Switzerland 2026 World Cup Shirt Home / Away Jersey New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/J8QAAeSwKA1qS0PT/s-l225.jpg" },
+      { store: "eBay", price: 110.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398264740688?_skw=Switzerland+home+soccer+jersey&hash=item5cba6dab50%3Ag%3A-3YAAeSwTF5qd7W8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Switzerland World Cup 2026 Home Jersey #9 Manzambi: Size Medium *NWT*", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/-3YAAeSwTF5qd7W8/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fswitzerland-2026-world-cup-home-jersey%3Fvariant%3D42670255079529", title: "Switzerland 2026 World Cup Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SwitzerlandHomeSoccerJersey2026_1.jpg?v=1764818298" },
       { store: "FootStoreES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43945475664&a=3013769&m=65912", title: "Camisa Local Suiza Coupe du Monde 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-783218-01-red-white-1.webp&feedId=89032&k=159797d2e2039248cf013e1c60e40afbb6bfae8f" },
     ],
@@ -26317,7 +26322,7 @@ const productsData = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8852-614-maillot-domicile-turquie-coupe-du-monde-2026-sport-red", title: "Maillot Domicile Turquie Coupe du Monde 2026", inStock: true, sizes: ["S", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8852-614-sport-red-69ef68055d20c-1.webp" },
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8852-614-maillot-domicile-turquie-coupe-du-monde-2026-sport-red", title: "Maillot Domicile Turquie Coupe du Monde 2026", inStock: true, sizes: ["S", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8852-614-sport-red-69ef68055d20c-1.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fturkey-home-soccer-jersey-2026-world-cup%3Fvariant%3D43115564859497", title: "Turkey Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/TurkeyHomeJerseyWorldCup2026_1.webp?v=1775803628" },
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327227497316?_skw=Turkey+home+soccer+jersey+2025+2026&hash=item4c30475b64%3Ag%3AbnsAAeSwFONqOac1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TURKEY 2026 HOME SOCCER JERSEY SHIPS FREE FROM FLORIDA get it in 2-3 days", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/bnsAAeSwFONqOac1/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327227497316?_skw=Turkey+home+soccer+jersey&hash=item4c30475b64%3Ag%3AbnsAAeSwFONqOac1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TURKEY 2026 HOME SOCCER JERSEY SHIPS FREE FROM FLORIDA get it in 2-3 days", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/bnsAAeSwFONqOac1/s-l225.jpg" },
     ],
   },
 {
@@ -26345,7 +26350,7 @@ const productsData = [
     brand: "macron",
     offers: [
       { store: "SportIsGoodFR", price: 57.08, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400070810001-maillot-domicile-ecosse-2025-26-bleu-marine-blanc", title: "Maillot Domicile Écosse 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-400070810001-6a7b4e73643d2-1.webp" },
-      { store: "eBay", price: 99.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298584642765?_skw=Scotland+home+soccer+jersey+2025+2026&hash=item45850814cd%3Ag%3AKLwAAeSwdhFqbAJ%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Scotland Climacool 2026 Adidas Home Soccer Jersey Shirt Kit KE4085 NWT Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/KLwAAeSwdhFqbAJ~/s-l225.jpg" },
+      { store: "eBay", price: 72.06, shipping: 18.02, currency: "USD", url: "https://www.ebay.com/itm/800514537049?_skw=Scotland+home+soccer+jersey&hash=itemba62627659%3Ag%3AFFAAAeSwCclqgOcj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Scotland Adidas Home 2026 World Cup Jersey Soccer Football KE4085 Men XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/FFAAAeSwCclqgOcj/s-l225.jpg" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44743484868&a=3013769&m=77026", title: "Camisola Principal 26 da Escócia", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc4bde97f23d2492ebd328de70e5d97d0_9366%2FCamisola_Principal_26_da_Escocia_Azul_KE4085_21_model.jpg&feedId=92150&k=0e565782ea1865c992df2bd758ef5295aaa28824" },
     ],
   },
@@ -26363,7 +26368,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwales-2026-world-cup-home-jersey%3Fvariant%3D42671936143465", title: "Wales 2026 World Cup Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Wales_2026_World_Cup_Home_Jersey.png?v=1762756538" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44905094578&a=3013769&m=77008", title: "Camiseta primera equipación Gales 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0bdadf6003504cc3a0f8d6f1a4bc44bc_9366%2FCamiseta_primera_equipacion_Gales_26_Rojo_KA1329_21_model.jpg&feedId=92152&k=6e17900bd86d1726dd9b645269e7b30d01816adc" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44905095277&a=3013769&m=77026", title: "Camisola Principal 26 do País de Gales", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0bdadf6003504cc3a0f8d6f1a4bc44bc_9366%2FCamisola_Principal_26_do_Pais_de_Gales_Vermelho_KA1329_21_model.jpg&feedId=92150&k=5cf10baf49d3bc22f353d13f6263ca4703713622" },
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377345099039?_skw=Wales+home+soccer+jersey+2025+2026&hash=item57db85451f%3Ag%3ArXoAAeSwgblqaRYY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Soccer Jersey Wales 2026 World Cup Home Red Cymru Large NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/rXoAAeSwgblqaRYY/s-l225.jpg" },
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377345099039?_skw=Wales+home+soccer+jersey&hash=item57db85451f%3Ag%3ArXoAAeSwgblqaRYY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Soccer Jersey Wales 2026 World Cup Home Red Cymru Large NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/rXoAAeSwgblqaRYY/s-l225.jpg" },
     ],
   },
 {
@@ -26380,7 +26385,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45304062367&a=3013769&m=77008", title: "Camiseta segunda equipación CR Flamengo 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1b8978e4fc634243ba83ae2398962fc5_9366%2FCamiseta_segunda_equipacion_CR_Flamengo_26_Blanco_JM5653_21_model.jpg&feedId=92152&k=228b9877ce158eda6ce4709015a8ae249576d195" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45304055910&a=3013769&m=77026", title: "Camisola CR Flamengo 26 Away", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1b8978e4fc634243ba83ae2398962fc5_9366%2FCamisola_CR_Flamengo_26_Away_Branco_JM5653_21_model.jpg&feedId=92150&k=44ad91fd33b2500a4d320401c4314f619035df61" },
       { store: "FootStoreES", price: 150.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45470007017&a=3013769&m=65912", title: "Maillot Exterior Auténtico Flamengo CR 2026", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jm5654_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=1968e803f9e2492a13700969b08fbfa3d3235c83" },
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318704187643?_skw=Flamengo+away+soccer+jersey+2025+2026&hash=item4a343ff8fb%3Ag%3AXaEAAeSwpAlqeRER&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "C.R. Flamengo Jersey Away ll -\"Urubu\" 2025/26 - Men's - New", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/XaEAAeSwpAlqeRER/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318704187643?_skw=Flamengo+away+soccer+jersey&hash=item4a343ff8fb%3Ag%3AXaEAAeSwpAlqeRER&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "C.R. Flamengo Jersey Away ll -\"Urubu\" 2025/26 - Men's - New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/XaEAAeSwpAlqeRER/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcr-flamengo-away-soccer-jersey-2025-26%3Fvariant%3D42737599283305", title: "CR Flamengo Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/CR_Flamengo_25_Away_Jersey_6.webp?v=1765258789" },
     ],
   },
@@ -26396,7 +26401,7 @@ const productsData = [
     offers: [
       { store: "PlanetFoot", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-japon-exterieur-homme-2026-blanc-coupe-du-monde-2026-fifa-climacool%3Fvariant%3D53907009044821", title: "Maillot Japon Extérieur Homme 2026 Blanc - Coupe du Monde", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-football-japon-exterieur-homme-blanc-climacool-2026-jn18721.webp?v=1778855430" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fkamada-15-japan-2026-world-cup-away-soccer-jersey%3Fvariant%3D47715698344041", title: "Kamada #15 Japan 2026 World Cup Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/japanawayfan_15-2.webp?v=1782209211" },
-      { store: "eBay", price: 33.59, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137424082673?_skw=Japan+away+soccer+jersey+2025+2026&hash=item1fff1d16f1%3Ag%3A2FUAAeSw8ShqPPJ%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Japan Away Mens Jersey 2026 S-2XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/2FUAAeSw8ShqPPJ~/s-l225.jpg" },
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198566208333?_skw=Japan+away+soccer+jersey&hash=item2e3b77e34d%3Ag%3A7zEAAeSwd8VqfKdz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FIFA Adidas Japan 26 Away Jersey Version FANS - Size M Slim fit  1.1", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/7zEAAeSwd8VqfKdz/s-l225.jpg" },
     ],
   },
 {
@@ -26429,7 +26434,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-perou-exterieur-2026-noir-jl8660%3Fvariant%3D54053027643733", title: "Maillot Pérou Extérieur 2026 Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8842-1.jpg?v=1780401337" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267908225&a=3013769&m=77008", title: "Camiseta segunda equipación Perú 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F80e5b2631079420b90ee605feaf8c0bf_9366%2FCamiseta_segunda_equipacion_Peru_26_Negro_JL8660_21_model.jpg&feedId=92152&k=6c56dd666d5039a79407080efacc91fa30368135" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267897417&a=3013769&m=77026", title: "Camisola Alternativa 26 do Peru", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F80e5b2631079420b90ee605feaf8c0bf_9366%2FCamisola_Alternativa_26_do_Peru_Preto_JL8660_21_model.jpg&feedId=92150&k=a5957b21594cb8fc3eae359e470d07c95f4ed0ad" },
-      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800140870744?_skw=Peru+away+soccer+jersey+2025+2026&hash=itemba4c1cc458%3Ag%3A5JgAAeSwlC9qJhaC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "peru jersey 2026 away", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/5JgAAeSwlC9qJhaC/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800140870744?_skw=Peru+away+soccer+jersey&hash=itemba4c1cc458%3Ag%3A5JgAAeSwlC9qJhaC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "peru jersey 2026 away", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5JgAAeSwlC9qJhaC/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fperu-away-football-jersey-world-cup-2026%3Fvariant%3D47894556442729", title: "Peru Away Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Pureawayfan2026_27_1.webp?v=1786611310" },
     ],
   },
@@ -26447,7 +26452,7 @@ const productsData = [
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl8739-maillot-exterieur-chili-coupe-du-monde-2026-clear-brown", title: "Maillot Extérieur Chili Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl8739_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjl8739-maillot-exterieur-chili-coupe-du-monde-2026-clear-brown", title: "Maillot Extérieur Chili Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl8739_1_apparel_photography_front_center_view_white.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchile-away-soccer-jersey-2026-world-cup%3Fvariant%3D43126248767593", title: "Chile Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ChileAwayJerseyWorldCup2026_1.webp?v=1776159794" },
-      { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236990102618?_skw=Chile+away+soccer+jersey+2025+2026&hash=item372db5fc5a%3Ag%3ASBgAAeSw3T9qdOj5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chile 2026 Away Osorio 11 Adidas XL Soccer Jersey Football Shirt", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/SBgAAeSw3T9qdOj5/s-l225.jpg" },
+      { store: "eBay", price: 68.46, shipping: 14.2, currency: "USD", url: "https://www.ebay.com/itm/377399750892?_skw=Chile+away+soccer+jersey&hash=item57dec730ec%3Ag%3AoogAAeSwgsZqdMx8&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbgl5telrltnyXHabp%2BGshGMM%2FA0odory6jrWgoAqqsF2KDlAWOogKMpSHTep4fcscI9oEu9Z%2F3Hod7RHjisU3xFPZV8MkMgc0PjCqzku4SxAsFXB6SnXs6pqp6IO8HHi0DGwsvluUaRwJgifvaZ3iCaAKAV8N%2FuvdgP14mmOGqq9i63eDdQPcXxG%2B10Cgzf5JYF2q2XnlsUYC6ZNNTNqtv0aMQVTeeyNQlPJszrWQGn5kMkpRFD21bC4h%2Bs7m%2Fecx84TyCBlbYPlscWL3Zcc94RPtv4%2Fdg1fRDtk0%2B3Bmyaw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Chile Adidas Away 2026 Climacool Jersey Soccer Football JL8739 Men Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/oogAAeSwgsZqdMx8/s-l225.jpg" },
       { store: "FootStoreES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45381240449&a=3013769&m=65912", title: "Maillot Exterior Chile Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl8739_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=9ed50fee97cde8f0ea8177b2c5c915ad3946e5cb" },
       { store: "SportIsGoodES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45380187898&a=3013769&m=65906", title: "Maillot Exterior Chile Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl8739_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9ed50fee97cde8f0ea8177b2c5c915ad3946e5cb" },
     ],
@@ -26469,7 +26474,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkg8542-maillot-domicile-chili-coupe-du-monde-2026-active-red", title: "Maillot Domicile Chili Coupe du Monde 2026", inStock: true, sizes: ["XS", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_kg8542_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-chili-domicile-homme-2026-rouge%3Fvariant%3D51806475387221", title: "Maillot Chili Domicile Homme 2026 Rouge - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-chili-2026-rouge-homme-adidas-planetfoot1_6259db99-8dac-4809-b018-b3828e1913ae.webp?v=1763038439" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchile-home-soccer-jersey-2026-world-cup%3Fvariant%3D42663618510953", title: "Chile Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/chile_home_2026.png?v=1762399561" },
-      { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307111162030?_skw=Chile+home+soccer+jersey+2025+2026&hash=item47814070ae%3Ag%3AK7QAAeSwZy5qdKIq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026 Home Chile National Team Futbol/Soccer Jersey Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/K7QAAeSwZy5qdKIq/s-l225.jpg" },
+      { store: "eBay", price: 30.12, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137519410642?_skw=Chile+home+soccer+jersey&hash=item2004cbadd2%3Ag%3AOngAAeSwfE5qU8Po&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chile Soccer Jersey Adidas Mens Small 25/26 Home Kit Slim Fit NWT Red", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/OngAAeSwfE5qU8Po/s-l225.jpg" },
       { store: "FootStoreES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831951&a=3013769&m=65912", title: "Camisa Local Chile Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_kg8542_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=56b53a8efe56714b20b7acf587ce0b7fe4e8e449" },
       { store: "SportIsGoodES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301932807&a=3013769&m=65906", title: "Camisa Local Chile Coupe du Monde 2026", inStock: true, sizes: ["XS", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_kg8542_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=56b53a8efe56714b20b7acf587ce0b7fe4e8e449" },
     ],
@@ -26487,7 +26492,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45137170093&a=3013769&m=77008", title: "Camiseta Escocia 26 segunda equipación", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F120ed2e552ee42358f6c390c1ed6cca2_9366%2FCamiseta_Escocia_26_segunda_equipacion_Rojo_JL6901_21_model.jpg&feedId=92152&k=28d013e10f27e1f1500dbcf4d800fd9e2c7e43c2" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45137169480&a=3013769&m=77026", title: "Camisola Alternativa 26 da Escócia", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F120ed2e552ee42358f6c390c1ed6cca2_9366%2FCamisola_Alternativa_26_da_Escocia_Vermelho_JL6901_21_model.jpg&feedId=92150&k=20d4286db3c0bedd31c48a1e0e2b7e67d8bdd9e8" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fscotland-away-soccer-jersey-2026-world-cup%3Fvariant%3D42693429690473", title: "Scotland Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Scotland_Away_Soccer_Jersey_2026_World_Cup_2.webp?v=1763517847" },
-      { store: "eBay", price: 99.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188740950294?_skw=Scotland+away+soccer+jersey+2025+2026&hash=item2bf1d65916%3Ag%3AjZgAAeSw2S9qcZW%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Men's Scotland 2026 Away Authentic Jersey KC2944 BNWOT Size Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/jZgAAeSw2S9qcZW~/s-l225.jpg" },
+      { store: "eBay", price: 95.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178286145930?_skw=Scotland+away+soccer+jersey&hash=item2982aeb18a%3Ag%3AJGsAAeSwoZlqSuN4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Scotland Away Jersey 'Trace Scarlet' | World Cup 2026 Size Small S NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/JGsAAeSwoZlqSuN4/s-l225.jpg" },
     ],
   },
 {
@@ -26503,7 +26508,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44905089934&a=3013769&m=77008", title: "Camiseta segunda equipación Gales 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2bebde2e5f8c4258a82ff6c3e237ca17_9366%2FCamiseta_segunda_equipacion_Gales_26_Blanco_KA1235_21_model.jpg&feedId=92152&k=66a456ea702dc64567c90b33df233d8edfbc197d" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44905087066&a=3013769&m=77026", title: "Camisola Alternativa 26 do País de Gales", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2bebde2e5f8c4258a82ff6c3e237ca17_9366%2FCamisola_Alternativa_26_do_Pais_de_Gales_Branco_KA1235_21_model.jpg&feedId=92150&k=6e39fcbd6356e8081d5795b867e31075061a9d20" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwales-2026-world-cup-away-football-jersey%3Fvariant%3D42712396824681", title: "Wales 2026 World Cup Away Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Wales_Away_Jersey_World_Cup_2026_1.webp?v=1764229093" },
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377354311362?_skw=Wales+away+soccer+jersey+2025+2026&hash=item57dc11d6c2%3Ag%3AthEAAeSwgPtqaQ3y&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Wales 2026 Away Soccer Jersey Kit White Cymru Size L NWT FAW Draig Goch", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/thEAAeSwgPtqaQ3y/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800391295686?_skw=Wales+away+soccer+jersey&hash=itemba5b09f2c6%3Ag%3A8qYAAeSwlcJqYVav&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Wales Away Jersey 2026 - Size Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/8qYAAeSwlcJqYVav/s-l225.jpg" },
     ],
   },
 {
@@ -26520,7 +26525,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965259&a=3013769&m=77026", title: "Camisola Principal 26 do Peru", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F21283e1da2fc4df58f59c38a16038a49_9366%2FCamisola_Principal_26_do_Peru_Branco_JL8651_21_model.jpg&feedId=92150&k=66ff6b6968fd02bbaa0be96ea39e40beed4939a5" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-perou-domicile-26-blanc%3Fvariant%3D53907019530581", title: "Maillot Pérou Domicile 26 Homme Blanc - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-perou-domicile-26-blanc-climacool-jl86511.avif?v=1780585089" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fperu-home-football-jersey-world-cup-2026%3Fvariant%3D42699194892393", title: "Peru Home Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Peru_Home_Jersey_World_Cup_2026_2.webp?v=1763705061" },
-      { store: "eBay", price: 35.0, shipping: 6.0, currency: "USD", url: "https://www.ebay.com/itm/198526267558?_skw=Peru+home+soccer+jersey+2025+2026&hash=item2e391670a6%3Ag%3AW4EAAeSwBGxqZna2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Peru National Team 2026 Adidas Home / Away Soccer Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/W4EAAeSwBGxqZna2/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 6.0, currency: "USD", url: "https://www.ebay.com/itm/198526267558?_skw=Peru+home+soccer+jersey&hash=item2e391670a6%3Ag%3AW4EAAeSwBGxqZna2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Peru National Team 2026 Adidas Home / Away Soccer Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/W4EAAeSwBGxqZna2/s-l225.jpg" },
     ],
   },
 {
@@ -26552,7 +26557,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265206221&a=3013769&m=77008", title: "Camiseta segunda equipación Ucrania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbc5cf89dd6a940119b3c34e914766ea3_9366%2FCamiseta_segunda_equipacion_Ucrania_26_Azul_JZ7005_21_model.jpg&feedId=92152&k=60c3c6e1be0f74fa956e5fe34971ea2a132aa2c0" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44267898084&a=3013769&m=77026", title: "Camisola Alternativa 26 da Ucrânia", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbc5cf89dd6a940119b3c34e914766ea3_9366%2FCamisola_Alternativa_26_da_Ucrania_Azul_JZ7005_21_model.jpg&feedId=92150&k=0501b43201c4a30885722c5edbb8c4345993c773" },
       { store: "FootStoreFR", price: 80.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz7005-maillot-exterieur-ukraine-coupe-du-monde-2026-globlu", title: "Maillot Extérieur Ukraine Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jz7005_1_apparel_photography_front_center_view_white.webp" },
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298579219656?_skw=Ukraine+away+soccer+jersey+2025+2026&hash=item4584b554c8%3Ag%3A1S4AAeSwSihp8XVp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ukraine National Team 2026 Adidas Away Soccer Jersey Shirt Kit JZ7005 NWT Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/1S4AAeSwSihp8XVp/s-l225.jpg" },
+      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298579219656?_skw=Ukraine+away+soccer+jersey&hash=item4584b554c8%3Ag%3A1S4AAeSwSihp8XVp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ukraine National Team 2026 Adidas Away Soccer Jersey Shirt Kit JZ7005 NWT Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/1S4AAeSwSihp8XVp/s-l225.jpg" },
     ],
   },
 
@@ -26568,7 +26573,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45562787612&a=3013769&m=65912", title: "Milan AC Camiseta de Entrenamiento", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F786646-20.webp&feedId=89032&k=872707411c9d3a14f8aaa31c4645febdc88d2efa" },
       { store: "SportIsGoodES", price: 36.41, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45131351898&a=3013769&m=65906", title: "Camiseta de calentamiento AC Milan 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_782388-13_1.webp&feedId=89044&k=fd9a4c81501dbe965ef68e68763908bbb4418b5d" },
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307062648321?_skw=AC+Milan+training+soccer+jersey&hash=item477e5c2e01%3Ag%3AO9cAAeSwgPtqVfmP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  Gold AC Milan 2026/27 Training Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/O9cAAeSwgPtqVfmP/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800482156065?_skw=AC+Milan+training+soccer+jersey&hash=itemba60745e21%3Ag%3AAe8AAeSwbG9qc8ML&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmvAFvzks47gvAFy3yqHNHQy7F3Bwr%2FfzIpepVjKo0VN69XVQ3O%2Fbo3FnHGFqrq67EoE5xcBgQ3IJR5BcN3l1pydNNKDSKCyvF%2Fp5sccKo3fdhOsAMsBNJU1rI%2BPJwKlkjIRrVE94GRaRVHSwz8LXGP%2FWcVO5MiGSC8FSNd09aXsdkNelpA%2BO77a2DUOufduzVlBZdNNREUFQeVzjbceBQh%2FDSBDFItQIgahiln6AYQKTdisqs5vDIUdtWtpmrBqLWSf%2BRmCky8PH6HImXOXAw%2FAuxF679n9gstYMCQzz1ieD%2B0Jl628B8g%2FHjwi6tRQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Men’s Puma AC Milan Training Jersey M Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Ae8AAeSwbG9qc8ML/s-l225.jpg" },
     ],
   },
 {
@@ -26630,7 +26635,7 @@ const productsData = [
       { store: "FootStoreES", price: 53.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45526320169&a=3013769&m=65912", title: "Camiseta de entrenamiento Alemania Tiro Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_07_adidas_kb4440_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=596b6bf7bee49c1e5359b819b4a70482fd7b09c4" },
       { store: "AdidasES", price: 60.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265205390&a=3013769&m=77008", title: "Camiseta de calentamiento segunda equipación Alemania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb9bf8fc6e8049d9b5abc036b336c26a_9366%2FCamiseta_de_calentamiento_segunda_equipacion_Alemania_26_Turquesa_JZ4578_21_model.jpg&feedId=92152&k=67603d3107327715488c97dea0e0eefd4422972d" },
       { store: "AdidasPT", price: 65.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965610&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Alemanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb3728813a35a42babab5894a0af4fb14_9366%2FCamisola_de_Treino_Tiro_26_da_Alemanha_Branco_KB4492_21_model.jpg&feedId=92150&k=19444333659af9a8a5e0d18ef5ec0c5ee1a56378" },
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127681525187?_skw=Germany+training+soccer+jersey&hash=item1dba6975c3%3Ag%3A4oAAAeSwIzRpjm9n&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZgX2B99XsZ4iyrvdIiDX%2B8qJumJFRff%2FVrwK76CZsOpZMCw%2BWBywL1UTvzLxvWZs%2F3JvFR5VRJTVX9rkiBjPwiY4P8VATiOVk%2FSCuGQubfdfRaOOkXeRfCqp3Mo0JNXuClEbvTvL4S15I188xFT%2FypbHfB28qyWEbrpH8fNdNtP4vaenK5u2vac4ReVXeauOubUzaXWTOrzopVEK1ynQJGDNrXMyMqZXh1zGFoN3UL01W6eg8so69zF0Vk%2BqQl08CW9j9m9DUnr5w%2FvCpyK1GcooEeOi1j%2BjfDhuVTG0GhBw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Germany Training Jersey 2026 - Player Version Slim Fit", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4oAAAeSwIzRpjm9n/s-l225.jpg" },
+      { store: "eBay", price: 69.99, shipping: 24.99, currency: "USD", url: "https://www.ebay.com/itm/187746009940?_skw=Germany+training+soccer+jersey&hash=item2bb688c354%3Ag%3AXmIAAeSwBexpGYXj&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbdVZXFdUWoioP8mxmvgEjFIDCWRc%2BAQwpEUppUdgzusvwaIOfWkp6t6IH6PtHDpOlGzkaN13Px74LJDmzt2TJ7HD5IQm0lMwG6nPsYwM7wTchoXUmNmTysoAU8e0lhwYuvaU5JY5SPp2zWWl%2F2aHdd09cDHT%2FMZxJrzl9A6Os1UTone2WkqYVyL8B23aiTL6xoNwiQRYlBw3vgF86G1Ephtz3v8IMdTAqMYcuKw7E6oc%2F%2BWVN%2B0DSGyIwx16E7f56x%2FTl6jK0RFk6mmUN8rp4ju9xomHRrOQILagw9u4etRP37dVJO64DCCznY4UHasmc%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Germany 26 Tiro Mens Training Soccer Jersey Asia-Fit KB4489", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/XmIAAeSwBexpGYXj/s-l225.jpg" },
     ],
   },
 {
@@ -26665,7 +26670,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096967250&a=3013769&m=77026", title: "Camisola Principal 26 da Argélia", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa14be0202ceb466489c677b61f3fdbc3_9366%2FCamisola_Principal_26_da_Argelia_Branco_JN4457_21_model.jpg&feedId=92150&k=d078cdfd8769f92b821571ea1e54ac9a8b6123a7" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-algerie-domicile-2026-homme%3Fvariant%3D52460359516501", title: "Maillot Algérie Domicile 2026 Blanc - Homme - Adidas", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-algerie-domicile-2026-officiel1.webp?v=1770993064" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Falgeria-home-football-jersey-world-cup-2026%3Fvariant%3D42699152490601", title: "Algeria Home Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Algeria_Home_Jersey_World_Cup_2026_5.webp?v=1763696556" },
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188730381892?_skw=Algeria+home+soccer+jersey+2025+2026&hash=item2bf1351644%3Ag%3AD2EAAeSwJM5qbsnE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Authentic 2026 World Cup Algeria Home Jersey Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/D2EAAeSwJM5qbsnE/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188730381892?_skw=Algeria+home+soccer+jersey&hash=item2bf1351644%3Ag%3AD2EAAeSwJM5qbsnE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Authentic 2026 World Cup Algeria Home Jersey Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/D2EAAeSwJM5qbsnE/s-l225.jpg" },
       { store: "FootStoreFR", price: 49.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz0265-maillot-domicile-algerie-preshi-2026-magic-beige", title: "Maillot Domicile Algérie Preshi 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz0265_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 49.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz0265-maillot-domicile-algerie-preshi-2026-magic-beige", title: "Maillot Domicile Algérie Preshi 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz0265_1_apparel_photography_front_center_view_white.webp" },
     ],
@@ -26699,7 +26704,7 @@ const productsData = [
       { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269889810&a=3013769&m=65912", title: "Maillot de entrenamiento Argentina Tiro Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jy7029_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=be01124d75c396e033ee0ae9c0d88f9a30fbb800" },
       { store: "AdidasES", price: 60.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44265204207&a=3013769&m=77008", title: "Camiseta calentamiento Argentina 26 segunda equipación", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffb6b7590678a47a48d5d7a9a45e7c9da_9366%2FCamiseta_calentamiento_Argentina_26_segunda_equipacion_Azul_JY9535_21_model.jpg&feedId=92152&k=8e318971a87f79bcecea94d72921efdb11e3d664" },
       { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096963956&a=3013769&m=77026", title: "Camisola de treino Tiro 26 da Argentina", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff32ba7b0e74e4403a10bf1b74a3d6c6a_9366%2FCamisola_de_treino_Tiro_26_da_Argentina_Branco_JY7035_21_model.jpg&feedId=92150&k=cf10e9361aac91ad173027cb49fdbd74696b7fdb" },
-      { store: "eBay", price: 28.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206359960669?_skw=Argentina+training+soccer+jersey&hash=item300c031c5d%3Ag%3AqwcAAeSwh8lqNg-p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Messi Argentina #10 Football Jersey – Soccer Match & Training Shirt", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/qwcAAeSwh8lqNg-p/s-l225.jpg" },
+      { store: "eBay", price: 28.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206359960669?_skw=Argentina+training+soccer+jersey&hash=item300c031c5d%3Ag%3AqwcAAeSwh8lqNg-p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Messi Argentina #10 Football Jersey – Soccer Match & Training Shirt", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/qwcAAeSwh8lqNg-p/s-l225.jpg" },
     ],
   },
 {
@@ -26716,7 +26721,7 @@ const productsData = [
       { store: "FootStoreFR", price: 59.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1797-maillot-prematch-arsenal-2025-26-pure-ruby", title: "Maillot Prematch Arsenal 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj1797_pure-ruby_1.webp" },
       { store: "SportIsGoodES", price: 47.76, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45138418204&a=3013769&m=65906", title: "Camiseta de entrenamiento Arsenal 2025/26", inStock: false, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj1816_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=6f3a07eb04f5d4d75792085f3bffa00369e2037f" },
       { store: "AdidasPT", price: 77.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44212075557&a=3013769&m=77026", title: "Camisola de Treino Arsenal FC Places+Faces", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F35b040c647404aa0b566cc6aab5ba410_9366%2FCamisola_de_Treino_Arsenal_FC_PlacesFaces_Preto_KC1189_HM1.jpg&feedId=92150&k=3642cf533bac060e12a305032b0fd28d5f0cd7e5" },
-      { store: "eBay", price: 150.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206200271352?_skw=Arsenal+training+soccer+jersey&hash=item30027e71f8%3Ag%3AA9EAAeSwi0Vp1%7EP9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Adidas Arsenal Pro Training Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/A9EAAeSwi0Vp1~P9/s-l225.jpg" },
+      { store: "eBay", price: 150.0, shipping: 11.0, currency: "USD", url: "https://www.ebay.com/itm/206200271352?_skw=Arsenal+training+soccer+jersey&hash=item30027e71f8%3Ag%3AA9EAAeSwi0Vp1%7EP9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Adidas Arsenal Pro Training Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/A9EAAeSwi0Vp1~P9/s-l225.jpg" },
       { store: "AdidasES", price: 70.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45585792984&a=3013769&m=77008", title: "Camiseta calentamiento Arsenal FC 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8d581065db594bcab35b15621e5aa5e5_9366%2FCamiseta_calentamiento_Arsenal_FC_26_Burgundy_JZ6906_21_model.jpg&feedId=92152&k=0cdf4c13141c7b5eb1899dfd0aebfc11759405a2" },
     ],
   },
@@ -26732,7 +26737,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 46.76, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41624817904&a=3013769&m=65912", title: "Maillot Prematch Atlético de Madrid Academy Pro 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj7136-614-phsfm001.webp&feedId=89032&k=d2b96b97704fbdf710f755eb2cf7ae03320d7604" },
       { store: "FootStoreFR", price: 45.56, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7136-614-maillot-prematch-atletico-madrid-academy-pro-2025-26-sport-red-white", title: "Maillot Prematch Atlético Madrid Academy Pro 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj7136-614-phsfm001.jpg" },
-      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287337980689?_skw=Atl%C3%A9tico+Madrid+pre-match+soccer+jersey&hash=item42e6ada311%3Ag%3A7YIAAeSwZZBqCnYL&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbDm8qC%2FTSrZp%2BdRymD4%2BpLjTgvyX2L9qWXSruD2054hfL0ey0DDGXhxjRAUp8zg0y1yntNkorzYZ2oLxjSaDdvH9Aa2pXZCsyyzpMuh8FMrWGccpdpOuLQWPCdqwnU8jHXi2VLp8pbcWAjeKHF8VhVEue83auwLxQQgUYRwk0ea0GnvMBI2laPoqw%2FWvRi%2FqQSnuv7YMgnL8zpa%2FvQQwTHDFsOeDwvX1lurAmPrR4kj9p8y6KWp3Qv6TirG%2BkFKcRwPb4zzTeX8e6BuSgmuXJQFzyaUHgYtwz9ck1w0yuvChBF3P%2FyCbrtMXejGib6FkU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size L- NEW Nike Atletico Madrid Medium 25/26 Pre-Match Jersey IF3965-010 NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/7YIAAeSwZZBqCnYL/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/236952007958?_skw=Atl%C3%A9tico+Madrid+pre-match+soccer+jersey&hash=item372b70b516%3Ag%3AAR4AAeSwb7Bp2WBg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Atletico Madrid Medium 25/26 Academy Pro Pre-Match Jersey IF3965-010 NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/AR4AAeSwb7Bp2WBg/s-l225.jpg" },
     ],
   },
 {
@@ -26777,7 +26782,7 @@ const productsData = [
       { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45515701108&a=3013769&m=65912", title: "Maillot de entrenamiento Bélgica Tiro Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_kb3408_0.webp&feedId=89032&k=3783918bd42052979e5281db0e5dd094ecfb1042" },
       { store: "AdidasES", price: 55.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094292277&a=3013769&m=77008", title: "Camiseta de entrenamiento Bélgica 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2dc935a8b17f4a5dacd9ddd665f20be4_9366%2FCamiseta_de_entrenamiento_Belgica_26_Rojo_KB3408_21_model.jpg&feedId=92152&k=a08df63a814114a16625a96079fa11e6ae6b9dc7" },
       { store: "AdidasPT", price: 55.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096960032&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Bélgica", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2dc935a8b17f4a5dacd9ddd665f20be4_9366%2FCamisola_de_Treino_Tiro_26_da_Belgica_Vermelho_KB3408_21_model.jpg&feedId=92150&k=37d9548688cdd361379fb802264d7e65a2dd76b5" },
-      { store: "eBay", price: 33.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227223581659?_skw=Belgium+training+soccer+jersey&hash=item34e794b3db%3Ag%3A8FUAAeSwIh5pltYr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ADIDAS BELGIUM 2026 TRAINING TOP NATIONAL TEAM FOOTBALL T-SHIRT SOCCER JERSEY", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/8FUAAeSwIh5pltYr/s-l225.jpg" },
+      { store: "eBay", price: 33.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/227223581659?_skw=Belgium+training+soccer+jersey&hash=item34e794b3db%3Ag%3A8FUAAeSwIh5pltYr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ADIDAS BELGIUM 2026 TRAINING TOP NATIONAL TEAM FOOTBALL T-SHIRT SOCCER JERSEY", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/8FUAAeSwIh5pltYr/s-l225.jpg" },
     ],
   },
 {
@@ -26796,7 +26801,7 @@ const productsData = [
       { store: "FootStoreFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx7840-maillot-exterieur-benfica-lisbonne-2025-26-wonalu", title: "Maillot Extérieur Benfica Lisbonne 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jx7840_1_apparel_photography_front_center_view_white.jpg" },
       { store: "SportIsGoodFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx7840-maillot-exterieur-benfica-lisbonne-2025-26-wonalu", title: "Maillot Extérieur Benfica Lisbonne 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jx7840_1_apparel_photography_front_center_view_white.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbenfica-away-soccer-jersey-2025-26%3Fvariant%3D42557173825641", title: "Benfica Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/01decb18684762d62804fc27bea11925.png?v=1758073982" },
-      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287494231030?_skw=SL+Benfica+away+soccer+jersey+2025+2026&hash=item42effdd3f6%3Ag%3AkmEAAeSw0VtqbDf7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Benfica Adidas Away Replica Jersey - Gray - Large 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/kmEAAeSw0VtqbDf7/s-l225.jpg" },
+      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287494231030?_skw=SL+Benfica+away+soccer+jersey&hash=item42effdd3f6%3Ag%3AkmEAAeSw0VtqbDf7&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYl9V%2FAZ3LS6dIaTQrDpf6NvYXvsfkBN52IPtOIxQ0eNTdbStq82nxninV1d2pSMPKf7QjuOWZiVtpQpZs4nsUEJy3TNlNvX6S5VF2%2BkazIkTx04s2S4jVXMnouBppUTwjyAeknhrhxVgiEA%2Fws9TSLkeqmaf1sIHGJkGgPtqMLlUZ4exAcflVPDBVbI89tLzqjEHci3vuWhiiaxZb5w2zrPlysGP%2FoPdvdvA1moC0r%2FZIChQmTePcLAigyw7nF0g8qvTB%2FaHa3D3qAQqWOkJV%2BEETAlrGqX6kx%2BIm2j%2BrBgw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Benfica Adidas Away Replica Jersey - Gray - Large 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/kmEAAeSw0VtqbDf7/s-l225.jpg" },
     ],
   },
 {
@@ -26814,7 +26819,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 60.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43475544706&a=3013769&m=65906", title: "Camiseta local Benfica Lisboa 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd1403_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=17afe1f7f4070205ac8ee7caabc285d9ed3d5739" },
       { store: "SportIsGoodFR", price: 60.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjd1403-maillot-domicile-benfica-lisbonne-2025-26-benred", title: "Maillot Domicile Benfica Lisbonne 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd1403_1_apparel_photography_front_center_view_white.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbenfica-home-soccer-jersey-2025-26%3Fvariant%3D42557176709225", title: "Benfica Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/fad0094a35fb08a6b4c6d240a81b2321_18f79733-1ddb-4b78-af69-b4e8bcc5eedc.png?v=1758074003" },
-      { store: "eBay", price: 70.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407102575212?_skw=SL+Benfica+home+soccer+jersey+2025+2026&hash=item5ec934526c%3Ag%3AjcQAAeSwlDZqZ9ZU&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYBKVY24f63ZGNUvTj1duP1kf1ZZYQcTBxit30V6FCXdt48u4KoWcKDBpN8nk%2FluRfZdPzjCP4UCSt2ZDiL2JCx72yBq6jo8rb6udZ7qo%2Fg4x5VfgCJ8dmNeFf3tGfA214fTrHbIyTwVr0NPfXyvG%2F1YOGBaW2hX37NBQRdvxAGPW5mK%2FZ02Q31G9NNsA6byjWpu--%2B2uqJiKQMesMd9yM8rvTOkMPpu%2FwsRPZDC8CpESJpHC9Lipf1wGRLDQJIAOjKxaze5DZoIzXtXRFLeJ%2BzjVWRccGklNUF0vXC8RHsaSScjAaIP49fZn4kAGAgmiA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Benfica 2026 Home Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/jcQAAeSwlDZqZ9ZU/s-l225.jpg" },
+      { store: "eBay", price: 71.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227451868148?_skw=SL+Benfica+home+soccer+jersey&hash=item34f53013f4%3Ag%3AL8QAAeSwYi9p8KlS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas SL Benfica 25/26 Home Jersey Red JD1403 Mens S NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/L8QAAeSwYi9p8KlS/s-l225.jpg" },
     ],
   },
 {
@@ -26938,7 +26943,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 52.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42047456916&a=3013769&m=65912", title: "Maillot de entrenamiento Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_781665-18_1.webp&feedId=89032&k=c64bc959ab5b0feb0112b2eda9bbddba0c991152" },
       { store: "SportIsGoodES", price: 52.2, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852216&a=3013769&m=65906", title: "Maillot de entrenamiento Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_781665-18_1.webp&feedId=89044&k=c64bc959ab5b0feb0112b2eda9bbddba0c991152" },
-      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389924380216?_skw=Borussia+Dortmund+training+soccer+jersey&hash=item5ac94dde38%3Ag%3AqlYAAeSwLqJp6PAz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Borussia Dortmund Training Jersey Men’s Small Football 2025-26 NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/qlYAAeSwLqJp6PAz/s-l225.jpg" },
+      { store: "eBay", price: 29.99, shipping: 6.5, currency: "USD", url: "https://www.ebay.com/itm/389924380216?_skw=Borussia+Dortmund+training+soccer+jersey&hash=item5ac94dde38%3Ag%3AqlYAAeSwLqJp6PAz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Borussia Dortmund Training Jersey Men’s Small Football 2025-26 NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/qlYAAeSwLqJp6PAz/s-l225.jpg" },
     ],
   },
 {
@@ -27031,7 +27036,7 @@ const productsData = [
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl8487-maillot-exterieur-inter-miami-fc-2025-26-black", title: "Maillot Extérieur Inter Miami FC 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jl8487_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 68.45, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji6821-maillot-exterieur-inter-miami-fc-messi-2025-26-black", title: "Maillot Extérieur Inter Miami FC Messi 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ji6821_black_1.jpg" },
       { store: "PlanetFoot", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-inter-miami-exterieur-messi-n-10-homme-2025-26-noir%3Fvariant%3D50259965313365", title: "Maillot Inter Miami Extérieur Messi N°10 Homme 2025/26 Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/messi_imcf.jpg?v=1738653844" },
-      { store: "eBay", price: 70.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/286908407389?_skw=Inter+Miami+CF+away+soccer+jersey+2025+2026&hash=item42cd12de5d%3Ag%3A6kgAAeSwHZZpBErm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Inter Miami CF 2025-2026 Leo Messi Away Jersey NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/6kgAAeSwHZZpBErm/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327313831054?_skw=Inter+Miami+CF+away+soccer+jersey&hash=item4c356cb48e%3Ag%3AoGUAAeSwQzFqgl1F&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Inter Miami CF 2026 Authentic Player Version Away Jersey Sz S MLS", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/oGUAAeSwQzFqgl1F/s-l225.jpg" },
     ],
   },
 {
@@ -27050,7 +27055,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 64.23, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj1392-maillot-domicile-inter-miami-fc-2025-26-easpink", title: "Maillot Domicile Inter Miami FC 2025/26", inStock: false, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/j/j/jj1392_1_apparel_photography_front_center_view_white.webp" },
       { store: "AdidasPT", price: 150.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40432842730&a=3013769&m=77026", title: "Camisola Principal Oficial 25/26 do Inter Miami CF", inStock: true, sizes: ["S", "M", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F035f0f8d29584c4ea41dbb546454d2fd_9366%2FCamisola_Principal_Oficial_25-26_do_Inter_Miami_CF_Rosa_JJ1393_HM1.jpg&feedId=92150&k=22405733b12cf9f9cc024dd55c12041d219f065b" },
       { store: "MysteryShirtClub", price: 69.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-inter-miami-lionel-messi-authentic-home-shirt-460716", title: "2025-2026 Inter Miami LIONEL MESSI Authentic Home Shirt", inStock: true, sizes: ["XS", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1739391059_inter-miami-2025-2026-authentic-home-football-shirt-messi-10-back.jpg?v=1763236195" },
-      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327281555616?_skw=Inter+Miami+CF+home+soccer+jersey+2025+2026&hash=item4c338038a0%3Ag%3AKwQAAeSwfRBqZ33X&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Inter Miami CF 2025/26 Replica Home Jersey Sz M MLS", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/KwQAAeSwfRBqZ33X/s-l225.jpg" },
+      { store: "eBay", price: 39.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377044865304?_skw=Inter+Miami+CF+home+soccer+jersey&hash=item57c9a01118%3Ag%3ADFwAAeSwv6JputYI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Miami CF 25/26 #10 MESSI Soccer Home Jersey XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/DFwAAeSwv6JputYI/s-l225.jpg" },
       { store: "AdidasES", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40432827758&a=3013769&m=77008", title: "Camiseta primera equipación Inter Miami CF 25/26 Messi", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F677396ed0b5b47bb81d5527ddc620a2b_9366%2FCamiseta_primera_equipacion_Inter_Miami_CF_25-26_Messi_Rosa_JI6817_HM1.jpg&feedId=92152&k=32a9b16654d8cd5d8df38e9a7e45b23b8f0f89ed" },
     ],
   },
@@ -27069,7 +27074,7 @@ const productsData = [
       { store: "PlanetFoot", price: 89.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-inter-miami-third-messi-n-10-homme-2025-26-bleu%3Fvariant%3D51325535519061", title: "Maillot Inter Miami Third Messi N°10 Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-inter-miami-cf-25-26-adulte-messi-adidas-planetfoot3.webp?v=1756550467" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45204110010&a=3013769&m=77008", title: "Inter Miami CF 25/26 Third Jersey", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcbce909aeb874a2bba1e33d7f71f5789_9366%2FInter_Miami_CF_25-26_Third_Jersey_Azul_KA7503_21_model.jpg&feedId=92152&k=39d44c82d1560b977c17c84a6c73eb00f9ca1e78" },
       { store: "AdidasPT", price: 60.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45204110412&a=3013769&m=77026", title: "Inter Miami CF 25/26 Third Jersey", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcbce909aeb874a2bba1e33d7f71f5789_9366%2FInter_Miami_CF_25-26_Third_Jersey_Azul_KA7503_21_model.jpg&feedId=92150&k=39d44c82d1560b977c17c84a6c73eb00f9ca1e78" },
-      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336635312932?_skw=Inter+Miami+CF+third+soccer+jersey+2025+2026&hash=item4e61073b24%3Ag%3ABVYAAeSw60hqK6zf&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas MLS INTER MIAMI CF 2025/2026 Third Soccer Jersey  KA7502 Men's M Original", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/BVYAAeSw60hqK6zf/s-l225.jpg" },
+      { store: "eBay", price: 48.44, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/407093346669?_skw=Inter+Miami+CF+third+soccer+jersey&hash=item5ec8a7816d%3Ag%3ASW0AAeSwS-xp69za&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Inter Miami CF 25/26 Third Jersey Mens Lionel Messi #10 KA7504 Pick Size", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/SW0AAeSwS-xp69za/s-l225.jpg" },
     ],
   },
 {
@@ -27298,7 +27303,7 @@ const productsData = [
     brand: "puma",
     offers: [
       { store: "SportIsGoodES", price: 24.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852237&a=3013769&m=65906", title: "Camisa de entrenamiento del Manchester City 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F781992-16.webp&feedId=89044&k=1b9adb36d1c0b956491fad0cfa95be842f6d5ede" },
-      { store: "eBay", price: 48.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406712466644?_skw=Manchester+City+training+soccer+jersey&hash=item5eb1f3bcd4%3Ag%3AhssAAeSwmOFpmRSG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester City Puma 2025/26 dryCell Training Soccer Jersey Green Size Large ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hssAAeSwmOFpmRSG/s-l225.jpg" },
+      { store: "eBay", price: 46.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800482157564?_skw=Manchester+City+training+soccer+jersey&hash=itemba607463fc%3Ag%3AzIcAAeSwf79qc8PD&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbLgaDRNzFJhioay6X%2Bya3P7gm62Hfc4eS7dQhoQSa7yF3QqFv4AuoQZPf2vivO2WXQIJ4nyFxctpiNrbg3Hw%2FpTQoORCH4vws40vcB1XcyeOo0z%2BPqdi9lQrxZTT3J3taZmcEqwZo%2BeqfopQzQ6FJlgtyrt0n1iIinY6g1MQI5xXNdusfDFK3HT%2B%2FlIYTklZ81lfNAykt7uKA6GiWY8vbOmiZaVngbpoHlEZKE%2B%2FRsQWmHalQQPWOI6daowyv491lCSWFLFLkO0a580svoGi1KIHE9EUpye1zi%2BLjXH5VUPyZRCWfl3w%2BkHJzEoedHQj0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Men’s Puma Manchester City Training Jersey L Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/zIcAAeSwf79qc8PD/s-l225.jpg" },
     ],
   },
 {
@@ -27358,7 +27363,7 @@ const productsData = [
       { store: "FootStoreFR", price: 52.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F784540-11-maillot-prematch-maroc-coupe-du-monde-2026-dark-crimson-dark-myrtle", title: "Maillot Prematch Maroc Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-784540-11-dark-crimson-dark-myrtle-69c2bf6f1a310-1.webp" },
       { store: "SportIsGoodES", price: 52.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395901430&a=3013769&m=65906", title: "Maillot Prematch Marruecos Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784540-11-dark-crimson-dark-myrtle-69c2bf6f1a310-1.webp&feedId=89044&k=00be00e4c7d1c26af1e4c0972253b593b402bbf8" },
       { store: "SportIsGoodFR", price: 52.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784540-11-maillot-prematch-maroc-coupe-du-monde-2026-dark-crimson-dark-myrtle", title: "Maillot Prematch Maroc Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-784540-11-dark-crimson-dark-myrtle-69c2bf6f1a310-1.webp" },
-      { store: "eBay", price: 358.71, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117267550619?_skw=Morocco+pre-match+soccer+jersey&hash=item1b4db0d19b%3Ag%3AnQEAAeSwMBhqPMqg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brand New Morocco Pre-Match soccer jersey WC 2026 (L) « Import » Rare!!!", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/nQEAAeSwMBhqPMqg/s-l225.jpg" },
+      { store: "eBay", price: 360.36, shipping: 43.24, currency: "USD", url: "https://www.ebay.com/itm/117267550619?_skw=Morocco+pre-match+soccer+jersey&hash=item1b4db0d19b%3Ag%3AnQEAAeSwMBhqPMqg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brand New Morocco Pre-Match soccer jersey WC 2026 (L) « Import » Rare!!!", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/nQEAAeSwMBhqPMqg/s-l225.jpg" },
     ],
   },
 {
@@ -27374,7 +27379,7 @@ const productsData = [
       { store: "FootStoreES", price: 50.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44510949164&a=3013769&m=65912", title: "Camiseta de entrenamiento México Tiro Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_07_adidas_kb0918_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=4f911f241d5ca86fdd39550e6d0310e47604b352" },
       { store: "AdidasES", price: 50.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45397545469&a=3013769&m=77008", title: "Camiseta de entrenamiento México 26 Tiro", inStock: true, sizes: ["M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F91e471db0b874d3ebae9518de83816b0_9366%2FCamiseta_de_entrenamiento_Mexico_26_Tiro_Negro_KB0919_21_model.jpg&feedId=92152&k=fcf6b64151466eba4ba3590999ee706b25fd6ba2" },
       { store: "AdidasPT", price: 50.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965729&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 do México", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6e62932e57174c789c30a0973a3079f9_9366%2FCamisola_de_Treino_Tiro_26_do_Mexico_Preto_JZ0163_21_model.jpg&feedId=92150&k=3dcc41fa4414fd025f7875f62af308fb773e112b" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358535965077?_skw=Mexico+training+soccer+jersey&hash=item537a68a995%3Ag%3AuIsAAeSwvSpp%7EuO7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico Training White Mens Soccer 2026 Jersey", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/uIsAAeSwvSpp~uO7/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/237006143792?_skw=Mexico+training+soccer+jersey&hash=item372eaac130%3Ag%3AUnIAAeSwThVqf1xZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico Training Jersey 2026 World Cup", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/UnIAAeSwThVqf1xZ/s-l225.jpg" },
     ],
   },
 {
@@ -27389,7 +27394,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 69.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45234294648&a=3013769&m=65912", title: "Maillot Prematch Nigeria Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih1686-010-black-white-6a459fb804495-3.webp&feedId=89032&k=661dfd1a3685289a3bb5588ad55fafa54b1d0995" },
       { store: "FootStoreFR", price: 69.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1686-010-maillot-prematch-nigeria-coupe-du-monde-2026-black-white", title: "Maillot Prematch Nigeria Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih1686-010-black-white-6a459fb804495-3.webp" },
-      { store: "eBay", price: 64.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227466635367?_skw=Nigeria+pre-match+soccer+jersey&hash=item34f6116867%3Ag%3A--wAAeSwBXxqdnGq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike x Nigeria Slawn Pre Match jersey 2XL World Cup 2026 X2 IH1686-010 NFF Green", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/--wAAeSwBXxqdnGq/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227466635367?_skw=Nigeria+pre-match+soccer+jersey&hash=item34f6116867%3Ag%3A--wAAeSwBXxqdnGq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike x Nigeria Slawn Pre Match jersey 2XL World Cup 2026 X2 IH1686-010 NFF Green", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/--wAAeSwBXxqdnGq/s-l225.jpg" },
     ],
   },
 {
@@ -27477,7 +27482,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 60.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852338&a=3013769&m=65906", title: "Camiseta Local PSV Eindhoven 2025/26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780420-01_1.webp&feedId=89044&k=4308728e11ec6839ee0cbe1f165a77e4db882f98" },
       { store: "SportIsGoodFR", price: 58.76, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780420-01-maillot-domicile-psv-eindhoven-2025-26-white", title: "Maillot Domicile PSV Eindhoven 2025/26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780420-01_1.webp" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsv-eindhoven-home-soccer-jersey-2025-26%3Fvariant%3D42557164486761", title: "PSV Eindhoven Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/92a7983c5cd40a971fb5230def0cac8b.png?v=1758073908" },
-      { store: "eBay", price: 55.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318575609295?_skw=PSV+Eindhoven+home+soccer+jersey+2025+2026&hash=item4a2c9605cf%3Ag%3ATJoAAeSw371qVNVO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA PSV Eindhoven Soccer 2025/26 Home Jersey, Size XL, BNWT, Originally $100", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/TJoAAeSw371qVNVO/s-l225.jpg" },
+      { store: "eBay", price: 81.81, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327212260502?_skw=PSV+Eindhoven+home+soccer+jersey&hash=item4c2f5edc96%3Ag%3AqbgAAeSwlv5qLgwb&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYNI83ke36oLcNzyXYm4FZZ9n2UBcne--%2FWG4y7nzF0MY6X3Yr3jZGf%2Fyh4eAkhJ%2B93fe1tGfemK1rw4hl9DuYVzuCf%2FYxdVnYbjXr8tC%2FCVwpORFykyRR8US50VTa91JepJVMuxzMxyL4%2BP0sqGhABjGUVL7lNzf6IMQO9hqXbYiQ0An44om1DyEhS5j8T5gY%2F1rbJhYRqADLgzLWEMI5VRmwIHUvnnOtmmQ78Vhe5bSHHkqmE%2FwQB7wvGp4UcG6PCWzOL0%2FYwZxP3vMZiXsmBAESeXU2BM9c76G1lr0Nsn4iKrygRZ2S1yl2eiXjs7WI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma PSV Eindhoven 25/26 Home  Soccer Jersey Shirt Men’s Size  Medium ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/qbgAAeSwlv5qLgwb/s-l225.jpg" },
     ],
   },
 {
@@ -27512,7 +27517,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 79.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44216767453&a=3013769&m=65912", title: "Camiseta Local Rangers FC 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F2%2F1237150-60-0.webp&feedId=89032&k=e56a7ae119cd65be40a53c538c97b15b1038d153" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fglasgow-rangers-home-soccer-jersey-2025-26%3Fvariant%3D42557146038377", title: "Glasgow Rangers Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/e1e942cbda5ddb9c68e223c7b3ae4914.png?v=1758073764" },
-      { store: "eBay", price: 78.99, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/178273912448?_skw=Rangers+FC+home+soccer+jersey+2025+2026&hash=item2981f40680%3Ag%3AP-8AAeSw1yNqRQzw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RANGERS FC Umbro Home Football Shirt 2025-2026 NEW Mens Sizes Jersey Kit BNIB", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/P-8AAeSw1yNqRQzw/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327285846352?_skw=Rangers+FC+home+soccer+jersey&hash=item4c33c1b150%3Ag%3ADlQAAeSwROhqapIZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Rangers FC 2025/26 Authentic Replica Home Jersey Sz L Scottish Premiership", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/DlQAAeSwROhqapIZ/s-l225.jpg" },
     ],
   },
 {
@@ -27644,7 +27649,7 @@ const productsData = [
       { store: "FootStoreFR", price: 85.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322237w-a0c-maillot-domicile-tunisie-kombat-2025-26-red-white", title: "Maillot Domicile Tunisie Kombat 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-322237w-a0c-red-white-1.webp" },
       { store: "SportIsGoodES", price: 62.92, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44495868152&a=3013769&m=65906", title: "Camiseta local Túnez Kombat 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-322237w-a0c-red-white-1.webp&feedId=89044&k=267e44b3bbe216fa1328d6807a483b8e21d28729" },
       { store: "SportIsGoodFR", price: 63.14, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F322237w-a0c-maillot-domicile-tunisie-kombat-2025-26-red-white", title: "Maillot Domicile Tunisie Kombat 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-322237w-a0c-red-white-1.webp" },
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800117223153?_skw=Tunisia+home+soccer+jersey+2025+2026&hash=itemba4ab3eef1%3Ag%3AAoYAAeSwB49qIDiD&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbU4f4cr8gispOZAoDuHPMsrBvJdGxfvTBIaKsc7vKSj16ikjJjR4yAre3o%2Biw%2BbxUhEA3RQp5MHJYyuRd2cjptThbjgBMc6fAKLhYiR0K%2BYgGDA%2BUm0A40u8rw3gZoiItA2bTL5UjTfnJGMZvvnnKAFX%2Bm6rJY8YSg1vhK83cxsQbOEKqTYkfLkh4bt2oVmAZnuHpbotws5bMeyjmP%2F15uhjHfaEgWdxz9FLmoPnlmueen1elBG9u5Q5CQ0tGdHJnTf3H5IlT5j7eMeMvAEA6yK08EOzQeXoWPPNatReTvdl7RjF3C1mDCBUv7hNnxMYU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Tunisia 2026 FIFA World Cup Home Soccer Jersey Replica NWT Men's M L XL XXL", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/AoYAAeSwB49qIDiD/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800117223153?_skw=Tunisia+home+soccer+jersey&hash=itemba4ab3eef1%3Ag%3AAoYAAeSwB49qIDiD&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbU4f4cr8gispOZAoDuHPMsrBvJdGxfvTBIaKsc7vKSj16ikjJjR4yAre3o%2Biw%2BbxUhEA3RQp5MHJYyuRd2cjptThbjgBMc6fAKLhYiR0K%2BYgGDA%2BUm0A40u8rw3gZoiIvXhXLEKPM5G1tscWGBP5dzagstz4eRapPsxQe5BbN3oZGc5pLn%2BB8L4x1oRNvXAnCpBDBorEqUp8jc8swE4aHcNw8wNv2rqvhue3LEVrgiKNupR4rvWkY208%2FLVVYQlJtlvrm%2FxlxGrorsjG%2F6Ja6tHzSAZx9%2B5TEImJF4ncqcdQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Tunisia 2026 FIFA World Cup Home Soccer Jersey Replica NWT Men's M L XL XXL", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/AoYAAeSwB49qIDiD/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ftunisia-home-soccer-jersey-2026-world-cup%3Fvariant%3D42964031570025", title: "Tunisia Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/TunisiaHomeJerseyWorldCup2026_2.webp?v=1772769659" },
       { store: "PlanetFoot", price: 89.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-tunisia-national-football-team-domicile-homme-2026-blanc-rouge-34255vw%3Fvariant%3D54074065453397", title: "Maillot Tunisia National Football Team Domicile Homme 2026 Blanc Rouge", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8925-1.jpg?v=1780664281" },
     ],
@@ -27680,7 +27685,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 88.38, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301902177&a=3013769&m=65906", title: "Camiseta de visitante Vasco da Gama 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F3%2F4%2F342145w-001_1.webp&feedId=89044&k=a54e2fca15417668256c0e636dbb123f79bca30a" },
       { store: "FootStoreFR", price: 87.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F342145w-001-maillot-exterieur-vasco-da-gama-2025-26-white-black", title: "Maillot Extérieur Vasco da Gama 2025/26", inStock: true, sizes: ["S", "M", "L", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/3/4/342145w-001_1.webp" },
       { store: "SportIsGoodFR", price: 88.39, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F342145w-001-maillot-exterieur-vasco-da-gama-2025-26-white-black", title: "Maillot Extérieur Vasco da Gama 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/3/4/342145w-001_1.webp" },
-      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198483480473?_skw=Vasco+da+Gama+away+soccer+jersey+2025+2026&hash=item2e36898f99%3Ag%3AcUoAAeSwbodqTX4D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY CLUB DE REGATAS VASCO DA GAMA Away 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/cUoAAeSwbodqTX4D/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198483480473?_skw=Vasco+da+Gama+away+soccer+jersey&hash=item2e36898f99%3Ag%3AcUoAAeSwbodqTX4D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY CLUB DE REGATAS VASCO DA GAMA Away 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/cUoAAeSwbodqTX4D/s-l225.jpg" },
     ],
   },
 {
@@ -27695,7 +27700,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 97.29, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42079589123&a=3013769&m=65912", title: "Camiseta Local Vasco da Gama 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F3%2F4%2F342144w-005_1.webp&feedId=89032&k=aa4d1acbae51bdc31a9175498f4b6532eb4326b0" },
       { store: "FootStoreFR", price: 95.55, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F342144w-005-maillot-domicile-vasco-da-gama-2025-26-black-white", title: "Maillot Domicile Vasco da Gama 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/3/4/342144w-005_1.webp" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776760?_skw=Vasco+da+Gama+home+soccer+jersey+2025+2026&hash=item34e933aab8%3Ag%3AtgIAAeSwJNBpsRL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY CLUB DE REGATAS VASCO DA GAMA Home 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/tgIAAeSwJNBpsRL9/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776760?_skw=Vasco+da+Gama+home+soccer+jersey&hash=item34e933aab8%3Ag%3AtgIAAeSwJNBpsRL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY CLUB DE REGATAS VASCO DA GAMA Home 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/tgIAAeSwJNBpsRL9/s-l225.jpg" },
     ],
   },
 {
@@ -27740,7 +27745,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 110.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkb9038-maillot-domicile-manches-longues-club-america-2026-27-impyel-legink", title: "Maillot Domicile manches longues Club America 2026/27", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kb9038-impyel-legink-6a5a6bb57749a-1.webp" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45280101620&a=3013769&m=77008", title: "Camiseta primera equipación Club América 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa5d35119ac254688ba10b9198e3b6047_9366%2FCamiseta_primera_equipacion_Club_America_26-27_Amarillo_KB9024_HM1.jpg&feedId=92152&k=059375fa48ed1068be7a2c36d050dceb209a5706" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45280103722&a=3013769&m=77026", title: "Camisola Club America 26/27 Home", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F81a1bebd95234b9d9aa5f742e8836893_9366%2FCamisola_Club_America_26-27_Home_Amarelo_KB9016_21_model.jpg&feedId=92150&k=6a42999348c6a1fbe234ec03bdfd5c706cb4a014" },
-      { store: "eBay", price: 23.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800357589711?_skw=Club+Am%C3%A9rica+home+soccer+jersey+2025+2026&hash=itemba5907a2cf%3Ag%3AhaQAAeSw-DtqWexV&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbPrWFHwaXesFTHXb9OE6v6H1L3QRiwfpf6E2BLJKxmmK%2FfSqYikvu8jq3ArZl8wPb5r%2BAqbpQWodWxuyCoYAcxaef7g2z%2BywzuFFcyIQNoRm%2BHA68XV9cJJjQhlClqeQcad2RAIEsoluzWISdadLpx6H9vgL3gIcTo8Mbj0KX48U2lvWDPrnJBWcw7qqtYWk3nJw%2BN69yn5d4zIf5bk8Rl7BSrbhlNHYXYIjSXWukFvc1AwV35j%2BECzxkAX9%2BB9xs2gxx5rGEc9FwBvjSwVgLrKty00r9DklZC5BWRkBiaJMOSLJJaQhJkoecwhsmOrrE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Custom - LIGA MX Club America New 2026-27 Home Design Shirt Soccer - All Size", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/haQAAeSw-DtqWexV/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/198356550467?_skw=Club+Am%C3%A9rica+home+soccer+jersey&hash=item2e2ef8c343%3Ag%3A2RQAAeSw0rNqBs8K&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Club America Home Mens 26-27", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/2RQAAeSw0rNqBs8K/s-l225.jpg" },
     ],
   },
 {
@@ -27882,7 +27887,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45106033829&a=3013769&m=77008", title: "Camiseta segunda equipación Ajax 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F97e9c4e983d246e8b5d173fe69cf317e_9366%2FCamiseta_segunda_equipacion_Ajax_25-26_Azul_JP1447_21_model.jpg&feedId=92152&k=bf1d6534af9d719a7528d4fdb7a64f6bc844640e" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fajax-away-soccer-jersey-2025-26%3Fvariant%3D42557156458601", title: "Ajax Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/260cb7e2362b5407d9aea29c715a545c.png?v=1758073835" },
-      { store: "eBay", price: 65.0, shipping: 6.0, currency: "USD", url: "https://www.ebay.com/itm/117341222854?_skw=Ajax+away+soccer+jersey+2025+2026&hash=item1b5214f7c6%3Ag%3Ax14AAeSwwnxqcooH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas  AJAX 2025-26 MEN'S AWAY STADIUM JERSEY Size XL Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/x14AAeSwwnxqcooH/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 6.0, currency: "USD", url: "https://www.ebay.com/itm/117341222854?_skw=Ajax+away+soccer+jersey&hash=item1b5214f7c6%3Ag%3Ax14AAeSwwnxqcooH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas  AJAX 2025-26 MEN'S AWAY STADIUM JERSEY Size XL Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/x14AAeSwwnxqcooH/s-l225.jpg" },
     ],
   },
 {
@@ -28841,7 +28846,7 @@ const productsData = [
       { store: "FootStoreFR", price: 122.05, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5225-475-maillot-exterieur-authentique-usa-coupe-du-monde-2026-dark-obsidian-pure-platinum", title: "Maillot Extérieur Authentique USA Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/i/b/ib5225-475.webp" },
       { store: "FootStoreES", price: 124.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45270282090&a=3013769&m=65912", title: "Maillot Extérieur Auténtico USA Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fb%2Fib5225-475.webp&feedId=89032&k=091f0b4acffdf5d05a71fa095450926d0fe6ddeb" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fusmnt-usa-away-soccer-jersey-2026%3Fvariant%3D42993479090281", title: "USMNT USA Away Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/USMNTUSAAwayJerseyWorldCup2026.webp?v=1773743222" },
-      { store: "eBay", price: 35.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147435063498?_skw=United+States+away+soccer+jersey&hash=item2253d088ca%3Ag%3A7roAAeSwyWFqVbj5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "USMNT Men's Away 2026 World Cup Jersey USA United States", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/7roAAeSwyWFqVbj5/s-l225.jpg" },
+      { store: "eBay", price: 27.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206493952486?_skw=United+States+away+soccer+jersey&hash=item3013ffa9e6%3Ag%3A8ioAAeSww5NqgNop&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "USA United States National Team 2026 World Cup Away Jersey Blue", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/8ioAAeSww5NqgNop/s-l225.jpg" },
     ],
   },
 {
@@ -28857,7 +28862,7 @@ const productsData = [
       { store: "FootStoreFR", price: 64.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4604-497-maillot-exterieur-inter-milan-2025-26-ghost-aqua-white-blue-void", title: "Maillot Extérieur Inter Milan 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hj4604-497-phsfh001.webp" },
       { store: "FootStoreES", price: 103.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43745913857&a=3013769&m=65912", title: "Camiseta de Visitante Auténtica del Inter de Milán 2025/26", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj4555-497-phsfh001.webp&feedId=89032&k=97718a434fdb09b3c73de1115f5cf6ebc903b708" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Finter-milan-third-away-soccer-jersey-2025-26%3Fvariant%3D42593825554537", title: "Inter Milan Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Inter_Milan_Third_Away_Soccer_Jersey_2025_26_1.png?v=1759301165" },
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236853534572?_skw=Inter+Milan+away+soccer+jersey+2025+2026&hash=item3725921f6c%3Ag%3AL5wAAeSw8rRpv1NT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGabbT3zU9P6cYkOCyNpUCGT5C7EVSRH7EvFbiPTXY%2BTTXugclz3Bkisn5WSbqVPt7PpPb58U%2BJg0EBeePbnEIZ08SvWtM%2BROQfu4MeOaX2HzAFhBE3MFQOvW6pJRTHjJ6%2BVp7G%2FOfMYeDFiP1WemrJE4hF30OViTEnQr1%2BGVigLIkYRseXFszvUpxmbOEEcnIYWmx69j4%2FNrgqOethfmZ9i9gs%2FzOTrn0L7OXIm4tb5Ib77Xbrr6--0NoYNP%2BZ0p1VBNsH0Hk0Z2R83PnjTfGtYpkeGCLWqVBBPzGcMEcSRAk%2BVKZtUiZjpr1rhad4%2F6hQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Inter Milan 2025/26 Stadium Away Men's Dri-FIT Replica Jersey Size: Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/L5wAAeSw8rRpv1NT/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236853534572?_skw=Inter+Milan+away+soccer+jersey&hash=item3725921f6c%3Ag%3AL5wAAeSw8rRpv1NT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGabbT3zU9P6cYkOCyNpUCGT5C7EVSRH7EvFbiPTXY%2BTTXugclz3Bkisn5WSbqVPt7PpPb58U%2BJg0EBeePbnEIZ08SvWtM%2BROQfu4MeOaX2HzAFhBE3MFQOvW6pJRTHjJ696vRLYmPeYxoleiQ8k4zWkZje02Zc3e5aO%2BY47Gkv1yfJNmFrab8uBGfvc0osxRZRgxIQcL4qtz11CvxivTkfxFPQ6tuuPDxvor%2BuAkvuzUcnFoNtnTHxKP7bGgOfy01gj5yT8ov2onD49v2zv5J%2BxBFwHNuqBGTvWnCj3DtigFZ2oJTDX8LdztNn63S%2BYc34%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Inter Milan 2025/26 Stadium Away Men's Dri-FIT Replica Jersey Size: Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/L5wAAeSw8rRpv1NT/s-l225.jpg" },
     ],
   },
 {
@@ -28900,7 +28905,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8505-625-maillot-exterieur-pologne-coupe-du-monde-2026-noble-red", title: "Maillot Extérieur Pologne Coupe du Monde 2026", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8505-625-noble-red-69ef6830721f0-1.webp" },
       { store: "SportIsGoodFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8505-625-maillot-exterieur-pologne-coupe-du-monde-2026-noble-red", title: "Maillot Extérieur Pologne Coupe du Monde 2026", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8505-625-noble-red-69ef6830721f0-1.webp" },
-      { store: "eBay", price: 99.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287431191878?_skw=Poland+away+soccer+jersey&hash=item42ec3bed46%3Ag%3AJD8AAeSwUu9qRREj&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYRNP9LunoZ4SMJkgUlpagZ6Xf09aE6MfjYthTKoc8dTuDG6nUYxxeDu0QjQYEMV%2F5g8jurvrtAsfafTNJKl%2BMTcRYaAGmu2EgJVgfe51Hy5nf1T8ol24JKeOmVe6pRM4cCvzIov2FjpzUFXZm7fg0LYbHa4lZ9btKeauhA3%2FtArt0gMGQyLquU4uVsWoM%2BM1dOD1ddBQRfgbPF6nCmbv3%2BGNXZiTcxF8XefjsDIGzwG9n1OWPDBzFqppHPGgd0gx6L0WPFv9V%2BUJY43RY6WLOrKMedKn6tpwd90TQx0xD8qg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Robert Lewandowski Poland Nike 2026 Away Stadium Replica Jersey Red", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/JD8AAeSwUu9qRREj/s-l225.jpg" },
+      { store: "eBay", price: 99.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287431191878?_skw=Poland+away+soccer+jersey&hash=item42ec3bed46%3Ag%3AJD8AAeSwUu9qRREj&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYRNP9LunoZ4SMJkgUlpagZ6Xf09aE6MfjYthTKoc8dTuDG6nUYxxeDu0QjQYEMV%2F5g8jurvrtAsfafTNJKl%2BMTcRYaAGmu2EgJVgfe51Hy5nf1T8ol24JKeOmVe6pRM4eLszd7b6KJUZCe9SpmmhELGXX6pmDFI9YKUtEz0zTj6DaZAzLCJ3qwdDpiHkq5s4aVXCg6T6CzsRHp53vbX04OyhYPXFLvM4rA4g5NLcdMs42IRACISXWjZiANOfNxfW3FJYqkboRcCTTIKNvzUcFCZW1zwhL%2Fnt5EzJK0Rb41rQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Robert Lewandowski Poland Nike 2026 Away Stadium Replica Jersey Red", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/JD8AAeSwUu9qRREj/s-l225.jpg" },
     ],
   },
 {
@@ -28932,7 +28937,7 @@ const productsData = [
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45361914064&a=3013769&m=65912", title: "Maillot Extérieur Turquie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8851-100-white-69ef684a44265-1.webp&feedId=89032&k=7e3677306df5a95726b57b15e13f303fb6227cd8" },
       { store: "SportIsGoodES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45349971058&a=3013769&m=65906", title: "Maillot Extérieur Turquie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8851-100-white-69ef684a44265-1.webp&feedId=89044&k=7e3677306df5a95726b57b15e13f303fb6227cd8" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fturkey-away-soccer-jersey-2026-world-cup%3Fvariant%3D43115567939689", title: "Turkey Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/TurkeyAwayJerseyWorldCup2026_2.webp?v=1775804009" },
-      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307115171377?_skw=Turkey+away+soccer+jersey+2025+2026&hash=item47817d9e31%3Ag%3AATkAAeSwWatqd7Xz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Turkey Away Kit Playe Version – White Soccer Jersey | Lightweight & Stylish", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ATkAAeSwWatqd7Xz/s-l225.jpg" },
+      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307115171377?_skw=Turkey+away+soccer+jersey&hash=item47817d9e31%3Ag%3AATkAAeSwWatqd7Xz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Turkey Away Kit Playe Version – White Soccer Jersey | Lightweight & Stylish", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ATkAAeSwWatqd7Xz/s-l225.jpg" },
     ],
   },
 {
@@ -29308,7 +29313,7 @@ const productsData = [
     brand: "macron",
     offers: [
       { store: "FootStoreFR", price: 99.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F70009930-maillot-exterieur-bologne-2025-26-blanc-noir", title: "Maillot Extérieur Bologne 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/7/0/70009930.jpg" },
-      { store: "eBay", price: 124.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168537877797?_skw=Bologna+away+soccer+jersey+2025+2026&hash=item273da3ed25%3Ag%3ARpcAAeSwT55qV6J2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Officially Licensed Macron 2025-26 Bologna Men's Away Jersey Small Size", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/RpcAAeSwT55qV6J2/s-l225.jpg" },
+      { store: "eBay", price: 72.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267404621791?_skw=Bologna+away+soccer+jersey&hash=item3e428eb7df%3Ag%3AxH0AAeSw%7ExtpXCLo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron 2025-26 Bologna Men's Authentic Away Soccer Jersey", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/xH0AAeSw~xtpXCLo/s-l225.jpg" },
     ],
   },
 {
@@ -29323,7 +29328,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 72.16, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F700099180001-maillot-domicile-bologne-2025-26-rouge-bleu", title: "Maillot Domicile Bologne 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_700099180001_rouge-bleu_1.webp" },
       { store: "SportIsGoodFR", price: 73.48, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F700099180001-maillot-domicile-bologne-2025-26-rouge-bleu", title: "Maillot Domicile Bologne 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_700099180001_rouge-bleu_1.webp" },
-      { store: "eBay", price: 143.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/128014310231?_skw=Bologna+home+soccer+jersey+2025+2026&hash=item1dce3f5b57%3Ag%3AML8AAeSwaTJqcmc6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Bologna FC 2026 - 27 Authentic Home Jersey - Red/Navy Blue", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ML8AAeSwaTJqcmc6/s-l225.jpg" },
+      { store: "eBay", price: 89.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377047605537?_skw=Bologna+home+soccer+jersey&hash=item57c9c9e121%3Ag%3AP5kAAeSwO61pvDsg&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYkY5vkf99UwE9x3%2FPnRdYs2ZnMoF%2BDb%2Bomiqa0DNV42TZjdob%2BwG0jOSpXQe4p9ovrQttcFP%2Fzg%2BXE6nqCoJ2mF5uH4TD%2FTjznHu%2FqZzKZoDVLQBS2J4VdhHVOCROS%2FIXJV9uH2%2Fe9NlyuwnyTizIoAF2EWPXWqBVDfplhFSxuSdbf9lB0pxxZg48PIU%2BjDVsZ5p4zdWA52XR2WV8iiPhwFN9OYb1a4AwGt%2FlWxonWgmHIl2HVemgYmEQELkszPIxOaKz69lB6%2BrE6ElcM1wjWUG2d3Ohsp5EIYU8qucLEYw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Bologna FC 1909 2025/26 Home Jersey Saputo Red Blue Men’s XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/P5kAAeSwO61pvDsg/s-l225.jpg" },
     ],
   },
 {
@@ -29399,7 +29404,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 70.74, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395577541&a=3013769&m=65912", title: "Camiseta Local del Werder de Bremen 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_231006-6801_2.webp&feedId=89032&k=376fa1e2e61006a95189c6fb46855a6552c2e1a4" },
       { store: "SportIsGoodES", price: 70.46, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395900169&a=3013769&m=65906", title: "Camiseta Local del Werder de Bremen 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_231006-6801_2.webp&feedId=89044&k=376fa1e2e61006a95189c6fb46855a6552c2e1a4" },
-      { store: "eBay", price: 74.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306998732395?_skw=Werder+Bremen+home+soccer+jersey+2025+2026&hash=item477a8ce66b%3Ag%3AP20AAeSwHk1qLG36&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Werder Bremen 2025/26 Home Jersey - Hummel, Size M (EU) / S (US), New With Tags", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/P20AAeSwHk1qLG36/s-l225.jpg" },
+      { store: "eBay", price: 74.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306998732395?_skw=Werder+Bremen+home+soccer+jersey&hash=item477a8ce66b%3Ag%3AP20AAeSwHk1qLG36&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Werder Bremen 2025/26 Home Jersey - Hummel, Size M (EU) / S (US), New With Tags", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/P20AAeSwHk1qLG36/s-l225.jpg" },
       { store: "FootStoreFR", price: 69.26, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F231006-6801-maillot-domicile-werder-de-breme-2025-26-abundant-green", title: "Maillot Domicile Werder de Brême 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_231006-6801_2.jpg" },
       { store: "SportIsGoodFR", price: 70.64, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F231006-6801-maillot-domicile-werder-de-breme-2025-26-abundant-green", title: "Maillot Domicile Werder de Brême 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_231006-6801_2.jpg" },
     ],
@@ -37496,7 +37501,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fac-milan-fourth-goalkeeper-soccer-jersey-2025-26%3Fvariant%3D43193846300777", title: "AC Milan Fourth Goalkeeper Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ACMilanFourthGoalkeeperJersey202526_2.webp?v=1778052093" },
-      { store: "eBay", price: 58.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157996889087?_skw=AC+Milan+goalkeeper+soccer+jersey&hash=item24c95933ff%3Ag%3Aq3kAAeSw6zxqLZav&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGa1WPi%2Fsv5kfZ56zLQGhJu4H3VYvsx%2BnQKv1%2BywecW6ILc7O%2BGYi1gBlKa6i58ngNaqejXxGVwbBp1Shu3qLC8eUEPg5CYHA2GbijJ6goVtR--ZwAl6RNHWGSxtrkCkINNIMcm7ucMQa1kqFvTra2NV0qJ7M2vBMwuNJO0WDMzHdgbr7GLyp9PDheaBJ%2FO%2F7VWxQ%2BtvLRZM7cS8Xgi2K0FIMd6uwx%2FufV%2Bi163%2FKKVuW76LepbQsatvA6AWtyl2sX0x0RFqEaDFycpZpoZxkljD%2FEEPA5Zu2716FdOjhaG8vIwg1934XNeWaw3bi2C%2BXC8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma AC Milan 2025/26 Goalkeeper Third Jersey Green Mens Size L NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/q3kAAeSw6zxqLZav/s-l225.jpg" },
+      { store: "eBay", price: 58.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157996889087?_skw=AC+Milan+goalkeeper+soccer+jersey&hash=item24c95933ff%3Ag%3Aq3kAAeSw6zxqLZav&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGa1WPi%2Fsv5kfZ56zLQGhJu4H3VYvsx%2BnQKv1%2BywecW6ILc7O%2BGYi1gBlKa6i58ngNaqejXxGVwbBp1Shu3qLC8eUEPg5CYHA2GbijJ6goVtR--ZwAl6RNHWGSxtrkCkINPNy1zIC5UhD7hlgKeqjO2u%2FFGWqplOYkzRd8Y22esPEckDDdTkzBf1jgUmoALznfpeYWxYByNb%2B6WcZpfEwTntBBfSGMgul9cZXQi583zZ1OI3zwHnvXGNX3TcpQdzBl3ifIDbI0t5eyPoWItR6WZnnaoO4wZVKJm689MA16Hr3dzvUEsPdC1BmN1iW3m%2B4aM%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma AC Milan 2025/26 Goalkeeper Third Jersey Green Mens Size L NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/q3kAAeSw6zxqLZav/s-l225.jpg" },
     ],
   },
 {
@@ -37521,7 +37526,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Faston-villa-away-soccer-jersey-2025-26%3Fvariant%3D42557173530729", title: "Aston Villa Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/47839274721ef510808f3b25cf04c4dc.png?v=1758073979" },
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287337466970?_skw=Aston+Villa+away+soccer+jersey+2025+2026&hash=item42e6a5cc5a%3Ag%3AYyEAAeSwBeNp49S3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa FC 2025/2026 Away Jersey JN8053 Men's Size S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/YyEAAeSwBeNp49S3/s-l225.jpg" },
+      { store: "eBay", price: 45.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406801384143?_skw=Aston+Villa+away+soccer+jersey&hash=item5eb74082cf%3Ag%3AUZkAAeSw3ulpxDra&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa 25/26 Away Jersey - size XL Black/Blue", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/UZkAAeSw3ulpxDra/s-l225.jpg" },
       { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45585787765&a=3013769&m=77008", title: "Camiseta segunda equipación Aston Villa FC 25/26 Oficial", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff3a8b138d16e45dca4bccfeebd3a7da3_9366%2FCamiseta_segunda_equipacion_Aston_Villa_FC_25-26_Oficial_Negro_JN8033_21_model.jpg&feedId=92152&k=1fb8a39e7ba8cae0ca1e309b5f95defea1097a5b" },
       { store: "AdidasPT", price: 150.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45587831109&a=3013769&m=77026", title: "Camisola Alternativa Oficial 25/26 do Aston Villa FC", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff3a8b138d16e45dca4bccfeebd3a7da3_9366%2FCamisola_Alternativa_Oficial_25-26_do_Aston_Villa_FC_Preto_JN8033_21_model.jpg&feedId=92150&k=bc4bc0eac58319492035954c07a0c70f87d5e129" },
     ],
@@ -37536,7 +37541,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fathletic-club-de-bilbao-away-soccer-jersey-2025-26%3Fvariant%3D42605343801449", title: "Athletic Club De Bilbao Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Athletic_Club_de_Bilbao_Away_Soccer_Jersey_2025_26_2.png?v=1759809896" },
-      { store: "eBay", price: 129.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236886447133?_skw=Athletic+Bilbao+away+soccer+jersey+2025+2026&hash=item372788541d%3Ag%3AKGoAAeSw9SlqNUwO&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGaq1gW5%2BrF%2FK1aDoGt3OcWBS9IvowsA6X6RXE1q%2FF3QmeBFRCpXohAmvTP4tRvuR5oU1%2FcwA9mXUNZCBX%2BGT9pf8aKdp4HUxy1avOCRkfMgSnwnyDjfKx%2BS402AgucaZIzZTZ4UuegcBiZbNbWYcaicDcB1wUJ6vHIOmK7Tc1Yb%2BlqJDadcXy6fJd9%2FsgCnzdmAxPlyEF34s4NidkAT%2Fw%2BMAol0V4H3achTQZY9cdntHB6s14BJKIcOeCvVtWaZjK%2Bugi3qkY7FdjY22OGIYfRT03A92NimgrKn6RGAlPngvdZlshDOarHkHzDweD5S9UD6mh3BAoohDxSpglXJgIvC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ATHLETIC CLUB BILBAO - ORIGINAL AWAY Jersey 2026 - Castore - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/KGoAAeSw9SlqNUwO/s-l225.jpg" },
+      { store: "eBay", price: 129.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236886447133?_skw=Athletic+Bilbao+away+soccer+jersey&hash=item372788541d%3Ag%3AKGoAAeSw9SlqNUwO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaq1gW5%2BrF%2FK1aDoGt3OcWBS9IvowsA6X6RXE1q%2FF3QmeBFRCpXohAmvTP4tRvuR5oU1%2FcwA9mXUNZCBX%2BGT9pf8aKdp4HUxy1avOCRkfMgSnwnyDjfKx%2BS402AgucaZIz5C5%2BsRmdXMqL2Gh7vISkDKmzBivptf2T0rbTRxkYPRYf6kbzARRkiciGGhB6957uwd6Hvr7CA1i1Qa8oAHZYTT42%2FKv6pEab3ygYTo%2FrlUgyUHaSRGrcJMEmPugbhWiHJslUxs3XgcPIFiENviRslV5tveiSZJxZQ6c0TUyxi0jlFeD98xkUHWDFDQ6FfHdk%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ATHLETIC CLUB BILBAO - ORIGINAL AWAY Jersey 2026 - Castore - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/KGoAAeSw9SlqNUwO/s-l225.jpg" },
     ],
   },
 {
@@ -37549,7 +37554,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fathletic-club-de-bilbao-home-soccer-jersey-2025-26%3Fvariant%3D42605343572073", title: "Athletic Club De Bilbao Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AthleticClubdeBilbaoHomeSoccerJersey2025_26_2.png?v=1759812126" },
-      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278031321422?_skw=Athletic+Bilbao+home+soccer+jersey+2025+2026&hash=item40bbf5494e%3Ag%3AswcAAeSw6mBqGG%7Er&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGZ0ygvNoiRSpCnQH3%2BO%2B6XjqKLygIjwyc6CTBxtgnFV7iGhSaaf9jT66fNQbYUm0GWRF%2BCc1Vv7gmoFO4SjU1gnCM4RxeRyUCTJWs8IIaLeCxsL42fsbMxYmm6vAulWEhcynL2dsvKtisHmrBlxfdYUYCdw0CZRtXUNjvPyB9ZYn0zpLC6bqO9zg2i0PUmT0ft58KzlYU%2FmxcLYhTTk4ZDv2HZCqO3GDUufaaTyfX5%2BF6uTWXlOFSZVjo4gTnLKnR6A5%2BWM4wiY3Itzb3AUnd9IxYV7wCyjDcZ3vEW%2BumNxVAtKlCUIzzg50fiV35UgFe%2BNz%2BxohH9DgW6X2eYWSWdP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ATHLETIC CLUB BILBAO - ORIGINAL HOME Jersey 2026 - Castore - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/swcAAeSw6mBqGG~r/s-l225.jpg" },
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278031321422?_skw=Athletic+Bilbao+home+soccer+jersey&hash=item40bbf5494e%3Ag%3AswcAAeSw6mBqGG%7Er&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ0ygvNoiRSpCnQH3%2BO%2B6XjqKLygIjwyc6CTBxtgnFV7iGhSaaf9jT66fNQbYUm0GWRF%2BCc1Vv7gmoFO4SjU1gnCM4RxeRyUCTJWs8IIaLeCxsL42fsbMxYmm6vAulWEhfKYd2DfCFrSPKBJ0mCC5nc%2Bd3dU2HEE%2F2FMrDGFYiET0ossCRn4lBZFZZQy3WfueAQOZSdN2i2lm52XXVK2MhqGsU2G4xrKPBaU6NuH%2FU6zo%2BM7bbRRD0y5tDCi3HZJ6Pe8KLnSdd6f80DfvrwqAa92KijH%2FT8Zp51rEKW7%2BZWL1Z3eiBmARm%2FPp2EWofIZ8c%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ATHLETIC CLUB BILBAO - ORIGINAL HOME Jersey 2026 - Castore - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/swcAAeSw6mBqGG~r/s-l225.jpg" },
     ],
   },
 {
@@ -37624,7 +37629,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fafc-bournemouth-home-soccer-jersey-2025-26%3Fvariant%3D42671371878505", title: "AFC Bournemouth Home Soccer Jersey 2025/26", inStock: false, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AFC_Bournemouth_Home_Soccer_Jersey_202526.png?v=1762744428" },
-      { store: "eBay", price: 83.21, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298544387730?_skw=Bournemouth+home+soccer+jersey&hash=item4582a1d692%3Ag%3ALQIAAeSw03hqaxQm&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZRtJ1M121EEj0TraS5ELNN29xDeW%2BxGicJ94Sfz%2BUx9C%2B0iitC4DasMO5VNHzA4oBLpBs27Qcf40PnzCNEClYwbpJI0XRIe4HX1un6jMpf%2BgqilX0oj%2FkizgTYVhxHZltEtkr8MOibnOcXkgOfalq%2BaZyxB3Gqz035cXyGKpDu2dl6FV5QMxZIemjhuzGlIrMK36iFt1phrjQN7U2hkz%2B64nCSvObyq1SBg%2BPzdpv9awHavefdHWK4lSnPxAEKWlTmV5BQbNNy%2FaxPL7j7a9YNlmBN%2BMEwohHODK3fpMqSZl1dNeW%2BkVuHFpM%2FjC3osyM%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel AFC Bournemouth Home Shirt 26 27 AFC Home Shirt The Cherries Jersey M-3XL", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/LQIAAeSw03hqaxQm/s-l225.jpg" },
+      { store: "eBay", price: 83.29, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/298544387730?_skw=Bournemouth+home+soccer+jersey&hash=item4582a1d692%3Ag%3ALQIAAeSw03hqaxQm&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZRtJ1M121EEj0TraS5ELNNYDWbh25q%2FoBG2LHvba9GhYfbXQJ2QsbHmW1v6%2FLwND%2FwjkHHiYa3wwWc26LSFmQevM%2FYa0nZyQCklJZ8UCCsubl7vCBpCkGbA46fj7yy%2FZhfURlNcfnRk3W2FvrBB9WoRmxti0%2FACKAZXQ2dnpghyFt7Nl5KUAHruwaQCGge08W1hth6LGpsF7c26MnaYg7MH%2BI%2FAG6bP2s3ThaNo0UlYh%2B3ITd%2FSg%2FY6as2gXwmw6L4pahQl9y5vXYrwdGmhRzB%2Boul2h2ysZLLbdsVSDr%2FJzuwd1VQSlvIuIfeID8R4us%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel AFC Bournemouth Home Shirt 26 27 AFC Home Shirt The Cherries Jersey M-3XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/LQIAAeSw03hqaxQm/s-l225.jpg" },
     ],
   },
 {
@@ -37685,7 +37690,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fclub-america-away-soccer-jersey-2025-26%3Fvariant%3D42557162618985", title: "Club America Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/cdf2e9ca8d0569ad0e0a05b7a69831bf.png?v=1758073890" },
-      { store: "eBay", price: 25.0, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/326687990588?_skw=Club+Am%C3%A9rica+away+soccer+jersey+2025+2026&hash=item4c101f233c%3Ag%3ANKwAAeSw34VogY%7EI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Club America 2025/26 Away Blue Jersey (Sz M)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/NKwAAeSw34VogY~I/s-l225.jpg" },
+      { store: "eBay", price: 25.0, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/326687990588?_skw=Club+Am%C3%A9rica+away+soccer+jersey&hash=item4c101f233c%3Ag%3ANKwAAeSw34VogY%7EI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Club America 2025/26 Away Blue Jersey (Sz M)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/NKwAAeSw34VogY~I/s-l225.jpg" },
     ],
   },
 {
@@ -37698,7 +37703,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcolombia-2026-world-cup-tiro-training-polo-shirt%3Fvariant%3D42977927823465", title: "Colombia 2026 World Cup Tiro Training Polo Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Colombia2026TiroTrainingPoloshirt_2.webp?v=1773381345" },
-      { store: "eBay", price: 28.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800260657740?_skw=Colombia+training+soccer+jersey&hash=itemba5340924c%3Ag%3AZUYAAeSw53VqQhyl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Colombia Training Black Men 2026 jersey", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ZUYAAeSw53VqQhyl/s-l225.jpg" },
+      { store: "eBay", price: 28.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/800260657740?_skw=Colombia+training+soccer+jersey&hash=itemba5340924c%3Ag%3AZUYAAeSw53VqQhyl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Colombia Training Black Men 2026 jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ZUYAAeSw53VqQhyl/s-l225.jpg" },
     ],
   },
 {
@@ -37711,7 +37716,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcorinthians-away-soccer-jersey-2025-26%3Fvariant%3D42712492540009", title: "Corinthians Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Corinthians_Away_Jersey_2025-2026_2.webp?v=1764235505" },
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317912356062?_skw=Corinthians+away+soccer+jersey+2025+2026&hash=item4a050d94de%3Ag%3APkEAAeSwws5pm3Aw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Corinthians Away \"Todo Poderoso Timão \"Jersey 2025-26 Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PkEAAeSwws5pm3Aw/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317912356062?_skw=Corinthians+away+soccer+jersey&hash=item4a050d94de%3Ag%3APkEAAeSwws5pm3Aw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Corinthians Away \"Todo Poderoso Timão \"Jersey 2025-26 Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PkEAAeSwws5pm3Aw/s-l225.jpg" },
       { store: "ShopTimao", price: 349.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005481.5420011064380366749651477&type=15&murl=https%3A%2F%2Fwww.shoptimao.com.br%2FJD8-9918-026", title: "Camisa Corinthians Away 25/26 s/n Jogador Nike Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.shoptimao.com.br/produtos/camisa-corinthians-ii-2526-sn-jogador-nike-masculina/26/JD8-9918-026/JD8-9918-026_detalhe1.jpg?ts=1776222326" },
     ],
   },
@@ -37739,7 +37744,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcruzeiro-ec-third-away-soccer-jersey-2025-26%3Fvariant%3D42749511827561", title: "Cruzeiro EC Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cruzeiro_EC_Third_Away_Soccer_Jersey_202526_2_7c0873c8-a334-4e99-8ffa-c47fcc0ebf80.webp?v=1765791493" },
       { store: "CruzeiroStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541981510343915112738364&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-3558-044", title: "Camisa Cruzeiro Away 25/26 s/n Torcedor Adidas Masculina - Branco+Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-ii-2526-sn-torcedor-adidas-masculina/44/FBA-3558-044/FBA-3558-044_detalhe1.jpg?ts=1776223978" },
-      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198561816260?_skw=Cruzeiro+away+soccer+jersey+2025+2026&hash=item2e3b34dec4%3Ag%3AhWsAAeSwEi9qejJT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cruzeiro Esporte Clube Away Men 2026 Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hWsAAeSwEi9qejJT/s-l225.jpg" },
+      { store: "eBay", price: 30.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/358661185568?_skw=Cruzeiro+away+soccer+jersey&hash=item5381df6020%3Ag%3AxHkAAeSwrmNqKQuC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cruzeiro Esporte Clube Away Men 2026 Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/xHkAAeSwrmNqKQuC/s-l225.jpg" },
     ],
   },
 {
@@ -37802,7 +37807,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fecuador-home-football-jersey-world-cup-2026%3Fvariant%3D42735947350121", title: "Ecuador Home Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ecuador_home_2026_jersey-4.webp?v=1773979860" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205507685598?_skw=Ecuador+home+soccer+jersey+2025+2026&hash=item2fd9366cde%3Ag%3AwwEAAOSwyu9oMf%7ET&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Ecuador Soccer Home Mens 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/wwEAAOSwyu9oMf~T/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205507685598?_skw=Ecuador+home+soccer+jersey&hash=item2fd9366cde%3Ag%3AwwEAAOSwyu9oMf%7ET&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Ecuador Soccer Home Mens 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/wwEAAOSwyu9oMf~T/s-l225.jpg" },
     ],
   },
 {
@@ -37815,7 +37820,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fegypt-world-cup-2026-away-soccer-jersey%3Fvariant%3D42833462755433", title: "Egypt World Cup 2026 Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/EgyptAwaySoccerJersey2026_2_1.webp?v=1773993622" },
-      { store: "eBay", price: 33.59, shipping: 8.92, currency: "USD", url: "https://www.ebay.com/itm/358765808266?_skw=Egypt+away+soccer+jersey+2025+2026&hash=item53881bca8a%3Ag%3AGmEAAeSwy7BqTKwZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "#10 Egypt 2026 Away Jersey-Red (MEN)", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/GmEAAeSwy7BqTKwZ/s-l225.jpg" },
+      { store: "eBay", price: 30.59, shipping: 8.92, currency: "USD", url: "https://www.ebay.com/itm/358765808266?_skw=Egypt+away+soccer+jersey&hash=item53881bca8a%3Ag%3AGmEAAeSwy7BqTKwZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "#10 Egypt 2026 Away Jersey-Red (MEN)", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/GmEAAeSwy7BqTKwZ/s-l225.jpg" },
     ],
   },
 {
@@ -37854,7 +37859,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 32.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fusa-hollywood-lifestyle-goalkeeper-shirt-2025%3Fvariant%3D42818145583209", title: "USA Hollywood Lifestyle Goalkeeper Shirt 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/USAHollywoodLifestyleGoalkeeperShirt_2.webp?v=1768447120" },
-      { store: "eBay", price: 79.1, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287476610632?_skw=United+States+goalkeeper+soccer+jersey&hash=item42eef0f648%3Ag%3AgkEAAeSwC%7EZqX-ee&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYO4J84f2rWffHKvMbKMEeeK35t%2Bw4PnUThnv3jAoL4qU%2B%2BkJy26yrE%2BFcm8DwEAMahWZaX2XkJdNEeaT1Ds3LSxCNch9ckZm2XR%2BT4%2BTqSg6k%2Bp%2BIiD0J%2F2yf7CCBEpSvwSY8NSmHzStU89WYygmOGBQJCFzYKB8clciT7XZ7geggh%2BR1PCLb9BL2DDoSvtxFo2DzGuWSkWDI2OljEPCbdPh7ezuiwvOG4966QZB0jzqGA1WZfb6OL3n6P0l4yXanNLTeN3Qr3mYCJIaZuaTtDkSl%2FhVStW2cfgPmevm3fUmC%2FUyIuV83WAnSocIFsdag%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Matt Freese #24 USA National Team Stadium Goalkeeper 2026 World Cup Jersey - NWT", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/gkEAAeSwC~ZqX-ee/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 20.0, currency: "USD", url: "https://www.ebay.com/itm/257677611519?_skw=United+States+goalkeeper+soccer+jersey&hash=item3bfec851ff%3Ag%3AX2cAAeSwOcNqfXko&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike USMNT 2026 Dri-Fit Stadium Goalkeeper Jersey 'Stadium Gr IB5343-324", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/X2cAAeSwOcNqfXko/s-l225.jpg" },
     ],
   },
 {
@@ -37891,7 +37896,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffluminense-fc-home-soccer-jersey-2025-26%3Fvariant%3D42749513302121", title: "Fluminense FC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Fluminense_FC_Home_Soccer_Jersey_202526_8.webp?v=1765791542" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267567814898?_skw=Fluminense+home+soccer+jersey+2025+2026&hash=item3e4c48d8f2%3Ag%3A0K8AAeSwEfZphE4K&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Fluminense 2026 Soccer Home Mens", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/0K8AAeSwEfZphE4K/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267567814898?_skw=Fluminense+home+soccer+jersey&hash=item3e4c48d8f2%3Ag%3A0K8AAeSwEfZphE4K&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Fluminense 2026 Soccer Home Mens", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/0K8AAeSwEfZphE4K/s-l225.jpg" },
     ],
   },
 {
@@ -37928,7 +37933,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fghana-world-cup-2026-home-soccer-jersey%3Fvariant%3D43129320964201", title: "Ghana World Cup 2026 Home Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/GhanaHomeJerseyWorldCup2026_2_4550aade-3326-464c-b741-addbe22fc7f0.webp?v=1776239088" },
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336651922296?_skw=Ghana+home+soccer+jersey+2025+2026&hash=item4e6204ab78%3Ag%3AC6cAAeSwvTFqOXty&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ghana Home Unisex Soccer Jersey 2026 - S/M/L/XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/C6cAAeSwvTFqOXty/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336651922296?_skw=Ghana+home+soccer+jersey&hash=item4e6204ab78%3Ag%3AC6cAAeSwvTFqOXty&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ghana Home Unisex Soccer Jersey 2026 - S/M/L/XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/C6cAAeSwvTFqOXty/s-l225.jpg" },
     ],
   },
 {
@@ -37941,7 +37946,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fborussia-monchengladbach-away-soccer-jersey-2026-27%3Fvariant%3D47868542484585", title: "Borussia Mönchengladbach Away Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/BorussiaMonchengladbachawayfan2026_27.webp?v=1785828608" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188396370095?_skw=Borussia+M%C3%B6nchengladbach+away+soccer+jersey&hash=item2bdd4c78af%3Ag%3AiKEAAeSwZU5qCykK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Borussia Monchengladbach Soccer Mens Away 26-27", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/iKEAAeSwZU5qCykK/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/188396370095?_skw=Borussia+M%C3%B6nchengladbach+away+soccer+jersey&hash=item2bdd4c78af%3Ag%3AiKEAAeSwZU5qCykK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Borussia Monchengladbach Soccer Mens Away 26-27", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/iKEAAeSwZU5qCykK/s-l225.jpg" },
     ],
   },
 {
@@ -38031,7 +38036,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fjapan-goalkeeper-soccer-jersey-world-cup-2026-red%3Fvariant%3D42800384933993", title: "Japan Goalkeeper Soccer Jersey World Cup 2026 Red", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Japan_Goalkeeper_Soccer_Jersey_World_Cup_2026_Red_1__1.webp?v=1767937752" },
-      { store: "eBay", price: 257.48, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358449161311?_skw=Japan+goalkeeper+soccer+jersey+2025+2026&hash=item53753c245f%3Ag%3ALKEAAeSwXiNqbZSW&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbA%2FP0eAgdqlwKn%2BUqixfIcTSZRTjaci7fPg7buQdWVqubgOwX6y%2BZhi97GOcxBmoR%2FzxaWoo%2BXtK4x%2BupvMP7tpz5qhnKF4ZkxIi2WExtvhg3768VoOxKliUXs2QZoy9avgqddhxc1leEcBtWf4Xf1%2FSqVHTe56B57B1dCg%2BhPESjkWVp6IKRJECchXoqXvhtb9r1S3BVE48UZijtjPPM%2BidIwZXkzB1TsMSIn7ehy93ipYwyT8c6BKaoyIsr2SFdSUzw%2BDk9GABWFsZsTsSbG%2B8o7lGrEVoA1Y06wOs64kCKEBcAp9YI2hu3kDc4oKqI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Japan 2026 Away Authentic Goalkeeper L/S Jersey KL0875 Japan Size", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/LKEAAeSwXiNqbZSW/s-l225.jpg" },
+      { store: "eBay", price: 84.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/307126819980?_skw=Japan+goalkeeper+soccer+jersey&hash=item47822f5c8c%3Ag%3AfzQAAeSwAVhqf2Ir&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Japan Home Goalkeeper Long Sleeve Jersey Adidas Size XL NEW W TAGS", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/fzQAAeSwAVhqf2Ir/s-l225.jpg" },
     ],
   },
 {
@@ -38044,7 +38049,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fjapan-2026-world-cup-away-training-jersey%3Fvariant%3D42968472518761", title: "Japan 2026 World Cup Away Training Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/JapanPre-MatchSoccerJerseyWorldCup2026Black_2_1.webp?v=1777021122" },
-      { store: "eBay", price: 160.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298448033028?_skw=Japan+training+soccer+jersey&hash=item457ce39504%3Ag%3AtwEAAeSw8D1qO7HB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Japan National Team 2026 Pro Training Top Ash Blue KL0869 Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/twEAAeSw8D1qO7HB/s-l225.jpg" },
+      { store: "eBay", price: 160.99, shipping: 30.0, currency: "USD", url: "https://www.ebay.com/itm/298448033028?_skw=Japan+training+soccer+jersey&hash=item457ce39504%3Ag%3AtwEAAeSw8D1qO7HB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Japan National Team 2026 Pro Training Top Ash Blue KL0869 Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/twEAAeSw8D1qO7HB/s-l225.jpg" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45633686398&a=3013769&m=77026", title: "Camisola de Treino Japan Originals", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F18a3807050144cc6be50d5727321dd9a_9366%2FCamisola_de_Treino_Japan_Originals_Preto_KA1519_HM1.jpg&feedId=92150&k=c3d25c96052d83ecd8b7099cdce24249393647b4" },
     ],
   },
@@ -38083,7 +38088,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flazio-home-soccer-jersey-2025-26%3Fvariant%3D42557143548009", title: "Lazio Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/3ca7fcd5c67d2d299b9f8f487deaa988.png?v=1758073748" },
-      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236841212963?_skw=Lazio+home+soccer+jersey+2025+2026&hash=item3724d61c23%3Ag%3AtdoAAeSw3UtqFyfz&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZesYBRytojBfxts5heS0YjNt6pzPNM5nmfI9TlLkt%2FmeQicM63n70F3WhBnvCuEk9YMUGcTFOuTycFlRWLPoOfHRwX5W2Drw9KGsK0Z6xsbSn5M9roTuYY8Vy%2FWPTpqnfCXNZ4mdul44Ninwn3HQNcE2GDV4M3H87v9egiW4klZB5yGmoC%2FCdZLSiNU1thznqMFx5Dd2lpz4aaR%2B5Txh4XsL6nTRMoyVpUkaJZ6mEnCy8ZQ20lPw2dsxhJat%2FSUKHiEzpkiEvTVP4K2HZb7jNQ%2FgETSrX7IChkDTELk0LS2gTsnXDXaReSKJsgVMUw0YU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "S S LAZIO - ORIGINAL HOME Jersey 2026 - Mizuno - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/tdoAAeSw3UtqFyfz/s-l225.jpg" },
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236841212963?_skw=Lazio+home+soccer+jersey&hash=item3724d61c23%3Ag%3AtdoAAeSw3UtqFyfz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "S S LAZIO - ORIGINAL HOME Jersey 2026 - Mizuno - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/tdoAAeSw3UtqFyfz/s-l225.jpg" },
     ],
   },
 {
@@ -38133,7 +38138,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmexico-goalkeeper-soccer-jersey-2026-world-cup%3Fvariant%3D42699192500329", title: "Mexico Goalkeeper Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Mexico_Goalkeeper_Jersey_World_Cup_2026_2.webp?v=1763704205" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358535964957?_skw=Mexico+goalkeeper+soccer+jersey&hash=item537a68a91d%3Ag%3A39EAAeSwBsFqPenI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico Goalkeeper Purple Mens Soccer 2026 Jersey", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/39EAAeSwBsFqPenI/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/267741169439?_skw=Mexico+goalkeeper+soccer+jersey&hash=item3e569e071f%3Ag%3ALTYAAeSw8QJqaFVZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Mexico 2026 goalkeeper Black Mens", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/LTYAAeSw8QJqaFVZ/s-l225.jpg" },
     ],
   },
 {
@@ -38146,7 +38151,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmonterrey-away-soccer-jersey-2025-26%3Fvariant%3D42557146824809", title: "Monterrey Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/d6b46578a141b0081fb7c673ddb8f3d6.png?v=1758073769" },
-      { store: "eBay", price: 19.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117346438128?_skw=CF+Monterrey+away+soccer+jersey+2025+2026&hash=item1b52648bf0%3Ag%3AlGwAAeSwyudqdkQd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CF Monterrey Puma 2025/26 Away Replica Soccer Jersey - White - Men’s Size M NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lGwAAeSwyudqdkQd/s-l225.jpg" },
+      { store: "eBay", price: 19.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117346438128?_skw=CF+Monterrey+away+soccer+jersey&hash=item1b52648bf0%3Ag%3AlGwAAeSwyudqdkQd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CF Monterrey Puma 2025/26 Away Replica Soccer Jersey - White - Men’s Size M NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lGwAAeSwyudqdkQd/s-l225.jpg" },
     ],
   },
 {
@@ -38159,7 +38164,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmonterrey-home-soccer-jersey-2025-26%3Fvariant%3D42557157802089", title: "Monterrey Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/814b8288076e2d0cff5b95d2902ddde5.png?v=1758073847" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236853239377?_skw=CF+Monterrey+home+soccer+jersey+2025+2026&hash=item37258d9e51%3Ag%3AHQkAAeSwiLNqH0Y6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbKliNEbZzdtwjJo0ao5doiIafO%2BfeWghUtN1zT62%2FJfTIhIBaJgniZVwN%2FVobg8w%2BZT45QkQK1%2BalELEyu9MHrnQXVRHX6xnyTBGG16HJ0F5RIcuyequiJCZmvqaZumOdDcAKL1R3%2FeTl%2F%2BspLHXzZMpdjYBgw%2FErzzt0bkK%2FYmO%2BD%2Be5mw4%2FkJ%2ByIgUBn%2Fe6TskbOBWxML24rKoqrTklgBE%2BHeQj0DJMNjM6TsRm6TlPoOSOtGd8pzkHo%2FFmfmVA8U3z1QMzM4qKw8XpYdEfj7sTXcJksaDs5uvfGBVtK2QbEw7IT87uJzj3Msz5L8l0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Monterrey Rayados Home Jersey 2025-2026 80th Anniversary Men's Small NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/HQkAAeSwiLNqH0Y6/s-l225.jpg" },
+      { store: "eBay", price: 21.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377158009103?_skw=CF+Monterrey+home+soccer+jersey&hash=item57d05e810f%3Ag%3A01gAAeSwaERp6tBL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "C.F. Monterrey 25/26 Home Jersey Men’s Soccer Shirt Navy dryCELL NWT (Medium)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/01gAAeSwaERp6tBL/s-l225.jpg" },
     ],
   },
 {
@@ -38172,7 +38177,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-away-soccer-jersey-2025-26%3Fvariant%3D42557146595433", title: "Napoli Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/40927251be185002a7f36b0c037032e9.png?v=1758073768" },
-      { store: "eBay", price: 34.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/286779485059?_skw=Napoli+away+soccer+jersey+2025+2026&hash=item42c563ab83%3Ag%3ASTwAAeSwyfhoqJsW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Napoli Shirt Away mens 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/STwAAeSwyfhoqJsW/s-l225.jpg" },
+      { store: "eBay", price: 34.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/286779485059?_skw=Napoli+away+soccer+jersey&hash=item42c563ab83%3Ag%3ASTwAAeSwyfhoqJsW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Napoli Shirt Away mens 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/STwAAeSwyfhoqJsW/s-l225.jpg" },
     ],
   },
 {
@@ -38198,7 +38203,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-home-soccer-jersey-2025-26%3Fvariant%3D42557146366057", title: "Napoli Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Napoli_Home_Soccer_Jersey_2025_261.png?v=1760336805" },
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475227101?_skw=Napoli+home+soccer+jersey+2025+2026&hash=item42eedbd9dd%3Ag%3AOwgAAeSwcQBqXxmr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Napoli Shirt Champions League Home mens 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/OwgAAeSwcQBqXxmr/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475227101?_skw=Napoli+home+soccer+jersey&hash=item42eedbd9dd%3Ag%3AOwgAAeSwcQBqXxmr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Napoli Shirt Champions League Home mens 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/OwgAAeSwcQBqXxmr/s-l225.jpg" },
     ],
   },
 {
@@ -38274,7 +38279,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fse-palmeiras-away-soccer-jersey-2025-26%3Fvariant%3D42809976520809", title: "SE Palmeiras Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SE_Palmeiras_away_jersey_202526_1.webp?v=1768994668" },
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336724547206?_skw=Palmeiras+away+soccer+jersey+2025+2026&hash=item4e6658d686%3Ag%3AgsgAAeSwS%7EJqblL-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  White SE Palmeiras 2025/26 Away Jersey Size L New With Tags", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/gsgAAeSwS~JqblL-/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336724547206?_skw=Palmeiras+away+soccer+jersey&hash=item4e6658d686%3Ag%3AgsgAAeSwS%7EJqblL-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  White SE Palmeiras 2025/26 Away Jersey Size L New With Tags", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/gsgAAeSwS~JqblL-/s-l225.jpg" },
     ],
   },
 {
@@ -38287,7 +38292,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fse-palmeiras-home-soccer-jersey-2025-26%3Fvariant%3D42809975308393", title: "SE Palmeiras Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SE_Palmeiras_home_jersey_202526_8.webp?v=1768994570" },
-      { store: "eBay", price: 54.99, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/117329809486?_skw=Palmeiras+home+soccer+jersey+2025+2026&hash=item1b5166d04e%3Ag%3AePwAAeSwh%7ExqarCY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT 2025/26 Puma Palmeiras Home Soccer Green Jersey sz XL futbol kit", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ePwAAeSwh~xqarCY/s-l225.jpg" },
+      { store: "eBay", price: 48.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/136551172384?_skw=Palmeiras+home+soccer+jersey&hash=item1fcb158920%3Ag%3A8ZoAAeSwlnto4yIm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Palmeiras Home Jersey 25/26 Libertadores-Palmeiras Camiseta Local 25/26 Libertad", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/8ZoAAeSwlnto4yIm/s-l225.jpg" },
     ],
   },
 {
@@ -38324,7 +38329,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffc-porto-away-jersey-2025-26%3Fvariant%3D42557169729641", title: "FC Porto Away Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/1bcca4c7a980b15376fb91b47b95b268.png?v=1758073955" },
-      { store: "eBay", price: 129.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/306988080009?_skw=FC+Porto+away+soccer+jersey+2025+2026&hash=item4779ea5b89%3Ag%3Aa-AAAeSwLvNqJV9l&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's New Balance Orange FC Porto 2025/26 Away Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/a-AAAeSwLvNqJV9l/s-l225.jpg" },
+      { store: "eBay", price: 129.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/306988080009?_skw=FC+Porto+away+soccer+jersey&hash=item4779ea5b89%3Ag%3Aa-AAAeSwLvNqJV9l&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's New Balance Orange FC Porto 2025/26 Away Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/a-AAAeSwLvNqJV9l/s-l225.jpg" },
     ],
   },
 {
@@ -38337,7 +38342,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fglasgow-rangers-away-soccer-jersey-2025-26%3Fvariant%3D42557146202217", title: "Glasgow Rangers Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/f6cef0320d4eab8be60b5b83a42498b6.png?v=1758073765" },
-      { store: "eBay", price: 78.99, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/800093719813?_skw=Rangers+FC+away+soccer+jersey+2025+2026&hash=itemba494d4d05%3Ag%3AgsUAAeSwa6pphePn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RANGERS FC Umbro Away Football Shirt 2025-2026 NEW Mens Sizes Jersey Kit BNIB", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gsUAAeSwa6pphePn/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 20.0, currency: "USD", url: "https://www.ebay.com/itm/358686433471?_skw=Rangers+FC+away+soccer+jersey&hash=item538360a0bf%3Ag%3AHDUAAeSwmqxqMSrE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Adult Rangers Football Club Away Kit Jersey 25/26 Size S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/HDUAAeSwmqxqMSrE/s-l225.jpg" },
     ],
   },
 {
@@ -38350,7 +38355,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-betis-away-soccer-jersey-2025-26%3Fvariant%3D42826284761193", title: "Real Betis Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RealBetisawaySoccerJersey202526_2.webp?v=1768810803" },
-      { store: "eBay", price: 87.34, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298394403210?_skw=Real+Betis+away+soccer+jersey&hash=item4579b1418a%3Ag%3AGUUAAeSwa9dpYsHB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Betis Sevilla Third Jersey 25/26 Real Betis Away Shirt M-3XL", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/GUUAAeSwa9dpYsHB/s-l225.jpg" },
+      { store: "eBay", price: 88.31, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/298394403210?_skw=Real+Betis+away+soccer+jersey&hash=item4579b1418a%3Ag%3AGUUAAeSwa9dpYsHB&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYrNvz30o%2B7nS7QG%2BL5vKFYq4p4Wf%2FWfxEfiUcWejGAqDx0opZQJ14nni6fP%2FnMv1A5ZSVpQLXG8%2BcQPikH8yFDIIuZRcXZUfO8cIaWQXBWMPbd5IDm5sS0bxr06P77QPmuLQnhgZqJTM%2BMvrjeMMKxiQoFyofifYey%2FdPoToeAG1mwDocR2LbzFhyJKIRO2ZdaGGAM7me6B%2FupURG%2FUK0Itk2q8aCcCju9OMlGHOaERIWsG1x28v2q%2FAf0vhA4E3jnZ1d1gvtXWDgDTwTCfiV%2FASr1xhG%2FILRiwM0zLoe51g%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Betis Sevilla Third Jersey 25/26 Real Betis Away Shirt M-3XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/GUUAAeSwa9dpYsHB/s-l225.jpg" },
     ],
   },
 {
@@ -38375,7 +38380,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-betis-home-soccer-jersey-2025-26%3Fvariant%3D42594270937193", title: "Real Betis Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Real_Betis_Home_Soccer_Jersey_202526_2.png?v=1760671752" },
-      { store: "eBay", price: 55.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157960782750?_skw=Real+Betis+home+soccer+jersey+2025+2026&hash=item24c732439e%3Ag%3AGi8AAeSw7cJqHbbd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2025/2026 Real Betis Home Jersey Antony", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Gi8AAeSw7cJqHbbd/s-l225.jpg" },
+      { store: "eBay", price: 80.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298593375745?_skw=Real+Betis+home+soccer+jersey&hash=item45858d5601%3Ag%3AbHAAAeSwMyRqgen3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Real Betis  Amrabat 14 Jersey Green White. Size US L. 25/26 Home. NWT.", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/bHAAAeSwMyRqgen3/s-l225.jpg" },
     ],
   },
 {
@@ -38400,7 +38405,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Freal-sociedad-home-soccer-jersey-2025-26%3Fvariant%3D42826053910633", title: "Real Sociedad Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RealSociedadHomeJersey202526_2.webp?v=1768810246" },
-      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278028271075?_skw=Real+Sociedad+home+soccer+jersey+2025+2026&hash=item40bbc6bde3%3Ag%3AaakAAeSwPN5qFykI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY2lJlUOsor2wpL8kivGvliC9A20Qd5JahVIM3HfwDShY8mWS%2BoncB8TPA%2BbEIo5xWaL3tsH13gUzyWtreMcTnlSQGXLjtGe9nO3DEeBz58UGbC%2B6ySAns0wQAtFJY83wKwSk64Y3DQxmvV4n66giF54Glo4PHPB314ulw4baDhTct9137vFUbdMBkDG2R3wBr40oZo2SitLyQv5fxN%2BN8pE08lk2yk9XogUG0ZLFZwvEvul%2FfoWXxfNXYVDxQS68Bg5b12ZI9VJR1JyrfO3sq9F4k5QKJa5eX1%2FMK2VyGYx7auKy91L4UOoUTVyo1DZw0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "REAL SOCIEDAD - ORIGINAL HOME Jersey 2026 - Macron - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/aakAAeSwPN5qFykI/s-l225.jpg" },
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278028271075?_skw=Real+Sociedad+home+soccer+jersey&hash=item40bbc6bde3%3Ag%3AaakAAeSwPN5qFykI&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY2lJlUOsor2wpL8kivGvliC9A20Qd5JahVIM3HfwDShY8mWS%2BoncB8TPA%2BbEIo5xWaL3tsH13gUzyWtreMcTnlSQGXLjtGe9nO3DEeBz58UGbC%2B6ySAns0wQAtFJY83wIqzS61q4rB1n1cXKcv1ei4uhKASh24TpfNOr%2Fp7vp%2FJ%2BDavqoDgbH2j68gieY0NOxazjkt%2BCQTY9CewsQ7c49xglzIWYi52SMU1IVXTQcgWS8G%2BNcSPOgM0sxqz0Ebt1hyC6TWgsGZbdaJ7KX65qnk9YqFC0OPajuzHEstD5h3oTyzTtGj3K5UGhq3E4Tdmfc%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "REAL SOCIEDAD - ORIGINAL HOME Jersey 2026 - Macron - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/aakAAeSwPN5qFykI/s-l225.jpg" },
     ],
   },
 {
@@ -38443,7 +38448,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsao-paulo-fc-away-soccer-jersey-2025-26%3Fvariant%3D42796555829353", title: "São Paulo FC Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Sao_Paulo_Away_jersey_202526_12.webp?v=1767784157" },
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227364073906?_skw=S%C3%A3o+Paulo+FC+away+soccer+jersey+2025+2026&hash=item34eff471b2%3Ag%3A5voAAeSwP2tqGh6O&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Balance São Paulo FC SPFC  2025/2026 Away Jersey (MT831835) Men's Size (XL)", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/5voAAeSwP2tqGh6O/s-l225.jpg" },
+      { store: "eBay", price: 143.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278105035297?_skw=S%C3%A3o+Paulo+FC+away+soccer+jersey&hash=item40c05a1221%3Ag%3AYD8AAeSwwsJqNUgW&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbnx2lDmdZ3UC%2BV0Ii8%2BNfLlZDUwkLuF43yPOuDvtrFFxcMxL4ZmJUwI6jC5HcJkrLv8m%2FNS3cU3s9%2B16%2FAg6mJC3Ku3qGRTJCYls2w6O0KzqU9jhxBMXgZ0MQV1HnrY%2ByxnYJQr9xxMApVVEHNKh%2BHO9eiyV6uskQJcwlnQSb%2FKxm2FtuDfWNjI5R4sc4Ow4dSQi4v5FG4%2BWI3Q3LuZOcLidPpcEHT77%2BeHuaAF%2BnvpPfjEf5tkHZLx4GU%2Ba2hlT2JnmJ3WlRpMlzQCR8eGd6WHUgpJashZe22V1XkXXdZwiwPIluFIsXX%2B9M2PXlbO%2BU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAO PAULO F C - ORIGINAL AWAY Jersey 2026 - NB - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/YD8AAeSwwsJqNUgW/s-l225.jpg" },
     ],
   },
 {
@@ -38469,7 +38474,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsenegal-world-cup-2026-away-soccer-jersey%3Fvariant%3D42693499355241", title: "Senegal World Cup 2026 Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SenegalWorldCup2026awaySoccerJersey_3.webp?v=1782899599" },
-      { store: "eBay", price: 75.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306787528718?_skw=Senegal+away+soccer+jersey+2025+2026&hash=item476df6300e%3Ag%3ACBkAAeSwIGdpnStW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025/26 Senegal National Team Away Soccer Jersey Green Men’s MEDIUM NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/CBkAAeSwIGdpnStW/s-l225.jpg" },
+      { store: "eBay", price: 75.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306787528718?_skw=Senegal+away+soccer+jersey&hash=item476df6300e%3Ag%3ACBkAAeSwIGdpnStW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025/26 Senegal National Team Away Soccer Jersey Green Men’s MEDIUM NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/CBkAAeSwIGdpnStW/s-l225.jpg" },
     ],
   },
 {
@@ -38518,7 +38523,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fswitzerland-2026-world-cup-away-soccer-jersey%3Fvariant%3D42833467277417", title: "Switzerland 2026 World Cup Away Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/switzlandaway2026jersey_2.webp?v=1774424699" },
-      { store: "eBay", price: 100.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/377287165527?_skw=Switzerland+away+soccer+jersey+2025+2026&hash=item57d8114657%3Ag%3ACagAAeSw9tRqOSbV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  Green Switzerland National Team 2026 Away Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/CagAAeSw9tRqOSbV/s-l225.jpg" },
+      { store: "eBay", price: 100.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/377287165527?_skw=Switzerland+away+soccer+jersey&hash=item57d8114657%3Ag%3ACagAAeSw9tRqOSbV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  Green Switzerland National Team 2026 Away Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/CagAAeSw9tRqOSbV/s-l225.jpg" },
     ],
   },
 {
@@ -38556,7 +38561,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsunderland-afc-home-soccer-jersey-2025-26%3Fvariant%3D42689735819369", title: "Sunderland AFC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Sunderland_AFC_Home_Soccer_Jersey_202526_7.webp?v=1763363107" },
-      { store: "eBay", price: 45.94, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227423887987?_skw=Sunderland+home+soccer+jersey&hash=item34f3852273%3Ag%3AjgUAAeSwgJtqT5K2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Sunderland AFC 25/26 Hummel Home Jersey  EPL Men’s 3XL", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/jgUAAeSwgJtqT5K2/s-l225.jpg" },
+      { store: "eBay", price: 70.84, shipping: 17.46, currency: "USD", url: "https://www.ebay.com/itm/227470539085?_skw=Sunderland+home+soccer+jersey&hash=item34f64cf94d%3Ag%3AjgUAAeSwgJtqT5K2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Sunderland AFC 25/26 Hummel Home Jersey  EPL Men’s Sizes 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/jgUAAeSwgJtqT5K2/s-l225.jpg" },
     ],
   },
 {
@@ -38569,6 +38574,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ftigres-uanl-away-soccer-jersey-2025-26%3Fvariant%3D42557164978281", title: "Tigres UANL Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/36df5af5144b5118b87e572b69a2346b.png?v=1758073913" },
+      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298368870303?_skw=Tigres+UANL+away+soccer+jersey&hash=item45782ba79f%3Ag%3AtlEAAeSww5dqGywA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Tigres UANL 2025-26 Away Jersey Men's Small Blue $100", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/tlEAAeSww5dqGywA/s-l225.jpg" },
     ],
   },
 {
@@ -38633,7 +38639,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45457201137&a=3013769&m=65906", title: "Tercera camiseta Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kq6512-prejau-6a70a344d6aba-1.webp&feedId=89044&k=1cbae3f5a0f71f79e5b4b36a7f439aa2fca21358" },
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkq6512-maillot-third-arsenal-2026-27-prejau", title: "Maillot Third Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kq6512-prejau-6a70a344d6aba-1.webp" },
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkq6512-maillot-third-arsenal-2026-27-prejau", title: "Maillot Third Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kq6512-prejau-6a70a344d6aba-1.webp" },
-      { store: "eBay", price: 82.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407143637735?_skw=Arsenal+third+soccer+jersey+2025+2026&hash=item5ecba6e2e7%3Ag%3Ay0MAAeSw-V9qftJa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Arsenal adidas 2026/27 Third Replica Long Sleeve Jersey - Yellow", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/y0MAAeSw-V9qftJa/s-l225.jpg" },
+      { store: "eBay", price: 82.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407143637735?_skw=Arsenal+third+soccer+jersey&hash=item5ecba6e2e7%3Ag%3Ay0MAAeSw-V9qftJa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Arsenal adidas 2026/27 Third Replica Long Sleeve Jersey - Yellow", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/y0MAAeSw-V9qftJa/s-l225.jpg" },
     ],
   },
 {
@@ -38657,7 +38663,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157089543053?_skw=FC+Augsburg+home+soccer+jersey+2025+2026&hash=item249344338d%3Ag%3Ar84AAOSwhpNoSu7g&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY FC Augsburg Home Mens 2025-26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/r84AAOSwhpNoSu7g/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157089543053?_skw=FC+Augsburg+home+soccer+jersey&hash=item249344338d%3Ag%3Ar84AAOSwhpNoSu7g&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY FC Augsburg Home Mens 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/r84AAOSwhpNoSu7g/s-l225.jpg" },
     ],
   },
 {
@@ -38669,7 +38675,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 154.99, shipping: 54.99, currency: "USD", url: "https://www.ebay.com/itm/227341220139?_skw=FC+Augsburg+third+soccer+jersey+2025+2026&hash=item34ee97b92b%3Ag%3AEXIAAeSwTFBqAz6y&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb36TC%2FcPqLif1hBqfcNR0ErV%2B9%2BEBTpt8lI0QdTH3igaj%2BiOdw8bZspyZcbZnjqWPRcYD9m1pyBWsp5sYAx8bcIdHUfJak2fHP0g%2BvHX0CnxWwuhet0YZkRxLvAtRU%2F2us9SlQ7FX%2F2Isro5EoeWM1BTju146HnGfURsqZTDNVvxZ2vspA4FGES8UWaedqDVLxt2MhTLZSDcA1%2FyBtW68D8ewbL6GJPPS4xSMSPm%2F81%2B6VHQZFa1ZD5rMsg%2F7uneDPJYPsx5owIf4v8KORiuBN9ZO170yKFKeHkKjdvEXY2c8FveSk1r67P5cA7xNEjuc%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mizuno 2025-26 FC Augsburg Third 3rd Jersey Shirt Size L New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/EXIAAeSwTFBqAz6y/s-l225.jpg" },
+      { store: "eBay", price: 154.99, shipping: 54.99, currency: "USD", url: "https://www.ebay.com/itm/227134217806?_skw=FC+Augsburg+third+soccer+jersey&hash=item34e2411e4e%3Ag%3Avi0AAeSwQ7tpSTBf&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mizuno 2025-26 FC Augsburg Third Jersey Shirt Size M New", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/vi0AAeSwQ7tpSTBf/s-l225.jpg" },
     ],
   },
 {
@@ -38681,7 +38687,7 @@ const productsData = [
     colorHexSecondary: "#FFD90C",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168521937665?_skw=Belgium+away+soccer+jersey+2025+2026&hash=item273cb0b301%3Ag%3A-rMAAeSwES9qTda7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Belgium 2026 Away Soccer Jersey #7 De Bruyne Light Blue Men’s New", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/-rMAAeSwES9qTda7/s-l225.jpg" },
+      { store: "eBay", price: 43.5, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407055846970?_skw=Belgium+away+soccer+jersey&hash=item5ec66b4e3a%3Ag%3Ab00AAeSwT0xqTSB3&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaUr6GunSvZxSdOcfZopJznhASzpN0h0juQXLr50RH29cjLpzJGjUeFqYhpgwX0mOuL8%2FcPLRVRAVOdLp9qXTltc294N9NBZ6f%2FgKK3802AQytyyMkdobn2mlSAugERvHiBTP3yEzYF%2F9m9pPqbNpXEDWOka40lkc%2Bi3YZDqyzl7rjDgUDV%2Bl13NE6sbrc1RvYWvvKcdHzsW3AbFPJ0gWFZ6gacPspyTr8nIndnzSEbiGmYQ9WZ%2BzizBPxWFqjBCEIFEs0HapBciGlAE%2FGbrubcKphMc2gvilcoIOKyyP5DpQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Belgium 2026 Away Football Team National Team Player's Style Shirt | S - 2XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/b00AAeSwT0xqTSB3/s-l225.jpg" },
     ],
   },
 {
@@ -38705,7 +38711,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236841232666?_skw=Botafogo+away+soccer+jersey+2025+2026&hash=item3724d6691a%3Ag%3ACzcAAeSwtcVqNXDX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BOTAFOGO - ORIGINAL AWAY Jersey 2026 - Reebok - ASK FOR SIZES -", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/CzcAAeSwtcVqNXDX/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/257646606248?_skw=Botafogo+away+soccer+jersey&hash=item3bfcef37a8%3Ag%3ArI8AAeSw8EFqaFVY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Men Botafogo Away 26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/rI8AAeSw8EFqaFVY/s-l225.jpg" },
     ],
   },
 {
@@ -38717,7 +38723,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198561812957?_skw=Botafogo+home+soccer+jersey+2025+2026&hash=item2e3b34d1dd%3Ag%3AfyoAAeSw87BqejEA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Botafogo Home Jersey Aura 90 Coleção 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/fyoAAeSw87BqejEA/s-l225.jpg" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198561812957?_skw=Botafogo+home+soccer+jersey&hash=item2e3b34d1dd%3Ag%3AfyoAAeSw87BqejEA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Botafogo Home Jersey Aura 90 Coleção 2025/26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/fyoAAeSw87BqejEA/s-l225.jpg" },
     ],
   },
 {
@@ -38729,7 +38735,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267425412595?_skw=Brentford+away+soccer+jersey+2025+2026&hash=item3e43cbf5f3%3Ag%3AvGMAAeSwb2hpXCMm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma 2025-26 Brentford Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/vGMAAeSwb2hpXCMm/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267425412595?_skw=Brentford+away+soccer+jersey&hash=item3e43cbf5f3%3Ag%3AvGMAAeSwb2hpXCMm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma 2025-26 Brentford Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/vGMAAeSwb2hpXCMm/s-l225.jpg" },
     ],
   },
 {
@@ -38741,7 +38747,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800504647915?_skw=Brentford+home+soccer+jersey+2025+2026&hash=itemba61cb90eb%3Ag%3AAOQAAeSwVjtqfnDI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Brentford 2025/26 Home Soccer/Football Jersey - Size XL- BNWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/AOQAAeSwVjtqfnDI/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800504647915?_skw=Brentford+home+soccer+jersey&hash=itemba61cb90eb%3Ag%3AAOQAAeSwVjtqfnDI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Brentford 2025/26 Home Soccer/Football Jersey - Size XL- BNWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/AOQAAeSwVjtqfnDI/s-l225.jpg" },
     ],
   },
 {
@@ -38777,7 +38783,7 @@ const productsData = [
     colorHexSecondary: "#00296B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 100.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206417434387?_skw=Club+Am%C3%A9rica+third+soccer+jersey+2025+2026&hash=item300f701713%3Ag%3A-ioAAeSwp%7EhqV%7EkB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's adidas Club América 2025/26 Authentic Third Jersey Brian Rodríguez (L)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/-ioAAeSwp~hqV~kB/s-l225.jpg" },
+      { store: "eBay", price: 100.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206417434387?_skw=Club+Am%C3%A9rica+third+soccer+jersey&hash=item300f701713%3Ag%3A-ioAAeSwp%7EhqV%7EkB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's adidas Club América 2025/26 Authentic Third Jersey Brian Rodríguez (L)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/-ioAAeSwp~hqV~kB/s-l225.jpg" },
     ],
   },
 {
@@ -38789,7 +38795,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 31.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776744?_skw=Colo-Colo+away+soccer+jersey+2025+2026&hash=item34e933aaa8%3Ag%3ApiMAAeSwZyJpsRL6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Away Men LS 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/piMAAeSwZyJpsRL6/s-l225.jpg" },
+      { store: "eBay", price: 31.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776744?_skw=Colo-Colo+away+soccer+jersey&hash=item34e933aaa8%3Ag%3ApiMAAeSwZyJpsRL6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Away Men LS 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/piMAAeSwZyJpsRL6/s-l225.jpg" },
     ],
   },
 {
@@ -38801,7 +38807,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 31.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776770?_skw=Colo-Colo+home+soccer+jersey+2025+2026&hash=item34e933aac2%3Ag%3AHVAAAeSwv6JpsRL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Home Men LS 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/HVAAAeSwv6JpsRL9/s-l225.jpg" },
+      { store: "eBay", price: 31.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776770?_skw=Colo-Colo+home+soccer+jersey&hash=item34e933aac2%3Ag%3AHVAAAeSwv6JpsRL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Home Men LS 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/HVAAAeSwv6JpsRL9/s-l225.jpg" },
     ],
   },
 {
@@ -38825,7 +38831,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 299.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236749172987?_skw=Corinthians+third+soccer+jersey+2025+2026&hash=item371f59b0fb%3Ag%3AkMMAAeSw8oNpcCqy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Corinthians 2025/26 Third Dri-FIT ADV Soccer Jersey - Men's Large HM3195-010", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/kMMAAeSw8oNpcCqy/s-l225.jpg" },
+      { store: "eBay", price: 175.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/407100007717?_skw=Corinthians+third+soccer+jersey&hash=item5ec90d2525%3Ag%3A5NkAAeSwRohp4Tzd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Corinthians Third Soccer Football Jersey Shirt Player 2026 - 2027 Brasileirão!", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/5NkAAeSwRohp4Tzd/s-l225.jpg" },
     ],
   },
 {
@@ -38899,7 +38905,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/178335321376?_skw=SC+Freiburg+away+soccer+jersey+2025+2026&hash=item29859d0d20%3Ag%3AmEMAAeSwlYhqYROy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY SC Freiburg Away 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/mEMAAeSwlYhqYROy/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/178335321376?_skw=SC+Freiburg+away+soccer+jersey&hash=item29859d0d20%3Ag%3AmEMAAeSwlYhqYROy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY SC Freiburg Away 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/mEMAAeSwlYhqYROy/s-l225.jpg" },
     ],
   },
 {
@@ -38935,7 +38941,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/198356546872?_skw=Gr%C3%AAmio+away+soccer+jersey+2025+2026&hash=item2e2ef8b538%3Ag%3ABUYAAeSwbvhqBs3g&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY GREMIO Men Away 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/BUYAAeSwbvhqBs3g/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/198356546872?_skw=Gr%C3%AAmio+away+soccer+jersey&hash=item2e2ef8b538%3Ag%3ABUYAAeSwbvhqBs3g&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY GREMIO Men Away 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BUYAAeSwbvhqBs3g/s-l225.jpg" },
     ],
   },
 {
@@ -38947,7 +38953,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318538266015?_skw=Gr%C3%AAmio+home+soccer+jersey+2025+2026&hash=item4a2a5c359f%3Ag%3AYPgAAeSwFG1qEj8o&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Gremio  Home 2026 Banrisul Jersey Men's Size L~ New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YPgAAeSwFG1qEj8o/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318538266015?_skw=Gr%C3%AAmio+home+soccer+jersey&hash=item4a2a5c359f%3Ag%3AYPgAAeSwFG1qEj8o&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Gremio  Home 2026 Banrisul Jersey Men's Size L~ New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YPgAAeSwFG1qEj8o/s-l225.jpg" },
     ],
   },
 {
@@ -38959,7 +38965,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 29.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157778220518?_skw=TSG+Hoffenheim+home+soccer+jersey+2025+2026&hash=item24bc5095e6%3Ag%3Ak9sAAeSwwBxpwOT2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TSG 1899 HOFFENHEIM Home Jersey 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/k9sAAeSwwBxpwOT2/s-l225.jpg" },
+      { store: "eBay", price: 29.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157778220518?_skw=TSG+Hoffenheim+home+soccer+jersey&hash=item24bc5095e6%3Ag%3Ak9sAAeSwwBxpwOT2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TSG 1899 HOFFENHEIM Home Jersey 2025-26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/k9sAAeSwwBxpwOT2/s-l225.jpg" },
     ],
   },
 {
@@ -39019,7 +39025,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475223885?_skw=1.+FC+K%C3%B6ln+third+soccer+jersey+2025+2026&hash=item42eedbcd4d%3Ag%3A9KwAAeSwYlFqXxlu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Jersey Koln Soccer Third Mens 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/9KwAAeSwYlFqXxlu/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475223885?_skw=1.+FC+K%C3%B6ln+third+soccer+jersey&hash=item42eedbcd4d%3Ag%3A9KwAAeSwYlFqXxlu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Jersey Koln Soccer Third Mens 2025-26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/9KwAAeSwYlFqXxlu/s-l225.jpg" },
     ],
   },
 {
@@ -39031,7 +39037,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475235414?_skw=Mainz+05+home+soccer+jersey+2025+2026&hash=item42eedbfa56%3Ag%3AI98AAeSw%7EgZqXxrX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Mainz 05 Home Mens 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/I98AAeSw~gZqXxrX/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475235414?_skw=Mainz+05+home+soccer+jersey&hash=item42eedbfa56%3Ag%3AI98AAeSw%7EgZqXxrX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Mainz 05 Home Mens 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/I98AAeSw~gZqXxrX/s-l225.jpg" },
     ],
   },
 {
@@ -39067,7 +39073,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728949480?_skw=Napoli+third+soccer+jersey+2025+2026&hash=item371e251ae8%3Ag%3AvxcAAeSwESRpb4Lz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NAPOLI - ORIGINAL BLACK THIRD Jersey 2026 - EA7 - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/vxcAAeSwESRpb4Lz/s-l225.jpg" },
+      { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728949480?_skw=Napoli+third+soccer+jersey&hash=item371e251ae8%3Ag%3AvxcAAeSwESRpb4Lz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NAPOLI - ORIGINAL BLACK THIRD Jersey 2026 - EA7 - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/vxcAAeSwESRpb4Lz/s-l225.jpg" },
       { store: "DeporteOutletES", price: 39.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44612434857&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Authentic Hombre Camiseta de tercera equipación EASSCN25G05", inStock: true, sizes: ["S", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F37%2F92%2F32%2FEASSCN25G05-1_600x600.jpg&feedId=99907&k=918a8621101c68838fe2db86b3f0bde2748a52de" },
     ],
   },
@@ -39092,7 +39098,7 @@ const productsData = [
     colorHexSecondary: "#001A4B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 66.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267368904255?_skw=Osasuna+away+soccer+jersey+2025+2026&hash=item3e406db63f%3Ag%3AEkQAAeSwy6lpXCL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron 2025-26 Osasuna Men's Authentic Away Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/EkQAAeSwy6lpXCL9/s-l225.jpg" },
+      { store: "eBay", price: 66.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267368904255?_skw=Osasuna+away+soccer+jersey&hash=item3e406db63f%3Ag%3AEkQAAeSwy6lpXCL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron 2025-26 Osasuna Men's Authentic Away Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/EkQAAeSwy6lpXCL9/s-l225.jpg" },
     ],
   },
 {
@@ -39116,7 +39122,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397901540131?_skw=Pe%C3%B1arol+away+soccer+jersey+2025+2026&hash=item5ca4c7ab23%3Ag%3AJXYAAeSwPZBp9UkD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "C.A. PEÑAROL CAMISETA 2026 AWAY JERSEY- MEN'S - NEW", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/JXYAAeSwPZBp9UkD/s-l225.jpg" },
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397901540131?_skw=Pe%C3%B1arol+away+soccer+jersey&hash=item5ca4c7ab23%3Ag%3AJXYAAeSwPZBp9UkD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "C.A. PEÑAROL CAMISETA 2026 AWAY JERSEY- MEN'S - NEW", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/JXYAAeSwPZBp9UkD/s-l225.jpg" },
     ],
   },
 {
@@ -39128,7 +39134,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397888829369?_skw=Pe%C3%B1arol+home+soccer+jersey+2025+2026&hash=item5ca405b7b9%3Ag%3AJRYAAeSw6SNp8pdo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CA PEÑAROL CAMISETA 2026 HOME JERSEY- MEN'S - NEW- ALL ADULT SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/JRYAAeSw6SNp8pdo/s-l225.jpg" },
+      { store: "eBay", price: 29.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/188205496046?_skw=Pe%C3%B1arol+home+soccer+jersey&hash=item2bd1ebf6ee%3Ag%3At-MAAeSwEv1pwzt6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PENAROL HOME Mens 2026 Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/t-MAAeSwEv1pwzt6/s-l225.jpg" },
     ],
   },
 {
@@ -39140,7 +39146,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 58.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398246892655?_skw=Pe%C3%B1arol+third+soccer+jersey+2025+2026&hash=item5cb95d546f%3Ag%3AvOcAAeSwNm9qcTUr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Peñarol Tercer Camiseta \"PINEROLO\"  2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/vOcAAeSwNm9qcTUr/s-l225.jpg" },
+      { store: "eBay", price: 58.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398246892655?_skw=Pe%C3%B1arol+third+soccer+jersey&hash=item5cb95d546f%3Ag%3AvOcAAeSwNm9qcTUr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Peñarol Tercer Camiseta \"PINEROLO\"  2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/vOcAAeSwNm9qcTUr/s-l225.jpg" },
     ],
   },
 {
@@ -39152,7 +39158,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 189.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/318372644809?_skw=Racing+Club+away+soccer+jersey+2025+2026&hash=item4a207d07c9%3Ag%3ANd0AAeSweUZqF8Ah&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RACING CLUB NIKE 2026 STADIUM AWAY JERSEY - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Nd0AAeSweUZqF8Ah/s-l225.jpg" },
+      { store: "eBay", price: 189.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/318372644809?_skw=Racing+Club+away+soccer+jersey&hash=item4a207d07c9%3Ag%3ANd0AAeSweUZqF8Ah&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RACING CLUB NIKE 2026 STADIUM AWAY JERSEY - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Nd0AAeSweUZqF8Ah/s-l225.jpg" },
     ],
   },
 {
@@ -39164,7 +39170,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 189.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/318154174770?_skw=Racing+Club+home+soccer+jersey+2025+2026&hash=item4a13777132%3Ag%3A%7EOMAAeSwQI1p37f0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RACING CLUB NIKE 2026 STADIUM HOME JERSEY - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/~OMAAeSwQI1p37f0/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475230142?_skw=Racing+Club+home+soccer+jersey&hash=item42eedbe5be%3Ag%3A5S4AAeSwP19qXxno&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Racing Club de Avellane da Mens Home 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/5S4AAeSwP19qXxno/s-l225.jpg" },
     ],
   },
 {
@@ -39176,7 +39182,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 204.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728951202?_skw=Racing+Club+third+soccer+jersey+2025+2026&hash=item371e2521a2%3Ag%3ABoYAAeSwc65pX%7EuS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RACING CLUB - ORIGINAL THIRD Jersey - 2026 - Ask for available Size - Kombat", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/BoYAAeSwc65pX~uS/s-l225.jpg" },
+      { store: "eBay", price: 204.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728951202?_skw=Racing+Club+third+soccer+jersey&hash=item371e2521a2%3Ag%3ABoYAAeSwc65pX%7EuS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RACING CLUB - ORIGINAL THIRD Jersey - 2026 - Ask for available Size - Kombat", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/BoYAAeSwc65pX~uS/s-l225.jpg" },
     ],
   },
 {
@@ -39212,7 +39218,7 @@ const productsData = [
     colorHexSecondary: "#E30613",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/800400177807?_skw=River+Plate+third+soccer+jersey+2025+2026&hash=itemba5b917a8f%3Ag%3A%7EtwAAeSwUr5qY1tN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Third Mens Soccer 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/~twAAeSwUr5qY1tN/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/800400177807?_skw=River+Plate+third+soccer+jersey&hash=itemba5b917a8f%3Ag%3A%7EtwAAeSwUr5qY1tN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY River Plate Third Mens Soccer 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/~twAAeSwUr5qY1tN/s-l225.jpg" },
     ],
   },
 {
@@ -39236,7 +39242,7 @@ const productsData = [
     colorHexSecondary: "#E0201B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 219.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/277854685663?_skw=San+Lorenzo+home+soccer+jersey+2025+2026&hash=item40b16e09df%3Ag%3ADtsAAeSwzfNpW-FX&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaQBkd%2BcX0fRZSXPs%2BfEW9dJl6c%2BBNiGvQN7uOnJ4aPPEOcTrXad0TyGW2pA9pGdiQKsg2E5ijjnDCRagPo5asUR350vqtaZuDHWCJziBKWtk7wA3R3GiPWuvWhLtOzDEHl5siYRFNDdXUSbg8fleGpOLBfVxVWkptcDXHajfOQpGZvkWJZg6geMYNoeEoQjsQVdsF3hVp2F52RG%2Fo6bCbHMz8w1eAC9aa%2BswCuJ9CCZzw3KWzbtlUAyS3szi4LREoaZGat7AycGOgJvBGZOJL0DB1uiWSFbKeYcBGeAeDFepBv6ltH898T2RxSsfxWZi0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO - ORIGINAL HOME Jersey 2026 - ATOMIK - ASK FOR AVAILABLE SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/DtsAAeSwzfNpW-FX/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/287344309446?_skw=San+Lorenzo+home+soccer+jersey&hash=item42e70e34c6%3Ag%3AEj8AAeSwcg9qDq9c&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY CLUB ATLÉTICO SAN LORENZO DE ALMAGRO Home 26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Ej8AAeSwcg9qDq9c/s-l225.jpg" },
     ],
   },
 {
@@ -39272,7 +39278,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728951280?_skw=VfB+Stuttgart+home+soccer+jersey+2025+2026&hash=item371e2521f0%3Ag%3AWEYAAeSwJ5dpb3nn&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGaWE%2FKhMiZEeBh%2B2gGbzFVTpGIOXiMqweebeQbkF2Asl%2Fa8KAVuIRTqkMVvVH1KBvf3i2ayH2ZQsM0x24riRJe80OwsZhQnz5pwI7zY5P74dJuWhLdEoWR8%2Fq%2B4pAh959MpujzDBeR6PSXw14Yo0LNHxTttA3SfuuOaJBUgQUclZLYmJUktZAfP66CfilnoFMCAnjuzJLUwFnfpPspYAiQU9CL4%2Fv3OxSLvFm%2FmUTsYeaUDZi8bY7Glb%2FhuhVmF5xcpFl%2Bniwwv8%2F6N4RztacGci3Q83sD%2F7Cu98ysotvorRwTRpo0wfGt2HFrxDRR%2BDXKFjOtfkyeHpd2YKyxZ6%2BkA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Vfb STUTTGART - ORIGINAL WHITE HOME Jersey 2026 - Jako - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/WEYAAeSwJ5dpb3nn/s-l225.jpg" },
+      { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728951280?_skw=VfB+Stuttgart+home+soccer+jersey&hash=item371e2521f0%3Ag%3AWEYAAeSwJ5dpb3nn&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWE%2FKhMiZEeBh%2B2gGbzFVTpGIOXiMqweebeQbkF2Asl%2Fa8KAVuIRTqkMVvVH1KBvf3i2ayH2ZQsM0x24riRJe80OwsZhQnz5pwI7zY5P74dJuWhLdEoWR8%2Fq%2B4pAh959MkT93%2F91Svok7wbCl5hVGRindVq2jyckCkfXeqo%2BtAT445XPEgIt2cNJEX3eLbZHFcnMssYQH7zhjTn8S7SzjhbOp8cr76Ln2T1Y4bIbSk9YXNrEzuzVknD7YcMENlAABbu97i0Fo14lH28vZA93UvmN5JSROmFSQhwFtKWd8z6sOWxKziuddnGBUwdUgQBdg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Vfb STUTTGART - ORIGINAL WHITE HOME Jersey 2026 - Jako - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/WEYAAeSwJ5dpb3nn/s-l225.jpg" },
     ],
   },
 {
@@ -39296,7 +39302,7 @@ const productsData = [
     colorHexSecondary: "#00447C",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800082644576?_skw=Tigres+UANL+third+soccer+jersey+2025+2026&hash=itemba48a44e60%3Ag%3AZTcAAeSwZoxqF8zi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Tigres UANL 2025/26 Third Authentic Jersey  Men’s Size XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ZTcAAeSwZoxqF8zi/s-l225.jpg" },
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800082644576?_skw=Tigres+UANL+third+soccer+jersey&hash=itemba48a44e60%3Ag%3AZTcAAeSwZoxqF8zi&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGay1C%2Bi%2BixeOC8wg7dJbv8qeH9LtzpZ5KeSXioqXyYO8ebK7kia109cdwagT%2FtGhXJyrFnJQ0wuZHF308CqpBcuTZMalqGocTEGNcJTsJoizmPNcSey34Yv58LLSc0V5sKNE1kmUXpguWI5nOrs6tC9NAuSlHa%2FNjS2TxsIuUSloN1bx9bGa0WPFXLimVGOdTqaitYckW6kBMs%2Bqj3UaHrON3BX73E5uQkORBURGLlLvnucHBBGoGhXdPr7mVcBrnDWy3dFCndzkdlZK1mH%2FeuMO6pQAaK4HR%2BXdy6ZpfkXggO7FwOUYIUTqH0VBSuaarY%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Tigres UANL 2025/26 Third Authentic Jersey  Men’s Size XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ZTcAAeSwZoxqF8zi/s-l225.jpg" },
     ],
   },
 {
@@ -39308,7 +39314,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198401185886?_skw=Torino+home+soccer+jersey+2025+2026&hash=item2e31a1d85e%3Ag%3ANokAAeSwVGZqISWt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW! - Joma Torino 2025-26 Home Jersey football soccer shirt maglia calcio - M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/NokAAeSwVGZqISWt/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198401185886?_skw=Torino+home+soccer+jersey&hash=item2e31a1d85e%3Ag%3ANokAAeSwVGZqISWt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW! - Joma Torino 2025-26 Home Jersey football soccer shirt maglia calcio - M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/NokAAeSwVGZqISWt/s-l225.jpg" },
     ],
   },
 {
@@ -39320,7 +39326,7 @@ const productsData = [
     colorHexSecondary: "#003DA5",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 184.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236734200463?_skw=V%C3%A9lez+Sarsfield+away+soccer+jersey+2025+2026&hash=item371e753a8f%3Ag%3ARUkAAeSwPSxpz-yj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD - ORIGINAL AWAY Jersey 2026 - Ask for Size - Soccer ARGENTINA", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/RUkAAeSwPSxpz-yj/s-l225.jpg" },
+      { store: "eBay", price: 184.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236734200463?_skw=V%C3%A9lez+Sarsfield+away+soccer+jersey&hash=item371e753a8f%3Ag%3ARUkAAeSwPSxpz-yj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD - ORIGINAL AWAY Jersey 2026 - Ask for Size - Soccer ARGENTINA", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/RUkAAeSwPSxpz-yj/s-l225.jpg" },
     ],
   },
 {
@@ -39344,7 +39350,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/167583700137?_skw=Werder+Bremen+third+soccer+jersey+2025+2026&hash=item2704c454a9%3Ag%3A2RcAAOSw6UtoS5Q8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Werder Bremen Soccer Third Men 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/2RcAAOSw6UtoS5Q8/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/167583700137?_skw=Werder+Bremen+third+soccer+jersey&hash=item2704c454a9%3Ag%3A2RcAAOSw6UtoS5Q8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Werder Bremen Soccer Third Men 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/2RcAAOSw6UtoS5Q8/s-l225.jpg" },
     ],
   },
 {
@@ -39395,7 +39401,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 80.4, shipping: 17.1, currency: "USD", url: "https://www.ebay.com/itm/377310598490?_skw=Albania+away+soccer+jersey+2025+2026&hash=item57d976d55a%3Ag%3A5xEAAeSwD-Bqbwuv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ALBANIA FOOTBALL SOCCER - MATCH SHIRT AWAY - MACRON - Season 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/5xEAAeSwD-Bqbwuv/s-l225.jpg" },
+      { store: "eBay", price: 80.4, shipping: 17.1, currency: "USD", url: "https://www.ebay.com/itm/377310598490?_skw=Albania+away+soccer+jersey&hash=item57d976d55a%3Ag%3A5xEAAeSwD-Bqbwuv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ALBANIA FOOTBALL SOCCER - MATCH SHIRT AWAY - MACRON - Season 2025/26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/5xEAAeSwD-Bqbwuv/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Falbania-away-soccer-jersey-2026-world-cup%3Fvariant%3D43070141694057", title: "Albania Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Albaniaawayjersey2026_1.webp?v=1774594460" },
     ],
   },
@@ -39408,7 +39414,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168545513809?_skw=Albania+home+soccer+jersey+2025+2026&hash=item273e187151%3Ag%3A4rYAAeSwlslqW8-b&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Albania National Soccer Home Men 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/4rYAAeSwlslqW8-b/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168545513809?_skw=Albania+home+soccer+jersey&hash=item273e187151%3Ag%3A4rYAAeSwlslqW8-b&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Albania National Soccer Home Men 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4rYAAeSwlslqW8-b/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Falbania-home-soccer-jersey-2026-world-cup%3Fvariant%3D43070415798377", title: "Albania Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Albaniahomejersey2026_1.webp?v=1774594846" },
       { store: "FootStoreFR", price: 50.2, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400065600001-maillot-domicile-albanie-2025-26-orange-noir", title: "Maillot Domicile Albanie 2025/26", inStock: true, sizes: ["XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_400065600001_orange-noir_1.webp" },
     ],
@@ -39422,7 +39428,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168545517487?_skw=Albania+third+soccer+jersey+2025+2026&hash=item273e187faf%3Ag%3AstMAAeSwDB5qW9AS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Albania National Soccer Third Men 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/stMAAeSwDB5qW9AS/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168545517487?_skw=Albania+third+soccer+jersey&hash=item273e187faf%3Ag%3AstMAAeSwDB5qW9AS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Albania National Soccer Third Men 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/stMAAeSwDB5qW9AS/s-l225.jpg" },
       { store: "FootStoreFR", price: 71.24, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400065720001-maillot-third-albanie-2025-26-noir", title: "Maillot Third Albanie 2025/26", inStock: true, sizes: ["XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_400065720001_noir_1.webp" },
     ],
   },
@@ -39435,7 +39441,7 @@ const productsData = [
     colorHexSecondary: "#002F6C",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/336225662944?_skw=AJ+Auxerre+home+soccer+jersey+2025+2026&hash=item4e489c77e0%3Ag%3AW6oAAeSwfo5o6LmI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY AJ Auxerre Home 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/W6oAAeSwfo5o6LmI/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/336225662944?_skw=AJ+Auxerre+home+soccer+jersey&hash=item4e489c77e0%3Ag%3AW6oAAeSwfo5o6LmI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY AJ Auxerre Home 2025-26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/W6oAAeSwfo5o6LmI/s-l225.jpg" },
     ],
   },
 {
@@ -39447,7 +39453,7 @@ const productsData = [
     colorHexSecondary: "#FFCD00",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 34.99, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/377244971675?_skw=Bosnia+and+Herzegovina+away+soccer+jersey+2025+2026&hash=item57d58d729b%3Ag%3Aoq0AAeSw0NhqJuW2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bosnia and Herzegovina Away Jersey 2026 Men Adult", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/oq0AAeSw0NhqJuW2/s-l225.jpg" },
+      { store: "eBay", price: 34.99, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/377244971675?_skw=Bosnia+and+Herzegovina+away+soccer+jersey&hash=item57d58d729b%3Ag%3Aoq0AAeSw0NhqJuW2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bosnia and Herzegovina Away Jersey 2026 Men Adult", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/oq0AAeSw0NhqJuW2/s-l225.jpg" },
     ],
   },
 {
@@ -39459,7 +39465,7 @@ const productsData = [
     colorHexSecondary: "#FFCD00",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 34.99, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/377242395618?_skw=Bosnia+and+Herzegovina+home+soccer+jersey+2025+2026&hash=item57d56623e2%3Ag%3A%7EZcAAeSwZ1dqU1Pc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bosnia and Herzegovina Home Jersey 2026 Men Adult", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/~ZcAAeSwZ1dqU1Pc/s-l225.jpg" },
+      { store: "eBay", price: 34.99, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/377242395618?_skw=Bosnia+and+Herzegovina+home+soccer+jersey&hash=item57d56623e2%3Ag%3A%7EZcAAeSwZ1dqU1Pc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bosnia and Herzegovina Home Jersey 2026 Men Adult", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/~ZcAAeSwZ1dqU1Pc/s-l225.jpg" },
     ],
   },
 {
@@ -39471,7 +39477,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/358488652137?_skw=Cape+Verde+away+soccer+jersey+2025+2026&hash=item537796b969%3Ag%3AyvoAAeSw7LFp7bkv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde National Soccer Away 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/yvoAAeSw7LFp7bkv/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/358488652137?_skw=Cape+Verde+away+soccer+jersey&hash=item537796b969%3Ag%3AyvoAAeSw7LFp7bkv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde National Soccer Away 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/yvoAAeSw7LFp7bkv/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcabo-verde-away-soccer-jersey-2026-world-cup%3Fvariant%3D47700734607465", title: "Cabo Verde Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/caboverdeaway.webp?v=1781574382" },
     ],
   },
@@ -39484,7 +39490,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358731430447?_skw=Cape+Verde+goalkeeper+soccer+jersey&hash=item53860f3a2f%3Ag%3AarQAAeSw53VqQSmc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde Yellow goalkeeper jersey 2026", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/arQAAeSw53VqQSmc/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/358731430447?_skw=Cape+Verde+goalkeeper+soccer+jersey&hash=item53860f3a2f%3Ag%3AarQAAeSw53VqQSmc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde Yellow goalkeeper jersey 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/arQAAeSw53VqQSmc/s-l225.jpg" },
     ],
   },
 {
@@ -39496,7 +39502,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/358488652158?_skw=Cape+Verde+home+soccer+jersey+2025+2026&hash=item537796b97e%3Ag%3AHoIAAeSwaENp7bku&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde National Soccer Home 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/HoIAAeSwaENp7bku/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/358488652158?_skw=Cape+Verde+home+soccer+jersey&hash=item537796b97e%3Ag%3AHoIAAeSwaENp7bku&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde National Soccer Home 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/HoIAAeSwaENp7bku/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcabo-verde-home-soccer-jersey-2026-world-cup%3Fvariant%3D47700725563497", title: "Cabo Verde Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/caboverdehome.webp?v=1781574229" },
     ],
   },
@@ -39521,7 +39527,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 39.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318729499721?_skw=Canada+away+soccer+jersey+2025+2026&hash=item4a35c23449%3Ag%3A9%7EIAAeSwAzZqUXgD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canadá SOCCER JERSEY AWAY WORLD CUP 2026 Size M Men's", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/9~IAAeSwAzZqUXgD/s-l225.jpg" },
+      { store: "eBay", price: 39.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318729499721?_skw=Canada+away+soccer+jersey&hash=item4a35c23449%3Ag%3A9%7EIAAeSwAzZqUXgD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canadá SOCCER JERSEY AWAY WORLD CUP 2026 Size M Men's", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/9~IAAeSwAzZqUXgD/s-l225.jpg" },
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flarin-9-canada-away-football-jersey-2026-world-cup%3Fvariant%3D47711585697897", title: "LARIN #9 Canada Away Football Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/canadaawayfan_9-2.webp?v=1782093718" },
     ],
   },
@@ -39534,7 +39540,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017218473?_skw=Canada+third+soccer+jersey+2025+2026&hash=itemba44bdfba9%3Ag%3AX7YAAeSwgsVqBXoH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Canada National Soccer Mens Third 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/X7YAAeSwgsVqBXoH/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017218473?_skw=Canada+third+soccer+jersey&hash=itemba44bdfba9%3Ag%3AX7YAAeSwgsVqBXoH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Canada National Soccer Mens Third 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/X7YAAeSwgsVqBXoH/s-l225.jpg" },
     ],
   },
 {
@@ -39546,7 +39552,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 79.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/306926028729?_skw=Czech+Republic+home+soccer+jersey+2025+2026&hash=item47763787b9%3Ag%3Ak0kAAeSw4ABp%7EdBo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma Red Czech Republic National Team 2026 Home Replica Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/k0kAAeSw4ABp~dBo/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398211477383?_skw=Czech+Republic+home+soccer+jersey&hash=item5cb740ef87%3Ag%3AgTkAAeSwU9Bp8so-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Czech Republic 2026 World Cup Home Jersey (Schick #10) - Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gTkAAeSwU9Bp8so-/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fczechia-home-soccer-jersey-2026-world-cup%3Fvariant%3D42725374558313", title: "Czechia Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/CzechiaHomeSoocerJersey2026_2.jpg?v=1764818207" },
     ],
   },
@@ -39559,7 +39565,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/257472060528?_skw=El+Salvador+away+soccer+jersey+2025+2026&hash=item3bf287dc70%3Ag%3A7MgAAeSw9fpp6uZY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW Oficial Umbro El Salvador Men's Away Jersey 2025/2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/7MgAAeSw9fpp6uZY/s-l225.jpg" },
+      { store: "eBay", price: 109.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389877497259?_skw=El+Salvador+away+soccer+jersey&hash=item5ac6827dab%3Ag%3ArrMAAeSwgIRp2tB0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro El Salvador Men's  Away Authentic Jersey 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/rrMAAeSwgIRp2tB0/s-l225.jpg" },
     ],
   },
 {
@@ -39583,7 +39589,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198552949664?_skw=El+Salvador+third+soccer+jersey+2025+2026&hash=item2e3aad93a0%3Ag%3A7loAAeSwMbhqdT-6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro El Salvador 2025/2026 Third Jersey Black Men’s Size S - New With Tags", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/7loAAeSwMbhqdT-6/s-l225.jpg" },
+      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/146715257067?_skw=El+Salvador+third+soccer+jersey&hash=item2228e928eb%3Ag%3AWhQAAeSwOxdoeZQQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "EL SALVADOR 25/26 THIRD  SPORT JERSEY WITH FEATHERS DESIGN FOR MENS. BLACK COLOR", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/WhQAAeSwOxdoeZQQ/s-l225.jpg" },
     ],
   },
 {
@@ -39595,7 +39601,7 @@ const productsData = [
     colorHexSecondary: "#00A651",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/236832570923?_skw=Slovenia+away+soccer+jersey+2025+2026&hash=item3724523e2b%3Ag%3AstgAAeSwZQpqEVMU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Slovenia national team Away Jersey Mens 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/stgAAeSwZQpqEVMU/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/236832570923?_skw=Slovenia+away+soccer+jersey&hash=item3724523e2b%3Ag%3AstgAAeSwZQpqEVMU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Slovenia national team Away Jersey Mens 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/stgAAeSwZQpqEVMU/s-l225.jpg" },
     ],
   },
 {
@@ -39607,7 +39613,7 @@ const productsData = [
     colorHexSecondary: "#00A651",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/236832570921?_skw=Slovenia+home+soccer+jersey+2025+2026&hash=item3724523e29%3Ag%3AouUAAeSwyTBqEVMU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Slovenia national team Home Jersey Mens 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ouUAAeSwyTBqEVMU/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/236832570921?_skw=Slovenia+home+soccer+jersey&hash=item3724523e29%3Ag%3AouUAAeSwyTBqEVMU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Slovenia national team Home Jersey Mens 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ouUAAeSwyTBqEVMU/s-l225.jpg" },
     ],
   },
 {
@@ -39619,7 +39625,7 @@ const productsData = [
     colorHexSecondary: "#003580",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205582559323?_skw=Finland+away+soccer+jersey+2025+2026&hash=item2fddace85b%3Ag%3AqdoAAOSwRgtoXC%7EM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Finland national team Mens Away Soccer 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/qdoAAOSwRgtoXC~M/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205582559323?_skw=Finland+away+soccer+jersey&hash=item2fddace85b%3Ag%3AqdoAAOSwRgtoXC%7EM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Finland national team Mens Away Soccer 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/qdoAAOSwRgtoXC~M/s-l225.jpg" },
     ],
   },
 {
@@ -39631,7 +39637,7 @@ const productsData = [
     colorHexSecondary: "#003580",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017190890?_skw=Finland+home+soccer+jersey+2025+2026&hash=itemba44bd8fea%3Ag%3AWA4AAeSw7pFqBXjX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Finland national team Mens Home Soccer 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/WA4AAeSw7pFqBXjX/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017190890?_skw=Finland+home+soccer+jersey&hash=itemba44bd8fea%3Ag%3AWA4AAeSw7pFqBXjX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Finland national team Mens Home Soccer 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/WA4AAeSw7pFqBXjX/s-l225.jpg" },
     ],
   },
 {
@@ -39643,7 +39649,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 40.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/397184966109?_skw=Guatemala+away+soccer+jersey+2025+2026&hash=item5c7a119ddd%3Ag%3AZW0AAeSwnDFo-VqJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Guatemala 2025-26 Away Soccer Jersey S-XXL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ZW0AAeSwnDFo-VqJ/s-l225.jpg" },
+      { store: "eBay", price: 40.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/397184966109?_skw=Guatemala+away+soccer+jersey&hash=item5c7a119ddd%3Ag%3AZW0AAeSwnDFo-VqJ&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGahZWRUkBJ222sgS4VJSsIonQ87rr46LjNgreM3xSmKiyWD1focUBLgf%2FrOfxMKf3SmyqXyCEv9AAcc2caviRDa%2Bxy004NM6k4z4DVkE3rDCHdIiT0Kg%2FXdmx7s%2FgV0o52vJLYLko5dBc0L%2F21hbuA7WsTDaLKXouLut2smL2RVzSlc4MxxOVMn60FcO8osDfOG%2BrR4qgyGRccIqaJ2l8utTE1fAhS04Pd1XisnAWMkxBhBhSPCWO9BcD7BFGVFH%2Bd%2Bx4fOfHutuF5s40lgvrIw0zeAEPDcP%2FecgtysJ9QINg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Guatemala 2025-26 Away Soccer Jersey S-XXL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ZW0AAeSwnDFo-VqJ/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fguatemala-away-football-jersey-2026-black%3Fvariant%3D43096170168425", title: "Guatemala Away Football Jersey 2026 Black", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/GuatemalaAwayJerseyWorldCup2026_5.webp?v=1775204017" },
     ],
   },
@@ -39668,7 +39674,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/167533372451?_skw=Guatemala+third+soccer+jersey+2025+2026&hash=item2701c46423%3Ag%3AFo0AAOSwkFhoMARk&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Guatemala Soccer Third Men 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Fo0AAOSwkFhoMARk/s-l225.jpg" },
+      { store: "eBay", price: 28.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/167533372451?_skw=Guatemala+third+soccer+jersey&hash=item2701c46423%3Ag%3AFo0AAOSwkFhoMARk&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Guatemala Soccer Third Men 2025-26", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/Fo0AAOSwkFhoMARk/s-l225.jpg" },
     ],
   },
 {
@@ -39680,7 +39686,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178130305742?_skw=Guatemala+training+soccer+jersey&hash=item297964c2ce%3Ag%3Ak4MAAeSwu-dqBCOV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Guatemala Soccer Training Camouflage Men 2026", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/k4MAAeSwu-dqBCOV/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267225685160?_skw=Guatemala+training+soccer+jersey&hash=item3e37e45ca8%3Ag%3AMYcAAOSwYz5oA6xv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Guatemala Soccer Training Blue Men 2025-26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/MYcAAOSwYz5oA6xv/s-l225.jpg" },
     ],
   },
 {
@@ -39692,7 +39698,7 @@ const productsData = [
     colorHexSecondary: "#002F6C",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267408365973?_skw=Hellas+Verona+away+soccer+jersey+2025+2026&hash=item3e42c7d995%3Ag%3A2GMAAeSwqxlpXCKc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma 2025-26 Hellas Verona Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/2GMAAeSwqxlpXCKc/s-l225.jpg" },
+      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267408365973?_skw=Hellas+Verona+away+soccer+jersey&hash=item3e42c7d995%3Ag%3A2GMAAeSwqxlpXCKc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma 2025-26 Hellas Verona Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/2GMAAeSwqxlpXCKc/s-l225.jpg" },
     ],
   },
 {
@@ -39704,7 +39710,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/366401580226?_skw=Honduras+away+soccer+jersey+2025+2026&hash=item554f3c6cc2%3Ag%3AFdIAAeSw5AhqAY11&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Honduras Soccer Mens Away 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/FdIAAeSw5AhqAY11/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/366401580226?_skw=Honduras+away+soccer+jersey&hash=item554f3c6cc2%3Ag%3AFdIAAeSw5AhqAY11&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Honduras Soccer Mens Away 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/FdIAAeSw5AhqAY11/s-l225.jpg" },
     ],
   },
 {
@@ -39716,7 +39722,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 31.5, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366353416359?_skw=Honduras+home+soccer+jersey+2025+2026&hash=item554c5d80a7%3Ag%3ARo0AAeSwEpNp4rw5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Honduras Soccer Jersey Home 2026 unisex Blue and  White with tradicional desing", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Ro0AAeSwEpNp4rw5/s-l225.jpg" },
+      { store: "eBay", price: 31.5, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366353416359?_skw=Honduras+home+soccer+jersey&hash=item554c5d80a7%3Ag%3ARo0AAeSwEpNp4rw5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Honduras Soccer Jersey Home 2026 unisex Blue and  White with tradicional desing", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Ro0AAeSwEpNp4rw5/s-l225.jpg" },
     ],
   },
 {
@@ -39728,7 +39734,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 69.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147325832818?_skw=Indonesia+away+soccer+jersey+2025+2026&hash=item224d4dce72%3Ag%3ArW4AAeSwi69qES8K&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbGYuIfx1ijRh1xomXAy5stQwIFEwCmQVQzXGPPcfuu3iwnE21kbEsrtva4rDorNWX23HpbD4dqD5MfBldVLTM5cKNV0xg6P2G5qMD7obKghLHw3zDuPE481qKJyiGLsin1Slub9DCMsvpZGXhiC0PymktJmAQElEJVCiKD3Pt0%2BRKISyTPU3rHOb%2BeVfSKX%2FaMVWvUfgilKuiZmlfqFwE7%2BA2ibChtDDTmIkFY%2FYiy90dCpWIHHu7D5fFry2M5wnnfxyfzf8hmLgiGCSIIF4eO01KRNlIrkaqMKgAUlGZKrSM5hL9unTxIV7NTKbMDf%2BU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Jersey Indonesia National Teams Soccer Football Away - 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/rW4AAeSwi69qES8K/s-l225.jpg" },
+      { store: "eBay", price: 69.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147325832818?_skw=Indonesia+away+soccer+jersey&hash=item224d4dce72%3Ag%3ArW4AAeSwi69qES8K&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbGYuIfx1ijRh1xomXAy5stQwIFEwCmQVQzXGPPcfuu3iwnE21kbEsrtva4rDorNWX23HpbD4dqD5MfBldVLTM5cKNV0xg6P2G5qMD7obKghLHw3zDuPE481qKJyiGLsimlwWuQMyVcoC%2BPyjVr8UPtiBbO%2B2aHUnQPMQ5WAEhQyhbcai9mrA%2B6AmvVKShkgS6xnW3c%2BIeNKxpkrV0AL6bWfIBYLCX9V3q%2BxmiFc5%2F85g5vt%2BJB9mVxPeyKWMAAGVaSm1ZhXEx%2FHAHKeTBkrkOQr9YTyhVl3aArbnjs6Nl6RxanTRSk2SYheyFIPmnQ0GM%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Jersey Indonesia National Teams Soccer Football Away - 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/rW4AAeSwi69qES8K/s-l225.jpg" },
     ],
   },
 {
@@ -39740,7 +39746,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/298287850195?_skw=Indonesia+home+soccer+jersey+2025+2026&hash=item45735762d3%3Ag%3AqU4AAeSwpZhp-EcB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Indonesia 2026 Home Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qU4AAeSwpZhp-EcB/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/298287850195?_skw=Indonesia+home+soccer+jersey&hash=item45735762d3%3Ag%3AqU4AAeSwpZhp-EcB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Indonesia 2026 Home Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qU4AAeSwpZhp-EcB/s-l225.jpg" },
     ],
   },
 {
@@ -39777,7 +39783,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336732125092?_skw=Paraguay+home+soccer+jersey+2025+2026&hash=item4e66cc77a4%3Ag%3A5VQAAeSwU79qdm3U&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb9Jy%2Ft5FCdpz646ShFs7dbRYcRQmsYJ13LIzGRrfhqI8pz80iGPX2rhXMagD%2BQgeSgmu6Bug25gYKf8svmemQJxfDu9TDLNUhtHKKa%2BgXXU%2BTfSxv%2B0bAYWqBYWqXzo1TEbj9kEAC9uVP%2BV6fFqlXLeA7j9yhlHDrlU0fkqttI3NnPrnnVXdC4Cb4BRXtUnljfU3uIiWhPL%2B%2FuQ9gj%2B0d7hpQ8sEIM5onW2cKZ5b9KViRlouawoa62bgNS518QUbLrXm28bkBqnUnqrhxu1bGUY9t9Dgcy94%2FisuamZMFwvdKINJwHXSyaS0WfsJovs88%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Paraguay 2026 Home Soccer Jersey Men’s L World Cup SHIPS ASAP", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5VQAAeSwU79qdm3U/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336732125092?_skw=Paraguay+home+soccer+jersey&hash=item4e66cc77a4%3Ag%3A5VQAAeSwU79qdm3U&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb9Jy%2Ft5FCdpz646ShFs7dbRYcRQmsYJ13LIzGRrfhqI8pz80iGPX2rhXMagD%2BQgeSgmu6Bug25gYKf8svmemQJxfDu9TDLNUhtHKKa%2BgXXU%2BTfSxv%2B0bAYWqBYWqXzo1SAEu8LPDgsmQwsm1cj2q8ardWPyXMwpRUYW0SljXheObLIssAsOvdMLeGjjhOmiRHUT9tpT1zimz0M49pe0aq8o%2FZz2qceoa%2FpIwETkXAubsQTLGUPHop6e2pXYPv7LSTT2DLq0dMGmB8s5nTwn%2BiGdCNaIYTJMKpEQ0rmKRkWWA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Paraguay 2026 Home Soccer Jersey Men’s L World Cup SHIPS ASAP", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5VQAAeSwU79qdm3U/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fparaguay-home-football-jersey-world-cup-2026%3Fvariant%3D43111746437225", title: "Paraguay Home Football Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ParaguayHomeJerseyWorldCup2026_3.webp?v=1775646400" },
     ],
   },
@@ -39827,7 +39833,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 47.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/307117805545?_skw=Thailand+third+soccer+jersey+2025+2026&hash=item4781a5cfe9%3Ag%3AVs4AAeSwYTBqebvo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2025-26 Thailand National Team Third Football Soccer Jersey Shirt White", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Vs4AAeSwYTBqebvo/s-l225.jpg" },
+      { store: "eBay", price: 47.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/307117805545?_skw=Thailand+third+soccer+jersey&hash=item4781a5cfe9%3Ag%3AVs4AAeSwYTBqebvo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2025-26 Thailand National Team Third Football Soccer Jersey Shirt White", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Vs4AAeSwYTBqebvo/s-l225.jpg" },
     ],
   },
 {
@@ -39839,7 +39845,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336561716610?_skw=Thailand+training+soccer+jersey&hash=item4e5ca43d82%3Ag%3AVtkAAeSwLSlp9BEf&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Official Thailand National Football Soccer Team Training Jersey Blue", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/VtkAAeSwLSlp9BEf/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/336561716610?_skw=Thailand+training+soccer+jersey&hash=item4e5ca43d82%3Ag%3AVtkAAeSwLSlp9BEf&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Official Thailand National Football Soccer Team Training Jersey Blue", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/VtkAAeSwLSlp9BEf/s-l225.jpg" },
     ],
   },
 {
@@ -39851,7 +39857,7 @@ const productsData = [
     colorHexSecondary: "#0099CC",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017254829?_skw=Uzbekistan+away+soccer+jersey+2025+2026&hash=itemba44be89ad%3Ag%3AmEAAAeSwSzBqBX2I&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uzbekistan Soccer Away Men 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/mEAAAeSwSzBqBX2I/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/800017254829?_skw=Uzbekistan+away+soccer+jersey&hash=itemba44be89ad%3Ag%3AmEAAAeSwSzBqBX2I&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uzbekistan Soccer Away Men 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/mEAAAeSwSzBqBX2I/s-l225.jpg" },
     ],
   },
 {
@@ -40238,7 +40244,7 @@ const productsData = [
     colorHexSecondary: "#CE1126",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398211420801?_skw=Jordan+home+soccer+jersey&hash=item5cb7401281%3Ag%3A4-oAAeSwahlqY4nM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Kelme Jordan 2026 World Cup Home Jersey - Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/4-oAAeSwahlqY4nM/s-l225.jpg" },
+      { store: "eBay", price: 35.32, shipping: 21.62, currency: "USD", url: "https://www.ebay.com/itm/800316015498?_skw=Jordan+home+soccer+jersey&hash=itemba568d438a%3Ag%3A7hYAAeSwNRxqT%7ECn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Jordan world cup jersey 2026, Home and away", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/7hYAAeSwNRxqT~Cn/s-l225.jpg" },
       { store: "MysteryShirtClub", price: 79.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-jordan-home-shirt-510214", title: "2026-2027 Jordan Home Shirt", inStock: true, sizes: ["XS", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1781128738_2026-2027-jordan-kelme-home-shirt.jpg?v=1783506035" },
     ],
   },
@@ -40567,7 +40573,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 143.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/800471798893?_skw=Deportivo+Alav%C3%A9s+home+soccer+jersey+2025+2026&hash=itemba5fd6546d%3Ag%3AA6MAAeSw%7ELpqcuDK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Deportivo Alaves 2026 - 27 Authentic Home Jersey - Royal Blue/White", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/A6MAAeSw~LpqcuDK/s-l225.jpg" },
+      { store: "eBay", price: 143.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/800471798893?_skw=Deportivo+Alav%C3%A9s+home+soccer+jersey&hash=itemba5fd6546d%3Ag%3AA6MAAeSw%7ELpqcuDK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Deportivo Alaves 2026 - 27 Authentic Home Jersey - Royal Blue/White", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/A6MAAeSw~LpqcuDK/s-l225.jpg" },
     ],
   },
 {
@@ -40579,7 +40585,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137500658753?_skw=Saudi+Arabia+training+soccer+jersey&hash=item2003ad8c41%3Ag%3AewgAAeSwYlpqUJiM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Saudi Arabia national team Green training 2026 Men Jersey ", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ewgAAeSwYlpqUJiM/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/137500658753?_skw=Saudi+Arabia+training+soccer+jersey&hash=item2003ad8c41%3Ag%3AewgAAeSwYlpqUJiM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Saudi Arabia national team Green training 2026 Men Jersey ", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ewgAAeSwYlpqUJiM/s-l225.jpg" },
     ],
   },
 {
@@ -40628,7 +40634,7 @@ const productsData = [
     colorHexSecondary: "#00296B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137229791623?_skw=Club+Am%C3%A9rica+goalkeeper+soccer+jersey+2025+2026&hash=item1ff3887187%3Ag%3AxDkAAeSwnSNp4Bfb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Club America 2025/26 Long Sleeve Goalkeeper Size Small Jersey JN8823", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/xDkAAeSwnSNp4Bfb/s-l225.jpg" },
+      { store: "eBay", price: 49.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/188454444010?_skw=Club+Am%C3%A9rica+goalkeeper+soccer+jersey&hash=item2be0c29bea%3Ag%3AbLEAAeSwCr9qHgxy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW Club America adidas 25/26 Long Sleeve Goalkeeper Jersey Black 2XL JN8623", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/bLEAAeSwCr9qHgxy/s-l225.jpg" },
     ],
   },
 {
@@ -40640,7 +40646,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188229444076?_skw=South+Korea+goalkeeper+soccer+jersey&hash=item2bd35961ec%3Ag%3AngwAAeSwz5hpy8fC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike 2026 South Korea Premium Goalkeeper T-Shirt IO4579-010 ✅US Sizes", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ngwAAeSwz5hpy8fC/s-l225.jpg" },
+      { store: "eBay", price: 69.99, shipping: 24.99, currency: "USD", url: "https://www.ebay.com/itm/188229444076?_skw=South+Korea+goalkeeper+soccer+jersey&hash=item2bd35961ec%3Ag%3AngwAAeSwz5hpy8fC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike 2026 South Korea Premium Goalkeeper T-Shirt IO4579-010 ✅US Sizes", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ngwAAeSwz5hpy8fC/s-l225.jpg" },
     ],
   },
 {
@@ -40688,7 +40694,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318660716223?_skw=Cruzeiro+training+soccer+jersey+2025+2026&hash=item4a31a8a6bf%3Ag%3AsOIAAeSwN-lqbP74&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CRUZEIRO 2025/26 JERSEY SOCCER - TRAINING Size M Slim Fit", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/sOIAAeSwN-lqbP74/s-l225.jpg" },
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318660716223?_skw=Cruzeiro+training+soccer+jersey&hash=item4a31a8a6bf%3Ag%3AsOIAAeSwN-lqbP74&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CRUZEIRO 2025/26 JERSEY SOCCER - TRAINING Size M Slim Fit", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/sOIAAeSwN-lqbP74/s-l225.jpg" },
     ],
   },
 {
@@ -40736,7 +40742,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366573130462?_skw=Fiorentina+goalkeeper+soccer+jersey&hash=item55597612de%3Ag%3A4gYAAeSw1uFqakAL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 ACF Fiorentina Goalkeeper Gray Authentic Jersey Size XL Kappa NEW W/TAGS JC", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4gYAAeSw1uFqakAL/s-l225.jpg" },
+      { store: "eBay", price: 59.99, shipping: 11.99, currency: "USD", url: "https://www.ebay.com/itm/366573130462?_skw=Fiorentina+goalkeeper+soccer+jersey&hash=item55597612de%3Ag%3A4gYAAeSw1uFqakAL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 ACF Fiorentina Goalkeeper Gray Authentic Jersey Size XL Kappa NEW W/TAGS JC", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4gYAAeSw1uFqakAL/s-l225.jpg" },
     ],
   },
 {
@@ -40772,7 +40778,7 @@ const productsData = [
     colorHexSecondary: "#006B3D",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198356529512?_skw=Fluminense+training+soccer+jersey+2025+2026&hash=item2e2ef87168%3Ag%3A16wAAeSwa2BqBsuG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Fluminense 2026 Soccer Training Blue Mens", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/16wAAeSwa2BqBsuG/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/198356529512?_skw=Fluminense+training+soccer+jersey&hash=item2e2ef87168%3Ag%3A16wAAeSwa2BqBsuG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Fluminense 2026 Soccer Training Blue Mens", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/16wAAeSwa2BqBsuG/s-l225.jpg" },
     ],
   },
 {
@@ -40820,7 +40826,7 @@ const productsData = [
     colorHexSecondary: "#B4122A",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 143.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178380348025?_skw=Levante+UD+home+soccer+jersey+2025+2026&hash=item29884c1a79%3Ag%3A4xUAAeSw8KNqcmc9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Levante UD 2026 - 27 Authentic Home Jersey - Red/Navy Blue", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4xUAAeSw8KNqcmc9/s-l225.jpg" },
+      { store: "eBay", price: 143.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178380348025?_skw=Levante+UD+home+soccer+jersey&hash=item29884c1a79%3Ag%3A4xUAAeSw8KNqcmc9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Levante UD 2026 - 27 Authentic Home Jersey - Red/Navy Blue", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/4xUAAeSw8KNqcmc9/s-l225.jpg" },
     ],
   },
 {
@@ -40832,7 +40838,7 @@ const productsData = [
     colorHexSecondary: "#1C2C5B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168594264983?_skw=Manchester+City+goalkeeper+soccer+jersey+2025+2026&hash=item2741005397%3Ag%3ANfsAAeSw4oNqbRr4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Men's Manchester City 2025/26 Goalkeeper Jersey Size 3XL", inStock: false, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/NfsAAeSw4oNqbRr4/s-l225.jpg" },
+      { store: "eBay", price: 42.0, shipping: 10.99, currency: "USD", url: "https://www.ebay.com/itm/188775673451?_skw=Manchester+City+goalkeeper+soccer+jersey&hash=item2bf3e82e6b%3Ag%3AuFYAAeSwEi9qeumI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Manchester City 25/26 GK Goalkeeper Jersey 780454-85 Fluro Pink Men's XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/uFYAAeSwEi9qeumI/s-l225.jpg" },
     ],
   },
 {
@@ -40844,7 +40850,7 @@ const productsData = [
     colorHexSecondary: "#1B7B3E",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 50.1, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336685054653?_skw=FC+Nantes+training+soccer+jersey&hash=item4e63fe3abd%3Ag%3AYJAAAeSwSFFqbwxl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC NANTES - SHIRT WARM UP TRAINING - MACRON - Season 2025/26", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YJAAAeSwSFFqbwxl/s-l225.jpg" },
+      { store: "eBay", price: 50.1, shipping: 17.1, currency: "USD", url: "https://www.ebay.com/itm/336685054653?_skw=FC+Nantes+training+soccer+jersey&hash=item4e63fe3abd%3Ag%3AYJAAAeSwSFFqbwxl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC NANTES - SHIRT WARM UP TRAINING - MACRON - Season 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YJAAAeSwSFFqbwxl/s-l225.jpg" },
     ],
   },
 {
@@ -40856,7 +40862,7 @@ const productsData = [
     colorHexSecondary: "#1B3A6B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 75.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336706277257?_skw=Netherlands+goalkeeper+soccer+jersey&hash=item4e65420f89%3Ag%3AxVUAAeSwMttqY4zb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Netherlands National Team Nike 2026 Goalkeeper Stadium Replica Jersey - Gray", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/xVUAAeSwMttqY4zb/s-l225.jpg" },
+      { store: "eBay", price: 74.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407062897523?_skw=Netherlands+goalkeeper+soccer+jersey&hash=item5ec6d6e373%3Ag%3APYEAAeSwrptqUMKs&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Netherlands National Team Nike 2026 Goalkeeper Stadium Replica Jersey - Gray", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/PYEAAeSwrptqUMKs/s-l225.jpg" },
     ],
   },
 {
@@ -40892,7 +40898,7 @@ const productsData = [
     colorHexSecondary: "#E0201B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 159.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236770296237?_skw=San+Lorenzo+goalkeeper+soccer+jersey+2025+2026&hash=item37209c01ad%3Ag%3Aqo4AAeSw16pp56QG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO - ORIGINAL GOALKEEPER Jersey 2026 - ATOMIK - Ask for Size Argentina", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/qo4AAeSw16pp56QG/s-l225.jpg" },
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236770296237?_skw=San+Lorenzo+goalkeeper+soccer+jersey&hash=item37209c01ad%3Ag%3Aqo4AAeSw16pp56QG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO - ORIGINAL GOALKEEPER Jersey 2026 - ATOMIK - Ask for Size Argentina", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/qo4AAeSw16pp56QG/s-l225.jpg" },
     ],
   },
 {
@@ -40904,7 +40910,7 @@ const productsData = [
     colorHexSecondary: "#E0201B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/277854682852?_skw=San+Lorenzo+training+soccer+jersey+2025+2026&hash=item40b16dfee4%3Ag%3AtBAAAeSwKa5pHfiB&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGbYALsl%2FZgHNLGyFr5dKhuPRA57zBpbTvRj1rZ%2BfdmiCwrXXdjJZoWEUzkp9ZMfG%2Bk0VzSs4suYk1UuJzVwcy%2BeevwVxEQvGTdLo1hdicEW8iH0WbhAGDaTDRWUsJPIuk838jzHfc6DlqzQfsKf7va7LuU12l1S6FjUFUNHvH13%2Byqr1oDEjmf3CVlRSHIuDlkdGGCAeSXhq9qaHpG1TlBDcaKFxkfDK5kVv31FqjAKXn6AnBhIcCdgAOK%2FQkjXseTFR2IQQ1yt6nryhqsGWjHFMiVtQbE2hVAqTLPa%2F%2B7j%2BkXieCFRWgHUuRW2c3kQV%2F7G5K2gJZmZXThnMSEu7HhQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO DE ALMAGRO OFFICIAL Training Jersey  2025/26 Ask for Available Sizes", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/tBAAAeSwKa5pHfiB/s-l225.jpg" },
+      { store: "eBay", price: 89.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/277854682852?_skw=San+Lorenzo+training+soccer+jersey&hash=item40b16dfee4%3Ag%3AtBAAAeSwKa5pHfiB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO DE ALMAGRO OFFICIAL Training Jersey  2025/26 Ask for Available Sizes", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/tBAAAeSwKa5pHfiB/s-l225.jpg" },
     ],
   },
 {
@@ -40916,7 +40922,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 110.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407100017942?_skw=S%C3%A3o+Paulo+FC+goalkeeper+soccer+jersey&hash=item5ec90d4d16%3Ag%3ArxYAAeSwcM9p4Sa3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "São Paulo Goalkeeper Soccer Football Jersey Shirt 2026 - 2027 Brasileirão!", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/rxYAAeSwcM9p4Sa3/s-l225.jpg" },
+      { store: "eBay", price: 110.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/407100017942?_skw=S%C3%A3o+Paulo+FC+goalkeeper+soccer+jersey&hash=item5ec90d4d16%3Ag%3ArxYAAeSwcM9p4Sa3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "São Paulo Goalkeeper Soccer Football Jersey Shirt 2026 - 2027 Brasileirão!", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/rxYAAeSwcM9p4Sa3/s-l225.jpg" },
     ],
   },
 {
@@ -40965,7 +40971,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800400177797?_skw=Vasco+da+Gama+training+soccer+jersey+2025+2026&hash=itemba5b917a85%3Ag%3A63sAAeSwU7xqY1tN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CLUB DE REGATAS VASCO DA GAMA Training White Men 2026 Jersey Vest", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/63sAAeSwU7xqY1tN/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/800400177797?_skw=Vasco+da+Gama+training+soccer+jersey&hash=itemba5b917a85%3Ag%3A63sAAeSwU7xqY1tN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "CLUB DE REGATAS VASCO DA GAMA Training White Men 2026 Jersey Vest", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/63sAAeSwU7xqY1tN/s-l225.jpg" },
     ],
   },
 {
@@ -40977,7 +40983,7 @@ const productsData = [
     colorHexSecondary: "#003DA5",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 184.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236987233188?_skw=V%C3%A9lez+Sarsfield+goalkeeper+soccer+jersey+2025+2026&hash=item372d8a33a4%3Ag%3AxXkAAeSwkOBqc2kJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD - ORIGINAL GOALKEEPER Jersey 2026 Green - MACRON - Ask for Size", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/xXkAAeSwkOBqc2kJ/s-l225.jpg" },
+      { store: "eBay", price: 184.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278247169540?_skw=V%C3%A9lez+Sarsfield+goalkeeper+soccer+jersey&hash=item40c8d2de04%3Ag%3ABi0AAeSw6QhqciKc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD - ORIGINAL GOALKEEPER Jersey 2026 - MACRON - Ask for Size", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Bi0AAeSw6QhqciKc/s-l225.jpg" },
     ],
   },
 {
@@ -40989,7 +40995,7 @@ const productsData = [
     colorHexSecondary: "#003DA5",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 129.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317800986224?_skw=V%C3%A9lez+Sarsfield+training+soccer+jersey+2025+2026&hash=item49fe6a3670%3Ag%3AxTMAAeSwD3Zpdhyu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD 2026 WISP TRAINING JERSEY - MACRON - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/xTMAAeSwD3Zpdhyu/s-l225.jpg" },
+      { store: "eBay", price: 129.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/317800986224?_skw=V%C3%A9lez+Sarsfield+training+soccer+jersey&hash=item49fe6a3670%3Ag%3AxTMAAeSwD3Zpdhyu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD 2026 WISP TRAINING JERSEY - MACRON - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/xTMAAeSwD3Zpdhyu/s-l225.jpg" },
     ],
   },
 {
@@ -47961,7 +47967,7 @@ const productsData = [
     colorHexSecondary: "#001E62",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188205496042?_skw=Le+Havre+AC+third+soccer+jersey&hash=item2bd1ebf6ea%3Ag%3AD7YAAeSw7PFpwzt3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25-26 Men's Le Havre AC Third Jersey ", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/D7YAAeSw7PFpwzt3/s-l225.jpg" },
+      { store: "eBay", price: 29.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/188205496042?_skw=Le+Havre+AC+third+soccer+jersey&hash=item2bd1ebf6ea%3Ag%3AD7YAAeSw7PFpwzt3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25-26 Men's Le Havre AC Third Jersey ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/D7YAAeSw7PFpwzt3/s-l225.jpg" },
     ],
   },
 {
@@ -47973,7 +47979,7 @@ const productsData = [
     colorHexSecondary: "#002F6C",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236915951571?_skw=Parma+Calcio+home+soccer+jersey&hash=item37294a87d3%3Ag%3A%7EDUAAeSwJuVqSLcB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Parma Home 26-27 Mens", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/~DUAAeSwJuVqSLcB/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/236915951571?_skw=Parma+Calcio+home+soccer+jersey&hash=item37294a87d3%3Ag%3A%7EDUAAeSwJuVqSLcB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Parma Home 26-27 Mens", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/~DUAAeSwJuVqSLcB/s-l225.jpg" },
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F788072-01-maillot-domicile-parme-calcio-1913-2026-27-warm-white-puma-black", title: "Maillot Domicile Parme Calcio 1913 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-788072-01-warm-white-puma-black-6a428faac8004-1.webp" },
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F788072-01-maillot-domicile-parme-calcio-1913-2026-27-warm-white-puma-black", title: "Maillot Domicile Parme Calcio 1913 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-788072-01-warm-white-puma-black-6a428faac8004-1.webp" },
     ],
@@ -48502,7 +48508,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 70.32, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318683939384?_skw=Canada+goalkeeper+soccer+jersey&hash=item4a330b0238%3Ag%3ApZ0AAeSwBEtqc8ME&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Canada Goalkeeper Jersey Black Red White World Cup 2026 New", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/pZ0AAeSwBEtqc8ME/s-l225.jpg" },
+      { store: "eBay", price: 70.49, shipping: 20.9, currency: "USD", url: "https://www.ebay.com/itm/318683939384?_skw=Canada+goalkeeper+soccer+jersey&hash=item4a330b0238%3Ag%3ApZ0AAeSwBEtqc8ME&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Canada Goalkeeper Jersey Black Red White World Cup 2026 New", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/pZ0AAeSwBEtqc8ME/s-l225.jpg" },
       { store: "FansJerseyHub", price: 32.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcanada-hollywood-goalkeeper-lifestyle-jersey-2026%3Fvariant%3D43096158306409", title: "Canada Hollywood Goalkeeper Lifestyle Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/CanadaHollywoodLifestyleGoalkeeperJerseyWorldCup2026_2.webp?v=1775202151" },
     ],
   },
@@ -48515,7 +48521,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 86.08, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287443048445?_skw=Canada+training+soccer+jersey&hash=item42ecf0d7fd%3Ag%3A3okAAeSwXR5qTFFu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RARE 2026 Nike Canada Soccer Football Training Olive Green Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/3okAAeSwXR5qTFFu/s-l225.jpg" },
+      { store: "eBay", price: 86.48, shipping: 18.02, currency: "USD", url: "https://www.ebay.com/itm/287443048445?_skw=Canada+training+soccer+jersey&hash=item42ecf0d7fd%3Ag%3A3okAAeSwXR5qTFFu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RARE 2026 Nike Canada Soccer Football Training Olive Green Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/3okAAeSwXR5qTFFu/s-l225.jpg" },
     ],
   },
 {
@@ -49027,7 +49033,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541963685641398786242413&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LX-026", title: "Camisa Masculina Santos Away 25/26 Jogador Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-ii-2526-jogador-umbro/26/SID-00LX-026/SID-00LX-026_detalhe1.jpg?ts=1773246982" },
-      { store: "eBay", price: 120.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800423406219?_skw=Santos+FC+away+soccer+jersey&hash=itemba5cf3ea8b%3Ag%3A5Q8AAeSwdhFqaP28&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ3Bohxx0Ouu1B%2BUEB47VTeSjNycn27QHcEh%2ByspMNz4U5WHEeEkU%2BhM%2F2quDVGN8MvEYRDkv6sZB71s%2Bf2ibWQCCxeWpTzr0ycIvPxgaEARKHdYwCe1DP2jpIT9rA1s1btoS0TKNfjn8JY0KNQskAPWwLDex6UbxlxjVt--8MvCDCJrWT97%2BfRaZ%2B%2BA%2BXxC%2Fa1r19JDFrfYSLz%2Fw8I3NIaAPwJ2rm6TQ%2BX6ffmGPHWv1pHQSqvSBeWR9qTpgCXLIGrFuHPfwB8TC1bLObPXRL%2BBrzJG3WpZ%2FiCfofN6u1qy%2BCcnZVdEe%2BNPHXsFjf1P2c%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Men's Neymar Jr Santos FC Away Jersey 25/26 🤗", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/5Q8AAeSwdhFqaP28/s-l225.jpg" },
+      { store: "eBay", price: 120.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800423406219?_skw=Santos+FC+away+soccer+jersey&hash=itemba5cf3ea8b%3Ag%3A5Q8AAeSwdhFqaP28&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ3Bohxx0Ouu1B%2BUEB47VTeimopZIanpP2JDTA9hGodHxOIreSUMkkCx47kuARDagMaBPKoOysN2LuZqgy2TtgolM4KO%2Fa%2FFfQ9NygyglUCMh9%2FvL9ygrHQtnTx1Y56vpOoiZzdUNN7BISn0Y0MbZuZXGWM79C5sdut8N%2FDNV6T3NcBKO%2BQ6ka0xQtxVKtZD4zzhx1s3LpPZxLW86%2BI3EfIC%2F9zBQb0alpGDrwtqJZCzlvRz4rRsO18RhkSpQd57l%2FvkHPN90h3eF8ZqKAr2KhxnvNzORuPigZwPCwJuk3J43%2BSfvmBNH%2BJNd6TG98oCoI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Men's Neymar Jr Santos FC Away Jersey 25/26 🤗", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/5Q8AAeSwdhFqaP28/s-l225.jpg" },
     ],
   },
 {
@@ -49535,7 +49541,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-ext-rieur-argentine-homme-2026-bleu-coupe-du-monde%3Fvariant%3D53957463867733", title: "Maillot Pré-Match Extérieur Argentine Homme 2026 Bleu - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-exterieur-argentine-homme-2026-bleu-climacool-jy9535-1.webp?v=1784558197" },
-      { store: "eBay", price: 58.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198416835432?_skw=Argentina+pre-match+soccer+jersey&hash=item2e3290a368%3Ag%3A7HoAAeSwBKpqJbz-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Men's Argentina 26 Away Pre Match Jersey Blue/Black JY9535", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/7HoAAeSwBKpqJbz-/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398290343358?_skw=Argentina+pre-match+soccer+jersey&hash=item5cbbf455be%3Ag%3AuW4AAeSwP%7EVqgPur&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Argentina 2026 Pre-Match Jersey - XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/uW4AAeSwP~VqgPur/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fargentina-pre-match-soccer-jersey-world-cup-2026%3Fvariant%3D43069936828521", title: "Argentina Pre-Match Soccer Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Argentina2026WorldCupPre-MatchShirt_1.webp?v=1774594114" },
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269897664&a=3013769&m=65912", title: "Maillot Exterior Prematch Argentina Coupe du Monde 2026", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jy9535_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=e36bbbc183ac08acc0d7b3069ad69fd5b4ce5639" },
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy9535-maillot-exterieur-prematch-argentine-coupe-du-monde-2026-lucblu", title: "Maillot Extérieur Prematch Argentine Coupe du Monde 2026", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jy9535_1_apparel_photography_front_center_view_white.webp" },
@@ -49672,7 +49678,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 34.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-city-x-ea-fc-pre-match-homme-2025-26-vert%3Fvariant%3D51696126230869", title: "Maillot Manchester City x EA FC Pre-match Homme 2025/26 Vert", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-manchester-city-25-26-vert-puma-planetfoot2.webp?v=1760988603" },
-      { store: "eBay", price: 32.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117250717880?_skw=Manchester+City+pre-match+soccer+jersey&hash=item1b4caff8b8%3Ag%3AISkAAeSwUCdqMFAW&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGabryjCbZjNC8PvX%2Br6rmt6zbPS7P0Nu0vhlw7f%2BRQb%2By1s7314qI1bN7hMYgE%2B93qmpTv3uDyNcIOHDNxynhGxXPiLer5gA68zJ%2Bp%2BrWLwv2UMtdTBcKWTrnGXYm0QtsSGQxDSg1jemLlOgAhvjf8sE3cyimSF1ecWguUV%2FJ2xRWmv%2BgD4O0yCn7LgDVjsVH7DGA%2BdfHiSPJZ6mvspKUi2z%2B1pvkf3wHQTdYjqKdliCqHwoO%2FyP34KiYC9owCgg%2B5NM37UMMGBfxy4ILHt%2BaGxYy8qJ1loCwNzLoooJj18dGPCMjJfCfgqvKCbj40845Q%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester City FC 2025/26 Puma Pre Match Training Soccer Jersey Mens M", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ISkAAeSwUCdqMFAW/s-l225.jpg" },
+      { store: "eBay", price: 32.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117362858233?_skw=Manchester+City+pre-match+soccer+jersey&hash=item1b535f18f9%3Ag%3AG0MAAeSwkNxqgeID&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYZMI7Jvv4U7Pb8egXTD4Y32uDBSABHiVypSuM22jtt5pDImxqGr4X7u%2FyDKHjiPmXzJW2%2FOFKpvHL13XI%2F8o0NKJvGxqMEOQL9fLaOKVSQ8TVxm%2BooeLkjuD1enIVKgajL%2BkkbhYLgjmRoZs6qA73k%2Bkb%2B7JKgnT5zMBe8JF%2F1YgT5V2KirO9u%2FusxXUDdLKWnamO%2FC3a5o%2FFAUDT7%2B%2Fi8uc8M9GYgWCTwQ1ds%2F5F3pKlG1XzhKO25gfY0GHASa3BMgapfVRgXsYwkLK4e1FzWrPOSSEyn8x7EyOzHqx%2BuwkDUClmefo1nnNnvQsm%2B4gg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester City FC 2025/26 Puma Pre Match Training Soccer Jersey Mens M", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/G0MAAeSwkNxqgeID/s-l225.jpg" },
       { store: "FootStoreES", price: 34.61, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44002230801&a=3013769&m=65912", title: "Maillot Prematch Manchester City 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-785778-04-blue-2.webp&feedId=89032&k=af5a44362073e284ceaeadfef39d5f662a3e89e4" },
       { store: "FootStoreFR", price: 33.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F785778-04-maillot-prematch-manchester-city-2025-26-blue", title: "Maillot Prematch Manchester City 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-785778-04-blue-2.webp" },
       { store: "SportIsGoodES", price: 34.34, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44030410434&a=3013769&m=65906", title: "Maillot Prematch Manchester City 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-785778-04-blue-2.webp&feedId=89044&k=af5a44362073e284ceaeadfef39d5f662a3e89e4" },
@@ -49732,6 +49738,7 @@ const productsData = [
     offers: [
       { store: "PlanetFoot", price: 49.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-paris-fc-exterieur-homme-2025-26-blanc%3Fvariant%3D51353840320853", title: "Maillot Paris FC Extérieur Homme 2025/26 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-paris-fc-exterieur-25-26-adulte-adidas-planetfoot1.webp?v=1756565474" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fparis-fc-away-soccer-jersey-2025-26%3Fvariant%3D42699194564713", title: "Paris FC Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ParisFCAwayJersey202526_3.webp?v=1763704880" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/357562051065?_skw=Paris+FC+away+soccer+jersey&hash=item53405be9f9%3Ag%3AkeUAAeSwrWRot%7EIG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Paris FC Away Men Jersey 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/keUAAeSwrWRot~IG/s-l225.jpg" },
     ],
   },
 {
@@ -49809,7 +49816,7 @@ const productsData = [
     colorHexSecondary: "#DC052D",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 33.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/205955321169?_skw=Bayern+Munich+pre-match+soccer+jersey&hash=item2ff3e4cd51%3Ag%3AP-gAAeSw1oBpUbFA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas FC Bayern Munich 25/26 Pre-Match Jersey Men’s Size Small New", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/P-gAAeSw1oBpUbFA/s-l225.jpg" },
+      { store: "eBay", price: 33.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/205955321169?_skw=Bayern+Munich+pre-match+soccer+jersey&hash=item2ff3e4cd51%3Ag%3AP-gAAeSw1oBpUbFA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas FC Bayern Munich 25/26 Pre-Match Jersey Men’s Size Small New", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/P-gAAeSw1oBpUbFA/s-l225.jpg" },
     ],
   },
 {
@@ -49822,7 +49829,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcabo-verde-third-soccer-jersey-2026-world-cup%3Fvariant%3D47700736770153", title: "Cabo Verde Third Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/caboverdethird.webp?v=1781574472" },
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298486581872?_skw=Cape+Verde+third+soccer+jersey&hash=item457f2fca70%3Ag%3A4fcAAeSwMJ5qTK3e&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde National Soccer Third Mens 26", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/4fcAAeSwMJ5qTK3e/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/298486581872?_skw=Cape+Verde+third+soccer+jersey&hash=item457f2fca70%3Ag%3A4fcAAeSwMJ5qTK3e&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cape Verde National Soccer Third Mens 26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/4fcAAeSwMJ5qTK3e/s-l225.jpg" },
     ],
   },
 {
@@ -49835,7 +49842,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 40.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flarin-9-canada-home-football-jersey-2026-world-cup%3Fvariant%3D47711585173609", title: "LARIN #9 Canada Home Football Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/canadahomefan_9-2.webp?v=1782093638" },
-      { store: "eBay", price: 28.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188763581280?_skw=Canada+home+soccer+jersey+2025+2026&hash=item2bf32fab60%3Ag%3AiLkAAeSw%7EcFqd7BN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canada 2026 World Cup Home Jersey size Medium fits like Large!", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/iLkAAeSw~cFqd7BN/s-l225.jpg" },
+      { store: "eBay", price: 28.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188763581280?_skw=Canada+home+soccer+jersey&hash=item2bf32fab60%3Ag%3AiLkAAeSw%7EcFqd7BN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canada 2026 World Cup Home Jersey size Medium fits like Large!", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/iLkAAeSw~cFqd7BN/s-l225.jpg" },
     ],
   },
 {
@@ -49878,7 +49885,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fparis-fc-home-soccer-jersey-2025-26%3Fvariant%3D42699194335337", title: "Paris FC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Paris_FC_HOME_Jersey_202526_4.webp?v=1763704748" },
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/357562051064?_skw=Paris+FC+home+soccer+jersey+2025+2026&hash=item53405be9f8%3Ag%3Ao4YAAeSwDQ5ot%7EIG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Paris FC Home Men Jersey 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/o4YAAeSwDQ5ot~IG/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/357562051064?_skw=Paris+FC+home+soccer+jersey&hash=item53405be9f8%3Ag%3Ao4YAAeSwDQ5ot%7EIG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Paris FC Home Men Jersey 2025-26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/o4YAAeSwDQ5ot~IG/s-l225.jpg" },
     ],
   },
 {
@@ -49915,7 +49922,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-ucl-pre-match-jersey-2025-26%3Fvariant%3D42713341493353", title: "PSG UCL Pre-Match Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/PSG_UCL_Pre-Match_Jersey_202526_1.jpg?v=1764324006" },
-      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389751535904?_skw=Paris+Saint-Germain+pre-match+soccer+jersey&hash=item5abf007920%3Ag%3AsB4AAeSwGB9pxogh&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYWYLtjX7OHExrIEXXCN%2ByaShBoye8P%2FRrpmX%2FPPa7TYNmx4w5f%2Blfuh3aQe0R7M%2BdW42W4MUGYutG6Ua3bQ5122FvaXrxmNAeTe4NnYVzn%2BtaWOzHmqzKr8JABeyW%2BH%2BgKWNNSVDvJcifMsBIP3S570bNu4i7Bb4gFTLNhaSAaUfR26PtA%2FTlC4Vc0P%2FI4PfavOc9VMOa%2BPVhtdJ4ZkjwLUGajQLLsB82vAMr%2BQ%2FDMwiuBy0DJIObYGd%2FbHbTooIlUL8XpJPx3Hymkx3Y5u0eQ1GbCM6Z2066P8NxN3qtvfp5jmtkMyFm9XXZS74tUczU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Pairs Saint-Germain Nike Jersey 2025/26 Academy Pro Pre Match Shirt Small PSG", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/sB4AAeSwGB9pxogh/s-l225.jpg" },
+      { store: "eBay", price: 35.0, shipping: 6.1, currency: "USD", url: "https://www.ebay.com/itm/389751535904?_skw=Paris+Saint-Germain+pre-match+soccer+jersey&hash=item5abf007920%3Ag%3AsB4AAeSwGB9pxogh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Pairs Saint-Germain Nike Jersey 2025/26 Academy Pro Pre Match Shirt Small PSG", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/sB4AAeSwGB9pxogh/s-l225.jpg" },
       { store: "FootStoreES", price: 46.76, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45381240753&a=3013769&m=65912", title: "Maillot Prematch PSG Academy Pro 2025/26", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib3809-058_00.webp&feedId=89032&k=aad5b94ede3ecc76e63e73a911fc7a6ef288d2cb" },
       { store: "FootStoreFR", price: 45.56, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib3809-058-maillot-prematch-psg-academy-pro-2025-26-medium-grey-black-black", title: "Maillot Prematch PSG Academy Pro 2025/26", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib3809-058_00.webp" },
     ],
@@ -49990,7 +49997,7 @@ const productsData = [
     colorHexSecondary: "#F5B942",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 139.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236728990277?_skw=Spain+training+soccer+jersey&hash=item371e25ba45%3Ag%3AZcIAAeSwReVpmIdg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SPAIN TEAM - ORIGINAL TRAINING Jersey TIRO - Adidas 2026 - KA8193 ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ZcIAAeSwReVpmIdg/s-l225.jpg" },
+      { store: "eBay", price: 89.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/318739528080?_skw=Spain+training+soccer+jersey&hash=item4a365b3990%3Ag%3ALVsAAeSw5UJqgehi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Spain 2026 Tiro Sleeveless Training Jersey L World Cup Champions KA8191", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/LVsAAeSw5UJqgehi/s-l225.jpg" },
       { store: "FansJerseyHub", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fspain-tiro-training-soccer-jersey-2026-world-cup%3Fvariant%3D42826278010985", title: "Spain Tiro Training Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Spain2026TiroTrainingSoccerJersey.webp?v=1768810428" },
       { store: "AdidasES", price: 70.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44861836323&a=3013769&m=77008", title: "Camiseta calentamiento primera equipación España 26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F94f99ff487ef4b25968405571e84fc58_9366%2FCamiseta_calentamiento_primera_equipacion_Espana_26_Azul_KA1906_21_model.jpg&feedId=92152&k=873c0ec56671f655d280143f4763a0e9e136c615" },
       { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965135&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Espanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fba71acfcbf0b41eab96d85713bf7ac93_9366%2FCamisola_de_Treino_Tiro_26_da_Espanha_Azul_KA8197_21_model.jpg&feedId=92150&k=a0c8273ede35fa0962b157e4ccae73b2d6c86b62" },
@@ -50022,7 +50029,7 @@ const productsData = [
     colorHexSecondary: "#FB090B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 22.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236853269834?_skw=AC+Milan+pre-match+soccer+jersey&hash=item37258e154a%3Ag%3ApZsAAeSw1M5qH0yX&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbeVHjPFoyM9wesi%2BpAugJj2xoDwlCrdJ%2B7nNYxV%2B1onQU6L2mmyOIe3YIIgUne66fiHZCc3EedShFlzBe7hfYxb5bjPNLrvkL%2BKh11Vbfz0IcCwlMa9pCnL7iz9IkHTsrzaB839VZN6%2BeooKyOb5yIpsvSM%2FbnyttueJtk3LP6vfmMHG1UsmthAmGVineaJ6joL2SqSdbzGDzBYOmaeD%2FFidReKyPlqxHxzVKy4zpnR3joUHyWj5LSPVfGXMncHfqWn%2BdvcLizKJufa4V2LocSYH3kNkUOnHy%2BsISycdnoC4DEdKRdZxvAPP8tWQR8QEI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Light Orange AC Milan 2025/26 Pre-Match dryCell Training Jersey Men’s Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/pZsAAeSw1M5qH0yX/s-l225.jpg" },
+      { store: "eBay", price: 22.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236853269834?_skw=AC+Milan+pre-match+soccer+jersey&hash=item37258e154a%3Ag%3ApZsAAeSw1M5qH0yX&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbeVHjPFoyM9wesi%2BpAugJj2xoDwlCrdJ%2B7nNYxV%2B1onQU6L2mmyOIe3YIIgUne66fiHZCc3EedShFlzBe7hfYxb5bjPNLrvkL%2BKh11Vbfz0IcCwlMa9pCnL7iz9IkHTsocVaQksmFyBU2wBFfVRyecqzjRMmVenFgdKT4d2Mhr7Bt6i94cz9G04Lfb7ZkKYxdSIFoRJ0PJKjxhoySSi4fqNhuuEipSJrSrptMnymQk3vea9mYAJdNOF%2FIR1Dp%2FPvTM1Qzd0Sky7L8wZaZXTXyDbVrgyXSYcFasvHaA8gJ3ULjWfUu7%2BLU2Ap37WNpWSNQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Light Orange AC Milan 2025/26 Pre-Match dryCell Training Jersey Men’s Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/pZsAAeSw1M5qH0yX/s-l225.jpg" },
     ],
   },
 {
@@ -50051,6 +50058,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 56.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45242384487&a=3013769&m=65912", title: "Maillot Prematch Brasil Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ih1659-405_01.webp&feedId=89032&k=103619e2174ebe4a85be6b98472c175619b1808b" },
       { store: "FootStoreFR", price: 54.87, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1662-369-maillot-prematch-bresil-coupe-du-monde-2026-light-menta-lt-photo-blue-canary", title: "Maillot Prematch Brésil Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ih1662-369_04.webp" },
+      { store: "eBay", price: 54.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366535530590?_skw=Brazil+pre-match+soccer+jersey&hash=item555738585e%3Ag%3AonUAAeSw1vZqUYoc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Brazil x Jordan Pre Match Training Jersey 2026 World Cup", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/onUAAeSw1vZqUYoc/s-l225.jpg" },
     ],
   },
 {
@@ -50066,6 +50074,7 @@ const productsData = [
       { store: "AdidasES", price: 55.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094293343&a=3013769&m=77008", title: "Camiseta de entrenamiento Italia 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F85efe5c25dfd454ba1d4d74871e006b4_9366%2FCamiseta_de_entrenamiento_Italia_26_Verde_JZ9374_21_model.jpg&feedId=92152&k=d4d159b16323e206b6e1502c96c57b9b83c04a42" },
       { store: "AdidasPT", price: 55.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096964043&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Itália", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F85efe5c25dfd454ba1d4d74871e006b4_9366%2FCamisola_de_Treino_Tiro_26_da_Italia_Verde_JZ9374_21_model.jpg&feedId=92150&k=0b60d7a7a8403cb70c664f7426b922d028d34e8a" },
       { store: "SportIsGoodES", price: 33.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45246772834&a=3013769&m=65906", title: "Maillot de entrenamiento Italia Tiro Coupe du Monde 2026", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz9375_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=18048d995f5a3c426d6032a6a62ac7f07516ee55" },
+      { store: "eBay", price: 55.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/168524781647?_skw=Italy+training+soccer+jersey&hash=item273cdc184f%3Ag%3ARJYAAeSwHWVqT1br&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Italy 2026 Training Jersey Men's Soccer Football Shirt Blue JZ9375 NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/RJYAAeSwHWVqT1br/s-l225.jpg" },
     ],
   },
 {
@@ -50077,7 +50086,7 @@ const productsData = [
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389802054401?_skw=Manchester+United+pre-match+soccer+jersey&hash=item5ac2035301%3Ag%3AMi0AAeSw28ppxSo8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United FC 2025/26 Puma Pre Match Training Soccer Jersey Mens M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Mi0AAeSw28ppxSo8/s-l225.jpg" },
+      { store: "eBay", price: 30.0, shipping: 6.2, currency: "USD", url: "https://www.ebay.com/itm/389802054401?_skw=Manchester+United+pre-match+soccer+jersey&hash=item5ac2035301%3Ag%3AMi0AAeSw28ppxSo8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United FC 2025/26 Puma Pre Match Training Soccer Jersey Mens M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Mi0AAeSw28ppxSo8/s-l225.jpg" },
       { store: "FootStoreES", price: 56.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43362488433&a=3013769&m=65912", title: "Camiseta Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka6419_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=9f0badb14460518c71ab0a8eca43671197828780" },
       { store: "SportIsGoodES", price: 56.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45131352849&a=3013769&m=65906", title: "Camiseta Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka6419_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9f0badb14460518c71ab0a8eca43671197828780" },
       { store: "FootStoreFR", price: 56.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka6419-maillot-prematch-manchester-united-2025-26-black", title: "Maillot Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka6419_1_apparel_photography_front_center_view_white.webp" },
@@ -50333,7 +50342,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FootStoreFR", price: 64.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif3967-010-maillot-prematch-chelsea-academy-pro-2025-26-black-coconut-milk-coconut-milk", title: "Maillot Prematch Chelsea Academy Pro 2025/26", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if3967-010_black-coconut-milk-coconut-milk_1.webp" },
-      { store: "eBay", price: 49.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306598732447?_skw=Chelsea+pre-match+soccer+jersey&hash=item4762b5629f%3Ag%3AcwQAAeSw7lFpFP6K&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbgKssp9pbUtP%2B%2BDFB%2FS%2BLSkDQCTH6E5tANk37NJQXskMoUF9viRzU1CgLmnq9mhMbYOMtlaY4W5%2BqOjdGW2nNO0ZJXSfgze0Y1Q0b8wvj4CPhsmK6ynfcmqnHW6%2FIWYvatyKl5GqCLHF%2B3yDlz8u72P%2BbABaJ2AC%2BeiGguA2HPaisCMyPRmtsPmqIWBkc2VrGryrGJidtMAZZbGgKAqJR2vYuMtOx%2BrrtTUfJdasXmV%2BGW65svqk2oyxE6Mw2P4CEMXkaJQgOAz1hUL6TBfvhsN4VZUdQPEMMnKWqHUDzVjux%2BhuYFO%2FYeHKRj830SXWA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nike Chelsea FC 25/26 Pre-Match Soccer Jersey Dri-FIT Academy Pro Black Mens", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cwQAAeSw7lFpFP6K/s-l225.jpg" },
+      { store: "eBay", price: 49.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306598732447?_skw=Chelsea+pre-match+soccer+jersey&hash=item4762b5629f%3Ag%3AcwQAAeSw7lFpFP6K&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbgKssp9pbUtP%2B%2BDFB%2FS%2BLSkDQCTH6E5tANk37NJQXskMoUF9viRzU1CgLmnq9mhMbYOMtlaY4W5%2BqOjdGW2nNO0ZJXSfgze0Y1Q0b8wvj4CPhsmK6ynfcmqnHW6%2FIWYvZm0ARs8lkh94MQAaLItTSt2AKV5kRlbBMS%2Bq%2FnQ4xKUGVcP8nLJ2tSAxMFw%2BA7ckVxT8ubNgJXdmcIAeeHkTK8QnzxnVPmVd0SbAWG5JtkrBqSOCodbTyxNNfToj1gSief8iocEuH%2Bzh%2FbB%2BVP2qhlV7%2FjSP9edf73qti%2BWAzQj%2B%2BX7pvJtxvolMx2QNSH1yQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nike Chelsea FC 25/26 Pre-Match Soccer Jersey Dri-FIT Academy Pro Black Mens", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cwQAAeSw7lFpFP6K/s-l225.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-year-of-the-horse-limited-edition-pre-match-top-soccer-jersey-2026%3Fvariant%3D42998341828713", title: "Chelsea Year of The Horse Limited Edition Pre Match Top Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ChelseaYearofTheHorseLimitedEditionPreMatchTopSoccerJersey2026_1.webp?v=1773815266" },
     ],
   },
@@ -50346,7 +50355,7 @@ const productsData = [
     colorHexSecondary: "#8FB8E8",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117320619506?_skw=Real+Madrid+pre-match+soccer+jersey&hash=item1b50da95f2%3Ag%3AalUAAeSwPGtqY9d6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYV0p6FhhSFpmLnTjs3thsZHSc51m6qDSRUiUxELXI0IA3DF76ReeoTEbG4%2BQAjST%2B3mOzjeVxgpLIgW5Y9l%2FJoK2Eut3msR8uktH6Pm%2BURJ9T1ZpaTpUnFkD5vfXB7BnSH5MtbHnxhnuBkAJ4uQt6DrtQ3dFUvkP9D3ihB3Jvm3E3x5eEJkrQJeqAI8rv%2FhYwc6vk7%2B6fCzQt9Nr%2FRM53V2o0eL5xrTAswkIgRKt9ooWoOM%2BKX2VbMBESw1FaNX8oLDyhBc1rIIPIXFIJosGTrLCK%2Bc385Qs2IsVvgMJEhP%2FCPKFaFNFllgCsDJnrOYgg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Real Madrid 2025/26 Pre-Match Football Jersey Number 9", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/alUAAeSwPGtqY9d6/s-l225.jpg" },
+      { store: "eBay", price: 24.99, shipping: 10.5, currency: "USD", url: "https://www.ebay.com/itm/117320619506?_skw=Real+Madrid+pre-match+soccer+jersey&hash=item1b50da95f2%3Ag%3AalUAAeSwPGtqY9d6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYV0p6FhhSFpmLnTjs3thsZHSc51m6qDSRUiUxELXI0IA3DF76ReeoTEbG4%2BQAjST%2B3mOzjeVxgpLIgW5Y9l%2FJoK2Eut3msR8uktH6Pm%2BURJ9T1ZpaTpUnFkD5vfXB7BnROF7L%2FbVuym1IqtmmhKElb3r80%2FdLzqrNwpUqdgGAoMDShUM%2B6QDBiyCRUl5BN17VffuNZzv5Owp14m0h%2BbTFvgwAYBJVgRFCaofDITrlUKEqRuiPMR2HQxRVCcuaAxDFHO9QuKwmG0lVYqDan3XXAHJVk5ckvd7Ya8YF4fbSpMwPrvxDbrinMROcWcQCBz80%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Real Madrid 2025/26 Pre-Match Football Jersey Number 9", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/alUAAeSwPGtqY9d6/s-l225.jpg" },
       { store: "FootStoreFR", price: 38.5, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4155-maillot-real-madrid-preshi-2025-26-blubir", title: "Maillot Prematch Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jp4155_3_apparel_on_model_standard_view_white.jpg" },
       { store: "SportIsGoodFR", price: 38.5, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp4155-maillot-real-madrid-preshi-2025-26-blubir", title: "Maillot Prematch Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jp4155_3_apparel_on_model_standard_view_white.jpg" },
     ],
@@ -50663,7 +50672,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fipswich-town-home-soccer-jersey-2025-26%3Fvariant%3D42557149249641", title: "Ipswich Town Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/03c37c068f61aab48244118c27313b0f.png?v=1758073784" },
-      { store: "eBay", price: 94.19, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/800093719024?_skw=Ipswich+Town+home+soccer+jersey+2025+2026&hash=itemba494d49f0%3Ag%3AqiAAAeSwzMVpyll5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "IPSWICH TOWN Umbro Home Football Shirt 2025-2026 NEW Mens Sizes Jersey BNWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/qiAAAeSwzMVpyll5/s-l225.jpg" },
+      { store: "eBay", price: 63.4, shipping: 28.93, currency: "USD", url: "https://www.ebay.com/itm/157145160825?_skw=Ipswich+Town+home+soccer+jersey&hash=item249694dc79%3Ag%3A04sAAeSw--9p-kyz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ipswich Town 2025/26 Home Shirt Umbrian Football Jersey BNWT Football Jersey TM12719", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/04sAAeSw--9p-kyz/s-l225.jpg" },
     ],
   },
 {
@@ -50751,7 +50760,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "PlanetFoot", price: 50.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-portland-timbers-domicile-homme-2025-26-vert%3Fvariant%3D50069564752213", title: "Maillot Portland Timbers Domicile Homme 2025/26 Vert", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/Maillot_Portland_Timbers_Domicile_Homme_2025_26_Vert.jpg?v=1739451594" },
-      { store: "eBay", price: 87.0, shipping: 30.0, currency: "USD", url: "https://www.ebay.com/itm/137144078851?_skw=Portland+Timbers+home+soccer+jersey+2025+2026&hash=item1fee6c9203%3Ag%3AgHkAAeSw3FNpumce&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW 2025/26 Adidas Portland Timbers Home Jersey Soccer Shirt Men's Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gHkAAeSw3FNpumce/s-l225.jpg" },
+      { store: "eBay", price: 87.0, shipping: 30.0, currency: "USD", url: "https://www.ebay.com/itm/137144078851?_skw=Portland+Timbers+home+soccer+jersey&hash=item1fee6c9203%3Ag%3AgHkAAeSw3FNpumce&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW 2025/26 Adidas Portland Timbers Home Jersey Soccer Shirt Men's Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gHkAAeSw3FNpumce/s-l225.jpg" },
     ],
   },
 {
@@ -50812,7 +50821,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fclub-leon-away-soccer-jersey-2025-26%3Fvariant%3D42594270249065", title: "Club León Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Club_Leon_Away_Soccer_Jersey_202526_2.png?v=1760578586" },
-      { store: "eBay", price: 25.0, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/326813837550?_skw=Club+Le%C3%B3n+away+soccer+jersey+2025+2026&hash=item4c179f68ee%3Ag%3AB2MAAeSwzeJo6uoc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Club Leon F.C 2025/26 Away White Jersey (Sz XL)", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/B2MAAeSwzeJo6uoc/s-l225.jpg" },
+      { store: "eBay", price: 25.0, shipping: 4.99, currency: "USD", url: "https://www.ebay.com/itm/326813837550?_skw=Club+Le%C3%B3n+away+soccer+jersey&hash=item4c179f68ee%3Ag%3AB2MAAeSwzeJo6uoc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Club Leon F.C 2025/26 Away White Jersey (Sz XL)", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/B2MAAeSwzeJo6uoc/s-l225.jpg" },
     ],
   },
 {
@@ -50944,7 +50953,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619533?_skw=Cerezo+Osaka+away+soccer+jersey+2025+2026&hash=item34ea06e40d%3Ag%3AzVgAAeSw5w9qSwff&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cerezo Osaka Away 2026 Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/zVgAAeSw5w9qSwff/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619533?_skw=Cerezo+Osaka+away+soccer+jersey&hash=item34ea06e40d%3Ag%3AzVgAAeSw5w9qSwff&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cerezo Osaka Away 2026 Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/zVgAAeSw5w9qSwff/s-l225.jpg" },
     ],
   },
 {
@@ -50956,7 +50965,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 99.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377276156042?_skw=Hannover+96+home+soccer+jersey+2025+2026&hash=item57d769488a%3Ag%3AZQAAAeSwXC9pobKy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hannover 96 2025/26 Home Jersey Macron Red Black Stripes Men’s M BNWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ZQAAAeSwXC9pobKy/s-l225.jpg" },
+      { store: "eBay", price: 99.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377276156042?_skw=Hannover+96+home+soccer+jersey&hash=item57d769488a%3Ag%3AZQAAAeSwXC9pobKy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hannover 96 2025/26 Home Jersey Macron Red Black Stripes Men’s M BNWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ZQAAAeSwXC9pobKy/s-l225.jpg" },
     ],
   },
 {
@@ -50980,7 +50989,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227066315093?_skw=SC+Heerenveen+home+soccer+jersey+2025+2026&hash=item34de350155%3Ag%3AsCAAAeSwS%7EJpEB%7Eh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Heerenveen Mens Home 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sCAAAeSwS~JpEB~h/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227066315093?_skw=SC+Heerenveen+home+soccer+jersey&hash=item34de350155%3Ag%3AsCAAAeSwS%7EJpEB%7Eh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Heerenveen Mens Home 2025-26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sCAAAeSwS~JpEB~h/s-l225.jpg" },
     ],
   },
 {
@@ -50992,7 +51001,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/187933894081?_skw=Hertha+Berlin+home+soccer+jersey+2025+2026&hash=item2bc1bba5c1%3Ag%3AvdQAAeSwm8hpYWxY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hertha Berlin 2025-26 Home jersey Medium size", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/vdQAAeSwm8hpYWxY/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/187933894081?_skw=Hertha+Berlin+home+soccer+jersey&hash=item2bc1bba5c1%3Ag%3AvdQAAeSwm8hpYWxY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hertha Berlin 2025-26 Home jersey Medium size", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/vdQAAeSwm8hpYWxY/s-l225.jpg" },
     ],
   },
 {
@@ -51004,7 +51013,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619518?_skw=Kashima+Antlers+home+soccer+jersey+2025+2026&hash=item34ea06e3fe%3Ag%3AhQgAAeSwhORpvJ79&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Kashima Antlers Home 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/hQgAAeSwhORpvJ79/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619518?_skw=Kashima+Antlers+home+soccer+jersey&hash=item34ea06e3fe%3Ag%3AhQgAAeSwhORpvJ79&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Kashima Antlers Home 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/hQgAAeSwhORpvJ79/s-l225.jpg" },
     ],
   },
 {
@@ -51016,7 +51025,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/287192268345?_skw=Kawasaki+Frontale+away+soccer+jersey+2025+2026&hash=item42ddfe3e39%3Ag%3AlzUAAeSwdRtpr8F6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Kawasaki Frontale Away 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/lzUAAeSwdRtpr8F6/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/287192268345?_skw=Kawasaki+Frontale+away+soccer+jersey&hash=item42ddfe3e39%3Ag%3AlzUAAeSwdRtpr8F6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Kawasaki Frontale Away 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/lzUAAeSwdRtpr8F6/s-l225.jpg" },
     ],
   },
 {
@@ -51028,7 +51037,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619530?_skw=Kawasaki+Frontale+home+soccer+jersey+2025+2026&hash=item34ea06e40a%3Ag%3AltwAAeSwKyRpvJ7-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Kawasaki Frontale Home 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ltwAAeSwKyRpvJ7-/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619530?_skw=Kawasaki+Frontale+home+soccer+jersey&hash=item34ea06e40a%3Ag%3AltwAAeSwKyRpvJ7-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Kawasaki Frontale Home 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ltwAAeSwKyRpvJ7-/s-l225.jpg" },
     ],
   },
 {
@@ -51052,7 +51061,7 @@ const productsData = [
     colorHexSecondary: "#00A650",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 115.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/396970304735?_skw=Norwich+City+home+soccer+jersey+2025+2026&hash=item5c6d4624df%3Ag%3AlFIAAeSw3VNool8P&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaK%2F9xliaj7p%2BAK133S2IrdbQQyvxxVIjkQPDD4vpJSlC5KlAQfxJyyaXUHAbLgm%2FX06h1kE7m7lOUZ9mbdgN87ckyFzEFjfmgMAOoP56qgksdVLEUbwbyEAZSURPo6gew7XtaPzqdM6RhrvlMpuNx%2Flh%2B7qNGcqh2UT5BKr68LMYRCCkGKiLvmUpIZZLcAfxT8Ba%2FK3IUh2LC9ovwYeQzjBHBVZFt5iexd9IXvbCsMtKBPvDKlQwnazHGPiCblT4CC6OFcT%2Beql%2FJhezPmQMGgf0zfdtg1rs9DNJQM5WFvgAjiTFhwQql1c8UNYJAN8lI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norwich City 2025-26 Home Jersey #9 Sargent: Size Medium *NWT*", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lFIAAeSw3VNool8P/s-l225.jpg" },
+      { store: "eBay", price: 115.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/396970304735?_skw=Norwich+City+home+soccer+jersey&hash=item5c6d4624df%3Ag%3AlFIAAeSw3VNool8P&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaK%2F9xliaj7p%2BAK133S2IrdbQQyvxxVIjkQPDD4vpJSlC5KlAQfxJyyaXUHAbLgm%2FX06h1kE7m7lOUZ9mbdgN87ckyFzEFjfmgMAOoP56qgksdVLEUbwbyEAZSURPo6gezhSqklhm7Lw%2Fvpn8YDc8%2FpblV3J2buZiV9ueg4MkZqG9ff%2FQjGMgEoodkhHt8iOPQCduXQJznjQFJsHdcZ08eFt6KN8Gkek%2BxoAaoAaI6iEyM2DywFIwdunH9Faf56U0n6kEVtAhYXGhrkyEfRLDF69r3tC7mv8n2qxBGLEYkP5fNtAyhsSSDp9a6ksvQMLGw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norwich City 2025-26 Home Jersey #9 Sargent: Size Medium *NWT*", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lFIAAeSw3VNool8P/s-l225.jpg" },
     ],
   },
 {
@@ -51076,7 +51085,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 65.69, shipping: 26.82, currency: "USD", url: "https://www.ebay.com/itm/227222570626?_skw=Shakhtar+Donetsk+away+soccer+jersey+2025+2026&hash=item34e7854682%3Ag%3AItEAAeSwjB5oxsTh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Shakhtar Donetsk Away Shirt 2025/26 Soccer Jersey BNWT Men's XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ItEAAeSwjB5oxsTh/s-l225.jpg" },
+      { store: "eBay", price: 57.52, shipping: 27.06, currency: "USD", url: "https://www.ebay.com/itm/227222060085?_skw=Shakhtar+Donetsk+away+soccer+jersey&hash=item34e77d7c35%3Ag%3AItEAAeSwjB5oxsTh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Shakhtar Donetsk Away Shirt 2025/26 Soccer Jersey BNWT Men's XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ItEAAeSwjB5oxsTh/s-l225.jpg" },
     ],
   },
 {
@@ -51100,7 +51109,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/137012563714?_skw=Shimizu+S-Pulse+home+soccer+jersey+2025+2026&hash=item1fe695cf02%3Ag%3AzawAAeSw9MBpgvyL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Shimizu S-Pulse Home Jersey 2026 Mens", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/zawAAeSw9MBpgvyL/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/137012563714?_skw=Shimizu+S-Pulse+home+soccer+jersey&hash=item1fe695cf02%3Ag%3AzawAAeSw9MBpgvyL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Shimizu S-Pulse Home Jersey 2026 Mens", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/zawAAeSw9MBpgvyL/s-l225.jpg" },
     ],
   },
 {
@@ -51112,7 +51121,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619528?_skw=Urawa+Red+Diamonds+home+soccer+jersey+2025+2026&var=526469194448&hash=item34ea06e408%3Ag%3AqXQAAeSwQcxpw9qS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Urawa Red Diamonds Home 2026", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qXQAAeSwQcxpw9qS/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227264619528?_skw=Urawa+Red+Diamonds+home+soccer+jersey&var=526469366199&hash=item34ea06e408%3Ag%3AqXQAAeSwQcxpw9qS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Urawa Red Diamonds Home 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/qXQAAeSwQcxpw9qS/s-l225.jpg" },
     ],
   },
 {
@@ -51124,7 +51133,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 255.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317859208291?_skw=Yokohama+F.+Marinos+home+soccer+jersey+2025+2026&hash=item4a01e29c63%3Ag%3Ao1IAAeSwm7Zpichw&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGb9zU%2BK6nEb%2FPZhvibMwRBtzNjZDk%2B91vqmXRkQrQceWpXMl8ACIVyNZn8U6iVb1b7Lb%2F3IsT2v2MhKIPkmF9cVGGMRk3T6A6J5Ltk6QBsTD5nxN1oeJNFLspOzC0d3AieDzUutpjiusL3zseXHeBOUNYyW11153ccnUhppiuFp8TfyT3ZDGWuQj21zLL%2BpYl4a%2FhYrUoqLPEa1lf6lF4PYD0VJxwiH%2BkGOa7fxICyXrsck6mzueCzEhxMlHj%2BoNeHOezpz8nDHqsctqdG%2FLNQTo2oT327qpo88dHeZibxVYDEtzaYfv%2FGqbAhpMHj8DkCv4PkKpmWafvhmNAe7ITpQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Yokohama F. Marinos 2026 Home Authentic Jersey KL1717 Japan size", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/o1IAAeSwm7Zpichw/s-l225.jpg" },
+      { store: "eBay", price: 255.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317859208291?_skw=Yokohama+F.+Marinos+home+soccer+jersey&hash=item4a01e29c63%3Ag%3Ao1IAAeSwm7Zpichw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb9zU%2BK6nEb%2FPZhvibMwRBtzNjZDk%2B91vqmXRkQrQceWpXMl8ACIVyNZn8U6iVb1b7Lb%2F3IsT2v2MhKIPkmF9cVGGMRk3T6A6J5Ltk6QBsTD5nxN1oeJNFLspOzC0d3AidEBTboJc3paXhxo7UIKY1NclMODk2QmRNT8QGwybpYMahrPJJvXnGWpRwm15jlbzJu2e4elVS8L5h1CLT3lz7zrr9Ao6AuCHHfck8gCX7dy6LT7b750K8nMFXSwHWFGq1P2ioxlhLsG2YIrTFwsVeXc40YW1Ag2HlpSqAYNF9cFUt7GSyUYR3TwHMbxQDsCcg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Yokohama F. Marinos 2026 Home Authentic Jersey KL1717 Japan size", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/o1IAAeSwm7Zpichw/s-l225.jpg" },
     ],
   },
 {
@@ -51190,7 +51199,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168616949415?_skw=Cerezo+Osaka+home+soccer+jersey+2025+2026&hash=item27425a76a7%3Ag%3A3T4AAeSwvLhqgSTy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cerezo Osaka Home 2026 Mens", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/3T4AAeSwvLhqgSTy/s-l225.jpg" },
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/168616949415?_skw=Cerezo+Osaka+home+soccer+jersey&hash=item27425a76a7%3Ag%3A3T4AAeSwvLhqgSTy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Cerezo Osaka Home 2026 Mens", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/3T4AAeSwvLhqgSTy/s-l225.jpg" },
     ],
   },
 {
@@ -51229,7 +51238,463 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "joma",
     offers: [
-      { store: "eBay", price: 137.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178408822227?_skw=Torino+third+soccer+jersey+2025+2026&hash=item2989fe95d3%3Ag%3ApYQAAeSw6wpqdEZK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Torino 2026- 27 Third Jersey - Black/Turquoise", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/pYQAAeSw6wpqdEZK/s-l225.jpg" },
+      { store: "eBay", price: 137.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178408822227?_skw=Torino+third+soccer+jersey&hash=item2989fe95d3%3Ag%3ApYQAAeSw6wpqdEZK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Torino 2026- 27 Third Jersey - Black/Turquoise", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/pYQAAeSw6wpqdEZK/s-l225.jpg" },
+    ],
+  },
+{
+    id: "aekathens-third-202526",
+    teamKey: "aekathens",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#FFD700",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 60.21, shipping: 17.46, currency: "USD", url: "https://www.ebay.com/itm/147159764482?_skw=AEK+Athens+third+soccer+jersey&hash=item224367ce02%3Ag%3A0LgAAeSwk3FplGLM&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbE97SpO3TLJJur2VGCzM6yRB0xTtVF%2FbrcltLyvNExygMIwPgbL3s4WYjgDzX6L3kUQanrx5yv3p0%2BtbIfoM2JixRmX7pnauFy6SpG58yTxPkfAzJ%2FGvMeFuikFN2aniMWOUgutZFQEJ0lfw8JvnAU%2FU%2Bvj8qzKqqYTszUiId58uKhxDMr%2BtEjZviY5gsVRereZvYhtGIbXHE5OZZ99OmsUNATWKEZaN4of1lTuhZWgAZhloaMuNqVVUT9nY3HRD88wMJ%2B2bkqOTt9nb6aLavXKXZNUDk4Qzhv38vN9vpdudzQSLnXKMdCJirz%2FVuaR5o%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "AEK Athens F.C Third 2025-26 Jersey Mens Small White Nike NWT", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/0LgAAeSwk3FplGLM/s-l225.jpg" },
+    ],
+  },
+{
+    id: "alhilal-home-202526",
+    teamKey: "alhilal",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#0072BC",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298510445321?_skw=Al+Hilal+home+soccer+jersey&hash=item45809beb09%3Ag%3Am%7EoAAeSwZlJqWTtI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Al Hilal 25/26 Home Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/m~oAAeSwZlJqWTtI/s-l225.jpg" },
+    ],
+  },
+{
+    id: "almirantebrown-away-2026",
+    teamKey: "almirantebrown",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#000000",
+    colorHexSecondary: "#D4AF37",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236770316212?_skw=Almirante+Brown+away+soccer+jersey&hash=item37209c4fb4%3Ag%3AdoAAAeSwgAxp56iJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaJgimQqYzFirXjbfeZ0dKvghqnW4IDUhoabhLN%2BHuivk6VpsQ1M3XHjwb41tZtPVckO%2BnSNWqSqcKLaan%2BDVULS8zYoB9HWcWNBlKrrUd2CcHRTFh05zn4lKcU4FQ4V3VDaJZ3dvNQvku4yupjh3shr3KT2roOStBZ1fPKol%2BUtvj6BFs1nf9Kp6HtSfyaIbaJLj2kjWiNQNPiYJa3eHJd0F5zQGMR%2B5UuMvQaF82Ne59Vh%2BzAoULf9uPC0EwSEvLeWAFxcp333HugzC2KyzAGnUEirVIm28RI%2BsYVz%2B%2F3NHKcqXCgODsqjOqszJm%2Bek8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ALMIRANTE BROWN - ORIGINAL AWAY Jersey 2026 - RETIEL - Ask for Size - Argentina", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/doAAAeSwgAxp56iJ/s-l225.jpg" },
+    ],
+  },
+{
+    id: "anderlecht-home-202627",
+    teamKey: "anderlecht",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#5B2A86",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/236915929028?_skw=Anderlecht+home+soccer+jersey&hash=item37294a2fc4%3Ag%3A8QwAAeSwhVFqSLJP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY R.S.C. Anderlecht HOME  26-27", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/8QwAAeSwhVFqSLJP/s-l225.jpg" },
+    ],
+  },
+{
+    id: "atalanta-training-202526",
+    teamKey: "atalanta",
+    season: "2025/26",
+    typeKey: "training",
+    colorHex: "#1E71B8",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158180313672?_skw=Atalanta+training+soccer+jersey&hash=item24d4480a48%3Ag%3ASs8AAeSwaRZqfHU4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Atalanta Training Jersey 25/26 Sz l ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Ss8AAeSwaRZqfHU4/s-l225.jpg" },
+    ],
+  },
+{
+    id: "athleticoparanaense-away-202526",
+    teamKey: "athleticoparanaense",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#DA020E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 104.12, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/358821890794?_skw=Athletico+Paranaense+away+soccer+jersey&hash=item538b738aea%3Ag%3A198AAeSw4ABp73e5&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZD%2BqFI%2F58Lm2v01j5W8Yf0keIOLZWNHbChVVHlkDXCV6AQ94EiyglHMQ3FVaihWfHui6CnTlSqSrVg3oqq9z7pRaK2sE2VscfcZxMOoqMwoxK7qFAF5OwR872VfTwGXTwGC84uz9ZB03MvEhCFOY68o%2FacOlV%2B%2Fe%2B4X3cS4IXzbPpDU9p8cbV0RC%2FhhrnYW3KoEdGpM01uJ5rSst%2B99ApPi10hZQnxcQgDCfGHC4Itdhh0%2B1V3rTxVJdfThgFeHoMTMh%2B%2FupiWXx2xEXKIk5DxIizFzPCiN9BwIhBYpPz0pngL1Pauo5h6Q%2FuL11rIPok%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Athletico Paranaense Away Shirt 25/26 Atletico Away Shirt Jersey Size XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/198AAeSw4ABp73e5/s-l225.jpg" },
+    ],
+  },
+{
+    id: "atleticonacional-away-2026",
+    teamKey: "atleticonacional",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#00843D",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 42.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137542125968?_skw=Atl%C3%A9tico+Nacional+away+soccer+jersey&hash=item2006264990%3Ag%3ABSUAAeSwEM5qYZ4G&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Atlético Nacional Away Shirt 2026 - Colombia Football Shirt", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/BSUAAeSwEM5qYZ4G/s-l225.jpg" },
+    ],
+  },
+{
+    id: "cerezoosaka-goalkeeper-2026",
+    teamKey: "cerezoosaka",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#EA5297",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 94.46, shipping: 37.0, currency: "USD", url: "https://www.ebay.com/itm/318524093254?_skw=Cerezo+Osaka+goalkeeper+soccer+jersey&hash=item4a2983f346%3Ag%3A7goAAeSwJAVqQ7h2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cerezo Osaka 2026 Home Replica Goalkeeper Jersey P2JADY52 Unisex Size SJapan", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/7goAAeSwJAVqQ7h2/s-l225.jpg" },
+    ],
+  },
+{
+    id: "chivas-goalkeeper-202526",
+    teamKey: "chivas",
+    season: "2025/26",
+    typeKey: "goalkeeper",
+    colorHex: "#A6192E",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 130.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188400413233?_skw=Chivas+Guadalajara+goalkeeper+soccer+jersey&hash=item2bdd8a2a31%3Ag%3AnEoAAeSw4vpqDL4S&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Chivas 25/26 Goalkeeper Jersey Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/nEoAAeSw4vpqDL4S/s-l225.jpg" },
+    ],
+  },
+{
+    id: "chivas-prematch-202627",
+    teamKey: "chivas",
+    season: "2026/27",
+    typeKey: "prematch",
+    colorHex: "#A6192E",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 139.26, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206480819059?_skw=Chivas+Guadalajara+pre-match+soccer+jersey&hash=item3013374373%3Ag%3A%7EDsAAeSwXyBqehYB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Chivas Guadalajara Dri-FIT 2026/27 Pre-Match  Jersey XXL NWT In-Hand NEW", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/~DsAAeSwXyBqehYB/s-l225.jpg" },
+    ],
+  },
+{
+    id: "chivas-third-202526",
+    teamKey: "chivas",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#A6192E",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/237010288406?_skw=Chivas+Guadalajara+third+soccer+jersey&hash=item372ee9ff16%3Ag%3AFzEAAeSwgGdqggSo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Chivas de Guadalajara 25/26 Blue & Gold Third Jersey Size Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/FzEAAeSwgGdqggSo/s-l225.jpg" },
+    ],
+  },
+{
+    id: "clubamerica-training-202526",
+    teamKey: "clubamerica",
+    season: "2025/26",
+    typeKey: "training",
+    colorHex: "#FFD700",
+    colorHexSecondary: "#00296B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227130819484?_skw=Club+Am%C3%A9rica+training+soccer+jersey&hash=item34e20d439c%3Ag%3AMx0AAeSw4J9pwz3Y&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25-26 Club America Training Adidas Authentic Training Jersey 3xl Regular Size", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/Mx0AAeSw4J9pwz3Y/s-l225.jpg" },
+    ],
+  },
+{
+    id: "egipto-prematch-2026",
+    teamKey: "egipto",
+    season: "2026",
+    typeKey: "prematch",
+    colorHex: "#CE1126",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 68.8, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/298312325802?_skw=Egypt+pre-match+soccer+jersey&hash=item4574ccdaaa%3Ag%3AsYMAAeSwVnNp60cx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Egypt Warm Up Jersey 26 EFA Prematch Shirt World Cup Egypt Warm Up Jersey M - 3XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/sYMAAeSwVnNp60cx/s-l225.jpg" },
+    ],
+  },
+{
+    id: "espana-third-2026",
+    teamKey: "espana",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#C60B1E",
+    colorHexSecondary: "#F5B942",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/820009760816?_skw=Spain+third+soccer+jersey&hash=itembeec63f830%3Ag%3A5b8AAeSw1cJqgcBK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Spain Champions Third Soccer Jersey Men's 2XL. FIFA World Cup 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/5b8AAeSw1cJqgcBK/s-l225.jpg" },
+    ],
+  },
+{
+    id: "fcmagdeburg-away-2026",
+    teamKey: "fcmagdeburg",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#008751",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 88.5, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/298510492576?_skw=1.+FC+Magdeburg+away+soccer+jersey&hash=item45809ca3a0%3Ag%3Ay84AAeSw%7EoJqWUKP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "bumblebee 1st FC Magdeburg Away Shirt 26 27 Brown FCM Away Shirt Jersey M - 5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/y84AAeSw~oJqWUKP/s-l225.jpg" },
+    ],
+  },
+{
+    id: "fcmagdeburg-home-202627",
+    teamKey: "fcmagdeburg",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#008751",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 88.5, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/298510494236?_skw=1.+FC+Magdeburg+home+soccer+jersey&hash=item45809caa1c%3Ag%3Ax0QAAeSwNRxqWUL6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZklZW%2FCwulZ6DuH9Ya2%2FV6CtZ8LgYGYV90ZozrzD9iuwICZjOmioLcNzYBQy7S4z%2FgT0I9WdO0PZ%2F709gatcMQ5mBqaQFCUASd2axd4%2BVp1TBwZRPW0DsS3ouCoqznFAH7mB0R%2BQRDvnKcxiIE8A5unXxK9jLULYDODy4Py1ImIQ5KHsit4FHR9a3eq7yOily3AbzUVqNR27U0%2BWc3eE6nhDdf7fZoHwDcz6gUhhcfzY360UpDw8Am9cIYKKVsEl3plEeAcA2Mf3ZNcnjuQ%2Fem7Yl13E5S68GWIkgGwSZQsg7br4B0wkPww9s6cZFa90c%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "bumblebee 1st FC Magdeburg Home Shirt 26/27 Blue White FCM Home Jersey Shirt M - 5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/x0QAAeSwNRxqWUL6/s-l225.jpg" },
+    ],
+  },
+{
+    id: "lagalaxy-third-202526",
+    teamKey: "lagalaxy",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#00245D",
+    colorHexSecondary: "#FFD200",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336516794429?_skw=LA+Galaxy+third+soccer+jersey&hash=item4e59f6c83d%3Ag%3Aqf8AAeSwlBhpz9Dj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "LA Galaxy 25/26 Authentic Third Soccer Jersey - Men's Medium", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/qf8AAeSwlBhpz9Dj/s-l225.jpg" },
+    ],
+  },
+{
+    id: "leicester-away-202526",
+    teamKey: "leicester",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#003090",
+    colorHexSecondary: "#FDBE11",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 55.9, shipping: 27.06, currency: "USD", url: "https://www.ebay.com/itm/178100549203?_skw=Leicester+City+away+soccer+jersey&hash=item29779eb653%3Ag%3AhQ0AAeSwpHBp9znh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leicester City football Shirt Large 2025-26 Away Soccer Jersey Official BNWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hQ0AAeSwpHBp9znh/s-l225.jpg" },
+    ],
+  },
+{
+    id: "millwall-home-202627",
+    teamKey: "millwall",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#001C58",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 43.32, shipping: 16.23, currency: "USD", url: "https://www.ebay.com/itm/298568818190?_skw=Millwall+home+soccer+jersey&hash=item4584169e0e%3Ag%3AJz8AAeSwgvRqdtpm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Millwall Football Shirt 26/27 Home Soccer Jersey Men's Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Jz8AAeSwgvRqdtpm/s-l225.jpg" },
+    ],
+  },
+{
+    id: "munich1860-away-202526",
+    teamKey: "munich1860",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#87CEEB",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 98.7, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/298414561786?_skw=1860+Munich+away+soccer+jersey&hash=item457ae4d9fa%3Ag%3AkiYAAeSwlCRpqpUZ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ5%2Bkj9FZ%2BGiygpLyMDJebFM93SiwaTwizsutfMbDE%2Blm12lY8XZt2bcKq%2FCLpTvUJvwg0l61HGO8SzznBB9s3bH2CE3Z4h1NvNMVwDpqiuUYWOo8vLHBYzh2quMOU45rzvqySnQaa%2BK0IqkrNRXMOd0JJHRBDEZRbeuCIHbp%2Fco%2BFWDY7TPRBuU7RnRmG8iiRhOyHpD7rX9uykk54KTEP24zs7lbq3MNf2qS5Cg%2BLt5eL95SVvqLYtNY71OXlI5XPkqXIVMO3UKL6CyUfFItDsT77ba3pCmw41qA9zHmSMUeJo%2FjJU2mBybGL0ZATqmKw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma TSV 1860 Munich Away Jersey 25/26 Lions Shirt M-3XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/kiYAAeSwlCRpqpUZ/s-l225.jpg" },
+    ],
+  },
+{
+    id: "orlandocity-away-2026",
+    teamKey: "orlandocity",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#61259E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 100.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398267932708?_skw=Orlando+City+SC+away+soccer+jersey&hash=item5cba9e6024%3Ag%3ADtcAAeSwFz1qePNH&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb6L%2B2rtutGb%2BBS0L81wbIQDj5n54z7KNqPd2bdldMiRmSvgREKhWf1HMk9RMYCxUVi8jG2B26uiYt3ATCW3F2NbNUCwcjuIt9BxjMIeDYjcNo1RXrBz%2FIeMTexqgla48S%2BrSGqPEGRJPoBt4rp2qiFXbyN3AtVAOAFEDhf1OwKwf4knwYaLTq9j%2BtmrBEI3T4HA1TfnKeS%2FnunfP2%2BevFgoWFo5CKQ2Qnjppo%2BgMrrOY1aw6KMBhDAX6ggRO85gga0pV1U5E5DAKeq36SDfANPRRWG3jGODn%2Fg0aTgl1mY081HYs84GHhNy996J3jeLc8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Orlando City 2026 Away Jersey #7 Griezmann: Size Large *NWT*", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/DtcAAeSwFz1qePNH/s-l225.jpg" },
+    ],
+  },
+{
+    id: "pumasunam-goalkeeper-2026",
+    teamKey: "pumasunam",
+    season: "2026",
+    typeKey: "goalkeeper",
+    colorHex: "#003DA5",
+    colorHexSecondary: "#FFD700",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 159.99, shipping: 8.99, currency: "USD", url: "https://www.ebay.com/itm/327261895317?_skw=Pumas+UNAM+goalkeeper+soccer+jersey&hash=item4c32543a95%3Ag%3AAfEAAeSwy-BqIMj0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 NIKE T90 PUMAS UNAM KEYLOR NAVAS #1 GOALKEEPER JERSEY  AUTHENTIC ORIGINAL!", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/AfEAAeSwy-BqIMj0/s-l225.jpg" },
+    ],
+  },
+{
+    id: "racingclub-prematch-2026",
+    teamKey: "racingclub",
+    season: "2026",
+    typeKey: "prematch",
+    colorHex: "#87CEFA",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 114.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/278121882925?_skw=Racing+Club+pre-match+soccer+jersey&hash=item40c15b252d%3Ag%3AOGYAAeSwxsNqPBLo&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYnu1fgV30EAKYYZMu8WLGRZSxaso9IM2rlJDvFVCp%2BtrglPEqtIr5C1TpYTtYMysOl1bL7aY1CehOsGrKad9M4rSdLjXzwl4m5trPgANHw8CFygrAXnBl0ifpnnGaIzM%2BbNZRLjtS%2FVPd12GcNf5zTHWOcssICpW4vFVyLn9th5a95hQ73m%2FtnA0P4XhtKwU%2BKAV7no1XCNtW4iNz9VuDhbBPWUvbW%2FYFHsRheHc7c5bnjGNbyn9FhzdE77bAxNWZvRhks0ctb70XUsEqwh68k%2FKNR2a3NFEyjUcBHqp95mgFLi0lzzwjD3D1gYnhSB1c%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "RACING CLUB - BLUE POLO T-SHIRT - OFFICIAL Jersey 2026 Pre Match - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/OGYAAeSwxsNqPBLo/s-l225.jpg" },
+    ],
+  },
+{
+    id: "racingclub-training-2026",
+    teamKey: "racingclub",
+    season: "2026",
+    typeKey: "training",
+    colorHex: "#87CEFA",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 195.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/178099506171?_skw=Racing+Club+training+soccer+jersey&hash=item29778ecbfb%3Ag%3AgcwAAeSw9zpp9tP6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Racing Club de Avellaneda Jersey Shirt Training 2026 Official Nike Argentina", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/gcwAAeSw9zpp9tP6/s-l225.jpg" },
+    ],
+  },
+{
+    id: "realsociedad-away-2026",
+    teamKey: "realsociedad",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0067B1",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 119.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/800518969510?_skw=Real+Sociedad+away+soccer+jersey&hash=itemba62a618a6%3Ag%3AgNsAAeSw0XBqdEZJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Real Sociedad 2026 - 27 Authentic Away Jersey - Black", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/gNsAAeSw0XBqdEZJ/s-l225.jpg" },
+    ],
+  },
+{
+    id: "sanjoseearthquakes-away-202627",
+    teamKey: "sanjoseearthquakes",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#0000A0",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800493642510?_skw=San+Jose+Earthquakes+away+soccer+jersey&hash=itemba6123a30e%3Ag%3AcGAAAeSwYTBqe66y&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026-27 San Jose Earthquakes Men's XL Away Soccer Jersey Grateful Dead", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/cGAAAeSwYTBqe66y/s-l225.jpg" },
+    ],
+  },
+{
+    id: "sanjoseearthquakes-home-202526",
+    teamKey: "sanjoseearthquakes",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#0000A0",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188252315309?_skw=San+Jose+Earthquakes+home+soccer+jersey&hash=item2bd4b65ead%3Ag%3A-dwAAeSwh-xp1Hix&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Men's Adidas San Jose Earthquakes 25/26 Home Jersey Size (XS)", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/-dwAAeSwh-xp1Hix/s-l225.jpg" },
+    ],
+  },
+{
+    id: "sanlorenzo-away-2026",
+    teamKey: "sanlorenzo",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0D2B52",
+    colorHexSecondary: "#E0201B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/287344309458?_skw=San+Lorenzo+away+soccer+jersey&hash=item42e70e34d2%3Ag%3AQTwAAeSw6eZqDq9c&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY CLUB ATLÉTICO SAN LORENZO DE ALMAGRO Away 26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/QTwAAeSw6eZqDq9c/s-l225.jpg" },
+    ],
+  },
+{
+    id: "sanlorenzo-prematch-2026",
+    teamKey: "sanlorenzo",
+    season: "2026",
+    typeKey: "prematch",
+    colorHex: "#0D2B52",
+    colorHexSecondary: "#E0201B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728990275?_skw=San+Lorenzo+pre-match+soccer+jersey&hash=item371e25ba43%3Ag%3AePIAAeSwuAxpwUKs&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO - ORIGINAL PRE MATCH Jersey 2026 - ATOMIK - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/ePIAAeSwuAxpwUKs/s-l225.jpg" },
+    ],
+  },
+{
+    id: "sanlorenzo-third-202526",
+    teamKey: "sanlorenzo",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#0D2B52",
+    colorHexSecondary: "#E0201B",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 179.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/317778793524?_skw=San+Lorenzo+third+soccer+jersey&hash=item49fd179434%3Ag%3ANUMAAeSwafppbiGx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO 25/26 THIRD KIT JERSEY - ATOMIK OFFICIAL - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/NUMAAeSwafppbiGx/s-l225.jpg" },
+    ],
+  },
+{
+    id: "sportingkc-home-202526",
+    teamKey: "sportingkc",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#6CACE4",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236625534593?_skw=Sporting+Kansas+City+home+soccer+jersey&hash=item3717fb1e81%3Ag%3AVmcAAeSw5M9piUKR&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "men’s adidas sporting kansas city 25/26 home jersey new JI7254 size large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/VmcAAeSw5M9piUKR/s-l225.jpg" },
+    ],
+  },
+{
+    id: "ssvjahnregensburg-away-202526",
+    teamKey: "ssvjahnregensburg",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#004B87",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 83.11, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/298394403247?_skw=SSV+Jahn+Regensburg+away+soccer+jersey&hash=item4579b141af%3Ag%3AkUwAAeSwe2FpYsJU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel SSV Jahn Regensburg Away Jersey 25/26 Red Jahn M-4XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/kUwAAeSwe2FpYsJU/s-l225.jpg" },
+    ],
+  },
+{
+    id: "stetienne-home-202526",
+    teamKey: "stetienne",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#00843D",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 104.01, shipping: 28.93, currency: "USD", url: "https://www.ebay.com/itm/157145166738?_skw=Saint-%C3%89tienne+home+soccer+jersey&hash=item249694f392%3Ag%3A0U0AAeSwb1Zp0VQQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "AS Saint-Étienne Home Shirt 2025-26 Hummel Green Jersey Football Home Jersey BNWT", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/0U0AAeSwb1Zp0VQQ/s-l225.jpg" },
+    ],
+  },
+{
+    id: "tenerife-home-202526",
+    teamKey: "tenerife",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#004C97",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 87.56, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/358822021328?_skw=Tenerife+home+soccer+jersey&hash=item538b7588d0%3Ag%3AH3IAAeSwLORpYsNz&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaLq7LnKLd6%2BG4zCmSsE5B5AIxt%2F87beOChzygD6eVNqvMwoOPMXYoSphwsfkMF9E0y3h9bLpkwhjN%2F1piv%2BfVFHt616H2L7sjuXi2pyBzcDuWDZKh0jF95n5%2Fqbslq4cakxuxvLtikIgevDWX9bLkIEI29Rn6uNUazCFDW5%2FMHgSHY3KUkhFhz3pWDZ2lh2cBromPyIDWdGcJr1eIICHgrHke%2BLWE5OwouYYxUrcmYbMWBBJdkMf33WUF6aqfD2NgP6%2B2d4KwRSF%2FFw1SHR%2B2VcQdD3F60rPd86h1lNm02Ug%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel CD Tenerife Home Jersey 25/26 M - 3XL", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/H3IAAeSwLORpYsNz/s-l225.jpg" },
+    ],
+  },
+{
+    id: "tunez-prematch-2026",
+    teamKey: "tunez",
+    season: "2026",
+    typeKey: "prematch",
+    colorHex: "#E70013",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227418394975?_skw=Tunisia+pre-match+soccer+jersey&hash=item34f331515f%3Ag%3AOkwAAeSwMiBqSvIk&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Kappa Tunisia 2026 Pre Match Training Jersey(322H6RW TNF A08) Men’s Size (XL)", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/OkwAAeSwMiBqSvIk/s-l225.jpg" },
+    ],
+  },
+{
+    id: "velez-home-2026",
+    teamKey: "velez",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#003DA5",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 198.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/317797418140?_skw=V%C3%A9lez+Sarsfield+home+soccer+jersey&hash=item49fe33c49c%3Ag%3AcKMAAeSwwJdpdMoW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VELEZ SARSFIELD 26 HOME JERSEY - MACRON - ASK SIZE AVAILABLE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/cKMAAeSwwJdpdMoW/s-l225.jpg" },
+    ],
+  },
+{
+    id: "venezia-prematch-202526",
+    teamKey: "venezia",
+    season: "2025/26",
+    typeKey: "prematch",
+    colorHex: "#FF8200",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 120.0, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/257119144569?_skw=Venezia+FC+pre-match+soccer+jersey&hash=item3bdd7eca79%3Ag%3AJU0AAeSwzc5o0Z5D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Venezia FC  Nocta 25/26 PRE-MATCH JERSEY I 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/JU0AAeSwzc5o0Z5D/s-l225.jpg" },
+    ],
+  },
+{
+    id: "venezia-third-202526",
+    teamKey: "venezia",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#FF8200",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 57.62, shipping: 18.02, currency: "USD", url: "https://www.ebay.com/itm/206299812380?_skw=Venezia+FC+third+soccer+jersey&hash=item30086d521c%3Ag%3A5M0AAeSwFU1qFUmr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Venezia FC x NOCTA Third Jersey 2025/26 Small NWOT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/5M0AAeSwFU1qFUmr/s-l225.jpg" },
     ],
   },
 ];
