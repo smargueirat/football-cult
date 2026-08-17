@@ -42599,18 +42599,6 @@ const productsData = [
     ],
   },
 {
-    id: "brighton-retro-1983-home",
-    teamKey: "brighton",
-    season: "1983",
-    typeKey: "retro",
-    colorHex: "#0057B8",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 51.55, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/185473314454?_skw=Brighton+home+soccer+jersey&hash=item2b2f122e96%3Ag%3AUNwAAeSwucpo8NNq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brighton 1983 Retro Home Football Shirt Personalised Fleece Blanket", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/UNwAAeSwucpo8NNq/s-l225.jpg" },
-    ],
-  },
-{
     id: "camerun-retro-1990-home",
     teamKey: "camerun",
     season: "1990",
@@ -45785,18 +45773,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 42.36, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168529679735?_skw=Newcastle+United+home+soccer+jersey+retro+vintage&hash=item273d26d577%3Ag%3AuVUAAOSwvJdmrNgl&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGbDJnbpsycRfZg8g5QZ0rbk0AvYLi7UKg%2Bf7TN2eYGpxqcVJZBPU6kWdQ19zpRumgIBzcUcsALtTg%2By6Wyuvy8HgEuKMUrnEii9oPblOr2TFIeB%2B7vqrTD%2BCj7pxRcLe%2FdMSm0ZXUGGNQJJSUlIgM9Yub6g40DKlTpNcPB0FdtFW4kE0HN76jyhb8SvwWAZE89vJOSA2%2BXHd74Jg%2B6i9GJ5vV6eDimeZMj95QB%2FeAFIVF4SEdrIu9umLjQYRmHYK%2F%2BW3vMC7mk7PvryQ8Khlu2HFknCRoqm2DtftuGO5H21zwb4j5lpcT0CmoLo5Fs8NyUcAtEyb%2Bz1lFe0FNP%2BK5hj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEWCASTLE UNITED 1993/1995 HOME FOOTBALL SHIRT REISSUE SIZE M ADULT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/uVUAAOSwvJdmrNgl/s-l225.jpg" },
-    ],
-  },
-{
-    id: "newcastle-retro-2001-home",
-    teamKey: "newcastle",
-    season: "2001",
-    typeKey: "retro",
-    colorHex: "#241F20",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 51.55, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/185473651824?_skw=Newcastle+United+home+soccer+jersey+retro+vintage&hash=item2b2f175470%3Ag%3A2S4AAeSw6Y9o-LHK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Newcastle Retro 2001 Home Football Shirt Personalised Fleece Blanket", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/2S4AAeSw6Y9o-LHK/s-l225.jpg" },
     ],
   },
 {
