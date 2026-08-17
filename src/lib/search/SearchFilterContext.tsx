@@ -78,7 +78,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [brandFilter, setBrandFilter] = useState<Brand[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
-  const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
+  const [sortBy, setSortBy] = useState<SortKey>("relevance");
   const [visibleCount, setVisibleCount] = useState(CATALOG_PAGE_SIZE);
 
   const activeFilterCount =
