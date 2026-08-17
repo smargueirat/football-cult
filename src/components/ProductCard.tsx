@@ -105,6 +105,8 @@ export default function ProductCard({ product }: { product: Product }) {
               srcSet={`${getDisplaySrc(photo, 260)} 260w, ${getDisplaySrc(photo, 420)} 420w, ${getDisplaySrc(photo, 600)} 600w`}
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
               alt={displayName}
+              loading="lazy"
+              decoding="async"
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
               className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
