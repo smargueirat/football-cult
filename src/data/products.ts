@@ -49932,17 +49932,33 @@ const productsData = [
     ],
   },
 {
+    // Split en dos: FansJerseyHub y PlanetFoot son el diseño grunge negro
+    // /verde/rosa (confirmado real en la propia página de PlanetFoot);
+    // eBay y BSTNIT son un diseño totalmente distinto, negro/burdeos con
+    // filigrana -- dos prendas reales distintas que habían quedado
+    // fusionadas en un solo producto. FansJerseyHub además tenía el link
+    // muerto (404 verificado), se saca directamente.
     id: "liverpool-prematch-202526",
     teamKey: "liverpool",
     season: "2025/26",
     typeKey: "prematch",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
+    colorHex: "#0A0A0A",
+    colorHexSecondary: "#2FB8A6",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-liverpool-fc-2026-homme-noir%3Fvariant%3D53957472649557", title: "Maillot Pré-Match Liverpool FC 2026 Homme - Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-liverpool-fc-2025-2026-homme-noir-aeroready-kb1447-1.avif?v=1784727997" },
+    ],
+  },
+{
+    id: "liverpool-prematch-red-202526",
+    teamKey: "liverpool",
+    season: "2025/26",
+    typeKey: "prematch",
+    colorHex: "#0A0A0A",
+    colorHexSecondary: "#7A1F2B",
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406938269234?_skw=Liverpool+pre-match+soccer+jersey&hash=item5ebf693632%3Ag%3AlWYAAeSwNBlqDSnT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Liverpool Men's Pre-Match Soccer Jersey Medium NWT YNWA Reds ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lWYAAeSwNBlqDSnT/s-l225.jpg" },
-      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fliverpool-pre-match-soccer-jersey-202526-black%3Fvariant%3D42800386605161", title: "Liverpool Pre-Match Soccer Jersey 2025/26 Black", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Liverpool_Pre-Match_Soccer_Jersey_202526_Black_2__1.webp?v=1767937955" },
-      { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-liverpool-fc-2026-homme-noir%3Fvariant%3D53957472649557", title: "Maillot Pré-Match Liverpool FC 2026 Homme - Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-liverpool-fc-2025-2026-homme-noir-aeroready-kb1447-1.avif?v=1784727997" },
       { store: "BSTNIT", price: 48.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42468059689&a=3013769&m=104981", title: "LIVERPOOL FC 25/26 PRE MATCH JERSEY", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-liverpool-fc-preshi-jv9013-0328688%2FJV9013%2FJV9013-01.jpg&feedId=99415&k=6679aac0f929b3daa769a04e6cb1da8867b49ae7" },
     ],
   },
