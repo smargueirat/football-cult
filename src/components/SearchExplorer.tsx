@@ -32,6 +32,8 @@ import {
   PRICE_RANGE_MIN,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
+import { COLOR_ORDER, COLOR_SWATCH, ColorKey, classifyColor } from "@/lib/colorClassify";
+import { Translations } from "@/lib/i18n/translations";
 import PriceRangeSlider from "./PriceRangeSlider";
 import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard3D";
@@ -76,6 +78,21 @@ const QUICK_PICK_TEAMS: TeamKey[] = [
 
 const SCROLL_KEY = "football-cult-catalog-scroll";
 
+const COLOR_LABEL_KEY: Record<ColorKey, keyof Translations["search"]> = {
+  black: "colorBlack",
+  white: "colorWhite",
+  gray: "colorGray",
+  red: "colorRed",
+  orange: "colorOrange",
+  yellow: "colorYellow",
+  green: "colorGreen",
+  teal: "colorTeal",
+  blue: "colorBlue",
+  navy: "colorNavy",
+  purple: "colorPurple",
+  pink: "colorPink",
+};
+
 // Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
 // (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para
 // que la búsqueda no dependa de en qué idioma esté puesta la página.
@@ -110,6 +127,9 @@ export default function SearchExplorer() {
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
+    colorFilter,
+    toggleColorFilter,
+    setColorFilter,
     priceRange,
     setPriceRange,
     sortBy,
@@ -225,6 +245,8 @@ export default function SearchExplorer() {
         brandFilter.length === 0 || (!!p.brand && brandFilter.includes(p.brand));
       const matchesSize =
         sizeFilter.length === 0 || availableSizes(p).some((s) => sizeFilter.includes(s));
+      const matchesColor =
+        colorFilter.length === 0 || colorFilter.includes(classifyColor(p.colorHex));
       const matchesShipping = shipsToCountry(p, countryCode);
       const matchesPriceRange = (() => {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
@@ -244,6 +266,7 @@ export default function SearchExplorer() {
         matchesAgeGroup &&
         matchesBrand &&
         matchesSize &&
+        matchesColor &&
         matchesShipping &&
         matchesPriceRange
       );
@@ -303,6 +326,7 @@ export default function SearchExplorer() {
     ageGroupFilter,
     brandFilter,
     sizeFilter,
+    colorFilter,
     priceRange,
     countryCode,
     sortBy,
@@ -325,7 +349,7 @@ export default function SearchExplorer() {
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, priceRange, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, colorFilter, priceRange, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -692,6 +716,33 @@ export default function SearchExplorer() {
                       className="flex-shrink-0 whitespace-nowrap"
                     >
                       {size}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <span className="text-xs text-[#675c44]">{t.search.colorLabel}:</span>
+                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                  <Chip
+                    active={colorFilter.length === 0}
+                    onClick={() => setColorFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {COLOR_ORDER.map((key) => (
+                    <Chip
+                      key={key}
+                      active={colorFilter.includes(key)}
+                      onClick={() => toggleColorFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      <span
+                        className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
+                        style={{ backgroundColor: COLOR_SWATCH[key] }}
+                      />
+                      {t.search[COLOR_LABEL_KEY[key]]}
                     </Chip>
                   ))}
                 </div>

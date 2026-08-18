@@ -106,6 +106,19 @@ export interface Translations {
     brandLabel: string;
     loadMore: string;
     sizeLabel: string;
+    colorLabel: string;
+    colorBlack: string;
+    colorWhite: string;
+    colorGray: string;
+    colorRed: string;
+    colorOrange: string;
+    colorYellow: string;
+    colorGreen: string;
+    colorTeal: string;
+    colorBlue: string;
+    colorNavy: string;
+    colorPurple: string;
+    colorPink: string;
     priceRangeLabel: string;
     clearFilters: string;
   };
@@ -234,6 +247,13 @@ export interface Translations {
     empty: string;
     store: string;
     price: string;
+    shippingCost: string;
+    taxes: string;
+    taxesIncluded: string;
+    freeShipping: string;
+    total: string;
+    sellersLabel: string;
+    noSellers: string;
     sizes: string;
     viewProduct: string;
   };
@@ -373,6 +393,19 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Marca",
       loadMore: "Ver más",
       sizeLabel: "Talle",
+      colorLabel: "Color",
+      colorBlack: "Negro",
+      colorWhite: "Blanco",
+      colorGray: "Gris",
+      colorRed: "Rojo",
+      colorOrange: "Naranja",
+      colorYellow: "Amarillo",
+      colorGreen: "Verde",
+      colorTeal: "Turquesa",
+      colorBlue: "Celeste",
+      colorNavy: "Azul",
+      colorPurple: "Violeta",
+      colorPink: "Rosa",
       priceRangeLabel: "Rango de precio",
       clearFilters: "Borrar filtros",
     },
@@ -510,6 +543,13 @@ export const translations: Record<Locale, Translations> = {
       empty: "Todavía no agregaste camisetas para comparar.",
       store: "Tienda",
       price: "Precio",
+      shippingCost: "Envío",
+      taxes: "Impuestos",
+      taxesIncluded: "Incluidos",
+      freeShipping: "Gratis",
+      total: "Total",
+      sellersLabel: "Vendedores",
+      noSellers: "Sin ofertas disponibles",
       sizes: "Talles",
       viewProduct: "Ver camiseta",
     },
@@ -646,6 +686,19 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Marca",
       loadMore: "Ver mais",
       sizeLabel: "Tamanho",
+      colorLabel: "Cor",
+      colorBlack: "Preto",
+      colorWhite: "Branco",
+      colorGray: "Cinza",
+      colorRed: "Vermelho",
+      colorOrange: "Laranja",
+      colorYellow: "Amarelo",
+      colorGreen: "Verde",
+      colorTeal: "Turquesa",
+      colorBlue: "Azul claro",
+      colorNavy: "Azul marinho",
+      colorPurple: "Roxo",
+      colorPink: "Rosa",
       priceRangeLabel: "Faixa de preço",
       clearFilters: "Limpar filtros",
     },
@@ -783,6 +836,13 @@ export const translations: Record<Locale, Translations> = {
       empty: "Você ainda não adicionou camisas para comparar.",
       store: "Loja",
       price: "Preço",
+      shippingCost: "Frete",
+      taxes: "Impostos",
+      taxesIncluded: "Incluídos",
+      freeShipping: "Grátis",
+      total: "Total",
+      sellersLabel: "Vendedores",
+      noSellers: "Nenhuma oferta disponível",
       sizes: "Tamanhos",
       viewProduct: "Ver camisa",
     },
@@ -919,6 +979,19 @@ export const translations: Record<Locale, Translations> = {
       brandLabel: "Brand",
       loadMore: "Show more",
       sizeLabel: "Size",
+      colorLabel: "Color",
+      colorBlack: "Black",
+      colorWhite: "White",
+      colorGray: "Gray",
+      colorRed: "Red",
+      colorOrange: "Orange",
+      colorYellow: "Yellow",
+      colorGreen: "Green",
+      colorTeal: "Teal",
+      colorBlue: "Light Blue",
+      colorNavy: "Navy",
+      colorPurple: "Purple",
+      colorPink: "Pink",
       priceRangeLabel: "Price range",
       clearFilters: "Clear filters",
     },
@@ -1056,6 +1129,13 @@ export const translations: Record<Locale, Translations> = {
       empty: "You haven't added any jerseys to compare yet.",
       store: "Store",
       price: "Price",
+      shippingCost: "Shipping",
+      taxes: "Taxes",
+      taxesIncluded: "Included",
+      freeShipping: "Free",
+      total: "Total",
+      sellersLabel: "Sellers",
+      noSellers: "No offers available",
       sizes: "Sizes",
       viewProduct: "View jersey",
     },

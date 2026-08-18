@@ -38,7 +38,7 @@ export default function FloatingFilterButton() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3">
+    <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3 md:bottom-10 md:left-1/2 md:right-auto md:-translate-x-1/2 md:items-center">
       {open && (
         <div className="solid-panel flex w-64 flex-col gap-4 rounded-2xl border border-black/[0.06] p-4 shadow-[0_16px_40px_-12px_rgba(0,0,0,0.25)]">
           {activeFilterCount > 0 && (
@@ -127,10 +127,10 @@ export default function FloatingFilterButton() {
 
       <button
         onClick={() => setOpen((o) => !o)}
-        className="glass-panel shadow-vintage-md relative flex h-12 w-12 items-center justify-center rounded-full border border-black/[0.08] text-[#1a1a1a] transition-transform hover:scale-105"
+        className="shadow-vintage-md relative flex h-12 w-12 items-center justify-center rounded-full border border-black/[0.08] bg-[#FFFDF8]/[0.82] text-[#1a1a1a] backdrop-blur-[8px] transition-all hover:scale-105 md:h-14 md:w-auto md:gap-2.5 md:border-2 md:border-[#1B3B2B] md:bg-[#1B3B2B] md:px-6 md:text-[#F3E9C9] md:shadow-[0_14px_34px_-8px_rgba(27,59,43,0.55)] md:hover:bg-[#15301f]"
         aria-label={t.search.typeLabel}
       >
-        <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg className="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -138,6 +138,7 @@ export default function FloatingFilterButton() {
             d="M3 4h18M6 12h12M10 20h4"
           />
         </svg>
+        <span className="hidden text-sm font-semibold md:inline">{t.search.filtersButton}</span>
         {activeFilterCount > 0 && (
           <span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-[#D97706] text-[9px] font-semibold text-white">
             {activeFilterCount}

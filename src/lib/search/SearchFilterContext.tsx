@@ -2,6 +2,7 @@
 
 import { createContext, ReactNode, useContext, useState } from "react";
 import { AgeGroup, Brand, CategoryKey, Size, TypeKey } from "@/data/products";
+import { ColorKey } from "@/lib/colorClassify";
 
 export type SortKey = "relevance" | "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";
 
@@ -46,6 +47,9 @@ interface SearchFilterValue {
   sizeFilter: Size[];
   toggleSizeFilter: (s: Size) => void;
   setSizeFilter: (s: Size[]) => void;
+  colorFilter: ColorKey[];
+  toggleColorFilter: (c: ColorKey) => void;
+  setColorFilter: (c: ColorKey[]) => void;
   priceRange: PriceRange;
   setPriceRange: (p: PriceRange) => void;
   // Vive acá (no como useState local del componente de resultados) para
@@ -77,6 +81,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [ageGroupFilter, setAgeGroupFilter] = useState<AgeGroup[]>([]);
   const [brandFilter, setBrandFilter] = useState<Brand[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
+  const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
   const [sortBy, setSortBy] = useState<SortKey>("relevance");
   const [visibleCount, setVisibleCount] = useState(CATALOG_PAGE_SIZE);
@@ -88,6 +93,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (ageGroupFilter.length > 0 ? 1 : 0) +
     (brandFilter.length > 0 ? 1 : 0) +
     (sizeFilter.length > 0 ? 1 : 0) +
+    (colorFilter.length > 0 ? 1 : 0) +
     (priceRange[0] !== PRICE_RANGE_MIN || priceRange[1] !== PRICE_RANGE_MAX ? 1 : 0);
 
   return (
@@ -113,6 +119,9 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         sizeFilter,
         toggleSizeFilter: (s) => setSizeFilter((cur) => toggle(cur, s)),
         setSizeFilter,
+        colorFilter,
+        toggleColorFilter: (c) => setColorFilter((cur) => toggle(cur, c)),
+        setColorFilter,
         priceRange,
         setPriceRange,
         sortBy,
@@ -126,6 +135,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setAgeGroupFilter([]);
           setBrandFilter([]);
           setSizeFilter([]);
+          setColorFilter([]);
           setPriceRange([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
         },
         visibleCount,

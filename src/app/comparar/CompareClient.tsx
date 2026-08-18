@@ -6,7 +6,7 @@ import {
   bestOffer,
   displayTitleForCountry,
   findProduct,
-  formatOfferMoney,
+  offerShipsTo,
   offerTotal,
   teamNames,
   typeNames,
@@ -16,6 +16,7 @@ import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { getDisplaySrc } from "@/lib/images";
 import JerseyIcon from "@/components/JerseyIcon";
+import CompareOfferRow from "@/components/CompareOfferRow";
 
 export default function CompareClient() {
   const { locale, t } = useLanguage();
@@ -61,6 +62,14 @@ export default function CompareClient() {
             const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
             const displayName =
               displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
+            // Todos los vendedores disponibles en el país del usuario, no
+            // solo la mejor oferta -- el pedido fue poder comparar entre
+            // vendedores dentro de la misma camiseta, cada uno con su propia
+            // línea de precio / impuestos / envío.
+            const sellers = [...product.offers]
+              .filter((o) => o.inStock && offerShipsTo(o.store, countryCode))
+              .sort((a, b) => offerTotal(a) - offerTotal(b));
+            const bestStore = sellers[0]?.store;
 
             return (
               <div key={product.id} className="vintage-card flex flex-col overflow-hidden rounded-2xl">
@@ -100,24 +109,25 @@ export default function CompareClient() {
                   <h2 className="font-card-title text-lg text-[#1a1a1a]">
                     {displayName}
                   </h2>
-                  <dl className="flex flex-col gap-1.5 text-sm">
-                    <div className="flex justify-between border-b border-[#C9A24B]/15 pb-1.5">
-                      <dt className="text-[#675c44]">{t.compare.store}</dt>
-                      <dd className="font-medium text-[#1a1a1a]">{best?.store ?? "—"}</dd>
-                    </div>
-                    <div className="flex justify-between border-b border-[#C9A24B]/15 pb-1.5">
-                      <dt className="text-[#675c44]">{t.compare.price}</dt>
-                      <dd className="font-semibold text-[#B45309]">
-                        {best ? formatOfferMoney(offerTotal(best), best.currency) : "—"}
-                      </dd>
-                    </div>
-                    <div className="flex justify-between">
-                      <dt className="text-[#675c44]">{t.compare.sizes}</dt>
-                      <dd className="font-medium text-[#1a1a1a]">
-                        {best?.sizes.join(", ") ?? "—"}
-                      </dd>
-                    </div>
-                  </dl>
+                  <div className="flex flex-col gap-2">
+                    <span className="text-xs font-medium text-[#675c44]">
+                      {t.compare.sellersLabel} ({sellers.length})
+                    </span>
+                    {sellers.length === 0 ? (
+                      <p className="text-sm text-[#8a8a84]">{t.compare.noSellers}</p>
+                    ) : (
+                      <div className="flex flex-col gap-2">
+                        {sellers.map((offer) => (
+                          <CompareOfferRow
+                            key={`${offer.store}-${offer.url}`}
+                            offer={offer}
+                            countryCode={countryCode}
+                            isBest={offer.store === bestStore}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                   <Link
                     href={`/camiseta/${product.id}`}
                     className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
