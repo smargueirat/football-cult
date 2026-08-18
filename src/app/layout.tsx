@@ -83,6 +83,7 @@ export default function RootLayout({
           >)}
         />
         <meta name="verify-admitad" content="2666c15826" />
+        <meta name="fo-verify" content="474f9e3b-cac4-4cea-9223-473788483f72" />
         {/* Ahorra el DNS+TLS de la primera foto de cada dominio en vez de
             pagarlo recién cuando el navegador la pide -- estos tres son
             los que más se repiten en el catálogo (eBay, el proxy de Awin,
