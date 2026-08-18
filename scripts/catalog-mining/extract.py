@@ -457,6 +457,16 @@ EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
+    # Found 2026-08-18 mining the eBay retro/kids backlog: "Personalized
+    # LIGA MX ... Shirt 3D" is a recurring unlicensed sublimation-print
+    # dropship pattern (Club Tijuana/Pumas UNAM/Club León/Chivas/Cruz
+    # Azul/Tigres UANL all hit, ~20 listings this one pass alone -- same
+    # class as Concept/AIRO/JELEX, just not generalized to a regex until
+    # now since earlier passes only ever saw 1-2 samples). Novelty items
+    # (beach towel/cushion/blanket with a jersey design printed on them,
+    # not an actual garment) found the same pass -- explicit task
+    # instruction false-positive class, first real hits caught here.
+    r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b|"
     # Low-trust eBay dropship template: bare "{Country} Football Soccer
     # Jersey {year} {Home/Away/Third}" with nothing else (no brand, no
@@ -483,6 +493,7 @@ KIDS_EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
+    r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b",
     re.I,
 )

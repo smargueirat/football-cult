@@ -49,6 +49,12 @@ RETRO_EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|"
     r"\bconcept\b|\bairo\b|"
+    # Same 2026-08-18 find as extract.py's EXCLUDE_RE -- "Personalized ...
+    # 3D" LIGA MX dropship reproductions and towel/blanket/cushion novelty
+    # items (Bournemouth/Brentford/Brighton "Personalised ... Beach
+    # Towel"/"Shaped Cushion"/"Fleece Blanket") both slipped through the
+    # retro pass at real volume this time.
+    r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b",
     re.I,
 )

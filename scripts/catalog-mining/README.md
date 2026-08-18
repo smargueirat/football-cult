@@ -1157,3 +1157,155 @@ support means any teams that do get through still land in the output
 files), but did not wait on it to ship the rest of this pass — see commit
 history for whether a follow-up eBay-only commit landed same day or the
 picks got carried to the next daily pass instead.
+
+## Daily pass (2026-08-18) — applied the Aug-17 eBay kids+retro backlog, new false-positive class: country keys matching domestic clubs
+
+The 06:07 cron run on 2026-08-18 identified but didn't finish applying
+the previous day's completed `ebay_mine_full.py` output
+(`current_picks.json` had already been applied via the 2026-08-17
+"eBay full-catalog sweep" commit, but `kids_picks.json` — 170 entries —
+and `retro_picks.json` — 3632 entries — were still sitting unapplied in
+`/tmp/ebay_full_20260817/`). This pass applied both, then did a normal
+incremental Awin (11 stores) + MysteryShirtClub pass.
+
+**New regex fixes** (now in `EXCLUDE_RE`/`KIDS_EXCLUDE_RE` in
+`extract.py` and `RETRO_EXCLUDE_RE` in `retro_extract.py` —
+`personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b`):
+- **"Personalized LIGA MX \<team\> Shirt 3D" unlicensed sublimation
+  dropship reproductions** — the exact class flagged in earlier passes
+  as "only 2 samples, too narrow to regex" (Club Tijuana, Pumas UNAM)
+  turned out to be a real recurring seller pattern once the eBay kids+
+  retro backlog was reviewed at volume: ~20 hits this pass alone
+  spanning Club Tijuana, Pumas UNAM, Club León, Chivas Guadalajara,
+  Cruz Azul, Tigres UANL, 100% of "personalized/personalised" matches
+  in the whole 3800-entry batch were this pattern or the novelty class
+  below — safe to generalize now.
+- **Novelty items matching a jersey title but photographed as a towel/
+  cushion/blanket** (Bournemouth "... Home Shirt Personalised Vintage
+  Beach Towel", Brentford "... Personalised Retro Football Shirt Shaped
+  Cushion", Brighton "... Personalised Fleece Blanket") — the exact
+  false-positive class this project's standing instructions call out by
+  name, first real hits caught.
+- Also dropped by hand (not regexed, too store/listing-specific): 2
+  New Era 9TWENTY baseball caps mislabeled "Third Jersey" in the kids
+  batch (Vancouver Whitecaps, Orlando City — same class as the
+  documented Vancouver Whitecaps cap from the 2026-08-17 pass, this
+  seller does it repeatedly) and 1 "Sweden home" pick that was actually
+  a Houston Dynamo (MLS) "Starting Lineup" branded T-shirt with no
+  connection to Sweden at all.
+
+**New false-positive class, not previously documented: a country/
+national-team `TeamKey`'s picks can be dominated by DOMESTIC CLUB
+listings that merely mention the country for context** (kit supplier
+copy, league name, or just the seller's location tag), same root shape
+as the already-documented India/Zambia domestic-club problem but far
+larger in scope. Found by two methods used together — (1) cross-
+checking every retro pick's title against every OTHER team's
+`TEAM_PATTERNS` regex (catches the case where the contaminating club is
+itself a tracked `TeamKey`), and (2) a "club-name-immediately-before-
+the-country-name" heuristic (strip brand/condition/size noise words
+from the text before the country name in the title; a real proper noun
+left over is a tell) for the untracked-club case. Both are one-off
+scripts, not wired into the standing pipeline (see below for why).
+Confirmed by hand, real examples this pass:
+- **escocia** (Scotland) — of ~43 retro picks, ~26 were actually
+  Celtic/Rangers/Hibernian/Ross County/Partick Thistle/Clyde FC/Hearts
+  of Midlothian/East Fife (Scottish clubs), not the national team.
+- **inglaterra** (England) — 8 of 27 were Everton/Man City/Leicester/
+  Bournemouth/Wolves/West Ham/Stoke City/Liverpool club listings.
+- **turquia** (Turkey) — 9 of 18 were Fenerbahçe/Galatasaray/Göztepe/
+  Kocaelispor/Adana Demirspor/Ankaragücü club listings.
+- **qatar** — 8 of 11 were Qatar Airways-SPONSORED other clubs
+  (Barcelona/PSG/Inter Milan) or World-Cup-host mentions on a different
+  country's shirt (Mexico, USA/Pulisic) — only 3 were genuine bare
+  "Qatar Home Jersey ... World Cup" items. **Near-miss caught while
+  building the drop list**: a first pass wrote this key off as "all
+  contamination" without checking the full per-team title list first —
+  would have deleted 3 real Qatar NT products. Same near-miss happened
+  for **finlandia** (1 bad pick — a Denmark shirt that also says "vs
+  Finland" — almost got generalized to drop all 7, 6 of which are
+  genuine Litmanen-era/"NATIONAL TEAM"-explicit Finland items). **Always
+  print and read the full per-team pick list before writing a team off
+  as "all contamination," even when every *flagged* sample looks bad** —
+  the heuristic's own selection bias (it only flags picks matching the
+  suspicious shape) means the un-flagged remainder can still be mostly
+  genuine.
+- Smaller confirmed hits (all hand-verified by title, several cross-
+  checked by photo): ucrania/Dynamo Kyiv+Shakhtar+Karpaty Lviv+Metalurh
+  Sobol+Nyva Ternopil, francia/Marseille+PSG, alemania/Schalke+Nürnberg,
+  italia/Juventus+AC Milan+Chievo+Avellino, portugal/Porto+Juventus+AC
+  Milan (Ronaldo/Leão playing for their CLUB, not the NT), sudafrica/
+  Kaizer Chiefs (+2 stray England Confederations-Cup/World-Cup-host
+  shirts), suecia/Djurgården+Helsingborgs+1 stray Beckham/England
+  shirt, peru/8 different domestic clubs, israel/Maccabi Netanya+
+  Maccabi Tel Aviv, plus one-off hits for arabiasaudita, argelia,
+  belgica, bolivia, botswana, china, colombia, croacia, dinamarca,
+  egipto, elsalvador, eslovenia, georgia (Atlanta United — the exact
+  "Georgia/US state" collision this doc already flagged as a candidate
+  to watch), gales, honduras, indonesia, iran, iraq, japon, myanmar,
+  noruega, paisesbajos, paraguay, tailandia, uruguay, venezuela. ~200
+  bad picks dropped total (of 3632 retro + 170 kids candidates).
+- **Not generalized into the standing pipeline** — same call as the
+  already-documented Jordan/Ukraine/India collisions: enumerable per
+  team this time (unlike the fully generic "bare word collision" cases),
+  so a per-team substring blocklist could be added if this recurs, but
+  building it required the full cross-check + heuristic + hand-read
+  pass above, not something worth running proactively on every store
+  every day. If Scotland/England/Turkey/Qatar keep recurring, promoting
+  their specific club lists to a real blocklist (like
+  `manual_exclusions.py` but keyed on team+substring instead of URL)
+  would be the next step.
+- **jordania** continues to need its national-team-explicit whitelist
+  (not blocklist) treatment already documented above — 12 more Nike-
+  Jordan-brand PSG kits dropped this pass alone via the same rule.
+
+**Post-insertion cleanup (mechanical, same playbook as every previous
+large batch)**: the exact-duplicate-offer-URL scan came back with 236
+hits — all bare-year-vs-full-range season-notation duplicates (e.g.
+`italia-retro-2024-home` vs the pre-existing `italia-retro-202425-home`,
+identical eBay URL under both), same class documented under "Adding a
+team" above. Resolved 236/236 mechanically against a pre-batch snapshot
+(whichever id already had the URL before this run keeps it; the other
+copy — always a brand-new single-offer product `retro_gen.py` had just
+generated — gets deleted). This also surfaced the **gender-merge bug
+recurring for 6 more products** (5 already had a `-mens` sibling from
+the 2026-08-12 fix — the new eBay men's offer just needed moving there
+— but `dortmund-retro-202425-home` was a previously-undetected instance
+with several non-women offers already sitting in a `women`-tagged block
+before this pass ever started; split it into a new `dortmund-retro-
+202425-home-mens` sibling). **Always re-run the WOMEN_SIGNAL_RE-vs-
+men's-signal scan after any large retro insertion**, not just the
+duplicate-URL one — they catch different things and both keep recurring.
+
+**Awin (all 11 stores) + MysteryShirtClub**: normal incremental pass,
+~1500 offers refreshed. 1 new product (`hamburg-home-202627` — Hamburg
+had only 2 retro products, no current-season product at all before
+this). Dropped 3 more Jordan-brand-PSG / Brazil-goalkeeper-named-Jordan
+picks (FootStoreES ×2, FootStoreFR ×1) — same standing collision class.
+**A large wave of clubs' 2026/27 kits are now live** (AC Milan, Bayern,
+Valencia, Monaco, RC Lens, PSV, Marseille, LA Galaxy, and more, mostly
+via PlanetFoot) showing up as `season_conflict` against the catalog's
+current `2025/26` products — left skipped per the pipeline's standing
+"skip rather than guess" default, since treating a full season/design
+refresh as a same-product price update would be wrong and treating it
+as a parallel new product for ~15+ teams at once is a bigger structural
+change than a daily incremental pass should make unreviewed. Worth a
+dedicated season-rollover pass if this keeps growing.
+
+**DAZN Canada** (Awin-approved per project notes, never checked before)
+— confirmed it's purely a streaming subscription service with no
+merchandise shop at all (checked its homepage HTML for any shop/store/
+jersey/merch wording; found nothing but generic app-store links). No
+feed to mine, nothing to add — same conclusion as Asics CL/Pro Soccer,
+safe to stop re-checking this one too.
+
+**Infra note**: hit the same "Bash tool fails on literally every command,
+including `echo`" symptom documented under 2026-08-12/13 above, this
+time with a real root cause found: `/tmp` quota (a tmpfs, per-session)
+got exhausted by ~4GB of leftover duplicate feed CSVs from earlier
+sessions that were never cleaned up (`/tmp/mine20260817/`,
+`scratchpad/mining/0816/`, etc.) plus this session's own large feed
+downloads. Freeing that space fixed it. **Clean up large feed CSVs from
+the scratchpad after each store is done with them**, not just at the
+very end — they're multi-hundred-MB each (FootStoreES/FR alone are
+~300-360MB) and this pipeline fetches 11+ of them.
