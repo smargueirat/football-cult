@@ -1,13 +1,39 @@
 import sys, re, json, os
+from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from refresh import split_blocks
 
 PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src', 'data', 'products.ts')
 
 def existing_products():
+    """team|type -> the set of every season already on file for that key.
+
+    Real bug found 2026-08-18: a team+type key isn't unique to one product
+    id -- color/season/style variant splits (e.g. "liverpool-prematch-
+    202526" vs "liverpool-prematch-red-202526", both season "2025/26"; or
+    "manutd-prematch-202627" vs "manutd-prematch-202526", genuinely
+    different seasons) mean MULTIPLE blocks can share one team|type key.
+    The old version of this function kept a single `existing[key] =
+    season` (whichever block happened to be LAST in iteration order),
+    which silently overwrote earlier blocks -- a fresh pick could get
+    misclassified as `season_conflict` against the wrong existing season
+    (or vice versa: misclassified as `add_offers` when it actually should
+    conflict), purely depending on block order in the file. Confirmed
+    real-world impact: manutd|prematch and realmadrid|prematch both
+    already had a `-202627` product on file, but a fresh PlanetFoot
+    2026/27 pick was still being flagged `season_conflict` against
+    whichever OTHER (older-season) block happened to be seen last for
+    that key. Now returns every season seen for the key, and callers
+    should check membership (`seasons_equivalent` against any of them)
+    instead of equality against a single value. This matters even more
+    now that season_conflict auto-generates new products (see split()
+    below) -- misclassifying an already-covered season as a fresh
+    conflict would create a real duplicate product, not just a stale log
+    line.
+    """
     content = open(PRODUCTS_TS, encoding='utf-8').read()
     head, blocks, tail = split_blocks(content)
-    existing = {}
+    existing = defaultdict(set)
     for b in blocks:
         teamm = re.search(r'teamKey: "([a-z0-9]+)"', b)
         typem = re.search(r'typeKey: "([a-z]+)"', b)
@@ -17,7 +43,7 @@ def existing_products():
         if 'ageGroup: "kids"' in b:
             continue
         key = f"{teamm.group(1)}|{typem.group(1)}"
-        existing[key] = seasonm.group(1)
+        existing[key].add(seasonm.group(1))
     return existing
 
 def detect_season(title):
@@ -81,10 +107,12 @@ def split(picks_path):
     for k, d in picks.items():
         detected = detect_season(d["title"])
         if k in existing:
-            if seasons_equivalent(existing[k], detected):
+            if any(seasons_equivalent(s, detected) for s in existing[k]):
                 add_offers[k] = d
             else:
-                season_conflict[k] = (existing[k], detected, d["title"])
+                # every season already on file for this key, for the log line
+                # below and for CONFLICT.json's audit trail
+                season_conflict[k] = ("|".join(sorted(existing[k])), detected, d["title"])
         else:
             new_products[k] = d
     return new_products, add_offers, season_conflict
@@ -93,8 +121,19 @@ if __name__ == "__main__":
     new_products, add_offers, season_conflict = split(sys.argv[1])
     print(f"new_products: {len(new_products)}")
     print(f"add_offers: {len(add_offers)}")
-    print(f"season_conflict (skipped): {len(season_conflict)}")
+    print(f"season_conflict (auto-resolve candidates -- still needs photo verification, see README): {len(season_conflict)}")
     for k, (old, new, title) in season_conflict.items():
         print(f"  {k}: existing={old} vs pick={new} | {title}")
     json.dump(new_products, open(sys.argv[1].replace('.json', '_NEW.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(add_offers, open(sys.argv[1].replace('.json', '_ADD.json'), 'w'), ensure_ascii=False, indent=1)
+    # CONFLICT.json carries the SAME shape as NEW.json (full pick dict, not
+    # just the (old, new, title) summary tuple) so it can be run through
+    # gen_new_teams.py exactly like a genuinely-new pick, once each entry
+    # has been through the same photo-verification pass any other new
+    # product gets. See README.md "season_conflict is now auto-resolved-
+    # when-clean" for the full workflow -- this is NOT a green light to
+    # skip verification, it's what removes the old "stop and ask a human"
+    # step for the clean cases while still requiring a real check.
+    picks_raw = json.load(open(picks_path, encoding='utf-8'))
+    conflict_full = {k: picks_raw[k] for k in season_conflict}
+    json.dump(conflict_full, open(sys.argv[1].replace('.json', '_CONFLICT.json'), 'w'), ensure_ascii=False, indent=1)

@@ -42,8 +42,24 @@ def colors_from_existing_products(team):
 # against itself. Now imports the single shared implementation instead.
 from split_picks import detect_season
 
+def existing_product_ids():
+    """Every `id:` already sitting in products.ts. Used to refuse silently
+    generating a duplicate id -- real risk now that season_conflict picks
+    (see split_picks.py) are routed through this same generator: a
+    conflict pick's season differs from whatever old-season product
+    already exists for that team+type, so the generated id (which embeds
+    the season) won't collide with THAT one, but nothing previously
+    guaranteed it can't collide with some OTHER already-existing id (a
+    manually-created one that doesn't follow the `{team}-{type}-{season}`
+    convention, or a second call generating the same key twice in one
+    session). Cheap to check, so just check it."""
+    products_ts = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src', 'data', 'products.ts')
+    content = open(products_ts, encoding='utf-8').read()
+    return set(re.findall(r'    id: "([^"]+)",', content))
+
 def gen(picks_path, store_name, currency, out_path):
     picks = json.load(open(picks_path, encoding='utf-8'))
+    known_ids = existing_product_ids()
     blocks = []
     for key, d in sorted(picks.items()):
         team, typ = key.split("|")
@@ -58,6 +74,10 @@ def gen(picks_path, store_name, currency, out_path):
         season = detect_season(d["title"])
         sizes_ts = ", ".join(f'"{s}"' for s in d["sizes"])
         pid = f"{team}-{typ}-{season.replace('/', '')}"
+        if pid in known_ids:
+            print(f"SKIP (id already exists, would duplicate -- check by hand): {pid}")
+            continue
+        known_ids.add(pid)
         link = d["link"].replace('"', '\\"')
         image = (d["image"] or "").replace('"', '\\"')
         title_escaped = d["title"].replace('"', '\\"')

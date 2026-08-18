@@ -1158,6 +1158,159 @@ files), but did not wait on it to ship the rest of this pass — see commit
 history for whether a follow-up eBay-only commit landed same day or the
 picks got carried to the next daily pass instead.
 
+## season_conflict is now auto-resolved-when-clean, not always a skip (2026-08-18)
+
+**Behavior change, read before touching `split_picks.py`/`gen_new_teams.py`
+again.** Every entry above this point in the doc describes `season_conflict`
+as a dead end: `split_picks.py` finds a fresh pick whose season doesn't
+match the catalog's existing product for that team+type, prints it, and
+stops -- a human decides by hand whether to add it as a new product. That
+required an explicit "go ahead and add these" from the user every time a
+club's kit rolled over to a new season, which happens constantly (~15+
+clubs at once during a real season-rollover wave, see the untouched
+"large wave of clubs' 2026/27 kits are now live" note originally logged
+right below this section). The user asked for this to stop requiring
+manual sign-off going forward.
+
+**What changed, concretely:**
+
+1. `split_picks.py`'s `existing_products()` had a real bug worth fixing
+   before wiring anything else to it: it kept `existing[key] = season`
+   (one value) for a `team|type` key, but a key isn't unique to one
+   product id (season/color/style variant splits, e.g.
+   `liverpool-prematch-202526` vs `liverpool-prematch-red-202526`, or
+   genuinely different-season siblings like `manutd-prematch-202627` vs
+   `manutd-prematch-202526`, both real, both already on file). Whichever
+   block happened to be LAST in file order silently overwrote the
+   others, so a fresh pick could get misclassified as a conflict against
+   the wrong season entirely. Confirmed real-world hits: `manutd|prematch`
+   and `realmadrid|prematch` both already had their `-202627` sibling on
+   file, but a fresh PlanetFoot 2026/27 pick was still printing as
+   `season_conflict` against whichever *other*, older-season block got
+   visited last. Fixed: `existing_products()` now returns every season
+   seen for a key (a `set`), and `split()` checks `seasons_equivalent`
+   against *any* of them, not just one. This matters more now than it
+   used to, because misclassifying an already-covered season as a fresh
+   conflict no longer just prints a stale log line -- it would generate a
+   real duplicate product (see point 2).
+2. `split_picks.py` now writes a third output file,
+   `<picks>_CONFLICT.json`, in the exact same shape as `_NEW.json` (full
+   pick dict per key: title/price/shipping/sizes/link/image), not just
+   the old `(old_season, new_season, title)` summary tuple used for the
+   printed log line. This means a season_conflict pick can be run through
+   `gen_new_teams.py` exactly like a genuinely-new pick.
+3. `gen_new_teams.py` now refuses to generate an id that already exists
+   in `products.ts` (`existing_product_ids()`, checked before appending
+   each block) -- printed as `SKIP (id already exists, would duplicate --
+   check by hand)` instead of silently duplicating. This was always a
+   latent gap (nothing stopped two picks from generating the same id even
+   for ordinary new-product runs), but became worth actually fixing once
+   `_CONFLICT.json` started feeding this same generator.
+
+**The actual workflow now, per store, replacing step 4-5 of "Running a
+full mining pass" above:**
+
+```bash
+python3 split_picks.py /tmp/picks.json
+# -> picks_NEW.json (genuinely new team+type), picks_ADD.json (offer
+#    refresh into an existing product), picks_CONFLICT.json (season
+#    doesn't match anything on file for that team+type)
+
+# Photo-verify picks_NEW.json AND picks_CONFLICT.json the SAME way --
+# same standard as every other new-product candidate this file has ever
+# documented: download the real image, look at it, check crest/brand/
+# item-type, and for anything the false-positive classes above call out
+# by name (national teams that don't redesign yearly, anniversary
+# editions, kids/women's cuts, retro reissues, blank templates, wrong
+# sport) cross-check against the existing product's own photo before
+# trusting the season in the title. This step is NOT optional and NOT
+# skippable just because the pipeline can now technically auto-generate
+# the block -- "auto-resolve" means removing the human-approval gate
+# for CLEAN cases, not removing the verification itself.
+
+# Whatever survives verification in EITHER file goes through the same
+# generator:
+python3 gen_new_teams.py /tmp/picks_NEW.json StoreName EUR /tmp/new_blocks.ts
+python3 gen_new_teams.py /tmp/picks_CONFLICT.json StoreName EUR /tmp/conflict_blocks.ts
+# (two separate out_path files, or concatenate -- either way, insert
+# both the same way as any other new-product batch)
+
+# Whatever DOESN'T survive verification (ambiguous, ambiguous multi-store
+# split, same-kit-relabeled false positive) stays skipped and logged for
+# manual review, exactly like before -- this is the one case where
+# "skip rather than guess" still applies unchanged.
+```
+
+**First real run under this new behavior (2026-08-18), applying the
+season_conflict backlog this same doc had been logging as "left skipped"
+for the past several passes**: 81 team+type season_conflict candidates
+across 50 clubs, all re-verified fresh (re-fetched every relevant store's
+feed rather than trusting the earlier skip-log) and photo-checked one by
+one before generating anything.
+
+- **72 confirmed genuine new-season products added.** Real photo evidence
+  of an actual redesign (different colorway, different pattern, different
+  sponsor-era print), not just a different year string in the title.
+  Where a key had multiple stores independently listing the same fresh
+  season, checked whether their photos agreed (merge into one product,
+  multiple offers) or showed two genuinely different real releases (split
+  into two products with a descriptive id suffix, same pattern as the
+  pre-existing `liverpool-prematch-red-202526` split) -- found two more
+  real instances of this: `juventus-goalkeeper-home-202627` vs
+  `juventus-goalkeeper-away-202627` (AdidasES's "primera equipación"
+  goalkeeper pick and AdidasPT's "Away Goalkeeper" pick are two distinct
+  real jerseys, orange vs green, confirmed by photo -- titles said so
+  too, just needed the photo to trust it), and
+  `juventus-prematch-202627` (white/gold, SportIsGoodES+FR) vs
+  `juventus-prematch-heritage-202627` (black/cream adidas Originals-style
+  retro print, PlanetFoot only -- a real product, just a different design
+  line than the standard prematch top).
+- **6 confirmed false positives, caught before creating a duplicate**:
+  `brasil-away`/`brasil-home`/`coreadelsur-away`/`haiti-home`/
+  `paisesbajos-away` (all MysteryShirtClub) and `ghana-away`
+  (FansJerseyHub) -- every one of these had a photo **pixel-identical**
+  to the existing product's own stored photo (same crest position, same
+  print, same collar), just re-titled with a different year range
+  (MysteryShirtClub's `"2026-2027 <Team> ... Shirt"` template in
+  particular looks like a generic label applied across its whole current
+  stock, not a real season signal -- worth treating any MysteryShirtClub
+  season_conflict pick for a national team with real suspicion going
+  forward). Exactly the risk this doc's task instructions called out by
+  name: national-team World Cup kits don't redesign on the yearly cycle
+  clubs do, so a bare year bump in the title is much weaker evidence for
+  a country than for a club.
+- **2 skipped as genuinely ambiguous, not added**: `manutd|home`
+  (AdidasPT's pick title literally says "Camisola **Curta**" -- Portuguese
+  for "cropped" -- a fashion/cropped-cut variant, not the standard replica
+  shirt this catalog otherwise lists under `home`; needs a human call on
+  whether cropped items belong in the same `typeKey` at all) and
+  `liverpool|home` (AdidasPT's only pick shows an unexpected burgundy/wine
+  colorway for what Liverpool has always had as a plain red home -- not
+  corroborated by any second store, so left for a second opinion rather
+  than trusted on one source).
+- **1 near-miss caught by cross-checking the existing block, not just the
+  photo**: `astonvilla|training`'s AdidasES pick looked at first like a
+  false conflict (bare "2025" vs "2025/26" notation on the existing
+  product, same club, same type) -- but the existing
+  `astonvilla-training-2025` block *already has its own, different*
+  AdidasES offer (a long-sleeve "Tiro 25 Competition" top), and the fresh
+  pick's photo is a visibly different garment (a paint-splash warm-up
+  top). Same class as the already-documented
+  `bayern-training`/`bayern-training-jacket`/`bayern-training-beige`
+  three-way split: added as its own product
+  (`astonvilla-training-warmup-202526`) instead of either merging into
+  the existing block or dropping it. **Always check ALL existing offers
+  on a candidate's team+type block, not just the season string, before
+  deciding "same product, different label"** -- the season match alone
+  isn't sufficient once a team+type key can carry more than one real
+  design.
+- 2 team+type keys (`manutd|prematch`, `realmadrid|prematch`) that
+  appeared in the original skip-log turned out not to be real conflicts
+  at all once `existing_products()`'s multi-season bug (point 1 above)
+  was fixed -- PlanetFoot's fresh 2026/27 pick already matches the
+  `-202627` sibling product that was sitting on file the whole time under
+  a different, older-season block's shadow.
+
 ## Daily pass (2026-08-18) — applied the Aug-17 eBay kids+retro backlog, new false-positive class: country keys matching domestic clubs
 
 The 06:07 cron run on 2026-08-18 identified but didn't finish applying
@@ -1291,6 +1444,15 @@ refresh as a same-product price update would be wrong and treating it
 as a parallel new product for ~15+ teams at once is a bigger structural
 change than a daily incremental pass should make unreviewed. Worth a
 dedicated season-rollover pass if this keeps growing.
+
+**Superseded later the same day**: this exact backlog (plus the rest of
+the 81-candidate season_conflict list accumulated up to this point) was
+the trigger for the "season_conflict is now auto-resolved-when-clean"
+behavior change documented further up this file — see that section for
+what actually happened to these teams (72 added as real new products, 6
+false positives caught by photo, 2 left ambiguous) and the new standing
+workflow going forward. The "left skipped" framing in the paragraph above
+no longer describes current behavior.
 
 **DAZN Canada** (Awin-approved per project notes, never checked before)
 — confirmed it's purely a streaming subscription service with no
