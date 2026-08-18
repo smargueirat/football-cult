@@ -3027,6 +3027,9 @@ const productsData = [
     colorHex: "#F5F5F5",
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
+    // Edición especial "mujer" (KD3997) -- confirmado en adidas.com/futbolemotion/
+    // footballkitarchive, no es un corte unisex.
+    ageGroup: "women",
     offers: [
       { store: "AdidasES", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44851257929&a=3013769&m=77008", title: "Camiseta primera equipación Alemania 2007", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F94ae188e712c487f9e28e47fcc83803b_9366%2FCamiseta_primera_equipacion_Alemania_2007_Blanco_KD3997_21_model.jpg&feedId=92152&k=aec26403e0101c4141b17bacbe40903baa048a31" },
       { store: "AdidasPT", price: 110.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44851261238&a=3013769&m=77026", title: "Camisola Principal 2007 da Alemanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F94ae188e712c487f9e28e47fcc83803b_9366%2FCamisola_Principal_2007_da_Alemanha_Branco_KD3997_21_model.jpg&feedId=92150&k=91a8f0efb2b1393d919fb9e6089fdbed3783638a" },
