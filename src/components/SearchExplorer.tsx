@@ -2,13 +2,10 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
-  AgeGroup,
-  Brand,
   Product,
   SEASONS,
   SIZES,
   TeamKey,
-  TypeKey,
   availableSizes,
   bestOfferForCountry,
   brandNames,
@@ -25,6 +22,13 @@ import {
   teamPopularity,
   typeNames,
 } from "@/data/products";
+import {
+  AGE_GROUP_FILTERS,
+  BRAND_FILTERS,
+  QUICK_PICK_TEAMS,
+  TYPE_FILTERS,
+} from "@/lib/search/filterOptions";
+import ScrollArrowRow from "./ScrollArrowRow";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import {
   CATALOG_PAGE_SIZE,
@@ -32,8 +36,7 @@ import {
   PRICE_RANGE_MIN,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
-import { COLOR_ORDER, COLOR_SWATCH, ColorKey, classifyColor } from "@/lib/colorClassify";
-import { Translations } from "@/lib/i18n/translations";
+import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH, productColorKey } from "@/lib/colorClassify";
 import PriceRangeSlider from "./PriceRangeSlider";
 import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard3D";
@@ -41,57 +44,7 @@ import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
 
-const TYPE_FILTERS: TypeKey[] = ["home", "away", "third", "goalkeeper", "training", "prematch", "retro"];
-const AGE_GROUP_FILTERS: AgeGroup[] = ["men", "women", "kids"];
-
-// Marcas más relevantes del catálogo: un atajo curado, no el listado
-// completo de valores de Brand (varios tienen apenas 1-2 productos y solo
-// generarían ruido, mismo criterio que Quick Picks).
-const BRAND_FILTERS: Brand[] = [
-  "adidas",
-  "nike",
-  "puma",
-  "kappa",
-  "hummel",
-  "umbro",
-  "newbalance",
-  "macron",
-].filter((key) => products.some((p) => p.brand === key)) as Brand[];
-
-// Selecciones/clubes más buscados: son un atajo, no un listado completo
-// (para eso ya está el buscador de texto), así que se mantiene corta a
-// propósito en vez de mostrar los ~90 equipos del catálogo.
-const QUICK_PICK_TEAMS: TeamKey[] = [
-  "argentina",
-  "brasil",
-  "espana",
-  "francia",
-  "realmadrid",
-  "barcelona",
-  "manutd",
-  "liverpool",
-  "psg",
-  "bayern",
-  "boca",
-  "riverplate",
-].filter((key) => products.some((p) => p.teamKey === key)) as TeamKey[];
-
 const SCROLL_KEY = "football-cult-catalog-scroll";
-
-const COLOR_LABEL_KEY: Record<ColorKey, keyof Translations["search"]> = {
-  black: "colorBlack",
-  white: "colorWhite",
-  gray: "colorGray",
-  red: "colorRed",
-  orange: "colorOrange",
-  yellow: "colorYellow",
-  green: "colorGreen",
-  teal: "colorTeal",
-  blue: "colorBlue",
-  navy: "colorNavy",
-  purple: "colorPurple",
-  pink: "colorPink",
-};
 
 // Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
 // (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para
@@ -246,7 +199,7 @@ export default function SearchExplorer() {
       const matchesSize =
         sizeFilter.length === 0 || availableSizes(p).some((s) => sizeFilter.includes(s));
       const matchesColor =
-        colorFilter.length === 0 || colorFilter.includes(classifyColor(p.colorHex));
+        colorFilter.length === 0 || colorFilter.includes(productColorKey(p));
       const matchesShipping = shipsToCountry(p, countryCode);
       const matchesPriceRange = (() => {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
@@ -589,7 +542,7 @@ export default function SearchExplorer() {
             <div className="flex flex-col gap-5 overflow-y-auto px-5 py-5">
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.quickSelectLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   {QUICK_PICK_TEAMS.map((key) => {
                     const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
                     return (
@@ -608,12 +561,12 @@ export default function SearchExplorer() {
                       </Chip>
                     );
                   })}
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.nav.categories}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={categoryFilter.length === 0}
                     onClick={() => setCategoryFilter([])}
@@ -638,12 +591,12 @@ export default function SearchExplorer() {
                   >
                     {t.search.categoryClubs}
                   </Chip>
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.typeLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={typeFilter.length === 0}
                     onClick={() => setTypeFilter([])}
@@ -661,12 +614,12 @@ export default function SearchExplorer() {
                       {typeNames[key][locale]}
                     </Chip>
                   ))}
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.brandLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={brandFilter.length === 0}
                     onClick={() => setBrandFilter([])}
@@ -684,7 +637,7 @@ export default function SearchExplorer() {
                       {brandNames[key]}
                     </Chip>
                   ))}
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
@@ -700,7 +653,7 @@ export default function SearchExplorer() {
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.sizeLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={sizeFilter.length === 0}
                     onClick={() => setSizeFilter([])}
@@ -718,12 +671,12 @@ export default function SearchExplorer() {
                       {size}
                     </Chip>
                   ))}
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.colorLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={colorFilter.length === 0}
                     onClick={() => setColorFilter([])}
@@ -745,12 +698,12 @@ export default function SearchExplorer() {
                       {t.search[COLOR_LABEL_KEY[key]]}
                     </Chip>
                   ))}
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.seasonLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={seasonFilter.length === 0}
                     onClick={() => setSeasonFilter([])}
@@ -768,12 +721,12 @@ export default function SearchExplorer() {
                       {season}
                     </Chip>
                   ))}
-                </div>
+                </ScrollArrowRow>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.ageGroupLabel}:</span>
-                <div className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
                   <Chip
                     active={ageGroupFilter.length === 0}
                     onClick={() => setAgeGroupFilter([])}
@@ -795,7 +748,7 @@ export default function SearchExplorer() {
                           : t.search.ageGroupKids}
                     </Chip>
                   ))}
-                </div>
+                </ScrollArrowRow>
               </div>
             </div>
 

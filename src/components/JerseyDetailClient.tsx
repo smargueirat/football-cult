@@ -69,7 +69,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
   const [selectedSize, setSelectedSize] = useState<Size | null>(null);
   const [shareCopied, setShareCopied] = useState(false);
   const [reportOpen, setReportOpen] = useState(false);
-  const comparing = isComparing(product.id);
   const favorite = isFavorite(product.id);
 
   const team = teamNames[product.teamKey][locale];
@@ -313,26 +312,6 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             </div>
             <div className="flex shrink-0 gap-2">
               <button
-                onClick={() => toggleCompare(product.id)}
-                disabled={!comparing && maxReached}
-                title={!comparing && maxReached ? t.compare.maxReached : undefined}
-                className={`flex items-center gap-1.5 rounded-full border px-3 py-2 text-xs font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                  comparing
-                    ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-                    : "border-[#C9A24B]/30 bg-white/60 text-[#3a3a36] hover:border-[#1B3B2B]/40"
-                }`}
-              >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-                  />
-                </svg>
-                {t.compare.add}
-              </button>
-              <button
                 onClick={handleShare}
                 className="flex items-center gap-1.5 rounded-full border border-[#C9A24B]/30 bg-white/60 px-3 py-2 text-xs font-medium text-[#3a3a36] transition-colors hover:border-[#1B3B2B]/40"
               >
@@ -530,6 +509,30 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                 {formatOfferMoney(displayTotal, offer.currency)}
                               </p>
                             </div>
+                            <button
+                              onClick={() => toggleCompare(product.id, offer.store)}
+                              disabled={!isComparing(product.id, offer.store) && maxReached}
+                              title={
+                                !isComparing(product.id, offer.store) && maxReached
+                                  ? t.compare.maxReached
+                                  : t.compare.add
+                              }
+                              aria-label={t.compare.add}
+                              className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                                isComparing(product.id, offer.store)
+                                  ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                                  : "border-[#C9A24B]/30 bg-white/60 text-[#3a3a36] hover:border-[#1B3B2B]/40"
+                              }`}
+                            >
+                              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                                />
+                              </svg>
+                            </button>
                             <a
                               href={offer.url}
                               target="_blank"

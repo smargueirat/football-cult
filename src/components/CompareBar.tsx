@@ -13,9 +13,11 @@ export default function CompareBar() {
 
   if (compareList.length === 0) return null;
 
-  const products = compareList
-    .map((id) => findProduct(id))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  const entries = compareList
+    .map((entry) => ({ entry, product: findProduct(entry.productId) }))
+    .filter((e): e is { entry: typeof e.entry; product: NonNullable<typeof e.product> } =>
+      Boolean(e.product)
+    );
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 flex justify-center px-4 pb-4">
@@ -24,18 +26,21 @@ export default function CompareBar() {
           {t.compare.barTitle}
         </span>
         <div className="flex flex-1 items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          {products.map((product) => {
+          {entries.map(({ entry, product }) => {
             const displayName =
               displayTitleForCountry(product, countryCode, locale) ??
               `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
             return (
             <span
-              key={product.id}
+              key={`${entry.productId}-${entry.store}`}
               className="flex shrink-0 items-center gap-1.5 rounded-full border border-[#C9A24B]/30 bg-white/70 px-3 py-1.5 text-xs text-[#3a3a36]"
             >
-              <span className="max-w-[14rem] truncate">{displayName}</span>
+              <span className="flex max-w-[14rem] flex-col leading-tight">
+                <span className="truncate">{displayName}</span>
+                <span className="text-[10px] text-[#9a9a94]">{entry.store}</span>
+              </span>
               <button
-                onClick={() => toggleCompare(product.id)}
+                onClick={() => toggleCompare(entry.productId, entry.store)}
                 aria-label={t.compare.remove}
                 className="text-[#675c44] hover:text-[#1a1a1a]"
               >

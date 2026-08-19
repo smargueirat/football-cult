@@ -16,7 +16,6 @@ import {
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
-import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
 import JerseyIcon from "./JerseyIcon";
@@ -32,9 +31,7 @@ const MAX_TILT_DEG = 9;
 export default function ProductCard3D({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
-  const { isComparing, toggleCompare, maxReached } = useCompare();
   const { countryCode } = useCountry();
-  const comparing = isComparing(product.id);
   const favorite = isFavorite(product.id);
   const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode);
   const storeCount = product.offers.filter(
@@ -226,31 +223,6 @@ export default function ProductCard3D({ product }: { product: Product }) {
         ) : (
           <p className="text-[10px] text-[#675c44] sm:text-xs">{t.countryPanel.notAvailable}</p>
         )}
-
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleCompare(product.id);
-          }}
-          disabled={!comparing && maxReached}
-          title={!comparing && maxReached ? t.compare.maxReached : undefined}
-          className={`mt-1 flex w-fit items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all duration-150 active:scale-95 disabled:cursor-not-allowed disabled:opacity-40 sm:mt-1.5 ${
-            comparing
-              ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-              : "border-[#C9A24B]/30 text-[#675c44] hover:border-[#1B3B2B]/40 hover:bg-[#1B3B2B]/5"
-          }`}
-        >
-          <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-            />
-          </svg>
-          {t.compare.add}
-        </button>
       </div>
     </Link>
   );

@@ -5,10 +5,31 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 const STORAGE_KEY = "football-cult-compare";
 const MAX_COMPARE = 3;
 
+// Cada entrada es la oferta de UN vendedor puntual de UNA camiseta puntual
+// (no "la camiseta en general") -- así se puede comparar entre distintos
+// proveedores de la misma camiseta, no solo entre camisetas distintas.
+export interface CompareEntry {
+  productId: string;
+  store: string;
+}
+
+function sameEntry(a: CompareEntry, b: CompareEntry) {
+  return a.productId === b.productId && a.store === b.store;
+}
+
+function isCompareEntry(v: unknown): v is CompareEntry {
+  return (
+    !!v &&
+    typeof v === "object" &&
+    typeof (v as CompareEntry).productId === "string" &&
+    typeof (v as CompareEntry).store === "string"
+  );
+}
+
 interface CompareValue {
-  compareList: string[];
-  toggleCompare: (id: string) => void;
-  isComparing: (id: string) => boolean;
+  compareList: CompareEntry[];
+  toggleCompare: (productId: string, store: string) => void;
+  isComparing: (productId: string, store: string) => boolean;
   clearCompare: () => void;
   maxReached: boolean;
 }
@@ -16,35 +37,41 @@ interface CompareValue {
 const CompareContext = createContext<CompareValue | undefined>(undefined);
 
 export function CompareProvider({ children }: { children: ReactNode }) {
-  const [compareList, setCompareList] = useState<string[]>([]);
+  const [compareList, setCompareList] = useState<CompareEntry[]>([]);
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (!stored) return;
     try {
       const parsed = JSON.parse(stored);
-      if (Array.isArray(parsed)) setCompareList(parsed);
+      // Formato viejo: array de ids de producto (string[]). Se descarta en
+      // vez de migrarse -- no hay forma de saber qué vendedor quería decir
+      // el usuario, y es una lista chica que se rearma fácil.
+      if (Array.isArray(parsed) && parsed.every(isCompareEntry)) {
+        setCompareList(parsed);
+      }
     } catch {
       // ignore malformed storage
     }
   }, []);
 
-  function persist(next: string[]) {
+  function persist(next: CompareEntry[]) {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
     setCompareList(next);
   }
 
-  function toggleCompare(id: string) {
-    if (compareList.includes(id)) {
-      persist(compareList.filter((c) => c !== id));
+  function toggleCompare(productId: string, store: string) {
+    const entry: CompareEntry = { productId, store };
+    if (compareList.some((c) => sameEntry(c, entry))) {
+      persist(compareList.filter((c) => !sameEntry(c, entry)));
       return;
     }
     if (compareList.length >= MAX_COMPARE) return;
-    persist([...compareList, id]);
+    persist([...compareList, entry]);
   }
 
-  function isComparing(id: string) {
-    return compareList.includes(id);
+  function isComparing(productId: string, store: string) {
+    return compareList.some((c) => c.productId === productId && c.store === store);
   }
 
   function clearCompare() {

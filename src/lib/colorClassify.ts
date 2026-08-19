@@ -1,3 +1,6 @@
+import type { Translations } from "@/lib/i18n/translations";
+import dominantColors from "@/data/productDominantColors.json";
+
 // Bucketea el colorHex (RGB libre, ~5400 valores distintos en el catálogo)
 // en un puñado de colores con nombre para poder filtrar por color. No usa
 // colorHexSecondary -- el pedido fue por el color PRINCIPAL de la camiseta.
@@ -47,6 +50,23 @@ export const COLOR_SWATCH: Record<ColorKey, string> = {
   pink: "#D66BA0",
 };
 
+// Mapea cada bucket a su clave de traducción en t.search -- compartido
+// entre SearchExplorer y FloatingFilterButton para no duplicarlo.
+export const COLOR_LABEL_KEY: Record<ColorKey, keyof Translations["search"]> = {
+  black: "colorBlack",
+  white: "colorWhite",
+  gray: "colorGray",
+  red: "colorRed",
+  orange: "colorOrange",
+  yellow: "colorYellow",
+  green: "colorGreen",
+  teal: "colorTeal",
+  blue: "colorBlue",
+  navy: "colorNavy",
+  purple: "colorPurple",
+  pink: "colorPink",
+};
+
 function hexToHsl(hex: string): { h: number; s: number; l: number } {
   const clean = hex.replace("#", "");
   const r = parseInt(clean.substring(0, 2), 16) / 255;
@@ -93,4 +113,19 @@ export function classifyColor(hex: string): ColorKey {
   if (h < 185) return "teal";
   if (h < 290) return "purple";
   return "pink";
+}
+
+const DOMINANT_COLORS = dominantColors as Record<string, ColorKey>;
+
+// colorHex es un color "de marca" por EQUIPO (compartido por todas sus
+// camisetas -- home, away, entrenamiento, arquero -- sea cual sea el
+// diseño real de cada una), así que filtrar por él da resultados poco
+// finos: filtrar "rojo" también traía la camiseta gris de entrenamiento
+// de un equipo cuyo color de marca es rojo. scripts/catalog-mining/
+// extract_dominant_colors.mjs mira la FOTO real de cada producto y
+// bucketea el color dominante de la prenda -- eso es lo que hay que usar
+// para el filtro. Solo cae a classifyColor(colorHex) para productos
+// nuevos que todavía no pasaron por esa extracción.
+export function productColorKey(product: { id: string; colorHex: string }): ColorKey {
+  return DOMINANT_COLORS[product.id] ?? classifyColor(product.colorHex);
 }
