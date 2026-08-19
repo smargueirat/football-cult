@@ -2741,7 +2741,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 56.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F40009329-maillot-domicile-blackburn-rovers-fc-2025-26-bleu-blanc", title: "Maillot Domicile Blackburn Rovers FC 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-40009329-bleu-blanc-1.webp" },
       { store: "SportIsGoodFR", price: 57.97, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F40009329-maillot-domicile-blackburn-rovers-fc-2025-26-bleu-blanc", title: "Maillot Domicile Blackburn Rovers FC 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-40009329-bleu-blanc-1.webp" },
-      { store: "eBay", price: 99.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376794952339?_skw=Blackburn+Rovers+home+soccer+jersey&hash=item57babab293%3Ag%3AATgAAeSwRHFpSKbp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZfW6MVwKKBH236iIpPBqxTlx8ID%2F2DXXB4p24GCQ%2F8cKA%2FZ3T03MoMCPaX8urTAxSbyDjscg9xCxyxzY0P%2BZJa72aq9Yz9lwV%2BpmwaABW5dJF%2BpvnsykCUAF9awWHpV1Y%2FDcuUax3tDmkP96IWFXtdx34bruQbxjWtPbgXmatw9wieEg%2BbWw8Zv2phdR3spwyOC2yY%2BWyv4EBVhS30RAXZtByndGRP01pVKG4g4zs0JP4ec58sfwQ%2FfT2IWsN2pJf%2FlIjFYGIDvmCquw8z1gtPUs3ionATUOqILc8OU8N7fn%2FRE85Np8CFR6Ao2J2jtY4%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Blackburn Rovers Home Shirt 2025/26 Macron Licensed Soccer Jersey Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ATgAAeSwRHFpSKbp/s-l225.jpg" },
+      { store: "eBay", price: 99.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376794952339?_skw=Blackburn+Rovers+home+soccer+jersey&hash=item57babab293%3Ag%3AATgAAeSwRHFpSKbp&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZfW6MVwKKBH236iIpPBqxTlx8ID%2F2DXXB4p24GCQ%2F8cKA%2FZ3T03MoMCPaX8urTAxSbyDjscg9xCxyxzY0P%2BZJa72aq9Yz9lwV%2BpmwaABW5dJF%2BpvnsykCUAF9awWHpV1YXZ3JW00puUy2WlDufAU7A20T8bXbzMQcuA4%2BIS3DQnuRJFCeSHSJTrPuDOMiPod7wYxiD%2F3u%2F1FU4uw5%2BsEUOXelRqQuv7LYNHekXI11HSUIdC2jCAeRkK8xq0RpJ74oLzmDJGPR%2BVCciSA10QEvKzqnXwfludeQGbBNm1EvhZeK12qHVDvzxeniUlL7nHYU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Blackburn Rovers Home Shirt 2025/26 Macron Licensed Soccer Jersey Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ATgAAeSwRHFpSKbp/s-l225.jpg" },
     ],
   },
 {
@@ -3389,7 +3389,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fleicester-city-home-soccer-jersey-2025-26%3Fvariant%3D42833495261289", title: "Leicester City Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/LeicesterCityJersey2025_26HomeFootballKit_2.webp?v=1768998341" },
-      { store: "eBay", price: 48.44, shipping: 27.06, currency: "USD", url: "https://www.ebay.com/itm/178100540754?_skw=Leicester+City+home+soccer+jersey&hash=item29779e9552%3Ag%3Au5cAAeSwh5VqB6V8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leicester City football Shirt size XXL 2025-26 Home Soccer Jersey Official BNWT", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/u5cAAeSwh5VqB6V8/s-l225.jpg" },
+      { store: "eBay", price: 43.71, shipping: 27.05, currency: "USD", url: "https://www.ebay.com/itm/188343205694?_skw=Leicester+City+home+soccer+jersey&hash=item2bda213f3e%3Ag%3A1DsAAeSw3w1qB6PM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leicester City football Shirt size 3XL 2025-26 Home Soccer Jersey Official BNWT", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/1DsAAeSw3w1qB6PM/s-l225.jpg" },
     ],
   },
 {
@@ -3415,7 +3415,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpalermo-home-soccer-jersey-2025-26%3Fvariant%3D42712263884905", title: "Palermo Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Palermo_Home_Jersey_202526_2.webp?v=1764224488" },
-      { store: "eBay", price: 48.3, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168561078695?_skw=Palermo+home+soccer+jersey&hash=item273f05f1a7%3Ag%3AcfsAAeSwVDJqY-Q0&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb5atfwgRGqHN3eHymAgXyrV%2BxHe6sZe85ALcq0KTmKEMddFMg2ec5KkjkeyB2lSrRH98JKH2myiLeLf137CgaL0sdWWmpPvFzUOBosrHcYtoO8tDaePm5QnwwoGXcGoa1fsumM3XS2l0RIO3H5J5MKrvYx5%2BQMPDAupnC7ZgsGZYuyjG%2FXdLjHZqrXj77PPGcYwYQMEPo9UXEx%2FRI2epf99YZx8VfGm6gX5ejGFgua%2FuGmWNra%2FVew8IggQeUDOl8Exn4uB7SGBMLGqCNyWUDCeaaf8slQmyEMJwaResPtTw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Palermo FC 25/26 Puma DryCell Home Soccer Jersey Shirt Kit Sicily Italy 2XL XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cfsAAeSwVDJqY-Q0/s-l225.jpg" },
+      { store: "eBay", price: 48.3, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168561078695?_skw=Palermo+home+soccer+jersey&hash=item273f05f1a7%3Ag%3AcfsAAeSwVDJqY-Q0&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb5atfwgRGqHN3eHymAgXyrV%2BxHe6sZe85ALcq0KTmKEMddFMg2ec5KkjkeyB2lSrRH98JKH2myiLeLf137CgaL0sdWWmpPvFzUOBosrHcYtoO8tDaePm5QnwwoGXcGoa238d2c3DWgGYa4CHgiy0D2eVD2y%2FoEYWHWcYZjGNCEQlCuwGma8SCImjnZR2HbkzM37RAVWAqg8PeJmHrYg2NkDt0yvFM%2BkW5XEJhs5iBGsqVU75y76FcmMk0tmXeyie2oNTfMZYyXkVTG6%2B1tVnLxoP9aihBxxfZi5FqopQcqdQ%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Palermo FC 25/26 Puma DryCell Home Soccer Jersey Shirt Kit Sicily Italy 2XL XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cfsAAeSwVDJqY-Q0/s-l225.jpg" },
     ],
   },
 {
@@ -41009,7 +41009,7 @@ const productsData = [
     colorHexSecondary: "#E0201B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 89.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/277854682852?_skw=San+Lorenzo+training+soccer+jersey&hash=item40b16dfee4%3Ag%3AtBAAAeSwKa5pHfiB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO DE ALMAGRO OFFICIAL Training Jersey  2025/26 Ask for Available Sizes", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/tBAAAeSwKa5pHfiB/s-l225.jpg" },
+      { store: "eBay", price: 85.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/237014541951?_skw=Almagro+training+soccer+jersey&hash=item372f2ae67f%3Ag%3A3bcAAeSweAVqhI%7EO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYCfdy1upr2PzUD3y%2FEGrm5K1975BOH1YIPiEi06FJUL4jlTyhPWkUxi9hHlofPB4xjgeTUnD4eVZXm9EwPpWdlMArGJcv4e%2BjWkrcvx6J84fN4PssbkYNCi3%2F4HzPE9Qto28X5xeEmuT7URqsTonF21NysUo%2BFsREvCGL7xPCR0FYhgLFMyc%2BfstweFehk47zIojLIeUZPJGsfVflW1E64wGW%2FhpkNYOBKGulpuZHSNrqOPzPMV5X2yox4oF6YjzjFI1a%2BoH9Yw%2BrXruY5bbB8nCO9IXheX8eR6mbN8cO91n%2FrThG%2BCHelLBIouNg8oUo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SAN LORENZO DE ALMAGRO OFFICIAL Training Jersey 2026 Blue & Red - Ask for Sizes", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/3bcAAeSweAVqhI~O/s-l225.jpg" },
     ],
   },
 {
@@ -51185,7 +51185,7 @@ const productsData = [
     colorHexSecondary: "#00A650",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 115.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/396970304735?_skw=Norwich+City+home+soccer+jersey&hash=item5c6d4624df%3Ag%3AlFIAAeSw3VNool8P&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaK%2F9xliaj7p%2BAK133S2IrdbQQyvxxVIjkQPDD4vpJSlC5KlAQfxJyyaXUHAbLgm%2FX06h1kE7m7lOUZ9mbdgN87ckyFzEFjfmgMAOoP56qgksdVLEUbwbyEAZSURPo6gezhSqklhm7Lw%2Fvpn8YDc8%2FpblV3J2buZiV9ueg4MkZqG9ff%2FQjGMgEoodkhHt8iOPQCduXQJznjQFJsHdcZ08eFt6KN8Gkek%2BxoAaoAaI6iEyM2DywFIwdunH9Faf56U0n6kEVtAhYXGhrkyEfRLDF69r3tC7mv8n2qxBGLEYkP5fNtAyhsSSDp9a6ksvQMLGw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norwich City 2025-26 Home Jersey #9 Sargent: Size Medium *NWT*", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lFIAAeSw3VNool8P/s-l225.jpg" },
+      { store: "eBay", price: 115.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/396970304735?_skw=Norwich+City+home+soccer+jersey&hash=item5c6d4624df%3Ag%3AlFIAAeSw3VNool8P&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaK%2F9xliaj7p%2BAK133S2IrdbQQyvxxVIjkQPDD4vpJSlC5KlAQfxJyyaXUHAbLgm%2FX06h1kE7m7lOUZ9mbdgN87ckyFzEFjfmgMAOoP56qgksdVLEUbwbyEAZSURPo6gexL7Lhto3V3TRAUUUJsIZfMWdHINYJmJTmK6mdV6qAiq%2F2QHYcaDEE3exFLmhRqUJDC6Kpz76CK%2By%2BHizl9no4bdQogCmZ06Lu7km0BOUnCi4bGqah2EOacSJYmsktQzUHAOxMnWnwZGglSRfMkEqHhtlNpI7GYzhHDtSuGgAZ6Jo--NJFfEItR%2FDZOHAuWjPY%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Norwich City 2025-26 Home Jersey #9 Sargent: Size Medium *NWT*", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/lFIAAeSw3VNool8P/s-l225.jpg" },
     ],
   },
 {
@@ -51209,7 +51209,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 57.52, shipping: 27.06, currency: "USD", url: "https://www.ebay.com/itm/227222060085?_skw=Shakhtar+Donetsk+away+soccer+jersey&hash=item34e77d7c35%3Ag%3AItEAAeSwjB5oxsTh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Shakhtar Donetsk Away Shirt 2025/26 Soccer Jersey BNWT Men's XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ItEAAeSwjB5oxsTh/s-l225.jpg" },
+      { store: "eBay", price: 57.5, shipping: 27.05, currency: "USD", url: "https://www.ebay.com/itm/227222060085?_skw=Shakhtar+Donetsk+away+soccer+jersey&hash=item34e77d7c35%3Ag%3AItEAAeSwjB5oxsTh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Shakhtar Donetsk Away Shirt 2025/26 Soccer Jersey BNWT Men's XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/ItEAAeSwjB5oxsTh/s-l225.jpg" },
     ],
   },
 {
@@ -51257,7 +51257,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 255.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317859208291?_skw=Yokohama+F.+Marinos+home+soccer+jersey&hash=item4a01e29c63%3Ag%3Ao1IAAeSwm7Zpichw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb9zU%2BK6nEb%2FPZhvibMwRBtzNjZDk%2B91vqmXRkQrQceWpXMl8ACIVyNZn8U6iVb1b7Lb%2F3IsT2v2MhKIPkmF9cVGGMRk3T6A6J5Ltk6QBsTD5nxN1oeJNFLspOzC0d3AidEBTboJc3paXhxo7UIKY1NclMODk2QmRNT8QGwybpYMahrPJJvXnGWpRwm15jlbzJu2e4elVS8L5h1CLT3lz7zrr9Ao6AuCHHfck8gCX7dy6LT7b750K8nMFXSwHWFGq1P2ioxlhLsG2YIrTFwsVeXc40YW1Ag2HlpSqAYNF9cFUt7GSyUYR3TwHMbxQDsCcg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Yokohama F. Marinos 2026 Home Authentic Jersey KL1717 Japan size", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/o1IAAeSwm7Zpichw/s-l225.jpg" },
+      { store: "eBay", price: 255.47, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317859208291?_skw=Yokohama+F.+Marinos+home+soccer+jersey&hash=item4a01e29c63%3Ag%3Ao1IAAeSwm7Zpichw&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb9zU%2BK6nEb%2FPZhvibMwRBtzNjZDk%2B91vqmXRkQrQceWpXMl8ACIVyNZn8U6iVb1b7Lb%2F3IsT2v2MhKIPkmF9cVGGMRk3T6A6J5Ltk6QBsTD5nxN1oeJNFLspOzC0d3Aic%2B2QjfEa6mpXp1L5HdfYJ1h8P8Hl5UzzvXRqF6DZlLBPy7Q1p8tGUBIUbG5TnsQwTrhTJONK6vbNKiU%2BphU2QoEkfzzMNsKGMU%2FTzmdVqIChAswravwMkwgn6iFSBw9LPexmGMeWrYJ9iQSIWE2E65t4SrL6166NBvCzPyfaPrEBpBjfPjsL9dztwSRU9f0Kw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Yokohama F. Marinos 2026 Home Authentic Jersey KL1717 Japan size", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/o1IAAeSwm7Zpichw/s-l225.jpg" },
     ],
   },
 {
@@ -51398,7 +51398,7 @@ const productsData = [
     colorHexSecondary: "#D4AF37",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236770316212?_skw=Almirante+Brown+away+soccer+jersey&hash=item37209c4fb4%3Ag%3AdoAAAeSwgAxp56iJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaJgimQqYzFirXjbfeZ0dKvghqnW4IDUhoabhLN%2BHuivk6VpsQ1M3XHjwb41tZtPVckO%2BnSNWqSqcKLaan%2BDVULS8zYoB9HWcWNBlKrrUd2CcHRTFh05zn4lKcU4FQ4V3VDaJZ3dvNQvku4yupjh3shr3KT2roOStBZ1fPKol%2BUtvj6BFs1nf9Kp6HtSfyaIbaJLj2kjWiNQNPiYJa3eHJd0F5zQGMR%2B5UuMvQaF82Ne59Vh%2BzAoULf9uPC0EwSEvLeWAFxcp333HugzC2KyzAGnUEirVIm28RI%2BsYVz%2B%2F3NHKcqXCgODsqjOqszJm%2Bek8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ALMIRANTE BROWN - ORIGINAL AWAY Jersey 2026 - RETIEL - Ask for Size - Argentina", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/doAAAeSwgAxp56iJ/s-l225.jpg" },
+      { store: "eBay", price: 159.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236770316212?_skw=Almirante+Brown+away+soccer+jersey&hash=item37209c4fb4%3Ag%3AdoAAAeSwgAxp56iJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaJgimQqYzFirXjbfeZ0dKvghqnW4IDUhoabhLN%2BHuivk6VpsQ1M3XHjwb41tZtPVckO%2BnSNWqSqcKLaan%2BDVULS8zYoB9HWcWNBlKrrUd2CcHRTFh05zn4lKcU4FQ4V3Vjw%2By13ml2F8MB6immFQ3nkKJoUWz8pL%2BDlRFaIg1SUpp37Z%2BHSsurkk6NHe0QndJR6LArcJ8MlNti%2FMxoX1PGlqupgGjUq4atSql5dwB64W1z%2FalTnjc3fFJEr8t3YthJiA%2B3%2FrgVlafo0v8bLnW0BYU6zVBq2sygSIHeTkJXT94C%2BQlhPAKrjFu5S2cSnH8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ALMIRANTE BROWN - ORIGINAL AWAY Jersey 2026 - RETIEL - Ask for Size - Argentina", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/doAAAeSwgAxp56iJ/s-l225.jpg" },
     ],
   },
 {
@@ -51434,7 +51434,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 104.12, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/358821890794?_skw=Athletico+Paranaense+away+soccer+jersey&hash=item538b738aea%3Ag%3A198AAeSw4ABp73e5&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZD%2BqFI%2F58Lm2v01j5W8Yf0keIOLZWNHbChVVHlkDXCV6AQ94EiyglHMQ3FVaihWfHui6CnTlSqSrVg3oqq9z7pRaK2sE2VscfcZxMOoqMwoxK7qFAF5OwR872VfTwGXTwGC84uz9ZB03MvEhCFOY68o%2FacOlV%2B%2Fe%2B4X3cS4IXzbPpDU9p8cbV0RC%2FhhrnYW3KoEdGpM01uJ5rSst%2B99ApPi10hZQnxcQgDCfGHC4Itdhh0%2B1V3rTxVJdfThgFeHoMTMh%2B%2FupiWXx2xEXKIk5DxIizFzPCiN9BwIhBYpPz0pngL1Pauo5h6Q%2FuL11rIPok%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Athletico Paranaense Away Shirt 25/26 Atletico Away Shirt Jersey Size XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/198AAeSw4ABp73e5/s-l225.jpg" },
+      { store: "eBay", price: 104.17, shipping: 69.44, currency: "USD", url: "https://www.ebay.com/itm/358821890794?_skw=Athletico+Paranaense+away+soccer+jersey&hash=item538b738aea%3Ag%3A198AAeSw4ABp73e5&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZD%2BqFI%2F58Lm2v01j5W8Yf0ZQ4FN%2BeBId8IBatO8MPAbfp3%2FzW41uZBLC3Dpiihv7JP01f0tz9qDUKfxg3fqC4KOHUyLKQes6S8Xorf%2BSsRXViLXvVpTPoJQwobWWHXYzfJvmjcvNOksNvnNPly7sv%2FLS5%2BFn1E9ga%2BrQYTq%2Fth1sKa1PHdXNzsqU8%2BjLjCn1qDxu3tg2slXugEkDx5dyifWokCOgyvfd47RCP3BLHmq3f6wqZRWfRVgugYaB51ajDTZs9rbcZrNTb3NLSEX6yWkwuAAYUy57gr51FCbVh1AXM5tZVH1r8az2tjWbwb4LU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Athletico Paranaense Away Shirt 25/26 Atletico Away Shirt Jersey Size XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/198AAeSw4ABp73e5/s-l225.jpg" },
     ],
   },
 {
@@ -51542,7 +51542,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 88.5, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/298510492576?_skw=1.+FC+Magdeburg+away+soccer+jersey&hash=item45809ca3a0%3Ag%3Ay84AAeSw%7EoJqWUKP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "bumblebee 1st FC Magdeburg Away Shirt 26 27 Brown FCM Away Shirt Jersey M - 5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/y84AAeSw~oJqWUKP/s-l225.jpg" },
+      { store: "eBay", price: 84.12, shipping: 69.44, currency: "USD", url: "https://www.ebay.com/itm/298510492576?_skw=1.+FC+Magdeburg+away+soccer+jersey&hash=item45809ca3a0%3Ag%3Ay84AAeSw%7EoJqWUKP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "bumblebee 1st FC Magdeburg Away Shirt 26 27 Brown FCM Away Shirt Jersey M - 5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/y84AAeSw~oJqWUKP/s-l225.jpg" },
     ],
   },
 {
@@ -51554,7 +51554,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 88.5, shipping: 69.41, currency: "USD", url: "https://www.ebay.com/itm/298510494236?_skw=1.+FC+Magdeburg+home+soccer+jersey&hash=item45809caa1c%3Ag%3Ax0QAAeSwNRxqWUL6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZklZW%2FCwulZ6DuH9Ya2%2FV6CtZ8LgYGYV90ZozrzD9iuwICZjOmioLcNzYBQy7S4z%2FgT0I9WdO0PZ%2F709gatcMQ5mBqaQFCUASd2axd4%2BVp1TBwZRPW0DsS3ouCoqznFAH7mB0R%2BQRDvnKcxiIE8A5unXxK9jLULYDODy4Py1ImIQ5KHsit4FHR9a3eq7yOily3AbzUVqNR27U0%2BWc3eE6nhDdf7fZoHwDcz6gUhhcfzY360UpDw8Am9cIYKKVsEl3plEeAcA2Mf3ZNcnjuQ%2Fem7Yl13E5S68GWIkgGwSZQsg7br4B0wkPww9s6cZFa90c%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "bumblebee 1st FC Magdeburg Home Shirt 26/27 Blue White FCM Home Jersey Shirt M - 5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/x0QAAeSwNRxqWUL6/s-l225.jpg" },
+      { store: "eBay", price: 84.12, shipping: 69.44, currency: "USD", url: "https://www.ebay.com/itm/298510494236?_skw=1.+FC+Magdeburg+home+soccer+jersey&hash=item45809caa1c%3Ag%3Ax0QAAeSwNRxqWUL6&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZklZW%2FCwulZ6DuH9Ya2%2FV6CtZ8LgYGYV90ZozrzD9iuwICZjOmioLcNzYBQy7S4z%2FgT0I9WdO0PZ%2F709gatcMQ5mBqaQFCUASd2axd4%2BVp1TBwZRPW0DsS3ouCoqznFAH%2FBdZ70VWmzpOSlutVbc08MXXB%2BFRxt7PuEckhzIMLVOYSA%2BC%2FBsQN7VHtb3x6zHYQa7%2BrH2VlKu7UVAiCSlhCujaRG5b8qbW1OX57mQeqpvcPAihWtdW8fbDd2cIySnd2p%2Be3Q0QkBtJy7u1o1M6SRq0gVHhskmlQDTUVacjwHEhfYELLTZsTOAlCiprTOkI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "bumblebee 1st FC Magdeburg Home Shirt 26/27 Blue White FCM Home Jersey Shirt M - 5XL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/x0QAAeSwNRxqWUL6/s-l225.jpg" },
     ],
   },
 {
@@ -51578,7 +51578,7 @@ const productsData = [
     colorHexSecondary: "#FDBE11",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 55.9, shipping: 27.06, currency: "USD", url: "https://www.ebay.com/itm/178100549203?_skw=Leicester+City+away+soccer+jersey&hash=item29779eb653%3Ag%3AhQ0AAeSwpHBp9znh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leicester City football Shirt Large 2025-26 Away Soccer Jersey Official BNWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hQ0AAeSwpHBp9znh/s-l225.jpg" },
+      { store: "eBay", price: 55.87, shipping: 27.05, currency: "USD", url: "https://www.ebay.com/itm/178100549203?_skw=Leicester+City+away+soccer+jersey&hash=item29779eb653%3Ag%3AhQ0AAeSwpHBp9znh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leicester City football Shirt Large 2025-26 Away Soccer Jersey Official BNWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/hQ0AAeSwpHBp9znh/s-l225.jpg" },
     ],
   },
 {
@@ -51590,7 +51590,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 43.32, shipping: 16.23, currency: "USD", url: "https://www.ebay.com/itm/298568818190?_skw=Millwall+home+soccer+jersey&hash=item4584169e0e%3Ag%3AJz8AAeSwgvRqdtpm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Millwall Football Shirt 26/27 Home Soccer Jersey Men's Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Jz8AAeSwgvRqdtpm/s-l225.jpg" },
+      { store: "eBay", price: 43.3, shipping: 16.22, currency: "USD", url: "https://www.ebay.com/itm/298568818190?_skw=Millwall+home+soccer+jersey&hash=item4584169e0e%3Ag%3AJz8AAeSwgvRqdtpm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Millwall Football Shirt 26/27 Home Soccer Jersey Men's Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Jz8AAeSwgvRqdtpm/s-l225.jpg" },
     ],
   },
 {
@@ -51770,7 +51770,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 87.56, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/358822021328?_skw=Tenerife+home+soccer+jersey&hash=item538b7588d0%3Ag%3AH3IAAeSwLORpYsNz&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaLq7LnKLd6%2BG4zCmSsE5B5AIxt%2F87beOChzygD6eVNqvMwoOPMXYoSphwsfkMF9E0y3h9bLpkwhjN%2F1piv%2BfVFHt616H2L7sjuXi2pyBzcDuWDZKh0jF95n5%2Fqbslq4cakxuxvLtikIgevDWX9bLkIEI29Rn6uNUazCFDW5%2FMHgSHY3KUkhFhz3pWDZ2lh2cBromPyIDWdGcJr1eIICHgrHke%2BLWE5OwouYYxUrcmYbMWBBJdkMf33WUF6aqfD2NgP6%2B2d4KwRSF%2FFw1SHR%2B2VcQdD3F60rPd86h1lNm02Ug%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel CD Tenerife Home Jersey 25/26 M - 3XL", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/H3IAAeSwLORpYsNz/s-l225.jpg" },
+      { store: "eBay", price: 87.56, shipping: 69.23, currency: "USD", url: "https://www.ebay.com/itm/358822021328?_skw=Tenerife+home+soccer+jersey&hash=item538b7588d0%3Ag%3AH3IAAeSwLORpYsNz&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaLq7LnKLd6%2BG4zCmSsE5B5AIxt%2F87beOChzygD6eVNqvMwoOPMXYoSphwsfkMF9E0y3h9bLpkwhjN%2F1piv%2BfVFHt616H2L7sjuXi2pyBzcDuWDZKh0jF95n5%2Fqbslq4ca%2FWbPRGwWk259BQYrUUhAI4Sp0qRISNm4hyeL6XsBG1iSLSlaPfE8bJPZOW0xbs1g2bADkLboEwh9sJBPG5%2F4A9mCIX%2BxknVClLqcQTJEWRer6uWQLs5f3Ugk3TTZdJf7T9zPkaFJCZjThS%2FocPlYI1s7PtL1oDs7XOQbR6PK8TA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel CD Tenerife Home Jersey 25/26 M - 3XL", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/H3IAAeSwLORpYsNz/s-l225.jpg" },
     ],
   },
 {
@@ -71594,6 +71594,18 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45601856879&a=3013769&m=77008", title: "Camiseta tercera equipación Eintracht Frankfurt 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F35547cb538e24dec84dcb8b0722faf0d_9366%2FCamiseta_tercera_equipacion_Eintracht_Frankfurt_26-27_Gris_KB2000_21_model.jpg&feedId=92152&k=282afc61078af39ee3c3ecfaa7d86869845f05de" },
+    ],
+  },
+{
+    id: "hartlepool-home-202627",
+    teamKey: "hartlepool",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#1C398E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 86.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307076105271?_skw=Hartlepool+United+home+soccer+jersey&hash=item477f298437%3Ag%3AEOAAAeSwtD9qXsiu&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGawnHZ8INTFRmNCLSi1FlHLLEvEzvdFdej3LCpv2dX0nzZNexevSeVVmqk6M%2F1qPz7QYBCBn7fuzqGHtTDtAo75rtE7nH9UWnz2XIIqjVyeEGwKtDh9mEFSOJxgiqz05fnWg%2FsTq2d%2BzTCJBwLRB64vyCUsRHmOomvRMmGSn7sMJnoZCd4rfEMSPRt2%2B%2BDV4JRKt6fKvw7Oo3LcfeqN%2FUElMZTeSf662Z7JwVWJpUxDFAVCkCDWQWWpFcHRVHc2ZxmAEs9G0LLzvY7GrS5FVdtSo134iuEHIQa5Z1Zz0Do2uzD%2FDEjbpexL2RD2iqrkj68%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hartlepool United FC 2026/27 Home Jersey Meyba White/Blue BNWT Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/EOAAAeSwtD9qXsiu/s-l225.jpg" },
     ],
   },
 ];

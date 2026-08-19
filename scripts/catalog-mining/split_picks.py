@@ -56,6 +56,15 @@ def detect_season(title):
     from extract import TITLE_KIDS_AGE_SUFFIX_RE
     stripped = TITLE_KIDS_AGE_SUFFIX_RE.sub(r'\1', title)
 
+    # Real bug found 2026-08-19 (eBay full mine): a player squad number
+    # written "#27" was matching the bare-2-digit season fallback below
+    # (\b(2[4-7])\b) -- "27" in "#27" satisfies \b on both sides since "#"
+    # is a non-word char -- misreading a genuine 2008/09 retro Reading FC
+    # listing as "season 2027" and letting it slip past
+    # ebay_mine_full.py's is_current_season() current-only filter. Strip
+    # any "#<digits>" squad-number marker before season detection runs.
+    stripped = re.sub(r'#\d+', '', stripped)
+
     m = re.search(r'\b(202[4-9])[/-](20\d{2})\b', stripped)
     if m:
         return f"{m.group(1)}/{m.group(2)[-2:]}"

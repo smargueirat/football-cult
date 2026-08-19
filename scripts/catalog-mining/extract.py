@@ -5,7 +5,14 @@ from manual_exclusions import is_manually_excluded
 TEAM_PATTERNS = {
     "sportrecife": r"sport (club )?recife|\bsport recife\b",
     "almirantebrown": r"almirante brown",
-    "almagro": r"\balmagro\b",
+    # Real collision found 2026-08-19 (eBay full mine): "Club Almagro"'s
+    # bare-word pattern also matches "San Lorenzo de Almagro" (San Lorenzo's
+    # full formal name, itself already tracked separately as "sanlorenzo")
+    # -- confirmed by photo, a "JERSEY CLUB ATLÉTICO SAN LORENZO DE ALMAGRO
+    # Home 26" eBay listing showed San Lorenzo's real red/blue-stripe crest
+    # (CASLA), not Almagro's own light-blue/black kit. Same class as the
+    # Independiente homonym fix below -- excluded via negative lookahead.
+    "almagro": r"\balmagro\b(?!\s+de\b)(?<!san lorenzo de almagro)",
     # No hay una sola tienda de referencia (a diferencia de Independiente
     # Avellaneda/Santa Fe/Medellín) que aclare qué "Gimnasia" es en cada
     # publicación -- ambos patrones son especificos a lo único encontrado
