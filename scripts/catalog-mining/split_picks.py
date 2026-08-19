@@ -134,6 +134,6 @@ if __name__ == "__main__":
     # when-clean" for the full workflow -- this is NOT a green light to
     # skip verification, it's what removes the old "stop and ask a human"
     # step for the clean cases while still requiring a real check.
-    picks_raw = json.load(open(picks_path, encoding='utf-8'))
+    picks_raw = json.load(open(sys.argv[1], encoding='utf-8'))
     conflict_full = {k: picks_raw[k] for k in season_conflict}
     json.dump(conflict_full, open(sys.argv[1].replace('.json', '_CONFLICT.json'), 'w'), ensure_ascii=False, indent=1)
