@@ -71608,6 +71608,78 @@ const productsData = [
       { store: "eBay", price: 86.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307076105271?_skw=Hartlepool+United+home+soccer+jersey&hash=item477f298437%3Ag%3AEOAAAeSwtD9qXsiu&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGawnHZ8INTFRmNCLSi1FlHLLEvEzvdFdej3LCpv2dX0nzZNexevSeVVmqk6M%2F1qPz7QYBCBn7fuzqGHtTDtAo75rtE7nH9UWnz2XIIqjVyeEGwKtDh9mEFSOJxgiqz05fnWg%2FsTq2d%2BzTCJBwLRB64vyCUsRHmOomvRMmGSn7sMJnoZCd4rfEMSPRt2%2B%2BDV4JRKt6fKvw7Oo3LcfeqN%2FUElMZTeSf662Z7JwVWJpUxDFAVCkCDWQWWpFcHRVHc2ZxmAEs9G0LLzvY7GrS5FVdtSo134iuEHIQa5Z1Zz0Do2uzD%2FDEjbpexL2RD2iqrkj68%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hartlepool United FC 2026/27 Home Jersey Meyba White/Blue BNWT Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/EOAAAeSwtD9qXsiu/s-l225.jpg" },
     ],
   },
+{
+    id: "athleticoparanaense-retro-202021-home",
+    teamKey: "athleticoparanaense",
+    season: "2020/21",
+    typeKey: "retro",
+    colorHex: "#DA020E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/158201635578?_skw=Athletico+Paranaense+home+soccer+jersey&hash=item24d58d62fa%3Ag%3A47IAAeSwe-pqhDdL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Athletico Paranaense Home 2020/2021 Umbro Jersey Size Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/47IAAeSwe-pqhDdL/s-l225.jpg" },
+    ],
+  },
+{
+    id: "clubtijuana-retro-202223-away",
+    teamKey: "clubtijuana",
+    season: "2022/23",
+    typeKey: "retro",
+    colorHex: "#DA020E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 54.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/406426452088?_skw=Club+Tijuana+away+soccer+jersey&hash=item5ea0e78078%3Ag%3ACLwAAeSw%7EGdpJ-MO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Charly Men's Xolos Club Tijuana Liga MX Away Jersey 22/23(WHITE) Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/CLwAAeSw~GdpJ-MO/s-l225.jpg" },
+    ],
+  },
+{
+    id: "clubtijuana-retro-202425-home",
+    teamKey: "clubtijuana",
+    season: "2024/25",
+    typeKey: "retro",
+    colorHex: "#DA020E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 58.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/286992324711?_skw=Club+Tijuana+home+soccer+jersey&hash=item42d2135867%3Ag%3AfLEAAeSwSj9pM46p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Charly NWT Black/Red Club Tijuana 2024/25 Home Authentic Jersey Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/fLEAAeSwSj9pM46p/s-l225.jpg" },
+    ],
+  },
+{
+    id: "leicester-retro-201819-away",
+    teamKey: "leicester",
+    season: "2018/19",
+    typeKey: "retro",
+    colorHex: "#003090",
+    colorHexSecondary: "#FDBE11",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407152613343?_skw=Leicester+City+away+soccer+jersey&hash=item5ecc2fd7df%3Ag%3AyXAAAeSwkhFqg-ey&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ADIDAS CLASSIC GENUINE LEICESTER CITY 2018-2019 AWAY SHIRT JERSEY MENS MEDIUM", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/yXAAAeSwkhFqg-ey/s-l225.jpg" },
+    ],
+  },
+{
+    id: "mkdons-retro-201920-third",
+    teamKey: "mkdons",
+    season: "2019/20",
+    typeKey: "retro",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/304061862565?_skw=MK+Dons+third+soccer+jersey&hash=item46cb7fd2a5%3Ag%3Ar7oAAOSwl8VhZeWO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "MK Dons 19/20 Third Blank Jersey Errea Men's NWT Milton Keynes Dons Yellow", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/r7oAAOSwl8VhZeWO/s-l225.jpg" },
+    ],
+  },
+{
+    id: "rotherhamunited-retro-202021-home",
+    teamKey: "rotherhamunited",
+    season: "2020/21",
+    typeKey: "retro",
+    colorHex: "#DD0031",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/304101979457?_skw=Rotherham+United+home+soccer+jersey&hash=item46cde3f541%3Ag%3ATzEAAOSwRA9hWzzv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Rotherham United 20/21 Home Blank Jersey Men's Puma Red NWT sz XXL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/TzEAAOSwRA9hWzzv/s-l225.jpg" },
+    ],
+  },
 ];
 
 // El array de arriba (sin anotación de tipo explícita) evita TS2590
