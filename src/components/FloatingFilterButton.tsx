@@ -65,6 +65,17 @@ export default function FloatingFilterButton() {
     hoverCapableRef.current = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   }, []);
 
+  useEffect(() => {
+    if (!open) return;
+    function handleEscape(e: KeyboardEvent) {
+      if (e.key !== "Escape") return;
+      setPinnedOpen(false);
+      setHoverOpen(false);
+    }
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [open]);
+
   if (!visible) return null;
 
   return (

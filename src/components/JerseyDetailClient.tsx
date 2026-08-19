@@ -302,7 +302,11 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div className="min-w-0">
-              <h1 className="font-card-title text-xl leading-tight text-[#1a1a1a] sm:text-2xl lg:text-3xl">
+              {/* Los títulos reales de tienda pueden ser largos (marca +
+                  equipo + temporada + variante) -- un tamaño más contenido
+                  con buen interlineado evita que se vean gigantes/cortados
+                  en varias líneas, sin acortar ni inventar el texto real. */}
+              <h1 className="font-card-title text-lg leading-snug text-balance text-[#1a1a1a] sm:text-xl lg:text-2xl">
                 {displayName}
               </h1>
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
@@ -433,7 +437,33 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                               {offer.store.charAt(0)}
                             </span>
                             <div>
-                              <p className="font-card-title text-base tracking-wide text-[#1B3B2B]">{offer.store}</p>
+                              <div className="flex flex-wrap items-center gap-2">
+                                <p className="font-card-title text-base tracking-wide text-[#1B3B2B]">{offer.store}</p>
+                                <button
+                                  onClick={() => toggleCompare(product.id, offer.store)}
+                                  disabled={!isComparing(product.id, offer.store) && maxReached}
+                                  title={
+                                    !isComparing(product.id, offer.store) && maxReached
+                                      ? t.compare.maxReached
+                                      : undefined
+                                  }
+                                  className={`flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                                    isComparing(product.id, offer.store)
+                                      ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                                      : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40 hover:text-[#1a1a1a]"
+                                  }`}
+                                >
+                                  <svg className="h-3 w-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth={2}
+                                      d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                                    />
+                                  </svg>
+                                  {t.compare.add}
+                                </button>
+                              </div>
                               {/* Fila de badges con altura reservada fija -- así todas
                                   las ofertas guardan el mismo ritmo vertical, tengan o
                                   no badge, en vez de que el nombre de la tienda salte
@@ -509,39 +539,15 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                                 {formatOfferMoney(displayTotal, offer.currency)}
                               </p>
                             </div>
-                            <button
-                              onClick={() => toggleCompare(product.id, offer.store)}
-                              disabled={!isComparing(product.id, offer.store) && maxReached}
-                              title={
-                                !isComparing(product.id, offer.store) && maxReached
-                                  ? t.compare.maxReached
-                                  : t.compare.add
-                              }
-                              aria-label={t.compare.add}
-                              className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                                isComparing(product.id, offer.store)
-                                  ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-                                  : "border-[#C9A24B]/30 bg-white/60 text-[#3a3a36] hover:border-[#1B3B2B]/40"
-                              }`}
-                            >
-                              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-                                />
-                              </svg>
-                            </button>
                             <a
                               href={offer.url}
                               target="_blank"
                               rel="noopener noreferrer sponsored"
-                              className="group/btn flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
+                              className="group/btn flex items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#1B3B2B] px-3.5 py-2 text-sm font-medium leading-none text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                             >
                               {t.detail.viewInStore}
                               <svg
-                                className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5"
+                                className="h-3.5 w-3.5 flex-shrink-0 transition-transform group-hover/btn:translate-x-0.5"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"

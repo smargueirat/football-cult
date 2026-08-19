@@ -136,6 +136,19 @@ export default function SearchExplorer() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [sortOpen]);
 
+  // ESC cierra el panel de filtros y el de orden, en cualquiera de las
+  // dos versiones (bottom sheet mobile o dropdown desktop).
+  useEffect(() => {
+    if (!filtersOpen && !sortOpen) return;
+    function handleEscape(e: KeyboardEvent) {
+      if (e.key !== "Escape") return;
+      setFiltersOpen(false);
+      setSortOpen(false);
+    }
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [filtersOpen, sortOpen]);
+
   const results = useMemo(() => {
     const queryWords = normalizeSearchText(query.trim())
       .split(/\s+/)
