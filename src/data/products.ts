@@ -385,7 +385,9 @@ export type TeamKey =
   | "stokecity"
   | "orangecounty"
   | "nashvillesc"
-  | "minnesotaunited";
+  | "minnesotaunited"
+  | "nurnberg"
+  | "schalke04";
 
 export type TypeKey = "home" | "away" | "third" | "goalkeeper" | "training" | "prematch" | "retro";
 export type CategoryKey = "national" | "club";
@@ -449,6 +451,8 @@ export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
 }
 
 export const teamCategory: Record<TeamKey, CategoryKey> = {
+  nurnberg: "club",
+  schalke04: "club",
   sportrecife: "club",
   almirantebrown: "club",
   almagro: "club",
@@ -1001,6 +1005,8 @@ export function teamPopularity(teamKey: TeamKey): number {
 }
 
 export const teamNames: Record<TeamKey, Record<Locale, string>> = {
+  nurnberg: { es: "1. FC Nürnberg", en: "1. FC Nürnberg", pt: "1. FC Nürnberg" },
+  schalke04: { es: "FC Schalke 04", en: "FC Schalke 04", pt: "FC Schalke 04" },
   sportrecife: { es: "Sport Recife", en: "Sport Recife", pt: "Sport Recife" },
   almirantebrown: { es: "Almirante Brown", en: "Almirante Brown", pt: "Almirante Brown" },
   almagro: { es: "Almagro", en: "Almagro", pt: "Almagro" },
@@ -1387,6 +1393,8 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
 };
 
 export const teamFlags: Record<TeamKey, string> = {
+  nurnberg: "🔴",
+  schalke04: "🔵",
   sportrecife: "🔴",
   almirantebrown: "⚫",
   almagro: "🔵",
@@ -1774,6 +1782,8 @@ export const teamFlags: Record<TeamKey, string> = {
 
 // Colores icónicos por equipo, usados en los accesos rápidos y avatares.
 export const teamColors: Record<TeamKey, [string, string]> = {
+  nurnberg: ["#9E1B32", "#000000"],
+  schalke04: ["#004D9D", "#FFFFFF"],
   sportrecife: ["#C8102E", "#000000"],
   almirantebrown: ["#000000", "#D4AF37"],
   almagro: ["#7EC0E8", "#000000"],
@@ -71321,6 +71331,40 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/304101979457?_skw=Rotherham+United+home+soccer+jersey&hash=item46cde3f541%3Ag%3ATzEAAOSwRA9hWzzv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Rotherham United 20/21 Home Blank Jersey Men's Puma Red NWT sz XXL", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/TzEAAOSwRA9hWzzv/s-l225.jpg" },
+    ],
+  },
+  {
+    // Nuevo equipo 2026-08-19: 1. FC Nürnberg (2. Bundesliga alemana), encontrado
+    // vía barrido manual de títulos no reconocidos en los feeds AdidasES/PT.
+    // Verificado por foto: escudo real "1. FCN 1900-2025", patrocinadores
+    // toolcraft/Helmsauer reales.
+    id: "nurnberg-home-202526",
+    teamKey: "nurnberg",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#9E1B32",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45585785324&a=3013769&m=77008", title: "Camiseta primera equipación 1. FC Nürnberg 25/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9f956c06c04f4982aa26a19aa90e5e74_9366%2FCamiseta_primera_equipacion_1._FC_Nurnberg_25-26_Burgundy_JL3361_21_model.jpg&feedId=92152&k=450a205a7212971663517f9eb953706a75bbe0b6" },
+      { store: "AdidasPT", price: 80.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45587829770&a=3013769&m=77026", title: "Camisola Principal 25/26 do 1. FC Nürnberg", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9f956c06c04f4982aa26a19aa90e5e74_9366%2FCamiseta_primera_equipacion_1._FC_Nurnberg_25-26_Burgundy_JL3361_21_model.jpg&feedId=92152&k=450a205a7212971663517f9eb953706a75bbe0b6" },
+    ],
+  },
+  {
+    // Nuevo equipo 2026-08-19: FC Schalke 04 (2. Bundesliga alemana), mismo
+    // barrido. Verificado por foto: escudo real "S04", adidas, patrocinador
+    // "SUN MINIMEAL". Único SKU en ambos feeds adidas, sin palabra de tipo
+    // (home/away) en el título -- se etiqueta "home" por ser el único diseño.
+    id: "schalke04-home-202526",
+    teamKey: "schalke04",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#FF6B00",
+    colorHexSecondary: "#004D9D",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45591197173&a=3013769&m=77008", title: "CAMISETA SCHALKE 04", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb5fd1d4fb4a946cbbccbf78a9c93646d_9366%2FCAMISETA_SCHALKE_04_Naranja_KK6460_21_model.jpg&feedId=92152&k=ab6dc5bfc1378a662a286fa49d9d1472d18ba912" },
+      { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45591198169&a=3013769&m=77026", title: "CAMISOLA DO SCHALKE 04", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb5fd1d4fb4a946cbbccbf78a9c93646d_9366%2FCAMISOLA_DO_SCHALKE_04_Laranja_KK6460_21_model.jpg&feedId=92150&k=30be9b9b4c2b0c11778311823786051343e1e95b" },
     ],
   },
 ];

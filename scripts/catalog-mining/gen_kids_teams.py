@@ -21,7 +21,8 @@ from new_teams_batch12 import BATCH12 as _B12
 from new_teams_batch13 import BATCH13 as _B13
 from new_teams_batch14 import BATCH14 as _B14
 from new_teams_batch15 import BATCH15 as _B15
-BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13, **_B14, **_B15}
+from new_teams_batch16 import BATCH16 as _B16
+BATCH_META = {**_B1, **_B2, **_B3, **_B4, **_B5, **_B6, **_B7, **_B8, **_B9, **_B10, **_B11, **_B12, **_B13, **_B14, **_B15, **_B16}
 
 PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "data", "products.ts")
 
