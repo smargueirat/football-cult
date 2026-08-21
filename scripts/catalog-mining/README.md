@@ -1530,3 +1530,18 @@ with a 15-team batch: 17 teams completed cleanly, zero 429s, 222 real
 picks captured (dominated by retro, which keeps every distinct historic
 season per team+type). `daily_scan.sh`'s prompt now calls this instead of
 `ebay_mine_full.py all` for the daily pass.
+
+**Real bug found applying the first real batch (2026-08-21)**: when checking
+whether a retro pick's (team, type, season) already exists in `products.ts`,
+matching on the `typeKey` field directly is wrong -- every retro product has
+`typeKey: "retro"` literally (home/away/third only shows up in its `id`
+suffix, e.g. `clubtijuana-retro-200910-home`). Comparing a pick's raw type
+("home"/"away"/"third") against existing products' `typeKey` field always
+mismatches for retro, so everything looks "new" and gets inserted as a
+duplicate block -- caught via a dupe-id check (135+ collisions) before
+committing, reverted, and fixed by matching on the full generated id
+(`{team}-retro-{seasonSlug}-{type}`) instead. Of 165 raw retro picks that
+batch, only 14 were genuinely new; 148 already existed as retro products
+(116 of those were exact re-discoveries of an offer already on file, only 32
+needed a new offer merged in) -- always check against existing full ids for
+retro, never against typeKey.
