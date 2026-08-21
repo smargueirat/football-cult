@@ -15267,6 +15267,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 194.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/155598203213?_skw=Manchester+City+home+soccer+jersey&hash=item243a60294d%3Ag%3AhEQAAOSwfiFkgfS2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Official Puma Men’s Manchester City Home Jersey – 2022/2023", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/hEQAAOSwfiFkgfS2/s-l225.jpg" },
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398088460187?_skw=Manchester+City+home+soccer+jersey&hash=item5cafebd79b%3Ag%3Aj7kAAeSweFVp7WY-&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Manchester City 2022 Home Soccer Jersey Small NWT Authentic On Field", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/j7kAAeSweFVp7WY-/s-l225.jpg" },
+      { store: "Amazon", price: 61.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0G1N884JK?tag=footballcult-21", title: "PUMA Camiseta del Manchester City de la Temporada 2022/23 - Réplica", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61QG9QLpD6L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -29078,6 +29079,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45470174436&a=3013769&m=65906", title: "Camiseta de visitante del Manchester City 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_780350-02_1.webp&feedId=89044&k=3c9f3c76b11c325897071fe5e91efa0bbcaed6d4" },
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780350-02-maillot-exterieur-manchester-city-2025-26-black", title: "Maillot Extérieur Manchester City 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_780350-02_1.webp" },
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407132376246?_skw=Manchester+City+away+soccer+jersey+2025+2026&hash=item5ecafb0cb6%3Ag%3A5g8AAeSwdSZqeR7F&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Manchester City 2025/26 Away Soccer Jersey Men's L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5g8AAeSwdSZqeR7F/s-l225.jpg" },
+      { store: "Amazon", price: 70.8, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DLKZY57T?tag=footballcult-21", title: "PUMA Camiseta Visitante Manchester City Hombre 2025/26 - Negro", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61y9O1OI1iL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -30450,6 +30452,7 @@ const productsData = [
       { store: "MysteryShirtClub", price: 34.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-arsenal-home-goalkeeper-shirt-yellow-372777", title: "2024-2025 Arsenal Home Goalkeeper Shirt (Yellow)", inStock: true, sizes: ["XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1717389014_arsenal-2024-2025-home-goalkeeper-football-shirt-yellow.jpg?v=1763231466" },
       { store: "FootStoreES", price: 77.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43881589484&a=3013769&m=65912", title: "Camiseta de portero Arsenal 2024/25", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_is8115_1_apparel_photography_front_view_white.webp&feedId=89032&k=e33f8232f3e82a38e4aa507f5b814216e1de470c" },
       { store: "FootStoreFR", price: 74.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8115-maillot-de-gardien-arsenal-2024-25-semi-solar-yellow-multicolor", title: "Maillot de gardien Arsenal 2024/25", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is8115_1_apparel_photography_front_view_white.webp" },
+      { store: "Amazon", price: 47.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D6G22T83?tag=footballcult-21", title: "adidas Arsenal Camiseta de Guardián Amarillo Hombre 24/25", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51VhNsUmQ-L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -30512,6 +30515,7 @@ const productsData = [
       { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=37823710645&a=3013769&m=77026", title: "Camisola Principal Oficial 24/25 do Arsenal", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F617921e1d5be4abe910417b155b5d3f5_9366%2FCamisola_Principal_Oficial_24-25_do_Arsenal_Vermelho_IT6140_HM1.jpg&feedId=92150&k=d9ea891c898a55ba5166eb274940a8fdf977ad90" },
       { store: "FootStoreFR", price: 62.81, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit6141-maillot-domicile-arsenal-2024-25-rouge", title: "Maillot Domicile Arsenal 2024/25", inStock: true, sizes: ["XS", "S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_it6141_01-nw052424.webp" },
       { store: "SportIsGoodFR", price: 64.23, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fit6141-maillot-domicile-arsenal-2024-25-rouge", title: "Maillot Domicile Arsenal 2024/25", inStock: true, sizes: ["XS", "S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_it6141_01-nw052424.webp" },
+      { store: "Amazon", price: 70.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FGW87JRQ?tag=footballcult-21", title: "adidas Arsenal Home 24/25 Auténtico", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61P9ORlN8+L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -69570,6 +69574,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158100305731?_skw=Manchester+City+away+soccer+jersey+kids+youth&hash=item24cf833743%3Ag%3AkGYAAeSwwNhpbX3v&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW YOUTH Manchester City Puma Away Replica Jersey Jr. Misprint Name On Back MD", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kGYAAeSwwNhpbX3v/s-l225.jpg" },
+      { store: "Amazon", price: 32.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DLNH5Q3S?tag=footballcult-21", title: "PUMA Camiseta Visitante Manchester City Infantil 2025/26 - Negro", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://m.media-amazon.com/images/I/61LP5f8ACOL._AC_UL1000_.jpg" },
     ],
   },
 {
