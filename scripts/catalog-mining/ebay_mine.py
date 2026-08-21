@@ -79,6 +79,11 @@ class EbayClient:
         self.campaign_id = get_env("EBAY_CAMPAIGN_ID")
         self.token = None
         self.token_expiry = 0
+        # Set True whenever a search() call gets a 429 -- callers doing a
+        # multi-day batched pass (ebay_mine_cycle.py) use this to tell
+        # "genuinely zero listings" (200, empty) apart from "quota's gone"
+        # (429), since search() itself returns [] either way.
+        self.rate_limited = False
 
     def _ensure_token(self):
         if self.token and time.time() < self.token_expiry:
@@ -120,6 +125,8 @@ class EbayClient:
                 resp = urllib.request.urlopen(req, timeout=25)
                 return json.loads(resp.read()).get("itemSummaries", [])
             except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    self.rate_limited = True
                 print(f"  search error ({query!r}): {e.code} {e.read()[:200]}")
                 return []
             except Exception as e:

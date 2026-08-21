@@ -93,9 +93,18 @@ python3 ebay_mine_full.py all /tmp/ebay_full      # writes current_picks.json, k
 #                        then retro_gen.py (its input shape is normally multi-store, eBay is single-store)
 ```
 
-Full team-list run is ~2000+ API calls (5 current types + 3 kids types +
-3 retro types per team) — budget several hours, run in the background.
-Same resume support as `ebay_mine.py` (per output file, keyed by team).
+Full team-list run is ~4600+ API calls (6 current types + 3 kids types +
+3 retro types per team) — this reliably eats the Browse API's whole daily
+quota in one run (near-total 429s confirmed 2026-08-14 and 2026-08-20, see
+"Batched eBay mining" below). **Don't invoke `ebay_mine_full.py all` directly
+for the daily pass anymore** — use `ebay_mine_cycle.py`, which calls the
+same `mine_current`/`mine_kids`/`mine_retro` functions from this module but
+spreads the 385 teams across several days instead of blowing the quota on
+one run. `ebay_mine_full.py all` is still fine for a deliberate one-off full
+re-mine (e.g. after a query-logic bug fix, like the "Second full eBay
+re-mine" below) where you're prepared for it to take multiple sessions/days
+to actually finish due to rate-limiting. Same resume support either way
+(per output file, keyed by team).
 
 **Bugs found and fixed while building this** (both live in the shared
 `extract.py`, so they also benefit the Awin pipeline):
@@ -1471,3 +1480,53 @@ downloads. Freeing that space fixed it. **Clean up large feed CSVs from
 the scratchpad after each store is done with them**, not just at the
 very end — they're multi-hundred-MB each (FootStoreES/FR alone are
 ~300-360MB) and this pipeline fetches 11+ of them.
+
+## Batched eBay mining (`ebay_mine_cycle.py`, 2026-08-20) — the full pass alone exhausts the daily quota
+
+Confirmed twice now (2026-08-14, 2026-08-20) that a single `ebay_mine_full.py
+all` run — ~4600+ Browse API calls for the full 385-team list — reliably eats
+the whole day's rate limit on its own, usually ending in near-total 429s and
+capturing few or zero picks. The 2026-08-20 case was made worse by several
+same-day cloud-routine test runs sharing the same `EBAY_CLIENT_ID` (see
+`project_ebay_full_mine_rate_limit` and `project_football_cult_github_routine_blocker`
+in Claude's memory for the full incident writeup) — that specific cause won't
+repeat now that the cloud routine is disabled, but the underlying "one full
+pass ≈ one day's quota" math doesn't depend on that and would keep biting the
+daily cron on its own eventually.
+
+**Fix**: `ebay_mine_cycle.py` wraps `ebay_mine_full.py`'s own
+`mine_current`/`mine_kids`/`mine_retro` functions (imports them directly, no
+duplicated logic) and mines the team list in daily batches instead of all at
+once:
+
+```bash
+cd scripts/catalog-mining
+python3 -u ebay_mine_cycle.py /tmp/ebay_daily        # default batch size 60
+python3 -u ebay_mine_cycle.py /tmp/ebay_daily 40      # explicit batch size
+```
+
+- Progress persists in `ebay_full_cycle_state.json` (next to the script —
+  **commit it to the repo alongside `products.ts` every time it changes**, or
+  the cycle position is lost and the next run just repeats the same teams).
+- A team only counts "done" for the cycle if none of its queries hit a 429 —
+  a team with genuinely zero real listings still gets a clean 200 and counts
+  as done; a rate-limited team stays pending and gets retried in a later
+  batch. (`EbayClient.rate_limited`, set in `ebay_mine.py`'s `search()` on a
+  429 response, is what makes this distinction possible.)
+- Stops early after 3 consecutive rate-limited teams in one run — no point
+  burning through the rest of the batch on doomed requests once the quota's
+  visibly gone for the day.
+- Once every team in `TEAM_PATTERNS` is marked done, the next run starts a
+  fresh cycle (clears the done list, bumps the cycle counter) — the sweep
+  repeats indefinitely rather than stalling after the first full pass.
+- Output files (`current_picks.json`/`kids_picks.json`/`retro_picks.json` in
+  `<out_dir>`) accumulate the same way `ebay_mine_full.py`'s own resume
+  support does — same downstream insertion paths (see the "Full eBay pass"
+  section above), unchanged.
+
+At batch size 60, a full 385-team cycle takes roughly a week of daily runs
+(assuming no rate-limiting interference) — tested end-to-end on 2026-08-20
+with a 15-team batch: 17 teams completed cleanly, zero 429s, 222 real
+picks captured (dominated by retro, which keeps every distinct historic
+season per team+type). `daily_scan.sh`'s prompt now calls this instead of
+`ebay_mine_full.py all` for the daily pass.
