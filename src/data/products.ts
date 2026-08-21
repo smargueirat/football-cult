@@ -19268,6 +19268,7 @@ const productsData = [
     jerseyPattern: "band",
     offers: [
       { store: "eBay", price: 95.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306381092569?_skw=River+Plate+third+soccer+jersey&hash=item4755bc76d9%3Ag%3A4ygAAeSw1JRoaAoO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT! Adidas River Plate 23/24 Third Men’s Small Soccer Jersey Red/Black HT9853", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/4ygAAeSw1JRoaAoO/s-l225.jpg" },
+      { store: "Amazon", price: 176.36, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0CM4VPCX4?tag=footballcult-21", title: "adidas River Plate 23/24 Camiseta de fútbol", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/5183EhxAjnL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -32297,6 +32298,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fspain-2010-away-retro-soccer-jersey%3Fvariant%3D43166757683305", title: "Spain 2010 Away Retro Soccer Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Spain2010AwayRetroSoccerJersey_2.webp?v=1777450235" },
       { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800518861896?_skw=Spain+away+soccer+jersey&hash=itemba62a47448%3Ag%3AHiAAAeSwiiFqgeun&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Spain Andres Iniesta #6 2010 FIFA World Cup Final Away Jersey Men’s Size: M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/HiAAAeSwiiFqgeun/s-l225.jpg" },
+      { store: "Amazon", price: 61.8, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B089HJQWG1?tag=footballcult-21", title: "RFEF Camiseta oficial conmemorativa final Mundial Sudáfrica 2010", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71qaQlPSBUL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -56169,6 +56171,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 150.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/178408018331?_skw=Spain+away+soccer+jersey&hash=item2989f2519b%3Ag%3AVRwAAeSw0Kxqf8Ho&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "⚽Original SPAIN🇪🇸 2022-2023 Away Soccer Jersey 🌟BNWT🌟Size L ⚽MORATA", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/VRwAAeSw0Kxqf8Ho/s-l225.jpg" },
+      { store: "Amazon", price: 45.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B09ZVL817L?tag=footballcult-21", title: "adidas España Temporada 2022/23 Oficial Segunda Equipación", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/519JIZHGQLL._AC_UL1000_.jpg" },
     ],
   },
 {
