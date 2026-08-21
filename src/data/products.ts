@@ -22769,7 +22769,6 @@ const productsData = [
       { store: "SportIsGoodES", price: 63.09, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836108&a=3013769&m=65906", title: "Camiseta Local Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj1931_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=203f3401068b8f7d889e56d7330e0ec4cd3542de" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41530601284&a=3013769&m=77008", title: "Camiseta primera equipación Real Madrid 25/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F09e87dc4f83e454284ef598ea3773d9d_9366%2FCamiseta_primera_equipacion_Real_Madrid_25-26_Blanco_JJ1931_21_model.jpg&feedId=92152&k=d2ee9598bc636e8e705cfe3069c7e6089c4d2a0b" },
       { store: "SportIsGoodFR", price: 63.33, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj1931-maillot-domicile-real-madrid-2025-26-white", title: "Maillot Domicile Real Madrid 2025/26", inStock: true, sizes: ["XS", "S", "L", "XL", "XXL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jj1931_1_apparel_photography_front_center_view_white.jpg" },
-      { store: "Amazon", price: 26.5, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FCRTHDFZ?tag=footballcult-21", title: "Real Madrid Camiseta de Local 25/26 para Adultos - Producto Oficial para Fans", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51bs6Ahd8jL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -34759,6 +34758,7 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "MysteryShirtClub", price: 18.22, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2Fman-utd-2021-2022-home-shirt-ladies-220627", title: "Man Utd 2021-2022 Home Shirt (Ladies)", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1626344930_manchester-united-home-shirt-2021-22-womens.jpg?v=1763236751" },
+      { store: "Amazon", price: 28.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B094KSK4S8?tag=footballcult-21", title: "adidas Manchester United, Camiseta Hombre, Temporada 2021/22, Primera Equipación Oficial", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/617TycKy-HL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -34848,6 +34848,7 @@ const productsData = [
       { store: "AdidasPT", price: 60.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42840305277&a=3013769&m=77026", title: "Camisola Principal 24/25 do Manchester United", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcebd9fa5dd9145508312a9554ed78b84_9366%2FCamisola_Principal_24-25_do_Manchester_United_Vermelho_IT1973_HM1.jpg&feedId=92150&k=6584b96ff632e8afda55b95a32c27e5d3d164f97" },
       { store: "FootStoreFR", price: 63.55, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1971-maillot-domicile-manches-longues-manchester-united-2024-25-red", title: "Maillot Domicile manches longues Manchester United 2024/25", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/i/t/it1971.webp" },
       { store: "SportIsGoodFR", price: 64.86, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fit1971-maillot-domicile-manches-longues-manchester-united-2024-25-red", title: "Maillot Domicile manches longues Manchester United 2024/25", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/i/t/it1971.webp" },
+      { store: "Amazon", price: 70.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DL8RB79P?tag=footballcult-21", title: "adidas Camiseta auténtica del Manchester United 2024 2025 para hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61mup1DYt2L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -34967,6 +34968,7 @@ const productsData = [
       { store: "AdidasPT", price: 50.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=38594948568&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento 24/25 do Manchester United", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F00807ed890c5497f89bbcd4bae02a308_9366%2FCamisola_do_Terceiro_Equipamento_24-25_do_Manchester_United_Branco_IY7806_HM1.jpg&feedId=92150&k=233a882568375de2cbe997a451f9fba1f96126e5" },
       { store: "FootStoreFR", price: 52.87, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy7806-maillot-third-manchester-united-2024-25-blanc-white", title: "Maillot Third Manchester United 2024/25", inStock: true, sizes: ["XS", "S", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/i/y/iy7806_2_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 54.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fiy7806-maillot-third-manchester-united-2024-25-blanc-white", title: "Maillot Third Manchester United 2024/25", inStock: true, sizes: ["XS", "S", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/i/y/iy7806_2_apparel_photography_front_center_view_white.webp" },
+      { store: "Amazon", price: 41.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D7RSNLRZ?tag=footballcult-21", title: "adidas Camiseta de hombre 3ª equipación Manchester United 2024-2025", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61Ys7WiFfoL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -36386,6 +36388,7 @@ const productsData = [
       { store: "FootStoreFR", price: 57.84, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx2136-maillot-domicile-real-madrid-2024-25-white-white", title: "Maillot Domicile Real Madrid 2024/25", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx2136_1-nw121124.webp" },
       { store: "SportIsGoodFR", price: 59.15, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx2136-maillot-domicile-real-madrid-2024-25-white-white", title: "Maillot Domicile Real Madrid 2024/25", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx2136_1-nw121124.webp" },
       { store: "PlanetFoot", price: 60.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-domicile-homme-blanc%3Fvariant%3D49126909280597", title: "Maillot Real Madrid Domicile Homme Blanc", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/IU5011_b2b012_plp.webp?v=1766692870" },
+      { store: "Amazon", price: 41.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0F7H3P8VW?tag=footballcult-21", title: "adidas Real Madrid - Camiseta auténtica de primera equipación para hombre 2024 2025", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61f-bf1qW6L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -49179,6 +49182,7 @@ const productsData = [
       { store: "MysteryShirtClub", price: 24.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-man-utd-pre-match-shirt-black-373401", title: "2024-2025 Man Utd Pre-Match Shirt (Black)", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1717455796_man-utd-2024-2025-pre-match-football-shirt-black.jpg?v=1763233574" },
       { store: "FootStoreES", price: 39.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=39892787293&a=3013769&m=65912", title: "Camiseta de prematch Manchester United 2024/25", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd7147_black-mufred-owhite-tecob_1.webp&feedId=89032&k=2f87ef94501feb8ce67d79ae0746cb68da8e1125" },
       { store: "FootStoreFR", price: 52.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd7147-maillot-prematch-manchester-united-2024-25-black-mufred-owhite-tecob", title: "Maillot Prematch Manchester United 2024/25", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jd7147_black-mufred-owhite-tecob_1.jpg" },
+      { store: "Amazon", price: 35.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DNQWDB8R?tag=footballcult-21", title: "adidas Manchester United 24/25 Pre-Match Jersey Camiseta Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71jxjprnNfL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -49566,6 +49570,7 @@ const productsData = [
       { store: "eBay", price: 75.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327300964300?_skw=FC+Barcelona+pre-match+soccer+jersey&hash=item4c34a85fcc%3Ag%3Anz8AAeSwG%7EVqd1Iw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona x Kobe Bryant Pre-Match away Shirt 25/26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/nz8AAeSwG~Vqd1Iw/s-l225.jpg" },
       { store: "FootStoreES", price: 43.21, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41885924543&a=3013769&m=65912", title: "Maillot Prematch FC Barcelona Academy Pro 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj7142-456-phsfm001.webp&feedId=89032&k=b26238de978a680f2c00472f4bfdfbae4ba971ab" },
       { store: "FootStoreFR", price: 42.13, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7142-456-maillot-prematch-fc-barcelone-academy-pro-2025-26-deep-royal-blue-midwest-gold", title: "Maillot Prematch FC Barcelone Academy Pro 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj7142-456-phsfm001.jpg" },
+      { store: "Amazon", price: 57.51, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FP1J6GZZ?tag=footballcult-21", title: "Nike FC Barcelona Academy Pro Home Dri-fit Kurzärmeliges Pre-Match-fußballoberteil Für Herren", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71V+k5Hbm8L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -52260,6 +52265,7 @@ const productsData = [
     jerseyPattern: "stripes",
     offers: [
       { store: "eBay", price: 49.97, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158017451889?_skw=Argentina+home+soccer+jersey&hash=item24ca92f771%3Ag%3AkmYAAeSwa4pqOTzy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Argentina 2024 Home Soccer Jersey In White & Blue Burst Men's Size Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/kmYAAeSwa4pqOTzy/s-l225.jpg" },
+      { store: "Amazon", price: 189.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0C2QP9SBG?tag=footballcult-21", title: "adidas Argentina 2024 Home Jersey Camisa Hombre (Pack de 1)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51MBon-HIPL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -71474,6 +71480,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fred-devils-home-soccer-jersey-2026-27-red%3Fvariant%3D43253824553065", title: "Red Devils Home Soccer Jersey 2026/27 Red", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/manunitedhomefan2026_27.jpg?v=1785205441" },
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H36YR88Q?tag=footballcult-21", title: "adidas Camiseta Manchester United para Hombre 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71K8hKexE1L._AC_UL1000_.jpg" },
     ],
   },
 {
