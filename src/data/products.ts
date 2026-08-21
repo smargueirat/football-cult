@@ -6897,6 +6897,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 56.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157598835426?_skw=Bayern+Munich+home+soccer+jersey&hash=item24b19f62e2%3Ag%3AOvoAAeSwmZtpXufo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Bayern Munich 24/25 LS Home Soccer Jersey IT2254 size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/OvoAAeSwmZtpXufo/s-l225.jpg" },
       { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397951756213?_skw=Bayern+Munich+home+soccer+jersey&hash=item5ca7c5e7b5%3Ag%3ApZUAAeSwi69qBzrV&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYTeeMKqSDHZ29G7EwA4C%2Fiww82xuzD6oOqUxNPv7qh78rGrNmxg8%2BxaN1IJaMCJQNK8GUOAXIvJ802KHceRg5HZKouWqjme1rUapX6Zdm5O%2Fl2SLrE4k9cmjUGAAqvwUJCabqJOgJr3Lv%2BepATJqsZFrjvma3AYJSUpocpI%2FelC1fT8gQkhzAN%2FY6YD93DHGqldGr5IGzSwXBAsIzynocUuWBq%2BxbkNbL21%2Bk4sPOGu7aL5gM0zGUorPegmpLX8znxk7I9%2Frcq0iz%2FAAMLn177W5lTFEVBL%2BAt34B1t%2BWSmqRkbpyAkvri597xRFuEcIg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas FC Bayern Munich Soccer 2024 Home Jersey Shirt Red Black", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/pZUAAeSwi69qBzrV/s-l225.jpg" },
+      { store: "Amazon", price: 120.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0GKX17P7N?tag=footballcult-21", title: "adidas Bayern Munich - Camiseta auténtica para hombre, 24/25", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/6113XBK5OGL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -6969,6 +6970,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 119.99, shipping: 24.99, currency: "USD", url: "https://www.ebay.com/itm/176526715653?_skw=Bayern+Munich+third+soccer+jersey&hash=item2919cfeb05%3Ag%3AqJcAAOSwnFFmvqGA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas FC Bayern Munich 2024/25 Third Kit Soccer Jersey Asia-Fit IZ3129", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/qJcAAOSwnFFmvqGA/s-l225.jpg" },
+      { store: "Amazon", price: 75.81, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D7RRGY9G?tag=footballcult-21", title: "adidas Camiseta de hombre 3ª equipación FC Bayern Munich 2024-2025", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61wz2fiJH-L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -8013,6 +8015,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 38.69, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318646928411?_skw=Chelsea+away+soccer+jersey&hash=item4a30d6441b%3Ag%3A%7E14AAOSwVZVnS4yi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Chelsea FC Jersey Yellow 21/22 Stadium Away Mens Medium NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/~14AAOSwVZVnS4yi/s-l225.jpg" },
       { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336712823253?_skw=Chelsea+away+soccer+jersey&hash=item4e65a5f1d5%3Ag%3AbdMAAeSwyPRpVFjl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2021-22 Nike Men’s Chelsea Yellow Away Soccer Jersey Medium M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/bdMAAeSwyPRpVFjl/s-l225.jpg" },
+      { store: "Amazon", price: 64.63, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B09C8Q29FG?tag=footballcult-21", title: "Nike Chelsea, Camiseta Unisex, Temporada 2021/22, Segunda Equipación Oficial", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51wOEzhGiqL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -22713,6 +22716,7 @@ const productsData = [
       { store: "FootStoreFR", price: 85.72, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif7054-724-maillot-domicile-bresil-coupe-du-monde-2026-canary-light-menta-geode-teal", title: "Maillot Domicile Brésil Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if7054-724_01.webp" },
       { store: "MysteryShirtClub", price: 94.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-brazil-home-shirt-501805", title: "2026-2027 Brazil Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1776278304_2026-2027-brazil-nike-home-football-shirt.jpg?v=1783506015" },
       { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358900781040?_skw=Brazil+home+soccer+jersey&hash=item5390274ff0%3Ag%3AXo0AAeSwU79qdzS5&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa047nqdyvlp83lKK%2BYfDO7BNsHsG%2FkmA7XHFJprhUuZbLbtpY33lKSQQ6InLqHPYuz5x82KVC5B0pKpZDe7AyvYFYnO5Z1jGu5B5q3uO44g%2FH5DguD9pFDhG54EymKcP0LJscU5dpAmuk0D%2B3MUfVfdZF%2FVNm9PQ7BqqDmY0RGoLMioeo2Wr89wDawOy%2BrqRSG4VjDiNZsTiQ%2B7dTe%2BfIN2BLQjJqrTTFnpsXBYYFXkvMd9HzY6qz77U2GQXtzAys8h%2Fd9aIUaBuKAkfAX5%2F23Q31ddtOwe6toDmnfDdmASg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brazil Home Nike Men’s World Cup 2026 Soccer Jersey- NEW *Various Sizes*", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Xo0AAeSwU79qdzS5/s-l225.jpg" },
+      { store: "Amazon", price: 123.72, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H3TWYWRH?tag=footballcult-21", title: "Nike Brasil 2026 Home Nike Aero-fit Authentic Camiseta de fútbol Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/712WkKoRnRL._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -23121,6 +23125,7 @@ const productsData = [
       { store: "FootStoreES", price: 66.03, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41368868580&a=3013769&m=65912", title: "Camiseta Local Chelsea 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj4589-496_1.webp&feedId=89032&k=9f5b680c799085eb4705cf60f7ea408d6ac737df" },
       { store: "FootStoreFR", price: 64.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4589-496-maillot-domicile-chelsea-2025-26-rush-blue-white-speed-red-white", title: "Maillot Domicile Chelsea 2025/26", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4589-496_1.webp" },
       { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298570256820?_skw=Chelsea+home+soccer+jersey&hash=item45842c91b4%3Ag%3ATmIAAeSw-wlqd3qD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Chelsea 25/26 Home Jersey", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/TmIAAeSw-wlqd3qD/s-l225.jpg" },
+      { store: "Amazon", price: 116.03, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FHKZ5VFR?tag=footballcult-21", title: "Nike FC Chelsea 2025/26 Match Home Authentic Dri-FIT ADV Camiseta de fútbol para Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71uREd4Ch2L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -24165,6 +24170,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 59.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081633&a=3013769&m=65912", title: "Maillot Domicile niño Brasil Coupe du monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_io2231-724_01.webp&feedId=89032&k=6a5e17cb94416a8aa29e7de9fae10d3e1b140325" },
+      { store: "Amazon", price: 113.38, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H3TSM5GT?tag=footballcult-21", title: "Nike Brasil 2026 Camiseta de fútbol Aero-Fit Authentic para niños Mayores", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://m.media-amazon.com/images/I/71zTWgy428L._AC_UL1000_.jpg" },
     ],
   },
 {
@@ -49856,6 +49862,7 @@ const productsData = [
       { store: "FootStoreES", price: 56.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45242384487&a=3013769&m=65912", title: "Maillot Prematch Brasil Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ih1659-405_01.webp&feedId=89032&k=103619e2174ebe4a85be6b98472c175619b1808b" },
       { store: "FootStoreFR", price: 54.87, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1662-369-maillot-prematch-bresil-coupe-du-monde-2026-light-menta-lt-photo-blue-canary", title: "Maillot Prematch Brésil Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ih1662-369_04.webp" },
       { store: "eBay", price: 54.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366535530590?_skw=Brazil+pre-match+soccer+jersey&hash=item555738585e%3Ag%3AonUAAeSw1vZqUYoc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Brazil x Jordan Pre Match Training Jersey 2026 World Cup", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/onUAAeSw1vZqUYoc/s-l225.jpg" },
+      { store: "Amazon", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H3W776HP?tag=footballcult-21", title: "Nike Brasil Academy Pro Dri-fit Camiseta de fútbol Pre-Match Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61neEFsXbnL._AC_UL1000_.jpg" },
     ],
   },
 {
