@@ -14799,6 +14799,19 @@ const productsData = [
       { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327298468757?_skw=Liverpool+home+soccer+jersey&hash=item4c34824b95%3Ag%3AeZ4AAeSw%7EbxqdQqb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool Gerrard #8 2004/05 Reebok Home Jersey UCL Final Football Soccer Shirt", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/eZ4AAeSw~bxqdQqb/s-l225.jpg" },
     ],
   },
+  {
+    id: "liverpool-retro-200506-home",
+    teamKey: "liverpool",
+    season: "2005/06",
+    typeKey: "retro",
+    colorHex: "#C8102E",
+    colorHexSecondary: "#F0C674",
+    jerseyPattern: "solid",
+    brand: "reebok",
+    offers: [
+      { store: "Classic Football Shirts", price: 83.99, shipping: 0.0, currency: "EUR", url: "https://sovrn.co/1lfpebj", title: "2005-06 Liverpool Champions League Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://classicfootballshirts.co.uk/pub/media/catalog/product/d/4/d466770844a3ae061676eb4881b39b3af2952ab051ce5050f4b6b68eedf1e07f.jpeg" },
+    ],
+  },
 {
     id: "liverpool-retro-2007-home",
     teamKey: "liverpool",
