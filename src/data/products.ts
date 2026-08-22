@@ -24854,6 +24854,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 60.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0DKFPRTF7?tag=footballcu047-21", title: "A.C. Milan Unisex Third Official Football Shirt 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61aJ1yUISXL._AC_SL1280_.jpg" },
       { store: "FootStoreES", price: 57.06, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45395578700&a=3013769&m=65912", title: "Maillot Tercero AC Milan 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779979-03_1-nw082525.webp&feedId=89032&k=b53f8ddebd5ee1e288d5765f5aa402c01ef9ac5c" },
       { store: "FootStoreFR", price: 55.66, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779979-03-maillot-third-milan-ac-2025-26-yellow", title: "Maillot Third Milan AC 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779979-03_1-nw082525.webp" },
       { store: "SportIsGoodES", price: 65.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301853725&a=3013769&m=65906", title: "Maillot Tercero AC Milan 2025/26", inStock: true, sizes: ["S", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779979-03_1-nw082525.webp&feedId=89044&k=b53f8ddebd5ee1e288d5765f5aa402c01ef9ac5c" },
@@ -49860,6 +49861,7 @@ const productsData = [
     colorHexSecondary: "#F5C518",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 64.4, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0D52QPYRS?tag=footballcu047-21", title: "PUMA A.C. Milan Prematch Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61P1+Ut6lIL._AC_SL1500_.jpg" },
       { store: "FootStoreES", price: 48.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43780402776&a=3013769&m=65912", title: "Maillot Prematch AC Milan 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784713-02-green-moon-sunny-yellow-1.webp&feedId=89032&k=0487e1aac5dcc2ac0e66c6865bbcca182746040d" },
       { store: "PlanetFoot", price: 64.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ac-milan-pre-match-homme-2026-vert-jaune%3Fvariant%3D52242064671061", title: "Maillot AC Milan Pre-match Homme 2026 Vert-Jaune", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-ac-milan-echauffement-2025-2026-officiel2.webp?v=1768914584" },
       { store: "FootStoreFR", price: 48.75, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F784713-02-maillot-prematch-milan-ac-2025-26-green-moon-sunny-yellow", title: "Maillot Prematch Milan AC 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-784713-02-green-moon-sunny-yellow-1.webp" },
@@ -70169,6 +70171,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "stripes",
     offers: [
+      { store: "Amazon", price: 84.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0F9ZP1ZJB?tag=footballcu047-21", title: "PUMA Milan Official 2026/2027 Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71jYbF3IhJL._AC_SL1500_.jpg" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ac-milan-domicile-homme-2026-27-noir-rouge-784121-01%3Fvariant%3D54053036622165", title: "Maillot AC Milan Domicile Homme 2026/27 Noir Rouge", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8877-1.jpg?v=1780401414" },
     ],
   },
@@ -70592,6 +70595,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "stripes",
     offers: [
+      { store: "Amazon", price: 93.1, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0H36SMVS7?tag=footballcu047-21", title: "adidas Juventus Home Shirt 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51lAcp2rMZL._AC_SL1000_.jpg" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-juventus-domicile-homme-2026-27-blanc-noir%3Fvariant%3D54043383562581", title: "Maillot Juventus Domicile Homme 2026/27 Blanc Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-juventus-domicile-homme-2026-27-blanc-noir-kc2285-2.webp?v=1785169612" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fturin-black-white-home-soccer-jersey-2026-27-home-soccer-jersey-2026-27%3Fvariant%3D47844103585897", title: "Turin Black & White Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/juventushomefan2026_27.jpg?v=1785316680" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44729066355&a=3013769&m=77026", title: "Camisola Juventus 26/27 Home", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc9f22503c4904177b823f5d550912a45_9366%2FCamisola_Juventus_26-27_Home_Branco_KB8823_21_model.jpg&feedId=92150&k=4002d8d094743e2f472afa6a3ecb4e1d44923289" },
@@ -71370,6 +71374,18 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "AdidasPT", price: 52.5, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45692095852&a=3013769&m=77026", title: "Camisola de Treino Tiro 25 Competition da Juventus", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc97bc7bee7de4358bca2ce339ce4179e_9366%2FCamisola_de_Treino_Tiro_25_Competition_da_Juventus_Turquesa_KB1933_21_model.jpg&feedId=92150&k=ef13602045f35d7d849ced401142bf17597fc1c0" },
+    ],
+  },
+  {
+    id: "juventus-away-202526",
+    teamKey: "juventus",
+    season: "2025/26",
+    typeKey: "away",
+    colorHex: "#A7D8E8",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Amazon", price: 50.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0DLL4RRNT?tag=footballcu047-21", title: "adidas Performance Juventus Away Shirt 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71YxANWC2cL._AC_SL1500_.jpg" },
     ],
   },
 {
