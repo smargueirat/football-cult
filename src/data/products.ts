@@ -43653,6 +43653,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 47.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FP9HP9L8?tag=footballcult-21", title: "adidas Flamengo Camiseta para hombre 81", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61wMTIdLI2L._AC_SL1425_.jpg" },
       { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267261894384?_skw=Flamengo+home+soccer+jersey&hash=item3e3a0cdef0%3Ag%3AYFcAAOSwSnRoMq1E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY FLAMENGO Home Men Retro in 1981", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/YFcAAOSwSnRoMq1E/s-l225.jpg" },
     ],
   },
@@ -71565,8 +71566,22 @@ const productsData = [
     colorHexSecondary: "#F5D142",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H36YR88Q?tag=footballcult-21", title: "adidas Camiseta Manchester United 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71K8hKexE1L._AC_SL1500_.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fred-devils-home-soccer-jersey-2026-27-red%3Fvariant%3D43253824553065", title: "Red Devils Home Soccer Jersey 2026/27 Red", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/manunitedhomefan2026_27.jpg?v=1785205441" },
       { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H36YR88Q?tag=footballcult-21", title: "adidas Camiseta Manchester United para Hombre 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71K8hKexE1L._AC_UL1000_.jpg" },
+    ],
+  },
+  {
+    id: "manutd-retro-202122-training",
+    teamKey: "manutd",
+    season: "2021/22",
+    typeKey: "retro",
+    colorHex: "#000000",
+    colorHexSecondary: "#DA020E",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "Amazon", price: 37.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B098FJ48YY?tag=footballcult-21", title: "adidas Manchester United Temporada 2021/22 Camiseta Entrenamiento", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71inS2bBbKL._AC_SL1500_.jpg" },
     ],
   },
 {
