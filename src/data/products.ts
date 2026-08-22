@@ -25006,6 +25006,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0H3PSCX16?tag=footballcul07-21", title: "adidas SGE Eintracht Frankfurt Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71c5DCAx7vL._AC_SL1417_.jpg" },
       { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45081946539&a=3013769&m=65912", title: "Camiseta Local Eintracht Frankfurt 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kb1996_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=dad31b1d23c85cc325a9520eba50f629566da43c" },
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45082978564&a=3013769&m=65906", title: "Camiseta Local Eintracht Frankfurt 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kb1996_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=dad31b1d23c85cc325a9520eba50f629566da43c" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000090356%3Fvariant%3D54365476258133", title: "Eintracht Frankfurt 26/27 Home Jersey KB1996", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_9035-1.jpg?v=1783947792" },
@@ -25634,6 +25635,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
+      { store: "Amazon", price: 59.81, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0FZQ9W7XR?tag=footballcul07-21", title: "adidas Eintracht Frankfurt Away Jersey 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71TTXnPSVnL._AC_SL1500_.jpg" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44701246027&a=3013769&m=77008", title: "Eintracht Frankfurt 25/26 Away Jersey", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd27b4f230d48453faf1fe227fbf5cd1b_9366%2FEintracht_Frankfurt_25-26_Away_Jersey_Blanco_KK6437_21_model.jpg&feedId=92152&k=1bf7e30d4484db141e1fa4ab8631c036bd3f3a4b" },
       { store: "AdidasPT", price: 80.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44701253942&a=3013769&m=77026", title: "Eintracht Frankfurt 25/26 Away Jersey", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd27b4f230d48453faf1fe227fbf5cd1b_9366%2FEintracht_Frankfurt_25-26_Away_Jersey_Branco_KK6437_21_model.jpg&feedId=92150&k=aff047a8c68126bb30d8585c5dd8c8442e898428" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Feintracht-frankfurt-away-soccer-jersey-2025-26%3Fvariant%3D42594271330409", title: "Eintracht Frankfurt Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Eintracht_Frankfurt_Away_Soccer_Jersey_202526_2.png?v=1759310462" },
@@ -27037,6 +27039,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
+      { store: "Amazon", price: 69.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0H6X19FCJ?tag=footballcul07-21", title: "adidas SGE Eintracht Frankfurt Prematch Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61k04pVz6UL._AC_SL1417_.jpg" },
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45304863408&a=3013769&m=65912", title: "Maillot prematch Eintracht Frankfurt 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kg9731-black-6a57596e684e3-1.webp&feedId=89032&k=cfb2a33a28030a0e777c494025264139e62ad4d3" },
       { store: "FootStoreFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg9731-maillot-prematch-eintracht-francfort-2026-27-black", title: "Maillot Prematch Eintracht Francfort 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kg9731-black-6a57596e684e3-1.webp" },
     ],
@@ -49394,6 +49397,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 69.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0GXDPB375?tag=footballcul07-21", title: "adidas FC Bayern Munich Prematch Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71uefzNGd+L._AC_SL1417_.jpg" },
       { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089756%3Fvariant%3D54316731498837", title: "FC Bayern 26/27 Pre Match Jersey FCB  KE8590", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8975-1.jpg?v=1783434188" },
     ],
   },
@@ -70331,6 +70335,7 @@ const productsData = [
     colorHexSecondary: "#DC052D",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0HBWTQKFX?tag=footballcul07-21", title: "adidas FC Bayern Munich Away Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61uZULS40lL._AC_SL1417_.jpg" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45347614191&a=3013769&m=77026", title: "Camisola FC Bayern München 26/27 Away", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4271d7aa21084f83b5872892760d2e84_9366%2FCamisola_FC_Bayern_Munchen_26-27_Away_Branco_JZ3077_21_model.jpg&feedId=92150&k=8255afeab6a05e2ca329d4ede1e5feb4e3882204" },
     ],
   },
@@ -70343,6 +70348,7 @@ const productsData = [
     colorHexSecondary: "#C4A868",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0H26JKR15?tag=footballcul07-21", title: "adidas FC Bayern Munich Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71Uia2x1eHL._AC_SL1500_.jpg" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-bayern-munich-domicile-2026-27-blanc-better-scarlet-kq6513%3Fvariant%3D54365457383765", title: "Maillot FC Bayern Munich Domicile 2026/27 Blanc Better Scarlet", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8994-1.jpg?v=1783947698" },
       { store: "BSTNIT", price: 99.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45384250882&a=3013769&m=104981", title: "FC BAYERN 26/27 HOME JERSEY", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-fc-bayern-26-27-home-jersey-kq6513-0354433%2FKQ6513%2FKQ6513-01.jpg&feedId=99415&k=759c875288f6366664e8885ac4b3f67f885b26d6" },
     ],
@@ -70356,6 +70362,7 @@ const productsData = [
     colorHexSecondary: "#1B1F54",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 59.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0GXDMLSZ4?tag=footballcul07-21", title: "adidas FC Bayern Munich Training Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71wJYbuvRVL._AC_SL1500_.jpg" },
       { store: "PlanetFoot", price: 54.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089749%3Fvariant%3D54316731269461", title: "FC Bayern 26/27 Training Jersey FCB  KF1040", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8974-1.jpg?v=1783434186" },
     ],
   },
