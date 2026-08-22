@@ -3979,6 +3979,7 @@ const productsData = [
     colorHexSecondary: "#F0BC42",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 80.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B09HN39LXJ?tag=footballcult-21", title: "New Balance AS Roma 2022/23 Away Jersey Oficial", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/P/B09HN39LXJ.01._SCLZZZZZZZ_.jpg" },
       { store: "MysteryShirtClub", price: 28.34, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-roma-away-shirt-253417", title: "2022-2023 Roma Away Shirt", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1660310557_roma-away-shirt.jpg?v=1763225534" },
       { store: "eBay", price: 38.25, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127813734847?_skw=AS+Roma+away+soccer+jersey&hash=item1dc24ad1bf%3Ag%3AK0QAAeSwcCJp1z2A&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYmwqTNwJNU2ClCnByVuIVwNEmiIzHbpCjEO1afQaNzHXyvjwRwlJwhPEPuPW3ptYz9HBdecuafICF%2Be9S0oa644V1yC8g9kW4oBCvE4iHrjS%2FqZNx4nF%2Bd9DAM9g6UYOkvdpmTq4QAplfJ2Sysc3Ef%2FHPKT1qj0pgIjLebKmERJ7KeeQw1tf0USEZYpxcEbOV0zqjAD7bfhT%2F%2BwjlXGVFDce3TKebBW3C7Ftg0sMUePmidibRIq4I1bxYas5Es2a6mcPEEGwcFwRZdjrHRKitFkrt1nw3lQGc9ItKMPJ%2BXk7KCRl1EjOmyXbk2e52erPI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Balance AS Roma 2022-23 Away Jersey Mens S White Serie A Soccer NWOT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/K0QAAeSwcCJp1z2A/s-l225.jpg" },
     ],
@@ -4580,6 +4581,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 87.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FLTM9FVH?tag=footballcult-21", title: "Puma BVB Third Jersey Replica", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71ABj3T8hBL._AC_SL1400_.jpg" },
       { store: "eBay", price: 100.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/358869630711?_skw=Borussia+Dortmund+third+soccer+jersey&hash=item538e4bfef7%3Ag%3AsYsAAeSwnxdqbbq5&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Puma  Purple Borussia Dortmund 2026/27 Third Replica Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sYsAAeSwnxdqbbq5/s-l225.jpg" },
       { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45577429714&a=3013769&m=65912", title: "Maillot Tercero Borussia Dortmund 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-785663-17-6a8322b2baf3e-1.webp&feedId=89032&k=a75d5ed62042af7420ba4f519453e86298aaaf50" },
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45577502759&a=3013769&m=65906", title: "Maillot Tercero Borussia Dortmund 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-785663-17-6a8322b2baf3e-1.webp&feedId=89044&k=a75d5ed62042af7420ba4f519453e86298aaaf50" },
@@ -24915,6 +24917,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 101.89, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0C787XW64?tag=footballcult-21", title: "PUMA BVB Dortmund Away Jersey Replica", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71Wt9gzSFdL._AC_SL1500_.jpg" },
       { store: "FootStoreES", price: 53.18, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42486174298&a=3013769&m=65912", title: "Camiseta de visitante Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F780104-02.webp&feedId=89032&k=02952af548aab91f071216dac6836ebc534f5f04" },
       { store: "SportIsGoodES", price: 52.92, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44553261534&a=3013769&m=65906", title: "Camiseta de visitante Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F8%2F780104-02.webp&feedId=89044&k=02952af548aab91f071216dac6836ebc534f5f04" },
       { store: "FootStoreFR", price: 51.9, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780104-02-maillot-exterieur-borussia-dortmund-2025-26-gray", title: "Maillot Extérieur Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/7/8/780104-02.webp" },
@@ -26986,6 +26989,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 72.79, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D931MMD6?tag=footballcult-21", title: "PUMA Camiseta de Training Borussia Dortmund Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/617Peh3FvxL._AC_SL1200_.jpg" },
       { store: "FootStoreES", price: 49.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42047456916&a=3013769&m=65912", title: "Maillot de entrenamiento Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_781665-18_1.webp&feedId=89032&k=c64bc959ab5b0feb0112b2eda9bbddba0c991152" },
       { store: "SportIsGoodES", price: 48.87, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852216&a=3013769&m=65906", title: "Maillot de entrenamiento Borussia Dortmund 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_781665-18_1.webp&feedId=89044&k=c64bc959ab5b0feb0112b2eda9bbddba0c991152" },
       { store: "eBay", price: 29.99, shipping: 6.5, currency: "USD", url: "https://www.ebay.com/itm/389924380216?_skw=Borussia+Dortmund+training+soccer+jersey&hash=item5ac94dde38%3Ag%3AqlYAAeSwLqJp6PAz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Borussia Dortmund Training Jersey Men’s Small Football 2025-26 NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/qlYAAeSwLqJp6PAz/s-l225.jpg" },
@@ -29791,6 +29795,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
+      { store: "Amazon", price: 77.62, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DLRW2M5X?tag=footballcult-21", title: "adidas Ajax Amsterdam Camiseta de futbol para hombre 2024-2025", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71c8w5RaGtL._AC_SL1500_.jpg" },
       { store: "MysteryShirtClub", price: 44.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-ajax-home-shirt-387559", title: "2024-2025 Ajax Home Shirt", inStock: true, sizes: ["S", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1720395312_ajax-2024-2025-adidas-home-football-shirt.jpg?v=1763590990" },
       { store: "FootStoreES", price: 93.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43970789993&a=3013769&m=65912", title: "Camiseta primera equipación Ajax Amsterdam 2024/25", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it6168_1_apparel_photography_front_view_white.webp&feedId=89032&k=819894d8b0155bff8847f7daa717124ca5908d7b" },
       { store: "eBay", price: 35.0, shipping: 19.0, currency: "USD", url: "https://www.ebay.com/itm/358882283891?_skw=Ajax+home+soccer+jersey&hash=item538f0d1173%3Ag%3AX3UAAeSw0-xqccoR&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGY6Cz7zT72NnrRkzHWPT1IzL8lTiSZWkumvw2IyKHpAm1RrafvehgPr0k9aG5uLKN2hww5uxl6MooBaNgCRLMbsPcwri98DJ2%2B1DdJUGw62xQwLXefMnefyRNnusHqe3IIOEhMkVcFoPvmRrTPEcQtTq82Txl5X1nTCYE36YfSGSv4cePmPuY9iZC5Xdfyu1ewKClvf2N4gE%2BxygrO9RU2Omc4NUo7Of%2B16DPE3olm%2FaNrRunFI8Kiua6HbF22zCLI2b0%2F2SDHN1RTeiWjjQMQrvAruxTLEHUEqJHLrk75o3w%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ajax Amsterdam 2024/25 Home Jersey Shirt White Red Men's 2XL  AEROREADY", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/X3UAAeSw0-xqccoR/s-l225.jpg" },
@@ -30726,6 +30731,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "nike",
     offers: [
+      { store: "Amazon", price: 79.43, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0BFF6H9VJ?tag=footballcult-21", title: "Nike Atletico Madrid 2022/23 Stadium Home Jersey Oficial", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/P/B0BFF6H9VJ.01._SCLZZZZZZZ_.jpg" },
       { store: "MysteryShirtClub", price: 39.36, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2022-2023-atletico-madrid-home-shirt-256833", title: "2022-2023 Atletico Madrid Home Shirt", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1667134599_atletico-madrid.jpg?v=1763223700" },
       { store: "eBay", price: 150.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168295824683?_skw=Atl%C3%A9tico+Madrid+home+soccer+jersey&hash=item272f367d2b%3Ag%3ABcoAAeSwtoVoyde%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Atletico Madrid 2022 - 2023 Home Shirt Jersey Player Issue Nike MEN — size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BcoAAeSwtoVoyde~/s-l225.jpg" },
     ],
@@ -32189,6 +32195,7 @@ const productsData = [
     ageGroup: "women",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 69.84, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D3M129PM?tag=footballcult-21", title: "PUMA BVB Dortmund Trikot Away 2024/2025", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/614ElEbIqHL._AC_SL1500_.jpg" },
       { store: "MysteryShirtClub", price: 16.19, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2024-2025-borussia-dortmund-away-shirt-ladies-418058", title: "2024-2025 Borussia Dortmund Away Shirt (Ladies)", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1725274275_borussia-dortmund-2024-2025-puma-away-football-shirt-ladies.jpg?v=1763231907" },
       { store: "eBay", price: 45.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198393822618?_skw=Borussia+Dortmund+away+soccer+jersey&hash=item2e31317d9a%3Ag%3Ab7YAAeSwmc1p9Txv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA BORUSSIA DORTMUND 24/25 AWAY Football Soccer Jersey Men’s M Black New", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/b7YAAeSwmc1p9Txv/s-l225.jpg" },
       { store: "eBay", price: 127.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267577271702?_skw=Borussia+Dortmund+away+soccer+jersey&hash=item3e4cd92596%3Ag%3ANygAAeSwjFppkjCC&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZMlz1UImbMXJ2cr538%2BGFgaH%2BTYBHMLF8Z%2BvTbg21MjQzk%2FMzoNrHzGeHtBYDWa4eNiUxVCjYKK2DwHoyZt9zUaaQjDoKlS2fe%2B3zfNw6w70OHVy32ow2kzDCQ2DRRio3BcaYkG8becKDEPrQ%2BTVqEk7PA7E7xQU2zllbCTjHC4ZYde3mYKdJSwXfBx3B5%2FqShvPke6--HuirBVrV1xMyORjjQsIic7ayC13cf2Z62tgfeVliPIS3Z5Pa0MZnqmhpQkGdw5F9LmZGFa5VFxF8sSxcrRlzZ2Lh5BD%2Bz7D4pIiLDDDkYHKlmBgiroWc%2Fpc0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BORUSSIA DORTMUND 2024 2025 AWAY FOOTBALL SHIRT SOCCER JERSEY NEW #7 REYNA", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/NygAAeSwjFppkjCC/s-l225.jpg" },
@@ -35366,6 +35373,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
+      { store: "Amazon", price: 79.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0BHBLHJBN?tag=footballcult-21", title: "Copa - Maradona X Napoli 1986-87 - Camiseta de Futbol Retro", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/5170Bbvgt0L._AC_SL1000_.jpg" },
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-1986-87-home-retro-football-jersey%3Fvariant%3D42557212852329", title: "Napoli 1986/87 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/8b94375ec97b9cada47f7c1a3a50824d.png?v=1758074276" },
       { store: "eBay", price: 500.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188782088732?_skw=Napoli+home+soccer+jersey&hash=item2bf44a121c%3Ag%3A7H4AAeSwCYxqfIhr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "1986-87 Napoli Home Jersey#10 Vintage Original Reedition Shirt Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/7H4AAeSwCYxqfIhr/s-l225.jpg" },
     ],
@@ -37981,6 +37989,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 49.49, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D8QF47W1?tag=footballcult-21", title: "SSC Napoli Maglia Replica Portiere Home Ea7 Camiseta Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/81p0TEz4pEL._AC_SL1500_.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-goalkeeper-soccer-jersey-2025-26-white%3Fvariant%3D42733367361641", title: "Napoli Goalkeeper Soccer Jersey 2025/26 White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Napoli_Goalkeeper_Soccer_Jersey_202526_White_1.webp?v=1765110108" },
       { store: "DeporteOutletES", price: 34.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44612434904&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Hombre Camiseta de portero de primera equipación EASSCN25W09K", inStock: true, sizes: ["S", "M", "L", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F06%2Fdf%2F40%2FEASSCN25W09K-1_600x600.jpg&feedId=99907&k=3cdd2871b0a4a5098d781171453e5322a47fa5b8" },
     ],
@@ -37994,6 +38003,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 148.02, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FJ8NLMKP?tag=footballcult-21", title: "SSC Napoli Maglia Gara Home Ea7 Camiseta 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/P/B0FJ8NLMKP.01._SCLZZZZZZZ_.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-home-soccer-jersey-2025-26%3Fvariant%3D42557146366057", title: "Napoli Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Napoli_Home_Soccer_Jersey_2025_261.png?v=1760336805" },
       { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/287475227101?_skw=Napoli+home+soccer+jersey&hash=item42eedbd9dd%3Ag%3AOwgAAeSwcQBqXxmr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Napoli Shirt Champions League Home mens 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/OwgAAeSwcQBqXxmr/s-l225.jpg" },
     ],
@@ -71127,6 +71137,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 68.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DKJPZF6G?tag=footballcult-21", title: "PUMA BVB Home Jersey Replica", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71TlTNeHKGL._AC_SL1500_.jpg" },
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-borussia-dortmund-domicile-noir-jaune-784088-01%3Fvariant%3D54053036851541", title: "Maillot Borussia Dortmund Domicile Noir Jaune", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8878-1.jpg?v=1780401415" },
     ],
   },
@@ -72033,6 +72044,34 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Ffc-porto-home-soccer-jersey-2025-26%3Fvariant%3D42557175365737", title: "FC Porto Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/437af482548315a83afd0e9830ac1b75.png?v=1758073999" },
+    ],
+  },
+  {
+    id: "porto-retro-202223-home",
+    teamKey: "porto",
+    season: "2022/23",
+    typeKey: "retro",
+    colorHex: "#003C7D",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "new balance",
+    offers: [
+      { store: "Amazon", price: 80.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B09HN3V42D?tag=footballcult-21", title: "New Balance FC Porto 2022/23 Primera Equipacion Oficial", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/P/B09HN3V42D.01._SCLZZZZZZZ_.jpg" },
+    ],
+  },
+  {
+    id: "porto-home-kids",
+    teamKey: "porto",
+    season: "2022/23",
+    typeKey: "home",
+    colorHex: "#003C7D",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "new balance",
+    ageGroup: "kids",
+    offers: [
+      { store: "Amazon", price: 28.72, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B09HMVC6XW?tag=footballcult-21", title: "New Balance FC Porto Infant Home Kit 2022/23", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51pGIzNS69L._AC_SL1000_.jpg" },
+      { store: "Amazon", price: 65.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B09HMXCMRH?tag=footballcult-21", title: "New Balance FC Porto Baby Home Kit 2022/23 (3pc)", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/P/B09HMXCMRH.01._SCLZZZZZZZ_.jpg" },
     ],
   },
 {
