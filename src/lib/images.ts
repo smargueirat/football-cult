@@ -6,15 +6,11 @@
 // transformation we shrink images ourselves, for free, before they ever
 // reach next/image -- which then serves them `unoptimized` so Vercel's
 // optimizer never touches them again:
-//  - eBay (i.ebayimg.com) and the Awin proxy (images2.productserve.com)
-//    already serve ~200-225px thumbnails at the source. Nothing to gain
-//    from resizing further.
 //  - Shopify CDN (cdn.shopify.com, MysteryShirtClub's ~1000px photos)
 //    supports a native `?width=` resize param -- free, no third party.
-//  - Everything else (mostly direct full-res store photos, 1800-2400px --
-//    FootStoreFR/SportIsGoodFR/AdidasES etc.) gets routed through
-//    images.weserv.nl, an open-source, free, production-permitted image
-//    resize/cache proxy (backed by Cloudflare, edge-cached for a year).
+//  - Everything else gets routed through images.weserv.nl, an
+//    open-source, free, production-permitted image resize/cache proxy
+//    (backed by Cloudflare, edge-cached for a year).
 //
 // 2026-08-16: the short domain (wsrv.nl) started hanging indefinitely
 // (connection timeout, confirmed via curl -- other Cloudflare-backed
@@ -22,12 +18,18 @@
 // breaking product photos site-wide for anything not already small or
 // Shopify-hosted. Switched to the original/alternate domain for the
 // same service, images.weserv.nl, which responds normally.
-const ALREADY_SMALL_HOSTS = ["i.ebayimg.com", "images2.productserve.com"];
+//
+// 2026-08-22: eBay (i.ebayimg.com) and the Awin proxy
+// (images2.productserve.com) used to bypass weserv entirely on the
+// assumption their ~200-225px thumbnails were already small enough that
+// resizing had nothing to gain. Real bug: the point of weserv was never
+// just resizing, it's Cloudflare's year-long edge cache -- confirmed via
+// curl that both hosts take ~1-2s per cold request with no caching of
+// their own, vs ~0.05s once weserv has cached a URL. Site-wide "camisetas
+// tardan en cargar" traced to this, since the vast majority of products
+// carry an eBay offer. Routed both through weserv like everything else.
 
 export function getDisplaySrc(url: string, width: number): string {
-  if (ALREADY_SMALL_HOSTS.some((h) => url.includes(`://${h}/`))) {
-    return url;
-  }
   if (url.includes("://cdn.shopify.com/")) {
     const sep = url.includes("?") ? "&" : "?";
     return `${url}${sep}width=${width}`;
@@ -39,9 +41,9 @@ export function getDisplaySrc(url: string, width: number): string {
 // 500w/800w/1200w, ver JerseyGallery.tsx) a los que ya se cargaron en
 // la card del catálogo -- por más que sea la misma foto, son URLs
 // distintas, así que siempre es un pedido nuevo. Para wsrv.nl (el
-// proxy que se usa para fotos que no vienen de Shopify/eBay/Awin) la
-// PRIMERA vez que se pide un ancho puntual es un viaje real: wsrv tiene
-// que ir a buscar la foto original y recién devolverla.
+// proxy que se usa para fotos que no vienen de Shopify) la PRIMERA vez
+// que se pide un ancho puntual es un viaje real: wsrv tiene que ir a
+// buscar la foto original y recién devolverla.
 //
 // Antes esto solo precargaba 1200w -- pero el navegador elige QUÉ ancho
 // del srcSet pedir según el viewport real (en desktop, 45vw de una

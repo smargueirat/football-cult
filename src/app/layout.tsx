@@ -84,12 +84,9 @@ export default function RootLayout({
         />
         <meta name="verify-admitad" content="2666c15826" />
         <meta name="fo-verify" content="474f9e3b-cac4-4cea-9223-473788483f72" />
-        {/* Ahorra el DNS+TLS de la primera foto de cada dominio en vez de
-            pagarlo recién cuando el navegador la pide -- estos tres son
-            los que más se repiten en el catálogo (eBay, el proxy de Awin,
-            y images.weserv.nl para las fuentes que no vienen ya achicadas). */}
-        <link rel="preconnect" href="https://i.ebayimg.com" />
-        <link rel="preconnect" href="https://images2.productserve.com" />
+        {/* Ahorra el DNS+TLS de la primera foto en vez de pagarlo recién
+            cuando el navegador la pide -- casi todas las fotos del
+            catálogo pasan por este proxy (ver src/lib/images.ts). */}
         <link rel="preconnect" href="https://images.weserv.nl" />
       </head>
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
