@@ -39167,6 +39167,7 @@ const productsData = [
     colorHexSecondary: "#005187",
     jerseyPattern: "solid",
     offers: [
+      { store: "UK Soccer Shop", price: 53.65, shipping: 0.0, currency: "EUR", url: "https://sovrn.co/153rzld", title: "Joma Villarreal Home Shirt 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn1.uksoccershop.com/images/cache/re_1752545047_2025-2026-villarreal-joma-home-football-shirt-315x315.jpg" },
       { store: "eBay", price: 139.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236800013936?_skw=Villarreal+home+soccer+jersey&hash=item3722617670%3Ag%3AUg0AAeSwGYJp-i-t&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbn8jhTrRxnZF4Gw%2B44ktPvvtucgvFg%2F%2B5YsJQpW9u6kvqg71my%2ByUhGZQc5xTMkNMbdBwWqUnL4jTBXz%2BQh9saAtn6TJUplq2RQK4wAo6TpePxFis%2BekoFF3w6s0KK8aLuirpi4FAj5aEOr8vW0uC0Ygieo0VwWQkoGtf4TdeeMaHT4f6Ig6BlbLdxWpm1Zb54YGmbmw2QgLIc1%2BjPy0PNz4cB2DBnLg4RqUJAuaFY8%2F3Xcw%2Bbk2e875X4P5a%2BKxKdI5P2o%2BERNYKmfPTO9xngvAPidyeMDxCHPVh8K285L5fr53Zp3PYh6Ey4b4NRRSU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VILLARREAL C.F. - ORIGINAL HOME JERSEY - JOMA 2026  - ASK FOR AVAILABLE SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/Ug0AAeSwGYJp-i-t/s-l225.jpg" },
     ],
   },
