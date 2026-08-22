@@ -23719,6 +23719,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "nike",
     offers: [
+      { store: "Amazon", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.fr/dp/B0D3F5HLRF?tag=footballcul0c-21", title: "Nike Paris Saint-Germain Away Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61nuHNdoPYL._AC_SL1500_.jpg" },
       { store: "FootStoreES", price: 119.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45263181337&a=3013769&m=65912", title: "Maillot de manga larga Exterior PSG 2026/27", inStock: false, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iw9271-101-white-college-navy-college-navy-6a45a12f40f2f-1.webp&feedId=89032&k=8c11cff7c3650201cb3981654ec04e09596ac914" },
       { store: "eBay", price: 159.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168596733981?_skw=Paris+Saint-Germain+away+soccer+jersey&hash=item274126001d%3Ag%3AhqsAAeSwO2lqdl6z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike PSG Paris Saint-Germain 2026/27 Away Authentic Jersey Men’s Medium NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/hqsAAeSwO2lqdl6z/s-l225.jpg" },
     ],
@@ -25147,6 +25148,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 70.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.fr/dp/B0G1N9B89J?tag=footballcul0c-21", title: "Puma OM Home Jersey Replica", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71l7sDsy+nL._AC_SL1500_.jpg" },
       { store: "FootStoreES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41641436515&a=3013769&m=65912", title: "Camiseta Local OM 2025/26", inStock: true, sizes: ["XS", "S", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779801-01_1.webp&feedId=89032&k=e76118c678345f6da02d325a242ee8679def8091" },
       { store: "FootStoreFR", price: 55.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779801-01-maillot-domicile-om-2025-26-white", title: "Maillot Domicile OM 2025/26", inStock: true, sizes: ["XS", "S", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779801-01_1.webp" },
       { store: "SportIsGoodES", price: 55.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852329&a=3013769&m=65906", title: "Camiseta Local OM 2025/26", inStock: true, sizes: ["XS", "S", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779801-01_1.webp&feedId=89044&k=e76118c678345f6da02d325a242ee8679def8091" },
@@ -70759,6 +70761,18 @@ const productsData = [
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784339-03-maillot-exterieur-manchester-city-2026-27-puma-black-flaxen", title: "Maillot Extérieur Manchester City 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-784339-03-puma-black-flaxen-6a70669f1323b-1.webp" },
     ],
   },
+  {
+    id: "mancity-home-202627",
+    teamKey: "mancity",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#6CABDD",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Amazon", price: 76.06, shipping: 0.0, currency: "EUR", url: "https://www.amazon.fr/dp/B0G1N884JK?tag=footballcul0c-21", title: "PUMA Manchester City FC 2026/27 Replica Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61QG9QLpD6L._AC_SL1500_.jpg" },
+    ],
+  },
 {
     id: "manutd-away-202627",
     teamKey: "manutd",
@@ -72138,6 +72152,7 @@ const productsData = [
     colorHexSecondary: "#DA291C",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 109.94, shipping: 0.0, currency: "EUR", url: "https://www.amazon.fr/dp/B0FNRPFXBB?tag=footballcul0c-21", title: "Nike PSG Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71x4qM2pbkL._AC_SL1500_.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fpsg-home-soccer-jersey-2025-26-navy%3Fvariant%3D42557257318505", title: "PSG Home Soccer Jersey 2025/26 Navy", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/PSG_Home_Soccer_Jersey_2025_26_Navy-1.png?v=1760252482" },
     ],
   },
