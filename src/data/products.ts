@@ -31646,6 +31646,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "nike",
     offers: [
+      { store: "Amazon", price: 111.02, shipping: 0.0, currency: "EUR", url: "https://www.amazon.co.uk/dp/B0C94QG662?tag=footballcu0d7-21", title: "Nike Chelsea FC 2023/2024 Official Away Stadium Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61TlTxlJp5L._AC_SL1000_.jpg" },
       { store: "FootStoreES", price: 101.66, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=36485376644&a=3013769&m=65912", title: "Camiseta segunda equipación Authentic Chelsea 2023/24", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dx2612-428-phsfh001-ss25.webp&feedId=89032&k=2434d9150652f6a372d6b926d5c67109fd2f981c" },
       { store: "FootStoreFR", price: 100.09, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx2612-428-maillot-exterieur-authentique-chelsea-2023-24-blue", title: "Maillot Extérieur Authentique Chelsea 2023/24", inStock: true, sizes: ["S"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dx2612-428-phsfh001-ss25.jpg" },
       { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407144529508?_skw=Chelsea+away+soccer+jersey&hash=item5ecbb47e64%3Ag%3ATncAAeSwPoZqfydq&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbC20VK1pMIqfqX2yUAbhqSY197l%2FLyT%2BZaeme1ywwWhUiHaTcOSEfmxpn2rCir8sipvdN%2BNj%2FTO%2B1n8vxui5aOqK1JJAO2t1Zz3bGjPr%2BkmU%2B1js9%2Fm3JDdq80vJbeOzHAHjmQnXHy6EyEVS1Am1PETUreHHbOy0zMiiwu07T7OGVYZYOxhxs2aaQSvVXkdIqvHa6YrgpzH8doWx4D%2BgLgJ2ewQ852g9StHypnv1XkCJ2rKfvjE3J8N%2BViWevircMjMYnGL2lTXgqNS73AcdaA%2FLevJ7D3vTG9w1PawyQbmg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Chelsea FC 23/24 Match Away Soccer Jersey Blue Mens XL DX2612-428 NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/TncAAeSwPoZqfydq/s-l225.jpg" },
@@ -54369,6 +54370,19 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 47.5, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/335949446734?_skw=Chelsea+third+soccer+jersey&hash=item4e3825be4e%3Ag%3A6RMAAeSwXDtoGu-I&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaYIA9Z1Wu4GI9t3qdU%2Fpqr5bah9CS1OZOZHReZC3I20pdHwiiz1Aq3txd9ir%2FwJCdCM7IEU%2BOpF9cE5hwHgMUbDTYnJwLByw4aWSgld5lzZ1VVkr%2B8YjUimc9jjtxJRqdZQJT8DW%2Bzl%2FNkMwOUm4f5CX2dUDqarPtn3E5voVf%2BmyqqvQvj9%2FLH8EvpRx2%2FO7MI5zUmGrHJ%2B7DcXwXvqk6G6H8nViSkrfw%2FVIysNozX84lDujTcZ5%2FSRe6Mc48DlEVZBELZcHb1Nl%2BHtfBwHYydh8s7hnZMz8b6nMkgE9vu3g%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW NWT Chelsea Jersey Kit 2017 2018 Third Shirt Nike 2XL #11 HAGAN *HAS DEFECT*", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/6RMAAeSwXDtoGu-I/s-l225.jpg" },
+    ],
+  },
+  {
+    id: "chelsea-home-202526",
+    teamKey: "chelsea",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#034694",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "nike",
+    offers: [
+      { store: "Amazon", price: 169.38, shipping: 0.0, currency: "EUR", url: "https://www.amazon.co.uk/dp/B0FHKZ5VFR?tag=footballcu0d7-21", title: "Nike FC Chelsea 2025/26 Match Home Authentic Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71uREd4Ch2L._AC_SL1500_.jpg" },
     ],
   },
 {
