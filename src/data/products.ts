@@ -6071,6 +6071,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 55.25, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0DLDGVRRF?tag=footballcu047-21", title: "Joma Atalanta Home Match Shirt 2024/2025", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51azp0oBfNL._AC_.jpg" },
       { store: "eBay", price: 65.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/197333145306?_skw=Atalanta+home+soccer+jersey&hash=item2df1f8d6da%3Ag%3ARKcAAOSwxfxoKp09&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW! - Joma Atalanta 2024-25 Home Jersey football soccer shirt maglia calcio - M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/RKcAAOSwxfxoKp09/s-l225.jpg" },
     ],
   },
@@ -29425,6 +29426,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "macron",
     offers: [
+      { store: "Amazon", price: 98.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0FSDM9XY5?tag=footballcu047-21", title: "Macron Bologna FC 1909 Adult Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51QQ4vSY1QL._AC_SL1200_.jpg" },
       { store: "FootStoreFR", price: 73.12, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F700099180001-maillot-domicile-bologne-2025-26-rouge-bleu", title: "Maillot Domicile Bologne 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_700099180001_rouge-bleu_1.webp" },
       { store: "SportIsGoodFR", price: 74.45, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F700099180001-maillot-domicile-bologne-2025-26-rouge-bleu", title: "Maillot Domicile Bologne 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_700099180001_rouge-bleu_1.webp" },
       { store: "eBay", price: 89.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377047605537?_skw=Bologna+home+soccer+jersey&hash=item57c9c9e121%3Ag%3AP5kAAeSwO61pvDsg&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYkY5vkf99UwE9x3%2FPnRdYs2ZnMoF%2BDb%2Bomiqa0DNV42TZjdob%2BwG0jOSpXQe4p9ovrQttcFP%2Fzg%2BXE6nqCoJ2mF5uH4TD%2FTjznHu%2FqZzKZoDVLQBS2J4VdhHVOCROS%2FIXJV9uH2%2Fe9NlyuwnyTizIoAF2EWPXWqBVDfplhFSxuSdbf9lB0pxxZg48PIU%2BjDVsZ5p4zdWA52XR2WV8iiPhwFN9OYb1a4AwGt%2FlWxonWgmHIl2HVemgYmEQELkszPIxOaKz69lB6%2BrE6ElcM1wjWUG2d3Ohsp5EIYU8qucLEYw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron Bologna FC 1909 2025/26 Home Jersey Saputo Red Blue Men’s XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/P5kAAeSwO61pvDsg/s-l225.jpg" },
