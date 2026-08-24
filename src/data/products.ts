@@ -72503,6 +72503,19 @@ const productsData = [
       { store: "FootStoreFR", price: 84.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1237130-60-0-maillot-third-west-ham-2025-26-muticolore", title: "Maillot Third West Ham 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/1/2/1237130-60-0.webp" },
     ],
   },
+{
+    id: "paisesbajos-away-202627",
+    teamKey: "paisesbajos",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#FF6600",
+    jerseyPattern: "solid",
+    brand: "nike",
+    offers: [
+      { store: "MysteryShirtClub", price: 64.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-netherlands-away-shirt-501804", title: "2026-2027 Netherlands Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0974/5390/0111/files/re_1776278851_2026-2027-netherlands-nike-away-football-shirt.jpg?v=1782814820" },
+    ],
+  },
 ];
 
 // El array de arriba (sin anotación de tipo explícita) evita TS2590
