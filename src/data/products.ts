@@ -25720,6 +25720,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "adidas",
     offers: [
+      { store: "Amazon", price: 50.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.fr/dp/B0FFY66BXZ?tag=footballcul0c-21", title: "adidas Olympique Lyon Away Shirt 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/713TaHt+NhL._AC_SL1500_.jpg" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41634729250&a=3013769&m=77008", title: "Camiseta segunda equipación Olympique de Lyon 25/26", inStock: true, sizes: ["XS", "S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb4b98d9a342f481aa3da2184321d3472_9366%2FCamiseta_segunda_equipacion_Olympique_de_Lyon_25-26_Azul_JD1393_21_model.jpg&feedId=92152&k=3e8729eadeeb25b2c2c0379bc3265bbbdb4e85c0" },
       { store: "AdidasPT", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41634713800&a=3013769&m=77026", title: "Camisola Alternativa 25/26 do Olympique Lyonnais", inStock: true, sizes: ["XS", "S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb4b98d9a342f481aa3da2184321d3472_9366%2FCamisola_Alternativa_25-26_do_Olympique_Lyonnais_Azul_JD1393_21_model.jpg&feedId=92150&k=99ffef52e99e12d874e463bdcf9938b19fc2ac93" },
       { store: "PlanetFoot", price: 64.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-olympique-lyonnais-exterieur-homme-2025-26-bleu%3Fvariant%3D51026992824661", title: "Maillot Olympique Lyonnais Extérieur Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-ol-25-26-adulte-adidas-planetfoot1.jpg?v=1755351358" },
@@ -70894,6 +70895,19 @@ const productsData = [
     offers: [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-olympique-de-marseille-third-homme-2026-27-bleu-marine-lavendar-pop-784274-03%3Fvariant%3D54464897909077", title: "Maillot Olympique de Marseille Third Homme 2026/27 Bleu Marine Lavendar Pop", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_9108-1.jpg?v=1785005218" },
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45457201318&a=3013769&m=65906", title: "Maillot Tercero OM 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784274-03-lavendar-pop-new-navy-6a5fab7565c2c-1.webp&feedId=89044&k=f1f5ab80b25fe313ddaaf0a6cf14e2ef296d0805" },
+    ],
+  },
+  {
+    id: "marseille-away-202627",
+    teamKey: "marseille",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#0A1E3C",
+    colorHexSecondary: "#5FBEDB",
+    jerseyPattern: "solid",
+    brand: "puma",
+    offers: [
+      { store: "Amazon", price: 58.88, shipping: 0.0, currency: "EUR", url: "https://www.amazon.fr/dp/B0G1NBW3T1?tag=footballcul0c-21", title: "PUMA Olympique de Marseille Away Jersey Replica 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61VHe8oUfoL._AC_SL1000_.jpg" },
     ],
   },
 {
