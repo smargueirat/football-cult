@@ -25250,6 +25250,7 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 62.61, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0FG14F1WC?tag=footballcul07-21", title: "PUMA RB Leipzig Authentic Away Jersey 2025 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61aB92A1LqL._AC_SL1200_.jpg" },
       { store: "FootStoreES", price: 53.18, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41641436528&a=3013769&m=65912", title: "Maillot Exterior RB Leipzig 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779881-05_1.webp&feedId=89032&k=fabe17880934f07955a2a8df16b6389232486016" },
       { store: "SportIsGoodES", price: 52.92, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852429&a=3013769&m=65906", title: "Maillot Exterior RB Leipzig 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779881-05_1.webp&feedId=89044&k=fabe17880934f07955a2a8df16b6389232486016" },
       { store: "FootStoreFR", price: 51.9, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779881-05-maillot-exterieur-rb-leipzig-2025-26-blue", title: "Maillot Extérieur RB Leipzig 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779881-05_1.webp" },
@@ -25268,6 +25269,8 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0GZVNZ74M?tag=footballcul07-21", title: "PUMA RB Leipzig Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61D56r7R4QL._AC_SL1417_.jpg" },
+      { store: "Amazon", price: 47.33, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0G1N8TN8B?tag=footballcul07-21", title: "PUMA RB Leipzig Home Jersey Replica", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71eJry8tOAL._AC_SL1500_.jpg" },
       { store: "FootStoreES", price: 53.18, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41332003660&a=3013769&m=65912", title: "Camiseta Local RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779876-01_1.webp&feedId=89032&k=2e0c452fc3ed4e43976d93f27d531e96579c5e18" },
       { store: "FootStoreFR", price: 51.9, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779876-01-maillot-domicile-rb-leipzig-2025-26-white", title: "Maillot Domicile RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779876-01_1.webp" },
       { store: "SportIsGoodES", price: 52.92, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301852345&a=3013769&m=65906", title: "Camiseta Local RB Leipzig 2025/26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_779876-01_1.webp&feedId=89044&k=2e0c452fc3ed4e43976d93f27d531e96579c5e18" },
@@ -39114,6 +39117,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
+      { store: "Amazon", price: 89.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0HC7CMN98?tag=footballcul07-21", title: "JAKO VfB Stuttgart Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61nw6P+R6EL._AC_SL1200_.jpg" },
       { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728951280?_skw=VfB+Stuttgart+home+soccer+jersey&hash=item371e2521f0%3Ag%3AWEYAAeSwJ5dpb3nn&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaWE%2FKhMiZEeBh%2B2gGbzFVTpGIOXiMqweebeQbkF2Asl%2Fa8KAVuIRTqkMVvVH1KBvf3i2ayH2ZQsM0x24riRJe80OwsZhQnz5pwI7zY5P74dJuWhLdEoWR8%2Fq%2B4pAh959MkT93%2F91Svok7wbCl5hVGRindVq2jyckCkfXeqo%2BtAT445XPEgIt2cNJEX3eLbZHFcnMssYQH7zhjTn8S7SzjhbOp8cr76Ln2T1Y4bIbSk9YXNrEzuzVknD7YcMENlAABbu97i0Fo14lH28vZA93UvmN5JSROmFSQhwFtKWd8z6sOWxKziuddnGBUwdUgQBdg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Vfb STUTTGART - ORIGINAL WHITE HOME Jersey 2026 - Jako - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/WEYAAeSwJ5dpb3nn/s-l225.jpg" },
     ],
   },
@@ -50194,6 +50198,19 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 69.89, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44852075390&a=3013769&m=65912", title: "Camisa de visitante VfB Stuttgart 1987/89", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2Fo%2Fcopa-football-576-005-red-6a1048838a284-1.webp&feedId=89032&k=fe27f2c21f99d61620afbc683489c3857bd1d397" },
       { store: "FootStoreFR", price: 69.05, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F576-005-maillot-exterieur-vfb-stuttgart-1987-89-red", title: "Maillot Extérieur VfB Stuttgart 1987/89", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/c/o/copa-football-576-005-red-6a1048838a284-1.webp" },
+    ],
+  },
+  {
+    id: "stuttgart-training-2026",
+    teamKey: "stuttgart",
+    season: "2026",
+    typeKey: "training",
+    colorHex: "#E32219",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "jako",
+    offers: [
+      { store: "Amazon", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0HCVPDKGW?tag=footballcul07-21", title: "JAKO VfB Stuttgart Training Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/51Cj4lw+P-L._AC_SL1200_.jpg" },
     ],
   },
 {
