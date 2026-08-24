@@ -10,22 +10,19 @@ const AUTO_ADVANCE_MS = 5500;
 
 // Foto exacta curada a mano por slide -- se revisaron las fotos reales
 // del catálogo (no cualquier oferta del producto: la URL puntual que
-// se ve acá) y se eligió la mejor concreta de cada categoría, con una
-// persona puesta la camiseta siempre que existiera esa toma en el
-// catálogo (selecciones/clubes/niños/mujer la tienen -- selecciones,
-// clubes y niños se encontraron vía la variante "apparel_on_model" que
-// algunos feeds de Awin traen; la de mujer es una oferta de eBay del
-// Tottenham away con modelo real). Retro es la única sin ninguna foto
-// con modelo en todo el catálogo (se revisó a mano), así que ahí queda
-// la mejor foto de producto disponible. Se usa la URL de alta
-// resolución del proveedor directamente (no el thumbnail chico que
-// guarda la oferta) para que se vea nítida a este tamaño.
+// se ve acá) y se eligió la mejor concreta de cada categoría, siempre
+// con una persona puesta la camiseta (apparel-on-model, no flat lay ni
+// maniquí fantasma) -- cada URL se descargó y se miró antes de usarla.
+// Se usa la URL de alta resolución del proveedor directamente (no el
+// thumbnail chico que guarda la oferta) para que se vea nítida a este
+// tamaño. Refresh semanal (routine "refresh weekly hero banner
+// photos"): se rota a fotos distintas de las de la semana anterior.
 const CURATED_SLIDE_PHOTOS: string[] = [
-  "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jm8396_4_apparel_on_model_standard_view_white.webp", // selecciones: Argentina 2026, con modelo
-  "https://cdn.blazimg.com/1800/product/a/d/adidas_ji9511_3_apparel_on_model_standard_view_white.webp", // clubes: Arsenal 25/26, con modelo
-  "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cantona_7_Retro_Manchester_United_Home_Jersey_199294_2.webp?v=1766469606", // retro: Cantona 7, Man United 1992/94
-  "https://i.ebayimg.com/images/g/3yYAAOSwN8NniF15/s-l1600.jpg", // mujer: Tottenham away 2024/25, con modelo
-  "https://cdn.blazimg.com/1800/product/2/0/2025_adidas_jn8887_3_apparel_on_model_standard_view_white.webp", // niños: Real Madrid, con modelo
+  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/cb30bb7e33dc49afa7d3dcb0da3bdb4a_9366/Camiseta_primera_equipacion_Colombia_26_Amarillo_JL6972_21_model.jpg", // selecciones: Colombia 2026, con modelo
+  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/1326ee23fe114676909df9508f1e3b61_9366/Camiseta_primera_equipacion_de_Boca_Juniors_25-26_Azul_JJ4298_21_model.jpg", // clubes: Boca Juniors 25/26, con modelo
+  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/1eb1081d24de4c72a3aba41d9be1025b_9366/Camiseta_segunda_equipacion_Newcastle_United_FC_95-96_Azul_JM8252_21_model.jpg", // retro: Newcastle United 1995/96 away, con modelo
+  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/94ae188e712c487f9e28e47fcc83803b_9366/Camiseta_primera_equipacion_Alemania_2007_Blanco_KD3997_21_model.jpg", // mujer: Alemania 2007, con modelo
+  "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp", // niños: Italia 2026, con modelo
 ];
 
 export default function HeroCarousel() {
