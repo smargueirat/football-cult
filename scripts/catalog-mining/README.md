@@ -471,7 +471,7 @@ python3 refresh.py ../../src/data/products.ts /tmp/picks_ADD.json FootStoreES EU
 
 Repeat per store: FootStoreES, FootStoreFR, SportIsGoodES, SportIsGoodFR,
 PlanetFoot, AdidasES, AdidasPT, BSTNIT, ComoFC, DeporteOutlet,
-FansJerseyHub — each has a slightly different column layout, see the
+FansJerseyHub, ForumSport — each has a slightly different column layout, see the
 `FEED_URLS`/`FeedRow` handling in `src/app/api/cron/check-prices/route.ts`
 for the price-field quirks (Google-format feeds put the real charged
 price in `sale_price`, not `price`).
@@ -488,6 +488,7 @@ python3 pick.py f.csv search_price delivery_cost out.json product_name custom_1 
 python3 pick.py f.csv search_price delivery_cost out.json product_name size_stock_status aw_deep_link aw_image_url          # DeporteOutlet — custom_1 holds "Envío inmediato" shipping text, NOT size
 python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url custom_2 # AdidasES, AdidasPT — custom_1 now holds "Adult"/"Kids", real size moved to Fashion:size; custom_2 is still the real sport-category column
 python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url          # BSTNIT — same Fashion:size relocation, no sport_category_col needed
+python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url          # ForumSport — huge 107K-row generic sporting-goods feed; filter to product_type in {fútbol > camiseta de fútbol oficiales, ... niño, fútbol > camiseta portero, ... niño} BEFORE running pick.py, or you'll pick from every sport on the site
 
 # Google-shopping format (price/sale_price, title, aw_deep_link, image_link)
 python3 pick.py f.csv price shipping out.json title size aw_deep_link image_link  # ComoFC, FansJerseyHub, FootStoreFR, PlanetFoot, SportIsGoodFR
