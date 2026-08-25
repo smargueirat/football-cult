@@ -19,6 +19,9 @@ export default function Header() {
         <div className="flex items-center gap-1 sm:gap-4">
           <MobileMenu />
           <Link href="/" className="flex items-center gap-1.5 sm:gap-2.5">
+            {/* unoptimized: renders on every page, was burning the 5K/mo
+                Vercel Image Optimization quota by itself (see lib/images.ts
+                for the same fix applied to product photos). */}
             <Image
               src="/logo-badge.png"
               alt={t.brand}
@@ -26,6 +29,7 @@ export default function Header() {
               height={56}
               className="h-10 w-10 sm:h-14 sm:w-14"
               priority
+              unoptimized
             />
             <span className="flex flex-col leading-none">
               <span className="font-vintage text-sm leading-none text-[#1B3B2B] sm:text-xl">

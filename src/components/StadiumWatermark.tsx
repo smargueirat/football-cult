@@ -67,6 +67,7 @@ export default function StadiumWatermark() {
           alt=""
           fill
           priority
+          unoptimized
           className="object-cover opacity-[0.2]"
         />
       </div>
