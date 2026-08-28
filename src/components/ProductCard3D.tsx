@@ -137,10 +137,9 @@ export default function ProductCard3D({ product }: { product: Product }) {
               decoding="async"
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
-              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
-                imageLoaded ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm ${
+                imageLoaded ? "photo-settle-in" : "opacity-0"
               }`}
-              style={{ transform: "translateZ(24px)" }}
             />
           </>
         ) : (
