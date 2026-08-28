@@ -500,7 +500,7 @@ export default function SearchExplorer() {
                 className="card-rise-in"
                 style={{ animationDelay: `${(i % 12) * 35}ms` }}
               >
-                <ProductCard product={product} />
+                <ProductCard product={product} priority={i < 8} />
               </div>
             ))}
           </div>
