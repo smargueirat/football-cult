@@ -28,7 +28,13 @@ const MAX_TILT_DEG = 9;
 // está el cursor sobre la tarjeta) en vez de un brillo/luz sobre la
 // foto -- exactamente lo que se pidió sacar en la versión anterior.
 // Nada de esto se mueve si el usuario prefiere movimiento reducido.
-export default function ProductCard3D({ product }: { product: Product }) {
+export default function ProductCard3D({
+  product,
+  priority = false,
+}: {
+  product: Product;
+  priority?: boolean;
+}) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { countryCode } = useCountry();
@@ -133,7 +139,8 @@ export default function ProductCard3D({ product }: { product: Product }) {
               srcSet={`${getDisplaySrc(photo, 260)} 260w, ${getDisplaySrc(photo, 420)} 420w, ${getDisplaySrc(photo, 600)} 600w`}
               sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
               alt={displayName}
-              loading="lazy"
+              loading={priority ? "eager" : "lazy"}
+              fetchPriority={priority ? "high" : "auto"}
               decoding="async"
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
