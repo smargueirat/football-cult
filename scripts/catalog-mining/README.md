@@ -471,7 +471,7 @@ python3 refresh.py ../../src/data/products.ts /tmp/picks_ADD.json FootStoreES EU
 
 Repeat per store: FootStoreES, FootStoreFR, SportIsGoodES, SportIsGoodFR,
 PlanetFoot, AdidasES, AdidasPT, BSTNIT, ComoFC, DeporteOutlet,
-FansJerseyHub — each has a slightly different column layout, see the
+FansJerseyHub, ForumSport — each has a slightly different column layout, see the
 `FEED_URLS`/`FeedRow` handling in `src/app/api/cron/check-prices/route.ts`
 for the price-field quirks (Google-format feeds put the real charged
 price in `sale_price`, not `price`).
@@ -488,6 +488,7 @@ python3 pick.py f.csv search_price delivery_cost out.json product_name custom_1 
 python3 pick.py f.csv search_price delivery_cost out.json product_name size_stock_status aw_deep_link aw_image_url          # DeporteOutlet — custom_1 holds "Envío inmediato" shipping text, NOT size
 python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url custom_2 # AdidasES, AdidasPT — custom_1 now holds "Adult"/"Kids", real size moved to Fashion:size; custom_2 is still the real sport-category column
 python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url          # BSTNIT — same Fashion:size relocation, no sport_category_col needed
+python3 pick.py f.csv search_price delivery_cost out.json product_name "Fashion:size"   aw_deep_link aw_image_url          # ForumSport — huge 107K-row generic sporting-goods feed; filter to product_type in {fútbol > camiseta de fútbol oficiales, ... niño, fútbol > camiseta portero, ... niño} BEFORE running pick.py, or you'll pick from every sport on the site
 
 # Google-shopping format (price/sale_price, title, aw_deep_link, image_link)
 python3 pick.py f.csv price shipping out.json title size aw_deep_link image_link  # ComoFC, FansJerseyHub, FootStoreFR, PlanetFoot, SportIsGoodFR
@@ -1545,3 +1546,101 @@ batch, only 14 were genuinely new; 148 already existed as retro products
 (116 of those were exact re-discoveries of an offer already on file, only 32
 needed a new offer merged in) -- always check against existing full ids for
 retro, never against typeKey.
+
+## Daily pass (2026-08-22) -- season_conflict false positives are often exact duplicate offers hiding behind a season-notation mismatch
+
+Ran the full daily pass: all 12 Awin stores (ProSoccer confirmed footwear-only
+again, skipped), MysteryShirtClub, all 5 Rakuten Brazilian club feeds, and one
+`ebay_mine_cycle.py` batch (60 teams, 137/385 done in cycle 1). 46 new products
+added, 0 removed, `tsc`/dupe-id/build all clean.
+
+**Recurring pattern found across FOUR independent sources this pass: a
+`season_conflict` pick is frequently not a new season at all -- it's an
+offer already sitting in the catalog, just re-scraped with a different season
+notation than the one already on file.** Before generating a `season_conflict`
+pick as a new product, check whether its exact offer URL already appears
+somewhere in `products.ts` -- if it does, it's a duplicate-to-merge (route
+through the normal add/replace path against the existing id), not a new
+product. Confirmed hits this pass:
+- **AdidasES**: `japon|home` (pick "26/27" vs catalog's `japon-home-2026`)
+  and `lagalaxy|away` (pick "25/26" vs catalog's `lagalaxy-away-2025`) --
+  both picks' exact URLs were already offers inside those existing blocks.
+- **AdidasPT**: `lagalaxy|away` (same offer, same URL, picked again) and
+  `celtic|training` -- both already on file.
+- **BSTNIT**: `intermiami|third` (pick "2025" vs catalog's "2025/26") --
+  same photo confirmed (just a different crop/angle), same real jersey.
+- **MysteryShirtClub**: 5 hits -- `coreadelsur|away`, `haiti|home`,
+  `brasil|away`, `brasil|home`, `paisesbajos|away`, all against MSC's own
+  generic `"2026-2027 <Team>... Shirt"` template title (the exact
+  already-documented false-positive class, confirmed again by pixel-identical
+  image URL already on file).
+- **eBay retro** (`ebay_mine_cycle.py`): of 209 raw retro picks, only 17 were
+  genuinely new products; 190 already matched an existing full id
+  (`{team}-retro-{season}-{type}`), and of those 44 needed a new store offer
+  merged in (the rest, 146, were exact re-discoveries of an offer already on
+  file -- same ratio as the 2026-08-21 entry above).
+
+**New false-positive class confirmed, not just a one-off**: `pumasunam|third`
+(current pick, "Custom LIGA MX Pumas UNAM 2026 Third Design 3D Shirt") and
+`pumasunam|away|2023` (retro pick, "Custom Name - LIGA MX Pumas UNAM Shirt 3D
+2023 - 2024") -- more hits of the already-documented unlicensed
+Personalized/Custom/3D sublimation reproduction pattern, this time for a
+team not previously seen with this exact issue. Dropped both.
+
+**"Tiro 25 Competition" (adidas's training-template name) misread as season
+"2025" -- recurring, not a one-off.** Two more hits this pass, both AdidasPT:
+`juventus|training` and `newcastle|training`. Both are real, already-catalogued
+training tops (same design already on file under `-202526`), just re-listed
+with updated SKU/price under the same "Tiro 25" wording that `detect_season()`
+reads as a bare year. Merged as offer replacements into the existing blocks by
+hand rather than generating spurious new products -- this class (a product
+line name that contains a plausible-looking year, distinct from the
+"Como 1907"/"Salernitana 1919" team-name-embeds-a-year class already
+documented) is worth a real fix in `detect_season()`/`is_old_season()` if a
+third team hits it.
+
+**Team name embeds a year, again -- new team hit by the "Como 1907" class**:
+an eBay retro pick titled "Parma Calcio 1913 XL Home Jersey Puma BNWT Hernan
+Crespo" generated id `parmacalcio-retro-1913-home` -- "1913" is Parma's own
+founding year in the club's official name, not a season (the real jersey,
+confirmed by photo -- Puma logo, Parmalat sponsor -- is from the late-1990s
+Crespo era, roughly 1996-99, but the exact season can't be confidently
+determined from the title alone). Dropped rather than guessing a season label;
+`retro_extract.py`'s team-name-masking fix apparently doesn't cover this
+team's pattern yet (parma's `TEAM_PATTERNS` regex likely doesn't include the
+"1913" suffix the way `salernitana`'s was extended to `\bsalernitana\b(\s+1919)?`
+-- same fix would apply here if this recurs).
+
+**Two more country-key-matches-domestic-club false positives** (same class as
+the India/Zambia and Scotland/England/Turkey/Qatar entries documented above):
+`botswana|third|2021/22` was actually **Township Rollers** (a real Botswana
+Premier League club, Stanbic Bank sponsor visible in the photo) and
+`myanmar|home|2012` was actually **Yangon United** (a real Myanmar National
+League club, airBagan sponsor visible) -- both dropped. A second Myanmar pick
+this same pass (`myanmar|home|2018/19`, Warrix-branded, explicitly titled
+"MYANMAR ... National Soccer Football Jersey" with a flag patch in the photo)
+was confirmed genuine and kept -- a reminder that a country key hitting this
+false-positive class once doesn't mean every pick for that key is bad; keep
+checking each one by title wording + photo.
+
+**Two new genuine season-redesign products confirmed by photo, not just a
+title year bump**: `francia-away-2025` (a cream/beige Nike design with the
+rooster crest, genuinely different from the already-catalogued mint-green
+2026 World Cup away kit) and `paisesbajos-away-2025` (light blue with a black
+lion crest and "oranje" collar tag, genuinely different from the catalogued
+navy/orange 2026 World Cup away kit) -- both from FootStoreES, both real,
+distinct Nike releases sold alongside the World Cup kit, not reissues of it.
+Also 3 new Lazio 2026/27 products (home/away/goalkeeper, Mizuno-branded, real
+crest) and a third genuine Bayern Munich prematch design
+(`bayern-prematch-2025`, camo pattern, distinct from the two prematch designs
+already on file) from PlanetFoot.
+
+**FansJerseyHub: 20 `season_conflict` picks, all confirmed genuine by photo,
+none were false positives this time** -- every one had the store's pick
+season OLDER than the catalog's own (e.g. pick "2025/26" vs catalog's already
+-202627 product), the reverse of the usual "new season just arrived" direction.
+Spot-checked 7 by photo (Leeds away, West Ham away, El Salvador home, NYCFC
+away, Bayern prematch) against the existing catalog image each time -- all
+were genuinely different, real licensed jerseys (this store apparently
+carries older-season/alternate-design stock alongside its newest listings),
+not the same design re-titled. Generated as 20 new products.

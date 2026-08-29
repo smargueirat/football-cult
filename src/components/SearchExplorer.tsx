@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   Product,
   SEASONS,
@@ -149,8 +149,16 @@ export default function SearchExplorer() {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [filtersOpen, sortOpen]);
 
+  // El input sigue atado a `query` (así el texto tipeado no se atrasa
+  // nunca), pero el filtro pesado de abajo -- recorre las 5500+ camisetas
+  // en cada letra -- usa esta versión "diferida": React la actualiza
+  // después de la letra en sí, sin competir por el mismo frame. Sin
+  // esto, cada tecla se sentía trabada en un celular real (~35-90ms de
+  // bloqueo del hilo principal, medido).
+  const deferredQuery = useDeferredValue(query);
+
   const results = useMemo(() => {
-    const queryWords = normalizeSearchText(query.trim())
+    const queryWords = normalizeSearchText(deferredQuery.trim())
       .split(/\s+/)
       .filter(Boolean);
 
@@ -284,7 +292,7 @@ export default function SearchExplorer() {
       return sortBy === "priceDesc" ? totalB - totalA : totalA - totalB;
     });
   }, [
-    query,
+    deferredQuery,
     locale,
     typeFilter,
     categoryFilter,

@@ -296,6 +296,28 @@ body {
   animation: card-rise-in 320ms ease-out both;
 }
 
+/* Igual que card-rise-in pero para la foto en sí (ver ProductCard3D),
+   disparada por su propio onLoad -- no al montar la tarjeta. Las fotos
+   nunca antes pedidas pueden tardar 1-2s en el proxy de imágenes (ver
+   lib/images.ts); sin esto, la tarjeta ya está asentada en su lugar y
+   la foto simplemente aparece de golpe encima, que se lee como demora.
+   Con esto, cada foto "se destapa" igual que la tarjeta lo hizo,
+   apenas está lista -- se siente parte del mismo gesto en vez de un
+   segundo paso pegado después. */
+@keyframes photo-settle-in {
+  from {
+    opacity: 0;
+    transform: translateZ(24px) translateY(8px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(24px) translateY(0) scale(1);
+  }
+}
+.photo-settle-in {
+  animation: photo-settle-in 280ms ease-out both;
+}
+
 /* Zoom lento (Ken Burns) sobre la foto del slide activo del carrusel
    del home -- se aplica y se saca la clase cada vez que cambia el
    slide activo (ver HeroCarousel.tsx), así que arranca de cero cada

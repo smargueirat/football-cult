@@ -20,17 +20,33 @@ export function useLiveOfferTotal(offer: Offer | undefined, countryCode: string)
     setLiveTotal(null);
     if (!offer || offer.store !== "eBay") return;
     let cancelled = false;
-    fetch(`/api/ebay-shipping?url=${encodeURIComponent(offer.url)}&country=${countryCode}`)
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (cancelled || !data || data.shipping == null) return;
-        const currency = data.currency ?? offer.currency;
-        if (currency !== offer.currency) return;
-        setLiveTotal(offer.price + data.shipping + (data.importCharges ?? 0));
-      })
-      .catch(() => {});
+
+    // El catálogo monta las ~24 cards de una sola vez (no son lazy como
+    // las fotos), así que sin esto todas piden su envío real de eBay en
+    // el mismo instante -- una ráfaga de fetches simultáneos compitiendo
+    // por ancho de banda justo cuando las fotos también están cargando.
+    // requestIdleCallback corre esto recién cuando el navegador ya
+    // terminó lo urgente (pintar/cargar lo visible), en vez de a la
+    // fuerza en el mismo tick que el mount.
+    const idle =
+      window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 1));
+    const cancelIdle = window.cancelIdleCallback ?? clearTimeout;
+    const handle = idle(() => {
+      if (cancelled) return;
+      fetch(`/api/ebay-shipping?url=${encodeURIComponent(offer.url)}&country=${countryCode}`)
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          if (cancelled || !data || data.shipping == null) return;
+          const currency = data.currency ?? offer.currency;
+          if (currency !== offer.currency) return;
+          setLiveTotal(offer.price + data.shipping + (data.importCharges ?? 0));
+        })
+        .catch(() => {});
+    }, { timeout: 2000 });
+
     return () => {
       cancelled = true;
+      cancelIdle(handle as number);
     };
   }, [offer, countryCode]);
 

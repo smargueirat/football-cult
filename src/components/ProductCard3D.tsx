@@ -99,6 +99,10 @@ export default function ProductCard3D({
     prefetchDetailPhoto(photo);
   }
 
+  // content-visibility:auto -- "Ver más" solo agrega cards, nunca las
+  // desmonta, así que después de varias páginas hay cientos montadas a
+  // la vez. Esto le dice al navegador que se salte layout/paint de las
+  // que están lejos del viewport (nativo, sin librería de virtualización).
   return (
     <Link
       ref={cardRef}
@@ -116,7 +120,7 @@ export default function ProductCard3D({
           ? `${-tilt.y * 1.8}px ${22 - tilt.x * 1.2}px 38px -10px rgba(43, 32, 10, 0.55), ${-tilt.y * 0.6}px ${8 - tilt.x * 0.4}px 14px -6px rgba(43, 32, 10, 0.35)`
           : "0 14px 28px -10px rgba(43, 32, 10, 0.45)",
       }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform [content-visibility:auto] [contain-intrinsic-size:1px_420px]"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
@@ -140,10 +144,9 @@ export default function ProductCard3D({
               decoding="async"
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
-              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-opacity duration-300 ${
-                imageLoaded ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm ${
+                imageLoaded ? "photo-settle-in" : "opacity-0"
               }`}
-              style={{ transform: "translateZ(24px)" }}
             />
           </>
         ) : (
