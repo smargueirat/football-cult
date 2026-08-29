@@ -25,6 +25,8 @@ For each store: mine for jerseys of teams/types not yet in src/data/products.ts 
 
 Also run \`python3 scripts/catalog-mining/ebay_check_stale.py\` (no args = default 200/day batch) — eBay listings get sold/delisted after we mine them, and nothing else re-checks an already-mined offer, so this catches ones that have since gone dead (confirmed real 2026-08-28: 54 of the first 300 checked, ~18%, were genuine 404s from eBay's own API) and flips them to \`inStock: false\` directly in products.ts. It persists its cycle position in ebay_stale_check_state.json (next to the script) — git add and commit that file alongside products.ts every time, same reason as ebay_full_cycle_state.json above (losing it just repeats the same batch instead of progressing through the catalog).
 
+Finally, run \`python3 scripts/catalog-mining/track_price_drops.py\` LAST, after every other store/offer update above has already landed in products.ts — it diffs today's prices against yesterday's snapshot (price_snapshot.json, next to the script) and flags every offer that got cheaper with a \`previousPrice\` field, which is what powers the site's price-drop badge/section/filter (\"Mercado de Pases\"). git add and commit price_snapshot.json alongside products.ts every time, same reason as the other state files — it's how tomorrow's run knows what \"yesterday\" looked like.
+
 After applying changes: npx tsc --noEmit, dupe-check id fields in products.ts, npm run build, commit and push (triggers Vercel deploy), then verify the live site (football-cult.com) responds 200. If nothing new is found, just say so — don't force a commit." \
   --permission-mode auto \
   --output-format text \

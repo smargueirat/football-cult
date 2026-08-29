@@ -12,6 +12,7 @@ import {
   getAgeGroup,
   products,
   isVintageRetro,
+  productPriceDropped,
   seasonSortValue,
   shipsToCountry,
   sortSafeOfferTotalInEUR,
@@ -85,6 +86,8 @@ export default function SearchExplorer() {
     setColorFilter,
     priceRange,
     setPriceRange,
+    onSaleFilter,
+    toggleOnSaleFilter,
     sortBy,
     setSortBy,
     activeFilterCount,
@@ -222,6 +225,7 @@ export default function SearchExplorer() {
       const matchesColor =
         colorFilter.length === 0 || colorFilter.includes(productColorKey(p));
       const matchesShipping = shipsToCountry(p, countryCode);
+      const matchesOnSale = !onSaleFilter || productPriceDropped(p, countryCode);
       const matchesPriceRange = (() => {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
         const best = bestOfferForCountry(p, countryCode);
@@ -242,7 +246,8 @@ export default function SearchExplorer() {
         matchesSize &&
         matchesColor &&
         matchesShipping &&
-        matchesPriceRange
+        matchesPriceRange &&
+        matchesOnSale
       );
     });
 
@@ -302,6 +307,7 @@ export default function SearchExplorer() {
     sizeFilter,
     colorFilter,
     priceRange,
+    onSaleFilter,
     countryCode,
     sortBy,
   ]);
@@ -323,7 +329,7 @@ export default function SearchExplorer() {
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, colorFilter, priceRange, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, colorFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -583,6 +589,17 @@ export default function SearchExplorer() {
                     );
                   })}
                 </ScrollArrowRow>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <Chip
+                  active={onSaleFilter}
+                  onClick={toggleOnSaleFilter}
+                  accent="amber"
+                  className="flex-shrink-0 whitespace-nowrap self-start"
+                >
+                  {t.priceDrop.filterLabel}
+                </Chip>
               </div>
 
               <div className="flex flex-col gap-1.5">

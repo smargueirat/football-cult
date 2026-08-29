@@ -3,6 +3,7 @@
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
 import HeroCarousel from "@/components/HeroCarousel";
+import PriceDropsSection from "@/components/PriceDropsSection";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Home() {
@@ -18,6 +19,8 @@ export default function Home() {
         <section className="mx-auto w-full max-w-6xl px-3 pt-3 sm:px-6 sm:pt-6">
           <HeroCarousel />
         </section>
+
+        <PriceDropsSection />
 
         {/* Search + results */}
         <section id="catalogo" className="mx-auto w-full max-w-6xl flex-1 scroll-mt-20 px-6 pb-24 pt-6">

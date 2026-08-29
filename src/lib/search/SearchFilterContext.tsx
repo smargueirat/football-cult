@@ -52,6 +52,10 @@ interface SearchFilterValue {
   setColorFilter: (c: ColorKey[]) => void;
   priceRange: PriceRange;
   setPriceRange: (p: PriceRange) => void;
+  // Booleano simple (no multi-selección como el resto) -- "en baja" no
+  // tiene variantes para combinar con OR, es sí/no.
+  onSaleFilter: boolean;
+  toggleOnSaleFilter: () => void;
   // Vive acá (no como useState local del componente de resultados) para
   // que sobreviva cuando el usuario entra a una camiseta y vuelve atrás:
   // este contexto está montado en el layout raíz, no en la página de
@@ -83,6 +87,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
   const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
+  const [onSaleFilter, setOnSaleFilter] = useState(false);
   const [sortBy, setSortBy] = useState<SortKey>("relevance");
   const [visibleCount, setVisibleCount] = useState(CATALOG_PAGE_SIZE);
 
@@ -94,7 +99,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (brandFilter.length > 0 ? 1 : 0) +
     (sizeFilter.length > 0 ? 1 : 0) +
     (colorFilter.length > 0 ? 1 : 0) +
-    (priceRange[0] !== PRICE_RANGE_MIN || priceRange[1] !== PRICE_RANGE_MAX ? 1 : 0);
+    (priceRange[0] !== PRICE_RANGE_MIN || priceRange[1] !== PRICE_RANGE_MAX ? 1 : 0) +
+    (onSaleFilter ? 1 : 0);
 
   return (
     <SearchFilterContext.Provider
@@ -124,6 +130,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         setColorFilter,
         priceRange,
         setPriceRange,
+        onSaleFilter,
+        toggleOnSaleFilter: () => setOnSaleFilter((v) => !v),
         sortBy,
         setSortBy,
         activeFilterCount,
@@ -137,6 +145,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setSizeFilter([]);
           setColorFilter([]);
           setPriceRange([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
+          setOnSaleFilter(false);
         },
         visibleCount,
         setVisibleCount,

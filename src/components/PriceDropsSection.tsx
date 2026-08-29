@@ -1,0 +1,56 @@
+"use client";
+
+import { useMemo } from "react";
+import { bestOfferForCountry, priceDropPercent, products, productPriceDropped } from "@/data/products";
+import { useCountry } from "@/lib/country/CountryContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
+import ProductCard from "./ProductCard3D";
+
+const MAX_SHOWN = 16;
+
+// "Mercado de Pases" -- las camisetas cuya mejor oferta bajó de precio
+// desde el snapshot diario anterior (ver track_price_drops.py). Vive
+// en la home, fuera de SearchExplorer a propósito: no depende de los
+// filtros/búsqueda que el usuario esté usando en el catálogo, siempre
+// muestra el mismo destacado.
+export default function PriceDropsSection() {
+  const { countryCode } = useCountry();
+  const { t } = useLanguage();
+
+  const drops = useMemo(() => {
+    return products
+      .filter((p) => productPriceDropped(p, countryCode))
+      .sort((a, b) => {
+        const bestA = bestOfferForCountry(a, countryCode);
+        const bestB = bestOfferForCountry(b, countryCode);
+        const dropA = bestA ? priceDropPercent(bestA) : 0;
+        const dropB = bestB ? priceDropPercent(bestB) : 0;
+        return dropB - dropA;
+      })
+      .slice(0, MAX_SHOWN);
+  }, [countryCode]);
+
+  if (drops.length === 0) return null;
+
+  return (
+    <section className="mx-auto w-full max-w-6xl px-3 pt-6 sm:px-6">
+      <div className="mb-3 flex flex-col items-start gap-0.5">
+        <span className="font-tagline text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
+          {t.priceDrop.eyebrow}
+        </span>
+        <h2 className="font-vintage text-lg text-[#1B3B2B] sm:text-2xl">{t.priceDrop.title}</h2>
+      </div>
+      {/* Mismo scroll horizontal nativo que DiscoveryCarousel (ver ese
+          componente) -- acá con ProductCard3D en vez del ProductCard
+          chico, porque esto es un destacado de home, no un "también te
+          puede interesar" secundario. */}
+      <div className="-mx-3 flex snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-2 sm:mx-0 sm:gap-4 sm:px-0">
+        {drops.map((product) => (
+          <div key={product.id} className="w-40 shrink-0 snap-start sm:w-56">
+            <ProductCard product={product} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
