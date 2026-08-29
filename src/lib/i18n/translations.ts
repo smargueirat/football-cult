@@ -175,10 +175,25 @@ export interface Translations {
     p2: string;
     p3: string;
   };
+  priceDrop: {
+    eyebrow: string;
+    title: string;
+    badge: string;
+    filterLabel: string;
+  };
   contact: {
     title: string;
     p1: string;
     emailLabel: string;
+    nameLabel: string;
+    namePlaceholder: string;
+    messageLabel: string;
+    messagePlaceholder: string;
+    submit: string;
+    submitting: string;
+    success: string;
+    error: string;
+    orEmail: string;
   };
   privacy: {
     title: string;
@@ -463,10 +478,25 @@ export const translations: Record<Locale, Translations> = {
       p2: "Somos un comparador de precios independiente. Buscamos entre distintas tiendas online y te mostramos las mejores opciones disponibles para que decidas dónde comprar con toda la información a mano.",
       p3: 'Football Cult no vende productos directamente ni maneja pagos, envíos o devoluciones. Cuando hacés clic en "Comprar", te llevamos a la tienda correspondiente para que completes tu compra ahí. Algunos de esos enlaces son enlaces de afiliado: si comprás a través de ellos, podemos recibir una pequeña comisión de la tienda, sin ningún costo adicional para vos.',
     },
+    priceDrop: {
+      eyebrow: "Precios en movimiento",
+      title: "Mercado de Pases",
+      badge: "Bajó {n}%",
+      filterLabel: "Mercado de pases",
+    },
     contact: {
       title: "Contacto",
       p1: "¿Encontraste un precio desactualizado, una tienda que deberíamos sumar, o tenés alguna consulta? Escribinos.",
       emailLabel: "Email",
+      nameLabel: "Nombre",
+      namePlaceholder: "Tu nombre",
+      messageLabel: "Mensaje",
+      messagePlaceholder: "Contanos qué encontraste o qué necesitás...",
+      submit: "Enviar mensaje",
+      submitting: "Enviando...",
+      success: "¡Listo! Recibimos tu mensaje, te respondemos pronto.",
+      error: "No se pudo enviar. Probá de nuevo en un rato.",
+      orEmail: "O escribinos directo a:",
     },
     privacy: {
       title: "Política de privacidad",
@@ -756,10 +786,25 @@ export const translations: Record<Locale, Translations> = {
       p2: "Somos um comparador de preços independente. Buscamos em diferentes lojas online e mostramos as melhores opções disponíveis para você decidir onde comprar com todas as informações em mãos.",
       p3: 'Football Cult não vende produtos diretamente nem processa pagamentos, envios ou devoluções. Quando você clica em "Comprar", te levamos até a loja correspondente para concluir sua compra lá. Alguns desses links são links de afiliado: se você comprar através deles, podemos receber uma pequena comissão da loja, sem nenhum custo adicional para você.',
     },
+    priceDrop: {
+      eyebrow: "Preços em movimento",
+      title: "Mercado de Passes",
+      badge: "Caiu {n}%",
+      filterLabel: "Mercado de passes",
+    },
     contact: {
       title: "Contato",
       p1: "Encontrou um preço desatualizado, uma loja que deveríamos adicionar, ou tem alguma dúvida? Fale conosco.",
       emailLabel: "Email",
+      nameLabel: "Nome",
+      namePlaceholder: "Seu nome",
+      messageLabel: "Mensagem",
+      messagePlaceholder: "Conte o que encontrou ou o que precisa...",
+      submit: "Enviar mensagem",
+      submitting: "Enviando...",
+      success: "Pronto! Recebemos sua mensagem, respondemos em breve.",
+      error: "Não foi possível enviar. Tente novamente daqui a pouco.",
+      orEmail: "Ou escreva direto para:",
     },
     privacy: {
       title: "Política de privacidade",
@@ -1049,10 +1094,25 @@ export const translations: Record<Locale, Translations> = {
       p2: "We're an independent price comparison site. We search across different online stores and show you the best available options so you can decide where to buy with all the information at hand.",
       p3: 'Football Cult doesn\'t sell products directly and doesn\'t handle payments, shipping, or returns. When you click "Buy," we take you to the corresponding store to complete your purchase there. Some of those links are affiliate links: if you buy through them, we may earn a small commission from the store, at no extra cost to you.',
     },
+    priceDrop: {
+      eyebrow: "Prices on the move",
+      title: "Transfer Market",
+      badge: "Down {n}%",
+      filterLabel: "Transfer market",
+    },
     contact: {
       title: "Contact",
       p1: "Found an outdated price, a store we should add, or have a question? Get in touch.",
       emailLabel: "Email",
+      nameLabel: "Name",
+      namePlaceholder: "Your name",
+      messageLabel: "Message",
+      messagePlaceholder: "Tell us what you found or what you need...",
+      submit: "Send message",
+      submitting: "Sending...",
+      success: "Done! We got your message, we'll get back to you soon.",
+      error: "Couldn't send it. Try again in a bit.",
+      orEmail: "Or email us directly at:",
     },
     privacy: {
       title: "Privacy Policy",
