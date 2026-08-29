@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { bestOfferForCountry, priceDropPercent, products, productPriceDropped } from "@/data/products";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import ProductCard from "./ProductCard3D";
+import ProductCard from "./ProductCard";
 
 const MAX_SHOWN = 16;
 
@@ -40,10 +40,12 @@ export default function PriceDropsSection() {
         </span>
         <h2 className="font-vintage text-lg text-[#1B3B2B] sm:text-2xl">{t.priceDrop.title}</h2>
       </div>
-      {/* Mismo scroll horizontal nativo que DiscoveryCarousel (ver ese
-          componente) -- acá con ProductCard3D en vez del ProductCard
-          chico, porque esto es un destacado de home, no un "también te
-          puede interesar" secundario. */}
+      {/* Mismo scroll horizontal nativo y misma card liviana que
+          DiscoveryCarousel -- ProductCard3D (tilt 3D por mousemove,
+          translateZ en cada capa, will-change:transform) se ve lindo en
+          el grid estático del catálogo, pero acá son varias cards
+          juntas en un carrusel horizontal: con esa versión se sentía
+          pesado/tironeado al scrollear, sobre todo en celular. */}
       <div className="-mx-3 flex snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-2 sm:mx-0 sm:gap-4 sm:px-0">
         {drops.map((product) => (
           <div key={product.id} className="w-40 shrink-0 snap-start sm:w-56">

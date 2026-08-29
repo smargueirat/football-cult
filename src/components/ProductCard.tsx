@@ -9,7 +9,9 @@ import {
   displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
+  isPriceDropped,
   offerShipsTo,
+  priceDropPercent,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -136,8 +138,19 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </span>
 
+        {best && isPriceDropped(best) && (
+          <span className="shadow-vintage-sm absolute bottom-3 left-3 rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+            {t.priceDrop.badge.replace("{n}", String(priceDropPercent(best)))}
+          </span>
+        )}
+
         {best && (
           <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
+            {isPriceDropped(best) && (
+              <span className="text-[10px] leading-none line-through opacity-60">
+                {formatOfferMoney(best.previousPrice! + best.shipping, best.currency)}
+              </span>
+            )}
             <span className="flex items-center gap-1 text-sm font-semibold">
               <span className="text-xs">🥇</span>
               {formatOfferMoney(bestTotal, best.currency)}

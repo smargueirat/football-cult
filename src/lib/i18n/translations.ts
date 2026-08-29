@@ -479,10 +479,10 @@ export const translations: Record<Locale, Translations> = {
       p3: 'Football Cult no vende productos directamente ni maneja pagos, envíos o devoluciones. Cuando hacés clic en "Comprar", te llevamos a la tienda correspondiente para que completes tu compra ahí. Algunos de esos enlaces son enlaces de afiliado: si comprás a través de ellos, podemos recibir una pequeña comisión de la tienda, sin ningún costo adicional para vos.',
     },
     priceDrop: {
-      eyebrow: "Precios en movimiento",
-      title: "Mercado de Pases",
+      eyebrow: "Ofertas del día",
+      title: "Bajaron de Precio",
       badge: "Bajó {n}%",
-      filterLabel: "Mercado de pases",
+      filterLabel: "Bajaron de precio",
     },
     contact: {
       title: "Contacto",
@@ -787,10 +787,10 @@ export const translations: Record<Locale, Translations> = {
       p3: 'Football Cult não vende produtos diretamente nem processa pagamentos, envios ou devoluções. Quando você clica em "Comprar", te levamos até a loja correspondente para concluir sua compra lá. Alguns desses links são links de afiliado: se você comprar através deles, podemos receber uma pequena comissão da loja, sem nenhum custo adicional para você.',
     },
     priceDrop: {
-      eyebrow: "Preços em movimento",
-      title: "Mercado de Passes",
+      eyebrow: "Ofertas do dia",
+      title: "Baixaram de Preço",
       badge: "Caiu {n}%",
-      filterLabel: "Mercado de passes",
+      filterLabel: "Baixaram de preço",
     },
     contact: {
       title: "Contato",
@@ -1095,10 +1095,10 @@ export const translations: Record<Locale, Translations> = {
       p3: 'Football Cult doesn\'t sell products directly and doesn\'t handle payments, shipping, or returns. When you click "Buy," we take you to the corresponding store to complete your purchase there. Some of those links are affiliate links: if you buy through them, we may earn a small commission from the store, at no extra cost to you.',
     },
     priceDrop: {
-      eyebrow: "Prices on the move",
-      title: "Transfer Market",
+      eyebrow: "Today's deals",
+      title: "Price Drops",
       badge: "Down {n}%",
-      filterLabel: "Transfer market",
+      filterLabel: "Price drops",
     },
     contact: {
       title: "Contact",
