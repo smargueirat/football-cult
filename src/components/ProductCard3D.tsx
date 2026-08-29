@@ -9,7 +9,9 @@ import {
   displayTitleForCountry,
   formatOfferMoney,
   getAgeGroup,
+  isPriceDropped,
   offerShipsTo,
+  priceDropPercent,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -18,6 +20,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
+import { useCompare } from "@/lib/compare/CompareContext";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
@@ -37,6 +40,7 @@ export default function ProductCard3D({
 }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
+  const { isComparing, toggleCompare, maxReached } = useCompare();
   const { countryCode } = useCountry();
   const favorite = isFavorite(product.id);
   const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode);
@@ -177,11 +181,25 @@ export default function ProductCard3D({
           )}
         </span>
 
+        {best && isPriceDropped(best) && (
+          <span
+            className="shadow-vintage-sm absolute bottom-3 left-3 rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white"
+            style={{ transform: "translateZ(40px)" }}
+          >
+            {t.priceDrop.badge.replace("{n}", String(priceDropPercent(best)))}
+          </span>
+        )}
+
         {best && (
           <div
             className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]"
             style={{ transform: "translateZ(40px)" }}
           >
+            {isPriceDropped(best) && (
+              <span className="text-[10px] leading-none line-through opacity-60">
+                {formatOfferMoney(best.previousPrice! + best.shipping, best.currency)}
+              </span>
+            )}
             <span className="text-sm font-semibold">
               {formatOfferMoney(bestTotal, best.currency)}
             </span>
@@ -217,6 +235,39 @@ export default function ProductCard3D({
             />
           </svg>
         </button>
+
+        {/* Antes el comparador solo se podía activar desde adentro de la
+            ficha de cada camiseta -- pedido explícito de subirlo también acá,
+            para armar la comparación mientras se navega el catálogo sin
+            tener que entrar a cada una. Usa la misma oferta (best.store)
+            que ya se muestra en la card, para que "comparar esto" sea
+            inequívoco. */}
+        {best && (
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              toggleCompare(product.id, best.store);
+            }}
+            disabled={!isComparing(product.id, best.store) && maxReached}
+            aria-label={isComparing(product.id, best.store) ? t.compare.remove : t.compare.add}
+            title={!isComparing(product.id, best.store) && maxReached ? t.compare.maxReached : undefined}
+            style={{ transform: "translateZ(40px)" }}
+            className={`shadow-vintage-sm absolute right-2 top-14 flex h-11 w-11 items-center justify-center rounded-full backdrop-blur-md transition-transform hover:scale-110 active:scale-90 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100 ${
+              isComparing(product.id, best.store)
+                ? "bg-[#1B3B2B] text-[#F3E9C9]"
+                : "bg-white/80 text-[#1B3B2B]"
+            }`}
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+              />
+            </svg>
+          </button>
+        )}
       </div>
 
       <div className="vintage-divider" />
