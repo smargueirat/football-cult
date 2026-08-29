@@ -563,12 +563,16 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
                           </div>
                         </div>
 
+                        {/* Antes era un sello centrado que tapaba toda la
+                            fila (rotado, con fondo propio) -- la fila ya
+                            queda atenuada al 40% de opacidad por el wrapper
+                            de arriba, así que un sello más chico en la
+                            esquina alcanza para avisar sin ocultar el precio
+                            y la tienda de abajo. */}
                         {!ships && (
-                          <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-[#f5f0e0]/75">
-                            <span className="shadow-vintage-sm -rotate-6 rounded border-2 border-[#675c44]/60 bg-[#fffdf8] px-4 py-1.5 text-center text-xs font-bold uppercase tracking-widest text-[#675c44]">
-                              {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
-                            </span>
-                          </div>
+                          <span className="shadow-vintage-sm pointer-events-none absolute right-3 top-3 z-10 rounded border border-[#675c44]/60 bg-[#fffdf8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#675c44]">
+                            {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+                          </span>
                         )}
                       </div>
                     );
