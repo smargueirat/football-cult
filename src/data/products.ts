@@ -23024,6 +23024,7 @@ const productsData = [
       { store: "FootStoreFR", price: 64.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4590-456-maillot-domicile-fc-barcelone-2025-26-deep-royal-blue-midwest-gold", title: "Maillot Domicile FC Barcelone 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj4590-456-phsfh001.jpg" },
       { store: "eBay", price: 28.9, shipping: 6.95, currency: "USD", url: "https://www.ebay.com/itm/398287207663?_skw=FC+Barcelona+home+soccer+jersey+2025+2026&hash=item5cbbc47cef%3Ag%3Aj4wAAeSwyudqf9kp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FCB Barcelona 2025/26 Home Jersey Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/j4wAAeSwyudqf9kp/s-l225.jpg" },
       { store: "Forum Sport", price: 46.89, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41912444358&a=3013769&m=23805", title: "Nike barcelona 25/26 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053778-00-P-X-20251022162949.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ1NnxpbWFnZS9qcGVnfGFHSTFMMmcyTlM4eE16STJNelV3TURnek5qZzVOQzl0WldScFlYTmZNVEF3TVRBMU16YzNPRjh3TUY5UVgxZ3RNakF5TlRFd01qSXhOakk1TkRrdWFuQm58YzMwMWVjN2U5YjFmZDAzODViNTU2OGZkM2NhYTRjMTgyZDA0YjdhM2YyMmNjNDU4ZTg3ZDBkNmFmOWI5ZTM1OQ&feedId=58083&k=9ca35b6e7fe653e1962a0cba6d9e28b066aa4ec3" },
+      { store: "PlanetFoot", price: 54.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-fc-barcelone-domicile-homme-2026-27-bleu-grenat%3Fvariant%3D54723784212821", title: "Maillot FC Barcelone Domicile Homme 2026/27 Bleu Grenat", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-fc-barcelone-domicile-homme-2026-27-bleu-grenat-bd16g-10.jpg?v=1787579697" },
     ],
   },
 {
@@ -23969,6 +23970,7 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "eBay", price: 225.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307117103158?_skw=FC+Barcelona+goalkeeper+soccer+jersey&hash=item47819b1836%3Ag%3AKH8AAeSwoUJqeS7f&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Men’s XL FC Barcelona x Kobe Mamba 2026 Away Goalkeeper Jersey Lamine", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/KH8AAeSwoUJqeS7f/s-l225.jpg" },
+      { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-goalkeeper-player-version-soccer-jersey-2026-27%3Fvariant%3D47950454882409", title: "Barcelona Goalkeeper Player Version Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Barcelonaspecialmatch2026_27.jpg?v=1787736361" },
     ],
   },
 {
@@ -73315,6 +73317,18 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "Forum Sport", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45656102819&a=3013769&m=23805", title: "Nike tottenham 26/27 tercera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127195-00-S-M-20260817150620.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI3OHxpbWFnZS9qcGVnfGFEVTFMMmd6Tmk4eE16azFPVEUxTlRjeE1qQXpNQzl0WldScFlYTmZNVEF3TVRFeU56RTVOVjh3TUY5VFgwMHRNakF5TmpBNE1UY3hOVEEyTWpBdWFuQm58ZTQ2ZWIyYjQ3YjczODgyNzgxM2U2OTk1NDhjZmJlZDVlMjFmNTk0NmRmNWE0MTA1YWU5NTUxMDA0MzU4ZGI2MQ&feedId=58083&k=7efd1da5aa5d6c5987660dfbfe1fca14764c8edd" },
+    ],
+  },
+  {
+    id: "chelsea-goalkeeper-202627",
+    teamKey: "chelsea",
+    season: "2026/27",
+    typeKey: "goalkeeper",
+    colorHex: "#F5D000",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-goalkeeper-soccer-jersey-2026-27%3Fvariant%3D47959108911209", title: "Chelsea Goalkeeper Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/chelseathirdgoalkeeperfan2026_27.jpg?v=1787882337" },
     ],
   },
 ];
