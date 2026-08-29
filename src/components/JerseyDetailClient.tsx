@@ -25,6 +25,7 @@ import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import DiscoveryCarousel from "./DiscoveryCarousel";
+import HeritageStory from "./HeritageStory";
 import JerseyGallery from "./JerseyGallery";
 import ReportProductModal from "./ReportProductModal";
 
@@ -583,6 +584,8 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
           )}
         </div>
       </div>
+
+      <HeritageStory productId={product.id} />
 
       <DiscoveryCarousel
         eyebrow={t.detail.sameTeamEyebrow}

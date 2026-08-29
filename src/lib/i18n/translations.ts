@@ -181,6 +181,11 @@ export interface Translations {
     badge: string;
     filterLabel: string;
   };
+  heritage: {
+    eyebrow: string;
+    title: string;
+    sourceLabel: string;
+  };
   contact: {
     title: string;
     p1: string;
@@ -483,6 +488,11 @@ export const translations: Record<Locale, Translations> = {
       title: "Bajaron de Precio",
       badge: "Bajó {n}%",
       filterLabel: "Bajaron de precio",
+    },
+    heritage: {
+      eyebrow: "Del archivo",
+      title: "La Crónica de la Prenda",
+      sourceLabel: "Fuente",
     },
     contact: {
       title: "Contacto",
@@ -792,6 +802,11 @@ export const translations: Record<Locale, Translations> = {
       badge: "Caiu {n}%",
       filterLabel: "Baixaram de preço",
     },
+    heritage: {
+      eyebrow: "Do arquivo",
+      title: "A Crônica da Camisa",
+      sourceLabel: "Fonte",
+    },
     contact: {
       title: "Contato",
       p1: "Encontrou um preço desatualizado, uma loja que deveríamos adicionar, ou tem alguma dúvida? Fale conosco.",
@@ -1099,6 +1114,11 @@ export const translations: Record<Locale, Translations> = {
       title: "Price Drops",
       badge: "Down {n}%",
       filterLabel: "Price drops",
+    },
+    heritage: {
+      eyebrow: "From the archive",
+      title: "The Shirt's Chronicle",
+      sourceLabel: "Source",
     },
     contact: {
       title: "Contact",
