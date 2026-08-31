@@ -1743,21 +1743,29 @@ and does not fit the CSV-feed pattern:**
   name `NikeCL`, currency `CLP`.
 - **Nike (AR): the identical 7 products**, same style codes, confirmed
   separately on nike.com.ar. Store name `NikeAR`, currency `ARS`.
-- **Puma (AR): not done.** Found a real Independiente (Club Atlético
-  Independiente, `teamKey: "independiente"`) line on `ar.puma.com` —
-  `Camiseta Alternativa CAI 26/27` (away, men/women/kids variants) and
-  `Camiseta Tercer Conjunto CAI` (third). Neither is a simple add-offer:
-  the away kit is season `26/27` against an existing `2025` product
-  (needs the `season_conflict` new-product path), and there's no
-  `independiente|third` product on file at all yet (needs a brand-new
-  product block with real `colorHex`/`colorHexSecondary`). The home
-  replica jersey didn't turn up in ~78 search results at all — may
-  genuinely not be for sale right now, or may just be named differently
-  than every "camiseta"/"titular"/"local" pattern tried. Worth a fresh
-  look, not necessarily a fast add.
-- Both Nike storefronts sell plenty of other teams already in the
-  catalog beyond this first batch (e.g. more national teams' away kits)
-  — this pass covered one category page's worth by hand, not
-  everything available. Same for whatever else Puma AR carries beyond
-  Independiente (check which other Argentine clubs Puma actually
-  sponsors before assuming there's more real inventory to mine there).
+- **Puma (AR): 2 new products** for Independiente (`teamKey:
+  "independiente"`) — `independiente-away-202627` (`Camiseta
+  Alternativa CAI 26/27`, a real season/sponsor change vs. the existing
+  2025 away offer, which was itself already dead/`inStock:false`) and
+  `independiente-third-202627` (`Camiseta Tercer Conjunto CAI`, no
+  `independiente|third` product existed before this). Both reuse the
+  team's existing `colorHex`/`colorHexSecondary` rather than the
+  specific kit's own colors — matches the established convention (see
+  e.g. Brasil's home/away/goalkeeper all sharing one colorHex despite
+  being yellow/navy/green). Store name `PumaAR`, currency `ARS`. Puma
+  AR's deeplinks redirect via client-side JS
+  (`window.location.href`) rather than an HTTP 302 like Nike's do —
+  `curl -I` alone shows a bare 200 that looks broken; read the response
+  body to see the real redirect target and tracking params. No country
+  geo-check observed on these links (unlike Nike AR's).
+  The home replica jersey didn't turn up anywhere on `ar.puma.com`
+  (checked the dedicated Independiente collection page and a ~78-result
+  general search) — not blocking, since `independiente-home-2025`
+  already has a real, in-stock eBay offer. May be worth checking again
+  later in case Puma AR lists it eventually.
+- Both Nike storefronts and Puma AR sell plenty more than this one
+  batch — check for other Argentine clubs Puma actually sponsors
+  (Independiente was found via its home-page hero banner, not a
+  systematic search) and for more national teams' away kits on Nike
+  before assuming there's nothing else there. This pass covered one
+  category page's worth by hand on each site, not everything available.
