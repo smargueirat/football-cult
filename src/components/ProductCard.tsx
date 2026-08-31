@@ -74,11 +74,30 @@ export default function ProductCard({ product }: { product: Product }) {
     prefetchDetailPhoto(photo);
   }
 
+  // touchstart dispara con el simple contacto del dedo, sea tap o el
+  // arranque de un scroll -- ver el comentario largo en ProductCard3D,
+  // mismo bug y mismo arreglo acá.
+  const touchStartPos = useRef<{ x: number; y: number } | null>(null);
+  function handleTouchStart(e: React.TouchEvent<HTMLAnchorElement>) {
+    const touch = e.touches[0];
+    touchStartPos.current = { x: touch.clientX, y: touch.clientY };
+  }
+  function handleTouchEnd(e: React.TouchEvent<HTMLAnchorElement>) {
+    const start = touchStartPos.current;
+    touchStartPos.current = null;
+    if (!start) return;
+    const touch = e.changedTouches[0];
+    if (Math.abs(touch.clientX - start.x) < 10 && Math.abs(touch.clientY - start.y) < 10) {
+      handlePrefetchPhoto();
+    }
+  }
+
   return (
     <Link
       href={`/camiseta/${product.id}`}
       onMouseEnter={handlePrefetchPhoto}
-      onTouchStart={handlePrefetchPhoto}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       className="vintage-card group flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
     >
       <div

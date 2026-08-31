@@ -103,10 +103,37 @@ export default function ProductCard3D({
     prefetchDetailPhoto(photo);
   }
 
+  // Bug real: touchstart dispara con el simple contacto del dedo, sea
+  // tap o el arranque de un scroll -- con onTouchStart directo, CADA
+  // swipe en el celular disparaba 3 descargas de más (foto en 500/800/
+  // 1200w) por la primera card que el dedo tocaba, compitiendo por
+  // ancho de banda justo con las fotos que sí hacen falta para pintar
+  // lo que entra en pantalla. Ahora se compara la posición al soltar
+  // contra la de apoyar el dedo -- si se movió poco, fue un tap real
+  // (o el inicio de una navegación), no un scroll.
+  const touchStartPos = useRef<{ x: number; y: number } | null>(null);
+  function handleTouchStart(e: React.TouchEvent<HTMLAnchorElement>) {
+    const touch = e.touches[0];
+    touchStartPos.current = { x: touch.clientX, y: touch.clientY };
+  }
+  function handleTouchEnd(e: React.TouchEvent<HTMLAnchorElement>) {
+    const start = touchStartPos.current;
+    touchStartPos.current = null;
+    if (!start) return;
+    const touch = e.changedTouches[0];
+    if (Math.abs(touch.clientX - start.x) < 10 && Math.abs(touch.clientY - start.y) < 10) {
+      handlePrefetchPhoto();
+    }
+  }
+
   // content-visibility:auto -- "Ver más" solo agrega cards, nunca las
   // desmonta, así que después de varias páginas hay cientos montadas a
   // la vez. Esto le dice al navegador que se salte layout/paint de las
   // que están lejos del viewport (nativo, sin librería de virtualización).
+  // contain-intrinsic-size con "auto" en vez de un ancho fijo: el
+  // navegador recuerda el tamaño real que cada card pintó la última vez
+  // (varía por breakpoint/columnas del grid) en vez de forzar un ancho
+  // inventado mientras está fuera de pantalla.
   return (
     <Link
       ref={cardRef}
@@ -114,17 +141,26 @@ export default function ProductCard3D({
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onMouseEnter={handlePrefetchPhoto}
-      onTouchStart={handlePrefetchPhoto}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       style={{
         transform: `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${
           tilting ? "scale3d(1.02, 1.02, 1.02)" : "scale3d(1, 1, 1)"
         }`,
         transformStyle: "preserve-3d",
+        // will-change solo mientras se está inclinando la card, no
+        // siempre -- dejarlo prendido de forma estática (como estaba
+        // antes, vía clase de Tailwind) fuerza al navegador a reservarle
+        // una capa GPU propia a CADA card montada. "Ver más" nunca
+        // desmonta, así que tras varias páginas eran cientos de capas
+        // vivas a la vez -- justo lo que se siente como scroll pesado y
+        // fotos lentas en cuanto el catálogo crece.
+        willChange: tilting ? "transform" : "auto",
         boxShadow: tilting
           ? `${-tilt.y * 1.8}px ${22 - tilt.x * 1.2}px 38px -10px rgba(43, 32, 10, 0.55), ${-tilt.y * 0.6}px ${8 - tilt.x * 0.4}px 14px -6px rgba(43, 32, 10, 0.35)`
           : "0 14px 28px -10px rgba(43, 32, 10, 0.45)",
       }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out will-change-transform [content-visibility:auto] [contain-intrinsic-size:1px_420px]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
