@@ -2386,7 +2386,7 @@ const OFFER_CURRENCY_TO_EUR: Record<Offer["currency"], number> = {
   EUR: 1,
   USD: 1.08,
   GBP: 0.86,
-  BRL: 0.155,
+  BRL: 6.05,
   CLP: 1076.5,
   ARS: 1754.6,
 };
