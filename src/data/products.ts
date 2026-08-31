@@ -2360,6 +2360,8 @@ const OFFER_CURRENCY_LOCALE: Record<Offer["currency"], string> = {
   USD: "en-US",
   GBP: "en-GB",
   BRL: "pt-BR",
+  CLP: "es-CL",
+  ARS: "es-AR",
 };
 
 export function formatOfferMoney(amount: number, currency: Offer["currency"]): string {
@@ -2385,6 +2387,8 @@ const OFFER_CURRENCY_TO_EUR: Record<Offer["currency"], number> = {
   USD: 1.08,
   GBP: 0.86,
   BRL: 0.155,
+  CLP: 1076.5,
+  ARS: 1754.6,
 };
 
 export function offerTotalInEUR(offer: Offer): number {
@@ -2538,7 +2542,7 @@ export interface Offer {
   // del día anterior todavía).
   previousPrice?: number;
   shipping: number;
-  currency: "EUR" | "USD" | "GBP" | "BRL";
+  currency: "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
   url: string;
   inStock: boolean;
   sizes: Size[];
