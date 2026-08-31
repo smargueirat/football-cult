@@ -38885,6 +38885,32 @@ const productsData = [
     ],
   },
 {
+    id: "independiente-away-202627",
+    teamKey: "independiente",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "puma",
+    offers: [
+      { store: "PumaAR", price: 169999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14084&dl=https%3A%2F%2Far.puma.com%2Fpd%2Fcamiseta-alternativa-cai-26-27%2F696064.html", title: "Camiseta Alternativa CAI 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/696064/01/fnd/ARG/fmt/png" },
+    ],
+  },
+{
+    id: "independiente-third-202627",
+    teamKey: "independiente",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "puma",
+    offers: [
+      { store: "PumaAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14084&dl=https%3A%2F%2Far.puma.com%2Fpd%2Fcamiseta-tercer-conjunto-cai%2F691358.html", title: "Camiseta Tercer Conjunto CAI", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/691358/01/fnd/ARG/fmt/png" },
+    ],
+  },
+{
     id: "independiente-away-2025",
     teamKey: "independiente",
     season: "2025",
