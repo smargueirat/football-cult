@@ -30,6 +30,7 @@ export interface Translations {
     title: string;
     empty: string;
     browse: string;
+    priceAlertNote: string;
   };
   loginPanel: {
     title: string;
@@ -310,6 +311,7 @@ export const translations: Record<Locale, Translations> = {
       title: "Tus favoritos",
       empty: "Todavía no guardaste ninguna camiseta.",
       browse: "Explorar camisetas",
+      priceAlertNote: "Te avisamos por mail si alguna de estas baja de precio.",
     },
     loginPanel: {
       title: "Tu cuenta",
@@ -626,6 +628,7 @@ export const translations: Record<Locale, Translations> = {
       title: "Seus favoritos",
       empty: "Você ainda não salvou nenhuma camisa.",
       browse: "Explorar camisas",
+      priceAlertNote: "Avisamos por e-mail se alguma dessas baixar de preço.",
     },
     loginPanel: {
       title: "Sua conta",
@@ -941,6 +944,7 @@ export const translations: Record<Locale, Translations> = {
       title: "Your favorites",
       empty: "You haven't saved any jerseys yet.",
       browse: "Browse jerseys",
+      priceAlertNote: "We'll email you if any of these drop in price.",
     },
     loginPanel: {
       title: "Your account",
