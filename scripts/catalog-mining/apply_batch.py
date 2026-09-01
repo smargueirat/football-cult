@@ -63,8 +63,15 @@ def main():
     assert n == 1, "teamCategory anchor not found"
 
     # 3. teamNames
+    # fr/it default to the es name -- true for ~278 of the 385 existing
+    # entries already (club names are proper nouns, identical across every
+    # locale). Only the dozen national-team entries actually need a real
+    # translation, and that's a manual fix-up after running this script,
+    # same as it already was for es/en/pt (the batch tuple itself doesn't
+    # know a key is national vs club, national_keys here only drives
+    # teamCategory, not the name text).
     names_lines = "".join(
-        f'  {k}: {{ es: "{batch[k][0]}", en: "{batch[k][1]}", pt: "{batch[k][2]}" }},\n'
+        f'  {k}: {{ es: "{batch[k][0]}", en: "{batch[k][1]}", pt: "{batch[k][2]}", fr: "{batch[k][0]}", it: "{batch[k][0]}" }},\n'
         for k in new_keys
     )
     content, n = re.subn(
