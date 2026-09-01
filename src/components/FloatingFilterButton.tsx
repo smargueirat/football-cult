@@ -8,7 +8,7 @@ import {
   PRICE_RANGE_MIN,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
-import { AGE_GROUP_FILTERS, BRAND_FILTERS, QUICK_PICK_TEAMS, TYPE_FILTERS } from "@/lib/search/filterOptions";
+import { AGE_GROUP_FILTERS, BRAND_FILTERS, QUICK_PICK_TEAMS, STORE_FILTERS, TYPE_FILTERS } from "@/lib/search/filterOptions";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH } from "@/lib/colorClassify";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
@@ -35,6 +35,9 @@ export default function FloatingFilterButton() {
     brandFilter,
     toggleBrandFilter,
     setBrandFilter,
+    storeFilter,
+    toggleStoreFilter,
+    setStoreFilter,
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
@@ -197,6 +200,29 @@ export default function FloatingFilterButton() {
                   className="flex-shrink-0 whitespace-nowrap"
                 >
                   {brandNames[key]}
+                </Chip>
+              ))}
+            </ScrollArrowRow>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <p className="text-xs text-[#9a9a94]">{t.search.storeLabel}</p>
+            <ScrollArrowRow className="gap-1.5">
+              <Chip
+                active={storeFilter.length === 0}
+                onClick={() => setStoreFilter([])}
+                className="flex-shrink-0 whitespace-nowrap"
+              >
+                {t.search.allCategories}
+              </Chip>
+              {STORE_FILTERS.map((key) => (
+                <Chip
+                  key={key}
+                  active={storeFilter.includes(key)}
+                  onClick={() => toggleStoreFilter(key)}
+                  className="flex-shrink-0 whitespace-nowrap"
+                >
+                  {key}
                 </Chip>
               ))}
             </ScrollArrowRow>
