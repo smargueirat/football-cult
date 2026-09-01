@@ -104,6 +104,7 @@ export interface Translations {
     filtersButton: string;
     showResults: string;
     brandLabel: string;
+    storeLabel: string;
     loadMore: string;
     sizeLabel: string;
     colorLabel: string;
@@ -142,6 +143,7 @@ export interface Translations {
     notAvailableInCountry: string;
     allSoldOut: string;
     storesCompared: string;
+    priceHistoryLabel: string;
     basePrice: string;
     shipping: string;
     total: string;
@@ -411,6 +413,7 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filtros",
       showResults: "Ver resultados",
       brandLabel: "Marca",
+      storeLabel: "Tienda",
       loadMore: "Ver más",
       sizeLabel: "Talle",
       colorLabel: "Color",
@@ -449,6 +452,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "No disponible para envíos a {country}",
       allSoldOut: "Todas las ofertas de esta camiseta están agotadas por ahora.",
       storesCompared: "{n} tiendas comparadas",
+      priceHistoryLabel: "Evolución de precio (últimos {n} días)",
       basePrice: "Precio",
       shipping: "Envío",
       total: "Total",
@@ -724,6 +728,7 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filtros",
       showResults: "Ver resultados",
       brandLabel: "Marca",
+      storeLabel: "Loja",
       loadMore: "Ver mais",
       sizeLabel: "Tamanho",
       colorLabel: "Cor",
@@ -762,6 +767,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "Não disponível para envio a {country}",
       allSoldOut: "Todas as ofertas desta camisa estão esgotadas por enquanto.",
       storesCompared: "{n} lojas comparadas",
+      priceHistoryLabel: "Evolução de preço (últimos {n} dias)",
       basePrice: "Preço",
       shipping: "Frete",
       total: "Total",
@@ -1037,6 +1043,7 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filters",
       showResults: "Show results",
       brandLabel: "Brand",
+      storeLabel: "Store",
       loadMore: "Show more",
       sizeLabel: "Size",
       colorLabel: "Color",
@@ -1075,6 +1082,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "Not available for shipping to {country}",
       allSoldOut: "All offers for this jersey are sold out for now.",
       storesCompared: "{n} stores compared",
+      priceHistoryLabel: "Price history (last {n} days)",
       basePrice: "Price",
       shipping: "Shipping",
       total: "Total",
