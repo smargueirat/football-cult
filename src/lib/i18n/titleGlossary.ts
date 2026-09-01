@@ -18,6 +18,8 @@ interface GlossaryEntry {
   es: string;
   en: string;
   pt: string;
+  fr: string;
+  it: string;
 }
 
 const ENTRIES: GlossaryEntry[] = [
@@ -25,34 +27,34 @@ const ENTRIES: GlossaryEntry[] = [
   // de abajo -- en particular "primera/segunda/tercera equipación" tiene
   // que ir antes que el \btercer[ao]?\b de más abajo, si no éste la muerde
   // dejando "equipación" colgado sin traducir.
-  { pattern: /coupe du monde|copa (do|del) mundo|world cup/gi, es: "Copa del Mundo", en: "World Cup", pt: "Copa do Mundo" },
-  { pattern: /manches? longues?|manga larga|manga longa|long ?sleeve/gi, es: "Manga Larga", en: "Long Sleeve", pt: "Manga Longa" },
-  { pattern: /pr[eé].?-?match|prematch/gi, es: "Pre-Match", en: "Pre-Match", pt: "Pré-Jogo" },
-  { pattern: /primera equipaci[oó]n/gi, es: "Titular", en: "Home", pt: "Titular" },
-  { pattern: /segunda equipaci[oó]n/gi, es: "Visitante", en: "Away", pt: "Reserva" },
-  { pattern: /tercera equipaci[oó]n/gi, es: "Tercera", en: "Third", pt: "Terceira" },
+  { pattern: /coupe du monde|copa (do|del) mundo|world cup/gi, es: "Copa del Mundo", en: "World Cup", pt: "Copa do Mundo", fr: "Coupe du Monde", it: "Coppa del Mondo" },
+  { pattern: /manches? longues?|manga larga|manga longa|long ?sleeve/gi, es: "Manga Larga", en: "Long Sleeve", pt: "Manga Longa", fr: "Manches Longues", it: "Manica Lunga" },
+  { pattern: /pr[eé].?-?match|prematch/gi, es: "Pre-Match", en: "Pre-Match", pt: "Pré-Jogo", fr: "Avant-Match", it: "Pre-Partita" },
+  { pattern: /primera equipaci[oó]n/gi, es: "Titular", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
+  { pattern: /segunda equipaci[oó]n/gi, es: "Visitante", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
+  { pattern: /tercera equipaci[oó]n/gi, es: "Tercera", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
 
   // Tipo de camiseta (mismo vocabulario que TYPE_PATTERNS en extract.py).
-  { pattern: /\bportero\b|\bgardien\b|\bgoalkeeper\b|\bgoleiro\b|\bportiere\b/gi, es: "Arquero", en: "Goalkeeper", pt: "Goleiro" },
-  { pattern: /\bentrenamiento\b|\btraining\b|\btreino\b/gi, es: "Entrenamiento", en: "Training", pt: "Treino" },
-  { pattern: /\bdomicile\b|\btitular\b|\bhome\b/gi, es: "Titular", en: "Home", pt: "Titular" },
-  { pattern: /\bext[ée]rieur\b|\bvisitante\b|\baway\b/gi, es: "Visitante", en: "Away", pt: "Reserva" },
-  { pattern: /\btercer[ao]?\b|\bthird\b|\btroisi[eè]me\b|\bterceir[ao]\b/gi, es: "Tercera", en: "Third", pt: "Terceira" },
+  { pattern: /\bportero\b|\bgardien\b|\bgoalkeeper\b|\bgoleiro\b|\bportiere\b/gi, es: "Arquero", en: "Goalkeeper", pt: "Goleiro", fr: "Gardien", it: "Portiere" },
+  { pattern: /\bentrenamiento\b|\btraining\b|\btreino\b/gi, es: "Entrenamiento", en: "Training", pt: "Treino", fr: "Entraînement", it: "Allenamento" },
+  { pattern: /\bdomicile\b|\btitular\b|\bhome\b/gi, es: "Titular", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
+  { pattern: /\bext[ée]rieur\b|\bvisitante\b|\baway\b/gi, es: "Visitante", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
+  { pattern: /\btercer[ao]?\b|\bthird\b|\btroisi[eè]me\b|\bterceir[ao]\b/gi, es: "Tercera", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
 
   // Jersey/camiseta como palabra en sí (JERSEY_RE). "camiseta" (ES) faltaba
   // -- \bcamisa\b no la matchea porque no es un límite de palabra dentro de
   // "camiseta", así que se queda sin traducir en cientos de títulos de
   // AdidasES/AdidasPT.
-  { pattern: /\bmaillot\b|\bjersey\b|\bcamiseta\b|\bcamisola\b|\btrikot\b|\bshirt\b|\bmaglia\b|\bcamisa\b/gi, es: "Camiseta", en: "Jersey", pt: "Camisa" },
+  { pattern: /\bmaillot\b|\bjersey\b|\bcamiseta\b|\bcamisola\b|\btrikot\b|\bshirt\b|\bmaglia\b|\bcamisa\b/gi, es: "Camiseta", en: "Jersey", pt: "Camisa", fr: "Maillot", it: "Maglia" },
 
   // Género.
-  { pattern: /\bhomme\b|\bhombre\b|\bmen'?s\b|\bmasculin[ao]\b/gi, es: "Hombre", en: "Men's", pt: "Masculina" },
-  { pattern: /\bfemme\b|\bmujer\b|\bwomen'?s\b|\bwoman'?s\b|\bfeminin[ao]\b|\bf[ée]minin\b|\bladies\b|\bdama\b/gi, es: "Mujer", en: "Women's", pt: "Feminina" },
-  { pattern: /\bni[ñn][oa]s?\b|\bkids?\b|\bjunior\b|\benfant\b|\binfantil\b/gi, es: "Niño/a", en: "Kids", pt: "Infantil" },
+  { pattern: /\bhomme\b|\bhombre\b|\bmen'?s\b|\bmasculin[ao]\b/gi, es: "Hombre", en: "Men's", pt: "Masculina", fr: "Homme", it: "Uomo" },
+  { pattern: /\bfemme\b|\bmujer\b|\bwomen'?s\b|\bwoman'?s\b|\bfeminin[ao]\b|\bf[ée]minin\b|\bladies\b|\bdama\b/gi, es: "Mujer", en: "Women's", pt: "Feminina", fr: "Femme", it: "Donna" },
+  { pattern: /\bni[ñn][oa]s?\b|\bkids?\b|\bjunior\b|\benfant\b|\binfantil\b/gi, es: "Niño/a", en: "Kids", pt: "Infantil", fr: "Enfant", it: "Bambino" },
 
   // Otros términos comunes.
-  { pattern: /\br[ée]plica\b|\breplique\b/gi, es: "Réplica", en: "Replica", pt: "Réplica" },
-  { pattern: /\baut[ée]ntic[ao]\b|\bauthentic\b/gi, es: "Auténtica", en: "Authentic", pt: "Autêntica" },
+  { pattern: /\br[ée]plica\b|\breplique\b/gi, es: "Réplica", en: "Replica", pt: "Réplica", fr: "Réplique", it: "Replica" },
+  { pattern: /\baut[ée]ntic[ao]\b|\bauthentic\b/gi, es: "Auténtica", en: "Authentic", pt: "Autêntica", fr: "Authentique", it: "Autentica" },
 ];
 
 // Traduce el título real, palabra de vocabulario por palabra de

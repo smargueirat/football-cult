@@ -7,6 +7,8 @@ const OPTIONS: { code: Locale; label: string }[] = [
   { code: "es", label: "ES" },
   { code: "en", label: "EN" },
   { code: "pt", label: "PT" },
+  { code: "fr", label: "FR" },
+  { code: "it", label: "IT" },
 ];
 
 export default function LanguageSwitcher() {

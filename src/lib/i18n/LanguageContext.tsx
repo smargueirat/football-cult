@@ -26,7 +26,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY) as Locale | null;
-    if (stored === "es" || stored === "en" || stored === "pt") {
+    if (stored === "es" || stored === "en" || stored === "pt" || stored === "fr" || stored === "it") {
       setLocaleState(stored);
       return;
     }
@@ -35,6 +35,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       setLocaleState("en");
     } else if (browserLang && browserLang.startsWith("pt")) {
       setLocaleState("pt");
+    } else if (browserLang && browserLang.startsWith("fr")) {
+      setLocaleState("fr");
+    } else if (browserLang && browserLang.startsWith("it")) {
+      setLocaleState("it");
     }
   }, []);
 
