@@ -2360,6 +2360,8 @@ const OFFER_CURRENCY_LOCALE: Record<Offer["currency"], string> = {
   USD: "en-US",
   GBP: "en-GB",
   BRL: "pt-BR",
+  CLP: "es-CL",
+  ARS: "es-AR",
 };
 
 export function formatOfferMoney(amount: number, currency: Offer["currency"]): string {
@@ -2384,7 +2386,9 @@ const OFFER_CURRENCY_TO_EUR: Record<Offer["currency"], number> = {
   EUR: 1,
   USD: 1.08,
   GBP: 0.86,
-  BRL: 0.155,
+  BRL: 6.05,
+  CLP: 1076.5,
+  ARS: 1754.6,
 };
 
 export function offerTotalInEUR(offer: Offer): number {
@@ -2538,7 +2542,7 @@ export interface Offer {
   // del día anterior todavía).
   previousPrice?: number;
   shipping: number;
-  currency: "EUR" | "USD" | "GBP" | "BRL";
+  currency: "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
   url: string;
   inStock: boolean;
   sizes: Size[];
@@ -22753,6 +22757,8 @@ const productsData = [
       { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358900781040?_skw=Brazil+home+soccer+jersey&hash=item5390274ff0%3Ag%3AXo0AAeSwU79qdzS5&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa047nqdyvlp83lKK%2BYfDO7BNsHsG%2FkmA7XHFJprhUuZbLbtpY33lKSQQ6InLqHPYuz5x82KVC5B0pKpZDe7AyvYFYnO5Z1jGu5B5q3uO44g%2FH5DguD9pFDhG54EymKcP0LJscU5dpAmuk0D%2B3MUfVfdZF%2FVNm9PQ7BqqDmY0RGoLMioeo2Wr89wDawOy%2BrqRSG4VjDiNZsTiQ%2B7dTe%2BfIN2BLQjJqrTTFnpsXBYYFXkvMd9HzY6qz77U2GQXtzAys8h%2Fd9aIUaBuKAkfAX5%2F23Q31ddtOwe6toDmnfDdmASg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brazil Home Nike Men’s World Cup 2026 Soccer Jersey- NEW *Various Sizes*", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Xo0AAeSwU79qdzS5/s-l225.jpg" },
       { store: "Amazon", price: 123.72, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H3TWYWRH?tag=footballcult-21", title: "Nike Brasil 2026 Home Nike Aero-fit Authentic Camiseta de fútbol Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/712WkKoRnRL._AC_UL1000_.jpg" },
       { store: "Forum Sport", price: 127.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45176759978&a=3013769&m=23805", title: "Nike brasil mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091613-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA5MnxpbWFnZS9qcGVnfGFETTVMMmcwT1M4eE16WTBOak0yTURJeE5UVTRNaTl0WldScFlYTmZNVEF3TVRBNU1UWXhNMTh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58Mzc4YWE0NDliMWZjMDZmZGEzNDc1ZjM1OTM3YWJkMDhmZjUxMzkxZGUxNjVkZjExNTQ3Yzk4NTg4ODdlMDUzZA&feedId=58083&k=4ab9a328ba0c7aee75068b08d20921efd9a67418" },
+      { store: "NikeCL", price: 61990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5280-724-brasil-local-2026-stadium-1%2Fp", title: "Brasil local 2026 Stadium", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1648220-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Fbrasil-local-2026-stadium-if7054-724%2Fp", title: "Brasil local 2026 Stadium", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1731763/IF7054-724_A_PREM.jpg" },
       { store: "ForumSport", price: 87.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44768832097&a=3013769&m=23805", title: "Nike brasil mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091637-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwOXxpbWFnZS9qcGVnfGFHTmxMMmd3WlM4eE16WTBOalF4TXpJNU9UYzBNaTl0WldScFlYTmZNVEF3TVRBNU1UWXpOMTh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58OTViMmRjNmMyMDJmNGY0MDAxNTAwZmRkMmRjNzJmZTcxZTRmYmM3ZmJiZTJlMDYwYzYxZGRmYmIyODNjYTJhOQ&feedId=58083&k=8874407d9431400fae90010c992d7e3ebbae86c3" },
     ],
   },
@@ -22796,6 +22802,8 @@ const productsData = [
       { store: "SportIsGoodES", price: 67.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43574015741&a=3013769&m=65906", title: "Camiseta Local Francia 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9a9425f3ee590c3d0e42a6ae50a407326e681e29" },
       { store: "SportIsGoodFR", price: 65.57, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf1712-maillot-domicile-france-2025-26-semid-lucid-blue", title: "Maillot Domicile France 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp" },
       { store: "Forum Sport", price: 127.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44861876966&a=3013769&m=23805", title: "Nike francia mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091619-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY2MnxpbWFnZS9qcGVnfGFEUXlMMmhpTXk4eE16WTBOak0yTnpreE5qQTJNaTl0WldScFlYTmZNVEF3TVRBNU1UWXhPVjh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58YmZjNTYwNTZjMDYyZGZmMmI5MzQ0NmRjYTIxNDJlYTFiNDFmZDZhMzIzZmY0Y2YwZDBjNzRiOWNjNGI3OTEwZQ&feedId=58083&k=9edb5cc98352d51fda484b736588130c1262da08" },
+      { store: "NikeCL", price: 61990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5300-480-francia-local-2026-stadium%2Fp", title: "Francia local 2026 Stadium", inStock: true, sizes: ["S", "XL"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1648250-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Ffrancia-local-2026-stadium-ib5300-480%2Fp", title: "Francia local 2026 Stadium", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "2XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1731085/IB5300-480_A_PREM.jpg" },
       { store: "ForumSport", price: 87.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44686173165&a=3013769&m=23805", title: "Nike francia mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091615-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjAzOHxpbWFnZS9qcGVnfGFEazBMMmhtTmk4eE16WTBOak0yTXpnNE5UVTVPQzl0WldScFlYTmZNVEF3TVRBNU1UWXhOVjh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58MjY3ZGIyNmVjMjhhOTZjNjc4YjFjZjNkMGExZjRiNGNjOWY0YzgzYjFiM2NiMzI2OGYwNDdhNzk1NDA1MTI1NA&feedId=58083&k=bc329a029fadcee9ae41dae9a08220eea79f3e36" },
     ],
   },
@@ -22927,6 +22935,8 @@ const productsData = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5290-100-maillot-domicile-angleterre-coupe-du-monde-2026-white-speed-red-obsidian-obsidian", title: "Maillot Domicile Angleterre Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5290-100_01.webp" },
       { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318730072602?_skw=England+home+soccer+jersey&hash=item4a35caf21a%3Ag%3AzecAAeSwDhxqZAgB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "England 2026 World Cup Home Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/zecAAeSwDhxqZAgB/s-l225.jpg" },
       { store: "Forum Sport", price: 116.47, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44851307636&a=3013769&m=23805", title: "Nike inglaterra mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091614-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM4M3xpbWFnZS9qcGVnfGFEYzFMMmc0WlM4eE16WTBOak0yTWpNM09ESTNNQzl0WldScFlYTmZNVEF3TVRBNU1UWXhORjh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58NzQ0NDJhY2ZkZWNjMmMyMDdmMWUzMGQ1ZDVhOTUxNTMyNzI3MDFmZjlkNGFlNjM0MGU2NzIxNjA1NmZhOWFkZA&feedId=58083&k=3e869568d639768b12cc0908d632abfbb96ca047" },
+      { store: "NikeCL", price: 52990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5290-100-inglaterra-local-2026-stadium%2Fp", title: "Inglaterra local 2026 Stadium", inStock: true, sizes: ["M", "XL"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1642403-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Finglaterra-local-2026-stadium-ib5290-100%2Fp", title: "Inglaterra local 2026 Stadium", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1731075/IB5290-100_A_PREM.jpg" },
       { store: "ForumSport", price: 87.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44851307636&a=3013769&m=23805", title: "Nike inglaterra mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091614-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM4M3xpbWFnZS9qcGVnfGFEYzFMMmc0WlM4eE16WTBOak0yTWpNM09ESTNNQzl0WldScFlYTmZNVEF3TVRBNU1UWXhORjh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58NzQ0NDJhY2ZkZWNjMmMyMDdmMWUzMGQ1ZDVhOTUxNTMyNzI3MDFmZjlkNGFlNjM0MGU2NzIxNjA1NmZhOWFkZA&feedId=58083&k=3e869568d639768b12cc0908d632abfbb96ca047" },
     ],
   },
@@ -22964,6 +22974,8 @@ const productsData = [
       { store: "FootStoreES", price: 87.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926288&a=3013769&m=65912", title: "Camiseta Local Uruguay Coupe du monde 2026", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io4680-425-royal-tint-obsidian-69ca9a902cd7b-1.webp&feedId=89032&k=4780a54f0874bb05eb7125178c79fd8c99232289" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4680-425-maillot-domicile-uruguay-coupe-du-monde-2026-royal-tint-obsidian", title: "Maillot Domicile Uruguay Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io4680-425-royal-tint-obsidian-69ca9a902cd7b-1.webp" },
       { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/267229105542?_skw=Uruguay+home+soccer+jersey&hash=item3e38188d86%3Ag%3ATlMAAOSw1xtoCEmo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Uruguay Soccer Home Men 2025-26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/TlMAAOSw1xtoCEmo/s-l225.jpg" },
+      { store: "NikeCL", price: 52990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fio4680-425-uruguay-local-2026-stadium%2Fp", title: "Uruguay local 2026 Stadium", inStock: true, sizes: ["M", "2XL"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1646397-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Furuguay-local-2026-stadium-io4680-425%2Fp", title: "Uruguay local 2026 Stadium", inStock: true, sizes: ["S", "M", "L", "XL", "2XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1732195/IO4680-425_A_PREM.jpg" },
     ],
   },
 {
@@ -23001,6 +23013,8 @@ const productsData = [
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5334-809-maillot-domicile-pays-bas-coupe-du-monde-2026-hyper-crimson-black", title: "Maillot Domicile Pays-Bas Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5334-809_04.webp" },
       { store: "eBay", price: 139.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227451132219?_skw=Netherlands+home+soccer+jersey&hash=item34f524d93b%3Ag%3Ap1sAAeSwVDJqZ-%7El&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Netherlands National Team Nike 2026 Authentic Stadium Home Jersey Large 11", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/p1sAAeSwVDJqZ-~l/s-l225.jpg" },
       { store: "Forum Sport", price: 127.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44500804669&a=3013769&m=23805", title: "Nike paises bajos mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091622-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg5NHxpbWFnZS9qcGVnfGFHVmxMMmc1TkM4eE16WTBOak0zTWpjd01ERTVNQzl0WldScFlYTmZNVEF3TVRBNU1UWXlNbDh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58YzI3NTU4ZTRjMGQwNDE4ZDdkOWY0NzkwMDgwNmNlMjliYWQ1YjRlN2E2MGEwYWZmN2I2ZDhiN2YzNTQ5MzdmYQ&feedId=58083&k=727707bce808937e1ef5311fdca0773ae83fd2ec" },
+      { store: "NikeCL", price: 52990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5334-809-paises-bajos-local-2026-stadium%2Fp", title: "Países Bajos local 2026 Stadium", inStock: true, sizes: ["S", "M"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1649022-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Fpaises-bajos-local-2026-stadium-ib5334-809%2Fp", title: "Países Bajos local 2026 Stadium", inStock: true, sizes: ["S", "M", "L", "XL", "2XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1731116/IB5334-809_A_PREM.jpg" },
       { store: "ForumSport", price: 87.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45803612827&a=3013769&m=23805", title: "Nike paises bajos mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001104050-00-S-M-20260413142658.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM5MnxpbWFnZS9qcGVnfGFEZ3lMMmhoWmk4eE16WTVOakF6TkRVek56VXdNaTl0WldScFlYTmZNVEF3TVRFd05EQTFNRjh3TUY5VFgwMHRNakF5TmpBME1UTXhOREkyTlRndWFuQm58NDFmYTlmODgwYTFmNjVkZmNhNjNmY2EwZjM4ZTgwMzdlNzc2MjQyZTg0YzQ4NGI0MThmZjNmZjQwNjdhY2ExNg&feedId=58083&k=d11b371b5f90d3b340cbad0d541b4008ecd66724" },
     ],
   },
@@ -23387,6 +23401,8 @@ const productsData = [
       { store: "FootStoreES", price: 68.08, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300845&a=3013769&m=65912", title: "Maillot Gardien Brasil Jordan Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_if3900-741_04.webp&feedId=89032&k=5e22c0d7ecbdfc4c32ca88061dd64a04e65d23e5" },
       { store: "FootStoreFR", price: 68.22, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif3900-741-maillot-gardien-bresil-jordan-coupe-du-monde-2026-varsity-maize-lucky-green", title: "Maillot Gardien Brésil Jordan Coupe du Monde 2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if3900-741_04.webp" },
       { store: "eBay", price: 109.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398051650370?_skw=Brazil+goalkeeper+soccer+jersey&hash=item5cadba2b42%3Ag%3AFw4AAeSw7mFqKRGJ&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZEmM0neimzYjw6DlmpZxRPmyTpdCWZdguiPGU8ItTSPigJ7wgHGs87WdkObo7G5dQqFWF0ASdK0jFszH0AhV9IB8JJlUXdCg72GkA1GhJwhhC8iZmUVUnWpjfloj%2FJIClW%2BgOiVAFoUmSvtvQbx6VOnR0ZMoxEn%2BcnN06Sk78nASDTi7RERzqKUeN9qtL0rdJlKXlnZn8VfcUlUbq667e1A3nHbHfAbm2l58I0zit1MXwe0kmgiowczRw0snOO7ebO3WYlLSNb7NK%2FysPvG6U%2FfMizzsfdVyZFov7B%2FqTnSGa115mqsnt5z5Lef%2Bp0liI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Brasil 2026 Hollywood Goalkeeper Jersey IO0795-010 Men's XS NWT", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/Fw4AAeSw7mFqKRGJ/s-l225.jpg" },
+      { store: "NikeCL", price: 61990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5267-302-brasil-portero-2026-stadium-1%2Fp", title: "Brasil portero 2026 Stadium", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1631497-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Fbrasil-arquero-2026-stadium-ib5267-302%2Fp", title: "Brasil Arquero 2026 Stadium", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1765274/IB5267-302_A_PREM.jpg" },
     ],
   },
 {
@@ -23561,6 +23577,8 @@ const productsData = [
       { store: "FootStoreES", price: 127.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300776&a=3013769&m=65912", title: "Camisa Exterior Auténtica Inglaterra Coupe du monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5195-624_01.webp&feedId=89032&k=2e991e3fc08729eaa7ffec602be17cc05a7581c2" },
       { store: "FootStoreFR", price: 87.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5361-624-maillot-exterieur-angleterre-coupe-du-monde-2026-speed-red-obsidian-white-obsidian", title: "Maillot Extérieur Angleterre Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5361-624_01.webp" },
       { store: "Forum Sport", price: 87.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44500804682&a=3013769&m=23805", title: "Nike inglaterra mundial 2026 segunda equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091623-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI5NXxpbWFnZS9qcGVnfGFEWXlMMmd5WlM4eE16WTBOak0zTkRJM016QTFOQzl0WldScFlYTmZNVEF3TVRBNU1UWXlNMTh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58ODQ2YmQyOTMxYTlmOWQzYmVmODUzZjNiYWYyMzYwYTA0NzgzMmQ3Y2VkOWMxNjQ2NTQ3YTUyZmRmYTM2YmM0ZA&feedId=58083&k=d1f865952dee2e45b32752bf828d63045e0566d6" },
+      { store: "NikeCL", price: 52990, shipping: 0.0, currency: "CLP", url: "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5361-624-inglaterra-visitante-2026-stadium%2Fp", title: "Inglaterra visitante 2026 Stadium", inStock: true, sizes: ["S", "M"], imageUrl: "https://nikeclprod.vtexassets.com/arquivos/ids/1642190-800-800" },
+      { store: "NikeAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Finglaterra-visitante-2026-stadium-ib5361-624%2Fp", title: "Inglaterra visitante 2026 Stadium", inStock: true, sizes: ["S", "M", "L", "XL", "2XL"], imageUrl: "https://nikearprod.vtexassets.com/arquivos/ids/1731134/IB5361-624_A_PREM.jpg" },
     ],
   },
 {
@@ -38901,6 +38919,32 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 29.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/157778220518?_skw=TSG+Hoffenheim+home+soccer+jersey&hash=item24bc5095e6%3Ag%3Ak9sAAeSwwBxpwOT2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TSG 1899 HOFFENHEIM Home Jersey 2025-26", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/k9sAAeSwwBxpwOT2/s-l225.jpg" },
+    ],
+  },
+{
+    id: "independiente-away-202627",
+    teamKey: "independiente",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "puma",
+    offers: [
+      { store: "PumaAR", price: 169999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14084&dl=https%3A%2F%2Far.puma.com%2Fpd%2Fcamiseta-alternativa-cai-26-27%2F696064.html", title: "Camiseta Alternativa CAI 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/696064/01/fnd/ARG/fmt/png" },
+    ],
+  },
+{
+    id: "independiente-third-202627",
+    teamKey: "independiente",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#D2001C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "puma",
+    offers: [
+      { store: "PumaAR", price: 149999, shipping: 0.0, currency: "ARS", url: "https://ad.soicos.com/sclick?aid=56058&pid=14084&dl=https%3A%2F%2Far.puma.com%2Fpd%2Fcamiseta-tercer-conjunto-cai%2F691358.html", title: "Camiseta Tercer Conjunto CAI", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/691358/01/fnd/ARG/fmt/png" },
     ],
   },
 {

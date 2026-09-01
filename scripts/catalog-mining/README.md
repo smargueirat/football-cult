@@ -1644,3 +1644,128 @@ away, Bayern prematch) against the existing catalog image each time -- all
 were genuinely different, real licensed jerseys (this store apparently
 carries older-season/alternate-design stock alongside its newest listings),
 not the same design re-titled. Generated as 20 new products.
+
+## Soicos (Nike CL/AR, Puma AR) — needs a real browser, not headless Playwright (2026-08-31)
+
+A new affiliate network, separate from Awin/eBay/Rakuten. Approved
+programs so far: **Nike (CL)** (pid 14271), **Nike (AR)** (pid 14661),
+**Puma (AR)** (pid 14084) — all under one Soicos account (aid 56058).
+Check `soicos.com/publisher/programs` (search the site name) for any
+newly-approved ones; program IDs show up in the "Programa" dropdown at
+`soicos.com/publisher/tool_box/deeplinks`.
+
+**This is fundamentally different from every other source in this repo
+and does not fit the CSV-feed pattern:**
+
+- Soicos itself has **no product feed** (CSV/XML/API). Every "tool" in
+  its dashboard (Home, Deeplink, Coupons, even the one literally named
+  "Feed") is a tracked marketing *link* to a page on the store's own
+  site, not a machine-readable catalog. Confirmed by generating one and
+  following it — it 302-redirects to the store's normal homepage/offers
+  page, nothing more.
+- **Nike.cl and nike.com.ar block headless browser automation outright**
+  (Cloudflare "Attention Required!" challenge page) — confirmed by
+  pointing plain `playwright-core` (chromium, headless, no stealth) at
+  both directly. A real browser (this repo's `claude-in-chrome` MCP
+  tool, i.e. an actual Chrome instance with the extension, not a
+  scripted one) loads them fine — Cloudflare's bot detection is
+  specifically flagging headless/automated fingerprints, not blocking
+  by IP or user-agent string.
+- Net effect: **this can't run unattended inside `daily_scan.sh`'s
+  headless `claude -p` invocation unless that invocation has
+  `claude-in-chrome` available** (i.e. real Chrome, with the extension,
+  actually running on the Mini PC when cron fires). If it does, the
+  same manual process below can in principle be repeated by that run.
+  If it doesn't, this needs an interactive session instead — don't
+  spend time trying to make plain Playwright work here again, it won't
+  get past Cloudflare no matter how it's configured.
+
+### The actual process (done by hand once, 2026-08-31, via claude-in-chrome)
+
+1. **Find products via the store's own category/search pages**, not
+   Soicos. Nike CL has a stable category page for national teams at
+   `nike.cl/federaciones` (54 products at the time, real photos/prices/
+   sizes, normal pagination). Nike AR (VTEX-based like CL, but a
+   different storefront) doesn't have that same route — its in-page
+   search overlay works instead (click the search icon, click the now-
+   visible input, type, wait ~1.5s — the overlay is flaky about landing
+   typed text if you interact with it too fast or in the wrong order,
+   just retake a screenshot and retry the click+type if the box comes
+   back empty). Puma AR (`ar.puma.com`, not VTEX) has an ordinary
+   `/search?q=...` route that works directly.
+2. **Cross-reference every candidate against what's already in
+   `products.ts` by Nike/Puma style code** (e.g. `IB5290-100`) before
+   treating it as a new product — Nike in particular reuses the exact
+   same style code across every country storefront for the same
+   physical jersey (confirmed: CL and AR both sell `IB5290-100`
+   "Inglaterra local 2026 Stadium" at the identical style code). Use
+   `existing_products()` from `split_picks.py` to check `team|type` ->
+   season(s) on file, then grep for the style code inside that
+   product's existing offers (visible in other stores' image/URL
+   strings) to confirm it's the same jersey before adding a plain
+   add-offer. A season/style mismatch means it needs the
+   `season_conflict` new-product path instead — don't force it into an
+   existing block.
+3. **Extract price/sizes/image per product directly from its PDP**, not
+   from list/search cards (cards are frequently missing real size
+   availability). `document.querySelector('meta[property="og:image"]')`
+   via the `javascript_tool` gives a clean, query-string-free image URL
+   fast; sizes need a screenshot (grey/struck-through button = sold
+   out) since neither `.disabled` nor `aria-disabled` reliably reflects
+   it in either storefront's markup.
+4. **Generate the affiliate link through Soicos' own Deeplinks tool**
+   (`soicos.com/publisher/tool_box/deeplinks` — pick the program, paste
+   the real product URLs one per line, click Generar). The resulting
+   links follow a flat, reconstructable pattern once you've seen one:
+   `https://ad.soicos.com/sclick?aid=56058&pid=<program_id>&dl=<url-
+   encoded target URL>` — so once you know the pid for a program, you
+   can build these directly with `urllib.parse.quote` instead of
+   re-running the tool per batch. **Verify at least one with `curl -sI`
+   before trusting the pattern for the rest** (expect a `302` with a
+   `location:` header pointing at the real product, tagged with
+   `utm_source=soicos`).
+5. **Nike (AR) links geo-check the visitor's country** — resolving one
+   from this repo's own (non-Argentine) network returned an HTML page
+   titled "Campaña no válida para tu país de residencia" (200, not the
+   expected 302) instead of redirecting. Nike (CL)'s links didn't show
+   this behavior from the same network. Real site visitors clicking
+   from Argentina should be unaffected (that's the whole target
+   audience), but this means an AR-based curl/redirect check from
+   outside Argentina will always look "broken" even when it isn't —
+   don't treat that as a bug to chase without first confirming from an
+   AR vantage point.
+
+### What's done vs. still open
+
+- **Nike (CL): 7 add-offers** (Brasil home + goalkeeper, Inglaterra
+  home + away, Francia home, Uruguay home, Países Bajos home) — all
+  matched to existing `-2026` season products via style code. Store
+  name `NikeCL`, currency `CLP`.
+- **Nike (AR): the identical 7 products**, same style codes, confirmed
+  separately on nike.com.ar. Store name `NikeAR`, currency `ARS`.
+- **Puma (AR): 2 new products** for Independiente (`teamKey:
+  "independiente"`) — `independiente-away-202627` (`Camiseta
+  Alternativa CAI 26/27`, a real season/sponsor change vs. the existing
+  2025 away offer, which was itself already dead/`inStock:false`) and
+  `independiente-third-202627` (`Camiseta Tercer Conjunto CAI`, no
+  `independiente|third` product existed before this). Both reuse the
+  team's existing `colorHex`/`colorHexSecondary` rather than the
+  specific kit's own colors — matches the established convention (see
+  e.g. Brasil's home/away/goalkeeper all sharing one colorHex despite
+  being yellow/navy/green). Store name `PumaAR`, currency `ARS`. Puma
+  AR's deeplinks redirect via client-side JS
+  (`window.location.href`) rather than an HTTP 302 like Nike's do —
+  `curl -I` alone shows a bare 200 that looks broken; read the response
+  body to see the real redirect target and tracking params. No country
+  geo-check observed on these links (unlike Nike AR's).
+  The home replica jersey didn't turn up anywhere on `ar.puma.com`
+  (checked the dedicated Independiente collection page and a ~78-result
+  general search) — not blocking, since `independiente-home-2025`
+  already has a real, in-stock eBay offer. May be worth checking again
+  later in case Puma AR lists it eventually.
+- Both Nike storefronts and Puma AR sell plenty more than this one
+  batch — check for other Argentine clubs Puma actually sponsors
+  (Independiente was found via its home-page hero banner, not a
+  systematic search) and for more national teams' away kits on Nike
+  before assuming there's nothing else there. This pass covered one
+  category page's worth by hand on each site, not everything available.
