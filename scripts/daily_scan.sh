@@ -42,3 +42,71 @@ CLAUDE_EXIT=$?
 # with 127, "command not found"). Capture it immediately instead.
 
 echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily scan end (exit $CLAUDE_EXIT) ==="
+
+# Safety net for a real bug found twice (2026-09-01, 2026-09-02): the run
+# above can finish -- sometimes genuinely completing all its mining work --
+# without ever reaching its own "commit and push" instruction, both times
+# because the interactive Bash tool went down mid-run and the agent
+# gracefully reported status instead of crashing loudly. That left real,
+# valid, typecheck-clean work sitting uncommitted in this shared working
+# directory both times, discovered by accident days later and recovered by
+# hand. This tries the same recovery automatically instead of depending on
+# someone noticing.
+send_alert() {
+  local subject="$1" body="$2"
+  local api_key to
+  api_key="$(grep '^RESEND_API_KEY=' .env.local | cut -d= -f2-)"
+  to="$(grep '^REPORT_EMAIL_TO=' .env.local | cut -d= -f2-)"
+  [[ -z "$api_key" || -z "$to" ]] && return
+  curl -s -X POST https://api.resend.com/emails \
+    -H "Authorization: Bearer $api_key" \
+    -H "Content-Type: application/json" \
+    -d "$(node -e "console.log(JSON.stringify({from:'Football Cult <onboarding@resend.dev>', to: process.argv[1], subject: process.argv[2], text: process.argv[3]}))" "$to" "$subject" "$body")" \
+    > /dev/null
+}
+
+if [[ $CLAUDE_EXIT -ne 0 ]]; then
+  send_alert "Daily scan failed (exit $CLAUDE_EXIT)" "The headless run at $(date -u +%Y-%m-%dT%H:%M:%SZ) exited with code $CLAUDE_EXIT. Check scripts/daily_scan.log on the Mini PC for details."
+fi
+
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) uncommitted changes found after run, attempting safety-net commit ==="
+  BRANCH="$(git branch --show-current)"
+  # Explicit allowlist, not `git add -A`/`.` -- this shared working
+  # directory can have unrelated clutter sitting in it (seen in practice:
+  # stray debug logs from other tooling) that must never get swept into an
+  # unattended commit. Only the exact files this pipeline is documented
+  # above to touch.
+  git add \
+    src/data/products.ts \
+    src/data/priceHistory.json \
+    scripts/catalog-mining/ebay_full_cycle_state.json \
+    scripts/catalog-mining/ebay_stale_check_state.json \
+    scripts/catalog-mining/price_snapshot.json \
+    2>/dev/null
+
+  if git diff --cached --quiet; then
+    echo "=== safety net: nothing from the known file list was staged, leaving as-is ==="
+  elif npx tsc --noEmit && node -e '
+      const fs = require("fs");
+      const src = fs.readFileSync("src/data/products.ts", "utf8");
+      const start = src.indexOf("const productsData = [");
+      const ids = [...src.slice(start).matchAll(/^\s*id:\s*"([^"]+)",/gm)].map((m) => m[1]);
+      const seen = new Map();
+      for (const id of ids) seen.set(id, (seen.get(id) || 0) + 1);
+      const dupes = [...seen.entries()].filter(([, c]) => c > 1);
+      if (dupes.length > 0) { console.error("duplicate ids:", dupes); process.exit(1); }
+    '; then
+    git commit -m "Daily scan safety-net commit ($(date -u +%Y-%m-%d))
+
+The scan above finished without reaching its own commit/push step --
+recovered here after verifying tsc + the duplicate-id check pass clean."
+    git push origin "$BRANCH"
+    echo "=== safety net: recovered and pushed to $BRANCH ==="
+    send_alert "Daily scan: safety-net commit recovered work on $BRANCH" "The scan's own commit/push step didn't run, but the safety net verified (tsc + duplicate-id check) and pushed it after the fact. No action needed, just flagging in case it happens often enough to be worth investigating why."
+  else
+    git reset -- src/data/products.ts src/data/priceHistory.json scripts/catalog-mining/*.json
+    echo "=== safety net: FAILED verification, left uncommitted for manual review ==="
+    send_alert "Daily scan: uncommitted changes need manual review" "Uncommitted changes are sitting in /home/piojo/football-cult on branch $BRANCH, but they failed tsc or the duplicate-id check, so the safety net left them uncommitted on purpose. Needs a manual look before committing -- don't just force it through."
+  fi
+fi
