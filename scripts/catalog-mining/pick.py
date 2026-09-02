@@ -65,6 +65,10 @@ def pick_best(csv_path, price_col="search_price", size_col="custom_1", link_col=
             # was silently getting zero sizes and dropped entirely.
             if sz.startswith("TALLA:"):
                 sz = sz[len("TALLA:"):].strip()
+            # DecathlonIE's Fashion:size is garbled with stray periods/spaces
+            # ("XL   .", "M.") -- found 2026-09-02, silently returned zero
+            # picks for the whole store until stripped.
+            sz = re.sub(r"[.\s]+$", "", sz).strip()
             if sz in SIZE_MAP:
                 sizes.add(SIZE_MAP[sz])
                 if rep_row is None or SIZE_MAP[sz] == "M":
