@@ -25,6 +25,12 @@ export default function Footer() {
           <Link href="/terminos" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.terms}
           </Link>
+          <Link href="/guia-de-tallas" className="transition-colors hover:text-[#F3E9C9]">
+            {t.footer.sizeGuide}
+          </Link>
+          <Link href="/autenticidad" className="transition-colors hover:text-[#F3E9C9]">
+            {t.footer.authenticity}
+          </Link>
         </nav>
       </div>
       <div className="vintage-divider mx-6 max-w-6xl sm:mx-auto" />
