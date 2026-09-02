@@ -21,6 +21,7 @@ const FEED_URLS: Record<string, string | undefined> = {
   AdidasES: process.env.AWIN_FEED_URL_ADIDAS_ES,
   AdidasPT: process.env.AWIN_FEED_URL_ADIDAS_PT,
   BSTNIT: process.env.AWIN_FEED_URL_BSTN_IT,
+  DecathlonIE: process.env.AWIN_FEED_URL_DECATHLONIE,
 };
 
 // Mystery Shirt Club isn't onboarded via an Awin datafeed CSV — it has none

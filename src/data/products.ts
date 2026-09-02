@@ -2490,6 +2490,14 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   // productos no comprables a usuarios fuera de España/Portugal.
   AdidasES: ["ES"],
   AdidasPT: ["PT"],
+  // Decathlon operates separate regional storefronts per country
+  // (decathlon.ie for Ireland, decathlon.co.uk for the UK, etc.), same
+  // pattern as adidas's regional sites above -- decathlon.ie's own order
+  // flow is scoped to the Republic of Ireland. Not independently verified
+  // against a dedicated shipping-policy page (site blocks automated
+  // fetches), inferred from Decathlon's known per-country storefront model
+  // -- safer than the implicit "ships everywhere" default.
+  DecathlonIE: ["IE"],
 };
 
 export function offerShipsTo(store: string, country: CountryCode): boolean {
@@ -73573,6 +73581,34 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsc-braga-home-soccer-jersey-2026-27%3Fvariant%3D47970731327593", title: "SC Braga Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SCBragahomefan2026_27_3.webp?v=1788249137" },
+    ],
+  },
+  {
+    id: "marseille-away-kids",
+    teamKey: "marseille",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0A1E3C",
+    colorHexSecondary: "#5FBEDB",
+    jerseyPattern: "solid",
+    brand: "puma",
+    ageGroup: "kids",
+    offers: [
+      { store: "DecathlonIE", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=38584279323&a=3013769&m=37550", title: "Kids' Olympique de Marseille Away Shirt 24/25", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acontents.mediadecathlon.com%2Fp2744232%2Fk%24c0522dff0bf8903bb9cc19d8782fb377%2Fkids-olympique-de-marseille-away-shirt-24-25.jpg%3Fformat%3Dauto%26quality%3D40%26f%3D800x800&feedId=80635&k=73e525818fa44e88862d0c62ee010d572f24239b" },
+    ],
+  },
+  {
+    id: "rbleipzig-home-kids",
+    teamKey: "rbleipzig",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#DD0741",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "puma",
+    ageGroup: "kids",
+    offers: [
+      { store: "DecathlonIE", price: 80.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=38571603832&a=3013769&m=37550", title: "Kids' Leipzig Home Shirt 24/25 Season", inStock: true, sizes: ["8-9", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acontents.mediadecathlon.com%2Fp2744615%2Fk%24d31f0c0401622b97373ef63060e6f640%2Fkids-leipzig-home-shirt-24-25-season.jpg%3Fformat%3Dauto%26quality%3D40%26f%3D800x800&feedId=80635&k=4fd0816e8bf66cf82fac966859fbc79c6e3c1e10" },
     ],
   },
 ];
