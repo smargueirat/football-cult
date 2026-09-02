@@ -34,9 +34,20 @@ const SITE_DESCRIPTION =
   "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.football-cult.com"),
+  // Sin "www" -- mismo dominio que ya usan sitemap.ts/robots.ts/feed.xml/
+  // el JSON-LD de producto como fuente de verdad (ver next.config.ts: la
+  // versión con www redirige acá, no al revés).
+  metadataBase: new URL("https://football-cult.com"),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
+  // Código HTML-tag de Search Console (Configuración > Verificación de la
+  // propiedad > etiqueta HTML): pegar solo el valor del atributo content,
+  // no el <meta> entero. Sin la env var, Next directamente no imprime el
+  // tag -- no hace falta tocar código de nuevo una vez que exista.
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,

@@ -27,6 +27,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import DiscoveryCarousel from "./DiscoveryCarousel";
 import HeritageStory from "./HeritageStory";
 import JerseyGallery from "./JerseyGallery";
+import PriceHistorySparkline from "./PriceHistorySparkline";
 import ReportProductModal from "./ReportProductModal";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -62,7 +63,13 @@ function triggerHaptic() {
 
 const OFFERS_SECTION_ID = "comparativa-tiendas";
 
-export default function JerseyDetailClient({ product }: { product: Product }) {
+export default function JerseyDetailClient({
+  product,
+  priceHistory,
+}: {
+  product: Product;
+  priceHistory: Record<string, { date: string; price: number }[]>;
+}) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
   const { isComparing, toggleCompare, maxReached } = useCompare();
@@ -353,6 +360,17 @@ export default function JerseyDetailClient({ product }: { product: Product }) {
             </p>
           ) : (
             <>
+              {bestOffer && priceHistory[bestOffer.url] && (
+                <PriceHistorySparkline
+                  history={priceHistory[bestOffer.url]}
+                  currency={bestOffer.currency}
+                  label={t.detail.priceHistoryLabel.replace(
+                    "{n}",
+                    String(priceHistory[bestOffer.url].length)
+                  )}
+                />
+              )}
+
               {/* Size selector */}
               <div>
                 <p className="font-tagline mb-2 text-sm not-italic text-[#5b5442]">{t.detail.chooseSize}</p>

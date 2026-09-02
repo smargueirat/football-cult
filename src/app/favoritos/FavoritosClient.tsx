@@ -16,9 +16,12 @@ export default function FavoritosClient() {
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
-      <h1 className="font-card-title mb-6 text-3xl text-[#1a1a1a] sm:text-4xl">
+      <h1 className={`font-card-title text-3xl text-[#1a1a1a] sm:text-4xl ${savedProducts.length > 0 ? "" : "mb-6"}`}>
         {t.favoritesPage.title}
       </h1>
+      {savedProducts.length > 0 && (
+        <p className="mb-6 mt-1 text-sm text-[#675c44]">{t.favoritesPage.priceAlertNote}</p>
+      )}
 
       {savedProducts.length === 0 ? (
         <div className="glass-panel flex flex-col items-center gap-4 rounded-3xl border border-[#C9A24B]/25 p-10 text-center">

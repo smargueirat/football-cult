@@ -374,7 +374,15 @@ contains teams we already know.
 1. Add its regex to `TEAM_PATTERNS` in `extract.py`.
 2. Add its tuple to the current highest `new_teams_batchN.py`.
 3. Add the `TeamKey` union member + `teamCategory`/`teamNames`/
-   `teamFlags`/`teamColors` entries in `src/data/products.ts`.
+   `teamFlags`/`teamColors` entries in `src/data/products.ts` (or run
+   `apply_batch.py`, which does this for you -- since 2026-09-02 it
+   auto-fills the new `fr`/`it` locale keys in `teamNames` with the
+   same value as `es`, which is correct for the ~278/385 existing
+   entries that are club proper nouns identical across every locale.
+   If the new key is a **national team** (rare -- all major footballing
+   nations are already covered), fix its `fr`/`it` names by hand
+   afterward, same as `es`/`en`/`pt` already needed manual translation
+   for those).
 4. **Before adding, verify by downloading and looking at the actual
    product photo** — this catalog has repeatedly caught rugby, handball,
    volleyball, basketball, motorsport, and "Classic"/"Copa" retro

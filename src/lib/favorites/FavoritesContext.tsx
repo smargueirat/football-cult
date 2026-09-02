@@ -72,6 +72,18 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
       ? favorites.filter((f) => f !== id && resolveProductId(f) !== id)
       : [...favorites, id];
     update({ favorites: next });
+
+    // Favoritos duplica el registro en Redis (además del JWT de arriba)
+    // solo para esto: es lo que permite que /api/cron/check-prices sepa a
+    // quién avisarle por mail cuando una de sus camisetas favoritas baja
+    // de precio, sin depender de que esa persona tenga sesión activa en
+    // ese momento. No bloquea el toggle si falla -- el favorito en sí ya
+    // se guardó, esto es best-effort.
+    fetch("/api/price-alerts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ productId: id, subscribe: !currentlyFavorited }),
+    }).catch(() => {});
   }
 
   function isFavorite(id: string) {

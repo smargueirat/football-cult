@@ -22,6 +22,12 @@ export const BRAND_FILTERS: Brand[] = (
   ["adidas", "nike", "puma", "kappa", "hummel", "umbro", "newbalance", "macron"] as Brand[]
 ).filter((key) => products.some((p) => p.brand === key));
 
+// Todas las tiendas presentes en el catálogo (solo ~29 valores distintos,
+// a diferencia de marca/equipo no hace falta curar un subconjunto).
+export const STORE_FILTERS: string[] = Array.from(
+  new Set(products.flatMap((p) => p.offers.map((o) => o.store)))
+).sort((a, b) => a.localeCompare(b));
+
 // Selecciones/clubes más buscados: son un atajo, no un listado completo
 // (para eso ya está el buscador de texto), así que se mantiene corta a
 // propósito en vez de mostrar los ~90 equipos del catálogo.

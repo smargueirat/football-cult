@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { gunzipSync } from "zlib";
 import { parse } from "csv-parse/sync";
+import { Resend } from "resend";
 import { getRedis, isRedisConfigured } from "@/lib/redis";
-import { products } from "@/data/products";
+import { Offer, formatOfferMoney, products, teamNames, typeNames } from "@/data/products";
+
+const SITE_URL = "https://football-cult.com";
 
 export const maxDuration = 60;
 
@@ -93,7 +96,8 @@ export async function GET(req: NextRequest) {
   const redis = await getRedis();
 
   const feedCache = new Map<string, FeedRow[]>();
-  const summary: { productId: string; store: string; from: number; to: number }[] = [];
+  const summary: { productId: string; store: string; from: number; to: number; currency: Offer["currency"] }[] =
+    [];
   const errors: string[] = [];
 
   for (const product of products) {
@@ -128,6 +132,7 @@ export async function GET(req: NextRequest) {
             store: offer.store,
             from: lastKnownPrice,
             to: currentPrice,
+            currency: offer.currency,
           });
         }
 
@@ -138,5 +143,47 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  return NextResponse.json({ checked: products.length, drops: summary, errors });
+  // Un mail por producto, no por oferta -- si dos tiendas del mismo
+  // producto bajaron en la misma corrida, se avisa una sola vez con la
+  // mejor de las dos (menor precio nuevo). Los suscriptores son el
+  // registro que /api/price-alerts arma cuando alguien marca un
+  // favorito estando logueado (ver comentario en FavoritesContext.tsx).
+  let alertsSent = 0;
+  const apiKey = process.env.RESEND_API_KEY;
+  if (apiKey && summary.length > 0) {
+    const resend = new Resend(apiKey);
+    const dropsByProduct = new Map<string, (typeof summary)[number]>();
+    for (const drop of summary) {
+      const existing = dropsByProduct.get(drop.productId);
+      if (!existing || drop.to < existing.to) dropsByProduct.set(drop.productId, drop);
+    }
+
+    for (const [productId, drop] of dropsByProduct) {
+      const subscribers = await redis.sMembers(`priceAlertSubscribers:${productId}`);
+      if (subscribers.length === 0) continue;
+
+      const product = products.find((p) => p.id === productId);
+      if (!product) continue;
+      const name = `${teamNames[product.teamKey].es} ${typeNames[product.typeKey].es} ${product.season}`;
+      const url = `${SITE_URL}/camiseta/${productId}`;
+      const fromMoney = formatOfferMoney(drop.from, drop.currency);
+      const toMoney = formatOfferMoney(drop.to, drop.currency);
+
+      try {
+        await resend.emails.send({
+          from: "Football Cult <onboarding@resend.dev>",
+          // Resend permite varios destinatarios en un mismo envío -- un
+          // mail por corrida por producto, no uno por suscriptor.
+          to: subscribers,
+          subject: `Bajó de precio: ${name}`,
+          text: `${name} bajó de ${fromMoney} a ${toMoney} en ${drop.store}.\n\nVerla: ${url}`,
+        });
+        alertsSent += subscribers.length;
+      } catch (err) {
+        errors.push(`alert email ${productId}: ${(err as Error).message}`);
+      }
+    }
+  }
+
+  return NextResponse.json({ checked: products.length, drops: summary, alertsSent, errors });
 }

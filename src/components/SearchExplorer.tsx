@@ -27,6 +27,7 @@ import {
   AGE_GROUP_FILTERS,
   BRAND_FILTERS,
   QUICK_PICK_TEAMS,
+  STORE_FILTERS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import ScrollArrowRow from "./ScrollArrowRow";
@@ -78,6 +79,9 @@ export default function SearchExplorer() {
     brandFilter,
     toggleBrandFilter,
     setBrandFilter,
+    storeFilter,
+    toggleStoreFilter,
+    setStoreFilter,
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
@@ -220,6 +224,8 @@ export default function SearchExplorer() {
         ageGroupFilter.length === 0 || ageGroupFilter.includes(getAgeGroup(p));
       const matchesBrand =
         brandFilter.length === 0 || (!!p.brand && brandFilter.includes(p.brand));
+      const matchesStore =
+        storeFilter.length === 0 || p.offers.some((o) => storeFilter.includes(o.store));
       const matchesSize =
         sizeFilter.length === 0 || availableSizes(p).some((s) => sizeFilter.includes(s));
       const matchesColor =
@@ -243,6 +249,7 @@ export default function SearchExplorer() {
         matchesSeason &&
         matchesAgeGroup &&
         matchesBrand &&
+        matchesStore &&
         matchesSize &&
         matchesColor &&
         matchesShipping &&
@@ -304,6 +311,7 @@ export default function SearchExplorer() {
     seasonFilter,
     ageGroupFilter,
     brandFilter,
+    storeFilter,
     sizeFilter,
     colorFilter,
     priceRange,
@@ -329,7 +337,7 @@ export default function SearchExplorer() {
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, colorFilter, priceRange, onSaleFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, colorFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -673,6 +681,29 @@ export default function SearchExplorer() {
                       className="flex-shrink-0 whitespace-nowrap"
                     >
                       {brandNames[key]}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <span className="text-xs text-[#675c44]">{t.search.storeLabel}:</span>
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
+                  <Chip
+                    active={storeFilter.length === 0}
+                    onClick={() => setStoreFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {STORE_FILTERS.map((key) => (
+                    <Chip
+                      key={key}
+                      active={storeFilter.includes(key)}
+                      onClick={() => toggleStoreFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {key}
                     </Chip>
                   ))}
                 </ScrollArrowRow>
