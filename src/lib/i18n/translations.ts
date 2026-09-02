@@ -170,6 +170,8 @@ export interface Translations {
     contact: string;
     privacy: string;
     terms: string;
+    sizeGuide: string;
+    authenticity: string;
     disclaimer: string;
   };
   about: {
@@ -177,6 +179,30 @@ export interface Translations {
     p1: string;
     p2: string;
     p3: string;
+  };
+  sizeGuide: {
+    title: string;
+    intro: string;
+    fitTitle: string;
+    fitText: string;
+    measureTitle: string;
+    measureText: string;
+    brandsTitle: string;
+    brandsText: string;
+    kidsTitle: string;
+    kidsText: string;
+    note: string;
+  };
+  authenticity: {
+    title: string;
+    intro: string;
+    termsTitle: string;
+    termsText: string;
+    redFlagsTitle: string;
+    redFlagsText: string;
+    ourBadgeTitle: string;
+    ourBadgeText: string;
+    note: string;
   };
   priceDrop: {
     eyebrow: string;
@@ -480,6 +506,8 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contacto",
       privacy: "Privacidad",
       terms: "Términos",
+      sizeGuide: "Guía de tallas",
+      authenticity: "Autenticidad",
       disclaimer:
         "Football Cult es un comparador de precios. No vendemos productos directamente: te redirigimos a tiendas de terceros para completar tu compra. Algunos enlaces son enlaces de afiliado, lo que significa que podemos recibir una comisión sin costo adicional para vos.",
     },
@@ -488,6 +516,30 @@ export const translations: Record<Locale, Translations> = {
       p1: "Football Cult nació con una idea simple: encontrar la camiseta de tu selección, tu club o tu liga favorita —de cualquier parte del mundo— no debería significar abrir veinte pestañas del navegador para comparar precios.",
       p2: "Somos un comparador de precios independiente. Buscamos entre distintas tiendas online y te mostramos las mejores opciones disponibles para que decidas dónde comprar con toda la información a mano.",
       p3: 'Football Cult no vende productos directamente ni maneja pagos, envíos o devoluciones. Cuando hacés clic en "Comprar", te llevamos a la tienda correspondiente para que completes tu compra ahí. Algunos de esos enlaces son enlaces de afiliado: si comprás a través de ellos, podemos recibir una pequeña comisión de la tienda, sin ningún costo adicional para vos.',
+    },
+    sizeGuide: {
+      title: "Guía de tallas",
+      intro: "Las camisetas de fútbol no se tallan igual que la ropa casual: la mayoría tiene un corte deportivo, pensado para jugar, no para uso diario. Antes de comprar, vale la pena tener en cuenta estos puntos.",
+      fitTitle: "Auténtica vs. réplica: el corte no es el mismo",
+      fitText: "La versión 'auténtica' (la que usan los jugadores, a veces llamada 'match' o con nombres de tecnología propios de cada marca) tiene un corte ajustado al cuerpo. La versión 'réplica' o de aficionado tiene un corte más suelto y cómodo para uso diario. Si te gusta más holgada, buscá réplica; si preferís el calce ajustado real, buscá auténtica — no siempre coinciden con tu talla habitual de remera.",
+      measureTitle: "La forma más segura de elegir: comparar, no adivinar",
+      measureText: "Antes de guiarte solo por tu talla habitual, medí una camiseta que ya tengas y te quede bien (ancho de pecho de axila a axila, y largo de hombro a cadera) y compará esas medidas con la tabla de tallas que publica cada tienda en su propia página de producto.",
+      brandsTitle: "Cada marca talla distinto",
+      brandsText: "Nike, Adidas, Puma y el resto de las marcas no usan exactamente la misma numeración entre sí — una talla M de una marca puede no ser igual a la M de otra. Revisá siempre la tabla de tallas específica de la tienda y la marca antes de confirmar la compra.",
+      kidsTitle: "Talles de niños",
+      kidsText: "La ropa infantil suele tallarse por edad o altura (por ejemplo 8 años, 128 cm) en vez de S/M/L. Estas conversiones también varían según la marca, así que lo mismo aplica: comparar contra una prenda que ya tengan antes de elegir.",
+      note: "En cada ficha de producto filtramos las tallas realmente disponibles por tienda — pero el calce final depende de la tienda y la marca, no de Football Cult. Ante la duda, la tabla de tallas de la tienda es siempre la fuente más confiable.",
+    },
+    authenticity: {
+      title: "Cómo verificar autenticidad",
+      intro: "Football Cult no vende directamente: te redirige a la tienda real para que completes la compra ahí. Por eso la autenticidad de lo que comprás depende de la tienda, no de nosotros — pero podemos ayudarte a identificar señales reales antes de decidir.",
+      termsTitle: "'Auténtica' y 'réplica' no son lo mismo",
+      termsText: "'Auténtica' (o 'match') es la versión con la tecnología y el corte que usan los jugadores en la cancha, con licencia oficial del club o la federación. 'Réplica' es la versión de aficionado, también con licencia oficial en la gran mayoría de los casos, pero con un corte y materiales pensados para uso diario, no para jugar. Ninguna de las dos es una falsificación — son dos productos oficiales distintos, a precios distintos.",
+      redFlagsTitle: "Señales de que algo no es lo que dice ser",
+      redFlagsText: "Un precio muy por debajo del resto de las ofertas del mismo producto, fotos genéricas o que no coinciden con el escudo/sponsor reales, ausencia de tabla de tallas propia, o un dominio de tienda que no reconocés y no aparece en ningún otro lado — son las señales más comunes de un vendedor no confiable. Comprá siempre desde el link que te lleva directo a la tienda, nunca compartas tus datos de pago en ningún otro sitio.",
+      ourBadgeTitle: "Cómo lo marcamos en el sitio",
+      ourBadgeText: "Cuando identificamos que una oferta específica es de una tienda que vende exclusivamente réplicas no oficiales, se lo marcamos con la etiqueta 'Réplica (no oficial)' directamente en esa oferta — así lo sabés antes de hacer clic, no después.",
+      note: "Si comprás algo que no coincide con lo que viste en Football Cult, el reclamo va directo con la tienda donde compraste — nosotros no procesamos pagos ni envíos. Podés usar el botón 'Reportar producto' en cualquier ficha para avisarnos si algo no coincide, así lo revisamos.",
     },
     priceDrop: {
       eyebrow: "Ofertas del día",
@@ -796,6 +848,8 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contato",
       privacy: "Privacidade",
       terms: "Termos",
+      sizeGuide: "Guia de tamanhos",
+      authenticity: "Autenticidade",
       disclaimer:
         "Football Cult é um comparador de preços. Não vendemos produtos diretamente: te redirecionamos para lojas terceiras para concluir sua compra. Alguns links são links de afiliado, o que significa que podemos receber uma comissão sem custo adicional para você.",
     },
@@ -804,6 +858,30 @@ export const translations: Record<Locale, Translations> = {
       p1: "Football Cult nasceu de uma ideia simples: encontrar a camisa da sua seleção, do seu clube ou da sua liga favorita — de qualquer parte do mundo — não deveria significar abrir vinte abas do navegador para comparar preços.",
       p2: "Somos um comparador de preços independente. Buscamos em diferentes lojas online e mostramos as melhores opções disponíveis para você decidir onde comprar com todas as informações em mãos.",
       p3: 'Football Cult não vende produtos diretamente nem processa pagamentos, envios ou devoluções. Quando você clica em "Comprar", te levamos até a loja correspondente para concluir sua compra lá. Alguns desses links são links de afiliado: se você comprar através deles, podemos receber uma pequena comissão da loja, sem nenhum custo adicional para você.',
+    },
+    sizeGuide: {
+      title: "Guia de Tamanhos",
+      intro: "As camisas de futebol não têm o mesmo caimento da roupa do dia a dia: a maioria tem um corte esportivo, pensado para jogar, não para uso diário. Antes de comprar, vale a pena considerar estes pontos.",
+      fitTitle: "Autêntica vs. réplica: o corte não é o mesmo",
+      fitText: "A versão 'autêntica' (a que os jogadores usam, às vezes chamada de 'match' ou com o nome de tecnologia próprio de cada marca) tem um corte justo ao corpo. A versão 'réplica' ou de torcedor tem um corte mais largo e confortável para o uso diário. Se você prefere mais folgada, procure réplica; se prefere o caimento justo real, procure autêntica — de qualquer forma nem sempre corresponde ao seu tamanho habitual de camiseta.",
+      measureTitle: "A forma mais segura de escolher: comparar, não adivinhar",
+      measureText: "Em vez de se guiar apenas pelo seu tamanho habitual, meça uma camisa que você já tenha e que sirva bem (largura do peito de axila a axila, e comprimento do ombro ao quadril) e compare essas medidas com a tabela de tamanhos que cada loja publica na própria página do produto.",
+      brandsTitle: "Cada marca numera diferente",
+      brandsText: "Nike, Adidas, Puma e as demais marcas não usam exatamente a mesma numeração entre si — um tamanho M de uma marca pode não ser igual ao M de outra. Sempre confira a tabela de tamanhos específica da loja e da marca antes de confirmar a compra.",
+      kidsTitle: "Tamanhos infantis",
+      kidsText: "A roupa infantil costuma ser numerada por idade ou altura (por exemplo, 8 anos, 128 cm) em vez de P/M/G, e essas conversões também variam por marca — a mesma regra se aplica: compare com uma peça que a criança já tenha antes de escolher.",
+      note: "Em cada ficha de produto filtramos os tamanhos realmente disponíveis por loja — mas o caimento final depende da loja e da marca, não da Football Cult. Na dúvida, a tabela de tamanhos da própria loja é sempre a fonte mais confiável.",
+    },
+    authenticity: {
+      title: "Como Verificar a Autenticidade",
+      intro: "A Football Cult não vende diretamente: redirecionamos você para a loja real para concluir a compra lá. Por isso a autenticidade do que você compra depende da loja, não de nós — mas podemos ajudar você a identificar sinais reais antes de decidir.",
+      termsTitle: "'Autêntica' e 'réplica' não são a mesma coisa",
+      termsText: "'Autêntica' (ou 'match') é a versão com a tecnologia e o corte que os jogadores realmente usam em campo, com licença oficial do clube ou da federação. 'Réplica' é a versão de torcedor — também licenciada oficialmente na grande maioria dos casos, mas com corte e materiais pensados para o uso diário, não para jogar. Nenhuma das duas é falsificação — são dois produtos oficiais diferentes, com preços diferentes.",
+      redFlagsTitle: "Sinais de que algo não é o que diz ser",
+      redFlagsText: "Um preço bem abaixo de todas as outras ofertas do mesmo produto, fotos genéricas que não correspondem ao escudo/patrocinador reais, ausência de tabela de tamanhos própria, ou um domínio de loja que você não reconhece e não encontra em nenhum outro lugar — são os sinais mais comuns de um vendedor não confiável. Compre sempre pelo link que leva direto à loja, e nunca compartilhe seus dados de pagamento em outro lugar.",
+      ourBadgeTitle: "Como sinalizamos isso no site",
+      ourBadgeText: "Quando identificamos que uma oferta específica vem de uma loja que vende exclusivamente réplicas não oficiais, marcamos essa oferta com o selo 'Réplica (não oficial)' diretamente nela — assim você sabe antes de clicar, não depois.",
+      note: "Se o que você recebeu não corresponde ao que viu na Football Cult, a reclamação vai direto para a loja onde você comprou — nós não processamos pagamentos nem envios. Você pode usar o botão 'Reportar produto' em qualquer ficha para nos avisar que algo não corresponde, para que possamos verificar.",
     },
     priceDrop: {
       eyebrow: "Ofertas do dia",
@@ -1112,6 +1190,8 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contact",
       privacy: "Privacy",
       terms: "Terms",
+      sizeGuide: "Size Guide",
+      authenticity: "Authenticity",
       disclaimer:
         "Football Cult is a price comparison site. We don't sell products directly: we redirect you to third-party stores to complete your purchase. Some links are affiliate links, meaning we may earn a commission at no extra cost to you.",
     },
@@ -1120,6 +1200,30 @@ export const translations: Record<Locale, Translations> = {
       p1: "Football Cult was born from a simple idea: finding the jersey of your national team, club, or favorite league — from anywhere in the world — shouldn't mean opening twenty browser tabs to compare prices.",
       p2: "We're an independent price comparison site. We search across different online stores and show you the best available options so you can decide where to buy with all the information at hand.",
       p3: 'Football Cult doesn\'t sell products directly and doesn\'t handle payments, shipping, or returns. When you click "Buy," we take you to the corresponding store to complete your purchase there. Some of those links are affiliate links: if you buy through them, we may earn a small commission from the store, at no extra cost to you.',
+    },
+    sizeGuide: {
+      title: "Size Guide",
+      intro: "Football jerseys don't fit like everyday clothing — most have an athletic cut made for playing, not daily wear. Before you buy, it's worth keeping these points in mind.",
+      fitTitle: "Authentic vs. replica: the cut isn't the same",
+      fitText: "The 'authentic' version (what players actually wear, sometimes called 'match' or under each brand's own tech name) has a body-hugging cut. The 'replica' or fan version has a looser, more comfortable everyday cut. If you prefer it roomier, look for replica; if you want the real match fit, look for authentic — either way it won't always match your usual T-shirt size.",
+      measureTitle: "The safest way to choose: compare, don't guess",
+      measureText: "Instead of relying only on your usual size, measure a jersey you already own and fits well (chest width armpit to armpit, and length shoulder to hip) and compare those measurements to the size chart each store publishes on its own product page.",
+      brandsTitle: "Every brand sizes differently",
+      brandsText: "Nike, Adidas, Puma and the rest don't use exactly the same sizing between them — an M from one brand isn't necessarily the same as an M from another. Always check the specific size chart for that store and brand before confirming your purchase.",
+      kidsTitle: "Kids sizing",
+      kidsText: "Kids' sizing usually runs by age or height (e.g. 8 years, 128 cm) instead of S/M/L, and these conversions also vary by brand — same rule applies: compare against something they already own before choosing.",
+      note: "Every product page filters to the sizes actually available per store — but the final fit depends on the store and brand, not on Football Cult. When in doubt, the store's own size chart is always the most reliable source.",
+    },
+    authenticity: {
+      title: "How to Verify Authenticity",
+      intro: "Football Cult doesn't sell directly — we redirect you to the real store to complete your purchase there. That means the authenticity of what you buy depends on the store, not on us — but we can help you spot real signals before you decide.",
+      termsTitle: "'Authentic' and 'replica' aren't the same thing",
+      termsText: "'Authentic' (or 'match') is the version with the technology and cut players actually wear on the pitch, officially licensed by the club or federation. 'Replica' is the fan version — also officially licensed in the vast majority of cases, but cut and made for everyday wear, not playing. Neither one is a counterfeit — they're two different official products at different prices.",
+      redFlagsTitle: "Signs something isn't what it claims to be",
+      redFlagsText: "A price well below every other offer for the same product, generic photos that don't match the real crest/sponsor, no size chart of its own, or a store domain you don't recognize and can't find anywhere else — these are the most common signs of an unreliable seller. Always buy through the link that takes you directly to the store, and never share your payment details anywhere else.",
+      ourBadgeTitle: "How we flag it on the site",
+      ourBadgeText: "When we identify that a specific offer comes from a store that exclusively sells unofficial replicas, we mark that offer with a 'Replica (unofficial)' label directly on it — so you know before you click, not after.",
+      note: "If what you receive doesn't match what you saw on Football Cult, the claim goes directly to the store where you bought it — we don't process payments or shipping. You can use the 'Report product' button on any listing to let us know something doesn't match, so we can look into it.",
     },
     priceDrop: {
       eyebrow: "Today's deals",
@@ -1428,6 +1532,8 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contact",
       privacy: "Confidentialité",
       terms: "Conditions",
+      sizeGuide: "Guide des tailles",
+      authenticity: "Authenticité",
       disclaimer:
         "Football Cult est un site de comparaison de prix. Nous ne vendons pas de produits directement : nous vous redirigeons vers des boutiques tierces pour finaliser votre achat. Certains liens sont des liens d'affiliation, ce qui signifie que nous pouvons percevoir une commission sans coût supplémentaire pour vous.",
     },
@@ -1436,6 +1542,30 @@ export const translations: Record<Locale, Translations> = {
       p1: "Football Cult est né d'une idée simple : trouver le maillot de votre sélection, de votre club ou de votre championnat préféré — où que ce soit dans le monde — ne devrait pas obliger à ouvrir vingt onglets pour comparer les prix.",
       p2: "Nous sommes un site indépendant de comparaison de prix. Nous parcourons différentes boutiques en ligne et vous montrons les meilleures options disponibles pour que vous puissiez décider où acheter en toute connaissance de cause.",
       p3: 'Football Cult ne vend pas de produits directement et ne gère ni les paiements, ni la livraison, ni les retours. Quand vous cliquez sur « Acheter », nous vous emmenons vers la boutique correspondante pour finaliser votre achat. Certains de ces liens sont des liens d\'affiliation : si vous achetez via ceux-ci, nous pouvons percevoir une petite commission de la boutique, sans coût supplémentaire pour vous.',
+    },
+    sizeGuide: {
+      title: "Guide des Tailles",
+      intro: "Les maillots de football ne se taillent pas comme les vêtements du quotidien : la plupart ont une coupe sportive, pensée pour jouer, pas pour un usage courant. Avant d'acheter, voici quelques points à garder en tête.",
+      fitTitle: "Authentique vs. réplique : la coupe n'est pas la même",
+      fitText: "La version « authentique » (celle que portent les joueurs, parfois appelée « match » ou sous le nom de technologie propre à chaque marque) a une coupe ajustée au corps. La version « réplique » ou supporter a une coupe plus ample, plus confortable au quotidien. Si vous la préférez plus large, cherchez la réplique ; si vous voulez la coupe match réelle, cherchez l'authentique — dans les deux cas, cela ne correspond pas toujours à votre taille habituelle de t-shirt.",
+      measureTitle: "La façon la plus sûre de choisir : comparer, ne pas deviner",
+      measureText: "Plutôt que de vous fier uniquement à votre taille habituelle, mesurez un maillot que vous possédez déjà et qui vous va bien (largeur de poitrine d'aisselle à aisselle, et longueur épaule-hanche) et comparez ces mesures au guide des tailles que chaque boutique publie sur sa propre fiche produit.",
+      brandsTitle: "Chaque marque taille différemment",
+      brandsText: "Nike, Adidas, Puma et les autres marques n'utilisent pas exactement le même système de tailles entre elles — un M d'une marque n'est pas forcément identique au M d'une autre. Vérifiez toujours le guide des tailles spécifique à la boutique et à la marque avant de confirmer votre achat.",
+      kidsTitle: "Tailles enfant",
+      kidsText: "Les vêtements enfant sont généralement taillés par âge ou par taille en cm (par exemple 8 ans, 128 cm) plutôt qu'en S/M/L, et ces conversions varient aussi selon la marque — même règle : comparez avec un vêtement que l'enfant possède déjà avant de choisir.",
+      note: "Chaque fiche produit filtre les tailles réellement disponibles par boutique — mais la coupe finale dépend de la boutique et de la marque, pas de Football Cult. En cas de doute, le guide des tailles de la boutique elle-même reste toujours la source la plus fiable.",
+    },
+    authenticity: {
+      title: "Comment Vérifier l'Authenticité",
+      intro: "Football Cult ne vend pas directement : nous vous redirigeons vers la vraie boutique pour finaliser votre achat là-bas. L'authenticité de ce que vous achetez dépend donc de la boutique, pas de nous — mais nous pouvons vous aider à repérer les vrais signaux avant de décider.",
+      termsTitle: "« Authentique » et « réplique » ne sont pas la même chose",
+      termsText: "« Authentique » (ou « match ») est la version avec la technologie et la coupe que portent réellement les joueurs sur le terrain, sous licence officielle du club ou de la fédération. « Réplique » est la version supporter — également sous licence officielle dans la grande majorité des cas, mais coupée et fabriquée pour un usage quotidien, pas pour jouer. Aucune des deux n'est une contrefaçon — ce sont deux produits officiels différents, à des prix différents.",
+      redFlagsTitle: "Signes que quelque chose n'est pas ce qu'il prétend être",
+      redFlagsText: "Un prix nettement inférieur à toutes les autres offres pour le même produit, des photos génériques qui ne correspondent pas au vrai blason/sponsor, l'absence de guide des tailles propre, ou un nom de domaine de boutique que vous ne reconnaissez pas et qu'on ne trouve nulle part ailleurs — ce sont les signes les plus courants d'un vendeur peu fiable. Achetez toujours via le lien qui vous mène directement à la boutique, et ne partagez jamais vos données de paiement ailleurs.",
+      ourBadgeTitle: "Comment on le signale sur le site",
+      ourBadgeText: "Quand on identifie qu'une offre précise provient d'une boutique qui vend exclusivement des répliques non officielles, on marque cette offre avec l'étiquette « Réplique (non officielle) » directement dessus — comme ça vous le savez avant de cliquer, pas après.",
+      note: "Si ce que vous recevez ne correspond pas à ce que vous avez vu sur Football Cult, la réclamation se fait directement auprès de la boutique où vous avez acheté — nous ne traitons ni les paiements ni les livraisons. Vous pouvez utiliser le bouton « Signaler le produit » sur n'importe quelle fiche pour nous prévenir qu'un élément ne correspond pas, afin qu'on puisse vérifier.",
     },
     priceDrop: {
       eyebrow: "Les offres du jour",
@@ -1744,6 +1874,8 @@ export const translations: Record<Locale, Translations> = {
       contact: "Contatti",
       privacy: "Privacy",
       terms: "Termini",
+      sizeGuide: "Guida alle taglie",
+      authenticity: "Autenticità",
       disclaimer:
         "Football Cult è un sito di comparazione prezzi. Non vendiamo prodotti direttamente: ti reindirizziamo verso negozi di terze parti per completare l'acquisto. Alcuni link sono link di affiliazione, il che significa che potremmo guadagnare una commissione senza costi aggiuntivi per te.",
     },
@@ -1752,6 +1884,30 @@ export const translations: Record<Locale, Translations> = {
       p1: "Football Cult è nato da un'idea semplice: trovare la maglia della tua nazionale, del tuo club o del tuo campionato preferito — da qualsiasi parte del mondo — non dovrebbe significare aprire venti schede del browser per confrontare i prezzi.",
       p2: "Siamo un sito indipendente di comparazione prezzi. Cerchiamo tra diversi negozi online e ti mostriamo le migliori opzioni disponibili così puoi decidere dove acquistare con tutte le informazioni a disposizione.",
       p3: 'Football Cult non vende prodotti direttamente e non gestisce pagamenti, spedizioni o resi. Quando clicchi su "Acquista", ti portiamo al negozio corrispondente per completare l\'acquisto lì. Alcuni di questi link sono link di affiliazione: se acquisti tramite essi, potremmo guadagnare una piccola commissione dal negozio, senza costi aggiuntivi per te.',
+    },
+    sizeGuide: {
+      title: "Guida alle Taglie",
+      intro: "Le maglie da calcio non vestono come i normali capi di abbigliamento: la maggior parte ha un taglio sportivo, pensato per giocare, non per l'uso quotidiano. Prima di acquistare, vale la pena tenere a mente questi punti.",
+      fitTitle: "Autentica vs. replica: il taglio non è lo stesso",
+      fitText: "La versione 'autentica' (quella indossata dai giocatori, a volte chiamata 'match' o con il nome tecnologico proprio di ogni marca) ha un taglio aderente al corpo. La versione 'replica' o da tifoso ha un taglio più ampio, più comodo per l'uso quotidiano. Se la preferisci più larga, cerca la replica; se vuoi la vestibilità match reale, cerca l'autentica — in entrambi i casi non sempre corrisponde alla tua taglia abituale di maglietta.",
+      measureTitle: "Il modo più sicuro per scegliere: confrontare, non indovinare",
+      measureText: "Invece di affidarti solo alla tua taglia abituale, misura una maglia che possiedi già e che ti sta bene (larghezza del petto da ascella ad ascella, e lunghezza da spalla ad anca) e confronta queste misure con la tabella taglie che ogni negozio pubblica nella propria pagina prodotto.",
+      brandsTitle: "Ogni marca ha una taglia diversa",
+      brandsText: "Nike, Adidas, Puma e le altre marche non usano esattamente la stessa numerazione tra loro — una taglia M di una marca potrebbe non corrispondere alla M di un'altra. Controlla sempre la tabella taglie specifica del negozio e della marca prima di confermare l'acquisto.",
+      kidsTitle: "Taglie bambino",
+      kidsText: "L'abbigliamento per bambini è solitamente numerato per età o altezza (ad esempio 8 anni, 128 cm) invece che S/M/L, e anche queste conversioni variano da marca a marca — stessa regola: confronta con un capo che il bambino possiede già prima di scegliere.",
+      note: "In ogni scheda prodotto filtriamo le taglie realmente disponibili per negozio — ma la vestibilità finale dipende dal negozio e dalla marca, non da Football Cult. In caso di dubbio, la tabella taglie del negozio stesso è sempre la fonte più affidabile.",
+    },
+    authenticity: {
+      title: "Come Verificare l'Autenticità",
+      intro: "Football Cult non vende direttamente: ti reindirizziamo al negozio reale per completare l'acquisto lì. Per questo l'autenticità di ciò che acquisti dipende dal negozio, non da noi — ma possiamo aiutarti a individuare segnali reali prima di decidere.",
+      termsTitle: "'Autentica' e 'replica' non sono la stessa cosa",
+      termsText: "'Autentica' (o 'match') è la versione con la tecnologia e il taglio che i giocatori indossano realmente in campo, su licenza ufficiale del club o della federazione. 'Replica' è la versione da tifoso — anch'essa su licenza ufficiale nella grande maggioranza dei casi, ma tagliata e realizzata per l'uso quotidiano, non per giocare. Nessuna delle due è una contraffazione — sono due prodotti ufficiali diversi, a prezzi diversi.",
+      redFlagsTitle: "Segnali che qualcosa non è quello che dichiara di essere",
+      redFlagsText: "Un prezzo molto più basso di tutte le altre offerte per lo stesso prodotto, foto generiche che non corrispondono allo stemma/sponsor reali, l'assenza di una tabella taglie propria, o un dominio del negozio che non riconosci e non trovi da nessun'altra parte — sono i segnali più comuni di un venditore poco affidabile. Acquista sempre tramite il link che ti porta direttamente al negozio, e non condividere mai i tuoi dati di pagamento altrove.",
+      ourBadgeTitle: "Come lo segnaliamo sul sito",
+      ourBadgeText: "Quando identifichiamo che un'offerta specifica proviene da un negozio che vende esclusivamente repliche non ufficiali, contrassegniamo quell'offerta con l'etichetta 'Replica (non ufficiale)' direttamente su di essa — così lo sai prima di cliccare, non dopo.",
+      note: "Se ciò che ricevi non corrisponde a quanto visto su Football Cult, il reclamo va direttamente al negozio dove hai acquistato — noi non gestiamo pagamenti né spedizioni. Puoi usare il pulsante 'Segnala prodotto' su qualsiasi scheda per avvisarci che qualcosa non corrisponde, così possiamo verificare.",
     },
     priceDrop: {
       eyebrow: "Le offerte di oggi",
