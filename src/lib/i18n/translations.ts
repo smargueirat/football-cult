@@ -172,6 +172,7 @@ export interface Translations {
     terms: string;
     sizeGuide: string;
     authenticity: string;
+    brazil: string;
     disclaimer: string;
   };
   about: {
@@ -202,6 +203,17 @@ export interface Translations {
     redFlagsText: string;
     ourBadgeTitle: string;
     ourBadgeText: string;
+    note: string;
+  };
+  brazil: {
+    title: string;
+    intro: string;
+    storesTitle: string;
+    storesText: string;
+    clubsTitle: string;
+    clubsText: string;
+    heritageTitle: string;
+    heritageText: string;
     note: string;
   };
   priceDrop: {
@@ -508,6 +520,7 @@ export const translations: Record<Locale, Translations> = {
       terms: "Términos",
       sizeGuide: "Guía de tallas",
       authenticity: "Autenticidad",
+      brazil: "Fútbol brasileño",
       disclaimer:
         "Football Cult es un comparador de precios. No vendemos productos directamente: te redirigimos a tiendas de terceros para completar tu compra. Algunos enlaces son enlaces de afiliado, lo que significa que podemos recibir una comisión sin costo adicional para vos.",
     },
@@ -540,6 +553,17 @@ export const translations: Record<Locale, Translations> = {
       ourBadgeTitle: "Cómo lo marcamos en el sitio",
       ourBadgeText: "Cuando identificamos que una oferta específica es de una tienda que vende exclusivamente réplicas no oficiales, se lo marcamos con la etiqueta 'Réplica (no oficial)' directamente en esa oferta — así lo sabés antes de hacer clic, no después.",
       note: "Si comprás algo que no coincide con lo que viste en Football Cult, el reclamo va directo con la tienda donde compraste — nosotros no procesamos pagos ni envíos. Podés usar el botón 'Reportar producto' en cualquier ficha para avisarnos si algo no coincide, así lo revisamos.",
+    },
+    brazil: {
+      title: "Fútbol brasileño",
+      intro: "En Football Cult comparamos precios de camisetas de la selección brasileña y de catorce clubes del país, incluyendo cinco tiendas oficiales de club integradas directamente a nuestro catálogo.",
+      storesTitle: "Tiendas oficiales integradas",
+      storesText: "Sumamos cinco tiendas oficiales de clubes brasileños a través de Rakuten Advertising: Santos Store, Inter Store (Internacional), Cruzeiro Store, Shop Timão (Corinthians) y Loja PST (Sport Recife). Una oferta de estas tiendas es una compra directa en la tienda oficial del club, no en un revendedor.",
+      clubsTitle: "Qué cubrimos",
+      clubsText: "Además de la selección (Brasil), comparamos camisetas de Flamengo, Palmeiras, Santos, Corinthians, Grêmio, São Paulo, Cruzeiro, Atlético Mineiro, Internacional, Vasco da Gama, Fluminense, Sport Recife, Botafogo y Bahía, tanto de las tiendas oficiales como de otras tiendas online que también venden productos con licencia.",
+      heritageTitle: "Camisetas con historia",
+      heritageText: "Algunas camisetas de la selección brasileña en el catálogo llevan la etiqueta 'La Crónica de la Prenda', con el contexto real del partido en el que se usaron y una fuente citada — como la camiseta de la final del Mundial de Estados Unidos 1994.",
+      note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí. En el caso de las cinco tiendas oficiales de club, eso significa comprar directo con Santos, Internacional, Cruzeiro, Corinthians o Sport Recife — no con un revendedor no oficial.",
     },
     priceDrop: {
       eyebrow: "Ofertas del día",
@@ -850,6 +874,7 @@ export const translations: Record<Locale, Translations> = {
       terms: "Termos",
       sizeGuide: "Guia de tamanhos",
       authenticity: "Autenticidade",
+      brazil: "Futebol brasileiro",
       disclaimer:
         "Football Cult é um comparador de preços. Não vendemos produtos diretamente: te redirecionamos para lojas terceiras para concluir sua compra. Alguns links são links de afiliado, o que significa que podemos receber uma comissão sem custo adicional para você.",
     },
@@ -882,6 +907,17 @@ export const translations: Record<Locale, Translations> = {
       ourBadgeTitle: "Como sinalizamos isso no site",
       ourBadgeText: "Quando identificamos que uma oferta específica vem de uma loja que vende exclusivamente réplicas não oficiais, marcamos essa oferta com o selo 'Réplica (não oficial)' diretamente nela — assim você sabe antes de clicar, não depois.",
       note: "Se o que você recebeu não corresponde ao que viu na Football Cult, a reclamação vai direto para a loja onde você comprou — nós não processamos pagamentos nem envios. Você pode usar o botão 'Reportar produto' em qualquer ficha para nos avisar que algo não corresponde, para que possamos verificar.",
+    },
+    brazil: {
+      title: "Futebol brasileiro",
+      intro: "Na Football Cult comparamos preços de camisas da seleção brasileira e de catorze clubes do país, incluindo cinco lojas oficiais de clube integradas diretamente ao nosso catálogo.",
+      storesTitle: "Lojas oficiais integradas",
+      storesText: "Integramos cinco lojas oficiais de clubes brasileiros através da Rakuten Advertising: Santos Store, Inter Store (Internacional), Cruzeiro Store, Shop Timão (Corinthians) e Loja PST (Sport Recife). Uma oferta dessas lojas é uma compra direta na loja oficial do clube, não com um revendedor.",
+      clubsTitle: "O que cobrimos",
+      clubsText: "Além da seleção (Brasil), comparamos camisas de Flamengo, Palmeiras, Santos, Corinthians, Grêmio, São Paulo, Cruzeiro, Atlético Mineiro, Internacional, Vasco da Gama, Fluminense, Sport Recife, Botafogo e Bahia, tanto das lojas oficiais quanto de outras lojas online que também vendem produtos licenciados.",
+      heritageTitle: "Camisas com história",
+      heritageText: "Algumas camisas da seleção brasileira no catálogo trazem o selo 'A Crônica da Camisa', com o contexto real da partida em que foram usadas e uma fonte citada — como a camisa da final da Copa do Mundo dos Estados Unidos 1994.",
+      note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá. No caso das cinco lojas oficiais de clube, isso significa comprar direto com Santos, Internacional, Cruzeiro, Corinthians ou Sport Recife — não com um revendedor não oficial.",
     },
     priceDrop: {
       eyebrow: "Ofertas do dia",
@@ -1192,6 +1228,7 @@ export const translations: Record<Locale, Translations> = {
       terms: "Terms",
       sizeGuide: "Size Guide",
       authenticity: "Authenticity",
+      brazil: "Brazilian Football",
       disclaimer:
         "Football Cult is a price comparison site. We don't sell products directly: we redirect you to third-party stores to complete your purchase. Some links are affiliate links, meaning we may earn a commission at no extra cost to you.",
     },
@@ -1224,6 +1261,17 @@ export const translations: Record<Locale, Translations> = {
       ourBadgeTitle: "How we flag it on the site",
       ourBadgeText: "When we identify that a specific offer comes from a store that exclusively sells unofficial replicas, we mark that offer with a 'Replica (unofficial)' label directly on it — so you know before you click, not after.",
       note: "If what you receive doesn't match what you saw on Football Cult, the claim goes directly to the store where you bought it — we don't process payments or shipping. You can use the 'Report product' button on any listing to let us know something doesn't match, so we can look into it.",
+    },
+    brazil: {
+      title: "Brazilian Football",
+      intro: "At Football Cult we compare jersey prices for the Brazilian national team and fourteen clubs from the country, including five official club stores integrated directly into our catalog.",
+      storesTitle: "Official stores we've integrated",
+      storesText: "We've added five official Brazilian club stores through Rakuten Advertising: Santos Store, Inter Store (Internacional), Cruzeiro Store, Shop Timão (Corinthians), and Loja PST (Sport Recife). An offer from one of these stores is a direct purchase from the club's own store, not a reseller.",
+      clubsTitle: "What we cover",
+      clubsText: "Beyond the national team (Brazil), we compare jerseys from Flamengo, Palmeiras, Santos, Corinthians, Grêmio, São Paulo, Cruzeiro, Atlético Mineiro, Internacional, Vasco da Gama, Fluminense, Sport Recife, Botafogo, and Bahia — from both the official club stores and other online stores that also sell licensed merchandise.",
+      heritageTitle: "Jerseys with history",
+      heritageText: "Some Brazilian national team jerseys in the catalog carry the \"Shirt's Chronicle\" label, with real context about the match they were worn in and a cited source — like the shirt from the 1994 World Cup final in the United States.",
+      note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there. For the five official club stores, that means buying directly from Santos, Internacional, Cruzeiro, Corinthians, or Sport Recife — not from an unofficial reseller.",
     },
     priceDrop: {
       eyebrow: "Today's deals",
@@ -1534,6 +1582,7 @@ export const translations: Record<Locale, Translations> = {
       terms: "Conditions",
       sizeGuide: "Guide des tailles",
       authenticity: "Authenticité",
+      brazil: "Football brésilien",
       disclaimer:
         "Football Cult est un site de comparaison de prix. Nous ne vendons pas de produits directement : nous vous redirigeons vers des boutiques tierces pour finaliser votre achat. Certains liens sont des liens d'affiliation, ce qui signifie que nous pouvons percevoir une commission sans coût supplémentaire pour vous.",
     },
@@ -1566,6 +1615,17 @@ export const translations: Record<Locale, Translations> = {
       ourBadgeTitle: "Comment on le signale sur le site",
       ourBadgeText: "Quand on identifie qu'une offre précise provient d'une boutique qui vend exclusivement des répliques non officielles, on marque cette offre avec l'étiquette « Réplique (non officielle) » directement dessus — comme ça vous le savez avant de cliquer, pas après.",
       note: "Si ce que vous recevez ne correspond pas à ce que vous avez vu sur Football Cult, la réclamation se fait directement auprès de la boutique où vous avez acheté — nous ne traitons ni les paiements ni les livraisons. Vous pouvez utiliser le bouton « Signaler le produit » sur n'importe quelle fiche pour nous prévenir qu'un élément ne correspond pas, afin qu'on puisse vérifier.",
+    },
+    brazil: {
+      title: "Football brésilien",
+      intro: "Sur Football Cult, nous comparons les prix des maillots de la sélection brésilienne et de quatorze clubs du pays, dont cinq boutiques officielles de club intégrées directement à notre catalogue.",
+      storesTitle: "Boutiques officielles intégrées",
+      storesText: "Nous avons intégré cinq boutiques officielles de clubs brésiliens via Rakuten Advertising : Santos Store, Inter Store (Internacional), Cruzeiro Store, Shop Timão (Corinthians) et Loja PST (Sport Recife). Une offre venant de ces boutiques est un achat direct auprès de la boutique officielle du club, pas d'un revendeur.",
+      clubsTitle: "Ce que nous couvrons",
+      clubsText: "Au-delà de la sélection (Brésil), nous comparons les maillots de Flamengo, Palmeiras, Santos, Corinthians, Grêmio, São Paulo, Cruzeiro, Atlético Mineiro, Internacional, Vasco da Gama, Fluminense, Sport Recife, Botafogo et Bahia, aussi bien dans les boutiques officielles que dans d'autres boutiques en ligne qui vendent aussi des produits sous licence.",
+      heritageTitle: "Des maillots chargés d'histoire",
+      heritageText: "Certains maillots de la sélection brésilienne du catalogue portent le label « La Chronique du Maillot », avec le contexte réel du match dans lequel ils ont été portés et une source citée — comme le maillot de la finale de la Coupe du Monde 1994 aux États-Unis.",
+      note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas. Pour les cinq boutiques officielles de club, cela signifie acheter directement auprès de Santos, Internacional, Cruzeiro, Corinthians ou Sport Recife — pas auprès d'un revendeur non officiel.",
     },
     priceDrop: {
       eyebrow: "Les offres du jour",
@@ -1876,6 +1936,7 @@ export const translations: Record<Locale, Translations> = {
       terms: "Termini",
       sizeGuide: "Guida alle taglie",
       authenticity: "Autenticità",
+      brazil: "Calcio brasiliano",
       disclaimer:
         "Football Cult è un sito di comparazione prezzi. Non vendiamo prodotti direttamente: ti reindirizziamo verso negozi di terze parti per completare l'acquisto. Alcuni link sono link di affiliazione, il che significa che potremmo guadagnare una commissione senza costi aggiuntivi per te.",
     },
@@ -1908,6 +1969,17 @@ export const translations: Record<Locale, Translations> = {
       ourBadgeTitle: "Come lo segnaliamo sul sito",
       ourBadgeText: "Quando identifichiamo che un'offerta specifica proviene da un negozio che vende esclusivamente repliche non ufficiali, contrassegniamo quell'offerta con l'etichetta 'Replica (non ufficiale)' direttamente su di essa — così lo sai prima di cliccare, non dopo.",
       note: "Se ciò che ricevi non corrisponde a quanto visto su Football Cult, il reclamo va direttamente al negozio dove hai acquistato — noi non gestiamo pagamenti né spedizioni. Puoi usare il pulsante 'Segnala prodotto' su qualsiasi scheda per avvisarci che qualcosa non corrisponde, così possiamo verificare.",
+    },
+    brazil: {
+      title: "Calcio brasiliano",
+      intro: "Su Football Cult confrontiamo i prezzi delle maglie della nazionale brasiliana e di quattordici club del paese, tra cui cinque negozi ufficiali di club integrati direttamente nel nostro catalogo.",
+      storesTitle: "Negozi ufficiali integrati",
+      storesText: "Abbiamo integrato cinque negozi ufficiali di club brasiliani tramite Rakuten Advertising: Santos Store, Inter Store (Internacional), Cruzeiro Store, Shop Timão (Corinthians) e Loja PST (Sport Recife). Un'offerta da questi negozi è un acquisto diretto presso il negozio ufficiale del club, non da un rivenditore.",
+      clubsTitle: "Cosa copriamo",
+      clubsText: "Oltre alla nazionale (Brasile), confrontiamo le maglie di Flamengo, Palmeiras, Santos, Corinthians, Grêmio, São Paulo, Cruzeiro, Atlético Mineiro, Internacional, Vasco da Gama, Fluminense, Sport Recife, Botafogo e Bahia, sia dai negozi ufficiali sia da altri negozi online che vendono anche prodotti su licenza.",
+      heritageTitle: "Maglie con una storia",
+      heritageText: "Alcune maglie della nazionale brasiliana nel catalogo portano l'etichetta \"La Cronaca della Maglia\", con il contesto reale della partita in cui sono state indossate e una fonte citata — come la maglia della finale dei Mondiali del 1994 negli Stati Uniti.",
+      note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì. Per i cinque negozi ufficiali di club, questo significa comprare direttamente da Santos, Internacional, Cruzeiro, Corinthians o Sport Recife — non da un rivenditore non ufficiale.",
     },
     priceDrop: {
       eyebrow: "Le offerte di oggi",
