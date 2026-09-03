@@ -1,4 +1,68 @@
 {
+ "https://ad.soicos.com/sclick?aid=56058&pid=14084&dl=https%3A%2F%2Far.puma.com%2Fpd%2Fcamiseta-alternativa-cai-26-27%2F696064.html": {
+  "currency": "ARS",
+  "price": 169999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14084&dl=https%3A%2F%2Far.puma.com%2Fpd%2Fcamiseta-tercer-conjunto-cai%2F691358.html": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5267-302-brasil-portero-2026-stadium-1%2Fp": {
+  "currency": "CLP",
+  "price": 61990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5280-724-brasil-local-2026-stadium-1%2Fp": {
+  "currency": "CLP",
+  "price": 61990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5290-100-inglaterra-local-2026-stadium%2Fp": {
+  "currency": "CLP",
+  "price": 52990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5300-480-francia-local-2026-stadium%2Fp": {
+  "currency": "CLP",
+  "price": 61990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5334-809-paises-bajos-local-2026-stadium%2Fp": {
+  "currency": "CLP",
+  "price": 52990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fib5361-624-inglaterra-visitante-2026-stadium%2Fp": {
+  "currency": "CLP",
+  "price": 52990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fio4680-425-uruguay-local-2026-stadium%2Fp": {
+  "currency": "CLP",
+  "price": 52990.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Fbrasil-arquero-2026-stadium-ib5267-302%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Fbrasil-local-2026-stadium-if7054-724%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Ffrancia-local-2026-stadium-ib5300-480%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Finglaterra-local-2026-stadium-ib5290-100%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Finglaterra-visitante-2026-stadium-ib5361-624%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Fpaises-bajos-local-2026-stadium-ib5334-809%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
+ "https://ad.soicos.com/sclick?aid=56058&pid=14661&dl=https%3A%2F%2Fwww.nike.com.ar%2Furuguay-local-2026-stadium-io4680-425%2Fp": {
+  "currency": "ARS",
+  "price": 149999.0
+ },
  "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419711723886005561394064&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-7769-014": {
   "currency": "BRL",
   "price": 208.89
@@ -547,6 +611,10 @@
   "currency": "EUR",
   "price": 54.99
  },
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089794%3Fvariant%3D54316732481877": {
+  "currency": "EUR",
+  "price": 54.99
+ },
  "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089879%3Fvariant%3D54365454270805": {
   "currency": "EUR",
   "price": 99.99
@@ -615,7 +683,7 @@
   "currency": "EUR",
   "price": 99.99
  },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ac-milan-domicile-homme-2026-27-noir-rouge-784121-01%3Fvariant%3D54053036622165": {
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ac-milan-domicile-homme-2026-27-rouge-noir-784121-01%3Fvariant%3D54053036622165": {
   "currency": "EUR",
   "price": 99.99
  },
@@ -623,13 +691,13 @@
   "currency": "EUR",
   "price": 99.99
  },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ac-milan-pre-match-homme-2026-vert-jaune%3Fvariant%3D52242064671061": {
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ac-milan-x-off-white-pre-match-homme-2025-26-noir%3Fvariant%3D51202043052373": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 49.99
  },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ajax-amsterdam-third-homme-2025-26-beige%3Fvariant%3D51534384234837": {
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ajax-amsterdam-third-2026-27-homme-bleu%3Fvariant%3D53957397872981": {
   "currency": "EUR",
-  "price": 70.95
+  "price": 99.99
  },
  "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-ajax-amsterdam-training-tiro-25-homme-2025-26-blanc%3Fvariant%3D50821163549013": {
   "currency": "EUR",
@@ -662,10 +730,6 @@
  "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-arsenal-exterieur-homme-2025-26-bleu%3Fvariant%3D51353841467733": {
   "currency": "EUR",
   "price": 60.95
- },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-arsenal-pre-match-homme-2025-26-bleu%3Fvariant%3D50745744228693": {
-  "currency": "EUR",
-  "price": 44.99
  },
  "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-arsenal-third-gardien-homme-2025-26-vert%3Fvariant%3D51353842352469": {
   "currency": "EUR",
@@ -703,7 +767,7 @@
   "currency": "EUR",
   "price": 74.99
  },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-borussia-dortmund-domicile-noir-jaune-784088-01%3Fvariant%3D54053036851541": {
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-borussia-dortmund-domicile-homme-2026-27-jaune-noir-784088-01%3Fvariant%3D54053036851541": {
   "currency": "EUR",
   "price": 99.99
  },
@@ -871,7 +935,7 @@
   "currency": "EUR",
   "price": 74.99
  },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-italie-exterieur-homme-2026-aeroblue-kc8704%3Fvariant%3D54053031379285": {
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-italie-exterieur-homme-2026-bleu-kc8704%3Fvariant%3D54053031379285": {
   "currency": "EUR",
   "price": 99.99
  },
@@ -1047,10 +1111,6 @@
   "currency": "EUR",
   "price": 34.95
  },
- "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-olympique-lyonnais-training-tiro-25-staff-homme-2025-26-gris%3Fvariant%3D50858688741717": {
-  "currency": "EUR",
-  "price": 34.99
- },
  "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-om-domicile-homme-2025-26-blanc%3Fvariant%3D50939913503061": {
   "currency": "EUR",
   "price": 79.95
@@ -1104,6 +1164,10 @@
   "price": 54.99
  },
  "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-algerie-domicile-homme-2026-blanc-jz0273%3Fvariant%3D54043383333205": {
+  "currency": "EUR",
+  "price": 69.99
+ },
+ "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-arsenal-homme-2025-26-bordeaux-rouge-jz6906%3Fvariant%3D54053036065109": {
   "currency": "EUR",
   "price": 69.99
  },
@@ -2416,27 +2480,27 @@
   "price": 13.49
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-atletico-madrid-authentic-third-shirt-494013": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 84.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-bari-away-shirt-495866": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 44.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-bari-home-shirt-495867": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 44.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-inter-miami-lionel-messi-authentic-home-shirt-460716": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 69.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-2026-portugal-prematch-ss-jersey-black-454909": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 36.44
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2025-juventus-pre-match-shirt-yellow-461708": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 29.15
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-brazil-away-shirt-502470": {
@@ -2452,7 +2516,7 @@
   "price": 69.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-japan-home-pre-match-shirt-white-blue-511982": {
-  "currency": "EUR",
+  "currency": "GBP",
   "price": 59.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-jordan-home-shirt-510214": {
@@ -2461,7 +2525,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-netherlands-away-shirt-501804": {
   "currency": "GBP",
-  "price": 64.99
+  "price": 59.99
  },
  "https://www.awin1.com/cread.php?awinmid=124324&awinaffid=3013769&ued=https%3A%2F%2Fmysteryshirtclub.com%2Fproducts%2F2026-2027-south-korea-away-shirt-511948": {
   "currency": "GBP",
@@ -2839,7 +2903,15 @@
   "currency": "USD",
   "price": 47.99
  },
+ "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcelta-vigo-away-soccer-jersey-2026-27%3Fvariant%3D47976430764137": {
+  "currency": "USD",
+  "price": 29.99
+ },
  "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fceltic-home-soccer-jersey-2026-27%3Fvariant%3D42973765697641": {
+  "currency": "USD",
+  "price": 29.99
+ },
+ "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fceltic-third-away-soccer-jersey-2026-28%3Fvariant%3D47975901626473": {
   "currency": "USD",
   "price": 29.99
  },
@@ -4183,6 +4255,14 @@
   "currency": "USD",
   "price": 29.99
  },
+ "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsc-braga-home-soccer-jersey-2026-27%3Fvariant%3D47970731327593": {
+  "currency": "USD",
+  "price": 29.99
+ },
+ "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsc-braga-third-away-soccer-jersey-2026-27%3Fvariant%3D47970788966505": {
+  "currency": "USD",
+  "price": 29.99
+ },
  "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsc-internacional-home-soccer-jersey-2026-27%3Fvariant%3D43013427134569": {
   "currency": "USD",
   "price": 29.99
@@ -4214,6 +4294,10 @@
  "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsorloth-7-norway-home-soccer-jersey-2026-world-cup%3Fvariant%3D43162068615273": {
   "currency": "USD",
   "price": 45.99
+ },
+ "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsouthampton-f-c-home-soccer-jersey-2026-27%3Fvariant%3D47976650014825": {
+  "currency": "USD",
+  "price": 30.99
  },
  "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fspain-1996-away-retro-football-jersey%3Fvariant%3D42837416738921": {
   "currency": "USD",
@@ -4280,6 +4364,10 @@
   "price": 29.99
  },
  "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fstade-rennais-home-soccer-jersey-2025-26%3Fvariant%3D42744715640937": {
+  "currency": "USD",
+  "price": 29.99
+ },
+ "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fstrasbourg-away-soccer-jersey-2026-27%3Fvariant%3D47975685750889": {
   "currency": "USD",
   "price": 29.99
  },
@@ -4565,11 +4653,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F235049-9001-maillot-domicile-hummel-orange-county-2025-26-white": {
   "currency": "EUR",
-  "price": 54.35
+  "price": 53.57
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F235056-9001-maillot-exterieur-hummel-orange-county-2025-26-white": {
   "currency": "EUR",
-  "price": 54.35
+  "price": 53.57
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F237490-6235-maillot-domicile-asse-2026-27-jelly-bean": {
   "currency": "EUR",
@@ -4578,6 +4666,14 @@
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F237498-9806-maillot-exterieur-asse-2026-27-marshmallow": {
   "currency": "EUR",
   "price": 89.95
+ },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F239284-7666-maillot-third-sunderland-afc-2026-27-peacoat": {
+  "currency": "EUR",
+  "price": 69.95
+ },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F239290-9806-maillot-third-afc-bournemouth-2026-27-marshmallow": {
+  "currency": "EUR",
+  "price": 69.95
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2421886-maillot-domicile-ogc-nice-2024-2025-red-n-black": {
   "currency": "EUR",
@@ -4633,11 +4729,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311l5uw-a0k-maillot-domicile-genoa-2026-red-dk-blue-dk-yellow": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311p3dw-xmx-maillot-third-genoa-2026-blue-dk": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q2bw-s00-maillot-domicile-ogc-nice-2025-26-rouge": {
   "currency": "EUR",
@@ -4645,7 +4741,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q2cw-s03-maillot-exterieur-ogc-nice-2025-26-white-vanilla-green-artichoke-orange-coral-sponsor": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q2dw-s05-maillot-third-ogc-nice-2025-26-bleu": {
   "currency": "EUR",
@@ -4657,7 +4753,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q44w-a01-maillot-exterieur-fk-partizan-belgrade-2025-26-bleu-rouge": {
   "currency": "EUR",
-  "price": 52.0
+  "price": 51.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311q45w-a02-maillot-third-fk-partizan-belgrade-2026-white-black": {
   "currency": "EUR",
@@ -4665,7 +4761,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F311s27w-n01-maillot-domicile-wydad-ac-2025-26-red-white-yellow-gold-rich-7-ziyech": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 59.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F320-049-maillot-domicile-as-roma-1994-95-retro-burgundy": {
   "currency": "EUR",
@@ -4699,29 +4795,33 @@
   "currency": "EUR",
   "price": 85.0
  },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322238w-a0b-maillot-exterieur-tunisie-kombat-2025-26-white-red": {
+  "currency": "EUR",
+  "price": 59.0
+ },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322239w-a0k-maillot-third-tunisie-kombat-2025-26-beige-blue-navy": {
   "currency": "EUR",
   "price": 62.1
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F32277tw-a00-maillot-domicile-es-tunis-2025-26-rouge": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F32277uw-a0e-maillot-exterieur-es-tunis-2025-26-blanc": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 85.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322d8yw-s00-maillot-domicile-clermont-foot-63-2026-red-dk-blue-md-cobalt-sponsor": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322d8zw-s01-maillot-exterieur-clermont-foot-63-2026-white-whisper-red-winery-sponsor": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F322e81w-s02-maillot-third-clermont-foot-63-2026-blue-iris-yellow-gold-rich-sponsor": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331k4lw-a0c-maillot-third-hull-city-pro-2023-24-azure-orange": {
   "currency": "EUR",
@@ -4729,7 +4829,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331w4vw-a03-maillot-domicile-spezia-calcio-2026-white-black": {
   "currency": "EUR",
-  "price": 52.0
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331y65w-005-maillot-third-gs-kallithea-kombat-2024-25-black": {
   "currency": "EUR",
@@ -4745,7 +4845,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F342144w-005-maillot-domicile-vasco-da-gama-2025-26-black-white": {
   "currency": "EUR",
-  "price": 95.83
+  "price": 94.53
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F342145w-001-maillot-exterieur-vasco-da-gama-2025-26-white-black": {
   "currency": "EUR",
@@ -4755,13 +4855,9 @@
   "currency": "EUR",
   "price": 59.0
  },
- "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F34255sw-a00-maillot-exterieur-tunisie-coupe-du-monde-2026-red-white": {
-  "currency": "EUR",
-  "price": 69.04
- },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F34256tw-s00-maillot-domicile-real-valladolid-2026-white-violet-sponsor-1": {
   "currency": "EUR",
-  "price": 75.0
+  "price": 74.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F348-030-maillot-ipswich-town-fc-away-1997-98-retro-gris-noir": {
   "currency": "EUR",
@@ -4797,15 +4893,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35215iw-s02-maillot-domicile-metz-2025-26-rouge": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35215jw-s08-maillot-exterieur-fc-metz-2025-26-white-red-granata-sponsor": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F352281w-f11-maillot-third-vasco-da-gama-2025-26-gold-beige": {
   "currency": "EUR",
-  "price": 95.83
+  "price": 94.53
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F361v6dw-a00-maillot-domicile-tunisie-2024-blanc": {
   "currency": "EUR",
@@ -4849,11 +4945,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F372357w-a03-maillot-third-js-kabylie-2025-26-green-verdant-green-eden-yellow": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F372847w-p02-maillot-exterieur-real-valladolid-2026-black-violet-white-sponsor-2": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 54.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F379-003-maillot-exterieur-as-roma-1998-99-vivid-violet-loveable": {
   "currency": "EUR",
@@ -4881,15 +4977,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F382257w-a0f-maillot-exterieur-spezia-calcio-2026-black-white": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F382258w-a02-maillot-third-spezia-calcio-2026-yellow-gold-cream-black-white": {
   "currency": "EUR",
-  "price": 85.0
+  "price": 84.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38234yw-a00-maillot-domicile-fiorentina-2025-26-violet": {
   "currency": "EUR",
-  "price": 68.0
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38234zw-a08-maillot-exterieur-fiorentina-2025-26-white-whisper-violet-indigo": {
   "currency": "EUR",
@@ -4897,7 +4993,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F382441w-a22-maillot-third-fiorentina-2026-turquoise-crystal-grey-silver": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38293tw-a0g-maillot-third-es-tunis-2025-26-bleu": {
   "currency": "EUR",
@@ -4905,7 +5001,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F382e64w-a02-maillot-exterieur-wydad-ac-2025-26-white-off-bordeaux": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 67.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F382e65w-a01-maillot-third-wydad-ac-2025-26-blue-white-red": {
   "currency": "EUR",
@@ -4913,7 +5009,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F382p12w-005-maillot-de-gardien-es-tunis-2025-26-black": {
   "currency": "EUR",
-  "price": 67.09
+  "price": 66.15
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F383-021-maillot-exterieur-fc-porto-retro-1998-99-orange-bleu": {
   "currency": "EUR",
@@ -4929,11 +5025,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400065600001-maillot-domicile-albanie-2025-26-orange-noir": {
   "currency": "EUR",
-  "price": 50.48
+  "price": 49.76
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400065720001-maillot-third-albanie-2025-26-noir": {
   "currency": "EUR",
-  "price": 71.52
+  "price": 70.53
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F40006687-maillot-exterieur-reading-fc-2025-26-orange": {
   "currency": "EUR",
@@ -4949,7 +5045,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400122830001-maillot-exterieur-authentique-albanie-fshf-2026-27-blanc-rouge": {
   "currency": "EUR",
-  "price": 79.56
+  "price": 76.27
+ },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400126010001-maillot-exterieur-fc-nantes-2026-27-noir": {
+  "currency": "EUR",
+  "price": 95.0
+ },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400126050001-maillot-domicile-authentique-aj-auxerre-2026-27-blanc": {
+  "currency": "EUR",
+  "price": 95.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401-003-maillot-exterieur-copa-vasco-da-gama-1975-blanc": {
   "currency": "EUR",
@@ -5005,7 +5109,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F600096850001-maillot-domicile-club-atletico-osasuna-2025-26-rouge": {
   "currency": "EUR",
-  "price": 85.0
+  "price": 77.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F610-028-maillot-exterieur-borussia-monchengladbach-retro-1995-96-vert-noir": {
   "currency": "EUR",
@@ -5077,7 +5181,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F700114880001-maillot-domicile-fc-nantes-2025-26-jaune-rouge-vert": {
   "currency": "EUR",
-  "price": 50.48
+  "price": 49.76
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704-011-maillot-exterieur-manches-longues-fc-barcelone-1974-1975-jaune-bleu-rouge": {
   "currency": "EUR",
@@ -5125,7 +5229,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F775275-03-maillot-third-om-promo-2025-26-orange": {
   "currency": "EUR",
-  "price": 99.57
+  "price": 98.22
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F775286-01-maillot-domicile-om-2024-25-puma-white-bleu-azur": {
   "currency": "EUR",
@@ -5137,11 +5241,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F777187-01-maillot-domicile-cote-d-ivoire-can-2025-orange": {
   "currency": "EUR",
-  "price": 57.32
+  "price": 67.07
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F777197-02-maillot-exterieur-ghana-can-2025-yellow": {
   "currency": "EUR",
-  "price": 66.5
+  "price": 67.07
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F777204-05-maillot-prematch-ghana-can-2025-yellow": {
   "currency": "EUR",
@@ -5149,11 +5253,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F777210-02-maillot-exterieur-cote-d-ivoire-can-2025-white": {
   "currency": "EUR",
-  "price": 68.02
+  "price": 67.07
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F777706-02-maillot-exterieur-maroc-can-2025-white": {
   "currency": "EUR",
-  "price": 57.32
+  "price": 67.07
+ },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F777726-06-maillot-prematch-maroc-can-2025-red": {
+  "currency": "EUR",
+  "price": 39.35
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F778218-46-maillot-training-om-2024-25-blue": {
   "currency": "EUR",
@@ -5173,11 +5281,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779801-01-maillot-domicile-om-2025-26-white": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 55.14
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779844-02-maillot-exterieur-om-2025-26-blue": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 55.14
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779876-01-maillot-domicile-rb-leipzig-2025-26-white": {
   "currency": "EUR",
@@ -5209,7 +5317,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779971-02-maillot-exterieur-milan-ac-2025-26-white": {
   "currency": "EUR",
-  "price": 50.0
+  "price": 54.37
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F779979-03-maillot-third-milan-ac-2025-26-yellow": {
   "currency": "EUR",
@@ -5249,7 +5357,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780420-01-maillot-domicile-psv-eindhoven-2025-26-white": {
   "currency": "EUR",
-  "price": 57.59
+  "price": 55.14
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780437-03-maillot-third-psv-eindhoven-2025-26-white": {
   "currency": "EUR",
@@ -5257,11 +5365,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F780723-99-maillot-gardien-om-2025-26-yellow": {
   "currency": "EUR",
-  "price": 55.94
+  "price": 55.14
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783021-01-maillot-domicile-girona-fc-2025-26-white": {
   "currency": "EUR",
-  "price": 61.75
+  "price": 52.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F783025-03-maillot-exterieur-girona-fc-2025-26-yellow": {
   "currency": "EUR",
@@ -5310,10 +5418,6 @@
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F784532-04-maillot-third-valence-cf-2026-27-pink-lilac-intense-red": {
   "currency": "EUR",
   "price": 100.0
- },
- "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F784540-11-maillot-prematch-maroc-coupe-du-monde-2026-dark-crimson-dark-myrtle": {
-  "currency": "EUR",
-  "price": 52.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F784713-02-maillot-prematch-milan-ac-2025-26-green-moon-sunny-yellow": {
   "currency": "EUR",
@@ -5541,15 +5645,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4587-615-maillot-domicile-atletico-madrid-2025-26-sport-red-white-hyper-royal": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 74.88
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4589-496-maillot-domicile-chelsea-2025-26-rush-blue-white-speed-red-white": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 71.92
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4590-456-maillot-domicile-fc-barcelone-2025-26-deep-royal-blue-midwest-gold": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 75.91
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4598-101-maillot-domicile-tottenham-2025-26-white-lt-iron-ore-binary-blue": {
   "currency": "EUR",
@@ -5561,11 +5665,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4602-031-maillot-exterieur-chelsea-2025-26-phantom-speed-red-galactic-jade": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 71.92
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4604-497-maillot-exterieur-inter-milan-2025-26-ghost-aqua-white-blue-void": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 63.45
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4609-011-maillot-exterieur-tottenham-2025-26-black-lt-iron-ore": {
   "currency": "EUR",
@@ -5589,7 +5693,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7142-456-maillot-prematch-fc-barcelone-academy-pro-2025-26-deep-royal-blue-midwest-gold": {
   "currency": "EUR",
-  "price": 42.37
+  "price": 43.46
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7145-448-maillot-prematch-inter-milan-2025-26-chlorine-blue-black-chlorine-blue": {
   "currency": "EUR",
@@ -5601,15 +5705,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7156-100-maillot-prematch-tottenham-academy-pro-2025-26-white-lt-iron-ore-binary-blue": {
   "currency": "EUR",
-  "price": 44.61
+  "price": 38.6
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3200-407-maillot-third-atletico-madrid-2025-26-photo-blue-sport-red-white-white": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 66.6
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3201-855-maillot-third-fc-barcelone-2025-26-bright-mango-midnight-navy-midnight-navy": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 75.91
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3202-011-maillot-third-chelsea-2025-26-black-field-silver-field-silver": {
   "currency": "EUR",
@@ -5617,11 +5721,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3204-438-maillot-third-inter-milan-2025-26-thunder-blue-safety-orange-safety-orange": {
   "currency": "EUR",
-  "price": 64.99
+  "price": 66.6
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3207-741-maillot-third-tottenham-2025-26-dynamic-yellow-blue-void-blue-void": {
   "currency": "EUR",
-  "price": 68.29
+  "price": 59.38
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm3345-101-maillot-third-psg-strike-2025-26-white-white-hyper-royal-global-red": {
   "currency": "EUR",
@@ -5655,6 +5759,10 @@
   "currency": "EUR",
   "price": 52.2
  },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv8173-100-maillot-exterieur-toulouse-2026-27-blanc": {
+  "currency": "EUR",
+  "price": 89.0
+ },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhz6201-maillot-domicile-new-york-red-bulls-2024-25-team-colleg-red": {
   "currency": "EUR",
   "price": 52.87
@@ -5673,7 +5781,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib3830-012-maillot-de-gardien-manches-longues-chelsea-2025-26-wolf-grey-turf-orange-pitch-blue-white": {
   "currency": "EUR",
-  "price": 60.99
+  "price": 60.14
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5129-480-maillot-domicile-enfant-france-coupe-du-monde-2026-royal-metallic-copper": {
   "currency": "EUR",
@@ -5685,7 +5793,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5225-475-maillot-exterieur-authentique-usa-coupe-du-monde-2026-dark-obsidian-pure-platinum": {
   "currency": "EUR",
-  "price": 122.33
+  "price": 120.68
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5256-704-maillot-domicile-australie-coupe-du-monde-2026-sport-gold-mystic-green-mystic-green": {
   "currency": "EUR",
@@ -5695,9 +5803,13 @@
   "currency": "EUR",
   "price": 87.99
  },
+ "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5295-489-maillot-de-gardien-angleterre-coupe-du-monde-2026-astronomy-blue-noir-blanc": {
+  "currency": "EUR",
+  "price": 87.99
+ },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5300-480-maillot-domicile-france-coupe-du-monde-2026-game-royal-metallic-copper": {
   "currency": "EUR",
-  "price": 86.95
+  "price": 87.99
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5304-010-maillot-de-gardien-france-coupe-du-monde-2026-black-medium-ash-monarch-igloo": {
   "currency": "EUR",
@@ -5705,7 +5817,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5308-302-maillot-domicile-nigeria-coupe-du-monde-2026-pine-green-electric-green-white": {
   "currency": "EUR",
-  "price": 73.58
+  "price": 79.03
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5313-645-maillot-de-gardien-de-but-nigeria-coupe-du-monde-2026-hyper-pink-noir-blanc": {
   "currency": "EUR",
@@ -5725,7 +5837,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5339-133-maillot-domicile-usa-coupe-du-monde-2026-sail-midnight-navy-midnight-navy": {
   "currency": "EUR",
-  "price": 83.37
+  "price": 82.49
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5347-367-maillot-exterieur-australie-coupe-du-monde-2026-bright-spruce-orange-pulse-white-white": {
   "currency": "EUR",
@@ -5781,7 +5893,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1686-010-maillot-prematch-nigeria-coupe-du-monde-2026-black-white": {
   "currency": "EUR",
-  "price": 69.99
+  "price": 55.99
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii1690-101-t-shirt-domicile-psg-2026-27-white-old-royal-university-red-white": {
   "currency": "EUR",
@@ -5793,7 +5905,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2032-011-maillot-de-gardien-manches-longues-inter-milan-2026-27-black-white": {
   "currency": "EUR",
-  "price": 90.89
+  "price": 90.84
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3616-011-maillot-de-gardien-manches-longues-enfant-psg-2026-27-black-white": {
   "currency": "EUR",
@@ -5997,7 +6109,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf2740-maillot-domicile-san-diego-fc-2025-26-ntnavy": {
   "currency": "EUR",
-  "price": 83.0
+  "price": 82.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf2915-maillot-training-arsenal-tiro-2024-25-aurbla": {
   "currency": "EUR",
@@ -6021,7 +6133,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7289-maillot-domicile-orlando-pirates-2025-26-black-colred-white": {
   "currency": "EUR",
-  "price": 95.0
+  "price": 93.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7303-maillot-third-flamengo-2025-26-crewht": {
   "currency": "EUR",
@@ -6037,15 +6149,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji7428-maillot-domicile-manchester-united-2025-26-mufred": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 58.88
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji9511-maillot-exterieur-arsenal-2025-26-nindig-gretwo": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 61.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji9560-maillot-de-gardien-third-arsenal-2025-26-sescgr-white": {
   "currency": "EUR",
-  "price": 78.0
+  "price": 77.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1392-maillot-domicile-inter-miami-fc-2025-26-easpink": {
   "currency": "EUR",
@@ -6073,7 +6185,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj4182-maillot-exterieur-real-madrid-2025-26-legink": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.21
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj4281-maillot-exterieur-boca-juniors-2025-26-pyrite-shanav-ntnavy": {
   "currency": "EUR",
@@ -6081,7 +6193,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj4320-maillot-domicile-juventus-turin-2025-26-white-black": {
   "currency": "EUR",
-  "price": 53.11
+  "price": 61.34
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj5110-maillot-domicile-benfica-lisbonne-2024-25-red": {
   "currency": "EUR",
@@ -6097,7 +6209,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl3367-maillot-domicile-1-fc-union-berlin-2025-26-vivred-white": {
   "currency": "EUR",
-  "price": 81.0
+  "price": 80.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl5825-maillot-domicile-authentique-la-galaxy-2025-26-white-dkblue": {
   "currency": "EUR",
@@ -6129,7 +6241,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl8487-maillot-exterieur-inter-miami-fc-2025-26-black": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 98.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl8545-maillot-third-mexique-coupe-du-monde-2026-noir": {
   "currency": "EUR",
@@ -6209,7 +6321,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1667-maillot-prematch-juventus-turin-2025-26-white": {
   "currency": "EUR",
-  "price": 63.0
+  "price": 62.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3013-maillot-domicile-enfant-manchester-united-2025-26-mufred": {
   "currency": "EUR",
@@ -6237,7 +6349,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4178-maillot-de-gardien-domicile-real-madrid-2025-26-blubrs-rayblu": {
   "currency": "EUR",
-  "price": 71.0
+  "price": 85.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv5845-maillot-third-real-madrid-2025-26-blubir": {
   "currency": "EUR",
@@ -6245,11 +6357,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6423-maillot-domicile-liverpool-fc-2025-26-strred": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.21
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6428-maillot-third-liverpool-fc-2025-26-seagre": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.21
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6436-maillot-domicile-enfant-liverpool-fc-2025-26-strred": {
   "currency": "EUR",
@@ -6261,7 +6373,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6487-maillot-exterieur-liverpool-fc-2025-26-wonwhi": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 58.88
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx2133-maillot-exterieur-real-madrid-2024-25-creora-creora": {
   "currency": "EUR",
@@ -6273,11 +6385,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx7840-maillot-exterieur-benfica-lisbonne-2025-26-wonalu": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.21
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx8719-maillot-third-seattle-sounders-2025-26-multicolore": {
   "currency": "EUR",
-  "price": 65.0
+  "price": 64.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx8726-maillot-third-minnesota-united-2025-26-legmar": {
   "currency": "EUR",
@@ -6285,7 +6397,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5485-maillot-prematch-mexique-2026-aurora-ivy": {
   "currency": "EUR",
-  "price": 56.0
+  "price": 66.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5633-maillot-domicile-italie-2026-white": {
   "currency": "EUR",
@@ -6293,7 +6405,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5634-maillot-exterieur-prematch-italie-coupe-du-monde-2026-night-marine": {
   "currency": "EUR",
-  "price": 42.0
+  "price": 42.08
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7585-maillot-domicile-enfant-italie-coupe-du-monde-2026-boblue": {
   "currency": "EUR",
@@ -6301,7 +6413,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7641-maillot-prematch-belgique-2026-black-red": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 66.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7653-maillot-de-gardien-domicile-manches-longues-enfant-italie-coupe-du-monde-2026-tecobu": {
   "currency": "EUR",
@@ -6309,7 +6421,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy9535-maillot-exterieur-prematch-argentine-coupe-du-monde-2026-lucblu": {
   "currency": "EUR",
-  "price": 67.0
+  "price": 70.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz0265-maillot-domicile-algerie-preshi-2026-magic-beige": {
   "currency": "EUR",
@@ -6361,7 +6473,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6260-maillot-prematch-bayern-munich-2025-26-nobink-hirblu-chapea": {
   "currency": "EUR",
-  "price": 67.0
+  "price": 66.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6941-maillot-retro-exterieur-allemagne-1994-power-green": {
   "currency": "EUR",
@@ -6457,7 +6569,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc3223-maillot-de-gardien-third-juventus-turin-2025-26-pursul": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 99.0
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc3486-maillot-third-juventus-turin-2025-26-black-ecrtin": {
   "currency": "EUR",
@@ -6473,7 +6585,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc8704-maillot-exterieur-italie-coupe-du-monde-2026-aero-blue": {
   "currency": "EUR",
-  "price": 53.11
+  "price": 62.21
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkd0957-maillot-exterieur-jamaique-coupe-du-monde-2026-black": {
   "currency": "EUR",
@@ -6601,7 +6713,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmt231931-awy-maillot-prematch-bayer-leverkusen-04-2025-26-awy-beige": {
   "currency": "EUR",
-  "price": 44.23
+  "price": 41.38
  },
  "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmt62386k-hme-maillot-domicile-losc-2026-27-rouge": {
   "currency": "EUR",
@@ -6735,6 +6847,14 @@
   "currency": "EUR",
   "price": 89.95
  },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F239284-7666-maillot-third-sunderland-afc-2026-27-peacoat": {
+  "currency": "EUR",
+  "price": 69.95
+ },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F239290-9806-maillot-third-afc-bournemouth-2026-27-marshmallow": {
+  "currency": "EUR",
+  "price": 69.95
+ },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F2421886-maillot-domicile-ogc-nice-2024-2025-red-n-black": {
   "currency": "EUR",
   "price": 79.78
@@ -6809,7 +6929,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F38234yw-a00-maillot-domicile-fiorentina-2025-26-violet": {
   "currency": "EUR",
-  "price": 68.0
+  "price": 67.47
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F38234zw-a08-maillot-exterieur-fiorentina-2025-26-white-whisper-violet-indigo": {
   "currency": "EUR",
@@ -6849,7 +6969,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400122830001-maillot-exterieur-authentique-albanie-fshf-2026-27-blanc-rouge": {
   "currency": "EUR",
-  "price": 79.56
+  "price": 76.27
+ },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400126010001-maillot-exterieur-fc-nantes-2026-27-noir": {
+  "currency": "EUR",
+  "price": 95.0
+ },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400126050001-maillot-domicile-authentique-aj-auxerre-2026-27-blanc": {
+  "currency": "EUR",
+  "price": 95.0
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F531-033-maillot-domicile-algerie-world-cup-1982-blanc-vert": {
   "currency": "EUR",
@@ -6891,6 +7019,10 @@
   "currency": "EUR",
   "price": 68.09
  },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F700114880001-maillot-domicile-fc-nantes-2025-26-jaune-rouge-vert": {
+  "currency": "EUR",
+  "price": 49.9
+ },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F770438-01-maillot-domicile-manchester-city-2023-24-bleu-blanc": {
   "currency": "EUR",
   "price": 49.99
@@ -6909,11 +7041,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F777187-01-maillot-domicile-cote-d-ivoire-can-2025-orange": {
   "currency": "EUR",
-  "price": 57.45
+  "price": 67.2
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F777197-02-maillot-exterieur-ghana-can-2025-yellow": {
   "currency": "EUR",
-  "price": 66.5
+  "price": 67.2
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F777204-05-maillot-prematch-ghana-can-2025-yellow": {
   "currency": "EUR",
@@ -6921,7 +7053,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F777706-02-maillot-exterieur-maroc-can-2025-white": {
   "currency": "EUR",
-  "price": 57.45
+  "price": 67.2
+ },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F777726-06-maillot-prematch-maroc-can-2025-red": {
+  "currency": "EUR",
+  "price": 39.48
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F778638-01-maillot-domicile-fc-st-pauli-2024-25-brown": {
   "currency": "EUR",
@@ -6929,15 +7065,15 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779801-01-maillot-domicile-om-2025-26-white": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 55.28
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779844-02-maillot-exterieur-om-2025-26-blue": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 55.28
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779852-03-maillot-third-authentique-om-2025-26-blue": {
   "currency": "EUR",
-  "price": 97.5
+  "price": 81.09
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779876-01-maillot-domicile-rb-leipzig-2025-26-white": {
   "currency": "EUR",
@@ -7001,7 +7137,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780420-01-maillot-domicile-psv-eindhoven-2025-26-white": {
   "currency": "EUR",
-  "price": 57.73
+  "price": 55.28
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F780437-03-maillot-third-psv-eindhoven-2025-26-white": {
   "currency": "EUR",
@@ -7009,7 +7145,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F783021-01-maillot-domicile-girona-fc-2025-26-white": {
   "currency": "EUR",
-  "price": 61.75
+  "price": 52.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F783025-03-maillot-exterieur-girona-fc-2025-26-yellow": {
   "currency": "EUR",
@@ -7058,10 +7194,6 @@
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784532-04-maillot-third-valence-cf-2026-27-pink-lilac-intense-red": {
   "currency": "EUR",
   "price": 100.0
- },
- "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784540-11-maillot-prematch-maroc-coupe-du-monde-2026-dark-crimson-dark-myrtle": {
-  "currency": "EUR",
-  "price": 52.0
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784713-02-maillot-prematch-milan-ac-2025-26-green-moon-sunny-yellow": {
   "currency": "EUR",
@@ -7118,6 +7250,10 @@
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fht4452-maillot-prematch-manches-longues-arsenal-warm-2022-23-collegiate-navy": {
   "currency": "EUR",
   "price": 52.2
+ },
+ "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fhv8173-100-maillot-exterieur-toulouse-2026-27-blanc": {
+  "currency": "EUR",
+  "price": 89.0
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fhz6201-maillot-domicile-new-york-red-bulls-2024-25-team-colleg-red": {
   "currency": "EUR",
@@ -7285,11 +7421,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji7428-maillot-domicile-manchester-united-2025-26-mufred": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 59.01
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fji9511-maillot-exterieur-arsenal-2025-26-nindig-gretwo": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 61.48
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj1392-maillot-domicile-inter-miami-fc-2025-26-easpink": {
   "currency": "EUR",
@@ -7301,7 +7437,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj2137-maillot-domicile-bayern-munich-2025-26-red": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj2143-maillot-exterieur-bayern-munich-2025-26-white": {
   "currency": "EUR",
@@ -7309,7 +7445,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj4182-maillot-exterieur-real-madrid-2025-26-legink": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj4281-maillot-exterieur-boca-juniors-2025-26-pyrite-shanav-ntnavy": {
   "currency": "EUR",
@@ -7317,7 +7453,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj4320-maillot-domicile-juventus-turin-2025-26-white-black": {
   "currency": "EUR",
-  "price": 53.23
+  "price": 61.48
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj5110-maillot-domicile-benfica-lisbonne-2024-25-red": {
   "currency": "EUR",
@@ -7413,11 +7549,11 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6423-maillot-domicile-liverpool-fc-2025-26-strred": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6428-maillot-third-liverpool-fc-2025-26-seagre": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6436-maillot-domicile-enfant-liverpool-fc-2025-26-strred": {
   "currency": "EUR",
@@ -7429,7 +7565,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6487-maillot-exterieur-liverpool-fc-2025-26-wonwhi": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 59.01
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx2133-maillot-exterieur-real-madrid-2024-25-creora-creora": {
   "currency": "EUR",
@@ -7441,7 +7577,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx7840-maillot-exterieur-benfica-lisbonne-2025-26-wonalu": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx8726-maillot-third-minnesota-united-2025-26-legmar": {
   "currency": "EUR",
@@ -7457,7 +7593,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy5634-maillot-exterieur-prematch-italie-coupe-du-monde-2026-night-marine": {
   "currency": "EUR",
-  "price": 42.0
+  "price": 42.21
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy7585-maillot-domicile-enfant-italie-coupe-du-monde-2026-boblue": {
   "currency": "EUR",
@@ -7593,7 +7729,7 @@
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc8704-maillot-exterieur-italie-coupe-du-monde-2026-aero-blue": {
   "currency": "EUR",
-  "price": 53.23
+  "price": 62.34
  },
  "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd0957-maillot-exterieur-jamaique-coupe-du-monde-2026-black": {
   "currency": "EUR",
@@ -8003,6 +8139,14 @@
   "currency": "EUR",
   "price": 60.59
  },
+ "https://www.awin1.com/pclick.php?p=38571603832&a=3013769&m=37550": {
+  "currency": "EUR",
+  "price": 80.0
+ },
+ "https://www.awin1.com/pclick.php?p=38584279323&a=3013769&m=37550": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=38594254920&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 59.16
@@ -8153,15 +8297,15 @@
  },
  "https://www.awin1.com/pclick.php?p=39412129939&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 57.87
+  "price": 67.77
  },
  "https://www.awin1.com/pclick.php?p=39412129980&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 66.5
+  "price": 67.77
  },
  "https://www.awin1.com/pclick.php?p=39412129986&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 57.87
+  "price": 67.77
  },
  "https://www.awin1.com/pclick.php?p=39412130005&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8189,7 +8333,7 @@
  },
  "https://www.awin1.com/pclick.php?p=39857790167&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 94.0
+  "price": 93.0
  },
  "https://www.awin1.com/pclick.php?p=39857790171&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8315,11 +8459,7 @@
   "currency": "EUR",
   "price": 64.0
  },
- "https://www.awin1.com/pclick.php?p=41205144020&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=41299301716&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=41299301715&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8349,11 +8489,11 @@
  },
  "https://www.awin1.com/pclick.php?p=41353942668&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 69.0
  },
  "https://www.awin1.com/pclick.php?p=41368868580&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 65.6
+  "price": 72.63
  },
  "https://www.awin1.com/pclick.php?p=41385744433&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8369,13 +8509,17 @@
  },
  "https://www.awin1.com/pclick.php?p=41446542641&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 53.62
+  "price": 61.99
  },
  "https://www.awin1.com/pclick.php?p=41446542656&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 45.0
  },
- "https://www.awin1.com/pclick.php?p=41472821421&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=41472818327&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 70.0
+ },
+ "https://www.awin1.com/pclick.php?p=41472821422&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8395,9 +8539,13 @@
   "currency": "EUR",
   "price": 55.0
  },
- "https://www.awin1.com/pclick.php?p=41508675501&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=41508675503&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 75.0
+ },
+ "https://www.awin1.com/pclick.php?p=41508675646&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 52.5
  },
  "https://www.awin1.com/pclick.php?p=41530601284&a=3013769&m=77008": {
   "currency": "EUR",
@@ -8413,7 +8561,7 @@
  },
  "https://www.awin1.com/pclick.php?p=41557552026&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 43.61
+  "price": 46.89
  },
  "https://www.awin1.com/pclick.php?p=41557552031&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8429,7 +8577,7 @@
  },
  "https://www.awin1.com/pclick.php?p=41570713180&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 38.5
+  "price": 38.65
  },
  "https://www.awin1.com/pclick.php?p=41576608402&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8437,19 +8585,15 @@
  },
  "https://www.awin1.com/pclick.php?p=41581833782&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=41590074938&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 48.48
- },
- "https://www.awin1.com/pclick.php?p=41590987988&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
+  "price": 41.91
  },
  "https://www.awin1.com/pclick.php?p=41617120726&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 75.0
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=41622507982&a=3013769&m=77008": {
   "currency": "EUR",
@@ -8462,10 +8606,6 @@
  "https://www.awin1.com/pclick.php?p=41624817904&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 46.3
- },
- "https://www.awin1.com/pclick.php?p=41634713800&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 70.0
  },
  "https://www.awin1.com/pclick.php?p=41634729250&a=3013769&m=77008": {
   "currency": "EUR",
@@ -8481,11 +8621,11 @@
  },
  "https://www.awin1.com/pclick.php?p=41641436515&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 55.75
  },
  "https://www.awin1.com/pclick.php?p=41641436520&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 55.75
  },
  "https://www.awin1.com/pclick.php?p=41641436528&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8521,7 +8661,7 @@
  },
  "https://www.awin1.com/pclick.php?p=41680557622&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 103.07
+  "price": 100.58
  },
  "https://www.awin1.com/pclick.php?p=41694985124&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8537,7 +8677,7 @@
  },
  "https://www.awin1.com/pclick.php?p=41701521179&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 59.48
  },
  "https://www.awin1.com/pclick.php?p=41701521289&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8553,15 +8693,11 @@
  },
  "https://www.awin1.com/pclick.php?p=41718361139&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.87
  },
  "https://www.awin1.com/pclick.php?p=41718361168&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 47.35
- },
- "https://www.awin1.com/pclick.php?p=41734271527&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=41734281659&a=3013769&m=77026": {
   "currency": "EUR",
@@ -8573,15 +8709,15 @@
  },
  "https://www.awin1.com/pclick.php?p=41740155808&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 45.07
+  "price": 38.92
  },
  "https://www.awin1.com/pclick.php?p=41781314363&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 47.88
  },
- "https://www.awin1.com/pclick.php?p=41781314367&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=41781314365&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 50.0
+  "price": 55.75
  },
  "https://www.awin1.com/pclick.php?p=41789918627&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8589,11 +8725,15 @@
  },
  "https://www.awin1.com/pclick.php?p=41793758120&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 61.75
+  "price": 52.78
  },
  "https://www.awin1.com/pclick.php?p=41794200687&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 45.0
+ },
+ "https://www.awin1.com/pclick.php?p=41810640006&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 70.0
  },
  "https://www.awin1.com/pclick.php?p=41833171828&a=3013769&m=19598": {
   "currency": "EUR",
@@ -8601,9 +8741,9 @@
  },
  "https://www.awin1.com/pclick.php?p=41834697770&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
- "https://www.awin1.com/pclick.php?p=41848202010&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=41848204022&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8615,9 +8755,9 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=41877641075&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=41877641077&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 75.0
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=41885924466&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8625,7 +8765,7 @@
  },
  "https://www.awin1.com/pclick.php?p=41885924543&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 42.78
+  "price": 43.9
  },
  "https://www.awin1.com/pclick.php?p=41889391733&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8633,7 +8773,7 @@
  },
  "https://www.awin1.com/pclick.php?p=41891850262&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 69.99
+  "price": 79.99
  },
  "https://www.awin1.com/pclick.php?p=41893015508&a=3013769&m=77026": {
   "currency": "EUR",
@@ -8647,13 +8787,9 @@
   "currency": "EUR",
   "price": 69.51
  },
- "https://www.awin1.com/pclick.php?p=41909877936&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 58.24
- },
  "https://www.awin1.com/pclick.php?p=41909878050&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=41912444358&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8683,7 +8819,11 @@
   "currency": "EUR",
   "price": 70.0
  },
- "https://www.awin1.com/pclick.php?p=41972277543&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=41972277364&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 75.0
+ },
+ "https://www.awin1.com/pclick.php?p=41972277544&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8692,10 +8832,6 @@
   "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=41972279593&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=41981562750&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8725,7 +8861,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42000313616&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 39.4
+  "price": 41.64
  },
  "https://www.awin1.com/pclick.php?p=42007716300&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8747,7 +8883,7 @@
   "currency": "EUR",
   "price": 56.25
  },
- "https://www.awin1.com/pclick.php?p=42036950039&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=42036950040&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8765,15 +8901,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42060697789&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 89.0
- },
- "https://www.awin1.com/pclick.php?p=42071970523&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 80.0
- },
- "https://www.awin1.com/pclick.php?p=42071970641&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
+  "price": 88.0
  },
  "https://www.awin1.com/pclick.php?p=42072162202&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8781,7 +8909,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42072162466&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 86.39
+  "price": 85.99
  },
  "https://www.awin1.com/pclick.php?p=42079586528&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8789,7 +8917,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42079589123&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 96.79
+  "price": 95.46
  },
  "https://www.awin1.com/pclick.php?p=42079589129&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8815,6 +8943,10 @@
   "currency": "EUR",
   "price": 41.25
  },
+ "https://www.awin1.com/pclick.php?p=42095532070&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 62.87
+ },
  "https://www.awin1.com/pclick.php?p=42121869311&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 50.13
@@ -8833,7 +8965,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42177817663&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 65.6
+  "price": 76.69
  },
  "https://www.awin1.com/pclick.php?p=42201171181&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8842,6 +8974,10 @@
  "https://www.awin1.com/pclick.php?p=42216186454&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 37.77
+ },
+ "https://www.awin1.com/pclick.php?p=42224162335&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 67.89
  },
  "https://www.awin1.com/pclick.php?p=42224163935&a=3013769&m=23805": {
   "currency": "EUR",
@@ -8873,7 +9009,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42250718250&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 82.0
+  "price": 81.0
  },
  "https://www.awin1.com/pclick.php?p=42270681132&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8893,11 +9029,11 @@
  },
  "https://www.awin1.com/pclick.php?p=42293267895&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 103.07
+  "price": 89.82
  },
  "https://www.awin1.com/pclick.php?p=42294036298&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 76.99
+  "price": 87.99
  },
  "https://www.awin1.com/pclick.php?p=42313341216&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8925,13 +9061,9 @@
  },
  "https://www.awin1.com/pclick.php?p=42381633159&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 62.87
  },
  "https://www.awin1.com/pclick.php?p=42382383639&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=42382384132&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -8945,7 +9077,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42403415953&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 65.6
+  "price": 67.24
  },
  "https://www.awin1.com/pclick.php?p=42418817963&a=3013769&m=65912": {
   "currency": "EUR",
@@ -8969,7 +9101,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42473229090&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 65.6
+  "price": 67.24
  },
  "https://www.awin1.com/pclick.php?p=42486173617&a=3013769&m=65912": {
   "currency": "EUR",
@@ -9025,7 +9157,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42530009031&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 41.25
+  "price": 41.4
  },
  "https://www.awin1.com/pclick.php?p=42530011697&a=3013769&m=65912": {
   "currency": "EUR",
@@ -9053,7 +9185,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42541432796&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 44.71
+  "price": 41.8
  },
  "https://www.awin1.com/pclick.php?p=42565886403&a=3013769&m=65912": {
   "currency": "EUR",
@@ -9069,7 +9201,7 @@
  },
  "https://www.awin1.com/pclick.php?p=42630385350&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 82.0
+  "price": 81.0
  },
  "https://www.awin1.com/pclick.php?p=42682740833&a=3013769&m=65912": {
   "currency": "EUR",
@@ -9143,10 +9275,6 @@
   "currency": "EUR",
   "price": 129.0
  },
- "https://www.awin1.com/pclick.php?p=43034474170&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 55.0
- },
  "https://www.awin1.com/pclick.php?p=43040223785&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 50.0
@@ -9181,7 +9309,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43087830571&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 85.0
+  "price": 84.0
  },
  "https://www.awin1.com/pclick.php?p=43087831509&a=3013769&m=65912": {
   "currency": "EUR",
@@ -9215,7 +9343,7 @@
   "currency": "EUR",
   "price": 80.0
  },
- "https://www.awin1.com/pclick.php?p=43087831984&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=43087831988&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 70.0
  },
@@ -9241,7 +9369,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43087832823&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 60.3
  },
  "https://www.awin1.com/pclick.php?p=43087832834&a=3013769&m=65912": {
   "currency": "EUR",
@@ -9259,6 +9387,10 @@
   "currency": "EUR",
   "price": 100.0
  },
+ "https://www.awin1.com/pclick.php?p=43094288952&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 75.0
+ },
  "https://www.awin1.com/pclick.php?p=43094289096&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
@@ -9269,13 +9401,21 @@
  },
  "https://www.awin1.com/pclick.php?p=43094289571&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 75.0
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=43094290000&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 75.0
  },
+ "https://www.awin1.com/pclick.php?p=43094290143&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=43094290646&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=43094290654&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -9287,17 +9427,13 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43094291636&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=43094291635&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=43094292277&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 55.0
- },
- "https://www.awin1.com/pclick.php?p=43094292507&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=43094292628&a=3013769&m=77008": {
   "currency": "EUR",
@@ -9311,9 +9447,9 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43094295573&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=43094297942&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=43094298145&a=3013769&m=77008": {
   "currency": "EUR",
@@ -9321,11 +9457,15 @@
  },
  "https://www.awin1.com/pclick.php?p=43094299248&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=43094299504&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=43094299915&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=43094299981&a=3013769&m=77008": {
   "currency": "EUR",
@@ -9335,15 +9475,19 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43094300098&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=43094300434&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 75.0
  },
- "https://www.awin1.com/pclick.php?p=43094300699&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=43094300482&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=43096957488&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=43096957803&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -9351,17 +9495,25 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43096958231&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
  "https://www.awin1.com/pclick.php?p=43096958515&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 70.0
  },
+ "https://www.awin1.com/pclick.php?p=43096958911&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 75.0
+ },
  "https://www.awin1.com/pclick.php?p=43096959245&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=43096959389&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=43096959464&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 70.0
  },
  "https://www.awin1.com/pclick.php?p=43096960025&a=3013769&m=77026": {
   "currency": "EUR",
@@ -9371,6 +9523,10 @@
   "currency": "EUR",
   "price": 55.0
  },
+ "https://www.awin1.com/pclick.php?p=43096960253&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=43096961030&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
@@ -9379,14 +9535,6 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43096963439&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=43096963956&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 75.0
- },
  "https://www.awin1.com/pclick.php?p=43096963996&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
@@ -9394,6 +9542,10 @@
  "https://www.awin1.com/pclick.php?p=43096964043&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 55.0
+ },
+ "https://www.awin1.com/pclick.php?p=43096964099&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=43096965135&a=3013769&m=77026": {
   "currency": "EUR",
@@ -9411,10 +9563,6 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43096965562&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
  "https://www.awin1.com/pclick.php?p=43096965610&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 75.0
@@ -9427,31 +9575,23 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43096966058&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 70.0
- },
  "https://www.awin1.com/pclick.php?p=43096966498&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 75.0
  },
- "https://www.awin1.com/pclick.php?p=43096966532&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43096966760&a=3013769&m=77026": {
   "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=43096966680&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=43096966929&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43096967064&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43096967179&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43096967179&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43096967250&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -9467,9 +9607,9 @@
   "currency": "EUR",
   "price": 80.09
  },
- "https://www.awin1.com/pclick.php?p=43108907003&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=43105182566&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 65.0
+  "price": 80.09
  },
  "https://www.awin1.com/pclick.php?p=43116167921&a=3013769&m=23805": {
   "currency": "EUR",
@@ -9717,11 +9857,11 @@
  },
  "https://www.awin1.com/pclick.php?p=43301770960&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 66.5
+  "price": 68.45
  },
  "https://www.awin1.com/pclick.php?p=43301770965&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 58.46
+  "price": 68.45
  },
  "https://www.awin1.com/pclick.php?p=43301770982&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9765,7 +9905,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301836050&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 30.28
+  "price": 33.87
  },
  "https://www.awin1.com/pclick.php?p=43301836065&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9773,7 +9913,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301836082&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 54.21
+  "price": 62.66
  },
  "https://www.awin1.com/pclick.php?p=43301836101&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9781,7 +9921,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301836105&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 60.13
  },
  "https://www.awin1.com/pclick.php?p=43301836108&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9797,7 +9937,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301840706&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 63.55
  },
  "https://www.awin1.com/pclick.php?p=43301840743&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9817,7 +9957,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301844190&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 55.59
  },
  "https://www.awin1.com/pclick.php?p=43301844232&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9839,6 +9979,10 @@
   "currency": "EUR",
   "price": 41.25
  },
+ "https://www.awin1.com/pclick.php?p=43301845383&a=3013769&m=65906": {
+  "currency": "EUR",
+  "price": 63.55
+ },
  "https://www.awin1.com/pclick.php?p=43301845400&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 47.07
@@ -9849,7 +9993,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301845433&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 63.55
  },
  "https://www.awin1.com/pclick.php?p=43301852216&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9865,19 +10009,15 @@
  },
  "https://www.awin1.com/pclick.php?p=43301852308&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 61.75
+  "price": 53.16
  },
  "https://www.awin1.com/pclick.php?p=43301852318&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 55.63
  },
  "https://www.awin1.com/pclick.php?p=43301852329&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
- },
- "https://www.awin1.com/pclick.php?p=43301852338&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 60.74
+  "price": 56.43
  },
  "https://www.awin1.com/pclick.php?p=43301852345&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9897,7 +10037,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301852411&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 56.43
  },
  "https://www.awin1.com/pclick.php?p=43301852425&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9909,7 +10049,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301852446&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 55.0
+  "price": 55.63
  },
  "https://www.awin1.com/pclick.php?p=43301853710&a=3013769&m=65906": {
   "currency": "EUR",
@@ -9989,7 +10129,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43301934144&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 60.96
  },
  "https://www.awin1.com/pclick.php?p=43301934153&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10003,11 +10143,11 @@
   "currency": "EUR",
   "price": 45.11
  },
- "https://www.awin1.com/pclick.php?p=43348644677&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=43347643511&a=3013769&m=77026": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 45.0
  },
- "https://www.awin1.com/pclick.php?p=43352014456&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=43348644677&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 70.0
  },
@@ -10035,10 +10175,6 @@
   "currency": "EUR",
   "price": 55.59
  },
- "https://www.awin1.com/pclick.php?p=43421871648&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 70.0
- },
  "https://www.awin1.com/pclick.php?p=43429697297&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 75.0
@@ -10065,11 +10201,11 @@
  },
  "https://www.awin1.com/pclick.php?p=43463591638&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 41.25
+  "price": 42.01
  },
  "https://www.awin1.com/pclick.php?p=43464508422&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 55.79
+  "price": 55.99
  },
  "https://www.awin1.com/pclick.php?p=43475544706&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10091,17 +10227,13 @@
   "currency": "EUR",
   "price": 67.65
  },
- "https://www.awin1.com/pclick.php?p=43528033509&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 55.0
- },
  "https://www.awin1.com/pclick.php?p=43574015741&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 52.59
+  "price": 64.55
  },
  "https://www.awin1.com/pclick.php?p=43574015747&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 76.5
+  "price": 72.0
  },
  "https://www.awin1.com/pclick.php?p=43639984462&a=3013769&m=77008": {
   "currency": "EUR",
@@ -10165,11 +10297,11 @@
  },
  "https://www.awin1.com/pclick.php?p=43654219309&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=43654219311&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=43658871548&a=3013769&m=77008": {
   "currency": "EUR",
@@ -10215,6 +10347,10 @@
   "currency": "EUR",
   "price": 110.0
  },
+ "https://www.awin1.com/pclick.php?p=43692239550&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 110.0
+ },
  "https://www.awin1.com/pclick.php?p=43692239802&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 110.0
@@ -10228,6 +10364,10 @@
   "price": 110.0
  },
  "https://www.awin1.com/pclick.php?p=43692250293&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 110.0
+ },
+ "https://www.awin1.com/pclick.php?p=43692250295&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 110.0
  },
@@ -10245,11 +10385,15 @@
  },
  "https://www.awin1.com/pclick.php?p=43698238101&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 76.94
+  "price": 77.99
  },
  "https://www.awin1.com/pclick.php?p=43724611069&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 77.0
+  "price": 76.0
+ },
+ "https://www.awin1.com/pclick.php?p=43724611537&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 93.0
  },
  "https://www.awin1.com/pclick.php?p=43724611538&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10265,11 +10409,11 @@
  },
  "https://www.awin1.com/pclick.php?p=43745913857&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 103.07
+  "price": 108.42
  },
  "https://www.awin1.com/pclick.php?p=43745917174&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 83.0
+  "price": 82.0
  },
  "https://www.awin1.com/pclick.php?p=43745917504&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10279,13 +10423,17 @@
   "currency": "EUR",
   "price": 29.99
  },
+ "https://www.awin1.com/pclick.php?p=43770970070&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 68.04
+ },
  "https://www.awin1.com/pclick.php?p=43770970412&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 52.99
  },
  "https://www.awin1.com/pclick.php?p=43770970693&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 96.79
+  "price": 95.46
  },
  "https://www.awin1.com/pclick.php?p=43770971023&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10297,7 +10445,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43770971975&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=43780402776&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10311,9 +10459,13 @@
   "currency": "EUR",
   "price": 50.89
  },
+ "https://www.awin1.com/pclick.php?p=43797080548&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 51.99
+ },
  "https://www.awin1.com/pclick.php?p=43797080750&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 86.39
+  "price": 85.99
  },
  "https://www.awin1.com/pclick.php?p=43829755150&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10321,7 +10473,7 @@
  },
  "https://www.awin1.com/pclick.php?p=43829770459&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 61.64
+  "price": 60.78
  },
  "https://www.awin1.com/pclick.php?p=43839302462&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10343,7 +10495,7 @@
   "currency": "EUR",
   "price": 80.0
  },
- "https://www.awin1.com/pclick.php?p=43933775744&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43933775342&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -10351,7 +10503,7 @@
   "currency": "EUR",
   "price": 62.81
  },
- "https://www.awin1.com/pclick.php?p=43939406214&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=43939406209&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -10359,19 +10511,27 @@
   "currency": "EUR",
   "price": 45.59
  },
+ "https://www.awin1.com/pclick.php?p=43945466816&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 55.75
+ },
  "https://www.awin1.com/pclick.php?p=43945466845&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 54.96
+ },
+ "https://www.awin1.com/pclick.php?p=43945466871&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 65.0
  },
  "https://www.awin1.com/pclick.php?p=43945475664&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 80.0
  },
- "https://www.awin1.com/pclick.php?p=43970167419&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43970165241&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43970167431&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43970165248&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -10399,17 +10559,17 @@
   "currency": "EUR",
   "price": 62.72
  },
+ "https://www.awin1.com/pclick.php?p=43972822467&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=43972822474&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=43972822507&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 70.0
- },
- "https://www.awin1.com/pclick.php?p=43972823042&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=43972823939&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=43981766308&a=3013769&m=77008": {
   "currency": "EUR",
@@ -10427,9 +10587,9 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=43981767524&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=43981767517&a=3013769&m=77026": {
   "currency": "EUR",
-  "price": 77.0
+  "price": 112.0
  },
  "https://www.awin1.com/pclick.php?p=43981767555&a=3013769&m=77008": {
   "currency": "EUR",
@@ -10443,7 +10603,7 @@
   "currency": "EUR",
   "price": 84.99
  },
- "https://www.awin1.com/pclick.php?p=43994230916&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=43994230914&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 80.0
  },
@@ -10485,7 +10645,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44112348997&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 26.31
+  "price": 25.89
  },
  "https://www.awin1.com/pclick.php?p=44126442829&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10513,11 +10673,11 @@
  },
  "https://www.awin1.com/pclick.php?p=44179081115&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
- "https://www.awin1.com/pclick.php?p=44179081129&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=44179081127&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 56.0
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44179081165&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10525,23 +10685,23 @@
  },
  "https://www.awin1.com/pclick.php?p=44179081169&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44179081237&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 74.0
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44179081263&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44179081265&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 56.0
  },
- "https://www.awin1.com/pclick.php?p=44179081267&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=44179081266&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44179081270&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10553,7 +10713,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44188994650&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 76.0
+  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=44190121044&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10573,7 +10733,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44216767453&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 79.0
+  "price": 78.0
  },
  "https://www.awin1.com/pclick.php?p=44219351041&a=3013769&m=23805": {
   "currency": "EUR",
@@ -10603,23 +10763,23 @@
   "currency": "EUR",
   "price": 79.99
  },
- "https://www.awin1.com/pclick.php?p=44265204207&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44264086712&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 56.43
  },
- "https://www.awin1.com/pclick.php?p=44265204499&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44264086724&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 65.0
  },
- "https://www.awin1.com/pclick.php?p=44265204653&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44265204752&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 75.0
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=44265204782&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44265205026&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44265205025&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -10627,17 +10787,9 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44265205390&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 70.0
- },
  "https://www.awin1.com/pclick.php?p=44265205466&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 75.0
- },
- "https://www.awin1.com/pclick.php?p=44265205646&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 80.0
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=44265206118&a=3013769&m=77008": {
   "currency": "EUR",
@@ -10649,13 +10801,13 @@
  },
  "https://www.awin1.com/pclick.php?p=44265206657&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 75.0
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=44265206984&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44265207137&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44265207034&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -10691,6 +10843,10 @@
   "currency": "EUR",
   "price": 110.0
  },
+ "https://www.awin1.com/pclick.php?p=44267893506&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 105.0
+ },
  "https://www.awin1.com/pclick.php?p=44267894553&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
@@ -10699,17 +10855,17 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44267895140&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=44267895005&a=3013769&m=77026": {
   "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44267895747&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 70.0
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=44267896754&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 80.0
+ },
+ "https://www.awin1.com/pclick.php?p=44267897166&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=44267897173&a=3013769&m=77026": {
   "currency": "EUR",
@@ -10743,7 +10899,11 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44267899840&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=44267899661&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=44267899803&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -10751,13 +10911,9 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44267900645&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=44267908037&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44267901591&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=44267908055&a=3013769&m=77008": {
   "currency": "EUR",
@@ -10775,13 +10931,9 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44267909229&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44267909368&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44267909265&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 70.0
  },
  "https://www.awin1.com/pclick.php?p=44269889810&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10797,7 +10949,11 @@
  },
  "https://www.awin1.com/pclick.php?p=44269890852&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 60.3
+ },
+ "https://www.awin1.com/pclick.php?p=44269890883&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 80.0
  },
  "https://www.awin1.com/pclick.php?p=44269890904&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10805,11 +10961,11 @@
  },
  "https://www.awin1.com/pclick.php?p=44269890951&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 42.0
+  "price": 42.55
  },
  "https://www.awin1.com/pclick.php?p=44269890955&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 53.62
+  "price": 62.87
  },
  "https://www.awin1.com/pclick.php?p=44269891003&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10839,17 +10995,17 @@
   "currency": "EUR",
   "price": 70.0
  },
- "https://www.awin1.com/pclick.php?p=44269897664&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 67.0
- },
  "https://www.awin1.com/pclick.php?p=44270365594&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 51.48
  },
  "https://www.awin1.com/pclick.php?p=44270365711&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 60.0
+  "price": 60.96
+ },
+ "https://www.awin1.com/pclick.php?p=44270365728&a=3013769&m=65906": {
+  "currency": "EUR",
+  "price": 80.0
  },
  "https://www.awin1.com/pclick.php?p=44270365743&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10857,11 +11013,11 @@
  },
  "https://www.awin1.com/pclick.php?p=44270365774&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 42.0
+  "price": 43.21
  },
  "https://www.awin1.com/pclick.php?p=44270365777&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 54.21
+  "price": 63.55
  },
  "https://www.awin1.com/pclick.php?p=44270365793&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10887,17 +11043,13 @@
   "currency": "EUR",
   "price": 53.0
  },
- "https://www.awin1.com/pclick.php?p=44284201499&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=44284201498&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 80.0
  },
  "https://www.awin1.com/pclick.php?p=44284203570&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 60.0
- },
- "https://www.awin1.com/pclick.php?p=44284782703&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 80.0
  },
  "https://www.awin1.com/pclick.php?p=44284782708&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10933,7 +11085,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44289285193&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 58.46
+  "price": 68.45
  },
  "https://www.awin1.com/pclick.php?p=44289285224&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10945,7 +11097,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44291084666&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 65.6
+  "price": 76.69
  },
  "https://www.awin1.com/pclick.php?p=44291086228&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10953,7 +11105,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44291088698&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 67.91
+  "price": 66.96
  },
  "https://www.awin1.com/pclick.php?p=44291088702&a=3013769&m=65912": {
   "currency": "EUR",
@@ -10961,7 +11113,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44291088716&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 74.0
+  "price": 73.0
  },
  "https://www.awin1.com/pclick.php?p=44291544215&a=3013769&m=65906": {
   "currency": "EUR",
@@ -10987,17 +11139,13 @@
   "currency": "EUR",
   "price": 40.77
  },
- "https://www.awin1.com/pclick.php?p=44301926234&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 87.99
- },
  "https://www.awin1.com/pclick.php?p=44301926247&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 76.99
  },
  "https://www.awin1.com/pclick.php?p=44301926276&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 74.19
+  "price": 79.81
  },
  "https://www.awin1.com/pclick.php?p=44301926283&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11019,7 +11167,7 @@
   "currency": "EUR",
   "price": 76.99
  },
- "https://www.awin1.com/pclick.php?p=44301926356&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=44301926357&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 109.99
  },
@@ -11121,7 +11269,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44454221562&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 29.06
+  "price": 28.6
  },
  "https://www.awin1.com/pclick.php?p=44472587565&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11201,7 +11349,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44544751194&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44547692689&a=3013769&m=65906": {
   "currency": "EUR",
@@ -11266,6 +11414,10 @@
  "https://www.awin1.com/pclick.php?p=44605595105&a=3013769&m=19598": {
   "currency": "EUR",
   "price": 29.99
+ },
+ "https://www.awin1.com/pclick.php?p=44612434857&a=3013769&m=19598": {
+  "currency": "EUR",
+  "price": 39.99
  },
  "https://www.awin1.com/pclick.php?p=44612434904&a=3013769&m=19598": {
   "currency": "EUR",
@@ -11359,6 +11511,10 @@
   "currency": "EUR",
   "price": 68.08
  },
+ "https://www.awin1.com/pclick.php?p=44686173165&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 87.99
+ },
  "https://www.awin1.com/pclick.php?p=44695073101&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 55.0
@@ -11366,10 +11522,6 @@
  "https://www.awin1.com/pclick.php?p=44701246027&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44701253942&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 80.0
  },
  "https://www.awin1.com/pclick.php?p=44713965463&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11391,11 +11543,31 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44728893131&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44728892553&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44729066355&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=44728893132&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=44728893167&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=44729061883&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=44729062016&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=44729064364&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 150.0
+ },
+ "https://www.awin1.com/pclick.php?p=44729066389&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -11431,10 +11603,6 @@
   "currency": "EUR",
   "price": 67.41
  },
- "https://www.awin1.com/pclick.php?p=44753892827&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 85.0
- },
  "https://www.awin1.com/pclick.php?p=44755567702&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 109.99
@@ -11443,6 +11611,10 @@
   "currency": "EUR",
   "price": 70.0
  },
+ "https://www.awin1.com/pclick.php?p=44769657257&a=3013769&m=65906": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=44781950701&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 80.0
@@ -11450,6 +11622,10 @@
  "https://www.awin1.com/pclick.php?p=44781950825&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=44781968748&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 55.0
  },
  "https://www.awin1.com/pclick.php?p=44783120456&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11466,10 +11642,6 @@
  "https://www.awin1.com/pclick.php?p=44784464198&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44790772698&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 70.0
  },
  "https://www.awin1.com/pclick.php?p=44790774888&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11593,7 +11765,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44852074998&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 56.0
+  "price": 66.0
  },
  "https://www.awin1.com/pclick.php?p=44852075390&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11619,6 +11791,18 @@
   "currency": "EUR",
   "price": 70.0
  },
+ "https://www.awin1.com/pclick.php?p=44861836323&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 70.0
+ },
+ "https://www.awin1.com/pclick.php?p=44861837858&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 70.0
+ },
+ "https://www.awin1.com/pclick.php?p=44861839025&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 70.0
+ },
  "https://www.awin1.com/pclick.php?p=44861876966&a=3013769&m=23805": {
   "currency": "EUR",
   "price": 127.99
@@ -11627,11 +11811,7 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=44872358513&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 70.0
- },
- "https://www.awin1.com/pclick.php?p=44872367143&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=44872367782&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -11679,14 +11859,6 @@
   "currency": "EUR",
   "price": 79.0
  },
- "https://www.awin1.com/pclick.php?p=44905084840&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44905085684&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
  "https://www.awin1.com/pclick.php?p=44905087066&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
@@ -11696,10 +11868,6 @@
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=44905094578&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=44905095277&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -11801,7 +11969,7 @@
  },
  "https://www.awin1.com/pclick.php?p=44936962996&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.01
+  "price": 68.04
  },
  "https://www.awin1.com/pclick.php?p=44972135371&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11819,10 +11987,6 @@
   "currency": "EUR",
   "price": 63.35
  },
- "https://www.awin1.com/pclick.php?p=44991512132&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
  "https://www.awin1.com/pclick.php?p=44991526975&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
@@ -11833,21 +11997,17 @@
  },
  "https://www.awin1.com/pclick.php?p=44992247869&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 68.95
+  "price": 75.64
  },
  "https://www.awin1.com/pclick.php?p=44992302562&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 87.84
+  "price": 87.99
  },
  "https://www.awin1.com/pclick.php?p=44992303936&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=44993372444&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=45011082425&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -11859,13 +12019,9 @@
   "currency": "EUR",
   "price": 71.99
  },
- "https://www.awin1.com/pclick.php?p=45015193324&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
- },
  "https://www.awin1.com/pclick.php?p=45018621212&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 100.56
+  "price": 99.18
  },
  "https://www.awin1.com/pclick.php?p=45018630243&a=3013769&m=65912": {
   "currency": "EUR",
@@ -11963,7 +12119,7 @@
   "currency": "EUR",
   "price": 36.87
  },
- "https://www.awin1.com/pclick.php?p=45131352846&a=3013769&m=65906": {
+ "https://www.awin1.com/pclick.php?p=45131352845&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 80.0
  },
@@ -12003,6 +12159,10 @@
   "currency": "EUR",
   "price": 53.06
  },
+ "https://www.awin1.com/pclick.php?p=45145418807&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 87.99
+ },
  "https://www.awin1.com/pclick.php?p=45152999527&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 62.81
@@ -12013,7 +12173,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45171893066&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 25.49
+  "price": 25.08
  },
  "https://www.awin1.com/pclick.php?p=45172564265&a=3013769&m=65906": {
   "currency": "EUR",
@@ -12021,7 +12181,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45176759978&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 127.99
+  "price": 87.99
  },
  "https://www.awin1.com/pclick.php?p=45176794898&a=3013769&m=77026": {
   "currency": "EUR",
@@ -12047,6 +12207,10 @@
   "currency": "EUR",
   "price": 80.0
  },
+ "https://www.awin1.com/pclick.php?p=45183901936&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 150.0
+ },
  "https://www.awin1.com/pclick.php?p=45183906924&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
@@ -12056,6 +12220,14 @@
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45183908883&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 55.0
+ },
+ "https://www.awin1.com/pclick.php?p=45183911113&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 150.0
+ },
+ "https://www.awin1.com/pclick.php?p=45183911316&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 55.0
  },
@@ -12077,7 +12249,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45184773453&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 70.0
+  "price": 66.0
  },
  "https://www.awin1.com/pclick.php?p=45193006260&a=3013769&m=77008": {
   "currency": "EUR",
@@ -12097,7 +12269,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45195661888&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 54.95
+  "price": 54.17
  },
  "https://www.awin1.com/pclick.php?p=45195661891&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12105,7 +12277,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45195661916&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 54.95
+  "price": 54.17
  },
  "https://www.awin1.com/pclick.php?p=45195669497&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12139,14 +12311,6 @@
   "currency": "EUR",
   "price": 105.0
  },
- "https://www.awin1.com/pclick.php?p=45204110010&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=45204110412&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 50.0
- },
  "https://www.awin1.com/pclick.php?p=45204834545&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 45.45
@@ -12179,9 +12343,17 @@
   "currency": "EUR",
   "price": 68.72
  },
+ "https://www.awin1.com/pclick.php?p=45232940334&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 57.5
+ },
+ "https://www.awin1.com/pclick.php?p=45232942208&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 115.0
+ },
  "https://www.awin1.com/pclick.php?p=45234294648&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 69.99
+  "price": 55.99
  },
  "https://www.awin1.com/pclick.php?p=45234295276&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12201,7 +12373,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45246772834&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 33.0
+  "price": 34.37
  },
  "https://www.awin1.com/pclick.php?p=45254168875&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12235,6 +12407,10 @@
   "currency": "EUR",
   "price": 100.0
  },
+ "https://www.awin1.com/pclick.php?p=45256779719&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 115.0
+ },
  "https://www.awin1.com/pclick.php?p=45256780555&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
@@ -12253,19 +12429,11 @@
  },
  "https://www.awin1.com/pclick.php?p=45270282090&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 123.5
+  "price": 121.83
  },
- "https://www.awin1.com/pclick.php?p=45271933707&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=45280101907&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 38.5
- },
- "https://www.awin1.com/pclick.php?p=45277988930&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 110.0
- },
- "https://www.awin1.com/pclick.php?p=45280101620&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
+  "price": 150.0
  },
  "https://www.awin1.com/pclick.php?p=45280103722&a=3013769&m=77026": {
   "currency": "EUR",
@@ -12275,13 +12443,9 @@
   "currency": "EUR",
   "price": 57.34
  },
- "https://www.awin1.com/pclick.php?p=45304055910&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=45287095582&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=45304062367&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
+  "price": 55.75
  },
  "https://www.awin1.com/pclick.php?p=45304863408&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12295,6 +12459,10 @@
   "currency": "EUR",
   "price": 55.0
  },
+ "https://www.awin1.com/pclick.php?p=45332312565&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 72.79
+ },
  "https://www.awin1.com/pclick.php?p=45332312566&a=3013769&m=23805": {
   "currency": "EUR",
   "price": 71.19
@@ -12303,9 +12471,13 @@
   "currency": "EUR",
   "price": 56.99
  },
- "https://www.awin1.com/pclick.php?p=45347614191&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=45347614177&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45347617428&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 75.0
  },
  "https://www.awin1.com/pclick.php?p=45348245930&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12315,9 +12487,9 @@
   "currency": "EUR",
   "price": 87.99
  },
- "https://www.awin1.com/pclick.php?p=45355988299&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=45355989435&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 85.0
  },
  "https://www.awin1.com/pclick.php?p=45355992874&a=3013769&m=77026": {
   "currency": "EUR",
@@ -12411,6 +12583,10 @@
   "currency": "EUR",
   "price": 69.0
  },
+ "https://www.awin1.com/pclick.php?p=45361870649&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 56.0
+ },
  "https://www.awin1.com/pclick.php?p=45361871633&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 55.0
@@ -12439,7 +12615,11 @@
   "currency": "EUR",
   "price": 55.99
  },
- "https://www.awin1.com/pclick.php?p=45367090845&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=45365871427&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 55.99
+ },
+ "https://www.awin1.com/pclick.php?p=45367090843&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -12447,11 +12627,15 @@
   "currency": "EUR",
   "price": 100.0
  },
+ "https://www.awin1.com/pclick.php?p=45367100599&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=45367100844&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=45367101490&a=3013769&m=77026": {
+ "https://www.awin1.com/pclick.php?p=45367103103&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -12483,11 +12667,19 @@
   "currency": "EUR",
   "price": 73.38
  },
+ "https://www.awin1.com/pclick.php?p=45374462836&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=45374464108&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45374464447&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45374465637&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -12507,29 +12699,25 @@
   "currency": "EUR",
   "price": 81.75
  },
+ "https://www.awin1.com/pclick.php?p=45376303154&a=3013769&m=65906": {
+  "currency": "EUR",
+  "price": 80.0
+ },
+ "https://www.awin1.com/pclick.php?p=45380186390&a=3013769&m=65906": {
+  "currency": "EUR",
+  "price": 40.41
+ },
  "https://www.awin1.com/pclick.php?p=45380186966&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 60.24
  },
- "https://www.awin1.com/pclick.php?p=45380187810&a=3013769&m=65906": {
+ "https://www.awin1.com/pclick.php?p=45381239494&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 52.0
- },
- "https://www.awin1.com/pclick.php?p=45380187898&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 80.0
+  "price": 39.78
  },
  "https://www.awin1.com/pclick.php?p=45381239869&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 55.0
- },
- "https://www.awin1.com/pclick.php?p=45381240341&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 52.0
- },
- "https://www.awin1.com/pclick.php?p=45381240449&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 80.0
  },
  "https://www.awin1.com/pclick.php?p=45381240753&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12567,6 +12755,10 @@
   "currency": "EUR",
   "price": 100.0
  },
+ "https://www.awin1.com/pclick.php?p=45391889796&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=45395056806&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
@@ -12581,7 +12773,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45395572532&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 68.74
+  "price": 67.77
  },
  "https://www.awin1.com/pclick.php?p=45395573958&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12597,7 +12789,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45395579449&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 56.56
+  "price": 55.75
  },
  "https://www.awin1.com/pclick.php?p=45395583789&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12635,10 +12827,6 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=45397545470&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 50.0
- },
  "https://www.awin1.com/pclick.php?p=45398892210&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 54.96
@@ -12655,6 +12843,10 @@
   "currency": "EUR",
   "price": 55.63
  },
+ "https://www.awin1.com/pclick.php?p=45405789837&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
  "https://www.awin1.com/pclick.php?p=45416974015&a=3013769&m=104981": {
   "currency": "EUR",
   "price": 99.99
@@ -12668,6 +12860,10 @@
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45422312669&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45426309701&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -12699,10 +12895,6 @@
   "currency": "EUR",
   "price": 49.0
  },
- "https://www.awin1.com/pclick.php?p=45443802372&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 109.99
- },
  "https://www.awin1.com/pclick.php?p=45443804104&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 84.99
@@ -12715,15 +12907,15 @@
   "currency": "EUR",
   "price": 100.0
  },
+ "https://www.awin1.com/pclick.php?p=45456957950&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 115.0
+ },
  "https://www.awin1.com/pclick.php?p=45456957955&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45456957979&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=45456958028&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -12750,10 +12942,6 @@
  "https://www.awin1.com/pclick.php?p=45461763748&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 75.0
- },
- "https://www.awin1.com/pclick.php?p=45466035719&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45469968237&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12799,10 +12987,6 @@
   "currency": "EUR",
   "price": 67.85
  },
- "https://www.awin1.com/pclick.php?p=45470174037&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 55.0
- },
  "https://www.awin1.com/pclick.php?p=45470174038&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 70.0
@@ -12833,13 +13017,13 @@
  },
  "https://www.awin1.com/pclick.php?p=45494292584&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 37.99
+  "price": 42.74
  },
  "https://www.awin1.com/pclick.php?p=45494296792&a=3013769&m=23805": {
   "currency": "EUR",
   "price": 68.99
  },
- "https://www.awin1.com/pclick.php?p=45496420984&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=45496420983&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 100.0
  },
@@ -12847,13 +13031,17 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=45497439150&a=3013769&m=65906": {
+ "https://www.awin1.com/pclick.php?p=45497439149&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45505724622&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45505740925&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 87.99
  },
  "https://www.awin1.com/pclick.php?p=45512899523&a=3013769&m=104981": {
   "currency": "EUR",
@@ -12913,11 +13101,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45533544221&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 25.49
- },
- "https://www.awin1.com/pclick.php?p=45535353375&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 110.0
+  "price": 25.08
  },
  "https://www.awin1.com/pclick.php?p=45543974302&a=3013769&m=77026": {
   "currency": "EUR",
@@ -12929,7 +13113,7 @@
  },
  "https://www.awin1.com/pclick.php?p=45544665629&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 44.1
+  "price": 44.0
  },
  "https://www.awin1.com/pclick.php?p=45562783511&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12943,10 +13127,6 @@
   "currency": "EUR",
   "price": 75.0
  },
- "https://www.awin1.com/pclick.php?p=45562787653&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 87.99
- },
  "https://www.awin1.com/pclick.php?p=45563061740&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 100.0
@@ -12955,9 +13135,9 @@
   "currency": "EUR",
   "price": 80.0
  },
- "https://www.awin1.com/pclick.php?p=45577429618&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=45577429624&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 110.0
  },
  "https://www.awin1.com/pclick.php?p=45577429714&a=3013769&m=65912": {
   "currency": "EUR",
@@ -12967,9 +13147,9 @@
   "currency": "EUR",
   "price": 103.0
  },
- "https://www.awin1.com/pclick.php?p=45577502371&a=3013769&m=65906": {
+ "https://www.awin1.com/pclick.php?p=45577502377&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 100.0
+  "price": 110.0
  },
  "https://www.awin1.com/pclick.php?p=45577502759&a=3013769&m=65906": {
   "currency": "EUR",
@@ -12987,18 +13167,6 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=45585787572&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=45585787771&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 150.0
- },
- "https://www.awin1.com/pclick.php?p=45585792984&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 70.0
- },
  "https://www.awin1.com/pclick.php?p=45587829770&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 80.0
@@ -13010,6 +13178,10 @@
  "https://www.awin1.com/pclick.php?p=45591184099&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 70.0
+ },
+ "https://www.awin1.com/pclick.php?p=45591184947&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45591187706&a=3013769&m=77008": {
   "currency": "EUR",
@@ -13055,6 +13227,10 @@
   "currency": "EUR",
   "price": 70.0
  },
+ "https://www.awin1.com/pclick.php?p=45591199312&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 70.0
+ },
  "https://www.awin1.com/pclick.php?p=45591228730&a=3013769&m=23805": {
   "currency": "EUR",
   "price": 94.99
@@ -13062,6 +13238,10 @@
  "https://www.awin1.com/pclick.php?p=45595711286&a=3013769&m=23805": {
   "currency": "EUR",
   "price": 45.0
+ },
+ "https://www.awin1.com/pclick.php?p=45601847066&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45601856879&a=3013769&m=77008": {
   "currency": "EUR",
@@ -13083,6 +13263,10 @@
   "currency": "EUR",
   "price": 100.0
  },
+ "https://www.awin1.com/pclick.php?p=45624329206&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 110.0
+ },
  "https://www.awin1.com/pclick.php?p=45624332285&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 55.0
@@ -13095,17 +13279,13 @@
   "currency": "EUR",
   "price": 80.0
  },
- "https://www.awin1.com/pclick.php?p=45629111312&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 55.0
- },
  "https://www.awin1.com/pclick.php?p=45635278256&a=3013769&m=104981": {
   "currency": "EUR",
   "price": 54.99
  },
  "https://www.awin1.com/pclick.php?p=45643316132&a=3013769&m=23805": {
   "currency": "EUR",
-  "price": 81.22
+  "price": 80.74
  },
  "https://www.awin1.com/pclick.php?p=45656102819&a=3013769&m=23805": {
   "currency": "EUR",
@@ -13163,14 +13343,6 @@
   "currency": "EUR",
   "price": 55.0
  },
- "https://www.awin1.com/pclick.php?p=45692079831&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 100.0
- },
- "https://www.awin1.com/pclick.php?p=45692095852&a=3013769&m=77026": {
-  "currency": "EUR",
-  "price": 52.5
- },
  "https://www.awin1.com/pclick.php?p=45692102428&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 150.0
@@ -13194,10 +13366,6 @@
  "https://www.awin1.com/pclick.php?p=45692131953&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 70.0
- },
- "https://www.awin1.com/pclick.php?p=45692160027&a=3013769&m=77008": {
-  "currency": "EUR",
-  "price": 115.0
  },
  "https://www.awin1.com/pclick.php?p=45692358355&a=3013769&m=23805": {
   "currency": "EUR",
@@ -13243,7 +13411,11 @@
   "currency": "EUR",
   "price": 34.99
  },
- "https://www.awin1.com/pclick.php?p=45721111544&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=45721112004&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 55.0
+ },
+ "https://www.awin1.com/pclick.php?p=45721114734&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 75.0
  },
@@ -13267,10 +13439,6 @@
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=45725055843&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 100.0
- },
  "https://www.awin1.com/pclick.php?p=45734618794&a=3013769&m=77026": {
   "currency": "EUR",
   "price": 100.0
@@ -13283,17 +13451,13 @@
   "currency": "EUR",
   "price": 109.99
  },
- "https://www.awin1.com/pclick.php?p=45764481032&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 55.99
- },
  "https://www.awin1.com/pclick.php?p=45767032290&a=3013769&m=77008": {
   "currency": "EUR",
   "price": 100.0
  },
- "https://www.awin1.com/pclick.php?p=45767033054&a=3013769&m=77008": {
+ "https://www.awin1.com/pclick.php?p=45767033111&a=3013769&m=77008": {
   "currency": "EUR",
-  "price": 150.0
+  "price": 100.0
  },
  "https://www.awin1.com/pclick.php?p=45767035618&a=3013769&m=77026": {
   "currency": "EUR",
@@ -13319,6 +13483,10 @@
   "currency": "EUR",
   "price": 79.99
  },
+ "https://www.awin1.com/pclick.php?p=45783111082&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 70.0
+ },
  "https://www.awin1.com/pclick.php?p=45783111295&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 87.99
@@ -13343,11 +13511,7 @@
   "currency": "EUR",
   "price": 75.0
  },
- "https://www.awin1.com/pclick.php?p=45795618953&a=3013769&m=65912": {
-  "currency": "EUR",
-  "price": 65.0
- },
- "https://www.awin1.com/pclick.php?p=45795619360&a=3013769&m=65912": {
+ "https://www.awin1.com/pclick.php?p=45795619361&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 75.0
  },
@@ -13369,15 +13533,11 @@
  },
  "https://www.awin1.com/pclick.php?p=45795632673&a=3013769&m=65912": {
   "currency": "EUR",
-  "price": 59.08
+  "price": 69.95
  },
  "https://www.awin1.com/pclick.php?p=45795632677&a=3013769&m=65912": {
   "currency": "EUR",
   "price": 69.95
- },
- "https://www.awin1.com/pclick.php?p=45800185117&a=3013769&m=65906": {
-  "currency": "EUR",
-  "price": 65.0
  },
  "https://www.awin1.com/pclick.php?p=45800189014&a=3013769&m=65906": {
   "currency": "EUR",
@@ -13401,11 +13561,63 @@
  },
  "https://www.awin1.com/pclick.php?p=45800190307&a=3013769&m=65906": {
   "currency": "EUR",
-  "price": 60.71
+  "price": 69.95
  },
  "https://www.awin1.com/pclick.php?p=45800190311&a=3013769&m=65906": {
   "currency": "EUR",
   "price": 69.95
+ },
+ "https://www.awin1.com/pclick.php?p=45803587337&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 150.0
+ },
+ "https://www.awin1.com/pclick.php?p=45803612827&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 87.99
+ },
+ "https://www.awin1.com/pclick.php?p=45805763077&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 85.0
+ },
+ "https://www.awin1.com/pclick.php?p=45813852038&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45818672376&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45819219933&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 109.99
+ },
+ "https://www.awin1.com/pclick.php?p=45819219945&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 56.54
+ },
+ "https://www.awin1.com/pclick.php?p=45819220519&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45819223602&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 87.99
+ },
+ "https://www.awin1.com/pclick.php?p=45843269151&a=3013769&m=23805": {
+  "currency": "EUR",
+  "price": 69.99
+ },
+ "https://www.awin1.com/pclick.php?p=45854542848&a=3013769&m=77008": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45859462756&a=3013769&m=77026": {
+  "currency": "EUR",
+  "price": 100.0
+ },
+ "https://www.awin1.com/pclick.php?p=45860434600&a=3013769&m=65912": {
+  "currency": "EUR",
+  "price": 87.99
  },
  "https://www.ebay.com/itm/115132057152?_skw=Poland+home+soccer+jersey+kids+youth&hash=item1ace67c640%3Ag%3AH0wAAOSw5PNhr%7E7R&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbiM4LgXpNy52PFJp39jk11zG4WrpxTf5konLcE0dCk2W4SNEjmwjhRtsfRx97cYfJPCxINdcAyp%2BSIEfUef205zL3TDD0NXqSqBDzbuyo%2FFpz7qRVQ%2B%2B%2Bzlbr5AerqoSGhbYdOJpWW42h1uqupNSFT0eTa7fDH0kWE3yz4JWYzSRwd9c32HxbTQPT8laUUmlXphP8%2Fltq1Qfa1dp6Dg2JdwSiX4I9OOwAt1TOeD0%2BOnqqZtxKFmZla%2BCVdgQLdh%2Fzm6VPMEo4XjKEhs9kWj2pQ65Q9KXW67IluWaPeWjkTEDFX%2FYK2wWOARstfl%2F9cobI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049": {
   "currency": "USD",
