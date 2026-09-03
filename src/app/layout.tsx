@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { SessionProvider } from "next-auth/react";
 import { Inter, Alfa_Slab_One, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
@@ -122,6 +123,27 @@ export default function RootLayout({
           type="text/javascript"
           src="https://s.skimresources.com/js/307104X1795379.skimlinks.js"
         />
+        {/* Google Analytics -- Measurement ID de la propiedad GA4 creada
+            2026-09-03 (analytics.google.com), seteado en Vercel como
+            NEXT_PUBLIC_GA_MEASUREMENT_ID (mismo patrón que
+            GOOGLE_SITE_VERIFICATION arriba: sin la env var, no se
+            imprime nada). */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
