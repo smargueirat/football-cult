@@ -118,6 +118,15 @@ export function buildShoppingFeedXml(
       const ageGroup = getAgeGroup(product);
       const colorName = COLOR_NAME_ES[productColorKey(product)];
       const imageUrl = upsizeIfResizable(offer.imageUrl);
+      // Merchant Center flaggeó "falta la talla" en el 100% del catálogo --
+      // el feed nunca mandaba <g:size>. Google no exige un item por talla:
+      // acepta un solo valor consolidado con "/" en vez de coma (spec
+      // oficial), así que se manda el array real de talles de ESTA oferta
+      // puntual (ya viene del feed/eBay real, no se inventa nada acá).
+      const sizeTag =
+        offer.sizes.length > 0
+          ? `<g:size>${escapeXml(offer.sizes.join("/"))}</g:size>\n    `
+          : "";
 
       return `  <item>
     <g:id>${escapeXml(product.id)}</g:id>
@@ -128,7 +137,7 @@ export function buildShoppingFeedXml(
     <g:availability>in stock</g:availability>
     <g:price>${offer.price.toFixed(2)} ${offer.currency}</g:price>
     <g:condition>new</g:condition>
-    ${product.brand ? `<g:brand>${escapeXml(product.brand)}</g:brand>` : ""}
+    ${sizeTag}${product.brand ? `<g:brand>${escapeXml(product.brand)}</g:brand>` : ""}
     <g:identifier_exists>no</g:identifier_exists>
     <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
     <g:color>${escapeXml(colorName)}</g:color>
