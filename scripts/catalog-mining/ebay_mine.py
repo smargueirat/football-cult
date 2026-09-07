@@ -46,6 +46,13 @@ MIN_JERSEY_PRICE = 15.0
 MAX_JERSEY_PRICE = 500.0
 ACCESSORY_RE = re.compile(r"\bpatch(es)?\b|\bdecal\b|iron.?on|\bsticker\b|\bbadge\b", re.I)
 CONDITION_OK = {"NEW", "NEW_WITH_TAGS", "NEW_WITHOUT_TAGS"}
+
+# eBay's Browse API returns the "s-l225" (225x225) thumbnail by default --
+# below Merchant Center's 500x500 minimum, and confirmed via curl that
+# swapping in "s-l1600" returns the real full-size photo eBay already
+# hosts at that URL (not fabricated/upscaled, just a bigger genuine crop).
+def upsize_ebay_image(url):
+    return url.replace("s-l225", "s-l1600") if url else url
 SIZE_MAP = {
     "XS": "XS", "S": "S", "SMALL": "S", "M": "M", "MEDIUM": "M", "L": "L", "LARGE": "L",
     "XL": "XL", "X-LARGE": "XL", "XLARGE": "XL",
@@ -236,7 +243,7 @@ def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
             "price": amount,
             "currency": price.get("currency", "USD"),
             "link": link,
-            "image": (item.get("image") or {}).get("imageUrl"),
+            "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
             "item_id": item.get("itemId"),
         })
     if not candidates:

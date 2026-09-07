@@ -36,7 +36,7 @@ from extract import (
     is_old_season,
 )
 from retro_extract import parse_retro_season, RETRO_EXCLUDE_RE
-from ebay_mine import EbayClient, get_team_en_names, ACCESSORY_RE, MIN_JERSEY_PRICE, MAX_JERSEY_PRICE
+from ebay_mine import EbayClient, get_team_en_names, ACCESSORY_RE, MIN_JERSEY_PRICE, MAX_JERSEY_PRICE, upsize_ebay_image
 from manual_exclusions import is_manually_excluded
 from split_picks import detect_season, season_end_year
 
@@ -137,7 +137,7 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
                 "title": title, "price": amount,
                 "currency": price.get("currency", "USD"),
                 "link": link,
-                "image": (item.get("image") or {}).get("imageUrl"),
+                "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
                 "item_id": item.get("itemId"),
             })
         if not candidates:
@@ -195,7 +195,7 @@ def mine_kids(client, team_key, team_en, teams_re, types_re):
                 "title": title, "price": amount,
                 "currency": price.get("currency", "USD"),
                 "link": link,
-                "image": (item.get("image") or {}).get("imageUrl"),
+                "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
                 "item_id": item.get("itemId"),
             })
         if not candidates:
@@ -259,7 +259,7 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
                 "title": title, "price": amount,
                 "currency": price.get("currency", "USD"),
                 "link": link,
-                "image": (item.get("image") or {}).get("imageUrl"),
+                "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
                 "item_id": item.get("itemId"),
             }
             if season not in by_season or amount < by_season[season]["price"]:
