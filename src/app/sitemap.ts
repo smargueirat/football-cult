@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/autenticidad",
     "/brasil",
     "/argentina",
+    "/francia",
+    "/italia",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: new Date(),

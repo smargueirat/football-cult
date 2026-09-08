@@ -174,6 +174,8 @@ export interface Translations {
     authenticity: string;
     brazil: string;
     argentina: string;
+    france: string;
+    italy: string;
     disclaimer: string;
   };
   about: {
@@ -218,6 +220,28 @@ export interface Translations {
     note: string;
   };
   argentina: {
+    title: string;
+    intro: string;
+    comparisonTitle: string;
+    comparisonText: string;
+    retroTitle: string;
+    retroText: string;
+    heritageTitle: string;
+    heritageText: string;
+    note: string;
+  };
+  france: {
+    title: string;
+    intro: string;
+    comparisonTitle: string;
+    comparisonText: string;
+    retroTitle: string;
+    retroText: string;
+    heritageTitle: string;
+    heritageText: string;
+    note: string;
+  };
+  italy: {
     title: string;
     intro: string;
     comparisonTitle: string;
@@ -534,6 +558,8 @@ export const translations: Record<Locale, Translations> = {
       authenticity: "Autenticidad",
       brazil: "Fútbol brasileño",
       argentina: "Fútbol argentino",
+      france: "Fútbol francés",
+      italy: "Fútbol italiano",
       disclaimer:
         "Football Cult es un comparador de precios. No vendemos productos directamente: te redirigimos a tiendas de terceros para completar tu compra. Algunos enlaces son enlaces de afiliado, lo que significa que podemos recibir una comisión sin costo adicional para vos.",
     },
@@ -588,6 +614,28 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Camisetas con historia",
       heritageText: "La camiseta titular de Qatar 2022 en el catálogo lleva la etiqueta 'La Crónica de la Prenda', citando el partido real en el que se usó — la final del 18 de diciembre de 2022 ante Francia, resuelta por penales.",
       note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí. Además de las tiendas europeas que comparamos para la Selección, la tienda oficial argentina de Puma (ar.puma.com) también está integrada al catálogo para camisetas de Independiente, el club que viste su marca.",
+    },
+    france: {
+      title: "Fútbol francés",
+      intro: "En Football Cult comparamos precios de camisetas de la Selección Francesa, con 35 productos en el catálogo, desde el archivo retro hasta la titular actual.",
+      comparisonTitle: "Dónde de verdad hay comparación de precio",
+      comparisonText: "La titular 2026 es la más comparada del catálogo francés: la misma camiseta aparece en 10 tiendas distintas, y la visitante en 6. El catálogo también cubre arquero, entrenamiento, prepartido y talles de niños.",
+      retroTitle: "Archivo retro hasta 1950",
+      retroText: "Sumamos camisetas retro de Francia desde 1950 hasta hoy, con piezas de sus dos títulos mundiales.",
+      heritageTitle: "Camisetas con historia",
+      heritageText: "El catálogo tiene dos camisetas con la etiqueta 'La Crónica de la Prenda' de los dos Mundiales que ganó Francia: la de 1998 (3-0 a Brasil, doblete de Zidane) y la de 2018 (4-2 a Croacia, con Mbappé como el segundo adolescente en marcar en una final, después de Pelé).",
+      note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí.",
+    },
+    italy: {
+      title: "Fútbol italiano",
+      intro: "En Football Cult comparamos precios de camisetas de la Selección Italiana, con 51 productos en el catálogo, desde el archivo retro hasta la titular actual.",
+      comparisonTitle: "Dónde de verdad hay comparación de precio",
+      comparisonText: "La titular y la visitante 2026 son las más comparadas del catálogo italiano: cada una aparece en 9 tiendas distintas. El catálogo también cubre arquero, entrenamiento, varias versiones de prepartido y talles de niños.",
+      retroTitle: "Archivo retro hasta 1970",
+      retroText: "Sumamos camisetas retro de Italia desde 1970 hasta hoy, incluyendo piezas de sus finales mundialistas de 1994 y 2006.",
+      heritageTitle: "Camisetas con historia",
+      heritageText: "El catálogo tiene dos camisetas con la etiqueta 'La Crónica de la Prenda' de dos finales mundialistas de Italia: la de 1994 (0-0 ante Brasil, recordada por el penal errado de Roberto Baggio) y la de 2006 (1-1 ante Francia, resuelta en penales tras la expulsión de Zidane por el cabezazo a Materazzi).",
+      note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí.",
     },
     priceDrop: {
       eyebrow: "Ofertas del día",
@@ -900,6 +948,8 @@ export const translations: Record<Locale, Translations> = {
       authenticity: "Autenticidade",
       brazil: "Futebol brasileiro",
       argentina: "Futebol argentino",
+      france: "Futebol francês",
+      italy: "Futebol italiano",
       disclaimer:
         "Football Cult é um comparador de preços. Não vendemos produtos diretamente: te redirecionamos para lojas terceiras para concluir sua compra. Alguns links são links de afiliado, o que significa que podemos receber uma comissão sem custo adicional para você.",
     },
@@ -954,6 +1004,28 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Camisas com história",
       heritageText: "A camisa titular do Catar 2022 no catálogo traz o selo 'A Crônica da Camisa', citando a partida real em que foi usada — a final de 18 de dezembro de 2022 contra a França, decidida nos pênaltis.",
       note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá. Além das lojas europeias que comparamos para a seleção, a loja oficial argentina da Puma (ar.puma.com) também está integrada ao catálogo para camisas do Independiente, o clube que veste a marca.",
+    },
+    france: {
+      title: "Futebol francês",
+      intro: "Na Football Cult comparamos preços de camisas da seleção francesa, com 35 produtos no catálogo, do arquivo retrô até a titular atual.",
+      comparisonTitle: "Onde a comparação de preço é real",
+      comparisonText: "A camisa titular 2026 é a mais comparada do catálogo francês: a mesma camisa aparece em 10 lojas diferentes, e a visitante em 6. O catálogo também cobre goleiro, treino, pré-jogo e tamanhos infantis.",
+      retroTitle: "Arquivo retrô até 1950",
+      retroText: "Adicionamos camisas retrô da França desde 1950 até hoje, incluindo peças dos dois títulos mundiais.",
+      heritageTitle: "Camisas com história",
+      heritageText: "O catálogo traz duas camisas com o selo 'A Crônica da Camisa' dos dois títulos mundiais da França: a de 1998 (3 a 0 sobre o Brasil, com dois gols de Zidane) e a de 2018 (4 a 2 sobre a Croácia, com Mbappé se tornando o segundo adolescente a marcar em uma final, depois de Pelé).",
+      note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá.",
+    },
+    italy: {
+      title: "Futebol italiano",
+      intro: "Na Football Cult comparamos preços de camisas da seleção italiana, com 51 produtos no catálogo, do arquivo retrô até a titular atual.",
+      comparisonTitle: "Onde a comparação de preço é real",
+      comparisonText: "As camisas titular e visitante 2026 são as mais comparadas do catálogo italiano: cada uma aparece em 9 lojas diferentes. O catálogo também cobre goleiro, treino, várias versões de pré-jogo e tamanhos infantis.",
+      retroTitle: "Arquivo retrô até 1970",
+      retroText: "Adicionamos camisas retrô da Itália desde 1970 até hoje, incluindo peças de suas finais mundiais de 1994 e 2006.",
+      heritageTitle: "Camisas com história",
+      heritageText: "O catálogo traz duas camisas com o selo 'A Crônica da Camisa' de duas finais mundiais da Itália: a de 1994 (0 a 0 contra o Brasil, lembrada pelo pênalti perdido de Roberto Baggio) e a de 2006 (1 a 1 contra a França, decidida nos pênaltis após a expulsão de Zidane pela cabeçada em Materazzi).",
+      note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá.",
     },
     priceDrop: {
       eyebrow: "Ofertas do dia",
@@ -1266,6 +1338,8 @@ export const translations: Record<Locale, Translations> = {
       authenticity: "Authenticity",
       brazil: "Brazilian Football",
       argentina: "Argentine Football",
+      france: "French Football",
+      italy: "Italian Football",
       disclaimer:
         "Football Cult is a price comparison site. We don't sell products directly: we redirect you to third-party stores to complete your purchase. Some links are affiliate links, meaning we may earn a commission at no extra cost to you.",
     },
@@ -1320,6 +1394,28 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Jerseys with history",
       heritageText: "The Qatar 2022 home jersey in the catalog carries the \"Shirt's Chronicle\" label, citing the actual match it was worn in — the final on 18 December 2022 against France, decided on penalties.",
       note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there. Beyond the European stores we compare for the national team, Puma's official Argentine store (ar.puma.com) is also integrated into the catalog for Independiente, the club whose kits Puma makes.",
+    },
+    france: {
+      title: "French Football",
+      intro: "At Football Cult we compare jersey prices for the French national team, with 35 products in the catalog, from the retro archive to the current home kit.",
+      comparisonTitle: "Where price comparison is real",
+      comparisonText: "The 2026 home jersey is the most-compared item in the French catalog: the same jersey appears across 10 different stores, and the away kit across 6. The catalog also covers goalkeeper, training, pre-match, and kids' jerseys.",
+      retroTitle: "A retro archive back to 1950",
+      retroText: "We've added retro France jerseys from 1950 to today, including pieces from both of their World Cup wins.",
+      heritageTitle: "Jerseys with history",
+      heritageText: "The catalog carries two jerseys with the \"Shirt's Chronicle\" label from France's two World Cup wins: the 1998 shirt (a 3-0 win over Brazil, with a Zidane brace) and the 2018 shirt (a 4-2 win over Croatia, with Mbappé becoming only the second teenager, after Pelé, to score in a final).",
+      note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there.",
+    },
+    italy: {
+      title: "Italian Football",
+      intro: "At Football Cult we compare jersey prices for the Italian national team, with 51 products in the catalog, from the retro archive to the current home kit.",
+      comparisonTitle: "Where price comparison is real",
+      comparisonText: "The 2026 home and away jerseys are the most-compared items in the Italian catalog: each one appears across 9 different stores. The catalog also covers goalkeeper, training, several pre-match versions, and kids' jerseys.",
+      retroTitle: "A retro archive back to 1970",
+      retroText: "We've added retro Italy jerseys from 1970 to today, including pieces from their 1994 and 2006 World Cup finals.",
+      heritageTitle: "Jerseys with history",
+      heritageText: "The catalog carries two jerseys with the \"Shirt's Chronicle\" label from two Italy World Cup finals: the 1994 shirt (a 0-0 draw with Brazil, remembered for Roberto Baggio's missed penalty) and the 2006 shirt (a 1-1 draw with France, decided on penalties after Zidane was sent off for headbutting Materazzi).",
+      note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there.",
     },
     priceDrop: {
       eyebrow: "Today's deals",
@@ -1632,6 +1728,8 @@ export const translations: Record<Locale, Translations> = {
       authenticity: "Authenticité",
       brazil: "Football brésilien",
       argentina: "Football argentin",
+      france: "Football français",
+      italy: "Football italien",
       disclaimer:
         "Football Cult est un site de comparaison de prix. Nous ne vendons pas de produits directement : nous vous redirigeons vers des boutiques tierces pour finaliser votre achat. Certains liens sont des liens d'affiliation, ce qui signifie que nous pouvons percevoir une commission sans coût supplémentaire pour vous.",
     },
@@ -1686,6 +1784,28 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Des maillots chargés d'histoire",
       heritageText: "Le maillot domicile du Qatar 2022 du catalogue porte le label « La Chronique du Maillot », avec le contexte réel du match dans lequel il a été porté — la finale du 18 décembre 2022 face à la France, décidée aux tirs au but.",
       note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas. Au-delà des boutiques européennes que nous comparons pour la sélection, la boutique officielle argentine de Puma (ar.puma.com) est aussi intégrée au catalogue pour les maillots de l'Independiente, le club dont Puma équipe les joueurs.",
+    },
+    france: {
+      title: "Football français",
+      intro: "Sur Football Cult, nous comparons les prix des maillots de l'équipe de France, avec 35 produits au catalogue, de l'archive rétro au maillot domicile actuel.",
+      comparisonTitle: "Là où la comparaison de prix est réelle",
+      comparisonText: "Le maillot domicile 2026 est l'article le plus comparé du catalogue français : le même maillot apparaît dans 10 boutiques différentes, et le maillot extérieur dans 6. Le catalogue couvre aussi gardien, entraînement, avant-match et tailles enfant.",
+      retroTitle: "Une archive rétro remontant à 1950",
+      retroText: "Nous avons ajouté des maillots rétro de la France de 1950 à aujourd'hui, avec des pièces de ses deux titres mondiaux.",
+      heritageTitle: "Des maillots chargés d'histoire",
+      heritageText: "Le catalogue compte deux maillots portant le label « La Chronique du Maillot » issus des deux Coupes du Monde remportées par la France : celui de 1998 (3-0 face au Brésil, doublé de Zidane) et celui de 2018 (4-2 face à la Croatie, avec Mbappé devenu le deuxième adolescent, après Pelé, à marquer en finale).",
+      note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas.",
+    },
+    italy: {
+      title: "Football italien",
+      intro: "Sur Football Cult, nous comparons les prix des maillots de l'équipe d'Italie, avec 51 produits au catalogue, de l'archive rétro au maillot domicile actuel.",
+      comparisonTitle: "Là où la comparaison de prix est réelle",
+      comparisonText: "Les maillots domicile et extérieur 2026 sont les articles les plus comparés du catalogue italien : chacun apparaît dans 9 boutiques différentes. Le catalogue couvre aussi gardien, entraînement, plusieurs versions avant-match et tailles enfant.",
+      retroTitle: "Une archive rétro remontant à 1970",
+      retroText: "Nous avons ajouté des maillots rétro de l'Italie de 1970 à aujourd'hui, avec des pièces de ses finales de Coupe du Monde 1994 et 2006.",
+      heritageTitle: "Des maillots chargés d'histoire",
+      heritageText: "Le catalogue compte deux maillots portant le label « La Chronique du Maillot » issus de deux finales de Coupe du Monde de l'Italie : celui de 1994 (0-0 face au Brésil, resté dans les mémoires pour le penalty manqué de Roberto Baggio) et celui de 2006 (1-1 face à la France, décidé aux tirs au but après l'expulsion de Zidane pour son coup de tête sur Materazzi).",
+      note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas.",
     },
     priceDrop: {
       eyebrow: "Les offres du jour",
@@ -1998,6 +2118,8 @@ export const translations: Record<Locale, Translations> = {
       authenticity: "Autenticità",
       brazil: "Calcio brasiliano",
       argentina: "Calcio argentino",
+      france: "Calcio francese",
+      italy: "Calcio italiano",
       disclaimer:
         "Football Cult è un sito di comparazione prezzi. Non vendiamo prodotti direttamente: ti reindirizziamo verso negozi di terze parti per completare l'acquisto. Alcuni link sono link di affiliazione, il che significa che potremmo guadagnare una commissione senza costi aggiuntivi per te.",
     },
@@ -2052,6 +2174,28 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Maglie con una storia",
       heritageText: "La maglia titolare del Qatar 2022 nel catalogo porta l'etichetta \"La Cronaca della Maglia\", con il contesto reale della partita in cui è stata indossata — la finale del 18 dicembre 2022 contro la Francia, decisa ai rigori.",
       note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì. Oltre ai negozi europei che confrontiamo per la nazionale, anche il negozio ufficiale argentino di Puma (ar.puma.com) è integrato nel catalogo per le maglie dell'Independiente, il club di cui Puma è sponsor tecnico.",
+    },
+    france: {
+      title: "Calcio francese",
+      intro: "Su Football Cult confrontiamo i prezzi delle maglie della nazionale francese, con 35 prodotti nel catalogo, dall'archivio retro alla maglia attuale.",
+      comparisonTitle: "Dove il confronto di prezzo è reale",
+      comparisonText: "La maglia titolare 2026 è l'articolo più confrontato del catalogo francese: la stessa maglia compare in 10 negozi diversi, e quella da trasferta in 6. Il catalogo copre anche portiere, allenamento, pre-partita e taglie bambino.",
+      retroTitle: "Un archivio retro fino al 1950",
+      retroText: "Abbiamo aggiunto maglie retro della Francia dal 1950 a oggi, incluse pezzi dei suoi due Mondiali vinti.",
+      heritageTitle: "Maglie con una storia",
+      heritageText: "Il catalogo ha due maglie con l'etichetta \"La Cronaca della Maglia\" dei due Mondiali vinti dalla Francia: quella del 1998 (3-0 sul Brasile, doppietta di Zidane) e quella del 2018 (4-2 sulla Croazia, con Mbappé diventato il secondo adolescente, dopo Pelé, a segnare in una finale).",
+      note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì.",
+    },
+    italy: {
+      title: "Calcio italiano",
+      intro: "Su Football Cult confrontiamo i prezzi delle maglie della nazionale italiana, con 51 prodotti nel catalogo, dall'archivio retro alla maglia attuale.",
+      comparisonTitle: "Dove il confronto di prezzo è reale",
+      comparisonText: "Le maglie titolare e da trasferta 2026 sono gli articoli più confrontati del catalogo italiano: ciascuna compare in 9 negozi diversi. Il catalogo copre anche portiere, allenamento, diverse versioni pre-partita e taglie bambino.",
+      retroTitle: "Un archivio retro fino al 1970",
+      retroText: "Abbiamo aggiunto maglie retro dell'Italia dal 1970 a oggi, incluse pezzi delle sue finali mondiali del 1994 e del 2006.",
+      heritageTitle: "Maglie con una storia",
+      heritageText: "Il catalogo ha due maglie con l'etichetta \"La Cronaca della Maglia\" di due finali mondiali dell'Italia: quella del 1994 (0-0 contro il Brasile, ricordata per il rigore sbagliato da Roberto Baggio) e quella del 2006 (1-1 contro la Francia, decisa ai rigori dopo l'espulsione di Zidane per la testata a Materazzi).",
+      note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì.",
     },
     priceDrop: {
       eyebrow: "Le offerte di oggi",
