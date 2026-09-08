@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 
 export default function CategoriesMenu() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { setCategoryFilter, setTypeFilter, setQuery } = useSearchFilter();
   const router = useRouter();
   const [open, setOpen] = useState(false);
@@ -46,7 +46,7 @@ export default function CategoriesMenu() {
     setQuery("");
     setCategoryFilter([category]);
     setOpen(false);
-    router.push("/");
+    router.push(`/${locale}`);
   }
 
   function goToRetro() {
@@ -54,7 +54,7 @@ export default function CategoriesMenu() {
     setCategoryFilter([]);
     setTypeFilter(["retro"]);
     setOpen(false);
-    router.push("/");
+    router.push(`/${locale}`);
   }
 
   return (

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { notFound } from "next/navigation";
 import { SessionProvider } from "next-auth/react";
 import { Inter, Alfa_Slab_One, Cormorant_Garamond } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StadiumWatermark from "@/components/StadiumWatermark";
@@ -12,6 +13,8 @@ import { CountryProvider } from "@/lib/country/CountryContext";
 import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
 import { CompareProvider } from "@/lib/compare/CompareContext";
 import CompareBar from "@/components/CompareBar";
+import { Locale } from "@/lib/i18n/translations";
+import { LOCALES, OG_LOCALE, buildAlternates, isLocale } from "@/lib/i18n/locales";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,47 +33,95 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
 });
 
-const SITE_TITLE = "Football Cult — Comparador de precios de camisetas de fútbol";
-const SITE_DESCRIPTION =
-  "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.";
-
-export const metadata: Metadata = {
-  // Sin "www" -- mismo dominio que ya usan sitemap.ts/robots.ts/feed.xml/
-  // el JSON-LD de producto como fuente de verdad (ver next.config.ts: la
-  // versión con www redirige acá, no al revés).
-  metadataBase: new URL("https://football-cult.com"),
-  title: SITE_TITLE,
-  description: SITE_DESCRIPTION,
-  alternates: { canonical: "/" },
-  // Código HTML-tag de Search Console (Configuración > Verificación de la
-  // propiedad > etiqueta HTML): pegar solo el valor del atributo content,
-  // no el <meta> entero. Sin la env var, Next directamente no imprime el
-  // tag -- no hace falta tocar código de nuevo una vez que exista.
-  verification: process.env.GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-    : undefined,
-  openGraph: {
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-    siteName: "Football Cult",
-    type: "website",
-    locale: "es_ES",
+// Traducciones fieles del título/descripción de marca -- no son contenido
+// de página (eso vive en translations.ts), son los dos strings que
+// necesita <head> antes de que exista ningún <Translations> real, así
+// que se resuelven acá directo por locale.
+const SITE_META: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "Football Cult — Comparador de precios de camisetas de fútbol",
+    description:
+      "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
+  en: {
+    title: "Football Cult — Football Shirt Price Comparison",
+    description:
+      "Search for football shirts from your national team, club, or favorite league and compare prices between different stores before buying.",
+  },
+  pt: {
+    title: "Football Cult — Comparador de Preços de Camisas de Futebol",
+    description:
+      "Procure camisas de futebol da sua seleção, clube ou liga favorita e compare preços entre diferentes lojas antes de comprar.",
+  },
+  fr: {
+    title: "Football Cult — Comparateur de Prix de Maillots de Football",
+    description:
+      "Recherchez des maillots de football de votre sélection, club ou ligue préférée et comparez les prix entre différentes boutiques avant d'acheter.",
+  },
+  it: {
+    title: "Football Cult — Comparatore di Prezzi delle Maglie da Calcio",
+    description:
+      "Cerca maglie da calcio della tua nazionale, club o campionato preferito e confronta i prezzi tra diversi negozi prima di acquistare.",
   },
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : "es";
+  const { title, description } = SITE_META[locale];
+
+  return {
+    // Sin "www" -- mismo dominio que ya usan sitemap.ts/robots.ts/feed.xml/
+    // el JSON-LD de producto como fuente de verdad (ver next.config.ts: la
+    // versión con www redirige acá, no al revés).
+    metadataBase: new URL("https://football-cult.com"),
+    title,
+    description,
+    alternates: buildAlternates(locale, ""),
+    // Código HTML-tag de Search Console (Configuración > Verificación de la
+    // propiedad > etiqueta HTML): pegar solo el valor del atributo content,
+    // no el <meta> entero. Sin la env var, Next directamente no imprime el
+    // tag -- no hace falta tocar código de nuevo una vez que exista.
+    verification: process.env.GOOGLE_SITE_VERIFICATION
+      ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+      : undefined,
+    openGraph: {
+      title,
+      description,
+      siteName: "Football Cult",
+      type: "website",
+      locale: OG_LOCALE[locale],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale: rawLocale } = await params;
+  if (!isLocale(rawLocale)) notFound();
+  const locale = rawLocale;
+
   return (
     <html
-      lang="es"
+      lang={locale}
       className={`${inter.variable} ${alfaSlabOne.variable} ${cormorant.variable} h-full antialiased`}
     >
       <head>
@@ -104,7 +155,7 @@ export default function RootLayout({
       <body className="paper-texture flex min-h-full flex-col bg-[#f0e6d2] text-[#201d16]">
         <StadiumWatermark />
         <SessionProvider>
-          <LanguageProvider>
+          <LanguageProvider initialLocale={locale}>
             <CountryProvider>
               <FavoritesProvider>
                 <SearchFilterProvider>

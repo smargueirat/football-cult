@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import CategoriesMenu from "./CategoriesMenu";
 import LanguageSwitcher from "./LanguageSwitcher";

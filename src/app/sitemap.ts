@@ -1,10 +1,17 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
+import { LOCALES } from "@/lib/i18n/locales";
 
 const BASE_URL = "https://football-cult.com";
 
+function languagesFor(path: string) {
+  return Object.fromEntries(
+    LOCALES.map((l) => [l, `${BASE_URL}/${l}${path}`])
+  ) as Record<string, string>;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = [
+  const staticPaths = [
     "",
     "/sobre-nosotros",
     "/contacto",
@@ -16,15 +23,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/argentina",
     "/francia",
     "/italia",
-  ].map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: new Date(),
-  }));
+  ];
 
-  const productRoutes = products.map((product) => ({
-    url: `${BASE_URL}/camiseta/${product.id}`,
-    lastModified: new Date(),
-  }));
+  const staticRoutes = staticPaths.flatMap((path) =>
+    LOCALES.map((locale) => ({
+      url: `${BASE_URL}/${locale}${path}`,
+      lastModified: new Date(),
+      alternates: { languages: languagesFor(path) },
+    }))
+  );
+
+  const productRoutes = products.flatMap((product) => {
+    const path = `/camiseta/${product.id}`;
+    return LOCALES.map((locale) => ({
+      url: `${BASE_URL}/${locale}${path}`,
+      lastModified: new Date(),
+      alternates: { languages: languagesFor(path) },
+    }));
+  });
 
   return [...staticRoutes, ...productRoutes];
 }

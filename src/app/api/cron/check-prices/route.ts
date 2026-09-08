@@ -166,7 +166,7 @@ export async function GET(req: NextRequest) {
       const product = products.find((p) => p.id === productId);
       if (!product) continue;
       const name = `${teamNames[product.teamKey].es} ${typeNames[product.typeKey].es} ${product.season}`;
-      const url = `${SITE_URL}/camiseta/${productId}`;
+      const url = `${SITE_URL}/es/camiseta/${productId}`;
       const fromMoney = formatOfferMoney(drop.from, drop.currency);
       const toMoney = formatOfferMoney(drop.to, drop.currency);
 

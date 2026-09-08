@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Link from "@/lib/i18n/LocaleLink";
 import { Product, findProduct } from "@/data/products";
 import { getRecentlyViewed } from "@/lib/recentlyViewed";
 import { useLanguage } from "@/lib/i18n/LanguageContext";

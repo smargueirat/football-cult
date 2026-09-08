@@ -9,13 +9,14 @@ import {
 } from "@/data/products";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import priceHistoryData from "@/data/priceHistory.json";
+import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 const SITE_URL = "https://football-cult.com";
 
 // Product/Offer structured data para Google Shopping / resultados
 // enriquecidos -- una oferta por tienda real (nunca AggregateOffer con un
 // solo priceCurrency inventado, las tiendas cobran en monedas distintas).
-function productJsonLd(product: Product) {
+function productJsonLd(product: Product, locale: string) {
   const team = teamNames[product.teamKey].es;
   const type = typeNames[product.typeKey].es;
   const image = bestOffer(product)?.imageUrl;
@@ -33,7 +34,7 @@ function productJsonLd(product: Product) {
     "@type": "Product",
     name: `${team} ${type} ${product.season}`,
     image: image ? [image] : undefined,
-    url: `${SITE_URL}/camiseta/${product.id}`,
+    url: `${SITE_URL}/${locale}/camiseta/${product.id}`,
     ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
     offers: product.offers.map((o) => ({
       "@type": "Offer",
@@ -51,9 +52,10 @@ function productJsonLd(product: Product) {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: string; id: string }>;
 }): Promise<Metadata> {
-  const { id } = await params;
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const product = findProduct(id);
   if (!product) return {};
 
@@ -66,7 +68,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `/camiseta/${product.id}` },
+    alternates: buildAlternates(locale, `/camiseta/${product.id}`),
     openGraph: {
       title,
       description,
@@ -85,9 +87,10 @@ export async function generateMetadata({
 export default async function JerseyDetailPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: string; id: string }>;
 }) {
-  const { id } = await params;
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const product = findProduct(id);
 
   if (!product) {
@@ -110,7 +113,7 @@ export default async function JerseyDetailPage({
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product, locale)) }}
       />
       <JerseyDetailClient product={product} priceHistory={priceHistory} />
     </>

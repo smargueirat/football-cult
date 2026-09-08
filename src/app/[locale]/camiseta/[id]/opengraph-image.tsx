@@ -33,7 +33,11 @@ function loadLocalFonts() {
   return fontCache;
 }
 
-export default async function Image({ params }: { params: Promise<{ id: string }> }) {
+export default async function Image({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}) {
   const { id } = await params;
   const product = findProduct(id);
 
