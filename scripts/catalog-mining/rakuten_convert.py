@@ -60,12 +60,20 @@ def convert(in_path, out_path, team_hint=None):
             if team_hint and not any(pat.search(name) for pat in teams_re.values()):
                 name = f"{team_hint} " + name
             name = rewrite_roman_type(name, teams_re)
+            # Merchant Center flagged these as "imagen demasiado pequeña"
+            # (2026-09-08): the feed's own image is a real photo, but at
+            # 410x410, under Google's 500x500 minimum. Confirmed by hand
+            # across all 5 Rakuten Brazil stores that the exact same real
+            # photo also exists at 1200x1200 on the same CDN, just with
+            # "_detalhe1" swapped for "_zoom1" in the filename -- not an
+            # upscale, the store already hosts the bigger version.
+            image_url = fields[6].replace("_detalhe1.", "_zoom1.")
             rows_out.append(
                 {
                     "product_name": name,
                     "search_price": sale_price,
                     "aw_deep_link": fields[5],
-                    "aw_image_url": fields[6],
+                    "aw_image_url": image_url,
                     "brand_name": fields[16],
                     "in_stock": "1" if in_stock == "in-stock" else "0",
                     # No decodable size field in this feed -- the SKU's

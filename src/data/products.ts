@@ -19632,7 +19632,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 49.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206455688542?_skw=Santos+FC+away+soccer+jersey&hash=item3011b7cd5e%3Ag%3AW-oAAeSwHjNqbPIi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Men's M Umbro Santos FC 2024/25 Away Brazil Black White Soccer Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/W-oAAeSwHjNqbPIi/s-l1600.jpg" },
-      { store: "SantosStore", price: 195.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419617643221643756375519&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-2318-026", title: "Camisa Santos Away 2024 s/n° Torcedor Umbro Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2024-sn-torcedor-umbro-masculina/26/2IB-2318-026/2IB-2318-026_detalhe1.jpg?ts=1773461875" },
+      { store: "SantosStore", price: 195.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419617643221643756375519&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-2318-026", title: "Camisa Santos Away 2024 s/n° Torcedor Umbro Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2024-sn-torcedor-umbro-masculina/26/2IB-2318-026/2IB-2318-026_zoom1.jpg?ts=1773461875" },
       { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358119390065?_skw=Santos+FC+away+soccer+jersey&hash=item5361943b71%3Ag%3Aby8AAeSwPt9pIl64&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZpFY3%2BHXuKckrJaF9K%2FRor4jLwdE0h2LayC7OwFmxSX9wLQgH%2BeYgkCOY2T%2F7Xsd8%2BtIlhemC6EzlxmtrP1UqNCK8M6JgDrAsjftMAMqmoqnZmdVyVCubZ80%2FF7XGonENmNLhMD1AV%2Fq7oW%2FfWgWSB4hfR9krxkJt7vuI51pc6tVWvFFLxQw9BxuTi9J1Q1aSWCNfdmUwlTngOU0Ynu48ZI6Egj8ivpkBCUNu0u80UrS478vrfy7NaG4tvOX%2F6DTshkREAyIxF9qqPvPkkd0or7%2BiBs4r%2Fj8MJSmxVC9ikrjjuKHruUjXXo%2BcDkVDwbPw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Santos Football Club Soccer Away Jersey Authentic 2024 Men's Size: XL NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/by8AAeSwPt9pIl64/s-l1600.jpg" },
     ],
   },
@@ -37665,7 +37665,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcorinthians-away-soccer-jersey-2025-26%3Fvariant%3D42712492540009", title: "Corinthians Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Corinthians_Away_Jersey_2025-2026_2.webp?v=1764235505" },
       { store: "eBay", price: 55.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/317912356062?_skw=Corinthians+away+soccer+jersey&hash=item4a050d94de%3Ag%3APkEAAeSwws5pm3Aw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Corinthians Away \"Todo Poderoso Timão \"Jersey 2025-26 Size L ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/PkEAAeSwws5pm3Aw/s-l1600.jpg" },
-      { store: "ShopTimao", price: 349.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005481.5420011064380366749651477&type=15&murl=https%3A%2F%2Fwww.shoptimao.com.br%2FJD8-9918-026", title: "Camisa Corinthians Away 25/26 s/n Jogador Nike Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.shoptimao.com.br/produtos/camisa-corinthians-ii-2526-sn-jogador-nike-masculina/26/JD8-9918-026/JD8-9918-026_detalhe1.jpg?ts=1776222326" },
+      { store: "ShopTimao", price: 349.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005481.5420011064380366749651477&type=15&murl=https%3A%2F%2Fwww.shoptimao.com.br%2FJD8-9918-026", title: "Camisa Corinthians Away 25/26 s/n Jogador Nike Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.shoptimao.com.br/produtos/camisa-corinthians-ii-2526-sn-jogador-nike-masculina/26/JD8-9918-026/JD8-9918-026_zoom1.jpg?ts=1776222326" },
     ],
   },
 {
@@ -37691,7 +37691,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcruzeiro-ec-third-away-soccer-jersey-2025-26%3Fvariant%3D42749511827561", title: "Cruzeiro EC Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Cruzeiro_EC_Third_Away_Soccer_Jersey_202526_2_7c0873c8-a334-4e99-8ffa-c47fcc0ebf80.webp?v=1765791493" },
-      { store: "CruzeiroStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541981510343915112738364&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-3558-044", title: "Camisa Cruzeiro Away 25/26 s/n Torcedor Adidas Masculina - Branco+Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-ii-2526-sn-torcedor-adidas-masculina/44/FBA-3558-044/FBA-3558-044_detalhe1.jpg?ts=1776223978" },
+      { store: "CruzeiroStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541981510343915112738364&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-3558-044", title: "Camisa Cruzeiro Away 25/26 s/n Torcedor Adidas Masculina - Branco+Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-ii-2526-sn-torcedor-adidas-masculina/44/FBA-3558-044/FBA-3558-044_zoom1.jpg?ts=1776223978" },
       { store: "eBay", price: 30.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/358661185568?_skw=Cruzeiro+away+soccer+jersey&hash=item5381df6020%3Ag%3AxHkAAeSwrmNqKQuC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cruzeiro Esporte Clube Away Men 2026 Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/xHkAAeSwrmNqKQuC/s-l1600.jpg" },
     ],
   },
@@ -38397,8 +38397,8 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsantos-fc-home-soccer-jersey-2025-26%3Fvariant%3D42632278442089", title: "Santos FC Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/santos_fc_home_soccer_jersey_2025_26.png?v=1761026606" },
       { store: "eBay", price: 90.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377260293470?_skw=Santos+FC+home+soccer+jersey+2025+2026&hash=item57d6773d5e%3Ag%3ADTwAAeSw9tRqLhDO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbBoSYICOsNL9X5vDNwsn%2BWOQVTG8oLc2JkGtK7n3%2ByO%2FiDtJyyAU62taAf%2FmCqS5AgdpoBWlGpL%2FUnRjDx7g7OskexYx7XOJImE2U4%2BLte1ihZDGplE7oaWl241K271zh4%2FSyMimR4XU5fiq6IXB%2FJ%2FsFYp9QXFhI1fSFRuIfV0L4N7qLdza8Nl7bmmIzl15ihSmD88nGFu7mFke%2F9yklEppK8GeunW%2BlIaNoHy5%2F7%2FoDqVLJ1vXl%2FkuIkyJCxuvAEPqyhas6FtX1F0MHs%2Bi83WJMcsLyatqHrwCMj2KLhuqyXqdEj8pGFi7X7n2GmVqw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Santos ( 2026 ) - Neymar Jr - Home Jersey - Mens", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/DTwAAeSw9tRqLhDO/s-l1600.jpg" },
-      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614082531675509602129&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LW-014", title: "Camisa Masculina Santos Home 25/26 Jogador Umbro - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-i-2526-jogador-umbro/14/SID-00LW-014/SID-00LW-014_detalhe1.jpg?ts=1773246983" },
-      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614082531675509602129&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LW-014", title: "Camisa Masculina Santos Home 25/26 Jogador Umbro - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-i-2526-jogador-umbro/14/SID-00LW-014/SID-00LW-014_detalhe1.jpg?ts=1773246983" },
+      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614082531675509602129&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LW-014", title: "Camisa Masculina Santos Home 25/26 Jogador Umbro - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-i-2526-jogador-umbro/14/SID-00LW-014/SID-00LW-014_zoom1.jpg?ts=1773246983" },
+      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614082531675509602129&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LW-014", title: "Camisa Masculina Santos Home 25/26 Jogador Umbro - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-i-2526-jogador-umbro/14/SID-00LW-014/SID-00LW-014_zoom1.jpg?ts=1773246983" },
     ],
   },
 {
@@ -40682,7 +40682,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 110.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407100018063?_skw=Cruzeiro+goalkeeper+soccer+jersey+2025+2026&hash=item5ec90d4d8f%3Ag%3A2jQAAeSw%7Eadp4CfZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Cruzeiro Goalkeeper  Soccer Football Jersey Shirt 2025 - 2026 Brasileirão!", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/2jQAAeSw~adp4CfZ/s-l1600.jpg" },
-      { store: "CruzeiroStore", price: 199.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541984754486299585003651&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-82A3-310", title: "Camisa Goleiro Cruzeiro Especial 25/26 s/n Torcedor Adidas Masculina - Azul Royal", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-goleiro-cruzeiro-especial-2526-sn-torcedor-adidas-masculina/10/FBA-82A3-310/FBA-82A3-310_detalhe1.jpg?ts=1776309352" },
+      { store: "CruzeiroStore", price: 199.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541984754486299585003651&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-82A3-310", title: "Camisa Goleiro Cruzeiro Especial 25/26 s/n Torcedor Adidas Masculina - Azul Royal", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-goleiro-cruzeiro-especial-2526-sn-torcedor-adidas-masculina/10/FBA-82A3-310/FBA-82A3-310_zoom1.jpg?ts=1776309352" },
     ],
   },
 {
@@ -49044,9 +49044,9 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541963685641398786242413&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LX-026", title: "Camisa Masculina Santos Away 25/26 Jogador Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-ii-2526-jogador-umbro/26/SID-00LX-026/SID-00LX-026_detalhe1.jpg?ts=1773246982" },
+      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541963685641398786242413&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LX-026", title: "Camisa Masculina Santos Away 25/26 Jogador Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-ii-2526-jogador-umbro/26/SID-00LX-026/SID-00LX-026_zoom1.jpg?ts=1773246982" },
       { store: "eBay", price: 120.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800423406219?_skw=Santos+FC+away+soccer+jersey&hash=itemba5cf3ea8b%3Ag%3A5Q8AAeSwdhFqaP28&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ3Bohxx0Ouu1B%2BUEB47VTeimopZIanpP2JDTA9hGodHxOIreSUMkkCx47kuARDagMaBPKoOysN2LuZqgy2TtgolM4KO%2Fa%2FFfQ9NygyglUCMh9%2FvL9ygrHQtnTx1Y56vpOoiZzdUNN7BISn0Y0MbZuZXGWM79C5sdut8N%2FDNV6T3NcBKO%2BQ6ka0xQtxVKtZD4zzhx1s3LpPZxLW86%2BI3EfIC%2F9zBQb0alpGDrwtqJZCzlvRz4rRsO18RhkSpQd57l%2FvkHPN90h3eF8ZqKAr2KhxnvNzORuPigZwPCwJuk3J43%2BSfvmBNH%2BJNd6TG98oCoI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Men's Neymar Jr Santos FC Away Jersey 25/26 🤗", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/5Q8AAeSwdhFqaP28/s-l1600.jpg" },
-      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541963685641398786242413&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LX-026", title: "Camisa Masculina Santos Away 25/26 Jogador Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-ii-2526-jogador-umbro/26/SID-00LX-026/SID-00LX-026_detalhe1.jpg?ts=1773246982" },
+      { store: "SantosStore", price: 339.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541963685641398786242413&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-00LX-026", title: "Camisa Masculina Santos Away 25/26 Jogador Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-ii-2526-jogador-umbro/26/SID-00LX-026/SID-00LX-026_zoom1.jpg?ts=1773246982" },
     ],
   },
 {
@@ -49058,8 +49058,8 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_detalhe1.jpg?ts=1775877982" },
-      { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_detalhe1.jpg?ts=1775877982" },
+      { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_zoom1.jpg?ts=1775877982" },
+      { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_zoom1.jpg?ts=1775877982" },
     ],
   },
 {
@@ -49071,7 +49071,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 159.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419618410730567720490619&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1510-274", title: "Camisa Santos 25/26 Treino Umbro Masculina - Amarelo+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-treino-umbro-masculina/74/2IB-1510-274/2IB-1510-274_detalhe1.jpg?ts=1776310131" },
+      { store: "SantosStore", price: 159.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419618410730567720490619&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1510-274", title: "Camisa Santos 25/26 Treino Umbro Masculina - Amarelo+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-treino-umbro-masculina/74/2IB-1510-274/2IB-1510-274_zoom1.jpg?ts=1776310131" },
     ],
   },
 {
@@ -49095,7 +49095,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 49.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975691426220107204972&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2F0LL-0266-006", title: "Camisa Internacional Away Masculina - Cinza", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-masculina/06/0LL-0266-006/0LL-0266-006_detalhe1.jpg?ts=1776223236" },
+      { store: "InterStore", price: 49.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975691426220107204972&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2F0LL-0266-006", title: "Camisa Internacional Away Masculina - Cinza", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-masculina/06/0LL-0266-006/0LL-0266-006_zoom1.jpg?ts=1776223236" },
     ],
   },
 {
@@ -49107,7 +49107,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 419.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541976435245123487642094&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFBA-3573-006", title: "Camisa Goleiro Home Internacional 25/26 Adidas Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-goleiro-i-internacional-2526-adidas-masculina/06/FBA-3573-006/FBA-3573-006_detalhe1.jpg?ts=1774305033" },
+      { store: "InterStore", price: 419.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541976435245123487642094&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFBA-3573-006", title: "Camisa Goleiro Home Internacional 25/26 Adidas Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-goleiro-i-internacional-2526-adidas-masculina/06/FBA-3573-006/FBA-3573-006_zoom1.jpg?ts=1774305033" },
     ],
   },
 {
@@ -49119,7 +49119,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 74.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975841397249908672275&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2F0LL-02AW-006", title: "Camiseta Internacional Treino Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camiseta-internacional-treino-masculina/06/0LL-02AW-006/0LL-02AW-006_detalhe1.jpg?ts=1776136834" },
+      { store: "InterStore", price: 74.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975841397249908672275&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2F0LL-02AW-006", title: "Camiseta Internacional Treino Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camiseta-internacional-treino-masculina/06/0LL-02AW-006/0LL-02AW-006_zoom1.jpg?ts=1776136834" },
       { store: "eBay", price: 90.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407100007686?_skw=Internacional+training+soccer+jersey&hash=item5ec90d2506%3Ag%3A%7EwcAAeSwM4Zp4oU9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Internacional Training Soccer Football Jersey Shirt 2026-2027 Brasileirão!", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/~wcAAeSwM4Zp4oU9/s-l1600.jpg" },
     ],
   },
@@ -49132,7 +49132,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "LojaPST", price: 79.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.542133752862603966674502&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-3149-008", title: "Sport Recife Camisa de Goleiro Umbro Gaudium Manga Longa Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-de-goleiro-umbro-gaudium-manga-longa-masculina/08/2IA-3149-008/2IA-3149-008_detalhe1.jpg?ts=1773631997" },
+      { store: "LojaPST", price: 79.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.542133752862603966674502&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-3149-008", title: "Sport Recife Camisa de Goleiro Umbro Gaudium Manga Longa Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-de-goleiro-umbro-gaudium-manga-longa-masculina/08/2IA-3149-008/2IA-3149-008_zoom1.jpg?ts=1773631997" },
     ],
   },
 {
@@ -49144,7 +49144,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "LojaPST", price: 244.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.5421318231474841761807411&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IB-1784-068", title: "Sport Recife Camisa Sport Home 25/26 s/n Jogador Umbro Masculina - Vermelho+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-i-2526-sn-jogador-umbro-masculina/68/2IB-1784-068/2IB-1784-068_detalhe1.jpg?ts=1774431693" },
+      { store: "LojaPST", price: 244.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.5421318231474841761807411&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IB-1784-068", title: "Sport Recife Camisa Sport Home 25/26 s/n Jogador Umbro Masculina - Vermelho+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-i-2526-sn-jogador-umbro-masculina/68/2IB-1784-068/2IB-1784-068_zoom1.jpg?ts=1774431693" },
     ],
   },
 {
@@ -50448,7 +50448,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 169.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419611131625543239130214&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FT70-1287-026", title: "Camisa Santos Away 1978 RetrôMania Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-1978-retromania-masculina/26/T70-1287-026/T70-1287-026_detalhe1.jpg?ts=1776223711" },
+      { store: "SantosStore", price: 169.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419611131625543239130214&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FT70-1287-026", title: "Camisa Santos Away 1978 RetrôMania Masculina - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-1978-retromania-masculina/26/T70-1287-026/T70-1287-026_zoom1.jpg?ts=1776223711" },
     ],
   },
 {
@@ -50460,7 +50460,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 127.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541965941701141187006708&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-0590-028", title: "Camisa Santos Away 21/22 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2122-sn-torcedor-umbro-masculina/28/2IA-0590-028/2IA-0590-028_detalhe1.jpg?ts=1776114864" },
+      { store: "SantosStore", price: 127.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541965941701141187006708&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-0590-028", title: "Camisa Santos Away 21/22 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2122-sn-torcedor-umbro-masculina/28/2IA-0590-028/2IA-0590-028_zoom1.jpg?ts=1776114864" },
     ],
   },
 {
@@ -50472,7 +50472,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 152.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541962271589337872502749&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-5566-026", title: "Camisa Santos Away 22/23 (Classic S/N) Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2223-(classic-sn)-umbro/26/2IA-5566-026/2IA-5566-026_detalhe1.jpg?ts=1776188392" },
+      { store: "SantosStore", price: 152.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541962271589337872502749&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-5566-026", title: "Camisa Santos Away 22/23 (Classic S/N) Umbro - Preto+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2223-(classic-sn)-umbro/26/2IA-5566-026/2IA-5566-026_zoom1.jpg?ts=1776188392" },
     ],
   },
 {
@@ -50484,7 +50484,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 139.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967931673551130187377&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F514-0009-006", title: "Camisa de Goleiro Retrô Santos Manga Longa 62/63 nº 1 Athleta Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-de-goleiro-retro-santos-manga-longa-6263-n-1-athleta-masculina/06/514-0009-006/514-0009-006_detalhe1.jpg?ts=1776223241" },
+      { store: "SantosStore", price: 139.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967931673551130187377&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F514-0009-006", title: "Camisa de Goleiro Retrô Santos Manga Longa 62/63 nº 1 Athleta Masculina - Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-de-goleiro-retro-santos-manga-longa-6263-n-1-athleta-masculina/06/514-0009-006/514-0009-006_zoom1.jpg?ts=1776223241" },
     ],
   },
 {
@@ -50496,7 +50496,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 186.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614489236918675951901&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-2590-394", title: "Camisa de Goleiro Santos 22/23 s/n° Torcedor Umbro Masculina - Vinho+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-de-goleiro-santos-2223-sn-torcedor-umbro-masculina/94/2IA-2590-394/2IA-2590-394_detalhe1.jpg?ts=1772805352" },
+      { store: "SantosStore", price: 186.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419614489236918675951901&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-2590-394", title: "Camisa de Goleiro Santos 22/23 s/n° Torcedor Umbro Masculina - Vinho+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-de-goleiro-santos-2223-sn-torcedor-umbro-masculina/94/2IA-2590-394/2IA-2590-394_zoom1.jpg?ts=1772805352" },
     ],
   },
 {
@@ -50508,7 +50508,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 179.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.54196998878591812010855&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-5077-841", title: "Camisa Santos 23/24 s/n° Goleiro Umbro Masculina - Azul Claro+Marrom", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2324-sn-goleiro-umbro-masculina/41/2IA-5077-841/2IA-5077-841_detalhe1.jpg?ts=1772559327" },
+      { store: "SantosStore", price: 179.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.54196998878591812010855&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-5077-841", title: "Camisa Santos 23/24 s/n° Goleiro Umbro Masculina - Azul Claro+Marrom", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2324-sn-goleiro-umbro-masculina/41/2IA-5077-841/2IA-5077-841_zoom1.jpg?ts=1772559327" },
     ],
   },
 {
@@ -50520,7 +50520,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 109.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419613058379453459112508&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-9087-852", title: "Camisa Santos 2024 s/n° Treino Goleiro Umbro Masculina - Azul+Marinho", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2024-sn-treino-goleiro-umbro-masculina/52/2IA-9087-852/2IA-9087-852_detalhe1.jpg?ts=1776072998" },
+      { store: "SantosStore", price: 109.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419613058379453459112508&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-9087-852", title: "Camisa Santos 2024 s/n° Treino Goleiro Umbro Masculina - Azul+Marinho", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2024-sn-treino-goleiro-umbro-masculina/52/2IA-9087-852/2IA-9087-852_zoom1.jpg?ts=1776072998" },
     ],
   },
 {
@@ -50532,7 +50532,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 139.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419612945995310286020391&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FT70-1289-014", title: "Camisa Santos Home 1978 RetrôMania Masculina - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-i-1978-retromania-masculina/14/T70-1289-014/T70-1289-014_detalhe1.jpg?ts=1776222930" },
+      { store: "SantosStore", price: 139.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419612945995310286020391&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FT70-1289-014", title: "Camisa Santos Home 1978 RetrôMania Masculina - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-i-1978-retromania-masculina/14/T70-1289-014/T70-1289-014_zoom1.jpg?ts=1776222930" },
     ],
   },
 {
@@ -50544,7 +50544,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 195.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541964431357183298755557&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-2319-028", title: "Camisa Santos Home 2024 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-i-2024-sn-torcedor-umbro-masculina/28/2IB-2319-028/2IB-2319-028_detalhe1.jpg?ts=1773459540" },
+      { store: "SantosStore", price: 195.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541964431357183298755557&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-2319-028", title: "Camisa Santos Home 2024 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-i-2024-sn-torcedor-umbro-masculina/28/2IB-2319-028/2IB-2319-028_zoom1.jpg?ts=1773459540" },
       { store: "eBay", price: 33.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/335525911724?_skw=Santos+FC+home+soccer+jersey&hash=item4e1ee71cac%3Ag%3AqV4AAOSw4khmuAdm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Club Santos Laguna Home Jersey in 2024", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/qV4AAOSw4khmuAdm/s-l1600.jpg" },
     ],
   },
@@ -50557,7 +50557,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 143.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967949003490939760799&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-0017-274", title: "Camisa Masculina Santos Third 2024 s/n° Torcedor Umbro - Amarelo+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-iii-2024-sn-torcedor-umbro/74/SID-0017-274/SID-0017-274_detalhe1.jpg?ts=1775820124" },
+      { store: "SantosStore", price: 143.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967949003490939760799&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-0017-274", title: "Camisa Masculina Santos Third 2024 s/n° Torcedor Umbro - Amarelo+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-masculina-santos-iii-2024-sn-torcedor-umbro/74/SID-0017-274/SID-0017-274_zoom1.jpg?ts=1775820124" },
     ],
   },
 {
@@ -50569,7 +50569,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "SantosStore", price: 199.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419611008341379906974634&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-2698-030", title: "Camisa Santos 22/23 s/n° Treino Umbro Masculina - Amarelo", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2223-sn-treino-umbro-masculina/30/2IA-2698-030/2IA-2698-030_detalhe1.jpg?ts=1772554295" },
+      { store: "SantosStore", price: 199.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419611008341379906974634&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IA-2698-030", title: "Camisa Santos 22/23 s/n° Treino Umbro Masculina - Amarelo", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2223-sn-treino-umbro-masculina/30/2IA-2698-030/2IA-2698-030_zoom1.jpg?ts=1772554295" },
     ],
   },
 {
@@ -50581,7 +50581,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 208.89, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419711723886005561394064&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-7769-014", title: "Camisa Internacional Away 21/22 s/n° Torcedor Adidas Masculina - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-2122-sn-torcedor-adidas-masculina/14/NQQ-7769-014/NQQ-7769-014_detalhe1.jpg?ts=1774268498" },
+      { store: "InterStore", price: 208.89, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419711723886005561394064&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-7769-014", title: "Camisa Internacional Away 21/22 s/n° Torcedor Adidas Masculina - Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-2122-sn-torcedor-adidas-masculina/14/NQQ-7769-014/NQQ-7769-014_zoom1.jpg?ts=1774268498" },
     ],
   },
 {
@@ -50593,7 +50593,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 279.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975016440527747547227&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB8-4754-685", title: "Camisa Internacional Away 23/24 s/n° Torcedor Adidas Masculina - Vermelho Escuro+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-2324-sn-torcedor-adidas-masculina/85/FB8-4754-685/FB8-4754-685_detalhe1.jpg?ts=1776138554" },
+      { store: "InterStore", price: 279.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541975016440527747547227&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB8-4754-685", title: "Camisa Internacional Away 23/24 s/n° Torcedor Adidas Masculina - Vermelho Escuro+Branco", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-ii-2324-sn-torcedor-adidas-masculina/85/FB8-4754-685/FB8-4754-685_zoom1.jpg?ts=1776138554" },
     ],
   },
 {
@@ -50605,7 +50605,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 199.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541978004609321016172595&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-7767-016", title: "Camisa Internacional Home 21/22 s/n° Torcedor Adidas Masculina - Vermelho", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-i-2122-sn-torcedor-adidas-masculina/16/NQQ-7767-016/NQQ-7767-016_detalhe1.jpg?ts=1771085480" },
+      { store: "InterStore", price: 199.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541978004609321016172595&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-7767-016", title: "Camisa Internacional Home 21/22 s/n° Torcedor Adidas Masculina - Vermelho", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-i-2122-sn-torcedor-adidas-masculina/16/NQQ-7767-016/NQQ-7767-016_zoom1.jpg?ts=1771085480" },
     ],
   },
 {
@@ -50617,7 +50617,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 148.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419713274374900693886412&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-3852-042", title: "Camisa Internacional Third 20/21 s/n° Torcedor Adidas Masculina - Laranja", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-iii-2021-sn-torcedor-adidas-masculina/42/NQQ-3852-042/NQQ-3852-042_detalhe1.jpg?ts=1771540102" },
+      { store: "InterStore", price: 148.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419713274374900693886412&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FNQQ-3852-042", title: "Camisa Internacional Third 20/21 s/n° Torcedor Adidas Masculina - Laranja", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-iii-2021-sn-torcedor-adidas-masculina/42/NQQ-3852-042/NQQ-3852-042_zoom1.jpg?ts=1771540102" },
     ],
   },
 {
@@ -50629,7 +50629,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 279.89, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541978880783118025568854&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB8-8311-377", title: "Camisa Internacional Third 23/24 s/n° Torcedor Adidas Masculina - Mescla Escuro", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-iii-2324-sn-torcedor-adidas-masculina/77/FB8-8311-377/FB8-8311-377_detalhe1.jpg?ts=1776032486" },
+      { store: "InterStore", price: 279.89, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541978880783118025568854&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB8-8311-377", title: "Camisa Internacional Third 23/24 s/n° Torcedor Adidas Masculina - Mescla Escuro", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-iii-2324-sn-torcedor-adidas-masculina/77/FB8-8311-377/FB8-8311-377_zoom1.jpg?ts=1776032486" },
     ],
   },
 {
@@ -50641,7 +50641,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 209.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541973865942445866076883&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB9-8507-174", title: "Camisa Internacional Third 24/25 s/n° Torcedor Adidas Masculina - Cinza+Vermelho", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-iii-2425-sn-torcedor-adidas-masculina/74/FB9-8507-174/FB9-8507-174_detalhe1.jpg?ts=1772101895" },
+      { store: "InterStore", price: 209.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.541973865942445866076883&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB9-8507-174", title: "Camisa Internacional Third 24/25 s/n° Torcedor Adidas Masculina - Cinza+Vermelho", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-internacional-iii-2425-sn-torcedor-adidas-masculina/74/FB9-8507-174/FB9-8507-174_zoom1.jpg?ts=1772101895" },
     ],
   },
 {
@@ -50653,7 +50653,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "InterStore", price: 329.89, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419716206797653737558836&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB9-4331-016", title: "Camisa Polo Internacional Treino 24/25 Adidas Masculina - Vermelho", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-polo-internacional-treino-2425-adidas-masculina/16/FB9-4331-016/FB9-4331-016_detalhe1.jpg?ts=1765296774" },
+      { store: "InterStore", price: 329.89, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005478.5419716206797653737558836&type=15&murl=https%3A%2F%2Fwww.lojadointer.com.br%2FFB9-4331-016", title: "Camisa Polo Internacional Treino 24/25 Adidas Masculina - Vermelho", inStock: true, sizes: ["M"], imageUrl: "http://static.lojadointer.com.br/produtos/camisa-polo-internacional-treino-2425-adidas-masculina/16/FB9-4331-016/FB9-4331-016_zoom1.jpg?ts=1765296774" },
     ],
   },
 {
@@ -50665,7 +50665,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "CruzeiroStore", price: 129.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541986604544585587718398&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FT70-2109-014", title: "Camisa Cruzeiro RetrôMania Libertadores 1976 Away Masculina - Branco", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-retromania-libertadores-1976-ii-masculina/14/T70-2109-014/T70-2109-014_detalhe1.jpg?ts=1774153037" },
+      { store: "CruzeiroStore", price: 129.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541986604544585587718398&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FT70-2109-014", title: "Camisa Cruzeiro RetrôMania Libertadores 1976 Away Masculina - Branco", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-retromania-libertadores-1976-ii-masculina/14/T70-2109-014/T70-2109-014_zoom1.jpg?ts=1774153037" },
     ],
   },
 {
@@ -50677,7 +50677,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "CruzeiroStore", price: 129.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.5419817312993031321570960&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FT70-2114-008", title: "Camisa Cruzeiro RetrôMania Libertadores 1976 Home Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-retromania-libertadores-1976-i-masculina/08/T70-2114-008/T70-2114-008_detalhe1.jpg?ts=1776224394" },
+      { store: "CruzeiroStore", price: 129.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.5419817312993031321570960&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FT70-2114-008", title: "Camisa Cruzeiro RetrôMania Libertadores 1976 Home Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-retromania-libertadores-1976-i-masculina/08/T70-2114-008/T70-2114-008_zoom1.jpg?ts=1776224394" },
     ],
   },
 {
@@ -50689,7 +50689,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "LojaPST", price: 152.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.5421316995028716922466792&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-3004-028", title: "Camisa Sport Recife Away 22/23 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-recife-ii-2223-sn-torcedor-umbro-masculina/28/2IA-3004-028/2IA-3004-028_detalhe1.jpg?ts=1775786625" },
+      { store: "LojaPST", price: 152.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.5421316995028716922466792&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-3004-028", title: "Camisa Sport Recife Away 22/23 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-recife-ii-2223-sn-torcedor-umbro-masculina/28/2IA-3004-028/2IA-3004-028_zoom1.jpg?ts=1775786625" },
     ],
   },
 {
@@ -50701,7 +50701,7 @@ const productsData = [
     colorHexSecondary: "#000000",
     jerseyPattern: "solid",
     offers: [
-      { store: "LojaPST", price: 135.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.542139251540848987279569&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-5061-028", title: "Sport Recife Camisa Sport Away 23/24 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-ii-2324-sn-torcedor-umbro-masculina/28/2IA-5061-028/2IA-5061-028_detalhe1.jpg?ts=1776195224" },
+      { store: "LojaPST", price: 135.9, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005489.542139251540848987279569&type=15&murl=https%3A%2F%2Fwww.lojapst.com.br%2F2IA-5061-028", title: "Sport Recife Camisa Sport Away 23/24 s/n° Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.lojapst.com.br/produtos/camisa-sport-ii-2324-sn-torcedor-umbro-masculina/28/2IA-5061-028/2IA-5061-028_zoom1.jpg?ts=1776195224" },
     ],
   },
 {
@@ -71339,7 +71339,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "ShopTimao", price: 399.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005481.542003393979239382104366&type=15&murl=https%3A%2F%2Fwww.shoptimao.com.br%2FJD8-9922-028", title: "Camisa Corinthians Home 25/26 s/n Jogador Nike Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.shoptimao.com.br/produtos/camisa-corinthians-i-2526-sn-jogador-nike-masculina/28/JD8-9922-028/JD8-9922-028_detalhe1.jpg?ts=1776222827" },
+      { store: "ShopTimao", price: 399.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005481.542003393979239382104366&type=15&murl=https%3A%2F%2Fwww.shoptimao.com.br%2FJD8-9922-028", title: "Camisa Corinthians Home 25/26 s/n Jogador Nike Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.shoptimao.com.br/produtos/camisa-corinthians-i-2526-sn-jogador-nike-masculina/28/JD8-9922-028/JD8-9922-028_zoom1.jpg?ts=1776222827" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcorinthians-home-soccer-jersey-2025-26%3Fvariant%3D42712492179561", title: "Corinthians Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Corinthians_home_jersey_202526_1.webp?v=1764235547" },
     ],
   },
@@ -71352,7 +71352,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "CruzeiroStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541982892920953585834776&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-3556-008", title: "Camisa Cruzeiro Home 25/26 s/n Torcedor Adidas Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-i-2526-sn-torcedor-adidas-masculina/08/FBA-3556-008/FBA-3556-008_detalhe1.jpg?ts=1776222515" },
+      { store: "CruzeiroStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2005479.541982892920953585834776&type=15&murl=https%3A%2F%2Floja.cruzeiro.com.br%2FFBA-3556-008", title: "Camisa Cruzeiro Home 25/26 s/n Torcedor Adidas Masculina - Azul", inStock: true, sizes: ["M"], imageUrl: "https://static.cruzeiro.com.br/produtos/camisa-cruzeiro-i-2526-sn-torcedor-adidas-masculina/08/FBA-3556-008/FBA-3556-008_zoom1.jpg?ts=1776222515" },
     ],
   },
 {
