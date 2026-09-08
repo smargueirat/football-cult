@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/lib/i18n/LocaleLink";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { CategoryKey } from "@/data/products";

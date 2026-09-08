@@ -96,7 +96,8 @@ function bestOfferForCurrencyAndCountry(
 export function buildShoppingFeedXml(
   currency: Offer["currency"],
   country: CountryCode,
-  requireExplicitWorldwide = false
+  requireExplicitWorldwide = false,
+  locale: string = "es"
 ): string {
   const items = products
     .map((product) => {
@@ -114,7 +115,7 @@ export function buildShoppingFeedXml(
       const type = typeNames[product.typeKey].es;
       const title = `${team} ${type} ${product.season}`;
       const description = `Camiseta ${type.toLowerCase()} de ${team}, temporada ${product.season}. Comparación de precio real en Football Cult.`;
-      const link = `${SITE_URL}/camiseta/${product.id}`;
+      const link = `${SITE_URL}/${locale}/camiseta/${product.id}`;
       const ageGroup = getAgeGroup(product);
       const colorName = COLOR_NAME_ES[productColorKey(product)];
       const imageUrl = upsizeIfResizable(offer.imageUrl);

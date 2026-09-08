@@ -4,9 +4,9 @@ import {
   createContext,
   useContext,
   useEffect,
-  useState,
   ReactNode,
 } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { Locale, translations, Translations } from "./translations";
 
 interface LanguageContextValue {
@@ -19,36 +19,31 @@ const LanguageContext = createContext<LanguageContextValue | undefined>(
   undefined
 );
 
-const STORAGE_KEY = "football-cult-locale";
+const COOKIE_KEY = "football-cult-locale";
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("es");
-
-  useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY) as Locale | null;
-    if (stored === "es" || stored === "en" || stored === "pt" || stored === "fr" || stored === "it") {
-      setLocaleState(stored);
-      return;
-    }
-    const browserLang = window.navigator.language?.toLowerCase();
-    if (browserLang && browserLang.startsWith("en")) {
-      setLocaleState("en");
-    } else if (browserLang && browserLang.startsWith("pt")) {
-      setLocaleState("pt");
-    } else if (browserLang && browserLang.startsWith("fr")) {
-      setLocaleState("fr");
-    } else if (browserLang && browserLang.startsWith("it")) {
-      setLocaleState("it");
-    }
-  }, []);
+export function LanguageProvider({
+  initialLocale,
+  children,
+}: {
+  initialLocale: Locale;
+  children: ReactNode;
+}) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = initialLocale;
 
   useEffect(() => {
     document.documentElement.lang = locale;
   }, [locale]);
 
   function setLocale(next: Locale) {
-    setLocaleState(next);
-    window.localStorage.setItem(STORAGE_KEY, next);
+    if (next === locale) return;
+    // 1 año -- el proxy la lee para decidir a qué locale mandar una
+    // visita nueva a "/", así la elección manual sobrevive entre
+    // sesiones igual que antes hacía el localStorage.
+    document.cookie = `${COOKIE_KEY}=${next}; path=/; max-age=31536000; samesite=lax`;
+    const rest = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "");
+    router.push(`/${next}${rest}`);
   }
 
   return (

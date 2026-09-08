@@ -6,7 +6,7 @@ import { buildShoppingFeedXml } from "@/lib/shoppingFeed";
 export const dynamic = "force-static";
 
 export async function GET() {
-  const xml = buildShoppingFeedXml("ARS", "AR");
+  const xml = buildShoppingFeedXml("ARS", "AR", false, "es");
   return new Response(xml, {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
