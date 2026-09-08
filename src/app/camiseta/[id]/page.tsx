@@ -18,9 +18,16 @@ const SITE_URL = "https://football-cult.com";
 function productJsonLd(product: Product) {
   const team = teamNames[product.teamKey].es;
   const type = typeNames[product.typeKey].es;
-  const inStockOffers = product.offers.filter((o) => o.inStock);
   const image = bestOffer(product)?.imageUrl;
 
+  // Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
+  // de un producto están agotadas, esto antes omitía "offers" del todo --
+  // Google exige que un Product declare "offers", "review" o
+  // "aggregateRating" (ninguno de los otros dos existe acá), así que esas
+  // páginas quedaban con datos estructurados inválidos. Se listan todas
+  // las ofertas reales (no solo las in-stock) marcando la disponibilidad
+  // real de cada una -- sigue siendo precio/tienda genuinos, no inventa
+  // stock que no existe.
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -28,16 +35,16 @@ function productJsonLd(product: Product) {
     image: image ? [image] : undefined,
     url: `${SITE_URL}/camiseta/${product.id}`,
     ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
-    offers: inStockOffers.length
-      ? inStockOffers.map((o) => ({
-          "@type": "Offer",
-          url: o.url,
-          price: o.price,
-          priceCurrency: o.currency,
-          availability: "https://schema.org/InStock",
-          seller: { "@type": "Organization", name: o.store },
-        }))
-      : undefined,
+    offers: product.offers.map((o) => ({
+      "@type": "Offer",
+      url: o.url,
+      price: o.price,
+      priceCurrency: o.currency,
+      availability: o.inStock
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
+      seller: { "@type": "Organization", name: o.store },
+    })),
   };
 }
 
