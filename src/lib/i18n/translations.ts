@@ -173,6 +173,7 @@ export interface Translations {
     sizeGuide: string;
     authenticity: string;
     brazil: string;
+    argentina: string;
     disclaimer: string;
   };
   about: {
@@ -212,6 +213,17 @@ export interface Translations {
     storesText: string;
     clubsTitle: string;
     clubsText: string;
+    heritageTitle: string;
+    heritageText: string;
+    note: string;
+  };
+  argentina: {
+    title: string;
+    intro: string;
+    comparisonTitle: string;
+    comparisonText: string;
+    retroTitle: string;
+    retroText: string;
     heritageTitle: string;
     heritageText: string;
     note: string;
@@ -521,6 +533,7 @@ export const translations: Record<Locale, Translations> = {
       sizeGuide: "Guía de tallas",
       authenticity: "Autenticidad",
       brazil: "Fútbol brasileño",
+      argentina: "Fútbol argentino",
       disclaimer:
         "Football Cult es un comparador de precios. No vendemos productos directamente: te redirigimos a tiendas de terceros para completar tu compra. Algunos enlaces son enlaces de afiliado, lo que significa que podemos recibir una comisión sin costo adicional para vos.",
     },
@@ -564,6 +577,17 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Camisetas con historia",
       heritageText: "Algunas camisetas de la selección brasileña en el catálogo llevan la etiqueta 'La Crónica de la Prenda', con el contexto real del partido en el que se usaron y una fuente citada — como la camiseta de la final del Mundial de Estados Unidos 1994.",
       note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí. En el caso de las cinco tiendas oficiales de club, eso significa comprar directo con Santos, Internacional, Cruzeiro, Corinthians o Sport Recife — no con un revendedor no oficial.",
+    },
+    argentina: {
+      title: "Fútbol argentino",
+      intro: "En Football Cult comparamos precios de camisetas de la Selección Argentina, desde el archivo retro hasta la titular actual, en 28 productos distintos del catálogo.",
+      comparisonTitle: "Dónde de verdad hay comparación de precio",
+      comparisonText: "La camiseta titular de la Selección 2026 es la más comparada del catálogo argentino: la misma camiseta aparece en 12 tiendas distintas, y la visitante en 7. Además del uniforme principal, el catálogo también tiene talles de niños, arquero, entrenamiento y prepartido.",
+      retroTitle: "Archivo retro hasta 1982",
+      retroText: "Sumamos camisetas retro de la Selección desde 1982 hasta hoy, incluyendo las dos ediciones (titular y visitante) usadas en la consagración de Qatar 2022.",
+      heritageTitle: "Camisetas con historia",
+      heritageText: "La camiseta titular de Qatar 2022 en el catálogo lleva la etiqueta 'La Crónica de la Prenda', citando el partido real en el que se usó — la final del 18 de diciembre de 2022 ante Francia, resuelta por penales.",
+      note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí. Además de las tiendas europeas que comparamos para la Selección, la tienda oficial argentina de Puma (ar.puma.com) también está integrada al catálogo para camisetas de Independiente, el club que viste su marca.",
     },
     priceDrop: {
       eyebrow: "Ofertas del día",
@@ -875,6 +899,7 @@ export const translations: Record<Locale, Translations> = {
       sizeGuide: "Guia de tamanhos",
       authenticity: "Autenticidade",
       brazil: "Futebol brasileiro",
+      argentina: "Futebol argentino",
       disclaimer:
         "Football Cult é um comparador de preços. Não vendemos produtos diretamente: te redirecionamos para lojas terceiras para concluir sua compra. Alguns links são links de afiliado, o que significa que podemos receber uma comissão sem custo adicional para você.",
     },
@@ -918,6 +943,17 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Camisas com história",
       heritageText: "Algumas camisas da seleção brasileira no catálogo trazem o selo 'A Crônica da Camisa', com o contexto real da partida em que foram usadas e uma fonte citada — como a camisa da final da Copa do Mundo dos Estados Unidos 1994.",
       note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá. No caso das cinco lojas oficiais de clube, isso significa comprar direto com Santos, Internacional, Cruzeiro, Corinthians ou Sport Recife — não com um revendedor não oficial.",
+    },
+    argentina: {
+      title: "Futebol argentino",
+      intro: "Na Football Cult comparamos preços de camisas da seleção argentina, do arquivo retrô até a titular atual, em 28 produtos diferentes do catálogo.",
+      comparisonTitle: "Onde a comparação de preço é real",
+      comparisonText: "A camisa titular 2026 é a mais comparada do catálogo argentino: a mesma camisa aparece em 12 lojas diferentes, e a visitante em 7. Além dos uniformes principais, o catálogo também traz tamanhos infantis, goleiro, treino e pré-jogo.",
+      retroTitle: "Arquivo retrô até 1982",
+      retroText: "Adicionamos camisas retrô da seleção argentina desde 1982 até hoje, incluindo as duas edições (titular e visitante) usadas na conquista do Catar 2022.",
+      heritageTitle: "Camisas com história",
+      heritageText: "A camisa titular do Catar 2022 no catálogo traz o selo 'A Crônica da Camisa', citando a partida real em que foi usada — a final de 18 de dezembro de 2022 contra a França, decidida nos pênaltis.",
+      note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá. Além das lojas europeias que comparamos para a seleção, a loja oficial argentina da Puma (ar.puma.com) também está integrada ao catálogo para camisas do Independiente, o clube que veste a marca.",
     },
     priceDrop: {
       eyebrow: "Ofertas do dia",
@@ -1229,6 +1265,7 @@ export const translations: Record<Locale, Translations> = {
       sizeGuide: "Size Guide",
       authenticity: "Authenticity",
       brazil: "Brazilian Football",
+      argentina: "Argentine Football",
       disclaimer:
         "Football Cult is a price comparison site. We don't sell products directly: we redirect you to third-party stores to complete your purchase. Some links are affiliate links, meaning we may earn a commission at no extra cost to you.",
     },
@@ -1272,6 +1309,17 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Jerseys with history",
       heritageText: "Some Brazilian national team jerseys in the catalog carry the \"Shirt's Chronicle\" label, with real context about the match they were worn in and a cited source — like the shirt from the 1994 World Cup final in the United States.",
       note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there. For the five official club stores, that means buying directly from Santos, Internacional, Cruzeiro, Corinthians, or Sport Recife — not from an unofficial reseller.",
+    },
+    argentina: {
+      title: "Argentine Football",
+      intro: "At Football Cult we compare jersey prices for the Argentine national team, from the retro archive to the current home kit, across 28 different products in the catalog.",
+      comparisonTitle: "Where price comparison is real",
+      comparisonText: "The 2026 home jersey is the most-compared item in the Argentine catalog: the same jersey appears across 12 different stores, and the away kit across 7. Beyond the main kits, the catalog also covers kids' sizes, goalkeeper, training, and pre-match jerseys.",
+      retroTitle: "A retro archive back to 1982",
+      retroText: "We've added retro Argentina jerseys from 1982 to today, including both the home and away editions worn during the Qatar 2022 title win.",
+      heritageTitle: "Jerseys with history",
+      heritageText: "The Qatar 2022 home jersey in the catalog carries the \"Shirt's Chronicle\" label, citing the actual match it was worn in — the final on 18 December 2022 against France, decided on penalties.",
+      note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there. Beyond the European stores we compare for the national team, Puma's official Argentine store (ar.puma.com) is also integrated into the catalog for Independiente, the club whose kits Puma makes.",
     },
     priceDrop: {
       eyebrow: "Today's deals",
@@ -1583,6 +1631,7 @@ export const translations: Record<Locale, Translations> = {
       sizeGuide: "Guide des tailles",
       authenticity: "Authenticité",
       brazil: "Football brésilien",
+      argentina: "Football argentin",
       disclaimer:
         "Football Cult est un site de comparaison de prix. Nous ne vendons pas de produits directement : nous vous redirigeons vers des boutiques tierces pour finaliser votre achat. Certains liens sont des liens d'affiliation, ce qui signifie que nous pouvons percevoir une commission sans coût supplémentaire pour vous.",
     },
@@ -1626,6 +1675,17 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Des maillots chargés d'histoire",
       heritageText: "Certains maillots de la sélection brésilienne du catalogue portent le label « La Chronique du Maillot », avec le contexte réel du match dans lequel ils ont été portés et une source citée — comme le maillot de la finale de la Coupe du Monde 1994 aux États-Unis.",
       note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas. Pour les cinq boutiques officielles de club, cela signifie acheter directement auprès de Santos, Internacional, Cruzeiro, Corinthians ou Sport Recife — pas auprès d'un revendeur non officiel.",
+    },
+    argentina: {
+      title: "Football argentin",
+      intro: "Sur Football Cult, nous comparons les prix des maillots de la sélection argentine, de l'archive rétro au maillot domicile actuel, sur 28 produits différents du catalogue.",
+      comparisonTitle: "Là où la comparaison de prix est réelle",
+      comparisonText: "Le maillot domicile 2026 est l'article le plus comparé du catalogue argentin : le même maillot apparaît dans 12 boutiques différentes, et le maillot extérieur dans 7. Au-delà des maillots principaux, le catalogue couvre aussi les tailles enfant, gardien, entraînement et avant-match.",
+      retroTitle: "Une archive rétro remontant à 1982",
+      retroText: "Nous avons ajouté des maillots rétro de l'Argentine de 1982 à aujourd'hui, y compris les deux éditions (domicile et extérieur) portées lors du sacre au Qatar 2022.",
+      heritageTitle: "Des maillots chargés d'histoire",
+      heritageText: "Le maillot domicile du Qatar 2022 du catalogue porte le label « La Chronique du Maillot », avec le contexte réel du match dans lequel il a été porté — la finale du 18 décembre 2022 face à la France, décidée aux tirs au but.",
+      note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas. Au-delà des boutiques européennes que nous comparons pour la sélection, la boutique officielle argentine de Puma (ar.puma.com) est aussi intégrée au catalogue pour les maillots de l'Independiente, le club dont Puma équipe les joueurs.",
     },
     priceDrop: {
       eyebrow: "Les offres du jour",
@@ -1937,6 +1997,7 @@ export const translations: Record<Locale, Translations> = {
       sizeGuide: "Guida alle taglie",
       authenticity: "Autenticità",
       brazil: "Calcio brasiliano",
+      argentina: "Calcio argentino",
       disclaimer:
         "Football Cult è un sito di comparazione prezzi. Non vendiamo prodotti direttamente: ti reindirizziamo verso negozi di terze parti per completare l'acquisto. Alcuni link sono link di affiliazione, il che significa che potremmo guadagnare una commissione senza costi aggiuntivi per te.",
     },
@@ -1980,6 +2041,17 @@ export const translations: Record<Locale, Translations> = {
       heritageTitle: "Maglie con una storia",
       heritageText: "Alcune maglie della nazionale brasiliana nel catalogo portano l'etichetta \"La Cronaca della Maglia\", con il contesto reale della partita in cui sono state indossate e una fonte citata — come la maglia della finale dei Mondiali del 1994 negli Stati Uniti.",
       note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì. Per i cinque negozi ufficiali di club, questo significa comprare direttamente da Santos, Internacional, Cruzeiro, Corinthians o Sport Recife — non da un rivenditore non ufficiale.",
+    },
+    argentina: {
+      title: "Calcio argentino",
+      intro: "Su Football Cult confrontiamo i prezzi delle maglie della nazionale argentina, dall'archivio retro alla maglia attuale, su 28 prodotti diversi del catalogo.",
+      comparisonTitle: "Dove il confronto di prezzo è reale",
+      comparisonText: "La maglia titolare 2026 è l'articolo più confrontato del catalogo argentino: la stessa maglia compare in 12 negozi diversi, e quella da trasferta in 7. Oltre alle maglie principali, il catalogo copre anche taglie bambino, portiere, allenamento e pre-partita.",
+      retroTitle: "Un archivio retro fino al 1982",
+      retroText: "Abbiamo aggiunto maglie retro dell'Argentina dal 1982 a oggi, incluse entrambe le edizioni (titolare e trasferta) indossate nella conquista del Qatar 2022.",
+      heritageTitle: "Maglie con una storia",
+      heritageText: "La maglia titolare del Qatar 2022 nel catalogo porta l'etichetta \"La Cronaca della Maglia\", con il contesto reale della partita in cui è stata indossata — la finale del 18 dicembre 2022 contro la Francia, decisa ai rigori.",
+      note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì. Oltre ai negozi europei che confrontiamo per la nazionale, anche il negozio ufficiale argentino di Puma (ar.puma.com) è integrato nel catalogo per le maglie dell'Independiente, il club di cui Puma è sponsor tecnico.",
     },
     priceDrop: {
       eyebrow: "Le offerte di oggi",

@@ -34,6 +34,9 @@ export default function Footer() {
           <Link href="/brasil" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.brazil}
           </Link>
+          <Link href="/argentina" className="transition-colors hover:text-[#F3E9C9]">
+            {t.footer.argentina}
+          </Link>
         </nav>
       </div>
       <div className="vintage-divider mx-6 max-w-6xl sm:mx-auto" />
