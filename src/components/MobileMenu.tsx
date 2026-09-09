@@ -3,21 +3,22 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { CategoryKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import Portal from "./Portal";
 
 export default function MobileMenu() {
   const { t } = useLanguage();
-  const { setCategoryFilter, setQuery } = useSearchFilter();
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
-  const links: { label: string; href: string; category?: CategoryKey | "all" }[] = [
-    { label: t.nav.search, href: "/", category: "all" },
-    { label: t.categoriesMenu.national, href: "/", category: "national" },
-    { label: t.categoriesMenu.clubs, href: "/", category: "club" },
+  // Cada ítem lleva a su propia página (igual que el resto del rediseño
+  // por secciones) en vez de filtrar + navegar al home.
+  const links: { label: string; href: string }[] = [
+    { label: t.nav.search, href: "/" },
+    { label: t.categoriesMenu.national, href: "/selecciones" },
+    { label: t.categoriesMenu.clubs, href: "/clubes" },
+    { label: t.categoriesMenu.retro, href: "/retro" },
+    { label: "Botas", href: "/botas" },
     { label: t.recentlyViewed.title, href: "/vistos-recientemente" },
     { label: t.nav.about, href: "/sobre-nosotros" },
     { label: t.nav.contact, href: "/contacto" },
@@ -25,10 +26,6 @@ export default function MobileMenu() {
 
   function handleClick(link: (typeof links)[number]) {
     setOpen(false);
-    if (link.category) {
-      setQuery("");
-      setCategoryFilter(link.category === "all" ? [] : [link.category]);
-    }
     router.push(link.href);
   }
 

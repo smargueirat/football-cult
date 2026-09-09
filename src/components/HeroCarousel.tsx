@@ -1,33 +1,30 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { getDisplaySrc } from "@/lib/images";
+import { SECTION_PATHS, SECTION_PHOTOS } from "@/lib/sections";
 
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = 6;
 const AUTO_ADVANCE_MS = 5500;
 
-// Foto exacta curada a mano por slide -- se revisaron las fotos reales
-// del catálogo (no cualquier oferta del producto: la URL puntual que
-// se ve acá) y se eligió la mejor concreta de cada categoría, siempre
-// con una persona puesta la camiseta (apparel-on-model, no flat lay ni
-// maniquí fantasma) -- cada URL se descargó y se miró antes de usarla.
-// Se usa la URL de alta resolución del proveedor directamente (no el
-// thumbnail chico que guarda la oferta) para que se vea nítida a este
-// tamaño. Refresh semanal (routine "refresh weekly hero banner
-// photos"): se rota a fotos distintas de las de la semana anterior.
-const CURATED_SLIDE_PHOTOS: string[] = [
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/cb30bb7e33dc49afa7d3dcb0da3bdb4a_9366/Camiseta_primera_equipacion_Colombia_26_Amarillo_JL6972_21_model.jpg", // selecciones: Colombia 2026, con modelo
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/1326ee23fe114676909df9508f1e3b61_9366/Camiseta_primera_equipacion_de_Boca_Juniors_25-26_Azul_JJ4298_21_model.jpg", // clubes: Boca Juniors 25/26, con modelo
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/1eb1081d24de4c72a3aba41d9be1025b_9366/Camiseta_segunda_equipacion_Newcastle_United_FC_95-96_Azul_JM8252_21_model.jpg", // retro: Newcastle United 1995/96 away, con modelo
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/94ae188e712c487f9e28e47fcc83803b_9366/Camiseta_primera_equipacion_Alemania_2007_Blanco_KD3997_21_model.jpg", // mujer: Alemania 2007, con modelo
-  "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp", // niños: Italia 2026, con modelo
-];
+// Fotos y rutas reales compartidas con CategorySections (mismo orden que
+// heroSlides en translations.ts) -- ver src/lib/sections.ts. Nota sobre
+// la foto de botas: a diferencia de las camisetas (las tiendas de
+// indumentaria SIEMPRE tienen una foto "puesta" en modelo), se buscó en
+// Futbol Emotion, Forum Sport, adidas.es y Nike.es una foto de una bota
+// puesta en un pie/jugador real, y las cuatro solo publican fotos de
+// producto plano (estudio, sin persona) -- es una norma real de cómo se
+// fotografía calzado de fútbol en retail, no una limitación nuestra. Se
+// usa la mejor foto de producto real disponible en vez de forzar/inventar
+// una "on-model".
+const CURATED_SLIDE_PHOTOS = SECTION_PHOTOS;
+const SLIDE_PATHS = SECTION_PATHS;
 
 export default function HeroCarousel() {
-  const { t } = useLanguage();
-  const filters = useSearchFilter();
+  const { t, locale } = useLanguage();
+  const router = useRouter();
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const reducedMotion = useRef(false);
@@ -100,15 +97,8 @@ export default function HeroCarousel() {
     setActive((cur) => (cur + 1) % SLIDE_COUNT);
   }
 
-  function applyFilterAndScroll(index: number) {
-    filters.setQuery("");
-    filters.clearAllFilters();
-    if (index === 0) filters.setCategoryFilter(["national"]);
-    else if (index === 1) filters.setCategoryFilter(["club"]);
-    else if (index === 2) filters.setTypeFilter(["retro"]);
-    else if (index === 3) filters.setAgeGroupFilter(["women"]);
-    else filters.setAgeGroupFilter(["kids"]);
-    document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" });
+  function goToSection(index: number) {
+    router.push(`/${locale}${SLIDE_PATHS[index]}`);
   }
 
   return (
@@ -156,7 +146,7 @@ export default function HeroCarousel() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                applyFilterAndScroll(i);
+                goToSection(i);
               }}
               className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:text-xs"
             >

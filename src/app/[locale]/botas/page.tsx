@@ -22,7 +22,7 @@ export async function generateMetadata({
 
 export default function BotasPage() {
   return (
-    <div className="mx-auto w-full max-w-6xl px-3 py-8 sm:px-6">
+    <div className="mx-auto w-full max-w-[1800px] px-4 py-8 sm:px-8">
       <div className="mb-6">
         <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">
           Botas de fútbol
@@ -32,7 +32,7 @@ export default function BotasPage() {
           Emotion y Forum Sport.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 2xl:grid-cols-6">
         {bootProducts.map((product) => {
           const cheapest = product.offers.reduce((a, b) =>
             a.price + a.shipping <= b.price + b.shipping ? a : b

@@ -18,6 +18,8 @@ export const PRICE_RANGE_MIN = 0;
 export const PRICE_RANGE_MAX = 300;
 export type PriceRange = [number, number];
 
+export type SectionKey = "all" | "jerseys" | "boots";
+
 function toggle<T>(list: T[], value: T): T[] {
   return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
 }
@@ -53,6 +55,11 @@ interface SearchFilterValue {
   colorFilter: ColorKey[];
   toggleColorFilter: (c: ColorKey) => void;
   setColorFilter: (c: ColorKey[]) => void;
+  // "all" (por defecto) mezcla camisetas y botas; "jerseys"/"boots"
+  // aíslan una sola sección. Las páginas de categoría (clubes, retro,
+  // etc.) fuerzan "jerseys" al montar -- ahí las botas no pintan nada.
+  sectionFilter: SectionKey;
+  setSectionFilter: (s: SectionKey) => void;
   priceRange: PriceRange;
   setPriceRange: (p: PriceRange) => void;
   // Booleano simple (no multi-selección como el resto) -- "en baja" no
@@ -90,6 +97,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [storeFilter, setStoreFilter] = useState<string[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
   const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
+  const [sectionFilter, setSectionFilter] = useState<SectionKey>("all");
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
   const [onSaleFilter, setOnSaleFilter] = useState(false);
   const [sortBy, setSortBy] = useState<SortKey>("relevance");
@@ -136,6 +144,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         colorFilter,
         toggleColorFilter: (c) => setColorFilter((cur) => toggle(cur, c)),
         setColorFilter,
+        sectionFilter,
+        setSectionFilter,
         priceRange,
         setPriceRange,
         onSaleFilter,
@@ -153,6 +163,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setStoreFilter([]);
           setSizeFilter([]);
           setColorFilter([]);
+          setSectionFilter("all");
           setPriceRange([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
           setOnSaleFilter(false);
         },

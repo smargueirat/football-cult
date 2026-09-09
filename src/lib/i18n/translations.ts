@@ -451,6 +451,12 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Camisetas infantiles de sus ídolos, en los talles que necesitás.",
         cta: "Ver camisetas de niños",
       },
+      {
+        eyebrow: "Botas de fútbol",
+        title: "La bota que te lleva a la cancha",
+        subtitle: "Nike, adidas y Puma comparadas entre tiendas reales -- mismo modelo, distinto precio.",
+        cta: "Ver botas",
+      },
     ],
     featured: {
       eyebrow: "Joyas del catálogo",
@@ -840,6 +846,12 @@ export const translations: Record<Locale, Translations> = {
         title: "A próxima geração",
         subtitle: "Camisas infantis dos ídolos deles, nos tamanhos que você precisa.",
         cta: "Ver camisas infantis",
+      },
+      {
+        eyebrow: "Chuteiras de futebol",
+        title: "A chuteira que te leva pro campo",
+        subtitle: "Nike, adidas e Puma comparadas entre lojas reais -- mesmo modelo, preço diferente.",
+        cta: "Ver chuteiras",
       },
     ],
     featured: {
@@ -1231,6 +1243,12 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Kids jerseys of their idols, in the sizes you need.",
         cta: "Shop kids",
       },
+      {
+        eyebrow: "Football boots",
+        title: "The boots that get you on the pitch",
+        subtitle: "Nike, adidas and Puma compared across real stores -- same model, different price.",
+        cta: "Shop boots",
+      },
     ],
     featured: {
       eyebrow: "Catalog gems",
@@ -1621,6 +1639,12 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Les maillots enfant de leurs idoles, dans les tailles qu'il vous faut.",
         cta: "Voir la collection enfant",
       },
+      {
+        eyebrow: "Chaussures de football",
+        title: "Les crampons qui vous mènent sur le terrain",
+        subtitle: "Nike, adidas et Puma comparés entre boutiques réelles -- même modèle, prix différent.",
+        cta: "Voir les chaussures",
+      },
     ],
     featured: {
       eyebrow: "Pépites du catalogue",
@@ -2010,6 +2034,12 @@ export const translations: Record<Locale, Translations> = {
         title: "Future leggende",
         subtitle: "Le maglie bambino dei loro idoli, nelle taglie di cui hai bisogno.",
         cta: "Vedi la collezione bambino",
+      },
+      {
+        eyebrow: "Scarpe da calcio",
+        title: "Gli scarpini che ti portano in campo",
+        subtitle: "Nike, adidas e Puma confrontati tra negozi reali -- stesso modello, prezzo diverso.",
+        cta: "Vedi le scarpe",
       },
     ],
     featured: {

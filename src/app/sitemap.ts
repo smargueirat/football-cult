@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/data/products";
+import { bootProducts } from "@/data/boots";
 import { LOCALES } from "@/lib/i18n/locales";
 
 const BASE_URL = "https://football-cult.com";
@@ -23,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/argentina",
     "/francia",
     "/italia",
+    "/botas",
+    "/selecciones",
+    "/clubes",
+    "/retro",
+    "/mujer",
+    "/ninos",
   ];
 
   const staticRoutes = staticPaths.flatMap((path) =>
@@ -42,5 +49,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   });
 
-  return [...staticRoutes, ...productRoutes];
+  const bootRoutes = bootProducts.flatMap((boot) => {
+    const path = `/botas/${boot.id}`;
+    return LOCALES.map((locale) => ({
+      url: `${BASE_URL}/${locale}${path}`,
+      lastModified: new Date(),
+      alternates: { languages: languagesFor(path) },
+    }));
+  });
+
+  return [...staticRoutes, ...productRoutes, ...bootRoutes];
 }
