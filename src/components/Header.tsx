@@ -47,6 +47,9 @@ export default function Header() {
               {t.nav.search}
             </Link>
             <CategoriesMenu />
+            <Link href="/botas" className="transition-colors hover:text-[#1a1a1a]">
+              Botas
+            </Link>
             <Link href="/sobre-nosotros" className="transition-colors hover:text-[#1a1a1a]">
               {t.nav.about}
             </Link>
