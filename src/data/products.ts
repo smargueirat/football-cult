@@ -22809,6 +22809,7 @@ const productsData = [
       { store: "Forum Sport", price: 80.09, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43105182526&a=3013769&m=23805", title: "Adidas argentina mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001070482-00-S-M-20251106101601.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk4M3xpbWFnZS9qcGVnfGFHTmtMMmd4TWk4eE16STVOVEV4TWpreE1qa3lOaTl0WldScFlYTmZNVEF3TVRBM01EUTRNbDh3TUY5VFgwMHRNakF5TlRFeE1EWXhNREUyTURFdWFuQm58Y2M1YWU3YWQzYzgwNDg3ZGE3NTMxOGZjYTQ2M2M5MTJlYzUwMTQzMzBjOTM5ZTllMDMyM2VjZDcwMmM3OWUyZQ&feedId=58083&k=f36a2438869fab2b31fd401ddb81b3eb714d86c5" },
       { store: "ForumSport", price: 74.75, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43105182493&a=3013769&m=23805", title: "Adidas argentina mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001070482-00-S-M-20251106101601.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk4M3xpbWFnZS9qcGVnfGFHTmtMMmd4TWk4eE16STVOVEV4TWpreE1qa3lOaTl0WldScFlYTmZNVEF3TVRBM01EUTRNbDh3TUY5VFgwMHRNakF5TlRFeE1EWXhNREUyTURFdWFuQm58Y2M1YWU3YWQzYzgwNDg3ZGE3NTMxOGZjYTQ2M2M5MTJlYzUwMTQzMzBjOTM5ZTllMDMyM2VjZDcwMmM3OWUyZQ&feedId=58083&k=f36a2438869fab2b31fd401ddb81b3eb714d86c5" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fargentina-afa-primera-equipacion-mundial-2026-blue", title: "Camiseta adidas Argentina Primera Equipación Mundial 2026", inStock: true, sizes: ["S", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/286086/750/camiseta-adidas-argentina-afa-primera-equipacion-mundial-2026-blue-1.jpg" },
+      { store: "Futbol Factory", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-seleccion-argentina-mundial-2026-nino-adidas-blanco-253344", title: "Camiseta 1ª Equipación Selección Argentina Mundial 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/253344_1.jpg" },
     ],
   },
 {
@@ -25157,6 +25158,7 @@ const productsData = [
       { store: "eBay", price: 76.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298399563573?_skw=Borussia+Dortmund+home+soccer+jersey&hash=item4579ffff35%3Ag%3ATDMAAeSwCXZqKB4f&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2025-26 Borussia Dortmund Men's Stadium Home Soccer Jersey XL NWT $100", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/TDMAAeSwCXZqKB4f/s-l1600.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fborussia-dortmund-home-soccer-jersey-2026-27%3Fvariant%3D42790993002601", title: "Yellow Wall FC Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Dortmundhomefan2026.jpg?v=1785314841" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fpuma%2Fbvb-borussia-primera-equipacion-2026-2027-faster-yellow-puma-black", title: "Camiseta Puma Bvb Borussia Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/328589/750/camiseta-puma-bvb-borussia-primera-equipacion-2026-2027-faster-yellow-puma-black-1.jpg" },
+      { store: "Futbol Factory", price: 79.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-borussia-dortmund-20262027-nino-puma-amarillo-259603", title: "Camiseta 1ª Equipación Borussia Dortmund 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/259603_1.jpg" },
     ],
   },
 {
@@ -25226,6 +25228,7 @@ const productsData = [
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb1996-maillot-domicile-eintracht-francfort-2026-27-sgered", title: "Maillot Domicile Eintracht Francfort 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb1996_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkb1996-maillot-domicile-eintracht-francfort-2026-27-sgered", title: "Maillot Domicile Eintracht Francfort 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb1996_1_apparel_photography_front_center_view_white.webp" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Feintracht-frankfurt-primera-equipacion-2026-2027-sge-red", title: "Camiseta adidas Eintracht Frankfurt Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/327068/750/camiseta-adidas-eintracht-frankfurt-primera-equipacion-2026-2027-sge-red-1.jpg" },
+      { store: "Futbol Factory", price: 89.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-eintracht-frankfurt-20262027-hombre-adidas-rojo-260081", title: "Camiseta 1ª Equipación Eintracht Frankfurt 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/260081_1.jpg" },
     ],
   },
 {
@@ -25672,6 +25675,7 @@ const productsData = [
       { store: "FootStoreFR", price: 90.89, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2032-011-maillot-de-gardien-manches-longues-inter-milan-2026-27-black-white", title: "Maillot de gardien manches longues Inter Milan 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii2032-011-black-white-6a5a59556dd1d-1.webp" },
       { store: "eBay", price: 89.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/278064996926?_skw=Inter+Milan+goalkeeper+soccer+jersey&hash=item40bdf7223e%3Ag%3AkIsAAeSwHC5qH29M&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY%2FinqRLTiufmnEGjYjH%2BHoxkIGusHoHdfeRK%2FN%2FWgLSmydvIOqVPM656ZVKfD3FMnhfMKbXNHV%2FyCafjxYsU8j8NY70s9rjoEze8ZvUagpTg8U62G%2BFD%2BaNuBuBxAtFHWDU5G6ivkOL1yxqHYbpyiUbTABPJ7vyFeRdU8JkmUJ6GxNo8fGedtQiK8BH1nh9N4r4zNNJKpvLuhC1Jwmh1eFNvu6tFOdOgA8wzp0Bpfbl9h7AXtiKZFDS%2F4x7PsPA8OmRiAHFoKjioZE9rh%2FFyShHuQpEleK%2FoXY3Qhe7u7qaCBNNx%2FyO4aCsItWcQ%2FFb2k%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW Nike Inter Milan 2026 Stadium Goalkeeper ACG Dri-FIT Jersey IB3145-100 Sz M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kIsAAeSwHC5qH29M/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 119.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Finter-milan-primera-equipacion-portero-ml-2026-2027-black", title: "Camiseta Nike Inter Milan Primera Equipación Portero M/L 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/336035/750/camiseta-nike-inter-milan-primera-equipacion-portero-ml-2026-2027-black-1.jpg" },
+      { store: "Futbol Factory", price: 119.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-portero-1a-inter-milan-20262027-stadium-hombre-nike-negro-261548", title: "Camiseta de portero 1ª Inter Milán 2026/2027 Stadium", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/261548_1.jpg" },
     ],
   },
 {
@@ -26404,6 +26408,7 @@ const productsData = [
       { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/205513536182?_skw=Nigeria+home+soccer+jersey&hash=item2fd98fb2b6%3Ag%3AkzcAAOSwlcxoNUuI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Nigeria Soccer Men Home 2025-26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kzcAAOSwlcxoNUuI/s-l1600.jpg" },
       { store: "Forum Sport", price: 127.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44373392837&a=3013769&m=23805", title: "Nike nigeria mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091620-00-S-M-20260318142738.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg2OXxpbWFnZS9qcGVnfGFEWmtMMmc0T1M4eE16WTBOak0yT1RRNE9Ea3lOaTl0WldScFlYTmZNVEF3TVRBNU1UWXlNRjh3TUY5VFgwMHRNakF5TmpBek1UZ3hOREkzTXpndWFuQm58MTBlZjNhYzkyZWVkMmU2OGM0NDE5ZWUzZmZmMGQwMmYwNzI5ZWEwOTZjZmEzZmNlMWJmNzM1NTQxZDdmYmVmNA&feedId=58083&k=ee5224c6d0a359cf8cd19089898631fe1264fcb3" },
       { store: "ForumSport", price: 127.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45361350393&a=3013769&m=23805", title: "Nike nigeria mundial 2026 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001104046-00-S-M-20260512104037.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAwMXxpbWFnZS9qcGVnfGFEa3dMMmd3TkM4eE16YzFPVEU0TURNd09EVXhNQzl0WldScFlYTmZNVEF3TVRFd05EQTBObDh3TUY5VFgwMHRNakF5TmpBMU1USXhNRFF3TXpjdWFuQm58YTcxMDZkMTVmMWQzZDQ5OTcwMzAwNzE1MzM3N2E5ZjUwMjlkNjgyZWU0YTA2MmJiYmViMTkzNmJhZDMyMmFiOQ&feedId=58083&k=69e0879308e3bc2e930d38386dcfff900650ac32" },
+      { store: "Futbol Factory", price: 79.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-nigeria-mundial-2026-hombre-nike-verde-256454", title: "Camiseta 1ª Equipación Nigeria Mundial 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/256454_1.jpg" },
     ],
   },
 {
@@ -26900,6 +26905,7 @@ const productsData = [
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800482156065?_skw=AC+Milan+training+soccer+jersey&hash=itemba60745e21%3Ag%3AAe8AAeSwbG9qc8ML&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYgmvAFvzks47gvAFy3yqHNHQy7F3Bwr%2FfzIpepVjKo0VN69XVQ3O%2Fbo3FnHGFqrq67EoE5xcBgQ3IJR5BcN3l1pydNNKDSKCyvF%2Fp5sccKo3fdhOsAMsBNJU1rI%2BPJwKlkjIRrVE94GRaRVHSwz8LXGP%2FWcVO5MiGSC8FSNd09aXsdkNelpA%2BO77a2DUOufduzVlBZdNNREUFQeVzjbceBQh%2FDSBDFItQIgahiln6AYQKTdisqs5vDIUdtWtpmrBqLWSf%2BRmCky8PH6HImXOXAw%2FAuxF679n9gstYMCQzz1ieD%2B0Jl628B8g%2FHjwi6tRQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Men’s Puma AC Milan Training Jersey M Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Ae8AAeSwbG9qc8ML/s-l1600.jpg" },
       { store: "Forum Sport", price: 50.89, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43797080410&a=3013769&m=23805", title: "Puma milan 25/26 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109461-00-S-M-20260122131630.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5OHxpbWFnZS9qcGVnfGFETmhMMmd6T0M4eE16VXhOREUyTkRrNU5EQTNPQzl0WldScFlYTmZNVEF3TVRFd09UUTJNVjh3TUY5VFgwMHRNakF5TmpBeE1qSXhNekUyTXpBdWFuQm58ZWI4OTg0YWQwY2QyMzYzZWUyMTVlNmExYjMyMDU2YTFjMTI1OWM4YjI4YTI4MmVkYzIwNzNkYjk4MDQyMTc5ZQ&feedId=58083&k=6423dbc51e9be450a38c7f106adf9565a2d89ef1" },
       { store: "ForumSport", price: 42.39, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43797080683&a=3013769&m=23805", title: "Puma milan 25/26 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109463-00-S-M-20260122131630.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAyOXxpbWFnZS9qcGVnfGFEbG1MMmd5WVM4eE16VXhOREUyTlRjNE1EVXhNQzl0WldScFlYTmZNVEF3TVRFd09UUTJNMTh3TUY5VFgwMHRNakF5TmpBeE1qSXhNekUyTXpBdWFuQm58M2Q2MTQ4OTUyOTkzMTI3OGViZjU0YzRiMjE1MGY4MDU4ZjY5OTk0NzQ5NzM5NzkyYWJmZDZjMmJlMDcyOGVjYQ&feedId=58083&k=42cfa69c6b07fdc1a9f3ce5262518787f90384f7" },
+      { store: "Futbol Factory", price: 17.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-ac-milan-20252026-tr-hombre-puma-negro-252983", title: "Camiseta de entrenamiento AC Milan 2025/2026 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/252983_1.jpg" },
     ],
   },
 {
@@ -26963,6 +26969,7 @@ const productsData = [
       { store: "AdidasES", price: 75.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094298181&a=3013769&m=77008", title: "Camiseta manga larga de entrenamiento Alemania 26 Tiro", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb3728813a35a42babab5894a0af4fb14_9366%2FCamiseta_manga_larga_de_entrenamiento_Alemania_26_Tiro_Blanco_KB4492_21_model.jpg&feedId=92152&k=d06b51c30d6b5bc5dd878bcdf5de0311917ebc98" },
       { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096965610&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Alemanha", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb3728813a35a42babab5894a0af4fb14_9366%2FCamisola_de_Treino_Tiro_26_da_Alemanha_Branco_KB4492_21_model.jpg&feedId=92150&k=19444333659af9a8a5e0d18ef5ec0c5ee1a56378" },
       { store: "eBay", price: 69.99, shipping: 24.99, currency: "USD", url: "https://www.ebay.com/itm/187746009940?_skw=Germany+training+soccer+jersey&hash=item2bb688c354%3Ag%3AXmIAAeSwBexpGYXj&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbdVZXFdUWoioP8mxmvgEjFIDCWRc%2BAQwpEUppUdgzusvwaIOfWkp6t6IH6PtHDpOlGzkaN13Px74LJDmzt2TJ7HD5IQm0lMwG6nPsYwM7wTchoXUmNmTysoAU8e0lhwYuvaU5JY5SPp2zWWl%2F2aHdd09cDHT%2FMZxJrzl9A6Os1UTone2WkqYVyL8B23aiTL6xoNwiQRYlBw3vgF86G1Ephtz3v8IMdTAqMYcuKw7E6oc%2F%2BWVN%2B0DSGyIwx16E7f56x%2FTl6jK0RFk6mmUN8rp4ju9xomHRrOQILagw9u4etRP37dVJO64DCCznY4UHasmc%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Germany 26 Tiro Mens Training Soccer Jersey Asia-Fit KB4489", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/XmIAAeSwBexpGYXj/s-l1600.jpg" },
+      { store: "Futbol Factory", price: 29.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-alemania-tr-mundial-2026-hombre-adidas-blanco-254089", title: "Camiseta de entrenamiento Alemania TR Mundial 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254089_1.jpg" },
     ],
   },
 {
@@ -27051,6 +27058,7 @@ const productsData = [
       { store: "AdidasPT", price: 75.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45047093504&a=3013769&m=77026", title: "Camisola de Treino Tiro 26/27 do Arsenal FC", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F80484e3631c64236b4ee5b8240613254_9366%2FCamisola_de_Treino_Tiro_26-27_do_Arsenal_FC_Preto_KC0002_21_model.jpg&feedId=92150&k=ba5f680add481171534932836015ab4669dc6b2b" },
       { store: "eBay", price: 150.0, shipping: 11.0, currency: "USD", url: "https://www.ebay.com/itm/206200271352?_skw=Arsenal+training+soccer+jersey&hash=item30027e71f8%3Ag%3AA9EAAeSwi0Vp1%7EP9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "25/26 Adidas Arsenal Pro Training Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/A9EAAeSwi0Vp1~P9/s-l1600.jpg" },
       { store: "AdidasES", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45585792984&a=3013769&m=77008", title: "Camiseta calentamiento Arsenal FC 26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8d581065db594bcab35b15621e5aa5e5_9366%2FCamiseta_calentamiento_Arsenal_FC_26_Burgundy_JZ6906_21_model.jpg&feedId=92152&k=0cdf4c13141c7b5eb1899dfd0aebfc11759405a2" },
+      { store: "Futbol Factory", price: 29.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-arsenal-fc-20252026-hombre-adidas-rojo-254214", title: "Camiseta de entrenamiento Arsenal FC 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254214_1.jpg" },
     ],
   },
 {
@@ -27066,6 +27074,7 @@ const productsData = [
       { store: "FootStoreES", price: 46.3, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41624817904&a=3013769&m=65912", title: "Maillot Prematch Atlético de Madrid Academy Pro 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj7136-614-phsfm001.webp&feedId=89032&k=d2b96b97704fbdf710f755eb2cf7ae03320d7604" },
       { store: "FootStoreFR", price: 45.82, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7136-614-maillot-prematch-atletico-madrid-academy-pro-2025-26-sport-red-white", title: "Maillot Prematch Atlético Madrid Academy Pro 2025/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hj7136-614-phsfm001.jpg" },
       { store: "eBay", price: 49.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/236952007958?_skw=Atl%C3%A9tico+Madrid+pre-match+soccer+jersey&hash=item372b70b516%3Ag%3AAR4AAeSwb7Bp2WBg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Atletico Madrid Medium 25/26 Academy Pro Pre-Match Jersey IF3965-010 NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/AR4AAeSwb7Bp2WBg/s-l1600.jpg" },
+      { store: "Futbol Factory", price: 29.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-atletico-de-madrid-20252026-prematch-nino-nike-rojo-252303", title: "Camiseta Atlético de Madrid 2025/2026 Prematch", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/252303_1.jpg" },
     ],
   },
 {
@@ -27113,6 +27122,7 @@ const productsData = [
       { store: "AdidasES", price: 55.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094292277&a=3013769&m=77008", title: "Camiseta de entrenamiento Bélgica 26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2dc935a8b17f4a5dacd9ddd665f20be4_9366%2FCamiseta_de_entrenamiento_Belgica_26_Rojo_KB3408_21_model.jpg&feedId=92152&k=a08df63a814114a16625a96079fa11e6ae6b9dc7" },
       { store: "AdidasPT", price: 55.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096960032&a=3013769&m=77026", title: "Camisola de Treino Tiro 26 da Bélgica", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2dc935a8b17f4a5dacd9ddd665f20be4_9366%2FCamisola_de_Treino_Tiro_26_da_Belgica_Vermelho_KB3408_21_model.jpg&feedId=92150&k=37d9548688cdd361379fb802264d7e65a2dd76b5" },
       { store: "eBay", price: 33.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/227223581659?_skw=Belgium+training+soccer+jersey&hash=item34e794b3db%3Ag%3A8FUAAeSwIh5pltYr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ADIDAS BELGIUM 2026 TRAINING TOP NATIONAL TEAM FOOTBALL T-SHIRT SOCCER JERSEY", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/8FUAAeSwIh5pltYr/s-l1600.jpg" },
+      { store: "Futbol Factory", price: 29.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-belgica-mundial-2026-tr-hombre-adidas-rojo-254057", title: "Camiseta de entrenamiento Bélgica Mundial 2026 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254057_1.jpg" },
     ],
   },
 {
@@ -27132,6 +27142,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 62.34, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjx7840-maillot-exterieur-benfica-lisbonne-2025-26-wonalu", title: "Maillot Extérieur Benfica Lisbonne 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jx7840_1_apparel_photography_front_center_view_white.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbenfica-away-soccer-jersey-2025-26%3Fvariant%3D42557173825641", title: "Benfica Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/01decb18684762d62804fc27bea11925.png?v=1758073982" },
       { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287494231030?_skw=SL+Benfica+away+soccer+jersey&hash=item42effdd3f6%3Ag%3AkmEAAeSw0VtqbDf7&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYl9V%2FAZ3LS6dIaTQrDpf6NvYXvsfkBN52IPtOIxQ0eNTdbStq82nxninV1d2pSMPKf7QjuOWZiVtpQpZs4nsUEJy3TNlNvX6S5VF2%2BkazIkTx04s2S4jVXMnouBppUTwjyAeknhrhxVgiEA%2Fws9TSLkeqmaf1sIHGJkGgPtqMLlUZ4exAcflVPDBVbI89tLzqjEHci3vuWhiiaxZb5w2zrPlysGP%2FoPdvdvA1moC0r%2FZIChQmTePcLAigyw7nF0g8qvTB%2FaHa3D3qAQqWOkJV%2BEETAlrGqX6kx%2BIm2j%2BrBgw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Benfica Adidas Away Replica Jersey - Gray - Large 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/kmEAAeSw0VtqbDf7/s-l1600.jpg" },
+      { store: "Futbol Factory", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-2a-equipacion-sl-benfica-20252026-nino-adidas-marron-254903", title: "Camiseta 2ª equipación SL Benfica 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254903_1.jpg" },
     ],
   },
 {
@@ -27181,6 +27192,7 @@ const productsData = [
       { store: "eBay", price: 129.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227455348504?_skw=Brazil+training+soccer+jersey&hash=item34f5652f18%3Ag%3ALlMAAeSwdTRqRHtR&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Brazil Training Shirt 2026/2027 White Nike Brasil Travel", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/LlMAAeSwdTRqRHtR/s-l1600.jpg" },
       { store: "Forum Sport", price: 45.49, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45212896122&a=3013769&m=23805", title: "Nike brasil mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001100214-00-P-X-20260508115722.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzQwMnxpbWFnZS9qcGVnfGFETmpMMmcxWWk4eE16YzFPVEV5TXpNNU1EUTVOQzl0WldScFlYTmZNVEF3TVRFd01ESXhORjh3TUY5UVgxZ3RNakF5TmpBMU1EZ3hNVFUzTWpJdWFuQm58MjA1MzBkZGZkYWJlZjA1ZGRkMDU4MTJlOWIyMGVjNTUzZWY0NDk0MmI4MmE0ZjQ0Y2MxNzAyOGZiOTMyYWQwOA&feedId=58083&k=6e677cac117a390fc29003b1bf9a23780363d3d3" },
       { store: "ForumSport", price: 37.3, shipping: 5.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45212896122&a=3013769&m=23805", title: "Nike brasil mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001100214-00-P-X-20260508115722.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzQwMnxpbWFnZS9qcGVnfGFETmpMMmcxWWk4eE16YzFPVEV5TXpNNU1EUTVOQzl0WldScFlYTmZNVEF3TVRFd01ESXhORjh3TUY5UVgxZ3RNakF5TmpBMU1EZ3hNVFUzTWpJdWFuQm58MjA1MzBkZGZkYWJlZjA1ZGRkMDU4MTJlOWIyMGVjNTUzZWY0NDk0MmI4MmE0ZjQ0Y2MxNzAyOGZiOTMyYWQwOA&feedId=58083&k=6e677cac117a390fc29003b1bf9a23780363d3d3" },
+      { store: "Futbol Factory", price: 19.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-brasil-mundial-2026-academy-pro-nino-nike-azul-256669", title: "Camiseta de entrenamiento Brasil Mundial 2026 Academy Pro", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/256669_1.jpg" },
     ],
   },
 {
@@ -27648,6 +27660,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 70.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkb5790-maillot-prematch-liverpool-fc-2026-27-boract-meipou", title: "Maillot Prematch Liverpool FC 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kb5790-boract-meipou-6a58bf4b28e65-1.webp" },
       { store: "PlanetFoot", price: 54.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089770%3Fvariant%3D54316731957589", title: "Liverpool FC 26/27 Tiro Training Jersey LFC KB5771", inStock: false, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8977-1.jpg?v=1783434192" },
       { store: "eBay", price: 48.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287177102173?_skw=Liverpool+training+soccer+jersey&hash=item42dd16d35d%3Ag%3AgBUAAeSwkRVppxJZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Liverpool 25/26 Training Soccer Jersey", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/gBUAAeSwkRVppxJZ/s-l1600.jpg" },
+      { store: "Futbol Factory", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-liverpool-fc-20262027-hombre-adidas-gris-258991", title: "Camiseta de entrenamiento Liverpool FC 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258991_1.jpg" },
     ],
   },
 {
@@ -27740,6 +27753,7 @@ const productsData = [
       { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/237006143792?_skw=Mexico+training+soccer+jersey&hash=item372eaac130%3Ag%3AUnIAAeSwThVqf1xZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico Training Jersey 2026 World Cup", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/UnIAAeSwThVqf1xZ/s-l1600.jpg" },
       { store: "Forum Sport", price: 45.59, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43939518101&a=3013769&m=23805", title: "Adidas mexico mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112296-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc0OXxpbWFnZS9qcGVnfGFHUmhMMmhrT0M4eE16VTJNelk0T1RneU9ETTRNaTl0WldScFlYTmZNVEF3TVRFeE1qSTVObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NDI2MWFiYTQyMDEyY2FmZjYyN2Q3N2M4YzQ2YjY2ODJlZjViNzA3NTAxMmEyM2RhNDMzMDU2YTRiYTA0OThmOA&feedId=58083&k=7db439e99f08e5dda8755f02a9740abbfdd5252b" },
       { store: "ForumSport", price: 34.76, shipping: 5.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43939518101&a=3013769&m=23805", title: "Adidas mexico mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112296-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc0OXxpbWFnZS9qcGVnfGFHUmhMMmhrT0M4eE16VTJNelk0T1RneU9ETTRNaTl0WldScFlYTmZNVEF3TVRFeE1qSTVObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NDI2MWFiYTQyMDEyY2FmZjYyN2Q3N2M4YzQ2YjY2ODJlZjViNzA3NTAxMmEyM2RhNDMzMDU2YTRiYTA0OThmOA&feedId=58083&k=7db439e99f08e5dda8755f02a9740abbfdd5252b" },
+      { store: "Futbol Factory", price: 34.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-mexico-mundial-2026-tr-hombre-adidas-verde-256954", title: "Camiseta de entrenamiento México Mundial 2026 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/256954_1.jpg" },
     ],
   },
 {
@@ -27770,6 +27784,7 @@ const productsData = [
       { store: "FootStoreES", price: 59.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45663239724&a=3013769&m=65912", title: "Camiseta de entrenamiento de Países Bajos Strike Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ib5002-010-noir-hyper-crimson-hyper-crimson-6a83125f3d3c9-1.webp&feedId=89032&k=c6a849323f22cad25f42c1d962e643657bcbfcd3" },
       { store: "Forum Sport", price: 45.49, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44637213214&a=3013769&m=23805", title: "Nike paises bajos mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091609-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU0NHxpbWFnZS9qcGVnfGFHRXdMMmcwWkM4eE16WXlOakk1TkRFd09ERTVNQzl0WldScFlYTmZNVEF3TVRBNU1UWXdPVjh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58NzBkZDJiMzc3YzAwM2NiMTBjMjEwYmViMThiNTFhZWJiMjRhZGU0ODdlMDlkZDE2N2E2ZDg2NGNmOGI0OTZhMA&feedId=58083&k=bb69f72f88ddd31f91dae1fa3ef962dd92a8775a" },
       { store: "ForumSport", price: 40.03, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44637213214&a=3013769&m=23805", title: "Nike paises bajos mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091609-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU0NHxpbWFnZS9qcGVnfGFHRXdMMmcwWkM4eE16WXlOakk1TkRFd09ERTVNQzl0WldScFlYTmZNVEF3TVRBNU1UWXdPVjh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58NzBkZDJiMzc3YzAwM2NiMTBjMjEwYmViMThiNTFhZWJiMjRhZGU0ODdlMDlkZDE2N2E2ZDg2NGNmOGI0OTZhMA&feedId=58083&k=bb69f72f88ddd31f91dae1fa3ef962dd92a8775a" },
+      { store: "Futbol Factory", price: 44.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-holanda-x-patta-nino-nike-negro-256474", title: "Camiseta de entrenamiento Holanda x Patta", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/256474_1.jpg" },
     ],
   },
 {
@@ -28130,6 +28145,7 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168523883648?_skw=Inter+Milan+training+soccer+jersey+2025+2026&hash=item273cce6480%3Ag%3AKWsAAeSwkSpqTtGe&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike inter Milan 2025/2026 Training Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/KWsAAeSwkSpqTtGe/s-l1600.jpg" },
+      { store: "Futbol Factory", price: 23.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-inter-milan-20252026-tr-top-nino-nike-gris-252312", title: "Camiseta de entrenamiento Inter Milan 2025/2026 TR Top", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/252312_1.jpg" },
     ],
   },
 {
@@ -28163,6 +28179,7 @@ const productsData = [
       { store: "FootStoreES", price: 43.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45218805395&a=3013769&m=65912", title: "Maillot de entrenamiento Francia Strike Coupe du monde 2026", inStock: true, sizes: ["XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib6413-480_04.webp&feedId=89032&k=becb491b4d1024af339b491d40f719f5679e9ba9" },
       { store: "Forum Sport", price: 45.49, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44809049607&a=3013769&m=23805", title: "Nike francia mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091634-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM4NXxpbWFnZS9qcGVnfGFETmxMMmc1Tmk4eE16WXlOak13TURjMk1EQTVOQzl0WldScFlYTmZNVEF3TVRBNU1UWXpORjh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58ODZlOTUwNjQ1NDgzNjI1YjM5MTZmZjk0OGI0M2UzOGI0ZjRhMWNkMzNlZGUzNGE3YTYxZmQzYzI2YzM2YjdjNg&feedId=58083&k=b571715111da3abedf161366c9ce67ea4b33fdcb" },
       { store: "ForumSport", price: 37.3, shipping: 5.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44809049607&a=3013769&m=23805", title: "Nike francia mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091634-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM4NXxpbWFnZS9qcGVnfGFETmxMMmc1Tmk4eE16WXlOak13TURjMk1EQTVOQzl0WldScFlYTmZNVEF3TVRBNU1UWXpORjh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58ODZlOTUwNjQ1NDgzNjI1YjM5MTZmZjk0OGI0M2UzOGI0ZjRhMWNkMzNlZGUzNGE3YTYxZmQzYzI2YzM2YjdjNg&feedId=58083&k=b571715111da3abedf161366c9ce67ea4b33fdcb" },
+      { store: "Futbol Factory", price: 64.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-francia-mundial-2026-strike-top-mujer-nike-azul-260717", title: "Camiseta de entrenamiento Francia Mundial 2026 Strike Top", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/260717_1.jpg" },
     ],
   },
 {
@@ -49387,6 +49404,7 @@ const productsData = [
     offers: [
       { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_zoom1.jpg?ts=1775877982" },
       { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_zoom1.jpg?ts=1775877982" },
+      { store: "Futbol Factory", price: 14.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-portero-luanvi-santos-hombre-luanvi-azul-229737", title: "Camiseta de portero Luanvi Santos", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/229737_1.jpg" },
     ],
   },
 {
@@ -49903,6 +49921,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fargentina-pre-match-soccer-jersey-world-cup-2026%3Fvariant%3D43069936828521", title: "Argentina Pre-Match Soccer Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Argentina2026WorldCupPre-MatchShirt_1.webp?v=1774594114" },
       { store: "FootStoreES", price: 67.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269897664&a=3013769&m=65912", title: "Maillot Exterior Prematch Argentina Coupe du Monde 2026", inStock: true, sizes: ["M", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jy9535_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=e36bbbc183ac08acc0d7b3069ad69fd5b4ce5639" },
       { store: "FootStoreFR", price: 67.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy9535-maillot-exterieur-prematch-argentine-coupe-du-monde-2026-lucblu", title: "Maillot Extérieur Prematch Argentine Coupe du Monde 2026", inStock: true, sizes: ["M", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jy9535_1_apparel_photography_front_center_view_white.webp" },
+      { store: "Futbol Factory", price: 34.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-argentina-mundial-2026-prematch-hombre-adidas-azul-253339", title: "Camiseta Argentina Mundial 2026 Prematch", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/253339_1.jpg" },
     ],
   },
 {
@@ -49919,6 +49938,7 @@ const productsData = [
       { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198321843297?_skw=Arsenal+pre-match+soccer+jersey&hash=item2e2ce72c61%3Ag%3A-zcAAeSwph5p89jQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Arsenal FC Adidas 25/26 Pre Match Soccer Training Jersey Mens Size Large JJ1797", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/-zcAAeSwph5p89jQ/s-l1600.jpg" },
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41353942668&a=3013769&m=65912", title: "Camisa Prematch Arsenal 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj1797_pure-ruby_1.webp&feedId=89032&k=9901ef01b5dd25bd3e3e172949c062e011a10aef" },
       { store: "FootStoreFR", price: 59.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1797-maillot-prematch-arsenal-2025-26-pure-ruby", title: "Maillot Prematch Arsenal 2025/26", inStock: true, sizes: ["S", "M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj1797_pure-ruby_1.webp" },
+      { store: "Futbol Factory", price: 24.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-arsenal-fc-20252026-prematch-nino-adidas-rojo-254215", title: "Camiseta Arsenal FC 2025/2026 Prematch", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254215_1.jpg" },
     ],
   },
 {
@@ -50100,6 +50120,7 @@ const productsData = [
       { store: "FootStoreFR", price: 66.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy5485-maillot-prematch-mexique-2026-aurora-ivy", title: "Maillot Prematch Mexique 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5485_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 56.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44852683093&a=3013769&m=65906", title: "Maillot Prematch México 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jy5485_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=e7d4ab78d869e883595f0c68b8b3fcab865af578" },
       { store: "SportIsGoodFR", price: 56.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy5485-maillot-prematch-mexique-2026-aurora-ivy", title: "Maillot Prematch Mexique 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy5485_1_apparel_photography_front_center_view_white.webp" },
+      { store: "Futbol Factory", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-de-futbol-seleccion-nacional-de-mexico-26-pre-match-hombre-adidas-verde-261072", title: "Camiseta de entrenamiento de fútbol Selección Nacional de México 26 Pre Match", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/261072_1.jpg" },
     ],
   },
 {
@@ -50421,6 +50442,7 @@ const productsData = [
       { store: "FootStoreES", price: 53.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45515701115&a=3013769&m=65912", title: "Maillot de entrenamiento España Tiro Coupe du Monde 2026", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_ka8193_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=4d03655c569a76a7978adbd3abe1323982e95953" },
       { store: "Forum Sport", price: 37.99, shipping: 5.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45494292584&a=3013769&m=23805", title: "Adidas espana mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001070485-00-S-M-20251112140309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQzOXxpbWFnZS9qcGVnfGFHVXpMMmhsWWk4eE16TXdOekV4TmpReU1URTFNQzl0WldScFlYTmZNVEF3TVRBM01EUTROVjh3TUY5VFgwMHRNakF5TlRFeE1USXhOREF6TURrdWFuQm58YTgwNTY3YWJjMTI5NDhjYjU3YWVlNjgwYmYwMmQ0ODIwNmEwMDYxY2U0MDQ5MTM1YmRhMDhhZmU1MzExNzkxNw&feedId=58083&k=bfc1c840e0d8a55ede737ff7663d7737669a8064" },
       { store: "ForumSport", price: 45.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45494292584&a=3013769&m=23805", title: "Adidas espana mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001070485-00-S-M-20251112140309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQzOXxpbWFnZS9qcGVnfGFHVXpMMmhsWWk4eE16TXdOekV4TmpReU1URTFNQzl0WldScFlYTmZNVEF3TVRBM01EUTROVjh3TUY5VFgwMHRNakF5TlRFeE1USXhOREF6TURrdWFuQm58YTgwNTY3YWJjMTI5NDhjYjU3YWVlNjgwYmYwMmQ0ODIwNmEwMDYxY2U0MDQ5MTM1YmRhMDhhZmU1MzExNzkxNw&feedId=58083&k=bfc1c840e0d8a55ede737ff7663d7737669a8064" },
+      { store: "Futbol Factory", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-espana-mundial-2026-tr-hombre-adidas-azul-254026", title: "Camiseta de entrenamiento España Mundial 2026 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254026_1.jpg" },
     ],
   },
 {
@@ -50502,6 +50524,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 33.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45246772834&a=3013769&m=65906", title: "Maillot de entrenamiento Italia Tiro Coupe du Monde 2026", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz9375_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=18048d995f5a3c426d6032a6a62ac7f07516ee55" },
       { store: "eBay", price: 55.0, shipping: 25.0, currency: "USD", url: "https://www.ebay.com/itm/168524781647?_skw=Italy+training+soccer+jersey&hash=item273cdc184f%3Ag%3ARJYAAeSwHWVqT1br&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Italy 2026 Training Jersey Men's Soccer Football Shirt Blue JZ9375 NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/RJYAAeSwHWVqT1br/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 37.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fitalia-training-mundial-2026-white", title: "Camiseta adidas Italia Training Mundial 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/286231/750/camiseta-adidas-italia-training-mundial-2026-white-1.jpg" },
+      { store: "Futbol Factory", price: 29.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-italia-mundial-2026-tr-nino-adidas-blanco-254071", title: "Camiseta de entrenamiento Italia Mundial 2026 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/254071_1.jpg" },
     ],
   },
 {
@@ -50519,6 +50542,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 56.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45131352849&a=3013769&m=65906", title: "Camiseta Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka6419_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9f0badb14460518c71ab0a8eca43671197828780" },
       { store: "FootStoreFR", price: 56.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka6419-maillot-prematch-manchester-united-2025-26-black", title: "Maillot Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka6419_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodFR", price: 56.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fka6419-maillot-prematch-manchester-united-2025-26-black", title: "Maillot Prematch Manchester United 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka6419_1_apparel_photography_front_center_view_white.webp" },
+      { store: "Futbol Factory", price: 19.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-manchester-united-20252026-prematch-nino-adidas-rojo-252254", title: "Camiseta Manchester United 2025/2026 Prematch", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/252254_1.jpg" },
     ],
   },
 {
@@ -50803,6 +50827,7 @@ const productsData = [
       { store: "FootStoreFR", price: 64.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif3967-010-maillot-prematch-chelsea-academy-pro-2025-26-black-coconut-milk-coconut-milk", title: "Maillot Prematch Chelsea Academy Pro 2025/26", inStock: true, sizes: ["L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_if3967-010_black-coconut-milk-coconut-milk_1.webp" },
       { store: "eBay", price: 49.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306598732447?_skw=Chelsea+pre-match+soccer+jersey&hash=item4762b5629f%3Ag%3AcwQAAeSw7lFpFP6K&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbgKssp9pbUtP%2B%2BDFB%2FS%2BLSkDQCTH6E5tANk37NJQXskMoUF9viRzU1CgLmnq9mhMbYOMtlaY4W5%2BqOjdGW2nNO0ZJXSfgze0Y1Q0b8wvj4CPhsmK6ynfcmqnHW6%2FIWYvZm0ARs8lkh94MQAaLItTSt2AKV5kRlbBMS%2Bq%2FnQ4xKUGVcP8nLJ2tSAxMFw%2BA7ckVxT8ubNgJXdmcIAeeHkTK8QnzxnVPmVd0SbAWG5JtkrBqSOCodbTyxNNfToj1gSief8iocEuH%2Bzh%2FbB%2BVP2qhlV7%2FjSP9edf73qti%2BWAzQj%2B%2BX7pvJtxvolMx2QNSH1yQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nike Chelsea FC 25/26 Pre-Match Soccer Jersey Dri-FIT Academy Pro Black Mens", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/cwQAAeSw7lFpFP6K/s-l1600.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-year-of-the-horse-limited-edition-pre-match-top-soccer-jersey-2026%3Fvariant%3D42998341828713", title: "Chelsea Year of The Horse Limited Edition Pre Match Top Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ChelseaYearofTheHorseLimitedEditionPreMatchTopSoccerJersey2026_1.webp?v=1773815266" },
+      { store: "Futbol Factory", price: 64.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-chelsea-fc-prematch-tr-hombre-nike-gris-258713", title: "Camiseta de entrenamiento Chelsea FC Prematch TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258713_1.jpg" },
     ],
   },
 {
@@ -70884,6 +70909,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 55.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45193012743&a=3013769&m=77008", title: "CAMISETA de entrenamiento Ajax 26/27 Tiro26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F45d38debd5a0484baf07e0e8b4e696d9_9366%2FCAMISETA_de_entrenamiento_Ajax_26-27_Tiro26_Azul_KC1868_21_model.jpg&feedId=92152&k=a5f425609304355e857d3818ed94bdf9937ea5f9" },
       { store: "AdidasPT", price: 55.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45193013600&a=3013769&m=77026", title: "Camisola de Treino Tiro26 26/27 do Ajax Amsterdam", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F45d38debd5a0484baf07e0e8b4e696d9_9366%2FCamisola_de_Treino_Tiro26_26-27_do_Ajax_Amsterdam_Azul_KC1868_21_model.jpg&feedId=92150&k=1406d41a9a3ae81100f581212af65e89e8feb285" },
+      { store: "Futbol Factory", price: 54.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-ajax-20242025-adidas-rojo-260161", title: "Camiseta de entrenamiento Ajax 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/260161_1.jpg" },
     ],
   },
 {
@@ -70953,6 +70979,7 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45374464441&a=3013769&m=77026", title: "Camisola Arsenal FC 26/27 Away", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0bc9d896e42746209edb67a128279f1e_9366%2FCamisola_Arsenal_FC_26-27_Away_Azul_KB9964_21_model.jpg&feedId=92150&k=398baef5d8963dc2ee22f3942eca6c33ab07ef90" },
+      { store: "Futbol Factory", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-2a-equipacion-arsenal-fc-20262027-hombre-adidas-azul-260208", title: "Camiseta 2ª Equipación Arsenal FC 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/260208_1.jpg" },
     ],
   },
 {
@@ -71061,6 +71088,7 @@ const productsData = [
     offers: [
       { store: "Amazon", price: 59.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0GXDMLSZ4?tag=footballcul07-21", title: "adidas FC Bayern Munich Training Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71wJYbuvRVL._AC_SL1500_.jpg" },
       { store: "PlanetFoot", price: 54.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089749%3Fvariant%3D54316731269461", title: "FC Bayern 26/27 Training Jersey FCB  KF1040", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8974-1.jpg?v=1783434186" },
+      { store: "Futbol Factory", price: 54.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-bayern-fc-20262027-tr-hombre-adidas-azul-258986", title: "Camiseta de entrenamiento Bayern FC 2026/2027 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258986_1.jpg" },
     ],
   },
 {
@@ -71247,6 +71275,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 109.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44755567702&a=3013769&m=65912", title: "Camiseta Local Inter de Milán 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii1889-409_01.webp&feedId=89032&k=5ace95f216676a39784c91122f5da22fc311a62d" },
       { store: "Amazon", price: 107.0, shipping: 14.0, currency: "EUR", url: "https://www.amazon.it/dp/B0GQRQM447?tag=footballcu047-21", title: "Nike Inter M NK DF JSY SS STAD HM Men's T-Shirt", inStock: true, sizes: ["S-M", "M-L", "L-XL", "XL-XXL"], imageUrl: "https://m.media-amazon.com/images/I/71ZsaeXAcJL._AC_SL1400_.jpg" },
+      { store: "Futbol Factory", price: 109.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-inter-milan-20262027-hombre-nike-azul-257242", title: "Camiseta 1ª Equipación Inter Milan 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/257242_1.jpg" },
     ],
   },
 {
@@ -71517,6 +71546,7 @@ const productsData = [
     offers: [
       { store: "AdidasES", price: 55.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45624332285&a=3013769&m=77008", title: "Camiseta Manchester United 26/27 Tiro Training", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffc3b96b7409e491a8b663774076424cd_9366%2FCamiseta_Manchester_United_26-27_Tiro_Training_Negro_KC4873_21_model.jpg&feedId=92152&k=410f5d22f363afdd7fbf55d42452ec4bba8dcff6" },
       { store: "AdidasPT", price: 55.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45183911317&a=3013769&m=77026", title: "Camisola De Treino Tiro 26/27 Do Manchester United", inStock: true, sizes: ["S", "M", "L", "XL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4176b856d48d4d67814df3dd3cf567d8_9366%2FCamisola_De_Treino_Tiro_26-27_Do_Manchester_United_Vermelho_KC4872_21_model.jpg&feedId=92150&k=16a3c527b51315636825378833e910753d661447" },
+      { store: "Futbol Factory", price: 54.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-manchester-united-20262027-tiro-tr-top-hombre-adidas-azul-260428", title: "Camiseta de entrenamiento Manchester United 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/260428_1.jpg" },
     ],
   },
 {
@@ -71834,6 +71864,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784523-01-maillot-domicile-valence-cf-2026-27-puma-white", title: "Maillot Domicile Valence CF 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-784523-01-6a7b0395026fb-1.webp" },
       { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45100207342&a=3013769&m=65912", title: "Camiseta Local Valencia CF 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784523-01-6a7b0395026fb-1.webp&feedId=89032&k=3b77743567309176f6bd012eb2a3467672dfea39" },
       { store: "Amazon", price: 102.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0HCVG7NQ3?tag=footballcult-21", title: "PUMA Valencia CF Camiseta Primera Equipación 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://m.media-amazon.com/images/I/51B02kRoVCL._AC_SL1400_.jpg" },
+      { store: "Futbol Factory", price: 139.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-valencia-cf-20252026-hombre-puma-blanco-260474", title: "Camiseta 1ª Equipación Valencia CF 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/260474_1.jpg" },
     ],
   },
 {
@@ -72055,6 +72086,7 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "FootStoreES", price: 74.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45663260620&a=3013769&m=65912", title: "Camiseta de entrenamiento Third Tottenham 2026/27", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii6844-010-black-psychic-purple-black-white-6a45a27b736ca-1.webp&feedId=89032&k=f5380fe051ecd86c5194b6022a1e2ba067172ba0" },
+      { store: "Futbol Factory", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-tottenham-hotspur-strike-20262027-hombre-nike-azul-257221", title: "Camiseta de entrenamiento Tottenham Hotspur Strike 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/257221_1.jpg" },
     ],
   },
 {
@@ -73390,6 +73422,7 @@ const productsData = [
     offers: [
       { store: "Forum Sport", price: 28.49, shipping: 5.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44373392838&a=3013769&m=23805", title: "Nike inglaterra mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091646-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM1MXxpbWFnZS9qcGVnfGFHSmhMMmd6TXk4eE16WXlOak13TXpVeE1qWXdOaTl0WldScFlYTmZNVEF3TVRBNU1UWTBObDh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58ODQ5ZmUwYTE3ZDJjNDdhOTYwNjkzZDczZmI0OTZhNjM4ZmUxMWFkNzliNGVmYjFkODEzZGZjYzRmZTA5ZGQwYg&feedId=58083&k=fcb7e2c1454d283432f0a59f3c863b86808808ed" },
       { store: "ForumSport", price: 28.49, shipping: 5.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44373392838&a=3013769&m=23805", title: "Nike inglaterra mundial 2026 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091646-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM1MXxpbWFnZS9qcGVnfGFHSmhMMmd6TXk4eE16WXlOak13TXpVeE1qWXdOaTl0WldScFlYTmZNVEF3TVRBNU1UWTBObDh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58ODQ5ZmUwYTE3ZDJjNDdhOTYwNjkzZDczZmI0OTZhNjM4ZmUxMWFkNzliNGVmYjFkODEzZGZjYzRmZTA5ZGQwYg&feedId=58083&k=fcb7e2c1454d283432f0a59f3c863b86808808ed" },
+      { store: "Futbol Factory", price: 34.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-de-futbol-inglaterra-academy-pro-dri-fit-nino-nike-rosa-259991", title: "Camiseta de entrenamiento de fútbol Inglaterra Academy Pro Dri-FIT", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/259991_1.jpg" },
     ],
   },
 {
@@ -73454,6 +73487,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "Forum Sport", price: 91.29, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44747551247&a=3013769&m=23805", title: "Nike atletico de madrid 26/27 segunda equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091657-00-S-M-20260515115454.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQ4NnxpbWFnZS9qcGVnfGFHRm1MMmhqWWk4eE16YzJOall5TmpFeE5UWXhOQzl0WldScFlYTmZNVEF3TVRBNU1UWTFOMTh3TUY5VFgwMHRNakF5TmpBMU1UVXhNVFUwTlRRdWFuQm58ZWQ1NmI1YmExMDVhMTYyYjgxZDA4ZDEzZmUyMTFlNzI2ZGQyNDZkNGQxMmEwODFkNDdjNTBkN2JkZGQ5NDc1MQ&feedId=58083&k=1f06c29c381e8b10d523a85c0e3ec963aec21c51" },
+      { store: "Futbol Factory", price: 109.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-2a-equipacion-atletico-de-madrid-20262027-mujer-nike-negro-258558", title: "Camiseta 2ª Equipación Atlético de Madrid 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258558_1.jpg" },
     ],
   },
 {
@@ -73527,6 +73561,7 @@ const productsData = [
     offers: [
       { store: "Forum Sport", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45367155713&a=3013769&m=23805", title: "Nike inter de milan 26/27 prematch camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103716-00-P-X-20260720023601.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA0MnxpbWFnZS9qcGVnfGFETTRMMmhoWWk4eE16a3dNekUzT0RNek5ESXpPQzl0WldScFlYTmZNVEF3TVRFd016Y3hObDh3TUY5UVgxZ3RNakF5TmpBM01qQXdNak0yTURFdWFuQm58NDZjYzhhMTM1MWY3NmYwMWU2MTNjZWZmMDJmNDdhZTY1ZDdiODAyMGQ1Y2Y2MzVhODViNjE0NDUxNmM0NThjZA&feedId=58083&k=565a271391040c6c43c3da0399797df28b181f23" },
       { store: "Futbol Emotion", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Finter-milan-pre-match-2026-2027-white", title: "Camiseta Nike Inter Milan Pre-Match 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/336038/750/camiseta-nike-inter-milan-pre-match-2026-2027-white-1.jpg" },
+      { store: "Futbol Factory", price: 59.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-inter-de-milan-20262027-prematch-nino-nike-azul-258551", title: "Camiseta Inter de Milán 2026/2027 Prematch", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258551_1.jpg" },
     ],
   },
 {
@@ -73627,6 +73662,7 @@ const productsData = [
     offers: [
       { store: "Forum Sport", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45083824946&a=3013769&m=23805", title: "Nike tottenham 26/27 primera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091655-00-S-M-20260616161934.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI3OXxpbWFnZS9qcGVnfGFESTFMMmd5TUM4eE16Z3pNVFUyTVRNM09UZzNNQzl0WldScFlYTmZNVEF3TVRBNU1UWTFOVjh3TUY5VFgwMHRNakF5TmpBMk1UWXhOakU1TXpRdWFuQm58MDYyMGY2NjZjOThlZDg5YzFjYzVkMzk0NTc2NWRkNGE0ZDA3Zjc4YzU3OGVmZjkyNDUzNTg4YjM2N2M3MzNhMQ&feedId=58083&k=d2b7be089f29cfa219ce99566a15a471ffd8bf17" },
       { store: "Futbol Emotion", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Ftottenham-primera-equipacion-2026-2027-white", title: "Camiseta Nike Tottenham Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/323290/750/camiseta-nike-tottenham-primera-equipacion-2026-2027-white-1.jpg" },
+      { store: "Futbol Factory", price: 84.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-1a-equipacion-tottenham-hotspur-20262027-hombre-nike-blanco-257208", title: "Camiseta 1ª Equipación Tottenham Hotspur 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/257208_1.jpg" },
     ],
   },
 {
@@ -73930,6 +73966,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "Forum Sport", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45755665656&a=3013769&m=23805", title: "Nike chelsea 26/27 tercera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127192-00-S-M-20260821105323.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQyMXxpbWFnZS9qcGVnfGFEUmxMMmhqWWk4eE16azJOekF5T0RneE16ZzFOQzl0WldScFlYTmZNVEF3TVRFeU56RTVNbDh3TUY5VFgwMHRNakF5TmpBNE1qRXhNRFV6TWpNdWFuQm58YWI2YzU1MzE2NGY0ODk0YWUxZTY3ZTZkZGUxODYwZGUwYWU5OGM2YzFlN2ZjMDE1ODFhNTEzZDU5YjQ4M2E4NA&feedId=58083&k=9ca06922a668e6d31798204f7a1267b0027a5cdf" },
+      { store: "Futbol Factory", price: 109.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-3a-equipacion-chelsea-fc-20262027-stadium-hombre-nike-blanco-258902", title: "Camiseta 3ª equipación Chelsea FC 2026/2027 Stadium", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258902_1.jpg" },
     ],
   },
 {
@@ -74022,6 +74059,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "Forum Sport", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45787435331&a=3013769&m=23805", title: "Nike psg 26/27 primera equipacion prematch camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103701-00-P-X-20260820150529.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkyMXxpbWFnZS9qcGVnfGFHWmpMMmhoWWk4eE16azJOVFEzTVRBNE9EWTNNQzl0WldScFlYTmZNVEF3TVRFd016Y3dNVjh3TUY5UVgxZ3RNakF5TmpBNE1qQXhOVEExTWprdWFuQm58ODM3NmY2NWY1M2FjMWI0ZjgyNzkxOTMyNWE0YzBjYzBkNWVkZmJmZGNlZmY0NzRiYWY4ZGNiNmNmZjIzZTgzNw&feedId=58083&k=05366ea3f756fdf0c098200a87088103fab77ef4" },
+      { store: "Futbol Factory", price: 64.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-paris-saint-germain-20262027-prematch-hombre-nike-azul-258794", title: "Camiseta Paris Saint-Germain 2026/2027 Prematch", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258794_1.jpg" },
     ],
   },
 {
@@ -74036,6 +74074,7 @@ const productsData = [
     offers: [
       { store: "Forum Sport", price: 45.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45595711286&a=3013769&m=23805", title: "Joma real sociedad 26/27 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001123170-00-P-X-20260812114412.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYzMXxpbWFnZS9qcGVnfGFEWTJMMmczTWk4eE16azFNRFUwTlRneU1UY3lOaTl0WldScFlYTmZNVEF3TVRFeU16RTNNRjh3TUY5UVgxZ3RNakF5TmpBNE1USXhNVFEwTVRJdWFuQm58MjYzNTQ1NTk2MjQ5NTU4ZTNlMzRiYWJmYWM3ZjZjZTM1Y2VhNWUyMzBlNWQwMmI4NGU3YTQ2OWYyZDZmYWZkNw&feedId=58083&k=52320e3309a4d5c5572919b09ae5d85e31203b82" },
       { store: "ForumSport", price: 45.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45595711286&a=3013769&m=23805", title: "Joma real sociedad 26/27 entrenamiento camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001123170-00-P-X-20260812114412.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYzMXxpbWFnZS9qcGVnfGFEWTJMMmczTWk4eE16azFNRFUwTlRneU1UY3lOaTl0WldScFlYTmZNVEF3TVRFeU16RTNNRjh3TUY5UVgxZ3RNakF5TmpBNE1USXhNVFEwTVRJdWFuQm58MjYzNTQ1NTk2MjQ5NTU4ZTNlMzRiYWJmYWM3ZjZjZTM1Y2VhNWUyMzBlNWQwMmI4NGU3YTQ2OWYyZDZmYWZkNw&feedId=58083&k=52320e3309a4d5c5572919b09ae5d85e31203b82" },
+      { store: "Futbol Factory", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-real-sociedad-20262027-hombre-joma-azul-261130", title: "Camiseta de entrenamiento Real Sociedad 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/261130_1.jpg" },
     ],
   },
 {
@@ -74062,6 +74101,7 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fchelsea-goalkeeper-soccer-jersey-2026-27%3Fvariant%3D47959108911209", title: "Chelsea Goalkeeper Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/chelseathirdgoalkeeperfan2026_27.jpg?v=1787882337" },
+      { store: "Futbol Factory", price: 109.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-portero-chelsea-fc-20262027-stadium-hombre-nike-negro-261545", title: "Camiseta de portero Chelsea FC 2026/2027 Stadium", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/261545_1.jpg" },
     ],
   },
 {
@@ -74319,6 +74359,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fbarcelona-x-kobe-bryant-away-training-soccer-jersey-2026-27-purple%3Fvariant%3D48003579183209", title: "Barcelona x Kobe Bryant Away Training Soccer Jersey 2026/27 Purple", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/barcelonaspecialpurple2026_27.jpg?v=1788746539" },
       { store: "Futbol Emotion", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Fsin-mangas-fc-barcelona-training-segunda-equipacion-x-kobe-2026-2027-purple", title: "Camiseta Nike Fc Barcelona Training Segunda Equipación x Kobe 2026-2027", inStock: true, sizes: ["XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/336000/750/camiseta-nike-sin-mangas-fc-barcelona-training-segunda-equipacion-x-kobe-2026-2027-purple-1.jpg" },
+      { store: "Futbol Factory", price: 69.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-fc-barcelona-20262027-kobe-hombre-nike-morado-258764", title: "Camiseta de entrenamiento FC Barcelona 2026/2027 Kobe", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258764_1.jpg" },
     ],
   },
 {
@@ -74346,6 +74387,7 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "FootStoreES", price: 74.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45931747633&a=3013769&m=65912", title: "Camiseta de entrenamiento Atlético Madrid Strike 2026/27", inStock: true, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii2770-702-volt-deep-royal-blue-deep-royal-blue-6a763c2197c53-1.webp&feedId=89032&k=3c06677c2692fb8cb8fe3eeef60f70f1360b65e9" },
+      { store: "Futbol Factory", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-atletico-de-madrid-20262027-tr-nino-nike-amarillo-258569", title: "Camiseta de entrenamiento Atlético de Madrid 2026/2027 TR", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/258569_1.jpg" },
     ],
   },
 {
@@ -74503,6 +74545,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 109.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45195672244&a=3013769&m=65912", title: "Camiseta de visitante del Tottenham 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii1936-452-obsidian-white-white-6a459f97c71a5-1.webp&feedId=89032&k=6b653138d08f4e5116e97cf06c62b5601d3ba653" },
       { store: "Futbol Emotion", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Ftottenham-segunda-equipacion-2026-2027-blue", title: "Camiseta Nike Tottenham Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/323286/750/camiseta-nike-tottenham-segunda-equipacion-2026-2027-blue-1.jpg" },
+      { store: "Futbol Factory", price: 109.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-2a-equipacion-tottenham-hotspur-20262027-hombre-nike-azul-257240", title: "Camiseta 2ª Equipación Tottenham Hotspur 2026/2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/257240_1.jpg" },
     ],
   },
 {
@@ -74612,7 +74655,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 85.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45933491271&a=3013769&m=65906", title: "Camiseta de visitante OGC Nice 2026/27", inStock: true, sizes: ["S", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa-34286pw-s05-white-red-black-sponsor-6a70ab1a5dfe9-1.webp&feedId=89044&k=5a9276d41529546af64650e17ea67681f14e9a0c" },
     ],
   },
-  {
+{
     id: "atalanta-third-202526",
     teamKey: "atalanta",
     season: "2025/26",
@@ -74624,7 +74667,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 31.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnew-balance%2Fatalanta-tercera-equipacion-2025-2026-orange", title: "Camiseta New Balance Atalanta BC Tercera Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/273792/750/camiseta-new-balance-atalanta-bc-tercera-equipacion-2025-2026-orange-1.jpg" },
     ],
   },
-  {
+{
     id: "athleticbilbao-goalkeeper-202627",
     teamKey: "athleticbilbao",
     season: "2026/27",
@@ -74636,7 +74679,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 104.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Fportero-athletic-club-bilbao-segunda-equipacion-2026-2027-green", title: "Camiseta Castore Portero Athletic Club Bilbao Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/330343/750/camiseta-castore-portero-athletic-club-bilbao-segunda-equipacion-2026-2027-green-1.jpg" },
     ],
   },
-  {
+{
     id: "cagliari-away-202526",
     teamKey: "cagliari",
     season: "2025/26",
@@ -74648,7 +74691,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 56.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Feyesport%2Fcagliari-segunda-equipacion-2025-2026-white", title: "Camiseta EyeSport Cagliari Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/321291/750/camiseta-eyesport-cagliari-segunda-equipacion-2025-2026-white-1.jpg" },
     ],
   },
-  {
+{
     id: "cagliari-home-202526",
     teamKey: "cagliari",
     season: "2025/26",
@@ -74660,7 +74703,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 56.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Feyesport%2Fcagliari-primera-equipacion-2025-2026-red", title: "Camiseta EyeSport Cagliari Primera equipación 2025-2026", inStock: true, sizes: ["S", "L"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/321290/750/camiseta-eyesport-cagliari-primera-equipacion-2025-2026-red-1.jpg" },
     ],
   },
-  {
+{
     id: "celtavigo-third-202627",
     teamKey: "celtavigo",
     season: "2026/27",
@@ -74672,7 +74715,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 79.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fhummel%2Fcelta-de-vigo-tercera-equipacion-2026-2027-chinese-red", title: "Camiseta Hummel Celta De Vigo Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/380240/750/camiseta-hummel-celta-de-vigo-tercera-equipacion-2026-2027-chinese-red-1.jpg" },
     ],
   },
-  {
+{
     id: "cremonese-home-2025",
     teamKey: "cremonese",
     season: "2025",
@@ -74684,7 +74727,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 42.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Facerbis%2Fus-cremonese-home-2025-2026-rojo", title: "Camiseta Acerbis Us Cremonese Home 2025 - 2026", inStock: true, sizes: ["M", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/324708/750/camiseta-acerbis-us-cremonese-home-2025-2026-rojo-1.jpg" },
     ],
   },
-  {
+{
     id: "dinamozagreb-away-202526",
     teamKey: "dinamozagreb",
     season: "2025/26",
@@ -74696,7 +74739,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 35.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Fdinamo-zagreb-segunda-equipacion-2025-2026-nothern-droplet-sur-the-web", title: "Camiseta Castore Dinamo Zagreb Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262719/750/camiseta-castore-dinamo-zagreb-segunda-equipacion-2025-2026-nothern-droplet-sur-the-web-1.jpg" },
     ],
   },
-  {
+{
     id: "espanyol-third-202526",
     teamKey: "espanyol",
     season: "2025/26",
@@ -74708,7 +74751,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 55.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fkelme%2Frcd-espanyol-tercera-equipacion-2025-2026-blue", title: "Camiseta Kelme RCD Espanyol Tercera Equipación 2025-2026", inStock: true, sizes: ["M"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/285048/750/camiseta-kelme-rcd-espanyol-tercera-equipacion-2025-2026-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "everton-third-202526",
     teamKey: "everton",
     season: "2025/26",
@@ -74720,7 +74763,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 47.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Feverton-fc-tercera-equipacion-2025-2026-black-onyx-surf-the-web-yellow", title: "Camiseta Castore Everton FC Tercera Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262739/750/camiseta-castore-everton-fc-tercera-equipacion-2025-2026-black-onyx-surf-the-web-yellow-1.jpg" },
     ],
   },
-  {
+{
     id: "feyenoord-away-202526",
     teamKey: "feyenoord",
     season: "2025/26",
@@ -74732,7 +74775,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 49.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Ffeyenoord-segunda-equipacion-2025-2026-polar-night", title: "Camiseta Castore Feyenoord Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262723/750/camiseta-castore-feyenoord-segunda-equipacion-2025-2026-polar-night-1.jpg" },
     ],
   },
-  {
+{
     id: "feyenoord-home-202526",
     teamKey: "feyenoord",
     season: "2025/26",
@@ -74744,7 +74787,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 49.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Ffeyenoord-primera-equipacion-2025-2026-redwhite", title: "Camiseta Castore Feyenoord Primera Equipación 2025-2026", inStock: true, sizes: ["S", "M"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262722/750/camiseta-castore-feyenoord-primera-equipacion-2025-2026-redwhite-1.jpg" },
     ],
   },
-  {
+{
     id: "feyenoord-third-202526",
     teamKey: "feyenoord",
     season: "2025/26",
@@ -74756,7 +74799,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 44.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Ffeyenoord-tercera-equipacion-2025-2026-blue-red", title: "Camiseta Castore Feyenoord Tercera Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262724/750/camiseta-castore-feyenoord-tercera-equipacion-2025-2026-blue-red-1.jpg" },
     ],
   },
-  {
+{
     id: "genoa-away-202627",
     teamKey: "genoa",
     season: "2026/27",
@@ -74768,7 +74811,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 84.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fkappa%2Fgenoa-segunda-equipacion-2026-2027-white", title: "Camiseta Kappa Genoa Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/344351/750/camiseta-kappa-genoa-segunda-equipacion-2026-2027-white-1.jpg" },
     ],
   },
-  {
+{
     id: "getafe-third-202526",
     teamKey: "getafe",
     season: "2025/26",
@@ -74780,7 +74823,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 37.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Fgetafe-cf-tercera-equipacion-2025-2026-yellow", title: "Camiseta Joma Getafe CF Tercera Equipación 2025-2026", inStock: true, sizes: ["XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/282457/750/camiseta-joma-getafe-cf-tercera-equipacion-2025-2026-yellow-1.jpg" },
     ],
   },
-  {
+{
     id: "hellasverona-home-202526",
     teamKey: "hellasverona",
     season: "2025/26",
@@ -74792,7 +74835,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 47.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Fhellas-verona-primera-equipacion-2025-2026-yellow", title: "Camiseta Joma Hellas Verona Primera Equipación 2025-2026", inStock: true, sizes: ["S", "M", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/282464/750/camiseta-joma-hellas-verona-primera-equipacion-2025-2026-yellow-1.jpg" },
     ],
   },
-  {
+{
     id: "hertaberlin-away-202526",
     teamKey: "hertaberlin",
     season: "2025/26",
@@ -74804,7 +74847,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 37.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Fhertha-berlin-segunda-equipacion-2025-2026-brilliant-white-skydiver", title: "Camiseta Castore Hertha Berlin Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/266932/750/camiseta-castore-hertha-berlin-segunda-equipacion-2025-2026-brilliant-white-skydiver-1.jpg" },
     ],
   },
-  {
+{
     id: "mallorca-goalkeeper-202526",
     teamKey: "mallorca",
     season: "2025/26",
@@ -74816,7 +74859,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 67.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Frcd-mallorca-equipacion-portero-2025-2026-hyper-turquoise-teal-nebula", title: "Camiseta Nike RCD Mallorca Equipación Portero 2025-2026", inStock: true, sizes: ["XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/278998/750/camiseta-nike-rcd-mallorca-equipacion-portero-2025-2026-hyper-turquoise-teal-nebula-1.jpg" },
     ],
   },
-  {
+{
     id: "palermo-prematch-202627",
     teamKey: "palermo",
     season: "2026/27",
@@ -74828,7 +74871,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 64.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fpuma%2Fpalermo-pre-match-2026-2027-puma-black-electric-peppermint", title: "Camiseta Puma Palermo Pre-Match 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332083/750/camiseta-puma-palermo-pre-match-2026-2027-puma-black-electric-peppermint-1.jpg" },
     ],
   },
-  {
+{
     id: "porto-prematch-202627",
     teamKey: "porto",
     season: "2026/27",
@@ -74840,7 +74883,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 64.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnew-balance%2Ffc-porto-pre-match-2026-2027-light-blue", title: "Camiseta New Balance Fc Porto Pre-Match 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/323812/750/camiseta-new-balance-fc-porto-pre-match-2026-2027-light-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "portugal-third-202627",
     teamKey: "portugal",
     season: "2026/27",
@@ -74852,7 +74895,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Fsporting-portugal-tercera-equipacion-120-aniversario-2026-2027-green", title: "Camiseta Nike Sporting Portugal Tercera Equipación 120 aniversario 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/338766/750/camiseta-nike-sporting-portugal-tercera-equipacion-120-aniversario-2026-2027-green-1.jpg" },
     ],
   },
-  {
+{
     id: "sassuolo-away-202526",
     teamKey: "sassuolo",
     season: "2025/26",
@@ -74864,7 +74907,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 47.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fpuma%2Fud-sassuolo-segunda-equipacion-2025-2026-white-fast-green", title: "Camiseta Puma Ud Sassuolo Segunda Equipación 2025-2026", inStock: true, sizes: ["S"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/281338/750/camiseta-puma-ud-sassuolo-segunda-equipacion-2025-2026-white-fast-green-1.jpg" },
     ],
   },
-  {
+{
     id: "sassuolo-goalkeeper-202627",
     teamKey: "sassuolo",
     season: "2026/27",
@@ -74876,7 +74919,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fpuma%2Fpalermo-segunda-equipacion-2026-2027-nino-canvas-dark-olive", title: "Camiseta Puma Sassuolo Primera Equipación Portero 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332076/750/camiseta-puma-palermo-segunda-equipacion-2026-2027-nino-canvas-dark-olive-1.jpg" },
     ],
   },
-  {
+{
     id: "sassuolo-home-202627",
     teamKey: "sassuolo",
     season: "2026/27",
@@ -74888,7 +74931,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 79.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fpuma%2Fud-sassuolo-primera-equipacion-2026-2027-green", title: "Camiseta Puma Ud Sassuolo Primera Equipación 2026-2027", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/354742/750/camiseta-puma-ud-sassuolo-primera-equipacion-2026-2027-green-1.jpg" },
     ],
   },
-  {
+{
     id: "sevilla-away-202526",
     teamKey: "sevilla",
     season: "2025/26",
@@ -74900,7 +74943,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 56.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fsevilla-fc-segunda-equipacion-2025-2026-rojo", title: "Camiseta adidas Sevilla FC Segunda Equipación 2025-2026", inStock: true, sizes: ["XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/308471/750/camiseta-adidas-sevilla-fc-segunda-equipacion-2025-2026-rojo-1.jpg" },
     ],
   },
-  {
+{
     id: "sevilla-home-202526",
     teamKey: "sevilla",
     season: "2025/26",
@@ -74912,7 +74955,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 56.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fsevilla-fc-primera-equipacion-2025-2026-blanco", title: "Camiseta adidas Sevilla FC Primera Equipación 2025-2026", inStock: true, sizes: ["S", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/308462/750/camiseta-adidas-sevilla-fc-primera-equipacion-2025-2026-blanco-1.jpg" },
     ],
   },
-  {
+{
     id: "torino-away-202526",
     teamKey: "torino",
     season: "2025/26",
@@ -74924,7 +74967,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 50.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Ftorino-segunda-equipacion-2025-2026-white", title: "Camiseta Joma Torino Segunda Equipación 2025-2026", inStock: true, sizes: ["L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/282454/750/camiseta-joma-torino-segunda-equipacion-2025-2026-white-1.jpg" },
     ],
   },
-  {
+{
     id: "udinese-away-202627",
     teamKey: "udinese",
     season: "2026/27",
@@ -74936,7 +74979,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Fudinese-segunda-equipacion-2026-2027-blue", title: "Camiseta Macron Udinese Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/340456/750/camiseta-macron-udinese-segunda-equipacion-2026-2027-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "udinese-home-202526",
     teamKey: "udinese",
     season: "2025/26",
@@ -74948,7 +74991,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 58.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Fudinese-primera-equipacion-2025-2026-black-white", title: "Camiseta Macron Udinese Primera Equipación 2025-2026", inStock: true, sizes: ["XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/290190/750/camiseta-macron-udinese-primera-equipacion-2025-2026-black-white-1.jpg" },
     ],
   },
-  {
+{
     id: "villarreal-away-202526",
     teamKey: "villarreal",
     season: "2025/26",
@@ -74960,7 +75003,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 36.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Fvillarreal-cf-segunda-equipacion-2025-2026-beige", title: "Camiseta Joma Villarreal Cf Segunda Equipación 2025-2026", inStock: true, sizes: ["XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/282462/750/camiseta-joma-villarreal-cf-segunda-equipacion-2025-2026-beige-1.jpg" },
     ],
   },
-  {
+{
     id: "villarreal-third-202526",
     teamKey: "villarreal",
     season: "2025/26",
@@ -74972,7 +75015,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 36.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Fvillarreal-cf-tercera-equipacion-2025-2026-dark-blue", title: "Camiseta Joma Villarreal Cf Tercera Equipación 2025-2026", inStock: true, sizes: ["S", "L"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/282463/750/camiseta-joma-villarreal-cf-tercera-equipacion-2025-2026-dark-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "wolfsburg-away-202526",
     teamKey: "wolfsburg",
     season: "2025/26",
@@ -74984,7 +75027,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 49.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Fvfl-wolfsburg-segunda-equipacion-2025-2026-grey-0", title: "Camiseta Nike VFL Wolfsburg Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/285797/750/camiseta-nike-vfl-wolfsburg-segunda-equipacion-2025-2026-grey-1.jpg" },
     ],
   },
-  {
+{
     id: "athleticbilbao-third-202526",
     teamKey: "athleticbilbao",
     season: "2025/26",
@@ -74996,7 +75039,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 44.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Fathletic-club-bilbao-tercera-equipacion-2025-2026-ocean-wave-cascade", title: "Camiseta Castore Athletic Club Bilbao Tercera Equipación 2025-2026", inStock: true, sizes: ["L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262663/750/camiseta-castore-athletic-club-bilbao-tercera-equipacion-2025-2026-ocean-wave-cascade-1.jpg" },
     ],
   },
-  {
+{
     id: "atleticomadrid-home-202627",
     teamKey: "atleticomadrid",
     season: "2026/27",
@@ -75008,7 +75051,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Fatl-madrid-primera-equipacion-2026-2027-white", title: "Camiseta Nike Atlético de Madrid Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/335916/750/camiseta-nike-atl-madrid-primera-equipacion-2026-2027-white-1.jpg" },
     ],
   },
-  {
+{
     id: "atleticomadrid-third-202627",
     teamKey: "atleticomadrid",
     season: "2026/27",
@@ -75020,7 +75063,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Fatletico-de-madrid-tercera-equipacion-2026-2027-grey", title: "Camiseta Nike Atletico de Madrid Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/335925/750/camiseta-nike-atletico-de-madrid-tercera-equipacion-2026-2027-grey-1.jpg" },
     ],
   },
-  {
+{
     id: "barcelona-goalkeeper-202627",
     teamKey: "barcelona",
     season: "2026/27",
@@ -75032,7 +75075,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 119.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Ffc-barcelona-primera-equipacion-portero-2026-2027-green", title: "Camiseta Nike Fc Barcelona Primera Equipación Portero 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/323205/750/camiseta-nike-fc-barcelona-primera-equipacion-portero-2026-2027-green-1.jpg" },
     ],
   },
-  {
+{
     id: "barcelona-third-202627",
     teamKey: "barcelona",
     season: "2026/27",
@@ -75044,7 +75087,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Ffc-barcelona-tercera-equipacion-2026-2027-green-blue", title: "Camiseta Nike Fc Barcelona Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/335989/750/camiseta-nike-fc-barcelona-tercera-equipacion-2026-2027-green-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "espanyol-away-202627",
     teamKey: "espanyol",
     season: "2026/27",
@@ -75056,7 +75099,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 89.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fkelme%2Frcd-espanyol-segunda-equipacion-2026-2027-red", title: "Camiseta Kelme RCD Espanyol Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/341818/750/camiseta-kelme-rcd-espanyol-segunda-equipacion-2026-2027-red-1.jpg" },
     ],
   },
-  {
+{
     id: "espanyol-home-202627",
     teamKey: "espanyol",
     season: "2026/27",
@@ -75068,7 +75111,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 89.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fkelme%2Frcd-espanyol-primera-equipacion-2026-2027-royal-bluewhite", title: "Camiseta Kelme RCD Espanyol Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/341814/750/camiseta-kelme-rcd-espanyol-primera-equipacion-2026-2027-royal-bluewhite-1.jpg" },
     ],
   },
-  {
+{
     id: "everton-home-202526",
     teamKey: "everton",
     season: "2025/26",
@@ -75080,7 +75123,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 57.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fcastore%2Feverton-fc-primera-equipacion-2025-2026-surf-the-web-blue", title: "Camiseta Castore Everton FC Primera Equipación 2025-2026", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262737/750/camiseta-castore-everton-fc-primera-equipacion-2025-2026-surf-the-web-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "fiorentina-away-202627",
     teamKey: "fiorentina",
     season: "2026/27",
@@ -75092,7 +75135,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 94.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Ffiorentina-segunda-equipacion-2026-2027-blanco", title: "Camiseta Joma Fiorentina Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/340473/750/camiseta-joma-fiorentina-segunda-equipacion-2026-2027-blanco-1.jpg" },
     ],
   },
-  {
+{
     id: "fiorentina-home-202627",
     teamKey: "fiorentina",
     season: "2026/27",
@@ -75104,7 +75147,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 94.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Ffiorentina-primera-equipacion-2026-2027-violeta", title: "Camiseta Joma Fiorentina Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/340472/750/camiseta-joma-fiorentina-primera-equipacion-2026-2027-violeta-1.jpg" },
     ],
   },
-  {
+{
     id: "levante-home-202627",
     teamKey: "levante",
     season: "2026/27",
@@ -75116,7 +75159,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 84.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Flevante-primera-equipacion-2026-2027-rojo", title: "Camiseta Macron Levante Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/338856/750/camiseta-macron-levante-primera-equipacion-2026-2027-rojo-1.jpg" },
     ],
   },
-  {
+{
     id: "olympiacos-home-202627",
     teamKey: "olympiacos",
     season: "2026/27",
@@ -75128,7 +75171,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Folympiacos-primera-equipacion-2026-2027-power-red", title: "Camiseta adidas Olympiacos Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/327170/750/camiseta-adidas-olympiacos-primera-equipacion-2026-2027-power-red-1.jpg" },
     ],
   },
-  {
+{
     id: "osasuna-third-202627",
     teamKey: "osasuna",
     season: "2026/27",
@@ -75140,7 +75183,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 89.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Fca-osasuna-tercera-equipacion-2026-2027-black", title: "Camiseta Macron CA Osasuna Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "L"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/338867/750/camiseta-macron-ca-osasuna-tercera-equipacion-2026-2027-black-1.jpg" },
     ],
   },
-  {
+{
     id: "psveindhoven-home-202627",
     teamKey: "psveindhoven",
     season: "2026/27",
@@ -75152,7 +75195,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fpuma%2Fpsv-primera-equipacion-2026-2027-for-all-time-red-puma-white", title: "Camiseta Puma Psv Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332093/750/camiseta-puma-psv-primera-equipacion-2026-2027-for-all-time-red-puma-white-1.jpg" },
     ],
   },
-  {
+{
     id: "realbetis-third-202627",
     teamKey: "realbetis",
     season: "2026/27",
@@ -75164,7 +75207,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 84.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fhummel%2Freal-betis-tercera-equipacion-2026-2027-true-blue", title: "Camiseta Hummel Real Betis Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/366317/750/camiseta-hummel-real-betis-tercera-equipacion-2026-2027-true-blue-1.jpg" },
     ],
   },
-  {
+{
     id: "realsociedad-home-202627",
     teamKey: "realsociedad",
     season: "2026/27",
@@ -75176,7 +75219,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 84.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Freal-sociedad-primera-equipacion-2026-2027-white", title: "Camiseta Joma Real Sociedad Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/362626/750/camiseta-joma-real-sociedad-primera-equipacion-2026-2027-white-1.jpg" },
     ],
   },
-  {
+{
     id: "roma-third-202627",
     teamKey: "roma",
     season: "2026/27",
@@ -75188,7 +75231,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fas-roma-tercera-equipacion-2026-2027-grey-six", title: "Camiseta adidas As Roma Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/339071/750/camiseta-adidas-as-roma-tercera-equipacion-2026-2027-grey-six-1.jpg" },
     ],
   },
-  {
+{
     id: "torino-third-202627",
     teamKey: "torino",
     season: "2026/27",
@@ -75200,7 +75243,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 94.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Ftorino-tercera-equipacion-2026-2027-navy", title: "Camiseta Joma Torino Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/340465/750/camiseta-joma-torino-tercera-equipacion-2026-2027-navy-1.jpg" },
     ],
   },
-  {
+{
     id: "villarreal-home-202627",
     teamKey: "villarreal",
     season: "2026/27",
