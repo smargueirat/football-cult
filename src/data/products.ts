@@ -25987,6 +25987,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Faston-villa-home-soccer-jersey-2025-26%3Fvariant%3D42557163110505", title: "Aston Villa Home Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/d657c2c3182e63abda17ca3117a0aaa8.png?v=1758073896" },
       { store: "eBay", price: 49.97, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/800417403154?_skw=Aston+Villa+home+soccer+jersey&hash=itemba5c985112%3Ag%3AqkYAAeSw9hFpyqCt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Aston Villa FC 25/26 Home Jersey Maroon Red Men's Size XL Slim Fit JN8061", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qkYAAeSw9hFpyqCt/s-l1600.jpg" },
       { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45585787771&a=3013769&m=77008", title: "Camiseta primera equipación Aston Villa FC 25/26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa446816e1cfd4b5d997c7feaec695e8a_9366%2FCamiseta_primera_equipacion_Aston_Villa_FC_25-26_Burgundy_JN8032_21_model.jpg&feedId=92152&k=1666aef87c7706b084a581ad6201286f1490bdd0" },
+      { store: "Amazon", price: 69.89, shipping: 16.31, currency: "EUR", url: "https://www.amazon.co.uk/dp/B0DLL3QY6S?tag=footballcu0d7-21", title: "adidas Aston Villa Home Shirt 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://m.media-amazon.com/images/I/71kA1PEE-BL._AC_SL1400_.jpg" },
     ],
   },
 {
@@ -26586,6 +26587,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 81.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl3367-maillot-domicile-1-fc-union-berlin-2025-26-vivred-white", title: "Maillot Domicile 1. FC Union Berlin 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jl3367_1_apparel_photography_front_center_view_white.jpg" },
       { store: "FootStoreES", price: 82.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42250718250&a=3013769&m=65912", title: "Camiseta Local 1. FC Union Berlín 2025/26", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl3367_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=789d204c8d545a25b504b2f58be35dafc3dba820" },
+      { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0H3Q1B4ZT?tag=footballcul07-21", title: "adidas Union Berlin Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://m.media-amazon.com/images/I/61JYFliPknL._AC_SL1400_.jpg" },
     ],
   },
 {
@@ -37939,6 +37941,7 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Feverton-away-soccer-jersey-2025-26%3Fvariant%3D42594271658089", title: "Everton Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Everton_Away_Soccer_Jersey_202526_2.png?v=1759310279" },
+      { store: "Amazon", price: 80.25, shipping: 9.19, currency: "EUR", url: "https://www.amazon.co.uk/dp/B0FHHPQRVC?tag=footballcu0d7-21", title: "Castore Everton FC Away Shirt", inStock: true, sizes: ["XL"], imageUrl: "https://m.media-amazon.com/images/I/61LV0UwmrmL._AC_SL1400_.jpg" },
     ],
   },
 {
@@ -71107,6 +71110,7 @@ const productsData = [
     brand: "nike",
     offers: [
       { store: "FootStoreES", price: 109.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44755567702&a=3013769&m=65912", title: "Camiseta Local Inter de Milán 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii1889-409_01.webp&feedId=89032&k=5ace95f216676a39784c91122f5da22fc311a62d" },
+      { store: "Amazon", price: 107.0, shipping: 14.0, currency: "EUR", url: "https://www.amazon.it/dp/B0GQRQM447?tag=footballcu047-21", title: "Nike Inter M NK DF JSY SS STAD HM Men's T-Shirt", inStock: true, sizes: ["S-M", "M-L", "L-XL", "XL-XXL"], imageUrl: "https://m.media-amazon.com/images/I/71ZsaeXAcJL._AC_SL1400_.jpg" },
     ],
   },
 {
@@ -71679,6 +71683,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45443711686&a=3013769&m=65906", title: "Camiseta Local Valencia CF 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784523-01-6a7b0395026fb-1.webp&feedId=89044&k=3b77743567309176f6bd012eb2a3467672dfea39" },
       { store: "SportIsGoodFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784523-01-maillot-domicile-valence-cf-2026-27-puma-white", title: "Maillot Domicile Valence CF 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-784523-01-6a7b0395026fb-1.webp" },
       { store: "FootStoreES", price: 100.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45100207342&a=3013769&m=65912", title: "Camiseta Local Valencia CF 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-784523-01-6a7b0395026fb-1.webp&feedId=89032&k=3b77743567309176f6bd012eb2a3467672dfea39" },
+      { store: "Amazon", price: 102.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0HCVG7NQ3?tag=footballcult-21", title: "PUMA Valencia CF Camiseta Primera Equipación 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://m.media-amazon.com/images/I/51B02kRoVCL._AC_SL1400_.jpg" },
     ],
   },
 {
