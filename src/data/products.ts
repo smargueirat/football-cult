@@ -49404,7 +49404,6 @@ const productsData = [
     offers: [
       { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_zoom1.jpg?ts=1775877982" },
       { store: "SantosStore", price: 179.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.541967230298548337661435&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2F2IB-1485-108", title: "Camisa Santos 25/26 Goleiro Umbro Masculina - Azul+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-2526-goleiro-umbro-masculina/08/2IB-1485-108/2IB-1485-108_zoom1.jpg?ts=1775877982" },
-      { store: "Futbol Factory", price: 14.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-portero-luanvi-santos-hombre-luanvi-azul-229737", title: "Camiseta de portero Luanvi Santos", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/229737_1.jpg" },
     ],
   },
 {

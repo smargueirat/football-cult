@@ -80,6 +80,13 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # aw_product_ids carry this same SKU (MIZP2GABX75) in the feed.
     "p=44084163809",
     "p=44084163810",
+    # Futbol Factory "Camiseta de portero Luanvi Santos": "Santos" here is
+    # Luanvi's own generic teamwear product-line name, not a reference to
+    # Santos FC (the Brazilian club) -- confirmed by the real product page
+    # ("linea Santos de Luanvi"), no crest/club branding at all, EUR 14-29
+    # price far below any real official jersey. TEAM_PATTERNS' bare
+    # "santos" match false-positived on this (2026-09-09).
+    "comprar-camiseta-de-portero-luanvi-santos",
 ]
 
 
