@@ -137,13 +137,12 @@ export default function HeroCarousel() {
               donde vive el degradé sólido del texto -- quedaba
               prácticamente tapada (bug real, encontrado inspeccionando
               el render en vivo). Solución real: HERO_PHOTOS reemplazó
-              esas fotos de estudio por fotos de campaña panorámicas de
-              verdad para clubes/retro (ver sections.ts), donde cover
-              es seguro. Mujer/Niños se quedaron sin una candidata real
-              comparable que funcionara con el ancho real del banner,
-              así que siguen en "contain" -- SECTION_HERO_FIT marca por
-              foto cuál tratamiento le corresponde: "contain" muestra la
-              foto entera siempre, a costa de no llenar el recuadro.
+              las 4 fotos de estudio (clubes/retro/mujer/niños) por
+              fotos de campaña panorámicas de verdad, con gente
+              repartida en todo el ancho (ver sections.ts) -- las 6
+              secciones usan "cover" ahora. SECTION_HERO_FIT queda como
+              interruptor por si en algún momento hace falta volver a
+              "contain" para alguna foto puntual.
 
               Bug real #2, encontrado después: en "contain" el alto del
               banner es SIEMPRE el lado que manda la escala (el recuadro
