@@ -84,7 +84,7 @@ export default function SectionsMenu() {
               className="flex items-center gap-3 rounded-xl px-3 py-2 text-sm text-[#1a1a1a] transition-colors hover:bg-black/[0.03]"
             >
               <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border border-[#C9A24B]/40 bg-[#F3EEDD]">
-                <Image src={getDisplaySrc(link.photo, 100)} alt="" fill unoptimized className="object-contain p-0.5" />
+                <Image src={getDisplaySrc(link.photo, 100)} alt="" fill unoptimized className="object-cover" />
               </span>
               {link.label}
             </Link>

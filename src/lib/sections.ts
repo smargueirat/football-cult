@@ -27,16 +27,15 @@ export const SECTION_PHOTOS: string[] = [
 // object-cover en un recuadro ancho SOLO recorta arriba/abajo (nunca a
 // los costados, porque el ancho ya encaja justo) -- así que la persona
 // siempre queda centrada horizontalmente en el recuadro final, caiga
-// donde caiga el degradé oscuro que necesita el texto. En selecciones/
-// clubes/niños esa zona central coincide con una parte despejada de la
-// foto; en la de Alemania (mujer) la cara termina justo debajo del
-// degradé sólido y se ve prácticamente invisible. object-position no
-// lo arregla (no hay margen horizontal para mover). La solución real
-// es no usar cover ahí: "contain" muestra la foto entera siempre, a
-// costa de no llenar el recuadro de punta a punta. Selecciones y botas
-// son fotos de campaña panorámicas (no centradas, se ve bien con
-// cover); clubes y niños se confirmaron bien centradas con cover; retro
-// y mujer quedan en contain -- si retro también resulta clara con
-// cover en una revisión futura, se puede pasar, pero por ahora prioriza
-// que se vea completa por sobre que llene el recuadro.
-export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "contain", "contain", "cover", "cover"];
+// donde caiga el degradé oscuro que necesita el texto. Primero se creyó
+// que esto solo afectaba a la foto de mujer (Alemania), pero se
+// reportó roto de nuevo en clubes (Boca) en un ancho de pantalla
+// distinto -- el punto exacto donde cae la cara cambia según el ancho
+// real del recuadro, así que "confirmarlo a ojo" en una sola resolución
+// no alcanza. En vez de seguir ajustando por foto, las 4 fotos de
+// estudio (clubes/retro/mujer/niños) pasan TODAS a "contain": nunca
+// recorta, así la persona siempre se ve completa sin importar el ancho
+// de pantalla. Selecciones y botas son fotos de campaña panorámicas de
+// verdad (no un estudio con la persona centrada), sin este riesgo --
+// se confirmaron bien con cover de forma consistente y se quedan así.
+export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "contain", "contain", "contain", "contain", "cover"];
