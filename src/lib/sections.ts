@@ -35,20 +35,33 @@ export const SECTION_PHOTOS: string[] = [
 // (news.adidas.com/football/adidas-and-liverpool-fc-launch-new-home-and-away-jerseys-for-the-2025-26-season)
 // Retro: adidas + Arsenal, "Bring-Back" 1992-94 (colección retro real)
 // (news.adidas.com/football/adidas-and-arsenal-launch-iconic-1992-1994-bring-back-home-jersey)
-// Mujer: campaña real de fútbol femenino adidas, panel izquierdo con
-// la camiseta de Alemania puesta -- misma fuente que el resto
-// (preview.thenewsmarket.com/Previews/ADID/StillAssets)
 //
-// Niños: no se encontró una foto de campaña ancha comparable (las
-// candidatas reales -- ej. la gira juvenil de Son Heung-Min -- o
-// recortaban mal en celular o eran fotos de grupo muy apretadas sin
-// aire para el texto), así que se queda con la foto de producto +
-// "contain" (ver SECTION_HERO_FIT), ya verificado sin recorte.
+// Mujer y Niños se quedan con la foto de producto de SECTION_PHOTOS +
+// "contain" (ver SECTION_HERO_FIT). Se probaron candidatas anchas
+// reales para las dos y ninguna funcionó de verdad:
+// - Mujer: la única candidata real (tríptico de 3 paneles, campaña de
+//   fútbol femenino) tiene la camiseta puesta en el panel IZQUIERDO --
+//   que es exactamente donde vive el degradé sólido del texto en
+//   escritorio (0-48% del ancho real del banner, medido en vivo:
+//   1736x460px, mucho más ancho que 16:9). Con "cover" ahí, el
+//   contenedor no recorta a los costados (usa todo el ancho, solo
+//   recorta arriba/abajo), así que no hay forma de correr el tríptico
+//   para destapar la camiseta sin taparla en otro ancho -- mismo tipo
+//   de problema que ya rompió Clubes dos veces, encontrado a tiempo
+//   esta vez probando el ancho real de escritorio (no solo celular)
+//   antes de dar por buena la foto. La otra candidata real (grupo con
+//   las camisetas de visitante de la Eurocopa femenina 2025) tiene un
+//   modelo varón bien visible adelante, fuera de tono para "talles y
+//   cortes de mujer".
+// - Niños: no se encontró una foto de campaña ancha comparable (las
+//   candidatas reales -- ej. la gira juvenil de Son Heung-Min --
+//   recortaban mal en celular o eran fotos de grupo muy apretadas sin
+//   aire para el texto).
 export const HERO_PHOTOS: string[] = [
   SECTION_PHOTOS[0],
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/700469_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/705622_v2.jpg",
-  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/646509_v2.jpg",
+  SECTION_PHOTOS[3],
   SECTION_PHOTOS[4],
   SECTION_PHOTOS[5],
 ];
@@ -59,19 +72,14 @@ export const HERO_PHOTOS: string[] = [
 // los costados, porque el ancho ya encaja justo) -- así que la persona
 // siempre queda centrada horizontalmente en el recuadro final, caiga
 // donde caiga el degradé oscuro que necesita el texto. Con las fotos de
-// campaña reales (HERO_PHOTOS) esto deja de ser un problema porque la
-// composición ya es panorámica de origen -- verificado con overlays
-// aislados a los dos anchos reales (460px desktop / 300px mobile) antes
-// de aplicarlas, no solo a ojo en una resolución. Niños se queda en
-// "contain" (sin foto de campaña real disponible, ver arriba).
-export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "cover", "contain", "cover"];
+// campaña reales (Clubes/Retro en HERO_PHOTOS) esto deja de ser un
+// problema porque la composición ya es panorámica de origen --
+// verificado con overlays aislados a los dos anchos reales (460px
+// desktop / 300px mobile) antes de aplicarlas, no solo a ojo en una
+// resolución. Mujer/Niños se quedan en "contain" (ver HERO_PHOTOS).
+export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "contain", "contain", "cover"];
 
-// object-position por foto quand fit=="cover". Todas centradas
-// arriba salvo mujer: es una foto compuesta en 3 paneles verticales
-// (club nocturno / bosque / heladera de bebidas) y la camiseta real
-// (panel izquierdo) sólo entra completa en el recorte angosto de
-// celular si el recorte arranca pegado al borde izquierdo -- "top"
-// centrado dejaba la camiseta afuera y mostraba los paneles 2/3, que
-// no tienen ninguna camiseta puesta. Verificado con overlays aislados
-// a 380x300 (celular) probando 0%/15%/25%/50% antes de elegir esta.
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "left top", "center", "top"];
+// object-position por foto cuando fit=="cover" -- todas centradas
+// arriba (object-top), que es donde vive la cara/torso en las fotos de
+// campaña reales usadas acá.
+export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "top", "top"];
