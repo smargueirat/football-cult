@@ -47,15 +47,18 @@ export const SECTION_PHOTOS: string[] = [
 // de la sesión "family photo" del lanzamiento 2023/24 (reemplazo
 // pedido explícitamente, la foto de Son Heung-Min no gustó)
 // (news.adidas.com/football/adidas-and-real-madrid-unveil-new-home-jersey-for-2023-24-season)
-// Botas: vuelve a Jude Bellingham con la bota real y fondo de campaña
-// rojo (SECTION_PHOTOS[5], la misma que ya usan los círculos) -- se
-// había probado reemplazarla por Messi en un campo a pleno sol, pero
-// Messi queda centrado en la foto original (34%-61% del ancho real),
-// casi sin margen para moverlo fuera del degradé del texto (ni
-// espejándola cambia mucho, por lo simétrico de la pose) -- se ve la
-// cara tapada/opaca y de fondo mayormente cielo vacío. El fondo rojo
-// de Bellingham llena esa misma zona con color real en vez de verse
-// vacío, aunque su cara tampoco quede del todo destapada.
+// Botas: F50 SPARKFUSION (bota de fútbol femenino real), sin persona
+// -- foto de producto puro sobre un fondo de cielo/atardecer real en
+// gradiente (naranja/rosa/celeste), reflejo incluido. Se probaron 2
+// fotos CON persona (Messi, Bellingham) y las dos tenían el mismo
+// problema real: el jugador queda centrado en la foto original, casi
+// sin margen para sacarlo del degradé del texto -- lo poco que se veía
+// era cara tapada/opaca y fondo vacío, reportado dos veces por el
+// usuario con captura. Esta foto no tiene ese riesgo porque no depende
+// de dónde cae una persona: el fondo en sí ya es rico en color en todo
+// el ancho, y con object-position "50% 50%" la suela de la bota (con
+// sus colores) queda justo en el borde de la zona visible.
+// (news.adidas.com/football/adidas-launches-f50-sparkfusion---a-boot-built-by-and-for-women-s-football-players)
 //
 // Todas las candidatas se probaron con un overlay que reproduce el
 // degradé real (mismo gradient CSS que el slide) sobre las dos medidas
@@ -70,7 +73,7 @@ export const HERO_PHOTOS: string[] = [
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/705622_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/650936_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/644816.jpg",
-  SECTION_PHOTOS[5],
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/696580.jpg",
 ];
 
 // Bug real, encontrado inspeccionando el render en vivo (no a ojo): en
@@ -87,10 +90,14 @@ export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cov
 
 // object-position por foto cuando fit=="cover" -- la mayoría centradas
 // arriba (object-top), que es donde vive la cara/torso en las fotos de
-// campaña reales usadas acá. Niños es la excepción: con "top" sólo se
-// veía la cara del chico y una tira mínima del cuello de la camiseta
-// (reportado por el usuario) -- corrido a "50% 40%" baja la ventana
-// visible lo suficiente para que se lea "Emirates Fly Better" y el
-// escudo en el pecho, sin perder la cabeza del cuadro (probado a
-// 0/10/20/30/40/50% antes de elegir este valor).
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "top"];
+// campaña reales usadas acá. Dos excepciones, las dos probadas con
+// varios valores contra el degradé real antes de elegir:
+// - Niños: con "top" sólo se veía la cara del chico y una tira mínima
+//   del cuello de la camiseta (reportado por el usuario) -- corrido a
+//   "50% 40%" baja la ventana visible lo suficiente para que se lea
+//   "Emirates Fly Better" y el escudo en el pecho, sin perder la
+//   cabeza del cuadro (probado a 0/10/20/30/40/50%).
+// - Botas: con "top" sólo entraba cielo, la bota quedaba fuera del
+//   recuadro por arriba -- "50% 50%" trae la suela de la bota justo al
+//   borde de la zona visible (probado top/30%/50%/70%/bottom).
+export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%"];
