@@ -1,33 +1,28 @@
 "use client";
 
-import Link from "@/lib/i18n/LocaleLink";
+import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
-import {
-  bestOfferForCountry,
-  displayTitleForCountry,
-  findProduct,
-  formatOfferMoney,
-  offerTotal,
-  teamNames,
-  typeNames,
-} from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
-import { useCountry } from "@/lib/country/CountryContext";
 import Portal from "./Portal";
 import { useAnchoredDropdown } from "@/lib/useAnchoredDropdown";
 
+// FavoritesButton se manda en TODAS las páginas (Header.tsx, que vive
+// en el layout de [locale]), incluidas páginas estáticas como
+// "términos" que no muestran ningún producto. El botón/badge solo
+// necesita la CANTIDAD de favoritos (favorites.length, ids planos, sin
+// tocar products.ts); el contenido real del panel (nombres, precios --
+// necesita findProduct/teamNames/etc. del catálogo de 5.9MB) vive en
+// FavoritesPanelContent y sólo se pide cuando el usuario abre el
+// panel. Mismo patrón que CompareBar/CompareBarContent.
+const FavoritesPanelContent = dynamic(() => import("./FavoritesPanelContent"), { ssr: false });
+
 export default function FavoritesButton() {
-  const { locale, t } = useLanguage();
-  const { countryCode } = useCountry();
+  const { t } = useLanguage();
   const { favorites } = useFavorites();
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const position = useAnchoredDropdown(buttonRef, open);
-
-  const savedProducts = favorites
-    .map((id) => findProduct(id))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   return (
     <div className="relative">
@@ -45,9 +40,9 @@ export default function FavoritesButton() {
             d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-8.318a4.5 4.5 0 010-6.364z"
           />
         </svg>
-        {savedProducts.length > 0 && (
+        {favorites.length > 0 && (
           <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#D97706] text-[9px] font-semibold text-white">
-            {savedProducts.length}
+            {favorites.length}
           </span>
         )}
       </button>
@@ -62,47 +57,7 @@ export default function FavoritesButton() {
             <p className="mb-2 text-sm font-medium text-[#1a1a1a]">
               {t.favoritesPanel.title}
             </p>
-            {savedProducts.length === 0 ? (
-              <p className="text-xs text-[#675c44]">{t.favoritesPanel.empty}</p>
-            ) : (
-              <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
-                {savedProducts.map((product) => {
-                  const best = bestOfferForCountry(product, countryCode);
-                  const displayName =
-                    displayTitleForCountry(product, countryCode, locale) ??
-                    `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
-                  return (
-                    <li key={product.id}>
-                      <Link
-                        href={`/camiseta/${product.id}`}
-                        onClick={() => setOpen(false)}
-                        className="flex items-center justify-between gap-2 rounded-xl px-2 py-2 transition-colors hover:bg-black/[0.04]"
-                      >
-                        <span className="truncate text-sm text-[#1a1a1a]">{displayName}</span>
-                        {best ? (
-                          <span className="text-sm font-semibold text-[#B45309]">
-                            {formatOfferMoney(offerTotal(best), best.currency)}
-                          </span>
-                        ) : (
-                          <span className="text-xs text-[#b3b3ad]">
-                            {t.countryPanel.notAvailable}
-                          </span>
-                        )}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
-            {savedProducts.length > 0 && (
-              <Link
-                href="/favoritos"
-                onClick={() => setOpen(false)}
-                className="mt-2 flex items-center justify-center rounded-xl border-t border-[#C9A24B]/25 pt-3 text-sm font-medium text-[#1F6F4C] transition-colors hover:text-[#18573c]"
-              >
-                {t.favoritesPanel.viewAll}
-              </Link>
-            )}
+            <FavoritesPanelContent onNavigate={() => setOpen(false)} />
           </div>
         </Portal>
       )}
