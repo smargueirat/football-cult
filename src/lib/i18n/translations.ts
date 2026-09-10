@@ -8,6 +8,7 @@ export interface Translations {
   nav: {
     search: string;
     categories: string;
+    catalog: string;
     about: string;
     contact: string;
     login: string;
@@ -380,6 +381,7 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       search: "Buscar",
       categories: "Categorías",
+      catalog: "Catálogo",
       about: "Sobre nosotros",
       contact: "Contacto",
       login: "Ingresar",
@@ -794,6 +796,7 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       search: "Buscar",
       categories: "Categorias",
+      catalog: "Catálogo",
       about: "Sobre nós",
       contact: "Contato",
       login: "Entrar",
@@ -1207,6 +1210,7 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       search: "Search",
       categories: "Categories",
+      catalog: "Catalog",
       about: "About us",
       contact: "Contact",
       login: "Sign in",
@@ -1620,6 +1624,7 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       search: "Recherche",
       categories: "Catégories",
+      catalog: "Catalogue",
       about: "À propos",
       contact: "Contact",
       login: "Se connecter",
@@ -2033,6 +2038,7 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       search: "Cerca",
       categories: "Categorie",
+      catalog: "Catalogo",
       about: "Chi siamo",
       contact: "Contatti",
       login: "Accedi",

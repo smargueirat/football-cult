@@ -198,10 +198,10 @@ export default function ProductCard({ product }: { product: Product }) {
             toggleFavorite(product.id);
           }}
           aria-label={t.nav.favorites}
-          className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110 active:scale-90"
+          className="shadow-vintage-sm absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110 active:scale-90 sm:h-11 sm:w-11"
         >
           <svg
-            className="h-4 w-4"
+            className="h-3.5 w-3.5 sm:h-4 sm:w-4"
             viewBox="0 0 24 24"
             fill={favorite ? "currentColor" : "none"}
             stroke="currentColor"

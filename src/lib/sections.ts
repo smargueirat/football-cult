@@ -21,3 +21,22 @@ export const SECTION_PHOTOS: string[] = [
   "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/Source_Max_2560/711064.jpg", // botas: campaña Predator/F50 "Choose a Side" (Jude Bellingham con la bota real, fondo de campaña)
 ];
+
+// Bug real, encontrado inspeccionando el render en vivo (no a ojo): en
+// una foto CUADRADA de estudio con la persona centrada, el recorte
+// object-cover en un recuadro ancho SOLO recorta arriba/abajo (nunca a
+// los costados, porque el ancho ya encaja justo) -- así que la persona
+// siempre queda centrada horizontalmente en el recuadro final, caiga
+// donde caiga el degradé oscuro que necesita el texto. En selecciones/
+// clubes/niños esa zona central coincide con una parte despejada de la
+// foto; en la de Alemania (mujer) la cara termina justo debajo del
+// degradé sólido y se ve prácticamente invisible. object-position no
+// lo arregla (no hay margen horizontal para mover). La solución real
+// es no usar cover ahí: "contain" muestra la foto entera siempre, a
+// costa de no llenar el recuadro de punta a punta. Selecciones y botas
+// son fotos de campaña panorámicas (no centradas, se ve bien con
+// cover); clubes y niños se confirmaron bien centradas con cover; retro
+// y mujer quedan en contain -- si retro también resulta clara con
+// cover en una revisión futura, se puede pasar, pero por ahora prioriza
+// que se vea completa por sobre que llene el recuadro.
+export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "contain", "contain", "cover", "cover"];

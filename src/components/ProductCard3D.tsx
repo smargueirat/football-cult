@@ -226,21 +226,25 @@ export default function ProductCard3D({
           )}
         </span>
 
+        {/* Recuadro de precio y los dos botones circulares (favorito,
+            comparar) más chicos en celular -- pedido explícito del
+            usuario: tapaban bastante foto en una card angosta. Vuelven
+            al tamaño de siempre desde sm+. */}
         {best && (
           <div
-            className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]"
+            className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-2 py-1 text-[#2A2410] sm:px-3 sm:py-1.5"
             style={{ transform: "translateZ(40px)" }}
           >
             {isPriceDropped(best) && (
-              <span className="text-[10px] leading-none line-through opacity-60">
+              <span className="text-[9px] leading-none line-through opacity-60 sm:text-[10px]">
                 {formatOfferMoney(best.previousPrice! + best.shipping, best.currency)}
               </span>
             )}
-            <span className="text-sm font-semibold">
+            <span className="text-xs font-semibold sm:text-sm">
               {formatOfferMoney(bestTotal, best.currency)}
             </span>
             {best.shipping > 0 && (
-              <span className="text-[9px] font-medium uppercase leading-none opacity-70">
+              <span className="text-[8px] font-medium uppercase leading-none opacity-70 sm:text-[9px]">
                 {t.product.shippingIncluded}
               </span>
             )}
@@ -255,10 +259,10 @@ export default function ProductCard3D({
           }}
           aria-label={t.nav.favorites}
           style={{ transform: "translateZ(40px)" }}
-          className="shadow-vintage-sm absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110 active:scale-90"
+          className="shadow-vintage-sm absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110 active:scale-90 sm:h-11 sm:w-11"
         >
           <svg
-            className="h-4 w-4"
+            className="h-3.5 w-3.5 sm:h-4 sm:w-4"
             viewBox="0 0 24 24"
             fill={favorite ? "currentColor" : "none"}
             stroke="currentColor"
@@ -289,13 +293,13 @@ export default function ProductCard3D({
             aria-label={isComparing(product.id, best.store) ? t.compare.remove : t.compare.add}
             title={!isComparing(product.id, best.store) && maxReached ? t.compare.maxReached : undefined}
             style={{ transform: "translateZ(40px)" }}
-            className={`shadow-vintage-sm absolute right-2 top-14 flex h-11 w-11 items-center justify-center rounded-full backdrop-blur-md transition-transform hover:scale-110 active:scale-90 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100 ${
+            className={`shadow-vintage-sm absolute right-2 top-11 flex h-8 w-8 items-center justify-center rounded-full backdrop-blur-md transition-transform hover:scale-110 active:scale-90 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:scale-100 sm:top-14 sm:h-11 sm:w-11 ${
               isComparing(product.id, best.store)
                 ? "bg-[#1B3B2B] text-[#F3E9C9]"
                 : "bg-white/80 text-[#1B3B2B]"
             }`}
           >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <svg className="h-3.5 w-3.5 sm:h-4 sm:w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

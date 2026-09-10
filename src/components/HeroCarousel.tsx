@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { getDisplaySrc } from "@/lib/images";
-import { SECTION_PATHS, SECTION_PHOTOS } from "@/lib/sections";
+import { SECTION_PATHS, SECTION_PHOTOS, SECTION_HERO_FIT } from "@/lib/sections";
 
 const SLIDE_COUNT = 6;
 const AUTO_ADVANCE_MS = 5500;
@@ -127,22 +127,24 @@ export default function HeroCarousel() {
           }`}
           aria-hidden={i !== active}
         >
-          {/* Foto a pantalla completa (no una caja chica flotando en el
-              medio) -- pedido explícito del usuario, "que quede grande
-              como Footy.com". object-cover en vez de object-contain
-              ahora que el alto es fijo y real (nunca más ambiguo como en
-              el bug viejo de aspect-square): cubre todo el recuadro
-              cortando los bordes en vez de dejar franjas vacías.
-              object-top prioriza la cabeza del modelo si hay que
-              recortar algo -- solo se pierde piso/fondo, nunca cara. */}
+          {/* Foto a pantalla completa cuando la composición lo permite
+              (object-cover) -- pero en una foto cuadrada de estudio con
+              la persona centrada, cover en un recuadro ancho SOLO
+              recorta arriba/abajo (el ancho ya encaja), así que la
+              persona siempre cae centrada horizontalmente, exactamente
+              donde vive el degradé sólido del texto -- quedaba
+              prácticamente tapada (bug real, encontrado inspeccionando
+              el render en vivo). SECTION_HERO_FIT marca por foto cuál
+              tratamiento le corresponde: "contain" muestra la foto
+              entera siempre, a costa de no llenar el recuadro. */}
           {slide.photo && (
             <img
               src={getDisplaySrc(slide.photo, 1200)}
               alt=""
               aria-hidden
-              className={`absolute inset-0 h-full w-full object-cover object-top ${
-                i === active ? "hero-photo-kenburns" : ""
-              }`}
+              className={`absolute inset-0 h-full w-full object-top ${
+                SECTION_HERO_FIT[i] === "contain" ? "object-contain" : "object-cover"
+              } ${i === active ? "hero-photo-kenburns" : ""}`}
             />
           )}
 

@@ -49,7 +49,7 @@ export default function Header() {
         <div className="flex shrink-0 items-center gap-0.5 sm:gap-5">
           <nav className="hidden items-center gap-5 text-sm text-[#5b5b57] lg:flex">
             <Link href="/" className="transition-colors hover:text-[#1a1a1a]">
-              {t.nav.search}
+              🔍 {t.nav.search}
             </Link>
             <SectionsMenu />
           </nav>

@@ -4,29 +4,32 @@ import Link from "@/lib/i18n/LocaleLink";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { SECTION_PATHS } from "@/lib/sections";
 import Portal from "./Portal";
 
+// Emoji antes de cada palabra -- pedido explícito del usuario después de
+// que el menú mezclaba búsqueda, secciones del catálogo y páginas
+// sueltas (vistos recientemente, contacto) todo en una sola lista plana
+// sin ninguna diferencia visual entre ellas. Ahora las 6 secciones viven
+// agrupadas bajo un encabezado "Catálogo" (🛒), separadas de las demás
+// acciones, y cada una tiene su propio ícono.
 export default function MobileMenu() {
   const { t } = useLanguage();
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
-  // Cada ítem lleva a su propia página (igual que el resto del rediseño
-  // por secciones) en vez de filtrar + navegar al home.
-  const links: { label: string; href: string }[] = [
-    { label: t.nav.search, href: "/" },
-    { label: t.categoriesMenu.national, href: "/selecciones" },
-    { label: t.categoriesMenu.clubs, href: "/clubes" },
-    { label: t.categoriesMenu.retro, href: "/retro" },
-    { label: t.botas.navLabel, href: "/botas" },
-    { label: t.recentlyViewed.title, href: "/vistos-recientemente" },
-    { label: t.nav.about, href: "/sobre-nosotros" },
-    { label: t.nav.contact, href: "/contacto" },
+  const sectionLinks = [
+    { icon: "🌎", label: t.categoriesMenu.national, href: SECTION_PATHS[0] },
+    { icon: "🏆", label: t.categoriesMenu.clubs, href: SECTION_PATHS[1] },
+    { icon: "🕰️", label: t.categoriesMenu.retro, href: SECTION_PATHS[2] },
+    { icon: "👚", label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3] },
+    { icon: "🧒", label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4] },
+    { icon: "👟", label: t.botas.navLabel, href: SECTION_PATHS[5] },
   ];
 
-  function handleClick(link: (typeof links)[number]) {
+  function go(href: string) {
     setOpen(false);
-    router.push(link.href);
+    router.push(href);
   }
 
   return (
@@ -55,7 +58,7 @@ export default function MobileMenu() {
               className="absolute inset-0 bg-black/35"
               onClick={() => setOpen(false)}
             />
-            <div className="shadow-vintage-lg solid-panel absolute left-0 top-0 h-screen w-72 border-r border-[#C9A24B]/25 p-6">
+            <div className="shadow-vintage-lg solid-panel absolute left-0 top-0 flex h-screen w-72 flex-col overflow-y-auto border-r border-[#C9A24B]/25 p-6">
               <div className="mb-6 flex items-center justify-between">
                 <span className="font-vintage text-sm text-[#1B3B2B]">{t.brand}</span>
                 <button
@@ -68,20 +71,81 @@ export default function MobileMenu() {
                   </svg>
                 </button>
               </div>
+
               <nav className="flex flex-col gap-1">
-                {links.map((link) => (
+                <Link
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    go("/");
+                  }}
+                  className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                >
+                  🔍 {t.nav.search}
+                </Link>
+              </nav>
+
+              <div className="my-3 h-px bg-[#C9A24B]/20" />
+
+              <Link
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  go("/");
+                }}
+                className="rounded-xl px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#8a6a1f] transition-colors hover:bg-[#C9A24B]/10"
+              >
+                🛒 {t.nav.catalog}
+              </Link>
+              <nav className="mt-1 flex flex-col gap-1">
+                {sectionLinks.map((link) => (
                   <Link
-                    key={link.label}
+                    key={link.href}
                     href={link.href}
                     onClick={(e) => {
                       e.preventDefault();
-                      handleClick(link);
+                      go(link.href);
                     }}
-                    className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                    className="rounded-xl py-2.5 pl-6 pr-3 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
                   >
-                    {link.label}
+                    {link.icon} {link.label}
                   </Link>
                 ))}
+              </nav>
+
+              <div className="my-3 h-px bg-[#C9A24B]/20" />
+
+              <nav className="flex flex-col gap-1">
+                <Link
+                  href="/vistos-recientemente"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    go("/vistos-recientemente");
+                  }}
+                  className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                >
+                  👁️ {t.recentlyViewed.title}
+                </Link>
+                <Link
+                  href="/sobre-nosotros"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    go("/sobre-nosotros");
+                  }}
+                  className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                >
+                  ℹ️ {t.nav.about}
+                </Link>
+                <Link
+                  href="/contacto"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    go("/contacto");
+                  }}
+                  className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                >
+                  ✉️ {t.nav.contact}
+                </Link>
               </nav>
             </div>
           </div>
