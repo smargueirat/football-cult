@@ -31,8 +31,11 @@ export const SECTION_PHOTOS: string[] = [
 // un recuadro ancho sea seguro acá y no lo era con las fotos de
 // estudio (ver el bug documentado en SECTION_HERO_FIT).
 //
-// Clubes: adidas + Liverpool FC, lanzamiento camisetas 25/26
-// (news.adidas.com/football/adidas-and-liverpool-fc-launch-new-home-and-away-jerseys-for-the-2025-26-season)
+// Clubes: adidas + Real Madrid, jugadores reales con la camiseta
+// puesta en el túnel del estadio (Real Madrid pega más que Liverpool
+// en una audiencia de habla hispana -- reemplazo pedido explícitamente
+// por el usuario, la primera foto de Liverpool no gustó)
+// (news.adidas.com/football/adidas-and-real-madrid-reveal-white-home-kit-rooted-in-tradition-for-2024-25-season)
 // Retro: adidas + Arsenal, "Bring-Back" 1992-94 (colección retro real)
 // (news.adidas.com/football/adidas-and-arsenal-launch-iconic-1992-1994-bring-back-home-jersey)
 // Mujer: adidas + Arsenal Women, segunda equipación real puesta por
@@ -40,23 +43,29 @@ export const SECTION_PHOTOS: string[] = [
 // repartidas en todo el ancho de la foto -- así que siempre hay alguna
 // con la camiseta bien visible caiga donde caiga el degradé del texto
 // (news.adidas.com/football/adidas-and-arsenal-unveil-first-away-kit-with-stella-mccartney-for-arsenal-women)
-// Niños: gira juvenil de Son Heung-Min con un club de Londres, tres
-// juveniles con la camiseta puesta repartidos en el ancho igual que
-// arriba (news.adidas.com/ss25/adidas-icon--son-heung-min--surprises-london-youth-football-organisation)
+// Niños: chico real con la camiseta infantil de Real Madrid puesta,
+// de la sesión "family photo" del lanzamiento 2023/24 (reemplazo
+// pedido explícitamente, la foto de Son Heung-Min no gustó)
+// (news.adidas.com/football/adidas-and-real-madrid-unveil-new-home-jersey-for-2023-24-season)
+// Botas: Leo Messi con la F50 "La Vida Tropical" en la mano, campo
+// real a pleno sol (reemplazo pedido explícitamente, la foto de
+// Bellingham con fondo rojo oscuro no gustó)
+// (news.adidas.com/football/adidas-launches-all-new-f50-messi--la-vida-tropical-)
 //
-// Las 4 candidatas se probaron con un overlay que reproduce el degradé
-// real (mismo gradient CSS que el slide) sobre las dos medidas reales
-// del banner (1736x460 escritorio, ~360x300 celular) -- no alcanza con
-// mirar la foto sola: la primera candidata de mujer (un tríptico) se
-// veía perfecta así pero la camiseta quedaba tapada por el degradé al
-// probarla con el ancho real de escritorio (ver historial de commits).
+// Todas las candidatas se probaron con un overlay que reproduce el
+// degradé real (mismo gradient CSS que el slide) sobre las dos medidas
+// reales del banner (1736x460 escritorio, ~360x300 celular) -- no
+// alcanza con mirar la foto sola: la primera candidata de mujer (un
+// tríptico) se veía perfecta así pero la camiseta quedaba tapada por
+// el degradé al probarla con el ancho real de escritorio (ver
+// historial de commits).
 export const HERO_PHOTOS: string[] = [
   SECTION_PHOTOS[0],
-  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/700469_v2.jpg",
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/669240_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/705622_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/650936_v2.jpg",
-  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/688997.jpg",
-  SECTION_PHOTOS[5],
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/644816.jpg",
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/693204.jpeg",
 ];
 
 // Bug real, encontrado inspeccionando el render en vivo (no a ojo): en
