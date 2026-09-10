@@ -141,6 +141,13 @@ export default function ProductCard({ product }: { product: Product }) {
           />
         )}
 
+        {/* La etiqueta de "bajó X%" vivía abajo-a-la-izquierda, en la
+            misma fila que el recuadro de precio (abajo-a-la-derecha) --
+            en una card angosta (ej. el carrusel de Bajaron de Precio,
+            w-40 en celular) el recuadro de precio es más ancho que la
+            mitad de la card y terminaba tapando esta etiqueta. Se movió
+            a la pila de arriba-a-la-izquierda, que nunca compite por
+            espacio con el precio. */}
         <span className="absolute left-3 top-3 flex flex-col items-start gap-1">
           <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
             {product.season}
@@ -155,23 +162,25 @@ export default function ProductCard({ product }: { product: Product }) {
               {t.search.ageGroupWomen}
             </span>
           )}
+          {best && isPriceDropped(best) && (
+            <span className="shadow-vintage-sm rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+              {t.priceDrop.badge.replace("{n}", String(priceDropPercent(best)))}
+            </span>
+          )}
         </span>
 
-        {best && isPriceDropped(best) && (
-          <span className="shadow-vintage-sm absolute bottom-3 left-3 rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
-            {t.priceDrop.badge.replace("{n}", String(priceDropPercent(best)))}
-          </span>
-        )}
-
         {best && (
-          <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
+          // px-2.5/py-1 (antes px-3/py-1.5) y sin el emoji 🥇 (no está en
+          // ProductCard3D tampoco, y en una card angosta como esta hacía
+          // que el recuadro ocupara más ancho del necesario, tapando
+          // parte de la foto) -- mismo precio real, recuadro más chico.
+          <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-2.5 py-1 text-[#2A2410]">
             {isPriceDropped(best) && (
               <span className="text-[10px] leading-none line-through opacity-60">
                 {formatOfferMoney(best.previousPrice! + best.shipping, best.currency)}
               </span>
             )}
-            <span className="flex items-center gap-1 text-sm font-semibold">
-              <span className="text-xs">🥇</span>
+            <span className="text-sm font-semibold">
               {formatOfferMoney(bestTotal, best.currency)}
             </span>
             {best.shipping > 0 && (

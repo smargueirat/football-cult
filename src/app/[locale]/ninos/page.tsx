@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import CategoryCatalogPage from "@/components/CategoryCatalogPage";
-import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { buildCategoryMetadata } from "@/lib/categoryMeta";
+import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 export async function generateMetadata({
   params,
@@ -9,19 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
-  return {
-    title: "Camisetas de niños — Comparar precios | Football Cult",
-    description: "Camisetas infantiles de sus ídolos, en los talles que necesitás.",
-    alternates: buildAlternates(locale, "/ninos"),
-  };
+  return buildCategoryMetadata(locale, 4, "/ninos");
 }
 
 export default function NinosPage() {
-  return (
-    <CategoryCatalogPage
-      title="Los hinchas más chicos"
-      subtitle="Camisetas infantiles de sus ídolos, en los talles que necesitás."
-      ageGroup="kids"
-    />
-  );
+  return <CategoryCatalogPage sectionIndex={4} ageGroup="kids" />;
 }

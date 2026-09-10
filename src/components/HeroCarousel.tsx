@@ -158,11 +158,11 @@ export default function HeroCarousel() {
               parejo sea cual sea la foto de atrás. */}
           <div
             className="absolute inset-0 sm:hidden"
-            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 40%, transparent 85%)" }}
+            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 34%, transparent 58%)" }}
           />
           <div
             className="absolute inset-0 hidden sm:block"
-            style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 56%, transparent 92%)" }}
+            style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 48%, transparent 68%)" }}
           />
 
           <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left sm:max-w-[52%] sm:justify-center sm:gap-3 sm:px-12 sm:py-6">

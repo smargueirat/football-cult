@@ -215,16 +215,16 @@ export default function ProductCard3D({
               {t.search.ageGroupWomen}
             </span>
           )}
+          {/* Misma pila de arriba-a-la-izquierda que el resto de los
+              badges -- vivía abajo-a-la-izquierda, compitiendo por
+              espacio con el recuadro de precio (abajo-a-la-derecha) en
+              cards angostas (ver ProductCard.tsx, mismo fix). */}
+          {best && isPriceDropped(best) && (
+            <span className="shadow-vintage-sm rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+              {t.priceDrop.badge.replace("{n}", String(priceDropPercent(best)))}
+            </span>
+          )}
         </span>
-
-        {best && isPriceDropped(best) && (
-          <span
-            className="shadow-vintage-sm absolute bottom-3 left-3 rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white"
-            style={{ transform: "translateZ(40px)" }}
-          >
-            {t.priceDrop.badge.replace("{n}", String(priceDropPercent(best)))}
-          </span>
-        )}
 
         {best && (
           <div

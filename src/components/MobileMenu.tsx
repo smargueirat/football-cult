@@ -18,7 +18,7 @@ export default function MobileMenu() {
     { label: t.categoriesMenu.national, href: "/selecciones" },
     { label: t.categoriesMenu.clubs, href: "/clubes" },
     { label: t.categoriesMenu.retro, href: "/retro" },
-    { label: "Botas", href: "/botas" },
+    { label: t.botas.navLabel, href: "/botas" },
     { label: t.recentlyViewed.title, href: "/vistos-recientemente" },
     { label: t.nav.about, href: "/sobre-nosotros" },
     { label: t.nav.contact, href: "/contacto" },

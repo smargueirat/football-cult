@@ -19,7 +19,7 @@ export default function CategorySections() {
   return (
     <div className="vintage-dark rounded-2xl border border-[#C9A24B]/25 px-3 py-5 sm:rounded-3xl sm:px-6 sm:py-7">
       <p className="font-tagline mb-3 text-center text-[11px] uppercase tracking-[0.15em] text-[#B8933F] sm:mb-4 sm:text-xs">
-        Explorá por sección
+        {t.botas.exploreSections}
       </p>
       <div className="grid grid-cols-3 gap-3 sm:grid-cols-6 sm:gap-4">
         {SECTION_PATHS.map((path, i) => (

@@ -16,9 +16,9 @@ export default function Header() {
   return (
     <header className="glass-panel sticky top-0 z-50 border-b border-[#C9A24B]/25">
       <div className="mx-auto flex w-full max-w-[1800px] items-center justify-between px-3 py-2 sm:px-8 sm:py-2.5">
-        <div className="flex items-center gap-1 sm:gap-4">
+        <div className="flex min-w-0 items-center gap-1 sm:gap-4">
           <MobileMenu />
-          <Link href="/" className="flex items-center gap-1.5 sm:gap-2.5">
+          <Link href="/" className="flex min-w-0 items-center gap-1.5 sm:gap-2.5">
             {/* unoptimized: renders on every page, was burning the 5K/mo
                 Vercel Image Optimization quota by itself (see lib/images.ts
                 for the same fix applied to product photos). */}
@@ -27,12 +27,17 @@ export default function Header() {
               alt={t.brand}
               width={56}
               height={56}
-              className="h-10 w-10 sm:h-14 sm:w-14"
+              className="h-10 w-10 shrink-0 sm:h-14 sm:w-14"
               priority
               unoptimized
             />
-            <span className="flex flex-col leading-none">
-              <span className="font-vintage text-sm leading-none text-[#1B3B2B] sm:text-xl">
+            {/* min-w-0 + truncate: en mobile angosto el nombre chocaba con
+                los íconos de la derecha (login, favoritos, idioma) --
+                sin esto, un span de texto dentro de un flex item no se
+                achica solo, se sigue estirando por más ancho de lo que
+                el header le puede dar. */}
+            <span className="flex min-w-0 flex-col leading-none">
+              <span className="font-vintage truncate text-sm leading-none text-[#1B3B2B] sm:text-xl">
                 {t.brand}
               </span>
               <span className="font-tagline hidden text-[10px] leading-none text-[#B8933F] sm:mt-1 sm:block sm:text-xs">
@@ -41,7 +46,7 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        <div className="flex items-center gap-0.5 sm:gap-5">
+        <div className="flex shrink-0 items-center gap-0.5 sm:gap-5">
           <nav className="hidden items-center gap-5 text-sm text-[#5b5b57] lg:flex">
             <Link href="/" className="transition-colors hover:text-[#1a1a1a]">
               {t.nav.search}

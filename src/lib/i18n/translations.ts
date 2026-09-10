@@ -354,6 +354,23 @@ export interface Translations {
     sizes: string;
     viewProduct: string;
   };
+  botas: {
+    navLabel: string;
+    exploreSections: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    badge: string;
+    from: string;
+    bestPrice: string;
+    shippingIncluded: string;
+    sizesEU: string;
+    freeShipping: string;
+    shippingCost: string;
+    viewOffer: string;
+    sectionAll: string;
+    sectionJerseys: string;
+    sectionBoots: string;
+  };
 }
 
 export const translations: Record<Locale, Translations> = {
@@ -753,6 +770,23 @@ export const translations: Record<Locale, Translations> = {
       sizes: "Talles",
       viewProduct: "Ver camiseta",
     },
+    botas: {
+      navLabel: "Botas",
+      exploreSections: "Explorá por sección",
+      pageTitle: "Botas de fútbol",
+      pageSubtitle: "Piloto: {n} modelos reales comparados entre Futbol Emotion y Forum Sport.",
+      badge: "Botas",
+      from: "Desde",
+      bestPrice: "Mejor precio",
+      shippingIncluded: "con envío incluido.",
+      sizesEU: "Tallas EU",
+      freeShipping: "envío gratis",
+      shippingCost: "envío",
+      viewOffer: "Ver oferta",
+      sectionAll: "Todo",
+      sectionJerseys: "Camisetas",
+      sectionBoots: "Botas",
+    },
   },
   pt: {
     brand: "Football Cult",
@@ -1148,6 +1182,23 @@ export const translations: Record<Locale, Translations> = {
       noSellers: "Nenhuma oferta disponível",
       sizes: "Tamanhos",
       viewProduct: "Ver camisa",
+    },
+    botas: {
+      navLabel: "Chuteiras",
+      exploreSections: "Explore por seção",
+      pageTitle: "Chuteiras de futebol",
+      pageSubtitle: "Piloto: {n} modelos reais comparados entre Futbol Emotion e Forum Sport.",
+      badge: "Chuteiras",
+      from: "A partir de",
+      bestPrice: "Melhor preço",
+      shippingIncluded: "com frete incluído.",
+      sizesEU: "Tamanhos EU",
+      freeShipping: "frete grátis",
+      shippingCost: "frete",
+      viewOffer: "Ver oferta",
+      sectionAll: "Tudo",
+      sectionJerseys: "Camisas",
+      sectionBoots: "Chuteiras",
     },
   },
   en: {
@@ -1545,6 +1596,23 @@ export const translations: Record<Locale, Translations> = {
       sizes: "Sizes",
       viewProduct: "View jersey",
     },
+    botas: {
+      navLabel: "Boots",
+      exploreSections: "Explore by section",
+      pageTitle: "Football boots",
+      pageSubtitle: "Pilot: {n} real models compared between Futbol Emotion and Forum Sport.",
+      badge: "Boots",
+      from: "From",
+      bestPrice: "Best price",
+      shippingIncluded: "shipping included.",
+      sizesEU: "EU sizes",
+      freeShipping: "free shipping",
+      shippingCost: "shipping",
+      viewOffer: "View offer",
+      sectionAll: "All",
+      sectionJerseys: "Jerseys",
+      sectionBoots: "Boots",
+    },
   },
   fr: {
     brand: "Football Cult",
@@ -1941,6 +2009,23 @@ export const translations: Record<Locale, Translations> = {
       sizes: "Tailles",
       viewProduct: "Voir le maillot",
     },
+    botas: {
+      navLabel: "Chaussures",
+      exploreSections: "Explorer par section",
+      pageTitle: "Chaussures de football",
+      pageSubtitle: "Pilote : {n} modèles réels comparés entre Futbol Emotion et Forum Sport.",
+      badge: "Chaussures",
+      from: "À partir de",
+      bestPrice: "Meilleur prix",
+      shippingIncluded: "livraison incluse.",
+      sizesEU: "Tailles EU",
+      freeShipping: "livraison gratuite",
+      shippingCost: "livraison",
+      viewOffer: "Voir l'offre",
+      sectionAll: "Tout",
+      sectionJerseys: "Maillots",
+      sectionBoots: "Chaussures",
+    },
   },
   it: {
     brand: "Football Cult",
@@ -2336,6 +2421,23 @@ export const translations: Record<Locale, Translations> = {
       noSellers: "Nessuna offerta disponibile",
       sizes: "Taglie",
       viewProduct: "Vedi maglia",
+    },
+    botas: {
+      navLabel: "Scarpini",
+      exploreSections: "Esplora per sezione",
+      pageTitle: "Scarpini da calcio",
+      pageSubtitle: "Pilota: {n} modelli reali confrontati tra Futbol Emotion e Forum Sport.",
+      badge: "Scarpini",
+      from: "Da",
+      bestPrice: "Miglior prezzo",
+      shippingIncluded: "spedizione inclusa.",
+      sizesEU: "Taglie EU",
+      freeShipping: "spedizione gratuita",
+      shippingCost: "spedizione",
+      viewOffer: "Vedi offerta",
+      sectionAll: "Tutto",
+      sectionJerseys: "Maglie",
+      sectionBoots: "Scarpini",
     },
   },
 };

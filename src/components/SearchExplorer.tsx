@@ -595,10 +595,10 @@ export default function SearchExplorer({
       <div className="flex gap-2">
         {(
             [
-              { key: "all", label: "Todo" },
-              { key: "jerseys", label: "Camisetas" },
-              { key: "boots", label: "Botas" },
-            ] as const
+              { key: "all" as const, label: t.botas.sectionAll },
+              { key: "jerseys" as const, label: t.botas.sectionJerseys },
+              { key: "boots" as const, label: t.botas.sectionBoots },
+            ]
           ).map((opt) => (
             <button
               key={opt.key}

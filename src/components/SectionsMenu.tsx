@@ -32,7 +32,7 @@ export default function SectionsMenu() {
     { label: t.categoriesMenu.retro, href: SECTION_PATHS[2], photo: SECTION_PHOTOS[2] },
     { label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3], photo: SECTION_PHOTOS[3] },
     { label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4], photo: SECTION_PHOTOS[4] },
-    { label: "Botas", href: SECTION_PATHS[5], photo: SECTION_PHOTOS[5] },
+    { label: t.botas.navLabel, href: SECTION_PATHS[5], photo: SECTION_PHOTOS[5] },
   ].sort((a, b) => (a.label ?? "").localeCompare(b.label ?? ""));
 
   useEffect(() => {

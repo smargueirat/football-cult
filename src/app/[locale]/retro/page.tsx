@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import CategoryCatalogPage from "@/components/CategoryCatalogPage";
-import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { buildCategoryMetadata } from "@/lib/categoryMeta";
+import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 export async function generateMetadata({
   params,
@@ -9,19 +10,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
-  return {
-    title: "Colección retro — Comparar precios | Football Cult",
-    description: "Camisetas vintage de temporadas 2006 para atrás, verificadas una por una.",
-    alternates: buildAlternates(locale, "/retro"),
-  };
+  return buildCategoryMetadata(locale, 2, "/retro");
 }
 
 export default function RetroPage() {
-  return (
-    <CategoryCatalogPage
-      title="Colección retro"
-      subtitle="Reliquias de otra época: camisetas vintage de temporadas 2006 para atrás, verificadas una por una."
-      type="retro"
-    />
-  );
+  return <CategoryCatalogPage sectionIndex={2} type="retro" />;
 }
