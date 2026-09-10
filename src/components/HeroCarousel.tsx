@@ -136,14 +136,28 @@ export default function HeroCarousel() {
               prácticamente tapada (bug real, encontrado inspeccionando
               el render en vivo). SECTION_HERO_FIT marca por foto cuál
               tratamiento le corresponde: "contain" muestra la foto
-              entera siempre, a costa de no llenar el recuadro. */}
+              entera siempre, a costa de no llenar el recuadro.
+
+              Bug real #2, encontrado después: en "contain" el alto del
+              banner es SIEMPRE el lado que manda la escala (el recuadro
+              es mucho más ancho que alto), así que la foto termina
+              tocando el borde de arriba y de abajo del banner sin nada
+              de aire -- técnicamente no recorta un solo píxel, pero
+              visualmente se ve igual de "cortada" que si recortara de
+              verdad. El padding de acá le da a "contain" menos alto
+              disponible para trabajar, dejando un margen real arriba y
+              abajo (y de paso centra la foto en vez de pegarla arriba
+              con object-top, que en "contain" no tiene ningún efecto
+              porque no había margen vertical para desplazar). */}
           {slide.photo && (
             <img
               src={getDisplaySrc(slide.photo, 1200)}
               alt=""
               aria-hidden
-              className={`absolute inset-0 h-full w-full object-top ${
-                SECTION_HERO_FIT[i] === "contain" ? "object-contain" : "object-cover"
+              className={`absolute h-full w-full ${
+                SECTION_HERO_FIT[i] === "contain"
+                  ? "inset-0 object-contain object-center p-8 sm:p-14"
+                  : "inset-0 object-cover object-top"
               } ${i === active ? "hero-photo-kenburns" : ""}`}
             />
           )}
