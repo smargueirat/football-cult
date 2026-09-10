@@ -4,22 +4,24 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { getDisplaySrc } from "@/lib/images";
-import { SECTION_PATHS, SECTION_PHOTOS, SECTION_HERO_FIT } from "@/lib/sections";
+import { SECTION_PATHS, HERO_PHOTOS, SECTION_HERO_FIT, SECTION_HERO_POSITION } from "@/lib/sections";
 
 const SLIDE_COUNT = 6;
 const AUTO_ADVANCE_MS = 5500;
 
-// Fotos y rutas reales compartidas con CategorySections (mismo orden que
-// heroSlides en translations.ts) -- ver src/lib/sections.ts. Nota sobre
-// la foto de botas: a diferencia de las camisetas (las tiendas de
-// indumentaria SIEMPRE tienen una foto "puesta" en modelo), se buscó en
-// Futbol Emotion, Forum Sport, adidas.es y Nike.es una foto de una bota
-// puesta en un pie/jugador real, y las cuatro solo publican fotos de
-// producto plano (estudio, sin persona) -- es una norma real de cómo se
-// fotografía calzado de fútbol en retail, no una limitación nuestra. Se
-// usa la mejor foto de producto real disponible en vez de forzar/inventar
-// una "on-model".
-const CURATED_SLIDE_PHOTOS = SECTION_PHOTOS;
+// Rutas reales compartidas con CategorySections (mismo orden que
+// heroSlides en translations.ts) -- ver src/lib/sections.ts. Las fotos
+// del hero (HERO_PHOTOS) son un set aparte de SECTION_PHOTOS: acá
+// necesitan ser panorámicas de verdad, no fotos de producto cuadradas.
+// Nota sobre la foto de botas: a diferencia de las camisetas (las
+// tiendas de indumentaria SIEMPRE tienen una foto "puesta" en modelo),
+// se buscó en Futbol Emotion, Forum Sport, adidas.es y Nike.es una foto
+// de una bota puesta en un pie/jugador real, y las cuatro solo publican
+// fotos de producto plano (estudio, sin persona) -- es una norma real
+// de cómo se fotografía calzado de fútbol en retail, no una limitación
+// nuestra. Se usa la mejor foto de producto real disponible en vez de
+// forzar/inventar una "on-model".
+const CURATED_SLIDE_PHOTOS = HERO_PHOTOS;
 const SLIDE_PATHS = SECTION_PATHS;
 
 export default function HeroCarousel() {
@@ -134,9 +136,14 @@ export default function HeroCarousel() {
               persona siempre cae centrada horizontalmente, exactamente
               donde vive el degradé sólido del texto -- quedaba
               prácticamente tapada (bug real, encontrado inspeccionando
-              el render en vivo). SECTION_HERO_FIT marca por foto cuál
-              tratamiento le corresponde: "contain" muestra la foto
-              entera siempre, a costa de no llenar el recuadro.
+              el render en vivo). Solución real: HERO_PHOTOS reemplazó
+              esas fotos de estudio por fotos de campaña panorámicas de
+              verdad para clubes/retro/mujer (ver sections.ts), donde
+              cover es seguro. Niños se quedó sin una candidata real
+              comparable, así que sigue en "contain" -- SECTION_HERO_FIT
+              marca por foto cuál tratamiento le corresponde: "contain"
+              muestra la foto entera siempre, a costa de no llenar el
+              recuadro.
 
               Bug real #2, encontrado después: en "contain" el alto del
               banner es SIEMPRE el lado que manda la escala (el recuadro
@@ -151,14 +158,13 @@ export default function HeroCarousel() {
               porque no había margen vertical para desplazar). */}
           {slide.photo && (
             <img
-              src={getDisplaySrc(slide.photo, 1200)}
+              src={getDisplaySrc(slide.photo, 1600)}
               alt=""
               aria-hidden
-              className={`absolute h-full w-full ${
-                SECTION_HERO_FIT[i] === "contain"
-                  ? "inset-0 object-contain object-center p-8 sm:p-14"
-                  : "inset-0 object-cover object-top"
+              className={`absolute inset-0 h-full w-full ${
+                SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-8 sm:p-14" : "object-cover"
               } ${i === active ? "hero-photo-kenburns" : ""}`}
+              style={SECTION_HERO_FIT[i] === "cover" ? { objectPosition: SECTION_HERO_POSITION[i] } : undefined}
             />
           )}
 
