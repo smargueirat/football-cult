@@ -146,11 +146,24 @@ export default function HeroCarousel() {
             />
           )}
 
-          {/* Scrim para que el texto siga siendo legible pase lo que
-              pase en la foto de abajo -- de abajo hacia arriba en
-              celular (el texto se apoya abajo), de izquierda a derecha
-              en escritorio (el texto vive a la izquierda). */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent sm:bg-gradient-to-r sm:from-[#14261c] sm:via-[#14261ce6] sm:to-transparent" />
+          {/* Scrim para que el texto siga siendo legible pase lo que pase
+              en la foto de abajo. Bug real la primera vez: un gradiente
+              con "via" a mitad de camino empezaba a desvanecerse justo
+              donde vive el texto (max-w-[52%] en escritorio), así que en
+              fotos con zonas claras ahí (una cara, una camiseta blanca)
+              el texto se veía "doble" / con la foto peleando contra las
+              letras. Ahora es sólido (misma opacidad, sin degradé) hasta
+              bien pasado el ancho del bloque de texto, y recién ahí
+              empieza a desvanecerse -- así el fondo del texto es siempre
+              parejo sea cual sea la foto de atrás. */}
+          <div
+            className="absolute inset-0 sm:hidden"
+            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 40%, transparent 85%)" }}
+          />
+          <div
+            className="absolute inset-0 hidden sm:block"
+            style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 56%, transparent 92%)" }}
+          />
 
           <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left sm:max-w-[52%] sm:justify-center sm:gap-3 sm:px-12 sm:py-6">
             <span className="font-tagline text-[11px] uppercase text-[#E7C567] sm:text-sm">
