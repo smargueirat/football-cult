@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer className="vintage-dark border-t border-[#C9A24B]/25">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-[#B8AF98] sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto flex max-w-[1800px] flex-col gap-3 px-4 py-8 sm:px-8 text-sm text-[#B8AF98] sm:flex-row sm:items-center sm:justify-between">
         <p className="font-tagline not-italic text-[#E9D38F]">
           © {new Date().getFullYear()} {t.brand}
         </p>
@@ -45,8 +45,8 @@ export default function Footer() {
           </Link>
         </nav>
       </div>
-      <div className="vintage-divider mx-6 max-w-6xl sm:mx-auto" />
-      <p className="mx-auto max-w-6xl px-6 py-6 text-xs text-[#8a836e]">
+      <div className="vintage-divider mx-4 max-w-[1800px] sm:mx-auto" />
+      <p className="mx-auto max-w-[1800px] px-4 py-6 sm:px-8 text-xs text-[#8a836e]">
         {t.footer.disclaimer}
       </p>
     </footer>

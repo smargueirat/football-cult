@@ -1,33 +1,32 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import { getDisplaySrc } from "@/lib/images";
+import { SECTION_PATHS, HERO_PHOTOS, SECTION_HERO_FIT, SECTION_HERO_POSITION, SECTION_HERO_TRANSFORM } from "@/lib/sections";
 
-const SLIDE_COUNT = 5;
+const SLIDE_COUNT = 6;
 const AUTO_ADVANCE_MS = 5500;
 
-// Foto exacta curada a mano por slide -- se revisaron las fotos reales
-// del catálogo (no cualquier oferta del producto: la URL puntual que
-// se ve acá) y se eligió la mejor concreta de cada categoría, siempre
-// con una persona puesta la camiseta (apparel-on-model, no flat lay ni
-// maniquí fantasma) -- cada URL se descargó y se miró antes de usarla.
-// Se usa la URL de alta resolución del proveedor directamente (no el
-// thumbnail chico que guarda la oferta) para que se vea nítida a este
-// tamaño. Refresh semanal (routine "refresh weekly hero banner
-// photos"): se rota a fotos distintas de las de la semana anterior.
-const CURATED_SLIDE_PHOTOS: string[] = [
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/cb30bb7e33dc49afa7d3dcb0da3bdb4a_9366/Camiseta_primera_equipacion_Colombia_26_Amarillo_JL6972_21_model.jpg", // selecciones: Colombia 2026, con modelo
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/1326ee23fe114676909df9508f1e3b61_9366/Camiseta_primera_equipacion_de_Boca_Juniors_25-26_Azul_JJ4298_21_model.jpg", // clubes: Boca Juniors 25/26, con modelo
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/1eb1081d24de4c72a3aba41d9be1025b_9366/Camiseta_segunda_equipacion_Newcastle_United_FC_95-96_Azul_JM8252_21_model.jpg", // retro: Newcastle United 1995/96 away, con modelo
-  "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/94ae188e712c487f9e28e47fcc83803b_9366/Camiseta_primera_equipacion_Alemania_2007_Blanco_KD3997_21_model.jpg", // mujer: Alemania 2007, con modelo
-  "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp", // niños: Italia 2026, con modelo
-];
+// Rutas reales compartidas con CategorySections (mismo orden que
+// heroSlides en translations.ts) -- ver src/lib/sections.ts. Las fotos
+// del hero (HERO_PHOTOS) son un set aparte de SECTION_PHOTOS: acá
+// necesitan ser panorámicas de verdad, no fotos de producto cuadradas.
+// Nota sobre la foto de botas: a diferencia de las camisetas (las
+// tiendas de indumentaria SIEMPRE tienen una foto "puesta" en modelo),
+// se buscó en Futbol Emotion, Forum Sport, adidas.es y Nike.es una foto
+// de una bota puesta en un pie/jugador real, y las cuatro solo publican
+// fotos de producto plano (estudio, sin persona) -- es una norma real
+// de cómo se fotografía calzado de fútbol en retail, no una limitación
+// nuestra. Se usa la mejor foto de producto real disponible en vez de
+// forzar/inventar una "on-model".
+const CURATED_SLIDE_PHOTOS = HERO_PHOTOS;
+const SLIDE_PATHS = SECTION_PATHS;
 
 export default function HeroCarousel() {
-  const { t } = useLanguage();
-  const filters = useSearchFilter();
+  const { t, locale } = useLanguage();
+  const router = useRouter();
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const reducedMotion = useRef(false);
@@ -100,20 +99,13 @@ export default function HeroCarousel() {
     setActive((cur) => (cur + 1) % SLIDE_COUNT);
   }
 
-  function applyFilterAndScroll(index: number) {
-    filters.setQuery("");
-    filters.clearAllFilters();
-    if (index === 0) filters.setCategoryFilter(["national"]);
-    else if (index === 1) filters.setCategoryFilter(["club"]);
-    else if (index === 2) filters.setTypeFilter(["retro"]);
-    else if (index === 3) filters.setAgeGroupFilter(["women"]);
-    else filters.setAgeGroupFilter(["kids"]);
-    document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth" });
+  function goToSection(index: number) {
+    router.push(`/${locale}${SLIDE_PATHS[index]}`);
   }
 
   return (
     <div
-      className="vintage-dark shadow-vintage-lg relative h-[280px] overflow-hidden rounded-2xl sm:h-[400px] sm:rounded-3xl"
+      className="vintage-dark shadow-vintage-lg relative h-[300px] overflow-hidden rounded-2xl sm:h-[460px] sm:rounded-3xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -132,50 +124,100 @@ export default function HeroCarousel() {
       {slides.map((slide, i) => (
         <div
           key={slide.title}
-          className={`absolute inset-0 grid grid-cols-[1fr_auto] content-center items-center gap-3 px-5 py-5 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:gap-8 sm:px-12 sm:py-10 ${
+          className={`absolute inset-0 transition-opacity duration-700 ease-out ${
             i === active ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           aria-hidden={i !== active}
         >
-          {/* Foto siempre cuadrada (nunca una caja corta y ancha que la
-              achicaba) -- mismo layout de 2 columnas en mobile y
-              escritorio, la única diferencia es cuánto lugar ocupa cada
-              lado. line-clamp en el subtítulo asegura que el bloque de
-              texto mida siempre lo mismo sea cual sea el largo real de
-              cada slide, así el botón dorado nunca se corre de lugar. */}
-          <div className="relative z-10 order-1 flex flex-col items-start gap-1 text-left sm:gap-2">
-            <span className="font-tagline text-[10px] uppercase text-[#E7C567] sm:text-xs">
+          {/* Foto a pantalla completa cuando la composición lo permite
+              (object-cover) -- pero en una foto cuadrada de estudio con
+              la persona centrada, cover en un recuadro ancho SOLO
+              recorta arriba/abajo (el ancho ya encaja), así que la
+              persona siempre cae centrada horizontalmente, exactamente
+              donde vive el degradé sólido del texto -- quedaba
+              prácticamente tapada (bug real, encontrado inspeccionando
+              el render en vivo). Solución real: HERO_PHOTOS reemplazó
+              las 4 fotos de estudio (clubes/retro/mujer/niños) por
+              fotos de campaña panorámicas de verdad, con gente
+              repartida en todo el ancho (ver sections.ts) -- las 6
+              secciones usan "cover" ahora. SECTION_HERO_FIT queda como
+              interruptor por si en algún momento hace falta volver a
+              "contain" para alguna foto puntual.
+
+              Bug real #2, encontrado después: en "contain" el alto del
+              banner es SIEMPRE el lado que manda la escala (el recuadro
+              es mucho más ancho que alto), así que la foto termina
+              tocando el borde de arriba y de abajo del banner sin nada
+              de aire -- técnicamente no recorta un solo píxel, pero
+              visualmente se ve igual de "cortada" que si recortara de
+              verdad. El padding de acá le da a "contain" menos alto
+              disponible para trabajar, dejando un margen real arriba y
+              abajo (y de paso centra la foto en vez de pegarla arriba
+              con object-top, que en "contain" no tiene ningún efecto
+              porque no había margen vertical para desplazar). */}
+          {/* SECTION_HERO_TRANSFORM (sólo botas) va en este wrapper, no
+              en la foto -- la foto ya tiene su propia animación
+              (hero-photo-kenburns) puesta por transform, y un transform
+              inline en el mismo elemento se pisaría con las keyframes
+              de la animación mientras corre. Poniéndolo en un wrapper
+              separado que sólo envuelve a la foto, los dos transforms
+              se combinan en vez de pisarse: la foto sigue haciendo su
+              zoom lento de siempre, y el wrapper la corre/agranda un
+              poco más para revelar más bota, pedido explícito del
+              usuario (ver sections.ts para el porqué del valor). */}
+          {slide.photo && (
+            <div className="absolute inset-0" style={{ transform: SECTION_HERO_TRANSFORM[i] }}>
+              <img
+                src={getDisplaySrc(slide.photo, 1600)}
+                alt=""
+                aria-hidden
+                className={`absolute inset-0 h-full w-full ${
+                  SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-8 sm:p-14" : "object-cover"
+                } ${i === active ? "hero-photo-kenburns" : ""}`}
+                style={SECTION_HERO_FIT[i] === "cover" ? { objectPosition: SECTION_HERO_POSITION[i] } : undefined}
+              />
+            </div>
+          )}
+
+          {/* Scrim para que el texto siga siendo legible pase lo que pase
+              en la foto de abajo. Bug real la primera vez: un gradiente
+              con "via" a mitad de camino empezaba a desvanecerse justo
+              donde vive el texto (max-w-[52%] en escritorio), así que en
+              fotos con zonas claras ahí (una cara, una camiseta blanca)
+              el texto se veía "doble" / con la foto peleando contra las
+              letras. Ahora es sólido (misma opacidad, sin degradé) hasta
+              bien pasado el ancho del bloque de texto, y recién ahí
+              empieza a desvanecerse -- así el fondo del texto es siempre
+              parejo sea cual sea la foto de atrás. */}
+          <div
+            className="absolute inset-0 sm:hidden"
+            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 34%, transparent 58%)" }}
+          />
+          <div
+            className="absolute inset-0 hidden sm:block"
+            style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 48%, transparent 68%)" }}
+          />
+
+          <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left sm:max-w-[52%] sm:justify-center sm:gap-3 sm:px-12 sm:py-6">
+            <span className="font-tagline text-[11px] uppercase text-[#E7C567] sm:text-sm">
               {slide.eyebrow}
             </span>
-            <h1 className="font-vintage text-lg leading-tight text-[#F3E9C9] sm:text-4xl">
+            <h1 className="font-vintage text-2xl leading-tight text-[#F3E9C9] sm:text-5xl lg:text-6xl">
               {slide.title}
             </h1>
-            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:text-sm">
+            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:max-w-lg sm:text-base">
               {slide.subtitle}
             </p>
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                applyFilterAndScroll(i);
+                goToSection(i);
               }}
-              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:text-xs"
+              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:px-6 sm:py-2.5 sm:text-sm"
             >
               {slide.cta}
               <span aria-hidden>→</span>
             </button>
-          </div>
-
-          <div className="relative order-2 flex aspect-square h-[150px] items-center justify-center overflow-hidden sm:h-auto sm:w-full">
-            {slide.photo && (
-              <img
-                src={getDisplaySrc(slide.photo, 600)}
-                alt=""
-                aria-hidden
-                className={`h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.45)] ${
-                  i === active ? "hero-photo-kenburns" : ""
-                }`}
-              />
-            )}
           </div>
         </div>
       ))}

@@ -2,10 +2,13 @@
 
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
+  AgeGroup,
+  CategoryKey,
   Product,
   SEASONS,
   SIZES,
   TeamKey,
+  TypeKey,
   availableSizes,
   bestOfferForCountry,
   brandNames,
@@ -23,6 +26,8 @@ import {
   teamPopularity,
   typeNames,
 } from "@/data/products";
+import { BootProduct, bootProducts } from "@/data/boots";
+import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
   BRAND_FILTERS,
@@ -36,6 +41,7 @@ import {
   CATALOG_PAGE_SIZE,
   PRICE_RANGE_MAX,
   PRICE_RANGE_MIN,
+  SectionKey,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH, productColorKey } from "@/lib/colorClassify";
@@ -59,7 +65,24 @@ function normalizeSearchText(text: string): string {
 }
 
 
-export default function SearchExplorer() {
+interface SearchExplorerProps {
+  // Fuerzan una sección (usado por las páginas de categoría dedicadas:
+  // /clubes, /selecciones, /retro, /mujer, /ninos) evaluándose ya en el
+  // primer render -- no dependen de un efecto post-hidratación, así el
+  // HTML servido es correcto desde el vamos. undefined = comportamiento
+  // normal del home, gobernado por los filtros interactivos del usuario.
+  forcedCategory?: CategoryKey;
+  forcedType?: TypeKey;
+  forcedAgeGroup?: AgeGroup;
+  forcedSection?: SectionKey;
+}
+
+export default function SearchExplorer({
+  forcedCategory,
+  forcedType,
+  forcedAgeGroup,
+  forcedSection,
+}: SearchExplorerProps = {}) {
   const { locale, t } = useLanguage();
   const {
     query,
@@ -88,6 +111,8 @@ export default function SearchExplorer() {
     colorFilter,
     toggleColorFilter,
     setColorFilter,
+    sectionFilter,
+    setSectionFilter,
     priceRange,
     setPriceRange,
     onSaleFilter,
@@ -164,6 +189,15 @@ export default function SearchExplorer() {
   // bloqueo del hilo principal, medido).
   const deferredQuery = useDeferredValue(query);
 
+  // Cuando una página de categoría fuerza una dimensión (prop), esa
+  // dimensión ignora el filtro interactivo del usuario por completo --
+  // se resuelve acá, no en un efecto, así el primer render (server y
+  // cliente) ya es correcto.
+  const effectiveTypeFilter = forcedType ? [forcedType] : typeFilter;
+  const effectiveCategoryFilter = forcedCategory ? [forcedCategory] : categoryFilter;
+  const effectiveAgeGroupFilter = forcedAgeGroup ? [forcedAgeGroup] : ageGroupFilter;
+  const effectiveSection: SectionKey = forcedSection ?? sectionFilter;
+
   const results = useMemo(() => {
     const queryWords = normalizeSearchText(deferredQuery.trim())
       .split(/\s+/)
@@ -211,17 +245,17 @@ export default function SearchExplorer() {
       // en que el usuario espera navegar esa categoría (vintage real, no
       // "temporada pasada reciente").
       const matchesType =
-        typeFilter.length === 0 ||
-        typeFilter.some((tf) => {
+        effectiveTypeFilter.length === 0 ||
+        effectiveTypeFilter.some((tf) => {
           if (p.typeKey !== tf) return false;
           if (tf === "retro") return seasonSortValue(p.season) <= 2006;
           return true;
         });
       const matchesCategory =
-        categoryFilter.length === 0 || categoryFilter.includes(teamCategory[p.teamKey]);
+        effectiveCategoryFilter.length === 0 || effectiveCategoryFilter.includes(teamCategory[p.teamKey]);
       const matchesSeason = seasonFilter.length === 0 || seasonFilter.includes(p.season);
       const matchesAgeGroup =
-        ageGroupFilter.length === 0 || ageGroupFilter.includes(getAgeGroup(p));
+        effectiveAgeGroupFilter.length === 0 || effectiveAgeGroupFilter.includes(getAgeGroup(p));
       const matchesBrand =
         brandFilter.length === 0 || (!!p.brand && brandFilter.includes(p.brand));
       const matchesStore =
@@ -306,10 +340,10 @@ export default function SearchExplorer() {
   }, [
     deferredQuery,
     locale,
-    typeFilter,
-    categoryFilter,
+    effectiveTypeFilter,
+    effectiveCategoryFilter,
     seasonFilter,
-    ageGroupFilter,
+    effectiveAgeGroupFilter,
     brandFilter,
     storeFilter,
     sizeFilter,
@@ -319,6 +353,54 @@ export default function SearchExplorer() {
     countryCode,
     sortBy,
   ]);
+
+  // Botas: catálogo chico y sin los filtros de camiseta (marca de bota no
+  // es "brandFilter" de camiseta, no tiene talle de ropa, etc.) -- solo
+  // les aplicamos el texto de búsqueda, nada más. Se excluyen del todo
+  // cuando la sección efectiva es "jerseys" (páginas de categoría de
+  // camiseta, donde una bota no pinta nada).
+  const filteredBoots = useMemo(() => {
+    if (effectiveSection === "jerseys") return [];
+    const queryWords = normalizeSearchText(deferredQuery.trim()).split(/\s+/).filter(Boolean);
+    if (queryWords.length === 0) return bootProducts;
+    return bootProducts.filter((b) => {
+      const haystack = normalizeSearchText(`${b.brand} ${b.model}`);
+      return queryWords.every((w) => haystack.includes(w));
+    });
+  }, [effectiveSection, deferredQuery]);
+
+  type CatalogItem =
+    | { kind: "jersey"; key: string; product: Product }
+    | { kind: "boot"; key: string; boot: BootProduct };
+
+  // Mezcla por defecto ("all"): 1 bota cada 8 camisetas, así aparecen
+  // temprano en el mix relevante sin dominarlo -- son 20 modelos contra
+  // miles de camisetas. "jerseys"/"boots" muestran solo esa sección.
+  const catalogItems = useMemo<CatalogItem[]>(() => {
+    const jerseyItems: CatalogItem[] =
+      effectiveSection === "boots" ? [] : results.map((p) => ({ kind: "jersey", key: `j-${p.id}`, product: p }));
+    const bootItems: CatalogItem[] = filteredBoots.map((b) => ({ kind: "boot", key: `b-${b.id}`, boot: b }));
+
+    if (effectiveSection === "jerseys") return jerseyItems;
+    if (effectiveSection === "boots") return bootItems;
+
+    if (bootItems.length === 0) return jerseyItems;
+    const BOOT_EVERY = 8;
+    const mixed: CatalogItem[] = [];
+    let bootIdx = 0;
+    jerseyItems.forEach((item, i) => {
+      mixed.push(item);
+      if ((i + 1) % BOOT_EVERY === 0 && bootIdx < bootItems.length) {
+        mixed.push(bootItems[bootIdx]);
+        bootIdx++;
+      }
+    });
+    while (bootIdx < bootItems.length) {
+      mixed.push(bootItems[bootIdx]);
+      bootIdx++;
+    }
+    return mixed;
+  }, [results, filteredBoots, effectiveSection]);
 
   // Cuando el usuario cambia de verdad los filtros/orden/búsqueda mientras
   // está en esta página, volvemos a mostrar solo la primera tanda. OJO:
@@ -337,7 +419,7 @@ export default function SearchExplorer() {
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, colorFilter, priceRange, onSaleFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, colorFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -356,7 +438,7 @@ export default function SearchExplorer() {
     };
   }, []);
 
-  const visibleResults = results.slice(0, visibleCount);
+  const visibleItems = catalogItems.slice(0, visibleCount);
 
   const SORT_OPTIONS: { key: typeof sortBy; label: string }[] = [
     { key: "relevance", label: t.search.sortRelevance },
@@ -506,32 +588,63 @@ export default function SearchExplorer() {
         )}
       </div>
 
-      {results.length === 0 ? (
+      {/* Solo tiene sentido cuando la sección no viene forzada por la
+          página (home): en una página de categoría dedicada, tocar esto
+          no tendría ningún efecto visible, así que ni se muestra. */}
+      {forcedSection === undefined && (
+      <div className="flex gap-2">
+        {(
+            [
+              { key: "all" as const, label: t.botas.sectionAll },
+              { key: "jerseys" as const, label: t.botas.sectionJerseys },
+              { key: "boots" as const, label: t.botas.sectionBoots },
+            ]
+          ).map((opt) => (
+            <button
+              key={opt.key}
+              onClick={() => setSectionFilter(opt.key)}
+              className={`rounded-full border px-4 py-1.5 text-xs font-semibold transition-colors ${
+                effectiveSection === opt.key
+                  ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                  : "border-[#C9A24B]/30 bg-[#FFFDF8] text-[#675c44] hover:border-[#1B3B2B]/40"
+              }`}
+            >
+              {opt.label}
+            </button>
+          ))}
+      </div>
+      )}
+
+      {catalogItems.length === 0 ? (
         <p className="text-[#8a8a84]">
           {t.search.noResults.replace("{query}", query)}
         </p>
       ) : (
         <>
           <p className="text-xs text-[#675c44]">
-            {t.search.resultsCount.replace("{n}", String(results.length))}
+            {t.search.resultsCount.replace("{n}", String(catalogItems.length))}
           </p>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
-            {visibleResults.map((product: Product, i) => (
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 2xl:grid-cols-6">
+            {visibleItems.map((item, i) => (
               <div
-                key={product.id}
+                key={item.key}
                 className="card-rise-in"
                 style={{ animationDelay: `${(i % 12) * 35}ms` }}
               >
-                <ProductCard product={product} priority={i < 8} />
+                {item.kind === "jersey" ? (
+                  <ProductCard product={item.product} priority={i < 8} />
+                ) : (
+                  <BootCard boot={item.boot} priority={i < 8} />
+                )}
               </div>
             ))}
           </div>
-          {visibleCount < results.length && (
+          {visibleCount < catalogItems.length && (
             <button
               onClick={() => setVisibleCount((c) => c + CATALOG_PAGE_SIZE)}
               className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] shadow-vintage-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-[#1B3B2B]/40 active:scale-95"
             >
-              {t.search.loadMore} ({results.length - visibleCount})
+              {t.search.loadMore} ({catalogItems.length - visibleCount})
             </button>
           )}
         </>
@@ -826,7 +939,7 @@ export default function SearchExplorer() {
                 onClick={() => setFiltersOpen(false)}
                 className="w-full rounded-full bg-[#1B3B2B] py-3 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
               >
-                {t.search.showResults} ({results.length})
+                {t.search.showResults} ({catalogItems.length})
               </button>
             </div>
           </div>

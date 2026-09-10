@@ -39,9 +39,9 @@ export default function PriceDropsSection() {
   if (drops.length === 0) return null;
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-3 pt-6 sm:px-6">
+    <section className="mx-auto w-full max-w-[1800px] px-4 pt-6 sm:px-8">
       <div className="mb-3 flex flex-col items-start gap-0.5">
-        <span className="font-tagline text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
+        <span className="font-tagline text-[10px] uppercase text-[#7A5B1E] sm:text-xs">
           {t.priceDrop.eyebrow}
         </span>
         <h2 className="font-vintage text-lg text-[#1B3B2B] sm:text-2xl">{t.priceDrop.title}</h2>
