@@ -47,10 +47,15 @@ export const SECTION_PHOTOS: string[] = [
 // de la sesión "family photo" del lanzamiento 2023/24 (reemplazo
 // pedido explícitamente, la foto de Son Heung-Min no gustó)
 // (news.adidas.com/football/adidas-and-real-madrid-unveil-new-home-jersey-for-2023-24-season)
-// Botas: Leo Messi con la F50 "La Vida Tropical" en la mano, campo
-// real a pleno sol (reemplazo pedido explícitamente, la foto de
-// Bellingham con fondo rojo oscuro no gustó)
-// (news.adidas.com/football/adidas-launches-all-new-f50-messi--la-vida-tropical-)
+// Botas: vuelve a Jude Bellingham con la bota real y fondo de campaña
+// rojo (SECTION_PHOTOS[5], la misma que ya usan los círculos) -- se
+// había probado reemplazarla por Messi en un campo a pleno sol, pero
+// Messi queda centrado en la foto original (34%-61% del ancho real),
+// casi sin margen para moverlo fuera del degradé del texto (ni
+// espejándola cambia mucho, por lo simétrico de la pose) -- se ve la
+// cara tapada/opaca y de fondo mayormente cielo vacío. El fondo rojo
+// de Bellingham llena esa misma zona con color real en vez de verse
+// vacío, aunque su cara tampoco quede del todo destapada.
 //
 // Todas las candidatas se probaron con un overlay que reproduce el
 // degradé real (mismo gradient CSS que el slide) sobre las dos medidas
@@ -65,7 +70,7 @@ export const HERO_PHOTOS: string[] = [
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/705622_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/650936_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/644816.jpg",
-  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/693204.jpeg",
+  SECTION_PHOTOS[5],
 ];
 
 // Bug real, encontrado inspeccionando el render en vivo (no a ojo): en
@@ -80,7 +85,12 @@ export const HERO_PHOTOS: string[] = [
 // arriba antes de aplicarlas, no solo a ojo en una resolución.
 export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "cover", "cover", "cover"];
 
-// object-position por foto cuando fit=="cover" -- todas centradas
+// object-position por foto cuando fit=="cover" -- la mayoría centradas
 // arriba (object-top), que es donde vive la cara/torso en las fotos de
-// campaña reales usadas acá.
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "top", "top"];
+// campaña reales usadas acá. Niños es la excepción: con "top" sólo se
+// veía la cara del chico y una tira mínima del cuello de la camiseta
+// (reportado por el usuario) -- corrido a "50% 40%" baja la ventana
+// visible lo suficiente para que se lea "Emirates Fly Better" y el
+// escudo en el pecho, sin perder la cabeza del cuadro (probado a
+// 0/10/20/30/40/50% antes de elegir este valor).
+export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "top"];
