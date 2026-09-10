@@ -12,13 +12,21 @@ import { Offer, offerTotal } from "@/data/products";
 // real, o la moneda que devuelve eBay no coincide con la de la oferta (no
 // se mezclan monedas en un total), se devuelve el total estático de
 // siempre.
-export function useLiveOfferTotal(offer: Offer | undefined, countryCode: string): number {
+//
+// `enabled` (nuevo): lo maneja el que llama (useBestOfferForCountry) con
+// useInView -- ver ese archivo para el bug real que esto resuelve (14
+// pedidos en vivo simultáneos, 1-2.4s cada uno, medido en el home).
+export function useLiveOfferTotal(
+  offer: Offer | undefined,
+  countryCode: string,
+  enabled = true
+): number {
   const [liveTotal, setLiveTotal] = useState<number | null>(null);
   const staticTotal = offer ? offerTotal(offer) : 0;
 
   useEffect(() => {
     setLiveTotal(null);
-    if (!offer || offer.store !== "eBay") return;
+    if (!offer || offer.store !== "eBay" || !enabled) return;
     let cancelled = false;
 
     // El catálogo monta las ~24 cards de una sola vez (no son lazy como
@@ -48,7 +56,7 @@ export function useLiveOfferTotal(offer: Offer | undefined, countryCode: string)
       cancelled = true;
       cancelIdle(handle as number);
     };
-  }, [offer, countryCode]);
+  }, [offer, countryCode, enabled]);
 
   return liveTotal ?? staticTotal;
 }

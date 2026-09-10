@@ -34,9 +34,21 @@ interface BestOfferResult {
 // del navegador justo cuando también tiene que cargar la navegación y
 // las fotos. Este chequeo reduce los pedidos a solo los productos donde
 // el resultado realmente puede cambiar.
+//
+// Segunda vuelta del mismo problema, medida en vivo (no a ojo) con
+// performance.getEntriesByType en el home real: incluso con ese chequeo,
+// un home con varias filas de tarjetas todavía monta 14+ cards con eBay
+// líder AL MISMO TIEMPO -- carrusel horizontal, la mayoría fuera de
+// pantalla -- y cada una dispara su propio pedido en vivo apenas el
+// navegador queda idle. 14 pedidos simultáneos, 947ms-2357ms cada uno:
+// eso es lo que se sentía como "lento, tarda en cargar las cards". El
+// parámetro `inView` (que pasa cada ProductCard/ProductCard3D con
+// useInView) reparte esos pedidos en el tiempo: recién se pide cuando la
+// card entra de verdad al viewport, no al montar.
 export function useBestOfferForCountry(
   product: Product,
-  countryCode: CountryCode
+  countryCode: CountryCode,
+  inView = true
 ): BestOfferResult {
   const eligible = useMemo(
     () => product.offers.filter((o) => o.inStock && offerShipsTo(o.store, countryCode)),
@@ -50,7 +62,7 @@ export function useBestOfferForCountry(
   const staticBest = sortedByStatic[0];
   const ebayToVerify = staticBest?.store === "eBay" ? staticBest : undefined;
 
-  const liveEbayTotal = useLiveOfferTotal(ebayToVerify, countryCode);
+  const liveEbayTotal = useLiveOfferTotal(ebayToVerify, countryCode, inView);
 
   return useMemo(() => {
     if (!staticBest) return { offer: undefined, total: 0 };

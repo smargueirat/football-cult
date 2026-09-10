@@ -20,6 +20,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
+import { useInView } from "@/lib/useInView";
 import { useCompare } from "@/lib/compare/CompareContext";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
@@ -43,7 +44,15 @@ export default function ProductCard3D({
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const { countryCode } = useCountry();
   const favorite = isFavorite(product.id);
-  const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode);
+  // cardRef se declara acá arriba (en vez de más abajo, donde vivía
+  // antes junto al resto del efecto de inclinación 3D) para poder
+  // pasárselo a useInView antes de llamar a useBestOfferForCountry --
+  // mismo cardRef de siempre, ahora hace doble uso. Ver el comentario
+  // largo en useBestOfferForCountry.ts para el bug real que esto
+  // resuelve (14 pedidos en vivo a eBay simultáneos, medido en el home).
+  const cardRef = useRef<HTMLAnchorElement>(null);
+  const inView = useInView(cardRef);
+  const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode, inView);
   const storeCount = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
   ).length;
@@ -69,7 +78,6 @@ export default function ProductCard3D({
     }
   }, [photo]);
 
-  const cardRef = useRef<HTMLAnchorElement>(null);
   const reducedMotion = useRef(false);
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [tilting, setTilting] = useState(false);

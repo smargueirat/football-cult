@@ -1,7 +1,15 @@
 "use client";
 
 import { createContext, ReactNode, useContext, useState } from "react";
-import { AgeGroup, Brand, CategoryKey, Size, TypeKey } from "@/data/products";
+// `import type`, no un import normal -- este provider envuelve TODO el
+// sitio (layout.tsx de [locale]) y lo único que necesita de products.ts
+// son 5 tipos, ningún valor real. Un import sin "type" no se puede
+// garantizar libre de costo en tiempo de build (Turbopack transpila
+// archivo por archivo, sin chequear si el símbolo termina siendo sólo
+// un tipo) -- "import type" lo saca del todo, se borra en compilación,
+// cero impacto en el bundle. Ver el comentario largo en
+// CountryContext.tsx para el resto de esta misma clase de bug.
+import type { AgeGroup, Brand, CategoryKey, Size, TypeKey } from "@/data/products";
 import { ColorKey } from "@/lib/colorClassify";
 
 export type SortKey = "relevance" | "priceAsc" | "priceDesc" | "seasonNewest" | "seasonOldest";

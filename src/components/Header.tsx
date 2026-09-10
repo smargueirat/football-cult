@@ -1,14 +1,26 @@
 "use client";
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import SectionsMenu from "./SectionsMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import LoginButton from "./LoginButton";
-import FavoritesButton from "./FavoritesButton";
-import CountrySelector from "./CountrySelector";
+
+// dynamic() en vez de un import estático directo: el Header se manda en
+// TODAS las páginas (hasta "términos" o "sobre nosotros", que no
+// necesitan nada de esto), y tanto FavoritesButton (busca productos
+// favoritos con findProduct) como CountrySelector (usa `countries`) se
+// importan de src/data/products.ts -- el mismo archivo de 5.9MB/76 mil
+// líneas con el catálogo completo. Medido en el build real (Turbopack):
+// ese import arrastraba un chunk compartido de 5.1MB a CADA página del
+// sitio, favicon.ico incluido. Con dynamic() ese chunk se pide aparte,
+// después de la pintura inicial, en vez de bloquearla -- mismo botón,
+// mismo comportamiento, solo cambia CUÁNDO se pide el JS pesado.
+const FavoritesButton = dynamic(() => import("./FavoritesButton"), { ssr: false });
+const CountrySelector = dynamic(() => import("./CountrySelector"), { ssr: false });
 
 export default function Header() {
   const { t } = useLanguage();
