@@ -1653,6 +1653,60 @@ were genuinely different, real licensed jerseys (this store apparently
 carries older-season/alternate-design stock alongside its newest listings),
 not the same design re-titled. Generated as 20 new products.
 
+## Daily pass (2026-09-10) -- a rugby shirt was already sitting in the catalog, and FansJerseyHub retro-titled-as-current
+
+Ran the full daily pass: all 14 Awin feeds (`AWIN_FEED_URL_*` now includes
+ProSoccer, ForumSport and **DecathlonIE**), MysteryShirtClub, the 5 Rakuten
+Brazil stores, and two `ebay_mine_cycle.py` batches (cycle 1 finished with its
+last 8 teams, so a second run opened cycle 2 at 60/385 -- the quota was
+untouched, zero 429s across both). Soicos skipped: no `claude-in-chrome` in
+this run, per the section below. 27 new products, `tsc`/dupe-id/build clean.
+
+**A false positive that was already IN the catalog, not just in the picks.**
+`escocia-home-202526`'s first offer (and therefore the product's photo and its
+`brand: "macron"`) was a Scotland **rugby** shirt from SportIsGoodFR -- Macron,
+thistle crest of Scottish Rugby, Arnold Clark sponsor. The product itself is
+real (its other three offers are the genuine adidas SFA kit), so the fix was to
+drop that one offer and set `brand: "adidas"`, not to delete the block. Found
+only because this run's `escocia|home` + `escocia|away` 2026/27 picks from the
+same store were the same rugby line -- **when a new pick turns out to be a
+false positive, check whether an older one of the same class already made it
+in**. Nothing in these titles says "rugby", so only `manual_exclusions.py`
+catches them.
+
+**FansJerseyHub sells retro reissues titled with the current season.** Both
+`birminghamcity|home` and `|away` came through as "2026/27" but the photos are
+mid-2000s Coral-sponsor Nike shirts (old template, collar); the real current
+kit (Undefeated sponsor) was already on file. This is distinct from the
+already-documented "store carries older-season stock" pattern -- here the
+season string in the title is simply wrong, so `detect_season()` can't help.
+Photo review is the only check that catches it.
+
+**Other drops this pass** (all now in `manual_exclusions.py`): a Springbok
+(South Africa rugby) sleeveless training vest under `sudafrica|training`; Forum
+Sport's "Spyro porto camiseta portero", where "porto" is the Spyro goalkeeper
+line's colourway name on a crestless black shirt; two Jordan-BRAND items (a PSG
+training top, a Brasil goalkeeper shirt) landing on the `jordania` key; Inter
+Store's "Camisa Internacional Basic" licensed casual tee; and two eBay Crvena
+Zvezda "26-27" listings at $28.98 each with no brand in the title and the usual
+grey-carpet dropship photo (real design and crest, but a real Macron Zvezda
+shirt is ~EUR 75 -- same low-trust replica class as the Germany/Mexico/Albania
+entries).
+
+**DecathlonIE produced zero current picks, correctly.** Its licensed club
+shirts (Bayern, Ajax, AC Milan, Leipzig, Real Madrid/Man Utd training) are all
+still 24/25, which `analyze()` drops as an old season -- so the "sanity-check
+the output line count before concluding a store has nothing" rule resolves to
+a genuine zero here, not a wrong-column bug. Its feed is Awin-native with
+`Fashion:size` and a `merchant_category` sport column (which is why `pick.py`'s
+`sport_category_col` filter needed `"football"` added alongside `tbol`/
+`utebol`/`soccer` -- an English-language feed never matches the others).
+
+**eBay retro ratios held**: of 365 raw retro picks, 19 were genuinely new
+products, 113 were new offers on an existing `{team}-retro-{season}-{type}` id,
+and 233 were exact re-discoveries of an offer already on file. `ebay_check_stale.py`
+deactivated 35 of 200 checked (17.5%, in line with the 18% first measured).
+
 ## Soicos (Nike CL/AR, Puma AR) — needs a real browser, not headless Playwright (2026-08-31)
 
 A new affiliate network, separate from Awin/eBay/Rakuten. Approved

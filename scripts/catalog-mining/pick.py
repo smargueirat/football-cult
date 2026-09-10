@@ -46,7 +46,7 @@ def pick_best(csv_path, price_col="search_price", size_col="custom_1", link_col=
                 continue
             if sport_category_col:
                 cat = (r.get(sport_category_col) or "").lower()
-                if cat and not any(k in cat for k in ("tbol", "utebol", "soccer")):
+                if cat and not any(k in cat for k in ("tbol", "utebol", "soccer", "football")):
                     continue
             by_title[title].append((r, title_size))
         if not by_title:

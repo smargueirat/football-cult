@@ -87,6 +87,48 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # price far below any real official jersey. TEAM_PATTERNS' bare
     # "santos" match false-positived on this (2026-09-09).
     "comprar-camiseta-de-portero-luanvi-santos",
+    # Scotland (escocia) "Maillot Domicile/Exterieur Ecosse" on Sport is
+    # Good FR/ES: these are Scotland RUGBY shirts (Macron, thistle crest of
+    # Scottish Rugby, Arnold Clark sponsor), not the football team's kit --
+    # Scotland football is made by adidas with the SFA crest. Nothing in
+    # the title says rugby, so only a link blocklist catches them
+    # (2026-09-10). The 2025/26 one had already slipped into
+    # escocia-home-202526 as an offer and was removed in the same pass.
+    "600150270001-maillot-domicile-ecosse",
+    "600150350001-maillot-exterieur-ecosse",
+    "400070810001-maillot-domicile-ecosse",
+    # Sport is Good / Foot-Store "Camiseta sin mangas de entrenamiento
+    # Sudafrica": Springbok crest = South Africa RUGBY, not Bafana Bafana
+    # (SAFA crest), and it's a sleeveless training vest, not a jersey
+    # (2026-09-10).
+    "p=45800189009",
+    # Forum Sport "Spyro porto camiseta portero": "porto" is the Spyro
+    # goalkeeper line's colourway/model name -- plain black shirt, no FC
+    # Porto crest or any club branding at all (2026-09-10).
+    "p=30043170455",
+    # FansJerseyHub Birmingham City "2026/27" home+away: actually mid-2000s
+    # Coral-sponsor retro reissues (old Nike template, collar) mislabelled
+    # with the current season -- the real 2025/26 kit (Undefeated sponsor)
+    # is already on file (2026-09-10).
+    "birmingham-city-f-c-home-soccer-jersey-2026-27",
+    "birmingham-city-fc-away-soccer-jersey-2026-27",
+    # Foot-Store ES "Jordan"-branded items landing on the Jordania (Jordan
+    # national team) key: a PSG training top and a Brasil goalkeeper shirt,
+    # both matched only because of the Jordan BRAND name in the title
+    # (2026-09-10).
+    "p=45010082048",
+    "p=44645300845",
+    # eBay Crvena Zvezda (Red Star Belgrade) "26-27" home + away: real
+    # Macron design and crest, but $28.98 for a current-season licensed
+    # shirt (retail ~EUR 75), no brand named in the title and the usual
+    # grey-carpet dropship photo -- same low-trust replica class as the
+    # Germany/Mexico/Albania listings above (2026-09-10).
+    "ebay.com/itm/287439126604",
+    "ebay.com/itm/187781985149",
+    # Inter Store "Camisa Internacional Basic Home Vermelha": licensed
+    # casual/fan raglan tee (no supplier branding, no sponsor), not the
+    # adidas match jersey already on file (2026-09-10).
+    "T70-2195-016",
 ]
 
 
