@@ -122,18 +122,37 @@ export default function HeroCarousel() {
       {slides.map((slide, i) => (
         <div
           key={slide.title}
-          className={`absolute inset-0 grid grid-cols-[1fr_auto] content-center items-center gap-3 px-5 py-5 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:gap-8 sm:px-12 sm:py-6 ${
+          className={`absolute inset-0 transition-opacity duration-700 ease-out ${
             i === active ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           aria-hidden={i !== active}
         >
-          {/* Foto siempre cuadrada (nunca una caja corta y ancha que la
-              achicaba) -- mismo layout de 2 columnas en mobile y
-              escritorio, la única diferencia es cuánto lugar ocupa cada
-              lado. line-clamp en el subtítulo asegura que el bloque de
-              texto mida siempre lo mismo sea cual sea el largo real de
-              cada slide, así el botón dorado nunca se corre de lugar. */}
-          <div className="relative z-10 order-1 flex flex-col items-start gap-1.5 text-left sm:gap-3">
+          {/* Foto a pantalla completa (no una caja chica flotando en el
+              medio) -- pedido explícito del usuario, "que quede grande
+              como Footy.com". object-cover en vez de object-contain
+              ahora que el alto es fijo y real (nunca más ambiguo como en
+              el bug viejo de aspect-square): cubre todo el recuadro
+              cortando los bordes en vez de dejar franjas vacías.
+              object-top prioriza la cabeza del modelo si hay que
+              recortar algo -- solo se pierde piso/fondo, nunca cara. */}
+          {slide.photo && (
+            <img
+              src={getDisplaySrc(slide.photo, 1200)}
+              alt=""
+              aria-hidden
+              className={`absolute inset-0 h-full w-full object-cover object-top ${
+                i === active ? "hero-photo-kenburns" : ""
+              }`}
+            />
+          )}
+
+          {/* Scrim para que el texto siga siendo legible pase lo que
+              pase en la foto de abajo -- de abajo hacia arriba en
+              celular (el texto se apoya abajo), de izquierda a derecha
+              en escritorio (el texto vive a la izquierda). */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent sm:bg-gradient-to-r sm:from-[#14261c] sm:via-[#14261ce6] sm:to-transparent" />
+
+          <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left sm:max-w-[52%] sm:justify-center sm:gap-3 sm:px-12 sm:py-6">
             <span className="font-tagline text-[11px] uppercase text-[#E7C567] sm:text-sm">
               {slide.eyebrow}
             </span>
@@ -153,27 +172,6 @@ export default function HeroCarousel() {
               {slide.cta}
               <span aria-hidden>→</span>
             </button>
-          </div>
-
-          {/* Bug real: "aspect-square" sin prefijo quedaba activo también
-              en desktop, y con sm:w-full (ancho fijado por la columna del
-              grid) el aspect-ratio forzaba una altura = ese ancho -- casi
-              siempre bastante más alta que la caja real del carrusel
-              (400px), así que el overflow-hidden del contenedor de afuera
-              terminaba recortando la cabeza del modelo. Alto fijo y
-              explícito en vez de aspect-square: así object-contain tiene
-              un límite real dentro del cual entra la foto completa. */}
-          <div className="relative order-2 flex h-[190px] w-full items-center justify-center overflow-hidden sm:h-[400px]">
-            {slide.photo && (
-              <img
-                src={getDisplaySrc(slide.photo, 600)}
-                alt=""
-                aria-hidden
-                className={`h-full w-full object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.45)] ${
-                  i === active ? "hero-photo-kenburns" : ""
-                }`}
-              />
-            )}
           </div>
         </div>
       ))}

@@ -14,7 +14,7 @@ export default function HeritageStory({ productId }: { productId: string }) {
 
   return (
     <section className="mt-8 rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] px-5 py-5 shadow-vintage-sm sm:px-8 sm:py-6">
-      <span className="font-tagline text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
+      <span className="font-tagline text-[10px] uppercase text-[#7A5B1E] sm:text-xs">
         {t.heritage.eyebrow}
       </span>
       <h2 className="font-vintage mt-0.5 text-lg text-[#1B3B2B] sm:text-2xl">{t.heritage.title}</h2>

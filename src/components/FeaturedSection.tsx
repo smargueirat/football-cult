@@ -29,7 +29,7 @@ export default function FeaturedSection() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pt-10">
       <div className="mb-4 flex flex-col items-start gap-0.5">
-        <span className="font-tagline text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
+        <span className="font-tagline text-[10px] uppercase text-[#7A5B1E] sm:text-xs">
           {t.featured.eyebrow}
         </span>
         <h2 className="font-vintage text-lg text-[#1B3B2B] sm:text-xl">

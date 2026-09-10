@@ -17,7 +17,7 @@ export default function DiscoveryCarousel({
   return (
     <section className="mt-4">
       <div className="mb-3 flex flex-col items-start gap-0.5">
-        <span className="font-tagline text-[10px] uppercase text-[#9C7A2E] sm:text-xs">
+        <span className="font-tagline text-[10px] uppercase text-[#7A5B1E] sm:text-xs">
           {eyebrow}
         </span>
         <h2 className="font-vintage text-base text-[#1B3B2B] sm:text-lg">{title}</h2>
