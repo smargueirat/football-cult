@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { getDisplaySrc } from "@/lib/images";
-import { SECTION_PATHS, HERO_PHOTOS, SECTION_HERO_FIT, SECTION_HERO_POSITION } from "@/lib/sections";
+import { SECTION_PATHS, HERO_PHOTOS, SECTION_HERO_FIT, SECTION_HERO_POSITION, SECTION_HERO_TRANSFORM } from "@/lib/sections";
 
 const SLIDE_COUNT = 6;
 const AUTO_ADVANCE_MS = 5500;
@@ -155,16 +155,28 @@ export default function HeroCarousel() {
               abajo (y de paso centra la foto en vez de pegarla arriba
               con object-top, que en "contain" no tiene ningún efecto
               porque no había margen vertical para desplazar). */}
+          {/* SECTION_HERO_TRANSFORM (sólo botas) va en este wrapper, no
+              en la foto -- la foto ya tiene su propia animación
+              (hero-photo-kenburns) puesta por transform, y un transform
+              inline en el mismo elemento se pisaría con las keyframes
+              de la animación mientras corre. Poniéndolo en un wrapper
+              separado que sólo envuelve a la foto, los dos transforms
+              se combinan en vez de pisarse: la foto sigue haciendo su
+              zoom lento de siempre, y el wrapper la corre/agranda un
+              poco más para revelar más bota, pedido explícito del
+              usuario (ver sections.ts para el porqué del valor). */}
           {slide.photo && (
-            <img
-              src={getDisplaySrc(slide.photo, 1600)}
-              alt=""
-              aria-hidden
-              className={`absolute inset-0 h-full w-full ${
-                SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-8 sm:p-14" : "object-cover"
-              } ${i === active ? "hero-photo-kenburns" : ""}`}
-              style={SECTION_HERO_FIT[i] === "cover" ? { objectPosition: SECTION_HERO_POSITION[i] } : undefined}
-            />
+            <div className="absolute inset-0" style={{ transform: SECTION_HERO_TRANSFORM[i] }}>
+              <img
+                src={getDisplaySrc(slide.photo, 1600)}
+                alt=""
+                aria-hidden
+                className={`absolute inset-0 h-full w-full ${
+                  SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-8 sm:p-14" : "object-cover"
+                } ${i === active ? "hero-photo-kenburns" : ""}`}
+                style={SECTION_HERO_FIT[i] === "cover" ? { objectPosition: SECTION_HERO_POSITION[i] } : undefined}
+              />
+            </div>
           )}
 
           {/* Scrim para que el texto siga siendo legible pase lo que pase

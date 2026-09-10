@@ -101,3 +101,27 @@ export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cov
 //   recuadro por arriba -- "50% 50%" trae la suela de la bota justo al
 //   borde de la zona visible (probado top/30%/50%/70%/bottom).
 export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%"];
+
+// Transform extra (solo Botas): pedido explícito del usuario -- quería
+// ver más de las dos botas, no sólo la suela asomando en el borde del
+// degradé. En un recuadro tan ancho como el nuestro, object-position
+// horizontal no tiene ningún efecto real (cover ya usa el 100% del
+// ancho para encajar, sin margen para correr la foto a los costados --
+// mismo motivo por el que el resto de las fotos usan "top" nomás,
+// nunca un %X). Para poder correr la imagen de verdad hace falta crear
+// ese margen a propósito: achicándola un poco de más (scale > 1) y
+// después desplazándola (translateX) dentro de ese margen extra -- acá
+// sí funciona porque el transform se aplica DESPUÉS del recorte de
+// cover, no depende de su matemática. Valores elegidos probando varias
+// combinaciones con el degradé real superpuesto (1.15/1.2/1.3 de
+// escala x 0%/6%/8%/12% de desplazamiento): 1.2/8% mostraba las dos
+// botas con buen detalle (raya de adidas en la de arriba, suela con
+// colores en la de abajo) sin comerse todo el degradé de cielo.
+export const SECTION_HERO_TRANSFORM: (string | undefined)[] = [
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  undefined,
+  "scale(1.2) translateX(8%)",
+];
