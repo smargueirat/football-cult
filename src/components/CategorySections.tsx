@@ -6,34 +6,39 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { SECTION_PATHS, SECTION_PHOTOS } from "@/lib/sections";
 import { getDisplaySrc } from "@/lib/images";
 
-// Fila de tarjetas por sección debajo del hero -- mismas fotos/rutas
-// reales que las slides del carrusel (src/lib/sections.ts), un acceso
-// directo más visible a cada página dedicada.
+// Nav de secciones, deliberadamente distinta a una tarjeta de producto:
+// foto circular (no cuadrada como ProductCard3D/BootCard), fondo oscuro
+// tipo "steps" (no la card blanca de un producto en venta), y el mismo
+// font-vintage grande de los títulos H1 en vez de la tipografía de
+// producto (font-card-title) -- pedido explícito del usuario después de
+// que esta fila se confundía visualmente con las tarjetas de camisetas
+// de abajo.
 export default function CategorySections() {
   const { t } = useLanguage();
 
   return (
-    <div className="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">
-      {SECTION_PATHS.map((path, i) => (
-        <Link
-          key={path}
-          href={path}
-          className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-vintage-sm transition-transform hover:-translate-y-0.5"
-        >
-          <div className="relative aspect-square w-full overflow-hidden bg-[#F3EEDD]">
-            <Image
-              src={getDisplaySrc(SECTION_PHOTOS[i], 300)}
-              alt={t.heroSlides[i]?.eyebrow ?? ""}
-              fill
-              unoptimized
-              className="object-cover transition-transform group-hover:scale-105"
-            />
-          </div>
-          <span className="line-clamp-2 p-2 text-center text-[11px] font-semibold uppercase tracking-wide text-[#1B3B2B] sm:text-xs">
-            {t.heroSlides[i]?.eyebrow}
-          </span>
-        </Link>
-      ))}
+    <div className="vintage-dark rounded-2xl border border-[#C9A24B]/25 px-3 py-5 sm:rounded-3xl sm:px-6 sm:py-7">
+      <p className="font-tagline mb-3 text-center text-[11px] uppercase tracking-[0.15em] text-[#B8933F] sm:mb-4 sm:text-xs">
+        Explorá por sección
+      </p>
+      <div className="grid grid-cols-3 gap-3 sm:grid-cols-6 sm:gap-4">
+        {SECTION_PATHS.map((path, i) => (
+          <Link key={path} href={path} className="group flex flex-col items-center gap-2">
+            <div className="relative aspect-square w-full max-w-[110px] overflow-hidden rounded-full border-2 border-[#C9A24B]/50 bg-[#F3EEDD] shadow-vintage-sm transition-transform group-hover:-translate-y-1 group-hover:border-[#E7C567]">
+              <Image
+                src={getDisplaySrc(SECTION_PHOTOS[i], 300)}
+                alt={t.heroSlides[i]?.eyebrow ?? ""}
+                fill
+                unoptimized
+                className="object-cover"
+              />
+            </div>
+            <span className="font-vintage line-clamp-2 text-center text-[10px] leading-tight text-[#F3E9C9] sm:text-sm">
+              {t.heroSlides[i]?.eyebrow}
+            </span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

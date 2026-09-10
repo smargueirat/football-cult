@@ -1,8 +1,7 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "@/lib/i18n/LocaleLink";
 import { bootProducts } from "@/data/boots";
-import { formatOfferMoney } from "@/data/products";
+import BootCard from "@/components/BootCard";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 export async function generateMetadata({
@@ -23,6 +22,15 @@ export async function generateMetadata({
 export default function BotasPage() {
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-8 sm:px-8">
+      <Link
+        href="/"
+        className="mb-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#675c44] transition-colors hover:text-[#1B3B2B]"
+      >
+        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+        Volver al catálogo
+      </Link>
       <div className="mb-6">
         <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">
           Botas de fútbol
@@ -32,40 +40,10 @@ export default function BotasPage() {
           Emotion y Forum Sport.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 2xl:grid-cols-6">
-        {bootProducts.map((product) => {
-          const cheapest = product.offers.reduce((a, b) =>
-            a.price + a.shipping <= b.price + b.shipping ? a : b
-          );
-          return (
-            <Link
-              key={product.id}
-              href={`/botas/${product.id}`}
-              className="glass-panel group flex flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/25 transition-shadow hover:shadow-[0_16px_40px_-12px_rgba(0,0,0,0.18)]"
-            >
-              <div className="relative aspect-square w-full bg-white">
-                <Image
-                  src={cheapest.imageUrl}
-                  alt={product.model}
-                  fill
-                  unoptimized
-                  className="object-contain p-4 transition-transform group-hover:scale-105"
-                />
-              </div>
-              <div className="flex flex-1 flex-col gap-1 p-3">
-                <span className="text-[11px] uppercase tracking-wide text-[#B8933F]">
-                  {product.brand} · {product.groundType}
-                </span>
-                <span className="line-clamp-2 text-sm font-medium text-[#1a1a1a]">
-                  {product.model}
-                </span>
-                <span className="mt-auto text-sm font-semibold text-[#1B3B2B]">
-                  Desde {formatOfferMoney(cheapest.price, "EUR")}
-                </span>
-              </div>
-            </Link>
-          );
-        })}
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 2xl:grid-cols-6">
+        {bootProducts.map((product, i) => (
+          <BootCard key={product.id} boot={product} priority={i < 8} />
+        ))}
       </div>
     </div>
   );
