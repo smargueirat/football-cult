@@ -103,7 +103,7 @@ export default function HeroCarousel() {
 
   return (
     <div
-      className="vintage-dark shadow-vintage-lg relative h-[280px] overflow-hidden rounded-2xl sm:h-[400px] sm:rounded-3xl"
+      className="vintage-dark shadow-vintage-lg relative h-[300px] overflow-hidden rounded-2xl sm:h-[460px] sm:rounded-3xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -122,7 +122,7 @@ export default function HeroCarousel() {
       {slides.map((slide, i) => (
         <div
           key={slide.title}
-          className={`absolute inset-0 grid grid-cols-[1fr_auto] content-center items-center gap-3 px-5 py-5 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:gap-8 sm:px-12 sm:py-10 ${
+          className={`absolute inset-0 grid grid-cols-[1fr_auto] content-center items-center gap-3 px-5 py-5 transition-opacity duration-700 ease-out sm:grid-cols-2 sm:gap-8 sm:px-12 sm:py-6 ${
             i === active ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           aria-hidden={i !== active}
@@ -133,14 +133,14 @@ export default function HeroCarousel() {
               lado. line-clamp en el subtítulo asegura que el bloque de
               texto mida siempre lo mismo sea cual sea el largo real de
               cada slide, así el botón dorado nunca se corre de lugar. */}
-          <div className="relative z-10 order-1 flex flex-col items-start gap-1 text-left sm:gap-2">
-            <span className="font-tagline text-[10px] uppercase text-[#E7C567] sm:text-xs">
+          <div className="relative z-10 order-1 flex flex-col items-start gap-1.5 text-left sm:gap-3">
+            <span className="font-tagline text-[11px] uppercase text-[#E7C567] sm:text-sm">
               {slide.eyebrow}
             </span>
-            <h1 className="font-vintage text-lg leading-tight text-[#F3E9C9] sm:text-4xl">
+            <h1 className="font-vintage text-2xl leading-tight text-[#F3E9C9] sm:text-5xl lg:text-6xl">
               {slide.title}
             </h1>
-            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:text-sm">
+            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:max-w-lg sm:text-base">
               {slide.subtitle}
             </p>
             <button
@@ -148,7 +148,7 @@ export default function HeroCarousel() {
                 e.stopPropagation();
                 goToSection(i);
               }}
-              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:text-xs"
+              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:px-6 sm:py-2.5 sm:text-sm"
             >
               {slide.cta}
               <span aria-hidden>→</span>
@@ -163,7 +163,7 @@ export default function HeroCarousel() {
               terminaba recortando la cabeza del modelo. Alto fijo y
               explícito en vez de aspect-square: así object-contain tiene
               un límite real dentro del cual entra la foto completa. */}
-          <div className="relative order-2 flex h-[150px] w-full items-center justify-center overflow-hidden sm:h-[300px]">
+          <div className="relative order-2 flex h-[190px] w-full items-center justify-center overflow-hidden sm:h-[400px]">
             {slide.photo && (
               <img
                 src={getDisplaySrc(slide.photo, 600)}

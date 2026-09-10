@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { SECTION_PATHS } from "@/lib/sections";
+import SectionsMenu from "./SectionsMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import LoginButton from "./LoginButton";
@@ -12,22 +12,6 @@ import CountrySelector from "./CountrySelector";
 
 export default function Header() {
   const { t } = useLanguage();
-
-  // Antes había un solo botón "Categorías" con un dropdown (hover +
-  // click a la vez): el hover lo abría, y clickear el mismo botón que
-  // ya estaba abierto por hover ejecutaba el toggle-por-click, que lo
-  // cerraba en el acto -- se sentía como que clickear "lo hacía
-  // desaparecer". Reemplazado por links directos, full width, cada uno
-  // a su propia página (pedido del usuario) -- un solo mecanismo (click
-  // de link), sin estado de abierto/cerrado que pueda pisarse solo.
-  const sectionLinks = [
-    { label: t.categoriesMenu.national, href: SECTION_PATHS[0] },
-    { label: t.categoriesMenu.clubs, href: SECTION_PATHS[1] },
-    { label: t.categoriesMenu.retro, href: SECTION_PATHS[2] },
-    { label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3] },
-    { label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4] },
-    { label: "Botas", href: SECTION_PATHS[5] },
-  ];
 
   return (
     <header className="glass-panel sticky top-0 z-50 border-b border-[#C9A24B]/25">
@@ -58,12 +42,11 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex items-center gap-0.5 sm:gap-5">
-          <nav className="hidden items-center gap-5 text-sm text-[#5b5b57] xl:flex">
-            {sectionLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="whitespace-nowrap transition-colors hover:text-[#1a1a1a]">
-                {link.label}
-              </Link>
-            ))}
+          <nav className="hidden items-center gap-5 text-sm text-[#5b5b57] lg:flex">
+            <Link href="/" className="transition-colors hover:text-[#1a1a1a]">
+              {t.nav.search}
+            </Link>
+            <SectionsMenu />
           </nav>
           <div className="flex items-center border-l border-black/[0.08] pl-1 sm:gap-1 sm:pl-4">
             <LoginButton />
