@@ -30,11 +30,13 @@ import { BootProduct, bootProducts } from "@/data/boots";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
+  BOOT_SIZES,
   BRAND_FILTERS,
   QUICK_PICK_TEAMS,
   STORE_FILTERS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
+import { BOOT_TIER_LABEL, BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
 import ScrollArrowRow from "./ScrollArrowRow";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import {
@@ -44,7 +46,7 @@ import {
   SectionKey,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
-import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH, productColorKey } from "@/lib/colorClassify";
+import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH, bootColorKey, productColorKey } from "@/lib/colorClassify";
 import PriceRangeSlider from "./PriceRangeSlider";
 import { useCountry } from "@/lib/country/CountryContext";
 import ProductCard from "./ProductCard3D";
@@ -108,9 +110,15 @@ export default function SearchExplorer({
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
+    bootSizeFilter,
+    toggleBootSizeFilter,
+    setBootSizeFilter,
     colorFilter,
     toggleColorFilter,
     setColorFilter,
+    bootTierFilter,
+    toggleBootTierFilter,
+    setBootTierFilter,
     sectionFilter,
     setSectionFilter,
     priceRange,
@@ -354,17 +362,22 @@ export default function SearchExplorer({
     sortBy,
   ]);
 
-  // Botas: no tienen talle de ropa/color/temporada/categoría de camiseta,
-  // así que esos filtros no les aplican -- pero SÍ tienen marca real
-  // (boot.brand), tienda real (boot.offers[].store) y precio real, y con
-  // 1863 modelos (vs los 20 originales) esos tres dejaron de ser opcionales:
-  // sin ellos, activar cualquier filtro de marca/tienda/precio mostraba
-  // camisetas filtradas correctamente + TODAS las botas sin filtrar
-  // mezcladas igual, lo que se sentía como "el filtro no funciona"
-  // (reportado por el usuario). boot.brand usa mayúscula inicial ("Puma",
-  // "Adidas") mientras que brandFilter usa minúscula ("puma", "adidas" --
-  // mismo Brand type que camisetas), por eso la comparación es
-  // case-insensitive en vez de igualdad estricta. Se excluyen del todo
+  // Botas: no tienen talle de ropa/temporada/categoría de camiseta, así
+  // que esos filtros no les aplican -- pero SÍ tienen marca real
+  // (boot.brand), precio real, talla real de calzado (boot.offers[].sizes,
+  // EU) y color real (análisis de píxel de la foto, igual que camisetas)
+  // -- y con ~1740 modelos esos dejaron de ser opcionales: sin ellos,
+  // activar cualquier filtro mostraba camisetas filtradas correctamente +
+  // TODAS las botas sin filtrar mezcladas igual, lo que se sentía como "el
+  // filtro no funciona" (reportado por el usuario). Tienda NO se filtra acá
+  // -- pedido explícito del usuario, "no me interesa el local" para botas.
+  // boot.brand usa mayúscula inicial ("Puma", "Adidas") mientras que
+  // brandFilter usa minúscula ("puma", "adidas" -- mismo Brand type que
+  // camisetas), por eso la comparación es case-insensitive en vez de
+  // igualdad estricta. Nivel/Gama (Tier) viene de bootTierInfo(), precalculado
+  // por separado (ver src/lib/bootTier.ts) -- no todas las botas tienen
+  // tier real conocido, esas simplemente no matchean si el filtro de Tier
+  // está activo (no se inventa un tier por defecto). Se excluyen del todo
   // cuando la sección efectiva es "jerseys" (páginas de categoría de
   // camiseta, donde una bota no pinta nada).
   const filteredBoots = useMemo(() => {
@@ -376,16 +389,28 @@ export default function SearchExplorer({
         queryWords.every((w) => normalizeSearchText(`${b.brand} ${b.model}`).includes(w));
       const matchesBrand =
         brandFilter.length === 0 || brandFilter.some((bf) => bf.toLowerCase() === b.brand.toLowerCase());
-      const matchesStore = storeFilter.length === 0 || b.offers.some((o) => storeFilter.includes(o.store));
+      const matchesBootSize =
+        bootSizeFilter.length === 0 ||
+        b.offers.some((o) => o.sizes.some((s) => bootSizeFilter.includes(s)));
+      const matchesColor = (() => {
+        if (colorFilter.length === 0) return true;
+        const key = bootColorKey(b.id);
+        return key !== null && colorFilter.includes(key);
+      })();
+      const matchesTier = (() => {
+        if (bootTierFilter.length === 0) return true;
+        const info = bootTierInfo(b.id);
+        return info !== null && bootTierFilter.includes(info.tier);
+      })();
       const matchesPriceRange = (() => {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
         const cheapest = Math.min(...b.offers.map((o) => o.price + o.shipping));
         const withinMax = priceRange[1] === PRICE_RANGE_MAX || cheapest <= priceRange[1];
         return cheapest >= priceRange[0] && withinMax;
       })();
-      return matchesQuery && matchesBrand && matchesStore && matchesPriceRange;
+      return matchesQuery && matchesBrand && matchesBootSize && matchesColor && matchesTier && matchesPriceRange;
     });
-  }, [effectiveSection, deferredQuery, brandFilter, storeFilter, priceRange]);
+  }, [effectiveSection, deferredQuery, brandFilter, bootSizeFilter, colorFilter, bootTierFilter, priceRange]);
 
   type CatalogItem =
     | { kind: "jersey"; key: string; product: Product }
@@ -437,7 +462,7 @@ export default function SearchExplorer({
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, colorFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -710,14 +735,16 @@ export default function SearchExplorer({
 
             <div className="flex flex-col gap-5 overflow-y-auto px-5 py-5">
               {/* Los grupos que solo tienen sentido para camisetas (equipo,
-                  en baja, categoría, tipo, talle, color, temporada, edad --
-                  BootProduct no tiene ninguno de esos campos) se ocultan del
-                  todo en la sección "botas": mostrarlos ahí no rompía nada
-                  técnicamente (ya no afectan el resultado, ver filteredBoots
-                  más abajo), pero era ruido confuso -- un filtro visible que
-                  nunca hace nada se siente roto igual. Marca/Tienda/Precio
-                  SÍ aplican a botas (boot.brand, boot.offers[].store,
-                  precio real), esos se quedan siempre visibles. */}
+                  en baja, categoría, tipo, talle de ropa, temporada, edad)
+                  se ocultan del todo en la sección "botas". Tienda también
+                  se oculta ahí -- pedido explícito del usuario: "en el
+                  filtro de las botas no me interesa el local". Marca,
+                  Precio y Color aplican a ambas secciones (boot.brand,
+                  precio real, color real por análisis de píxel de la
+                  foto -- igual que camisetas) y se quedan siempre
+                  visibles. Talla (EU real de calzado, no S/M/L) y Nivel/
+                  Gama (Tier 1+ a 4, ver src/lib/bootTier.ts) son
+                  exclusivos de botas. */}
               {effectiveSection !== "boots" && (
                 <>
                   <div className="flex flex-col gap-1.5">
@@ -833,28 +860,30 @@ export default function SearchExplorer({
                 </ScrollArrowRow>
               </div>
 
-              <div className="flex flex-col gap-1.5">
-                <span className="text-xs text-[#675c44]">{t.search.storeLabel}:</span>
-                <ScrollArrowRow className="-mx-5 gap-2 px-5">
-                  <Chip
-                    active={storeFilter.length === 0}
-                    onClick={() => setStoreFilter([])}
-                    className="flex-shrink-0 whitespace-nowrap"
-                  >
-                    {t.search.allCategories}
-                  </Chip>
-                  {STORE_FILTERS.map((key) => (
+              {effectiveSection !== "boots" && (
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-xs text-[#675c44]">{t.search.storeLabel}:</span>
+                  <ScrollArrowRow className="-mx-5 gap-2 px-5">
                     <Chip
-                      key={key}
-                      active={storeFilter.includes(key)}
-                      onClick={() => toggleStoreFilter(key)}
+                      active={storeFilter.length === 0}
+                      onClick={() => setStoreFilter([])}
                       className="flex-shrink-0 whitespace-nowrap"
                     >
-                      {key}
+                      {t.search.allCategories}
                     </Chip>
-                  ))}
-                </ScrollArrowRow>
-              </div>
+                    {STORE_FILTERS.map((key) => (
+                      <Chip
+                        key={key}
+                        active={storeFilter.includes(key)}
+                        onClick={() => toggleStoreFilter(key)}
+                        className="flex-shrink-0 whitespace-nowrap"
+                      >
+                        {key}
+                      </Chip>
+                    ))}
+                  </ScrollArrowRow>
+                </div>
+              )}
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.priceRangeLabel}:</span>
@@ -867,23 +896,23 @@ export default function SearchExplorer({
                 />
               </div>
 
-              {effectiveSection !== "boots" && (
+              {effectiveSection === "boots" && (
                 <>
                   <div className="flex flex-col gap-1.5">
-                    <span className="text-xs text-[#675c44]">{t.search.sizeLabel}:</span>
+                    <span className="text-xs text-[#675c44]">{t.search.bootSizeLabel}:</span>
                     <ScrollArrowRow className="-mx-5 gap-2 px-5">
                       <Chip
-                        active={sizeFilter.length === 0}
-                        onClick={() => setSizeFilter([])}
+                        active={bootSizeFilter.length === 0}
+                        onClick={() => setBootSizeFilter([])}
                         className="flex-shrink-0 whitespace-nowrap"
                       >
                         {t.search.allCategories}
                       </Chip>
-                      {SIZES.map((size) => (
+                      {BOOT_SIZES.map((size) => (
                         <Chip
                           key={size}
-                          active={sizeFilter.includes(size)}
-                          onClick={() => toggleSizeFilter(size)}
+                          active={bootSizeFilter.includes(size)}
+                          onClick={() => toggleBootSizeFilter(size)}
                           className="flex-shrink-0 whitespace-nowrap"
                         >
                           {size}
@@ -893,32 +922,84 @@ export default function SearchExplorer({
                   </div>
 
                   <div className="flex flex-col gap-1.5">
-                    <span className="text-xs text-[#675c44]">{t.search.colorLabel}:</span>
+                    <span className="text-xs text-[#675c44]">{t.search.bootTierLabel}:</span>
                     <ScrollArrowRow className="-mx-5 gap-2 px-5">
                       <Chip
-                        active={colorFilter.length === 0}
-                        onClick={() => setColorFilter([])}
+                        active={bootTierFilter.length === 0}
+                        onClick={() => setBootTierFilter([])}
                         className="flex-shrink-0 whitespace-nowrap"
                       >
                         {t.search.allCategories}
                       </Chip>
-                      {COLOR_ORDER.map((key) => (
+                      {BOOT_TIER_ORDER.map((tier) => (
                         <Chip
-                          key={key}
-                          active={colorFilter.includes(key)}
-                          onClick={() => toggleColorFilter(key)}
+                          key={tier}
+                          active={bootTierFilter.includes(tier)}
+                          onClick={() => toggleBootTierFilter(tier)}
                           className="flex-shrink-0 whitespace-nowrap"
                         >
-                          <span
-                            className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
-                            style={{ backgroundColor: COLOR_SWATCH[key] }}
-                          />
-                          {t.search[COLOR_LABEL_KEY[key]]}
+                          {BOOT_TIER_LABEL[tier]}
                         </Chip>
                       ))}
                     </ScrollArrowRow>
                   </div>
+                </>
+              )}
 
+              {effectiveSection !== "boots" && (
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-xs text-[#675c44]">{t.search.sizeLabel}:</span>
+                  <ScrollArrowRow className="-mx-5 gap-2 px-5">
+                    <Chip
+                      active={sizeFilter.length === 0}
+                      onClick={() => setSizeFilter([])}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {t.search.allCategories}
+                    </Chip>
+                    {SIZES.map((size) => (
+                      <Chip
+                        key={size}
+                        active={sizeFilter.includes(size)}
+                        onClick={() => toggleSizeFilter(size)}
+                        className="flex-shrink-0 whitespace-nowrap"
+                      >
+                        {size}
+                      </Chip>
+                    ))}
+                  </ScrollArrowRow>
+                </div>
+              )}
+
+              <div className="flex flex-col gap-1.5">
+                <span className="text-xs text-[#675c44]">{t.search.colorLabel}:</span>
+                <ScrollArrowRow className="-mx-5 gap-2 px-5">
+                  <Chip
+                    active={colorFilter.length === 0}
+                    onClick={() => setColorFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {COLOR_ORDER.map((key) => (
+                    <Chip
+                      key={key}
+                      active={colorFilter.includes(key)}
+                      onClick={() => toggleColorFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      <span
+                        className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
+                        style={{ backgroundColor: COLOR_SWATCH[key] }}
+                      />
+                      {t.search[COLOR_LABEL_KEY[key]]}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
+
+              {effectiveSection !== "boots" && (
+                <>
                   <div className="flex flex-col gap-1.5">
                     <span className="text-xs text-[#675c44]">{t.search.seasonLabel}:</span>
                     <ScrollArrowRow className="-mx-5 gap-2 px-5">

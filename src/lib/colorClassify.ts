@@ -1,5 +1,6 @@
 import type { Translations } from "@/lib/i18n/translations";
 import dominantColors from "@/data/productDominantColors.json";
+import bootDominantColors from "@/data/bootDominantColors.json";
 
 // Bucketea el colorHex (RGB libre, ~5400 valores distintos en el catálogo)
 // en un puñado de colores con nombre para poder filtrar por color. No usa
@@ -128,4 +129,16 @@ const DOMINANT_COLORS = dominantColors as Record<string, ColorKey>;
 // nuevos que todavía no pasaron por esa extracción.
 export function productColorKey(product: { id: string; colorHex: string }): ColorKey {
   return DOMINANT_COLORS[product.id] ?? classifyColor(product.colorHex);
+}
+
+// Botas: mismo pipeline de análisis de píxeles real sobre la foto (ver
+// scripts/catalog-mining/extract_dominant_colors.mjs, adaptado para
+// boots.ts), guardado en bootDominantColors.json. No hay colorHex de
+// fallback para botas (BootProduct no tiene ese campo) -- si una bota no
+// está en el mapa, no tiene color clasificado (nunca debería pasar salvo
+// que falte la foto).
+const BOOT_DOMINANT_COLORS = bootDominantColors as Record<string, ColorKey>;
+
+export function bootColorKey(bootId: string): ColorKey | null {
+  return BOOT_DOMINANT_COLORS[bootId] ?? null;
 }

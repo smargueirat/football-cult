@@ -6,12 +6,12 @@ import SearchExplorer from "@/components/SearchExplorer";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 // Antes: grid propio, sin buscador ni filtros -- viable con 71 modelos,
-// roto con los 1863 actuales (pedido explícito del usuario: "hay que
+// roto con los ~1740 actuales (pedido explícito del usuario: "hay que
 // ponerle todos los filtros a la sección de las botas"). Reusa
 // SearchExplorer con forcedSection="boots", el mismo patrón que ya usan
 // las páginas de camisetas por categoría (ver CategoryCatalogPage.tsx) --
-// da buscador, filtros de marca/tienda/precio y el "Ver más" paginado
-// gratis, sin mantener una segunda implementación en paralelo.
+// da buscador, filtros de marca/talla/color/nivel/precio y el "Ver más"
+// paginado gratis, sin mantener una segunda implementación en paralelo.
 export default function BotasPageClient() {
   const { t } = useLanguage();
 

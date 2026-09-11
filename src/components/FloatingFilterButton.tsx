@@ -8,7 +8,15 @@ import {
   PRICE_RANGE_MIN,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
-import { AGE_GROUP_FILTERS, BRAND_FILTERS, QUICK_PICK_TEAMS, STORE_FILTERS, TYPE_FILTERS } from "@/lib/search/filterOptions";
+import {
+  AGE_GROUP_FILTERS,
+  BOOT_SIZES,
+  BRAND_FILTERS,
+  QUICK_PICK_TEAMS,
+  STORE_FILTERS,
+  TYPE_FILTERS,
+} from "@/lib/search/filterOptions";
+import { BOOT_TIER_LABEL, BOOT_TIER_ORDER } from "@/lib/bootTier";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH } from "@/lib/colorClassify";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
@@ -41,9 +49,15 @@ export default function FloatingFilterButton() {
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
+    bootSizeFilter,
+    toggleBootSizeFilter,
+    setBootSizeFilter,
     colorFilter,
     toggleColorFilter,
     setColorFilter,
+    bootTierFilter,
+    toggleBootTierFilter,
+    setBootTierFilter,
     priceRange,
     setPriceRange,
     activeFilterCount,
@@ -210,28 +224,30 @@ export default function FloatingFilterButton() {
             </ScrollArrowRow>
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.storeLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={storeFilter.length === 0}
-                onClick={() => setStoreFilter([])}
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              {STORE_FILTERS.map((key) => (
+          {sectionFilter !== "boots" && (
+            <div className="flex flex-col gap-1.5">
+              <p className="text-xs text-[#9a9a94]">{t.search.storeLabel}</p>
+              <ScrollArrowRow className="gap-1.5">
                 <Chip
-                  key={key}
-                  active={storeFilter.includes(key)}
-                  onClick={() => toggleStoreFilter(key)}
+                  active={storeFilter.length === 0}
+                  onClick={() => setStoreFilter([])}
                   className="flex-shrink-0 whitespace-nowrap"
                 >
-                  {key}
+                  {t.search.allCategories}
                 </Chip>
-              ))}
-            </ScrollArrowRow>
-          </div>
+                {STORE_FILTERS.map((key) => (
+                  <Chip
+                    key={key}
+                    active={storeFilter.includes(key)}
+                    onClick={() => toggleStoreFilter(key)}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {key}
+                  </Chip>
+                ))}
+              </ScrollArrowRow>
+            </div>
+          )}
 
           <div className="flex flex-col gap-1.5">
             <p className="text-xs text-[#9a9a94]">{t.search.priceRangeLabel}</p>
@@ -244,23 +260,23 @@ export default function FloatingFilterButton() {
             />
           </div>
 
-          {sectionFilter !== "boots" && (
+          {sectionFilter === "boots" && (
             <>
               <div className="flex flex-col gap-1.5">
-                <p className="text-xs text-[#9a9a94]">{t.search.sizeLabel}</p>
+                <p className="text-xs text-[#9a9a94]">{t.search.bootSizeLabel}</p>
                 <ScrollArrowRow className="gap-1.5">
                   <Chip
-                    active={sizeFilter.length === 0}
-                    onClick={() => setSizeFilter([])}
+                    active={bootSizeFilter.length === 0}
+                    onClick={() => setBootSizeFilter([])}
                     className="flex-shrink-0 whitespace-nowrap"
                   >
                     {t.search.allCategories}
                   </Chip>
-                  {SIZES.map((size) => (
+                  {BOOT_SIZES.map((size) => (
                     <Chip
                       key={size}
-                      active={sizeFilter.includes(size)}
-                      onClick={() => toggleSizeFilter(size)}
+                      active={bootSizeFilter.includes(size)}
+                      onClick={() => toggleBootSizeFilter(size)}
                       className="flex-shrink-0 whitespace-nowrap"
                     >
                       {size}
@@ -270,32 +286,84 @@ export default function FloatingFilterButton() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <p className="text-xs text-[#9a9a94]">{t.search.colorLabel}</p>
+                <p className="text-xs text-[#9a9a94]">{t.search.bootTierLabel}</p>
                 <ScrollArrowRow className="gap-1.5">
                   <Chip
-                    active={colorFilter.length === 0}
-                    onClick={() => setColorFilter([])}
+                    active={bootTierFilter.length === 0}
+                    onClick={() => setBootTierFilter([])}
                     className="flex-shrink-0 whitespace-nowrap"
                   >
                     {t.search.allCategories}
                   </Chip>
-                  {COLOR_ORDER.map((key) => (
+                  {BOOT_TIER_ORDER.map((tier) => (
                     <Chip
-                      key={key}
-                      active={colorFilter.includes(key)}
-                      onClick={() => toggleColorFilter(key)}
+                      key={tier}
+                      active={bootTierFilter.includes(tier)}
+                      onClick={() => toggleBootTierFilter(tier)}
                       className="flex-shrink-0 whitespace-nowrap"
                     >
-                      <span
-                        className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
-                        style={{ backgroundColor: COLOR_SWATCH[key] }}
-                      />
-                      {t.search[COLOR_LABEL_KEY[key]]}
+                      {BOOT_TIER_LABEL[tier]}
                     </Chip>
                   ))}
                 </ScrollArrowRow>
               </div>
+            </>
+          )}
 
+          {sectionFilter !== "boots" && (
+            <div className="flex flex-col gap-1.5">
+              <p className="text-xs text-[#9a9a94]">{t.search.sizeLabel}</p>
+              <ScrollArrowRow className="gap-1.5">
+                <Chip
+                  active={sizeFilter.length === 0}
+                  onClick={() => setSizeFilter([])}
+                  className="flex-shrink-0 whitespace-nowrap"
+                >
+                  {t.search.allCategories}
+                </Chip>
+                {SIZES.map((size) => (
+                  <Chip
+                    key={size}
+                    active={sizeFilter.includes(size)}
+                    onClick={() => toggleSizeFilter(size)}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {size}
+                  </Chip>
+                ))}
+              </ScrollArrowRow>
+            </div>
+          )}
+
+          <div className="flex flex-col gap-1.5">
+            <p className="text-xs text-[#9a9a94]">{t.search.colorLabel}</p>
+            <ScrollArrowRow className="gap-1.5">
+              <Chip
+                active={colorFilter.length === 0}
+                onClick={() => setColorFilter([])}
+                className="flex-shrink-0 whitespace-nowrap"
+              >
+                {t.search.allCategories}
+              </Chip>
+              {COLOR_ORDER.map((key) => (
+                <Chip
+                  key={key}
+                  active={colorFilter.includes(key)}
+                  onClick={() => toggleColorFilter(key)}
+                  className="flex-shrink-0 whitespace-nowrap"
+                >
+                  <span
+                    className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
+                    style={{ backgroundColor: COLOR_SWATCH[key] }}
+                  />
+                  {t.search[COLOR_LABEL_KEY[key]]}
+                </Chip>
+              ))}
+            </ScrollArrowRow>
+          </div>
+
+          {sectionFilter !== "boots" && (
+            <>
               <div className="flex flex-col gap-1.5">
                 <p className="text-xs text-[#9a9a94]">{t.search.seasonLabel}</p>
                 <ScrollArrowRow className="gap-1.5">

@@ -110,6 +110,8 @@ export interface Translations {
     storeLabel: string;
     loadMore: string;
     sizeLabel: string;
+    bootSizeLabel: string;
+    bootTierLabel: string;
     colorLabel: string;
     colorBlack: string;
     colorWhite: string;
@@ -519,6 +521,8 @@ export const translations: Record<Locale, Translations> = {
       storeLabel: "Tienda",
       loadMore: "Ver más",
       sizeLabel: "Talle",
+      bootSizeLabel: "Talle (EU)",
+      bootTierLabel: "Nivel / Gama",
       colorLabel: "Color",
       colorBlack: "Negro",
       colorWhite: "Blanco",
@@ -934,6 +938,8 @@ export const translations: Record<Locale, Translations> = {
       storeLabel: "Loja",
       loadMore: "Ver mais",
       sizeLabel: "Tamanho",
+      bootSizeLabel: "Tamanho (EU)",
+      bootTierLabel: "Nível / Gama",
       colorLabel: "Cor",
       colorBlack: "Preto",
       colorWhite: "Branco",
@@ -1349,6 +1355,8 @@ export const translations: Record<Locale, Translations> = {
       storeLabel: "Store",
       loadMore: "Show more",
       sizeLabel: "Size",
+      bootSizeLabel: "Size (EU)",
+      bootTierLabel: "Tier / Range",
       colorLabel: "Color",
       colorBlack: "Black",
       colorWhite: "White",
@@ -1764,6 +1772,8 @@ export const translations: Record<Locale, Translations> = {
       storeLabel: "Boutique",
       loadMore: "Voir plus",
       sizeLabel: "Taille",
+      bootSizeLabel: "Pointure (EU)",
+      bootTierLabel: "Niveau / Gamme",
       colorLabel: "Couleur",
       colorBlack: "Noir",
       colorWhite: "Blanc",
@@ -2179,6 +2189,8 @@ export const translations: Record<Locale, Translations> = {
       storeLabel: "Negozio",
       loadMore: "Mostra altro",
       sizeLabel: "Taglia",
+      bootSizeLabel: "Taglia (EU)",
+      bootTierLabel: "Livello / Gamma",
       colorLabel: "Colore",
       colorBlack: "Nero",
       colorWhite: "Bianco",
