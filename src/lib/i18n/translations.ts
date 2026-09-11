@@ -97,6 +97,7 @@ export interface Translations {
     quickSelectLabel: string;
     clearAria: string;
     resultsCount: string;
+    resultsCountBoots: string;
     sortLabel: string;
     sortRelevance: string;
     sortPriceAsc: string;
@@ -505,6 +506,7 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Accesos rápidos",
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
+      resultsCountBoots: "{n} botas encontradas",
       sortLabel: "Ordenar por",
       sortRelevance: "Relevancia",
       sortPriceAsc: "Precio: menor a mayor",
@@ -919,6 +921,7 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Acessos rápidos",
       clearAria: "Limpar busca",
       resultsCount: "{n} camisas encontradas",
+      resultsCountBoots: "{n} chuteiras encontradas",
       sortLabel: "Ordenar por",
       sortRelevance: "Relevância",
       sortPriceAsc: "Preço: menor para maior",
@@ -1333,6 +1336,7 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Quick picks",
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",
+      resultsCountBoots: "{n} boots found",
       sortLabel: "Sort by",
       sortRelevance: "Relevance",
       sortPriceAsc: "Price: low to high",
@@ -1747,6 +1751,7 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Sélection rapide",
       clearAria: "Effacer la recherche",
       resultsCount: "{n} maillots trouvés",
+      resultsCountBoots: "{n} chaussures trouvées",
       sortLabel: "Trier par",
       sortRelevance: "Pertinence",
       sortPriceAsc: "Prix : croissant",
@@ -2161,6 +2166,7 @@ export const translations: Record<Locale, Translations> = {
       quickSelectLabel: "Scelte rapide",
       clearAria: "Cancella ricerca",
       resultsCount: "{n} maglie trovate",
+      resultsCountBoots: "{n} scarpini trovati",
       sortLabel: "Ordina per",
       sortRelevance: "Rilevanza",
       sortPriceAsc: "Prezzo: dal più basso",

@@ -48,6 +48,7 @@ export default function FloatingFilterButton() {
     setPriceRange,
     activeFilterCount,
     clearAllFilters,
+    sectionFilter,
   } = useSearchFilter();
   const [visible, setVisible] = useState(false);
   const [pinnedOpen, setPinnedOpen] = useState(false);
@@ -105,82 +106,86 @@ export default function FloatingFilterButton() {
             )}
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              {QUICK_PICK_TEAMS.map((key) => {
-                const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
-                return (
+          {sectionFilter !== "boots" && (
+            <>
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.quickSelectLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  {QUICK_PICK_TEAMS.map((key) => {
+                    const active = query.toLowerCase() === teamNames[key].es.toLowerCase();
+                    return (
+                      <Chip
+                        key={key}
+                        active={active}
+                        onClick={() => setQuery(active ? "" : teamNames[key][locale])}
+                        className="flex-shrink-0 whitespace-nowrap"
+                      >
+                        {teamCategory[key] === "national" ? (
+                          <span className="text-base leading-none">{teamFlags[key]}</span>
+                        ) : (
+                          <TeamBadge colors={teamColors[key]} className="h-4 w-4" />
+                        )}
+                        {teamNames[key][locale]}
+                      </Chip>
+                    );
+                  })}
+                </ScrollArrowRow>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.nav.categories}</p>
+                <ScrollArrowRow className="gap-1.5">
                   <Chip
-                    key={key}
-                    active={active}
-                    onClick={() => setQuery(active ? "" : teamNames[key][locale])}
+                    active={categoryFilter.length === 0}
+                    onClick={() => setCategoryFilter([])}
+                    accent="amber"
                     className="flex-shrink-0 whitespace-nowrap"
                   >
-                    {teamCategory[key] === "national" ? (
-                      <span className="text-base leading-none">{teamFlags[key]}</span>
-                    ) : (
-                      <TeamBadge colors={teamColors[key]} className="h-4 w-4" />
-                    )}
-                    {teamNames[key][locale]}
+                    {t.search.allCategories}
                   </Chip>
-                );
-              })}
-            </ScrollArrowRow>
-          </div>
+                  <Chip
+                    active={categoryFilter.includes("national")}
+                    onClick={() => toggleCategoryFilter("national")}
+                    accent="amber"
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.categoryNational}
+                  </Chip>
+                  <Chip
+                    active={categoryFilter.includes("club")}
+                    onClick={() => toggleCategoryFilter("club")}
+                    accent="amber"
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.categoryClubs}
+                  </Chip>
+                </ScrollArrowRow>
+              </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.nav.categories}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={categoryFilter.length === 0}
-                onClick={() => setCategoryFilter([])}
-                accent="amber"
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              <Chip
-                active={categoryFilter.includes("national")}
-                onClick={() => toggleCategoryFilter("national")}
-                accent="amber"
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.categoryNational}
-              </Chip>
-              <Chip
-                active={categoryFilter.includes("club")}
-                onClick={() => toggleCategoryFilter("club")}
-                accent="amber"
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.categoryClubs}
-              </Chip>
-            </ScrollArrowRow>
-          </div>
-
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.typeLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={typeFilter.length === 0}
-                onClick={() => setTypeFilter([])}
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              {TYPE_FILTERS.map((key) => (
-                <Chip
-                  key={key}
-                  active={typeFilter.includes(key)}
-                  onClick={() => toggleTypeFilter(key)}
-                  className="flex-shrink-0 whitespace-nowrap"
-                >
-                  {typeNames[key][locale]}
-                </Chip>
-              ))}
-            </ScrollArrowRow>
-          </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.typeLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip
+                    active={typeFilter.length === 0}
+                    onClick={() => setTypeFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {TYPE_FILTERS.map((key) => (
+                    <Chip
+                      key={key}
+                      active={typeFilter.includes(key)}
+                      onClick={() => toggleTypeFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {typeNames[key][locale]}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
+            </>
+          )}
 
           <div className="flex flex-col gap-1.5">
             <p className="text-xs text-[#9a9a94]">{t.search.brandLabel}</p>
@@ -239,105 +244,109 @@ export default function FloatingFilterButton() {
             />
           </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.sizeLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={sizeFilter.length === 0}
-                onClick={() => setSizeFilter([])}
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              {SIZES.map((size) => (
-                <Chip
-                  key={size}
-                  active={sizeFilter.includes(size)}
-                  onClick={() => toggleSizeFilter(size)}
-                  className="flex-shrink-0 whitespace-nowrap"
-                >
-                  {size}
-                </Chip>
-              ))}
-            </ScrollArrowRow>
-          </div>
+          {sectionFilter !== "boots" && (
+            <>
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.sizeLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip
+                    active={sizeFilter.length === 0}
+                    onClick={() => setSizeFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {SIZES.map((size) => (
+                    <Chip
+                      key={size}
+                      active={sizeFilter.includes(size)}
+                      onClick={() => toggleSizeFilter(size)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {size}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.colorLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={colorFilter.length === 0}
-                onClick={() => setColorFilter([])}
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              {COLOR_ORDER.map((key) => (
-                <Chip
-                  key={key}
-                  active={colorFilter.includes(key)}
-                  onClick={() => toggleColorFilter(key)}
-                  className="flex-shrink-0 whitespace-nowrap"
-                >
-                  <span
-                    className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
-                    style={{ backgroundColor: COLOR_SWATCH[key] }}
-                  />
-                  {t.search[COLOR_LABEL_KEY[key]]}
-                </Chip>
-              ))}
-            </ScrollArrowRow>
-          </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.colorLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip
+                    active={colorFilter.length === 0}
+                    onClick={() => setColorFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {COLOR_ORDER.map((key) => (
+                    <Chip
+                      key={key}
+                      active={colorFilter.includes(key)}
+                      onClick={() => toggleColorFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      <span
+                        className="h-3.5 w-3.5 flex-shrink-0 rounded-full border border-black/10"
+                        style={{ backgroundColor: COLOR_SWATCH[key] }}
+                      />
+                      {t.search[COLOR_LABEL_KEY[key]]}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.seasonLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={seasonFilter.length === 0}
-                onClick={() => setSeasonFilter([])}
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              {SEASONS.map((season) => (
-                <Chip
-                  key={season}
-                  active={seasonFilter.includes(season)}
-                  onClick={() => toggleSeasonFilter(season)}
-                  className="flex-shrink-0 whitespace-nowrap"
-                >
-                  {season}
-                </Chip>
-              ))}
-            </ScrollArrowRow>
-          </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.seasonLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip
+                    active={seasonFilter.length === 0}
+                    onClick={() => setSeasonFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {SEASONS.map((season) => (
+                    <Chip
+                      key={season}
+                      active={seasonFilter.includes(season)}
+                      onClick={() => toggleSeasonFilter(season)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {season}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
 
-          <div className="flex flex-col gap-1.5">
-            <p className="text-xs text-[#9a9a94]">{t.search.ageGroupLabel}</p>
-            <ScrollArrowRow className="gap-1.5">
-              <Chip
-                active={ageGroupFilter.length === 0}
-                onClick={() => setAgeGroupFilter([])}
-                className="flex-shrink-0 whitespace-nowrap"
-              >
-                {t.search.allCategories}
-              </Chip>
-              {AGE_GROUP_FILTERS.map((key) => (
-                <Chip
-                  key={key}
-                  active={ageGroupFilter.includes(key)}
-                  onClick={() => toggleAgeGroupFilter(key)}
-                  className="flex-shrink-0 whitespace-nowrap"
-                >
-                  {key === "men"
-                    ? t.search.ageGroupMen
-                    : key === "women"
-                      ? t.search.ageGroupWomen
-                      : t.search.ageGroupKids}
-                </Chip>
-              ))}
-            </ScrollArrowRow>
-          </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.ageGroupLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip
+                    active={ageGroupFilter.length === 0}
+                    onClick={() => setAgeGroupFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {AGE_GROUP_FILTERS.map((key) => (
+                    <Chip
+                      key={key}
+                      active={ageGroupFilter.includes(key)}
+                      onClick={() => toggleAgeGroupFilter(key)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                    >
+                      {key === "men"
+                        ? t.search.ageGroupMen
+                        : key === "women"
+                          ? t.search.ageGroupWomen
+                          : t.search.ageGroupKids}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
+            </>
+          )}
         </div>
       )}
 

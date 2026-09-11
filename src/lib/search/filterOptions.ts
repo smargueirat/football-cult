@@ -1,4 +1,5 @@
 import { AgeGroup, Brand, TeamKey, TypeKey, products } from "@/data/products";
+import { bootProducts } from "@/data/boots";
 
 // Compartido entre SearchExplorer (panel completo) y FloatingFilterButton
 // (panel flotante) -- antes cada uno tenía su propia lista y terminaban
@@ -22,10 +23,16 @@ export const BRAND_FILTERS: Brand[] = (
   ["adidas", "nike", "puma", "kappa", "hummel", "umbro", "newbalance", "macron"] as Brand[]
 ).filter((key) => products.some((p) => p.brand === key));
 
-// Todas las tiendas presentes en el catálogo (solo ~29 valores distintos,
-// a diferencia de marca/equipo no hace falta curar un subconjunto).
+// Todas las tiendas presentes en el catálogo, camisetas + botas (solo
+// ~30 valores distintos, a diferencia de marca/equipo no hace falta
+// curar un subconjunto). La mayoría de las tiendas de botas también
+// venden camisetas y ya aparecían acá, pero FutbolEmotion es
+// bota-exclusiva -- sin este union no aparecía como opción de filtro.
 export const STORE_FILTERS: string[] = Array.from(
-  new Set(products.flatMap((p) => p.offers.map((o) => o.store)))
+  new Set([
+    ...products.flatMap((p) => p.offers.map((o) => o.store)),
+    ...bootProducts.flatMap((b) => b.offers.map((o) => o.store)),
+  ])
 ).sort((a, b) => a.localeCompare(b));
 
 // Selecciones/clubes más buscados: son un atajo, no un listado completo
