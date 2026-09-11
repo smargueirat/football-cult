@@ -8,6 +8,7 @@ import { formatOfferMoney } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
+import { getDisplaySrc, upsizeBootDetailPhoto } from "@/lib/images";
 
 export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   const { t } = useLanguage();
@@ -54,7 +55,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
         <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white">
           <Image
             key={selectedOffer.imageUrl}
-            src={selectedOffer.imageUrl}
+            src={getDisplaySrc(upsizeBootDetailPhoto(selectedOffer.imageUrl), 900)}
             alt={boot.model}
             fill
             unoptimized
