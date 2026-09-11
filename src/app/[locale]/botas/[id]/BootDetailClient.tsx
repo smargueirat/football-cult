@@ -41,7 +41,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   const hasDistinctPhotos = new Set(boot.offers.map((o) => o.imageUrl)).size > 1;
 
   return (
-    <div className="mx-auto w-full max-w-4xl px-3 py-8 sm:px-6">
+    <div className="mx-auto w-full max-w-6xl px-3 py-8 sm:px-6">
       <Link
         href="/botas"
         className="mb-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#675c44] transition-colors hover:text-[#1B3B2B]"
@@ -51,11 +51,11 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
         </svg>
         {t.detail.backToCatalog}
       </Link>
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-[3fr_2fr]">
         <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white">
           <Image
             key={selectedOffer.imageUrl}
-            src={getDisplaySrc(upsizeBootDetailPhoto(selectedOffer.imageUrl), 900)}
+            src={getDisplaySrc(upsizeBootDetailPhoto(selectedOffer.imageUrl), 1200)}
             alt={boot.model}
             fill
             unoptimized
