@@ -1,7 +1,14 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { countries } from "@/data/products";
+// Directo de countries.ts, NO de @/data/products -- ese archivo solo
+// re-exporta countries desde acá, pero un import de un valor (no
+// "export type") sigue arrastrando el módulo products.ts entero al
+// bundle: Turbopack no puede probar que ese archivo (76 mil líneas de
+// datos) esté libre de efectos secundarios, así que lo empaqueta
+// igual aunque el único símbolo usado sea un re-export. Mismo bug que
+// CountryContext.tsx, ver el comentario largo ahí.
+import { countries } from "@/data/countries";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import Portal from "./Portal";

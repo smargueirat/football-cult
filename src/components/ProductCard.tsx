@@ -20,6 +20,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
+import { useInView } from "@/lib/useInView";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
@@ -28,7 +29,12 @@ export default function ProductCard({ product }: { product: Product }) {
   const { isFavorite, toggleFavorite } = useFavorites();
   const { countryCode } = useCountry();
   const favorite = isFavorite(product.id);
-  const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode);
+  // useInView: ver el comentario largo en useBestOfferForCountry.ts --
+  // sin esto, las cards fuera de pantalla (carrusel, más abajo del
+  // scroll) igual disparan su pedido en vivo a eBay apenas montan.
+  const cardRef = useRef<HTMLAnchorElement>(null);
+  const inView = useInView(cardRef);
+  const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode, inView);
   const storeCount = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
   ).length;
@@ -94,6 +100,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link
+      ref={cardRef}
       href={`/camiseta/${product.id}`}
       onMouseEnter={handlePrefetchPhoto}
       onTouchStart={handleTouchStart}

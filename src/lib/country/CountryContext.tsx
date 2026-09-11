@@ -7,7 +7,15 @@ import {
   useEffect,
   useState,
 } from "react";
-import { Country, CountryCode, countries, findCountry } from "@/data/products";
+// Import directo desde countries.ts (NO desde @/data/products) -- este
+// provider envuelve TODO el sitio (layout.tsx de [locale]), así que
+// cualquier cosa que importe de products.ts acá arrastra el catálogo
+// completo (5.9MB/76 mil líneas) a cada página, hasta una página
+// estática como "términos". Medido en el build real (Turbopack): un
+// chunk de 5.1MB en 100 de 102 páginas generadas, solo por este import.
+// countries/findCountry no dependen de ningún dato de producto, así que
+// viven en su propio archivo liviano.
+import { Country, CountryCode, countries, findCountry } from "@/data/countries";
 
 interface CountryContextValue {
   countryCode: CountryCode;

@@ -1,14 +1,23 @@
 "use client";
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import SectionsMenu from "./SectionsMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import LoginButton from "./LoginButton";
-import FavoritesButton from "./FavoritesButton";
-import CountrySelector from "./CountrySelector";
+
+// dynamic() en vez de un import estático directo: el Header se manda en
+// TODAS las páginas (hasta "términos" o "sobre nosotros"). Ya no
+// importan products.ts directo (ver el split
+// FavoritesButton/FavoritesPanelContent y el fix de CountrySelector a
+// @/data/countries), pero se deja el dynamic() igual -- separa su JS
+// del bundle inicial del Header sin costo real, y evita tener que
+// revertirlo si alguno vuelve a crecer.
+const FavoritesButton = dynamic(() => import("./FavoritesButton"), { ssr: false });
+const CountrySelector = dynamic(() => import("./CountrySelector"), { ssr: false });
 
 export default function Header() {
   const { t } = useLanguage();
