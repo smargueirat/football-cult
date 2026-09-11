@@ -60,9 +60,22 @@ interface SearchFilterValue {
   sizeFilter: Size[];
   toggleSizeFilter: (s: Size) => void;
   setSizeFilter: (s: Size[]) => void;
+  // Talle de bota (numeración EU real de calzado, ej. "42", "40 2/3") --
+  // no reusa `sizeFilter` (talle de ropa: S/M/L/XL) porque son dominios
+  // de valores totalmente distintos, mismo patrón que Marca ya tiene
+  // su propio filtro separado de Talla.
+  bootSizeFilter: string[];
+  toggleBootSizeFilter: (s: string) => void;
+  setBootSizeFilter: (s: string[]) => void;
   colorFilter: ColorKey[];
   toggleColorFilter: (c: ColorKey) => void;
   setColorFilter: (c: ColorKey[]) => void;
+  // Categoría de calidad de la bota (Tier 1+ a Tier 4, ver
+  // src/lib/bootTier.ts) -- no aplica a camisetas, mismo patrón que
+  // bootSizeFilter.
+  bootTierFilter: string[];
+  toggleBootTierFilter: (t: string) => void;
+  setBootTierFilter: (t: string[]) => void;
   // "all" (por defecto) mezcla camisetas y botas; "jerseys"/"boots"
   // aíslan una sola sección. Las páginas de categoría (clubes, retro,
   // etc.) fuerzan "jerseys" al montar -- ahí las botas no pintan nada.
@@ -104,7 +117,9 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [brandFilter, setBrandFilter] = useState<Brand[]>([]);
   const [storeFilter, setStoreFilter] = useState<string[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
+  const [bootSizeFilter, setBootSizeFilter] = useState<string[]>([]);
   const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
+  const [bootTierFilter, setBootTierFilter] = useState<string[]>([]);
   const [sectionFilter, setSectionFilter] = useState<SectionKey>("all");
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
   const [onSaleFilter, setOnSaleFilter] = useState(false);
@@ -119,7 +134,9 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (brandFilter.length > 0 ? 1 : 0) +
     (storeFilter.length > 0 ? 1 : 0) +
     (sizeFilter.length > 0 ? 1 : 0) +
+    (bootSizeFilter.length > 0 ? 1 : 0) +
     (colorFilter.length > 0 ? 1 : 0) +
+    (bootTierFilter.length > 0 ? 1 : 0) +
     (priceRange[0] !== PRICE_RANGE_MIN || priceRange[1] !== PRICE_RANGE_MAX ? 1 : 0) +
     (onSaleFilter ? 1 : 0);
 
@@ -149,9 +166,15 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         sizeFilter,
         toggleSizeFilter: (s) => setSizeFilter((cur) => toggle(cur, s)),
         setSizeFilter,
+        bootSizeFilter,
+        toggleBootSizeFilter: (s) => setBootSizeFilter((cur) => toggle(cur, s)),
+        setBootSizeFilter,
         colorFilter,
         toggleColorFilter: (c) => setColorFilter((cur) => toggle(cur, c)),
         setColorFilter,
+        bootTierFilter,
+        toggleBootTierFilter: (t) => setBootTierFilter((cur) => toggle(cur, t)),
+        setBootTierFilter,
         sectionFilter,
         setSectionFilter,
         priceRange,
@@ -170,7 +193,9 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setBrandFilter([]);
           setStoreFilter([]);
           setSizeFilter([]);
+          setBootSizeFilter([]);
           setColorFilter([]);
+          setBootTierFilter([]);
           setSectionFilter("all");
           setPriceRange([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
           setOnSaleFilter(false);

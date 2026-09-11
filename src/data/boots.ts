@@ -5,7 +5,7 @@
 // para comparación de precio real entre 2 tiendas. Tallas convertidas de
 // UK/US reales a EU con tabla estándar de conversión de calzado.
 //
-// +1792 modelos (2026-09-11, pedido explícito: "agregar todas las botas
+// +1669 modelos (2026-09-11, pedido explícito: "agregar todas las botas
 // que tengamos en todos los catálogos"): minados de los feeds Awin ya
 // aprobados de adidas ES, Sport is Good ES, Foot-Store ES y Decathlon
 // Irlanda (/tmp/feeds/*.csv del scan diario). Cada uno es UNA sola
@@ -18,10 +18,14 @@
 // real por tienda: adidas ES usa su propio custom_1="Adult" (vs "Kids");
 // Sport is Good/Foot-Store usan su taxonomía real "> Adulte" en
 // merchant_category; Decathlon IE usa su categoría real "Adult's
-// Football Boots ...". Se excluyó explícitamente "rugby" (adidas ES
-// etiqueta mal algunas botas de rugby bajo "Botas de Fútbol") y
-// "futsal" (Foot-Store mezcla calzado de fútbol sala en la misma
-// categoría). Precio/talles/URL de afiliado/imagen: 100% reales del
+// Football Boots ...". Exclusión por texto en el nombre real del
+// producto (segunda pasada, 2026-09-11 -- la primera se había quedado
+// corta): "rugby" y "Kakari" (adidas mal-etiqueta botas de rugby bajo
+// "Botas de Fútbol"), "fútbol americano"/"american football" (idem, mal
+// categorizado por la propia tienda), y "sala"/"futsal"/"indoor" (calzado
+// de fútbol sala o calle, no bota de tacos de fútbol al aire libre) --
+// se sacaron 123 productos que habían quedado adentro por error en la
+// primera pasada. Precio/talles/URL de afiliado/imagen: 100% reales del
 // feed, sin inventar nada -- cuando una tienda no da costo de envío por
 // producto (Decathlon IE), se dejó en 0 con el motivo documentado en el
 // código en vez de inventar un número.
@@ -1851,70 +1855,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-predator-freestyle-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol Predator Freestyle Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 120.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44378115329&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd7e8f7077a5c4b8c98ffe86e6496a92f_9366%2FZapatilla_de_futbol_Predator_Freestyle_Indoor_Negro_ID3833_22_model.jpg&feedId=92152&k=0cec05b34c47eb29c42bcafefd52eb3b4d1d7e7e",
-        sizes: ["44 2/3", "45 1/3", "46", "46 2/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-sala-super-sala-iii-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol sala Super Sala III Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 55.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45183901818&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0a9111ab11f04fb4ad2bed2866b7eb7d_9366%2FZapatilla_de_futbol_sala_Super_Sala_III_Indoor_Blanco_KJ6597_22_model.jpg&feedId=92152&k=7323746a27e6382597ec558afb6f1755028eccb4",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-botas-de-futbol-americano-adizero-impact-ii-currency-neutral",
-    brand: "Adidas",
-    model: "Botas de fútbol americano Adizero Impact II Currency Neutral",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 120.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44895983302&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2cd70ba849a54b36b8f2ce070d10bfe6_9366%2FBotas_de_futbol_americano_Adizero_Impact_II_Currency_Neutral_Negro_JQ1384_HM1.jpg&feedId=92152&k=27c67ea7db03f5e68edcf91b521c8bc9afbb3674",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3", "49 1/3", "50 2/3", "51 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-americano-adizero-impact-2-ii",
-    brand: "Adidas",
-    model: "Bota de fútbol americano Adizero Impact.2 II",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 75.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44637147931&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb1293e107f14f2fa09f8bc850855d89_9366%2FBota_de_futbol_americano_Adizero_Impact.2_II_Negro_JQ1397_01_00_standard.jpg&feedId=92152&k=d10bc4d14cbe738c8a584f434824266ab5809651",
-        sizes: ["43 1/3", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-predator-elite-cesped-natural-humedo-sg",
     brand: "Adidas",
     model: "Bota de fútbol PREDATOR ELITE césped natural húmedo",
@@ -2055,22 +1995,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45322779397&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6013e3988a1f44028b1373bbb7640c5a_9366%2FZapatilla_de_futbol_Predator_Club_moqueta_Rojo_JS0356_22_model.jpg&feedId=92152&k=b8a38831feb40cd1955af03a26f246015a21d613",
         sizes: ["42"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-predator-club-sala-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol PREDATOR CLUB Sala Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 60.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=43708794581&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F16c2129c05f54fa59a5e3a17df543f0c_9366%2FZapatilla_de_futbol_PREDATOR_CLUB_Sala_Indoor_Rojo_JS0357_22_model.jpg&feedId=92152&k=2b23ad28a084914eecd8b02bbf8cfc73126808bb",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -2235,22 +2159,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-sala-top-sala-competition-ii-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol sala Top Sala Competition II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 80.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45183909673&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7397cd5e3a2046c287f2cf778ae165a7_9366%2FZapatilla_de_futbol_sala_Top_Sala_Competition_II_Indoor_Blanco_KJ8567_22_model.jpg&feedId=92152&k=923688190c34b74861a979cf0b1f6edfb92b3fd4",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-zapatilla-samba-messi",
     brand: "Adidas",
     model: "Zapatilla Samba Messi",
@@ -2295,22 +2203,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45367101776&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F973cc681bf674dc1a978c86bbc6faccb_9366%2FBota_de_futbol_F50_HYPERFAST_PRO_cesped_natural_seco_Negro_KJ6091_HM1.jpg&feedId=92152&k=446456eeffc1fa00ab7349bcebaaa0130be06038",
         sizes: ["38", "38 2/3", "39 1/3", "42 2/3", "43 1/3", "44", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-f50-club-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol F50 CLUB Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 60.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=45928810355&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa702e88315c843139cb3ae85a81e85d8_9366%2FZapatilla_de_futbol_F50_CLUB_Indoor_Azul_JR9048_22_model.jpg&feedId=92152&k=404d1e527814c533d5cdafb3c03e485b1432cac6",
-        sizes: ["42 2/3"],
       },
     ],
   },
@@ -2439,22 +2331,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45304062204&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4f900c4bd56e4e708423becf282a9c00_9366%2FBotas_de_futbol_Predator_League_para_moqueta_Blanco_KJ6723_HM1.jpg&feedId=92152&k=35efa5ec44d51c5ac6a1a8ed96123125f0c28527",
         sizes: ["38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-sala-con-lengueta-plegable-predator-club-indoor-in",
-    brand: "Adidas",
-    model: "Bota de fútbol sala con lengüeta plegable Predator Club indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 65.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45304062636&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F17edcc3666a041f087dbc3287073c36b_9366%2FBota_de_futbol_sala_con_lengueta_plegable_Predator_Club_indoor_Blanco_KJ6730_22_model.jpg&feedId=92152&k=4e0d461b0d4165357a1a238929acb93fa8e97d74",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
     ],
   },
@@ -3083,22 +2959,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-f50-pro-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla F50 Pro Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 150.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=43791532981&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2761e2f78c76462eb9968effd8eb2a5a_9366%2FZapatilla_F50_Pro_Indoor_Violeta_JH7682_22_model.jpg&feedId=92152&k=a6a006869a8a044b9c76dfe2d520cd80161b6c83",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "47 1/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-de-media-cana-f50-sparkfusion-elite-cesped-natural-seco-cesped-artificial-fg",
     brand: "Adidas",
     model: "Bota de fútbol de media caña F50 SPARKFUSION ELITE césped natural seco / césped artificial",
@@ -3111,38 +2971,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45250676741&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F323855c3344e4960a687d17e3c01ec4a_9366%2FBota_de_futbol_de_media_cana_F50_SPARKFUSION_ELITE_cesped_natural_seco_-_cesped_artificial_Rosa_IH4459_HM1.jpg&feedId=92152&k=50112870b880a060fe0b7935067c696a68027d8f",
         sizes: ["36 2/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-sala-predator-league-fold-over-tongue-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol sala PREDATOR LEAGUE Fold-Over Tongue Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 95.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45734618061&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc82b4ac494c74006bdf30e09453986c9_9366%2FZapatilla_de_futbol_sala_PREDATOR_LEAGUE_Fold-Over_Tongue_Indoor_Azul_JR4740_22_model.jpg&feedId=92152&k=02d6181bab240afd0bf82bb424b10f43d2351806",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-league-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol con lengüeta plegable PREDATOR LEAGUE Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 95.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44914388713&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fddc981237d6f48eba4dbb55b8bf17571_9366%2FZapatilla_de_futbol_con_lengueta_plegable_PREDATOR_LEAGUE_Indoor_Negro_JR4741_22_model.jpg&feedId=92152&k=9d6785a77b9811cc48f075daf8f44bd473902c3e",
-        sizes: ["38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
       },
     ],
   },
@@ -3419,54 +3247,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-super-sala-competition-iii-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol SUPER SALA COMPETITION III Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 55.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=43343051842&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb96c4fb75c9c4ffaa49ec00f3a542259_9366%2FZapatilla_de_futbol_SUPER_SALA_COMPETITION_III_Indoor_Blanco_JP6987_22_model.jpg&feedId=92152&k=fead9e81e38e56b3f53a297e7b958c51aea4f1db",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-top-sala-competition-ii-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol TOP SALA COMPETITION II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 80.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=43343052217&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcd338bda69db40448b9a31cafae10069_9366%2FZapatilla_de_futbol_TOP_SALA_COMPETITION_II_Indoor_Blanco_JP6983_22_model.jpg&feedId=92152&k=271450233f8f8a38b41e81efadb36973ec073b2b",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatillas-de-futbol-de-pista-cubierta-super-sala-competition-iii",
-    brand: "Adidas",
-    model: "Zapatillas de fútbol de pista cubierta SUPER SALA COMPETITION III",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 55.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=45322778846&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F41313e3459f44004952622c8e7d1ed93_9366%2FZapatillas_de_futbol_de_pista_cubierta_SUPER_SALA_COMPETITION_III_Azul_JP6989_22_model.jpg&feedId=92152&k=6c6a1aaa528b4f1652e016d2cadd4a792790cbbd",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-zapatilla-de-futbol-kaiser-team-2-para-moqueta-in",
     brand: "Adidas",
     model: "Zapatilla de fútbol Kaiser Team 2 para moqueta",
@@ -3643,22 +3423,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-botas-de-futbol-americano-adizero-electric-1-ii",
-    brand: "Adidas",
-    model: "Botas de fútbol americano Adizero Electric.1 II",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 90.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44895982755&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F38e06b6f9c944bae979501ac0383c39b_9366%2FBotas_de_futbol_americano_Adizero_Electric.1_II_Negro_JQ3988_01_00_standard.jpg&feedId=92152&k=bca69e84f55145b4ac3f152a12992b5363608add",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-f50-hyperfast-evo-para-cesped-natural-seco-fg",
     brand: "Adidas",
     model: "Bota de fútbol F50 Hyperfast EVO para césped natural seco",
@@ -3787,22 +3551,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-indoor-predator-pro-con-lengueta-plegable-in",
-    brand: "Adidas",
-    model: "Bota de fútbol Indoor Predator Pro con lengüeta plegable",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 140.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45304065047&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F99cbe7ab0f514ade9a7f508b607c39ef_9366%2FBota_de_futbol_Indoor_Predator_Pro_con_lengueta_plegable_Blanco_IH7223_22_model.jpg&feedId=92152&k=5967d55291dee69035c3b4638dcf66849f6645c8",
-        sizes: ["36 2/3", "37 1/3", "38", "40 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-con-lengueta-plegable-predator-pro-para-cesped-artificial-ag",
     brand: "Adidas",
     model: "Bota de fútbol con lengüeta plegable PREDATOR PRO para césped artificial",
@@ -3815,22 +3563,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45304065078&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7b7e218b317f498b99e21ce2d2aa8d9f_9366%2FBota_de_futbol_con_lengueta_plegable_PREDATOR_PRO_para_cesped_artificial_Blanco_IH7221_22_model.jpg&feedId=92152&k=c151900382011909aecaff19ec2a60804f909996",
         sizes: ["47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-f50-club-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla F50 Club Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 60.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=44736468262&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F12621c2ec4594cc0abb4201101a831c6_9366%2FZapatilla_F50_Club_Indoor_Violeta_JI0023_22_model.jpg&feedId=92152&k=d4d86c0a35073b66e08daa7d486e43d529429a40",
-        sizes: ["46", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
     ],
   },
@@ -3863,22 +3595,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45928807060&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0259b5213077465e9747a907c2c97e65_9366%2FBota_de_futbol_de_media_cana_F50_LEAGUE_para_cesped_natural_humedo_Negro_JQ1487_22_model.jpg&feedId=92152&k=32ebec748a971362affcd2da8bda9732c0ee8108",
         sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-sala-predator-club-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol sala Predator Club Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 60.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=42416700712&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffa4a644093894712889c5c2084f25526_9366%2FZapatilla_de_futbol_sala_Predator_Club_Indoor_Blanco_IF6403_22_model.jpg&feedId=92152&k=a788cf69548669c47ad8609b6c723c0a7d17076b",
-        sizes: ["45 1/3"],
       },
     ],
   },
@@ -4059,22 +3775,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-sala-con-lengueta-plegable-predator-club-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol sala con lengüeta plegable PREDATOR CLUB Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 65.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=45928804874&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F691d5cb218f946db858cc994ce622256_9366%2FZapatilla_de_futbol_sala_con_lengueta_plegable_PREDATOR_CLUB_Indoor_Negro_KI6309_22_model.jpg&feedId=92152&k=e22b86c0b6ad42606a4ef018a3795ef9683ee9b7",
-        sizes: ["48 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-zapatilla-copa-pure-3-club-moqueta-in",
     brand: "Adidas",
     model: "Zapatilla Copa Pure 3 Club moqueta",
@@ -4155,38 +3855,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-americano-adizero-chaos-ii-lineman",
-    brand: "Adidas",
-    model: "Bota de fútbol americano Adizero Chaos II Lineman",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 140.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44637148121&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3e86ecd5224b4f16b50dd163e108e582_9366%2FBota_de_futbol_americano_Adizero_Chaos_II_Lineman_Negro_JQ1409_01_00_standard.jpg&feedId=92152&k=a188940d0e97f5152374caaf1644483f9ce32f4e",
-        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3", "49 1/3", "52 2/3", "53 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-kakari-rs-sg-sg",
-    brand: "Adidas",
-    model: "Bota KAKARI RS (SG)",
-    groundType: "SG",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 220.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45176802169&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F78ed8c747ae74fdc82dbcc009964ef1f_9366%2FBota_KAKARI_RS_SG_Azul_KI8848_22_model.jpg&feedId=92152&k=27202c96947038e27268257f21bff1244f9d9649",
-        sizes: ["36 2/3", "38", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-con-lengueta-plegable-predator-league-para-cesped-natural-humedo-sg",
     brand: "Adidas",
     model: "Bota de fútbol con lengüeta plegable Predator League para césped natural húmedo",
@@ -4199,38 +3867,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45304060087&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6703da777f264c50be304fb0fc5e7ff5_9366%2FBota_de_futbol_con_lengueta_plegable_Predator_League_para_cesped_natural_humedo_Blanco_IH7209_22_model.jpg&feedId=92152&k=cf51e2413dc7efb80f07ad2052f51003f674bedd",
         sizes: ["47 1/3", "48 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-f50-hyperfast-league-indoor-in",
-    brand: "Adidas",
-    model: "Bota de fútbol F50 HYPERFAST LEAGUE Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 90.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45367106449&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7cb184842f424036927a6b15e4ceb120_9366%2FBota_de_futbol_F50_HYPERFAST_LEAGUE_Indoor_Negro_KK1063_HM1.jpg&feedId=92152&k=ae5b4de5669757ca8babc19e49101f793f6a073f",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-sala-f50-hyperfast-league-indoor-in",
-    brand: "Adidas",
-    model: "Bota de fútbol sala F50 Hyperfast League Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 90.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45304061860&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fba5ff02e678f445ba9dcbdca359e65a1_9366%2FBota_de_futbol_sala_F50_Hyperfast_League_Indoor_Blanco_KK1061_HM1.jpg&feedId=92152&k=0743c4f7a9095b0ec85ac174a0339a2573c2095c",
-        sizes: ["38", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
     ],
   },
@@ -4411,54 +4047,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-sala-samba-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol sala Samba Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 110.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44534500312&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0cd05e5f5d544956927342937650fc9d_9366%2FZapatilla_de_futbol_sala_Samba_Indoor_Negro_IH6000_22_model.jpg&feedId=92152&k=a8e02d8c6d7c1633b5f62e39f842e838ac72f5a9",
-        sizes: ["36", "40 2/3", "42", "43 1/3", "44", "44 2/3", "45 1/3", "46", "47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-americano-anthony-edwards-1-low",
-    brand: "Adidas",
-    model: "Bota de fútbol americano Anthony Edwards 1 Low",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 160.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45176805082&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3769915303634781a24e18afb0fe6cfc_9366%2FBota_de_futbol_americano_Anthony_Edwards_1_Low_Naranja_LA6911_01_00_standard.jpg&feedId=92152&k=b73410eb029b8bec799b17c7805f07c70ce5c8f1",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3", "50 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-predator-freestyle-jb-indoor-in",
-    brand: "Adidas",
-    model: "Bota Predator Freestyle JB Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 120.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=43791533214&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fde02ff68464b4f0a9b03ef412b779a46_9366%2FBota_Predator_Freestyle_JB_Indoor_Negro_JQ6777_22_model.jpg&feedId=92152&k=dfd0146d29ae28682eba6bc2ad59ed2ac3b49e79",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "43 1/3", "44", "44 2/3", "45 1/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-f50-sparkfusion-elite-cesped-natural-seco-artificial-fg",
     brand: "Adidas",
     model: "Bota de fútbol F50 SPARKFUSION ELITE césped natural seco / artificial",
@@ -4507,22 +4095,6 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-botas-de-futbol-sala-predator-league-con-lengueta-plegable",
-    brand: "Adidas",
-    model: "Botas de fútbol sala Predator League con lengüeta plegable",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 95.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=45304061487&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7a9cac7970ee4730937c105427246cc9_9366%2FBotas_de_futbol_sala_Predator_League_con_lengueta_plegable_Blanco_IH7200_HM1.jpg&feedId=92152&k=2ba9e0acbb1ebb0dfad67f436ca4f005c52222e5",
-        sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-de-futbol-copa-pure-iv-league-cesped-natural-seco-fg",
     brand: "Adidas",
     model: "Bota de fútbol COPA PURE IV LEAGUE césped natural seco",
@@ -4551,38 +4123,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43841199318&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F33e34c557b28473b934e7c273b786edc_9366%2FBota_de_futbol_con_lengueta_plegable_PREDATOR_PRO_cesped_natural_seco_Negro_JS0952_22_model.jpg&feedId=92152&k=0927a659fb926fe9f539c775dec9ba83b3067abf",
         sizes: ["38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-kakari-elite-sg-sg",
-    brand: "Adidas",
-    model: "KAKARI ELITE (SG)",
-    groundType: "SG",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 130.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44895973291&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0d3316284b0347e3b9a54ddb9ed3e600_9366%2FKAKARI_ELITE_SG_Azul_KI8845_22_model.jpg&feedId=92152&k=3f3b07f0cf56ca1e14d194685c4855f24ef76b8f",
-        sizes: ["36 2/3", "38", "39 1/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-kakari-sg-boots-sg",
-    brand: "Adidas",
-    model: "KAKARI (SG) BOOTS",
-    groundType: "SG",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 90.0,
-        shipping: 0,
-        url: "https://www.awin1.com/pclick.php?p=44895973308&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fadfe075f3612475e933b51395ee0cb19_9366%2FKAKARI_SG_BOOTS_Rosa_KI8844_22_model.jpg&feedId=92152&k=e733f95039df7ac12d6ad0f5ae7c2cd7d432e609",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "47 1/3", "48", "48 2/3"],
       },
     ],
   },
@@ -4618,25 +4158,6 @@ const minedBootProductsChunk1: BootProduct[] = [
       },
     ],
   },
-  {
-    id: "adidases-adidas-zapatilla-de-futbol-f50-league-indoor-in",
-    brand: "Adidas",
-    model: "Zapatilla de fútbol F50 LEAGUE Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 90.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=45928814611&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fae4e1cb0f3d045a89dc2d7e1d385db75_9366%2FZapatilla_de_futbol_F50_LEAGUE_Indoor_Amarillo_JR8971_22_model.jpg&feedId=92152&k=e8523c1b26c42ce98e0f4a500e60eee5bf7fe2da",
-        sizes: ["43 1/3", "44", "44 2/3", "45 1/3", "46"],
-      },
-    ],
-  },
-];
-
-const minedBootProductsChunk2: BootProduct[] = [
   {
     id: "adidases-adidas-bota-f50-elite-cesped-natural-humedo-sg",
     brand: "Adidas",
@@ -4794,22 +4315,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45367109588&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F561525a881b8435c86f42cc76690f297_9366%2FBotas_de_futbol_Mid_F50_HYPERFAST_LEAGUE_cesped_natural_humedo_Negro_HQ2376_22_model.jpg&feedId=92152&k=3564ea4da205187aff023e9b4d801b5f34100846",
         sizes: ["36", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-top-sala-competition-2-indoor-in",
-    brand: "Adidas",
-    model: "Bota Top Sala Competition 2 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 80.0,
-        shipping: 4.99,
-        url: "https://www.awin1.com/pclick.php?p=44237360934&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0f64034b1c1246e882cb41fe5c3939dc_9366%2FBota_Top_Sala_Competition_2_Indoor_Azul_JS0653_22_model.jpg&feedId=92152&k=b0e45cf3ea1f2b906d5eed444e91b9ea7846e764",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -5133,6 +4638,9 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk2: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-2-elite-fg-fg",
     brand: "Adidas",
@@ -5354,38 +4862,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43301667966&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fe%2Fkelme_56994-0402_lima_1.webp&feedId=89044&k=ed52dd0d7a28ee53d920c6b7b28929b9e34add75",
         sizes: ["42"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Elite Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 105.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45724998849&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig7798_1_footwear_photography_side_lateral_center_view_white-030824.webp&feedId=89044&k=23a1b101828024c1b91fe31c007ed4c25a877ec8",
-        sizes: ["41 1/3"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator League Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 40.02,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45084665127&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr7923_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=effd30f4b2d8eeed232e2ae493606f5ab37885ea",
-        sizes: ["36", "36 2/3", "38 2/3", "46"],
       },
     ],
   },
@@ -6138,22 +5614,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43301777005&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_108339-01_0-nw012025.webp&feedId=89044&k=2af8cc2102b3d7caab4f2ff02ca507ead41ee73e",
         sizes: ["42", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-gloro-ii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Copa Gloro II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 49.39,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44784462697&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ie1155_1_footwear_photography_side_lateral_center_view_white-nw120924.webp&feedId=89044&k=b18d0c9bac9331044e41ae39f93a360d3499a73c",
-        sizes: ["46"],
       },
     ],
   },
@@ -7390,22 +6850,6 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-league-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 League Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 44.68,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43507498358&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh7720_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89044&k=04dd949b8142f9d2143ad82513fd203030285830",
-        sizes: ["45 1/3"],
-      },
-    ],
-  },
-  {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-fold-over-tongue-ag-ag",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Elite Fold-Over Tongue AG",
@@ -7517,9 +6961,6 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-pro-turf",
     brand: "Adidas",
@@ -8080,6 +7521,9 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-ll",
     brand: "Adidas",
@@ -8125,22 +7569,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45082978089&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_js0956_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=7de02d7e75ce9f73031c11e809a0b0e63968c721",
         sizes: ["42", "42 2/3", "43 1/3", "44", "45 1/3"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-top-sala-competition-ii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala Competition II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 63.06,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45597227759&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp6980_1_footwear_photography_side_lateral_center_view_white-nw112525.webp&feedId=89044&k=f5b0baae68511d2b75132df12f289657317dd7f2",
-        sizes: ["43 1/3"],
       },
     ],
   },
@@ -8653,38 +8081,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45092805574&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jq0937-ftwwht-lucpnk-flaaqu-1.webp&feedId=89044&k=e82d6bb583ea1a78fcc5f170e0027f0d4852f093",
         sizes: ["41 1/3", "42", "43 1/3", "44 2/3", "45 1/3", "46 2/3", "47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-americano-adidas-adizero-impact-2-molded-rubber",
-    brand: "Adidas",
-    model: "Botas de fútbol americano adidas Adizero Impact,2 Molded Rubber",
-    groundType: "",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 40.96,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45352602414&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ie3993-ftwwht-goldmt-ftwwht-1.webp&feedId=89044&k=41a262c6d152a3ab9f7774761f378cc395f4c176",
-        sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-americano-adidas-chaos-ii-rodeo",
-    brand: "Adidas",
-    model: "Botas de fútbol americano adidas Chaos II Rodeo",
-    groundType: "",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 72.96,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45362535644&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jq1404-cblack-owhite-magold-1.webp&feedId=89044&k=d853d21cd8094e40fb26c80be2bcb4b59d134c04",
-        sizes: ["44"],
       },
     ],
   },
@@ -9633,22 +9029,6 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-mizuno-calzado-de-futbol-sala-mizuno-morelia-pro",
-    brand: "Mizuno",
-    model: "Calzado de fútbol sala Mizuno Morelia Pro",
-    groundType: "",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 72.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45368191399&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fq%2F1%2Fq1gb261335.webp&feedId=89044&k=f5e5796df04cc269d597f9c0badc466224b992c5",
-        sizes: ["41", "42", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
     id: "sportisgoodes-skechers-botas-de-futbol-skechers-skx-2-academy-fg-fg",
     brand: "Skechers",
     model: "Botas de fútbol Skechers SKX_2 Academy FG",
@@ -9725,22 +9105,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45138420831&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fk%2Fskechers-252115-bblp-noir-bleu-rose-6a3264d46abb0-1.webp&feedId=89044&k=4d35c065d00089f17c8c0be29744435e61879686",
         sizes: ["41", "42", "43"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-americano-adidas-adizero-chaos-ii-lineman-mg-mg",
-    brand: "Adidas",
-    model: "Botas de fútbol americano adidas Adizero Chaos II Lineman MG",
-    groundType: "MG",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 108.31,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45725031279&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jq1409-cblack-silvmt-cblack-6a444d687b512-2.webp&feedId=89044&k=e341349b970dcdb3c5f7d1146f160940df7469b3",
-        sizes: ["50 2/3", "51 1/3"],
       },
     ],
   },
@@ -10013,22 +9377,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43132055689&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fy%2Ffy0743_ftw_photo_side-lateral-center_white.webp&feedId=89032&k=a8a195a3ce293e2cbe83d3a27734c33f83cdcdbf",
         sizes: ["47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-sala-joma-top-flex-in",
-    brand: "Joma",
-    model: "Botas de fútbol sala Joma Top Flex",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 65.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44510940746&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2FT%2FO%2FTOPS2122IN.webp&feedId=89032&k=f830578da99795c82981c07623aedbd61e7755e7",
-        sizes: ["42", "42.5", "43", "43.5", "44", "44.5"],
       },
     ],
   },
@@ -10400,9 +9748,6 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-edge-1-sg-sg",
     brand: "Adidas",
@@ -10576,38 +9921,6 @@ const minedBootProductsChunk4: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41104839809&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_gw4575_1_footwear_photography_side_lateral_center_view_white_000.webp&feedId=89032&k=bc0afdb8310778e44bf5839e5a64b569a218ae7c",
         sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-sala-adidas-predator-accuracy-3",
-    brand: "Adidas",
-    model: "Botas de fútbol sala adidas Predator Accuracy.3",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 80.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44695071986&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_gw7069_1_footwear_photography_side_lateral_center_view_white_000.webp&feedId=89032&k=62844b03137d7bca6be3c71bc032e8d926d6650a",
-        sizes: ["45 1/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-mrl-sala-club-in-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno MRL Sala Club In",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 46.69,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43654227573&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1ga261630-white-estate-blue-1.webp&feedId=89032&k=31277530f59508ec4230ffd3d44e6f7aa758b951",
-        sizes: ["38", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -11091,6 +10404,9 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-king-pro-sg-sg",
     brand: "Puma",
@@ -11316,54 +10632,6 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-liga-5-2401-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Liga 5 2401 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 51.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45888238645&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_ligs2401in_0.webp&feedId=89032&k=0403a990980f19526da37af34db589ade45f0e4c",
-        sizes: ["44", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-mundial-240-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Mundial 240 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 64.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529497252&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_muns2401in_0.webp&feedId=89032&k=91b77ac386542a3a8546d4b5823fbaf8d78d777a",
-        sizes: ["44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-mundial-2404-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Mundial 2404 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 61.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529497253&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_muns2404in_0.webp&feedId=89032&k=a64b26fe6c824d54bce2abcbc79d464ae6df6e67",
-        sizes: ["40", "41", "42", "43", "44", "45"],
-      },
-    ],
-  },
-  {
     id: "footstorees-joma-botas-de-futbol-joma-powerful-2401-fg-fg",
     brand: "Joma",
     model: "Botas de fútbol Joma Powerful 2401 FG",
@@ -11520,22 +10788,6 @@ const minedBootProductsChunk4: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529497285&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_sups2304ag_0.webp&feedId=89032&k=551a0fdcf341fe3b26807096df8ef853ad6d62b5",
         sizes: ["44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-futbol-sala-joma-fs-reactive-2401-indoor-in",
-    brand: "Joma",
-    model: "Fútbol sala Joma FS Reactive 2401 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 79.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529497294&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_fss2401in_0.webp&feedId=89032&k=4d25a5c994f49201aee4f9bf8f22fa8c533b26c9",
-        sizes: ["42", "44"],
       },
     ],
   },
@@ -11888,22 +11140,6 @@ const minedBootProductsChunk4: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41104849724&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_if6342_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=73892aaf1e3b2f587b9748261b89b9bf5cbdb187",
         sizes: ["41 1/3", "42", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-sala-in-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Club Sala IN",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 60.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43654186968&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig5448_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=6d29baf46a4a492f3962df8889d1aeec8eb01119",
-        sizes: ["42", "44", "45 1/3"],
       },
     ],
   },
@@ -12292,22 +11528,6 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-liga-5-2304-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Liga-5 2304 indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 65.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529542656&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_ligw2304in_royal_1.webp&feedId=89032&k=6e054b1bcb055d86b975f5027e1cd792c595dbf0",
-        sizes: ["43"],
-      },
-    ],
-  },
-  {
     id: "footstorees-puma-botas-de-futbol-puma-future-7-play-fg-ag-fg-ag",
     brand: "Puma",
     model: "Botas de fútbol Puma Future 7 Play FG/AG",
@@ -12400,22 +11620,6 @@ const minedBootProductsChunk4: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=40329632347&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fe%2Fkelme_56994-0402_lima_1.webp&feedId=89032&k=ed52dd0d7a28ee53d920c6b7b28929b9e34add75",
         sizes: ["42", "42 2/3", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-kelme-botas-de-futbol-kelme-hawk-indoor-in",
-    brand: "Kelme",
-    model: "Botas de fútbol Kelme Hawk Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 66.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44149463920&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fe%2Fkelme_55434-0006.webp&feedId=89032&k=6b4128c3aef03f4ac90c35febd7a1b5235cc3436",
-        sizes: ["39", "42"],
       },
     ],
   },
@@ -12528,22 +11732,6 @@ const minedBootProductsChunk4: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44695073453&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ie4979_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=0440b1b91074c124a19269d0a9707f0c148f1d5c",
         sizes: ["45 1/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-elite-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Elite Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 105.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=41332002592&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig7798_1_footwear_photography_side_lateral_center_view_white-030824.webp&feedId=89032&k=23a1b101828024c1b91fe31c007ed4c25a877ec8",
-        sizes: ["40", "41 1/3"],
       },
     ],
   },
@@ -12932,38 +12120,6 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-competition-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala Competition Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43691270533&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig8761_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=65f2cfc3624c092c07d09717b3415ff725223b86",
-        sizes: ["35.5", "44 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator League Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 38.07,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43994231397&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr7923_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=effd30f4b2d8eeed232e2ae493606f5ab37885ea",
-        sizes: ["35", "35.5", "36", "36 2/3", "37 1/3", "38", "38 2/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "46", "46 2/3", "47 1/3", "48"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-x-crazyfast-elite-sg-sg",
     brand: "Adidas",
     model: "Botas de fútbol adidas X Crazyfast Elite SG",
@@ -13024,22 +12180,6 @@ const minedBootProductsChunk4: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45184734796&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fi%2Fdiadora_101.179597-c5702_00.webp&feedId=89032&k=469c8121977bddcdaa1a1ec5d966d898502d9d16",
         sizes: ["36.5", "37", "39"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-diadora-botas-de-futbol-diadora-brasil-sala-cup-tf-in",
-    brand: "Diadora",
-    model: "Botas de fútbol Diadora Brasil Sala Cup TF",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 100.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45184734800&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fi%2Fdiadora_101.179609-c2433_00.webp&feedId=89032&k=efc9c75d593e068099ef3a3be9da37a19fc2f8fe",
-        sizes: ["38.5", "39", "45", "45.5", "46"],
       },
     ],
   },
@@ -13283,9 +12423,6 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-elite-fg-mid-fg",
     brand: "Adidas",
@@ -13331,22 +12468,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529620746&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_ecuw2402ag_0.webp&feedId=89032&k=bd425b824293eef7096c204319a43dfcf4a4eb99",
         sizes: ["43.5", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-liga-5-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Liga-5 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529620774&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_ligw2401in_0.webp&feedId=89032&k=70c7f55705579680424bd16e54c787758985fd82",
-        sizes: ["45"],
       },
     ],
   },
@@ -13459,22 +12580,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42630377390&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji1187_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=2a294d9836915e26ac07a19d1b6ed9afc8bc6220",
         sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 68.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529641472&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig8764_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=5db73d58eb7c451e6fedc5767362eaea7acbcaf2",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
     ],
   },
@@ -13767,54 +12872,6 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-club-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 Club Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 24.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42274716044&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji0023_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=a55570b57d5d646baff072edd62f7f5f6df3bdde",
-        sizes: ["46", "48"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Club Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 50.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45081932777&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_if6403_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=64e9324b0ae4a31ba8792cdc498d190c68f330ef",
-        sizes: ["40 2/3", "41 1/3", "42 2/3", "44 2/3", "45 1/3", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-competiton-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Competiton Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 61.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=41104848587&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig8763_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=fbe9ca315becce4d5c1912c3f324e5a97896a03d",
-        sizes: ["40 2/3", "41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "47 1/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-monarcida-neo-iii-select-md-ag",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Monarcida Neo III Select MD",
@@ -13843,22 +12900,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43829762901&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_p1ga251604_galaxy-silver-gold-gold_1.webp&feedId=89032&k=cbe98490257b4cf6265338e67be6d79f2bd2b88c",
         sizes: ["41", "42", "42.5", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-elite-in-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Elite IN",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 79.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42613752053&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1ga240145_s-yellow-fiery-coral-2-g-silver_2.webp&feedId=89032&k=efd75e018b5019463031c238133b176a1e880ca4",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -14231,22 +13272,6 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 League Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.99,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42530037599&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh7720_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=04dd949b8142f9d2143ad82513fd203030285830",
-        sizes: ["35", "35.5", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-sg-sg",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 League SG",
@@ -14262,22 +13287,9 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-fevernova-court-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Fevernova Court Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 90.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44809655919&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig8766_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=aaa5dec43138818af0a03f8a87f91490738d9a4c",
-        sizes: ["43 1/3", "44", "44 2/3", "45 1/3"],
-      },
-    ],
-  },
+];
+
+const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-fg-mg-ag",
     brand: "Adidas",
@@ -14291,22 +13303,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44345156983&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_js0348_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=da2d1d4124b57ef43348603c55b91ea1c5b1d227",
         sizes: ["36", "36 2/3", "38", "38 2/3", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-super-sala-ii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Super Sala II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43656579245&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ig8756_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=8dfe8929506fb703196c3755cd8c96fd81026f2c",
-        sizes: ["40", "40 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
     ],
   },
@@ -14419,22 +13415,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44862587441&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_107940-01_blue_2.webp&feedId=89032&k=b16fb43bac0fe2fd594f4e39390898862ea83be7",
         sizes: ["40.5", "42", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-gloro-ii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Copa Gloro II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.7,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44536068974&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ie1155_1_footwear_photography_side_lateral_center_view_white-nw120924.webp&feedId=89032&k=b18d0c9bac9331044e41ae39f93a360d3499a73c",
-        sizes: ["40", "40 2/3", "41 1/3", "46"],
       },
     ],
   },
@@ -14823,38 +13803,6 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-club-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Club IN",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 57.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43563179387&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1ga241603_mugenblue-white_1.webp&feedId=89032&k=abc703d935216e7cb6e5bb9510a42e71c00b9f6c",
-        sizes: ["41", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-pro-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Pro IN",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 59.57,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44565980117&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1ga251301-black-white-chinesered-6.webp&feedId=89032&k=b88c60a477c14cd5ed852c51355096e125cd9ff8",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-gloro-2-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Gloro 2 FG",
@@ -14963,22 +13911,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44862587573&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_107904-03_yellow_2.webp&feedId=89032&k=b0ab550a0f787b23ac6d7250be49d7aeb34a3216",
         sizes: ["40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-zapatillas-de-futsal-mizuno-morelia-sala-pro-in-ic-ic",
-    brand: "Mizuno",
-    model: "Zapatillas de futsal Mizuno Morelia Sala Pro In IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 92.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42502041038&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1ga241300_black-black-black_1.webp&feedId=89032&k=24ae669b257ca199b0ded92eb8b1ecc3705d7512",
-        sizes: ["44.5"],
       },
     ],
   },
@@ -16166,9 +15098,6 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-ft-sg-sg",
     brand: "Adidas",
@@ -16330,22 +15259,6 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-pro-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 Pro Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 90.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529799447&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ie1277_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=2ad45df381a2aef599183bb3fdacfc8fe54cd6ca",
-        sizes: ["46 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-firm-mg-mg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Pro Firm MG",
@@ -16358,22 +15271,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=40663926179&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_id3856_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=1e4ca0370a20ecd142edac0a4254a6b48301b118",
         sizes: ["41 1/3", "42", "44", "44 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-super-sala-competition-iii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Super Sala Competition III Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529799464&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ih7687_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=4aef556d3d6a495e3de76496f4bc72290ba2c0a8",
-        sizes: ["42", "42 2/3", "44", "44 2/3", "45 1/3", "46"],
       },
     ],
   },
@@ -16634,22 +15531,6 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-streetgato-indoor-in",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Streetgato Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 74.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45028630750&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hv5759-100_summit-white-night-forest_1.webp&feedId=89032&k=5589922ae0925d3d7ac0f301ac63dabd734b976f",
-        sizes: ["42"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-sin-cordones-adidas-predator-league-fg-mg-fg",
     brand: "Adidas",
     model: "Botas de fútbol sin cordones adidas Predator League FG/MG",
@@ -16858,22 +15739,6 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-classic-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Classic IN",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 97.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529856221&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1ga220245_jaune_1.webp&feedId=89032&k=2fa5d0565e43eb0f9a9692cfb86dfe38ef43d1f1",
-        sizes: ["39", "44.5"],
-      },
-    ],
-  },
-  {
     id: "footstorees-joma-botas-de-futbol-joma-liga-5-tf-tf",
     brand: "Joma",
     model: "Botas de fútbol Joma Liga 5 TF",
@@ -16954,22 +15819,6 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-competitionn",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala CompetitionN",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 79.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529877552&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fe%2Fie1545.webp&feedId=89032&k=514697aab203f726c00aeb42fb23e48bbafddc4d",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42 2/3", "44", "44 2/3", "46"],
-      },
-    ],
-  },
-  {
     id: "footstorees-joma-botas-de-futbol-joma-cancha-2403",
     brand: "Joma",
     model: "Botas de fútbol Joma Cancha 2403",
@@ -16998,22 +15847,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45914949464&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_dris2511in_vert_1.webp&feedId=89032&k=a6deded69959a66002cc7e715893850441f1ea64",
         sizes: ["40", "41", "42", "43", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-dribling-25-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Dribling 25 INdoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 41.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=41971815879&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_dris2504in_bleu-marine_1.webp&feedId=89032&k=8a530519f1383f50945cb0ef5966edac9020e9f3",
-        sizes: ["43", "44"],
       },
     ],
   },
@@ -17274,22 +16107,6 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-competition-2-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala Competition 2 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 64.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529885322&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh6967_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=a6c2e76f66865627c061aa7f6faf437c999a874c",
-        sizes: ["44 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-multi-superficie-adidas-predator-pro",
     brand: "Adidas",
     model: "Botas de fútbol multi-superficie adidas Predator Pro",
@@ -17353,6 +16170,9 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-zoom-superfly-10-academy-km-fg-mg-fg",
     brand: "Nike",
@@ -17494,22 +16314,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42630377260&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji1112_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=96e8efd5c07da1065957359cda42d6d432b2213f",
         sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-super-sala-iii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Super Sala III Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529904468&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr5399_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=2bbec8277dc7519b8e6f52b81c6ce60d33fff23e",
-        sizes: ["44 2/3", "45 1/3", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -17910,22 +16714,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44884726465&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fa%2Fmartes-essentials_30323-blk_lim_silv_black-lime-silver_1.webp&feedId=89032&k=11b5fed7eb53404dce1579731337c525d1137290",
         sizes: ["41", "42", "43", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-martes-essentials-botas-de-futbol-martes-essentials-mator-indoor-in",
-    brand: "Martes Essentials",
-    model: "Botas de fútbol Martes Essentials Mator Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 29.99,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45130831379&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fa%2Fmartes-essentials_30329-blk_lim_silv_black-lime-silver_1.webp&feedId=89032&k=d12e0f27a6836f8290329ec1e3e8061de1692a71",
-        sizes: ["41", "42", "43", "44", "45", "46"],
       },
     ],
   },
@@ -18390,22 +17178,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42313337971&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2F1%2Fp1gc253400.webp&feedId=89032&k=098a9978a077f66ac85bb2eaacea3beafcc3df93",
         sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-pro-tf-tf",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Pro TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 59.57,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43877231401&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1gb261350-white-football-gold-galaxy-silver-1.webp&feedId=89032&k=ddc1a779e6ecd2975a849c9ac441fa97430a8fa5",
-        sizes: ["43", "44", "44.5", "45"],
       },
     ],
   },
@@ -19049,9 +17821,6 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-total-90-fg-fg",
     brand: "Nike",
@@ -19129,54 +17898,6 @@ const minedBootProductsChunk7: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45220450064&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp7452_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=4a77d5c985915b62805a5ba7921871242c386da9",
         sizes: ["37 1/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-competition-ii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala Competition II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529998734&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_js0653_1_footwear_photography_side_lateral_center_view_white-nw091725.webp&feedId=89032&k=bec0d1c8442cf2f3b479bf4e2eb5acc79a29c90e",
-        sizes: ["39 1/3", "40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-ii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala II Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 62.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529998741&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh6293_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=ca6f56dee7e409cc3bf62ccaea1bd87fd0b5b338",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-de-competicion-adidas-super-sala-iii-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol de competición adidas Super Sala III Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42403414920&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr5397_1_footwear_photography_side_lateral_center_view_white-nw091725.webp&feedId=89032&k=e2ba6a84b898d3d422863f6b77a084eda8fae9bb",
-        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -19709,54 +18430,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-elite-ic-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Elite IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 91.8,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=41885924646&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1ga251209_white-black-chinesered_1.webp&feedId=89032&k=4b1a7f2dd46e2b8e39e914acff364e6d01699302",
-        sizes: ["40", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-mrl-sala-club-ic-ic",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno MRL Sala Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 54.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45171888401&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1ga251622_black-white_5.webp&feedId=89032&k=b35f0107b8ab000c56f289c82e7fda24b044eb10",
-        sizes: ["43", "44", "44.5", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-mrl-sala-club-tf-tf",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno MRL Sala Club TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 57.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42530076825&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno_q1gb251622_black-white_2.webp&feedId=89032&k=5c8a08ef8a2c55ce1749b480a96af6d17fe22c73",
-        sizes: ["40.5", "42", "42.5", "44", "45"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-10-academy-ic-ic",
     brand: "Nike",
     model: "Botas de fútbol Nike Mercurial Superfly 10 Academy IC",
@@ -20077,22 +18750,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-iii-club-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Copa Pure III Club Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45526319359&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr2900_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=7aa5ca4b4e2427f237adcffff70fe99cc4877ae6",
-        sizes: ["45 1/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-high-club-mg-mg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom 6 High Club MG",
@@ -20121,22 +18778,6 @@ const minedBootProductsChunk7: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42663843448&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr2864_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=6d5cde5e5dca7637b2bb329d58a9c07229535166",
         sizes: ["42", "42 2/3", "43 1/3", "45 1/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-top-sala-competition-ii-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Top Sala Competition II IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 66.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42630385578&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh6294_1_footwear_photography_side_lateral_center_view_white-nw112525.webp&feedId=89032&k=cc3d14b27e7f0e517c6953308ac4315fe7171ce7",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -20221,22 +18862,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-maxima-25-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Maxima 25 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45819216890&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_maxs2531in_bleu_1.webp&feedId=89032&k=eacc2baf71faac1430c0fc53222f9620d41c54ab",
-        sizes: ["41"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-accuracy-1-low-sg-sg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Accuracy.1 Low SG",
@@ -20265,22 +18890,6 @@ const minedBootProductsChunk7: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43219407273&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fq%2Fhq2326-800_2.webp&feedId=89032&k=49d26ccae166c11dd630ac4f23e76720cf20de45",
         sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-freestyle-jude-bellingham-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Freestyle Jude Bellingham Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 88.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42830944747&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jq6777_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=33b7beb5d96147b2fdee3dc9cff55e7543fc1201",
-        sizes: ["42 2/3", "44"],
       },
     ],
   },
@@ -20365,22 +18974,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-club-court-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Copa Club Court Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44972135064&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr2891_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=82dc89daf51327ac4d1fa2964e9bdd1ff9ed26cb",
-        sizes: ["40", "43 1/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-3-fg-mg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Pure 3 FG/MG",
@@ -20460,6 +19053,9 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-fold-over-ag",
     brand: "Adidas",
@@ -21693,22 +20289,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-super-sala-iii",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Super Sala III",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44552708149&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp6992_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=b6052525f9fb9e777755a224bdf1a3411490d222",
-        sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-iv-elite-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Pure IV Elite FG",
@@ -21932,9 +20512,6 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-ft-tf-tf",
     brand: "Adidas",
@@ -23359,6 +21936,9 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-ii-club-sg-sg",
     brand: "Mizuno",
@@ -23404,22 +21984,6 @@ const minedBootProductsChunk8: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43691278857&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-p1gc263450-white-mp-gold-cool-gray-3c-6.webp&feedId=89032&k=17fc2379372dd55b53f9b2b53941e11f7334e3a9",
         sizes: ["41", "42", "42.5", "43", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-mrl-sala-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno MRL Sala IN",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 46.69,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43691278917&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1ga261631-black-white-1.webp&feedId=89032&k=51591983a52dbba39e05c992a12e8229d41a3bc0",
-        sizes: ["37", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -23616,22 +22180,6 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-samba-messi-indoor-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Samba Messi Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 97.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43994232151&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ki8505-halmin-lucpnk-gum4-2.webp&feedId=89032&k=967212efcf6394772a631d28198c334063b0aaf4",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-blandas-adidas-f50-messi-pro-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol blandas adidas F50 Messi Pro FG",
@@ -23676,22 +22224,6 @@ const minedBootProductsChunk8: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45860440187&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fb%2Fib4486-001.webp&feedId=89032&k=91fc160ad74141a82e446d66195179dea57608c2",
         sizes: ["40.5", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-super-sala-iii-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Super Sala III IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45270281992&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp6991_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=567c548eacb481cd4c52d6e19cec75e69c5e9e47",
-        sizes: ["40 2/3", "42", "44"],
       },
     ],
   },
@@ -23852,22 +22384,6 @@ const minedBootProductsChunk8: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44269897427&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2F1%2Fp1gc264250.webp&feedId=89032&k=2f569f875a04ccd465f46e235b4542a962148711",
         sizes: ["40.5", "41", "42.5", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-sala-club-tf-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Sala Club TF",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 46.69,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44149532645&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1gb261631-black-white-6.webp&feedId=89032&k=803c719fee6e8d769b2a9c29e48a83c1a74c826c",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47"],
       },
     ],
   },
@@ -24800,41 +23316,6 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ibero-v-indoor-in",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Ibero V Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.5,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44365401525&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-108455-04-white-orange-glow-vibrant-silver-69cb736658df8-1.webp&feedId=89032&k=c94aa25eb6f3c09e6429c1a72bc43a5d15acf1ba",
-        sizes: ["39", "40", "41", "42", "43", "44", "45", "46", "47"],
-      },
-    ],
-  },
-];
-
-const minedBootProductsChunk9: BootProduct[] = [
-  {
-    id: "footstorees-puma-botas-de-futbol-puma-pressing-iv-indoor-in",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Pressing IV Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 38.22,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44365401534&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-108570-04-white-orange-glow-vibrant-silver-69cb737b9d219-1.webp&feedId=89032&k=830727c501dad17562d193e2ed8a8f0bde576f69",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47"],
-      },
-    ],
-  },
-  {
     id: "footstorees-puma-botas-de-futbol-puma-ultra-6-carbon-fg-fg",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 6 Carbon FG",
@@ -24879,246 +23360,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44519148885&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-108752-01-black-69cb7d673221b-1.webp&feedId=89032&k=dc1de0ba6a20cc3ebd6c42b9353f1454a21cfc33",
         sizes: ["42", "42.5", "43", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-continental-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Continental Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 112.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44425073731&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-4100972-white-and-red-69d6649305f61-1.webp&feedId=89032&k=579cabd3e0f7fb5daa79aa5c78fb592d9392f64a",
-        sizes: ["39", "40", "41", "42", "43", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-continental-v2-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Continental V2 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 90.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221564&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-4100969-orange-et-argent-69d6648f2aef9-1.webp&feedId=89032&k=41eb9ac34d570f299473f614cd2afcb10f79e999",
-        sizes: ["39", "40", "41", "42", "43", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-debut-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Debut Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44686654539&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-8922007-fluor-yellow-and-navy-69d664832e595-1.webp&feedId=89032&k=d5c5cae6d561601dc2b7c2b07f0373c539c640fa",
-        sizes: ["39", "40", "41", "42", "43", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-449-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 449 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 72.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45940202556&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111449-lavender-blue-and-orange-69d664894b849-1.webp&feedId=89032&k=f51152289822f60fd7ca4c966c42cf5d5ddd004f",
-        sizes: ["45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-450-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 450 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 67.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221571&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111450-white-and-green-69d6642d2b6fe-1.webp&feedId=89032&k=44e4bc58ee311a6cdff230a68d21a7c85d50bf0a",
-        sizes: ["40", "42", "44", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-451-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 451 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 67.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44432366425&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111451-white-and-multicolor-69d6642f2c7ce-1.webp&feedId=89032&k=cb45cf367e8c3351e9c6a697724c909df2536f63",
-        sizes: ["40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-452-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 452 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 67.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221582&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111452-navy-and-white-69d6643130cd4-1.webp&feedId=89032&k=78f10ba5aacaee4625be2fa61d6ff4a280076448",
-        sizes: ["41", "42", "43"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-453-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 453 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 72.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221587&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111453-white-and-black-69d66433309d6-1.webp&feedId=89032&k=f9926dae9c9ce27fe609e5ff5b2d8f6e2043b496",
-        sizes: ["39", "40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-454-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 454 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 67.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221598&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111454-black-and-white-69d664352f8dd-1.webp&feedId=89032&k=36ea58541214694653c565ada0406dc4716052e7",
-        sizes: ["43", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-455-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 455 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 70.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221602&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111455-white-and-red-69d6649500d61-1.webp&feedId=89032&k=87220efb29e7cfb8b69735a8af2497373fe6ca51",
-        sizes: ["42", "43", "44", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-g-3-456-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich G-3 456 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 67.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221608&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3111456-white-and-navy-69d6643725fe4-1.webp&feedId=89032&k=8571dfd56b4c6ce9dc2332c73ca9d9d76f55af74",
-        sizes: ["42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-gresca-2-0-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Gresca 2.0 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 95.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44454221613&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3003011-white-and-black-69d66439261a6-1.webp&feedId=89032&k=4edf0c0eb7c24778936b878deffdee1be767f6ed",
-        sizes: ["40", "41", "42", "43", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-one-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich One Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 65.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44425073738&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3071078-navy-and-yellow-69d6643d31722-1.webp&feedId=89032&k=50ffeb332465158c4815c4c292d693630fac4e7d",
-        sizes: ["39", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-rondito-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Rondito Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 63.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44425073751&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-4089014-blanc-bleu-69d6644343256-1.webp&feedId=89032&k=8bc1c0cfef4516318ba7bd6712e9ff363b6db8c5",
-        sizes: ["39", "40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-rondo-indoor-in",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Rondo Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 82.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45130836990&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-4770024-yellow-and-purple-69d66496f01a6-1.webp&feedId=89032&k=47ef4470fbc9244ad5abe060171feb56cbca0f6b",
-        sizes: ["39", "40", "41", "42", "43", "44", "45", "46"],
       },
     ],
   },
@@ -26019,22 +24260,6 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-academy-indoor-in",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Phantom 6 Low Academy Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 89.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45137700104&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fq%2Fiq2398-900.webp&feedId=89032&k=7a3092514139b65659a334c6a7e23b0b43cfd3ac",
-        sizes: ["47"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-academy-turf-ag",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom 6 Low Academy Turf",
@@ -26239,22 +24464,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45562786020&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-p1ga269654-white-lava-orange-evening-primrose-6a79d296d7f4e-1.webp&feedId=89032&k=47bfda75ec1f2855e51ad094f9163ed4f85ac000",
         sizes: ["42", "42.5", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-calzado-de-futbol-sala-mizuno-morelia-pro",
-    brand: "Mizuno",
-    model: "Calzado de fútbol sala Mizuno Morelia Pro",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 72.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45371033142&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fq%2F1%2Fq1gb261335.webp&feedId=89032&k=f5e5796df04cc269d597f9c0badc466224b992c5",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -26610,6 +24819,9 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-11-pro-kylian-mbappe-fg-fg",
     brand: "Nike",
@@ -27331,38 +25543,6 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-sala-elite-in-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Neo Sala Elite IN",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 91.21,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45371033447&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fq%2F1%2Fq1ga261235.webp&feedId=89032&k=cef5f79c9721fa475ba14af4742fe886518db767",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-sala-pro-in",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Morelia Neo Sala Pro IN",
-    groundType: "",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 58.98,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45515792534&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1ga261335-white-arcadia-lava-orange-6a744f73bf396-1.webp&feedId=89032&k=eaefd80b9a9c0bf58626ec6c0c92b7abe3f6cb68",
-        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5", "46"],
-      },
-    ],
-  },
-  {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-japan-ag-ag",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Morelia Neo V Beta Japan AG",
@@ -27507,22 +25687,6 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-super-sala-competition-iii-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Super Sala Competition III IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45395602236&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fj%2Fkj6597.webp&feedId=89032&k=c1e6428dac71f646abd09719bc23e0abb23790c2",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-a-iii-japan-fg-ag-fg-ag",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno A III Japan FG/AG",
@@ -27567,22 +25731,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45395602472&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2F1%2Fp1gc269654.webp&feedId=89032&k=78d0c3ec48ff0475677ca751c0fb4bf0692c3985",
         sizes: ["39", "40"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-mrl-sala-tf-tf",
-    brand: "Mizuno",
-    model: "Botas de fútbol Mizuno Mrl Sala TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 46.69,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45819222983&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmizuno-q1gb261640-black-white-6a744f6243bb0-1.webp&feedId=89032&k=5bac33494349a2053812f3527374e934efe7aebb",
-        sizes: ["39", "40", "42.5", "43", "44", "44.5", "47"],
       },
     ],
   },
@@ -27698,9 +25846,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-maestro-academy-tf-tf",
     brand: "Nike",
@@ -27910,22 +26055,6 @@ const minedBootProductsChunk10: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-streetgato-prm-heritage-indoor-in",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Tiempo Streetgato PRM Heritage Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 70.15,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45526330700&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fv%2Fiv6555-500.webp&feedId=89032&k=fe28f78e9960f773baf635ebcde75cb303866ef9",
-        sizes: ["40", "41", "44", "45", "46", "47.5"],
-      },
-    ],
-  },
-  {
     id: "footstorees-jako-botas-de-futbol-jako-opura-team-fg-ag-in",
     brand: "Jako",
     model: "Botas de fútbol Jako Opura Team FG/AG",
@@ -28054,22 +26183,6 @@ const minedBootProductsChunk10: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-indoor-in",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.13,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45663296493&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109108-01-white-6a831d475945f-1.webp&feedId=89032&k=d99fe7d70bd299fe1b734d05db8982d1ffaa6688",
-        sizes: ["40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
     id: "footstorees-puma-botas-de-futbol-puma-king-softtouch-fg-ag-fg-ag",
     brand: "Puma",
     model: "Botas de fútbol Puma King Softtouch+ FG/AG",
@@ -28098,22 +26211,6 @@ const minedBootProductsChunk10: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45725058504&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109223-01-red-6a831a927b570-1.webp&feedId=89032&k=9a5746147744ad2e5846a8c06136b88ee1072fcf",
         sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-puma-botas-de-futbol-puma-truco-iv-indoor-in",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Truco IV Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 36.61,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45783113489&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-108845-08-black-6a8c6426b719b-1.webp&feedId=89032&k=145155a3a810b6b6abf93f0931974f43397fd60b",
-        sizes: ["42"],
       },
     ],
   },
@@ -28194,22 +26291,6 @@ const minedBootProductsChunk10: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45663296512&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109138-01-red-6a831d56c6b04-1.webp&feedId=89032&k=100b0a07b5cfeafc39c933e5fd68baa475f72579",
         sizes: ["40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-dribling-2602-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Dribling 2602 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 34.54,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878392&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-dris2602in-white-6a847339cb779-1.webp&feedId=89032&k=f6d848036701eca767cd9e8165b47088648d924f",
-        sizes: ["40.5", "44", "44.5"],
       },
     ],
   },
@@ -29174,22 +27255,6 @@ const minedBootProductsChunk10: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-mundial-2632-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Mundial 2632 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.97,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45940204261&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-munw2632in-white-6a91a9621345d-1.webp&feedId=89032&k=27a22ceabcdfa58b197cae88727ef105fedb24c1",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
     id: "footstorees-joma-botas-de-futbol-joma-mundial-2632-turf-fg-ag",
     brand: "Joma",
     model: "Botas de fútbol Joma Mundial 2632 Turf",
@@ -29218,22 +27283,6 @@ const minedBootProductsChunk10: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45860442990&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-skilw2576in-white-yellow-6a91abc15df3b-1.webp&feedId=89032&k=3e9b98f8ab6b113c33e2315f13565d1913eccb4f",
         sizes: ["40.5", "42.5", "43.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-skilful-2676-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Skilful 2676 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 103.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45940204270&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-skils2676in-white-6a91abc5711c2-1.webp&feedId=89032&k=f5a2e0ae1291e774c676981d0396bc93933f1620",
-        sizes: ["40"],
       },
     ],
   },
@@ -29394,22 +27443,6 @@ const minedBootProductsChunk10: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45860443069&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-tors2605tf-royal-6a91ac059278b-1.webp&feedId=89032&k=9fa4f16a92cb36ef46e0b20303668ff796b9a147",
         sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-ultimate-2632-indoor-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Top Flex Ultimate 2632 Indoor",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 81.68,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45860443071&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-tfus2632in-white-black-6a91ab0049b81-1.webp&feedId=89032&k=c403bac77c0a681bc25586c3b0723c360a0b4a04",
-        sizes: ["44", "44.5"],
       },
     ],
   },
@@ -29669,6 +27702,9 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "decathlonie-kipsta-football-boots-viralto-iii-3d-airmesh-fg-mango-fg",
     brand: "KIPSTA",
@@ -30452,8 +28488,7 @@ const minedBootProductsChunk10: BootProduct[] = [
         sizes: ["40", "41 1", "42", "43 1", "44", "45 1", "46"],
       },
     ],
-  },
-];
+  },];
 
 export const bootProducts: BootProduct[] = [
   ...legacyBootProducts,
