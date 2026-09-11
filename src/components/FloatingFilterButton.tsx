@@ -17,6 +17,7 @@ import {
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_LABEL, BOOT_TIER_ORDER } from "@/lib/bootTier";
+import { BOOT_GROUND_TYPE_INFO, BOOT_GROUND_TYPE_ORDER } from "@/lib/bootGroundType";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH } from "@/lib/colorClassify";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
@@ -58,6 +59,9 @@ export default function FloatingFilterButton() {
     bootTierFilter,
     toggleBootTierFilter,
     setBootTierFilter,
+    bootGroundTypeFilter,
+    toggleBootGroundTypeFilter,
+    setBootGroundTypeFilter,
     priceRange,
     setPriceRange,
     activeFilterCount,
@@ -303,6 +307,30 @@ export default function FloatingFilterButton() {
                       className="flex-shrink-0 whitespace-nowrap"
                     >
                       {BOOT_TIER_LABEL[tier]}
+                    </Chip>
+                  ))}
+                </ScrollArrowRow>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.bootGroundTypeLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip
+                    active={bootGroundTypeFilter.length === 0}
+                    onClick={() => setBootGroundTypeFilter([])}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.allCategories}
+                  </Chip>
+                  {BOOT_GROUND_TYPE_ORDER.map((code) => (
+                    <Chip
+                      key={code}
+                      active={bootGroundTypeFilter.includes(code)}
+                      onClick={() => toggleBootGroundTypeFilter(code)}
+                      className="flex-shrink-0 whitespace-nowrap"
+                      title={BOOT_GROUND_TYPE_INFO[code].description}
+                    >
+                      {BOOT_GROUND_TYPE_INFO[code].label}
                     </Chip>
                   ))}
                 </ScrollArrowRow>

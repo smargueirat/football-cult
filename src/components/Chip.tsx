@@ -4,12 +4,18 @@ export default function Chip({
   children,
   accent = "green",
   className = "",
+  title,
 }: {
   active: boolean;
   onClick: () => void;
   children: React.ReactNode;
   accent?: "green" | "amber";
   className?: string;
+  // Tooltip nativo del navegador (atributo title de <button>) -- se usa
+  // para el significado completo de cada tipo de tapón de bota (FG, AG,
+  // etc.), sin agregar ningún componente/lib nueva para algo que el
+  // navegador ya resuelve solo.
+  title?: string;
 }) {
   const activeClasses =
     accent === "green"
@@ -19,6 +25,7 @@ export default function Chip({
   return (
     <button
       onClick={onClick}
+      title={title}
       className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
         active
           ? activeClasses
