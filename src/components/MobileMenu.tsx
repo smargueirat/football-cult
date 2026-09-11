@@ -1,30 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import Link from "@/lib/i18n/LocaleLink";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { SECTION_PATHS } from "@/lib/sections";
+import { SECTION_PATHS, SECTION_PHOTOS } from "@/lib/sections";
+import { getDisplaySrc } from "@/lib/images";
 import Portal from "./Portal";
 
-// Emoji antes de cada palabra -- pedido explícito del usuario después de
-// que el menú mezclaba búsqueda, secciones del catálogo y páginas
-// sueltas (vistos recientemente, contacto) todo en una sola lista plana
-// sin ninguna diferencia visual entre ellas. Ahora las 6 secciones viven
-// agrupadas bajo un encabezado "Catálogo" (🛒), separadas de las demás
-// acciones, y cada una tiene su propio ícono.
+// Emoji antes de cada palabra en el resto del menú (búsqueda, vistos
+// recientemente, contacto) -- pedido explícito del usuario después de
+// que el menú mezclaba todo en una sola lista plana sin ninguna
+// diferencia visual. Las 6 secciones del "Catálogo" en cambio usan la
+// misma foto circular real que ya usa el dropdown de escritorio
+// (SectionsMenu) -- pedido explícito del usuario: los emoji ahí se
+// veían mal, quedan mejor como círculo con foto, igual que en web.
 export default function MobileMenu() {
   const { t } = useLanguage();
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
   const sectionLinks = [
-    { icon: "🌎", label: t.categoriesMenu.national, href: SECTION_PATHS[0] },
-    { icon: "🏆", label: t.categoriesMenu.clubs, href: SECTION_PATHS[1] },
-    { icon: "🕰️", label: t.categoriesMenu.retro, href: SECTION_PATHS[2] },
-    { icon: "👚", label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3] },
-    { icon: "🧒", label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4] },
-    { icon: "👟", label: t.botas.navLabel, href: SECTION_PATHS[5] },
+    { photo: SECTION_PHOTOS[0], label: t.categoriesMenu.national, href: SECTION_PATHS[0] },
+    { photo: SECTION_PHOTOS[1], label: t.categoriesMenu.clubs, href: SECTION_PATHS[1] },
+    { photo: SECTION_PHOTOS[2], label: t.categoriesMenu.retro, href: SECTION_PATHS[2] },
+    { photo: SECTION_PHOTOS[3], label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3] },
+    { photo: SECTION_PHOTOS[4], label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4] },
+    { photo: SECTION_PHOTOS[5], label: t.botas.navLabel, href: SECTION_PATHS[5] },
   ];
 
   function go(href: string) {
@@ -106,9 +109,12 @@ export default function MobileMenu() {
                       e.preventDefault();
                       go(link.href);
                     }}
-                    className="rounded-xl py-2.5 pl-6 pr-3 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                    className="flex items-center gap-3 rounded-xl py-2 pl-6 pr-3 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
                   >
-                    {link.icon} {link.label}
+                    <span className="relative h-8 w-8 shrink-0 overflow-hidden rounded-full border border-[#C9A24B]/40 bg-[#F3EEDD]">
+                      <Image src={getDisplaySrc(link.photo, 100)} alt="" fill unoptimized className="object-cover" />
+                    </span>
+                    {link.label}
                   </Link>
                 ))}
               </nav>
