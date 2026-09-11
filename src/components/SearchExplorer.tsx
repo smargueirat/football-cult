@@ -37,6 +37,7 @@ import {
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_LABEL, BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
+import { BOOT_GROUND_TYPE_INFO, BOOT_GROUND_TYPE_ORDER, bootMatchesGroundType } from "@/lib/bootGroundType";
 import ScrollArrowRow from "./ScrollArrowRow";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import {
@@ -119,6 +120,9 @@ export default function SearchExplorer({
     bootTierFilter,
     toggleBootTierFilter,
     setBootTierFilter,
+    bootGroundTypeFilter,
+    toggleBootGroundTypeFilter,
+    setBootGroundTypeFilter,
     sectionFilter,
     setSectionFilter,
     priceRange,
@@ -402,15 +406,37 @@ export default function SearchExplorer({
         const info = bootTierInfo(b.id);
         return info !== null && bootTierFilter.includes(info.tier);
       })();
+      const matchesGroundType =
+        bootGroundTypeFilter.length === 0 ||
+        bootGroundTypeFilter.some((code) =>
+          bootMatchesGroundType(b.groundType, code as (typeof BOOT_GROUND_TYPE_ORDER)[number])
+        );
       const matchesPriceRange = (() => {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
         const cheapest = Math.min(...b.offers.map((o) => o.price + o.shipping));
         const withinMax = priceRange[1] === PRICE_RANGE_MAX || cheapest <= priceRange[1];
         return cheapest >= priceRange[0] && withinMax;
       })();
-      return matchesQuery && matchesBrand && matchesBootSize && matchesColor && matchesTier && matchesPriceRange;
+      return (
+        matchesQuery &&
+        matchesBrand &&
+        matchesBootSize &&
+        matchesColor &&
+        matchesTier &&
+        matchesGroundType &&
+        matchesPriceRange
+      );
     });
-  }, [effectiveSection, deferredQuery, brandFilter, bootSizeFilter, colorFilter, bootTierFilter, priceRange]);
+  }, [
+    effectiveSection,
+    deferredQuery,
+    brandFilter,
+    bootSizeFilter,
+    colorFilter,
+    bootTierFilter,
+    bootGroundTypeFilter,
+    priceRange,
+  ]);
 
   type CatalogItem =
     | { kind: "jersey"; key: string; product: Product }
@@ -462,7 +488,7 @@ export default function SearchExplorer({
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, bootGroundTypeFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -939,6 +965,30 @@ export default function SearchExplorer({
                           className="flex-shrink-0 whitespace-nowrap"
                         >
                           {BOOT_TIER_LABEL[tier]}
+                        </Chip>
+                      ))}
+                    </ScrollArrowRow>
+                  </div>
+
+                  <div className="flex flex-col gap-1.5">
+                    <span className="text-xs text-[#675c44]">{t.search.bootGroundTypeLabel}:</span>
+                    <ScrollArrowRow className="-mx-5 gap-2 px-5">
+                      <Chip
+                        active={bootGroundTypeFilter.length === 0}
+                        onClick={() => setBootGroundTypeFilter([])}
+                        className="flex-shrink-0 whitespace-nowrap"
+                      >
+                        {t.search.allCategories}
+                      </Chip>
+                      {BOOT_GROUND_TYPE_ORDER.map((code) => (
+                        <Chip
+                          key={code}
+                          active={bootGroundTypeFilter.includes(code)}
+                          onClick={() => toggleBootGroundTypeFilter(code)}
+                          className="flex-shrink-0 whitespace-nowrap"
+                          title={BOOT_GROUND_TYPE_INFO[code].description}
+                        >
+                          {BOOT_GROUND_TYPE_INFO[code].label}
                         </Chip>
                       ))}
                     </ScrollArrowRow>

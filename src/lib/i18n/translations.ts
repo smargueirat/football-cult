@@ -112,6 +112,7 @@ export interface Translations {
     sizeLabel: string;
     bootSizeLabel: string;
     bootTierLabel: string;
+    bootGroundTypeLabel: string;
     colorLabel: string;
     colorBlack: string;
     colorWhite: string;
@@ -523,6 +524,7 @@ export const translations: Record<Locale, Translations> = {
       sizeLabel: "Talle",
       bootSizeLabel: "Talle (EU)",
       bootTierLabel: "Nivel / Gama",
+      bootGroundTypeLabel: "Tipo de Tapón",
       colorLabel: "Color",
       colorBlack: "Negro",
       colorWhite: "Blanco",
@@ -940,6 +942,7 @@ export const translations: Record<Locale, Translations> = {
       sizeLabel: "Tamanho",
       bootSizeLabel: "Tamanho (EU)",
       bootTierLabel: "Nível / Gama",
+      bootGroundTypeLabel: "Tipo de Trava",
       colorLabel: "Cor",
       colorBlack: "Preto",
       colorWhite: "Branco",
@@ -1357,6 +1360,7 @@ export const translations: Record<Locale, Translations> = {
       sizeLabel: "Size",
       bootSizeLabel: "Size (EU)",
       bootTierLabel: "Tier / Range",
+      bootGroundTypeLabel: "Ground Type",
       colorLabel: "Color",
       colorBlack: "Black",
       colorWhite: "White",
@@ -1774,6 +1778,7 @@ export const translations: Record<Locale, Translations> = {
       sizeLabel: "Taille",
       bootSizeLabel: "Pointure (EU)",
       bootTierLabel: "Niveau / Gamme",
+      bootGroundTypeLabel: "Type de Crampons",
       colorLabel: "Couleur",
       colorBlack: "Noir",
       colorWhite: "Blanc",
@@ -2191,6 +2196,7 @@ export const translations: Record<Locale, Translations> = {
       sizeLabel: "Taglia",
       bootSizeLabel: "Taglia (EU)",
       bootTierLabel: "Livello / Gamma",
+      bootGroundTypeLabel: "Tipo di Tacchetti",
       colorLabel: "Colore",
       colorBlack: "Nero",
       colorWhite: "Bianco",

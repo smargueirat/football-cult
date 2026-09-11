@@ -5,7 +5,7 @@
 // para comparación de precio real entre 2 tiendas. Tallas convertidas de
 // UK/US reales a EU con tabla estándar de conversión de calzado.
 //
-// +1669 modelos (2026-09-11, pedido explícito: "agregar todas las botas
+// +1620 modelos (2026-09-11, pedido explícito: "agregar todas las botas
 // que tengamos en todos los catálogos"): minados de los feeds Awin ya
 // aprobados de adidas ES, Sport is Good ES, Foot-Store ES y Decathlon
 // Irlanda (/tmp/feeds/*.csv del scan diario). Cada uno es UNA sola
@@ -19,14 +19,17 @@
 // Sport is Good/Foot-Store usan su taxonomía real "> Adulte" en
 // merchant_category; Decathlon IE usa su categoría real "Adult's
 // Football Boots ...". Exclusión por texto en el nombre real del
-// producto (segunda pasada, 2026-09-11 -- la primera se había quedado
+// producto, dos pasadas (2026-09-11, la primera se había quedado
 // corta): "rugby" y "Kakari" (adidas mal-etiqueta botas de rugby bajo
 // "Botas de Fútbol"), "fútbol americano"/"american football" (idem, mal
-// categorizado por la propia tienda), y "sala"/"futsal"/"indoor" (calzado
+// categorizado por la propia tienda), "sala"/"futsal"/"indoor" (calzado
 // de fútbol sala o calle, no bota de tacos de fútbol al aire libre) --
-// se sacaron 123 productos que habían quedado adentro por error en la
-// primera pasada. Precio/talles/URL de afiliado/imagen: 100% reales del
-// feed, sin inventar nada -- cuando una tienda no da costo de envío por
+// 123 productos afuera en la primera pasada. Segunda pasada (al armar
+// el filtro de tipo de tapón): "IC" como código de suela al final del
+// nombre (Indoor Court, ej. "Nike Street Gato IC") es la misma categoría
+// que "indoor" pero como abreviatura, se había colado igual -- 49 más
+// afuera. Precio/talles/URL de afiliado/imagen: 100% reales del feed,
+// sin inventar nada -- cuando una tienda no da costo de envío por
 // producto (Decathlon IE), se dejó en 0 con el motivo documentado en el
 // código en vez de inventar un número.
 export interface BootOffer {
@@ -1839,10 +1842,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-predator-pro-multisuperficie",
+    id: "adidases-adidas-bota-de-futbol-predator-pro-multisuperficie-mg",
     brand: "Adidas",
     model: "Bota de fútbol Predator Pro multisuperficie",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "AdidasES",
@@ -1983,10 +1986,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-predator-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-predator-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol Predator Club moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -1999,10 +2002,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-predator-club-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-predator-club-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol Predator Club moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -2047,10 +2050,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-predator-elite-fold-over-tongue-firm-ground-football-boots",
+    id: "adidases-adidas-predator-elite-fold-over-tongue-firm-ground-football-boots-fg",
     brand: "Adidas",
     model: "Predator Elite Fold-Over Tongue Firm Ground Football Boots",
-    groundType: "",
+    groundType: "FG",
     offers: [
       {
         store: "AdidasES",
@@ -2319,10 +2322,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-botas-de-futbol-predator-league-para-moqueta-in",
+    id: "adidases-adidas-botas-de-futbol-predator-league-para-moqueta-tf",
     brand: "Adidas",
     model: "Botas de fútbol Predator League para moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -2495,10 +2498,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-copa-pure-iv-pro-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-copa-pure-iv-pro-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol Copa Pure IV Pro moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3199,10 +3202,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-f50-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-f50-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol F50 CLUB moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3247,10 +3250,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-kaiser-team-2-para-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-kaiser-team-2-para-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol Kaiser Team 2 para moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3263,10 +3266,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-f50-hyperfast-league-para-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-f50-hyperfast-league-para-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol F50 HYPERFAST LEAGUE para moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3279,10 +3282,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-f50-hyperfast-league-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-f50-hyperfast-league-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol F50 Hyperfast League moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3295,10 +3298,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-predator-pro-moqueta-in",
+    id: "adidases-adidas-bota-predator-pro-moqueta-tf",
     brand: "Adidas",
     model: "Bota Predator Pro moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3311,10 +3314,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-predator-pro-multisuperficie",
+    id: "adidases-adidas-bota-predator-pro-multisuperficie-mg",
     brand: "Adidas",
     model: "Bota Predator Pro multisuperficie",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "AdidasES",
@@ -3327,10 +3330,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol con lengüeta plegable PREDATOR CLUB moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3343,10 +3346,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-predator-club-fold-over-tongue-para-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-predator-club-fold-over-tongue-para-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol Predator Club Fold-Over Tongue para moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3359,10 +3362,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-f50-hyperfast-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-f50-hyperfast-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol F50 Hyperfast Club moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3375,10 +3378,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-de-cana-media-f50-sparkfusion-league-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-de-cana-media-f50-sparkfusion-league-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol de caña media F50 SPARKFUSION LEAGUE moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3391,10 +3394,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-f50-sparkfusion-league-moqueta-in",
+    id: "adidases-adidas-zapatilla-f50-sparkfusion-league-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla F50 Sparkfusion League moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3407,10 +3410,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-predator-league-multisuperficie",
+    id: "adidases-adidas-bota-de-futbol-predator-league-multisuperficie-mg",
     brand: "Adidas",
     model: "Bota de fútbol Predator League multisuperficie",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "AdidasES",
@@ -3503,10 +3506,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-predator-pro-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-predator-pro-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol Predator Pro moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3535,10 +3538,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-predator-pro-con-lengueta-plegable-para-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-predator-pro-con-lengueta-plegable-para-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol Predator Pro con lengüeta plegable para moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3599,10 +3602,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-predator-league-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-predator-league-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol Predator League moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3615,10 +3618,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-f50-messi-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-f50-messi-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol F50 MESSI CLUB moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3647,10 +3650,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-predator-elite-laceless-soft-ground-boots",
+    id: "adidases-adidas-predator-elite-laceless-soft-ground-boots-sg",
     brand: "Adidas",
     model: "Predator Elite Laceless Soft Ground Boots",
-    groundType: "",
+    groundType: "SG",
     offers: [
       {
         store: "AdidasES",
@@ -3663,10 +3666,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-predator-elite-soft-ground",
+    id: "adidases-adidas-bota-predator-elite-soft-ground-sg",
     brand: "Adidas",
     model: "Bota Predator Elite Soft Ground",
-    groundType: "",
+    groundType: "SG",
     offers: [
       {
         store: "AdidasES",
@@ -3679,10 +3682,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-f50-league-multisuperficie",
+    id: "adidases-adidas-bota-f50-league-multisuperficie-mg",
     brand: "Adidas",
     model: "Bota F50 League multisuperficie",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "AdidasES",
@@ -3695,10 +3698,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-f50-pro-moqueta-in",
+    id: "adidases-adidas-bota-f50-pro-moqueta-tf",
     brand: "Adidas",
     model: "Bota F50 Pro moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3775,10 +3778,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-copa-pure-3-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-copa-pure-3-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla Copa Pure 3 Club moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3871,10 +3874,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-pro-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-pro-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol con lengüeta plegable PREDATOR PRO moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3903,10 +3906,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-sin-cordones-f50-hyperfast-league-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-sin-cordones-f50-hyperfast-league-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol sin cordones F50 Hyperfast League moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3935,10 +3938,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-de-media-cana-f50-sparkfusion-league-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-de-media-cana-f50-sparkfusion-league-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol de media caña F50 SPARKFUSION LEAGUE moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3951,10 +3954,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-copa-pure-iv-club-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-copa-pure-iv-club-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol COPA PURE IV CLUB moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3967,10 +3970,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-sin-cordones-f50-hyperfast-pro-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-sin-cordones-f50-hyperfast-pro-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol sin cordones F50 Hyperfast Pro moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3983,10 +3986,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-sin-cordones-f50-pro-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-sin-cordones-f50-pro-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol sin cordones F50 PRO moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -3999,10 +4002,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-predator-pro-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-predator-pro-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol Predator Pro moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -4079,10 +4082,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-con-lengueta-plegable-predator-league-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-con-lengueta-plegable-predator-league-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol con lengüeta plegable Predator League moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -4143,10 +4146,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-league-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-con-lengueta-plegable-predator-league-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol con lengüeta plegable PREDATOR LEAGUE moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -4175,10 +4178,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-copa-pure-iv-league-para-moqueta-in",
+    id: "adidases-adidas-bota-de-futbol-copa-pure-iv-league-para-moqueta-tf",
     brand: "Adidas",
     model: "Bota de fútbol Copa Pure IV League para moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -4271,10 +4274,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-copa-gloro-2-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-copa-gloro-2-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol Copa Gloro 2 moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -4351,10 +4354,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-zapatilla-de-futbol-copa-pure-iv-league-moqueta-in",
+    id: "adidases-adidas-zapatilla-de-futbol-copa-pure-iv-league-moqueta-tf",
     brand: "Adidas",
     model: "Zapatilla de fútbol COPA PURE IV LEAGUE moqueta",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "AdidasES",
@@ -4623,10 +4626,10 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-icon-fg-in",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-icon-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Icon FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -5522,10 +5525,10 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-future-8-match-tt-in",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-future-8-match-tt",
     brand: "Puma",
     model: "Botas de fútbol Puma Future 8 Match TT",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "SportIsGoodES",
@@ -5714,10 +5717,10 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-5-ultimate-mxsg",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-5-ultimate-mxsg-mg",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 5 Ultimate MxSG",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -5938,10 +5941,10 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-5-play-it-in",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-5-play-it",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 5 Play IT",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "SportIsGoodES",
@@ -6418,10 +6421,10 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-future-8-ultimate-sg-in",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-future-8-ultimate-sg-sg",
     brand: "Puma",
     model: "Botas de fútbol Puma Future 8 Ultimate SG",
-    groundType: "IN",
+    groundType: "SG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -6450,10 +6453,10 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-pressing-iv-in",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-pressing-iv",
     brand: "Puma",
     model: "Botas de fútbol Puma Pressing IV",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "SportIsGoodES",
@@ -6994,22 +6997,6 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-kappa-botas-de-futbol-kappa-kombat-player-base-ic-ic",
-    brand: "Kappa",
-    model: "Botas de fútbol Kappa Kombat Player Base IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 46.43,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44779797573&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_371r44w-a00_black-green-lodenfrost_1.webp&feedId=89044&k=664097d200bb12579223adf1f2593e50a2e26b41",
-        sizes: ["41"],
-      },
-    ],
-  },
-  {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-fg-ag-fg-ag",
     brand: "Puma",
     model: "Botas de fútbol Puma Future FG/AG",
@@ -7106,10 +7093,10 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-king-ultimate-in",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-king-ultimate",
     brand: "Puma",
     model: "Botas de fútbol Puma King Ultimate",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "SportIsGoodES",
@@ -7521,14 +7508,11 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk3: BootProduct[] = [
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-ll",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-ll-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator League LL",
-    groundType: "",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -7540,6 +7524,9 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-ll-fg-fg",
     brand: "Adidas",
@@ -7701,10 +7688,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-6-match-in",
+    id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-6-match",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 6 Match +",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "SportIsGoodES",
@@ -7797,38 +7784,6 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-league-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 League IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 62.99,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45185496696&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jr8971_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=2ac5da242d9abaeca6458b70ca11e4b2d36aa2d2",
-        sizes: ["43 1/3", "47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-pro-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 Pro IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 90.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45084665111&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jr8947_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=8def8bf2f0cd92c8bd252c729d2e44ee64fa505f",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-pro-tf-tf",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Pro TF",
@@ -7845,22 +7800,6 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-club-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Club IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 42.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45180202998&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_js0357_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=7252ac3bcab1c24bf4bf311460ea2fc64de69c9d",
-        sizes: ["45 1/3"],
-      },
-    ],
-  },
-  {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-ag-ag",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator League AG",
@@ -7873,38 +7812,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45078372648&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr7902_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=9433396e1644119e5263862186278ab47dcd79ee",
         sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-league-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator League IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 57.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45082978236&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jr4738-lucred-cblack-ftwwht-6a2aea0ac7427-1.webp&feedId=89044&k=94490ffcc30ac678133d32ad6f22a5b1aa1d0715",
-        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-pro-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Pro IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 105.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45084665132&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr7871_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89044&k=47ccb1ff4979dea414ebe7b9f6e8aeb46a9732f6",
-        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
     ],
   },
@@ -7989,10 +7896,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-club-fg-mg-in",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-club-fg-mg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Club FG/MG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -8341,10 +8248,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-lea-fg-ag-fg-ag",
+    id: "sportisgoodes-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-lea-fg-ag-fg",
     brand: "Adidas",
     model: "Botas de fútbol para mujer adidas F50 Sparkfusion Lea FG/AG",
-    groundType: "FG/AG",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -8501,10 +8408,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-iv-league-ll-fg-in",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-iv-league-ll-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Pure IV League LL FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -8517,10 +8424,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-hyperfast-club-fg-mg-fg",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-hyperfast-club-fg-mg-mg",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Hyperfast Club FG/MG",
-    groundType: "FG",
+    groundType: "MG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -8549,10 +8456,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-hyperfast-club-tf-in",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-hyperfast-club-tf-tf",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Hyperfast Club TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "SportIsGoodES",
@@ -8869,10 +8776,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-ft-l-tech-fg-in",
+    id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-ft-l-tech-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Elite FT L-Tech FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -8917,10 +8824,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-alpha-iii-elite-in",
+    id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-alpha-iii-elite",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Alpha III Elite",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "SportIsGoodES",
@@ -9141,10 +9048,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-alpha-iii-pro-fg-in",
+    id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-alpha-iii-pro-fg-fg",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Alpha III Pro FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "SportIsGoodES",
@@ -9381,10 +9288,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-sense-4-in-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-copa-sense-4-in",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Sense.4 IN",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -9765,10 +9672,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-edge-4-ms",
+    id: "footstorees-adidas-botas-de-futbol-adidas-predator-edge-4-ms-mg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Edge.4 MS",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -10181,22 +10088,6 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-gloro-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Copa Gloro IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 99.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45597123461&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ie1543_1_footwear_photography_side_lateral_center_view_white_xo.webp&feedId=89032&k=8c36e49b67ecea455a4d1c1e87c42e279d19c5bc",
-        sizes: ["44", "45 1/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-accuracy-3-ag-ag",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Accuracy.3 AG",
@@ -10261,10 +10152,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-academy-tf-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-academy-tf-tf",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom GX Academy TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -10277,10 +10168,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-pro-fg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-pro-fg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom GX Pro FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -10293,10 +10184,10 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-ag-ag",
+    id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-ag-mg",
     brand: "Nike",
     model: "Botas de fútbol Nike Tiempo Legend 10 Academy AG",
-    groundType: "AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -10404,9 +10295,6 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-king-pro-sg-sg",
     brand: "Puma",
@@ -10472,10 +10360,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-15-academy-mg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-15-academy-mg-mg",
     brand: "Nike",
     model: "Botas de fútbol Nike Mercurial Vapor 15 Academy MG",
-    groundType: "IN",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -10488,10 +10376,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-academy-mg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-academy-mg-mg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom GX Academy MG",
-    groundType: "IN",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -10519,6 +10407,9 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-club-turf",
     brand: "Nike",
@@ -10552,10 +10443,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-zoom-mercurial-superfly-9-academy-kylian-mbappe-tf-in",
+    id: "footstorees-nike-botas-de-futbol-nike-zoom-mercurial-superfly-9-academy-kylian-mbappe-tf-tf",
     brand: "Nike",
     model: "Botas de fútbol Nike Zoom Mercurial Superfly 9 Academy Kylian Mbappe TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -10824,22 +10715,6 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2309-ic-in",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Top Flex Rebound 2309 IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 79.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45923722464&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_torw2309in_0.webp&feedId=89032&k=c02117cbf6f6792308f171687ba6e54e4b0ed18e",
-        sizes: ["42"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-ii-1-ag-ag",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa II.1 AG",
@@ -11000,22 +10875,6 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-street-gato-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Street Gato IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 79.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43829758048&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dc8466-700-phsrh000_s23.webp&feedId=89032&k=fc01814c6570d618fa1a6d055f9c682052d0218c",
-        sizes: ["40", "40.5", "42.5", "45.5"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-zoom-vapor-15-acad-mds-fg-mg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Zoom Vapor 15 Acad MDS FG/MG",
@@ -11048,10 +10907,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-icon-fg-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-copa-icon-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Icon FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -11880,10 +11739,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-luna-2-club-mg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-luna-2-club-mg-mg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom Luna 2 Club MG",
-    groundType: "IN",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -11944,10 +11803,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-zoom-mercurial-superfly-9-elite-ag-pro-in",
+    id: "footstorees-nike-botas-de-futbol-nike-zoom-mercurial-superfly-9-elite-ag-pro-ag",
     brand: "Nike",
     model: "Botas de fútbol Nike Zoom Mercurial Superfly 9 Elite AG-Pro",
-    groundType: "IN",
+    groundType: "AG",
     offers: [
       {
         store: "FootStoreES",
@@ -12040,10 +11899,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-the-premier-iii-tf-in",
+    id: "footstorees-nike-botas-de-futbol-nike-the-premier-iii-tf-tf",
     brand: "Nike",
     model: "Botas de fútbol Nike The Premier III TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -12072,10 +11931,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-24-league-low-mg-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-predator-24-league-low-mg-mg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator 24 League Low MG",
-    groundType: "IN",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -12104,10 +11963,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-fm-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-fm",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator League FM",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -12136,10 +11995,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-zapatillas-de-futbol-sin-cordones-adidas-predator-league-tf-in",
+    id: "footstorees-adidas-zapatillas-de-futbol-sin-cordones-adidas-predator-league-tf-tf",
     brand: "Adidas",
     model: "Zapatillas de fútbol sin cordones adidas Predator League TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -12536,22 +12395,6 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 League IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 62.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45371015350&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_if1332_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=0cffc3e85fafc7b5bb0c065d779380f729bd0c81",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "47 1/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-ag-ag",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator League AG",
@@ -12584,10 +12427,10 @@ const minedBootProductsChunk4: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-future-match-fg-ag-fg-ag",
+    id: "footstorees-puma-botas-de-futbol-puma-future-match-fg-ag-fg",
     brand: "Puma",
     model: "Botas de fútbol Puma Future Match FG/AG",
-    groundType: "FG/AG",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -13287,9 +13130,6 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-fg-mg-ag",
     brand: "Adidas",
@@ -13450,6 +13290,9 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-ultra-5-match-mxsg",
     brand: "Puma",
@@ -13595,26 +13438,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-2-club-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Phantom GX 2 Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42529683765&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fj2568-400_blue-fury-white_8.webp&feedId=89032&k=92af5d78a11e05aea9b6749c634ea02daba9bcf9",
-        sizes: ["44.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-luna-2-club-fg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-luna-2-club-fg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom Luna 2 Club FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -13751,22 +13578,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44406808458&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_id4050_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=96b03fb6ea0e8169dfdee095b4f7b1732526ced7",
         sizes: ["39 1/3", "40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-mundial-goal-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Mundial Goal IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 119.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=39971520756&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_id4047_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=5990ba56ad693d6e4ed65b6ad80819e369277e74",
-        sizes: ["40", "40 2/3", "46", "46 2/3", "48 2/3"],
       },
     ],
   },
@@ -14315,10 +14126,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-pro-md-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-pro-md",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Morelia Neo IV Pro MD",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -14347,10 +14158,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-future-8-match-tt-in",
+    id: "footstorees-puma-botas-de-futbol-puma-future-8-match-tt",
     brand: "Puma",
     model: "Botas de fútbol Puma Future 8 Match TT",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -14571,22 +14382,6 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Tiempo Legend 10 Academy IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42952286124&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-dv4341-701-volt-black-1.webp&feedId=89032&k=a78a9574739e25c9e3da328f8e74d39c395fd31e",
-        sizes: ["38.5", "40", "41", "45", "45.5", "46", "47"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-tf-tf",
     brand: "Nike",
     model: "Botas de fútbol Nike Tiempo Legend 10 Academy TF",
@@ -14715,10 +14510,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-5-ultimate-mxsg",
+    id: "footstorees-puma-botas-de-futbol-puma-ultra-5-ultimate-mxsg-mg",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 5 Ultimate MxSG",
-    groundType: "",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -15051,10 +14846,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-freestyle-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-predator-freestyle",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Freestyle",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -15115,10 +14910,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-pressing-iv-in",
+    id: "footstorees-puma-botas-de-futbol-puma-pressing-iv",
     brand: "Puma",
     model: "Botas de fútbol Puma Pressing IV",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -15131,10 +14926,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-club-fg-mg-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-f50-club-fg-mg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Club FG/MG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -15851,10 +15646,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-liga-5-in-in",
+    id: "footstorees-joma-botas-de-futbol-joma-liga-5-in",
     brand: "Joma",
     model: "Botas de fútbol Joma Liga 5 IN",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -15995,10 +15790,10 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-munich-botas-de-futbol-munich-one-60-in",
+    id: "footstorees-munich-botas-de-futbol-munich-one-60",
     brand: "Munich",
     model: "Botas de fútbol Munich One 60",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -16170,9 +15965,6 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-zoom-superfly-10-academy-km-fg-mg-fg",
     brand: "Nike",
@@ -16381,6 +16173,9 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-iii-league-2g-3g-ag-ag",
     brand: "Adidas",
@@ -16638,10 +16433,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-fg-ag-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-fg-ag-fg-ag",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 League FG/AG",
-    groundType: "IN",
+    groundType: "FG/AG",
     offers: [
       {
         store: "FootStoreES",
@@ -16654,10 +16449,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-con-lengueta-plegable-para-terrenos-blandos-multi-superficie-adidas-ft-fg-ag-in",
+    id: "footstorees-adidas-botas-de-futbol-con-lengueta-plegable-para-terrenos-blandos-multi-superficie-adidas-ft-fg-ag-fg-ag",
     brand: "Adidas",
     model: "Botas de fútbol con lengüeta plegable para terrenos blandos / Multi-superficie. adidas FT FG/AG",
-    groundType: "IN",
+    groundType: "FG/AG",
     offers: [
       {
         store: "FootStoreES",
@@ -16798,10 +16593,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-future-8-ultimate-sg-in",
+    id: "footstorees-puma-botas-de-futbol-puma-future-8-ultimate-sg-sg",
     brand: "Puma",
     model: "Botas de fútbol Puma Future 8 Ultimate SG",
-    groundType: "IN",
+    groundType: "SG",
     offers: [
       {
         store: "FootStoreES",
@@ -16814,10 +16609,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-king-top-fg-ag-fg-ag",
+    id: "footstorees-puma-botas-de-futbol-puma-king-top-fg-ag-fg",
     brand: "Puma",
     model: "Botas de fútbol Puma King Top FG/AG",
-    groundType: "FG/AG",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -17198,10 +16993,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-ii-club-fg-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-ii-club-fg-fg",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Morelia II Club FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -17726,10 +17521,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-elite-pro-nike-sg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-elite-pro-nike-sg-sg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom 6 Elite Pro Nike SG",
-    groundType: "IN",
+    groundType: "SG",
     offers: [
       {
         store: "FootStoreES",
@@ -17882,22 +17677,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45145692579&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj7332-600-phsrh000.webp&feedId=89032&k=199667bd0233194a57fb73e0946183d6fa90ab10",
         sizes: ["44", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-messi-club-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 Messi Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 55.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45220450064&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp7452_1_footwear_photography_side_lateral_center_view_white-nw091625.webp&feedId=89032&k=4a77d5c985915b62805a5ba7921871242c386da9",
-        sizes: ["37 1/3"],
       },
     ],
   },
@@ -18430,54 +18209,6 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-10-academy-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Mercurial Superfly 10 Academy IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 70.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45171888408&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fq8332-600_magic-flamingo-black-total-crimson_1.webp&feedId=89032&k=9fbb68d935417445a86ca1530549741c1d378895",
-        sizes: ["42.5", "43", "44", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-10-club-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Mercurial Superfly 10 Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.23,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43444405661&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fq8315-600_magic-flamingo-black-total-crimson_1.webp&feedId=89032&k=9bd14bd812c626b544d974d0f40c608d24a39366",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-academy-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Mercurial Vapor 16 Academy IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 62.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45171888416&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fq8434-600_magic-flamingo-black-total-crimson_1.webp&feedId=89032&k=8d41e281c5eec4e478fb35f5b542208e95d19824",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-academy-sg-sg",
     brand: "Nike",
     model: "Botas de fútbol Nike Mercurial Vapor 16 Academy SG",
@@ -18490,22 +18221,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42767385079&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fq8425-300-phsrh000-nw110625.webp&feedId=89032&k=2ccbe0cf82be55b38bc18973c416dae7d61020d8",
         sizes: ["40", "41", "42", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-club-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Mercurial Vapor 16 Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 46.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44822448941&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fq8438-600_magic-flamingo-black-total-crimson_1.webp&feedId=89032&k=d2d82ce66c2529cdccaa54be2bcf8962854c1cc6",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -18554,22 +18269,6 @@ const minedBootProductsChunk6: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42530077706&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq2315-400_royal-tint-bright-crimson_12.webp&feedId=89032&k=9b03048e8e90faeb7fb938ba09a5e3057a0ef4a2",
         sizes: ["39"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-academy-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Phantom 6 Low Academy IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 65.48,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43810861051&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hq2319-446-racer-blue-pink-blast-white-1.webp&feedId=89032&k=e347cd6eeb511bc5deb62454226700cf33e5a9ca",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -18990,10 +18689,10 @@ const minedBootProductsChunk6: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-3-pro-turf-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-3-pro-turf",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Pure 3 Pro Turf",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -19053,9 +18752,6 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-fold-over-ag",
     brand: "Adidas",
@@ -19360,6 +19056,9 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-10-elite-kylian-mbappe-fg-fg",
     brand: "Nike",
@@ -19521,22 +19220,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-zoom-vapor-16-academy-km-ic-in",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Zoom Vapor 16 Academy KM IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 63.9,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43043799948&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hv4222-801-phsrh000-nw110625.webp&feedId=89032&k=ce685e0792f8a6ac56ec465e83913a954d421c83",
-        sizes: ["38"],
-      },
-    ],
-  },
-  {
     id: "footstorees-kappa-botas-de-futbol-kappa-kombat-player-base-fg-fg",
     brand: "Kappa",
     model: "Botas de fútbol Kappa Kombat Player Base FG",
@@ -19553,26 +19236,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-kappa-botas-de-futbol-kappa-kombat-player-base-ic-ic",
-    brand: "Kappa",
-    model: "Botas de fútbol Kappa Kombat Player Base IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.78,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43654222581&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_371r44w-a00_black-green-lodenfrost_1.webp&feedId=89032&k=664097d200bb12579223adf1f2593e50a2e26b41",
-        sizes: ["41", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-kappa-botas-de-futbol-kappa-kombat-player-base-sg-in",
+    id: "footstorees-kappa-botas-de-futbol-kappa-kombat-player-base-sg-sg",
     brand: "Kappa",
     model: "Botas de fútbol Kappa Kombat Player Base SG",
-    groundType: "IN",
+    groundType: "SG",
     offers: [
       {
         store: "FootStoreES",
@@ -19585,10 +19252,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-kappa-botas-de-futbol-kappa-kombat-player-base-tg-in",
+    id: "footstorees-kappa-botas-de-futbol-kappa-kombat-player-base-tg",
     brand: "Kappa",
     model: "Botas de fútbol Kappa Kombat Player Base TG",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -19709,22 +19376,6 @@ const minedBootProductsChunk7: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44761064125&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fl%2Fo%2Flotto-2600110t-5011-bleu-1.webp&feedId=89032&k=65825849b9e87bc034157d70b111ba169f000198",
         sizes: ["36", "37", "38", "39", "40"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-munich-botas-de-futbol-munich-gresca-2-0-ic-ic",
-    brand: "Munich",
-    model: "Botas de fútbol Munich Gresca 2.0 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 92.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=42801433431&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fu%2Fmunich-3003002-blanc-1.webp&feedId=89032&k=147432163235857120ffa6e90cda4c64f33d4997",
-        sizes: ["39", "40", "41", "43", "44", "45", "46"],
       },
     ],
   },
@@ -19937,10 +19588,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-future-match-tt-in",
+    id: "footstorees-puma-botas-de-futbol-puma-future-match-tt",
     brand: "Puma",
     model: "Botas de fútbol Puma Future Match TT",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -20097,10 +19748,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-king-ultimate-in",
+    id: "footstorees-puma-botas-de-futbol-puma-king-ultimate",
     brand: "Puma",
     model: "Botas de fútbol Puma King Ultimate",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -20177,10 +19828,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-play-it-in",
+    id: "footstorees-puma-botas-de-futbol-puma-ultra-play-it",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra Play IT",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -20193,10 +19844,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-play-tt-in",
+    id: "footstorees-puma-botas-de-futbol-puma-ultra-play-tt",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra Play TT",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -20209,10 +19860,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-ultimate-in",
+    id: "footstorees-puma-botas-de-futbol-puma-ultra-ultimate",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra Ultimate",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -20577,10 +20228,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-ll",
+    id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-ll-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator League LL",
-    groundType: "",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -20817,10 +20468,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-6-match-in",
+    id: "footstorees-puma-botas-de-futbol-puma-ultra-6-match",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 6 Match +",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -21057,22 +20708,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-club-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 60.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43770972076&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jr9049_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=16941fafe2dbebcdfa04cc1782922ca72200e455",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-club-mid-cut-fg-mg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Club Mid Cut FG/MG",
@@ -21137,22 +20772,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-pro-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas F50 Pro IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 90.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44565979828&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jr8947_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=8def8bf2f0cd92c8bd252c729d2e44ee64fa505f",
-        sizes: ["39 1/3", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-pro-tf-tf",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Pro TF",
@@ -21165,54 +20784,6 @@ const minedBootProductsChunk7: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43705565064&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jr8943_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=576f8692c4bd0ea746fa43a31b865ea9c60299a8",
         sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Club IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 42.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43705565081&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_js0357_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=7252ac3bcab1c24bf4bf311460ea2fc64de69c9d",
-        sizes: ["42", "43 1/3", "44", "44 2/3", "45 1/3", "46", "48"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-ic-in",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator League IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 57.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43839302754&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jr4738-lucred-cblack-ftwwht-6a2aea0ac7427-1.webp&feedId=89032&k=94490ffcc30ac678133d32ad6f22a5b1aa1d0715",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Predator Pro IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 105.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43755752790&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jr7871_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=47ccb1ff4979dea414ebe7b9f6e8aeb46a9732f6",
-        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
     ],
   },
@@ -21233,10 +20804,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-elite-fg-ag-fg-ag",
+    id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-elite-fg-ag-fg",
     brand: "Adidas",
     model: "Botas de fútbol para mujer adidas F50 Sparkfusion Elite FG/AG",
-    groundType: "FG/AG",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -21265,10 +20836,10 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-elite-mid-cut-fg-ag-fg-ag",
+    id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-elite-mid-cut-fg-ag-fg",
     brand: "Adidas",
     model: "Botas de fútbol para mujer adidas F50 Sparkfusion Elite Mid Cut FG/AG",
-    groundType: "FG/AG",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -21713,54 +21284,6 @@ const minedBootProductsChunk7: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-reactgato-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Tiempo Reactgato IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 95.99,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45443801463&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_01_nike_hq3159-170_00.webp&feedId=89032&k=953703308adc11d8aa67ad4145369c8a1d2825a6",
-        sizes: ["36.5", "40", "42", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-streetgato-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Tiempo Streetgato IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 60.28,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=43881607970&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq7017-046_01.webp&feedId=89032&k=041c904540d26fd93589c463507b09ccf9598512",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-streetgato-prm-ic-in",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Tiempo Streetgato PRM IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 68.21,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44002233435&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hv3493-444-deep-royal-blue-polar-blue-crystal-6.webp&feedId=89032&k=b72bb237c46e14fa66caf7526b1e858b002ea848",
-        sizes: ["41", "42", "42.5", "43", "44", "45"],
-      },
-    ],
-  },
-  {
     id: "footstorees-nike-botas-de-futbol-nike-zoom-superfly-10-elite-lv8-fg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Zoom Superfly 10 Elite LV8 FG",
@@ -21837,22 +21360,6 @@ const minedBootProductsChunk7: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44256671508&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_nike_if4101-088_00.webp&feedId=89032&k=92cb845839ffa19d6ec1bc8d3e6c2f17e2575231",
         sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-botas-de-futbol-adidas-samba-licensed-ic-ic",
-    brand: "Adidas",
-    model: "Botas de fútbol adidas Samba Licensed IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 120.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44223823132&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_01_adidas_jq4051_1_footwear_photography_side_lateral_center_view_white.webp&feedId=89032&k=86ee34fc34a477697029548a4f3d528b8e82a7ad",
-        sizes: ["36 2/3"],
       },
     ],
   },
@@ -21936,9 +21443,6 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-ii-club-sg-sg",
     brand: "Mizuno",
@@ -22212,22 +21716,6 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-maestro-club-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Tiempo Maestro Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.29,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45860440187&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fb%2Fib4486-001.webp&feedId=89032&k=91fc160ad74141a82e446d66195179dea57608c2",
-        sizes: ["40.5", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
-      },
-    ],
-  },
-  {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-select",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Alpha III Select",
@@ -22292,26 +21780,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-huari-botas-de-futbol-huari-teamson-ic-ic",
-    brand: "Huari",
-    model: "Botas de fútbol Huari Teamson IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 44.25,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44112360638&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhuari-m000279568-navy-orange-1.webp&feedId=89032&k=3bc9630b27009522fc25f6e7d9f71198f2f13355",
-        sizes: ["41", "42", "43", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-elite-fg-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-elite-fg-fg",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Alpha III Elite FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -22384,22 +21856,6 @@ const minedBootProductsChunk8: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44269897427&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2F1%2Fp1gc264250.webp&feedId=89032&k=2f569f875a04ccd465f46e235b4542a962148711",
         sizes: ["40.5", "41", "42.5", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-academy-vini-jr-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Mercurial Vapor 16 Academy \"Vini Jr.\" IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 83.0,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=44406811709&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fq%2Fiq2998-640.webp&feedId=89032&k=0833e7be0d8b97dc03312c46b1ee4b5b4fefc318",
-        sizes: ["40", "42.5", "43", "44.5", "45"],
       },
     ],
   },
@@ -22483,6 +21939,9 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-beta-elite",
     brand: "Mizuno",
@@ -22516,10 +21975,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-pro-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-pro",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Morelia Neo IV Pro",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -22868,10 +22327,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-academy-erling-haaland-fg-mg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-academy-erling-haaland-fg-mg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom 6 Low Academy « Erling Haaland » FG/MG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -22900,10 +22359,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-elite-erling-haaland-fg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-elite-erling-haaland-fg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom 6 Low Elite « Erling Haaland » FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -22916,10 +22375,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-pro-erling-haaland-fg-in",
+    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-pro-erling-haaland-fg-fg",
     brand: "Nike",
     model: "Botas de fútbol Nike Phantom 6 Low Pro \"Erling Haaland\" FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -23332,10 +22791,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-6-ultimate-mxsg-in",
+    id: "footstorees-puma-botas-de-futbol-puma-ultra-6-ultimate-mxsg",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 6 Ultimate MxSG",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -23620,10 +23079,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-lea-fg-ag-fg-ag",
+    id: "footstorees-adidas-botas-de-futbol-para-mujer-adidas-f50-sparkfusion-lea-fg-ag-fg",
     brand: "Adidas",
     model: "Botas de fútbol para mujer adidas F50 Sparkfusion Lea FG/AG",
-    groundType: "FG/AG",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -23860,10 +23319,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-iv-league-ll-fg-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-iv-league-ll-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Copa Pure IV League LL FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -23876,10 +23335,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-hyperfast-club-fg-mg-fg",
+    id: "footstorees-adidas-botas-de-futbol-adidas-f50-hyperfast-club-fg-mg-mg",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Hyperfast Club FG/MG",
-    groundType: "FG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -23908,10 +23367,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-f50-hyperfast-club-tf-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-f50-hyperfast-club-tf-tf",
     brand: "Adidas",
     model: "Botas de fútbol adidas F50 Hyperfast Club TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -24276,10 +23735,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-botas-de-futbol-adidas-predator-elite-ft-l-tech-fg-in",
+    id: "footstorees-adidas-botas-de-futbol-adidas-predator-elite-ft-l-tech-fg-fg",
     brand: "Adidas",
     model: "Botas de fútbol adidas Predator Elite FT L-Tech FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -24308,10 +23767,10 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-elite-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-elite",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Alpha III Elite",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -24628,22 +24087,6 @@ const minedBootProductsChunk8: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-huari-botas-de-futbol-huari-pivotton-ic-ic",
-    brand: "Huari",
-    model: "Botas de fútbol Huari Pivotton IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 53.14,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45145695637&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhuari-m000279559-orange-lime-white-6a3d3bc9886e1-1.webp&feedId=89032&k=fef890ef79356f6c0048ecf86736c1ba420984ea",
-        sizes: ["41", "42", "43"],
-      },
-    ],
-  },
-  {
     id: "footstorees-martes-essentials-botas-de-futbol-martes-essentials-meteor-tf-ag",
     brand: "Martes Essentials",
     model: "Botas de fútbol Martes Essentials Meteor TF",
@@ -24819,9 +24262,6 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-11-pro-kylian-mbappe-fg-fg",
     brand: "Nike",
@@ -25079,10 +24519,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-11-academy-turf-in",
+    id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-11-academy-turf",
     brand: "Nike",
     model: "Botas de fútbol Nike Mercurial Superfly 11 Academy Turf",
-    groundType: "IN",
+    groundType: "",
     offers: [
       {
         store: "FootStoreES",
@@ -25171,22 +24611,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45234299967&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Ff%2Fif8517-001.webp&feedId=89032&k=edba906406b0713b22b30d6818841e9a4a1d8aec",
         sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-17-academy-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Mercurial Vapor 17 Academy IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 70.15,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45395602494&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fq%2Fiq2405-900.webp&feedId=89032&k=238a6355859c577d07b22fee9370416dc240eaf8",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47", "47.5"],
       },
     ],
   },
@@ -25398,6 +24822,9 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-japan-ag-ag",
     brand: "Mizuno",
@@ -25431,10 +24858,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-pro-fg-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-iii-pro-fg-fg",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Alpha III Pro FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -25559,10 +24986,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-japan-mix-fg-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-japan-mix-fg-fg",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Morelia Neo V Beta Japan Mix FG",
-    groundType: "IN",
+    groundType: "FG",
     offers: [
       {
         store: "FootStoreES",
@@ -25703,10 +25130,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-mizuno-botas-de-futbol-mizuno-monarcida-neo-iii-pro-mix-fg-ag-in",
+    id: "footstorees-mizuno-botas-de-futbol-mizuno-monarcida-neo-iii-pro-mix-fg-ag-fg-ag",
     brand: "Mizuno",
     model: "Botas de fútbol Mizuno Monarcida Neo III Pro Mix FG/AG",
-    groundType: "IN",
+    groundType: "FG/AG",
     offers: [
       {
         store: "FootStoreES",
@@ -25795,22 +25222,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45395602517&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fu%2Fiu2727-900.webp&feedId=89032&k=3026758da321c69ca6f7adc8400021690266e1b1",
         sizes: ["40", "41", "42.5", "44", "45", "45.5", "46", "47", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-club-ic-ic",
-    brand: "Nike",
-    model: "Botas de fútbol Nike Phantom 6 Low Club IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 51.99,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45395602549&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fq%2Fhq2323-001.webp&feedId=89032&k=d4d0ce03bdbaa3e0385f01135529db3445b4ca4f",
-        sizes: ["39", "40.5", "42.5", "44.5", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -26039,10 +25450,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-botas-de-futbol-nike-tiempo-ligera-pro-heritage-tf-in",
+    id: "footstorees-nike-botas-de-futbol-nike-tiempo-ligera-pro-heritage-tf-tf",
     brand: "Nike",
     model: "Botas de fútbol Nike Tiempo Ligera Pro Heritage TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -26055,10 +25466,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-jako-botas-de-futbol-jako-opura-team-fg-ag-in",
+    id: "footstorees-jako-botas-de-futbol-jako-opura-team-fg-ag-fg-ag",
     brand: "Jako",
     model: "Botas de fútbol Jako Opura Team FG/AG",
-    groundType: "IN",
+    groundType: "FG/AG",
     offers: [
       {
         store: "FootStoreES",
@@ -26295,134 +25706,6 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-gambeta-2603-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Gambeta 2603 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 40.83,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878396&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-gams2603in-navy-6a84734717252-1.webp&feedId=89032&k=ff404b1adf938543f0ecb50a43cbf09c36fae977",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-gambeta-2608-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Gambeta 2608 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 40.83,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878403&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-gamw2608in-orange-6a8473587260c-1.webp&feedId=89032&k=3c69244fab465ab7c9dfa15ec200855a4e394ae0",
-        sizes: ["40", "40.5", "41", "42", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-mundial-2602-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Mundial 2602 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.97,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878411&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-muns2602in-white-6a846e2f574f8-1.webp&feedId=89032&k=81a6d7ff161125647b1d32135c99231da1d7abff",
-        sizes: ["40.5", "42", "42.5", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-regate-reactive-2576-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Regate Reactive 2576 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 83.26,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878417&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-rrew2576in-white-6a846cad8aaa4-1.webp&feedId=89032&k=5bb0bf3a1568064fa6d7514461997e748920a7fc",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-tactico-2676-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Tactico 2676 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 75.4,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878428&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-tacs2676in-surtido-color-6a846e5247603-1.webp&feedId=89032&k=25f13183570def6696d133bf4f0e68c6400d2cd9",
-        sizes: ["42", "42.5", "43", "44"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2602-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Top Flex 2602 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 53.4,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878433&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-tops2602in-white-6a846e58578c1-1.webp&feedId=89032&k=b04af7dcdef2ae80b51a3fd6220a2fbb7308ad99",
-        sizes: ["40", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2627-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Top Flex 2627 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 53.4,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45819223956&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-topw2627in-turquoise-6a846e80e4b11-1.webp&feedId=89032&k=c305f79c44280de3edbc15d2e0ab06dafc7d9e34",
-        sizes: ["40", "41", "42"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2631-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Top Flex Rebound 2631 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 62.83,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45698878526&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-torw2631in-black-6a846e83b9458-1.webp&feedId=89032&k=78f859b1ac2cd9cd2d47c2a47bc47205c6b56b10",
-        sizes: ["40.5", "41", "42.5"],
-      },
-    ],
-  },
-  {
     id: "footstorees-puma-botas-de-futbol-para-mujer-puma-ultra-6-carbon-fg-fg",
     brand: "Puma",
     model: "Botas de fútbol para mujer Puma Ultra 6 Carbon FG",
@@ -26471,38 +25754,6 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-botas-de-futbol-puma-future-9-play-ic-in",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Future 9 Play IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.07,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45795638393&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109176-02-6a8e058c2a243-1.webp&feedId=89032&k=d9e0fceb75928f5c35aba493eb1d6e24b3df8f23",
-        sizes: ["41", "42", "43", "44", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-9-match-ic-ic",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Ultra 9 Match IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 70.46,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45795638408&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109152-01-6a8e053845a17-1.webp&feedId=89032&k=a220f3721e4424a3dcdd2e21504a60efb9d28ffd",
-        sizes: ["39", "41", "42", "43", "44", "44.5", "45", "46", "47"],
-      },
-    ],
-  },
-  {
     id: "footstorees-puma-botas-de-futbol-puma-ultra-9-match-tf-tf",
     brand: "Puma",
     model: "Botas de fútbol Puma Ultra 9 Match TF",
@@ -26515,22 +25766,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45795638418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109150-01-6a8e050d2b628-1.webp&feedId=89032&k=b474873d2e0a0f0ee29d07837d129e7d66ced3a7",
         sizes: ["39", "40", "41", "42", "43", "44", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-puma-botas-de-futbol-puma-ultra-9-play-ic-in",
-    brand: "Puma",
-    model: "Botas de fútbol Puma Ultra 9 Play IC",
-    groundType: "IN",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.07,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45795638426&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-109176-01-6a8e057715f75-1.webp&feedId=89032&k=440b18a7855630fd0aef57b3926f567d3de4eb8a",
-        sizes: ["40", "46", "47"],
       },
     ],
   },
@@ -26999,10 +26234,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-aguila-2521-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-aguila-2521-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Aguila 2521 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27111,10 +26346,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-dribling-2502-tf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-dribling-2502-tf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Dribling 2502 TF",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27127,10 +26362,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-dribling-2625-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-dribling-2625-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Dribling 2625 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27175,10 +26410,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-gambeta-2608-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-gambeta-2608-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Gambeta 2608 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27223,10 +26458,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-maxima-2603-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-maxima-2603-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Maxima 2603 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27239,10 +26474,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-mundial-2628-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-mundial-2628-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Mundial 2628 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27255,10 +26490,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-mundial-2632-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-mundial-2632-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Mundial 2632 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27267,22 +26502,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45860442984&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-munw2632tf-white-6a91ae27866fb-1.webp&feedId=89032&k=ee558c91b801c5bb2ece2ea12e430f5bd1ac1fe6",
         sizes: ["41", "42", "43"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-botas-de-futbol-joma-skilful-2576-ic-ic",
-    brand: "Joma",
-    model: "Botas de fútbol Joma Skilful 2576 IC",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.88,
-        shipping: 7.99,
-        url: "https://www.awin1.com/pclick.php?p=45860442990&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-skilw2576in-white-yellow-6a91abc15df3b-1.webp&feedId=89032&k=3e9b98f8ab6b113c33e2315f13565d1913eccb4f",
-        sizes: ["40.5", "42.5", "43.5"],
       },
     ],
   },
@@ -27335,10 +26554,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2602-tf-in",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2602-tf-tf",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex 2602 TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -27351,10 +26570,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2621-tf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2621-tf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex 2621 TF",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27367,10 +26586,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2631-tf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-2631-tf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex 2631 TF",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27383,10 +26602,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2602-tf-in",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2602-tf-tf",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex Rebound 2602 TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -27399,10 +26618,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2602-turf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2602-turf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex Rebound 2602 Turf",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27415,10 +26634,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2604-tf-fg-ag",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2604-tf-mg",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex Rebound 2604 TF",
-    groundType: "FG/AG",
+    groundType: "MG",
     offers: [
       {
         store: "FootStoreES",
@@ -27431,10 +26650,10 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2605-tf-in",
+    id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2605-tf-tf",
     brand: "Joma",
     model: "Botas de fútbol Joma Top Flex Rebound 2605 TF",
-    groundType: "IN",
+    groundType: "TF",
     offers: [
       {
         store: "FootStoreES",
@@ -27702,9 +26921,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "decathlonie-kipsta-football-boots-viralto-iii-3d-airmesh-fg-mango-fg",
     brand: "KIPSTA",
@@ -28501,5 +27717,4 @@ export const bootProducts: BootProduct[] = [
   ...minedBootProductsChunk7,
   ...minedBootProductsChunk8,
   ...minedBootProductsChunk9,
-  ...minedBootProductsChunk10,
 ];

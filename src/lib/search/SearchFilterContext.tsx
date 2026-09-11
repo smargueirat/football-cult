@@ -76,6 +76,11 @@ interface SearchFilterValue {
   bootTierFilter: string[];
   toggleBootTierFilter: (t: string) => void;
   setBootTierFilter: (t: string[]) => void;
+  // Tipo de tapón/suela (FG, AG, SG, TF, MG -- ver src/lib/bootGroundType.ts),
+  // exclusivo de botas, mismo patrón que bootSizeFilter/bootTierFilter.
+  bootGroundTypeFilter: string[];
+  toggleBootGroundTypeFilter: (g: string) => void;
+  setBootGroundTypeFilter: (g: string[]) => void;
   // "all" (por defecto) mezcla camisetas y botas; "jerseys"/"boots"
   // aíslan una sola sección. Las páginas de categoría (clubes, retro,
   // etc.) fuerzan "jerseys" al montar -- ahí las botas no pintan nada.
@@ -120,6 +125,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [bootSizeFilter, setBootSizeFilter] = useState<string[]>([]);
   const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
   const [bootTierFilter, setBootTierFilter] = useState<string[]>([]);
+  const [bootGroundTypeFilter, setBootGroundTypeFilter] = useState<string[]>([]);
   const [sectionFilter, setSectionFilter] = useState<SectionKey>("all");
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
   const [onSaleFilter, setOnSaleFilter] = useState(false);
@@ -137,6 +143,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (bootSizeFilter.length > 0 ? 1 : 0) +
     (colorFilter.length > 0 ? 1 : 0) +
     (bootTierFilter.length > 0 ? 1 : 0) +
+    (bootGroundTypeFilter.length > 0 ? 1 : 0) +
     (priceRange[0] !== PRICE_RANGE_MIN || priceRange[1] !== PRICE_RANGE_MAX ? 1 : 0) +
     (onSaleFilter ? 1 : 0);
 
@@ -175,6 +182,9 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         bootTierFilter,
         toggleBootTierFilter: (t) => setBootTierFilter((cur) => toggle(cur, t)),
         setBootTierFilter,
+        bootGroundTypeFilter,
+        toggleBootGroundTypeFilter: (g) => setBootGroundTypeFilter((cur) => toggle(cur, g)),
+        setBootGroundTypeFilter,
         sectionFilter,
         setSectionFilter,
         priceRange,
@@ -196,6 +206,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setBootSizeFilter([]);
           setColorFilter([]);
           setBootTierFilter([]);
+          setBootGroundTypeFilter([]);
           setSectionFilter("all");
           setPriceRange([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
           setOnSaleFilter(false);
