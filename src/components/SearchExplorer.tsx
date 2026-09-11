@@ -387,7 +387,7 @@ export default function SearchExplorer({
   const filteredBoots = useMemo(() => {
     if (effectiveSection === "jerseys") return [];
     const queryWords = normalizeSearchText(deferredQuery.trim()).split(/\s+/).filter(Boolean);
-    return bootProducts.filter((b) => {
+    const filtered = bootProducts.filter((b) => {
       const matchesQuery =
         queryWords.length === 0 ||
         queryWords.every((w) => normalizeSearchText(`${b.brand} ${b.model}`).includes(w));
@@ -427,6 +427,24 @@ export default function SearchExplorer({
         matchesPriceRange
       );
     });
+
+    // "Ordenar por" no tenía ningún efecto acá -- reportado por el usuario
+    // ("no hace nada"). Precio real más barato entre todas las ofertas,
+    // misma cifra que matchesPriceRange ya usa arriba, así el orden es
+    // consistente con el precio que el usuario ve filtrar. "Relevance" y
+    // los dos órdenes por temporada no tienen sentido para una bota (no
+    // hay campo season real en BootProduct) -- esas opciones se ocultan
+    // en el dropdown de Ordenar cuando la sección es "boots" (ver
+    // SORT_OPTIONS más abajo), así que acá solo hace falta cubrir
+    // priceAsc/priceDesc; el resto se deja en el orden filtrado tal cual.
+    if (sortBy === "priceAsc" || sortBy === "priceDesc") {
+      return [...filtered].sort((a, b) => {
+        const cheapestA = Math.min(...a.offers.map((o) => o.price + o.shipping));
+        const cheapestB = Math.min(...b.offers.map((o) => o.price + o.shipping));
+        return sortBy === "priceAsc" ? cheapestA - cheapestB : cheapestB - cheapestA;
+      });
+    }
+    return filtered;
   }, [
     effectiveSection,
     deferredQuery,
@@ -436,6 +454,7 @@ export default function SearchExplorer({
     bootTierFilter,
     bootGroundTypeFilter,
     priceRange,
+    sortBy,
   ]);
 
   type CatalogItem =
@@ -509,12 +528,20 @@ export default function SearchExplorer({
 
   const visibleItems = catalogItems.slice(0, visibleCount);
 
+  // "Más nueva"/"Más antigua" ordenan por temporada -- un campo que no
+  // existe en BootProduct (las botas no tienen season real), así que en
+  // la sección de botas esas dos opciones no tienen nada que hacer y se
+  // ocultan del dropdown.
   const SORT_OPTIONS: { key: typeof sortBy; label: string }[] = [
     { key: "relevance", label: t.search.sortRelevance },
     { key: "priceAsc", label: t.search.sortPriceAsc },
     { key: "priceDesc", label: t.search.sortPriceDesc },
-    { key: "seasonNewest", label: t.search.sortNewest },
-    { key: "seasonOldest", label: t.search.sortOldest },
+    ...(effectiveSection === "boots"
+      ? []
+      : [
+          { key: "seasonNewest" as const, label: t.search.sortNewest },
+          { key: "seasonOldest" as const, label: t.search.sortOldest },
+        ]),
   ];
 
   return (
