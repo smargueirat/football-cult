@@ -129,10 +129,63 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # casual/fan raglan tee (no supplier branding, no sponsor), not the
     # adidas match jersey already on file (2026-09-10).
     "T70-2195-016",
+    # Nike style IF3900, both colourways (-417 blue, -741 yellow): the
+    # "Maillot Gardien Brasil Jordan Coupe du Monde 2026" is a Jordan x
+    # Brasil LIFESTYLE collab (mesh panels, a big "23", no CBF goalkeeper
+    # kit anywhere near it), not the real Nike GK shirt already on file
+    # under brasil|goalkeeper (2026-09-11). Matched on the style code
+    # because the Awin `pclick.php?p=` id is not stable -- the code shows
+    # up in the image URL at every store carrying it.
+    "if3900",
+    # Inter Store "Camisa Betel Internacional Basic Home Masculina - Preto":
+    # the same licensed casual raglan tee class as T70-2195-016 above, just
+    # a different colourway/SKU -- plain black, small crest, no supplier
+    # branding, no sponsor (2026-09-11).
+    "0NN-086Z-006",
+    # --- 2026-09-11 eBay batch -------------------------------------------
+    # Same low-trust dropship class as the Crvena Zvezda pair above: a real
+    # crest and a real current design, but a flat $28.98 for a licensed
+    # current-season shirt, no brand named in the title, and the seller's
+    # house mannequin-against-patterned-wall photo. Unlike the Awin feed
+    # items, eBay item ids ARE permanent, so a link blocklist holds here.
+    "ebay.com/itm/800590051308",  # Schalke 04 third 26/27
+    "ebay.com/itm/168388086797",  # EC Bahia away 2026
+    "ebay.com/itm/366635675880",  # Cagliari home 26/27
+    "ebay.com/itm/178130297912",  # Bosnia away 26/27
+    # Unlicensed sublimation mockup, the "Personalized LIGA MX ... 3D"
+    # family already covered by EXCLUDE_RE -- this one says "Custom ...
+    # Design 3D Shirt" instead, so the regex missed it. Flat render, not a
+    # photograph of a real garment.
+    "ebay.com/itm/128012293878",  # "Custom LIGA MX Pumas UNAM 2026 Third 3D"
+    # No federation crest and no brand anywhere: a plain blue polo with
+    # "ES" screen-printed on the chest, sold as El Salvador's home kit.
+    "ebay.com/itm/147430904083",
+    # "2026/2027 Spain Lamine Yamal #19 Home ... Player Version": no adidas
+    # mark anywhere and the design doesn't match Spain's real 2026 kit --
+    # a name-and-number replica, not the federation shirt.
+    "ebay.com/itm/398378887588",
+    # Deportivo Cali's Hillside third kit (WPlay.co sponsor, Cali crest)
+    # listed with "Colombia" in the title, so it landed on the colombia
+    # national-team key. Cross-team, not low-trust.
+    "ebay.com/itm/198562275583",
 ]
 
 
-def is_manually_excluded(link):
-    if not link:
-        return False
-    return any(s in link for s in MANUAL_EXCLUDE_LINK_SUBSTRINGS)
+def is_manually_excluded(*links):
+    """True if ANY of the given URLs contains a blocklisted substring.
+
+    Takes several URLs because Awin's `pclick.php?p=<id>` deep links are
+    NOT stable between feed pulls -- the same physical product comes back
+    with a new `p=` id days later, sailing straight past a blocklist
+    entry that matched the old one (confirmed 2026-09-11: three items
+    blocklisted on 2026-09-10 all reappeared). The image URL and the
+    merchant deep link carry a stable product slug or manufacturer style
+    code instead, so pass those alongside the deep link and blocklist the
+    stable part. Case-insensitive, since style codes appear both ways.
+    """
+    return any(
+        sub.lower() in link.lower()
+        for link in links
+        if link
+        for sub in MANUAL_EXCLUDE_LINK_SUBSTRINGS
+    )

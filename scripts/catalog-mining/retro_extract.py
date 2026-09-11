@@ -18,6 +18,7 @@ from extract import (
     TYPE_PATTERNS,
     JERSEY_RE,
     TITLE_KIDS_AGE_SUFFIX_RE,
+    match_team,
     team_re_all,
     type_re_all,
 )
@@ -176,22 +177,18 @@ def mine(csv_path, fmt, store_name):
                 continue
             if RETRO_EXCLUDE_RE.search(title):
                 continue
-            if is_manually_excluded(r.get(link_col)):
+            if is_manually_excluded(r.get(link_col), r.get(image_col)):
                 continue
             if sport_col:
                 cat = (r.get(sport_col) or "").lower()
                 if cat and not any(k in cat for k in ("tbol", "utebol", "soccer")):
                     continue
 
-            team_match = None
-            team_pat = None
-            for tk, pat in teams.items():
-                if pat.search(title):
-                    team_match = tk
-                    team_pat = pat
-                    break
-            if not team_match:
+            hit = match_team(title, teams)
+            if not hit:
                 continue
+            team_match = hit[0]
+            team_pat = teams[team_match]
             type_match = None
             for tyk, pat in types.items():
                 if pat.search(title):

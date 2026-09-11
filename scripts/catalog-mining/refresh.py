@@ -79,7 +79,7 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
     for key, indices in key_to_indices.items():
         if key not in picks or key in exclude_keys:
             continue
-        if is_manually_excluded(picks[key].get("link")):
+        if is_manually_excluded(picks[key].get("link"), picks[key].get("image")):
             continue
         with_store = [i for i in indices if store_offer_re.search(blocks[i])]
         if len(with_store) == 1:

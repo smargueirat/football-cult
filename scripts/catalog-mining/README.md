@@ -1831,3 +1831,102 @@ and does not fit the CSV-feed pattern:**
   systematic search) and for more national teams' away kits on Nike
   before assuming there's nothing else there. This pass covered one
   category page's worth by hand on each site, not everything available.
+
+## Daily pass (2026-09-11) -- Awin `pclick.php?p=` ids are not stable, and eBay files club shirts under national-team keys
+
+Ran the full daily pass: all 14 Awin feeds, MysteryShirtClub, the 5 Rakuten
+Brazil stores, and two `ebay_mine_cycle.py` batches (cycle 2 now 180/385, zero
+429s across both runs). Soicos skipped again -- no `claude-in-chrome` in this
+run. 134 new products, `tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**A link blocklist does not hold an Awin FEED item down.** All three items
+blocklisted on 2026-09-10 came straight back today as "new products": the
+Springbok sleeveless vest under `sudafrica|training`, the crestless "Spyro
+porto" goalkeeper shirt under `porto|goalkeeper`, and two Jordan-brand items
+under `jordania`. Their `pclick.php?p=<id>` deep links had simply moved
+(`p=45800189009` -> `...010`, `p=30043170455` -> `...457`), so
+`is_manually_excluded` never matched. eBay item ids are permanent and were
+never affected -- this is specific to Awin feeds. Three fixes, all root-cause:
+
+- `is_manually_excluded(*links)` now takes several URLs, and every call site
+  passes the **image URL** alongside the deep link. Image URLs carry a stable
+  manufacturer style code or product slug (`nike_if3900-417_04.webp`,
+  `if3900-741-maillot-gardien-bresil-jordan-...`), so blocklist the style code
+  rather than the tracking id. Match is case-insensitive.
+- `sin mangas|sleeveless|sans manches` and `\bspyro\b` added to `EXCLUDE_RE`
+  and `KIDS_EXCLUDE_RE`. **A recurring feed false positive needs a text rule,
+  not a blocklist entry** -- blocklist is only for genuinely one-off listings.
+- `match_team()` (new, in `extract.py`, used by `analyze`, `analyze_kids` and
+  `retro_extract`): `jordania` now yields to any other team named in the same
+  title, because "Jordan" is Nike's football BRAND as well as the country. A
+  real Jordan national-team listing never names a second team ("2026-2027
+  Jordan Home Shirt" -> still `jordania`); the brand collisions always do
+  ("PSG ... Strike Jordan" -> `psg`, "Maillot Gardien Brasil Jordan" ->
+  `brasil`). Only jordania titles pay the extra scan, so there's no cost
+  elsewhere. Verified against all three real titles before and after.
+
+The Jordan x Brasil collab then re-landed on `brasil|goalkeeper` -- it's a
+lifestyle shirt (mesh panels, a big "23"), not the CBF goalkeeper kit -- and
+is blocklisted by its Nike style code `if3900`, which covers both colourways
+at every store carrying it. That is the pattern to copy for future feed
+false positives.
+
+**New false-positive class: eBay files another club's shirt under a national
+team.** eBay's Browse search is keyword-relevance and `mine_current`/
+`mine_retro` only check that the QUERIED team's pattern matches the title --
+never that some other team's pattern matches it better. So "Germany third
+soccer jersey" returns "FC Schalke 04 Germany 2021/22 ... Third Kit", and it
+gets filed as a Germany retro kit. This is systematic, not occasional: **48 of
+this batch's picks** were affected, almost all of them `espana|third` /
+`inglaterra|third` / `italia|third` / `francia|third` / `portugal|third`
+(Barcelona, Man City, Juventus, AC Milan, FC Porto...), plus PSG under
+`jordania` again and Nacional under `uruguay`.
+
+`team_collision_scan.py <ebay_out_dir>` flags these: another `TEAM_PATTERNS`
+entry matching a substring at least as long as the queried team's match.
+**Run it on every eBay batch and review the hits by hand** -- it is
+deliberately NOT wired into the miner as an auto-drop, because roughly one
+hit in eight is a legitimate pick where the queried team really is the
+subject and the other name is filler: a club shirt whose title also names
+its country ("Fc Basel ... Switzerland Soccer", "Burnley FC ... England",
+"Parma Calcio ... Italy"), a World Cup shirt naming the host ("France 2006
+Zidane ... World Cup Germany"), or a seller padding with the player's club
+("Croatia Luka Modric ... shirt real madrid"). No mechanical rule separated
+those from the real misattributions; reading the title did.
+
+**`stetienne` and `asse` are duplicate team keys for the same club** (AS
+Saint-Étienne), and the catalog already carries both -- `asse-retro-200910-
+away` *and* `stetienne-retro-200910-away`, same for `201516-away` and
+`202324-home`. Today's `stetienne` picks were dropped as duplicates of the
+`asse` products rather than adding more. Merging the two keys means deleting
+product ids, which favourites depend on (see "Product id stability" above),
+so it is left alone pending a decision.
+
+**Low-trust dropship listings, 2026-09-11 batch** (blocklisted by eBay item
+id): a flat $28.98 for a current-season licensed shirt, no brand in the
+title, seller's house mannequin-against-patterned-wall photo -- Schalke 04
+third 26/27, EC Bahia away, Cagliari home 26/27, Bosnia away. Note the price
+test is specific to CURRENT-season stock: $29.99 for a 2024/25 Heidenheim
+retro shirt is ordinary and was kept. Also dropped: a "Custom LIGA MX Pumas
+UNAM 2026 Third Design 3D Shirt" (flat render, the `personalized`-family
+rule missed "Custom"), an El Salvador "home" that is a plain blue polo with
+"ES" printed on it and no crest or brand, and a "Spain Lamine Yamal #19"
+with no adidas mark and a design that isn't Spain's real 2026 kit.
+
+**`season_conflict` was again mostly notation noise.** Of 13 conflicts across
+all stores, 9 were the same offer already on file (identical store, identical
+price -- Newcastle/Juventus training, Alavés away, and three Mystery Shirt
+Club national teams), 2 were the same kit under a different season string
+(St. Louis City's "Tina Turner" away, Brasil's pre-match -- confirmed by
+comparing photos and by Nike style code `IH1662-369`), and only 2 were real:
+Schalke 04's 2026/27 home and Netherlands' 2026 away (a genuinely different
+kit from the blue `paisesbajos-away-2025` on file -- the store's own
+description confirms "2026/27 Nike Away"). The Netherlands product was filed
+as `paisesbajos-away-2026`, matching what every other Mystery Shirt Club
+"2026-2027 <country> Shirt" pick already became in this catalog.
+
+`retro_offer_merge.py` (new) merges eBay retro picks into retro products that
+already exist -- `refresh.py` can't, since it keys on teamKey+typeKey and
+every retro product's typeKey is literally "retro". Of 668 retro picks: 128
+new products, 178 new/updated offers on existing ids, 362 exact
+re-discoveries. `ebay_check_stale.py` deactivated 22 of 200 checked (11%).

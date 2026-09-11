@@ -466,6 +466,15 @@ EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
+    # Sleeveless training vests are never match jerseys, and "Spyro" is a
+    # generic crestless goalkeeper line whose colourways are named after
+    # cities ("Spyro porto"). Both were blocklisted by link on 2026-09-10
+    # and both came straight back on 2026-09-11 with a new Awin
+    # `pclick.php?p=` id -- those ids are NOT stable between feed pulls, so
+    # a link blocklist cannot hold a recurring FEED item down (it still
+    # works fine for eBay, whose item ids are permanent). A recurring feed
+    # false positive needs a text rule here instead.
+    r"sin mangas|sleeveless|sans manches|\bspyro\b|"
     # Found 2026-08-18 mining the eBay retro/kids backlog: "Personalized
     # LIGA MX ... Shirt 3D" is a recurring unlicensed sublimation-print
     # dropship pattern (Club Tijuana/Pumas UNAM/Club León/Chivas/Cruz
@@ -502,6 +511,15 @@ KIDS_EXCLUDE_RE = re.compile(
     r"fan\b|aficionado|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
+    # Sleeveless training vests are never match jerseys, and "Spyro" is a
+    # generic crestless goalkeeper line whose colourways are named after
+    # cities ("Spyro porto"). Both were blocklisted by link on 2026-09-10
+    # and both came straight back on 2026-09-11 with a new Awin
+    # `pclick.php?p=` id -- those ids are NOT stable between feed pulls, so
+    # a link blocklist cannot hold a recurring FEED item down (it still
+    # works fine for eBay, whose item ids are permanent). A recurring feed
+    # false positive needs a text rule here instead.
+    r"sin mangas|sleeveless|sans manches|\bspyro\b|"
     r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b",
     re.I,
@@ -588,6 +606,29 @@ def split_title_size(title):
         return m.group(1).strip(), f"{int(m.group(2))}-{int(m.group(3))}"
     return title, None
 
+def match_team(title, teams):
+    """First team whose pattern matches `title`, as (key, match) or None.
+
+    Exception: "Jordan" is Nike's football BRAND as well as the Spanish/
+    English name of the country, so `jordania` yields to any other team
+    named in the same title. Real Jordan national-team listings never name
+    a second team ("2026-2027 Jordan Home Shirt"); the brand collisions
+    always do ("PSG ... Strike Jordan", "Maillot Gardien Brasil Jordan"),
+    and both of those got picked as Jordan national-team jerseys before
+    this (2026-09-10 blocklisted them by link, 2026-09-11 they came back
+    as different products). Only jordania titles pay the extra scan.
+    """
+    first = None
+    for tk, pat in teams.items():
+        m = pat.search(title)
+        if not m:
+            continue
+        if tk == "jordania" and first is None:
+            first = (tk, m)
+            continue
+        return tk, m
+    return first
+
 def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_col="aw_deep_link", image_col="aw_image_url", encoding="utf-8-sig"):
     rows = list(csv.DictReader(open(csv_path, encoding=encoding)))
     teams = team_re_all()
@@ -601,18 +642,12 @@ def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_c
             continue
         if EXCLUDE_RE.search(title):
             continue
-        if is_manually_excluded(r.get(link_col)):
+        if is_manually_excluded(r.get(link_col), r.get(image_col)):
             continue
-        team_match = None
-        team_m = None
-        for tk, pat in teams.items():
-            m = pat.search(title)
-            if m:
-                team_match = tk
-                team_m = m
-                break
-        if not team_match:
+        hit = match_team(title, teams)
+        if not hit:
             continue
+        team_match, team_m = hit
         type_match = None
         for tyk, pat in types.items():
             if pat.search(title):
@@ -654,21 +689,15 @@ def analyze_kids(csv_path, price_col, size_col=None, title_col="product_name", l
             continue
         if KIDS_EXCLUDE_RE.search(title):
             continue
-        if is_manually_excluded(r.get(link_col)):
+        if is_manually_excluded(r.get(link_col), r.get(image_col)):
             continue
         size_raw = (r.get(size_col) or "") if size_col else ""
         if not KIDS_SIGNAL_RE.search(title) and not KIDS_AGE_RE.search(size_raw):
             continue
-        team_match = None
-        team_m = None
-        for tk, pat in teams.items():
-            m = pat.search(title)
-            if m:
-                team_match = tk
-                team_m = m
-                break
-        if not team_match:
+        hit = match_team(title, teams)
+        if not hit:
             continue
+        team_match, team_m = hit
         type_match = None
         for tyk, pat in types.items():
             if pat.search(title):

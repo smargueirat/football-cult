@@ -46,7 +46,7 @@ def resolve(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
     for key, indices in key_to_indices.items():
         if key not in picks or len(indices) < 2:
             continue
-        if is_manually_excluded(picks[key].get("link")):
+        if is_manually_excluded(picks[key].get("link"), picks[key].get("image")):
             continue
         pick_season = detect_season(picks[key]["title"])
         pick_end = season_end_year(pick_season)
