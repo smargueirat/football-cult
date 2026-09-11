@@ -27,6 +27,8 @@ For each store: mine for jerseys of teams/types not yet in src/data/products.ts 
 
 Also run \`python3 scripts/catalog-mining/ebay_check_stale.py\` (no args = default 200/day batch) — eBay listings get sold/delisted after we mine them, and nothing else re-checks an already-mined offer, so this catches ones that have since gone dead (confirmed real 2026-08-28: 54 of the first 300 checked, ~18%, were genuine 404s from eBay's own API) and flips them to \`inStock: false\` directly in products.ts. It persists its cycle position in ebay_stale_check_state.json (next to the script) — git add and commit that file alongside products.ts every time, same reason as ebay_full_cycle_state.json above (losing it just repeats the same batch instead of progressing through the catalog).
 
+Also run \`python3 scripts/boots-mining/refresh_boots.py\` (read scripts/boots-mining/README.md first) — refreshes src/data/boots.ts against the same Awin feed cache used above (adidas ES, Sport is Good ES, Foot-Store ES, Decathlon Irlanda boots), which used to only ever get re-mined by hand and had started drifting from real store prices. It's a single self-contained script (mines, rebuilds boots.ts, reclassifies Tier/Horma, extracts dominant color for any new photos) — just run it and git add its three output files (src/data/boots.ts, src/data/bootTierData.json, src/data/bootDominantColors.json) alongside everything else. Ids are deterministic so this is safe to run every day even with zero real changes (produces a byte-identical file). Print its summary (new/dropped/price-changed counts) in your own summary at the end.
+
 Finally, run \`python3 scripts/catalog-mining/track_price_drops.py\` LAST, after every other store/offer update above has already landed in products.ts — it diffs today's prices against yesterday's snapshot (price_snapshot.json, next to the script) and flags every offer that got cheaper with a \`previousPrice\` field, which is what powers the site's price-drop badge/section/filter (\"Bajaron de Precio\"). It also appends today's price to a rolling per-offer history (src/data/priceHistory.json, capped at the last 14 days), which is what powers the price-history sparkline on the product detail page (src/components/PriceHistorySparkline.tsx) — git add and commit BOTH price_snapshot.json and src/data/priceHistory.json alongside products.ts every time, same reason as the other state files: losing either just means tomorrow's run (or the sparkline) loses a day of real data, not a crash.
 
 After applying changes: npx tsc --noEmit, dupe-check id fields in products.ts, npm run build, commit and push (triggers Vercel deploy), then verify the live site (football-cult.com) responds 200. If nothing new is found, just say so — don't force a commit." \
@@ -80,6 +82,9 @@ if [[ -n "$(git status --porcelain)" ]]; then
   git add \
     src/data/products.ts \
     src/data/priceHistory.json \
+    src/data/boots.ts \
+    src/data/bootTierData.json \
+    src/data/bootDominantColors.json \
     scripts/catalog-mining/ebay_full_cycle_state.json \
     scripts/catalog-mining/ebay_stale_check_state.json \
     scripts/catalog-mining/price_snapshot.json \
@@ -105,7 +110,7 @@ recovered here after verifying tsc + the duplicate-id check pass clean."
     echo "=== safety net: recovered and pushed to $BRANCH ==="
     send_alert "Daily scan: safety-net commit recovered work on $BRANCH" "The scan's own commit/push step didn't run, but the safety net verified (tsc + duplicate-id check) and pushed it after the fact. No action needed, just flagging in case it happens often enough to be worth investigating why."
   else
-    git reset -- src/data/products.ts src/data/priceHistory.json scripts/catalog-mining/*.json
+    git reset -- src/data/products.ts src/data/priceHistory.json src/data/boots.ts src/data/bootTierData.json src/data/bootDominantColors.json scripts/catalog-mining/*.json
     echo "=== safety net: FAILED verification, left uncommitted for manual review ==="
     send_alert "Daily scan: uncommitted changes need manual review" "Uncommitted changes are sitting in /home/piojo/football-cult on branch $BRANCH, but they failed tsc or the duplicate-id check, so the safety net left them uncommitted on purpose. Needs a manual look before committing -- don't just force it through."
   fi
