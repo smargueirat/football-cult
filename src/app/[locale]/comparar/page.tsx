@@ -4,11 +4,11 @@ import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import CompareClient from "./CompareClient";
 
 const META: Record<Locale, { title: string; description?: string }> = {
-  es: { title: "Comparar camisetas | Football Cult" },
-  en: { title: "Compare Shirts | Football Cult" },
-  pt: { title: "Comparar Camisas | Football Cult" },
-  fr: { title: "Comparer les Maillots | Football Cult" },
-  it: { title: "Confronta Maglie | Football Cult" },
+  es: { title: "Comparar productos | Football Cult" },
+  en: { title: "Compare Products | Football Cult" },
+  pt: { title: "Comparar Produtos | Football Cult" },
+  fr: { title: "Comparer les Produits | Football Cult" },
+  it: { title: "Confronta Prodotti | Football Cult" },
 };
 
 export async function generateMetadata({
