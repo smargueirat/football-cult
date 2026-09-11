@@ -60,3 +60,19 @@ export function prefetchDetailPhoto(url: string | undefined): void {
     img.src = getDisplaySrc(url, width);
   }
 }
+
+// Las fotos de botas de las tiendas ES/IE (Awin) vienen del proxy
+// images2.productserve.com con w=200&h=200 ya fijado EN la propia URL
+// del feed -- funciona bien para la card chica del catálogo, pero se
+// ve borrosa al abrir la ficha en grande. Confirmado con curl (no una
+// suposición): pedirle al mismo proxy, con la misma URL, un w/h más
+// grande devuelve un JPEG real más grande de la MISMA foto (1200x1200
+// real, no un estirado) -- el parámetro "k" no está atado a w/h, y
+// sigue cacheado por su CDN (Varnish, max-age largo). Solo se usa para
+// la foto grande de la ficha, nunca en la card del catálogo ni en las
+// miniaturas de 48px por oferta -- ahí seguimos pidiendo el tamaño
+// chico a propósito, por rendimiento.
+export function upsizeBootDetailPhoto(url: string): string {
+  if (!url.includes("images2.productserve.com")) return url;
+  return url.replace(/([?&]w=)\d+/, "$11200").replace(/([?&]h=)\d+/, "$11200");
+}
