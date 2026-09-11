@@ -1760,6 +1760,13 @@ const legacyBootProducts: BootProduct[] = [
   },
 ];
 
+// ===AUTO-GENERATED-BOOTS-BELOW=== -- scripts/boots-mining/refresh_boots.py
+// regenera TODO lo que sigue de esta línea, todas las noches (scan diario),
+// a partir de un mine fresco de los feeds Awin. No editar a mano de acá
+// para abajo -- el próximo refresh lo pisa sin avisar. Todo lo de ARRIBA de
+// esta línea (legacyBootProducts, los 71 originales cruzados por nombre
+// entre FutbolEmotion y Forum Sport) es fijo y nunca se regenera solo.
+
 const minedBootProductsChunk1: BootProduct[] = [
   {
     id: "adidases-adidas-bota-de-futbol-f50-hyperfast-league-cesped-natural-seco-fg",
@@ -27704,7 +27711,8 @@ const minedBootProductsChunk9: BootProduct[] = [
         sizes: ["40", "41 1", "42", "43 1", "44", "45 1", "46"],
       },
     ],
-  },];
+  },
+];
 
 export const bootProducts: BootProduct[] = [
   ...legacyBootProducts,
