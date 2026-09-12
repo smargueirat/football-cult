@@ -7,10 +7,11 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 // Mismo layout visual que CompareOfferRow.tsx, pero para una BootOffer
 // real en vez de una Offer de camiseta: sin useLiveOfferCosts (esa
 // lógica de envío en vivo/cargos de importación es para las tiendas de
-// camisetas que envían cruzando fronteras -- las tiendas de botas son
-// todas ES/IE con precio final ya en EUR, mismo dato simple que ya
-// muestra BootDetailClient, no hay nada que calcular en vivo) y sin fila
-// de impuestos (ese concepto no existe en ningún otro lugar de botas).
+// camisetas que envían cruzando fronteras) y sin fila de impuestos (ese
+// concepto no existe en ningún otro lugar de botas). La mayoría de las
+// tiendas de botas son ES/IE en EUR, precio final tal cual muestra el
+// feed -- Pro Soccer (EE.UU., USD) es la excepción, con el mismo trato
+// de moneda real (nunca convertida) que ya usa BootDetailClient.
 export default function CompareBootOfferRow({
   offer,
   isBest,
@@ -20,6 +21,7 @@ export default function CompareBootOfferRow({
 }) {
   const { t } = useLanguage();
   const total = offer.price + offer.shipping;
+  const isProSoccer = offer.store === "ProSoccer";
 
   return (
     <a
@@ -42,17 +44,24 @@ export default function CompareBootOfferRow({
       </div>
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.price}</span>
-        <span className="font-medium text-[#1a1a1a]">{formatOfferMoney(offer.price, "EUR")}</span>
+        <span className="font-medium text-[#1a1a1a]">{formatOfferMoney(offer.price, offer.currency)}</span>
       </div>
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.shippingCost}</span>
         <span className="font-medium text-[#1a1a1a]">
-          {offer.shipping > 0 ? formatOfferMoney(offer.shipping, "EUR") : t.compare.freeShipping}
+          {isProSoccer
+            ? t.botas.shippingCalculatedAtStore
+            : offer.shipping > 0
+              ? formatOfferMoney(offer.shipping, offer.currency)
+              : t.compare.freeShipping}
         </span>
       </div>
       <div className="mt-0.5 flex justify-between border-t border-[#C9A24B]/15 pt-1.5 text-sm">
         <span className="font-medium text-[#675c44]">{t.compare.total}</span>
-        <span className="font-semibold text-[#B45309]">{formatOfferMoney(total, "EUR")}</span>
+        <span className="font-semibold text-[#B45309]">
+          {formatOfferMoney(total, offer.currency)}
+          {isProSoccer && "+"}
+        </span>
       </div>
     </a>
   );

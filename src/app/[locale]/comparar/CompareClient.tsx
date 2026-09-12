@@ -10,7 +10,7 @@ import {
   teamNames,
   typeNames,
 } from "@/data/products";
-import { BootOffer, BootProduct, bootProducts } from "@/data/boots";
+import { BootOffer, BootProduct, bootProducts, bootOfferTotalInEUR } from "@/data/boots";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -88,7 +88,7 @@ export default function CompareClient() {
   }
   for (const list of byProduct.values()) {
     if (list.length < 2) continue;
-    const total = (c: CompareCard) => (c.kind === "jersey" ? offerTotal(c.offer) : c.offer.price + c.offer.shipping);
+    const total = (c: CompareCard) => (c.kind === "jersey" ? offerTotal(c.offer) : bootOfferTotalInEUR(c.offer));
     const cheapest = list.reduce((a, b) => (total(a) <= total(b) ? a : b));
     cheapest.isBest = true;
   }

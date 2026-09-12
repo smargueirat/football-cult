@@ -373,6 +373,7 @@ export interface Translations {
     shippingCost: string;
     viewOffer: string;
     differentPhotosNote: string;
+    shippingCalculatedAtStore: string;
     sectionAll: string;
     sectionJerseys: string;
     sectionBoots: string;
@@ -795,6 +796,7 @@ export const translations: Record<Locale, Translations> = {
       shippingCost: "envío",
       viewOffer: "Ver oferta",
       differentPhotosNote: "Cada tienda tiene su propia foto real del producto -- tocá una para verla en grande.",
+      shippingCalculatedAtStore: "envío internacional, se calcula en la tienda",
       sectionAll: "Todo",
       sectionJerseys: "Camisetas",
       sectionBoots: "Botas",
@@ -1214,6 +1216,7 @@ export const translations: Record<Locale, Translations> = {
       shippingCost: "frete",
       viewOffer: "Ver oferta",
       differentPhotosNote: "Cada loja tem sua própria foto real do produto -- toque em uma para vê-la ampliada.",
+      shippingCalculatedAtStore: "envio internacional, calculado na loja",
       sectionAll: "Tudo",
       sectionJerseys: "Camisas",
       sectionBoots: "Chuteiras",
@@ -1633,6 +1636,7 @@ export const translations: Record<Locale, Translations> = {
       shippingCost: "shipping",
       viewOffer: "View offer",
       differentPhotosNote: "Each store has its own real product photo -- tap one to view it larger.",
+      shippingCalculatedAtStore: "international shipping, calculated at checkout",
       sectionAll: "All",
       sectionJerseys: "Jerseys",
       sectionBoots: "Boots",
@@ -2052,6 +2056,7 @@ export const translations: Record<Locale, Translations> = {
       shippingCost: "livraison",
       viewOffer: "Voir l'offre",
       differentPhotosNote: "Chaque boutique a sa propre photo réelle du produit -- appuyez sur une pour l'agrandir.",
+      shippingCalculatedAtStore: "livraison internationale, calculée sur le site",
       sectionAll: "Tout",
       sectionJerseys: "Maillots",
       sectionBoots: "Chaussures",
@@ -2471,6 +2476,7 @@ export const translations: Record<Locale, Translations> = {
       shippingCost: "spedizione",
       viewOffer: "Vedi offerta",
       differentPhotosNote: "Ogni negozio ha la propria foto reale del prodotto -- tocca una per ingrandirla.",
+      shippingCalculatedAtStore: "spedizione internazionale, calcolata sul sito",
       sectionAll: "Tutto",
       sectionJerseys: "Maglie",
       sectionBoots: "Scarpini",

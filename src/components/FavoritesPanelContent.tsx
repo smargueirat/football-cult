@@ -10,7 +10,7 @@ import {
   teamNames,
   typeNames,
 } from "@/data/products";
-import { bootProducts } from "@/data/boots";
+import { bootProducts, bootOfferTotalInEUR } from "@/data/boots";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -49,7 +49,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
           {savedItems.map((item) => {
             if (item.kind === "boot") {
               const cheapest = item.boot.offers.reduce((a, b) =>
-                a.price + a.shipping <= b.price + b.shipping ? a : b
+                bootOfferTotalInEUR(a) <= bootOfferTotalInEUR(b) ? a : b
               );
               return (
                 <li key={item.id}>
@@ -60,7 +60,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                   >
                     <span className="truncate text-sm text-[#1a1a1a]">{item.boot.model}</span>
                     <span className="text-sm font-semibold text-[#B45309]">
-                      {formatOfferMoney(cheapest.price + cheapest.shipping, "EUR")}
+                      {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
                     </span>
                   </Link>
                 </li>
