@@ -89,6 +89,21 @@ def parse_price(s):
 def norm_title(t):
     return re.split(r'\s+-\s+', t.strip(), maxsplit=1)[0].strip()
 
+# Foot-Store FR / Sport is Good FR anteponen "Chaussures de football"
+# (a veces con un adjetivo real en el medio, ej. "basses"/"montante"/
+# "synthétique") a TODOS los títulos -- redundante con la sección de
+# botas del catálogo. Se corta el título justo donde arranca la marca
+# REAL (dato del propio feed, columna `brand`) en vez de adivinar
+# cuántas palabras descriptivas hay antes -- así "Chaussures de
+# football montantes synthétiques adidas X..." y "Chaussures de
+# football adidas Copa..." se limpian igual de bien.
+def strip_football_shoe_prefix(title, brand):
+    if brand:
+        idx = title.lower().find(brand.lower())
+        if idx > 0:
+            return title[idx:].strip()
+    return title
+
 def eu_size_from_fashion_size(v):
     # adidas ES 'Fashion:size' ya viene en EU bruto ("42", "40 2/3")
     return v.strip()
@@ -157,7 +172,7 @@ def eu_size_from_futbolemotion(v):
 
 EXCLUDE_KEYWORDS = re.compile(
     r'\brugby\b|\bhockey\b|\bb[ée]isbol\b|\bkakari\b'
-    r'|f[uú]tbol\s+american[oa]\b|\bamerican\s+football\b'
+    r'|f[uú]tbol\s+american[oa]\b|\bamerican\s+football\b|football\s+am[ée]ricain\b'
     r'|\bsala\b|f[uú]tbol\s+sala\b|\bfutsal\b|\bindoor\b|\bsalle\b|int[ée]rieur'
     # "IC" (Indoor Court) como código de suela al final del nombre --
     # mismo motivo que "indoor": calzado plano de calle/cancha dura, sin
@@ -343,7 +358,7 @@ def mine_google_shopping_fr(fname, store_label):
         sizes = sorted({dot_size(r.get('size', '').strip()) for r in rows if r.get('size', '').strip()},
                         key=size_sort_key)
         brand = (rep.get('brand') or '').strip()
-        model = norm_title(rep.get('title') or '')
+        model = strip_football_shoe_prefix(norm_title(rep.get('title') or ''), brand)
         ground = infer_ground(model, rep.get('description', ''))
         # "shipping" viene como "FR:::6.99 EUR:5:5:1:5" -- el precio real
         # está en el segundo campo separado por ":::".
