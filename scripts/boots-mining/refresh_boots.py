@@ -13,11 +13,13 @@ Qué hace, en orden:
 1. Corre mine_boots.py contra el feed cache fresco de hoy.
 2. Lee src/data/boots.ts, separa en el marcador
    "===AUTO-GENERATED-BOOTS-BELOW===": todo lo de ARRIBA (header, tipos,
-   legacyBootProducts -- los 71 originales) se deja intacto tal cual está
-   HOY en el archivo (nunca desde una copia vieja en disco -- ese fue un
-   bug real de la versión manual de este pipeline, ver el commit
-   original). Todo lo de ABAJO se tira y se reconstruye entero con el mine
-   de hoy.
+   legacyBootProducts -- los 71 originales -- y browserMinedBootProducts
+   -- NikeCL/NikeAR/PumaAR, minadas a mano vía sesión real de Chrome
+   porque Cloudflare bloquea el fetch headless de esas 3, sin feed
+   CSV/XML para auto-refrescar) se deja intacto tal cual está HOY en el
+   archivo (nunca desde una copia vieja en disco -- ese fue un bug real
+   de la versión manual de este pipeline, ver el commit original). Todo
+   lo de ABAJO se tira y se reconstruye entero con el mine de hoy.
 3. Ids deterministas (slugify(tienda-marca-modelo-terreno)) -- un mismo
    producto real conserva el mismo id de un día al otro mientras la
    tienda lo siga vendiendo, así que "reconstruir todo de cero" termina
@@ -75,6 +77,7 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}      store: {ts_string(o['store'])},")
     lines.append(f"{pad}      price: {o['price']},")
     lines.append(f"{pad}      shipping: {o['shipping']},")
+    lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
     lines.append(f"{pad}      url: {ts_string(o['url'])},")
     lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
     sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
@@ -128,6 +131,7 @@ def build_entries(mined, used_ids):
                 "store": d["store"],
                 "price": d["price"],
                 "shipping": d["shipping"],
+                "currency": d["currency"],
                 "url": d["url"],
                 "imageUrl": d["imageUrl"],
                 "sizes": d["sizes"],
@@ -166,6 +170,7 @@ def write_boots_ts(prefix, entries):
 
     out.append("export const bootProducts: BootProduct[] = [\n")
     out.append("  ...legacyBootProducts,\n")
+    out.append("  ...browserMinedBootProducts,\n")
     for name in chunk_names:
         out.append(f"  ...{name},\n")
     out.append("];\n")
