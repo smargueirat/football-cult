@@ -76133,23 +76133,6 @@ const minedBootProductsChunk24: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-tiempo-ligera-pro-fg-fg",
-    brand: "Nike",
-    model: "Nike Tiempo Ligera Pro FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 134.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-ligera-pro-fg-white-black-brt-crimso",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/301053/750/bota-nike-tiempo-ligera-pro-fg-blanco-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
     id: "futbolemotion-nike-nike-tiempo-maestro-academy-ag-ag",
     brand: "Nike",
     model: "Nike Tiempo Maestro Academy AG",
@@ -76557,9 +76540,6 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-diadora-diadora-m-winner-ita-og-94-lt-mdpu-fg-fg",
     brand: "Diadora",
@@ -76577,6 +76557,9 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-diadora-diadora-brasil-og-lt-mdpu-fg-fg",
     brand: "Diadora",
@@ -78329,23 +78312,6 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-puma-puma-future-9-play-fg-ag-fg-ag",
-    brand: "Puma",
-    model: "Puma Future 9 Play FG/AG",
-    groundType: "FG/AG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 35.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-play-fgag-puma-black-glowing-red-strong-gray",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/285575/750/bota-puma-future-9-play-fgag-negro-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
     id: "futbolemotion-puma-puma-ultra-6-match-turf",
     brand: "Puma",
     model: "Puma Ultra 6 Match Turf",
@@ -78359,23 +78325,6 @@ const minedBootProductsChunk25: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-6-match-turf-yellow-alert-puma-black-puma-silver-glowing-r",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285545/750/bota-puma-ultra-6-match-turf-amarillo-1.jpg",
         sizes: ["39", "40", "41", "42", "42.5", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-puma-puma-ultra-6-play-fg-ag-fg-ag",
-    brand: "Puma",
-    model: "Puma Ultra 6 Play FG/AG",
-    groundType: "FG/AG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 29.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-6-play-fgag-yellow-alert-puma-black-puma-silver-glowing-r",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/285547/750/bota-puma-ultra-6-play-fgag-amarillo-1.jpg",
-        sizes: ["41", "42", "42.5", "43", "44"],
       },
     ],
   },
@@ -79620,9 +79569,6 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-mizuno-mizuno-mizuno-alpha-3-japan-fg-joao-felix-fg",
     brand: "Mizuno",
@@ -79674,6 +79620,9 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-messi-elite-ag-ag",
     brand: "adidas",
