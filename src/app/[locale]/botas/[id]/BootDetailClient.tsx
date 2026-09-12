@@ -3,7 +3,7 @@
 import Link from "@/lib/i18n/LocaleLink";
 import Image from "next/image";
 import { useState } from "react";
-import { BootProduct, BootOffer } from "@/data/boots";
+import { BootProduct, BootOffer, bootOfferTotalInEUR } from "@/data/boots";
 import { formatOfferMoney } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -16,10 +16,13 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(boot.id);
 
+  // bootOfferTotalInEUR (no el precio bruto) porque Pro Soccer factura en
+  // USD -- ver el comentario largo en boots.ts.
   const sortedOffers = [...boot.offers].sort(
-    (a, b) => a.price + a.shipping - (b.price + b.shipping)
+    (a, b) => bootOfferTotalInEUR(a) - bootOfferTotalInEUR(b)
   );
-  const cheapestTotal = sortedOffers[0].price + sortedOffers[0].shipping;
+  const cheapestOffer = sortedOffers[0];
+  const cheapestTotal = cheapestOffer.price + cheapestOffer.shipping;
 
   // La foto grande arrancaba siempre en offers[0] (la primera tienda del
   // feed, orden arbitrario) mientras que BootCard.tsx en el catálogo usa
@@ -87,7 +90,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
           </span>
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{boot.model}</h1>
           <p className="mt-2 text-sm text-[#675c44]">
-            {t.botas.bestPrice}: {formatOfferMoney(cheapestTotal, "EUR")} {t.botas.shippingIncluded}
+            {t.botas.bestPrice}: {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
           </p>
 
           {hasDistinctPhotos && (
@@ -155,14 +158,23 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
                           {isComparing(boot.id, offer.store) ? t.compare.remove : t.compare.add}
                         </button>
                       </div>
+                      {offer.sizes.length > 0 && (
+                        <p className="text-xs text-[#675c44]">
+                          {t.botas.sizesEU}: {offer.sizes[0]}–{offer.sizes[offer.sizes.length - 1]}
+                        </p>
+                      )}
                       <p className="text-xs text-[#675c44]">
-                        {t.botas.sizesEU}: {offer.sizes[0]}–{offer.sizes[offer.sizes.length - 1]}
-                      </p>
-                      <p className="text-xs text-[#675c44]">
-                        {formatOfferMoney(offer.price, "EUR")}
-                        {offer.shipping > 0
-                          ? ` + ${formatOfferMoney(offer.shipping, "EUR")} ${t.botas.shippingCost}`
-                          : ` · ${t.botas.freeShipping}`}
+                        {formatOfferMoney(offer.price, offer.currency)}
+                        {offer.store === "ProSoccer"
+                          ? // Tienda de EE.UU. -- el feed no da un costo de envío
+                            // internacional real, y su propia política dice
+                            // explícitamente que el envío gratis NO aplica a
+                            // pedidos internacionales -- decir "envío gratis"
+                            // acá sería un dato falso, no una aproximación.
+                            ` · ${t.botas.shippingCalculatedAtStore}`
+                          : offer.shipping > 0
+                            ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
+                            : ` · ${t.botas.freeShipping}`}
                       </p>
                     </div>
                   </div>

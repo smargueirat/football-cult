@@ -78,7 +78,7 @@ export default async function BootDetailPage({
       "@type": "Offer",
       url: o.url,
       price: o.price,
-      priceCurrency: "EUR",
+      priceCurrency: o.currency,
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: o.store },
     })),

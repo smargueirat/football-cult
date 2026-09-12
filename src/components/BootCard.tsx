@@ -2,7 +2,7 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
-import { BootProduct } from "@/data/boots";
+import { BootProduct, bootOfferTotalInEUR } from "@/data/boots";
 import { formatOfferMoney } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -24,7 +24,12 @@ export default function BootCard({ boot, priority = false }: { boot: BootProduct
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(boot.id);
-  const cheapest = boot.offers.reduce((a, b) => (a.price + a.shipping <= b.price + b.shipping ? a : b));
+  // bootOfferTotalInEUR (no el precio bruto) porque Pro Soccer factura en
+  // USD -- comparar números crudos de monedas distintas daría "más barato"
+  // al que simplemente tiene el número más chico, sin importar la moneda.
+  const cheapest = boot.offers.reduce((a, b) =>
+    bootOfferTotalInEUR(a) <= bootOfferTotalInEUR(b) ? a : b
+  );
   const sizes = [...new Set(boot.offers.flatMap((o) => o.sizes))].sort((a, b) => parseFloat(a) - parseFloat(b));
   const sizeRange = sizes.length > 0 ? (sizes[0] === sizes[sizes.length - 1] ? sizes[0] : `${sizes[0]}–${sizes[sizes.length - 1]}`) : "";
   const photo = cheapest.imageUrl;
@@ -77,7 +82,7 @@ export default function BootCard({ boot, priority = false }: { boot: BootProduct
 
         <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
           <span className="text-sm font-semibold">
-            {formatOfferMoney(cheapest.price + cheapest.shipping, "EUR")}
+            {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
           </span>
           {cheapest.shipping > 0 && (
             <span className="text-[9px] font-medium uppercase leading-none opacity-70">
@@ -142,8 +147,13 @@ export default function BootCard({ boot, priority = false }: { boot: BootProduct
           {boot.model}
         </h3>
         <p className="text-[10px] text-[#675c44] sm:text-xs">
-          {t.product.inStores.replace("{n}", String(boot.offers.length))} ·{" "}
-          {t.product.sizesRange.replace("{range}", sizeRange)}
+          {t.product.inStores.replace("{n}", String(boot.offers.length))}
+          {sizeRange && (
+            <>
+              {" "}
+              · {t.product.sizesRange.replace("{range}", sizeRange)}
+            </>
+          )}
         </p>
       </div>
     </Link>

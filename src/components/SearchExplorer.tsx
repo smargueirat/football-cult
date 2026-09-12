@@ -26,7 +26,7 @@ import {
   teamPopularity,
   typeNames,
 } from "@/data/products";
-import { BootProduct, bootProducts } from "@/data/boots";
+import { BootProduct, bootProducts, bootOfferTotalInEUR } from "@/data/boots";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
@@ -413,7 +413,9 @@ export default function SearchExplorer({
         );
       const matchesPriceRange = (() => {
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
-        const cheapest = Math.min(...b.offers.map((o) => o.price + o.shipping));
+        // bootOfferTotalInEUR (no el precio bruto) porque el slider está en
+        // EUR y Pro Soccer factura en USD -- ver el comentario en boots.ts.
+        const cheapest = Math.min(...b.offers.map(bootOfferTotalInEUR));
         const withinMax = priceRange[1] === PRICE_RANGE_MAX || cheapest <= priceRange[1];
         return cheapest >= priceRange[0] && withinMax;
       })();
@@ -439,8 +441,8 @@ export default function SearchExplorer({
     // priceAsc/priceDesc; el resto se deja en el orden filtrado tal cual.
     if (sortBy === "priceAsc" || sortBy === "priceDesc") {
       return [...filtered].sort((a, b) => {
-        const cheapestA = Math.min(...a.offers.map((o) => o.price + o.shipping));
-        const cheapestB = Math.min(...b.offers.map((o) => o.price + o.shipping));
+        const cheapestA = Math.min(...a.offers.map(bootOfferTotalInEUR));
+        const cheapestB = Math.min(...b.offers.map(bootOfferTotalInEUR));
         return sortBy === "priceAsc" ? cheapestA - cheapestB : cheapestB - cheapestA;
       });
     }

@@ -75,6 +75,7 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}      store: {ts_string(o['store'])},")
     lines.append(f"{pad}      price: {o['price']},")
     lines.append(f"{pad}      shipping: {o['shipping']},")
+    lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
     lines.append(f"{pad}      url: {ts_string(o['url'])},")
     lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
     sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
@@ -128,6 +129,7 @@ def build_entries(mined, used_ids):
                 "store": d["store"],
                 "price": d["price"],
                 "shipping": d["shipping"],
+                "currency": d["currency"],
                 "url": d["url"],
                 "imageUrl": d["imageUrl"],
                 "sizes": d["sizes"],
