@@ -1707,6 +1707,60 @@ products, 113 were new offers on an existing `{team}-retro-{season}-{type}` id,
 and 233 were exact re-discoveries of an offer already on file. `ebay_check_stale.py`
 deactivated 35 of 200 checked (17.5%, in line with the 18% first measured).
 
+## Daily pass (2026-09-13) -- zero new products from every CSV feed, and the eBay stale rate doubled
+
+All 14 Awin feeds + MysteryShirtClub + the 5 Rakuten Brazil stores produced
+**zero** new products this pass -- every `_NEW.json` came back empty. That is a
+genuine zero, not a wrong-column bug: the 2026-09-11 pass added 134 new
+products and 09-12 ran too, so the feeds had already been drained. What they
+did produce was 172 new *offers* on products already on file, almost all of
+them via `resolve_ambiguous.py` rather than `refresh.py` -- when a team+type
+has both a 25/26 and a 26/27 product, `refresh.py` skips as ambiguous and only
+the season-match resolver places the offer. **Run `resolve_ambiguous.py` after
+`refresh.py` for every store**, not just when refresh reports skips; it
+accounted for 172 of the 175 offers added from the CSV feeds this pass.
+
+`season_conflict` was again almost entirely notation noise: 9 of the 10
+CSV-feed conflicts were the *identical* offer already on file (same deep link,
+same image), confirmed by substring-matching the pick's link and image URL
+against `products.ts` -- a cheaper check than comparing store+price by hand and
+it catches the case where the price also moved. The 10th (Inter Store's
+`internacional|home` 25/26 against the `202627` on file) is the store carrying
+older stock, skipped.
+
+**`ebay_check_stale.py` deactivated 66 of 200 (33%)** -- roughly double the
+11-18% measured on every previous run. Nothing about the script changed; this
+batch (cursor 1500-1700) simply sat on older mined offers. Worth watching: if
+it stays at this level the catalog is aging out faster than one 200/day batch
+can re-check it (6279 products means a full sweep takes ~5 weeks).
+
+**Collision scan: 19 of 66 flagged hits were real misattributions (29%)**, well
+above the "roughly one in eight" the 2026-09-11 note estimated -- because this
+batch was heavy on national teams whose name collides with a domestic club:
+Fenerbahçe/Beşiktaş under `turquia` (5), Swansea City under `gales` (2),
+Kawasaki Frontale under `japon`, Shakhtar under `ucrania`, Jamaica under
+`ajax`, Italy under `lazio`, Leeds under `bournemouth`, England under `suecia`,
+Juventus under `torino`, Chivas under `mexico`. And two in the *other*
+direction: "Newcastle United Jets" is an Australian A-League club, so one
+listing got filed under both `newcastle` (the English club) and `australia`
+(the national team) -- neither is right. The keepers were the documented
+filler-name cases (Basel/Switzerland, PSG/Qatar Airways as the sponsor,
+Peñarol/Uruguay, Grêmio/Brazil, "Gremio ... #11 Everton Cebolinha" where
+Everton is the player).
+
+**The $28.98 dropship rule needs its current-season scope enforced in both
+directions.** 10 current/kids picks at a flat $28.98 with no brand in the title
+were dropped as usual -- but 20 *retro* picks at exactly the same price were
+**kept**, because a $28.98 retro reissue is ordinary pricing for that product
+class (already noted 2026-09-11 with the Heidenheim example). Screening retro
+on price alone would have thrown away 20 real products.
+
+**Another "retro titled as current", this time on eBay.** `chelsea|home` came
+through as "Nike Chelsea Football Club Home Kit 2026-2027 ... Authentic EPL"
+but the photo is a sponsorless plain-blue shirt on an old template -- the same
+class as FansJerseyHub's Birmingham City listings (2026-09-10), so it is not
+store-specific. Dropped. Photo review remains the only check that catches it.
+
 ## Soicos (Nike CL/AR, Puma AR) — needs a real browser, not headless Playwright (2026-08-31)
 
 A new affiliate network, separate from Awin/eBay/Rakuten. Approved
