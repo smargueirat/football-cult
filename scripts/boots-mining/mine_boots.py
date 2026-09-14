@@ -218,18 +218,15 @@ def mine_adidas_es():
                 continue
             style_groups.setdefault(style, []).append(row)
     # adidas' own product_name no trae color, así que varios colorways
-    # (estilos JS-code distintos) comparten el mismo texto -- se juntan
-    # por (marca, nombre), quedándose con la variante más barata como
-    # representante real.
-    by_model = {}
-    for style, rows in style_groups.items():
-        rep = rows[0]
-        brand = (rep.get('brand_name') or 'adidas').strip()
-        model = rep.get('product_name', '').strip()
-        mk = (brand.lower(), model.lower())
-        by_model.setdefault(mk, []).extend(rows)
+    # (estilos JS-code distintos) comparten el mismo texto real -- UNA
+    # entrada por estilo (color real), nunca juntados por nombre: un
+    # merge por (marca, nombre) mezclaba colorways de precio/talles
+    # distintos bajo una sola oferta (precio del más barato, talles
+    # unidos de TODOS, aunque no correspondan al que se linkea) -- bug
+    # real confirmado 2026-09-14 (usuario: "ni el talle ni el precio
+    # corresponden"), 44 de 209 modelos de AdidasES lo tenían.
     n = 0
-    for (brand_lc, model_lc), rows in by_model.items():
+    for style, rows in style_groups.items():
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
         sizes = sorted({dot_size(eu_size_from_fashion_size(r.get('Fashion:size', ''))) for r in rows if r.get('Fashion:size')},
                         key=size_sort_key)
@@ -264,23 +261,25 @@ def mine_blaz_awin(fname, store_label):
             if not key:
                 continue
             groups.setdefault(key, []).append(row)
-    by_model = {}
+    # UNA entrada por parent_product_id (colorway real), nunca juntados
+    # por (marca, nombre) -- ese merge mezclaba colores/precios distintos
+    # bajo una sola oferta (precio del más barato, talles unidos de
+    # TODOS los colores aunque no correspondan al que se linkea) -- bug
+    # real confirmado 2026-09-14 (usuario: "ni el talle ni el precio
+    # corresponden"), ej. "adidas Copa Pure IV Elite FG" en FootStoreES
+    # juntaba 6 colorways reales (103 a 237 EUR) en una sola oferta de
+    # 103 EUR con talles 35-46 -- pero el link de 103 EUR solo tenía
+    # talle 35 real.
+    n = 0
     for key, rows in groups.items():
-        rep = rows[0]
+        rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
         brand = (rep.get('brand_name') or '').strip()
         title = norm_title(rep.get('product_name') or '')
-        mk = (brand.lower(), title.lower())
-        by_model.setdefault(mk, {'brand': brand, 'model': title, 'rows': []})
-        by_model[mk]['rows'].extend(rows)
-    n = 0
-    for mk, g in by_model.items():
-        rows = g['rows']
-        rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
         sizes = sorted({dot_size(r.get('custom_1', '').strip()) for r in rows if re.match(r'^\d', r.get('custom_1', '').strip())},
                         key=size_sort_key)
-        ground = infer_ground(g['model'], rep.get('description', ''))
+        ground = infer_ground(title, rep.get('description', ''))
         results.append({
-            'store': store_label, 'brand': g['brand'] or 'N/D', 'model': g['model'], 'groundType': ground,
+            'store': store_label, 'brand': brand or 'N/D', 'model': title, 'groundType': ground,
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
@@ -400,15 +399,23 @@ def mine_deporte_outlet():
             price = parse_price(row.get('search_price'))
             if not price:
                 continue
-            brand = (row.get('brand_name') or '').strip()
-            model = norm_title(title)
-            key = (brand.lower(), model.lower())
+            # merchant_product_id es "{parentId}-{variantId}" -- el
+            # prefijo agrupa talla/color de UN colorway real (confirmado
+            # con Umbro Velocita VI Premier amarillo: 5 filas, mismo
+            # prefijo). Agrupar por (marca, nombre) en vez de esto
+            # mezclaba colorways de precio distinto bajo una oferta,
+            # mismo bug real confirmado en AdidasES/FootStoreES/
+            # SportIsGoodES 2026-09-14 -- acá no se vio ningún caso hoy,
+            # pero es el mismo riesgo si la tienda suma más colores.
+            key = (row.get('merchant_product_id') or '').split('-')[0]
+            if not key:
+                continue
             groups.setdefault(key, []).append(row)
     n = 0
-    for (brand_lc, model_lc), rows in groups.items():
+    for key, rows in groups.items():
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
         # size_stock_status trae la talla EU real, con coma decimal
-        # ("40,5") -- una fila por talla/color.
+        # ("40,5") -- una fila por talla dentro del mismo colorway.
         sizes = sorted({dot_size(r.get('size_stock_status', '').strip()) for r in rows if re.match(r'^\d', r.get('size_stock_status', '').strip())},
                         key=size_sort_key)
         brand = (rep.get('brand_name') or '').strip()
@@ -514,9 +521,17 @@ def mine_futbolemotion(legacy_model_names):
             price = parse_price(row.get('price'))
             if not price:
                 continue
-            groups.setdefault(name.lower(), []).append(row)
+            # "product ID" es "{colorwayId}_{varianteId}" -- el prefijo
+            # agrupa talla dentro de UN colorway real. Agrupar por nombre
+            # en vez de esto mezclaba colorways de precio distinto bajo
+            # una oferta (bug real confirmado 2026-09-13/14, ej. "adidas
+            # Predator Elite L AG" juntaba una variante roja a 228.99 con
+            # una naranja a 155.99 -- 197 de 568 nombres de FutbolEmotion
+            # lo tenían).
+            key = (row.get('product ID') or '').split('_')[0] or name.lower()
+            groups.setdefault(key, []).append(row)
     n = 0
-    for name_lc, rows in groups.items():
+    for key, rows in groups.items():
         rep = min(rows, key=lambda r: parse_price(r.get('price')) or 1e9)
         name = (rep.get('name') or '').strip()
         brand = (rep.get('brand') or name.split(' ')[0]).strip()
