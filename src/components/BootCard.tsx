@@ -82,6 +82,7 @@ export default function BootCard({ boot, priority = false }: { boot: BootProduct
 
         <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
           <span className="text-sm font-semibold">
+            {cheapest.priceMax ? `${t.botas.from} ` : ""}
             {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
           </span>
           {cheapest.shipping > 0 && (

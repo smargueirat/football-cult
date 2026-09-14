@@ -90,7 +90,8 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
           </span>
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{boot.model}</h1>
           <p className="mt-2 text-sm text-[#675c44]">
-            {t.botas.bestPrice}: {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
+            {t.botas.bestPrice}: {cheapestOffer.priceMax ? `${t.botas.from} ` : ""}
+            {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
           </p>
 
           {hasDistinctPhotos && (
@@ -164,6 +165,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
                         </p>
                       )}
                       <p className="text-xs text-[#675c44]">
+                        {offer.priceMax ? `${t.botas.from} ` : ""}
                         {formatOfferMoney(offer.price, offer.currency)}
                         {offer.store === "ProSoccer"
                           ? // Tienda de EE.UU. -- el feed no da un costo de envío

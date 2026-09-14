@@ -278,12 +278,25 @@ def mine_blaz_awin(fname, store_label):
         sizes = sorted({dot_size(r.get('custom_1', '').strip()) for r in rows if re.match(r'^\d', r.get('custom_1', '').strip())},
                         key=size_sort_key)
         ground = infer_ground(title, rep.get('description', ''))
-        results.append({
+        price = parse_price(rep.get('search_price'))
+        # dentro de UN mismo colorway real, algunas tallas cuestan más que
+        # otras (confirmado real, ej. "Nike Premier 3 FG" talla 40 a 67,90
+        # vs talla 44,5 a 109 -- no es un error de datos, cada talla tiene
+        # su propio product_id/link real en el feed). price sigue siendo
+        # la más barata (representante real, el mismo link de siempre);
+        # priceMax solo se manda cuando hay diferencia real, para que la
+        # UI pueda mostrar "Desde X" en vez de una sola cifra que no vale
+        # para toda la talla listada.
+        price_max = max((parse_price(r.get('search_price')) or 0) for r in rows)
+        entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': title, 'groundType': ground,
-            'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
+            'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
-        })
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+        results.append(entry)
         n += 1
     print(f'{store_label}:', n)
 
@@ -364,12 +377,21 @@ def mine_google_shopping_fr(fname, store_label):
         # está en el segundo campo separado por ":::".
         ship_m = re.search(r':::\s*([\d.]+)\s*EUR', rep.get('shipping', ''))
         shipping = float(ship_m.group(1)) if ship_m else 0
-        results.append({
+        price = parse_price(rep.get('price'))
+        # mismo caso que mine_blaz_awin: dentro de un colorway real,
+        # alguna talla puede costar más -- price sigue siendo la más
+        # barata (el link real de siempre), priceMax solo se manda si hay
+        # diferencia real.
+        price_max = max((parse_price(r.get('price')) or 0) for r in rows)
+        entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': model, 'groundType': ground,
-            'price': parse_price(rep.get('price')), 'shipping': shipping,
+            'price': price, 'shipping': shipping,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'), 'sizes': sizes,
-        })
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+        results.append(entry)
         n += 1
     print(f'{store_label}:', n)
 

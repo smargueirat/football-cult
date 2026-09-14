@@ -76,6 +76,8 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}    {{")
     lines.append(f"{pad}      store: {ts_string(o['store'])},")
     lines.append(f"{pad}      price: {o['price']},")
+    if o.get('priceMax'):
+        lines.append(f"{pad}      priceMax: {o['priceMax']},")
     lines.append(f"{pad}      shipping: {o['shipping']},")
     lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
     lines.append(f"{pad}      url: {ts_string(o['url'])},")
@@ -130,6 +132,7 @@ def build_entries(mined, used_ids):
             "offers": [{
                 "store": d["store"],
                 "price": d["price"],
+                **({"priceMax": d["priceMax"]} if d.get("priceMax") else {}),
                 "shipping": d["shipping"],
                 "currency": d["currency"],
                 "url": d["url"],

@@ -35,6 +35,14 @@
 export interface BootOffer {
   store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR";
   price: number;
+  // precio real de la talla MÁS BARATA del colorway -- algunas tiendas
+  // (confirmado en FootStoreES/SportIsGoodES/FootStoreFR) cobran distinto
+  // según la talla del mismo modelo/color real, ej. una talla en oferta
+  // puntual. priceMax (cuando existe) es la talla más cara real del
+  // mismo colorway -- la UI debe mostrar "Desde price" en vez de "price"
+  // a secas cuando priceMax está presente, para no prometer ese precio
+  // para toda la lista de talles.
+  priceMax?: number;
   shipping: number;
   currency: BootCurrency;
   url: string;
@@ -7004,6 +7012,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 37.67,
+        priceMax: 42.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301629771&a=3013769&m=65906",
@@ -7157,6 +7166,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 182.65,
+        priceMax: 205.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44609082287&a=3013769&m=65906",
@@ -7191,6 +7201,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 158.12,
+        priceMax: 191.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43622254588&a=3013769&m=65906",
@@ -7225,6 +7236,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 192.5,
+        priceMax: 217.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43785164877&a=3013769&m=65906",
@@ -7633,6 +7645,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 146.06,
+        priceMax: 162.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301721204&a=3013769&m=65906",
@@ -8194,6 +8207,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 79.12,
+        priceMax: 83.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44073830218&a=3013769&m=65906",
@@ -8228,6 +8242,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 67.69,
+        priceMax: 77.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45368184160&a=3013769&m=65906",
@@ -8313,6 +8328,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 118.65,
+        priceMax: 132.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301740835&a=3013769&m=65906",
@@ -8398,6 +8414,7 @@ const minedBootProductsChunk2: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 162.66,
+        priceMax: 181.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44011872154&a=3013769&m=65906",
@@ -9251,6 +9268,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 35.18,
+        priceMax: 39.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301796788&a=3013769&m=65906",
@@ -9370,6 +9388,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 168.91,
+        priceMax: 181.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301807376&a=3013769&m=65906",
@@ -9523,6 +9542,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 146.06,
+        priceMax: 162.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301835681&a=3013769&m=65906",
@@ -9557,6 +9577,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 159.04,
+        priceMax: 160.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301835694&a=3013769&m=65906",
@@ -9625,6 +9646,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 148.22,
+        priceMax: 148.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301835811&a=3013769&m=65906",
@@ -9659,6 +9681,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 42.47,
+        priceMax: 44.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44982118611&a=3013769&m=65906",
@@ -9693,6 +9716,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 41.25,
+        priceMax: 44.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301835855&a=3013769&m=65906",
@@ -9710,6 +9734,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 45.65,
+        priceMax: 50.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45349967550&a=3013769&m=65906",
@@ -9880,6 +9905,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 168.91,
+        priceMax: 181.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45497436221&a=3013769&m=65906",
@@ -9999,6 +10025,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 181.43,
+        priceMax: 195.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301842112&a=3013769&m=65906",
@@ -10203,6 +10230,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 56.98,
+        priceMax: 68.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301847176&a=3013769&m=65906",
@@ -10390,6 +10418,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 97.5,
+        priceMax: 108.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301847314&a=3013769&m=65906",
@@ -10730,6 +10759,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 60.78,
+        priceMax: 77.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301866765&a=3013769&m=65906",
@@ -10798,6 +10828,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 210.0,
+        priceMax: 239.27,
         shipping: 0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301866798&a=3013769&m=65906",
@@ -10934,6 +10965,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 141.98,
+        priceMax: 170.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43301876161&a=3013769&m=65906",
@@ -11172,6 +11204,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 50.6,
+        priceMax: 54.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43672614212&a=3013769&m=65906",
@@ -11308,6 +11341,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 32.2,
+        priceMax: 33.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44558234902&a=3013769&m=65906",
@@ -11342,6 +11376,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 84.29,
+        priceMax: 90.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526478775&a=3013769&m=65906",
@@ -11512,6 +11547,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 122.26,
+        priceMax: 127.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44558234938&a=3013769&m=65906",
@@ -11580,6 +11616,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 60.33,
+        priceMax: 63.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44974741445&a=3013769&m=65906",
@@ -11835,6 +11872,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 165.16,
+        priceMax: 166.32,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43831545045&a=3013769&m=65906",
@@ -11920,6 +11958,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 42.66,
+        priceMax: 49.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43757959815&a=3013769&m=65906",
@@ -12175,6 +12214,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 165.16,
+        priceMax: 204.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43831545109&a=3013769&m=65906",
@@ -12192,6 +12232,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 198.4,
+        priceMax: 212.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43771752287&a=3013769&m=65906",
@@ -12209,6 +12250,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 171.28,
+        priceMax: 198.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345753977&a=3013769&m=65906",
@@ -12226,6 +12268,7 @@ const minedBootProductsChunk3: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 177.39,
+        priceMax: 208.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43942752384&a=3013769&m=65906",
@@ -12280,6 +12323,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 171.28,
+        priceMax: 198.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43706643606&a=3013769&m=65906",
@@ -12365,6 +12409,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 55.05,
+        priceMax: 69.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43831545122&a=3013769&m=65906",
@@ -12416,6 +12461,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 67.83,
+        priceMax: 72.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43771752329&a=3013769&m=65906",
@@ -12433,6 +12479,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 58.12,
+        priceMax: 67.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345753992&a=3013769&m=65906",
@@ -12450,6 +12497,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 47.31,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43956179383&a=3013769&m=65906",
@@ -12467,6 +12515,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 38.0,
+        priceMax: 44.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45076811150&a=3013769&m=65906",
@@ -12552,6 +12601,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 46.02,
+        priceMax: 54.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45942268048&a=3013769&m=65906",
@@ -12739,6 +12789,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 134.41,
+        priceMax: 144.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45577500542&a=3013769&m=65906",
@@ -13317,6 +13368,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 212.44,
+        priceMax: 214.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45372049484&a=3013769&m=65906",
@@ -13385,6 +13437,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 69.14,
+        priceMax: 70.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45358732081&a=3013769&m=65906",
@@ -14422,6 +14475,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 69.14,
+        priceMax: 70.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376303820&a=3013769&m=65906",
@@ -14439,6 +14493,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 114.4,
+        priceMax: 116.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45358732275&a=3013769&m=65906",
@@ -14456,6 +14511,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 106.85,
+        priceMax: 108.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45373510183&a=3013769&m=65906",
@@ -14609,6 +14665,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 121.94,
+        priceMax: 123.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376303836&a=3013769&m=65906",
@@ -14677,6 +14734,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 204.9,
+        priceMax: 206.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45373510189&a=3013769&m=65906",
@@ -14762,6 +14820,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 69.14,
+        priceMax: 70.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376303869&a=3013769&m=65906",
@@ -14779,6 +14838,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 72.92,
+        priceMax: 74.6,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45358732312&a=3013769&m=65906",
@@ -14796,6 +14856,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 72.92,
+        priceMax: 74.6,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376303878&a=3013769&m=65906",
@@ -14847,6 +14908,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 121.94,
+        priceMax: 123.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45372049837&a=3013769&m=65906",
@@ -14864,6 +14926,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 184.0,
+        priceMax: 196.78,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45325924388&a=3013769&m=65906",
@@ -14881,6 +14944,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 176.0,
+        priceMax: 188.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45325924393&a=3013769&m=65906",
@@ -14966,6 +15030,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 176.0,
+        priceMax: 188.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45312568213&a=3013769&m=65906",
@@ -15017,6 +15082,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 168.0,
+        priceMax: 179.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45319547061&a=3013769&m=65906",
@@ -15034,6 +15100,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 212.44,
+        priceMax: 214.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376303903&a=3013769&m=65906",
@@ -15221,6 +15288,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "SportIsGoodES",
         price: 82.87,
+        priceMax: 84.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45889187098&a=3013769&m=65906",
@@ -15255,6 +15323,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 173.0,
+        priceMax: 180.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923782869&a=3013769&m=65912",
@@ -15272,6 +15341,7 @@ const minedBootProductsChunk4: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 118.0,
+        priceMax: 120.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686633405&a=3013769&m=65912",
@@ -15309,6 +15379,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 137.0,
+        priceMax: 139.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44038763848&a=3013769&m=65912",
@@ -15513,6 +15584,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.9,
+        priceMax: 109.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36830047147&a=3013769&m=65912",
@@ -16176,6 +16248,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 92.6,
+        priceMax: 195.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41165030295&a=3013769&m=65912",
@@ -16210,6 +16283,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 150.0,
+        priceMax: 150.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41188446826&a=3013769&m=65912",
@@ -16244,6 +16318,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104841926&a=3013769&m=65912",
@@ -16278,6 +16353,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 61.0,
+        priceMax: 68.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104841929&a=3013769&m=65912",
@@ -16295,6 +16371,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41165030411&a=3013769&m=65912",
@@ -16312,6 +16389,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 117.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41180464769&a=3013769&m=65912",
@@ -16346,6 +16424,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.0,
+        priceMax: 73.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44126446564&a=3013769&m=65912",
@@ -16397,6 +16476,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 149.0,
+        priceMax: 230.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371013752&a=3013769&m=65912",
@@ -16533,6 +16613,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.47,
+        priceMax: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36945140738&a=3013769&m=65912",
@@ -16584,6 +16665,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 37.67,
+        priceMax: 42.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36622367245&a=3013769&m=65912",
@@ -16720,6 +16802,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.9,
+        priceMax: 56.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485377864&a=3013769&m=65912",
@@ -16805,6 +16888,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.9,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36733391144&a=3013769&m=65912",
@@ -16856,6 +16940,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 221.0,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44078824983&a=3013769&m=65912",
@@ -16924,6 +17009,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 37.0,
+        priceMax: 59.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529497243&a=3013769&m=65912",
@@ -16941,6 +17027,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.0,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41442418419&a=3013769&m=65912",
@@ -16975,6 +17062,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 46.73,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43910077116&a=3013769&m=65912",
@@ -17128,6 +17216,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.15,
+        priceMax: 52.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323052168&a=3013769&m=65912",
@@ -17230,6 +17319,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.56,
+        priceMax: 71.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41943680510&a=3013769&m=65912",
@@ -17247,6 +17337,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 74.08,
+        priceMax: 95.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923991982&a=3013769&m=65912",
@@ -17264,6 +17355,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 76.0,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41442418570&a=3013769&m=65912",
@@ -17332,6 +17424,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 200.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41529371828&a=3013769&m=65912",
@@ -17417,6 +17510,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 197.0,
+        priceMax: 230.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695073078&a=3013769&m=65912",
@@ -17434,6 +17528,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 130.0,
+        priceMax: 230.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42103251096&a=3013769&m=65912",
@@ -17468,6 +17563,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41188447007&a=3013769&m=65912",
@@ -17485,6 +17581,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 77.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41180465953&a=3013769&m=65912",
@@ -17553,6 +17650,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 219.0,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104844611&a=3013769&m=65912",
@@ -17570,6 +17668,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 160.51,
+        priceMax: 258.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37552942716&a=3013769&m=65912",
@@ -17604,6 +17703,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.0,
+        priceMax: 217.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42084753308&a=3013769&m=65912",
@@ -17621,6 +17721,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 156.0,
+        priceMax: 166.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797439246&a=3013769&m=65912",
@@ -17655,6 +17756,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44126447516&a=3013769&m=65912",
@@ -17672,6 +17774,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104844635&a=3013769&m=65912",
@@ -17689,6 +17792,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104844658&a=3013769&m=65912",
@@ -17723,6 +17827,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.5,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43691268998&a=3013769&m=65912",
@@ -17825,6 +17930,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 200.0,
+        priceMax: 258.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936956910&a=3013769&m=65912",
@@ -17842,6 +17948,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 185.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42084753328&a=3013769&m=65912",
@@ -17944,6 +18051,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.58,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43656578540&a=3013769&m=65912",
@@ -18012,6 +18120,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 172.0,
+        priceMax: 172.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104845007&a=3013769&m=65912",
@@ -18080,6 +18189,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 117.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43510984047&a=3013769&m=65912",
@@ -18284,6 +18394,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 40.74,
+        priceMax: 68.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40329632347&a=3013769&m=65912",
@@ -18318,6 +18429,7 @@ const minedBootProductsChunk5: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.0,
+        priceMax: 97.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38908715937&a=3013769&m=65912",
@@ -18406,6 +18518,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 112.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705553110&a=3013769&m=65912",
@@ -18491,6 +18604,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.47,
+        priceMax: 72.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37976827939&a=3013769&m=65912",
@@ -18576,6 +18690,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.64,
+        priceMax: 65.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45931729884&a=3013769&m=65912",
@@ -18610,6 +18725,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 177.0,
+        priceMax: 253.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829759170&a=3013769&m=65912",
@@ -18797,6 +18913,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.47,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37129855887&a=3013769&m=65912",
@@ -18865,6 +18982,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 73.35,
+        priceMax: 109.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41586308645&a=3013769&m=65912",
@@ -18899,6 +19017,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.47,
+        priceMax: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37947861183&a=3013769&m=65912",
@@ -18950,6 +19069,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 43.21,
+        priceMax: 66.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37356688150&a=3013769&m=65912",
@@ -19086,6 +19206,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 267.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42121867518&a=3013769&m=65912",
@@ -19154,6 +19275,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 143.89,
+        priceMax: 230.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507548&a=3013769&m=65912",
@@ -19188,6 +19310,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 163.11,
+        priceMax: 169.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43510984894&a=3013769&m=65912",
@@ -19222,6 +19345,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 61.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104847425&a=3013769&m=65912",
@@ -19239,6 +19363,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.63,
+        priceMax: 64.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40174230574&a=3013769&m=65912",
@@ -19273,6 +19398,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 109.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507563&a=3013769&m=65912",
@@ -19392,6 +19518,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 219.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705553880&a=3013769&m=65912",
@@ -19409,6 +19536,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 151.68,
+        priceMax: 218.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38259050124&a=3013769&m=65912",
@@ -19443,6 +19571,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40965026563&a=3013769&m=65912",
@@ -19477,6 +19606,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104847488&a=3013769&m=65912",
@@ -19528,6 +19658,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507599&a=3013769&m=65912",
@@ -19630,6 +19761,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 88.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695073865&a=3013769&m=65912",
@@ -19698,6 +19830,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 26.98,
+        priceMax: 48.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44729488440&a=3013769&m=65912",
@@ -19715,6 +19848,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507633&a=3013769&m=65912",
@@ -19749,6 +19883,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 192.0,
+        priceMax: 236.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44746183415&a=3013769&m=65912",
@@ -19783,6 +19918,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 146.06,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507636&a=3013769&m=65912",
@@ -19800,6 +19936,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 175.17,
+        priceMax: 221.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507648&a=3013769&m=65912",
@@ -19868,6 +20005,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 165.16,
+        priceMax: 238.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507658&a=3013769&m=65912",
@@ -19919,6 +20057,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104847561&a=3013769&m=65912",
@@ -19936,6 +20075,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 49.5,
+        priceMax: 61.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507673&a=3013769&m=65912",
@@ -19953,6 +20093,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.05,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38549392790&a=3013769&m=65912",
@@ -19970,6 +20111,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38561959626&a=3013769&m=65912",
@@ -20021,6 +20163,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 37.12,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507694&a=3013769&m=65912",
@@ -20038,6 +20181,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 106.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38903507706&a=3013769&m=65912",
@@ -20055,6 +20199,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 109.0,
+        priceMax: 132.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38047250178&a=3013769&m=65912",
@@ -20191,6 +20336,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.0,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38914643163&a=3013769&m=65912",
@@ -20208,6 +20354,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.56,
+        priceMax: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41690426000&a=3013769&m=65912",
@@ -20378,6 +20525,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 34.71,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44862587286&a=3013769&m=65912",
@@ -20565,6 +20713,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.19,
+        priceMax: 68.56,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42217464663&a=3013769&m=65912",
@@ -20599,6 +20748,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 37.67,
+        priceMax: 48.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291081255&a=3013769&m=65912",
@@ -20616,6 +20766,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.81,
+        priceMax: 59.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43166893469&a=3013769&m=65912",
@@ -20633,6 +20784,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.24,
+        priceMax: 48.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291081256&a=3013769&m=65912",
@@ -20650,6 +20802,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.1,
+        priceMax: 54.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291081262&a=3013769&m=65912",
@@ -20684,6 +20837,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 27.15,
+        priceMax: 31.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39053995150&a=3013769&m=65912",
@@ -20718,6 +20872,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.04,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39053995156&a=3013769&m=65912",
@@ -20735,6 +20890,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.04,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41958312225&a=3013769&m=65912",
@@ -20769,6 +20925,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 131.07,
+        priceMax: 167.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39015925920&a=3013769&m=65912",
@@ -20905,6 +21062,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 73.65,
+        priceMax: 78.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645389&a=3013769&m=65912",
@@ -20922,6 +21080,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 133.0,
+        priceMax: 238.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444976566&a=3013769&m=65912",
@@ -20956,6 +21115,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 79.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45152994681&a=3013769&m=65912",
@@ -21024,6 +21184,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 69.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41385743296&a=3013769&m=65912",
@@ -21041,6 +21202,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529658168&a=3013769&m=65912",
@@ -21058,6 +21220,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42313327302&a=3013769&m=65912",
@@ -21126,6 +21289,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 39.48,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40831925076&a=3013769&m=65912",
@@ -21177,6 +21341,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.12,
+        priceMax: 127.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38532989154&a=3013769&m=65912",
@@ -21211,6 +21376,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 77.14,
+        priceMax: 119.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41971815135&a=3013769&m=65912",
@@ -21228,6 +21394,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.69,
+        priceMax: 77.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371015852&a=3013769&m=65912",
@@ -21245,6 +21412,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 65.31,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39950516556&a=3013769&m=65912",
@@ -21262,6 +21430,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.9,
+        priceMax: 81.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40916341969&a=3013769&m=65912",
@@ -21279,6 +21448,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38944113085&a=3013769&m=65912",
@@ -21296,6 +21466,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.83,
+        priceMax: 30.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39110167793&a=3013769&m=65912",
@@ -21330,6 +21501,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 56.89,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38353551045&a=3013769&m=65912",
@@ -21364,6 +21536,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 43.21,
+        priceMax: 68.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38676439419&a=3013769&m=65912",
@@ -21398,6 +21571,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.43,
+        priceMax: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38711822859&a=3013769&m=65912",
@@ -21415,6 +21589,7 @@ const minedBootProductsChunk6: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 76.0,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104849008&a=3013769&m=65912",
@@ -21452,6 +21627,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 252.0,
+        priceMax: 272.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38731592119&a=3013769&m=65912",
@@ -21588,6 +21764,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104849219&a=3013769&m=65912",
@@ -21656,6 +21833,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.0,
+        priceMax: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43219401055&a=3013769&m=65912",
@@ -21690,6 +21868,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705554912&a=3013769&m=65912",
@@ -21741,6 +21920,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371015909&a=3013769&m=65912",
@@ -21860,6 +22040,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 118.65,
+        priceMax: 132.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38497909729&a=3013769&m=65912",
@@ -21894,6 +22075,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 56.89,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40714958369&a=3013769&m=65912",
@@ -21911,6 +22093,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 73.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529671399&a=3013769&m=65912",
@@ -21962,6 +22145,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104849724&a=3013769&m=65912",
@@ -21979,6 +22163,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.0,
+        priceMax: 64.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104849728&a=3013769&m=65912",
@@ -22064,6 +22249,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 82.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40101162618&a=3013769&m=65912",
@@ -22081,6 +22267,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.0,
+        priceMax: 82.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958845939&a=3013769&m=65912",
@@ -22115,6 +22302,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 46.0,
+        priceMax: 47.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905482608&a=3013769&m=65912",
@@ -22217,6 +22405,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 172.85,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39938440251&a=3013769&m=65912",
@@ -22234,6 +22423,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.56,
+        priceMax: 88.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38892421973&a=3013769&m=65912",
@@ -22285,6 +22475,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 40.12,
+        priceMax: 64.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39001315416&a=3013769&m=65912",
@@ -22370,6 +22561,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 206.0,
+        priceMax: 235.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45819211678&a=3013769&m=65912",
@@ -22455,6 +22647,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 252.0,
+        priceMax: 253.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529683768&a=3013769&m=65912",
@@ -22523,6 +22716,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 154.33,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39031829949&a=3013769&m=65912",
@@ -22540,6 +22734,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 225.0,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104850319&a=3013769&m=65912",
@@ -22625,6 +22820,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 47.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104850541&a=3013769&m=65912",
@@ -22659,6 +22855,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.67,
+        priceMax: 101.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39052425738&a=3013769&m=65912",
@@ -22761,6 +22958,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 162.66,
+        priceMax: 238.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43691270513&a=3013769&m=65912",
@@ -22795,6 +22993,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 236.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41332003049&a=3013769&m=65912",
@@ -22829,6 +23028,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 53.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529703108&a=3013769&m=65912",
@@ -22846,6 +23046,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 61.0,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104850964&a=3013769&m=65912",
@@ -23118,6 +23319,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 173.0,
+        priceMax: 225.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44038765110&a=3013769&m=65912",
@@ -23220,6 +23422,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 44.75,
+        priceMax: 46.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39120579796&a=3013769&m=65912",
@@ -23237,6 +23440,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 44.75,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39120579814&a=3013769&m=65912",
@@ -23288,6 +23492,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 81.0,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529711608&a=3013769&m=65912",
@@ -23305,6 +23510,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104851757&a=3013769&m=65912",
@@ -23441,6 +23647,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 44.1,
+        priceMax: 45.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713906&a=3013769&m=65912",
@@ -23492,6 +23699,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.0,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104851954&a=3013769&m=65912",
@@ -23594,6 +23802,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 101.3,
+        priceMax: 143.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43087816589&a=3013769&m=65912",
@@ -23662,6 +23871,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 117.0,
+        priceMax: 118.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40200062250&a=3013769&m=65912",
@@ -23696,6 +23906,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.74,
+        priceMax: 54.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188127&a=3013769&m=65912",
@@ -23713,6 +23924,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.45,
+        priceMax: 61.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40974405450&a=3013769&m=65912",
@@ -23747,6 +23959,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.99,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188145&a=3013769&m=65912",
@@ -23764,6 +23977,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 101.94,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40974405471&a=3013769&m=65912",
@@ -23798,6 +24012,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.81,
+        priceMax: 55.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905482960&a=3013769&m=65912",
@@ -23815,6 +24030,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.24,
+        priceMax: 48.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188165&a=3013769&m=65912",
@@ -23849,6 +24065,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 101.94,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42095531568&a=3013769&m=65912",
@@ -23951,6 +24168,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.62,
+        priceMax: 91.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376589&a=3013769&m=65912",
@@ -23968,6 +24186,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.21,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376592&a=3013769&m=65912",
@@ -23985,6 +24204,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 39.49,
+        priceMax: 40.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376610&a=3013769&m=65912",
@@ -24019,6 +24239,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.9,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41272677401&a=3013769&m=65912",
@@ -24053,6 +24274,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.9,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376634&a=3013769&m=65912",
@@ -24070,6 +24292,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.89,
+        priceMax: 55.56,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376642&a=3013769&m=65912",
@@ -24087,6 +24310,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.39,
+        priceMax: 43.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376650&a=3013769&m=65912",
@@ -24104,6 +24328,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.68,
+        priceMax: 37.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376658&a=3013769&m=65912",
@@ -24138,6 +24363,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.9,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188251&a=3013769&m=65912",
@@ -24155,6 +24381,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 47.61,
+        priceMax: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376673&a=3013769&m=65912",
@@ -24172,6 +24399,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.56,
+        priceMax: 61.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40226759993&a=3013769&m=65912",
@@ -24189,6 +24417,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.62,
+        priceMax: 53.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376684&a=3013769&m=65912",
@@ -24206,6 +24435,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 41.91,
+        priceMax: 43.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376691&a=3013769&m=65912",
@@ -24223,6 +24453,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 47.61,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376701&a=3013769&m=65912",
@@ -24240,6 +24471,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 35.86,
+        priceMax: 36.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40132376715&a=3013769&m=65912",
@@ -24257,6 +24489,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 31.49,
+        priceMax: 40.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188252&a=3013769&m=65912",
@@ -24291,6 +24524,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 57.28,
+        priceMax: 58.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905483212&a=3013769&m=65912",
@@ -24325,6 +24559,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 28.62,
+        priceMax: 29.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945461018&a=3013769&m=65912",
@@ -24359,6 +24594,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.83,
+        priceMax: 91.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905483221&a=3013769&m=65912",
@@ -24376,6 +24612,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 113.53,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188264&a=3013769&m=65912",
@@ -24393,6 +24630,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 113.53,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188267&a=3013769&m=65912",
@@ -24444,6 +24682,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 97.5,
+        priceMax: 124.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291082495&a=3013769&m=65912",
@@ -24461,6 +24700,7 @@ const minedBootProductsChunk7: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 34.84,
+        priceMax: 37.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44061761969&a=3013769&m=65912",
@@ -24498,6 +24738,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 30.25,
+        priceMax: 31.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40974405601&a=3013769&m=65912",
@@ -24566,6 +24807,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 101.94,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40255218187&a=3013769&m=65912",
@@ -24583,6 +24825,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 148.22,
+        priceMax: 213.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40563602560&a=3013769&m=65912",
@@ -24651,6 +24894,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 145.43,
+        priceMax: 235.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40093281028&a=3013769&m=65912",
@@ -24685,6 +24929,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.87,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40209851232&a=3013769&m=65912",
@@ -24855,6 +25100,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 95.92,
+        priceMax: 163.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40105326024&a=3013769&m=65912",
@@ -24872,6 +25118,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 252.0,
+        priceMax: 254.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40101162922&a=3013769&m=65912",
@@ -24906,6 +25153,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 110.0,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40111051660&a=3013769&m=65912",
@@ -24940,6 +25188,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.56,
+        priceMax: 78.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905483303&a=3013769&m=65912",
@@ -24974,6 +25223,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 144.0,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152188323&a=3013769&m=65912",
@@ -25008,6 +25258,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 144.0,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40563602812&a=3013769&m=65912",
@@ -25059,6 +25310,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40965026641&a=3013769&m=65912",
@@ -25127,6 +25379,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 44.68,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40196741145&a=3013769&m=65912",
@@ -25280,6 +25533,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371017166&a=3013769&m=65912",
@@ -25331,6 +25585,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 112.5,
+        priceMax: 118.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42866223493&a=3013769&m=65912",
@@ -25348,6 +25603,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.0,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529796727&a=3013769&m=65912",
@@ -25365,6 +25621,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529796740&a=3013769&m=65912",
@@ -25382,6 +25639,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958846474&a=3013769&m=65912",
@@ -25450,6 +25708,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40916342550&a=3013769&m=65912",
@@ -25535,6 +25794,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 159.04,
+        priceMax: 170.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40191878399&a=3013769&m=65912",
@@ -25603,6 +25863,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 57.0,
+        priceMax: 73.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40916342587&a=3013769&m=65912",
@@ -25637,6 +25898,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.25,
+        priceMax: 78.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40196741190&a=3013769&m=65912",
@@ -25688,6 +25950,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 77.0,
+        priceMax: 96.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797446562&a=3013769&m=65912",
@@ -25705,6 +25968,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 63.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40196741214&a=3013769&m=65912",
@@ -25722,6 +25986,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.25,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40916342608&a=3013769&m=65912",
@@ -25739,6 +26004,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.3,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40196741223&a=3013769&m=65912",
@@ -25756,6 +26022,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 100.0,
+        priceMax: 103.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40196741227&a=3013769&m=65912",
@@ -25790,6 +26057,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 174.98,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654203222&a=3013769&m=65912",
@@ -25807,6 +26075,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40821276488&a=3013769&m=65912",
@@ -25875,6 +26144,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 90.0,
+        priceMax: 111.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40663926179&a=3013769&m=65912",
@@ -25892,6 +26162,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 170.0,
+        priceMax: 186.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40791236817&a=3013769&m=65912",
@@ -25909,6 +26180,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.64,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40714959265&a=3013769&m=65912",
@@ -25960,6 +26232,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.8,
+        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945461668&a=3013769&m=65912",
@@ -25977,6 +26250,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.56,
+        priceMax: 31.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112350745&a=3013769&m=65912",
@@ -26096,6 +26370,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 64.0,
+        priceMax: 87.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40916342766&a=3013769&m=65912",
@@ -26181,6 +26456,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 103.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797446691&a=3013769&m=65912",
@@ -26266,6 +26542,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 213.61,
+        priceMax: 246.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41704330681&a=3013769&m=65912",
@@ -26334,6 +26611,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 188.0,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45906304882&a=3013769&m=65912",
@@ -26368,6 +26646,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 135.0,
+        priceMax: 171.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42565883300&a=3013769&m=65912",
@@ -26419,6 +26698,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.52,
+        priceMax: 52.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40356923017&a=3013769&m=65912",
@@ -26436,6 +26716,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 168.91,
+        priceMax: 205.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40375895048&a=3013769&m=65912",
@@ -26470,6 +26751,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.0,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40356923021&a=3013769&m=65912",
@@ -26521,6 +26803,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 91.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40535424300&a=3013769&m=65912",
@@ -26572,6 +26855,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43436663805&a=3013769&m=65912",
@@ -26810,6 +27094,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 114.27,
+        priceMax: 161.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43846817893&a=3013769&m=65912",
@@ -26827,6 +27112,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.56,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40990568427&a=3013769&m=65912",
@@ -26844,6 +27130,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.41,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985463136&a=3013769&m=65912",
@@ -26878,6 +27165,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 47.61,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985463142&a=3013769&m=65912",
@@ -26895,6 +27183,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.47,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41021436692&a=3013769&m=65912",
@@ -26946,6 +27235,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.62,
+        priceMax: 53.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985463160&a=3013769&m=65912",
@@ -26963,6 +27253,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 172.85,
+        priceMax: 237.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985463165&a=3013769&m=65912",
@@ -26980,6 +27271,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 104.94,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41110050163&a=3013769&m=65912",
@@ -27082,6 +27374,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 64.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860427384&a=3013769&m=65912",
@@ -27201,6 +27494,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 239.0,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43219404390&a=3013769&m=65912",
@@ -27303,6 +27597,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 101.0,
+        priceMax: 103.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529885362&a=3013769&m=65912",
@@ -27320,6 +27615,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 95.0,
+        priceMax: 110.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41892236056&a=3013769&m=65912",
@@ -27354,6 +27650,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 104.94,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41221974713&a=3013769&m=65912",
@@ -27388,6 +27685,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 134.82,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41837375155&a=3013769&m=65912",
@@ -27405,6 +27703,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 183.0,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42721414115&a=3013769&m=65912",
@@ -27422,6 +27721,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.0,
+        priceMax: 57.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377150&a=3013769&m=65912",
@@ -27473,6 +27773,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 146.06,
+        priceMax: 162.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42023047112&a=3013769&m=65912",
@@ -27490,6 +27791,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 174.98,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44981388941&a=3013769&m=65912",
@@ -27507,6 +27809,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 159.04,
+        priceMax: 159.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42246665214&a=3013769&m=65912",
@@ -27524,6 +27827,7 @@ const minedBootProductsChunk8: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42023047131&a=3013769&m=65912",
@@ -27595,6 +27899,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.0,
+        priceMax: 56.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42428600878&a=3013769&m=65912",
@@ -27629,6 +27934,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 56.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376236532&a=3013769&m=65912",
@@ -27646,6 +27952,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42023047157&a=3013769&m=65912",
@@ -27697,6 +28004,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 162.66,
+        priceMax: 201.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377206&a=3013769&m=65912",
@@ -27731,6 +28039,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 148.22,
+        priceMax: 196.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42023047175&a=3013769&m=65912",
@@ -27748,6 +28057,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 148.22,
+        priceMax: 280.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42646128764&a=3013769&m=65912",
@@ -27782,6 +28092,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.47,
+        priceMax: 44.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44981388945&a=3013769&m=65912",
@@ -27816,6 +28127,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377245&a=3013769&m=65912",
@@ -27833,6 +28145,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 41.25,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377260&a=3013769&m=65912",
@@ -27850,6 +28163,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 45.65,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348246330&a=3013769&m=65912",
@@ -27884,6 +28198,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 90.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377390&a=3013769&m=65912",
@@ -27901,6 +28216,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 108.0,
+        priceMax: 119.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42023047197&a=3013769&m=65912",
@@ -27918,6 +28234,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 108.0,
+        priceMax: 119.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42671911112&a=3013769&m=65912",
@@ -27935,6 +28252,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.05,
+        priceMax: 68.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377460&a=3013769&m=65912",
@@ -27969,6 +28287,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 180.0,
+        priceMax: 208.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42257429780&a=3013769&m=65912",
@@ -28003,6 +28322,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 183.0,
+        priceMax: 239.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42191468144&a=3013769&m=65912",
@@ -28020,6 +28340,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 157.55,
+        priceMax: 239.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44406809377&a=3013769&m=65912",
@@ -28054,6 +28375,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 127.05,
+        priceMax: 239.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41789919364&a=3013769&m=65912",
@@ -28071,6 +28393,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 150.15,
+        priceMax: 206.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41789919377&a=3013769&m=65912",
@@ -28088,6 +28411,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.0,
+        priceMax: 170.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377597&a=3013769&m=65912",
@@ -28105,6 +28429,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.0,
+        priceMax: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377607&a=3013769&m=65912",
@@ -28122,6 +28447,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.0,
+        priceMax: 78.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958846844&a=3013769&m=65912",
@@ -28139,6 +28465,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.0,
+        priceMax: 72.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42246665222&a=3013769&m=65912",
@@ -28173,6 +28500,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 61.87,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654209059&a=3013769&m=65912",
@@ -28190,6 +28518,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 106.0,
+        priceMax: 108.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377624&a=3013769&m=65912",
@@ -28207,6 +28536,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.0,
+        priceMax: 201.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41789919393&a=3013769&m=65912",
@@ -28258,6 +28588,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.0,
+        priceMax: 201.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41968035287&a=3013769&m=65912",
@@ -28275,6 +28606,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 74.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377678&a=3013769&m=65912",
@@ -28309,6 +28641,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 32.5,
+        priceMax: 65.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42428600989&a=3013769&m=65912",
@@ -28326,6 +28659,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 168.91,
+        priceMax: 208.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41637253761&a=3013769&m=65912",
@@ -28343,6 +28677,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 142.93,
+        priceMax: 270.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42418817976&a=3013769&m=65912",
@@ -28394,6 +28729,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42418817979&a=3013769&m=65912",
@@ -28411,6 +28747,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 83.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41687807903&a=3013769&m=65912",
@@ -28428,6 +28765,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 108.0,
+        priceMax: 135.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377687&a=3013769&m=65912",
@@ -28445,6 +28783,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 90.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42018178976&a=3013769&m=65912",
@@ -28479,6 +28818,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 108.0,
+        priceMax: 119.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41929584334&a=3013769&m=65912",
@@ -28496,6 +28836,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 181.43,
+        priceMax: 195.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42830938598&a=3013769&m=65912",
@@ -28564,6 +28905,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377724&a=3013769&m=65912",
@@ -28581,6 +28923,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 125.0,
+        priceMax: 153.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958846846&a=3013769&m=65912",
@@ -28598,6 +28941,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 115.0,
+        priceMax: 144.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377739&a=3013769&m=65912",
@@ -28615,6 +28959,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 100.0,
+        priceMax: 115.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371022391&a=3013769&m=65912",
@@ -28632,6 +28977,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 208.0,
+        priceMax: 267.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630377849&a=3013769&m=65912",
@@ -28649,6 +28995,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 181.69,
+        priceMax: 189.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41837375319&a=3013769&m=65912",
@@ -28683,6 +29030,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 142.93,
+        priceMax: 267.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41789919457&a=3013769&m=65912",
@@ -28717,6 +29065,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 115.0,
+        priceMax: 126.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42012910654&a=3013769&m=65912",
@@ -28734,6 +29083,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529917270&a=3013769&m=65912",
@@ -28751,6 +29101,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376236637&a=3013769&m=65912",
@@ -28768,6 +29119,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 65.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630378017&a=3013769&m=65912",
@@ -28785,6 +29137,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958846868&a=3013769&m=65912",
@@ -28819,6 +29172,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 84.0,
+        priceMax: 87.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958846869&a=3013769&m=65912",
@@ -28836,6 +29190,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42018178989&a=3013769&m=65912",
@@ -28921,6 +29276,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 39.67,
+        priceMax: 54.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41903890512&a=3013769&m=65912",
@@ -28938,6 +29294,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.01,
+        priceMax: 69.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746537818&a=3013769&m=65912",
@@ -28955,6 +29312,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 39.67,
+        priceMax: 54.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216627&a=3013769&m=65912",
@@ -28989,6 +29347,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 35.49,
+        priceMax: 48.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41959679068&a=3013769&m=65912",
@@ -29006,6 +29365,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 56.98,
+        priceMax: 73.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42751375882&a=3013769&m=65912",
@@ -29023,6 +29383,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 32.21,
+        priceMax: 44.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746537836&a=3013769&m=65912",
@@ -29057,6 +29418,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.46,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41908577582&a=3013769&m=65912",
@@ -29074,6 +29436,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.17,
+        priceMax: 102.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746537847&a=3013769&m=65912",
@@ -29091,6 +29454,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.46,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216647&a=3013769&m=65912",
@@ -29125,6 +29489,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 130.62,
+        priceMax: 138.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216655&a=3013769&m=65912",
@@ -29142,6 +29507,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 96.06,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41908577585&a=3013769&m=65912",
@@ -29159,6 +29525,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 123.51,
+        priceMax: 167.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746537856&a=3013769&m=65912",
@@ -29176,6 +29543,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 96.06,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216663&a=3013769&m=65912",
@@ -29261,6 +29629,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 97.5,
+        priceMax: 124.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270681209&a=3013769&m=65912",
@@ -29312,6 +29681,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 35.49,
+        priceMax: 48.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41903890528&a=3013769&m=65912",
@@ -29329,6 +29699,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.81,
+        priceMax: 55.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914974685&a=3013769&m=65912",
@@ -29346,6 +29717,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 45.64,
+        priceMax: 62.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746537868&a=3013769&m=65912",
@@ -29363,6 +29735,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.45,
+        priceMax: 57.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291084018&a=3013769&m=65912",
@@ -29397,6 +29770,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 30.25,
+        priceMax: 31.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216697&a=3013769&m=65912",
@@ -29414,6 +29788,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.54,
+        priceMax: 40.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42751375890&a=3013769&m=65912",
@@ -29431,6 +29806,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.83,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44737974572&a=3013769&m=65912",
@@ -29448,6 +29824,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.83,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216703&a=3013769&m=65912",
@@ -29482,6 +29859,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 130.62,
+        priceMax: 138.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216713&a=3013769&m=65912",
@@ -29499,6 +29877,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 96.06,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41908577592&a=3013769&m=65912",
@@ -29516,6 +29895,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 130.62,
+        priceMax: 138.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853216718&a=3013769&m=65912",
@@ -29533,6 +29913,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 142.72,
+        priceMax: 167.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746537908&a=3013769&m=65912",
@@ -29550,6 +29931,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.53,
+        priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45242366937&a=3013769&m=65912",
@@ -29686,6 +30068,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 167.15,
+        priceMax: 213.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41670116716&a=3013769&m=65912",
@@ -29720,6 +30103,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.78,
+        priceMax: 97.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41921116712&a=3013769&m=65912",
@@ -29754,6 +30138,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 110.46,
+        priceMax: 163.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43275988926&a=3013769&m=65912",
@@ -29788,6 +30173,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 73.06,
+        priceMax: 78.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529949550&a=3013769&m=65912",
@@ -29805,6 +30191,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 136.24,
+        priceMax: 210.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270681277&a=3013769&m=65912",
@@ -29822,6 +30209,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 124.1,
+        priceMax: 142.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705559102&a=3013769&m=65912",
@@ -29839,6 +30227,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 210.0,
+        priceMax: 232.72,
         shipping: 0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270681291&a=3013769&m=65912",
@@ -29873,6 +30262,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.0,
+        priceMax: 124.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270681293&a=3013769&m=65912",
@@ -29907,6 +30297,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.81,
+        priceMax: 91.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42313337971&a=3013769&m=65912",
@@ -29924,6 +30315,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 166.0,
+        priceMax: 168.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41670116730&a=3013769&m=65912",
@@ -30196,6 +30588,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 176.05,
+        priceMax: 269.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42018179062&a=3013769&m=65912",
@@ -30230,6 +30623,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.57,
+        priceMax: 230.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853217037&a=3013769&m=65912",
@@ -30264,6 +30658,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.89,
+        priceMax: 67.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41884493114&a=3013769&m=65912",
@@ -30281,6 +30676,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 169.53,
+        priceMax: 217.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41884493117&a=3013769&m=65912",
@@ -30332,6 +30728,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.61,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41858813371&a=3013769&m=65912",
@@ -30349,6 +30746,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.33,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41858813377&a=3013769&m=65912",
@@ -30366,6 +30764,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.88,
+        priceMax: 71.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41884493130&a=3013769&m=65912",
@@ -30383,6 +30782,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 63.34,
+        priceMax: 68.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745915461&a=3013769&m=65912",
@@ -30400,6 +30800,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.61,
+        priceMax: 83.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41858813389&a=3013769&m=65912",
@@ -30434,6 +30835,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 200.8,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42173215767&a=3013769&m=65912",
@@ -30451,6 +30853,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 167.67,
+        priceMax: 278.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42222141901&a=3013769&m=65912",
@@ -30468,6 +30871,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.57,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42114615925&a=3013769&m=65912",
@@ -30485,6 +30889,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 200.8,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42317471265&a=3013769&m=65912",
@@ -30502,6 +30907,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 173.65,
+        priceMax: 287.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41884493132&a=3013769&m=65912",
@@ -30519,6 +30925,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 230.0,
+        priceMax: 289.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44992253453&a=3013769&m=65912",
@@ -30536,6 +30943,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 110.84,
+        priceMax: 169.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853217046&a=3013769&m=65912",
@@ -30604,6 +31012,7 @@ const minedBootProductsChunk9: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 180.05,
+        priceMax: 269.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42036506983&a=3013769&m=65912",
@@ -30624,6 +31033,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 180.05,
+        priceMax: 193.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43406658572&a=3013769&m=65912",
@@ -30675,6 +31085,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 158.0,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44406809526&a=3013769&m=65912",
@@ -30709,6 +31120,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.01,
+        priceMax: 86.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41889760994&a=3013769&m=65912",
@@ -30726,6 +31138,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 73.26,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745915514&a=3013769&m=65912",
@@ -30777,6 +31190,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.57,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42328484283&a=3013769&m=65912",
@@ -30828,6 +31242,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 186.72,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42486174424&a=3013769&m=65912",
@@ -30930,6 +31345,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 46.19,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41889761001&a=3013769&m=65912",
@@ -30947,6 +31363,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 46.19,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853217072&a=3013769&m=65912",
@@ -30998,6 +31415,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 149.7,
+        priceMax: 237.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41853217077&a=3013769&m=65912",
@@ -31049,6 +31467,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 77.1,
+        priceMax: 109.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42075916253&a=3013769&m=65912",
@@ -31066,6 +31485,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.9,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41858813447&a=3013769&m=65912",
@@ -31168,6 +31588,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 141.98,
+        priceMax: 196.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41805967224&a=3013769&m=65912",
@@ -31202,6 +31623,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 98.0,
+        priceMax: 118.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41805967225&a=3013769&m=65912",
@@ -31219,6 +31641,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 145.47,
+        priceMax: 181.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42173217373&a=3013769&m=65912",
@@ -31236,6 +31659,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 130.63,
+        priceMax: 181.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42278402131&a=3013769&m=65912",
@@ -31270,6 +31694,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44809658106&a=3013769&m=65912",
@@ -31372,6 +31797,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 176.0,
+        priceMax: 194.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530037550&a=3013769&m=65912",
@@ -31406,6 +31832,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 151.68,
+        priceMax: 267.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42257430003&a=3013769&m=65912",
@@ -31423,6 +31850,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 181.69,
+        priceMax: 270.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41962148185&a=3013769&m=65912",
@@ -31508,6 +31936,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 175.17,
+        priceMax: 277.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42018179124&a=3013769&m=65912",
@@ -31576,6 +32005,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530040673&a=3013769&m=65912",
@@ -31593,6 +32023,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.0,
+        priceMax: 92.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958847282&a=3013769&m=65912",
@@ -31610,6 +32041,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 118.0,
+        priceMax: 160.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42257430030&a=3013769&m=65912",
@@ -31627,6 +32059,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 124.0,
+        priceMax: 128.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530040710&a=3013769&m=65912",
@@ -31729,6 +32162,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 16.57,
+        priceMax: 17.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43780399755&a=3013769&m=65912",
@@ -31865,6 +32299,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 98.0,
+        priceMax: 135.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530076694&a=3013769&m=65912",
@@ -31899,6 +32334,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 41.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530076723&a=3013769&m=65912",
@@ -31916,6 +32352,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42130832631&a=3013769&m=65912",
@@ -31933,6 +32370,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 57.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530076729&a=3013769&m=65912",
@@ -31950,6 +32388,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 57.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41953534707&a=3013769&m=65912",
@@ -31984,6 +32423,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42191468344&a=3013769&m=65912",
@@ -32001,6 +32441,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530076757&a=3013769&m=65912",
@@ -32018,6 +32459,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 188.0,
+        priceMax: 200.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43770970282&a=3013769&m=65912",
@@ -32103,6 +32545,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.0,
+        priceMax: 120.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530076785&a=3013769&m=65912",
@@ -32171,6 +32614,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 95.92,
+        priceMax: 169.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42283603217&a=3013769&m=65912",
@@ -32290,6 +32734,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 106.69,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42576864902&a=3013769&m=65912",
@@ -32307,6 +32752,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 63.34,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530077696&a=3013769&m=65912",
@@ -32341,6 +32787,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 43.35,
+        priceMax: 51.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761969276&a=3013769&m=65912",
@@ -32358,6 +32805,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.89,
+        priceMax: 64.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41921116779&a=3013769&m=65912",
@@ -32392,6 +32840,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 33.34,
+        priceMax: 34.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530077734&a=3013769&m=65912",
@@ -32426,6 +32875,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 258.0,
+        priceMax: 269.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42576864903&a=3013769&m=65912",
@@ -32443,6 +32893,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 104.32,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42051005456&a=3013769&m=65912",
@@ -32528,6 +32979,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 120.0,
+        priceMax: 149.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45562778026&a=3013769&m=65912",
@@ -32562,6 +33014,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 101.8,
+        priceMax: 169.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42173217947&a=3013769&m=65912",
@@ -32630,6 +33083,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.92,
+        priceMax: 46.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42496763150&a=3013769&m=65912",
@@ -32749,6 +33203,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.91,
+        priceMax: 69.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42119157240&a=3013769&m=65912",
@@ -32919,6 +33374,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 196.0,
+        priceMax: 205.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530177902&a=3013769&m=65912",
@@ -32970,6 +33426,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530177932&a=3013769&m=65912",
@@ -32987,6 +33444,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530177939&a=3013769&m=65912",
@@ -33021,6 +33479,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 189.0,
+        priceMax: 225.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44237595094&a=3013769&m=65912",
@@ -33038,6 +33497,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 189.0,
+        priceMax: 214.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43881602150&a=3013769&m=65912",
@@ -33072,6 +33532,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42502051833&a=3013769&m=65912",
@@ -33106,6 +33567,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 44.0,
+        priceMax: 48.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43034486244&a=3013769&m=65912",
@@ -33140,6 +33602,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 88.0,
+        priceMax: 97.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43034486326&a=3013769&m=65912",
@@ -33225,6 +33688,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45081939424&a=3013769&m=65912",
@@ -33259,6 +33723,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42663844235&a=3013769&m=65912",
@@ -33276,6 +33741,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 115.0,
+        priceMax: 126.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43034486470&a=3013769&m=65912",
@@ -33293,6 +33759,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 93.84,
+        priceMax: 108.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43034486494&a=3013769&m=65912",
@@ -33378,6 +33845,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 176.0,
+        priceMax: 191.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43034486795&a=3013769&m=65912",
@@ -33463,6 +33931,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 234.0,
+        priceMax: 258.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43034486842&a=3013769&m=65912",
@@ -33480,6 +33949,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 239.0,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45171888646&a=3013769&m=65912",
@@ -33531,6 +34001,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 113.36,
+        priceMax: 169.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893787&a=3013769&m=65912",
@@ -33565,6 +34036,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 107.0,
+        priceMax: 120.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43669514052&a=3013769&m=65912",
@@ -33582,6 +34054,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 63.34,
+        priceMax: 68.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767384964&a=3013769&m=65912",
@@ -33599,6 +34072,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.33,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893836&a=3013769&m=65912",
@@ -33616,6 +34090,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.61,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767384972&a=3013769&m=65912",
@@ -33667,6 +34142,7 @@ const minedBootProductsChunk10: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 193.39,
+        priceMax: 289.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893842&a=3013769&m=65912",
@@ -33687,6 +34163,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 186.72,
+        priceMax: 214.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385007&a=3013769&m=65912",
@@ -33704,6 +34181,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 157.99,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385015&a=3013769&m=65912",
@@ -33772,6 +34250,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.61,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893846&a=3013769&m=65912",
@@ -33806,6 +34285,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 211.0,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893858&a=3013769&m=65912",
@@ -33857,6 +34337,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 180.05,
+        priceMax: 193.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385109&a=3013769&m=65912",
@@ -33874,6 +34355,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 113.36,
+        priceMax: 122.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893862&a=3013769&m=65912",
@@ -33891,6 +34373,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 122.81,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42975686312&a=3013769&m=65912",
@@ -33959,6 +34442,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 90.28,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385195&a=3013769&m=65912",
@@ -34010,6 +34494,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 46.19,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385223&a=3013769&m=65912",
@@ -34044,6 +34529,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 166.71,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385245&a=3013769&m=65912",
@@ -34095,6 +34581,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 120.03,
+        priceMax: 138.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42920893878&a=3013769&m=65912",
@@ -34316,6 +34803,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 157.99,
+        priceMax: 214.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385684&a=3013769&m=65912",
@@ -34350,6 +34838,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.01,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767385716&a=3013769&m=65912",
@@ -34435,6 +34924,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42854111136&a=3013769&m=65912",
@@ -34452,6 +34942,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.0,
+        priceMax: 91.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42854111141&a=3013769&m=65912",
@@ -34486,6 +34977,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 125.0,
+        priceMax: 158.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42854111158&a=3013769&m=65912",
@@ -34503,6 +34995,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42854111165&a=3013769&m=65912",
@@ -34520,6 +35013,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42854111167&a=3013769&m=65912",
@@ -34537,6 +35031,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43856283011&a=3013769&m=65912",
@@ -34622,6 +35117,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 53.67,
+        priceMax: 54.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44200094380&a=3013769&m=65912",
@@ -34639,6 +35135,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.45,
+        priceMax: 61.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395583619&a=3013769&m=65912",
@@ -34656,6 +35153,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.45,
+        priceMax: 56.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356077&a=3013769&m=65912",
@@ -34707,6 +35205,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 106.58,
+        priceMax: 108.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526322956&a=3013769&m=65912",
@@ -34775,6 +35274,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 32.2,
+        priceMax: 34.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356134&a=3013769&m=65912",
@@ -34894,6 +35394,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.86,
+        priceMax: 85.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356181&a=3013769&m=65912",
@@ -34928,6 +35429,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 84.29,
+        priceMax: 87.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323063376&a=3013769&m=65912",
@@ -34996,6 +35498,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 127.55,
+        priceMax: 136.26,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356220&a=3013769&m=65912",
@@ -35115,6 +35618,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 123.28,
+        priceMax: 124.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356261&a=3013769&m=65912",
@@ -35149,6 +35653,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 45.44,
+        priceMax: 48.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356281&a=3013769&m=65912",
@@ -35166,6 +35671,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.81,
+        priceMax: 55.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356290&a=3013769&m=65912",
@@ -35234,6 +35740,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 29.56,
+        priceMax: 31.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356308&a=3013769&m=65912",
@@ -35319,6 +35826,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 74.56,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356340&a=3013769&m=65912",
@@ -35336,6 +35844,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 74.56,
+        priceMax: 79.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44972135281&a=3013769&m=65912",
@@ -35404,6 +35913,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 122.26,
+        priceMax: 130.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112356364&a=3013769&m=65912",
@@ -35421,6 +35931,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 130.62,
+        priceMax: 149.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44972135286&a=3013769&m=65912",
@@ -35489,6 +36000,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.33,
+        priceMax: 63.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43029344385&a=3013769&m=65912",
@@ -35506,6 +36018,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 177.39,
+        priceMax: 283.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43383153758&a=3013769&m=65912",
@@ -35523,6 +36036,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 168.0,
+        priceMax: 237.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767717&a=3013769&m=65912",
@@ -35540,6 +36054,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 39.76,
+        priceMax: 65.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767729&a=3013769&m=65912",
@@ -35557,6 +36072,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.28,
+        priceMax: 280.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767765&a=3013769&m=65912",
@@ -35574,6 +36090,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 216.92,
+        priceMax: 226.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43383153839&a=3013769&m=65912",
@@ -35591,6 +36108,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 74.47,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940201956&a=3013769&m=65912",
@@ -35608,6 +36126,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 45.88,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767779&a=3013769&m=65912",
@@ -35625,6 +36144,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 61.17,
+        priceMax: 82.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43383153860&a=3013769&m=65912",
@@ -35642,6 +36162,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
+        priceMax: 79.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562507&a=3013769&m=65912",
@@ -35659,6 +36180,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.5,
+        priceMax: 73.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767784&a=3013769&m=65912",
@@ -35693,6 +36215,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 103.99,
+        priceMax: 170.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43383153879&a=3013769&m=65912",
@@ -35727,6 +36250,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 146.81,
+        priceMax: 215.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562621&a=3013769&m=65912",
@@ -35744,6 +36268,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.49,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767875&a=3013769&m=65912",
@@ -35761,6 +36286,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.0,
+        priceMax: 65.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562628&a=3013769&m=65912",
@@ -35778,6 +36304,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 133.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154280&a=3013769&m=65912",
@@ -35829,6 +36356,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 49.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755750826&a=3013769&m=65912",
@@ -35846,6 +36374,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 203.0,
+        priceMax: 260.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562642&a=3013769&m=65912",
@@ -35863,6 +36392,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 98.0,
+        priceMax: 120.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562656&a=3013769&m=65912",
@@ -35880,6 +36410,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 165.16,
+        priceMax: 248.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562657&a=3013769&m=65912",
@@ -35897,6 +36428,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 165.16,
+        priceMax: 270.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767905&a=3013769&m=65912",
@@ -35931,6 +36463,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 188.84,
+        priceMax: 243.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755750834&a=3013769&m=65912",
@@ -35948,6 +36481,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 181.69,
+        priceMax: 210.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43961543581&a=3013769&m=65912",
@@ -35965,6 +36499,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.66,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562664&a=3013769&m=65912",
@@ -35982,6 +36517,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.05,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767918&a=3013769&m=65912",
@@ -35999,6 +36535,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 82.0,
+        priceMax: 88.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154315&a=3013769&m=65912",
@@ -36016,6 +36553,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.66,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755750850&a=3013769&m=65912",
@@ -36033,6 +36571,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 96.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562679&a=3013769&m=65912",
@@ -36050,6 +36589,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 82.0,
+        priceMax: 91.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562689&a=3013769&m=65912",
@@ -36101,6 +36641,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.66,
+        priceMax: 78.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562699&a=3013769&m=65912",
@@ -36118,6 +36659,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.25,
+        priceMax: 56.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44033376601&a=3013769&m=65912",
@@ -36152,6 +36694,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 65.0,
+        priceMax: 72.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994230934&a=3013769&m=65912",
@@ -36186,6 +36729,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 90.0,
+        priceMax: 118.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562715&a=3013769&m=65912",
@@ -36203,6 +36747,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 118.0,
+        priceMax: 160.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829767982&a=3013769&m=65912",
@@ -36237,6 +36782,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43770971631&a=3013769&m=65912",
@@ -36254,6 +36800,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.5,
+        priceMax: 54.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865889348&a=3013769&m=65912",
@@ -36288,6 +36835,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 39.76,
+        priceMax: 62.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154361&a=3013769&m=65912",
@@ -36339,6 +36887,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.12,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829768025&a=3013769&m=65912",
@@ -36356,6 +36905,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 56.0,
+        priceMax: 65.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958848258&a=3013769&m=65912",
@@ -36373,6 +36923,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 43.12,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829768049&a=3013769&m=65912",
@@ -36390,6 +36941,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.0,
+        priceMax: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755750887&a=3013769&m=65912",
@@ -36407,6 +36959,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865889373&a=3013769&m=65912",
@@ -36424,6 +36977,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.28,
+        priceMax: 252.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154376&a=3013769&m=65912",
@@ -36441,6 +36995,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 165.16,
+        priceMax: 258.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829768060&a=3013769&m=65912",
@@ -36458,6 +37013,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 198.4,
+        priceMax: 280.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43770971637&a=3013769&m=65912",
@@ -36475,6 +37031,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.28,
+        priceMax: 242.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154382&a=3013769&m=65912",
@@ -36492,6 +37049,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 177.39,
+        priceMax: 208.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865889424&a=3013769&m=65912",
@@ -36509,6 +37067,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 165.16,
+        priceMax: 231.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755750908&a=3013769&m=65912",
@@ -36526,6 +37085,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.28,
+        priceMax: 280.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562752&a=3013769&m=65912",
@@ -36543,6 +37103,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.28,
+        priceMax: 277.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562760&a=3013769&m=65912",
@@ -36577,6 +37138,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 171.28,
+        priceMax: 276.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755750924&a=3013769&m=65912",
@@ -36611,6 +37173,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 196.0,
+        priceMax: 280.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43952555479&a=3013769&m=65912",
@@ -36628,6 +37191,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.05,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829768092&a=3013769&m=65912",
@@ -36662,6 +37226,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 49.5,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562774&a=3013769&m=65912",
@@ -36679,6 +37244,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.83,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43770971646&a=3013769&m=65912",
@@ -36696,6 +37262,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 58.12,
+        priceMax: 67.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154415&a=3013769&m=65912",
@@ -36713,6 +37280,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 47.31,
+        priceMax: 82.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865889438&a=3013769&m=65912",
@@ -36730,6 +37298,7 @@ const minedBootProductsChunk11: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
+        priceMax: 77.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865889459&a=3013769&m=65912",
@@ -36750,6 +37319,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 52.25,
+        priceMax: 72.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562795&a=3013769&m=65912",
@@ -36784,6 +37354,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 70.81,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829768123&a=3013769&m=65912",
@@ -36801,6 +37372,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.0,
+        priceMax: 82.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43952555501&a=3013769&m=65912",
@@ -36818,6 +37390,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 44.62,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940201962&a=3013769&m=65912",
@@ -36852,6 +37425,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 97.87,
+        priceMax: 160.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829768136&a=3013769&m=65912",
@@ -36869,6 +37443,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 97.87,
+        priceMax: 147.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345154441&a=3013769&m=65912",
@@ -36903,6 +37478,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.65,
+        priceMax: 88.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940201963&a=3013769&m=65912",
@@ -36920,6 +37496,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 96.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705562861&a=3013769&m=65912",
@@ -36937,6 +37514,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 82.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865889523&a=3013769&m=65912",
@@ -36971,6 +37549,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 80.0,
+        priceMax: 118.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705563104&a=3013769&m=65912",
@@ -37090,6 +37669,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 264.0,
+        priceMax: 272.0,
         shipping: 0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43510988489&a=3013769&m=65912",
@@ -37107,6 +37687,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 264.0,
+        priceMax: 330.0,
         shipping: 0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44353656825&a=3013769&m=65912",
@@ -37141,6 +37722,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 73.06,
+        priceMax: 104.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654227565&a=3013769&m=65912",
@@ -37175,6 +37757,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 134.41,
+        priceMax: 140.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43488375703&a=3013769&m=65912",
@@ -37192,6 +37775,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.29,
+        priceMax: 69.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44188998941&a=3013769&m=65912",
@@ -37277,6 +37861,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.61,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654227847&a=3013769&m=65912",
@@ -37311,6 +37896,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.57,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654227864&a=3013769&m=65912",
@@ -37328,6 +37914,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.9,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654227872&a=3013769&m=65912",
@@ -37379,6 +37966,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 104.32,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654227902&a=3013769&m=65912",
@@ -37413,6 +38001,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 49.0,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705564812&a=3013769&m=65912",
@@ -37464,6 +38053,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 28.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717963647&a=3013769&m=65912",
@@ -37515,6 +38105,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705564857&a=3013769&m=65912",
@@ -37532,6 +38123,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 105.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705564876&a=3013769&m=65912",
@@ -37600,6 +38192,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958848696&a=3013769&m=65912",
@@ -37617,6 +38210,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705564907&a=3013769&m=65912",
@@ -37668,6 +38262,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 203.0,
+        priceMax: 204.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705564950&a=3013769&m=65912",
@@ -37685,6 +38280,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 200.0,
+        priceMax: 258.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44374080645&a=3013769&m=65912",
@@ -37702,6 +38298,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.0,
+        priceMax: 203.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44383399370&a=3013769&m=65912",
@@ -37872,6 +38469,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 208.0,
+        priceMax: 231.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44093088582&a=3013769&m=65912",
@@ -37889,6 +38487,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 97.0,
+        priceMax: 98.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44651309116&a=3013769&m=65912",
@@ -37906,6 +38505,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.5,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705565122&a=3013769&m=65912",
@@ -37957,6 +38557,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 96.0,
+        priceMax: 160.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705565158&a=3013769&m=65912",
@@ -37974,6 +38575,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 202.0,
+        priceMax: 225.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44651309121&a=3013769&m=65912",
@@ -38008,6 +38610,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 180.0,
+        priceMax: 248.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44188999169&a=3013769&m=65912",
@@ -38025,6 +38628,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 69.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323064794&a=3013769&m=65912",
@@ -38042,6 +38646,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.5,
+        priceMax: 73.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45130835045&a=3013769&m=65912",
@@ -38093,6 +38698,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 50.0,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45171889789&a=3013769&m=65912",
@@ -38161,6 +38767,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 65.2,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44160148971&a=3013769&m=65912",
@@ -38178,6 +38785,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 65.2,
+        priceMax: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075019907&a=3013769&m=65912",
@@ -38195,6 +38803,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.61,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228060&a=3013769&m=65912",
@@ -38229,6 +38838,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 45.64,
+        priceMax: 54.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228074&a=3013769&m=65912",
@@ -38263,6 +38873,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 189.09,
+        priceMax: 269.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44160149001&a=3013769&m=65912",
@@ -38280,6 +38891,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 189.09,
+        priceMax: 289.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228086&a=3013769&m=65912",
@@ -38297,6 +38909,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 110.84,
+        priceMax: 158.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228090&a=3013769&m=65912",
@@ -38348,6 +38961,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.9,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228102&a=3013769&m=65912",
@@ -38399,6 +39013,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 41.0,
+        priceMax: 42.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568915&a=3013769&m=65912",
@@ -38416,6 +39031,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 182.57,
+        priceMax: 279.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44160149051&a=3013769&m=65912",
@@ -38433,6 +39049,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 259.0,
+        priceMax: 261.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45092218943&a=3013769&m=65912",
@@ -38450,6 +39067,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 110.84,
+        priceMax: 169.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44160149063&a=3013769&m=65912",
@@ -38467,6 +39085,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 93.36,
+        priceMax: 104.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755753425&a=3013769&m=65912",
@@ -38484,6 +39103,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 104.32,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228143&a=3013769&m=65912",
@@ -38501,6 +39121,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.9,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228157&a=3013769&m=65912",
@@ -38518,6 +39139,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 43.35,
+        priceMax: 64.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228166&a=3013769&m=65912",
@@ -38603,6 +39225,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.01,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228199&a=3013769&m=65912",
@@ -38637,6 +39260,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 42.39,
+        priceMax: 50.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654228209&a=3013769&m=65912",
@@ -38722,6 +39346,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 97.8,
+        priceMax: 118.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770305&a=3013769&m=65912",
@@ -38773,6 +39398,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.43,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770353&a=3013769&m=65912",
@@ -38807,6 +39433,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.43,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770363&a=3013769&m=65912",
@@ -38841,6 +39468,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 174.99,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770391&a=3013769&m=65912",
@@ -38875,6 +39503,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 200.58,
+        priceMax: 249.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770409&a=3013769&m=65912",
@@ -38943,6 +39572,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 117.36,
+        priceMax: 167.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44160149082&a=3013769&m=65912",
@@ -38994,6 +39624,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.66,
+        priceMax: 57.32,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43691278743&a=3013769&m=65912",
@@ -39028,6 +39659,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 64.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43691278773&a=3013769&m=65912",
@@ -39045,6 +39677,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.23,
+        priceMax: 121.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43691278787&a=3013769&m=65912",
@@ -39147,6 +39780,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 78.23,
+        priceMax: 102.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705569041&a=3013769&m=65912",
@@ -39198,6 +39832,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 216.0,
+        priceMax: 263.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44536077123&a=3013769&m=65912",
@@ -39266,6 +39901,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 81.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44820223134&a=3013769&m=65912",
@@ -39300,6 +39936,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 138.0,
+        priceMax: 147.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770847&a=3013769&m=65912",
@@ -39317,6 +39954,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 49.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770899&a=3013769&m=65912",
@@ -39368,6 +40006,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 103.0,
+        priceMax: 110.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44651309848&a=3013769&m=65912",
@@ -39385,6 +40024,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.13,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914979909&a=3013769&m=65912",
@@ -39453,6 +40093,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 136.0,
+        priceMax: 141.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43865892970&a=3013769&m=65912",
@@ -39521,6 +40162,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 141.9,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43881611574&a=3013769&m=65912",
@@ -39640,6 +40282,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 216.0,
+        priceMax: 225.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232091&a=3013769&m=65912",
@@ -39759,6 +40402,7 @@ const minedBootProductsChunk12: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 207.0,
+        priceMax: 257.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45092220093&a=3013769&m=65912",
@@ -39864,6 +40508,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 34.07,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360637&a=3013769&m=65912",
@@ -39898,6 +40543,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 264.0,
+        priceMax: 318.0,
         shipping: 0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269897144&a=3013769&m=65912",
@@ -40017,6 +40663,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 104.0,
+        priceMax: 111.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45888244780&a=3013769&m=65912",
@@ -40034,6 +40681,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 124.0,
+        priceMax: 129.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269897172&a=3013769&m=65912",
@@ -40153,6 +40801,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 142.7,
+        priceMax: 226.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269897427&a=3013769&m=65912",
@@ -40204,6 +40853,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 286.4,
+        priceMax: 351.0,
         shipping: 0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269897431&a=3013769&m=65912",
@@ -40221,6 +40871,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 124.0,
+        priceMax: 133.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269897436&a=3013769&m=65912",
@@ -40476,6 +41127,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.61,
+        priceMax: 67.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44790777442&a=3013769&m=65912",
@@ -40527,6 +41179,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.64,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936963097&a=3013769&m=65912",
@@ -40544,6 +41197,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 49.16,
+        priceMax: 50.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44992301926&a=3013769&m=65912",
@@ -40561,6 +41215,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 209.99,
+        priceMax: 210.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45319436373&a=3013769&m=65912",
@@ -40612,6 +41267,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 64.15,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936963137&a=3013769&m=65912",
@@ -40663,6 +41319,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 112.03,
+        priceMax: 113.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45385738090&a=3013769&m=65912",
@@ -40952,6 +41609,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 127.99,
+        priceMax: 129.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940202461&a=3013769&m=65912",
@@ -40969,6 +41627,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.66,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44992302294&a=3013769&m=65912",
@@ -41003,6 +41662,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 181.99,
+        priceMax: 259.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247229&a=3013769&m=65912",
@@ -41037,6 +41697,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 203.88,
+        priceMax: 289.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44389418776&a=3013769&m=65912",
@@ -41156,6 +41817,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 242.0,
+        priceMax: 252.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44383400915&a=3013769&m=65912",
@@ -41173,6 +41835,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
+        priceMax: 64.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345156845&a=3013769&m=65912",
@@ -41258,6 +41921,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 76.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44432366262&a=3013769&m=65912",
@@ -41275,6 +41939,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 54.0,
+        priceMax: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958857488&a=3013769&m=65912",
@@ -41343,6 +42008,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 82.0,
+        priceMax: 86.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958857489&a=3013769&m=65912",
@@ -41360,6 +42026,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.0,
+        priceMax: 56.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345156983&a=3013769&m=65912",
@@ -41377,6 +42044,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.0,
+        priceMax: 57.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345157002&a=3013769&m=65912",
@@ -41462,6 +42130,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 227.62,
+        priceMax: 285.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44263437982&a=3013769&m=65912",
@@ -41479,6 +42148,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 227.62,
+        priceMax: 350.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44345157179&a=3013769&m=65912",
@@ -41887,6 +42557,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905488834&a=3013769&m=65912",
@@ -41904,6 +42575,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.5,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247358&a=3013769&m=65912",
@@ -41938,6 +42610,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 120.0,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936963968&a=3013769&m=65912",
@@ -41955,6 +42628,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 210.0,
+        priceMax: 272.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526410&a=3013769&m=65912",
@@ -42006,6 +42680,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 128.0,
+        priceMax: 160.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936963987&a=3013769&m=65912",
@@ -42040,6 +42715,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 224.0,
+        priceMax: 267.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936964001&a=3013769&m=65912",
@@ -42142,6 +42818,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.95,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526469&a=3013769&m=65912",
@@ -42278,6 +42955,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936964044&a=3013769&m=65912",
@@ -42295,6 +42973,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 113.92,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526500&a=3013769&m=65912",
@@ -42329,6 +43008,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 224.0,
+        priceMax: 267.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936964060&a=3013769&m=65912",
@@ -42499,6 +43179,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 66.5,
+        priceMax: 69.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371032395&a=3013769&m=65912",
@@ -42516,6 +43197,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 105.0,
+        priceMax: 109.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398897590&a=3013769&m=65912",
@@ -42652,6 +43334,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 38.5,
+        priceMax: 40.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398897842&a=3013769&m=65912",
@@ -42686,6 +43369,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 59.49,
+        priceMax: 62.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398897848&a=3013769&m=65912",
@@ -42805,6 +43489,7 @@ const minedBootProductsChunk13: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 180.0,
+        priceMax: 240.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526845&a=3013769&m=65912",
@@ -42893,6 +43578,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 46.25,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526891&a=3013769&m=65912",
@@ -42927,6 +43613,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 202.5,
+        priceMax: 270.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526935&a=3013769&m=65912",
@@ -42978,6 +43665,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 210.0,
+        priceMax: 268.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302526964&a=3013769&m=65912",
@@ -43080,6 +43768,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 161.0,
+        priceMax: 167.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45470007280&a=3013769&m=65912",
@@ -43199,6 +43888,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361917111&a=3013769&m=65912",
@@ -43216,6 +43906,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 68.27,
+        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304862268&a=3013769&m=65912",
@@ -43233,6 +43924,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247503&a=3013769&m=65912",
@@ -43250,6 +43942,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.61,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302527052&a=3013769&m=65912",
@@ -43267,6 +43960,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.5,
+        priceMax: 68.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376240454&a=3013769&m=65912",
@@ -43301,6 +43995,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 112.5,
+        priceMax: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302527081&a=3013769&m=65912",
@@ -43335,6 +44030,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 105.32,
+        priceMax: 106.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45356588110&a=3013769&m=65912",
@@ -43454,6 +44150,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.0,
+        priceMax: 100.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376240459&a=3013769&m=65912",
@@ -43488,6 +44185,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 120.0,
+        priceMax: 147.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376240467&a=3013769&m=65912",
@@ -43641,6 +44339,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 210.0,
+        priceMax: 268.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304862784&a=3013769&m=65912",
@@ -43675,6 +44374,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 210.0,
+        priceMax: 280.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443804030&a=3013769&m=65912",
@@ -43692,6 +44392,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.5,
+        priceMax: 68.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376240719&a=3013769&m=65912",
@@ -43709,6 +44410,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.25,
+        priceMax: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45319437800&a=3013769&m=65912",
@@ -43726,6 +44428,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.25,
+        priceMax: 71.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376240724&a=3013769&m=65912",
@@ -43743,6 +44446,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.25,
+        priceMax: 71.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45376240728&a=3013769&m=65912",
@@ -43760,6 +44464,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 120.0,
+        priceMax: 147.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302527411&a=3013769&m=65912",
@@ -43777,6 +44482,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 120.0,
+        priceMax: 160.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45371033115&a=3013769&m=65912",
@@ -43794,6 +44500,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 184.0,
+        priceMax: 230.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324747506&a=3013769&m=65912",
@@ -43811,6 +44518,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 176.0,
+        priceMax: 183.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324747511&a=3013769&m=65912",
@@ -43913,6 +44621,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 174.8,
+        priceMax: 210.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324747515&a=3013769&m=65912",
@@ -43947,6 +44656,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 176.0,
+        priceMax: 220.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302527452&a=3013769&m=65912",
@@ -43964,6 +44674,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 168.0,
+        priceMax: 210.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324747526&a=3013769&m=65912",
@@ -43981,6 +44692,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 168.0,
+        priceMax: 210.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45319437817&a=3013769&m=65912",
@@ -43998,6 +44710,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 168.0,
+        priceMax: 210.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45319437820&a=3013769&m=65912",
@@ -44049,6 +44762,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 176.0,
+        priceMax: 220.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302527472&a=3013769&m=65912",
@@ -44151,6 +44865,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 157.5,
+        priceMax: 219.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45137700300&a=3013769&m=65912",
@@ -44168,6 +44883,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.99,
+        priceMax: 56.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45638726984&a=3013769&m=65912",
@@ -44185,6 +44901,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 51.99,
+        priceMax: 53.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45630067688&a=3013769&m=65912",
@@ -44236,6 +44953,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 43.08,
+        priceMax: 44.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526329757&a=3013769&m=65912",
@@ -44508,6 +45226,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.99,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600559&a=3013769&m=65912",
@@ -44525,6 +45244,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 63.13,
+        priceMax: 69.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600563&a=3013769&m=65912",
@@ -44559,6 +45279,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 215.99,
+        priceMax: 269.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45204871081&a=3013769&m=65912",
@@ -44593,6 +45314,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 113.05,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45234299874&a=3013769&m=65912",
@@ -44780,6 +45502,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 119.99,
+        priceMax: 149.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443804791&a=3013769&m=65912",
@@ -44797,6 +45520,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.99,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45385739482&a=3013769&m=65912",
@@ -44848,6 +45572,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 215.0,
+        priceMax: 215.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600623&a=3013769&m=65912",
@@ -44933,6 +45658,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.99,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515792231&a=3013769&m=65912",
@@ -44950,6 +45676,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.99,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45533544311&a=3013769&m=65912",
@@ -45069,6 +45796,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 71.99,
+        priceMax: 72.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45234299967&a=3013769&m=65912",
@@ -45205,6 +45933,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.99,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600863&a=3013769&m=65912",
@@ -45307,6 +46036,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 75.99,
+        priceMax: 76.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600877&a=3013769&m=65912",
@@ -45324,6 +46054,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 127.99,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247860&a=3013769&m=65912",
@@ -45341,6 +46072,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 127.99,
+        priceMax: 159.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45819222453&a=3013769&m=65912",
@@ -45392,6 +46124,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 119.99,
+        priceMax: 149.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600887&a=3013769&m=65912",
@@ -45409,6 +46142,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 67.99,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395600894&a=3013769&m=65912",
@@ -45443,6 +46177,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 47.99,
+        priceMax: 48.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45385739561&a=3013769&m=65912",
@@ -45613,6 +46348,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 214.72,
+        priceMax: 338.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45287099547&a=3013769&m=65912",
@@ -45630,6 +46366,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 105.13,
+        priceMax: 108.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45287099553&a=3013769&m=65912",
@@ -45732,6 +46469,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 55.66,
+        priceMax: 56.78,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45335622686&a=3013769&m=65912",
@@ -45817,6 +46555,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 111.57,
+        priceMax: 114.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515792500&a=3013769&m=65912",
@@ -45834,6 +46573,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.34,
+        priceMax: 121.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515792514&a=3013769&m=65912",
@@ -45868,6 +46608,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 227.62,
+        priceMax: 336.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45287099572&a=3013769&m=65912",
@@ -45919,6 +46660,7 @@ const minedBootProductsChunk14: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 61.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45287099582&a=3013769&m=65912",
@@ -45956,6 +46698,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 79.34,
+        priceMax: 120.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45302528087&a=3013769&m=65912",
@@ -46109,6 +46852,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 269.0,
+        priceMax: 307.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395602470&a=3013769&m=65912",
@@ -46381,6 +47125,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 99.94,
+        priceMax: 102.78,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395602566&a=3013769&m=65912",
@@ -46653,6 +47398,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 69.46,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443807459&a=3013769&m=65912",
@@ -46908,6 +47654,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 92.01,
+        priceMax: 93.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45663296476&a=3013769&m=65912",
@@ -47418,6 +48165,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 36.99,
+        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45795639004&a=3013769&m=65912",
@@ -48319,6 +49067,7 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreES",
         price: 226.51,
+        priceMax: 340.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45958860641&a=3013769&m=65912",
@@ -49733,6 +50482,7 @@ const minedBootProductsChunk16: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 99.0,
+        priceMax: 109.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fat5889-010-chaussures-de-football-nike-premier-3-fg-noir-blanc",
@@ -50668,6 +51418,7 @@ const minedBootProductsChunk16: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-040-chaussures-de-football-nike-tiempo-legend-10-academy-ag-shadow-pack-black-grey",
@@ -50923,6 +51674,7 @@ const minedBootProductsChunk16: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdd9473-040-chaussures-de-football-nike-phantom-gx-academy-mg-noir-chrome-bleu-royal",
@@ -51025,6 +51777,7 @@ const minedBootProductsChunk16: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 61.0,
+        priceMax: 61.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Facus2401fg-chaussures-de-football-joma-aguila-cup-2401-fg-negro-blanco",
@@ -51161,6 +51914,7 @@ const minedBootProductsChunk16: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 55.0,
+        priceMax: 67.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpcus2302ag-chaussures-de-football-joma-propulsion-cup-2302-ag-blanco-negro-blanc",
@@ -52694,6 +53448,7 @@ const minedBootProductsChunk17: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd6723-001-chaussures-de-football-nike-phantom-gx-2-academy-mg-black-black",
@@ -52983,6 +53738,7 @@ const minedBootProductsChunk17: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-601-chaussures-de-football-nike-tiempo-legend-10-academy-mg-rose-clair-noir",
@@ -53000,6 +53756,7 @@ const minedBootProductsChunk17: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd6723-100-chaussures-de-football-nike-phantom-gx-ii-academy-fg-mg-blanc-noir-blanc-orange",
@@ -53068,6 +53825,7 @@ const minedBootProductsChunk17: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 109.0,
+        priceMax: 109.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm0265-002-chaussures-de-football-nike-the-premier-iii-fg-noir-blanc",
@@ -53119,6 +53877,7 @@ const minedBootProductsChunk17: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 69.0,
+        priceMax: 69.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2558-100-chaussures-de-football-nike-phantom-luna-2-club-mg-white-black-mtlc-gold-coin",
@@ -54275,6 +55034,7 @@ const minedBootProductsChunk17: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 77.0,
+        priceMax: 77.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Facus2401sg-chaussures-de-football-joma-aguila-cup-sg-negro-blanco",
@@ -55485,6 +56245,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-002-chaussures-de-football-nike-tiempo-legend-10-academy-mg-black-black-deep-jungle",
@@ -55553,6 +56314,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2552-400-chaussures-de-football-nike-phantom-gx-2-academy-ag-blue-fury-white",
@@ -55655,6 +56417,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 69.0,
+        priceMax: 69.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8314-400-chaussures-de-football-nike-superfly-10-club-fg-mg-glacier-blue-blue-orbit",
@@ -56420,6 +57183,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4328-002-chaussures-de-football-nike-tiempo-legend-10-elite-fg-noir-deep-jungle-noir",
@@ -56658,6 +57422,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8374-400-chaussures-de-football-nike-mercurial-vapor-16-academy-mg-glacier-blue-blue-orbit",
@@ -56692,6 +57457,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8441-400-chaussures-de-football-nike-mercurial-vapor-16-club-mg-glacier-blue-blue-orbit",
@@ -57321,6 +58087,7 @@ const minedBootProductsChunk18: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8374-700-chaussures-de-football-nike-zoom-vapor-16-fg-ag-volt-noir",
@@ -58361,6 +59128,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-800-chaussures-de-football-nike-tiempo-legend-10-academy-mg-hot-lava-white",
@@ -58395,6 +59163,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd6723-300-chaussures-de-football-nike-phantom-gx-2-academy-mg-mint-atomic-red-off-noir",
@@ -58412,6 +59181,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd6724-300-chaussures-de-football-nike-phantom-gx-2-academy-easyon-mg-mint-atomic-red-off-noir",
@@ -58514,6 +59284,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8329-800-chaussures-de-football-nike-mercurial-superfly-10-academy-ag-ember-glow-aurora-green",
@@ -58531,6 +59302,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8331-800-chaussures-de-football-nike-mercurial-superfly-10-academy-mg-ember-glow-aurora-green",
@@ -58548,6 +59320,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8364-800-chaussures-de-football-nike-mercurial-vapor-16-academy-ag-ember-glow-aurora-green",
@@ -58565,6 +59338,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8374-800-chaussures-de-football-nike-mercurial-vapor-16-academy-mg-ember-glow-green",
@@ -58599,6 +59373,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8441-800-chaussures-de-football-nike-mercurial-vapor-16-club-mg-ember-green",
@@ -58752,6 +59527,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4328-800-chaussures-de-football-nike-legend-10-elite-fg-hot-lava-white",
@@ -58786,6 +59562,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4330-800-chaussures-de-football-nike-legend-10-elite-pro-ag-hot-lava-white",
@@ -58956,6 +59733,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8684-800-chaussures-de-football-nike-zm-vapor-16-pro-ag-ember-glow-aurora-green",
@@ -59024,6 +59802,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf9433-800-chaussures-de-football-nike-zm-superfly-10-pro-fg-ember-glow-aurora-green",
@@ -59942,6 +60721,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1456-800-chaussures-de-football-nike-mercurial-superfly-10-academy-mg-ember-glow-aurora-green",
@@ -60877,6 +61657,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd6723-800-chaussures-de-football-nike-phantom-gx-2-academy-mg-crimson-tint-black-pink-blast",
@@ -60945,6 +61726,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2572-800-chaussures-de-football-nike-phantom-luna-2-elite-fg-crimson-tint-black-pink-blast",
@@ -60962,6 +61744,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2575-800-chaussures-de-football-nike-phantom-luna-2-pro-fg-crimson-tint-black-pink-blast",
@@ -60979,6 +61762,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2577-800-chaussures-de-football-nike-phantom-gx-2-academy-tf-crimson-tint-black-pink-blast",
@@ -61030,6 +61814,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8364-301-chaussures-de-football-nike-mercurial-vapor-16-academy-ag-ocean-cube-pink-blast",
@@ -61047,6 +61832,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8374-301-chaussures-de-football-nike-mercurial-vapor-16-academy-mg-ocean-cube-pink-blast",
@@ -61081,6 +61867,7 @@ const minedBootProductsChunk19: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf9433-301-chaussures-de-football-nike-mercurial-superfly-10-pro-ocean-cube-pink-blast",
@@ -61254,6 +62041,7 @@ const minedBootProductsChunk20: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 53.0,
+        priceMax: 61.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmuns2511tf-chaussures-de-football-joma-mundial-2511-turf-vert",
@@ -61458,6 +62246,7 @@ const minedBootProductsChunk20: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8689-500-chaussures-de-football-nike-mercurial-vapor-16-pro-kylian-mbappe-fg-grand-purple-pale-ivory",
@@ -64246,6 +65035,7 @@ const minedBootProductsChunk20: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4328-402-chaussures-de-football-nike-tiempo-legend-10-elite-fg-blue-eclipse-black",
@@ -64280,6 +65070,7 @@ const minedBootProductsChunk20: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-003-chaussures-de-football-nike-tiempo-legend-10-academy-mg-black-black",
@@ -64317,6 +65108,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-402-chaussures-de-football-nike-tiempo-legend-10-academy-mg-blue-eclipse-black",
@@ -64334,6 +65126,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1454-001-chaussures-de-football-nike-mercurial-superfly-10-elite-fg-black-ice-blue",
@@ -64351,6 +65144,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1454-600-chaussures-de-football-nike-mercurial-superfly-10-elite-fg-magic-flamingo-black-total-crimson",
@@ -64385,6 +65179,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1456-600-chaussures-de-football-nike-mercurial-superfly-10-academy-fg-magic-flamingo-black-total-crimson",
@@ -64419,6 +65214,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1458-600-chaussures-de-football-nike-zoom-mercurial-vapor-16-academy-fg-mg-magic-flamingo-black-total-crimson",
@@ -64504,6 +65300,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8331-600-chaussures-de-football-nike-mercurial-superfly-10-academy-tf-magic-flamingo-black-total-crimson",
@@ -64521,6 +65318,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 99.0,
+        priceMax: 99.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8336-001-chaussures-de-football-nike-mercurial-superfly-10-academy-sg-black-ice-blue",
@@ -64555,6 +65353,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8339-001-chaussures-de-football-nike-mercurial-superfly-10-elite-ag-black-ice-blue",
@@ -64589,6 +65388,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8339-600-chaussures-de-football-nike-mercurial-superfly-10-elite-ag-magic-flamingo-black-total-crimson",
@@ -64606,6 +65406,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 289.0,
+        priceMax: 289.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8342-001-chaussures-de-football-nike-mercurial-superfly-10-elite-sg-black-ice-blue",
@@ -64657,6 +65458,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8441-600-chaussures-de-football-nike-mercurial-vapor-16-club-fg-magic-flamingo-black-total-crimson",
@@ -64759,6 +65561,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 269.0,
+        priceMax: 269.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8693-600-chaussures-de-football-nike-mercurial-vapor-16-elite-ag-magic-flamingo-black-total-crimson",
@@ -64776,6 +65579,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf9433-600-chaussures-de-football-nike-mercurial-superfly-10-pro-fg-magic-flamingo-black-total-crimson",
@@ -64793,6 +65597,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 269.0,
+        priceMax: 269.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj2146-003-chaussures-de-football-basse-nike-phantom-6-elite-fg-black-black",
@@ -64810,6 +65615,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj2147-003-chaussures-de-football-haute-nike-phantom-6-elite-fg-black-black",
@@ -64827,6 +65633,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj2147-400-chaussures-de-football-nike-phantom-6-elite-fg-royal-tint-bright-crimson-black",
@@ -64895,6 +65702,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 259.0,
+        priceMax: 259.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj7272-300-chaussures-de-football-nike-legend-10-elite-lv8-fg-stadium-green-dark-obsidian",
@@ -64929,6 +65737,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm8933-400-chaussures-de-football-nike-phantom-6-fg-mg-royal-tint-bright-crimson",
@@ -64963,6 +65772,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2278-003-chaussures-de-football-nike-phantom-6-academy-fg-mg-black-black",
@@ -65031,6 +65841,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2322-400-chaussures-de-football-nike-phantom-6-academy-ag-royal-tint-bright-crimson-black",
@@ -65116,6 +65927,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 109.0,
+        priceMax: 109.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2851-100-chaussures-de-football-nike-total-90-fg-mg-white-black-gym-red",
@@ -65133,6 +65945,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv8988-400-chaussures-de-football-nike-phantom-6-elite-pro-nike-sg-royal-tint-bright-crimson",
@@ -65150,6 +65963,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 109.0,
+        priceMax: 109.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii7631-400-chaussures-de-football-nike-total-90-fg-midnight-navy-white-university-red-black",
@@ -66034,6 +66848,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8446-001-chaussures-de-football-nike-mercurial-vapor-16-club-tf-black-ice-blue",
@@ -66085,6 +66900,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8685-001-chaussures-de-football-nike-mercurial-vapor-16-pro-fg-black-ice-blue",
@@ -66119,6 +66935,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf9433-001-chaussures-de-football-nike-mercurial-superfly-10-pro-fg-black-ice-blue",
@@ -66153,6 +66970,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4122-003-chaussures-de-football-nike-phantom-6-low-pro-fg-black-black",
@@ -66272,6 +67090,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2278-400-chaussures-de-football-nike-phantom-6-high-academy-mg-royal-tint-bright-crimson",
@@ -66612,6 +67431,7 @@ const minedBootProductsChunk21: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1777-800-chaussures-de-football-nike-phantom-6-low-pro-eh-ag-laser-orange-lemon-venom-blue-void",
@@ -67499,6 +68319,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4328-701-chaussures-de-football-nike-tiempo-legend-10-elite-fg-volt-black",
@@ -67550,6 +68371,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4337-701-chaussures-de-football-nike-tiempo-legend-10-academy-mg-volt-black",
@@ -67584,6 +68406,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1454-302-chaussures-de-football-nike-mercurial-superfly-10-elite-fg-limelight-volt-hyper-crimson",
@@ -67652,6 +68475,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 99.0,
+        priceMax: 99.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8293-801-chaussures-de-football-nike-mercurial-superfly-10-academy-kylian-mbappe-fg-mg-melon-tint-neo-turq-igloo",
@@ -67669,6 +68493,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8329-300-chaussures-de-football-nike-mercurial-superfly-10-academy-ag-limelight-volt-hyper-crimson",
@@ -67771,6 +68596,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8365-801-chaussures-de-football-nike-mercurial-vapor-16-academy-kylian-mbappe-ag-melon-tint-neo-turq-igloo",
@@ -67822,6 +68648,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8449-300-chaussures-de-football-nike-mercurial-vapor-16-academy-tf-limelight-volt-hyper-crimson",
@@ -67839,6 +68666,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8683-801-chaussures-de-football-nike-mercurial-vapor-16-elite-kylian-mbappe-fg-melon-tint-neo-turq-igloo",
@@ -67856,6 +68684,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8684-300-chaussures-de-football-nike-mercurial-vapor-16-pro-ag-limelight-volt-hyper-crimson",
@@ -67907,6 +68736,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8690-801-chaussures-de-football-bas-a-crampons-nike-mercurial-vapor-16-pro-kylian-mbappe-fg-melon-tint-neo-turq-igloo",
@@ -67924,6 +68754,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 289.0,
+        priceMax: 289.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8692-801-chaussures-de-football-nike-mercurial-superfly-10-elite-kylian-mbappe-fg-melon-tint-neo-turq-igloo",
@@ -67958,6 +68789,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4122-800-chaussures-de-football-nike-phantom-6-low-pro-fg-hyper-crimson-black-limelight",
@@ -68349,6 +69181,7 @@ const minedBootProductsChunk22: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2322-800-chaussures-de-football-nike-phantom-6-low-academy-ag-hyper-crimson-black-limelight",
@@ -71378,6 +72211,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1454-446-chaussures-de-football-nike-mercurial-superfly-10-elite-fg-racer-blue-white",
@@ -71395,6 +72229,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1456-446-chaussures-de-football-nike-mercurial-superfly-10-academy-fg-mg-racer-blue-white",
@@ -71412,6 +72247,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1458-446-chaussures-de-football-nike-mercurial-vapor-16-academy-fg-mg-racer-blue-white",
@@ -71463,6 +72299,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8685-446-chaussures-de-football-nike-mercurial-vapor-16-pro-fg-racer-blue-white",
@@ -72160,6 +72997,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 99.0,
+        priceMax: 99.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8293-200-chaussures-de-football-nike-mercurial-superfly-10-academy-kylian-mbappe-mg-plum-eclipse-metallic-silver",
@@ -72211,6 +73049,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8329-446-chaussures-de-football-nike-mercurial-superfly-10-academy-ag-racer-blue-white",
@@ -72279,6 +73118,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 289.0,
+        priceMax: 289.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8342-446-chaussures-de-football-nike-mercurial-superfly-10-elite-sg-racer-blue-white",
@@ -72296,6 +73136,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8364-446-chaussures-de-football-nike-mercurial-vapor-16-academy-ag-racer-blue-white",
@@ -72483,6 +73324,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 289.0,
+        priceMax: 289.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8692-200-chaussures-de-football-nike-mercurial-superfly-10-elite-kylian-mbappe-fg-plum-eclipse-metallic-silver",
@@ -72500,6 +73342,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf9433-446-chaussures-de-football-nike-mercurial-superfly-10-pro-fg-racer-blue-white",
@@ -72534,6 +73377,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4122-446-chaussures-de-football-nike-phantom-6-low-pro-5-fg-racer-blue-pink-blast-white",
@@ -72551,6 +73395,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4564-446-chaussures-de-football-nike-phantom-6-academy-low-fg-mg-racer-blue-pink-blast-white",
@@ -72687,6 +73532,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2324-446-chaussures-de-football-nike-phantom-6-club-low-ag-racer-blue-pink-blast-white",
@@ -72874,6 +73720,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib4469-040-chaussures-de-football-nike-tiempo-maestro-elite-ag-black-ice-blue",
@@ -72908,6 +73755,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib4479-146-chaussures-de-football-nike-tiempo-maestro-academy-ag-white-black-racer-blue-pink-blast",
@@ -73044,6 +73892,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 179.0,
+        priceMax: 179.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio9810-200-chaussures-de-football-nike-zoom-superfly-10-pro-kylian-mbappe-fg-plum-eclipse-metallic-silver",
@@ -73214,6 +74063,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 120.0,
+        priceMax: 123.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp1ga260750-chaussures-de-football-mizuno-morelia-ii-pro-ag-white-football-gold-galaxy-silver",
@@ -73282,6 +74132,7 @@ const minedBootProductsChunk23: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 85.0,
+        priceMax: 87.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp1gc252500-chaussures-de-football-mizuno-monarcida-neo-3-sel-mix-sg-black-morelia40thred",
@@ -73948,6 +74799,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
+        priceMax: 41.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000257869-chaussures-de-football-huari-segredo-ag-white-black",
@@ -74492,6 +75344,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 259.0,
+        priceMax: 259.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1776-901-chaussures-de-football-nike-tiempo-maestro-elite-fg-multi-color-black",
@@ -74696,6 +75549,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8228-900-chaussures-de-football-nike-mercurial-vapor-17-academy-mg-multi-color-black",
@@ -74730,6 +75584,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8241-900-chaussures-de-football-nike-mercurial-vapor-17-club-mg-multi-color-black",
@@ -74747,6 +75602,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 289.0,
+        priceMax: 289.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8438-661-chaussures-de-football-nike-united-mercurial-superfly-10-elite-fg-burgundy-crush-metallic-silver",
@@ -74968,6 +75824,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2161-900-chaussures-de-football-nike-phantom-6-club-fg-mg-multi-color-black",
@@ -75002,6 +75859,7 @@ const minedBootProductsChunk24: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2385-901-chaussures-de-football-nike-tiempo-maestro-academy-fg-mg-multi-color-black",
@@ -78558,6 +79416,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 269.0,
+        priceMax: 269.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj2146-600-chaussures-de-football-synthetique-nike-phantom-6-elite-low-fg-bright-crimson-blur-black",
@@ -78575,6 +79434,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 279.0,
+        priceMax: 279.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj2147-001-chaussures-de-football-nike-phantom-6-elite-high-fg-black-illusion-green-black",
@@ -78745,6 +79605,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim5847-600-chaussures-de-football-synthetique-nike-mercurial-vapor-17-academy-ag-bright-crimson-blur",
@@ -78779,6 +79640,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 269.0,
+        priceMax: 269.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4252-001-chaussures-de-football-nike-mercurial-vapor-17-elite-ag-black-illusion-green-black",
@@ -78847,6 +79709,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio5002-600-chaussures-de-football-nike-mercurial-vapor-17-academy-ag-bright-crimson-blur",
@@ -78881,6 +79744,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 149.0,
+        priceMax: 149.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio9609-100-chaussures-de-football-nike-tiempo-ligera-pro-ag-white-blur-bright-crimson",
@@ -78983,6 +79847,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiu2729-900-chaussures-de-football-nike-mercurial-vapor-17-pro-ag-multi-color-black",
@@ -79034,6 +79899,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4122-001-chaussures-de-football-nike-phantom-6-low-pro-fg-black-illusion-green-black",
@@ -79051,6 +79917,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4122-600-chaussures-de-football-nike-phantom-6-low-pro-fg-bright-crimson-blur-black",
@@ -79119,6 +79986,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2281-600-chaussures-de-football-nike-phantom-6-high-academy-ag-bright-crimson-blur-black",
@@ -79153,6 +80021,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 169.0,
+        priceMax: 169.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2311-600-chaussures-de-football-nike-phantom-6-high-pro-fg-bright-crimson-blur-black",
@@ -79187,6 +80056,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2317-001-chaussures-de-football-nike-phantom-6-low-pro-ag-black-illusion-green-black",
@@ -79221,6 +80091,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 249.0,
+        priceMax: 249.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq3157-101-chaussures-de-football-nike-tiempo-maestro-elite-fg-white-blur-bright-crimson",
@@ -79255,6 +80126,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 149.0,
+        priceMax: 149.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq3158-102-chaussures-de-football-nike-tiempo-ligera-pro-fg-white-blur-bright-crimson",
@@ -79340,6 +80212,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 84.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib4479-100-chaussures-de-football-nike-tiempo-maestro-academy-ag-white-blur-bright-crimson",
@@ -79357,6 +80230,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 289.0,
+        priceMax: 289.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif8507-001-chaussures-de-football-nike-mercurial-superfly-11-elite-fg-black-illusion-green-black",
@@ -79425,6 +80299,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 179.0,
+        priceMax: 179.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif8509-001-chaussures-de-football-nike-mercurial-superfly-11-pro-fg-black-illusion-green-black",
@@ -79459,6 +80334,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 159.0,
+        priceMax: 159.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif8512-001-chaussures-de-football-nike-mercurial-vapor-17-pro-fg-black-illusion-green-black",
@@ -79493,6 +80369,7 @@ const minedBootProductsChunk25: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif8517-001-chaussures-de-football-nike-mercurial-vapor-17-academy-fg-black-illusion-green-black",
@@ -79649,6 +80526,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1494-100-chaussures-de-football-nike-mercurial-superfly-11-academy-turf-white-blur-bright-crimson",
@@ -79683,6 +80561,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1496-100-chaussures-de-football-nike-mercurial-superfly-11-academy-ag-white-blur-bright-crimson",
@@ -79751,6 +80630,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4564-001-chaussures-de-football-nike-phantom-6-low-academy-mg-black-illusion-green-black",
@@ -80482,6 +81362,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 94.0,
+        priceMax: 94.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1485-001-chaussures-de-football-nike-mercurial-superfly-11-academy-mg-noir-noir-illusion-green",
@@ -80720,6 +81601,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
+        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgols2602ag-chaussures-de-football-joma-gol-2602-ag-white",
@@ -81434,6 +82316,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 65.0,
+        priceMax: 65.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftops2602tf-chaussures-de-football-joma-top-flex-2602-tf-white",
@@ -81536,6 +82419,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 77.0,
+        priceMax: 77.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftorw2602tf-chaussures-de-football-joma-top-flex-rebound-2602-turf-white",
@@ -82165,6 +83049,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 139.0,
+        priceMax: 139.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4123-600-chaussures-de-football-nike-phantom-6-low-pro-turf-bright-crimson-blur-black",
@@ -82182,6 +83067,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 89.0,
+        priceMax: 89.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4564-600-chaussures-de-football-nike-phantom-6-low-academy-mg-bright-crimson-blur-black",
@@ -82199,6 +83085,7 @@ const minedBootProductsChunk26: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 64.0,
+        priceMax: 64.99,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm8933-600-chaussures-de-football-nike-phantom-6-low-club-mg-bright-crimson-blur-black",

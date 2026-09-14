@@ -44,7 +44,10 @@ export default function CompareBootOfferRow({
       </div>
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.price}</span>
-        <span className="font-medium text-[#1a1a1a]">{formatOfferMoney(offer.price, offer.currency)}</span>
+        <span className="font-medium text-[#1a1a1a]">
+          {offer.priceMax ? `${t.botas.from} ` : ""}
+          {formatOfferMoney(offer.price, offer.currency)}
+        </span>
       </div>
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.shippingCost}</span>
@@ -59,6 +62,7 @@ export default function CompareBootOfferRow({
       <div className="mt-0.5 flex justify-between border-t border-[#C9A24B]/15 pt-1.5 text-sm">
         <span className="font-medium text-[#675c44]">{t.compare.total}</span>
         <span className="font-semibold text-[#B45309]">
+          {offer.priceMax ? `${t.botas.from} ` : ""}
           {formatOfferMoney(total, offer.currency)}
           {isProSoccer && "+"}
         </span>
