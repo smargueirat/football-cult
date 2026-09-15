@@ -4,6 +4,7 @@ import {
   Product,
   bestOffer,
   findProduct,
+  products,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -108,6 +109,20 @@ export default async function JerseyDetailPage({
     if (entries) priceHistory[offer.url] = entries;
   }
 
+  // Calculado acá (server, con el array completo -- no cuesta nada de
+  // bundle del lado del cliente) y no en JerseyDetailClient.tsx como
+  // antes: ese componente importaba `products` directo, y por el mismo
+  // bug de bundling ya documentado para botas (ver src/lib/offerMoney.ts)
+  // eso arrastraba el catálogo entero de camisetas a esta página aunque
+  // solo se necesitara UN producto. "Mismo talle" (que depende de una
+  // talla elegida en vivo por el usuario DESPUÉS de cargar la página,
+  // más el país detectado en el navegador) no se puede precalcular acá
+  // de la misma forma -- ver el fetch a /api/related-by-size en
+  // JerseyDetailClient.tsx.
+  const sameTeamProducts = products
+    .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
+    .slice(0, 10);
+
   return (
     <>
       <script
@@ -115,7 +130,7 @@ export default async function JerseyDetailPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product, locale)) }}
       />
-      <JerseyDetailClient product={product} priceHistory={priceHistory} />
+      <JerseyDetailClient product={product} priceHistory={priceHistory} sameTeamProducts={sameTeamProducts} />
     </>
   );
 }

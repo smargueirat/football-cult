@@ -12,7 +12,6 @@ import {
   getAgeGroup,
   isVintageRetro,
   offerShipsTo,
-  products,
   teamNames,
   typeNames,
 } from "@/data/products";
@@ -64,9 +63,11 @@ const OFFERS_SECTION_ID = "comparativa-tiendas";
 export default function JerseyDetailClient({
   product,
   priceHistory,
+  sameTeamProducts,
 }: {
   product: Product;
   priceHistory: Record<string, { date: string; price: number }[]>;
+  sameTeamProducts: Product[];
 }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
@@ -197,25 +198,33 @@ export default function JerseyDetailClient({
     return list;
   }, [sortedOffers, bestOffer]);
 
-  // Descubrimiento: otros productos del mismo equipo (cualquier tipo o
-  // temporada), y -- solo si el usuario ya eligió una talla concreta --
-  // otros productos que tengan esa talla disponible en su país.
-  const sameTeamProducts = useMemo(
-    () =>
-      products
-        .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
-        .slice(0, 10),
-    [product.id, product.teamKey]
-  );
-  const sameSizeProducts = useMemo(() => {
-    if (!selectedSize) return [];
-    return products
-      .filter(
-        (p) =>
-          p.id !== product.id &&
-          availableSizesForCountry(p, countryCode).includes(selectedSize)
-      )
-      .slice(0, 10);
+  // Descubrimiento: "mismo equipo" ya viene calculado del server
+  // (page.tsx, con el array completo -- ver el comentario ahí). "Misma
+  // talla" depende de una elección en vivo del usuario (talla + país
+  // detectado en el navegador), así que se pide a /api/related-by-size
+  // recién cuando el usuario elige una talla, en vez de importar el
+  // catálogo entero acá solo para este filtro (mismo bug de bundling ya
+  // documentado en offerMoney.ts).
+  const [sameSizeProducts, setSameSizeProducts] = useState<Product[]>([]);
+  useEffect(() => {
+    if (!selectedSize) {
+      setSameSizeProducts([]);
+      return;
+    }
+    let cancelled = false;
+    fetch(
+      `/api/related-by-size?productId=${encodeURIComponent(product.id)}&size=${encodeURIComponent(selectedSize)}&country=${encodeURIComponent(countryCode)}`
+    )
+      .then((res) => res.json())
+      .then((data: { products: Product[] }) => {
+        if (!cancelled) setSameSizeProducts(data.products ?? []);
+      })
+      .catch(() => {
+        if (!cancelled) setSameSizeProducts([]);
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [product.id, selectedSize, countryCode]);
 
   const isRetro = isVintageRetro(product);
