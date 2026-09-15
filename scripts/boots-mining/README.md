@@ -44,15 +44,26 @@ terreno/imagen reales. Viven en `browserMinedBootProducts` dentro de
 `boots.ts`, arriba del marcador `AUTO-GENERATED`, para que
 `refresh_boots.py` nunca las toque.
 
-**Limitación real, a propósito no resuelta**: son una muestra
-verificada (65 productos: 18 Nike CL, 31 Nike AR, 16 Puma AR tras
-deduplicar variantes del mismo modelo al precio más barato), no el
-catálogo completo de cada tienda (~111/87/88 respectivamente) -- el
-costo de transcribir cada página a mano, mensaje por mensaje, hizo que
-extender la cobertura no valiera la pena frente a otras prioridades.
+**Cobertura completa a la fecha de mining (2026-09-15)**: 125 productos
+(41 Nike CL, 39 Nike AR, 45 Puma AR tras deduplicar variantes del mismo
+modelo al precio más barato) -- se recorrió el catálogo entero de cada
+tienda con paginación real (botón "Mostrar más"/"Página siguiente"
+hasta que dejó de traer productos nuevos, verificado con un cursor
+explícito por índice para no perder/duplicar filas), no una muestra
+parcial. Raw: 113 fichas Nike CL, 86 Nike AR, 99 "resultados" Puma AR
+(de los cuales 5 al final de la paginación eran zapatillas de otro
+rubro -- "Zapatillas PUMA-180 Pro", "Speedcat OG" -- coladas en la
+categoría de botines; descartadas por no empezar con "Botines de
+fútbol/futsal/rugby" como el resto). Puma AR también tenía 2 modelos de
+rugby reales bajo la misma categoría ("Avant Pro", "Avant ADP") --
+excluidos igual que en el resto del pipeline.
+
 No se auto-refrescan a diario (sin feed CSV/XML que un script pueda
-leer) -- para actualizar precios/agregar más modelos hay que repetir el
-mismo proceso manual.
+leer) -- para actualizar precios o volver a ampliar cobertura si el
+catálogo real de estas 3 tiendas crece, hay que repetir el mismo
+proceso manual (sesión real de Chrome, recorrer la paginación completa,
+extraer con `window.__nextBatch()`-estilo cursor para evitar el límite
+de ~900 caracteres por respuesta de `javascript_tool`).
 
 ## Uso diario (automatizado)
 
