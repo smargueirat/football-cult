@@ -1761,6 +1761,81 @@ but the photo is a sponsorless plain-blue shirt on an old template -- the same
 class as FansJerseyHub's Birmingham City listings (2026-09-10), so it is not
 store-specific. Dropped. Photo review remains the only check that catches it.
 
+## Daily pass (2026-09-15) -- two store-name spellings for one merchant let stale offers pile up
+
+All 14 Awin feeds + MysteryShirtClub + the 5 Rakuten Brazil stores produced
+**zero** new products again (third pass in a row, same as 09-13 and 09-14 --
+the CSV feeds stay drained). eBay's `ebay_mine_cycle.py` closed cycle 2 with
+its last 25 teams (385/385); next run starts cycle 3. Soicos skipped again --
+no `claude-in-chrome` in this run. 8 new products, all photo-verified.
+
+**Real bug: `"Forum Sport"` and `"ForumSport"` are the same merchant under two
+spellings, and `refresh.py` keys offers by store name.** So every daily run
+updated the `ForumSport` offer and left the `Forum Sport` one sitting beside it
+with a stale price -- the same deep link twice on one product card, two
+different prices. 73 exact-URL duplicates had accumulated this way. Deleted the
+older-spelling copy of each. **A merchant that appears under two spellings is
+invisible to every dedup check we run** (the duplicate-offer-URL scan only
+flags it once BOTH copies exist, by which point the stale one has already been
+served); the durable fix is to never introduce a second spelling, and the
+existing `grep -o 'store: "[^"]*"' | sort | uniq -c` sanity check is what
+surfaces one -- run it when onboarding a store. `ComoFC`/`ComoFCShop` and
+`DeporteOutlet`/`DeporteOutletES` are the same split, still unmerged (those two
+never collided on a URL, so no stale offers yet -- but they will).
+
+One of the 73 was a misfiled product, not just a stale price:
+`dortmund-third-202526`'s only offer was a listing titled "26/27" that already
+lived on `dortmund-third-202627`. Removing it leaves that id with an empty
+`offers: []`. Left in place rather than deleted -- ids are favourite-bearing
+(see "Product id stability"), and the render path is the same one 291 products
+with every-offer-out-of-stock already take (`useBestOfferForCountry` filters,
+`ProductCard` uses `?.`), so an empty array degrades to a card with no price,
+not a crash.
+
+**"Retro titled as current" hit three different sources in one pass** -- it is
+now the most common false positive here, and photo review is still the only
+thing that catches it:
+- **AdidasES `chile|home`, "Camiseta primera equipacion Chile 93/94", EUR 110** --
+  an adidas Originals heritage reissue. Caught by the README's own
+  bare-2-digit-suffix grep over raw picks; adidas's own image filename
+  (`Chile_93-94_Rojo_JN3716`) confirms it.
+- **eBay `columbuscrew|home`, "Adidas Columbus Crew 26/27 Authentic"** -- the
+  photo is pixel-for-pixel the shirt already on file as
+  `columbuscrew-retro-202223-home` (same jacquard, same "23" jock tag).
+  **Comparing a suspicious "new season" pick against the team's existing retro
+  products by photo is a cheap check and worked immediately here.**
+- **eBay kids `nyredbulls|away`** -- adidas style DN2956, Climalite branding
+  (discontinued ~2019). `gen_kids_teams.py` hardcodes `season: "2026"` for every
+  kids block, so an 8-year-old shirt would have been filed as current with no
+  season signal to contradict it. Kids picks need the same photo check as
+  current picks precisely because the season field carries no information.
+
+**All 10 CSV-feed `season_conflict`s were noise**, the documented ratio holding:
+9 had their exact link AND image already in `products.ts` (Tiro 25 Competition
+x3, MSC's generic `2026-2027 <Team> Shirt` template x4, BSTN Inter Miami,
+ForumSport Alaves). The 10th (InterStore `internacional|home` 25/26 vs the
+`202627` on file) is the same older-stock skip taken on 09-13.
+
+**Collision scan: 6 flagged, 0 real** (vs 29% on 09-13). All filler-name
+keepers: three AS Saint-Etienne picks flagged `asse` vs `stetienne` (the known
+duplicate-key-for-one-club case), "Wydad Athletic Club" vs Athletic Bilbao, and
+"GENOA ITALY" vs the Italy national team. The 09-13 spike really was that
+batch being national-team-heavy, not a regression in the miner.
+
+**`ebay_check_stale.py` back to 18 of 200 (9%)**, from 33% on 09-13 -- so that
+spike was one old cursor range, not the catalog aging out faster than one
+200/day batch can re-check it. No action needed.
+
+**Rakuten FTP truncates every file, deterministically.** All 5 feeds download
+1-2% short of the size the server's own `SIZE` reports (curl exits 18, python
+`ftplib` short-reads to the identical byte count on every retry), so the gzip
+tail and the `TRL` line are missing. Worked around by decompressing with
+`zlib.decompressobj` (which yields everything up to the truncation), dropping
+the final partial line, and re-gzipping -- ~1% of each store's rows are lost
+that way, which for these small catalogs is a handful of products. Plain
+`gzip.open`/`gzip -t` both reject the file outright, so a future run that
+silently produces zero Rakuten picks should check this first.
+
 ## Soicos (Nike CL/AR, Puma AR) — needs a real browser, not headless Playwright (2026-08-31)
 
 A new affiliate network, separate from Awin/eBay/Rakuten. Approved
