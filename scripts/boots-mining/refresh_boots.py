@@ -84,6 +84,13 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
     sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
     lines.append(f"{pad}      sizes: [{sizes_str}],")
+    if o.get('sizePrices'):
+        lines.append(f"{pad}      sizePrices: [")
+        for sp in o['sizePrices']:
+            lines.append(
+                f"{pad}        {{ size: {ts_string(sp['size'])}, price: {sp['price']}, url: {ts_string(sp['url'])} }},"
+            )
+        lines.append(f"{pad}      ],")
     lines.append(f"{pad}    }},")
     lines.append(f"{pad}  ],")
     lines.append(pad + "},")
@@ -138,6 +145,7 @@ def build_entries(mined, used_ids):
                 "url": d["url"],
                 "imageUrl": d["imageUrl"],
                 "sizes": d["sizes"],
+                **({"sizePrices": d["sizePrices"]} if d.get("sizePrices") else {}),
             }],
         })
     return entries

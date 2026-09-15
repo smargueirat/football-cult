@@ -288,6 +288,21 @@ def mine_blaz_awin(fname, store_label):
         # UI pueda mostrar "Desde X" en vez de una sola cifra que no vale
         # para toda la talla listada.
         price_max = max((parse_price(r.get('search_price')) or 0) for r in rows)
+        # precio Y link real de CADA talla (no solo el resumen price/
+        # priceMax) -- pedido explícito del usuario después del fix de
+        # arriba: "hacer el precio por talla". Cada fila del feed ya
+        # trae su propio aw_deep_link real por talla (confirmado: 12
+        # URLs distintas para las 12 tallas de "adidas World Cup"), así
+        # que "Ver oferta" para una talla puntual puede llevar a la
+        # página real de ESA talla en vez de siempre a la más barata.
+        size_prices = sorted(
+            (
+                {'size': dot_size(r.get('custom_1', '').strip()), 'price': parse_price(r.get('search_price')), 'url': r.get('aw_deep_link')}
+                for r in rows
+                if re.match(r'^\d', r.get('custom_1', '').strip()) and parse_price(r.get('search_price')) is not None
+            ),
+            key=lambda sp: size_sort_key(sp['size']),
+        )
         entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': title, 'groundType': ground,
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0,
@@ -296,6 +311,8 @@ def mine_blaz_awin(fname, store_label):
         }
         if price_max > price:
             entry['priceMax'] = price_max
+        if price_max > price:
+            entry['sizePrices'] = size_prices
         results.append(entry)
         n += 1
     print(f'{store_label}:', n)
@@ -383,6 +400,19 @@ def mine_google_shopping_fr(fname, store_label):
         # barata (el link real de siempre), priceMax solo se manda si hay
         # diferencia real.
         price_max = max((parse_price(r.get('price')) or 0) for r in rows)
+        # precio real por talla (mismo motivo que mine_blaz_awin) -- en
+        # este esquema (Google Shopping) el link es el mismo para todas
+        # las tallas de un colorway (no hay una URL por talla como en
+        # el esquema Awin clásico de las ES), pero el precio sí varía
+        # real por talla, así que igual vale mostrarlo.
+        size_prices = sorted(
+            (
+                {'size': dot_size(r.get('size', '').strip()), 'price': parse_price(r.get('price')), 'url': r.get('aw_deep_link')}
+                for r in rows
+                if r.get('size', '').strip() and parse_price(r.get('price')) is not None
+            ),
+            key=lambda sp: size_sort_key(sp['size']),
+        )
         entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': model, 'groundType': ground,
             'price': price, 'shipping': shipping,
@@ -391,6 +421,8 @@ def mine_google_shopping_fr(fname, store_label):
         }
         if price_max > price:
             entry['priceMax'] = price_max
+        if price_max > price:
+            entry['sizePrices'] = size_prices
         results.append(entry)
         n += 1
     print(f'{store_label}:', n)

@@ -720,10 +720,12 @@ export default function SearchExplorer({
       ) : (
         <>
           <p className="text-xs text-[#675c44]">
-            {(effectiveSection === "boots" ? t.search.resultsCountBoots : t.search.resultsCount).replace(
-              "{n}",
-              String(catalogItems.length)
-            )}
+            {(effectiveSection === "boots"
+              ? t.search.resultsCountBoots
+              : effectiveSection === "all"
+                ? t.search.resultsCountAll
+                : t.search.resultsCount
+            ).replace("{n}", String(catalogItems.length))}
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 2xl:grid-cols-6">
             {visibleItems.map((item, i) => (

@@ -98,6 +98,7 @@ export interface Translations {
     clearAria: string;
     resultsCount: string;
     resultsCountBoots: string;
+    resultsCountAll: string;
     sortLabel: string;
     sortRelevance: string;
     sortPriceAsc: string;
@@ -512,6 +513,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Limpiar búsqueda",
       resultsCount: "{n} camisetas encontradas",
       resultsCountBoots: "{n} botas encontradas",
+      resultsCountAll: "{n} items encontrados",
       sortLabel: "Ordenar por",
       sortRelevance: "Relevancia",
       sortPriceAsc: "Precio: menor a mayor",
@@ -932,6 +934,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Limpar busca",
       resultsCount: "{n} camisas encontradas",
       resultsCountBoots: "{n} chuteiras encontradas",
+      resultsCountAll: "{n} itens encontrados",
       sortLabel: "Ordenar por",
       sortRelevance: "Relevância",
       sortPriceAsc: "Preço: menor para maior",
@@ -1352,6 +1355,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Clear search",
       resultsCount: "{n} jerseys found",
       resultsCountBoots: "{n} boots found",
+      resultsCountAll: "{n} items found",
       sortLabel: "Sort by",
       sortRelevance: "Relevance",
       sortPriceAsc: "Price: low to high",
@@ -1772,6 +1776,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Effacer la recherche",
       resultsCount: "{n} maillots trouvés",
       resultsCountBoots: "{n} chaussures trouvées",
+      resultsCountAll: "{n} articles trouvés",
       sortLabel: "Trier par",
       sortRelevance: "Pertinence",
       sortPriceAsc: "Prix : croissant",
@@ -2192,6 +2197,7 @@ export const translations: Record<Locale, Translations> = {
       clearAria: "Cancella ricerca",
       resultsCount: "{n} maglie trovate",
       resultsCountBoots: "{n} scarpini trovati",
+      resultsCountAll: "{n} articoli trovati",
       sortLabel: "Ordina per",
       sortRelevance: "Rilevanza",
       sortPriceAsc: "Prezzo: dal più basso",

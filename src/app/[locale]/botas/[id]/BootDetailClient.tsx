@@ -43,6 +43,23 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   const [selectedOffer, setSelectedOffer] = useState<BootOffer>(sortedOffers[0]);
   const hasDistinctPhotos = new Set(boot.offers.map((o) => o.imageUrl)).size > 1;
 
+  // Selector de talla real: algunas tiendas (ver el comentario largo de
+  // sizePrices en boots.ts) cobran distinto según la talla dentro del
+  // mismo colorway, cada una con su propio precio y a veces su propio
+  // link real. Antes se resolvía mostrando "Desde X" -- esto deja
+  // elegir la talla real y ver/linkear su precio exacto en vez de una
+  // cifra que solo vale para la más barata.
+  const [selectedSize, setSelectedSize] = useState<Record<string, string>>({});
+  function cheapestSize(offer: BootOffer) {
+    if (!offer.sizePrices || offer.sizePrices.length === 0) return undefined;
+    return offer.sizePrices.reduce((a, b) => (a.price <= b.price ? a : b)).size;
+  }
+  function activeSizePrice(offer: BootOffer) {
+    if (!offer.sizePrices || offer.sizePrices.length === 0) return null;
+    const sel = selectedSize[offer.store] ?? cheapestSize(offer);
+    return offer.sizePrices.find((sp) => sp.size === sel) ?? offer.sizePrices[0];
+  }
+
   return (
     <div className="mx-auto w-full max-w-6xl px-3 py-8 sm:px-6">
       <Link
@@ -101,6 +118,9 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
           <div className="mt-3 flex flex-col gap-3">
             {sortedOffers.map((offer, i) => {
               const isSelected = offer.imageUrl === selectedOffer.imageUrl;
+              const sp = activeSizePrice(offer);
+              const rowUrl = sp ? sp.url : offer.url;
+              const rowPrice = sp ? sp.price : offer.price;
               return (
                 // div, no button: ya trae adentro un <a> real (ver oferta) y un
                 // <button> real (comparar) -- anidar cualquiera de los dos
@@ -164,9 +184,32 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
                           {t.botas.sizesEU}: {offer.sizes[0]}–{offer.sizes[offer.sizes.length - 1]}
                         </p>
                       )}
+                      {offer.sizePrices && (
+                        <div className="mt-1 flex flex-wrap gap-1" onClick={(e) => e.stopPropagation()}>
+                          {offer.sizePrices.map((sizeOpt) => {
+                            const isSizeSelected = (selectedSize[offer.store] ?? cheapestSize(offer)) === sizeOpt.size;
+                            return (
+                              <button
+                                key={sizeOpt.size}
+                                type="button"
+                                onClick={() =>
+                                  setSelectedSize((prev) => ({ ...prev, [offer.store]: sizeOpt.size }))
+                                }
+                                className={`rounded border px-1.5 py-0.5 text-[10px] font-medium transition-colors ${
+                                  isSizeSelected
+                                    ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                                    : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40"
+                                }`}
+                              >
+                                {sizeOpt.size}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      )}
                       <p className="text-xs text-[#675c44]">
-                        {offer.priceMax ? `${t.botas.from} ` : ""}
-                        {formatOfferMoney(offer.price, offer.currency)}
+                        {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
+                        {formatOfferMoney(rowPrice, offer.currency)}
                         {offer.store === "ProSoccer"
                           ? // Tienda de EE.UU. -- el feed no da un costo de envío
                             // internacional real, y su propia política dice
@@ -181,7 +224,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
                     </div>
                   </div>
                   <a
-                    href={offer.url}
+                    href={rowUrl}
                     target="_blank"
                     rel="noopener noreferrer nofollow sponsored"
                     onClick={(e) => e.stopPropagation()}
