@@ -54,9 +54,6 @@ interface SearchFilterValue {
   brandFilter: Brand[];
   toggleBrandFilter: (b: Brand) => void;
   setBrandFilter: (b: Brand[]) => void;
-  storeFilter: string[];
-  toggleStoreFilter: (s: string) => void;
-  setStoreFilter: (s: string[]) => void;
   sizeFilter: Size[];
   toggleSizeFilter: (s: Size) => void;
   setSizeFilter: (s: Size[]) => void;
@@ -120,7 +117,6 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [seasonFilter, setSeasonFilter] = useState<string[]>([]);
   const [ageGroupFilter, setAgeGroupFilter] = useState<AgeGroup[]>([]);
   const [brandFilter, setBrandFilter] = useState<Brand[]>([]);
-  const [storeFilter, setStoreFilter] = useState<string[]>([]);
   const [sizeFilter, setSizeFilter] = useState<Size[]>([]);
   const [bootSizeFilter, setBootSizeFilter] = useState<string[]>([]);
   const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
@@ -138,7 +134,6 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (seasonFilter.length > 0 ? 1 : 0) +
     (ageGroupFilter.length > 0 ? 1 : 0) +
     (brandFilter.length > 0 ? 1 : 0) +
-    (storeFilter.length > 0 ? 1 : 0) +
     (sizeFilter.length > 0 ? 1 : 0) +
     (bootSizeFilter.length > 0 ? 1 : 0) +
     (colorFilter.length > 0 ? 1 : 0) +
@@ -167,9 +162,6 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         brandFilter,
         toggleBrandFilter: (b) => setBrandFilter((cur) => toggle(cur, b)),
         setBrandFilter,
-        storeFilter,
-        toggleStoreFilter: (s) => setStoreFilter((cur) => toggle(cur, s)),
-        setStoreFilter,
         sizeFilter,
         toggleSizeFilter: (s) => setSizeFilter((cur) => toggle(cur, s)),
         setSizeFilter,
@@ -201,7 +193,6 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setSeasonFilter([]);
           setAgeGroupFilter([]);
           setBrandFilter([]);
-          setStoreFilter([]);
           setSizeFilter([]);
           setBootSizeFilter([]);
           setColorFilter([]);

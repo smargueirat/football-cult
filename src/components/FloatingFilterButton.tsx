@@ -13,7 +13,6 @@ import {
   BOOT_SIZES,
   BRAND_FILTERS,
   QUICK_PICK_TEAMS,
-  STORE_FILTERS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_LABEL, BOOT_TIER_ORDER } from "@/lib/bootTier";
@@ -23,6 +22,8 @@ import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import PriceRangeSlider from "./PriceRangeSlider";
 import ScrollArrowRow from "./ScrollArrowRow";
+import Link from "@/lib/i18n/LocaleLink";
+import { SECTION_PATHS } from "@/lib/sections";
 
 export default function FloatingFilterButton() {
   const { locale, t } = useLanguage();
@@ -44,9 +45,6 @@ export default function FloatingFilterButton() {
     brandFilter,
     toggleBrandFilter,
     setBrandFilter,
-    storeFilter,
-    toggleStoreFilter,
-    setStoreFilter,
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
@@ -122,6 +120,25 @@ export default function FloatingFilterButton() {
                 {t.search.clearFilters}
               </button>
             )}
+          </div>
+
+          {/* Mismos links reales a las 6 páginas de sección dedicadas que
+              ya se ven en "Explorá por sección" del home -- ver el
+              comentario largo en SearchExplorer.tsx. Este panel solo se
+              monta en el home, así que siempre tiene sentido mostrarlo. */}
+          <div className="flex flex-col gap-1.5">
+            <p className="text-xs text-[#9a9a94]">{t.botas.exploreSections}</p>
+            <ScrollArrowRow className="gap-1.5">
+              {SECTION_PATHS.map((path, i) => (
+                <Link
+                  key={path}
+                  href={path}
+                  className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
+                >
+                  {t.heroSlides[i]?.eyebrow}
+                </Link>
+              ))}
+            </ScrollArrowRow>
           </div>
 
           {sectionFilter !== "boots" && (
@@ -228,31 +245,6 @@ export default function FloatingFilterButton() {
             </ScrollArrowRow>
           </div>
 
-          {sectionFilter !== "boots" && (
-            <div className="flex flex-col gap-1.5">
-              <p className="text-xs text-[#9a9a94]">{t.search.storeLabel}</p>
-              <ScrollArrowRow className="gap-1.5">
-                <Chip
-                  active={storeFilter.length === 0}
-                  onClick={() => setStoreFilter([])}
-                  className="flex-shrink-0 whitespace-nowrap"
-                >
-                  {t.search.allCategories}
-                </Chip>
-                {STORE_FILTERS.map((key) => (
-                  <Chip
-                    key={key}
-                    active={storeFilter.includes(key)}
-                    onClick={() => toggleStoreFilter(key)}
-                    className="flex-shrink-0 whitespace-nowrap"
-                  >
-                    {key}
-                  </Chip>
-                ))}
-              </ScrollArrowRow>
-            </div>
-          )}
-
           <div className="flex flex-col gap-1.5">
             <p className="text-xs text-[#9a9a94]">{t.search.priceRangeLabel}</p>
             <PriceRangeSlider
@@ -264,7 +256,10 @@ export default function FloatingFilterButton() {
             />
           </div>
 
-          {sectionFilter === "boots" && (
+          {/* "!== jerseys" (no "=== boots") a propósito, mismo motivo que
+              SearchExplorer.tsx -- filtros de bota disponibles también en
+              "Todos", no solo aislando la sección Botas. */}
+          {sectionFilter !== "jerseys" && (
             <>
               <div className="flex flex-col gap-1.5">
                 <p className="text-xs text-[#9a9a94]">{t.search.bootSizeLabel}</p>

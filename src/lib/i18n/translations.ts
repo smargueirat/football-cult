@@ -108,7 +108,6 @@ export interface Translations {
     filtersButton: string;
     showResults: string;
     brandLabel: string;
-    storeLabel: string;
     loadMore: string;
     sizeLabel: string;
     bootSizeLabel: string;
@@ -523,7 +522,6 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filtros",
       showResults: "Ver resultados",
       brandLabel: "Marca",
-      storeLabel: "Tienda",
       loadMore: "Ver más",
       sizeLabel: "Talle",
       bootSizeLabel: "Talle (EU)",
@@ -944,7 +942,6 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filtros",
       showResults: "Ver resultados",
       brandLabel: "Marca",
-      storeLabel: "Loja",
       loadMore: "Ver mais",
       sizeLabel: "Tamanho",
       bootSizeLabel: "Tamanho (EU)",
@@ -1365,7 +1362,6 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filters",
       showResults: "Show results",
       brandLabel: "Brand",
-      storeLabel: "Store",
       loadMore: "Show more",
       sizeLabel: "Size",
       bootSizeLabel: "Size (EU)",
@@ -1786,7 +1782,6 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filtres",
       showResults: "Voir les résultats",
       brandLabel: "Marque",
-      storeLabel: "Boutique",
       loadMore: "Voir plus",
       sizeLabel: "Taille",
       bootSizeLabel: "Pointure (EU)",
@@ -2207,7 +2202,6 @@ export const translations: Record<Locale, Translations> = {
       filtersButton: "Filtri",
       showResults: "Mostra risultati",
       brandLabel: "Marca",
-      storeLabel: "Negozio",
       loadMore: "Mostra altro",
       sizeLabel: "Taglia",
       bootSizeLabel: "Taglia (EU)",

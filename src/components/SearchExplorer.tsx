@@ -34,7 +34,6 @@ import {
   BOOT_SIZES,
   BRAND_FILTERS,
   QUICK_PICK_TEAMS,
-  STORE_FILTERS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_LABEL, BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
@@ -55,6 +54,8 @@ import ProductCard from "./ProductCard3D";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
 import Portal from "./Portal";
+import Link from "@/lib/i18n/LocaleLink";
+import { SECTION_PATHS } from "@/lib/sections";
 
 const SCROLL_KEY = "football-cult-catalog-scroll";
 
@@ -106,9 +107,6 @@ export default function SearchExplorer({
     brandFilter,
     toggleBrandFilter,
     setBrandFilter,
-    storeFilter,
-    toggleStoreFilter,
-    setStoreFilter,
     sizeFilter,
     toggleSizeFilter,
     setSizeFilter,
@@ -271,8 +269,6 @@ export default function SearchExplorer({
         effectiveAgeGroupFilter.length === 0 || effectiveAgeGroupFilter.includes(getAgeGroup(p));
       const matchesBrand =
         brandFilter.length === 0 || (!!p.brand && brandFilter.includes(p.brand));
-      const matchesStore =
-        storeFilter.length === 0 || p.offers.some((o) => storeFilter.includes(o.store));
       const matchesSize =
         sizeFilter.length === 0 || availableSizes(p).some((s) => sizeFilter.includes(s));
       const matchesColor =
@@ -296,7 +292,6 @@ export default function SearchExplorer({
         matchesSeason &&
         matchesAgeGroup &&
         matchesBrand &&
-        matchesStore &&
         matchesSize &&
         matchesColor &&
         matchesShipping &&
@@ -358,7 +353,6 @@ export default function SearchExplorer({
     seasonFilter,
     effectiveAgeGroupFilter,
     brandFilter,
-    storeFilter,
     sizeFilter,
     colorFilter,
     priceRange,
@@ -510,7 +504,7 @@ export default function SearchExplorer({
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, storeFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, bootGroundTypeFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, bootGroundTypeFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -792,6 +786,35 @@ export default function SearchExplorer({
             </div>
 
             <div className="flex flex-col gap-5 overflow-y-auto px-5 py-5">
+              {/* Pedido del usuario: poder filtrar directo por las mismas 6
+                  secciones que ya se ven en "Explorá por sección" del home
+                  (selecciones/clubes/retro/mujer/niños/botas) desde ADENTRO
+                  del panel de filtros, no solo tocando esos círculos en el
+                  home. Son links reales a las páginas dedicadas (no un
+                  filtro de estado nuevo) -- cada una ya arma exactamente
+                  esa combinación de categoría/tipo/edad/sección con SSR
+                  correcto (ver CategoryCatalogPage.tsx), reinventar esa
+                  lógica acá como filtro interactivo hubiera duplicado algo
+                  que ya funciona. Solo tiene sentido en el home (una página
+                  de categoría dedicada ya ES una de estas secciones). */}
+              {forcedSection === undefined && (
+                <div className="flex flex-col gap-1.5">
+                  <span className="text-xs text-[#675c44]">{t.botas.exploreSections}:</span>
+                  <ScrollArrowRow className="-mx-5 gap-2 px-5">
+                    {SECTION_PATHS.map((path, i) => (
+                      <Link
+                        key={path}
+                        href={path}
+                        onClick={() => setFiltersOpen(false)}
+                        className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
+                      >
+                        {t.heroSlides[i]?.eyebrow}
+                      </Link>
+                    ))}
+                  </ScrollArrowRow>
+                </div>
+              )}
+
               {/* Los grupos que solo tienen sentido para camisetas (equipo,
                   en baja, categoría, tipo, talle de ropa, temporada, edad)
                   se ocultan del todo en la sección "botas". Tienda también
@@ -918,31 +941,6 @@ export default function SearchExplorer({
                 </ScrollArrowRow>
               </div>
 
-              {effectiveSection !== "boots" && (
-                <div className="flex flex-col gap-1.5">
-                  <span className="text-xs text-[#675c44]">{t.search.storeLabel}:</span>
-                  <ScrollArrowRow className="-mx-5 gap-2 px-5">
-                    <Chip
-                      active={storeFilter.length === 0}
-                      onClick={() => setStoreFilter([])}
-                      className="flex-shrink-0 whitespace-nowrap"
-                    >
-                      {t.search.allCategories}
-                    </Chip>
-                    {STORE_FILTERS.map((key) => (
-                      <Chip
-                        key={key}
-                        active={storeFilter.includes(key)}
-                        onClick={() => toggleStoreFilter(key)}
-                        className="flex-shrink-0 whitespace-nowrap"
-                      >
-                        {key}
-                      </Chip>
-                    ))}
-                  </ScrollArrowRow>
-                </div>
-              )}
-
               <div className="flex flex-col gap-1.5">
                 <span className="text-xs text-[#675c44]">{t.search.priceRangeLabel}:</span>
                 <PriceRangeSlider
@@ -954,7 +952,11 @@ export default function SearchExplorer({
                 />
               </div>
 
-              {effectiveSection === "boots" && (
+              {/* "!== jerseys" (no "=== boots") a propósito -- pedido del
+                  usuario: los filtros de bota tienen que estar disponibles
+                  también en la vista "Todos" (camisetas+botas mezcladas),
+                  no solo cuando se aisla la sección Botas. */}
+              {effectiveSection !== "jerseys" && (
                 <>
                   <div className="flex flex-col gap-1.5">
                     <span className="text-xs text-[#675c44]">{t.search.bootSizeLabel}:</span>

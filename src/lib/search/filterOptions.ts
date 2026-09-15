@@ -23,17 +23,6 @@ export const BRAND_FILTERS: Brand[] = (
   ["adidas", "nike", "puma", "kappa", "hummel", "umbro", "newbalance", "macron"] as Brand[]
 ).filter((key) => products.some((p) => p.brand === key));
 
-// Todas las tiendas presentes en el catálogo de camisetas (solo ~29
-// valores distintos, a diferencia de marca/equipo no hace falta curar un
-// subconjunto). Ya NO incluye tiendas de botas -- pedido explícito del
-// usuario: "en el filtro de las botas no me interesa el local", así que
-// ese filtro directamente no existe en la sección de botas (ver
-// SearchExplorer.tsx/FloatingFilterButton.tsx, effectiveSection ===
-// "boots" oculta todo el grupo "Tienda").
-export const STORE_FILTERS: string[] = Array.from(
-  new Set(products.flatMap((p) => p.offers.map((o) => o.store)))
-).sort((a, b) => a.localeCompare(b));
-
 // Talles reales de bota (numeración EU de calzado, ej. "36", "40 2/3")
 // presentes en el catálogo -- ordenados numéricamente incluyendo los
 // "tercios" reales que usa adidas (36, 36⅔, 37⅓, 38...), no alfabético.
