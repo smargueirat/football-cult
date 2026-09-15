@@ -5,12 +5,12 @@ import {
   bestOfferForCountry,
   displayTitleForCountry,
   findProduct,
-  formatOfferMoney,
   offerTotal,
   teamNames,
   typeNames,
 } from "@/data/products";
-import { bootProducts, bootOfferTotalInEUR } from "@/data/boots";
+import { bootProducts } from "@/data/boots";
+import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";

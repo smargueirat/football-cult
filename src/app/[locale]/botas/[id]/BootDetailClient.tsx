@@ -3,8 +3,8 @@
 import Link from "@/lib/i18n/LocaleLink";
 import Image from "next/image";
 import { useState } from "react";
-import { BootProduct, BootOffer, bootOfferTotalInEUR } from "@/data/boots";
-import { formatOfferMoney } from "@/data/products";
+import { BootProduct, BootOffer } from "@/data/boots";
+import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";

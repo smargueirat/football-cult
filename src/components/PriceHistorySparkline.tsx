@@ -1,4 +1,5 @@
-import { Offer, formatOfferMoney } from "@/data/products";
+import { Offer } from "@/data/products";
+import { formatOfferMoney } from "@/lib/offerMoney";
 
 const WIDTH = 200;
 const HEIGHT = 40;

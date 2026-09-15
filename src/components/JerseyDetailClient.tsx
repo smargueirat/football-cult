@@ -9,16 +9,14 @@ import {
   Size,
   availableSizesForCountry,
   displayTitleForCountry,
-  formatOfferMoney,
   getAgeGroup,
   isVintageRetro,
   offerShipsTo,
-  offerTotal,
-  offerTotalInEUR,
   products,
   teamNames,
   typeNames,
 } from "@/data/products";
+import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";

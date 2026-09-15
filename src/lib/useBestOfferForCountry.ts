@@ -1,14 +1,8 @@
 "use client";
 
 import { useMemo } from "react";
-import {
-  CountryCode,
-  Offer,
-  Product,
-  offerShipsTo,
-  offerTotal,
-  offerTotalInEUR,
-} from "@/data/products";
+import { CountryCode, Offer, Product, offerShipsTo } from "@/data/products";
+import { offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
 import { useLiveOfferTotal } from "./useLiveOfferTotal";
 
 interface BestOfferResult {

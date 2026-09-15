@@ -10,7 +10,8 @@ import {
   teamNames,
   typeNames,
 } from "@/data/products";
-import { BootOffer, BootProduct, bootProducts, bootOfferTotalInEUR } from "@/data/boots";
+import { BootOffer, BootProduct, bootProducts } from "@/data/boots";
+import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";

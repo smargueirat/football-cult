@@ -2,8 +2,8 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
-import { BootProduct, bootOfferTotalInEUR } from "@/data/boots";
-import { formatOfferMoney } from "@/data/products";
+import { BootProduct } from "@/data/boots";
+import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";

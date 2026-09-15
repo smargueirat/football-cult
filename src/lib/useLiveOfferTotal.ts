@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Offer, offerTotal } from "@/data/products";
+import { Offer } from "@/data/products";
+import { offerTotal } from "@/lib/offerMoney";
 
 // Misma lógica que ya se usa en la ficha de la camiseta (JerseyDetailClient):
 // el envío cargado en el catálogo para ofertas de eBay es un placeholder en

@@ -84,16 +84,13 @@ export interface BootProduct {
 // pueda leer).
 export type BootCurrency = "EUR" | "USD" | "CLP" | "ARS";
 
-const BOOT_CURRENCY_TO_EUR: Record<BootCurrency, number> = {
-  EUR: 1,
-  USD: 1.08,
-  CLP: 1076.5,
-  ARS: 1754.6,
-};
-
-export function bootOfferTotalInEUR(offer: BootOffer): number {
-  return (offer.price + offer.shipping) / BOOT_CURRENCY_TO_EUR[offer.currency];
-}
+// La función real vive en src/lib/offerMoney.ts, no acá -- un componente
+// "use client" que la importa desde ESTE archivo arrastra el catálogo
+// entero de botas a su bundle (ver el comentario largo en
+// offerMoney.ts). Re-exportada acá solo para no romper importadores
+// server-side existentes; los componentes de cliente deben importarla
+// directo de "@/lib/offerMoney".
+export { bootOfferTotalInEUR } from "@/lib/offerMoney";
 
 // Partido en varias constantes chunked -- un solo array literal con miles
 // de objetos y una propiedad `store` de tipo unión le hace explotar la

@@ -26,7 +26,8 @@ import {
   teamPopularity,
   typeNames,
 } from "@/data/products";
-import { BootProduct, bootProducts, bootOfferTotalInEUR } from "@/data/boots";
+import { BootProduct, bootProducts } from "@/data/boots";
+import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,

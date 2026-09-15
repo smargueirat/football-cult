@@ -2,6 +2,13 @@ import { Locale } from "@/lib/i18n/translations";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { resolveProductId } from "@/data/productAliases";
 import type { CountryCode, Country } from "@/data/countries";
+// Las implementaciones reales viven en src/lib/offerMoney.ts (ver el
+// comentario largo donde antes estaban definidas) -- import+re-export acá
+// para que el resto de ESTE archivo (bestOffer, bestOfferForCountry,
+// sortSafeOfferTotalInEUR) las siga usando como binding local, y para no
+// romper a quien todavía las importa desde "@/data/products".
+import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
+export { formatOfferMoney, offerTotal, offerTotalInEUR };
 
 export type TeamKey =
   | "argentina"
@@ -2181,49 +2188,6 @@ export type JerseyPattern = "solid" | "stripes" | "band";
 // importando estos nombres desde "@/data/products" como siempre.
 export type { CountryCode, Country } from "./countries";
 export { countries, findCountry } from "./countries";
-
-// Formatea un monto en SU propia moneda real (la de la tienda), sin
-// convertir a la moneda del país seleccionado. Así el precio mostrado
-// siempre coincide con el que la tienda cobra de verdad.
-const OFFER_CURRENCY_LOCALE: Record<Offer["currency"], string> = {
-  EUR: "de-DE",
-  USD: "en-US",
-  GBP: "en-GB",
-  BRL: "pt-BR",
-  CLP: "es-CL",
-  ARS: "es-AR",
-};
-
-export function formatOfferMoney(amount: number, currency: Offer["currency"]): string {
-  const maximumFractionDigits = amount >= 100 ? 0 : 2;
-  // currencyDisplay: "code" muestra "USD"/"EUR" en vez del símbolo ($/€),
-  // porque la tienda de destino puede mostrarle al usuario un precio
-  // convertido a SU propia moneda (ej. Shopify detecta la ubicación y
-  // muestra euros en vez de dólares), y un símbolo ambiguo hace parecer
-  // que el precio no coincide cuando en realidad es el mismo precio real.
-  return new Intl.NumberFormat(OFFER_CURRENCY_LOCALE[currency], {
-    style: "currency",
-    currency,
-    currencyDisplay: "code",
-    maximumFractionDigits,
-  }).format(amount);
-}
-
-// Tasa aproximada de cada moneda de oferta respecto al EUR, usada
-// ÚNICAMENTE para poder comparar/ordenar ofertas de distinta moneda
-// entre sí (nunca para mostrarle un precio convertido al usuario).
-const OFFER_CURRENCY_TO_EUR: Record<Offer["currency"], number> = {
-  EUR: 1,
-  USD: 1.08,
-  GBP: 0.86,
-  BRL: 6.05,
-  CLP: 1076.5,
-  ARS: 1754.6,
-};
-
-export function offerTotalInEUR(offer: Offer): number {
-  return (offer.price + offer.shipping) / OFFER_CURRENCY_TO_EUR[offer.currency];
-}
 
 // El envío de eBay cargado en el catálogo es, en el 92% de los casos, un
 // placeholder en 0 -- el costo real depende del país del comprador y solo
@@ -84419,10 +84383,6 @@ const productsData = [
 // de +1000 objetos directamente contra `Product[]`. El cast acá, sobre
 // la constante ya construida, es mucho más barato para el compilador.
 export const products: Product[] = productsData as Product[];
-
-export function offerTotal(offer: Offer): number {
-  return offer.price + offer.shipping;
-}
 
 // "2025/26" -> 2025, "2026" -> 2026. Sirve para poder ordenar temporadas
 // cronológicamente sin importar el formato con el que se cargó cada una,

@@ -7,7 +7,6 @@ import {
   SIZES,
   availableSizesForCountry,
   displayTitleForCountry,
-  formatOfferMoney,
   getAgeGroup,
   isPriceDropped,
   offerShipsTo,
@@ -15,6 +14,7 @@ import {
   teamNames,
   typeNames,
 } from "@/data/products";
+import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";

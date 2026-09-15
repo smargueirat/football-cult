@@ -1,7 +1,7 @@
 "use client";
 
 import { BootOffer } from "@/data/boots";
-import { formatOfferMoney } from "@/data/products";
+import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 // Mismo layout visual que CompareOfferRow.tsx, pero para una BootOffer
