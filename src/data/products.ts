@@ -3429,7 +3429,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "DeporteOutletES", price: 16.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324657415&a=3013769&m=19598", title: "AC Savoia Zeus Camiseta de segunda equipación negro", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F93%2F45%2F1000003796-1_600x600.jpg&feedId=99907&k=b11c994915c09f74871342431c283ebeee4104b3" },
       { store: "DeporteOutlet", price: 16.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324657415&a=3013769&m=19598", title: "AC Savoia Zeus Camiseta de segunda equipación negro", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F93%2F45%2F1000003796-1_600x600.jpg&feedId=99907&k=b11c994915c09f74871342431c283ebeee4104b3" },
     ],
   },
@@ -3455,7 +3454,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
-      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675770&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de segunda equipación 773346-02", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F4e%2Ff4%2F773344-01-1neu4eBosddqmE9b3_600x600.jpg&feedId=99907&k=385eb1bb6cd5134e8cbdb7dac98b8231410c4304" },
       { store: "DeporteOutlet", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675770&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de segunda equipación 773346-02", inStock: true, sizes: ["XS", "S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa6%2F4e%2Ff4%2F773344-01-1neu4eBosddqmE9b3_600x600.jpg&feedId=99907&k=385eb1bb6cd5134e8cbdb7dac98b8231410c4304" },
     ],
   },
@@ -3469,7 +3467,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "puma",
     offers: [
-      { store: "DeporteOutletES", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675767&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de primera equipación 773344-01", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F23%2Fff%2F49%2F773346-02-19R58HCDP5SNAC_600x600.jpg&feedId=99907&k=202a1412b35ed6aae072b9431dff852e13d5832a" },
       { store: "DeporteOutlet", price: 10.0, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42376675767&a=3013769&m=19598", title: "Chipre del Norte PUMA Hombre Camiseta de primera equipación 773344-01", inStock: true, sizes: ["S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F23%2Fff%2F49%2F773346-02-19R58HCDP5SNAC_600x600.jpg&feedId=99907&k=202a1412b35ed6aae072b9431dff852e13d5832a" },
     ],
   },
@@ -4461,7 +4458,6 @@ const productsData = [
     brand: "puma",
     offers: [
       { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137723404531?_skw=Czech+Republic+away+soccer+jersey&hash=item2010f460f3%3Ag%3AaLAAAeSwsu1qo19a&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Puma Czech Republic Czechia 2026 Away Shirt Jersey Authentic", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/aLAAAeSwsu1qo19a/s-l1600.jpg" },
-      { store: "DeporteOutletES", price: 15.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324660138&a=3013769&m=19598", title: "República Checa PUMA Hombre Camiseta de segunda equipación 756502-03", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F59%2Faa%2F5c%2F756502-03-1_600x600.jpg&feedId=99907&k=555c20fd43f7a7f797e384d466e125bf6e143cce" },
       { store: "DeporteOutlet", price: 15.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=40324660138&a=3013769&m=19598", title: "República Checa PUMA Hombre Camiseta de segunda equipación 756502-03", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F59%2Faa%2F5c%2F756502-03-1_600x600.jpg&feedId=99907&k=555c20fd43f7a7f797e384d466e125bf6e143cce" },
     ],
   },
@@ -23916,7 +23912,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "ComoFCShop", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fhome-jersey-2025-26-jd7389-1%3Fvariant%3D55667121979774", title: "Como 1907 Maglia Gara Home 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B1001_01.jpg?v=1758876217" },
       { store: "eBay", price: 397.82, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/128074339405?_skw=Como+1907+home+soccer+jersey&hash=item1dd1d3544d%3Ag%3A5a8AAeSwPOlqpEI8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Como 1907 Home Jersey 2026/27 Serie A Champions League Edition Nico Paz Custom!", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5a8AAeSwPOlqpEI8/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 65.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fcomo-1907-primera-equipacion-2025-2026-blue", title: "Camiseta adidas Como 1907 Primera Equipación 2025-2026", inStock: true, sizes: ["XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/319380/750/camiseta-adidas-como-1907-primera-equipacion-2025-2026-blue-1.jpg" },
       { store: "ComoFC", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fhome-jersey-2025-26-jd7389-1%3Fvariant%3D55667121979774", title: "Como 1907 Maglia Gara Home 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B1001_01.jpg?v=1758876217" },
@@ -23932,7 +23927,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "ComoFCShop", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Faway-jersey-2025-26-jd7389-1%3Fvariant%3D55667123290494", title: "Como 1907 Maglia Away 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/SecondaMaglia_01.jpg?v=1758876564" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fcomo-1907-away-soccer-jersey-2025-26%3Fvariant%3D42712375197801", title: "Como 1907 Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Como_1907_Away_Jersey_202526_2.webp?v=1764227829" },
       { store: "ComoFC", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Faway-jersey-2025-26-jd7389-1%3Fvariant%3D55667123290494", title: "Como 1907 Maglia Away 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/SecondaMaglia_01.jpg?v=1758876564" },
       { store: "Futbol Emotion", price: 65.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fcomo-1907-segunda-equipacion-2025-2026-white", title: "Camiseta adidas Como 1907 Segunda Equipación 2025-2026", inStock: true, sizes: ["XS", "S", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/319419/750/camiseta-adidas-como-1907-segunda-equipacion-2025-2026-white-1.jpg" },
@@ -23948,7 +23942,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "ComoFCShop", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-maglia-third-2025-26%3Fvariant%3D55667125059966", title: "Como 1907 Maglia Third 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/1stImage.jpg?v=1764583746" },
       { store: "ComoFC", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-maglia-third-2025-26%3Fvariant%3D55667125059966", title: "Como 1907 Maglia Third 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/1stImage.jpg?v=1764583746" },
     ],
   },
@@ -23962,7 +23955,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "ComoFCShop", price: 42.5, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fgoalkeeper-home-jersey-2025-26-jn2032-1%3Fvariant%3D56086477373822", title: "Como 1907 Maglia Gara Portiere Home 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_00347_01_e50516b8-fa7b-4078-ad8e-04edab096380.jpg?v=1758876738" },
       { store: "ComoFC", price: 42.5, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fgoalkeeper-home-jersey-2025-26-jn2032-1%3Fvariant%3D56086477373822", title: "Como 1907 Maglia Gara Portiere Home 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_00347_01_e50516b8-fa7b-4078-ad8e-04edab096380.jpg?v=1758876738" },
     ],
   },
@@ -25201,7 +25193,6 @@ const productsData = [
       { store: "SportIsGoodFR", price: 54.02, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F779844-02-maillot-exterieur-om-2025-26-blue", title: "Maillot Extérieur OM 2025/26", inStock: true, sizes: ["S", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_779844-02_1.webp" },
       { store: "PlanetFoot", price: 50.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-om-exterieur-homme-2025-26-bleu%3Fvariant%3D51026988499285", title: "Maillot OM Extérieur Homme 2025/26 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-om-25-26-homme-puma-planetfoot2.webp?v=1755348304" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fmarseille-away-soccer-jersey-2025-26%3Fvariant%3D42557170122857", title: "Marseille Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/a31655caaca20ca97b2675a5d9c3c71f.png?v=1758073958" },
-      { store: "DeporteOutletES", price: 45.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41833171828&a=3013769&m=19598", title: "Olympique de Marsella PUMA Authentic Player Issue Hombre Camiseta de segunda equipación 771286-02", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F20%2Fcb%2F12%2F771286-02-1_600x600.jpg&feedId=99907&k=1ac1305cfcfad582c6456b236ca3ecf3e5e2b760" },
       { store: "DeporteOutlet", price: 45.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41833171828&a=3013769&m=19598", title: "Olympique de Marsella PUMA Authentic Player Issue Hombre Camiseta de segunda equipación 771286-02", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F20%2Fcb%2F12%2F771286-02-1_600x600.jpg&feedId=99907&k=1ac1305cfcfad582c6456b236ca3ecf3e5e2b760" },
       { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227508956933?_skw=Olympique+de+Marseille+away+soccer+jersey&hash=item34f8972f05%3Ag%3AD9wAAeSw1VdqnWU9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Olympique de Marseille 25/26 Away Jersey XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/D9wAAeSw1VdqnWU9/s-l1600.jpg" },
     ],
@@ -38330,7 +38321,6 @@ const productsData = [
     offers: [
       { store: "Amazon", price: 49.49, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0D8QF47W1?tag=footballcult-21", title: "SSC Napoli Maglia Replica Portiere Home Ea7 Camiseta Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/81p0TEz4pEL._AC_SL1500_.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-goalkeeper-soccer-jersey-2025-26-white%3Fvariant%3D42733367361641", title: "Napoli Goalkeeper Soccer Jersey 2025/26 White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Napoli_Goalkeeper_Soccer_Jersey_202526_White_1.webp?v=1765110108" },
-      { store: "DeporteOutletES", price: 34.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44612434904&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Hombre Camiseta de portero de primera equipación EASSCN25W09K", inStock: true, sizes: ["S", "M", "L", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F06%2Fdf%2F40%2FEASSCN25W09K-1_600x600.jpg&feedId=99907&k=3cdd2871b0a4a5098d781171453e5322a47fa5b8" },
       { store: "DeporteOutlet", price: 34.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44612434904&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Hombre Camiseta de portero de primera equipación EASSCN25W09K", inStock: true, sizes: ["S", "M", "L", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F06%2Fdf%2F40%2FEASSCN25W09K-1_600x600.jpg&feedId=99907&k=3cdd2871b0a4a5098d781171453e5322a47fa5b8" },
     ],
   },
@@ -38360,7 +38350,6 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnapoli-training-soccer-jersey-2025-26%3Fvariant%3D42648499912809", title: "Napoli Training Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Napoli_Training_Soccer_Jersey_202526_1.png?v=1761718712" },
-      { store: "DeporteOutletES", price: 29.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44605595105&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Hombre Camiseta de entrenamiento EASSCN25T02K-BLU", inStock: false, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb0%2F1f%2F41%2FEASSCN25T02K-BLU-1_600x600.jpg&feedId=99907&k=49a07e602f89b59eb2a301c8685c8494b3db3ede" },
       { store: "DeporteOutlet", price: 29.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44605595105&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Hombre Camiseta de entrenamiento EASSCN25T02K-BLU", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb0%2F1f%2F41%2FEASSCN25T02K-BLU-1_600x600.jpg&feedId=99907&k=49a07e602f89b59eb2a301c8685c8494b3db3ede" },
     ],
   },
@@ -38813,7 +38802,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "ComoFCShop", price: 35.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-maglia-pre-match-2025-26%3Fvariant%3D56225569472894", title: "Como 1907 Maglia Pre Match 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/1-1_Prematch_25_26.jpg?v=1776953364" },
       { store: "ComoFC", price: 35.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-maglia-pre-match-2025-26%3Fvariant%3D56225569472894", title: "Como 1907 Maglia Pre Match 2025/26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/1-1_Prematch_25_26.jpg?v=1776953364" },
     ],
   },
@@ -39301,7 +39289,6 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "eBay", price: 149.99, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/236728949480?_skw=Napoli+third+soccer+jersey&hash=item371e251ae8%3Ag%3AvxcAAeSwESRpb4Lz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NAPOLI - ORIGINAL BLACK THIRD Jersey 2026 - EA7 - ASK FOR SIZES", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/vxcAAeSwESRpb4Lz/s-l1600.jpg" },
-      { store: "DeporteOutletES", price: 39.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44612434857&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Authentic Hombre Camiseta de tercera equipación EASSCN25G05", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F37%2F92%2F32%2FEASSCN25G05-1_600x600.jpg&feedId=99907&k=918a8621101c68838fe2db86b3f0bde2748a52de" },
       { store: "DeporteOutlet", price: 39.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44612434857&a=3013769&m=19598", title: "SSC Napoli EA7 Emporio Armani Authentic Hombre Camiseta de tercera equipación EASSCN25G05", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F37%2F92%2F32%2FEASSCN25G05-1_600x600.jpg&feedId=99907&k=918a8621101c68838fe2db86b3f0bde2748a52de" },
     ],
   },
@@ -41106,7 +41093,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 50.1, shipping: 17.1, currency: "USD", url: "https://www.ebay.com/itm/336685054653?_skw=FC+Nantes+training+soccer+jersey&hash=item4e63fe3abd%3Ag%3AYJAAAeSwSFFqbwxl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC NANTES - SHIRT WARM UP TRAINING - MACRON - Season 2025/26", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/YJAAAeSwSFFqbwxl/s-l1600.jpg" },
-      { store: "DeporteOutletES", price: 14.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45690340508&a=3013769&m=19598", title: "FC Nantes macron Hombre Camiseta de entrenamiento 58576476", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F37%2F8a%2Fff%2F58576476-1_600x600.jpg&feedId=99907&k=fae1da019409c124a904ebd16d8a3688cba3263e" },
       { store: "DeporteOutlet", price: 14.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45690340508&a=3013769&m=19598", title: "FC Nantes macron Hombre Camiseta de entrenamiento 58576476", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F37%2F8a%2Fff%2F58576476-1_600x600.jpg&feedId=99907&k=fae1da019409c124a904ebd16d8a3688cba3263e" },
     ],
   },
@@ -51121,7 +51107,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "macron",
     offers: [
-      { store: "DeporteOutletES", price: 19.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44540974979&a=3013769&m=19598", title: "FC Basilea macron Hombre Camiseta de portero 60002634", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F1b%2Fb8%2F07%2F60002634-1_600x600.jpg&feedId=99907&k=e180cbd11bbcc0a2674eadc06931314fddebf9b6" },
       { store: "DeporteOutlet", price: 19.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44540974979&a=3013769&m=19598", title: "FC Basilea macron Hombre Camiseta de portero 60002634", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F1b%2Fb8%2F07%2F60002634-1_600x600.jpg&feedId=99907&k=e180cbd11bbcc0a2674eadc06931314fddebf9b6" },
     ],
   },
@@ -51135,7 +51120,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "macron",
     offers: [
-      { store: "DeporteOutletES", price: 29.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43765341584&a=3013769&m=19598", title: "Roter Stern Belgrad macron Hombre Camiseta de portero 58580718", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F74%2Ffb%2Fe3%2F58580718-1_600x600.jpg&feedId=99907&k=15a927e5d4a878d140ec5b68d3066be6ccd682cb" },
       { store: "DeporteOutlet", price: 29.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43765341584&a=3013769&m=19598", title: "Roter Stern Belgrad macron Hombre Camiseta de portero 58580718", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F74%2Ffb%2Fe3%2F58580718-1_600x600.jpg&feedId=99907&k=15a927e5d4a878d140ec5b68d3066be6ccd682cb" },
     ],
   },
@@ -51149,7 +51133,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "DeporteOutletES", price: 19.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41638451684&a=3013769&m=19598", title: "US Salernitana 1919 Zeus Hombre Camiseta de segunda equipación blanco", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fef%2F12%2F20%2F181620-1_600x600.jpg&feedId=99907&k=9332cd2c4498a3891ef58c97e85460b8f1837cee" },
       { store: "DeporteOutlet", price: 19.99, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41638451684&a=3013769&m=19598", title: "US Salernitana 1919 Zeus Hombre Camiseta de segunda equipación blanco", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fef%2F12%2F20%2F181620-1_600x600.jpg&feedId=99907&k=9332cd2c4498a3891ef58c97e85460b8f1837cee" },
     ],
   },
@@ -51163,7 +51146,6 @@ const productsData = [
     jerseyPattern: "solid",
     brand: "other",
     offers: [
-      { store: "ComoFCShop", price: 24.5, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-coach-training-jersey%3Fvariant%3D55474986680702", title: "Como 1907 Coach Training Jersey", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B7017_01_e153f8b0-1580-4fa8-9716-d0868788f063.jpg?v=1758877153" },
       { store: "ComoFC", price: 24.5, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=128133&awinaffid=3013769&ued=https%3A%2F%2Fshop.comofootball.com%2Fproducts%2Fcomo-1907-coach-training-jersey%3Fvariant%3D55474986680702", title: "Como 1907 Coach Training Jersey", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0842/2899/7401/files/C1907_B7017_01_e153f8b0-1580-4fa8-9716-d0868788f063.jpg?v=1758877153" },
     ],
   },
