@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo } from "react";
-import { CountryCode, Offer, Product, offerShipsTo } from "@/data/products";
+import type { CountryCode, Offer, Product } from "@/data/products";
+import { offerShipsTo } from "@/lib/productMeta";
 import { offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
 import { useLiveOfferTotal } from "./useLiveOfferTotal";
 

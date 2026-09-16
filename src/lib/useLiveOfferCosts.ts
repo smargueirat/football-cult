@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Offer } from "@/data/products";
+import type { Offer } from "@/data/products";
 
 interface LiveCosts {
   shipping: number;

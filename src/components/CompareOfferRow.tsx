@@ -1,6 +1,6 @@
 "use client";
 
-import { Offer } from "@/data/products";
+import type { Offer } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useLiveOfferCosts } from "@/lib/useLiveOfferCosts";

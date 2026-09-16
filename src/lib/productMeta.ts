@@ -1,0 +1,584 @@
+// Símbolos usados por componentes "use client" (ProductCard,
+// JerseyDetailClient, etc.) que NO dependen del array `products` (el
+// catálogo completo, ~76 mil líneas) -- solo operan sobre un producto/
+// oferta recibido por parámetro. Extraídos acá por el mismo motivo que
+// src/lib/offerMoney.ts: Turbopack bundlea el módulo ENTERO de
+// @/data/products.ts (catálogo incluido) apenas un componente cliente
+// importa cualquier valor real de ese archivo, sin importar qué tan
+// chico sea el símbolo usado ni si el array se referencia de verdad.
+// src/data/products.ts sigue siendo la fuente real (re-exporta estos
+// símbolos para no romper a quien ya los importa de ahí).
+import type { CountryCode } from "@/data/countries";
+import type { Locale } from "@/lib/i18n/translations";
+import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
+import { offerTotalInEUR } from "@/lib/offerMoney";
+import type {
+  AgeGroup,
+  Offer,
+  Product,
+  Size,
+  TeamKey,
+  TypeKey,
+} from "@/data/products";
+
+export const ADULT_SIZES: Size[] = ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"];
+// Distintas marcas usan distintas escalas de talles por edad (Nike, adidas,
+// Puma no coinciden), así que se muestra el talle real de cada oferta en
+// vez de forzarlo a una única escala "canónica".
+export const KIDS_SIZES: Size[] = [
+  "5-6", "6-7", "7-8", "8-9", "8-10", "9-10", "10-11", "10-12",
+  "11-12", "12-13", "13-14", "13-15", "14-15", "15-16",
+];
+export const SIZES: Size[] = [...ADULT_SIZES, ...KIDS_SIZES];
+
+export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
+  return product.ageGroup ?? "men";
+}
+
+export const teamNames: Record<TeamKey, Record<Locale, string>> = {
+  nurnberg: { es: "1. FC Nürnberg", en: "1. FC Nürnberg", pt: "1. FC Nürnberg", fr: "1. FC Nürnberg", it: "1. FC Nürnberg" },
+  schalke04: { es: "FC Schalke 04", en: "FC Schalke 04", pt: "FC Schalke 04", fr: "FC Schalke 04", it: "FC Schalke 04" },
+  sportrecife: { es: "Sport Recife", en: "Sport Recife", pt: "Sport Recife", fr: "Sport Recife", it: "Sport Recife" },
+  almirantebrown: { es: "Almirante Brown", en: "Almirante Brown", pt: "Almirante Brown", fr: "Almirante Brown", it: "Almirante Brown" },
+  almagro: { es: "Almagro", en: "Almagro", pt: "Almagro", fr: "Almagro", it: "Almagro" },
+  gimnasiajujuy: { es: "Gimnasia y Esgrima de Jujuy", en: "Gimnasia y Esgrima de Jujuy", pt: "Gimnasia y Esgrima de Jujuy", fr: "Gimnasia y Esgrima de Jujuy", it: "Gimnasia y Esgrima de Jujuy" },
+  leicester: { es: "Leicester City", en: "Leicester City", pt: "Leicester City", fr: "Leicester City", it: "Leicester City" },
+  watford: { es: "Watford", en: "Watford", pt: "Watford", fr: "Watford", it: "Watford" },
+  southampton: { es: "Southampton", en: "Southampton", pt: "Southampton", fr: "Southampton", it: "Southampton" },
+  norwich: { es: "Norwich City", en: "Norwich City", pt: "Norwich City", fr: "Norwich City", it: "Norwich City" },
+  blackburn: { es: "Blackburn Rovers", en: "Blackburn Rovers", pt: "Blackburn Rovers", fr: "Blackburn Rovers", it: "Blackburn Rovers" },
+  millwall: { es: "Millwall", en: "Millwall", pt: "Millwall", fr: "Millwall", it: "Millwall" },
+  reading: { es: "Reading", en: "Reading", pt: "Reading", fr: "Reading", it: "Reading" },
+  swansea: { es: "Swansea City", en: "Swansea City", pt: "Swansea City", fr: "Swansea City", it: "Swansea City" },
+  westbrom: { es: "West Bromwich Albion", en: "West Bromwich Albion", pt: "West Bromwich Albion", fr: "West Bromwich Albion", it: "West Bromwich Albion" },
+  huddersfield: { es: "Huddersfield Town", en: "Huddersfield Town", pt: "Huddersfield Town", fr: "Huddersfield Town", it: "Huddersfield Town" },
+  mkdons: { es: "MK Dons", en: "MK Dons", pt: "MK Dons", fr: "MK Dons", it: "MK Dons" },
+  birminghamcity: { es: "Birmingham City", en: "Birmingham City", pt: "Birmingham City", fr: "Birmingham City", it: "Birmingham City" },
+  prestonnorthend: { es: "Preston North End", en: "Preston North End", pt: "Preston North End", fr: "Preston North End", it: "Preston North End" },
+  peterboroughunited: { es: "Peterborough United", en: "Peterborough United", pt: "Peterborough United", fr: "Peterborough United", it: "Peterborough United" },
+  rotherhamunited: { es: "Rotherham United", en: "Rotherham United", pt: "Rotherham United", fr: "Rotherham United", it: "Rotherham United" },
+  hartlepool: { es: "Hartlepool United", en: "Hartlepool United", pt: "Hartlepool United", fr: "Hartlepool United", it: "Hartlepool United" },
+  cheltenhamtown: { es: "Cheltenham Town", en: "Cheltenham Town", pt: "Cheltenham Town", fr: "Cheltenham Town", it: "Cheltenham Town" },
+  wycombe: { es: "Wycombe Wanderers", en: "Wycombe Wanderers", pt: "Wycombe Wanderers", fr: "Wycombe Wanderers", it: "Wycombe Wanderers" },
+  airdrie: { es: "Airdrieonians", en: "Airdrieonians", pt: "Airdrieonians", fr: "Airdrieonians", it: "Airdrieonians" },
+  anderlecht: { es: "Anderlecht", en: "Anderlecht", pt: "Anderlecht", fr: "Anderlecht", it: "Anderlecht" },
+  clubbrugge: { es: "Club Brugge", en: "Club Brugge", pt: "Club Brugge", fr: "Club Brugge", it: "Club Brugge" },
+  beerschot: { es: "Beerschot", en: "Beerschot", pt: "Beerschot", fr: "Beerschot", it: "Beerschot" },
+  adodenhaag: { es: "ADO Den Haag", en: "ADO Den Haag", pt: "ADO Den Haag", fr: "ADO Den Haag", it: "ADO Den Haag" },
+  heerenveen: { es: "SC Heerenveen", en: "SC Heerenveen", pt: "SC Heerenveen", fr: "SC Heerenveen", it: "SC Heerenveen" },
+  fcmagdeburg: { es: "1. FC Magdeburg", en: "1. FC Magdeburg", pt: "1. FC Magdeburg", fr: "1. FC Magdeburg", it: "1. FC Magdeburg" },
+  hannover96: { es: "Hannover 96", en: "Hannover 96", pt: "Hannover 96", fr: "Hannover 96", it: "Hannover 96" },
+  hertaberlin: { es: "Hertha Berlin", en: "Hertha Berlin", pt: "Hertha Berlin", fr: "Hertha Berlin", it: "Hertha Berlin" },
+  holsteinkiel: { es: "Holstein Kiel", en: "Holstein Kiel", pt: "Holstein Kiel", fr: "Holstein Kiel", it: "Holstein Kiel" },
+  fcingolstadt: { es: "FC Ingolstadt", en: "FC Ingolstadt", pt: "FC Ingolstadt", fr: "FC Ingolstadt", it: "FC Ingolstadt" },
+  vflbochum: { es: "VfL Bochum", en: "VfL Bochum", pt: "VfL Bochum", fr: "VfL Bochum", it: "VfL Bochum" },
+  vfraalen: { es: "VfR Aalen", en: "VfR Aalen", pt: "VfR Aalen", fr: "VfR Aalen", it: "VfR Aalen" },
+  ssvjahnregensburg: { es: "SSV Jahn Regensburg", en: "SSV Jahn Regensburg", pt: "SSV Jahn Regensburg", fr: "SSV Jahn Regensburg", it: "SSV Jahn Regensburg" },
+  palermo: { es: "Palermo", en: "Palermo", pt: "Palermo", fr: "Palermo", it: "Palermo" },
+  perugia: { es: "Perugia", en: "Perugia", pt: "Perugia", fr: "Perugia", it: "Perugia" },
+  bari: { es: "Bari", en: "Bari", pt: "Bari", fr: "Bari", it: "Bari" },
+  reggina: { es: "Reggina", en: "Reggina", pt: "Reggina", fr: "Reggina", it: "Reggina" },
+  adanaspor: { es: "Adanaspor", en: "Adanaspor", pt: "Adanaspor", fr: "Adanaspor", it: "Adanaspor" },
+  bursaspor: { es: "Bursaspor", en: "Bursaspor", pt: "Bursaspor", fr: "Bursaspor", it: "Bursaspor" },
+  samsunspor: { es: "Samsunspor", en: "Samsunspor", pt: "Samsunspor", fr: "Samsunspor", it: "Samsunspor" },
+  dinamozagreb: { es: "Dinamo Zagreb", en: "Dinamo Zagreb", pt: "Dinamo Zagreb", fr: "Dinamo Zagreb", it: "Dinamo Zagreb" },
+  spartaprague: { es: "Sparta Praga", en: "Sparta Prague", pt: "Sparta Praga", fr: "Sparta Prague", it: "Sparta Praga" },
+  rubinkazan: { es: "Rubin Kazan", en: "Rubin Kazan", pt: "Rubin Kazan", fr: "Rubin Kazan", it: "Rubin Kazan" },
+  laspalmas: { es: "Las Palmas", en: "Las Palmas", pt: "Las Palmas", fr: "Las Palmas", it: "Las Palmas" },
+  numancia: { es: "Numancia", en: "Numancia", pt: "Numancia", fr: "Numancia", it: "Numancia" },
+  tenerife: { es: "Tenerife", en: "Tenerife", pt: "Tenerife", fr: "Tenerife", it: "Tenerife" },
+  shakhtar: { es: "Shakhtar Donetsk", en: "Shakhtar Donetsk", pt: "Shakhtar Donetsk", fr: "Shakhtar Donetsk", it: "Shakhtar Donetsk" },
+  alhilal: { es: "Al Hilal", en: "Al Hilal", pt: "Al Hilal", fr: "Al Hilal", it: "Al Hilal" },
+  kaizerchiefs: { es: "Kaizer Chiefs", en: "Kaizer Chiefs", pt: "Kaizer Chiefs", fr: "Kaizer Chiefs", it: "Kaizer Chiefs" },
+  heartsofoak: { es: "Accra Hearts of Oak", en: "Accra Hearts of Oak", pt: "Accra Hearts of Oak", fr: "Accra Hearts of Oak", it: "Accra Hearts of Oak" },
+  kashimaantlers: { es: "Kashima Antlers", en: "Kashima Antlers", pt: "Kashima Antlers", fr: "Kashima Antlers", it: "Kashima Antlers" },
+  urawareds: { es: "Urawa Red Diamonds", en: "Urawa Red Diamonds", pt: "Urawa Red Diamonds", fr: "Urawa Red Diamonds", it: "Urawa Red Diamonds" },
+  yokohamafmarinos: { es: "Yokohama F. Marinos", en: "Yokohama F. Marinos", pt: "Yokohama F. Marinos", fr: "Yokohama F. Marinos", it: "Yokohama F. Marinos" },
+  jefunited: { es: "JEF United", en: "JEF United", pt: "JEF United", fr: "JEF United", it: "JEF United" },
+  jubiloiwata: { es: "Júbilo Iwata", en: "Jubilo Iwata", pt: "Júbilo Iwata", fr: "Júbilo Iwata", it: "Júbilo Iwata" },
+  kawasakifrontale: { es: "Kawasaki Frontale", en: "Kawasaki Frontale", pt: "Kawasaki Frontale", fr: "Kawasaki Frontale", it: "Kawasaki Frontale" },
+  omiyaardija: { es: "Omiya Ardija", en: "Omiya Ardija", pt: "Omiya Ardija", fr: "Omiya Ardija", it: "Omiya Ardija" },
+  cerezoosaka: { es: "Cerezo Osaka", en: "Cerezo Osaka", pt: "Cerezo Osaka", fr: "Cerezo Osaka", it: "Cerezo Osaka" },
+  shimizuspulse: { es: "Shimizu S-Pulse", en: "Shimizu S-Pulse", pt: "Shimizu S-Pulse", fr: "Shimizu S-Pulse", it: "Shimizu S-Pulse" },
+  zweigenkanazawa: { es: "Zweigen Kanazawa", en: "Zweigen Kanazawa", pt: "Zweigen Kanazawa", fr: "Zweigen Kanazawa", it: "Zweigen Kanazawa" },
+  thespagunma: { es: "Thespakusatsu Gunma", en: "Thespakusatsu Gunma", pt: "Thespakusatsu Gunma", fr: "Thespakusatsu Gunma", it: "Thespakusatsu Gunma" },
+  grullamorioka: { es: "Grulla Morioka", en: "Grulla Morioka", pt: "Grulla Morioka", fr: "Grulla Morioka", it: "Grulla Morioka" },
+  clubtijuana: { es: "Club Tijuana", en: "Club Tijuana", pt: "Club Tijuana", fr: "Club Tijuana", it: "Club Tijuana" },
+  doradossinaloa: { es: "Dorados de Sinaloa", en: "Dorados de Sinaloa", pt: "Dorados de Sinaloa", fr: "Dorados de Sinaloa", it: "Dorados de Sinaloa" },
+  leonesnegros: { es: "Leones Negros UDG", en: "Leones Negros UDG", pt: "Leones Negros UDG", fr: "Leones Negros UDG", it: "Leones Negros UDG" },
+  tampicomadero: { es: "Tampico Madero", en: "Tampico Madero", pt: "Tampico Madero", fr: "Tampico Madero", it: "Tampico Madero" },
+  athleticoparanaense: { es: "Athletico Paranaense", en: "Athletico Paranaense", pt: "Athletico Paranaense", fr: "Athletico Paranaense", it: "Athletico Paranaense" },
+  santiagowanderers: { es: "Santiago Wanderers", en: "Santiago Wanderers", pt: "Santiago Wanderers", fr: "Santiago Wanderers", it: "Santiago Wanderers" },
+  forwardmadison: { es: "Forward Madison", en: "Forward Madison", pt: "Forward Madison", fr: "Forward Madison", it: "Forward Madison" },
+  oaklandroots: { es: "Oakland Roots", en: "Oakland Roots", pt: "Oakland Roots", fr: "Oakland Roots", it: "Oakland Roots" },
+  lasvegaslights: { es: "Las Vegas Lights", en: "Las Vegas Lights", pt: "Las Vegas Lights", fr: "Las Vegas Lights", it: "Las Vegas Lights" },
+  elpasolocomotive: { es: "El Paso Locomotive", en: "El Paso Locomotive", pt: "El Paso Locomotive", fr: "El Paso Locomotive", it: "El Paso Locomotive" },
+  greenvilletriumph: { es: "Greenville Triumph", en: "Greenville Triumph", pt: "Greenville Triumph", fr: "Greenville Triumph", it: "Greenville Triumph" },
+  sportingkc: { es: "Sporting Kansas City", en: "Sporting Kansas City", pt: "Sporting Kansas City", fr: "Sporting Kansas City", it: "Sporting Kansas City" },
+  unionomaha: { es: "Union Omaha", en: "Union Omaha", pt: "Union Omaha", fr: "Union Omaha", it: "Union Omaha" },
+  valourfc: { es: "Valour FC", en: "Valour FC", pt: "Valour FC", fr: "Valour FC", it: "Valour FC" },
+  botswana: { es: "Botsuana", en: "Botswana", pt: "Botsuana", fr: "Botswana", it: "Botswana" },
+  cuba: { es: "Cuba", en: "Cuba", pt: "Cuba", fr: "Cuba", it: "Cuba" },
+  cambodia: { es: "Camboya", en: "Cambodia", pt: "Camboja", fr: "Cambodge", it: "Cambogia" },
+  gambia: { es: "Gambia", en: "Gambia", pt: "Gâmbia", fr: "Gambie", it: "Gambia" },
+  guadeloupe: { es: "Guadalupe", en: "Guadeloupe", pt: "Guadalupe", fr: "Guadeloupe", it: "Guadalupa" },
+  latvia: { es: "Letonia", en: "Latvia", pt: "Letônia", fr: "Lettonie", it: "Lettonia" },
+  luxembourg: { es: "Luxemburgo", en: "Luxembourg", pt: "Luxemburgo", fr: "Luxembourg", it: "Lussemburgo" },
+  malta: { es: "Malta", en: "Malta", pt: "Malta", fr: "Malta", it: "Malta" },
+  montserrat: { es: "Montserrat", en: "Montserrat", pt: "Montserrat", fr: "Montserrat", it: "Montserrat" },
+  myanmar: { es: "Myanmar", en: "Myanmar", pt: "Myanmar", fr: "Myanmar", it: "Myanmar" },
+  keralablasters: { es: "Kerala Blasters", en: "Kerala Blasters", pt: "Kerala Blasters", fr: "Kerala Blasters", it: "Kerala Blasters" },
+  northeastunited: { es: "NorthEast United", en: "NorthEast United", pt: "NorthEast United", fr: "NorthEast United", it: "NorthEast United" },
+  stetienne: { es: "Saint-Étienne", en: "Saint-Étienne", pt: "Saint-Étienne", fr: "Saint-Étienne", it: "Saint-Étienne" },
+  fcbasel: { es: "FC Basel", en: "FC Basel", pt: "FC Basel", fr: "FC Basel", it: "FC Basel" },
+  brescia: { es: "Brescia", en: "Brescia", pt: "Brescia", fr: "Brescia", it: "Brescia" },
+  lechiagdansk: { es: "KS Lechia Gdańsk", en: "KS Lechia Gdańsk", pt: "KS Lechia Gdańsk", fr: "KS Lechia Gdańsk", it: "KS Lechia Gdańsk" },
+  manisaspor: { es: "Manisaspor", en: "Manisaspor", pt: "Manisaspor", fr: "Manisaspor", it: "Manisaspor" },
+  chanthaburi: { es: "Chanthaburi FC", en: "Chanthaburi FC", pt: "Chanthaburi FC", fr: "Chanthaburi FC", it: "Chanthaburi FC" },
+  kurdistan: { es: "Kurdistán", en: "Kurdistan", pt: "Curdistão", fr: "Kurdistan", it: "Kurdistan" },
+  kristiansundbk: { es: "Kristiansund BK", en: "Kristiansund BK", pt: "Kristiansund BK", fr: "Kristiansund BK", it: "Kristiansund BK" },
+  muangloeiutd: { es: "Muang Loei United", en: "Muang Loei United", pt: "Muang Loei United", fr: "Muang Loei United", it: "Muang Loei United" },
+  biratnagarcity: { es: "Biratnagar City", en: "Biratnagar City", pt: "Biratnagar City", fr: "Biratnagar City", it: "Biratnagar City" },
+  hashtagunited: { es: "Hashtag United", en: "Hashtag United", pt: "Hashtag United", fr: "Hashtag United", it: "Hashtag United" },
+  nakhonratchasima: { es: "Nakhonratchasima Mazda", en: "Nakhonratchasima Mazda", pt: "Nakhonratchasima Mazda", fr: "Nakhonratchasima Mazda", it: "Nakhonratchasima Mazda" },
+  belarus: { es: "Bielorrusia", en: "Belarus", pt: "Bielorrússia", fr: "Biélorussie", it: "Bielorussia" },
+  aekathens: { es: "AEK Atenas", en: "AEK Athens", pt: "AEK Atenas", fr: "AEK Athènes", it: "AEK Atene" },
+  aberdeen: { es: "Aberdeen FC", en: "Aberdeen FC", pt: "Aberdeen FC", fr: "Aberdeen FC", it: "Aberdeen FC" },
+  stlouiscity: { es: "St. Louis City SC", en: "St. Louis City SC", pt: "St. Louis City SC", fr: "St. Louis City SC", it: "St. Louis City SC" },
+  pumasunam: { es: "Pumas UNAM", en: "Pumas UNAM", pt: "Pumas UNAM", fr: "Pumas UNAM", it: "Pumas UNAM" },
+  venezia: { es: "Venezia FC", en: "Venezia FC", pt: "Venezia FC", fr: "Venezia FC", it: "Venezia FC" },
+  curacao: { es: "Curazao", en: "Curaçao", pt: "Curaçao", fr: "Curaçao", it: "Curaçao" },
+  northerncyprus: { es: "Chipre del Norte", en: "Northern Cyprus", pt: "Chipre do Norte", fr: "Chypre du Nord", it: "Cipro del Nord" },
+  acsavoia: { es: "AC Savoia 1908", en: "AC Savoia 1908", pt: "AC Savoia 1908", fr: "AC Savoia 1908", it: "AC Savoia 1908" },
+  sanjoseearthquakes: { es: "San Jose Earthquakes", en: "San Jose Earthquakes", pt: "San Jose Earthquakes", fr: "San Jose Earthquakes", it: "San Jose Earthquakes" },
+  alittihad: { es: "Al-Ittihad", en: "Al-Ittihad", pt: "Al-Ittihad", fr: "Al-Ittihad", it: "Al-Ittihad" },
+  orlandopirates: { es: "Orlando Pirates", en: "Orlando Pirates", pt: "Orlando Pirates", fr: "Orlando Pirates", it: "Orlando Pirates" },
+  ipswichtown: { es: "Ipswich Town", en: "Ipswich Town", pt: "Ipswich Town", fr: "Ipswich Town", it: "Ipswich Town" },
+  atleticonacional: { es: "Atlético Nacional", en: "Atlético Nacional", pt: "Atlético Nacional", fr: "Atlético Nacional", it: "Atlético Nacional" },
+  bahia: { es: "Esporte Clube Bahia", en: "Esporte Clube Bahia", pt: "Esporte Clube Bahia", fr: "Esporte Clube Bahia", it: "Esporte Clube Bahia" },
+  munich1860: { es: "1860 Múnich", en: "1860 Munich", pt: "1860 Munique", fr: "1860 Munich", it: "1860 Monaco" },
+  stokecity: { es: "Stoke City", en: "Stoke City", pt: "Stoke City", fr: "Stoke City", it: "Stoke City" },
+  orangecounty: { es: "Orange County SC", en: "Orange County SC", pt: "Orange County SC", fr: "Orange County SC", it: "Orange County SC" },
+  nashvillesc: { es: "Nashville SC", en: "Nashville SC", pt: "Nashville SC", fr: "Nashville SC", it: "Nashville SC" },
+  minnesotaunited: { es: "Minnesota United", en: "Minnesota United", pt: "Minnesota United", fr: "Minnesota United", it: "Minnesota United" },
+  burnley: { es: "Burnley FC", en: "Burnley FC", pt: "Burnley FC", fr: "Burnley FC", it: "Burnley FC" },
+  heidenheim: { es: "1. FC Heidenheim", en: "1. FC Heidenheim", pt: "1. FC Heidenheim", fr: "1. FC Heidenheim", it: "1. FC Heidenheim" },
+  auxerre: { es: "AJ Auxerre", en: "AJ Auxerre", pt: "AJ Auxerre", fr: "AJ Auxerre", it: "AJ Auxerre" },
+  angers: { es: "Angers SCO", en: "Angers SCO", pt: "Angers SCO", fr: "Angers SCO", it: "Angers SCO" },
+  lehavre: { es: "Le Havre AC", en: "Le Havre AC", pt: "Le Havre AC", fr: "Le Havre AC", it: "Le Havre AC" },
+  parisfc: { es: "Paris FC", en: "Paris FC", pt: "Paris FC", fr: "Paris FC", it: "Paris FC" },
+  cagliari: { es: "Cagliari Calcio", en: "Cagliari Calcio", pt: "Cagliari Calcio", fr: "Cagliari Calcio", it: "Cagliari Calcio" },
+  cremonese: { es: "US Cremonese", en: "US Cremonese", pt: "US Cremonese", fr: "US Cremonese", it: "US Cremonese" },
+  hellasverona: { es: "Hellas Verona", en: "Hellas Verona", pt: "Hellas Verona", fr: "Hellas Verona", it: "Hellas Verona" },
+  lecce: { es: "US Lecce", en: "US Lecce", pt: "US Lecce", fr: "US Lecce", it: "US Lecce" },
+  parmacalcio: { es: "Parma Calcio", en: "Parma Calcio", pt: "Parma Calcio", fr: "Parma Calcio", it: "Parma Calcio" },
+  pisa: { es: "Pisa Sporting Club", en: "Pisa Sporting Club", pt: "Pisa Sporting Club", fr: "Pisa Sporting Club", it: "Pisa Sporting Club" },
+  sassuolo: { es: "US Sassuolo", en: "US Sassuolo", pt: "US Sassuolo", fr: "US Sassuolo", it: "US Sassuolo" },
+  paraguay: { es: "Paraguay", en: "Paraguay", pt: "Paraguai", fr: "Paraguay", it: "Paraguay" },
+  bolivia: { es: "Bolivia", en: "Bolivia", pt: "Bolívia", fr: "Bolivie", it: "Bolivia" },
+  canada: { es: "Canadá", en: "Canada", pt: "Canadá", fr: "Canada", it: "Canada" },
+  honduras: { es: "Honduras", en: "Honduras", pt: "Honduras", fr: "Honduras", it: "Honduras" },
+  elsalvador: { es: "El Salvador", en: "El Salvador", pt: "El Salvador", fr: "El Salvador", it: "El Salvador" },
+  guatemala: { es: "Guatemala", en: "Guatemala", pt: "Guatemala", fr: "Guatemala", it: "Guatemala" },
+  trinidadytobago: { es: "Trinidad y Tobago", en: "Trinidad and Tobago", pt: "Trinidad e Tobago", fr: "Trinité-et-Tobago", it: "Trinidad e Tobago" },
+  romania: { es: "Rumania", en: "Romania", pt: "Rom[eê]nia", fr: "Roumanie", it: "Romania" },
+  chequia: { es: "Chequia", en: "Czech Republic", pt: "Rep[uú]blica Tcheca", fr: "Tchéquie", it: "Repubblica Ceca" },
+  eslovaquia: { es: "Eslovaquia", en: "Slovakia", pt: "Eslov[aá]quia", fr: "Slovaquie", it: "Slovacchia" },
+  eslovenia: { es: "Eslovenia", en: "Slovenia", pt: "Eslov[eê]nia", fr: "Slovénie", it: "Slovenia" },
+  finlandia: { es: "Finlandia", en: "Finland", pt: "Finl[aâ]ndia", fr: "Finlande", it: "Finlandia" },
+  bosnia: { es: "Bosnia", en: "Bosnia and Herzegovina", pt: "B[oó]snia", fr: "Bosnie-Herzégovine", it: "Bosnia ed Erzegovina" },
+  albania: { es: "Albania", en: "Albania", pt: "Alb[aâ]nia", fr: "Albanie", it: "Albania" },
+  georgia: { es: "Georgia", en: "Georgia", pt: "Ge[oó]rgia", fr: "Géorgie", it: "Georgia" },
+  macedoniadelnorte: { es: "Macedonia del Norte", en: "North Macedonia", pt: "Maced[oô]nia do Norte", fr: "Macédoine du Nord", it: "Macedonia del Nord" },
+  israel: { es: "Israel", en: "Israel", pt: "Israel", fr: "Israel", it: "Israel" },
+  bulgaria: { es: "Bulgaria", en: "Bulgaria", pt: "Bulg[aá]ria", fr: "Bulgarie", it: "Bulgaria" },
+  iraq: { es: "Irak", en: "Iraq", pt: "Iraque", fr: "Irak", it: "Iraq" },
+  uzbekistan: { es: "Uzbekistán", en: "Uzbekistan", pt: "Uzbequist[aã]o", fr: "Ouzbékistan", it: "Uzbekistan" },
+  jordania: { es: "Jordania", en: "Jordan", pt: "Jord[aâ]nia", fr: "Jordanie", it: "Giordania" },
+  india: { es: "India", en: "India", pt: "[IÍ]ndia", fr: "Inde", it: "India" },
+  indonesia: { es: "Indonesia", en: "Indonesia", pt: "Indon[eé]sia", fr: "Indonésie", it: "Indonesia" },
+  vietnam: { es: "Vietnam", en: "Vietnam", pt: "Vietn[aã]", fr: "Viêt Nam", it: "Vietnam" },
+  tailandia: { es: "Tailandia", en: "Thailand", pt: "Tail[aâ]ndia", fr: "Thaïlande", it: "Tailandia" },
+  mali: { es: "Malí", en: "Mali", pt: "Mali", fr: "Mali", it: "Mali" },
+  burkinafaso: { es: "Burkina Faso", en: "Burkina Faso", pt: "Burkina Faso", fr: "Burkina Faso", it: "Burkina Faso" },
+  caboverde: { es: "Cabo Verde", en: "Cape Verde", pt: "Cabo Verde", fr: "Cap-Vert", it: "Capo Verde" },
+  zambia: { es: "Zambia", en: "Zambia", pt: "Z[aâ]mbia", fr: "Zambie", it: "Zambia" },
+  gabon: { es: "Gabón", en: "Gabon", pt: "Gab[aã]o", fr: "Gabon", it: "Gabon" },
+  argentina: { es: "Argentina", en: "Argentina", pt: "Argentina", fr: "Argentina", it: "Argentina" },
+  brasil: { es: "Brasil", en: "Brazil", pt: "Brasil", fr: "Brésil", it: "Brasile" },
+  espana: { es: "España", en: "Spain", pt: "Espanha", fr: "Espagne", it: "Spagna" },
+  francia: { es: "Francia", en: "France", pt: "França", fr: "France", it: "Francia" },
+  alemania: { es: "Alemania", en: "Germany", pt: "Alemanha", fr: "Allemagne", it: "Germania" },
+  italia: { es: "Italia", en: "Italy", pt: "Itália", fr: "Italie", it: "Italia" },
+  inglaterra: { es: "Inglaterra", en: "England", pt: "Inglaterra", fr: "Angleterre", it: "Inghilterra" },
+  portugal: { es: "Portugal", en: "Portugal", pt: "Portugal", fr: "Portugal", it: "Portugal" },
+  uruguay: { es: "Uruguay", en: "Uruguay", pt: "Uruguai", fr: "Uruguay", it: "Uruguay" },
+  colombia: { es: "Colombia", en: "Colombia", pt: "Colômbia", fr: "Colombie", it: "Colombia" },
+  paisesbajos: { es: "Países Bajos", en: "Netherlands", pt: "Países Baixos", fr: "Pays-Bas", it: "Paesi Bassi" },
+  croacia: { es: "Croacia", en: "Croatia", pt: "Croácia", fr: "Croatie", it: "Croazia" },
+  realmadrid: { es: "Real Madrid", en: "Real Madrid", pt: "Real Madrid", fr: "Real Madrid", it: "Real Madrid" },
+  boca: { es: "Boca Juniors", en: "Boca Juniors", pt: "Boca Juniors", fr: "Boca Juniors", it: "Boca Juniors" },
+  manutd: { es: "Manchester United", en: "Manchester United", pt: "Manchester United", fr: "Manchester United", it: "Manchester United" },
+  barcelona: { es: "FC Barcelona", en: "FC Barcelona", pt: "FC Barcelona", fr: "FC Barcelona", it: "FC Barcelona" },
+  liverpool: { es: "Liverpool", en: "Liverpool", pt: "Liverpool", fr: "Liverpool", it: "Liverpool" },
+  bayern: { es: "Bayern Múnich", en: "Bayern Munich", pt: "Bayern de Munique", fr: "Bayern Munich", it: "Bayern Monaco" },
+  psg: { es: "Paris Saint-Germain", en: "Paris Saint-Germain", pt: "Paris Saint-Germain", fr: "Paris Saint-Germain", it: "Paris Saint-Germain" },
+  juventus: { es: "Juventus", en: "Juventus", pt: "Juventus", fr: "Juventus", it: "Juventus" },
+  riverplate: { es: "River Plate", en: "River Plate", pt: "River Plate", fr: "River Plate", it: "River Plate" },
+  chelsea: { es: "Chelsea", en: "Chelsea", pt: "Chelsea", fr: "Chelsea", it: "Chelsea" },
+  independiente: { es: "Independiente", en: "Independiente", pt: "Independiente", fr: "Independiente", it: "Independiente" },
+  como: { es: "Como 1907", en: "Como 1907", pt: "Como 1907", fr: "Como 1907", it: "Como 1907" },
+  arsenal: { es: "Arsenal", en: "Arsenal", pt: "Arsenal", fr: "Arsenal", it: "Arsenal" },
+  astonvilla: { es: "Aston Villa", en: "Aston Villa", pt: "Aston Villa", fr: "Aston Villa", it: "Aston Villa" },
+  bournemouth: { es: "Bournemouth", en: "Bournemouth", pt: "Bournemouth", fr: "Bournemouth", it: "Bournemouth" },
+  brentford: { es: "Brentford", en: "Brentford", pt: "Brentford", fr: "Brentford", it: "Brentford" },
+  brighton: { es: "Brighton", en: "Brighton", pt: "Brighton", fr: "Brighton", it: "Brighton" },
+  crystalpalace: { es: "Crystal Palace", en: "Crystal Palace", pt: "Crystal Palace", fr: "Crystal Palace", it: "Crystal Palace" },
+  everton: { es: "Everton", en: "Everton", pt: "Everton", fr: "Everton", it: "Everton" },
+  fulham: { es: "Fulham", en: "Fulham", pt: "Fulham", fr: "Fulham", it: "Fulham" },
+  leeds: { es: "Leeds United", en: "Leeds United", pt: "Leeds United", fr: "Leeds United", it: "Leeds United" },
+  mancity: { es: "Manchester City", en: "Manchester City", pt: "Manchester City", fr: "Manchester City", it: "Manchester City" },
+  newcastle: { es: "Newcastle United", en: "Newcastle United", pt: "Newcastle United", fr: "Newcastle United", it: "Newcastle United" },
+  nottinghamforest: { es: "Nottingham Forest", en: "Nottingham Forest", pt: "Nottingham Forest", fr: "Nottingham Forest", it: "Nottingham Forest" },
+  sunderland: { es: "Sunderland", en: "Sunderland", pt: "Sunderland", fr: "Sunderland", it: "Sunderland" },
+  tottenham: { es: "Tottenham Hotspur", en: "Tottenham Hotspur", pt: "Tottenham Hotspur", fr: "Tottenham Hotspur", it: "Tottenham Hotspur" },
+  westham: { es: "West Ham United", en: "West Ham United", pt: "West Ham United", fr: "West Ham United", it: "West Ham United" },
+  wolves: { es: "Wolverhampton Wanderers", en: "Wolverhampton Wanderers", pt: "Wolverhampton Wanderers", fr: "Wolverhampton Wanderers", it: "Wolverhampton Wanderers" },
+  atleticomadrid: { es: "Atlético de Madrid", en: "Atlético Madrid", pt: "Atlético de Madrid", fr: "Atlético Madrid", it: "Atlético Madrid" },
+  athleticbilbao: { es: "Athletic Club", en: "Athletic Bilbao", pt: "Athletic Bilbao", fr: "Athletic Bilbao", it: "Athletic Bilbao" },
+  realsociedad: { es: "Real Sociedad", en: "Real Sociedad", pt: "Real Sociedad", fr: "Real Sociedad", it: "Real Sociedad" },
+  realbetis: { es: "Real Betis", en: "Real Betis", pt: "Real Betis", fr: "Real Betis", it: "Real Betis" },
+  villarreal: { es: "Villarreal", en: "Villarreal", pt: "Villarreal", fr: "Villarreal", it: "Villarreal" },
+  valencia: { es: "Valencia CF", en: "Valencia CF", pt: "Valencia CF", fr: "Valencia CF", it: "Valencia CF" },
+  sevilla: { es: "Sevilla FC", en: "Sevilla FC", pt: "Sevilla FC", fr: "Sevilla FC", it: "Sevilla FC" },
+  celtavigo: { es: "Celta de Vigo", en: "Celta Vigo", pt: "Celta de Vigo", fr: "Celta Vigo", it: "Celta Vigo" },
+  girona: { es: "Girona FC", en: "Girona FC", pt: "Girona FC", fr: "Girona FC", it: "Girona FC" },
+  osasuna: { es: "Osasuna", en: "Osasuna", pt: "Osasuna", fr: "Osasuna", it: "Osasuna" },
+  rayovallecano: { es: "Rayo Vallecano", en: "Rayo Vallecano", pt: "Rayo Vallecano", fr: "Rayo Vallecano", it: "Rayo Vallecano" },
+  getafe: { es: "Getafe CF", en: "Getafe CF", pt: "Getafe CF", fr: "Getafe CF", it: "Getafe CF" },
+  mallorca: { es: "RCD Mallorca", en: "RCD Mallorca", pt: "RCD Mallorca", fr: "RCD Mallorca", it: "RCD Mallorca" },
+  alaves: { es: "Deportivo Alavés", en: "Deportivo Alavés", pt: "Deportivo Alavés", fr: "Deportivo Alavés", it: "Deportivo Alavés" },
+  espanyol: { es: "RCD Espanyol", en: "RCD Espanyol", pt: "RCD Espanyol", fr: "RCD Espanyol", it: "RCD Espanyol" },
+  levante: { es: "Levante UD", en: "Levante UD", pt: "Levante UD", fr: "Levante UD", it: "Levante UD" },
+  elche: { es: "Elche CF", en: "Elche CF", pt: "Elche CF", fr: "Elche CF", it: "Elche CF" },
+  realoviedo: { es: "Real Oviedo", en: "Real Oviedo", pt: "Real Oviedo", fr: "Real Oviedo", it: "Real Oviedo" },
+  intermilan: { es: "Inter de Milán", en: "Inter Milan", pt: "Inter de Milão", fr: "Inter Milan", it: "Inter" },
+  acmilan: { es: "AC Milan", en: "AC Milan", pt: "AC Milan", fr: "AC Milan", it: "AC Milan" },
+  napoli: { es: "Napoli", en: "Napoli", pt: "Nápoles", fr: "Naples", it: "Napoli" },
+  roma: { es: "AS Roma", en: "AS Roma", pt: "AS Roma", fr: "AS Roma", it: "AS Roma" },
+  lazio: { es: "Lazio", en: "Lazio", pt: "Lazio", fr: "Lazio", it: "Lazio" },
+  atalanta: { es: "Atalanta", en: "Atalanta", pt: "Atalanta", fr: "Atalanta", it: "Atalanta" },
+  fiorentina: { es: "Fiorentina", en: "Fiorentina", pt: "Fiorentina", fr: "Fiorentina", it: "Fiorentina" },
+  bologna: { es: "Bologna", en: "Bologna", pt: "Bolonha", fr: "Bologne", it: "Bologna" },
+  torino: { es: "Torino", en: "Torino", pt: "Torino", fr: "Torino", it: "Torino" },
+  udinese: { es: "Udinese", en: "Udinese", pt: "Udinese", fr: "Udinese", it: "Udinese" },
+  dortmund: { es: "Borussia Dortmund", en: "Borussia Dortmund", pt: "Borussia Dortmund", fr: "Borussia Dortmund", it: "Borussia Dortmund" },
+  rbleipzig: { es: "RB Leipzig", en: "RB Leipzig", pt: "RB Leipzig", fr: "RB Leipzig", it: "RB Leipzig" },
+  leverkusen: { es: "Bayer Leverkusen", en: "Bayer Leverkusen", pt: "Bayer Leverkusen", fr: "Bayer Leverkusen", it: "Bayer Leverkusen" },
+  frankfurt: { es: "Eintracht Frankfurt", en: "Eintracht Frankfurt", pt: "Eintracht Frankfurt", fr: "Eintracht Frankfurt", it: "Eintracht Frankfurt" },
+  gladbach: { es: "Borussia Mönchengladbach", en: "Borussia Mönchengladbach", pt: "Borussia Mönchengladbach", fr: "Borussia Mönchengladbach", it: "Borussia Mönchengladbach" },
+  stuttgart: { es: "VfB Stuttgart", en: "VfB Stuttgart", pt: "VfB Stuttgart", fr: "VfB Stuttgart", it: "VfB Stuttgart" },
+  wolfsburg: { es: "VfL Wolfsburg", en: "VfL Wolfsburg", pt: "VfL Wolfsburg", fr: "VfL Wolfsburg", it: "VfL Wolfsburg" },
+  marseille: { es: "Olympique de Marsella", en: "Olympique de Marseille", pt: "Olympique de Marselha", fr: "Olympique de Marseille", it: "Olympique Marsiglia" },
+  monaco: { es: "AS Mónaco", en: "AS Monaco", pt: "AS Mônaco", fr: "AS Monaco", it: "AS Monaco" },
+  lyon: { es: "Olympique de Lyon", en: "Olympique Lyonnais", pt: "Olympique de Lyon", fr: "Olympique Lyonnais", it: "Olympique Lyonnais" },
+  lille: { es: "LOSC Lille", en: "LOSC Lille", pt: "LOSC Lille", fr: "LOSC Lille", it: "LOSC Lille" },
+  nice: { es: "OGC Nice", en: "OGC Nice", pt: "OGC Nice", fr: "OGC Nice", it: "OGC Nice" },
+  rennes: { es: "Stade Rennais", en: "Stade Rennes", pt: "Stade Rennes", fr: "Stade Rennais", it: "Stade Rennais" },
+  werderbremen: { es: "Werder Bremen", en: "Werder Bremen", pt: "Werder Bremen", fr: "Werder Bremen", it: "Werder Bremen" },
+  freiburg: { es: "SC Freiburg", en: "SC Freiburg", pt: "SC Freiburg", fr: "SC Freiburg", it: "SC Freiburg" },
+  unionberlin: { es: "Union Berlin", en: "Union Berlin", pt: "Union Berlin", fr: "Union Berlin", it: "Union Berlin" },
+  mainz: { es: "Mainz 05", en: "Mainz 05", pt: "Mainz 05", fr: "Mainz 05", it: "Mainz 05" },
+  augsburg: { es: "FC Augsburg", en: "FC Augsburg", pt: "FC Augsburg", fr: "FC Augsburg", it: "FC Augsburg" },
+  hoffenheim: { es: "TSG Hoffenheim", en: "TSG Hoffenheim", pt: "TSG Hoffenheim", fr: "TSG Hoffenheim", it: "TSG Hoffenheim" },
+  koln: { es: "1. FC Köln", en: "1. FC Köln", pt: "1. FC Köln", fr: "1. FC Köln", it: "1. FC Köln" },
+  hamburg: { es: "Hamburger SV", en: "Hamburger SV", pt: "Hamburger SV", fr: "Hamburger SV", it: "Hamburger SV" },
+  lens: { es: "RC Lens", en: "RC Lens", pt: "RC Lens", fr: "RC Lens", it: "RC Lens" },
+  strasbourg: { es: "RC Strasbourg", en: "RC Strasbourg", pt: "RC Strasbourg", fr: "RC Strasbourg", it: "RC Strasbourg" },
+  toulouse: { es: "Toulouse FC", en: "Toulouse FC", pt: "Toulouse FC", fr: "Toulouse FC", it: "Toulouse FC" },
+  nantes: { es: "FC Nantes", en: "FC Nantes", pt: "FC Nantes", fr: "FC Nantes", it: "FC Nantes" },
+  brest: { es: "Stade Brestois", en: "Stade Brestois", pt: "Stade Brestois", fr: "Stade Brestois", it: "Stade Brestois" },
+  reims: { es: "Stade de Reims", en: "Stade de Reims", pt: "Stade de Reims", fr: "Stade de Reims", it: "Stade de Reims" },
+  belgica: { es: "Bélgica", en: "Belgium", pt: "Bélgica", fr: "Belgique", it: "Belgio" },
+  dinamarca: { es: "Dinamarca", en: "Denmark", pt: "Dinamarca", fr: "Danemark", it: "Danimarca" },
+  suiza: { es: "Suiza", en: "Switzerland", pt: "Suíça", fr: "Suisse", it: "Svizzera" },
+  polonia: { es: "Polonia", en: "Poland", pt: "Polônia", fr: "Pologne", it: "Polonia" },
+  gales: { es: "Gales", en: "Wales", pt: "País de Gales", fr: "Pays de Galles", it: "Galles" },
+  escocia: { es: "Escocia", en: "Scotland", pt: "Escócia", fr: "Écosse", it: "Scozia" },
+  suecia: { es: "Suecia", en: "Sweden", pt: "Suécia", fr: "Suède", it: "Svezia" },
+  noruega: { es: "Noruega", en: "Norway", pt: "Noruega", fr: "Norvège", it: "Norvegia" },
+  turquia: { es: "Turquía", en: "Turkey", pt: "Turquia", fr: "Turquie", it: "Turchia" },
+  ecuador: { es: "Ecuador", en: "Ecuador", pt: "Equador", fr: "Équateur", it: "Ecuador" },
+  chile: { es: "Chile", en: "Chile", pt: "Chile", fr: "Chile", it: "Chile" },
+  peru: { es: "Perú", en: "Peru", pt: "Peru", fr: "Pérou", it: "Perù" },
+  mexico: { es: "México", en: "Mexico", pt: "México", fr: "Mexique", it: "Messico" },
+  estadosunidos: { es: "Estados Unidos", en: "United States", pt: "Estados Unidos", fr: "États-Unis", it: "Stati Uniti" },
+  japon: { es: "Japón", en: "Japan", pt: "Japão", fr: "Japon", it: "Giappone" },
+  coreadelsur: { es: "Corea del Sur", en: "South Korea", pt: "Coreia do Sul", fr: "Corée du Sud", it: "Corea del Sud" },
+  marruecos: { es: "Marruecos", en: "Morocco", pt: "Marrocos", fr: "Maroc", it: "Marocco" },
+  senegal: { es: "Senegal", en: "Senegal", pt: "Senegal", fr: "Senegal", it: "Senegal" },
+  nigeria: { es: "Nigeria", en: "Nigeria", pt: "Nigéria", fr: "Nigeria", it: "Nigeria" },
+  arabiasaudita: { es: "Arabia Saudita", en: "Saudi Arabia", pt: "Arábia Saudita", fr: "Arabie Saoudite", it: "Arabia Saudita" },
+  australia: { es: "Australia", en: "Australia", pt: "Austrália", fr: "Australie", it: "Australia" },
+  ucrania: { es: "Ucrania", en: "Ukraine", pt: "Ucrânia", fr: "Ukraine", it: "Ucraina" },
+  flamengo: { es: "Flamengo", en: "Flamengo", pt: "Flamengo", fr: "Flamengo", it: "Flamengo" },
+  palmeiras: { es: "Palmeiras", en: "Palmeiras", pt: "Palmeiras", fr: "Palmeiras", it: "Palmeiras" },
+  corinthians: { es: "Corinthians", en: "Corinthians", pt: "Corinthians", fr: "Corinthians", it: "Corinthians" },
+  saopaulo: { es: "São Paulo FC", en: "São Paulo FC", pt: "São Paulo FC", fr: "São Paulo FC", it: "São Paulo FC" },
+  santos: { es: "Santos FC", en: "Santos FC", pt: "Santos FC", fr: "Santos FC", it: "Santos FC" },
+  gremio: { es: "Grêmio", en: "Grêmio", pt: "Grêmio", fr: "Grêmio", it: "Grêmio" },
+  internacional: { es: "Internacional", en: "Internacional", pt: "Internacional", fr: "Internacional", it: "Internacional" },
+  penarol: { es: "Peñarol", en: "Peñarol", pt: "Peñarol", fr: "Peñarol", it: "Peñarol" },
+  nacional: { es: "Club Nacional de Football", en: "Nacional (Uruguay)", pt: "Nacional (Uruguai)", fr: "Nacional (Uruguay)", it: "Nacional (Uruguay)" },
+  colocolo: { es: "Colo-Colo", en: "Colo-Colo", pt: "Colo-Colo", fr: "Colo-Colo", it: "Colo-Colo" },
+  ajax: { es: "Ajax", en: "Ajax", pt: "Ajax", fr: "Ajax", it: "Ajax" },
+  psveindhoven: { es: "PSV Eindhoven", en: "PSV Eindhoven", pt: "PSV Eindhoven", fr: "PSV Eindhoven", it: "PSV Eindhoven" },
+  feyenoord: { es: "Feyenoord", en: "Feyenoord", pt: "Feyenoord", fr: "Feyenoord", it: "Feyenoord" },
+  porto: { es: "FC Porto", en: "FC Porto", pt: "FC Porto", fr: "FC Porto", it: "FC Porto" },
+  benfica: { es: "SL Benfica", en: "SL Benfica", pt: "SL Benfica", fr: "SL Benfica", it: "SL Benfica" },
+  sportingcp: { es: "Sporting CP", en: "Sporting CP", pt: "Sporting CP", fr: "Sporting CP", it: "Sporting CP" },
+  braga: { es: "SC Braga", en: "SC Braga", pt: "SC Braga", fr: "SC Braga", it: "SC Braga" },
+  celtic: { es: "Celtic FC", en: "Celtic FC", pt: "Celtic FC", fr: "Celtic FC", it: "Celtic FC" },
+  rangers: { es: "Rangers FC", en: "Rangers FC", pt: "Rangers FC", fr: "Rangers FC", it: "Rangers FC" },
+  intermiami: { es: "Inter Miami CF", en: "Inter Miami CF", pt: "Inter Miami CF", fr: "Inter Miami CF", it: "Inter Miami CF" },
+  lagalaxy: { es: "LA Galaxy", en: "LA Galaxy", pt: "LA Galaxy", fr: "LA Galaxy", it: "LA Galaxy" },
+  clubamerica: { es: "Club América", en: "Club América", pt: "Club América", fr: "Club América", it: "Club América" },
+  chivas: { es: "Chivas Guadalajara", en: "Chivas Guadalajara", pt: "Chivas Guadalajara", fr: "Chivas Guadalajara", it: "Chivas Guadalajara" },
+  cruzazul: { es: "Cruz Azul", en: "Cruz Azul", pt: "Cruz Azul", fr: "Cruz Azul", it: "Cruz Azul" },
+  tigresuanl: { es: "Tigres UANL", en: "Tigres UANL", pt: "Tigres UANL", fr: "Tigres UANL", it: "Tigres UANL" },
+  monterrey: { es: "CF Monterrey", en: "CF Monterrey", pt: "CF Monterrey", fr: "CF Monterrey", it: "CF Monterrey" },
+  racingclub: { es: "Racing Club", en: "Racing Club", pt: "Racing Club", fr: "Racing Club", it: "Racing Club" },
+  sanlorenzo: { es: "San Lorenzo", en: "San Lorenzo", pt: "San Lorenzo", fr: "San Lorenzo", it: "San Lorenzo" },
+  velez: { es: "Vélez Sarsfield", en: "Vélez Sarsfield", pt: "Vélez Sarsfield", fr: "Vélez Sarsfield", it: "Vélez Sarsfield" },
+  estudiantes: { es: "Estudiantes de La Plata", en: "Estudiantes de La Plata", pt: "Estudiantes de La Plata", fr: "Estudiantes de La Plata", it: "Estudiantes de La Plata" },
+  cruzeiro: { es: "Cruzeiro", en: "Cruzeiro", pt: "Cruzeiro", fr: "Cruzeiro", it: "Cruzeiro" },
+  atleticomineiro: { es: "Atlético Mineiro", en: "Atlético Mineiro", pt: "Atlético Mineiro", fr: "Atlético Mineiro", it: "Atlético Mineiro" },
+  botafogo: { es: "Botafogo", en: "Botafogo", pt: "Botafogo", fr: "Botafogo", it: "Botafogo" },
+  vascodagama: { es: "Vasco da Gama", en: "Vasco da Gama", pt: "Vasco da Gama", fr: "Vasco da Gama", it: "Vasco da Gama" },
+  fluminense: { es: "Fluminense", en: "Fluminense", pt: "Fluminense", fr: "Fluminense", it: "Fluminense" },
+  egipto: { es: "Egipto", en: "Egypt", pt: "Egito", fr: "Égypte", it: "Egitto" },
+  ghana: { es: "Ghana", en: "Ghana", pt: "Gana", fr: "Ghana", it: "Ghana" },
+  argelia: { es: "Argelia", en: "Algeria", pt: "Argélia", fr: "Algérie", it: "Algeria" },
+  tunez: { es: "Túnez", en: "Tunisia", pt: "Tunísia", fr: "Tunisie", it: "Tunisia" },
+  camerun: { es: "Camerún", en: "Cameroon", pt: "Camarões", fr: "Cameroun", it: "Camerun" },
+  costamarfil: { es: "Costa de Marfil", en: "Ivory Coast", pt: "Costa do Marfim", fr: "Côte d'Ivoire", it: "Costa d'Avorio" },
+  austria: { es: "Austria", en: "Austria", pt: "Áustria", fr: "Autriche", it: "Austria" },
+  irlanda: { es: "Irlanda", en: "Republic of Ireland", pt: "Irlanda", fr: "Irlande", it: "Irlanda" },
+  irlandadelnorte: { es: "Irlanda del Norte", en: "Northern Ireland", pt: "Irlanda do Norte", fr: "Irlande du Nord", it: "Irlanda del Nord" },
+  sudafrica: { es: "Sudáfrica", en: "South Africa", pt: "África do Sul", fr: "Afrique du Sud", it: "Sudafrica" },
+  grecia: { es: "Grecia", en: "Greece", pt: "Grécia", fr: "Grèce", it: "Grecia" },
+  haiti: { es: "Haití", en: "Haiti", pt: "Haiti", fr: "Haïti", it: "Haiti" },
+  hungria: { es: "Hungría", en: "Hungary", pt: "Hungria", fr: "Hongrie", it: "Ungheria" },
+  rdcongo: { es: "RD Congo", en: "DR Congo", pt: "RD Congo", fr: "RD Congo", it: "RD Congo" },
+  venezuela: { es: "Venezuela", en: "Venezuela", pt: "Venezuela", fr: "Venezuela", it: "Venezuela" },
+  fenerbahce: { es: "Fenerbahçe", en: "Fenerbahçe", pt: "Fenerbahçe", fr: "Fenerbahçe", it: "Fenerbahçe" },
+  galatasaray: { es: "Galatasaray", en: "Galatasaray", pt: "Galatasaray", fr: "Galatasaray", it: "Galatasaray" },
+  besiktas: { es: "Beşiktaş", en: "Beşiktaş", pt: "Beşiktaş", fr: "Beşiktaş", it: "Beşiktaş" },
+  alnassr: { es: "Al-Nassr FC", en: "Al-Nassr FC", pt: "Al-Nassr FC", fr: "Al-Nassr FC", it: "Al-Nassr FC" },
+  youngboys: { es: "BSC Young Boys", en: "BSC Young Boys", pt: "BSC Young Boys", fr: "BSC Young Boys", it: "BSC Young Boys" },
+  fccopenhagen: { es: "FC Copenhague", en: "FC Copenhagen", pt: "FC Copenhaga", fr: "FC Copenhague", it: "FC Copenaghen" },
+  realvalladolid: { es: "Real Valladolid", en: "Real Valladolid", pt: "Real Valladolid", fr: "Real Valladolid", it: "Real Valladolid" },
+  stpauli: { es: "FC St. Pauli", en: "FC St. Pauli", pt: "FC St. Pauli", fr: "FC St. Pauli", it: "FC St. Pauli" },
+  hullcity: { es: "Hull City", en: "Hull City", pt: "Hull City", fr: "Hull City", it: "Hull City" },
+  speziacalcio: { es: "Spezia Calcio", en: "Spezia Calcio", pt: "Spezia Calcio", fr: "Spezia Calcio", it: "Spezia Calcio" },
+  fcmetz: { es: "FC Metz", en: "FC Metz", pt: "FC Metz", fr: "FC Metz", it: "FC Metz" },
+  asse: { es: "AS Saint-Étienne", en: "AS Saint-Étienne", pt: "AS Saint-Étienne", fr: "AS Saint-Étienne", it: "AS Saint-Étienne" },
+  guingamp: { es: "EA Guingamp", en: "EA Guingamp", pt: "EA Guingamp", fr: "EA Guingamp", it: "EA Guingamp" },
+  redstarfc: { es: "Red Star FC", en: "Red Star FC", pt: "Red Star FC", fr: "Red Star FC", it: "Red Star FC" },
+  estunis: { es: "ES Tunis", en: "ES Tunis", pt: "ES Tunis", fr: "ES Tunis", it: "ES Tunis" },
+  jskabylie: { es: "JS Kabylie", en: "JS Kabylie", pt: "JS Kabylie", fr: "JS Kabylie", it: "JS Kabylie" },
+  versailles78: { es: "FC Versailles 78", en: "FC Versailles 78", pt: "FC Versailles 78", fr: "FC Versailles 78", it: "FC Versailles 78" },
+  kallithea: { es: "GS Kallithéa", en: "GS Kallithea", pt: "GS Kallithéa", fr: "GS Kallithéa", it: "GS Kallithea" },
+  wydad: { es: "Wydad AC", en: "Wydad AC", pt: "Wydad AC", fr: "Wydad AC", it: "Wydad AC" },
+  seattlesounders: { es: "Seattle Sounders", en: "Seattle Sounders", pt: "Seattle Sounders", fr: "Seattle Sounders", it: "Seattle Sounders" },
+  clermontfoot: { es: "Clermont Foot 63", en: "Clermont Foot 63", pt: "Clermont Foot 63", fr: "Clermont Foot 63", it: "Clermont Foot 63" },
+  genoa: { es: "Genoa CFC", en: "Genoa CFC", pt: "Genoa CFC", fr: "Genoa CFC", it: "Genoa CFC" },
+  nycfc: { es: "New York City FC", en: "New York City FC", pt: "New York City FC", fr: "New York City FC", it: "New York City FC" },
+  nyredbulls: { es: "New York Red Bulls", en: "New York Red Bulls", pt: "New York Red Bulls", fr: "New York Red Bulls", it: "New York Red Bulls" },
+  columbuscrew: { es: "Columbus Crew", en: "Columbus Crew", pt: "Columbus Crew", fr: "Columbus Crew", it: "Columbus Crew" },
+  sandiegofc: { es: "San Diego FC", en: "San Diego FC", pt: "San Diego FC", fr: "San Diego FC", it: "San Diego FC" },
+  portlandtimbers: { es: "Portland Timbers", en: "Portland Timbers", pt: "Portland Timbers", fr: "Portland Timbers", it: "Portland Timbers" },
+  vancouverwhitecaps: { es: "Vancouver Whitecaps FC", en: "Vancouver Whitecaps FC", pt: "Vancouver Whitecaps FC", fr: "Vancouver Whitecaps FC", it: "Vancouver Whitecaps FC" },
+  orlandocity: { es: "Orlando City SC", en: "Orlando City SC", pt: "Orlando City SC", fr: "Orlando City SC", it: "Orlando City SC" },
+  malaga: { es: "Málaga CF", en: "Málaga CF", pt: "Málaga CF", fr: "Málaga CF", it: "Málaga CF" },
+  leon: { es: "Club León", en: "Club León", pt: "Club León", fr: "Club León", it: "Club León" },
+  olympiacos: { es: "Olympiacos FC", en: "Olympiacos FC", pt: "Olympiacos FC", fr: "Olympiacos FC", it: "Olympiacos FC" },
+  guinea: { es: "Guinea", en: "Guinea", pt: "Guiné", fr: "Guinée", it: "Guinea" },
+  rbsalzburg: { es: "RB Salzburg", en: "RB Salzburg", pt: "RB Salzburg", fr: "RB Salzburg", it: "RB Salzburg" },
+  deportivo: { es: "Deportivo La Coruña", en: "Deportivo La Coruña", pt: "Deportivo La Coruña", fr: "Deportivo La Coruña", it: "Deportivo La Coruña" },
+  partizanbelgrade: { es: "FK Partizan Belgrado", en: "FK Partizan Belgrade", pt: "FK Partizan Belgrado", fr: "FK Partizan Belgrade", it: "FK Partizan Belgrado" },
+  redstarbelgrade: { es: "Estrella Roja de Belgrado", en: "Red Star Belgrade", pt: "Estrela Vermelha de Belgrado", fr: "Étoile Rouge de Belgrade", it: "Stella Rossa di Belgrado" },
+  salernitana: { es: "US Salernitana 1919", en: "US Salernitana 1919", pt: "US Salernitana 1919", fr: "US Salernitana 1919", it: "US Salernitana 1919" },
+  lafc: { es: "Los Angeles FC", en: "Los Angeles FC", pt: "Los Angeles FC", fr: "Los Angeles FC", it: "Los Angeles FC" },
+  cerclebrugge: { es: "Cercle Brugge", en: "Cercle Brugge", pt: "Cercle Brugge", fr: "Cercle Brugge", it: "Cercle Brugge" },
+  islandia: { es: "Islandia", en: "Iceland", pt: "Islândia", fr: "Islande", it: "Islanda" },
+  serbia: { es: "Serbia", en: "Serbia", pt: "Sérvia", fr: "Serbie", it: "Serbia" },
+  qatar: { es: "Catar", en: "Qatar", pt: "Catar", fr: "Qatar", it: "Qatar" },
+  iran: { es: "Irán", en: "Iran", pt: "Irã", fr: "Iran", it: "Iran" },
+  emiratosarabes: { es: "Emiratos Árabes Unidos", en: "United Arab Emirates", pt: "Emirados Árabes Unidos", fr: "Émirats Arabes Unis", it: "Emirati Arabi Uniti" },
+  china: { es: "China", en: "China", pt: "China", fr: "China", it: "China" },
+  nuevazelanda: { es: "Nueva Zelanda", en: "New Zealand", pt: "Nova Zelândia", fr: "Nouvelle-Zélande", it: "Nuova Zelanda" },
+  costarica: { es: "Costa Rica", en: "Costa Rica", pt: "Costa Rica", fr: "Costa Rica", it: "Costa Rica" },
+  jamaica: { es: "Jamaica", en: "Jamaica", pt: "Jamaica", fr: "Jamaica", it: "Jamaica" },
+  panama: { es: "Panamá", en: "Panama", pt: "Panamá", fr: "Panama", it: "Panama" },
+};
+
+export const storeShipping: Record<string, CountryCode[] | "all"> = {
+  FansJerseyHub: "all",
+  PlanetFoot: "all",
+  // Verificado a mano en el selector de país de la propia tienda
+  // (shop.comofootball.com/policies/shipping-policy): a diferencia de
+  // FansJerseyHub/PlanetFoot, esta tienda NO envía a todos lados. El
+  // selector solo ofrece esta lista fija de países (no incluye África
+  // ni la mayoría de Latinoamérica, por ejemplo).
+  ComoFCShop: [
+    "AT", "BE", "BG", "CZ", "HR", "DK", "FI", "FR", "DE", "GR", "IE", "IT",
+    "NO", "NL", "PL", "PT", "GB", "RO", "SK", "SI", "ES", "SE", "CH", "UA", "HU",
+    "CN", "KR", "JP", "IN", "ID", "MY", "HK", "SG", "TR",
+    "AU", "NZ",
+    "AR", "BR", "CA", "CL", "MX", "US",
+  ],
+  // Verificado en foot-store.es/tarifas-y-opciones-de-envio (tabla real de
+  // tarifas por país). Cubre prácticamente toda Europa + Turquía + EE.UU.
+  // continental, pero no Norteamérica/Latam/Asia/África/Oceanía.
+  FootStoreES: [
+    "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
+    "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
+  ],
+  // Mismo grupo/red logística que FootStoreES (foot-store.fr/tarifs-et-options-de-livraison
+  // lista exactamente los mismos países y tarifas).
+  FootStoreFR: [
+    "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
+    "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
+  ],
+  // Mismo grupo/red logística (sportisgood.es/tarifas-y-opciones-de-envio
+  // lista los mismos países y tarifas que FootStoreES/FR).
+  SportIsGoodES: [
+    "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
+    "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
+  ],
+  SportIsGoodFR: [
+    "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
+    "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
+  ],
+  // NOT independently verified against each store's own shipping policy
+  // page (unlike every entry above) -- fetching santosstore.com.br's
+  // policy page failed (socket hang up) and no clear answer turned up
+  // otherwise. Assuming Brazil-only since these are Brazilian club
+  // stores on what looks like a shared Netshoes-operated platform, with
+  // no evidence found of international shipping -- safer default than
+  // the implicit "ships everywhere" a missing entry would produce,
+  // which would be actively misleading. Revisit if this turns out wrong.
+  SantosStore: ["BR"],
+  InterStore: ["BR"],
+  CruzeiroStore: ["BR"],
+  ShopTimao: ["BR"],
+  LojaPST: ["BR"],
+  // adidas opera sitios regionales separados por país (adidas.com.ar,
+  // adidas.es, etc.) y cada uno solo envía dentro de su propio país --
+  // confirmado por búsqueda (adidas.com.ar: "solo realiza envíos dentro
+  // del territorio argentino"; el mismo patrón aplica al resto de sus
+  // sitios regionales). Sin esta entrada, la tienda quedaba marcada como
+  // "envía a todos lados" por defecto, lo cual era falso y mostraba
+  // productos no comprables a usuarios fuera de España/Portugal.
+  AdidasES: ["ES"],
+  AdidasPT: ["PT"],
+  // Decathlon operates separate regional storefronts per country
+  // (decathlon.ie for Ireland, decathlon.co.uk for the UK, etc.), same
+  // pattern as adidas's regional sites above -- decathlon.ie's own order
+  // flow is scoped to the Republic of Ireland. Not independently verified
+  // against a dedicated shipping-policy page (site blocks automated
+  // fetches), inferred from Decathlon's known per-country storefront model
+  // -- safer than the implicit "ships everywhere" default.
+  DecathlonIE: ["IE"],
+};
+
+export function offerShipsTo(store: string, country: CountryCode): boolean {
+  const shipping = storeShipping[store];
+  if (!shipping) return true;
+  return shipping === "all" || shipping.includes(country);
+}
+
+export const typeNames: Record<TypeKey, Record<Locale, string>> = {
+  home: { es: "Titular", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
+  away: { es: "Suplente", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
+  third: { es: "Tercera", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
+  goalkeeper: { es: "Arquero", en: "Goalkeeper", pt: "Goleiro", fr: "Gardien", it: "Portiere" },
+  training: { es: "Entrenamiento", en: "Training", pt: "Treino", fr: "Entraînement", it: "Allenamento" },
+  prematch: { es: "Pre-Match", en: "Pre-Match", pt: "Pré-Jogo", fr: "Avant-Match", it: "Pre-Partita" },
+  retro: { es: "Retro", en: "Retro", pt: "Retrô", fr: "Rétro", it: "Retrò" },
+};
+
+export function seasonSortValue(season: string): number {
+  const match = season.match(/\d{4}/);
+  return match ? parseInt(match[0], 10) : 0;
+}
+
+export function isVintageRetro(product: Product): boolean {
+  return seasonSortValue(product.season) <= 2006;
+}
+
+export function isPriceDropped(offer: Offer): boolean {
+  return offer.previousPrice != null && offer.previousPrice > offer.price;
+}
+
+// Redondeado a entero -- una baja de precio real casi siempre es de
+// varios puntos porcentuales; mostrar decimales (ej "4.7%") suma ruido
+
+export function priceDropPercent(offer: Offer): number {
+  if (!isPriceDropped(offer) || !offer.previousPrice) return 0;
+  return Math.round(((offer.previousPrice - offer.price) / offer.previousPrice) * 100);
+}
+
+export function bestOfferForCountry(
+  product: Product,
+  country: CountryCode
+): Offer | undefined {
+  return [...product.offers]
+    .filter((o) => o.inStock && offerShipsTo(o.store, country))
+    .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
+}
+
+// Idioma "natural" de cada tienda, según en qué mercado vende. Ya NO se usa
+// para elegir qué título mostrar (ver nota abajo) -- queda solo por si algún
+// otro caller la necesita para otra cosa (badges, agrupación, etc).
+export const STORE_LOCALE: Partial<Record<string, Locale>> = {
+  AdidasES: "es",
+  DeporteOutletES: "es",
+  FootStoreES: "es",
+  SportIsGoodES: "es",
+  AdidasPT: "pt",
+  FansJerseyHub: "en",
+  FootStoreFR: "fr",
+  SportIsGoodFR: "fr",
+  PlanetFoot: "fr",
+  BSTNIT: "it",
+};
+
+export function displayTitleForCountry(
+  product: Product,
+  country: CountryCode,
+  locale: Locale
+): string | undefined {
+  const best = bestOfferForCountry(product, country);
+  const title = best?.title ?? product.offers.find((o) => o.title)?.title;
+  // El título real de la tienda sigue siendo la fuente de verdad (nunca
+  // se reemplaza por uno armado por nosotros -- ver
+  // feedback_realname_primary.md), pero acá se le traduce el vocabulario
+  // genérico conocido (tipo de camiseta, género, "réplica", etc.) al
+  // idioma del sitio, dejando nombres de equipo/jugador/marca intactos.
+  return title ? translateTitleVocabulary(title, locale) : undefined;
+}
+
+
+export function availableSizesForCountry(
+  product: Product,
+  country: CountryCode
+): Size[] {
+  const set = new Set<Size>();
+  product.offers.forEach((o) => {
+    if (o.inStock && offerShipsTo(o.store, country)) o.sizes.forEach((s) => set.add(s));
+  });
+  return SIZES.filter((s) => set.has(s));
+}
+

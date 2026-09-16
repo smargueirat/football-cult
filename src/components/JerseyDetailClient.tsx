@@ -3,10 +3,8 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useMemo, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
+import type { Offer, Product, Size } from "@/data/products";
 import {
-  Offer,
-  Product,
-  Size,
   availableSizesForCountry,
   displayTitleForCountry,
   getAgeGroup,
@@ -14,7 +12,7 @@ import {
   offerShipsTo,
   teamNames,
   typeNames,
-} from "@/data/products";
+} from "@/lib/productMeta";
 import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";

@@ -2,8 +2,8 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
+import type { Product } from "@/data/products";
 import {
-  Product,
   SIZES,
   availableSizesForCountry,
   displayTitleForCountry,
@@ -13,7 +13,7 @@ import {
   priceDropPercent,
   teamNames,
   typeNames,
-} from "@/data/products";
+} from "@/lib/productMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";

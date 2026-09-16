@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Offer } from "@/data/products";
+import type { Offer } from "@/data/products";
 import { offerTotal } from "@/lib/offerMoney";
 
 // Misma lógica que ya se usa en la ficha de la camiseta (JerseyDetailClient):

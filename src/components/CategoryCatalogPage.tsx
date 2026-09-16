@@ -2,7 +2,7 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import SearchExplorer from "./SearchExplorer";
-import { AgeGroup, CategoryKey, TypeKey } from "@/data/products";
+import type { AgeGroup, CategoryKey, TypeKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 interface Props {

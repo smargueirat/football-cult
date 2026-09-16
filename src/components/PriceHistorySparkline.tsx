@@ -1,4 +1,4 @@
-import { Offer } from "@/data/products";
+import type { Offer } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 
 const WIDTH = 200;
