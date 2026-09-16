@@ -2059,3 +2059,100 @@ already exist -- `refresh.py` can't, since it keys on teamKey+typeKey and
 every retro product's typeKey is literally "retro". Of 668 retro picks: 128
 new products, 178 new/updated offers on existing ids, 362 exact
 re-discoveries. `ebay_check_stale.py` deactivated 22 of 200 checked (11%).
+
+## Daily pass (2026-09-16) -- the other two double-spelling merchants, and a player name filed as a club
+
+All 14 Awin feeds + MysteryShirtClub + the 5 Rakuten Brazil stores + one
+`ebay_mine_cycle.py` batch (cycle 3 opened, 60/385, zero 429s). Soicos skipped
+again -- no `claude-in-chrome`. 19 new products, all photo-verified;
+`tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**Fixed the two double-spelling merchants the 09-15 note predicted would
+collide, plus a third consequence nobody had noticed.** `"DeporteOutletES"`
+(9) vs `"DeporteOutlet"` (12) and `"ComoFC"` (6) vs `"ComoFCShop"` (8) were
+each one merchant under two spellings (confirmed identical `awinmid` on every
+offer), same as `"Forum Sport"`/`"ForumSport"` -- which still had 9 stragglers
+left after 09-15 cleaned only the URL-colliding ones. All three normalized to
+one spelling. **The consequence beyond stale prices: `storeShipping` in
+`products.ts` is keyed by store name and only registers `ComoFCShop`, so the 6
+offers spelled `ComoFC` hit the `if (!shipping) return true` default and were
+being shown as "ships everywhere" -- which that store explicitly does not.**
+A second spelling is not just a dedup problem, it silently drops the store out
+of every by-name lookup in `src/`. When onboarding a store, grep the store name
+against `storeShipping` too, not just against `products.ts`.
+
+**`sort | uniq -c` hides this bug in a UTF-8 locale.** The standing sanity
+check `grep -o 'store: "[^"]*"' | sort | uniq -c` printed `"ForumSport"` on
+*nine separate lines* with different counts, because the default locale's
+collation treats `"Forum Sport"` and `"ForumSport"` as equal and interleaves
+them, and `uniq` only collapses *adjacent* duplicates. `sort -u` is worse -- it
+drops the second spelling entirely, so the check reports one clean name.
+**Run it as `LC_ALL=C sort`**, which is what actually surfaced all three pairs.
+
+**Also removed 48 exact-duplicate offers** (same store AND same URL twice
+inside one product block): 42 pre-existing (38 eBay, 3 SantosStore, 1 Amazon)
+and 6 created this run by `refresh.py` and `resolve_ambiguous.py` both placing
+the same ForumSport offer on the same national-team product. Worth re-running
+that dedup after every pass, not just when a rename happens.
+
+**`team_collision_scan.py` earned its keep: 3 of 11 flagged retro picks were
+Boca Juniors shirts filed under `palermo` -- because Martín Palermo is the
+player.** A player surname that is also a tracked club name is a collision
+class the scan catches and nothing else does. All three keys already existed as
+products from an earlier run (`palermo-retro-2010-away`, `-200405-away`,
+`-201011-away`), each with the misattributed listing as its *only* offer, so
+this pass had merely re-replaced a wrong offer with another wrong one. Deleted
+all three blocks outright with **no** `PRODUCT_ID_ALIASES` entry, per "Product
+id stability" -- wrong-team products have no legitimate successor. The other 8
+flags were the documented filler-name keepers ("WATFORD ENGLAND ..." x7,
+"Reading FC ... England"). **When a collision flag turns out real, check
+whether the same key already made it into the catalog on a previous run** --
+same lesson as the 09-10 rugby shirt, and it was true here 3 times out of 3.
+
+**`ebay_check_stale.py` deactivated 106 of 200 (53%)**, well past the 33% spike
+of 09-13 and the 9-18% norm. Verified it is not a script fault before trusting
+it: `is_dead()` only returns `True` on a literal HTTP 404 from eBay's item API;
+429 and any network error return `None` and deactivate nothing. Cursor range
+2100-2300 is heavy on national teams (Thailand, Uzbekistan, Vietnam, El
+Salvador, Guatemala, Romania, Georgia, Mali, Zambia, Saudi Arabia) -- the same
+"one old cursor range" explanation as 09-13, not the catalog aging out faster.
+
+**`refresh_boots.py` reads UPPERCASE feed filenames** (`ADIDAS_ES.csv`,
+`FOOTSTORE_ES.csv`, ...) while the jersey pipeline in this README downloads
+whatever case you choose. Downloading to lowercase leaves `mine_boots.py`
+silently reading whatever stale uppercase files are left in `/tmp/feeds` from a
+previous day -- it does not error, it just mines old prices. Hard-link
+lowercase to uppercase (`ln -f`) after downloading, or download to uppercase.
+
+**Rakuten FTP needs a fresh connection per file.** Beyond the documented
+deterministic truncation, the first timeout poisons the whole session: after
+`InterStore` timed out mid-transfer, the next three `RETR`s returned
+`error_reply` with 0 bytes and the workaround happily wrote three empty feeds.
+Reconnect per MID and keep the largest of a few attempts.
+
+**Season-conflict noise ratio held at 9 of 12**, all confirmed by matching the
+pick's exact link AND decoded image tail against `products.ts`. **Match on the
+decoded image URL, not the raw one** -- productserve-hosted images all share
+the same `https://images2.productserve.com/?w=200&h=200&...&url=` prefix, so a
+naive "first 80 chars" substring check reports a match for every single one.
+Pull the real URL out of the `url=` query param first.
+
+The 3 real conflicts: ForumSport `chelsea|prematch` and `intermilan|third`
+26/27 (both genuine new seasons -- photos are the BingX cloud-print pre-match
+and the Betsson camo third, visibly different from the 25/26 blocks on file),
+and InterStore `internacional|home` 25/26, the same older-stock skip taken on
+09-13 and 09-15.
+
+**Kids picks: 1 of 2 dropped, same class as the 09-15 NY Red Bulls one.**
+`southampton|home` was an Under Armour shirt with a Virgin Media sponsor --
+2018/19 -- and `gen_kids_teams.py` hardcodes `season: "2026"`. The other
+(`alhilal|home`) was real and current but its product already carried the same
+listing at the identical price in a different youth size; skipped rather than
+adding a near-duplicate offer.
+
+**DecathlonIE produced a genuine zero again**, checked rather than assumed: its
+1201 jersey-titled rows yield 19 team matches, all either 23/24-24/25 licensed
+stock (correctly dropped as old) or Decathlon's own FF100/FF500 unlicensed
+generic supporter tees. Note its feed no longer has the `Fashion:size` column
+this README recorded on 09-10 -- it has `size_stock_status`, empty on every
+row. ProSoccer footwear-only as always.
