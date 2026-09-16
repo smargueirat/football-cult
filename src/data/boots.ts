@@ -33,7 +33,7 @@
 // producto (Decathlon IE), se dejó en 0 con el motivo documentado en el
 // código en vez de inventar un número.
 export interface BootOffer {
-  store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR";
+  store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR" | "GigasportDE" | "GigasportCH" | "GigasportFR";
   price: number;
   // precio real de la talla MÁS BARATA del colorway -- algunas tiendas
   // (confirmado en FootStoreES/SportIsGoodES/FootStoreFR) cobran distinto
@@ -101681,6 +101681,410 @@ const minedBootProductsChunk30: BootProduct[] = [
     ],
   },
   {
+    id: "gigasportde-puma-future-8-match-fg-ag-nocken-orange-fg-ag",
+    brand: "Puma",
+    model: "FUTURE 8 MATCH FG/AG Nocken orange",
+    groundType: "FG/AG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 55.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42913012049&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fpuma-1-768_1024_100-7712383_1.jpg&feedId=69847&k=8608881e6e8ae74f60a030785be6e08e53c92b09",
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-skechers-skx-2-academy-fg-nocken-rot-fg",
+    brand: "Skechers",
+    model: "SKX_2 Academy FG Nocken rot",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 68.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43930736615&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fskechers-1-768_1024_100-7743150_1.jpg&feedId=69847&k=a0db3459b0f0ec17c7aa1fa0ce54d7baed521e81",
+        sizes: ["38 1/2", "45"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-adidas-predator-pro-ft-fg-nocken-rot-fg",
+    brand: "Adidas",
+    model: "Predator Pro FT FG Nocken rot",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 111.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44733009122&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fadidas-1-768_1024_100-7752717_1.jpg&feedId=69847&k=07994e5541575220aeb7d17d4795f986d1bfe5ca",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-adidas-f50-pro-fg-gelb-fg",
+    brand: "Adidas",
+    model: "F50 Pro FG gelb",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 104.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43950771952&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fadidas-1-768_1024_100-7752720_1.jpg&feedId=69847&k=c385e65051107f582d5a125b2818248d11935ff5",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-adidas-copa-pure-iv-pro-fg-nocken-weiss-fg",
+    brand: "Adidas",
+    model: "Copa Pure IV Pro FG Nocken weiss",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 104.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44058566016&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fadidas-1-768_1024_100-7752725_1.jpg&feedId=69847&k=98620bc1ed173fc1e37dca4eeff2e65984acc1d9",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-skechers-skx-2-elite-fg-nocken-bunt-fg",
+    brand: "Skechers",
+    model: "SKX_2 Elite FG Nocken bunt",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 191.24,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44982824283&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fskechers-1-768_1024_100-7775019_1.jpg&feedId=69847&k=d164a24bd5b8779d55efb019284be685e2986f5f",
+        sizes: ["44"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-skechers-skx-2-academ-fg-nockeny-bunt-fg",
+    brand: "Skechers",
+    model: "SKX 2 Academ FG Nockeny bunt",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 80.74,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45070365585&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fskechers-1-768_1024_100-7775020_1.jpg&feedId=69847&k=c6fbb9d96ccb278fb769bd6960909b1a13dbed86",
+        sizes: ["41", "42", "42 1/2", "43", "44", "44 1/2", "45", "46"],
+      },
+    ],
+  },
+  {
+    id: "gigasportde-adidas-fuballschuhe-predator-league-ft-turf-weiss-ag",
+    brand: "Adidas",
+    model: "Fußballschuhe Predator League FT Turf weiss",
+    groundType: "AG",
+    offers: [
+      {
+        store: "GigasportDE",
+        price: 80.75,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45096812021&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fadidas-1-768_1024_100-7780587_1.jpg&feedId=69847&k=bb8820d09838f9627b8d26e007d6c4429955cc5b",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-puma-future-8-match-fg-ag-nocken-orange-fg-ag",
+    brand: "Puma",
+    model: "FUTURE 8 MATCH FG/AG Nocken orange",
+    groundType: "FG/AG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 55.9,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42917634426&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fpuma-1-768_1024_100-7712383_1.jpg&feedId=51705&k=7309cb6f13eaad939f433eb92ebd7fbbb48fc3a7",
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-skechers-skx-2-academy-fg-nocken-rot-fg",
+    brand: "Skechers",
+    model: "SKX_2 Academy FG Nocken rot",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 68.9,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43930735708&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fskechers-1-768_1024_100-7743150_1.jpg&feedId=51705&k=361ea563cfa8da56a79dab530ed9f8637d68d3eb",
+        sizes: ["38 1/2", "45"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-adidas-predator-pro-ft-fg-nocken-rot-fg",
+    brand: "Adidas",
+    model: "Predator Pro FT FG Nocken rot",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 108.9,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44734698874&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7752717_1.jpg&feedId=51705&k=48c3c0607ab7dbc7c3dc82acbfc418bbbe81972f",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-adidas-f50-pro-fg-gelb-fg",
+    brand: "Adidas",
+    model: "F50 Pro FG gelb",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 100.9,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43951952239&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7752720_1.jpg&feedId=51705&k=82e2b5c2f18c7dbbbf200e1146eab5facfa9e080",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-adidas-herren-f50-league-tf-gelb-tf",
+    brand: "Adidas",
+    model: "Herren F50 League TF gelb",
+    groundType: "TF",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 63.9,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44182335474&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7752723_1.jpg&feedId=51705&k=6004c148e49a83da8fe1c30f94e01848b0fc9bbc",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "46"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-adidas-copa-pure-iv-pro-fg-nocken-weiss-fg",
+    brand: "Adidas",
+    model: "Copa Pure IV Pro FG Nocken weiss",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 100.9,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44058551154&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7752725_1.jpg&feedId=51705&k=5581c46dfe71ac4ee7d52c7bd1326e9695836fc4",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-skechers-skx-2-elite-fg-nocken-bunt-fg",
+    brand: "Skechers",
+    model: "SKX_2 Elite FG Nocken bunt",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 184.36,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44988372536&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fskechers-1-768_1024_100-7775019_1.jpg&feedId=51705&k=67547379ae33580fa16eb2ac355e7fea7d5d95c9",
+        sizes: ["44"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-skechers-skx-2-academ-fg-nockeny-bunt-fg",
+    brand: "Skechers",
+    model: "SKX 2 Academ FG Nockeny bunt",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 78.96,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45072937051&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fskechers-1-768_1024_100-7775020_1.jpg&feedId=51705&k=5fd2897cc1d00927b13028553cd8160fa1f680d0",
+        sizes: ["41", "42", "42 1/2", "43", "44", "44 1/2", "45", "46"],
+      },
+    ],
+  },
+  {
+    id: "gigasportch-adidas-fuballschuhe-predator-league-ft-turf-weiss-ag",
+    brand: "Adidas",
+    model: "Fußballschuhe Predator League FT Turf weiss",
+    groundType: "AG",
+    offers: [
+      {
+        store: "GigasportCH",
+        price: 78.96,
+        priceMax: 80.66,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45099122329&a=3013769&m=22149",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7780587_1.jpg&feedId=51705&k=8b9f1dfb65359bea45a8fb4a60b35b8e0ab13452",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+        sizePrices: [
+          { size: "40", price: 78.96, url: "https://www.awin1.com/pclick.php?p=45099122329&a=3013769&m=22149" },
+          { size: "40 2/3", price: 78.96, url: "https://www.awin1.com/pclick.php?p=45099122330&a=3013769&m=22149" },
+          { size: "41 1/3", price: 78.96, url: "https://www.awin1.com/pclick.php?p=45099122331&a=3013769&m=22149" },
+          { size: "42", price: 78.96, url: "https://www.awin1.com/pclick.php?p=45099122332&a=3013769&m=22149" },
+          { size: "42 2/3", price: 78.96, url: "https://www.awin1.com/pclick.php?p=45099122333&a=3013769&m=22149" },
+          { size: "44 2/3", price: 80.66, url: "https://www.awin1.com/pclick.php?p=45099122336&a=3013769&m=22149" },
+          { size: "45 1/3", price: 80.66, url: "https://www.awin1.com/pclick.php?p=45099122337&a=3013769&m=22149" },
+          { size: "46", price: 80.66, url: "https://www.awin1.com/pclick.php?p=45099122338&a=3013769&m=22149" },
+          { size: "46 2/3", price: 80.66, url: "https://www.awin1.com/pclick.php?p=45099122339&a=3013769&m=22149" },
+          { size: "47 1/3", price: 80.66, url: "https://www.awin1.com/pclick.php?p=45099122340&a=3013769&m=22149" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "gigasportfr-puma-chaussures-de-foot-future-8-match-fg-ag-a-crampons-pour-homme-orange-fg-ag",
+    brand: "Puma",
+    model: "Chaussures de foot FUTURE 8 MATCH FG/AG à crampons pour homme orange",
+    groundType: "FG/AG",
+    offers: [
+      {
+        store: "GigasportFR",
+        price: 55.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43232902128&a=3013769&m=121584",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fpuma-1-768_1024_100-7712383_1.jpg&feedId=112013&k=ffad5ac536a6fe99b00b64ec83a1d549456377ea",
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
+      },
+    ],
+  },
+  {
+    id: "gigasportfr-skechers-skx-2-academy-fg-a-crampons-rouge-fg",
+    brand: "Skechers",
+    model: "SKX_2 Academy FG à crampons rouge",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportFR",
+        price: 68.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43993910132&a=3013769&m=121584",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fskechers-1-768_1024_100-7743150_1.jpg&feedId=112013&k=1c0ba807782fe724f0581c3614b67ff04ec5d92c",
+        sizes: ["38 1/2", "45"],
+      },
+    ],
+  },
+  {
+    id: "gigasportfr-adidas-predator-pro-ft-fg-a-crampons-rouge-fg",
+    brand: "Adidas",
+    model: "Predator Pro FT FG à crampons rouge",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportFR",
+        price: 111.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44733008209&a=3013769&m=121584",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fadidas-1-768_1024_100-7752717_1.jpg&feedId=112013&k=613dd26234d72cb2241d3a83a1310f10e2083413",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
+    id: "gigasportfr-skechers-skx-2-elite-fg-crampons-multicolore-fg",
+    brand: "Skechers",
+    model: "SKX_2 Elite FG Crampons multicolore",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportFR",
+        price: 191.24,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44982822992&a=3013769&m=121584",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fskechers-1-768_1024_100-7775019_1.jpg&feedId=112013&k=899d1fc31959060a3a9530766e2e84083f2bd134",
+        sizes: ["44"],
+      },
+    ],
+  },
+  {
+    id: "gigasportfr-skechers-chaussures-de-football-homme-skx-2-academ-fg-nockeny-multicolore-fg",
+    brand: "Skechers",
+    model: "Chaussures de football homme SKX 2 Academ FG Nockeny multicolore",
+    groundType: "FG",
+    offers: [
+      {
+        store: "GigasportFR",
+        price: 80.74,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45070368140&a=3013769&m=121584",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fskechers-1-768_1024_100-7775020_1.jpg&feedId=112013&k=0fb8b81862012a98a017145e49d0ade70ec6f068",
+        sizes: ["41", "42", "42 1/2", "43", "44", "44 1/2", "45", "46"],
+      },
+    ],
+  },
+  {
+    id: "gigasportfr-adidas-chaussures-de-football-predator-league-ft-turf-blanc-ag",
+    brand: "Adidas",
+    model: "Chaussures de football Predator League FT Turf blanc",
+    groundType: "AG",
+    offers: [
+      {
+        store: "GigasportFR",
+        price: 80.75,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45099130347&a=3013769&m=121584",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fadidas-1-768_1024_100-7780587_1.jpg&feedId=112013&k=419ba00f826e8f6452aa82b2d266cc49613cc9f7",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-new-balance-new-balance-442-pro-fg-v2-fg",
     brand: "New Balance",
     model: "New Balance 442 Pro FG V2",
@@ -103686,6 +104090,9 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-predator-club-ft-turf-2",
     brand: "adidas",
@@ -104077,9 +104484,6 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "futbolemotion-munich-munich-gresca-genius-turf",
     brand: "Munich",
@@ -106749,6 +107153,9 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-future-9-ultimate-low-fg-fg",
     brand: "Puma",
@@ -107140,9 +107547,6 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-future-9-match-advanced-level-fg-ag-fg-ag",
     brand: "Puma",
@@ -109812,6 +110216,9 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "futbolemotion-under-armour-under-armour-shadow-pro-4-ag-ag",
     brand: "Under Armour",
@@ -110189,4 +110596,5 @@ export const bootProducts: BootProduct[] = [
   ...minedBootProductsChunk30,
   ...minedBootProductsChunk31,
   ...minedBootProductsChunk32,
+  ...minedBootProductsChunk33,
 ];

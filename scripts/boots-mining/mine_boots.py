@@ -541,6 +541,96 @@ def mine_prosoccer():
         n += 1
     print('ProSoccer:', n)
 
+# ---------- GIGASPORT (AT/DE, CH, FR -- catálogo mixto multi-deporte) ----------
+# category_id/category_name vienen vacíos (como DeporteOutlet/ProSoccer),
+# pero a diferencia de esas dos, acá sí hay una señal de categoría
+# confiable: merchant_product_category_path, con rutas reales tipo
+# "Sportarten > Fußball > Schuhe > Nockenschuhe" (DE/AT/CH) o "Sports >
+# Football > Chaussures > Chaussures à crampons moulés" (FR). OJO: NO
+# alcanza con buscar solo la última palabra ("Trikots"/"Maillots") --
+# esa categoría existe también para otros deportes (ej. "Sportarten >
+# Radsport > Bekleidung > Trikots" de ciclismo ALÉ/ASSOS, confirmado
+# real) y da falsos positivos masivos. Hay que exigir el path completo
+# con "Fußball"/"Football" adelante.
+#
+# Talle: no viene en columna separada, está como sufijo " | TALLA" al
+# final del título (una fila por talla dentro del mismo colorway, resto
+# de campos -- imagen/descripción/precio -- idénticos). Se agrupa por
+# (marca, título sin el sufijo de talla).
+#
+# Solo se mina el feed DE para el anunciante "Gigasport AT/DE" (mismo
+# catálogo/idioma que el feed AT por separado, habría duplicado casi
+# todo mostrando ambos como ofertas "distintas").
+GIGASPORT_DE_BOOT_CATS = ("Fußball > Schuhe > Nockenschuhe", "Fußball > Schuhe > Turf- & Multinockenschuhe")
+GIGASPORT_FR_BOOT_CATS = ("Football > Chaussures > Chaussures à crampons moulés", "Football > Chaussures > Chaussures TF & multi-crampons")
+GIGASPORT_KIDS_RE = re.compile(r"\bkinder\b|\benfants?\b|\bjunior\b", re.I)
+GIGASPORT_GROUND_EXTRA = [
+    (r'kunstrasen|gazon synth[ée]tique', 'AG'),
+    (r'naturrasen|gazon naturel', 'FG'),
+]
+
+def mine_gigasport(fname, store_label, boot_cats):
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print(f'{store_label}: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            cat = row.get('merchant_product_category_path') or ''
+            if not any(c in cat for c in boot_cats):
+                continue
+            title = row.get('product_name') or ''
+            if EXCLUDE_KEYWORDS.search(title) or GIGASPORT_KIDS_RE.search(title):
+                continue
+            m = re.match(r'^(.*)\s\|\s([^|]+)$', title)
+            if not m:
+                continue
+            base_title, size_raw = m.group(1).strip(), m.group(2).strip()
+            price = parse_price(row.get('search_price'))
+            if not price:
+                continue
+            brand = (row.get('brand_name') or '').strip()
+            groups.setdefault((brand, base_title), []).append((row, size_raw, price))
+    n = 0
+    for (brand, base_title), items in groups.items():
+        rep_row = min(items, key=lambda t: t[2])[0]
+        sizes = sorted({dot_size(sz) for _, sz, _ in items}, key=size_sort_key)
+        # A diferencia de FootStoreFR (donde strip_football_shoe_prefix
+        # sirve porque la marca aparece en el MEDIO del título, después de
+        # un prefijo descriptivo), acá la marca siempre está al principio
+        # ("PUMA Herren Fußballschuhe...", "SKECHERS Chaussures de
+        # football pour hommes...") -- hay que sacarla de ahí directo, y
+        # de paso el género/categoría genérica que queda pegada, para un
+        # nombre de modelo limpio (la marca ya se muestra aparte en la
+        # tarjeta).
+        model = norm_title(base_title)
+        if brand:
+            model = re.sub(r'^' + re.escape(brand) + r'\s+', '', model, flags=re.I)
+        model = re.sub(r'^(herren|damen)\s+f[uü]ßballschuhe\s+', '', model, flags=re.I)
+        model = re.sub(r'^chaussures\s+de\s+football\s+pour\s+(hommes?|femmes?)\s+', '', model, flags=re.I)
+        ground = infer_ground(base_title, rep_row.get('description', '')) or next(
+            (code for pat, code in GIGASPORT_GROUND_EXTRA
+             if re.search(pat, base_title + ' ' + (rep_row.get('description') or ''), re.I)),
+            ''
+        )
+        price = min(p for _, _, p in items)
+        price_max = max(p for _, _, p in items)
+        entry = {
+            'store': store_label, 'brand': brand or 'N/D', 'model': model, 'groundType': ground,
+            'price': price, 'shipping': parse_price(rep_row.get('delivery_cost')) or 0,
+            'currency': 'EUR',
+            'url': rep_row.get('aw_deep_link'), 'imageUrl': rep_row.get('aw_image_url'), 'sizes': sizes,
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+            entry['sizePrices'] = sorted(
+                ({'size': dot_size(sz), 'price': p, 'url': r.get('aw_deep_link')} for r, sz, p in items),
+                key=lambda sp: size_sort_key(sp['size']),
+            )
+        results.append(entry)
+        n += 1
+    print(f'{store_label}:', n)
+
 # ---------- FUTBOLEMOTION (TradeTracker, no Awin) ----------
 # A diferencia de todo lo de arriba, este feed NO vive en el cache
 # /tmp/feeds del scan diario -- es un export TradeTracker con su propio
@@ -624,6 +714,9 @@ if __name__ == '__main__':
     mine_google_shopping_fr('SPORTISGOOD_FR.csv', 'SportIsGoodFR')
     mine_deporte_outlet()
     mine_prosoccer()
+    mine_gigasport('GIGASPORT_DE.csv', 'GigasportDE', GIGASPORT_DE_BOOT_CATS)
+    mine_gigasport('GIGASPORT_CH.csv', 'GigasportCH', GIGASPORT_DE_BOOT_CATS)
+    mine_gigasport('GIGASPORT_FR.csv', 'GigasportFR', GIGASPORT_FR_BOOT_CATS)
     mine_futbolemotion(legacy_model_names_from_boots_ts())
 
     print('TOTAL:', len(results))
