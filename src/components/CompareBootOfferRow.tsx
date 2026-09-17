@@ -3,6 +3,7 @@
 import { BootOffer } from "@/data/boots";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { trackOfferClick } from "@/lib/analytics";
 
 // Mismo layout visual que CompareOfferRow.tsx, pero para una BootOffer
 // real en vez de una Offer de camiseta: sin useLiveOfferCosts (esa
@@ -27,6 +28,9 @@ export default function CompareBootOfferRow({
     <a
       href={offer.url}
       target="_blank"
+      onClick={() =>
+        trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
+      }
       rel="noopener noreferrer nofollow sponsored"
       className={`flex flex-col gap-1.5 rounded-xl border p-3 transition-colors ${
         isBest

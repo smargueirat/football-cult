@@ -14,6 +14,7 @@ import {
   typeNames,
 } from "@/lib/productMeta";
 import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
+import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -566,6 +567,14 @@ export default function JerseyDetailClient({
                             <a
                               href={offer.url}
                               target="_blank"
+                              onClick={() =>
+                                trackOfferClick({
+                                  store: offer.store,
+                                  url: offer.url,
+                                  price: displayTotal,
+                                  currency: offer.currency,
+                                })
+                              }
                               rel="noopener noreferrer sponsored"
                               className="group/btn flex items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#1B3B2B] px-3.5 py-2 text-sm font-medium leading-none text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                             >

@@ -4,6 +4,7 @@ import type { Offer } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useLiveOfferCosts } from "@/lib/useLiveOfferCosts";
+import { trackOfferClick } from "@/lib/analytics";
 
 export default function CompareOfferRow({
   offer,
@@ -22,6 +23,9 @@ export default function CompareOfferRow({
     <a
       href={offer.url}
       target="_blank"
+      onClick={() =>
+        trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
+      }
       rel="noopener noreferrer sponsored"
       className={`flex flex-col gap-1.5 rounded-xl border p-3 transition-colors ${
         isBest

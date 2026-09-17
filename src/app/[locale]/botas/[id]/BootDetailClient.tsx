@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { BootProduct, BootOffer } from "@/data/boots";
 import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
@@ -227,7 +228,10 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
                     href={rowUrl}
                     target="_blank"
                     rel="noopener noreferrer nofollow sponsored"
-                    onClick={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      trackOfferClick({ store: offer.store, url: rowUrl, price: rowPrice, currency: offer.currency });
+                    }}
                     className="vintage-plaque shrink-0 rounded-xl px-4 py-2 text-sm font-semibold"
                   >
                     {t.botas.viewOffer}
