@@ -4,10 +4,16 @@ import { bootProducts } from "@/data/boots";
 import { LOCALES } from "@/lib/i18n/locales";
 
 const BASE_URL = "https://football-cult.com";
-// Límite real de Google (confirmado en Search Console: "Páginas
-// descubiertas" se cortaba justo en 50.000 con error) -- un margen para
-// no rozarlo apenas crezca el catálogo un poco más.
-const CHUNK_SIZE = 40000;
+// Dos límites reales, no solo el de Google (50.000 URLs/sitemap,
+// confirmado en Search Console): el primer intento con 40.000 hizo
+// fallar el build entero -- "Oversized Incremental Static Regeneration
+// page: sitemap/0.xml (28.67 MB)" -- Vercel rechaza cualquier página
+// estática de más de 19.07 MB, y con las 5 alternates hreflang por URL
+// cada entrada pesa ~750-900 bytes reales. 20.000 URLs midió 17 MB en
+// build local -- apenas 2 MB de margen, y el catálogo suma productos
+// todas las noches. 15.000 deja más aire para no volver a romper esto
+// en unas semanas.
+const CHUNK_SIZE = 15000;
 
 function languagesFor(path: string) {
   return Object.fromEntries(
