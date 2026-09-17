@@ -378,6 +378,20 @@ export interface Translations {
     sectionJerseys: string;
     sectionBoots: string;
   };
+  guantes: {
+    navLabel: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    badge: string;
+    sizeLabel: string;
+  };
+  pelotas: {
+    navLabel: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    badge: string;
+    sizeLabel: string;
+  };
 }
 
 export const translations: Record<Locale, Translations> = {
@@ -801,6 +815,20 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Camisetas",
       sectionBoots: "Botas",
     },
+    guantes: {
+      navLabel: "Guantes",
+      pageTitle: "Guantes de arquero",
+      pageSubtitle: "{n} modelos reales de las tiendas aprobadas.",
+      badge: "Guantes",
+      sizeLabel: "Talla",
+    },
+    pelotas: {
+      navLabel: "Pelotas",
+      pageTitle: "Pelotas de fútbol",
+      pageSubtitle: "{n} modelos reales de las tiendas aprobadas.",
+      badge: "Pelotas",
+      sizeLabel: "Talla",
+    },
   },
   pt: {
     brand: "Football Cult",
@@ -1220,6 +1248,20 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "Tudo",
       sectionJerseys: "Camisas",
       sectionBoots: "Chuteiras",
+    },
+    guantes: {
+      navLabel: "Luvas",
+      pageTitle: "Luvas de goleiro",
+      pageSubtitle: "{n} modelos reais das lojas aprovadas.",
+      badge: "Luvas",
+      sizeLabel: "Tamanho",
+    },
+    pelotas: {
+      navLabel: "Bolas",
+      pageTitle: "Bolas de futebol",
+      pageSubtitle: "{n} modelos reais das lojas aprovadas.",
+      badge: "Bolas",
+      sizeLabel: "Tamanho",
     },
   },
   en: {
@@ -1641,6 +1683,20 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Jerseys",
       sectionBoots: "Boots",
     },
+    guantes: {
+      navLabel: "Gloves",
+      pageTitle: "Goalkeeper gloves",
+      pageSubtitle: "{n} real models from approved stores.",
+      badge: "Gloves",
+      sizeLabel: "Size",
+    },
+    pelotas: {
+      navLabel: "Balls",
+      pageTitle: "Football balls",
+      pageSubtitle: "{n} real models from approved stores.",
+      badge: "Balls",
+      sizeLabel: "Size",
+    },
   },
   fr: {
     brand: "Football Cult",
@@ -2061,6 +2117,20 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Maillots",
       sectionBoots: "Chaussures",
     },
+    guantes: {
+      navLabel: "Gants",
+      pageTitle: "Gants de gardien",
+      pageSubtitle: "{n} modèles réels des boutiques approuvées.",
+      badge: "Gants",
+      sizeLabel: "Taille",
+    },
+    pelotas: {
+      navLabel: "Ballons",
+      pageTitle: "Ballons de football",
+      pageSubtitle: "{n} modèles réels des boutiques approuvées.",
+      badge: "Ballons",
+      sizeLabel: "Taille",
+    },
   },
   it: {
     brand: "Football Cult",
@@ -2480,6 +2550,20 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "Tutto",
       sectionJerseys: "Maglie",
       sectionBoots: "Scarpini",
+    },
+    guantes: {
+      navLabel: "Guanti",
+      pageTitle: "Guanti da portiere",
+      pageSubtitle: "{n} modelli reali dai negozi approvati.",
+      badge: "Guanti",
+      sizeLabel: "Taglia",
+    },
+    pelotas: {
+      navLabel: "Palloni",
+      pageTitle: "Palloni da calcio",
+      pageSubtitle: "{n} modelli reali dai negozi approvati.",
+      badge: "Palloni",
+      sizeLabel: "Taglia",
     },
   },
 };

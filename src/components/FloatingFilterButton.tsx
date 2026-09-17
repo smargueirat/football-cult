@@ -138,6 +138,23 @@ export default function FloatingFilterButton() {
                   {t.heroSlides[i]?.eyebrow}
                 </Link>
               ))}
+              {/* Guantes/pelotas: sin foto curada propia todavía (no forman
+                  parte de SECTION_PATHS/el carrusel de fotos del home a
+                  propósito -- eso necesita fotos elegidas y probadas contra
+                  el degradé real, trabajo aparte), pero sí necesitan un link
+                  real descubrible -- se agregan acá sueltos. */}
+              <Link
+                href="/guantes"
+                className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
+              >
+                {t.guantes.navLabel}
+              </Link>
+              <Link
+                href="/pelotas"
+                className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
+              >
+                {t.pelotas.navLabel}
+              </Link>
             </ScrollArrowRow>
           </div>
 

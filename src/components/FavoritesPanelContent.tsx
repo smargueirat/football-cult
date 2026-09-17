@@ -10,6 +10,8 @@ import {
   typeNames,
 } from "@/data/products";
 import { bootProducts } from "@/data/boots";
+import { gloveProducts } from "@/data/gloves";
+import { ballProducts } from "@/data/balls";
 import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -36,6 +38,10 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
       if (product) return { kind: "jersey" as const, id, product };
       const boot = bootProducts.find((b) => b.id === id);
       if (boot) return { kind: "boot" as const, id, boot };
+      const glove = gloveProducts.find((g) => g.id === id);
+      if (glove) return { kind: "glove" as const, id, glove };
+      const ball = ballProducts.find((b) => b.id === id);
+      if (ball) return { kind: "ball" as const, id, ball };
       return null;
     })
     .filter((item): item is NonNullable<typeof item> => item !== null);
@@ -59,6 +65,27 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                     className="flex items-center justify-between gap-2 rounded-xl px-2 py-2 transition-colors hover:bg-black/[0.04]"
                   >
                     <span className="truncate text-sm text-[#1a1a1a]">{item.boot.model}</span>
+                    <span className="text-sm font-semibold text-[#B45309]">
+                      {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
+                    </span>
+                  </Link>
+                </li>
+              );
+            }
+            if (item.kind === "glove" || item.kind === "ball") {
+              const gearItem = item.kind === "glove" ? item.glove : item.ball;
+              const basePath = item.kind === "glove" ? "guantes" : "pelotas";
+              const cheapest = gearItem.offers.reduce((a, b) =>
+                a.price + a.shipping <= b.price + b.shipping ? a : b
+              );
+              return (
+                <li key={item.id}>
+                  <Link
+                    href={`/${basePath}/${gearItem.id}`}
+                    onClick={onNavigate}
+                    className="flex items-center justify-between gap-2 rounded-xl px-2 py-2 transition-colors hover:bg-black/[0.04]"
+                  >
+                    <span className="truncate text-sm text-[#1a1a1a]">{gearItem.model}</span>
                     <span className="text-sm font-semibold text-[#B45309]">
                       {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
                     </span>

@@ -3,10 +3,13 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { findProduct } from "@/data/products";
 import { bootProducts } from "@/data/boots";
+import { gloveProducts } from "@/data/gloves";
+import { ballProducts } from "@/data/balls";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import ProductCard from "@/components/ProductCard";
 import BootCard from "@/components/BootCard";
+import GearCard from "@/components/GearCard";
 
 // Un id favorito puede ser de una camiseta o de una bota -- mismo
 // comportamiento pedido explícitamente por el usuario. Se resuelve
@@ -22,6 +25,10 @@ export default function FavoritosClient() {
       if (product) return { kind: "jersey" as const, id, product };
       const boot = bootProducts.find((b) => b.id === id);
       if (boot) return { kind: "boot" as const, id, boot };
+      const glove = gloveProducts.find((g) => g.id === id);
+      if (glove) return { kind: "glove" as const, id, glove };
+      const ball = ballProducts.find((b) => b.id === id);
+      if (ball) return { kind: "ball" as const, id, ball };
       return null;
     })
     .filter((item): item is NonNullable<typeof item> => item !== null);
@@ -47,13 +54,12 @@ export default function FavoritosClient() {
         </div>
       ) : (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
-          {savedItems.map((item) =>
-            item.kind === "boot" ? (
-              <BootCard key={item.id} boot={item.boot} />
-            ) : (
-              <ProductCard key={item.id} product={item.product} />
-            )
-          )}
+          {savedItems.map((item) => {
+            if (item.kind === "boot") return <BootCard key={item.id} boot={item.boot} />;
+            if (item.kind === "glove") return <GearCard key={item.id} item={item.glove} basePath="guantes" />;
+            if (item.kind === "ball") return <GearCard key={item.id} item={item.ball} basePath="pelotas" />;
+            return <ProductCard key={item.id} product={item.product} />;
+          })}
         </div>
       )}
     </div>

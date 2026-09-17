@@ -11,6 +11,8 @@ import {
   typeNames,
 } from "@/data/products";
 import { BootOffer, BootProduct, bootProducts } from "@/data/boots";
+import { GloveOffer, GloveProduct, gloveProducts } from "@/data/gloves";
+import { BallOffer, BallProduct, ballProducts } from "@/data/balls";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
@@ -37,6 +39,24 @@ type CompareCard =
       store: string;
       boot: BootProduct;
       offer: BootOffer;
+      isBest: boolean;
+    }
+  | {
+      key: string;
+      kind: "glove";
+      productId: string;
+      store: string;
+      glove: GloveProduct;
+      offer: GloveOffer;
+      isBest: boolean;
+    }
+  | {
+      key: string;
+      kind: "ball";
+      productId: string;
+      store: string;
+      ball: BallProduct;
+      offer: BallOffer;
       isBest: boolean;
     };
 
@@ -68,16 +88,44 @@ export default function CompareClient() {
       }
       const boot = bootProducts.find((b) => b.id === entry.productId);
       const bootOffer = boot?.offers.find((o) => o.store === entry.store);
-      if (!boot || !bootOffer) return null;
-      return {
-        key: `${entry.productId}-${entry.store}`,
-        kind: "boot",
-        productId: entry.productId,
-        store: entry.store,
-        boot,
-        offer: bootOffer,
-        isBest: false,
-      };
+      if (boot && bootOffer) {
+        return {
+          key: `${entry.productId}-${entry.store}`,
+          kind: "boot",
+          productId: entry.productId,
+          store: entry.store,
+          boot,
+          offer: bootOffer,
+          isBest: false,
+        };
+      }
+      const glove = gloveProducts.find((g) => g.id === entry.productId);
+      const gloveOffer = glove?.offers.find((o) => o.store === entry.store);
+      if (glove && gloveOffer) {
+        return {
+          key: `${entry.productId}-${entry.store}`,
+          kind: "glove",
+          productId: entry.productId,
+          store: entry.store,
+          glove,
+          offer: gloveOffer,
+          isBest: false,
+        };
+      }
+      const ball = ballProducts.find((b) => b.id === entry.productId);
+      const ballOffer = ball?.offers.find((o) => o.store === entry.store);
+      if (ball && ballOffer) {
+        return {
+          key: `${entry.productId}-${entry.store}`,
+          kind: "ball",
+          productId: entry.productId,
+          store: entry.store,
+          ball,
+          offer: ballOffer,
+          isBest: false,
+        };
+      }
+      return null;
     })
     .filter((c): c is CompareCard => c !== null);
 
@@ -89,7 +137,12 @@ export default function CompareClient() {
   }
   for (const list of byProduct.values()) {
     if (list.length < 2) continue;
-    const total = (c: CompareCard) => (c.kind === "jersey" ? offerTotal(c.offer) : bootOfferTotalInEUR(c.offer));
+    const total = (c: CompareCard) =>
+      c.kind === "jersey"
+        ? offerTotal(c.offer)
+        : c.kind === "boot"
+          ? bootOfferTotalInEUR(c.offer)
+          : c.offer.price + c.offer.shipping;
     const cheapest = list.reduce((a, b) => (total(a) <= total(b) ? a : b));
     cheapest.isBest = true;
   }
@@ -156,6 +209,48 @@ export default function CompareClient() {
                     <CompareBootOfferRow offer={offer} isBest={isBest} />
                     <Link
                       href={`/botas/${productId}`}
+                      className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
+                    >
+                      {t.compare.viewProduct}
+                    </Link>
+                  </div>
+                </div>
+              );
+            }
+
+            if (card.kind === "glove" || card.kind === "ball") {
+              const gearItem = card.kind === "glove" ? card.glove : card.ball;
+              const basePath = card.kind === "glove" ? "guantes" : "pelotas";
+              const { offer } = card;
+              const photo = offer.imageUrl;
+              return (
+                <div key={key} className="vintage-card flex flex-col overflow-hidden rounded-2xl">
+                  <div
+                    className="relative flex aspect-square items-center justify-center overflow-hidden p-8"
+                    style={{ background: "linear-gradient(135deg, #fffdf8, #C9A24B22, #1B3B2B11)" }}
+                  >
+                    <img
+                      src={getDisplaySrc(photo, 700)}
+                      srcSet={`${getDisplaySrc(photo, 350)} 350w, ${getDisplaySrc(photo, 600)} 600w, ${getDisplaySrc(photo, 900)} 900w`}
+                      sizes="(max-width: 640px) 90vw, 30vw"
+                      alt={gearItem.model}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-contain"
+                    />
+                    <button
+                      onClick={() => toggleCompare(productId, store)}
+                      aria-label={t.compare.remove}
+                      className="absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#675c44] hover:text-[#1a1a1a]"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                  <div className="vintage-divider" />
+                  <div className="flex flex-col gap-3 p-4">
+                    <h2 className="font-card-title text-lg text-[#1a1a1a]">{gearItem.model}</h2>
+                    <CompareBootOfferRow offer={offer} isBest={isBest} />
+                    <Link
+                      href={`/${basePath}/${productId}`}
                       className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                     >
                       {t.compare.viewProduct}

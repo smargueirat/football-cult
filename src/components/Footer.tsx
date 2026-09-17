@@ -28,6 +28,12 @@ export default function Footer() {
           <Link href="/guia-de-tallas" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.sizeGuide}
           </Link>
+          <Link href="/guantes" className="transition-colors hover:text-[#F3E9C9]">
+            {t.guantes.navLabel}
+          </Link>
+          <Link href="/pelotas" className="transition-colors hover:text-[#F3E9C9]">
+            {t.pelotas.navLabel}
+          </Link>
           <Link href="/autenticidad" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.authenticity}
           </Link>
