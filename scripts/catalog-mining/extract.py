@@ -107,7 +107,6 @@ TEAM_PATTERNS = {
     "myanmar": r"\bmyanmar\b",
     "keralablasters": r"kerala blasters",
     "northeastunited": r"north\s?east united",
-    "stetienne": r"saint.?[eé]tienne",
     "fcbasel": r"\bfc basel\b|\bfc basilea\b",
     "brescia": r"\bbrescia\b",
     "lechiagdansk": r"lechia gdansk|lechia gda[nń]sk",

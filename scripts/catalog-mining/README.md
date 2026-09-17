@@ -2156,3 +2156,79 @@ stock (correctly dropped as old) or Decathlon's own FF100/FF500 unlicensed
 generic supporter tees. Note its feed no longer has the `Fashion:size` column
 this README recorded on 09-10 -- it has `size_stock_status`, empty on every
 row. ProSoccer footwear-only as always.
+
+## Daily pass (2026-09-17) -- `teamNames` moved out of products.ts, and one club under two team keys
+
+All 14 Awin feeds + the 5 Rakuten Brazil stores + one `ebay_mine_cycle.py` batch
+(cycle 3 at 120/385, 60 teams completed, **zero 429s**). Soicos skipped again --
+no `claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten FTP
+listing, skipped per instructions. 8 new products, all photo-verified;
+`tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**`ebay_mine_cycle.py` crashed on its first call of the day** with
+`AttributeError: 'NoneType' object has no attribute 'group'` in
+`ebay_mine.py`'s `get_team_en_names()`. Cause: commit 9d23d8d (2026-09-16, "
+ProductCard sigue arrastrando el catálogo entero al cliente") moved `teamNames`,
+`storeShipping` and `typeNames` out of `src/data/products.ts` into
+`src/lib/productMeta.ts`, and that function regexes `teamNames` straight out of
+the file it's pointed at. Fixed `TEAM_EN_PATH` to point at `productMeta.ts`
+(385 names back). **`apply_batch.py` had the same latent break** -- its
+`teamNames` anchor `assert` would have fired the next time a new team batch was
+wired in; it now reads/writes `productMeta.ts` for that one table and
+`products.ts` for the other four. **When a `src/` refactor relocates a table
+this tooling parses, grep `scripts/` for the table name** -- four of the six
+tables stayed put, which is exactly why this was easy to miss.
+
+**`stetienne` and `asse` were two TeamKey entries for the same real club**
+(AS Saint-Étienne), with overlapping `TEAM_PATTERNS` regexes -- `"stetienne":
+r"saint.?[eé]tienne"` and `"asse": r"\basse\b|saint-[ée]tienne|..."` both match
+the same titles, so each mining run filed the club's shirts under whichever key
+won, splitting one club across two catalog pages. 8 products under `stetienne`,
+7 under `asse`, **4 of them exact duplicate pairs** (`home-202627`,
+`retro-200910-away`, `retro-201516-away`, `retro-202324-home`). Today's own
+eBay pass was about to add a 5th: a photo-verified ASSE 26/27 home shirt
+generated as `stetienne-home-202627` while `asse-home-202627` already existed
+with 5 offers. Merged everything into `asse` (offers merged on the 4 dup pairs,
+4 `stetienne`-only products re-keyed), dropped `stetienne` from the TeamKey
+union / `teamCategory` / `teamFlags` / `teamColors` / `teamNames` /
+`TEAM_PATTERNS`, and added 7 `PRODUCT_ID_ALIASES` entries (these are real
+products with legitimate successors, so favorites must redirect, unlike the
+wrong-team deletions of 09-16). **This is the 09-16 double-spelling merchant bug
+one level up** -- same failure shape, team keys instead of store names. Worth a
+periodic `team_collision_scan.py` read as a *duplicate-key* detector, not just a
+misattribution one: it is what surfaced this, flagging 5 `stetienne` picks as
+"really `asse`".
+
+**`team_collision_scan.py`'s other flag was the documented filler-name class**:
+`fcbasel|away` -> `suiza`, from the title "Macron Fc Basel Away Jersey Sz l 25/26
+Switzerland Soccer" -- Basel is the real subject, "Switzerland" is a keyword
+tail. Kept.
+
+**Season conflicts: 9 of 10 were exact duplicates already on file**, matched on
+link AND decoded image URL (the `url=` query param, not the raw productserve
+prefix). The 10th real one, InterStore `internacional|home` 25/26 against the
+26/27 block, is the same older-stock skip taken on 09-13, 09-15 and 09-16 --
+four passes running now; it is the store's own stale listing, not a new season.
+
+**One retro/heritage pick caught by the bare-2-digit-suffix grep**: AdidasES
+"Camiseta primera equipación Chile 93/94", which `detect_season()` read as a
+normal add_offer for `chile|home`. Dropped before applying -- the standing grep
+from the "Adding a team" section is still earning its keep.
+
+**`refresh.py` created one duplicate offer** on `bra-home-2026`: two ForumSport
+offers sat on that block under *different* `pclick.php?p=` ids for the same real
+product (the unstable-id problem from 09-11), and today's refresh rewrote the
+first one to the second one's URL. The post-pass store+URL dedup caught it.
+Confirms the 09-16 advice: run that dedup every pass, not only after a rename.
+
+**eBay stale rate back to normal: 40 of 200 (20%)**, against 53% on 09-16 and
+the 9-18% norm -- consistent with that spike being one cursor range heavy on
+national teams rather than the catalog aging out faster.
+
+All 4 kids picks were skipped by `gen_kids_teams.py`'s own `existing_kids()`
+check (blocks already present for all four team+type pairs). Of 173 retro picks
+only 6 were genuinely new; 140 of the remaining 167 were exact re-discoveries of
+an offer already on file. DecathlonIE produced a genuine zero again (0 picks;
+its `Fashion:size` column is back and populated on all 41689 rows, so this is a
+real zero, not the silent wrong-column failure). ProSoccer footwear-only as
+always.

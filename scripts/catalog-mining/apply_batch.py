@@ -15,6 +15,11 @@ immediately followed by `;` afterwards.
 import re, sys, importlib
 
 PRODUCTS_TS = "/home/piojo/football-cult/src/data/products.ts"
+# teamNames/storeShipping/typeNames se mudaron a src/lib/productMeta.ts el
+# 2026-09-16 (commit 9d23d8d, para que ProductCard no arrastre el catálogo
+# entero al cliente). Las otras 4 tablas (TeamKey, teamCategory, teamFlags,
+# teamColors) siguen en products.ts.
+PRODUCT_META_TS = "/home/piojo/football-cult/src/lib/productMeta.ts"
 EXTRACT_PY = "/home/piojo/football-cult/scripts/catalog-mining/extract.py"
 
 
@@ -74,12 +79,14 @@ def main():
         f'  {k}: {{ es: "{batch[k][0]}", en: "{batch[k][1]}", pt: "{batch[k][2]}", fr: "{batch[k][0]}", it: "{batch[k][0]}" }},\n'
         for k in new_keys
     )
-    content, n = re.subn(
+    meta_content = open(PRODUCT_META_TS, encoding="utf-8").read()
+    meta_content, n = re.subn(
         r'(export const teamNames: Record<TeamKey, Record<Locale, string>> = \{\n)',
         r'\1' + esc(names_lines),
-        content, count=1,
+        meta_content, count=1,
     )
     assert n == 1, "teamNames anchor not found"
+    open(PRODUCT_META_TS, "w", encoding="utf-8").write(meta_content)
 
     # 4. teamFlags
     flags_lines = "".join(f'  {k}: "{flags[k]}",\n' for k in new_keys)
@@ -102,7 +109,7 @@ def main():
     assert n == 1, "teamColors anchor not found"
 
     open(PRODUCTS_TS, "w", encoding="utf-8").write(content)
-    print(f"products.ts: added {len(new_keys)} teams to all 5 tables.")
+    print(f"products.ts + productMeta.ts: added {len(new_keys)} teams to all 5 tables.")
 
     # 6. extract.py TEAM_PATTERNS
     extract_content = open(EXTRACT_PY, encoding="utf-8").read()

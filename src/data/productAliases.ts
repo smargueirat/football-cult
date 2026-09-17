@@ -10,6 +10,20 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-09-17: "stetienne" y "asse" eran DOS claves de equipo para el mismo
+  // club real (AS Saint-Étienne) -- sus regexes en TEAM_PATTERNS se pisaban
+  // ("saint-étienne" matcheaba ambas), así que cada mina archivaba el mismo
+  // producto bajo una u otra sin criterio, partiendo el catálogo del club en
+  // dos fichas y generando 4 pares de productos duplicados. Mismo tipo de bug
+  // que el de tiendas con doble grafía (2026-09-16), pero a nivel equipo.
+  // Todo quedó bajo "asse"; "stetienne" se eliminó de TEAM_PATTERNS.
+  "stetienne-home-202526": "asse-home-202526",
+  "stetienne-retro-2000-away": "asse-retro-2000-away",
+  "stetienne-retro-200910-home": "asse-retro-200910-home",
+  "stetienne-retro-202223-home": "asse-retro-202223-home",
+  "stetienne-retro-200910-away": "asse-retro-200910-away",
+  "stetienne-retro-201516-away": "asse-retro-201516-away",
+  "stetienne-retro-202324-home": "asse-retro-202324-home",
   // 2026-08-11: retro id-generation bug -- an id's embedded "season" digits
   // were actually a mis-captured kids age-range or size suffix, not a real
   // season. Renamed to match the real season field.

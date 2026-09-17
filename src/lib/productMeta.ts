@@ -129,7 +129,6 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   myanmar: { es: "Myanmar", en: "Myanmar", pt: "Myanmar", fr: "Myanmar", it: "Myanmar" },
   keralablasters: { es: "Kerala Blasters", en: "Kerala Blasters", pt: "Kerala Blasters", fr: "Kerala Blasters", it: "Kerala Blasters" },
   northeastunited: { es: "NorthEast United", en: "NorthEast United", pt: "NorthEast United", fr: "NorthEast United", it: "NorthEast United" },
-  stetienne: { es: "Saint-Étienne", en: "Saint-Étienne", pt: "Saint-Étienne", fr: "Saint-Étienne", it: "Saint-Étienne" },
   fcbasel: { es: "FC Basel", en: "FC Basel", pt: "FC Basel", fr: "FC Basel", it: "FC Basel" },
   brescia: { es: "Brescia", en: "Brescia", pt: "Brescia", fr: "Brescia", it: "Brescia" },
   lechiagdansk: { es: "KS Lechia Gdańsk", en: "KS Lechia Gdańsk", pt: "KS Lechia Gdańsk", fr: "KS Lechia Gdańsk", it: "KS Lechia Gdańsk" },

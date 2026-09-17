@@ -23,7 +23,10 @@ from manual_exclusions import is_manually_excluded
 
 _REPO_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 ENV_PATH = os.path.join(_REPO_ROOT, ".env.local")
-TEAM_EN_PATH = os.path.join(_REPO_ROOT, "src", "data", "products.ts")
+# teamNames se mudó de products.ts a src/lib/productMeta.ts el 2026-09-16
+# (commit 9d23d8d). Apuntar al viejo path hacía que get_team_en_names()
+# reventara con AttributeError en vez de avisar.
+TEAM_EN_PATH = os.path.join(_REPO_ROOT, "src", "lib", "productMeta.ts")
 
 TYPE_QUERY_WORD = {
     "home": "home",
@@ -69,7 +72,7 @@ def get_env(key):
 
 def get_team_en_names():
     """Pulls the English team name for every TeamKey straight out of
-    products.ts's teamNames table (avoids hand-duplicating ~170 names)."""
+    productMeta.ts's teamNames table (avoids hand-duplicating ~170 names)."""
     content = open(TEAM_EN_PATH, encoding="utf-8").read()
     m = re.search(r"export const teamNames.*?=\s*\{(.*?)\n\};", content, re.S)
     body = m.group(1)
@@ -285,7 +288,7 @@ def mine(team_keys, out_path):
         if team_key in done_teams:
             continue
         if team_key not in team_en:
-            print(f"SKIP {team_key}: no English name found in products.ts")
+            print(f"SKIP {team_key}: no English name found in productMeta.ts")
             continue
         for type_key in ("home", "away", "third"):
             key = f"{team_key}|{type_key}"
