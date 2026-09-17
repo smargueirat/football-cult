@@ -3,6 +3,7 @@ import { products } from "@/data/products";
 import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
+import { ticketProducts } from "@/data/tickets";
 import { LOCALES } from "@/lib/i18n/locales";
 
 const BASE_URL = "https://football-cult.com";
@@ -39,6 +40,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/botas",
     "/guantes",
     "/pelotas",
+    "/tickets",
     "/selecciones",
     "/clubes",
     "/retro",
@@ -90,7 +92,16 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  return [...staticRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes];
+  const ticketRoutes = ticketProducts.flatMap((ticket) => {
+    const path = `/tickets/${ticket.id}`;
+    return LOCALES.map((locale) => ({
+      url: `${BASE_URL}/${locale}${path}`,
+      lastModified: new Date(),
+      alternates: { languages: languagesFor(path) },
+    }));
+  });
+
+  return [...staticRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes, ...ticketRoutes];
 }
 
 // Google rechaza (con error real, confirmado en Search Console 2026-09-17)

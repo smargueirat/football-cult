@@ -13,7 +13,8 @@ import {
 import { BootOffer, BootProduct, bootProducts } from "@/data/boots";
 import { GloveOffer, GloveProduct, gloveProducts } from "@/data/gloves";
 import { BallOffer, BallProduct, ballProducts } from "@/data/balls";
-import { bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { TicketOffer, TicketProduct, ticketProducts } from "@/data/tickets";
+import { bootOfferTotalInEUR, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -57,6 +58,15 @@ type CompareCard =
       store: string;
       ball: BallProduct;
       offer: BallOffer;
+      isBest: boolean;
+    }
+  | {
+      key: string;
+      kind: "ticket";
+      productId: string;
+      store: string;
+      ticket: TicketProduct;
+      offer: TicketOffer;
       isBest: boolean;
     };
 
@@ -125,6 +135,19 @@ export default function CompareClient() {
           isBest: false,
         };
       }
+      const ticket = ticketProducts.find((tk) => tk.id === entry.productId);
+      const ticketOffer = ticket?.offers.find((o) => o.store === entry.store);
+      if (ticket && ticketOffer) {
+        return {
+          key: `${entry.productId}-${entry.store}`,
+          kind: "ticket",
+          productId: entry.productId,
+          store: entry.store,
+          ticket,
+          offer: ticketOffer,
+          isBest: false,
+        };
+      }
       return null;
     })
     .filter((c): c is CompareCard => c !== null);
@@ -142,7 +165,9 @@ export default function CompareClient() {
         ? offerTotal(c.offer)
         : c.kind === "boot"
           ? bootOfferTotalInEUR(c.offer)
-          : c.offer.price + c.offer.shipping;
+          : c.kind === "ticket"
+            ? ticketOfferTotalInEUR(c.offer)
+            : c.offer.price + c.offer.shipping;
     const cheapest = list.reduce((a, b) => (total(a) <= total(b) ? a : b));
     cheapest.isBest = true;
   }
@@ -251,6 +276,51 @@ export default function CompareClient() {
                     <CompareBootOfferRow offer={offer} isBest={isBest} />
                     <Link
                       href={`/${basePath}/${productId}`}
+                      className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
+                    >
+                      {t.compare.viewProduct}
+                    </Link>
+                  </div>
+                </div>
+              );
+            }
+
+            if (card.kind === "ticket") {
+              const { ticket, offer } = card;
+              const photo = ticket.imageUrl;
+              return (
+                <div key={key} className="vintage-card flex flex-col overflow-hidden rounded-2xl">
+                  <div
+                    className="relative flex aspect-square items-center justify-center overflow-hidden p-8"
+                    style={{ background: "linear-gradient(135deg, #fffdf8, #C9A24B22, #1B3B2B11)" }}
+                  >
+                    <img
+                      src={getDisplaySrc(photo, 700)}
+                      alt={ticket.event}
+                      loading="lazy"
+                      className="absolute inset-0 h-full w-full object-contain"
+                    />
+                    <button
+                      onClick={() => toggleCompare(productId, store)}
+                      aria-label={t.compare.remove}
+                      className="absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#675c44] hover:text-[#1a1a1a]"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                  <div className="vintage-divider" />
+                  <div className="flex flex-col gap-3 p-4">
+                    <h2 className="font-card-title text-lg text-[#1a1a1a]">{ticket.event}</h2>
+                    <p className="text-xs text-[#675c44]">
+                      {isBest && (
+                        <span className="mr-2 rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#F3E9C9]">
+                          {t.botas.bestPrice}
+                        </span>
+                      )}
+                      {offer.store}: {offer.price} {offer.currency}
+                    </p>
+                    <Link
+                      href={`/tickets/${productId}`}
                       className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                     >
                       {t.compare.viewProduct}

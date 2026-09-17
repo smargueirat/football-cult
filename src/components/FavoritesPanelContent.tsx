@@ -12,6 +12,8 @@ import {
 import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
+import { ticketProducts } from "@/data/tickets";
+import { ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -42,6 +44,8 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
       if (glove) return { kind: "glove" as const, id, glove };
       const ball = ballProducts.find((b) => b.id === id);
       if (ball) return { kind: "ball" as const, id, ball };
+      const ticket = ticketProducts.find((tk) => tk.id === id);
+      if (ticket) return { kind: "ticket" as const, id, ticket };
       return null;
     })
     .filter((item): item is NonNullable<typeof item> => item !== null);
@@ -67,6 +71,25 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                     <span className="truncate text-sm text-[#1a1a1a]">{item.boot.model}</span>
                     <span className="text-sm font-semibold text-[#B45309]">
                       {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
+                    </span>
+                  </Link>
+                </li>
+              );
+            }
+            if (item.kind === "ticket") {
+              const cheapest = item.ticket.offers.reduce((a, b) =>
+                ticketOfferTotalInEUR(a) <= ticketOfferTotalInEUR(b) ? a : b
+              );
+              return (
+                <li key={item.id}>
+                  <Link
+                    href={`/tickets/${item.ticket.id}`}
+                    onClick={onNavigate}
+                    className="flex items-center justify-between gap-2 rounded-xl px-2 py-2 transition-colors hover:bg-black/[0.04]"
+                  >
+                    <span className="truncate text-sm text-[#1a1a1a]">{item.ticket.event}</span>
+                    <span className="text-sm font-semibold text-[#B45309]">
+                      {formatOfferMoney(cheapest.price, cheapest.currency)}
                     </span>
                   </Link>
                 </li>

@@ -34,6 +34,9 @@ export default function Footer() {
           <Link href="/pelotas" className="transition-colors hover:text-[#F3E9C9]">
             {t.pelotas.navLabel}
           </Link>
+          <Link href="/tickets" className="transition-colors hover:text-[#F3E9C9]">
+            {t.tickets.navLabel}
+          </Link>
           <Link href="/autenticidad" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.authenticity}
           </Link>

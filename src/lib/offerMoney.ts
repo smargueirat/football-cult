@@ -76,3 +76,12 @@ const BOOT_CURRENCY_TO_EUR: Record<BootCurrencyCode, number> = {
 export function bootOfferTotalInEUR(offer: { price: number; shipping: number; currency: BootCurrencyCode }): number {
   return (offer.price + offer.shipping) / BOOT_CURRENCY_TO_EUR[offer.currency];
 }
+
+// Entradas de partidos (tickets.ts): mismo motivo que bootOfferTotalInEUR
+// (Pro Soccer en USD) -- acá el mismo evento real vale un precio
+// genuinamente distinto en EUR/GBP/USD según la tienda regional, y esto
+// es lo único que permite comparar "más barato" entre monedas. Reusa
+// OFFER_CURRENCY_TO_EUR (ya tiene EUR/GBP/USD) en vez de una tabla nueva.
+export function ticketOfferTotalInEUR(offer: { price: number; currency: OfferCurrencyCode }): number {
+  return offer.price / OFFER_CURRENCY_TO_EUR[offer.currency];
+}

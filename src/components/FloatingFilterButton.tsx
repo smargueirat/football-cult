@@ -155,6 +155,12 @@ export default function FloatingFilterButton() {
               >
                 {t.pelotas.navLabel}
               </Link>
+              <Link
+                href="/tickets"
+                className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
+              >
+                {t.tickets.navLabel}
+              </Link>
             </ScrollArrowRow>
           </div>
 

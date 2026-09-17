@@ -392,6 +392,11 @@ export interface Translations {
     badge: string;
     sizeLabel: string;
   };
+  tickets: {
+    navLabel: string;
+    pageTitle: string;
+    pageSubtitle: string;
+  };
 }
 
 export const translations: Record<Locale, Translations> = {
@@ -829,6 +834,11 @@ export const translations: Record<Locale, Translations> = {
       badge: "Pelotas",
       sizeLabel: "Talla",
     },
+    tickets: {
+      navLabel: "Entradas",
+      pageTitle: "Entradas de fútbol",
+      pageSubtitle: "{n} partidos reales con entradas disponibles.",
+    },
   },
   pt: {
     brand: "Football Cult",
@@ -1262,6 +1272,11 @@ export const translations: Record<Locale, Translations> = {
       pageSubtitle: "{n} modelos reais das lojas aprovadas.",
       badge: "Bolas",
       sizeLabel: "Tamanho",
+    },
+    tickets: {
+      navLabel: "Ingressos",
+      pageTitle: "Ingressos de futebol",
+      pageSubtitle: "{n} partidas reais com ingressos disponíveis.",
     },
   },
   en: {
@@ -1697,6 +1712,11 @@ export const translations: Record<Locale, Translations> = {
       badge: "Balls",
       sizeLabel: "Size",
     },
+    tickets: {
+      navLabel: "Tickets",
+      pageTitle: "Football tickets",
+      pageSubtitle: "{n} real matches with tickets available.",
+    },
   },
   fr: {
     brand: "Football Cult",
@@ -2131,6 +2151,11 @@ export const translations: Record<Locale, Translations> = {
       badge: "Ballons",
       sizeLabel: "Taille",
     },
+    tickets: {
+      navLabel: "Billets",
+      pageTitle: "Billets de football",
+      pageSubtitle: "{n} matchs réels avec billets disponibles.",
+    },
   },
   it: {
     brand: "Football Cult",
@@ -2564,6 +2589,11 @@ export const translations: Record<Locale, Translations> = {
       pageSubtitle: "{n} modelli reali dai negozi approvati.",
       badge: "Palloni",
       sizeLabel: "Taglia",
+    },
+    tickets: {
+      navLabel: "Biglietti",
+      pageTitle: "Biglietti di calcio",
+      pageSubtitle: "{n} partite reali con biglietti disponibili.",
     },
   },
 };

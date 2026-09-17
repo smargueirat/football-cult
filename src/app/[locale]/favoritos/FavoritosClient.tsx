@@ -5,11 +5,13 @@ import { findProduct } from "@/data/products";
 import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
+import { ticketProducts } from "@/data/tickets";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import ProductCard from "@/components/ProductCard";
 import BootCard from "@/components/BootCard";
 import GearCard from "@/components/GearCard";
+import TicketCard from "@/components/TicketCard";
 
 // Un id favorito puede ser de una camiseta o de una bota -- mismo
 // comportamiento pedido explícitamente por el usuario. Se resuelve
@@ -29,6 +31,8 @@ export default function FavoritosClient() {
       if (glove) return { kind: "glove" as const, id, glove };
       const ball = ballProducts.find((b) => b.id === id);
       if (ball) return { kind: "ball" as const, id, ball };
+      const ticket = ticketProducts.find((tk) => tk.id === id);
+      if (ticket) return { kind: "ticket" as const, id, ticket };
       return null;
     })
     .filter((item): item is NonNullable<typeof item> => item !== null);
@@ -58,6 +62,7 @@ export default function FavoritosClient() {
             if (item.kind === "boot") return <BootCard key={item.id} boot={item.boot} />;
             if (item.kind === "glove") return <GearCard key={item.id} item={item.glove} basePath="guantes" />;
             if (item.kind === "ball") return <GearCard key={item.id} item={item.ball} basePath="pelotas" />;
+            if (item.kind === "ticket") return <TicketCard key={item.id} ticket={item.ticket} />;
             return <ProductCard key={item.id} product={item.product} />;
           })}
         </div>
