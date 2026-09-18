@@ -13,6 +13,7 @@ import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
+import { apparelProducts } from "@/data/apparel";
 import { ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -46,6 +47,8 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
       if (ball) return { kind: "ball" as const, id, ball };
       const ticket = ticketProducts.find((tk) => tk.id === id);
       if (ticket) return { kind: "ticket" as const, id, ticket };
+      const apparel = apparelProducts.find((a) => a.id === id);
+      if (apparel) return { kind: "apparel" as const, id, apparel };
       return null;
     })
     .filter((item): item is NonNullable<typeof item> => item !== null);
@@ -95,9 +98,9 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                 </li>
               );
             }
-            if (item.kind === "glove" || item.kind === "ball") {
-              const gearItem = item.kind === "glove" ? item.glove : item.ball;
-              const basePath = item.kind === "glove" ? "guantes" : "pelotas";
+            if (item.kind === "glove" || item.kind === "ball" || item.kind === "apparel") {
+              const gearItem = item.kind === "glove" ? item.glove : item.kind === "ball" ? item.ball : item.apparel;
+              const basePath = item.kind === "glove" ? "guantes" : item.kind === "ball" ? "pelotas" : "ropa";
               const cheapest = gearItem.offers.reduce((a, b) =>
                 a.price + a.shipping <= b.price + b.shipping ? a : b
               );

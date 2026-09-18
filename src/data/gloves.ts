@@ -14,6 +14,13 @@
 // tiene categoría confiable, filtro por título ("guantes"+"portero") más
 // su propio custom_2 de género para excluir infantil. Precio/talles/URL
 // de afiliado/imagen: 100% reales del feed, sin inventar nada.
+//
+// 2026-09-18 (reporte real del usuario, capturas de guantes repetidos):
+// Foot-Store y Sport is Good (ES y FR) son storefronts espejo del mismo
+// backend -- mine_gear.py ahora funde el mismo producto real vendido en
+// varias tiendas en UN GloveProduct con varias GloveOffer (antes cada
+// tienda era su propio producto suelto con una sola oferta). Ver
+// merge_by_model() en mine_gear.py.
 export interface GloveOffer {
   store:
     | "FootStoreES"
@@ -41,6 +48,12 @@ export interface GloveProduct {
   id: string;
   brand: string;
   model: string;
+  // Color real del feed (columna colour/color) -- vive a nivel producto,
+  // no por oferta, porque ya está implícito en la key de fusión entre
+  // tiendas (mismo color siempre, viene pegado al final de `model`).
+  // Agregado 2026-09-18 para poder filtrar por color sin parsear texto
+  // libre (pedido explícito del usuario).
+  colour: string;
   offers: GloveOffer[];
 }
 
@@ -48,9 +61,10 @@ export interface GloveProduct {
 
 const minedGloveProductsChunk1: GloveProduct[] = [
   {
-    id: "footstorees-uhlsport-guantes-de-portero-de-jugador-uhlsport-nitrofield-noir",
+    id: "uhlsport-guantes-de-portero-de-jugador-uhlsport-nitrofield-noir",
     brand: "uhlsport",
     model: "Guantes de portero de jugador Uhlsport Nitrofield - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -64,9 +78,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-19-blanc",
+    id: "joma-guantes-de-portero-joma-area-19-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Area 19 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -77,12 +92,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F4%2F0%2F400422.201_0.webp&feedId=89032&k=136bd486e878209492f0d36ca2baa84da8b34440",
         sizes: ["9", "10", "12"],
       },
+      {
+        store: "FootStoreES",
+        price: 49.94,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443426&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401711-201-white-black-6a91abab92ee5-1.webp&feedId=89032&k=30df84572bb2a952c594f4aa30ce3887d95eb8c0",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-pred-gl-mtc-fs-noir",
+    id: "adidas-guantes-de-portero-adidas-pred-gl-mtc-fs-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Pred GL MTC FS - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -96,9 +121,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-pred-sg-trn-bleu",
+    id: "adidas-guantes-de-portero-adidas-pred-sg-trn-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Pred SG TRN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -112,9 +138,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-allround-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-allround-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK ALLROUND + - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -128,9 +155,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-allround-plus-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-allround-plus-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK ALLROUND PLUS - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -144,9 +172,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-future-i-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-future-i-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK FUTURE I - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -160,9 +189,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-metro-comfort-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-metro-comfort-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Metro Comfort - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -173,13 +203,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fw%2Frw2001250_1.webp&feedId=89032&k=be0c741e0c6c2173f038a3ef17f2d0b526595e17",
         sizes: ["5", "6", "7", "8", "9", "10"],
       },
-    ],
-  },
-  {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-metro-comfort-blanc-2",
-    brand: "RWLK",
-    model: "Guantes de portero RWLK Metro Comfort - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 53.77,
@@ -192,9 +215,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-metro-overlap-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-metro-overlap-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Metro Overlap - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -208,9 +232,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-metro-titanium-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-metro-titanium-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Metro Titanium - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -224,9 +249,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-one-touch-bleu",
+    id: "rwlk-guantes-de-portero-rwlk-one-touch-bleu",
     brand: "RWLK",
     model: "Guantes de portero RWLK One Touch - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -240,9 +266,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-one-touch-bk-noir",
+    id: "rwlk-guantes-de-portero-rwlk-one-touch-bk-noir",
     brand: "RWLK",
     model: "Guantes de portero RWLK One Touch bk - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -256,9 +283,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-original-titanium-fn-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-original-titanium-fn-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Original Titanium fn - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -272,9 +300,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-original-titanium-negative-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-original-titanium-negative-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Original Titanium negative - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -288,9 +317,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-picasso-line-p-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-picasso-line-p-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Picasso Line P - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -301,13 +331,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fw%2Frw2000700.webp&feedId=89032&k=3463f78ebe40543115224ec2d71e7ec9ba9f26e4",
         sizes: ["7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-picasso-line-p-blanc-2",
-    brand: "RWLK",
-    model: "Guantes de portero RWLK Picasso Line P - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 88.16,
@@ -320,9 +343,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-picasso-line-s-n-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-picasso-line-s-n-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Picasso Line S/N - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -333,13 +357,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fw%2Frw2000600.webp&feedId=89032&k=60720e9030bc5e4b433d2eb4671f2dc59b681bc2",
         sizes: ["7", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-picasso-line-s-n-blanc-2",
-    brand: "RWLK",
-    model: "Guantes de portero RWLK Picasso Line S/N - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 88.16,
@@ -352,9 +369,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-pro-line-slim-hybrid-fit-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-pro-line-slim-hybrid-fit-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK Pro Line, Slim Hybrid Fit. - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -365,13 +383,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fw%2Frw2000250.webp&feedId=89032&k=62efd8eb5feef2bc78c74168fa3e43e9e5f755cf",
         sizes: ["7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-pro-line-slim-hybrid-fit-blanc-2",
-    brand: "RWLK",
-    model: "Guantes de portero RWLK Pro Line, Slim Hybrid Fit. - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 83.86,
@@ -384,9 +395,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-the-clyde-fn-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-the-clyde-fn-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK The Clyde FN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -400,9 +412,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-the-clyde-pl-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-the-clyde-pl-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK The Clyde PL - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -416,9 +429,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rwlk-guantes-de-portero-rwlk-the-clyde-titanium-negative-blanc",
+    id: "rwlk-guantes-de-portero-rwlk-the-clyde-titanium-negative-blanc",
     brand: "RWLK",
     model: "Guantes de portero RWLK The Clyde Titanium negative - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -432,9 +446,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-gold-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-gold-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Gold - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -448,9 +463,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-infinity-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-infinity-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Infinity - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -461,12 +477,31 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F5%2F2%2F5270730-7700_0.webp&feedId=89032&k=b75617a9eb262632b780cb5f52b22808098232d1",
         sizes: ["7.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42084752976&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5370735-7700_0.webp&feedId=89032&k=2ce60957b1f4f591286bc086bb1764de30f03bad",
+        sizes: ["7.5"],
+      },
+      {
+        store: "FootStoreES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45010084712&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F5%2F6%2F5670735-7700.webp&feedId=89032&k=77539447bc0c63b5ba66b1f85d95bd7eb28cbe31",
+        sizes: ["7.5", "8", "8.5", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-futbol-nike-grip4-rouge",
+    id: "nike-guantes-de-futbol-nike-grip4-rouge",
     brand: "Nike",
     model: "Guantes de fútbol Nike Grip4 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -480,9 +515,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-nike-goalkeeper-grip3-bleu",
+    id: "nike-guantes-nike-goalkeeper-grip3-bleu",
     brand: "Nike",
     model: "Guantes Nike Goalkeeper Grip3 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -496,9 +532,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-fusion-gris",
+    id: "reusch-guantes-de-portero-reusch-attrakt-fusion-gris",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Fusion - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -512,9 +549,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-pure-contact-fusion-bleu",
+    id: "reusch-guantes-de-portero-reusch-pure-contact-fusion-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Pure Contact Fusion - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -528,9 +566,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-para-mujer-joma-gk-pro-noir",
+    id: "joma-guantes-de-portero-para-mujer-joma-gk-pro-noir",
     brand: "Joma",
     model: "Guantes de portero para mujer Joma Gk-Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -544,9 +583,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-speed-contact-supersoft-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-speed-contact-supersoft-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Speed Contact Supersoft - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -557,12 +597,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F3%2Fa%2F3abffa67-9a62-4887-afe5-f6ce74e2d05d-productdetailsimage.webp&feedId=89032&k=f750cd1e72fac2b00d5efdba6828260284820975",
         sizes: ["4.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 26.1,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43657013458&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F3%2Fa%2F3abffa67-9a62-4887-afe5-f6ce74e2d05d-productdetailsimage.webp&feedId=89044&k=f750cd1e72fac2b00d5efdba6828260284820975",
+        sizes: ["4.5"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-pure-contact-gold-x-adaptiveflex-multicolore",
+    id: "reusch-guantes-de-portero-reusch-pure-contact-gold-x-adaptiveflex-multicolore",
     brand: "Reusch",
     model: "Guantes de portero Reusch Pure Contact Gold X AdaptiveFlex - Multicolore",
+    colour: "Multicolore",
     offers: [
       {
         store: "FootStoreES",
@@ -576,9 +626,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-rouge",
+    id: "nike-guantes-de-portero-nike-vapor-grip3-rouge",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -592,9 +643,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-competition-noir",
+    id: "adidas-guantes-de-portero-adidas-predator-competition-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Competition - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -608,9 +660,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-tiro-pro-noir",
+    id: "adidas-guantes-de-portero-adidas-tiro-pro-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Tiro Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -635,9 +688,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-gold-x-vert",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-gold-x-vert",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Gold X - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -651,9 +705,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-goalkeeper-match-bleu",
+    id: "nike-guantes-de-portero-nike-goalkeeper-match-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike Goalkeeper Match - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -673,9 +728,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-grip3-blanc",
+    id: "nike-guantes-de-portero-nike-grip3-blanc",
     brand: "Nike",
     model: "Guantes de portero Nike Grip3 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -689,9 +745,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-blanc",
+    id: "nike-guantes-de-portero-nike-vapor-grip3-blanc",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -705,9 +762,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-fusion-guardian-adaptiveflex-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-fusion-guardian-adaptiveflex-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Fusion Guardian AdaptiveFlex - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -721,9 +779,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-venomous-gold-x-noir",
+    id: "reusch-guantes-de-portero-reusch-venomous-gold-x-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Venomous Gold X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -734,12 +793,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5370956-5010_black-venom-green_1.webp&feedId=89032&k=d6d188c0531a56a66a47d95822b893e5ec698a7e",
         sizes: ["7.5", "9.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 120.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301577648&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5370956-5010_black-venom-green_1.webp&feedId=89044&k=d6d188c0531a56a66a47d95822b893e5ec698a7e",
+        sizes: ["9.5"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-noir",
+    id: "adidas-guantes-de-portero-adidas-predator-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -755,12 +824,37 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529356986&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 72.0,
+        priceMax: 90.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45304852764&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=3c50eecc90e293ac0d93a087a1accf8ffb7a64da",
+        sizes: ["8", "8.5", "9"],
+        sizePrices: [
+          { size: "8", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45304852765&a=3013769&m=65912" },
+          { size: "8.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45304852764&a=3013769&m=65912" },
+          { size: "9", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45304852763&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 72.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45306123731&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=3c50eecc90e293ac0d93a087a1accf8ffb7a64da",
+        sizes: ["8.5"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-tiro-club-noir",
+    id: "adidas-guantes-de-portero-adidas-tiro-club-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Tiro Club - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -774,9 +868,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-tiro-league-noir",
+    id: "adidas-guantes-de-portero-adidas-tiro-league-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Tiro League - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -801,9 +896,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-tiro-league-fieldplayer-noir",
+    id: "adidas-guantes-de-portero-adidas-tiro-league-fieldplayer-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Tiro League Fieldplayer - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -817,9 +913,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-grip3-gris",
+    id: "nike-guantes-de-portero-nike-grip3-gris",
     brand: "Nike",
     model: "Guantes de portero Nike Grip3 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -833,9 +930,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-gris",
+    id: "nike-guantes-de-portero-nike-match-gris",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -849,9 +947,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-duo-rouge",
+    id: "reusch-guantes-de-portero-reusch-attrakt-duo-rouge",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Duo - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -865,9 +964,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-goaliator-rouge",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-goaliator-rouge",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Fusion Goaliator - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -881,9 +981,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-dynamic-touch-tec-noir",
+    id: "reusch-guantes-de-portero-reusch-dynamic-touch-tec-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Dynamic TOUCH-TEC - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -897,9 +998,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-glueprint-blanc",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-glueprint-blanc",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X GluePrint - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -913,9 +1015,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-solo-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-solo-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Solo - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -929,9 +1032,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-solo-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-solo-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Solo - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -945,9 +1049,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-league-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-league-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator League - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -958,12 +1063,29 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ia0879_1_hardware_photography_front_center_view_white-nw0324.webp&feedId=89032&k=ff5d31a45969a8bca654da002ede51d67d3d6561",
         sizes: ["11.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 42.0,
+        priceMax: 58.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529796803&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3820_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=30e8671aad9617d7f406491f27373bc08af4d1c2",
+        sizes: ["9", "10.5", "11", "11.5"],
+        sizePrices: [
+          { size: "9", price: 58.0, url: "https://www.awin1.com/pclick.php?p=41840083974&a=3013769&m=65912" },
+          { size: "10.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529796805&a=3013769&m=65912" },
+          { size: "11", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529796802&a=3013769&m=65912" },
+          { size: "11.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529796803&a=3013769&m=65912" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-trainning-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-trainning-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Trainning - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -977,9 +1099,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-rose",
+    id: "joma-guantes-de-portero-joma-area-rose",
     brand: "Joma",
     model: "Guantes de portero Joma Area - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -998,12 +1121,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "12", price: 27.65, url: "https://www.awin1.com/pclick.php?p=44338937040&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 80.6,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443402&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401942-530-pink-6a91ae25ee35a-1.webp&feedId=89032&k=8a8c633fa6a22fc1fac40fe7e7046f9fe26b7f80",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-360-orange",
+    id: "joma-guantes-de-portero-joma-area-360-orange",
     brand: "Joma",
     model: "Guantes de portero Joma Area 360 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1017,9 +1150,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-360-noir",
+    id: "joma-guantes-de-portero-joma-area-360-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Area 360 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1039,12 +1173,31 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "12", price: 91.74, url: "https://www.awin1.com/pclick.php?p=42529441710&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 41.97,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529498535&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_400911.105_0.webp&feedId=89032&k=0064698e6a2829af1f37ed0c7b4155d1879ae484",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 43.57,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443438&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401712-117-negro-verde-fluor-6a91abb357b1c-1.webp&feedId=89032&k=cc9313232ef453045f6a55922007a2215840dc3c",
+        sizes: ["9", "10"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-multicolore",
+    id: "joma-guantes-de-portero-joma-brave-multicolore",
     brand: "Joma",
     model: "Guantes de portero Joma Brave - Multicolore",
+    colour: "Multicolore",
     offers: [
       {
         store: "FootStoreES",
@@ -1063,9 +1216,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-noir",
+    id: "joma-guantes-de-portero-joma-brave-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Brave - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1076,12 +1230,49 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401183.121_0.webp&feedId=89032&k=ffdae115fe061de2a4b52a663c10459bdbc7fe98",
         sizes: ["10"],
       },
+      {
+        store: "FootStoreES",
+        price: 53.53,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529622813&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401366.105_negro-rosa_1.webp&feedId=89032&k=86dec28d4773382694aae4937794df827ce570c2",
+        sizes: ["8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 47.16,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443458&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401947-118-black-6a91ae32486c9-1.webp&feedId=89032&k=3ba7330fdba2ae7bd2d2ed72dfa35383fca89797",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 47.16,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443464&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401947-111-black-grey-6a91ae3439324-1.webp&feedId=89032&k=6189aff9ccd1fbe65286d68167157dc2d879f7c8",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 47.16,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443474&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401947-117-negro-verde-fluor-6a91ae3647efa-1.webp&feedId=89032&k=6461fd4736d8752bb9484666f85ac2ec2fbf4480",
+        sizes: ["7", "8", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-23-vert",
+    id: "joma-guantes-de-portero-joma-calcio-23-vert",
     brand: "Joma",
     model: "Guantes de portero Joma Calcio 23 - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -1095,9 +1286,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-23-rouge",
+    id: "joma-guantes-de-portero-joma-calcio-23-rouge",
     brand: "Joma",
     model: "Guantes de portero Joma Calcio 23 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -1111,9 +1303,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-panther-bleu",
+    id: "joma-guantes-de-portero-joma-gk-panther-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma GK Panther - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1131,13 +1324,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "12", price: 55.13, url: "https://www.awin1.com/pclick.php?p=42529441719&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-panther-bleu-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma GK Panther - Bleu",
-    offers: [
       {
         store: "FootStoreES",
         price: 51.0,
@@ -1159,9 +1345,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-orange",
+    id: "joma-guantes-de-portero-joma-hunter-orange",
     brand: "Joma",
     model: "Guantes de portero Joma Hunter - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1172,12 +1359,31 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_400909.042_0.webp&feedId=89032&k=6b773715aa46bc17127dbe84e1ee2c5b4146a1c1",
         sizes: ["8"],
       },
+      {
+        store: "FootStoreES",
+        price: 24.88,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443557&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401949-809-naranja-amarillo-6a91b5c771294-1.webp&feedId=89032&k=9d0ed443abc66c9e63c2ba2227b2ec4754b8a0bb",
+        sizes: ["4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 13.32,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443566&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401708-880-orange-6a91b5cc95d00-1.webp&feedId=89032&k=4d4ecf1e5035e333c64439da2cea38ebc6dda8f2",
+        sizes: ["4", "5", "6", "7", "8", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-vert",
+    id: "joma-guantes-de-portero-joma-hunter-vert",
     brand: "Joma",
     model: "Guantes de portero Joma Hunter - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -1188,12 +1394,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_400909.417_0.webp&feedId=89032&k=fd98f714b8014d3fc94ad5a206a1e442a142366f",
         sizes: ["7", "8"],
       },
+      {
+        store: "FootStoreES",
+        price: 24.88,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44338943094&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401477.021_verde-fluor-negro_1.webp&feedId=89032&k=6c19a5e13574f2964a1c339be46c32b88072574e",
+        sizes: ["5"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-blanc",
+    id: "joma-guantes-de-portero-joma-premier-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -1207,9 +1423,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-bleu",
+    id: "joma-guantes-de-portero-joma-premier-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1228,12 +1445,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "12", price: 58.71, url: "https://www.awin1.com/pclick.php?p=44338937047&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 57.91,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443626&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401948-717-royal-6a91ae9a867a2-1.webp&feedId=89032&k=61cfea340617aef584aef331b70d43a3111378dd",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Powerline Supersoft - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1253,12 +1480,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "10", price: 40.91, url: "https://www.awin1.com/pclick.php?p=41104842471&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 41.3,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45325916361&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101130901_0.webp&feedId=89044&k=e5978db5e370a54364729ea277b17ebc0f00939e",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-hn-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-hn-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Powerline Supersoft HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1272,9 +1509,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-resist-orange",
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-orange",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Resist - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1294,9 +1532,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-resist-flex-frame-orange",
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-flex-frame-orange",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Resist Flex Frame - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1316,9 +1555,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-gold-rouge",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-gold-rouge",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Gold - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -1332,25 +1572,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-infinity-noir-2",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Freegel Infinity - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 60.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42084752976&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5370735-7700_0.webp&feedId=89032&k=2ce60957b1f4f591286bc086bb1764de30f03bad",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-grip3-rouge",
+    id: "nike-guantes-de-portero-nike-grip3-rouge",
     brand: "Nike",
     model: "Guantes de portero Nike Grip3 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -1369,9 +1594,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-rouge",
+    id: "nike-guantes-de-portero-nike-match-rouge",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -1389,12 +1615,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "9", price: 14.0, url: "https://www.awin1.com/pclick.php?p=36485378013&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 29.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44507724442&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0257-635-phslh001.webp&feedId=89032&k=01f029bbb23ea5b6737182c5980fc6f3a868fa92",
+        sizes: ["7", "8", "9"],
+      },
     ],
   },
   {
-    id: "footstorees-hummel-guantes-de-portero-hummel-allround-grip-blanc",
+    id: "hummel-guantes-de-portero-hummel-allround-grip-blanc",
     brand: "Hummel",
     model: "Guantes de portero Hummel Allround Grip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -1413,12 +1649,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 17.51, url: "https://www.awin1.com/pclick.php?p=37580380319&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 17.82,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301635286&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_224976-9031_0.webp&feedId=89044&k=88abdcf1ea25c5707ba6c5d0765c0e7715fe9f8e",
+        sizes: ["11"],
+      },
     ],
   },
   {
-    id: "footstorees-hummel-guantes-de-portero-hummel-core-grip-blanc",
+    id: "hummel-guantes-de-portero-hummel-core-grip-blanc",
     brand: "Hummel",
     model: "Guantes de portero Hummel Core Grip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -1437,28 +1683,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 10.16, url: "https://www.awin1.com/pclick.php?p=37580380323&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-area-360-noir-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Area 360 - Noir",
-    offers: [
       {
-        store: "FootStoreES",
-        price: 41.97,
+        store: "SportIsGoodES",
+        price: 10.47,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529498535&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_400911.105_0.webp&feedId=89032&k=0064698e6a2829af1f37ed0c7b4155d1879ae484",
-        sizes: ["7", "8", "9", "10", "11", "12"],
+        url: "https://www.awin1.com/pclick.php?p=43301635287&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_224975-9210_0.webp&feedId=89044&k=be85ae710f1356011e65ef8485cb443d3fb45a20",
+        sizes: ["11"],
       },
     ],
   },
   {
-    id: "footstorees-softee-par-de-guantes-de-portero-softee-america-jaune",
+    id: "softee-par-de-guantes-de-portero-softee-america-jaune",
     brand: "Softee",
     model: "Par de guantes de portero Softee América - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -1472,9 +1712,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-softee-guantes-de-portero-softee-america-jaune",
+    id: "softee-guantes-de-portero-softee-america-jaune",
     brand: "Softee",
     model: "Guantes de portero Softee América - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -1485,13 +1726,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fo%2Fsoftee_35052.019.11_amarillo-fluor-jaune_4.webp&feedId=89032&k=2e64d2a16c808b09d6640eb1261f4eb16eaf8ccf",
         sizes: ["8"],
       },
-    ],
-  },
-  {
-    id: "footstorees-softee-guantes-de-portero-softee-america-jaune-2",
-    brand: "Softee",
-    model: "Guantes de portero Softee América - Jaune",
-    offers: [
       {
         store: "FootStoreES",
         price: 12.25,
@@ -1504,9 +1738,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-softee-guantes-de-portero-softee-europa-blanc",
+    id: "softee-guantes-de-portero-softee-europa-blanc",
     brand: "Softee",
     model: "Guantes de portero Softee Europa - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -1517,13 +1752,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_1.webp&feedId=89032&k=8fbaf012a7bce07395e57710684c4b3cfe946754",
         sizes: ["7"],
       },
-    ],
-  },
-  {
-    id: "footstorees-softee-guantes-de-portero-softee-europa-blanc-2",
-    brand: "Softee",
-    model: "Guantes de portero Softee Europa - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 8.61,
@@ -1533,13 +1761,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.webp&feedId=89032&k=39245ca842adcab9485875a10d3d2e0fb2b122a3",
         sizes: ["8"],
       },
-    ],
-  },
-  {
-    id: "footstorees-softee-guantes-de-portero-softee-europa-blanc-3",
-    brand: "Softee",
-    model: "Guantes de portero Softee Europa - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 12.25,
@@ -1549,12 +1770,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_1.webp&feedId=89032&k=8fbaf012a7bce07395e57710684c4b3cfe946754",
         sizes: ["9"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 8.92,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301641709&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.webp&feedId=89044&k=39245ca842adcab9485875a10d3d2e0fb2b122a3",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-aquasoft-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Aquasoft - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1572,12 +1803,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 61.0, url: "https://www.awin1.com/pclick.php?p=42529517141&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 45.17,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41716515736&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134101_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=a9fad936e4a4c6a08ef9d160329c460f832bca96",
+        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Aquasoft HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1588,12 +1829,31 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101131401_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=418bc775522c76f9ad1ff9874765f11546ba4086",
         sizes: ["7.5", "8"],
       },
+      {
+        store: "FootStoreES",
+        price: 49.95,
+        priceMax: 82.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41554274491&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=6707a1a59c3f9ee98698928377d3178d54314394",
+        sizes: ["7.5", "8", "8.5", "9", "9.5", "10.5"],
+        sizePrices: [
+          { size: "7.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274491&a=3013769&m=65912" },
+          { size: "8", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274492&a=3013769&m=65912" },
+          { size: "8.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274493&a=3013769&m=65912" },
+          { size: "9", price: 82.0, url: "https://www.awin1.com/pclick.php?p=41554274494&a=3013769&m=65912" },
+          { size: "9.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274495&a=3013769&m=65912" },
+          { size: "10.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274497&a=3013769&m=65912" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-noir",
+    id: "nike-guantes-de-portero-nike-match-noir",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1609,12 +1869,31 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "9", price: 17.0, url: "https://www.awin1.com/pclick.php?p=36501568771&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 16.8,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38047250215&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fj4862-014-phsfz001.webp&feedId=89032&k=701abe276c7d6cefceed42fa012bf1e1897fdf95",
+        sizes: ["10", "11"],
+      },
+      {
+        store: "FootStoreES",
+        price: 27.68,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43745910849&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0257-010_black-white-white_1.webp&feedId=89032&k=7c0625ec9bdec922960d7a33209fe6982cad120d",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-noir",
+    id: "nike-guantes-de-portero-nike-vapor-grip3-noir",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1630,12 +1909,46 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "8.5", price: 66.11, url: "https://www.awin1.com/pclick.php?p=36490404578&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 89.62,
+        priceMax: 99.01,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd5766-011-phslh001-ss25.webp&feedId=89032&k=53f7095ebd2fd6ccd1eee7d3d7472de2e81aa6de",
+        sizes: ["8", "8.5", "9"],
+        sizePrices: [
+          { size: "8", price: 99.01, url: "https://www.awin1.com/pclick.php?p=37146361028&a=3013769&m=65912" },
+          { size: "8.5", price: 89.62, url: "https://www.awin1.com/pclick.php?p=37146361031&a=3013769&m=65912" },
+          { size: "9", price: 89.62, url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "FootStoreES",
+        price: 67.22,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37146361032&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fb2999-011-phslh001-ss25.webp&feedId=89032&k=fa1083cc5c09a3f01d14eef33708211064783856",
+        sizes: ["8", "8.5", "9"],
+      },
+      {
+        store: "FootStoreES",
+        price: 119.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44472583986&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fb2999-013-vpsrh001.webp&feedId=89032&k=496ac0f8d5dd9df4f34f30ccff13ddf6828cd8e8",
+        sizes: ["9"],
+      },
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-de-partido-nike-noir",
+    id: "nike-guantes-de-portero-de-partido-nike-noir",
     brand: "Nike",
     model: "Guantes de portero de partido Nike - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1657,9 +1970,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-com-noir",
+    id: "adidas-guantes-de-portero-adidas-predator-com-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Com - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1679,9 +1993,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-trn-noir",
+    id: "adidas-guantes-de-portero-adidas-predator-trn-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator TRN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1695,9 +2010,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-trn-jaune",
+    id: "adidas-guantes-de-portero-adidas-predator-trn-jaune",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator TRN - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -1716,12 +2032,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "10", price: 18.75, url: "https://www.awin1.com/pclick.php?p=41332002573&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 18.75,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301662044&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq4026_6_hardware_on_model_front_view_white.webp&feedId=89044&k=5cb5265cdbbaced23bd8371e61dcb60812c5a66c",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-as-bleu",
+    id: "rinat-guantes-de-portero-rinat-nkam-as-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam AS - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1735,9 +2061,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-as-jaune",
+    id: "rinat-guantes-de-portero-rinat-nkam-as-jaune",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam AS - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -1751,9 +2078,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-semi-bleu",
+    id: "rinat-guantes-de-portero-rinat-nkam-semi-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam Semi - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1767,9 +2095,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-semi-jaune",
+    id: "rinat-guantes-de-portero-rinat-nkam-semi-jaune",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam Semi - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -1783,9 +2112,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-goaliator-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-goaliator-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Fusion Goaliator - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1799,9 +2129,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-silver-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-silver-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Silver - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1815,9 +2146,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-silver-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-silver-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Silver - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1831,9 +2163,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-fusion-strapless-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-fusion-strapless-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Fusion Strapless - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1847,9 +2180,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-infinity-finger-support-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-infinity-finger-support-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Infinity Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1863,9 +2197,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Solid - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1876,12 +2211,40 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5470515-4410_0.webp&feedId=89032&k=c709867752813db21661413cc4b2f3145d274ce4",
         sizes: ["10"],
       },
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44033377400&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.webp&feedId=89032&k=6efe071e4f696f2f990da22c41324e068b966b19",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43468487711&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-4126-sharpblu-wht-shock-orng-1.webp&feedId=89032&k=36b7d70e1ff1b6863ad9482656c506fcf08c7098",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44033931561&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.webp&feedId=89044&k=6efe071e4f696f2f990da22c41324e068b966b19",
+        sizes: ["8", "9", "9.5", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-duo-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-duo-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Duo - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1895,9 +2258,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-duo-evolution-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-duo-evolution-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Duo Evolution - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1911,9 +2275,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-nc-finger-support-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-nc-finger-support-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold NC Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -1927,9 +2292,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-evolution-glueprint-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-evolution-glueprint-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X Evolution GluePrint - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1943,9 +2309,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-freegel-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-freegel-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X Freegel - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -1959,9 +2326,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-glueprint-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-glueprint-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X GluePrint - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -1975,9 +2343,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-erima-guantes-de-portero-erima-flex-ray-protect-gris",
+    id: "erima-guantes-de-portero-erima-flex-ray-protect-gris",
     brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Protect - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -1991,9 +2360,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-erima-guantes-de-portero-erima-flex-ray-robusto-gris",
+    id: "erima-guantes-de-portero-erima-flex-ray-robusto-gris",
     brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Robusto - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -2007,9 +2377,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-gris",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-gris",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -2023,9 +2394,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-rouge",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-rouge",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -2039,9 +2411,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2055,9 +2428,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-fp-gris",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-gris",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 (FP) - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -2071,9 +2445,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-fp-rouge",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-rouge",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 (FP) - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -2087,9 +2462,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-fp-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2103,9 +2479,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-classic-1-0-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Classic 1.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2119,9 +2496,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-classic-1-0-fp-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-fp-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Classic 1.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2135,9 +2513,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-grip3-noir",
+    id: "nike-guantes-de-portero-nike-grip3-noir",
     brand: "Nike",
     model: "Guantes de portero Nike Grip3 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2158,9 +2537,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-noir",
+    id: "nike-guantes-de-portero-nike-noir",
     brand: "Nike",
     model: "Guantes de portero Nike - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2174,47 +2554,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-noir-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 89.62,
-        priceMax: 99.01,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd5766-011-phslh001-ss25.webp&feedId=89032&k=53f7095ebd2fd6ccd1eee7d3d7472de2e81aa6de",
-        sizes: ["8", "8.5", "9"],
-        sizePrices: [
-          { size: "8", price: 99.01, url: "https://www.awin1.com/pclick.php?p=37146361028&a=3013769&m=65912" },
-          { size: "8.5", price: 89.62, url: "https://www.awin1.com/pclick.php?p=37146361031&a=3013769&m=65912" },
-          { size: "9", price: 89.62, url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-noir-3",
-    brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 67.22,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37146361032&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fb2999-011-phslh001-ss25.webp&feedId=89032&k=fa1083cc5c09a3f01d14eef33708211064783856",
-        sizes: ["8", "8.5", "9"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-absolutgrip-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-absolutgrip-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Absolutgrip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2225,12 +2568,49 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101135101_0.webp&feedId=89032&k=62f068b11a38d94ae193f4356c0c9e1ef7a34681",
         sizes: ["7.5", "8", "8.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 45.45,
+        priceMax: 48.12,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp&feedId=89032&k=165d4ca955771e14ca01ab520996c294668996df",
+        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
+        sizePrices: [
+          { size: "7", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912" },
+          { size: "8", price: 47.42, url: "https://www.awin1.com/pclick.php?p=45047894156&a=3013769&m=65912" },
+          { size: "8.5", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894157&a=3013769&m=65912" },
+          { size: "9", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894158&a=3013769&m=65912" },
+          { size: "9.5", price: 48.12, url: "https://www.awin1.com/pclick.php?p=45242386043&a=3013769&m=65912" },
+          { size: "10", price: 48.12, url: "https://www.awin1.com/pclick.php?p=45047894159&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 45.82,
+        priceMax: 48.5,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45048792407&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp&feedId=89044&k=165d4ca955771e14ca01ab520996c294668996df",
+        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
+        sizePrices: [
+          { size: "7", price: 45.82, url: "https://www.awin1.com/pclick.php?p=45048792407&a=3013769&m=65906" },
+          { size: "8", price: 47.81, url: "https://www.awin1.com/pclick.php?p=45048792408&a=3013769&m=65906" },
+          { size: "8.5", price: 45.82, url: "https://www.awin1.com/pclick.php?p=45048792409&a=3013769&m=65906" },
+          { size: "9", price: 45.82, url: "https://www.awin1.com/pclick.php?p=45048792410&a=3013769&m=65906" },
+          { size: "9.5", price: 48.5, url: "https://www.awin1.com/pclick.php?p=45358731840&a=3013769&m=65906" },
+          { size: "10", price: 48.5, url: "https://www.awin1.com/pclick.php?p=45048792411&a=3013769&m=65906" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-comfort-absolutgrip-hn-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-comfort-absolutgrip-hn-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Comfort Absolutgrip HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2241,12 +2621,48 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134901_0.webp&feedId=89032&k=baa7d7834a7c0dbc80ea1eadffd7c3094813fa77",
         sizes: ["7.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 48.58,
+        priceMax: 53.72,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44536077544&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101143001-black-69babd260436a-1.webp&feedId=89032&k=27e3379ab902cf10e4117e700d1cd09c008bb1a9",
+        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
+        sizePrices: [
+          { size: "7", price: 48.58, url: "https://www.awin1.com/pclick.php?p=44536077544&a=3013769&m=65912" },
+          { size: "7.5", price: 53.72, url: "https://www.awin1.com/pclick.php?p=45356587825&a=3013769&m=65912" },
+          { size: "8", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45018628241&a=3013769&m=65912" },
+          { size: "8.5", price: 52.93, url: "https://www.awin1.com/pclick.php?p=44755565202&a=3013769&m=65912" },
+          { size: "9", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45018628242&a=3013769&m=65912" },
+          { size: "9.5", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45356587826&a=3013769&m=65912" },
+          { size: "10", price: 53.72, url: "https://www.awin1.com/pclick.php?p=45018628243&a=3013769&m=65912" },
+          { size: "10.5", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45371031215&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 48.95,
+        priceMax: 55.79,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45012348465&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101143001-black-69babd260436a-1.webp&feedId=89044&k=27e3379ab902cf10e4117e700d1cd09c008bb1a9",
+        sizes: ["7", "7.5", "10"],
+        sizePrices: [
+          { size: "7", price: 48.95, url: "https://www.awin1.com/pclick.php?p=45012348465&a=3013769&m=65906" },
+          { size: "7.5", price: 55.79, url: "https://www.awin1.com/pclick.php?p=45586647084&a=3013769&m=65906" },
+          { size: "10", price: 55.79, url: "https://www.awin1.com/pclick.php?p=45942270967&a=3013769&m=65906" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-supersoft-hn-flex-frame-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-supersoft-hn-flex-frame-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Supersoft HN Flex Frame - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2260,9 +2676,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-absolutgrip-flex-frame-jaune",
+    id: "uhlsport-guantes-de-portero-uhlsport-absolutgrip-flex-frame-jaune",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Absolutgrip Flex Frame - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -2276,9 +2693,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-advanced-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-advanced-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Advanced - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2289,12 +2707,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101135501_0.webp&feedId=89032&k=b66e5a361ab977d6e717be85d3c0c4d7101e62d3",
         sizes: ["10.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 16.52,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529877444&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101136901_blanc-noir-vert-fluo_1.webp&feedId=89032&k=5b94234206bb03670fc5603b9dbf6628e9f57aa4",
+        sizes: ["7.5", "8", "9", "9.5", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-hn-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-hn-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2308,9 +2736,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-supergrip-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-supergrip-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Supergrip - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2324,9 +2753,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-24-rouge",
+    id: "joma-guantes-de-portero-joma-area-24-rouge",
     brand: "Joma",
     model: "Guantes de portero Joma Area 24 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -2340,9 +2770,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-24-bleu",
+    id: "joma-guantes-de-portero-joma-area-24-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma Area 24 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2356,25 +2787,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-noir-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 53.53,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529622813&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401366.105_negro-rosa_1.webp&feedId=89032&k=86dec28d4773382694aae4937794df827ce570c2",
-        sizes: ["8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-bleu",
+    id: "joma-guantes-de-portero-joma-brave-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma Brave - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2385,12 +2801,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401366.721_royal-amarillo-fluor_1.webp&feedId=89032&k=7e531682847e2997d41078252257223520b3e913",
         sizes: ["9", "10", "11"],
       },
+      {
+        store: "FootStoreES",
+        price: 27.65,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443485&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401709-700-royal-6a91ae3a26efa-1.webp&feedId=89032&k=7711fa046d48b05acc3ffac77ed5a83e03ac32a3",
+        sizes: ["8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-pro-blanc",
+    id: "joma-guantes-de-portero-joma-gk-pro-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Gk- Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2404,9 +2830,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-pro-noir",
+    id: "joma-guantes-de-portero-joma-gk-pro-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Gk- Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2420,25 +2847,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-vert-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Vert",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 24.88,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338943094&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401477.021_verde-fluor-negro_1.webp&feedId=89032&k=6c19a5e13574f2964a1c339be46c32b88072574e",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-orange",
+    id: "joma-guantes-de-portero-joma-panther-orange",
     brand: "Joma",
     model: "Guantes de portero Joma Panther - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -2452,9 +2864,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-noir",
+    id: "joma-guantes-de-portero-joma-panther-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Panther - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2465,12 +2878,40 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401361.108_negro-naranja_1.webp&feedId=89032&k=f5535f2b514fe59d41f2cbd89f3088e91767cd43",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
+      {
+        store: "FootStoreES",
+        price: 69.45,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443572&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401946-116-black-6a91ae6aa4f28-1.webp&feedId=89032&k=cc6a92d705b809b0de6a33ef38038d353959577f",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 69.45,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443578&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401946-114-black-violet-6a91ae7295f18-1.webp&feedId=89032&k=060d4fd2707a9ac7dcb84f2d49136b65fabf1393",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreES",
+        price: 69.45,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443584&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401946-117-negro-verde-fluor-6a91ae7d1b3c3-1.webp&feedId=89032&k=25975927f8d95faf6b9bdcc50c3caae07e24e900",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-noir",
+    id: "joma-guantes-de-portero-joma-premier-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2490,13 +2931,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "12", price: 57.91, url: "https://www.awin1.com/pclick.php?p=44338943107&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-noir-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Premier - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 57.91,
@@ -2509,9 +2943,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-classic-1-0-noir",
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-noir",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Classic 1.0 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2525,41 +2960,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-noir-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike Match - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.8,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38047250215&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fj4862-014-phsfz001.webp&feedId=89032&k=701abe276c7d6cefceed42fa012bf1e1897fdf95",
-        sizes: ["10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-noir-4",
-    brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 119.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44472583986&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fb2999-013-vpsrh001.webp&feedId=89032&k=496ac0f8d5dd9df4f34f30ccff13ddf6828cd8e8",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-adidas-copa-blanc",
+    id: "adidas-guantes-adidas-copa-blanc",
     brand: "Adidas",
     model: "Guantes adidas COPA - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2573,9 +2977,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-de-entrenamiento-adidas-predator-bleu",
+    id: "adidas-guantes-de-portero-de-entrenamiento-adidas-predator-bleu",
     brand: "Adidas",
     model: "Guantes de portero de entrenamiento adidas Predator - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2589,9 +2994,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-principiantes-adidas-predator-pro-rose",
+    id: "adidas-guantes-de-portero-principiantes-adidas-predator-pro-rose",
     brand: "Adidas",
     model: "Guantes de portero principiantes adidas Predator Pro - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -2605,9 +3011,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-absolutgrip-hn-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-absolutgrip-hn-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Absolutgrip HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2621,9 +3028,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-supergrip-finger-surround-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-supergrip-finger-surround-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Supergrip+ Finger Surround - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2637,9 +3045,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-supersoft-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-supersoft-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Supersoft - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2653,9 +3062,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-supersoft-hn-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-supersoft-hn-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Supersoft HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -2669,9 +3079,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-resist-orange-2",
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-orange-2",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Resist+ - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -2694,9 +3105,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-negative-contact-duo-blanc",
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-negative-contact-duo-blanc",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Pro Negative Contact Duo - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2710,9 +3122,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-roll-finger-giga-noir",
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-roll-finger-giga-noir",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Pro Roll Finger Giga - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2726,9 +3139,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-noir",
+    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-noir",
     brand: "Precision",
     model: "Guantes de portero con protección para los dedos Precision Fusion X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2739,13 +3153,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.webp&feedId=89032&k=cbf2c75ffa0035e101bbb497224d17d45eb657ed",
         sizes: ["11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-noir-2",
-    brand: "Precision",
-    model: "Guantes de portero con protección para los dedos Precision Fusion X - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 22.71,
@@ -2755,13 +3162,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.webp&feedId=89032&k=cbf2c75ffa0035e101bbb497224d17d45eb657ed",
         sizes: ["10"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-noir-3",
-    brand: "Precision",
-    model: "Guantes de portero con protección para los dedos Precision Fusion X - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 22.71,
@@ -2771,13 +3171,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.webp&feedId=89032&k=cbf2c75ffa0035e101bbb497224d17d45eb657ed",
         sizes: ["8"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-noir-4",
-    brand: "Precision",
-    model: "Guantes de portero con protección para los dedos Precision Fusion X - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 22.71,
@@ -2790,9 +3183,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-jaune",
+    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-jaune",
     brand: "Precision",
     model: "Guantes de portero de corte plano Precision Fusion X Essential - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -2803,13 +3197,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.webp&feedId=89032&k=621d79e7e98e333f47add6f7bb7bb18c4e7a3471",
         sizes: ["11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-jaune-2",
-    brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Jaune",
-    offers: [
       {
         store: "FootStoreES",
         price: 16.0,
@@ -2819,13 +3206,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.webp&feedId=89032&k=621d79e7e98e333f47add6f7bb7bb18c4e7a3471",
         sizes: ["8"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-jaune-3",
-    brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Jaune",
-    offers: [
       {
         store: "FootStoreES",
         price: 16.0,
@@ -2835,13 +3215,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.webp&feedId=89032&k=621d79e7e98e333f47add6f7bb7bb18c4e7a3471",
         sizes: ["9"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-jaune-4",
-    brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Jaune",
-    offers: [
       {
         store: "FootStoreES",
         price: 16.0,
@@ -2854,9 +3227,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-de-cuarzo-precision-fusion-x-pro-surround-noir",
+    id: "precision-guantes-de-portero-de-cuarzo-precision-fusion-x-pro-surround-noir",
     brand: "Precision",
     model: "Guantes de portero de cuarzo Precision Fusion X Pro Surround - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2877,9 +3251,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-noir",
+    id: "precision-guantes-de-portero-precision-fusion-x-noir",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2893,9 +3268,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-negative-replica-blanc",
+    id: "precision-guantes-de-portero-precision-fusion-x-negative-replica-blanc",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Negative Replica - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2909,9 +3285,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-hybrid-giga-blanc",
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-hybrid-giga-blanc",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Pro Hybrid Giga - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2931,12 +3308,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 65.97, url: "https://www.awin1.com/pclick.php?p=38584955940&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 50.01,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301730022&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg16306_white-classic-black_1.webp&feedId=89044&k=188277c6d63792c11db38e52e7f4b0bdb3c4a2a2",
+        sizes: ["9.5"],
+      },
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-noir",
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-noir",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Pro Lite Giga - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -2950,9 +3337,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanc",
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanc",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -2963,13 +3351,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.webp&feedId=89032&k=d488ac640facf2b35505e2c0231b6b9100fe30af",
         sizes: ["10.5"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanc-2",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 42.53,
@@ -2979,13 +3360,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.webp&feedId=89032&k=d488ac640facf2b35505e2c0231b6b9100fe30af",
         sizes: ["9.5"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanc-3",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 42.53,
@@ -2995,13 +3369,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.webp&feedId=89032&k=d488ac640facf2b35505e2c0231b6b9100fe30af",
         sizes: ["10"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanc-4",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 42.53,
@@ -3011,13 +3378,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.webp&feedId=89032&k=d488ac640facf2b35505e2c0231b6b9100fe30af",
         sizes: ["11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanc-5",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 42.53,
@@ -3030,9 +3390,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-bleu",
+    id: "nike-guantes-de-portero-nike-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3051,13 +3412,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 16.3, url: "https://www.awin1.com/pclick.php?p=38388346114&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-bleu-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike - Bleu",
-    offers: [
       {
         store: "FootStoreES",
         price: 64.0,
@@ -3070,9 +3424,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-grip3-bleu",
+    id: "nike-guantes-de-portero-nike-grip3-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike Grip3 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3083,12 +3438,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fb2998-420-phslh001.webp&feedId=89032&k=89ae49633dc3a6c19824a455a893dee11563048e",
         sizes: ["8", "9", "11"],
       },
+      {
+        store: "FootStoreES",
+        price: 47.68,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43654228225&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0256-458_00.webp&feedId=89032&k=074f510918779474b7bdfd680c6cbcb09d48a1f9",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-select-guantes-de-portero-select-34-allround-blanc",
+    id: "select-guantes-de-portero-select-34-allround-blanc",
     brand: "Select",
     model: "Guantes de portero Select 34 Allround - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3102,9 +3467,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-select-guantes-de-portero-select-55-extra-fg-noir",
+    id: "select-guantes-de-portero-select-55-extra-fg-noir",
     brand: "Select",
     model: "Guantes de portero Select 55 Extra FG - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3118,9 +3484,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-select-guantes-de-portero-select-77-super-grip-blanc",
+    id: "select-guantes-de-portero-select-77-super-grip-blanc",
     brand: "Select",
     model: "Guantes de portero Select 77 Super Grip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3134,9 +3501,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-select-guantes-de-portero-select-99-blanc",
+    id: "select-guantes-de-portero-select-99-blanc",
     brand: "Select",
     model: "Guantes de portero Select 99 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3149,13 +3517,11 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-pure-contact-gold-bleu",
+    id: "reusch-guantes-de-portero-reusch-pure-contact-gold-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Pure Contact Gold - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3166,12 +3532,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F5%2F4%2F5470100-4848.webp&feedId=89032&k=4e3c276796f10aecd4f02c0bf9935cd6e5f67cf5",
         sizes: ["8"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 89.95,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43657014805&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F5%2F4%2F5470100-4848.webp&feedId=89044&k=4e3c276796f10aecd4f02c0bf9935cd6e5f67cf5",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-bleu",
+    id: "nike-guantes-de-portero-nike-vapor-grip3-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3182,12 +3558,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fb2999-420-phsfz001-nw112724.webp&feedId=89032&k=b72af826d1d533a3b35b98a8f98c77856066fff9",
         sizes: ["9"],
       },
+      {
+        store: "FootStoreES",
+        price: 119.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43810861244&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hq0304-458-racer-blue-black-pink-blast-1.webp&feedId=89032&k=e4472037b92bbeb269c78933c7146f21a5065091",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-aqua-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-aqua-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Aqua - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3201,9 +3587,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-aqua-evolution-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-aqua-evolution-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Aqua Evolution - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3217,9 +3604,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-gold-x-evolution-blanc",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-gold-x-evolution-blanc",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Gold X Evolution - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3233,9 +3621,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-re-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-re-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt RE - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3249,9 +3638,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-blanc",
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-blanc",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Solid - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3265,9 +3655,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-pure-contact-gold-x-glueprint-strapless-blanc",
+    id: "reusch-guantes-de-portero-reusch-pure-contact-gold-x-glueprint-strapless-blanc",
     brand: "Reusch",
     model: "Guantes de portero Reusch Pure Contact Gold X GluePrint Strapless - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3281,9 +3672,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-pure-contact-silver-bleu",
+    id: "reusch-guantes-de-portero-reusch-pure-contact-silver-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Pure Contact Silver - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3297,9 +3689,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-noir",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-noir",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3313,9 +3706,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-noir",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-noir",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3329,9 +3723,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Solid - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3342,12 +3737,58 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-7752_black-safety-yellow_1.webp&feedId=89032&k=3c94b45b32493937d712e66a811e87dcf527645e",
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43413518613&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-2290_black_1.webp&feedId=89032&k=820976b05970a790b07fef03653d5f38635c4edb",
+        sizes: ["7.5", "8.5", "9", "9.5", "10", "11"],
+      },
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45010072985&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-4467_noir-bleu_1.webp&feedId=89032&k=d58636efb1c951bd09825ed581674ed360f0e816",
+        sizes: ["8.5", "9", "9.5", "10"],
+      },
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43573623417&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-7090-blck-aquablu-shock-orng-1.webp&feedId=89032&k=33e9fbb8734959bce06d92ac94a504eaa78ed1de",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301758481&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-7752_black-safety-yellow_1.webp&feedId=89044&k=3c94b45b32493937d712e66a811e87dcf527645e",
+        sizes: ["7.5", "8"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43574015617&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-7090-blck-aquablu-shock-orng-1.webp&feedId=89044&k=33e9fbb8734959bce06d92ac94a504eaa78ed1de",
+        sizes: ["8.5", "9.5", "10.5"],
+      },
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-jaune",
+    id: "nike-guantes-de-portero-nike-vapor-grip3-jaune",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -3361,9 +3802,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-academy-noir",
+    id: "nike-guantes-de-portero-nike-academy-noir",
     brand: "Nike",
     model: "Guantes de portero Nike Academy - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3374,13 +3816,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-010_black-black-black_1.webp&feedId=89032&k=304c05b0d6c798f100323837f2efaef82a949ace",
         sizes: ["S", "L", "M"],
       },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-academy-noir-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 17.93,
@@ -3389,7 +3824,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-011-phsfz001-nw110824.webp&feedId=89032&k=a8a03ee6e23ec1fdf9aba5af1ee4b5648574fa62",
-        sizes: ["S", "L", "M", "XL"],
+        sizes: ["XL", "S", "L", "M"],
         sizePrices: [
           { size: "S", price: 20.0, url: "https://www.awin1.com/pclick.php?p=39656024983&a=3013769&m=65912" },
           { size: "L", price: 17.93, url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912" },
@@ -3397,29 +3832,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "M", price: 17.93, url: "https://www.awin1.com/pclick.php?p=39656024986&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-match-noir-3",
-    brand: "Nike",
-    model: "Guantes de portero Nike Match - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 27.68,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43745910849&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0257-010_black-white-white_1.webp&feedId=89032&k=7c0625ec9bdec922960d7a33209fe6982cad120d",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-academy-noir-3",
-    brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 15.64,
@@ -3429,12 +3841,31 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-013-phslh001-ss25.webp&feedId=89032&k=4f0dbc46812eee38af8f5aa524de4a5329cfa30a",
         sizes: ["S", "L", "M"],
       },
+      {
+        store: "FootStoreES",
+        price: 25.35,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45348248650&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp&feedId=89032&k=3ee8cde8ebcde003d05179b7ffaf3ebc21c6f149",
+        sizes: ["XL", "S", "L", "M"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.35,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45348248654&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.webp&feedId=89032&k=97ee0df16825cda2ecfc1a561935ed8c9bdf0957",
+        sizes: ["XL", "S", "L", "M"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-starter-soft-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-starter-soft-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Starter Soft - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3448,9 +3879,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-starter-resist-orange",
+    id: "uhlsport-guantes-de-portero-uhlsport-starter-resist-orange",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Starter Resist+ - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -3469,41 +3901,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-noir-2",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43413518613&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-2290_black_1.webp&feedId=89032&k=820976b05970a790b07fef03653d5f38635c4edb",
-        sizes: ["7.5", "8.5", "9", "9.5", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-noir-3",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45010072985&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-4467_noir-bleu_1.webp&feedId=89032&k=d58636efb1c951bd09825ed581674ed360f0e816",
-        sizes: ["8.5", "9", "9.5", "10"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-bleu",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-bleu",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3517,9 +3918,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-givova-guantes-de-portero-givova-stop-orange",
+    id: "givova-guantes-de-portero-givova-stop-orange",
     brand: "Givova",
     model: "Guantes de portero Givova Stop - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -3538,9 +3940,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-givova-guantes-de-portero-givova-stop-vert",
+    id: "givova-guantes-de-portero-givova-stop-vert",
     brand: "Givova",
     model: "Guantes de portero Givova Stop - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -3554,9 +3957,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-aquagrip-hn-uhlsport-bleu",
+    id: "uhlsport-guantes-de-portero-aquagrip-hn-uhlsport-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Aquagrip HN Uhlsport - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3570,9 +3974,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-classic-1-0-fp-noir",
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-fp-noir",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Classic 1.0 (FP) - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3586,9 +3991,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3602,9 +4008,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3618,50 +4025,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-aquasoft-bleu-2",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Aquasoft - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.17,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41716515736&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134101_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=a9fad936e4a4c6a08ef9d160329c460f832bca96",
-        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-bleu-2",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Aquasoft HN - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.95,
-        priceMax: 82.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41554274491&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=6707a1a59c3f9ee98698928377d3178d54314394",
-        sizes: ["7.5", "8", "8.5", "9", "9.5", "10.5"],
-        sizePrices: [
-          { size: "7.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274491&a=3013769&m=65912" },
-          { size: "8", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274492&a=3013769&m=65912" },
-          { size: "8.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274493&a=3013769&m=65912" },
-          { size: "9", price: 82.0, url: "https://www.awin1.com/pclick.php?p=41554274494&a=3013769&m=65912" },
-          { size: "9.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274495&a=3013769&m=65912" },
-          { size: "10.5", price: 49.95, url: "https://www.awin1.com/pclick.php?p=41554274497&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-soft-flex-frame-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-soft-flex-frame-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Soft Flex Frame - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3675,9 +4042,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-prediction-soft-pro-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-prediction-soft-pro-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Prediction Soft Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3691,9 +4059,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-orange",
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-orange",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -3714,9 +4083,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-nemesis-prime-bleu",
+    id: "rinat-guantes-de-portero-rinat-aries-nemesis-prime-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Némesis Prime - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3730,9 +4100,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-nemesis-prime-vert",
+    id: "rinat-guantes-de-portero-rinat-aries-nemesis-prime-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Némesis Prime - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -3745,10 +4116,14 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-nemesis-prime-jaune",
+    id: "rinat-guantes-de-portero-rinat-aries-nemesis-prime-jaune",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Némesis Prime - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -3762,9 +4137,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-dominius-as-vert",
+    id: "rinat-guantes-de-portero-rinat-dominius-as-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Dominius As - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -3778,9 +4154,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-dominius-prime-vert",
+    id: "rinat-guantes-de-portero-rinat-dominius-prime-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Dominius Prime - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -3794,9 +4171,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-dominius-prime-blanc",
+    id: "rinat-guantes-de-portero-rinat-dominius-prime-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Dominius Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3810,9 +4188,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-dominius-pro-jaune",
+    id: "rinat-guantes-de-portero-rinat-dominius-pro-jaune",
     brand: "Rinat",
     model: "Guantes de portero Rinat Dominius Pro - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -3826,9 +4205,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-vengador-blanc",
+    id: "rinat-guantes-de-portero-rinat-egotiko-vengador-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Vengador - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3842,9 +4222,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-vengador-as-bleu",
+    id: "rinat-guantes-de-portero-rinat-egotiko-vengador-as-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Vengador As - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3865,9 +4246,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-vengador-gravity-bleu",
+    id: "rinat-guantes-de-portero-rinat-egotiko-vengador-gravity-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Vengador Gravity - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3887,9 +4269,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-vengador-prime-orange",
+    id: "rinat-guantes-de-portero-rinat-egotiko-vengador-prime-orange",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Vengador Prime - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -3910,9 +4293,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-vengador-prime-blanc",
+    id: "rinat-guantes-de-portero-rinat-egotiko-vengador-prime-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Vengador Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -3926,9 +4310,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-vengador-turf-orange",
+    id: "rinat-guantes-de-portero-rinat-egotiko-vengador-turf-orange",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Vengador Turf - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -3942,9 +4327,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-kali-as-bleu",
+    id: "rinat-guantes-de-portero-rinat-kali-as-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Kali As - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -3958,9 +4344,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-kratos-semi-noir",
+    id: "rinat-guantes-de-portero-rinat-kratos-semi-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat kratos Semi - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -3971,13 +4358,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_krtfa1090_black_1.webp&feedId=89032&k=e988129146c4d6c4c5de7b06fd23d782c98b80f3",
         sizes: ["7", "8", "10"],
       },
-    ],
-  },
-  {
-    id: "footstorees-rinat-guantes-de-portero-rinat-kratos-semi-noir-2",
-    brand: "Rinat",
-    model: "Guantes de portero Rinat kratos Semi - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 38.9,
@@ -3987,12 +4367,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_krtfa1099_black-black_1.webp&feedId=89032&k=2556e2bc4df4e98f4c8b770327dac2a911e251f6",
         sizes: ["9", "10"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 38.98,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45973001453&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_krtfa1090_black_1.webp&feedId=89044&k=e988129146c4d6c4c5de7b06fd23d782c98b80f3",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-lexus-pro-2023-24-blanc",
+    id: "rinat-guantes-de-portero-rinat-lexus-pro-2023-24-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Lexus Pro 2023/24 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4006,9 +4396,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-lexus-semi-2023-24-blanc",
+    id: "rinat-guantes-de-portero-rinat-lexus-semi-2023-24-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Lexus Semi 2023/24 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4022,9 +4413,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-meta-semi-2022-23-gris",
+    id: "rinat-guantes-de-portero-rinat-meta-semi-2022-23-gris",
     brand: "Rinat",
     model: "Guantes de portero Rinat meta Semi 2022/23 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -4038,9 +4430,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-meta-tactik-as-2023-24-noir",
+    id: "rinat-guantes-de-portero-rinat-meta-tactik-as-2023-24-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat meta Tactik As 2023/24 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4054,9 +4447,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-meta-tactik-as-2023-24-gris",
+    id: "rinat-guantes-de-portero-rinat-meta-tactik-as-2023-24-gris",
     brand: "Rinat",
     model: "Guantes de portero Rinat meta Tactik As 2023/24 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -4070,9 +4464,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-prime-rouge",
+    id: "rinat-guantes-de-portero-rinat-nkam-prime-rouge",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam Prime - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4092,9 +4487,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-pro-rouge",
+    id: "rinat-guantes-de-portero-rinat-nkam-pro-rouge",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4108,9 +4504,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-alpha-noir",
+    id: "rinat-guantes-de-portero-rinat-santoloco-alpha-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Alpha - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4124,9 +4521,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-alpha-blanc",
+    id: "rinat-guantes-de-portero-rinat-santoloco-alpha-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Alpha - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4140,9 +4538,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-full-latex-2023-24-noir",
+    id: "rinat-guantes-de-portero-rinat-santoloco-full-latex-2023-24-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Full Latex 2023/24 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4156,9 +4555,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-the-boss-stellar-alpha-2022-23-gris",
+    id: "rinat-guantes-de-portero-rinat-the-boss-stellar-alpha-2022-23-gris",
     brand: "Rinat",
     model: "Guantes de portero Rinat The Boss Stellar Alpha 2022/23 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -4172,9 +4572,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-football-attrakt-freegel-silver-noir",
+    id: "reusch-guantes-de-portero-reusch-football-attrakt-freegel-silver-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Football Attrakt Freegel Silver - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4188,9 +4589,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-rouge",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-rouge",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4204,9 +4606,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-jaune",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-jaune",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X NC - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -4220,9 +4623,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-grip-jaune",
+    id: "reusch-guantes-de-portero-reusch-attrakt-grip-jaune",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Grip - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -4236,9 +4640,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-league-blanc",
+    id: "adidas-guantes-de-portero-adidas-copa-league-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa League - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4249,12 +4654,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3793_white_1.webp&feedId=89032&k=301d15c40058ab148fb28df871df82c5e3fd2806",
         sizes: ["8.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 65.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43877230538&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7810.webp&feedId=89032&k=d31c2d41ee284415486356d075d91b608f938343",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-league-rouge",
+    id: "adidas-guantes-de-portero-adidas-predator-league-rouge",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator League - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4277,32 +4692,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-league-blanc-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator League - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 42.0,
-        priceMax: 58.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529796803&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3820_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=30e8671aad9617d7f406491f27373bc08af4d1c2",
-        sizes: ["9", "10.5", "11", "11.5"],
-        sizePrices: [
-          { size: "9", price: 58.0, url: "https://www.awin1.com/pclick.php?p=41840083974&a=3013769&m=65912" },
-          { size: "10.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529796805&a=3013769&m=65912" },
-          { size: "11", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529796802&a=3013769&m=65912" },
-          { size: "11.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529796803&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-pro-rouge",
+    id: "adidas-guantes-de-portero-adidas-predator-pro-rouge",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4327,12 +4720,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "12", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42529796809&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 97.5,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301793862&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iw6276_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=2e367cbf5b541722ed58d97f22c0e389966aebf5",
+        sizes: ["9"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-competicion-adidas-predator-rouge",
+    id: "adidas-guantes-de-portero-competicion-adidas-predator-rouge",
     brand: "Adidas",
     model: "Guantes de portero Competición adidas Predator - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4346,9 +4749,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-de-entrenamiento-adidas-predator-noir",
+    id: "adidas-guantes-de-portero-de-entrenamiento-adidas-predator-noir",
     brand: "Adidas",
     model: "Guantes de portero de entrenamiento adidas Predator - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4372,9 +4776,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-aztlan-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-aztlan-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Aztlan - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4385,12 +4790,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4001500_noir-dore_1.webp&feedId=89032&k=71c8e05964f5c2a64a7c6c92d5e599d53886e390",
         sizes: ["10", "11"],
       },
+      {
+        store: "FootStoreES",
+        price: 65.47,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45356588318&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000840-black-mat-6a5ddfdca6dd8-1.webp&feedId=89032&k=e086420c854dc4353841cdd358331c2ef389d22a",
+        sizes: ["5", "6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-pulsar-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-pulsar-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Pulsar - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4410,9 +4825,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-vibora-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-vibora-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Vibora - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4433,12 +4849,30 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 47.18, url: "https://www.awin1.com/pclick.php?p=42529806101&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 44.93,
+        priceMax: 47.57,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45459770520&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003190_noir_1.webp&feedId=89044&k=9de844bc98ac5746f6463cab055a9679b047fcc7",
+        sizes: ["7", "8", "9", "10", "11"],
+        sizePrices: [
+          { size: "7", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770517&a=3013769&m=65906" },
+          { size: "8", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770518&a=3013769&m=65906" },
+          { size: "9", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770519&a=3013769&m=65906" },
+          { size: "10", price: 44.93, url: "https://www.awin1.com/pclick.php?p=45459770520&a=3013769&m=65906" },
+          { size: "11", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770521&a=3013769&m=65906" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-bleu",
+    id: "rinat-guantes-de-portero-rinat-nkam-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4452,9 +4886,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-blanc",
+    id: "rinat-guantes-de-portero-rinat-nkam-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4468,9 +4903,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-as-blanc",
+    id: "rinat-guantes-de-portero-rinat-nkam-as-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM AS - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4484,9 +4920,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-prime-bleu",
+    id: "rinat-guantes-de-portero-rinat-nkam-prime-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM Prime - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4500,9 +4937,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-nkam-prime-blanc",
+    id: "rinat-guantes-de-portero-rinat-nkam-prime-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4516,9 +4954,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-rose",
+    id: "nike-guantes-de-portero-nike-match-rose",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -4532,9 +4971,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-hn-comp-soft-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-hn-comp-soft-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport HN Comp Soft - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4548,9 +4988,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-mighty-ii-gris",
+    id: "stanno-guantes-de-portero-stanno-mighty-ii-gris",
     brand: "Stanno",
     model: "Guantes de portero Stanno Mighty II - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -4564,9 +5005,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-ultimate-grip-iv-blanc",
+    id: "stanno-guantes-de-portero-stanno-ultimate-grip-iv-blanc",
     brand: "Stanno",
     model: "Guantes de portero Stanno Ultimate Grip IV - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4580,9 +5022,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-ultimate-grip-opf-blanc",
+    id: "stanno-guantes-de-portero-stanno-ultimate-grip-opf-blanc",
     brand: "Stanno",
     model: "Guantes de portero Stanno Ultimate Grip OPF - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4596,9 +5039,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-volare-ultra-iii-noir",
+    id: "stanno-guantes-de-portero-stanno-volare-ultra-iii-noir",
     brand: "Stanno",
     model: "Guantes de portero Stanno Volare Ultra III - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4612,9 +5056,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-derbystar-guantes-de-portero-derbystar-optimus-noir",
+    id: "derbystar-guantes-de-portero-derbystar-optimus-noir",
     brand: "Derbystar",
     model: "Guantes de portero Derbystar Optimus - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4630,28 +5075,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "12", price: 31.29, url: "https://www.awin1.com/pclick.php?p=45242362936&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-soft-advanced-blanc-2",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Soft Advanced - Blanc",
-    offers: [
       {
         store: "FootStoreES",
-        price: 16.52,
+        price: 31.29,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529877444&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101136901_blanc-noir-vert-fluo_1.webp&feedId=89032&k=5b94234206bb03670fc5603b9dbf6628e9f57aa4",
-        sizes: ["7.5", "8", "9", "9.5", "10", "11"],
+        url: "https://www.awin1.com/pclick.php?p=45075007798&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fe%2Fderbystar_f20360_black_1.webp&feedId=89032&k=598b8499fd7e4ac66984de2a3e9a7efb85a751bf",
+        sizes: ["10"],
       },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-nebula-gris",
+    id: "elite-sport-guantes-de-portero-elite-sport-nebula-gris",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Nebula - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -4665,9 +5104,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-bleu",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-bleu",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4681,9 +5121,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-real-white-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-real-white-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Real White - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4697,9 +5138,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-league-bleu",
+    id: "adidas-guantes-de-portero-adidas-copa-league-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa League - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4720,9 +5162,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-pro-bleu",
+    id: "adidas-guantes-de-portero-adidas-copa-pro-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4746,9 +5189,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4769,12 +5213,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "10.5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529885423&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 75.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43945476072&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7799.webp&feedId=89032&k=73f6dbce22372ce76d703c09856ac444284d0072",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-match-fingersave-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-match-fingersave-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Match Fingersave - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4792,12 +5246,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11.5", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529885436&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 50.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43970833063&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7784.webp&feedId=89032&k=a52770b453eb27df3843619e33213bfb753b61e6",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-bleu",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-bleu",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4811,9 +5275,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-rouge",
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-rouge",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -4827,9 +5292,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-huari-guantes-de-portero-huari-ibram-blanc",
+    id: "huari-guantes-de-portero-huari-ibram-blanc",
     brand: "Huari",
     model: "Guantes de portero Huari Ibram - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -4843,9 +5309,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-blue-best-3-0-bleu",
+    id: "t1tan-guantes-de-portero-t1tan-blue-best-3-0-bleu",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Blue Best 3.0 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -4859,9 +5326,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-shadow-best-3-0-noir",
+    id: "t1tan-guantes-de-portero-t1tan-shadow-best-3-0-noir",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Shadow Best 3.0 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4875,9 +5343,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-corte-hibrido-adidas-predator-mtc-fs-orange",
+    id: "adidas-guantes-de-portero-corte-hibrido-adidas-predator-mtc-fs-orange",
     brand: "Adidas",
     model: "Guantes de portero corte híbrido adidas Predator MTC FS - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -4895,12 +5364,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "10", price: 26.87, url: "https://www.awin1.com/pclick.php?p=44552705757&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 27.24,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44553261482&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5352_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=a642fb61e37bf81bd1af8a83aa84ab2378418624",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-sin-dedos-adidas-predator-lge-vert",
+    id: "adidas-guantes-de-portero-sin-dedos-adidas-predator-lge-vert",
     brand: "Adidas",
     model: "Guantes de portero sin dedos adidas Predator LGE - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -4914,9 +5393,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-sin-dedos-adidas-predator-lge-orange",
+    id: "adidas-guantes-de-portero-sin-dedos-adidas-predator-lge-orange",
     brand: "Adidas",
     model: "Guantes de portero sin dedos adidas Predator LGE - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -4940,9 +5420,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-noir",
+    id: "adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-noir",
     brand: "Adidas",
     model: "Guantes de portero sin dedos adidas Predator Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -4956,9 +5437,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-vert",
+    id: "adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-vert",
     brand: "Adidas",
     model: "Guantes de portero sin dedos adidas Predator Pro - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -4974,28 +5456,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "10.5", price: 130.0, url: "https://www.awin1.com/pclick.php?p=42510013765&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-derbystar-guantes-de-portero-derbystar-optimus-noir-2",
-    brand: "Derbystar",
-    model: "Guantes de portero Derbystar Optimus - Noir",
-    offers: [
       {
-        store: "FootStoreES",
-        price: 31.29,
+        store: "SportIsGoodES",
+        price: 64.57,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075007798&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fe%2Fderbystar_f20360_black_1.webp&feedId=89032&k=598b8499fd7e4ac66984de2a3e9a7efb85a751bf",
-        sizes: ["10"],
+        url: "https://www.awin1.com/pclick.php?p=45942262660&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj3532_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=32c27b1314d6fea122e0a5567ef74a4314c9e770",
+        sizes: ["9"],
       },
     ],
   },
   {
-    id: "footstorees-jako-guantes-de-portero-jako-animal-supersoft-nc-noir",
+    id: "jako-guantes-de-portero-jako-animal-supersoft-nc-noir",
     brand: "Jako",
     model: "Guantes de portero Jako Animal SuperSoft NC - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5009,9 +5485,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-gisix-guantes-de-portero-gisix-effect-25-base-model-noir",
+    id: "gisix-guantes-de-portero-gisix-effect-25-base-model-noir",
     brand: "Gisix",
     model: "Guantes de portero Gisix Effect 25 Base model - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5027,12 +5504,27 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "7", price: 16.74, url: "https://www.awin1.com/pclick.php?p=42075916195&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 14.68,
+        priceMax: 17.08,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301862883&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g155blk_black-gold_1.webp&feedId=89044&k=7ca7d6c07eb3c78595221ed99678edec414c2df9",
+        sizes: ["6", "7"],
+        sizePrices: [
+          { size: "6", price: 14.68, url: "https://www.awin1.com/pclick.php?p=43301862883&a=3013769&m=65906" },
+          { size: "7", price: 17.08, url: "https://www.awin1.com/pclick.php?p=43301862884&a=3013769&m=65906" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-gisix-guantes-de-portero-gisix-effect-25-medium-quality-noir",
+    id: "gisix-guantes-de-portero-gisix-effect-25-medium-quality-noir",
     brand: "Gisix",
     model: "Guantes de portero Gisix Effect 25 Medium Quality - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5043,12 +5535,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g154blk_black_1.webp&feedId=89032&k=1f560a948dfff9ea62e35fb27ce0d0ffbc39fd74",
         sizes: ["8.5", "9", "9.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 26.34,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301862888&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g154blk_black_1.webp&feedId=89044&k=1f560a948dfff9ea62e35fb27ce0d0ffbc39fd74",
+        sizes: ["8.5", "9", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-flex-hn-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-flex-hn-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Flex HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5062,9 +5564,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-soft-flex-frame-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-soft-flex-frame-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Soft Flex Frame - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5090,12 +5593,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 21.63, url: "https://www.awin1.com/pclick.php?p=42529973932&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 21.97,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43834980029&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101138201_blanc-cyber-bleu-noir_1.webp&feedId=89044&k=010e3ad5ffde113cc17bdabf43c31aa3776385fb",
+        sizes: ["11"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-soft-pro-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-soft-pro-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Soft Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5106,12 +5619,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101138301.webp&feedId=89032&k=7a51024577f15f93c3b4c59ab6c4c94bf67030bd",
         sizes: ["4", "4.5", "5.5", "6.5", "7.5", "8.5", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 19.3,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45699974793&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101138301.webp&feedId=89044&k=7a51024577f15f93c3b4c59ab6c4c94bf67030bd",
+        sizes: ["8.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-starter-soft-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-starter-soft-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Starter Soft - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5142,9 +5665,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supergrip-finger-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supergrip-finger-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Supergrip+ Finger - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5163,9 +5687,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supergrip-hn-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supergrip-hn-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Supergrip+ HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5184,9 +5709,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supersoft-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supersoft-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Supersoft - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5210,12 +5736,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 30.85, url: "https://www.awin1.com/pclick.php?p=41670116796&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 42.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301873699&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101138101.webp&feedId=89044&k=ce4a444811e560c653a45f2fa48967dc1966cd29",
+        sizes: ["7.5", "8", "8.5", "9", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supersoft-hn-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supersoft-hn-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Supersoft HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5240,9 +5776,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-ultragrip-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-ultragrip-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Ultragrip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5262,9 +5799,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-ultragrip-hn-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-ultragrip-hn-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Cybertec Ultragrip HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5275,12 +5813,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137301.webp&feedId=89032&k=5380f556bd771d354567085aaaf323891bf54a3b",
         sizes: ["7"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 79.01,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46015392186&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137301.webp&feedId=89044&k=5380f556bd771d354567085aaaf323891bf54a3b",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-soft-resist-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-soft-resist-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM uhlsport Soft Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5294,9 +5842,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-soft-resist-flex-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-soft-resist-flex-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM uhlsport Soft Resist+ Flex ... - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5323,12 +5872,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 23.68, url: "https://www.awin1.com/pclick.php?p=42313338016&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 17.85,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301873721&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101138901_noir-orange-fluo_1.webp&feedId=89044&k=335b9bdfdb7280bce7103a8501f7487c830807b3",
+        sizes: ["7.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-starter-resist-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-starter-resist-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM uhlsport Starter Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5354,12 +5913,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 10.79, url: "https://www.awin1.com/pclick.php?p=42529973952&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 9.89,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44286912560&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101139101_noir-orange-fluo_1.webp&feedId=89044&k=9090140e3fbcf0a77579e32cb0979de3e85ea283",
+        sizes: ["5.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-super-resist-hn-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-super-resist-hn-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM uhlsport Super Resist+ HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5388,9 +5957,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-aquagrip-hn-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-aquagrip-hn-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM uhlsport Aquagrip HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5413,9 +5983,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-aquasoft-hn-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-aquasoft-hn-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM uhlsport Aquasoft HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5429,9 +6000,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-galactic-25-bleu",
+    id: "bkeeper-guantes-de-portero-bkeeper-galactic-25-bleu",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Galactic #25 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5442,12 +6014,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fb%2Fk%2Fbkeeper_75072_aqua_1.webp&feedId=89032&k=237f3117483f40b91093667ac9100535ef3da3bc",
         sizes: ["7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 58.96,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45852948081&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fb%2Fk%2Fbkeeper_75072_aqua_1.webp&feedId=89044&k=237f3117483f40b91093667ac9100535ef3da3bc",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-galactic-25-noir",
+    id: "bkeeper-guantes-de-portero-bkeeper-galactic-25-noir",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Galactic #25 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5461,9 +6043,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-naos-25-noir",
+    id: "bkeeper-guantes-de-portero-bkeeper-naos-25-noir",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Naos #25 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5477,9 +6060,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-naos-25-blanc",
+    id: "bkeeper-guantes-de-portero-bkeeper-naos-25-blanc",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Naos #25 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5493,9 +6077,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-neo-25-bleu",
+    id: "bkeeper-guantes-de-portero-bkeeper-neo-25-bleu",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Neo #25 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5509,9 +6094,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-durban10-pro-noir",
+    id: "twofive-guantes-de-portero-twofive-durban10-pro-noir",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Durban10 Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5525,9 +6111,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-dynamic-fit-rouge",
+    id: "nike-guantes-de-portero-nike-dynamic-fit-rouge",
     brand: "Nike",
     model: "Guantes de portero Nike Dynamic Fit - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -5541,25 +6128,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-rouge-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike Match - Rouge",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 29.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507724442&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0257-635-phslh001.webp&feedId=89032&k=01f029bbb23ea5b6737182c5980fc6f3a868fa92",
-        sizes: ["7", "8", "9"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-combat-n-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-combat-n-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Combat N - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5573,9 +6145,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo revolution - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5595,13 +6168,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 108.85, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-noir-2",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 111.88,
@@ -5611,13 +6177,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003840_black-aqua_1.webp&feedId=89032&k=d81dfadb9b24f783099616c9cea68850b4b74a19",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-noir-3",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 111.88,
@@ -5627,12 +6186,31 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003780_black-white_1.webp&feedId=89032&k=d19607e8140ce61c4551635f307011cf78c38a56",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 109.24,
+        priceMax: 117.16,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45459773040&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003660_black_1.webp&feedId=89044&k=4f95d50390a4b0f28182962dd81c345eeb780fff",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+        sizePrices: [
+          { size: "6", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773040&a=3013769&m=65906" },
+          { size: "7", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773041&a=3013769&m=65906" },
+          { size: "8", price: 117.16, url: "https://www.awin1.com/pclick.php?p=45459773042&a=3013769&m=65906" },
+          { size: "9", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773043&a=3013769&m=65906" },
+          { size: "10", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773044&a=3013769&m=65906" },
+          { size: "11", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773045&a=3013769&m=65906" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo revolution - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5643,13 +6221,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003600_white_1.webp&feedId=89032&k=ed0f8cb9f5fb6874782ffd64241c99e71eb4f220",
         sizes: ["6", "7", "8", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-blanc-2",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 111.88,
@@ -5662,9 +6233,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-nobre-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-nobre-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Nobre - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5678,9 +6250,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-nobre-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-nobre-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Nobre - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5694,9 +6267,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-orca-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-orca-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Orca - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5716,12 +6290,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "11", price: 48.6, url: "https://www.awin1.com/pclick.php?p=42530113035&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 46.89,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45319544218&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003260_white_1.webp&feedId=89044&k=99db00d8522ec26d7575b4f48951dfbe737a89e4",
+        sizes: ["5"],
+      },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-quartz-bleu",
+    id: "elite-sport-guantes-de-portero-elite-sport-quartz-bleu",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Quartz - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5735,9 +6319,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-spin-bleu",
+    id: "elite-sport-guantes-de-portero-elite-sport-spin-bleu",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Spin - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5751,9 +6336,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-supreme-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-supreme-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Supreme - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5767,9 +6353,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-supreme-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-supreme-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Supreme - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5783,9 +6370,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-supreme-fn-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-supreme-fn-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Supreme FN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5799,9 +6387,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-neo-noir",
+    id: "bkeeper-guantes-de-portero-bkeeper-neo-noir",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Neo - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5815,9 +6404,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-hardground-rfh-vi-noir",
+    id: "stanno-guantes-de-portero-stanno-hardground-rfh-vi-noir",
     brand: "Stanno",
     model: "Guantes de portero Stanno Hardground RFH VI - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5831,9 +6421,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-thunder-vii-noir",
+    id: "stanno-guantes-de-portero-stanno-thunder-vii-noir",
     brand: "Stanno",
     model: "Guantes de portero Stanno Thunder VII - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5847,9 +6438,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-ultimate-opf-blanc",
+    id: "stanno-guantes-de-portero-stanno-ultimate-opf-blanc",
     brand: "Stanno",
     model: "Guantes de portero Stanno Ultimate Opf - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5863,9 +6455,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-stanno-guantes-de-portero-stanno-volare-match-iii-noir",
+    id: "stanno-guantes-de-portero-stanno-volare-match-iii-noir",
     brand: "Stanno",
     model: "Guantes de portero Stanno Volare Match III - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5879,9 +6472,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-gisix-guantes-de-portero-gisix-tecno-25-noir",
+    id: "gisix-guantes-de-portero-gisix-tecno-25-noir",
     brand: "Gisix",
     model: "Guantes de portero Gisix Tecno 25 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -5892,12 +6486,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g145blk_black_1.webp&feedId=89032&k=4fa7f583765cd9c5b001040030760261430f6e3e",
         sizes: ["8", "9.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 36.72,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301910619&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g145blk_black_1.webp&feedId=89044&k=4fa7f583765cd9c5b001040030760261430f6e3e",
+        sizes: ["8", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-legend-1-0-white-out-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-white-out-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Legend 1.0 White-out - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5911,9 +6515,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-league-rouge",
+    id: "adidas-guantes-de-portero-adidas-copa-league-rouge",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa League - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -5927,9 +6532,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-pro-rouge",
+    id: "adidas-guantes-de-portero-adidas-copa-pro-rouge",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -5943,9 +6549,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-bleu",
+    id: "adidas-guantes-de-portero-adidas-predator-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -5959,9 +6566,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-match-blanc",
+    id: "nike-guantes-de-portero-nike-match-blanc",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -5975,9 +6583,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-entrenamiento-de-portero-adidas-predator-orange",
+    id: "adidas-guantes-de-entrenamiento-de-portero-adidas-predator-orange",
     brand: "Adidas",
     model: "Guantes de entrenamiento de portero adidas Predator - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -5991,9 +6600,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-fp-bleu",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-bleu",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 (FP) - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6007,9 +6617,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-beast-3-0-fp-noir",
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-noir",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 (FP) - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6023,9 +6634,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-legend-1-0-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Legend 1.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6039,9 +6651,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-t1tan-guantes-de-portero-t1tan-legend-1-0-fp-blanc",
+    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-fp-blanc",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Legend 1.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6055,9 +6668,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-para-entrenar-rinat-fiera-vert",
+    id: "rinat-guantes-de-portero-para-entrenar-rinat-fiera-vert",
     brand: "Rinat",
     model: "Guantes de portero para entrenar Rinat Fiera - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -6071,9 +6685,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-bleu",
+    id: "rinat-guantes-de-portero-rinat-aries-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6084,12 +6699,22 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-arsi5613m-bleu-1.webp&feedId=89032&k=4c0669c8db54f0bcdf8e8a9d40f5c12cd4978a61",
         sizes: ["8", "10"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 24.75,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44716182721&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-arsi5613m-bleu-1.webp&feedId=89044&k=4c0669c8db54f0bcdf8e8a9d40f5c12cd4978a61",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-noir",
+    id: "rinat-guantes-de-portero-rinat-aries-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6103,9 +6728,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-gravity-noir",
+    id: "rinat-guantes-de-portero-rinat-aries-gravity-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Gravity - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6119,9 +6745,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-prime-noir",
+    id: "rinat-guantes-de-portero-rinat-aries-prime-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Prime - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6135,9 +6762,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-prime-bleu",
+    id: "rinat-guantes-de-portero-rinat-aries-prime-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Prime - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6151,9 +6779,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-pro-noir",
+    id: "rinat-guantes-de-portero-rinat-aries-pro-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6167,9 +6796,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-pro-bleu",
+    id: "rinat-guantes-de-portero-rinat-aries-pro-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6183,9 +6813,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-aries-turf-bleu",
+    id: "rinat-guantes-de-portero-rinat-aries-turf-bleu",
     brand: "Rinat",
     model: "Guantes de portero Rinat Aries Turf - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6199,9 +6830,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-asimetrik-noir",
+    id: "rinat-guantes-de-portero-rinat-asimetrik-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Asimetrik - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6215,9 +6847,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-asimetrik-spine-turf-noir",
+    id: "rinat-guantes-de-portero-rinat-asimetrik-spine-turf-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Asimetrik Spine Turf - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6231,9 +6864,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-asimetrik-turf-noir",
+    id: "rinat-guantes-de-portero-rinat-asimetrik-turf-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Asimetrik Turf - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6254,9 +6888,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-asimetrik-turf-blanc",
+    id: "rinat-guantes-de-portero-rinat-asimetrik-turf-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Asimetrik Turf - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6270,9 +6905,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-ctreme-dominius-turf-blanc",
+    id: "rinat-guantes-de-portero-rinat-ctreme-dominius-turf-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Ctreme Dominius Turf - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6286,9 +6922,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-orange",
+    id: "rinat-guantes-de-portero-rinat-egotiko-orange",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -6302,9 +6939,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-prime-orange",
+    id: "rinat-guantes-de-portero-rinat-egotiko-prime-orange",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Prime - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -6318,9 +6956,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-pro-orange",
+    id: "rinat-guantes-de-portero-rinat-egotiko-pro-orange",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Pro - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -6334,9 +6973,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-egotiko-turf-noir",
+    id: "rinat-guantes-de-portero-rinat-egotiko-turf-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Turf - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6350,9 +6990,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-fiera-dore",
+    id: "rinat-guantes-de-portero-rinat-fiera-dore",
     brand: "Rinat",
     model: "Guantes de portero Rinat Fiera - Doré",
+    colour: "Doré",
     offers: [
       {
         store: "FootStoreES",
@@ -6365,13 +7006,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-fiera-vert",
+    id: "rinat-guantes-de-portero-rinat-fiera-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Fiera - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -6385,9 +7024,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-fiera-prime-dore",
+    id: "rinat-guantes-de-portero-rinat-fiera-prime-dore",
     brand: "Rinat",
     model: "Guantes de portero Rinat Fiera Prime - Doré",
+    colour: "Doré",
     offers: [
       {
         store: "FootStoreES",
@@ -6401,9 +7041,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-fiera-prime-vert",
+    id: "rinat-guantes-de-portero-rinat-fiera-prime-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Fiera Prime - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -6417,9 +7058,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-fiera-pro-dore",
+    id: "rinat-guantes-de-portero-rinat-fiera-pro-dore",
     brand: "Rinat",
     model: "Guantes de portero Rinat Fiera Pro - Doré",
+    colour: "Doré",
     offers: [
       {
         store: "FootStoreES",
@@ -6433,9 +7075,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-fiera-pro-vert",
+    id: "rinat-guantes-de-portero-rinat-fiera-pro-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Fiera Pro - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -6449,9 +7092,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-kratos-blanc",
+    id: "rinat-guantes-de-portero-rinat-kratos-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Kratos - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6465,9 +7109,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-noir",
+    id: "rinat-guantes-de-portero-rinat-santoloco-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6481,9 +7126,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-blanc",
+    id: "rinat-guantes-de-portero-rinat-santoloco-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6497,9 +7143,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-prime-noir",
+    id: "rinat-guantes-de-portero-rinat-santoloco-prime-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Prime - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6513,9 +7160,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-prime-blanc",
+    id: "rinat-guantes-de-portero-rinat-santoloco-prime-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6529,9 +7177,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-pro-noir",
+    id: "rinat-guantes-de-portero-rinat-santoloco-pro-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6550,9 +7199,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-santoloco-pro-blanc",
+    id: "rinat-guantes-de-portero-rinat-santoloco-pro-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6566,9 +7216,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-xtreme-dominius-premium-blanc",
+    id: "rinat-guantes-de-portero-rinat-xtreme-dominius-premium-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Xtreme Dominius Premium - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6582,9 +7233,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-xtreme-dominius-pro-blanc",
+    id: "rinat-guantes-de-portero-rinat-xtreme-dominius-pro-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Xtreme Dominius Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6598,9 +7250,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-bleu",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-bleu",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6614,47 +7267,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-noir-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 72.0,
-        priceMax: 90.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304852764&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=3c50eecc90e293ac0d93a087a1accf8ffb7a64da",
-        sizes: ["8", "8.5", "9"],
-        sizePrices: [
-          { size: "8", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45304852765&a=3013769&m=65912" },
-          { size: "8.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45304852764&a=3013769&m=65912" },
-          { size: "9", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45304852763&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-blanc-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 75.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43945476072&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7799.webp&feedId=89032&k=73f6dbce22372ce76d703c09856ac444284d0072",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-pro-bleu",
+    id: "adidas-guantes-de-portero-adidas-predator-pro-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6668,9 +7284,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-pro-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-pro-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6681,12 +7298,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jy6295-white-1.webp&feedId=89032&k=649d072d2fb7489da25bc5fb805ddae918b6d0e9",
         sizes: ["11.5"],
       },
+      {
+        store: "FootStoreES",
+        price: 109.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43877230550&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fy%2Fjy6304.webp&feedId=89032&k=c3f64afa65af56392e1259a46bf76200d82eff34",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorees-bkeeper-guantes-de-portero-bkeeper-anzar-bleu",
+    id: "bkeeper-guantes-de-portero-bkeeper-anzar-bleu",
     brand: "BKeeper",
     model: "Guantes de portero BKeeper Anzar - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6700,9 +7327,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-elite-3-0-contact-blanc",
+    id: "precision-guantes-de-portero-precision-elite-3-0-contact-blanc",
     brand: "Precision",
     model: "Guantes de portero Precision Elite 3.0 Contact - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6716,9 +7344,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-elite-3-0-giga-blanc",
+    id: "precision-guantes-de-portero-precision-elite-3-0-giga-blanc",
     brand: "Precision",
     model: "Guantes de portero Precision Elite 3.0 Giga - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6732,9 +7361,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-elite-3-0-grip-bleu",
+    id: "precision-guantes-de-portero-precision-elite-3-0-grip-bleu",
     brand: "Precision",
     model: "Guantes de portero Precision Elite 3.0 Grip - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6755,12 +7385,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "11", price: 47.91, url: "https://www.awin1.com/pclick.php?p=43318507517&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 50.56,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45925142159&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision-prg84806-bleu-noir-1.webp&feedId=89044&k=23d102116a820216b1ccf6fa354880a39060d2e1",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-elite-3-0-quartz-noir",
+    id: "precision-guantes-de-portero-precision-elite-3-0-quartz-noir",
     brand: "Precision",
     model: "Guantes de portero Precision Elite 3.0 Quartz - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6774,9 +7414,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-supreme-yassine-bounou-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-supreme-yassine-bounou-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Supreme Yassine Bounou - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6790,9 +7431,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-atlanta96-advance-2025-noir",
+    id: "twofive-guantes-de-portero-twofive-atlanta96-advance-2025-noir",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta96 Advance 2025 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6806,9 +7448,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-atlanta96-pro-noir",
+    id: "twofive-guantes-de-portero-twofive-atlanta96-pro-noir",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta96 Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6822,9 +7465,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-atlanta96-pro-blanc",
+    id: "twofive-guantes-de-portero-twofive-atlanta96-pro-blanc",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta96 Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6838,9 +7482,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-roma90-basic-rose",
+    id: "twofive-guantes-de-portero-twofive-roma90-basic-rose",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Roma90 Basic - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -6854,9 +7499,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-ortho-tec-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-ortho-tec-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Fusion Ortho-Tec - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6870,9 +7516,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-infinity-finger-support-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-infinity-finger-support-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Infinity Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6886,9 +7533,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-grip-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-grip-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Grip - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -6899,12 +7547,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670815-4126-sharpblu-wht-shock-orng-1.webp&feedId=89032&k=f3fbdb2529ba02ea46f1d442cd2e49513d8523b4",
         sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 30.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43468905761&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670815-4126-sharpblu-wht-shock-orng-1.webp&feedId=89044&k=f3fbdb2529ba02ea46f1d442cd2e49513d8523b4",
+        sizes: ["10.5"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-resist-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-resist-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Resist - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -6915,60 +7573,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670615-7700-black-1.webp&feedId=89032&k=462277bca2e03b0de95ebd1b7ee0967daba07b09",
         sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-noir-4",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Noir",
-    offers: [
       {
-        store: "FootStoreES",
-        price: 20.0,
+        store: "SportIsGoodES",
+        price: 35.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43573623417&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-7090-blck-aquablu-shock-orng-1.webp&feedId=89032&k=33e9fbb8734959bce06d92ac94a504eaa78ed1de",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+        url: "https://www.awin1.com/pclick.php?p=43574015614&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670615-7700-black-1.webp&feedId=89044&k=462277bca2e03b0de95ebd1b7ee0967daba07b09",
+        sizes: ["10.5", "11"],
       },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-bleu-2",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44033377400&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.webp&feedId=89032&k=6efe071e4f696f2f990da22c41324e068b966b19",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-solid-bleu-3",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43468487711&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-4126-sharpblu-wht-shock-orng-1.webp&feedId=89032&k=36b7d70e1ff1b6863ad9482656c506fcf08c7098",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-club-blanc",
+    id: "adidas-guantes-de-portero-adidas-copa-club-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Club - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -6982,25 +7602,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-league-blanc-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Copa League - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 65.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43877230538&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7810.webp&feedId=89032&k=d31c2d41ee284415486356d075d91b608f938343",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-pro-blanc",
+    id: "adidas-guantes-de-portero-adidas-copa-pro-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -7014,9 +7619,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-match-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-match-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Match - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -7036,41 +7642,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-match-fingersave-blanc-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator Match Fingersave - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 50.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43970833063&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7784.webp&feedId=89032&k=a52770b453eb27df3843619e33213bfb753b61e6",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-pro-blanc-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator Pro - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 109.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43877230550&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fy%2Fjy6304.webp&feedId=89032&k=c3f64afa65af56392e1259a46bf76200d82eff34",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-training-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-training-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Training - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -7084,9 +7659,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-advance-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-advance-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Advance - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7100,9 +7676,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-advance-finger-support-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-advance-finger-support-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Advance Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7116,25 +7693,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-infinity-noir-3",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Freegel Infinity - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 60.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45010084712&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F5%2F6%2F5670735-7700.webp&feedId=89032&k=77539447bc0c63b5ba66b1f85d95bd7eb28cbe31",
-        sizes: ["7.5", "8", "8.5", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-finger-support-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-finger-support-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X NC Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7148,9 +7710,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-infinity-finger-support-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-infinity-finger-support-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Infinity Finger Support - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7164,9 +7727,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-infinity-resistor-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-infinity-resistor-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Infinity Resistor - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7180,9 +7744,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-starter-solid-bleu",
+    id: "reusch-guantes-de-portero-reusch-attrakt-starter-solid-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Starter Solid - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7196,25 +7761,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-grip3-bleu-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike Grip3 - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.68,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43654228225&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0256-458_00.webp&feedId=89032&k=074f510918779474b7bdfd680c6cbcb09d48a1f9",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7228,9 +7778,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-league-noir",
+    id: "adidas-guantes-de-portero-adidas-copa-league-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa League - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7243,10 +7794,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-pro-noir",
+    id: "adidas-guantes-de-portero-adidas-copa-pro-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7273,9 +7828,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-match-fingersave-noir",
+    id: "adidas-guantes-de-portero-adidas-predator-match-fingersave-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Match Fingersave - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7297,9 +7853,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-pro-noir",
+    id: "adidas-guantes-de-portero-adidas-predator-pro-noir",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7313,77 +7870,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-vapor-grip3-bleu-2",
-    brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 119.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43810861244&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hq0304-458-racer-blue-black-pink-blast-1.webp&feedId=89032&k=e4472037b92bbeb269c78933c7146f21a5065091",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-absolutgrip-blanc-2",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Absolutgrip - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.45,
-        priceMax: 48.12,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp&feedId=89032&k=165d4ca955771e14ca01ab520996c294668996df",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
-        sizePrices: [
-          { size: "7", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912" },
-          { size: "8", price: 47.42, url: "https://www.awin1.com/pclick.php?p=45047894156&a=3013769&m=65912" },
-          { size: "8.5", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894157&a=3013769&m=65912" },
-          { size: "9", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894158&a=3013769&m=65912" },
-          { size: "9.5", price: 48.12, url: "https://www.awin1.com/pclick.php?p=45242386043&a=3013769&m=65912" },
-          { size: "10", price: 48.12, url: "https://www.awin1.com/pclick.php?p=45047894159&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-comfort-absolutgrip-hn-noir-2",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Comfort Absolutgrip HN - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.58,
-        priceMax: 53.72,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44536077544&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101143001-black-69babd260436a-1.webp&feedId=89032&k=27e3379ab902cf10e4117e700d1cd09c008bb1a9",
-        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
-        sizePrices: [
-          { size: "7", price: 48.58, url: "https://www.awin1.com/pclick.php?p=44536077544&a=3013769&m=65912" },
-          { size: "7.5", price: 53.72, url: "https://www.awin1.com/pclick.php?p=45356587825&a=3013769&m=65912" },
-          { size: "8", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45018628241&a=3013769&m=65912" },
-          { size: "8.5", price: 52.93, url: "https://www.awin1.com/pclick.php?p=44755565202&a=3013769&m=65912" },
-          { size: "9", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45018628242&a=3013769&m=65912" },
-          { size: "9.5", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45356587826&a=3013769&m=65912" },
-          { size: "10", price: 53.72, url: "https://www.awin1.com/pclick.php?p=45018628243&a=3013769&m=65912" },
-          { size: "10.5", price: 52.93, url: "https://www.awin1.com/pclick.php?p=45371031215&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorees-precision-guantes-de-portero-precision-elite-3-0-blackout-contact-noir",
+    id: "precision-guantes-de-portero-precision-elite-3-0-blackout-contact-noir",
     brand: "Precision",
     model: "Guantes de portero Precision Elite 3.0 Blackout Contact - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7397,9 +7887,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-precision-guantes-de-portero-precision-fusion-x-flat-cut-essential-orange",
+    id: "precision-guantes-de-portero-precision-fusion-x-flat-cut-essential-orange",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Flat Cut Essential - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -7413,9 +7904,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-jako-guantes-de-portero-jako-rs89-team-hybrid-cut-blanc",
+    id: "jako-guantes-de-portero-jako-rs89-team-hybrid-cut-blanc",
     brand: "Jako",
     model: "Guantes de portero Jako RS89 Team Hybrid Cut - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -7429,9 +7921,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-copa-pro-gris",
+    id: "adidas-guantes-de-portero-adidas-copa-pro-gris",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -7445,9 +7938,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-match-bleu",
+    id: "adidas-guantes-de-portero-adidas-predator-match-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Match - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7467,9 +7961,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-kappa-guantes-de-portero-deportivo-la-corogne-bleu",
+    id: "kappa-guantes-de-portero-deportivo-la-corogne-bleu",
     brand: "Kappa",
     model: "Guantes de portero Deportivo La Corogne - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7483,9 +7978,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-kappa-guantes-de-portero-fc-metz-noir",
+    id: "kappa-guantes-de-portero-fc-metz-noir",
     brand: "Kappa",
     model: "Guantes de portero FC Metz - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7499,9 +7995,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-kappa-guantes-de-portero-ogc-nice-noir",
+    id: "kappa-guantes-de-portero-ogc-nice-noir",
     brand: "Kappa",
     model: "Guantes de portero OGC Nice - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7515,9 +8012,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-rinat-guantes-de-portero-rinat-uno-premier-lux-vert",
+    id: "rinat-guantes-de-portero-rinat-uno-premier-lux-vert",
     brand: "Rinat",
     model: "Guantes de portero Rinat Uno Premier Lux - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -7531,9 +8029,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-atlanta-advance-bleu",
+    id: "twofive-guantes-de-portero-twofive-atlanta-advance-bleu",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta Advance - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7547,9 +8046,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-atlanta-advance-rouge",
+    id: "twofive-guantes-de-portero-twofive-atlanta-advance-rouge",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta Advance - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7563,9 +8063,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-los-angeles-advance-vert",
+    id: "twofive-guantes-de-portero-twofive-los-angeles-advance-vert",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Los Angeles Advance - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -7579,9 +8080,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-madrid-basic-rose",
+    id: "twofive-guantes-de-portero-twofive-madrid-basic-rose",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Madrid Basic - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -7595,9 +8097,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-madrid-pro-rose",
+    id: "twofive-guantes-de-portero-twofive-madrid-pro-rose",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Madrid Pro - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -7611,9 +8114,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-new-york-advance-bleu",
+    id: "twofive-guantes-de-portero-twofive-new-york-advance-bleu",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive New York Advance - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7627,9 +8131,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-twofive-guantes-de-portero-twofive-seoul-pro-bleu",
+    id: "twofive-guantes-de-portero-twofive-seoul-pro-bleu",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Seoul Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -7643,9 +8148,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-avento-guantes-de-portero-avento-pro-ultimate-jaune",
+    id: "avento-guantes-de-portero-avento-pro-ultimate-jaune",
     brand: "Avento",
     model: "Guantes de portero Avento Pro Ultimate - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -7654,14 +8160,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730020&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-45kh-ybl-fluorescent-yellow-black-69e09062b2822-2.webp&feedId=89032&k=f5b96cc17db5aa9345b6daf98cce968a2d4272dc",
-        sizes: ["S", "L", "M", "XL"],
+        sizes: ["XL", "S", "L", "M"],
       },
     ],
   },
   {
-    id: "footstorees-avento-guantes-de-portero-avento-pro-ultimate-rouge",
+    id: "avento-guantes-de-portero-avento-pro-ultimate-rouge",
     brand: "Avento",
     model: "Guantes de portero Avento Pro Ultimate - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7670,14 +8177,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730024&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-45kh-rbw-red-black-69e0906478192-2.webp&feedId=89032&k=d63387953938f6d8a275028956eb40d8337c2f9a",
-        sizes: ["S", "L", "M", "XL"],
+        sizes: ["XL", "S", "L", "M"],
       },
     ],
   },
   {
-    id: "footstorees-softee-guantes-de-portero-softee-beast-violet",
+    id: "softee-guantes-de-portero-softee-beast-violet",
     brand: "Softee",
     model: "Guantes de portero Softee Beast - Violet",
+    colour: "Violet",
     offers: [
       {
         store: "FootStoreES",
@@ -7691,9 +8199,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-softee-guantes-de-portero-softee-beast-emboss-rose",
+    id: "softee-guantes-de-portero-softee-beast-emboss-rose",
     brand: "Softee",
     model: "Guantes de portero Softee Beast Emboss - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -7707,9 +8216,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-softee-guantes-de-portero-softee-lunar-rouge",
+    id: "softee-guantes-de-portero-softee-lunar-rouge",
     brand: "Softee",
     model: "Guantes de portero Softee Lunar - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7723,9 +8233,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-derbystar-guantes-de-portero-derbystar-mamba-gris",
+    id: "derbystar-guantes-de-portero-derbystar-mamba-gris",
     brand: "Derbystar",
     model: "Guantes de portero Derbystar Mamba - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
@@ -7739,9 +8250,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Freegel Advance Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -7752,12 +8264,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp&feedId=89032&k=ee768587677debd642b78f69920b73d60c7f3705",
         sizes: ["9", "9.5", "10", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45020267594&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp&feedId=89044&k=ee768587677debd642b78f69920b73d60c7f3705",
+        sizes: ["9", "9.5", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X Evolution Dominik Livakovic Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -7768,12 +8290,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670064-2290-orange-blue-6a2bf74de3410-1.webp&feedId=89032&k=dd73a3555477944ae95fff047be4100ae37d2fdb",
         sizes: ["8.5", "9", "9.5", "10", "10.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 110.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44810896875&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670064-2290-orange-blue-6a2bf74de3410-1.webp&feedId=89044&k=dd73a3555477944ae95fff047be4100ae37d2fdb",
+        sizes: ["8.5", "9", "9.5", "10", "10.5"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X NC Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -7784,12 +8316,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670056-2290-orange-blue-6a2bf75997703-1.webp&feedId=89032&k=5587166fda133de122bd8374e72c1a3bdd94b281",
         sizes: ["9", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 80.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44810896883&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670056-2290-orange-blue-6a2bf75997703-1.webp&feedId=89044&k=5587166fda133de122bd8374e72c1a3bdd94b281",
+        sizes: ["9", "9.5", "10", "10.5", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-reusch-guantes-de-portero-reusch-attrakt-speedbump-coupe-du-monde-2026-orange",
+    id: "reusch-guantes-de-portero-reusch-attrakt-speedbump-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt SpeedBump Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -7800,12 +8342,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670085-2290-orange-blue-6a2bf751dea11-1.webp&feedId=89032&k=4c9fbd45d11a631ac6e5a1f6805fee40272a8963",
         sizes: ["8", "8.5", "9.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 140.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45020267606&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670085-2290-orange-blue-6a2bf751dea11-1.webp&feedId=89044&k=4c9fbd45d11a631ac6e5a1f6805fee40272a8963",
+        sizes: ["8", "8.5", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorees-adidas-guantes-de-portero-adidas-predator-pro-beige",
+    id: "adidas-guantes-de-portero-adidas-predator-pro-beige",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreES",
@@ -7819,9 +8371,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-absolutgrip-hn-maignan-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-absolutgrip-hn-maignan-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Absolutgrip HN Maignan - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -7837,12 +8390,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "7.5", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45515786872&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 90.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45516449676&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-1011415012000-blanc-noir-rose-fuchsia-6a74441882542-1.webp&feedId=89044&k=82cc88b04c7c6542dc486e0375bb72009e87b4c8",
+        sizes: ["7.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM Ultragrip ZNE HN Maignan - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -7853,12 +8416,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-1011408012000-blanc-noir-rose-fuchsia-6a7361b23bc5f-1.webp&feedId=89032&k=a1b161942222d89290d1ddc08354e79a83faf3fa",
         sizes: ["7.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 160.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45516449683&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-1011408012000-blanc-noir-rose-fuchsia-6a7361b23bc5f-1.webp&feedId=89044&k=a1b161942222d89290d1ddc08354e79a83faf3fa",
+        sizes: ["7.5"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Absolutgrip HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7881,9 +8454,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-soft-pro-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-soft-pro-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Soft Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7894,12 +8468,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101142201-rouge-fluo-blanc-jaune-fluo-6a3267f9387bd-1.webp&feedId=89032&k=a63f5c6d5e9767b4b607af0a56721eec0e0f0362",
         sizes: ["8", "8.5", "9"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 28.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45075420666&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101142201-rouge-fluo-blanc-jaune-fluo-6a3267f9387bd-1.webp&feedId=89044&k=a63f5c6d5e9767b4b607af0a56721eec0e0f0362",
+        sizes: ["8", "8.5", "9"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-supergrip-finger-surround-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-supergrip-finger-surround-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Supergrip Finger Surround - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7910,12 +8494,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp&feedId=89032&k=d45e377c2caf7ffc50ea433b4361d6ad907348a3",
         sizes: ["7", "7.5", "8", "9"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 120.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45075420808&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp&feedId=89044&k=d45e377c2caf7ffc50ea433b4361d6ad907348a3",
+        sizes: ["7.5", "8", "9"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-supergrip-hn-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-supergrip-hn-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Supergrip HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7926,12 +8520,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.webp&feedId=89032&k=cb8e96fdf6a7905722d6dd20cb21091371c43d84",
         sizes: ["8", "8.5", "9", "10", "10.5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 112.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45075420816&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.webp&feedId=89044&k=cb8e96fdf6a7905722d6dd20cb21091371c43d84",
+        sizes: ["9", "10"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-ultragrip-hn-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-ultragrip-hn-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Ultragrip HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7953,12 +8557,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "12", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45888246135&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 128.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45075420818&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp&feedId=89044&k=c6e8f6d1627ef55bb8114549e0783745a2d1b227",
+        sizes: ["7", "7.5", "8", "9", "9.5", "10"],
+      },
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Absolutgrip HN Fit - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -7972,9 +8586,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-starter-resist-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-starter-resist-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Starter Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -7988,9 +8603,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-super-resist-noir",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-super-resist-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Super Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8004,9 +8620,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-supersoft-hn-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-supersoft-hn-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Supersoft HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -8020,9 +8637,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-uhlsport-guantes-de-portero-uhlsport-fm-zne-ultragrip-rc-rouge",
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-ultragrip-rc-rouge",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport FM ZNE Ultragrip RC - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -8036,57 +8654,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-nike-guantes-de-portero-nike-academy-noir-4",
-    brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348248650&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp&feedId=89032&k=3ee8cde8ebcde003d05179b7ffaf3ebc21c6f149",
-        sizes: ["S", "L", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-nike-guantes-de-portero-nike-academy-noir-5",
-    brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348248654&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.webp&feedId=89032&k=97ee0df16825cda2ecfc1a561935ed8c9bdf0957",
-        sizes: ["S", "L", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-aztlan-noir-2",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Aztlan - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 65.47,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45356588318&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000840-black-mat-6a5ddfdca6dd8-1.webp&feedId=89032&k=e086420c854dc4353841cdd358331c2ef389d22a",
-        sizes: ["5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-energy-bleu",
+    id: "elite-sport-guantes-de-portero-elite-sport-energy-bleu",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Energy - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -8106,12 +8677,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "11", price: 87.81, url: "https://www.awin1.com/pclick.php?p=45356588330&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "SportIsGoodES",
+        price: 90.81,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45459781171&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000780-bleu-marine-blanc-6a5ddfdd2c340-1.webp&feedId=89044&k=b6126626d2f6feb974dc4b204d35063eee6145bb",
+        sizes: ["7", "8", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-new-aqua-bleu",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-new-aqua-bleu",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution x New Aqua - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -8125,9 +8706,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-t1b-knit-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-t1b-knit-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport T1B Knit - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8141,9 +8723,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-guantes-de-portero-puma-future-beige",
+    id: "puma-guantes-de-portero-puma-future-beige",
     brand: "Puma",
     model: "Guantes de portero Puma Future - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreES",
@@ -8157,9 +8740,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-puma-guantes-de-portero-puma-king-play-rc-beige",
+    id: "puma-guantes-de-portero-puma-king-play-rc-beige",
     brand: "Puma",
     model: "Guantes de portero Puma King Play RC - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreES",
@@ -8173,9 +8757,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-ar-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-ar-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution X AR - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8186,12 +8771,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000240-blanc-6a882bfe4cdc4-1.webp&feedId=89032&k=f8b52d7b0153a79fe8e46895968b240c53926555",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 117.16,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45725032306&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000240-blanc-6a882bfe4cdc4-1.webp&feedId=89044&k=f8b52d7b0153a79fe8e46895968b240c53926555",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-gp-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-gp-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution X GP - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8205,9 +8800,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-rio-noir",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-rio-noir",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution X Rio - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8218,12 +8814,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000300-noir-6a882f676cf10-1.webp&feedId=89032&k=c673ff9603e1f89d86825443946da0db43b82ff7",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 112.28,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46019333456&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000300-noir-6a882f676cf10-1.webp&feedId=89044&k=c673ff9603e1f89d86825443946da0db43b82ff7",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorees-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-wg1-blanc",
+    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-wg1-blanc",
     brand: "Elite Sport",
     model: "Guantes de portero Elite Sport Neo Revolution X Wg1 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8237,9 +8843,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-noir",
+    id: "joma-guantes-de-portero-joma-area-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Area - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8250,13 +8857,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401713-119-black-6a91ab9a18688-1.webp&feedId=89032&k=da5a43a90c727620387818d22ce6b811365e7cc0",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-area-noir-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Area - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 43.57,
@@ -8266,12 +8866,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401712-106-black-red-6a91ab9b90773-1.webp&feedId=89032&k=ae9292c43dc0f5f02c3260c330832134e4db6cd4",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
+      {
+        store: "FootStoreES",
+        price: 49.94,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860443396&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401711-117-negro-verde-fluor-6a91ab9fa96eb-1.webp&feedId=89032&k=f37e67d7c05bc8d208bf2e4033ab05f9f69e00f1",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-orange",
+    id: "joma-guantes-de-portero-joma-area-orange",
     brand: "Joma",
     model: "Guantes de portero Joma Area - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -8285,41 +8895,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-noir-3",
-    brand: "Joma",
-    model: "Guantes de portero Joma Area - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.94,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443396&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401711-117-negro-verde-fluor-6a91ab9fa96eb-1.webp&feedId=89032&k=f37e67d7c05bc8d208bf2e4033ab05f9f69e00f1",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-area-rose-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Area - Rose",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 80.6,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443402&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401942-530-pink-6a91ae25ee35a-1.webp&feedId=89032&k=8a8c633fa6a22fc1fac40fe7e7046f9fe26b7f80",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-area-bleu",
+    id: "joma-guantes-de-portero-joma-area-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma Area - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -8333,9 +8912,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-vert",
+    id: "joma-guantes-de-portero-joma-area-vert",
     brand: "Joma",
     model: "Guantes de portero Joma Area - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -8349,9 +8929,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-blanc",
+    id: "joma-guantes-de-portero-joma-area-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Area - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8365,25 +8946,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-19-blanc-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Area 19 - Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 49.94,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443426&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401711-201-white-black-6a91abab92ee5-1.webp&feedId=89032&k=30df84572bb2a952c594f4aa30ce3887d95eb8c0",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-area-25-blanc",
+    id: "joma-guantes-de-portero-joma-area-25-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Area 25 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8397,25 +8963,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-360-noir-3",
-    brand: "Joma",
-    model: "Guantes de portero Joma Area 360 - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.57,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443438&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401712-117-negro-verde-fluor-6a91abb357b1c-1.webp&feedId=89032&k=cc9313232ef453045f6a55922007a2215840dc3c",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-area-360-blanc",
+    id: "joma-guantes-de-portero-joma-area-360-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Area 360 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8429,9 +8980,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-tech-noir",
+    id: "joma-guantes-de-portero-joma-area-tech-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Area Tech - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8445,9 +8997,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-area-tech-blanc",
+    id: "joma-guantes-de-portero-joma-area-tech-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Area Tech - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8461,57 +9014,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-noir-3",
-    brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.16,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443458&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401947-118-black-6a91ae32486c9-1.webp&feedId=89032&k=3ba7330fdba2ae7bd2d2ed72dfa35383fca89797",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-noir-4",
-    brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.16,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443464&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401947-111-black-grey-6a91ae3439324-1.webp&feedId=89032&k=6189aff9ccd1fbe65286d68167157dc2d879f7c8",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-noir-5",
-    brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 47.16,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443474&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401947-117-negro-verde-fluor-6a91ae3647efa-1.webp&feedId=89032&k=6461fd4736d8752bb9484666f85ac2ec2fbf4480",
-        sizes: ["7", "8", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-rouge",
+    id: "joma-guantes-de-portero-joma-brave-rouge",
     brand: "Joma",
     model: "Guantes de portero Joma Brave - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -8525,25 +9031,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-brave-bleu-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Brave - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 27.65,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443485&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401709-700-royal-6a91ae3a26efa-1.webp&feedId=89032&k=7711fa046d48b05acc3ffac77ed5a83e03ac32a3",
-        sizes: ["8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-orange",
+    id: "joma-guantes-de-portero-joma-calcio-orange",
     brand: "Joma",
     model: "Guantes de portero Joma Calcio - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -8557,9 +9048,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-rouge",
+    id: "joma-guantes-de-portero-joma-calcio-rouge",
     brand: "Joma",
     model: "Guantes de portero Joma Calcio - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -8570,13 +9062,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401707-607-red-6a91b591ac7ce-1.webp&feedId=89032&k=455969011fb5612bdda8d3262b00ba7580e15b61",
         sizes: ["4", "5", "6", "7", "8"],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-rouge-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Calcio - Rouge",
-    offers: [
       {
         store: "FootStoreES",
         price: 21.28,
@@ -8589,9 +9074,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-bleu",
+    id: "joma-guantes-de-portero-joma-calcio-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma Calcio - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -8602,13 +9088,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401950-701-royal-6a91b59e29976-1.webp&feedId=89032&k=98ca0a4791d7f132b9d66297e916814039b4136a",
         sizes: ["4", "5", "6", "7", "8"],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-bleu-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Calcio - Bleu",
-    offers: [
       {
         store: "FootStoreES",
         price: 13.32,
@@ -8621,9 +9100,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-calcio-vert",
+    id: "joma-guantes-de-portero-joma-calcio-vert",
     brand: "Joma",
     model: "Guantes de portero Joma Calcio - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
@@ -8637,9 +9117,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-pro-noir-2",
+    id: "joma-guantes-de-portero-joma-gk-pro-noir-2",
     brand: "Joma",
     model: "Guantes de portero Joma Gk Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8650,13 +9131,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401945-122-black-gold-6a91b5ab31e1b-1.webp&feedId=89032&k=eb7f1e859888ffe605973d025043cc331e624ea1",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-pro-noir-3",
-    brand: "Joma",
-    model: "Guantes de portero Joma Gk Pro - Noir",
-    offers: [
       {
         store: "FootStoreES",
         price: 36.02,
@@ -8669,9 +9143,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-gk-pro-blanc-2",
+    id: "joma-guantes-de-portero-joma-gk-pro-blanc-2",
     brand: "Joma",
     model: "Guantes de portero Joma Gk Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8685,9 +9160,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-noir",
+    id: "joma-guantes-de-portero-joma-hunter-noir",
     brand: "Joma",
     model: "Guantes de portero Joma Hunter - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
@@ -8701,9 +9177,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-bleu",
+    id: "joma-guantes-de-portero-joma-hunter-bleu",
     brand: "Joma",
     model: "Guantes de portero Joma Hunter - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
@@ -8717,89 +9194,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-orange-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Orange",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 24.88,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443557&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401949-809-naranja-amarillo-6a91b5c771294-1.webp&feedId=89032&k=9d0ed443abc66c9e63c2ba2227b2ec4754b8a0bb",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-hunter-orange-3",
-    brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Orange",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 13.32,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443566&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401708-880-orange-6a91b5cc95d00-1.webp&feedId=89032&k=4d4ecf1e5035e333c64439da2cea38ebc6dda8f2",
-        sizes: ["4", "5", "6", "7", "8", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-noir-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Panther - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 69.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443572&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401946-116-black-6a91ae6aa4f28-1.webp&feedId=89032&k=cc6a92d705b809b0de6a33ef38038d353959577f",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-noir-3",
-    brand: "Joma",
-    model: "Guantes de portero Joma Panther - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 69.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443578&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401946-114-black-violet-6a91ae7295f18-1.webp&feedId=89032&k=060d4fd2707a9ac7dcb84f2d49136b65fabf1393",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-noir-4",
-    brand: "Joma",
-    model: "Guantes de portero Joma Panther - Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 69.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443584&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401946-117-negro-verde-fluor-6a91ae7d1b3c3-1.webp&feedId=89032&k=25975927f8d95faf6b9bdcc50c3caae07e24e900",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-blanc",
+    id: "joma-guantes-de-portero-joma-panther-blanc",
     brand: "Joma",
     model: "Guantes de portero Joma Panther - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
@@ -8810,13 +9208,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401714-204-white-green-6a91ae83c18b9-1.webp&feedId=89032&k=fd3056d7a82789b1ce42e389412d88720a83d265",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorees-joma-guantes-de-portero-joma-panther-blanc-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Panther - Blanc",
-    offers: [
       {
         store: "FootStoreES",
         price: 38.79,
@@ -8829,9 +9220,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-jaune",
+    id: "joma-guantes-de-portero-joma-premier-jaune",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
@@ -8845,9 +9237,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-orange",
+    id: "joma-guantes-de-portero-joma-premier-orange",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
@@ -8861,9 +9254,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-rouge",
+    id: "joma-guantes-de-portero-joma-premier-rouge",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
@@ -8877,9 +9271,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-rose",
+    id: "joma-guantes-de-portero-joma-premier-rose",
     brand: "Joma",
     model: "Guantes de portero Joma Premier - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
@@ -8893,865 +9288,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorees-joma-guantes-de-portero-joma-premier-bleu-2",
-    brand: "Joma",
-    model: "Guantes de portero Joma Premier - Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 57.91,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443626&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-401948-717-royal-6a91ae9a867a2-1.webp&feedId=89032&k=61cfea340617aef584aef331b70d43a3111378dd",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-speed-contact-supersoft-noir",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Speed Contact Supersoft - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 26.1,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43657013458&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F3%2Fa%2F3abffa67-9a62-4887-afe5-f6ce74e2d05d-productdetailsimage.webp&feedId=89044&k=f750cd1e72fac2b00d5efdba6828260284820975",
-        sizes: ["4.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-venomous-gold-x-noir",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Venomous Gold X - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 120.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301577648&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5370956-5010_black-venom-green_1.webp&feedId=89044&k=d6d188c0531a56a66a47d95822b893e5ec698a7e",
-        sizes: ["9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-noir",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Powerline Supersoft - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 41.3,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45325916361&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101130901_0.webp&feedId=89044&k=e5978db5e370a54364729ea277b17ebc0f00939e",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-hummel-guantes-de-portero-hummel-allround-grip-blanc",
-    brand: "Hummel",
-    model: "Guantes de portero Hummel Allround Grip - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 17.82,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301635286&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_224976-9031_0.webp&feedId=89044&k=88abdcf1ea25c5707ba6c5d0765c0e7715fe9f8e",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-hummel-guantes-de-portero-hummel-core-grip-blanc",
-    brand: "Hummel",
-    model: "Guantes de portero Hummel Core Grip - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 10.47,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301635287&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_224975-9210_0.webp&feedId=89044&k=be85ae710f1356011e65ef8485cb443d3fb45a20",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-softee-guantes-de-portero-softee-europa-blanc",
-    brand: "Softee",
-    model: "Guantes de portero Softee Europa - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 8.92,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301641709&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.webp&feedId=89044&k=39245ca842adcab9485875a10d3d2e0fb2b122a3",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-guantes-de-portero-adidas-predator-trn-jaune",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator TRN - Jaune",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 18.75,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301662044&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq4026_6_hardware_on_model_front_view_white.webp&feedId=89044&k=5cb5265cdbbaced23bd8371e61dcb60812c5a66c",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-hummel-guantes-de-portero-hyper-grip-hummel-noir",
-    brand: "Hummel",
-    model: "Guantes de portero Hyper Grip Hummel - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 43.75,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301701133&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_224978-2287.webp&feedId=89044&k=b5fc6e29ec38f6d0fc04483f7d878638bebb9e82",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-precision-guantes-de-portero-precision-fusion-x-pro-hybrid-giga-blanc",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Hybrid Giga - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 50.01,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301730022&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prg16306_white-classic-black_1.webp&feedId=89044&k=188277c6d63792c11db38e52e7f4b0bdb3c4a2a2",
-        sizes: ["9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-pure-contact-gold-bleu",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Pure Contact Gold - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 89.95,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43657014805&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F5%2F4%2F5470100-4848.webp&feedId=89044&k=4e3c276796f10aecd4f02c0bf9935cd6e5f67cf5",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-solid-noir",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301758481&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570515-7752_black-safety-yellow_1.webp&feedId=89044&k=3c94b45b32493937d712e66a811e87dcf527645e",
-        sizes: ["7.5", "8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-rinat-guantes-de-portero-rinat-kratos-semi-noir",
-    brand: "Rinat",
-    model: "Guantes de portero Rinat kratos Semi - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 38.98,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45973001453&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_krtfa1090_black_1.webp&feedId=89044&k=e988129146c4d6c4c5de7b06fd23d782c98b80f3",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-guantes-de-portero-adidas-predator-pro-rouge",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator Pro - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 97.5,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301793862&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iw6276_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=2e367cbf5b541722ed58d97f22c0e389966aebf5",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-elite-sport-guantes-de-portero-elite-sport-vibora-noir",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Vibora - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 44.93,
-        priceMax: 47.57,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45459770520&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003190_noir_1.webp&feedId=89044&k=9de844bc98ac5746f6463cab055a9679b047fcc7",
-        sizes: ["7", "8", "9", "10", "11"],
-        sizePrices: [
-          { size: "7", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770517&a=3013769&m=65906" },
-          { size: "8", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770518&a=3013769&m=65906" },
-          { size: "9", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770519&a=3013769&m=65906" },
-          { size: "10", price: 44.93, url: "https://www.awin1.com/pclick.php?p=45459770520&a=3013769&m=65906" },
-          { size: "11", price: 47.57, url: "https://www.awin1.com/pclick.php?p=45459770521&a=3013769&m=65906" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-guantes-de-portero-corte-hibrido-adidas-predator-mtc-fs-orange",
-    brand: "Adidas",
-    model: "Guantes de portero corte híbrido adidas Predator MTC FS - Orange",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 27.24,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44553261482&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5352_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=a642fb61e37bf81bd1af8a83aa84ab2378418624",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-vert",
-    brand: "Adidas",
-    model: "Guantes de portero sin dedos adidas Predator Pro - Vert",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 64.57,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45942262660&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj3532_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=32c27b1314d6fea122e0a5567ef74a4314c9e770",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-gisix-guantes-de-portero-gisix-effect-25-base-model-noir",
-    brand: "Gisix",
-    model: "Guantes de portero Gisix Effect 25 Base model - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 14.68,
-        priceMax: 17.08,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301862883&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g155blk_black-gold_1.webp&feedId=89044&k=7ca7d6c07eb3c78595221ed99678edec414c2df9",
-        sizes: ["6", "7"],
-        sizePrices: [
-          { size: "6", price: 14.68, url: "https://www.awin1.com/pclick.php?p=43301862883&a=3013769&m=65906" },
-          { size: "7", price: 17.08, url: "https://www.awin1.com/pclick.php?p=43301862884&a=3013769&m=65906" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-gisix-guantes-de-portero-gisix-effect-25-medium-quality-noir",
-    brand: "Gisix",
-    model: "Guantes de portero Gisix Effect 25 Medium Quality - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 26.34,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301862888&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g154blk_black_1.webp&feedId=89044&k=1f560a948dfff9ea62e35fb27ce0d0ffbc39fd74",
-        sizes: ["8.5", "9", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-soft-flex-frame-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM Cybertec Soft Flex Frame - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 21.97,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43834980029&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101138201_blanc-cyber-bleu-noir_1.webp&feedId=89044&k=010e3ad5ffde113cc17bdabf43c31aa3776385fb",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-soft-pro-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM Cybertec Soft Pro - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 19.3,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45699974793&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101138301.webp&feedId=89044&k=7a51024577f15f93c3b4c59ab6c4c94bf67030bd",
-        sizes: ["8.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supersoft-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM Cybertec Supersoft - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 42.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301873699&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101138101.webp&feedId=89044&k=ce4a444811e560c653a45f2fa48967dc1966cd29",
-        sizes: ["7.5", "8", "8.5", "9", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-cybertec-ultragrip-hn-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM Cybertec Ultragrip HN - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 79.01,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46015392186&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137301.webp&feedId=89044&k=5380f556bd771d354567085aaaf323891bf54a3b",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-soft-resist-flex-noir",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM uhlsport Soft Resist+ Flex ... - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 17.85,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301873721&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101138901_noir-orange-fluo_1.webp&feedId=89044&k=335b9bdfdb7280bce7103a8501f7487c830807b3",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-starter-resist-noir",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM uhlsport Starter Resist+ - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 9.89,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44286912560&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101139101_noir-orange-fluo_1.webp&feedId=89044&k=9090140e3fbcf0a77579e32cb0979de3e85ea283",
-        sizes: ["5.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-bkeeper-guantes-de-portero-bkeeper-galactic-25-bleu",
-    brand: "BKeeper",
-    model: "Guantes de portero BKeeper Galactic #25 - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 58.96,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45852948081&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fb%2Fk%2Fbkeeper_75072_aqua_1.webp&feedId=89044&k=237f3117483f40b91093667ac9100535ef3da3bc",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-elite-sport-guantes-de-portero-elite-sport-neo-revolution-noir",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 109.24,
-        priceMax: 117.16,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45459773040&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003660_black_1.webp&feedId=89044&k=4f95d50390a4b0f28182962dd81c345eeb780fff",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-        sizePrices: [
-          { size: "6", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773040&a=3013769&m=65906" },
-          { size: "7", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773041&a=3013769&m=65906" },
-          { size: "8", price: 117.16, url: "https://www.awin1.com/pclick.php?p=45459773042&a=3013769&m=65906" },
-          { size: "9", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773043&a=3013769&m=65906" },
-          { size: "10", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773044&a=3013769&m=65906" },
-          { size: "11", price: 109.24, url: "https://www.awin1.com/pclick.php?p=45459773045&a=3013769&m=65906" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-elite-sport-guantes-de-portero-elite-sport-orca-blanc",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Orca - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 46.89,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45319544218&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003260_white_1.webp&feedId=89044&k=99db00d8522ec26d7575b4f48951dfbe737a89e4",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-gisix-guantes-de-portero-gisix-tecno-25-noir",
-    brand: "Gisix",
-    model: "Guantes de portero Gisix Tecno 25 - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 36.72,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301910619&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgisix_g145blk_black_1.webp&feedId=89044&k=4fa7f583765cd9c5b001040030760261430f6e3e",
-        sizes: ["8", "9.5"],
-      },
-    ],
-  },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
-  {
-    id: "sportisgoodes-rinat-guantes-de-portero-rinat-aries-bleu",
-    brand: "Rinat",
-    model: "Guantes de portero Rinat Aries - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 24.75,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44716182721&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-arsi5613m-bleu-1.webp&feedId=89044&k=4c0669c8db54f0bcdf8e8a9d40f5c12cd4978a61",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-adidas-guantes-de-portero-adidas-predator-noir",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 72.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45306123731&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp&feedId=89044&k=3c50eecc90e293ac0d93a087a1accf8ffb7a64da",
-        sizes: ["8.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-precision-guantes-de-portero-precision-elite-3-0-grip-bleu",
-    brand: "Precision",
-    model: "Guantes de portero Precision Elite 3.0 Grip - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 50.56,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45925142159&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision-prg84806-bleu-noir-1.webp&feedId=89044&k=23d102116a820216b1ccf6fa354880a39060d2e1",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-grip-bleu",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Grip - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 30.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43468905761&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670815-4126-sharpblu-wht-shock-orng-1.webp&feedId=89044&k=f3fbdb2529ba02ea46f1d442cd2e49513d8523b4",
-        sizes: ["10.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-resist-noir",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Resist - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 35.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43574015614&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670615-7700-black-1.webp&feedId=89044&k=462277bca2e03b0de95ebd1b7ee0967daba07b09",
-        sizes: ["10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-solid-noir-2",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43574015617&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-7090-blck-aquablu-shock-orng-1.webp&feedId=89044&k=33e9fbb8734959bce06d92ac94a504eaa78ed1de",
-        sizes: ["8.5", "9.5", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-solid-bleu",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44033931561&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.webp&feedId=89044&k=6efe071e4f696f2f990da22c41324e068b966b19",
-        sizes: ["8", "9", "9.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-absolutgrip-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Absolutgrip - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 45.82,
-        priceMax: 48.5,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45048792407&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp&feedId=89044&k=165d4ca955771e14ca01ab520996c294668996df",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
-        sizePrices: [
-          { size: "7", price: 45.82, url: "https://www.awin1.com/pclick.php?p=45048792407&a=3013769&m=65906" },
-          { size: "8", price: 47.81, url: "https://www.awin1.com/pclick.php?p=45048792408&a=3013769&m=65906" },
-          { size: "8.5", price: 45.82, url: "https://www.awin1.com/pclick.php?p=45048792409&a=3013769&m=65906" },
-          { size: "9", price: 45.82, url: "https://www.awin1.com/pclick.php?p=45048792410&a=3013769&m=65906" },
-          { size: "9.5", price: 48.5, url: "https://www.awin1.com/pclick.php?p=45358731840&a=3013769&m=65906" },
-          { size: "10", price: 48.5, url: "https://www.awin1.com/pclick.php?p=45048792411&a=3013769&m=65906" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-comfort-absolutgrip-hn-noir",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Comfort Absolutgrip HN - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 48.95,
-        priceMax: 55.79,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45012348465&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101143001-black-69babd260436a-1.webp&feedId=89044&k=27e3379ab902cf10e4117e700d1cd09c008bb1a9",
-        sizes: ["7", "7.5", "10"],
-        sizePrices: [
-          { size: "7", price: 48.95, url: "https://www.awin1.com/pclick.php?p=45012348465&a=3013769&m=65906" },
-          { size: "7.5", price: 55.79, url: "https://www.awin1.com/pclick.php?p=45586647084&a=3013769&m=65906" },
-          { size: "10", price: 55.79, url: "https://www.awin1.com/pclick.php?p=45942270967&a=3013769&m=65906" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Freegel Advance Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 60.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45020267594&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp&feedId=89044&k=ee768587677debd642b78f69920b73d60c7f3705",
-        sizes: ["9", "9.5", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Gold X Evolution Dominik Livakovic Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 110.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44810896875&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670064-2290-orange-blue-6a2bf74de3410-1.webp&feedId=89044&k=dd73a3555477944ae95fff047be4100ae37d2fdb",
-        sizes: ["8.5", "9", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Gold X NC Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 80.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44810896883&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670056-2290-orange-blue-6a2bf75997703-1.webp&feedId=89044&k=5587166fda133de122bd8374e72c1a3bdd94b281",
-        sizes: ["9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-reusch-guantes-de-portero-reusch-attrakt-speedbump-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt SpeedBump Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 140.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45020267606&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670085-2290-orange-blue-6a2bf751dea11-1.webp&feedId=89044&k=4c9fbd45d11a631ac6e5a1f6805fee40272a8963",
-        sizes: ["8", "8.5", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-absolutgrip-hn-maignan-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM Absolutgrip HN Maignan - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 90.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45516449676&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-1011415012000-blanc-noir-rose-fuchsia-6a74441882542-1.webp&feedId=89044&k=82cc88b04c7c6542dc486e0375bb72009e87b4c8",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM Ultragrip ZNE HN Maignan - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 160.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45516449683&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-1011408012000-blanc-noir-rose-fuchsia-6a7361b23bc5f-1.webp&feedId=89044&k=a1b161942222d89290d1ddc08354e79a83faf3fa",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-zne-soft-pro-rouge",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM ZNE Soft Pro - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 28.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075420666&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101142201-rouge-fluo-blanc-jaune-fluo-6a3267f9387bd-1.webp&feedId=89044&k=a63f5c6d5e9767b4b607af0a56721eec0e0f0362",
-        sizes: ["8", "8.5", "9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-zne-supergrip-finger-surround-rouge",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM ZNE Supergrip Finger Surround - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 120.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075420808&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp&feedId=89044&k=d45e377c2caf7ffc50ea433b4361d6ad907348a3",
-        sizes: ["7.5", "8", "9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-zne-supergrip-hn-rouge",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM ZNE Supergrip HN - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 112.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075420816&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.webp&feedId=89044&k=cb8e96fdf6a7905722d6dd20cb21091371c43d84",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-uhlsport-guantes-de-portero-uhlsport-fm-zne-ultragrip-hn-rouge",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport FM ZNE Ultragrip HN - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 128.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075420818&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp&feedId=89044&k=c6e8f6d1627ef55bb8114549e0783745a2d1b227",
-        sizes: ["7", "7.5", "8", "9", "9.5", "10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-elite-sport-guantes-de-portero-elite-sport-energy-bleu",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Energy - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 90.81,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45459781171&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000780-bleu-marine-blanc-6a5ddfdd2c340-1.webp&feedId=89044&k=b6126626d2f6feb974dc4b204d35063eee6145bb",
-        sizes: ["7", "8", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-ar-blanc",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo Revolution X AR - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 117.16,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45725032306&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000240-blanc-6a882bfe4cdc4-1.webp&feedId=89044&k=f8b52d7b0153a79fe8e46895968b240c53926555",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodes-elite-sport-guantes-de-portero-elite-sport-neo-revolution-x-rio-noir",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo Revolution X Rio - Noir",
-    offers: [
-      {
-        store: "SportIsGoodES",
-        price: 112.28,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46019333456&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport-el5000300-noir-6a882f676cf10-1.webp&feedId=89044&k=c673ff9603e1f89d86825443946da0db43b82ff7",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-19-blanc",
+    id: "joma-gants-de-gardien-joma-area-19-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Area 19 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9762,12 +9302,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/4/0/400422.201_0.webp",
         sizes: ["9", "10", "12"],
       },
+      {
+        store: "FootStoreFR",
+        price: 47.67,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401711-201-gants-de-gardien-joma-area-19-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401711-201-white-black-6a91abab92ee5-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorefr-jako-gants-jako-de-gardien-prestige-wrc-protection-gris",
+    id: "jako-gants-jako-de-gardien-prestige-wrc-protection-gris",
     brand: "Jako",
     model: "Gants Jako de gardien Prestige WRC Protection - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -9781,9 +9331,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-macron-gants-gardien-de-but-macron-shark-xfs-noir",
+    id: "macron-gants-gardien-de-but-macron-shark-xfs-noir",
     brand: "Macron",
     model: "Gants gardien de but Macron Shark xfs - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -9797,9 +9348,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-macron-gants-de-gardien-macron-alligator-noir",
+    id: "macron-gants-de-gardien-macron-alligator-noir",
     brand: "Macron",
     model: "Gants de gardien Macron Alligator - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -9813,9 +9365,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-macron-gants-de-gardien-macron-hawk-vert",
+    id: "macron-gants-de-gardien-macron-hawk-vert",
     brand: "Macron",
     model: "Gants de gardien Macron Hawk - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -9829,9 +9382,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-macron-gants-de-gardien-macron-leopard-vert",
+    id: "macron-gants-de-gardien-macron-leopard-vert",
     brand: "Macron",
     model: "Gants de gardien Macron Leopard - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -9845,9 +9399,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-macron-gants-de-gardien-macron-leopard-jaune",
+    id: "macron-gants-de-gardien-macron-leopard-jaune",
     brand: "Macron",
     model: "Gants de gardien Macron Leopard - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -9861,9 +9416,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-macron-gants-de-gardien-macron-lion-rouge",
+    id: "macron-gants-de-gardien-macron-lion-rouge",
     brand: "Macron",
     model: "Gants de gardien Macron Lion - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -9877,9 +9433,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-picasso-line-s-n-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-picasso-line-s-n-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Picasso Line S/N - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9890,12 +9447,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/w/rw2000600.jpg",
         sizes: ["7", "10", "11"],
       },
+      {
+        store: "FootStoreFR",
+        price: 85.58,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Frw2000690-gants-de-gardien-rwlk-picasso-line-s-n-blanc-bleu",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/w/rw2000690.jpg",
+        sizes: ["8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-allround-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-allround-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK ALLROUND + - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9909,9 +9476,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-allround-plus-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-allround-plus-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK ALLROUND PLUS - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9925,9 +9493,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-future-i-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-future-i-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK FUTURE I - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9941,9 +9510,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-metro-comfort-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-metro-comfort-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Metro Comfort - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9954,13 +9524,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/w/rw2001250_1.jpg",
         sizes: ["5", "6", "7", "8", "9", "10"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-metro-comfort-blanc-2",
-    brand: "RWLK",
-    model: "Gants de gardien RWLK Metro Comfort - Blanc",
-    offers: [
       {
         store: "FootStoreFR",
         price: 51.48,
@@ -9973,9 +9536,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-metro-overlap-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-metro-overlap-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Metro Overlap - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -9989,9 +9553,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-metro-titanium-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-metro-titanium-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Metro Titanium - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10005,9 +9570,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-one-touch-bleu",
+    id: "rwlk-gants-de-gardien-rwlk-one-touch-bleu",
     brand: "RWLK",
     model: "Gants de gardien RWLK One Touch - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10021,9 +9587,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-one-touch-bk-noir",
+    id: "rwlk-gants-de-gardien-rwlk-one-touch-bk-noir",
     brand: "RWLK",
     model: "Gants de gardien RWLK One Touch bk - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10037,9 +9604,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-original-titanium-fn-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-original-titanium-fn-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Original Titanium fn - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10053,9 +9621,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-original-titanium-negative-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-original-titanium-negative-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Original Titanium negative - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10069,9 +9638,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-picasso-line-p-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-picasso-line-p-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Picasso Line P - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10082,13 +9652,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/w/rw2000700.jpg",
         sizes: ["7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-picasso-line-p-blanc-2",
-    brand: "RWLK",
-    model: "Gants de gardien RWLK Picasso Line P - Blanc",
-    offers: [
       {
         store: "FootStoreFR",
         price: 85.58,
@@ -10101,25 +9664,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-picasso-line-s-n-blanc-2",
-    brand: "RWLK",
-    model: "Gants de gardien RWLK Picasso Line S/N - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 85.58,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Frw2000690-gants-de-gardien-rwlk-picasso-line-s-n-blanc-bleu",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/w/rw2000690.jpg",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-pro-line-slim-hybrid-fit-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-pro-line-slim-hybrid-fit-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK Pro Line, Slim Hybrid Fit. - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10130,13 +9678,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/w/rw2000250.jpg",
         sizes: ["7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-pro-line-slim-hybrid-fit-blanc-2",
-    brand: "RWLK",
-    model: "Gants de gardien RWLK Pro Line, Slim Hybrid Fit. - Blanc",
-    offers: [
       {
         store: "FootStoreFR",
         price: 81.32,
@@ -10149,9 +9690,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-the-clyde-fn-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-the-clyde-fn-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK The Clyde FN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10165,9 +9707,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-the-clyde-pl-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-the-clyde-pl-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK The Clyde PL - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10181,9 +9724,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rwlk-gants-de-gardien-rwlk-the-clyde-titanium-negative-blanc",
+    id: "rwlk-gants-de-gardien-rwlk-the-clyde-titanium-negative-blanc",
     brand: "RWLK",
     model: "Gants de gardien RWLK The Clyde Titanium negative - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10197,9 +9741,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-football-nike-grip3-rouge",
+    id: "nike-gants-de-football-nike-grip3-rouge",
     brand: "Nike",
     model: "Gants de Football Nike Grip3 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -10213,9 +9758,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-nike-goalkeeper-grip3-bleu",
+    id: "nike-gants-nike-goalkeeper-grip3-bleu",
     brand: "Nike",
     model: "Gants Nike Goalkeeper Grip3 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10229,9 +9775,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-fusion-gris",
+    id: "reusch-gants-de-gardien-reusch-attrakt-fusion-gris",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Fusion - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -10245,9 +9792,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-pure-contact-fusion-bleu",
+    id: "reusch-gants-de-gardien-reusch-pure-contact-fusion-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Pure Contact Fusion - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10261,9 +9809,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-speed-contact-supersoft-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-speed-contact-supersoft-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Speed Contact Supersoft - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10274,12 +9823,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/3/a/3abffa67-9a62-4887-afe5-f6ce74e2d05d-productdetailsimage.jpg",
         sizes: ["4.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 24.54,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101126501-gants-de-gardien-uhlsport-speed-contact-supersoft-noir-orange-blanc",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/3/a/3abffa67-9a62-4887-afe5-f6ce74e2d05d-productdetailsimage.jpg",
+        sizes: ["4.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-de-joueur-uhlsport-nitrofield-noir",
+    id: "uhlsport-gants-de-gardien-de-joueur-uhlsport-nitrofield-noir",
     brand: "Uhlsport",
     model: "Gants de gardien de joueur Uhlsport Nitrofield - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10293,9 +9852,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-femme-joma-gk-pro-noir",
+    id: "joma-gants-de-gardien-femme-joma-gk-pro-noir",
     brand: "Joma",
     model: "Gants de gardien femme Joma Gk-Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10309,9 +9869,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-gold-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-gold-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Gold - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10325,9 +9886,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-infinity-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-infinity-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Infinity - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10338,12 +9900,31 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/5/2/5270730-7700_0.jpg",
         sizes: ["7.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5370735-7700-gants-de-gardien-reusch-attrakt-freegel-infinity-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5370735-7700_0.webp",
+        sizes: ["7.5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670735-7700-gants-de-gardien-reusch-attrakt-freegel-infinity-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/5/6/5670735-7700.webp",
+        sizes: ["7.5", "8", "8.5", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-pure-contact-gold-x-adaptiveflex-multicolore",
+    id: "reusch-gants-de-gardien-reusch-pure-contact-gold-x-adaptiveflex-multicolore",
     brand: "Reusch",
     model: "Gants de gardien Reusch Pure Contact Gold X AdaptiveFlex - Multicolore",
+    colour: "Multicolore",
     offers: [
       {
         store: "FootStoreFR",
@@ -10357,9 +9938,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-rouge",
+    id: "nike-gants-de-gardien-nike-vapor-grip3-rouge",
     brand: "Nike",
     model: "Gants de gardien Nike Vapor Grip3 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -10373,9 +9955,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-pred-gl-mtc-fs-noir",
+    id: "adidas-gants-de-gardien-adidas-pred-gl-mtc-fs-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Pred GL MTC FS - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10389,14 +9972,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-tiro-pro-noir",
+    id: "adidas-gants-de-gardien-adidas-tiro-pro-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Tiro Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
-        priceMax: 72.0,
+        price: 46.0,
+        priceMax: 73.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron",
@@ -10404,21 +9988,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
         sizePrices: [
           { size: "7.5", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "8", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "8", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "8.5", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "9", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "9.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "10", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "10.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "10", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "10.5", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "11", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-competition-noir",
+    id: "adidas-gants-de-gardien-adidas-predator-competition-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Competition - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10432,9 +10017,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-gold-x-vert",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-gold-x-vert",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Gold X - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -10448,9 +10034,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-blanc",
+    id: "nike-gants-de-gardien-nike-vapor-grip3-blanc",
     brand: "Nike",
     model: "Gants de gardien Nike Vapor Grip3 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10464,9 +10051,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-grip3-blanc",
+    id: "nike-gants-de-gardien-nike-grip3-blanc",
     brand: "Nike",
     model: "Gants de gardien Nike Grip3 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10480,9 +10068,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-goalkeeper-match-bleu",
+    id: "nike-gants-de-gardien-nike-goalkeeper-match-bleu",
     brand: "Nike",
     model: "Gants de gardien Nike Goalkeeper Match - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10502,9 +10091,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-venomous-gold-x-noir",
+    id: "reusch-gants-de-gardien-reusch-venomous-gold-x-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Venomous Gold X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10515,12 +10105,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/e/reusch_5370956-5010_black-venom-green_1.jpg",
         sizes: ["7.5", "9.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 120.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5370956-5010-gants-de-gardien-reusch-venomous-gold-x-black-venom-green",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/e/reusch_5370956-5010_black-venom-green_1.jpg",
+        sizes: ["9.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-fusion-guardian-adaptiveflex-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-fusion-guardian-adaptiveflex-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Fusion Guardian AdaptiveFlex - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10534,9 +10134,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-tiro-league-fieldplayer-noir",
+    id: "adidas-gants-de-gardien-adidas-tiro-league-fieldplayer-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Tiro League Fieldplayer - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10550,9 +10151,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-tiro-club-noir",
+    id: "adidas-gants-de-gardien-adidas-tiro-club-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Tiro Club - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10566,9 +10168,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-tiro-league-noir",
+    id: "adidas-gants-de-gardien-adidas-tiro-league-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Tiro League - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10593,9 +10196,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-noir",
+    id: "adidas-gants-de-gardien-adidas-predator-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Predator - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10611,12 +10215,37 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "11", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhy4075-gants-de-gardien-adidas-predator-noir" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 72.0,
+        priceMax: 90.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["8", "8.5", "9"],
+        sizePrices: [
+          { size: "8", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
+          { size: "8.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
+          { size: "9", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 72.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf9621-gants-de-gardien-adidas-predator-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["8.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-grip3-gris",
+    id: "nike-gants-de-gardien-nike-grip3-gris",
     brand: "Nike",
     model: "Gants de gardien Nike Grip3 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -10630,9 +10259,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-gris",
+    id: "nike-gants-de-gardien-nike-match-gris",
     brand: "Nike",
     model: "Gants de gardien Nike Match - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -10646,9 +10276,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-duo-rouge",
+    id: "reusch-gants-de-gardien-reusch-attrakt-duo-rouge",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Duo - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -10662,9 +10293,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-dynamic-touch-tec-noir",
+    id: "reusch-gants-de-gardien-reusch-dynamic-touch-tec-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Dynamic TOUCH-TEC - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10678,9 +10310,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-fusion-goaliator-rouge",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-fusion-goaliator-rouge",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Fusion Goaliator - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -10694,9 +10327,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-glueprint-blanc",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-glueprint-blanc",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X GluePrint - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10710,31 +10344,27 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-solo-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-solo-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Solo - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
-        price: 88.0,
-        priceMax: 89.0,
+        price: 89.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel30012-gants-de-gardien-elite-sport-solo-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el3001200_2.jpg",
         sizes: ["6", "10", "11"],
-        sizePrices: [
-          { size: "6", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel30012-gants-de-gardien-elite-sport-solo-noir" },
-          { size: "10", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel30012-gants-de-gardien-elite-sport-solo-noir" },
-          { size: "11", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel30012-gants-de-gardien-elite-sport-solo-noir" },
-        ],
       },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-solo-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-solo-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Solo - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10748,9 +10378,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-trainning-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-trainning-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Trainning - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10764,9 +10395,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-league-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-league-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator League - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10777,12 +10409,29 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ia0879_1_hardware_photography_front_center_view_white-nw0324.webp",
         sizes: ["11.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 42.0,
+        priceMax: 57.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jh3820_1_hardware_photography_front_center_view_white.jpg",
+        sizes: ["9", "10.5", "11", "11.5"],
+        sizePrices: [
+          { size: "9", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
+          { size: "10.5", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
+          { size: "11", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
+          { size: "11.5", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-rose",
+    id: "joma-gants-de-gardien-joma-area-rose",
     brand: "Joma",
     model: "Gants de gardien Joma Area - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -10801,12 +10450,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "12", price: 25.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400422-501-gants-de-gardien-joma-area-fuschia-noir" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 78.08,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401942-530-gants-de-gardien-joma-area-pink",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401942-530-pink-6a91ae25ee35a-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-hunter-orange",
+    id: "joma-gants-de-gardien-joma-hunter-orange",
     brand: "Joma",
     model: "Gants de gardien Joma Hunter - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -10817,12 +10476,31 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma_400909.042_0.jpg",
         sizes: ["8"],
       },
+      {
+        store: "FootStoreFR",
+        price: 11.68,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401708-880-gants-de-gardien-joma-hunter-orange",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401708-880-orange-6a91b5cc95d00-1.webp",
+        sizes: ["4", "5", "6", "7", "8", "11"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 22.82,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401949-809-gants-de-gardien-joma-hunter-naranja-amarillo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401949-809-naranja-amarillo-6a91b5c771294-1.webp",
+        sizes: ["4", "5", "6", "7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-360-orange",
+    id: "joma-gants-de-gardien-joma-area-360-orange",
     brand: "Joma",
     model: "Gants de gardien Joma Area 360 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -10836,9 +10514,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-360-noir",
+    id: "joma-gants-de-gardien-joma-area-360-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Area 360 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10858,12 +10537,31 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "12", price: 89.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401181-121-gants-de-gardien-joma-area-360-noir-jaune-fluor" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 39.78,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400911-105-gants-de-gardien-joma-area-360-negro-fucsia",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400911.105_0.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 41.36,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401712-117-gants-de-gardien-joma-area-360-negro-verde-fluor",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401712-117-negro-verde-fluor-6a91abb357b1c-1.webp",
+        sizes: ["9", "10"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-panther-bleu",
+    id: "joma-gants-de-gardien-joma-gk-panther-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma GK Panther - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -10881,13 +10579,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "12", price: 52.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-panther-bleu-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma GK Panther - Bleu",
-    offers: [
       {
         store: "FootStoreFR",
         price: 49.0,
@@ -10909,9 +10600,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-noir",
+    id: "joma-gants-de-gardien-joma-brave-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Brave - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -10922,12 +10614,49 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma_401183.121_0.jpg",
         sizes: ["10"],
       },
+      {
+        store: "FootStoreFR",
+        price: 51.24,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401366-105-gants-de-gardien-joma-brave-negro-rosa",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_401366.105_negro-rosa_1.webp",
+        sizes: ["8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 44.93,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401947-111-gants-de-gardien-joma-brave-black-grey",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401947-111-black-grey-6a91ae3439324-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 44.93,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401947-117-gants-de-gardien-joma-brave-negro-verde-fluor",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401947-117-negro-verde-fluor-6a91ae3647efa-1.webp",
+        sizes: ["7", "8", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 44.93,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401947-118-gants-de-gardien-joma-brave-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401947-118-black-6a91ae32486c9-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-multicolore",
+    id: "joma-gants-de-gardien-joma-brave-multicolore",
     brand: "Joma",
     model: "Gants de gardien Joma Brave - Multicolore",
+    colour: "Multicolore",
     offers: [
       {
         store: "FootStoreFR",
@@ -10946,9 +10675,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-blanc",
+    id: "joma-gants-de-gardien-joma-premier-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -10962,13 +10692,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-bleu",
+    id: "joma-gants-de-gardien-joma-premier-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
-        price: 52.0,
+        price: 51.0,
         priceMax: 56.37,
         shipping: 6.99,
         currency: "EUR",
@@ -10976,19 +10707,29 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma_401195.301_0.jpg",
         sizes: ["8", "9", "10", "11", "12"],
         sizePrices: [
-          { size: "8", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
+          { size: "8", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
           { size: "9", price: 56.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
           { size: "10", price: 56.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
-          { size: "11", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
+          { size: "11", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
           { size: "12", price: 56.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
         ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 55.58,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401948-717-gants-de-gardien-joma-premier-royal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401948-717-royal-6a91ae9a867a2-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
       },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-23-vert",
+    id: "joma-gants-de-gardien-joma-calcio-23-vert",
     brand: "Joma",
     model: "Gants de gardien Joma Calcio 23 - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -11002,9 +10743,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-23-rouge",
+    id: "joma-gants-de-gardien-joma-calcio-23-rouge",
     brand: "Joma",
     model: "Gants de gardien Joma Calcio 23 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -11018,13 +10760,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Powerline Supersoft HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
-        price: 50.0,
+        price: 51.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101130801-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir-rouge-blanc",
@@ -11034,9 +10777,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Powerline Supersoft - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11056,17 +10800,27 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "10", price: 38.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101130901-gants-de-gardien-uhlsport-powerline-supersoft-noir-rouge-blanc" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 38.82,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101130901-gants-de-gardien-uhlsport-powerline-supersoft-noir-rouge-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101130901_0.webp",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange",
+    id: "uhlsport-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Soft Resist Flex Frame - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
         price: 24.01,
-        priceMax: 37.0,
+        priceMax: 36.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131701-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange-fluo-noir-blanc",
@@ -11075,15 +10829,16 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizePrices: [
           { size: "9", price: 24.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131701-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange-fluo-noir-blanc" },
           { size: "9.5", price: 24.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131701-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange-fluo-noir-blanc" },
-          { size: "10.5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131701-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange-fluo-noir-blanc" },
+          { size: "10.5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131701-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange-fluo-noir-blanc" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-resist-orange",
+    id: "uhlsport-gants-de-gardien-uhlsport-soft-resist-orange",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Soft Resist - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -11103,9 +10858,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-gold-rouge",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-gold-rouge",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Gold - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -11119,25 +10875,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-infinity-noir-2",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Freegel Infinity - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 60.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5370735-7700-gants-de-gardien-reusch-attrakt-freegel-infinity-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5370735-7700_0.webp",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-hummel-gants-de-gardien-hummel-core-grip-blanc",
+    id: "hummel-gants-de-gardien-hummel-core-grip-blanc",
     brand: "Hummel",
     model: "Gants de gardien Hummel Core Grip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11156,12 +10897,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "11", price: 9.84, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224975-9210-gants-de-gardien-hummel-core-grip-white" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 9.84,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F224975-9210-gants-de-gardien-hummel-core-grip-white",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_224975-9210_0.jpg",
+        sizes: ["11"],
+      },
     ],
   },
   {
-    id: "footstorefr-hummel-gants-de-gardien-hummel-allround-grip-blanc",
+    id: "hummel-gants-de-gardien-hummel-allround-grip-blanc",
     brand: "Hummel",
     model: "Gants de gardien Hummel Allround Grip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11180,12 +10931,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "11", price: 17.13, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224976-9031-gants-de-gardien-hummel-allround-grip-white" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 17.13,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F224976-9031-gants-de-gardien-hummel-allround-grip-white",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_224976-9031_0.jpg",
+        sizes: ["11"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-grip3-rouge",
+    id: "nike-gants-de-gardien-nike-grip3-rouge",
     brand: "Nike",
     model: "Gants de gardien Nike Grip3 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -11204,9 +10965,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-rouge",
+    id: "nike-gants-de-gardien-nike-match-rouge",
     brand: "Nike",
     model: "Gants de gardien Nike Match - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -11224,28 +10986,56 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "9", price: 13.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcq7799-637-gants-de-gardien-nike-match-rouge" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-360-noir-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Area 360 - Noir",
-    offers: [
       {
         store: "FootStoreFR",
-        price: 39.78,
+        price: 30.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400911-105-gants-de-gardien-joma-area-360-negro-fucsia",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400911.105_0.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-635-gants-de-gardien-nike-match-bright-crimson-black-royal-tint",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hq0257-635-phslh001.jpg",
+        sizes: ["7", "8", "9"],
       },
     ],
   },
   {
-    id: "footstorefr-softee-paire-de-gants-de-gardien-softee-america-jaune",
+    id: "stanno-gants-match-de-gardien-stanno-volare-noir",
+    brand: "Stanno",
+    model: "Gants match de gardien Stanno Volare - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 47.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F481366-8990-gants-match-de-gardien-stanno-volare-black-grey",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/t/stanno_481366-8990-10_1.jpg",
+        sizes: ["10"],
+      },
+    ],
+  },
+  {
+    id: "stanno-gants-de-gardien-stanno-thunder-v-noir",
+    brand: "Stanno",
+    model: "Gants de gardien Stanno Thunder V - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 79.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F481373-8000-gants-de-gardien-stanno-thunder-v-black",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/t/stanno_481373-8000_1.jpg",
+        sizes: ["7", "7.5"],
+      },
+    ],
+  },
+  {
+    id: "softee-paire-de-gants-de-gardien-softee-america-jaune",
     brand: "Softee",
     model: "Paire de gants de gardien Softee América - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -11254,114 +11044,77 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35052-019-13-paire-de-gants-de-gardien-softee-america-amarillo-taille-7",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35052.019.11_amarillo-fluor-jaune_4.webp",
-        sizes: ["7"],
+        sizes: ["7", "8", "9"],
       },
     ],
   },
   {
-    id: "footstorefr-softee-paire-de-gants-de-gardien-softee-america-jaune-2",
-    brand: "Softee",
-    model: "Paire de gants de gardien Softee América - Jaune",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 11.44,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35052-019-15-paire-de-gants-de-gardien-softee-america-amarillo-fluor-taille-8",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35052.019.11_amarillo-fluor-jaune_4.webp",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-softee-paire-de-gants-de-gardien-softee-america-jaune-3",
-    brand: "Softee",
-    model: "Paire de gants de gardien Softee América - Jaune",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 11.44,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35052-019-17-paire-de-gants-de-gardien-softee-america-jaune-taille-9",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35052.019.11_amarillo-fluor-jaune_4.webp",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-softee-paire-de-gants-de-gardien-softee-europa-blanc",
+    id: "softee-paire-de-gants-de-gardien-softee-europa-blanc",
     brand: "Softee",
     model: "Paire de gants de gardien Softee Europa - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 11.44,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-13-paire-de-gants-de-gardien-softee-europa-blanc-taille-7",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_1.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-softee-paire-de-gants-de-gardien-softee-europa-blanc-2",
-    brand: "Softee",
-    model: "Paire de gants de gardien Softee Europa - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
         price: 8.3,
+        priceMax: 11.44,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-15-paire-de-gants-de-gardien-softee-europa-blanco-taille-8",
+        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_2.webp",
+        sizes: ["7", "8", "9"],
+        sizePrices: [
+          { size: "7", price: 11.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-13-paire-de-gants-de-gardien-softee-europa-blanc-taille-7" },
+          { size: "8", price: 8.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-15-paire-de-gants-de-gardien-softee-europa-blanco-taille-8" },
+          { size: "9", price: 11.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-17-paire-de-gants-de-gardien-softee-europa-blanco-negro-taille-9" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 8.3,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F35053-775-15-paire-de-gants-de-gardien-softee-europa-blanco-taille-8",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_2.webp",
         sizes: ["8"],
       },
     ],
   },
   {
-    id: "footstorefr-softee-paire-de-gants-de-gardien-softee-europa-blanc-3",
-    brand: "Softee",
-    model: "Paire de gants de gardien Softee Europa - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 11.44,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-17-paire-de-gants-de-gardien-softee-europa-blanco-negro-taille-9",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_1.webp",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-aquasoft-hn-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-aquasoft-hn-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Aquasoft HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
-        price: 59.0,
+        price: 61.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131401-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101131401_bleu-pacifique-vert-fluo-blanc_1.webp",
         sizes: ["7.5", "8"],
       },
+      {
+        store: "FootStoreFR",
+        price: 81.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp",
+        sizes: ["9"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-aquasoft-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-aquasoft-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Aquasoft - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
-        price: 60.0,
+        price: 62.0,
         priceMax: 69.0,
         shipping: 6.99,
         currency: "EUR",
@@ -11372,15 +11125,25 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "7.5", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
           { size: "8", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
           { size: "10", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
-          { size: "11", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
+          { size: "11", price: 62.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
         ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 42.95,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134101-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134101_bleu-pacifique-vert-fluo-blanc_1.webp",
+        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-noir",
+    id: "nike-gants-de-gardien-nike-vapor-grip3-noir",
     brand: "Nike",
     model: "Gants de gardien Nike Vapor Grip3 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11396,12 +11159,46 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "8.5", price: 65.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-010-gants-de-gardien-nike-vapor-grip3-black-hyper-turq-rush-fuchsia-white" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 66.66,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-011-gants-de-gardien-nike-vapor-grip3-black-white-mtlc-gold-coin",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fb2999-011-phslh001-ss25.webp",
+        sizes: ["8", "8.5", "9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 88.88,
+        priceMax: 97.95,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd5766-011-phslh001-ss25.webp",
+        sizes: ["8", "8.5", "9"],
+        sizePrices: [
+          { size: "8", price: 97.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin" },
+          { size: "8.5", price: 88.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin" },
+          { size: "9", price: 88.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 119.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-013-gants-de-gardien-nike-vapor-grip3-black-sunset-pulse-black",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fb2999-013-vpsrh001.jpg",
+        sizes: ["9"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-noir",
+    id: "nike-gants-de-gardien-nike-match-noir",
     brand: "Nike",
     model: "Gants de gardien Nike Match - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11417,12 +11214,31 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "9", price: 16.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj4862-010-gants-de-gardien-nike-match-black-hyper-turq-rush-fuchsia-white" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 16.66,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj4862-014-gants-de-gardien-nike-match-black-sunset-pulse-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fj4862-014-phsfz001.webp",
+        sizes: ["10", "11"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 25.6,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-010-gants-de-gardien-nike-match-black-white-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hq0257-010_black-white-white_1.webp",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-match-nike-noir",
+    id: "nike-gants-de-gardien-match-nike-noir",
     brand: "Nike",
     model: "Gants de gardien Match Nike - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11444,9 +11260,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-match-nike-blanc",
+    id: "nike-gants-de-gardien-match-nike-blanc",
     brand: "Nike",
     model: "Gants de gardien Match Nike - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11460,9 +11277,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-com-noir",
+    id: "adidas-gants-de-gardien-adidas-predator-com-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Com - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11482,9 +11300,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-trn-jaune",
+    id: "adidas-gants-de-gardien-adidas-predator-trn-jaune",
     brand: "adidas",
     model: "Gants de gardien adidas Predator TRN - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -11503,12 +11322,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "10", price: 18.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 18.75,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq4026_6_hardware_on_model_front_view_white.webp",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-trn-noir",
+    id: "adidas-gants-de-gardien-adidas-predator-trn-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Predator TRN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11529,9 +11358,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-as-bleu",
+    id: "rinat-gants-de-gardien-rinat-nkam-as-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Nkam AS - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11545,9 +11375,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-as-jaune",
+    id: "rinat-gants-de-gardien-rinat-nkam-as-jaune",
     brand: "Rinat",
     model: "Gants de gardien Rinat Nkam AS - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -11561,9 +11392,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-semi-bleu",
+    id: "rinat-gants-de-gardien-rinat-nkam-semi-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Nkam Semi - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11577,9 +11409,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-semi-jaune",
+    id: "rinat-gants-de-gardien-rinat-nkam-semi-jaune",
     brand: "Rinat",
     model: "Gants de gardien Rinat Nkam Semi - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -11593,9 +11426,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-silver-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-silver-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Silver - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -11609,9 +11443,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-silver-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-silver-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Silver - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11625,9 +11460,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-solid-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Solid - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11638,12 +11474,40 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5470515-4410_0.webp",
         sizes: ["10"],
       },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4126-gants-de-gardien-reusch-attrakt-solid-sharpblu-wht-shock-orng",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4126-sharpblu-wht-shock-orng-1.webp",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4129-gants-de-gardien-reusch-attrakt-solid-blu-shock-orang",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4129-blu-shock-orang-1.webp",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-4129-gants-de-gardien-reusch-attrakt-solid-blu-shock-orang",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4129-blu-shock-orang-1.webp",
+        sizes: ["8", "9", "9.5", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-infinity-finger-support-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-infinity-finger-support-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Infinity Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11657,9 +11521,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-fusion-strapless-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-fusion-strapless-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Fusion Strapless - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11673,9 +11538,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-fusion-goaliator-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-fusion-goaliator-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Fusion Goaliator - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11689,9 +11555,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-duo-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-duo-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Duo - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -11705,9 +11572,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-duo-evolution-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-duo-evolution-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Duo Evolution - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11721,9 +11589,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-nc-finger-support-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-nc-finger-support-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold NC Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11737,9 +11606,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-freegel-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-freegel-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X Freegel - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -11753,9 +11623,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-glueprint-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-glueprint-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X GluePrint - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -11768,10 +11639,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-evolution-glueprint-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-evolution-glueprint-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X Evolution GluePrint - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -11785,9 +11660,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-rouge",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-rouge",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -11801,9 +11677,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-fp-rouge",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-fp-rouge",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 (FP) - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -11817,9 +11694,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-gris",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-gris",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -11833,9 +11711,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-fp-gris",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-fp-gris",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 (FP) - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -11849,9 +11728,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11865,9 +11745,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-fp-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11881,9 +11762,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-classic-1-0-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-classic-1-0-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Classic 1.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11897,9 +11779,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-classic-1-0-fp-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-classic-1-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Classic 1.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -11913,9 +11796,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-erima-gants-de-gardien-erima-flex-ray-protect-gris",
+    id: "erima-gants-de-gardien-erima-flex-ray-protect-gris",
     brand: "Erima",
     model: "Gants de gardien Erima Flex-Ray Protect - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -11929,25 +11813,83 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-erima-gants-de-gardien-erima-flex-ray-robusto-gris",
+    id: "erima-gants-de-gardien-erima-flex-ray-robusto-gris",
     brand: "Erima",
     model: "Gants de gardien Erima Flex-Ray Robusto - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
         price: 30.0,
+        priceMax: 31.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7222403-gants-de-gardien-erima-flex-ray-robusto-gris-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/r/erima_7222403_0.webp",
-        sizes: ["7"],
+        sizes: ["7", "9"],
+        sizePrices: [
+          { size: "7", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7222403-gants-de-gardien-erima-flex-ray-robusto-gris-rouge" },
+          { size: "9", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7222403-gants-de-gardien-erima-flex-ray-robusto-gris-rouge" },
+        ],
       },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-grip3-noir",
+    id: "erima-gants-de-gardien-erima-flex-ray-hardground-gris",
+    brand: "Erima",
+    model: "Gants de gardien Erima Flex-Ray Hardground - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 39.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7222404-gants-de-gardien-erima-flex-ray-hardground-gris-jaune",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/r/erima_7222404_0.jpg",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
+    id: "erima-gants-de-gardien-erima-flex-ray-pro-hardground-gris",
+    brand: "Erima",
+    model: "Gants de gardien Erima Flex-Ray Pro Hardground - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 54.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7222406-gants-de-gardien-erima-flex-ray-pro-hardground-gris-rouge",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/r/erima_7222406_0.jpg",
+        sizes: ["12"],
+      },
+    ],
+  },
+  {
+    id: "erima-gants-de-gardien-erima-flex-ray-match-eco-gris",
+    brand: "Erima",
+    model: "Gants de gardien Erima Flex-Ray Match Eco - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 78.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7222407-gants-de-gardien-erima-flex-ray-match-eco-gris",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/r/erima_7222407_0.jpg",
+        sizes: ["8", "11", "12"],
+      },
+    ],
+  },
+  {
+    id: "nike-gants-de-gardien-nike-grip3-noir",
     brand: "Nike",
     model: "Gants de gardien Nike Grip3 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -11968,47 +11910,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-noir-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike Vapor Grip3 - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 66.66,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-011-gants-de-gardien-nike-vapor-grip3-black-white-mtlc-gold-coin",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fb2999-011-phslh001-ss25.webp",
-        sizes: ["8", "8.5", "9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-noir-3",
-    brand: "Nike",
-    model: "Gants de gardien Nike Vapor Grip3 - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 88.88,
-        priceMax: 97.95,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd5766-011-phslh001-ss25.webp",
-        sizes: ["8", "8.5", "9"],
-        sizePrices: [
-          { size: "8", price: 97.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin" },
-          { size: "8.5", price: 88.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin" },
-          { size: "9", price: 88.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd5766-011-gants-de-gardien-nike-vapor-grip3-black-blanc-mtlc-gold-coin" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-noir",
+    id: "nike-gants-de-gardien-nike-noir",
     brand: "Nike",
     model: "Gants de gardien Nike - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12022,25 +11927,67 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Comfort Absolutgrip HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
         price: 71.0,
+        priceMax: 75.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134901-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134901_0.webp",
-        sizes: ["7.5"],
+        sizes: ["7.5", "8"],
+        sizePrices: [
+          { size: "7.5", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134901-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir" },
+          { size: "8", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134901-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 46.63,
+        priceMax: 51.4,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101143001-black-69babd260436a-1.webp",
+        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
+        sizePrices: [
+          { size: "7", price: 46.63, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "7.5", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "8", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "8.5", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "9", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "9.5", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "10", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "10.5", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 46.63,
+        priceMax: 51.4,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101143001-black-69babd260436a-1.webp",
+        sizes: ["7", "7.5", "10"],
+        sizePrices: [
+          { size: "7", price: 46.63, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "7.5", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+          { size: "10", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
+        ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-absolutgrip-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-absolutgrip-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Absolutgrip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12051,12 +11998,49 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101135101_0.webp",
         sizes: ["7.5", "8", "8.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 43.53,
+        priceMax: 45.93,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp",
+        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
+        sizePrices: [
+          { size: "7", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "8", price: 45.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "8.5", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "9", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "9.5", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "10", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 43.53,
+        priceMax: 45.93,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp",
+        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
+        sizePrices: [
+          { size: "7", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "8", price: 45.27, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "8.5", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "9", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "9.5", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "10", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-supersoft-hn-flex-frame-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-supersoft-hn-flex-frame-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Supersoft HN Flex Frame - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12070,9 +12054,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-supergrip-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-supergrip-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Supergrip - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12086,13 +12071,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-absolutgrip-flex-frame-jaune",
+    id: "uhlsport-gants-de-gardien-uhlsport-absolutgrip-flex-frame-jaune",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Absolutgrip Flex Frame - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
-        price: 89.0,
+        price: 90.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134701-gants-de-gardien-uhlsport-absolutgrip-flex-frame-jaune-fluo-noir",
@@ -12102,9 +12088,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-hn-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-soft-hn-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Soft HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12118,9 +12105,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-advanced-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-soft-advanced-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Soft Advanced - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12131,12 +12119,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101135501_0.webp",
         sizes: ["10.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 14.53,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101136901-gants-de-gardien-uhlsport-soft-advanced-blanc-noir-vert-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101136901_blanc-noir-vert-fluo_1.webp",
+        sizes: ["7.5", "8", "9", "9.5", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-classic-1-0-noir",
+    id: "t1tan-gants-de-gardien-t1tan-classic-1-0-noir",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Classic 1.0 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12150,25 +12148,34 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-pro-noir",
+    id: "joma-gants-de-gardien-joma-gk-pro-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Gk- Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
         price: 22.41,
+        priceMax: 56.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400908.106_negro-rojo_1.webp",
-        sizes: ["7", "10", "11"],
+        sizes: ["7", "9", "10", "11"],
+        sizePrices: [
+          { size: "7", price: 22.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
+          { size: "9", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
+          { size: "10", price: 22.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
+          { size: "11", price: 22.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
+        ],
       },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-pro-blanc",
+    id: "joma-gants-de-gardien-joma-gk-pro-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Gk- Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12182,9 +12189,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-noir",
+    id: "joma-gants-de-gardien-joma-panther-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Panther - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12195,12 +12203,40 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_401361.108_negro-naranja_1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
+      {
+        store: "FootStoreFR",
+        price: 67.03,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401946-114-gants-de-gardien-joma-panther-black-violet",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401946-114-black-violet-6a91ae7295f18-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 67.03,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401946-116-gants-de-gardien-joma-panther-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401946-116-black-6a91ae6aa4f28-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 67.03,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401946-117-gants-de-gardien-joma-panther-negro-verde-fluor",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401946-117-negro-verde-fluor-6a91ae7d1b3c3-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-orange",
+    id: "joma-gants-de-gardien-joma-panther-orange",
     brand: "Joma",
     model: "Gants de gardien Joma Panther - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -12214,9 +12250,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-24-bleu",
+    id: "joma-gants-de-gardien-joma-area-24-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma Area 24 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12230,9 +12267,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-24-rouge",
+    id: "joma-gants-de-gardien-joma-area-24-rouge",
     brand: "Joma",
     model: "Gants de gardien Joma Area 24 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -12246,9 +12284,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-noir",
+    id: "joma-gants-de-gardien-joma-premier-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12259,13 +12298,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_401364.119_negro-coral-fluor_1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-noir-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Premier - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 31.0,
@@ -12287,25 +12319,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-noir-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 51.24,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401366-105-gants-de-gardien-joma-brave-negro-rosa",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_401366.105_negro-rosa_1.webp",
-        sizes: ["8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-bleu",
+    id: "joma-gants-de-gardien-joma-brave-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma Brave - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12316,12 +12333,22 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_401366.721_royal-amarillo-fluor_1.webp",
         sizes: ["9", "10", "11"],
       },
+      {
+        store: "FootStoreFR",
+        price: 25.57,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401709-700-gants-de-gardien-joma-brave-royal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401709-700-royal-6a91ae3a26efa-1.webp",
+        sizes: ["8", "9", "10", "11", "12"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-hunter-vert",
+    id: "joma-gants-de-gardien-joma-hunter-vert",
     brand: "Joma",
     model: "Gants de gardien Joma Hunter - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -12335,57 +12362,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-noir-4",
-    brand: "Nike",
-    model: "Gants de gardien Nike Vapor Grip3 - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 119.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-013-gants-de-gardien-nike-vapor-grip3-black-sunset-pulse-black",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fb2999-013-vpsrh001.jpg",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-noir-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike Match - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.66,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj4862-014-gants-de-gardien-nike-match-black-sunset-pulse-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fj4862-014-phsfz001.webp",
-        sizes: ["10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-debut-adidas-predator-pro-rose",
-    brand: "adidas",
-    model: "Gants de gardien debut adidas Predator Pro - Rose",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 130.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis7586-gants-de-gardien-debut-adidas-predator-pro-turbo-aurbla-turbo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is7586_1_hardware_photography_front_center_view_white-nw112824.webp",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-adidas-copa-blanc",
+    id: "adidas-gants-adidas-copa-blanc",
     brand: "adidas",
     model: "Gants adidas COPA - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12399,9 +12379,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-supergrip-finger-surround-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-supergrip-finger-surround-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Supergrip+ Finger Surround - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12415,13 +12396,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-absolutgrip-hn-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-absolutgrip-hn-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Absolutgrip HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
-        price: 68.0,
+        price: 66.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101133301-gants-de-gardien-uhlsport-prediction-absolutgrip-hn-bleu-marine-blanc-jaune-fluo",
@@ -12431,9 +12413,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-supersoft-hn-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-supersoft-hn-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Supersoft HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12447,9 +12430,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-supersoft-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-supersoft-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Supersoft - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12463,14 +12447,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-resist-orange-2",
+    id: "uhlsport-gants-de-gardien-uhlsport-soft-resist-orange-2",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Soft Resist+ - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
         price: 19.27,
-        priceMax: 37.0,
+        priceMax: 36.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir",
@@ -12478,22 +12463,20 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["8.5", "9", "9.5", "10", "10.5", "11"],
         sizePrices: [
           { size: "8.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
-          { size: "9", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
-          { size: "9.5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
+          { size: "9", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
+          { size: "9.5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
           { size: "10", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
-          { size: "10.5", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
+          { size: "10.5", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
           { size: "11", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
         ],
       },
     ],
   },
-];
-
-const minedGloveProductsChunk5: GloveProduct[] = [
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-negative-contact-duo-blanc",
+    id: "precision-gants-de-gardien-precision-fusion-x-pro-negative-contact-duo-blanc",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Pro Negative Contact Duo - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12507,9 +12490,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-roll-finger-giga-noir",
+    id: "precision-gants-de-gardien-precision-fusion-x-pro-roll-finger-giga-noir",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Pro Roll Finger Giga - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12523,9 +12507,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-protection-des-doigts-precision-fusion-x-noir",
+    id: "precision-gants-de-gardien-protection-des-doigts-precision-fusion-x-noir",
     brand: "Precision",
     model: "Gants de gardien protection des doigts Precision Fusion X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12534,62 +12519,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg15808-gants-de-gardien-protection-des-doigts-precision-fusion-x-blk-fluo-yellow-taille-8",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg15811_black-fluo-yellow_1.jpg",
-        sizes: ["8"],
+        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-protection-des-doigts-precision-fusion-x-noir-2",
-    brand: "Precision",
-    model: "Gants de gardien protection des doigts Precision Fusion X - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.67,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg15809-gants-de-gardien-protection-des-doigts-precision-fusion-x-noir-fluo-yellow-taille-9",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg15811_black-fluo-yellow_1.jpg",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-protection-des-doigts-precision-fusion-x-noir-3",
-    brand: "Precision",
-    model: "Gants de gardien protection des doigts Precision Fusion X - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.67,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg15810-gants-de-gardien-protection-des-doigts-precision-fusion-x-black-jaune-fluo-taille-10",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg15811_black-fluo-yellow_1.jpg",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-protection-des-doigts-precision-fusion-x-noir-4",
-    brand: "Precision",
-    model: "Gants de gardien protection des doigts Precision Fusion X - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.67,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg15811-gants-de-gardien-protection-des-doigts-precision-fusion-x-black-fluo-yellow-taille-11",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg15811_black-fluo-yellow_1.jpg",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-en-quartz-precision-fusion-x-pro-surround-noir",
+    id: "precision-gants-de-gardien-en-quartz-precision-fusion-x-pro-surround-noir",
     brand: "Precision",
     model: "Gants de gardien en quartz Precision Fusion X Pro Surround - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12610,9 +12548,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-noir",
+    id: "precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-noir",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Pro Lite Giga - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12626,9 +12565,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-noir",
+    id: "precision-gants-de-gardien-precision-fusion-x-noir",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12642,9 +12582,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-negative-replica-blanc",
+    id: "precision-gants-de-gardien-precision-fusion-x-negative-replica-blanc",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Negative Replica - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12658,9 +12599,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-jaune",
+    id: "precision-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-jaune",
     brand: "Precision",
     model: "Gants de gardien à coupe plate Precision Fusion X Essential - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -12669,62 +12611,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16008-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-fluo-yellow-blk-taille-8",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg16011_fluo-yellow-black_1.webp",
-        sizes: ["8"],
+        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-jaune-2",
-    brand: "Precision",
-    model: "Gants de gardien à coupe plate Precision Fusion X Essential - Jaune",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 14.04,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16009-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-fluo-yellow-noir-taille-9",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg16011_fluo-yellow-black_1.webp",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-jaune-3",
-    brand: "Precision",
-    model: "Gants de gardien à coupe plate Precision Fusion X Essential - Jaune",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 14.04,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16010-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-jaune-fluo-black-taille-10",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg16011_fluo-yellow-black_1.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-jaune-4",
-    brand: "Precision",
-    model: "Gants de gardien à coupe plate Precision Fusion X Essential - Jaune",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 14.04,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16011-gants-de-gardien-a-coupe-plate-precision-fusion-x-essential-fluo-yellow-black-taille-11",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg16011_fluo-yellow-black_1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-blanc",
+    id: "precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-blanc",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Pro Lite Giga - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12733,78 +12628,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16209-gants-de-gardien-precision-fusion-x-pro-lite-giga-white-orange-fluo-taille-9",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15208_black-white_1.webp",
-        sizes: ["9"],
+        sizes: ["9", "9.5", "10", "10.5", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-blanc-2",
-    brand: "Precision",
-    model: "Gants de gardien Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 40.33,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16209h-gants-de-gardien-precision-fusion-x-pro-lite-giga-fluo-orange-white-taille-9-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15208_black-white_1.webp",
-        sizes: ["9.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-blanc-3",
-    brand: "Precision",
-    model: "Gants de gardien Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 40.33,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16210-gants-de-gardien-precision-fusion-x-pro-lite-giga-fluo-orange-wht-taille-10",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15208_black-white_1.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-blanc-4",
-    brand: "Precision",
-    model: "Gants de gardien Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 40.33,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16210h-gants-de-gardien-precision-fusion-x-pro-lite-giga-fluo-orange-blanc-taille-10-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15208_black-white_1.webp",
-        sizes: ["10.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-lite-giga-blanc-5",
-    brand: "Precision",
-    model: "Gants de gardien Precision Fusion X Pro Lite Giga - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 40.33,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16211-gants-de-gardien-precision-fusion-x-pro-lite-giga-white-fluo-orange-taille-11",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15208_black-white_1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-pro-hybrid-giga-blanc",
+    id: "precision-gants-de-gardien-precision-fusion-x-pro-hybrid-giga-blanc",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Pro Hybrid Giga - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12824,12 +12656,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 63.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg16408-gants-de-gardien-precision-fusion-x-pro-hybrid-giga-blanc" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 49.05,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fprg16408-gants-de-gardien-precision-fusion-x-pro-hybrid-giga-blanc",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg16306_white-classic-black_1.jpg",
+        sizes: ["9.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-grip3-bleu",
+    id: "nike-gants-de-gardien-nike-grip3-bleu",
     brand: "Nike",
     model: "Gants de gardien Nike Grip3 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12840,12 +12682,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fb2998-420-phslh001.jpg",
         sizes: ["8", "9", "11"],
       },
+      {
+        store: "FootStoreFR",
+        price: 46.29,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0256-458-gants-de-gardien-nike-grip3-racer-blue-black-pink-blast",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hq0256-458_00.webp",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-bleu",
+    id: "nike-gants-de-gardien-nike-bleu",
     brand: "Nike",
     model: "Gants de gardien Nike - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12864,13 +12716,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 16.16, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj4862-420-gants-de-gardien-nike-blue-fury-blackened-blue-glacier-blue" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-bleu-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike - Bleu",
-    offers: [
       {
         store: "FootStoreFR",
         price: 64.0,
@@ -12883,9 +12728,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-select-gants-de-gardien-select-99-blanc",
+    id: "select-gants-de-gardien-select-99-blanc",
     brand: "Select",
     model: "Gants de gardien Select 99 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12899,9 +12745,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-select-gants-de-gardien-select-77-super-grip-blanc",
+    id: "select-gants-de-gardien-select-77-super-grip-blanc",
     brand: "Select",
     model: "Gants de gardien Select 77 Super Grip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12915,9 +12762,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-select-gants-de-gardien-select-55-extra-fg-noir",
+    id: "select-gants-de-gardien-select-55-extra-fg-noir",
     brand: "Select",
     model: "Gants de gardien Select 55 Extra FG - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -12931,9 +12779,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-select-gants-de-gardien-select-34-allround-blanc",
+    id: "select-gants-de-gardien-select-34-allround-blanc",
     brand: "Select",
     model: "Gants de gardien Select 34 Allround - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12947,9 +12796,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-pure-contact-gold-bleu",
+    id: "reusch-gants-de-gardien-reusch-pure-contact-gold-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Pure Contact Gold - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12960,12 +12810,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5470100-4848_premium-blue-electric-orange-black_1.webp",
         sizes: ["8"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 89.95,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5470100-4848-gants-de-gardien-reusch-pure-contact-gold-premium-blue-electric-orange-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5470100-4848_premium-blue-electric-orange-black_1.webp",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-bleu",
+    id: "nike-gants-de-gardien-nike-vapor-grip3-bleu",
     brand: "Nike",
     model: "Gants de gardien Nike Vapor Grip3 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -12976,12 +12836,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fb2999-420-phsfz001-nw112724.jpg",
         sizes: ["9"],
       },
+      {
+        store: "FootStoreFR",
+        price: 88.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0304-458-gants-de-gardien-nike-vapor-grip3-racer-blue-black-pink-blast",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hq0304-458-racer-blue-black-pink-blast-1.webp",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-blanc",
+    id: "reusch-gants-de-gardien-reusch-attrakt-solid-blanc",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Solid - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -12995,9 +12865,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-gold-x-evolution-blanc",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-gold-x-evolution-blanc",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Gold X Evolution - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13011,9 +12882,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-pure-contact-silver-bleu",
+    id: "reusch-gants-de-gardien-reusch-pure-contact-silver-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Pure Contact Silver - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13027,9 +12899,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-aqua-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-aqua-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Aqua - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13043,9 +12916,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-aqua-evolution-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-aqua-evolution-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Aqua Evolution - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13059,9 +12933,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-re-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-re-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt RE - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13075,9 +12950,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-pure-contact-gold-x-glueprint-strapless-blanc",
+    id: "reusch-gants-de-gardien-reusch-pure-contact-gold-x-glueprint-strapless-blanc",
     brand: "Reusch",
     model: "Gants de gardien Reusch Pure Contact Gold X GluePrint Strapless - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13091,9 +12967,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-noir",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-noir",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13107,9 +12984,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-noir",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-noir",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13123,9 +13001,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-solid-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Solid - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13136,12 +13015,58 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-2290-gants-de-gardien-reusch-attrakt-solid-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-2290_black_1.webp",
+        sizes: ["7.5", "8.5", "9", "9.5", "10", "11"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-4467-gants-de-gardien-reusch-attrakt-solid-noir-bleu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-4467_noir-bleu_1.webp",
+        sizes: ["8.5", "9", "9.5", "10"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
+        sizes: ["7.5", "8"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
+        sizes: ["8.5", "9.5", "10.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-jaune",
+    id: "nike-gants-de-gardien-nike-vapor-grip3-jaune",
     brand: "Nike",
     model: "Gants de gardien Nike Vapor Grip3 - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -13155,9 +13080,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-academy-noir",
+    id: "nike-gants-de-gardien-nike-academy-noir",
     brand: "Nike",
     model: "Gants de gardien Nike Academy - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13168,13 +13094,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hf0546-010_black-black-black_1.webp",
         sizes: ["S", "L", "M"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-academy-noir-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike Academy - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 17.78,
@@ -13183,7 +13102,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hf0546-011-phsfz001-nw110824.webp",
-        sizes: ["S", "L", "M", "XL"],
+        sizes: ["XL", "S", "L", "M"],
         sizePrices: [
           { size: "S", price: 19.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white" },
           { size: "L", price: 17.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white" },
@@ -13191,29 +13110,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "M", price: 17.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-noir-3",
-    brand: "Nike",
-    model: "Gants de gardien Nike Match - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 25.6,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-010-gants-de-gardien-nike-match-black-white-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hq0257-010_black-white-white_1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-academy-noir-3",
-    brand: "Nike",
-    model: "Gants de gardien Nike Academy - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 15.51,
@@ -13223,12 +13119,31 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hf0546-013-phslh001-ss25.jpg",
         sizes: ["S", "L", "M"],
       },
+      {
+        store: "FootStoreFR",
+        price: 24.72,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-011-gants-de-gardien-nike-academy-black-off-white-off-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.webp",
+        sizes: ["XL", "S", "L", "M"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 24.72,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-013-gants-de-gardien-nike-academy-black-anthracite-anthracite",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp",
+        sizes: ["XL", "L"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-starter-soft-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-starter-soft-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Starter Soft - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13242,9 +13157,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-starter-resist-orange",
+    id: "uhlsport-gants-de-gardien-uhlsport-starter-resist-orange",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Starter Resist+ - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -13258,41 +13174,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-noir-2",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-2290-gants-de-gardien-reusch-attrakt-solid-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-2290_black_1.webp",
-        sizes: ["7.5", "8.5", "9", "9.5", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-noir-3",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-4467-gants-de-gardien-reusch-attrakt-solid-noir-bleu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-4467_noir-bleu_1.webp",
-        sizes: ["8.5", "9", "9.5", "10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-bleu",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-bleu",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13306,9 +13191,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-givova-gants-de-gardien-givova-stop-orange",
+    id: "givova-gants-de-gardien-givova-stop-orange",
     brand: "Givova",
     model: "Gants de gardien Givova Stop - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -13322,9 +13208,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-givova-gants-de-gardien-givova-stop-vert",
+    id: "givova-gants-de-gardien-givova-stop-vert",
     brand: "Givova",
     model: "Gants de gardien Givova Stop - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -13338,9 +13225,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-soft-flex-frame-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-soft-flex-frame-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Soft Flex Frame - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13354,9 +13242,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-prediction-soft-pro-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-prediction-soft-pro-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Prediction Soft Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13370,9 +13259,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-aquagrip-hn-uhlsport-bleu",
+    id: "uhlsport-gants-de-gardien-aquagrip-hn-uhlsport-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Aquagrip HN Uhlsport - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13386,55 +13276,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-aquasoft-hn-bleu-2",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Aquasoft HN - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 47.69,
-        priceMax: 81.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp",
-        sizes: ["7.5", "8", "8.5", "9", "9.5", "10.5"],
-        sizePrices: [
-          { size: "7.5", price: 47.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
-          { size: "8", price: 47.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
-          { size: "8.5", price: 47.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
-          { size: "9", price: 81.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
-          { size: "9.5", price: 47.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
-          { size: "10.5", price: 47.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-aquasoft-bleu-2",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Aquasoft - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 42.95,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134101-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134101_bleu-pacifique-vert-fluo-blanc_1.webp",
-        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-orange",
+    id: "uhlsport-gants-de-gardien-uhlsport-soft-orange",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport Soft - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
         price: 19.27,
-        priceMax: 38.0,
+        priceMax: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir",
@@ -13443,16 +13293,17 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizePrices: [
           { size: "8", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir" },
           { size: "9", price: 21.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir" },
-          { size: "9.5", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir" },
+          { size: "9.5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir" },
           { size: "11", price: 21.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-classic-1-0-fp-noir",
+    id: "t1tan-gants-de-gardien-t1tan-classic-1-0-fp-noir",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Classic 1.0 (FP) - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13466,9 +13317,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13482,9 +13334,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13498,9 +13351,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-nemesis-prime-vert",
+    id: "rinat-gants-de-gardien-rinat-aries-nemesis-prime-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Némesis Prime - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -13514,9 +13368,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-nemesis-prime-bleu",
+    id: "rinat-gants-de-gardien-rinat-aries-nemesis-prime-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Némesis Prime - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13530,9 +13385,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-nemesis-prime-jaune",
+    id: "rinat-gants-de-gardien-rinat-aries-nemesis-prime-jaune",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Némesis Prime - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -13546,9 +13402,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-the-boss-stellar-alpha-2022-23-gris",
+    id: "rinat-gants-de-gardien-rinat-the-boss-stellar-alpha-2022-23-gris",
     brand: "Rinat",
     model: "Gants de gardien Rinat The Boss Stellar Alpha 2022/23 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -13562,32 +13419,33 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-vengador-gravity-bleu",
+    id: "rinat-gants-de-gardien-rinat-egotiko-vengador-gravity-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Vengador Gravity - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
         price: 14.98,
-        priceMax: 21.0,
+        priceMax: 18.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegga2970-gants-de-gardien-rinat-egotiko-vengador-gravity-royal-blue-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_eggi2973_royal-blue-red_1.webp",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7", "8", "9"],
         sizePrices: [
           { size: "7", price: 14.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegga2970-gants-de-gardien-rinat-egotiko-vengador-gravity-royal-blue-red" },
-          { size: "8", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegga2970-gants-de-gardien-rinat-egotiko-vengador-gravity-royal-blue-red" },
+          { size: "8", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegga2970-gants-de-gardien-rinat-egotiko-vengador-gravity-royal-blue-red" },
           { size: "9", price: 14.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegga2970-gants-de-gardien-rinat-egotiko-vengador-gravity-royal-blue-red" },
-          { size: "10", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegga2970-gants-de-gardien-rinat-egotiko-vengador-gravity-royal-blue-red" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-vengador-blanc",
+    id: "rinat-gants-de-gardien-rinat-egotiko-vengador-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Vengador - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13601,9 +13459,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-vengador-prime-blanc",
+    id: "rinat-gants-de-gardien-rinat-egotiko-vengador-prime-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Vengador Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13617,9 +13476,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-vengador-prime-orange",
+    id: "rinat-gants-de-gardien-rinat-egotiko-vengador-prime-orange",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Vengador Prime - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -13640,9 +13500,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-vengador-as-bleu",
+    id: "rinat-gants-de-gardien-rinat-egotiko-vengador-as-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Vengador As - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13663,9 +13524,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-vengador-turf-orange",
+    id: "rinat-gants-de-gardien-rinat-egotiko-vengador-turf-orange",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Vengador Turf - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -13679,9 +13541,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-full-latex-2023-24-noir",
+    id: "rinat-gants-de-gardien-rinat-santoloco-full-latex-2023-24-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Full Latex 2023/24 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13695,9 +13558,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-kali-as-bleu",
+    id: "rinat-gants-de-gardien-rinat-kali-as-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Kali As - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -13711,9 +13575,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-kratos-semi-noir",
+    id: "rinat-gants-de-gardien-rinat-kratos-semi-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat kratos Semi - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13730,13 +13595,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "10", price: 38.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkrtfa1090-gants-de-gardien-rinat-kratos-semi-black" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-kratos-semi-noir-2",
-    brand: "Rinat",
-    model: "Gants de gardien Rinat kratos Semi - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 38.19,
@@ -13746,12 +13604,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_krtfa1099_black-black_1.webp",
         sizes: ["9", "10"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 38.78,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkrtfa1090-gants-de-gardien-rinat-kratos-semi-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_krtfa1090_black_1.webp",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-lexus-pro-2023-24-blanc",
+    id: "rinat-gants-de-gardien-rinat-lexus-pro-2023-24-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Lexus Pro 2023/24 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13765,9 +13633,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-lexus-semi-2023-24-blanc",
+    id: "rinat-gants-de-gardien-rinat-lexus-semi-2023-24-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Lexus Semi 2023/24 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13781,9 +13650,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-meta-tactik-as-2023-24-noir",
+    id: "rinat-gants-de-gardien-rinat-meta-tactik-as-2023-24-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat meta Tactik As 2023/24 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13797,9 +13667,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-meta-tactik-as-2023-24-gris",
+    id: "rinat-gants-de-gardien-rinat-meta-tactik-as-2023-24-gris",
     brand: "Rinat",
     model: "Gants de gardien Rinat meta Tactik As 2023/24 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -13813,9 +13684,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-meta-semi-2022-23-gris",
+    id: "rinat-gants-de-gardien-rinat-meta-semi-2022-23-gris",
     brand: "Rinat",
     model: "Gants de gardien Rinat meta Semi 2022/23 - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -13829,9 +13701,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-pro-rouge",
+    id: "rinat-gants-de-gardien-rinat-nkam-pro-rouge",
     brand: "Rinat",
     model: "Gants de gardien Rinat Nkam Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -13845,9 +13718,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-prime-rouge",
+    id: "rinat-gants-de-gardien-rinat-nkam-prime-rouge",
     brand: "Rinat",
     model: "Gants de gardien Rinat Nkam Prime - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -13867,9 +13741,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-alpha-noir",
+    id: "rinat-gants-de-gardien-rinat-santoloco-alpha-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Alpha - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13883,9 +13758,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-alpha-blanc",
+    id: "rinat-gants-de-gardien-rinat-santoloco-alpha-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Alpha - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13899,9 +13775,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-dominius-pro-jaune",
+    id: "rinat-gants-de-gardien-rinat-dominius-pro-jaune",
     brand: "Rinat",
     model: "Gants de gardien Rinat Dominius Pro - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -13915,9 +13792,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-dominius-prime-blanc",
+    id: "rinat-gants-de-gardien-rinat-dominius-prime-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Dominius Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -13931,9 +13809,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-dominius-prime-vert",
+    id: "rinat-gants-de-gardien-rinat-dominius-prime-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Dominius Prime - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -13947,9 +13826,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-dominius-as-vert",
+    id: "rinat-gants-de-gardien-rinat-dominius-as-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Dominius As - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -13963,9 +13843,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-football-attrakt-freegel-silver-noir",
+    id: "reusch-gants-de-gardien-reusch-football-attrakt-freegel-silver-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Football Attrakt Freegel Silver - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -13979,9 +13860,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-rouge",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-rouge",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -13995,9 +13877,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-grip-jaune",
+    id: "reusch-gants-de-gardien-reusch-attrakt-grip-jaune",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Grip - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -14011,9 +13894,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-jaune",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-jaune",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X NC - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -14027,9 +13911,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-pro-rouge",
+    id: "adidas-gants-de-gardien-adidas-predator-pro-rouge",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -14054,12 +13939,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "12", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 97.5,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_iw6276_1_hardware_photography_front_center_view_white.jpg",
+        sizes: ["9"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-league-blanc",
+    id: "adidas-gants-de-gardien-adidas-copa-league-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Copa League - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14070,12 +13965,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jh3793_white_1.jpg",
         sizes: ["8.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 65.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7810-gants-de-gardien-adidas-copa-league-white-lucred-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7810.webp",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-league-rouge",
+    id: "adidas-gants-de-gardien-adidas-predator-league-rouge",
     brand: "adidas",
     model: "Gants de gardien adidas Predator League - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -14098,32 +14003,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-league-blanc-2",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator League - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 42.0,
-        priceMax: 57.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jh3820_1_hardware_photography_front_center_view_white.jpg",
-        sizes: ["9", "10.5", "11", "11.5"],
-        sizePrices: [
-          { size: "9", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
-          { size: "10.5", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
-          { size: "11", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
-          { size: "11.5", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-competition-adidas-predator-rouge",
+    id: "adidas-gants-de-gardien-competition-adidas-predator-rouge",
     brand: "adidas",
     model: "Gants de gardien Competition adidas Predator - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -14137,9 +14020,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-d-entrainement-adidas-predator-noir",
+    id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-noir",
     brand: "adidas",
     model: "Gants de gardien d'entraînement adidas Predator - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14163,9 +14047,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-aztlan-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-aztlan-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Aztlan - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14176,12 +14061,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4001500_noir-dore_1.jpg",
         sizes: ["10", "11"],
       },
+      {
+        store: "FootStoreFR",
+        price: 63.08,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel5000840-gants-de-gardien-elite-sport-aztlan-black-mat",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000840-black-mat-6a5ddfdca6dd8-1.webp",
+        sizes: ["5", "6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-pulsar-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-pulsar-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Pulsar - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14194,16 +14089,17 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["6", "8", "11"],
         sizePrices: [
           { size: "6", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4002980-gants-de-gardien-elite-sport-pulsar-blanc" },
-          { size: "8", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4002980-gants-de-gardien-elite-sport-pulsar-blanc" },
+          { size: "8", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4002980-gants-de-gardien-elite-sport-pulsar-blanc" },
           { size: "11", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4002980-gants-de-gardien-elite-sport-pulsar-blanc" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-vibora-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-vibora-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Vibora - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14224,12 +14120,30 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 42.65,
+        priceMax: 45.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003190_noir_1.jpg",
+        sizes: ["7", "8", "9", "10", "11"],
+        sizePrices: [
+          { size: "7", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
+          { size: "8", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
+          { size: "9", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
+          { size: "10", price: 42.65, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
+          { size: "11", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-blanc",
+    id: "rinat-gants-de-gardien-rinat-nkam-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat NKAM - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14243,9 +14157,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-bleu",
+    id: "rinat-gants-de-gardien-rinat-nkam-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat NKAM - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -14259,9 +14174,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-prime-blanc",
+    id: "rinat-gants-de-gardien-rinat-nkam-prime-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat NKAM Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14275,9 +14191,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-prime-bleu",
+    id: "rinat-gants-de-gardien-rinat-nkam-prime-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat NKAM Prime - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -14291,9 +14208,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-nkam-as-blanc",
+    id: "rinat-gants-de-gardien-rinat-nkam-as-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat NKAM AS - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14307,9 +14225,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-rose",
+    id: "nike-gants-de-gardien-nike-match-rose",
     brand: "Nike",
     model: "Gants de gardien Nike Match - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -14323,9 +14242,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-hn-comp-soft-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-hn-comp-soft-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport HN Comp Soft - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14339,9 +14259,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-volare-ultra-iii-noir",
+    id: "stanno-gants-de-gardien-stanno-volare-ultra-iii-noir",
     brand: "Stanno",
     model: "Gants de gardien Stanno Volare Ultra III - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14355,9 +14276,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-mighty-ii-gris",
+    id: "stanno-gants-de-gardien-stanno-mighty-ii-gris",
     brand: "Stanno",
     model: "Gants de gardien Stanno Mighty II - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -14371,9 +14293,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-ultimate-grip-opf-blanc",
+    id: "stanno-gants-de-gardien-stanno-ultimate-grip-opf-blanc",
     brand: "Stanno",
     model: "Gants de gardien Stanno Ultimate Grip OPF - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14387,9 +14310,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-ultimate-grip-iv-blanc",
+    id: "stanno-gants-de-gardien-stanno-ultimate-grip-iv-blanc",
     brand: "Stanno",
     model: "Gants de gardien Stanno Ultimate Grip IV - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14403,9 +14327,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-derbystar-gants-de-gardien-derbystar-optimus-noir",
+    id: "derbystar-gants-de-gardien-derbystar-optimus-noir",
     brand: "Derbystar",
     model: "Gants de gardien Derbystar Optimus - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14421,28 +14346,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "12", price: 29.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff20390-gants-de-gardien-derbystar-optimus-black-green" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-soft-advanced-blanc-2",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Soft Advanced - Blanc",
-    offers: [
       {
         store: "FootStoreFR",
-        price: 14.53,
+        price: 29.95,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101136901-gants-de-gardien-uhlsport-soft-advanced-blanc-noir-vert-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101136901_blanc-noir-vert-fluo_1.webp",
-        sizes: ["7.5", "8", "9", "9.5", "10", "11"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff20360-gants-de-gardien-derbystar-optimus-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar_f20360_black_1.webp",
+        sizes: ["10"],
       },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-bleu",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-bleu",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo Revolution - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -14456,9 +14375,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-nebula-gris",
+    id: "elite-sport-gants-de-gardien-elite-sport-nebula-gris",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Nebula - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -14472,9 +14392,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-real-white-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-real-white-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Real White - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14488,13 +14409,14 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-pro-bleu",
+    id: "adidas-gants-de-gardien-adidas-copa-pro-bleu",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
-        price: 73.0,
+        price: 72.0,
         priceMax: 94.0,
         shipping: 6.99,
         currency: "EUR",
@@ -14502,44 +14424,39 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jf8897_1_hardware_photography_front_center_view_white.webp",
         sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "11"],
         sizePrices: [
-          { size: "7", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "7.5", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "8", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "8.5", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "7", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "7.5", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "8", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "8.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
           { size: "9", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "9.5", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "11", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "9.5", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "11", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-league-bleu",
+    id: "adidas-gants-de-gardien-adidas-copa-league-bleu",
     brand: "adidas",
     model: "Gants de gardien adidas Copa League - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
         price: 47.0,
-        priceMax: 51.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3794-gants-de-gardien-adidas-copa-league-blufus-halblu-luclem",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh3794_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8.5", "10.5", "11", "11.5"],
-        sizePrices: [
-          { size: "8.5", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3794-gants-de-gardien-adidas-copa-league-blufus-halblu-luclem" },
-          { size: "10.5", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3794-gants-de-gardien-adidas-copa-league-blufus-halblu-luclem" },
-          { size: "11", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3794-gants-de-gardien-adidas-copa-league-blufus-halblu-luclem" },
-          { size: "11.5", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3794-gants-de-gardien-adidas-copa-league-blufus-halblu-luclem" },
-        ],
+        sizes: ["10.5", "11", "11.5"],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-match-fingersave-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-match-fingersave-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Match Fingersave - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14557,12 +14474,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11.5", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 48.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7784-gants-de-gardien-adidas-predator-match-fingersave-white-lucred-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7784.webp",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14583,12 +14510,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "10.5", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 72.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7799-gants-de-gardien-adidas-predator-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7799.webp",
+        sizes: ["10"],
+      },
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-bleu",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-bleu",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -14602,9 +14539,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-rouge",
+    id: "t1tan-gants-de-gardien-t1tan-rebel-2-0-fp-rouge",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -14618,9 +14556,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-blue-best-3-0-bleu",
+    id: "t1tan-gants-de-gardien-t1tan-blue-best-3-0-bleu",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Blue Best 3.0 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -14634,9 +14573,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-shadow-best-3-0-noir",
+    id: "t1tan-gants-de-gardien-t1tan-shadow-best-3-0-noir",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Shadow Best 3.0 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14650,48 +14590,43 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-huari-gants-de-gardien-huari-ibram-blanc",
-    brand: "Huari",
-    model: "Gants de gardien Huari Ibram - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 28.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000164581-gants-de-gardien-huari-ibram-white-florida-keys",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/huari_m000164581_white-florida-keys_1.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-orange",
+    id: "adidas-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-orange",
     brand: "adidas",
     model: "Gants de gardien coupes hybride adidas Predator MTC FS - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
         price: 25.11,
-        priceMax: 49.0,
+        priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5352_1_hardware_photography_front_center_view_white.webp",
         sizes: ["8.5", "9", "9.5", "10"],
         sizePrices: [
-          { size: "8.5", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
-          { size: "9", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
-          { size: "9.5", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
+          { size: "8.5", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
+          { size: "9", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
+          { size: "9.5", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
           { size: "10", price: 25.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
         ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 25.11,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5352_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["10"],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-noir",
+    id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-noir",
     brand: "adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14700,14 +14635,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj3531-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-black-carbon-luclem",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj3531_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8", "8.5", "9", "9.5", "10", "11"],
+        sizes: ["8.5", "9", "9.5", "10", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-vert",
+    id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-vert",
     brand: "adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator Pro - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -14723,16 +14659,26 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "10.5", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj3532-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-luclem-white-black" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 59.88,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj3532-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-luclem-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj3532_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["9"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-orange",
+    id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-orange",
     brand: "adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator LGE - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
-        price: 51.0,
+        price: 52.0,
         priceMax: 57.0,
         shipping: 6.99,
         currency: "EUR",
@@ -14741,20 +14687,21 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["8.5", "9", "9.5", "10", "10.5", "11", "11.5"],
         sizePrices: [
           { size: "8.5", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
-          { size: "9", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
-          { size: "9.5", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
+          { size: "9", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
+          { size: "9.5", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
           { size: "10", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
           { size: "10.5", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
           { size: "11", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
-          { size: "11.5", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
+          { size: "11.5", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5369-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-sigcor-white-lucblu" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-vert",
+    id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-vert",
     brand: "adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator LGE - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -14768,41 +14715,107 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-derbystar-gants-de-gardien-derbystar-optimus-noir-2",
-    brand: "Derbystar",
-    model: "Gants de gardien Derbystar Optimus - Noir",
+    id: "jako-gants-de-gardien-jako-animal-wrc-protection-blanc",
+    brand: "Jako",
+    model: "Gants de gardien Jako Animal WRC Protection - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
-        price: 29.95,
+        price: 83.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff20360-gants-de-gardien-derbystar-optimus-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar_f20360_black_1.webp",
-        sizes: ["10"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2591-u-014-gants-de-gardien-jako-animal-wrc-protection-blanc-noir-vert-fluo",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2591-u-014_blanc-noir-vert-fluo_1.jpg",
+        sizes: ["7.5", "11.5", "12"],
       },
     ],
   },
   {
-    id: "footstorefr-jako-gants-de-gardien-jako-animal-supersoft-nc-noir",
+    id: "jako-gants-de-gardien-jako-animal-giga-nc-blanc",
+    brand: "Jako",
+    model: "Gants de gardien Jako Animal GIGA NC - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 57.0,
+        priceMax: 77.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2592-u-014_blanc-noir-vert-fluo_1.jpg",
+        sizes: ["7.5", "11.5", "12"],
+        sizePrices: [
+          { size: "7.5", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
+          { size: "11.5", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
+          { size: "12", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "jako-gants-de-gardien-jako-animal-supersoft-rc-noir",
+    brand: "Jako",
+    model: "Gants de gardien Jako Animal SuperSoft RC - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 56.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2593-u-806-gants-de-gardien-jako-animal-supersoft-rc-noir-vert-fluo",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2593-u-806_noir-vert-fluo_1.jpg",
+        sizes: ["9.5", "10.5", "11", "11.5", "12"],
+      },
+    ],
+  },
+  {
+    id: "jako-gants-de-gardien-jako-animal-supersoft-nc-noir",
     brand: "Jako",
     model: "Gants de gardien Jako Animal SuperSoft NC - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
         price: 40.0,
+        priceMax: 56.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2594-u-806-gants-de-gardien-jako-animal-supersoft-nc-noir-vert-fluo",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2594-u-806_noir-vert-fluo_1.jpg",
-        sizes: ["9.5"],
+        sizes: ["9.5", "11.5", "12"],
+        sizePrices: [
+          { size: "9.5", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2594-u-806-gants-de-gardien-jako-animal-supersoft-nc-noir-vert-fluo" },
+          { size: "11.5", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2594-u-806-gants-de-gardien-jako-animal-supersoft-nc-noir-vert-fluo" },
+          { size: "12", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2594-u-806-gants-de-gardien-jako-animal-supersoft-nc-noir-vert-fluo" },
+        ],
       },
     ],
   },
   {
-    id: "footstorefr-gisix-gants-de-gardien-gisix-effect-25-medium-quality-noir",
+    id: "jako-gants-de-gardien-jako-animal-basic-rc-blanc",
+    brand: "Jako",
+    model: "Gants de gardien Jako Animal Basic RC - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 34.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2596-u-023-gants-de-gardien-jako-animal-basic-rc-blanc-vert-fluo",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2596-u-023_blanc-vert-fluo_1.jpg",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "gisix-gants-de-gardien-gisix-effect-25-medium-quality-noir",
     brand: "Gisix",
     model: "Gants de gardien Gisix Effect 25 Medium Quality - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14813,12 +14826,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g154blk_black_1.webp",
         sizes: ["8.5", "9", "9.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 25.58,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg154blk-gants-de-gardien-gisix-effect-25-medium-quality-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g154blk_black_1.webp",
+        sizes: ["8.5", "9", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-gisix-gants-de-gardien-gisix-effect-25-base-model-noir",
+    id: "gisix-gants-de-gardien-gisix-effect-25-base-model-noir",
     brand: "Gisix",
     model: "Gants de gardien Gisix Effect 25 Base model - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -14834,17 +14857,32 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "7", price: 15.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 14.01,
+        priceMax: 15.6,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g155blk_black-gold_1.webp",
+        sizes: ["6", "7"],
+        sizePrices: [
+          { size: "6", price: 14.01, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold" },
+          { size: "7", price: 15.6, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Ultragrip - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
         price: 80.85,
-        priceMax: 129.0,
+        priceMax: 130.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir",
@@ -14852,58 +14890,44 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["7", "7.5", "12"],
         sizePrices: [
           { size: "7", price: 80.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
-          { size: "7.5", price: 129.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
+          { size: "7.5", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
           { size: "12", price: 80.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-hn-blanc",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM Cybertec Ultragrip HN - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 76.11,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137301-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-hn-blanc-cyber-bleu-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101137301.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supergrip+ Finger - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
         price: 71.37,
-        priceMax: 100.0,
+        priceMax: 99.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101137401.webp",
         sizes: ["7", "12"],
         sizePrices: [
-          { size: "7", price: 100.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir" },
+          { size: "7", price: 99.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir" },
           { size: "12", price: 71.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supergrip+ HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
         price: 66.64,
-        priceMax: 96.0,
+        priceMax: 97.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir",
@@ -14911,15 +14935,16 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["7", "8"],
         sizePrices: [
           { size: "7", price: 66.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir" },
-          { size: "8", price: 96.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir" },
+          { size: "8", price: 97.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-flex-hn-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-flex-hn-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Flex HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14933,14 +14958,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supersoft HN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
         price: 33.48,
-        priceMax: 63.0,
+        priceMax: 66.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir",
@@ -14949,10 +14975,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizePrices: [
           { size: "4", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "4.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
-          { size: "5", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
+          { size: "5", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "5.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
-          { size: "7.5", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
-          { size: "8", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
+          { size: "7.5", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
+          { size: "8", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "8.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "9.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
         ],
@@ -14960,9 +14986,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supersoft - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -14986,12 +15013,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 28.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 42.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101138101.webp",
+        sizes: ["7.5", "8", "8.5", "9", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Soft Flex Frame - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15017,12 +15054,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138201-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc-cyber-bleu-noir" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 20.45,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138201-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc-cyber-bleu-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101138201_blanc-cyber-bleu-noir_1.webp",
+        sizes: ["11"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-pro-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-pro-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Soft Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15031,14 +15078,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138301-gants-de-gardien-uhlsport-fm-cybertec-soft-pro-blanc-cyber-bleu-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101138301.webp",
-        sizes: ["4", "4.5", "5.5", "6.5", "7.5", "8.5", "9.5", "10", "10.5", "11"],
+        sizes: ["4", "4.5", "5.5", "6.5", "7.5", "9.5", "10", "10.5", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-starter-soft-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-starter-soft-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Starter Soft - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15069,9 +15117,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Super Resist+ HN - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15094,15 +15143,16 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "7.5", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
           { size: "8", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
           { size: "8.5", price: 38.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
-          { size: "11", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
+          { size: "11", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Soft Resist+ Flex ... - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15129,12 +15179,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 21.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138901-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir-orange-fluo" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 16.36,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138901-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir-orange-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101138901_noir-orange-fluo_1.webp",
+        sizes: ["7.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Soft Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15148,9 +15208,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Starter Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15176,12 +15237,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 9.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139101-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir-orange-fluo" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 7.9,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139101-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir-orange-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101139101_noir-orange-fluo_1.webp",
+        sizes: ["5.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Aquagrip HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15191,22 +15262,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101138501_bleu-marine-bleu-pacifique-blanc_1.webp",
-        sizes: ["8", "8.5", "9", "10", "10.5", "12"],
+        sizes: ["8", "8.5", "9", "10", "12"],
         sizePrices: [
           { size: "8", price: 100.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc" },
           { size: "8.5", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc" },
           { size: "9", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc" },
           { size: "10", price: 131.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc" },
-          { size: "10.5", price: 100.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc" },
           { size: "12", price: 100.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138501-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu-marine-bleu-pacifique-blanc" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-aquasoft-hn-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-aquasoft-hn-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Aquasoft HN - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15220,9 +15291,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-neo-25-bleu",
+    id: "bkeeper-gants-de-gardien-bkeeper-neo-25-bleu",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Neo #25 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15236,9 +15308,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-naos-25-noir",
+    id: "bkeeper-gants-de-gardien-bkeeper-naos-25-noir",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Naos #25 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15252,9 +15325,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-naos-25-blanc",
+    id: "bkeeper-gants-de-gardien-bkeeper-naos-25-blanc",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Naos #25 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15268,9 +15342,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-galactic-25-bleu",
+    id: "bkeeper-gants-de-gardien-bkeeper-galactic-25-bleu",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Galactic #25 - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15281,12 +15356,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/b/k/bkeeper_75072_aqua_1.jpg",
         sizes: ["7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 56.33,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F75075-gants-de-gardien-bkeeper-galactic-25-aqua",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/b/k/bkeeper_75072_aqua_1.jpg",
+        sizes: ["7"],
+      },
     ],
   },
   {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-galactic-25-noir",
+    id: "bkeeper-gants-de-gardien-bkeeper-galactic-25-noir",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Galactic #25 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15300,9 +15385,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-durban10-pro-noir",
+    id: "twofive-gants-de-gardien-twofive-durban10-pro-noir",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Durban10 Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15316,9 +15402,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-dynamic-fit-rouge",
+    id: "nike-gants-de-gardien-nike-dynamic-fit-rouge",
     brand: "Nike",
     model: "Gants de gardien Nike Dynamic Fit - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -15332,25 +15419,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-rouge-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike Match - Rouge",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 30.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-635-gants-de-gardien-nike-match-bright-crimson-black-royal-tint",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hq0257-635-phslh001.jpg",
-        sizes: ["7", "8", "9"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-supreme-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-supreme-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Supreme - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15364,9 +15436,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-supreme-fn-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-supreme-fn-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Supreme FN - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15380,9 +15453,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-orca-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-orca-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Orca - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15402,12 +15476,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 46.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003260-gants-de-gardien-elite-sport-orca-white" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 44.36,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003260-gants-de-gardien-elite-sport-orca-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport_el4003260_white_1.webp",
+        sizes: ["5"],
+      },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-supreme-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-supreme-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Supreme - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15420,10 +15504,14 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk5: GloveProduct[] = [
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo revolution - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15434,12 +15522,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003600_white_1.jpg",
         sizes: ["6", "7", "8", "10", "11"],
       },
+      {
+        store: "FootStoreFR",
+        price: 109.11,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003720-gants-de-gardien-elite-sport-neo-revolution-white-black",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003720_white-black_1.jpg",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo revolution - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15459,29 +15557,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-blanc-2",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Neo revolution - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 109.11,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003720-gants-de-gardien-elite-sport-neo-revolution-white-black",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003720_white-black_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-noir-2",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Neo revolution - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 109.11,
@@ -15491,13 +15566,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003780_black-white_1.jpg",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-noir-3",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Neo revolution - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 109.11,
@@ -15507,12 +15575,31 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003840_black-aqua_1.jpg",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 106.16,
+        priceMax: 110.65,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport_el4003660_black_1.webp",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+        sizePrices: [
+          { size: "6", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "7", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "8", price: 110.65, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "9", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "10", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "11", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+        ],
+      },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-spin-bleu",
+    id: "elite-sport-gants-de-gardien-elite-sport-spin-bleu",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Spin - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15526,9 +15613,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-quartz-bleu",
+    id: "elite-sport-gants-de-gardien-elite-sport-quartz-bleu",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Quartz - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15542,9 +15630,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-nobre-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-nobre-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Nobre - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15558,9 +15647,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-nobre-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-nobre-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Nobre - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15574,9 +15664,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-combat-n-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-combat-n-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Combat N - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15590,9 +15681,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-neo-noir",
+    id: "bkeeper-gants-de-gardien-bkeeper-neo-noir",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Neo - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15606,9 +15698,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-ultimate-opf-blanc",
+    id: "stanno-gants-de-gardien-stanno-ultimate-opf-blanc",
     brand: "Stanno",
     model: "Gants de gardien Stanno Ultimate Opf - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15622,9 +15715,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-volare-match-iii-noir",
+    id: "stanno-gants-de-gardien-stanno-volare-match-iii-noir",
     brand: "Stanno",
     model: "Gants de gardien Stanno Volare Match III - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15638,9 +15732,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-thunder-vii-noir",
+    id: "stanno-gants-de-gardien-stanno-thunder-vii-noir",
     brand: "Stanno",
     model: "Gants de gardien Stanno Thunder VII - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15654,31 +15749,27 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-stanno-gants-de-gardien-stanno-hardground-rfh-vi-noir",
+    id: "stanno-gants-de-gardien-stanno-hardground-rfh-vi-noir",
     brand: "Stanno",
     model: "Gants de gardien Stanno Hardground RFH VI - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
         price: 51.64,
-        priceMax: 53.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F481415-8000-gants-de-gardien-stanno-hardground-rfh-vi-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/t/stanno_481415-8000_black_5.webp",
-        sizes: ["10", "10.5", "11"],
-        sizePrices: [
-          { size: "10", price: 53.06, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F481415-8000-gants-de-gardien-stanno-hardground-rfh-vi-black" },
-          { size: "10.5", price: 51.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F481415-8000-gants-de-gardien-stanno-hardground-rfh-vi-black" },
-          { size: "11", price: 51.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F481415-8000-gants-de-gardien-stanno-hardground-rfh-vi-black" },
-        ],
+        sizes: ["10.5", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-gisix-gants-de-gardien-gisix-tecno-25-noir",
+    id: "gisix-gants-de-gardien-gisix-tecno-25-noir",
     brand: "Gisix",
     model: "Gants de gardien Gisix Tecno 25 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15689,12 +15780,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g145blk_black_1.webp",
         sizes: ["8", "9.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 35.87,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg145blk-gants-de-gardien-gisix-tecno-25-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g145blk_black_1.webp",
+        sizes: ["8", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-legend-1-0-white-out-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-legend-1-0-white-out-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Legend 1.0 White-out - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15708,9 +15809,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-match-blanc",
+    id: "nike-gants-de-gardien-nike-match-blanc",
     brand: "Nike",
     model: "Gants de gardien Nike Match - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15723,13 +15825,11 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk6: GloveProduct[] = [
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-club-beige",
+    id: "adidas-gants-de-gardien-adidas-copa-club-beige",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Club - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreFR",
@@ -15743,9 +15843,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-bleu",
+    id: "adidas-gants-de-gardien-adidas-predator-bleu",
     brand: "adidas",
     model: "Gants de gardien adidas Predator - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15759,9 +15860,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-pro-rouge",
+    id: "adidas-gants-de-gardien-adidas-copa-pro-rouge",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -15775,9 +15877,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-d-entrainement-gardien-adidas-predator-orange",
+    id: "adidas-gants-d-entrainement-gardien-adidas-predator-orange",
     brand: "adidas",
     model: "Gants d'entrainement gardien adidas Predator - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -15791,9 +15894,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-legend-1-0-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-legend-1-0-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Legend 1.0 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15807,9 +15911,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-legend-1-0-fp-blanc",
+    id: "t1tan-gants-de-gardien-t1tan-legend-1-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Legend 1.0 (FP) - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -15823,9 +15928,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-fp-bleu",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-fp-bleu",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 (FP) - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15839,9 +15945,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-t1tan-gants-de-gardien-t1tan-beast-3-0-fp-noir",
+    id: "t1tan-gants-de-gardien-t1tan-beast-3-0-fp-noir",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 (FP) - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15855,9 +15962,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-prime-noir",
+    id: "rinat-gants-de-gardien-rinat-aries-prime-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Prime - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15871,9 +15979,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-prime-bleu",
+    id: "rinat-gants-de-gardien-rinat-aries-prime-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Prime - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15887,9 +15996,27 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-turf-bleu",
+    id: "rinat-gants-de-gardien-rinat-aries-turf-noir",
+    brand: "Rinat",
+    model: "Gants de gardien Rinat Aries Turf - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 45.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Faeta1090-gants-de-gardien-rinat-aries-turf-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-aeti1094-black-1.webp",
+        sizes: ["9"],
+      },
+    ],
+  },
+  {
+    id: "rinat-gants-de-gardien-rinat-aries-turf-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Turf - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15903,9 +16030,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-gravity-noir",
+    id: "rinat-gants-de-gardien-rinat-aries-gravity-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Gravity - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15919,9 +16047,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-pro-noir",
+    id: "rinat-gants-de-gardien-rinat-aries-pro-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15935,9 +16064,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-pro-bleu",
+    id: "rinat-gants-de-gardien-rinat-aries-pro-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15946,14 +16076,15 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Farpa5610m-gants-de-gardien-rinat-aries-pro-blue",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat-arpa5610m-blue-1.jpg",
-        sizes: ["7", "8", "9", "10", "11"],
+        sizes: ["7", "8", "9", "10"],
       },
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-noir",
+    id: "rinat-gants-de-gardien-rinat-aries-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -15967,9 +16098,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-aries-bleu",
+    id: "rinat-gants-de-gardien-rinat-aries-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -15985,12 +16117,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
           { size: "10", price: 23.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Farsa5610m-gants-de-gardien-rinat-aries-bleu" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 23.15,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Farsa5610m-gants-de-gardien-rinat-aries-bleu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-arsi5613m-bleu-1.webp",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-asimetrik-spine-turf-noir",
+    id: "rinat-gants-de-gardien-rinat-asimetrik-spine-turf-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Asimetrik Spine Turf - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16004,9 +16146,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-asimetrik-noir",
+    id: "rinat-gants-de-gardien-rinat-asimetrik-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Asimetrik - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16020,9 +16163,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-asimetrik-turf-noir",
+    id: "rinat-gants-de-gardien-rinat-asimetrik-turf-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Asimetrik Turf - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16043,9 +16187,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-asimetrik-turf-blanc",
+    id: "rinat-gants-de-gardien-rinat-asimetrik-turf-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Asimetrik Turf - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16059,9 +16204,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-orange",
+    id: "rinat-gants-de-gardien-rinat-egotiko-orange",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -16075,9 +16221,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-turf-noir",
+    id: "rinat-gants-de-gardien-rinat-egotiko-turf-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Turf - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16091,9 +16238,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-pro-orange",
+    id: "rinat-gants-de-gardien-rinat-egotiko-pro-orange",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Pro - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -16107,9 +16255,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-egotiko-prime-orange",
+    id: "rinat-gants-de-gardien-rinat-egotiko-prime-orange",
     brand: "Rinat",
     model: "Gants de gardien Rinat Egotiko Prime - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -16123,9 +16272,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-pour-entrainement-rinat-fiera-vert",
+    id: "rinat-gants-de-gardien-pour-entrainement-rinat-fiera-vert",
     brand: "Rinat",
     model: "Gants de gardien pour entraînement Rinat Fiera - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -16139,9 +16289,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-fiera-dore",
+    id: "rinat-gants-de-gardien-rinat-fiera-dore",
     brand: "Rinat",
     model: "Gants de gardien Rinat Fiera - Doré",
+    colour: "Doré",
     offers: [
       {
         store: "FootStoreFR",
@@ -16155,9 +16306,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-fiera-pro-vert",
+    id: "rinat-gants-de-gardien-rinat-fiera-pro-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Fiera Pro - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -16171,9 +16323,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-fiera-pro-dore",
+    id: "rinat-gants-de-gardien-rinat-fiera-pro-dore",
     brand: "Rinat",
     model: "Gants de gardien Rinat Fiera Pro - Doré",
+    colour: "Doré",
     offers: [
       {
         store: "FootStoreFR",
@@ -16187,9 +16340,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-fiera-prime-vert",
+    id: "rinat-gants-de-gardien-rinat-fiera-prime-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Fiera Prime - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -16203,9 +16357,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-fiera-prime-dore",
+    id: "rinat-gants-de-gardien-rinat-fiera-prime-dore",
     brand: "Rinat",
     model: "Gants de gardien Rinat Fiera Prime - Doré",
+    colour: "Doré",
     offers: [
       {
         store: "FootStoreFR",
@@ -16219,9 +16374,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-fiera-vert",
+    id: "rinat-gants-de-gardien-rinat-fiera-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Fiera - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -16235,9 +16391,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-kratos-blanc",
+    id: "rinat-gants-de-gardien-rinat-kratos-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Kratos - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16251,9 +16408,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-pro-noir",
+    id: "rinat-gants-de-gardien-rinat-santoloco-pro-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16272,9 +16430,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-pro-blanc",
+    id: "rinat-gants-de-gardien-rinat-santoloco-pro-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16288,25 +16447,33 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-prime-noir",
+    id: "rinat-gants-de-gardien-rinat-santoloco-prime-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Prime - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 46.83,
+        priceMax: 47.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsara1090-gants-de-gardien-rinat-santoloco-prime-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-sari1094-black-1.webp",
         sizes: ["7", "9", "10"],
+        sizePrices: [
+          { size: "7", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsara1090-gants-de-gardien-rinat-santoloco-prime-black" },
+          { size: "9", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsara1090-gants-de-gardien-rinat-santoloco-prime-black" },
+          { size: "10", price: 46.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsara1090-gants-de-gardien-rinat-santoloco-prime-black" },
+        ],
       },
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-prime-blanc",
+    id: "rinat-gants-de-gardien-rinat-santoloco-prime-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco Prime - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16320,9 +16487,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-noir",
+    id: "rinat-gants-de-gardien-rinat-santoloco-noir",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16336,9 +16504,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-santoloco-blanc",
+    id: "rinat-gants-de-gardien-rinat-santoloco-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Santoloco - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16352,9 +16521,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-xtreme-dominius-premium-blanc",
+    id: "rinat-gants-de-gardien-rinat-xtreme-dominius-premium-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Xtreme Dominius Premium - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16368,9 +16538,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-xtreme-dominius-pro-blanc",
+    id: "rinat-gants-de-gardien-rinat-xtreme-dominius-pro-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Xtreme Dominius Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16384,9 +16555,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-ctreme-dominius-turf-blanc",
+    id: "rinat-gants-de-gardien-rinat-ctreme-dominius-turf-blanc",
     brand: "Rinat",
     model: "Gants de gardien Rinat Ctreme Dominius Turf - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16394,15 +16566,16 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fxtta6470-gants-de-gardien-rinat-ctreme-dominius-turf-white-red-blue",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat-xtta6470-white-red-blue-1.jpg",
-        sizes: ["8", "9"],
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-xtta6470-white-red-blue-1.webp",
+        sizes: ["8", "9", "10"],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-bleu",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-bleu",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16416,9 +16589,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-pro-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-pro-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16429,12 +16603,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jy6295-white-1.webp",
         sizes: ["11.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 109.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy6304-gants-de-gardien-adidas-predator-pro-white-lucred-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/y/jy6304.webp",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-pro-bleu",
+    id: "adidas-gants-de-gardien-adidas-predator-pro-bleu",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16448,47 +16632,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-blanc-2",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 72.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7799-gants-de-gardien-adidas-predator-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7799.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-noir-2",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 72.0,
-        priceMax: 90.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8", "8.5", "9"],
-        sizePrices: [
-          { size: "8", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-          { size: "8.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-          { size: "9", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-bkeeper-gants-de-gardien-bkeeper-anzar-bleu",
+    id: "bkeeper-gants-de-gardien-bkeeper-anzar-bleu",
     brand: "BKeeper",
     model: "Gants de gardien BKeeper Anzar - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16502,9 +16649,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-elite-3-0-contact-blanc",
+    id: "precision-gants-de-gardien-precision-elite-3-0-contact-blanc",
     brand: "Precision",
     model: "Gants de gardien Precision Elite 3.0 Contact - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16518,9 +16666,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-elite-3-0-quartz-noir",
+    id: "precision-gants-de-gardien-precision-elite-3-0-quartz-noir",
     brand: "Precision",
     model: "Gants de gardien Precision Elite 3.0 Quartz - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16534,9 +16683,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-elite-3-0-giga-blanc",
+    id: "precision-gants-de-gardien-precision-elite-3-0-giga-blanc",
     brand: "Precision",
     model: "Gants de gardien Precision Elite 3.0 Giga - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16550,9 +16700,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-elite-3-0-grip-bleu",
+    id: "precision-gants-de-gardien-precision-elite-3-0-grip-bleu",
     brand: "Precision",
     model: "Gants de gardien Precision Elite 3.0 Grip - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16573,12 +16724,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
           { size: "11", price: 45.66, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg84908-gants-de-gardien-precision-elite-3-0-grip-bleu-noir" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 46.35,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fprg84908-gants-de-gardien-precision-elite-3-0-grip-bleu-noir",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision-prg84806-bleu-noir-1.jpg",
+        sizes: ["8"],
+      },
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-supreme-yassine-bounou-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-supreme-yassine-bounou-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Supreme Yassine Bounou - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16592,9 +16753,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-atlanta96-pro-noir",
+    id: "twofive-gants-de-gardien-twofive-atlanta96-pro-noir",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Atlanta96 Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16608,9 +16770,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-atlanta96-pro-blanc",
+    id: "twofive-gants-de-gardien-twofive-atlanta96-pro-blanc",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Atlanta96 Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16624,25 +16787,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-atlanta96-advance-2025-noir",
-    brand: "TwoFive",
-    model: "Gants de gardien TwoFive Atlanta96 Advance 2025 - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 33.08,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F11736-gants-de-gardien-twofive-atlanta96-advance-2025-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-11733-black-1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-roma90-basic-rose",
+    id: "twofive-gants-de-gardien-twofive-roma90-basic-rose",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Roma90 Basic - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -16656,57 +16804,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-bleu-2",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4126-gants-de-gardien-reusch-attrakt-solid-sharpblu-wht-shock-orng",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4126-sharpblu-wht-shock-orng-1.webp",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-bleu-3",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4129-gants-de-gardien-reusch-attrakt-solid-blu-shock-orang",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4129-blu-shock-orang-1.webp",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-solid-noir-4",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-resist-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-resist-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Resist - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16717,12 +16818,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670615-7700-black-1.webp",
         sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 35.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670615-7700-gants-de-gardien-reusch-attrakt-resist-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670615-7700-black-1.webp",
+        sizes: ["10.5", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-infinity-finger-support-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-infinity-finger-support-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Infinity Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16736,9 +16847,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-grip-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-grip-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Grip - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16747,14 +16859,24 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670815-4126-gants-de-gardien-reusch-attrakt-grip-sharpblu-wht-shock-orng",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670815-4126-sharpblu-wht-shock-orng-1.webp",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+        sizes: ["8", "8.5", "9", "9.5", "10.5", "11"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 30.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670815-4126-gants-de-gardien-reusch-attrakt-grip-sharpblu-wht-shock-orng",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670815-4126-sharpblu-wht-shock-orng-1.webp",
+        sizes: ["10.5"],
       },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-fusion-ortho-tec-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-fusion-ortho-tec-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Fusion Ortho-Tec - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16768,9 +16890,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-advance-finger-support-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-advance-finger-support-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Advance Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16784,9 +16907,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-advance-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-advance-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Advance - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16800,9 +16924,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-starter-solid-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-starter-solid-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Starter Solid - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16816,9 +16941,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-infinity-finger-support-bleu",
+    id: "reusch-gants-de-gardien-reusch-attrakt-infinity-finger-support-bleu",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Infinity Finger Support - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -16832,25 +16958,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-infinity-noir-3",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Freegel Infinity - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 60.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670735-7700-gants-de-gardien-reusch-attrakt-freegel-infinity-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/5/6/5670735-7700.webp",
-        sizes: ["7.5", "8", "8.5", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-infinity-resistor-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-infinity-resistor-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Infinity Resistor - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16864,9 +16975,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-finger-support-noir",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-finger-support-noir",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X NC Finger Support - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -16880,25 +16992,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-pro-blanc-2",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator Pro - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 109.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy6304-gants-de-gardien-adidas-predator-pro-white-lucred-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/y/jy6304.webp",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-training-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-training-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Training - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16912,9 +17009,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-match-blanc",
+    id: "adidas-gants-de-gardien-adidas-predator-match-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Match - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16934,25 +17032,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-match-fingersave-blanc-2",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator Match Fingersave - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 48.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7784-gants-de-gardien-adidas-predator-match-fingersave-white-lucred-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7784.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-pro-blanc",
+    id: "adidas-gants-de-gardien-adidas-copa-pro-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16966,9 +17049,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-club-blanc",
+    id: "adidas-gants-de-gardien-adidas-copa-club-blanc",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Club - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -16982,57 +17066,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-league-blanc-2",
-    brand: "adidas",
-    model: "Gants de gardien adidas Copa League - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 65.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7810-gants-de-gardien-adidas-copa-league-white-lucred-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7810.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-grip3-bleu-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike Grip3 - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 46.29,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0256-458-gants-de-gardien-nike-grip3-racer-blue-black-pink-blast",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hq0256-458_00.webp",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-noir",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Neo Revolution X - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 109.11,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4004100-gants-de-gardien-elite-sport-neo-revolution-x-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el4004100-black-1.webp",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-pro-noir",
+    id: "adidas-gants-de-gardien-adidas-copa-pro-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17059,13 +17096,14 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-club-noir",
+    id: "adidas-gants-de-gardien-adidas-copa-club-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Club - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
-        price: 23.0,
+        price: 24.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7805-gants-de-gardien-adidas-copa-club-black-white-lucred",
@@ -17075,9 +17113,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-league-noir",
+    id: "adidas-gants-de-gardien-adidas-copa-league-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Copa League - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17091,9 +17130,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-match-fingersave-noir",
+    id: "adidas-gants-de-gardien-adidas-predator-match-fingersave-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Match Fingersave - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17115,9 +17155,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-pro-noir",
+    id: "adidas-gants-de-gardien-adidas-predator-pro-noir",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17131,9 +17172,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
+    id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
     brand: "adidas",
     model: "Gants de gardien d'entraînement adidas Predator 2026 - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17142,82 +17184,15 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ka7787-black-black-lucred-1.webp",
-        sizes: ["9", "10"],
+        sizes: ["10"],
       },
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-vapor-grip3-bleu-2",
-    brand: "Nike",
-    model: "Gants de gardien Nike Vapor Grip3 - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 88.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0304-458-gants-de-gardien-nike-vapor-grip3-racer-blue-black-pink-blast",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hq0304-458-racer-blue-black-pink-blast-1.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-absolutgrip-blanc-2",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Absolutgrip - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 43.53,
-        priceMax: 45.93,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
-        sizePrices: [
-          { size: "7", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "8", price: 45.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "8.5", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "9", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "9.5", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "10", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir-2",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Comfort Absolutgrip HN - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 46.63,
-        priceMax: 51.4,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101143001-black-69babd260436a-1.webp",
-        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
-        sizePrices: [
-          { size: "7", price: 46.63, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "7.5", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "8", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "8.5", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "9", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "9.5", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "10", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "10.5", price: 50.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-precision-gants-de-gardien-precision-fusion-x-flat-cut-essential-orange",
+    id: "precision-gants-de-gardien-precision-fusion-x-flat-cut-essential-orange",
     brand: "Precision",
     model: "Gants de gardien Precision Fusion X Flat Cut Essential - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -17231,9 +17206,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-precision-gants-de-gardien-precision-elite-3-0-blackout-contact-noir",
+    id: "precision-gants-de-gardien-precision-elite-3-0-blackout-contact-noir",
     brand: "Precision",
     model: "Gants de gardien Precision Elite 3.0 Blackout Contact - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17247,9 +17223,27 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-jako-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc",
+    id: "jako-gants-de-gardien-jako-rs89-elite-blanc",
+    brand: "Jako",
+    model: "Gants de gardien Jako RS89 Elite - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 120.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako-2546-u-667-blanc-rhodamine-rouge-bleu-69b14a24ea7d4-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
+      },
+    ],
+  },
+  {
+    id: "jako-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc",
     brand: "Jako",
     model: "Gants de gardien Jako RS89 Team Hybrid Cut - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -17258,14 +17252,32 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako-2547-u-667-blanc-rhodamine-rouge-bleu-69b14a33390f9-1.webp",
-        sizes: ["10"],
+        sizes: ["9", "9.5", "10", "10.5", "11", "12"],
       },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-match-bleu",
+    id: "jako-gants-de-gardien-jako-rs89-team-blanc",
+    brand: "Jako",
+    model: "Gants de gardien Jako RS89 Team - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 88.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako-2548-u-667-blanc-rhodamine-rouge-bleu-69b14a32c717d-1.webp",
+        sizes: ["7", "8", "9", "9.5", "10", "10.5", "11", "12"],
+      },
+    ],
+  },
+  {
+    id: "adidas-gants-de-gardien-adidas-predator-match-bleu",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Match - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -17285,9 +17297,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-copa-pro-gris",
+    id: "adidas-gants-de-gardien-adidas-copa-pro-gris",
     brand: "adidas",
     model: "Gants de gardien adidas Copa Pro - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -17301,9 +17314,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-kappa-gants-de-gardien-deportivo-la-corogne-bleu",
+    id: "kappa-gants-de-gardien-deportivo-la-corogne-bleu",
     brand: "Kappa",
     model: "Gants de gardien Deportivo La Corogne - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -17317,9 +17331,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-kappa-gants-de-gardien-ogc-nice-noir",
+    id: "kappa-gants-de-gardien-ogc-nice-noir",
     brand: "Kappa",
     model: "Gants de gardien OGC Nice - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17333,9 +17348,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-kappa-gants-de-gardien-fc-metz-noir",
+    id: "kappa-gants-de-gardien-fc-metz-noir",
     brand: "Kappa",
     model: "Gants de gardien FC Metz - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17349,9 +17365,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-rinat-gants-de-gardien-rinat-uno-premier-lux-vert",
+    id: "rinat-gants-de-gardien-rinat-uno-premier-lux-vert",
     brand: "Rinat",
     model: "Gants de gardien Rinat Uno Premier Lux - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -17365,9 +17382,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-atlanta-advance-bleu",
+    id: "twofive-gants-de-gardien-twofive-atlanta-advance-bleu",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Atlanta Advance - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -17381,9 +17399,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-atlanta-advance-rouge",
+    id: "twofive-gants-de-gardien-twofive-atlanta-advance-rouge",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Atlanta Advance - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17392,30 +17411,15 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F13743-gants-de-gardien-twofive-atlanta-advance-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-13740-red-69dcf8385b305-1.webp",
-        sizes: ["7", "10", "11"],
+        sizes: ["10", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-los-angeles-advance-vert",
-    brand: "TwoFive",
-    model: "Gants de gardien TwoFive Los Angeles Advance - Vert",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 33.65,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F13769-gants-de-gardien-twofive-los-angeles-advance-green",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-13766-green-69dcf8396d9df-1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-madrid-basic-rose",
+    id: "twofive-gants-de-gardien-twofive-madrid-basic-rose",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Madrid Basic - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -17429,9 +17433,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-madrid-pro-rose",
+    id: "twofive-gants-de-gardien-twofive-madrid-pro-rose",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Madrid Pro - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -17445,25 +17450,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-new-york-advance-bleu",
-    brand: "TwoFive",
-    model: "Gants de gardien TwoFive New York Advance - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 33.65,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F13817-gants-de-gardien-twofive-new-york-advance-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-13814-blue-69dcf83b40eec-1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-twofive-gants-de-gardien-twofive-seoul-pro-bleu",
+    id: "twofive-gants-de-gardien-twofive-seoul-pro-bleu",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Seoul Pro - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -17477,9 +17467,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-avento-gants-de-gardien-avento-pro-ultimate-rouge",
+    id: "avento-gants-de-gardien-avento-pro-ultimate-rouge",
     brand: "Avento",
     model: "Gants de gardien Avento Pro Ultimate - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17488,14 +17479,15 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45kh-rbw-gants-de-gardien-avento-pro-ultimate-red-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45kh-rbw-red-black-69e0906478192-2.webp",
-        sizes: ["S", "L", "M", "XL"],
+        sizes: ["XL", "S", "L", "M"],
       },
     ],
   },
   {
-    id: "footstorefr-avento-gants-de-gardien-avento-pro-ultimate-jaune",
+    id: "avento-gants-de-gardien-avento-pro-ultimate-jaune",
     brand: "Avento",
     model: "Gants de gardien Avento Pro Ultimate - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -17504,14 +17496,15 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45kh-ybl-gants-de-gardien-avento-pro-ultimate-fluorescent-yellow-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45kh-ybl-fluorescent-yellow-black-69e09062b2822-2.webp",
-        sizes: ["S", "L", "M", "XL"],
+        sizes: ["XL", "S", "L", "M"],
       },
     ],
   },
   {
-    id: "footstorefr-softee-gants-de-gardien-softee-lunar-rouge",
+    id: "softee-gants-de-gardien-softee-lunar-rouge",
     brand: "Softee",
     model: "Gants de gardien Softee Lunar - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17525,9 +17518,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-softee-gants-de-gardien-softee-beast-violet",
+    id: "softee-gants-de-gardien-softee-beast-violet",
     brand: "Softee",
     model: "Gants de gardien Softee Beast - Violet",
+    colour: "Violet",
     offers: [
       {
         store: "FootStoreFR",
@@ -17541,9 +17535,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-softee-gants-de-gardien-softee-beast-emboss-rose",
+    id: "softee-gants-de-gardien-softee-beast-emboss-rose",
     brand: "Softee",
     model: "Gants de gardien Softee Beast Emboss - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -17557,9 +17552,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-derbystar-gants-de-gardien-derbystar-mamba-gris",
+    id: "derbystar-gants-de-gardien-derbystar-mamba-gris",
     brand: "Derbystar",
     model: "Gants de gardien Derbystar Mamba - Gris",
+    colour: "Gris",
     offers: [
       {
         store: "FootStoreFR",
@@ -17573,9 +17569,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Advance Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -17586,12 +17583,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp",
         sizes: ["9", "9.5", "10", "11"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670035-2290-gants-de-gardien-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp",
+        sizes: ["9", "9.5", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X NC Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -17602,12 +17609,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670056-2290-orange-blue-6a2bf75997703-1.webp",
         sizes: ["9", "9.5", "10", "10.5", "11"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 80.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670056-2290-gants-de-gardien-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670056-2290-orange-blue-6a2bf75997703-1.webp",
+        sizes: ["9", "9.5", "10", "10.5", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Gold X Evolution Dominik Livakovic Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -17618,12 +17635,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670064-2290-orange-blue-6a2bf74de3410-1.webp",
         sizes: ["8.5", "9", "9.5", "10", "10.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 110.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670064-2290-gants-de-gardien-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670064-2290-orange-blue-6a2bf74de3410-1.webp",
+        sizes: ["8.5", "9", "9.5", "10", "10.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-reusch-gants-de-gardien-reusch-attrakt-speedbump-coupe-du-monde-2026-orange",
+    id: "reusch-gants-de-gardien-reusch-attrakt-speedbump-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt SpeedBump Coupe du Monde 2026 - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -17634,12 +17661,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670085-2290-orange-blue-6a2bf751dea11-1.webp",
         sizes: ["8", "8.5", "9.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 140.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670085-2290-gants-de-gardien-reusch-attrakt-speedbump-coupe-du-monde-2026-orange-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670085-2290-orange-blue-6a2bf751dea11-1.webp",
+        sizes: ["8", "8.5", "9.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-adidas-gants-de-gardien-adidas-predator-pro-beige",
+    id: "adidas-gants-de-gardien-adidas-predator-pro-beige",
     brand: "adidas",
     model: "Gants de gardien adidas Predator Pro - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreFR",
@@ -17653,36 +17690,46 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Ultragrip HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
         price: 128.0,
-        priceMax: 139.0,
+        priceMax: 137.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp",
-        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "12"],
+        sizes: ["7.5", "8", "9", "9.5", "10", "11", "12"],
         sizePrices: [
-          { size: "7", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "7.5", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "8", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "8.5", price: 139.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "9", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "9.5", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "10", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
+          { size: "11", price: 137.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "12", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
         ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 128.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp",
+        sizes: ["7.5", "8", "9", "9.5", "10"],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Ultragrip ZNE HN Maignan - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -17693,12 +17740,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-1011408012000-blanc-noir-rose-fuchsia-6a7361b23bc5f-1.webp",
         sizes: ["7.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 160.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F1011408012000-gants-de-gardien-uhlsport-fm-ultragrip-zne-hn-maignan-blanc-noir-rose-fuchsia",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-1011408012000-blanc-noir-rose-fuchsia-6a7361b23bc5f-1.webp",
+        sizes: ["7.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Supergrip Finger Surround - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17709,12 +17766,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp",
         sizes: ["7", "7.5", "8", "9"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 120.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101141001-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge-fluo-blanc-jaune-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp",
+        sizes: ["7.5", "8", "9"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-hn-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-hn-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Supergrip HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17725,37 +17792,47 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.webp",
         sizes: ["8", "8.5", "9", "10", "10.5"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 112.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101141101-gants-de-gardien-uhlsport-fm-zne-supergrip-hn-rouge-fluo-blanc-jaune-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.webp",
+        sizes: ["9", "10"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
         price: 72.0,
-        priceMax: 83.0,
+        priceMax: 86.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141501-rouge-fluo-blanc-jaune-fluo-6a3267f898829-1.webp",
-        sizes: ["7.5", "8.5", "9", "9.5", "10", "10.5"],
+        sizes: ["8.5", "9", "9.5", "10", "10.5"],
         sizePrices: [
-          { size: "7.5", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "8.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "9", price: 81.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
+          { size: "9", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "9.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "10", price: 81.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "10.5", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
+          { size: "10", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
+          { size: "10.5", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM Absolutgrip HN Maignan - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -17771,12 +17848,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
           { size: "7.5", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1011415012000-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc-noir-rose-fuchsia" },
         ],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 90.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F1011415012000-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc-noir-rose-fuchsia",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-1011415012000-blanc-noir-rose-fuchsia-6a74441882542-1.webp",
+        sizes: ["7.5"],
+      },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-soft-pro-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-soft-pro-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Soft Pro - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17787,28 +17874,39 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101142201-rouge-fluo-blanc-jaune-fluo-6a3267f9387bd-1.webp",
         sizes: ["8", "8.5", "9"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-rc-rouge",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM ZNE Ultragrip RC - Rouge",
-    offers: [
       {
-        store: "FootStoreFR",
-        price: 136.0,
+        store: "SportIsGoodFR",
+        price: 28.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140701-gants-de-gardien-uhlsport-fm-zne-ultragrip-rc-fluo-red-white-fluo-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101140701-fluo-red-white-fluo-yellow-6a3e9801cda39-1.webp",
-        sizes: ["10"],
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101142201-gants-de-gardien-uhlsport-fm-zne-soft-pro-rouge-fluo-blanc-jaune-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101142201-rouge-fluo-blanc-jaune-fluo-6a3267f9387bd-1.webp",
+        sizes: ["8", "8.5", "9"],
       },
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hybd-rouge",
+    brand: "Uhlsport",
+    model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HYBD - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 110.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141301-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hybd-fluo-red-white-fluo-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141301-fluo-red-white-fluo-yellow-6a3e980214bdb-1.webp",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HN Fit - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17822,9 +17920,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-supersoft-hn-rouge",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-supersoft-hn-rouge",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Supersoft HN - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -17838,9 +17937,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-super-resist-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-super-resist-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Super Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17854,9 +17954,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-uhlsport-gants-de-gardien-uhlsport-fm-zne-starter-resist-noir",
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-starter-resist-noir",
     brand: "Uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Starter Resist+ - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17870,41 +17971,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-gants-de-gardien-nike-academy-noir-4",
-    brand: "Nike",
-    model: "Gants de gardien Nike Academy - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 24.72,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-011-gants-de-gardien-nike-academy-black-off-white-off-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.webp",
-        sizes: ["S", "L", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-gants-de-gardien-nike-academy-noir-5",
-    brand: "Nike",
-    model: "Gants de gardien Nike Academy - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 24.72,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-013-gants-de-gardien-nike-academy-black-anthracite-anthracite",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp",
-        sizes: ["S", "L", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-t1b-knit-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-t1b-knit-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport T1B Knit - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -17918,9 +17988,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-new-aqua-bleu",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-new-aqua-bleu",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo Revolution x New Aqua - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -17934,9 +18005,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-energy-bleu",
+    id: "elite-sport-gants-de-gardien-elite-sport-energy-bleu",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Energy - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -17956,28 +18028,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
           { size: "11", price: 85.21, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel5000780-gants-de-gardien-elite-sport-energy-bleu-marine-blanc" },
         ],
       },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-aztlan-noir-2",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Aztlan - Noir",
-    offers: [
       {
-        store: "FootStoreFR",
-        price: 63.08,
+        store: "SportIsGoodFR",
+        price: 85.21,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel5000840-gants-de-gardien-elite-sport-aztlan-black-mat",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000840-black-mat-6a5ddfdca6dd8-1.webp",
-        sizes: ["5", "6", "7", "8", "9", "10", "11"],
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel5000780-gants-de-gardien-elite-sport-energy-bleu-marine-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000780-bleu-marine-blanc-6a5ddfdd2c340-1.webp",
+        sizes: ["7", "8", "10", "11"],
       },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-orange",
+    id: "joma-gants-de-gardien-joma-calcio-orange",
     brand: "Joma",
     model: "Gants de gardien Joma Calcio - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -17991,9 +18057,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-rouge",
+    id: "joma-gants-de-gardien-joma-calcio-rouge",
     brand: "Joma",
     model: "Gants de gardien Joma Calcio - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -18004,12 +18071,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401707-607-red-6a91b591ac7ce-1.webp",
         sizes: ["4", "5", "6", "7", "8"],
       },
+      {
+        store: "FootStoreFR",
+        price: 19.25,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401950-601-gants-de-gardien-joma-calcio-red-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401950-601-red-black-6a91b59a0f643-1.webp",
+        sizes: ["4", "5", "6", "7", "8"],
+      },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-bleu",
+    id: "joma-gants-de-gardien-joma-calcio-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma Calcio - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -18020,28 +18097,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401707-717-royal-verde-fluor-6a91b5a23b6aa-1.webp",
         sizes: ["4", "5", "6", "7", "8"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-hunter-orange-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Hunter - Orange",
-    offers: [
       {
         store: "FootStoreFR",
-        price: 11.68,
+        price: 19.25,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401708-880-gants-de-gardien-joma-hunter-orange",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401708-880-orange-6a91b5cc95d00-1.webp",
-        sizes: ["4", "5", "6", "7", "8", "11"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401950-701-gants-de-gardien-joma-calcio-royal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401950-701-royal-6a91b59e29976-1.webp",
+        sizes: ["4", "5", "6", "7", "8"],
       },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-rouge",
+    id: "joma-gants-de-gardien-joma-brave-rouge",
     brand: "Joma",
     model: "Gants de gardien Joma Brave - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -18055,25 +18126,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-bleu-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Brave - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 25.57,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401709-700-gants-de-gardien-joma-brave-royal",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401709-700-royal-6a91ae3a26efa-1.webp",
-        sizes: ["8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-rose",
+    id: "joma-gants-de-gardien-joma-premier-rose",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Rose",
+    colour: "Rose",
     offers: [
       {
         store: "FootStoreFR",
@@ -18087,9 +18143,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-jaune",
+    id: "joma-gants-de-gardien-joma-premier-jaune",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Jaune",
+    colour: "Jaune",
     offers: [
       {
         store: "FootStoreFR",
@@ -18103,9 +18160,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-noir",
+    id: "joma-gants-de-gardien-joma-area-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Area - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -18116,29 +18174,6 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401711-117-negro-verde-fluor-6a91ab9fa96eb-1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-19-blanc-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Area 19 - Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 47.67,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401711-201-gants-de-gardien-joma-area-19-white-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401711-201-white-black-6a91abab92ee5-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-noir-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Area - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 41.36,
@@ -18148,28 +18183,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401712-106-black-red-6a91ab9b90773-1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-360-noir-3",
-    brand: "Joma",
-    model: "Gants de gardien Joma Area 360 - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 41.36,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401712-117-gants-de-gardien-joma-area-360-negro-verde-fluor",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401712-117-negro-verde-fluor-6a91abb357b1c-1.webp",
-        sizes: ["9", "10"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401713-119-gants-de-gardien-joma-area-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401713-119-black-6a91ab9a18688-1.webp",
+        sizes: ["7", "8", "9", "10", "11", "12"],
       },
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-blanc",
+    id: "joma-gants-de-gardien-joma-area-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Area - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18183,25 +18212,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-noir-3",
-    brand: "Joma",
-    model: "Gants de gardien Joma Area - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 41.36,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401713-119-gants-de-gardien-joma-area-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401713-119-black-6a91ab9a18688-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-25-blanc",
+    id: "joma-gants-de-gardien-joma-area-25-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Area 25 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18215,9 +18229,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-blanc",
+    id: "joma-gants-de-gardien-joma-panther-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Panther - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18228,13 +18243,6 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401714-203-white-navy-6a91ae89c6bd0-1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-blanc-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Panther - Blanc",
-    offers: [
       {
         store: "FootStoreFR",
         price: 36.62,
@@ -18247,25 +18255,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-rose-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Area - Rose",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 78.08,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401942-530-gants-de-gardien-joma-area-pink",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401942-530-pink-6a91ae25ee35a-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-bleu",
+    id: "joma-gants-de-gardien-joma-area-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma Area - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -18279,9 +18272,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-vert",
+    id: "joma-gants-de-gardien-joma-area-vert",
     brand: "Joma",
     model: "Gants de gardien Joma Area - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -18295,9 +18289,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-orange",
+    id: "joma-gants-de-gardien-joma-area-orange",
     brand: "Joma",
     model: "Gants de gardien Joma Area - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -18311,9 +18306,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-360-blanc",
+    id: "joma-gants-de-gardien-joma-area-360-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Area 360 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18327,9 +18323,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-tech-noir",
+    id: "joma-gants-de-gardien-joma-area-tech-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Area Tech - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -18343,9 +18340,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-area-tech-blanc",
+    id: "joma-gants-de-gardien-joma-area-tech-blanc",
     brand: "Joma",
     model: "Gants de gardien Joma Area Tech - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18359,9 +18357,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-pro-noir-2",
+    id: "joma-gants-de-gardien-joma-gk-pro-noir-2",
     brand: "Joma",
     model: "Gants de gardien Joma Gk Pro - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -18372,13 +18371,6 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401945-106-black-red-6a91b5af756fd-1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
       },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-pro-noir-3",
-    brand: "Joma",
-    model: "Gants de gardien Joma Gk Pro - Noir",
-    offers: [
       {
         store: "FootStoreFR",
         price: 33.87,
@@ -18391,9 +18383,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-gk-pro-blanc-2",
+    id: "joma-gants-de-gardien-joma-gk-pro-blanc-2",
     brand: "Joma",
     model: "Gants de gardien Joma Gk Pro - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18407,105 +18400,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-noir-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Panther - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 67.03,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401946-114-gants-de-gardien-joma-panther-black-violet",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401946-114-black-violet-6a91ae7295f18-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-noir-3",
-    brand: "Joma",
-    model: "Gants de gardien Joma Panther - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 67.03,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401946-116-gants-de-gardien-joma-panther-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401946-116-black-6a91ae6aa4f28-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-panther-noir-4",
-    brand: "Joma",
-    model: "Gants de gardien Joma Panther - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 67.03,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401946-117-gants-de-gardien-joma-panther-negro-verde-fluor",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401946-117-negro-verde-fluor-6a91ae7d1b3c3-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-noir-3",
-    brand: "Joma",
-    model: "Gants de gardien Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 44.93,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401947-111-gants-de-gardien-joma-brave-black-grey",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401947-111-black-grey-6a91ae3439324-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-noir-4",
-    brand: "Joma",
-    model: "Gants de gardien Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 44.93,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401947-117-gants-de-gardien-joma-brave-negro-verde-fluor",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401947-117-negro-verde-fluor-6a91ae3647efa-1.webp",
-        sizes: ["7", "8", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-brave-noir-5",
-    brand: "Joma",
-    model: "Gants de gardien Joma Brave - Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 44.93,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401947-118-gants-de-gardien-joma-brave-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401947-118-black-6a91ae32486c9-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-rouge",
+    id: "joma-gants-de-gardien-joma-premier-rouge",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Rouge",
+    colour: "Rouge",
     offers: [
       {
         store: "FootStoreFR",
@@ -18519,25 +18417,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-bleu-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Premier - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 55.58,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401948-717-gants-de-gardien-joma-premier-royal",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401948-717-royal-6a91ae9a867a2-1.webp",
-        sizes: ["7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-premier-orange",
+    id: "joma-gants-de-gardien-joma-premier-orange",
     brand: "Joma",
     model: "Gants de gardien Joma Premier - Orange",
+    colour: "Orange",
     offers: [
       {
         store: "FootStoreFR",
@@ -18551,9 +18434,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-hunter-noir",
+    id: "joma-gants-de-gardien-joma-hunter-noir",
     brand: "Joma",
     model: "Gants de gardien Joma Hunter - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -18567,9 +18451,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-hunter-bleu",
+    id: "joma-gants-de-gardien-joma-hunter-bleu",
     brand: "Joma",
     model: "Gants de gardien Joma Hunter - Bleu",
+    colour: "Bleu",
     offers: [
       {
         store: "FootStoreFR",
@@ -18583,25 +18468,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-hunter-orange-3",
-    brand: "Joma",
-    model: "Gants de gardien Joma Hunter - Orange",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 22.82,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401949-809-gants-de-gardien-joma-hunter-naranja-amarillo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401949-809-naranja-amarillo-6a91b5c771294-1.webp",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11", "12"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-vert",
+    id: "joma-gants-de-gardien-joma-calcio-vert",
     brand: "Joma",
     model: "Gants de gardien Joma Calcio - Vert",
+    colour: "Vert",
     offers: [
       {
         store: "FootStoreFR",
@@ -18615,41 +18485,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-rouge-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Calcio - Rouge",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 19.25,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401950-601-gants-de-gardien-joma-calcio-red-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401950-601-red-black-6a91b59a0f643-1.webp",
-        sizes: ["4", "5", "6", "7", "8"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-gants-de-gardien-joma-calcio-bleu-2",
-    brand: "Joma",
-    model: "Gants de gardien Joma Calcio - Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 19.25,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401950-701-gants-de-gardien-joma-calcio-royal",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-401950-701-royal-6a91b59e29976-1.webp",
-        sizes: ["4", "5", "6", "7", "8"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-ar-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-ar-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo Revolution X AR - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18660,12 +18499,22 @@ const minedGloveProductsChunk6: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000240-blanc-6a882bfe4cdc4-1.webp",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
+      {
+        store: "SportIsGoodFR",
+        price: 110.65,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel5000240-gants-de-gardien-elite-sport-neo-revolution-x-ar-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000240-blanc-6a882bfe4cdc4-1.webp",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
     ],
   },
   {
-    id: "footstorefr-puma-gants-de-gardien-puma-future-beige",
+    id: "puma-gants-de-gardien-puma-future-beige",
     brand: "Puma",
     model: "Gants de gardien Puma Future - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreFR",
@@ -18679,9 +18528,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-puma-gants-de-gardien-puma-king-play-rc-beige",
+    id: "puma-gants-de-gardien-puma-king-play-rc-beige",
     brand: "Puma",
     model: "Gants de gardien Puma King Play RC - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreFR",
@@ -18695,9 +18545,10 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-wg1-blanc",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-wg1-blanc",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo Revolution X Wg1 - Blanc",
+    colour: "Blanc",
     offers: [
       {
         store: "FootStoreFR",
@@ -18711,28 +18562,36 @@ const minedGloveProductsChunk6: GloveProduct[] = [
     ],
   },
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-rio-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-rio-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo Revolution X Rio - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
-        price: 109.11,
+        price: 110.65,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel5000300-gants-de-gardien-elite-sport-neo-revolution-x-rio-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000300-noir-6a882f676cf10-1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
+        sizes: ["9", "10", "11"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 110.65,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel5000300-gants-de-gardien-elite-sport-neo-revolution-x-rio-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000300-noir-6a882f676cf10-1.webp",
+        sizes: ["9", "10", "11"],
       },
     ],
   },
-];
-
-const minedGloveProductsChunk7: GloveProduct[] = [
   {
-    id: "footstorefr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-gp-noir",
+    id: "elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-gp-noir",
     brand: "Elite Sport",
     model: "Gants de gardien Elite Sport Neo Revolution X GP - Noir",
+    colour: "Noir",
     offers: [
       {
         store: "FootStoreFR",
@@ -18746,798 +18605,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-speed-contact-supersoft-noir",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Speed Contact Supersoft - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 24.54,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101126501-gants-de-gardien-uhlsport-speed-contact-supersoft-noir-orange-blanc",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/3/a/3abffa67-9a62-4887-afe5-f6ce74e2d05d-productdetailsimage.jpg",
-        sizes: ["4.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-venomous-gold-x-noir",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Venomous Gold X - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 120.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5370956-5010-gants-de-gardien-reusch-venomous-gold-x-black-venom-green",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/e/reusch_5370956-5010_black-venom-green_1.jpg",
-        sizes: ["9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-noir",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Powerline Supersoft - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 38.82,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101130901-gants-de-gardien-uhlsport-powerline-supersoft-noir-rouge-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101130901_0.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-hummel-gants-de-gardien-hummel-core-grip-blanc",
-    brand: "Hummel",
-    model: "Gants de gardien Hummel Core Grip - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 9.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F224975-9210-gants-de-gardien-hummel-core-grip-white",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_224975-9210_0.jpg",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-hummel-gants-de-gardien-hummel-allround-grip-blanc",
-    brand: "Hummel",
-    model: "Gants de gardien Hummel Allround Grip - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 17.13,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F224976-9031-gants-de-gardien-hummel-allround-grip-white",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_224976-9031_0.jpg",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-softee-paire-de-gants-de-gardien-softee-europa-blanc",
-    brand: "Softee",
-    model: "Paire de gants de gardien Softee Europa - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 8.3,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F35053-775-15-paire-de-gants-de-gardien-softee-europa-blanco-taille-8",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_2.webp",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-adidas-gants-de-gardien-adidas-predator-trn-jaune",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator TRN - Jaune",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 18.75,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq4026_6_hardware_on_model_front_view_white.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-hummel-gants-de-gardien-hyper-grip-hummel-noir",
-    brand: "Hummel",
-    model: "Gants de gardien hyper grip Hummel - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 42.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F224978-2287-gants-de-gardien-hyper-grip-hummel-black-white-red",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_224978-2287.jpg",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-precision-gants-de-gardien-precision-fusion-x-pro-hybrid-giga-blanc",
-    brand: "Precision",
-    model: "Gants de gardien Precision Fusion X Pro Hybrid Giga - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 49.05,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fprg16408-gants-de-gardien-precision-fusion-x-pro-hybrid-giga-blanc",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg16306_white-classic-black_1.jpg",
-        sizes: ["9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-pure-contact-gold-bleu",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Pure Contact Gold - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 89.95,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5470100-4848-gants-de-gardien-reusch-pure-contact-gold-premium-blue-electric-orange-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5470100-4848_premium-blue-electric-orange-black_1.webp",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-solid-noir",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
-        sizes: ["7.5", "8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-rinat-gants-de-gardien-rinat-kratos-semi-noir",
-    brand: "Rinat",
-    model: "Gants de gardien Rinat kratos Semi - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 38.78,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkrtfa1090-gants-de-gardien-rinat-kratos-semi-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_krtfa1090_black_1.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-adidas-gants-de-gardien-adidas-predator-pro-rouge",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator Pro - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 97.5,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_iw6276_1_hardware_photography_front_center_view_white.jpg",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-elite-sport-gants-de-gardien-elite-sport-vibora-noir",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Vibora - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 42.65,
-        priceMax: 45.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003190_noir_1.jpg",
-        sizes: ["7", "8", "9", "10", "11"],
-        sizePrices: [
-          { size: "7", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
-          { size: "8", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
-          { size: "9", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
-          { size: "10", price: 42.65, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
-          { size: "11", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003190-gants-de-gardien-elite-sport-vibora-noir" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-adidas-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-orange",
-    brand: "adidas",
-    model: "Gants de gardien coupes hybride adidas Predator MTC FS - Orange",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 25.11,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5352_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-vert",
-    brand: "adidas",
-    model: "Gants de gardien de but sans protège-doigts adidas Predator Pro - Vert",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 59.88,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjj3532-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-luclem-white-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj3532_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-gisix-gants-de-gardien-gisix-effect-25-medium-quality-noir",
-    brand: "Gisix",
-    model: "Gants de gardien Gisix Effect 25 Medium Quality - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 25.58,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg154blk-gants-de-gardien-gisix-effect-25-medium-quality-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g154blk_black_1.webp",
-        sizes: ["8.5", "9", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-gisix-gants-de-gardien-gisix-effect-25-base-model-noir",
-    brand: "Gisix",
-    model: "Gants de gardien Gisix Effect 25 Base model - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 14.01,
-        priceMax: 15.6,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold",
-        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g155blk_black-gold_1.webp",
-        sizes: ["6", "7"],
-        sizePrices: [
-          { size: "6", price: 14.01, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold" },
-          { size: "7", price: 15.6, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg155blk-gants-de-gardien-gisix-effect-25-base-model-black-gold" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM Cybertec Supersoft - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 42.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101138101.webp",
-        sizes: ["7.5", "8", "8.5", "9", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM Cybertec Soft Flex Frame - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 20.45,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138201-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc-cyber-bleu-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101138201_blanc-cyber-bleu-noir_1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM uhlsport Soft Resist+ Flex ... - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 16.36,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138901-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir-orange-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101138901_noir-orange-fluo_1.webp",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM uhlsport Starter Resist+ - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 7.9,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139101-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir-orange-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101139101_noir-orange-fluo_1.webp",
-        sizes: ["5.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-bkeeper-gants-de-gardien-bkeeper-galactic-25-bleu",
-    brand: "BKeeper",
-    model: "Gants de gardien BKeeper Galactic #25 - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 56.33,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F75075-gants-de-gardien-bkeeper-galactic-25-aqua",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/b/k/bkeeper_75072_aqua_1.jpg",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-elite-sport-gants-de-gardien-elite-sport-orca-blanc",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Orca - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 44.36,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003260-gants-de-gardien-elite-sport-orca-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport_el4003260_white_1.webp",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-noir",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Neo revolution - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 106.16,
-        priceMax: 110.65,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport_el4003660_black_1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-        sizePrices: [
-          { size: "6", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
-          { size: "7", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
-          { size: "8", price: 110.65, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
-          { size: "9", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
-          { size: "10", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
-          { size: "11", price: 106.16, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-gisix-gants-de-gardien-gisix-tecno-25-noir",
-    brand: "Gisix",
-    model: "Gants de gardien Gisix Tecno 25 - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 35.87,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fg145blk-gants-de-gardien-gisix-tecno-25-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/gisix_g145blk_black_1.webp",
-        sizes: ["8", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-rinat-gants-de-gardien-rinat-aries-bleu",
-    brand: "Rinat",
-    model: "Gants de gardien Rinat Aries - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 23.15,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Farsa5610m-gants-de-gardien-rinat-aries-bleu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-arsi5613m-bleu-1.webp",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-adidas-gants-de-gardien-adidas-predator-noir",
-    brand: "adidas",
-    model: "Gants de gardien adidas Predator - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 72.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf9621-gants-de-gardien-adidas-predator-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-precision-gants-de-gardien-precision-elite-3-0-grip-bleu",
-    brand: "Precision",
-    model: "Gants de gardien Precision Elite 3.0 Grip - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 46.35,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fprg84908-gants-de-gardien-precision-elite-3-0-grip-bleu-noir",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision-prg84806-bleu-noir-1.jpg",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-solid-bleu",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-4129-gants-de-gardien-reusch-attrakt-solid-blu-shock-orang",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4129-blu-shock-orang-1.webp",
-        sizes: ["8", "9", "9.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-solid-noir-2",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Solid - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
-        sizes: ["8.5", "9.5", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-resist-noir",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Resist - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 35.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670615-7700-gants-de-gardien-reusch-attrakt-resist-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670615-7700-black-1.webp",
-        sizes: ["10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-grip-bleu",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Grip - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 30.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670815-4126-gants-de-gardien-reusch-attrakt-grip-sharpblu-wht-shock-orng",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670815-4126-sharpblu-wht-shock-orng-1.webp",
-        sizes: ["10.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-absolutgrip-blanc",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Absolutgrip - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 43.53,
-        priceMax: 45.93,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
-        sizePrices: [
-          { size: "7", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "8", price: 45.27, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "8.5", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "9", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "9.5", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "10", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport Comfort Absolutgrip HN - Noir",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 46.63,
-        priceMax: 51.4,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101143001-black-69babd260436a-1.webp",
-        sizes: ["7", "7.5", "10"],
-        sizePrices: [
-          { size: "7", price: 46.63, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "7.5", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-          { size: "10", price: 51.4, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101143001-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-black" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Freegel Advance Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 60.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670035-2290-gants-de-gardien-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp",
-        sizes: ["9", "9.5", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Gold X NC Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 80.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670056-2290-gants-de-gardien-reusch-attrakt-gold-x-nc-coupe-du-monde-2026-orange-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670056-2290-orange-blue-6a2bf75997703-1.webp",
-        sizes: ["9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt Gold X Evolution Dominik Livakovic Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 110.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670064-2290-gants-de-gardien-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670064-2290-orange-blue-6a2bf74de3410-1.webp",
-        sizes: ["8.5", "9", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-reusch-gants-de-gardien-reusch-attrakt-speedbump-coupe-du-monde-2026-orange",
-    brand: "Reusch",
-    model: "Gants de gardien Reusch Attrakt SpeedBump Coupe du Monde 2026 - Orange",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 140.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670085-2290-gants-de-gardien-reusch-attrakt-speedbump-coupe-du-monde-2026-orange-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670085-2290-orange-blue-6a2bf751dea11-1.webp",
-        sizes: ["8", "8.5", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM ZNE Ultragrip HN - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 128.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp",
-        sizes: ["7.5", "8", "9", "9.5", "10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM Ultragrip ZNE HN Maignan - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 160.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F1011408012000-gants-de-gardien-uhlsport-fm-ultragrip-zne-hn-maignan-blanc-noir-rose-fuchsia",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-1011408012000-blanc-noir-rose-fuchsia-6a7361b23bc5f-1.webp",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM ZNE Supergrip Finger Surround - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 120.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101141001-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge-fluo-blanc-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp",
-        sizes: ["7.5", "8", "9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-hn-rouge",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM ZNE Supergrip HN - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 112.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101141101-gants-de-gardien-uhlsport-fm-zne-supergrip-hn-rouge-fluo-blanc-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.webp",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM Absolutgrip HN Maignan - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 90.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F1011415012000-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc-noir-rose-fuchsia",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-1011415012000-blanc-noir-rose-fuchsia-6a74441882542-1.webp",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-uhlsport-gants-de-gardien-uhlsport-fm-zne-soft-pro-rouge",
-    brand: "Uhlsport",
-    model: "Gants de gardien Uhlsport FM ZNE Soft Pro - Rouge",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 28.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101142201-gants-de-gardien-uhlsport-fm-zne-soft-pro-rouge-fluo-blanc-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101142201-rouge-fluo-blanc-jaune-fluo-6a3267f9387bd-1.webp",
-        sizes: ["8", "8.5", "9"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-elite-sport-gants-de-gardien-elite-sport-energy-bleu",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Energy - Bleu",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 85.21,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel5000780-gants-de-gardien-elite-sport-energy-bleu-marine-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000780-bleu-marine-blanc-6a5ddfdd2c340-1.webp",
-        sizes: ["7", "8", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "sportisgoodfr-elite-sport-gants-de-gardien-elite-sport-neo-revolution-x-ar-blanc",
-    brand: "Elite Sport",
-    model: "Gants de gardien Elite Sport Neo Revolution X AR - Blanc",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 110.65,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel5000240-gants-de-gardien-elite-sport-neo-revolution-x-ar-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport-el5000240-blanc-6a882bfe4cdc4-1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "deporteoutlet-zeus-zeus-eko-guantes-de-portero-bronce-blanco",
+    id: "zeus-zeus-eko-guantes-de-portero-bronce-blanco",
     brand: "Zeus",
     model: "Zeus Eko Guantes de portero bronce blanco",
+    colour: "blanco",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19551,9 +18622,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-eko-guantes-de-portero-oro-blanco",
+    id: "zeus-zeus-eko-guantes-de-portero-oro-blanco",
     brand: "Zeus",
     model: "Zeus Eko Guantes de portero oro blanco",
+    colour: "blanco",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19567,9 +18639,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-guanto-space-guantes-de-portero-negro",
+    id: "zeus-zeus-guanto-space-guantes-de-portero-negro",
     brand: "Zeus",
     model: "Zeus Guanto Space Guantes de portero negro",
+    colour: "negro",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19583,9 +18656,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-guanto-space-guantes-de-portero-amarillo-neon",
+    id: "zeus-zeus-guanto-space-guantes-de-portero-amarillo-neon",
     brand: "Zeus",
     model: "Zeus Guanto Space Guantes de portero amarillo neón",
+    colour: "amarillo",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19599,9 +18673,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-guanto-space-guantes-de-portero-naranja-neon",
+    id: "zeus-zeus-guanto-space-guantes-de-portero-naranja-neon",
     brand: "Zeus",
     model: "Zeus Guanto Space Guantes de portero naranja neón",
+    colour: "naranja",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19615,9 +18690,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-z1-hombre-guantes-de-portero-azul",
+    id: "zeus-zeus-z1-hombre-guantes-de-portero-azul",
     brand: "Zeus",
     model: "Zeus Z1 Hombre Guantes de portero - azul",
+    colour: "azul",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19631,9 +18707,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-zpro-hombre-guantes-de-portero-negro",
+    id: "zeus-zeus-zpro-hombre-guantes-de-portero-negro",
     brand: "Zeus",
     model: "Zeus ZPro Hombre Guantes de portero negro",
+    colour: "negro",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19647,9 +18724,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-zeus-zeus-zpro-hombre-guantes-de-portero-royal-blue-naranja",
+    id: "zeus-zeus-zpro-hombre-guantes-de-portero-royal-blue-naranja",
     brand: "Zeus",
     model: "Zeus ZPro Hombre Guantes de portero royal blue - naranja",
+    colour: "naranja",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19663,9 +18741,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-adidas-adidas-originals-predator-entrenamiento-hombre-guantes-de-portero-iw6280-negro",
+    id: "adidas-adidas-originals-predator-entrenamiento-hombre-guantes-de-portero-iw6280-negro",
     brand: "Adidas",
     model: "adidas Originals Predator Entrenamiento Hombre Guantes de portero IW6280 - negro",
+    colour: "negro",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19679,9 +18758,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-adidas-adidas-entrenamiento-con-guantes-predator-hombre-guantes-de-portero-ix3871-rojo",
+    id: "adidas-adidas-entrenamiento-con-guantes-predator-hombre-guantes-de-portero-ix3871-rojo",
     brand: "Adidas",
     model: "adidas Entrenamiento con guantes Predator Hombre Guantes de portero IX3871 - rojo",
+    colour: "rojo",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19695,9 +18775,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-adidas-adidas-copa-gloves-clb-hombre-guantes-de-portero-jh3790-plata",
+    id: "adidas-adidas-copa-gloves-clb-hombre-guantes-de-portero-jh3790-plata",
     brand: "Adidas",
     model: "adidas COPA Gloves CLB Hombre Guantes de portero JH3790 - plata",
+    colour: "plata",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19711,9 +18792,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-adidas-adidas-predator-training-hombre-guantes-de-portero-jn5356x-verde",
+    id: "adidas-adidas-predator-training-hombre-guantes-de-portero-jn5356x-verde",
     brand: "Adidas",
     model: "adidas Predator Training Hombre Guantes de portero JN5356X - verde",
+    colour: "verde",
     offers: [
       {
         store: "DeporteOutlet",
@@ -19727,9 +18809,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "gigasportde-uhlsport-torwarthandschuhe-absolutgrip-weiss",
+    id: "uhlsport-torwarthandschuhe-absolutgrip-weiss",
     brand: "uhlsport",
     model: "Torwarthandschuhe ABSOLUTGRIP weiss",
+    colour: "weiss",
     offers: [
       {
         store: "GigasportDE",
@@ -19740,71 +18823,6 @@ const minedGloveProductsChunk7: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fuhlsport-1-768_1024_100-7769533_1.jpg&feedId=69847&k=4403e00f2890030010b1c3be1837eb399db2162c",
         sizes: ["5", "6", "7", "8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "gigasportde-uhlsport-torwarthandschuhe-supergrip-hn-weiss",
-    brand: "uhlsport",
-    model: "Torwarthandschuhe SUPERGRIP+HN weiss",
-    offers: [
-      {
-        store: "GigasportDE",
-        price: 84.99,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43863071116&a=3013769&m=14464",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fuhlsport-1-768_1024_100-7769534_1.jpg&feedId=69847&k=78008fa4e59500d2317a25bc12defd3c083e96e5",
-        sizes: ["7", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "gigasportch-uhlsport-torwarthandschuhe-soft-resist-flex-frame-schwarz",
-    brand: "uhlsport",
-    model: "Torwarthandschuhe SOFT RESIST + FLEX FRAME schwarz",
-    offers: [
-      {
-        store: "GigasportCH",
-        price: 33.9,
-        priceMax: 37.9,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43863071394&a=3013769&m=22149",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fuhlsport-1-768_1024_100-7769530_1.jpg&feedId=51705&k=b1a643d22426cddee11681fe76ecca99e540977f",
-        sizes: ["5", "6", "7", "8", "9", "10", "11"],
-        sizePrices: [
-          { size: "5", price: 33.9, url: "https://www.awin1.com/pclick.php?p=43863071394&a=3013769&m=22149" },
-          { size: "6", price: 33.9, url: "https://www.awin1.com/pclick.php?p=43863071395&a=3013769&m=22149" },
-          { size: "7", price: 33.9, url: "https://www.awin1.com/pclick.php?p=43863071396&a=3013769&m=22149" },
-          { size: "8", price: 33.9, url: "https://www.awin1.com/pclick.php?p=43863071397&a=3013769&m=22149" },
-          { size: "9", price: 37.9, url: "https://www.awin1.com/pclick.php?p=43863071398&a=3013769&m=22149" },
-          { size: "10", price: 37.9, url: "https://www.awin1.com/pclick.php?p=43863071399&a=3013769&m=22149" },
-          { size: "11", price: 37.9, url: "https://www.awin1.com/pclick.php?p=43863071400&a=3013769&m=22149" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "gigasportch-uhlsport-torwarthandschuhe-supersoft-hn-weiss",
-    brand: "uhlsport",
-    model: "Torwarthandschuhe SUPERSOFT HN weiss",
-    offers: [
-      {
-        store: "GigasportCH",
-        price: 40.9,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43863071410&a=3013769&m=22149",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fuhlsport-1-768_1024_100-7769532_1.jpg&feedId=51705&k=7919c234482649b0adcc58e7b291520328177f0e",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "gigasportch-uhlsport-torwarthandschuhe-absolutgrip-weiss",
-    brand: "uhlsport",
-    model: "Torwarthandschuhe ABSOLUTGRIP weiss",
-    offers: [
       {
         store: "GigasportCH",
         price: 56.9,
@@ -19817,10 +18835,20 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "gigasportch-uhlsport-torwarthandschuhe-supergrip-hn-weiss",
+    id: "uhlsport-torwarthandschuhe-supergrip-hn-weiss",
     brand: "uhlsport",
     model: "Torwarthandschuhe SUPERGRIP+HN weiss",
+    colour: "weiss",
     offers: [
+      {
+        store: "GigasportDE",
+        price: 84.99,
+        shipping: 3.95,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43863071116&a=3013769&m=14464",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fuhlsport-1-768_1024_100-7769534_1.jpg&feedId=69847&k=78008fa4e59500d2317a25bc12defd3c083e96e5",
+        sizes: ["7", "9", "10", "11"],
+      },
       {
         store: "GigasportCH",
         price: 83.9,
@@ -19833,25 +18861,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "gigasportch-erima-torwarthandschuhe-aeroclaw-challenger-schwarz",
-    brand: "erima",
-    model: "Torwarthandschuhe Aeroclaw Challenger schwarz",
-    offers: [
-      {
-        store: "GigasportCH",
-        price: 31.9,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44441079905&a=3013769&m=22149",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Ferima-1-768_1024_100-7776851_1.jpg&feedId=51705&k=c54e3e99edb9a646a83d01f6d5727b3ffe4185d9",
-        sizes: ["4", "5", "6", "7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "gigasportch-jako-torwarthandschuhe-river-basic-rc-blau",
+    id: "jako-torwarthandschuhe-river-basic-rc-blau",
     brand: "Jako",
     model: "Torwarthandschuhe River Basic RC blau",
+    colour: "blau",
     offers: [
       {
         store: "GigasportCH",
@@ -19865,9 +18878,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "gigasportfr-uhlsport-gants-de-gardien-de-but-absolutgrip-blanc",
+    id: "uhlsport-gants-de-gardien-de-but-absolutgrip-blanc",
     brand: "uhlsport",
     model: "Gants de gardien de but ABSOLUTGRIP blanc",
+    colour: "blanc",
     offers: [
       {
         store: "GigasportFR",
@@ -19881,9 +18895,10 @@ const minedGloveProductsChunk7: GloveProduct[] = [
     ],
   },
   {
-    id: "gigasportfr-uhlsport-gants-de-gardien-de-but-supergrip-hn-blanc",
+    id: "uhlsport-gants-de-gardien-de-but-supergrip-hn-blanc",
     brand: "uhlsport",
     model: "Gants de gardien de but SUPERGRIP+HN blanc",
+    colour: "blanc",
     offers: [
       {
         store: "GigasportFR",
@@ -19904,6 +18919,4 @@ export const gloveProducts: GloveProduct[] = [
   ...minedGloveProductsChunk3,
   ...minedGloveProductsChunk4,
   ...minedGloveProductsChunk5,
-  ...minedGloveProductsChunk6,
-  ...minedGloveProductsChunk7,
 ];

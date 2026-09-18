@@ -9,6 +9,7 @@ import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
+import { apparelProducts } from "@/data/apparel";
 
 // Separado de CompareBar.tsx a propósito -- ver el comentario largo ahí.
 // Este archivo (y sólo este) tiene el import real de products.ts, así
@@ -34,6 +35,8 @@ export default function CompareBarContent() {
       if (ball) return { entry, kind: "ball" as const, ball };
       const ticket = ticketProducts.find((tk) => tk.id === entry.productId);
       if (ticket) return { entry, kind: "ticket" as const, ticket };
+      const apparel = apparelProducts.find((a) => a.id === entry.productId);
+      if (apparel) return { entry, kind: "apparel" as const, apparel };
       return null;
     })
     .filter((e): e is NonNullable<typeof e> => e !== null);
@@ -53,9 +56,11 @@ export default function CompareBarContent() {
                   ? item.glove.model
                   : item.kind === "ball"
                     ? item.ball.model
-                    : item.kind === "ticket"
-                      ? item.ticket.event
-                      : displayTitleForCountry(item.product, countryCode, locale) ??
+                    : item.kind === "apparel"
+                      ? item.apparel.model
+                      : item.kind === "ticket"
+                        ? item.ticket.event
+                        : displayTitleForCountry(item.product, countryCode, locale) ??
                         `${teamNames[item.product.teamKey][locale]} ${typeNames[item.product.typeKey][locale]}`;
             return (
             <span

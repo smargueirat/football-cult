@@ -6,6 +6,7 @@ import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
+import { apparelProducts } from "@/data/apparel";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import ProductCard from "@/components/ProductCard";
@@ -33,6 +34,8 @@ export default function FavoritosClient() {
       if (ball) return { kind: "ball" as const, id, ball };
       const ticket = ticketProducts.find((tk) => tk.id === id);
       if (ticket) return { kind: "ticket" as const, id, ticket };
+      const apparel = apparelProducts.find((a) => a.id === id);
+      if (apparel) return { kind: "apparel" as const, id, apparel };
       return null;
     })
     .filter((item): item is NonNullable<typeof item> => item !== null);
@@ -62,6 +65,7 @@ export default function FavoritosClient() {
             if (item.kind === "boot") return <BootCard key={item.id} boot={item.boot} />;
             if (item.kind === "glove") return <GearCard key={item.id} item={item.glove} basePath="guantes" />;
             if (item.kind === "ball") return <GearCard key={item.id} item={item.ball} basePath="pelotas" />;
+            if (item.kind === "apparel") return <GearCard key={item.id} item={item.apparel} basePath="ropa" />;
             if (item.kind === "ticket") return <TicketCard key={item.id} ticket={item.ticket} />;
             return <ProductCard key={item.id} product={item.product} />;
           })}

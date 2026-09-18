@@ -39,7 +39,7 @@ export default function GearDetailClient({
   sizeLabel,
 }: {
   item: GearProductLike;
-  basePath: "guantes" | "pelotas";
+  basePath: "guantes" | "pelotas" | "ropa";
   sizeLabel: string;
 }) {
   const { t } = useLanguage();

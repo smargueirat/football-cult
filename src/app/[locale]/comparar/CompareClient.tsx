@@ -14,6 +14,7 @@ import { BootOffer, BootProduct, bootProducts } from "@/data/boots";
 import { GloveOffer, GloveProduct, gloveProducts } from "@/data/gloves";
 import { BallOffer, BallProduct, ballProducts } from "@/data/balls";
 import { TicketOffer, TicketProduct, ticketProducts } from "@/data/tickets";
+import { ApparelOffer, ApparelProduct, apparelProducts } from "@/data/apparel";
 import { bootOfferTotalInEUR, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
@@ -67,6 +68,15 @@ type CompareCard =
       store: string;
       ticket: TicketProduct;
       offer: TicketOffer;
+      isBest: boolean;
+    }
+  | {
+      key: string;
+      kind: "apparel";
+      productId: string;
+      store: string;
+      apparel: ApparelProduct;
+      offer: ApparelOffer;
       isBest: boolean;
     };
 
@@ -145,6 +155,19 @@ export default function CompareClient() {
           store: entry.store,
           ticket,
           offer: ticketOffer,
+          isBest: false,
+        };
+      }
+      const apparel = apparelProducts.find((a) => a.id === entry.productId);
+      const apparelOffer = apparel?.offers.find((o) => o.store === entry.store);
+      if (apparel && apparelOffer) {
+        return {
+          key: `${entry.productId}-${entry.store}`,
+          kind: "apparel",
+          productId: entry.productId,
+          store: entry.store,
+          apparel,
+          offer: apparelOffer,
           isBest: false,
         };
       }
@@ -243,9 +266,9 @@ export default function CompareClient() {
               );
             }
 
-            if (card.kind === "glove" || card.kind === "ball") {
-              const gearItem = card.kind === "glove" ? card.glove : card.ball;
-              const basePath = card.kind === "glove" ? "guantes" : "pelotas";
+            if (card.kind === "glove" || card.kind === "ball" || card.kind === "apparel") {
+              const gearItem = card.kind === "glove" ? card.glove : card.kind === "ball" ? card.ball : card.apparel;
+              const basePath = card.kind === "glove" ? "guantes" : card.kind === "ball" ? "pelotas" : "ropa";
               const { offer } = card;
               const photo = offer.imageUrl;
               return (

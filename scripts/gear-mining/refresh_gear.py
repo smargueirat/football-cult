@@ -35,6 +35,15 @@ TARGETS = [
         "type_name": "BallProduct",
         "chunk_var": "minedBallProductsChunk",
     },
+    {
+        "name": "ropa",
+        "ts_path": os.path.join(REPO_ROOT, "src", "data", "apparel.ts"),
+        "mined_path": os.path.join(SCRIPT_DIR, "mined_apparel.json"),
+        "sentinel": "// ===AUTO-GENERATED-APPAREL-BELOW===",
+        "export_name": "apparelProducts",
+        "type_name": "ApparelProduct",
+        "chunk_var": "minedApparelProductsChunk",
+    },
 ]
 CHUNK_SIZE = 180
 
@@ -55,27 +64,30 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}  id: {ts_string(e['id'])},")
     lines.append(f"{pad}  brand: {ts_string(e['brand'])},")
     lines.append(f"{pad}  model: {ts_string(e['model'])},")
+    lines.append(f"{pad}  colour: {ts_string(e['colour'])},")
+    if 'type' in e:
+        lines.append(f"{pad}  type: {ts_string(e['type'])},")
     lines.append(f"{pad}  offers: [")
-    o = e['offers'][0]
-    lines.append(f"{pad}    {{")
-    lines.append(f"{pad}      store: {ts_string(o['store'])},")
-    lines.append(f"{pad}      price: {o['price']},")
-    if o.get('priceMax'):
-        lines.append(f"{pad}      priceMax: {o['priceMax']},")
-    lines.append(f"{pad}      shipping: {o['shipping']},")
-    lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
-    lines.append(f"{pad}      url: {ts_string(o['url'])},")
-    lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
-    sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
-    lines.append(f"{pad}      sizes: [{sizes_str}],")
-    if o.get('sizePrices'):
-        lines.append(f"{pad}      sizePrices: [")
-        for sp in o['sizePrices']:
-            lines.append(
-                f"{pad}        {{ size: {ts_string(sp['size'])}, price: {sp['price']}, url: {ts_string(sp['url'])} }},"
-            )
-        lines.append(f"{pad}      ],")
-    lines.append(f"{pad}    }},")
+    for o in e['offers']:
+        lines.append(f"{pad}    {{")
+        lines.append(f"{pad}      store: {ts_string(o['store'])},")
+        lines.append(f"{pad}      price: {o['price']},")
+        if o.get('priceMax'):
+            lines.append(f"{pad}      priceMax: {o['priceMax']},")
+        lines.append(f"{pad}      shipping: {o['shipping']},")
+        lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
+        lines.append(f"{pad}      url: {ts_string(o['url'])},")
+        lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
+        sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
+        lines.append(f"{pad}      sizes: [{sizes_str}],")
+        if o.get('sizePrices'):
+            lines.append(f"{pad}      sizePrices: [")
+            for sp in o['sizePrices']:
+                lines.append(
+                    f"{pad}        {{ size: {ts_string(sp['size'])}, price: {sp['price']}, url: {ts_string(sp['url'])} }},"
+                )
+            lines.append(f"{pad}      ],")
+        lines.append(f"{pad}    }},")
     lines.append(f"{pad}  ],")
     lines.append(pad + "},")
     return "\n".join(lines)
@@ -97,32 +109,32 @@ def split_ts(ts_path, sentinel):
 
 
 def build_entries(mined, used_ids):
+    # mine_gear.py ya funde las tiendas espejo (Foot-Store/Sport is Good
+    # ES+FR) por (marca, modelo) antes de escribir el JSON -- acá cada
+    # `d` es un producto con 1+ ofertas reales, no una fila por tienda.
+    # El slug ya NO lleva la tienda adelante (antes "footstorees-...",
+    # ahora solo marca+modelo): un producto fundido puede tener 3-4
+    # tiendas reales, ninguna más "dueña" del id que las otras.
     entries = []
     seen_ids = set(used_ids)
     for d in mined:
-        base = slugify(f"{d['store']}-{d['brand']}-{d['model']}")
+        base = slugify(f"{d['brand']}-{d['model']}")
         sid = base
         i = 2
         while sid in seen_ids:
             sid = f"{base}-{i}"
             i += 1
         seen_ids.add(sid)
-        entries.append({
+        entry = {
             "id": sid,
             "brand": d["brand"],
             "model": d["model"],
-            "offers": [{
-                "store": d["store"],
-                "price": d["price"],
-                **({"priceMax": d["priceMax"]} if d.get("priceMax") else {}),
-                "shipping": d["shipping"],
-                "currency": d["currency"],
-                "url": d["url"],
-                "imageUrl": d["imageUrl"],
-                "sizes": d["sizes"],
-                **({"sizePrices": d["sizePrices"]} if d.get("sizePrices") else {}),
-            }],
-        })
+            "colour": d["colour"],
+            "offers": d["offers"],
+        }
+        if "type" in d:
+            entry["type"] = d["type"]
+        entries.append(entry)
     return entries
 
 

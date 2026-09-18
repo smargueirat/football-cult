@@ -37,7 +37,7 @@ export default function GearCard({
   priority = false,
 }: {
   item: GearProductLike;
-  basePath: "guantes" | "pelotas";
+  basePath: "guantes" | "pelotas" | "ropa";
   priority?: boolean;
 }) {
   const { t } = useLanguage();

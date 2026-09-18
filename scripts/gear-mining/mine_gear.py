@@ -25,14 +25,26 @@ FEEDS = "/tmp/feeds"
 
 BALLS_OUT = os.path.join(SCRIPT_DIR, "mined_balls.json")
 GLOVES_OUT = os.path.join(SCRIPT_DIR, "mined_gloves.json")
+APPAREL_OUT = os.path.join(SCRIPT_DIR, "mined_apparel.json")
 
 balls_results = []
 gloves_results = []
+apparel_results = []
 
 # Mismo motivo que mine_boots.py: "fútbol americano" comparte la palabra
 # "balón"/"ball" en varios idiomas con el fútbol real.
 AMERICAN_FOOTBALL_RE = re.compile(r"americano|american football|football am[ée]ricain", re.I)
 KIDS_RE = re.compile(r"\bjunior\b|\bni[ñn]os?\b|\benfants?\b|\bkinder\b", re.I)
+
+# Encontrado 2026-09-18 (reporte real del usuario, "las pelotas no son
+# balones de fútbol de verdad"): Deporte Outlet no tiene categoría
+# confiable para pelotas (ver mine_deporte_outlet_category), así que el
+# filtro por título ['balón','fútbol'] también dejaba pasar memorabilia
+# de coleccionista de la marca SIGNABLES ("Inter Miami Lionel Messi #10
+# Balón de fútbol Artículo de coleccionista 14 cm..." -- una réplica
+# firmada de exhibición, no una pelota para jugar). 32 productos reales
+# confirmados contaminados, todos de esta marca/categoría.
+COLLECTIBLE_RE = re.compile(r"coleccionista|collector'?s?\b|signable|mystery box|\bfunko\b", re.I)
 
 # custom_1 en Foot-Store/Sport is Good ES viene inconsistente entre filas
 # del MISMO feed: a veces "9" pelado, a veces "Taille 9" -- confirmado
@@ -56,7 +68,16 @@ def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             mc = row.get('merchant_category') or ''
-            if category_kw not in mc or '> Adulte' not in mc:
+            # Encontrado 2026-09-18 armando ropa: categorías genéricas de
+            # una palabra ("Short", "Chaussettes") también existen como
+            # hoja bajo OTROS departamentos del mismo feed ("Training >
+            # Short", "Running > Chaussettes" -- ej. Puma Hyrox, Lenz
+            # running), así que un simple "in mc" dejaba pasar ropa de
+            # fitness/running sin nada de fútbol. Guantes/pelotas no
+            # tenían este problema porque su category_kw ya era una frase
+            # larga sin ambigüedad ("Gants de gardien", "Ballon de
+            # football") -- acá hace falta exigir el departamento real.
+            if not mc.startswith('Football > ') or category_kw not in mc or '> Adulte' not in mc:
                 continue
             title = row.get('product_name') or ''
             if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title):
@@ -89,6 +110,7 @@ def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=
         )
         entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': model,
+            'colour': colour or 'N/D',
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
@@ -109,7 +131,11 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             pt = row.get('product_type') or ''
-            if category_kw not in pt or 'Adulte' not in pt:
+            # Mismo motivo que mine_blaz_category: exigir el departamento
+            # real "Football" (no solo que el texto de la categoría
+            # contenga la palabra suelta) para no dejar pasar ropa de
+            # Running/Training sin nada de fútbol.
+            if not pt.startswith('Football > ') or category_kw not in pt or 'Adulte' not in pt:
                 continue
             title = row.get('title') or ''
             if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title):
@@ -119,7 +145,14 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
             price = parse_price((row.get('sale_price') or row.get('price') or '').replace(' EUR', ''))
             if not price:
                 continue
-            key = row.get('item_group_id') or row.get('id')
+            # item_group_id viene vacío en TODAS las filas de este feed
+            # (confirmado real 2026-09-18, ej. Softee América) -- caer a
+            # `id` (el SKU por talla) agrupaba cada talla como su propio
+            # "producto" en vez de una sola oferta con varias tallas
+            # (bug real, reportado por el usuario como guantes
+            # repetidos). brand+title+color es estable entre tallas del
+            # mismo producto en este esquema, así que sirve de key real.
+            key = row.get('item_group_id') or f"{row.get('brand', '')}|{row.get('title', '')}|{row.get('color', '')}"
             if not key:
                 continue
             groups.setdefault(key, []).append(row)
@@ -148,6 +181,7 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
         )
         entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': model,
+            'colour': colour or 'N/D',
             'price': price, 'shipping': shipping,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'), 'sizes': sizes,
@@ -177,7 +211,7 @@ def mine_deporte_outlet_category(title_keywords, store_label, out_list, check_ki
             tl = title.lower()
             if not all(k in tl for k in title_keywords):
                 continue
-            if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title) or KIDS_RE.search(title):
+            if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title) or KIDS_RE.search(title) or COLLECTIBLE_RE.search(title):
                 continue
             if check_kids_gender:
                 gender = (row.get('custom_2') or '').strip().lower()
@@ -201,6 +235,7 @@ def mine_deporte_outlet_category(title_keywords, store_label, out_list, check_ki
                         key=size_sort_key)
         out_list.append({
             'store': 'DeporteOutlet', 'brand': brand or 'N/D', 'model': model,
+            'colour': colour or 'N/D',
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
@@ -241,8 +276,10 @@ def mine_gigasport_category(fname, store_label, cats, out_list):
         model = re.sub(r'^(herren|damen)\s+', '', model, flags=re.I)
         price = min(p for _, _, p in items)
         price_max = max(p for _, _, p in items)
+        colour = (rep_row.get('colour') or '').strip()
         entry = {
             'store': store_label, 'brand': brand or 'N/D', 'model': model,
+            'colour': colour or 'N/D',
             'price': price, 'shipping': parse_price(rep_row.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep_row.get('aw_deep_link'), 'imageUrl': rep_row.get('aw_image_url'), 'sizes': sizes,
@@ -256,6 +293,79 @@ def mine_gigasport_category(fname, store_label, cats, out_list):
         out_list.append(entry)
         n += 1
     print(f'{store_label}:', n)
+
+
+# Encontrado 2026-09-18 (reporte real del usuario, capturas de pantalla
+# de guantes repetidos): Foot-Store y Sport is Good (ES y FR) son
+# storefronts espejo del mismo backend -- mismo product_name/title,
+# mismo product_deep_link con solo el dominio distinto -- así que el
+# mismo guante/pelota real salía como HASTA 4 "productos" separados (uno
+# por tienda), cada uno con una sola oferta, en vez de UN producto
+# comparando las 4 ofertas reales. Cada mine_* de arriba seguía
+# agregando filas sueltas a gloves_results/balls_results (una por
+# tienda); acá se agrupan por (marca, modelo) normalizado ANTES de
+# escribir el JSON -- key de texto exacto, no fuzzy: alcanza para fundir
+# los pares que comparten esquema/idioma (Blaz ES+ES, Google Shopping
+# FR+FR) sin arriesgar fundir dos productos reales distintos que por
+# casualidad compartan texto.
+def merge_by_model(results):
+    order = []
+    groups = {}
+    for d in results:
+        # `type` entra en la key para ropa (shorts/chaqueta/pantalón/
+        # medias no deberían fundirse entre sí aunque compartan texto de
+        # marca+modelo por casualidad); ausente en guantes/pelotas, no
+        # cambia nada ahí (siempre la misma tupla vacía-equivalente).
+        key = (d['brand'].strip().lower(), re.sub(r'\s+', ' ', d['model'].strip().lower()), d.get('type'))
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(d)
+    merged = []
+    for key in order:
+        rows = groups[key]
+        rep = rows[0]
+        offer_fields = ('store', 'price', 'priceMax', 'shipping', 'currency', 'url', 'imageUrl', 'sizes', 'sizePrices')
+        merged_entry = {
+            'brand': rep['brand'],
+            'model': rep['model'],
+            # El color ya está implícito en la key de fusión (viene
+            # pegado al final de `model`, ej. "- Blanc"), así que vive a
+            # nivel producto (no por oferta) -- pedido explícito del
+            # usuario para poder filtrar por color sin parsear texto
+            # libre.
+            'colour': rep.get('colour') or 'N/D',
+            'offers': [{k: r[k] for k in offer_fields if k in r} for r in rows],
+        }
+        if 'type' in rep:
+            merged_entry['type'] = rep['type']
+        merged.append(merged_entry)
+    return merged
+
+
+# ---------- ROPA DE FÚTBOL (shorts, chaquetas, pantalones, medias) ----------
+# Agregado 2026-09-18 (pedido explícito del usuario: "no hay nada de
+# pantalones, chaquetas, shorts o medias... en caso de que lo tengamos en
+# el catálogo hay que agregarlo"). Confirmado real: el mismo esquema
+# "Blaz Awin" (Foot-Store/Sport is Good ES+FR) ya usado para guantes/
+# pelotas tiene una taxonomía real de ropa de fútbol adulta bajo
+# "Football > {Short,Veste de survêtement,Pantalon de survêtement,
+# Chaussettes} > Adulte > ..." con volumen real grande (5580 shorts solo
+# en Foot-Store ES). Reusa mine_blaz_category/mine_google_shopping_category
+# tal cual (mismo filtro EXCLUDE_KEYWORDS/American-football/Adulte ya
+# aplicado), solo se etiqueta el `type` después. Deporte Outlet/Gigasport
+# quedan afuera de esta primera carga (sin categoría de ropa confiable
+# verificada todavía) -- mismo criterio que "ship lo pedido, no de más".
+def mine_apparel_type(type_key, category_kw, out_list):
+    tmp = []
+    mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', category_kw, tmp)
+    mine_blaz_category('SPORTISGOOD_ES.csv', 'SportIsGoodES', category_kw, tmp)
+    mine_google_shopping_category('FOOTSTORE_FR.csv', 'FootStoreFR', category_kw, tmp)
+    mine_google_shopping_category('SPORTISGOOD_FR.csv', 'SportIsGoodFR', category_kw, tmp)
+    for d in tmp:
+        d['type'] = type_key
+    out_list.extend(tmp)
+    print(f'{type_key}:', len(tmp))
 
 
 if __name__ == '__main__':
@@ -279,9 +389,21 @@ if __name__ == '__main__':
     mine_gigasport_category('GIGASPORT_CH.csv', 'GigasportCH', ('Fußbälle > Matchbälle', 'Fußbälle > Trainingsbälle'), balls_results)
     mine_gigasport_category('GIGASPORT_FR.csv', 'GigasportFR', ('Ballons de football > Ballons de match', 'Ballons de football > Ballons d\'entraînement'), balls_results)
 
-    print('TOTAL guantes:', len(gloves_results))
-    print('TOTAL pelotas:', len(balls_results))
+    print('=== ROPA ===')
+    mine_apparel_type('shorts', 'Short', apparel_results)
+    mine_apparel_type('jacket', 'Veste de survêtement', apparel_results)
+    mine_apparel_type('pants', 'Pantalon de survêtement', apparel_results)
+    mine_apparel_type('socks', 'Chaussettes', apparel_results)
+
+    gloves_merged = merge_by_model(gloves_results)
+    balls_merged = merge_by_model(balls_results)
+    apparel_merged = merge_by_model(apparel_results)
+    print('TOTAL guantes:', len(gloves_results), '->', len(gloves_merged), 'productos tras fundir por tienda')
+    print('TOTAL pelotas:', len(balls_results), '->', len(balls_merged), 'productos tras fundir por tienda')
+    print('TOTAL ropa:', len(apparel_results), '->', len(apparel_merged), 'productos tras fundir por tienda')
     with open(GLOVES_OUT, 'w') as f:
-        json.dump(gloves_results, f, ensure_ascii=False, indent=1)
+        json.dump(gloves_merged, f, ensure_ascii=False, indent=1)
     with open(BALLS_OUT, 'w') as f:
-        json.dump(balls_results, f, ensure_ascii=False, indent=1)
+        json.dump(balls_merged, f, ensure_ascii=False, indent=1)
+    with open(APPAREL_OUT, 'w') as f:
+        json.dump(apparel_merged, f, ensure_ascii=False, indent=1)

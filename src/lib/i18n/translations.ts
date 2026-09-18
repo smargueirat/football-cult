@@ -396,6 +396,17 @@ export interface Translations {
     navLabel: string;
     pageTitle: string;
     pageSubtitle: string;
+    clubLabel: string;
+    leagueLabel: string;
+    venueLabel: string;
+    dateLabel: string;
+  };
+  ropa: {
+    navLabel: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    typeLabel: string;
+    types: { shorts: string; jacket: string; pants: string; socks: string };
   };
 }
 
@@ -856,6 +867,17 @@ export const translations: Record<Locale, Translations> = {
       navLabel: "Entradas",
       pageTitle: "Entradas de fútbol",
       pageSubtitle: "{n} partidos reales con entradas disponibles.",
+      clubLabel: "Club",
+      leagueLabel: "Liga",
+      venueLabel: "Estadio",
+      dateLabel: "Fecha",
+    },
+    ropa: {
+      navLabel: "Ropa",
+      pageTitle: "Ropa de fútbol",
+      pageSubtitle: "{n} prendas reales de tiendas aprobadas.",
+      typeLabel: "Tipo",
+      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias" },
     },
   },
   pt: {
@@ -1313,6 +1335,17 @@ export const translations: Record<Locale, Translations> = {
       navLabel: "Ingressos",
       pageTitle: "Ingressos de futebol",
       pageSubtitle: "{n} partidas reais com ingressos disponíveis.",
+      clubLabel: "Clube",
+      leagueLabel: "Liga",
+      venueLabel: "Estádio",
+      dateLabel: "Data",
+    },
+    ropa: {
+      navLabel: "Roupas",
+      pageTitle: "Roupas de futebol",
+      pageSubtitle: "{n} peças reais de lojas aprovadas.",
+      typeLabel: "Tipo",
+      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias" },
     },
   },
   en: {
@@ -1770,6 +1803,17 @@ export const translations: Record<Locale, Translations> = {
       navLabel: "Tickets",
       pageTitle: "Football tickets",
       pageSubtitle: "{n} real matches with tickets available.",
+      clubLabel: "Club",
+      leagueLabel: "League",
+      venueLabel: "Stadium",
+      dateLabel: "Date",
+    },
+    ropa: {
+      navLabel: "Apparel",
+      pageTitle: "Football apparel",
+      pageSubtitle: "{n} real items from approved stores.",
+      typeLabel: "Type",
+      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks" },
     },
   },
   fr: {
@@ -2227,6 +2271,17 @@ export const translations: Record<Locale, Translations> = {
       navLabel: "Billets",
       pageTitle: "Billets de football",
       pageSubtitle: "{n} matchs réels avec billets disponibles.",
+      clubLabel: "Club",
+      leagueLabel: "Ligue",
+      venueLabel: "Stade",
+      dateLabel: "Date",
+    },
+    ropa: {
+      navLabel: "Vêtements",
+      pageTitle: "Vêtements de football",
+      pageSubtitle: "{n} articles réels de boutiques approuvées.",
+      typeLabel: "Type",
+      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes" },
     },
   },
   it: {
@@ -2684,6 +2739,17 @@ export const translations: Record<Locale, Translations> = {
       navLabel: "Biglietti",
       pageTitle: "Biglietti di calcio",
       pageSubtitle: "{n} partite reali con biglietti disponibili.",
+      clubLabel: "Club",
+      leagueLabel: "Campionato",
+      venueLabel: "Stadio",
+      dateLabel: "Data",
+    },
+    ropa: {
+      navLabel: "Abbigliamento",
+      pageTitle: "Abbigliamento da calcio",
+      pageSubtitle: "{n} capi reali da negozi approvati.",
+      typeLabel: "Tipo",
+      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni" },
     },
   },
 };

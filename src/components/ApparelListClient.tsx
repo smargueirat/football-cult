@@ -7,21 +7,31 @@ import Chip from "./Chip";
 import ScrollArrowRow from "./ScrollArrowRow";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
-// Listado simple (grilla + búsqueda de texto + orden por precio) para
-// guantes y pelotas. No se integró en SearchExplorer.tsx a propósito --
-// es un componente grande y compartido con camisetas/botas, tocarlo
-// para sumar 2 tipos de producto más es un cambio aparte que conviene
-// revisar por separado en vez de arriesgar una regresión ahí solo para
-// esto. Reusa Chip/ScrollArrowRow (mismos bloques visuales que ya usa
-// SearchExplorer para marca/talla/color de botas) para no inventar una
-// segunda UI de filtros.
-//
-// Filtros de Marca/Talla/Color agregados 2026-09-18 (pedido explícito
-// del usuario tras revisar el catálogo en vivo: "falta filtro por
-// marca, talle, color"). Selección simple (no multi-select como botas):
-// el catálogo de guantes/pelotas tiene muchas menos marcas/colores que
-// botas, un solo filtro a la vez alcanza y es más simple de usar.
-interface GearOffer {
+// Variante de GearListClient para ropa: misma UI (grilla + búsqueda +
+// filtros de Marca/Talla/Color, reusando GearCard), más un filtro extra
+// de Tipo (shorts/chaqueta/pantalón/medias) que gloves/balls no tienen.
+// No se generalizó GearListClient para aceptar un `type` opcional
+// porque las tallas también cambian de forma real: shorts/chaquetas/
+// pantalones usan XS-4XL (letras), medias usan rangos numéricos
+// ("39/42") -- el sort por talla de GearListClient asume números sueltos
+// (parseFloat) y rompería con letras, así que hace falta su propio
+// comparador acá en vez de forzar uno solo para los 3 tipos de producto.
+const APPAREL_TYPES = ["shorts", "jacket", "pants", "socks"] as const;
+type ApparelType = (typeof APPAREL_TYPES)[number];
+
+const LETTER_SIZE_ORDER = ["XXS", "XS", "S", "M", "L", "XL", "XXL", "2XL", "3XL", "4XL", "5XL"];
+function sizeSortKey(s: string): number {
+  const i = LETTER_SIZE_ORDER.indexOf(s.toUpperCase());
+  if (i !== -1) return i;
+  const n = parseFloat(s);
+  // Tallas numéricas (medias en rango "39/42", pantalón de mujer "38")
+  // ordenan después de las de letra, por su propio valor -- separar los
+  // dos mundos evita que un "40" se intercale entre "S" y "M" por una
+  // comparación numérica que no tiene sentido para talla de letra.
+  return Number.isNaN(n) ? 100 + LETTER_SIZE_ORDER.length : LETTER_SIZE_ORDER.length + n;
+}
+
+interface ApparelOffer {
   store: string;
   price: number;
   shipping: number;
@@ -29,57 +39,64 @@ interface GearOffer {
   imageUrl: string;
   sizes: string[];
 }
-interface GearProductLike {
+interface ApparelProductLike {
   id: string;
   brand: string;
   model: string;
   colour: string;
-  offers: GearOffer[];
+  type: ApparelType;
+  offers: ApparelOffer[];
 }
 
 const PAGE_SIZE = 24;
 
-export default function GearListClient({
+export default function ApparelListClient({
   items,
-  basePath,
   pageTitle,
   pageSubtitle,
 }: {
-  items: GearProductLike[];
-  basePath: "guantes" | "pelotas";
+  items: ApparelProductLike[];
   pageTitle: string;
   pageSubtitle: string;
 }) {
   const { t } = useLanguage();
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
+  const [typeFilter, setTypeFilter] = useState<ApparelType | "">("");
   const [brandFilter, setBrandFilter] = useState("");
   const [sizeFilter, setSizeFilter] = useState("");
   const [colourFilter, setColourFilter] = useState("");
 
+  const typeLabel = (ty: ApparelType) => t.ropa.types[ty];
+
+  const scopedByType = useMemo(
+    () => (typeFilter ? items.filter((i) => i.type === typeFilter) : items),
+    [items, typeFilter],
+  );
   const brands = useMemo(
-    () => [...new Set(items.map((i) => i.brand))].sort((a, b) => a.localeCompare(b)),
-    [items],
+    () => [...new Set(scopedByType.map((i) => i.brand))].sort((a, b) => a.localeCompare(b)),
+    [scopedByType],
   );
   const sizes = useMemo(
     () =>
-      [...new Set(items.flatMap((i) => i.offers.flatMap((o) => o.sizes)))].sort(
-        (a, b) => parseFloat(a) - parseFloat(b) || a.localeCompare(b),
+      [...new Set(scopedByType.flatMap((i) => i.offers.flatMap((o) => o.sizes)))].sort(
+        (a, b) => sizeSortKey(a) - sizeSortKey(b),
       ),
-    [items],
+    [scopedByType],
   );
   const colours = useMemo(
     () =>
-      [...new Set(items.map((i) => i.colour))]
+      [...new Set(scopedByType.map((i) => i.colour))]
         .filter((c) => c && c !== "N/D")
         .sort((a, b) => a.localeCompare(b)),
-    [items],
+    [scopedByType],
   );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     const base = items.filter((i) => {
       if (q && !`${i.brand} ${i.model}`.toLowerCase().includes(q)) return false;
+      if (typeFilter && i.type !== typeFilter) return false;
       if (brandFilter && i.brand !== brandFilter) return false;
       if (colourFilter && i.colour !== colourFilter) return false;
       if (sizeFilter && !i.offers.some((o) => o.sizes.includes(sizeFilter))) return false;
@@ -90,7 +107,11 @@ export default function GearListClient({
       const pb = Math.min(...b.offers.map((o) => o.price + o.shipping));
       return pa - pb;
     });
-  }, [items, query, brandFilter, sizeFilter, colourFilter]);
+  }, [items, query, typeFilter, brandFilter, sizeFilter, colourFilter]);
+
+  function resetPage() {
+    setVisible(PAGE_SIZE);
+  }
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
@@ -111,7 +132,7 @@ export default function GearListClient({
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
-          setVisible(PAGE_SIZE);
+          resetPage();
         }}
         placeholder={t.nav.search}
         className="glass-panel mt-5 w-full max-w-sm rounded-xl border border-[#C9A24B]/30 px-4 py-2 text-sm text-[#1a1a1a] outline-none placeholder:text-[#675c44]/60"
@@ -119,13 +140,27 @@ export default function GearListClient({
 
       <div className="mt-4 flex flex-col gap-3">
         <div className="flex flex-col gap-1.5">
+          <span className="text-xs text-[#675c44]">{t.ropa.typeLabel}:</span>
+          <ScrollArrowRow className="-mx-4 gap-2 px-4 sm:-mx-8 sm:px-8">
+            <Chip active={typeFilter === ""} onClick={() => { setTypeFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
+              {t.search.allCategories}
+            </Chip>
+            {APPAREL_TYPES.map((ty) => (
+              <Chip key={ty} active={typeFilter === ty} onClick={() => { setTypeFilter(ty); setBrandFilter(""); setSizeFilter(""); setColourFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
+                {typeLabel(ty)}
+              </Chip>
+            ))}
+          </ScrollArrowRow>
+        </div>
+
+        <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.search.brandLabel}:</span>
           <ScrollArrowRow className="-mx-4 gap-2 px-4 sm:-mx-8 sm:px-8">
-            <Chip active={brandFilter === ""} onClick={() => { setBrandFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+            <Chip active={brandFilter === ""} onClick={() => { setBrandFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
               {t.search.allCategories}
             </Chip>
             {brands.map((b) => (
-              <Chip key={b} active={brandFilter === b} onClick={() => { setBrandFilter(b); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              <Chip key={b} active={brandFilter === b} onClick={() => { setBrandFilter(b); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
                 {b}
               </Chip>
             ))}
@@ -135,11 +170,11 @@ export default function GearListClient({
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.search.sizeLabel}:</span>
           <ScrollArrowRow className="-mx-4 gap-2 px-4 sm:-mx-8 sm:px-8">
-            <Chip active={sizeFilter === ""} onClick={() => { setSizeFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+            <Chip active={sizeFilter === ""} onClick={() => { setSizeFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
               {t.search.allCategories}
             </Chip>
             {sizes.map((s) => (
-              <Chip key={s} active={sizeFilter === s} onClick={() => { setSizeFilter(s); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              <Chip key={s} active={sizeFilter === s} onClick={() => { setSizeFilter(s); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
                 {s}
               </Chip>
             ))}
@@ -149,11 +184,11 @@ export default function GearListClient({
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.search.colorLabel}:</span>
           <ScrollArrowRow className="-mx-4 gap-2 px-4 sm:-mx-8 sm:px-8">
-            <Chip active={colourFilter === ""} onClick={() => { setColourFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+            <Chip active={colourFilter === ""} onClick={() => { setColourFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
               {t.search.allCategories}
             </Chip>
             {colours.map((c) => (
-              <Chip key={c} active={colourFilter === c} onClick={() => { setColourFilter(c); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              <Chip key={c} active={colourFilter === c} onClick={() => { setColourFilter(c); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
                 {c}
               </Chip>
             ))}
@@ -163,7 +198,7 @@ export default function GearListClient({
 
       <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-5">
         {filtered.slice(0, visible).map((item, i) => (
-          <GearCard key={item.id} item={item} basePath={basePath} priority={i < 4} />
+          <GearCard key={item.id} item={item} basePath="ropa" priority={i < 4} />
         ))}
       </div>
 
