@@ -43,14 +43,16 @@ export default function TicketsPageClient() {
   const [clubFilter, setClubFilter] = useState("");
   const [leagueFilter, setLeagueFilter] = useState("");
   const [venueFilter, setVenueFilter] = useState("");
-  const [dateFilter, setDateFilter] = useState("");
+  const [dateFrom, setDateFrom] = useState("");
+  const [dateTo, setDateTo] = useState("");
 
-  const activeFilterCount = [clubFilter, leagueFilter, venueFilter, dateFilter].filter(Boolean).length;
+  const activeFilterCount = [clubFilter, leagueFilter, venueFilter, dateFrom, dateTo].filter(Boolean).length;
   function clearAllFilters() {
     setClubFilter("");
     setLeagueFilter("");
     setVenueFilter("");
-    setDateFilter("");
+    setDateFrom("");
+    setDateTo("");
     setVisible(PAGE_SIZE);
   }
 
@@ -66,10 +68,6 @@ export default function TicketsPageClient() {
     () => [...new Set(ticketProducts.map((tk) => tk.venue))].sort((a, b) => a.localeCompare(b)),
     [],
   );
-  const dates = useMemo(
-    () => [...new Set(ticketProducts.map((tk) => tk.date))].sort(),
-    [],
-  );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -78,14 +76,15 @@ export default function TicketsPageClient() {
       if (clubFilter && !splitTeams(tk.event).includes(clubFilter)) return false;
       if (leagueFilter && tk.competition !== leagueFilter) return false;
       if (venueFilter && tk.venue !== venueFilter) return false;
-      if (dateFilter && tk.date !== dateFilter) return false;
+      if (dateFrom && tk.date < dateFrom) return false;
+      if (dateTo && tk.date > dateTo) return false;
       return true;
     });
     return [...base].sort((a, b) => {
       const cmp = `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`);
       return sortBy === "dateAsc" ? cmp : -cmp;
     });
-  }, [query, clubFilter, leagueFilter, venueFilter, dateFilter, sortBy]);
+  }, [query, clubFilter, leagueFilter, venueFilter, dateFrom, dateTo, sortBy]);
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
@@ -180,53 +179,84 @@ export default function TicketsPageClient() {
         activeCount={activeFilterCount}
         onClear={clearAllFilters}
       >
-        {/* Club/Estadio/Fecha: cientos de valores reales distintos
-            (equipos, 228 estadios, cientos de fechas), demasiados para
-            una fila de chips -- un <select> nativo es lo que de verdad
-            sirve acá. Liga (27 valores) sí entra cómoda como chips. */}
+        {/* Club/Estadio: cientos de valores reales distintos (equipos,
+            228 estadios), demasiados para una fila de chips -- un
+            <select> es lo que de verdad sirve acá, pero restyleado
+            (appearance-none + flecha propia) para que tenga el mismo
+            aspecto que el resto de los filtros en vez del <select> gris
+            nativo del navegador -- pedido explícito del usuario ("tiene
+            que tener todo el mismo formato"). Liga (27 valores) sí entra
+            cómoda como chips. Fecha: rango real con dos <input
+            type="date"> (calendario nativo del navegador/SO al
+            tocarlos) en vez de un <select> de fecha exacta -- pedido
+            explícito del usuario: "el de fecha tiene que ser un
+            calendario, para elegir desde qué hasta qué fecha". */}
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.clubLabel}:</span>
-          <select
-            value={clubFilter}
-            onChange={(e) => { setClubFilter(e.target.value); setVisible(PAGE_SIZE); }}
-            aria-label={t.tickets.clubLabel}
-            className="rounded-xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-2 text-sm text-[#1a1a1a] outline-none"
-          >
-            <option value="">{t.search.allCategories}</option>
-            {clubs.map((c) => (
-              <option key={c} value={c}>{c}</option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={clubFilter}
+              onChange={(e) => { setClubFilter(e.target.value); setVisible(PAGE_SIZE); }}
+              aria-label={t.tickets.clubLabel}
+              className="w-full appearance-none rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-3 pr-9 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
+            >
+              <option value="">{t.search.allCategories}</option>
+              {clubs.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
+            </select>
+            <svg className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#675c44]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
         </div>
 
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.venueLabel}:</span>
-          <select
-            value={venueFilter}
-            onChange={(e) => { setVenueFilter(e.target.value); setVisible(PAGE_SIZE); }}
-            aria-label={t.tickets.venueLabel}
-            className="rounded-xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-2 text-sm text-[#1a1a1a] outline-none"
-          >
-            <option value="">{t.search.allCategories}</option>
-            {venues.map((v) => (
-              <option key={v} value={v}>{v}</option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={venueFilter}
+              onChange={(e) => { setVenueFilter(e.target.value); setVisible(PAGE_SIZE); }}
+              aria-label={t.tickets.venueLabel}
+              className="w-full appearance-none rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-3 pr-9 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
+            >
+              <option value="">{t.search.allCategories}</option>
+              {venues.map((v) => (
+                <option key={v} value={v}>{v}</option>
+              ))}
+            </select>
+            <svg className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#675c44]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
         </div>
 
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.dateLabel}:</span>
-          <select
-            value={dateFilter}
-            onChange={(e) => { setDateFilter(e.target.value); setVisible(PAGE_SIZE); }}
-            aria-label={t.tickets.dateLabel}
-            className="rounded-xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-3 py-2 text-sm text-[#1a1a1a] outline-none"
-          >
-            <option value="">{t.search.allCategories}</option>
-            {dates.map((d) => (
-              <option key={d} value={d}>{d}</option>
-            ))}
-          </select>
+          <div className="grid grid-cols-2 gap-2">
+            <div className="flex flex-col gap-1">
+              <span className="text-[10px] text-[#9a9a94]">{t.tickets.dateFromLabel}</span>
+              <input
+                type="date"
+                value={dateFrom}
+                max={dateTo || undefined}
+                onChange={(e) => { setDateFrom(e.target.value); setVisible(PAGE_SIZE); }}
+                aria-label={t.tickets.dateFromLabel}
+                className="w-full rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-3 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
+              />
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-[10px] text-[#9a9a94]">{t.tickets.dateToLabel}</span>
+              <input
+                type="date"
+                value={dateTo}
+                min={dateFrom || undefined}
+                onChange={(e) => { setDateTo(e.target.value); setVisible(PAGE_SIZE); }}
+                aria-label={t.tickets.dateToLabel}
+                className="w-full rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-3 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col gap-1.5">

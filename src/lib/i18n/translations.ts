@@ -400,6 +400,8 @@ export interface Translations {
     leagueLabel: string;
     venueLabel: string;
     dateLabel: string;
+    dateFromLabel: string;
+    dateToLabel: string;
     soonestFirst: string;
     latestFirst: string;
   };
@@ -873,6 +875,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Liga",
       venueLabel: "Estadio",
       dateLabel: "Fecha",
+      dateFromLabel: "Desde",
+      dateToLabel: "Hasta",
       soonestFirst: "Fecha: más próximos primero",
       latestFirst: "Fecha: más lejanos primero",
     },
@@ -1343,6 +1347,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Liga",
       venueLabel: "Estádio",
       dateLabel: "Data",
+      dateFromLabel: "De",
+      dateToLabel: "Até",
       soonestFirst: "Data: mais próximos primeiro",
       latestFirst: "Data: mais distantes primeiro",
     },
@@ -1813,6 +1819,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "League",
       venueLabel: "Stadium",
       dateLabel: "Date",
+      dateFromLabel: "From",
+      dateToLabel: "To",
       soonestFirst: "Date: soonest first",
       latestFirst: "Date: latest first",
     },
@@ -2283,6 +2291,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Ligue",
       venueLabel: "Stade",
       dateLabel: "Date",
+      dateFromLabel: "Du",
+      dateToLabel: "Au",
       soonestFirst: "Date : les plus proches d'abord",
       latestFirst: "Date : les plus lointaines d'abord",
     },
@@ -2753,6 +2763,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Campionato",
       venueLabel: "Stadio",
       dateLabel: "Data",
+      dateFromLabel: "Da",
+      dateToLabel: "A",
       soonestFirst: "Data: più vicine prima",
       latestFirst: "Data: più lontane prima",
     },
