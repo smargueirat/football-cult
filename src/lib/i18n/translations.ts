@@ -400,6 +400,8 @@ export interface Translations {
     leagueLabel: string;
     venueLabel: string;
     dateLabel: string;
+    soonestFirst: string;
+    latestFirst: string;
   };
   ropa: {
     navLabel: string;
@@ -871,6 +873,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Liga",
       venueLabel: "Estadio",
       dateLabel: "Fecha",
+      soonestFirst: "Fecha: más próximos primero",
+      latestFirst: "Fecha: más lejanos primero",
     },
     ropa: {
       navLabel: "Ropa",
@@ -1339,6 +1343,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Liga",
       venueLabel: "Estádio",
       dateLabel: "Data",
+      soonestFirst: "Data: mais próximos primeiro",
+      latestFirst: "Data: mais distantes primeiro",
     },
     ropa: {
       navLabel: "Roupas",
@@ -1807,6 +1813,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "League",
       venueLabel: "Stadium",
       dateLabel: "Date",
+      soonestFirst: "Date: soonest first",
+      latestFirst: "Date: latest first",
     },
     ropa: {
       navLabel: "Apparel",
@@ -2275,6 +2283,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Ligue",
       venueLabel: "Stade",
       dateLabel: "Date",
+      soonestFirst: "Date : les plus proches d'abord",
+      latestFirst: "Date : les plus lointaines d'abord",
     },
     ropa: {
       navLabel: "Vêtements",
@@ -2743,6 +2753,8 @@ export const translations: Record<Locale, Translations> = {
       leagueLabel: "Campionato",
       venueLabel: "Stadio",
       dateLabel: "Data",
+      soonestFirst: "Data: più vicine prima",
+      latestFirst: "Data: più lontane prima",
     },
     ropa: {
       navLabel: "Abbigliamento",
