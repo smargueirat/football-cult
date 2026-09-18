@@ -2232,3 +2232,60 @@ an offer already on file. DecathlonIE produced a genuine zero again (0 picks;
 its `Fashion:size` column is back and populated on all 41689 rows, so this is a
 real zero, not the silent wrong-column failure). ProSoccer footwear-only as
 always.
+
+## Daily pass (2026-09-18) -- one seller's template titles are a season-conflict factory, and stale keys survive in the accumulated eBay pick files
+
+All 14 Awin feeds + the 5 Rakuten Brazil stores + one `ebay_mine_cycle.py` batch
+(cycle 3 at 180/384, 60 teams newly completed, **zero 429s**). Soicos skipped
+again -- no `claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten
+FTP listing, skipped per instructions (4th pass running). 28 new products
+(2 CSV-feed, 2 eBay current, 4 eBay kids, 20 eBay retro), all photo-verified;
+`tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**A single eBay seller at a fixed $28.98 produced 9 of the 22 current-pick
+season conflicts.** Template titles of the shape `JERSEY <Team> <Type> mens
+26-27` (also `Jersey VfB Stuttgart Soccer Home Mens 26-27`, `26 JERSEY River
+Plate Mens ... training`), one per team+type, all claiming the *next* season.
+The photos are real licensed shirts -- but demonstrably **older** kits: Napoli's
+white and red EA7/MSC away+third are 24/25, Torino's maroon Joma/Suzuki and
+Stuttgart's JAKO/LBBW white are 24/25-25/26. This is the documented "retro
+titled as current" class arriving at scale from one source rather than one
+listing at a time. **The price is the cheapest tell** -- an identical price
+across nine unrelated teams means one seller's template, not nine real market
+prices, and that is worth checking before opening nine photos.
+
+**The eBay pick files accumulate across runs, so they carry keys that no longer
+exist.** `ebay_mine_full.py`'s resume support means `<out_dir>/retro_picks.json`
+keeps everything mined since the directory was created (2697 entries here, only
+47 new against `products.ts`), and two of those were `stetienne|*` -- a TeamKey
+**merged into `asse` and deleted on 2026-09-17**. `retro_gen.py` would have
+emitted `teamKey: "stetienne"`, which no longer exists in the union, so `tsc`
+would have caught it -- but only after the block was written. Re-keyed to `asse`
+before generating. **When a TeamKey is retired, the accumulated pick files are a
+second place it still lives**; either clear the out_dir or re-key on the way in.
+
+**`team_collision_scan.py` earned its keep three times**: 6 real misattributions
+in current picks (Club América filed under `israel` because the listing names
+the player **Israel Reyes** -- the 09-16 player-name class again, now as a
+*first* name; Air Jordan PSG/Brazil under `jordania` twice; River Plate under
+`argentina`; Celta under `espana`; PSG under `francia`), 24 retro club shirts
+under national-team keys, and 9 more in the retro *merge* set. **Run it on the
+merge set too, not just on new products** -- a wrong-team merge attaches a real
+offer to a real product silently, with no new id to notice.
+
+Two hard drops photo review caught that no scan would: `elsalvador|home`, a
+plain white polo with "ES" screen-printed and no federation crest or kit-maker
+mark (the generic-unlicensed class), and `colombia|third`, which is Deportivo
+Cali (WPlay.co, "La Muñeca") -- a club too small to have a `TEAM_PATTERNS` entry,
+so the collision scan had nothing to match it against.
+
+**France 2018 and 2018/19 away were the same World Cup kit** under two season
+labels from the same seller at the same price, which the retro pipeline's
+"keep every distinct season" rule would have turned into two catalog pages.
+Kept the `2018` one. Distinct ids are not proof of distinct shirts.
+
+All 8 CSV-feed season conflicts were noise again (5 exact duplicates matched on
+link AND decoded image; `noruega|home` 2025 against the Nike World Cup 2026
+shirt on file, and `internacional|home` 25/26 -- the same InterStore older-stock
+skip now five passes running). `ebay_check_stale.py`: 22 of 200 (11%), normal.
+DecathlonIE and ProSoccer genuine zeros as always.
