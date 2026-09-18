@@ -12,7 +12,7 @@ import Portal from "./Portal";
 // Emoji antes de cada palabra en el resto del menú (búsqueda, vistos
 // recientemente, contacto) -- pedido explícito del usuario después de
 // que el menú mezclaba todo en una sola lista plana sin ninguna
-// diferencia visual. Las 6 secciones del "Catálogo" en cambio usan la
+// diferencia visual. Las 9 secciones del "Catálogo" en cambio usan la
 // misma foto circular real que ya usa el dropdown de escritorio
 // (SectionsMenu) -- pedido explícito del usuario: los emoji ahí se
 // veían mal, quedan mejor como círculo con foto, igual que en web.
@@ -28,6 +28,9 @@ export default function MobileMenu() {
     { photo: SECTION_PHOTOS[3], label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3] },
     { photo: SECTION_PHOTOS[4], label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4] },
     { photo: SECTION_PHOTOS[5], label: t.botas.navLabel, href: SECTION_PATHS[5] },
+    { photo: SECTION_PHOTOS[6], label: t.guantes.navLabel, href: SECTION_PATHS[6] },
+    { photo: SECTION_PHOTOS[7], label: t.pelotas.navLabel, href: SECTION_PATHS[7] },
+    { photo: SECTION_PHOTOS[8], label: t.tickets.navLabel, href: SECTION_PATHS[8] },
   ];
 
   function go(href: string) {

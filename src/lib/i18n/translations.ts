@@ -501,6 +501,24 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Nike, adidas y Puma comparadas entre tiendas reales -- mismo modelo, distinto precio.",
         cta: "Ver botas",
       },
+      {
+        eyebrow: "Guantes de arquero",
+        title: "Para el que ataja",
+        subtitle: "Uhlsport, Reusch y adidas comparados entre tiendas reales, con precio por talla.",
+        cta: "Ver guantes",
+      },
+      {
+        eyebrow: "Pelotas de fútbol",
+        title: "La que manda en la cancha",
+        subtitle: "Pelotas oficiales y de entrenamiento, comparadas entre tiendas reales.",
+        cta: "Ver pelotas",
+      },
+      {
+        eyebrow: "Entradas de fútbol",
+        title: "Viví el partido en vivo",
+        subtitle: "Premier League, LaLiga, Champions League y más -- comparado entre 3 regiones reales.",
+        cta: "Ver entradas",
+      },
     ],
     featured: {
       eyebrow: "Joyas del catálogo",
@@ -939,6 +957,24 @@ export const translations: Record<Locale, Translations> = {
         title: "A chuteira que te leva pro campo",
         subtitle: "Nike, adidas e Puma comparadas entre lojas reais -- mesmo modelo, preço diferente.",
         cta: "Ver chuteiras",
+      },
+      {
+        eyebrow: "Luvas de goleiro",
+        title: "Para quem defende",
+        subtitle: "Uhlsport, Reusch e adidas comparadas entre lojas reais, com preço por tamanho.",
+        cta: "Ver luvas",
+      },
+      {
+        eyebrow: "Bolas de futebol",
+        title: "A que manda em campo",
+        subtitle: "Bolas oficiais e de treino, comparadas entre lojas reais.",
+        cta: "Ver bolas",
+      },
+      {
+        eyebrow: "Ingressos de futebol",
+        title: "Viva a partida ao vivo",
+        subtitle: "Premier League, LaLiga, Champions League e mais -- comparado entre 3 regiões reais.",
+        cta: "Ver ingressos",
       },
     ],
     featured: {
@@ -1379,6 +1415,24 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Nike, adidas and Puma compared across real stores -- same model, different price.",
         cta: "Shop boots",
       },
+      {
+        eyebrow: "Goalkeeper gloves",
+        title: "For the last line of defense",
+        subtitle: "Uhlsport, Reusch and adidas compared across real stores, with price by size.",
+        cta: "Shop gloves",
+      },
+      {
+        eyebrow: "Football balls",
+        title: "The one that runs the pitch",
+        subtitle: "Match and training balls, compared across real stores.",
+        cta: "Shop balls",
+      },
+      {
+        eyebrow: "Football tickets",
+        title: "Live the match in person",
+        subtitle: "Premier League, LaLiga, Champions League and more -- compared across 3 real regions.",
+        cta: "Shop tickets",
+      },
     ],
     featured: {
       eyebrow: "Catalog gems",
@@ -1818,6 +1872,24 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Nike, adidas et Puma comparés entre boutiques réelles -- même modèle, prix différent.",
         cta: "Voir les chaussures",
       },
+      {
+        eyebrow: "Gants de gardien",
+        title: "Pour celui qui défend",
+        subtitle: "Uhlsport, Reusch et adidas comparés entre boutiques réelles, avec prix par taille.",
+        cta: "Voir les gants",
+      },
+      {
+        eyebrow: "Ballons de football",
+        title: "Celui qui mène le jeu",
+        subtitle: "Ballons de match et d'entraînement, comparés entre boutiques réelles.",
+        cta: "Voir les ballons",
+      },
+      {
+        eyebrow: "Billets de football",
+        title: "Vivez le match en direct",
+        subtitle: "Premier League, LaLiga, Ligue des Champions et plus -- comparé entre 3 régions réelles.",
+        cta: "Voir les billets",
+      },
     ],
     featured: {
       eyebrow: "Pépites du catalogue",
@@ -2256,6 +2328,24 @@ export const translations: Record<Locale, Translations> = {
         title: "Gli scarpini che ti portano in campo",
         subtitle: "Nike, adidas e Puma confrontati tra negozi reali -- stesso modello, prezzo diverso.",
         cta: "Vedi le scarpe",
+      },
+      {
+        eyebrow: "Guanti da portiere",
+        title: "Per chi difende",
+        subtitle: "Uhlsport, Reusch e adidas confrontati tra negozi reali, con prezzo per taglia.",
+        cta: "Vedi i guanti",
+      },
+      {
+        eyebrow: "Palloni da calcio",
+        title: "Quello che comanda in campo",
+        subtitle: "Palloni ufficiali e da allenamento, confrontati tra negozi reali.",
+        cta: "Vedi i palloni",
+      },
+      {
+        eyebrow: "Biglietti di calcio",
+        title: "Vivi la partita dal vivo",
+        subtitle: "Premier League, LaLiga, Champions League e altro -- confrontato tra 3 regioni reali.",
+        cta: "Vedi i biglietti",
       },
     ],
     featured: {

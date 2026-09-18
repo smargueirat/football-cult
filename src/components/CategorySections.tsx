@@ -31,7 +31,10 @@ export default function CategorySections() {
                 cambiado a contain por un problema de la persona tapada,
                 pero probado de forma aislada con el contenedor
                 realmente cuadrado (confirmado 110x110 acá), cover se ve
-                perfecto en las 6 fotos: el recorte de un círculo es
+                perfecto en las fotos de campaña (las 3 nuevas de
+                guantes/pelotas/tickets son foto de producto cuadrada
+                pura, así que ya encajan sin recorte real): el recorte
+                de un círculo es
                 parejo en las 4 direcciones desde el centro, no solo
                 arriba/abajo como en el banner ancho (ver
                 SECTION_HERO_FIT en sections.ts, ese es un problema

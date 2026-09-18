@@ -1,8 +1,11 @@
-// Las 6 secciones del catálogo (5 de camisetas + botas), compartidas
-// entre HeroCarousel y CategorySections para no repetir las mismas fotos
-// curadas dos veces. El índice de cada entrada coincide con el índice de
-// heroSlides en translations.ts -- mismo orden en los dos lugares.
-export const SECTION_PATHS = ["/selecciones", "/clubes", "/retro", "/mujer", "/ninos", "/botas"] as const;
+// Las 9 secciones del catálogo (5 de camisetas + botas + guantes +
+// pelotas + tickets), compartidas entre HeroCarousel y CategorySections
+// para no repetir las mismas fotos curadas dos veces. El índice de cada
+// entrada coincide con el índice de heroSlides en translations.ts --
+// mismo orden en los dos lugares. Guantes/pelotas/tickets sumados
+// 2026-09-18 (pedido explícito del usuario: "tiene que estar como
+// agregamos las botas... banner principal, secciones, categoría").
+export const SECTION_PATHS = ["/selecciones", "/clubes", "/retro", "/mujer", "/ninos", "/botas", "/guantes", "/pelotas", "/tickets"] as const;
 
 // Fotos para los círculos de navegación (CategorySections/SectionsMenu):
 // foto real de producto puesta en modelo (fondo de estudio), pensada
@@ -20,6 +23,9 @@ export const SECTION_PHOTOS: string[] = [
   "https://assets.adidas.com/images/w_1080,h_1080,f_auto,q_auto:sensitive,fl_lossy/94ae188e712c487f9e28e47fcc83803b_9366/Camiseta_primera_equipacion_Alemania_2007_Blanco_KD3997_21_model.jpg",
   "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/Source_Max_2560/711064.jpg", // botas: campaña Predator/F50 "Choose a Side" (Jude Bellingham con la bota real, fondo de campaña)
+  "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101130901_0.webp", // guantes: foto de producto real de nuestro propio catálogo (Uhlsport), fondo blanco de estudio
+  "https://cdn.blazimg.com/1800/product/a/d/adidas_ht2452_1_hardware_photography_front_center_view_white.webp", // pelotas: foto de producto real de nuestro propio catálogo (adidas Starlancer Training), fondo blanco de estudio
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/671361_v2.jpg", // tickets: campaña adidas FUSSBALLLIEBE FINALE -- trofeo UEFA Euro + pelota oficial, tribuna real de fondo
 ];
 
 // Fotos anchas de campaña real de prensa oficial (adidas news /
@@ -74,6 +80,9 @@ export const HERO_PHOTOS: string[] = [
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/650936_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/644816.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/696580.jpg",
+  SECTION_PHOTOS[6],
+  SECTION_PHOTOS[7],
+  SECTION_PHOTOS[8],
 ];
 
 // Bug real, encontrado inspeccionando el render en vivo (no a ojo): en
@@ -86,7 +95,18 @@ export const HERO_PHOTOS: string[] = [
 // la composición ya es panorámica de origen, con gente repartida en
 // todo el ancho -- verificado con el overlay+degradé real descrito
 // arriba antes de aplicarlas, no solo a ojo en una resolución.
-export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "cover", "cover", "cover"];
+// Guantes/pelotas: "contain" a propósito, a diferencia de todo lo de
+// arriba -- esas son fotos de producto CUADRADAS puro estudio (no
+// campaña editada ya panorámica como el resto), y el recuadro real del
+// banner es MUY ancho (1736x460 escritorio, ratio ~3.8:1). Un "cover"
+// ahí recortaría solo una franja horizontal finita del centro de una
+// foto cuadrada -- en la de guantes en particular (la mano ocupa el
+// alto completo del cuadro) eso corta dedos/puño y deja irreconocible.
+// "contain" muestra el producto entero con aire alrededor -- más
+// sobrio que las fotos de campaña, pero no arriesga un recorte roto sin
+// poder probarlo en vivo antes de publicarlo (sin datos de que el
+// usuario ya vio y aprobó esto, a diferencia de las 6 fotos de arriba).
+export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "cover", "cover", "cover", "contain", "contain", "cover"];
 
 // object-position por foto cuando fit=="cover" -- la mayoría centradas
 // arriba (object-top), que es donde vive la cara/torso en las fotos de
@@ -100,7 +120,13 @@ export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cov
 // - Botas: con "top" sólo entraba cielo, la bota quedaba fuera del
 //   recuadro por arriba -- "50% 50%" trae la suela de la bota justo al
 //   borde de la zona visible (probado top/30%/50%/70%/bottom).
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%"];
+// Guantes/pelotas: sin efecto real con fit "contain" (object-position
+// sólo importa con "cover"), queda "center" como valor sin uso.
+// Tickets: foto ya panorámica (1920x1080, casi el ratio real del
+// banner) con el trofeo+pelota en el medio vertical, ni arriba ni
+// abajo del todo -- "50% 40%" deja algo de margen para el degradé
+// oscuro de abajo sin cortar el trofeo por arriba.
+export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%", "center", "center", "50% 40%"];
 
 // Transform extra (solo Botas): pedido explícito del usuario -- quería
 // ver más de las dos botas, no sólo la suela asomando en el borde del
@@ -124,4 +150,7 @@ export const SECTION_HERO_TRANSFORM: (string | undefined)[] = [
   undefined,
   undefined,
   "scale(1.2) translateX(8%)",
+  undefined,
+  undefined,
+  undefined,
 ];

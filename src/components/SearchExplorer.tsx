@@ -811,30 +811,6 @@ export default function SearchExplorer({
                         {t.heroSlides[i]?.eyebrow}
                       </Link>
                     ))}
-                    {/* Guantes/pelotas: mismo motivo que en
-                        FloatingFilterButton.tsx -- sin foto curada propia
-                        todavía, sueltos fuera de SECTION_PATHS. */}
-                    <Link
-                      href="/guantes"
-                      onClick={() => setFiltersOpen(false)}
-                      className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
-                    >
-                      {t.guantes.navLabel}
-                    </Link>
-                    <Link
-                      href="/pelotas"
-                      onClick={() => setFiltersOpen(false)}
-                      className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
-                    >
-                      {t.pelotas.navLabel}
-                    </Link>
-                    <Link
-                      href="/tickets"
-                      onClick={() => setFiltersOpen(false)}
-                      className="flex flex-shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-sm text-[#5b5442] transition-colors hover:border-[#C9A24B]/70 hover:text-[#1a1a1a]"
-                    >
-                      {t.tickets.navLabel}
-                    </Link>
                   </ScrollArrowRow>
                 </div>
               )}
