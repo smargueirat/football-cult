@@ -995,7 +995,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
   },
   {
     id: "standard-liege-vs-kortrijk-2026-10-31",
-    event: "Standard Liège vs Kortrijk",
+    event: "Standard Liege vs Kortrijk",
     venue: "Stade Maurice Dufrasne",
     date: "2026-10-31",
     time: "18:15:00",
@@ -1247,7 +1247,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
   },
   {
     id: "fenerbahce-sk-vs-goztepe-sk-2026-11-01",
-    event: "Fenerbahce SK vs Goztepe SK",
+    event: "Fenerbahçe SK vs Goztepe SK",
     venue: "Ulker Stadium",
     date: "2026-11-01",
     time: "03:00:00",
@@ -1275,7 +1275,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
   },
   {
     id: "fc-union-berlin-vs-1-fc-koln-2026-11-01",
-    event: "FC Union Berlin vs 1. FC Köln",
+    event: "FC Union Berlin vs 1. FC Koln",
     venue: "Stadion An der Alten Foersterei",
     date: "2026-11-01",
     time: "15:30:00",
@@ -1303,7 +1303,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
   },
   {
     id: "st-pauli-vs-fc-nurnberg-2026-11-01",
-    event: "St Pauli vs FC Nürnberg",
+    event: "St Pauli vs FC Nurnberg",
     venue: "Millerntor-Stadion",
     date: "2026-11-01",
     time: "13:30:00",
@@ -1345,7 +1345,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
   },
   {
     id: "sc-braga-vs-fc-famalicao-2026-11-01",
-    event: "SC Braga vs FC Famalicão",
+    event: "SC Braga vs FC Famalicao",
     venue: "Estadio Municipal de Braga",
     date: "2026-11-01",
     time: "20:30:00",
@@ -2339,7 +2339,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
   },
   {
     id: "malaga-cf-vs-rcd-espanyol-2026-10-09",
-    event: "Málaga CF vs RCD Espanyol",
+    event: "Malaga CF vs RCD Espanyol",
     venue: "La Rosaleda Stadium",
     date: "2026-10-09",
     time: "21:00:00",
@@ -2706,7 +2706,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
   },
   {
     id: "fc-nurnberg-vs-vfl-wolfsburg-2026-10-10",
-    event: "FC Nürnberg vs VfL Wolfsburg",
+    event: "FC Nurnberg vs VfL Wolfsburg",
     venue: "Max-Morlock-Stadion",
     date: "2026-10-10",
     time: "20:30:00",
@@ -2916,7 +2916,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
   },
   {
     id: "deportivo-alaves-vs-atletico-madrid-2026-10-10",
-    event: "Deportivo Alavés vs Atlético Madrid",
+    event: "Deportivo Alaves vs Atletico Madrid",
     venue: "Mendizorrotza",
     date: "2026-10-10",
     time: "16:15:00",
@@ -3028,7 +3028,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
   },
   {
     id: "1-fc-koln-vs-borussia-monchengladbach-2026-10-11",
-    event: "1. FC Köln vs Borussia Mönchengladbach",
+    event: "1. FC Koln vs Borussia Monchengladbach",
     venue: "RheinEnergieStadion",
     date: "2026-10-11",
     time: "15:30:00",
@@ -3070,7 +3070,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
   },
   {
     id: "hertha-berlin-sc-vs-spvgg-greuther-furth-2026-10-11",
-    event: "Hertha Berlin SC vs SpVgg Greuther Fürth",
+    event: "Hertha Berlin SC vs SpVgg Greuther Furth",
     venue: "Olympiastadion",
     date: "2026-10-11",
     time: "13:30:00",
@@ -6559,7 +6559,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
   },
   {
     id: "fenerbahce-sk-vs-trabzonspor-2026-12-13",
-    event: "Fenerbahce SK vs Trabzonspor",
+    event: "Fenerbahçe SK vs Trabzonspor",
     venue: "Ulker Stadium",
     date: "2026-12-13",
     time: "03:00:00",
@@ -10177,7 +10177,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "gil-vicente-fc-vs-vitoria-guimaraes-2026-11-02",
-    event: "Gil Vicente FC vs Vitória Guimarães",
+    event: "Gil Vicente FC vs Vitoria Guimaraes",
     venue: "Estadio Cidade de Barcelos",
     date: "2026-11-02",
     time: "20:15:00",
@@ -10317,7 +10317,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "atletico-madrid-vs-bayern-munich-2026-11-03",
-    event: "Atlético Madrid vs Bayern Munich",
+    event: "Atletico Madrid vs Bayern Munich",
     venue: "Wanda Metropolitano",
     date: "2026-11-03",
     time: "21:00:00",
@@ -10625,7 +10625,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "celtic-fc-vs-besiktas-2026-11-05",
-    event: "Celtic FC vs Beşiktaş",
+    event: "Celtic FC vs Besiktas",
     venue: "Celtic Park",
     date: "2026-11-05",
     time: "20:00:00",
@@ -10709,7 +10709,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "hamburger-sv-vs-borussia-monchengladbach-2026-11-06",
-    event: "Hamburger SV vs Borussia Mönchengladbach",
+    event: "Hamburger SV vs Borussia Monchengladbach",
     venue: "Volksparkstadion",
     date: "2026-11-06",
     time: "20:30:00",
@@ -10723,7 +10723,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "standard-liege-vs-sk-beveren-2026-11-06",
-    event: "Standard Liège vs SK Beveren",
+    event: "Standard Liege vs SK Beveren",
     venue: "Stade Maurice Dufrasne",
     date: "2026-11-06",
     time: "20:45:00",
@@ -10737,7 +10737,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "dynamo-dresden-vs-spvgg-greuther-furth-2026-11-06",
-    event: "Dynamo Dresden vs SpVgg Greuther Fürth",
+    event: "Dynamo Dresden vs SpVgg Greuther Furth",
     venue: "Rudolf-Harbig-Stadion",
     date: "2026-11-06",
     time: "18:00:00",
@@ -10765,7 +10765,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "fc-famalicao-vs-arouca-2026-11-06",
-    event: "FC Famalicão vs Arouca",
+    event: "FC Famalicao vs Arouca",
     venue: "Estadio Municipal 22 de Junho",
     date: "2026-11-06",
     time: "20:45:00",
@@ -11311,7 +11311,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "1-fc-koln-vs-bayer-leverkusen-2026-11-08",
-    event: "1. FC Köln vs Bayer Leverkusen",
+    event: "1. FC Koln vs Bayer Leverkusen",
     venue: "RheinEnergieStadion",
     date: "2026-11-08",
     time: "15:30:00",
@@ -11451,7 +11451,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "gd-estoril-praia-vs-cs-maritimo-2026-11-08",
-    event: "GD Estoril Praia vs CS Marítimo",
+    event: "GD Estoril Praia vs CS Maritimo",
     venue: "Estadio Antonio Coimbra da Mota",
     date: "2026-11-08",
     time: "15:30:00",
@@ -11983,7 +11983,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "bayern-munich-vs-1-fc-koln-2026-11-20",
-    event: "Bayern Munich vs 1. FC Köln",
+    event: "Bayern Munich vs 1. FC Koln",
     venue: "Allianz Arena",
     date: "2026-11-20",
     time: "20:30:00",
@@ -12641,7 +12641,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
   },
   {
     id: "karlsruher-sc-vs-vfl-osnabruck-2026-11-22",
-    event: "Karlsruher SC vs VfL Osnabrück",
+    event: "Karlsruher SC vs VfL Osnabruck",
     venue: "Wildparkstadion",
     date: "2026-11-22",
     time: "13:30:00",
@@ -17113,7 +17113,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
   },
   {
     id: "gil-vicente-fc-vs-cs-maritimo-2026-09-19",
-    event: "Gil Vicente FC vs CS Marítimo",
+    event: "Gil Vicente FC vs CS Maritimo",
     venue: "Estadio Cidade de Barcelos",
     date: "2026-09-19",
     time: "15:30:00",
@@ -17267,7 +17267,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
   },
   {
     id: "athletic-bilbao-vs-deportivo-alaves-2026-09-19",
-    event: "Athletic Bilbao vs Deportivo Alavés",
+    event: "Athletic Bilbao vs Deportivo Alaves",
     venue: "San Mames Stadium",
     date: "2026-09-19",
     time: "16:15:00",
@@ -17407,7 +17407,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
   },
   {
     id: "fenerbahce-sk-vs-eyupspor-2026-09-20",
-    event: "Fenerbahçe SK vs Eyüpspor",
+    event: "Fenerbahçe SK vs Eyupspor",
     venue: "Ulker Stadium",
     date: "2026-09-20",
     time: "17:00:00",
@@ -17561,7 +17561,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
   },
   {
     id: "vitoria-guimaraes-vs-moreirense-fc-2026-09-20",
-    event: "Vitória Guimarães vs Moreirense FC",
+    event: "Vitoria Guimaraes vs Moreirense FC",
     venue: "Estadio D. Afonso Henriques",
     date: "2026-09-20",
     time: "15:30:00",
@@ -17589,7 +17589,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
   },
   {
     id: "cf-estrela-vs-academico-de-viseu-2026-09-20",
-    event: "CF Estrela vs Académico de Viseu",
+    event: "CF Estrela vs Academico de Viseu",
     venue: "Estadio Jose Gomes",
     date: "2026-09-20",
     time: "15:30:00",
@@ -17718,7 +17718,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
   },
   {
     id: "atletico-madrid-vs-real-madrid-2026-09-20",
-    event: "Atlético Madrid vs Real Madrid",
+    event: "Atletico Madrid vs Real Madrid",
     venue: "Wanda Metropolitano",
     date: "2026-09-20",
     time: "16:15:00",
@@ -17746,7 +17746,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
   },
   {
     id: "deportivo-la-coruna-vs-real-betis-2026-09-20",
-    event: "Deportivo La Coruña vs Real Betis",
+    event: "Deportivo La Coruna vs Real Betis",
     venue: "Estadio Municipal de Riazor",
     date: "2026-09-20",
     time: "18:30:00",
@@ -18320,7 +18320,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
   },
   {
     id: "standard-liege-vs-union-sg-2026-12-26",
-    event: "Standard Liège vs Union SG",
+    event: "Standard Liege vs Union SG",
     venue: "Stade Maurice Dufrasne",
     date: "2026-12-26",
     time: "20:45:00",
@@ -21277,7 +21277,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
   },
   {
     id: "bodo-glimt-vs-atletico-madrid-2027-01-19",
-    event: "Bodo Glimt vs Atlético Madrid",
+    event: "Bodo Glimt vs Atletico Madrid",
     venue: "Aspmyra Stadion",
     date: "2027-01-19",
     time: "18:45:00",
@@ -21571,7 +21571,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
   },
   {
     id: "besiktas-vs-union-sg-2027-01-21",
-    event: "Beşiktaş vs Union SG",
+    event: "Besiktas vs Union SG",
     venue: "Vodafone Park",
     date: "2027-01-21",
     time: "20:45:00",
@@ -22848,7 +22848,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "atletico-madrid-vs-fenerbahce-sk-2027-01-27",
-    event: "Atlético Madrid vs Fenerbahçe SK",
+    event: "Atletico Madrid vs Fenerbahçe SK",
     venue: "Wanda Metropolitano",
     date: "2027-01-27",
     time: "21:00:00",
@@ -23212,7 +23212,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "real-sociedad-vs-deportivo-la-coruna-2026-10-11",
-    event: "Real Sociedad vs Deportivo La Coruña",
+    event: "Real Sociedad vs Deportivo La Coruna",
     venue: "Anoeta Stadium",
     date: "2026-10-11",
     time: "16:15:00",
@@ -23254,7 +23254,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "fc-famalicao-vs-fc-alverca-2026-10-12",
-    event: "FC Famalicão vs FC Alverca",
+    event: "FC Famalicao vs FC Alverca",
     venue: "Estadio Municipal 22 de Junho",
     date: "2026-10-12",
     time: "20:15:00",
@@ -23436,7 +23436,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "atletico-madrid-vs-manchester-united-2026-10-13",
-    event: "Atlético Madrid vs Manchester United",
+    event: "Atletico Madrid vs Manchester United",
     venue: "Wanda Metropolitano",
     date: "2026-10-13",
     time: "21:00:00",
@@ -23786,7 +23786,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "tsg-1899-hoffenheim-vs-besiktas-2026-10-15",
-    event: "TSG 1899 Hoffenheim vs Beşiktaş",
+    event: "TSG 1899 Hoffenheim vs Besiktas",
     venue: "Wirsol Rhein Neckar Arena",
     date: "2026-10-15",
     time: "21:00:00",
@@ -23856,7 +23856,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "eintracht-frankfurt-vs-1-fc-koln-2026-10-16",
-    event: "Eintracht Frankfurt vs 1. FC Köln",
+    event: "Eintracht Frankfurt vs 1. FC Koln",
     venue: "Commerzbank Arena",
     date: "2026-10-16",
     time: "20:30:00",
@@ -23884,7 +23884,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "fc-energie-cottbus-vs-fc-nurnberg-2026-10-16",
-    event: "FC Energie Cottbus vs FC Nürnberg",
+    event: "FC Energie Cottbus vs FC Nurnberg",
     venue: "Stadion der Freundschaft",
     date: "2026-10-16",
     time: "18:30:00",
@@ -23926,7 +23926,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "deportivo-la-coruna-vs-levante-ud-2026-10-16",
-    event: "Deportivo La Coruña vs Levante UD",
+    event: "Deportivo La Coruna vs Levante UD",
     venue: "Estadio Municipal de Riazor",
     date: "2026-10-16",
     time: "21:00:00",
@@ -24388,7 +24388,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "rcd-espanyol-vs-atletico-madrid-2026-10-17",
-    event: "RCD Espanyol vs Atlético Madrid",
+    event: "RCD Espanyol vs Atletico Madrid",
     venue: "Estadi Cornella-El Prat",
     date: "2026-10-17",
     time: "14:00:00",
@@ -24444,7 +24444,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "fenerbahce-sk-vs-alanyaspor-2026-10-18",
-    event: "Fenerbahce SK vs Alanyaspor",
+    event: "Fenerbahçe SK vs Alanyaspor",
     venue: "Ulker Stadium",
     date: "2026-10-18",
     time: "02:00:00",
@@ -24486,7 +24486,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "borussia-monchengladbach-vs-tsg-1899-hoffenheim-2026-10-18",
-    event: "Borussia Mönchengladbach vs TSG 1899 Hoffenheim",
+    event: "Borussia Monchengladbach vs TSG 1899 Hoffenheim",
     venue: "Borussia-Park",
     date: "2026-10-18",
     time: "17:30:00",
@@ -24542,7 +24542,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
   },
   {
     id: "dsc-arminia-bielefeld-vs-vfl-osnabruck-2026-10-18",
-    event: "DSC Arminia Bielefeld vs VfL Osnabrück",
+    event: "DSC Arminia Bielefeld vs VfL Osnabruck",
     venue: "Bielefelder Alm",
     date: "2026-10-18",
     time: "13:30:00",
@@ -26407,7 +26407,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
   },
   {
     id: "ac-omonia-vs-besiktas-2027-01-28",
-    event: "AC Omonia vs Beşiktaş",
+    event: "AC Omonia vs Besiktas",
     venue: "GSP Stadium",
     date: "2027-01-28",
     time: "22:00:00",
@@ -28468,7 +28468,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "atletico-madrid-vs-viking-fk-2026-11-25",
-    event: "Atlético Madrid vs Viking FK",
+    event: "Atletico Madrid vs Viking FK",
     venue: "Wanda Metropolitano",
     date: "2026-11-25",
     time: "21:00:00",
@@ -28734,7 +28734,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "sv-werder-bremen-vs-borussia-monchengladbach-2026-11-27",
-    event: "SV Werder Bremen vs Borussia Mönchengladbach",
+    event: "SV Werder Bremen vs Borussia Monchengladbach",
     venue: "Weserstadion",
     date: "2026-11-27",
     time: "20:30:00",
@@ -28762,7 +28762,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "fc-heidenheim-vs-fc-nurnberg-2026-11-27",
-    event: "FC Heidenheim vs FC Nürnberg",
+    event: "FC Heidenheim vs FC Nurnberg",
     venue: "Voith-Arena",
     date: "2026-11-27",
     time: "18:30:00",
@@ -28776,7 +28776,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "cs-maritimo-vs-cd-nacional-2026-11-27",
-    event: "CS Marítimo vs CD Nacional",
+    event: "CS Maritimo vs CD Nacional",
     venue: "Estadio do Maritimo",
     date: "2026-11-27",
     time: "20:15:00",
@@ -29224,7 +29224,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "vfl-osnabruck-vs-hannover-96-2026-11-28",
-    event: "VfL Osnabrück vs Hannover 96",
+    event: "VfL Osnabruck vs Hannover 96",
     venue: "Stadion an der Bremer Brucke",
     date: "2026-11-28",
     time: "20:30:00",
@@ -29266,7 +29266,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "vitoria-guimaraes-vs-cf-estrela-2026-11-28",
-    event: "Vitória Guimarães vs CF Estrela",
+    event: "Vitoria Guimaraes vs CF Estrela",
     venue: "Estadio D. Afonso Henriques",
     date: "2026-11-28",
     time: "20:30:00",
@@ -29364,7 +29364,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "fenerbahce-sk-vs-bb-erzurumspor-2026-11-29",
-    event: "Fenerbahce SK vs BB Erzurumspor",
+    event: "Fenerbahçe SK vs BB Erzurumspor",
     venue: "Ulker Stadium",
     date: "2026-11-29",
     time: "03:00:00",
@@ -29476,7 +29476,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "spvgg-greuther-furth-vs-dsc-arminia-bielefeld-2026-11-29",
-    event: "SpVgg Greuther Fürth vs DSC Arminia Bielefeld",
+    event: "SpVgg Greuther Furth vs DSC Arminia Bielefeld",
     venue: "Trolli Arena",
     date: "2026-11-29",
     time: "13:30:00",
@@ -29826,7 +29826,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
   },
   {
     id: "sl-benfica-vs-fc-famalicao-2026-11-30",
-    event: "SL Benfica vs FC Famalicão",
+    event: "SL Benfica vs FC Famalicao",
     venue: "Estadio da Luz",
     date: "2026-11-30",
     time: "20:15:00",
@@ -31271,7 +31271,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "psv-eindhoven-vs-atletico-madrid-2026-12-09",
-    event: "PSV Eindhoven vs Atlético Madrid",
+    event: "PSV Eindhoven vs Atletico Madrid",
     venue: "Philips Stadion",
     date: "2026-12-09",
     time: "21:00:00",
@@ -31369,7 +31369,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "bayer-leverkusen-vs-besiktas-2026-12-10",
-    event: "Bayer Leverkusen vs Beşiktaş",
+    event: "Bayer Leverkusen vs Besiktas",
     venue: "BayArena",
     date: "2026-12-10",
     time: "21:00:00",
@@ -32013,7 +32013,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "celta-vigo-vs-deportivo-alaves-2026-10-18",
-    event: "Celta Vigo vs Deportivo Alavés",
+    event: "Celta Vigo vs Deportivo Alaves",
     venue: "Balaidos",
     date: "2026-10-18",
     time: "16:15:00",
@@ -32041,7 +32041,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "malaga-cf-vs-real-sociedad-2026-10-18",
-    event: "Málaga CF vs Real Sociedad",
+    event: "Malaga CF vs Real Sociedad",
     venue: "La Rosaleda Stadium",
     date: "2026-10-18",
     time: "18:30:00",
@@ -32153,7 +32153,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "vfb-stuttgart-vs-atletico-madrid-2026-10-20",
-    event: "VfB Stuttgart vs Atlético Madrid",
+    event: "VfB Stuttgart vs Atletico Madrid",
     venue: "Mercedes-Benz Arena",
     date: "2026-10-20",
     time: "21:00:00",
@@ -32447,7 +32447,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "besiktas-vs-crystal-palace-2026-10-22",
-    event: "Beşiktaş vs Crystal Palace",
+    event: "Besiktas vs Crystal Palace",
     venue: "Vodafone Park",
     date: "2026-10-22",
     time: "22:00:00",
@@ -32517,7 +32517,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "vfb-stuttgart-vs-borussia-monchengladbach-2026-10-23",
-    event: "VfB Stuttgart vs Borussia Mönchengladbach",
+    event: "VfB Stuttgart vs Borussia Monchengladbach",
     venue: "Mercedes-Benz Arena",
     date: "2026-10-23",
     time: "20:30:00",
@@ -32559,7 +32559,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
   },
   {
     id: "vitoria-guimaraes-vs-cs-maritimo-2026-10-23",
-    event: "Vitória Guimarães vs CS Marítimo",
+    event: "Vitoria Guimaraes vs CS Maritimo",
     venue: "Estadio D. Afonso Henriques",
     date: "2026-10-23",
     time: "20:45:00",
@@ -32898,7 +32898,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
   },
   {
     id: "fc-nurnberg-vs-fc-kaiserslautern-2026-10-24",
-    event: "FC Nürnberg vs FC Kaiserslautern",
+    event: "FC Nurnberg vs FC Kaiserslautern",
     venue: "Max-Morlock-Stadion",
     date: "2026-10-24",
     time: "20:30:00",
@@ -33150,7 +33150,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
   },
   {
     id: "galatasaray-vs-fenerbahce-sk-2026-10-25",
-    event: "Galatasaray vs Fenerbahce SK",
+    event: "Galatasaray vs Fenerbahçe SK",
     venue: "Rams Park",
     date: "2026-10-25",
     time: "01:00:00",
@@ -33262,7 +33262,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
   },
   {
     id: "vfl-osnabruck-vs-spvgg-greuther-furth-2026-10-25",
-    event: "VfL Osnabrück vs SpVgg Greuther Fürth",
+    event: "VfL Osnabruck vs SpVgg Greuther Furth",
     venue: "Stadion an der Bremer Brucke",
     date: "2026-10-25",
     time: "13:30:00",
@@ -33304,7 +33304,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
   },
   {
     id: "sporting-lisbon-vs-academico-de-viseu-2026-10-25",
-    event: "Sporting Lisbon vs Académico de Viseu",
+    event: "Sporting Lisbon vs Academico de Viseu",
     venue: "Estadio Jose Alvalade",
     date: "2026-10-25",
     time: "20:30:00",
@@ -34550,7 +34550,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
   },
   {
     id: "ac-sparta-prague-vs-fc-viktoria-plzen-2027-04-10",
-    event: "AC Sparta Prague vs FC Viktoria Plzen",
+    event: "AC Sparta Prague vs FC Viktoria Plzeň",
     venue: "epet ARENA",
     date: "2027-04-10",
     time: "01:00:00",

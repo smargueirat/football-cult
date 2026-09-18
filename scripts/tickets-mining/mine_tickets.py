@@ -24,7 +24,7 @@ liga (ver COMPETITION_NAMES).
 Eventos pasados (date < hoy) se excluyen -- una entrada vencida no sirve
 para nada, y el feed sí trae alguna fecha ya pasada de forma inconsistente.
 """
-import csv, re, json, os
+import csv, re, json, os, unicodedata
 from datetime import date, datetime
 
 FEEDS = "/tmp/feeds"
@@ -116,6 +116,41 @@ def mine_region(fname, store_label, currency):
     return picks
 
 
+# Encontrado 2026-09-18 (reporte real del usuario, capturas de chips de
+# club repetidos: "1. FC Koln" y "1. FC Köln" en el filtro de Club) --
+# mismo motivo que el bug de mayúscula/minúscula de marca en
+# mine_gear.py, pero acá con acentos: el `event` de cada partido sale
+# del `product_name` de la región que primero trajo ese fixture (DE
+# primero en `regions`, después UK/US), y cada región transcribe el
+# nombre del club a su manera ("Köln" en DE, "Koln" en UK/US) -- así que
+# partidos distintos del MISMO club terminaban con dos grafías reales
+# distintas en el catálogo. Sin lista fija de acentos por club (sería
+# inventar datos): se normaliza sacando los acentos (NFKD) como key de
+# agrupación y se elige la grafía que más veces aparece en el propio
+# feed, igual que canonicalize_brands en mine_gear.py.
+def strip_accents(s):
+    return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
+
+
+def canonicalize_teams(merged):
+    counts = {}
+    for d in merged.values():
+        for team in d["event"].split(" vs "):
+            team = team.strip()
+            counts[team] = counts.get(team, 0) + 1
+    canonical = {}
+    for spelling, n in counts.items():
+        key = strip_accents(spelling).lower()
+        if key not in canonical or n > counts[canonical[key]]:
+            canonical[key] = spelling
+    for d in merged.values():
+        parts = d["event"].split(" vs ")
+        if len(parts) == 2:
+            a = canonical[strip_accents(parts[0].strip()).lower()]
+            b = canonical[strip_accents(parts[1].strip()).lower()]
+            d["event"] = f"{a} vs {b}"
+
+
 if __name__ == "__main__":
     regions = [
         ("TICKETNET_DE.csv", "FootballTicketNetDE", "EUR"),
@@ -138,6 +173,7 @@ if __name__ == "__main__":
                 }
             merged[key]["offers"].append(d["offer"])
 
+    canonicalize_teams(merged)
     results = list(merged.values())
     print("TOTAL distinct events:", len(results))
     with open(OUT_PATH, "w", encoding="utf-8") as f:
