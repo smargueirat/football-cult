@@ -308,6 +308,27 @@ def mine_gigasport_category(fname, store_label, cats, out_list):
 # los pares que comparten esquema/idioma (Blaz ES+ES, Google Shopping
 # FR+FR) sin arriesgar fundir dos productos reales distintos que por
 # casualidad compartan texto.
+# Encontrado 2026-09-18 (reporte real del usuario, captura de chips de
+# marca repetidos en pelotas): la MISMA marca real sale con distinta
+# mayúscula/minúscula según qué feed la trajo -- ej. "adidas" (Blaz
+# ES) vs "Adidas" (Google Shopping FR), "erima" vs "Erima" -- así que
+# terminaba como dos chips de marca separados en vez de uno. Sin lista
+# fija de "estas marcas van en minúscula" (sería inventar datos): se
+# elige como forma canónica la variante que más veces aparece en el
+# propio feed para cada marca (case-insensitive), no una regla a mano.
+def canonicalize_brands(results):
+    counts = {}
+    for d in results:
+        counts[d['brand']] = counts.get(d['brand'], 0) + 1
+    canonical = {}
+    for spelling, n in counts.items():
+        key = spelling.strip().lower()
+        if key not in canonical or n > counts[canonical[key]]:
+            canonical[key] = spelling
+    for d in results:
+        d['brand'] = canonical[d['brand'].strip().lower()]
+
+
 def merge_by_model(results):
     order = []
     groups = {}
@@ -395,6 +416,9 @@ if __name__ == '__main__':
     mine_apparel_type('pants', 'Pantalon de survêtement', apparel_results)
     mine_apparel_type('socks', 'Chaussettes', apparel_results)
 
+    canonicalize_brands(gloves_results)
+    canonicalize_brands(balls_results)
+    canonicalize_brands(apparel_results)
     gloves_merged = merge_by_model(gloves_results)
     balls_merged = merge_by_model(balls_results)
     apparel_merged = merge_by_model(apparel_results)

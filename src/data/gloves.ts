@@ -2344,7 +2344,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-guantes-de-portero-erima-flex-ray-protect-gris",
-    brand: "erima",
+    brand: "Erima",
     model: "Guantes de portero Erima Flex-Ray Protect - Gris",
     colour: "Gris",
     offers: [
@@ -2361,7 +2361,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-guantes-de-portero-erima-flex-ray-robusto-gris",
-    brand: "erima",
+    brand: "Erima",
     model: "Guantes de portero Erima Flex-Ray Robusto - Gris",
     colour: "Gris",
     offers: [
@@ -3814,7 +3814,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745910823&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-010_black-black-black_1.webp&feedId=89032&k=304c05b0d6c798f100323837f2efaef82a949ace",
-        sizes: ["S", "L", "M"],
+        sizes: ["L", "S", "M"],
       },
       {
         store: "FootStoreES",
@@ -3824,7 +3824,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-011-phsfz001-nw110824.webp&feedId=89032&k=a8a03ee6e23ec1fdf9aba5af1ee4b5648574fa62",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
         sizePrices: [
           { size: "S", price: 20.0, url: "https://www.awin1.com/pclick.php?p=39656024983&a=3013769&m=65912" },
           { size: "L", price: 17.93, url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912" },
@@ -3839,7 +3839,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39603007648&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-013-phslh001-ss25.webp&feedId=89032&k=4f0dbc46812eee38af8f5aa524de4a5329cfa30a",
-        sizes: ["S", "L", "M"],
+        sizes: ["L", "S", "M"],
       },
       {
         store: "FootStoreES",
@@ -3848,7 +3848,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348248650&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp&feedId=89032&k=3ee8cde8ebcde003d05179b7ffaf3ebc21c6f149",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
       {
         store: "FootStoreES",
@@ -3857,7 +3857,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348248654&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.webp&feedId=89032&k=97ee0df16825cda2ecfc1a561935ed8c9bdf0957",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
     ],
   },
@@ -8160,7 +8160,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730020&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-45kh-ybl-fluorescent-yellow-black-69e09062b2822-2.webp&feedId=89032&k=f5b96cc17db5aa9345b6daf98cce968a2d4272dc",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
     ],
   },
@@ -8177,7 +8177,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730024&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-45kh-rbw-red-black-69e0906478192-2.webp&feedId=89032&k=d63387953938f6d8a275028956eb40d8337c2f9a",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
     ],
   },
@@ -9810,7 +9810,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-speed-contact-supersoft-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Speed Contact Supersoft - Noir",
     colour: "Noir",
     offers: [
@@ -9836,7 +9836,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-de-joueur-uhlsport-nitrofield-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien de joueur Uhlsport Nitrofield - Noir",
     colour: "Noir",
     offers: [
@@ -9956,7 +9956,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-pred-gl-mtc-fs-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Pred GL MTC FS - Noir",
     colour: "Noir",
     offers: [
@@ -9973,7 +9973,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro Pro - Noir",
     colour: "Noir",
     offers: [
@@ -10001,7 +10001,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-competition-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Competition - Noir",
     colour: "Noir",
     offers: [
@@ -10135,7 +10135,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-league-fieldplayer-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro League Fieldplayer - Noir",
     colour: "Noir",
     offers: [
@@ -10152,7 +10152,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro Club - Noir",
     colour: "Noir",
     offers: [
@@ -10169,7 +10169,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-league-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro League - Noir",
     colour: "Noir",
     offers: [
@@ -10197,7 +10197,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator - Noir",
     colour: "Noir",
     offers: [
@@ -10379,7 +10379,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-trainning-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Trainning - Blanc",
     colour: "Blanc",
     offers: [
@@ -10396,7 +10396,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator League - Blanc",
     colour: "Blanc",
     offers: [
@@ -10761,7 +10761,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Powerline Supersoft HN - Noir",
     colour: "Noir",
     offers: [
@@ -10778,7 +10778,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-powerline-supersoft-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Powerline Supersoft - Noir",
     colour: "Noir",
     offers: [
@@ -10813,7 +10813,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-resist-flex-frame-orange",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Soft Resist Flex Frame - Orange",
     colour: "Orange",
     offers: [
@@ -10836,7 +10836,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-resist-orange",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Soft Resist - Orange",
     colour: "Orange",
     offers: [
@@ -11082,7 +11082,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-aquasoft-hn-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Aquasoft HN - Bleu",
     colour: "Bleu",
     offers: [
@@ -11108,7 +11108,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-aquasoft-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Aquasoft - Bleu",
     colour: "Bleu",
     offers: [
@@ -11278,7 +11278,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-com-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Com - Noir",
     colour: "Noir",
     offers: [
@@ -11301,7 +11301,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-trn-jaune",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator TRN - Jaune",
     colour: "Jaune",
     offers: [
@@ -11335,7 +11335,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-trn-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator TRN - Noir",
     colour: "Noir",
     offers: [
@@ -11928,7 +11928,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-comfort-absolutgrip-hn-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Comfort Absolutgrip HN - Noir",
     colour: "Noir",
     offers: [
@@ -11985,7 +11985,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-absolutgrip-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Absolutgrip - Blanc",
     colour: "Blanc",
     offers: [
@@ -12038,7 +12038,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-supersoft-hn-flex-frame-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Supersoft HN Flex Frame - Noir",
     colour: "Noir",
     offers: [
@@ -12055,7 +12055,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-supergrip-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Supergrip - Noir",
     colour: "Noir",
     offers: [
@@ -12072,7 +12072,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-absolutgrip-flex-frame-jaune",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Absolutgrip Flex Frame - Jaune",
     colour: "Jaune",
     offers: [
@@ -12089,7 +12089,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-hn-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Soft HN - Noir",
     colour: "Noir",
     offers: [
@@ -12106,7 +12106,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-advanced-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Soft Advanced - Blanc",
     colour: "Blanc",
     offers: [
@@ -12363,7 +12363,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-adidas-copa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants adidas COPA - Blanc",
     colour: "Blanc",
     offers: [
@@ -12380,7 +12380,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-supergrip-finger-surround-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Supergrip+ Finger Surround - Bleu",
     colour: "Bleu",
     offers: [
@@ -12397,7 +12397,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-absolutgrip-hn-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Absolutgrip HN - Bleu",
     colour: "Bleu",
     offers: [
@@ -12414,7 +12414,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-supersoft-hn-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Supersoft HN - Bleu",
     colour: "Bleu",
     offers: [
@@ -12431,7 +12431,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-supersoft-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Supersoft - Bleu",
     colour: "Bleu",
     offers: [
@@ -12448,7 +12448,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-resist-orange-2",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Soft Resist+ - Orange",
     colour: "Orange",
     offers: [
@@ -13092,7 +13092,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-010-gants-de-gardien-nike-academy-black-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hf0546-010_black-black-black_1.webp",
-        sizes: ["S", "L", "M"],
+        sizes: ["L", "S", "M"],
       },
       {
         store: "FootStoreFR",
@@ -13102,7 +13102,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hf0546-011-phsfz001-nw110824.webp",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
         sizePrices: [
           { size: "S", price: 19.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white" },
           { size: "L", price: 17.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-011-gants-de-gardien-nike-academy-black-black-white" },
@@ -13117,7 +13117,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-013-gants-de-gardien-nike-academy-black-black-volt",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_hf0546-013-phslh001-ss25.jpg",
-        sizes: ["S", "L", "M"],
+        sizes: ["L", "S", "M"],
       },
       {
         store: "FootStoreFR",
@@ -13126,7 +13126,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-011-gants-de-gardien-nike-academy-black-off-white-off-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.webp",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
       {
         store: "FootStoreFR",
@@ -13135,13 +13135,13 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-013-gants-de-gardien-nike-academy-black-anthracite-anthracite",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp",
-        sizes: ["XL", "L"],
+        sizes: ["L", "XL"],
       },
     ],
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-starter-soft-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Starter Soft - Bleu",
     colour: "Bleu",
     offers: [
@@ -13158,7 +13158,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-starter-resist-orange",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Starter Resist+ - Orange",
     colour: "Orange",
     offers: [
@@ -13226,7 +13226,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-soft-flex-frame-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Soft Flex Frame - Bleu",
     colour: "Bleu",
     offers: [
@@ -13243,7 +13243,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-prediction-soft-pro-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Prediction Soft Pro - Bleu",
     colour: "Bleu",
     offers: [
@@ -13260,7 +13260,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-aquagrip-hn-uhlsport-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Aquagrip HN Uhlsport - Bleu",
     colour: "Bleu",
     offers: [
@@ -13277,7 +13277,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-orange",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport Soft - Orange",
     colour: "Orange",
     offers: [
@@ -13912,7 +13912,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -13952,7 +13952,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa League - Blanc",
     colour: "Blanc",
     offers: [
@@ -13978,7 +13978,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-league-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator League - Rouge",
     colour: "Rouge",
     offers: [
@@ -14004,7 +14004,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-competition-adidas-predator-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien Competition adidas Predator - Rouge",
     colour: "Rouge",
     offers: [
@@ -14021,7 +14021,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien d'entraînement adidas Predator - Noir",
     colour: "Noir",
     offers: [
@@ -14243,7 +14243,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-hn-comp-soft-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport HN Comp Soft - Blanc",
     colour: "Blanc",
     offers: [
@@ -14410,7 +14410,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Bleu",
     colour: "Bleu",
     offers: [
@@ -14437,7 +14437,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-league-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa League - Bleu",
     colour: "Bleu",
     offers: [
@@ -14454,7 +14454,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-fingersave-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match Fingersave - Blanc",
     colour: "Blanc",
     offers: [
@@ -14487,7 +14487,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator - Blanc",
     colour: "Blanc",
     offers: [
@@ -14591,7 +14591,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien coupes hybride adidas Predator MTC FS - Orange",
     colour: "Orange",
     offers: [
@@ -14624,7 +14624,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator Pro - Noir",
     colour: "Noir",
     offers: [
@@ -14641,7 +14641,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator Pro - Vert",
     colour: "Vert",
     offers: [
@@ -14672,7 +14672,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator LGE - Orange",
     colour: "Orange",
     offers: [
@@ -14699,7 +14699,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-lge-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator LGE - Vert",
     colour: "Vert",
     offers: [
@@ -14875,7 +14875,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Ultragrip - Blanc",
     colour: "Blanc",
     offers: [
@@ -14898,7 +14898,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supergrip+ Finger - Blanc",
     colour: "Blanc",
     offers: [
@@ -14920,7 +14920,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supergrip+ HN - Blanc",
     colour: "Blanc",
     offers: [
@@ -14942,7 +14942,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-flex-hn-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Flex HN - Blanc",
     colour: "Blanc",
     offers: [
@@ -14959,7 +14959,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supersoft HN - Blanc",
     colour: "Blanc",
     offers: [
@@ -14987,7 +14987,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Supersoft - Blanc",
     colour: "Blanc",
     offers: [
@@ -15026,7 +15026,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-flex-frame-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Soft Flex Frame - Blanc",
     colour: "Blanc",
     offers: [
@@ -15067,7 +15067,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-soft-pro-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Soft Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -15084,7 +15084,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-cybertec-starter-soft-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Cybertec Starter Soft - Blanc",
     colour: "Blanc",
     offers: [
@@ -15118,7 +15118,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Super Resist+ HN - Noir",
     colour: "Noir",
     offers: [
@@ -15150,7 +15150,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-flex-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Soft Resist+ Flex ... - Noir",
     colour: "Noir",
     offers: [
@@ -15192,7 +15192,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-soft-resist-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Soft Resist+ - Noir",
     colour: "Noir",
     offers: [
@@ -15209,7 +15209,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-starter-resist-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Starter Resist+ - Noir",
     colour: "Noir",
     offers: [
@@ -15250,7 +15250,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-aquagrip-hn-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Aquagrip HN - Bleu",
     colour: "Bleu",
     offers: [
@@ -15275,7 +15275,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-uhlsport-aquasoft-hn-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM uhlsport Aquasoft HN - Bleu",
     colour: "Bleu",
     offers: [
@@ -15827,7 +15827,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Beige",
     colour: "Beige",
     offers: [
@@ -15844,7 +15844,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator - Bleu",
     colour: "Bleu",
     offers: [
@@ -15861,7 +15861,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -15878,7 +15878,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-d-entrainement-gardien-adidas-predator-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants d'entrainement gardien adidas Predator - Orange",
     colour: "Orange",
     offers: [
@@ -16573,7 +16573,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-bleu",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM - Bleu",
     colour: "Bleu",
     offers: [
@@ -16590,7 +16590,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -16616,7 +16616,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Bleu",
     colour: "Bleu",
     offers: [
@@ -16993,7 +16993,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-training-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Training - Blanc",
     colour: "Blanc",
     offers: [
@@ -17010,7 +17010,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match - Blanc",
     colour: "Blanc",
     offers: [
@@ -17033,7 +17033,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -17050,7 +17050,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -17067,7 +17067,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Noir",
     colour: "Noir",
     offers: [
@@ -17097,7 +17097,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Noir",
     colour: "Noir",
     offers: [
@@ -17114,7 +17114,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-league-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa League - Noir",
     colour: "Noir",
     offers: [
@@ -17131,7 +17131,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-fingersave-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match Fingersave - Noir",
     colour: "Noir",
     offers: [
@@ -17156,7 +17156,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Noir",
     colour: "Noir",
     offers: [
@@ -17173,7 +17173,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien d'entraînement adidas Predator 2026 - Noir",
     colour: "Noir",
     offers: [
@@ -17275,7 +17275,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match - Bleu",
     colour: "Bleu",
     offers: [
@@ -17298,7 +17298,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-gris",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Gris",
     colour: "Gris",
     offers: [
@@ -17479,7 +17479,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45kh-rbw-gants-de-gardien-avento-pro-ultimate-red-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45kh-rbw-red-black-69e0906478192-2.webp",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
     ],
   },
@@ -17496,7 +17496,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45kh-ybl-gants-de-gardien-avento-pro-ultimate-fluorescent-yellow-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45kh-ybl-fluorescent-yellow-black-69e09062b2822-2.webp",
-        sizes: ["XL", "S", "L", "M"],
+        sizes: ["L", "XL", "S", "M"],
       },
     ],
   },
@@ -17674,7 +17674,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Beige",
     colour: "Beige",
     offers: [
@@ -17691,7 +17691,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Ultragrip HN - Rouge",
     colour: "Rouge",
     offers: [
@@ -17727,7 +17727,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-ultragrip-zne-hn-maignan-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Ultragrip ZNE HN Maignan - Blanc",
     colour: "Blanc",
     offers: [
@@ -17753,7 +17753,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Supergrip Finger Surround - Rouge",
     colour: "Rouge",
     offers: [
@@ -17779,7 +17779,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-supergrip-hn-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Supergrip HN - Rouge",
     colour: "Rouge",
     offers: [
@@ -17805,7 +17805,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HN - Rouge",
     colour: "Rouge",
     offers: [
@@ -17830,7 +17830,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-absolutgrip-hn-maignan-blanc",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM Absolutgrip HN Maignan - Blanc",
     colour: "Blanc",
     offers: [
@@ -17861,7 +17861,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-soft-pro-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Soft Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -17887,7 +17887,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hybd-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HYBD - Rouge",
     colour: "Rouge",
     offers: [
@@ -17904,7 +17904,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HN Fit - Rouge",
     colour: "Rouge",
     offers: [
@@ -17921,7 +17921,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-supersoft-hn-rouge",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Supersoft HN - Rouge",
     colour: "Rouge",
     offers: [
@@ -17938,7 +17938,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-super-resist-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Super Resist+ - Noir",
     colour: "Noir",
     offers: [
@@ -17955,7 +17955,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   },
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-starter-resist-noir",
-    brand: "Uhlsport",
+    brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Starter Resist+ - Noir",
     colour: "Noir",
     offers: [

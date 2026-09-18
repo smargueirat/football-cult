@@ -179,58 +179,62 @@ export default function TicketsPageClient() {
         activeCount={activeFilterCount}
         onClear={clearAllFilters}
       >
-        {/* Club/Estadio: cientos de valores reales distintos (equipos,
-            228 estadios), demasiados para una fila de chips -- un
-            <select> es lo que de verdad sirve acá, pero restyleado
-            (appearance-none + flecha propia) para que tenga el mismo
-            aspecto que el resto de los filtros en vez del <select> gris
-            nativo del navegador -- pedido explícito del usuario ("tiene
-            que tener todo el mismo formato"). Liga (27 valores) sí entra
-            cómoda como chips. Fecha: rango real con dos <input
-            type="date"> (calendario nativo del navegador/SO al
-            tocarlos) en vez de un <select> de fecha exacta -- pedido
-            explícito del usuario: "el de fecha tiene que ser un
-            calendario, para elegir desde qué hasta qué fecha". */}
+        {/* Mismo formato de chips que Marca/Talla/Color en guantes/
+            pelotas/ropa en TODOS los filtros -- pedido explícito del
+            usuario ("hacelo así", con captura de esos chips), única
+            excepción la fecha (calendario real, ver más abajo). Club
+            (~cientos de equipos) y Estadio (228) quedan como fila de
+            chips scrolleable igual que Marca -- más largas de recorrer
+            que Liga, pero mismo criterio de consistencia visual que el
+            usuario pidió por sobre la compacidad. Siempre alfabético
+            (pedido explícito). */}
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.clubLabel}:</span>
-          <div className="relative">
-            <select
-              value={clubFilter}
-              onChange={(e) => { setClubFilter(e.target.value); setVisible(PAGE_SIZE); }}
-              aria-label={t.tickets.clubLabel}
-              className="w-full appearance-none rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-3 pr-9 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
-            >
-              <option value="">{t.search.allCategories}</option>
-              {clubs.map((c) => (
-                <option key={c} value={c}>{c}</option>
-              ))}
-            </select>
-            <svg className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#675c44]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
+          <ScrollArrowRow className="-mx-5 gap-2 px-5">
+            <Chip active={clubFilter === ""} onClick={() => { setClubFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              {t.search.allCategories}
+            </Chip>
+            {clubs.map((c) => (
+              <Chip key={c} active={clubFilter === c} onClick={() => { setClubFilter(c); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+                {c}
+              </Chip>
+            ))}
+          </ScrollArrowRow>
         </div>
 
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.venueLabel}:</span>
-          <div className="relative">
-            <select
-              value={venueFilter}
-              onChange={(e) => { setVenueFilter(e.target.value); setVisible(PAGE_SIZE); }}
-              aria-label={t.tickets.venueLabel}
-              className="w-full appearance-none rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-3 pr-9 text-sm text-[#1a1a1a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
-            >
-              <option value="">{t.search.allCategories}</option>
-              {venues.map((v) => (
-                <option key={v} value={v}>{v}</option>
-              ))}
-            </select>
-            <svg className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[#675c44]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
+          <ScrollArrowRow className="-mx-5 gap-2 px-5">
+            <Chip active={venueFilter === ""} onClick={() => { setVenueFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              {t.search.allCategories}
+            </Chip>
+            {venues.map((v) => (
+              <Chip key={v} active={venueFilter === v} onClick={() => { setVenueFilter(v); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+                {v}
+              </Chip>
+            ))}
+          </ScrollArrowRow>
         </div>
 
+        <div className="flex flex-col gap-1.5">
+          <span className="text-xs text-[#675c44]">{t.tickets.leagueLabel}:</span>
+          <ScrollArrowRow className="-mx-5 gap-2 px-5">
+            <Chip active={leagueFilter === ""} onClick={() => { setLeagueFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              {t.search.allCategories}
+            </Chip>
+            {leagues.map((l) => (
+              <Chip key={l} active={leagueFilter === l} onClick={() => { setLeagueFilter(l); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+                {l}
+              </Chip>
+            ))}
+          </ScrollArrowRow>
+        </div>
+
+        {/* Fecha: única excepción al formato de chips -- rango real con
+            dos <input type="date"> (calendario nativo del navegador/SO
+            al tocarlos), pedido explícito del usuario: "el de fecha
+            tiene que ser un calendario, para elegir desde qué hasta qué
+            fecha". */}
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.dateLabel}:</span>
           <div className="grid grid-cols-2 gap-2">
@@ -257,20 +261,6 @@ export default function TicketsPageClient() {
               />
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col gap-1.5">
-          <span className="text-xs text-[#675c44]">{t.tickets.leagueLabel}:</span>
-          <ScrollArrowRow className="-mx-5 gap-2 px-5">
-            <Chip active={leagueFilter === ""} onClick={() => { setLeagueFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
-              {t.search.allCategories}
-            </Chip>
-            {leagues.map((l) => (
-              <Chip key={l} active={leagueFilter === l} onClick={() => { setLeagueFilter(l); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
-                {l}
-              </Chip>
-            ))}
-          </ScrollArrowRow>
         </div>
       </FilterSheet>
     </div>
