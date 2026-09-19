@@ -2289,3 +2289,40 @@ link AND decoded image; `noruega|home` 2025 against the Nike World Cup 2026
 shirt on file, and `internacional|home` 25/26 -- the same InterStore older-stock
 skip now five passes running). `ebay_check_stale.py`: 22 of 200 (11%), normal.
 DecathlonIE and ProSoccer genuine zeros as always.
+
+## Daily pass (2026-09-19) -- eBay "single-year" retro labels are mostly two-year seasons already on file
+
+All 14 Awin feeds + the 5 Rakuten Brazil stores + one `ebay_mine_cycle.py` batch
+(cycle 3 at 240/384, 60 teams newly completed, **zero 429s**). Soicos skipped
+again -- no `claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten
+FTP listing (5th pass running). 47 new products (2 CSV-feed, 3 eBay current --
+2 of them via the season-conflict path -- 0 kids, 42 eBay retro); every
+current-season one photo-verified, retro verified on a sample;
+`tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**Single-year retro keys are usually a season that already exists.** 20 of 70 new
+retro picks carried a bare `YYYY` season while the title said `"2024 2025"` /
+`"2021 2022"` / `"2001 - 2002"`, and 8 of those two-year seasons already had a
+`{team}-retro-{YYYYyy}-{type}` block on file (plus one, AC Milan 2022, whose
+`2022/23` twin was in the same batch). `retro_gen.py` would have created them
+as separate products -- the France 2018 / 2018-19 lesson from 09-18, at scale.
+Before generating, check every `YYYY`-keyed pick for a `YYYY/YY+1` or
+`YYYY-1/YY` sibling id and merge or re-key it. Where the title didn't pin the
+season down (Boca "2010", Man Utd "2008"/"2009 UCL final", Juve third "2019")
+dropped rather than guessed.
+
+**"Retro Soccer Jersey" titles photographed on the same wooden table / grey
+wall are reproductions**, not vintage stock: brand-new-with-tags 2006/07 Real
+Madrid, 2011/12 Villa, 2013/14 City, 2001/02 Roma. Dropped 5 new + 10 merge
+offers with `\bretro\b` in the title this pass. NB 389 eBay offers already on
+file carry "retro" in their title -- not audited here, worth a photo pass.
+
+Also dropped: `torino|away` (a Juventus shirt), retro Bournemouth 22/23 (Leeds,
+Tyler Adams), Newcastle 2019 (Newcastle Jets, A-League), Lazio 24/25 (Italy,
+adidas), Fulham 24/25 (AliExpress "sublimated"), Como "1907" (founding year
+parsed as season, $28.98 template seller), Roma "15-16YRS" (kids), Man Utd
+"Third Lifestyle" tee. Crystal Palace 26/27 home+third skipped -- the two
+listings' photos are swapped relative to their titles. The $28.98 template
+seller again produced 6 of 14 eBay season conflicts. CSV-feed conflicts: 4 exact
+duplicates by style code/image, noruega 2025 and InterStore 25/26 (older-stock,
+6th pass), Juventus Tiro 25 black LS (colorway variant, season-notation mismatch).
