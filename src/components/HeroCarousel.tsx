@@ -166,13 +166,18 @@ export default function HeroCarousel() {
               poco más para revelar más bota, pedido explícito del
               usuario (ver sections.ts para el porqué del valor). */}
           {slide.photo && (
-            <div className="absolute inset-0" style={{ transform: SECTION_HERO_TRANSFORM[i] }}>
+            <div
+              className={`absolute inset-0 ${
+                SECTION_HERO_FIT[i] === "contain" ? "bg-white sm:left-[38%]" : ""
+              }`}
+              style={{ transform: SECTION_HERO_TRANSFORM[i] }}
+            >
               <img
                 src={getDisplaySrc(slide.photo, 1600)}
                 alt=""
                 aria-hidden
                 className={`absolute inset-0 h-full w-full ${
-                  SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-8 sm:p-14" : "object-cover"
+                  SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-6 sm:p-10" : "object-cover"
                 } ${i === active ? "hero-photo-kenburns" : ""}`}
                 style={SECTION_HERO_FIT[i] === "cover" ? { objectPosition: SECTION_HERO_POSITION[i] } : undefined}
               />
