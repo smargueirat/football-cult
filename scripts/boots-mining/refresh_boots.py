@@ -43,6 +43,7 @@ quitarlo. Si vuelve a aparecer en el feed al día siguiente, vuelve solo
 sumar un campo/UI nuevo sólo para esto.
 """
 import json, re, os, subprocess, sys, unicodedata
+from urllib.parse import unquote
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
@@ -72,26 +73,26 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}  model: {ts_string(e['model'])},")
     lines.append(f"{pad}  groundType: {ts_string(e['groundType'])},")
     lines.append(f"{pad}  offers: [")
-    o = e['offers'][0]
-    lines.append(f"{pad}    {{")
-    lines.append(f"{pad}      store: {ts_string(o['store'])},")
-    lines.append(f"{pad}      price: {o['price']},")
-    if o.get('priceMax'):
-        lines.append(f"{pad}      priceMax: {o['priceMax']},")
-    lines.append(f"{pad}      shipping: {o['shipping']},")
-    lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
-    lines.append(f"{pad}      url: {ts_string(o['url'])},")
-    lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
-    sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
-    lines.append(f"{pad}      sizes: [{sizes_str}],")
-    if o.get('sizePrices'):
-        lines.append(f"{pad}      sizePrices: [")
-        for sp in o['sizePrices']:
-            lines.append(
-                f"{pad}        {{ size: {ts_string(sp['size'])}, price: {sp['price']}, url: {ts_string(sp['url'])} }},"
-            )
-        lines.append(f"{pad}      ],")
-    lines.append(f"{pad}    }},")
+    for o in e['offers']:
+        lines.append(f"{pad}    {{")
+        lines.append(f"{pad}      store: {ts_string(o['store'])},")
+        lines.append(f"{pad}      price: {o['price']},")
+        if o.get('priceMax'):
+            lines.append(f"{pad}      priceMax: {o['priceMax']},")
+        lines.append(f"{pad}      shipping: {o['shipping']},")
+        lines.append(f"{pad}      currency: {ts_string(o['currency'])},")
+        lines.append(f"{pad}      url: {ts_string(o['url'])},")
+        lines.append(f"{pad}      imageUrl: {ts_string(o['imageUrl'])},")
+        sizes_str = ", ".join(ts_string(s) for s in o['sizes'])
+        lines.append(f"{pad}      sizes: [{sizes_str}],")
+        if o.get('sizePrices'):
+            lines.append(f"{pad}      sizePrices: [")
+            for sp in o['sizePrices']:
+                lines.append(
+                    f"{pad}        {{ size: {ts_string(sp['size'])}, price: {sp['price']}, url: {ts_string(sp['url'])} }},"
+                )
+            lines.append(f"{pad}      ],")
+        lines.append(f"{pad}    }},")
     lines.append(f"{pad}  ],")
     lines.append(pad + "},")
     return "\n".join(lines)
@@ -120,10 +121,40 @@ def existing_legacy_ids(prefix):
     return set(re.findall(r'id: "([^"]+)"', prefix))
 
 
+def _image_key(url):
+    # Foot-Store/Sport is Good ES+FR son tiendas espejo del mismo backend
+    # (mismo archivo real en cdn.blazimg.com para el mismo colorway) --
+    # esa foto es la identidad real de "misma bota, mismo color" entre
+    # tiendas. Sin foto de ese CDN no se funde nada (key None).
+    m = re.search(r'blazimg\.com/\d+/product/([^&?]+)', unquote(url or ""))
+    return m.group(1) if m else None
+
+
+def merge_mirror_offers(mined):
+    """Funde ofertas del MISMO colorway real vendido en varias tiendas
+    espejo (2026-09-19, ~1000 cards repetidas en botas). Key: marca +
+    modelo + terreno + foto real -- la foto evita repetir el bug de
+    colorways de precio distinto fundidos en uno."""
+    order, groups = [], {}
+    for d in mined:
+        ik = _image_key(d.get("imageUrl"))
+        key = (d["brand"].lower(), d["model"].lower(), d["groundType"], ik) if ik else ("solo", len(order))
+        # una tienda no puede aportar dos ofertas al mismo producto (la
+        # UI las identifica por tienda) -- si ya está, queda aparte.
+        if key in groups and any(x["store"] == d["store"] for x in groups[key]):
+            key = ("dup", len(order))
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(d)
+    return [groups[k] for k in order]
+
+
 def build_entries(mined, used_ids):
     entries = []
     seen_ids = set(used_ids)
-    for d in mined:
+    for group in merge_mirror_offers(mined):
+        d = group[0]
         base = slugify(f"{d['store']}-{d['brand']}-{d['model']}-{d['groundType']}")
         sid = base
         i = 2
@@ -137,16 +168,16 @@ def build_entries(mined, used_ids):
             "model": d["model"],
             "groundType": d["groundType"],
             "offers": [{
-                "store": d["store"],
-                "price": d["price"],
-                **({"priceMax": d["priceMax"]} if d.get("priceMax") else {}),
-                "shipping": d["shipping"],
-                "currency": d["currency"],
-                "url": d["url"],
-                "imageUrl": d["imageUrl"],
-                "sizes": d["sizes"],
-                **({"sizePrices": d["sizePrices"]} if d.get("sizePrices") else {}),
-            }],
+                "store": g["store"],
+                "price": g["price"],
+                **({"priceMax": g["priceMax"]} if g.get("priceMax") else {}),
+                "shipping": g["shipping"],
+                "currency": g["currency"],
+                "url": g["url"],
+                "imageUrl": g["imageUrl"],
+                "sizes": g["sizes"],
+                **({"sizePrices": g["sizePrices"]} if g.get("sizePrices") else {}),
+            } for g in group],
         })
     return entries
 

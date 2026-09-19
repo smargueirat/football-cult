@@ -67,12 +67,23 @@ export default async function TicketDetailPage({
   const ticket = findTicket(id);
   if (!ticket) notFound();
 
+  // Campos que Search Console marcó como faltantes (2026-09-19, "problemas
+  // no críticos" de Eventos): eventStatus, performer, offers.validFrom,
+  // location.address, description. Sin ciudad real en el feed, address usa
+  // el nombre del estadio (dato real) en vez de inventar una ciudad.
+  const [homeTeam, awayTeam] = ticket.event.split(/\s+vs\s+/i);
+  const teams = [homeTeam, awayTeam].filter(Boolean).map((n) => ({ "@type": "SportsTeam", name: n.trim() }));
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
     name: ticket.event,
+    description: `${ticket.event} -- ${ticket.competition}, ${ticket.venue}, ${ticket.date}. Compará precios de entradas entre tiendas reales.`,
     startDate: `${ticket.date}T${ticket.time}`,
-    location: { "@type": "Place", name: ticket.venue },
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: { "@type": "Place", name: ticket.venue, address: ticket.venue },
+    performer: teams,
+    ...(teams.length === 2 ? { homeTeam: teams[0], awayTeam: teams[1] } : {}),
     image: ticket.imageUrl ? [ticket.imageUrl] : undefined,
     url: `${SITE_URL}/${locale}/tickets/${ticket.id}`,
     offers: ticket.offers.map((o) => ({
@@ -81,6 +92,7 @@ export default async function TicketDetailPage({
       price: o.price,
       priceCurrency: o.currency,
       availability: "https://schema.org/InStock",
+      validFrom: new Date().toISOString().slice(0, 10),
       seller: { "@type": "Organization", name: o.store },
     })),
   };
