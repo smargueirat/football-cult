@@ -399,6 +399,7 @@ export interface Translations {
     clubLabel: string;
     leagueLabel: string;
     venueLabel: string;
+    cityLabel: string;
     dateLabel: string;
     dateFromLabel: string;
     dateToLabel: string;
@@ -410,7 +411,7 @@ export interface Translations {
     pageTitle: string;
     pageSubtitle: string;
     typeLabel: string;
-    types: { shorts: string; jacket: string; pants: string; socks: string };
+    types: { shorts: string; jacket: string; pants: string; socks: string; sweatshirt: string; polo: string; set: string; tshirt: string };
   };
 }
 
@@ -880,6 +881,7 @@ export const translations: Record<Locale, Translations> = {
       clubLabel: "Club",
       leagueLabel: "Liga",
       venueLabel: "Estadio",
+      cityLabel: "Ciudad",
       dateLabel: "Fecha",
       dateFromLabel: "Desde",
       dateToLabel: "Hasta",
@@ -891,7 +893,7 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Ropa de fútbol",
       pageSubtitle: "{n} prendas reales de tiendas aprobadas.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias" },
+      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias", sweatshirt: "Sudaderas", polo: "Polos", set: "Conjuntos", tshirt: "Remeras" },
     },
   },
   pt: {
@@ -1358,6 +1360,7 @@ export const translations: Record<Locale, Translations> = {
       clubLabel: "Clube",
       leagueLabel: "Liga",
       venueLabel: "Estádio",
+      cityLabel: "Cidade",
       dateLabel: "Data",
       dateFromLabel: "De",
       dateToLabel: "Até",
@@ -1369,7 +1372,7 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Roupas de futebol",
       pageSubtitle: "{n} peças reais de lojas aprovadas.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias" },
+      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias", sweatshirt: "Moletons", polo: "Polos", set: "Conjuntos", tshirt: "Camisetas" },
     },
   },
   en: {
@@ -1836,6 +1839,7 @@ export const translations: Record<Locale, Translations> = {
       clubLabel: "Club",
       leagueLabel: "League",
       venueLabel: "Stadium",
+      cityLabel: "City",
       dateLabel: "Date",
       dateFromLabel: "From",
       dateToLabel: "To",
@@ -1847,7 +1851,7 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Football apparel",
       pageSubtitle: "{n} real items from approved stores.",
       typeLabel: "Type",
-      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks" },
+      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks", sweatshirt: "Sweatshirts", polo: "Polos", set: "Sets", tshirt: "T-shirts" },
     },
   },
   fr: {
@@ -2314,6 +2318,7 @@ export const translations: Record<Locale, Translations> = {
       clubLabel: "Club",
       leagueLabel: "Ligue",
       venueLabel: "Stade",
+      cityLabel: "Ville",
       dateLabel: "Date",
       dateFromLabel: "Du",
       dateToLabel: "Au",
@@ -2325,7 +2330,7 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Vêtements de football",
       pageSubtitle: "{n} articles réels de boutiques approuvées.",
       typeLabel: "Type",
-      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes" },
+      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes", sweatshirt: "Sweats", polo: "Polos", set: "Ensembles", tshirt: "T-shirts" },
     },
   },
   it: {
@@ -2792,6 +2797,7 @@ export const translations: Record<Locale, Translations> = {
       clubLabel: "Club",
       leagueLabel: "Campionato",
       venueLabel: "Stadio",
+      cityLabel: "Città",
       dateLabel: "Data",
       dateFromLabel: "Da",
       dateToLabel: "A",
@@ -2803,7 +2809,7 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Abbigliamento da calcio",
       pageSubtitle: "{n} capi reali da negozi approvati.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni" },
+      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni", sweatshirt: "Felpe", polo: "Polo", set: "Completi", tshirt: "Magliette" },
     },
   },
 };

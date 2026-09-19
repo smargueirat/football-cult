@@ -732,7 +732,17 @@ export default function SearchExplorer({
                 {item.kind === "jersey" ? (
                   <ProductCard product={item.product} priority={i < 8} />
                 ) : (
-                  <BootCard boot={item.boot} priority={i < 8} />
+                  (() => {
+                    const ck = bootColorKey(item.boot.id);
+                    return (
+                      <BootCard
+                        boot={item.boot}
+                        priority={i < 8}
+                        colorLabel={ck ? t.search[COLOR_LABEL_KEY[ck]] : undefined}
+                        colorHex={ck ? COLOR_SWATCH[ck] : undefined}
+                      />
+                    );
+                  })()
                 )}
               </div>
             ))}

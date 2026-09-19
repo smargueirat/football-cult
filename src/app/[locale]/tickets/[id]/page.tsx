@@ -81,7 +81,7 @@ export default async function TicketDetailPage({
     startDate: `${ticket.date}T${ticket.time}`,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    location: { "@type": "Place", name: ticket.venue, address: ticket.venue },
+    location: { "@type": "Place", name: ticket.venue, address: ticket.city ? `${ticket.venue}, ${ticket.city}` : ticket.venue },
     performer: teams,
     ...(teams.length === 2 ? { homeTeam: teams[0], awayTeam: teams[1] } : {}),
     image: ticket.imageUrl ? [ticket.imageUrl] : undefined,

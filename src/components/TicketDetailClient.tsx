@@ -67,7 +67,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
           <span className="text-xs uppercase tracking-wide text-[#B8933F]">{ticket.competition}</span>
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{ticket.event}</h1>
           <p className="mt-2 text-sm text-[#675c44]">
-            {dateLabel} · {timeLabel} · {ticket.venue}
+            {dateLabel} · {timeLabel} · {ticket.venue}{ticket.city ? `, ${ticket.city}` : ""}
           </p>
           <p className="mt-2 text-sm text-[#675c44]">
             {t.botas.bestPrice}: {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}

@@ -21,7 +21,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 // números sueltos (parseFloat) y rompería con letras, así que hace
 // falta su propio comparador acá en vez de forzar uno solo para los 3
 // tipos de producto.
-const APPAREL_TYPES = ["shorts", "jacket", "pants", "socks"] as const;
+const APPAREL_TYPES = ["shorts", "jacket", "pants", "socks", "sweatshirt", "polo", "set", "tshirt"] as const;
 type ApparelType = (typeof APPAREL_TYPES)[number];
 
 const LETTER_SIZE_ORDER = ["XXS", "XS", "S", "M", "L", "XL", "XXL", "2XL", "3XL", "4XL", "5XL"];

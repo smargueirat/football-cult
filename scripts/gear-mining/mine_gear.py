@@ -412,9 +412,13 @@ if __name__ == '__main__':
 
     print('=== ROPA ===')
     mine_apparel_type('shorts', 'Short', apparel_results)
-    mine_apparel_type('jacket', 'Veste de survêtement', apparel_results)
+    mine_apparel_type('jacket', 'Veste', apparel_results)  # incluye 'Veste de survêtement'
     mine_apparel_type('pants', 'Pantalon de survêtement', apparel_results)
     mine_apparel_type('socks', 'Chaussettes', apparel_results)
+    mine_apparel_type('sweatshirt', 'Sweatshirt', apparel_results)
+    mine_apparel_type('polo', 'Polo', apparel_results)
+    mine_apparel_type('set', 'Ensemble', apparel_results)
+    mine_apparel_type('tshirt', 'T-shirt', apparel_results)
 
     canonicalize_brands(gloves_results)
     canonicalize_brands(balls_results)

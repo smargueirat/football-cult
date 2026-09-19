@@ -1,0 +1,904 @@
+{
+ "AFAS Stadion": {
+  "city": "Alkmaar",
+  "desc": "stadium in Alkmaar, the Netherlands",
+  "qid": "Q291590"
+ },
+ "Academy Stadium": {
+  "city": "Manchester",
+  "desc": "football stadium in Manchester, UK",
+  "qid": "Q18640314"
+ },
+ "Agia Sophia Stadium": {
+  "city": "Nea Filadelfeia",
+  "desc": "stadium in Nea Filadelfeia, Attica Region, Greece",
+  "qid": "Q15284032"
+ },
+ "Air Albania Stadium": null,
+ "Allianz Arena": {
+  "city": "Munich",
+  "desc": "stadium in Munich, Germany",
+  "qid": "Q127429"
+ },
+ "Allianz Riviera": null,
+ "Allianz Stadion": {
+  "city": "Sydney",
+  "desc": "former sports venue in Sydney, Australia",
+  "qid": "Q1053447"
+ },
+ "Allianz Stadium": {
+  "city": "Sydney",
+  "desc": "former sports venue in Sydney, Australia",
+  "qid": "Q1053447"
+ },
+ "American Express Stadium": null,
+ "Anfield": {
+  "city": "Anfield",
+  "desc": "football stadium in Anfield, Liverpool, England",
+  "qid": "Q45671"
+ },
+ "Anoeta Stadium": {
+  "city": "San Sebastián",
+  "desc": "football stadium in San Sebastián, Spain",
+  "qid": "Q917845"
+ },
+ "Anton Malatinsky Stadium": null,
+ "Aspmyra Stadion": {
+  "city": "Bodø",
+  "desc": "associaiton football stadium in Bodø, Norway",
+  "qid": "Q376674"
+ },
+ "Astana Arena": null,
+ "Aviva Stadium": {
+  "city": "Dublin",
+  "desc": "football and rugby stadium in Dublin",
+  "qid": "Q244402"
+ },
+ "Bakcell Arena": {
+  "city": "Baky",
+  "desc": "stadion in Baky, Azerbaijan",
+  "qid": "Q4032454"
+ },
+ "Baku Olympic Stadium": {
+  "city": "Baku",
+  "desc": "sports stadium in Baku, Azerbaijan",
+  "qid": "Q2612138"
+ },
+ "Balaidos": {
+  "city": "Vigo",
+  "desc": "football stadium in Vigo, Spain",
+  "qid": "Q1326578"
+ },
+ "BayArena": {
+  "city": "Leverkusen",
+  "desc": "football stadium in Leverkusen, Germany",
+  "qid": "Q156630"
+ },
+ "Benteler Arena": {
+  "city": "Paderborn",
+  "desc": "football stadium in Paderborn, Germany",
+  "qid": "Q567402"
+ },
+ "Bet365 Stadium": null,
+ "Bielefelder Alm": null,
+ "Boris Paichadze Dinamo Arena": {
+  "city": "Tbilisi",
+  "desc": "football stadium in Tbilisi, Georgia",
+  "qid": "Q290801"
+ },
+ "Borussia-Park": null,
+ "Bosuilstadion": {
+  "city": "Antwerp",
+  "desc": "football stadium in Antwerp, Belgium",
+  "qid": "Q285074"
+ },
+ "Bursa Buyuksehir Belediye Stadyumu": null,
+ "Campo de Futbol de Vallecas": null,
+ "Cardiff City Stadium": null,
+ "Celtic Park": {
+  "city": "Glasgow",
+  "desc": "football stadium in Glasgow, Scotland, UK",
+  "qid": "Q216037"
+ },
+ "City Ground": {
+  "city": "West Bridgford",
+  "desc": "association football stadium in West Bridgford, England",
+  "qid": "Q593446"
+ },
+ "Commerzbank Arena": {
+  "city": "Frankfurt am Main",
+  "desc": "stadium in Frankfurt am Main, Germany",
+  "qid": "Q157273"
+ },
+ "Complexo Desportivo FC Alverca": {
+  "city": "Alverca do Ribatejo",
+  "desc": "football stadium in Alverca do Ribatejo, Portugal",
+  "qid": "Q136001729"
+ },
+ "Constant Vanden Stock Stadium": {
+  "city": "Anderlecht",
+  "desc": "football stadium in Anderlecht, Brussels, Belgium",
+  "qid": "Q262326"
+ },
+ "Coventry Building Society Arena": null,
+ "Craven Cottage": {
+  "city": "London",
+  "desc": "football stadium in Fulham, London",
+  "qid": "Q318043"
+ },
+ "Dacia Arena": {
+  "city": "Udine",
+  "desc": "football stadium in Udine, Italy",
+  "qid": "Q640031"
+ },
+ "Darius and Girenas Stadium": {
+  "city": "Kaunas",
+  "desc": "football stadium in Kaunas, Lithuania",
+  "qid": "Q1583616"
+ },
+ "De Kuip": {
+  "city": "Rotterdam",
+  "desc": "stadium in Rotterdam, Netherlands",
+  "qid": "Q330298"
+ },
+ "Dens Park": {
+  "city": "Dundee",
+  "desc": "football stadium in Dundee, Scotland, UK",
+  "qid": "Q615561"
+ },
+ "Easter Road": {
+  "city": "Edinburgh",
+  "desc": "football stadium in Edinburgh, Scotland, UK",
+  "qid": "Q1278116"
+ },
+ "Eintracht-Stadion": null,
+ "Elland Road": {
+  "city": "Leeds",
+  "desc": "football stadium in Leeds, West Yorkshire, England",
+  "qid": "Q619505"
+ },
+ "Emirates Stadium": {
+  "city": "London",
+  "desc": "association football stadium located in Islington, North London",
+  "qid": "Q163995"
+ },
+ "Ernst Happel Stadium": {
+  "city": "Vienna",
+  "desc": "stadium in Vienna",
+  "qid": "Q185741"
+ },
+ "Eryaman Stadium": {
+  "city": "Eryaman district of Ankara.",
+  "desc": "football stadium located in Eryaman district of Ankara.",
+  "qid": "Q28451127"
+ },
+ "Estadi Ciutat de Valencia": {
+  "city": "València",
+  "desc": "association football stadium in València, Spain",
+  "qid": "Q1122715"
+ },
+ "Estadi Cornella-El Prat": {
+  "city": "Barcelona",
+  "desc": "Stadium in Barcelona, Spain",
+  "qid": "Q473223"
+ },
+ "Estadi Mallorca Son Moix": null,
+ "Estadio Antonio Coimbra da Mota": {
+  "city": "Estoril",
+  "desc": "football stadium in Estoril, Portugal",
+  "qid": "Q1370647"
+ },
+ "Estadio Carlos Tartiere": {
+  "city": "Oviedo",
+  "desc": "football stadium in Oviedo, Asturias, Spain",
+  "qid": "Q1369536"
+ },
+ "Estadio Cidade de Barcelos": {
+  "city": "Barcelos",
+  "desc": "football stadium in Barcelos, Portugal",
+  "qid": "Q1167583"
+ },
+ "Estadio D. Afonso Henriques": {
+  "city": "Guimarães",
+  "desc": "football stadium in Guimarães, Portugal",
+  "qid": "Q1057274"
+ },
+ "Estadio Dr Magalhaes Pessoa": {
+  "city": "Leiria",
+  "desc": "football stadium in Leiria, Portugal",
+  "qid": "Q1056864"
+ },
+ "Estadio El Sadar": {
+  "city": "Pamplona",
+  "desc": "association football stadium in Pamplona, Spain",
+  "qid": "Q735783"
+ },
+ "Estadio Jose Alvalade": {
+  "city": "Lisbon",
+  "desc": "football stadium in Lisbon, Portugal",
+  "qid": "Q287359"
+ },
+ "Estadio Jose Gomes": {
+  "city": "Amadora",
+  "desc": "football stadium in Amadora, Portugal",
+  "qid": "Q3059095"
+ },
+ "Estadio Manuel Martinez Valero": null,
+ "Estadio Municipal 22 de Junho": null,
+ "Estadio Municipal de Arouca": null,
+ "Estadio Municipal de Braga": {
+  "city": "Braga",
+  "desc": "football stadium in Braga, Portugal",
+  "qid": "Q849239"
+ },
+ "Estadio Municipal de Butarque": null,
+ "Estadio Municipal de Riazor": {
+  "city": "A Coruña",
+  "desc": "multi-purpose stadium in A Coruña, Galicia, Spain",
+  "qid": "Q22130"
+ },
+ "Estadio Municipal de Rio Maior": {
+  "city": "Rio Maior",
+  "desc": "football stadium in Rio Maior, Portugal",
+  "qid": "Q2990539"
+ },
+ "Estadio da Luz": {
+  "city": "Lisbon",
+  "desc": "football stadium in Lisbon, Portugal",
+  "qid": "Q7875112"
+ },
+ "Estadio de La Cartuja": null,
+ "Estadio de Sao Miguel": {
+  "city": "Ponta Delgada",
+  "desc": "football stadium in Ponta Delgada, Azores, Portugal",
+  "qid": "Q3514858"
+ },
+ "Estadio de la Ceramica": {
+  "city": "Vila-real",
+  "desc": "football stadium in Vila-real, Spain",
+  "qid": "Q741157"
+ },
+ "Estadio do Dragao": {
+  "city": "Porto",
+  "desc": "football stadium in Porto, Portugal",
+  "qid": "Q271454"
+ },
+ "Estadio do Fontelo": {
+  "city": "Viseu",
+  "desc": "football stadium in Viseu, Portugal",
+  "qid": "Q1369675"
+ },
+ "Estadio do Maritimo": {
+  "city": "Funchal",
+  "desc": "football stadium in Funchal, Madeira, Portugal",
+  "qid": "Q1272724"
+ },
+ "Estadio do Rio Ave": null,
+ "Etihad Stadium": {
+  "city": "Manchester",
+  "desc": "stadium in Manchester, England",
+  "qid": "Q48159"
+ },
+ "Europa Sports Park": null,
+ "Europa-Park Stadion": null,
+ "Fadil Vokrri Stadium": {
+  "city": "Pristina",
+  "desc": "Football stadium in the capital of Kosovo, Pristina",
+  "qid": "Q1550984"
+ },
+ "Falkirk Stadium": {
+  "city": "Falkirk",
+  "desc": "football stadium in Falkirk, Scotland, UK",
+  "qid": "Q1027157"
+ },
+ "Fir Park Stadium": {
+  "city": "North Lanarkshire",
+  "desc": "football stadium in North Lanarkshire, Scotland, UK",
+  "qid": "Q252696"
+ },
+ "Fratton Park": {
+  "city": "Portsmouth",
+  "desc": "football stadium in Portsmouth, England",
+  "qid": "Q619531"
+ },
+ "Friends Arena": {
+  "city": "Solna",
+  "desc": "association football stadium in Solna, Stockholm, Sweden",
+  "qid": "Q1138684"
+ },
+ "Fritz Walter Stadion": {
+  "city": "Kaiserslautern",
+  "desc": "Football stadium in Kaiserslautern, Germany",
+  "qid": "Q154298"
+ },
+ "GSP Stadium": {
+  "city": "Cyprus",
+  "desc": "stadium in Cyprus",
+  "qid": "Q592491"
+ },
+ "Generali Arena": {
+  "city": "Vienna",
+  "desc": "association football stadium in Vienna, Austria",
+  "qid": "Q696476"
+ },
+ "Gewiss Stadium": {
+  "city": "Bergamo",
+  "desc": "football stadium in Bergamo, Italy",
+  "qid": "Q780526"
+ },
+ "Giuseppe Meazza": {
+  "city": "Milan",
+  "desc": "multisports venue in Milan, Italy",
+  "qid": "Q133566"
+ },
+ "Groupama Arena": {
+  "city": "Ferencváros",
+  "desc": "multi-purpose stadium in Ferencváros, Budapest, Hungary",
+  "qid": "Q17394000"
+ },
+ "Groupama Stadium": null,
+ "Gtech Community Stadium": {
+  "city": "London",
+  "desc": "stadium in London, England",
+  "qid": "Q4961609"
+ },
+ "HDI-Arena": {
+  "city": "Hannover",
+  "desc": "football stadium in Hannover",
+  "qid": "Q152633"
+ },
+ "Hampden Park": {
+  "city": "Glasgow",
+  "desc": "association football stadium in Glasgow, Scotland, UK",
+  "qid": "Q193651"
+ },
+ "Helsinki Olympic Stadium": {
+  "city": "Helsinki",
+  "desc": "stadium in Helsinki, Finland",
+  "qid": "Q332219"
+ },
+ "Hill Dickinson Stadium": {
+  "city": "Liverpool",
+  "desc": "football stadium in Liverpool, England, UK",
+  "qid": "Q29347805"
+ },
+ "Holstein-Stadion": null,
+ "Hristo Botev Stadium": {
+  "city": "Vratsa",
+  "desc": "sports venue in Vratsa, Bulgaria",
+  "qid": "Q2984648"
+ },
+ "Ibrox Stadium": {
+  "city": "Glasgow",
+  "desc": "football stadium in Glasgow, Scotland, UK",
+  "qid": "Q208709"
+ },
+ "Ipurua Municipal Stadium": null,
+ "Jan Breydel": {
+  "city": "Bruges",
+  "desc": "football stadium in Bruges, Belgium",
+  "qid": "Q1070150"
+ },
+ "Johan Cruyff Arena": {
+  "city": "Amsterdam",
+  "desc": "sports venue in Amsterdam, Netherlands",
+  "qid": "Q207109"
+ },
+ "Karaiskakis Stadium": {
+  "city": "Piraeus",
+  "desc": "football stadium in Piraeus, Attica, Greece",
+  "qid": "Q213508"
+ },
+ "King Baudouin Stadium": {
+  "city": "Laeken",
+  "desc": "sports stadium in Laeken, Brussels, Belgium",
+  "qid": "Q622671"
+ },
+ "King Saud University Stadium": {
+  "city": "Riyadh",
+  "desc": "multi-purpose stadium in Riyadh, Saudi Arabia",
+  "qid": "Q20421103"
+ },
+ "Kingdom Arena": null,
+ "Kosicka futbalova arena": {
+  "city": "Košice",
+  "desc": "football stadium in Košice",
+  "qid": "Q105515105"
+ },
+ "La Rosaleda Stadium": {
+  "city": "Málaga",
+  "desc": "football stadium in Málaga, Spain",
+  "qid": "Q695879"
+ },
+ "Laugardalsvollur": null,
+ "Loftus Road": {
+  "city": "London",
+  "desc": "football stadium in London",
+  "qid": "Q31670"
+ },
+ "London Stadium": null,
+ "MAPEI Stadium - Citta del Tricolore": {
+  "city": "Reggio Emilia",
+  "desc": "multisport stadium located in Reggio Emilia, Italy",
+  "qid": "Q1887221"
+ },
+ "MDCC Arena": null,
+ "MKM Stadium": {
+  "city": "Kingston upon Hull",
+  "desc": "association football and rugby league stadium in Kingston upon Hull, England, UK",
+  "qid": "Q630160"
+ },
+ "MMArena": {
+  "city": "Le Mans",
+  "desc": "Stadium in Le Mans, France",
+  "qid": "Q1862372"
+ },
+ "Macron Stadium": {
+  "city": "the UK",
+  "desc": "sports venue in the UK",
+  "qid": "Q85875045"
+ },
+ "Maracana": {
+  "city": "Rio de Janeiro",
+  "desc": "stadium in Rio de Janeiro, Brazil",
+  "qid": "Q155174"
+ },
+ "Matmut Atlantique": null,
+ "Max-Morlock-Stadion": {
+  "city": "Nürnberg",
+  "desc": "multi-use stadium in Nürnberg, Germany",
+  "qid": "Q152599"
+ },
+ "McDiarmid Park": {
+  "city": "Perth and Kinross",
+  "desc": "association football stadium in Perth and Kinross, Scotland, UK",
+  "qid": "Q1848848"
+ },
+ "Mendizorrotza": {
+  "city": "Vitoria-Gasteiz",
+  "desc": "football stadium in Vitoria-Gasteiz, Spain",
+  "qid": "Q1369390"
+ },
+ "Mercedes-Benz Arena": {
+  "city": "Stuttgart",
+  "desc": "football stadium in Stuttgart, Germany",
+  "qid": "Q152349"
+ },
+ "Merck-Stadion am Bollenfalltor": {
+  "city": "Darmstadt",
+  "desc": "football stadium in Darmstadt, Germany",
+  "qid": "Q878622"
+ },
+ "Mestalla": null,
+ "Millerntor-Stadion": null,
+ "Molineux": null,
+ "Montilivi": {
+  "city": "Girona",
+  "desc": "football stadium in Girona, Spain",
+  "qid": "Q2097709"
+ },
+ "National Arena": {
+  "city": "Bucharest",
+  "desc": "football stadium in Bucharest, Romania",
+  "qid": "Q338602"
+ },
+ "Nuevo Arcangel": null,
+ "Old Trafford": {
+  "city": "Manchester",
+  "desc": "football stadium in Manchester, England",
+  "qid": "Q83457"
+ },
+ "Olympiastadion": {
+  "city": "Munich",
+  "desc": "stadium located in Munich, Germany",
+  "qid": "Q131610"
+ },
+ "Opel Arena": {
+  "city": "Mainz",
+  "desc": "stadium in Mainz, Rhineland-Palatinate, Germany",
+  "qid": "Q392494"
+ },
+ "Parc des Princes": {
+  "city": "Paris",
+  "desc": "multipurpose sports venue in Paris, France",
+  "qid": "Q193431"
+ },
+ "Parken Stadium": {
+  "city": "Copenhagen",
+  "desc": "football stadium in Copenhagen, Denmark",
+  "qid": "Q33003"
+ },
+ "Parque de Jogos Comendador": null,
+ "Philips Stadion": {
+  "city": "Eindhoven",
+  "desc": "football stadium in Eindhoven, Netherlands",
+  "qid": "Q500972"
+ },
+ "Pittodrie Stadium": {
+  "city": "Aberdeen",
+  "desc": "football stadium in Aberdeen, Scotland, UK",
+  "qid": "Q1141259"
+ },
+ "Podgorica City Stadium": {
+  "city": "Montenegro",
+  "desc": "Football stadium in Montenegro",
+  "qid": "Q1166175"
+ },
+ "Portman Road": {
+  "city": "Ipswich",
+  "desc": "football stadium in Ipswich, Suffolk, England",
+  "qid": "Q619558"
+ },
+ "Pride Park Stadium": null,
+ "Puskas Arena": {
+  "city": "Budapest",
+  "desc": "association football stadium in Budapest, Hungary, inaugurated in November 2019",
+  "qid": "Q39069592"
+ },
+ "Racecourse Ground": {
+  "city": "Hereford",
+  "desc": "cricket ground in Hereford, England",
+  "qid": "Q11996802"
+ },
+ "Raiffeisen Arena": {
+  "city": "Linz",
+  "desc": "football stadium in Linz, Upper Australia",
+  "qid": "Q116693275"
+ },
+ "Rajko Mitic Stadium": {
+  "city": "Belgrade",
+  "desc": "football stadium in Belgrade, Serbia",
+  "qid": "Q478000"
+ },
+ "Ramon Sanchez Pizjuan": {
+  "city": "Seville",
+  "desc": "football stadium in Seville, Spain",
+  "qid": "Q275429"
+ },
+ "Rams Park": null,
+ "Red Bull Arena": {
+  "city": "Leipzig",
+  "desc": "association football stadium in Leipzig, Germany",
+  "qid": "Q210466"
+ },
+ "RheinEnergieStadion": {
+  "city": "Cologne",
+  "desc": "football stadium and home of 1. FC Köln in the city of Cologne, Germany",
+  "qid": "Q151893"
+ },
+ "Rheinpark Stadion": null,
+ "Roazhon Park": {
+  "city": "Rennes",
+  "desc": "football stadium in Rennes, France",
+  "qid": "Q1121760"
+ },
+ "Rudolf-Harbig-Stadion": null,
+ "Rugby Park": {
+  "city": "East Ayrshire",
+  "desc": "football stadium in East Ayrshire, Scotland, UK",
+  "qid": "Q1637255"
+ },
+ "San Mames Stadium": {
+  "city": "Bilbao",
+  "desc": "football stadium in Bilbao, Spain that opened in 2013",
+  "qid": "Q182864"
+ },
+ "Santiago Bernabeu": {
+  "city": "Madrid",
+  "desc": "Real Madrid's home ground, stadium in Madrid",
+  "qid": "Q164027"
+ },
+ "Sardegna Arena": {
+  "city": "Cagliari",
+  "desc": "stadium in Cagliari",
+  "qid": "Q30880646"
+ },
+ "Selhurst Park": {
+  "city": "Selhurst",
+  "desc": "football stadium in Selhurst, in the London Borough of Croydon, England",
+  "qid": "Q1066373"
+ },
+ "Senol Gunes Sport Complex": null,
+ "Signal Iduna Park": {
+  "city": "Dortmund",
+  "desc": "football stadium in the city of Dortmund, Germany",
+  "qid": "Q150928"
+ },
+ "Sincil Bank": {
+  "city": "Lincoln",
+  "desc": "football stadium in Lincoln, England",
+  "qid": "Q619105"
+ },
+ "Sinobo Stadium": {
+  "city": "Prague",
+  "desc": "football stadium in Prague, Czech Republic",
+  "qid": "Q64858"
+ },
+ "Skonto Stadium": null,
+ "Spotify Camp Nou": {
+  "city": "Barcelona",
+  "desc": "football stadium in Barcelona, Catalonia, Spain",
+  "qid": "Q159848"
+ },
+ "St Andrews": null,
+ "St James Park": {
+  "city": "Newcastle upon Tyne",
+  "desc": "football stadium in Newcastle upon Tyne, England, UK",
+  "qid": "Q191774"
+ },
+ "St Mary's Stadium": {
+  "city": "Southampton",
+  "desc": "association football stadium in Southampton",
+  "qid": "Q567339"
+ },
+ "St. Mirren Park": {
+  "city": "Paisley",
+  "desc": "sports stadium in Paisley, Scotland",
+  "qid": "Q2139208"
+ },
+ "Stade Bollaert-Delelis": {
+  "city": "Lens",
+  "desc": "football stadium in Lens, France",
+  "qid": "Q854122"
+ },
+ "Stade Jean-Bouin": {
+  "city": "Paris",
+  "desc": "stadium in Paris, France",
+  "qid": "Q670499"
+ },
+ "Stade Louis II": {
+  "city": "Fontvieille",
+  "desc": "stadium in Fontvieille, Monaco",
+  "qid": "Q318851"
+ },
+ "Stade Maurice Dufrasne": {
+  "city": "Liege",
+  "desc": "football stadium in Liege, Belgium",
+  "qid": "Q959934"
+ },
+ "Stade Oceane": {
+  "city": "Le Havre",
+  "desc": "football stadium in Le Havre, France",
+  "qid": "Q219462"
+ },
+ "Stade Pierre-Mauroy": {
+  "city": "Villeneuve-d'Ascq",
+  "desc": "Multi-use retractable roof stadium and Arena in Villeneuve-d'Ascq, France",
+  "qid": "Q1410402"
+ },
+ "Stade Raymond Kopa": null,
+ "Stade Velodrome": {
+  "city": "Marseille",
+  "desc": "football stadium in Marseille, France",
+  "qid": "Q202150"
+ },
+ "Stade de France": {
+  "city": "Gabon",
+  "desc": "association football stadium in Gabon",
+  "qid": "Q1968221"
+ },
+ "Stade de Luxembourg": null,
+ "Stade de l'Aube": {
+  "city": "Troyes",
+  "desc": "multi-use stadium in Troyes, France",
+  "qid": "Q2001732"
+ },
+ "Stade de la Meinau": {
+  "city": "Strasbourg",
+  "desc": "football stadium in Strasbourg, France",
+  "qid": "Q374883"
+ },
+ "Stade du Moustoir": {
+  "city": "Lorient",
+  "desc": "football stadium in Lorient, France",
+  "qid": "Q39189"
+ },
+ "Stadio Artemio Franchi": {
+  "city": "Florence",
+  "desc": "football stadium in Florence, Italy",
+  "qid": "Q270474"
+ },
+ "Stadio Benito Stirpe": {
+  "city": "Frosinone",
+  "desc": "football stadium in Frosinone, Italy",
+  "qid": "Q29655396"
+ },
+ "Stadio Brianteo": {
+  "city": "Monza",
+  "desc": "stadium in Monza, Italy",
+  "qid": "Q1851616"
+ },
+ "Stadio Diego Armando Maradona": {
+  "city": "Naples",
+  "desc": "multi-use stadium in Naples, Italy",
+  "qid": "Q82709"
+ },
+ "Stadio Ennio Tardini": {
+  "city": "Parma",
+  "desc": "football stadium in Parma, Italy",
+  "qid": "Q610546"
+ },
+ "Stadio Giuseppe Sinigaglia": null,
+ "Stadio Luigi Ferraris": null,
+ "Stadio Olimpico": {
+  "city": "Rome",
+  "desc": "sports venue in Rome, Italy",
+  "qid": "Q159884"
+ },
+ "Stadio Olimpico (San Marino Stadium)": null,
+ "Stadio Olimpico di Torino": {
+  "city": "Turin",
+  "desc": "multi-purpose stadium located in Turin, Italy",
+  "qid": "Q214629"
+ },
+ "Stadio Pier Luigi Penzo": null,
+ "Stadio Renato Dall'Ara": {
+  "city": "Bologna",
+  "desc": "multi-purpose stadium in Bologna, Italy",
+  "qid": "Q757182"
+ },
+ "Stadio Via del Mare": {
+  "city": "Lecce",
+  "desc": "football stadium in Lecce, Italy",
+  "qid": "Q684727"
+ },
+ "Stadion An der Alten Foersterei": null,
+ "Stadion an der Bremer Brucke": null,
+ "Stadion der Freundschaft": {
+  "city": "Cottbus",
+  "desc": "football stadium in Cottbus, Germany",
+  "qid": "Q290234"
+ },
+ "Stadium Municipal": {
+  "city": "Toulouse",
+  "desc": "football stadium in Toulouse, France",
+  "qid": "Q738044"
+ },
+ "Stadium of Light": {
+  "city": "Sunderland",
+  "desc": "football stadium in Sunderland, England",
+  "qid": "Q31969"
+ },
+ "Stamford Bridge": {
+  "city": "London",
+  "desc": "association football stadium in London, England",
+  "qid": "Q171458"
+ },
+ "Stockhorn Arena": null,
+ "Stozice Stadium": null,
+ "Swissporarena": {
+  "city": "Lucerne",
+  "desc": "stadium in Lucerne",
+  "qid": "Q692534"
+ },
+ "Tannadice Park": {
+  "city": "Dundee",
+  "desc": "football stadium in Dundee, Scotland, UK",
+  "qid": "Q777672"
+ },
+ "Tehelne pole": {
+  "city": "Bratislava",
+  "desc": "football stadium in Bratislava, Slovakia",
+  "qid": "Q1584020"
+ },
+ "The Den": {
+  "city": "London",
+  "desc": "football stadium in London, home to Millwall F.C.",
+  "qid": "Q908481"
+ },
+ "The Valley": {
+  "city": "London",
+  "desc": "football stadium in London, home to Charlton Athletic FC",
+  "qid": "Q958319"
+ },
+ "Tofiq Bahramov Stadium": {
+  "city": "Baku",
+  "desc": "Stadium in Baku, Azerbaijan",
+  "qid": "Q1138958"
+ },
+ "Torsvollur": {
+  "city": "Tórshavn",
+  "desc": "football stadium in Tórshavn, Faroe Islands",
+  "qid": "Q845610"
+ },
+ "Tose Proeski Arena": {
+  "city": "Skopje",
+  "desc": "multi-purpose stadium in Skopje, North Macedonia",
+  "qid": "Q1164804"
+ },
+ "Tottenham Hotspur Stadium": {
+  "city": "London",
+  "desc": "stadium in London, England",
+  "qid": "Q55074091"
+ },
+ "Trolli Arena": {
+  "city": "Bavaria",
+  "desc": "football stadium in Bavaria, Germany",
+  "qid": "Q684301"
+ },
+ "Turf Moor": null,
+ "Tynecastle Stadium": {
+  "city": "Edinburgh",
+  "desc": "Football stadium in Edinburgh, Scotland, UK",
+  "qid": "Q1326446"
+ },
+ "Ulker Stadium": null,
+ "Ullevaal Stadion": {
+  "city": "Oslo",
+  "desc": "sports ground in Oslo, Norway",
+  "qid": "Q680291"
+ },
+ "Vasil Levski National Stadium": {
+  "city": "Sofia",
+  "desc": "football stadium in Sofia, Bulgaria",
+  "qid": "Q1327903"
+ },
+ "Vazgen Sargsyan Republican Stadium": null,
+ "Veltins Arena": {
+  "city": "Gelsenkirchen",
+  "desc": "football stadium in Gelsenkirchen, North Rhine-Westphalia, Germany",
+  "qid": "Q150961"
+ },
+ "Vicarage Road": {
+  "city": "Watford",
+  "desc": "Association football stadium in Watford, Hertfordshire, England, home to Watford F.C.",
+  "qid": "Q10626"
+ },
+ "Viking Stadion": null,
+ "Villa Park": {
+  "city": "Birmingham",
+  "desc": "association football venue in Birmingham, England",
+  "qid": "Q175339"
+ },
+ "Vitality Stadium": null,
+ "Vodafone Park": {
+  "city": "Istanbul",
+  "desc": "association football stadium in Istanbul, Turkey",
+  "qid": "Q14914703"
+ },
+ "Voith-Arena": null,
+ "Volksparkstadion": {
+  "city": "Hamburg",
+  "desc": "football stadium in Hamburg, Germany",
+  "qid": "Q150933"
+ },
+ "Volkswagen Arena": {
+  "city": "Wolfsburg",
+  "desc": "football stadium in Wolfsburg, Germany",
+  "qid": "Q155603"
+ },
+ "Vonovia Ruhrstadion": {
+  "city": "Bochum",
+  "desc": "football stadium in Bochum, Germany",
+  "qid": "Q373769"
+ },
+ "WWK Arena": null,
+ "Wanda Metropolitano": {
+  "city": "Madrid",
+  "desc": "football stadium in Madrid, Spain",
+  "qid": "Q1369687"
+ },
+ "Warsaw Stadium (PGE Narodowy)": null,
+ "Wembley Stadium": {
+  "city": "Wembley Park",
+  "desc": "former stadium in Wembley Park, London",
+  "qid": "Q43279"
+ },
+ "Weserstadion": {
+  "city": "Bremen",
+  "desc": "football stadium in the city of Bremen, Germany",
+  "qid": "Q154475"
+ },
+ "Wildparkstadion": {
+  "city": "Karlsruhe",
+  "desc": "football stadium located in Karlsruhe, Germany",
+  "qid": "Q590268"
+ },
+ "Wirsol Rhein Neckar Arena": null,
+ "Zimbru Stadium": null,
+ "epet ARENA": {
+  "city": "Prague",
+  "desc": "football stadium in Prague, Czechia",
+  "qid": "Q60103"
+ }
+}

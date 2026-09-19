@@ -31,6 +31,8 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}  id: {ts_string(e['id'])},")
     lines.append(f"{pad}  event: {ts_string(e['event'])},")
     lines.append(f"{pad}  venue: {ts_string(e['venue'])},")
+    if e.get("city"):
+        lines.append(f"{pad}  city: {ts_string(e['city'])},")
     lines.append(f"{pad}  date: {ts_string(e['date'])},")
     lines.append(f"{pad}  time: {ts_string(e['time'])},")
     lines.append(f"{pad}  competition: {ts_string(e['competition'])},")
@@ -61,7 +63,23 @@ def split_ts():
     return prefix
 
 
+def load_venue_cities():
+    # estadio -> ciudad real de Wikidata (resolve_venue_cities.py); los que
+    # no se resolvieron quedan sin ciudad, nunca inventada.
+    path = os.path.join(SCRIPT_DIR, "venue_cities.json")
+    if not os.path.exists(path):
+        return {}
+    cities = {k: v["city"] for k, v in json.load(open(path, encoding="utf-8")).items() if v}
+    # overrides manuales (venue_city_overrides.json): estadios con nombre de
+    # sponsor que Wikidata no resuelve; solo ciudades verificadas a mano.
+    ov = os.path.join(SCRIPT_DIR, "venue_city_overrides.json")
+    if os.path.exists(ov):
+        cities.update(json.load(open(ov, encoding="utf-8")))
+    return cities
+
+
 def build_entries(mined):
+    cities = load_venue_cities()
     entries = []
     seen_ids = set()
     for d in mined:
@@ -76,6 +94,7 @@ def build_entries(mined):
             "id": sid,
             "event": d["event"],
             "venue": d["venue"],
+            "city": cities.get(d["venue"]),
             "date": d["date"],
             "time": d["time"],
             "competition": d["competition"],

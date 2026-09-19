@@ -19,12 +19,11 @@ const PAGE_SIZE = 24;
 // formato siempre, como hiciste con los botines" -- mismo FilterSheet/
 // SortDropdown que ya usan guantes/pelotas/ropa, ver esos archivos).
 //
-// Sin filtro de CIUDAD real: el feed solo trae el nombre del estadio
-// (`venue`, ej. "Parc des Princes"), nunca una ciudad separada -- son
-// 228 estadios reales distintos en el catálogo actual, mapear cada uno
-// a su ciudad a mano sin poder verificarlos todos es el tipo de dato
-// que no conviene inventar. Se filtra por ESTADIO en su lugar (el dato
-// real que sí tenemos), que cubre el mismo caso de uso en la práctica.
+// Ciudad: el feed solo trae el nombre del estadio, así que la ciudad sale
+// de Wikidata (scripts/tickets-mining/resolve_venue_cities.py, dato real
+// cacheado en venue_cities.json -- pedido explícito del usuario: "fijate
+// de dónde es el estadio y ahí matcheás ciudad"). Estadios sin resolver
+// quedan sin ciudad (no aparecen en ese filtro), nunca inventada.
 // Club: el evento es siempre "Equipo A vs Equipo B", separado acá para
 // poder filtrar por cualquiera de los dos lados.
 function splitTeams(event: string): [string, string] {
@@ -43,14 +42,16 @@ export default function TicketsPageClient() {
   const [clubFilter, setClubFilter] = useState("");
   const [leagueFilter, setLeagueFilter] = useState("");
   const [venueFilter, setVenueFilter] = useState("");
+  const [cityFilter, setCityFilter] = useState("");
   const [dateFrom, setDateFrom] = useState("");
   const [dateTo, setDateTo] = useState("");
 
-  const activeFilterCount = [clubFilter, leagueFilter, venueFilter, dateFrom, dateTo].filter(Boolean).length;
+  const activeFilterCount = [clubFilter, leagueFilter, venueFilter, cityFilter, dateFrom, dateTo].filter(Boolean).length;
   function clearAllFilters() {
     setClubFilter("");
     setLeagueFilter("");
     setVenueFilter("");
+    setCityFilter("");
     setDateFrom("");
     setDateTo("");
     setVisible(PAGE_SIZE);
@@ -64,6 +65,10 @@ export default function TicketsPageClient() {
     () => [...new Set(ticketProducts.map((tk) => tk.competition))].sort((a, b) => a.localeCompare(b)),
     [],
   );
+  const cities = useMemo(
+    () => [...new Set(ticketProducts.map((tk) => tk.city).filter((c): c is string => !!c))].sort((a, b) => a.localeCompare(b)),
+    [],
+  );
   const venues = useMemo(
     () => [...new Set(ticketProducts.map((tk) => tk.venue))].sort((a, b) => a.localeCompare(b)),
     [],
@@ -72,10 +77,11 @@ export default function TicketsPageClient() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     const base = ticketProducts.filter((tk) => {
-      if (q && !`${tk.event} ${tk.competition} ${tk.venue}`.toLowerCase().includes(q)) return false;
+      if (q && !`${tk.event} ${tk.competition} ${tk.venue} ${tk.city ?? ""}`.toLowerCase().includes(q)) return false;
       if (clubFilter && !splitTeams(tk.event).includes(clubFilter)) return false;
       if (leagueFilter && tk.competition !== leagueFilter) return false;
       if (venueFilter && tk.venue !== venueFilter) return false;
+      if (cityFilter && tk.city !== cityFilter) return false;
       if (dateFrom && tk.date < dateFrom) return false;
       if (dateTo && tk.date > dateTo) return false;
       return true;
@@ -84,7 +90,7 @@ export default function TicketsPageClient() {
       const cmp = `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`);
       return sortBy === "dateAsc" ? cmp : -cmp;
     });
-  }, [query, clubFilter, leagueFilter, venueFilter, dateFrom, dateTo, sortBy]);
+  }, [query, clubFilter, leagueFilter, venueFilter, cityFilter, dateFrom, dateTo, sortBy]);
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
@@ -196,6 +202,20 @@ export default function TicketsPageClient() {
             </Chip>
             {clubs.map((c) => (
               <Chip key={c} active={clubFilter === c} onClick={() => { setClubFilter(c); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+                {c}
+              </Chip>
+            ))}
+          </ScrollArrowRow>
+        </div>
+
+        <div className="flex flex-col gap-1.5">
+          <span className="text-xs text-[#675c44]">{t.tickets.cityLabel}:</span>
+          <ScrollArrowRow className="-mx-5 gap-2 px-5">
+            <Chip active={cityFilter === ""} onClick={() => { setCityFilter(""); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
+              {t.search.allCategories}
+            </Chip>
+            {cities.map((c) => (
+              <Chip key={c} active={cityFilter === c} onClick={() => { setCityFilter(c); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
                 {c}
               </Chip>
             ))}

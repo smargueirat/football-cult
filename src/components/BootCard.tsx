@@ -19,7 +19,21 @@ import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 // reusan tal cual -- lo que hacía falta era resolver esos ids también
 // contra bootProducts en los lugares donde se muestran (panel de
 // favoritos, /favoritos, barra de comparar, /comparar), no acá.
-export default function BootCard({ boot, priority = false }: { boot: BootProduct; priority?: boolean }) {
+// colorLabel/colorHex vienen de quien ya tiene bootColorKey (SearchExplorer):
+// importar ese mapa acá metería ~600 KB de JSON en cada página con una
+// BootCard. Color = dominante real de la foto, para distinguir a simple
+// vista colorways del mismo modelo (mismo nombre, distinto color).
+export default function BootCard({
+  boot,
+  priority = false,
+  colorLabel,
+  colorHex,
+}: {
+  boot: BootProduct;
+  priority?: boolean;
+  colorLabel?: string;
+  colorHex?: string;
+}) {
   const { t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
@@ -153,6 +167,17 @@ export default function BootCard({ boot, priority = false }: { boot: BootProduct
             <>
               {" "}
               · {t.product.sizesRange.replace("{range}", sizeRange)}
+            </>
+          )}
+          {colorLabel && (
+            <>
+              {" "}
+              ·{" "}
+              <span
+                className="mr-0.5 inline-block h-2 w-2 rounded-full border border-black/20 align-middle"
+                style={{ backgroundColor: colorHex }}
+              />
+              {colorLabel}
             </>
           )}
         </p>

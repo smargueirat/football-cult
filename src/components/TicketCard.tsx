@@ -133,7 +133,7 @@ export default function TicketCard({ ticket, priority = false }: { ticket: Ticke
           {ticket.event}
         </h3>
         <p className="text-[10px] text-[#675c44] sm:text-xs">
-          {dateLabel} · {ticket.venue}
+          {dateLabel} · {ticket.venue}{ticket.city ? `, ${ticket.city}` : ""}
         </p>
       </div>
     </Link>
