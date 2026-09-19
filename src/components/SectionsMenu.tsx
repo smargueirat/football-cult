@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { SECTION_PATHS, SECTION_PHOTOS } from "@/lib/sections";
 import { getDisplaySrc } from "@/lib/images";
 
-// Un solo botón "Categorías" con las 9 secciones adentro, en vez de
+// Un solo botón "Categorías" con las 10 secciones adentro, en vez de
 // links sueltos en la barra -- pedido explícito del usuario. Un SOLO
 // mecanismo de apertura (click, con click-afuera para cerrar -- mismo
 // patrón ya probado en el dropdown de "Ordenar" de SearchExplorer), a
@@ -36,6 +36,7 @@ export default function SectionsMenu() {
     { label: t.guantes.navLabel, href: SECTION_PATHS[6], photo: SECTION_PHOTOS[6] },
     { label: t.pelotas.navLabel, href: SECTION_PATHS[7], photo: SECTION_PHOTOS[7] },
     { label: t.tickets.navLabel, href: SECTION_PATHS[8], photo: SECTION_PHOTOS[8] },
+    { label: t.ropa.navLabel, href: SECTION_PATHS[9], photo: SECTION_PHOTOS[9] },
   ].sort((a, b) => (a.label ?? "").localeCompare(b.label ?? ""));
 
   useEffect(() => {

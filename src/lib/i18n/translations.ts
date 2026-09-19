@@ -534,6 +534,12 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Premier League, LaLiga, Champions League y más -- comparado entre 3 regiones reales.",
         cta: "Ver entradas",
       },
+      {
+        eyebrow: "Ropa de fútbol",
+        title: "Para vestir la pasión",
+        subtitle: "Shorts, chaquetas, pantalones y medias comparados entre tiendas reales.",
+        cta: "Ver ropa",
+      },
     ],
     featured: {
       eyebrow: "Joyas del catálogo",
@@ -1005,6 +1011,12 @@ export const translations: Record<Locale, Translations> = {
         title: "Viva a partida ao vivo",
         subtitle: "Premier League, LaLiga, Champions League e mais -- comparado entre 3 regiões reais.",
         cta: "Ver ingressos",
+      },
+      {
+        eyebrow: "Roupas de futebol",
+        title: "Para vestir a paixão",
+        subtitle: "Shorts, jaquetas, calças e meias comparados entre lojas reais.",
+        cta: "Ver roupas",
       },
     ],
     featured: {
@@ -1478,6 +1490,12 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Premier League, LaLiga, Champions League and more -- compared across 3 real regions.",
         cta: "Shop tickets",
       },
+      {
+        eyebrow: "Football apparel",
+        title: "Wear the passion",
+        subtitle: "Shorts, jackets, pants and socks compared across real stores.",
+        cta: "See apparel",
+      },
     ],
     featured: {
       eyebrow: "Catalog gems",
@@ -1950,6 +1968,12 @@ export const translations: Record<Locale, Translations> = {
         subtitle: "Premier League, LaLiga, Ligue des Champions et plus -- comparé entre 3 régions réelles.",
         cta: "Voir les billets",
       },
+      {
+        eyebrow: "Vêtements de football",
+        title: "Pour porter la passion",
+        subtitle: "Shorts, vestes, pantalons et chaussettes comparés entre boutiques réelles.",
+        cta: "Voir les vêtements",
+      },
     ],
     featured: {
       eyebrow: "Pépites du catalogue",
@@ -2421,6 +2445,12 @@ export const translations: Record<Locale, Translations> = {
         title: "Vivi la partita dal vivo",
         subtitle: "Premier League, LaLiga, Champions League e altro -- confrontato tra 3 regioni reali.",
         cta: "Vedi i biglietti",
+      },
+      {
+        eyebrow: "Abbigliamento da calcio",
+        title: "Per vestire la passione",
+        subtitle: "Shorts, giacche, pantaloni e calzettoni confrontati tra negozi reali.",
+        cta: "Vedi abbigliamento",
       },
     ],
     featured: {

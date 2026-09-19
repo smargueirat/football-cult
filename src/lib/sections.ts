@@ -1,11 +1,11 @@
-// Las 9 secciones del catálogo (5 de camisetas + botas + guantes +
-// pelotas + tickets), compartidas entre HeroCarousel y CategorySections
+// Las 10 secciones del catálogo (5 de camisetas + botas + guantes +
+// pelotas + tickets + ropa), compartidas entre HeroCarousel y CategorySections
 // para no repetir las mismas fotos curadas dos veces. El índice de cada
 // entrada coincide con el índice de heroSlides en translations.ts --
 // mismo orden en los dos lugares. Guantes/pelotas/tickets sumados
 // 2026-09-18 (pedido explícito del usuario: "tiene que estar como
 // agregamos las botas... banner principal, secciones, categoría").
-export const SECTION_PATHS = ["/selecciones", "/clubes", "/retro", "/mujer", "/ninos", "/botas", "/guantes", "/pelotas", "/tickets"] as const;
+export const SECTION_PATHS = ["/selecciones", "/clubes", "/retro", "/mujer", "/ninos", "/botas", "/guantes", "/pelotas", "/tickets", "/ropa"] as const;
 
 // Fotos para los círculos de navegación (CategorySections/SectionsMenu):
 // foto real de producto puesta en modelo (fondo de estudio), pensada
@@ -26,6 +26,7 @@ export const SECTION_PHOTOS: string[] = [
   "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101130901_0.webp", // guantes: foto de producto real de nuestro propio catálogo (Uhlsport), fondo blanco de estudio
   "https://cdn.blazimg.com/1800/product/a/d/adidas_ht2452_1_hardware_photography_front_center_view_white.webp", // pelotas: foto de producto real de nuestro propio catálogo (adidas Starlancer Training), fondo blanco de estudio
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/671361_v2.jpg", // tickets: campaña adidas FUSSBALLLIEBE FINALE -- trofeo UEFA Euro + pelota oficial, tribuna real de fondo
+  "https://cdn.blazimg.com/1800/product/n/i/nike_dj7745-608-phsfm001_new.webp", // ropa: foto de producto real de nuestro propio catálogo (short + medias Nike de Liverpool puestos), fondo blanco de estudio
 ];
 
 // Fotos anchas de campaña real de prensa oficial (adidas news /
@@ -83,6 +84,7 @@ export const HERO_PHOTOS: string[] = [
   SECTION_PHOTOS[6],
   SECTION_PHOTOS[7],
   SECTION_PHOTOS[8],
+  SECTION_PHOTOS[9],
 ];
 
 // Bug real, encontrado inspeccionando el render en vivo (no a ojo): en
@@ -106,7 +108,7 @@ export const HERO_PHOTOS: string[] = [
 // sobrio que las fotos de campaña, pero no arriesga un recorte roto sin
 // poder probarlo en vivo antes de publicarlo (sin datos de que el
 // usuario ya vio y aprobó esto, a diferencia de las 6 fotos de arriba).
-export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "cover", "cover", "cover", "contain", "contain", "cover"];
+export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cover", "cover", "cover", "cover", "contain", "contain", "cover", "contain"];
 
 // object-position por foto cuando fit=="cover" -- la mayoría centradas
 // arriba (object-top), que es donde vive la cara/torso en las fotos de
@@ -126,7 +128,7 @@ export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cov
 // banner) con el trofeo+pelota en el medio vertical, ni arriba ni
 // abajo del todo -- "50% 40%" deja algo de margen para el degradé
 // oscuro de abajo sin cortar el trofeo por arriba.
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%", "center", "center", "50% 40%"];
+export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%", "center", "center", "50% 40%", "center"];
 
 // Transform extra (solo Botas): pedido explícito del usuario -- quería
 // ver más de las dos botas, no sólo la suela asomando en el borde del
@@ -150,6 +152,7 @@ export const SECTION_HERO_TRANSFORM: (string | undefined)[] = [
   undefined,
   undefined,
   "scale(1.2) translateX(8%)",
+  undefined,
   undefined,
   undefined,
   undefined,
