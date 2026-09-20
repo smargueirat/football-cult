@@ -2326,3 +2326,84 @@ listings' photos are swapped relative to their titles. The $28.98 template
 seller again produced 6 of 14 eBay season conflicts. CSV-feed conflicts: 4 exact
 duplicates by style code/image, noruega 2025 and InterStore 25/26 (older-stock,
 6th pass), Juventus Tiro 25 black LS (colorway variant, season-notation mismatch).
+
+## Daily pass (2026-09-20) -- a handball shirt on a football key, and an AI-generated listing photo
+
+All 14 Awin jersey feeds + the 5 Rakuten Brazil stores + one `ebay_mine_cycle.py`
+batch (cycle 3 at 300/384, 60 teams newly completed, **zero 429s**). Soicos
+skipped again -- no `claude-in-chrome`. Umbro (MID 41001) still absent from the
+Rakuten FTP listing (6th pass running). **Zero new products from every CSV feed**;
+19 new products from eBay (1 current, 0 kids, 18 retro), plus 1 bad product
+*deleted* from the catalog. `tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**A HANDBALL shirt passed every filter on `francia|third`.** Sport is Good ES/FR
+both offered "Camiseta Tercera Francia 2026/27" (adidas KG7525, pink) -- it is
+the **FFHandball** shirt: rooster-head crest over "FRANCE" with the world-title
+stars, Caisse d'Epargne sponsor, adidas supplier. France *football* is Nike with
+the FFF shield crest. Nothing in the title says handball, so this is the Scotland-
+rugby class exactly; blocklisted by style code (`kg7525`). **The kit supplier is
+the fastest tell for a national team** -- a country whose football federation is
+signed to brand A showing up in a brand-B shirt is almost always another sport's
+federation, not a football kit.
+
+**And the same class was already sitting in the catalog.** `francia-third-2026`'s
+only offer was a **PSG** third (Dembele #10, PSG crest inside the number, Ligue 1
+champion patch, $250, grey-wood-table reseller) titled "...France PSG". A product
+whose sole offer is the wrong team is not repairable -- deleted the block, no
+`PRODUCT_ID_ALIASES` entry (deleted-because-it-should-never-have-existed, per the
+id-stability rule). The very same listing came back in today's eBay picks, which
+is how it was found: **when a new pick is a false positive, grep the catalog for
+an older one of the same class** (the 2026-09-10 rule) -- here the pick and the
+bad product were literally the same eBay item id.
+
+**New false-positive class: the listing photo is AI-generated.** `flamengo|home`
+"2026/27" at $49.90 -- crest right, colours right, adidas right, but the adidas
+wordmark is garbled, the neck-label text is mush, and the shirt floats with an
+impossible shadow. Nothing in the *metadata* is wrong; only opening the photo
+catches it. Expect more of these.
+
+**Wrong item type, twice, both adidas Originals.** `manutd|goalkeeper` "2025/26
+green JP3055" is the Originals terrace tee (trefoil logo, Snapdragon print), and
+`japon|prematch` is an Originals black/white JFA lifestyle tee. **A trefoil logo
+means Originals means lifestyle**, never a match/GK/pre-match jersey -- a cheap
+check worth running before opening the photo.
+
+`team_collision_scan.py` earned its keep again: 5 of 8 eBay current NEW picks
+(Club America under `israel` -- the Israel Reyes first-name class *again*, a
+Jordan-brand Brazil GK under `jordania`, River Plate under `argentina`, Celtic
+under `escocia`, Colo-Colo under `chile`), 23 of 59 retro NEW, and 22 of 350 retro
+merges. **It still misses club names that have no `TEAM_PATTERNS` entry** -- eight
+more retro drops were found only by reading the titles (Juventus/Tevez under
+`argentina`, Celtic + Rangers under `escocia`, Emelec under `ecuador`,
+Grasshoppers under `suiza`, Dynamo Kiev under `ucrania`, Vitoria under `brasil`,
+Spain/Busquets under `marruecos`). Run the scan, then still read the list.
+
+Other drops: the $28.98 template seller produced 11 of 27 current-pick season
+conflicts (same one-title-per-team+type factory as 2026-09-18) plus `saopaulo|third`;
+Chelsea "Home Kit 2026-2027" is the retro-crest blue/yellow collared reissue;
+`turquia|away` is Turkiye's older white HOME kit on the artificial-grass replica
+backdrop; `iraq|third` is a real JAKO design at $28.30 on the metal-grid replica
+backdrop; `alemania|away|1954` is the **2026** away shirt whose "1954" is a
+heritage reference `detect_season()` read as the season; `australia|home|1998/00`
+is "Boys Size 8" (kids); `penarol|home|2024` uses a **footyheadlines.com watermarked
+press render** as its listing photo -- real kit, dropship seller. 28 `\bretro\b`-
+titled reproductions dropped across the retro sets (5 new + 23 merge).
+
+The 2026-09-19 bare-`YYYY` sibling check caught 5 more, 2 of which were *also*
+wrong-team, so **run the wrong-team pass before the sibling merge** or you will
+merge a Spain shirt into `marruecos-retro-202223-away`.
+
+All 9 CSV-feed season conflicts were noise: 3 exact duplicates already on file
+(same ForumSport image id, same BSTN style code, same AdidasPT `p=` link), 2
+adidas Tiro 25 *colorway* variants (Juventus turquoise KB1931 vs the KB9810/JN7454
+already on file -- the 2026-09-19 colorway class), `noruega|home` 2025 (7th pass)
+and `internacional|home` 25/26 (7th pass) older stock, and the France handball
+shirt above. `ebay_check_stale.py`: 45 of 200 (22.5%), the highest rate yet.
+DecathlonIE and ProSoccer genuine zeros as always (DecathlonIE's adult club shirts
+are still 23/24-24/25, with `Fashion:size` and `merchant_category` reading fine).
+
+**Kids offers are never refreshed.** `refresh.py`'s `block_key()` returns `None`
+for any block with `ageGroup: "kids"`, and `gen_kids_teams.py` only creates *new*
+products -- so an existing kids product's price goes stale forever. All 122 of
+this pass's kids picks matched an existing `{team}-{type}-kids` id, so zero were
+actionable and nothing was lost today, but this is a real gap worth closing.

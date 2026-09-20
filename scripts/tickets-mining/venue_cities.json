@@ -422,6 +422,7 @@
   "desc": "multisport stadium located in Reggio Emilia, Italy",
   "qid": "Q1887221"
  },
+ "MATRADE Loftus Road": null,
  "MDCC Arena": null,
  "MKM Stadium": {
   "city": "Kingston upon Hull",
@@ -472,6 +473,7 @@
  "Mestalla": null,
  "Millerntor-Stadion": null,
  "Molineux": null,
+ "Molineux Stadium": null,
  "Montilivi": {
   "city": "Girona",
   "desc": "football stadium in Girona, Spain",
@@ -530,6 +532,7 @@
   "qid": "Q619558"
  },
  "Pride Park Stadium": null,
+ "ProAmpac Stadium": null,
  "Puskas Arena": {
   "city": "Budapest",
   "desc": "association football stadium in Budapest, Hungary, inaugurated in November 2019",
@@ -621,6 +624,7 @@
   "qid": "Q159848"
  },
  "St Andrews": null,
+ "St Andrew’s @ Knighthead Park": null,
  "St James Park": {
   "city": "Newcastle upon Tyne",
   "desc": "football stadium in Newcastle upon Tyne, England, UK",
@@ -766,6 +770,7 @@
  },
  "Stockhorn Arena": null,
  "Stozice Stadium": null,
+ "Swansea.com Stadium": null,
  "Swissporarena": {
   "city": "Lucerne",
   "desc": "stadium in Lucerne",

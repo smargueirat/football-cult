@@ -668,7 +668,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
-        priceMax: 72.0,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104838848&a=3013769&m=65912",
@@ -680,7 +680,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "8.5", price: 48.0, url: "https://www.awin1.com/pclick.php?p=41104838849&a=3013769&m=65912" },
           { size: "9", price: 63.0, url: "https://www.awin1.com/pclick.php?p=41104838850&a=3013769&m=65912" },
           { size: "9.5", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41104838851&a=3013769&m=65912" },
-          { size: "10", price: 72.0, url: "https://www.awin1.com/pclick.php?p=41104838852&a=3013769&m=65912" },
+          { size: "10", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41104838852&a=3013769&m=65912" },
           { size: "10.5", price: 71.0, url: "https://www.awin1.com/pclick.php?p=44645281997&a=3013769&m=65912" },
           { size: "11", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41104838854&a=3013769&m=65912" },
         ],
@@ -812,7 +812,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.0,
+        price: 21.0,
         priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
@@ -820,24 +820,18 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hy4075_noir_1.webp&feedId=89032&k=9dee662e9702c96f1993dfa0a26fd9654dc7a73d",
         sizes: ["9.5", "11"],
         sizePrices: [
-          { size: "9.5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529356984&a=3013769&m=65912" },
+          { size: "9.5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529356984&a=3013769&m=65912" },
           { size: "11", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529356986&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreES",
-        price: 72.0,
-        priceMax: 90.0,
+        price: 90.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304852764&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45304852763&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=3c50eecc90e293ac0d93a087a1accf8ffb7a64da",
-        sizes: ["8", "8.5", "9"],
-        sizePrices: [
-          { size: "8", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45304852765&a=3013769&m=65912" },
-          { size: "8.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45304852764&a=3013769&m=65912" },
-          { size: "9", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45304852763&a=3013769&m=65912" },
-        ],
+        sizes: ["8", "9"],
       },
     ],
   },
@@ -866,7 +860,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.0,
+        price: 36.0,
         priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
@@ -878,7 +872,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "8", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45184717500&a=3013769&m=65912" },
           { size: "8.5", price: 47.0, url: "https://www.awin1.com/pclick.php?p=41104840333&a=3013769&m=65912" },
           { size: "9", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44645282354&a=3013769&m=65912" },
-          { size: "9.5", price: 35.0, url: "https://www.awin1.com/pclick.php?p=41104840335&a=3013769&m=65912" },
+          { size: "9.5", price: 36.0, url: "https://www.awin1.com/pclick.php?p=41104840335&a=3013769&m=65912" },
           { size: "10", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44645282355&a=3013769&m=65912" },
           { size: "10.5", price: 60.0, url: "https://www.awin1.com/pclick.php?p=42529356995&a=3013769&m=65912" },
           { size: "11", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44992207148&a=3013769&m=65912" },
@@ -1066,7 +1060,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         sizePrices: [
           { size: "9", price: 58.0, url: "https://www.awin1.com/pclick.php?p=41840083974&a=3013769&m=65912" },
           { size: "10.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529796805&a=3013769&m=65912" },
-          { size: "11", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529796802&a=3013769&m=65912" },
+          { size: "11", price: 51.0, url: "https://www.awin1.com/pclick.php?p=42529796802&a=3013769&m=65912" },
           { size: "11.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529796803&a=3013769&m=65912" },
         ],
       },
@@ -1148,7 +1142,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.0,
+        price: 48.0,
         priceMax: 91.74,
         shipping: 7.99,
         currency: "EUR",
@@ -1156,7 +1150,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401181.121_0.webp&feedId=89032&k=608abd8ce1404eef7212cc1434d26d4b3fac0413",
         sizes: ["7", "8", "9", "10", "11", "12"],
         sizePrices: [
-          { size: "7", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42529441706&a=3013769&m=65912" },
+          { size: "7", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529441706&a=3013769&m=65912" },
           { size: "8", price: 91.74, url: "https://www.awin1.com/pclick.php?p=42529441707&a=3013769&m=65912" },
           { size: "9", price: 91.74, url: "https://www.awin1.com/pclick.php?p=37923975939&a=3013769&m=65912" },
           { size: "10", price: 91.74, url: "https://www.awin1.com/pclick.php?p=42529441708&a=3013769&m=65912" },
@@ -1214,7 +1208,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.0,
+        price: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529441714&a=3013769&m=65912",
@@ -1378,7 +1372,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.0,
+        price: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529441724&a=3013769&m=65912",
@@ -1405,11 +1399,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 41.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42553066811&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401195.201_0.webp&feedId=89032&k=90dce74027aa63c322f61d9d8735b1c7f6c24834",
         sizes: ["8", "11", "12"],
+        sizePrices: [
+          { size: "8", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42553066811&a=3013769&m=65912" },
+          { size: "11", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42553066812&a=3013769&m=65912" },
+          { size: "12", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42553066813&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -1490,7 +1490,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.0,
+        price: 50.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104842475&a=3013769&m=65912",
@@ -1814,7 +1814,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.0,
+        price: 62.0,
         priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
@@ -1825,7 +1825,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "7.5", price: 68.0, url: "https://www.awin1.com/pclick.php?p=42529517134&a=3013769&m=65912" },
           { size: "8", price: 71.0, url: "https://www.awin1.com/pclick.php?p=42529517135&a=3013769&m=65912" },
           { size: "10", price: 71.0, url: "https://www.awin1.com/pclick.php?p=42529517139&a=3013769&m=65912" },
-          { size: "11", price: 61.0, url: "https://www.awin1.com/pclick.php?p=42529517141&a=3013769&m=65912" },
+          { size: "11", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42529517141&a=3013769&m=65912" },
         ],
       },
       {
@@ -1848,20 +1848,33 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 60.0,
+        priceMax: 61.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41104844067&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41104844068&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101131401_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=418bc775522c76f9ad1ff9874765f11546ba4086",
         sizes: ["7.5", "8"],
+        sizePrices: [
+          { size: "7.5", price: 61.0, url: "https://www.awin1.com/pclick.php?p=41104844067&a=3013769&m=65912" },
+          { size: "8", price: 60.0, url: "https://www.awin1.com/pclick.php?p=41104844068&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreES",
-        price: 82.0,
+        price: 76.0,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41554274494&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41554274493&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=6707a1a59c3f9ee98698928377d3178d54314394",
-        sizes: ["9"],
+        sizes: ["7.5", "8", "8.5", "9", "9.5"],
+        sizePrices: [
+          { size: "7.5", price: 77.0, url: "https://www.awin1.com/pclick.php?p=41554274491&a=3013769&m=65912" },
+          { size: "8", price: 84.0, url: "https://www.awin1.com/pclick.php?p=41554274492&a=3013769&m=65912" },
+          { size: "8.5", price: 76.0, url: "https://www.awin1.com/pclick.php?p=41554274493&a=3013769&m=65912" },
+          { size: "9", price: 83.0, url: "https://www.awin1.com/pclick.php?p=41554274494&a=3013769&m=65912" },
+          { size: "9.5", price: 76.0, url: "https://www.awin1.com/pclick.php?p=41554274495&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -2016,7 +2029,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.0,
+        price: 24.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529540816&a=3013769&m=65912",
@@ -2039,11 +2052,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41332002573&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq4026_6_hardware_on_model_front_view_white.webp&feedId=89032&k=5cb5265cdbbaced23bd8371e61dcb60812c5a66c",
-        sizes: ["8", "8.5", "9", "9.5", "10"],
+        sizes: ["8", "8.5", "9.5", "10"],
         sizePrices: [
           { size: "8", price: 28.0, url: "https://www.awin1.com/pclick.php?p=41332002452&a=3013769&m=65912" },
           { size: "8.5", price: 28.0, url: "https://www.awin1.com/pclick.php?p=41332002453&a=3013769&m=65912" },
-          { size: "9", price: 28.0, url: "https://www.awin1.com/pclick.php?p=41332002454&a=3013769&m=65912" },
           { size: "9.5", price: 28.0, url: "https://www.awin1.com/pclick.php?p=41332002455&a=3013769&m=65912" },
           { size: "10", price: 18.75, url: "https://www.awin1.com/pclick.php?p=41332002573&a=3013769&m=65912" },
         ],
@@ -2626,14 +2638,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp&feedId=89032&k=165d4ca955771e14ca01ab520996c294668996df",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
+        sizes: ["7", "8", "8.5", "9", "9.5"],
         sizePrices: [
           { size: "7", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912" },
           { size: "8", price: 47.42, url: "https://www.awin1.com/pclick.php?p=45047894156&a=3013769&m=65912" },
           { size: "8.5", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894157&a=3013769&m=65912" },
           { size: "9", price: 45.45, url: "https://www.awin1.com/pclick.php?p=45047894158&a=3013769&m=65912" },
           { size: "9.5", price: 48.12, url: "https://www.awin1.com/pclick.php?p=45242386043&a=3013769&m=65912" },
-          { size: "10", price: 48.12, url: "https://www.awin1.com/pclick.php?p=45047894159&a=3013769&m=65912" },
         ],
       },
       {
@@ -2915,7 +2926,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44212468252&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401477.601_rojo-negro_1.webp&feedId=89032&k=48b8d21210733da81ffe0ceb38e8a02b5f2ec739",
-        sizes: ["7"],
+        sizes: ["7", "12"],
       },
     ],
   },
@@ -3068,6 +3079,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "8", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44212468383&a=3013769&m=65912" },
           { size: "9", price: 31.0, url: "https://www.awin1.com/pclick.php?p=44216759372&a=3013769&m=65912" },
         ],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-principiantes-adidas-predator-pro-rose",
+    brand: "Adidas",
+    model: "Guantes de portero principiantes adidas Predator Pro - Rose",
+    colour: "Rose",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 130.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42730256140&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_is7586_1_hardware_photography_front_center_view_white-nw112824.webp&feedId=89032&k=caca6693d1bc4f3995f4f7a4951a570f6a01020c",
+        sizes: ["7.5"],
       },
     ],
   },
@@ -3875,7 +3903,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745910823&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hf0546-010_black-black-black_1.webp&feedId=89032&k=304c05b0d6c798f100323837f2efaef82a949ace",
-        sizes: ["M", "S", "L"],
+        sizes: ["M", "L", "S"],
       },
       {
         store: "FootStoreES",
@@ -3909,7 +3937,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348248652&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp&feedId=89032&k=3ee8cde8ebcde003d05179b7ffaf3ebc21c6f149",
-        sizes: ["XL", "L"],
+        sizes: ["L", "XL"],
       },
       {
         store: "FootStoreES",
@@ -3986,7 +4014,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.0,
+        price: 19.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45028630360&a=3013769&m=65912",
@@ -4080,6 +4108,9 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-prediction-soft-flex-frame-bleu",
     brand: "uhlsport",
@@ -4097,9 +4128,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-prediction-soft-pro-bleu",
     brand: "uhlsport",
@@ -4164,7 +4192,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748510&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_arri1984_blue-black_1.webp&feedId=89032&k=6a1945a3e01e45cd16e29322af1fe5201a103595",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7", "8", "10"],
       },
     ],
   },
@@ -4261,7 +4289,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.0,
+        price: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630371721&a=3013769&m=65912",
@@ -4504,7 +4532,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.0,
+        price: 27.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748582&a=3013769&m=65912",
@@ -4561,7 +4589,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.0,
+        price: 95.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529750186&a=3013769&m=65912",
@@ -4651,7 +4679,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45010073239&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5570235-7075_blck-gold-firy-red_1.webp&feedId=89032&k=46e6a7806bf7bad1d0e694bae4960a7c44409b30",
-        sizes: ["8", "8.5", "9", "10.5"],
+        sizes: ["8", "8.5"],
       },
     ],
   },
@@ -4714,7 +4742,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.0,
+        price: 51.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41695387168&a=3013769&m=65912",
@@ -4740,7 +4768,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.0,
+        price: 51.0,
         priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
@@ -4752,7 +4780,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "7.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44914972108&a=3013769&m=65912" },
           { size: "9", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44914972109&a=3013769&m=65912" },
           { size: "10", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42529796795&a=3013769&m=65912" },
-          { size: "10.5", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529796796&a=3013769&m=65912" },
+          { size: "10.5", price: 51.0, url: "https://www.awin1.com/pclick.php?p=42529796796&a=3013769&m=65912" },
           { size: "11.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529796794&a=3013769&m=65912" },
         ],
       },
@@ -4885,7 +4913,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["6", "8", "11"],
         sizePrices: [
           { size: "6", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42529806091&a=3013769&m=65912" },
-          { size: "8", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42529806093&a=3013769&m=65912" },
+          { size: "8", price: 75.0, url: "https://www.awin1.com/pclick.php?p=42529806093&a=3013769&m=65912" },
           { size: "11", price: 75.0, url: "https://www.awin1.com/pclick.php?p=42529806096&a=3013769&m=65912" },
         ],
       },
@@ -5116,9 +5144,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 93.73,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529856150&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46037720621&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Ft%2Fstanno_480245-8940_black-grey-yellow_1.webp&feedId=89032&k=1f2a0f9cf69f51b8493093635ed8d829d8f30625",
-        sizes: ["8", "11"],
+        sizes: ["8", "10", "10.5", "11"],
       },
     ],
   },
@@ -5147,9 +5175,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 31.29,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075007798&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45888241829&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fe%2Fderbystar_f20360_black_1.webp&feedId=89032&k=598b8499fd7e4ac66984de2a3e9a7efb85a751bf",
-        sizes: ["10"],
+        sizes: ["9", "10"],
       },
     ],
   },
@@ -5213,11 +5241,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 46.0,
+        priceMax: 47.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529885401&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529885402&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3794_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=a5e5943e4f8d6ca3757e7485053376c05bb83bcc",
         sizes: ["10.5", "11", "11.5"],
+        sizePrices: [
+          { size: "10.5", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42529885401&a=3013769&m=65912" },
+          { size: "11", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42529885402&a=3013769&m=65912" },
+          { size: "11.5", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42529885403&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -5243,7 +5277,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "8.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=42529885408&a=3013769&m=65912" },
           { size: "9", price: 94.0, url: "https://www.awin1.com/pclick.php?p=42529885409&a=3013769&m=65912" },
           { size: "9.5", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42529885410&a=3013769&m=65912" },
-          { size: "11", price: 81.0, url: "https://www.awin1.com/pclick.php?p=42529885413&a=3013769&m=65912" },
+          { size: "11", price: 82.0, url: "https://www.awin1.com/pclick.php?p=42529885413&a=3013769&m=65912" },
         ],
       },
     ],
@@ -5269,7 +5303,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "8", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529885418&a=3013769&m=65912" },
           { size: "8.5", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529885419&a=3013769&m=65912" },
           { size: "9.5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529885421&a=3013769&m=65912" },
-          { size: "10", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529885422&a=3013769&m=65912" },
+          { size: "10", price: 27.0, url: "https://www.awin1.com/pclick.php?p=42529885422&a=3013769&m=65912" },
           { size: "10.5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529885423&a=3013769&m=65912" },
         ],
       },
@@ -5292,18 +5326,18 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.0,
-        priceMax: 48.0,
+        price: 36.0,
+        priceMax: 49.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529885436&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3803_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=93befd6f44ac6017d8b532a4d4b9bd42bbeb38a0",
         sizes: ["9.5", "10.5", "11", "11.5"],
         sizePrices: [
-          { size: "9.5", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529885432&a=3013769&m=65912" },
+          { size: "9.5", price: 49.0, url: "https://www.awin1.com/pclick.php?p=42529885432&a=3013769&m=65912" },
           { size: "10.5", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529885434&a=3013769&m=65912" },
           { size: "11", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529885435&a=3013769&m=65912" },
-          { size: "11.5", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529885436&a=3013769&m=65912" },
+          { size: "11.5", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42529885436&a=3013769&m=65912" },
         ],
       },
       {
@@ -5394,7 +5428,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 26.87,
-        priceMax: 50.0,
+        priceMax: 51.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552705757&a=3013769&m=65912",
@@ -5402,8 +5436,8 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["8.5", "9", "9.5", "10"],
         sizePrices: [
           { size: "8.5", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42630377855&a=3013769&m=65912" },
-          { size: "9", price: 50.0, url: "https://www.awin1.com/pclick.php?p=44944605846&a=3013769&m=65912" },
-          { size: "9.5", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42630377857&a=3013769&m=65912" },
+          { size: "9", price: 51.0, url: "https://www.awin1.com/pclick.php?p=44944605846&a=3013769&m=65912" },
+          { size: "9.5", price: 51.0, url: "https://www.awin1.com/pclick.php?p=42630377857&a=3013769&m=65912" },
           { size: "10", price: 26.87, url: "https://www.awin1.com/pclick.php?p=44552705757&a=3013769&m=65912" },
         ],
       },
@@ -5452,7 +5486,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["8.5", "9", "9.5", "10", "10.5", "11", "11.5"],
         sizePrices: [
           { size: "8.5", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630378051&a=3013769&m=65912" },
-          { size: "9", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42721414408&a=3013769&m=65912" },
+          { size: "9", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42721414408&a=3013769&m=65912" },
           { size: "9.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42630378050&a=3013769&m=65912" },
           { size: "10", price: 58.0, url: "https://www.awin1.com/pclick.php?p=45254167605&a=3013769&m=65912" },
           { size: "10.5", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42721414406&a=3013769&m=65912" },
@@ -5536,7 +5570,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 57.0,
-        priceMax: 86.0,
+        priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630379208&a=3013769&m=65912",
@@ -5544,7 +5578,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["7.5", "11.5", "12"],
         sizePrices: [
           { size: "7.5", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630379208&a=3013769&m=65912" },
-          { size: "11.5", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42630379216&a=3013769&m=65912" },
+          { size: "11.5", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379216&a=3013769&m=65912" },
           { size: "12", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42630379217&a=3013769&m=65912" },
         ],
       },
@@ -5787,14 +5821,14 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 73.83,
-        priceMax: 98.0,
+        priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137401.webp&feedId=89032&k=786074c4fa5ad6f8722d50b93fce10b5e1d0396f",
         sizes: ["7", "12"],
         sizePrices: [
-          { size: "7", price: 98.0, url: "https://www.awin1.com/pclick.php?p=41670116770&a=3013769&m=65912" },
+          { size: "7", price: 99.0, url: "https://www.awin1.com/pclick.php?p=41670116770&a=3013769&m=65912" },
           { size: "12", price: 73.83, url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912" },
         ],
       },
@@ -5836,13 +5870,12 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529973939&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101138101.webp&feedId=89032&k=ce4a444811e560c653a45f2fa48967dc1966cd29",
-        sizes: ["6.5", "7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+        sizes: ["6.5", "7", "7.5", "8", "9", "9.5", "10", "10.5", "11"],
         sizePrices: [
           { size: "6.5", price: 30.85, url: "https://www.awin1.com/pclick.php?p=42529973939&a=3013769&m=65912" },
           { size: "7", price: 30.85, url: "https://www.awin1.com/pclick.php?p=41670116788&a=3013769&m=65912" },
           { size: "7.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116789&a=3013769&m=65912" },
           { size: "8", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116790&a=3013769&m=65912" },
-          { size: "8.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116791&a=3013769&m=65912" },
           { size: "9", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116792&a=3013769&m=65912" },
           { size: "9.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116793&a=3013769&m=65912" },
           { size: "10", price: 30.85, url: "https://www.awin1.com/pclick.php?p=41670116794&a=3013769&m=65912" },
@@ -5898,17 +5931,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 83.39,
-        priceMax: 130.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41747473629&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137201.webp&feedId=89032&k=54f1df359641d05f926d7a9465e8f4bddc3ea3ef",
-        sizes: ["7", "7.5", "12"],
-        sizePrices: [
-          { size: "7", price: 83.39, url: "https://www.awin1.com/pclick.php?p=41747473629&a=3013769&m=65912" },
-          { size: "7.5", price: 130.0, url: "https://www.awin1.com/pclick.php?p=41747473630&a=3013769&m=65912" },
-          { size: "12", price: 83.39, url: "https://www.awin1.com/pclick.php?p=41747473634&a=3013769&m=65912" },
-        ],
+        sizes: ["7", "12"],
       },
     ],
   },
@@ -6678,11 +6705,16 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 26.0,
+        priceMax: 27.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42576866248&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45270280053&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5355_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=e920db3adb8e45a1a7ae4472bc91a76bd38d2b61",
         sizes: ["9", "10"],
+        sizePrices: [
+          { size: "9", price: 27.0, url: "https://www.awin1.com/pclick.php?p=42576866248&a=3013769&m=65912" },
+          { size: "10", price: 26.0, url: "https://www.awin1.com/pclick.php?p=45270280053&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -6893,26 +6925,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 111.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795371&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795373&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-arpa5610m-blue-1.webp&feedId=89032&k=7721b93d21a047153b97af5015ba2f9f6fac04f8",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-guantes-de-portero-rinat-aries-turf-noir",
-    brand: "Rinat",
-    model: "Guantes de portero Rinat Aries Turf - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795379&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-aeti1094-black-1.webp&feedId=89032&k=d8c504daa18bf7a69ab2486d54c84af7d0575849",
-        sizes: ["9"],
+        sizes: ["7", "8", "9"],
       },
     ],
   },
@@ -6975,7 +6990,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.0,
+        price: 37.0,
         priceMax: 37.95,
         shipping: 7.99,
         currency: "EUR",
@@ -6983,7 +6998,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-asti1094m-black-1.webp&feedId=89032&k=49ea28a7e38b9e8c847493c092aaba508e378612",
         sizes: ["7", "8", "9", "10"],
         sizePrices: [
-          { size: "7", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42964795392&a=3013769&m=65912" },
+          { size: "7", price: 37.0, url: "https://www.awin1.com/pclick.php?p=42964795392&a=3013769&m=65912" },
           { size: "8", price: 37.95, url: "https://www.awin1.com/pclick.php?p=42964795393&a=3013769&m=65912" },
           { size: "9", price: 37.95, url: "https://www.awin1.com/pclick.php?p=42964795394&a=3013769&m=65912" },
           { size: "10", price: 37.95, url: "https://www.awin1.com/pclick.php?p=42964795391&a=3013769&m=65912" },
@@ -7294,7 +7309,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 107.0,
+        price: 108.0,
         priceMax: 109.8,
         shipping: 7.99,
         currency: "EUR",
@@ -7303,7 +7318,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["7", "9"],
         sizePrices: [
           { size: "7", price: 109.8, url: "https://www.awin1.com/pclick.php?p=42964795466&a=3013769&m=65912" },
-          { size: "9", price: 107.0, url: "https://www.awin1.com/pclick.php?p=42964795468&a=3013769&m=65912" },
+          { size: "9", price: 108.0, url: "https://www.awin1.com/pclick.php?p=42964795468&a=3013769&m=65912" },
         ],
       },
     ],
@@ -7541,6 +7556,23 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
+    id: "twofive-guantes-de-portero-twofive-atlanta96-advance-2025-noir",
+    brand: "TwoFive",
+    model: "Guantes de portero TwoFive Atlanta96 Advance 2025 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 35.22,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44023889631&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fw%2Ftwofive-11733-black-1.webp&feedId=89032&k=48eaa12433da67fb80bd959c958ed6963dd5e18f",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
     id: "twofive-guantes-de-portero-twofive-atlanta96-pro-noir",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta96 Pro - Noir",
@@ -7702,19 +7734,12 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.0,
-        priceMax: 96.0,
+        price: 96.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43877230545&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43877230543&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7801.webp&feedId=89032&k=21dd732f17a34e4e10d4d32c565e10bd00c68d84",
         sizes: ["7", "8", "9", "11"],
-        sizePrices: [
-          { size: "7", price: 96.0, url: "https://www.awin1.com/pclick.php?p=43877230543&a=3013769&m=65912" },
-          { size: "8", price: 96.0, url: "https://www.awin1.com/pclick.php?p=43877230544&a=3013769&m=65912" },
-          { size: "9", price: 95.0, url: "https://www.awin1.com/pclick.php?p=43877230545&a=3013769&m=65912" },
-          { size: "11", price: 96.0, url: "https://www.awin1.com/pclick.php?p=43877230547&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -7750,11 +7775,18 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 32.0,
+        priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755752982&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jy6311_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=b1980d18ad92d7b02a3d4eb5e723b2b64fda52a0",
         sizes: ["7", "8", "9", "10"],
+        sizePrices: [
+          { size: "7", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43755752982&a=3013769&m=65912" },
+          { size: "8", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43755752983&a=3013769&m=65912" },
+          { size: "9", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43755752984&a=3013769&m=65912" },
+          { size: "10", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43755752985&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -7775,6 +7807,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-attrakt-advance-finger-support-noir",
     brand: "Reusch",
@@ -7792,9 +7827,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-nc-finger-support-noir",
     brand: "Reusch",
@@ -7860,6 +7892,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45010084750&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670514-4126-sharp-blu-wht-shock-orng-8.webp&feedId=89032&k=f99ad6a5f3da9da2c9dc5fb0937ffa32ff383bc9",
         sizes: ["8", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-supergrip-hn-blanc",
+    brand: "uhlsport",
+    model: "Guantes de portero Uhlsport FM Supergrip+ HN - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 97.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46037731520&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101139601.webp&feedId=89032&k=c36d1a7f0abdfa1714073b438a36959d005d728f",
+        sizes: ["7"],
       },
     ],
   },
@@ -8129,23 +8178,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-guantes-de-portero-rinat-uno-premier-lux-vert",
-    brand: "Rinat",
-    model: "Guantes de portero Rinat Uno Premier Lux - Vert",
-    colour: "Vert",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 74.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44353657890&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat-1unplxpa50-333-219-neon-green-69ca6f2f41b07-1.webp&feedId=89032&k=b64921f1903cf43c7c4125d1c77e7f7d75b08675",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
     id: "twofive-guantes-de-portero-twofive-atlanta-advance-bleu",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta Advance - Bleu",
@@ -8209,6 +8241,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44472588878&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fw%2Ftwofive-13808-pink-pro-69dcf8357f23c-1.webp&feedId=89032&k=c7cacb0991e9b1a04e7d0db9f9565fca439b3cd3",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-guantes-de-portero-twofive-new-york-advance-bleu",
+    brand: "TwoFive",
+    model: "Guantes de portero TwoFive New York Advance - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 34.36,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44480986172&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fw%2Ftwofive-13814-blue-69dcf83b40eec-1.webp&feedId=89032&k=7687daeee6bc0ef2078beac71e257ae6fa52bcc3",
         sizes: ["11"],
       },
     ],
@@ -8359,6 +8408,32 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "reusch-guantes-de-portero-reusch-attrakt-fusion-nc-coupe-du-monde-2026-orange",
+    brand: "Reusch",
+    model: "Guantes de portero Reusch Attrakt Fusion NC Coupe du Monde 2026 - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 100.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45018629041&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670005-2290-orange-blue-6a2bf749df2cb-1.webp&feedId=89032&k=4dc396eb79d061fda41ca8e8c3a63fddc61e8e92",
+        sizes: ["8"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 100.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45020267599&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670005-2290-orange-blue-6a2bf749df2cb-1.webp&feedId=89044&k=4dc396eb79d061fda41ca8e8c3a63fddc61e8e92",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
     id: "reusch-guantes-de-portero-reusch-attrakt-gold-x-evolution-dominik-livakovic-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Gold X Evolution Dominik Livakovic Coupe du Monde 2026 - Orange",
@@ -8444,12 +8519,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 140.0,
+        price: 106.0,
+        priceMax: 140.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914988154&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kv6524_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=8579f3fdc14aa4649497d977cdc1169eced83361",
-        sizes: ["11.5"],
+        sizes: ["6.5", "7.5", "8", "8.5", "9.5", "11", "11.5"],
+        sizePrices: [
+          { size: "6.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44954304067&a=3013769&m=65912" },
+          { size: "7.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44954304068&a=3013769&m=65912" },
+          { size: "8", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44954304069&a=3013769&m=65912" },
+          { size: "8.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988149&a=3013769&m=65912" },
+          { size: "9.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988150&a=3013769&m=65912" },
+          { size: "11", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988153&a=3013769&m=65912" },
+          { size: "11.5", price: 106.0, url: "https://www.awin1.com/pclick.php?p=44914988154&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -8530,7 +8615,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "9", price: 86.0, url: "https://www.awin1.com/pclick.php?p=45075022545&a=3013769&m=65912" },
           { size: "9.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45075022546&a=3013769&m=65912" },
           { size: "10", price: 86.0, url: "https://www.awin1.com/pclick.php?p=45075022547&a=3013769&m=65912" },
-          { size: "10.5", price: 86.0, url: "https://www.awin1.com/pclick.php?p=45819221860&a=3013769&m=65912" },
+          { size: "10.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45819221860&a=3013769&m=65912" },
         ],
       },
     ],
@@ -8574,7 +8659,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075022551&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp&feedId=89032&k=d45e377c2caf7ffc50ea433b4361d6ad907348a3",
-        sizes: ["7", "7.5", "8", "9"],
+        sizes: ["7", "7.5", "8", "8.5", "9"],
       },
       {
         store: "SportIsGoodES",
@@ -8622,21 +8707,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 128.0,
-        priceMax: 136.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075022563&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp&feedId=89032&k=c6e8f6d1627ef55bb8114549e0783745a2d1b227",
-        sizes: ["7.5", "8", "9", "9.5", "10", "11", "12"],
-        sizePrices: [
-          { size: "7.5", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45075022563&a=3013769&m=65912" },
-          { size: "8", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45075022564&a=3013769&m=65912" },
-          { size: "9", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45075022566&a=3013769&m=65912" },
-          { size: "9.5", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45075022567&a=3013769&m=65912" },
-          { size: "10", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45075022568&a=3013769&m=65912" },
-          { size: "11", price: 136.0, url: "https://www.awin1.com/pclick.php?p=45075022570&a=3013769&m=65912" },
-          { size: "12", price: 128.0, url: "https://www.awin1.com/pclick.php?p=45888246135&a=3013769&m=65912" },
-        ],
+        sizes: ["7.5", "8", "9", "9.5", "10", "10.5", "11", "12"],
       },
       {
         store: "SportIsGoodES",
@@ -8674,7 +8749,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 110.0,
+        price: 88.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45597128330&a=3013769&m=65912",
@@ -8731,6 +8806,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45698873943&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141601-fluo-red-white-fluo-yellow-6a3e9802b335f-1.webp&feedId=89032&k=f0f9b40f9ad26de0fc90fff9373c0dbbb68e2e26",
         sizes: ["9"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-ultragrip-rc-rouge",
+    brand: "uhlsport",
+    model: "Guantes de portero Uhlsport FM ZNE Ultragrip RC - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 136.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45888246257&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101140701-fluo-red-white-fluo-yellow-6a3e9801cda39-1.webp&feedId=89032&k=f0c88918a3765ed3cd270dc291751d85a0311af3",
+        sizes: ["10"],
       },
     ],
   },
@@ -10060,8 +10152,8 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 46.0,
-        priceMax: 73.0,
+        price: 47.0,
+        priceMax: 72.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron",
@@ -10069,12 +10161,12 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
         sizePrices: [
           { size: "7.5", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "8", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "8.5", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "8", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "8.5", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "9", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "9.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "10", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
-          { size: "10.5", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "9.5", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "10", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
+          { size: "10.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "11", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
         ],
       },
@@ -10088,7 +10180,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 95.0,
+        price: 94.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhy4074-gants-de-gardien-adidas-predator-competition-noir-noir-noir",
@@ -10266,7 +10358,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizePrices: [
           { size: "7", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
           { size: "8", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
-          { size: "8.5", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
+          { size: "8.5", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
           { size: "9", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
           { size: "9.5", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
           { size: "10", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5612-gants-de-gardien-adidas-tiro-league-noir" },
@@ -10298,27 +10390,12 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 72.0,
-        priceMax: 90.0,
+        price: 90.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8", "8.5", "9"],
-        sizePrices: [
-          { size: "8", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-          { size: "8.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-          { size: "9", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 72.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkf9621-gants-de-gardien-adidas-predator-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_kf9621_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8.5"],
+        sizes: ["8", "9"],
       },
     ],
   },
@@ -10493,14 +10570,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 42.0,
-        priceMax: 57.0,
+        priceMax: 58.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jh3820_1_hardware_photography_front_center_view_white.jpg",
         sizes: ["9", "10.5", "11", "11.5"],
         sizePrices: [
-          { size: "9", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
+          { size: "9", price: 58.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
           { size: "10.5", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
           { size: "11", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
           { size: "11.5", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3820-gants-de-gardien-adidas-predator-league-white" },
@@ -10647,7 +10724,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 52.82,
-        priceMax: 56.0,
+        priceMax: 55.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange",
@@ -10656,13 +10733,13 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizePrices: [
           { size: "9", price: 52.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange" },
           { size: "10", price: 52.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange" },
-          { size: "11", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange" },
+          { size: "11", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange" },
           { size: "12", price: 52.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-308-gants-de-gardien-joma-gk-panther-bleu-orange" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 49.0,
+        price: 50.0,
         priceMax: 52.82,
         shipping: 6.99,
         currency: "EUR",
@@ -10670,7 +10747,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma_401182.317_0.jpg",
         sizes: ["7", "8", "9", "10", "11", "12"],
         sizePrices: [
-          { size: "7", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-317-gants-de-gardien-joma-gk-panther-bleu-vert-jaune" },
+          { size: "7", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-317-gants-de-gardien-joma-gk-panther-bleu-vert-jaune" },
           { size: "8", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-317-gants-de-gardien-joma-gk-panther-bleu-vert-jaune" },
           { size: "9", price: 52.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-317-gants-de-gardien-joma-gk-panther-bleu-vert-jaune" },
           { size: "10", price: 52.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401182-317-gants-de-gardien-joma-gk-panther-bleu-vert-jaune" },
@@ -10742,14 +10819,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 46.9,
-        priceMax: 50.0,
+        priceMax: 49.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401183-220-gants-de-gardien-joma-brave-multicolore",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_401183.220_0.webp",
         sizes: ["9", "12"],
         sizePrices: [
-          { size: "9", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401183-220-gants-de-gardien-joma-brave-multicolore" },
+          { size: "9", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401183-220-gants-de-gardien-joma-brave-multicolore" },
           { size: "12", price: 46.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401183-220-gants-de-gardien-joma-brave-multicolore" },
         ],
       },
@@ -10764,11 +10841,17 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 42.0,
+        priceMax: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-201-gants-de-gardien-joma-premier-blanc-noir-corail-fluor",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma_401195.201_0.jpg",
         sizes: ["8", "11", "12"],
+        sizePrices: [
+          { size: "8", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-201-gants-de-gardien-joma-premier-blanc-noir-corail-fluor" },
+          { size: "11", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-201-gants-de-gardien-joma-premier-blanc-noir-corail-fluor" },
+          { size: "12", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-201-gants-de-gardien-joma-premier-blanc-noir-corail-fluor" },
+        ],
       },
     ],
   },
@@ -10780,7 +10863,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 51.0,
+        price: 50.0,
         priceMax: 56.37,
         shipping: 6.99,
         currency: "EUR",
@@ -10788,10 +10871,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma_401195.301_0.jpg",
         sizes: ["8", "9", "10", "11", "12"],
         sizePrices: [
-          { size: "8", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
+          { size: "8", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
           { size: "9", price: 56.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
           { size: "10", price: 56.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
-          { size: "11", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
+          { size: "11", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
           { size: "12", price: 56.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401195-301-gants-de-gardien-joma-premier-bleu-noir-jaune-fluo" },
         ],
       },
@@ -10848,7 +10931,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 51.0,
+        price: 50.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101130801-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir-rouge-blanc",
@@ -10924,14 +11007,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.27,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101131801_0.webp",
         sizes: ["7.5", "8.5", "9.5"],
         sizePrices: [
-          { size: "7.5", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
+          { size: "7.5", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
           { size: "8.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
           { size: "9.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
         ],
@@ -11169,21 +11252,34 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 61.0,
+        price: 59.0,
+        priceMax: 60.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131401-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101131401_bleu-pacifique-vert-fluo-blanc_1.webp",
         sizes: ["7.5", "8"],
+        sizePrices: [
+          { size: "7.5", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131401-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+          { size: "8", price: 59.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131401-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 81.0,
+        price: 74.0,
+        priceMax: 82.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp",
-        sizes: ["9"],
+        sizes: ["7.5", "8", "8.5", "9", "9.5"],
+        sizePrices: [
+          { size: "7.5", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+          { size: "8", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+          { size: "8.5", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+          { size: "9", price: 81.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+          { size: "9.5", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc" },
+        ],
       },
     ],
   },
@@ -11195,7 +11291,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 62.0,
+        price: 61.0,
         priceMax: 69.0,
         shipping: 6.99,
         currency: "EUR",
@@ -11206,7 +11302,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "7.5", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
           { size: "8", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
           { size: "10", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
-          { size: "11", price: 62.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
+          { size: "11", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
         ],
       },
       {
@@ -11394,11 +11490,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq4026_6_hardware_on_model_front_view_white.webp",
-        sizes: ["8", "8.5", "9", "9.5", "10"],
+        sizes: ["8", "8.5", "9.5", "10"],
         sizePrices: [
           { size: "8", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred" },
           { size: "8.5", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred" },
-          { size: "9", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred" },
           { size: "9.5", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred" },
           { size: "10", price: 18.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4026-gants-de-gardien-adidas-predator-trn-syello-black-solred" },
         ],
@@ -11428,11 +11523,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4027-gants-de-gardien-adidas-predator-trn-black-solred-syello",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq4027_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["9.5", "10", "11", "12"],
+        sizes: ["9.5", "10", "12"],
         sizePrices: [
           { size: "9.5", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4027-gants-de-gardien-adidas-predator-trn-black-solred-syello" },
           { size: "10", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4027-gants-de-gardien-adidas-predator-trn-black-solred-syello" },
-          { size: "11", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4027-gants-de-gardien-adidas-predator-trn-black-solred-syello" },
           { size: "12", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4027-gants-de-gardien-adidas-predator-trn-black-solred-syello" },
         ],
       },
@@ -11540,6 +11634,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "reusch-gants-de-gardien-reusch-attrakt-solid-bleu",
     brand: "Reusch",
@@ -11635,9 +11732,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "reusch-gants-de-gardien-reusch-attrakt-duo-orange",
     brand: "Reusch",
@@ -12082,7 +12176,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 43.53,
-        priceMax: 45.93,
+        priceMax: 47.29,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red",
@@ -12094,7 +12188,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "8.5", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
           { size: "9", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
           { size: "9.5", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "10", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
+          { size: "10", price: 47.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
         ],
       },
       {
@@ -12105,14 +12199,13 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.webp",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10"],
+        sizes: ["7", "8", "8.5", "9", "9.5"],
         sizePrices: [
           { size: "7", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
           { size: "8", price: 45.27, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
           { size: "8.5", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
           { size: "9", price: 43.53, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
           { size: "9.5", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
-          { size: "10", price: 45.93, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101139901-gants-de-gardien-uhlsport-absolutgrip-white-black-red" },
         ],
       },
     ],
@@ -12237,7 +12330,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 22.41,
-        priceMax: 56.0,
+        priceMax: 57.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo",
@@ -12245,7 +12338,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["7", "9", "10", "11"],
         sizePrices: [
           { size: "7", price: 22.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
-          { size: "9", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
+          { size: "9", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
           { size: "10", price: 22.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
           { size: "11", price: 22.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-106-gants-de-gardien-joma-gk-pro-negro-rojo" },
         ],
@@ -12443,6 +12536,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-gants-de-gardien-debut-adidas-predator-pro-rose",
+    brand: "Adidas",
+    model: "Gants de gardien debut adidas Predator Pro - Rose",
+    colour: "Rose",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 130.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis7586-gants-de-gardien-debut-adidas-predator-pro-turbo-aurbla-turbo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is7586_1_hardware_photography_front_center_view_white-nw112824.webp",
+        sizes: ["7.5"],
+      },
+    ],
+  },
+  {
     id: "adidas-gants-adidas-copa-blanc",
     brand: "Adidas",
     model: "Gants adidas COPA - Blanc",
@@ -12484,7 +12594,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 66.0,
+        price: 68.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101133301-gants-de-gardien-uhlsport-prediction-absolutgrip-hn-bleu-marine-blanc-jaune-fluo",
@@ -12536,7 +12646,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.27,
-        priceMax: 36.0,
+        priceMax: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir",
@@ -12544,10 +12654,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["8.5", "9", "9.5", "10", "10.5", "11"],
         sizePrices: [
           { size: "8.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
-          { size: "9", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
-          { size: "9.5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
+          { size: "9", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
+          { size: "9.5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
           { size: "10", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
-          { size: "10.5", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
+          { size: "10.5", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
           { size: "11", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134401-gants-de-gardien-uhlsport-soft-resist-orange-fluo-blanc-noir" },
         ],
       },
@@ -13139,7 +13249,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
-        sizes: ["8.5", "9.5", "10.5"],
+        sizes: ["9.5", "10.5"],
       },
     ],
   },
@@ -13173,7 +13283,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf0546-010-gants-de-gardien-nike-academy-black-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hf0546-010_black-black-black_1.webp",
-        sizes: ["M", "S", "L"],
+        sizes: ["M", "L", "S"],
       },
       {
         store: "FootStoreFR",
@@ -13216,7 +13326,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0662-013-gants-de-gardien-nike-academy-black-anthracite-anthracite",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0662-013-black-anthracite-anthracite-6a5a5b331625e-1.webp",
-        sizes: ["XL", "L"],
+        sizes: ["L", "XL"],
       },
     ],
   },
@@ -13461,7 +13571,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Farra1980-gants-de-gardien-rinat-aries-nemesis-prime-blue-black",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat_arri1984_blue-black_1.jpg",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7", "8", "10"],
       },
     ],
   },
@@ -13936,7 +14046,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570235-7075-gants-de-gardien-reusch-football-attrakt-freegel-silver-blck-gold-firy-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570235-7075_blck-gold-firy-red_1.webp",
-        sizes: ["8", "8.5", "9", "10.5"],
+        sizes: ["8", "8.5"],
       },
     ],
   },
@@ -14013,7 +14123,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "8.5", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
           { size: "9", price: 97.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
           { size: "9.5", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
-          { size: "10", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
+          { size: "10", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
           { size: "10.5", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
           { size: "11", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
           { size: "11.5", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6276-gants-de-gardien-adidas-predator-pro-lucid-red" },
@@ -14065,7 +14175,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 48.0,
+        price: 49.0,
         priceMax: 56.0,
         shipping: 6.99,
         currency: "EUR",
@@ -14076,7 +14186,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "7", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
           { size: "7.5", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
           { size: "9", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
-          { size: "10", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
+          { size: "10", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
           { size: "10.5", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
           { size: "11.5", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3819-gants-de-gardien-adidas-predator-league-lucid-red" },
         ],
@@ -14109,19 +14219,19 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 23.0,
-        priceMax: 24.0,
+        priceMax: 25.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/m/jm6827.webp",
         sizes: ["8", "8.5", "9.5", "10", "10.5", "11", "11.5"],
         sizePrices: [
-          { size: "8", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
-          { size: "8.5", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
-          { size: "9.5", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
-          { size: "10", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
-          { size: "10.5", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
-          { size: "11", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
+          { size: "8", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
+          { size: "8.5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
+          { size: "9.5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
+          { size: "10", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
+          { size: "10.5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
+          { size: "11", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
           { size: "11.5", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
         ],
       },
@@ -14348,11 +14458,18 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 91.11,
+        priceMax: 92.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F480245-8940-gants-de-gardien-stanno-volare-ultra-iii-black-grey-yellow",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/t/stanno_480245-8940_black-grey-yellow_2.jpg",
-        sizes: ["8", "11"],
+        sizes: ["8", "10", "10.5", "11"],
+        sizePrices: [
+          { size: "8", price: 91.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F480245-8940-gants-de-gardien-stanno-volare-ultra-iii-black-grey-yellow" },
+          { size: "10", price: 92.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F480245-8940-gants-de-gardien-stanno-volare-ultra-iii-black-grey-yellow" },
+          { size: "10.5", price: 92.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F480245-8940-gants-de-gardien-stanno-volare-ultra-iii-black-grey-yellow" },
+          { size: "11", price: 91.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F480245-8940-gants-de-gardien-stanno-volare-ultra-iii-black-grey-yellow" },
+        ],
       },
     ],
   },
@@ -14434,7 +14551,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff20360-gants-de-gardien-derbystar-optimus-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar_f20360_black_1.webp",
-        sizes: ["10"],
+        sizes: ["9", "10"],
       },
     ],
   },
@@ -14498,18 +14615,18 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 72.0,
-        priceMax: 94.0,
+        priceMax: 95.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jf8897_1_hardware_photography_front_center_view_white.webp",
         sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "11"],
         sizePrices: [
-          { size: "7", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "7.5", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "7", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "7.5", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
           { size: "8", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
           { size: "8.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
-          { size: "9", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
+          { size: "9", price: 95.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
           { size: "9.5", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
           { size: "11", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjf8897-gants-de-gardien-adidas-copa-pro-blufus-halblu-luclem" },
         ],
@@ -14541,7 +14658,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 38.0,
+        price: 36.0,
         priceMax: 47.0,
         shipping: 6.99,
         currency: "EUR",
@@ -14550,14 +14667,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["9.5", "10.5", "11", "11.5"],
         sizePrices: [
           { size: "9.5", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
-          { size: "10.5", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
-          { size: "11", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
-          { size: "11.5", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
+          { size: "10.5", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
+          { size: "11", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
+          { size: "11.5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3803-gants-de-gardien-adidas-predator-match-fingersave-white-luclem-lucpnk" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 48.0,
+        price: 49.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7784-gants-de-gardien-adidas-predator-match-fingersave-white-lucred-black",
@@ -14587,7 +14704,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "8", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
           { size: "8.5", price: 27.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
           { size: "9.5", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
-          { size: "10", price: 27.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
+          { size: "10", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
           { size: "10.5", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
         ],
       },
@@ -14686,7 +14803,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5352_1_hardware_photography_front_center_view_white.webp",
         sizes: ["8.5", "9", "9.5", "10"],
         sizePrices: [
-          { size: "8.5", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
+          { size: "8.5", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
           { size: "9", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
           { size: "9.5", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
           { size: "10", price: 25.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5352-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-sigcor-white-lucblu" },
@@ -14821,7 +14938,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 57.0,
-        priceMax: 77.0,
+        priceMax: 79.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo",
@@ -14829,7 +14946,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["7.5", "11.5", "12"],
         sizePrices: [
           { size: "7.5", price: 57.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
-          { size: "11.5", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
+          { size: "11.5", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
           { size: "12", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2592-u-014-gants-de-gardien-jako-animal-giga-nc-blanc-noir-vert-fluo" },
         ],
       },
@@ -14963,17 +15080,11 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 80.85,
-        priceMax: 130.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101137201.webp",
-        sizes: ["7", "7.5", "12"],
-        sizePrices: [
-          { size: "7", price: 80.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
-          { size: "7.5", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
-          { size: "12", price: 80.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137201-gants-de-gardien-uhlsport-fm-cybertec-ultragrip-blanc-cyber-bleu-noir" },
-        ],
+        sizes: ["7", "12"],
       },
     ],
   },
@@ -14986,14 +15097,14 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 71.37,
-        priceMax: 99.0,
+        priceMax: 98.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101137401.webp",
         sizes: ["7", "12"],
         sizePrices: [
-          { size: "7", price: 99.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir" },
+          { size: "7", price: 98.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir" },
           { size: "12", price: 71.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137401-gants-de-gardien-uhlsport-fm-cybertec-supergrip-finger-blanc-cyber-bleu-noir" },
         ],
       },
@@ -15008,7 +15119,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 66.64,
-        priceMax: 97.0,
+        priceMax: 96.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir",
@@ -15016,7 +15127,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["7", "8"],
         sizePrices: [
           { size: "7", price: 66.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir" },
-          { size: "8", price: 97.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir" },
+          { size: "8", price: 96.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101137501-gants-de-gardien-uhlsport-fm-cybertec-supergrip-hn-blanc-cyber-bleu-noir" },
         ],
       },
     ],
@@ -15047,7 +15158,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 33.48,
-        priceMax: 66.0,
+        priceMax: 64.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir",
@@ -15056,10 +15167,10 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizePrices: [
           { size: "4", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "4.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
-          { size: "5", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
+          { size: "5", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "5.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
-          { size: "7.5", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
-          { size: "8", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
+          { size: "7.5", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
+          { size: "8", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "8.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
           { size: "9.5", price: 33.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138001-gants-de-gardien-uhlsport-fm-cybertec-supersoft-hn-blanc-cyber-bleu-noir" },
         ],
@@ -15086,7 +15197,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "7", price: 28.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
           { size: "7.5", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
           { size: "8", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
-          { size: "8.5", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
+          { size: "8.5", price: 28.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
           { size: "9", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
           { size: "9.5", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
           { size: "10", price: 28.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir" },
@@ -15101,7 +15212,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F101138101-gants-de-gardien-uhlsport-fm-cybertec-supersoft-blanc-cyber-bleu-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101138101.webp",
-        sizes: ["7.5", "8", "8.5", "9", "9.5"],
+        sizes: ["7.5", "8", "9", "9.5"],
       },
     ],
   },
@@ -15206,7 +15317,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 38.22,
-        priceMax: 73.0,
+        priceMax: 74.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo",
@@ -15219,12 +15330,12 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "4.5", price: 38.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
           { size: "5", price: 38.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
           { size: "5.5", price: 38.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
-          { size: "6", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
+          { size: "6", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
           { size: "7", price: 38.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
-          { size: "7.5", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
-          { size: "8", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
+          { size: "7.5", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
+          { size: "8", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
           { size: "8.5", price: 38.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
-          { size: "11", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
+          { size: "11", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101138801-gants-de-gardien-uhlsport-fm-uhlsport-super-resist-hn-noir-orange-fluo" },
         ],
       },
     ],
@@ -15388,6 +15499,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "bkeeper-gants-de-gardien-bkeeper-naos-25-noir",
     brand: "BKeeper",
@@ -15482,9 +15596,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "nike-gants-de-gardien-nike-dynamic-fit-rouge",
     brand: "Nike",
@@ -15907,6 +16018,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-gants-de-gardien-adidas-copa-league-rouge",
+    brand: "Adidas",
+    model: "Gants de gardien adidas Copa League - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4012-gants-de-gardien-adidas-copa-league-shadow-red-white-solar-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq4012_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["10"],
+      },
+    ],
+  },
+  {
     id: "adidas-gants-de-gardien-adidas-copa-club-beige",
     brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Beige",
@@ -16077,23 +16205,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-gants-de-gardien-rinat-aries-turf-noir",
-    brand: "Rinat",
-    model: "Gants de gardien Rinat Aries Turf - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 45.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Faeta1090-gants-de-gardien-rinat-aries-turf-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-aeti1094-black-1.webp",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
     id: "rinat-gants-de-gardien-rinat-aries-turf-bleu",
     brand: "Rinat",
     model: "Gants de gardien Rinat Aries Turf - Bleu",
@@ -16157,7 +16268,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Farpa5610m-gants-de-gardien-rinat-aries-pro-blue",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat-arpa5610m-blue-1.jpg",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7", "8", "9"],
       },
     ],
   },
@@ -16868,6 +16979,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "twofive-gants-de-gardien-twofive-atlanta96-advance-2025-noir",
+    brand: "TwoFive",
+    model: "Gants de gardien TwoFive Atlanta96 Advance 2025 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 33.08,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F11736-gants-de-gardien-twofive-atlanta96-advance-2025-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-11733-black-1.webp",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
     id: "twofive-gants-de-gardien-twofive-roma90-basic-rose",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Roma90 Basic - Rose",
@@ -16967,6 +17095,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670990-4414-gants-de-gardien-reusch-attrakt-freegel-fusion-ortho-tec-blue-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670990-4414-blue-white-1.webp",
         sizes: ["8"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-supergrip-hn-blanc",
+    brand: "uhlsport",
+    model: "Gants de gardien Uhlsport FM Supergrip+ HN - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 97.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101139601-gants-de-gardien-uhlsport-fm-supergrip-hn-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/101139601.webp",
+        sizes: ["7"],
       },
     ],
   },
@@ -17085,7 +17230,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy6311-gants-de-gardien-adidas-predator-training-white-lucred-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy6311_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7"],
       },
     ],
   },
@@ -17098,7 +17243,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 39.0,
-        priceMax: 45.0,
+        priceMax: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7783-gants-de-gardien-adidas-predator-match-white-lucred-black",
@@ -17106,7 +17251,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["8", "9", "10"],
         sizePrices: [
           { size: "8", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7783-gants-de-gardien-adidas-predator-match-white-lucred-black" },
-          { size: "9", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7783-gants-de-gardien-adidas-predator-match-white-lucred-black" },
+          { size: "9", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7783-gants-de-gardien-adidas-predator-match-white-lucred-black" },
           { size: "10", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7783-gants-de-gardien-adidas-predator-match-white-lucred-black" },
         ],
       },
@@ -17189,7 +17334,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7805-gants-de-gardien-adidas-copa-club-black-white-lucred",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka7805_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["8.5", "9", "9.5", "10"],
+        sizes: ["8.5", "9", "10"],
       },
     ],
   },
@@ -17218,7 +17363,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 61.0,
+        price: 60.0,
         priceMax: 65.0,
         shipping: 6.99,
         currency: "EUR",
@@ -17227,7 +17372,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["7", "8.5", "9", "9.5", "10.5"],
         sizePrices: [
           { size: "7", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr0471-gants-de-gardien-adidas-predator-match-fingersave-black-black-white" },
-          { size: "8.5", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr0471-gants-de-gardien-adidas-predator-match-fingersave-black-black-white" },
+          { size: "8.5", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr0471-gants-de-gardien-adidas-predator-match-fingersave-black-black-white" },
           { size: "9", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr0471-gants-de-gardien-adidas-predator-match-fingersave-black-black-white" },
           { size: "9.5", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr0471-gants-de-gardien-adidas-predator-match-fingersave-black-black-white" },
           { size: "10.5", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr0471-gants-de-gardien-adidas-predator-match-fingersave-black-black-white" },
@@ -17312,11 +17457,20 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 120.0,
+        priceMax: 124.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako-2546-u-667-blanc-rhodamine-rouge-bleu-69b14a24ea7d4-1.webp",
         sizes: ["7", "8", "9", "10", "11", "12"],
+        sizePrices: [
+          { size: "7", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu" },
+          { size: "8", price: 124.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu" },
+          { size: "9", price: 124.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu" },
+          { size: "10", price: 124.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu" },
+          { size: "11", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu" },
+          { size: "12", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2546-u-667-gants-de-gardien-jako-rs89-elite-blanc-rhodamine-rouge-bleu" },
+        ],
       },
     ],
   },
@@ -17329,11 +17483,20 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 78.0,
+        priceMax: 79.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako-2547-u-667-blanc-rhodamine-rouge-bleu-69b14a33390f9-1.webp",
         sizes: ["9", "9.5", "10", "10.5", "11", "12"],
+        sizePrices: [
+          { size: "9", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu" },
+          { size: "9.5", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu" },
+          { size: "10", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu" },
+          { size: "10.5", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu" },
+          { size: "11", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu" },
+          { size: "12", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2547-u-667-gants-de-gardien-jako-rs89-team-hybrid-cut-blanc-rhodamine-rouge-bleu" },
+        ],
       },
     ],
   },
@@ -17346,11 +17509,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 88.0,
+        priceMax: 89.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako-2548-u-667-blanc-rhodamine-rouge-bleu-69b14a32c717d-1.webp",
         sizes: ["7", "8", "9", "9.5", "10", "10.5", "11", "12"],
+        sizePrices: [
+          { size: "7", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "8", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "9", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "9.5", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "10", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "10.5", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "11", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+          { size: "12", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2548-u-667-gants-de-gardien-jako-rs89-team-blanc-rhodamine-rouge-bleu" },
+        ],
       },
     ],
   },
@@ -17446,23 +17620,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-gants-de-gardien-rinat-uno-premier-lux-vert",
-    brand: "Rinat",
-    model: "Gants de gardien Rinat Uno Premier Lux - Vert",
-    colour: "Vert",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 72.18,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1unplxpa50-333-219-gants-de-gardien-rinat-uno-premier-lux-neon-green",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-1unplxpa50-333-219-neon-green-69ca6f2f41b07-1.webp",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
     id: "twofive-gants-de-gardien-twofive-atlanta-advance-bleu",
     brand: "TwoFive",
     model: "Gants de gardien TwoFive Atlanta Advance - Bleu",
@@ -17526,6 +17683,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F13808-gants-de-gardien-twofive-madrid-pro-pink-pro",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-13808-pink-pro-69dcf8357f23c-1.webp",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-gants-de-gardien-twofive-new-york-advance-bleu",
+    brand: "TwoFive",
+    model: "Gants de gardien TwoFive New York Advance - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 33.65,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F13817-gants-de-gardien-twofive-new-york-advance-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/w/twofive-13814-blue-69dcf83b40eec-1.webp",
         sizes: ["11"],
       },
     ],
@@ -17650,6 +17824,32 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "reusch-gants-de-gardien-reusch-attrakt-fusion-nc-coupe-du-monde-2026-orange",
+    brand: "Reusch",
+    model: "Gants de gardien Reusch Attrakt Fusion NC Coupe du Monde 2026 - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 100.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670005-2290-gants-de-gardien-reusch-attrakt-fusion-nc-coupe-du-monde-2026-orange-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670005-2290-orange-blue-6a2bf749df2cb-1.webp",
+        sizes: ["8"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 100.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670005-2290-gants-de-gardien-reusch-attrakt-fusion-nc-coupe-du-monde-2026-orange-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670005-2290-orange-blue-6a2bf749df2cb-1.webp",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
     id: "reusch-gants-de-gardien-reusch-attrakt-freegel-advance-coupe-du-monde-2026-orange",
     brand: "Reusch",
     model: "Gants de gardien Reusch Attrakt Freegel Advance Coupe du Monde 2026 - Orange",
@@ -17761,12 +17961,22 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 140.0,
+        price: 103.0,
+        priceMax: 140.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kv6524_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["11.5"],
+        sizes: ["6.5", "7.5", "8", "8.5", "9.5", "11", "11.5"],
+        sizePrices: [
+          { size: "6.5", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+          { size: "7.5", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+          { size: "8", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+          { size: "8.5", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+          { size: "9.5", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+          { size: "11", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+          { size: "11.5", price: 103.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
+        ],
       },
     ],
   },
@@ -17779,21 +17989,11 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreFR",
         price: 128.0,
-        priceMax: 137.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.webp",
-        sizes: ["7.5", "8", "9", "9.5", "10", "11", "12"],
-        sizePrices: [
-          { size: "7.5", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "8", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "9", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "9.5", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "10", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "11", price: 137.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "12", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140801-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge-fluo-blanc-jaune-fluo" },
-        ],
+        sizes: ["7.5", "8", "9", "9.5", "10", "10.5", "11", "12"],
       },
       {
         store: "SportIsGoodFR",
@@ -17845,7 +18045,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141001-gants-de-gardien-uhlsport-fm-zne-supergrip-finger-surround-rouge-fluo-blanc-jaune-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.webp",
-        sizes: ["7", "7.5", "8", "9"],
+        sizes: ["7", "7.5", "8", "8.5", "9"],
       },
       {
         store: "SportIsGoodFR",
@@ -17904,7 +18104,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "9", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "9.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
           { size: "10", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
-          { size: "10.5", price: 86.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
+          { size: "10.5", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141501-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hn-rouge-fluo-blanc-jaune-fluo" },
         ],
       },
     ],
@@ -17967,6 +18167,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-rc-rouge",
+    brand: "uhlsport",
+    model: "Gants de gardien Uhlsport FM ZNE Ultragrip RC - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 136.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101140701-gants-de-gardien-uhlsport-fm-zne-ultragrip-rc-fluo-red-white-fluo-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101140701-fluo-red-white-fluo-yellow-6a3e9801cda39-1.webp",
+        sizes: ["10"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hybd-rouge",
     brand: "uhlsport",
     model: "Gants de gardien Uhlsport FM ZNE Absolutgrip HYBD - Rouge",
@@ -17974,7 +18191,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 110.0,
+        price: 88.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101141301-gants-de-gardien-uhlsport-fm-zne-absolutgrip-hybd-fluo-red-white-fluo-yellow",
@@ -18787,6 +19004,9 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk6: GloveProduct[] = [
   {
     id: "zeus-zeus-zpro-hombre-guantes-de-portero-negro",
     brand: "Zeus",
@@ -18958,9 +19178,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk6: GloveProduct[] = [
   {
     id: "uhlsport-gants-de-gardien-de-but-absolutgrip-blanc",
     brand: "uhlsport",

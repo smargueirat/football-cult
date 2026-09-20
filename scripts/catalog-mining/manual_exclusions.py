@@ -168,6 +168,59 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # listed with "Colombia" in the title, so it landed on the colombia
     # national-team key. Cross-team, not low-trust.
     "ebay.com/itm/198562275583",
+    # France "third" 2026/27 on Sport is Good ES/FR (adidas KG7525, pink):
+    # this is the FRENCH HANDBALL federation shirt, not football --
+    # FFHandball's crest (rooster head over "FRANCE" with the world-title
+    # stars), Caisse d'Epargne sponsor, and adidas as supplier, whereas
+    # France football is Nike with the FFF shield crest. Nothing in the
+    # title says handball, so only a link blocklist catches it
+    # (2026-09-20). Same class as the Scotland rugby shirts above.
+    "kg7525",
+    # --- 2026-09-20 daily pass, eBay current picks ---
+    # Wrong team (collision scan): Club America under `israel` (the player
+    # is Israel Reyes -- same first-name class as 2026-09-18), a Jordan-BRAND
+    # Brazil GK under `jordania`, River Plate 25/26 under `argentina`, Celtic
+    # 25/26 third under `escocia`, Colo-Colo's GK shirt under `chile` (it is
+    # kept, correctly keyed, as colocolo-goalkeeper-2026).
+    "ebay.com/itm/327313517577",
+    "ebay.com/itm/257688449386",
+    "ebay.com/itm/298679954652",
+    "ebay.com/itm/287594710447",
+    "ebay.com/itm/336798001750?_skw=Chile",
+    # PSG third (Dembele #10, Ligue 1 champion patch, $250, grey-wood-table
+    # reseller) listed as "France PSG" -> landed on `francia`. It had ALREADY
+    # made it in as the only offer of francia-third-2026, which was deleted
+    # this pass -- the "check whether an older one of the same class is
+    # already in the catalog" rule from 2026-09-10.
+    "ebay.com/itm/407106708110",
+    # Chelsea: blue/yellow collared Nike shirt with the OLD yellow-lion crest
+    # and no sponsor -- a retro/anniversary release titled "Home Kit
+    # 2026-2027". Retro-titled-as-current.
+    "ebay.com/itm/128074862658",
+    # Man Utd "goalkeeper 2025/26" (JP3055): adidas ORIGINALS green terrace
+    # tee (trefoil logo, Snapdragon print), not a goalkeeper jersey.
+    # Wrong item type.
+    "ebay.com/itm/377068395435",
+    # Japan "prematch" JFA 2026: adidas Originals black/white lifestyle tee
+    # (trefoil), not a pre-match training jersey. Wrong item type.
+    "ebay.com/itm/398394562324",
+    # Turkey "away 26/27": Nike WHITE kit with the marbled red chest band --
+    # that is Turkiye's older HOME shirt, shot on the artificial-grass
+    # backdrop the replica shops use, one listing covering "Size L and M".
+    "ebay.com/itm/298488193990",
+    # Flamengo "home 2026/27" at $49.90: the listing photo is AI-GENERATED --
+    # garbled adidas wordmark, mush where the neck label text should be, an
+    # impossible floating shadow. New false-positive class; the crest and
+    # colours look right, which is exactly why only looking at the photo
+    # catches it.
+    "ebay.com/itm/358228921300",
+    # Iraq "third 2026": real JAKO design and Iraq FA crest, but $28.30 on
+    # the metal-grid replica-shop backdrop, and iraq-third-202627 is already
+    # on file. Low-trust replica class.
+    "ebay.com/itm/198412972303",
+    # Sao Paulo "third 26" at $28.98 -- the documented template seller whose
+    # one-per-team+type titles all claim the next season (2026-09-18).
+    "ebay.com/itm/366665938534",
 ]
 
 
