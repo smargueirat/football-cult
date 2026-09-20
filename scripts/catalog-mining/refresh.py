@@ -37,7 +37,7 @@ def split_blocks(content):
         i += 1
     return content[:start], blocks, content[end:]
 
-def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_run=True, exclude_keys=None):
+def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_run=True, exclude_keys=None, kids=False):
     content = open(products_ts_path, encoding="utf-8").read()
     picks = json.load(open(picks_json_path, encoding="utf-8"))
     exclude_keys = exclude_keys or set()
@@ -60,7 +60,13 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
         type_m = TYPE_RE.search(block)
         if not team_m or not type_m:
             return None
-        if 'ageGroup: "kids"' in block:
+        # Un producto de niños comparte team|type con el adulto, así que
+        # cada corrida toca solo uno de los dos mundos: sin kids=True los
+        # bloques de niños se saltean (comportamiento de siempre); con
+        # kids=True (--kids, picks de kids_picks.json) SOLO se tocan los
+        # de niños -- antes sus precios quedaban viejos para siempre
+        # (hueco reportado por el scan del 2026-09-20).
+        if ('ageGroup: "kids"' in block) != kids:
             return None
         return f"{team_m.group(1)}|{type_m.group(1)}"
 
@@ -136,4 +142,4 @@ if __name__ == "__main__":
     currency = sys.argv[4] if len(sys.argv) > 4 else "EUR"
     exclude = set(sys.argv[5].split(",")) if len(sys.argv) > 5 and sys.argv[5] else set()
     dry_run = "--apply" not in sys.argv
-    refresh(products_path, picks_path, store_name, currency, dry_run, exclude)
+    refresh(products_path, picks_path, store_name, currency, dry_run, exclude, kids="--kids" in sys.argv)

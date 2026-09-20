@@ -2407,3 +2407,5 @@ for any block with `ageGroup: "kids"`, and `gen_kids_teams.py` only creates *new
 products -- so an existing kids product's price goes stale forever. All 122 of
 this pass's kids picks matched an existing `{team}-{type}-kids` id, so zero were
 actionable and nothing was lost today, but this is a real gap worth closing.
+
+**Kids refresh gap closed (2026-09-20).** `refresh.py` now takes `--kids`: without it kids blocks are skipped (as before), with it ONLY kids blocks are touched. Run it on `kids_picks.json` after `gen_kids_teams.py` (see daily_scan.sh). First run: 85 kids offers replaced, 37 inserted, 0 ambiguous.

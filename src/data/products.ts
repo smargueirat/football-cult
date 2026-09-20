@@ -22002,7 +22002,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 69.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168596864757?_skw=Canada+away+soccer+jersey+kids+youth&hash=item274127fef5%3Ag%3AGFMAAeSwSUhqdm-B&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canada Stadium Away Big Kids' Nike Dri-FIT Soccer Jersey Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/GFMAAeSwSUhqdm-B/s-l1600.jpg" },
+      { store: "eBay", price: 69.0, shipping: 14.95, currency: "USD", url: "https://www.ebay.com/itm/168596864757?_skw=Canada+away+soccer+jersey+kids+youth&hash=item274127fef5%3Ag%3AGFMAAeSwSUhqdm-B&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Canada Stadium Away Big Kids' Nike Dri-FIT Soccer Jersey Size XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/GFMAAeSwSUhqdm-B/s-l1600.jpg" },
     ],
   },
 {
@@ -22015,7 +22015,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/152528857600?_skw=El+Salvador+home+soccer+jersey+kids+youth&hash=item23836daa00%3Ag%3ASfcAAOSwhvFZA7dr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "El Salvador Soccer Jersey Kit Blue Home Uniform Set Youth Kids Adult Sizes", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/SfcAAOSwhvFZA7dr/s-l1600.jpg" },
+      { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/152528857600?_skw=El+Salvador+home+soccer+jersey+kids+youth&hash=item23836daa00%3Ag%3ASfcAAOSwhvFZA7dr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "El Salvador Soccer Jersey Kit Blue Home Uniform Set Youth Kids Adult Sizes", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/SfcAAOSwhvFZA7dr/s-l1600.jpg" },
     ],
   },
 {
@@ -23465,6 +23465,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 50.22, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890766&a=3013769&m=65912", title: "Camiseta de visitante niño Alemania Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz4569_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=61be843b7130d2ec904846bbc9c4c8c704ede557" },
       { store: "SportIsGoodES", price: 51.48, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365594&a=3013769&m=65906", title: "Camiseta de visitante niño Alemania Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz4569_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=61be843b7130d2ec904846bbc9c4c8c704ede557" },
+      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800081497955?_skw=Germany+away+soccer+jersey+kids+youth&hash=itemba4892cf63%3Ag%3ACqMAAeSwU9BqF4hz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Germany Youth Away Jersey 2026 - Blue", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/CqMAAeSwU9BqF4hz/s-l1600.jpg" },
     ],
   },
 {
@@ -23483,6 +23484,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 51.48, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301934153&a=3013769&m=65906", title: "Camiseta local para niño Alemania Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz4560_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=e30858e73a026f6860fad497def37b8dfe15da95" },
       { store: "SportIsGoodFR", price: 50.29, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz4560-maillot-domicile-enfant-allemagne-coupe-du-monde-2026-white", title: "Maillot Domicile enfant Allemagne Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz4560_3_apparel_on_model_standard_view_white.webp" },
       { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000089541%3Fvariant%3D54228787364181", title: "Germany 26 Home Kids Jersey JZ4560", inStock: false, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8954-1.jpg?v=1782473252" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137722602141?_skw=Germany+home+soccer+jersey+kids+youth&hash=item2010e8229d%3Ag%3AaV0AAeSw1hdqow6f&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Germany 2026 World Cup Home Youth Soccer Jersey ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/aV0AAeSw1hdqow6f/s-l1600.jpg" },
     ],
   },
 {
@@ -23498,6 +23500,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890904&a=3013769&m=65912", title: "Camiseta Visitante niño Argentina Coupe du Monde 2026", inStock: true, sizes: ["11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_kb0626_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=f836f03d20de93b8f330c39b2c1f618da01a2895" },
       { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365743&a=3013769&m=65906", title: "Camiseta Visitante niño Argentina Coupe du Monde 2026", inStock: true, sizes: ["11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_kb0626_2_apparel_photography_front_center_view_white.webp&feedId=89044&k=f836f03d20de93b8f330c39b2c1f618da01a2895" },
+      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206539778192?_skw=Argentina+away+soccer+jersey+kids+youth&hash=item3016bae890%3Ag%3AHNwAAeSwKDVqDeoQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Youth L (Code 26)/ Messi 10/ Argentina World Cup Away Jersey Set", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/HNwAAeSwKDVqDeoQ/s-l1600.jpg" },
     ],
   },
 {
@@ -23514,6 +23517,7 @@ const productsData = [
       { store: "FootStoreES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831955&a=3013769&m=65912", title: "Camiseta Local niño Argentina Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_ka8119_1_apparel_photography_front_view_white.webp&feedId=89032&k=d76759f9bfaddbacacf41c5f02513659cd88e430" },
       { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301932811&a=3013769&m=65906", title: "Camiseta Local niño Argentina Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_ka8119_1_apparel_photography_front_view_white.webp&feedId=89044&k=d76759f9bfaddbacacf41c5f02513659cd88e430" },
       { store: "PlanetFoot", price: 89.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000088070%3Fvariant%3D54010394378581", title: "Argentina 26 Home Messi Jersey Kids  AFA KA8115", inStock: false, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8807-1.jpg?v=1779804027" },
+      { store: "eBay", price: 35.2, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398168119575?_skw=Argentina+home+soccer+jersey+kids+youth&hash=item5cb4ab5917%3Ag%3Aw%7EgAAeSwjYdqVEfl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Argentina 2026 Home Kids Soccer Jersey White Blue KA8060 Youth Sizes NWT", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/w~gAAeSwjYdqVEfl/s-l1600.jpg" },
     ],
   },
 {
@@ -23528,6 +23532,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 84.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45443804104&a=3013769&m=65912", title: "Camiseta de visitante infantil del FC Barcelona 2026/27", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii1674-505-field-purple-field-purple-metallic-gold-6a6a2762a5f3f-1.webp&feedId=89032&k=a83972c28a276baa4a95a80bd4bc87b346c155bd" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318218519008?_skw=FC+Barcelona+away+soccer+jersey+kids+youth&hash=item4a174d41e0%3Ag%3AtRAAAeSwKOdp7rNA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Fc Barcelona Youth Size 8 Away Jersey NWOT LIAM #10", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/tRAAAeSwKOdp7rNA/s-l1600.jpg" },
     ],
   },
 {
@@ -23556,6 +23561,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 129.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42969282893&a=3013769&m=65912", title: "Camiseta Local niño FC Barcelona 2025/26", inStock: true, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj5216-456-phsfh001.webp&feedId=89032&k=ec98d4e4d639b1eb24f63bc0af3337acf8c5035b" },
+      { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/116378559340?_skw=FC+Barcelona+home+soccer+jersey+kids+youth&hash=item1b18b3e36c%3Ag%3AqekAAOSwXdhnJndM&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGZgmeNGYN3U05N2rb%2FSrFWBjEqFg12I5R5H2ABJEu9jQVRLhWPjMg8OvbvuyFm8VU3EzwZsMajvIV67dB00sV%2BlDlBuRu%2BQ9UkmMdpoQLZJlBeZ170AYxceZTwbNJSfX5lu8j08J4ZXJtofA5bX1ndavSEG3qz67kWuZoxuoijZw%2Bh8vBfcLUTFrpnALVicWDZXRUQ1NEq8xh5OWCg5V8CQCCYxmRPosBydBFlLnqtxpUVpcdpR9lBHONmQG9b0SSpUAvSjKLK6V4xj%2FIaCLxLlUuv1ztSEyqqQPvE9Jg2Q7CttHLXo10bq2bCjLP7H5jDNOmbqA%2B5nszGSPrer3Y0p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona Official Youth Soccer Poly Shirt Soccer Jersey Home Color", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/qekAAOSwXdhnJndM/s-l1600.jpg" },
     ],
   },
 {
@@ -23570,6 +23576,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 52.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43770970412&a=3013769&m=65912", title: "Maillot Tercero niño FC Barcelona 2025/26", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm4122-855-phsfh001-ss25.webp&feedId=89032&k=81101ab40061a59846471176654953ead7eca001" },
+      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377037289230?_skw=FC+Barcelona+third+soccer+jersey+kids+youth&hash=item57c92c770e%3Ag%3Aoh8AAeSwVZdptxwc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Kids FC Barcelona 25/26 Third Jersey size Youth Large Brand New with tags", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/oh8AAeSwVZdptxwc/s-l1600.jpg" },
     ],
   },
 {
@@ -23585,6 +23592,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41385744433&a=3013769&m=65912", title: "Camiseta de visitante para niño Bayern Múnich 2025/26", inStock: true, sizes: ["9-10", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8524_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=c68ac8aee0b631d18f48adf3497905dc3ce7dc9c" },
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301834732&a=3013769&m=65906", title: "Camiseta de visitante para niño Bayern Múnich 2025/26", inStock: true, sizes: ["9-10", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8524_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=c68ac8aee0b631d18f48adf3497905dc3ce7dc9c" },
+      { store: "eBay", price: 48.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267265685281?_skw=Bayern+Munich+away+soccer+jersey+kids+youth&hash=item3e3a46b721%3Ag%3AIbQAAeSwEZJpXCK1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Bayern Munich Youth Stadium Away Soccer Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/IbQAAeSwEZJpXCK1/s-l1600.jpg" },
     ],
   },
 {
@@ -23602,6 +23610,7 @@ const productsData = [
       { store: "FootStoreFR", price: 44.16, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn8525-maillot-domicile-enfant-bayern-munich-2025-26-red", title: "Maillot Domicile enfant Bayern Munich 2025/26", inStock: false, sizes: ["7-8"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn8525_3_apparel_on_model_standard_view_white.jpg" },
       { store: "SportIsGoodES", price: 45.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43324654331&a=3013769&m=65906", title: "Camiseta local infantil Bayern Munich 2025/26", inStock: false, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn8525_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=2be0bed85a6555727dc33cb2c4c5a1b84513665d" },
       { store: "SportIsGoodFR", price: 45.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn8525-maillot-domicile-enfant-bayern-munich-2025-26-red", title: "Maillot Domicile enfant Bayern Munich 2025/26", inStock: false, sizes: ["7-8"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn8525_3_apparel_on_model_standard_view_white.jpg" },
+      { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/314266609586?_skw=Bayern+Munich+home+soccer+jersey+kids+youth&hash=item492bbfe7b2%3Ag%3AfOwAAOSwi1hjkz4p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Official FC Bayern Munchen Home Jersey #17  Sadio Mane Red Youth L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/fOwAAOSwi1hjkz4p/s-l1600.jpg" },
     ],
   },
 {
@@ -23620,6 +23629,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844232&a=3013769&m=65906", title: "Maillot Tercero niño Bayern Munich 2025/26", inStock: true, sizes: ["9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke6797_1_apparel_photography_front_view_white.webp&feedId=89044&k=ea88641cb6b713ee92c54d4847da9bf7e04edb7c" },
       { store: "SportIsGoodFR", price: 45.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke6797-maillot-third-enfant-bayern-munich-2025-26-black-halivo", title: "Maillot Third enfant Bayern Munich 2025/26", inStock: true, sizes: ["9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke6797_1_apparel_photography_front_view_white.webp" },
       { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-bayern-munich-third-junior-2025-26-noir%3Fvariant%3D51494769099093", title: "Maillot Bayern Munich Third Junior 2025/26 Noir", inStock: false, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-bayern-munich-25-26-junior-adidas-planetfoot1.webp?v=1759840239" },
+      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/236579048173?_skw=Bayern+Munich+third+soccer+jersey+kids+youth&hash=item371535caed%3Ag%3AqUwAAeSwhFhpZaTZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Bayern Munich Third Shirt Jersey Youth Large/Adult Small", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/qUwAAeSwhFhpZaTZ/s-l1600.jpg" },
     ],
   },
 {
@@ -23635,6 +23645,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 59.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44374081633&a=3013769&m=65912", title: "Maillot Domicile niño Brasil Coupe du monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_io2231-724_01.webp&feedId=89032&k=6a5e17cb94416a8aa29e7de9fae10d3e1b140325" },
       { store: "Amazon", price: 113.38, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0H3TSM5GT?tag=footballcult-21", title: "Nike Brasil 2026 Camiseta de fútbol Aero-Fit Authentic para niños Mayores", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://m.media-amazon.com/images/I/71zTWgy428L._AC_UL1000_.jpg" },
+      { store: "eBay", price: 47.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178421474990?_skw=Brazil+home+soccer+jersey+kids+youth&hash=item298abfa6ae%3Ag%3AR6gAAeSwW6dqhQfK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Brazil National Team Nike 2026 Stadium Home Jersey Youth Kids Small $80", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/R6gAAeSwW6dqhQfK/s-l1600.jpg" },
     ],
   },
 {
@@ -23649,6 +23660,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 52.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41674758726&a=3013769&m=65912", title: "Camiseta de visitante para niño Chelsea 2025/26", inStock: true, sizes: ["7-8", "8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj5284-031-phsfh001.webp&feedId=89032&k=3afede53a1c262f50054794edb1d2d52d3df08a2" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336619387007?_skw=Chelsea+away+soccer+jersey+kids+youth&hash=item4e6014387f%3Ag%3AvawAAeSwStpqITDp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Chelsea Away Soccer Jersey 2025/26 Youth Size M, NWT HJ5284-031", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/vawAAeSwStpqITDp/s-l1600.jpg" },
     ],
   },
 {
@@ -23679,6 +23691,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 52.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44389415215&a=3013769&m=65912", title: "Camiseta local niño Chelsea 2025/26", inStock: true, sizes: ["7-8", "8-10", "10-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj5285-496_1.webp&feedId=89032&k=b5283ddc5f4d46bcf89ccf777dc45701c2b9578d" },
       { store: "FootStoreFR", price: 51.82, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj5285-496-maillot-domicile-enfant-chelsea-2025-26-rush-blue-white-speed-red-white", title: "Maillot Domicile enfant Chelsea 2025/26", inStock: true, sizes: ["7-8", "8-10", "10-12"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj5285-496_1.webp" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/194500224776?_skw=Chelsea+home+soccer+jersey+kids+youth&hash=item2d491de708%3Ag%3AZ1wAAOSwZm1hjS9B&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Chelsea Home Soccer Football Jersey Little Kids/Youth Unisex Multiple Sizes", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Z1wAAOSwZm1hjS9B/s-l1600.jpg" },
     ],
   },
 {
@@ -23709,6 +23722,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43397425436&a=3013769&m=65912", title: "Maillot Domicile niño Colombia Coupe du Monde 2026", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jz8797_0.webp&feedId=89032&k=823dac51aa58630c649059b37860c39b9a3d2c15" },
       { store: "SportIsGoodES", price: 52.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43398022730&a=3013769&m=65906", title: "Maillot Domicile niño Colombia Coupe du Monde 2026", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jz8797_0.webp&feedId=89044&k=823dac51aa58630c649059b37860c39b9a3d2c15" },
+      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/365749973456?_skw=Colombia+home+soccer+jersey+kids+youth&hash=item552865b1d0%3Ag%3ADHUAAeSw-U5ofq6X&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas JAMES Colombia Home Soccer Jersey, M62783, Yellow/Navy, Youth Sizes", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/DHUAAeSw-U5ofq6X/s-l1600.jpg" },
     ],
   },
 {
@@ -23726,6 +23740,7 @@ const productsData = [
       { store: "FootStoreFR", price: 67.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio8704-100-maillot-domicile-enfant-croatie-coupe-du-monde-2026-white", title: "Maillot Domicile enfant Croatie Coupe du Monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8704-100-white-69ef685db8975-1.webp" },
       { store: "SportIsGoodES", price: 67.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44618335329&a=3013769&m=65906", title: "Maillot Domicile niño Croacia Coupe du Monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io8704-100-white-69ef685db8975-1.webp&feedId=89044&k=07cb35e835273893c480080448407f6bf48f8704" },
       { store: "SportIsGoodFR", price: 67.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fio8704-100-maillot-domicile-enfant-croatie-coupe-du-monde-2026-white", title: "Maillot Domicile enfant Croatie Coupe du Monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io8704-100-white-69ef685db8975-1.webp" },
+      { store: "eBay", price: 49.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188724953036?_skw=Croatia+home+soccer+jersey+kids+youth&hash=item2bf0e23fcc%3Ag%3AUwwAAeSwEbBqa%7EvV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nike Croatia National Team Home Soccer Jersey Boys Youth XL Modric World Cup", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/UwwAAeSwEbBqa~vV/s-l1600.jpg" },
     ],
   },
 {
@@ -23740,6 +23755,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269890777&a=3013769&m=65912", title: "Camiseta de visitante para niño España Coupe du Monde 2026", inStock: false, sizes: ["9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jz5728_1_apparel_photography_front_view_white.webp&feedId=89032&k=74e0077422be5bac36f0ef3ac80a537b906a8069" },
+      { store: "eBay", price: 39.99, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/168668660237?_skw=Spain+away+soccer+jersey+kids+youth&hash=item27456f820d%3Ag%3AjlYAAeSwNRJqnXN8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Spain 2026 Away Pedri #20 Jersey Football Soccer Shirt Kids 9-10Y 140cm", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/jlYAAeSwNRJqnXN8/s-l1600.jpg" },
     ],
   },
 {
@@ -23758,6 +23774,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 75.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301932736&a=3013769&m=65906", title: "Camiseta Local niño España Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz5757_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=21ad4ffa814de2024c8c7483ef5187c4ebc1f304" },
       { store: "SportIsGoodFR", price: 75.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz5757-maillot-domicile-enfant-espagne-coupe-du-monde-2026-vivid-red", title: "Maillot Domicile enfant Espagne Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz5757_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-espagne-domicile-junior-2026-rouge%3Fvariant%3D51806482104661", title: "Maillot Espagne Domicile Junior 2026 Rouge - Coupe du Monde", inStock: false, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-espagne-2026-rouge-junior-adidas-planetfoot1.webp?v=1762956843" },
+      { store: "eBay", price: 19.99, shipping: 6.0, currency: "USD", url: "https://www.ebay.com/itm/406060278569?_skw=Spain+home+soccer+jersey+kids+youth&hash=item5e8b142329%3Ag%3AZDIAAeSw7tdoe8VN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Pedri Spain Team Jersey Home Football Shirt Adidas Camiseta Youth Kids", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ZDIAAeSw7tdoe8VN/s-l1600.jpg" },
     ],
   },
 {
@@ -23773,6 +23790,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 59.49, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44645300834&a=3013769&m=65912", title: "Camiseta local niño Francia Coupe du monde 2026", inStock: false, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5129-480_01.webp&feedId=89032&k=fc330f2aab6dd6028de1049780dff41deedbb1e4" },
       { store: "FootStoreFR", price: 59.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5129-480-maillot-domicile-enfant-france-coupe-du-monde-2026-royal-metallic-copper", title: "Maillot Domicile enfant France Coupe du Monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5129-480_01.webp" },
+      { store: "eBay", price: 27.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/386881438318?_skw=France+home+soccer+jersey+kids+youth&hash=item5a13ee426e%3Ag%3A9qsAAOSw3B5mAEru&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FRANCE #10 FOOTBALL SOCCER SHIRT JERSEY HOME Youth XL (16-18) ORIGINAL New W Tag", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/9qsAAOSw3B5mAEru/s-l1600.jpg" },
     ],
   },
 {
@@ -23787,6 +23805,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 67.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301926328&a=3013769&m=65912", title: "Camiseta de visitante para niño Inglaterra Coupe du monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5197-624_01.webp&feedId=89032&k=93e21f4ddcbc8cee58456cbcf4d229ba2f69775c" },
+      { store: "eBay", price: 55.25, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/114736256136?_skw=England+away+soccer+jersey+kids+youth&hash=item1ab6d05488%3Ag%3AZSEAAOSwC2BgWAzd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Youth Unisex England National Team Away Soccer Jersey. Youth Size: Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ZSEAAOSwC2BgWAzd/s-l1600.jpg" },
     ],
   },
 {
@@ -23802,6 +23821,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 129.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087822558&a=3013769&m=65912", title: "Camiseta Local Auténtica niña Inglaterra 2025", inStock: true, sizes: ["8-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9191-405_hyper-royal-blanc-blanc_1.webp&feedId=89032&k=be1e487e5e0a2e2d0bb234ac8b7a98a4a5d25615" },
       { store: "FootStoreFR", price: 129.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9191-405-maillot-domicile-authentique-fille-angleterre-2025-hyper-royal-blanc-blanc", title: "Maillot Domicile Authentique fille Angleterre 2025", inStock: true, sizes: ["8-10"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz9191-405_hyper-royal-blanc-blanc_1.webp" },
+      { store: "eBay", price: 21.44, shipping: 10.72, currency: "USD", url: "https://www.ebay.com/itm/237038189774?_skw=England+home+soccer+jersey+kids+youth&hash=item373093bcce%3Ag%3Aep0AAeSw0FZqk3qH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT AUTHENTIC Nike England 2026 Home Jersey - Youth (S)", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ep0AAeSw0FZqk3qH/s-l1600.jpg" },
     ],
   },
 {
@@ -23818,6 +23838,7 @@ const productsData = [
       { store: "FootStoreES", price: 40.77, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44301921942&a=3013769&m=65912", title: "Camiseta de visitante infantil Italia Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jy5681_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=5108ae04b5148d140918999465672643f2ba95c4" },
       { store: "SportIsGoodES", price: 40.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44302792407&a=3013769&m=65906", title: "Camiseta de visitante infantil Italia Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2026_03_adidas_jy5681_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=5108ae04b5148d140918999465672643f2ba95c4" },
       { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2F2430000088490%3Fvariant%3D54053031084373", title: "Italy 26 Away Kids Jersey  FIGC JY5681", inStock: false, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/big_8849-1.jpg?v=1780401353" },
+      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/286223859552?_skw=Italy+away+soccer+jersey+kids+youth&hash=item42a4457f60%3Ag%3A00kAAOSw3DRj7Gly&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Youth Italy FIGC White Away Soccer Jersey 765652 02 Size XL (15-16Y)", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/00kAAOSw3DRj7Gly/s-l1600.jpg" },
     ],
   },
 {
@@ -23851,6 +23872,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 40.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301927916&a=3013769&m=65906", title: "Camiseta Local infantil Italia Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=4f81c4e0da634c42a2bf232640d8bbb91f77c483" },
       { store: "SportIsGoodFR", price: 40.91, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy7585-maillot-domicile-enfant-italie-coupe-du-monde-2026-boblue", title: "Maillot Domicile enfant Italie Coupe du Monde 2026", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7585_3_apparel_on_model_standard_view_white.webp" },
       { store: "PlanetFoot", price: 74.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-italie-domicile-junior-2026-bleu%3Fvariant%3D51868458385749", title: "Maillot Italie Domicile Junior 2026 Bleu - Coupe du Monde", inStock: false, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-italie-2026-bleu-junior-adidas-planetfoot1.webp?v=1763248956" },
+      { store: "eBay", price: 44.95, shipping: 12.99, currency: "USD", url: "https://www.ebay.com/itm/800576949023?_skw=Italy+home+soccer+jersey+kids+youth&hash=itemba661acb1f%3Ag%3Af90AAeSwcXdqadUm&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbBeE23n8L9u7y%2BRtu724FFmWtm1rtPMEcYW63eW9ub4SYro4pQjbTKSTU1R3woMyBkn6SkQZXSJe1uFaHdHUyAUUsoCn1H25ezfDFMZkE%2BJoloc1XOTgf137aRKfdtDK3TFVuWYU0kzPLgTMfDuRHpQM9urdZ%2F0uZYLOSo%2BZ8AwNoUVHwyXMVvril7A3U8EfL4%2Btp069p05jqze8QW9q%2BsbHEspeKJXPj0dsmZNw7xseyNTqdtOtbTgHTJpziZT3s9GiaCOeCbiqwwIkTDOqvBBMwdknz%2FqvpmLOv7SZMQd1H5O3j7SB05%2FAUzHwhPpRE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Italy Soccer Jersey Youth Small 9-10Y Blue FIGC Home Kit Aeroready", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/f90AAeSwcXdqadUm/s-l1600.jpg" },
     ],
   },
 {
@@ -23865,6 +23887,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 48.75, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41701521289&a=3013769&m=65912", title: "Camiseta de visitante niño Juventus de Turín 2025/26", inStock: true, sizes: ["7-8"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5236_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=05a309be7d37c85bf708297338a9a6eab15c0de3" },
+      { store: "eBay", price: 53.99, shipping: 13.0, currency: "USD", url: "https://www.ebay.com/itm/358699377621?_skw=Juventus+away+soccer+jersey+kids+youth&hash=item53842623d5%3Ag%3AXWMAAeSwvBFqNVrQ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas kids Juventus Jersey 2025-26 Away Soccer Jersey Yildiz Size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/XWMAAeSwvBFqNVrQ/s-l1600.jpg" },
     ],
   },
 {
@@ -23897,6 +23920,7 @@ const productsData = [
       { store: "FootStoreES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41446542656&a=3013769&m=65912", title: "Camiseta de local infantil Juventus de Turín 2025/26", inStock: true, sizes: ["11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5237_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=cd7958f768f47139f841ff94bc936c801dc0c0aa" },
       { store: "SportIsGoodES", price: 45.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845360&a=3013769&m=65906", title: "Camiseta de local infantil Juventus de Turín 2025/26", inStock: true, sizes: ["11-12", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5237_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=cd7958f768f47139f841ff94bc936c801dc0c0aa" },
       { store: "SportIsGoodFR", price: 45.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn5237-maillot-domicile-enfant-juventus-turin-2025-26-white-black", title: "Maillot Domicile enfant Juventus Turin 2025/26", inStock: true, sizes: ["11-12", "15-16"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn5237_1_apparel_photography_front_center_view_white.jpg" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/297729352318?_skw=Juventus+home+soccer+jersey+kids+youth&hash=item45520d627e%3Ag%3ABHcAAOSwrdRoEXqt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus Soccer Jersey Home Youth Size L JSY IB0490 NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BHcAAOSwrdRoEXqt/s-l1600.jpg" },
     ],
   },
 {
@@ -23930,6 +23954,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=42095532018&a=3013769&m=65912", title: "Camiseta de visitante niño Liverpool FC 2025/26", inStock: true, sizes: ["7-8", "9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6453_3_apparel_on_model_standard_view_white.webp&feedId=89032&k=2825241be604f4930431c0af3b4474cf2645f4f1" },
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844177&a=3013769&m=65906", title: "Camiseta de visitante niño Liverpool FC 2025/26", inStock: true, sizes: ["7-8", "9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6453_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=2825241be604f4930431c0af3b4474cf2645f4f1" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/146732942863?_skw=Liverpool+away+soccer+jersey+kids+youth&hash=item2229f7060f%3Ag%3AMGMAAeSwlvxohW1E&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGarNfe7g6JyXZLo2ZAjiQwZN8oAsO17aK27QIx1rQf3Amy5vC9WhY0G0ItBOA5pz5lJK83%2By2Pej8fZwtZtJhk7D5x%2BMcMPI5iYSnwVR7C02soE9HlLbipJCTZ4jUsYz984P4cqCUTmU%2F9R3bzw10zc0dFoXMqJI39zJHSFuUhKUd%2FYt7Mk2jr89hNwufcCOQyqYRgY7NmXLNVJXPlIWecmCswXvZc8rP9rwQcMpCeFzBWtKCL6ZVClCbfRCP33atj5lFG1W0S4Uze%2FMVK43n0pnd6xy0LO2lX%2BdB4t2Q4S6pCRRy4SUpBR%2BEpzEY5zcFA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Liverpool FC Jersey Attard Youth Medium Purple Soccer Away LFC ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/MGMAAeSwlvxohW1E/s-l1600.jpg" },
     ],
   },
 {
@@ -23965,6 +23990,7 @@ const productsData = [
       { store: "FootStoreFR", price: 41.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6436-maillot-domicile-enfant-liverpool-fc-2025-26-strred", title: "Maillot Domicile enfant Liverpool FC 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6436_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845365&a=3013769&m=65906", title: "Camiseta de local para niño Liverpool FC 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6436_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=938967b9662ed4e7e3b3b6e6b133a53d8efe7e16" },
       { store: "SportIsGoodFR", price: 41.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6436-maillot-domicile-enfant-liverpool-fc-2025-26-strred", title: "Maillot Domicile enfant Liverpool FC 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6436_1_apparel_photography_front_center_view_white.webp" },
+      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178144288469?_skw=Liverpool+home+soccer+jersey+kids+youth&hash=item297a3a1ed5%3Ag%3AfpAAAeSwJy5qCo8z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Liverpool FC 25/26 Long Sleeve Home Jersey Youth Sz SM 9-10 yrs", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/fpAAAeSwJy5qCo8z/s-l1600.jpg" },
     ],
   },
 {
@@ -23983,6 +24009,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844238&a=3013769&m=65906", title: "Camiseta Third niño Liverpool FC 2025/26", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv6468_seagre_1.webp&feedId=89044&k=d7987dbd7214a0dc71d3fe68150de820bc78269b" },
       { store: "SportIsGoodFR", price: 41.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6468-maillot-third-enfant-liverpool-fc-2025-26-seagre", title: "Maillot Third enfant Liverpool FC 2025/26", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6468_seagre_1.webp" },
       { store: "PlanetFoot", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-liverpool-f-c-third-junior-2025-26-vert%3Fvariant%3D51385406554453", title: "Maillot Liverpool F.C. Third Junior 2025/26 Vert", inStock: false, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-liverpool-fc-25-26-enfants-adulte-adidas-planetfoot1.webp?v=1757425405" },
+      { store: "eBay", price: 40.0, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/318783225174?_skw=Liverpool+third+soccer+jersey+kids+youth&hash=item4a38f5fd56%3Ag%3ARtAAAeSwGflqjy3r&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Adidas Liverpool 25/26 Youth Third Jersey Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/RtAAAeSwGflqjy3r/s-l1600.jpg" },
     ],
   },
 {
@@ -23998,6 +24025,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41949206684&a=3013769&m=65912", title: "Camiseta de visitante para niños Manchester United 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3030_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=389e90b9bb897b28fed260cba6a3f9fb3ff053d3" },
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836138&a=3013769&m=65906", title: "Camiseta de visitante para niños Manchester United 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3030_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=389e90b9bb897b28fed260cba6a3f9fb3ff053d3" },
+      { store: "eBay", price: 49.39, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318762449598?_skw=Manchester+United+away+soccer+jersey+kids+youth&hash=item4a37b8fabe%3Ag%3A1kQAAeSwFjVoLmiU&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGZwdP5qlVuGyw6%2BFTtwLOxY2822y61fzQbZ6RUIBhkSkwJCXRkDWyo0Jrw8jCnEbYoNKaHjEHlVQR0Quc2Xg3roVG8XtheOn8qUo%2FlyW8Bz3uoy%2FnUTbbIQ4vhp7CHJQ5f6H50%2BUQLjfKMdyfCSxp29l9cjYfw63SF0SOx7UczU2QnNpZ%2BKggYKGvxEsgkhSLgd188JUIKNLybKXJbpa46wJ5big8CJb58rKX0n2i%2BtbYiysVF2CvVTOzbpc6mx9viv0Al263GvHHtWIajcOuPeTBsxlGPEJSEtWQR53KT1VJ5Vu%2FuIBvUKyRwHiYFxqG65ozeTHBbrZtVwNk44kbAL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United Taylor Youth 9-10Y White Away Jersey Adidas AEROREADY NWT", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/1kQAAeSwFjVoLmiU/s-l1600.jpg" },
     ],
   },
 {
@@ -24031,6 +24059,7 @@ const productsData = [
       { store: "FootStoreFR", price: 41.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3013-maillot-domicile-enfant-manchester-united-2025-26-mufred", title: "Maillot Domicile enfant Manchester United 2025/26", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/j/p/jp3013.webp" },
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301836065&a=3013769&m=65906", title: "Camiseta Local niño Manchester United 2025/26", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fp%2Fjp3013.webp&feedId=89044&k=d6bfe0ae94229cf82a0df7560a2c5400edb26f53" },
       { store: "SportIsGoodFR", price: 41.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp3013-maillot-domicile-enfant-manchester-united-2025-26-mufred", title: "Maillot Domicile enfant Manchester United 2025/26", inStock: true, sizes: ["7-8", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/j/p/jp3013.webp" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/277211381379?_skw=Manchester+United+home+soccer+jersey+kids+youth&hash=item408b15fe83%3Ag%3AkVoAAeSwXotoT6Df&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Manchester United Home Football Soccer Jersey Shirt Premier League Kids", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/kVoAAeSwXotoT6Df/s-l1600.jpg" },
     ],
   },
 {
@@ -24049,6 +24078,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 40.52, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301844242&a=3013769&m=65906", title: "Maillot Tercero niño Manchester United 2025/26", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kd4227_3_apparel_on_model_standard_view_white.webp&feedId=89044&k=fe807cee795f6d8cd3e6c3ecc14564858a6e1243" },
       { store: "SportIsGoodFR", price: 40.91, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd4227-maillot-third-enfant-manchester-united-2025-26-black", title: "Maillot Third enfant Manchester United 2025/26", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kd4227_3_apparel_on_model_standard_view_white.webp" },
       { store: "PlanetFoot", price: 39.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-manchester-united-third-junior-2025-26-noir%3Fvariant%3D51325528539477", title: "Maillot Manchester United Third Junior 2025/26 Noir", inStock: false, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-manchester-united-25-26-junior-adidas-planetfoot1.webp?v=1756542906" },
+      { store: "eBay", price: 48.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267375858193?_skw=Manchester+United+third+soccer+jersey+kids+youth&hash=item3e40d7d211%3Ag%3ADC0AAeSwx99pXCKo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Manchester United Youth Stadium Third Soccer Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/DC0AAeSwx99pXCKo/s-l1600.jpg" },
     ],
   },
 {
@@ -24078,6 +24108,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreES", price: 57.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=38335048894&a=3013769&m=65912", title: "Camiseta de visitante niño PSG 2025/26", inStock: true, sizes: ["6-7", "8-9", "10-11", "12-13", "14-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fn9126-101-phsfh001.webp&feedId=89032&k=7473c0539ae11e093f6ee9aa48b6b642aaff3579" },
+      { store: "eBay", price: 71.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127942097586?_skw=Paris+Saint-Germain+away+soccer+jersey+kids+youth&hash=item1dc9f17ab2%3Ag%3AXNsAAeSw269qPZ5a&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Kids Grey Paris Saint-Germain Away Soccer Jersey DJ7863-078 L", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/XNsAAeSw269qPZ5a/s-l1600.jpg" },
     ],
   },
 {
@@ -24108,6 +24139,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 57.24, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41624817789&a=3013769&m=65912", title: "Camiseta Local niño PSG 2025/26", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_nike_hj5293-411_01.webp&feedId=89032&k=629e66305be0034e20ea1191cd3aa8ff623552d2" },
       { store: "FootStoreFR", price: 55.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj5293-411-maillot-domicile-enfant-psg-2025-26-midnight-navy-midnight-navy-white", title: "Maillot Domicile enfant PSG 2025/26", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_nike_hj5293-411_01.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389944753123?_skw=Paris+Saint-Germain+home+soccer+jersey+kids+youth&hash=item5aca84bbe3%3Ag%3A5h8AAeSwsL5p5V%7Ez&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike PSG Paris Saint-Germain Home Jersey Youth XL Qatar Airways Soccer Shirt NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/5h8AAeSwsL5p5V~z/s-l1600.jpg" },
     ],
   },
 {
@@ -24138,6 +24170,7 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 47.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41718361168&a=3013769&m=65912", title: "Camiseta de visitante para niño Real Madrid 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3947_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=1c3de2d62eee59c99b535e38a10d7d6afd4ee849" },
       { store: "SportIsGoodES", price: 47.07, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845400&a=3013769&m=65906", title: "Camiseta de visitante para niño Real Madrid 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3947_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=1c3de2d62eee59c99b535e38a10d7d6afd4ee849" },
+      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168678868258?_skw=Real+Madrid+away+soccer+jersey+kids+youth&hash=item27460b4522%3Ag%3A-BcAAeSwgBxqouYg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Real Madrid Mbappé #10 Away Jersey Kids Youth 12/14 (Tag Size 28)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/-BcAAeSwgBxqouYg/s-l1600.jpg" },
     ],
   },
 {
@@ -24171,6 +24204,7 @@ const productsData = [
       { store: "FootStoreFR", price: 39.7, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn8887-maillot-domicile-enfant-real-madrid-2025-26-white", title: "Maillot Domicile enfant Real Madrid 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_adidas_jn8887_3_apparel_on_model_standard_view_white.jpg" },
       { store: "SportIsGoodES", price: 43.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43690621731&a=3013769&m=65906", title: "Camiseta Local niño Real Madrid", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_10_adidas_kd4339_1_apparel_photography_front_view_white.webp&feedId=89044&k=601325266f3232753331f6382b38b5061387f0f6" },
       { store: "SportIsGoodFR", price: 39.87, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkd4339-maillot-domicile-enfant-real-madrid-white", title: "Maillot Domicile enfant Real Madrid", inStock: true, sizes: ["9-10", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_10_adidas_kd4339_1_apparel_photography_front_view_white.webp" },
+      { store: "eBay", price: 34.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188901136425?_skw=Real+Madrid+home+soccer+jersey+kids+youth&hash=item2bfb629829%3Ag%3AFkQAAeSwhYZqjhgm&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ3rdbCekp0Y3E5Zz35KGSw1XeAfez798NNoetP4WcZq4TWvDRIMKsTJw8qjtjabDhl2jXY5W4iDBGpzNhNeGYPY1saHB48y1rmVFidbzcW14Yz8V3ft72Zu7xlhE3bf8KqNHzyH8XKsNtMazJekhqGbyC4knPK7xamLzHpYhLie5SVGnLXaVxNC%2Buxhb1PjY5y2vJIjiaZOKqGmoSyhyq1VIpB0lTH0IZY8fCbg0dw31%2Fxz%2Fn%2FOW0GNgNSvSQ3xWVFBxIhSw6ExfpM7cAIvs%2B2oPg7aHxSUWwsBLlVsFckAk5Z0Ci%2By3ed2GAlsZRRLo8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Sizes/ Vinicius Jr 7 Real Madrid Home Jersey Set (Kid Size 28)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/FkQAAeSwhYZqjhgm/s-l1600.jpg" },
     ],
   },
 {
@@ -24189,6 +24223,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 41.25, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301845428&a=3013769&m=65906", title: "Maillot Tercero niño Real Madrid 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3930_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=4e92b81d4c887b4e2ee5cb563e6042ec74ef5cf5" },
       { store: "SportIsGoodFR", price: 41.25, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjp3930-maillot-third-enfant-real-madrid-2025-26-blubir", title: "Maillot Third enfant Real Madrid 2025/26", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3930_1_apparel_photography_front_center_view_white.webp" },
       { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-third-junior-2025-26-bleu%3Fvariant%3D51325515858261", title: "Maillot Real Madrid Third Junior 2025/26 Bleu", inStock: false, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-real-madrid-25-26-junior-adidas-planetfoot1.webp?v=1756477772" },
+      { store: "eBay", price: 19.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/298489107284?_skw=Real+Madrid+third+soccer+jersey+kids+youth&hash=item457f565354%3Ag%3AcJIAAeSwTnJqTcbq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Youth XXS (Code 18)/ Vini Jr. 7/ Real Madrid Third Jersey Set", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/cJIAAeSwTnJqTcbq/s-l1600.jpg" },
     ],
   },
 {
@@ -24233,6 +24268,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "FootStoreFR", price: 59.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5165-809-maillot-domicile-enfant-pays-bas-coupe-du-monde-2026-hyper-crimson-black", title: "Maillot Domicile enfant Pays-Bas Coupe du Monde 2026", inStock: true, sizes: ["8-10", "10-12", "12-13", "13-15"], imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5165-809_01.webp" },
+      { store: "eBay", price: 46.75, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/116322674523?_skw=Netherlands+home+soccer+jersey+kids+youth&hash=item1b155f275b%3Ag%3AWRoAAOSwmslm2PoT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Netherlands National Team Dri-Fit  Home Soccer Jersey DN0837-843 Youth Sz L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/WRoAAOSwmslm2PoT/s-l1600.jpg" },
     ],
   },
 {
@@ -24261,6 +24297,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "PlanetFoot", price: 79.99, shipping: 0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-portugal-domicile-2026-junior-puma%3Fvariant%3D52090727661909", title: "Maillot Portugal Domicile Junior 2026 Rouge - Coupe du Monde", inStock: false, sizes: ["5-6", "7-8", "9-10"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-portugal-domicile-2026-junior-puma-planetfoot2.webp?v=1767451832" },
+      { store: "eBay", price: 34.0, shipping: 5.16, currency: "USD", url: "https://www.ebay.com/itm/188840941603?_skw=Portugal+home+soccer+jersey+kids+youth&hash=item2bf7cc1823%3Ag%3AyywAAeSwdJpqYmWT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth  Size/ Ronaldo 7 Portugal 2026 Home Jersey Set ( kids size 20)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/yywAAeSwdJpqYmWT/s-l1600.jpg" },
     ],
   },{
     id: "acmilan-away-202526",
@@ -39323,7 +39360,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/146902373534?_skw=Guatemala+away+soccer+jersey+kids+youth&hash=item223410549e%3Ag%3AOegAAeSwhx1o8psT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbpbqdiPEWcGTL%2BpRX0xVLb9QG6ct1qjp%2BTvU7wOXtd6rso8LZyXjfwImS%2FGRxvfDNwzQBpqmloZHHJx7P%2BiWqN%2BkiPI6fnsCxE9vR7zYzZLOO6Zj%2FKo7t5LtaciI7%2FX87Mly1ZBYPrUKVLYZ3kbu9yACmTmqMD7nmXrE1KuUI3TKz--8Q%2FEoSAG0adQbeyn2R4SDTTm9BLHpZ2GAQO9APZPYAxtDroCP27wQSHgBf1L7SbLL6nibcGoXotL%2BWCWmwJ46TddlPAoZrUadsJ7T0YiRjRkQ9zEjUBgXuDFkyH%2FB2YLzDBEbROK%2B2LGbC4Ako%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TRAJECITO DE GUATEMALA KIDS JERSEY  AWAY VISITA 2025  TALLA PARA NIÑOS", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/OegAAeSwhx1o8psT/s-l1600.jpg" },
+      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147543127669?_skw=Guatemala+away+soccer+jersey+kids+youth&hash=item225a417675%3Ag%3AOegAAeSwhx1o8psT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaiMfohHGs%2FBfLjMTYgIPzGNbbBkgnf5q3hzTfjcHoTeRfsJ3UArIngpVSZXBuJxSw1rk7E%2BFVHmgWYD%2BUPloiUSbQzYOb88gS54RUFojJNM%2BzcUbKLspIUJTf8W3b3y8lQ5u271u33P5o3tZweKT6fmn3v6bR%2BGUr9jsxFDp0heqP713oQrYpl7UTTO2gNxgjFiryHESnguZoJJzjVL%2FShj3ICze5XSeohXmtG1Zc5mWCptB6RC35lsK2C5TSwR4TpnreMVVsRNqQOXwgMyAyHw2u%2Btete85%2BjbaF%2BXq14l1Ya4wXKlz9SGs9vqHSFJlY%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "TRAJECITO DE GUATEMALA KIDS JERSEY  AWAY VISITA 2025  TALLA PARA NIÑOS", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/OegAAeSwhx1o8psT/s-l1600.jpg" },
     ],
   },
 {
@@ -39336,7 +39373,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 64.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267635372215?_skw=Guatemala+home+soccer+jersey+kids+youth&hash=item3e504fb0b7%3Ag%3A9MIAAeSwZjlqNg6j&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro 2026 Guatemala Kids Home Soccer Jersey Set", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/9MIAAeSwZjlqNg6j/s-l1600.jpg" },
+      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147454820997?_skw=Guatemala+home+soccer+jersey+kids+youth&hash=item2254fe0285%3Ag%3A9MMAAeSwPpdqYVpN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Guatemala kids Home Jersey replica", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/9MMAAeSwPpdqYVpN/s-l1600.jpg" },
     ],
   },
 {
@@ -40453,7 +40490,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 54.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/202615196390?_skw=AC+Milan+home+soccer+jersey+kids+youth&hash=item2f2cce8ae6%3Ag%3A1uEAAOSwj-RcBXwJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Kid's AC Milan Home Soccer Jersey- Red/Black D87244", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/1uEAAOSwj-RcBXwJ/s-l1600.jpg" },
+      { store: "eBay", price: 34.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407002933617?_skw=AC+Milan+home+soccer+jersey+kids+youth&hash=item5ec343e971%3Ag%3An7kAAeSwcVhqMF-N&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma AC Milan Home Soccer Jersey Red Jersey 770385-01 Youth Size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/n7kAAeSwcVhqMF-N/s-l1600.jpg" },
       { store: "Amazon", price: 52.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DKFQVNZN?tag=footballcult-21", title: "AC Milan Puma Maglia Gara Home, Temporada 2025/2026, Producto Oficial niños", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://m.media-amazon.com/images/I/61vcwO4dfyL._AC_UL1000_.jpg" },
     ],
   },
@@ -40467,7 +40504,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/306691146007?_skw=AC+Milan+third+soccer+jersey+kids+youth&hash=item4768378117%3Ag%3AATkAAeSwpWRpWJlr&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma AC Milan third soccer jersey gray green youth size large 775037 03 kids", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ATkAAeSwpWRpWJlr/s-l1600.jpg" },
+      { store: "eBay", price: 29.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/205580541499?_skw=AC+Milan+third+soccer+jersey+kids+youth&hash=item2fdd8e1e3b%3Ag%3AsvgAAeSwbjdoWdek&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW Puma AC Milan Third Soccer Jersey Gray Mint 775037-03 Youth Size Extra Large", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/svgAAeSwbjdoWdek/s-l1600.jpg" },
     ],
   },
 {
@@ -40506,7 +40543,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227084632131?_skw=Arsenal+home+soccer+jersey+kids+youth&hash=item34df4c8043%3Ag%3AlkQAAeSwLvFpG4QW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT 2025 Adidas Arsenal Climalite Home Jersey Youth Large 14-16 ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/lkQAAeSwLvFpG4QW/s-l1600.jpg" },
+      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800541254727?_skw=Arsenal+home+soccer+jersey+kids+youth&hash=itemba63fa2447%3Ag%3A2f0AAeSw4C1qh0eG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Arsenal FC 2026/27 Youth Home Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/2f0AAeSw4C1qh0eG/s-l1600.jpg" },
     ],
   },
 {
@@ -40519,7 +40556,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/296696914778?_skw=Aston+Villa+home+soccer+jersey+kids+youth&hash=item451483a35a%3Ag%3A3bQAAOSwVmpmwzSG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Aston Villa Home Jersey  Boys Nike Official Size M 140-152 cm Age 10/12", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/3bQAAOSwVmpmwzSG/s-l1600.jpg" },
+      { store: "eBay", price: 25.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/296973317522?_skw=Aston+Villa+home+soccer+jersey+kids+youth&hash=item4524fd3592%3Ag%3AUKoAAOSw1X1mwzJA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Aston Villa Home Jersey  Boys Nike Official Size M 140-152 cm Age 10/12", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/UKoAAOSw1X1mwzJA/s-l1600.jpg" },
     ],
   },
 {
@@ -40610,7 +40647,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 44.97, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/166861158240?_skw=Colombia+away+soccer+jersey+kids+youth&hash=item26d9b33760%3Ag%3AtMgAAOSwjn9mjdt%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth M-L 🔥Adidas Colombia National Away Soccer Jersey Red HD8853 Kids", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/tMgAAOSwjn9mjdt~/s-l1600.jpg" },
+      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/205654641868?_skw=Colombia+away+soccer+jersey+kids+youth&hash=item2fe1f8cccc%3Ag%3AGi4AAeSwpvFokocS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Adidas Colombia National Away Soccer Jersey Red HD8853 Size XS NWT", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/Gi4AAeSwpvFokocS/s-l1600.jpg" },
     ],
   },
 {
@@ -40623,7 +40660,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 119.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188255671138?_skw=South+Korea+away+soccer+jersey+kids+youth&hash=item2bd4e99362%3Ag%3AfVcAAeSw6yFp1eB1&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbYABJccljcxZdLpRXLDaNA%2BQrgN7Q9cS41ilP4%2BtQYp2atswYsf89RP8234w1uy7d%2Bd8TNH9wpY8JQUtbJT6tsSfeo4AUPyW9PqwjGyt%2F08yHplJsrVV%2FHx7tsTgaNhgaG3brEcKjhXt5oIGnV0zDJDLBg6FMjQxEBQGE46%2Bg3PARXRKzn3HUCR3GBTdhYApsNP4SfxYTDfJG6gwJpZxpK9w01hPFkYlBgEs9R%2FN%2ByLDD%2FLzVvfy4I56nQ0bk0IgHp34OwrUkBtDJnjJj09qn1053Vdtu78XFpgRuV%2FxYGyfOJj9a39HKTGCcJIICrOJY%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike DriFit 2026 South Korea Stadium Away Kids Youth Jersey IB5217-567", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/fVcAAeSw6yFp1eB1/s-l1600.jpg" },
+      { store: "eBay", price: 74.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168493584190?_skw=South+Korea+away+soccer+jersey+kids+youth&hash=item273b000f3e%3Ag%3A%7EoQAAeSwbyJqPkBn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nike Youth Kids South Korea Away Stadium Soccer Jersey Shirt A252TS305P", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/~oQAAeSwbyJqPkBn/s-l1600.jpg" },
     ],
   },
 {
@@ -40636,7 +40673,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 79.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398171746697?_skw=South+Korea+home+soccer+jersey+kids+youth&hash=item5cb4e2b189%3Ag%3AFisAAeSwqNVqVaik&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "100% ORIGINAL Nike South Korea Home World Cup 2026 Older Kids Stadium Jersey", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/FisAAeSwqNVqVaik/s-l1600.jpg" },
+      { store: "eBay", price: 79.0, shipping: 18.0, currency: "USD", url: "https://www.ebay.com/itm/398171746697?_skw=South+Korea+home+soccer+jersey+kids+youth&hash=item5cb4e2b189%3Ag%3AFisAAeSwqNVqVaik&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "100% ORIGINAL Nike South Korea Home World Cup 2026 Older Kids Stadium Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/FisAAeSwqNVqVaik/s-l1600.jpg" },
     ],
   },
 {
@@ -40675,7 +40712,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/297664294770?_skw=Ecuador+away+soccer+jersey+kids+youth&hash=item454e2caf72%3Ag%3AdqQAAeSwEk1o5ETb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Official 2025 SD Deportivo Quito Ecuador Away Soccer Jersey Sz Kids 10 Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/dqQAAeSwEk1o5ETb/s-l1600.jpg" },
+      { store: "eBay", price: 40.0, shipping: 7.99, currency: "USD", url: "https://www.ebay.com/itm/297664294770?_skw=Ecuador+away+soccer+jersey+kids+youth&hash=item454e2caf72%3Ag%3AdqQAAeSwEk1o5ETb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Official 2025 SD Deportivo Quito Ecuador Away Soccer Jersey Sz Kids 10 Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/dqQAAeSwEk1o5ETb/s-l1600.jpg" },
     ],
   },
 {
@@ -40688,7 +40725,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 39.59, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/175793531677?_skw=United+States+away+soccer+jersey+kids+youth&hash=item28ee1c6b1d%3Ag%3AyCMAAOSw6rRknP2S&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike USA Away 4-Star Youth Kids Soccer Jersey Blue White Red XL ", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/yCMAAOSw6rRknP2S/s-l1600.jpg" },
+      { store: "eBay", price: 38.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/175793531677?_skw=United+States+away+soccer+jersey+kids+youth&hash=item28ee1c6b1d%3Ag%3AyCMAAOSw6rRknP2S&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike USA Away 4-Star Youth Kids Soccer Jersey Blue White Red XL ", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/yCMAAOSw6rRknP2S/s-l1600.jpg" },
     ],
   },
 {
@@ -40701,7 +40738,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 21.54, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178207756633?_skw=Everton+home+soccer+jersey+kids+youth&hash=item297e029159%3Ag%3AEvkAAOSwUGFeE48M&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "5/5 Everton boys 6-7 years 122cm MINT home football shirt jersey trikot camiseta", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/EvkAAOSwUGFeE48M/s-l1600.jpg" },
+      { store: "eBay", price: 21.62, shipping: 19.0, currency: "USD", url: "https://www.ebay.com/itm/178207756633?_skw=Everton+home+soccer+jersey+kids+youth&hash=item297e029159%3Ag%3AEvkAAOSwUGFeE48M&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "5/5 Everton boys 6-7 years 122cm MINT home football shirt jersey trikot camiseta", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/EvkAAOSwUGFeE48M/s-l1600.jpg" },
     ],
   },
 {
@@ -40727,7 +40764,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 50.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206421417552?_skw=France+away+soccer+jersey+kids+youth&hash=item300facde50%3Ag%3A4SkAAeSwK8xqWCyv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike France 2025 Dri-FIT Stadium Away Soccer Jersey Kids XL FZ9198-110 $90 NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/4SkAAeSwK8xqWCyv/s-l1600.jpg" },
+      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206548720103?_skw=France+away+soccer+jersey+kids+youth&hash=item30174359e7%3Ag%3A6s0AAeSw3YRqJwJo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Youth L (Code 26)/ Mbappe 10/ France World Cup Away Jersey Set", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/6s0AAeSw3YRqJwJo/s-l1600.jpg" },
     ],
   },
 {
@@ -40740,7 +40777,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 57.63, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358626697158?_skw=Wales+away+soccer+jersey+kids+youth&hash=item537fd11fc6%3Ag%3A520AAOSw5jZkymxj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Wales [Size 176 / S] Kids Away Jersey New & OVP", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/520AAOSw5jZkymxj/s-l1600.jpg" },
+      { store: "eBay", price: 58.89, shipping: 18.63, currency: "USD", url: "https://www.ebay.com/itm/358626697158?_skw=Wales+away+soccer+jersey+kids+youth&hash=item537fd11fc6%3Ag%3A520AAOSw5jZkymxj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Wales [Size 176 / S] Kids Away Jersey New & OVP", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/520AAOSw5jZkymxj/s-l1600.jpg" },
     ],
   },
 {
@@ -40753,7 +40790,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 51.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157855980021?_skw=Wales+home+soccer+jersey+kids+youth&hash=item24c0f319f5%3Ag%3AZYgAAeSwUg1p6nJ%7E&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYuKzWzI03o8ZNDBy7lXLp1vAt4ADf4bvrBdKBRLNe7mU%2Bxs6X0A37ZMZI9MVSSeSkjfm87VG3iLOTNMcw5cUehbnUYOis3WYSr0AEMzg1hIeQ2AaeHL9D50oCDqxWgTr54V7ev4r8N8WcPpVFn5%2BzminUC4f0wn9hGueVJbKZ6EgPcot49jq0izvZAKKqxEuqLCfqCgwyOvCwszCCjwHcSmj1jgLgByKRXCsRhMkoWaVMoCWXcNiC6dhiatTPdKAjbA11YmmgeWnlZ2%2BcJUlR8xzV0T8gUNCHZm2iUC2HkHc8PJn3TYvH%2BAK9EUz8xwtI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas kids Wales 26 Home Kids Jersey", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ZYgAAeSwUg1p6nJ~/s-l1600.jpg" },
+      { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267501421129?_skw=Wales+home+soccer+jersey+kids+youth&hash=item3e4853c249%3Ag%3AjB4AAeSwDUFpXCLb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026 Wales Youth Stadium Home Soccer Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/jB4AAeSwDUFpXCLb/s-l1600.jpg" },
     ],
   },
 {
@@ -40818,7 +40855,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 46.75, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147297733362?_skw=Inter+Milan+home+soccer+jersey+kids+youth&hash=item224ba10af2%3Ag%3AOe8AAeSwyFxp-6Ut&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Inter Milan 2025/26 Kids Home Soccer Jersey Dri-Fit HJ4591-439 New Large", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/Oe8AAeSwyFxp-6Ut/s-l1600.jpg" },
+      { store: "eBay", price: 26.99, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/168395676739?_skw=Inter+Milan+home+soccer+jersey+kids+youth&hash=item27352a1c43%3Ag%3AjnIAAeSwaZBqDJq7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "$90 Nike Youth Inter Milan Home Replica Jersey-HJ5289439-Blue-Small-New With Tag", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/jnIAAeSwaZBqDJq7/s-l1600.jpg" },
     ],
   },
 {
@@ -40831,7 +40868,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 48.5, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287447930956?_skw=Inter+Milan+third+soccer+jersey+kids+youth&hash=item42ed3b584c%3Ag%3AMJ0AAeSw7spqTprt&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZnFf7UMftxcsQdNjB2Bgamp377JmS85LHKN%2F0Q%2Fs3Q%2FpBImKYF%2FbB%2FBDwONgORICYUAHe8qGKXrfx0utktSCnmae33X00o7oYXTZe%2FAadWUZYseaqLlkSwwt%2FFOEvFf5N%2BNCnOJayW0PkytRqOttcKxQNT5koe7av8MyG%2FYloyEBwZ%2Bxwzz3PTT2r5fR1RKY%2FkxhwhHbrsLUTph%2Fg30fm6abaixn%2BZl4%2F49htJF0RfLwehc%2BF95rvjYQxuU27SHCL5DCgXuThAucM4ihDMnX87mhBU%2B8WPDY6BnuEneac2TthO2vYWeGqDGa1wZw8DtZg%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Milan 2025/26 Third Kit Nike Jersey Kids Extra Large New & Mint Condition", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/MJ0AAeSw7spqTprt/s-l1600.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/287447930956?_skw=Inter+Milan+third+soccer+jersey+kids+youth&hash=item42ed3b584c%3Ag%3AMJ0AAeSw7spqTprt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Milan 2025/26 Third Kit Nike Jersey Kids Extra Large New & Mint Condition", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/MJ0AAeSw7spqTprt/s-l1600.jpg" },
     ],
   },
 {
@@ -40883,7 +40920,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 133.74, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318452665681?_skw=Japan+away+soccer+jersey+kids+youth&hash=item4a25420d51%3Ag%3AItkAAeSwFcFqLh-3&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZzW0wBoafPE05pEjsV3rrXbpFvzdqeiQzL2IEWsLG2Et7%2BPbwluGMng5AxTLMQwTtneTmDWPzFyZFrDBbdTfY7TO3dg4D0EyGfhLP54BIWVVxGHiucKlf3ZYwyLNvdoAVjy7Sxn3JEyyUzHJlV3NpcXQbGyfBFsUBIo8u9EP%2BMX%2FrgLkDnhiLW2gPnsme88fL6JhU21gDJ8AAVu0c1f7dW1BI%2FAOWw%2BaAETAIDjFTAkn4sXNP2ceEGMSJaks%2Fw5kq7KU74sGe46bCHvQMcznpjmizYy3sZwJIBDbPh6qcr%2B1BCYtQH7v2DJT0PFGY7Kjw%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Kids' Jersey Top Japan National Football Team Away Kit ANTHEM Jacket", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/ItkAAeSwFcFqLh-3/s-l1600.jpg" },
+      { store: "eBay", price: 79.99, shipping: 7.99, currency: "USD", url: "https://www.ebay.com/itm/158224181468?_skw=Japan+away+soccer+jersey+kids+youth&hash=item24d6e568dc%3Ag%3AjuIAAeSw-MtqjkMH&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas JAPAN 2026 World Cup Away Jersey KIDS Large Brand New With Tags", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/juIAAeSw-MtqjkMH/s-l1600.jpg" },
     ],
   },
 {
@@ -40896,7 +40933,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 78.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267712330311?_skw=Japan+home+soccer+jersey+kids+youth&hash=item3e54e5fa47%3Ag%3AfpMAAeSw-ghqQWhl&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY4D2lZEJ6ksDXCfGNdrIMv0UayRnHR0s6iu9k8HOJk%2BoGbxXFtDCByEEMUm1uwrlv%2BuutskxXqo8MJT9D%2FMqd2GBCqDQ4C7SNEanHy5nyS7Kbb6j6r9UkNx6kUChZrVCJwnruYztWT%2F2%2BpRzQNUiz%2BQf6MtEoAz%2BYUQ8eTqPA9rGMs%2BURBFxFebmj64CwacNBPpcXquzO2veniV6uf%2F3272QbN9%2BNIrxDWS9RgpxWhYlcWRWpIJqXnT5PPAm6q7Ldo1ay6cTrsm1k7hbWe0JXt11FkSskGIMNLarC13WXRMwSYtzzzgp0exAL--56EdDE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Adidas Japan World Cup 2026 Blue Home Soccer Jersey Youth Small Kids", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/fpMAAeSw-ghqQWhl/s-l1600.jpg" },
+      { store: "eBay", price: 69.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307154161387?_skw=Japan+home+soccer+jersey+kids+youth&hash=item4783d08eeb%3Ag%3AX%7EsAAeSwR-1qlInB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Unisex Youth Kids Blue Japan 26 Home Soccer Jersey JZ9688 New", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/X~sAAeSwR-1qlInB/s-l1600.jpg" },
     ],
   },
 {
@@ -40909,7 +40946,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 115.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318332221819?_skw=Los+Angeles+FC+home+soccer+jersey+kids+youth&hash=item4a1e14397b%3Ag%3AJwQAAeSwVKVqDaG6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Los Angeles FC 26/27 Home Jersey Kids JL6808", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/JwQAAeSwVKVqDaG6/s-l1600.jpg" },
+      { store: "eBay", price: 100.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318332221819?_skw=Los+Angeles+FC+home+soccer+jersey+kids+youth&hash=item4a1e14397b%3Ag%3AJwQAAeSwVKVqDaG6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Los Angeles FC 26/27 Home Jersey Kids JL6808", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/JwQAAeSwVKVqDaG6/s-l1600.jpg" },
     ],
   },
 {
@@ -40948,7 +40985,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318656731757?_skw=Manchester+City+home+soccer+jersey+kids+youth&hash=item4a316bda6d%3Ag%3AgH0AAeSw8fBqa8vp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Kids Puma Blue Manchester City 2025/26 Home  Jersey $79 Medium M NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gH0AAeSw8fBqa8vp/s-l1600.jpg" },
+      { store: "eBay", price: 16.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/237025518550?_skw=Manchester+City+home+soccer+jersey+kids+youth&hash=item372fd263d6%3Ag%3A3Q4AAeSwqn9qikwl&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGav6aEAvFvX1wt9HM4624jpcqVstYrk3TqEe7aHmM6nCZohC%2BYm%2FlC6FjsCSRJ64wKrLTZ7%2BQF%2FVEuEcDBWAZO6mjq1mRs3eZD%2B5%2BXaD2m2xy8QbU1SvegLvR09wuDRx72plbwry2BgAMoyRYFCQtmpLeKHnku7wMwKG9DUHG3LoreZC5whz2Aj1HoYw%2FVUell67aCLPi2qHqi4Zbmlpi3JWnCe%2FNL7iiqpIZEycSg2bByVOmb9YB%2FjPhSZQMSqQt5xAMM5dHDUc%2FCRIeScmag%2B1b5P8hP23r0YYLuYCszlL6RZ1i1VpmNoNHb3fQ7J4CE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Manchester City Youth Medium Jersey - Home (Brand New in Bag)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/3Q4AAeSwqn9qikwl/s-l1600.jpg" },
     ],
   },
 {
@@ -40961,7 +40998,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 34.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358877882450?_skw=Mexico+home+soccer+jersey+kids+youth&hash=item538ec9e852%3Ag%3AFssAAeSw2VhqcGei&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZJIR0Quf9WZYh3lXQNkESWunsegcSqqozICgNkyfmrthpVOfqJgXtyN0vwGBHFqNMSLEGpmLaYhmFPxPtT1ckikSpGXZ83Y2U2CAC0IToNdrmmmNNpSeiQyXcqbeQ6TvCKKkQ3T5yJ%2FCIXzwDkcGi5RXjNFrvnFqcaFVJ5BBMJNR9W21rAEcuHjhY7mTz6w3c6SsJA30p7oZlYBItwvSqvZ8Pxu9QR5vsCtuGtVPYo7dST3VQKCmGv8HomGp2%2BUJDgLW0QfQipgzHObe8Lwc2XiJS7X5KDeAwJA2ANWKC1VgZVnpQt4Lvg9WEYLKA0OB8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Kids Mexico Soccer Jersey Home Away (Check Delivery Time) Gift", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/FssAAeSw2VhqcGei/s-l1600.jpg" },
+      { store: "eBay", price: 29.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/128087310382?_skw=Mexico+home+soccer+jersey+kids+youth&hash=item1dd299402e%3Ag%3A1V8AAeSw0vBpyexm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Mexico KIDS Shirt Home Jersey 2026 All sizes childrens Sports Uniform", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/1V8AAeSw0vBpyexm/s-l1600.jpg" },
     ],
   },
 {
@@ -40974,7 +41011,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/145035723265?_skw=Mexico+third+soccer+jersey+kids+youth&hash=item21c4cd8201%3Ag%3APBsAAOSwhPJkOWtY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Pumas Chivas Guadalajara Third Soccer Jersey Alexis Vega Kids YOUTH M Mexico MX", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/PBsAAOSwhPJkOWtY/s-l1600.jpg" },
+      { store: "eBay", price: 99.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800316514611?_skw=Mexico+third+soccer+jersey+kids+youth&hash=itemba5694e133%3Ag%3A4XIAAeSwP19qUBAI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Mexico 2026 Third Kids Jersey World Cup 26 Black Youth", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/4XIAAeSwP19qUBAI/s-l1600.jpg" },
     ],
   },
 {
@@ -41000,7 +41037,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 43.55, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117336251084?_skw=Newcastle+United+home+soccer+jersey+kids+youth&hash=item1b51c91acc%3Ag%3Aa48AAeSwvdxqbyZ3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Newcastle United Jersey Blue 25/26 Third Home Soccer Kids Large JJ2228", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/a48AAeSwvdxqbyZ3/s-l1600.jpg" },
+      { store: "eBay", price: 39.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318843279987?_skw=Newcastle+United+home+soccer+jersey+kids+youth&hash=item4a3c8a5a73%3Ag%3AT8kAAeSwS%7EJqUF0k&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Newcastle United Jersey Blue 25/26 Third Home Soccer Kids Small (9-10Y)", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/T8kAAeSwS~JqUF0k/s-l1600.jpg" },
     ],
   },
 {
@@ -41013,7 +41050,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800369006463?_skw=Newcastle+United+third+soccer+jersey+kids+youth&hash=itemba59b5d77f%3Ag%3AxoUAAeSw9ZVqXFyn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Newcastle United FC Kids Juniors Third Soccer Jersey", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/xoUAAeSw9ZVqXFyn/s-l1600.jpg" },
+      { store: "eBay", price: 70.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/147298089970?_skw=Newcastle+United+third+soccer+jersey+kids+youth&hash=item224ba67bf2%3Ag%3A0E0AAeSwsL5p--v2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Newcastle United adidas Youth 2025/26 Third Replica Jersey - Blue Size Large ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/0E0AAeSwsL5p--v2/s-l1600.jpg" },
     ],
   },
 {
@@ -41065,7 +41102,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/318602858419?_skw=AS+Roma+away+soccer+jersey+kids+youth&hash=item4a2e35cfb3%3Ag%3A0ysAAeSwFJVqXBiW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas AS Roma 2025/2026 Away Jersey Size: Youth Medium 13/14", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/0ysAAeSwFJVqXBiW/s-l1600.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227495674323?_skw=AS+Roma+away+soccer+jersey+kids+youth&hash=item34f7cc81d3%3Ag%3AIIoAAeSwcXFqkeIi&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Adidas Roma Away Soccer Jersey JN9060 Youth XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/IIoAAeSwcXFqkeIi/s-l1600.jpg" },
     ],
   },
 {
@@ -41091,7 +41128,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/388517730284?_skw=Santos+FC+home+soccer+jersey+kids+youth&hash=item5a757617ec%3Ag%3Ar0YAAOSw29tjyG7W&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Charly Santos Kids Home Jersey - Green/White", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/r0YAAOSw29tjyG7W/s-l1600.jpg" },
+      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/388517730284?_skw=Santos+FC+home+soccer+jersey+kids+youth&hash=item5a757617ec%3Ag%3Ar0YAAOSw29tjyG7W&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Charly Santos Kids Home Jersey - Green/White", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/r0YAAOSw29tjyG7W/s-l1600.jpg" },
     ],
   },
 {
@@ -69073,7 +69110,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 69.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407111829753?_skw=AC+Milan+away+soccer+jersey+kids+youth&hash=item5ec9c188f9%3Ag%3AkWsAAeSwh%7ExqbV2l&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Ac Milan 2526 Away Replica Soccer Jersey Youth Boys White  77997402", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kWsAAeSwh~xqbV2l/s-l1600.jpg" },
+      { store: "eBay", price: 69.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407111829753?_skw=AC+Milan+away+soccer+jersey+kids+youth&hash=item5ec9c188f9%3Ag%3AA08AAeSwJs5qo60O&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Ac Milan 2526 Away Replica Soccer Jersey Youth Boys White  77997402", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/A08AAeSwJs5qo60O/s-l1600.jpg" },
     ],
   },
 {
@@ -69086,7 +69123,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127887489245?_skw=Ajax+away+soccer+jersey+kids+youth&hash=item1dc6b038dd%3Ag%3AEcsAAeSwh5lqFn42&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Youth Ajax Amsterdam 2025/26 Away Soccer Jersey JI7218 Size X-Small $80", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/EcsAAeSwh5lqFn42/s-l1600.jpg" },
+      { store: "eBay", price: 34.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/237021867187?_skw=Ajax+away+soccer+jersey+kids+youth&hash=item372f9aacb3%3Ag%3AEQIAAeSwZuRqiKMp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Amsterdam Ajax Jersey away green kids size XL new", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/EQIAAeSwZuRqiKMp/s-l1600.jpg" },
     ],
   },
 {
@@ -69164,7 +69201,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206458173211?_skw=Belgium+away+soccer+jersey+kids+youth&hash=item3011ddb71b%3Ag%3ApDEAAeSwKzZqbkfR&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGY9D8HBLOlLPDJj%2Bgwv7fjr6v9P4RaWKhUIQgfVgWIww63aYSdBM7%2BuLE2mEA5JUgV3u7Eb4DUP97qD%2FTya7pKWfQ7asLg4NXX1%2FGlnNLvDqFP5gkgiAEDpt7jiLoJCHytUqcY0Zok%2FXAV5NCzahI63j9rgZ7ix8fqzwezif0iy44EesrQ6%2BrjTeyjIOS138EeHjPrFUSijM1FTGYW%2BZx4ireL3JjNy0hu6k5q6RSeEFiODPC7qBxCH9YNsufWMXXcbf2UNWnINB%2Fn%2BfraN2GheOQ%2B2oQrfNAZMSONFJJp640LdUkJVdSv5RwQicnWUVpE%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Youth XL (Code 28)/ De Bruyne 7/ Belgium World Cup Away Jersey Set", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/pDEAAeSwKzZqbkfR/s-l1600.jpg" },
+      { store: "eBay", price: 38.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206458173211?_skw=Belgium+away+soccer+jersey+kids+youth&hash=item3011ddb71b%3Ag%3ApDEAAeSwKzZqbkfR&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Youth XL (Code 28)/ De Bruyne 7/ Belgium World Cup Away Jersey Set", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/pDEAAeSwKzZqbkfR/s-l1600.jpg" },
     ],
   },
 {
@@ -69177,7 +69214,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336596444486?_skw=Belgium+home+soccer+jersey+kids+youth&hash=item4e5eb62546%3Ag%3AWwsAAeSwrclqEGA8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BELGIUM Red World Cup Home Team Soccer Jersey - Sizes Youth to Adult 3X", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/WwsAAeSwrclqEGA8/s-l1600.jpg" },
+      { store: "eBay", price: 45.0, shipping: 7.3, currency: "USD", url: "https://www.ebay.com/itm/336596444486?_skw=Belgium+home+soccer+jersey+kids+youth&hash=item4e5eb62546%3Ag%3AWwsAAeSwrclqEGA8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BELGIUM Red World Cup Home Team Soccer Jersey - Sizes Youth to Adult 3X", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/WwsAAeSwrclqEGA8/s-l1600.jpg" },
     ],
   },
 {
@@ -69190,7 +69227,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 79.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/358649496318?_skw=Czech+Republic+home+soccer+jersey+kids+youth&hash=item53812d02fe%3Ag%3APPkAAeSwgrxqJV7o&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Puma Red Czech Republic National Team 2026 Home Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/PPkAAeSwgrxqJV7o/s-l1600.jpg" },
+      { store: "eBay", price: 79.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/377471540506?_skw=Czech+Republic+home+soccer+jersey+kids+youth&hash=item57e30e9d1a%3Ag%3Ahy0AAeSwIMRqm%7Emz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Puma Red Czech Republic National Team 2026 Home Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/hy0AAeSwIMRqm~mz/s-l1600.jpg" },
     ],
   },
 {
@@ -69268,7 +69305,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 101.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178313409307?_skw=Croatia+away+soccer+jersey+kids+youth&hash=item29844eb31b%3Ag%3AUrkAAeSw2AFqUu5B&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Youth Croatia WC World Cup 2026 Away Jersey - Deep Royal Blue/Hyper Royal/W", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/UrkAAeSw2AFqUu5B/s-l1600.jpg" },
+      { store: "eBay", price: 91.79, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178313409307?_skw=Croatia+away+soccer+jersey+kids+youth&hash=item29844eb31b%3Ag%3AUrkAAeSw2AFqUu5B&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Youth Croatia WC World Cup 2026 Away Jersey - Deep Royal Blue/Hyper Royal/W", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/UrkAAeSw2AFqUu5B/s-l1600.jpg" },
     ],
   },
 {
@@ -69385,7 +69422,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 84.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206416844109?_skw=Honduras+home+soccer+jersey+kids+youth&hash=item300f67154d%3Ag%3AvPQAAeSwBDpqV5fd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGai3jasYW2HkKtwjZGdRZeBD1zY1g6Ym92Z2VYaLPukAwDoguZ1G5Q68l%2Bf8m4dWk01P%2BG4Z%2Fdctvk2jJ7A21IYzNnCksfZsjiVTmFzEAsjVi%2BAFUzusLqDMRP1ADkbNKYrLzf4UXuRKjZoeIwzr9O%2FMF61Palz6W2cEsvz7Vc0MlgYlU0DpB1n4ptp3BKpukGTqZORDiR5atktQAQAC9p0oHbp5yRpEkmm3UuonMfArYnpSo7XXgITLfJmaiAYa6oGOxKk%2FToKSAGNpuqspORlOhtCD9ecwrZHiKXaKfoVeAn2e6JdlF%2FDPkb9UgrujEY%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Joma Honduras 2026 Home Jersey White/Blue Size XL Youth", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/vPQAAeSwBDpqV5fd/s-l1600.jpg" },
+      { store: "eBay", price: 84.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206416844109?_skw=Honduras+home+soccer+jersey+kids+youth&hash=item300f67154d%3Ag%3AvPQAAeSwBDpqV5fd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGai3jasYW2HkKtwjZGdRZeBD1zY1g6Ym92Z2VYaLPukAwDoguZ1G5Q68l%2Bf8m4dWk01P%2BG4Z%2Fdctvk2jJ7A21IYzNnCksfZsjiVTmFzEAsjVi%2BAFUzusLqDMRP1ADkbNKYqfzFmnMzqTo5ARUTpT8eGtijEnYcgk3Ddh5Gv9ZKaKi4RnG71dljkAdY0DdFDnkmuFQ%2F5kkURkMDj8Y2NPP3TF%2FegMeukJY1ZUAFynM9CmDrbz8Mg%2FRrmZXy1US9WLh9dUD1aTMWh9ji4QibxgA0NdDPetqOL0Vt%2B2NulU2gDj08m1xZUCI6zPgH%2FCt3%2FikA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Joma Honduras 2026 Home Jersey White/Blue Size XL Youth", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/vPQAAeSwBDpqV5fd/s-l1600.jpg" },
     ],
   },
 {
@@ -69463,7 +69500,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158100305731?_skw=Manchester+City+away+soccer+jersey+kids+youth&hash=item24cf833743%3Ag%3AkGYAAeSwwNhpbX3v&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW YOUTH Manchester City Puma Away Replica Jersey Jr. Misprint Name On Back MD", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kGYAAeSwwNhpbX3v/s-l1600.jpg" },
+      { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/168626503377?_skw=Manchester+City+away+soccer+jersey+kids+youth&hash=item2742ec3ed1%3Ag%3AkGYAAeSwwNhpbX3v&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NEW YOUTH Manchester City Puma Away Replica Jersey Jr. Misprint Name On Back MD", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/kGYAAeSwwNhpbX3v/s-l1600.jpg" },
       { store: "Amazon", price: 32.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0DLNH5Q3S?tag=footballcult-21", title: "PUMA Camiseta Visitante Manchester City Infantil 2025/26 - Negro", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://m.media-amazon.com/images/I/61LP5f8ACOL._AC_UL1000_.jpg" },
     ],
   },
@@ -69503,7 +69540,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 34.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407067742980?_skw=Mexico+away+soccer+jersey+kids+youth&hash=item5ec720d304%3Ag%3A0AUAAeSw9apqU6kt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA New Mexico United Away Crew Neck Replica Jersey Youth Boys Yellow  77942101", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/0AUAAeSw9apqU6kt/s-l1600.jpg" },
+      { store: "eBay", price: 27.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407205963398?_skw=Mexico+away+soccer+jersey+kids+youth&hash=item5ecf5de686%3Ag%3AllsAAeSwXz1qqkXt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA New Mexico United Away Crew Neck Replica Jersey Youth Boys Yellow  77942101", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/llsAAeSwXz1qqkXt/s-l1600.jpg" },
     ],
   },
 {
@@ -69529,7 +69566,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 29.0, shipping: 6.5, currency: "USD", url: "https://www.ebay.com/itm/306995312267?_skw=Nashville+SC+third+soccer+jersey+kids+youth&hash=item477a58b68b%3Ag%3ABA0AAeSwO-9qKkoD&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaee%2BGfrj63ID6M%2B14%2B6HqQSDXdf4RXwp5edjX1psdW9Rt%2BNIDKV9%2BZclhiuQLrxtpiilC%2F5qlfl2iiMdB8zBG4wieIVuewfqvH93uN749a6h4H6Sda0ubmfWgvLE%2BS3alOdUNKqPAFGs9SE6T%2BzdiqUNtG4jmk4YcC2njCJXeSIpN3ngZWksXmQvTuRZwXB1w72GrYE7asZJaNK0tO788EOuOzQp4SB5u5qeEeyE5ictHd3BYsjvbx3gaKs42YYY%2F4%2FVwV14pT0sFi81UI4yb09TRLvRGRuCdj3j8n2qUTbCafER4k5sXsxJADGSRRcFo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas x Nashville SC 2025 Third Jersey JI7334 Youth Size XL (15-16Y) Beige/Blue", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/BA0AAeSwO-9qKkoD/s-l1600.jpg" },
+      { store: "eBay", price: 29.99, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/257565734643?_skw=Nashville+SC+third+soccer+jersey+kids+youth&hash=item3bf81d36f3%3Ag%3ApLsAAeSwV0tqLxaO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT YOUTH Adidas Nashville SC 2025 Third Soccer Jersey White Blue JI7334 Sz S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/pLsAAeSwV0tqLxaO/s-l1600.jpg" },
     ],
   },
 {
@@ -69542,7 +69579,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117350550236?_skw=Newcastle+United+away+soccer+jersey+kids+youth&hash=item1b52a34adc%3Ag%3AGFAAAeSw5ctqefWI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas x Newcastle United FC 2025-26 Away Jersey Green Youth JJ2240 Youth Med", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/GFAAAeSw5ctqefWI/s-l1600.jpg" },
+      { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117350550236?_skw=Newcastle+United+away+soccer+jersey+kids+youth&hash=item1b52a34adc%3Ag%3AGFAAAeSw5ctqefWI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas x Newcastle United FC 2025-26 Away Jersey Green Youth JJ2240 Youth Med", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/GFAAAeSw5ctqefWI/s-l1600.jpg" },
     ],
   },
 {
@@ -69568,7 +69605,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 101.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/800455857812?_skw=Nigeria+home+soccer+jersey+kids+youth&hash=itemba5ee31694%3Ag%3AWAAAAeSwRRNqbCJv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Nigeria 2026 Youth Home Jersey - Pine Green/Electric Green/White", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/WAAAAeSwRRNqbCJv/s-l1600.jpg" },
+      { store: "eBay", price: 91.79, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/800455857812?_skw=Nigeria+home+soccer+jersey+kids+youth&hash=itemba5ee31694%3Ag%3AWAAAAeSwRRNqbCJv&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Nigeria 2026 Youth Home Jersey - Pine Green/Electric Green/White", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/WAAAAeSwRRNqbCJv/s-l1600.jpg" },
     ],
   },
 {
@@ -69581,7 +69618,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 36.59, shipping: 8.92, currency: "USD", url: "https://www.ebay.com/itm/358828663936?_skw=Norway+home+soccer+jersey+kids+youth&hash=item538bdae480%3Ag%3AL4EAAeSwrhNqYGlk&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "#9 Norway 2026 Home Jersey Red (YOUTH)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/L4EAAeSwrhNqYGlk/s-l1600.jpg" },
+      { store: "eBay", price: 30.59, shipping: 8.92, currency: "USD", url: "https://www.ebay.com/itm/358828663936?_skw=Norway+home+soccer+jersey+kids+youth&hash=item538bdae480%3Ag%3AL4EAAeSwrhNqYGlk&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "#9 Norway 2026 Home Jersey Red (YOUTH)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/L4EAAeSwrhNqYGlk/s-l1600.jpg" },
     ],
   },
 {
@@ -69659,7 +69696,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 44.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407043474661?_skw=Palmeiras+away+soccer+jersey+kids+youth&hash=item5ec5ae84e5%3Ag%3ADpIAAeSwPLJqRnqo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Se Palmeiras Torcedor '25 Away Soccer Jersey Youth Boys White  78244201", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/DpIAAeSwPLJqRnqo/s-l1600.jpg" },
+      { store: "eBay", price: 44.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407181517806?_skw=Palmeiras+away+soccer+jersey+kids+youth&hash=item5ecde8e3ee%3Ag%3ASFQAAeSwMcdqlOtm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Se Palmeiras Torcedor '25 Away Soccer Jersey Youth Boys White  78244201", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/SFQAAeSwMcdqlOtm/s-l1600.jpg" },
     ],
   },
 {
@@ -69672,7 +69709,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 74.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407082255578?_skw=Palmeiras+home+soccer+jersey+kids+youth&hash=item5ec7fe44da%3Ag%3AFo8AAeSwLuxqW7Ro&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA  X Kidsuper Palmeiras Home Replica Jersey Youth Boys Off White  78114811", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Fo8AAeSwLuxqW7Ro/s-l1600.jpg" },
+      { store: "eBay", price: 59.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407082255578?_skw=Palmeiras+home+soccer+jersey+kids+youth&hash=item5ec7fe44da%3Ag%3AABIAAeSwNv5qq5al&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA  X Kidsuper Palmeiras Home Replica Jersey Youth Boys Off White  78114811", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ABIAAeSwNv5qq5al/s-l1600.jpg" },
     ],
   },
 {
@@ -69685,7 +69722,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 30.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/146628375794?_skw=Peru+away+soccer+jersey+kids+youth&hash=item2223bb74f2%3Ag%3AvXcAAOSwagtm2i1O&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZXr8Up3nrINFhyF%2Fl2Ld7yph7x00DVD6LWiMHaI8028kXYNpS%2BiOFDOPstENIyOhQN2xixHbuuEFDIrgdsk4vlp2erHJJrt7OHGMLS58ZjH512f%2BpkesPivAIJuW8YmnYVMB3HcYHs0BEouL5cFvhl2Tmyt%2ByzKWnR6nNjLcs3wu3UPRtPkf7%2FC%2Bq2KGqU%2BETYWssA4CuLrLl297jLU70j%2F0r%2B%2Bm83%2BO9Pyur0X1ifuhl05IybP%2BRDsfqScNbv6%2FhO7qaqLESi5MwXn773IXM6NFatZpNRHVLTDGNYTaHAzLhuZRu3eeAVR9fGo3il10g%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Official FPF Peru Away Soccer Jersey Youth L Federación Peruana de Fútbol NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/vXcAAOSwagtm2i1O/s-l1600.jpg" },
+      { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127905570405?_skw=Peru+away+soccer+jersey+kids+youth&hash=item1dc7c41e65%3Ag%3AwJwAAeSwZGVqIy92&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbpw0OVd3vEh4hohbJdd%2Bpenwc0Im5tu9feweaGyPiW%2Falss31MJrXfM4K4jpyA0ESSmtAPKM54vrePX7SWm5QjIrIyhpYUm8hq7ClLYLtpwibUgSrx13VqaPnX5VkZbbaS%2BKvz%2FBb1ac4pd%2BOWfaE5UiTLitW3RQQbNhREAEKLrQ41brabgp%2BJNJIIx87f7SlTC1EOa2HccrW%2BJdrs63d3Fr0bfl8caUwoBJh70IbKcLG2rHxatLMpCLtxBSSJyoC9jlzgk21EUBo5MhUg6NuVoE7DEp5QGBDXol2is3L%2FkdOCOfhdi6Fki19dTtAm2d8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PERU NATIONAL TEAM FIFA Soccer Jersey Guerrero #9 Away Youth Size M", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/wJwAAeSwZGVqIy92/s-l1600.jpg" },
     ],
   },
 {
@@ -69698,7 +69735,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 51.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/115132057152?_skw=Poland+home+soccer+jersey+kids+youth&hash=item1ace67c640%3Ag%3AH0wAAOSw5PNhr%7E7R&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbiM4LgXpNy52PFJp39jk11zG4WrpxTf5konLcE0dCk2W4SNEjmwjhRtsfRx97cYfJPCxINdcAyp%2BSIEfUef205zL3TDD0NXqSqBDzbuyo%2FFpz7qRVQ%2B%2B%2Bzlbr5AerqoSGhbYdOJpWW42h1uqupNSFT0eTa7fDH0kWE3yz4JWYzSRwd9c32HxbTQPT8laUUmlXphP8%2Fltq1Qfa1dp6Dg2JdwSiX4I9OOwAt1TOeD0%2BOnqqZtxKFmZla%2BCVdgQLdh%2Fzm6VPMEo4XjKEhs9kWj2pQ65Q9KXW67IluWaPeWjkTEDFX%2FYK2wWOARstfl%2F9cobI%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Youth Poland National Team Home Soccer Jersey CD1050-100. Youth Size: Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/H0wAAOSw5PNhr~7R/s-l1600.jpg" },
+      { store: "eBay", price: 51.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/115132057152?_skw=Poland+home+soccer+jersey+kids+youth&hash=item1ace67c640%3Ag%3AH0wAAOSw5PNhr%7E7R&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Youth Poland National Team Home Soccer Jersey CD1050-100. Youth Size: Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/H0wAAOSw5PNhr~7R/s-l1600.jpg" },
     ],
   },
 {
@@ -69724,7 +69761,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 31.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117245933534?_skw=RB+Leipzig+away+soccer+jersey+kids+youth&hash=item1b4c66f7de%3Ag%3AgZQAAeSwt5BqLJ-1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike RB Leipzig Youth Away Soccer Jersey White Red Dri-FIT Size Medium NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gZQAAeSwt5BqLJ-1/s-l1600.jpg" },
+      { store: "eBay", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/117245933534?_skw=RB+Leipzig+away+soccer+jersey+kids+youth&hash=item1b4c66f7de%3Ag%3AgZQAAeSwt5BqLJ-1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike RB Leipzig Youth Away Soccer Jersey White Red Dri-FIT Size Medium NWT", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/gZQAAeSwt5BqLJ-1/s-l1600.jpg" },
     ],
   },
 {
@@ -69776,7 +69813,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 15.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/298097065956?_skw=San+Diego+FC+home+soccer+jersey+kids+youth&hash=item4567f83fe4%3Ag%3AjGIAAeSwZcFpq9HL&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Adidas San Diego FC Jersey White Home MLS Soccer JF2734 Youth XS", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/jGIAAeSwZcFpq9HL/s-l1600.jpg" },
+      { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398042007329?_skw=San+Diego+FC+home+soccer+jersey+kids+youth&hash=item5cad270721%3Ag%3ACz8AAeSwycNqJxMO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbXiuDqfFztThtamxMAs86II7p%2FMuw6jHtFf82t4qVcvuBtheRZUhCwBLeh3gQuacZWZKeZ%2FiLLf8qCI2yhZxXPsWd554gV7KMMvflDYzgvDFUee18RQzn3eZ8vP54284Iaioq%2FVXj7VPYr5TuQxt9iPsxMxYPgvwxiFXFYxPujTMwcUj3q1QJPfMR5%2BNc9oZa5u4zStB%2BaMn7eKbLAu6hZwCjb6vn6aMjTMXGwhQIU8xfJ--eWa4TrvNvHeUuEKcU9PYeJQKTnVIZju4h3nAuT8%2BG5wa6xh343%2BufUw9rBlbKoYfhJGBalLilvv1VNcOQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas San Diego FC Jersey Boys XS White Home MLS Soccer Youth New no tags.", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/Cz8AAeSwycNqJxMO/s-l1600.jpg" },
     ],
   },
 {
@@ -69802,7 +69839,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 79.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/407082256181?_skw=Senegal+home+soccer+jersey+kids+youth&hash=item5ec7fe4735%3Ag%3AR58AAeSw1KlqW7Rw&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Senegal Home Soccer Jersey Youth Boys White  78316701", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/R58AAeSw1KlqW7Rw/s-l1600.jpg" },
+      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/389832227451?_skw=Senegal+home+soccer+jersey+kids+youth&hash=item5ac3cfba7b%3Ag%3AcicAAeSwyBZpzWCm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Youth Senegal Home Replica Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/cicAAeSwyBZpzWCm/s-l1600.jpg" },
     ],
   },
 {
@@ -69867,7 +69904,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 44.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377410182469?_skw=Tottenham+Hotspur+away+soccer+jersey+kids+youth&hash=item57df665d45%3Ag%3ACfAAAeSwmOFqOE93&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGY1UCv5aZfDdcUMHbT0i0amTB7R7U5gKl3yyCMt1cgQa6hHLSQ82V2LbFKXPKIE3xMtdg332I%2BYp4VkJyagiAMQHMNkJKvfhlXxon1ZE2jGzRrRIGYTfE5GwYKEQfkSWIJ6gVDawtVw9lx6zgLnX%2BF2%2BJWfdwjSOFqQ6XBVWCzMVcYEEAlRXA8xrtPMXdmf5WZV708hH8VHBw3A81j3Y8tirXAI0XF96ELEnZ1HHmEP3%2BZ6WGnjpPOV1qJkmtoQCWqzi3WEVbT5Xc4DNcvpjlQYKdPVR%2Fw%2BMlkRWVe9V4f5ewFBCK%2B8MsjNjTsi%2FmERpQR0SEnMq5Sa3RQzQ3lNGXEK&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur 2025/26 Stadium Away Youth Soccer Jersey HJ5296-011 New M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/CfAAAeSwmOFqOE93/s-l1600.jpg" },
+      { store: "eBay", price: 44.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377410182469?_skw=Tottenham+Hotspur+away+soccer+jersey+kids+youth&hash=item57df665d45%3Ag%3ACfAAAeSwmOFqOE93&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGY1UCv5aZfDdcUMHbT0i0amTB7R7U5gKl3yyCMt1cgQa6hHLSQ82V2LbFKXPKIE3xMtdg332I%2BYp4VkJyagiAMQHMNkJKvfhlXxon1ZE2jGzRrRIGYTfE5GwYKEQfkSWILQkyki7AnCzb%2B45SCZdTTRLTSzse0h519c4mEXmZUU1FphJ0k5iuKM9JOLxIodt7ZlmMofCKr5LHVkvlTv%2BGRzYOxECDHEuZXfq%2BtHTGTtl%2B55GbY0yP5ldxPkqLWNQDJ3NvIxStt8kh%2F15PiLoPDQuzEXeu9iUHHuWv0HjlH%2FIHt8DKBr9xt%2FJoxlGgAqmxuKcFzVoGXJz871mEKQSCrA&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur 2025/26 Stadium Away Youth Soccer Jersey HJ5296-011 New M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/CfAAAeSwmOFqOE93/s-l1600.jpg" },
     ],
   },
 {
@@ -69880,7 +69917,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 49.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376743327022?_skw=Tottenham+Hotspur+home+soccer+jersey+kids+youth&hash=item57b7a6f52e%3Ag%3Abm4AAeSwPGtpLPWc&amdata=enc%3AAQALAAABEACCtXRWQnOEpyOqnQQ8KGaYGxzi6poOFmDSggRveLbj%2FyrW4mrYvL6ybjQ6qnBJlzC0Zz%2B8mnVr476dyVM1iWukxvXIbmcqULFdWDgrHICupkUdR05vIfOrdObz2mMcvVRoj1Aloul67LjzmV5FlG13YjeCWP9mXDDNVgaeZOTAjuKhjoLoHVHp1lzQT8P%2BHgXKO%2FA%2FO4ukqiEwDvfNn6%2BY4roC%2FkvrCcUsV0Tr5uENGdqQdQHEiWkZ3E9jaRepnqxsXsVTaP51cJ8C%2BAmfbF2T7h%2BDBkfF73W17VvLx0xMOsbtl0WkTOhfJHHpfr10aF6qHf3GfCkCVPr1akguufRiTWhNoGyLBfcF2NKwUeW%2B&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur 2025/26 Home Stadium Jersey Dri-FIT HJ5297-101 youth L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/bm4AAeSwPGtpLPWc/s-l1600.jpg" },
+      { store: "eBay", price: 49.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/376743327022?_skw=Tottenham+Hotspur+home+soccer+jersey+kids+youth&hash=item57b7a6f52e%3Ag%3Abm4AAeSwPGtpLPWc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Tottenham Hotspur 2025/26 Home Stadium Jersey Dri-FIT HJ5297-101 youth L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/bm4AAeSwPGtpLPWc/s-l1600.jpg" },
     ],
   },
 {
@@ -69906,7 +69943,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 92.79, shipping: 8.99, currency: "USD", url: "https://www.ebay.com/itm/358798029248?_skw=Union+Berlin+away+soccer+jersey+kids+youth&hash=item538a0771c0%3Ag%3A3vcAAeSwxlRpXxym&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "1.FC Union Berlin Jersey Youth Large 13 - 15 Blue Soccer 2025 2026 Away NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/3vcAAeSwxlRpXxym/s-l1600.jpg" },
+      { store: "eBay", price: 88.15, shipping: 8.99, currency: "USD", url: "https://www.ebay.com/itm/820128988191?_skw=Union+Berlin+away+soccer+jersey+kids+youth&hash=itembef37f3c1f%3Ag%3A3vcAAeSwxlRpXxym&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "1.FC Union Berlin Jersey Youth Large 13 - 15 Blue Soccer 2025 2026 Away NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/3vcAAeSwxlRpXxym/s-l1600.jpg" },
     ],
   },
 {
@@ -76894,7 +76931,7 @@ const productsData = [
     jerseyPattern: "solid",
     ageGroup: "kids",
     offers: [
-      { store: "eBay", price: 52.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267513230026?_skw=Sweden+home+soccer+jersey+kids+youth&hash=item3e4907f2ca%3Ag%3AEz0AAeSwy6lpXCMj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026 Sweden Youth Stadium Home Soccer Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/Ez0AAeSwy6lpXCMj/s-l1600.jpg" },
+      { store: "eBay", price: 40.66, shipping: 13.62, currency: "USD", url: "https://www.ebay.com/itm/158300298879?_skw=Sweden+home+soccer+jersey+kids+youth&hash=item24db6ede7f%3Ag%3AsPkAAeSwYHhqrtKa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Goteborg 1980s Sweden Home Football Shirt Jersey Size L Kids", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sPkAAeSwYHhqrtKa/s-l1600.jpg" },
     ],
   },
 {
