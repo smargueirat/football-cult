@@ -13,11 +13,20 @@ export default function robots(): MetadataRoute.Robots {
   );
 
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-      disallow: ["/api/", ...LOCALES.map((l) => `/${l}/favoritos`)],
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/api/", ...LOCALES.map((l) => `/${l}/favoritos`)],
+      },
+      // Crawlers de SEO/scraping sin valor para el sitio que rastrean
+      // decenas de miles de URLs dinámicas (cada una una invocación de
+      // función en Vercel Hobby, 4 h/mes de CPU activa).
+      {
+        userAgent: ["AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "PetalBot", "Bytespider", "BLEXBot", "DataForSeoBot"],
+        disallow: "/",
+      },
+    ],
     sitemap: sitemaps,
   };
 }

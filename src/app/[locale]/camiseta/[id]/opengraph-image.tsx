@@ -6,6 +6,12 @@ import { bestOffer, brandNames, findProduct, teamNames, typeNames } from "@/data
 export const alt = "Football Cult Archive";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+// Cacheada una semana en el CDN: generar la imagen (satori) es CPU pesada
+// y cada URL de camiseta la pide (Googlebot, Facebook, WhatsApp...).
+export const revalidate = 604800;
+export function generateStaticParams() {
+  return [];
+}
 
 // Satori no puede usar next/font, así que traemos los mismos pesos que
 // ya usa el sitio (Alfa Slab One para el titular, Cormorant Garamond

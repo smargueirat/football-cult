@@ -34,6 +34,17 @@ function findBall(id: string) {
   return ballProducts.find((p) => p.id === id);
 }
 
+// ISR (2026-09-20): sin generateStaticParams estas páginas eran ƒ
+// (cache-control no-store): cada visita de un usuario o de Googlebot
+// ejecutaba una función que carga el catálogo entero -- la causa más
+// probable de que la cuenta Hobby llegara al 100% de Fluid Active CPU.
+// Con esto no se prerenderiza nada (no suma storage al deploy), pero la
+// primera visita a cada URL queda cacheada en el CDN por un día.
+export const revalidate = 86400;
+export function generateStaticParams() {
+  return [];
+}
+
 export async function generateMetadata({
   params,
 }: {
