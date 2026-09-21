@@ -411,7 +411,7 @@ export interface Translations {
     pageTitle: string;
     pageSubtitle: string;
     typeLabel: string;
-    types: { shorts: string; jacket: string; pants: string; socks: string; sweatshirt: string; polo: string; set: string; tshirt: string };
+    types: { shorts: string; jacket: string; pants: string; socks: string; sweatshirt: string; polo: string; set: string; tshirt: string; shinguards: string; bag: string; armband: string; bib: string; baselayer: string };
   };
 }
 
@@ -890,10 +890,10 @@ export const translations: Record<Locale, Translations> = {
     },
     ropa: {
       navLabel: "Ropa",
-      pageTitle: "Ropa de fútbol",
+      pageTitle: "Ropa y accesorios de fútbol",
       pageSubtitle: "{n} prendas reales de tiendas aprobadas.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias", sweatshirt: "Sudaderas", polo: "Polos", set: "Conjuntos", tshirt: "Remeras" },
+      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias", sweatshirt: "Sudaderas", polo: "Polos", set: "Conjuntos", tshirt: "Remeras", shinguards: "Canilleras", bag: "Bolsos y mochilas", armband: "Cintas de capitán", bib: "Petos", baselayer: "Térmica y compresión" },
     },
   },
   pt: {
@@ -1369,10 +1369,10 @@ export const translations: Record<Locale, Translations> = {
     },
     ropa: {
       navLabel: "Roupas",
-      pageTitle: "Roupas de futebol",
+      pageTitle: "Roupas e acessórios de futebol",
       pageSubtitle: "{n} peças reais de lojas aprovadas.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias", sweatshirt: "Moletons", polo: "Polos", set: "Conjuntos", tshirt: "Camisetas" },
+      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias", sweatshirt: "Moletons", polo: "Polos", set: "Conjuntos", tshirt: "Camisetas", shinguards: "Caneleiras", bag: "Bolsas e mochilas", armband: "Braçadeiras de capitão", bib: "Coletes", baselayer: "Segunda pele e compressão" },
     },
   },
   en: {
@@ -1848,10 +1848,10 @@ export const translations: Record<Locale, Translations> = {
     },
     ropa: {
       navLabel: "Apparel",
-      pageTitle: "Football apparel",
+      pageTitle: "Football apparel & accessories",
       pageSubtitle: "{n} real items from approved stores.",
       typeLabel: "Type",
-      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks", sweatshirt: "Sweatshirts", polo: "Polos", set: "Sets", tshirt: "T-shirts" },
+      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks", sweatshirt: "Sweatshirts", polo: "Polos", set: "Sets", tshirt: "T-shirts", shinguards: "Shin guards", bag: "Bags", armband: "Captain armbands", bib: "Training bibs", baselayer: "Base layers & compression" },
     },
   },
   fr: {
@@ -2327,10 +2327,10 @@ export const translations: Record<Locale, Translations> = {
     },
     ropa: {
       navLabel: "Vêtements",
-      pageTitle: "Vêtements de football",
+      pageTitle: "Vêtements et accessoires de football",
       pageSubtitle: "{n} articles réels de boutiques approuvées.",
       typeLabel: "Type",
-      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes", sweatshirt: "Sweats", polo: "Polos", set: "Ensembles", tshirt: "T-shirts" },
+      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes", sweatshirt: "Sweats", polo: "Polos", set: "Ensembles", tshirt: "T-shirts", shinguards: "Protège-tibias", bag: "Sacs", armband: "Brassards de capitaine", bib: "Chasubles", baselayer: "Sous-vêtements techniques" },
     },
   },
   it: {
@@ -2806,10 +2806,10 @@ export const translations: Record<Locale, Translations> = {
     },
     ropa: {
       navLabel: "Abbigliamento",
-      pageTitle: "Abbigliamento da calcio",
+      pageTitle: "Abbigliamento e accessori da calcio",
       pageSubtitle: "{n} capi reali da negozi approvati.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni", sweatshirt: "Felpe", polo: "Polo", set: "Completi", tshirt: "Magliette" },
+      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni", sweatshirt: "Felpe", polo: "Polo", set: "Completi", tshirt: "Magliette", shinguards: "Parastinchi", bag: "Borse e zaini", armband: "Fasce da capitano", bib: "Casacche", baselayer: "Intimo tecnico e compressione" },
     },
   },
 };

@@ -419,6 +419,18 @@ if __name__ == '__main__':
     mine_apparel_type('polo', 'Polo', apparel_results)
     mine_apparel_type('set', 'Ensemble', apparel_results)
     mine_apparel_type('tshirt', 'T-shirt', apparel_results)
+    # Accesorios (2026-09-21, pedido de ampliar catálogo): misma sección
+    # "Ropa" (no hay una sección nueva), tipos extra. jacket suma las
+    # chaquetas de abrigo que no se llaman "Veste".
+    for kw in ('Doudoune', 'Coupe-vent', 'Parka'):
+        mine_apparel_type('jacket', kw, apparel_results)
+    mine_apparel_type('shinguards', 'Protège-tibias', apparel_results)
+    for kw in ('Sac de sport', 'Sac à dos', 'Sac à ballon'):
+        mine_apparel_type('bag', kw, apparel_results)
+    mine_apparel_type('armband', 'Brassard', apparel_results)
+    mine_apparel_type('bib', 'Chasuble', apparel_results)
+    for kw in ('Sous maillot', 'Legging', 'Cuissard', 'Manchon jambe'):
+        mine_apparel_type('baselayer', kw, apparel_results)
 
     canonicalize_brands(gloves_results)
     canonicalize_brands(balls_results)
