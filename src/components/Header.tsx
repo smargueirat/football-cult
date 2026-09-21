@@ -3,6 +3,7 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "@/lib/i18n/LocaleLink";
+import NavIcon from "./NavIcon";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import SectionsMenu from "./SectionsMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -57,8 +58,8 @@ export default function Header() {
         </div>
         <div className="flex shrink-0 items-center gap-0.5 sm:gap-5">
           <nav className="hidden items-center gap-5 text-sm text-[#5b5b57] lg:flex">
-            <Link href="/" className="transition-colors hover:text-[#1a1a1a]">
-              🔍 {t.nav.search}
+            <Link href="/" className="flex items-center gap-1.5 transition-colors hover:text-[#1a1a1a]">
+              <NavIcon kind="search" /> {t.nav.search}
             </Link>
             <SectionsMenu />
           </nav>

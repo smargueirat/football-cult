@@ -1,4 +1,5 @@
 "use client";
+import NavIcon from "./NavIcon";
 
 import Image from "next/image";
 import Link from "@/lib/i18n/LocaleLink";
@@ -86,9 +87,9 @@ export default function MobileMenu() {
                     e.preventDefault();
                     go("/");
                   }}
-                  className="rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                  className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
                 >
-                  🔍 {t.nav.search}
+                  <NavIcon kind="search" /> {t.nav.search}
                 </Link>
               </nav>
 
@@ -100,9 +101,9 @@ export default function MobileMenu() {
                   e.preventDefault();
                   go("/");
                 }}
-                className="rounded-xl px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#8a6a1f] transition-colors hover:bg-[#C9A24B]/10"
+                className="flex items-center gap-2 rounded-xl px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#8a6a1f] transition-colors hover:bg-[#C9A24B]/10"
               >
-                🛒 {t.nav.catalog}
+                <NavIcon kind="grid" className="h-4 w-4" /> {t.nav.catalog}
               </Link>
               <nav className="mt-1 flex flex-col gap-1">
                 {sectionLinks.map((link) => (

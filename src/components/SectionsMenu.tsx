@@ -1,4 +1,5 @@
 "use client";
+import NavIcon from "./NavIcon";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -62,9 +63,9 @@ export default function SectionsMenu() {
         ref={buttonRef}
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="flex items-center gap-1 whitespace-nowrap transition-colors hover:text-[#1a1a1a]"
+        className="flex items-center gap-1.5 whitespace-nowrap transition-colors hover:text-[#1a1a1a]"
       >
-        🛒 {t.nav.categories}
+        <NavIcon kind="grid" /> {t.nav.categories}
         <svg
           className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`}
           fill="none"
