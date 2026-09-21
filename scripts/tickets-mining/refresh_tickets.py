@@ -80,6 +80,10 @@ def load_venue_cities():
 
 def build_entries(mined):
     cities = load_venue_cities()
+    # El feed no viene en un orden estable entre dias, asi que sin esto
+    # tickets.ts se reescribe entero cada scan (50k lineas de diff por 3
+    # eventos nuevos) y los ids con sufijo "-2" bailan entre ejecuciones.
+    mined = sorted(mined, key=lambda d: (d["date"], d["time"], d["event"]))
     entries = []
     seen_ids = set()
     for d in mined:

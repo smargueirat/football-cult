@@ -117,17 +117,43 @@ def eu_size_from_uk_eu(v):
 def dot_size(v):
     return v.replace(',', '.').strip()
 
+LETTER_SIZE_RE = re.compile(r'(\d+)?(X*)([SML])\b', re.I)
+
+def letter_size_key(s):
+    """S/M/L/XL/2XL/3XS... -> escala numerica centrada en M=0, o None.
+
+    Se prueba ANTES que el regex numerico porque "3XS" tambien empieza con
+    un digito: sin esto caia en la rama numerica y ordenaba como un 3.
+    """
+    m = LETTER_SIZE_RE.match(s.strip())
+    if not m:
+        return None
+    k = int(m.group(1)) if m.group(1) else len(m.group(2))
+    base = {'S': -1, 'M': 0, 'L': 1}[m.group(3).upper()]
+    return base * (1 + k)
+
 def size_sort_key(s):
     # tallas adidas vienen en "tercios" reales (ej. "36 2/3", "37 1/3"),
     # no en .5 como las de otras tiendas -- hay que sumar la fraccion para
     # que ordenen bien.
+    # Las tallas de letra (ropa/guantes en gear-mining) no matchean el
+    # regex numerico y caian todas en 0, asi que quedaban ordenadas por el
+    # orden arbitrario del set de origen -- ilegible para el usuario ("XL,
+    # M, S, L") y ademas reescribia el .ts en cada scan sin cambio real.
+    # Devuelve una tupla y no un numero a proposito: variantes como
+    # "XL Tall 3" o "M Tall" caen en el mismo escalon que su talla base, y
+    # sin el string como desempate el orden lo decidia el set de origen,
+    # distinto en cada corrida (reescribia el .ts entero cada scan).
+    letter = letter_size_key(s)
+    if letter is not None:
+        return (letter, s)
     m = re.match(r'(\d+(?:\.\d+)?)(?:\s+(\d)/(\d))?', s.strip())
     if not m:
-        return 0
+        return (0, s)
     base = float(m.group(1))
     if m.group(2):
         base += float(m.group(2)) / float(m.group(3))
-    return base
+    return (base, s)
 
 # Tabla estándar de conversión de calzado UK -> EU (hombre/unisex), la
 # misma clase de tabla ya usada para los 71 legacy (ver comentario del

@@ -153,7 +153,17 @@ def merge_mirror_offers(mined):
 def build_entries(mined, used_ids):
     entries = []
     seen_ids = set(used_ids)
-    for group in merge_mirror_offers(mined):
+    # Los feeds no vienen en un orden estable entre dias. Sin ordenar aca,
+    # boots.ts se reescribe casi entero cada scan (303 ids solo movidos de
+    # sitio en el pase del 2026-09-21) y -- peor -- el sufijo "-2" que
+    # desempata ids repetidos se reparte distinto cada dia, asi que un id
+    # puede saltar entre "x" y "x-2" sin que el producto cambie. Los ids
+    # cargan favoritos (ver "Product id stability" en catalog-mining).
+    groups = sorted(
+        merge_mirror_offers(mined),
+        key=lambda g: (slugify(f"{g[0]['store']}-{g[0]['brand']}-{g[0]['model']}-{g[0]['groundType']}"), g[0]['url']),
+    )
+    for group in groups:
         d = group[0]
         base = slugify(f"{d['store']}-{d['brand']}-{d['model']}-{d['groundType']}")
         sid = base

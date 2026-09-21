@@ -747,6 +747,11 @@
   "qid": "Q684727"
  },
  "Stadion An der Alten Foersterei": null,
+ "Stadion Poljud": {
+  "city": "Split",
+  "desc": "football stadium in Split, Croatia",
+  "qid": "Q841384"
+ },
  "Stadion an der Bremer Brucke": null,
  "Stadion der Freundschaft": {
   "city": "Cottbus",
@@ -816,6 +821,7 @@
   "desc": "stadium in London, England",
   "qid": "Q55074091"
  },
+ "Toughsheet Community Stadium": null,
  "Trolli Arena": {
   "city": "Bavaria",
   "desc": "football stadium in Bavaria, Germany",

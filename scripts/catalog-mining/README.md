@@ -2409,3 +2409,101 @@ this pass's kids picks matched an existing `{team}-{type}-kids` id, so zero were
 actionable and nothing was lost today, but this is a real gap worth closing.
 
 **Kids refresh gap closed (2026-09-20).** `refresh.py` now takes `--kids`: without it kids blocks are skipped (as before), with it ONLY kids blocks are touched. Run it on `kids_picks.json` after `gen_kids_teams.py` (see daily_scan.sh). First run: 85 kids offers replaced, 37 inserted, 0 ambiguous.
+
+## Daily pass (2026-09-21) -- FansJerseyHub prices were labelled EUR but charged in USD, and three daily files were rewriting themselves for no reason
+
+All 14 Awin jersey feeds + the 5 Rakuten Brazil stores + one `ebay_mine_cycle.py`
+batch (cycle 3 at 360/384, 60 teams newly completed, **zero 429s**). Soicos
+skipped again -- no `claude-in-chrome`. Umbro (MID 41001) still absent from the
+Rakuten FTP listing (7th pass running). **Zero new products from every CSV feed**
+(5th such pass); 17 new products from eBay (1 current, 0 kids, 16 retro).
+`tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**Real data bug: 330 FansJerseyHub offers carried `currency: "EUR"` while the
+store charges USD.** The feed's price column is literally `"29.99 USD"`, and the
+on-file offers had the same *number* under a euro sign -- so every one of them
+under-reported the real price by the FX gap and sorted wrong against every other
+store. Fixed by passing `USD` to `refresh.py` for that store; the run replaced
+all 330. **The number matching is exactly why this survived so long** -- a
+currency mislabel is invisible to a price-diff check, only to reading the feed's
+own unit. When onboarding a store, read the price column's *unit*, not just its
+value; a Google-format feed puts the currency inside the price string.
+
+**Three daily-refreshed files were rewriting themselves end-to-end with no real
+change**, which buried the genuine diff and -- worse -- was quietly reshuffling
+ids that carry favourites:
+
+- `refresh_tickets.py`, `refresh_boots.py` and `refresh_gear.py` all emitted
+  products in *feed order*, and the feeds are not stably ordered between days.
+  `tickets.ts` churned **55k lines for 3 new events**; `boots.ts` had 303 ids
+  that only moved. Each script now sorts its entries before building (by
+  `(date, time, event)` for tickets, by the id slug for boots/gear).
+- The same ordering fed the `-2` suffix that disambiguates colliding slugs, so a
+  boot could flip between `x` and `x-2` day to day for no reason. Sorting first
+  makes that assignment deterministic too. (One-time cost: today's run re-keyed
+  the previously-unstable duplicates. 64 of 4947 common boot ids changed which
+  *model string* they point at, all of them the store's own casing drift.)
+- `size_sort_key()` returned `0` for every non-numeric size, so letter sizes came
+  out in set-iteration order (`["XL", "M", "S", "L"]`) -- unreadable, and
+  different on every run. It now maps `S/M/L/XL/2XL/3XS...` onto a scale centred
+  on `M=0`, tried **before** the numeric branch (`"3XS"` was being read as the
+  number 3), and returns `(key, original)` so suffixed variants like `"XL Tall 3"`
+  tie-break deterministically instead of by set order. All three files are now
+  byte-identical across back-to-back runs, verified.
+
+**New false-positive class: a New Era cap.** The kids pass picked
+`vancouverwhitecaps|third` from "Youth New Era Blue Vancouver Whitecaps FC 2026
+Third Jersey Hook 9TWENTY" -- **"Jersey Hook" is a New Era cap collection** and
+`9TWENTY` is a cap silhouette, so the word "jersey" in a headwear product name
+walked straight through `JERSEY_RE`. Only the photo catches it. `9TWENTY`/
+`59FIFTY`/`9FORTY` in a title means a cap.
+
+**The kit supplier tell worked twice on the same club.** `chivas|home` and
+`chivas|away` both claimed 26/27: the home photo is **Puma** (gold-trim variant
+of the Puma-era stripes), the away is **Nike** with a "Nike x Chivas" hang tag.
+Chivas moved to Nike for 26/27, so the Nike away is the genuinely new kit (added
+as `chivas-away-202627`) and the Puma "26/27" home cannot be -- dropped. Two
+picks for one club disagreeing on the supplier is a free date check.
+
+Other current drops: the $28.98 template seller produced 3 of 5 NEW picks
+(`braga|third`, `leon|home` -- a Charly shirt with a "60 años" hem mark --
+and `clubamerica|prematch`) plus 7 of 21 season conflicts, all at exactly $28.98.
+`qatar|third`/`qatar|prematch` are PSG (Qatar Airways), the documented sponsor
+collision, and `qatar` produced 7 more of the same in retro (PSG, Inter Milan x2,
+Barcelona x2, USA, Argentina). `realvalladolid|home` "26/27 REPLICA" is a
+**Reebok** shirt with Estrella Galicia 0,0 (~2019-21). `panama|home` "2026" is
+Reebok too (Panama is New Balance now) and `haiti|home`/`away` "2026-27" are
+pixel-identical to the `haiti-*-2026` already on file -- both on the metal-grid
+replica backdrop. `sudafrica|home` kids is the 2022/23 chevron shirt with
+CLIMACOOL branding, the same "kids blocks hardcode season 2026" trap as 09-15.
+
+**Retro: 38 of 55 new picks dropped, 38 of 558 merges dropped.** Wrong team was
+again the biggest bucket and `team_collision_scan.py` found most of it (JS
+Kabylie under `argelia`, Rapid Wien under `austria`, Antalyaspor/Eto'o under
+`camerun` x3, Al-Masry and Al Ahly under `egipto`, Al Hilal under `grecia`,
+Malavan under `iran`, Red Star and Juventus under `serbia`, Kaizer Chiefs under
+`sudafrica`, three Venezuelan clubs under `venezuela`). **Three it missed, all
+found by reading titles**: England's 2010 World Cup kits filed under `sudafrica`
+x3 (the tournament *host* named in the title), an England shirt signed "vs
+Cameroon", and **Guinea-Bissau shirts under `guinea`** -- a country name that is
+a strict prefix of another country's name is a collision the scan cannot see,
+because the shorter pattern's match is never longer than the longer one's.
+
+Also dropped: `botafogo|away|2024/25`, a real Reebok black/gold Botafogo shirt
+that is their **third**, not the away its key claims (wrong-type, skip rather
+than re-key); `sanlorenzo|home|2008` at $450 with no cheaper alternative;
+`sudafrica|home|2007/08` listed "(Defective)"; `irlandadelnorte|home|1984/86` in
+**YXL** (youth); `monterrey|home|2020` and `costamarfil|home|2026/27`, both
+one-listing-sells-home-*and*-away; the "Custom Name Number LIGA MX ... 3D" print
+seller at $28.99 (3 picks). 36 `\bretro\b`-titled reproductions dropped from the
+merge set per the 09-19 rule.
+
+All 7 CSV-feed season conflicts were noise, the ratio holding: 4 had their exact
+link AND decoded image already in `products.ts` (AdidasPT Tiro 25 x2, BSTN Inter
+Miami, ForumSport Alaves), and the other 3 are the same two older-stock skips as
+every pass since 09-13 (`noruega|home` 2025 against the 2026 on file, 8th pass;
+`internacional|home` 25/26 against the 202627, 8th pass). `ebay_check_stale.py`:
+24 of 200 (12%), back in the normal band after 09-20's 22.5%. DecathlonIE a
+genuine zero again -- 3579 jersey-titled rows, 20 team matches, all 23/24-24/25
+licensed stock, Decathlon's own FF100/FF500 generic supporter tees, or an All
+Blacks **rugby** shirt. ProSoccer footwear-only as always.

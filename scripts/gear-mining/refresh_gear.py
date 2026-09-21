@@ -117,6 +117,10 @@ def build_entries(mined, used_ids):
     # tiendas reales, ninguna más "dueña" del id que las otras.
     entries = []
     seen_ids = set(used_ids)
+    # Mismo motivo que refresh_boots.py: el orden del feed no es estable
+    # entre dias, asi que sin esto el .ts se reescribe entero cada scan y
+    # el sufijo "-2" de desempate se reparte distinto cada vez.
+    mined = sorted(mined, key=lambda d: (slugify(f"{d['brand']}-{d['model']}"), d['offers'][0]['url']))
     for d in mined:
         base = slugify(f"{d['brand']}-{d['model']}")
         sid = base
