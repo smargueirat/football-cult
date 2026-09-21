@@ -5,6 +5,7 @@ import FloatingFilterButton from "@/components/FloatingFilterButton";
 import HeroCarousel from "@/components/HeroCarousel";
 import CategorySections from "@/components/CategorySections";
 import PriceDropsSection from "@/components/PriceDropsSection";
+import LeagueShortcuts from "@/components/LeagueShortcuts";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Home() {
@@ -24,6 +25,8 @@ export default function Home() {
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-4 sm:px-8">
           <CategorySections />
         </section>
+
+        <LeagueShortcuts />
 
         <PriceDropsSection />
 

@@ -1,7 +1,7 @@
 // Íconos de línea del menú (reemplazan los emoji 🔍/🛒, que se veían
 // ajenos al resto del sitio). Trazo fino en dorado, mismo lenguaje que
 // los demás íconos SVG del header.
-export default function NavIcon({ kind, className = "" }: { kind: "search" | "grid"; className?: string }) {
+export default function NavIcon({ kind, className = "" }: { kind: "search" | "grid" | "trophy"; className?: string }) {
   return (
     <svg
       aria-hidden
@@ -17,6 +17,12 @@ export default function NavIcon({ kind, className = "" }: { kind: "search" | "gr
         <>
           <circle cx="11" cy="11" r="6.5" />
           <path d="M20 20l-4.2-4.2" />
+        </>
+      ) : kind === "trophy" ? (
+        <>
+          <path d="M8 4h8v5a4 4 0 0 1-8 0V4z" />
+          <path d="M8 6H5.5a1 1 0 0 0-1 1c0 2 1.3 3.5 3.5 3.8M16 6h2.5a1 1 0 0 1 1 1c0 2-1.3 3.5-3.5 3.8" />
+          <path d="M12 13v4M9 20h6M10 17h4" />
         </>
       ) : (
         <>
