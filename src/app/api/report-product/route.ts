@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { MAIL_FROM } from "@/lib/mailFrom";
 import { Resend } from "resend";
 
 const REASON_LABELS: Record<string, string> = {
@@ -51,7 +52,7 @@ export async function POST(req: NextRequest) {
       // yet (would need DNS records added) -- Resend's shared sandbox
       // sender works today without that, confirmed by a real test send.
       // Swap to reportes@football-cult.com once/if the domain is verified.
-      from: "Football Cult <onboarding@resend.dev>",
+      from: MAIL_FROM,
       to,
       subject: `Reporte de producto: ${productId}`,
       text: [

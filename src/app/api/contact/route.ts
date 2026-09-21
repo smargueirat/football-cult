@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { MAIL_FROM } from "@/lib/mailFrom";
 import { Resend } from "resend";
 
 // Mismo patrón que /api/report-product: sin auth (un formulario de
@@ -37,7 +38,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       // Mismo remitente sandbox que /api/report-product hasta que el
       // dominio football-cult.com esté verificado en Resend.
-      from: "Football Cult <onboarding@resend.dev>",
+      from: MAIL_FROM,
       to,
       replyTo: email,
       subject: `Contacto: ${name}`,

@@ -1,4 +1,5 @@
 import NextAuth from "next-auth";
+import { MAIL_FROM } from "@/lib/mailFrom";
 import Google from "next-auth/providers/google";
 import Resend from "next-auth/providers/resend";
 import { RedisAdapter } from "@/lib/auth/redisAdapter";
@@ -17,7 +18,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       apiKey: process.env.RESEND_API_KEY,
       // Dominio football-cult.com todavía no verificado en Resend (mismo
       // motivo que /api/report-product) -- usamos el remitente sandbox.
-      from: "Football Cult <onboarding@resend.dev>",
+      from: MAIL_FROM,
     }),
   ],
   session: {

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { MAIL_FROM } from "@/lib/mailFrom";
 import { gunzipSync } from "zlib";
 import { parse } from "csv-parse/sync";
 import { Resend } from "resend";
@@ -172,7 +173,7 @@ export async function GET(req: NextRequest) {
 
       try {
         await resend.emails.send({
-          from: "Football Cult <onboarding@resend.dev>",
+          from: MAIL_FROM,
           // Resend permite varios destinatarios en un mismo envío -- un
           // mail por corrida por producto, no uno por suscriptor.
           to: subscribers,
