@@ -5,6 +5,7 @@ import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { cheapest, leagueTeams, statsOf, teamItems, teamName } from "@/lib/hubs";
 import { LEAGUES, leagueName } from "@/data/teamMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
+import DaznLayout from "@/components/hubs/DaznLayout";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 
 export const revalidate = 86400;
@@ -73,17 +74,19 @@ export default async function LeagueHub({ params }: P) {
           },
         ]}
       />
-      <Crumbs locale={locale} trail={[{ label: countryName, href: `/${locale}/pais/${d.league.country}` }, { label: name }]} />
-      <HubHeader
-        h1={s.leagueH1(name)}
-        intro={s.leagueIntro({ league: name, teams: d.teams.length, n: d.stats.count, price: money(d.stats.minOffer) })}
-      />
-      <Section title={s.teams}>
-        <TeamLinks items={teamLinks} locale={locale} />
-      </Section>
-      <Section title={s.bestDeals}>
-        <JerseyGrid items={cheapest(d.items, 12)} locale={locale} showTeam />
-      </Section>
+      <DaznLayout league={slug} leagueName={name}>
+        <Crumbs locale={locale} trail={[{ label: countryName, href: `/${locale}/pais/${d.league.country}` }, { label: name }]} />
+        <HubHeader
+          h1={s.leagueH1(name)}
+          intro={s.leagueIntro({ league: name, teams: d.teams.length, n: d.stats.count, price: money(d.stats.minOffer) })}
+        />
+        <Section title={s.teams}>
+          <TeamLinks items={teamLinks} locale={locale} />
+        </Section>
+        <Section title={s.bestDeals}>
+          <JerseyGrid items={cheapest(d.items, 12)} locale={locale} showTeam />
+        </Section>
+      </DaznLayout>
     </div>
   );
 }
