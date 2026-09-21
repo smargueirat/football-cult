@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import GearHubLinks from "@/components/hubs/GearHubLinks";
+import { asLocale } from "@/lib/hubPages";
 import BotasPageClient from "./BotasPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
@@ -39,6 +41,12 @@ export async function generateMetadata({
   };
 }
 
-export default function BotasPage() {
-  return <BotasPageClient />;
+export default async function BotasPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <>
+      <BotasPageClient />
+      <GearHubLinks section="botas" locale={asLocale(locale)} />
+    </>
+  );
 }

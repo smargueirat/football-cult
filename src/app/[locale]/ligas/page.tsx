@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { leagueTeams, teamItems, teamName } from "@/lib/hubs";
+import { SEASON_UI } from "@/lib/seasonStrings";
+import { priceDrops, seasonItems, seasonList, seasonSlug } from "@/lib/seasonHubs";
 import { COUNTRY_SLUGS, LEAGUES, leagueName } from "@/data/teamMeta";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 
@@ -31,6 +33,15 @@ export default async function LeaguesIndex({ params }: P) {
         <TeamLinks
           locale={locale}
           items={leagues.map(({ l, n }) => ({ href: `/${locale}/liga/${l.slug}`, name: leagueName(l, locale), count: n }))}
+        />
+      </Section>
+      <Section title={SEASON_UI[locale].seasons}>
+        <TeamLinks
+          locale={locale}
+          items={[
+            ...seasonList().map((se) => ({ href: `/${locale}/temporada/${seasonSlug(se)}`, name: SEASON_UI[locale].seasonH1(se), count: seasonItems(se).length })),
+            { href: `/${locale}/ofertas`, name: SEASON_UI[locale].offersH1, count: priceDrops().length },
+          ]}
         />
       </Section>
       <Section title={s.browseCountries}>

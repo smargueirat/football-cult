@@ -4,6 +4,8 @@ import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { kindsLabel, leagueTeams, statsOf, teamItems, teamName } from "@/lib/hubs";
 import { leagueName, leagueOfTeam } from "@/data/teamMeta";
+import { SEASON_UI } from "@/lib/seasonStrings";
+import { seasonList, seasonSlug } from "@/lib/seasonHubs";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 
@@ -42,6 +44,13 @@ export default async function TeamHub({ params }: P) {
   const league = leagueOfTeam(team);
   const countryKey = league?.country;
   const kinds = kindsLabel(items, locale) || s.allJerseys.toLowerCase();
+  const seasonSlugs = new Set(seasonList().map(seasonSlug));
+  const seasons: { season: string; list: typeof items }[] = [];
+  for (const it of items) {
+    const last = seasons[seasons.length - 1];
+    if (last && last.season === it.product.season) last.list.push(it);
+    else seasons.push({ season: it.product.season, list: [it] });
+  }
 
   const siblings = league
     ? leagueTeams(league.slug)
@@ -87,9 +96,19 @@ export default async function TeamHub({ params }: P) {
         h1={s.teamH1(name)}
         intro={s.teamIntro({ team: name, n: stats.count, stores: stats.stores, price: priceOf(items), kinds })}
       />
-      <Section title={s.allJerseys}>
-        <JerseyGrid items={items} locale={locale} />
-      </Section>
+      {seasons.map(({ season, list }) => (
+        <section key={season} id={`s-${seasonSlug(season)}`} className="mb-10 scroll-mt-24">
+          <h2 className="font-vintage mb-4 text-xl text-[#1B3B2B] sm:text-2xl">
+            {name} {season}
+            {seasonSlugs.has(seasonSlug(season)) && (
+              <a className="ml-3 text-sm font-normal text-[#675c44] underline" href={`/${locale}/temporada/${seasonSlug(season)}`}>
+                {SEASON_UI[locale].seasonH1(season)} →
+              </a>
+            )}
+          </h2>
+          <JerseyGrid items={list} locale={locale} />
+        </section>
+      ))}
       {league && countryKey && (
         <Section title={s.otherTeams(leagueName(league, locale))}>
           <TeamLinks

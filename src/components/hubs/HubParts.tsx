@@ -51,7 +51,7 @@ export function Section({ title, children }: { title: string; children: ReactNod
   );
 }
 
-export function JerseyGrid({ items, locale, showTeam }: { items: HubItem[]; locale: HubLocale; showTeam?: boolean }) {
+export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem[]; locale: HubLocale; showTeam?: boolean; badges?: Record<string, string> }) {
   const s = HUB[locale];
   return (
     <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-6">
@@ -77,6 +77,9 @@ export function JerseyGrid({ items, locale, showTeam }: { items: HubItem[]; loca
                     decoding="async"
                     className="h-full w-full object-contain"
                   />
+                )}
+                {badges?.[product.id] && (
+                  <span className="absolute right-2 top-2 rounded bg-[#B45309] px-2 py-0.5 text-[10px] font-bold text-white">{badges[product.id]}</span>
                 )}
                 {age !== "men" && (
                   <span className="vintage-plaque absolute left-2 top-2 rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
@@ -105,7 +108,7 @@ export interface TeamLink {
   price?: string;
 }
 
-export function TeamLinks({ items, locale }: { items: TeamLink[]; locale: HubLocale }) {
+export function TeamLinks({ items, locale, countLabel }: { items: TeamLink[]; locale: HubLocale; countLabel?: (n: number) => string }) {
   const s = HUB[locale];
   return (
     <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -117,7 +120,7 @@ export function TeamLinks({ items, locale }: { items: TeamLink[]; locale: HubLoc
           >
             <span className="font-medium">{t.name}</span>
             <span className="shrink-0 text-xs text-[#675c44]">
-              {s.jerseysCount(t.count)}
+              {(countLabel ?? s.jerseysCount)(t.count)}
               {t.price ? ` · ${s.from} ${t.price}` : ""}
             </span>
           </Link>

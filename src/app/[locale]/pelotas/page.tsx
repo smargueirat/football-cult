@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import GearHubLinks from "@/components/hubs/GearHubLinks";
+import { asLocale } from "@/lib/hubPages";
 import PelotasPageClient from "./PelotasPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
@@ -39,6 +41,12 @@ export async function generateMetadata({
   };
 }
 
-export default function PelotasPage() {
-  return <PelotasPageClient />;
+export default async function PelotasPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <>
+      <PelotasPageClient />
+      <GearHubLinks section="pelotas" locale={asLocale(locale)} />
+    </>
+  );
 }

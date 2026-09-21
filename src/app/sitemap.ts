@@ -9,6 +9,8 @@ import { LOCALES } from "@/lib/i18n/locales";
 import { COUNTRY_SLUGS, LEAGUES } from "@/data/teamMeta";
 import { countryTeams, leagueTeams, teamKeysWithItems } from "@/lib/hubs";
 import { seasonSortValue } from "@/lib/productMeta";
+import { brandFacets, brandGroundCombos, groundFacets, groundSlug, typeFacets } from "@/lib/gearHubs";
+import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
 
 const BASE_URL = "https://football-cult.com";
 // Dos límites reales, no solo el de Google (50.000 URLs/sitemap,
@@ -70,6 +72,14 @@ function allRoutes(): MetadataRoute.Sitemap {
     ...LEAGUES.filter((l) => leagueTeams(l.slug).length > 0).map((l) => `/liga/${l.slug}`),
     ...COUNTRY_SLUGS.filter((c) => countryTeams(c).length > 0).map((c) => `/pais/${c}`),
     ...teamKeysWithItems().map((k) => `/equipo/${k}`),
+    // Hubs de temporada, ofertas y de botas/guantes/pelotas/ropa (marca,
+    // terreno, tipo): solo los que tienen suficiente producto hoy.
+    "/ofertas",
+    ...seasonList().flatMap((se) => [`/temporada/${seasonSlug(se)}`, ...seasonTypes(se).map((t) => `/temporada/${seasonSlug(se)}/${t.type}`)]),
+    ...(["botas", "guantes", "pelotas", "ropa"] as const).flatMap((sec) => brandFacets(sec).map((b) => `/${sec}/marca/${b.slug}`)),
+    ...groundFacets().map((g) => `/botas/terreno/${g.slug}`),
+    ...brandGroundCombos().map((c) => `/botas/marca/${c.brandSlug}/${groundSlug(c.ground)}`),
+    ...typeFacets().map((t) => `/ropa/tipo/${t.slug}`),
   ];
   const hubRoutes = hubPaths.flatMap((path) =>
     LOCALES.map((locale) => ({

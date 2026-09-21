@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import GearHubLinks from "@/components/hubs/GearHubLinks";
+import { asLocale } from "@/lib/hubPages";
 import RopaPageClient from "./RopaPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
@@ -39,6 +41,12 @@ export async function generateMetadata({
   };
 }
 
-export default function RopaPage() {
-  return <RopaPageClient />;
+export default async function RopaPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  return (
+    <>
+      <RopaPageClient />
+      <GearHubLinks section="ropa" locale={asLocale(locale)} />
+    </>
+  );
 }

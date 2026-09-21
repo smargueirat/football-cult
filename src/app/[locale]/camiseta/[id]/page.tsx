@@ -9,6 +9,7 @@ import {
   typeNames,
 } from "@/data/products";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
+import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
@@ -142,6 +143,7 @@ export default async function JerseyDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product, locale)) }}
       />
       <JerseyDetailClient product={product} priceHistory={priceHistory} sameTeamProducts={sameTeamProducts} />
+      <JerseyFaq product={product} locale={locale} />
     </>
   );
 }

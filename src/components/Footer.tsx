@@ -3,6 +3,7 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { HUB } from "@/lib/hubStrings";
+import { SEASON_UI } from "@/lib/seasonStrings";
 import { LEAGUES, leagueName } from "@/data/teamMeta";
 
 // Ligas principales enlazadas desde el footer de TODAS las páginas: enlaces
@@ -66,6 +67,12 @@ export default function Footer() {
       <nav aria-label={HUB[locale].leaguesIndex} className="mx-auto flex max-w-[1800px] flex-wrap gap-x-4 gap-y-2 px-4 pb-6 text-sm text-[#B8AF98] sm:px-8">
         <Link href="/ligas" className="font-medium text-[#E9D38F] transition-colors hover:text-[#F3E9C9]">
           {HUB[locale].leaguesIndex}
+        </Link>
+        <Link href="/temporada/2026-27" className="transition-colors hover:text-[#F3E9C9]">
+          {SEASON_UI[locale].seasonH1("2026/27")}
+        </Link>
+        <Link href="/ofertas" className="transition-colors hover:text-[#F3E9C9]">
+          {SEASON_UI[locale].offersH1}
         </Link>
         {FOOTER_LEAGUES.map((slug) => {
           const l = LEAGUES.find((x) => x.slug === slug);
