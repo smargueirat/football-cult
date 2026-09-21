@@ -155,5 +155,16 @@ export function buildFaq(locale: HubLocale, v: FaqVars): Qa[] {
       a: "Dipende dal negozio. Nel confronto mostriamo il costo di spedizione calcolato per il tuo paese quando disponibile, e i negozi che non spediscono lì restano fuori dal prezzo.",
     });
   }
+  // Alertas de precio: funcionan desde que football-cult.com quedó verificado
+  // en Resend (2026-09-21) -- antes el email solo le llegaba al dueño de la
+  // cuenta, por eso esta pregunta se había sacado.
+  const alertQa: Record<HubLocale, Qa> = {
+    es: { q: "¿Puedo recibir un aviso si baja el precio?", a: "Sí. Iniciá sesión y guardá la camiseta en favoritos: te avisamos por email si baja de precio." },
+    en: { q: "Can I get an alert if the price drops?", a: "Yes. Sign in and save the shirt to your favourites: we email you if the price goes down." },
+    pt: { q: "Posso receber um aviso se o preço cair?", a: "Sim. Faça login e salve a camisa nos favoritos: avisamos por email se o preço baixar." },
+    fr: { q: "Puis-je être alerté si le prix baisse ?", a: "Oui. Connectez-vous et ajoutez le maillot à vos favoris : nous vous prévenons par email si le prix baisse." },
+    it: { q: "Posso ricevere un avviso se il prezzo scende?", a: "Sì. Accedi e salva la maglia nei preferiti: ti avvisiamo via email se il prezzo scende." },
+  };
+  out.push(alertQa[locale]);
   return out;
 }

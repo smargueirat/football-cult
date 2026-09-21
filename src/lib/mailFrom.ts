@@ -1,6 +1,7 @@
 // Remitente de todos los emails (login, contacto, reportes, alertas de
-// precio). Por defecto el remitente de prueba de Resend, que SOLO entrega
-// al dueño de la cuenta: para que lleguen a otros usuarios hay que verificar
-// football-cult.com en Resend y setear RESEND_FROM en Vercel, p. ej.
-// RESEND_FROM="Football Cult <hola@football-cult.com>".
-export const MAIL_FROM = process.env.RESEND_FROM || "Football Cult <onboarding@resend.dev>";
+// precio). football-cult.com quedó VERIFICADO en Resend el 2026-09-21
+// (DNS en Namecheap: DKIM + rsend/send + DMARC), así que ya se puede enviar
+// a cualquier usuario. Antes era el remitente de prueba de Resend
+// (onboarding@resend.dev), que solo entrega al dueño de la cuenta.
+// RESEND_FROM permite cambiarlo desde Vercel sin tocar el código.
+export const MAIL_FROM = process.env.RESEND_FROM || "Football Cult <hola@football-cult.com>";
