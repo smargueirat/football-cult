@@ -2,9 +2,15 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { HUB } from "@/lib/hubStrings";
+import { LEAGUES, leagueName } from "@/data/teamMeta";
+
+// Ligas principales enlazadas desde el footer de TODAS las páginas: enlaces
+// rastreables sitewide hacia los hubs (ver src/app/[locale]/liga).
+const FOOTER_LEAGUES = ["premier-league", "laliga", "serie-a", "bundesliga", "ligue-1", "liga-argentina", "brasileirao", "liga-mx"];
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
 
   return (
     <footer className="vintage-dark border-t border-[#C9A24B]/25">
@@ -57,6 +63,19 @@ export default function Footer() {
           </Link>
         </nav>
       </div>
+      <nav aria-label={HUB[locale].leaguesIndex} className="mx-auto flex max-w-[1800px] flex-wrap gap-x-4 gap-y-2 px-4 pb-6 text-sm text-[#B8AF98] sm:px-8">
+        <Link href="/ligas" className="font-medium text-[#E9D38F] transition-colors hover:text-[#F3E9C9]">
+          {HUB[locale].leaguesIndex}
+        </Link>
+        {FOOTER_LEAGUES.map((slug) => {
+          const l = LEAGUES.find((x) => x.slug === slug);
+          return l ? (
+            <Link key={slug} href={`/liga/${slug}`} className="transition-colors hover:text-[#F3E9C9]">
+              {leagueName(l, locale)}
+            </Link>
+          ) : null;
+        })}
+      </nav>
       <div className="vintage-divider mx-4 max-w-[1800px] sm:mx-auto" />
       <p className="mx-auto max-w-[1800px] px-4 py-6 sm:px-8 text-xs text-[#8a836e]">
         {t.footer.disclaimer}

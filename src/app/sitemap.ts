@@ -6,6 +6,9 @@ import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
 import { apparelProducts } from "@/data/apparel";
 import { LOCALES } from "@/lib/i18n/locales";
+import { COUNTRY_SLUGS, LEAGUES } from "@/data/teamMeta";
+import { countryTeams, leagueTeams, teamKeysWithItems } from "@/lib/hubs";
+import { seasonSortValue } from "@/lib/productMeta";
 
 const BASE_URL = "https://football-cult.com";
 // Dos límites reales, no solo el de Google (50.000 URLs/sitemap,
@@ -48,6 +51,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/retro",
     "/mujer",
     "/ninos",
+    "/ligas",
   ];
 
   const staticRoutes = staticPaths.flatMap((path) =>
@@ -58,11 +62,43 @@ function allRoutes(): MetadataRoute.Sitemap {
     }))
   );
 
-  const productRoutes = products.flatMap((product) => {
+  // Hubs (equipo / liga / país): van justo después de las páginas fijas,
+  // o sea en el primer sitemap -- son la puerta de entrada a las fichas
+  // (cada hub enlaza a todos sus productos), así que conviene que Google
+  // los descubra primero. Sólo entran los que tienen productos hoy.
+  const hubPaths = [
+    ...LEAGUES.filter((l) => leagueTeams(l.slug).length > 0).map((l) => `/liga/${l.slug}`),
+    ...COUNTRY_SLUGS.filter((c) => countryTeams(c).length > 0).map((c) => `/pais/${c}`),
+    ...teamKeysWithItems().map((k) => `/equipo/${k}`),
+  ];
+  const hubRoutes = hubPaths.flatMap((path) =>
+    LOCALES.map((locale) => ({
+      url: `${BASE_URL}/${locale}${path}`,
+      lastModified: new Date(),
+      alternates: { languages: languagesFor(path) },
+    }))
+  );
+
+  // Camisetas: equipos con más catálogo primero, y dentro de cada equipo la
+  // temporada más nueva primero. Google ignora <priority> y no garantiza
+  // orden de rastreo, pero el orden estable deja los primeros archivos con
+  // lo más valioso y hace comparable la cobertura entre corridas. Sin
+  // lastModified a propósito: no tenemos una fecha real por producto y
+  // poner "hoy" en 100k URLs le enseña a Google a ignorar el campo.
+  const teamSize = new Map<string, number>();
+  for (const p of products) teamSize.set(p.teamKey, (teamSize.get(p.teamKey) ?? 0) + 1);
+  const orderedProducts = [...products].sort(
+    (a, b) =>
+      (teamSize.get(b.teamKey) ?? 0) - (teamSize.get(a.teamKey) ?? 0) ||
+      a.teamKey.localeCompare(b.teamKey) ||
+      seasonSortValue(b.season) - seasonSortValue(a.season) ||
+      a.id.localeCompare(b.id)
+  );
+
+  const productRoutes = orderedProducts.flatMap((product) => {
     const path = `/camiseta/${product.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }));
   });
@@ -71,7 +107,6 @@ function allRoutes(): MetadataRoute.Sitemap {
     const path = `/botas/${boot.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }));
   });
@@ -80,7 +115,6 @@ function allRoutes(): MetadataRoute.Sitemap {
     const path = `/guantes/${glove.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }));
   });
@@ -89,7 +123,6 @@ function allRoutes(): MetadataRoute.Sitemap {
     const path = `/pelotas/${ball.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }));
   });
@@ -98,7 +131,6 @@ function allRoutes(): MetadataRoute.Sitemap {
     const path = `/tickets/${ticket.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }));
   });
@@ -107,12 +139,11 @@ function allRoutes(): MetadataRoute.Sitemap {
     const path = `/ropa/${item.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }));
   });
 
-  return [...staticRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes, ...ticketRoutes, ...apparelRoutes];
+  return [...staticRoutes, ...hubRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes, ...ticketRoutes, ...apparelRoutes];
 }
 
 // Google rechaza (con error real, confirmado en Search Console 2026-09-17)

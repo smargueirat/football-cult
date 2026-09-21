@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/lib/i18n/LocaleLink";
+import { HUB } from "@/lib/hubStrings";
 import { useEffect, useMemo, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
 import type { Offer, Product, Size } from "@/data/products";
@@ -327,6 +328,12 @@ export default function JerseyDetailClient({
                 <span>{country.flag}</span>
                 {t.detail.storesCompared.replace("{n}", String(shippableCount))}
               </p>
+              <Link
+                href={`/equipo/${product.teamKey}`}
+                className="mt-1 inline-block text-sm font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#8a6a1f]"
+              >
+                {HUB[locale].teamH1(team)} →
+              </Link>
             </div>
             <div className="flex shrink-0 gap-2">
               <button
