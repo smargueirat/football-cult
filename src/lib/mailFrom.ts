@@ -4,4 +4,4 @@
 // a cualquier usuario. Antes era el remitente de prueba de Resend
 // (onboarding@resend.dev), que solo entrega al dueño de la cuenta.
 // RESEND_FROM permite cambiarlo desde Vercel sin tocar el código.
-export const MAIL_FROM = process.env.RESEND_FROM || "Football Cult <hola@football-cult.com>";
+export const MAIL_FROM = process.env.RESEND_FROM || "Football Cult <contact@football-cult.com>";
