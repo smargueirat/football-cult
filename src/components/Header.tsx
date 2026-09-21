@@ -4,6 +4,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "@/lib/i18n/LocaleLink";
 import NavIcon from "./NavIcon";
+import { HUB } from "@/lib/hubStrings";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import SectionsMenu from "./SectionsMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -21,7 +22,7 @@ const FavoritesButton = dynamic(() => import("./FavoritesButton"), { ssr: false 
 const CountrySelector = dynamic(() => import("./CountrySelector"), { ssr: false });
 
 export default function Header() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
 
   return (
     <header className="glass-panel sticky top-0 z-50 border-b border-[#C9A24B]/25">
@@ -60,6 +61,9 @@ export default function Header() {
           <nav className="hidden items-center gap-5 text-sm text-[#5b5b57] lg:flex">
             <Link href="/" className="flex items-center gap-1.5 transition-colors hover:text-[#1a1a1a]">
               <NavIcon kind="search" /> {t.nav.search}
+            </Link>
+            <Link href="/ligas" className="flex items-center gap-1.5 whitespace-nowrap transition-colors hover:text-[#1a1a1a]">
+              <NavIcon kind="trophy" /> {HUB[locale].leaguesIndex}
             </Link>
             <SectionsMenu />
           </nav>

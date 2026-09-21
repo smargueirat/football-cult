@@ -1,5 +1,6 @@
 "use client";
 import NavIcon from "./NavIcon";
+import { HUB } from "@/lib/hubStrings";
 
 import Image from "next/image";
 import Link from "@/lib/i18n/LocaleLink";
@@ -18,7 +19,7 @@ import Portal from "./Portal";
 // (SectionsMenu) -- pedido explícito del usuario: los emoji ahí se
 // veían mal, quedan mejor como círculo con foto, igual que en web.
 export default function MobileMenu() {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
@@ -90,6 +91,16 @@ export default function MobileMenu() {
                   className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
                 >
                   <NavIcon kind="search" /> {t.nav.search}
+                </Link>
+                <Link
+                  href="/ligas"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    go("/ligas");
+                  }}
+                  className="flex items-center gap-2 rounded-xl px-3 py-2.5 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                >
+                  <NavIcon kind="trophy" /> {HUB[locale].leaguesIndex}
                 </Link>
               </nav>
 
