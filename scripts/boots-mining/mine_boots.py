@@ -523,11 +523,26 @@ def mine_deporte_outlet():
 # "gratis": su propia política dice que el envío internacional queda
 # afuera del envío gratis) y sizes vacío en vez de inventar cualquiera
 # de los dos.
+def us_men_to_eu(custom_1):
+    # ProSoccer: "Men Size 9.5" (US hombre) -> EU con la misma tabla estándar
+    # US_TO_EU de FutbolEmotion. None si no es una talla adulta conocida.
+    m = re.match(r'Men Size ([\d.]+)$', (custom_1 or '').strip())
+    if not m:
+        return None
+    eu = US_TO_EU.get(float(m.group(1)))
+    return _fmt_eu(eu) if eu is not None else None
+
 def mine_prosoccer():
     if not os.path.exists(f"{FEEDS}/PROSOCCER.csv"):
         print('ProSoccer: feed not found, skipped')
         return
     GROUND_SUFFIX = re.compile(r'\b(FG|AG|SG|TF|MG)\b')
+    # El feed trae UNA fila por talla en stock ("Men Size 9.5", id
+    # "EH0761-9.5") -- agrupar por estilo (id sin la talla) da UN colorway
+    # real con sus tallas reales de hoy. Antes se agrupaba por modelo (mezclaba
+    # colorways) y sizes quedaba vacío, así que no había forma de filtrar por
+    # talla ni de saber qué talles seguían. Sólo filas "Men Size": las
+    # "Youth/Kids Size" son botas de niño que se colaban sin "JR" en el título.
     groups = {}
     with open(f"{FEEDS}/PROSOCCER.csv", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
@@ -536,18 +551,23 @@ def mine_prosoccer():
                 continue
             if EXCLUDE_KEYWORDS.search(title):
                 continue
+            if not (row.get('custom_1') or '').startswith('Men Size'):
+                continue
+            if row.get('stock_status') not in (None, '', 'instock'):
+                continue
             price = parse_price(row.get('search_price'))
             if not price:
                 continue
-            brand = (row.get('brand_name') or '').strip()
-            if brand == 'NULL':
-                brand = ''
-            model = norm_title(title)
-            key = (brand.lower(), model.lower())
-            groups.setdefault(key, []).append(row)
+            style = (row.get('merchant_product_id') or '').rsplit('-', 1)[0]
+            if not style:
+                continue
+            groups.setdefault(style, []).append(row)
     n = 0
-    for (brand_lc, model_lc), rows in groups.items():
+    for style, rows in groups.items():
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
+        sizes = sorted({s for s in (us_men_to_eu(r.get('custom_1')) for r in rows) if s}, key=size_sort_key)
+        if not sizes:
+            continue
         brand = (rep.get('brand_name') or '').strip()
         if brand == 'NULL' or not brand:
             # el nombre siempre empieza con la marca real (adidas/Nike/
@@ -562,7 +582,7 @@ def mine_prosoccer():
             'store': 'ProSoccer', 'brand': brand, 'model': model, 'groundType': ground,
             'price': parse_price(rep.get('search_price')), 'shipping': 0,
             'currency': 'USD',
-            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': [],
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
         })
         n += 1
     print('ProSoccer:', n)
@@ -691,6 +711,16 @@ def mine_futbolemotion(legacy_model_names):
             price = parse_price(row.get('price'))
             if not price:
                 continue
+            # availability='preorder' (visto 2026-09-21) o stock<=0 no se puede
+            # comprar hoy -- esa talla no cuenta como disponible.
+            if (row.get('availability') or 'in stock') != 'in stock':
+                continue
+            try:
+                stock = int(row.get('stock') or 1)
+            except ValueError:
+                stock = 1
+            if stock <= 0:
+                continue
             # "product ID" es "{colorwayId}_{varianteId}" -- el prefijo
             # agrupa talla dentro de UN colorway real. Agrupar por nombre
             # en vez de esto mezclaba colorways de precio distinto bajo
@@ -709,6 +739,10 @@ def mine_futbolemotion(legacy_model_names):
             {s for s in (eu_size_from_futbolemotion(r.get('size', '')) for r in rows) if s},
             key=size_sort_key,
         )
+        if not sizes:
+            # ninguna talla adulta con equivalencia EU (solo Y/C de niño) --
+            # sin talla real no hay forma de filtrar ni de saber qué queda.
+            continue
         ground = infer_ground(name, rep.get('categories', ''))
         results.append({
             'store': 'FutbolEmotion', 'brand': brand, 'model': name, 'groundType': ground,

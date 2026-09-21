@@ -23,15 +23,30 @@ precio real de cada oferta se muestra tal cual en su moneda nativa
 (nunca convertido), la tasa a EUR es solo un número interno para poder
 comparar/ordenar "más barata" entre monedas distintas.
 
-## FutbolEmotion: snapshot manual, no feed automático
+## FutbolEmotion: feed descargado en cada corrida (desde 2026-09-21)
 
-FutbolEmotion (TradeTracker) no tiene una URL de feed bulk descargable
-por HTTP como el resto -- `mine_futbolemotion()` lee un CSV puntual
-(`FUTBOLEMOTION_FEED_PATH`, default `/tmp/feeds/futbolemotion_feed.csv`).
-Si ese archivo no está, la función lo salta con un aviso en vez de
-romper el resto del pipeline -- el catálogo simplemente sale sin esas
-~315 botas ese día. Refrescar el snapshot (bajarlo de nuevo del panel
-de TradeTracker) es manual; no hay automatización todavía.
+El feed TradeTracker es una URL pública sin login (`fid=2066871`, ~35MB,
+~1 min; ver `FUTBOLEMOTION_FEED_URL` en `refresh_boots.py`).
+`refresh_boots.py` lo baja solo a `/tmp/feeds/futbolemotion_feed.csv`
+antes de minar; si la descarga falla o viene truncada conserva el
+archivo anterior y avisa con `WARNING`. Antes era un snapshot manual del
+09-12 y en 9 días se habían vendido 569 variantes de talla que seguían
+publicadas. Sólo cuentan filas con `availability = in stock` y
+`stock > 0` (aparecen `preorder`); una oferta sin ninguna talla adulta
+con equivalencia EU se descarta.
+
+## Stock y tallas: qué se refresca y qué no
+
+- Feeds Awin (adidas ES, Foot-Store, Sport is Good, Decathlon, Forum
+  Sport...): sólo traen filas EN STOCK, una por talla. Reconstruir cada
+  noche = lo agotado sale y las tallas son las que quedan hoy.
+- ProSoccer: una fila por talla ("Men Size 9.5", US) -> se agrupa por
+  estilo (id sin la talla), talla US->EU con `US_TO_EU`. Sólo "Men Size":
+  las "Youth/Kids" eran botas de niño.
+- Los 71 legacy: `legacy_stock.py` re-aplica tallas/precio de los feeds
+  de hoy y saca la oferta (o el modelo) si ya no hay filas en stock.
+- NikeCL/NikeAR/PumaAR: sin tallas ni forma de refrescar (ver abajo);
+  al filtrar por talla no aparecen.
 
 ## Nike CL / Nike AR / Puma AR: minadas a mano, sin auto-refresh
 

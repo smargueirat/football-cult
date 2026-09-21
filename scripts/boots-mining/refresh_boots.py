@@ -34,13 +34,13 @@ Qué hace, en orden:
    anterior, para no re-descargar/analizar miles de fotos sin cambios
    cada noche).
 
-Nota real, a propósito no resuelta acá: si un producto desaparece del
-feed de una tienda (agotado, discontinuado, error de feed puntual), sale
-del catálogo ese día -- BootOffer no tiene un campo inStock como sí tiene
-Offer (camisetas), así que no hay manera de "marcarlo agotado" en vez de
-quitarlo. Si vuelve a aparecer en el feed al día siguiente, vuelve solo
-(mismo id determinista). Aceptado como limitación conocida en vez de
-sumar un campo/UI nuevo sólo para esto.
+Stock y tallas (2026-09-21): los feeds Awin sólo traen filas EN STOCK
+(una por talla), así que reconstruir cada noche ya saca lo agotado y deja
+sólo las tallas que quedan. Los huecos reales eran (a) FutbolEmotion, cuyo
+snapshot manual se quedaba viejo -> ahora se descarga acá mismo cada
+corrida, (b) los 71 legacy, congelados -> legacy_stock.py, (c) ProSoccer,
+que no traía tallas -> ahora sí. NikeCL/NikeAR/PumaAR (minadas a mano) no
+tienen feed ni tallas y no se pueden refrescar sin Chrome real.
 """
 import json, re, os, subprocess, sys, unicodedata
 from urllib.parse import unquote
@@ -96,6 +96,37 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}  ],")
     lines.append(pad + "},")
     return "\n".join(lines)
+
+
+FUTBOLEMOTION_FEED_URL = (
+    "https://pf.tradetracker.net/?aid=514692&encoding=utf-8&type=csv&fid=2066871"
+    "&categoryType=2&additionalType=2&csvDelimiter=%3B&csvEnclosure=%22&filter_extended=1"
+)
+FUTBOLEMOTION_PATH = os.environ.get("FUTBOLEMOTION_FEED_PATH", "/tmp/feeds/futbolemotion_feed.csv")
+
+
+def download_futbolemotion():
+    """FutbolEmotion (TradeTracker) no pasa por la descarga Awin del scan
+    diario y su snapshot manual del 09-12 se quedó 9 dias viejo: 569
+    variantes de talla ya vendidas seguian apareciendo. El feed es una URL
+    publica sin login (~35MB, ~1 min). Si la descarga falla o viene
+    truncada se conserva el archivo anterior (mejor viejo que nada)."""
+    import urllib.request
+    tmp = FUTBOLEMOTION_PATH + ".tmp"
+    try:
+        with urllib.request.urlopen(FUTBOLEMOTION_FEED_URL, timeout=300) as r, open(tmp, "wb") as f:
+            while chunk := r.read(1 << 20):
+                f.write(chunk)
+        head = open(tmp, encoding="utf-8", errors="replace").readline()
+        rows = sum(1 for _ in open(tmp, "rb"))
+        if "product ID" not in head or rows < 5000:
+            raise ValueError(f"feed sospechoso (header={head[:40]!r}, lineas={rows})")
+        os.replace(tmp, FUTBOLEMOTION_PATH)
+        print(f"FutbolEmotion feed descargado ({rows} lineas)")
+    except Exception as e:  # noqa: BLE001 -- cualquier falla de red/formato cae al snapshot previo
+        print(f"WARNING: no se pudo refrescar el feed de FutbolEmotion ({e}); se usa el snapshot anterior")
+        if os.path.exists(tmp):
+            os.remove(tmp)
 
 
 def run_mine_boots():
@@ -375,10 +406,15 @@ def run_color_extraction():
 
 
 def main():
+    download_futbolemotion()
     run_mine_boots()
     mined = json.load(open(MINED_JSON_PATH, encoding="utf-8"))
 
     prefix = split_boots_ts()
+    # Los 71 legacy no se reconstruyen: se les re-aplican tallas/precio/stock
+    # de los feeds de hoy y se sacan las ofertas agotadas (ver legacy_stock.py).
+    from legacy_stock import refresh_legacy
+    prefix, legacy_stats = refresh_legacy(prefix)
     legacy_ids = existing_legacy_ids(prefix)
 
     # Precios viejos de la sección auto-generada (para el reporte de abajo),
@@ -409,6 +445,7 @@ def main():
     print(f"new products (not seen before): {len(added)}")
     print(f"products missing from today's feed (dropped, see docstring): {len(removed)}")
     print(f"existing products with a price change: {price_changed}")
+    print(f"legacy offers refreshed against today's feeds: {legacy_stats}")
 
 
 if __name__ == "__main__":
