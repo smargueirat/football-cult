@@ -153,7 +153,9 @@ def canonicalize_teams(merged):
 
 if __name__ == "__main__":
     regions = [
-        ("TICKETNET_DE.csv", "FootballTicketNetDE", "EUR"),
+        # Football TicketNet DE: programa Awin CERRADO el 2026-09-01 (el nombre del
+        # anunciante en Awin dice "CLOSED 01.09.2026") -> sus links ya no pagan
+        # comision. Se deja afuera; UK/US siguen vigentes.
         ("TICKETNET_UK.csv", "FootballTicketNetUK", "GBP"),
         ("TICKETNET_US.csv", "FootballTicketNetUS", "USD"),
     ]
