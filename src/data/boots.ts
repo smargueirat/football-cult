@@ -110,7 +110,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-match-fgag-puma-red-puma-white-glowing-red-puma-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285527/750/bota-puma-future-9-match-fgag-rojo-1.jpg",
-        sizes: ["39", "41", "42", "42.5", "43", "44"],
+        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -153,7 +153,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-fg-lucid-red-core-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291506/750/bota-adidas-predator-league-ft-fg-rojo-1.jpg",
-        sizes: ["44", "44.5", "45"],
+        sizes: ["42.5", "43", "44", "44.5", "45"],
       },
       {
         store: "ForumSport",
@@ -231,7 +231,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-league-fg-zero-met-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291297/750/bota-adidas-copa-pure-iv-league-fg-plata-1.jpg",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44.5"],
+        sizes: ["40.5", "41", "42", "42.5", "44.5"],
       },
       {
         store: "ForumSport",
@@ -326,7 +326,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-pro-fg-team-solar-yellow-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291415/750/bota-adidas-f50-pro-fg-naranja-1.jpg",
-        sizes: ["39", "42", "43", "44", "44.5", "45"],
+        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
       {
         store: "ForumSport",
@@ -352,7 +352,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-pro-fg-hyper-crimson-black-limelight",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280385/750/bota-nike-phantom-6-low-pro-fg-naranja-1.jpg",
-        sizes: ["40", "46"],
+        sizes: ["40", "45", "46"],
       },
       {
         store: "ForumSport",
@@ -430,7 +430,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-6-pro-fgag-puma-black-puma-red-strong-gray",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285584/750/bota-puma-ultra-6-pro-fgag-negro-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5"],
+        sizes: ["39", "40", "41", "42", "42.5", "44"],
       },
       {
         store: "ForumSport",
@@ -602,7 +602,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iii-elite-fg-off-white-lucid-blue-signal-core",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/272936/750/bota-adidas-copa-pure-iii-elite-fg-off-white-lucid-blue-signal-core-1.jpg",
-        sizes: ["40", "40.5", "41"],
+        sizes: ["40", "40.5", "41", "42"],
       },
       {
         store: "ForumSport",
@@ -680,7 +680,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-club-fgmg-team-solar-yellow-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291465/750/bota-adidas-f50-club-fgmg-naranja-1.jpg",
-        sizes: ["42", "44", "44.5"],
+        sizes: ["42", "43", "44", "44.5"],
       },
       {
         store: "ForumSport",
@@ -836,7 +836,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-fg-tursol-core-black-gold-metallic",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/327356/750/bota-adidas-f50-hyperfast-league-ll-fg-rosa-1.jpg",
-        sizes: ["44", "44.5"],
+        sizes: ["43", "44", "44.5"],
       },
       {
         store: "ForumSport",
@@ -888,7 +888,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-league-ll-fgmg-team-solar-yellow-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291283/750/bota-adidas-f50-league-ll-fgmg-naranja-1.jpg",
-        sizes: ["43", "44.5", "45"],
+        sizes: ["43", "44.5", "45", "46"],
       },
     ],
   },
@@ -905,7 +905,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-pro-mg-purple-rush-ftwr-white-lucid-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/267713/750/bota-adidas-f50-pro-mg-purpura-1.jpg",
-        sizes: ["44", "44.5"],
+        sizes: ["40", "44", "44.5"],
       },
       {
         store: "ForumSport",
@@ -974,7 +974,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ll-fg-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291532/750/bota-adidas-predator-league-ll-fg-negro-1.jpg",
-        sizes: ["39", "40.5", "42"],
+        sizes: ["39", "40.5", "42", "44.5"],
       },
       {
         store: "ForumSport",
@@ -1017,7 +1017,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-pro-ft-ag-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291696/750/bota-adidas-predator-pro-ft-ag-negro-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -1466,7 +1466,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-8-match-fgag-heat-fire-black-ravish",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/271538/750/bota-puma-future-8-match-fgag-naranja-1.jpg",
-        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
       {
         store: "ForumSport",
@@ -1492,7 +1492,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-8-pro-fgag-heat-fire-black-ravish",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/271537/750/bota-puma-future-8-pro-fgag-naranja-1.jpg",
-        sizes: ["39", "40.5", "42.5"],
+        sizes: ["39", "40.5", "42", "42.5", "43", "44"],
       },
       {
         store: "ForumSport",
@@ -8820,23 +8820,6 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "decathlonie-kipsta-football-boots-viralto-iii-3d-airmesh-fg-intense-fg",
-    brand: "KIPSTA",
-    model: "Football Boots Viralto III 3D AirMesh FG - Intense",
-    groundType: "FG",
-    offers: [
-      {
-        store: "DecathlonIE",
-        price: 60.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=34727148069&a=3013769&m=37550",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acontents.mediadecathlon.com%2Fp2066685%2Fk%2477a728b58904e416410fdfc8332223e6%2Ffootball-boots-viralto-iii-fg-air-mesh-mood.jpg%3Fformat%3Dauto%26quality%3D40%26f%3D800x800&feedId=80635&k=1583107844019021bde6b0f8eb7ab9e2459e3273",
-        sizes: ["39", "40", "41", "42", "43", "44", "45", "46", "47"],
-      },
-    ],
-  },
-  {
     id: "decathlonie-kipsta-football-boots-viralto-iii-3d-airmesh-fg-mango-fg",
     brand: "KIPSTA",
     model: "Football Boots Viralto III 3D AirMesh FG - Mango",
@@ -9041,23 +9024,6 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "decathlonie-kipsta-football-boots-viralto-iv-premium-leather-fg-pro-evolution-jewel-of-romelu-fg",
-    brand: "KIPSTA",
-    model: "Football Boots Viralto IV Premium Leather FG Pro Evolution - Jewel of Romelu",
-    groundType: "FG",
-    offers: [
-      {
-        store: "DecathlonIE",
-        price: 80.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38493097625&a=3013769&m=37550",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acontents.mediadecathlon.com%2Fp2615537%2Fk%2426ab964dee4763cd93730daf615a7549%2Fleather-football-boots-viralto-iv-premium-fg-black.jpg%3Fformat%3Dauto%26quality%3D40%26f%3D800x800&feedId=80635&k=eade39865df92d3c30644e5daca91a9477dec6d5",
-        sizes: ["47"],
-      },
-    ],
-  },
-  {
     id: "decathlonie-kipsta-football-boots-viralto-iv-premium-leather-sg-pro-evolution-sg",
     brand: "KIPSTA",
     model: "Football Boots Viralto IV Premium Leather SG - Pro Evolution",
@@ -9156,23 +9122,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=38265688544&a=3013769&m=37550",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acontents.mediadecathlon.com%2Fp2585579%2Fk%2414e692b1618f9945b814db4a9a5c4864%2F.jpg%3Fformat%3Dauto%26quality%3D40%26f%3D800x800&feedId=80635&k=87fd6bcec451815ffcbf84005a152d7d9f89ab90",
         sizes: ["36", "37", "39"],
-      },
-    ],
-  },
-  {
-    id: "decathlonie-kipsta-women-s-mg-football-boots-viralto-iii-grey-fg",
-    brand: "KIPSTA",
-    model: "Women's MG Football Boots Viralto+ III - Grey",
-    groundType: "FG",
-    offers: [
-      {
-        store: "DecathlonIE",
-        price: 40.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37600042984&a=3013769&m=37550",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acontents.mediadecathlon.com%2Fp2066732%2Fk%241baa942053fc8e1b5cf29a235d8aa526%2Fwomen-s-mg-football-boots-viralto-iii-grey.jpg%3Fformat%3Dauto%26quality%3D40%26f%3D800x800&feedId=80635&k=e73788304e223b2def9a721259582ba04768c579",
-        sizes: ["34", "35", "36", "37", "38", "39", "40", "41", "42"],
       },
     ],
   },
@@ -10060,9 +10009,6 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "deporteoutlet-joma-joma-powerfull-fg-hombre-botas-de-futbol-poww2501fg-fg",
     brand: "Joma",
@@ -10114,6 +10060,9 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "deporteoutlet-joma-joma-score-ag-hombre-botas-de-futbol-scow2501ag-ag",
     brand: "Joma",
@@ -13552,9 +13501,6 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-fg-mg-fg-12",
     brand: "Adidas",
@@ -13606,6 +13552,9 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-md",
     brand: "Adidas",
@@ -17096,9 +17045,6 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-ft-sg-sg",
     brand: "Adidas",
@@ -17174,6 +17120,9 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-mg-mg-2",
     brand: "Adidas",
@@ -20424,9 +20373,6 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-joma-top-flex-2602-tf-tf",
     brand: "Joma",
@@ -20486,6 +20432,9 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-joma-top-flex-rebound-2602-tf-tf",
     brand: "Joma",
@@ -23869,9 +23818,6 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-huarache-9-elite-lax-fg-fg",
     brand: "Nike",
@@ -23928,6 +23874,9 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-legend-10-elite-fg-fg",
     brand: "Nike",
@@ -27659,9 +27608,6 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-academy-ag-ag-2",
     brand: "Nike",
@@ -27718,6 +27664,9 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-academy-fg-mg-fg-3",
     brand: "Nike",
@@ -31281,9 +31230,6 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-mg-mg-8",
     brand: "Nike",
@@ -31357,6 +31303,9 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-tf-tf",
     brand: "Nike",
@@ -34772,9 +34721,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-future-match-fg-ag-fg-3",
     brand: "Puma",
@@ -34826,6 +34772,9 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-future-match-sg-sg-3",
     brand: "Puma",
@@ -38008,9 +37957,6 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-copa-pure-2-pro-fg-fg-2",
     brand: "adidas",
@@ -38062,6 +38008,9 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-copa-pure-3-club-fg-fg",
     brand: "adidas",
@@ -41674,9 +41623,6 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-f50-hyperfast-league-ll-fg-fg",
     brand: "adidas",
@@ -41746,6 +41692,9 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-f50-hyperfast-league-tf-tf",
     brand: "adidas",
@@ -45259,9 +45208,6 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-club-turf-5",
     brand: "adidas",
@@ -45322,6 +45268,9 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-edge-1-sg-sg",
     brand: "adidas",
@@ -49114,9 +49063,6 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-league-tf-tf-7",
     brand: "adidas",
@@ -49186,6 +49132,9 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-league-turf-3",
     brand: "adidas",
@@ -52458,9 +52407,6 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorefr-joma-joma-powerfull-2604-fg-fg",
     brand: "Joma",
@@ -52517,6 +52463,9 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorefr-joma-joma-reactive-25",
     brand: "Joma",
@@ -55837,9 +55786,6 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorefr-mizuno-mizuno-morelia-neo-iv-beta-japan",
     brand: "Mizuno",
@@ -55909,6 +55855,9 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorefr-mizuno-mizuno-morelia-neo-iv-beta-japan-fg-fg-3",
     brand: "Mizuno",
@@ -59487,9 +59436,6 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-mercurial-vapor-16-academy-sg-sg-2",
     brand: "Nike",
@@ -59550,6 +59496,9 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-mercurial-vapor-16-academy-tf-tf-3",
     brand: "Nike",
@@ -63044,9 +62993,6 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-phantom-gt2-academy-mg-mg",
     brand: "Nike",
@@ -63098,6 +63044,9 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-phantom-gx-2-academy-ag-ag-3",
     brand: "Nike",
@@ -66467,9 +66416,6 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-zm-vapor-16-academy-fg-mg-fg-2",
     brand: "Nike",
@@ -66521,6 +66467,9 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-zm-vapor-16-pro-ag-ag",
     brand: "Nike",
@@ -70188,9 +70137,6 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "footstorefr-puma-puma-king-pro-fg-ag-fg-ag-2",
     brand: "Puma",
@@ -70260,6 +70206,9 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "footstorefr-puma-puma-king-pro-sg-sg",
     brand: "Puma",
@@ -74016,9 +73965,6 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "footstorefr-skechers-skechers-skx-1-5-fg-fg",
     brand: "Skechers",
@@ -74097,6 +74043,9 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "footstorefr-skechers-skechers-skx-2-academy-fg-fg-2",
     brand: "Skechers",
@@ -75216,7 +75165,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-club-fg-mg-zero-metallic-dark-blue-lucid-ray-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335794/750/bota-adidas-copa-pure-iv-club-fg-mg-zero-metallic-dark-blue-lucid-ray-blue-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -75284,7 +75233,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-elite-ag-zero-met-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291226/750/bota-adidas-copa-pure-iv-elite-ag-zero-met-core-black-lucid-red-1.jpg",
-        sizes: ["39", "40", "42"],
+        sizes: ["39", "40", "41", "42"],
       },
     ],
   },
@@ -75318,7 +75267,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-elite-ll-fg-zero-met-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291241/750/bota-adidas-copa-pure-iv-elite-ll-fg-zero-met-core-black-lucid-red-1.jpg",
-        sizes: ["41", "42", "46"],
+        sizes: ["40", "41", "42", "46"],
       },
     ],
   },
@@ -75437,7 +75386,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-elite-fg-team-solar-yellow-2-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291362/750/bota-adidas-f50-elite-fg-team-solar-yellow-core-black-lucid-red-1.jpg",
-        sizes: ["39", "44", "45"],
+        sizes: ["39", "45"],
       },
     ],
   },
@@ -75505,7 +75454,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-elite-ll-ag-lucid-ray-blue-team-solar-yellow-lucid-aqua",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291322/750/bota-adidas-f50-elite-ll-ag-lucid-ray-blue-team-solar-yellow-lucid-aqua-1.jpg",
-        sizes: ["44.5"],
+        sizes: ["44.5", "45"],
       },
     ],
   },
@@ -75556,7 +75505,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-elite-ll-sg-team-solar-yellow-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291320/750/bota-adidas-f50-elite-ll-sg-team-solar-yellow-core-black-lucid-red-1.jpg",
-        sizes: ["39", "40", "40.5", "42.5"],
+        sizes: ["39", "40", "40.5", "42", "42.5"],
       },
     ],
   },
@@ -75862,7 +75811,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335870/750/bota-adidas-f50-hyperfast-league-ll-ag-blanco-1.jpg",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
       },
     ],
   },
@@ -76151,7 +76100,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-league-sg-core-black-lucid-red-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291434/750/bota-adidas-f50-league-sg-core-black-lucid-red-core-black-1.jpg",
-        sizes: ["40.5", "43"],
+        sizes: ["40.5", "43", "44"],
       },
     ],
   },
@@ -76236,7 +76185,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-messi-elite-fg-ivory-semi-blue-burst-icey-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/333417/750/bota-adidas-f50-messi-elite-fg-ivory-semi-blue-burst-icey-blue-1.jpg",
-        sizes: ["40", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -76389,7 +76338,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-pro-ll-turf-core-black-lucid-red-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291692/750/bota-adidas-f50-pro-ll-turf-negro-1.jpg",
-        sizes: ["40", "44.5", "45", "46"],
+        sizes: ["40", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -76525,7 +76474,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-pro-fg-ag-tursol-white-distilled-pink",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335817/750/bota-adidas-f50-sparkfusion-pro-fg-ag-tursol-white-distilled-pink-1.jpg",
-        sizes: ["36.5", "38", "38.5", "39", "40", "40.5"],
+        sizes: ["36.5", "37.5", "38", "38.5", "39", "40", "40.5"],
       },
     ],
   },
@@ -76768,6 +76717,23 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
+    id: "futbolemotion-adidas-adidas-predator-elite-ft-fg-equipment-fg",
+    brand: "adidas",
+    model: "adidas Predator Elite FT FG Equipment",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 237.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-fg-eqt-negbas-negbas-vereqt",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/320016/750/bota-adidas-predator-elite-ft-fg-eqt-negbas-negbas-vereqt-1.jpg",
+        sizes: ["43"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-adidas-adidas-predator-elite-ft-fg-jude-bellingham-fg",
     brand: "adidas",
     model: "adidas Predator Elite FT FG Jude Bellingham",
@@ -76780,7 +76746,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-fg-ftwr-white-zero-met-team-royal-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291493/750/bota-adidas-predator-elite-ft-fg-ftwr-white-zero-met-team-royal-blue-1.jpg",
-        sizes: ["40", "40.5", "42.5"],
+        sizes: ["40", "40.5"],
       },
     ],
   },
@@ -76911,6 +76877,23 @@ const minedBootProductsChunk21: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
+        price: 158.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-sg-hiemet-ftw-black-rojluc",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/287892/750/bota-adidas-predator-elite-ft-sg-hiemet-ftw-black-rojluc-1.jpg",
+        sizes: ["40.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-predator-elite-ft-sg-sg-4",
+    brand: "adidas",
+    model: "adidas Predator Elite FT SG",
+    groundType: "SG",
+    offers: [
+      {
+        store: "FutbolEmotion",
         price: 139.99,
         shipping: 0,
         currency: "EUR",
@@ -76921,7 +76904,7 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-adidas-adidas-predator-elite-ft-sg-sg-4",
+    id: "futbolemotion-adidas-adidas-predator-elite-ft-sg-sg-5",
     brand: "adidas",
     model: "adidas Predator Elite FT SG",
     groundType: "SG",
@@ -76938,7 +76921,7 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-adidas-adidas-predator-elite-ft-sg-sg-5",
+    id: "futbolemotion-adidas-adidas-predator-elite-ft-sg-sg-6",
     brand: "adidas",
     model: "adidas Predator Elite FT SG",
     groundType: "SG",
@@ -76984,7 +76967,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-fg-signal-core-ftwr-white-beam-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/272950/750/bota-adidas-predator-elite-fg-signal-core-ftwr-white-beam-orange-1.jpg",
-        sizes: ["40"],
+        sizes: ["40", "43"],
       },
     ],
   },
@@ -77154,7 +77137,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-sg-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291395/750/bota-adidas-predator-league-ft-sg-core-black-white-lucid-red-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5", "44", "44.5", "45", "46"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -77171,7 +77154,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-sg-lucid-red-core-black-ftwr-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291396/750/bota-adidas-predator-league-ft-sg-lucid-red-core-black-white-1.jpg",
-        sizes: ["44.5"],
+        sizes: ["42.5", "44.5"],
       },
     ],
   },
@@ -77261,6 +77244,23 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
+    id: "futbolemotion-adidas-adidas-predator-league-l-fg-mg-fg",
+    brand: "adidas",
+    model: "adidas Predator League L FG/MG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 42.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-l-fgmg-signal-core-white-beam-orange",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/272954/750/bota-adidas-predator-league-fg-mg-coral-1.jpg",
+        sizes: ["44"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-adidas-adidas-predator-league-l-mg-mg",
     brand: "adidas",
     model: "adidas Predator League L MG",
@@ -77273,7 +77273,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-l-mg-signal-core-ftwr-white-beam-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/273029/750/bota-adidas-predator-league-mg-coral-1.jpg",
-        sizes: ["41", "42.5", "43", "44"],
+        sizes: ["41", "42", "42.5", "43", "44"],
       },
     ],
   },
@@ -77344,7 +77344,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-pro-l-fg-signal-core-ftwr-white-beam-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/272962/750/bota-adidas-predator-pro-fg-coral-1.jpg",
-        sizes: ["40", "40.5", "41"],
+        sizes: ["40", "40.5", "41", "42"],
       },
     ],
   },
@@ -77480,7 +77480,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmizuno-alpha-iii-elite-ag-white-lava-orange-evening-prim",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336328/750/bota-mizuno-mizuno-alpha-iii-elite-ag-white-lava-orange-evening-prim-1.jpg",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -77638,23 +77638,6 @@ const minedBootProductsChunk22: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-mizuno-mizuno-morelia-ii-elite-fg-fg-3",
-    brand: "Mizuno",
-    model: "Mizuno Morelia II Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 143.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-ii-elite-fg-white-football-gold-galaxy-silver",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/331883/750/bota-mizuno-morelia-ii-elite-fg-white-football-gold-galaxy-silver-1.jpg",
-        sizes: ["45"],
-      },
-    ],
-  },
-  {
     id: "futbolemotion-mizuno-mizuno-morelia-ii-pro-fg-fg",
     brand: "Mizuno",
     model: "Mizuno Morelia II Pro FG",
@@ -77803,7 +77786,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-neo-v-beta-pro-ag-white-lava-orange-evening-prim",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336338/750/bota-mizuno-morelia-neo-v-beta-pro-ag-blanco-1.jpg",
-        sizes: ["40.5", "43", "44.5", "45"],
+        sizes: ["43", "44.5", "45"],
       },
     ],
   },
@@ -77820,7 +77803,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-neo-v-beta-pro-fg-blue-finch-cornflower-blue-lav",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336337/750/bota-mizuno-morelia-neo-v-beta-pro-fg-azul-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -77905,7 +77888,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2F442-elite-fg-v2-navy",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280538/750/bota-new-balance-442-elite-fg-v2-navy-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "44"],
+        sizes: ["39", "40", "40.5", "41", "42.5", "44"],
       },
     ],
   },
@@ -77922,7 +77905,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2F442-elite-fg-v3-black-100",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/309089/750/bota-new-balance-442-elite-fg-v3-black-100-1.jpg",
-        sizes: ["40.5", "41", "43"],
+        sizes: ["40.5", "41", "42", "42.5", "43"],
       },
     ],
   },
@@ -77939,7 +77922,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2F442-elite-knit-fg-black-100",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/309090/750/bota-new-balance-442-elite-knit-fg-black-1.jpg",
-        sizes: ["40.5", "41", "42"],
+        sizes: ["40.5", "41", "42", "42.5"],
       },
     ],
   },
@@ -78449,7 +78432,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ffuron-elite-mg-v8-punch-yellow",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/309115/750/bota-new-balance-furon-elite-mg-v8-punch-yellow-1.jpg",
-        sizes: ["40", "40.5", "44"],
+        sizes: ["40", "40.5", "41", "44"],
       },
     ],
   },
@@ -78687,7 +78670,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ftekela-elite-low-fg-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/309100/750/bota-new-balance-tekela-elite-low-laced-fg-v5-black-1.jpg",
-        sizes: ["40.5", "41", "42"],
+        sizes: ["40.5", "41", "42", "43"],
       },
     ],
   },
@@ -78874,7 +78857,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ftekela-team-low-fg-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/309105/750/bota-new-balance-tekela-team-low-laced-fg-v5-negro-1.jpg",
-        sizes: ["42"],
+        sizes: ["42", "42.5", "44"],
       },
     ],
   },
@@ -78908,7 +78891,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ftekela-team-low-laced-fg-v5-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280579/750/bota-new-balance-tekela-team-low-laced-fg-v5-blanco-1.jpg",
-        sizes: ["40.5", "41"],
+        sizes: ["40.5", "41", "46"],
       },
     ],
   },
@@ -79022,6 +79005,23 @@ const minedBootProductsChunk22: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
+        price: 65.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-fgmg-black-ice-blue",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268962/750/bota-nike-zm-superfly-10-academy-fgmg-negro-1.jpg",
+        sizes: ["42", "43", "44"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-fg-mg-fg-2",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 10 Academy FG/MG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
         price: 89.99,
         shipping: 0,
         currency: "EUR",
@@ -79032,7 +79032,7 @@ const minedBootProductsChunk22: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-fg-mg-fg-2",
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-fg-mg-fg-3",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Superfly 10 Academy FG/MG",
     groundType: "FG",
@@ -79049,7 +79049,7 @@ const minedBootProductsChunk22: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-fg-mg-fg-3",
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-fg-mg-fg-4",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Superfly 10 Academy FG/MG",
     groundType: "FG",
@@ -79061,7 +79061,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-fgmg-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301072/750/bota-nike-air-zoom-mercurial-superfly-10-academy-fgmg-azul-1.jpg",
-        sizes: ["42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -79146,7 +79146,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-turf-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301074/750/bota-nike-air-zoom-mercurial-superfly-10-academy-turf-azul-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "44.5", "45"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "44.5"],
       },
     ],
   },
@@ -79214,7 +79214,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-elite-fg-black-ice-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268968/750/bota-nike-air-zoom-mercurial-superfly-10-elite-fg-black-ice-blue-1.jpg",
-        sizes: ["39", "40.5", "41"],
+        sizes: ["39", "40", "40.5", "41"],
       },
     ],
   },
@@ -79231,7 +79231,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-elite-fg-burgundy-crush-mtlc-silver-univ-red-fossil",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321538/750/bota-nike-air-zoom-mercurial-superfly-10-elite-fg-burgundy-crush-mtlc-silver-univ-red-fossil-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "44"],
+        sizes: ["39", "40", "40.5", "42", "42.5", "44"],
       },
     ],
   },
@@ -79350,7 +79350,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-pro-fg-limelight-volt-hyper-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280401/750/bota-nike-air-zoom-mercurial-superfly-10-pro-fg-amarillo-limon-1.jpg",
-        sizes: ["40", "40.5", "42", "42.5", "45"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "45"],
       },
     ],
   },
@@ -79362,12 +79362,29 @@ const minedBootProductsChunk22: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
+        price: 76.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-pro-fg-magic-flamingo-black-total-crimson",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268989/750/bota-nike-air-zoom-mercurial-superfly-10-pro-fg-rosa-1.jpg",
+        sizes: ["42.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-pro-fg-fg-3",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 10 Pro FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
         price: 118.99,
         shipping: 0,
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-pro-fg-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301095/750/bota-nike-air-zoom-mercurial-superfly-10-pro-fg-racer-blue-white-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44.5"],
       },
     ],
   },
@@ -79385,6 +79402,23 @@ const minedBootProductsChunk22: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-superfly-10-pro-fg-km-plum-eclipse-mtlc-silver",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301096/750/bota-nike-air-zoom-mercurial-superfly-10-pro-fg-km-plata-1.jpg",
         sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44.5", "45", "45.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-pro-km-fg-fg",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 10 Pro KM FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-pro-km-fg-melon-tint-neo-turq-igloo",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/280402/750/bota-nike-zm-superfly-10-pro-km-fg-amarillo-1.jpg",
+        sizes: ["45"],
       },
     ],
   },
@@ -79452,7 +79486,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-academy-fgmg-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321512/750/bota-nike-air-zoom-mercurial-superfly-11-academy-fgmg-multicolor-1.jpg",
-        sizes: ["41", "42", "42.5", "44", "46", "47"],
+        sizes: ["41", "42", "42.5", "44", "46"],
       },
     ],
   },
@@ -79515,12 +79549,29 @@ const minedBootProductsChunk22: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
+        price: 299.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-ag-pro-tse-multi-color-white",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336747/750/bota-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-multi-color-white-6.jpg",
+        sizes: ["44"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-ag-3",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 11 Elite AG-Pro",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
         price: 289.99,
         shipping: 0,
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-ag-pro-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336745/750/bota-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-white-blur-brt-crimson-1.jpg",
-        sizes: ["45", "45.5"],
+        sizes: ["44", "45", "45.5"],
       },
     ],
   },
@@ -79549,12 +79600,12 @@ const minedBootProductsChunk22: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 289.99,
+        price: 299.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-fg-black-illusion-green-black",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336749/750/bota-nike-air-zoom-mercurial-superfly-11-elite-fg-black-illusion-green-black-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-air-zoom-mercurial-superfly-11-elite-fg-t-multi-color-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/321540/750/bota-nike-air-zoom-mercurial-air-zoom-mercurial-superfly-11-elite-fg-t-multi-color-black-1.jpg",
+        sizes: ["39"],
       },
     ],
   },
@@ -79569,9 +79620,43 @@ const minedBootProductsChunk22: BootProduct[] = [
         price: 289.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-fg-black-illusion-green-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336749/750/bota-nike-air-zoom-mercurial-superfly-11-elite-fg-black-illusion-green-black-1.jpg",
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-11-elite-fg-fg-3",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 11 Elite FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 289.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-fg-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336748/750/bota-nike-air-zoom-mercurial-superfly-11-elite-fg-white-blur-brt-crimson-1.jpg",
         sizes: ["40.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-11-elite-fg-sam-kerr-fg",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 11 Elite FG Sam Kerr",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 299.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-fg-sk-green-glow-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336751/750/bota-nike-air-zoom-mercurial-superfly-11-elite-fg-sk-green-glow-black-1.jpg",
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -79639,7 +79724,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-pro-ag-km-mtlc-gold-clear-jade",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336757/750/bota-nike-air-zoom-mercurial-superfly-11-pro-ag-km-amarillo-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["40", "40.5", "41", "42", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -79690,7 +79775,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-pro-fg-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336758/750/bota-nike-air-zoom-mercurial-superfly-11-pro-fg-blanco-1.jpg",
-        sizes: ["42.5", "43", "44.5"],
+        sizes: ["40.5", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -79741,7 +79826,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-ag-limelight-volt-hyper-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280415/750/bota-nike-air-zoom-mercurial-vapor-16-academy-ag-amarillo-limon-1.jpg",
-        sizes: ["42", "42.5", "44", "45"],
+        sizes: ["42", "42.5", "43", "44", "45"],
       },
     ],
   },
@@ -79758,7 +79843,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-ag-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268991/750/bota-nike-air-zoom-mercurial-vapor-16-akademie-ag-rosa-1.jpg",
-        sizes: ["38.5"],
+        sizes: ["38.5", "42", "42.5", "45"],
       },
     ],
   },
@@ -79826,7 +79911,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-limelight-volt-hyper-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280403/750/bota-nike-air-zoom-mercurial-vapor-16-academy-fgmg-amarillo-limon-1.jpg",
-        sizes: ["42.5", "44"],
+        sizes: ["42.5", "43", "44"],
       },
     ],
   },
@@ -79843,7 +79928,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268975/750/bota-nike-air-zoom-mercurial-vapor-16-akademie-fg-mg-rosa-1.jpg",
-        sizes: ["42", "44"],
+        sizes: ["39", "42"],
       },
     ],
   },
@@ -79911,7 +79996,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-turf-burgundy-crush-mtlc-silver-univ-red-fossil",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321548/750/bota-nike-air-zoom-mercurial-vapor-16-academy-turf-rojo-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44.5", "45", "45.5"],
       },
     ],
   },
@@ -80013,7 +80098,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-elite-fg-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301086/750/bota-nike-air-zoom-mercurial-vapor-16-elite-fg-racer-blue-white-1.jpg",
-        sizes: ["38.5", "40"],
+        sizes: ["38.5", "39", "40", "41"],
       },
     ],
   },
@@ -80048,6 +80133,23 @@ const minedBootProductsChunk22: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fzm-vapor-16-elite-fg-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268981/750/bota-nike-zm-vapor-16-elite-fg-magic-flamingo-black-total-crimson-1.jpg",
         sizes: ["38.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-elite-km-fg-fg",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Vapor 16 Elite KM FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 181.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-elite-km-fg-melon-tint-neo-turq-igloo",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/280407/750/bota-nike-air-zoom-mercurial-vapor-16-elite-km-fg-melon-tint-neo-turq-igloo-1.jpg",
+        sizes: ["44"],
       },
     ],
   },
@@ -80149,7 +80251,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-pro-fg-black-ice-blue-0",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268988/750/bota-nike-zm-vapor-16-pro-fg-negro-1.jpg",
-        sizes: ["39", "42", "43"],
+        sizes: ["39", "40", "42", "45.5"],
       },
     ],
   },
@@ -80238,6 +80340,9 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-17-academy-fg-mg-fg-3",
     brand: "Nike",
@@ -80251,7 +80356,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-academy-fgmg-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321530/750/bota-nike-air-zoom-mercurial-vapor-17-academy-fgmg-multicolor-1.jpg",
-        sizes: ["40.5", "41", "42", "42.5", "43"],
+        sizes: ["39", "40.5", "41", "42", "42.5", "43"],
       },
     ],
   },
@@ -80340,9 +80445,6 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-17-elite-ag-pro-ag-2",
     brand: "Nike",
@@ -80526,7 +80628,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-pro-ag-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336738/750/bota-nike-air-zoom-mercurial-vapor-17-pro-ag-negro-1.jpg",
-        sizes: ["45.5", "46"],
+        sizes: ["42", "45.5", "46"],
       },
     ],
   },
@@ -80577,7 +80679,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-pro-fg-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321534/750/bota-nike-air-zoom-mercurial-vapor-17-pro-fg-t-multicolor-1.jpg",
-        sizes: ["44.5", "45"],
+        sizes: ["39", "41", "42.5", "44", "44.5"],
       },
     ],
   },
@@ -80662,7 +80764,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-academy-ag-black-illusion-green-black-0",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336663/750/bota-nike-phantom-6-high-academy-ag-negro-1.jpg",
-        sizes: ["38.5", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
       },
     ],
   },
@@ -80730,7 +80832,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-academy-fgmg-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321487/750/bota-nike-phantom-6-high-academy-fgmg-multi-color-black-1.jpg",
-        sizes: ["40", "41", "43"],
+        sizes: ["40", "41", "43", "44.5"],
       },
     ],
   },
@@ -80747,7 +80849,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-academy-fgmg-racer-blue-pink-blast-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301033/750/bota-nike-phantom-6-high-academy-fgmg-azul-1.jpg",
-        sizes: ["42", "42.5"],
+        sizes: ["42", "42.5", "44.5"],
       },
     ],
   },
@@ -80866,7 +80968,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-academy-fgmg-black-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268914/750/bota-nike-phantom-6-low-acad-fgmg-negro-1.jpg",
-        sizes: ["38.5"],
+        sizes: ["38.5", "41", "43"],
       },
     ],
   },
@@ -81019,7 +81121,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-elite-sg-pro-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336686/750/bota-nike-phantom-6-low-elite-sg-pro-black-illusion-green-black-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -81070,7 +81172,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-pro-ag-pro-eh-hot-punch-black-green-strike",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321505/750/bota-nike-phantom-6-low-pro-ag-pro-eh-verde-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -81087,7 +81189,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-pro-ag-pro-t-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321506/750/bota-nike-phantom-6-low-pro-ag-pro-t-multicolor-1.jpg",
-        sizes: ["42", "44", "44.5", "45"],
+        sizes: ["39", "42", "44", "44.5", "45"],
       },
     ],
   },
@@ -81138,7 +81240,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fthe-nike-premier-iii-sg-pro-ac-phantom-picante-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280388/750/bota-nike-the-nike-premier-iii-sg-pro-ac-phantom-picante-red-1.jpg",
-        sizes: ["40.5"],
+        sizes: ["39", "40", "40.5", "42.5"],
       },
     ],
   },
@@ -81291,7 +81393,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-ligera-pro-fg-ft-pearl-white-dk-obsidian",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321516/750/bota-nike-tiempo-ligera-pro-fg-ft-blanco-1.jpg",
-        sizes: ["39", "40.5", "41", "42", "44.5", "45.5"],
+        sizes: ["39", "41", "42", "44.5", "45.5"],
       },
     ],
   },
@@ -81325,7 +81427,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-ligera-pro-turf-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336707/750/bota-nike-tiempo-maestro-pro-turf-blanco-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -81427,7 +81529,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-fgmg-white-black-racer-blue-pink-blast",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301059/750/bota-nike-tiempo-maestro-academy-fgmg-blanco-1.jpg",
-        sizes: ["39", "40.5"],
+        sizes: ["39", "40", "40.5", "44"],
       },
     ],
   },
@@ -81818,7 +81920,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-play-fgag-puma-black-glowing-red-strong-gray",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285575/750/bota-puma-future-9-play-fgag-negro-1.jpg",
-        sizes: ["41", "42.5", "44"],
+        sizes: ["41", "44"],
       },
     ],
   },
@@ -81904,6 +82006,23 @@ const minedBootProductsChunk23: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-pro-light-up-fgag-mujer-fizzy-light-icy-blue-intense-lavender-sun-str",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285611/750/bota-puma-future-9-pro-light-up-fgag-damen-multicolor-1.jpg",
         sizes: ["36.5", "39"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-puma-puma-future-9-pro-mxsg",
+    brand: "Puma",
+    model: "Puma Future 9 Pro MxSG",
+    groundType: "",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 59.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-pro-mxsg-red-white-glowing-red-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/285640/750/bota-puma-future-9-pro-mxsg-red-white-glowing-red-black-1.jpg",
+        sizes: ["42.5"],
       },
     ],
   },
@@ -82651,7 +82770,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-6-match-turf-yellow-alert-puma-black-puma-silver-glowing-r",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285545/750/bota-puma-ultra-6-match-turf-amarillo-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5", "44", "44.5", "45"],
+        sizes: ["39", "41", "42", "42.5", "44", "44.5", "45"],
       },
     ],
   },
@@ -82668,7 +82787,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-6-play-fgag-puma-black-puma-red-strong-gray",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285587/750/bota-puma-ultra-6-play-fgag-negro-1.jpg",
-        sizes: ["41", "42", "42.5", "44"],
+        sizes: ["41", "42", "42.5", "43", "44"],
       },
     ],
   },
@@ -82736,7 +82855,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-nitro-7-match-ag-ultra-red-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329634/750/bota-puma-ultra-nitro-7-match-ag-blanco-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["39", "40", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -83284,6 +83403,9 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "gigasportch-adidas-copa-pure-iv-pro-fg-nocken-weiss-fg",
     brand: "Adidas",
@@ -83416,9 +83538,6 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "gigasportch-skechers-skx-2-elite-fg-nocken-bunt-fg",
     brand: "Skechers",
@@ -83603,3086 +83722,6 @@ const minedBootProductsChunk24: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44982822992&a=3013769&m=121584",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fskechers-1-768_1024_100-7775019_1.jpg&feedId=112013&k=899d1fc31959060a3a9530766e2e84083f2bd134",
         sizes: ["44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-kapitan-2-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Copa Kapitan .2 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821347&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6173a.jpg&feedId=103593&k=bf721aec60cb56951d884651bf46fdfeefd61bf9",
-        sizes: ["39", "40", "42", "44", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-kapitan-2-tf-tf",
-    brand: "Adidas",
-    model: "Adidas Copa Kapitan .2 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820345&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fz%2Ffz3250a.jpeg&feedId=103593&k=3beb1d879188acb9427afaa0f36cfb78153a13b1",
-        sizes: ["39"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Copa Sense.1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820116&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6498a.jpg&feedId=103593&k=cfd9ec259023883409ef819c617815991a74a1fd",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820373&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7920a.jpg&feedId=103593&k=a80823dfcade8b50341a7893c3ebf51f244c6580",
-        sizes: ["39", "40", "41", "42", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821068&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6209a.jpg&feedId=103593&k=fb184d1a808a35e00d15a0c1b7ab99a8e095078c",
-        sizes: ["41", "42", "44", "44.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821088&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6211a.jpg&feedId=103593&k=edc89fee5e7ded4f30608e3e89cfae31bb36c832",
-        sizes: ["40", "41", "42", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-fg-fg-5",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823562&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6208a.jpg&feedId=103593&k=54f03001db5fb29ec9bc3823f802b0c31a298856",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-tf-tf",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .1 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821346&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6199a.jpg&feedId=103593&k=8bcce91690435c7d317ff85c03776c37a37be0ba",
-        sizes: ["44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-1-tf-tf-2",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .1 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823525&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6198a.jpg&feedId=103593&k=c07d180381010f685faa7c097b013f4ae0b417f5",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-2-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .2 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820272&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6552aa.jpg&feedId=103593&k=9d0c36dd3071703ff2b2705e0f6b9f4146b09452",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820243&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7934a.jpeg&feedId=103593&k=9464fd4d8e90bad8df8140cf615dc88d44fe9146",
-        sizes: ["39", "44", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821396&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6196a.jpg&feedId=103593&k=3b1015b375168e6c50ef1c72707443c1b9a298ea",
-        sizes: ["39", "41", "42", "42.5", "43", "44.5", "45", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822328&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6195a.jpg&feedId=103593&k=46e0961635fde4c6ecd7af9475f6e6e97db1a376",
-        sizes: ["39", "41", "42.5", "43", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823447&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6197a_1.jpg&feedId=103593&k=ed319bb8e69ba0b2a46be83b9bf082ce8eb39fe9",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-laceless-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821122&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6172a.jpg&feedId=103593&k=addcaed65fb7b2b5449994c49256b9913987166b",
-        sizes: ["39", "40", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-tf-tf",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820275&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6530a.jpg&feedId=103593&k=4fefba5c2a3238c1185cd8e0d8981ce0e11a2a9a",
-        sizes: ["39", "40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-tf-tf-2",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820336&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6528a.jpg&feedId=103593&k=21c422384c2a35ef107f5675190e798cbaa14846",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-3-tf-tf-3",
-    brand: "Adidas",
-    model: "Adidas Copa Sense .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823385&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6186a.jpg&feedId=103593&k=2cd3b6e98eadbeaf774aca1896635a8dcb32ce37",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Copa Sense + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821059&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6217a.jpeg&feedId=103593&k=3369bfeb688e05b2fcc230c4b0fdfaaaa1cf7021",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-copa-sense-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Copa Sense + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823553&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6218a.jpeg&feedId=103593&k=0d1962148599222ec217ec03e182a0e177f2e4cc",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-gamemode-fg-fg",
-    brand: "Adidas",
-    model: "Adidas GameMode FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820919&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fg%2F5%2Fg57884a.jpeg&feedId=103593&k=b73605e737e1d396e068512a39a3941fc7d769c5",
-        sizes: ["39", "40", "40.5", "41", "43", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-gamemode-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas GameMode FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820945&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fg%2Fy%2Fgy7536a.jpeg&feedId=103593&k=e34bd75dfa866e05c8b99c8dd25c30c5fda4f342",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-gamemode-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas GameMode FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820954&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fg%2F5%2Fg57887a.jpeg&feedId=103593&k=5c41b7b77bfbd93878f8d7e998c584039d93d3a8",
-        sizes: ["39", "40", "40.5", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-gamemode-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas GameMode FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820973&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fg%2Fy%2Fgy7535a.jpeg&feedId=103593&k=1e668b3a02100fb441120ed5210f1078cbe42f6c",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-nemeziz-1-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Nemeziz.1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820115&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7423a.jpg&feedId=103593&k=89bba0e0f71c6128fa87dc2e0cd5e39e6c5d679d",
-        sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-nemeziz-1-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Nemeziz .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820233&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7327a.jpg&feedId=103593&k=d1eef8a4af6df382f2117d431d8b2a8707673e6f",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-nemeziz-3-tf-tf",
-    brand: "Adidas",
-    model: "Adidas Nemeziz .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820309&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7345a.jpg&feedId=103593&k=48a7cfe548fdea33a59924b66c1766e780f8e947",
-        sizes: ["40", "40.5", "44.5", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-nemeziz-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Nemeziz + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679819986&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fh%2Feh0761a.jpg&feedId=103593&k=7545721c626864539c3aff333abaa206ead736ba",
-        sizes: ["43"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-nemeziz-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Nemeziz + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820012&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7336a.jpg&feedId=103593&k=34004f243404d54fd8bbc9d96fbb28e2307f3355",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-nemeziz-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Nemeziz + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820267&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7330a.jpeg&feedId=103593&k=0bc974cd1a7f2ccf0376503756a546b8fbc42e03",
-        sizes: ["45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820033&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy0743a.jpg&feedId=103593&k=b8c3ffcdc59d846dbd53089553ed4c7df719a47f",
-        sizes: ["40", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820176&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1021a.jpg&feedId=103593&k=1f43e3e35e81922979c22f3fed9d5868b1ca023e",
-        sizes: ["41", "42", "42.5", "43", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820326&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7241a.jpg&feedId=103593&k=374e762b31912c69089dfb5c3008df4bd4c98fc9",
-        sizes: ["41", "44.5", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820386&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1050a.jpg&feedId=103593&k=182cf6bdacd005090b7b970d47132c65e2383725",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-5",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821073&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6257a.jpg&feedId=103593&k=16fcf1dd180fcf6aac860a6ce0e9729048f7ef7f",
-        sizes: ["40", "40.5", "41", "42", "42.5", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-6",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821195&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6256a.jpg&feedId=103593&k=1f341ec80cbe4c9f45730cc47e3ddd1f37f29923",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-7",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822334&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6258a.jpg&feedId=103593&k=e194628c18e872ae09142f2b50110c73a248496c",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-fg-8",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823875&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6263a_1.jpg&feedId=103593&k=756208c57363977c1b2aa72fc4e27c0ddf542e24",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-fg-white-iron-metallic-men-size-6-5-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 FG -White-Iron Metallic-Men Size 6.5",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823486&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6255a.jpg&feedId=103593&k=2ef5129d26674d810570853995dbf21bf5f573f4",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-low-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak.1 LOW FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820007&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy0745a.jpg&feedId=103593&k=a4d9d44440d5446d732d79068e2f0e9a4db66e26",
-        sizes: ["41", "42", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-low-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 Low FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820184&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1028a.jpg&feedId=103593&k=6fad43fc721633487c31575f16a245c93fe52970",
-        sizes: ["41", "42.5", "44", "44.5", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-low-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 Low FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820252&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7244a.jpg&feedId=103593&k=428dbcaf906d60ca2ca40c580915512c9e335c3b",
-        sizes: ["40.5", "42", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-low-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 Low FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820900&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1051a.jpg&feedId=103593&k=75badb51e3e956a3b9a17e7fe7afbdd196cb757b",
-        sizes: ["40.5", "41", "42", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-low-fg-fg-5",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 LOW FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821081&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6265a.jpg&feedId=103593&k=d9c3e7a5b71c41a514d8b33672de1c166e3ac6a9",
-        sizes: ["40.5", "41", "42", "43", "44.5", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-1-low-fg-fg-6",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .1 LOW FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821237&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6266a.jpg&feedId=103593&k=9ec3be6a50491a245e3cee1a970dd044a0984fc3",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-2-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .2 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820206&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fs%2F4%2Fs42979a.jpg&feedId=103593&k=b6a48419df3e620f0a41e135476feff6eec1b8c6",
-        sizes: ["43", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-2-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .2 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821310&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fs%2F2%2Fs24187a.jpg&feedId=103593&k=b36c10998f691922c137ded2d5243053e76e78b9",
-        sizes: ["40.5", "42", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820027&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy0610a.jpg&feedId=103593&k=aacd661e50fdda65a3fed18c2628c84a0f2ca203",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820196&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1030a.jpg&feedId=103593&k=5399f7602d31fb4c55b464fd26c3984b7d2d5cb7",
-        sizes: ["39", "40.5", "42.5", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820917&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy2219a.jpg&feedId=103593&k=d0b196ac050f0cebd257ee68e68afea8978b063b",
-        sizes: ["45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821220&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6279a.jpg&feedId=103593&k=a509aef00cca3e9e16149ab88e7f48d51e0d5441",
-        sizes: ["44", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-fg-fg-5",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823133&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6531a.jpg&feedId=103593&k=81419c60298cffe406186cb2f62e2e11f1162c8a",
-        sizes: ["39", "40", "41", "42.5", "43", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-fg-fg-6",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823499&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6276a.jpg&feedId=103593&k=f0a2cf8ea4dee3f09715b1ec0a39386a38b6a57f",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-laceless-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820025&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy0617a.jpg&feedId=103593&k=40c5c52fe5e3f314034219c98acd25ccae604f82",
-        sizes: ["45", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-laceless-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820271&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7512a.jpg&feedId=103593&k=625d0c808f1b867642058853dac61f9e3cff96bc",
-        sizes: ["47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-ll-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 LL FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821267&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6295a.jpg&feedId=103593&k=fcf556aba9e5bc60dc14f45766eab344c15f84e9",
-        sizes: ["39", "40", "40.5", "41", "42", "43", "44", "44.5", "45", "45.5", "47", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-low-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 LOW FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823333&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6290a.jpg&feedId=103593&k=f6814b96bf6fdd1027174219b80c53a07615f301",
-        sizes: ["39", "40", "40.5", "41", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-tf-tf",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820155&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1038a.jpg&feedId=103593&k=7318c36ca0d9cc2e941dc1a42c30e969c477e3da",
-        sizes: ["40", "40.5", "41", "42", "42.5", "44", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-tf-tf-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820277&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw7517aa.jpg&feedId=103593&k=1ecea05050ba43158e9536f4d6c2467fc504a4cc",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-tf-tf-3",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821286&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6311a.jpg&feedId=103593&k=65ab076dc78edeee0e85fe22e53cfa6728285515",
-        sizes: ["45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-tf-tf-4",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823131&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fh%2F0%2Fh01388a.jpg&feedId=103593&k=ee862829bf66e304f679ce3dd65e7c70d0681e11",
-        sizes: ["43", "44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-3-tf-tf-5",
-    brand: "Adidas",
-    model: "Adidas Predator Freak .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823232&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6309a.jpg&feedId=103593&k=23750b4da768f529443e282310f9e97c6ef38fdc",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-fg-fg",
-    brand: "Adidas",
-    model: "Adidas Predator Freak + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820092&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy1026a.jpg&feedId=103593&k=599ed29a031ea3046b743e953c13f40186f5eb10",
-        sizes: ["43"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas Predator Freak + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821226&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6238a.jpeg&feedId=103593&k=28474b026c1ccc634101d35f3f8c578e44c79028",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas Predator Freak + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823863&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6239a.jpeg&feedId=103593&k=d6e6f6c060ddc7ce3b03e3d90671df77da079ac5",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-predator-freak-tf-tf",
-    brand: "Adidas",
-    model: "Adidas Predator Freak + TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 159.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823398&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6252a.jpeg&feedId=103593&k=074f7a6a8fb541ffd6f782f3f88647e9803b2c07",
-        sizes: ["40", "40.5", "41", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-1-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Ghosted.1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820109&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6895a.jpg&feedId=103593&k=b2f1f39cdcf7b37d29cd11c7bc2a7d2495c21849",
-        sizes: ["39", "40", "40.5", "41"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-1-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas X Ghosted.1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820127&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6898a.jpg&feedId=103593&k=0dd1c2af08ac55fb40dbf9e5b718bb6ce781ddac",
-        sizes: ["39", "41"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-1-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 224.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820899&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6894a.jpg&feedId=103593&k=d48ec09a444f28ba738dc6f5dce65c90dbeed550",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-1-tf-tf",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .1 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820289&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6963a.jpeg&feedId=103593&k=dbcae631b554a755bc5d1cd5a92e33dac41efa5b",
-        sizes: ["45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-3-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Ghosted.3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820133&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6948a.jpg&feedId=103593&k=5426b4b6485a52c5a7f6d3322c1708140ea8ff3d",
-        sizes: ["44.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-3-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820295&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6945a.jpg&feedId=103593&k=216472d86cb3e0062bc2bf721b42909e5a67267b",
-        sizes: ["39", "40.5", "43", "44", "44.5", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-3-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821185&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6947a.jpg&feedId=103593&k=a247cfa5f5235c8a7814ebf14465c485a4ab49df",
-        sizes: ["39", "41", "43", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-3-laceless-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820049&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6969a.jpg&feedId=103593&k=1676359dcce7aa189eee7f978c1ad8a5cc665502",
-        sizes: ["39", "40", "40.5", "41", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-3-tf-tf",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820368&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6940a.jpg&feedId=103593&k=0942e63a4238b9cc527653d0b006b3c64661081c",
-        sizes: ["44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-3-tf-tf-2",
-    brand: "Adidas",
-    model: "Adidas X Ghosted .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821184&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy7295a.jpg&feedId=103593&k=a81e7b60b08209fc24b25be451087544a1f1dd8c",
-        sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-ghosted-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Ghosted + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820219&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fw%2Ffw6911a.jpeg&feedId=103593&k=7b6db55d3a442df6cce4b2b81608c6e9fd6c9730",
-        sizes: ["39", "42.5", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-1-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821015&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6870a.jpg&feedId=103593&k=271bc145d4c66fae020fad94263c3c74c8cf494a",
-        sizes: ["40", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-1-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821319&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6867a.jpg&feedId=103593&k=81af25ad09dfc5b465019520b9a25694fd0071ed",
-        sizes: ["39", "40.5", "41", "42", "44.5", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-1-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822315&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6866a.jpg&feedId=103593&k=a6b012a32b717aa17e06230ba39e5b9a51b27a2b",
-        sizes: ["41", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-1-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823146&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6869a.jpg&feedId=103593&k=29e10abdc9f2fa6ae495666ec7fb1d622bacceb2",
-        sizes: ["39", "41", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-1-tf-tf",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .1 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821147&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3280a.jpeg&feedId=103593&k=1b3937e373752e07237e808e6a60ad176b6f645f",
-        sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-1-tf-tf-2",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .1 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823310&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3281a.jpg&feedId=103593&k=2bcf73c32557301acc19703bad8520b577a782d4",
-        sizes: ["41"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-2-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .2 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821092&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3289a.jpg&feedId=103593&k=5094ccc56b4bbae0f3bcfb81f4d8f6f12afc20e0",
-        sizes: ["40", "40.5", "41", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822141&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3296a.jpg&feedId=103593&k=7538e52c183cbc9abb8544672246940da635dd8e",
-        sizes: ["40", "42", "42.5", "43", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822151&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3298a.jpg&feedId=103593&k=a879090afc0a75cfa9a45f29d6b300f0a8ff2ccf",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822345&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3297a.jpg&feedId=103593&k=de57c36eef90fff8423d6a07c63dc2bcebf7557f",
-        sizes: ["40", "42.5", "43", "44", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-fg-fg-4",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823296&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3295a.jpg&feedId=103593&k=ce363da8d46688e5ee8a4b4f741eda122bf9c1c4",
-        sizes: ["39", "41", "42", "42.5", "43", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-laceless-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821098&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3271a.jpg&feedId=103593&k=ab0d2c4a21ab91162acb3f76092b94af0887fdd1",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-laceless-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821115&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3273a.jpg&feedId=103593&k=1d76c51bffa281dcb4e19040249f4306d79b699a",
-        sizes: ["39", "40", "42", "44", "44.5", "45", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-laceless-fg-fg-3",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 Laceless FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823191&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3274a.jpg&feedId=103593&k=4e2fbf528890f16b0911d88cd6dd12445ef9542e",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-tf-tf",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821327&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3308a.jpg&feedId=103593&k=57b319b941c89e180f1b64a3709fc6a6abea9b9d",
-        sizes: ["40", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-tf-tf-2",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822134&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3310a.jpg&feedId=103593&k=69cd24d70171b6d789815046443b7ef383cd5ab3",
-        sizes: ["39", "40.5", "44", "44.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-3-tf-tf-3",
-    brand: "Adidas",
-    model: "Adidas X Speedflow .3 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823184&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3311a.jpg&feedId=103593&k=d677f7ac0f9697918977d92e871413325f5e0d0e",
-        sizes: ["39", "42.5", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821011&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3338a.jpeg&feedId=103593&k=c636e770abb4152f6602c6d9483f037779ee0edf",
-        sizes: ["40.5", "41", "42", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-fg-fg-2",
-    brand: "Adidas",
-    model: "Adidas X Speedflow + FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823154&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy3339a.jpeg&feedId=103593&k=dd183399c10895525d6dbd3e5813ababf263a733",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-messi-1-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow MESSI .1 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822911&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6879a.jpg&feedId=103593&k=3f39a034a157fa92524c32bdaaf888ba3d90a82d",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-adidas-adidas-x-speedflow-messi-3-fg-fg",
-    brand: "Adidas",
-    model: "Adidas X Speedflow MESSi .3 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822376&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fy%2Ffy6888a.jpg&feedId=103593&k=594791bc692ac041c075c01c7c2e55b505d72f27",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-charly-charly-genesis-pfx-fg-fg",
-    brand: "Charly",
-    model: "Charly Genesis PFX FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820909&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F1029749bwa.jpeg&feedId=103593&k=05badba1becfa4f6d6cc46f8a29295bb758090df",
-        sizes: ["39", "41", "42", "42.5", "43", "44", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-charly-charly-genesis-pfx-tf-tf",
-    brand: "Charly",
-    model: "Charly Genesis PFX TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822115&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F1029748a.jpg&feedId=103593&k=fa34fbb65fd23f2e406e30b292eb0755d60aae5d",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-442-team-fg-2e-wide-fg",
-    brand: "New Balance",
-    model: "New Balance 442 Team FG 2E Wide",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 89.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820093&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmsctfsw1-2ea.jpg&feedId=103593&k=233b0075113def70fc0dfdd36d5c6ca368ce70b8",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-442-team-fg-fg",
-    brand: "New Balance",
-    model: "New Balance 442 Team FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 89.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822093&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmsctfbw12ea.jpg&feedId=103593&k=535f0400cb6a353a204b5ecc8dda51245b106331",
-        sizes: ["36.5", "39", "40", "40.5", "41", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-442-team-tf-2e-wide-tf",
-    brand: "New Balance",
-    model: "New Balance 442 Team TF 2E WIDE",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 89.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821153&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmscftbw1a_1_2.jpg&feedId=103593&k=35b37ab57f5a67305d6be6563b7d60acc764aca6",
-        sizes: ["36", "36.5", "39", "40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-furon-ii-pro-fg-fg",
-    brand: "New Balance",
-    model: "New Balance Furon II Pro FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 199.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820211&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F8%2F0%2F80409a.jpeg&feedId=103593&k=db05fe3de537f2e12ca2bfb5f24d2ec9b1dc18c9",
-        sizes: ["40", "42.5", "43", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-tekela-v3-magia-fg-fg",
-    brand: "New Balance",
-    model: "New Balance Tekela V3 + Magia FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821930&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmst2fb352ea.jpeg&feedId=103593&k=1bcfcf82c4bbb566ead4d9978817f002fd36e46a",
-        sizes: ["40", "41"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-tekela-v3-magia-fg-wide-fg",
-    brand: "New Balance",
-    model: "New Balance Tekela V3 Magia FG Wide",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820209&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmst2fsg32eb.jpg&feedId=103593&k=c54af4f609af6671fc2109cc56d4ceed207aec09",
-        sizes: ["45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-tekela-v3-pro-fg-2e-wide-fg",
-    brand: "New Balance",
-    model: "New Balance Tekela V3+ Pro FG 2E Wide",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 209.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822085&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmst1fp352ea.jpeg&feedId=103593&k=a8a62d1660cbfd05d9a6ebd6a91ba77f38f4b769",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-new-balance-new-balance-tekela-v3-pro-fg-2e-wide-fg-2",
-    brand: "New Balance",
-    model: "New Balance Tekela V3+ Pro FG 2E Wide",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 219.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822106&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fs%2Fmstbfb352ea.jpeg&feedId=103593&k=59b71e775fac78c75e53c0531028d3b48bc943ac",
-        sizes: ["40", "40.5", "41", "42", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-legend-9-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Legend 9 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 74.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822196&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda1174-004a.jpeg&feedId=103593&k=af993e56cdad64df86254547665d06bbc33643a3",
-        sizes: ["39", "41", "42", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-legend-9-academy-fg-mg-fg-2",
-    brand: "Nike",
-    model: "Nike Legend 9 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 74.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823432&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda1174-176a.jpeg&feedId=103593&k=d60cb5e110bc647db18e3d6d6327e864c9be24e6",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-legend-9-academy-tf-tf",
-    brand: "Nike",
-    model: "Nike Legend 9 Academy TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 74.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823445&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda1191-004a.jpeg&feedId=103593&k=41402997d5f4d7c79024a00f59bfde7694264f29",
-        sizes: ["40", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-legend-9-pro-fg-fg",
-    brand: "Nike",
-    model: "Nike Legend 9 Pro FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822174&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda1175-176a.jpeg&feedId=103593&k=6c076a006d469d9779b65f868231264f8b43827c",
-        sizes: ["47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-legend-9-pro-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Legend 9 Pro FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822183&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda1175-004a.jpeg&feedId=103593&k=c1b1a279934cbaf843d17e3721c3dbc605149d67",
-        sizes: ["39", "40", "41", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-mercurial-superfly-8-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Mercurial Superfly 8 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820102&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0843-600a.jpg&feedId=103593&k=2a3351f89f43c7802e7aec9fb4412ed3c0f91868",
-        sizes: ["44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-mercurial-superfly-8-academy-tf-tf",
-    brand: "Nike",
-    model: "Nike Mercurial Superfly 8 Academy TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820098&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0953-090a.jpg&feedId=103593&k=46c6845571581c5f71b3a5c08ae1323cd15732aa",
-        sizes: ["47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-mercurial-vapor-14-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Mercurial Vapor 14 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820103&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5691-600a.jpg&feedId=103593&k=39b37397a6e3a0c1196474cef561f1283f26e03c",
-        sizes: ["40.5", "44", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-academy-df-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT Academy DF FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820944&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fw%2Fcw6667-303a.jpeg&feedId=103593&k=6009d8061715542b81df250179be344076c3e27c",
-        sizes: ["47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820942&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fk%2Fck8460-303a.jpeg&feedId=103593&k=870e445d7e15e80a0429873a9e596d43015cb846",
-        sizes: ["45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-elite-3d-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT Elite 3D FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820223&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz3457-467a.jpeg&feedId=103593&k=fca7cb02522354bb2db73663f1f833d5fa8424d0",
-        sizes: ["40", "40.5", "41", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-elite-df-3d-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT Elite DF 3D FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820970&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz3458-467a.jpeg&feedId=103593&k=0a1cde6583f8b302e9a1e7c54e18d009f904f11b",
-        sizes: ["40", "42", "44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-elite-df-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT Elite DF FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821912&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fw%2Fcw6589-303a.jpeg&feedId=103593&k=467cad2d6bf8b37559b309c5772a97e6a47d25f8",
-        sizes: ["39", "40", "40.5", "41", "42", "44.5", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-elite-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820090&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fk%2Fck8439-090a.jpg&feedId=103593&k=56758e245fd49802875da5914ad8dc753fac9a81",
-        sizes: ["40.5", "41"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-elite-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom GT Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820376&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fk%2Fck8439-303a.jpeg&feedId=103593&k=448144f8fe571055aaaa2688f423abf17b4a3850",
-        sizes: ["40", "40.5", "41", "44", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820273&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fk%2Fck8460-060a.jpeg&feedId=103593&k=5519eea2c1838406156eea31f57dbca2ec9616a0",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-df-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom Gt2 Academy DF FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821974&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fc%2Fdc0797-004a.jpeg&feedId=103593&k=5e3663b46d89f81fd42ecc453f7cd0b74089bc8a",
-        sizes: ["43", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-df-fg-mg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy DF FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822255&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fc%2Fdc0797-167a.jpeg&feedId=103593&k=2f0144983d28ec5f7d1c20e2a0d5bb07ccdd7f85",
-        sizes: ["44.5", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-df-fg-mg-fg-3",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy DF FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822292&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fc%2Fdc0797-415a.jpeg&feedId=103593&k=c1802228cb0666639d6b66c2f09cebb97c2fe8f0",
-        sizes: ["43", "44", "44.5", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-df-sw-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy DF SW FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823601&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fm%2Fdm0719-003a.jpeg&feedId=103593&k=f60d370ed20e08c3d506e3c37a7225eee398a320",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-df-tf-tf",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy DF TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821945&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fc%2Fdc0802-004a.jpeg&feedId=103593&k=a1756e7702d42fc9e3078bd7ffcc61dbc1430879",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821935&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda4433-004a.jpeg&feedId=103593&k=767c33fc3a7f57d771cd42c0d73b24d6bf5785d2",
-        sizes: ["39", "40.5", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-fg-mg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823781&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda4433-570a.jpeg&feedId=103593&k=a8eae560cca29600e2e9dc8722c61f0fe690f28f",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-flyease-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy Flyease FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822282&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fh%2Fdh9638-167a.jpeg&feedId=103593&k=426ab93209e402f7adea8edca52032127b2d918c",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-academy-sw-tf-tf",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Academy SW TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823577&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fm%2Fdm0725-003a.jpeg&feedId=103593&k=432e29f074bc8c3323ec8389932cbb0f55db75aa",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-df-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 DF FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822929&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9889-167a.jpeg&feedId=103593&k=5da984cebf20883e5cb353bad6339fc25c7de32e",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-elite-df-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Elite DF FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820991&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9889-004a.jpeg&feedId=103593&k=5ae38ca23f06c8b98038fd3ad7e32f4ef5095e07",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-elite-df-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom Gt2 Elite DF FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822024&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9889-415a.jpeg&feedId=103593&k=45b9af67019a8d8f3d4bc263ff1bf370a599e337",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-elite-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821049&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9890-004a.jpeg&feedId=103593&k=3fb971ffefe21a02f1f3429cd8de75512fee5174",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-elite-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom Gt2 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821171&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9890-167a.jpeg&feedId=103593&k=4348bcaec17a427bc350107cf63afcf2c5eac798",
-        sizes: ["39", "40", "41", "42.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-elite-fg-fg-3",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822036&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9890-415a.jpeg&feedId=103593&k=9ad9b0afe0c78f70041d86494a230537c4173b25",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-elite-fg-fg-4",
-    brand: "Nike",
-    model: "Nike Phantom GT2 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823759&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9890-570a.jpeg&feedId=103593&k=bffc075e0e562753b536afd6ce5705792ddfb84e",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-pro-df-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 PRO DF FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 149.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823023&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fc%2Fdc0759-167a.jpeg&feedId=103593&k=17bfa742f3f058a383038d7dab99ee60c8651987",
-        sizes: ["41", "42", "42.5", "43", "44", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-pro-df-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom GT2 PRO DF FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 149.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823408&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fc%2Fdc0759-004a.jpeg&feedId=103593&k=b572ec22d9bbc4958756c4051cc672075675e93f",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-pro-fg-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 PRO FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822989&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda4432-167a.jpeg&feedId=103593&k=ad55331724126395a84211cbc792b4a84d7f1ec1",
-        sizes: ["39", "40", "40.5", "42", "42.5", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-pro-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Phantom GT2 PRO FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823033&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fa%2Fda4432-004a.jpeg&feedId=103593&k=c89d06cf7dc425ee1646836bceb20e2e0d95d71d",
-        sizes: ["40", "40.5", "41", "42", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-phantom-gt2-sw-pro-fg-black-green-strike-men-size-6-5-fg",
-    brand: "Nike",
-    model: "Nike Phantom GT2 SW PRO FG -Black-Green Strike-Men Size 6.5",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 129.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823538&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fm%2Fdm0734-003a.jpeg&feedId=103593&k=69e5a033833f7f5138b8552407029696ef140877",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-cr7-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy CR7 FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 89.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823070&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fb%2Fdb2854-600a.jpeg&feedId=103593&k=5b992137bc1e98c02f41501cdbc7a37f1c11292b",
-        sizes: ["39", "40.5", "41", "43", "44", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820935&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0843-107a.jpeg&feedId=103593&k=9e5cfd09820536c0ee5f1c39dd32946441c12cd6",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-fg-mg-fg-2",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821149&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0843-403a.jpeg&feedId=103593&k=85c91f51203a3f3a0563ac45b31054ed22b4083c",
-        sizes: ["43", "44", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-fg-mg-fg-3",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822057&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0843-004a.jpeg&feedId=103593&k=a5fa9a5e25fd8be62e2ca98dd1558b40751e14aa",
-        sizes: ["42", "42.5", "44", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-fg-mg-fg-4",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822297&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0843-760a.jpeg&feedId=103593&k=c2459eb0a6401408a222a18a0565bcd8d51edeca",
-        sizes: ["39", "44.5", "45", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-fg-mg-fg-5",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823667&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0843-574a.jpeg&feedId=103593&k=5ea7b506b03a03be6880ffdf23c00d8228192c4e",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-km-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy KM FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 89.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823829&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fb%2Fdb2857-506a.jpeg&feedId=103593&k=239549fcf4da703d26f9b42fa5b7942395732718",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-km-tf-tf",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy  KM TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 89.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823840&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fb%2Fdb2868-506a.jpeg&feedId=103593&k=aa219bbdf59c3226afa2e2609921ee390ab662e7",
-        sizes: ["40", "40.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-academy-tf-tf",
-    brand: "Nike",
-    model: "Nike Superfly 8 Academy TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 84.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822054&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0953-004a.jpeg&feedId=103593&k=a402c696b50941755c7030f241f2207d35868675",
-        sizes: ["40", "40.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-elite-cr7-fg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 Elite CR7 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 294.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823513&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fb%2Fdb2858-600a.jpeg&feedId=103593&k=5ce18504b5a56103cebeccc1cd3efffa4ef16d54",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-elite-fg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820985&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0958-004a.jpeg&feedId=103593&k=889021d2ae6edb43532a71714c894476fc86c83e",
-        sizes: ["41", "42", "42.5", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-elite-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Superfly 8 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821162&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0958-760a.jpeg&feedId=103593&k=d556bda37e16a9ee4716f10083f35916ffaaafac",
-        sizes: ["41", "42", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-elite-fg-fg-3",
-    brand: "Nike",
-    model: "Nike Superfly 8 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821987&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0958-403a.jpeg&feedId=103593&k=4500b45e4b4082c393196df8bcff9b7ab5afe0ab",
-        sizes: ["42", "42.5", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-elite-fg-fg-4",
-    brand: "Nike",
-    model: "Nike Superfly 8 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 274.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823701&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0958-574a.jpeg&feedId=103593&k=e7afa939186d89f593dfe0a1db03d13e18c190e5",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-elite-km-fg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 Elite KM FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 294.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823690&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fb%2Fdb2859-506a.jpeg&feedId=103593&k=80908b16ee920e58727d0f790029b1e09ee89a78",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-pro-fg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 PRO FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 149.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823045&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv0961-004a.jpeg&feedId=103593&k=7d0139ae0ce5a1afb5cef2d78a29984faed688e8",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-superfly-8-pro-km-fg-fg",
-    brand: "Nike",
-    model: "Nike Superfly 8 PRO KM FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 159.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823713&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fd%2Fj%2Fdj3977-506a.jpeg&feedId=103593&k=1407c07397ff45a73ddf37ca531ac41e225b4532",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-academy-fg-mg-fg",
-    brand: "Nike",
-    model: "Nike Vapor 14 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820930&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5691-107a.jpeg&feedId=103593&k=d9c902ffe6cbe04df4073d245ec39de377580f48",
-        sizes: ["44"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-academy-fg-mg-fg-2",
-    brand: "Nike",
-    model: "Nike Vapor 14 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821005&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5691-403a.jpeg&feedId=103593&k=6aaa88dc8e1ea5db6fc21a5aea4084b9e04a1d02",
-        sizes: ["45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-academy-fg-mg-fg-3",
-    brand: "Nike",
-    model: "Nike Vapor 14 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821999&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5691-004a.jpeg&feedId=103593&k=0fd58431b667f3a87cbf791ff1614a2a161ff586",
-        sizes: ["44", "44.5", "45", "45.5", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-academy-fg-mg-fg-4",
-    brand: "Nike",
-    model: "Nike Vapor 14 Academy FG-MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822301&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5691-760a.jpeg&feedId=103593&k=4546c6a9d63465f9dddc4c931cc0583c5e470f1e",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "47.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-elite-fg-fg",
-    brand: "Nike",
-    model: "Nike Vapor 14 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820999&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fq%2Fcq7635-004a.jpeg&feedId=103593&k=3eb1911534450114def889810e729b72fdaa3340",
-        sizes: ["39", "40.5", "41", "43", "45"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-elite-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Vapor 14 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821160&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fq%2Fcq7635-760a.jpeg&feedId=103593&k=bf7be3570fcad02c74073974dc0070e2f43de92d",
-        sizes: ["45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-elite-fg-fg-3",
-    brand: "Nike",
-    model: "Nike Vapor 14 Elite FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 249.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823747&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fq%2Fcq7635-574a.jpeg&feedId=103593&k=2effe807517c866fbc5d31ddf8ec6d736efa20a1",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-];
-
-const minedBootProductsChunk25: BootProduct[] = [
-  {
-    id: "prosoccer-nike-nike-vapor-14-pro-fg-fg",
-    brand: "Nike",
-    model: "Nike Vapor 14 PRO FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 139.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820968&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5693-403a.jpeg&feedId=103593&k=fb343ae76a00d35ffa1545d90bd7ff55417e0843",
-        sizes: ["45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-pro-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Vapor 14 PRO FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 139.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822981&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5693-760a.jpeg&feedId=103593&k=8516398ef0099a0da3b66c9a23e6b4419d3c11dc",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-vapor-14-pro-fg-fg-3",
-    brand: "Nike",
-    model: "Nike Vapor 14 PRO FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 139.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823055&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fu%2Fcu5693-004a.jpeg&feedId=103593&k=90c563ee04fafd02183304132ec0080d9d1da4ed",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-nike-nike-zoom-vapor-14-pro-tf-tf",
-    brand: "Nike",
-    model: "Nike Zoom Vapor 14 PRO TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 119.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679823728&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fv%2Fcv1001-574a.jpeg&feedId=103593&k=82120014cfe1fc97e550bb2ba5b92cb420fcc5f1",
-        sizes: ["39", "40", "40.5", "41", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-king-pro-21-fg-fg",
-    brand: "Puma",
-    model: "Puma King PRO 21 FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822953&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106549-01a.jpeg&feedId=103593&k=ed0b19301dd61973d9de3a3e83dd9e62cfdffec7",
-        sizes: ["40.5", "41"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-king-pro-21-tf-tf",
-    brand: "Puma",
-    model: "Puma King PRO 21 TF",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 99.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822951&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106552-01a.jpeg&feedId=103593&k=57a9072d6bddbc31b04067867e444c10ef3a2933",
-        sizes: ["40", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-ultra-1-2-fg-ag-fg",
-    brand: "Puma",
-    model: "Puma Ultra 1.2 FG-AG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 199.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820072&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106299-02a.jpg&feedId=103593&k=9401131205fb9b8f99aa1d5014c84e4644e6a373",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-ultra-1-3-fg-ag-fg",
-    brand: "Puma",
-    model: "Puma Ultra 1.3 FG-AG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 199.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821176&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106477-02a.jpeg&feedId=103593&k=b1d18c9daf71cb159f69eda84bd66c2f2890e5d4",
-        sizes: ["40", "42.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-ultra-1-3-fg-ag-fg-2",
-    brand: "Puma",
-    model: "Puma Ultra 1.3 FG-AG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 199.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679821217&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106477-03a.jpeg&feedId=103593&k=f91073e1132b523f590731a24f2eb5b0d2a569b1",
-        sizes: ["41", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-ultra-3-3-fg-ag-fg",
-    brand: "Puma",
-    model: "Puma Ultra 3.3 FG-AG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822962&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106523-01a.jpeg&feedId=103593&k=46cd8884292083ad1202f255d1b7f8023c89007a",
-        sizes: ["45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-puma-puma-ultra-3-3-fg-ag-fg-2",
-    brand: "Puma",
-    model: "Puma Ultra 3.3 FG-AG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 79.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679822978&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F1%2F0%2F106523-02a.jpeg&feedId=103593&k=1f360ec9b14d7e7b83f3a7b2445b0c020fd3b632",
-        sizes: ["46"],
-      },
-    ],
-  },
-  {
-    id: "prosoccer-umbro-umbro-tocco-premier-fg-fg",
-    brand: "Umbro",
-    model: "Umbro Tocco Premier FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ProSoccer",
-        price: 149.99,
-        shipping: 0,
-        currency: "USD",
-        url: "https://www.awin1.com/pclick.php?p=41679820074&a=3013769&m=84755",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.prosoccer.com%2Fpub%2Fmedia%2Fcatalog%2Fproduct%2F8%2F1%2F81652u-jm9a1.jpg&feedId=103593&k=1543d36be77f93e29ed961df918028dbc91aeebf",
-        sizes: ["41", "42.5", "44", "45"],
       },
     ],
   },
@@ -91978,6 +89017,9 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-ft-fg-fg-5",
     brand: "Adidas",
@@ -92212,9 +89254,6 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-ft-l-tech-fg-fg",
     brand: "Adidas",
@@ -98061,6 +95100,9 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-9-adv-lvl-fg-ag-fg-ag",
     brand: "Puma",
@@ -98217,9 +95259,6 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-9-play-fg-ag-ag",
     brand: "Puma",
@@ -103240,6 +100279,9 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "sportisgoodfr-joma-joma-propulsion-cup-2302-ag-ag",
     brand: "Joma",
@@ -103342,9 +100384,6 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "sportisgoodfr-skechers-skechers-skx-01-1-5-elite-fg-fg",
     brand: "Skechers",
@@ -103496,5 +100535,4 @@ export const bootProducts: BootProduct[] = [
   ...minedBootProductsChunk25,
   ...minedBootProductsChunk26,
   ...minedBootProductsChunk27,
-  ...minedBootProductsChunk28,
 ];

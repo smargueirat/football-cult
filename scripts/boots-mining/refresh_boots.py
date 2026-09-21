@@ -152,6 +152,41 @@ def existing_legacy_ids(prefix):
     return set(re.findall(r'id: "([^"]+)"', prefix))
 
 
+IMAGE_OK_PATH = os.path.join(SCRIPT_DIR, "image_ok.json")
+# md5 del JPEG de 959 bytes "No image available" que images2.productserve.com
+# devuelve con HTTP 200 cuando la foto original ya no existe.
+PRODUCTSERVE_PLACEHOLDER_MD5 = "84fe74f622f163b924b962997adda0e1"
+
+
+def drop_dead_images(mined):
+    """Saca las ofertas cuya foto es el placeholder de productserve (el
+    producto ya no existe en la tienda: ProSoccer/Decathlon dieron 181 y 3
+    cards con "No image available", 2026-09-21). Las URLs con foto real se
+    cachean en image_ok.json para chequear sólo las nuevas cada noche. Si
+    la red falla no se descarta nada (sólo se descarta lo confirmado)."""
+    import hashlib, urllib.request, concurrent.futures as cf
+    ok = set(json.load(open(IMAGE_OK_PATH))) if os.path.exists(IMAGE_OK_PATH) else set()
+    todo = sorted({d["imageUrl"] for d in mined if "images2.productserve.com" in (d.get("imageUrl") or "")} - ok)
+
+    def check(u):
+        try:
+            body = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read()
+            return u, hashlib.md5(body).hexdigest() != PRODUCTSERVE_PLACEHOLDER_MD5
+        except Exception:  # noqa: BLE001 -- red caída/timeout: no es evidencia de foto muerta
+            return u, None
+
+    dead = set()
+    with cf.ThreadPoolExecutor(16) as ex:
+        for u, good in ex.map(check, todo):
+            if good:
+                ok.add(u)
+            elif good is False:
+                dead.add(u)
+    json.dump(sorted(ok), open(IMAGE_OK_PATH, "w"), indent=0)
+    print(f"image check: {len(todo)} new urls, {len(dead)} dead-photo offers dropped")
+    return [d for d in mined if d.get("imageUrl") not in dead]
+
+
 def _image_key(url):
     # Foot-Store/Sport is Good ES+FR son tiendas espejo del mismo backend
     # (mismo archivo real en cdn.blazimg.com para el mismo colorway) --
@@ -424,6 +459,7 @@ def main():
     old_prices = old_prices_by_id(old_auto_section)
     old_auto_ids = set(old_prices.keys())
 
+    mined = drop_dead_images(mined)
     entries = build_entries(mined, legacy_ids)
     write_boots_ts(prefix, entries)
 

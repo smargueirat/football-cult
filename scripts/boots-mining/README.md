@@ -45,6 +45,15 @@ con equivalencia EU se descarta.
   las "Youth/Kids" eran botas de niño.
 - Los 71 legacy: `legacy_stock.py` re-aplica tallas/precio de los feeds
   de hoy y saca la oferta (o el modelo) si ya no hay filas en stock.
+- ProSoccer: 0 ofertas desde 2026-09-21. Su feed quedó congelado en el
+  catálogo viejo (Magento): las fotos daban 404 ("No image available") y
+  las fichas redirigen a Shopify con "Out of stock". `mine_prosoccer`
+  sólo publica lo que coincide con `/products.json` de la tienda (foto
+  real + señal de stock), así que vuelve solo si arreglan el feed.
+- Fotos muertas: `drop_dead_images()` (refresh_boots.py) descarta ofertas
+  cuya foto de images2.productserve.com es el placeholder de 959 bytes
+  (el proxy responde 200 aunque el original dé 404/410). Cachea las
+  buenas en `image_ok.json` (gitignored) -> sólo chequea URLs nuevas.
 - NikeCL/NikeAR/PumaAR: sin tallas ni forma de refrescar (ver abajo);
   al filtrar por talla no aparecen.
 

@@ -523,6 +523,37 @@ def mine_deporte_outlet():
 # "gratis": su propia política dice que el envío internacional queda
 # afuera del envío gratis) y sizes vacío en vez de inventar cualquiera
 # de los dos.
+def prosoccer_images_by_handle():
+    """ProSoccer migró a Shopify y las fotos del feed (aw_image_url, ruta
+    vieja /pub/media/catalog/...) devuelven 404: las 181 cards salían con
+    "No image available" (2026-09-21). El catálogo público
+    /products.json trae la foto real; el handle es el nombre del
+    merchant_deep_link sin ".html". Pocas requests grandes (no una por
+    ficha: las fichas dan 429 enseguida)."""
+    import subprocess, time
+    out = {}
+    for page in range(1, 30):
+        url = f"https://www.prosoccer.com/products.json?limit=250&page={page}"
+        for attempt in range(4):
+            # curl y no urllib: Shopify/Cloudflare le devuelve 429 a la
+            # huella TLS de urllib pero deja pasar a curl (confirmado).
+            r = subprocess.run(['curl', '-s', '-A', 'Mozilla/5.0', '--max-time', '60', url], capture_output=True)
+            try:
+                data = json.loads(r.stdout)
+                break
+            except ValueError:
+                print(f'ProSoccer products.json page {page} intento {attempt + 1}: respuesta no JSON')
+                time.sleep(10 * (attempt + 1))
+        else:
+            return out
+        if not data.get('products'):
+            break
+        for p in data['products']:
+            if p.get('images'):
+                out[p['handle']] = p['images'][0]['src'].split('?')[0]
+        time.sleep(1)
+    return out
+
 def us_men_to_eu(custom_1):
     # ProSoccer: "Men Size 9.5" (US hombre) -> EU con la misma tabla estándar
     # US_TO_EU de FutbolEmotion. None si no es una talla adulta conocida.
@@ -563,8 +594,18 @@ def mine_prosoccer():
                 continue
             groups.setdefault(style, []).append(row)
     n = 0
+    # El feed de ProSoccer quedó congelado en el catálogo viejo (Magento):
+    # sus URLs redirigen a fichas Shopify que dicen "Out of stock" y
+    # ya no están en /products.json (2026-09-21: 0 de 182 coinciden). Sólo
+    # se publica lo que SÍ está en el catálogo actual de la tienda -- eso
+    # da la foto real y sirve de señal de stock, y se recupera solo si
+    # ProSoccer arregla el feed.
+    images = prosoccer_images_by_handle()
     for style, rows in groups.items():
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
+        image = images.get(re.sub(r'\.html$', '', (rep.get('merchant_deep_link') or '').rstrip('/').rsplit('/', 1)[-1]))
+        if not image:
+            continue  # sin foto real la card sale con "No image available"
         sizes = sorted({s for s in (us_men_to_eu(r.get('custom_1')) for r in rows) if s}, key=size_sort_key)
         if not sizes:
             continue
@@ -582,7 +623,7 @@ def mine_prosoccer():
             'store': 'ProSoccer', 'brand': brand, 'model': model, 'groundType': ground,
             'price': parse_price(rep.get('search_price')), 'shipping': 0,
             'currency': 'USD',
-            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            'url': rep.get('aw_deep_link'), 'imageUrl': image, 'sizes': sizes,
         })
         n += 1
     print('ProSoccer:', n)
