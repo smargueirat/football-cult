@@ -12,15 +12,22 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 const STORAGE_KEY = "football-cult-country";
 const GEO_COOKIE = "football-cult-geo-country";
 
+// Un servicio de streaming depende de DÓNDE está el visitante, no de a qué
+// país eligió que le envíen los productos: por eso manda la geolocalización
+// por IP (cookie que deja proxy.ts) y solo si no hay se usa el país elegido.
+// `?dazn=ES` / `?dazn=FR` fuerza el país para poder probar el anuncio.
 function visitorCountry(): string | null {
+  const forced = new URLSearchParams(window.location.search).get("dazn");
+  if (forced) return forced.toUpperCase();
+  const m = document.cookie.match(new RegExp(`(?:^|; )${GEO_COOKIE}=([^;]*)`));
+  if (m) return decodeURIComponent(m[1]).toUpperCase();
   try {
     const stored = window.localStorage.getItem(STORAGE_KEY);
     if (stored) return stored.toUpperCase();
   } catch {
-    /* localStorage bloqueado: seguimos con la cookie */
+    /* localStorage bloqueado */
   }
-  const m = document.cookie.match(new RegExp(`(?:^|; )${GEO_COOKIE}=([^;]*)`));
-  return m ? decodeURIComponent(m[1]).toUpperCase() : null;
+  return null;
 }
 
 const T = {
