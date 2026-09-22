@@ -151,25 +151,33 @@ export default function ProductCard3D({
       onMouseEnter={handlePrefetchPhoto}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
-      style={{
-        transform: `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${
-          tilting ? "scale3d(1.02, 1.02, 1.02)" : "scale3d(1, 1, 1)"
-        }`,
-        transformStyle: "preserve-3d",
-        // will-change solo mientras se está inclinando la card, no
-        // siempre -- dejarlo prendido de forma estática (como estaba
-        // antes, vía clase de Tailwind) fuerza al navegador a reservarle
-        // una capa GPU propia a CADA card montada. "Ver más" nunca
-        // desmonta, así que tras varias páginas eran cientos de capas
-        // vivas a la vez -- justo lo que se siente como scroll pesado y
-        // fotos lentas en cuanto el catálogo crece.
-        willChange: tilting ? "transform" : "auto",
-        boxShadow: tilting
-          ? `${-tilt.y * 1.8}px ${22 - tilt.x * 1.2}px 38px -10px rgba(43, 32, 10, 0.55), ${-tilt.y * 0.6}px ${8 - tilt.x * 0.4}px 14px -6px rgba(43, 32, 10, 0.35)`
-          : "0 14px 28px -10px rgba(43, 32, 10, 0.45)",
-      }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] transition-[transform,box-shadow] duration-150 ease-out [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
     >
+      {/* El tilt 3D vive en este div interno, no en el <a> de arriba --
+          un transform en vivo (que cambia en cada mousemove) puesto
+          directo sobre el link rompe el menú nativo de "abrir en pestaña
+          nueva"/clic derecho en varios navegadores (bug real reportado).
+          El <a> queda sin transform propio: siempre un link normal. */}
+      <div
+        style={{
+          transform: `perspective(900px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${
+            tilting ? "scale3d(1.02, 1.02, 1.02)" : "scale3d(1, 1, 1)"
+          }`,
+          transformStyle: "preserve-3d",
+          // will-change solo mientras se está inclinando la card, no
+          // siempre -- dejarlo prendido de forma estática (como estaba
+          // antes, vía clase de Tailwind) fuerza al navegador a reservarle
+          // una capa GPU propia a CADA card montada. "Ver más" nunca
+          // desmonta, así que tras varias páginas eran cientos de capas
+          // vivas a la vez -- justo lo que se siente como scroll pesado y
+          // fotos lentas en cuanto el catálogo crece.
+          willChange: tilting ? "transform" : "auto",
+          boxShadow: tilting
+            ? `${-tilt.y * 1.8}px ${22 - tilt.x * 1.2}px 38px -10px rgba(43, 32, 10, 0.55), ${-tilt.y * 0.6}px ${8 - tilt.x * 0.4}px 14px -6px rgba(43, 32, 10, 0.35)`
+            : "0 14px 28px -10px rgba(43, 32, 10, 0.45)",
+        }}
+        className="flex h-full flex-col transition-[transform,box-shadow] duration-150 ease-out"
+      >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
         style={{
@@ -333,6 +341,7 @@ export default function ProductCard3D({
         ) : (
           <p className="text-[10px] text-[#675c44] sm:text-xs">{t.countryPanel.notAvailable}</p>
         )}
+      </div>
       </div>
     </Link>
   );

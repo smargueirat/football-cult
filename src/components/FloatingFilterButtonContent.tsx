@@ -251,7 +251,6 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
               max={PRICE_RANGE_MAX}
               value={priceRange}
               onChange={setPriceRange}
-              formatLabel={(v, isMax) => (isMax ? `€${v}+` : `€${v}`)}
             />
           </div>
 
