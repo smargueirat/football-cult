@@ -113,7 +113,16 @@ def split(picks_path):
     new_products = {}
     add_offers = {}
     season_conflict = {}
+    no_image = 0
     for k, d in picks.items():
+        # Sin foto real la card sale como caja beige vacía (pedido
+        # explícito del usuario, 2026-09-22) -- un solo punto, antes de
+        # abrirse en gen_new_teams.py (new_products) / refresh.py
+        # (add_offers), para toda tienda Awin/TradeTracker/eBay que pase
+        # por acá (mismo espíritu que is_manually_excluded más abajo).
+        if not (d.get("image") or "").strip():
+            no_image += 1
+            continue
         detected = detect_season(d["title"])
         if k in existing:
             if any(seasons_equivalent(s, detected) for s in existing[k]):
@@ -124,12 +133,13 @@ def split(picks_path):
                 season_conflict[k] = ("|".join(sorted(existing[k])), detected, d["title"])
         else:
             new_products[k] = d
-    return new_products, add_offers, season_conflict
+    return new_products, add_offers, season_conflict, no_image
 
 if __name__ == "__main__":
-    new_products, add_offers, season_conflict = split(sys.argv[1])
+    new_products, add_offers, season_conflict, no_image = split(sys.argv[1])
     print(f"new_products: {len(new_products)}")
     print(f"add_offers: {len(add_offers)}")
+    print(f"no_image (sin foto, descartados): {no_image}")
     print(f"season_conflict (auto-resolve candidates -- still needs photo verification, see README): {len(season_conflict)}")
     for k, (old, new, title) in season_conflict.items():
         print(f"  {k}: existing={old} vs pick={new} | {title}")

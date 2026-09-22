@@ -903,6 +903,15 @@ if __name__ == '__main__':
     mine_clovis()
     mine_futbolemotion(legacy_model_names_from_boots_ts())
 
+    # Guardia real, un solo punto para las 12 tiendas de arriba (mismo
+    # espíritu que EXCLUDE_KEYWORDS): sin foto la card sale como caja
+    # beige vacía (pedido explícito del usuario, 2026-09-22) -- se
+    # descarta acá antes de escribir el JSON en vez de en cada mine_*.
+    before = len(results)
+    results[:] = [r for r in results if (r.get('imageUrl') or '').strip()]
+    if before != len(results):
+        print(f'sin foto (descartadas): {before - len(results)}')
+
     print('TOTAL:', len(results))
     with open(OUT_PATH, 'w') as out:
         json.dump(results, out, ensure_ascii=False, indent=1)

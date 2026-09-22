@@ -329,6 +329,17 @@ def canonicalize_brands(results):
         d['brand'] = canonical[d['brand'].strip().lower()]
 
 
+def drop_no_image(results, label):
+    """Sin foto real la card sale como caja beige vacía (pedido explícito
+    del usuario, 2026-09-22) -- un solo punto para las 8 tiendas de
+    arriba, antes de fundir por modelo (mismo espíritu que
+    EXCLUDE_KEYWORDS en mine_boots.py/extract.py)."""
+    before = len(results)
+    results[:] = [r for r in results if (r.get('imageUrl') or '').strip()]
+    if before != len(results):
+        print(f'{label}: sin foto (descartadas) {before - len(results)}')
+
+
 def merge_by_model(results):
     order = []
     groups = {}
@@ -432,6 +443,9 @@ if __name__ == '__main__':
     for kw in ('Sous maillot', 'Legging', 'Cuissard', 'Manchon jambe'):
         mine_apparel_type('baselayer', kw, apparel_results)
 
+    drop_no_image(gloves_results, 'guantes')
+    drop_no_image(balls_results, 'pelotas')
+    drop_no_image(apparel_results, 'ropa')
     canonicalize_brands(gloves_results)
     canonicalize_brands(balls_results)
     canonicalize_brands(apparel_results)

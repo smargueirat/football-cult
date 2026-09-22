@@ -83,6 +83,8 @@ def gen(merged_path, out_path):
             sizes_ts = ", ".join(f'"{s}"' for s in o["sizes"])
             if not sizes_ts:
                 continue  # no usable sizes -> skip this specific offer
+            if not (o.get("image") or "").strip():
+                continue  # sin foto real -> caja beige vacía, skip this specific offer
             link = (o["link"] or "").replace('"', '\\"')
             image = (o["image"] or "").replace('"', '\\"')
             title_escaped = (o["title"] or "").replace('"', '\\"')
