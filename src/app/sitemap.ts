@@ -75,6 +75,9 @@ function allRoutes(): MetadataRoute.Sitemap {
     // Hubs de temporada, ofertas y de botas/guantes/pelotas/ropa (marca,
     // terreno, tipo): solo los que tienen suficiente producto hoy.
     "/ofertas",
+    "/guia",
+    "/guia/camiseta-original",
+    "/guia/talle-fan-vs-jugador",
     ...seasonList().flatMap((se) => [`/temporada/${seasonSlug(se)}`, ...seasonTypes(se).map((t) => `/temporada/${seasonSlug(se)}/${t.type}`)]),
     ...(["botas", "guantes", "pelotas", "ropa"] as const).flatMap((sec) => brandFacets(sec).map((b) => `/${sec}/marca/${b.slug}`)),
     ...groundFacets().map((g) => `/botas/terreno/${g.slug}`),

@@ -2507,3 +2507,103 @@ every pass since 09-13 (`noruega|home` 2025 against the 2026 on file, 8th pass;
 genuine zero again -- 3579 jersey-titled rows, 20 team matches, all 23/24-24/25
 licensed stock, Decathlon's own FF100/FF500 generic supporter tees, or an All
 Blacks **rugby** shirt. ProSoccer footwear-only as always.
+
+## Daily pass (2026-09-22) -- a watermarked press photo is a drop, and a concurrent `ebay_check_stale.py` clobbers edits made during its run
+
+All 14 Awin jersey feeds + the 5 Rakuten Brazil stores + one `ebay_mine_cycle.py`
+batch that **closed cycle 3** (last 25 teams, 385/384, one rate-limited query,
+no early stop). Soicos skipped again -- no `claude-in-chrome`. Umbro (MID 41001)
+still absent from the Rakuten FTP listing (8th pass). **8 new products**: 3 from
+CSV feeds (first non-zero from a CSV feed in 6 passes), 1 eBay current (via the
+season-conflict path), 1 eBay kids, 3 eBay retro. `tsc`/dupe-id/duplicate-offer-
+URL/build all clean.
+
+**`ebay_check_stale.py` read-modify-writes the whole of `products.ts`, so any
+edit made while it runs is silently reverted.** Removed 6 duplicate offers by
+hand, then found them back in the file afterwards: the stale check had loaded
+`products.ts` before that edit and wrote its own copy at the end. Nothing was
+lost permanently (the new-product insertions happened before it started), but
+**don't edit `products.ts` while the stale check is in flight** -- it has no
+re-read and no conflict detection. Same applies to `refresh.py`/`retro_offer_merge.py`.
+
+**New false-positive class: a watermarked press photo.** `penarol|home|2024` is a
+real Puma Peñarol home shirt at a plausible $55, but the listing's photo is a
+**footyheadlines.com-watermarked press render**, not the seller's own item --
+unusable as our product photo, and a tell that the seller doesn't hold the
+item. Dropped. Distinct from the 09-20 AI-generated-photo class (that one is a
+fake garment; this is a real garment with a stolen photo), same remedy.
+
+**The retro merge creates bare-year/full-range duplicate offers on its own.**
+6 eBay listings landed on both `{team}-retro-YYYY-{type}` and its
+`{team}-retro-YYYYyy-{type}` twin (plus two `-mens`-suffixed City variants),
+because a previous day's run had inserted the URL on one id and today's merge
+matched the other. `retro_offer_merge.py` only writes to ids that already exist,
+so it can't see the collision. The duplicate-offer-URL scan after insertion is
+what catches it -- **run it after every retro merge, not just after new-block
+insertion**, and remove whichever copy today's run added.
+
+**All 8 raw eBay current NEW picks were false positives**, every one a class
+already in this file: `israel|home` (Club América's *Israel Reyes* -- player name
+as country, 09-16), `jordania|goalkeeper` ("JORDAN BRAZIL GOALKEEPER" -- the
+documented Jordan/Jordan collision), `argentina|third` (River Plate),
+`francia|third` (PSG), `escocia|third` (Celtic), `chile|goalkeeper` (Colo-Colo),
+`saopaulo|third` ($28.98 template seller), and `columbuscrew|home` -- the **same
+2022/23 shirt that fooled 09-15**, jock tag reads "23".
+
+**Of 28 eBay season conflicts, 1 real.** 13 were the $28.98/$28.30/$29.99
+template seller, 1 wrong team (Deportivo Cali under `colombia`), 8 older-season-
+than-on-file skips, and 5 were the same shirt already on file, confirmed by
+photo or style code: `stlouiscity|away` (the existing product's own image
+filename is literally `..._TinaTurner_2026`), `turquia|away` (pixel-identical
+`IO8851-100`), `saopaulo|goalkeeper` (pixel-identical), `gladbach|home` (title
+"26 27" read as bare 2026), `flamengo|home` (**AI-generated photo** -- floating
+shirt, garbled hem text, no sponsors on a Flamengo shirt). `chelsea|home`
+"2026-2027 NWT Authentic" is a **2015-era Nike women's-cut polo** -- style code
+`819607-L10A` on the hem tag dates it; the lone rampant-lion crest (no circular
+badge) was the giveaway that made the code worth reading.
+The one real pick: `brasil|prematch` `IH1662-369` is Nike's **2026** Academy Pro
+pre-match (Light Menta/LT Photo Blue), a genuinely different garment from the
+Jordan `IH1659-405` royal one already on file as `brasil-prematch-2026` -- so it
+went in as `brasil-prematch-menta-2026` with the **correct season 2026**, not the
+`202627` the title claimed and `gen_new_teams.py` would have generated. Same
+one-key-many-designs split as `liverpool-prematch-red-202526`.
+
+**39 of 42 new retro picks dropped, 30 of them wrong-team country-key collisions**
+in one batch: Jamaica under `ajax`, Juventus under `argentina`, Newcastle Jets
+under `australia`, Botafogo/Vitória/Corinthians under `brasil`, Emelec under
+`ecuador`, Celtic+Rangers under `escocia`, six different Spanish clubs under
+`espana|third`, Lyon+PSG under `francia`, Swansea under `gales`, AC Milan x4
+under `italia`, PSG x4 under `jordania`, Spain under `marruecos`, Porto under
+`portugal`, Grasshoppers under `suiza`, Fenerbahçe under `turquia`, Dynamo Kiev
+under `ucrania`. Also dropped: `ajax|third|2022` (its `202223` twin is on file --
+the 09-19 single-year rule), `alemania|away|1954` (a commemorative year read as
+the season), `australia|home|1998/00` ("Boys Size 8"), and two `\bretro\b`
+reproductions. Kept and photo-verified: Chile 2019 home (Nike Vaporknit, NWT),
+USA 2012 away (authentic player version, Donovan #10 -- $235 kept because the
+title explains the price), Sounders 19/20 "Heart and Sound" third. 208 more
+`\bretro\b`-titled merge offers dropped per the 09-19 rule; 50 real merges landed,
+2539 were re-discoveries of an offer already on file.
+
+**CSV feeds produced 3 new products and 9 conflicts, 2 of them real.** PlanetFoot's
+`girona|home` and `stpauli|home` 26/27 are genuine new kits -- confirmed by **Puma
+style code**, not by the season string (Girona `786186-01` vs the `783021-01` on
+file, St. Pauli `785499-01` vs `783063-01`); a style-code diff is a much harder
+signal than a year in a title and these feeds always carry one in the image URL.
+DeporteOutlet gave `hannover96|training` (real Macron training shirt) and
+`eslovaquia|away` -- the latter dropped: Macron really is Slovakia's supplier
+since 2024 and the store files it under Fútbol > Selecciones nacionales, but the
+blue-trim white with the flag dye-sub at the hem is the **24/25** away, one season
+old, and the title carries no season for `analyze()` to drop it on. The other 7
+conflicts: 4 with their exact link AND image already on file (AdidasPT Tiro 25 x2,
+BSTN Inter Miami, ForumSport Alaves) and the same 3 older-stock skips as every
+pass since 09-13 (`noruega|home` x2, `internacional|home`, 9th pass).
+`ebay_check_stale.py`: 24 of 200 (12%). DecathlonIE and ProSoccer genuine zeros
+as always.
+
+**Pre-existing, not touched today: 275 offer URLs live on two products each** --
+175 are bare-year/full-range retro twins, the other 100 are the original
+short-key blocks (`bay-home-2025`, `juv-away-2025`) sitting beside their mined
+`{team}-{type}-{season}` siblings, which is also what every store's "Skipped
+(ambiguous)" list in `refresh.py` is reporting. Both are favourite-bearing ids
+(see "Product id stability"), so merging them is its own task, not a daily-pass
+side effect.
