@@ -238,6 +238,63 @@ to actually finish due to rate-limiting. Same resume support either way
     if a "why does team X have suspiciously little/no coverage" question
     ever comes up again, check these two classes first.
 
+### Multi-marketplace eBay: EBAY_IT / EBAY_ES (added 2026-09-22)
+
+eBay's Browse API app credentials (`EBAY_CLIENT_ID`/`EBAY_CLIENT_SECRET`/
+`EBAY_CAMPAIGN_ID`, same ones already in `.env.local`) work unchanged
+across any of eBay's ~20 site marketplaces — only the
+`X-EBAY-C-MARKETPLACE-ID` header changes which site answers a search.
+Parametrized instead of duplicated: `EbayClient` now takes a
+`marketplace_id` constructor arg (defaults to `"EBAY_US"`, so every
+existing call site is unaffected) and a `MARKETPLACE_CURRENCY` dict
+(`EBAY_US → USD`, `EBAY_IT → EUR`, `EBAY_ES → EUR`) supplies the
+currency fallback used only when eBay's own price payload is missing a
+currency code — confirmed live that real IT/ES search results already
+carry `"currency": "EUR"` themselves, so this fallback rarely matters in
+practice. Same team/type extraction (`extract.py`), same exclusion
+filters, same price floor/ceiling, same manual-exclusions blocklist
+(matched by `ebay.com/itm/<id>` substring, which is identical across
+marketplaces since it's the same global item id) — nothing
+marketplace-specific needed touching any of those.
+
+`ebay_mine_cycle.py` takes `marketplace_id` as an optional 3rd
+positional arg and keeps its own cycle-state file per marketplace
+(`ebay_full_cycle_state.json` for EBAY_US, `ebay_full_cycle_state_IT.json`
+/ `ebay_full_cycle_state_ES.json` for the others) — these are three
+fully independent daily batches against the same ~385-team list, not one
+merged cycle, and each needs its own `<out_dir>` too:
+
+```bash
+cd scripts/catalog-mining
+python3 -u ebay_mine_cycle.py /tmp/ebay_it 60 EBAY_IT
+python3 -u ebay_mine_cycle.py /tmp/ebay_es 60 EBAY_ES
+```
+
+Downstream, use a distinct `store_name` per marketplace so offers stay
+traceable to their source (same pattern as this site's per-country
+Amazon affiliate tags) — `"eBay IT"` / `"eBay ES"` instead of `"eBay"`,
+currency `EUR` instead of `USD` — through the exact same
+`gen_new_teams.py` / `refresh.py --kids` / `retro_gen.py` steps described
+above for EBAY_US.
+
+**Known gap, left as-is on purpose**: `src/app/api/ebay-shipping/route.ts`
+and the hooks that call it (`useLiveOfferTotal`, `useLiveOfferCosts`,
+`useBestOfferForCountry`) only activate for `offer.store === "eBay"`
+exactly (a strict-equality check, not a prefix match), so "eBay IT"/
+"eBay ES" offers don't get eBay US's live per-buyer-country shipping
+re-check — they behave like every other static-shipping store instead
+(catalog shipping figure used as-is). Reasonable simplification since
+that feature exists for eBay US's worldwide-buyer shipping variance,
+which is a much bigger spread than EU-to-EU shipping — but worth
+knowing if it ever needs revisiting (would mean switching those checks
+to something like `offer.store.startsWith("eBay")`).
+
+Smoke-tested against both marketplaces before the first real batch:
+`EbayClient("EBAY_IT").search(...)` and `EbayClient("EBAY_ES").search(...)`
+both return real, differently-priced EUR listings (not just EBAY_US
+results relabeled) — confirmed by title/price sampling, not assumed from
+the API docs alone.
+
 ### Second full eBay re-mine (2026-08-10) — more name-collision classes, and a rate-limit gap
 
 Re-ran `ebay_mine_full.py` end to end (this was a re-mine, not the first

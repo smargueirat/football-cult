@@ -11,12 +11,23 @@ runs sharing the same EBAY_CLIENT_ID). Running the full list every
 single day meant most days captured nothing at all.
 
 Usage:
-    python3 ebay_mine_cycle.py <out_dir> [batch_size]
+    python3 ebay_mine_cycle.py <out_dir> [batch_size] [marketplace_id]
 
-State persists in ebay_full_cycle_state.json (next to this script, NOT
-in the ephemeral <out_dir> scratch path) so progress survives across
-days/runs. This file should be committed to the repo alongside
-products.ts so the cycle position isn't lost.
+marketplace_id defaults to EBAY_US (unchanged behavior). Added 2026-09-22
+to also cover EBAY_IT/EBAY_ES (same app credentials, Browse API accepts
+any of eBay's ~20 site marketplaces via this one header -- see
+ebay_mine.py's MARKETPLACE_CURRENCY). Each marketplace gets its own
+cycle-state file and is meant to be pointed at its own <out_dir> (e.g.
+/tmp/ebay_it, /tmp/ebay_es) -- these are three fully independent daily
+batches, not one merged cycle, since mixing US/IT/ES picks in the same
+current_picks.json/state file would make "team done this cycle" mean
+different things depending on which marketplace happened to run last.
+
+State persists in ebay_full_cycle_state.json (EBAY_US) or
+ebay_full_cycle_state_<marketplace>.json (any other marketplace_id),
+next to this script, NOT in the ephemeral <out_dir> scratch path, so
+progress survives across days/runs. These files should be committed to
+the repo alongside products.ts so the cycle position isn't lost.
 
 Each run:
   - Picks the next `batch_size` teams (default 60) not yet marked done
@@ -46,27 +57,33 @@ from extract import TEAM_PATTERNS
 import ebay_mine_full as emf
 from ebay_mine import EbayClient
 
-STATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ebay_full_cycle_state.json")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 DEFAULT_BATCH_SIZE = 60
 MAX_CONSECUTIVE_RATE_LIMITED = 3
 
 
-def load_state():
-    if os.path.exists(STATE_PATH):
-        with open(STATE_PATH) as f:
+def state_path_for(marketplace_id):
+    suffix = "" if marketplace_id == "EBAY_US" else f"_{marketplace_id.removeprefix('EBAY_')}"
+    return os.path.join(SCRIPT_DIR, f"ebay_full_cycle_state{suffix}.json")
+
+
+def load_state(marketplace_id):
+    path = state_path_for(marketplace_id)
+    if os.path.exists(path):
+        with open(path) as f:
             return json.load(f)
     return {"cycle": 1, "done_teams": []}
 
 
-def save_state(state):
-    with open(STATE_PATH, "w") as f:
+def save_state(state, marketplace_id):
+    with open(state_path_for(marketplace_id), "w") as f:
         json.dump(state, f, indent=2, sort_keys=True)
         f.write("\n")
 
 
-def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE):
-    state = load_state()
+def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE, marketplace_id="EBAY_US"):
+    state = load_state(marketplace_id)
     all_teams = list(TEAM_PATTERNS.keys())
     done = set(state["done_teams"])
     pending = [t for t in all_teams if t not in done]
@@ -82,7 +99,7 @@ def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE):
           f"mining next {len(batch)} ({len(pending) - len(batch)} left after this batch)")
 
     os.makedirs(out_dir, exist_ok=True)
-    client = EbayClient()
+    client = EbayClient(marketplace_id)
     team_en = emf.get_team_en_names()
     teams_re = emf.team_re_all()
     types_re = emf.type_re_all()
@@ -136,13 +153,14 @@ def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE):
             break
 
     state["done_teams"] = sorted(done | set(newly_done))
-    save_state(state)
-    print(f"\nDone. current={len(picks['current'])} kids={len(picks['kids'])} retro={len(picks['retro'])} "
-          f"-- {len(newly_done)} teams newly completed this run, "
+    save_state(state, marketplace_id)
+    print(f"\n[{marketplace_id}] Done. current={len(picks['current'])} kids={len(picks['kids'])} "
+          f"retro={len(picks['retro'])} -- {len(newly_done)} teams newly completed this run, "
           f"{len(state['done_teams'])}/{len(all_teams)} done in cycle {state['cycle']}")
 
 
 if __name__ == "__main__":
     out_dir = sys.argv[1]
     batch_size = int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH_SIZE
-    mine_batch(out_dir, batch_size)
+    marketplace_id = sys.argv[3] if len(sys.argv) > 3 else "EBAY_US"
+    mine_batch(out_dir, batch_size, marketplace_id)
