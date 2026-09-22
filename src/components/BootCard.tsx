@@ -8,6 +8,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
+import BootSkeleton from "./BootSkeleton";
 
 // Mismo "chrome" visual que ProductCard3D (misma tarjeta, mismo badge de
 // arriba a la izquierda, mismo precio abajo a la derecha, misma línea de
@@ -71,9 +72,7 @@ export default function BootCard({
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
         style={{ background: "linear-gradient(135deg, #fffdf8, #C9A24B22, #1B3B2B11)" }}
       >
-        {!imageLoaded && (
-          <div className="absolute inset-0 h-full w-full animate-pulse bg-[#C9A24B]/10" />
-        )}
+        {!imageLoaded && <BootSkeleton className="absolute inset-0 h-full w-full" />}
         <img
           ref={imgRef}
           src={getDisplaySrc(photo, 500)}
