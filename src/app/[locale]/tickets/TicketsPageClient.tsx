@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import Link from "@/lib/i18n/LocaleLink";
+import { useEffect, useMemo, useState } from "react";
+import BackToCatalogLink from "@/components/BackToCatalogLink";
 import { ticketProducts } from "@/data/tickets";
 import TicketCard from "@/components/TicketCard";
 import Chip from "@/components/Chip";
@@ -9,6 +9,7 @@ import ScrollArrowRow from "@/components/ScrollArrowRow";
 import FilterSheet from "@/components/FilterSheet";
 import SortDropdown from "@/components/SortDropdown";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { markCatalogVisited } from "@/lib/search/catalogVisit";
 
 const PAGE_SIZE = 24;
 
@@ -45,6 +46,10 @@ export default function TicketsPageClient() {
   const [cityFilter, setCityFilter] = useState("");
   const [dateFrom, setDateFrom] = useState("");
   const [dateTo, setDateTo] = useState("");
+
+  useEffect(() => {
+    markCatalogVisited();
+  }, []);
 
   const activeFilterCount = [clubFilter, leagueFilter, venueFilter, cityFilter, dateFrom, dateTo].filter(Boolean).length;
   function clearAllFilters() {
@@ -94,15 +99,7 @@ export default function TicketsPageClient() {
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
-      <Link
-        href="/"
-        className="mb-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#675c44] transition-colors hover:text-[#1B3B2B]"
-      >
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-        {t.detail.backToCatalog}
-      </Link>
+      <BackToCatalogLink />
       <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{t.tickets.pageTitle}</h1>
       <p className="mt-1 text-sm text-[#675c44]">{t.tickets.pageSubtitle.replace("{n}", String(ticketProducts.length))}</p>
 

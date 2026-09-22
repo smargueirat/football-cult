@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "@/lib/i18n/LocaleLink";
 import Image from "next/image";
+import BackToCatalogLink from "./BackToCatalogLink";
 import type { TicketProduct, TicketOffer } from "@/data/tickets";
 import { formatOfferMoney, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
@@ -31,15 +31,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
 
   return (
     <div className="mx-auto w-full max-w-6xl px-3 py-8 sm:px-6">
-      <Link
-        href="/tickets"
-        className="mb-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#675c44] transition-colors hover:text-[#1B3B2B]"
-      >
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-        {t.detail.backToCatalog}
-      </Link>
+      <BackToCatalogLink fallbackHref="/tickets" />
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-[3fr_2fr]">
         <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white">
           <Image src={getDisplaySrc(ticket.imageUrl, 1200)} alt={ticket.event} fill unoptimized className="object-contain p-6" />
