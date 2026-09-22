@@ -130,6 +130,29 @@ export function TeamLinks({ items, locale, countLabel }: { items: TeamLink[]; lo
   );
 }
 
+// Misma data que TeamLinks pero como tarjetas (usa .vintage-card, el
+// mismo patrón de borde/sombra/hover-lift que el resto del sitio) en vez
+// de filas de lista plana. Componente hermano a propósito: TeamLinks se
+// reusa en otras hub pages y no debe tocarse acá.
+export function LinkChips({ items, locale, countLabel }: { items: TeamLink[]; locale: HubLocale; countLabel?: (n: number) => string }) {
+  const s = HUB[locale];
+  return (
+    <ul className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5">
+      {items.map((t) => (
+        <li key={t.href}>
+          <Link href={t.href} className="vintage-card flex h-full flex-col justify-between gap-2 rounded-2xl px-4 py-3.5">
+            <span className="text-sm font-semibold leading-snug text-[#1B3B2B]">{t.name}</span>
+            <span className="text-xs text-[#675c44]">
+              {(countLabel ?? s.jerseysCount)(t.count)}
+              {t.price ? ` · ${s.from} ${t.price}` : ""}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function JsonLd({ data }: { data: unknown }) {
   return (
     <script
