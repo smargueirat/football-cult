@@ -17,7 +17,7 @@
 // importa Offer/BootOffer desde los archivos grandes) para que este
 // archivo no dependa de ellos en ningún sentido.
 export type OfferCurrencyCode = "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
-export type BootCurrencyCode = "EUR" | "USD" | "CLP" | "ARS";
+export type BootCurrencyCode = "EUR" | "USD" | "CLP" | "ARS" | "BRL";
 
 // Formatea un monto en SU propia moneda real (la de la tienda), sin
 // convertir a la moneda del país seleccionado. Así el precio mostrado
@@ -71,6 +71,7 @@ const BOOT_CURRENCY_TO_EUR: Record<BootCurrencyCode, number> = {
   USD: 1.08,
   CLP: 1076.5,
   ARS: 1754.6,
+  BRL: 6.05,
 };
 
 export function bootOfferTotalInEUR(offer: { price: number; shipping: number; currency: BootCurrencyCode }): number {

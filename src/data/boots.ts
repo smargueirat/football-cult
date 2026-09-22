@@ -33,7 +33,7 @@
 // producto (Decathlon IE), se dejó en 0 con el motivo documentado en el
 // código en vez de inventar un número.
 export interface BootOffer {
-  store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR" | "GigasportDE" | "GigasportCH" | "GigasportFR";
+  store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR" | "GigasportDE" | "GigasportCH" | "GigasportFR" | "ClovisCalcadosBR";
   price: number;
   // precio real de la talla MÁS BARATA del colorway -- algunas tiendas
   // (confirmado en FootStoreES/SportIsGoodES/FootStoreFR) cobran distinto
@@ -82,7 +82,11 @@ export interface BootProduct {
 // transcribir manualmente cada página -- no se auto-refresca a diario
 // como el resto (esas 3 tiendas no tienen feed CSV/XML que un script
 // pueda leer).
-export type BootCurrency = "EUR" | "USD" | "CLP" | "ARS";
+// Clovis Calçados BR (2026-09-22, Awin aid 107702, chuteiras de hombre)
+// es la única tienda de botas en BRL -- mismo motivo que Pro Soccer en
+// USD (comparar/ordenar entre monedas distintas, nunca convertido para
+// el usuario). Ver scripts/boots-mining/mine_boots.py#mine_clovis.
+export type BootCurrency = "EUR" | "USD" | "CLP" | "ARS" | "BRL";
 
 // La función real vive en src/lib/offerMoney.ts, no acá -- un componente
 // "use client" que la importa desde ESTE archivo arrastra el catálogo
@@ -974,7 +978,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ll-fg-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291532/750/bota-adidas-predator-league-ll-fg-negro-1.jpg",
-        sizes: ["39", "40.5", "42", "44.5"],
+        sizes: ["39", "40.5", "41", "42", "42.5", "44.5"],
       },
       {
         store: "ForumSport",
@@ -1327,7 +1331,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-ligera-pro-ag-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321514/750/bota-nike-tiempo-ligera-pro-ag-t-multicolor-1.jpg",
-        sizes: ["42.5", "43", "44"],
+        sizes: ["41", "42.5", "43", "44"],
       },
       {
         store: "ForumSport",
@@ -1483,7 +1487,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-8-pro-fgag-heat-fire-black-ravish",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/271537/750/bota-puma-future-8-pro-fgag-naranja-1.jpg",
-        sizes: ["39", "40.5", "42", "42.5", "43", "44"],
+        sizes: ["40.5", "42", "42.5", "43", "44"],
       },
       {
         store: "ForumSport",
@@ -8216,6 +8220,788 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
+    id: "cloviscalcadosbr-dalponte-81-titanium-dalponte-1058-ag",
+    brand: "Dalponte",
+    model: "81 Titanium Dalponte 1058",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41090811539&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1252720_2&feedId=98680&k=d9610d5e36aa98d5eb375304ba61b734c594216c",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dalponte-81-titanium-dalponte-1058-ag-2",
+    brand: "Dalponte",
+    model: "81 Titanium Dalponte 1058",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41090811570&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1252685_2&feedId=98680&k=05186f700d852ad8fbb16b6c3a64522767544199",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dalponte-iron-dalponte-1072-ag",
+    brand: "Dalponte",
+    model: "Iron Dalponte 1072",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41109068701&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1253098_2&feedId=98680&k=a553a6f2b7596fc21078230d472a7ff6b91f03b6",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dalponte-iron-dalponte-1072-ag-2",
+    brand: "Dalponte",
+    model: "Iron Dalponte 1072",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41143435246&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1253852_2&feedId=98680&k=f843dd4571d6abf1cdff09cd95d6cef83cffb7a3",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dalponte-space-dalponte-1098-ag",
+    brand: "Dalponte",
+    model: "Space Dalponte 1098",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41090811593&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1252655_2&feedId=98680&k=bbd38e4f23322a0b8a2694e11f25417f8b6e3b91",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dalponte-space-dalponte-1098-ag-2",
+    brand: "Dalponte",
+    model: "Space Dalponte 1098",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41116592924&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1253446_2&feedId=98680&k=93bb14fd39db0196dc86dd535cca7a064d14ab98",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dray-foorcy-dray-ag",
+    brand: "Dray",
+    model: "Foorcy Dray",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 99.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551270209&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F972709_2&feedId=98680&k=cfb89e1c968f6e86ea2127329048b620f0a63693",
+        sizes: ["40"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dray-foorcy-dray-fg",
+    brand: "Dray",
+    model: "Foorcy Dray",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 99.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551270940&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1008274_2&feedId=98680&k=2794cb99587ed1e7311c9c657ff73fc2fea155a2",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-dray-foorcy-dray-fg-2",
+    brand: "Dray",
+    model: "Foorcy Dray",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 99.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551274981&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1009657_2&feedId=98680&k=efaf162ff2f7a3634b28df3ef7b62727ee749e36",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-nike-beco-2-nike-ag",
+    brand: "Nike",
+    model: "Beco 2 Nike",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 319.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551268050&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F504703_2&feedId=98680&k=9ae185925dc1fa94a2e32696446a06c100ae0a5b",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-nike-beco-2-nike-ag-2",
+    brand: "Nike",
+    model: "Beco 2 Nike",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 319.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551274530&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F504683_2&feedId=98680&k=2ad143881dc22806399f0917302a98b15628f5f9",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-nike-beco-2-nike-ag-3",
+    brand: "Nike",
+    model: "Beco 2 Nike",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 319.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41880949497&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1303815_2&feedId=98680&k=ffbbfd6b0facec395072b17ea4355d0b953b8c68",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-bravo-xxii-penalty-fg",
+    brand: "Penalty",
+    model: "Bravo XXII Penalty",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 149.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551268823&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1160456_2&feedId=98680&k=a0076d923939cf344465d9110733cf01d30bf729",
+        sizes: ["40"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-furia-penalty-ag",
+    brand: "Penalty",
+    model: "Furia Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 179.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551269273&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F869760_2&feedId=98680&k=471ea13d9076a8da22a7d66bdf4bc0f1c2e2046b",
+        sizes: ["42"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-furia-penalty-ag-2",
+    brand: "Penalty",
+    model: "Furia Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 179.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273893&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F869805_2&feedId=98680&k=d89558503af43830e631a579dcf9204236ad3474",
+        sizes: ["43"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-garra-penalty-ag",
+    brand: "Penalty",
+    model: "Garra Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 169.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551270165&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F954664_2&feedId=98680&k=d21935902317fe98753e5d657e304c47c1e8879f",
+        sizes: ["41"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-garra-penalty-ag-2",
+    brand: "Penalty",
+    model: "Garra Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 169.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551275212&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F954689_2&feedId=98680&k=deed787b27f7eeb6c7c4785dfff9dd9a26f31fce",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-garra-y-2-0-penalty-242277-ag",
+    brand: "Penalty",
+    model: "Garra Y-2.0 Penalty 242277",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 169.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551268287&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1167855_2&feedId=98680&k=a4cdcfe2459b1827b6a9cccdf9830210044e3819",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-garra-y-2-0-penalty-242277-ag-2",
+    brand: "Penalty",
+    model: "Garra Y-2.0 Penalty 242277",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 169.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273051&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1167825_2&feedId=98680&k=fd081b8cced77eaa906ec971ea071e3c027c6227",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-lider-penalty-ag",
+    brand: "Penalty",
+    model: "Lider Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 169.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551270021&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F868927_2&feedId=98680&k=b7b7921d20c7c5fb2d5cfcd340b94dea1bcdb50e",
+        sizes: ["40"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-lider-xxi-penalty-ag",
+    brand: "Penalty",
+    model: "Lider XXI Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 99.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551268129&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F778218_2&feedId=98680&k=ee16bcf62f0c092d73af329ea2f9b2a1372f5a56",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-lider-xxi-penalty-ag-2",
+    brand: "Penalty",
+    model: "Lider XXI Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 99.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41504647005&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1273202_2&feedId=98680&k=0fca48b19d585920e44590c5ac4d033bf85fa9a8",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-lider-xxi-penalty-ag-3",
+    brand: "Penalty",
+    model: "Lider XXI Penalty",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 99.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41504647006&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1273247_2&feedId=98680&k=2eadfeb9a34636101e250f7a78fcb7d3adb0ee44",
+        sizes: ["40"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-lider-y-3-penalty-fg",
+    brand: "Penalty",
+    model: "Lider Y-3 Penalty",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 179.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551269297&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F873769_2&feedId=98680&k=5f81abb5b7411becb6a53811547545130d966cda",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-tornado-penalty-214286-fg",
+    brand: "Penalty",
+    model: "Tornado Penalty 214286",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 139.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273048&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1167985_2&feedId=98680&k=39dc6c3f4c6097a85b5d0a2eea02c782596da571",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-tornado-penalty-242286-ag",
+    brand: "Penalty",
+    model: "Tornado Penalty 242286",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 139.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273025&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1165135_2&feedId=98680&k=405d127165bed8a0dd1bea5f91969a08834e884d",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-penalty-tornado-penalty-242286-ag-2",
+    brand: "Penalty",
+    model: "Tornado Penalty 242286",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 139.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273333&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1165720_2&feedId=98680&k=4ea20b7ff55486153c67c3e50cbb8e7217aff5d9",
+        sizes: ["40"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-cup-vii-topper-tp0847-ag",
+    brand: "Topper",
+    model: "Cup VII Topper TP0847",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41741922386&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1291105_2&feedId=98680&k=3af3aa7fd6a92424c7fedb5e57f37166abfb648d",
+        sizes: ["41"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-cup-vii-topper-tp0847-ag-2",
+    brand: "Topper",
+    model: "Cup VII Topper TP0847",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41891647066&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1307316_2&feedId=98680&k=8ff7d789dd365f3d0ff1a0d53398dd4b0d7fa2ef",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-dominator-clube-v-topper-tp0507-ag",
+    brand: "Topper",
+    model: "Dominator Clube V Topper TP0507",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 199.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41780339293&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1292692_2&feedId=98680&k=93a3512fc9718fdfbeee30b6f2cd4147eafb14ab",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-dominator-iii-topper",
+    brand: "Topper",
+    model: "Dominator III Topper",
+    groundType: "",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 159.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273929&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F845075_2&feedId=98680&k=a7b7734a141054ed55f264b5c6661679644fee4a",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-forza-iii-topper-tp0468-ag",
+    brand: "Topper",
+    model: "Forza III Topper TP0468",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41746664304&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1291010_2&feedId=98680&k=f8297748be0279de2d6225e6cefbf342e01010ce",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-forza-iii-topper-tp0468-ag-2",
+    brand: "Topper",
+    model: "Forza III Topper TP0468",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41746664305&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1291035_2&feedId=98680&k=c492f8abc1b739417e204a334c766c8aac16d247",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-forza-iii-topper-tp0468-ag-3",
+    brand: "Topper",
+    model: "Forza III Topper TP0468",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41746664306&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1291075_2&feedId=98680&k=ad5cf4142460c3271e48f7b6fae68a45b1adc130",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-letra-iv-topper-tp0499-ag",
+    brand: "Topper",
+    model: "Letra IV Topper TP0499",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 199.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41880949503&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1304104_2&feedId=98680&k=6aed0fe4242b8899baf2acd1b19c51619391cfda",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-slick-vi-topper-tp0579-ag",
+    brand: "Topper",
+    model: "Slick VI Topper TP0579",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41746664307&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1291320_2&feedId=98680&k=a02913dc74e95a63b7bf731bef581dfbc2c036d2",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-slick-vi-topper-tp0579-ag-2",
+    brand: "Topper",
+    model: "Slick VI Topper TP0579",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41746664308&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1291355_2&feedId=98680&k=c219fad10ee876cbd149c77faf3c655dad5342f6",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-top-resenha-topper-tp0485-ag",
+    brand: "Topper",
+    model: "Top Resenha Topper TP0485",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=41928398069&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1310680_2&feedId=98680&k=7480c83ee906acdc89eace0c23ba57a9858757d2",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-topper-top-slick-iv-topper-tp04150006-ag",
+    brand: "Topper",
+    model: "Top Slick IV Topper TP04150006",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 129.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=43038404787&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1386850_2&feedId=98680&k=5c4f949137ea1dfda796c6573f2e588bba1cb5eb",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-action-umbro-u01fb00249-ag",
+    brand: "Umbro",
+    model: "Action Umbro U01FB00249",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 139.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273049&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1167045_2&feedId=98680&k=617be4da943d2623d1333546085b9cc81a1c7685",
+        sizes: ["37"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-fast-umbro-ag",
+    brand: "Umbro",
+    model: "Fast Umbro",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 139.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551269331&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F882909_2&feedId=98680&k=e200f33895272de4180333144223faeb8993c556",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-fast-umbro-ag-2",
+    brand: "Umbro",
+    model: "Fast Umbro",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 139.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551274066&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F913196_2&feedId=98680&k=84cc4c3f9337c95e2f097e6f6ce5afb9473d6200",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-mutant-umbro-u01fb00251-ag",
+    brand: "Umbro",
+    model: "Mutant Umbro U01FB00251",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 199.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551272401&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1115960_2&feedId=98680&k=5a299946534dbf75ec57681311c09e0b2cc2e413",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-orbit-umbro-ag",
+    brand: "Umbro",
+    model: "Orbit Umbro",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 159.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551274788&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1075300_2&feedId=98680&k=013c05426e6e49e4e2a37b941c51c643690eeb06",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-orbit-umbro-ag-2",
+    brand: "Umbro",
+    model: "Orbit Umbro",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 159.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=42414960885&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1051483_2&feedId=98680&k=f2d246689edf4d5c070894036202c2a6c77bb151",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "cloviscalcadosbr-umbro-warskin-umbro-u01fb00162-ag",
+    brand: "Umbro",
+    model: "Warskin Umbro U01FB00162",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ClovisCalcadosBR",
+        price: 179.99,
+        shipping: 0,
+        currency: "BRL",
+        url: "https://www.awin1.com/pclick.php?p=39551273001&a=3013769&m=107702",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acloviscalcados.vteximg.com.br%2Farquivos%2Fids%2F1162405_2&feedId=98680&k=7f63a25381f1c018f371e73c595ead9636921e19",
+        sizes: ["39"],
+      },
+    ],
+  },
+  {
     id: "decathlonie-adidas-adult-boots-x-crazyfast-3-fg-black-fg",
     brand: "Adidas",
     model: "Adult Boots X Crazyfast.3 FG - Black",
@@ -9269,6 +10055,9 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "deporteoutlet-adidas-adidas-copa-pure-2-elite-fg-hombre-botas-de-futbol-ie7488-fg",
     brand: "Adidas",
@@ -10051,9 +10840,6 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "deporteoutlet-joma-joma-propulsion-cup-fg-hombre-premium-botas-de-futbol-pcuw2510fg-fg",
     brand: "Joma",
@@ -12620,6 +13406,9 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-elite-ag-ag-4",
     brand: "Adidas",
@@ -13551,9 +14340,6 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-league-ll-fg-mg-fg",
     brand: "Adidas",
@@ -16173,6 +16959,9 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-league-fm",
     brand: "Adidas",
@@ -17119,9 +17908,6 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-pro-mg-mg",
     brand: "Adidas",
@@ -19617,6 +20403,9 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-joma-gol-2401-ag-ag",
     brand: "Joma",
@@ -20426,9 +21215,6 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-joma-toledo-fg-fg",
     brand: "Joma",
@@ -23005,6 +23791,9 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-japan-mix-fg-fg",
     brand: "Mizuno",
@@ -23866,9 +24655,6 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-gx-ii-academy-eh-fg-mg-fg",
     brand: "Nike",
@@ -26645,6 +27431,9 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-elite-fg-fg-2",
     brand: "Nike",
@@ -27643,9 +28432,6 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-academy-ag-ag",
     brand: "Nike",
@@ -30309,6 +31095,9 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-luna-2-academy-ag-ag",
     brand: "Nike",
@@ -31275,9 +32064,6 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-academy-mg-mg-8",
     brand: "Nike",
@@ -33973,6 +34759,9 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-para-mujer-puma-ultra-6-carbon-brilliance-fg-fg",
     brand: "Puma",
@@ -34763,9 +35552,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-future-match-fg-ag-fg-3",
     brand: "Puma",
@@ -37167,6 +37953,9 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-under-armour-botas-de-futbol-under-armour-shadow-turf-3",
     brand: "Under Armour",
@@ -38004,9 +38793,6 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-copa-pure-2-pro-fg-fg-3",
     brand: "adidas",
@@ -40609,6 +41395,9 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-f50-elite-fg-fg-10",
     brand: "adidas",
@@ -41670,9 +42459,6 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-f50-hyperfast-league-sg-sg",
     brand: "adidas",
@@ -44338,6 +45124,9 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-mundial-team-tf-tf",
     brand: "adidas",
@@ -45237,9 +46026,6 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-edge-1-sg-sg",
     brand: "adidas",
@@ -48121,6 +48907,9 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-league-ft-fg-fg-6",
     brand: "adidas",
@@ -49101,9 +49890,6 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorefr-adidas-adidas-predator-league-turf-2",
     brand: "adidas",
@@ -51620,6 +52406,9 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorefr-joma-joma-aguila-firm-fg-fg",
     brand: "Joma",
@@ -52420,9 +53209,6 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorefr-joma-joma-powerfull-2604-ag-ag",
     brand: "Joma",
@@ -54936,6 +55722,9 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorefr-mizuno-mizuno-morelia-ii-club-fg-fg",
     brand: "Mizuno",
@@ -55799,9 +56588,6 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorefr-mizuno-mizuno-morelia-neo-iv-beta-japan",
     brand: "Mizuno",
@@ -58536,6 +59322,9 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-mercurial-superfly-11-academy-turf-2",
     brand: "Nike",
@@ -59447,9 +60236,6 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-mercurial-vapor-16-academy-sg-sg-2",
     brand: "Nike",
@@ -62121,6 +62907,9 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-phantom-6-low-academy-mg-mg-2",
     brand: "Nike",
@@ -63006,9 +63795,6 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-phantom-gt2-academy-mg-mg",
     brand: "Nike",
@@ -65536,6 +66322,9 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-tiempo-maestro-academy-fg-ag-fg-ag",
     brand: "Nike",
@@ -66426,9 +67215,6 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-zm-vapor-16-academy-fg-mg-fg",
     brand: "Nike",
@@ -69194,6 +69980,9 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "footstorefr-puma-puma-future-match-tt",
     brand: "Puma",
@@ -70138,9 +70927,6 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "footstorefr-puma-puma-king-pro-fg-ag-fg-ag-2",
     brand: "Puma",
@@ -72986,6 +73772,9 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "footstorefr-puma-puma-ultra-pro-fg-ag-fg-ag-2",
     brand: "Puma",
@@ -73966,9 +74755,6 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "footstorefr-skechers-skechers-skx-1-5-fg-fg",
     brand: "Skechers",
@@ -75268,7 +76054,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-elite-ll-fg-zero-met-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291241/750/bota-adidas-copa-pure-iv-elite-ll-fg-zero-met-core-black-lucid-red-1.jpg",
-        sizes: ["40", "41", "42", "46"],
+        sizes: ["40", "41", "46"],
       },
     ],
   },
@@ -75307,7 +76093,41 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
+    id: "futbolemotion-adidas-adidas-copa-pure-iv-league-2g-3g-ag-ag",
+    brand: "adidas",
+    model: "adidas Copa Pure IV League 2G/3G AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 84.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-league-2g3g-ag-clear-mint-core-black-white",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339012/750/bota-adidas-copa-pure-iv-league-2g-3g-ag-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-adidas-adidas-copa-pure-iv-league-turf",
+    brand: "adidas",
+    model: "adidas Copa Pure IV League Turf",
+    groundType: "",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 84.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-league-turf-clear-mint-core-black-white",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339010/750/bota-adidas-copa-pure-iv-league-turf-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-copa-pure-iv-league-turf-2",
     brand: "adidas",
     model: "adidas Copa Pure IV League Turf",
     groundType: "",
@@ -75529,6 +76349,23 @@ const minedBootProductsChunk21: BootProduct[] = [
   },
   {
     id: "futbolemotion-adidas-adidas-f50-hyperfast-club-fg-mg-fg",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast Club FG-MG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 59.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-club-fgmg-pulse-mint-night-navy-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339018/750/bota-adidas-f50-hyperfast-club-fg-mg-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-club-fg-mg-fg-2",
     brand: "adidas",
     model: "adidas F50 Hyperfast Club FG/MG",
     groundType: "FG",
@@ -75810,6 +76647,23 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 89.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ag-pulse-mint-night-navy-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339035/750/bota-adidas-f50-hyperfast-league-ag-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-ag-ag-2",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335797/750/bota-adidas-f50-hyperfast-league-ag-blanco-1.jpg",
         sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
@@ -75827,9 +76681,26 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 99.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-ag-pulse-mint-night-navy-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339039/750/bota-adidas-f50-hyperfast-league-ll-ag-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-ll-ag-ag-2",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League LL AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335870/750/bota-adidas-f50-hyperfast-league-ll-ag-blanco-1.jpg",
-        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
       },
     ],
   },
@@ -75919,7 +76790,41 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-turf-2",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League Turf",
+    groundType: "",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-turf-pulse-mint-night-navy-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339021/750/bota-adidas-f50-hyperfast-league-turf-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-adidas-adidas-f50-hyperfast-pro-ag-ag",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast Pro AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 149.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ag-pulse-mint-core-black-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339017/750/bota-adidas-f50-hyperfast-pro-ag-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-pro-ag-ag-2",
     brand: "adidas",
     model: "adidas F50 Hyperfast Pro AG",
     groundType: "AG",
@@ -75931,7 +76836,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335837/750/bota-adidas-f50-hyperfast-pro-ag-blanco-1.jpg",
-        sizes: ["42.5"],
+        sizes: ["42.5", "44.5", "45"],
       },
     ],
   },
@@ -75946,9 +76851,26 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 159.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ll-ag-pulse-mint-core-black-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339004/750/bota-adidas-f50-hyperfast-pro-ll-ag-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-pro-ll-ag-ag-2",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast Pro LL AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 159.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ll-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335835/750/bota-adidas-f50-hyperfast-pro-ll-ag-blanco-1.jpg",
-        sizes: ["40.5", "43", "44", "46"],
+        sizes: ["40.5", "43", "46"],
       },
     ],
   },
@@ -75963,9 +76885,26 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 159.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ll-fg-pulse-mint-core-black-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339005/750/bota-adidas-f50-hyperfast-pro-ll-fg-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-pro-ll-fg-fg-2",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast Pro LL FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 159.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ll-fg-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335836/750/bota-adidas-f50-hyperfast-pro-ll-fg-blanco-1.jpg",
-        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["41", "42", "42.5", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -75999,7 +76938,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-league-2g3g-ag-beam-orange-lucid-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/272932/750/bota-adidas-f50-league-2g-3g-ag-naranja-1.jpg",
-        sizes: ["44", "44.5"],
+        sizes: ["42", "44", "44.5"],
       },
     ],
   },
@@ -76152,7 +77091,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-league-turf-core-black-lucid-red-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291429/750/bota-adidas-f50-league-turf-negro-1.jpg",
-        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
       },
     ],
   },
@@ -76292,6 +77231,9 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-messi-league-fg-mg-fg-3",
     brand: "adidas",
@@ -76456,6 +77398,23 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 94.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-league-fgag-mujer-clear-mint-white-solar-purple",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339038/750/bota-adidas-f50-sparkfusion-league-fg-ag-verde-1.jpg",
+        sizes: ["36.5", "37.5", "38", "38.5", "39", "40", "40.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-sparkfusion-league-fg-ag-mujer-fg-ag-2",
+    brand: "adidas",
+    model: "adidas F50 Sparkfusion League FG/AG Mujer",
+    groundType: "FG/AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 94.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-league-fgag-mujer-tursol-footwear-white-distilled-pink",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335816/750/bota-adidas-f50-sparkfusion-league-fg-ag-amarillo-1.jpg",
         sizes: ["38"],
@@ -76493,6 +77452,23 @@ const minedBootProductsChunk21: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-pro-fg-ag-tursol-white-distilled-pink",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335817/750/bota-adidas-f50-sparkfusion-pro-fg-ag-tursol-white-distilled-pink-1.jpg",
         sizes: ["36.5", "37.5", "38", "38.5", "39", "40", "40.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-sparkfusion-pro-fg-ag-mujer-fg-ag",
+    brand: "adidas",
+    model: "adidas F50 Sparkfusion Pro FG/AG Mujer",
+    groundType: "FG/AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 159.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-pro-fgag-mujer-clear-mint-white-solar-purple",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/338989/750/bota-adidas-f50-sparkfusion-pro-fg-ag-verde-1.jpg",
+        sizes: ["36.5", "37.5", "38", "38.5", "39", "40", "40.5", "41"],
       },
     ],
   },
@@ -76592,6 +77568,23 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 64.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-ft-fgmg-core-black-silver-metallic-pulse-mint",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/338986/750/bota-adidas-predator-club-ft-fg-mg-negro-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-predator-club-ft-fg-mg-fg-2",
+    brand: "adidas",
+    model: "adidas Predator Club FT FG/MG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 64.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-ft-fgmg-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291336/750/bota-adidas-predator-club-ft-fgmg-negro-1.jpg",
         sizes: ["43", "44", "44.5", "45"],
@@ -76599,7 +77592,7 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-adidas-adidas-predator-club-ft-fg-mg-fg-2",
+    id: "futbolemotion-adidas-adidas-predator-club-ft-fg-mg-fg-3",
     brand: "adidas",
     model: "adidas Predator Club FT FG/MG",
     groundType: "FG",
@@ -76616,7 +77609,7 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-adidas-adidas-predator-club-ft-fg-mg-fg-3",
+    id: "futbolemotion-adidas-adidas-predator-club-ft-fg-mg-fg-4",
     brand: "adidas",
     model: "adidas Predator Club FT FG/MG",
     groundType: "FG",
@@ -76747,7 +77740,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-ag-jb-core-black-ftwr-white-glory-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/272979/750/bota-adidas-predator-elite-ft-ag-jb-core-black-ftwr-white-glory-blue-1.jpg",
-        sizes: ["43", "44.5"],
+        sizes: ["43"],
       },
     ],
   },
@@ -76866,7 +77859,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-sg-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291697/750/bota-adidas-predator-elite-ft-sg-core-black-white-lucid-red-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -77227,9 +78220,6 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-predator-league-l-fg-mg-fg",
     brand: "adidas",
@@ -79304,25 +80294,11 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-pro-fg-fg-2",
-    brand: "Nike",
-    model: "Nike Air Zoom Mercurial Superfly 10 Pro FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 76.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-pro-fg-magic-flamingo-black-total-crimson",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268989/750/bota-nike-air-zoom-mercurial-superfly-10-pro-fg-rosa-1.jpg",
-        sizes: ["42.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-pro-fg-fg-3",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Superfly 10 Pro FG",
     groundType: "FG",
@@ -79521,7 +80497,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-ag-pro-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336745/750/bota-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-white-blur-brt-crimson-1.jpg",
-        sizes: ["45", "45.5"],
+        sizes: ["42", "42.5", "44", "45", "45.5"],
       },
     ],
   },
@@ -79776,7 +80752,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-ag-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268991/750/bota-nike-air-zoom-mercurial-vapor-16-akademie-ag-rosa-1.jpg",
-        sizes: ["38.5", "45"],
+        sizes: ["38.5"],
       },
     ],
   },
@@ -79844,7 +80820,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-limelight-volt-hyper-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280403/750/bota-nike-air-zoom-mercurial-vapor-16-academy-fgmg-amarillo-limon-1.jpg",
-        sizes: ["42.5", "44"],
+        sizes: ["42.5"],
       },
     ],
   },
@@ -79856,29 +80832,12 @@ const minedBootProductsChunk22: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 35.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-magic-flamingo-black-total-crimson",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268975/750/bota-nike-air-zoom-mercurial-vapor-16-akademie-fg-mg-rosa-1.jpg",
-        sizes: ["39"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-academy-fg-mg-fg-5",
-    brand: "Nike",
-    model: "Nike Air Zoom Mercurial Vapor 16 Academy FG/MG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 53.99,
         shipping: 0,
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301081/750/bota-nike-air-zoom-mercurial-vapor-16-academy-fgmg-azul-1.jpg",
-        sizes: ["43", "44"],
+        sizes: ["42", "43", "44"],
       },
     ],
   },
@@ -79895,7 +80854,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-km-plum-eclipse-mtlc-silver",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301082/750/bota-nike-air-zoom-mercurial-vapor-16-academy-fgmg-km-plata-1.jpg",
-        sizes: ["39", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
+        sizes: ["39", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
       },
     ],
   },
@@ -80082,7 +81041,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-elite-km-fg-melon-tint-neo-turq-igloo",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280407/750/bota-nike-air-zoom-mercurial-vapor-16-elite-km-fg-melon-tint-neo-turq-igloo-1.jpg",
-        sizes: ["44"],
+        sizes: ["47"],
       },
     ],
   },
@@ -80286,13 +81245,10 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-academy-fgmg-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321530/750/bota-nike-air-zoom-mercurial-vapor-17-academy-fgmg-multicolor-1.jpg",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43"],
       },
     ],
   },
-];
-
-const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-17-academy-sg-pro-sg",
     brand: "Nike",
@@ -80561,7 +81517,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-pro-ag-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336738/750/bota-nike-air-zoom-mercurial-vapor-17-pro-ag-negro-1.jpg",
-        sizes: ["44", "45.5", "46"],
+        sizes: ["43", "44", "45.5", "46"],
       },
     ],
   },
@@ -80664,6 +81620,23 @@ const minedBootProductsChunk23: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-pro-turf-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336743/750/bota-nike-air-zoom-mercurial-vapor-17-pro-turf-t-negro-1.jpg",
         sizes: ["40", "45.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-superfly-10-academy-ag-ag",
+    brand: "Nike",
+    model: "Nike Air Zoom Superfly 10 Academy AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 70.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fzoom-superfly-10-academy-ag-black-ice-blue",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268960/750/bota-nike-zm-superfly-10-academy-ag-negro-1.jpg",
+        sizes: ["42.5"],
       },
     ],
   },
@@ -80884,7 +81857,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-academy-ag-racer-blue-pink-blast-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301039/750/bota-nike-phantom-6-low-academy-ag-azul-1.jpg",
-        sizes: ["45"],
+        sizes: ["42.5", "45"],
       },
     ],
   },
@@ -80901,7 +81874,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-academy-fgmg-black-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268914/750/bota-nike-phantom-6-low-acad-fgmg-negro-1.jpg",
-        sizes: ["38.5", "41"],
+        sizes: ["38.5"],
       },
     ],
   },
@@ -80986,7 +81959,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-academy-fgmg-racer-blue-pink-blast-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301040/750/bota-nike-phantom-6-low-academy-fgmg-azul-1.jpg",
-        sizes: ["40.5", "42", "43", "44", "44.5", "45", "46"],
+        sizes: ["40.5", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -81020,7 +81993,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-academy-turf-racer-blue-pink-blast-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301041/750/bota-nike-phantom-6-low-academy-turf-azul-1.jpg",
-        sizes: ["40", "42", "43", "44", "44.5"],
+        sizes: ["40", "41", "42", "43", "44", "44.5"],
       },
     ],
   },
@@ -81105,7 +82078,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-pro-ag-pro-t-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321506/750/bota-nike-phantom-6-low-pro-ag-pro-t-multicolor-1.jpg",
-        sizes: ["42", "44", "44.5", "45"],
+        sizes: ["42", "44.5", "45"],
       },
     ],
   },
@@ -81156,7 +82129,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fthe-nike-premier-iii-sg-pro-ac-phantom-picante-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280388/750/bota-nike-the-nike-premier-iii-sg-pro-ac-phantom-picante-red-1.jpg",
-        sizes: ["39", "40", "40.5", "42.5", "44"],
+        sizes: ["39", "40", "40.5", "42.5"],
       },
     ],
   },
@@ -81615,7 +82588,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-8-match-mg-heat-fire-black-ravish",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/271539/750/bota-puma-future-8-match-mg-heat-fire-black-ravish-1.jpg",
-        sizes: ["42.5", "44"],
+        sizes: ["44"],
       },
     ],
   },
@@ -82261,7 +83234,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fking-20-play-turf-puma-black-puma-white-puma-gold",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285595/750/bota-puma-king-20-play-turf-negro-1.jpg",
-        sizes: ["39", "41", "46"],
+        sizes: ["39", "41"],
       },
     ],
   },
@@ -82384,6 +83357,9 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-king-20-ultimate-nueva-york-fg-ag-fg-ag",
     brand: "Puma",
@@ -82754,7 +83730,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-nitro-7-match-ag-ultra-red-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329634/750/bota-puma-ultra-nitro-7-match-ag-blanco-1.jpg",
-        sizes: ["39", "40", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -83049,6 +84025,23 @@ const minedBootProductsChunk23: BootProduct[] = [
   },
   {
     id: "futbolemotion-under-armour-under-armour-magnetico-pro-5-fg-fg",
+    brand: "Under Armour",
+    model: "Under Armour Magnetico Pro 5 FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 48.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Funder-armour%2Fmagnetico-pro-5-fg-black-0",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/271174/750/bota-under-armour-magnetico-pro-5-fg-negro-1.jpg",
+        sizes: ["44.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-under-armour-under-armour-magnetico-pro-5-fg-fg-2",
     brand: "Under Armour",
     model: "Under Armour Magnetico Pro 5 FG",
     groundType: "FG",
@@ -83366,9 +84359,6 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "gigasportch-adidas-predator-pro-ft-fg-nocken-rot-fg",
     brand: "Adidas",
@@ -87153,6 +88143,9 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-messi-pro-fg-fg",
     brand: "Adidas",
@@ -89043,9 +90036,6 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-ft-fg-fg-10",
     brand: "Adidas",
@@ -93123,6 +94113,9 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-morelia-ii-pro-ag-ag",
     brand: "Mizuno",
@@ -95052,9 +96045,6 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-9-play-fg-ag-ag",
     brand: "Puma",
@@ -98833,6 +99823,9 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "sportisgoodes-skechers-botas-de-futbol-skechers-skx-01-fg-fg",
     brand: "Skechers",
@@ -100185,9 +101178,6 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "sportisgoodfr-skechers-skechers-razor-1-5-elite-fg-fg-2",
     brand: "Skechers",

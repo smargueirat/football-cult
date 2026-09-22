@@ -3,9 +3,10 @@
 Keeps `src/data/boots.ts` prices/tallas/fotos actualizados contra los
 feeds Awin/Google-Shopping ya aprobados que tienen botas reales: adidas
 ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda, Deporte
-Outlet, Pro Soccer (USD), más FutbolEmotion (TradeTracker) desde un
-snapshot manual. Reusa el mismo cache de feeds (`/tmp/feeds/*.csv`) que
-el scan diario de camisetas ya descarga -- no hace su propia descarga.
+Outlet, Pro Soccer (USD), Gigasport DE/CH/FR, Clovis Calçados BR (BRL),
+más FutbolEmotion (TradeTracker) desde un snapshot manual. Reusa el
+mismo cache de feeds (`/tmp/feeds/*.csv`) que el scan diario de
+camisetas ya descarga -- no hace su propia descarga.
 
 Los 71 modelos "legacy" (cruzados por nombre entre FutbolEmotion y Forum
 Sport, comparación de precio real entre 2 tiendas de un mismo modelo)
@@ -15,13 +16,39 @@ pipeline nunca los toca. Lo mismo para `browserMinedBootProducts`
 
 ## Monedas reales por tienda
 
-Todas las tiendas ES/IE/FR cobran en EUR. Pro Soccer cobra en USD (su
-storefront real, no un EUR fabricado). Nike CL cobra en CLP, Nike AR y
-Puma AR en ARS. `BootCurrency`/`BOOT_CURRENCY_TO_EUR` en `boots.ts`
-siguen el mismo patrón que `products.ts` ya usa para camisetas: el
-precio real de cada oferta se muestra tal cual en su moneda nativa
-(nunca convertido), la tasa a EUR es solo un número interno para poder
-comparar/ordenar "más barata" entre monedas distintas.
+Todas las tiendas ES/IE/FR/DE/CH cobran en EUR. Pro Soccer cobra en USD
+(su storefront real, no un EUR fabricado). Nike CL cobra en CLP, Nike AR
+y Puma AR en ARS. Clovis Calçados BR cobra en BRL (único store de botas
+en reales, mismo motivo que Pro Soccer en USD). `BootCurrency`/
+`BOOT_CURRENCY_TO_EUR` en `boots.ts`/`src/lib/offerMoney.ts` siguen el
+mismo patrón que `products.ts` ya usa para camisetas: el precio real de
+cada oferta se muestra tal cual en su moneda nativa (nunca convertido),
+la tasa a EUR es solo un número interno para poder comparar/ordenar
+"más barata" entre monedas distintas.
+
+## Clovis Calçados BR: única categoría confiable es `product_type`
+
+Awin aid 107702 (aprobado 2026-09-23), 60 años, calzado general
+brasileño -- de los 8.198 productos del feed, `category_id`/
+`category_name` vienen SIEMPRE vacíos (mismo caso que Deporte Outlet/
+Pro Soccer), pero `product_type` sí trae una categoría dedicada real:
+`"Masculino - Chuteira"` (84 filas de las 8.198 -- el resto es
+tênis/sandálias/tamancos/sapatos/bolsas/mochilas/chinelos, nada de eso
+pasa el filtro). `"Infantil - Menino - Chuteira"` (71 filas, botas de
+niño) se descarta a propósito, mismo criterio adulto-only del resto del
+catálogo.
+
+Dentro de esa categoría, el propio título distingue el terreno en
+portugués: "Futsal"/"Indoor" (cancha techada) ya caen en
+`EXCLUDE_KEYWORDS` (que ya excluía esas palabras en otros idiomas, sin
+tocar la lista compartida), "Society" (césped sintético de 7, ~AG) y
+"Campo" (césped natural, ~FG) son terreno real de fútbol al aire libre
+-- confirmado por foto en una muestra de 8 productos distintos (Penalty,
+Umbro, Topper, Dalponte, Nike): todas botas de tacos reales. 46 de las
+84 filas sobreviven el filtro Futsal/Indoor. El feed no repite el mismo
+modelo+color en varias filas de talla (una fila = un color ya con su
+única talla en stock), así que `mine_clovis()` no agrupa por estilo como
+`mine_blaz_awin` -- cada fila es directamente un producto propio.
 
 ## FutbolEmotion: feed descargado en cada corrida (desde 2026-09-21)
 
@@ -154,7 +181,9 @@ vale la pena.
   `mine_footstore_awin`, `mine_decathlon_ie` (esquema Awin clásico),
   `mine_google_shopping_fr` (Foot-Store FR/Sport is Good FR, esquema
   Google Shopping), `mine_deporte_outlet`, `mine_prosoccer` (USD),
-  `mine_futbolemotion` (TradeTracker, ver snapshot manual arriba).
+  `mine_gigasport` (DE/CH/FR), `mine_clovis` (BR, BRL, ver sección
+  dedicada arriba), `mine_futbolemotion` (TradeTracker, ver snapshot
+  manual arriba).
 - `refresh_boots.py` — orquesta todo el pipeline de arriba, es el único
   comando que hay que correr.
 - `extract_boot_colors.mjs` — mismo pipeline de análisis de píxel real

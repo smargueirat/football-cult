@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Mina botas de fútbol adulto reales de los feeds Awin ya aprobados
 (adidas ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda,
-Deporte Outlet, Pro Soccer) desde el cache de feeds del scan diario
-(/tmp/feeds/*.csv), más FutbolEmotion (TradeTracker) desde un snapshot
-manual -- ver la nota en mine_futbolemotion() sobre por qué esa no se
-refresca sola todavía. Escribe scripts/boots-mining/mined_boots.json --
-entrada de refresh_boots.py, que lo fusiona con src/data/boots.ts.
+Deporte Outlet, Pro Soccer, Gigasport DE/CH/FR, Clovis Calçados BR)
+desde el cache de feeds del scan diario (/tmp/feeds/*.csv), más
+FutbolEmotion (TradeTracker) desde un snapshot manual -- ver la nota en
+mine_futbolemotion() sobre por qué esa no se refresca sola todavía.
+Escribe scripts/boots-mining/mined_boots.json -- entrada de
+refresh_boots.py, que lo fusiona con src/data/boots.ts.
 
 Los 71 modelos "legacy" (cruzados por nombre entre FutbolEmotion y Forum
 Sport) NO se re-minan acá -- viven como bloque fijo en
@@ -718,6 +719,87 @@ def mine_gigasport(fname, store_label, boot_cats):
         n += 1
     print(f'{store_label}:', n)
 
+# ---------- CLOVIS CALÇADOS BR (Awin, calzado general, BRL) ----------
+# category_id/category_name vienen vacíos en TODAS las filas (mismo caso
+# que DeporteOutlet/ProSoccer), pero acá SÍ hay una señal de categoría
+# confiable real: product_type, con una categoría dedicada real de botas
+# de fútbol de hombre ("Masculino - Chuteira") -- el resto del feed
+# (8.198 productos) es calzado general BR: tenis, sandalias, tamancos,
+# bolsas, mochilas, chinelos, etc, nada de eso pasa este filtro.
+# "Infantil - Menino - Chuteira" (71 filas, botas de fútbol de niño) se
+# descarta a propósito -- mismo criterio adulto-only que el resto del
+# catálogo de botas.
+#
+# Dentro de "Masculino - Chuteira" el título real distingue el terreno en
+# portugués: "Futsal"/"Indoor" (cancha techada, tacos de goma chicos) ya
+# caen en EXCLUDE_KEYWORDS (que ya excluye esas palabras en inglés/
+# español/francés), "Society" (césped sintético de 7, tipo AG) y "Campo"
+# (césped natural, tipo FG) son terreno real de fútbol al aire libre y sí
+# se incluyen -- confirmado por foto un muestreo de 8 productos
+# distintos (Penalty/Umbro/Topper/Dalponte/Nike, Society y Campo): todas
+# botas de tacos reales, ninguna zapatilla urbana ni de otro deporte.
+#
+# El feed no trae talles multiplicados por fila (una fila = un color +
+# un talle ya en stock, confirmado: ninguno de los 84 "Masculino -
+# Chuteira" repite el mismo modelo+color con otro talle), así que no
+# hace falta agrupar por estilo como en mine_blaz_awin -- cada fila ES
+# ya un producto propio con una sola talla.
+CLOVIS_TAIL_RE = re.compile(r'\s+[A-ZÀ-Ü][A-ZÀ-Ü/\s]*\s+\d{1,3}$')
+
+def clean_clovis_model(title):
+    t = norm_title(title)
+    t = re.sub(r'^Chuteira\s+(Masculina|Unissex)\s+', '', t, flags=re.I)
+    t = re.sub(r'^Chuteira\s+', '', t, flags=re.I)
+    t = re.sub(r'^(Campo|Society)\s+', '', t, flags=re.I)
+    # cuando el título no tenía " - código" (norm_title no cortó nada),
+    # sacar a mano el color+talle finales que quedan pegados.
+    t = CLOVIS_TAIL_RE.sub('', t)
+    return t.strip()
+
+def infer_ground_clovis(title):
+    if re.search(r'\bcampo\b', title, re.I):
+        return 'FG'
+    if re.search(r'\bsociety\b', title, re.I):
+        return 'AG'
+    return infer_ground(title)
+
+def mine_clovis():
+    if not os.path.exists(f"{FEEDS}/CLOVIS_BR.csv"):
+        print('ClovisCalcadosBR: feed not found, skipped')
+        return
+    n = 0
+    with open(f"{FEEDS}/CLOVIS_BR.csv", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            if row.get('product_type') != 'Masculino - Chuteira':
+                continue
+            title = row.get('product_name') or ''
+            if EXCLUDE_KEYWORDS.search(title):
+                continue
+            if row.get('in_stock') != '1':
+                continue
+            price = parse_price(row.get('search_price'))
+            if not price:
+                continue
+            size = (row.get('Fashion:size') or '').strip()
+            results.append({
+                'store': 'ClovisCalcadosBR',
+                'brand': (row.get('brand_name') or '').strip() or 'N/D',
+                'model': clean_clovis_model(title),
+                'groundType': infer_ground_clovis(title),
+                'price': price,
+                # el feed no trae columna de costo de envío (no está entre
+                # las columnas pedidas al armar la URL vía la feed-list
+                # API) -- 0 en vez de inventar un número que la tienda no
+                # publicó, mismo criterio que DecathlonIE.
+                'shipping': 0,
+                'currency': 'BRL',
+                'url': row.get('aw_deep_link'),
+                'imageUrl': row.get('aw_image_url'),
+                'sizes': [size] if size else [],
+            })
+            n += 1
+    print('ClovisCalcadosBR:', n)
+
 # ---------- FUTBOLEMOTION (TradeTracker, no Awin) ----------
 # A diferencia de todo lo de arriba, este feed NO vive en el cache
 # /tmp/feeds del scan diario -- es un export TradeTracker con su propio
@@ -818,6 +900,7 @@ if __name__ == '__main__':
     mine_gigasport('GIGASPORT_DE.csv', 'GigasportDE', GIGASPORT_DE_BOOT_CATS)
     mine_gigasport('GIGASPORT_CH.csv', 'GigasportCH', GIGASPORT_DE_BOOT_CATS)
     mine_gigasport('GIGASPORT_FR.csv', 'GigasportFR', GIGASPORT_FR_BOOT_CATS)
+    mine_clovis()
     mine_futbolemotion(legacy_model_names_from_boots_ts())
 
     print('TOTAL:', len(results))
