@@ -170,6 +170,8 @@ export interface Translations {
     importCharges: string;
     checkingRealShipping: string;
     includedInTotal: string;
+    authenticityGuideLink: string;
+    pricesUpdatedOn: string;
   };
   footer: {
     about: string;
@@ -644,6 +646,8 @@ export const translations: Record<Locale, Translations> = {
       importCharges: "Impuestos",
       checkingRealShipping: "Calculando envío real a tu país…",
       includedInTotal: "incluido en el total",
+      authenticityGuideLink: "¿Cómo saber si es original?",
+      pricesUpdatedOn: "Precios actualizados el {date}",
     },
     footer: {
       about: "Sobre nosotros",
@@ -1124,6 +1128,8 @@ export const translations: Record<Locale, Translations> = {
       importCharges: "Impostos",
       checkingRealShipping: "Calculando frete real para o seu país…",
       includedInTotal: "incluído no total",
+      authenticityGuideLink: "Como saber se é original?",
+      pricesUpdatedOn: "Preços atualizados em {date}",
     },
     footer: {
       about: "Sobre nós",
@@ -1604,6 +1610,8 @@ export const translations: Record<Locale, Translations> = {
       importCharges: "Import charges",
       checkingRealShipping: "Calculating real shipping to your country…",
       includedInTotal: "included in the total",
+      authenticityGuideLink: "How to tell if it's genuine?",
+      pricesUpdatedOn: "Prices updated on {date}",
     },
     footer: {
       about: "About us",
@@ -2084,6 +2092,8 @@ export const translations: Record<Locale, Translations> = {
       importCharges: "Frais d'importation",
       checkingRealShipping: "Calcul de la livraison réelle vers votre pays…",
       includedInTotal: "inclus dans le total",
+      authenticityGuideLink: "Comment savoir si c'est authentique ?",
+      pricesUpdatedOn: "Prix mis à jour le {date}",
     },
     footer: {
       about: "À propos",
@@ -2564,6 +2574,8 @@ export const translations: Record<Locale, Translations> = {
       importCharges: "Oneri doganali",
       checkingRealShipping: "Calcolo della spedizione reale verso il tuo paese…",
       includedInTotal: "incluso nel totale",
+      authenticityGuideLink: "Come capire se è originale?",
+      pricesUpdatedOn: "Prezzi aggiornati il {date}",
     },
     footer: {
       about: "Chi siamo",

@@ -73,34 +73,44 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
         {t.detail.backToCatalog}
       </Link>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-[3fr_2fr]">
-        <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white">
-          <Image
-            key={selectedOffer.imageUrl}
-            src={getDisplaySrc(upsizeBootDetailPhoto(selectedOffer.imageUrl), 1200)}
-            alt={boot.model}
-            fill
-            unoptimized
-            className="object-contain p-6"
-          />
-          <button
-            onClick={() => toggleFavorite(boot.id)}
-            aria-label={t.nav.favorites}
-            className="shadow-vintage-sm absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
-          >
-            <svg
-              className="h-4 w-4"
-              viewBox="0 0 24 24"
-              fill={favorite ? "currentColor" : "none"}
-              stroke="currentColor"
-              strokeWidth="2"
+        <div>
+          <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white">
+            <Image
+              key={selectedOffer.imageUrl}
+              src={getDisplaySrc(upsizeBootDetailPhoto(selectedOffer.imageUrl), 1200)}
+              alt={boot.model}
+              fill
+              unoptimized
+              className="object-contain p-6"
+            />
+            <button
+              onClick={() => toggleFavorite(boot.id)}
+              aria-label={t.nav.favorites}
+              className="shadow-vintage-sm absolute right-3 top-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/80 text-[#B45309] backdrop-blur-md transition-transform hover:scale-110"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-8.318a4.5 4.5 0 010-6.364z"
-              />
-            </svg>
-          </button>
+              <svg
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill={favorite ? "currentColor" : "none"}
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-8.318a4.5 4.5 0 010-6.364z"
+                />
+              </svg>
+            </button>
+          </div>
+          {/* Señal de confianza real junto a la foto (antes espacio vacío)
+              -- cantidad real de tiendas para este modelo, sin inventar
+              nada más (no hay guía de autenticidad propia para botas ni
+              fecha de último refresh cargada acá, a diferencia de
+              camisetas -- ver JerseyDetailClient.tsx). */}
+          <div className="vintage-card mt-3 flex items-center gap-1.5 rounded-2xl p-4 text-sm font-medium text-[#1B3B2B]">
+            {t.product.inStores.replace("{n}", String(sortedOffers.length))}
+          </div>
         </div>
         <div>
           <span className="text-xs uppercase tracking-wide text-[#B8933F]">

@@ -173,6 +173,14 @@ export default function JerseyDetailClient({
   ).length;
   const bestOffer = sortedOffers.find((o) => o.inStock && shipsHere(o));
   const bestStore = bestOffer?.store;
+  // Fecha real del último snapshot de precio (track_price_drops.py corre
+  // a diario, ver PriceHistorySparkline más abajo) -- nunca un texto tipo
+  // "actualizado a diario" inventado, solo se muestra si hay un dato real
+  // para esta oferta puntual.
+  const priceHistoryEntries = bestOffer ? priceHistory[bestOffer.url] : undefined;
+  const lastUpdatedDate = priceHistoryEntries?.length
+    ? priceHistoryEntries[priceHistoryEntries.length - 1].date
+    : undefined;
   // Nombre real tal como aparece en la tienda (siempre, sea cual sea su
   // idioma), no un nombre armado por nosotros (equipo + tipo) -- ver
   // displayTitleForCountry, regla fija, no volver a gatear esto por idioma.
@@ -309,6 +317,32 @@ export default function JerseyDetailClient({
               <span className="rounded-full bg-[#7C3AED]/12 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#7C3AED]">
                 {t.detail.retroBadge}
               </span>
+            )}
+          </div>
+
+          {/* Señales de confianza reales junto a la foto (antes era espacio
+              vacío) -- todo computado de datos reales de ESTE producto,
+              nada inventado: cantidad real de tiendas, link a la guía de
+              autenticidad ya existente, y la fecha real del último
+              snapshot de precio si hay una para la mejor oferta. */}
+          <div className="vintage-card mt-3 flex flex-col gap-2 rounded-2xl p-4 text-sm">
+            <p className="flex items-center gap-1.5 font-medium text-[#1B3B2B]">
+              <span>{country.flag}</span>
+              {t.detail.storesCompared.replace("{n}", String(shippableCount))}
+            </p>
+            <Link
+              href="/guia/camiseta-original"
+              className="text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+            >
+              {t.detail.authenticityGuideLink}
+            </Link>
+            {lastUpdatedDate && (
+              <p className="text-xs text-[#9a9a94]">
+                {t.detail.pricesUpdatedOn.replace(
+                  "{date}",
+                  new Date(lastUpdatedDate).toLocaleDateString(locale)
+                )}
+              </p>
             )}
           </div>
         </div>
