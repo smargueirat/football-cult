@@ -457,7 +457,13 @@ EXCLUDE_RE = re.compile(
     # project's history (only 3 hand-seeded Boca products existed before
     # this fix). Watch for the same class with any other club whose name
     # contains a kids/youth/gender exclusion word as a substring.
-    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    # "child" (bare English word) found missing 2026-09-22 mining eBay ES:
+    # a "Puma Child Leicester City ... talla pequeña 24/26" listing (UK
+    # kids clothing size, not a literal age -- doesn't match the numeric
+    # age-range fallback below either, since "24/26" wasn't at the end of
+    # the title and 24 isn't a plausible kid age) sailed through as an
+    # adult "home" pick. Added.
+    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bchild\b|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
@@ -524,7 +530,7 @@ KIDS_EXCLUDE_RE = re.compile(
     re.I,
 )
 KIDS_SIGNAL_RE = re.compile(
-    r"infantil|\bniñ|\bnino|\bkids?\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
+    r"infantil|\bniñ|\bnino|\bkids?\b|\bchild\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
     # "youth" only, NOT "young" -- BSC Young Boys is a real club in the
     # catalog and a bare "young" would flag every one of its own listings.
     r"\byouth\b|"

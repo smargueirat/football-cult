@@ -4,8 +4,8 @@ import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { leagueTeams, teamItems, teamName } from "@/lib/hubs";
 import { SEASON_UI } from "@/lib/seasonStrings";
 import { priceDrops, seasonItems, seasonList, seasonSlug } from "@/lib/seasonHubs";
-import { COUNTRY_SLUGS, LEAGUES, leagueName } from "@/data/teamMeta";
-import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
+import { COUNTRY_FLAGS, COUNTRY_SLUGS, LEAGUES, leagueName } from "@/data/teamMeta";
+import { Crumbs, HubHeader, JsonLd, LinkChips, Section } from "@/components/hubs/HubParts";
 
 export const revalidate = 86400;
 
@@ -30,13 +30,13 @@ export default async function LeaguesIndex({ params }: P) {
       <Crumbs locale={locale} trail={[{ label: s.leaguesIndex }]} />
       <HubHeader h1={s.leaguesIndex} intro={s.indexIntro} />
       <Section title={s.browseLeagues}>
-        <TeamLinks
+        <LinkChips
           locale={locale}
           items={leagues.map(({ l, n }) => ({ href: `/${locale}/liga/${l.slug}`, name: leagueName(l, locale), count: n }))}
         />
       </Section>
       <Section title={SEASON_UI[locale].seasons}>
-        <TeamLinks
+        <LinkChips
           locale={locale}
           items={[
             ...seasonList().map((se) => ({ href: `/${locale}/temporada/${seasonSlug(se)}`, name: SEASON_UI[locale].seasonH1(se), count: seasonItems(se).length })),
@@ -45,11 +45,12 @@ export default async function LeaguesIndex({ params }: P) {
         />
       </Section>
       <Section title={s.browseCountries}>
-        <TeamLinks
+        <LinkChips
           locale={locale}
           items={countries.map(({ c, name }) => ({
             href: `/${locale}/pais/${c}`,
             name,
+            flag: COUNTRY_FLAGS[c],
             count: [c, ...LEAGUES.filter((l) => l.country === c).flatMap((l) => leagueTeams(l.slug))].reduce((a, k) => a + teamItems(k).length, 0),
           }))}
         />

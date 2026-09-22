@@ -135,7 +135,7 @@ def mine_current(client, team_key, team_en, teams_re, types_re):
                 continue
             candidates.append({
                 "title": title, "price": amount,
-                "currency": price.get("currency", "USD"),
+                "currency": price.get("currency", client.default_currency),
                 "link": link,
                 "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
                 "item_id": item.get("itemId"),
@@ -193,7 +193,7 @@ def mine_kids(client, team_key, team_en, teams_re, types_re):
                 continue
             candidates.append({
                 "title": title, "price": amount,
-                "currency": price.get("currency", "USD"),
+                "currency": price.get("currency", client.default_currency),
                 "link": link,
                 "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
                 "item_id": item.get("itemId"),
@@ -257,7 +257,7 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
                 continue
             cand = {
                 "title": title, "price": amount,
-                "currency": price.get("currency", "USD"),
+                "currency": price.get("currency", client.default_currency),
                 "link": link,
                 "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
                 "item_id": item.get("itemId"),

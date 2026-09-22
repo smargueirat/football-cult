@@ -63,6 +63,21 @@ SIZE_MAP = {
     "3XL": "3XL", "XXXL": "3XL", "4XL": "4XL", "XXXXL": "4XL",
 }
 
+# eBay's Browse API app credentials (EBAY_CLIENT_ID/SECRET) work unchanged
+# across every one of its ~20 site marketplaces -- only the
+# X-EBAY-C-MARKETPLACE-ID header changes which site answers the search
+# (results, availability and currency all shift to that site). Added
+# EBAY_IT/EBAY_ES 2026-09-22 to mine Italy/Spain in EUR, same team/type
+# extraction and exclusion filters as EBAY_US -- only the marketplace ID
+# and the default currency fallback (used when eBay's own price payload
+# is somehow missing a currency code, which real responses always have)
+# differ per marketplace.
+MARKETPLACE_CURRENCY = {
+    "EBAY_US": "USD",
+    "EBAY_IT": "EUR",
+    "EBAY_ES": "EUR",
+}
+
 
 def get_env(key):
     env = open(ENV_PATH, encoding="utf-8").read()
@@ -83,10 +98,12 @@ def get_team_en_names():
 
 
 class EbayClient:
-    def __init__(self):
+    def __init__(self, marketplace_id="EBAY_US"):
         self.client_id = get_env("EBAY_CLIENT_ID")
         self.client_secret = get_env("EBAY_CLIENT_SECRET")
         self.campaign_id = get_env("EBAY_CAMPAIGN_ID")
+        self.marketplace_id = marketplace_id
+        self.default_currency = MARKETPLACE_CURRENCY.get(marketplace_id, "USD")
         self.token = None
         self.token_expiry = 0
         # Set True whenever a search() call gets a 429 -- callers doing a
@@ -126,7 +143,7 @@ class EbayClient:
             f"https://api.ebay.com/buy/browse/v1/item_summary/search?{params}",
             headers={
                 "Authorization": f"Bearer {self.token}",
-                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+                "X-EBAY-C-MARKETPLACE-ID": self.marketplace_id,
                 "X-EBAY-C-ENDUSERCTX": f"affiliateCampaignId={self.campaign_id}",
             },
         )
@@ -158,20 +175,21 @@ class EbayClient:
         Marketplace/destination note: X-EBAY-C-MARKETPLACE-ID controls
         which of eBay's ~20 site marketplaces answers the call (no
         Argentina-specific one exists) and shippingOptions here reflects
-        shipping to that marketplace's default region (US for EBAY_US) —
-        NOT the actual buyer's country. Real per-buyer-country shipping
-        needs the X-EBAY-C-ENDUSERCTX header with a contextualLocation
-        override per destination, which means one extra API call *per
-        destination country* per item — a real quota cost, intentionally
-        not done here. See the note in refresh.py / products.ts about
-        this limitation.
+        shipping to that marketplace's default region (US for EBAY_US,
+        Italy for EBAY_IT, Spain for EBAY_ES) — NOT the actual buyer's
+        country. Real per-buyer-country shipping needs the
+        X-EBAY-C-ENDUSERCTX header with a contextualLocation override per
+        destination, which means one extra API call *per destination
+        country* per item — a real quota cost, intentionally not done
+        here. See the note in refresh.py / products.ts about this
+        limitation.
         """
         self._ensure_token()
         req = urllib.request.Request(
             f"https://api.ebay.com/buy/browse/v1/item/{urllib.parse.quote(item_id, safe='')}",
             headers={
                 "Authorization": f"Bearer {self.token}",
-                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+                "X-EBAY-C-MARKETPLACE-ID": self.marketplace_id,
             },
         )
         data = None
@@ -244,7 +262,7 @@ def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
         candidates.append({
             "title": title,
             "price": amount,
-            "currency": price.get("currency", "USD"),
+            "currency": price.get("currency", client.default_currency),
             "link": link,
             "image": upsize_ebay_image((item.get("image") or {}).get("imageUrl")),
             "item_id": item.get("itemId"),

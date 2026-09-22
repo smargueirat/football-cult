@@ -332,3 +332,29 @@ export function leaguesOfCountry(country: string): LeagueMeta[] {
 }
 
 export const COUNTRY_SLUGS: string[] = Array.from(new Set(LEAGUES.map((l) => l.country)));
+
+// Banderas para /ligas ("Explorar por país"). Solo selecciones nacionales,
+// no escudos de club/liga (esos son marca registrada, ver LinkChips). Cada
+// código es un ISO 3166-1 alpha-2 sin ambigüedad para el slug: Inglaterra y
+// Escocia NO comparten "GB" (eso mezclaría dos selecciones distintas), usan
+// la secuencia de bandera de subdivisión propia de cada una en su lugar.
+// Si algún país nuevo entra a COUNTRY_SLUGS sin estar acá, sale sin
+// bandera -- mejor eso que adivinar mal.
+function isoFlag(iso: string): string {
+  return String.fromCodePoint(...[...iso].map((c) => 0x1f1e6 + c.charCodeAt(0) - 65));
+}
+const ENGLAND_FLAG = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0065}\u{E006E}\u{E0067}\u{E007F}";
+const SCOTLAND_FLAG = "\u{1F3F4}\u{E0067}\u{E0062}\u{E0073}\u{E0063}\u{E0074}\u{E007F}";
+const COUNTRY_ISO: Record<string, string> = {
+  espana: "ES", italia: "IT", alemania: "DE", francia: "FR", paisesbajos: "NL",
+  portugal: "PT", turquia: "TR", belgica: "BE", grecia: "GR", argentina: "AR",
+  brasil: "BR", mexico: "MX", estadosunidos: "US", colombia: "CO", chile: "CL",
+  uruguay: "UY", arabiasaudita: "SA", japon: "JP", india: "IN", sudafrica: "ZA",
+  marruecos: "MA", argelia: "DZ", serbia: "RS", croacia: "HR", ucrania: "UA",
+  dinamarca: "DK", chequia: "CZ", suiza: "CH", austria: "AT",
+};
+export const COUNTRY_FLAGS: Record<string, string> = {
+  inglaterra: ENGLAND_FLAG,
+  escocia: SCOTLAND_FLAG,
+  ...Object.fromEntries(Object.entries(COUNTRY_ISO).map(([slug, iso]) => [slug, isoFlag(iso)])),
+};
