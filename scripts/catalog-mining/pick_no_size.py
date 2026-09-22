@@ -29,22 +29,34 @@ def pick_best_no_size(csv_path, price_col, title_col, link_col, image_col):
             continue
         best_title = min(by_title.keys(), key=score)
         variant_rows = by_title[best_title]
-        prices = []
+        # Bug real (2026-09-22, feed de Futbol Factory): algunas filas
+        # traen price=0.00 -- no faltante, el feed literalmente pone 0 en
+        # variantes sin stock/pendientes de publicar (confirmado: 54 de
+        # 75 picks de una corrida real salian a "0.0" antes de este
+        # fix). min(prices) sobre TODAS las filas del titulo dejaba que
+        # esa fila invalida le gane a las que si tienen precio real.
+        # Se descartan del todo antes de elegir precio (y de elegir la
+        # fila representante para el link/imagen, para no linkear una
+        # variante sin stock).
+        priced_rows = []
         for r in variant_rows:
             raw_price = r.get(price_col) or ""
             import re
             pm = re.search(r"([\d.,]+)", raw_price)
-            if pm:
-                try:
-                    prices.append(float(pm.group(1).replace(",", ".")))
-                except ValueError:
-                    pass
-        if not prices:
+            if not pm:
+                continue
+            try:
+                price = float(pm.group(1).replace(",", "."))
+            except ValueError:
+                continue
+            if price > 0:
+                priced_rows.append((price, r))
+        if not priced_rows:
             continue
-        rep_row = variant_rows[0]
+        best_price, rep_row = min(priced_rows, key=lambda pr: pr[0])
         results[(team, typ)] = {
             "title": best_title,
-            "price": min(prices),
+            "price": best_price,
             "shipping": 0.0,
             "sizes": FIXED_SIZES,
             "link": rep_row.get(link_col),
