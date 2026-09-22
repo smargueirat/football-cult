@@ -45,8 +45,8 @@ function PromoCard({ programme, leagueName, big }: { programme: DaznProgramme; l
   const banner = programme.banners.length ? (big ? programme.banners[0] : programme.banners[1] ?? programme.banners[0]) : null;
 
   return (
-    <div className="mx-auto w-fit max-w-full">
-      <p className="mb-1 text-center text-[10px] uppercase tracking-wider text-[#8a836e]">{t.ad}</p>
+    <div className={`mx-auto max-w-full ${banner ? "w-fit" : "w-full"}`}>
+      <p className={`mb-1.5 text-center uppercase tracking-wider text-[#8a836e] ${big ? "text-xs" : "text-[11px]"}`}>{t.ad}</p>
       {banner ? (
         <a href={creativeHref(programme, banner)} target="_blank" rel="sponsored nofollow noopener" className="block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -57,24 +57,24 @@ function PromoCard({ programme, leagueName, big }: { programme: DaznProgramme; l
           href={landingHref(programme)}
           target="_blank"
           rel="sponsored nofollow noopener"
-          className="dazn-promo-card block w-[300px] max-w-full rounded-2xl border border-[#C9A24B]/40 bg-gradient-to-b from-[#1B3B2B] to-[#10261b] p-5 text-[#F3E9C9] shadow-md transition-transform hover:-translate-y-0.5 active:scale-[0.98]"
+          className={`dazn-promo-card block w-full max-w-full rounded-2xl border border-[#C9A24B]/40 bg-gradient-to-b from-[#1B3B2B] to-[#10261b] text-[#F3E9C9] shadow-md transition-transform hover:-translate-y-0.5 active:scale-[0.98] ${big ? "p-8" : "p-6"}`}
         >
-          <span className="inline-block rounded bg-[#FFED00] px-1.5 py-0.5 text-[10px] font-black tracking-tight text-black">DAZN</span>
-          <span className="font-vintage mt-2 block text-xl leading-snug">{t.title(leagueName)}</span>
-          <span className="mt-2 block text-xs text-[#B8AF98]">{t.body}</span>
+          <span className={`inline-block rounded bg-[#FFED00] font-black tracking-tight text-black ${big ? "px-2 py-1 text-xs" : "px-1.5 py-0.5 text-[11px]"}`}>DAZN</span>
+          <span className={`font-vintage mt-3 block leading-snug ${big ? "text-3xl" : "text-2xl"}`}>{t.title(leagueName)}</span>
+          <span className={`mt-2 block text-[#B8AF98] ${big ? "text-sm" : "text-xs"}`}>{t.body}</span>
           {programme.leagues.length > 0 && (
-            <span className="mt-3 flex flex-wrap gap-1.5">
+            <span className="mt-4 flex flex-wrap gap-2">
               {programme.leagues.map((slug) => {
                 const meta = LEAGUES.find((l) => l.slug === slug);
                 return meta ? (
-                  <span key={slug} className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-medium text-[#F3E9C9]">
+                  <span key={slug} className={`rounded-full bg-white/10 font-medium text-[#F3E9C9] ${big ? "px-2.5 py-1 text-xs" : "px-2 py-0.5 text-[11px]"}`}>
                     {leagueDisplayName(meta, locale)}
                   </span>
                 ) : null;
               })}
             </span>
           )}
-          <span className="mt-4 inline-block rounded-full bg-[#C9A24B] px-4 py-2 text-sm font-semibold text-[#1B3B2B]">{t.cta} →</span>
+          <span className={`mt-5 inline-block rounded-full bg-[#C9A24B] font-semibold text-[#1B3B2B] ${big ? "px-6 py-3 text-base" : "px-5 py-2.5 text-sm"}`}>{t.cta} →</span>
         </a>
       )}
     </div>
@@ -96,7 +96,7 @@ export default function DaznLayout({ league, leagueName, children }: { league: s
       <div className="mb-6 lg:hidden">
         <PromoCard programme={programme} leagueName={leagueName} big={false} />
       </div>
-      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-8">
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-8">
         <div>{children}</div>
         <aside className="hidden lg:block">
           <div className="sticky top-24">
