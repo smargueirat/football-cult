@@ -3,6 +3,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { DAZN_BY_COUNTRY, creativeHref, creativeImg, landingHref, type DaznProgramme } from "@/data/daznAds";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { LEAGUES, leagueName as leagueDisplayName } from "@/data/teamMeta";
 
 // Publicidad de DAZN (afiliados Awin) en las páginas de liga: columna a la
 // derecha en escritorio y tarjeta arriba en celular. Solo se muestra si el
@@ -56,10 +57,23 @@ function PromoCard({ programme, leagueName, big }: { programme: DaznProgramme; l
           href={landingHref(programme)}
           target="_blank"
           rel="sponsored nofollow noopener"
-          className="block w-[300px] max-w-full rounded-2xl border border-[#C9A24B]/40 bg-gradient-to-b from-[#1B3B2B] to-[#10261b] p-5 text-[#F3E9C9] shadow-md transition-transform hover:-translate-y-0.5"
+          className="dazn-promo-card block w-[300px] max-w-full rounded-2xl border border-[#C9A24B]/40 bg-gradient-to-b from-[#1B3B2B] to-[#10261b] p-5 text-[#F3E9C9] shadow-md transition-transform hover:-translate-y-0.5 active:scale-[0.98]"
         >
-          <span className="font-vintage block text-xl leading-snug">{t.title(leagueName)}</span>
+          <span className="inline-block rounded bg-[#FFED00] px-1.5 py-0.5 text-[10px] font-black tracking-tight text-black">DAZN</span>
+          <span className="font-vintage mt-2 block text-xl leading-snug">{t.title(leagueName)}</span>
           <span className="mt-2 block text-xs text-[#B8AF98]">{t.body}</span>
+          {programme.leagues.length > 0 && (
+            <span className="mt-3 flex flex-wrap gap-1.5">
+              {programme.leagues.map((slug) => {
+                const meta = LEAGUES.find((l) => l.slug === slug);
+                return meta ? (
+                  <span key={slug} className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] font-medium text-[#F3E9C9]">
+                    {leagueDisplayName(meta, locale)}
+                  </span>
+                ) : null;
+              })}
+            </span>
+          )}
           <span className="mt-4 inline-block rounded-full bg-[#C9A24B] px-4 py-2 text-sm font-semibold text-[#1B3B2B]">{t.cta} →</span>
         </a>
       )}
