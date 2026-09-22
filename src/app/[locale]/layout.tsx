@@ -15,6 +15,7 @@ import { CompareProvider } from "@/lib/compare/CompareContext";
 import CompareBar from "@/components/CompareBar";
 import { Locale } from "@/lib/i18n/translations";
 import { LOCALES, OG_LOCALE, buildAlternates, isLocale } from "@/lib/i18n/locales";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -195,6 +196,7 @@ export default async function RootLayout({
             </Script>
           </>
         )}
+        <SpeedInsights />
       </body>
     </html>
   );
