@@ -14,7 +14,7 @@ import {
   teamNames,
   typeNames,
 } from "@/data/products";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { formatOfferMoney, previousOfferTotal } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -240,12 +240,13 @@ export default function ProductCard3D({
             al tamaño de siempre desde sm+. */}
         {best && (
           <div
+            title={t.detail.currencyNote}
             className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-2 py-1 text-[#2A2410] sm:px-3 sm:py-1.5"
             style={{ transform: "translateZ(40px)" }}
           >
             {isPriceDropped(best) && (
               <span className="text-[9px] leading-none line-through opacity-60 sm:text-[10px]">
-                {formatOfferMoney(best.previousPrice! + best.shipping, best.currency)}
+                {formatOfferMoney(previousOfferTotal(best, bestTotal), best.currency)}
               </span>
             )}
             <span className="text-xs font-semibold sm:text-sm">

@@ -66,6 +66,25 @@ export function offerTotal(offer: { price: number; shipping: number }): number {
   return offer.price + offer.shipping;
 }
 
+// Total "anterior" para el par tachado/actual de una tarjeta con badge de
+// baja de precio. `currentTotal` puede no ser simplemente price+shipping
+// del offer -- para eBay puede ser un total EN VIVO (useLiveOfferTotal)
+// que ya suma envío/impuestos reales, distintos del envío placeholder
+// guardado en el catálogo. Si el tachado sumara ese envío placeholder en
+// vez del mismo componente ya aplicado al actual, el par mostrado
+// quedaría en dos bases distintas (uno con envío real, el otro sin) y
+// podía verse el precio "actual" MÁS ALTO que el "anterior" aunque el
+// precio de la tienda bajó de verdad -- bug real reportado (camiseta con
+// badge "Bajó 10%" pero USD 86.99 tachado -> USD 88.28 actual, un alza).
+// Invariante: previousOfferTotal y currentTotal siempre comparten la
+// misma base de envío/extras, sea cual sea (estática o en vivo).
+export function previousOfferTotal(
+  offer: { price: number; previousPrice?: number },
+  currentTotal: number
+): number {
+  return (offer.previousPrice ?? offer.price) + (currentTotal - offer.price);
+}
+
 const BOOT_CURRENCY_TO_EUR: Record<BootCurrencyCode, number> = {
   EUR: 1,
   USD: 1.08,

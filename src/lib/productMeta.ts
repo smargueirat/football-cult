@@ -11,6 +11,7 @@
 import type { CountryCode } from "@/data/countries";
 import type { Locale } from "@/lib/i18n/translations";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
+import { cleanDisplayTitle } from "@/lib/displayTitle";
 import { offerTotalInEUR } from "@/lib/offerMoney";
 import type {
   AgeGroup,
@@ -517,6 +518,12 @@ export function isVintageRetro(product: Product): boolean {
   return seasonSortValue(product.season) <= 2006;
 }
 
+// Invariante: isPriceDropped/priceDropPercent comparan SIEMPRE
+// previousPrice vs price del MISMO offer, en su moneda nativa, sin
+// envío -- quien llame a esto para pintar el badge junto a un par de
+// precios tachado/actual tiene que usar ese mismo offer para ambos (ver
+// previousOfferTotal en offerMoney.ts, que mantiene el tachado en la
+// misma base de envío/extras que el total actual mostrado).
 export function isPriceDropped(offer: Offer): boolean {
   return offer.previousPrice != null && offer.previousPrice > offer.price;
 }
@@ -565,8 +572,11 @@ export function displayTitleForCountry(
   // se reemplaza por uno armado por nosotros -- ver
   // feedback_realname_primary.md), pero acá se le traduce el vocabulario
   // genérico conocido (tipo de camiseta, género, "réplica", etc.) al
-  // idioma del sitio, dejando nombres de equipo/jugador/marca intactos.
-  return title ? translateTitleVocabulary(title, locale) : undefined;
+  // idioma del sitio, dejando nombres de equipo/jugador/marca intactos, y
+  // se le aplica una limpieza de PRESENTACIÓN (casing, ruido bilingüe
+  // duplicado -- ver displayTitle.ts) sobre el resultado. Ninguna de las
+  // dos cosas toca el título guardado en el offer.
+  return title ? cleanDisplayTitle(translateTitleVocabulary(title, locale)) : undefined;
 }
 
 

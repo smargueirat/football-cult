@@ -14,7 +14,7 @@ import {
   teamNames,
   typeNames,
 } from "@/lib/productMeta";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { formatOfferMoney, previousOfferTotal } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -181,10 +181,13 @@ export default function ProductCard({ product }: { product: Product }) {
           // ProductCard3D tampoco, y en una card angosta como esta hacía
           // que el recuadro ocupara más ancho del necesario, tapando
           // parte de la foto) -- mismo precio real, recuadro más chico.
-          <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-2.5 py-1 text-[#2A2410]">
+          <div
+            title={t.detail.currencyNote}
+            className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-2.5 py-1 text-[#2A2410]"
+          >
             {isPriceDropped(best) && (
               <span className="text-[10px] leading-none line-through opacity-60">
-                {formatOfferMoney(best.previousPrice! + best.shipping, best.currency)}
+                {formatOfferMoney(previousOfferTotal(best, bestTotal), best.currency)}
               </span>
             )}
             <span className="text-sm font-semibold">
