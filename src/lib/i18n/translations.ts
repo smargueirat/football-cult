@@ -84,6 +84,7 @@ export interface Translations {
   search: {
     label: string;
     placeholder: string;
+    placeholderBoots: string;
     noResults: string;
     allCategories: string;
     categoryNational: string;
@@ -557,6 +558,7 @@ export const translations: Record<Locale, Translations> = {
     search: {
       label: "Buscá tu selección, club o liga favorita",
       placeholder: "Buscá una camiseta, un dorsal, una época... (Ej: Riquelme 2001, Italia 2006, Real Madrid)",
+      placeholderBoots: "Buscá una bota, una marca, un modelo... (Ej: Predator, Puma Future, Mercurial)",
       noResults: 'No encontramos camisetas para "{query}" todavía. Estamos sumando más tiendas cada semana.',
       allCategories: "Todas",
       categoryNational: "Selecciones",
@@ -1036,6 +1038,7 @@ export const translations: Record<Locale, Translations> = {
     search: {
       label: "Busque sua seleção, clube ou liga favorita",
       placeholder: "Busque uma camisa, um número, uma época... (Ex: Riquelme 2001, Itália 2006, Real Madrid)",
+      placeholderBoots: "Busque uma chuteira, uma marca, um modelo... (Ex: Predator, Puma Future, Mercurial)",
       noResults: 'Ainda não encontramos camisas para "{query}". Estamos adicionando mais lojas toda semana.',
       allCategories: "Todas",
       categoryNational: "Seleções",
@@ -1515,6 +1518,7 @@ export const translations: Record<Locale, Translations> = {
     search: {
       label: "Search your national team, club, or league",
       placeholder: "Search a jersey, a squad number, an era... (E.g: Riquelme 2001, Italy 2006, Real Madrid)",
+      placeholderBoots: "Search a boot, a brand, a model... (E.g: Predator, Puma Future, Mercurial)",
       noResults: 'We couldn\'t find jerseys for "{query}" yet. We\'re adding more stores every week.',
       allCategories: "All",
       categoryNational: "National teams",
@@ -1994,6 +1998,7 @@ export const translations: Record<Locale, Translations> = {
     search: {
       label: "Recherchez votre sélection, club ou championnat",
       placeholder: "Recherchez un maillot, un numéro, une époque... (Ex : Riquelme 2001, Italie 2006, Real Madrid)",
+      placeholderBoots: "Recherchez une chaussure, une marque, un modèle... (Ex : Predator, Puma Future, Mercurial)",
       noResults: 'Nous n\'avons pas encore trouvé de maillots pour "{query}". Nous ajoutons de nouvelles boutiques chaque semaine.',
       allCategories: "Tout",
       categoryNational: "Sélections nationales",
@@ -2473,6 +2478,7 @@ export const translations: Record<Locale, Translations> = {
     search: {
       label: "Cerca la tua nazionale, club o campionato",
       placeholder: "Cerca una maglia, un numero, un'epoca... (Es: Riquelme 2001, Italia 2006, Real Madrid)",
+      placeholderBoots: "Cerca uno scarpino, un marchio, un modello... (Es: Predator, Puma Future, Mercurial)",
       noResults: 'Non abbiamo ancora trovato maglie per "{query}". Aggiungiamo nuovi negozi ogni settimana.',
       allCategories: "Tutte",
       categoryNational: "Nazionali",
