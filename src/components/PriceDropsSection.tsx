@@ -1,20 +1,35 @@
 "use client";
 
 import { useMemo, useRef } from "react";
-import { bestOfferForCountry, priceDropPercent, products, productPriceDropped } from "@/data/products";
+// Tipos solamente (se borran al compilar, no arrastran products.ts al
+// cliente) -- la lista real de "en baja" por país llega YA CALCULADA
+// como prop desde el server component (page.tsx). Antes este componente
+// importaba `products`/bestOfferForCountry/etc. en vivo, lo que arrastraba
+// el catálogo completo (5.9MB/76 mil líneas) al cliente para una cuenta
+// que un server component puede hacer una sola vez en el build -- mismo
+// bug documentado en src/lib/offerMoney.ts.
+import type { CountryCode, Product } from "@/data/products";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import ProductCard from "./ProductCard";
 
-const MAX_SHOWN = 16;
 const SCROLL_STEP_PX = 480;
+
+interface PriceDropsSectionProps {
+  // Pool deduplicado de productos que aparecen en la lista de ALGÚN país
+  // (un mismo producto suele bajar de precio para varios países a la
+  // vez), más los ids en orden ya para el país actual -- así el payload
+  // no repite el mismo Product completo una vez por país.
+  dropProducts: Product[];
+  dropIdsByCountry: Partial<Record<CountryCode, string[]>>;
+}
 
 // "Mercado de Pases" -- las camisetas cuya mejor oferta bajó de precio
 // desde el snapshot diario anterior (ver track_price_drops.py). Vive
 // en la home, fuera de SearchExplorer a propósito: no depende de los
 // filtros/búsqueda que el usuario esté usando en el catálogo, siempre
 // muestra el mismo destacado.
-export default function PriceDropsSection() {
+export default function PriceDropsSection({ dropProducts, dropIdsByCountry }: PriceDropsSectionProps) {
   const { countryCode } = useCountry();
   const { t } = useLanguage();
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -24,17 +39,10 @@ export default function PriceDropsSection() {
   }
 
   const drops = useMemo(() => {
-    return products
-      .filter((p) => productPriceDropped(p, countryCode))
-      .sort((a, b) => {
-        const bestA = bestOfferForCountry(a, countryCode);
-        const bestB = bestOfferForCountry(b, countryCode);
-        const dropA = bestA ? priceDropPercent(bestA) : 0;
-        const dropB = bestB ? priceDropPercent(bestB) : 0;
-        return dropB - dropA;
-      })
-      .slice(0, MAX_SHOWN);
-  }, [countryCode]);
+    const byId = new Map(dropProducts.map((p) => [p.id, p]));
+    const ids = dropIdsByCountry[countryCode] ?? [];
+    return ids.map((id) => byId.get(id)).filter((p): p is Product => !!p);
+  }, [dropProducts, dropIdsByCountry, countryCode]);
 
   if (drops.length === 0) return null;
 
