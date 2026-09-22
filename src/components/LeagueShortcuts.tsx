@@ -28,7 +28,10 @@ export default function LeagueShortcuts() {
     <section aria-label={s.browseLeagues} className="mx-auto w-full max-w-[1800px] px-4 pt-6 sm:px-8">
       <div className="flex items-baseline justify-between gap-4">
         <h2 className="font-vintage text-xl text-[#1B3B2B] sm:text-2xl">{s.browseLeagues}</h2>
-        <Link href="/ligas" className="shrink-0 text-sm font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#8a6a1f]">
+        <Link
+          href="/ligas"
+          className="shrink-0 rounded-full border border-[#C9A24B]/50 bg-[#fffdf8] px-3 py-1.5 text-sm font-semibold text-[#1B3B2B] transition-colors hover:border-[#C9A24B] hover:bg-[#f6efdd] hover:text-[#8a6a1f]"
+        >
           {s.leaguesIndex} →
         </Link>
       </div>
