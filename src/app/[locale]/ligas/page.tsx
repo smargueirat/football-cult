@@ -4,7 +4,7 @@ import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { leagueTeams, teamItems, teamName } from "@/lib/hubs";
 import { SEASON_UI } from "@/lib/seasonStrings";
 import { priceDrops, seasonItems, seasonList, seasonSlug } from "@/lib/seasonHubs";
-import { COUNTRY_SLUGS, LEAGUES, leagueName } from "@/data/teamMeta";
+import { COUNTRY_FLAGS, COUNTRY_SLUGS, LEAGUES, leagueName } from "@/data/teamMeta";
 import { Crumbs, HubHeader, JsonLd, LinkChips, Section } from "@/components/hubs/HubParts";
 
 export const revalidate = 86400;
@@ -50,6 +50,7 @@ export default async function LeaguesIndex({ params }: P) {
           items={countries.map(({ c, name }) => ({
             href: `/${locale}/pais/${c}`,
             name,
+            flag: COUNTRY_FLAGS[c],
             count: [c, ...LEAGUES.filter((l) => l.country === c).flatMap((l) => leagueTeams(l.slug))].reduce((a, k) => a + teamItems(k).length, 0),
           }))}
         />

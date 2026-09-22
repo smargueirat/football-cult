@@ -106,6 +106,8 @@ export interface TeamLink {
   name: string;
   count: number;
   price?: string;
+  /** Emoji de bandera (solo países, ver COUNTRY_FLAGS en teamMeta.ts). Ligas/equipos no llevan: no hay escudo con licencia en el repo. */
+  flag?: string;
 }
 
 export function TeamLinks({ items, locale, countLabel }: { items: TeamLink[]; locale: HubLocale; countLabel?: (n: number) => string }) {
@@ -141,7 +143,11 @@ export function LinkChips({ items, locale, countLabel }: { items: TeamLink[]; lo
       {items.map((t) => (
         <li key={t.href}>
           <Link href={t.href} className="vintage-card flex h-full flex-col justify-between gap-2 rounded-2xl px-4 py-3.5">
-            <span className="text-sm font-semibold leading-snug text-[#1B3B2B]">{t.name}</span>
+            <span className="font-vintage text-sm leading-snug text-[#1B3B2B]">
+              {t.flag ? <span aria-hidden="true">{t.flag} </span> : null}
+              {t.name}
+            </span>
+            <div className="vintage-divider" />
             <span className="text-xs text-[#675c44]">
               {(countLabel ?? s.jerseysCount)(t.count)}
               {t.price ? ` · ${s.from} ${t.price}` : ""}
