@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/lib/i18n/LocaleLink";
+import BackToCatalogLink from "./BackToCatalogLink";
 import { HUB } from "@/lib/hubStrings";
 import { useEffect, useMemo, useState } from "react";
 import { addRecentlyViewed } from "@/lib/recentlyViewed";
@@ -239,15 +240,7 @@ export default function JerseyDetailClient({
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10 pb-28 lg:pb-10">
-      <Link
-        href="/"
-        className="mb-6 inline-flex items-center gap-1.5 text-sm text-[#5b5b57] transition-colors hover:text-[#1a1a1a]"
-      >
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-        {t.detail.backToCatalog}
-      </Link>
+      <BackToCatalogLink className="mb-6 inline-flex items-center gap-1.5 text-sm text-[#5b5b57] transition-colors hover:text-[#1a1a1a]" />
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         {/* Left: showcase */}

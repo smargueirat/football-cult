@@ -1,13 +1,14 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import Link from "@/lib/i18n/LocaleLink";
+import { useEffect, useMemo, useState } from "react";
+import BackToCatalogLink from "./BackToCatalogLink";
 import GearCard from "./GearCard";
 import Chip from "./Chip";
 import ScrollArrowRow from "./ScrollArrowRow";
 import FilterSheet from "./FilterSheet";
 import SortDropdown from "./SortDropdown";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { markCatalogVisited } from "@/lib/search/catalogVisit";
 
 // Variante de GearListClient para ropa: misma UI (grilla + búsqueda +
 // filtros de Tipo/Marca/Talla/Color, reusando GearCard/FilterSheet/
@@ -75,6 +76,10 @@ export default function ApparelListClient({
   const [sizeFilter, setSizeFilter] = useState("");
   const [colourFilter, setColourFilter] = useState("");
 
+  useEffect(() => {
+    markCatalogVisited();
+  }, []);
+
   const typeLabel = (ty: ApparelType) => t.ropa.types[ty];
   const activeFilterCount = [typeFilter, brandFilter, sizeFilter, colourFilter].filter(Boolean).length;
   function clearAllFilters() {
@@ -128,15 +133,7 @@ export default function ApparelListClient({
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
-      <Link
-        href="/"
-        className="mb-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#675c44] transition-colors hover:text-[#1B3B2B]"
-      >
-        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-        {t.detail.backToCatalog}
-      </Link>
+      <BackToCatalogLink />
       <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{pageTitle}</h1>
       <p className="mt-1 text-sm text-[#675c44]">{pageSubtitle.replace("{n}", String(items.length))}</p>
 

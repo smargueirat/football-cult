@@ -47,6 +47,7 @@ import {
   SectionKey,
   useSearchFilter,
 } from "@/lib/search/SearchFilterContext";
+import { markCatalogVisited } from "@/lib/search/catalogVisit";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH, bootColorKey, productColorKey } from "@/lib/colorClassify";
 import PriceRangeSlider from "./PriceRangeSlider";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -191,6 +192,13 @@ export default function SearchExplorer({
     document.addEventListener("keydown", handleEscape);
     return () => document.removeEventListener("keydown", handleEscape);
   }, [filtersOpen, sortOpen]);
+
+  // Marca que esta pestaña pasó por una página de catálogo -- ver
+  // catalogVisit.ts. Cubre home, /clubes, /selecciones, /retro, /mujer,
+  // /ninos y /botas de una sola vez (todas montan este componente).
+  useEffect(() => {
+    markCatalogVisited();
+  }, []);
 
   // El input sigue atado a `query` (así el texto tipeado no se atrasa
   // nunca), pero el filtro pesado de abajo -- recorre las 5500+ camisetas
@@ -685,7 +693,7 @@ export default function SearchExplorer({
           página (home): en una página de categoría dedicada, tocar esto
           no tendría ningún efecto visible, así que ni se muestra. */}
       {forcedSection === undefined && (
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2">
         {(
             [
               { key: "all" as const, label: t.botas.sectionAll },
@@ -704,6 +712,32 @@ export default function SearchExplorer({
             >
               {opt.label}
             </button>
+          ))}
+          {/* Guantes/Pelotas/Ropa/Tickets NO se pueden filtrar in-place acá
+              -- son catálogos propios (varios MB cada uno) que ya tienen su
+              propia página con filtros correctos para ese tipo de producto
+              (talle de guante, no de camiseta, etc.). Cargarlos enteros acá
+              solo para que aparezcan como una sección más reintroduciría el
+              bug de bundle gigante que se acaba de arreglar (ver
+              SearchExplorer/boots.ts). En vez de eso, mismo look de chip
+              pero un <Link> real a esa página -- el picker de sección lee
+              como un solo control aunque unas opciones filtren en el lugar
+              y otras naveguen. */}
+          {(
+            [
+              { href: SECTION_PATHS[6], label: t.guantes.navLabel },
+              { href: SECTION_PATHS[7], label: t.pelotas.navLabel },
+              { href: SECTION_PATHS[9], label: t.ropa.navLabel },
+              { href: SECTION_PATHS[8], label: t.tickets.navLabel },
+            ]
+          ).map((opt) => (
+            <Link
+              key={opt.href}
+              href={opt.href}
+              className="rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-1.5 text-xs font-semibold text-[#675c44] transition-colors hover:border-[#1B3B2B]/40"
+            >
+              {opt.label}
+            </Link>
           ))}
       </div>
       )}
