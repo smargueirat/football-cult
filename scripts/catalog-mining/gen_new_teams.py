@@ -72,6 +72,15 @@ def gen(picks_path, store_name, currency, out_path):
                 print("SKIP (no metadata found):", key)
                 continue
             c1, c2 = fallback
+        if not (d.get("image") or "").strip():
+            # sin foto real la card sale como caja beige vacía (pedido
+            # explícito del usuario, 2026-09-22) -- normalmente ya se
+            # filtró en split_picks.py, pero este generador también se
+            # invoca a mano contra picks crudos (ver README), así que se
+            # repite acá: producto nace con una sola oferta, sin foto se
+            # descarta entero.
+            print(f"SKIP (no image): {key}")
+            continue
         season = detect_season(d["title"])
         sizes_ts = ", ".join(f'"{s}"' for s in d["sizes"])
         pid = f"{team}-{typ}-{season.replace('/', '')}"

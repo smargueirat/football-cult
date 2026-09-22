@@ -74,6 +74,13 @@ def gen(picks_path, store_name, currency, out_path):
         if not colors:
             print(f"SKIP (no color metadata found): {key}")
             continue
+        if not (d.get("image") or "").strip():
+            # sin foto real la card sale como caja beige vacía (pedido
+            # explícito del usuario, 2026-09-22) -- este producto nace con
+            # una sola oferta, así que sin foto se descarta el producto
+            # entero (mismo criterio que el resto de este loop).
+            print(f"SKIP (no image): {key}")
+            continue
         c1, c2 = colors
         sizes_ts = ", ".join(f'"{s}"' for s in d["sizes"])
         pid = f"{team}-{typ}-kids"

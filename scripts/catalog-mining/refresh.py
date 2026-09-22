@@ -103,6 +103,16 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
             new_blocks.append(block)
             continue
         d = picks[key]
+        if not (d.get("image") or "").strip():
+            # sin foto real la card sale como caja beige vacía (pedido
+            # explícito del usuario, 2026-09-22) -- normalmente ya se
+            # filtró en split_picks.py, pero refresh.py también se llama
+            # directo con picks sin pasar por ahí (ej. kids_picks.json vía
+            # --kids en el scan diario), así que se repite acá: no se
+            # inserta/reemplaza esta oferta puntual, el resto del bloque
+            # (producto + otras ofertas) queda intacto.
+            new_blocks.append(block)
+            continue
         sizes_ts = ", ".join(f'"{s}"' for s in d["sizes"])
         price = d["price"]
         shipping = d["shipping"]
