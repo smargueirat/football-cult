@@ -30,8 +30,8 @@ export function useAnchoredDropdown(
       });
     }
     measure();
-    window.addEventListener("resize", measure);
-    window.addEventListener("scroll", measure, true);
+    window.addEventListener("resize", measure, { passive: true });
+    window.addEventListener("scroll", measure, { passive: true, capture: true });
     return () => {
       window.removeEventListener("resize", measure);
       window.removeEventListener("scroll", measure, true);

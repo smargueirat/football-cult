@@ -110,7 +110,7 @@ export default function JerseyGallery({
               type="button"
               onClick={() => goTo(i)}
               aria-label={`Ver foto ${i + 1}`}
-              className={`h-1.5 rounded-full transition-all ${
+              className={`h-1.5 rounded-full transition-colors ${
                 i === index ? "w-5 bg-[#1B3B2B]" : "w-1.5 bg-[#C9A24B]/40"
               }`}
             />

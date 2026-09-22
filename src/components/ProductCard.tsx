@@ -105,7 +105,7 @@ export default function ProductCard({ product }: { product: Product }) {
       onMouseEnter={handlePrefetchPhoto}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
-      className="vintage-card group flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-200 hover:-translate-y-0.5"
+      className="vintage-card group flex h-full flex-col overflow-hidden rounded-2xl hover:-translate-y-0.5"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
@@ -134,7 +134,7 @@ export default function ProductCard({ product }: { product: Product }) {
               decoding="async"
               onLoad={() => setImageLoaded(true)}
               onError={() => setImageLoaded(true)}
-              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-all duration-300 group-hover:scale-105 ${
+              className={`absolute inset-0 h-full w-full object-contain drop-shadow-sm transition-transform transition-opacity duration-300 group-hover:scale-105 ${
                 imageLoaded ? "opacity-100" : "opacity-0"
               }`}
             />

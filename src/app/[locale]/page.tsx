@@ -1,4 +1,4 @@
-import SearchExplorer from "@/components/SearchExplorer";
+import LazySearchExplorer from "@/components/LazySearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
 import HeroCarousel from "@/components/HeroCarousel";
 import CategorySections from "@/components/CategorySections";
@@ -79,7 +79,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         {/* Search + results: mezcla de todo por defecto (camisetas y
             botas, ordenadas por relevancia), con filtros para acotar. */}
         <section id="catalogo" className="mx-auto w-full max-w-[1800px] flex-1 scroll-mt-20 px-4 pb-24 pt-6 sm:px-8">
-          <SearchExplorer />
+          <LazySearchExplorer />
         </section>
 
         {/* Steps */}

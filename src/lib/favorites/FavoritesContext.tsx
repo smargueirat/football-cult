@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useEffect, useRef, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
 import FavoritesSignInModal from "@/components/FavoritesSignInModal";
 import { resolveProductId } from "@/data/productAliases";
@@ -94,8 +94,18 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
     return favorites.some((f) => f === id || resolveProductId(f) === id);
   }
 
+  // useMemo: sin esto, cada render de FavoritesProvider (ej. useSession()
+  // devolviendo un objeto session nuevo aunque el usuario no tocó nada)
+  // crea un `value` con identidad nueva, forzando a re-renderizar a TODOS
+  // los que consumen useFavorites() -- cada ProductCard3D/BootCard/etc.
+  // visible en el catálogo -- aunque `favorites` no haya cambiado.
+  const value = useMemo(
+    () => ({ favorites, toggleFavorite, isFavorite }),
+    [favorites, status, update]
+  );
+
   return (
-    <FavoritesContext.Provider value={{ favorites, toggleFavorite, isFavorite }}>
+    <FavoritesContext.Provider value={value}>
       {children}
       {showSignIn && <FavoritesSignInModal onClose={() => setShowSignIn(false)} />}
     </FavoritesContext.Provider>

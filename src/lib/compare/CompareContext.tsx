@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useMemo, useState } from "react";
 
 const STORAGE_KEY = "football-cult-compare";
 const MAX_COMPARE = 3;
@@ -78,19 +78,22 @@ export function CompareProvider({ children }: { children: ReactNode }) {
     persist([]);
   }
 
-  return (
-    <CompareContext.Provider
-      value={{
-        compareList,
-        toggleCompare,
-        isComparing,
-        clearCompare,
-        maxReached: compareList.length >= MAX_COMPARE,
-      }}
-    >
-      {children}
-    </CompareContext.Provider>
+  // useMemo por el mismo motivo que FavoritesContext.tsx: sin esto, cada
+  // toggle de comparar re-renderiza (por identidad de `value` nueva) a
+  // TODAS las cards montadas que llaman useCompare(), no solo la que
+  // cambió.
+  const value = useMemo(
+    () => ({
+      compareList,
+      toggleCompare,
+      isComparing,
+      clearCompare,
+      maxReached: compareList.length >= MAX_COMPARE,
+    }),
+    [compareList]
   );
+
+  return <CompareContext.Provider value={value}>{children}</CompareContext.Provider>;
 }
 
 export function useCompare() {

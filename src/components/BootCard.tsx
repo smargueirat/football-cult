@@ -66,7 +66,7 @@ export default function BootCard({
       href={`/botas/${boot.id}`}
       onMouseEnter={handlePrefetchPhoto}
       onTouchStart={handlePrefetchPhoto}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] shadow-[0_14px_28px_-10px_rgba(43,32,10,0.45)] transition-transform duration-150 ease-out hover:-translate-y-0.5"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] shadow-[0_14px_28px_-10px_rgba(43,32,10,0.45)] transition-transform duration-150 ease-out hover:-translate-y-0.5 [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"

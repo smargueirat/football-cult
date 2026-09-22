@@ -442,7 +442,7 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
 
       <button
         onClick={() => setPinnedOpen((o) => !o)}
-        className="shadow-vintage-md relative flex h-12 w-12 items-center justify-center rounded-full border border-black/[0.08] bg-[#FFFDF8]/[0.82] text-[#1a1a1a] backdrop-blur-[8px] transition-all hover:scale-105 md:h-14 md:w-auto md:gap-2.5 md:border-2 md:border-[#1B3B2B] md:bg-[#1B3B2B] md:px-6 md:text-[#F3E9C9] md:shadow-[0_14px_34px_-8px_rgba(27,59,43,0.55)] md:hover:bg-[#15301f]"
+        className="shadow-vintage-md relative flex h-12 w-12 items-center justify-center rounded-full border border-black/[0.08] bg-[#FFFDF8]/[0.82] text-[#1a1a1a] backdrop-blur-[8px] transition-transform transition-colors hover:scale-105 md:h-14 md:w-auto md:gap-2.5 md:border-2 md:border-[#1B3B2B] md:bg-[#1B3B2B] md:px-6 md:text-[#F3E9C9] md:shadow-[0_14px_34px_-8px_rgba(27,59,43,0.55)] md:hover:bg-[#15301f]"
         aria-label={t.search.typeLabel}
       >
         <svg className="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

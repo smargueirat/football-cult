@@ -750,7 +750,7 @@ export default function SearchExplorer({
           {visibleCount < catalogItems.length && (
             <button
               onClick={() => setVisibleCount((c) => c + CATALOG_PAGE_SIZE)}
-              className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] shadow-vintage-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-[#1B3B2B]/40 active:scale-95"
+              className="mx-auto flex items-center justify-center gap-2 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-6 py-3 text-sm font-medium text-[#1a1a1a] shadow-vintage-sm transition-transform transition-colors duration-150 hover:-translate-y-0.5 hover:border-[#1B3B2B]/40 active:scale-95"
             >
               {t.search.loadMore} ({catalogItems.length - visibleCount})
             </button>

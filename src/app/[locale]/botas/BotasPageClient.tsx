@@ -1,9 +1,21 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "@/lib/i18n/LocaleLink";
 import { bootProducts } from "@/data/boots";
-import SearchExplorer from "@/components/SearchExplorer";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+
+// A diferencia del home (donde SearchExplorer es una sección más, ver
+// LazySearchExplorer.tsx), acá ES el contenido principal de la página --
+// no tiene sentido esconderlo detrás de un gate de scroll. dynamic() sin
+// ssr:false igual code-splitea el catálogo (~1.1MB) a un chunk propio en
+// vez de inflar el bundle de esta página, pero mantiene el SSR (el HTML
+// servido ya trae el catálogo real, así que SEO/LCP no se resienten) --
+// el `loading` solo se llegaría a ver en una navegación client-side, no
+// en la carga inicial con HTML ya renderizado.
+const SearchExplorer = dynamic(() => import("@/components/SearchExplorer"), {
+  loading: () => <div className="h-16 w-full animate-pulse rounded-2xl bg-[#f6efdd]" />,
+});
 
 // Antes: grid propio, sin buscador ni filtros -- viable con 71 modelos,
 // roto con los ~1740 actuales (pedido explícito del usuario: "hay que

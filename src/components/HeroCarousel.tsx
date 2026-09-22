@@ -236,7 +236,7 @@ export default function HeroCarousel() {
               goTo(i);
             }}
             aria-label={`Ver sección ${i + 1}`}
-            className={`h-1.5 rounded-full transition-all ${
+            className={`h-1.5 rounded-full transition-colors ${
               i === active ? "w-5 bg-[#E7C567]" : "w-1.5 bg-[#F3E9C9]/35"
             }`}
           />
