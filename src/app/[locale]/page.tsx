@@ -1,15 +1,61 @@
-"use client";
-
 import SearchExplorer from "@/components/SearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
 import HeroCarousel from "@/components/HeroCarousel";
 import CategorySections from "@/components/CategorySections";
 import PriceDropsSection from "@/components/PriceDropsSection";
 import LeagueShortcuts from "@/components/LeagueShortcuts";
-import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { translations } from "@/lib/i18n/translations";
+import { countries, type CountryCode } from "@/data/countries";
+import {
+  SEASONS,
+  bestOfferForCountry,
+  priceDropPercent,
+  products,
+  productPriceDropped,
+  type Product,
+} from "@/data/products";
 
-export default function Home() {
-  const { t } = useLanguage();
+const MAX_DROPS_SHOWN = 16;
+
+// Este archivo es un server component a propósito (SIN "use client") --
+// products.ts es el catálogo completo (5.9MB/76 mil líneas) y antes
+// FloatingFilterButton y PriceDropsSection lo importaban cada uno por su
+// cuenta desde el cliente (SEASONS, brandNames, `products` en vivo, etc.),
+// arrastrando ese archivo entero al bundle del home aunque SearchExplorer
+// (que sí necesita el catálogo para buscar) ya lo trae. Acá, en cambio,
+// esos cómputos corren una sola vez en el servidor (esta página es SSG) y
+// bajan al cliente ya resueltos como props -- mismo patrón documentado en
+// src/lib/offerMoney.ts y src/lib/productMeta.ts.
+function computePriceDrops() {
+  const byId = new Map<string, Product>();
+  const dropIdsByCountry: Partial<Record<CountryCode, string[]>> = {};
+
+  for (const country of countries) {
+    const ranked = products
+      .filter((p) => productPriceDropped(p, country.code))
+      .sort((a, b) => {
+        const bestA = bestOfferForCountry(a, country.code);
+        const bestB = bestOfferForCountry(b, country.code);
+        const dropA = bestA ? priceDropPercent(bestA) : 0;
+        const dropB = bestB ? priceDropPercent(bestB) : 0;
+        return dropB - dropA;
+      })
+      .slice(0, MAX_DROPS_SHOWN);
+
+    if (ranked.length === 0) continue;
+    dropIdsByCountry[country.code] = ranked.map((p) => p.id);
+    for (const p of ranked) byId.set(p.id, p);
+  }
+
+  return { dropProducts: Array.from(byId.values()), dropIdsByCountry };
+}
+
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: rawLocale } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
+  const t = translations[locale];
+  const { dropProducts, dropIdsByCountry } = computePriceDrops();
 
   return (
     <>
@@ -28,7 +74,7 @@ export default function Home() {
 
         <LeagueShortcuts />
 
-        <PriceDropsSection />
+        <PriceDropsSection dropProducts={dropProducts} dropIdsByCountry={dropIdsByCountry} />
 
         {/* Search + results: mezcla de todo por defecto (camisetas y
             botas, ordenadas por relevancia), con filtros para acotar. */}
@@ -58,7 +104,7 @@ export default function Home() {
         </section>
       </div>
 
-      <FloatingFilterButton />
+      <FloatingFilterButton seasons={SEASONS} />
     </>
   );
 }
