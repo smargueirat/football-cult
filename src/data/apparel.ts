@@ -1836,7 +1836,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 40.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529354182&a=3013769&m=65912",
@@ -1859,24 +1859,6 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43780404465&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jy7982_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=1783cf43dfdff6d9353d67bea4cc586daded656d",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "adidas-bolsa-de-deporte-grande-adidas-tiro-league-bleu",
-    brand: "adidas",
-    model: "Bolsa de deporte grande adidas Tiro League - Bleu",
-    colour: "Bleu",
-    type: "bag",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 32.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46037716280&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ib8652_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=759ee73e59277bb3905e75ae8c7cb0148a839fe3",
         sizes: [],
       },
     ],
@@ -1906,6 +1888,15 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
     colour: "Bleu",
     type: "bag",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 38.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061452876&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ib8657_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=d220270d7888e249e18ad0055e6fe78ca4b85865",
+        sizes: [],
+      },
       {
         store: "FootStoreES",
         price: 45.0,
@@ -3075,7 +3066,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.0,
+        price: 16.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40714959379&a=3013769&m=65912",
@@ -3359,11 +3350,19 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 18.0,
+        priceMax: 19.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923951582&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ib7797_1_hardware_photography_side_center_view_white.webp&feedId=89032&k=896539673c6774d1bdaf34c9241c9c339c21aa57",
         sizes: ["34/36", "37/39", "40/42", "43/45", "46/48"],
+        sizePrices: [
+          { size: "34/36", price: 18.0, url: "https://www.awin1.com/pclick.php?p=37923951582&a=3013769&m=65912" },
+          { size: "37/39", price: 18.0, url: "https://www.awin1.com/pclick.php?p=37923951583&a=3013769&m=65912" },
+          { size: "40/42", price: 18.0, url: "https://www.awin1.com/pclick.php?p=37923951584&a=3013769&m=65912" },
+          { size: "43/45", price: 18.0, url: "https://www.awin1.com/pclick.php?p=37923951585&a=3013769&m=65912" },
+          { size: "46/48", price: 19.0, url: "https://www.awin1.com/pclick.php?p=37923951586&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -3950,7 +3949,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44023883498&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_is8004_1_hardware_photography_side_center_view_white.webp&feedId=89032&k=8b7f3b1f1765094f1ac30ae66f014e099cc27496",
-        sizes: ["37/39", "43/46", "47/49"],
+        sizes: ["37/39", "47/49"],
       },
     ],
   },
@@ -4044,9 +4043,6 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk2: ApparelProduct[] = [
   {
     id: "adidas-camiseta-adidas-copa-graphic-noir",
     brand: "adidas",
@@ -4065,6 +4061,9 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk2: ApparelProduct[] = [
   {
     id: "adidas-camiseta-adidas-entrada-22-blanc",
     brand: "adidas",
@@ -4577,6 +4576,24 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-adidas-tiro-24-bleu",
+    brand: "adidas",
+    model: "Camiseta adidas Tiro 24 - Bleu",
+    colour: "Bleu",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 32.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45931729986&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ir9347_1_apparel_photography_front_view_white.webp&feedId=89032&k=4ea92cf68cb74f1acbe7b361c66189abedded665",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-adidas-tiro-25-gris",
     brand: "adidas",
     model: "Camiseta adidas Tiro 25 - Gris",
@@ -4855,25 +4872,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526321980&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_kb4438_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=e632e4530a6ac23694c983274001f3823fd2d1dc",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-alemania-tiro-coupe-du-monde-2026-rouge",
-    brand: "adidas",
-    model: "Camiseta Alemania Tiro Coupe du Monde 2026 - Rouge",
-    colour: "Rouge",
-    type: "tshirt",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45533542587&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_kb4437_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=2a1b042bfd8e9f7ac2cc7c4a095261ba427286ae",
-        sizes: ["XL"],
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -5198,19 +5197,11 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 36.0,
-        priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44769215049&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz3060_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=ebd352883478e239a2b8f0ad34b828588ae901f1",
-        sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 36.0, url: "https://www.awin1.com/pclick.php?p=44769215053&a=3013769&m=65912" },
-          { size: "M", price: 36.0, url: "https://www.awin1.com/pclick.php?p=44769215052&a=3013769&m=65912" },
-          { size: "L", price: 36.0, url: "https://www.awin1.com/pclick.php?p=44769215050&a=3013769&m=65912" },
-          { size: "XL", price: 36.0, url: "https://www.awin1.com/pclick.php?p=44769215049&a=3013769&m=65912" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=44769215055&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "SportIsGoodES",
@@ -5670,12 +5661,20 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 70.0,
+        price: 69.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695074303&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iy0120_1_apparel_photography_front_view_white.webp&feedId=89032&k=f75664ddb6889b85193b2cbc21cb87c269ee77d9",
         sizes: ["XS", "S", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 69.0, url: "https://www.awin1.com/pclick.php?p=44695074303&a=3013769&m=65912" },
+          { size: "S", price: 70.0, url: "https://www.awin1.com/pclick.php?p=38434580481&a=3013769&m=65912" },
+          { size: "XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=38434580484&a=3013769&m=65912" },
+          { size: "2XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=38434580485&a=3013769&m=65912" },
+          { size: "3XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=40856601602&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -5770,6 +5769,24 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-de-manga-larga-adidas-techfit-aeroready-bleu",
+    brand: "adidas",
+    model: "Camiseta de manga larga adidas Techfit Aeroready - Bleu",
+    colour: "Bleu",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 38.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44406808205&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_im8540_1_apparel_photography_front_view_white.webp&feedId=89032&k=23a0117a6416708a8ad17dbf12a8eaeac2592dda",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-de-manga-larga-adidas-techfit-blanc",
     brand: "adidas",
     model: "Camiseta de manga larga adidas Techfit - Blanc",
@@ -5788,17 +5805,11 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44645280380&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44645280379&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2F2%2Fh23121_app_photo_front-center_white.webp&feedId=89032&k=8bcb82002d4170264e65669349864e52a5d82cd9",
         sizes: ["L", "XL", "2XL"],
-        sizePrices: [
-          { size: "L", price: 46.0, url: "https://www.awin1.com/pclick.php?p=44645280379&a=3013769&m=65912" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=44645280380&a=3013769&m=65912" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=44686635389&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreES",
@@ -5866,10 +5877,19 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
   {
     id: "adidas-camiseta-de-manga-larga-adidas-techfit-cold-rdy-bleu",
     brand: "adidas",
-    model: "Camiseta de manga larga adidas Techfit Cold.rdy - Bleu",
+    model: "Camiseta de manga larga adidas Techfit Cold.Rdy - Bleu",
     colour: "Bleu",
     type: "tshirt",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 50.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44406808207&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_im8614_tenabl_1.webp&feedId=89032&k=d59b12bb328666fb43e270d6f797e16b3f147aa8",
+        sizes: ["3XL"],
+      },
       {
         store: "FootStoreES",
         price: 48.0,
@@ -6180,6 +6200,24 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-de-mujer-alemania-travel-euro-femenino-2022-bleu",
+    brand: "adidas",
+    model: "Camiseta de mujer Alemania Travel Euro femenino 2022 - Bleu",
+    colour: "Bleu",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 55.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43219394804&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fr%2Fgr0524_1_apparel_photography_front+view_white.webp&feedId=89032&k=af8d8bef0f1efca65e6eda5ff0b33498c42b69de",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-espagne-euro-2024-blanc",
     brand: "adidas",
     model: "Camiseta Espagne Euro 2024 - Blanc",
@@ -6390,7 +6428,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526318685&a=3013769&m=65912",
@@ -6471,7 +6509,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 39.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529803963&a=3013769&m=65912",
@@ -6480,7 +6518,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529803959&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529803960&a=3013769&m=65912" },
-          { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529803961&a=3013769&m=65912" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529803961&a=3013769&m=65912" },
           { size: "XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529803962&a=3013769&m=65912" },
           { size: "2XL", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42529803963&a=3013769&m=65912" },
         ],
@@ -6628,24 +6666,6 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-camiseta-juventus-turin-dna-2024-25-noir",
-    brand: "adidas",
-    model: "Camiseta Juventus Turin Dna 2024/25 - Noir",
-    colour: "Noir",
-    type: "tshirt",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 33.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45270278078&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iy4120_1_apparel_photography_front_view_white.webp&feedId=89032&k=80c0ee475f2a63a47440fef85aab7fc29d4129c9",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-camiseta-juventus-turin-graphic-2024-25-blanc",
     brand: "adidas",
     model: "Camiseta Juventus Turin Graphic 2024/25 - Blanc",
@@ -6654,7 +6674,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42565880340&a=3013769&m=65912",
@@ -6672,7 +6692,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 28.0,
         priceMax: 36.0,
         shipping: 7.99,
         currency: "EUR",
@@ -6680,9 +6700,9 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it3850_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=a717ef4a485d032e3076992522275206eb504451",
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
-          { size: "S", price: 29.0, url: "https://www.awin1.com/pclick.php?p=42565880339&a=3013769&m=65912" },
-          { size: "M", price: 29.0, url: "https://www.awin1.com/pclick.php?p=42565880338&a=3013769&m=65912" },
-          { size: "L", price: 29.0, url: "https://www.awin1.com/pclick.php?p=42565880337&a=3013769&m=65912" },
+          { size: "S", price: 28.0, url: "https://www.awin1.com/pclick.php?p=42565880339&a=3013769&m=65912" },
+          { size: "M", price: 28.0, url: "https://www.awin1.com/pclick.php?p=42565880338&a=3013769&m=65912" },
+          { size: "L", price: 28.0, url: "https://www.awin1.com/pclick.php?p=42565880337&a=3013769&m=65912" },
           { size: "2XL", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42565880336&a=3013769&m=65912" },
         ],
       },
@@ -6799,9 +6819,9 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 40.62,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45152999840&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45302526440&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ib7013_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=fa1ffa89c1a3cc7ab52672ebd26e7e3f792fc3fa",
-        sizes: ["XS", "L", "XL"],
+        sizes: ["XS", "L"],
       },
       {
         store: "SportIsGoodES",
@@ -6914,15 +6934,6 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398898060&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kq8159_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=64147514b050905deaa567e76721473b0b81a459",
-        sizes: ["L"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 36.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45404248965&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kq8159_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=64147514b050905deaa567e76721473b0b81a459",
         sizes: ["L"],
       },
     ],
@@ -7063,14 +7074,14 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 24.0,
-        priceMax: 27.0,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40309087338&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_gk9088_1_apparel_photography_front_view_white-nw040724.webp&feedId=89032&k=f500d322f5f488c043c68609c138d6c039e6c6db",
         sizes: ["M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "M", price: 27.0, url: "https://www.awin1.com/pclick.php?p=45010067588&a=3013769&m=65912" },
+          { size: "M", price: 26.0, url: "https://www.awin1.com/pclick.php?p=45010067588&a=3013769&m=65912" },
           { size: "L", price: 24.0, url: "https://www.awin1.com/pclick.php?p=40309087338&a=3013769&m=65912" },
           { size: "XL", price: 24.0, url: "https://www.awin1.com/pclick.php?p=37923877046&a=3013769&m=65912" },
           { size: "2XL", price: 24.0, url: "https://www.awin1.com/pclick.php?p=37923877047&a=3013769&m=65912" },
@@ -7575,14 +7586,14 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 63.75,
-        priceMax: 85.0,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45234289081&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kb1825_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=777c9bd1820f6b9bd220dcd3f8fe0ac1374c519e",
         sizes: ["S", "3XL"],
         sizePrices: [
-          { size: "S", price: 85.0, url: "https://www.awin1.com/pclick.php?p=43348645314&a=3013769&m=65912" },
+          { size: "S", price: 84.0, url: "https://www.awin1.com/pclick.php?p=43348645314&a=3013769&m=65912" },
           { size: "3XL", price: 63.75, url: "https://www.awin1.com/pclick.php?p=45234289081&a=3013769&m=65912" },
         ],
       },
@@ -7610,12 +7621,12 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45184776263&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45184776264&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kc0004-black-6a444da7ce63d-1.webp&feedId=89032&k=b8b16c5d52548dbb6731c1e11fbff9cb24c3d2de",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45184776262&a=3013769&m=65912" },
-          { size: "S", price: 83.0, url: "https://www.awin1.com/pclick.php?p=45184776263&a=3013769&m=65912" },
+          { size: "S", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45184776263&a=3013769&m=65912" },
           { size: "M", price: 83.0, url: "https://www.awin1.com/pclick.php?p=45184776264&a=3013769&m=65912" },
           { size: "L", price: 83.0, url: "https://www.awin1.com/pclick.php?p=45184776265&a=3013769&m=65912" },
           { size: "XL", price: 83.0, url: "https://www.awin1.com/pclick.php?p=45184776266&a=3013769&m=65912" },
@@ -7865,11 +7876,18 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 104.0,
+        priceMax: 130.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304861481&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kr6744-veraur-rossau-6a57581988a3f-1.webp&feedId=89032&k=528f47ea906e6d5bd188f4eaeb2a145bd497c5e2",
-        sizes: ["S", "XL"],
+        sizes: ["S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "S", price: 104.0, url: "https://www.awin1.com/pclick.php?p=45304861481&a=3013769&m=65912" },
+          { size: "M", price: 130.0, url: "https://www.awin1.com/pclick.php?p=45304861485&a=3013769&m=65912" },
+          { size: "L", price: 130.0, url: "https://www.awin1.com/pclick.php?p=45304861482&a=3013769&m=65912" },
+          { size: "XL", price: 104.0, url: "https://www.awin1.com/pclick.php?p=45304861484&a=3013769&m=65912" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -7928,20 +7946,20 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755753247&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kq9071_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=f4c4be740594ce2eb66b1e6444011e3203ddea21",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "XS", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755753245&a=3013769&m=65912" },
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755753246&a=3013769&m=65912" },
+          { size: "XS", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43755753245&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43755753246&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43755753247&a=3013769&m=65912" },
           { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43755753248&a=3013769&m=65912" },
-          { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755753249&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755753250&a=3013769&m=65912" },
-          { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755753251&a=3013769&m=65912" },
+          { size: "XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43755753249&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43755753250&a=3013769&m=65912" },
+          { size: "3XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43755753251&a=3013769&m=65912" },
         ],
       },
       {
@@ -8019,7 +8037,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568341&a=3013769&m=65912",
@@ -8056,20 +8074,20 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 91.0,
-        priceMax: 93.0,
+        priceMax: 92.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568363&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz6669_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=e3d6d8fe9eef55135fe27390b2dc7ee7a0156916",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568362&a=3013769&m=65912" },
+          { size: "XS", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568362&a=3013769&m=65912" },
           { size: "S", price: 91.0, url: "https://www.awin1.com/pclick.php?p=43705568363&a=3013769&m=65912" },
           { size: "M", price: 91.0, url: "https://www.awin1.com/pclick.php?p=43705568364&a=3013769&m=65912" },
           { size: "L", price: 91.0, url: "https://www.awin1.com/pclick.php?p=43705568365&a=3013769&m=65912" },
-          { size: "XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568366&a=3013769&m=65912" },
-          { size: "2XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568367&a=3013769&m=65912" },
-          { size: "3XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568368&a=3013769&m=65912" },
+          { size: "XL", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568366&a=3013769&m=65912" },
+          { size: "2XL", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568367&a=3013769&m=65912" },
+          { size: "3XL", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568368&a=3013769&m=65912" },
         ],
       },
     ],
@@ -8083,21 +8101,21 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 93.0,
+        price: 92.0,
         priceMax: 96.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43705568355&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43705568356&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz6668_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=0921378a60c01b20f0b48b7cf7411a60338def6c",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568355&a=3013769&m=65912" },
-          { size: "S", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568356&a=3013769&m=65912" },
-          { size: "M", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568357&a=3013769&m=65912" },
-          { size: "L", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568358&a=3013769&m=65912" },
+          { size: "S", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568356&a=3013769&m=65912" },
+          { size: "M", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568357&a=3013769&m=65912" },
+          { size: "L", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568358&a=3013769&m=65912" },
           { size: "XL", price: 96.0, url: "https://www.awin1.com/pclick.php?p=43705568359&a=3013769&m=65912" },
-          { size: "2XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568360&a=3013769&m=65912" },
-          { size: "3XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=43705568361&a=3013769&m=65912" },
+          { size: "2XL", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568360&a=3013769&m=65912" },
+          { size: "3XL", price: 92.0, url: "https://www.awin1.com/pclick.php?p=43705568361&a=3013769&m=65912" },
         ],
       },
     ],
@@ -8111,7 +8129,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44383399813&a=3013769&m=65912",
@@ -8317,7 +8335,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 45.0,
+        price: 44.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44263415337&a=3013769&m=65912",
@@ -8353,12 +8371,20 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 55.0,
+        price: 54.0,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510950816&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz9048_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=6ed033a358e81868f08073a3824e2583178690af",
         sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 54.0, url: "https://www.awin1.com/pclick.php?p=44510950816&a=3013769&m=65912" },
+          { size: "M", price: 54.0, url: "https://www.awin1.com/pclick.php?p=43890372953&a=3013769&m=65912" },
+          { size: "L", price: 54.0, url: "https://www.awin1.com/pclick.php?p=43705568378&a=3013769&m=65912" },
+          { size: "XL", price: 54.0, url: "https://www.awin1.com/pclick.php?p=43705568379&a=3013769&m=65912" },
+          { size: "2XL", price: 55.0, url: "https://www.awin1.com/pclick.php?p=43705568380&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -9105,16 +9131,11 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 34.0,
-        priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39857785423&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fi%2Fhi2135_app_photo_front-center_white_1645111588.webp&feedId=89032&k=626b854070259f6151c54d8bdea49c99f73dd232",
-        sizes: ["S", "M"],
-        sizePrices: [
-          { size: "S", price: 34.0, url: "https://www.awin1.com/pclick.php?p=39857785423&a=3013769&m=65912" },
-          { size: "M", price: 35.0, url: "https://www.awin1.com/pclick.php?p=37923917087&a=3013769&m=65912" },
-        ],
+        sizes: ["S"],
       },
     ],
   },
@@ -9127,7 +9148,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755753261&a=3013769&m=65912",
@@ -9137,7 +9158,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568698&a=3013769&m=65912",
@@ -9145,12 +9166,12 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705568698&a=3013769&m=65912" },
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568699&a=3013769&m=65912" },
-          { size: "M", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568700&a=3013769&m=65912" },
-          { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568701&a=3013769&m=65912" },
-          { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568702&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568703&a=3013769&m=65912" },
-          { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568704&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568699&a=3013769&m=65912" },
+          { size: "M", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568700&a=3013769&m=65912" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568701&a=3013769&m=65912" },
+          { size: "XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568702&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568703&a=3013769&m=65912" },
+          { size: "3XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568704&a=3013769&m=65912" },
         ],
       },
       {
@@ -9192,24 +9213,24 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568455&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz6587_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=57a9e36f07c7255da7f7f5b7243acdd4a69e359f",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568454&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568454&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705568455&a=3013769&m=65912" },
           { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705568456&a=3013769&m=65912" },
-          { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568457&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568458&a=3013769&m=65912" },
-          { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705568459&a=3013769&m=65912" },
+          { size: "XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568457&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568458&a=3013769&m=65912" },
+          { size: "3XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705568459&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568837&a=3013769&m=65912",
@@ -9227,7 +9248,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568709&a=3013769&m=65912",
@@ -9245,7 +9266,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705568686&a=3013769&m=65912",
@@ -9254,7 +9275,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44188999296&a=3013769&m=65912",
@@ -9273,16 +9294,16 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45995962555&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz6591_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=3ad160a939fb5eb885338e9d48f0a0676d6828d0",
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45081947778&a=3013769&m=65912" },
-          { size: "M", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45081947779&a=3013769&m=65912" },
-          { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45081947780&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45081947778&a=3013769&m=65912" },
+          { size: "M", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45081947779&a=3013769&m=65912" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45081947780&a=3013769&m=65912" },
           { size: "2XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=45995962555&a=3013769&m=65912" },
         ],
       },
@@ -9357,7 +9378,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 34.66,
+        price: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44284201338&a=3013769&m=65912",
@@ -9366,7 +9387,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodES",
-        price: 34.66,
+        price: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44284781067&a=3013769&m=65906",
@@ -9384,17 +9405,17 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 203.0,
+        price: 202.0,
         priceMax: 215.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44651309933&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44651309935&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kc1235_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=499c30ace7e81c13c7432fee18a416884529640f",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "S", price: 203.0, url: "https://www.awin1.com/pclick.php?p=44651309933&a=3013769&m=65912" },
           { size: "M", price: 215.0, url: "https://www.awin1.com/pclick.php?p=44651309934&a=3013769&m=65912" },
-          { size: "L", price: 203.0, url: "https://www.awin1.com/pclick.php?p=44651309935&a=3013769&m=65912" },
+          { size: "L", price: 202.0, url: "https://www.awin1.com/pclick.php?p=44651309935&a=3013769&m=65912" },
           { size: "XL", price: 203.0, url: "https://www.awin1.com/pclick.php?p=44651309936&a=3013769&m=65912" },
           { size: "2XL", price: 203.0, url: "https://www.awin1.com/pclick.php?p=45123525788&a=3013769&m=65912" },
           { size: "3XL", price: 203.0, url: "https://www.awin1.com/pclick.php?p=45123525789&a=3013769&m=65912" },
@@ -9411,7 +9432,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 26.0,
         priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
@@ -9419,7 +9440,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fp%2Fgp6474_app_photo_front_white.webp&feedId=89032&k=22e335748f05edda251979f6205a4877757408a9",
         sizes: ["XS", "S", "M", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529165849&a=3013769&m=65912" },
+          { size: "XS", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529165849&a=3013769&m=65912" },
           { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=42529165850&a=3013769&m=65912" },
           { size: "M", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529165851&a=3013769&m=65912" },
           { size: "XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=42529165853&a=3013769&m=65912" },
@@ -9882,7 +9903,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 45.0,
+        price: 44.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645279515&a=3013769&m=65912",
@@ -10502,7 +10523,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.0,
+        price: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444987268&a=3013769&m=65912",
@@ -11038,7 +11059,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 71.0,
+        price: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41485388129&a=3013769&m=65912",
@@ -11723,7 +11744,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         sizes: ["XS", "S", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 69.0, url: "https://www.awin1.com/pclick.php?p=45361884332&a=3013769&m=65912" },
-          { size: "S", price: 69.0, url: "https://www.awin1.com/pclick.php?p=45361884333&a=3013769&m=65912" },
+          { size: "S", price: 70.0, url: "https://www.awin1.com/pclick.php?p=45361884333&a=3013769&m=65912" },
           { size: "L", price: 85.0, url: "https://www.awin1.com/pclick.php?p=43724611492&a=3013769&m=65912" },
           { size: "XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=43034482588&a=3013769&m=65912" },
           { size: "2XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=45361884334&a=3013769&m=65912" },
@@ -12058,11 +12079,16 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 84.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361867040&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jw4685_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=b4ff669505ddf6c3c546f3ad82a090dd488207c5",
         sizes: ["L", "XL"],
+        sizePrices: [
+          { size: "L", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45361867041&a=3013769&m=65912" },
+          { size: "XL", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45361867040&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -12128,9 +12154,9 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp4057_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=d38b6efbc66d0ae5559e222be2bd2e85ed3d1321",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=44480975095&a=3013769&m=65912" },
+          { size: "XS", price: 94.0, url: "https://www.awin1.com/pclick.php?p=44480975095&a=3013769&m=65912" },
           { size: "S", price: 60.0, url: "https://www.awin1.com/pclick.php?p=41773059678&a=3013769&m=65912" },
-          { size: "M", price: 93.0, url: "https://www.awin1.com/pclick.php?p=44480975098&a=3013769&m=65912" },
+          { size: "M", price: 94.0, url: "https://www.awin1.com/pclick.php?p=44480975098&a=3013769&m=65912" },
           { size: "L", price: 94.0, url: "https://www.awin1.com/pclick.php?p=44480975097&a=3013769&m=65912" },
           { size: "XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=41773059681&a=3013769&m=65912" },
           { size: "2XL", price: 96.0, url: "https://www.awin1.com/pclick.php?p=44480975096&a=3013769&m=65912" },
@@ -12157,14 +12183,14 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 55.0,
-        priceMax: 93.0,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41854284931&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3997_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=08c7bba90228ffa68d063fab52b6a54dee5e6d8e",
         sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361871544&a=3013769&m=65912" },
+          { size: "XS", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361871544&a=3013769&m=65912" },
           { size: "S", price: 55.0, url: "https://www.awin1.com/pclick.php?p=41854284931&a=3013769&m=65912" },
           { size: "M", price: 55.0, url: "https://www.awin1.com/pclick.php?p=41854284934&a=3013769&m=65912" },
           { size: "L", price: 55.0, url: "https://www.awin1.com/pclick.php?p=41854284932&a=3013769&m=65912" },
@@ -12292,24 +12318,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-chaqueta-de-chandal-italia-dna-coupe-du-monde-2026-bleu",
-    brand: "adidas",
-    model: "Chaqueta de chándal Italia DNA Coupe du Monde 2026 - Bleu",
-    colour: "Bleu",
-    type: "jacket",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43087832817&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jy9660_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=55f3d0da9a1570c5bf9117ebb36c4e6863cf9e59",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
     id: "adidas-chaqueta-de-chandal-italia-tt-coupe-du-monde-2026-bleu",
     brand: "adidas",
     model: "Chaqueta de chándal Italia TT Coupe du Monde 2026 - Bleu",
@@ -12358,15 +12366,16 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361850946&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45361850950&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq2159_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=54bcac4e9ba6534bca2f55b30e08b71c944227a7",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361850946&a=3013769&m=65912" },
-          { size: "S", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361850947&a=3013769&m=65912" },
-          { size: "M", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361850948&a=3013769&m=65912" },
+          { size: "XS", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361850946&a=3013769&m=65912" },
+          { size: "S", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361850947&a=3013769&m=65912" },
+          { size: "M", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361850948&a=3013769&m=65912" },
           { size: "L", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361850949&a=3013769&m=65912" },
           { size: "XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361850950&a=3013769&m=65912" },
+          { size: "2XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361850951&a=3013769&m=65912" },
         ],
       },
     ],
@@ -12596,9 +12605,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk4: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-juventus-turin-tiro-2024-25-bleu",
     brand: "adidas",
@@ -12625,6 +12631,9 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk4: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-liverpool-fc-2025-26-rouge",
     brand: "adidas",
@@ -13128,7 +13137,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823812&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jz6486_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=142f562c6a6f7c205ec5e853affdd87fbe67c106",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -13596,10 +13605,11 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37978252238&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_is5824_1_apparel_photography_front_view_white.webp&feedId=89032&k=6218cd63f1b10e9d2d351b660cc00b79e108975f",
-        sizes: ["XS", "S"],
+        sizes: ["XS", "S", "L"],
         sizePrices: [
           { size: "XS", price: 37.72, url: "https://www.awin1.com/pclick.php?p=37978252238&a=3013769&m=65912" },
           { size: "S", price: 58.0, url: "https://www.awin1.com/pclick.php?p=45361853424&a=3013769&m=65912" },
+          { size: "L", price: 58.0, url: "https://www.awin1.com/pclick.php?p=45361853425&a=3013769&m=65912" },
         ],
       },
       {
@@ -13869,12 +13879,13 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37752228926&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it1994_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=1a64d52e06c358c0c1b910a1a312d97b73710505",
-        sizes: ["XS", "S", "M", "L"],
+        sizes: ["XS", "S", "M", "L", "2XL"],
         sizePrices: [
           { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361853403&a=3013769&m=65912" },
           { size: "S", price: 48.88, url: "https://www.awin1.com/pclick.php?p=37752228926&a=3013769&m=65912" },
           { size: "M", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361853404&a=3013769&m=65912" },
           { size: "L", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361853405&a=3013769&m=65912" },
+          { size: "2XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361853406&a=3013769&m=65912" },
         ],
       },
       {
@@ -13909,7 +13920,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
           { size: "S", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361853408&a=3013769&m=65912" },
           { size: "M", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361853409&a=3013769&m=65912" },
           { size: "L", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45361853410&a=3013769&m=65912" },
-          { size: "XL", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361853411&a=3013769&m=65912" },
+          { size: "XL", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45361853411&a=3013769&m=65912" },
           { size: "2XL", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45361853412&a=3013769&m=65912" },
         ],
       },
@@ -14310,8 +14321,8 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 96.0, url: "https://www.awin1.com/pclick.php?p=45361871753&a=3013769&m=65912" },
           { size: "S", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42127502829&a=3013769&m=65912" },
-          { size: "M", price: 93.0, url: "https://www.awin1.com/pclick.php?p=44790772809&a=3013769&m=65912" },
-          { size: "L", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361871752&a=3013769&m=65912" },
+          { size: "M", price: 94.0, url: "https://www.awin1.com/pclick.php?p=44790772809&a=3013769&m=65912" },
+          { size: "L", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361871752&a=3013769&m=65912" },
           { size: "XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361871754&a=3013769&m=65912" },
         ],
       },
@@ -14829,7 +14840,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 69.0,
+        price: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361862364&a=3013769&m=65912",
@@ -15248,7 +15259,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 42.5,
-        priceMax: 69.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40174230796&a=3013769&m=65912",
@@ -15259,7 +15270,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
           { size: "S", price: 42.5, url: "https://www.awin1.com/pclick.php?p=40174230797&a=3013769&m=65912" },
           { size: "M", price: 49.68, url: "https://www.awin1.com/pclick.php?p=40174230798&a=3013769&m=65912" },
           { size: "L", price: 42.5, url: "https://www.awin1.com/pclick.php?p=40174230799&a=3013769&m=65912" },
-          { size: "2XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=45361862372&a=3013769&m=65912" },
+          { size: "2XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=45361862372&a=3013769&m=65912" },
         ],
       },
       {
@@ -15954,7 +15965,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 143.0,
+        price: 142.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45254168505&a=3013769&m=65912",
@@ -15973,11 +15984,16 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 93.0,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361880474&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530017981&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp3102_white-aurplu-black_1.webp&feedId=89032&k=7cb8778fc56083abbb460bdac899d0b19e2614cf",
         sizes: ["XS", "S"],
+        sizePrices: [
+          { size: "XS", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361880474&a=3013769&m=65912" },
+          { size: "S", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42530017981&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -15990,17 +16006,12 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 93.0,
-        priceMax: 94.0,
+        price: 94.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361843366&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq2160_1_apparel_photography_front_view_white-nw032524.webp&feedId=89032&k=e6db7afff511f2b33c360bb284cb9edf9e9259d9",
         sizes: ["XS", "S"],
-        sizePrices: [
-          { size: "XS", price: 93.0, url: "https://www.awin1.com/pclick.php?p=45361843366&a=3013769&m=65912" },
-          { size: "S", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45361843367&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -16085,16 +16096,11 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 84.0,
-        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361834572&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ht4288_1_apparel_photography_standard_view_white_1.webp&feedId=89032&k=4a9276263b980d7c0fcaaca398e27406f422f561",
         sizes: ["S", "M"],
-        sizePrices: [
-          { size: "S", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45361834573&a=3013769&m=65912" },
-          { size: "M", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45361834572&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreES",
@@ -16129,12 +16135,12 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361839204&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45361839203&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ib0856_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=d0536edc9d582dff06b5932221411be2413cc9ca",
         sizes: ["XL", "2XL"],
         sizePrices: [
-          { size: "XL", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45361839203&a=3013769&m=65912" },
-          { size: "2XL", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45361839204&a=3013769&m=65912" },
+          { size: "XL", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45361839203&a=3013769&m=65912" },
+          { size: "2XL", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45361839204&a=3013769&m=65912" },
         ],
       },
     ],
@@ -16154,6 +16160,24 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45361839202&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ib0855_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=a76ac3698c745e91af2a549946028f1f54ee2888",
         sizes: ["2XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-chaqueta-impermeable-real-madrid-2023-24-orange",
+    brand: "adidas",
+    model: "Chaqueta impermeable Real Madrid 2023/24 - Orange",
+    colour: "Orange",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 100.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42730253355&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq0538_1_apparel_photography_front_view_white-nw032524.webp&feedId=89032&k=d2fb965cad98fa7ef4852b736206641881d00485",
+        sizes: ["XL"],
       },
     ],
   },
@@ -16512,7 +16536,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ib7797_1_hardware_photography_side_center_view_white.webp",
         sizes: ["34/36", "37/39", "40/42", "43/45", "46/48"],
         sizePrices: [
-          { size: "34/36", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7797-chaussettes-adidas-23-jaune" },
+          { size: "34/36", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7797-chaussettes-adidas-23-jaune" },
           { size: "37/39", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7797-chaussettes-adidas-23-jaune" },
           { size: "40/42", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7797-chaussettes-adidas-23-jaune" },
           { size: "43/45", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7797-chaussettes-adidas-23-jaune" },
@@ -16757,7 +16781,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 17.0,
+        price: 18.0,
         priceMax: 19.0,
         shipping: 6.99,
         currency: "EUR",
@@ -16765,7 +16789,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ht5029_1_hardware_photography_side_center_view_white.jpg",
         sizes: ["M", "L"],
         sizePrices: [
-          { size: "M", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht5029-chaussettes-adidas-adi-23-rouge-vif" },
+          { size: "M", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht5029-chaussettes-adidas-adi-23-rouge-vif" },
           { size: "L", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht5029-chaussettes-adidas-adi-23-rouge-vif" },
         ],
       },
@@ -18285,10 +18309,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8004-chaussettes-domicile-juventus-turin-2024-25-white-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is8004_1_hardware_photography_side_center_view_white.webp",
-        sizes: ["37/39", "43/46", "47/49"],
+        sizes: ["37/39", "47/49"],
         sizePrices: [
-          { size: "37/39", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8004-chaussettes-domicile-juventus-turin-2024-25-white-black" },
-          { size: "43/46", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8004-chaussettes-domicile-juventus-turin-2024-25-white-black" },
+          { size: "37/39", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8004-chaussettes-domicile-juventus-turin-2024-25-white-black" },
           { size: "47/49", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8004-chaussettes-domicile-juventus-turin-2024-25-white-black" },
         ],
       },
@@ -18655,6 +18678,24 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-chubasquero-adidas-tiro-24-vert",
+    brand: "adidas",
+    model: "Chubasquero adidas Tiro 24 - Vert",
+    colour: "Vert",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39412124141&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_im8810_1_apparel_photography_front_view_white.webp&feedId=89032&k=05542ceee6615b81c1a97580c2b573bb8c1e6782",
+        sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
     id: "adidas-chubasquero-adidas-tiro-26-bleu",
     brand: "adidas",
     model: "Chubasquero adidas Tiro 26 - Bleu",
@@ -18861,7 +18902,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45381240638&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz2824_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=eb807539d799b2a2baf7cecdcc0b9556fc70cad4",
-        sizes: ["M", "L", "XL"],
+        sizes: ["M", "L"],
       },
     ],
   },
@@ -18880,13 +18921,14 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361858780&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_is5792_1_apparel_photography_front_view_white.webp&feedId=89032&k=30ff4ebd0031397705550c221e73976acdc850aa",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361858781&a=3013769&m=65912" },
           { size: "S", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361858780&a=3013769&m=65912" },
           { size: "M", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361858783&a=3013769&m=65912" },
           { size: "L", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361858784&a=3013769&m=65912" },
           { size: "XL", price: 73.55, url: "https://www.awin1.com/pclick.php?p=45361858782&a=3013769&m=65912" },
+          { size: "2XL", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45361858785&a=3013769&m=65912" },
         ],
       },
       {
@@ -19224,13 +19266,11 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43125142132&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jn4396_0.webp&feedId=89032&k=36d0c27aff5262b3ef14a0bacf5c2acb78a73a0e",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "M", "XL"],
         sizePrices: [
           { size: "S", price: 31.49, url: "https://www.awin1.com/pclick.php?p=43125142132&a=3013769&m=65912" },
           { size: "M", price: 45.0, url: "https://www.awin1.com/pclick.php?p=43125142133&a=3013769&m=65912" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/pclick.php?p=43125142134&a=3013769&m=65912" },
           { size: "XL", price: 31.49, url: "https://www.awin1.com/pclick.php?p=43125142135&a=3013769&m=65912" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=45931745134&a=3013769&m=65912" },
         ],
       },
       {
@@ -19262,7 +19302,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         sizes: ["XS", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 78.0, url: "https://www.awin1.com/pclick.php?p=43755753514&a=3013769&m=65912" },
-          { size: "2XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=44927112780&a=3013769&m=65912" },
+          { size: "2XL", price: 78.0, url: "https://www.awin1.com/pclick.php?p=44927112780&a=3013769&m=65912" },
           { size: "3XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=44927112781&a=3013769&m=65912" },
         ],
       },
@@ -19355,7 +19395,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44896721418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kd3335_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=5853fc33e6e9cca0b395e78b673a91710716683c",
-        sizes: ["XS", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
       {
         store: "FootStoreES",
@@ -19364,7 +19404,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44896721423&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kd3334_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=ce4997cabeb5ed7b8c9a06012e08cf9f5dcfd983",
-        sizes: ["XS", "S", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -19542,9 +19582,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 75.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44444992175&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44572518343&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kd3338_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=2a04dc853ac32e6561f8ca728158d1c142b41348",
-        sizes: ["S", "M"],
+        sizes: ["XS", "S", "M", "XL"],
       },
     ],
   },
@@ -19562,7 +19602,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914988087&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jm5548_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=2ffddd71993b02de1ec6a8eb314c8d0a771bcf67",
-        sizes: ["XS", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -19652,15 +19692,14 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.24,
+        price: 59.79,
         priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44112356696&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46027471450&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kc7805_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=158f8e74267e88d2a4fa90bffe6707f3ccca5473",
-        sizes: ["XS", "S", "L", "XL", "2XL"],
+        sizes: ["S", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 57.24, url: "https://www.awin1.com/pclick.php?p=44112356696&a=3013769&m=65912" },
           { size: "S", price: 90.0, url: "https://www.awin1.com/pclick.php?p=44112356695&a=3013769&m=65912" },
           { size: "L", price: 90.0, url: "https://www.awin1.com/pclick.php?p=44112356692&a=3013769&m=65912" },
           { size: "XL", price: 59.79, url: "https://www.awin1.com/pclick.php?p=46027471450&a=3013769&m=65912" },
@@ -19688,18 +19727,11 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
-        priceMax: 90.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398897758&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kq8157-black-6a79cdcb49177-1.webp&feedId=89032&k=88ccbacf1096af66c858976c0069efecec4237ae",
-        sizes: ["S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "S", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45398897758&a=3013769&m=65912" },
-          { size: "M", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45398897759&a=3013769&m=65912" },
-          { size: "L", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45398897760&a=3013769&m=65912" },
-          { size: "XL", price: 90.0, url: "https://www.awin1.com/pclick.php?p=45443803529&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "M", "L"],
       },
       {
         store: "SportIsGoodES",
@@ -19999,12 +20031,18 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 78.0,
+        price: 77.0,
+        priceMax: 78.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy8869-coupe-vent-adidas-tiro-26-tenabl-rayblu-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jy8869_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy8869-coupe-vent-adidas-tiro-26-tenabl-rayblu-white" },
+          { size: "2XL", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy8869-coupe-vent-adidas-tiro-26-tenabl-rayblu-white" },
+          { size: "3XL", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy8869-coupe-vent-adidas-tiro-26-tenabl-rayblu-white" },
+        ],
       },
     ],
   },
@@ -20144,7 +20182,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 48.0,
+        price: 49.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh33692-coupe-vent-adidas-tiro-primeblue-warm-noir-bleu-roi",
@@ -20556,18 +20594,11 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 72.0,
-        priceMax: 90.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkq8157-coupe-vent-rc-lens-tiro-travel-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kq8157-black-6a79cdcb49177-1.webp",
-        sizes: ["S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "S", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkq8157-coupe-vent-rc-lens-tiro-travel-black" },
-          { size: "M", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkq8157-coupe-vent-rc-lens-tiro-travel-black" },
-          { size: "L", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkq8157-coupe-vent-rc-lens-tiro-travel-black" },
-          { size: "XL", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkq8157-coupe-vent-rc-lens-tiro-travel-black" },
-        ],
+        sizes: ["S", "M", "L"],
       },
       {
         store: "SportIsGoodFR",
@@ -20589,15 +20620,14 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 54.81,
+        price: 58.85,
         priceMax: 90.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kc7805_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "L", "XL", "2XL"],
+        sizes: ["S", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 54.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black" },
           { size: "S", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black" },
           { size: "L", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black" },
           { size: "XL", price: 58.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black" },
@@ -20606,17 +20636,12 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodFR",
-        price: 54.81,
-        priceMax: 59.96,
+        price: 59.96,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kc7805_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "XL"],
-        sizePrices: [
-          { size: "XS", price: 54.81, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black" },
-          { size: "XL", price: 59.96, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkc7805-coupe-vent-real-madrid-tiro-travel-2025-26-black" },
-        ],
+        sizes: ["XL"],
       },
     ],
   },
@@ -20670,7 +20695,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz2824-coupe-vent-zippee-inter-miami-fc-tiro-travel-2026-27-blipnk-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz2824_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["M", "L", "XL"],
+        sizes: ["M", "L"],
       },
     ],
   },
@@ -20863,6 +20888,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-domicilio-corto-autentico-italia-coupe-du-monde-2026-blanc",
     brand: "adidas",
@@ -20887,27 +20915,6 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45725019972&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_12_adidas_jl6935_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=19df0f83d179020485da62dc757f3466c154cf05",
         sizes: ["M"],
-      },
-    ],
-  },
-];
-
-const minedApparelProductsChunk6: ApparelProduct[] = [
-  {
-    id: "adidas-domicilio-corto-mexico-coupe-du-monde-2026-blanc",
-    brand: "adidas",
-    model: "Domicilio Corto México Coupe du Monde 2026 - Blanc",
-    colour: "Blanc",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43101823350&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jl8541_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=4880361811c2564a8ac4e71a3047dd7fa0aba560",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -21076,18 +21083,19 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 113.0,
-        priceMax: 116.0,
+        price: 112.0,
+        priceMax: 130.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij7388_2_apparel_photography_front_view_white.webp",
-        sizes: ["XS", "S", "M", "2XL"],
+        sizes: ["XS", "S", "M", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
-          { size: "S", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
+          { size: "XS", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
+          { size: "S", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
           { size: "M", price: 116.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
-          { size: "2XL", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
+          { size: "XL", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
+          { size: "2XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7388-doudoune-adidas-tiro-24-black-white" },
         ],
       },
     ],
@@ -21110,11 +21118,11 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
-          { size: "S", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
-          { size: "M", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
-          { size: "L", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
-          { size: "XL", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
-          { size: "2XL", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
+          { size: "S", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
+          { size: "M", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
+          { size: "L", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
+          { size: "XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
+          { size: "2XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
           { size: "3XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8024-doudoune-adidas-tiro-26-tenabl-white" },
         ],
       },
@@ -21129,12 +21137,22 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 113.0,
+        price: 112.0,
+        priceMax: 113.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jz4109_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+          { size: "S", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+          { size: "M", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+          { size: "L", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+          { size: "XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+          { size: "2XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+          { size: "3XL", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4109-doudoune-adidas-tiro-26-black-white" },
+        ],
       },
     ],
   },
@@ -21327,11 +21345,18 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 104.0,
+        priceMax: 130.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr6744-doudoune-real-madrid-2026-27-veraur-rossau",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kr6744-veraur-rossau-6a57581988a3f-1.webp",
-        sizes: ["S", "XL"],
+        sizes: ["S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "S", price: 104.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr6744-doudoune-real-madrid-2026-27-veraur-rossau" },
+          { size: "M", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr6744-doudoune-real-madrid-2026-27-veraur-rossau" },
+          { size: "L", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr6744-doudoune-real-madrid-2026-27-veraur-rossau" },
+          { size: "XL", price: 104.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr6744-doudoune-real-madrid-2026-27-veraur-rossau" },
+        ],
       },
       {
         store: "SportIsGoodFR",
@@ -21400,7 +21425,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
           { size: "XS", price: 102.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg1132-doudoune-sans-manches-bayern-munich-condivo-2021-22-bleu-marine-rouge-fonce" },
           { size: "S", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg1132-doudoune-sans-manches-bayern-munich-condivo-2021-22-bleu-marine-rouge-fonce" },
           { size: "M", price: 103.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg1132-doudoune-sans-manches-bayern-munich-condivo-2021-22-bleu-marine-rouge-fonce" },
-          { size: "L", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg1132-doudoune-sans-manches-bayern-munich-condivo-2021-22-bleu-marine-rouge-fonce" },
+          { size: "L", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg1132-doudoune-sans-manches-bayern-munich-condivo-2021-22-bleu-marine-rouge-fonce" },
         ],
       },
     ],
@@ -21499,24 +21524,6 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44686633443&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2Fg%2Fcg0382_photo_front_-_2000x2000.webp&feedId=89032&k=21544d21e3bf40c9219d0e22659735cd32d6470f",
         sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-adidas-f50-eu-club-violet",
-    brand: "adidas",
-    model: "Espinilleras adidas F50 EU Club - Violet",
-    colour: "Violet",
-    type: "shinguards",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 21.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304863552&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ke5202-solpur-soltur-6a444c1de0070-1.webp&feedId=89032&k=34b747bde23c157c2db4923e2e2a9634478dd106",
-        sizes: ["M", "L"],
       },
     ],
   },
@@ -21854,7 +21861,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552703852&a=3013769&m=65912",
@@ -22018,12 +22025,12 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         priceMax: 29.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39656025036&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39656025037&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq4040_1_hardware_photography_front_center_view_white-nw111924.webp&feedId=89032&k=30d99db07a37b0aee75050e958fe2e01bf654055",
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 29.0, url: "https://www.awin1.com/pclick.php?p=39656025035&a=3013769&m=65912" },
-          { size: "M", price: 28.0, url: "https://www.awin1.com/pclick.php?p=39656025036&a=3013769&m=65912" },
+          { size: "M", price: 29.0, url: "https://www.awin1.com/pclick.php?p=39656025036&a=3013769&m=65912" },
           { size: "L", price: 28.0, url: "https://www.awin1.com/pclick.php?p=39656025037&a=3013769&m=65912" },
           { size: "XL", price: 28.0, url: "https://www.awin1.com/pclick.php?p=39656025038&a=3013769&m=65912" },
         ],
@@ -22039,7 +22046,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686637108&a=3013769&m=65912",
@@ -22187,6 +22194,24 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45361835454&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ht4439_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=d476db3b042974b0edd3fc3accf6f8844039ac1c",
         sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-formacion-breve-arsenal-tiro-2023-24-gris",
+    brand: "adidas",
+    model: "Formación breve Arsenal Tiro 2023/24 - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 45.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45361839730&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij7790_1_apparel_photography_front_view_white_nw.webp&feedId=89032&k=8f950c5e4d754466542b39fd61771e5068bca06e",
+        sizes: ["S"],
       },
     ],
   },
@@ -22376,7 +22401,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 69.0,
+        price: 68.0,
         priceMax: 70.0,
         shipping: 6.99,
         currency: "EUR",
@@ -22384,7 +22409,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iy0120_1_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "XS", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy0120-haut-d-entrainement-cagoule-integree-tiro-2024-25-tenabl-royblu" },
+          { size: "XS", price: 68.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy0120-haut-d-entrainement-cagoule-integree-tiro-2024-25-tenabl-royblu" },
           { size: "S", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy0120-haut-d-entrainement-cagoule-integree-tiro-2024-25-tenabl-royblu" },
           { size: "XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy0120-haut-d-entrainement-cagoule-integree-tiro-2024-25-tenabl-royblu" },
           { size: "2XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy0120-haut-d-entrainement-cagoule-integree-tiro-2024-25-tenabl-royblu" },
@@ -22402,7 +22427,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 75.0,
+        price: 72.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8196-haut-d-entrainement-espagne-tiro-coupe-du-monde-2026-boaqua",
@@ -23097,17 +23122,11 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 16.0,
-        priceMax: 17.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6541-manchon-jambe-adidas-team-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ht6541_1_hardware_photography_side_view_white.webp",
         sizes: ["34/36", "40/42", "46/48"],
-        sizePrices: [
-          { size: "34/36", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6541-manchon-jambe-adidas-team-blanc" },
-          { size: "40/42", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6541-manchon-jambe-adidas-team-blanc" },
-          { size: "46/48", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6541-manchon-jambe-adidas-team-blanc" },
-        ],
       },
     ],
   },
@@ -23121,32 +23140,20 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 16.0,
-        priceMax: 17.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6542-manchon-jambe-adidas-team-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ht6542_1_hardware_photography_side_center_view_white.webp",
         sizes: ["34/36", "40/42", "46/48"],
-        sizePrices: [
-          { size: "34/36", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6542-manchon-jambe-adidas-team-bleu" },
-          { size: "40/42", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6542-manchon-jambe-adidas-team-bleu" },
-          { size: "46/48", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6542-manchon-jambe-adidas-team-bleu" },
-        ],
       },
       {
         store: "FootStoreFR",
         price: 16.0,
-        priceMax: 17.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6543-manchon-jambe-adidas-team-bleu-royal",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ht6543_1_hardware_photography_side_center_view_white.webp",
         sizes: ["34/36", "40/42", "46/48"],
-        sizePrices: [
-          { size: "34/36", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6543-manchon-jambe-adidas-team-bleu-royal" },
-          { size: "40/42", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6543-manchon-jambe-adidas-team-bleu-royal" },
-          { size: "46/48", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6543-manchon-jambe-adidas-team-bleu-royal" },
-        ],
       },
     ],
   },
@@ -23160,14 +23167,14 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 8.18,
-        priceMax: 17.0,
+        priceMax: 16.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6539-manchon-jambe-adidas-team-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ht6539_1_hardware_photography_side_view_white.webp",
         sizes: ["28/30", "34/36", "40/42", "46/48"],
         sizePrices: [
-          { size: "28/30", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6539-manchon-jambe-adidas-team-noir" },
+          { size: "28/30", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6539-manchon-jambe-adidas-team-noir" },
           { size: "34/36", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6539-manchon-jambe-adidas-team-noir" },
           { size: "40/42", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6539-manchon-jambe-adidas-team-noir" },
           { size: "46/48", price: 8.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6539-manchon-jambe-adidas-team-noir" },
@@ -23194,17 +23201,11 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 16.0,
-        priceMax: 17.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6540-manchon-jambe-adidas-team-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ht6540_1_hardware_photography_side_center_view_white.webp",
         sizes: ["34/36", "40/42", "46/48"],
-        sizePrices: [
-          { size: "34/36", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6540-manchon-jambe-adidas-team-rouge" },
-          { size: "40/42", price: 17.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6540-manchon-jambe-adidas-team-rouge" },
-          { size: "46/48", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht6540-manchon-jambe-adidas-team-rouge" },
-        ],
       },
     ],
   },
@@ -23253,12 +23254,18 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.0,
+        price: 16.0,
+        priceMax: 17.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42928187711&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42646124446&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ht6542_1_hardware_photography_side_center_view_white.webp&feedId=89032&k=4ac553de4d0cc89e639ec870b64c59e2e6033ec3",
         sizes: ["34/36", "40/42", "46/48"],
+        sizePrices: [
+          { size: "34/36", price: 17.0, url: "https://www.awin1.com/pclick.php?p=42928187711&a=3013769&m=65912" },
+          { size: "40/42", price: 17.0, url: "https://www.awin1.com/pclick.php?p=42959217418&a=3013769&m=65912" },
+          { size: "46/48", price: 16.0, url: "https://www.awin1.com/pclick.php?p=42646124446&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreES",
@@ -23324,7 +23331,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         sizePrices: [
           { size: "34/36", price: 16.0, url: "https://www.awin1.com/pclick.php?p=39938438056&a=3013769&m=65912" },
           { size: "40/42", price: 17.0, url: "https://www.awin1.com/pclick.php?p=43448926890&a=3013769&m=65912" },
-          { size: "46/48", price: 17.0, url: "https://www.awin1.com/pclick.php?p=42959217419&a=3013769&m=65912" },
+          { size: "46/48", price: 16.0, url: "https://www.awin1.com/pclick.php?p=42959217419&a=3013769&m=65912" },
         ],
       },
     ],
@@ -23587,6 +23594,24 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526323378&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_kc6689_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=561fe5adb0b44e7067d431c6614a507b757f4f7c",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "adidas-mochila-belgica-coupe-du-monde-2026-noir",
+    brand: "adidas",
+    model: "Mochila Bélgica Coupe du Monde 2026 - Noir",
+    colour: "Noir",
+    type: "bag",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 50.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45242382319&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_ke2714_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=546335ec534d144adda4e1c4ead53ed90e9a2649",
         sizes: [],
       },
     ],
@@ -24316,24 +24341,6 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-adidas-spain-dna-bleu",
-    brand: "adidas",
-    model: "Pantalón corto adidas Spain Dna - Bleu",
-    colour: "Bleu",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43534103701&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_11_adidas_jz2262_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=a7f08d4e1bc553dc66f2633717c724bede2c964c",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-corto-adidas-squadra-21-blanc",
     brand: "adidas",
     model: "Pantalón corto adidas Squadra 21 - Blanc",
@@ -24345,9 +24352,9 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         price: 22.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40974402317&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40974402321&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fn%2Fgn5774_app_photo_front-center_white.webp&feedId=89032&k=3af8811747cc4c00a929be744a72fefe8b11d0bd",
-        sizes: ["S", "2XL"],
+        sizes: ["2XL"],
       },
       {
         store: "FootStoreES",
@@ -24385,12 +24392,19 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 26.0,
+        priceMax: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645279447&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fn%2Fgn5775_app_virtual_standard_white.webp&feedId=89032&k=15f202bf0bab8b3db66a88ffd05991a1aca36193",
-        sizes: ["XS", "S"],
+        sizes: ["XS", "S", "M", "XL"],
+        sizePrices: [
+          { size: "XS", price: 26.0, url: "https://www.awin1.com/pclick.php?p=44645279447&a=3013769&m=65912" },
+          { size: "S", price: 26.0, url: "https://www.awin1.com/pclick.php?p=40974402333&a=3013769&m=65912" },
+          { size: "M", price: 28.0, url: "https://www.awin1.com/pclick.php?p=45764456861&a=3013769&m=65912" },
+          { size: "XL", price: 28.0, url: "https://www.awin1.com/pclick.php?p=45888236370&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreES",
@@ -24648,7 +24662,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529866857&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3406_1_apparel_photography_front_view_white.webp&feedId=89032&k=ccabc5a4917084842cbd2a9bbc2b7a005014b3b0",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "2XL"],
       },
     ],
   },
@@ -24775,11 +24789,19 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
+        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529837514&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd2955_2_apparel_on_model_standard_view_white.webp&feedId=89032&k=f415151e977967001d468e71a14a08c339f576f6",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529837514&a=3013769&m=65912" },
+          { size: "M", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529837515&a=3013769&m=65912" },
+          { size: "L", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529837516&a=3013769&m=65912" },
+          { size: "XL", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529837517&a=3013769&m=65912" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529837518&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -25159,7 +25181,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695070508&a=3013769&m=65912",
@@ -25218,7 +25240,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323048549&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hs7226_1_apparel_photography_front_view_white.webp&feedId=89032&k=7611cdfb24853810c166a284e0196f93e08f0ada",
-        sizes: ["XS", "S", "XL"],
+        sizes: ["XS", "S"],
       },
     ],
   },
@@ -25236,7 +25258,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860416761&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hs0319_8_apparel_zip_-_turntable_3d-1_white.webp&feedId=89032&k=ab4c0bd578087952da171aed7d5662d335edb76c",
-        sizes: ["XS", "S"],
+        sizes: ["XS"],
       },
     ],
   },
@@ -25551,7 +25573,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44223823175&a=3013769&m=65912",
@@ -25827,15 +25849,15 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44223823171&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44223823170&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ka6175-teagrn-white-2.webp&feedId=89032&k=ab6ddbc4476c7554c54803cfc314b5fe0a1b10ec",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44223823170&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44223823170&a=3013769&m=65912" },
           { size: "M", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44223823171&a=3013769&m=65912" },
           { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44223823172&a=3013769&m=65912" },
           { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44223823173&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44223823174&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44223823174&a=3013769&m=65912" },
         ],
       },
     ],
@@ -25874,7 +25896,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45218804925&a=3013769&m=65912",
@@ -25943,6 +25965,42 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43219401552&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it5076_creblu_1.webp&feedId=89032&k=3324a2cb08d00875cda27df623c0a81469e46703",
         sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-alemania-euro-2024-noir",
+    brand: "adidas",
+    model: "Pantalón corto Alemania Euro 2024 - Noir",
+    colour: "Noir",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 45.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45361843357&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ip8258_1_apparel_photography_front_view_white.webp&feedId=89032&k=fd85f6c1fdcdd5b23d536a4364fdd5590084a567",
+        sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-arbitro-24-adidas-noir",
+    brand: "adidas",
+    model: "Pantalón corto Árbitro  24 adidas - Noir",
+    colour: "Noir",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 35.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41598793939&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ik4869_1_apparel_photography_front_view_white-nw052224.webp&feedId=89032&k=709d310c355dc976929d4d239218d036c8907d5a",
+        sizes: ["3XL"],
       },
     ],
   },
@@ -27425,6 +27483,24 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-italia-travel-euro-2024-bleu",
+    brand: "adidas",
+    model: "Pantalón corto Italia travel Euro 2024 - Bleu",
+    colour: "Bleu",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43132060572&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iu2119_1_apparel_photography_front_view_white.webp&feedId=89032&k=b5bb6436bb8246b782a7ce3ef2b7f73b9b57bdb0",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-jamaique-2024-25-noir",
     brand: "adidas",
     model: "Pantalón corto Jamaïque 2024/25 - Noir",
@@ -27519,7 +27595,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361859875&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_is5787_tenabl_1.webp&feedId=89032&k=6589665f2086d5a5d29e15f3bf38f5c139a68f0b",
-        sizes: ["S", "2XL"],
+        sizes: ["XS", "S", "2XL"],
       },
     ],
   },
@@ -27672,7 +27748,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45586520869&a=3013769&m=65912",
@@ -27958,7 +28034,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829769983&a=3013769&m=65912",
@@ -28012,7 +28088,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44245765553&a=3013769&m=65912",
@@ -28140,7 +28216,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44223823182&a=3013769&m=65912",
@@ -28388,7 +28464,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 31.0,
         priceMax: 39.0,
         shipping: 7.99,
         currency: "EUR",
@@ -28397,8 +28473,8 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 39.0, url: "https://www.awin1.com/pclick.php?p=38553234291&a=3013769&m=65912" },
-          { size: "M", price: 30.0, url: "https://www.awin1.com/pclick.php?p=38553234292&a=3013769&m=65912" },
-          { size: "L", price: 30.0, url: "https://www.awin1.com/pclick.php?p=38553234293&a=3013769&m=65912" },
+          { size: "M", price: 31.0, url: "https://www.awin1.com/pclick.php?p=38553234292&a=3013769&m=65912" },
+          { size: "L", price: 31.0, url: "https://www.awin1.com/pclick.php?p=38553234293&a=3013769&m=65912" },
           { size: "XL", price: 31.0, url: "https://www.awin1.com/pclick.php?p=38545080170&a=3013769&m=65912" },
           { size: "2XL", price: 31.0, url: "https://www.awin1.com/pclick.php?p=38942326292&a=3013769&m=65912" },
         ],
@@ -28745,9 +28821,10 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0824-pantalon-d-entrainement-argentine-copa-america-2024-carbon",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/i/q/iq0824.jpg",
-        sizes: ["XS", "M"],
+        sizes: ["XS", "S", "M"],
         sizePrices: [
           { size: "XS", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0824-pantalon-d-entrainement-argentine-copa-america-2024-carbon" },
+          { size: "S", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0824-pantalon-d-entrainement-argentine-copa-america-2024-carbon" },
           { size: "M", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0824-pantalon-d-entrainement-argentine-copa-america-2024-carbon" },
         ],
       },
@@ -28914,6 +28991,9 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-3-stripes-gris",
     brand: "adidas",
@@ -28977,9 +29057,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-condivo-22-predator-bleu",
     brand: "adidas",
@@ -29182,7 +29259,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44432365479&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz9138_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=8d33d18a0a1da309eb10f1defa98af0ab6411964",
-        sizes: ["XS", "S", "M", "L", "L Tall", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
       {
         store: "FootStoreES",
@@ -29205,16 +29282,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.58,
-        priceMax: 35.09,
+        priceMax: 34.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43397425400&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ke7273-black-carbon-1.webp&feedId=89032&k=6a03a2282d0c442b811252b400d6385224c9b838",
-        sizes: ["XS", "M", "L"],
+        sizes: ["XS", "M"],
         sizePrices: [
           { size: "XS", price: 34.07, url: "https://www.awin1.com/pclick.php?p=43087832484&a=3013769&m=65912" },
           { size: "M", price: 32.58, url: "https://www.awin1.com/pclick.php?p=43397425400&a=3013769&m=65912" },
-          { size: "L", price: 35.09, url: "https://www.awin1.com/pclick.php?p=43397425401&a=3013769&m=65912" },
         ],
       },
       {
@@ -29971,7 +30047,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 45.0,
+        price: 44.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645282057&a=3013769&m=65912",
@@ -30235,6 +30311,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     colour: "Noir",
     type: "pants",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529594005&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij7657_1_apparel_photography_front_view_white.webp&feedId=89032&k=af231dc8e46a106d95e1214f950db4ad64208e80",
+        sizes: ["2XL"],
+      },
       {
         store: "FootStoreES",
         price: 48.0,
@@ -30775,8 +30860,8 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
           { size: "XS", price: 64.0, url: "https://www.awin1.com/pclick.php?p=41760419370&a=3013769&m=65912" },
-          { size: "S", price: 72.0, url: "https://www.awin1.com/pclick.php?p=40588827024&a=3013769&m=65912" },
-          { size: "M", price: 72.0, url: "https://www.awin1.com/pclick.php?p=40588827025&a=3013769&m=65912" },
+          { size: "S", price: 73.0, url: "https://www.awin1.com/pclick.php?p=40588827024&a=3013769&m=65912" },
+          { size: "M", price: 73.0, url: "https://www.awin1.com/pclick.php?p=40588827025&a=3013769&m=65912" },
           { size: "L", price: 73.0, url: "https://www.awin1.com/pclick.php?p=40588827026&a=3013769&m=65912" },
           { size: "XL", price: 73.0, url: "https://www.awin1.com/pclick.php?p=40588827027&a=3013769&m=65912" },
         ],
@@ -30856,11 +30941,18 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
+        priceMax: 65.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361844198&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it9763_1_apparel_photography_front_view_white.webp&feedId=89032&k=1ba8808b63b27c48aaa5dbaf73fdb66736c1f0e3",
-        sizes: ["XS", "S", "XL"],
+        sizes: ["XS", "S", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 48.0, url: "https://www.awin1.com/pclick.php?p=45361844199&a=3013769&m=65912" },
+          { size: "S", price: 48.0, url: "https://www.awin1.com/pclick.php?p=45361844198&a=3013769&m=65912" },
+          { size: "XL", price: 48.0, url: "https://www.awin1.com/pclick.php?p=45361844200&a=3013769&m=65912" },
+          { size: "2XL", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41789918745&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -31318,6 +31410,24 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-de-chandal-bayern-munich-cup-2026-27-violet",
+    brand: "adidas",
+    model: "Pantalón de chándal Bayern Múnich Cup 2026/27 - Violet",
+    colour: "Violet",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 65.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45698874899&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kh3793-shafig-legink-6a444b886492d-1.webp&feedId=89032&k=4ae681516fcc6977c7038f7e5991366cce83973d",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-de-chandal-bayern-munich-dna-rouge",
     brand: "adidas",
     model: "Pantalón de chándal Bayern Múnich DNA - Rouge",
@@ -31372,7 +31482,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 48.0,
-        priceMax: 59.0,
+        priceMax: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529778213&a=3013769&m=65912",
@@ -31381,7 +31491,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529778213&a=3013769&m=65912" },
           { size: "S", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42529778214&a=3013769&m=65912" },
-          { size: "M", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42529778215&a=3013769&m=65912" },
+          { size: "M", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42529778215&a=3013769&m=65912" },
         ],
       },
       {
@@ -31715,18 +31825,18 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 56.2,
-        priceMax: 85.0,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41968035327&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jv5323_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=9b427d3bc3cc0a9a2c2e0494e3bdb078eec50edc",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 85.0, url: "https://www.awin1.com/pclick.php?p=44852074573&a=3013769&m=65912" },
+          { size: "XS", price: 84.0, url: "https://www.awin1.com/pclick.php?p=44852074573&a=3013769&m=65912" },
           { size: "S", price: 84.0, url: "https://www.awin1.com/pclick.php?p=41968035329&a=3013769&m=65912" },
           { size: "M", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45361871749&a=3013769&m=65912" },
           { size: "L", price: 56.2, url: "https://www.awin1.com/pclick.php?p=41968035327&a=3013769&m=65912" },
-          { size: "XL", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45335620355&a=3013769&m=65912" },
+          { size: "XL", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45335620355&a=3013769&m=65912" },
           { size: "2XL", price: 84.0, url: "https://www.awin1.com/pclick.php?p=44852074574&a=3013769&m=65912" },
         ],
       },
@@ -32550,6 +32660,24 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-de-chandal-liverpool-fc-eqt-noir",
+    brand: "adidas",
+    model: "Pantalón de chándal Liverpool FC EQT - Noir",
+    colour: "Noir",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 90.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061465643&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kg2909-black-eqtgrn-6a444e02f2eda-1.webp&feedId=89032&k=15250fdf77ae81131ecb58e95ca405be42559e04",
+        sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-de-chandal-liverpool-fc-eu-2025-26-noir",
     brand: "adidas",
     model: "Pantalón de chándal Liverpool FC EU 2025/26 - Noir",
@@ -32784,7 +32912,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361834557&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hu0042_1_apparel_photography_front_view_white.webp&feedId=89032&k=17907e7e2249b935eb650041c5ff365325b5ab4e",
-        sizes: ["XS", "L", "XL"],
+        sizes: ["XS", "S", "L", "XL"],
       },
     ],
   },
@@ -33103,11 +33231,10 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41805967085&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp1626_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=0febe7eb9b0f848baad9549b8997dccd3490f125",
-        sizes: ["XS", "S", "M", "L", "2XL"],
+        sizes: ["XS", "S", "L", "2XL"],
         sizePrices: [
           { size: "XS", price: 28.84, url: "https://www.awin1.com/pclick.php?p=41805967085&a=3013769&m=65912" },
           { size: "S", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45361871746&a=3013769&m=65912" },
-          { size: "M", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41805967087&a=3013769&m=65912" },
           { size: "L", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41805967084&a=3013769&m=65912" },
           { size: "2XL", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45496415818&a=3013769&m=65912" },
         ],
@@ -33533,6 +33660,9 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-real-madrid-originals-2024-25-gris",
     brand: "adidas",
@@ -33668,9 +33798,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-training-real-madrid-tiro-26-vert",
     brand: "adidas",
@@ -33771,17 +33898,16 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
-        priceMax: 41.0,
+        priceMax: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923915862&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fc%2Fhc0334_app_photo_front-center_white_1645107028.webp&feedId=89032&k=c4d9090c884f62f2f0f5b55d7f252e618c694014",
-        sizes: ["2XS", "XS", "S", "XL"],
+        sizes: ["2XS", "XS", "S"],
         sizePrices: [
           { size: "2XS", price: 30.0, url: "https://www.awin1.com/pclick.php?p=37923915862&a=3013769&m=65912" },
           { size: "XS", price: 36.0, url: "https://www.awin1.com/pclick.php?p=37923915863&a=3013769&m=65912" },
           { size: "S", price: 36.0, url: "https://www.awin1.com/pclick.php?p=37923915864&a=3013769&m=65912" },
-          { size: "XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=37923915867&a=3013769&m=65912" },
         ],
       },
     ],
@@ -33796,7 +33922,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 36.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923915856&a=3013769&m=65912",
@@ -33808,7 +33934,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
           { size: "S", price: 38.0, url: "https://www.awin1.com/pclick.php?p=37923915857&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=37923915858&a=3013769&m=65912" },
           { size: "L", price: 37.0, url: "https://www.awin1.com/pclick.php?p=37923915859&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=37923915861&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=37923915861&a=3013769&m=65912" },
         ],
       },
     ],
@@ -33867,11 +33993,11 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361843343&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45361843344&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fp%2Fip8240_1_apparel_photography_front_view_white.webp&feedId=89032&k=5a6e7465ac3fdfc459c2a3aaf213ee308bee2377",
         sizes: ["XS", "S", "3XL"],
         sizePrices: [
-          { size: "XS", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45361843343&a=3013769&m=65912" },
+          { size: "XS", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45361843343&a=3013769&m=65912" },
           { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45361843344&a=3013769&m=65912" },
           { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45361843345&a=3013769&m=65912" },
         ],
@@ -33893,9 +34019,10 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42397704615&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fq%2Fiq0824.webp&feedId=89032&k=2f965a174d487e36d08d7e3f05f7d22d20d24982",
-        sizes: ["XS", "M"],
+        sizes: ["XS", "S", "M"],
         sizePrices: [
           { size: "XS", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42397704615&a=3013769&m=65912" },
+          { size: "S", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45361843346&a=3013769&m=65912" },
           { size: "M", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45361843347&a=3013769&m=65912" },
         ],
       },
@@ -34028,20 +34155,19 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705566956&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz9126_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=90174d608f5db33a27c19218b4a2d1d35d5367f5",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566956&a=3013769&m=65912" },
           { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566957&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566958&a=3013769&m=65912" },
           { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566959&a=3013769&m=65912" },
           { size: "XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566960&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705566961&a=3013769&m=65912" },
-          { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705566962&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705566961&a=3013769&m=65912" },
         ],
       },
     ],
@@ -34056,14 +34182,14 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705566945&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_jz9127_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=ad2688ddea86d0766238e76a9f5bb262c318cd67",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705566944&a=3013769&m=65912" },
+          { size: "XS", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705566944&a=3013769&m=65912" },
           { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566945&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566946&a=3013769&m=65912" },
           { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705566947&a=3013769&m=65912" },
@@ -34446,11 +34572,12 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44992304169&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kg4530_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=a1ae9d9a7223af33d93c9a2c6a4672ce49e21e6e",
-        sizes: ["XS", "S", "M", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44992304173&a=3013769&m=65912" },
           { size: "S", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44992304169&a=3013769&m=65912" },
           { size: "M", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44992304175&a=3013769&m=65912" },
+          { size: "L", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44992304171&a=3013769&m=65912" },
           { size: "XL", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44992304174&a=3013769&m=65912" },
           { size: "2XL", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44992304170&a=3013769&m=65912" },
         ],
@@ -34553,7 +34680,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jz9126_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white" },
           { size: "S", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white" },
@@ -34561,7 +34688,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
           { size: "L", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white" },
           { size: "XL", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white" },
           { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white" },
-          { size: "3XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9126-pantalon-de-presentation-adidas-entrada26-tenabl-white" },
         ],
       },
     ],
@@ -35086,18 +35212,12 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 64.0,
-        priceMax: 65.0,
+        price: 65.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8078-pantalon-de-presentation-manchester-united-tiro-2024-25-grey",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_is8078_4_apparel_on_model_walking_view_white.jpg",
         sizes: ["XS", "S", "XL"],
-        sizePrices: [
-          { size: "XS", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8078-pantalon-de-presentation-manchester-united-tiro-2024-25-grey" },
-          { size: "S", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8078-pantalon-de-presentation-manchester-united-tiro-2024-25-grey" },
-          { size: "XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis8078-pantalon-de-presentation-manchester-united-tiro-2024-25-grey" },
-        ],
       },
     ],
   },
@@ -35134,11 +35254,12 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kg4530_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "M", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby" },
           { size: "S", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby" },
           { size: "M", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby" },
+          { size: "L", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby" },
           { size: "XL", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby" },
           { size: "2XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg4530-pantalon-de-presentation-ol-2026-27-team-navy-blue-2-pure-ruby" },
         ],
@@ -35425,11 +35546,16 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 48.0,
+        priceMax: 49.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg3883-pantalon-de-survetement-adidas-condivo-22-predator-bleu-indigo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/g/hg3883_app_virtual_front_white.webp",
         sizes: ["S", "M"],
+        sizePrices: [
+          { size: "S", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg3883-pantalon-de-survetement-adidas-condivo-22-predator-bleu-indigo" },
+          { size: "M", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg3883-pantalon-de-survetement-adidas-condivo-22-predator-bleu-indigo" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -35568,21 +35694,11 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jz9140_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-          { size: "3XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9140-pantalon-de-survetement-adidas-entrada26-tenabl-white" },
-        ],
       },
     ],
   },
@@ -35618,7 +35734,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz9138-pantalon-de-survetement-adidas-entrada26-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jz9138_2_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "L Tall", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -35632,31 +35748,29 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 31.75,
-        priceMax: 34.41,
+        priceMax: 32.96,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke7273-black-carbon-1.webp",
-        sizes: ["XS", "M", "L"],
+        sizes: ["XS", "M"],
         sizePrices: [
           { size: "XS", price: 32.96, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon" },
           { size: "M", price: 31.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon" },
-          { size: "L", price: 34.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon" },
         ],
       },
       {
         store: "SportIsGoodFR",
         price: 31.75,
-        priceMax: 35.46,
+        priceMax: 32.96,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke7273-black-carbon-1.webp",
-        sizes: ["XS", "M", "L"],
+        sizes: ["XS", "M"],
         sizePrices: [
           { size: "XS", price: 32.96, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon" },
           { size: "M", price: 31.75, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon" },
-          { size: "L", price: 35.46, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fke7273-pantalon-de-survetement-adidas-essentials-3-stripes-fleece-black-carbon" },
         ],
       },
     ],
@@ -35698,7 +35812,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc9400-pantalon-de-survetement-adidas-house-of-tiro-dkblue-black" },
           { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc9400-pantalon-de-survetement-adidas-house-of-tiro-dkblue-black" },
-          { size: "L", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc9400-pantalon-de-survetement-adidas-house-of-tiro-dkblue-black" },
+          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc9400-pantalon-de-survetement-adidas-house-of-tiro-dkblue-black" },
           { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc9400-pantalon-de-survetement-adidas-house-of-tiro-dkblue-black" },
         ],
       },
@@ -35902,7 +36016,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 46.0,
         priceMax: 55.0,
         shipping: 6.99,
         currency: "EUR",
@@ -35910,7 +36024,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/g/t/gt6643_app_virtual_front_white.webp",
         sizes: ["S", "M", "XL"],
         sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgt6643-pantalon-de-survetement-adidas-squadra-21-sweat-bleu-marine" },
+          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgt6643-pantalon-de-survetement-adidas-squadra-21-sweat-bleu-marine" },
           { size: "M", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgt6643-pantalon-de-survetement-adidas-squadra-21-sweat-bleu-marine" },
           { size: "XL", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgt6643-pantalon-de-survetement-adidas-squadra-21-sweat-bleu-marine" },
         ],
@@ -36054,20 +36168,11 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd9273_black-white_1.webp",
         sizes: ["XS", "S", "M", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white" },
-          { size: "3XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd9273-pantalon-de-survetement-adidas-squadra25-presentation-black-white" },
-        ],
       },
     ],
   },
@@ -36269,14 +36374,14 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
-        priceMax: 43.0,
+        priceMax: 42.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgh4470-pantalon-de-survetement-adidas-tiro-21-woven-bleu-marine",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/h/gh4470_app_virtual_standard_white.webp",
         sizes: ["S", "M"],
         sizePrices: [
-          { size: "S", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgh4470-pantalon-de-survetement-adidas-tiro-21-woven-bleu-marine" },
+          { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgh4470-pantalon-de-survetement-adidas-tiro-21-woven-bleu-marine" },
           { size: "M", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgh4470-pantalon-de-survetement-adidas-tiro-21-woven-bleu-marine" },
         ],
       },
@@ -37017,11 +37122,18 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 48.0,
+        priceMax: 65.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit9763-pantalon-de-survetement-allemagne-dna-black",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_it9763_1_apparel_photography_front_view_white.jpg",
-        sizes: ["XS", "S", "XL"],
+        sizes: ["XS", "S", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit9763-pantalon-de-survetement-allemagne-dna-black" },
+          { size: "S", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit9763-pantalon-de-survetement-allemagne-dna-black" },
+          { size: "XL", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit9763-pantalon-de-survetement-allemagne-dna-black" },
+          { size: "2XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit9763-pantalon-de-survetement-allemagne-dna-black" },
+        ],
       },
     ],
   },
@@ -37491,6 +37603,24 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-de-survetement-bayern-munich-cup-2026-27-violet",
+    brand: "adidas",
+    model: "Pantalon de survêtement Bayern Munich Cup 2026/27 - Violet",
+    colour: "Violet",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 65.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkh3793-pantalon-de-survetement-bayern-munich-cup-2026-27-shafig-legink",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kh3793-shafig-legink-6a444b886492d-1.webp",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-de-survetement-bayern-munich-dna-rouge",
     brand: "adidas",
     model: "Pantalon de survêtement Bayern Munich DNA - Rouge",
@@ -37556,7 +37686,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
           { size: "S", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4675-pantalon-de-survetement-bayern-munich-tiro-2024-25-carbon" },
           { size: "M", price: 45.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4675-pantalon-de-survetement-bayern-munich-tiro-2024-25-carbon" },
           { size: "L", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4675-pantalon-de-survetement-bayern-munich-tiro-2024-25-carbon" },
-          { size: "XL", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4675-pantalon-de-survetement-bayern-munich-tiro-2024-25-carbon" },
+          { size: "XL", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4675-pantalon-de-survetement-bayern-munich-tiro-2024-25-carbon" },
         ],
       },
       {
@@ -37606,6 +37736,9 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-survetement-bayern-munich-tiro-vis-tech-25-gris",
     brand: "adidas",
@@ -37616,7 +37749,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.25,
-        priceMax: 70.0,
+        priceMax: 69.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv5344-pantalon-de-survetement-bayern-munich-tiro-vis-tech-25-boonix-eascor",
@@ -37625,7 +37758,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv5344-pantalon-de-survetement-bayern-munich-tiro-vis-tech-25-boonix-eascor" },
           { size: "S", price: 41.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv5344-pantalon-de-survetement-bayern-munich-tiro-vis-tech-25-boonix-eascor" },
-          { size: "M", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv5344-pantalon-de-survetement-bayern-munich-tiro-vis-tech-25-boonix-eascor" },
+          { size: "M", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv5344-pantalon-de-survetement-bayern-munich-tiro-vis-tech-25-boonix-eascor" },
         ],
       },
       {
@@ -37755,9 +37888,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-survetement-competition-adidas-tiro23-noir",
     brand: "adidas",
@@ -37927,19 +38057,11 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3947-pantalon-de-survetement-femme-adidas-entrada26-tmlggr-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb3947_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3947-pantalon-de-survetement-femme-adidas-entrada26-tmlggr-white" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3947-pantalon-de-survetement-femme-adidas-entrada26-tmlggr-white" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3947-pantalon-de-survetement-femme-adidas-entrada26-tmlggr-white" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3947-pantalon-de-survetement-femme-adidas-entrada26-tmlggr-white" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3947-pantalon-de-survetement-femme-adidas-entrada26-tmlggr-white" },
-        ],
       },
     ],
   },
@@ -37971,20 +38093,20 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 44.0,
-        priceMax: 46.0,
+        priceMax: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd4815_2_apparel_on_model_standard_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
+          { size: "2XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
           { size: "XS", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
           { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
           { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
+          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
           { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
+          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd4815-pantalon-de-survetement-femme-adidas-squadra25-tenabl-white" },
         ],
       },
     ],
@@ -37999,21 +38121,21 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.74,
-        priceMax: 46.0,
+        priceMax: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_je2759_4_apparel_on_model_walking_view_white.webp",
         sizes: ["2XS", "XS", "S", "S Tall", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
+          { size: "2XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
+          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
+          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
           { size: "S Tall", price: 29.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
           { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
           { size: "L", price: 31.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
+          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
+          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2759-pantalon-de-survetement-femme-adidas-squadra25-black-white" },
         ],
       },
       {
@@ -38220,6 +38342,24 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-de-survetement-femme-adidas-tiro-24-noir",
+    brand: "adidas",
+    model: "Pantalon de survêtement femme adidas Tiro 24 - Noir",
+    colour: "Noir",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7657-pantalon-de-survetement-femme-adidas-tiro-24-black-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij7657_1_apparel_photography_front_view_white.webp",
+        sizes: ["2XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-de-survetement-femme-adidas-tiro-3-stripes-bleu",
     brand: "adidas",
     model: "Pantalon de survêtement femme adidas Tiro 3-Stripes - Bleu",
@@ -38363,7 +38503,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 80.0,
+        price: 81.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka2324-pantalon-de-survetement-femme-arsenal-2025-26-night-indigo",
@@ -39616,7 +39756,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4179-pantalon-de-survetement-manchester-united-dna-2024-25-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_it4179_1_apparel_photography_front_view_white.webp",
-        sizes: ["S", "M", "2XL"],
+        sizes: ["S", "2XL"],
       },
     ],
   },
@@ -39701,18 +39841,12 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 55.0,
-        priceMax: 56.0,
+        price: 56.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhu0042-pantalon-de-survetement-new-york-city-travel-2023-night-sky",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hu0042_1_apparel_photography_front_view_white.webp",
-        sizes: ["XS", "L", "XL"],
-        sizePrices: [
-          { size: "XS", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhu0042-pantalon-de-survetement-new-york-city-travel-2023-night-sky" },
-          { size: "L", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhu0042-pantalon-de-survetement-new-york-city-travel-2023-night-sky" },
-          { size: "XL", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhu0042-pantalon-de-survetement-new-york-city-travel-2023-night-sky" },
-        ],
+        sizes: ["XS", "S", "L", "XL"],
       },
     ],
   },
@@ -39743,7 +39877,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 42.0,
+        price: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgb2749-pantalon-de-survetement-ol-2022-23-black",
@@ -40199,7 +40333,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         sizes: ["XS", "S", "L", "2XL"],
         sizePrices: [
           { size: "XS", price: 35.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3109-pantalon-de-survetement-prematch-manchester-united-2025-26-black-aurplu-white" },
-          { size: "S", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3109-pantalon-de-survetement-prematch-manchester-united-2025-26-black-aurplu-white" },
+          { size: "S", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3109-pantalon-de-survetement-prematch-manchester-united-2025-26-black-aurplu-white" },
           { size: "L", price: 35.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3109-pantalon-de-survetement-prematch-manchester-united-2025-26-black-aurplu-white" },
           { size: "2XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3109-pantalon-de-survetement-prematch-manchester-united-2025-26-black-aurplu-white" },
         ],
@@ -40366,14 +40500,14 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 48.75,
-        priceMax: 64.0,
+        priceMax: 65.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz8993-pantalon-de-survetement-prematch-real-madrid-2025-26-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz8993_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S"],
         sizePrices: [
-          { size: "XS", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz8993-pantalon-de-survetement-prematch-real-madrid-2025-26-black" },
+          { size: "XS", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz8993-pantalon-de-survetement-prematch-real-madrid-2025-26-black" },
           { size: "S", price: 48.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz8993-pantalon-de-survetement-prematch-real-madrid-2025-26-black" },
         ],
       },
@@ -40398,7 +40532,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 35.75,
-        priceMax: 55.0,
+        priceMax: 56.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4025-pantalon-de-survetement-prematch-real-madrid-eu-2025-26-blubir",
@@ -40409,7 +40543,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
           { size: "S", price: 35.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4025-pantalon-de-survetement-prematch-real-madrid-eu-2025-26-blubir" },
           { size: "M", price: 35.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4025-pantalon-de-survetement-prematch-real-madrid-eu-2025-26-blubir" },
           { size: "L", price: 35.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4025-pantalon-de-survetement-prematch-real-madrid-eu-2025-26-blubir" },
-          { size: "XL", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4025-pantalon-de-survetement-prematch-real-madrid-eu-2025-26-blubir" },
+          { size: "XL", price: 56.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4025-pantalon-de-survetement-prematch-real-madrid-eu-2025-26-blubir" },
         ],
       },
       {
@@ -41193,7 +41327,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529824377&a=3013769&m=65912",
@@ -41622,7 +41756,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829771201&a=3013769&m=65912",
@@ -41944,6 +42078,9 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalones-de-chandal-3-rayas-arsenal-bleu",
     brand: "adidas",
@@ -42061,7 +42198,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.0,
+        price: 50.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695073100&a=3013769&m=65912",
@@ -42070,9 +42207,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalones-de-chandal-bayern-munich-tiro-23-noir",
     brand: "adidas",
@@ -42289,18 +42423,12 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.0,
-        priceMax: 50.0,
+        price: 50.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361834555&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45361834554&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hu0059_1_apparel_photography_standard_view_white.webp&feedId=89032&k=243442f241597f9acc6245a0c4e80c1482ae9aff",
         sizes: ["XS", "S", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 50.0, url: "https://www.awin1.com/pclick.php?p=45361834556&a=3013769&m=65912" },
-          { size: "S", price: 49.0, url: "https://www.awin1.com/pclick.php?p=45361834555&a=3013769&m=65912" },
-          { size: "2XL", price: 50.0, url: "https://www.awin1.com/pclick.php?p=45361834554&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -42655,7 +42783,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46014576080&a=3013769&m=65912",
@@ -43056,7 +43184,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha6254-parka-adidas-condivo-22-stadium-bleu-navy",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/a/ha6254_app_photo_front-center_white.webp",
-        sizes: ["S"],
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -43328,14 +43456,14 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 191.0,
-        priceMax: 202.0,
+        priceMax: 203.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7525-parka-bayern-munich-stadium-tiro-2025-26-eascor",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn7525_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XL", "2XL"],
         sizePrices: [
-          { size: "XL", price: 202.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7525-parka-bayern-munich-stadium-tiro-2025-26-eascor" },
+          { size: "XL", price: 203.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7525-parka-bayern-munich-stadium-tiro-2025-26-eascor" },
           { size: "2XL", price: 191.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7525-parka-bayern-munich-stadium-tiro-2025-26-eascor" },
         ],
       },
@@ -43350,7 +43478,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 192.0,
+        price: 191.0,
         priceMax: 206.0,
         shipping: 7.99,
         currency: "EUR",
@@ -43359,7 +43487,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         sizes: ["XL", "2XL"],
         sizePrices: [
           { size: "XL", price: 206.0, url: "https://www.awin1.com/pclick.php?p=45526318682&a=3013769&m=65912" },
-          { size: "2XL", price: 192.0, url: "https://www.awin1.com/pclick.php?p=45526318683&a=3013769&m=65912" },
+          { size: "2XL", price: 191.0, url: "https://www.awin1.com/pclick.php?p=45526318683&a=3013769&m=65912" },
         ],
       },
     ],
@@ -43401,8 +43529,8 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 108.0, url: "https://www.awin1.com/pclick.php?p=45361833650&a=3013769&m=65912" },
           { size: "S", price: 107.0, url: "https://www.awin1.com/pclick.php?p=45361833651&a=3013769&m=65912" },
-          { size: "M", price: 107.0, url: "https://www.awin1.com/pclick.php?p=45361833652&a=3013769&m=65912" },
-          { size: "L", price: 107.0, url: "https://www.awin1.com/pclick.php?p=45361833653&a=3013769&m=65912" },
+          { size: "M", price: 108.0, url: "https://www.awin1.com/pclick.php?p=45361833652&a=3013769&m=65912" },
+          { size: "L", price: 108.0, url: "https://www.awin1.com/pclick.php?p=45361833653&a=3013769&m=65912" },
         ],
       },
       {
@@ -43435,11 +43563,16 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 116.0,
+        priceMax: 117.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs7565-parka-juventus-turin-condivo-stadium-2022-23-magenta",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hs7565_1_apparel_photography_standard_view_white_1.webp",
         sizes: ["M", "L"],
+        sizePrices: [
+          { size: "M", price: 117.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs7565-parka-juventus-turin-condivo-stadium-2022-23-magenta" },
+          { size: "L", price: 116.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs7565-parka-juventus-turin-condivo-stadium-2022-23-magenta" },
+        ],
       },
     ],
   },
@@ -43452,17 +43585,12 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 107.0,
-        priceMax: 108.0,
+        price: 108.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361834180&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hh9338_1_apparel_photography_front_view_white.webp&feedId=89032&k=ff9122104c49f69d56226067947650e9b5c12108",
         sizes: ["XS", "S"],
-        sizePrices: [
-          { size: "XS", price: 107.0, url: "https://www.awin1.com/pclick.php?p=45361834180&a=3013769&m=65912" },
-          { size: "S", price: 108.0, url: "https://www.awin1.com/pclick.php?p=45361834181&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -43494,16 +43622,11 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 204.0,
-        priceMax: 205.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4290-parka-manchester-united-condivo-stadium-2022-23-black",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ht4290_1_apparel_photography_standard_view_white_1.jpg",
         sizes: ["XS", "M"],
-        sizePrices: [
-          { size: "XS", price: 205.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4290-parka-manchester-united-condivo-stadium-2022-23-black" },
-          { size: "M", price: 204.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4290-parka-manchester-united-condivo-stadium-2022-23-black" },
-        ],
       },
     ],
   },
@@ -43716,7 +43839,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 118.0, url: "https://www.awin1.com/pclick.php?p=43994225909&a=3013769&m=65912" },
           { size: "S", price: 119.0, url: "https://www.awin1.com/pclick.php?p=43994225912&a=3013769&m=65912" },
-          { size: "M", price: 118.0, url: "https://www.awin1.com/pclick.php?p=43994225911&a=3013769&m=65912" },
+          { size: "M", price: 119.0, url: "https://www.awin1.com/pclick.php?p=43994225911&a=3013769&m=65912" },
           { size: "L", price: 119.0, url: "https://www.awin1.com/pclick.php?p=43994225910&a=3013769&m=65912" },
           { size: "XL", price: 119.0, url: "https://www.awin1.com/pclick.php?p=43994225913&a=3013769&m=65912" },
         ],
@@ -43848,16 +43971,17 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 114.0,
-        priceMax: 118.0,
+        priceMax: 130.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39701925236&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij7388_2_apparel_photography_front_view_white.webp&feedId=89032&k=f9ad7af8170edbabe584aba0ec7508d5dc10a89e",
-        sizes: ["XS", "S", "M", "2XL"],
+        sizes: ["XS", "S", "M", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 114.0, url: "https://www.awin1.com/pclick.php?p=39701925236&a=3013769&m=65912" },
           { size: "S", price: 114.0, url: "https://www.awin1.com/pclick.php?p=40864953250&a=3013769&m=65912" },
-          { size: "M", price: 118.0, url: "https://www.awin1.com/pclick.php?p=44126448170&a=3013769&m=65912" },
+          { size: "M", price: 117.0, url: "https://www.awin1.com/pclick.php?p=44126448170&a=3013769&m=65912" },
+          { size: "XL", price: 130.0, url: "https://www.awin1.com/pclick.php?p=39701925240&a=3013769&m=65912" },
           { size: "2XL", price: 114.0, url: "https://www.awin1.com/pclick.php?p=39701925241&a=3013769&m=65912" },
         ],
       },
@@ -44601,21 +44725,31 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 24.0,
+        priceMax: 27.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41104834730&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40974404632&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fc%2Fhc6277_app_photo_front_white_1645105895.webp&feedId=89032&k=97dacb02e3f48ad8e9468b8309f58b23254f8df4",
         sizes: ["XS", "S"],
+        sizePrices: [
+          { size: "XS", price: 27.0, url: "https://www.awin1.com/pclick.php?p=41104834730&a=3013769&m=65912" },
+          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=40974404632&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 26.0,
+        price: 24.0,
+        priceMax: 26.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhc6277-polo-adidas-squadra-21-bleu-marine-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/c/hc6277_app_photo_front_white_1645105895.webp",
         sizes: ["XS", "S"],
+        sizePrices: [
+          { size: "XS", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhc6277-polo-adidas-squadra-21-bleu-marine-blanc" },
+          { size: "S", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhc6277-polo-adidas-squadra-21-bleu-marine-blanc" },
+        ],
       },
     ],
   },
@@ -44871,7 +45005,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45586520013&a=3013769&m=65912",
@@ -44916,12 +45050,18 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45586519996&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij8344_1_apparel_photography_front_view_white.webp&feedId=89032&k=b707230610c10120501e3eed94ab9ce7ec81af7d",
         sizes: ["S", "L", "2XL"],
+        sizePrices: [
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45586519996&a=3013769&m=65912" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43755738101&a=3013769&m=65912" },
+          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755738102&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -44953,7 +45093,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=44216769872&a=3013769&m=65912" },
           { size: "M", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44245765516&a=3013769&m=65912" },
-          { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44645299103&a=3013769&m=65912" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44645299103&a=3013769&m=65912" },
         ],
       },
       {
@@ -45010,7 +45150,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 42.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44061763812&a=3013769&m=65912",
@@ -45018,19 +45158,24 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "2XL"],
         sizePrices: [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/pclick.php?p=44061763812&a=3013769&m=65912" },
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44061763813&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44061763813&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43890370836&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44061763814&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44061763814&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43705567168&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kf3401_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=415860d0e0767dc3ec1991bd8fc0db503d2f7473",
         sizes: ["2XL", "3XL"],
+        sizePrices: [
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705567168&a=3013769&m=65912" },
+          { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43705567169&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -45131,10 +45276,10 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/pclick.php?p=44061763819&a=3013769&m=65912" },
-          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44160148763&a=3013769&m=65912" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44160148763&a=3013769&m=65912" },
           { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705567170&a=3013769&m=65912" },
-          { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44160148765&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=44188999262&a=3013769&m=65912" },
+          { size: "XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44160148765&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=44188999262&a=3013769&m=65912" },
           { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43780404463&a=3013769&m=65912" },
         ],
       },
@@ -45562,11 +45707,18 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
+        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529756460&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jy3420_tenabl-white_2.webp&feedId=89032&k=e5092caf897d40cb89e9f124aefc341cde6afad7",
-        sizes: ["S", "M", "L"],
+        sizes: ["S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "S", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529756460&a=3013769&m=65912" },
+          { size: "M", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529756461&a=3013769&m=65912" },
+          { size: "L", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529756462&a=3013769&m=65912" },
+          { size: "XL", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44645289372&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -45580,11 +45732,16 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
+        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529756468&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jy3421_1_apparel_on_model_standard_view_white.webp&feedId=89032&k=f6107534df5b4df4be804860cd795cd8fe4f5f51",
-        sizes: ["M"],
+        sizes: ["M", "2XL"],
+        sizePrices: [
+          { size: "M", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529756468&a=3013769&m=65912" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/pclick.php?p=46061456618&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -45800,7 +45957,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269893392&a=3013769&m=65912",
@@ -46307,6 +46464,9 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-protege-tibias-adidas-f50-rose",
     brand: "adidas",
@@ -46398,18 +46558,11 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
-        priceMax: 42.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3999-protege-tibias-adidas-tiro-competition-black-gold-metallic-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ip3999_black-gold-metallic-white_1.webp",
         sizes: ["S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3999-protege-tibias-adidas-tiro-competition-black-gold-metallic-white" },
-          { size: "M", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3999-protege-tibias-adidas-tiro-competition-black-gold-metallic-white" },
-          { size: "L", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3999-protege-tibias-adidas-tiro-competition-black-gold-metallic-white" },
-          { size: "XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3999-protege-tibias-adidas-tiro-competition-black-gold-metallic-white" },
-        ],
       },
     ],
   },
@@ -46449,9 +46602,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-protege-tibias-adidas-tiro-eu-club-rose",
     brand: "adidas",
@@ -46689,7 +46839,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4040-protege-tibias-adidas-trio-league-white-black-silvmt",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq4040_1_hardware_photography_front_center_view_white-nw111924.webp",
-        sizes: ["M", "L", "XL"],
+        sizes: ["L", "XL"],
       },
     ],
   },
@@ -46756,7 +46906,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 21.0,
+        price: 22.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5616-protege-tibias-adidas-x-speedportal-rose",
@@ -46774,17 +46924,12 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 18.0,
-        priceMax: 20.0,
+        price: 19.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6832-protege-tibias-d-entrainement-adidas-tiro-white-lucred-black",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jm6832_white-lucred-black_1.jpg",
         sizes: ["L", "XL"],
-        sizePrices: [
-          { size: "L", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6832-protege-tibias-d-entrainement-adidas-tiro-white-lucred-black" },
-          { size: "XL", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6832-protege-tibias-d-entrainement-adidas-tiro-white-lucred-black" },
-        ],
       },
     ],
   },
@@ -46798,17 +46943,11 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 18.0,
-        priceMax: 19.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3998-protege-tibias-d-entrainement-adidas-tiro-black-goldmt-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ip3998_1_hardware_photography_front_center_view_white.webp",
         sizes: ["M", "L", "XL"],
-        sizePrices: [
-          { size: "M", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3998-protege-tibias-d-entrainement-adidas-tiro-black-goldmt-white" },
-          { size: "L", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3998-protege-tibias-d-entrainement-adidas-tiro-black-goldmt-white" },
-          { size: "XL", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3998-protege-tibias-d-entrainement-adidas-tiro-black-goldmt-white" },
-        ],
       },
     ],
   },
@@ -46862,6 +47001,24 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc6689-sac-a-dos-allemagne-coupe-du-monde-2026-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_kc6689_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sac-a-dos-belgique-coupe-du-monde-2026-noir",
+    brand: "adidas",
+    model: "Sac à dos Belgique Coupe du Monde 2026 - Noir",
+    colour: "Noir",
+    type: "bag",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 50.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke2714-sac-a-dos-belgique-coupe-du-monde-2026-black-bogold-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_ke2714_1_hardware_photography_front_center_view_white.webp",
         sizes: ["TU"],
       },
     ],
@@ -47123,24 +47280,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkt3411-sac-de-sport-bayern-munich-ori-white-nindig-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kt3411-white-nindig-6a68e17432f8c-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sac-de-sport-grand-adidas-tiro-league-bleu",
-    brand: "adidas",
-    model: "Sac de sport grand adidas Tiro League - Bleu",
-    colour: "Bleu",
-    type: "bag",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 33.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib8652-sac-de-sport-grand-adidas-tiro-league-bleu-noir-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ib8652_1_hardware_photography_front_center_view_white.webp",
         sizes: ["TU"],
       },
     ],
@@ -47897,7 +48036,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgn5774-short-adidas-squadra-21-blanc-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/n/gn5774_app_photo_front-center_white.webp",
-        sizes: ["S", "2XL"],
+        sizes: ["2XL"],
       },
       {
         store: "FootStoreFR",
@@ -47994,7 +48133,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 21.0,
+        price: 23.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgn8084-short-adidas-squadra-21-orange-blanc",
@@ -48503,11 +48642,17 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 21.0,
+        priceMax: 22.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7855-short-adidas-squadra25-ngtcar-black-seimor",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn7855_5_apparel_on_model_standard_outfit_view_white.webp",
         sizes: ["S", "M", "L"],
+        sizePrices: [
+          { size: "S", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7855-short-adidas-squadra25-ngtcar-black-seimor" },
+          { size: "M", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7855-short-adidas-squadra25-ngtcar-black-seimor" },
+          { size: "L", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7855-short-adidas-squadra25-ngtcar-black-seimor" },
+        ],
       },
     ],
   },
@@ -49574,6 +49719,24 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-short-allemagne-euro-2024-noir",
+    brand: "adidas",
+    model: "Short  Allemagne Euro 2024 - Noir",
+    colour: "Noir",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 45.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip8258-short-allemagne-euro-2024-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ip8258_1_apparel_photography_front_view_white.webp",
+        sizes: ["XS"],
+      },
+    ],
+  },
+  {
     id: "adidas-short-allemagne-tt-coupe-du-monde-2026-noir",
     brand: "adidas",
     model: "Short Allemagne TT Coupe du Monde 2026 - Noir",
@@ -50232,6 +50395,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-short-d-entrainement-arsenal-2025-26-bleu",
     brand: "adidas",
@@ -50439,9 +50605,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-short-d-entrainement-colombie-copa-america-2024-noir",
     brand: "adidas",
@@ -50636,7 +50799,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 36.0,
+        price: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7457-short-d-entrainement-juventus-turin-2025-26-black",
@@ -50682,15 +50845,15 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.82,
-        priceMax: 31.0,
+        priceMax: 32.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1555-short-d-entrainement-juventus-turin-tiro-2024-25-brown",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jj1555_1_apparel_photography_front_view_white.webp",
         sizes: ["S", "M", "XL"],
         sizePrices: [
-          { size: "S", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1555-short-d-entrainement-juventus-turin-tiro-2024-25-brown" },
-          { size: "M", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1555-short-d-entrainement-juventus-turin-tiro-2024-25-brown" },
+          { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1555-short-d-entrainement-juventus-turin-tiro-2024-25-brown" },
+          { size: "M", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1555-short-d-entrainement-juventus-turin-tiro-2024-25-brown" },
           { size: "XL", price: 19.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj1555-short-d-entrainement-juventus-turin-tiro-2024-25-brown" },
         ],
       },
@@ -50830,7 +50993,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.82,
-        priceMax: 43.0,
+        priceMax: 42.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3992-short-d-entrainement-real-madrid-2025-26-utigre",
@@ -50838,7 +51001,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         sizes: ["XS", "S"],
         sizePrices: [
           { size: "XS", price: 19.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3992-short-d-entrainement-real-madrid-2025-26-utigre" },
-          { size: "S", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3992-short-d-entrainement-real-madrid-2025-26-utigre" },
+          { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3992-short-d-entrainement-real-madrid-2025-26-utigre" },
         ],
       },
       {
@@ -52004,24 +52167,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-short-domicile-mexique-coupe-du-monde-2026-blanc",
-    brand: "adidas",
-    model: "Short Domicile Mexique Coupe du Monde 2026 - Blanc",
-    colour: "Blanc",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 45.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl8541-short-domicile-mexique-coupe-du-monde-2026-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_jl8541_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-short-domicile-ol-2024-25-blanc",
     brand: "adidas",
     model: "Short Domicile OL 2024/25 - Blanc",
@@ -52407,24 +52552,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-short-exterieur-belgique-coupe-du-monde-2026-blanc",
-    brand: "adidas",
-    model: "Short Extérieur Belgique Coupe du Monde 2026 - Blanc",
-    colour: "Blanc",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 45.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm8387-short-exterieur-belgique-coupe-du-monde-2026-whiteblack",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2026_03_adidas_jm8387_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["S", "M"],
-      },
-    ],
-  },
-  {
     id: "adidas-short-exterieur-benfica-lisbonne-2025-26-gris",
     brand: "adidas",
     model: "Short Extérieur Benfica Lisbonne 2025/26 - Gris",
@@ -52732,7 +52859,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232313&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jz9415_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=3d31dc63841feaa4c6b3f855a01fb3b65570a1e4",
-        sizes: ["S", "M"],
+        sizes: ["S"],
       },
     ],
   },
@@ -53344,7 +53471,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 27.0,
+        price: 26.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka8799-short-femme-adidas-tiro-26-league-white-black-black",
@@ -53620,6 +53747,24 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-short-italie-travel-euro-2024-bleu",
+    brand: "adidas",
+    model: "Short Italie travel Euro 2024 - Bleu",
+    colour: "Bleu",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiu2119-short-italie-travel-euro-2024-arcngt",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_iu2119_1_apparel_photography_front_view_white.jpg",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
     id: "adidas-short-italie-tt-coupe-du-monde-2026-bleu",
     brand: "adidas",
     model: "Short Italie TT Coupe du Monde 2026 - Bleu",
@@ -53840,7 +53985,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5787-short-juventus-turin-tiro-2024-25-competition-downtime-tenabl",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is5787_tenabl_1.webp",
-        sizes: ["S", "2XL"],
+        sizes: ["XS", "S", "2XL"],
       },
     ],
   },
@@ -54316,7 +54461,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 54.0,
+        price: 53.0,
         priceMax: 58.0,
         shipping: 6.99,
         currency: "EUR",
@@ -54324,7 +54469,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_im7468_1_apparel_photography_front_view_white.jpg",
         sizes: ["S", "L"],
         sizePrices: [
-          { size: "S", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim7468-short-real-madrid-2024-25-dark-grey" },
+          { size: "S", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim7468-short-real-madrid-2024-25-dark-grey" },
           { size: "L", price: 58.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim7468-short-real-madrid-2024-25-dark-grey" },
         ],
       },
@@ -54366,6 +54511,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-short-real-madrid-dt-2025-26-gris",
     brand: "adidas",
@@ -54429,7 +54577,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 42.0,
+        price: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji9553-short-third-arsenal-2025-26-tecobu-clowhi",
@@ -54447,18 +54595,18 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 35.0,
+        price: 36.0,
         priceMax: 42.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiz3132-short-third-bayern-munich-2024-25-beige-null",
-        imageUrl: "https://cdn.blazimg.com/1800/product/i/z/iz3132_1_apparel_photography_front_view_white.webp",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/i/z/iz3132_1_apparel_photography_front_view_white.jpg",
         sizes: ["S", "M", "XL", "3XL"],
         sizePrices: [
           { size: "S", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiz3132-short-third-bayern-munich-2024-25-beige-null" },
           { size: "M", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiz3132-short-third-bayern-munich-2024-25-beige-null" },
           { size: "XL", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiz3132-short-third-bayern-munich-2024-25-beige-null" },
-          { size: "3XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiz3132-short-third-bayern-munich-2024-25-beige-null" },
+          { size: "3XL", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiz3132-short-third-bayern-munich-2024-25-beige-null" },
         ],
       },
     ],
@@ -54523,9 +54671,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-short-third-manchester-united-2022-23-bleu",
     brand: "adidas",
@@ -54748,7 +54893,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 46.0,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke8370-short-tisse-adidas-tiro-travel-tenabl-black",
@@ -54766,7 +54911,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 46.0,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke8369-short-tisse-adidas-tiro-travel-tmlggr-black",
@@ -54785,21 +54930,11 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jm5542_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-          { size: "3XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5542-short-tisse-adidas-tiro-travel-black-black" },
-        ],
       },
     ],
   },
@@ -54888,18 +55023,11 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7031-short-training-argentine-tiro-coupe-du-monde-2026-ntnavy",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_jy7031_0.webp",
         sizes: ["XS", "S", "M", "XL"],
-        sizePrices: [
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7031-short-training-argentine-tiro-coupe-du-monde-2026-ntnavy" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7031-short-training-argentine-tiro-coupe-du-monde-2026-ntnavy" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7031-short-training-argentine-tiro-coupe-du-monde-2026-ntnavy" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7031-short-training-argentine-tiro-coupe-du-monde-2026-ntnavy" },
-        ],
       },
     ],
   },
@@ -54918,6 +55046,24 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4439-short-training-arsenal-condivo-2022-23-bleu-marine",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ht4439_2_apparel_photography_front_center_view_white.webp",
         sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-short-training-arsenal-tiro-2023-24-gris",
+    brand: "adidas",
+    model: "Short Training Arsenal Tiro 2023/24 - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 45.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7790-short-training-arsenal-tiro-2023-24-grey-five",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij7790_1_apparel_photography_front_view_white_nw.webp",
+        sizes: ["S"],
       },
     ],
   },
@@ -55008,16 +55154,11 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 42.0,
-        priceMax: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7474-short-training-de-competition-europeenne-juventus-turin-tiro-25-2025-26-shagrn",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn7474_shagrn_1.webp",
         sizes: ["S", "M"],
-        sizePrices: [
-          { size: "S", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7474-short-training-de-competition-europeenne-juventus-turin-tiro-25-2025-26-shagrn" },
-          { size: "M", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7474-short-training-de-competition-europeenne-juventus-turin-tiro-25-2025-26-shagrn" },
-        ],
       },
     ],
   },
@@ -55297,12 +55438,11 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529259213&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2F5%2Fh57479_app_photo_front-center_white_1645109934.webp&feedId=89032&k=0ee2b87e7c3b1c9b9d5865c244a403ff22624080",
-        sizes: ["S", "M", "XL", "2XL"],
+        sizes: ["S", "M", "XL"],
         sizePrices: [
           { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529259213&a=3013769&m=65912" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529259214&a=3013769&m=65912" },
           { size: "XL", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42529259215&a=3013769&m=65912" },
-          { size: "2XL", price: 43.0, url: "https://www.awin1.com/pclick.php?p=42529259216&a=3013769&m=65912" },
         ],
       },
     ],
@@ -55688,7 +55828,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44822448421&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ic7878_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=39dee6817ba3ddd9b0600b3ed6b076343ede3473",
-        sizes: ["XS", "M"],
+        sizes: ["XS", "S", "M", "XL", "2XL"],
       },
     ],
   },
@@ -55811,7 +55951,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
-        priceMax: 48.0,
+        priceMax: 47.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529354312&a=3013769&m=65912",
@@ -55819,7 +55959,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         sizes: ["XS", "L", "XL"],
         sizePrices: [
           { size: "XS", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529354312&a=3013769&m=65912" },
-          { size: "L", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529354315&a=3013769&m=65912" },
+          { size: "L", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42529354315&a=3013769&m=65912" },
           { size: "XL", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529354316&a=3013769&m=65912" },
         ],
       },
@@ -55928,9 +56068,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         sizes: ["XS", "S", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 52.0, url: "https://www.awin1.com/pclick.php?p=41104846698&a=3013769&m=65912" },
-          { size: "S", price: 52.0, url: "https://www.awin1.com/pclick.php?p=41104846699&a=3013769&m=65912" },
-          { size: "L", price: 52.0, url: "https://www.awin1.com/pclick.php?p=41104846701&a=3013769&m=65912" },
-          { size: "XL", price: 52.0, url: "https://www.awin1.com/pclick.php?p=41104846702&a=3013769&m=65912" },
+          { size: "S", price: 53.0, url: "https://www.awin1.com/pclick.php?p=41104846699&a=3013769&m=65912" },
+          { size: "L", price: 53.0, url: "https://www.awin1.com/pclick.php?p=41104846701&a=3013769&m=65912" },
+          { size: "XL", price: 53.0, url: "https://www.awin1.com/pclick.php?p=41104846702&a=3013769&m=65912" },
           { size: "2XL", price: 60.0, url: "https://www.awin1.com/pclick.php?p=43829759263&a=3013769&m=65912" },
         ],
       },
@@ -56292,12 +56432,18 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 110.0,
+        price: 109.0,
+        priceMax: 110.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44651309922&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fc%2Fkc1181.webp&feedId=89032&k=ff1e613913164429ed263a24be87b98bfe13ff03",
         sizes: ["XS", "S", "M"],
+        sizePrices: [
+          { size: "XS", price: 109.0, url: "https://www.awin1.com/pclick.php?p=44651309922&a=3013769&m=65912" },
+          { size: "S", price: 110.0, url: "https://www.awin1.com/pclick.php?p=44651309923&a=3013769&m=65912" },
+          { size: "M", price: 109.0, url: "https://www.awin1.com/pclick.php?p=44651309924&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -57100,16 +57246,16 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43770964074&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij7673_1_apparel_photography_front_view_white.webp&feedId=89032&k=e2e1ffa2d82ea38cc8eeffa78e6207a998a6cfe0",
-        sizes: ["XS", "S", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
       },
       {
         store: "FootStoreES",
         price: 60.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529594101&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529594100&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij5607_1_apparel_photography_front_view_white.webp&feedId=89032&k=7849fd56350d698459334e2ed16b5e6cf4ed1382",
-        sizes: ["S"],
+        sizes: ["XS", "S"],
       },
       {
         store: "FootStoreES",
@@ -57118,7 +57264,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37924010696&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij9957_1_apparel_photography_front_view_white.webp&feedId=89032&k=42aafcb75f34f0beeb9d5bd35d7bea68eacafd4f",
-        sizes: ["S", "M", "XL", "2XL"],
+        sizes: ["S", "M", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -57342,9 +57488,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         price: 75.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43705567898&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43705567894&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_kf6078_1_apparel_photography_front_center_view_white.webp&feedId=89032&k=5fb483d459741ec9200ee8f588ea5e4f32f06162",
-        sizes: ["XL", "2XL", "3XL"],
+        sizes: ["XS", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -57713,11 +57859,16 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 35.17,
+        priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529594123&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ij9956_1_apparel_photography_front_view_white.webp&feedId=89032&k=f4f4969399f5da46ad2ba7dbf53177bea4b646a0",
-        sizes: ["XL"],
+        sizes: ["S", "XL"],
+        sizePrices: [
+          { size: "S", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529594120&a=3013769&m=65912" },
+          { size: "XL", price: 35.17, url: "https://www.awin1.com/pclick.php?p=42529594123&a=3013769&m=65912" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -58000,12 +58151,18 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.0,
+        price: 90.0,
+        priceMax: 91.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686636751&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hs9802_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=94e19e44ca35c3b7fc69e4751c4fd015e73c01da",
         sizes: ["S", "M", "L"],
+        sizePrices: [
+          { size: "S", price: 90.0, url: "https://www.awin1.com/pclick.php?p=44686636751&a=3013769&m=65912" },
+          { size: "M", price: 91.0, url: "https://www.awin1.com/pclick.php?p=44695072011&a=3013769&m=65912" },
+          { size: "L", price: 91.0, url: "https://www.awin1.com/pclick.php?p=44695072012&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -58100,11 +58257,16 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 84.0,
+        priceMax: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443785311&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ia7297_2_apparel_photography_front_center_view_white.webp&feedId=89032&k=2257259aa18ca0b1e56fda10b3dee8bdd7f3eb8d",
         sizes: ["XS", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45443785311&a=3013769&m=65912" },
+          { size: "2XL", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45443785312&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -58379,6 +58541,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-y-cremallera-adidas-tiro26-league-noir",
     brand: "adidas",
@@ -58463,9 +58628,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         price: 75.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45263175116&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45263175119&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq0609_1_apparel_photography_front_view_white.webp&feedId=89032&k=6095d364172cf4b3ccb9fd4f5a0a953d500c0cbd",
-        sizes: ["S", "M", "L", "2XL"],
+        sizes: ["2XL"],
       },
     ],
   },
@@ -58523,9 +58688,6 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-de-entrenamiento-real-madrid-2023-24-orange",
     brand: "adidas",
@@ -58590,7 +58752,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
-        priceMax: 53.0,
+        priceMax: 52.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529669124&a=3013769&m=65912",
@@ -58598,7 +58760,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         sizes: ["M", "L"],
         sizePrices: [
           { size: "M", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529669124&a=3013769&m=65912" },
-          { size: "L", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42529669125&a=3013769&m=65912" },
+          { size: "L", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42529669125&a=3013769&m=65912" },
         ],
       },
     ],
@@ -58698,7 +58860,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         sizes: ["XS", "M", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 69.0, url: "https://www.awin1.com/pclick.php?p=45361880472&a=3013769&m=65912" },
-          { size: "M", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42530016251&a=3013769&m=65912" },
+          { size: "M", price: 70.0, url: "https://www.awin1.com/pclick.php?p=42530016251&a=3013769&m=65912" },
           { size: "XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=45361880473&a=3013769&m=65912" },
           { size: "2XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42530016254&a=3013769&m=65912" },
         ],
@@ -58831,17 +58993,12 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 54.0,
-        priceMax: 55.0,
+        price: 55.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffs7121-sweat-training-adidas-condivo-20-bleu-marine",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_fs7121_2_apparel_photography_front_center_view_white-nw112824.jpg",
         sizes: ["XS", "XL"],
-        sizePrices: [
-          { size: "XS", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffs7121-sweat-training-adidas-condivo-20-bleu-marine" },
-          { size: "XL", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffs7121-sweat-training-adidas-condivo-20-bleu-marine" },
-        ],
       },
     ],
   },
@@ -59103,20 +59260,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jz6583_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6583-sweatshirt-a-capuche-adidas-entrada-26-tenabl-white" },
-        ],
       },
     ],
   },
@@ -59202,21 +59350,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz6581_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-          { size: "3XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6581-sweatshirt-a-capuche-adidas-entrada-26-teagrn-white" },
-        ],
       },
     ],
   },
@@ -59314,7 +59452,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/g/p/gp6438_app_photo_front_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6438-sweatshirt-a-capuche-adidas-squadra-21-jaune-blanc" },
+          { size: "XS", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6438-sweatshirt-a-capuche-adidas-squadra-21-jaune-blanc" },
           { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6438-sweatshirt-a-capuche-adidas-squadra-21-jaune-blanc" },
           { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6438-sweatshirt-a-capuche-adidas-squadra-21-jaune-blanc" },
           { size: "L", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6438-sweatshirt-a-capuche-adidas-squadra-21-jaune-blanc" },
@@ -59369,7 +59507,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 52.0,
+        price: 51.0,
         priceMax: 55.0,
         shipping: 6.99,
         currency: "EUR",
@@ -59381,7 +59519,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
           { size: "S", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
           { size: "M", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
           { size: "M Tall", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
-          { size: "L", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
+          { size: "L", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
           { size: "XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
           { size: "XL Tall 3", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
           { size: "2XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2973-sweatshirt-a-capuche-adidas-squadra25-tepore-white" },
@@ -59619,7 +59757,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7673-sweatshirt-a-capuche-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij7673_1_apparel_photography_front_view_white.webp",
-        sizes: ["XS", "S", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
       },
       {
         store: "FootStoreFR",
@@ -59628,7 +59766,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij9957-sweatshirt-a-capuche-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij9957_1_apparel_photography_front_view_white.webp",
-        sizes: ["S", "M", "XL", "2XL"],
+        sizes: ["S", "M", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -59816,7 +59954,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
           { size: "S", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
-          { size: "M", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
+          { size: "M", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
           { size: "L", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
           { size: "XL", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
           { size: "2XL", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf6075-sweatshirt-a-capuche-adidas-tiro-travel-black" },
@@ -60059,7 +60197,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg2237-sweatshirt-a-capuche-bayern-munich-og-nindig-cwhite",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kg2237-nindig-cwhite-6a444c77a17c2-2.webp",
-        sizes: ["S", "M", "L", "2XL"],
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -60134,10 +60272,10 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_it3782_2_apparel_photography_front_center_view_white.jpg",
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
-          { size: "S", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3782-sweatshirt-a-capuche-en-maille-double-juventus-turin-2024-25-owhite" },
+          { size: "S", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3782-sweatshirt-a-capuche-en-maille-double-juventus-turin-2024-25-owhite" },
           { size: "M", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3782-sweatshirt-a-capuche-en-maille-double-juventus-turin-2024-25-owhite" },
           { size: "L", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3782-sweatshirt-a-capuche-en-maille-double-juventus-turin-2024-25-owhite" },
-          { size: "XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3782-sweatshirt-a-capuche-en-maille-double-juventus-turin-2024-25-owhite" },
+          { size: "XL", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3782-sweatshirt-a-capuche-en-maille-double-juventus-turin-2024-25-owhite" },
         ],
       },
     ],
@@ -60255,7 +60393,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij5607-sweatshirt-a-capuche-femme-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij5607_1_apparel_photography_front_view_white.webp",
-        sizes: ["S"],
+        sizes: ["XS", "S"],
       },
     ],
   },
@@ -60655,11 +60793,16 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 83.0,
+        priceMax: 84.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fia7297-sweatshirt-a-capuche-manchester-united-all-waether-tiro-23-core-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ia7297_2_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fia7297-sweatshirt-a-capuche-manchester-united-all-waether-tiro-23-core-white" },
+          { size: "2XL", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fia7297-sweatshirt-a-capuche-manchester-united-all-waether-tiro-23-core-white" },
+        ],
       },
     ],
   },
@@ -60726,7 +60869,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 55.0,
+        price: 56.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb8481-sweatshirt-a-capuche-new-york-red-bulls-travel-2021-22-rouge",
@@ -60745,11 +60888,16 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 42.0,
+        priceMax: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl1904-sweatshirt-a-capuche-ol-tmmdgr-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_10_adidas_jl1904_0.jpg",
         sizes: ["S", "M"],
+        sizePrices: [
+          { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl1904-sweatshirt-a-capuche-ol-tmmdgr-white" },
+          { size: "M", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl1904-sweatshirt-a-capuche-ol-tmmdgr-white" },
+        ],
       },
     ],
   },
@@ -60902,11 +61050,16 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 35.07,
+        priceMax: 55.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij9956-sweatshirt-a-capuche-training-femme-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij9956_1_apparel_photography_front_view_white.webp",
-        sizes: ["XL"],
+        sizes: ["S", "XL"],
+        sizePrices: [
+          { size: "S", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij9956-sweatshirt-a-capuche-training-femme-adidas-tiro-24-black-white" },
+          { size: "XL", price: 35.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij9956-sweatshirt-a-capuche-training-femme-adidas-tiro-24-black-white" },
+        ],
       },
       {
         store: "SportIsGoodFR",
@@ -61228,12 +61381,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57479-sweatshirt-adidas-entrada-22-gris",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/5/h57479_app_photo_front-center_white_1645109934.webp",
-        sizes: ["S", "M", "XL", "2XL"],
+        sizes: ["S", "M", "XL"],
         sizePrices: [
           { size: "S", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57479-sweatshirt-adidas-entrada-22-gris" },
           { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57479-sweatshirt-adidas-entrada-22-gris" },
           { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57479-sweatshirt-adidas-entrada-22-gris" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57479-sweatshirt-adidas-entrada-22-gris" },
         ],
       },
     ],
@@ -61248,16 +61400,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 39.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57478-sweatshirt-adidas-entrada-22-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/5/h57478_app_photo_front_white_1645111941.webp",
-        sizes: ["S", "XL"],
-        sizePrices: [
-          { size: "S", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57478-sweatshirt-adidas-entrada-22-noir" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57478-sweatshirt-adidas-entrada-22-noir" },
-        ],
+        sizes: ["S"],
       },
     ],
   },
@@ -61307,20 +61454,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz6572_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white" },
-          { size: "3XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6572-sweatshirt-adidas-entrada-26-tmlggr-white" },
-        ],
       },
     ],
   },
@@ -62106,8 +62244,8 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb3952_1_apparel_photography_front_center_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL"],
         sizePrices: [
-          { size: "2XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
+          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
+          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
           { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
           { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
           { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3952-sweatshirt-femme-adidas-entrada-26-tenabl-white" },
@@ -62126,20 +62264,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb3948_1_apparel_photography_front_center_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "2XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white" },
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3948-sweatshirt-femme-adidas-entrada-26-tmlggr-white" },
-        ],
       },
     ],
   },
@@ -62153,20 +62282,11 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb3951_1_apparel_photography_front_center_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white" },
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3951-sweatshirt-femme-adidas-entrada-26-black-white" },
-        ],
       },
     ],
   },
@@ -62180,23 +62300,17 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb3950_1_apparel_photography_front_center_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white" },
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb3950-sweatshirt-femme-adidas-entrada-26-tepore-white" },
-        ],
       },
     ],
   },
+];
+
+const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sweatshirt-femme-adidas-tiro-23-league-bleu",
     brand: "adidas",
@@ -62399,9 +62513,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sweatshirt-manchester-united-doubleknit-2024-25-bleu",
     brand: "adidas",
@@ -62422,24 +62533,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
           { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4191-sweatshirt-manchester-united-doubleknit-2024-25-vicblu" },
           { size: "L", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4191-sweatshirt-manchester-united-doubleknit-2024-25-vicblu" },
         ],
-      },
-    ],
-  },
-  {
-    id: "adidas-sweatshirt-manchester-united-eqt-rouge",
-    brand: "adidas",
-    model: "Sweatshirt Manchester United EQT - Rouge",
-    colour: "Rouge",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 90.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkh4831-sweatshirt-manchester-united-eqt-mufred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kh4831-mufred-6a444e58759c2-1.webp",
-        sizes: ["S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -62645,8 +62738,8 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/h/2/h23121_app_photo_front-center_white.webp",
         sizes: ["L", "XL", "2XL"],
         sizePrices: [
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh23121-t-shirt-a-manches-longues-adidas-techfit-blanc" },
-          { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh23121-t-shirt-a-manches-longues-adidas-techfit-blanc" },
+          { size: "L", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh23121-t-shirt-a-manches-longues-adidas-techfit-blanc" },
+          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh23121-t-shirt-a-manches-longues-adidas-techfit-blanc" },
           { size: "2XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh23121-t-shirt-a-manches-longues-adidas-techfit-blanc" },
         ],
       },
@@ -63233,6 +63326,24 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-t-shirt-adidas-tiro-24-bleu",
+    brand: "adidas",
+    model: "T-shirt adidas Tiro 24 - Bleu",
+    colour: "Bleu",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 31.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fir9347-t-shirt-adidas-tiro-24-tenabl-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ir9347_1_apparel_photography_front_view_white.webp",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-t-shirt-adidas-tiro-25-gris",
     brand: "adidas",
     model: "T-shirt adidas Tiro 25 - Gris",
@@ -63553,7 +63664,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb4437-t-shirt-allemagne-tiro-coupe-du-monde-2026-tepore",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_kb4437_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["M", "XL"],
+        sizes: ["XL"],
       },
     ],
   },
@@ -63748,24 +63859,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
           { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm9425-t-shirt-bayern-munich-ubp-2025-26-red-white" },
           { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm9425-t-shirt-bayern-munich-ubp-2025-26-red-white" },
         ],
-      },
-    ],
-  },
-  {
-    id: "adidas-t-shirt-bayern-munich-us-2025-26-gris",
-    brand: "adidas",
-    model: "T-shirt Bayern Munich US 2025/26 - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 42.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm9442-t-shirt-bayern-munich-us-2025-26-boonix-owhite",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jm9442_boonix-owhite_1.jpg",
-        sizes: ["L"],
       },
     ],
   },
@@ -64101,6 +64194,24 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-t-shirt-femme-allemagne-travel-euro-feminin-2022-bleu",
+    brand: "adidas",
+    model: "T-shirt femme Allemagne Travel Euro Féminin 2022 - Bleu",
+    colour: "Bleu",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 55.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgr0524-t-shirt-femme-allemagne-travel-2021-22-bleu-menthe-shock-mint-vert-pale",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/g/r/gr0524_1_apparel_photography_front view_white.jpg",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-t-shirt-graphique-real-madrid-2025-26-bleu",
     brand: "adidas",
     model: "T-shirt graphique Real Madrid 2025/26 - Bleu",
@@ -64317,24 +64428,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-t-shirt-juventus-turin-dna-2024-25-noir",
-    brand: "adidas",
-    model: "T-shirt Juventus Turin Dna 2024/25 - Noir",
-    colour: "Noir",
-    type: "tshirt",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 33.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiy4120-t-shirt-juventus-turin-dna-2024-25-black",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_iy4120_1_apparel_photography_front_view_white.jpg",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-t-shirt-juventus-turin-graphic-2024-25-blanc",
     brand: "adidas",
     model: "T-shirt Juventus Turin Graphic 2024/25 - Blanc",
@@ -64504,6 +64597,24 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-t-shirt-manches-longues-adidas-techfit-aeroready-bleu",
+    brand: "adidas",
+    model: "T-shirt manches longues adidas Techfit Aeroready - Bleu",
+    colour: "Bleu",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 38.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim8540-t-shirt-manches-longues-adidas-techfit-aeroready-royblu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_im8540_1_apparel_photography_front_view_white.webp",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-t-shirt-manches-longues-adidas-techfit-blanc",
     brand: "adidas",
     model: "T-shirt manches longues adidas Techfit - Blanc",
@@ -64576,10 +64687,19 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-t-shirt-manches-longues-adidas-techfit-cold-rdy-bleu",
     brand: "adidas",
-    model: "T-shirt manches longues adidas Techfit Cold.rdy - Bleu",
+    model: "T-shirt manches longues adidas Techfit Cold.Rdy - Bleu",
     colour: "Bleu",
     type: "tshirt",
     offers: [
+      {
+        store: "FootStoreFR",
+        price: 49.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim8614-t-shirt-manches-longues-adidas-techfit-cold-rdy-tenabl",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_im8614_tenabl_1.webp",
+        sizes: ["3XL"],
+      },
       {
         store: "FootStoreFR",
         price: 48.0,
@@ -64689,11 +64809,16 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 38.0,
+        priceMax: 39.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft-shirt-manches-longues-adidas-techfit-rouge-puissant",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/u/gu7336_app_photo_front-center_white.webp",
         sizes: ["XL", "2XL"],
+        sizePrices: [
+          { size: "XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft-shirt-manches-longues-adidas-techfit-rouge-puissant" },
+          { size: "2XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft-shirt-manches-longues-adidas-techfit-rouge-puissant" },
+        ],
       },
     ],
   },
@@ -64819,7 +64944,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7013-t-shirt-mercedes-amg-petronas-formula-one-team-granit-blacas",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ib7013_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "L", "XL"],
+        sizes: ["XS", "L"],
       },
       {
         store: "SportIsGoodFR",
@@ -64828,7 +64953,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fib7013-t-shirt-mercedes-amg-petronas-formula-one-team-granit-blacas",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ib7013_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "L", "XL"],
+        sizes: ["XS", "L"],
       },
     ],
   },
@@ -65212,7 +65337,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 73.0,
+        price: 72.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9258-training-top-adidas-condivo-20-ultimate-gris-chine-beige-nude",
@@ -65356,7 +65481,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 73.0,
+        price: 74.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4688-veste-a-capuche-real-madrid-tiro-2024-25-black",
@@ -65539,12 +65664,22 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 92.0,
+        price: 91.0,
+        priceMax: 92.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jz6669_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+          { size: "S", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+          { size: "M", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+          { size: "L", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+          { size: "XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+          { size: "2XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+          { size: "3XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6669-veste-adidas-entrada-26-stadium-tenabl-white" },
+        ],
       },
     ],
   },
@@ -65557,8 +65692,8 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 92.0,
-        priceMax: 97.0,
+        price: 91.0,
+        priceMax: 96.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white",
@@ -65566,12 +65701,12 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
-          { size: "S", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
-          { size: "M", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
-          { size: "L", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
-          { size: "XL", price: 97.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
-          { size: "2XL", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
-          { size: "3XL", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
+          { size: "S", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
+          { size: "M", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
+          { size: "L", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
+          { size: "XL", price: 96.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
+          { size: "2XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
+          { size: "3XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6668-veste-adidas-entrada-26-stadium-black-white" },
         ],
       },
     ],
@@ -65651,9 +65786,8 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6448-veste-adidas-squadra-21-presentation-jaune-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/p/gp6448_app_photo_front_white.webp",
-        sizes: ["XS", "S", "M", "L"],
+        sizes: ["S", "M", "L"],
         sizePrices: [
-          { size: "XS", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6448-veste-adidas-squadra-21-presentation-jaune-blanc" },
           { size: "S", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6448-veste-adidas-squadra-21-presentation-jaune-blanc" },
           { size: "M", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6448-veste-adidas-squadra-21-presentation-jaune-blanc" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6448-veste-adidas-squadra-21-presentation-jaune-blanc" },
@@ -65694,14 +65828,14 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 30.0,
-        priceMax: 42.0,
+        priceMax: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6446-veste-adidas-squadra-21-presentation-rouge-puissant-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/p/gp6446_app_photo_front-center_white.webp",
         sizes: ["XS", "S", "M", "L"],
         sizePrices: [
-          { size: "XS", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6446-veste-adidas-squadra-21-presentation-rouge-puissant-blanc" },
+          { size: "XS", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6446-veste-adidas-squadra-21-presentation-rouge-puissant-blanc" },
           { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6446-veste-adidas-squadra-21-presentation-rouge-puissant-blanc" },
           { size: "M", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6446-veste-adidas-squadra-21-presentation-rouge-puissant-blanc" },
           { size: "L", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6446-veste-adidas-squadra-21-presentation-rouge-puissant-blanc" },
@@ -65833,16 +65967,16 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 37.0,
-        priceMax: 40.0,
+        priceMax: 39.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6462-veste-adidas-squadra-21-training-vert-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/p/gp6462_app_photo_front-center_white.webp",
         sizes: ["S", "M", "L"],
         sizePrices: [
-          { size: "S", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6462-veste-adidas-squadra-21-training-vert-blanc" },
+          { size: "S", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6462-veste-adidas-squadra-21-training-vert-blanc" },
           { size: "M", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6462-veste-adidas-squadra-21-training-vert-blanc" },
-          { size: "L", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6462-veste-adidas-squadra-21-training-vert-blanc" },
+          { size: "L", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6462-veste-adidas-squadra-21-training-vert-blanc" },
         ],
       },
     ],
@@ -65875,17 +66009,11 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 44.0,
-        priceMax: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fveste-adidas-tiro-21-track-rouge-puissant",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/g/m/gm7308_app_photo_front_white.jpg",
         sizes: ["S", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fveste-adidas-tiro-21-track-rouge-puissant" },
-          { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fveste-adidas-tiro-21-track-rouge-puissant" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fveste-adidas-tiro-21-track-rouge-puissant" },
-        ],
       },
     ],
   },
@@ -65970,7 +66098,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 117.0,
+        price: 118.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcv8271-veste-adidas-winter-18-bleu-fonce-blanc",
@@ -66162,7 +66290,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -66173,13 +66301,16 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
           { size: "XS", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
           { size: "S", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
           { size: "M", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
-          { size: "L", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
+          { size: "L", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
           { size: "XL", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
           { size: "3XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fed9248-veste-d-echauffement-adidas-condivo-20-rouge-puissant-blanc" },
         ],
       },
     ],
   },
+];
+
+const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "adidas-veste-d-entrainement-adidas-squadra-25-noir",
     brand: "adidas",
@@ -66324,7 +66455,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 38.0,
-        priceMax: 40.0,
+        priceMax: 39.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy",
@@ -66332,16 +66463,13 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
           { size: "S", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy" },
-          { size: "M", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy" },
+          { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy" },
           { size: "L", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy" },
-          { size: "2XL", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy" },
+          { size: "2XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhb0571-veste-de-presentation-adidas-entrada-22-bleu-navy" },
         ],
       },
     ],
   },
-];
-
-const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "adidas-veste-de-presentation-adidas-entrada-22-gris",
     brand: "adidas",
@@ -66429,16 +66557,11 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6619-veste-de-presentation-adidas-entrada-26-tenabl-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz6619_1_apparel_photography_front_center_view_white.webp",
         sizes: ["L", "2XL"],
-        sizePrices: [
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6619-veste-de-presentation-adidas-entrada-26-tenabl-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6619-veste-de-presentation-adidas-entrada-26-tenabl-white" },
-        ],
       },
     ],
   },
@@ -66451,7 +66574,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 46.0,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6620-veste-de-presentation-adidas-entrada-26-tmlggr-white",
@@ -66469,7 +66592,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 46.0,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6621-veste-de-presentation-adidas-entrada-26-black-white",
@@ -66487,7 +66610,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 46.0,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6622-veste-de-presentation-adidas-entrada-26-tepore-white",
@@ -66661,15 +66784,15 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/a/ha5301_1_apparel_photography_front_view_white.jpg",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/a/ha5301_1_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
-          { size: "S", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
+          { size: "S", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
           { size: "M", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
           { size: "L", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
           { size: "XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
-          { size: "2XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
+          { size: "2XL", price: 69.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha5301-veste-de-presentation-arsenal-condivo-2022-23-bleu-marine-rouge-jaune" },
         ],
       },
     ],
@@ -67437,9 +67560,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
           { size: "XS", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
           { size: "S", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
           { size: "M", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
-          { size: "L", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
+          { size: "L", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
           { size: "XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
-          { size: "2XL", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
+          { size: "2XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2974-veste-de-survetement-a-capuche-adidas-squadra-25-royblu-white" },
         ],
       },
     ],
@@ -67693,7 +67816,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 54.0,
+        price: 53.0,
         priceMax: 75.0,
         shipping: 6.99,
         currency: "EUR",
@@ -67702,7 +67825,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         sizes: ["S", "M"],
         sizePrices: [
           { size: "S", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4123-veste-de-survetement-a-capuche-femme-bayern-munich-2024-25-rouge" },
-          { size: "M", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4123-veste-de-survetement-a-capuche-femme-bayern-munich-2024-25-rouge" },
+          { size: "M", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4123-veste-de-survetement-a-capuche-femme-bayern-munich-2024-25-rouge" },
         ],
       },
     ],
@@ -67887,10 +68010,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi2135-veste-de-survetement-adidas-entrada-22-vert-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/i/hi2135_app_photo_front-center_white_1645111588.webp",
-        sizes: ["S", "M", "L"],
+        sizes: ["S", "L"],
         sizePrices: [
           { size: "S", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi2135-veste-de-survetement-adidas-entrada-22-vert-blanc" },
-          { size: "M", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi2135-veste-de-survetement-adidas-entrada-22-vert-blanc" },
           { size: "L", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi2135-veste-de-survetement-adidas-entrada-22-vert-blanc" },
         ],
       },
@@ -68099,7 +68221,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 34.6,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm5157-veste-de-survetement-adidas-black",
@@ -68108,7 +68230,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodFR",
-        price: 34.6,
+        price: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjm5157-veste-de-survetement-adidas-black",
@@ -68183,7 +68305,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
           { size: "S", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6474-veste-de-survetement-adidas-squadra-21-jaune-blanc" },
           { size: "M", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6474-veste-de-survetement-adidas-squadra-21-jaune-blanc" },
           { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6474-veste-de-survetement-adidas-squadra-21-jaune-blanc" },
-          { size: "2XL", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6474-veste-de-survetement-adidas-squadra-21-jaune-blanc" },
+          { size: "2XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6474-veste-de-survetement-adidas-squadra-21-jaune-blanc" },
         ],
       },
     ],
@@ -68197,7 +68319,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 41.0,
+        price: 40.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgk9562-veste-de-survetement-adidas-squadra-21-noir-blanc",
@@ -68251,11 +68373,11 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
-          { size: "S", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
-          { size: "M", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
-          { size: "L", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
+          { size: "S", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
+          { size: "M", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
+          { size: "L", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
           { size: "XL", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
-          { size: "2XL", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgp6473-veste-de-survetement-adidas-squadra-21-vert-blanc" },
         ],
       },
     ],
@@ -68342,37 +68464,30 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 43.0,
-        priceMax: 46.0,
+        priceMax: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd2980_royblu-white_1.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
+          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
           { size: "S", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
           { size: "M", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
           { size: "L", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
           { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
           { size: "2XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
-          { size: "3XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
+          { size: "3XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2980-veste-de-survetement-adidas-squadra25-royblu-white" },
         ],
       },
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3153-veste-de-survetement-adidas-squadra25-royblu-tmyell",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3153_royblu-tmyell_1.webp",
         sizes: ["S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3153-veste-de-survetement-adidas-squadra25-royblu-tmyell" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3153-veste-de-survetement-adidas-squadra25-royblu-tmyell" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3153-veste-de-survetement-adidas-squadra25-royblu-tmyell" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3153-veste-de-survetement-adidas-squadra25-royblu-tmyell" },
-        ],
       },
     ],
   },
@@ -68404,21 +68519,11 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3388_tmyell-black-white_1.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-          { size: "3XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3388-veste-de-survetement-adidas-squadra25-tmyell-black-white" },
-        ],
       },
     ],
   },
@@ -68432,22 +68537,11 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_je2774_2_apparel_on_model_standard_view_white.webp",
         sizes: ["XS", "S", "S Tall", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "S Tall", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-          { size: "3XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2774-veste-de-survetement-adidas-squadra25-black-white" },
-        ],
       },
     ],
   },
@@ -68569,21 +68663,11 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd2979_tepore-white_1.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-          { size: "3XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd2979-veste-de-survetement-adidas-squadra25-tepore-white" },
-        ],
       },
     ],
   },
@@ -68597,21 +68681,11 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3162_teagrn-white_1.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-          { size: "3XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3162-veste-de-survetement-adidas-squadra25-teagrn-white" },
-        ],
       },
     ],
   },
@@ -68818,12 +68892,18 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 49.0,
+        price: 47.0,
+        priceMax: 49.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi3050-veste-de-survetement-adidas-tiro-23-competition-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hi3050_1_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi3050-veste-de-survetement-adidas-tiro-23-competition-rouge" },
+          { size: "S", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi3050-veste-de-survetement-adidas-tiro-23-competition-rouge" },
+          { size: "2XL", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhi3050-veste-de-survetement-adidas-tiro-23-competition-rouge" },
+        ],
       },
     ],
   },
@@ -68925,7 +69005,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
           { size: "S", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
           { size: "M", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
-          { size: "L", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
+          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
           { size: "XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
           { size: "2XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
           { size: "3XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3502-veste-de-survetement-adidas-tiro-23-league-rouge" },
@@ -68958,6 +69038,24 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
           { size: "2XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fic7875-veste-de-survetement-adidas-tiro-23-league-vert" },
           { size: "3XL", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fic7875-veste-de-survetement-adidas-tiro-23-league-vert" },
         ],
+      },
+    ],
+  },
+  {
+    id: "adidas-veste-de-survetement-adidas-tiro-24-bleu",
+    brand: "adidas",
+    model: "Veste de survêtement adidas Tiro 24 - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 50.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fir7498-veste-de-survetement-adidas-tiro-24-tenabl-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ir7498_1_apparel_photography_front_view_white.webp",
+        sizes: ["XL"],
       },
     ],
   },
@@ -69099,20 +69197,18 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 73.0,
+        price: 74.0,
         priceMax: 80.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_09_adidas_ji6503_2_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "XL", "3XL"],
+        sizes: ["XS", "S", "XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
           { size: "S", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
-          { size: "M", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
-          { size: "L", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
-          { size: "XL", price: 73.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
-          { size: "3XL", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
+          { size: "XL", price: 74.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
+          { size: "3XL", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6503-veste-de-survetement-adidas-tiro-25-competition-all-weather-rouge" },
         ],
       },
     ],
@@ -69842,7 +69938,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0004-veste-de-survetement-arsenal-tiro-26-black" },
-          { size: "S", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0004-veste-de-survetement-arsenal-tiro-26-black" },
+          { size: "S", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0004-veste-de-survetement-arsenal-tiro-26-black" },
           { size: "M", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0004-veste-de-survetement-arsenal-tiro-26-black" },
           { size: "L", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0004-veste-de-survetement-arsenal-tiro-26-black" },
           { size: "XL", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0004-veste-de-survetement-arsenal-tiro-26-black" },
@@ -69986,7 +70082,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 70.0,
+        price: 75.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit4154-veste-de-survetement-bayern-munich-dna-2024-25-rouge",
@@ -70303,6 +70399,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-domicile-espagne-bleu",
     brand: "adidas",
@@ -70446,7 +70545,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 72.0,
-        priceMax: 78.0,
+        priceMax: 79.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3842-veste-de-survetement-en-maille-double-juventus-turin-2024-25-legink",
@@ -70455,7 +70554,7 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3842-veste-de-survetement-en-maille-double-juventus-turin-2024-25-legink" },
           { size: "M", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3842-veste-de-survetement-en-maille-double-juventus-turin-2024-25-legink" },
-          { size: "L", price: 78.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3842-veste-de-survetement-en-maille-double-juventus-turin-2024-25-legink" },
+          { size: "L", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit3842-veste-de-survetement-en-maille-double-juventus-turin-2024-25-legink" },
         ],
       },
     ],
@@ -70496,9 +70595,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-exrerieur-ol-2025-26-gris",
     brand: "adidas",
@@ -70878,7 +70974,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6553-veste-de-survetement-exterieur-liverpool-fc-2025-26-black" },
           { size: "S", price: 68.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6553-veste-de-survetement-exterieur-liverpool-fc-2025-26-black" },
-          { size: "M", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6553-veste-de-survetement-exterieur-liverpool-fc-2025-26-black" },
+          { size: "M", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6553-veste-de-survetement-exterieur-liverpool-fc-2025-26-black" },
           { size: "L", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6553-veste-de-survetement-exterieur-liverpool-fc-2025-26-black" },
           { size: "XL", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjv6553-veste-de-survetement-exterieur-liverpool-fc-2025-26-black" },
         ],
@@ -70900,12 +70996,13 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1994-veste-de-survetement-exterieur-manchester-united-2024-25-blue",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_it1994_2_apparel_photography_front_center_view_white.jpg",
-        sizes: ["XS", "S", "M", "L"],
+        sizes: ["XS", "S", "M", "L", "2XL"],
         sizePrices: [
           { size: "XS", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1994-veste-de-survetement-exterieur-manchester-united-2024-25-blue" },
           { size: "S", price: 48.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1994-veste-de-survetement-exterieur-manchester-united-2024-25-blue" },
           { size: "M", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1994-veste-de-survetement-exterieur-manchester-united-2024-25-blue" },
           { size: "L", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1994-veste-de-survetement-exterieur-manchester-united-2024-25-blue" },
+          { size: "2XL", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit1994-veste-de-survetement-exterieur-manchester-united-2024-25-blue" },
         ],
       },
       {
@@ -71060,7 +71157,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
           { size: "S", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
-          { size: "M", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
+          { size: "M", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
           { size: "L", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
           { size: "XL", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
           { size: "2XL", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp4057-veste-de-survetement-exterieur-real-madrid-2025-26-utigre" },
@@ -71087,14 +71184,14 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 55.0,
-        priceMax: 92.0,
+        priceMax: 93.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3997-veste-de-survetement-exterieur-real-madrid-2025-26-almlim",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3997_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3997-veste-de-survetement-exterieur-real-madrid-2025-26-almlim" },
+          { size: "XS", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3997-veste-de-survetement-exterieur-real-madrid-2025-26-almlim" },
           { size: "S", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3997-veste-de-survetement-exterieur-real-madrid-2025-26-almlim" },
           { size: "M", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3997-veste-de-survetement-exterieur-real-madrid-2025-26-almlim" },
           { size: "L", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3997-veste-de-survetement-exterieur-real-madrid-2025-26-almlim" },
@@ -71428,21 +71525,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd3021_white_1.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3021-veste-de-survetement-femme-adidas-squadra25-white" },
-        ],
       },
     ],
   },
@@ -71456,21 +71543,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd3019_royblu-white_1.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3019-veste-de-survetement-femme-adidas-squadra25-royblu-white" },
-        ],
       },
     ],
   },
@@ -71484,21 +71561,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_je2763_1_apparel_photography_front_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "2XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje2763-veste-de-survetement-femme-adidas-squadra25-black-white" },
-        ],
       },
     ],
   },
@@ -71512,21 +71579,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd3018_tepore-white_1.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "2XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3018-veste-de-survetement-femme-adidas-squadra25-tepore-white" },
-        ],
       },
     ],
   },
@@ -71540,21 +71597,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 45.0,
-        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3159_teagrn-white_1.webp",
         sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "2XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3159-veste-de-survetement-femme-adidas-squadra25-teagrn-white" },
-        ],
       },
     ],
   },
@@ -71900,33 +71947,6 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-veste-de-survetement-italie-dna-coupe-du-monde-2026-bleu",
-    brand: "adidas",
-    model: "Veste de survêtement Italie DNA Coupe du Monde 2026 - Bleu",
-    colour: "Bleu",
-    type: "jacket",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 45.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy9660-veste-de-survetement-italie-dna-coupe-du-monde-2026-boblue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_jy9660_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["L"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 45.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy9660-veste-de-survetement-italie-dna-coupe-du-monde-2026-boblue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_adidas_jy9660_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
     id: "adidas-veste-de-survetement-italie-tiro-euro-2024-blanc",
     brand: "adidas",
     model: "Veste de survêtement Italie Tiro Euro 2024 - Blanc",
@@ -71941,13 +71961,14 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq2159_2_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
-          { size: "S", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
-          { size: "M", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
+          { size: "XS", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
+          { size: "S", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
+          { size: "M", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
           { size: "L", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
           { size: "XL", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
+          { size: "2XL", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2159-veste-de-survetement-italie-tiro-euro-2024-white-blue" },
         ],
       },
     ],
@@ -72070,16 +72091,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 59.0,
-        priceMax: 62.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhd8887-veste-de-survetement-juventus-turin-2022-23-dna-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_hd8887_2_apparel_photography_front_center_view_white.jpg",
         sizes: ["XS", "S"],
-        sizePrices: [
-          { size: "XS", price: 62.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhd8887-veste-de-survetement-juventus-turin-2022-23-dna-noir" },
-          { size: "S", price: 59.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhd8887-veste-de-survetement-juventus-turin-2022-23-dna-noir" },
-        ],
       },
     ],
   },
@@ -72128,7 +72144,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 69.0,
+        price: 66.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs9808-veste-de-survetement-juventus-turin-anthem-2022-23-noir-blanc",
@@ -72835,7 +72851,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6486-veste-de-survetement-mexique-tt-coupe-du-monde-2026-aurora-ivy",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jz6486_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -72956,8 +72972,8 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
           { size: "S", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
-          { size: "M", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
-          { size: "L", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
+          { size: "M", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
+          { size: "L", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
           { size: "XL", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
           { size: "2XL", price: 60.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fik4009-veste-de-survetement-pour-toutes-saisons-adidas-entrada-2022-23-rouge" },
         ],
@@ -73203,10 +73219,11 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5824-veste-de-survetement-prematch-juventus-turin-2024-25-blue-orange",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is5824_1_apparel_photography_front_view_white.webp",
-        sizes: ["XS", "S"],
+        sizes: ["XS", "S", "L"],
         sizePrices: [
           { size: "XS", price: 37.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5824-veste-de-survetement-prematch-juventus-turin-2024-25-blue-orange" },
           { size: "S", price: 59.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5824-veste-de-survetement-prematch-juventus-turin-2024-25-blue-orange" },
+          { size: "L", price: 59.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5824-veste-de-survetement-prematch-juventus-turin-2024-25-blue-orange" },
         ],
       },
       {
@@ -73265,7 +73282,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
           { size: "XS", price: 41.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1642-veste-de-survetement-prematch-juventus-turin-2025-26-white" },
           { size: "S", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1642-veste-de-survetement-prematch-juventus-turin-2025-26-white" },
           { size: "M", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1642-veste-de-survetement-prematch-juventus-turin-2025-26-white" },
-          { size: "XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1642-veste-de-survetement-prematch-juventus-turin-2025-26-white" },
+          { size: "XL", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1642-veste-de-survetement-prematch-juventus-turin-2025-26-white" },
         ],
       },
       {
@@ -73288,7 +73305,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 70.0,
+        price: 71.0,
         priceMax: 85.0,
         shipping: 6.99,
         currency: "EUR",
@@ -73299,7 +73316,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
           { size: "XS", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1627-veste-de-survetement-prematch-juventus-turin-2025-26-black" },
           { size: "S", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1627-veste-de-survetement-prematch-juventus-turin-2025-26-black" },
           { size: "M", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1627-veste-de-survetement-prematch-juventus-turin-2025-26-black" },
-          { size: "XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1627-veste-de-survetement-prematch-juventus-turin-2025-26-black" },
+          { size: "XL", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1627-veste-de-survetement-prematch-juventus-turin-2025-26-black" },
         ],
       },
     ],
@@ -74003,7 +74020,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij9959-veste-de-survetement-training-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij9959_1_apparel_photography_front_view_white.webp",
-        sizes: ["XL"],
+        sizes: ["M", "L", "XL"],
       },
     ],
   },
@@ -74125,17 +74142,17 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 87.3,
-        priceMax: 113.0,
+        priceMax: 112.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ij7390_1_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "L", "3XL"],
         sizePrices: [
-          { size: "XS", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
-          { size: "S", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
+          { size: "XS", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
+          { size: "S", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
           { size: "L", price: 87.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
-          { size: "3XL", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
+          { size: "3XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fij7390-veste-impermeable-a-capuche-adidas-tiro-24-rain-black-white" },
         ],
       },
       {
@@ -74358,6 +74375,24 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-veste-impermeable-adidas-tiro-24-vert",
+    brand: "adidas",
+    model: "Veste imperméable adidas Tiro 24 - Vert",
+    colour: "Vert",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 60.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim8810-veste-impermeable-adidas-tiro-24-drkgrn-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_im8810_1_apparel_photography_front_view_white.webp",
+        sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
     id: "adidas-veste-impermeable-adidas-tiro-26-bleu",
     brand: "adidas",
     model: "Veste imperméable adidas Tiro 26 - Bleu",
@@ -74366,7 +74401,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 113.0,
+        price: 112.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy8963-veste-impermeable-adidas-tiro-26-tenabl-rayblu-white",
@@ -74384,7 +74419,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 78.0,
+        price: 77.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb0139-veste-impermeable-adidas-tiro-26-competition-tmyell-lgtyel-black",
@@ -74402,7 +74437,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 78.0,
+        price: 77.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx4247-veste-impermeable-adidas-tiro-26-competition-black-ltonix-white",
@@ -74420,7 +74455,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 78.0,
+        price: 77.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb0134-veste-impermeable-adidas-tiro-26-competition-tepore-selure-white",
@@ -74438,7 +74473,7 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 113.0,
+        price: 112.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjj2969-veste-impermeable-adidas-tiro-26-black-ltonix-white",
@@ -74677,6 +74712,9 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "adidas-veste-impermeable-bayern-munich-graphic-bleu",
     brand: "adidas",
@@ -74808,6 +74846,24 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-veste-impermeable-exterieur-real-madrid-2023-24-orange",
+    brand: "adidas",
+    model: "Veste imperméable Extérieur Real Madrid 2023/24 - Orange",
+    colour: "Orange",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 98.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0538-veste-impermeable-exterieur-real-madrid-2023-24-spark",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_iq0538_1_apparel_photography_front_view_white-nw032524.jpg",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-veste-impermeable-femme-adidas-tiro-24-bleu",
     brand: "adidas",
     model: "Veste imperméable femme adidas Tiro 24 - Bleu",
@@ -74853,26 +74909,14 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 112.0,
-        priceMax: 113.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ip6668_1_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white" },
-          { size: "S", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white" },
-          { size: "M", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white" },
-          { size: "L", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white" },
-          { size: "XL", price: 113.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white" },
-          { size: "2XL", price: 112.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip6668-veste-impermeable-femme-adidas-tiro-24-black-white" },
-        ],
       },
     ],
   },
-];
-
-const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "adidas-veste-impermeable-femme-adidas-tiro-26-competition-noir",
     brand: "adidas",
@@ -74900,17 +74944,12 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 92.0,
-        priceMax: 93.0,
+        price: 93.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2160-veste-impermeable-italie-euro-2024-night-sky",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq2160_1_apparel_photography_front_view_white-nw032524.webp",
         sizes: ["XS", "S"],
-        sizePrices: [
-          { size: "XS", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2160-veste-impermeable-italie-euro-2024-night-sky" },
-          { size: "S", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2160-veste-impermeable-italie-euro-2024-night-sky" },
-        ],
       },
     ],
   },
@@ -74965,13 +75004,14 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_is5792_1_apparel_photography_front_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "XS", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl" },
           { size: "S", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl" },
           { size: "M", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl" },
           { size: "L", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl" },
           { size: "XL", price: 73.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl" },
+          { size: "2XL", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis5792-veste-impermeable-juventus-turin-tiro-2024-25-competiton-tenabl" },
         ],
       },
       {
@@ -75030,11 +75070,16 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 92.0,
+        priceMax: 93.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3102-veste-impermeable-manchester-united-2025-26-white-aurplu-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp3102_white-aurplu-black_1.webp",
         sizes: ["XS", "S"],
+        sizePrices: [
+          { size: "XS", price: 93.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3102-veste-impermeable-manchester-united-2025-26-white-aurplu-black" },
+          { size: "S", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp3102-veste-impermeable-manchester-united-2025-26-white-aurplu-black" },
+        ],
       },
     ],
   },
@@ -75048,16 +75093,11 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 83.0,
-        priceMax: 84.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4288-veste-impermeable-manchester-united-condivo-2022-23-black",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ht4288_1_apparel_photography_standard_view_white_1.jpg",
         sizes: ["S", "M"],
-        sizePrices: [
-          { size: "S", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4288-veste-impermeable-manchester-united-condivo-2022-23-black" },
-          { size: "M", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht4288-veste-impermeable-manchester-united-condivo-2022-23-black" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -75272,7 +75312,7 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
           { size: "M", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
-          { size: "L", price: 118.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
+          { size: "L", price: 119.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
           { size: "XL", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
           { size: "2XL", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
           { size: "3XL", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw8809-veste-retro-allemagne-1994-blanc" },
@@ -78217,6 +78257,9 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-copa-panini-fifa-brazil-2014-world-cup-vert",
     brand: "Copa Football",
@@ -78397,9 +78440,6 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-copa-panini-fifa-world-cup-collage-blanc",
     brand: "Copa Football",
@@ -78936,15 +78976,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
           { size: "XL", price: 79.59, url: "https://www.awin1.com/pclick.php?p=44256645428&a=3013769&m=65912" },
           { size: "2XL", price: 79.59, url: "https://www.awin1.com/pclick.php?p=44256645429&a=3013769&m=65912" },
         ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 77.38,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45385804610&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F0%2F801_-_image1_-_ddr-2047.webp&feedId=89044&k=6d36d7f3c37b477063820ecbbf8715225232670d",
-        sizes: ["L"],
       },
     ],
   },
@@ -81548,6 +81579,9 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "copa-football-t-shirt-brode-france-legends-bleu",
     brand: "Copa Football",
@@ -81733,9 +81767,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "copa-football-t-shirt-copa-benfica-lisbonne-captain-rouge",
     brand: "Copa Football",
@@ -84589,7 +84620,7 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39149116790&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F3%2F1%2F318378_v.webp&feedId=89032&k=7a900884dd1a918e3aa089ba6af0cced04e845c3",
-        sizes: ["29/32", "33/36", "37/40"],
+        sizes: ["29/32", "33/36"],
       },
     ],
   },
@@ -85209,6 +85240,9 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "erima-camiseta-erima-fonctionnel-teamsport-jaune",
     brand: "erima",
@@ -85469,9 +85503,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "erima-camiseta-erima-promo-vert",
     brand: "erima",
@@ -85883,7 +85914,7 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F318378-chaussettes-de-football-erima-tanaro-emeraude-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/3/1/318378_v.jpg",
-        sizes: ["29/32", "33/36", "37/40"],
+        sizes: ["29/32", "33/36"],
       },
     ],
   },
@@ -86721,7 +86752,7 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923783307&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F1%2F615409_v.webp&feedId=89032&k=9d1409393f0016eb1ba904434403ea6c5df1b0ba",
-        sizes: ["34", "36", "40", "44", "46", "48"],
+        sizes: ["34", "36", "40", "44", "46"],
       },
       {
         store: "FootStoreES",
@@ -87557,17 +87588,12 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.0,
-        priceMax: 37.0,
+        price: 37.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528960488&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F1%2F211342_v.webp&feedId=89032&k=4ff6e34f1a7706865e0e94ada3a0aa568d8b2bf9",
         sizes: ["S", "L"],
-        sizePrices: [
-          { size: "S", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42528960488&a=3013769&m=65912" },
-          { size: "L", price: 37.0, url: "https://www.awin1.com/pclick.php?p=45319427548&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -88801,7 +88827,7 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 11.89,
-        priceMax: 19.0,
+        priceMax: 18.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir",
@@ -88811,7 +88837,7 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
           { size: "4", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
           { size: "5", price: 11.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
           { size: "7", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
-          { size: "8", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
+          { size: "8", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
           { size: "9", price: 11.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
           { size: "10", price: 11.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F315011-short-erima-rio-2-0-noir" },
         ],
@@ -88912,7 +88938,7 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F615409-short-femme-erima-5-cubes-noir-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/1/615409_v.webp",
-        sizes: ["44", "48"],
+        sizes: ["44"],
       },
       {
         store: "SportIsGoodFR",
@@ -89887,6 +89913,9 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "erima-t-shirt-femme-erima-fonctionnel-teamsport-vert",
     brand: "erima",
@@ -90148,9 +90177,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "erima-veste-impermeable-erima-team-bleu",
     brand: "erima",
@@ -92875,7 +92901,7 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.0,
+        price: 55.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529420377&a=3013769&m=65912",
@@ -92929,7 +92955,7 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 53.0,
+        price: 54.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgs0c0l00080-ensemble-gardien-manches-longues-errea-bruce-bleu",
@@ -93193,9 +93219,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
         price: 27.6,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529024384&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529024386&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferrea_fp750z00070_bleu_1.webp&feedId=89032&k=73a19fd6169e824a9d384e17877241a2bd39e844",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "XL", "2XL"],
       },
       {
         store: "FootStoreES",
@@ -93374,7 +93400,7 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 23.55,
+        price: 23.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38135758444&a=3013769&m=65912",
@@ -93838,7 +93864,7 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40965026467&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fp%2Ffp711z00150_1.webp&feedId=89032&k=22c97bf885083745e874d2479d53f480499fa2cf",
-        sizes: ["S", "M", "L", "XL", "4XL"],
+        sizes: ["L", "XL", "4XL"],
       },
     ],
   },
@@ -93905,6 +93931,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "errea-pantalon-corto-errea-ilie-bleu",
     brand: "Errea",
@@ -94130,9 +94159,6 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "errea-pantalon-corto-errea-transfer-3-0-jaune",
     brand: "Errea",
@@ -94508,7 +94534,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 21.71,
-        priceMax: 40.0,
+        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529023294&a=3013769&m=65912",
@@ -94516,7 +94542,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         sizes: ["S", "3XL"],
         sizePrices: [
           { size: "S", price: 21.71, url: "https://www.awin1.com/pclick.php?p=42529023294&a=3013769&m=65912" },
-          { size: "3XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43705540854&a=3013769&m=65912" },
+          { size: "3XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43705540854&a=3013769&m=65912" },
         ],
       },
       {
@@ -96846,7 +96872,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         sizes: ["TU"],
         sizePrices: [
           { size: "TU", price: 22.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fea1a0z01580-sac-a-dos-errea-lynos-bleu-bleu-marine-tu" },
-          { size: "TU", price: 22.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fea1a0z01910-sac-a-dos-errea-lynos-bleu-marine-rouge-tu" },
+          { size: "TU", price: 22.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fea1a0z01910-sac-a-dos-errea-lynos-bleu-marine-rouge-tu" },
           { size: "TU", price: 21.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fea1a0z01920-sac-a-dos-errea-lynos-bleu-marine-jaune-tu" },
           { size: "TU", price: 22.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fea1a0z02000-sac-a-dos-errea-lynos-bleu-marine-gris-tu" },
           { size: "TU", price: 22.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fea1a0z02600-sac-a-dos-errea-lynos-noir-gris-tu" },
@@ -96863,7 +96889,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         sizes: ["TU"],
         sizePrices: [
           { size: "TU", price: 22.9, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fea1a0z01580-sac-a-dos-errea-lynos-bleu-bleu-marine-tu" },
-          { size: "TU", price: 22.9, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fea1a0z01910-sac-a-dos-errea-lynos-bleu-marine-rouge-tu" },
           { size: "TU", price: 21.79, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fea1a0z01920-sac-a-dos-errea-lynos-bleu-marine-jaune-tu" },
           { size: "TU", price: 22.9, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fea1a0z02000-sac-a-dos-errea-lynos-bleu-marine-gris-tu" },
         ],
@@ -97351,7 +97376,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffp710z00120-short-errea-dallas-3-0-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/f/p/fp711z00150_1.webp",
-        sizes: ["S", "M", "L", "XL", "4XL"],
+        sizes: ["L", "XL", "4XL"],
       },
     ],
   },
@@ -97846,7 +97871,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffp750z00070-short-legging-errea-mike-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea_fp750z00070_bleu_1.webp",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "XL", "2XL"],
       },
       {
         store: "FootStoreFR",
@@ -98175,6 +98200,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "errea-sudadera-con-capucha-errea-jonas-marron",
     brand: "Errea",
@@ -98400,9 +98428,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "errea-sudor-errea-warren-3-0-blanc",
     brand: "Errea",
@@ -101152,7 +101177,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 50.0,
+        price: 51.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fspor-1701-68586-protege-tibias-gearxpro-flex-gxpro-jaune-s",
@@ -102397,6 +102422,9 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "givova-conjunto-de-polo-y-pantalon-pantalon-corto-givova-play-vert",
     brand: "Givova",
@@ -102577,9 +102605,6 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "givova-ensemble-arbitre-givova-oficial-noir",
     brand: "Givova",
@@ -103008,7 +103033,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 31.0,
+        price: 32.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkitc26-0412-ensemble-maillot-et-short-givova-catalano-navy-blue-red",
@@ -103206,7 +103231,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 31.0,
+        price: 32.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkitc24-0412-ensemble-maillot-et-short-givova-supporter-navy-blue-red",
@@ -103224,7 +103249,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 31.0,
+        price: 32.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkitc24-1002-ensemble-maillot-et-short-givova-supporter-black-royal",
@@ -105853,15 +105878,14 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 4.3,
-        priceMax: 16.0,
+        priceMax: 7.55,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41168515551&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_226906-7929_marine-white_1.webp&feedId=89032&k=5cbbe5310e3116383cf17f5d339a4fdfb5901195",
-        sizes: ["35/38", "39/42", "43/46", "47/50"],
+        sizes: ["35/38", "43/46", "47/50"],
         sizePrices: [
           { size: "35/38", price: 7.55, url: "https://www.awin1.com/pclick.php?p=42418817783&a=3013769&m=65912" },
-          { size: "39/42", price: 16.0, url: "https://www.awin1.com/pclick.php?p=41596144422&a=3013769&m=65912" },
           { size: "43/46", price: 7.55, url: "https://www.awin1.com/pclick.php?p=41580742712&a=3013769&m=65912" },
           { size: "47/50", price: 4.3, url: "https://www.awin1.com/pclick.php?p=41168515551&a=3013769&m=65912" },
         ],
@@ -106125,6 +106149,9 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "hummel-calcetines-de-primera-equipacion-culo-2022-23-vert",
     brand: "Hummel",
@@ -106350,9 +106377,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "hummel-calcetines-hummel-blaze-26-essential-vert",
     brand: "Hummel",
@@ -106409,15 +106433,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
           { size: "39/42", price: 6.18, url: "https://www.awin1.com/pclick.php?p=42529817750&a=3013769&m=65912" },
           { size: "47/50", price: 8.39, url: "https://www.awin1.com/pclick.php?p=45220449790&a=3013769&m=65912" },
         ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 6.18,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44266205859&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_226908-9124_white-black_1.webp&feedId=89044&k=c4f1f4581fc355d54fcccbd0b6078796f2cde008",
-        sizes: ["39/42"],
       },
     ],
   },
@@ -107921,18 +107936,11 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 7.48,
-        priceMax: 16.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226906-9425-chaussettes-de-football-hummel-essential-white-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/hummel_226906-9425_white-white_1.jpg",
-        sizes: ["35/38", "39/42", "43/46", "47/50"],
-        sizePrices: [
-          { size: "35/38", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226906-9425-chaussettes-de-football-hummel-essential-white-white" },
-          { size: "39/42", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226906-9425-chaussettes-de-football-hummel-essential-white-white" },
-          { size: "43/46", price: 7.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226906-9425-chaussettes-de-football-hummel-essential-white-white" },
-          { size: "47/50", price: 7.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226906-9425-chaussettes-de-football-hummel-essential-white-white" },
-        ],
+        sizes: ["43/46", "47/50"],
       },
     ],
   },
@@ -109493,11 +109501,11 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         priceMax: 19.23,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38240173296&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38240173297&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_226151-2001_black_1.webp&feedId=89032&k=5d2127dead45cb8ded190f400df93ae79f16b579",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 18.24, url: "https://www.awin1.com/pclick.php?p=38240173296&a=3013769&m=65912" },
+          { size: "S", price: 18.89, url: "https://www.awin1.com/pclick.php?p=38240173296&a=3013769&m=65912" },
           { size: "M", price: 18.24, url: "https://www.awin1.com/pclick.php?p=38240173297&a=3013769&m=65912" },
           { size: "L", price: 18.24, url: "https://www.awin1.com/pclick.php?p=38240173298&a=3013769&m=65912" },
           { size: "XL", price: 19.23, url: "https://www.awin1.com/pclick.php?p=38240173299&a=3013769&m=65912" },
@@ -109823,6 +109831,24 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
     ],
   },
   {
+    id: "hummel-domicilio-corto-fc-cologne-2023-24-blanc",
+    brand: "Hummel",
+    model: "Domicilio Corto FC Cologne 2023/24 - Blanc",
+    colour: "Blanc",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 44.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40773706689&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_221155-9402_white-true-red_1.webp&feedId=89032&k=94b203e9e34a913228cd420416ecdc984e8a9d25",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
     id: "hummel-ensemble-gardien-de-but-hummel-hmlcore-bleu",
     brand: "Hummel",
     model: "Ensemble Gardien de but Hummel hmlCORE - Bleu",
@@ -110075,7 +110101,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_226151-2001_black_1.webp",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 16.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
+          { size: "S", price: 16.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
           { size: "M", price: 16.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
           { size: "L", price: 16.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
           { size: "XL", price: 17.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
@@ -110091,9 +110117,8 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_226151-2001_black_1.webp",
-        sizes: ["S", "M", "L", "XL", "3XL"],
+        sizes: ["M", "L", "XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 16.19, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
           { size: "M", price: 16.19, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
           { size: "L", price: 16.19, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
           { size: "XL", price: 17.08, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F226151-2001-ensemble-t-shirt-plus-short-hummel-logo-black" },
@@ -110454,6 +110479,9 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "hummel-medias-1a-equipacion-hummel-2020-21-bleu",
     brand: "Hummel",
@@ -110652,9 +110680,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "hummel-medias-tercera-equipacion-asse-2022-23-noir",
     brand: "Hummel",
@@ -111051,7 +111076,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 6.14, url: "https://www.awin1.com/pclick.php?p=43362477299&a=3013769&m=65912" },
           { size: "M", price: 6.14, url: "https://www.awin1.com/pclick.php?p=41937931638&a=3013769&m=65912" },
-          { size: "L", price: 6.14, url: "https://www.awin1.com/pclick.php?p=38773739565&a=3013769&m=65912" },
+          { size: "L", price: 7.91, url: "https://www.awin1.com/pclick.php?p=38773739565&a=3013769&m=65912" },
           { size: "XL", price: 7.91, url: "https://www.awin1.com/pclick.php?p=38773739566&a=3013769&m=65912" },
           { size: "2XL", price: 6.3, url: "https://www.awin1.com/pclick.php?p=38773739567&a=3013769&m=65912" },
         ],
@@ -111412,7 +111437,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027503305&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel-240051-7089-night-sky-6a76cd7736544-1.webp&feedId=89032&k=4e2cbe3a98d451a5a25d6deca45d0823346904be",
-        sizes: ["S", "L"],
+        sizes: ["S"],
       },
     ],
   },
@@ -111543,7 +111568,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F240051-7089-pantalon-de-survetement-femme-hummel-i-d-night-sky",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-240051-7089-night-sky-6a76cd7736544-1.webp",
-        sizes: ["S", "L"],
+        sizes: ["S"],
       },
     ],
   },
@@ -112339,6 +112364,24 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
     ],
   },
   {
+    id: "hummel-short-domicile-fc-cologne-2023-24-blanc",
+    brand: "Hummel",
+    model: "Short Domicile FC Cologne 2023/24 - Blanc",
+    colour: "Blanc",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 44.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F221155-9402-short-domicile-fc-cologne-2023-24-white-true-red",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_221155-9402_white-true-red_1.webp",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
     id: "hummel-short-domicile-girondins-de-bordeaux-2025-26-bleu",
     brand: "Hummel",
     model: "Short Domicile Girondins de Bordeaux 2025/26 - Bleu",
@@ -112502,7 +112545,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 6.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow" },
           { size: "M", price: 6.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow" },
-          { size: "L", price: 6.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow" },
+          { size: "L", price: 7.84, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow" },
           { size: "XL", price: 7.84, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow" },
           { size: "2XL", price: 6.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow" },
         ],
@@ -112514,7 +112557,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F211468-5001-short-femme-hummel-xk-core-poly-yellow",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_211468-5001_01_583412_211468-5001.webp",
-        sizes: ["S", "M", "L", "2XL"],
+        sizes: ["S", "M", "2XL"],
       },
     ],
   },
@@ -114514,6 +114557,9 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "jako-calcetines-jako-glasgow-2-0-gris",
     brand: "Jako",
@@ -114856,9 +114902,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "jako-calcetines-jako-lazio-jaune",
     brand: "Jako",
@@ -115315,10 +115358,11 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529121080&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F1%2F6120-f-22_1.webp&feedId=89032&k=0f9f0b4596c85a667d63780a0f137a240ea5a420",
-        sizes: ["36", "40"],
+        sizes: ["36", "40", "44"],
         sizePrices: [
           { size: "36", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42630340827&a=3013769&m=65912" },
           { size: "40", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42529121080&a=3013769&m=65912" },
+          { size: "44", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42630340828&a=3013769&m=65912" },
         ],
       },
     ],
@@ -115360,7 +115404,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 15.54,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529121114&a=3013769&m=65912",
@@ -115369,7 +115413,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizePrices: [
           { size: "34", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529121114&a=3013769&m=65912" },
           { size: "36", price: 15.54, url: "https://www.awin1.com/pclick.php?p=38914633744&a=3013769&m=65912" },
-          { size: "40", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529121116&a=3013769&m=65912" },
+          { size: "40", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529121116&a=3013769&m=65912" },
           { size: "42", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529121117&a=3013769&m=65912" },
           { size: "44", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529121118&a=3013769&m=65912" },
         ],
@@ -116058,7 +116102,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 15.54,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529123586&a=3013769&m=65912",
@@ -116067,7 +116111,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123590&a=3013769&m=65912" },
           { size: "M", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123589&a=3013769&m=65912" },
-          { size: "L", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123588&a=3013769&m=65912" },
+          { size: "L", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529123588&a=3013769&m=65912" },
           { size: "2XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123592&a=3013769&m=65912" },
           { size: "3XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123586&a=3013769&m=65912" },
           { size: "4XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123587&a=3013769&m=65912" },
@@ -116075,16 +116119,16 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 35.0,
-        priceMax: 36.0,
+        price: 34.0,
+        priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529123619&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F1%2F6129_49.webp&feedId=89032&k=dfe617b3c0ae259b6ec8d288036ba8fd1addf449",
         sizes: ["2XL", "3XL"],
         sizePrices: [
-          { size: "2XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123619&a=3013769&m=65912" },
-          { size: "3XL", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42529123613&a=3013769&m=65912" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529123619&a=3013769&m=65912" },
+          { size: "3XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123613&a=3013769&m=65912" },
         ],
       },
     ],
@@ -116098,7 +116142,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.0,
+        price: 35.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529123593&a=3013769&m=65912",
@@ -116117,7 +116161,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123611&a=3013769&m=65912" },
           { size: "M", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42529123610&a=3013769&m=65912" },
-          { size: "L", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123609&a=3013769&m=65912" },
+          { size: "L", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529123609&a=3013769&m=65912" },
           { size: "2XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123612&a=3013769&m=65912" },
           { size: "3XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123607&a=3013769&m=65912" },
           { size: "4XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123608&a=3013769&m=65912" },
@@ -116135,7 +116179,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 15.54,
-        priceMax: 36.0,
+        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41662753910&a=3013769&m=65912",
@@ -116143,7 +116187,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizes: ["S", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "S", price: 15.54, url: "https://www.awin1.com/pclick.php?p=41662753914&a=3013769&m=65912" },
-          { size: "2XL", price: 36.0, url: "https://www.awin1.com/pclick.php?p=41662753916&a=3013769&m=65912" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/pclick.php?p=41662753916&a=3013769&m=65912" },
           { size: "3XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=41662753910&a=3013769&m=65912" },
           { size: "4XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=41662753911&a=3013769&m=65912" },
         ],
@@ -116160,7 +116204,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 15.54,
-        priceMax: 36.0,
+        priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529123600&a=3013769&m=65912",
@@ -116169,9 +116213,9 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123604&a=3013769&m=65912" },
           { size: "M", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123603&a=3013769&m=65912" },
-          { size: "2XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123606&a=3013769&m=65912" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529123606&a=3013769&m=65912" },
           { size: "3XL", price: 15.54, url: "https://www.awin1.com/pclick.php?p=42529123600&a=3013769&m=65912" },
-          { size: "4XL", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42529123601&a=3013769&m=65912" },
+          { size: "4XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529123601&a=3013769&m=65912" },
         ],
       },
     ],
@@ -116297,7 +116341,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 64.0,
+        price: 62.0,
         priceMax: 79.0,
         shipping: 7.99,
         currency: "EUR",
@@ -116305,7 +116349,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_6821-u-002_blanc-anthra-light_1.webp&feedId=89032&k=93e45fdf8bb7f5349ad98df0783c8b1de95238eb",
         sizes: ["L", "4XL"],
         sizePrices: [
-          { size: "L", price: 64.0, url: "https://www.awin1.com/pclick.php?p=42529934117&a=3013769&m=65912" },
+          { size: "L", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42529934117&a=3013769&m=65912" },
           { size: "4XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42630379743&a=3013769&m=65912" },
         ],
       },
@@ -116321,11 +116365,21 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 29.13,
+        priceMax: 52.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529934118&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_9821-u-501_noir-melange-blanc_1.webp&feedId=89032&k=15f7bd11a0d45b8801cb777fff849a47298389d0",
-        sizes: ["S", "M", "L", "2XL", "3XL", "4XL"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+        sizePrices: [
+          { size: "S", price: 29.13, url: "https://www.awin1.com/pclick.php?p=42529934118&a=3013769&m=65912" },
+          { size: "M", price: 29.13, url: "https://www.awin1.com/pclick.php?p=42529934119&a=3013769&m=65912" },
+          { size: "L", price: 29.13, url: "https://www.awin1.com/pclick.php?p=42529934120&a=3013769&m=65912" },
+          { size: "XL", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42529934121&a=3013769&m=65912" },
+          { size: "2XL", price: 29.13, url: "https://www.awin1.com/pclick.php?p=42529934122&a=3013769&m=65912" },
+          { size: "3XL", price: 29.13, url: "https://www.awin1.com/pclick.php?p=42529934123&a=3013769&m=65912" },
+          { size: "4XL", price: 29.13, url: "https://www.awin1.com/pclick.php?p=42529934124&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -116364,16 +116418,11 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 62.0,
-        priceMax: 63.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529934130&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_6822-u-101_rouge-noir_1.webp&feedId=89032&k=7de54ada2e7f3e11c60999925750e3b39e46e4ed",
         sizes: ["M", "2XL"],
-        sizePrices: [
-          { size: "M", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42529934130&a=3013769&m=65912" },
-          { size: "2XL", price: 63.0, url: "https://www.awin1.com/pclick.php?p=44480975608&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -116446,6 +116495,24 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529934166&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_9323-e-000_blanc_1.webp&feedId=89032&k=17562a79992e3a51d647d211bd0cf41bc1878e1e",
         sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "jako-chaqueta-de-chandal-jako-pro-casual-blanc",
+    brand: "Jako",
+    model: "Chaqueta de chándal Jako Pro Casual - Blanc",
+    colour: "Blanc",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 79.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42630379753&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_9845-f-000_blanc_1.webp&feedId=89032&k=cce67692f710ad53c8897e5e8771dff9418e502e",
+        sizes: ["34"],
       },
     ],
   },
@@ -117852,18 +117919,18 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 66.0,
+        price: 65.0,
         priceMax: 79.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630379769&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42630379772&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_7403-u-100_rouge_1.webp&feedId=89032&k=fa83fd4c7d054dced4eb6f417bacf29c7deda156",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "S", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630379769&a=3013769&m=65912" },
           { size: "M", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630379770&a=3013769&m=65912" },
           { size: "L", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630379771&a=3013769&m=65912" },
-          { size: "XL", price: 67.0, url: "https://www.awin1.com/pclick.php?p=42630379772&a=3013769&m=65912" },
+          { size: "XL", price: 65.0, url: "https://www.awin1.com/pclick.php?p=42630379772&a=3013769&m=65912" },
           { size: "2XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42630379773&a=3013769&m=65912" },
           { size: "3XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42630379774&a=3013769&m=65912" },
           { size: "4XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42630379775&a=3013769&m=65912" },
@@ -117907,7 +117974,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizes: ["M", "L", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "M", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529934194&a=3013769&m=65912" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/pclick.php?p=42529934195&a=3013769&m=65912" },
+          { size: "L", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529934195&a=3013769&m=65912" },
           { size: "2XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=42529934197&a=3013769&m=65912" },
           { size: "3XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529934198&a=3013769&m=65912" },
           { size: "4XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529934199&a=3013769&m=65912" },
@@ -117942,7 +118009,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45906299808&a=3013769&m=65912",
@@ -117966,8 +118033,9 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7302-u-100-coupe-vent-jako-team-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako_7302-e-100_rouge_1.webp",
-        sizes: ["M", "L", "XL", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
+          { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7302-u-100-coupe-vent-jako-team-rouge" },
           { size: "M", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7302-u-100-coupe-vent-jako-team-rouge" },
           { size: "L", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7302-u-100-coupe-vent-jako-team-rouge" },
           { size: "XL", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7302-u-100-coupe-vent-jako-team-rouge" },
@@ -118004,18 +118072,12 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 21.0,
-        priceMax: 22.0,
+        price: 22.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-08-cuissard-jako-basic-2-0-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/8/5/8516_08_tight_basic_2.0.jpg",
         sizes: ["S", "M", "XL"],
-        sizePrices: [
-          { size: "S", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-08-cuissard-jako-basic-2-0-noir" },
-          { size: "M", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-08-cuissard-jako-basic-2-0-noir" },
-          { size: "XL", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-08-cuissard-jako-basic-2-0-noir" },
-        ],
       },
     ],
   },
@@ -118038,7 +118100,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-01-cuissard-jako-basic-2-0-rouge" },
           { size: "M", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-01-cuissard-jako-basic-2-0-rouge" },
-          { size: "L", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-01-cuissard-jako-basic-2-0-rouge" },
+          { size: "L", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-01-cuissard-jako-basic-2-0-rouge" },
           { size: "XL", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-01-cuissard-jako-basic-2-0-rouge" },
           { size: "2XL", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8516-u-01-cuissard-jako-basic-2-0-rouge" },
         ],
@@ -118072,7 +118134,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 30.0,
+        price: 29.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8551-u-00-cuissard-jako-court-compression-2-0-blanc",
@@ -118625,12 +118687,17 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.0,
+        price: 20.0,
+        priceMax: 21.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45906301740&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45983282420&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_2764_840.webp&feedId=89032&k=9377162d00e4e65ac08f096eaff45011232ec8b5",
         sizes: ["2XS", "L"],
+        sizePrices: [
+          { size: "2XS", price: 20.0, url: "https://www.awin1.com/pclick.php?p=45983282420&a=3013769&m=65912" },
+          { size: "L", price: 21.0, url: "https://www.awin1.com/pclick.php?p=45906301740&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -118662,17 +118729,11 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 11.95,
-        priceMax: 27.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529407245&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_2767_840.webp&feedId=89032&k=8756bc09ffd4e83c21400e22d44c732a02d55e46",
-        sizes: ["2XS", "XS", "L"],
-        sizePrices: [
-          { size: "2XS", price: 11.95, url: "https://www.awin1.com/pclick.php?p=42529407245&a=3013769&m=65912" },
-          { size: "XS", price: 27.0, url: "https://www.awin1.com/pclick.php?p=41021433467&a=3013769&m=65912" },
-          { size: "L", price: 11.95, url: "https://www.awin1.com/pclick.php?p=42051004960&a=3013769&m=65912" },
-        ],
+        sizes: ["2XS", "L"],
       },
     ],
   },
@@ -118740,19 +118801,17 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 37.0,
-        priceMax: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6555-u-00-legging-jako-long-comfort-2-0-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/6/5/6555_00.jpg",
-        sizes: ["M", "XL"],
-        sizePrices: [
-          { size: "M", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6555-u-00-legging-jako-long-comfort-2-0-blanc" },
-          { size: "XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6555-u-00-legging-jako-long-comfort-2-0-blanc" },
-        ],
+        sizes: ["S", "M", "XL", "2XL"],
       },
     ],
   },
+];
+
+const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "jako-legging-jako-long-comfort-2-0-bleu",
     brand: "Jako",
@@ -119041,9 +119100,6 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "jako-medias-jako-sans-pied-glasgow-2-0-orange",
     brand: "Jako",
@@ -119339,16 +119395,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 31.0,
-        priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45356587018&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44301920717&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_8595-e-08_noir-blanc_4.webp&feedId=89032&k=cbe272590923eea2ad659358734cc763ba679e47",
         sizes: ["2XL", "3XL"],
-        sizePrices: [
-          { size: "2XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=44301920717&a=3013769&m=65912" },
-          { size: "3XL", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45356587018&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -119469,7 +119520,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.0,
+        price: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529100964&a=3013769&m=65912",
@@ -119656,22 +119707,12 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.16,
-        priceMax: 34.17,
+        price: 34.17,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923840021&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923840022&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F5%2F8565_41.webp&feedId=89032&k=a5546de412097aa5de26938e6e8668f5f4623169",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-        sizePrices: [
-          { size: "S", price: 34.17, url: "https://www.awin1.com/pclick.php?p=37923840025&a=3013769&m=65912" },
-          { size: "M", price: 34.17, url: "https://www.awin1.com/pclick.php?p=42529101001&a=3013769&m=65912" },
-          { size: "L", price: 34.17, url: "https://www.awin1.com/pclick.php?p=42529101000&a=3013769&m=65912" },
-          { size: "XL", price: 34.17, url: "https://www.awin1.com/pclick.php?p=37923840026&a=3013769&m=65912" },
-          { size: "2XL", price: 34.17, url: "https://www.awin1.com/pclick.php?p=37923840027&a=3013769&m=65912" },
-          { size: "3XL", price: 26.16, url: "https://www.awin1.com/pclick.php?p=37923840021&a=3013769&m=65912" },
-          { size: "4XL", price: 34.17, url: "https://www.awin1.com/pclick.php?p=37923840022&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "M", "L", "XL", "2XL", "4XL"],
       },
     ],
   },
@@ -119873,7 +119914,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.0,
+        price: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45081925190&a=3013769&m=65912",
@@ -120495,17 +120536,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 31.0,
-        priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45319429083&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44536060826&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_4430_950.webp&feedId=89032&k=d91a6b4e4767ffb8ff28931385eacbdf5058fdb5",
         sizes: ["M", "L", "XL"],
-        sizePrices: [
-          { size: "M", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45319429083&a=3013769&m=65912" },
-          { size: "L", price: 32.0, url: "https://www.awin1.com/pclick.php?p=44536060826&a=3013769&m=65912" },
-          { size: "XL", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45319429084&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -120518,7 +120553,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.0,
+        price: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45277987727&a=3013769&m=65912",
@@ -120974,13 +121009,13 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
         priceMax: 69.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630379591&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529932584&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_c6540-f-800_noir_1.webp&feedId=89032&k=2c80cf768a2609d0b31067fe19e931111cf9bd7b",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "S", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42630379589&a=3013769&m=65912" },
-          { size: "M", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42529932583&a=3013769&m=65912" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/pclick.php?p=42529932584&a=3013769&m=65912" },
+          { size: "M", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42529932583&a=3013769&m=65912" },
+          { size: "L", price: 43.0, url: "https://www.awin1.com/pclick.php?p=42529932584&a=3013769&m=65912" },
           { size: "XL", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42529932585&a=3013769&m=65912" },
           { size: "2XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42529932586&a=3013769&m=65912" },
           { size: "3XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42630379590&a=3013769&m=65912" },
@@ -121076,17 +121111,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 20.51,
-        priceMax: 39.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529096692&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F5%2F6550l-f-09_1.webp&feedId=89032&k=302a965a4ea4be2550ec3712bc1f7406d08f146a",
-        sizes: ["38", "40", "42"],
-        sizePrices: [
-          { size: "38", price: 20.51, url: "https://www.awin1.com/pclick.php?p=42529096692&a=3013769&m=65912" },
-          { size: "40", price: 20.51, url: "https://www.awin1.com/pclick.php?p=42529096693&a=3013769&m=65912" },
-          { size: "42", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42529096694&a=3013769&m=65912" },
-        ],
+        sizes: ["38", "40"],
       },
     ],
   },
@@ -121099,7 +121128,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 40.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44301913107&a=3013769&m=65912",
@@ -121154,19 +121183,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 44.0,
-        priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529096845&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F5%2F6565_08.webp&feedId=89032&k=606ec2a61ef36da51f5ecddd4e3b88c6abdbeef6",
         sizes: ["M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "M", price: 45.0, url: "https://www.awin1.com/pclick.php?p=43705546199&a=3013769&m=65912" },
-          { size: "L", price: 44.0, url: "https://www.awin1.com/pclick.php?p=43705546198&a=3013769&m=65912" },
-          { size: "XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=43705546200&a=3013769&m=65912" },
-          { size: "2XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=43705546201&a=3013769&m=65912" },
-          { size: "3XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529096845&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -121276,7 +121297,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.0,
+        price: 56.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529096727&a=3013769&m=65912",
@@ -121328,28 +121349,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 20.51,
-        priceMax: 39.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529096757&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F5%2F6550d-f-09_1.webp&feedId=89032&k=ef2d17a8a8aed2993449e57a9b570eb70c21ea68",
-        sizes: ["34", "38", "44", "46", "48"],
-        sizePrices: [
-          { size: "34", price: 20.51, url: "https://www.awin1.com/pclick.php?p=42529096757&a=3013769&m=65912" },
-          { size: "38", price: 20.51, url: "https://www.awin1.com/pclick.php?p=43654172263&a=3013769&m=65912" },
-          { size: "44", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42529096762&a=3013769&m=65912" },
-          { size: "46", price: 20.51, url: "https://www.awin1.com/pclick.php?p=42529096763&a=3013769&m=65912" },
-          { size: "48", price: 20.51, url: "https://www.awin1.com/pclick.php?p=43656574958&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "FootStoreES",
-        price: 39.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529096872&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F5%2F6550_42.webp&feedId=89032&k=decfffae0d5111b2ae21ff83a89ac8faf8b6915f",
-        sizes: ["S"],
+        sizes: ["34", "38", "46", "48"],
       },
       {
         store: "FootStoreES",
@@ -121593,17 +121597,12 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 26.0,
-        priceMax: 29.0,
+        price: 27.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45951220941&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45983282180&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F9%2F2%2F9250_08.webp&feedId=89032&k=a35617c5957896229b2f642164f4c5be83bc567e",
         sizes: ["M", "XL"],
-        sizePrices: [
-          { size: "M", price: 29.0, url: "https://www.awin1.com/pclick.php?p=45983282180&a=3013769&m=65912" },
-          { size: "XL", price: 26.0, url: "https://www.awin1.com/pclick.php?p=45951220941&a=3013769&m=65912" },
-        ],
       },
       {
         store: "SportIsGoodES",
@@ -121707,11 +121706,16 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 26.42,
+        priceMax: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38063920769&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_9218-h-33.webp&feedId=89032&k=7f500a36c93b49a63325de003480fdf998784831",
-        sizes: ["S"],
+        sizes: ["S", "M"],
+        sizePrices: [
+          { size: "S", price: 26.42, url: "https://www.awin1.com/pclick.php?p=38063920769&a=3013769&m=65912" },
+          { size: "M", price: 36.0, url: "https://www.awin1.com/pclick.php?p=37923836932&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -121773,13 +121777,12 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
         priceMax: 49.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44406809440&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529932589&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_6523-e-000_blanc_1.webp&feedId=89032&k=6d87da60ea16675f6d9a63b87a49efb0d56c8571",
-        sizes: ["M", "L", "2XL"],
+        sizes: ["M", "L"],
         sizePrices: [
           { size: "M", price: 49.0, url: "https://www.awin1.com/pclick.php?p=42529932588&a=3013769&m=65912" },
-          { size: "L", price: 49.0, url: "https://www.awin1.com/pclick.php?p=42529932589&a=3013769&m=65912" },
-          { size: "2XL", price: 48.0, url: "https://www.awin1.com/pclick.php?p=44406809440&a=3013769&m=65912" },
+          { size: "L", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529932589&a=3013769&m=65912" },
         ],
       },
     ],
@@ -121839,12 +121842,21 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43745914656&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43745914659&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_7502-u-800_noir_1.webp&feedId=89032&k=c55d4c55d9560297aaf3f622d9be14ed79c5e67f",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43745914656&a=3013769&m=65912" },
+          { size: "M", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43745914657&a=3013769&m=65912" },
+          { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43745914658&a=3013769&m=65912" },
+          { size: "XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43745914659&a=3013769&m=65912" },
+          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529932603&a=3013769&m=65912" },
+          { size: "3XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43745914660&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -121912,20 +121924,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 44.0,
-        priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45621340166&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F4%2F8495_08_classic.webp&feedId=89032&k=4d7d876233d074d62766293a7e3cdffc8da676fa",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "S", price: 44.0, url: "https://www.awin1.com/pclick.php?p=45621340166&a=3013769&m=65912" },
-          { size: "M", price: 44.0, url: "https://www.awin1.com/pclick.php?p=41104829054&a=3013769&m=65912" },
-          { size: "L", price: 44.0, url: "https://www.awin1.com/pclick.php?p=41104829055&a=3013769&m=65912" },
-          { size: "XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=41104829056&a=3013769&m=65912" },
-          { size: "2XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=41104829057&a=3013769&m=65912" },
-          { size: "3XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=41104829058&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -121955,9 +121958,9 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
           { size: "34", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
           { size: "36", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
           { size: "38", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
-          { size: "40", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
+          { size: "40", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
           { size: "42", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
-          { size: "44", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
+          { size: "44", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc6540-f-800-pantalon-de-survetement-femme-jako-casual-noir" },
         ],
       },
     ],
@@ -122008,17 +122011,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.31,
-        priceMax: 39.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-09-pantalon-de-survetement-femme-jako-classico-tailles-longues-bleu-marine",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/5/6550l-f-09_1.webp",
-        sizes: ["38", "40", "42"],
-        sizePrices: [
-          { size: "38", price: 19.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-09-pantalon-de-survetement-femme-jako-classico-tailles-longues-bleu-marine" },
-          { size: "40", price: 19.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-09-pantalon-de-survetement-femme-jako-classico-tailles-longues-bleu-marine" },
-          { size: "42", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-09-pantalon-de-survetement-femme-jako-classico-tailles-longues-bleu-marine" },
-        ],
+        sizes: ["38", "40"],
       },
     ],
   },
@@ -122032,16 +122029,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 40.0,
-        priceMax: 41.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-08-pantalon-de-survetement-femme-jako-classico-tailles-longues-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/6/5/6550l-f-08_1.jpg",
         sizes: ["38", "42"],
-        sizePrices: [
-          { size: "38", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-08-pantalon-de-survetement-femme-jako-classico-tailles-longues-noir" },
-          { size: "42", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550l-f-08-pantalon-de-survetement-femme-jako-classico-tailles-longues-noir" },
-        ],
       },
     ],
   },
@@ -122143,12 +122135,17 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 56.0,
+        price: 55.0,
+        priceMax: 59.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8429-f-21-pantalon-de-survetement-femme-jako-jogging-premium-basics-gris-anthracite",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/4/8429-f-21_1.webp",
-        sizes: ["36"],
+        sizes: ["36", "42"],
+        sizePrices: [
+          { size: "36", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8429-f-21-pantalon-de-survetement-femme-jako-jogging-premium-basics-gris-anthracite" },
+          { size: "42", price: 59.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8429-f-21-pantalon-de-survetement-femme-jako-jogging-premium-basics-gris-anthracite" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -122175,7 +122172,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8429-f-28-pantalon-de-survetement-femme-jako-jogging-premium-basics-vert-kaki",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/4/8429-f-28_1.webp",
-        sizes: ["44"],
+        sizes: ["34", "36", "38", "40", "42", "44"],
       },
     ],
   },
@@ -122189,19 +122186,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.31,
-        priceMax: 39.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550d-f-09-pantalon-de-survetement-femme-jako-loisir-classico-bleu-marine",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/5/6550d-f-09_1.webp",
-        sizes: ["34", "38", "44", "46", "48"],
-        sizePrices: [
-          { size: "34", price: 19.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550d-f-09-pantalon-de-survetement-femme-jako-loisir-classico-bleu-marine" },
-          { size: "38", price: 19.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550d-f-09-pantalon-de-survetement-femme-jako-loisir-classico-bleu-marine" },
-          { size: "44", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550d-f-09-pantalon-de-survetement-femme-jako-loisir-classico-bleu-marine" },
-          { size: "46", price: 19.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550d-f-09-pantalon-de-survetement-femme-jako-loisir-classico-bleu-marine" },
-          { size: "48", price: 19.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550d-f-09-pantalon-de-survetement-femme-jako-loisir-classico-bleu-marine" },
-        ],
+        sizes: ["34", "38", "46", "48"],
       },
     ],
   },
@@ -122375,16 +122364,11 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 20.22,
-        priceMax: 29.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9250d-f-08-pantalon-de-survetement-femme-jako-polyester-classico-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/9/2/9250d_08.webp",
-        sizes: ["40", "46"],
-        sizePrices: [
-          { size: "40", price: 20.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9250d-f-08-pantalon-de-survetement-femme-jako-polyester-classico-noir" },
-          { size: "46", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9250d-f-08-pantalon-de-survetement-femme-jako-polyester-classico-noir" },
-        ],
+        sizes: ["40"],
       },
       {
         store: "SportIsGoodFR",
@@ -122684,7 +122668,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8429-u-28-pantalon-de-survetement-jako-jogging-premium-basics-vert-kaki",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/4/8429_28.webp",
-        sizes: ["M", "4XL"],
+        sizes: ["S", "M", "3XL", "4XL"],
       },
     ],
   },
@@ -122695,15 +122679,6 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     colour: "Bleu",
     type: "pants",
     offers: [
-      {
-        store: "FootStoreFR",
-        price: 39.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6550-u-09-pantalon-de-survetement-jako-loisir-classico-bleu-marine",
-        imageUrl: "https://cdn.blazimg.com/1800/product/6/5/6550_42.webp",
-        sizes: ["S"],
-      },
       {
         store: "FootStoreFR",
         price: 37.73,
@@ -122787,17 +122762,12 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 25.0,
-        priceMax: 26.0,
+        price: 26.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9250-e-9250-u-pantalon-de-survetement-jako-polyester-classico-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/9/2/9250_08.webp",
         sizes: ["M", "XL"],
-        sizePrices: [
-          { size: "M", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9250-e-9250-u-pantalon-de-survetement-jako-polyester-classico-noir" },
-          { size: "XL", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9250-e-9250-u-pantalon-de-survetement-jako-polyester-classico-noir" },
-        ],
       },
     ],
   },
@@ -122988,6 +122958,9 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-survetement-jako-retro-noir",
     brand: "Jako",
@@ -123222,7 +123195,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8421-f-903-pantalon-femme-jako-d-entrainment-challenge-bleu-marine-bleu-royal",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/4/8421-f-903_1.webp",
-        sizes: ["40"],
+        sizes: ["40", "42"],
       },
     ],
   },
@@ -123244,9 +123217,6 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "jako-pantalon-femme-jako-pantalon-de-survetement-challenge-bleu",
     brand: "Jako",
@@ -123398,7 +123368,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 40.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630339180&a=3013769&m=65912",
@@ -123421,7 +123391,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529189688&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F4%2F8421-f-903_1.webp&feedId=89032&k=1346a25aa53fc3bec93f3641bc776ad31f6afa77",
-        sizes: ["40"],
+        sizes: ["40", "42"],
       },
     ],
   },
@@ -123560,36 +123530,12 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 39.0,
-        priceMax: 42.0,
+        price: 41.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8450-h-08-pantalon-jako-entrainement-classico-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/8/4/8450_08.jpg",
         sizes: ["S", "M", "2XL"],
-        sizePrices: [
-          { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8450-h-08-pantalon-jako-entrainement-classico-noir" },
-          { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8450-h-08-pantalon-jako-entrainement-classico-noir" },
-          { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8450-h-08-pantalon-jako-entrainement-classico-noir" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "jako-pantalon-jako-entrainement-classico-noir-2",
-    brand: "Jako",
-    model: "Pantalón Jako entraînement Classico - Noir",
-    colour: "Noir",
-    type: "pants",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 39.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923836716&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F4%2F8450_08.webp&feedId=89032&k=c1b5128a8daa35d018ca7fa5a937d287f450de53",
-        sizes: ["M"],
       },
     ],
   },
@@ -123829,17 +123775,11 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 23.0,
-        priceMax: 24.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45906299669&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45906299667&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F5%2F8516_08_tight_basic_2.0.webp&feedId=89032&k=8bf8b28ee071af5b3345efd218d6cad53c65a17c",
         sizes: ["S", "M", "XL"],
-        sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=45906299668&a=3013769&m=65912" },
-          { size: "M", price: 24.0, url: "https://www.awin1.com/pclick.php?p=45906299667&a=3013769&m=65912" },
-          { size: "XL", price: 23.0, url: "https://www.awin1.com/pclick.php?p=45906299669&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -123897,19 +123837,11 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 31.0,
-        priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43846793474&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F5%2F8551_00.webp&feedId=89032&k=e8d12609376a225f4ceaccb08cba60efc1a48460",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43846793476&a=3013769&m=65912" },
-          { size: "M", price: 31.0, url: "https://www.awin1.com/pclick.php?p=43846793475&a=3013769&m=65912" },
-          { size: "L", price: 31.0, url: "https://www.awin1.com/pclick.php?p=43846793474&a=3013769&m=65912" },
-          { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43846793477&a=3013769&m=65912" },
-          { size: "2XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43846793478&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -124128,7 +124060,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
           { size: "M", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43745892927&a=3013769&m=65912" },
           { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43795261865&a=3013769&m=65912" },
           { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43755730208&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=43820349271&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43820349271&a=3013769&m=65912" },
         ],
       },
     ],
@@ -124160,12 +124092,17 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529932610&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529932614&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_9289-e-800_noir_1.webp&feedId=89032&k=ec3f089da2af86d707acfa7c97da0238e5dc82fd",
         sizes: ["S", "2XL"],
+        sizePrices: [
+          { size: "S", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529932610&a=3013769&m=65912" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529932614&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -124178,7 +124115,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 74.0,
+        price: 73.0,
         priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
@@ -124192,7 +124129,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
           { size: "40", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379169&a=3013769&m=65912" },
           { size: "42", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379170&a=3013769&m=65912" },
           { size: "44", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379171&a=3013769&m=65912" },
-          { size: "46", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42630379172&a=3013769&m=65912" },
+          { size: "46", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42630379172&a=3013769&m=65912" },
         ],
       },
     ],
@@ -124206,7 +124143,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 87.0,
+        price: 86.0,
         priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
@@ -124216,7 +124153,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379173&a=3013769&m=65912" },
           { size: "S", price: 89.0, url: "https://www.awin1.com/pclick.php?p=45443796986&a=3013769&m=65912" },
-          { size: "M", price: 87.0, url: "https://www.awin1.com/pclick.php?p=42529932422&a=3013769&m=65912" },
+          { size: "M", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42529932422&a=3013769&m=65912" },
           { size: "L", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379175&a=3013769&m=65912" },
           { size: "XL", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379176&a=3013769&m=65912" },
           { size: "2XL", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379177&a=3013769&m=65912" },
@@ -124236,18 +124173,18 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 93.0,
+        price: 92.0,
         priceMax: 99.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529932423&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529932424&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_7104-e-100_rouge_1.webp&feedId=89032&k=4e1986c5b46a5699618723d22bc2d34c0520ae02",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "S", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42529932423&a=3013769&m=65912" },
-          { size: "M", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42529932424&a=3013769&m=65912" },
+          { size: "M", price: 92.0, url: "https://www.awin1.com/pclick.php?p=42529932424&a=3013769&m=65912" },
           { size: "L", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42529932425&a=3013769&m=65912" },
-          { size: "XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42529932426&a=3013769&m=65912" },
+          { size: "XL", price: 92.0, url: "https://www.awin1.com/pclick.php?p=42529932426&a=3013769&m=65912" },
           { size: "2XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=42529932427&a=3013769&m=65912" },
           { size: "3XL", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42529932428&a=3013769&m=65912" },
           { size: "4XL", price: 99.0, url: "https://www.awin1.com/pclick.php?p=42630379181&a=3013769&m=65912" },
@@ -124341,7 +124278,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2767-u-110-protege-tibias-jako-performance-dynamic-2024-25-rouge-sport",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2767-u-110_rouge-sport_1.jpg",
-        sizes: ["2XS", "M", "L"],
+        sizes: ["2XS", "L"],
       },
     ],
   },
@@ -124373,17 +124310,11 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 10.91,
-        priceMax: 26.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2767-u-840-protege-tibias-jako-performance-dynamic-gris",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako_2767_840.webp",
-        sizes: ["2XS", "XS", "L"],
-        sizePrices: [
-          { size: "2XS", price: 10.91, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2767-u-840-protege-tibias-jako-performance-dynamic-gris" },
-          { size: "XS", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2767-u-840-protege-tibias-jako-performance-dynamic-gris" },
-          { size: "L", price: 10.91, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2767-u-840-protege-tibias-jako-performance-dynamic-gris" },
-        ],
+        sizes: ["2XS", "L"],
       },
     ],
   },
@@ -124910,13 +124841,13 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         priceMax: 79.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529933997&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529933995&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_c8510-f-800_noir_1.webp&feedId=89032&k=e75b82ebdb50a354339acb11691a09d5f2a9c404",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL", "5XL"],
         sizePrices: [
           { size: "S", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42529933993&a=3013769&m=65912" },
           { size: "M", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42529933994&a=3013769&m=65912" },
-          { size: "L", price: 70.0, url: "https://www.awin1.com/pclick.php?p=42529933995&a=3013769&m=65912" },
+          { size: "L", price: 68.0, url: "https://www.awin1.com/pclick.php?p=42529933995&a=3013769&m=65912" },
           { size: "XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=42529933996&a=3013769&m=65912" },
           { size: "2XL", price: 68.0, url: "https://www.awin1.com/pclick.php?p=42529933997&a=3013769&m=65912" },
           { size: "3XL", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42529933998&a=3013769&m=65912" },
@@ -125122,31 +125053,12 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 25.94,
-        priceMax: 33.68,
+        price: 33.68,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/5/8565_41.webp",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-        sizePrices: [
-          { size: "S", price: 33.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-          { size: "M", price: 33.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-          { size: "L", price: 33.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-          { size: "XL", price: 33.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-          { size: "2XL", price: 33.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-          { size: "3XL", price: 25.94, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-          { size: "4XL", price: 33.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8565-u-41-short-jako-base-gris" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 25.94,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F8565-u-41-short-jako-base-gris",
-        imageUrl: "https://cdn.blazimg.com/1800/product/8/5/8565_41.webp",
-        sizes: ["3XL"],
       },
     ],
   },
@@ -125348,7 +125260,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 31.0,
+        price: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6218-u-33-short-jako-competition-2-0-noir-jaune-fluo",
@@ -125433,7 +125345,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 29.0,
+        price: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fshort-jako-de-gardien-striker-noir",
@@ -126016,17 +125928,11 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 30.0,
-        priceMax: 31.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4430-u-950-short-jako-world-bleu-acier",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_4430_950.jpg",
         sizes: ["M", "L", "XL"],
-        sizePrices: [
-          { size: "M", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4430-u-950-short-jako-world-bleu-acier" },
-          { size: "L", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4430-u-950-short-jako-world-bleu-acier" },
-          { size: "XL", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4430-u-950-short-jako-world-bleu-acier" },
-        ],
       },
     ],
   },
@@ -126948,6 +126854,9 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "jako-t-shirt-jako-fonctionnel-promo-jaune",
     brand: "Jako",
@@ -127120,16 +127029,11 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 34.0,
-        priceMax: 35.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-49-t-shirt-jako-premium-basics-bleu-marine",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/1/6129_49.webp",
         sizes: ["2XL", "3XL"],
-        sizePrices: [
-          { size: "2XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-49-t-shirt-jako-premium-basics-bleu-marine" },
-          { size: "3XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-49-t-shirt-jako-premium-basics-bleu-marine" },
-        ],
       },
     ],
   },
@@ -127142,7 +127046,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 35.0,
+        price: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-21-t-shirt-jako-premium-basics-gris-anthracite",
@@ -127179,7 +127083,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 15.32,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-01-t-shirt-jako-premium-basics-rouge",
@@ -127187,7 +127091,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         sizes: ["S", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "S", price: 15.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-01-t-shirt-jako-premium-basics-rouge" },
-          { size: "2XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-01-t-shirt-jako-premium-basics-rouge" },
+          { size: "2XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-01-t-shirt-jako-premium-basics-rouge" },
           { size: "3XL", price: 15.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-01-t-shirt-jako-premium-basics-rouge" },
           { size: "4XL", price: 15.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-01-t-shirt-jako-premium-basics-rouge" },
         ],
@@ -127204,7 +127108,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 15.32,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-28-t-shirt-jako-premium-basics-vert-kaki",
@@ -127215,7 +127119,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
           { size: "M", price: 15.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-28-t-shirt-jako-premium-basics-vert-kaki" },
           { size: "2XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-28-t-shirt-jako-premium-basics-vert-kaki" },
           { size: "3XL", price: 15.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-28-t-shirt-jako-premium-basics-vert-kaki" },
-          { size: "4XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-28-t-shirt-jako-premium-basics-vert-kaki" },
+          { size: "4XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6129-u-28-t-shirt-jako-premium-basics-vert-kaki" },
         ],
       },
     ],
@@ -127247,16 +127151,16 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 63.0,
-        priceMax: 71.0,
+        price: 61.0,
+        priceMax: 70.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6821-u-002-veste-de-survetement-a-capuche-jako-challenge-blanc-anthra-light",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako_6821-u-002_blanc-anthra-light_1.webp",
         sizes: ["L", "4XL"],
         sizePrices: [
-          { size: "L", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6821-u-002-veste-de-survetement-a-capuche-jako-challenge-blanc-anthra-light" },
-          { size: "4XL", price: 71.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6821-u-002-veste-de-survetement-a-capuche-jako-challenge-blanc-anthra-light" },
+          { size: "L", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6821-u-002-veste-de-survetement-a-capuche-jako-challenge-blanc-anthra-light" },
+          { size: "4XL", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6821-u-002-veste-de-survetement-a-capuche-jako-challenge-blanc-anthra-light" },
         ],
       },
     ],
@@ -127271,17 +127175,24 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.15,
+        priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/a/jako_9821-u-501_noir-melange-blanc_1.webp",
-        sizes: ["S", "M", "L", "2XL", "3XL", "4XL"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+        sizePrices: [
+          { size: "S", price: 29.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+          { size: "M", price: 29.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+          { size: "L", price: 29.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+          { size: "XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+          { size: "2XL", price: 29.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+          { size: "3XL", price: 29.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+          { size: "4XL", price: 29.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9821-u-501-veste-de-survetement-a-capuche-jako-challenge-noir-melange-blanc" },
+        ],
       },
     ],
   },
-];
-
-const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "jako-veste-de-survetement-a-capuche-jako-iconic-blanc",
     brand: "Jako",
@@ -127430,7 +127341,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "S", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
           { size: "M", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
           { size: "L", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
-          { size: "XL", price: 64.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
+          { size: "XL", price: 63.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
           { size: "2XL", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
           { size: "3XL", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
           { size: "4XL", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7403-u-100-veste-impermeable-jako-allround-rouge" },
@@ -127534,24 +127445,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44510940216&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fe%2Fteam_14_1.webp&feedId=89032&k=c682554bb41728087e90ef4897afdb7429993685",
         sizes: [],
-      },
-    ],
-  },
-  {
-    id: "joma-calcetines-de-futbol-joma-classic-ii-jaune",
-    brand: "Joma",
-    model: "Calcetines de fútbol Joma Classic II - Jaune",
-    colour: "Jaune",
-    type: "socks",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.84,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37632932512&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_400054.060_0.webp&feedId=89032&k=879f752ffb7ba5c6eae2b91ec8f30d821724ac2b",
-        sizes: ["L"],
       },
     ],
   },
@@ -128057,7 +127950,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 17.95,
-        priceMax: 35.0,
+        priceMax: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529446172&a=3013769&m=65912",
@@ -128067,7 +127960,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "S", price: 17.95, url: "https://www.awin1.com/pclick.php?p=42529446172&a=3013769&m=65912" },
           { size: "M", price: 17.95, url: "https://www.awin1.com/pclick.php?p=42529446173&a=3013769&m=65912" },
           { size: "L", price: 17.95, url: "https://www.awin1.com/pclick.php?p=42529446174&a=3013769&m=65912" },
-          { size: "XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529446175&a=3013769&m=65912" },
+          { size: "XL", price: 36.0, url: "https://www.awin1.com/pclick.php?p=42529446175&a=3013769&m=65912" },
         ],
       },
     ],
@@ -128105,8 +127998,8 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
           { size: "S", price: 17.95, url: "https://www.awin1.com/pclick.php?p=44338937744&a=3013769&m=65912" },
-          { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529446184&a=3013769&m=65912" },
-          { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42529446185&a=3013769&m=65912" },
+          { size: "M", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529446184&a=3013769&m=65912" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529446185&a=3013769&m=65912" },
           { size: "2XL", price: 49.0, url: "https://www.awin1.com/pclick.php?p=44338937745&a=3013769&m=65912" },
         ],
       },
@@ -128282,7 +128175,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "2XS", price: 17.95, url: "https://www.awin1.com/pclick.php?p=44338938777&a=3013769&m=65912" },
           { size: "XS", price: 17.95, url: "https://www.awin1.com/pclick.php?p=44338938778&a=3013769&m=65912" },
           { size: "M", price: 51.0, url: "https://www.awin1.com/pclick.php?p=42529498600&a=3013769&m=65912" },
-          { size: "L", price: 51.0, url: "https://www.awin1.com/pclick.php?p=42529498601&a=3013769&m=65912" },
+          { size: "L", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529498601&a=3013769&m=65912" },
         ],
       },
       {
@@ -129628,7 +129521,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323048284&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_100087.010_0.webp&feedId=89032&k=ffe0cfe1743ae3155249ca04fbda66da01426118",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "5/6 ans", "7/8 ans", "11/12 ans", "12/14 ans"],
         sizePrices: [
           { size: "S", price: 22.33, url: "https://www.awin1.com/pclick.php?p=42529339888&a=3013769&m=65912" },
           { size: "M", price: 22.33, url: "https://www.awin1.com/pclick.php?p=43994220408&a=3013769&m=65912" },
@@ -129636,10 +129529,8 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "XL", price: 22.33, url: "https://www.awin1.com/pclick.php?p=43994220410&a=3013769&m=65912" },
           { size: "2XL", price: 22.33, url: "https://www.awin1.com/pclick.php?p=44323048286&a=3013769&m=65912" },
           { size: "3XL", price: 22.33, url: "https://www.awin1.com/pclick.php?p=44323048287&a=3013769&m=65912" },
-          { size: "4/5 ans", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529339885&a=3013769&m=65912" },
           { size: "5/6 ans", price: 25.0, url: "https://www.awin1.com/pclick.php?p=43691267988&a=3013769&m=65912" },
           { size: "7/8 ans", price: 25.0, url: "https://www.awin1.com/pclick.php?p=44323048282&a=3013769&m=65912" },
-          { size: "9/10 ans", price: 25.0, url: "https://www.awin1.com/pclick.php?p=44323048283&a=3013769&m=65912" },
           { size: "11/12 ans", price: 22.33, url: "https://www.awin1.com/pclick.php?p=44323048284&a=3013769&m=65912" },
           { size: "12/14 ans", price: 25.0, url: "https://www.awin1.com/pclick.php?p=44323048285&a=3013769&m=65912" },
         ],
@@ -129669,33 +129560,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "XL", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529446102&a=3013769&m=65912" },
           { size: "2XL", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529446103&a=3013769&m=65912" },
         ],
-      },
-    ],
-  },
-  {
-    id: "joma-chaussettes-joma-classic-ii-jaune",
-    brand: "Joma",
-    model: "Chaussettes Joma Classic II - Jaune",
-    colour: "Jaune",
-    type: "socks",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 5.79,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400054-060-chaussettes-joma-classic-ii-amarillo-fluor",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400054.060_0.webp",
-        sizes: ["L"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 5.79,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400054-060-chaussettes-joma-classic-ii-amarillo-fluor",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400054.060_0.webp",
-        sizes: ["L"],
       },
     ],
   },
@@ -130652,11 +130516,10 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444976157&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103734.102_negro-blanco_1.webp&feedId=89032&k=b8569a594cf14b9f459b1e95597f719e8b3f069f",
-        sizes: ["XS", "L", "XL"],
+        sizes: ["XS", "L"],
         sizePrices: [
           { size: "XS", price: 13.32, url: "https://www.awin1.com/pclick.php?p=44444976157&a=3013769&m=65912" },
           { size: "L", price: 31.0, url: "https://www.awin1.com/pclick.php?p=42529622699&a=3013769&m=65912" },
-          { size: "XL", price: 31.0, url: "https://www.awin1.com/pclick.php?p=42529622700&a=3013769&m=65912" },
         ],
       },
     ],
@@ -130725,16 +130588,17 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 13.32,
-        priceMax: 31.0,
+        priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529622800&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103836.011_turquesa-fluor-negro_1.webp&feedId=89032&k=ba704bb01348e264249589b3cfaae56f3c3cea05",
-        sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 13.32, url: "https://www.awin1.com/pclick.php?p=42529622800&a=3013769&m=65912" },
           { size: "S", price: 13.32, url: "https://www.awin1.com/pclick.php?p=44323054578&a=3013769&m=65912" },
-          { size: "L", price: 31.0, url: "https://www.awin1.com/pclick.php?p=42529622803&a=3013769&m=65912" },
+          { size: "M", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529622802&a=3013769&m=65912" },
+          { size: "L", price: 33.0, url: "https://www.awin1.com/pclick.php?p=42529622803&a=3013769&m=65912" },
           { size: "XL", price: 13.32, url: "https://www.awin1.com/pclick.php?p=42529622804&a=3013769&m=65912" },
           { size: "2XL", price: 13.32, url: "https://www.awin1.com/pclick.php?p=42529622805&a=3013769&m=65912" },
           { size: "3XL", price: 13.32, url: "https://www.awin1.com/pclick.php?p=44323054579&a=3013769&m=65912" },
@@ -131577,7 +131441,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323048238&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_102858.013_0.webp&feedId=89032&k=4726877d0ab6c510d740dfbe8d7f4ae191a6d247",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "7/8 ans", "11/12 ans"],
         sizePrices: [
           { size: "S", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048244&a=3013769&m=65912" },
           { size: "M", price: 33.63, url: "https://www.awin1.com/pclick.php?p=43881583332&a=3013769&m=65912" },
@@ -131588,9 +131452,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "4/5 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048238&a=3013769&m=65912" },
           { size: "5/6 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048239&a=3013769&m=65912" },
           { size: "7/8 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048240&a=3013769&m=65912" },
-          { size: "9/10 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048241&a=3013769&m=65912" },
           { size: "11/12 ans", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048242&a=3013769&m=65912" },
-          { size: "12/14 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048243&a=3013769&m=65912" },
         ],
       },
     ],
@@ -131608,9 +131470,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44323048199&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44323048200&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_102858.063_0.webp&feedId=89032&k=016348894269aab1d0418ce0f82b6bbcd292035e",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "5/6 ans", "9/10 ans", "11/12 ans"],
         sizePrices: [
           { size: "S", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048204&a=3013769&m=65912" },
           { size: "M", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048205&a=3013769&m=65912" },
@@ -131618,12 +131480,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048207&a=3013769&m=65912" },
           { size: "2XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048208&a=3013769&m=65912" },
           { size: "3XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048209&a=3013769&m=65912" },
-          { size: "4/5 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048199&a=3013769&m=65912" },
           { size: "5/6 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048200&a=3013769&m=65912" },
-          { size: "7/8 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44852071494&a=3013769&m=65912" },
           { size: "9/10 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44845079662&a=3013769&m=65912" },
           { size: "11/12 ans", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048202&a=3013769&m=65912" },
-          { size: "12/14 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048203&a=3013769&m=65912" },
         ],
       },
     ],
@@ -131637,11 +131496,11 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
-        priceMax: 34.0,
+        price: 33.63,
+        priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44323048215&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43846797834&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_102858.102_0.webp&feedId=89032&k=ee53391d46de92d56810dd9a04266dd073bcc12c",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
         sizePrices: [
@@ -131652,11 +131511,11 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "2XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048220&a=3013769&m=65912" },
           { size: "3XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44845079663&a=3013769&m=65912" },
           { size: "4/5 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529337990&a=3013769&m=65912" },
-          { size: "5/6 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048215&a=3013769&m=65912" },
-          { size: "7/8 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048216&a=3013769&m=65912" },
-          { size: "9/10 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048217&a=3013769&m=65912" },
+          { size: "5/6 ans", price: 35.0, url: "https://www.awin1.com/pclick.php?p=44323048215&a=3013769&m=65912" },
+          { size: "7/8 ans", price: 35.0, url: "https://www.awin1.com/pclick.php?p=44323048216&a=3013769&m=65912" },
+          { size: "9/10 ans", price: 35.0, url: "https://www.awin1.com/pclick.php?p=44323048217&a=3013769&m=65912" },
           { size: "11/12 ans", price: 33.63, url: "https://www.awin1.com/pclick.php?p=43846797834&a=3013769&m=65912" },
-          { size: "12/14 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43846797835&a=3013769&m=65912" },
+          { size: "12/14 ans", price: 35.0, url: "https://www.awin1.com/pclick.php?p=43846797835&a=3013769&m=65912" },
         ],
       },
     ],
@@ -131688,13 +131547,13 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 33.63,
         priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44323048231&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44852071499&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_102858.031_0.webp&feedId=89032&k=e2543751c719025d9b6f8c4b3862a755a4510089",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
         sizePrices: [
           { size: "S", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048233&a=3013769&m=65912" },
           { size: "M", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048234&a=3013769&m=65912" },
@@ -131702,12 +131561,10 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048236&a=3013769&m=65912" },
           { size: "2XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048237&a=3013769&m=65912" },
           { size: "3XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44417037043&a=3013769&m=65912" },
-          { size: "4/5 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048231&a=3013769&m=65912" },
-          { size: "5/6 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048232&a=3013769&m=65912" },
-          { size: "7/8 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44729486754&a=3013769&m=65912" },
+          { size: "4/5 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44323048231&a=3013769&m=65912" },
           { size: "9/10 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44852071498&a=3013769&m=65912" },
           { size: "11/12 ans", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44852071499&a=3013769&m=65912" },
-          { size: "12/14 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43994220407&a=3013769&m=65912" },
+          { size: "12/14 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=43994220407&a=3013769&m=65912" },
         ],
       },
     ],
@@ -131727,7 +131584,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39329546820&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_102858.601_0.webp&feedId=89032&k=39336ee668491fb303437cacd720cf5e29567447",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "7/8 ans", "9/10 ans", "11/12 ans", "12/14 ans"],
         sizePrices: [
           { size: "S", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048227&a=3013769&m=65912" },
           { size: "M", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048228&a=3013769&m=65912" },
@@ -131735,7 +131592,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
           { size: "XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44852071497&a=3013769&m=65912" },
           { size: "2XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=42529338002&a=3013769&m=65912" },
           { size: "3XL", price: 33.63, url: "https://www.awin1.com/pclick.php?p=44323048230&a=3013769&m=65912" },
-          { size: "4/5 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048222&a=3013769&m=65912" },
           { size: "7/8 ans", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44323048224&a=3013769&m=65912" },
           { size: "9/10 ans", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44323048225&a=3013769&m=65912" },
           { size: "11/12 ans", price: 24.62, url: "https://www.awin1.com/pclick.php?p=39329546820&a=3013769&m=65912" },
@@ -131831,6 +131687,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "joma-conjunto-guardian-joma-area-jaune",
     brand: "Joma",
@@ -132025,9 +131884,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "joma-conjunto-guardian-joma-zamora-x-bleu",
     brand: "Joma",
@@ -132145,7 +132001,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         sizes: ["M", "XL", "2XL"],
         sizePrices: [
           { size: "M", price: 51.0, url: "https://www.awin1.com/pclick.php?p=45663301233&a=3013769&m=65912" },
-          { size: "XL", price: 48.0, url: "https://www.awin1.com/pclick.php?p=45663301234&a=3013769&m=65912" },
+          { size: "XL", price: 49.0, url: "https://www.awin1.com/pclick.php?p=45663301234&a=3013769&m=65912" },
           { size: "2XL", price: 21.28, url: "https://www.awin1.com/pclick.php?p=45663301235&a=3013769&m=65912" },
         ],
       },
@@ -132450,7 +132306,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_102858.063_0.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "7/8 ans", "11/12 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "7/8 ans", "11/12 ans"],
         sizePrices: [
           { size: "S", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
           { size: "M", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
@@ -132458,7 +132314,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
           { size: "XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
           { size: "2XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
           { size: "3XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
-          { size: "4/5 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
           { size: "7/8 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
           { size: "11/12 ans", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-063-ensemble-de-maillot-joma-phoenix-gk-amarillo-fluor-marino" },
         ],
@@ -132475,7 +132330,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 32.93,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco",
@@ -132488,7 +132343,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
           { size: "XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco" },
           { size: "2XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco" },
           { size: "3XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco" },
-          { size: "4/5 ans", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco" },
+          { size: "4/5 ans", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco" },
           { size: "11/12 ans", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-102-ensemble-de-maillot-joma-phoenix-gk-negro-blanco" },
         ],
       },
@@ -132522,23 +132377,11 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 32.93,
-        priceMax: 39.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_102858.031_0.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "11/12 ans"],
-        sizePrices: [
-          { size: "S", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "M", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "L", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "2XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "3XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "4/5 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "5/6 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-          { size: "11/12 ans", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-031-ensemble-de-maillot-joma-phoenix-gk-rosa-fluor-negro" },
-        ],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "11/12 ans"],
       },
     ],
   },
@@ -132557,7 +132400,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_102858.601_0.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "5/6 ans", "9/10 ans", "11/12 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4/5 ans", "9/10 ans", "11/12 ans"],
         sizePrices: [
           { size: "S", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
           { size: "M", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
@@ -132566,7 +132409,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
           { size: "2XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
           { size: "3XL", price: 32.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
           { size: "4/5 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
-          { size: "5/6 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
           { size: "9/10 ans", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
           { size: "11/12 ans", price: 24.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102858-601-ensemble-de-maillot-joma-phoenix-gk-rojo-negro" },
         ],
@@ -133019,7 +132861,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 11.68,
-        priceMax: 29.0,
+        priceMax: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino",
@@ -133028,7 +132870,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
           { size: "S", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
-          { size: "M", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
+          { size: "M", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
           { size: "L", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
           { size: "XL", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
           { size: "2XL", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-203-ensemble-maillot-et-short-d-entrainement-joma-victory-blanco-marino" },
@@ -133138,11 +132980,10 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-102-ensemble-maillot-et-short-d-entrainement-joma-victory-negro-blanco",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_103734.102_negro-blanco_1.webp",
-        sizes: ["XS", "L", "XL"],
+        sizes: ["XS", "L"],
         sizePrices: [
           { size: "XS", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-102-ensemble-maillot-et-short-d-entrainement-joma-victory-negro-blanco" },
           { size: "L", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-102-ensemble-maillot-et-short-d-entrainement-joma-victory-negro-blanco" },
-          { size: "XL", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103734-102-ensemble-maillot-et-short-d-entrainement-joma-victory-negro-blanco" },
         ],
       },
     ],
@@ -133256,7 +133097,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 20.72,
-        priceMax: 49.0,
+        priceMax: 51.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-100-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-negro",
@@ -133265,7 +133106,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 20.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-100-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-negro" },
           { size: "M", price: 20.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-100-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-negro" },
-          { size: "XL", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-100-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-negro" },
+          { size: "XL", price: 51.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-100-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-negro" },
           { size: "2XL", price: 20.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-100-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-negro" },
         ],
       },
@@ -133303,7 +133144,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 47.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103730-529-ensemble-maillot-et-short-et-chaussettes-pour-gardien-joma-zamora-ix-rosa",
@@ -134085,10 +133926,11 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_103836.011_turquesa-fluor-negro_1.webp",
-        sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
           { size: "XS", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro" },
           { size: "S", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro" },
+          { size: "M", price: 27.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro" },
           { size: "L", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro" },
           { size: "XL", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro" },
           { size: "2XL", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103836-011-ensemble-maillot-manches-longues-plus-short-d-entrainement-joma-winner-turquesa-fluor-negro" },
@@ -135063,7 +134905,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 31.0,
+        price: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40887051722&a=3013769&m=65912",
@@ -136180,6 +136022,9 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-joma-protect-noir",
     brand: "Joma",
@@ -136521,9 +136366,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-joma-tokyo-bleu",
     brand: "Joma",
@@ -136930,18 +136772,11 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 16.34,
-        priceMax: 21.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45795640263&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma-903030-702-royal-white-6a8dd81b2b260-1.webp&feedId=89032&k=4bfc738dbe03a4c7fc333a995c5b6289e2184e2d",
-        sizes: ["M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "M", price: 21.0, url: "https://www.awin1.com/pclick.php?p=45795640262&a=3013769&m=65912" },
-          { size: "L", price: 16.34, url: "https://www.awin1.com/pclick.php?p=45795640263&a=3013769&m=65912" },
-          { size: "XL", price: 16.34, url: "https://www.awin1.com/pclick.php?p=45795640264&a=3013769&m=65912" },
-          { size: "2XL", price: 16.34, url: "https://www.awin1.com/pclick.php?p=45795640265&a=3013769&m=65912" },
-        ],
+        sizes: ["L", "XL", "2XL"],
       },
       {
         store: "FootStoreES",
@@ -137606,7 +137441,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 12.25,
-        priceMax: 31.0,
+        priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529441779&a=3013769&m=65912",
@@ -137616,7 +137451,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
           { size: "S", price: 12.25, url: "https://www.awin1.com/pclick.php?p=42529441779&a=3013769&m=65912" },
           { size: "M", price: 12.25, url: "https://www.awin1.com/pclick.php?p=42529441780&a=3013769&m=65912" },
           { size: "L", price: 12.25, url: "https://www.awin1.com/pclick.php?p=44200074960&a=3013769&m=65912" },
-          { size: "XL", price: 30.0, url: "https://www.awin1.com/pclick.php?p=45356584473&a=3013769&m=65912" },
+          { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45356584473&a=3013769&m=65912" },
           { size: "2XL", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45356584474&a=3013769&m=65912" },
         ],
       },
@@ -137956,9 +137791,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_103200.342_0.webp",
         sizes: ["S", "M", "L", "2XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
+          { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
           { size: "M", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
-          { size: "L", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
+          { size: "L", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
           { size: "2XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
           { size: "3XL", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-342-pantalon-de-survetement-joma-championship-vii-marino-turquesa-fluor" },
         ],
@@ -138043,7 +137878,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
           { size: "S", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-117-pantalon-de-survetement-joma-championship-vii-noir-vert-fluo" },
           { size: "M", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-117-pantalon-de-survetement-joma-championship-vii-noir-vert-fluo" },
           { size: "L", price: 11.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-117-pantalon-de-survetement-joma-championship-vii-noir-vert-fluo" },
-          { size: "XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-117-pantalon-de-survetement-joma-championship-vii-noir-vert-fluo" },
+          { size: "XL", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-117-pantalon-de-survetement-joma-championship-vii-noir-vert-fluo" },
           { size: "2XL", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103200-117-pantalon-de-survetement-joma-championship-vii-noir-vert-fluo" },
         ],
       },
@@ -138147,15 +137982,15 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.61,
-        priceMax: 36.0,
+        price: 35.0,
+        priceMax: 35.61,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F104298-700-pantalon-de-survetement-joma-record-iii-royal",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-104298-700-royal-6a8dd897d08a1-1.webp",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F104298-700-pantalon-de-survetement-joma-record-iii-royal" },
+          { size: "S", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F104298-700-pantalon-de-survetement-joma-record-iii-royal" },
           { size: "M", price: 35.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F104298-700-pantalon-de-survetement-joma-record-iii-royal" },
           { size: "L", price: 35.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F104298-700-pantalon-de-survetement-joma-record-iii-royal" },
           { size: "XL", price: 35.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F104298-700-pantalon-de-survetement-joma-record-iii-royal" },
@@ -138346,7 +138181,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 20.0,
-        priceMax: 24.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529338042&a=3013769&m=65912",
@@ -138355,7 +138190,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529338042&a=3013769&m=65912" },
           { size: "M", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529339806&a=3013769&m=65912" },
-          { size: "L", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529339807&a=3013769&m=65912" },
+          { size: "L", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529339807&a=3013769&m=65912" },
         ],
       },
       {
@@ -138411,7 +138246,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
@@ -138419,9 +138254,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103297.203_0.webp&feedId=89032&k=315ba1df4d4a2389c9c316e1594fcd97681f807f",
         sizes: ["S", "M", "2XL"],
         sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443969&a=3013769&m=65912" },
+          { size: "S", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443969&a=3013769&m=65912" },
           { size: "M", price: 35.0, url: "https://www.awin1.com/pclick.php?p=42529443970&a=3013769&m=65912" },
-          { size: "2XL", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443973&a=3013769&m=65912" },
+          { size: "2XL", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443973&a=3013769&m=65912" },
         ],
       },
       {
@@ -138459,7 +138294,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
@@ -138467,7 +138302,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103297.703_0.webp&feedId=89032&k=b18c158c82f25b553148a28f01d56e8c4b4be95f",
         sizes: ["S", "L"],
         sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443983&a=3013769&m=65912" },
+          { size: "S", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443983&a=3013769&m=65912" },
           { size: "L", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529443985&a=3013769&m=65912" },
         ],
       },
@@ -138532,7 +138367,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
@@ -138540,14 +138375,14 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103297.111_0.webp&feedId=89032&k=546e3c617958f469c68b91cbfd158472d54fbc6a",
         sizes: ["S", "M", "XL"],
         sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443992&a=3013769&m=65912" },
-          { size: "M", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443993&a=3013769&m=65912" },
+          { size: "S", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443992&a=3013769&m=65912" },
+          { size: "M", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443993&a=3013769&m=65912" },
           { size: "XL", price: 26.0, url: "https://www.awin1.com/pclick.php?p=45145680003&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
@@ -138555,8 +138390,8 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103297.106_0.webp&feedId=89032&k=72423624f975142481edfb53268847a2c9b46d96",
         sizes: ["S", "M", "XL"],
         sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443998&a=3013769&m=65912" },
-          { size: "M", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529443999&a=3013769&m=65912" },
+          { size: "S", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443998&a=3013769&m=65912" },
+          { size: "M", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529443999&a=3013769&m=65912" },
           { size: "XL", price: 35.0, url: "https://www.awin1.com/pclick.php?p=44023880907&a=3013769&m=65912" },
         ],
       },
@@ -138601,7 +138436,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
@@ -138609,16 +138444,16 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103297.603_0.webp&feedId=89032&k=8e973dc8ac8defbe54f7936091b6b3ec8a8fa0da",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529444004&a=3013769&m=65912" },
+          { size: "S", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529444004&a=3013769&m=65912" },
           { size: "M", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529444005&a=3013769&m=65912" },
-          { size: "L", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529444006&a=3013769&m=65912" },
-          { size: "XL", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529444007&a=3013769&m=65912" },
+          { size: "L", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529444006&a=3013769&m=65912" },
+          { size: "XL", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529444007&a=3013769&m=65912" },
           { size: "2XL", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529444008&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
@@ -138626,8 +138461,8 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103297.336_0.webp&feedId=89032&k=4dccb152b4bc9710ce76c09cda1af9f3aee01d1c",
         sizes: ["S", "M", "XL"],
         sizePrices: [
-          { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529444011&a=3013769&m=65912" },
-          { size: "M", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529444012&a=3013769&m=65912" },
+          { size: "S", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529444011&a=3013769&m=65912" },
+          { size: "M", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529444012&a=3013769&m=65912" },
           { size: "XL", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529444014&a=3013769&m=65912" },
         ],
       },
@@ -141078,6 +140913,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "joma-short-joma-maxi-noir",
     brand: "Joma",
@@ -141364,9 +141202,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "joma-short-joma-tokio-ii-noir",
     brand: "Joma",
@@ -142119,18 +141954,12 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.0,
-        priceMax: 49.0,
+        price: 49.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41843979279&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38168696847&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_102733.102_0.webp&feedId=89032&k=161c137e5e83149f8c04b2d8245654333a4a396b",
         sizes: ["S", "M", "L"],
-        sizePrices: [
-          { size: "S", price: 49.0, url: "https://www.awin1.com/pclick.php?p=38168696847&a=3013769&m=65912" },
-          { size: "M", price: 49.0, url: "https://www.awin1.com/pclick.php?p=39563687609&a=3013769&m=65912" },
-          { size: "L", price: 48.0, url: "https://www.awin1.com/pclick.php?p=41843979279&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -142471,14 +142300,14 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 11.78,
-        priceMax: 30.0,
+        priceMax: 31.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529445958&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_103082.332_0.webp&feedId=89032&k=112f495e7481f63b945d8148d385a761fd9aad7d",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "S", price: 30.0, url: "https://www.awin1.com/pclick.php?p=42529445957&a=3013769&m=65912" },
+          { size: "S", price: 31.0, url: "https://www.awin1.com/pclick.php?p=42529445957&a=3013769&m=65912" },
           { size: "M", price: 11.78, url: "https://www.awin1.com/pclick.php?p=42529445958&a=3013769&m=65912" },
           { size: "L", price: 11.78, url: "https://www.awin1.com/pclick.php?p=44323050802&a=3013769&m=65912" },
           { size: "XL", price: 11.78, url: "https://www.awin1.com/pclick.php?p=44323050803&a=3013769&m=65912" },
@@ -142826,7 +142655,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 35.0,
+        price: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F102745-332-sweatshirt-a-capuche-joma-confort-iii-marino",
@@ -142845,14 +142674,14 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 31.0,
-        priceMax: 36.0,
+        priceMax: 35.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-203-sweatshirt-a-capuche-joma-crew-v-blanco-marino",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_103214.203_0.webp",
         sizes: ["S", "2XL"],
         sizePrices: [
-          { size: "S", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-203-sweatshirt-a-capuche-joma-crew-v-blanco-marino" },
+          { size: "S", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-203-sweatshirt-a-capuche-joma-crew-v-blanco-marino" },
           { size: "2XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-203-sweatshirt-a-capuche-joma-crew-v-blanco-marino" },
         ],
       },
@@ -142867,7 +142696,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 36.0,
+        price: 35.0,
         priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
@@ -142876,7 +142705,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "2XL"],
         sizePrices: [
           { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-336-sweatshirt-a-capuche-joma-crew-v-bleu-marine-rouge" },
-          { size: "2XL", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-336-sweatshirt-a-capuche-joma-crew-v-bleu-marine-rouge" },
+          { size: "2XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-336-sweatshirt-a-capuche-joma-crew-v-bleu-marine-rouge" },
         ],
       },
     ],
@@ -142891,7 +142720,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 31.0,
-        priceMax: 36.0,
+        priceMax: 35.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-106-sweatshirt-a-capuche-joma-crew-v-noir-rouge",
@@ -142899,7 +142728,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "XL"],
         sizePrices: [
           { size: "S", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-106-sweatshirt-a-capuche-joma-crew-v-noir-rouge" },
-          { size: "XL", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-106-sweatshirt-a-capuche-joma-crew-v-noir-rouge" },
+          { size: "XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103214-106-sweatshirt-a-capuche-joma-crew-v-noir-rouge" },
         ],
       },
       {
@@ -143027,7 +142856,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 11.71,
-        priceMax: 32.0,
+        priceMax: 31.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-702-sweatshirt-joma-championship-vii-bleu-roi-blanc",
@@ -143037,7 +142866,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
           { size: "S", price: 11.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-702-sweatshirt-joma-championship-vii-bleu-roi-blanc" },
           { size: "M", price: 11.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-702-sweatshirt-joma-championship-vii-bleu-roi-blanc" },
           { size: "L", price: 11.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-702-sweatshirt-joma-championship-vii-bleu-roi-blanc" },
-          { size: "2XL", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-702-sweatshirt-joma-championship-vii-bleu-roi-blanc" },
+          { size: "2XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-702-sweatshirt-joma-championship-vii-bleu-roi-blanc" },
         ],
       },
       {
@@ -143132,7 +142961,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "M", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 11.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-336-sweatshirt-joma-championship-vii-rouge-marine" },
-          { size: "M", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-336-sweatshirt-joma-championship-vii-rouge-marine" },
+          { size: "M", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-336-sweatshirt-joma-championship-vii-rouge-marine" },
           { size: "XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-336-sweatshirt-joma-championship-vii-rouge-marine" },
           { size: "2XL", price: 11.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103082-336-sweatshirt-joma-championship-vii-rouge-marine" },
         ],
@@ -143347,7 +143176,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.0,
-        priceMax: 39.0,
+        priceMax: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir",
@@ -143355,10 +143184,10 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
-          { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
-          { size: "L", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
-          { size: "XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
-          { size: "2XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
+          { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
+          { size: "L", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
+          { size: "XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
+          { size: "2XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-701-veste-de-survement-joma-tiger-v-bleu-roi-noir" },
         ],
       },
     ],
@@ -143390,7 +143219,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 38.0,
+        price: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F901939-203-veste-de-survetement-a-capuche-femme-joma-eco-supernova-blanco-marino",
@@ -143426,7 +143255,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.0,
+        price: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F901939-702-veste-de-survetement-a-capuche-femme-joma-eco-supernova-royal-blanco",
@@ -143511,7 +143340,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 36.0,
+        price: 35.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103087-336-veste-de-survetement-a-capuche-joma-crew-v-bleu-blanc-rouge",
@@ -143593,7 +143422,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 18.07,
-        priceMax: 36.0,
+        priceMax: 35.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-117-veste-de-survetement-a-capuche-joma-eco-supernova-negro-verde-fluor",
@@ -143603,7 +143432,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
           { size: "S", price: 18.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-117-veste-de-survetement-a-capuche-joma-eco-supernova-negro-verde-fluor" },
           { size: "M", price: 18.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-117-veste-de-survetement-a-capuche-joma-eco-supernova-negro-verde-fluor" },
           { size: "L", price: 18.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-117-veste-de-survetement-a-capuche-joma-eco-supernova-negro-verde-fluor" },
-          { size: "XL", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-117-veste-de-survetement-a-capuche-joma-eco-supernova-negro-verde-fluor" },
+          { size: "XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-117-veste-de-survetement-a-capuche-joma-eco-supernova-negro-verde-fluor" },
         ],
       },
     ],
@@ -143618,7 +143447,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 18.07,
-        priceMax: 38.0,
+        priceMax: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-602-veste-de-survetement-a-capuche-joma-eco-supernova-rouge-blanc",
@@ -143627,7 +143456,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizePrices: [
           { size: "M", price: 18.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-602-veste-de-survetement-a-capuche-joma-eco-supernova-rouge-blanc" },
           { size: "L", price: 18.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-602-veste-de-survetement-a-capuche-joma-eco-supernova-rouge-blanc" },
-          { size: "XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-602-veste-de-survetement-a-capuche-joma-eco-supernova-rouge-blanc" },
+          { size: "XL", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103315-602-veste-de-survetement-a-capuche-joma-eco-supernova-rouge-blanc" },
         ],
       },
       {
@@ -143676,23 +143505,23 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.0,
-        priceMax: 39.0,
+        priceMax: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_103236.109_0.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
+          { size: "S", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
           { size: "M", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
-          { size: "L", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
-          { size: "XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
+          { size: "L", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
+          { size: "XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
           { size: "2XL", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-109-veste-de-survetement-a-capuche-joma-tiger-v-negro-amarillo" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-115-veste-de-survetement-a-capuche-joma-tiger-v-negro-burdeos",
@@ -143711,15 +143540,15 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.0,
-        priceMax: 39.0,
+        priceMax: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_103236.561_0.webp",
         sizes: ["M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir" },
-          { size: "L", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir" },
+          { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir" },
+          { size: "L", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir" },
           { size: "XL", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir" },
           { size: "2XL", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-561-veste-de-survetement-a-capuche-joma-tiger-v-violet-noir" },
         ],
@@ -144772,7 +144601,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.0,
-        priceMax: 39.0,
+        priceMax: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris",
@@ -144780,8 +144609,8 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "M", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris" },
-          { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris" },
-          { size: "XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris" },
+          { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris" },
+          { size: "XL", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris" },
           { size: "2XL", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-351-veste-de-survetement-joma-tiger-v-noir-gris" },
         ],
       },
@@ -144797,7 +144626,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.0,
-        priceMax: 39.0,
+        priceMax: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-601-veste-de-survetement-joma-tiger-v-rouge-noir",
@@ -144805,7 +144634,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "M", "2XL"],
         sizePrices: [
           { size: "S", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-601-veste-de-survetement-joma-tiger-v-rouge-noir" },
-          { size: "M", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-601-veste-de-survetement-joma-tiger-v-rouge-noir" },
+          { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-601-veste-de-survetement-joma-tiger-v-rouge-noir" },
           { size: "2XL", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-601-veste-de-survetement-joma-tiger-v-rouge-noir" },
         ],
       },
@@ -144820,7 +144649,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103236-472-veste-de-survetement-joma-tiger-v-vert-blanc",
@@ -144839,7 +144668,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 13.33,
-        priceMax: 35.0,
+        priceMax: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco",
@@ -144848,7 +144677,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 13.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco" },
           { size: "L", price: 13.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco" },
-          { size: "XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco" },
+          { size: "XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco" },
           { size: "2XL", price: 13.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco" },
           { size: "3XL", price: 13.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F103316-332-veste-de-survetement-joma-winner-iii-marino-blanco" },
         ],
@@ -145848,6 +145677,9 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "kappa-calcetines-club-bruges-kombat-spark-2024-25-blanc",
     brand: "Kappa",
@@ -145948,11 +145780,20 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 21.83,
+        priceMax: 27.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654165946&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_303mb60-902_0-nw010624.webp&feedId=89032&k=41f7eb8c1bb2718d0bd67870f71125d724613577",
-        sizes: ["27/30", "35/38", "39/42", "43/46", "47/49"],
+        sizes: ["27/30", "31/34", "35/38", "39/42", "43/46", "47/49"],
+        sizePrices: [
+          { size: "27/30", price: 21.83, url: "https://www.awin1.com/pclick.php?p=43654165946&a=3013769&m=65912" },
+          { size: "31/34", price: 27.0, url: "https://www.awin1.com/pclick.php?p=45398872973&a=3013769&m=65912" },
+          { size: "35/38", price: 21.83, url: "https://www.awin1.com/pclick.php?p=43654165947&a=3013769&m=65912" },
+          { size: "39/42", price: 21.83, url: "https://www.awin1.com/pclick.php?p=39879953579&a=3013769&m=65912" },
+          { size: "43/46", price: 21.83, url: "https://www.awin1.com/pclick.php?p=43654165948&a=3013769&m=65912" },
+          { size: "47/49", price: 21.83, url: "https://www.awin1.com/pclick.php?p=43654165949&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreES",
@@ -146100,9 +145941,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "kappa-calcetines-kappa-lyna-x3-rouge",
     brand: "Kappa",
@@ -146767,19 +146605,12 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.0,
-        priceMax: 33.0,
+        price: 33.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41104829229&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41104829228&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_31152pw-a03_0-nw121724.webp&feedId=89032&k=61376453b870f4648111460f2cc3d9c52ead67f7",
         sizes: ["S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=42529151143&a=3013769&m=65912" },
-          { size: "M", price: 32.0, url: "https://www.awin1.com/pclick.php?p=41104829229&a=3013769&m=65912" },
-          { size: "L", price: 33.0, url: "https://www.awin1.com/pclick.php?p=41104829228&a=3013769&m=65912" },
-          { size: "XL", price: 33.0, url: "https://www.awin1.com/pclick.php?p=41104829230&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreES",
@@ -146791,7 +146622,7 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_31152pw-a00_0-nw121724.webp&feedId=89032&k=1722f30be1fc29c3849a9cf9a8b0f1d4e6690e16",
         sizes: ["S", "M", "L"],
         sizePrices: [
-          { size: "S", price: 33.0, url: "https://www.awin1.com/pclick.php?p=41104829235&a=3013769&m=65912" },
+          { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=41104829235&a=3013769&m=65912" },
           { size: "M", price: 32.0, url: "https://www.awin1.com/pclick.php?p=41104829234&a=3013769&m=65912" },
           { size: "L", price: 33.0, url: "https://www.awin1.com/pclick.php?p=41104829233&a=3013769&m=65912" },
         ],
@@ -149510,11 +149341,20 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 21.61,
+        priceMax: 27.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_303mb60-902_0-nw010624.webp",
-        sizes: ["27/30", "35/38", "39/42", "43/46", "47/49"],
+        sizes: ["27/30", "31/34", "35/38", "39/42", "43/46", "47/49"],
+        sizePrices: [
+          { size: "27/30", price: 21.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc" },
+          { size: "31/34", price: 27.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc" },
+          { size: "35/38", price: 21.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc" },
+          { size: "39/42", price: 21.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc" },
+          { size: "43/46", price: 21.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc" },
+          { size: "47/49", price: 21.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F303mb60-902-paires-de-chaussettes-kappa-lipeno-x3-rouge-blanc" },
+        ],
       },
     ],
   },
@@ -149915,6 +149755,9 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "kappa-pantalon-corto-angers-sco-ryder-2022-23-noir",
     brand: "Kappa",
@@ -150138,9 +149981,6 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "kappa-pantalon-corto-as-monaco-ryder-2024-25-vert",
     brand: "Kappa",
@@ -150394,21 +150234,11 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 28.3,
-        priceMax: 30.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860421328&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_381p1dw-005_0-nw010624.webp&feedId=89032&k=563a0ea42dbc818f6f3904c9ffe3402abe57dae3",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-        sizePrices: [
-          { size: "S", price: 28.3, url: "https://www.awin1.com/pclick.php?p=43654185346&a=3013769&m=65912" },
-          { size: "M", price: 28.3, url: "https://www.awin1.com/pclick.php?p=45860421329&a=3013769&m=65912" },
-          { size: "L", price: 28.3, url: "https://www.awin1.com/pclick.php?p=45860421328&a=3013769&m=65912" },
-          { size: "XL", price: 28.3, url: "https://www.awin1.com/pclick.php?p=45860421330&a=3013769&m=65912" },
-          { size: "2XL", price: 28.3, url: "https://www.awin1.com/pclick.php?p=43654185348&a=3013769&m=65912" },
-          { size: "3XL", price: 28.3, url: "https://www.awin1.com/pclick.php?p=43654185349&a=3013769&m=65912" },
-          { size: "4XL", price: 30.05, url: "https://www.awin1.com/pclick.php?p=45995958743&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -153843,6 +153673,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "kappa-short-as-monaco-ryder-2024-25-blanc",
     brand: "Kappa",
@@ -154057,9 +153890,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "kappa-short-dentrainement-sm-caen-ahorazip-pro-8-2024-25-bleu",
     brand: "Kappa",
@@ -154609,21 +154439,11 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 27.86,
-        priceMax: 29.37,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_381p1dw-005_0-nw010624.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
-        sizePrices: [
-          { size: "S", price: 27.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-          { size: "M", price: 27.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-          { size: "L", price: 27.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-          { size: "XL", price: 27.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-          { size: "2XL", price: 27.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-          { size: "3XL", price: 27.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-          { size: "4XL", price: 29.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381p1dw-005-short-kappa-gabbio-black" },
-        ],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -157553,7 +157373,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 28.35,
-        priceMax: 37.0,
+        priceMax: 36.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white",
@@ -157561,11 +157381,11 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
         sizes: ["M", "L", "XL", "2XL", "3XL", "4XL"],
         sizePrices: [
           { size: "M", price: 28.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
-          { size: "L", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
+          { size: "L", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
           { size: "XL", price: 28.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
           { size: "2XL", price: 28.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
           { size: "3XL", price: 28.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
-          { size: "4XL", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
+          { size: "4XL", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F331m5hw-a02-veste-de-survetement-1-2-zippe-kappa-dolvole-blue-marine-white" },
         ],
       },
       {
@@ -157935,6 +157755,9 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "kappa-veste-de-survetement-fc-metz-valsar-2026-27-noir",
     brand: "Kappa",
@@ -158203,9 +158026,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "kappa-veste-de-survetement-kappa-giullio-noir",
     brand: "Kappa",
@@ -162296,6 +162116,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "macron-sweatshirt-a-capuche-macron-marsco-gris",
     brand: "Macron",
@@ -162306,7 +162129,7 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 73.99,
-        priceMax: 91.0,
+        priceMax: 92.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040207-sweatshirt-a-capuche-macron-marsco-gris",
@@ -162314,7 +162137,7 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 73.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040207-sweatshirt-a-capuche-macron-marsco-gris" },
-          { size: "M", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040207-sweatshirt-a-capuche-macron-marsco-gris" },
+          { size: "M", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040207-sweatshirt-a-capuche-macron-marsco-gris" },
           { size: "L", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040207-sweatshirt-a-capuche-macron-marsco-gris" },
           { size: "XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040207-sweatshirt-a-capuche-macron-marsco-gris" },
         ],
@@ -162331,7 +162154,7 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 73.99,
-        priceMax: 91.0,
+        priceMax: 92.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040206-sweatshirt-a-capuche-macron-marsco-noir",
@@ -162340,7 +162163,7 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040206-sweatshirt-a-capuche-macron-marsco-noir" },
           { size: "M", price: 73.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040206-sweatshirt-a-capuche-macron-marsco-noir" },
-          { size: "L", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040206-sweatshirt-a-capuche-macron-marsco-noir" },
+          { size: "L", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040206-sweatshirt-a-capuche-macron-marsco-noir" },
           { size: "XL", price: 91.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040206-sweatshirt-a-capuche-macron-marsco-noir" },
         ],
       },
@@ -162490,9 +162313,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "macron-sweatshirt-femme-macron-aphrodite-rouge",
     brand: "Macron",
@@ -162918,11 +162738,16 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 84.0,
+        priceMax: 85.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040271-veste-impermeable-macron-christian-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_38040271_blanc_8.webp",
         sizes: ["S", "L"],
+        sizePrices: [
+          { size: "S", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040271-veste-impermeable-macron-christian-blanc" },
+          { size: "L", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F38040271-veste-impermeable-macron-christian-blanc" },
+        ],
       },
     ],
   },
@@ -163181,13 +163006,14 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       {
         store: "SportIsGoodES",
         price: 66.05,
-        priceMax: 66.98,
+        priceMax: 68.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45470157830&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F3%2F737r-wh_1.webp&feedId=89044&k=a044cb26eb97ef22764c38c6fd562aa2ee02e3b5",
-        sizes: ["M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
         sizePrices: [
+          { size: "S", price: 68.92, url: "https://www.awin1.com/pclick.php?p=45470157827&a=3013769&m=65906" },
           { size: "M", price: 66.98, url: "https://www.awin1.com/pclick.php?p=45470157828&a=3013769&m=65906" },
           { size: "L", price: 66.98, url: "https://www.awin1.com/pclick.php?p=45470157829&a=3013769&m=65906" },
           { size: "XL", price: 66.05, url: "https://www.awin1.com/pclick.php?p=45470157830&a=3013769&m=65906" },
@@ -165998,11 +165824,16 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 25.79,
+        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F32ea704509-sous-maillot-manches-longues-mizuno-team-core-underwear-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/3/2/32ea7045-09_0.webp",
-        sizes: ["XL"],
+        sizes: ["L", "XL"],
+        sizePrices: [
+          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F32ea704509-sous-maillot-manches-longues-mizuno-team-core-underwear-noir-blanc" },
+          { size: "XL", price: 25.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F32ea704509-sous-maillot-manches-longues-mizuno-team-core-underwear-noir-blanc" },
+        ],
       },
     ],
   },
@@ -166048,6 +165879,15 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=40329631292&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2F2%2Fp2ec7640-14_0.webp&feedId=89032&k=6a18065fe0b582c94a14767c0403cb1615012f60",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 18.33,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46067932097&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2F2%2Fp2ec7640-14_0.webp&feedId=89044&k=6a18065fe0b582c94a14767c0403cb1615012f60",
+        sizes: ["L"],
       },
     ],
   },
@@ -166382,6 +166222,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "mizuno-t-shirt-mizuno-team-nara-training-rouge",
     brand: "Mizuno",
@@ -166580,9 +166423,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "mizuno-veste-de-survetement-femme-mizuno-orange",
     brand: "Mizuno",
@@ -166835,7 +166675,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.99,
+        price: 40.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745921540&a=3013769&m=65912",
@@ -166871,7 +166711,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.99,
+        price: 33.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745921528&a=3013769&m=65912",
@@ -166889,7 +166729,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 39.99,
+        price: 33.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib3151-010-short-inter-milan-acg-2025-26-black-safety-orange",
@@ -166907,7 +166747,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.99,
+        price: 39.68,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif0513-100-t-shirt-inter-milan-acg-2025-26-white",
@@ -166980,24 +166820,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-bolsa-de-deporte-nike-academy-team-l-noir",
-    brand: "Nike",
-    model: "Bolsa de deporte Nike Academy Team L - Noir",
-    colour: "Noir",
-    type: "bag",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 54.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923881052&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2Fu%2Fcu8087-010-phsfh000.webp&feedId=89032&k=e81452e5e49fd4f28036d2c6d5c6329ac1fb2bfa",
-        sizes: [],
-      },
-    ],
-  },
-  {
     id: "nike-bolsa-de-deporte-nike-academy-team-l-rouge",
     brand: "Nike",
     model: "Bolsa de deporte Nike Academy Team L - Rouge",
@@ -167030,6 +166852,42 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=38366650119&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2Fu%2Fcu8089-010-phsfh000.webp&feedId=89032&k=55bf52a5bfcce2157a65dad2c6ccbfb465ea3639",
         sizes: [],
+      },
+    ],
+  },
+  {
+    id: "nike-botas-de-mujer-hasta-el-muslo-nike-dri-fit-strike-gris",
+    brand: "Nike",
+    model: "Botas de mujer hasta el muslo Nike Dri-FIt Strike - Gris",
+    colour: "Gris",
+    type: "baselayer",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 32.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45783097686&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh8327-052-phsym004_new.webp&feedId=89032&k=04457033e5ec99c19a8411a9777151d915ffae0a",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-botas-de-mujer-hasta-el-muslo-nike-pro-bleu",
+    brand: "Nike",
+    model: "Botas de mujer hasta el muslo Nike Pro - Bleu",
+    colour: "Bleu",
+    type: "baselayer",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 35.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45443798377&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fn%2Ffn2374-410.webp&feedId=89032&k=378a338efbb9ca5c5f2cabf12ce613654db95a22",
+        sizes: ["XL"],
       },
     ],
   },
@@ -167438,11 +167296,17 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 18.11,
+        priceMax: 18.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45562786932&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-im3553-324-stadium-green-white-6a76399c37157-1.webp&feedId=89032&k=7aac9144a459733a4d6ed38e867dc2f6997bc5a8",
-        sizes: ["38/42", "42/46"],
+        sizes: ["38/42", "42/46", "46/50"],
+        sizePrices: [
+          { size: "38/42", price: 18.11, url: "https://www.awin1.com/pclick.php?p=45562786932&a=3013769&m=65912" },
+          { size: "42/46", price: 18.11, url: "https://www.awin1.com/pclick.php?p=45562786933&a=3013769&m=65912" },
+          { size: "46/50", price: 18.77, url: "https://www.awin1.com/pclick.php?p=45562786934&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -167899,7 +167763,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485365530&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_sx5728-463_10-nw042624.webp&feedId=89032&k=00ac7ceb00ce6490714d157d6d4a63e1d18aa70f",
-        sizes: ["34/38", "46/50"],
+        sizes: ["46/50"],
       },
     ],
   },
@@ -168382,15 +168246,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-fq8253-043-pure-platinum-black-6a8311c20b68f-1.webp&feedId=89032&k=a5e6e83fe2db47d2f62c356b7ab3fa6d21c4fdc6",
         sizes: ["31/35", "34/38", "38/42"],
       },
-      {
-        store: "FootStoreES",
-        price: 17.63,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45663236110&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-fq8253-106-white-team-red-6a8311cd860f6-1.webp&feedId=89032&k=ecabac40aebda1703fca92bfa8c7d519594956c2",
-        sizes: ["34/38"],
-      },
     ],
   },
   {
@@ -168416,7 +168271,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 14.31,
+        price: 11.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40309090064&a=3013769&m=65912",
@@ -169585,30 +169440,12 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45586514516&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_av2609-057-phsfh001.webp&feedId=89032&k=b46a3e3f57bbe144e5cd31483f3e3c0495360929",
         sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-de-compresion-nike-dri-fit-jaune",
-    brand: "Nike",
-    model: "Camiseta de compresión Nike Dri-FIT - Jaune",
-    colour: "Jaune",
-    type: "baselayer",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 31.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39177655567&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_av2609-719-phsfh001.webp&feedId=89032&k=ab57ad8b5e6a13666ba846ec9c9586bfac673882",
-        sizes: ["L"],
       },
     ],
   },
@@ -170040,6 +169877,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "nike-camiseta-del-fc-barcelona-tech-2026-27-bleu",
     brand: "Nike",
@@ -170170,9 +170010,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 27.99,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45888245322&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348247408&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq2261-068-iron-grey-6a01e09399a71-1.webp&feedId=89032&k=0cba4b273e06e9d8de65aca484cbeeec1ca3009a",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["M", "L", "XL"],
       },
     ],
   },
@@ -170238,9 +170078,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "nike-camiseta-infantil-crest-francia-2024-25-blanc",
     brand: "Nike",
@@ -170301,6 +170138,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45234298249&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih2179-486-work-blue-6a4ce7a9d2234-1.webp&feedId=89032&k=eb7cdfaac50679022355c1ec5bdc6d32b71fc673",
         sizes: ["2XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-inglaterra-primary-coupe-du-monde-2026-blanc",
+    brand: "Nike",
+    model: "Camiseta Inglaterra Primary Coupe du Monde 2026 - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 43.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45725056664&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ib6228-100-blanc-obsidian-6a83133a27a68-1.webp&feedId=89032&k=715644d03bbea6ebc923b95068b3b8a09fa4c04f",
+        sizes: ["S", "2XL"],
       },
     ],
   },
@@ -170367,8 +170222,8 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         sizes: ["S", "M", "L"],
         sizePrices: [
           { size: "S", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45914948276&a=3013769&m=65912" },
-          { size: "M", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45923722088&a=3013769&m=65912" },
-          { size: "L", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45914948277&a=3013769&m=65912" },
+          { size: "M", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45923722088&a=3013769&m=65912" },
+          { size: "L", price: 31.0, url: "https://www.awin1.com/pclick.php?p=45914948277&a=3013769&m=65912" },
         ],
       },
     ],
@@ -170533,6 +170388,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-camiseta-mujer-inter-de-milan-blanc",
+    brand: "Nike",
+    model: "Camiseta mujer Inter de Milán - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 33.07,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45958858973&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ir2230-100-blanc-6a5a5b6eeeaa8-1.webp&feedId=89032&k=b47fddf37293be17669f32d6913aba031bdf3007",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "nike-camiseta-mujer-nigeria-coupe-du-monde-2026-noir",
     brand: "Nike",
     model: "Camiseta mujer Nigeria Coupe du Monde 2026 - Noir",
@@ -170573,6 +170446,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
           { size: "L", price: 27.99, url: "https://www.awin1.com/pclick.php?p=45663240916&a=3013769&m=65912" },
           { size: "XL", price: 29.21, url: "https://www.awin1.com/pclick.php?p=45234298696&a=3013769&m=65912" },
         ],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-mujer-paises-bajos-coupe-du-monde-2026-blanc",
+    brand: "Nike",
+    model: "Camiseta mujer Países Bajos Coupe du Monde 2026 - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.35,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45234298706&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih2242-100-white-6a4ce8795c31e-1.webp&feedId=89032&k=5e1711dc1f9bf29b493c6372e416db5560bd34d1",
+        sizes: ["L"],
       },
     ],
   },
@@ -170644,7 +170535,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047894845&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii2377-010-black-hyper-royal-global-red-global-red-6a2fbbb03a4d0-1.webp&feedId=89032&k=899329cd6d8f9b699be6621117539715211787ef",
-        sizes: ["XS", "S", "M", "L"],
+        sizes: ["XS", "S", "M"],
       },
     ],
   },
@@ -170717,11 +170608,12 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39177664492&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cw6952-010-phsfh001_new.webp&feedId=89032&k=c0a9adffa6cd2ed22b708b0d5763e8bb1d87470c",
-        sizes: ["S", "M", "L"],
+        sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45725042223&a=3013769&m=65912" },
           { size: "M", price: 31.0, url: "https://www.awin1.com/pclick.php?p=39177664492&a=3013769&m=65912" },
           { size: "L", price: 31.0, url: "https://www.awin1.com/pclick.php?p=41104831487&a=3013769&m=65912" },
+          { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=37923880929&a=3013769&m=65912" },
         ],
       },
       {
@@ -170831,10 +170723,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529182720&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cz0881-451-phsfm001_new.webp&feedId=89032&k=9456cae4117bbe981b2fd93528cac56ec473f4d5",
-        sizes: ["S", "M", "L", "2XL"],
+        sizes: ["S", "L", "2XL"],
         sizePrices: [
           { size: "S", price: 27.0, url: "https://www.awin1.com/pclick.php?p=43755730985&a=3013769&m=65912" },
-          { size: "M", price: 27.0, url: "https://www.awin1.com/pclick.php?p=44139339542&a=3013769&m=65912" },
           { size: "L", price: 27.0, url: "https://www.awin1.com/pclick.php?p=43745895046&a=3013769&m=65912" },
           { size: "2XL", price: 22.0, url: "https://www.awin1.com/pclick.php?p=42529182720&a=3013769&m=65912" },
         ],
@@ -170964,6 +170855,30 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45562788341&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq2266-068-iron-grey-6a7639a7413b3-1.webp&feedId=89032&k=6732980ddd17756fd4efb5f627e589d32f333a1a",
         sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-paises-bajos-coupe-du-monde-2026-orange",
+    brand: "Nike",
+    model: "Camiseta Países Bajos Coupe du Monde 2026 - Orange",
+    colour: "Orange",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 23.99,
+        priceMax: 25.35,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45819221435&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih2189-819-safety-orange-6a4ce9f32bc34-1.webp&feedId=89032&k=a121e9a1ac9b17fdb3bb03d64d5d317a85a35525",
+        sizes: ["S", "M", "L"],
+        sizePrices: [
+          { size: "S", price: 25.35, url: "https://www.awin1.com/pclick.php?p=45234298735&a=3013769&m=65912" },
+          { size: "M", price: 25.35, url: "https://www.awin1.com/pclick.php?p=45234298736&a=3013769&m=65912" },
+          { size: "L", price: 23.99, url: "https://www.awin1.com/pclick.php?p=45819221435&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -171214,6 +171129,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=37146361011&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fn5332-700-vpsrh001.webp&feedId=89032&k=902390b1851fb688d3abcb146ed942d7960b0a81",
         sizes: ["XS", "M"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-psg-paname-2026-27-blanc",
+    brand: "Nike",
+    model: "Camiseta PSG Paname 2026/27 - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.35,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061465746&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq5111-101-white-old-royal-6a45a2da80429-1.webp&feedId=89032&k=a8e4f0d2015ca79f7af601af6b4b7e13c5d12871",
+        sizes: ["S", "M", "XL"],
       },
     ],
   },
@@ -171929,20 +171862,11 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 87.43,
-        priceMax: 94.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45220451064&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ih1757-369_04.webp&feedId=89032&k=0e7ff1ecb966eebd1cb2d0db2c884c234658aa16",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "S", price: 87.43, url: "https://www.awin1.com/pclick.php?p=45220451064&a=3013769&m=65912" },
-          { size: "M", price: 87.43, url: "https://www.awin1.com/pclick.php?p=45220451065&a=3013769&m=65912" },
-          { size: "L", price: 87.43, url: "https://www.awin1.com/pclick.php?p=44905488461&a=3013769&m=65912" },
-          { size: "XL", price: 87.43, url: "https://www.awin1.com/pclick.php?p=44374081709&a=3013769&m=65912" },
-          { size: "2XL", price: 87.43, url: "https://www.awin1.com/pclick.php?p=44606845873&a=3013769&m=65912" },
-          { size: "3XL", price: 94.85, url: "https://www.awin1.com/pclick.php?p=44606845874&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -172548,24 +172472,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-chaqueta-de-chandal-francia-energy-coupe-du-monde-2026-blanc",
-    brand: "Nike",
-    model: "Chaqueta de chándal Francia Energy Coupe du Monde 2026 - Blanc",
-    colour: "Blanc",
-    type: "jacket",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 81.73,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45177324923&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fh%2Fih1875-393.webp&feedId=89032&k=a6156c95dd466aa98e50887634c96dd5c92c6e12",
-        sizes: ["M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
     id: "nike-chaqueta-de-chandal-francia-kmc-coupe-du-monde-2026-noir",
     brand: "Nike",
     model: "Chaqueta de chándal Francia KMC Coupe du monde 2026 - Noir",
@@ -172728,7 +172634,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45443807323&a=3013769&m=65912" },
           { size: "S", price: 75.99, url: "https://www.awin1.com/pclick.php?p=45395603609&a=3013769&m=65912" },
-          { size: "M", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45395603610&a=3013769&m=65912" },
+          { size: "M", price: 75.99, url: "https://www.awin1.com/pclick.php?p=45395603610&a=3013769&m=65912" },
           { size: "L", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45395603611&a=3013769&m=65912" },
           { size: "XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45395603612&a=3013769&m=65912" },
           { size: "2XL", price: 75.99, url: "https://www.awin1.com/pclick.php?p=45395603613&a=3013769&m=65912" },
@@ -172877,6 +172783,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-chaqueta-de-chandal-mujer-fc-barcelona-bleu",
+    brand: "Nike",
+    model: "Chaqueta de chándal mujer FC Barcelona - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 107.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45931747516&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii3346-498-blackened-blue-mineral-yellow-6a68c8a9db293-4.webp&feedId=89032&k=e6a4e8aaad0672ee868eafc0c0e69ed4ba6dd703",
+        sizes: ["XS", "L"],
+      },
+    ],
+  },
+  {
     id: "nike-chaqueta-de-chandal-mujer-psg-2026-27-noir",
     brand: "Nike",
     model: "Chaqueta de chándal mujer PSG 2026/27 - Noir",
@@ -172931,6 +172855,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-chaqueta-de-chandal-nike-academy-vert",
+    brand: "Nike",
+    model: "Chaqueta de chándal Nike Academy - Vert",
+    colour: "Vert",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 34.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45361842928&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fq1791-328_deep-jungle-noir-noir_1.webp&feedId=89032&k=a396e3e24d8b6b5227ae0f3d246e9850f7e3b446",
+        sizes: ["2XL"],
+      },
+    ],
+  },
+  {
     id: "nike-chaqueta-de-chandal-nike-dri-fit-2024-bleu",
     brand: "Nike",
     model: "Chaqueta de chándal Nike Dri-FIT 2024 - Bleu",
@@ -172958,11 +172900,20 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 66.09,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304853930&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-fd7727-012-wolf-grey-black-wolf-grey-white-1.webp&feedId=89032&k=81fc180ad615dbb18efa40a64209da01677018b7",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 74.0, url: "https://www.awin1.com/pclick.php?p=43877230262&a=3013769&m=65912" },
+          { size: "S", price: 66.09, url: "https://www.awin1.com/pclick.php?p=45304853930&a=3013769&m=65912" },
+          { size: "M", price: 66.09, url: "https://www.awin1.com/pclick.php?p=45304853931&a=3013769&m=65912" },
+          { size: "L", price: 66.09, url: "https://www.awin1.com/pclick.php?p=45304853932&a=3013769&m=65912" },
+          { size: "XL", price: 66.09, url: "https://www.awin1.com/pclick.php?p=45304853933&a=3013769&m=65912" },
+          { size: "2XL", price: 66.09, url: "https://www.awin1.com/pclick.php?p=45304853934&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -173028,6 +172979,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-chaqueta-de-chandal-nike-dri-fit-academy-23-blanc",
+    brand: "Nike",
+    model: "Chaqueta de chándal Nike Dri-Fit Academy 23 - Blanc",
+    colour: "Blanc",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 44.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45698833227&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr1710-100-phsfm001-ss25.webp&feedId=89032&k=8ef0389e9e33f8118cafb8358c982d767a7f7fa1",
+        sizes: ["XS"],
+      },
+    ],
+  },
+  {
     id: "nike-chaqueta-de-chandal-nike-dri-fit-academy-23-noir",
     brand: "Nike",
     model: "Chaqueta de chándal Nike Dri-Fit Academy 23 - Noir",
@@ -173042,6 +173011,24 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41422105286&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr1681-010-phsym004_new.webp&feedId=89032&k=66644c23193e71d9edc827d4e82053b54199d79d",
         sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "nike-chaqueta-de-chandal-nike-dri-fit-academy-23-rouge",
+    brand: "Nike",
+    model: "Chaqueta de chándal Nike Dri-Fit Academy 23 - Rouge",
+    colour: "Rouge",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 44.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529374250&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr1681-657-phsfm001-nw112724.webp&feedId=89032&k=a5a0e6aa1c2161ea2ebd0577d979bb2cfefcb018",
+        sizes: ["S"],
       },
     ],
   },
@@ -173104,36 +173091,12 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529928960&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9837-410_midnight-navy-royal-blue-white-white_1.webp&feedId=89032&k=8f04894b4fb9a5d77fb7ab5fd0e9831c18575cd6",
-        sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-      {
-        store: "FootStoreES",
-        price: 46.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529928967&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9837-463_royal-blue-midnight-navy-white-white_1.webp&feedId=89032&k=9a9c898374eb5578d02a8ee52180798d38144ecc",
-        sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-      {
-        store: "FootStoreES",
         price: 44.0,
-        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529949420&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9824-410-vpsrh001.webp&feedId=89032&k=30291ebecdabfe23bd6802411f78a477b9825497",
-        sizes: ["S", "2XL", "3XL"],
-        sizePrices: [
-          { size: "S", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529949420&a=3013769&m=65912" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/pclick.php?p=45130831666&a=3013769&m=65912" },
-          { size: "3XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=46027458879&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "3XL"],
       },
       {
         store: "FootStoreES",
@@ -173174,18 +173137,11 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 44.0,
-        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529949434&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9824-719-vpsrh001.webp&feedId=89032&k=53c59ddf880d8394f4547d6012da2c9083cebbd7",
-        sizes: ["S", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42529949432&a=3013769&m=65912" },
-          { size: "L", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529949434&a=3013769&m=65912" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=42529949435&a=3013769&m=65912" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/pclick.php?p=43745914932&a=3013769&m=65912" },
-        ],
+        sizes: ["L", "XL"],
       },
     ],
   },
@@ -173199,19 +173155,11 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 44.0,
-        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529928948&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9837-010_black-wolf-grey-white-white_1.webp&feedId=89032&k=c291382daaf7e3ea1668f6d032a4ff5494f26409",
-        sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529928948&a=3013769&m=65912" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/pclick.php?p=45335620408&a=3013769&m=65912" },
-          { size: "L", price: 44.0, url: "https://www.awin1.com/pclick.php?p=45304841611&a=3013769&m=65912" },
-          { size: "XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=45338294532&a=3013769&m=65912" },
-          { size: "2XL", price: 46.0, url: "https://www.awin1.com/pclick.php?p=44992250398&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "L", "XL"],
       },
       {
         store: "FootStoreES",
@@ -173284,6 +173232,51 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=36485372973&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr1681-452-phsfm001-ss25.webp&feedId=89032&k=d7a13617585234bf14932c32cdc27c351db6b455",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-chaqueta-de-chandal-nike-dri-fit-academy-pro-24-bleu",
+    brand: "Nike",
+    model: "Chaqueta de chándal Nike Dri-FIT Academy Pro 24 - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 54.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44061761087&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7683-455_obsidian-obsidian-obsidian-white_1.webp&feedId=89032&k=ff6276c29be26e0d2eefad25244763b3830436d8",
+        sizes: ["S"],
+      },
+      {
+        store: "FootStoreES",
+        price: 54.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45983286170&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7681-455_obsidian-obsidian-obsidian-white_1.webp&feedId=89032&k=d413f2e26b38c4bef2a21b247c6bfe0a0b7a451b",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "nike-chaqueta-de-chandal-nike-dri-fit-academy-pro-24-noir",
+    brand: "Nike",
+    model: "Chaqueta de chándal Nike Dri-FIT Academy Pro 24 - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 54.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46014578994&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fd%2Ffd7681-010.webp&feedId=89032&k=63a2ad528cd62abe864ad8e14dd9ece5d114acaa",
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -173382,7 +173375,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44002233089&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fj%2Ffj3022-657_1.webp&feedId=89032&k=dff6be5dcf675d362e0308229c10546cfaf455f3",
-        sizes: ["S", "XL"],
+        sizes: ["S", "XL", "2XL"],
       },
     ],
   },
@@ -173458,6 +173451,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-nike-total-90-bleu",
     brand: "Nike",
@@ -173882,9 +173878,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-tottenham-2026-27-bleu",
     brand: "Nike",
@@ -173899,7 +173892,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46014606660&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii3239-434-light-blue-blanc-6aa55f1de92c6-1.webp&feedId=89032&k=0b77acef25b002f17e8868f559a8d3cd81e65d6a",
-        sizes: ["XS"],
+        sizes: ["XS", "S"],
       },
     ],
   },
@@ -174044,6 +174037,24 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45663242551&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hv8409-463-royal-blue-white-6a83137ca5308-1.webp&feedId=89032&k=db0f2f9381236c8ce9754a879001f97a9fb668d1",
         sizes: ["XS", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-chaqueta-deportiva-psg-2026-27-noir",
+    brand: "Nike",
+    model: "Chaqueta deportiva PSG 2026/27 - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 111.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061465749&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq9937-011-black-black-global-red-6a45a2e1eaeec-1.webp&feedId=89032&k=eebe80450c48da4fb59f048a65b075d51e6b9f00",
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -174619,8 +174630,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485366841&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cz0991-100-phsfm001_nw.webp&feedId=89032&k=6e26e56f9d8c414c624e4770357f3b1fcbfa08c3",
-        sizes: ["S", "M"],
+        sizes: ["XS", "S", "M"],
         sizePrices: [
+          { size: "XS", price: 44.0, url: "https://www.awin1.com/pclick.php?p=45361827362&a=3013769&m=65912" },
           { size: "S", price: 38.24, url: "https://www.awin1.com/pclick.php?p=36485366841&a=3013769&m=65912" },
           { size: "M", price: 44.0, url: "https://www.awin1.com/pclick.php?p=45361827363&a=3013769&m=65912" },
         ],
@@ -174696,6 +174708,24 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=36485367308&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cz0999-673-phsfm001_new.webp&feedId=89032&k=d1327f3d4d2edab8f1fbc54d991257d16f5a60aa",
         sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "nike-chaqueta-nike-fc-noir",
+    brand: "Nike",
+    model: "Chaqueta Nike FC - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 50.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45361827367&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cz0999-010-phsfm001_new.webp&feedId=89032&k=520bcebe8f282266edd8ac8e2917a5a4e77fd384",
+        sizes: ["S"],
       },
     ],
   },
@@ -174827,7 +174857,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 123.0,
+        price: 124.0,
         priceMax: 129.0,
         shipping: 7.99,
         currency: "EUR",
@@ -174836,7 +174866,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 129.0, url: "https://www.awin1.com/pclick.php?p=39273757160&a=3013769&m=65912" },
-          { size: "M", price: 123.0, url: "https://www.awin1.com/pclick.php?p=39273757161&a=3013769&m=65912" },
+          { size: "M", price: 124.0, url: "https://www.awin1.com/pclick.php?p=39273757161&a=3013769&m=65912" },
           { size: "L", price: 129.0, url: "https://www.awin1.com/pclick.php?p=39273757162&a=3013769&m=65912" },
           { size: "XL", price: 129.0, url: "https://www.awin1.com/pclick.php?p=43362471233&a=3013769&m=65912" },
         ],
@@ -175041,11 +175071,17 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 17.91,
+        priceMax: 18.23,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim3553-324-chaussettes-de-gardien-domicile-fc-barcelone-2026-27-stadium-green-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-im3553-324-stadium-green-white-6a76399c37157-1.webp",
-        sizes: ["38/42", "42/46"],
+        sizes: ["38/42", "42/46", "46/50"],
+        sizePrices: [
+          { size: "38/42", price: 17.91, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim3553-324-chaussettes-de-gardien-domicile-fc-barcelone-2026-27-stadium-green-white" },
+          { size: "42/46", price: 17.91, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim3553-324-chaussettes-de-gardien-domicile-fc-barcelone-2026-27-stadium-green-white" },
+          { size: "46/50", price: 18.23, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim3553-324-chaussettes-de-gardien-domicile-fc-barcelone-2026-27-stadium-green-white" },
+        ],
       },
     ],
   },
@@ -176540,7 +176576,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsx5728-463-chaussettes-nike-classic-ii-royal-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_sx5728-463_10-nw042624.jpg",
-        sizes: ["34/38", "46/50"],
+        sizes: ["46/50"],
       },
       {
         store: "FootStoreFR",
@@ -177086,15 +177122,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-fq8253-043-pure-platinum-black-6a8311c20b68f-1.webp",
         sizes: ["31/35", "34/38", "38/42"],
       },
-      {
-        store: "FootStoreFR",
-        price: 17.06,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8253-106-chaussettes-nike-strike-white-team-red",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-fq8253-106-white-team-red-6a8311cd860f6-1.webp",
-        sizes: ["34/38"],
-      },
     ],
   },
   {
@@ -177120,11 +177147,11 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.19,
+        price: 11.87,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8253-103-chaussettes-nike-strike-dri-fit-white-university-red-university-red",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fq8253-103_white-university-red-university-red_1.jpg",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fq8253-103_white-university-red-university-red_1.webp",
         sizes: ["42/46"],
       },
     ],
@@ -177192,6 +177219,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "nike-chaussettes-nike-strike-dri-fit-turquoise",
     brand: "Nike",
@@ -177293,7 +177323,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 26.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim5021-900-chaussettes-nike-total-90-everyday-x3-multi-color",
@@ -177657,9 +177687,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "nike-chubasquero-3a-equipacion-liverpool-fc-2024-25-gris",
     brand: "Nike",
@@ -178048,6 +178075,42 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-cuissard-femme-nike-dri-fit-strike-gris",
+    brand: "Nike",
+    model: "Cuissard femme Nike Dri-FIt Strike - Gris",
+    colour: "Gris",
+    type: "baselayer",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 31.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8327-052-cuissard-femme-nike-dri-fit-strike-gris-noir",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dh8327-052-phsym004_new.jpg",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-cuissard-femme-nike-pro-bleu",
+    brand: "Nike",
+    model: "Cuissard femme Nike Pro - Bleu",
+    colour: "Bleu",
+    type: "baselayer",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 34.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn2374-410-cuissard-femme-nike-pro-midnight-navy-black-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/f/n/fn2374-410.webp",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "nike-debardeur-fc-barcelone-dri-fit-adv-strike-2026-27-rouge",
     brand: "Nike",
     model: "Débardeur FC Barcelone Dri-FIT ADV Strike 2026/27 - Rouge",
@@ -178097,7 +178160,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46050201442&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii1981-424.webp&feedId=89032&k=c4e72ef3cb9d33c41a5cce51ac24e6c6c557a726",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "3XL"],
       },
     ],
   },
@@ -178116,6 +178179,24 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq6905-011-doudoune-a-capuche-psg-2026-27-black-black-global-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq6905-011-black-black-global-red-6a45a246b624e-1.webp",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-doudoune-femme-nike-therma-fit-academy-pro-24-sdf-noir",
+    brand: "Nike",
+    model: "Doudoune femme Nike Therma-FIT Academy Pro 24 SDF - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 123.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7712-010-doudoune-femme-nike-therma-fit-academy-pro-24-sdf-black-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7712-010-phsfh001-nw112724.webp",
+        sizes: ["2XL"],
       },
     ],
   },
@@ -178169,7 +178250,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 138.0,
+        price: 137.0,
         priceMax: 139.0,
         shipping: 6.99,
         currency: "EUR",
@@ -178177,9 +178258,27 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fd7702-451-phsfh001-ss25.jpg",
         sizes: ["M", "XL"],
         sizePrices: [
-          { size: "M", price: 138.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-451-doudoune-nike-tf-acdpr24-fall-obsidian-white" },
+          { size: "M", price: 137.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-451-doudoune-nike-tf-acdpr24-fall-obsidian-white" },
           { size: "XL", price: 139.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-451-doudoune-nike-tf-acdpr24-fall-obsidian-white" },
         ],
+      },
+    ],
+  },
+  {
+    id: "nike-doudoune-nike-therma-fit-academy-pro-24-sdf-bleu",
+    brand: "Nike",
+    model: "Doudoune Nike Therma-FIT Academy Pro 24 SDF - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 123.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7709-451-doudoune-nike-therma-fit-academy-pro-24-sdf-obsidian-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7709-451-phsfh001-nw112724.webp",
+        sizes: ["M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -178217,7 +178316,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 105.64,
+        price: 104.22,
         priceMax: 139.0,
         shipping: 6.99,
         currency: "EUR",
@@ -178227,7 +178326,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 105.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-010-doudoune-nike-therma-flt-academy-pro-24-black-white" },
           { size: "M", price: 139.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-010-doudoune-nike-therma-flt-academy-pro-24-black-white" },
-          { size: "XL", price: 105.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-010-doudoune-nike-therma-flt-academy-pro-24-black-white" },
+          { size: "XL", price: 104.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7702-010-doudoune-nike-therma-flt-academy-pro-24-black-white" },
         ],
       },
     ],
@@ -178457,7 +178556,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45234264222&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsp2162-010-phcfz001.webp&feedId=89032&k=622fb7899a4d3b0f1150e65f9d27a7fbc0b3365f",
-        sizes: ["S", "M", "L"],
+        sizes: ["XS", "S", "M", "L"],
       },
     ],
   },
@@ -178512,9 +178611,8 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485368897&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dn3611-100-phcfz001-nw112724.webp&feedId=89032&k=b9cb5ef7f3a6f99cec1b29816f6ba4b2450ea8a2",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 27.51, url: "https://www.awin1.com/pclick.php?p=39082257712&a=3013769&m=65912" },
           { size: "S", price: 27.51, url: "https://www.awin1.com/pclick.php?p=36485368895&a=3013769&m=65912" },
           { size: "M", price: 27.51, url: "https://www.awin1.com/pclick.php?p=36823588037&a=3013769&m=65912" },
           { size: "L", price: 26.27, url: "https://www.awin1.com/pclick.php?p=36485368897&a=3013769&m=65912" },
@@ -178846,17 +178944,11 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 30.0,
-        priceMax: 32.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fav2609-635-maillot-compression-nike-dri-fit-rouge-cramoisi-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_av2609-635-phsfh001.webp",
-        sizes: ["S", "M", "2XL"],
-        sizePrices: [
-          { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fav2609-635-maillot-compression-nike-dri-fit-rouge-cramoisi-noir" },
-          { size: "M", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fav2609-635-maillot-compression-nike-dri-fit-rouge-cramoisi-noir" },
-          { size: "2XL", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fav2609-635-maillot-compression-nike-dri-fit-rouge-cramoisi-noir" },
-        ],
+        sizes: ["S"],
       },
     ],
   },
@@ -179889,7 +179981,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45638724811&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr0960-010-phsfm001-nw112724.webp&feedId=89032&k=095a7adeb9c3f014af19f16cb0798c1bc133711f",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -179921,11 +180013,19 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.0,
+        priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41805963875&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh8327-100-phsfm001_new.webp&feedId=89032&k=30307d2a49bcab18a433fb96a8caf670f92334f8",
         sizes: ["XS", "S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "XS", price: 32.0, url: "https://www.awin1.com/pclick.php?p=41805963875&a=3013769&m=65912" },
+          { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45906300541&a=3013769&m=65912" },
+          { size: "M", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45304822597&a=3013769&m=65912" },
+          { size: "L", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45906300542&a=3013769&m=65912" },
+          { size: "XL", price: 33.0, url: "https://www.awin1.com/pclick.php?p=45906300543&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -179939,11 +180039,19 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.0,
+        priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45906300536&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh8327-410-phsfm001_new.webp&feedId=89032&k=6840f1bf202442dcd81717dd17c7b858d08c7338",
         sizes: ["XS", "S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "XS", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45906300536&a=3013769&m=65912" },
+          { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45906300537&a=3013769&m=65912" },
+          { size: "M", price: 33.0, url: "https://www.awin1.com/pclick.php?p=45906300538&a=3013769&m=65912" },
+          { size: "L", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45906300539&a=3013769&m=65912" },
+          { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45906300540&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -180180,7 +180288,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 29.0,
         priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
@@ -180188,7 +180296,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh8327-657-phsfm001_new.webp&feedId=89032&k=520ed40745e3596174fc3c98e610049e2558ca26",
         sizes: ["XS", "M"],
         sizePrices: [
-          { size: "XS", price: 30.0, url: "https://www.awin1.com/pclick.php?p=41122040735&a=3013769&m=65912" },
+          { size: "XS", price: 29.0, url: "https://www.awin1.com/pclick.php?p=41122040735&a=3013769&m=65912" },
           { size: "M", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43745897153&a=3013769&m=65912" },
         ],
       },
@@ -180226,7 +180334,25 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45819219617&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih0463-010-black-white-white-white-1.webp&feedId=89032&k=b7aed0ca41c4fc71f10a16d1fbd9fc30e5d42f05",
-        sizes: ["XS", "S", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-mujer-nike-strike-rouge",
+    brand: "Nike",
+    model: "Pantalón corto mujer Nike Strike - Rouge",
+    colour: "Rouge",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 33.07,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46014606486&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih0463-677-team-red-bright-crimson-bright-crimson-bright-crimson-6aa56102d75ae-1.webp&feedId=89032&k=70953a5e3a3a0ad78caa6c0425ba25c953c076db",
+        sizes: ["XS"],
       },
     ],
   },
@@ -180336,7 +180462,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 28.0, url: "https://www.awin1.com/pclick.php?p=44845102431&a=3013769&m=65912" },
-          { size: "M", price: 28.0, url: "https://www.awin1.com/pclick.php?p=44472588567&a=3013769&m=65912" },
+          { size: "M", price: 29.0, url: "https://www.awin1.com/pclick.php?p=44472588567&a=3013769&m=65912" },
           { size: "L", price: 28.0, url: "https://www.awin1.com/pclick.php?p=44472588568&a=3013769&m=65912" },
           { size: "XL", price: 29.0, url: "https://www.awin1.com/pclick.php?p=45075021362&a=3013769&m=65912" },
         ],
@@ -180526,19 +180652,11 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 27.0,
-        priceMax: 28.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43456402073&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45577425717&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9776-010_black-black-white_1.webp&feedId=89032&k=7d3fb3a6e80625d31b76e88818d88b90bc5e8d3e",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 28.0, url: "https://www.awin1.com/pclick.php?p=45577425717&a=3013769&m=65912" },
-          { size: "M", price: 27.0, url: "https://www.awin1.com/pclick.php?p=43456402073&a=3013769&m=65912" },
-          { size: "L", price: 28.0, url: "https://www.awin1.com/pclick.php?p=42746538120&a=3013769&m=65912" },
-          { size: "XL", price: 27.0, url: "https://www.awin1.com/pclick.php?p=42529928123&a=3013769&m=65912" },
-          { size: "2XL", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43479567427&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -180584,6 +180702,42 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529686938&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dv9742-068-vpsrh001_082824.webp&feedId=89032&k=70bb8056c730d97e01ffd39e0d3a1cecdc2e15da",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-nike-dri-fit-academy-pro-24-bleu",
+    brand: "Nike",
+    model: "Pantalón corto Nike Dri-FIT Academy Pro 24 - Bleu",
+    colour: "Bleu",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 32.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061458195&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7605-451_obsidian-white_1.webp&feedId=89032&k=5d2af777156c6f4b5012fd83cad67a6bb9968539",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-nike-dri-fit-academy-pro-24-noir",
+    brand: "Nike",
+    model: "Pantalón corto Nike Dri-FIT Academy Pro 24 - Noir",
+    colour: "Noir",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 33.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45888242027&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7605-010_black-white_2.webp&feedId=89032&k=49e157deee5331c34fe33d1c1acf9fe71dde7a59",
+        sizes: ["M"],
       },
     ],
   },
@@ -180654,12 +180808,12 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         priceMax: 29.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43829773063&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43810862469&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-if1448-492-blue-void-white-black-pinksicle-1.webp&feedId=89032&k=97d9fa54e230dcea3ee814316b824883ca167634",
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
-          { size: "S", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43829773063&a=3013769&m=65912" },
-          { size: "M", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43810862468&a=3013769&m=65912" },
+          { size: "S", price: 29.0, url: "https://www.awin1.com/pclick.php?p=43829773063&a=3013769&m=65912" },
+          { size: "M", price: 29.0, url: "https://www.awin1.com/pclick.php?p=43810862468&a=3013769&m=65912" },
           { size: "L", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43810862469&a=3013769&m=65912" },
           { size: "2XL", price: 29.0, url: "https://www.awin1.com/pclick.php?p=43810862471&a=3013769&m=65912" },
         ],
@@ -180676,7 +180830,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 19.75,
-        priceMax: 28.0,
+        priceMax: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43810861817&a=3013769&m=65912",
@@ -180686,8 +180840,8 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
           { size: "S", price: 19.75, url: "https://www.awin1.com/pclick.php?p=43810861817&a=3013769&m=65912" },
           { size: "M", price: 19.75, url: "https://www.awin1.com/pclick.php?p=45254170237&a=3013769&m=65912" },
           { size: "L", price: 21.5, url: "https://www.awin1.com/pclick.php?p=43810861819&a=3013769&m=65912" },
-          { size: "XL", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43810861820&a=3013769&m=65912" },
-          { size: "2XL", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43810861821&a=3013769&m=65912" },
+          { size: "XL", price: 29.0, url: "https://www.awin1.com/pclick.php?p=43810861820&a=3013769&m=65912" },
+          { size: "2XL", price: 29.0, url: "https://www.awin1.com/pclick.php?p=43810861821&a=3013769&m=65912" },
         ],
       },
     ],
@@ -180799,11 +180953,17 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 18.2,
+        priceMax: 19.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45819201717&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr0960-410-phsfm001-nw112724.webp&feedId=89032&k=f371e4bf17d4260d5e71fdf2789cb384ff91d272",
-        sizes: ["XS"],
+        sizes: ["XS", "S", "M"],
+        sizePrices: [
+          { size: "XS", price: 18.2, url: "https://www.awin1.com/pclick.php?p=45819201717&a=3013769&m=65912" },
+          { size: "S", price: 19.96, url: "https://www.awin1.com/pclick.php?p=46061452983&a=3013769&m=65912" },
+          { size: "M", price: 19.96, url: "https://www.awin1.com/pclick.php?p=46061452984&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -180817,14 +180977,24 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 18.2,
+        priceMax: 19.96,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40249035672&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45819201220&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr0960-100-phsfm001-nw112724.webp&feedId=89032&k=5eeb404d5581c8e6ed1c6976def21d4beffc53b7",
-        sizes: ["M", "2XL"],
+        sizes: ["XS", "M", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 18.2, url: "https://www.awin1.com/pclick.php?p=45819201220&a=3013769&m=65912" },
+          { size: "M", price: 18.2, url: "https://www.awin1.com/pclick.php?p=40249035672&a=3013769&m=65912" },
+          { size: "XL", price: 19.96, url: "https://www.awin1.com/pclick.php?p=45995958207&a=3013769&m=65912" },
+          { size: "2XL", price: 18.2, url: "https://www.awin1.com/pclick.php?p=45304823855&a=3013769&m=65912" },
+        ],
       },
     ],
   },
+];
+
+const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-lge-iii-bleu",
     brand: "Nike",
@@ -181014,7 +181184,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323044511&a=3013769&m=65912",
@@ -181072,7 +181242,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 29.0,
         priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
@@ -181080,7 +181250,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh8128-719-phsfm001_new.webp&feedId=89032&k=f86b3207f097fb533abbbf888be0ca2243e84ab9",
         sizes: ["S", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 30.0, url: "https://www.awin1.com/pclick.php?p=40814692971&a=3013769&m=65912" },
+          { size: "S", price: 29.0, url: "https://www.awin1.com/pclick.php?p=40814692971&a=3013769&m=65912" },
           { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43755731888&a=3013769&m=65912" },
           { size: "2XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=45698831947&a=3013769&m=65912" },
         ],
@@ -181190,24 +181360,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45971945294&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh8128-547-phsfm001-nw112724.webp&feedId=89032&k=75b4538e17381323ea63a915e92579c1119eab64",
         sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-nike-dry-noir",
-    brand: "Nike",
-    model: "Pantalón corto Nike dry - Noir",
-    colour: "Noir",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 39.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42023042445&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_aa0737-010-phsfh001_new.webp&feedId=89032&k=bf9bbd85b5b862607647d69eb772d539616e643f",
-        sizes: ["S"],
       },
     ],
   },
@@ -181503,9 +181655,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-venom-iv-blanc",
     brand: "Nike",
@@ -182218,9 +182367,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         price: 91.99,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45888246868&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45562787858&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii3198-426.webp&feedId=89032&k=c63164e0e34e4b8c88d345eeda03d998d4edfeed",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -182233,7 +182382,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.0,
+        price: 37.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361832605&a=3013769&m=65912",
@@ -182295,7 +182444,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 60.1,
-        priceMax: 69.62,
+        priceMax: 68.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829770441&a=3013769&m=65912",
@@ -182303,7 +182452,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 68.64, url: "https://www.awin1.com/pclick.php?p=43829770439&a=3013769&m=65912" },
-          { size: "M", price: 69.62, url: "https://www.awin1.com/pclick.php?p=43829770440&a=3013769&m=65912" },
+          { size: "M", price: 68.64, url: "https://www.awin1.com/pclick.php?p=43829770440&a=3013769&m=65912" },
           { size: "L", price: 60.1, url: "https://www.awin1.com/pclick.php?p=43829770441&a=3013769&m=65912" },
           { size: "XL", price: 68.64, url: "https://www.awin1.com/pclick.php?p=43829770442&a=3013769&m=65912" },
         ],
@@ -182535,7 +182684,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         sizes: ["XS", "M", "L", "XL"],
         sizePrices: [
           { size: "XS", price: 50.66, url: "https://www.awin1.com/pclick.php?p=41861952317&a=3013769&m=65912" },
-          { size: "M", price: 68.0, url: "https://www.awin1.com/pclick.php?p=41781314479&a=3013769&m=65912" },
+          { size: "M", price: 69.0, url: "https://www.awin1.com/pclick.php?p=41781314479&a=3013769&m=65912" },
           { size: "L", price: 50.66, url: "https://www.awin1.com/pclick.php?p=41781314480&a=3013769&m=65912" },
           { size: "XL", price: 69.0, url: "https://www.awin1.com/pclick.php?p=41781314481&a=3013769&m=65912" },
         ],
@@ -182686,11 +182835,10 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         priceMax: 89.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45819220934&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348247617&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fh%2Fih1881-010.webp&feedId=89032&k=0cb30ed7e6f472f100bd091e1b577de39994339c",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 71.99, url: "https://www.awin1.com/pclick.php?p=45819220934&a=3013769&m=65912" },
           { size: "S", price: 71.99, url: "https://www.awin1.com/pclick.php?p=45348247617&a=3013769&m=65912" },
           { size: "M", price: 71.99, url: "https://www.awin1.com/pclick.php?p=45348247618&a=3013769&m=65912" },
           { size: "L", price: 71.99, url: "https://www.awin1.com/pclick.php?p=45348247619&a=3013769&m=65912" },
@@ -182749,7 +182897,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047901595&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ih1880-451-obsidian-work-blue-speed-red-white-6a2fbb0e9f78c-1.webp&feedId=89032&k=83d3e16368482757af4cae8109ad16e01c029b0c",
-        sizes: ["XS", "S", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -182943,6 +183091,24 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-pantalon-de-chandal-mujer-fc-barcelona-nsw-tech-fleece-mr-2024-25-noir",
+    brand: "Nike",
+    model: "Pantalón de chándal mujer FC Barcelona NSW TECH Fleece MR 2024/25 - Noir",
+    colour: "Noir",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 119.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43219401707&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fn8430-010-phsfm001.webp&feedId=89032&k=15cae4af493e243b8e91effc4b6e47dfa2d4837d",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "nike-pantalon-de-chandal-mujer-nike-academy-rouge",
     brand: "Nike",
     model: "Pantalón de chándal mujer Nike Academy - Rouge",
@@ -183118,7 +183284,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45914949765&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj3756-025-phsfm001.webp&feedId=89032&k=d8744c05875eec2911d16751659a51fe9da03b1c",
-        sizes: ["XS"],
+        sizes: ["XS", "2XL"],
       },
     ],
   },
@@ -183203,16 +183369,11 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.78,
-        priceMax: 33.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42164864464&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hj3776-014-phsym001.webp&feedId=89032&k=580edd4cc958d8aa090ad8beed3632d5d21661fc",
-        sizes: ["L", "XL"],
-        sizePrices: [
-          { size: "L", price: 33.76, url: "https://www.awin1.com/pclick.php?p=42164864463&a=3013769&m=65912" },
-          { size: "XL", price: 32.78, url: "https://www.awin1.com/pclick.php?p=42164864464&a=3013769&m=65912" },
-        ],
+        sizes: ["XL"],
       },
     ],
   },
@@ -183234,7 +183395,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 44.0,
+        price: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361890902&a=3013769&m=65912",
@@ -183399,16 +183560,16 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 44.91,
-        priceMax: 74.0,
+        priceMax: 73.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530061651&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7738-012_wolf-grey-white_1.webp&feedId=89032&k=ffc2aaf4686e26f84625ef737f4356dbc225e034",
         sizes: ["M", "L", "XL"],
         sizePrices: [
-          { size: "M", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42530061650&a=3013769&m=65912" },
+          { size: "M", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42530061650&a=3013769&m=65912" },
           { size: "L", price: 44.91, url: "https://www.awin1.com/pclick.php?p=42530061651&a=3013769&m=65912" },
-          { size: "XL", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42530061652&a=3013769&m=65912" },
+          { size: "XL", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42530061652&a=3013769&m=65912" },
         ],
       },
     ],
@@ -183466,24 +183627,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-pantalon-de-chandal-nike-dri-fit-academy-25-kpz-bleu",
-    brand: "Nike",
-    model: "Pantalón de chándal Nike Dri-FIT Academy 25 KPZ - Bleu",
-    colour: "Bleu",
-    type: "pants",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 46.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45443796952&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9814-410-vpsrh001.webp&feedId=89032&k=21e1b1c5a79a8907e2b2cb84d7fef1b7f1f3dc5f",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
     id: "nike-pantalon-de-chandal-nike-dri-fit-academy-25-kpz-noir",
     brand: "Nike",
     model: "Pantalón de chándal Nike Dri-FIT Academy 25 KPZ - Noir",
@@ -183493,19 +183636,11 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 44.0,
-        priceMax: 46.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529927964&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fz%2Ffz9814-010.webp&feedId=89032&k=b1c0f5cc5c30feb68abccd3035a1163cdf7263c0",
-        sizes: ["XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/pclick.php?p=45443796950&a=3013769&m=65912" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42529927963&a=3013769&m=65912" },
-          { size: "M", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529927964&a=3013769&m=65912" },
-          { size: "L", price: 46.0, url: "https://www.awin1.com/pclick.php?p=42529927965&a=3013769&m=65912" },
-          { size: "XL", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529927966&a=3013769&m=65912" },
-        ],
+        sizes: ["M", "XL"],
       },
     ],
   },
@@ -183524,15 +183659,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529846714&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9805-010_black-white-white_7.webp&feedId=89032&k=0b6ec7cad5aece6d36a8c56fa0385a2e319ea0c9",
         sizes: ["XL"],
-      },
-      {
-        store: "FootStoreES",
-        price: 46.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44992251449&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz9852-010-vpsrh001.webp&feedId=89032&k=3f8991446abb61a9e4149fdee889f4b479e4f944",
-        sizes: ["XS"],
       },
     ],
   },
@@ -183640,12 +183766,18 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 74.0,
+        price: 73.0,
+        priceMax: 74.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529947277&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7738-451-vpsrh001.webp&feedId=89032&k=e39d5b606f71ddfbea38575c0eba47ca3bb9b865",
         sizes: ["S", "L", "2XL"],
+        sizePrices: [
+          { size: "S", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42529947277&a=3013769&m=65912" },
+          { size: "L", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42529947279&a=3013769&m=65912" },
+          { size: "2XL", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42529947281&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -183664,6 +183796,24 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529951699&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7738-010-vpsrh001.webp&feedId=89032&k=2ad73d5e6a44ab93a3a1e36ac2ff38c62c58d261",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-de-chandal-nike-dri-fit-strike-2023-kpz-noir",
+    brand: "Nike",
+    model: "Pantalón de chándal Nike Dri-Fit Strike 2023 KPZ - Noir",
+    colour: "Noir",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 56.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43219397558&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr2568-010-phsfm001-nw112724.webp&feedId=89032&k=29f45ae0cd32119182fc0a3a24dacec9d949ec18",
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -184013,7 +184163,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "2XL"],
         sizePrices: [
           { size: "XS", price: 62.0, url: "https://www.awin1.com/pclick.php?p=45381241068&a=3013769&m=65912" },
-          { size: "S", price: 62.0, url: "https://www.awin1.com/pclick.php?p=45381241069&a=3013769&m=65912" },
+          { size: "S", price: 63.0, url: "https://www.awin1.com/pclick.php?p=45381241069&a=3013769&m=65912" },
           { size: "M", price: 62.0, url: "https://www.awin1.com/pclick.php?p=45381241070&a=3013769&m=65912" },
           { size: "L", price: 63.0, url: "https://www.awin1.com/pclick.php?p=45381241071&a=3013769&m=65912" },
           { size: "2XL", price: 63.0, url: "https://www.awin1.com/pclick.php?p=45381241072&a=3013769&m=65912" },
@@ -184336,12 +184486,20 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.0,
+        price: 75.99,
+        priceMax: 94.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45263181360&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45958858452&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-io3458-455-deep-royal-bleu-white-6a45a173bf8e4-1.webp&feedId=89032&k=e497adc5b80d7684e82cb85e2e06df94b1ab8efd",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "XS", price: 75.99, url: "https://www.awin1.com/pclick.php?p=45958858452&a=3013769&m=65912" },
+          { size: "S", price: 75.99, url: "https://www.awin1.com/pclick.php?p=45263181360&a=3013769&m=65912" },
+          { size: "M", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45263181361&a=3013769&m=65912" },
+          { size: "L", price: 75.99, url: "https://www.awin1.com/pclick.php?p=45263181362&a=3013769&m=65912" },
+          { size: "XL", price: 94.0, url: "https://www.awin1.com/pclick.php?p=45263181364&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -184423,24 +184581,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42810865803&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hm2950-325-cargo-khaki-black-1.webp&feedId=89032&k=80f7ebe1dab2c88680ae059168bbc826d18b9de0",
         sizes: ["XS", "S", "M"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-de-chandal-psg-club-2026-27-bleu",
-    brand: "Nike",
-    model: "Pantalón de chándal PSG Club 2026/27 - Bleu",
-    colour: "Bleu",
-    type: "pants",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 48.52,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45018630473&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii3408-410.webp&feedId=89032&k=b0599be520166bbc45bd350c4a42356c3f0b32c2",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -184570,6 +184710,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-psg-nsw-club-fleece-2025-26-gris",
     brand: "Nike",
@@ -184708,20 +184851,11 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 91.99,
-        priceMax: 114.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905488413&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii3160-010_04.webp&feedId=89032&k=07221cbce4fe8d003ea3639b2eb6593b23f72ea3",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 91.99, url: "https://www.awin1.com/pclick.php?p=44905488413&a=3013769&m=65912" },
-          { size: "S", price: 91.99, url: "https://www.awin1.com/pclick.php?p=44746186528&a=3013769&m=65912" },
-          { size: "M", price: 91.99, url: "https://www.awin1.com/pclick.php?p=44746186529&a=3013769&m=65912" },
-          { size: "L", price: 114.0, url: "https://www.awin1.com/pclick.php?p=44746186530&a=3013769&m=65912" },
-          { size: "XL", price: 91.99, url: "https://www.awin1.com/pclick.php?p=44746186531&a=3013769&m=65912" },
-          { size: "2XL", price: 91.99, url: "https://www.awin1.com/pclick.php?p=45395592662&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -184942,6 +185076,24 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-pantalon-de-chandal-third-chelsea-fc-2026-27-bleu",
+    brand: "Nike",
+    model: "Pantalón de chándal Third Chelsea FC 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 74.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46037747814&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii6871-495-rush-blue-white-white-6aad0444de9bc-1.webp&feedId=89032&k=65784cdef2801df834d11222f2d5db7ea23811e1",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-pantalon-de-chandal-third-fc-barcelona-repel-i96-noir",
     brand: "Nike",
     model: "Pantalón de chándal Third FC Barcelona Repel i96 - Noir",
@@ -185117,9 +185269,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-tottenham-2026-27-bleu",
     brand: "Nike",
@@ -185135,15 +185284,6 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45130836913&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii3195-451_04.webp&feedId=89032&k=6dffda257fe356ac9efbdddc9a5d9db381d8d19d",
         sizes: ["S", "M", "L", "XL"],
-      },
-      {
-        store: "FootStoreES",
-        price: 48.52,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45130837821&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii3409-451.webp&feedId=89032&k=18d5da8061bdf1c7b54e7a89c2a7b4f5b3a771e4",
-        sizes: ["S", "XL", "2XL"],
       },
     ],
   },
@@ -185357,7 +185497,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1880-451-pantalon-de-survetement-angleterre-energy-coupe-du-monde-2026-obsidian-work-blue-speed-red-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih1880-451-obsidian-work-blue-speed-red-white-6a2fbb0e9f78c-1.webp",
-        sizes: ["XS", "S", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -185693,7 +185833,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3198-426-pantalon-de-survetement-chelsea-fc-tech-2026-27-pitch-blue-midwest-gold",
         imageUrl: "https://cdn.blazimg.com/1800/product/i/i/ii3198-426.webp",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -185917,11 +186057,17 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 120.0,
+        priceMax: 121.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4834-071-pantalon-de-survetement-en-molleton-liverpool-fc-tech-2023-24-charbon-chine-poison-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dv4834-071_a.webp",
-        sizes: ["S", "XL"],
+        sizes: ["S", "M", "XL"],
+        sizePrices: [
+          { size: "S", price: 121.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4834-071-pantalon-de-survetement-en-molleton-liverpool-fc-tech-2023-24-charbon-chine-poison-green" },
+          { size: "M", price: 121.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4834-071-pantalon-de-survetement-en-molleton-liverpool-fc-tech-2023-24-charbon-chine-poison-green" },
+          { size: "XL", price: 120.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv4834-071-pantalon-de-survetement-en-molleton-liverpool-fc-tech-2023-24-charbon-chine-poison-green" },
+        ],
       },
     ],
   },
@@ -185970,7 +186116,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 55.0,
+        price: 56.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdz2949-010-pantalon-de-survetement-en-molleton-psg-hbr-2023-24-noir",
@@ -186326,6 +186472,24 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-pantalon-de-survetement-femme-fc-barcelone-nsw-tech-fleece-mr-2024-25-noir",
+    brand: "Nike",
+    model: "Pantalon de survêtement femme FC Barcelone NSW TECH Fleece MR 2024/25 - Noir",
+    colour: "Noir",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 119.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn8430-010-pantalon-de-survetement-femme-fc-barcelone-nsw-tech-fleece-mr-2024-25-black-club-gold",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fn8430-010-phsfm001.jpg",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "nike-pantalon-de-survetement-femme-france-bleu",
     brand: "Nike",
     model: "Pantalon de survêtement femme France - Bleu",
@@ -186471,7 +186635,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-410-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-midnight-navy-white-white",
@@ -186497,10 +186661,10 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/f/z/fz9814-010.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
+          { size: "XS", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
+          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
           { size: "M", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
+          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
           { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
           { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9814-010-pantalon-de-survetement-femme-nike-dri-fit-academy-25-kpz-black-white-white" },
         ],
@@ -186522,6 +186686,24 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx0508-011-pantalon-de-survetement-femme-nike-dri-fit-academy-noir-baltic-blue-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dx0508-011-phsfm001_new.webp",
         sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-de-survetement-femme-nike-dri-fit-strike-2023-kpz-noir",
+    brand: "Nike",
+    model: "Pantalon de survêtement femme Nike Dri-Fit Strike 2023 KPZ - Noir",
+    colour: "Noir",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 54.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr2568-010-pantalon-de-survetement-femme-nike-dri-fit-strike-2023-kpz-noir-noir-anthracite-blanc",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dr2568-010-phsfm001-nw112724.jpg",
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -186746,9 +186928,8 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1881-010-pantalon-de-survetement-france-energy-coupe-du-monde-2026-black-igloo-metallic-copper",
         imageUrl: "https://cdn.blazimg.com/1800/product/i/h/ih1881-010.webp",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 71.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1881-010-pantalon-de-survetement-france-energy-coupe-du-monde-2026-black-igloo-metallic-copper" },
           { size: "S", price: 71.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1881-010-pantalon-de-survetement-france-energy-coupe-du-monde-2026-black-igloo-metallic-copper" },
           { size: "M", price: 71.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1881-010-pantalon-de-survetement-france-energy-coupe-du-monde-2026-black-igloo-metallic-copper" },
           { size: "L", price: 71.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1881-010-pantalon-de-survetement-france-energy-coupe-du-monde-2026-black-igloo-metallic-copper" },
@@ -187048,7 +187229,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdj8556-012-pantalon-de-survetement-liverpool-fc-strike-2022-23-noir-rouge-framboise",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dj8556-012-phsym004_new.webp",
-        sizes: ["XS", "M", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "XL", "2XL"],
       },
     ],
   },
@@ -187183,7 +187364,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj3756-025-pantalon-de-survetement-nike-academyplus-photon-dust-dynamic-turq",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hj3756-025-phsfm001.webp",
-        sizes: ["XS"],
+        sizes: ["XS", "2XL"],
       },
     ],
   },
@@ -187286,16 +187467,11 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 31.94,
-        priceMax: 33.12,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj3776-014-pantalon-de-survetement-nike-academy-black-black-university-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hj3776-014-phsym001.webp",
-        sizes: ["L", "XL"],
-        sizePrices: [
-          { size: "L", price: 33.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj3776-014-pantalon-de-survetement-nike-academy-black-black-university-red" },
-          { size: "XL", price: 31.94, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj3776-014-pantalon-de-survetement-nike-academy-black-black-university-red" },
-        ],
+        sizes: ["XL"],
       },
     ],
   },
@@ -187351,6 +187527,15 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
     colour: "Noir",
     type: "pants",
     offers: [
+      {
+        store: "FootStoreFR",
+        price: 64.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb6814-010-pantalon-de-survetement-nike-academy-winter-warrior-noir-anthracite-argent",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fb6814-010-vpsrh001_s23.webp",
+        sizes: ["S", "L", "XL"],
+      },
       {
         store: "FootStoreFR",
         price: 35.03,
@@ -187557,7 +187742,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9852-010-pantalon-de-survetement-nike-dri-fit-academy-25-black-white",
@@ -187902,7 +188087,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6907-010-pantalon-de-survetement-nike-fleece-park20-noir-blanc-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cw6907-010-phsfm001_new.webp",
-        sizes: ["S", "M", "L", "2XL"],
+        sizes: ["S", "L", "2XL"],
       },
     ],
   },
@@ -188116,6 +188301,9 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-survetement-nike-total-90-gris",
     brand: "Nike",
@@ -188315,7 +188503,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh4846-451-pantalon-de-survetement-portugal-travel-coupe-du-monde-2022-obsidienne-vert-sapin-jaune-or",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dh4846-451-phsfm001_new.webp",
-        sizes: ["S"],
+        sizes: ["S", "XL"],
       },
     ],
   },
@@ -188347,11 +188535,17 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 42.5,
+        priceMax: 84.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx5691-133-pantalon-de-survetement-psg-2022-23-blanc-casse-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dx5691-133-phsfh001_new.jpg",
-        sizes: ["M", "L"],
+        sizes: ["S", "M", "L"],
+        sizePrices: [
+          { size: "S", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx5691-133-pantalon-de-survetement-psg-2022-23-blanc-casse-blanc" },
+          { size: "M", price: 42.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx5691-133-pantalon-de-survetement-psg-2022-23-blanc-casse-blanc" },
+          { size: "L", price: 42.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx5691-133-pantalon-de-survetement-psg-2022-23-blanc-casse-blanc" },
+        ],
       },
     ],
   },
@@ -188462,12 +188656,20 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 94.0,
+        price: 75.99,
+        priceMax: 94.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3458-455-pantalon-de-survetement-psg-city-style-2026-27-deep-royal-bleu-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io3458-455-deep-royal-bleu-white-6a45a173bf8e4-1.webp",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "XS", price: 75.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3458-455-pantalon-de-survetement-psg-city-style-2026-27-deep-royal-bleu-white" },
+          { size: "S", price: 75.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3458-455-pantalon-de-survetement-psg-city-style-2026-27-deep-royal-bleu-white" },
+          { size: "M", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3458-455-pantalon-de-survetement-psg-city-style-2026-27-deep-royal-bleu-white" },
+          { size: "L", price: 75.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3458-455-pantalon-de-survetement-psg-city-style-2026-27-deep-royal-bleu-white" },
+          { size: "XL", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3458-455-pantalon-de-survetement-psg-city-style-2026-27-deep-royal-bleu-white" },
+        ],
       },
     ],
   },
@@ -188549,24 +188751,6 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm2950-325-pantalon-de-survetement-psg-club-2025-26-cargo-khaki-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hm2950-325-cargo-khaki-black-1.webp",
         sizes: ["XS", "S", "M"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-de-survetement-psg-club-2026-27-bleu",
-    brand: "Nike",
-    model: "Pantalon de survêtement PSG Club 2026/27 - Bleu",
-    colour: "Bleu",
-    type: "pants",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 47.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3408-410-pantalon-de-survetement-psg-club-2026-27-midnight-navy-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/i/i/ii3408-410.webp",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -188747,9 +188931,6 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-survetement-psg-nsw-club-fleece-2025-26-gris",
     brand: "Nike",
@@ -188870,20 +189051,11 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 91.99,
-        priceMax: 114.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ii3160-010_04.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 91.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white" },
-          { size: "S", price: 91.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white" },
-          { size: "M", price: 91.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white" },
-          { size: "L", price: 114.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white" },
-          { size: "XL", price: 91.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white" },
-          { size: "2XL", price: 91.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3160-010-pantalon-de-survetement-psg-tech-woven-2026-27-black-white" },
-        ],
       },
     ],
   },
@@ -189064,6 +189236,24 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffv5968-010-pantalon-de-survetement-third-chelsea-dri-fit-strike-kp-2023-24-noir-bleu-ciel-orange",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fv5968-010-phsym004_s23.jpg",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-de-survetement-third-chelsea-fc-2026-27-bleu",
+    brand: "Nike",
+    model: "Pantalon de survêtement Third Chelsea FC 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "pants",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 74.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii6871-495-pantalon-de-survetement-third-chelsea-fc-2026-27-rush-blue-white-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii6871-495-rush-blue-white-white-6aad0444de9bc-1.webp",
+        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -189445,15 +189635,6 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ii3195-451_04.webp",
         sizes: ["S", "M", "L", "XL"],
       },
-      {
-        store: "FootStoreFR",
-        price: 47.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3409-451-pantalon-de-survetement-tottenham-2026-27-obsidian-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/i/i/ii3409-451.webp",
-        sizes: ["S", "XL", "2XL"],
-      },
     ],
   },
   {
@@ -189708,7 +189889,7 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104834105&a=3013769&m=65912",
@@ -189929,20 +190110,11 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 43.99,
-        priceMax: 44.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443804140&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii2011-504-field-purple-black-black-6a45a159b9932-1.webp&feedId=89032&k=2641f83105ad966eb84bb5d711b44cdd40530dce",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "S", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45443804140&a=3013769&m=65912" },
-          { size: "M", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45515787422&a=3013769&m=65912" },
-          { size: "L", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45443804141&a=3013769&m=65912" },
-          { size: "XL", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45443804142&a=3013769&m=65912" },
-          { size: "2XL", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45443804143&a=3013769&m=65912" },
-          { size: "3XL", price: 44.67, url: "https://www.awin1.com/pclick.php?p=45764484009&a=3013769&m=65912" },
-        ],
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -190523,7 +190695,7 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361830947&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dj8556-012-phsym004_new.webp&feedId=89032&k=75516f5d12c8878d0d53f47b43209bf6b0bea980",
-        sizes: ["XS", "M", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "XL", "2XL"],
       },
     ],
   },
@@ -190541,7 +190713,7 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361837804&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dv4834-071_a.webp&feedId=89032&k=faa810225704b2b9231e6c0d44048a741df2763d",
-        sizes: ["S", "XL"],
+        sizes: ["S", "M", "XL"],
       },
     ],
   },
@@ -190764,7 +190936,7 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361834213&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh4846-451-phsfm001_new.webp&feedId=89032&k=cb3f3e22a2d3e61c7d05910b68e7b7a06455df02",
-        sizes: ["S"],
+        sizes: ["S", "XL"],
       },
     ],
   },
@@ -190778,11 +190950,17 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 42.85,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485370854&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dx5691-133-phsfh001_new.webp&feedId=89032&k=3ff04a62aa4d09abc1d5b027b9d9ddeb53aef4b9",
-        sizes: ["M", "L"],
+        sizes: ["S", "M", "L"],
+        sizePrices: [
+          { size: "S", price: 84.0, url: "https://www.awin1.com/pclick.php?p=45361834042&a=3013769&m=65912" },
+          { size: "M", price: 42.85, url: "https://www.awin1.com/pclick.php?p=36485370854&a=3013769&m=65912" },
+          { size: "L", price: 42.85, url: "https://www.awin1.com/pclick.php?p=36485370855&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -191113,6 +191291,32 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-plumifero-nike-therma-fit-academy-pro-24-sdf-bleu",
+    brand: "Nike",
+    model: "Plumífero Nike Therma-FIT Academy Pro 24 SDF - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 125.0,
+        priceMax: 126.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41268511715&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7709-451-phsfh001-nw112724.webp&feedId=89032&k=47271a445259cac59c4f90c4e728e605da59d1cd",
+        sizes: ["M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "M", price: 126.0, url: "https://www.awin1.com/pclick.php?p=43745910906&a=3013769&m=65912" },
+          { size: "L", price: 125.0, url: "https://www.awin1.com/pclick.php?p=41268511715&a=3013769&m=65912" },
+          { size: "XL", price: 125.0, url: "https://www.awin1.com/pclick.php?p=43745910907&a=3013769&m=65912" },
+          { size: "2XL", price: 125.0, url: "https://www.awin1.com/pclick.php?p=43745910908&a=3013769&m=65912" },
+          { size: "3XL", price: 125.0, url: "https://www.awin1.com/pclick.php?p=43881590596&a=3013769&m=65912" },
+        ],
+      },
+    ],
+  },
+  {
     id: "nike-plumifero-nike-therma-fit-academy-pro-24-sdf-noir",
     brand: "Nike",
     model: "Plumífero Nike Therma-FIT Academy Pro 24 SDF - Noir",
@@ -191146,17 +191350,17 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 107.14,
+        price: 105.7,
         priceMax: 139.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43994226097&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44245761254&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7702-010-phsfh001-nw112724.webp&feedId=89032&k=cbc5f44b0cedf5f65bcbffa53ce1caf6d84931c7",
         sizes: ["S", "M", "XL"],
         sizePrices: [
           { size: "S", price: 107.14, url: "https://www.awin1.com/pclick.php?p=43994226097&a=3013769&m=65912" },
           { size: "M", price: 139.0, url: "https://www.awin1.com/pclick.php?p=39743209876&a=3013769&m=65912" },
-          { size: "XL", price: 107.14, url: "https://www.awin1.com/pclick.php?p=44245761254&a=3013769&m=65912" },
+          { size: "XL", price: 105.7, url: "https://www.awin1.com/pclick.php?p=44245761254&a=3013769&m=65912" },
         ],
       },
     ],
@@ -191194,6 +191398,24 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=37028567272&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh4916-455-phsfm001_new.webp&feedId=89032&k=c01171b1f5eba69b065697ba3370382cf299ffc7",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-plumifero-s-de-mujer-nike-therma-fit-academy-pro-24-sdf-noir",
+    brand: "Nike",
+    model: "Plumífero s de mujer Nike Therma-FIT Academy Pro 24 SDF - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 125.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45860423912&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7712-010-phsfh001-nw112724.webp&feedId=89032&k=779424ce62bca242470afd8db38bcf35f8ca5a45",
+        sizes: ["2XL"],
       },
     ],
   },
@@ -191383,6 +191605,42 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdo2434-495-polo-chelsea-fc-skate-2022-23-bleu-roi-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/d/o/do2434-495-phsym004-3144.jpg",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-polo-de-mujer-nike-dri-fit-academy-23-gris",
+    brand: "Nike",
+    model: "Polo de mujer Nike Dri-Fit Academy 23 - Gris",
+    colour: "Gris",
+    type: "polo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 42.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529358950&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr1348-012_a.webp&feedId=89032&k=523195595480e305d1ab6ef9e1aed1576c2016ed",
+        sizes: ["XS", "S", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-polo-de-mujer-nike-dri-fit-academy-23-noir",
+    brand: "Nike",
+    model: "Polo de mujer Nike Dri-Fit Academy 23 - Noir",
+    colour: "Noir",
+    type: "polo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 42.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45783097506&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dr1348-010_a.webp&feedId=89032&k=493abc4760bed6d204440835fbe4d1c6d4ef5497",
+        sizes: ["S", "XL"],
       },
     ],
   },
@@ -191585,6 +191843,45 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-polo-femme-nike-dri-fit-academy-23-gris",
+    brand: "Nike",
+    model: "Polo femme Nike Dri-Fit Academy 23 - Gris",
+    colour: "Gris",
+    type: "polo",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 42.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1348-012-polo-femme-nike-dri-fit-academy-23-gris-loup-noir-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr1348-012_a.webp",
+        sizes: ["XS", "S", "L", "XL"],
+      },
+    ],
+  },
+];
+
+const minedApparelProductsChunk48: ApparelProduct[] = [
+  {
+    id: "nike-polo-femme-nike-dri-fit-academy-23-noir",
+    brand: "Nike",
+    model: "Polo femme Nike Dri-Fit Academy 23 - Noir",
+    colour: "Noir",
+    type: "polo",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 42.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1348-010-polo-femme-nike-dri-fit-academy-23-noir-blanc-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr1348-010_a.webp",
+        sizes: ["S", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-polo-femme-nike-dri-fit-academy-23-rouge",
     brand: "Nike",
     model: "Polo femme Nike Dri-Fit Academy 23 - Rouge",
@@ -191611,7 +191908,7 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 29.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcv2673-453-polo-femme-nike-dri-fit-academy-obsidienne-blanc-bleu-royal-blanc",
@@ -191950,24 +192247,6 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     type: "polo",
     offers: [
       {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46027458875&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fz%2Ffz9759-410.webp&feedId=89032&k=5a8d24eec3aa10f6a444286da10c93ad28175bff",
-        sizes: ["2XL"],
-      },
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361874380&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fz%2Ffz9759-463.webp&feedId=89032&k=ccd3d38513e1bd757849ea998869760f3702a1e9",
-        sizes: ["2XL"],
-      },
-      {
         store: "FootStoreFR",
         price: 42.0,
         priceMax: 44.0,
@@ -192002,16 +192281,11 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 42.0,
-        priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027458876&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fz%2Ffz9759-012.webp&feedId=89032&k=96ebf869727f60e45521865572d5ab97f1a67b60",
-        sizes: ["S", "2XL"],
-        sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/pclick.php?p=45356586765&a=3013769&m=65912" },
-          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=46027458876&a=3013769&m=65912" },
-        ],
+        sizes: ["2XL"],
       },
       {
         store: "FootStoreFR",
@@ -192039,16 +192313,11 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 42.0,
-        priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45971954986&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fz%2Ffz9759-719.webp&feedId=89032&k=547c3e4ecc460434c6b81c5a290883cead098514",
-        sizes: ["S", "M"],
-        sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/pclick.php?p=45338294576&a=3013769&m=65912" },
-          { size: "M", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45971954986&a=3013769&m=65912" },
-        ],
+        sizes: ["M"],
       },
       {
         store: "FootStoreFR",
@@ -192135,15 +192404,6 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     type: "polo",
     offers: [
       {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45361874378&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fz%2Ffz9759-329.webp&feedId=89032&k=b6e35ed8e0989bd7db56f361306a92001235cd67",
-        sizes: ["S", "XL"],
-      },
-      {
         store: "FootStoreFR",
         price: 42.0,
         priceMax: 44.0,
@@ -192168,12 +192428,39 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 40.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6104-719-polo-nike-dri-fit-academy-jaune-noir-anthracite-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/c/w/cw6104-719-phsfh001.webp",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-polo-nike-dri-fit-academy-pro-24-bleu",
+    brand: "Nike",
+    model: "Polo Nike Dri-FIT Academy Pro 24 - Bleu",
+    colour: "Bleu",
+    type: "polo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 44.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43219405208&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fd7600-467_royal-blue-royal-blue-white-white_1.webp&feedId=89032&k=91c88f3b512bc7390ec2064d8449eba14025cbf5",
+        sizes: ["L"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 44.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7600-467-polo-nike-dri-fit-academy-pro-24-royal-blue-royal-blue-white-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7600-467_royal-blue-royal-blue-white-white_1.webp",
+        sizes: ["L"],
       },
     ],
   },
@@ -192184,15 +192471,6 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
     colour: "Bleu",
     type: "polo",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 42.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44353647825&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_dh9228-463-phsfm001-nw112724.webp&feedId=89032&k=fb79906dc7db9e0e2a8377d97b0ee4dd2c805a2d",
-        sizes: ["M"],
-      },
       {
         store: "FootStoreFR",
         price: 41.0,
@@ -192576,9 +192854,6 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk48: ApparelProduct[] = [
   {
     id: "nike-polo-nike-dynamic-fit-park20-rouge",
     brand: "Nike",
@@ -192646,6 +192921,33 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv8994-103-polo-psg-2025-26-white-midnight-navy",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hv8994-103-vpsrh001.webp",
         sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-polo-psg-2026-27-bleu",
+    brand: "Nike",
+    model: "Polo PSG 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "polo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 35.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45931746208&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_io4189-417_04.webp&feedId=89032&k=608fa4ac5c679443c11d85da68edfbd1c88a868f",
+        sizes: ["S", "M", "L", "XL"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 35.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio4189-417-polo-psg-2026-27-old-royal-university-red-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_io4189-417_04.webp",
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -192748,7 +193050,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 31.0,
+        price: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx4608-100-protege-tibias-nike-charge-blanc-noir-noir",
@@ -192790,7 +193092,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 24.0,
+        price: 25.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsp2164-417-protege-tibias-nike-charge-baltic-blue-noir-blanc",
@@ -192874,7 +193176,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsp2162-010-protege-tibias-nike-j-ce-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/p/sp2162-010-phcfz001.webp",
-        sizes: ["S", "M", "L"],
+        sizes: ["XS", "S", "M", "L"],
       },
     ],
   },
@@ -192949,7 +193251,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dn3611-100-phcfz001-nw112724.webp",
         sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 26.03, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
+          { size: "XS", price: 27.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
           { size: "S", price: 26.03, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
           { size: "M", price: 26.03, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
           { size: "L", price: 24.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
@@ -193437,24 +193739,6 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
           { size: "TU", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcu8089-410-sac-de-sport-nike-academy-team-bleu-nuit-noir-blanc-tu" },
           { size: "TU", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcu8090-410-sac-de-sport-nike-academy-team-bleu-nuit-noir-blanc-tu" },
         ],
-      },
-    ],
-  },
-  {
-    id: "nike-sac-de-sport-nike-academy-team-l-noir",
-    brand: "Nike",
-    model: "Sac de sport Nike Academy Team L - Noir",
-    colour: "Noir",
-    type: "bag",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 54.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcu8087-010-sac-de-sport-nike-academy-team-l-noir-noir-blanc-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/c/u/cu8087-010-phsfh000.webp",
-        sizes: ["TU"],
       },
     ],
   },
@@ -193980,6 +194264,24 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46037745940&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii6657-100-white-rush-blue-global-red-rush-blue-6aad027d99551-1.webp&feedId=89032&k=fc03dba931d3e9624bc306aa4381607dd5649c26",
         sizes: ["S", "M", "L", "XL", "3XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-short-chelsea-tercero-strike-2026-27-bleu",
+    brand: "Nike",
+    model: "Short Chelsea Tercero Strike 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 47.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46037745945&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii6852-495-rush-blue-white-white-6aad0284cc212-1.webp&feedId=89032&k=41bdff6473e5de57624077358b1dbf0d42b6f0b2",
+        sizes: ["XL", "2XL"],
       },
     ],
   },
@@ -194885,24 +195187,6 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-short-domicile-pays-bas-coupe-du-monde-2026-noir",
-    brand: "Nike",
-    model: "Short Domicile Pays-Bas Coupe du Monde 2026 - Noir",
-    colour: "Noir",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 43.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5423-010-short-domicile-pays-bas-coupe-du-monde-2026-black-hyper-crimson",
-        imageUrl: "https://cdn.blazimg.com/1800/product/i/b/ib5423-010.webp",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "nike-short-domicile-portugal-dri-fit-euro-2024-vert",
     brand: "Nike",
     model: "Short Domicile Portugal Dri-FIT Euro 2024 - Vert",
@@ -195049,7 +195333,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii1981-424-short-domicile-tottenham-2026-27-binary-blue-white-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/i/i/ii1981-424.webp",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "3XL"],
       },
     ],
   },
@@ -195196,20 +195480,29 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-short-domicilio-paises-bajos-coupe-du-monde-2026-noir",
+    id: "nike-short-dri-fit-nike-academy-noir",
     brand: "Nike",
-    model: "Short Domicilio Países Bajos Coupe du Monde 2026 - Noir",
+    model: "Short Dri-Fit Nike Academy+ - Noir",
     colour: "Noir",
     type: "shorts",
     offers: [
       {
         store: "FootStoreES",
-        price: 43.99,
+        price: 25.93,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45562787996&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fb%2Fib5423-010.webp&feedId=89032&k=95cef3caa2cb63c60e649fd9a9a98e2a92f2fe68",
-        sizes: ["XL"],
+        url: "https://www.awin1.com/pclick.php?p=45837215074&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-im3993-010-black-cool-grey-white-6a3c0657a57e4-1.webp&feedId=89032&k=8d8b1437b27cc9f88ccb0d8f09dd1942d9e31b5f",
+        sizes: ["M", "L"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 25.51,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim3993-010-short-dri-fit-nike-academy-plus-black-cool-grey-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-im3993-010-black-cool-grey-white-6a3c0657a57e4-1.webp",
+        sizes: ["M", "L"],
       },
     ],
   },
@@ -195442,7 +195735,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2011-504-short-exterieur-fc-barcelone-2026-27-field-purple-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii2011-504-field-purple-black-black-6a45a159b9932-1.webp",
-        sizes: ["S", "L", "XL", "2XL", "3XL"],
+        sizes: ["S", "L"],
       },
     ],
   },
@@ -195478,7 +195771,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5407-394-short-exterieur-france-coupe-du-monde-2026-igloo-monarch-monarch",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5407-394_04.webp",
-        sizes: ["XS", "S", "M", "L", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "2XL", "3XL"],
       },
     ],
   },
@@ -195554,6 +195847,9 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk49: ApparelProduct[] = [
   {
     id: "nike-short-exterieur-nigeria-coupe-du-monde-2026-blanc",
     brand: "Nike",
@@ -195729,11 +196025,10 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         priceMax: 44.67,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45931746195&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45115126540&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ib5407-394_04.webp&feedId=89032&k=a2ceba68e4fd5681b69ece5c8c483101c500a0d8",
-        sizes: ["XS", "S", "M", "L", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "2XL", "3XL"],
         sizePrices: [
-          { size: "XS", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45931746195&a=3013769&m=65912" },
           { size: "S", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45115126540&a=3013769&m=65912" },
           { size: "M", price: 44.67, url: "https://www.awin1.com/pclick.php?p=45123527351&a=3013769&m=65912" },
           { size: "L", price: 43.99, url: "https://www.awin1.com/pclick.php?p=45123527352&a=3013769&m=65912" },
@@ -196091,29 +196386,6 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-short-femme-nike-dri-fit-park-iii-blanc",
-    brand: "Nike",
-    model: "Short femme Nike Dri-FIT Park III - Blanc",
-    colour: "Blanc",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 22.0,
-        priceMax: 23.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6860-100-short-femme-nike-dri-fit-park-iii-blanc-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_bv6860-100-phsfh001-nw121124.webp",
-        sizes: ["S", "M"],
-        sizePrices: [
-          { size: "S", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6860-100-short-femme-nike-dri-fit-park-iii-blanc-noir" },
-          { size: "M", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6860-100-short-femme-nike-dri-fit-park-iii-blanc-noir" },
-        ],
-      },
-    ],
-  },
-  {
     id: "nike-short-femme-nike-dri-fit-strike-blanc",
     brand: "Nike",
     model: "Short femme Nike Dri-FIT Strike - Blanc",
@@ -196185,7 +196457,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.0,
+        price: 29.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8327-463-short-femme-nike-dri-fit-strike-np-bleu-royal-blanc",
@@ -196221,7 +196493,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 30.0,
+        price: 29.0,
         priceMax: 33.0,
         shipping: 6.99,
         currency: "EUR",
@@ -196229,7 +196501,7 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dh8327-657-phsfm001_new.webp",
         sizes: ["XS", "M"],
         sizePrices: [
-          { size: "XS", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8327-657-short-femme-nike-dri-fit-strike-np-rouge-universite-blanc" },
+          { size: "XS", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8327-657-short-femme-nike-dri-fit-strike-np-rouge-universite-blanc" },
           { size: "M", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8327-657-short-femme-nike-dri-fit-strike-np-rouge-universite-blanc" },
         ],
       },
@@ -196317,13 +196589,28 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih0463-010-short-femme-nike-strike-black-white-white-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih0463-010-black-white-white-white-1.webp",
-        sizes: ["XS", "S", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
-];
-
-const minedApparelProductsChunk49: ApparelProduct[] = [
+  {
+    id: "nike-short-femme-nike-strike-rouge",
+    brand: "Nike",
+    model: "Short femme Nike Strike - Rouge",
+    colour: "Rouge",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 32.37,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih0463-677-short-femme-nike-strike-team-red-bright-crimson-bright-crimson-bright-crimson",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih0463-677-team-red-bright-crimson-bright-crimson-bright-crimson-6aa56102d75ae-1.webp",
+        sizes: ["XS"],
+      },
+    ],
+  },
   {
     id: "nike-short-fourth-authentique-psg-jordan-2025-26-noir",
     brand: "Nike",
@@ -196667,11 +196954,18 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 17.85,
+        priceMax: 19.36,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-100-short-maille-nike-dri-fit-lge-iii-blanc-noir-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr0960-100-phsfm001-nw112724.webp",
-        sizes: ["M", "2XL"],
+        sizes: ["XS", "M", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 17.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-100-short-maille-nike-dri-fit-lge-iii-blanc-noir-noir" },
+          { size: "M", price: 17.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-100-short-maille-nike-dri-fit-lge-iii-blanc-noir-noir" },
+          { size: "XL", price: 19.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-100-short-maille-nike-dri-fit-lge-iii-blanc-noir-noir" },
+          { size: "2XL", price: 17.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-100-short-maille-nike-dri-fit-lge-iii-blanc-noir-noir" },
+        ],
       },
     ],
   },
@@ -196707,7 +197001,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-010-short-maille-nike-dri-fit-lge-iii-noir-blanc-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr0960-010-phsfm001-nw112724.webp",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -197108,6 +197402,42 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-short-nike-dri-fit-academy-pro-24-bleu",
+    brand: "Nike",
+    model: "Short Nike Dri-FIT Academy Pro 24 - Bleu",
+    colour: "Bleu",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 31.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7605-451-short-nike-dri-fit-academy-pro-24-obsidian-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7605-451_obsidian-white_1.webp",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-short-nike-dri-fit-academy-pro-24-noir",
+    brand: "Nike",
+    model: "Short Nike Dri-FIT Academy Pro 24 - Noir",
+    colour: "Noir",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 31.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7605-010-short-nike-dri-fit-academy-pro-24-black-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7605-010_black-white_2.webp",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
     id: "nike-short-nike-dri-fit-academy-rouge",
     brand: "Nike",
     model: "Short Nike Dri-FIT Academy - Rouge",
@@ -197274,11 +197604,17 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 17.85,
+        priceMax: 19.36,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-410-short-nike-dri-fit-league-iii-bleu-nuit-marine-blanc-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr0960-410-phsfm001-nw112724.webp",
-        sizes: ["XS"],
+        sizes: ["XS", "S", "M"],
+        sizePrices: [
+          { size: "XS", price: 17.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-410-short-nike-dri-fit-league-iii-bleu-nuit-marine-blanc-blanc" },
+          { size: "S", price: 19.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-410-short-nike-dri-fit-league-iii-bleu-nuit-marine-blanc-blanc" },
+          { size: "M", price: 19.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr0960-410-short-nike-dri-fit-league-iii-bleu-nuit-marine-blanc-blanc" },
+        ],
       },
     ],
   },
@@ -197485,7 +197821,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 30.0,
+        price: 29.0,
         priceMax: 31.0,
         shipping: 6.99,
         currency: "EUR",
@@ -197493,7 +197829,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dh8128-719-phsfm001_new.webp",
         sizes: ["S", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8128-719-short-nike-dri-fit-strike-jaune-noir" },
+          { size: "S", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8128-719-short-nike-dri-fit-strike-jaune-noir" },
           { size: "XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8128-719-short-nike-dri-fit-strike-jaune-noir" },
           { size: "2XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8128-719-short-nike-dri-fit-strike-jaune-noir" },
         ],
@@ -197530,7 +197866,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh8128-010-short-nike-dri-fit-strike-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dh8128-010-phsfm001_new.webp",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["S", "M", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -198076,11 +198412,16 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 34.0,
+        priceMax: 35.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529731051&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fn%2Ffn2374-010.webp&feedId=89032&k=59e198f424d95790a5f33d7270fe11254724f398",
-        sizes: ["S"],
+        sizes: ["S", "M"],
+        sizePrices: [
+          { size: "S", price: 34.0, url: "https://www.awin1.com/pclick.php?p=42529731051&a=3013769&m=65912" },
+          { size: "M", price: 35.0, url: "https://www.awin1.com/pclick.php?p=46014578992&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -198125,7 +198466,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn2374-010-short-pour-proteger-des-fuites-femme-nike-pro-black-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/f/n/fn2374-010.webp",
-        sizes: ["S"],
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -198141,9 +198482,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         price: 67.99,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44746186532&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44746186533&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii3339-417_05.webp&feedId=89032&k=374b6e824f7c9b7afecf544aa5d7132cafd7261c",
-        sizes: ["XS", "M", "XL", "2XL"],
+        sizes: ["S", "M", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -198152,7 +198493,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3339-417-short-psg-2026-27-old-royal-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ii3339-417_05.webp",
-        sizes: ["XS", "M", "XL", "2XL"],
+        sizes: ["S", "M", "XL"],
       },
     ],
   },
@@ -198229,10 +198570,11 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         priceMax: 39.25,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45137698776&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45338296540&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_ii2611-010_04.webp&feedId=89032&k=c51de28dc0a65e679ec11b8945e09650fc623fb5",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
+          { size: "XS", price: 38.39, url: "https://www.awin1.com/pclick.php?p=45338296540&a=3013769&m=65912" },
           { size: "S", price: 38.39, url: "https://www.awin1.com/pclick.php?p=45137698776&a=3013769&m=65912" },
           { size: "M", price: 38.39, url: "https://www.awin1.com/pclick.php?p=45137698777&a=3013769&m=65912" },
           { size: "L", price: 38.39, url: "https://www.awin1.com/pclick.php?p=45137698778&a=3013769&m=65912" },
@@ -198249,8 +198591,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2611-010-short-psg-strike-2026-27-black-global-red-global-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ii2611-010_04.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
         sizePrices: [
+          { size: "XS", price: 38.39, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2611-010-short-psg-strike-2026-27-black-global-red-global-red" },
           { size: "S", price: 38.39, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2611-010-short-psg-strike-2026-27-black-global-red-global-red" },
           { size: "M", price: 38.39, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2611-010-short-psg-strike-2026-27-black-global-red-global-red" },
           { size: "L", price: 38.39, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2611-010-short-psg-strike-2026-27-black-global-red-global-red" },
@@ -198339,6 +198682,24 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii6657-100-short-third-chelsea-stadium-2026-27-white-rush-blue-global-red-rush-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii6657-100-white-rush-blue-global-red-rush-blue-6aad027d99551-1.webp",
         sizes: ["S", "M", "L", "XL", "3XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-short-third-chelsea-strike-2026-27-bleu",
+    brand: "Nike",
+    model: "Short Third Chelsea Strike 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 47.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii6852-495-short-third-chelsea-strike-2026-27-rush-blue-white-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii6852-495-rush-blue-white-white-6aad0284cc212-1.webp",
+        sizes: ["XL", "2XL"],
       },
     ],
   },
@@ -198636,6 +198997,24 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-short-third-tottenham-2026-27-violet",
+    brand: "Nike",
+    model: "Short Third Tottenham 2026/27 - Violet",
+    colour: "Violet",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 43.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii6661-523-short-third-tottenham-2026-27-psychic-purple-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii6661-523-psychic-purple-blanc-6aa55fe8a5630-1.webp",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
     id: "nike-short-tottenham-2022-23-bleu",
     brand: "Nike",
     model: "Short Tottenham 2022/23 - Bleu",
@@ -198773,9 +199152,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         price: 55.99,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45562788204&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45562788203&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii3424-451-obsidian-blanc-6a763920392e2-1.webp&feedId=89032&k=259e22c504efd329a1a06ce7cb27b89aaae4f684",
-        sizes: ["M"],
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -198918,6 +199297,24 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44444983848&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm2870-346-phsfm001-ss25.webp&feedId=89032&k=0226fdb2ae1db4f4c6390a13888bebc2df85c627",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-sudadera-con-capucha-chelsea-2026-27-bleu",
+    brand: "Nike",
+    model: "Sudadera con capucha Chelsea 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 55.99,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45888246010&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii3419-452.webp&feedId=89032&k=1a198405ac57889f8babc3e603ee5dd4a2b110f7",
+        sizes: ["3XL"],
       },
     ],
   },
@@ -199219,6 +199616,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk50: ApparelProduct[] = [
   {
     id: "nike-sudadera-con-capucha-nike-cr7-blanc",
     brand: "Nike",
@@ -199458,11 +199858,20 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829754403&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fc%2Fdc9075-614-vpsrh001.webp&feedId=89032&k=5e0e8cb3ed0e7cec8d413922b5ceb437884b6e7f",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45361827656&a=3013769&m=65912" },
+          { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43829754403&a=3013769&m=65912" },
+          { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43829754404&a=3013769&m=65912" },
+          { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43829754405&a=3013769&m=65912" },
+          { size: "XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43829754406&a=3013769&m=65912" },
+          { size: "2XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43829754407&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -199496,9 +199905,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         price: 59.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39382735886&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43856274381&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cw6894-101-phsfh001_new.webp&feedId=89032&k=a9aea9567ddea11b63566013fb2918173bc21d4a",
-        sizes: ["L", "XL"],
+        sizes: ["XL"],
       },
     ],
   },
@@ -199516,7 +199925,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104831269&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cw6894-451-phsfh001_new.webp&feedId=89032&k=f82da2dceff906a0786337871f25d4808e25856c",
-        sizes: ["S"],
+        sizes: ["S", "M"],
       },
       {
         store: "FootStoreES",
@@ -199569,7 +199978,7 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40178195341&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cw6887-063-phsfh001_new.webp&feedId=89032&k=b129dd760e409aedb25fbd92886f77676240f513",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "L", "XL", "2XL"],
       },
       {
         store: "FootStoreES",
@@ -199596,15 +200005,6 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104831272&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cw6894-010-phsfh001_new.webp&feedId=89032&k=e5500ad3b09652660c99d2aa3c2923c6c7a3d2c9",
-        sizes: ["S"],
-      },
-      {
-        store: "FootStoreES",
-        price: 64.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41035158312&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_cw6887-010-phsfh001_new.webp&feedId=89032&k=e1d9c090803090847065ab6ac0a26e53ebe19de2",
         sizes: ["S"],
       },
     ],
@@ -199903,9 +200303,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
         price: 55.99,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46050201451&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45931746717&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fi%2Fii3417-410.webp&feedId=89032&k=a8f16f29c716efb2faf9d12e4bd9a82f065c5168",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["XS", "M", "XL"],
       },
     ],
   },
@@ -200157,9 +200557,6 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk50: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-cuello-redondo-nike-fleece-park20-bleu",
     brand: "Nike",
@@ -200568,7 +200965,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5929-480-sweashirt-a-capuche-france-tech-fleece-windrunner-coupe-du-monde-2026-game-royal-metallic-copper",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ib5929-480_04.webp",
-        sizes: ["S", "M", "L"],
+        sizes: ["S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -200688,7 +201085,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6894-101-sweat-a-capuche-nike-fleece-park20-blanc-blanc-gris-loup",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_cw6894-101-phsfh001_new.jpg",
-        sizes: ["L", "XL", "2XL"],
+        sizes: ["XL", "2XL"],
       },
     ],
   },
@@ -200759,7 +201156,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6887-063-sweat-a-capuche-nike-fleece-park20-gris-fonce-chine-noir-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_cw6887-063-phsfh001_new.jpg",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "L", "XL", "2XL"],
       },
       {
         store: "FootStoreFR",
@@ -201008,6 +201405,24 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm2870-346-sweatshirt-a-capuche-chelsea-2025-26-outdoor-green-outdoor-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hm2870-346-phsfm001-ss25.webp",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-sweatshirt-a-capuche-chelsea-2026-27-bleu",
+    brand: "Nike",
+    model: "Sweatshirt à capuche Chelsea 2026/27 - Bleu",
+    colour: "Bleu",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 55.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3419-452-sweatshirt-a-capuche-chelsea-2026-27-bright-blue-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/i/i/ii3419-452.webp",
+        sizes: ["3XL"],
       },
     ],
   },
@@ -201440,7 +201855,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 83.0,
+        price: 82.0,
         priceMax: 84.0,
         shipping: 6.99,
         currency: "EUR",
@@ -201449,8 +201864,8 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
-          { size: "M", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
-          { size: "L", price: 83.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
+          { size: "M", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
+          { size: "L", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
           { size: "XL", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
           { size: "2XL", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7734-010-sweatshirt-a-capuche-nike-dri-fit-si-black-white" },
         ],
@@ -201522,7 +201937,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
           { size: "S", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-407-sweatshirt-a-capuche-nike-f-c-bleu-marine-blanc-noir" },
           { size: "M", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-407-sweatshirt-a-capuche-nike-f-c-bleu-marine-blanc-noir" },
           { size: "L", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-407-sweatshirt-a-capuche-nike-f-c-bleu-marine-blanc-noir" },
-          { size: "XL", price: 59.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-407-sweatshirt-a-capuche-nike-f-c-bleu-marine-blanc-noir" },
+          { size: "XL", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-407-sweatshirt-a-capuche-nike-f-c-bleu-marine-blanc-noir" },
           { size: "2XL", price: 61.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-407-sweatshirt-a-capuche-nike-f-c-bleu-marine-blanc-noir" },
         ],
       },
@@ -201598,11 +202013,20 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
+        priceMax: 43.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/d/c/dc9075-614-vpsrh001.jpg",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir" },
+          { size: "S", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir" },
+          { size: "M", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir" },
+          { size: "XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir" },
+          { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9075-614-sweatshirt-a-capuche-nike-f-c-mystic-hibiscus-blanc-noir" },
+        ],
       },
     ],
   },
@@ -201616,11 +202040,18 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 76.0,
+        priceMax: 77.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9024-010-sweatshirt-a-capuche-nike-fleece-noir-rouge-vif-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dc9024-010-phsfm001_new.jpg",
         sizes: ["S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "S", price: 76.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9024-010-sweatshirt-a-capuche-nike-fleece-noir-rouge-vif-blanc" },
+          { size: "M", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9024-010-sweatshirt-a-capuche-nike-fleece-noir-rouge-vif-blanc" },
+          { size: "L", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9024-010-sweatshirt-a-capuche-nike-fleece-noir-rouge-vif-blanc" },
+          { size: "XL", price: 77.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc9024-010-sweatshirt-a-capuche-nike-fleece-noir-rouge-vif-blanc" },
+        ],
       },
     ],
   },
@@ -201742,7 +202173,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3417-410-sweatshirt-a-capuche-psg-club-2026-27-midnight-navy-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/i/i/ii3417-410.webp",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["XS", "M", "XL"],
       },
     ],
   },
@@ -201990,7 +202421,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3424-451-sweatshirt-atletico-madrid-2026-27-obsidian-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii3424-451-obsidian-blanc-6a763920392e2-1.webp",
-        sizes: ["M"],
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -202220,6 +202651,24 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6298-397-sweatshirt-nigeria-club-coupe-du-monde-2026-pro-green-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib6298-397-pro-green-white-6a4ce44791af2-1.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-sweatshirt-nike-academy-winter-warrior-noir",
+    brand: "Nike",
+    model: "Sweatshirt Nike Academy Winter Warrior - Noir",
+    colour: "Noir",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 64.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb6816-010-sweatshirt-nike-academy-winter-warrior-noir-anthracite-argent",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fb6816-010-vpsrh001_s23.jpg",
+        sizes: ["2XL"],
       },
     ],
   },
@@ -202521,6 +202970,24 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih2179-486-t-shirt-angleterre-coupe-du-monde-2026-work-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih2179-486-work-blue-6a4ce7a9d2234-1.webp",
         sizes: ["2XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-t-shirt-angleterre-primary-coupe-du-monde-2026-blanc",
+    brand: "Nike",
+    model: "T-shirt Angleterre Primary Coupe du Monde 2026 - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 43.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6228-100-t-shirt-angleterre-primary-coupe-du-monde-2026-blanc-obsidian",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib6228-100-blanc-obsidian-6a83133a27a68-1.webp",
+        sizes: ["S", "2XL"],
       },
     ],
   },
@@ -202928,6 +203395,9 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk51: ApparelProduct[] = [
   {
     id: "nike-t-shirt-fc-barcelone-2025-26-bleu",
     brand: "Nike",
@@ -203301,6 +203771,24 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-t-shirt-femme-inter-milan-blanc",
+    brand: "Nike",
+    model: "T-shirt femme Inter Milan - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 32.37,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fir2230-100-t-shirt-femme-inter-milan-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ir2230-100-blanc-6a5a5b6eeeaa8-1.webp",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "nike-t-shirt-femme-nigeria-coupe-du-monde-2026-noir",
     brand: "Nike",
     model: "T-shirt femme Nigeria Coupe du Monde 2026 - Noir",
@@ -203390,16 +203878,16 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 34.0,
-        priceMax: 38.0,
+        priceMax: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cw6967-010-phsfh001_new.webp",
         sizes: ["XS", "S", "M", "XL"],
         sizePrices: [
-          { size: "XS", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
-          { size: "S", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
-          { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
+          { size: "XS", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
+          { size: "S", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
+          { size: "M", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
           { size: "XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-010-t-shirt-femme-nike-fit-park20-noir-blanc" },
         ],
       },
@@ -203415,7 +203903,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 34.0,
-        priceMax: 38.0,
+        priceMax: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc",
@@ -203424,7 +203912,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc" },
           { size: "S", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc" },
-          { size: "M", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc" },
+          { size: "M", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc" },
           { size: "L", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc" },
           { size: "XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6967-657-t-shirt-femme-nike-fit-park20-rouge-universite-blanc" },
         ],
@@ -203504,6 +203992,24 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-t-shirt-femme-pays-bas-coupe-du-monde-2026-blanc",
+    brand: "Nike",
+    model: "T-shirt femme Pays-Bas Coupe du Monde 2026 - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 24.72,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih2242-100-t-shirt-femme-pays-bas-coupe-du-monde-2026-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih2242-100-white-6a4ce8795c31e-1.webp",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
     id: "nike-t-shirt-femme-pays-bas-coupe-du-monde-2026-orange",
     brand: "Nike",
     model: "T-shirt femme Pays-Bas Coupe du Monde 2026 - Orange",
@@ -203571,7 +204077,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii2377-010-t-shirt-femme-psg-strike-2026-27-black-hyper-royal-global-red-global-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii2377-010-black-hyper-royal-global-red-global-red-6a2fbbb03a4d0-1.webp",
-        sizes: ["XS", "S", "M", "L"],
+        sizes: ["XS", "S", "M"],
       },
     ],
   },
@@ -203641,7 +204147,7 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2261-068-t-shirt-france-coupe-du-monde-2026-iron-grey",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq2261-068-iron-grey-6a01e09399a71-1.webp",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["M", "L", "XL"],
       },
     ],
   },
@@ -203899,9 +204405,6 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk51: ApparelProduct[] = [
   {
     id: "nike-t-shirt-nigeria-coupe-du-monde-2026-noir",
     brand: "Nike",
@@ -204035,7 +204538,7 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 36.0,
+        price: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-100-t-shirt-nike-dynamic-fit-park20-blanc-noir",
@@ -204089,15 +204592,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 26.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0881-010-t-shirt-nike-dynamic-fit-park20-noir-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cz0881-010-phsfh001_new.webp",
-        sizes: ["M", "XL"],
-      },
-      {
-        store: "FootStoreFR",
         price: 29.0,
         priceMax: 30.0,
         shipping: 6.99,
@@ -204114,15 +204608,15 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 34.0,
-        priceMax: 36.0,
+        priceMax: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-010-t-shirt-nike-dynamic-fit-park20-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cw6936-010-phsfh001_new.webp",
         sizes: ["M", "L", "XL"],
         sizePrices: [
-          { size: "M", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-010-t-shirt-nike-dynamic-fit-park20-noir-blanc" },
-          { size: "L", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-010-t-shirt-nike-dynamic-fit-park20-noir-blanc" },
+          { size: "M", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-010-t-shirt-nike-dynamic-fit-park20-noir-blanc" },
+          { size: "L", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-010-t-shirt-nike-dynamic-fit-park20-noir-blanc" },
           { size: "XL", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6936-010-t-shirt-nike-dynamic-fit-park20-noir-blanc" },
         ],
       },
@@ -204242,24 +204736,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0881-719-t-shirt-nike-park20-jaune-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cz0881-719-phsfh001_new.webp",
         sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "nike-t-shirt-nike-park20-rouge",
-    brand: "Nike",
-    model: "T-shirt Nike Park20 - Rouge",
-    colour: "Rouge",
-    type: "tshirt",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 26.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0881-657-t-shirt-nike-park20-rouge-universite-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cz0881-657-phsfh001_new.webp",
-        sizes: ["S", "L"],
       },
     ],
   },
@@ -204440,6 +204916,30 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq2266-068-t-shirt-pays-bas-coupe-du-monde-2026-iron-grey",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq2266-068-iron-grey-6a7639a7413b3-1.webp",
         sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-t-shirt-pays-bas-coupe-du-monde-2026-orange",
+    brand: "Nike",
+    model: "T-shirt Pays-Bas Coupe du Monde 2026 - Orange",
+    colour: "Orange",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 23.99,
+        priceMax: 24.72,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih2189-819-t-shirt-pays-bas-coupe-du-monde-2026-safety-orange",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih2189-819-safety-orange-6a4ce9f32bc34-1.webp",
+        sizes: ["S", "M", "L"],
+        sizePrices: [
+          { size: "S", price: 24.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih2189-819-t-shirt-pays-bas-coupe-du-monde-2026-safety-orange" },
+          { size: "M", price: 24.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih2189-819-t-shirt-pays-bas-coupe-du-monde-2026-safety-orange" },
+          { size: "L", price: 23.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih2189-819-t-shirt-pays-bas-coupe-du-monde-2026-safety-orange" },
+        ],
       },
     ],
   },
@@ -204690,6 +205190,24 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn5332-700-t-shirt-psg-logo-2023-24-saturn-gold-sail",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_fn5332-700-vpsrh001.jpg",
         sizes: ["XS", "M"],
+      },
+    ],
+  },
+  {
+    id: "nike-t-shirt-psg-paname-2026-27-blanc",
+    brand: "Nike",
+    model: "T-shirt PSG Paname 2026/27 - Blanc",
+    colour: "Blanc",
+    type: "tshirt",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 24.72,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq5111-101-t-shirt-psg-paname-2026-27-white-old-royal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq5111-101-white-old-royal-6a45a2da80429-1.webp",
+        sizes: ["S", "M", "XL"],
       },
     ],
   },
@@ -205129,6 +205647,24 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45698875230&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii6856-010-black-black-white-6a45a2c3b5257-3.webp&feedId=89032&k=15b844c606b4b4bc531d72449aa6aba326e60ef9",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-tercera-corto-tottenham-2026-27-violet",
+    brand: "Nike",
+    model: "Tercera corto Tottenham 2026/27 - Violet",
+    colour: "Violet",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 44.67,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061468412&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-ii6661-523-psychic-purple-blanc-6aa55fe8a5630-1.webp&feedId=89032&k=4b637568157ba97b2643bcdef0080492731000a9",
+        sizes: ["M"],
       },
     ],
   },
@@ -205749,20 +206285,11 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 86.35,
-        priceMax: 93.64,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_ih1757-369_04.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
-        sizePrices: [
-          { size: "S", price: 86.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold" },
-          { size: "M", price: 86.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold" },
-          { size: "L", price: 86.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold" },
-          { size: "XL", price: 86.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold" },
-          { size: "2XL", price: 86.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold" },
-          { size: "3XL", price: 93.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1757-369-veste-de-survetement-bresil-kmc-coupe-du-monde-2026-geode-teal-light-menta-midwest-gold" },
-        ],
+        sizes: ["S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -206261,6 +206788,24 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-veste-de-survetement-femme-fc-barcelone-bleu",
+    brand: "Nike",
+    model: "Veste de survêtement femme FC Barcelone - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 107.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3346-498-veste-de-survetement-femme-fc-barcelone-blackened-blue-mineral-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii3346-498-blackened-blue-mineral-yellow-6a68c8a9db293-4.webp",
+        sizes: ["XS", "L"],
+      },
+    ],
+  },
+  {
     id: "nike-veste-de-survetement-femme-nike-dri-fit-academy-23-bleu",
     brand: "Nike",
     model: "Veste de survêtement femme Nike Dri-Fit Academy 23 - Bleu",
@@ -206278,17 +206823,12 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 37.0,
-        priceMax: 38.0,
+        price: 38.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1686-451-veste-de-survetement-femme-nike-dri-fit-academy-23-obsidienne-bleu-royal-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dr1686-451_obsidienne-bleu-royal-blanc_1.jpg",
         sizes: ["XS", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1686-451-veste-de-survetement-femme-nike-dri-fit-academy-23-obsidienne-bleu-royal-blanc" },
-          { size: "2XL", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1686-451-veste-de-survetement-femme-nike-dri-fit-academy-23-obsidienne-bleu-royal-blanc" },
-        ],
       },
     ],
   },
@@ -206348,6 +206888,24 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9826-463-veste-de-survetement-femme-nike-dri-fit-academy-25-royal-blue-midnight-navy-white-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz9826-463-vpsrh001.webp",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-veste-de-survetement-femme-nike-dri-fit-academy-pro-24-bleu",
+    brand: "Nike",
+    model: "Veste de survêtement femme Nike Dri-FIT Academy Pro 24 - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 53.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7683-455-veste-de-survetement-femme-nike-dri-fit-academy-pro-24-obsidian-obsidian-obsidian-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7683-455_obsidian-obsidian-obsidian-white_1.webp",
         sizes: ["S"],
       },
     ],
@@ -206485,31 +207043,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-veste-de-survetement-france-energy-coupe-du-monde-2026-blanc",
-    brand: "Nike",
-    model: "Veste de survêtement France Energy Coupe du Monde 2026 - Blanc",
-    colour: "Blanc",
-    type: "jacket",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 79.44,
-        priceMax: 81.79,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1875-393-veste-de-survetement-france-energy-coupe-du-monde-2026-igloo-noir-dark-russet-metallic-copper",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ih1875-393-igloo-noir-dark-russet-metallic-copper-6a2aea0cea989-1.webp",
-        sizes: ["M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "M", price: 79.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1875-393-veste-de-survetement-france-energy-coupe-du-monde-2026-igloo-noir-dark-russet-metallic-copper" },
-          { size: "L", price: 81.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1875-393-veste-de-survetement-france-energy-coupe-du-monde-2026-igloo-noir-dark-russet-metallic-copper" },
-          { size: "XL", price: 79.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1875-393-veste-de-survetement-france-energy-coupe-du-monde-2026-igloo-noir-dark-russet-metallic-copper" },
-          { size: "2XL", price: 81.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih1875-393-veste-de-survetement-france-energy-coupe-du-monde-2026-igloo-noir-dark-russet-metallic-copper" },
-        ],
-      },
-    ],
-  },
-  {
     id: "nike-veste-de-survetement-france-kmc-coupe-du-monde-2026-noir",
     brand: "Nike",
     model: "Veste de survêtement France KMC Coupe du Monde 2026 - Noir",
@@ -206527,6 +207060,9 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk52: ApparelProduct[] = [
   {
     id: "nike-veste-de-survetement-france-kmc-coupe-du-monde-2026-vert",
     brand: "Nike",
@@ -206636,7 +207172,7 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
           { size: "S", price: 75.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
-          { size: "M", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
+          { size: "M", price: 75.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
           { size: "L", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
           { size: "XL", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
           { size: "2XL", price: 75.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio3444-010-veste-de-survetement-inter-milan-noir-lyon-blue-university-gold" },
@@ -206814,6 +207350,24 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-veste-de-survetement-nike-academy-vert",
+    brand: "Nike",
+    model: "Veste de survêtement Nike Academy - Vert",
+    colour: "Vert",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 35.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq1791-328-veste-de-survetement-nike-academy-deep-jungle-noir-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fq1791-328_deep-jungle-noir-noir_1.webp",
+        sizes: ["2XL"],
+      },
+    ],
+  },
+  {
     id: "nike-veste-de-survetement-nike-dri-fit-2024-bleu",
     brand: "Nike",
     model: "Veste de survêtement Nike Dri-FIT 2024 - Bleu",
@@ -206841,11 +207395,20 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 65.82,
+        priceMax: 72.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-fd7727-012-wolf-grey-black-wolf-grey-white-1.webp",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 72.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white" },
+          { size: "S", price: 65.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white" },
+          { size: "M", price: 65.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white" },
+          { size: "L", price: 65.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white" },
+          { size: "XL", price: 65.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white" },
+          { size: "2XL", price: 65.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7727-012-veste-de-survetement-nike-dri-fit-2024-wolf-grey-black-wolf-grey-white" },
+        ],
       },
     ],
   },
@@ -206907,6 +207470,24 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-463-veste-de-survetement-nike-dri-fit-academy-2023-bleu-royal-obsidienne-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dr1681-463-phsfm001_new.jpg",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-veste-de-survetement-nike-dri-fit-academy-23-blanc",
+    brand: "Nike",
+    model: "Veste de survêtement Nike Dri-Fit Academy 23 - Blanc",
+    colour: "Blanc",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 44.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1710-100-veste-de-survetement-nike-dri-fit-academy-23-blanc-noir-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr1710-100-phsfm001-ss25.webp",
+        sizes: ["XS"],
       },
     ],
   },
@@ -206973,6 +207554,15 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
+        price: 44.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-657-veste-de-survetement-nike-dri-fit-academy-23-rouge-universite-rouge-sportif-blanc-blanc",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_dr1681-657-phsfm001-nw112724.jpg",
+        sizes: ["S"],
+      },
+      {
+        store: "FootStoreFR",
         price: 46.0,
         shipping: 6.99,
         currency: "EUR",
@@ -207001,7 +207591,7 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-329-veste-de-survetement-nike-dri-fit-academy-23-vert-flash-blanc-vert" },
           { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-329-veste-de-survetement-nike-dri-fit-academy-23-vert-flash-blanc-vert" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-329-veste-de-survetement-nike-dri-fit-academy-23-vert-flash-blanc-vert" },
+          { size: "L", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-329-veste-de-survetement-nike-dri-fit-academy-23-vert-flash-blanc-vert" },
           { size: "XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-329-veste-de-survetement-nike-dri-fit-academy-23-vert-flash-blanc-vert" },
           { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-329-veste-de-survetement-nike-dri-fit-academy-23-vert-flash-blanc-vert" },
         ],
@@ -207041,7 +207631,7 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-410-veste-de-survetement-nike-dri-fit-academy-25-midnight-navy-royal-blue-white-white",
@@ -207050,7 +207640,7 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-463-veste-de-survetement-nike-dri-fit-academy-25-royal-blue-midnight-navy-white-white",
@@ -207118,11 +207708,11 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz9824-719-vpsrh001.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
+          { size: "S", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
           { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
           { size: "L", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
           { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
+          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9824-719-veste-de-survetement-nike-dri-fit-academy-25-tour-yellow-black-white-black" },
         ],
       },
     ],
@@ -207137,7 +207727,7 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 44.0,
-        priceMax: 45.0,
+        priceMax: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white",
@@ -207145,10 +207735,10 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
-          { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
+          { size: "M", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
           { size: "L", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
           { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
-          { size: "2XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
+          { size: "2XL", price: 46.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz9837-010-veste-de-survetement-nike-dri-fit-academy-25-black-wolf-grey-white-white" },
         ],
       },
       {
@@ -207228,6 +207818,42 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr1681-452-veste-de-survetement-nike-dri-fit-academy-bleu-jaune",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr1681-452-phsfm001-ss25.webp",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-veste-de-survetement-nike-dri-fit-academy-pro-24-bleu",
+    brand: "Nike",
+    model: "Veste de survêtement Nike Dri-FIT Academy Pro 24 - Bleu",
+    colour: "Bleu",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 53.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7681-455-veste-de-survetement-nike-dri-fit-academy-pro-24-obsidian-obsidian-obsidian-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fd7681-455_obsidian-obsidian-obsidian-white_1.webp",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "nike-veste-de-survetement-nike-dri-fit-academy-pro-24-noir",
+    brand: "Nike",
+    model: "Veste de survêtement Nike Dri-FIT Academy Pro 24 - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 53.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffd7681-010-veste-de-survetement-nike-dri-fit-academy-pro-24-black-black-black-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/f/d/fd7681-010.webp",
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -207414,11 +208040,11 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-if1528-410-midnight-navy-midnight-navy-pink-foam-4.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "XS", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
+          { size: "XS", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
           { size: "S", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
           { size: "M", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
           { size: "L", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
-          { size: "XL", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
+          { size: "XL", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
           { size: "2XL", price: 80.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fif1528-410-veste-de-survetement-nike-strike-midnight-navy-midnight-navy-pink-foam" },
         ],
       },
@@ -207611,9 +208237,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk52: ApparelProduct[] = [
   {
     id: "nike-veste-de-survetement-pays-bas-energy-coupe-du-monde-2026-blanc",
     brand: "Nike",
@@ -208114,7 +208737,7 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fii3239-434-veste-de-survetement-tottenham-2026-27-light-blue-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ii3239-434-light-blue-blanc-6aa55f1de92c6-1.webp",
-        sizes: ["XS"],
+        sizes: ["XS", "S"],
       },
     ],
   },
@@ -208271,19 +208894,11 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 87.99,
-        priceMax: 89.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6259-100-veste-femme-angleterre-coupe-du-monde-2026-blanc-obsidian-speed-red-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib6259-100-blanc-obsidian-speed-red-blanc-6a7638ab5af50-1.webp",
         sizes: ["XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "XS", price: 87.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6259-100-veste-femme-angleterre-coupe-du-monde-2026-blanc-obsidian-speed-red-blanc" },
-          { size: "S", price: 87.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6259-100-veste-femme-angleterre-coupe-du-monde-2026-blanc-obsidian-speed-red-blanc" },
-          { size: "M", price: 89.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6259-100-veste-femme-angleterre-coupe-du-monde-2026-blanc-obsidian-speed-red-blanc" },
-          { size: "L", price: 87.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6259-100-veste-femme-angleterre-coupe-du-monde-2026-blanc-obsidian-speed-red-blanc" },
-          { size: "XL", price: 87.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib6259-100-veste-femme-angleterre-coupe-du-monde-2026-blanc-obsidian-speed-red-blanc" },
-        ],
       },
     ],
   },
@@ -208329,7 +208944,7 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dc8039-010-phsfm001_new.webp",
         sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
-          { size: "XS", price: 89.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc8039-010-veste-femme-nike-repel-park20-noir-blanc" },
+          { size: "XS", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc8039-010-veste-femme-nike-repel-park20-noir-blanc" },
           { size: "S", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc8039-010-veste-femme-nike-repel-park20-noir-blanc" },
           { size: "M", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc8039-010-veste-femme-nike-repel-park20-noir-blanc" },
           { size: "L", price: 99.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdc8039-010-veste-femme-nike-repel-park20-noir-blanc" },
@@ -208352,7 +208967,7 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45177322989&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_iv3288-452_04.webp&feedId=89032&k=c0df812a6f945c9eaad04decd3310ba3f61e9deb",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -208361,7 +208976,7 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiv3288-452-veste-full-zip-chelsea-fc-2026-27-bright-blue-pitch-blue-midwest-gold",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_iv3288-452_04.webp",
-        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -208965,8 +209580,9 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0991-100-veste-nike-dri-fit-academy-awf-blanc-jaune",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_cz0991-100-phsfm001_nw.jpg",
-        sizes: ["S", "M"],
+        sizes: ["XS", "S", "M"],
         sizePrices: [
+          { size: "XS", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0991-100-veste-nike-dri-fit-academy-awf-blanc-jaune" },
           { size: "S", price: 37.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0991-100-veste-nike-dri-fit-academy-awf-blanc-jaune" },
           { size: "M", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0991-100-veste-nike-dri-fit-academy-awf-blanc-jaune" },
         ],
@@ -209046,6 +209662,24 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-veste-nike-fc-noir",
+    brand: "Nike",
+    model: "Veste  Nike FC - Noir",
+    colour: "Noir",
+    type: "jacket",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 50.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz0999-010-veste-nike-fc-noir-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cz0999-010-phsfm001_new.webp",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
     id: "nike-veste-nike-repel-park-bleu",
     brand: "Nike",
     model: "Veste Nike Repel Park - Bleu",
@@ -209073,11 +209707,17 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 44.0,
+        priceMax: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6881-719-veste-nike-repel-park-jaune-noir-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/n/i/nike_bv6881-719-phsfh001-nw112724.jpg",
         sizes: ["L", "XL", "2XL"],
+        sizePrices: [
+          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6881-719-veste-nike-repel-park-jaune-noir-noir" },
+          { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6881-719-veste-nike-repel-park-jaune-noir-noir" },
+          { size: "2XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbv6881-719-veste-nike-repel-park-jaune-noir-noir" },
+        ],
       },
     ],
   },
@@ -209121,8 +209761,8 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_cw6156-451-phsfh001_new.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 115.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
-          { size: "M", price: 127.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
+          { size: "S", price: 114.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
+          { size: "M", price: 128.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
           { size: "L", price: 110.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
           { size: "XL", price: 127.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
           { size: "2XL", price: 129.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-451-veste-nike-repel-park20-obsidienne-blanc" },
@@ -209148,7 +209788,7 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 121.0,
+        price: 122.0,
         priceMax: 129.0,
         shipping: 6.99,
         currency: "EUR",
@@ -209157,7 +209797,7 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 129.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-010-veste-nike-repel-park20-noir-blanc" },
-          { size: "M", price: 121.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-010-veste-nike-repel-park20-noir-blanc" },
+          { size: "M", price: 122.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-010-veste-nike-repel-park20-noir-blanc" },
           { size: "L", price: 129.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-010-veste-nike-repel-park20-noir-blanc" },
           { size: "XL", price: 129.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw6156-010-veste-nike-repel-park20-noir-blanc" },
         ],
@@ -210067,6 +210707,9 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk53: ApparelProduct[] = [
   {
     id: "oxum-sport-protege-tibias-oxum-sport-one-azteca-violet",
     brand: "Oxum Sport",
@@ -211248,9 +211891,6 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk53: ApparelProduct[] = [
   {
     id: "powershot-sac-de-transport-pout-but-2-4x1-8m-a-3-7x2m-powershot-noir",
     brand: "Powershot",
@@ -213166,7 +213806,7 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 8.18,
-        priceMax: 12.64,
+        priceMax: 12.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41401929548&a=3013769&m=65912",
@@ -213175,7 +213815,7 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 8.18, url: "https://www.awin1.com/pclick.php?p=41401929548&a=3013769&m=65912" },
           { size: "S", price: 12.39, url: "https://www.awin1.com/pclick.php?p=40944591694&a=3013769&m=65912" },
-          { size: "M", price: 12.64, url: "https://www.awin1.com/pclick.php?p=41401929549&a=3013769&m=65912" },
+          { size: "M", price: 12.39, url: "https://www.awin1.com/pclick.php?p=41401929549&a=3013769&m=65912" },
           { size: "L", price: 12.39, url: "https://www.awin1.com/pclick.php?p=41401929550&a=3013769&m=65912" },
         ],
       },
@@ -214049,7 +214689,7 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
         sizePrices: [
           { size: "XS", price: 8.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
           { size: "S", price: 11.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
-          { size: "M", price: 11.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
+          { size: "M", price: 11.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
           { size: "L", price: 11.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
         ],
       },
@@ -214095,26 +214735,21 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodFR",
-        price: 8.11,
-        priceMax: 11.18,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_pra216lr_black-cyan_1.webp",
-        sizes: ["XS", "M"],
-        sizePrices: [
-          { size: "XS", price: 8.11, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
-          { size: "M", price: 11.18, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
         price: 10.74,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fpra216xss-protege-tibias-et-cheville-precision-origin-0-black-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_pra216ls_black-red_1.webp",
         sizes: ["M"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 8.11,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fpra216xsr-protege-tibias-et-cheville-precision-origin-0-black-cyan",
+        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_pra216lr_black-cyan_1.webp",
+        sizes: ["XS"],
       },
     ],
   },
@@ -214231,6 +214866,9 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk54: ApparelProduct[] = [
   {
     id: "precision-sac-a-dos-avec-porte-balle-precision-pro-hx-bleu",
     brand: "Precision",
@@ -215503,9 +216141,6 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk54: ApparelProduct[] = [
   {
     id: "puma-calcetines-puma-liga-noir",
     brand: "Puma",
@@ -217202,11 +217837,20 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 19.48,
+        priceMax: 20.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45638725215&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658777-02_blue_1.webp&feedId=89032&k=af60156c553bf3dff0bfe11a9513296e7662089d",
-        sizes: ["S", "M", "L", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "S", price: 19.48, url: "https://www.awin1.com/pclick.php?p=45638725215&a=3013769&m=65912" },
+          { size: "M", price: 19.48, url: "https://www.awin1.com/pclick.php?p=45638725216&a=3013769&m=65912" },
+          { size: "L", price: 19.48, url: "https://www.awin1.com/pclick.php?p=45638725217&a=3013769&m=65912" },
+          { size: "XL", price: 20.1, url: "https://www.awin1.com/pclick.php?p=46061455076&a=3013769&m=65912" },
+          { size: "2XL", price: 19.48, url: "https://www.awin1.com/pclick.php?p=43945456178&a=3013769&m=65912" },
+          { size: "3XL", price: 19.48, url: "https://www.awin1.com/pclick.php?p=43945456179&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -217238,11 +217882,17 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 19.48,
+        priceMax: 20.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45638725214&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658777-03_black_1.webp&feedId=89032&k=3a9dd58cc0782458546ecfe8f7140d042cbc2284",
-        sizes: ["S", "3XL"],
+        sizes: ["S", "XL", "3XL"],
+        sizePrices: [
+          { size: "S", price: 19.48, url: "https://www.awin1.com/pclick.php?p=45638725214&a=3013769&m=65912" },
+          { size: "XL", price: 20.1, url: "https://www.awin1.com/pclick.php?p=46061455075&a=3013769&m=65912" },
+          { size: "3XL", price: 19.48, url: "https://www.awin1.com/pclick.php?p=44389414566&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -217974,11 +218624,20 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 18.28,
+        priceMax: 20.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945452161&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658615-04_b2b_01__pum-658615-04__imagefront.webp&feedId=89032&k=d603d8fcce850610d128634a6b2d2ad93718cccf",
-        sizes: ["XS", "S", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 18.28, url: "https://www.awin1.com/pclick.php?p=43945452161&a=3013769&m=65912" },
+          { size: "S", price: 18.28, url: "https://www.awin1.com/pclick.php?p=45395570474&a=3013769&m=65912" },
+          { size: "M", price: 20.1, url: "https://www.awin1.com/pclick.php?p=43945452163&a=3013769&m=65912" },
+          { size: "L", price: 20.1, url: "https://www.awin1.com/pclick.php?p=46061454631&a=3013769&m=65912" },
+          { size: "XL", price: 20.1, url: "https://www.awin1.com/pclick.php?p=46061454632&a=3013769&m=65912" },
+          { size: "3XL", price: 18.28, url: "https://www.awin1.com/pclick.php?p=45395570477&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -218054,6 +218713,9 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk55: ApparelProduct[] = [
   {
     id: "puma-camiseta-tecnica-om-2026-27-noir",
     brand: "Puma",
@@ -219478,9 +220140,6 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk55: ApparelProduct[] = [
   {
     id: "puma-chaqueta-de-chandal-puma-teamgoal-graphic-bleu",
     brand: "Puma",
@@ -219717,11 +220376,20 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 29.11,
+        priceMax: 30.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945458177&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_657392-05_1.webp&feedId=89032&k=692fab0f15a374354e9f2344544267aea4b5ec17",
-        sizes: ["XS", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 29.11, url: "https://www.awin1.com/pclick.php?p=43945458177&a=3013769&m=65912" },
+          { size: "S", price: 30.85, url: "https://www.awin1.com/pclick.php?p=46061456016&a=3013769&m=65912" },
+          { size: "L", price: 30.85, url: "https://www.awin1.com/pclick.php?p=46061456015&a=3013769&m=65912" },
+          { size: "XL", price: 29.11, url: "https://www.awin1.com/pclick.php?p=45395572219&a=3013769&m=65912" },
+          { size: "2XL", price: 29.11, url: "https://www.awin1.com/pclick.php?p=43945458181&a=3013769&m=65912" },
+          { size: "3XL", price: 29.11, url: "https://www.awin1.com/pclick.php?p=45395572220&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -220216,7 +220884,7 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.91,
+        price: 24.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945417283&a=3013769&m=65912",
@@ -222252,6 +222920,9 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk56: ApparelProduct[] = [
   {
     id: "puma-corto-om-king-gris",
     brand: "Puma",
@@ -223395,9 +224066,6 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk56: ApparelProduct[] = [
   {
     id: "puma-pantalon-corto-de-portero-puma-jaune",
     brand: "Puma",
@@ -224553,11 +225221,19 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 14.77,
+        priceMax: 16.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945417112&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F7%2F0%2F704942-08_0_puma__pum-704942-08__imagefront.webp&feedId=89032&k=0e05cbe2b1c616a44798b9fe866f705093c06322",
-        sizes: ["S", "M", "2XL"],
+        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417113&a=3013769&m=65912" },
+          { size: "M", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417112&a=3013769&m=65912" },
+          { size: "L", price: 16.52, url: "https://www.awin1.com/pclick.php?p=46061451929&a=3013769&m=65912" },
+          { size: "XL", price: 16.52, url: "https://www.awin1.com/pclick.php?p=43945417114&a=3013769&m=65912" },
+          { size: "2XL", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417115&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -224571,11 +225247,20 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 14.77,
+        priceMax: 16.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945417117&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_704942-10_1-nw082525.webp&feedId=89032&k=20c15cc4c1de2ebd7f69039e008df8b4f535640b",
-        sizes: ["XS", "S", "M", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417120&a=3013769&m=65912" },
+          { size: "S", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417118&a=3013769&m=65912" },
+          { size: "M", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417117&a=3013769&m=65912" },
+          { size: "L", price: 16.52, url: "https://www.awin1.com/pclick.php?p=43945417116&a=3013769&m=65912" },
+          { size: "XL", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417119&a=3013769&m=65912" },
+          { size: "2XL", price: 14.77, url: "https://www.awin1.com/pclick.php?p=43945417121&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -224815,7 +225500,7 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945452051&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658608-06_b2b_01_puma__pum-658608-06__imagefront.webp&feedId=89032&k=37a5affc4921592464e5a5525dfe4777e86e22a5",
-        sizes: ["XS", "S", "M", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -226331,6 +227016,9 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk57: ApparelProduct[] = [
   {
     id: "puma-pantalon-de-chandal-prematch-senegal-can-2025-vert",
     brand: "Puma",
@@ -227711,9 +228399,6 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk57: ApparelProduct[] = [
   {
     id: "puma-pantalon-de-survetement-om-king-anthem-2025-26-bleu",
     brand: "Puma",
@@ -229651,20 +230336,36 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 25.72,
+        priceMax: 27.26,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44713964944&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-660928-04-white-black-flat-light-gray-2.webp&feedId=89032&k=4433401edc0e61ba362bb11a38b9dd9c9222b1ca",
-        sizes: ["XS", "S", "L"],
+        sizes: ["XS", "S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "XS", price: 25.72, url: "https://www.awin1.com/pclick.php?p=44713964944&a=3013769&m=65912" },
+          { size: "S", price: 25.72, url: "https://www.awin1.com/pclick.php?p=44713964945&a=3013769&m=65912" },
+          { size: "M", price: 27.26, url: "https://www.awin1.com/pclick.php?p=46061460501&a=3013769&m=65912" },
+          { size: "L", price: 25.72, url: "https://www.awin1.com/pclick.php?p=45725051577&a=3013769&m=65912" },
+          { size: "XL", price: 25.72, url: "https://www.awin1.com/pclick.php?p=44713964947&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
         price: 24.86,
+        priceMax: 26.61,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660928-04-polo-puma-liga26-sideline-white-black-flat-light-gray",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-660928-04-white-black-flat-light-gray-2.webp",
-        sizes: ["XS", "S", "L"],
+        sizes: ["XS", "S", "M", "L", "XL"],
+        sizePrices: [
+          { size: "XS", price: 24.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660928-04-polo-puma-liga26-sideline-white-black-flat-light-gray" },
+          { size: "S", price: 24.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660928-04-polo-puma-liga26-sideline-white-black-flat-light-gray" },
+          { size: "M", price: 26.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660928-04-polo-puma-liga26-sideline-white-black-flat-light-gray" },
+          { size: "L", price: 24.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660928-04-polo-puma-liga26-sideline-white-black-flat-light-gray" },
+          { size: "XL", price: 24.86, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660928-04-polo-puma-liga26-sideline-white-black-flat-light-gray" },
+        ],
       },
     ],
   },
@@ -229869,20 +230570,40 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 22.14,
+        priceMax: 23.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945452466&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658605-33_b2b_01_2w__.webp&feedId=89032&k=ede42a1edaec60a02c8b7a59dd0fde46199c94a9",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 22.14, url: "https://www.awin1.com/pclick.php?p=43945452466&a=3013769&m=65912" },
+          { size: "S", price: 22.14, url: "https://www.awin1.com/pclick.php?p=43945452467&a=3013769&m=65912" },
+          { size: "M", price: 22.14, url: "https://www.awin1.com/pclick.php?p=43945452468&a=3013769&m=65912" },
+          { size: "L", price: 22.14, url: "https://www.awin1.com/pclick.php?p=43945452469&a=3013769&m=65912" },
+          { size: "XL", price: 22.14, url: "https://www.awin1.com/pclick.php?p=43945452470&a=3013769&m=65912" },
+          { size: "2XL", price: 22.14, url: "https://www.awin1.com/pclick.php?p=44023882879&a=3013769&m=65912" },
+          { size: "3XL", price: 23.68, url: "https://www.awin1.com/pclick.php?p=46061454906&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
         price: 21.31,
+        priceMax: 23.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_658605-33_b2b_01_2w__.webp",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 21.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+          { size: "S", price: 21.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+          { size: "M", price: 21.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+          { size: "L", price: 21.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+          { size: "XL", price: 21.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+          { size: "2XL", price: 21.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+          { size: "3XL", price: 23.06, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658605-33-polo-puma-teamgoal-casuals-gris" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -230572,7 +231293,7 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F786422-11-short-d-entrainement-om-2026-27-deep-navy-puma-team-royal",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/8/786422-11.webp",
-        sizes: ["S", "L", "XL"],
+        sizes: ["L", "XL"],
       },
     ],
   },
@@ -230863,6 +231584,9 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk58: ApparelProduct[] = [
   {
     id: "puma-short-de-entrenamiento-tejido-marruecos-2026-noir",
     brand: "Puma",
@@ -232015,9 +232739,6 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk58: ApparelProduct[] = [
   {
     id: "puma-short-match-psv-eindhoven-2024-25-noir",
     brand: "Puma",
@@ -232397,7 +233118,7 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F784284-03-short-om-2026-27-purple",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/8/784284-03.webp",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -233254,11 +233975,19 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 14.44,
+        priceMax: 15.95,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-08-short-puma-team-rise-orange-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/0/704942-08_0_puma__pum-704942-08__imagefront.webp",
-        sizes: ["S", "M", "2XL"],
+        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-08-short-puma-team-rise-orange-noir" },
+          { size: "M", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-08-short-puma-team-rise-orange-noir" },
+          { size: "L", price: 15.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-08-short-puma-team-rise-orange-noir" },
+          { size: "XL", price: 15.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-08-short-puma-team-rise-orange-noir" },
+          { size: "2XL", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-08-short-puma-team-rise-orange-noir" },
+        ],
       },
     ],
   },
@@ -233272,11 +234001,20 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 14.44,
+        priceMax: 15.95,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_704942-10_1-nw082525.webp",
-        sizes: ["XS", "S", "M", "XL", "2XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "XS", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc" },
+          { size: "S", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc" },
+          { size: "M", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc" },
+          { size: "L", price: 15.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc" },
+          { size: "XL", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc" },
+          { size: "2XL", price: 14.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-10-short-puma-team-rise-violet-blanc" },
+        ],
       },
     ],
   },
@@ -233516,7 +234254,7 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658608-06-short-puma-teamgoal-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_658608-06_b2b_01_puma__pum-658608-06__imagefront.webp",
-        sizes: ["XS", "S", "M", "2XL", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
     ],
   },
@@ -234035,11 +234773,20 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 18.68,
+        priceMax: 19.5,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_658777-02_blue_1.webp",
-        sizes: ["S", "M", "L", "2XL", "3XL"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "S", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue" },
+          { size: "M", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue" },
+          { size: "L", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue" },
+          { size: "XL", price: 19.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue" },
+          { size: "2XL", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue" },
+          { size: "3XL", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-02-sous-maillot-manches-longues-puma-teamgoal-blue" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -234080,11 +234827,17 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 18.68,
+        priceMax: 19.5,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-03-sous-maillot-manches-longues-puma-teamgoal-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_658777-03_black_1.webp",
-        sizes: ["S", "3XL"],
+        sizes: ["S", "XL", "3XL"],
+        sizePrices: [
+          { size: "S", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-03-sous-maillot-manches-longues-puma-teamgoal-black" },
+          { size: "XL", price: 19.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-03-sous-maillot-manches-longues-puma-teamgoal-black" },
+          { size: "3XL", price: 18.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658777-03-sous-maillot-manches-longues-puma-teamgoal-black" },
+        ],
       },
     ],
   },
@@ -234457,7 +235210,7 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.18,
+        price: 29.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945452070&a=3013769&m=65912",
@@ -234466,7 +235219,7 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodES",
-        price: 30.18,
+        price: 29.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44930049792&a=3013769&m=65906",
@@ -234530,11 +235283,21 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.74,
+        priceMax: 34.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945452886&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658618-33_b2b_01_puma__pum-658618-33__imagefront.webp&feedId=89032&k=db3b2cd054b467e523c8a430361a02630064be45",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945452886&a=3013769&m=65912" },
+          { size: "S", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945452887&a=3013769&m=65912" },
+          { size: "M", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945452888&a=3013769&m=65912" },
+          { size: "L", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945452889&a=3013769&m=65912" },
+          { size: "XL", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945452890&a=3013769&m=65912" },
+          { size: "2XL", price: 34.43, url: "https://www.awin1.com/pclick.php?p=46061454907&a=3013769&m=65912" },
+          { size: "3XL", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945452892&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -234745,6 +235508,9 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk59: ApparelProduct[] = [
   {
     id: "puma-sudadera-puma-liga26-noir",
     brand: "Puma",
@@ -234773,11 +235539,20 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.74,
+        priceMax: 34.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443789731&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_658592-06_blue_1.webp&feedId=89032&k=1a8f35849b0fd75083e63b54610d4ebabc5fe8cd",
-        sizes: ["XS", "S", "M", "L", "3XL"],
+        sizes: ["XS", "S", "M", "L", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 32.74, url: "https://www.awin1.com/pclick.php?p=45443789731&a=3013769&m=65912" },
+          { size: "S", price: 32.74, url: "https://www.awin1.com/pclick.php?p=45443789732&a=3013769&m=65912" },
+          { size: "M", price: 32.74, url: "https://www.awin1.com/pclick.php?p=45443789733&a=3013769&m=65912" },
+          { size: "L", price: 32.74, url: "https://www.awin1.com/pclick.php?p=45443789734&a=3013769&m=65912" },
+          { size: "2XL", price: 34.43, url: "https://www.awin1.com/pclick.php?p=46061455077&a=3013769&m=65912" },
+          { size: "3XL", price: 32.74, url: "https://www.awin1.com/pclick.php?p=43945456204&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -234853,7 +235628,7 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 30.11,
+        price: 29.66,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658597-33-sweatshirt-a-capuche-femme-puma-team-goal-23-gray",
@@ -234862,7 +235637,7 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodFR",
-        price: 30.11,
+        price: 29.66,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F658597-33-sweatshirt-a-capuche-femme-puma-team-goal-23-gray",
@@ -235106,11 +235881,21 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 32.64,
+        priceMax: 33.72,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/u/puma_658618-33_b2b_01_puma__pum-658618-33__imagefront.jpg",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+          { size: "S", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+          { size: "M", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+          { size: "L", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+          { size: "XL", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+          { size: "2XL", price: 33.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+          { size: "3XL", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658618-33-sweatshirt-a-capuche-puma-teamgoal-casuals-gray" },
+        ],
       },
     ],
   },
@@ -235403,11 +236188,20 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 32.64,
+        priceMax: 33.72,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/u/puma_658592-06_blue_1.jpg",
-        sizes: ["XS", "S", "M", "L", "3XL"],
+        sizes: ["XS", "S", "M", "L", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue" },
+          { size: "S", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue" },
+          { size: "M", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue" },
+          { size: "L", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue" },
+          { size: "2XL", price: 33.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue" },
+          { size: "3XL", price: 32.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658592-06-sweatshirt-puma-teamgoal-casuals-blue" },
+        ],
       },
     ],
   },
@@ -235852,9 +236646,6 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk59: ApparelProduct[] = [
   {
     id: "puma-t-shirt-manches-longues-puma-teamgoal-vert",
     brand: "Puma",
@@ -236628,11 +237419,20 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 18.04,
+        priceMax: 19.5,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_658615-04_b2b_01__pum-658615-04__imagefront.webp",
-        sizes: ["XS", "S", "3XL"],
+        sizes: ["XS", "S", "M", "L", "XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 18.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white" },
+          { size: "S", price: 18.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white" },
+          { size: "M", price: 19.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white" },
+          { size: "L", price: 19.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white" },
+          { size: "XL", price: 19.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white" },
+          { size: "3XL", price: 18.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F658615-04-t-shirt-puma-teamgoal-casuals-white" },
+        ],
       },
     ],
   },
@@ -238742,11 +239542,20 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 29.14,
+        priceMax: 30.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_657392-05_1.webp",
-        sizes: ["XS", "XL", "2XL", "3XL"],
+        sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
+        sizePrices: [
+          { size: "XS", price: 29.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green" },
+          { size: "S", price: 30.16, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green" },
+          { size: "L", price: 30.16, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green" },
+          { size: "XL", price: 29.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green" },
+          { size: "2XL", price: 29.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green" },
+          { size: "3XL", price: 29.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657392-05-veste-de-survetement-puma-teamrise-poly-green" },
+        ],
       },
     ],
   },
@@ -238786,6 +239595,9 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk60: ApparelProduct[] = [
   {
     id: "puma-veste-de-survetement-puma-velocity-vert",
     brand: "Puma",
@@ -239209,7 +240021,7 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 24.66,
+        price: 23.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657245-06-veste-puma-team-liga-all-weather-bleu-marine-noir",
@@ -239218,7 +240030,7 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       },
       {
         store: "SportIsGoodFR",
-        price: 25.37,
+        price: 24.95,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F657245-06-veste-puma-team-liga-all-weather-bleu-marine-noir",
@@ -240058,9 +240870,6 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk60: ApparelProduct[] = [
   {
     id: "reusch-espinilleras-reusch-attrakt-supreme-vert",
     brand: "Reusch",
@@ -241385,24 +242194,6 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     ],
   },
   {
-    id: "rinat-short-de-gardien-rinat-moya-noir",
-    brand: "Rinat",
-    model: "Short de gardien Rinat Moya - Noir",
-    colour: "Noir",
-    type: "shorts",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 29.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4sma40-109-212-short-de-gardien-rinat-moya-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_4sma40-109-212_black_1.webp",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
     id: "rinat-sous-short-de-gardien-de-but-rinat-noir",
     brand: "Rinat",
     model: "Sous-short de gardien de but Rinat - Noir",
@@ -241582,11 +242373,19 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 66.0,
+        priceMax: 67.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630343573&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F2%2F6201000111_0.webp&feedId=89032&k=58fb5114c146baec8ffa69ca440339e19d51b4a5",
         sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343573&a=3013769&m=65912" },
+          { size: "M", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343574&a=3013769&m=65912" },
+          { size: "L", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343575&a=3013769&m=65912" },
+          { size: "XL", price: 67.0, url: "https://www.awin1.com/pclick.php?p=42630343576&a=3013769&m=65912" },
+          { size: "2XL", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343577&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -241600,11 +242399,19 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 66.0,
+        priceMax: 67.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630343581&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F2%2F6201000333_0.webp&feedId=89032&k=0462c22a3dc3459c27dcfb85a09ce1d25f118cd0",
         sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343581&a=3013769&m=65912" },
+          { size: "M", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343582&a=3013769&m=65912" },
+          { size: "L", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42630343583&a=3013769&m=65912" },
+          { size: "XL", price: 67.0, url: "https://www.awin1.com/pclick.php?p=42630343584&a=3013769&m=65912" },
+          { size: "2XL", price: 67.0, url: "https://www.awin1.com/pclick.php?p=42630343585&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -241697,19 +242504,12 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.41,
-        priceMax: 9.08,
+        price: 9.08,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45443783907&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45698833225&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fe%2Fselect_l601756-210_0.webp&feedId=89032&k=5342646e8a144ed51d9f862af5cc34b9c1dc44e4",
         sizes: ["S", "M", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 9.08, url: "https://www.awin1.com/pclick.php?p=45698833225&a=3013769&m=65912" },
-          { size: "M", price: 8.41, url: "https://www.awin1.com/pclick.php?p=45443783907&a=3013769&m=65912" },
-          { size: "XL", price: 9.08, url: "https://www.awin1.com/pclick.php?p=45371012390&a=3013769&m=65912" },
-          { size: "2XL", price: 9.08, url: "https://www.awin1.com/pclick.php?p=45562766330&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -241856,19 +242656,19 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
-        priceMax: 57.0,
+        price: 42.0,
+        priceMax: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630343439&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F2%2F6201200111_1.webp&feedId=89032&k=0d24a2a204067c8e4e81051d6ea5908d582291c4",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343436&a=3013769&m=65912" },
-          { size: "M", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343437&a=3013769&m=65912" },
-          { size: "L", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343438&a=3013769&m=65912" },
-          { size: "XL", price: 57.0, url: "https://www.awin1.com/pclick.php?p=41104829288&a=3013769&m=65912" },
-          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42630343439&a=3013769&m=65912" },
+          { size: "S", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343436&a=3013769&m=65912" },
+          { size: "M", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343437&a=3013769&m=65912" },
+          { size: "L", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343438&a=3013769&m=65912" },
+          { size: "XL", price: 58.0, url: "https://www.awin1.com/pclick.php?p=41104829288&a=3013769&m=65912" },
+          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42630343439&a=3013769&m=65912" },
         ],
       },
     ],
@@ -241882,19 +242682,19 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
-        priceMax: 57.0,
+        price: 42.0,
+        priceMax: 58.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104829289&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F2%2F6200600111_0.webp&feedId=89032&k=873445fe7be6fca41d376ab9ab6d5fe821a1e6d0",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343440&a=3013769&m=65912" },
-          { size: "M", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343441&a=3013769&m=65912" },
-          { size: "L", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343442&a=3013769&m=65912" },
-          { size: "XL", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630343443&a=3013769&m=65912" },
-          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=41104829289&a=3013769&m=65912" },
+          { size: "S", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343440&a=3013769&m=65912" },
+          { size: "M", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343441&a=3013769&m=65912" },
+          { size: "L", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343442&a=3013769&m=65912" },
+          { size: "XL", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42630343443&a=3013769&m=65912" },
+          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41104829289&a=3013769&m=65912" },
         ],
       },
     ],
@@ -241927,17 +242727,17 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
-        priceMax: 49.0,
+        priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/2/6201200111_1.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
-          { size: "M", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
-          { size: "L", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
-          { size: "XL", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
+          { size: "S", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
+          { size: "M", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
+          { size: "L", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
+          { size: "XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
           { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl620048-pantalon-de-survetement-select-monaco-noir" },
         ],
       },
@@ -241953,7 +242753,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
-        priceMax: 49.0,
+        priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir",
@@ -241963,7 +242763,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
           { size: "S", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir" },
           { size: "M", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir" },
           { size: "L", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir" },
-          { size: "XL", price: 49.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir" },
+          { size: "XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir" },
           { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610065-200-pantalon-de-survetement-select-training-monaco-noir" },
         ],
       },
@@ -242071,7 +242871,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
           { size: "M", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl700017-200-short-gardien-select-6420-noir" },
           { size: "L", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl700017-200-short-gardien-select-6420-noir" },
           { size: "XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl700017-200-short-gardien-select-6420-noir" },
-          { size: "2XL", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl700017-200-short-gardien-select-6420-noir" },
+          { size: "2XL", price: 65.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl700017-200-short-gardien-select-6420-noir" },
         ],
       },
     ],
@@ -242103,28 +242903,12 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 8.31,
-        priceMax: 9.01,
+        price: 9.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl601757-210-short-select-matrix-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/e/select_l601756-210_0.webp",
         sizes: ["S", "M", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 9.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl601757-210-short-select-matrix-black" },
-          { size: "M", price: 8.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl601757-210-short-select-matrix-black" },
-          { size: "XL", price: 9.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl601757-210-short-select-matrix-black" },
-          { size: "2XL", price: 9.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl601757-210-short-select-matrix-black" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 8.11,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fl601757-210-short-select-matrix-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/e/select_l601756-210_0.webp",
-        sizes: ["M"],
       },
     ],
   },
@@ -242253,19 +243037,19 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.0,
-        priceMax: 70.0,
+        price: 48.0,
+        priceMax: 71.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104829290&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F2%2F6201100990_0.webp&feedId=89032&k=300746a2e68ebf9e6dda241e0c25921f4b7eba59",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 47.0, url: "https://www.awin1.com/pclick.php?p=41104829290&a=3013769&m=65912" },
-          { size: "M", price: 47.0, url: "https://www.awin1.com/pclick.php?p=41104829291&a=3013769&m=65912" },
-          { size: "L", price: 70.0, url: "https://www.awin1.com/pclick.php?p=42630343533&a=3013769&m=65912" },
-          { size: "XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=41165029090&a=3013769&m=65912" },
-          { size: "2XL", price: 70.0, url: "https://www.awin1.com/pclick.php?p=41165029091&a=3013769&m=65912" },
+          { size: "S", price: 48.0, url: "https://www.awin1.com/pclick.php?p=41104829290&a=3013769&m=65912" },
+          { size: "M", price: 48.0, url: "https://www.awin1.com/pclick.php?p=41104829291&a=3013769&m=65912" },
+          { size: "L", price: 71.0, url: "https://www.awin1.com/pclick.php?p=42630343533&a=3013769&m=65912" },
+          { size: "XL", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41165029090&a=3013769&m=65912" },
+          { size: "2XL", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41165029091&a=3013769&m=65912" },
         ],
       },
     ],
@@ -242297,7 +243081,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 42.0,
         priceMax: 62.0,
         shipping: 7.99,
         currency: "EUR",
@@ -242309,7 +243093,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
           { size: "M", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42630343561&a=3013769&m=65912" },
           { size: "L", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42630343562&a=3013769&m=65912" },
           { size: "XL", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42630343563&a=3013769&m=65912" },
-          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529151203&a=3013769&m=65912" },
+          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529151203&a=3013769&m=65912" },
         ],
       },
     ],
@@ -242323,7 +243107,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 42.0,
         priceMax: 62.0,
         shipping: 7.99,
         currency: "EUR",
@@ -242334,7 +243118,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
           { size: "S", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42630343546&a=3013769&m=65912" },
           { size: "M", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42630343547&a=3013769&m=65912" },
           { size: "L", price: 62.0, url: "https://www.awin1.com/pclick.php?p=42630343548&a=3013769&m=65912" },
-          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529151202&a=3013769&m=65912" },
+          { size: "2XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529151202&a=3013769&m=65912" },
         ],
       },
     ],
@@ -242392,20 +243176,12 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 53.0,
-        priceMax: 54.0,
+        price: 54.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-600-sweatshirt-select-training-monaco-bleu",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/2/6200500222_0.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-600-sweatshirt-select-training-monaco-bleu" },
-          { size: "M", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-600-sweatshirt-select-training-monaco-bleu" },
-          { size: "L", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-600-sweatshirt-select-training-monaco-bleu" },
-          { size: "XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-600-sweatshirt-select-training-monaco-bleu" },
-          { size: "2XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-600-sweatshirt-select-training-monaco-bleu" },
-        ],
       },
     ],
   },
@@ -242426,10 +243202,10 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/6/2/6200500990_0.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
+          { size: "S", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
           { size: "M", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
           { size: "L", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
-          { size: "XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
+          { size: "XL", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
           { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-900-sweatshirt-select-training-monaco-gris" },
         ],
       },
@@ -242445,16 +243221,16 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
-        priceMax: 53.0,
+        priceMax: 54.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/2/6200500111_0.webp",
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
-          { size: "S", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
-          { size: "M", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
-          { size: "L", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
+          { size: "S", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
+          { size: "M", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
+          { size: "L", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
           { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-200-sweatshirt-select-training-monaco-noir" },
         ],
       },
@@ -242478,7 +243254,7 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-300-sweatshirt-select-training-monaco-rouge" },
-          { size: "M", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-300-sweatshirt-select-training-monaco-rouge" },
+          { size: "M", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-300-sweatshirt-select-training-monaco-rouge" },
           { size: "L", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-300-sweatshirt-select-training-monaco-rouge" },
           { size: "XL", price: 54.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-300-sweatshirt-select-training-monaco-rouge" },
           { size: "2XL", price: 53.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl610063-300-sweatshirt-select-training-monaco-rouge" },
@@ -242548,6 +243324,9 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk61: ApparelProduct[] = [
   {
     id: "softee-calcetines-de-futbol-softee-blanc",
     brand: "Softee",
@@ -243657,9 +244436,6 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk61: ApparelProduct[] = [
   {
     id: "sporti-mochila-sporti-noir",
     brand: "Sporti",
@@ -246481,6 +247257,9 @@ const minedApparelProductsChunk61: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk62: ApparelProduct[] = [
   {
     id: "stanno-short-stanno-focus-ii-marron",
     brand: "Stanno",
@@ -247397,15 +248176,6 @@ const minedApparelProductsChunk61: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2F7%2Fs7227_1.webp&feedId=89032&k=4c14a06d8bc9cd27bce87b925a3e83523732663f",
         sizes: [],
       },
-      {
-        store: "SportIsGoodES",
-        price: 32.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45667363597&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2F7%2Fs7227_1.webp&feedId=89044&k=4c14a06d8bc9cd27bce87b925a3e83523732663f",
-        sizes: [],
-      },
     ],
   },
   {
@@ -247642,9 +248412,6 @@ const minedApparelProductsChunk61: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk62: ApparelProduct[] = [
   {
     id: "tremblay-ct-chalecos-numerados-del-11-al-15-tremblay-ct-x5-vert",
     brand: "Tremblay CT",
@@ -249881,7 +250648,7 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.0,
+        price: 37.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37084624254&a=3013769&m=65912",
@@ -250596,6 +251363,9 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk63: ApparelProduct[] = [
   {
     id: "uhlsport-camiseta-uhlsport-femme-stream-22-rouge",
     brand: "uhlsport",
@@ -251012,7 +251782,7 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 65.0,
+        price: 63.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630332167&a=3013769&m=65912",
@@ -251104,6 +251874,15 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=37923801170&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100506001.webp&feedId=89032&k=4cd16edd7df66ea7e081122c5dcb90d79342bfba",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 43.55,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46062826594&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100506001.webp&feedId=89044&k=4cd16edd7df66ea7e081122c5dcb90d79342bfba",
+        sizes: ["3XL"],
       },
     ],
   },
@@ -251532,16 +252311,11 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 21.95,
-        priceMax: 45.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45725042902&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_100221601_0.webp&feedId=89032&k=6bfcf8f88686686ce4dac55648a0d6e78e2ff55e",
-        sizes: ["XL", "5XL"],
-        sizePrices: [
-          { size: "XL", price: 21.95, url: "https://www.awin1.com/pclick.php?p=45725042902&a=3013769&m=65912" },
-          { size: "5XL", price: 45.0, url: "https://www.awin1.com/pclick.php?p=37923930509&a=3013769&m=65912" },
-        ],
+        sizes: ["XL"],
       },
     ],
   },
@@ -252019,9 +252793,6 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk63: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-softshell-uhlsport-essential-bleu",
     brand: "uhlsport",
@@ -254306,15 +255077,6 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335208.webp&feedId=89044&k=2042dca461e5a648fad07da0a28dd4f1fddfc3a3",
         sizes: ["2XL"],
       },
-      {
-        store: "SportIsGoodES",
-        price: 20.28,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45070139977&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335210.webp&feedId=89044&k=8d58e35d96724f0065fe8d153012a702ea83fe33",
-        sizes: ["2XL"],
-      },
     ],
   },
   {
@@ -254535,15 +255297,15 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 26.4,
-        priceMax: 43.0,
+        priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529425107&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_100345104_0.webp&feedId=89032&k=9affffa9b211ee0296cb7e592e9e2fbbcb196d47",
         sizes: ["L", "XL", "2XL", "3XL"],
         sizePrices: [
-          { size: "L", price: 43.0, url: "https://www.awin1.com/pclick.php?p=37923967381&a=3013769&m=65912" },
-          { size: "XL", price: 43.0, url: "https://www.awin1.com/pclick.php?p=36605446965&a=3013769&m=65912" },
+          { size: "L", price: 42.0, url: "https://www.awin1.com/pclick.php?p=37923967381&a=3013769&m=65912" },
+          { size: "XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=36605446965&a=3013769&m=65912" },
           { size: "2XL", price: 27.26, url: "https://www.awin1.com/pclick.php?p=42529425106&a=3013769&m=65912" },
           { size: "3XL", price: 26.4, url: "https://www.awin1.com/pclick.php?p=42529425107&a=3013769&m=65912" },
         ],
@@ -254720,7 +255482,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 53.0,
+        price: 54.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923789104&a=3013769&m=65912",
@@ -255338,7 +256100,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
         sizePrices: [
           { size: "2XL", price: 51.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100517802-doudoune-uhlsport-essential-ultra-lite-down-marine-azur" },
           { size: "3XL", price: 36.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100517802-doudoune-uhlsport-essential-ultra-lite-down-marine-azur" },
-          { size: "4XL", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100517802-doudoune-uhlsport-essential-ultra-lite-down-marine-azur" },
+          { size: "4XL", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100517802-doudoune-uhlsport-essential-ultra-lite-down-marine-azur" },
         ],
       },
       {
@@ -255352,6 +256114,9 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk64: ApparelProduct[] = [
   {
     id: "uhlsport-doudoune-uhlsport-essential-ultra-lite-noir",
     brand: "uhlsport",
@@ -255495,7 +256260,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 45.0,
+        price: 46.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100561603-ensemble-gardien-uhlsport-score-jaune-fluo",
@@ -256019,7 +256784,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 16.76,
-        priceMax: 26.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398897287&a=3013769&m=65912",
@@ -256027,7 +256792,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
         sizes: ["XS", "M", "L"],
         sizePrices: [
           { size: "XS", price: 16.76, url: "https://www.awin1.com/pclick.php?p=45398897287&a=3013769&m=65912" },
-          { size: "M", price: 26.0, url: "https://www.awin1.com/pclick.php?p=44927113024&a=3013769&m=65912" },
+          { size: "M", price: 25.0, url: "https://www.awin1.com/pclick.php?p=44927113024&a=3013769&m=65912" },
           { size: "L", price: 16.76, url: "https://www.awin1.com/pclick.php?p=44565980269&a=3013769&m=65912" },
         ],
       },
@@ -256269,7 +257034,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 29.0,
+        price: 28.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100316808-kit-maillot-short-femme-uhlsport-team-kit-blanc-noir",
@@ -256581,7 +257346,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 44.0,
+        price: 43.0,
         priceMax: 75.0,
         shipping: 6.99,
         currency: "EUR",
@@ -256590,7 +257355,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
         sizes: ["XL", "2XL"],
         sizePrices: [
           { size: "XL", price: 75.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100563701-legging-long-uhlsport-bionikframe-noir-jaune-fluo" },
-          { size: "2XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100563701-legging-long-uhlsport-bionikframe-noir-jaune-fluo" },
+          { size: "2XL", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100563701-legging-long-uhlsport-bionikframe-noir-jaune-fluo" },
         ],
       },
     ],
@@ -256828,7 +257593,7 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 36.0,
+        price: 37.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100306901-maillot-de-compression-uhlsport-distinction-pro-baselayer-noir",
@@ -256846,9 +257611,6 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk64: ApparelProduct[] = [
   {
     id: "uhlsport-maillot-de-compression-uhlsport-distinction-pro-baselayer-rouge",
     brand: "uhlsport",
@@ -258301,12 +259063,13 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529141554&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-100380601-noir-blanc-6a463c62621e6-1.webp&feedId=89032&k=c7464f6f167012e14979e193f0f5314b4cf8f22d",
-        sizes: ["S", "M", "L", "XL", "3XL", "6 ans", "8 ans", "10 ans", "12 ans", "14 ans"],
+        sizes: ["S", "M", "L", "XL", "2XL", "3XL", "6 ans", "8 ans", "10 ans", "12 ans", "14 ans"],
         sizePrices: [
           { size: "S", price: 13.25, url: "https://www.awin1.com/pclick.php?p=37936447517&a=3013769&m=65912" },
           { size: "M", price: 13.25, url: "https://www.awin1.com/pclick.php?p=36697720370&a=3013769&m=65912" },
           { size: "L", price: 12.75, url: "https://www.awin1.com/pclick.php?p=37936447518&a=3013769&m=65912" },
           { size: "XL", price: 12.5, url: "https://www.awin1.com/pclick.php?p=37936447519&a=3013769&m=65912" },
+          { size: "2XL", price: 13.25, url: "https://www.awin1.com/pclick.php?p=36485366300&a=3013769&m=65912" },
           { size: "3XL", price: 13.25, url: "https://www.awin1.com/pclick.php?p=37936447520&a=3013769&m=65912" },
           { size: "6 ans", price: 11.79, url: "https://www.awin1.com/pclick.php?p=42529141554&a=3013769&m=65912" },
           { size: "8 ans", price: 11.79, url: "https://www.awin1.com/pclick.php?p=42529141555&a=3013769&m=65912" },
@@ -258700,11 +259463,16 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
       {
         store: "SportIsGoodES",
         price: 24.69,
+        priceMax: 25.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45140320207&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100560101_0.webp&feedId=89044&k=4e9089a202d24e16f3d8d1db858868c1d9525479",
-        sizes: ["L"],
+        sizes: ["L", "XL"],
+        sizePrices: [
+          { size: "L", price: 24.69, url: "https://www.awin1.com/pclick.php?p=45140320207&a=3013769&m=65906" },
+          { size: "XL", price: 25.51, url: "https://www.awin1.com/pclick.php?p=46062848973&a=3013769&m=65906" },
+        ],
       },
     ],
   },
@@ -259912,7 +260680,7 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.0,
+        price: 19.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923786394&a=3013769&m=65912",
@@ -260138,7 +260906,7 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
         sizePrices: [
           { size: "2XL", price: 52.43, url: "https://www.awin1.com/pclick.php?p=41881725752&a=3013769&m=65912" },
           { size: "3XL", price: 37.85, url: "https://www.awin1.com/pclick.php?p=41881725753&a=3013769&m=65912" },
-          { size: "4XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42630333918&a=3013769&m=65912" },
+          { size: "4XL", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42630333918&a=3013769&m=65912" },
         ],
       },
       {
@@ -260260,6 +261028,9 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk65: ApparelProduct[] = [
   {
     id: "uhlsport-polo-uhlsport-essential-bleu",
     brand: "uhlsport",
@@ -261184,25 +261955,30 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.0,
+        price: 12.79,
+        priceMax: 22.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380404-polo-uhlsport-offense-23-rouge-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100380404_0.webp",
-        sizes: ["M"],
+        sizes: ["M", "6 ans"],
+        sizePrices: [
+          { size: "M", price: 22.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380404-polo-uhlsport-offense-23-rouge-noir-blanc" },
+          { size: "6 ans", price: 12.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380404-polo-uhlsport-offense-23-rouge-noir-blanc" },
+        ],
       },
       {
         store: "FootStoreFR",
         price: 19.0,
-        priceMax: 31.0,
+        priceMax: 32.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100380412_0.webp",
         sizes: ["M", "L", "2XL", "8 ans"],
         sizePrices: [
-          { size: "M", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille" },
-          { size: "L", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille" },
+          { size: "M", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille" },
+          { size: "L", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille" },
           { size: "2XL", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille" },
           { size: "8 ans", price: 19.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100380412-polo-uhlsport-offense-23-rouge-bordeaux-bleu-marine-jaune-paille" },
         ],
@@ -262026,7 +262802,7 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 20.0,
+        price: 19.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100680402-protege-tibias-uhlsport-flex-plate-vert-bleu-noir",
@@ -262359,9 +263135,6 @@ const minedApparelProductsChunk64: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk65: ApparelProduct[] = [
   {
     id: "uhlsport-short-de-compression-uhlsport-pro-tights-noir",
     brand: "uhlsport",
@@ -262412,24 +263185,6 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100220704-short-de-compression-uhlsport-pro-tights-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100220704.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-short-de-gardien-rembourre-uhlsport-bionikframe-noir",
-    brand: "uhlsport",
-    model: "Short de gardien rembourré Uhlsport Bionikframe - Noir",
-    colour: "Noir",
-    type: "baselayer",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 65.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fshort-uhlsport-bionikframe",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-bionikframe-padded-short.webp",
-        sizes: ["2XL"],
       },
     ],
   },
@@ -264637,14 +265392,14 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 28.0,
-        priceMax: 31.0,
+        priceMax: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221203-sweatshirt-1-4-zip-uhlsport-offense-23-bleu-azur-bleu-marine-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/1/0/100221203_0.jpg",
         sizes: ["M", "10 ans"],
         sizePrices: [
-          { size: "M", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221203-sweatshirt-1-4-zip-uhlsport-offense-23-bleu-azur-bleu-marine-blanc" },
+          { size: "M", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221203-sweatshirt-1-4-zip-uhlsport-offense-23-bleu-azur-bleu-marine-blanc" },
           { size: "10 ans", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221203-sweatshirt-1-4-zip-uhlsport-offense-23-bleu-azur-bleu-marine-blanc" },
         ],
       },
@@ -264677,15 +265432,16 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 28.0,
-        priceMax: 31.0,
+        price: 17.53,
+        priceMax: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221201-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/1/0/100221201_0.jpg",
-        sizes: ["3XL", "10 ans", "12 ans"],
+        sizes: ["3XL", "6 ans", "10 ans", "12 ans"],
         sizePrices: [
-          { size: "3XL", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221201-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-blanc" },
+          { size: "3XL", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221201-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-blanc" },
+          { size: "6 ans", price: 17.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221201-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-blanc" },
           { size: "10 ans", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221201-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-blanc" },
           { size: "12 ans", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221201-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-blanc" },
         ],
@@ -264693,14 +265449,14 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 20.0,
-        priceMax: 31.0,
+        priceMax: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221207-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-jaune-citron",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100221207.webp",
         sizes: ["L", "6 ans"],
         sizePrices: [
-          { size: "L", price: 31.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221207-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-jaune-citron" },
+          { size: "L", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221207-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-jaune-citron" },
           { size: "6 ans", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221207-sweatshirt-1-4-zip-uhlsport-offense-23-noir-gris-fonce-jaune-citron" },
         ],
       },
@@ -264724,12 +265480,19 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 31.0,
+        price: 17.53,
+        priceMax: 30.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221204-sweatshirt-1-4-zip-uhlsport-offense-23-rouge-noir-blanc",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/1/0/100221204_0.jpg",
-        sizes: ["S", "M", "3XL"],
+        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100221204_0.webp",
+        sizes: ["S", "M", "3XL", "14 ans"],
+        sizePrices: [
+          { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221204-sweatshirt-1-4-zip-uhlsport-offense-23-rouge-noir-blanc" },
+          { size: "M", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221204-sweatshirt-1-4-zip-uhlsport-offense-23-rouge-noir-blanc" },
+          { size: "3XL", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221204-sweatshirt-1-4-zip-uhlsport-offense-23-rouge-noir-blanc" },
+          { size: "14 ans", price: 17.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221204-sweatshirt-1-4-zip-uhlsport-offense-23-rouge-noir-blanc" },
+        ],
       },
     ],
   },
@@ -265953,6 +266716,9 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk66: ApparelProduct[] = [
   {
     id: "uhlsport-training-top-uhlsport-essential-rouge",
     brand: "uhlsport",
@@ -266195,7 +266961,7 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 57.0,
+        price: 55.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100516501-veste-a-capuche-uhlsport-goal-tec-noir-blanc",
@@ -266652,16 +267418,11 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 22.03,
-        priceMax: 45.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221601-veste-de-survetement-uhlsport-goal-25-poly-noir-anthracite",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100221601_0.webp",
-        sizes: ["XL", "5XL"],
-        sizePrices: [
-          { size: "XL", price: 22.03, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221601-veste-de-survetement-uhlsport-goal-25-poly-noir-anthracite" },
-          { size: "5XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100221601-veste-de-survetement-uhlsport-goal-25-poly-noir-anthracite" },
-        ],
+        sizes: ["XL"],
       },
     ],
   },
@@ -267402,16 +268163,16 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 20.04,
-        priceMax: 45.0,
+        priceMax: 44.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100520202_0.webp",
         sizes: ["S", "L", "XL", "2XL", "8 ans", "12 ans"],
         sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
-          { size: "XL", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
+          { size: "S", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
+          { size: "L", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
+          { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
           { size: "2XL", price: 30.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
           { size: "8 ans", price: 20.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
           { size: "12 ans", price: 29.84, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520202-veste-uhlsport-essential-rain-bleu-azur-blanc" },
@@ -267433,9 +268194,6 @@ const minedApparelProductsChunk65: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk66: ApparelProduct[] = [
   {
     id: "uhlsport-veste-uhlsport-essential-rain-noir",
     brand: "uhlsport",
@@ -267446,14 +268204,14 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 20.04,
-        priceMax: 45.0,
+        priceMax: 44.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520201-veste-uhlsport-essential-rain-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100520201_0.webp",
         sizes: ["S", "6 ans"],
         sizePrices: [
-          { size: "S", price: 45.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520201-veste-uhlsport-essential-rain-noir-blanc" },
+          { size: "S", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520201-veste-uhlsport-essential-rain-noir-blanc" },
           { size: "6 ans", price: 20.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100520201-veste-uhlsport-essential-rain-noir-blanc" },
         ],
       },
@@ -268113,7 +268871,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.0,
+        price: 38.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42607739871&a=3013769&m=65912",
@@ -268165,7 +268923,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizePrices: [
           { size: "S", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42607739873&a=3013769&m=65912" },
           { size: "M", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42607739874&a=3013769&m=65912" },
-          { size: "L", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42607739875&a=3013769&m=65912" },
+          { size: "L", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42607739875&a=3013769&m=65912" },
           { size: "XL", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42607739876&a=3013769&m=65912" },
         ],
       },
@@ -268209,12 +268967,12 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         priceMax: 39.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41180458168&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42528998585&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fi%2Fdiamond_unlined_jacket_ad_18h647770-60_10.webp&feedId=89032&k=2e0f71494df0e90ba914f526f5f44a45a0b2dd43",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 39.0, url: "https://www.awin1.com/pclick.php?p=41122036309&a=3013769&m=65912" },
-          { size: "M", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42528998585&a=3013769&m=65912" },
+          { size: "M", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42528998585&a=3013769&m=65912" },
           { size: "L", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42528998586&a=3013769&m=65912" },
           { size: "XL", price: 38.0, url: "https://www.awin1.com/pclick.php?p=41180458168&a=3013769&m=65912" },
           { size: "2XL", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42528998587&a=3013769&m=65912" },
@@ -268231,7 +268989,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42607739883&a=3013769&m=65912",
@@ -268300,9 +269058,8 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F745440-60-8-coupe-vent-umbro-pro-training-core-noir-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/7/4/745440-60-8_1.jpg",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F745440-60-8-coupe-vent-umbro-pro-training-core-noir-blanc" },
           { size: "M", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F745440-60-8-coupe-vent-umbro-pro-training-core-noir-blanc" },
           { size: "L", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F745440-60-8-coupe-vent-umbro-pro-training-core-noir-blanc" },
           { size: "XL", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F745440-60-8-coupe-vent-umbro-pro-training-core-noir-blanc" },
@@ -268419,18 +269176,12 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 33.0,
-        priceMax: 34.0,
+        price: 34.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F648611-60-121-pantalon-de-survetement-umbro-sb-gris",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/m/umbro-648611-60-121-gris-1.webp",
         sizes: ["S", "M", "L"],
-        sizePrices: [
-          { size: "S", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F648611-60-121-pantalon-de-survetement-umbro-sb-gris" },
-          { size: "M", price: 34.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F648611-60-121-pantalon-de-survetement-umbro-sb-gris" },
-          { size: "L", price: 33.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F648611-60-121-pantalon-de-survetement-umbro-sb-gris" },
-        ],
       },
     ],
   },
@@ -268494,11 +269245,10 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41180459264&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F8%2F0%2F802210-60-3.webp&feedId=89032&k=260095c8a4123436c65f535676432d1b70c2fde9",
-        sizes: ["L", "XL", "2XL"],
+        sizes: ["L", "XL"],
         sizePrices: [
           { size: "L", price: 33.0, url: "https://www.awin1.com/pclick.php?p=41180459263&a=3013769&m=65912" },
           { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=41180459264&a=3013769&m=65912" },
-          { size: "2XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=41180459265&a=3013769&m=65912" },
         ],
       },
       {
@@ -268508,7 +269258,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802210-60-3-polo-umbro-pro-training-blanc-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/8/0/802210-60-3.jpg",
-        sizes: ["L", "XL", "2XL"],
+        sizes: ["L", "XL"],
       },
     ],
   },
@@ -268657,11 +269407,19 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 32.0,
+        priceMax: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43952554720&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fm%2Fumbro_806991-60-124_gris-marine_1.webp&feedId=89032&k=693d99a961236d72e9b46aab56ad165a8dc3e5fe",
         sizes: ["S", "M", "L", "XL", "2XL"],
+        sizePrices: [
+          { size: "S", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43952554720&a=3013769&m=65912" },
+          { size: "M", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43952554721&a=3013769&m=65912" },
+          { size: "L", price: 33.0, url: "https://www.awin1.com/pclick.php?p=43952554722&a=3013769&m=65912" },
+          { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43952554723&a=3013769&m=65912" },
+          { size: "2XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43952554724&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -268693,11 +269451,17 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreFR",
         price: 40.0,
+        priceMax: 41.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-10-sweatshirt-a-capuche-umbro-pro-training-marine",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/0/802060-60-10_1.webp",
         sizes: ["M", "L", "XL"],
+        sizePrices: [
+          { size: "M", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-10-sweatshirt-a-capuche-umbro-pro-training-marine" },
+          { size: "L", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-10-sweatshirt-a-capuche-umbro-pro-training-marine" },
+          { size: "XL", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-10-sweatshirt-a-capuche-umbro-pro-training-marine" },
+        ],
       },
     ],
   },
@@ -268721,7 +269485,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
           { size: "XS", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
           { size: "S", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
           { size: "M", price: 38.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
-          { size: "L", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
+          { size: "L", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
           { size: "XL", price: 38.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
           { size: "2XL", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F802060-60-8-sweatshirt-a-capuche-umbro-pro-training-noir-blanc" },
         ],
@@ -269040,7 +269804,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.0,
+        price: 33.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43881612932&a=3013769&m=65912",
@@ -269287,9 +270051,8 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44014872284&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6014168-025-castlerock-white-1.webp&feedId=89032&k=62b99cff568442aa350f2e4d2f7d6f1344c301ec",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44014872283&a=3013769&m=65912" },
           { size: "M", price: 59.0, url: "https://www.awin1.com/pclick.php?p=44014872284&a=3013769&m=65912" },
           { size: "L", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44301923848&a=3013769&m=65912" },
           { size: "XL", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44301923849&a=3013769&m=65912" },
@@ -269597,20 +270360,12 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.0,
-        priceMax: 24.0,
+        price: 24.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027466834&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour_1372691-001_black_4.webp&feedId=89032&k=e1ff38fd9cb5c7b88031dd27449a9406102e848c",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 23.0, url: "https://www.awin1.com/pclick.php?p=46027466834&a=3013769&m=65912" },
-          { size: "M", price: 24.0, url: "https://www.awin1.com/pclick.php?p=46027466835&a=3013769&m=65912" },
-          { size: "L", price: 24.0, url: "https://www.awin1.com/pclick.php?p=46027466836&a=3013769&m=65912" },
-          { size: "XL", price: 24.0, url: "https://www.awin1.com/pclick.php?p=45381240171&a=3013769&m=65912" },
-          { size: "2XL", price: 24.0, url: "https://www.awin1.com/pclick.php?p=46027466837&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -269628,6 +270383,24 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43890375215&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6009894-008-ultimate-black-1.webp&feedId=89032&k=9f66f4fdc31daaf52ba48b27c16776afcbd472cc",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "under-armour-pantalon-corto-under-armour-challenger-elite-rose",
+    brand: "Under Armour",
+    model: "Pantalón corto Under Armour Challenger Elite - Rose",
+    colour: "Rose",
+    type: "shorts",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 80.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45795632652&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6014273-637-6a8e023752937-1.webp&feedId=89032&k=9505c6f0276b8768acc84fea01620d7b9d4b382d",
         sizes: ["S", "M", "L", "XL"],
       },
     ],
@@ -269678,19 +270451,11 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 40.0,
-        priceMax: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43881609462&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6009621-008-ultimate-black-1.webp&feedId=89032&k=b07e3116d43f7914399a6a8bd750e772d6fb329d",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43881609462&a=3013769&m=65912" },
-          { size: "M", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43881609463&a=3013769&m=65912" },
-          { size: "L", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43881609464&a=3013769&m=65912" },
-          { size: "XL", price: 40.0, url: "https://www.awin1.com/pclick.php?p=43881609465&a=3013769&m=65912" },
-          { size: "2XL", price: 41.0, url: "https://www.awin1.com/pclick.php?p=43881609466&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -269756,7 +270521,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 47.0,
-        priceMax: 50.0,
+        priceMax: 51.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43856282616&a=3013769&m=65912",
@@ -269767,7 +270532,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
           { size: "M", price: 47.0, url: "https://www.awin1.com/pclick.php?p=43856282616&a=3013769&m=65912" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43856282617&a=3013769&m=65912" },
           { size: "XL", price: 47.0, url: "https://www.awin1.com/pclick.php?p=43856282618&a=3013769&m=65912" },
-          { size: "2XL", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881601332&a=3013769&m=65912" },
+          { size: "2XL", price: 51.0, url: "https://www.awin1.com/pclick.php?p=43881601332&a=3013769&m=65912" },
         ],
       },
     ],
@@ -269807,7 +270572,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 47.0,
-        priceMax: 50.0,
+        priceMax: 51.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43881601325&a=3013769&m=65912",
@@ -269818,7 +270583,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
           { size: "M", price: 47.0, url: "https://www.awin1.com/pclick.php?p=43881601325&a=3013769&m=65912" },
           { size: "L", price: 47.0, url: "https://www.awin1.com/pclick.php?p=43918818998&a=3013769&m=65912" },
           { size: "XL", price: 47.0, url: "https://www.awin1.com/pclick.php?p=43881601326&a=3013769&m=65912" },
-          { size: "2XL", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881601327&a=3013769&m=65912" },
+          { size: "2XL", price: 51.0, url: "https://www.awin1.com/pclick.php?p=43881601327&a=3013769&m=65912" },
         ],
       },
       {
@@ -269849,7 +270614,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.0,
+        price: 49.0,
         priceMax: 50.0,
         shipping: 7.99,
         currency: "EUR",
@@ -269858,7 +270623,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881601329&a=3013769&m=65912" },
-          { size: "M", price: 48.0, url: "https://www.awin1.com/pclick.php?p=43881601330&a=3013769&m=65912" },
+          { size: "M", price: 49.0, url: "https://www.awin1.com/pclick.php?p=43881601330&a=3013769&m=65912" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881601331&a=3013769&m=65912" },
           { size: "XL", price: 50.0, url: "https://www.awin1.com/pclick.php?p=44223822030&a=3013769&m=65912" },
           { size: "2XL", price: 50.0, url: "https://www.awin1.com/pclick.php?p=44411928627&a=3013769&m=65912" },
@@ -269875,7 +270640,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.0,
+        price: 49.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38650241339&a=3013769&m=65912",
@@ -269924,30 +270689,24 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         priceMax: 51.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43881588050&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38914641973&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour_1382602-025_0.webp&feedId=89032&k=d451d8309ec4b3eadb6660a1d64c3bac1d60c888",
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 51.0, url: "https://www.awin1.com/pclick.php?p=43881588051&a=3013769&m=65912" },
           { size: "M", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881588050&a=3013769&m=65912" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881588052&a=3013769&m=65912" },
-          { size: "XL", price: 51.0, url: "https://www.awin1.com/pclick.php?p=38914641973&a=3013769&m=65912" },
+          { size: "XL", price: 50.0, url: "https://www.awin1.com/pclick.php?p=38914641973&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreES",
         price: 50.0,
-        priceMax: 51.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43881588056&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43881588055&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour_1382602-001_0.webp&feedId=89032&k=270208bcce6f1a778d5a869ed25fdf4200adccce",
         sizes: ["S", "M", "L"],
-        sizePrices: [
-          { size: "S", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881588056&a=3013769&m=65912" },
-          { size: "M", price: 51.0, url: "https://www.awin1.com/pclick.php?p=43881588055&a=3013769&m=65912" },
-          { size: "L", price: 50.0, url: "https://www.awin1.com/pclick.php?p=43881588057&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -269979,16 +270738,18 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       {
         store: "FootStoreES",
         price: 51.47,
-        priceMax: 54.44,
+        priceMax: 75.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43881612291&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6005131-008-6a7b03605619a-1.webp&feedId=89032&k=6a9e97ce84fb3d12406d6ae95d0b06561732817d",
-        sizes: ["S", "M", "XL"],
+        sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 51.47, url: "https://www.awin1.com/pclick.php?p=43881612291&a=3013769&m=65912" },
           { size: "M", price: 54.44, url: "https://www.awin1.com/pclick.php?p=43881612292&a=3013769&m=65912" },
+          { size: "L", price: 75.0, url: "https://www.awin1.com/pclick.php?p=43881612293&a=3013769&m=65912" },
           { size: "XL", price: 51.47, url: "https://www.awin1.com/pclick.php?p=43881612294&a=3013769&m=65912" },
+          { size: "2XL", price: 75.0, url: "https://www.awin1.com/pclick.php?p=44729494225&a=3013769&m=65912" },
         ],
       },
       {
@@ -270021,10 +270782,11 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44014872168&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45361903119&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-1373882-338-rack-green-1.webp&feedId=89032&k=f0e75c57bcf703a5fcb4af50232dd954362001af",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
+          { size: "XS", price: 51.0, url: "https://www.awin1.com/pclick.php?p=45361903119&a=3013769&m=65912" },
           { size: "S", price: 55.0, url: "https://www.awin1.com/pclick.php?p=44014872166&a=3013769&m=65912" },
           { size: "M", price: 55.0, url: "https://www.awin1.com/pclick.php?p=44014872167&a=3013769&m=65912" },
           { size: "L", price: 51.0, url: "https://www.awin1.com/pclick.php?p=44014872168&a=3013769&m=65912" },
@@ -270132,7 +270894,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44419837959&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6005899-026-castlerock-lumos-lime-reflective-1.webp&feedId=89032&k=289368f94cc5d32909dac856f766929e4ea12e13",
-        sizes: ["S", "L", "XL"],
+        sizes: ["S", "L"],
       },
     ],
   },
@@ -270145,7 +270907,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270154,9 +270916,9 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-410-pantalon-de-survetement-extensible-under-armour-challenger-midnight-navy" },
-          { size: "M", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-410-pantalon-de-survetement-extensible-under-armour-challenger-midnight-navy" },
+          { size: "M", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-410-pantalon-de-survetement-extensible-under-armour-challenger-midnight-navy" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-410-pantalon-de-survetement-extensible-under-armour-challenger-midnight-navy" },
-          { size: "XL", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-410-pantalon-de-survetement-extensible-under-armour-challenger-midnight-navy" },
+          { size: "XL", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-410-pantalon-de-survetement-extensible-under-armour-challenger-midnight-navy" },
         ],
       },
     ],
@@ -270170,7 +270932,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270178,8 +270940,8 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/n/under-armour_6004044-025_castlerock_3.webp",
         sizes: ["S", "M", "L", "2XL"],
         sizePrices: [
-          { size: "S", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-025-pantalon-de-survetement-extensible-under-armour-challenger-castlerock" },
-          { size: "M", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-025-pantalon-de-survetement-extensible-under-armour-challenger-castlerock" },
+          { size: "S", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-025-pantalon-de-survetement-extensible-under-armour-challenger-castlerock" },
+          { size: "M", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-025-pantalon-de-survetement-extensible-under-armour-challenger-castlerock" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-025-pantalon-de-survetement-extensible-under-armour-challenger-castlerock" },
           { size: "2XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-025-pantalon-de-survetement-extensible-under-armour-challenger-castlerock" },
         ],
@@ -270195,7 +270957,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270204,14 +270966,14 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-001-pantalon-de-survetement-extensible-under-armour-challenger-black-white" },
-          { size: "M", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-001-pantalon-de-survetement-extensible-under-armour-challenger-black-white" },
+          { size: "M", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-001-pantalon-de-survetement-extensible-under-armour-challenger-black-white" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-001-pantalon-de-survetement-extensible-under-armour-challenger-black-white" },
           { size: "XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-001-pantalon-de-survetement-extensible-under-armour-challenger-black-white" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270220,9 +270982,9 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
-          { size: "M", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
-          { size: "L", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
-          { size: "XL", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
+          { size: "M", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
+          { size: "L", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
+          { size: "XL", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004044-002-pantalon-de-survetement-extensible-under-armour-challenger-black" },
         ],
       },
     ],
@@ -270408,8 +271170,9 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1373882-338-pantalon-de-survetement-under-armour-icon-fleece-rack-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/n/under-armour-1373882-338-rack-green-1.webp",
-        sizes: ["S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L", "XL"],
         sizePrices: [
+          { size: "XS", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1373882-338-pantalon-de-survetement-under-armour-icon-fleece-rack-green" },
           { size: "S", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1373882-338-pantalon-de-survetement-under-armour-icon-fleece-rack-green" },
           { size: "M", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1373882-338-pantalon-de-survetement-under-armour-icon-fleece-rack-green" },
           { size: "L", price: 52.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1373882-338-pantalon-de-survetement-under-armour-icon-fleece-rack-green" },
@@ -270427,7 +271190,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 84.0,
+        price: 82.0,
         priceMax: 95.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270435,7 +271198,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/n/under-armour-6005898-498-wham-blue-reflective-4.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6005898-498-pantalon-de-survetement-under-armour-velociti-pro-storm-wham-blue-reflective" },
+          { size: "S", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6005898-498-pantalon-de-survetement-under-armour-velociti-pro-storm-wham-blue-reflective" },
           { size: "M", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6005898-498-pantalon-de-survetement-under-armour-velociti-pro-storm-wham-blue-reflective" },
           { size: "L", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6005898-498-pantalon-de-survetement-under-armour-velociti-pro-storm-wham-blue-reflective" },
           { size: "XL", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6005898-498-pantalon-de-survetement-under-armour-velociti-pro-storm-wham-blue-reflective" },
@@ -270520,6 +271283,9 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk67: ApparelProduct[] = [
   {
     id: "under-armour-polo-de-manga-larga-under-armour-challenger-gris",
     brand: "Under Armour",
@@ -270617,7 +271383,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270626,8 +271392,8 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
           { size: "S", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
-          { size: "M", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
-          { size: "L", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
+          { size: "M", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
+          { size: "L", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
           { size: "XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
           { size: "2XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-025-polo-manches-longues-under-armour-challenger-castlerock" },
         ],
@@ -270643,7 +271409,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 47.0,
+        price: 48.0,
         priceMax: 50.0,
         shipping: 6.99,
         currency: "EUR",
@@ -270651,10 +271417,10 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/n/under-armour_6004043-001_black_1.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
         sizePrices: [
-          { size: "S", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
+          { size: "S", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
           { size: "M", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
           { size: "L", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
-          { size: "XL", price: 47.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
+          { size: "XL", price: 48.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
           { size: "2XL", price: 50.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6004043-001-polo-manches-longues-under-armour-challenger-black" },
         ],
       },
@@ -270750,7 +271516,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 69.0,
+        price: 71.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6009894-008-short-under-armour-challenger-elite-ultimate-black",
@@ -270928,20 +271694,12 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 45.0,
-        priceMax: 46.0,
+        price: 46.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43881612521&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43881612518&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fn%2Funder-armour-6004072-100-white-ultimate-black-2.webp&feedId=89032&k=f66c66a50d4e250127be10fc8c1842361d57ad15",
         sizes: ["XS", "S", "M", "L", "XL"],
-        sizePrices: [
-          { size: "XS", price: 46.0, url: "https://www.awin1.com/pclick.php?p=43881612518&a=3013769&m=65912" },
-          { size: "S", price: 46.0, url: "https://www.awin1.com/pclick.php?p=43881612519&a=3013769&m=65912" },
-          { size: "M", price: 46.0, url: "https://www.awin1.com/pclick.php?p=43881612520&a=3013769&m=65912" },
-          { size: "L", price: 45.0, url: "https://www.awin1.com/pclick.php?p=43881612521&a=3013769&m=65912" },
-          { size: "XL", price: 46.0, url: "https://www.awin1.com/pclick.php?p=43881612522&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -271179,7 +271937,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 41.0,
+        price: 43.0,
         priceMax: 44.0,
         shipping: 6.99,
         currency: "EUR",
@@ -271188,8 +271946,8 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
           { size: "S", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6010362-001-t-shirt-under-armour-gfb-black" },
-          { size: "M", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6010362-001-t-shirt-under-armour-gfb-black" },
-          { size: "L", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6010362-001-t-shirt-under-armour-gfb-black" },
+          { size: "M", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6010362-001-t-shirt-under-armour-gfb-black" },
+          { size: "L", price: 43.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6010362-001-t-shirt-under-armour-gfb-black" },
           { size: "XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6010362-001-t-shirt-under-armour-gfb-black" },
         ],
       },
@@ -271204,7 +271962,7 @@ const minedApparelProductsChunk66: ApparelProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 100.0,
+        price: 99.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1387162-002-veste-d-entrainement-under-armour-challenger-pro-black-fire-fire",
@@ -271554,4 +272312,5 @@ export const apparelProducts: ApparelProduct[] = [
   ...minedApparelProductsChunk64,
   ...minedApparelProductsChunk65,
   ...minedApparelProductsChunk66,
+  ...minedApparelProductsChunk67,
 ];
