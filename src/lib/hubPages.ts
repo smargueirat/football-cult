@@ -22,11 +22,17 @@ export function breadcrumbLd(locale: HubLocale, trail: { name: string; path?: st
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    // Search Console (2026-09-23): "Falta el campo item" en itemListElement.
+    // Bug real: el inicio del trail siempre pasa path: "" (raíz del locale,
+    // ej. /es), y `c.path ? ... : {}` trata "" como falsy -- así que el
+    // primer breadcrumb de TODAS las páginas (no el último, donde omitir
+    // item es intencional y válido) quedaba sin "item". Chequear undefined,
+    // no truthiness.
     itemListElement: trail.map((c, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      ...(c.path ? { item: `${SITE_URL}/${locale}${c.path}` } : {}),
+      ...(c.path !== undefined ? { item: `${SITE_URL}/${locale}${c.path}` } : {}),
     })),
   };
 }

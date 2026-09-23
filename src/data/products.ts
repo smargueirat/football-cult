@@ -84278,6 +84278,16 @@ export function bestOffer(product: Product): Offer | undefined {
     .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
 }
 
+// Search Console (2026-09-23): "Falta el campo image" en datos estructurados
+// de Producto. Mismo bug de fondo que el de "offers" documentado en
+// camiseta/[id]/page.tsx -- bestOffer() da undefined si NO hay ninguna
+// oferta en stock, y aunque encuentre una, esa oferta puntual (a menudo
+// eBay) puede no traer foto aunque otra oferta del mismo producto sí.
+// Cae a cualquier oferta, en stock o no, que sí tenga imageUrl.
+export function productImage(product: Product): string | undefined {
+  return bestOffer(product)?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
+}
+
 // sin aportar nada que el usuario vaya a usar.
 // principal, así que no cuenta como "en baja" para el filtro/sección.
 export function productPriceDropped(product: Product, country: CountryCode): boolean {

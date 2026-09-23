@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
   Product,
-  bestOffer,
   findProduct,
+  productImage,
   products,
   teamNames,
   typeNames,
@@ -21,7 +21,7 @@ const SITE_URL = "https://football-cult.com";
 function productJsonLd(product: Product, locale: string) {
   const team = teamNames[product.teamKey].es;
   const type = typeNames[product.typeKey].es;
-  const image = bestOffer(product)?.imageUrl;
+  const image = productImage(product);
 
   // Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
   // de un producto están agotadas, esto antes omitía "offers" del todo --
@@ -76,7 +76,7 @@ export async function generateMetadata({
   const type = typeNames[product.typeKey].es;
   const title = `${team} ${type} ${product.season} — Comparar precios | Football Cult`;
   const description = `Compará precios de la camiseta ${type.toLowerCase()} de ${team} (${product.season}) entre distintas tiendas y comprá donde te convenga.`;
-  const image = bestOffer(product)?.imageUrl;
+  const image = productImage(product);
 
   return {
     title,

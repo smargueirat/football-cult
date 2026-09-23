@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { bestOffer, brandNames, findProduct, teamNames, typeNames } from "@/data/products";
+import { brandNames, findProduct, productImage, teamNames, typeNames } from "@/data/products";
 
 export const alt = "Football Cult Archive";
 export const size = { width: 1200, height: 630 };
@@ -72,7 +72,7 @@ export default async function Image({
   const team = teamNames[product.teamKey].es;
   const type = typeNames[product.typeKey].es;
   const brand = product.brand ? brandNames[product.brand] : null;
-  const photo = bestOffer(product)?.imageUrl;
+  const photo = productImage(product);
   const titleText = `${team} ${type}`;
   const signatureText = "Football Cult Archive";
 
