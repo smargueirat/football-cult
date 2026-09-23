@@ -65,6 +65,15 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
             {t.botas.bestPrice}: {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
           </p>
 
+          {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
+              precio por mail (ver FavoritesContext.tsx y check-prices). */}
+          <button
+            onClick={() => toggleFavorite(ticket.id)}
+            className="mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+          >
+            {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
+          </button>
+
           <div className="mt-3 flex flex-col gap-3">
             {sortedOffers.map((offer: TicketOffer, i) => (
               <div

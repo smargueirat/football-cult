@@ -106,6 +106,17 @@ export default function GearDetailClient({
             {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
           </p>
 
+          {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
+              precio por mail (ver FavoritesContext.tsx). Desde que
+              check-prices también revisa botas/guantes/pelotas/ropa
+              (09-23, antes solo camisetas) esta promesa ya es real acá. */}
+          <button
+            onClick={() => toggleFavorite(item.id)}
+            className="mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+          >
+            {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
+          </button>
+
           {hasDistinctPhotos && (
             <p className="mt-4 text-xs text-[#675c44]">{t.botas.differentPhotosNote}</p>
           )}

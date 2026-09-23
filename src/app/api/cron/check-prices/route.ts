@@ -4,17 +4,29 @@ import { gunzipSync } from "zlib";
 import { parse } from "csv-parse/sync";
 import { Resend } from "resend";
 import { getRedis, isRedisConfigured } from "@/lib/redis";
-import { Offer, formatOfferMoney, products, teamNames, typeNames } from "@/data/products";
+import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
+import { products, teamNames, typeNames } from "@/data/products";
+import { bootProducts } from "@/data/boots";
+import { gloveProducts } from "@/data/gloves";
+import { ballProducts } from "@/data/balls";
+import { apparelProducts } from "@/data/apparel";
+import { ticketProducts } from "@/data/tickets";
 
 const SITE_URL = "https://football-cult.com";
 
-export const maxDuration = 60;
+// Antes solo camisetas (6-7 tiendas, un puñado de miles de ofertas). Ahora
+// se suman botas/guantes/pelotas/ropa/tickets -- mucho más volumen contra
+// los MISMOS feeds gigantes (FootStoreES ronda 167K filas). 60s alcanzaba
+// para el volumen viejo; con más categorías cruzando los mismos feeds
+// conviene margen.
+export const maxDuration = 120;
 
 const FEED_URLS: Record<string, string | undefined> = {
   PlanetFoot: process.env.AWIN_FEED_URL_PLANETFOOT,
   FansJerseyHub: process.env.AWIN_FEED_URL_FANSJERSEYHUB,
   ComoFCShop: process.env.AWIN_FEED_URL_COMOFC,
   DeporteOutletES: process.env.AWIN_FEED_URL_DEPORTEOUTLET,
+  DeporteOutlet: process.env.AWIN_FEED_URL_DEPORTEOUTLET,
   FootStoreES: process.env.AWIN_FEED_URL_FOOTSTORE_ES,
   FootStoreFR: process.env.AWIN_FEED_URL_FOOTSTORE_FR,
   SportIsGoodES: process.env.AWIN_FEED_URL_SPORTISGOOD_ES,
@@ -23,7 +35,26 @@ const FEED_URLS: Record<string, string | undefined> = {
   AdidasPT: process.env.AWIN_FEED_URL_ADIDAS_PT,
   BSTNIT: process.env.AWIN_FEED_URL_BSTN_IT,
   DecathlonIE: process.env.AWIN_FEED_URL_DECATHLONIE,
+  // Nuevos (09-23, extensión a botas/guantes/pelotas/ropa/tickets) -- las
+  // env vars ya existían (usadas por el mining nocturno), esta era la
+  // única sección del sitio que todavía no las conocía.
+  ForumSport: process.env.AWIN_FEED_URL_FORUMSPORT,
+  ClovisCalcadosBR: process.env.AWIN_FEED_URL_CLOVIS_BR,
+  GigasportDE: process.env.AWIN_FEED_URL_GIGASPORT_DE,
+  GigasportCH: process.env.AWIN_FEED_URL_GIGASPORT_CH,
+  GigasportFR: process.env.AWIN_FEED_URL_GIGASPORT_FR,
+  FootballTicketNetDE: process.env.AWIN_FEED_URL_TICKETNET_DE,
+  FootballTicketNetUK: process.env.AWIN_FEED_URL_TICKETNET_UK,
+  FootballTicketNetUS: process.env.AWIN_FEED_URL_TICKETNET_US,
 };
+
+// Tiendas de botas SIN feed real: FutbolEmotion (se descarga aparte, esquema
+// TradeTracker distinto), ProSoccer (scrape por talla, sin CSV), NikeCL/
+// NikeAR/PumaAR (minadas a mano por sesión de Chrome, Cloudflare bloquea
+// fetch headless -- ver boots-mining/README.md). Sus ofertas ya se
+// saltean hoy mismo para camisetas (cualquier store fuera de FEED_URLS),
+// este comentario solo documenta que la ausencia es a propósito, no un
+// olvido.
 
 // Mystery Shirt Club isn't onboarded via an Awin datafeed CSV — it has none
 // registered — so we mine/re-price it straight from its public Shopify
@@ -86,6 +117,157 @@ function parsePrice(raw: string | undefined): number | null {
   return match ? parseFloat(match[0]) : null;
 }
 
+// Antes: `rows.find(r => r.aw_deep_link === offer.url)` -- O(filas) por
+// CADA oferta. Con solo camisetas ya rozaba el límite; sumar botas/
+// guantes/pelotas/ropa/tickets multiplica la cantidad de ofertas contra
+// los MISMOS feeds de cientos de miles de filas (FootStoreES ~167K) sin
+// achicar los feeds -- un índice por aw_deep_link lo vuelve O(1) por
+// oferta, la diferencia entre terminar en segundos o pasarse de
+// maxDuration.
+function indexFeed(rows: FeedRow[]): Map<string, FeedRow> {
+  const index = new Map<string, FeedRow>();
+  for (const row of rows) {
+    if (row.aw_deep_link) index.set(row.aw_deep_link, row);
+  }
+  return index;
+}
+
+interface CatalogOffer {
+  store: string;
+  price: number;
+  currency: OfferCurrencyCode;
+  url: string;
+}
+interface CatalogItem {
+  id: string;
+  offers: CatalogOffer[];
+}
+interface Drop {
+  category: string;
+  productId: string;
+  store: string;
+  from: number;
+  to: number;
+  currency: OfferCurrencyCode;
+}
+
+async function checkCatalog(
+  category: string,
+  items: CatalogItem[],
+  feedIndexCache: Map<string, Map<string, FeedRow>>,
+  redis: Awaited<ReturnType<typeof getRedis>>,
+  errors: string[]
+): Promise<Drop[]> {
+  const drops: Drop[] = [];
+  for (const item of items) {
+    for (const offer of item.offers) {
+      const feedUrl = FEED_URLS[offer.store];
+      const shopifyStore = SHOPIFY_STORES[offer.store];
+      if (!feedUrl && !shopifyStore) continue;
+
+      try {
+        if (!feedIndexCache.has(offer.store)) {
+          const rows = shopifyStore
+            ? await fetchShopifyFeed(shopifyStore.domain, shopifyStore.awinmid)
+            : await fetchFeed(feedUrl!);
+          feedIndexCache.set(offer.store, indexFeed(rows));
+        }
+        const match = feedIndexCache.get(offer.store)!.get(offer.url);
+        if (!match) continue;
+
+        const currentPrice = parsePrice(match.sale_price ?? match.price ?? match.search_price);
+        if (currentPrice == null) continue;
+
+        const priceKey = `lastPrice:${category}:${item.id}:${offer.store}`;
+        const storedRaw = await redis.get(priceKey);
+        const lastKnownPrice = storedRaw ? parseFloat(storedRaw) : offer.price;
+
+        if (currentPrice < lastKnownPrice) {
+          drops.push({
+            category,
+            productId: item.id,
+            store: offer.store,
+            from: lastKnownPrice,
+            to: currentPrice,
+            currency: offer.currency,
+          });
+        }
+
+        await redis.set(priceKey, currentPrice.toString());
+      } catch (err) {
+        errors.push(`${category}/${item.id}/${offer.store}: ${(err as Error).message}`);
+      }
+    }
+  }
+  return drops;
+}
+
+// Un lugar por categoría: cómo arma el link y el nombre legible que va en
+// el mail. Todo dato real (marca/modelo/evento ya vienen del feed en cada
+// data file), nada inventado acá.
+const CATALOG_CONFIGS: {
+  category: string;
+  items: CatalogItem[];
+  urlPath: (id: string) => string;
+  nameOf: (id: string) => string | null;
+}[] = [
+  {
+    category: "jersey",
+    items: products,
+    urlPath: (id) => `camiseta/${id}`,
+    nameOf: (id) => {
+      const p = products.find((x) => x.id === id);
+      if (!p) return null;
+      return `${teamNames[p.teamKey].es} ${typeNames[p.typeKey].es} ${p.season}`;
+    },
+  },
+  {
+    category: "boot",
+    items: bootProducts,
+    urlPath: (id) => `botas/${id}`,
+    nameOf: (id) => {
+      const p = bootProducts.find((x) => x.id === id);
+      return p ? `${p.brand} ${p.model}` : null;
+    },
+  },
+  {
+    category: "glove",
+    items: gloveProducts,
+    urlPath: (id) => `guantes/${id}`,
+    nameOf: (id) => {
+      const p = gloveProducts.find((x) => x.id === id);
+      return p ? `${p.brand} ${p.model}` : null;
+    },
+  },
+  {
+    category: "ball",
+    items: ballProducts,
+    urlPath: (id) => `pelotas/${id}`,
+    nameOf: (id) => {
+      const p = ballProducts.find((x) => x.id === id);
+      return p ? `${p.brand} ${p.model}` : null;
+    },
+  },
+  {
+    category: "apparel",
+    items: apparelProducts,
+    urlPath: (id) => `ropa/${id}`,
+    nameOf: (id) => {
+      const p = apparelProducts.find((x) => x.id === id);
+      return p ? `${p.brand} ${p.model}` : null;
+    },
+  },
+  {
+    category: "ticket",
+    items: ticketProducts,
+    urlPath: (id) => `tickets/${id}`,
+    nameOf: (id) => {
+      const p = ticketProducts.find((x) => x.id === id);
+      return p ? p.event : null;
+    },
+  },
+];
+
 export async function GET(req: NextRequest) {
   const authHeader = req.headers.get("authorization");
   if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
@@ -97,77 +279,48 @@ export async function GET(req: NextRequest) {
   }
   const redis = await getRedis();
 
-  const feedCache = new Map<string, FeedRow[]>();
-  const summary: { productId: string; store: string; from: number; to: number; currency: Offer["currency"] }[] =
-    [];
+  // Un solo cache de feeds indexados COMPARTIDO entre las 6 categorías --
+  // FootStoreES/FR, SportIsGoodES/FR y DeporteOutlet los usan varias
+  // categorías a la vez, así que cada feed se descarga/indexa UNA sola
+  // vez por corrida, no una vez por categoría.
+  const feedIndexCache = new Map<string, Map<string, FeedRow>>();
   const errors: string[] = [];
 
-  for (const product of products) {
-    for (const offer of product.offers) {
-      const feedUrl = FEED_URLS[offer.store];
-      const shopifyStore = SHOPIFY_STORES[offer.store];
-      if (!feedUrl && !shopifyStore) continue;
-
-      try {
-        if (!feedCache.has(offer.store)) {
-          feedCache.set(
-            offer.store,
-            shopifyStore
-              ? await fetchShopifyFeed(shopifyStore.domain, shopifyStore.awinmid)
-              : await fetchFeed(feedUrl!)
-          );
-        }
-        const rows = feedCache.get(offer.store)!;
-        const match = rows.find((r) => r.aw_deep_link === offer.url);
-        if (!match) continue;
-
-        const currentPrice = parsePrice(match.sale_price ?? match.price ?? match.search_price);
-        if (currentPrice == null) continue;
-
-        const priceKey = `lastPrice:${product.id}:${offer.store}`;
-        const storedRaw = await redis.get(priceKey);
-        const lastKnownPrice = storedRaw ? parseFloat(storedRaw) : offer.price;
-
-        if (currentPrice < lastKnownPrice) {
-          summary.push({
-            productId: product.id,
-            store: offer.store,
-            from: lastKnownPrice,
-            to: currentPrice,
-            currency: offer.currency,
-          });
-        }
-
-        await redis.set(priceKey, currentPrice.toString());
-      } catch (err) {
-        errors.push(`${product.id}/${offer.store}: ${(err as Error).message}`);
-      }
-    }
+  const allDrops: Drop[] = [];
+  let totalChecked = 0;
+  for (const cfg of CATALOG_CONFIGS) {
+    totalChecked += cfg.items.length;
+    const drops = await checkCatalog(cfg.category, cfg.items, feedIndexCache, redis, errors);
+    allDrops.push(...drops);
   }
 
   // Un mail por producto, no por oferta -- si dos tiendas del mismo
   // producto bajaron en la misma corrida, se avisa una sola vez con la
   // mejor de las dos (menor precio nuevo). Los suscriptores son el
   // registro que /api/price-alerts arma cuando alguien marca un
-  // favorito estando logueado (ver comentario en FavoritesContext.tsx).
+  // favorito estando logueado (ver comentario en FavoritesContext.tsx) --
+  // esa suscripción se guarda por id "pelado", sin categoría, así que
+  // acá alcanza con `priceAlertSubscribers:{id}` sea cual sea la
+  // categoría real del producto.
   let alertsSent = 0;
   const apiKey = process.env.RESEND_API_KEY;
-  if (apiKey && summary.length > 0) {
+  if (apiKey && allDrops.length > 0) {
     const resend = new Resend(apiKey);
-    const dropsByProduct = new Map<string, (typeof summary)[number]>();
-    for (const drop of summary) {
-      const existing = dropsByProduct.get(drop.productId);
-      if (!existing || drop.to < existing.to) dropsByProduct.set(drop.productId, drop);
+    const dropsByKey = new Map<string, Drop>();
+    for (const drop of allDrops) {
+      const key = `${drop.category}:${drop.productId}`;
+      const existing = dropsByKey.get(key);
+      if (!existing || drop.to < existing.to) dropsByKey.set(key, drop);
     }
 
-    for (const [productId, drop] of dropsByProduct) {
-      const subscribers = await redis.sMembers(`priceAlertSubscribers:${productId}`);
+    for (const [, drop] of dropsByKey) {
+      const subscribers = await redis.sMembers(`priceAlertSubscribers:${drop.productId}`);
       if (subscribers.length === 0) continue;
 
-      const product = products.find((p) => p.id === productId);
-      if (!product) continue;
-      const name = `${teamNames[product.teamKey].es} ${typeNames[product.typeKey].es} ${product.season}`;
-      const url = `${SITE_URL}/es/camiseta/${productId}`;
+      const cfg = CATALOG_CONFIGS.find((c) => c.category === drop.category)!;
+      const name = cfg.nameOf(drop.productId);
+      if (!name) continue;
+      const url = `${SITE_URL}/es/${cfg.urlPath(drop.productId)}`;
       const fromMoney = formatOfferMoney(drop.from, drop.currency);
       const toMoney = formatOfferMoney(drop.to, drop.currency);
 
@@ -182,10 +335,10 @@ export async function GET(req: NextRequest) {
         });
         alertsSent += subscribers.length;
       } catch (err) {
-        errors.push(`alert email ${productId}: ${(err as Error).message}`);
+        errors.push(`alert email ${drop.category}/${drop.productId}: ${(err as Error).message}`);
       }
     }
   }
 
-  return NextResponse.json({ checked: products.length, drops: summary, alertsSent, errors });
+  return NextResponse.json({ checked: totalChecked, drops: allDrops, alertsSent, errors });
 }
