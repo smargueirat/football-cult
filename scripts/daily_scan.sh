@@ -100,7 +100,15 @@ if [[ -n "$(git status --porcelain)" ]]; then
     src/data/boots.ts \
     src/data/bootTierData.json \
     src/data/bootDominantColors.json \
+    src/data/gloves.ts \
+    src/data/balls.ts \
+    src/data/apparel.ts \
+    src/data/tickets.ts \
+    scripts/tickets-mining/venue_cities.json \
+    scripts/tickets-mining/venue_city_overrides.json \
     scripts/catalog-mining/ebay_full_cycle_state.json \
+    scripts/catalog-mining/ebay_full_cycle_state_IT.json \
+    scripts/catalog-mining/ebay_full_cycle_state_ES.json \
     scripts/catalog-mining/ebay_stale_check_state.json \
     scripts/catalog-mining/price_snapshot.json \
     2>/dev/null
