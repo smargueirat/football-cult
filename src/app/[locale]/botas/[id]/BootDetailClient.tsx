@@ -114,6 +114,17 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
             {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
           </p>
 
+          {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
+              precio por mail (ver FavoritesContext.tsx y check-prices).
+              Botas tiene su propio componente separado de
+              GearDetailClient.tsx -- por eso necesitaba esto aparte. */}
+          <button
+            onClick={() => toggleFavorite(boot.id)}
+            className="mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+          >
+            {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
+          </button>
+
           {hasDistinctPhotos && (
             <p className="mt-4 text-xs text-[#675c44]">{t.botas.differentPhotosNote}</p>
           )}
