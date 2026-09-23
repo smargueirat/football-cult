@@ -29,7 +29,10 @@ export default async function GuidePage({ params }: P) {
   if (!isSlug(slug)) notFound();
   const g = GUIDES[slug][locale];
   const ui = GUIDE_UI[locale];
-  const other = GUIDE_SLUGS.find((s) => s !== slug)!;
+  // find() daba solo LA PRIMERA guía distinta -- con 2 guías en total daba
+  // lo mismo, pero al sumar una 3ra/4ta (09-23) dejaba a la mayoría fuera
+  // del bloque de relacionadas sin ninguna razón real.
+  const others = GUIDE_SLUGS.filter((s) => s !== slug);
 
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-6 sm:px-8">
@@ -56,7 +59,9 @@ export default async function GuidePage({ params }: P) {
       <aside className="mt-10 rounded-2xl border border-[#C9A24B]/35 bg-[#fffdf8] p-5">
         <h2 className="font-vintage mb-3 text-lg text-[#1B3B2B]">{ui.related}</h2>
         <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-[#1B3B2B]">
-          <li><Link className="underline" href={`/${locale}/guia/${other}`}>{GUIDES[other][locale].title}</Link></li>
+          {others.map((s) => (
+            <li key={s}><Link className="underline" href={`/${locale}/guia/${s}`}>{GUIDES[s][locale].title}</Link></li>
+          ))}
           <li><Link className="underline" href={`/${locale}/guia-de-tallas`}>{ui.sizes}</Link></li>
           <li><Link className="underline" href={`/${locale}/autenticidad`}>{ui.auth}</Link></li>
           <li><Link className="underline" href={`/${locale}/ofertas`}>{ui.deals}</Link></li>
