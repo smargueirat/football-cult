@@ -337,6 +337,20 @@ export default function JerseyDetailClient({
                 )}
               </p>
             )}
+            {/* Mismo toggleFavorite que el corazón de la foto (favoritar YA
+                suscribe a la alerta de precio por mail, ver
+                FavoritesContext.tsx) -- esto solo lo hace visible acá, en
+                vez de depender de que alguien note el ícono chiquito de la
+                esquina o llegue a /favoritos para enterarse de que existe. */}
+            <button
+              onClick={() => {
+                triggerHaptic();
+                toggleFavorite(product.id);
+              }}
+              className="self-start text-left text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+            >
+              {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
+            </button>
           </div>
         </div>
 

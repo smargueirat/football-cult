@@ -172,6 +172,8 @@ export interface Translations {
     includedInTotal: string;
     authenticityGuideLink: string;
     pricesUpdatedOn: string;
+    priceAlertCtaOff: string;
+    priceAlertCtaOn: string;
   };
   footer: {
     about: string;
@@ -648,6 +650,8 @@ export const translations: Record<Locale, Translations> = {
       includedInTotal: "incluido en el total",
       authenticityGuideLink: "¿Cómo saber si es original?",
       pricesUpdatedOn: "Precios actualizados el {date}",
+      priceAlertCtaOff: "🔔 Avisame si baja de precio",
+      priceAlertCtaOn: "✓ Te avisamos por mail si baja",
     },
     footer: {
       about: "Sobre nosotros",
@@ -1130,6 +1134,8 @@ export const translations: Record<Locale, Translations> = {
       includedInTotal: "incluído no total",
       authenticityGuideLink: "Como saber se é original?",
       pricesUpdatedOn: "Preços atualizados em {date}",
+      priceAlertCtaOff: "🔔 Avise-me se o preço cair",
+      priceAlertCtaOn: "✓ Avisamos por e-mail se cair",
     },
     footer: {
       about: "Sobre nós",
@@ -1612,6 +1618,8 @@ export const translations: Record<Locale, Translations> = {
       includedInTotal: "included in the total",
       authenticityGuideLink: "How to tell if it's genuine?",
       pricesUpdatedOn: "Prices updated on {date}",
+      priceAlertCtaOff: "🔔 Notify me if the price drops",
+      priceAlertCtaOn: "✓ We'll email you if it drops",
     },
     footer: {
       about: "About us",
@@ -2094,6 +2102,8 @@ export const translations: Record<Locale, Translations> = {
       includedInTotal: "inclus dans le total",
       authenticityGuideLink: "Comment savoir si c'est authentique ?",
       pricesUpdatedOn: "Prix mis à jour le {date}",
+      priceAlertCtaOff: "🔔 Prévenez-moi si le prix baisse",
+      priceAlertCtaOn: "✓ On vous préviendra par mail",
     },
     footer: {
       about: "À propos",
@@ -2576,6 +2586,8 @@ export const translations: Record<Locale, Translations> = {
       includedInTotal: "incluso nel totale",
       authenticityGuideLink: "Come capire se è originale?",
       pricesUpdatedOn: "Prezzi aggiornati il {date}",
+      priceAlertCtaOff: "🔔 Avvisami se il prezzo scende",
+      priceAlertCtaOn: "✓ Ti avviseremo via email",
     },
     footer: {
       about: "Chi siamo",
