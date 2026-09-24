@@ -39,6 +39,7 @@ export interface StudyCopy {
   citeTitle: string;
   citeText: string;
   citeLine: string;
+  cardAlt: string;
 }
 
 export const STUDY: Record<HubLocale, StudyCopy> = {
@@ -89,6 +90,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "Los datos son libres de citar. Si los usás en una nota o un artículo, te agradecemos el enlace a esta página, que se actualiza sola y siempre muestra el número vigente.",
     citeLine: "Football Cult, «{title}», datos de {date}.",
+    cardAlt: "Tarjeta con las cifras del estudio de precios",
   },
   en: {
     title: "How much the same shirt's price changes from store to store",
@@ -137,6 +139,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "The data is free to cite. If you use it in an article, we'd appreciate a link to this page, which updates itself and always shows the current figure.",
     citeLine: "Football Cult, “{title}”, data from {date}.",
+    cardAlt: "Card with the key figures of the price study",
   },
   pt: {
     title: "Quanto muda o preço da mesma camisa de loja para loja",
@@ -185,6 +188,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "Os dados são livres de citar. Se os usares num artigo, agradecemos a ligação para esta página, que se atualiza sozinha e mostra sempre o número atual.",
     citeLine: "Football Cult, «{title}», dados de {date}.",
+    cardAlt: "Cartão com os números do estudo de preços",
   },
   fr: {
     title: "De combien varie le prix du même maillot selon la boutique",
@@ -233,6 +237,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "Les données sont libres de citation. Si vous les utilisez dans un article, un lien vers cette page est apprécié : elle se met à jour seule et affiche toujours le chiffre en vigueur.",
     citeLine: "Football Cult, « {title} », données du {date}.",
+    cardAlt: "Carte avec les chiffres de l'étude de prix",
   },
   it: {
     title: "Quanto cambia il prezzo della stessa maglia da negozio a negozio",
@@ -281,5 +286,25 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "I dati sono liberi da citare. Se li usi in un articolo, ti saremmo grati per un link a questa pagina, che si aggiorna da sola e mostra sempre il dato attuale.",
     citeLine: "Football Cult, «{title}», dati del {date}.",
+    cardAlt: "Scheda con i numeri dello studio sui prezzi",
   },
 };
+
+/** "551 camisetas · 14 tiendas": las unidades del pie de datos. Vivía
+ *  inline en la página como un ternario; se extrajo al necesitarla
+ *  también la tarjeta compartible (studyCard.tsx), para no tener dos
+ *  copias que se desincronicen. */
+export function studyUnits(locale: HubLocale): { shirts: string; stores: string } {
+  switch (locale) {
+    case "pt":
+      return { shirts: "camisas", stores: "lojas" };
+    case "fr":
+      return { shirts: "maillots", stores: "boutiques" };
+    case "it":
+      return { shirts: "maglie", stores: "negozi" };
+    case "en":
+      return { shirts: "shirts", stores: "stores" };
+    default:
+      return { shirts: "camisetas", stores: "tiendas" };
+  }
+}

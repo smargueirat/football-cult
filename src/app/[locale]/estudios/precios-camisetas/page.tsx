@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { priceStudy } from "@/lib/priceStudy";
-import { STUDY } from "@/lib/priceStudyStrings";
+import { STUDY, studyUnits } from "@/lib/priceStudyStrings";
 import { teamNames, typeNames } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
@@ -43,6 +43,7 @@ export default async function PriceStudyPage({ params }: P) {
   const locale = asLocale(raw);
   const s = priceStudy();
   const c = STUDY[locale];
+  const units = studyUnits(locale);
   const today = new Date().toLocaleDateString(locale, { year: "numeric", month: "long", day: "numeric" });
 
   const shirtName = (e: (typeof s.examples)[number]) =>
@@ -83,8 +84,7 @@ export default async function PriceStudyPage({ params }: P) {
       <Crumbs locale={locale} trail={[{ label: c.title }]} />
       <HubHeader h1={c.title} intro={c.intro} />
       <p className="-mt-5 mb-8 text-xs text-[#9a9a94]">
-        {c.updated} {today} · {s.products} {locale === "es" ? "camisetas" : locale === "pt" ? "camisas" : locale === "fr" ? "maillots" : locale === "it" ? "maglie" : "shirts"} · {s.stores}{" "}
-        {locale === "es" ? "tiendas" : locale === "pt" ? "lojas" : locale === "fr" ? "boutiques" : locale === "it" ? "negozi" : "stores"}
+        {c.updated} {today} · {s.products} {units.shirts} · {s.stores} {units.stores}
       </p>
 
       <div className="grid grid-cols-2 gap-3 sm:gap-4">
@@ -175,15 +175,38 @@ export default async function PriceStudyPage({ params }: P) {
 
       <section className="mt-12 rounded-2xl border border-[#1B3B2B]/20 bg-[#1B3B2B]/5 p-5">
         <h2 className="font-vintage text-lg text-[#1B3B2B]">{c.citeTitle}</h2>
-        <p className="mt-2 text-sm leading-relaxed text-[#3a3a36]">{c.citeText}</p>
-        <p className="mt-3 rounded-lg bg-white/70 px-3.5 py-2.5 text-xs leading-relaxed text-[#675c44]">
-          {fill(c.citeLine, { title: c.title, date: today })}
-          <br />
-          <span className="text-[#8a6a1f]">
-            {SITE_URL}/{locale}
-            {PATH}
-          </span>
-        </p>
+        <div className="mt-2 flex flex-col gap-4 sm:flex-row sm:items-start">
+          <div className="min-w-0 flex-1">
+            <p className="text-sm leading-relaxed text-[#3a3a36]">{c.citeText}</p>
+            <p className="mt-3 rounded-lg bg-white/70 px-3.5 py-2.5 text-xs leading-relaxed text-[#675c44]">
+              {fill(c.citeLine, { title: c.title, date: today })}
+              <br />
+              <span className="text-[#8a6a1f]">
+                {SITE_URL}/{locale}
+                {PATH}
+              </span>
+            </p>
+          </div>
+          {/* Tarjeta con las cifras, para guardar o compartir. Se sirve a
+              1000x1500 (ver tarjeta.png/route.tsx) aunque se muestre
+              chica: ese es el tamaño que necesita Pinterest, que además
+              busca <img> en el HTML y no lee la og:image. */}
+          <a
+            href={`/${locale}${PATH}/tarjeta.png`}
+            className="shrink-0 self-center sm:self-start"
+            aria-label={c.cardAlt}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`/${locale}${PATH}/tarjeta.png`}
+              alt={c.cardAlt}
+              width={1000}
+              height={1500}
+              loading="lazy"
+              className="h-auto w-[160px] rounded-xl border border-[#C9A24B]/40 shadow-sm"
+            />
+          </a>
+        </div>
       </section>
     </div>
   );
