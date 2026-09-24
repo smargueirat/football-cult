@@ -20,6 +20,7 @@ import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion } from "@/lib/jerseyVersion";
+import { isComparableStore } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -182,22 +183,34 @@ export default function JerseyDetailClient({
     versions.player.length > versions.fan.length ? "player" : "fan";
   const inMainVersion = (o: Offer) => offerVersion(o) === mainVersion;
 
-  const comparable = sortedOffers.filter(
+  // "Mejor precio" mira TODAS las tiendas que envían acá, marketplaces
+  // incluidos: si eBay es lo más barato, eso es lo que el usuario quiere
+  // ver, y para eso está el sitio.
+  const shippableHere = sortedOffers.filter(
     (o) => o.inStock && shipsHere(o) && inMainVersion(o)
   );
-  const bestOffer = comparable[0];
+  const bestOffer = shippableHere[0];
   const bestStore = bestOffer?.store;
   // Ahorro real frente a la oferta más cara de la MISMA versión: es el
   // número que justifica que el usuario esté acá y no comprando directo
   // en la primera tienda que encontró. Solo se muestra si hay 2+ tiendas
   // de verdad con las que comparar.
+  // El AHORRO, en cambio, solo se calcula entre minoristas oficiales de
+  // la misma versión. Con marketplaces y tiendas de réplicas dentro, la
+  // ficha llegó a anunciar "Ahorrás 90,21 EUR (76%)" comparando una
+  // réplica de 27,77 EUR contra una camiseta oficial de 117,98 -- el
+  // mismo error de categoría que mezclar versiones, y en el número más
+  // visible de la página. Las ofertas se siguen listando todas; lo que no
+  // se hace es prometer un ahorro apoyado en ellas.
+  const comparable = shippableHere.filter((o) => isComparableStore(o.store));
+  const cheapestOfficial = comparable[0];
   const dearest = comparable.length > 1 ? comparable[comparable.length - 1] : undefined;
   const savings =
-    bestOffer && dearest
+    cheapestOfficial && dearest
       ? {
-          abs: offerTotalInEUR(dearest) - offerTotalInEUR(bestOffer),
+          abs: offerTotalInEUR(dearest) - offerTotalInEUR(cheapestOfficial),
           pct: Math.round(
-            ((offerTotalInEUR(dearest) - offerTotalInEUR(bestOffer)) /
+            ((offerTotalInEUR(dearest) - offerTotalInEUR(cheapestOfficial)) /
               offerTotalInEUR(dearest)) *
               100
           ),

@@ -1,4 +1,5 @@
 import { splitByVersion } from "@/lib/jerseyVersion";
+import { isComparableStore } from "@/lib/officialStores";
 import { products } from "@/data/products";
 
 // Estudio de dispersión de precios, calculado EN BUILD desde el catálogo
@@ -20,7 +21,9 @@ import { products } from "@/data/products";
 //  - Al menos 2 TIENDAS DISTINTAS: dos ofertas de la misma tienda no son
 //    una comparación.
 const CURRENT_SEASONS = ["2026/27", "2025/26", "2026"];
-const EXCLUDED_STORES = new Set(["eBay", "eBay ES", "eBay IT", "eBay US", "FansJerseyHub", "Amazon"]);
+// La lista vive en officialStores.ts: la comparte el cálculo del
+// ahorro de la ficha, que si no anclaba el "ahorrás X%" en una tienda de
+// réplicas (ver el comentario de ese archivo).
 
 export interface StudyExample {
   id: string;
@@ -74,7 +77,7 @@ export function priceStudy(): PriceStudy {
   for (const p of products) {
     if (p.typeKey === "retro") continue;
     if (!CURRENT_SEASONS.includes(p.season)) continue;
-    const eligible = p.offers.filter((o) => o.currency === "EUR" && !EXCLUDED_STORES.has(o.store));
+    const eligible = p.offers.filter((o) => o.currency === "EUR" && isComparableStore(o.store));
 
     // Solo se comparan ofertas de la MISMA versión. La de jugador y la de
     // hincha son prendas distintas que las marcas separan por 50-70 EUR,
