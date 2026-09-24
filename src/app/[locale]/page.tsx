@@ -1,11 +1,14 @@
 import LazySearchExplorer from "@/components/LazySearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
 import HeroCarousel from "@/components/HeroCarousel";
+import HeroSearch from "@/components/HeroSearch";
 import CategorySections from "@/components/CategorySections";
 import PriceDropsSection from "@/components/PriceDropsSection";
 import LeagueShortcuts from "@/components/LeagueShortcuts";
 import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { translations } from "@/lib/i18n/translations";
+import { heroSuggestions } from "@/lib/heroSuggestions";
+import { trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
 import {
   SEASONS,
@@ -55,6 +58,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale: rawLocale } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const t = translations[locale];
+  const suggestions = heroSuggestions(locale);
+  const trust = trustStats();
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
 
   return (
@@ -101,7 +106,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="vintage-divider mt-6 max-w-2xl sm:mt-7" />
 
             <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#4a4438] sm:text-base">
-              {t.hero.h1Sub}
+              {/* El número de tiendas sale del contador real, no escrito
+                  a mano: la volanta decía "14 tiendas" (las del estudio de
+                  camisetas en euros) mientras la franja de abajo contaba
+                  37, dos cifras distintas en la misma pantalla. */}
+              {t.hero.h1Sub.replace("{s}", String(trust.stores))}
             </p>
 
             <ul className="mt-4 flex flex-wrap items-center gap-2">
@@ -116,6 +125,39 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <li className="font-card-title rounded-full bg-[#1B3B2B] px-3 py-1 text-[11px] tracking-wide text-[#F3E9C9] sm:text-xs">
                 {t.hero.h1Free}
               </li>
+            </ul>
+
+            {/* El catálogo y sus filtros vivían al final de la página,
+                después del carrusel, las categorías, las ligas y las
+                bajadas de precio: había que hacer bastante scroll antes
+                de poder buscar. Esto escribe en el mismo estado
+                compartido, no es un segundo buscador. */}
+            <HeroSearch suggestions={suggestions} />
+
+            {/* Franja de confianza con números CONTADOS del catálogo.
+                La versión propuesta decía "+10.000 artículos comparados"
+                y "tiendas 100% verificadas y oficiales": las dos falsas y
+                comprobables (comparan 7.584, y listamos eBay, Amazon y
+                una tienda de réplicas). Una franja de confianza que
+                miente es peor que no tenerla. */}
+            <ul className="mt-7 grid gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4">
+              {[
+                t.hero.trustCompared
+                  .replace("{n}", trust.comparedProducts.toLocaleString(locale))
+                  .replace("{s}", String(trust.stores)),
+                t.hero.trustShipping,
+                t.hero.trustFresh,
+              ].map((line) => (
+                <li
+                  key={line}
+                  className="vintage-card flex items-start gap-2.5 rounded-xl px-3.5 py-3 text-[13px] leading-snug text-[#4a4438] sm:text-sm"
+                >
+                  <span aria-hidden className="mt-px text-[#B8933F]">
+                    ◆
+                  </span>
+                  {line}
+                </li>
+              ))}
             </ul>
           </div>
         </section>

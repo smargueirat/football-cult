@@ -72,6 +72,12 @@ export interface Translations {
     h1Sub: string;
     h1Items: string[];
     h1Free: string;
+    searchPlaceholder: string;
+    searchCta: string;
+    searchTry: string;
+    trustCompared: string;
+    trustShipping: string;
+    trustFresh: string;
   };
   heroSlides: {
     eyebrow: string;
@@ -518,12 +524,18 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Comparamos precios de camisetas de selecciones, clubes y ligas de todo el mundo. Vos comprás directo donde quieras.",
       cta: "Ver catálogo",
-      h1Eyebrow: "Comparador de precios · 14 tiendas",
+      h1Eyebrow: "Comparador de precios",
       h1: "Camisetas y material de fútbol:",
       h1Accent: "el precio final, con envío incluido",
-      h1Sub: "Buscamos el mismo producto oficial en 14 tiendas europeas y te mostramos cuánto cuesta de verdad en cada una, con el envío ya sumado.",
+      h1Sub: "Buscamos el mismo producto oficial en {s} tiendas y te mostramos cuánto cuesta de verdad en cada una, con el envío ya sumado.",
       h1Items: ["Camisetas", "Botas", "Guantes", "Balones", "Ropa", "Entrenamiento"],
       h1Free: "Gratis y sin registrarte",
+      searchPlaceholder: "Buscá tu camiseta, club o época…",
+      searchCta: "Buscar",
+      searchTry: "Probá",
+      trustCompared: "{n} productos comparados en {s} tiendas",
+      trustShipping: "Precio final, con el envío ya sumado",
+      trustFresh: "Precios actualizados cada noche",
     },
     heroSlides: [
       {
@@ -1036,12 +1048,18 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Comparamos preços de camisas de seleções, clubes e ligas do mundo todo. Você compra direto onde quiser.",
       cta: "Ver catálogo",
-      h1Eyebrow: "Comparador de preços · 14 lojas",
+      h1Eyebrow: "Comparador de preços",
       h1: "Camisolas e material de futebol:",
       h1Accent: "o preço final, com portes incluídos",
-      h1Sub: "Procuramos o mesmo produto oficial em 14 lojas europeias e mostramos quanto custa mesmo em cada uma, com os portes já somados.",
+      h1Sub: "Procuramos o mesmo produto oficial em {s} lojas e mostramos quanto custa mesmo em cada uma, com os portes já somados.",
       h1Items: ["Camisolas", "Chuteiras", "Luvas", "Bolas", "Roupa", "Treino"],
       h1Free: "Grátis e sem registo",
+      searchPlaceholder: "Procura a tua camisola, clube ou época…",
+      searchCta: "Procurar",
+      searchTry: "Experimenta",
+      trustCompared: "{n} produtos comparados em {s} lojas",
+      trustShipping: "Preço final, com os portes já somados",
+      trustFresh: "Preços atualizados todas as noites",
     },
     heroSlides: [
       {
@@ -1553,12 +1571,18 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "We compare prices on national team, club, and league jerseys from all over the world. You buy directly wherever you want.",
       cta: "Shop now",
-      h1Eyebrow: "Price comparison · 14 stores",
+      h1Eyebrow: "Price comparison",
       h1: "Football shirts and gear:",
       h1Accent: "the final price, shipping included",
-      h1Sub: "We find the same official product across 14 European stores and show what it really costs at each one, with shipping already added.",
+      h1Sub: "We find the same official product across {s} stores and show what it really costs at each one, with shipping already added.",
       h1Items: ["Shirts", "Boots", "Gloves", "Balls", "Apparel", "Training"],
       h1Free: "Free, no sign-up",
+      searchPlaceholder: "Search a shirt, club or era…",
+      searchCta: "Search",
+      searchTry: "Try",
+      trustCompared: "{n} products compared across {s} stores",
+      trustShipping: "Final price, with shipping already added",
+      trustFresh: "Prices refreshed every night",
     },
     heroSlides: [
       {
@@ -2070,12 +2094,18 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Nous comparons les prix des maillots de sélections, de clubs et de championnats du monde entier. Vous achetez directement où vous voulez.",
       cta: "Acheter maintenant",
-      h1Eyebrow: "Comparateur de prix · 14 boutiques",
+      h1Eyebrow: "Comparateur de prix",
       h1: "Maillots et équipement de football :",
       h1Accent: "le prix final, livraison comprise",
-      h1Sub: "Nous cherchons le même produit officiel dans 14 boutiques européennes et montrons ce qu'il coûte vraiment dans chacune, livraison déjà incluse.",
+      h1Sub: "Nous cherchons le même produit officiel dans {s} boutiques et montrons ce qu'il coûte vraiment dans chacune, livraison déjà incluse.",
       h1Items: ["Maillots", "Chaussures", "Gants", "Ballons", "Vêtements", "Entraînement"],
       h1Free: "Gratuit, sans inscription",
+      searchPlaceholder: "Cherchez un maillot, un club, une époque…",
+      searchCta: "Chercher",
+      searchTry: "Essayez",
+      trustCompared: "{n} produits comparés dans {s} boutiques",
+      trustShipping: "Prix final, livraison déjà comprise",
+      trustFresh: "Prix actualisés chaque nuit",
     },
     heroSlides: [
       {
@@ -2587,12 +2617,18 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Confrontiamo i prezzi delle maglie di nazionali, club e campionati di tutto il mondo. Acquisti direttamente dove vuoi.",
       cta: "Acquista ora",
-      h1Eyebrow: "Comparatore di prezzi · 14 negozi",
+      h1Eyebrow: "Comparatore di prezzi",
       h1: "Maglie e materiale da calcio:",
       h1Accent: "il prezzo finale, spedizione inclusa",
-      h1Sub: "Cerchiamo lo stesso prodotto ufficiale in 14 negozi europei e mostriamo quanto costa davvero in ciascuno, spedizione già inclusa.",
+      h1Sub: "Cerchiamo lo stesso prodotto ufficiale in {s} negozi e mostriamo quanto costa davvero in ciascuno, spedizione già inclusa.",
       h1Items: ["Maglie", "Scarpini", "Guanti", "Palloni", "Abbigliamento", "Allenamento"],
       h1Free: "Gratis e senza registrarsi",
+      searchPlaceholder: "Cerca una maglia, un club, un'epoca…",
+      searchCta: "Cerca",
+      searchTry: "Prova",
+      trustCompared: "{n} prodotti confrontati in {s} negozi",
+      trustShipping: "Prezzo finale, spedizione già inclusa",
+      trustFresh: "Prezzi aggiornati ogni notte",
     },
     heroSlides: [
       {
