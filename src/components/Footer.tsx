@@ -51,6 +51,9 @@ export default function Footer() {
           <Link href="/entrenamiento" className="transition-colors hover:text-[#F3E9C9]">
             {t.entrenamiento.navLabel}
           </Link>
+          <Link href="/estudios/precios-camisetas" className="transition-colors hover:text-[#F3E9C9]">
+            {t.footer.priceStudy}
+          </Link>
           <Link href="/autenticidad" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.authenticity}
           </Link>

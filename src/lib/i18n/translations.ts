@@ -187,6 +187,7 @@ export interface Translations {
     france: string;
     italy: string;
     disclaimer: string;
+    priceStudy: string;
   };
   about: {
     title: string;
@@ -676,6 +677,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertCtaOn: "✓ Te avisamos por mail si baja",
     },
     footer: {
+      priceStudy: "Estudio de precios",
       about: "Sobre nosotros",
       contact: "Contacto",
       privacy: "Privacidad",
@@ -1176,6 +1178,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertCtaOn: "✓ Avisamos por e-mail se cair",
     },
     footer: {
+      priceStudy: "Estudo de preços",
       about: "Sobre nós",
       contact: "Contato",
       privacy: "Privacidade",
@@ -1676,6 +1679,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertCtaOn: "✓ We'll email you if it drops",
     },
     footer: {
+      priceStudy: "Price study",
       about: "About us",
       contact: "Contact",
       privacy: "Privacy",
@@ -2176,6 +2180,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertCtaOn: "✓ On vous préviendra par mail",
     },
     footer: {
+      priceStudy: "Étude des prix",
       about: "À propos",
       contact: "Contact",
       privacy: "Confidentialité",
@@ -2676,6 +2681,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertCtaOn: "✓ Ti avviseremo via email",
     },
     footer: {
+      priceStudy: "Studio sui prezzi",
       about: "Chi siamo",
       contact: "Contatti",
       privacy: "Privacy",

@@ -98,6 +98,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/guia",
     "/guia/camiseta-original",
     "/guia/talle-fan-vs-jugador",
+    "/estudios/precios-camisetas",
     ...seasonList().flatMap((se) => [`/temporada/${seasonSlug(se)}`, ...seasonTypes(se).map((t) => `/temporada/${seasonSlug(se)}/${t.type}`)]),
     ...(["botas", "guantes", "pelotas", "ropa", "entrenamiento"] as const).flatMap((sec) => brandFacets(sec).map((b) => `/${sec}/marca/${b.slug}`)),
     ...groundFacets().map((g) => `/botas/terreno/${g.slug}`),
