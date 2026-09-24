@@ -27,7 +27,7 @@ import {
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_ORDER } from "@/lib/bootTier";
-import { BOOT_GROUND_TYPE_INFO, BOOT_GROUND_TYPE_ORDER } from "@/lib/bootGroundType";
+import { BOOT_GROUND_TYPE_ORDER } from "@/lib/bootGroundType";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH } from "@/lib/colorClassify";
 import Chip from "./Chip";
 import TeamBadge from "./TeamBadge";
@@ -321,9 +321,9 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
                       active={bootGroundTypeFilter.includes(code)}
                       onClick={() => toggleBootGroundTypeFilter(code)}
                       className="flex-shrink-0 whitespace-nowrap"
-                      title={BOOT_GROUND_TYPE_INFO[code].description}
+                      title={t.botas.grounds[code].description}
                     >
-                      {BOOT_GROUND_TYPE_INFO[code].label}
+                      {t.botas.grounds[code].label}
                     </Chip>
                   ))}
                 </ScrollArrowRow>

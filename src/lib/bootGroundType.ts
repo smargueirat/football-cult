@@ -17,6 +17,10 @@ export type BootGroundType = "FG" | "AG" | "SG" | "TF" | "MG";
 
 export const BOOT_GROUND_TYPE_ORDER: BootGroundType[] = ["FG", "AG", "SG", "TF", "MG"];
 
+// SOLO fallback / referencia (y para scripts sin contexto de idioma). La
+// UI debe usar t.botas.grounds[code] -- esto estaba hardcodeado en español
+// y el filtro mostraba "FG · Firme", "AG · Sintético" igual en los 5
+// idiomas (reportado real por el usuario 2026-09-24).
 export const BOOT_GROUND_TYPE_INFO: Record<BootGroundType, { label: string; description: string }> = {
   FG: {
     label: "FG · Firme",

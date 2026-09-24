@@ -37,7 +37,7 @@ import {
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
-import { BOOT_GROUND_TYPE_INFO, BOOT_GROUND_TYPE_ORDER, bootMatchesGroundType } from "@/lib/bootGroundType";
+import { BOOT_GROUND_TYPE_ORDER, bootMatchesGroundType } from "@/lib/bootGroundType";
 import ScrollArrowRow from "./ScrollArrowRow";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import {
@@ -1064,9 +1064,9 @@ export default function SearchExplorer({
                           active={bootGroundTypeFilter.includes(code)}
                           onClick={() => toggleBootGroundTypeFilter(code)}
                           className="flex-shrink-0 whitespace-nowrap"
-                          title={BOOT_GROUND_TYPE_INFO[code].description}
+                          title={t.botas.grounds[code].description}
                         >
-                          {BOOT_GROUND_TYPE_INFO[code].label}
+                          {t.botas.grounds[code].label}
                         </Chip>
                       ))}
                     </ScrollArrowRow>
