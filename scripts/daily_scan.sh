@@ -139,3 +139,15 @@ recovered here after verifying tsc + the duplicate-id check pass clean."
     send_alert "Daily scan: uncommitted changes need manual review" "Uncommitted changes are sitting in /home/piojo/football-cult on branch $BRANCH, but they failed tsc or the duplicate-id check, so the safety net left them uncommitted on purpose. Needs a manual look before committing -- don't just force it through."
   fi
 fi
+
+# Un club nuevo que entra al catálogo sin liga en teamMeta.ts se trata como
+# selección nacional en silencio: se queda fuera de /liga/ y /pais/ y nadie
+# se entera, porque su página /equipo/ sí existe igual. No bloquea nada (no
+# es corrupción de datos, la ficha funciona), solo avisa.
+TEAM_LEAGUE_OUT="$(python3 scripts/check_team_leagues.py 2>&1)"
+echo "$TEAM_LEAGUE_OUT"
+if printf '%s' "$TEAM_LEAGUE_OUT" | grep -q '^AVISO teamMeta:'; then
+  send_alert "Daily scan: club nuevo sin liga en teamMeta.ts" "$TEAM_LEAGUE_OUT
+
+Agregarlo a TEAM_LEAGUE en src/data/teamMeta.ts (y la liga a LEAGUES si no existe todavía). Si a propósito no va a tener liga, sumarlo a KNOWN_WITHOUT_LEAGUE en scripts/check_team_leagues.py con el motivo."
+fi

@@ -20,6 +20,11 @@ const cases: [string, string, "es" | "en" | "pt" | "fr" | "it", string][] = [
   ["Pantalón corto mujer Jako Power - Bleu", "Jako", "es", "Pantalón corto de mujer Jako Power - Azul"],
   // el título ya empieza por la marca: solo cambia el color
   ["adidas COPA Gloves CLB Guantes JH3790 - plata", "adidas", "en", "adidas COPA Gloves CLB Guantes JH3790 - Silver"],
+  // segunda tanda: basura del feed, no francés ("plots de marquage" ->
+  // "implantes de marcapasos", "haie" -> "seto antilesión")
+  ["Kit de 25 implantes de marcapasos Sporti Pro - Jaune", "Sporti", "es", "Kit de 25 discos de marcaje Sporti Pro - Amarillo"],
+  ["Seto antilesión Sporti Soft - Rouge", "Sporti", "en", "Soft training hurdle Sporti Soft - Red"],
+  ["escala rítmica Sporti Agility - Bleu", "Sporti", "it", "Scala per agilità Sporti Agility - Blu"],
   // prefijo desconocido -> texto original intacto, nunca traducido a medias
   ["Cacharro rarísimo Xyz Modelo - Bleu", "Xyz", "en", "Cacharro rarísimo Xyz Modelo - Blue"],
 ];

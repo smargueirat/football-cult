@@ -4,8 +4,11 @@
 // arrastra products.ts al bundle). Cada slug de país es la teamKey de su
 // selección nacional (p. ej. "inglaterra"), así el nombre traducido sale
 // de teamNames. Un equipo que no figura en TEAM_LEAGUE es una selección.
-// Al sumar un club nuevo al catálogo: agregarlo acá, si no queda sin liga
-// (igual tiene su página /equipo/, pero no aparece en /liga/ ni /pais/).
+// Al sumar un club nuevo al catálogo hay que agregarlo acá, si no queda
+// sin liga (igual tiene su página /equipo/, pero no aparece en /liga/ ni
+// /pais/). No hace falta acordarse: scripts/check_team_leagues.py lo
+// detecta solo cruzando este mapa con teamCategory de productMeta.ts, y
+// lo corre el scan nocturno.
 
 export type HubLocale = "es" | "en" | "pt" | "fr" | "it";
 
@@ -53,6 +56,7 @@ export const LEAGUES: LeagueMeta[] = [
   { slug: "liga-chequia", country: "chequia", name: {"es": "Liga checa", "en": "Czech league", "pt": "Liga tcheca", "fr": "Ligue tchèque", "it": "Campionato ceco"} },
   { slug: "liga-suiza", country: "suiza", name: {"es": "Super League suiza", "en": "Swiss Super League", "pt": "Super Liga Suíça", "fr": "Super League suisse", "it": "Super League svizzera"} },
   { slug: "liga-austria", country: "austria", name: {"es": "Bundesliga austríaca", "en": "Austrian Bundesliga", "pt": "Bundesliga austríaca", "fr": "Bundesliga autrichienne", "it": "Bundesliga austriaca"} },
+  { slug: "liga-tunez", country: "tunez", name: {"es": "Liga tunecina", "en": "Tunisian league", "pt": "Liga tunisina", "fr": "Championnat tunisien", "it": "Campionato tunisino"} },
 ];
 
 export const TEAM_LEAGUE: Record<string, string> = {
@@ -264,6 +268,7 @@ export const TEAM_LEAGUE: Record<string, string> = {
   tampicomadero: "liga-mx",
   tigresuanl: "liga-mx",
   columbuscrew: "mls",
+  elpasolocomotive: "mls",
   forwardmadison: "mls",
   greenvilletriumph: "mls",
   intermiami: "mls",
@@ -316,6 +321,7 @@ export const TEAM_LEAGUE: Record<string, string> = {
   fcbasel: "liga-suiza",
   youngboys: "liga-suiza",
   rbsalzburg: "liga-austria",
+  estunis: "liga-tunez",
 };
 
 export function leagueName(l: LeagueMeta, locale: HubLocale): string {

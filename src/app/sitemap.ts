@@ -12,6 +12,7 @@ import { countryTeams, leagueTeams, teamKeysWithItems } from "@/lib/hubs";
 import { seasonSortValue } from "@/lib/productMeta";
 import { brandFacets, brandGroundCombos, groundFacets, groundSlug, typeFacets } from "@/lib/gearHubs";
 import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
+import { indexPaths } from "@/lib/catalogIndex";
 
 const BASE_URL = "https://football-cult.com";
 // Dos límites reales, no solo el de Google (50.000 URLs/sitemap,
@@ -99,6 +100,9 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/guia/camiseta-original",
     "/guia/talle-fan-vs-jugador",
     "/estudios/precios-camisetas",
+    // Índice rastreable del catálogo: 445 URLs que le dan a 8.680 fichas
+    // su primer enlace interno real (ver src/lib/catalogIndex.ts).
+    ...indexPaths().map(({ section, page }) => `/indice/${section}/${page}`),
     ...seasonList().flatMap((se) => [`/temporada/${seasonSlug(se)}`, ...seasonTypes(se).map((t) => `/temporada/${seasonSlug(se)}/${t.type}`)]),
     ...(["botas", "guantes", "pelotas", "ropa", "entrenamiento"] as const).flatMap((sec) => brandFacets(sec).map((b) => `/${sec}/marca/${b.slug}`)),
     ...groundFacets().map((g) => `/botas/terreno/${g.slug}`),

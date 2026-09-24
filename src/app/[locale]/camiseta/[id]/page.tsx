@@ -55,8 +55,17 @@ function productJsonLd(product: Product, locale: string) {
 // (cache-control no-store): cada visita de un usuario o de Googlebot
 // ejecutaba una función que carga el catálogo entero -- la causa más
 // probable de que la cuenta Hobby llegara al 100% de Fluid Active CPU.
-// Con esto no se prerenderiza nada (no suma storage al deploy), pero la
-// primera visita a cada URL queda cacheada en el CDN por un día.
+//
+// 2026-09-24: se probó prerenderizar en build las fichas con 2+ tiendas
+// (1.831 x 5 idiomas) para sacarlas de la generación bajo demanda, que es
+// lo que hace de `camiseta/[id]` la ruta más invocada del sitio. Funciona
+// -- 9.255 páginas estáticas, build de 1:09 a 1:51 -- pero deja el .next
+// en 3,2 GB (93 KB de HTML por ficha). Con el límite de 10 GB de
+// Deployment Storage en Hobby y una retención de una semana eso revienta
+// la cuenta en dos deploys, y de ese agujero recién salimos el 09-23.
+// O sea: prerenderizar cambia CPU por storage, y storage es el límite más
+// ajustado. Se vuelve a [] a propósito. Si algún día hay plan Pro (o el
+// HTML por ficha adelgaza mucho), esto es lo primero que conviene probar.
 export const revalidate = 86400;
 export function generateStaticParams() {
   return [];

@@ -54,6 +54,9 @@ export default function Footer() {
           <Link href="/estudios/precios-camisetas" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.priceStudy}
           </Link>
+          <Link href="/indice/camisetas/1" className="transition-colors hover:text-[#F3E9C9]">
+            {t.footer.catalogIndex}
+          </Link>
           <Link href="/autenticidad" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.authenticity}
           </Link>

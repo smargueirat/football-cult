@@ -188,6 +188,7 @@ export interface Translations {
     italy: string;
     disclaimer: string;
     priceStudy: string;
+    catalogIndex: string;
   };
   about: {
     title: string;
@@ -678,6 +679,7 @@ export const translations: Record<Locale, Translations> = {
     },
     footer: {
       priceStudy: "Estudio de precios",
+      catalogIndex: "Índice del catálogo",
       about: "Sobre nosotros",
       contact: "Contacto",
       privacy: "Privacidad",
@@ -1179,6 +1181,7 @@ export const translations: Record<Locale, Translations> = {
     },
     footer: {
       priceStudy: "Estudo de preços",
+      catalogIndex: "Índice do catálogo",
       about: "Sobre nós",
       contact: "Contato",
       privacy: "Privacidade",
@@ -1680,6 +1683,7 @@ export const translations: Record<Locale, Translations> = {
     },
     footer: {
       priceStudy: "Price study",
+      catalogIndex: "Catalogue index",
       about: "About us",
       contact: "Contact",
       privacy: "Privacy",
@@ -2181,6 +2185,7 @@ export const translations: Record<Locale, Translations> = {
     },
     footer: {
       priceStudy: "Étude des prix",
+      catalogIndex: "Index du catalogue",
       about: "À propos",
       contact: "Contact",
       privacy: "Confidentialité",
@@ -2682,6 +2687,7 @@ export const translations: Record<Locale, Translations> = {
     },
     footer: {
       priceStudy: "Studio sui prezzi",
+      catalogIndex: "Indice del catalogo",
       about: "Chi siamo",
       contact: "Contatti",
       privacy: "Privacy",
