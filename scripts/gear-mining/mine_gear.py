@@ -14,6 +14,8 @@ volumen real bajo o nulo -- no vale la pena el mantenimiento de una
 función dedicada por tan poco.
 """
 import csv, re, json, os
+import unicodedata
+import urllib.parse
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys_path_boots = os.path.join(SCRIPT_DIR, "..", "boots-mining")
@@ -402,6 +404,95 @@ def merge_by_model(results):
     return merged
 
 
+ES_STORES = ('FootStoreES', 'SportIsGoodES')
+
+def _img_key(u):
+    m = re.search(r'url=([^&"]+)', u or '')
+    raw = urllib.parse.unquote(m.group(1)) if m else (u or '')
+    return re.sub(r'^(ssl:|https?://)', '', raw).split('?')[0].lower()
+
+def _norm(s):
+    s = unicodedata.normalize('NFKD', (s or '').lower())
+    s = ''.join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r'\s+', ' ', s).strip()
+
+def _digits(model):
+    # "7,32 x 2,44 ... 2 mm" y "7.32 x 2.44 ... 2mm" son la misma red
+    t = _norm(model).replace(',', '.')
+    t = re.sub(r'(\d)\s+(mm|cm|m|kg|g|l)\b', r'\1\2', t)
+    return tuple(re.findall(r'\d+(?:\.\d+)?(?:mm|cm|m|kg|g|l)?', t))
+
+def _tail(model, brand):
+    """Todo desde la marca en adelante: el prefijo es el sustantivo
+    traducido ('Cono de accionamiento' / "Cone d'entrainement"), la cola
+    es marca+modelo+color, que el feed no traduce."""
+    t, b = _norm(model), _norm(brand)
+    if not b:
+        return None
+    i = t.find(b)
+    return t[i:] if i >= 0 else None
+
+def mirror_key(entry):
+    tail = _tail(entry['model'], entry.get('brand'))
+    if tail is None:
+        return None
+    imgs = tuple(sorted({_img_key(o.get('imageUrl')) for o in entry['offers']}))
+    if not imgs or not imgs[0]:
+        return None
+    return (entry.get('type'), _norm(entry.get('colour')), imgs,
+            _digits(entry['model']), tail)
+
+def merge_mirror_locales(merged):
+    """Foot-Store / Sport is Good publican el MISMO producto en su tienda
+    ES y su tienda FR con el titulo traducido, asi que merge_by_model (que
+    agrupa por texto) los deja como dos fichas de una sola tienda. Se
+    funden solo cuando coinciden tipo, color, foto del CDN, numeros del
+    titulo y la cola desde la marca -- la foto sola NO alcanza: los conos
+    Megaform comparten una misma imagen entre Bleu/Jaune/Rouge/Vert y las
+    redes Powershot entre medidas distintas (mismo riesgo que el bug de
+    colorways de botas, 2026-09-14). Se queda el titulo en castellano."""
+    order, groups, out = [], {}, []
+    for e in merged:
+        k = mirror_key(e)
+        if k is None:
+            out.append(e)
+            continue
+        if k not in groups:
+            groups[k] = []
+            order.append(k)
+        groups[k].append(e)
+    for k in order:
+        rows = groups[k]
+        # Si dos filas aportan la MISMA tienda no son espejos: son dos
+        # productos que el prefijo traducido distinguia y la clave no
+        # ("Filet football club" vs "Filet football match", ambos
+        # "powershot - blanc"). Se dejan como estaban.
+        seen_stores = set()
+        collides = False
+        for r in rows:
+            st = {o['store'] for o in r['offers']}
+            if st & seen_stores:
+                collides = True
+                break
+            seen_stores |= st
+        if collides:
+            out.extend(rows)
+            continue
+        rep = next((r for r in rows
+                    if any(o['store'] in ES_STORES for o in r['offers'])), rows[0])
+        if len(rows) > 1:
+            rep = dict(rep)
+            seen, offers = set(), []
+            for r in rows:
+                for o in r['offers']:
+                    if o['url'] in seen:
+                        continue
+                    seen.add(o['url'])
+                    offers.append(o)
+            rep['offers'] = offers
+        out.append(rep)
+    return out
+
 # ---------- ROPA DE FÚTBOL (shorts, chaquetas, pantalones, medias) ----------
 # Agregado 2026-09-18 (pedido explícito del usuario: "no hay nada de
 # pantalones, chaquetas, shorts o medias... en caso de que lo tengamos en
@@ -557,10 +648,10 @@ if __name__ == '__main__':
     canonicalize_brands(balls_results)
     canonicalize_brands(apparel_results)
     canonicalize_brands(training_results)
-    gloves_merged = merge_by_model(gloves_results)
-    balls_merged = merge_by_model(balls_results)
-    apparel_merged = merge_by_model(apparel_results)
-    training_merged = merge_by_model(training_results)
+    gloves_merged = merge_mirror_locales(merge_by_model(gloves_results))
+    balls_merged = merge_mirror_locales(merge_by_model(balls_results))
+    apparel_merged = merge_mirror_locales(merge_by_model(apparel_results))
+    training_merged = merge_mirror_locales(merge_by_model(training_results))
     print('TOTAL guantes:', len(gloves_results), '->', len(gloves_merged), 'productos tras fundir por tienda')
     print('TOTAL pelotas:', len(balls_results), '->', len(balls_merged), 'productos tras fundir por tienda')
     print('TOTAL ropa:', len(apparel_results), '->', len(apparel_merged), 'productos tras fundir por tienda')
