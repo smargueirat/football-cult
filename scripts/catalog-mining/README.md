@@ -2664,3 +2664,126 @@ short-key blocks (`bay-home-2025`, `juv-away-2025`) sitting beside their mined
 (ambiguous)" list in `refresh.py` is reporting. Both are favourite-bearing ids
 (see "Product id stability"), so merging them is its own task, not a daily-pass
 side effect.
+
+## Daily pass (2026-09-24) -- one shell quoting slip corrupted 23 offers, and retro merges were mislabelling every IT/ES store
+
+All 15 Awin jersey feeds (**BSTN UK is new** -- `AWIN_FEED_URL_BSTN_UK` was
+already in `.env.local` with 2 hand-inserted offers and a `FEED_URLS` entry
+sitting uncommitted; mined properly today, 13 offers + 1 conflict merge) + the
+5 Rakuten Brazil stores + the 2 TradeTracker stores + one `ebay_mine_cycle.py`
+batch per marketplace (US cycle 4 at 120/384, IT cycle 1 at 180/384, ES at
+183/384 -- 60 teams each, **zero 429s**). Soicos skipped again -- no
+`claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten FTP
+listing (9th pass). 43 new products (2 CSV-feed, 2 eBay current, 0 kids,
+36 eBay retro, 3 `-2` none); `tsc`/dupe-id/duplicate-offer-URL/build all clean.
+
+**A `while read` loop split `"Futbol Factory"` on the space and wrote 23
+offers with `store: ""Futbol"` / `currency: "Factory" EUR"`.** The per-store
+refresh loop passed `$store` through a heredoc-fed `while read -r file store cur`,
+which word-splits regardless of the quotes inside the heredoc line -- so
+`refresh.py` got `"Futbol` as the store name and `Factory"` as the currency and
+happily wrote both into `products.ts`. It does not error: the values are just
+strings to it. Caught by the standing `grep -o 'store: "[^"]*"' | LC_ALL=C sort
+| uniq -c` census (23 rows of `store: ""`) plus a `currency:` census that showed
+`"Factory"` and `"Real Betis"` as currencies. **Run the currency census next to
+the store census** -- a two-word store name is the exact shape that breaks here,
+and the site has four of them (`Futbol Factory`, `Shop Real Betis`,
+`Futbol Emotion`, `Pro:Direct Soccer`). Repaired in place (the price/URL/title
+were correct), then re-ran both stores properly and deduped the 21 offers the
+bad run had inserted alongside the good ones.
+
+**`retro_offer_merge.py` hardcoded `store: "eBay"`.** Every eBay IT/ES retro
+merge -- 468 offers this pass -- would have been written as a US eBay offer:
+wrong store label, wrong currency semantics, and invisible to the per-store
+price refresh afterwards. It now reads `o.get("store", "eBay")` and matches the
+replace-regex on that same name. **When a script predates a multi-marketplace
+source, grep it for the old single-value literal** before routing new data
+through it; the 09-22 marketplace work parametrised the miner and `refresh.py`
+but not this one.
+
+**`retro_gen.py`'s `WOMEN_SIGNAL_RE` had no Italian/Spanish forms.** eBay IT/ES
+titles say `donna` / `Wmn` / `mujer`, none of which matched, so 11 women's-cut
+retro shirts in today's batch would have been filed as men's. Added
+`\bdonna\b|\bwmn\b|\bmujer\b`. Same root cause as the 09-16 `portiere`/`bambino`
+gaps: a regex written against English/Spanish titles silently under-matches the
+moment a new marketplace's language arrives.
+
+**20 cross-product duplicate offers created in one run, the documented
+`refresh.py` (team, type)-only match.** Found by diffing the URL→product-ids map
+against `git show HEAD:src/data/products.ts` rather than eyeballing the whole
+282-entry list -- **that diff is the cheap way to separate today's damage from
+the ~275 pre-existing bare-year/full-range twins**, and it is worth doing after
+every pass. Resolved each by keeping the copy whose product `season` matched the
+offer title's own detected season (and the `-kids` product for the one kids
+listing that landed on an adult block). Net: 262 cross-product URLs, *below*
+HEAD's 275, because some refreshes also collapsed pre-existing twins.
+
+**3 blocklisted listings were back in `products.ts`.** `refresh.py` never checks
+`manual_exclusions.py` (only the miners do), so a blocklisted item that still
+appears in a store's feed is re-inserted as an ordinary add-offer every pass.
+The standing post-pass re-grep caught them (a Brazil GK `IF3900` on two stores,
+a $28.98 Bahia eBay listing). **Keep running that grep after the refresh step,
+not just after mining.**
+
+**Photo review, 6 drops, every one an already-documented class**: Columbus Crew
+"26/27 Authentic" whose jock tag reads **23** (third appearance, after 09-15 and
+09-22); Flamengo "2026/27" at $49.90 with an **AI-generated** floating-shirt
+photo; Peñarol home 2024 on a **footyheadlines.com-watermarked** press render
+(exactly the 09-22 listing's class, different item id); Chelsea "Home Kit
+2026-2027 Authentic EPL" that is a **2015 Nike women's-cut polo**, style code
+`819607-L10A`; Japan "2026 World Cup Pre Match" with a **trefoil** logo (adidas
+Originals lifestyle tee); and a NY Red Bulls kids pick that is **DN2956
+Climalite** (~2019) -- the same shirt 09-15 flagged, and kids blocks hardcode
+`season: "2026"`. All six are now in `manual_exclusions.py`. **A class that
+recurs three times deserves a blocklist entry, not a third hand-drop.**
+
+**Slovakia's two "new" DeporteOutlet products were dropped a second time.**
+`eslovaquia|home` + `|away` (Macron, real SFZ crest, €19.99) carry no season
+anywhere -- not in the title, not in the feed's description, and the merchant
+page's only kit-plausible year is **2024**. Same call as 09-22: an outlet
+clearing undated old stock is not a current-season product. Worth remembering
+that a genuine photo plus a genuine crest still isn't a date.
+
+**The two real CSV-feed finds were both PlanetFoot 26/27 thirds** -- Girona
+(`786189-03`) and St. Pauli (`785511-03`), the mint-green pair whose *home*
+siblings (`786186-01`/`785499-01`) were the 09-22 finds. Same store, same
+release wave, style code again the deciding evidence. Both photo-verified
+(Etihad Airways on the Girona, congstar + FC ST. PAULI 1910 on the other).
+
+**Shop Real Betis' `size` column is now empty on all 1931 rows**, so `pick.py`
+returned a hard zero (its silent wrong-column failure mode). Switched that store
+to `pick_no_size.py` over its in-stock rows (`stock != 0`, 782 of 1931) -- 5
+picks, one of which was the documented **Minishirt** (a non-wearable display
+item), dropped by hand. Its feed is otherwise ~all 23/24 stock at stock=0.
+
+`team_collision_scan.py`: 8 current flags (6 real -- Club América under
+`israel` via **Israel Reyes** yet again, PSG under `francia` and `jordania`,
+River Plate under `argentina`, Celtic under `escocia`, Colo-Colo under `chile`),
+and **2 of them were in the ADD set, not NEW** -- `espana|third` (Celta Vigo)
+and `jordania|away` (an Air Jordan Brazil shirt) would have attached a wrong-team
+offer to a real product with no new id to notice. Excluded via `refresh.py`'s
+5th arg. Of 12 flags on the retro *merge* sets, **0 were real** -- all the
+documented filler-name keepers (Watford/ENGLAND ×4, Parma/ITALIA ×5,
+Paraguay/Palmeiras the player, Stoke/Estados Unidos the player).
+
+Retro: 112 raw NEW picks across the three marketplaces, 55 survived filtering
+(219+6+13 `\bretro\b` reproductions, 15+1 kids -- the IT/ES sets needed
+`giovane`/`giovanile`/`bambini` added to the kids check -- 33 wrong-team,
+2 price outliers over $250 including a signed 2008 San Jose shirt). Four were
+re-keyed rather than created: `ajax|third|2022` → its `202223` twin,
+`sanjoseearthquakes|home|2023/24` → the `2023` on file, `canada|away|2020/21` →
+`canada-retro-2020-away` (all the 09-19 single-year rule), and
+`minnesotaunited|home|2017` → `2017/18`, which is what its own title says.
+**Generate one marketplace at a time and re-run the new-vs-merge classification
+in between** -- 17 of the IT keepers and 13 of the ES ones were the same global
+eBay item as a US pick, and would have produced duplicate ids otherwise.
+
+All CSV-feed season conflicts were noise again except the two PlanetFoot thirds:
+4 had their exact link AND decoded image already on file (AdidasPT Tiro 25 x2 --
+Newcastle and a Juventus black `JN7…` **colorway** variant, BSTN Inter Miami
+`JN8479`, ForumSport Alaves), `noruega|home` 2025 and `internacional|home` 25/26
+are the same older-stock skips as every pass since 09-13 (**10th** pass), and
+ForumSport's `barcelona|prematch` photo is dated 2024 in its own filename.
+`ebay_check_stale.py`: 23 of 200 (11.5%), normal band. DecathlonIE and ProSoccer
+genuine zeros as always. Rakuten FTP needed its usual per-file reconnect
+(LojaPST timed out once and was recovered on retry).
