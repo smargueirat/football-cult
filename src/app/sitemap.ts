@@ -25,6 +25,24 @@ const BASE_URL = "https://football-cult.com";
 // en unas semanas.
 const CHUNK_SIZE = 15000;
 
+// PODA DEL SITEMAP (2026-09-24). Le estábamos pidiendo a Google 150.335
+// URLs y tenía 4.080 indexadas (3%): 46.835 quedaban en "descubierta,
+// actualmente sin indexar", o sea ni las visitaba. Un dominio joven tiene
+// un presupuesto de rastreo chico y nosotros lo estábamos repartiendo
+// entre decenas de miles de fichas que, encima, no comparan nada: 21.106
+// de 30.067 productos (70%) tienen UNA sola tienda, y este sitio es un
+// comparador de precios -- una ficha con una sola oferta es justo la
+// "página delgada" que Google descarta.
+//
+// Así que el sitemap ahora empuja SOLO lo que tiene valor real de
+// comparación (2+ tiendas) más todos los hubs. No se borra ni se
+// desindexa nada: esas páginas siguen existiendo, siguen enlazadas desde
+// las categorías y cualquiera puede entrar -- simplemente dejamos de
+// pedirle a Google que gaste rastreo en ellas.
+function comparable<T extends { offers: unknown[] }>(items: T[]): T[] {
+  return items.filter((i) => i.offers.length >= 2);
+}
+
 function languagesFor(path: string) {
   return Object.fromEntries(
     LOCALES.map((l) => [l, `${BASE_URL}/${l}${path}`])
@@ -103,7 +121,7 @@ function allRoutes(): MetadataRoute.Sitemap {
   // poner "hoy" en 100k URLs le enseña a Google a ignorar el campo.
   const teamSize = new Map<string, number>();
   for (const p of products) teamSize.set(p.teamKey, (teamSize.get(p.teamKey) ?? 0) + 1);
-  const orderedProducts = [...products].sort(
+  const orderedProducts = comparable(products).sort(
     (a, b) =>
       (teamSize.get(b.teamKey) ?? 0) - (teamSize.get(a.teamKey) ?? 0) ||
       a.teamKey.localeCompare(b.teamKey) ||
@@ -119,7 +137,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  const bootRoutes = bootProducts.flatMap((boot) => {
+  const bootRoutes = comparable(bootProducts).flatMap((boot) => {
     const path = `/botas/${boot.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
@@ -127,7 +145,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  const gloveRoutes = gloveProducts.flatMap((glove) => {
+  const gloveRoutes = comparable(gloveProducts).flatMap((glove) => {
     const path = `/guantes/${glove.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
@@ -135,7 +153,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  const ballRoutes = ballProducts.flatMap((ball) => {
+  const ballRoutes = comparable(ballProducts).flatMap((ball) => {
     const path = `/pelotas/${ball.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
@@ -143,7 +161,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  const ticketRoutes = ticketProducts.flatMap((ticket) => {
+  const ticketRoutes = comparable(ticketProducts).flatMap((ticket) => {
     const path = `/tickets/${ticket.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
@@ -151,7 +169,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  const apparelRoutes = apparelProducts.flatMap((item) => {
+  const apparelRoutes = comparable(apparelProducts).flatMap((item) => {
     const path = `/ropa/${item.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
@@ -159,7 +177,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  const trainingRoutes = trainingProducts.flatMap((item) => {
+  const trainingRoutes = comparable(trainingProducts).flatMap((item) => {
     const path = `/entrenamiento/${item.id}`;
     return LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
