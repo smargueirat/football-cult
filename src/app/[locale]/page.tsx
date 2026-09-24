@@ -72,13 +72,52 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               diapositivas es emotivo ("Los colores que elegiste de chico")
               y nunca dice que esto compara precios. El copy emotivo se
               queda arriba, en las diapositivas; la explicación va acá
-              (auditoría 2026-09-24). */}
-          <h1 className="font-vintage mt-5 text-xl leading-snug text-[#1B3B2B] sm:text-3xl">
-            {t.hero.h1}
-          </h1>
-          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-[#5b5442] sm:text-base">
-            {t.hero.h1Sub}
-          </p>
+              (auditoría 2026-09-24).
+
+              La composición usa el mismo vocabulario que el resto del
+              sitio -- volanta en font-tagline dorada, titular en
+              font-vintage, vintage-divider, fichas con borde dorado --
+              porque en su primera versión eran dos párrafos planos sin
+              jerarquía y, siendo lo primero que se ve, parecía un
+              documento de texto. */}
+          <div className="mt-6 sm:mt-9">
+            <span className="font-tagline text-[10px] uppercase text-[#B8933F] sm:text-xs">
+              {t.hero.h1Eyebrow}
+            </span>
+
+            <h1 className="font-vintage mt-2.5 max-w-4xl text-[26px] leading-[1.1] text-balance text-[#1B3B2B] sm:mt-3 sm:text-[38px] lg:text-[46px]">
+              {t.hero.h1}{" "}
+              {/* El remate va en dorado y subrayado a mano: es lo que nos
+                  diferencia de mirar el precio suelto en cada tienda. */}
+              <span className="relative inline-block text-[#8a6a1f]">
+                {t.hero.h1Accent}
+                <span
+                  aria-hidden
+                  className="absolute inset-x-0 -bottom-0.5 h-[0.14em] rounded-full bg-[#C9A24B]/55 sm:-bottom-1"
+                />
+              </span>
+            </h1>
+
+            <div className="vintage-divider mt-6 max-w-2xl sm:mt-7" />
+
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#4a4438] sm:text-base">
+              {t.hero.h1Sub}
+            </p>
+
+            <ul className="mt-4 flex flex-wrap items-center gap-2">
+              {t.hero.h1Items.map((item) => (
+                <li
+                  key={item}
+                  className="font-card-title rounded-full border border-[#C9A24B]/45 bg-white/60 px-3 py-1 text-[11px] tracking-wide text-[#5b5442] sm:text-xs"
+                >
+                  {item}
+                </li>
+              ))}
+              <li className="font-card-title rounded-full bg-[#1B3B2B] px-3 py-1 text-[11px] tracking-wide text-[#F3E9C9] sm:text-xs">
+                {t.hero.h1Free}
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-4 sm:px-8">
