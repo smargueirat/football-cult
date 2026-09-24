@@ -37,15 +37,16 @@ def merge(products_path, picks_path, apply=False):
         if o["link"] in block:
             same += 1
             continue
+        store = o.get("store", "eBay")
         sizes = ", ".join(f'"{s}"' for s in o.get("sizes") or ["M", "L"])
         title = o["title"].replace("\\", "\\\\").replace('"', '\\"')
         line = (
-            f'      {{ store: "eBay", price: {o["price"]}, '
+            f'      {{ store: "{store}", price: {o["price"]}, '
             f'shipping: {o.get("shipping", 0.0)}, currency: "{o.get("currency", "USD")}", '
             f'url: "{o["link"]}", title: "{title}", inStock: true, '
             f'sizes: [{sizes}], imageUrl: "{o["image"]}" }},\n'
         )
-        ebay_re = re.compile(r'^      \{ store: "eBay",.*\n', re.M)
+        ebay_re = re.compile(r'^      \{ store: "' + re.escape(store) + r'",.*\n', re.M)
         if ebay_re.search(block):
             blocks[idx] = ebay_re.sub(line, block, count=1)
             replaced += 1

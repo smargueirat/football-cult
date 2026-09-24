@@ -31,7 +31,7 @@ PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..
 # regularly picks up "(Ladies)"-style FansJerseyHub titles. Tag them
 # ageGroup:"women" here so they show the WOMEN badge and the ageGroup
 # filter, instead of silently defaulting to "men".
-WOMEN_SIGNAL_RE = re.compile(r"\bwomen\b|\bwomens\b|\bdama\b|f[ée]minin|femenin|\bfemme\b|\bladies\b|\bwoman\b", re.I)
+WOMEN_SIGNAL_RE = re.compile(r"\bwomen\b|\bwomens\b|\bdama\b|f[ée]minin|femenin|\bfemme\b|\bladies\b|\bwoman\b|\bdonna\b|\bwmn\b|\bmujer\b", re.I)
 
 
 def colors_for_team(content, team):

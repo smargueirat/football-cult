@@ -62,7 +62,7 @@ export interface GloveProduct {
 const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-adidas-copa-gloves-clb-hombre-guantes-de-portero-jh3790-plata",
-    brand: "adidas",
+    brand: "Adidas",
     model: "adidas COPA Gloves CLB Hombre Guantes de portero JH3790 - plata",
     colour: "plata",
     offers: [
@@ -79,7 +79,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-adidas-entrenamiento-con-guantes-predator-hombre-guantes-de-portero-ix3871-rojo",
-    brand: "adidas",
+    brand: "Adidas",
     model: "adidas Entrenamiento con guantes Predator Hombre Guantes de portero IX3871 - rojo",
     colour: "rojo",
     offers: [
@@ -96,7 +96,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-adidas-originals-predator-entrenamiento-hombre-guantes-de-portero-iw6280-negro",
-    brand: "adidas",
+    brand: "Adidas",
     model: "adidas Originals Predator Entrenamiento Hombre Guantes de portero IW6280 - negro",
     colour: "negro",
     offers: [
@@ -113,7 +113,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-adidas-predator-training-hombre-guantes-de-portero-jn5356x-verde",
-    brand: "adidas",
+    brand: "Adidas",
     model: "adidas Predator Training Hombre Guantes de portero JN5356X - verde",
     colour: "verde",
     offers: [
@@ -130,7 +130,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-adidas-copa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants adidas COPA - Blanc",
     colour: "Blanc",
     offers: [
@@ -147,7 +147,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-d-entrainement-gardien-adidas-predator-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants d'entrainement gardien adidas Predator - Orange",
     colour: "Orange",
     offers: [
@@ -164,7 +164,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Beige",
     colour: "Beige",
     offers: [
@@ -187,7 +187,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -204,7 +204,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Noir",
     colour: "Noir",
     offers: [
@@ -221,7 +221,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa League - Blanc",
     colour: "Blanc",
     offers: [
@@ -238,7 +238,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-league-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa League - Rouge",
     colour: "Rouge",
     offers: [
@@ -255,7 +255,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -272,7 +272,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Noir",
     colour: "Noir",
     offers: [
@@ -298,7 +298,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-copa-pro-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Copa Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -315,7 +315,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator - Blanc",
     colour: "Blanc",
     offers: [
@@ -346,7 +346,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator - Bleu",
     colour: "Bleu",
     offers: [
@@ -363,7 +363,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-com-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Com - Noir",
     colour: "Noir",
     offers: [
@@ -386,7 +386,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-competition-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Competition - Noir",
     colour: "Noir",
     offers: [
@@ -403,7 +403,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator League - Blanc",
     colour: "Blanc",
     offers: [
@@ -420,7 +420,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-league-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator League - Rouge",
     colour: "Rouge",
     offers: [
@@ -445,7 +445,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match - Blanc",
     colour: "Blanc",
     offers: [
@@ -468,7 +468,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match - Bleu",
     colour: "Bleu",
     offers: [
@@ -491,7 +491,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-fingersave-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match Fingersave - Blanc",
     colour: "Blanc",
     offers: [
@@ -514,7 +514,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-match-fingersave-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Match Fingersave - Noir",
     colour: "Noir",
     offers: [
@@ -536,7 +536,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator - Noir",
     colour: "Noir",
     offers: [
@@ -562,7 +562,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Beige",
     colour: "Beige",
     offers: [
@@ -588,7 +588,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -605,7 +605,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Noir",
     colour: "Noir",
     offers: [
@@ -622,7 +622,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -656,7 +656,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-pro-strap-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Pro Strap - Noir",
     colour: "Noir",
     offers: [
@@ -673,7 +673,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-trainning-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator Trainning - Blanc",
     colour: "Blanc",
     offers: [
@@ -690,7 +690,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-trn-jaune",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator TRN - Jaune",
     colour: "Jaune",
     offers: [
@@ -722,7 +722,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-predator-trn-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Predator TRN - Noir",
     colour: "Noir",
     offers: [
@@ -745,7 +745,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro Club - Noir",
     colour: "Noir",
     offers: [
@@ -762,7 +762,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-league-fieldplayer-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro League Fieldplayer - Noir",
     colour: "Noir",
     offers: [
@@ -779,7 +779,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-league-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro League - Noir",
     colour: "Noir",
     offers: [
@@ -806,7 +806,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-adidas-tiro-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien adidas Tiro Pro - Noir",
     colour: "Noir",
     offers: [
@@ -833,7 +833,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-coupes-hybride-adidas-predator-mtc-fs-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien coupes hybride adidas Predator MTC FS - Orange",
     colour: "Orange",
     offers: [
@@ -859,7 +859,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien d'entraînement adidas Predator 2026 - Noir",
     colour: "Noir",
     offers: [
@@ -876,7 +876,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien d'entraînement adidas Predator - Noir",
     colour: "Noir",
     offers: [
@@ -893,7 +893,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-de-but-sans-protege-doigts-adidas-predator-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien de but sans protège-doigts adidas Predator Pro - Noir",
     colour: "Noir",
     offers: [
@@ -910,7 +910,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-gants-de-gardien-debut-adidas-predator-pro-rose",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Gants de gardien debut adidas Predator Pro - Rose",
     colour: "Rose",
     offers: [
@@ -927,7 +927,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-adidas-copa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes adidas COPA - Blanc",
     colour: "Blanc",
     offers: [
@@ -943,8 +943,42 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-entrenamiento-de-portero-adidas-predator-orange",
+    brand: "Adidas",
+    model: "Guantes de entrenamiento de portero adidas Predator - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42576866248&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5355_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=e920db3adb8e45a1a7ae4472bc91a76bd38d2b61",
+        sizes: ["9", "10"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-adidas-copa-club-blanc",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Copa Club - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 23.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43705565607&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_ka7804_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=c05ba2afbb824dc7ca6bf70c06947b67f471f33b",
+        sizes: ["9"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-copa-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Copa Club - Noir",
     colour: "Noir",
     offers: [
@@ -961,13 +995,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-copa-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Copa League - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 59.0,
+        price: 65.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43877230538&a=3013769&m=65912",
@@ -978,7 +1012,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-copa-league-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Copa League - Rouge",
     colour: "Rouge",
     offers: [
@@ -995,7 +1029,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-copa-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -1006,13 +1040,30 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43877230543&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7801.webp&feedId=89032&k=21dd732f17a34e4e10d4d32c565e10bd00c68d84",
-        sizes: ["7", "8", "9", "11"],
+        sizes: ["7", "8", "9"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-adidas-copa-pro-noir",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Copa Pro - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 120.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089286998&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jn5335_black-carbon-luclem_1.webp&feedId=89032&k=c779e5b084f7ab67d407b3d49ea2fd083b715881",
+        sizes: ["8.5", "10"],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-adidas-copa-pro-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -1028,25 +1079,8 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-guantes-de-portero-adidas-pred-gl-mtc-fs-noir",
-    brand: "adidas",
-    model: "Guantes de portero adidas Pred GL MTC FS - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 50.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43132055729&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fk%2Fgk3539_hdw_on-model_detail-2_white.webp&feedId=89032&k=cf6ecd4312a88a3c45ab6d351324664b4d394d42",
-        sizes: ["12"],
-      },
-    ],
-  },
-  {
     id: "adidas-guantes-de-portero-adidas-pred-sg-trn-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Pred SG TRN - Bleu",
     colour: "Bleu",
     offers: [
@@ -1063,18 +1097,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 21.0,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529885421&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3806_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=93bcc09537491b25947de0e40ec32e78e70e0dcc",
-        sizes: ["9.5"],
+        sizes: ["9.5", "10"],
+        sizePrices: [
+          { size: "9.5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529885421&a=3013769&m=65912" },
+          { size: "10", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529885422&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreES",
@@ -1098,7 +1137,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator - Bleu",
     colour: "Bleu",
     offers: [
@@ -1115,13 +1154,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-com-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Com - Noir",
     colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
-        price: 79.0,
+        price: 78.0,
         priceMax: 83.0,
         shipping: 7.99,
         currency: "EUR",
@@ -1129,7 +1168,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fi%2Fn%2Fin1602.webp&feedId=89032&k=61a9b36e6a2ec7f1ff305ddc5ee3f5d0403e5565",
         sizes: ["8", "9.5", "12"],
         sizePrices: [
-          { size: "8", price: 79.0, url: "https://www.awin1.com/pclick.php?p=44809655309&a=3013769&m=65912" },
+          { size: "8", price: 78.0, url: "https://www.awin1.com/pclick.php?p=44809655309&a=3013769&m=65912" },
           { size: "9.5", price: 79.0, url: "https://www.awin1.com/pclick.php?p=44809655310&a=3013769&m=65912" },
           { size: "12", price: 83.0, url: "https://www.awin1.com/pclick.php?p=44406807423&a=3013769&m=65912" },
         ],
@@ -1138,13 +1177,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-competition-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Competition - Noir",
     colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
-        price: 93.0,
+        price: 92.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686636657&a=3013769&m=65912",
@@ -1155,7 +1194,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-edge-training-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Edge Training - Orange",
     colour: "Orange",
     offers: [
@@ -1172,7 +1211,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator League - Blanc",
     colour: "Blanc",
     offers: [
@@ -1189,51 +1228,130 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-league-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator League - Rouge",
     colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
-        price: 52.0,
+        price: 50.0,
         priceMax: 53.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44914972109&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529796796&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3819_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=7ac8bae3a7563466a16972cae5db7ce03b64f769",
-        sizes: ["7", "7.5", "9", "10"],
+        sizes: ["7", "7.5", "9", "10", "10.5"],
         sizePrices: [
           { size: "7", price: 53.0, url: "https://www.awin1.com/pclick.php?p=44914972107&a=3013769&m=65912" },
-          { size: "7.5", price: 53.0, url: "https://www.awin1.com/pclick.php?p=44914972108&a=3013769&m=65912" },
+          { size: "7.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44914972108&a=3013769&m=65912" },
           { size: "9", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44914972109&a=3013769&m=65912" },
           { size: "10", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42529796795&a=3013769&m=65912" },
+          { size: "10.5", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529796796&a=3013769&m=65912" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-adidas-predator-match-blanc",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Predator Match - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        priceMax: 44.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44269893247&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F2025_12_adidas_ka7783_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=a5579d4331a6f01f520376b8a2e32d2308f256f4",
+        sizes: ["8", "9", "10"],
+        sizePrices: [
+          { size: "8", price: 44.0, url: "https://www.awin1.com/pclick.php?p=43705565612&a=3013769&m=65912" },
+          { size: "9", price: 44.0, url: "https://www.awin1.com/pclick.php?p=43705565613&a=3013769&m=65912" },
+          { size: "10", price: 40.0, url: "https://www.awin1.com/pclick.php?p=44269893247&a=3013769&m=65912" },
         ],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-match-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Match - Bleu",
     colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
-        price: 65.0,
+        price: 54.0,
+        priceMax: 65.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44353657860&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44353657859&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ka7785_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=5729fa0691c402083c382a28cfaad83e28d91da0",
-        sizes: ["11"],
+        sizes: ["9", "10", "11"],
+        sizePrices: [
+          { size: "9", price: 61.0, url: "https://www.awin1.com/pclick.php?p=44353657858&a=3013769&m=65912" },
+          { size: "10", price: 54.0, url: "https://www.awin1.com/pclick.php?p=44353657859&a=3013769&m=65912" },
+          { size: "11", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44353657860&a=3013769&m=65912" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-adidas-predator-match-fingersave-blanc",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Predator Match Fingersave - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 44.0,
+        priceMax: 48.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529885434&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh3803_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=93befd6f44ac6017d8b532a4d4b9bd42bbeb38a0",
+        sizes: ["9.5", "10.5", "11"],
+        sizePrices: [
+          { size: "9.5", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529885432&a=3013769&m=65912" },
+          { size: "10.5", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529885434&a=3013769&m=65912" },
+          { size: "11", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529885435&a=3013769&m=65912" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-adidas-predator-match-fingersave-noir",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Predator Match Fingersave - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 61.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45304855245&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kr0471_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=a108f4fc43ac8ecd8fa11ce84751c6d5e650729c",
+        sizes: ["9.5", "10.5"],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator - Noir",
     colour: "Noir",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529356986&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hy4075_noir_1.webp&feedId=89032&k=9dee662e9702c96f1993dfa0a26fd9654dc7a73d",
+        sizes: ["11"],
+      },
       {
         store: "FootStoreES",
         price: 75.0,
@@ -1247,30 +1365,39 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-pro-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Beige",
     colour: "Beige",
     offers: [
       {
         store: "FootStoreES",
-        price: 106.0,
+        price: 107.0,
+        priceMax: 140.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914988154&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kv6524_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=8579f3fdc14aa4649497d977cdc1169eced83361",
-        sizes: ["11.5"],
+        sizes: ["6.5", "8", "8.5", "9.5", "11", "11.5"],
+        sizePrices: [
+          { size: "6.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44954304067&a=3013769&m=65912" },
+          { size: "8", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44954304069&a=3013769&m=65912" },
+          { size: "8.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988149&a=3013769&m=65912" },
+          { size: "9.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988150&a=3013769&m=65912" },
+          { size: "11", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988153&a=3013769&m=65912" },
+          { size: "11.5", price: 107.0, url: "https://www.awin1.com/pclick.php?p=44914988154&a=3013769&m=65912" },
+        ],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 115.0,
+        price: 114.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43984919585&a=3013769&m=65912",
@@ -1280,8 +1407,34 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-portero-adidas-predator-pro-noir",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Predator Pro - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 140.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45304856477&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fka7780.webp&feedId=89032&k=054917f253f30082199165e266715ac8d7b30f39",
+        sizes: ["11.5"],
+      },
+      {
+        store: "FootStoreES",
+        price: 140.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089289870&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke9697_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=156a6b1ac63335c26a2eff4280be5a4e5c1a30df",
+        sizes: ["8.5", "9", "9.5", "10", "10.5"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-predator-pro-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro - Rouge",
     colour: "Rouge",
     offers: [
@@ -1315,7 +1468,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-pro-strap-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Pro Strap - Noir",
     colour: "Noir",
     offers: [
@@ -1332,13 +1485,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-training-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Training - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755752982&a=3013769&m=65912",
@@ -1349,13 +1502,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-trainning-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator Trainning - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 26.0,
+        price: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45906301903&a=3013769&m=65912",
@@ -1366,7 +1519,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-trn-jaune",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator TRN - Jaune",
     colour: "Jaune",
     offers: [
@@ -1398,24 +1551,24 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-predator-trn-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Predator TRN - Noir",
     colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 23.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529540816&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iq4027_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=f18e6029fb659ade1c8569c6c94ad1d20973ffa1",
-        sizes: ["9.5"],
+        sizes: ["9.5", "10"],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-adidas-tiro-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Tiro Club - Noir",
     colour: "Noir",
     offers: [
@@ -1432,7 +1585,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-tiro-league-fieldplayer-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Tiro League Fieldplayer - Noir",
     colour: "Noir",
     offers: [
@@ -1449,51 +1602,61 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-adidas-tiro-league-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Tiro League - Noir",
     colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
-        price: 60.0,
+        price: 35.0,
+        priceMax: 60.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45184717499&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41104840335&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hn5612_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=b70b8ecd5f8453984a335acbfb4a70ea06c18c2d",
         sizes: ["7", "8", "9", "9.5", "10", "10.5", "11"],
+        sizePrices: [
+          { size: "7", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45184717499&a=3013769&m=65912" },
+          { size: "8", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45184717500&a=3013769&m=65912" },
+          { size: "9", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44645282354&a=3013769&m=65912" },
+          { size: "9.5", price: 35.0, url: "https://www.awin1.com/pclick.php?p=41104840335&a=3013769&m=65912" },
+          { size: "10", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44645282355&a=3013769&m=65912" },
+          { size: "10.5", price: 60.0, url: "https://www.awin1.com/pclick.php?p=42529356995&a=3013769&m=65912" },
+          { size: "11", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44992207148&a=3013769&m=65912" },
+        ],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-adidas-tiro-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero adidas Tiro Pro - Noir",
     colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
-        price: 51.0,
-        priceMax: 71.0,
+        price: 47.0,
+        priceMax: 70.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40255216159&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41104838849&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hn5611_1_hardware_photography_front_center_view_white_xo.webp&feedId=89032&k=a7b340646e0638d8f7808bbef726288e0e4f864e",
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
         sizePrices: [
-          { size: "7.5", price: 70.0, url: "https://www.awin1.com/pclick.php?p=41104838848&a=3013769&m=65912" },
-          { size: "8", price: 51.0, url: "https://www.awin1.com/pclick.php?p=40255216159&a=3013769&m=65912" },
-          { size: "8.5", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41104838849&a=3013769&m=65912" },
-          { size: "9", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41104838850&a=3013769&m=65912" },
-          { size: "9.5", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41104838851&a=3013769&m=65912" },
-          { size: "10", price: 71.0, url: "https://www.awin1.com/pclick.php?p=41104838852&a=3013769&m=65912" },
-          { size: "10.5", price: 71.0, url: "https://www.awin1.com/pclick.php?p=44645281997&a=3013769&m=65912" },
+          { size: "7.5", price: 48.0, url: "https://www.awin1.com/pclick.php?p=41104838848&a=3013769&m=65912" },
+          { size: "8", price: 48.0, url: "https://www.awin1.com/pclick.php?p=40255216159&a=3013769&m=65912" },
+          { size: "8.5", price: 47.0, url: "https://www.awin1.com/pclick.php?p=41104838849&a=3013769&m=65912" },
+          { size: "9", price: 62.0, url: "https://www.awin1.com/pclick.php?p=41104838850&a=3013769&m=65912" },
+          { size: "9.5", price: 70.0, url: "https://www.awin1.com/pclick.php?p=41104838851&a=3013769&m=65912" },
+          { size: "10", price: 70.0, url: "https://www.awin1.com/pclick.php?p=41104838852&a=3013769&m=65912" },
+          { size: "10.5", price: 70.0, url: "https://www.awin1.com/pclick.php?p=44645281997&a=3013769&m=65912" },
         ],
       },
     ],
   },
   {
     id: "adidas-guantes-de-portero-corte-hibrido-adidas-predator-mtc-fs-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero corte híbrido adidas Predator MTC FS - Orange",
     colour: "Orange",
     offers: [
@@ -1519,7 +1682,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-de-entrenamiento-adidas-predator-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero de entrenamiento adidas Predator - Bleu",
     colour: "Bleu",
     offers: [
@@ -1535,8 +1698,25 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-portero-de-entrenamiento-adidas-predator-noir",
+    brand: "Adidas",
+    model: "Guantes de portero de entrenamiento adidas Predator - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529796824&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fm%2Fjm6827.webp&feedId=89032&k=3c75a30e2f408953028153e162160a14cff91307",
+        sizes: ["8.5", "9.5", "10", "11"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-principiantes-adidas-predator-pro-rose",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero principiantes adidas Predator Pro - Rose",
     colour: "Rose",
     offers: [
@@ -1553,7 +1733,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Guantes de portero sin dedos adidas Predator Pro - Noir",
     colour: "Noir",
     offers: [
@@ -1565,28 +1745,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44552705789&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj3531_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=48c64740d1709a72f3129880cc59c64012bb3551",
         sizes: ["8.5", "9", "9.5", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-de-portero-sin-dedos-adidas-predator-pro-vert",
-    brand: "adidas",
-    model: "Guantes de portero sin dedos adidas Predator Pro - Vert",
-    colour: "Vert",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 63.2,
-        priceMax: 130.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45940200572&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jj3532_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=32c27b1314d6fea122e0a5567ef74a4314c9e770",
-        sizes: ["9", "10.5"],
-        sizePrices: [
-          { size: "9", price: 63.2, url: "https://www.awin1.com/pclick.php?p=45940200572&a=3013769&m=65912" },
-          { size: "10.5", price: 130.0, url: "https://www.awin1.com/pclick.php?p=42510013765&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -2908,13 +3066,14 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 41.63,
-        priceMax: 48.6,
+        priceMax: 54.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40815967330&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fl%2Felite-sport_el4003190_noir_1.webp&feedId=89032&k=9de844bc98ac5746f6463cab055a9679b047fcc7",
-        sizes: ["6", "7", "8", "9", "10", "11"],
+        sizes: ["5", "6", "7", "8", "9", "10", "11"],
         sizePrices: [
+          { size: "5", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42529806097&a=3013769&m=65912" },
           { size: "6", price: 48.6, url: "https://www.awin1.com/pclick.php?p=41701520904&a=3013769&m=65912" },
           { size: "7", price: 46.51, url: "https://www.awin1.com/pclick.php?p=45137692978&a=3013769&m=65912" },
           { size: "8", price: 46.51, url: "https://www.awin1.com/pclick.php?p=42529806099&a=3013769&m=65912" },
@@ -3032,11 +3191,11 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         priceMax: 88.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630363616&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42630363618&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferima_7222407_0.webp&feedId=89032&k=8a65f3927d6f9361cede10d7bdd9220fe864db0e",
         sizes: ["8", "11", "12"],
         sizePrices: [
-          { size: "8", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42630363616&a=3013769&m=65912" },
+          { size: "8", price: 88.0, url: "https://www.awin1.com/pclick.php?p=42630363616&a=3013769&m=65912" },
           { size: "11", price: 88.0, url: "https://www.awin1.com/pclick.php?p=42630363617&a=3013769&m=65912" },
           { size: "12", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42630363618&a=3013769&m=65912" },
         ],
@@ -3271,6 +3430,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "givova-guantes-de-portero-givova-stop-orange",
+    brand: "Givova",
+    model: "Guantes de portero Givova Stop - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 19.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45028630360&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fg%2Fi%2Fgivova_gu09-2810_arancio-fluo-nero_1.webp&feedId=89032&k=86fe62e91b6222a9e0aac06c26799771e3809a59",
+        sizes: ["7", "11"],
+      },
+    ],
+  },
+  {
     id: "huari-gants-de-gardien-huari-ibram-blanc",
     brand: "Huari",
     model: "Gants de gardien Huari Ibram - Blanc",
@@ -3295,7 +3471,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507723222&a=3013769&m=65912",
@@ -3639,6 +3815,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "jako-guantes-de-portero-jako-animal-basic-rc-protection-noir",
+    brand: "Jako",
+    model: "Guantes de portero Jako Animal Basic RC Protection - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 39.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46061458113&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_2595-u-810_noir-blanc-vert-fluo_1.webp&feedId=89032&k=385a2c75373b31cbc6aaa2656ffef650888c4361",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
     id: "jako-guantes-de-portero-jako-animal-giga-nc-blanc",
     brand: "Jako",
     model: "Guantes de portero Jako Animal GIGA NC - Blanc",
@@ -3656,7 +3849,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         sizePrices: [
           { size: "7.5", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42630379208&a=3013769&m=65912" },
           { size: "11.5", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379216&a=3013769&m=65912" },
-          { size: "12", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42630379217&a=3013769&m=65912" },
+          { size: "12", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379217&a=3013769&m=65912" },
         ],
       },
     ],
@@ -3669,7 +3862,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 44.0,
         priceMax: 59.0,
         shipping: 7.99,
         currency: "EUR",
@@ -3677,7 +3870,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_2594-u-806_noir-vert-fluo_1.webp&feedId=89032&k=95f51cef7970f672650630a1e199827fa4147bd9",
         sizes: ["9.5", "11.5", "12"],
         sizePrices: [
-          { size: "9.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42630379222&a=3013769&m=65912" },
+          { size: "9.5", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42630379222&a=3013769&m=65912" },
           { size: "11.5", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42630379226&a=3013769&m=65912" },
           { size: "12", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42630379227&a=3013769&m=65912" },
         ],
@@ -3709,18 +3902,12 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 93.0,
-        priceMax: 96.0,
+        price: 99.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630379247&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42630379239&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fa%2Fjako_2591-u-014_blanc-noir-vert-fluo_1.webp&feedId=89032&k=f38c3426b0a0147c1c045b99617d0fc8f68205aa",
         sizes: ["7.5", "11.5", "12"],
-        sizePrices: [
-          { size: "7.5", price: 96.0, url: "https://www.awin1.com/pclick.php?p=42630379239&a=3013769&m=65912" },
-          { size: "11.5", price: 93.0, url: "https://www.awin1.com/pclick.php?p=42630379247&a=3013769&m=65912" },
-          { size: "12", price: 94.0, url: "https://www.awin1.com/pclick.php?p=42630379248&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -3758,6 +3945,9 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "jako-guantes-de-portero-jako-rs89-team-hybrid-cut-blanc",
     brand: "Jako",
@@ -3776,6 +3966,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "jako-guantes-jako-de-gardien-prestige-wrc-protection-gris",
+    brand: "Jako",
+    model: "Guantes Jako de gardien Prestige WRC Protection - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 109.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43132055343&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F5%2F2550_24.webp&feedId=89032&k=55a708f2006b254ba547d4e4328098918a74817f",
+        sizes: ["12"],
+      },
+    ],
+  },
+  {
     id: "jako-torwarthandschuhe-river-basic-rc-blau",
     brand: "Jako",
     model: "Torwarthandschuhe River Basic RC blau",
@@ -3783,7 +3990,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "GigasportCH",
-        price: 30.52,
+        price: 35.9,
         shipping: 3.95,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44858731082&a=3013769&m=22149",
@@ -3903,9 +4110,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-gants-de-gardien-joma-area-360-noir",
     brand: "Joma",
@@ -5140,6 +5344,15 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     model: "Guantes de portero Joma Brave - Noir",
     colour: "Noir",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 46.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529441714&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fo%2Fjoma_401183.121_0.webp&feedId=89032&k=ffdae115fe061de2a4b52a663c10459bdbc7fe98",
+        sizes: ["10"],
+      },
       {
         store: "FootStoreES",
         price: 53.53,
@@ -6916,7 +7129,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745910849&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hq0257-010_black-white-white_1.webp&feedId=89032&k=7c0625ec9bdec922960d7a33209fe6982cad120d",
-        sizes: ["6", "7", "8", "9", "10", "11"],
+        sizes: ["6", "8", "9", "10", "11"],
       },
     ],
   },
@@ -7802,6 +8015,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-noir",
     brand: "Precision",
@@ -7955,9 +8171,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-gants-de-gardien-reusch-attrakt-advance-orange",
     brand: "Reusch",
@@ -8236,7 +8449,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670735-7700-gants-de-gardien-reusch-attrakt-freegel-infinity-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/5/6/5670735-7700.webp",
-        sizes: ["7.5", "8", "8.5", "9", "10", "11"],
+        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
@@ -8963,6 +9176,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "reusch-guantes-de-portero-reusch-attrakt-advance-orange",
+    brand: "Reusch",
+    model: "Guantes de portero Reusch Attrakt Advance - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089290077&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670214-2290-shocking-orange-blue-6a2c12aebfe22-1.webp&feedId=89032&k=24e68131b658a77e8be7023462b60306825d8c26",
+        sizes: ["7.5"],
+      },
+    ],
+  },
+  {
     id: "reusch-guantes-de-portero-reusch-attrakt-aqua-evolution-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Aqua Evolution - Noir",
@@ -9070,23 +9300,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45020267594&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670035-2290-orange-blue-6a2bf755b79cc-1.webp&feedId=89044&k=ee768587677debd642b78f69920b73d60c7f3705",
         sizes: ["9", "9.5", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "reusch-guantes-de-portero-reusch-attrakt-freegel-fusion-goaliator-bleu",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Freegel Fusion Goaliator - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 150.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44552702692&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5470995-4411_0.webp&feedId=89032&k=5085c80bb5e6960096ad48132401bf0a6c4afd93",
-        sizes: ["9.5"],
       },
     ],
   },
@@ -9566,23 +9779,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43573623580&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch-5670710-4127-sharp-blu-shock-orng-blck-5.webp&feedId=89032&k=5e4fd941dedcbedd9c8c89d43e03063e9100aa1e",
         sizes: ["7.5", "8", "8.5", "9", "9.5"],
-      },
-    ],
-  },
-  {
-    id: "reusch-guantes-de-portero-reusch-attrakt-infinity-finger-support-noir",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Infinity Finger Support - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 45.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44552702695&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fe%2Freusch_5470710-7739_0.webp&feedId=89032&k=c2ddc9998b2c1bf2d61091ae66a618b3f6c8234e",
-        sizes: ["9"],
       },
     ],
   },
@@ -10402,12 +10598,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegsa2970-gants-de-gardien-rinat-egotiko-vengador-as-royal-blue-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_egsi2973_royal-blue-red_1.webp",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7", "8", "9"],
         sizePrices: [
           { size: "7", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegsa2970-gants-de-gardien-rinat-egotiko-vengador-as-royal-blue-red" },
           { size: "8", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegsa2970-gants-de-gardien-rinat-egotiko-vengador-as-royal-blue-red" },
           { size: "9", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegsa2970-gants-de-gardien-rinat-egotiko-vengador-as-royal-blue-red" },
-          { size: "10", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegsa2970-gants-de-gardien-rinat-egotiko-vengador-as-royal-blue-red" },
         ],
       },
     ],
@@ -11297,6 +11492,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-aries-prime-noir",
     brand: "Rinat",
@@ -11433,9 +11631,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-ctreme-dominius-turf-blanc",
     brand: "Rinat",
@@ -11603,12 +11798,11 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748538&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_egsi2973_royal-blue-red_1.webp&feedId=89032&k=c4973ba3bbbce287ebe4215ab997e1a97eba7ad9",
-        sizes: ["7", "8", "9", "10"],
+        sizes: ["7", "8", "9"],
         sizePrices: [
           { size: "7", price: 23.0, url: "https://www.awin1.com/pclick.php?p=42529748537&a=3013769&m=65912" },
           { size: "8", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529748538&a=3013769&m=65912" },
           { size: "9", price: 23.0, url: "https://www.awin1.com/pclick.php?p=42529748539&a=3013769&m=65912" },
-          { size: "10", price: 23.0, url: "https://www.awin1.com/pclick.php?p=42529748536&a=3013769&m=65912" },
         ],
       },
     ],
@@ -11952,6 +12146,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-guantes-de-portero-rinat-meta-tactik-as-2023-24-noir",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat meta Tactik As 2023/24 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529748582&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_masi1243_black-gold_2.webp&feedId=89032&k=a9ae1925d817428323df1d7793a55b97ee38a8f4",
+        sizes: ["10"],
+      },
+    ],
+  },
+  {
     id: "rinat-guantes-de-portero-rinat-nkam-as-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM AS - Blanc",
@@ -12090,6 +12301,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "5", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529750180&a=3013769&m=65912" },
           { size: "7", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529750182&a=3013769&m=65912" },
         ],
+      },
+    ],
+  },
+  {
+    id: "rinat-guantes-de-portero-rinat-nkam-pro-rouge",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Nkam Pro - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 95.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529750186&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fr%2Fi%2Frinat_nkpp1400_red-white_1.webp&feedId=89032&k=4c4630f17006eaef88b5d5a7ad7ff759cbca73ff",
+        sizes: ["7"],
       },
     ],
   },
@@ -13553,9 +13781,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         price: 61.89,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41287435289&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41287435290&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Ft%2Fstanno_480249-2600_white-red_1.webp&feedId=89032&k=d087962d06e6c6a050173f43f0c2722dbd3c0171",
-        sizes: ["10", "10.5", "12"],
+        sizes: ["10.5", "12"],
       },
     ],
   },
@@ -13573,23 +13801,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529856144&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Ft%2Fstanno_480248-2900_white-grey_1.webp&feedId=89032&k=8d5b55c7c7cf84105f6ec79701cb7a9e5e939886",
         sizes: ["12"],
-      },
-    ],
-  },
-  {
-    id: "stanno-guantes-de-portero-stanno-ultimate-opf-blanc",
-    brand: "Stanno",
-    model: "Guantes de portero Stanno Ultimate Opf - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 73.83,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530160281&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Ft%2Fstanno_480248-2000_white_5.webp&feedId=89032&k=2473b6a4dd76bbe27613568ec83f3979d1daec55",
-        sizes: ["11"],
       },
     ],
   },
@@ -13638,9 +13849,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         price: 93.73,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529856149&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529856150&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Ft%2Fstanno_480245-8940_black-grey-yellow_1.webp&feedId=89032&k=1f2a0f9cf69f51b8493093635ed8d829d8f30625",
-        sizes: ["8", "10.5", "11"],
+        sizes: ["11"],
       },
     ],
   },
@@ -14805,6 +15016,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-gants-de-gardien-uhlsport-fm-zne-ultragrip-hn-rouge",
     brand: "uhlsport",
@@ -14991,9 +15205,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-gants-de-gardien-uhlsport-soft-advanced-blanc",
     brand: "uhlsport",
@@ -15301,6 +15512,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-bleu",
+    brand: "uhlsport",
+    model: "Guantes de portero Uhlsport Aquasoft HN - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 49.95,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41554274491&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp&feedId=89032&k=6707a1a59c3f9ee98698928377d3178d54314394",
+        sizes: ["7.5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-comfort-absolutgrip-hn-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Comfort Absolutgrip HN - Noir",
@@ -15523,11 +15751,17 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 73.83,
+        priceMax: 101.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137401.webp&feedId=89032&k=786074c4fa5ad6f8722d50b93fce10b5e1d0396f",
-        sizes: ["12"],
+        sizes: ["7", "7.5", "12"],
+        sizePrices: [
+          { size: "7", price: 97.0, url: "https://www.awin1.com/pclick.php?p=41670116770&a=3013769&m=65912" },
+          { size: "7.5", price: 101.0, url: "https://www.awin1.com/pclick.php?p=41670116771&a=3013769&m=65912" },
+          { size: "12", price: 73.83, url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -15539,26 +15773,12 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 69.06,
-        priceMax: 98.0,
+        price: 97.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43397421056&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41670116781&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137501.webp&feedId=89032&k=ff15324232fad64b68ad5cd262dc31fd9b7f9b0d",
-        sizes: ["7", "8"],
-        sizePrices: [
-          { size: "7", price: 69.06, url: "https://www.awin1.com/pclick.php?p=43397421056&a=3013769&m=65912" },
-          { size: "8", price: 98.0, url: "https://www.awin1.com/pclick.php?p=41670116781&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 69.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46076516108&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101137501.webp&feedId=89044&k=ff15324232fad64b68ad5cd262dc31fd9b7f9b0d",
-        sizes: ["7"],
+        sizes: ["8"],
       },
     ],
   },
@@ -15655,11 +15875,17 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 103.68,
+        priceMax: 129.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44086762588&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101138501_bleu-marine-bleu-pacifique-blanc_1.webp&feedId=89032&k=0154c185603d7731956f5f563d6c05ae99a54712",
-        sizes: ["8", "12"],
+        sizes: ["8", "9", "12"],
+        sizePrices: [
+          { size: "8", price: 103.68, url: "https://www.awin1.com/pclick.php?p=44086762588&a=3013769&m=65912" },
+          { size: "9", price: 129.0, url: "https://www.awin1.com/pclick.php?p=45047889436&a=3013769&m=65912" },
+          { size: "12", price: 103.68, url: "https://www.awin1.com/pclick.php?p=45971960037&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -15789,12 +16015,12 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 40.4,
-        priceMax: 54.0,
+        priceMax: 73.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42482243941&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101138801_noir-orange-fluo_1.webp&feedId=89032&k=6483a77d8d09cedc8253bbaa0ffc328f7213455f",
-        sizes: ["3", "3.5", "4", "4.5", "5", "5.5", "7", "8.5", "11"],
+        sizes: ["3", "3.5", "4", "4.5", "5", "5.5", "6", "7", "7.5", "8", "8.5", "11"],
         sizePrices: [
           { size: "3", price: 40.4, url: "https://www.awin1.com/pclick.php?p=42482243941&a=3013769&m=65912" },
           { size: "3.5", price: 40.4, url: "https://www.awin1.com/pclick.php?p=42482243942&a=3013769&m=65912" },
@@ -15802,7 +16028,10 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "4.5", price: 40.4, url: "https://www.awin1.com/pclick.php?p=42482243944&a=3013769&m=65912" },
           { size: "5", price: 40.4, url: "https://www.awin1.com/pclick.php?p=42482243945&a=3013769&m=65912" },
           { size: "5.5", price: 40.4, url: "https://www.awin1.com/pclick.php?p=42482243946&a=3013769&m=65912" },
+          { size: "6", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42482243947&a=3013769&m=65912" },
           { size: "7", price: 40.4, url: "https://www.awin1.com/pclick.php?p=41670116838&a=3013769&m=65912" },
+          { size: "7.5", price: 73.0, url: "https://www.awin1.com/pclick.php?p=41670116839&a=3013769&m=65912" },
+          { size: "8", price: 73.0, url: "https://www.awin1.com/pclick.php?p=41670116840&a=3013769&m=65912" },
           { size: "8.5", price: 40.4, url: "https://www.awin1.com/pclick.php?p=41670116841&a=3013769&m=65912" },
           { size: "11", price: 54.0, url: "https://www.awin1.com/pclick.php?p=44216767651&a=3013769&m=65912" },
         ],
@@ -15835,11 +16064,17 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
+        priceMax: 82.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075022544&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45075022546&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-101141501-rouge-fluo-blanc-jaune-fluo-6a3267f898829-1.webp&feedId=89032&k=ff4a44ff604864283734f7935034cc5ea4741401",
-        sizes: ["8.5", "9.5"],
+        sizes: ["8.5", "9.5", "10.5"],
+        sizePrices: [
+          { size: "8.5", price: 81.0, url: "https://www.awin1.com/pclick.php?p=45075022544&a=3013769&m=65912" },
+          { size: "9.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45075022546&a=3013769&m=65912" },
+          { size: "10.5", price: 82.0, url: "https://www.awin1.com/pclick.php?p=45819221860&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -16033,6 +16268,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-hn-noir",
+    brand: "uhlsport",
+    model: "Guantes de portero Uhlsport Powerline Supersoft HN - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 49.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41104842475&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101130801_0.webp&feedId=89032&k=1fd95515deaa0b4527d3ac1d13fe972bcbe5340d",
+        sizes: ["8.5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-powerline-supersoft-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Powerline Supersoft - Noir",
@@ -16090,15 +16342,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 18.9,
-        priceMax: 36.0,
+        priceMax: 37.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40249036260&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40249036262&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_101133701_bleu-marine-blanc-jaune-fluo_1.webp&feedId=89032&k=0d4e9fb1e123980c22f751bbbfd22fc90fb68773",
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
         sizePrices: [
-          { size: "7.5", price: 18.9, url: "https://www.awin1.com/pclick.php?p=40249036260&a=3013769&m=65912" },
-          { size: "8", price: 36.0, url: "https://www.awin1.com/pclick.php?p=40249036261&a=3013769&m=65912" },
+          { size: "7.5", price: 31.0, url: "https://www.awin1.com/pclick.php?p=40249036260&a=3013769&m=65912" },
+          { size: "8", price: 37.0, url: "https://www.awin1.com/pclick.php?p=40249036261&a=3013769&m=65912" },
           { size: "8.5", price: 18.9, url: "https://www.awin1.com/pclick.php?p=40249036262&a=3013769&m=65912" },
           { size: "9", price: 18.9, url: "https://www.awin1.com/pclick.php?p=40249036263&a=3013769&m=65912" },
           { size: "9.5", price: 18.9, url: "https://www.awin1.com/pclick.php?p=40249036264&a=3013769&m=65912" },
@@ -16268,11 +16520,20 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 21.29,
+        priceMax: 38.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38371707418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F101134401.webp&feedId=89032&k=da00c0d2c73b9f35fa96f07afdb5d29b4e4af030",
-        sizes: ["8.5", "10"],
+        sizes: ["8.5", "9", "9.5", "10", "10.5", "11"],
+        sizePrices: [
+          { size: "8.5", price: 21.29, url: "https://www.awin1.com/pclick.php?p=38371707418&a=3013769&m=65912" },
+          { size: "9", price: 38.0, url: "https://www.awin1.com/pclick.php?p=38371707419&a=3013769&m=65912" },
+          { size: "9.5", price: 38.0, url: "https://www.awin1.com/pclick.php?p=38371707420&a=3013769&m=65912" },
+          { size: "10", price: 21.29, url: "https://www.awin1.com/pclick.php?p=38371707421&a=3013769&m=65912" },
+          { size: "10.5", price: 34.0, url: "https://www.awin1.com/pclick.php?p=38371707422&a=3013769&m=65912" },
+          { size: "11", price: 34.0, url: "https://www.awin1.com/pclick.php?p=39589569240&a=3013769&m=65912" },
+        ],
       },
     ],
   },

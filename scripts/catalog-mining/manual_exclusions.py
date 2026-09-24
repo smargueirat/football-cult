@@ -221,6 +221,28 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # Sao Paulo "third 26" at $28.98 -- the documented template seller whose
     # one-per-team+type titles all claim the next season (2026-09-18).
     "ebay.com/itm/366665938534",
+    # Columbus Crew "26/27 Authentic" -- the 2022/23 shirt (jock tag reads
+    # "23") re-listed as current for the third time (09-15, 09-22, 09-24).
+    "ebay.com/itm/117344996491",
+    # Flamengo "2026/27" at $49.90 -- AI-generated listing photo (floating
+    # shirt, garbled hem text, no sponsors), same class as 09-20/09-22.
+    "ebay.com/itm/358228921300",
+    # Chelsea "Home Kit 2026-2027 Authentic EPL" -- a 2015 Nike women's-cut
+    # polo, style code 819607-L10A on the hem tag (2026-09-24).
+    "ebay.com/itm/128074862658",
+    # Turkiye "2026/27 away" -- Turkey's white HOME kit on the artificial-
+    # grass replica backdrop, same class as 09-20/09-22.
+    "ebay.com/itm/298488193990",
+    # Japan "2026 World Cup Pre Match" -- adidas Originals JFA lifestyle tee
+    # (trefoil logo), same class as the 09-20 drop.
+    "ebay.com/itm/398394562324",
+    # NY Red Bulls kids "away" -- adidas DN2956, Climalite branding (~2019),
+    # the exact shirt flagged on 09-15; kids blocks hardcode season 2026 so
+    # an undated old shirt would be filed as current (2026-09-24).
+    "ebay.com/itm/137594301457",
+    # Penarol home 2024 -- footyheadlines.com-watermarked press render as the
+    # listing photo, same seller/class as the 09-22 drop (2026-09-24).
+    "ebay.com/itm/397901284083",
 ]
 
 

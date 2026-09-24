@@ -34,6 +34,7 @@ const FEED_URLS: Record<string, string | undefined> = {
   AdidasES: process.env.AWIN_FEED_URL_ADIDAS_ES,
   AdidasPT: process.env.AWIN_FEED_URL_ADIDAS_PT,
   BSTNIT: process.env.AWIN_FEED_URL_BSTN_IT,
+  BSTNUK: process.env.AWIN_FEED_URL_BSTN_UK,
   DecathlonIE: process.env.AWIN_FEED_URL_DECATHLONIE,
   // Nuevos (09-23, extensión a botas/guantes/pelotas/ropa/tickets) -- las
   // env vars ya existían (usadas por el mining nocturno), esta era la

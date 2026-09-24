@@ -358,7 +358,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-adidas-euro-training-balon-de-futbol-in9366-blanco",
-    brand: "adidas",
+    brand: "Adidas",
     model: "adidas EURO Training Balón de fútbol IN9366 - blanco",
     colour: "blanco",
     offers: [
@@ -375,7 +375,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-adidas-predator-training-balon-de-futbol-ip1655-negro",
-    brand: "adidas",
+    brand: "Adidas",
     model: "adidas PREDATOR Training Balón de fútbol IP1655 - negro",
     colour: "negro",
     offers: [
@@ -392,7 +392,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-2025-major-league-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas 2025 Major League Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -409,7 +409,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Bundesliga Torfabrik Club 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -426,7 +426,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Bundesliga Torfabrik Club 2026/27 - Noir",
     colour: "Noir",
     offers: [
@@ -443,7 +443,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-league-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Bundesliga Torfabrik League 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -465,7 +465,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-league-boxed-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Bundesliga Torfabrik League Boxed 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -482,7 +482,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-training-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Bundesliga Torfabrik Training 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -499,7 +499,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-club-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Club - Argenté",
     colour: "Argenté",
     offers: [
@@ -516,7 +516,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-conext26-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Conext26 Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -533,7 +533,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Coupe du Monde 2026 Trionda Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -550,7 +550,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Coupe du Monde 2026 Trionda League Box - Blanc",
     colour: "Blanc",
     offers: [
@@ -567,7 +567,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Coupe du Monde 2026 Trionda Training - Blanc",
     colour: "Blanc",
     offers: [
@@ -584,7 +584,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-coupe-du-monde-des-clubs-de-la-fifa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Coupe du monde des clubs de la FIFA - Blanc",
     colour: "Blanc",
     offers: [
@@ -601,7 +601,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ekstraklasa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Ekstraklasa - Blanc",
     colour: "Blanc",
     offers: [
@@ -618,7 +618,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ekstraklasa-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Ekstraklasa Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -635,7 +635,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-epp-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas EPP Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -652,7 +652,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-epp-dore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas EPP - Doré",
     colour: "Doré",
     offers: [
@@ -669,7 +669,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-euro-2024-trn-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Euro 2024 TRN - Blanc",
     colour: "Blanc",
     offers: [
@@ -686,7 +686,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-euro-2025-26-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Euro 2025/26 - Violet",
     colour: "Violet",
     offers: [
@@ -703,7 +703,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-euro-pro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Euro Pro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -720,7 +720,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-fifa-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Fifa Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -743,7 +743,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-fifa-club-world-cup-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Fifa Club World Cup - Blanc",
     colour: "Blanc",
     offers: [
@@ -760,7 +760,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ile-de-foot-24-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Île-De-Foot 24 Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -777,7 +777,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-messi-club-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Messi Club - Beige",
     colour: "Beige",
     offers: [
@@ -794,7 +794,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-messi-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Messi League - Blanc",
     colour: "Blanc",
     offers: [
@@ -811,7 +811,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-mls-25-club-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas MLS 25 Club - Argenté",
     colour: "Argenté",
     offers: [
@@ -834,7 +834,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-mls-club-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas MLS Club 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -851,7 +851,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-mundial-clubes-fifa-25-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Mundial Clubes Fifa 25 Club - Noir",
     colour: "Noir",
     offers: [
@@ -868,7 +868,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-mundial-clubes-fifa-25-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Mundial Clubes Fifa 25 League - Blanc",
     colour: "Blanc",
     offers: [
@@ -885,7 +885,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-olympics-clb-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Olympics Clb - Blanc",
     colour: "Blanc",
     offers: [
@@ -902,7 +902,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-olympics-trn-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Olympics Trn - Blanc",
     colour: "Blanc",
     offers: [
@@ -924,7 +924,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-pro-2024-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Pro 2024/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -941,7 +941,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-queens-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Queens League - Blanc",
     colour: "Blanc",
     offers: [
@@ -967,7 +967,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-starlancer-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Starlancer - Argenté",
     colour: "Argenté",
     offers: [
@@ -984,7 +984,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-starlancer-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Starlancer Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -1001,7 +1001,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-starlancer-club-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Starlancer Club - Bleu",
     colour: "Bleu",
     offers: [
@@ -1027,7 +1027,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-starlancer-club-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Starlancer Club - Vert",
     colour: "Vert",
     offers: [
@@ -1067,7 +1067,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-tango-glider-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Tango Glider - Blanc",
     colour: "Blanc",
     offers: [
@@ -1090,7 +1090,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-tiro-competition-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Tiro Compétition - Blanc",
     colour: "Blanc",
     offers: [
@@ -1107,7 +1107,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-tiro-match-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Tiro Match - Blanc",
     colour: "Blanc",
     offers: [
@@ -1133,7 +1133,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-tiro-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Tiro Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -1155,7 +1155,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-tiro-pro-winter-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Tiro Pro Winter - Orange",
     colour: "Orange",
     offers: [
@@ -1172,7 +1172,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ucl-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UCL 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1185,20 +1185,11 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke9771-blanc-multco-6a5e40a508a4d-1.webp",
         sizes: ["5"],
       },
-      {
-        store: "FootStoreFR",
-        price: 40.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9765-ballon-de-football-adidas-ucl-2026-27-white-multco",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke9765_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
-      },
     ],
   },
   {
     id: "adidas-ballon-de-football-adidas-ucl-2026-27-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UCL 2026/27 - Vert",
     colour: "Vert",
     offers: [
@@ -1224,7 +1215,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ucl-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UCL - Blanc",
     colour: "Blanc",
     offers: [
@@ -1246,7 +1237,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ucl-league-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UCL League - Violet",
     colour: "Violet",
     offers: [
@@ -1263,7 +1254,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-ucl-pro-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UCL Pro 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1280,7 +1271,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-champions-league-26-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UEFA Champions League 26/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1297,7 +1288,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-champions-league-competition-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UEFA Champions League Competition - Blanc",
     colour: "Blanc",
     offers: [
@@ -1314,7 +1305,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-champions-league-pro-3rd-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UEFA Champions League Pro 3RD - Blanc",
     colour: "Blanc",
     offers: [
@@ -1331,7 +1322,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-champions-league-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UEFA Champions League Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -1348,7 +1339,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-champions-league-pro-winter-jaune",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Uefa Champions League Pro Winter - Jaune",
     colour: "Jaune",
     offers: [
@@ -1365,7 +1356,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-nations-league-2026-27-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UEFA Nations League 2026/27 - Bleu",
     colour: "Bleu",
     offers: [
@@ -1382,7 +1373,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uefa-womens-champions-league-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UEFA Womens Champions League Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -1399,7 +1390,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-univers-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Univers - Blanc",
     colour: "Blanc",
     offers: [
@@ -1416,7 +1407,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uwcl-league-24-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UWCL League 24/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1433,7 +1424,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-uwcl-pro-void-2022-23-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas UWCL Pro Void 2022/23 - Argenté",
     colour: "Argenté",
     offers: [
@@ -1450,7 +1441,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-women-euro-2025-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Women Euro 2025 Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -1473,7 +1464,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-women-euro-2025-club-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Women Euro 2025 Club - Rouge",
     colour: "Rouge",
     offers: [
@@ -1490,7 +1481,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-women-euro-2025-lge-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas Women Euro 2025 LGE - Blanc",
     colour: "Blanc",
     offers: [
@@ -1507,7 +1498,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-adidas-world-cup-26-trionda-pro-winter-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football adidas World Cup 26 Trionda Pro Winter - Vert",
     colour: "Vert",
     offers: [
@@ -1524,7 +1515,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ajax-amsterdam-2024-25-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ajax Amsterdam 2024/25 - Rouge",
     colour: "Rouge",
     offers: [
@@ -1541,7 +1532,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-argentine-argentum-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Argentine Argentum Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -1558,7 +1549,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-coupe-du-monde-adidas-trionda-26-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football coupe du monde adidas Trionda 26 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1575,7 +1566,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-coupe-du-monde-adidas-trionda-26-rose",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football coupe du monde adidas Trionda 26 - Rose",
     colour: "Rose",
     offers: [
@@ -1606,7 +1597,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-coupe-du-monde-adidas-trionda-26-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football coupe du monde adidas Trionda 26 - Vert",
     colour: "Vert",
     offers: [
@@ -1623,7 +1614,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-d-entrainement-adidas-predator-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football d'entraînement adidas Predator - Blanc",
     colour: "Blanc",
     offers: [
@@ -1640,7 +1631,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-d-entrainement-adidas-predator-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football d'entraînement adidas Predator - Rouge",
     colour: "Rouge",
     offers: [
@@ -1657,7 +1648,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-d-entrainement-ligue-des-champions-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football d'entraînement Ligue des champions - Blanc",
     colour: "Blanc",
     offers: [
@@ -1674,7 +1665,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-de-club-adidas-euro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football de club adidas Euro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1700,7 +1691,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-de-club-adidas-euro-2024-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football de club adidas Euro 2024 - Bleu",
     colour: "Bleu",
     offers: [
@@ -1717,7 +1708,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-de-club-adidas-euro-2024-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football de club adidas Euro 2024 - Orange",
     colour: "Orange",
     offers: [
@@ -1734,7 +1725,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-domicile-arsenal-2024-25-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Domicile Arsenal 2024/25 - Rouge",
     colour: "Rouge",
     offers: [
@@ -1751,7 +1742,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-domicile-juventus-turin-2024-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Domicile Juventus Turin 2024/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1768,7 +1759,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ekstraklasa-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ekstraklasa 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1785,7 +1776,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-espagne-amberes-compeition-euro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Espagne Amberes Compeition Euro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1802,7 +1793,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-espagne-amberes-pro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Espagne Amberes Pro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1819,7 +1810,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-femme-adidas-euro-25-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football femme adidas Euro 25 Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -1836,7 +1827,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-femme-adidas-uefa-ligue-des-champions-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football femme adidas UEFA Ligue des Champions 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1853,7 +1844,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-italie-2024-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Italie 2024 - Bleu",
     colour: "Bleu",
     offers: [
@@ -1870,7 +1861,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-italie-coupe-du-monde-2026-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Italie Coupe du Monde 2026 - Bleu",
     colour: "Bleu",
     offers: [
@@ -1887,7 +1878,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-adidas-2024-25-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football ligue des champions adidas 2024/25 - Multicolore",
     colour: "Multicolore",
     offers: [
@@ -1904,7 +1895,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-adidas-2024-25-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football ligue des champions adidas 2024/25 - Rouge",
     colour: "Rouge",
     offers: [
@@ -1921,7 +1912,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-feminine-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Féminine - Blanc",
     colour: "Blanc",
     offers: [
@@ -1943,7 +1934,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-feminine-final-pro-2025-26-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Féminine Final Pro 2025/26 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1960,7 +1951,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-club-2025-26-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Club 2025/26 - Blanc",
     colour: "Blanc",
     offers: [
@@ -1977,7 +1968,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-club-2025-26-jaune",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Club 2025/26 - Jaune",
     colour: "Jaune",
     offers: [
@@ -1994,7 +1985,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-club-2025-26-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Club 2025/26 - Noir",
     colour: "Noir",
     offers: [
@@ -2011,7 +2002,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-club-2025-26-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Club 2025/26 - Violet",
     colour: "Violet",
     offers: [
@@ -2028,7 +2019,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-club-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Club - Noir",
     colour: "Noir",
     offers: [
@@ -2045,7 +2036,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-club-rose",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Club - Rose",
     colour: "Rose",
     offers: [
@@ -2062,7 +2053,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-foil-competition-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Foil Competition - Violet",
     colour: "Violet",
     offers: [
@@ -2079,7 +2070,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-foil-training-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Foil Training - Multicolore",
     colour: "Multicolore",
     offers: [
@@ -2101,7 +2092,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-final-training-2025-26-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Final Training 2025/26 - Multicolore",
     colour: "Multicolore",
     offers: [
@@ -2118,7 +2109,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -2135,7 +2126,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-real-madrid-2024-25-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football ligue des champions Real Madrid 2024/25 - Beige",
     colour: "Beige",
     offers: [
@@ -2152,7 +2143,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-ligue-des-champions-ucl-knockout-stages-foil-2024-25-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Ligue des Champions UCL Knockout Stages Foil 2024/25 - Multicolore",
     colour: "Multicolore",
     offers: [
@@ -2169,7 +2160,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-phase-de-groupe-adidas-uefa-champions-league-club-2025-26-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football phase de groupe adidas UEFA Champions League Club 2025/26 - Argenté",
     colour: "Argenté",
     offers: [
@@ -2186,7 +2177,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-real-madrid-3rd-club-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Real Madrid 3RD Club - Bleu",
     colour: "Bleu",
     offers: [
@@ -2203,7 +2194,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-third-bayern-munich-noir",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Third Bayern Munich - Noir",
     colour: "Noir",
     offers: [
@@ -2220,7 +2211,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-torfabrik-adidas-bundesliga-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football Torfabrik adidas Bundesliga 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2237,7 +2228,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-ballon-de-football-uwcl-adidas-2024-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Ballon de football UWCL adidas 2024/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2254,7 +2245,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-argentino-argentum-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Argentino Argentum Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -2270,19 +2261,41 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-copa-del-mundo-adidas-trionda-26-blanc",
+    brand: "Adidas",
+    model: "Balón de fútbol copa del mundo adidas Trionda 26 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42663844299&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd8054_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=ed8a57addc9f9c24e1289053df3aabc2aec69b8f",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-copa-del-mundo-adidas-trionda-26-rose",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol copa del mundo adidas Trionda 26 - Rose",
     colour: "Rose",
     offers: [
       {
         store: "FootStoreES",
         price: 13.42,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42663844288&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd8029_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=679a414a50e04d602bbd42c8fba7ab170f412e4d",
-        sizes: ["4"],
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 13.42, url: "https://www.awin1.com/pclick.php?p=42663844288&a=3013769&m=65912" },
+          { size: "5", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42663844289&a=3013769&m=65912" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -2296,8 +2309,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-copa-del-mundo-adidas-trionda-26-vert",
+    brand: "Adidas",
+    model: "Balón de fútbol copa del mundo adidas Trionda 26 - Vert",
+    colour: "Vert",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42663844295&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd8052_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=d04f196938acf600ab61366e17ac38e213227115",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-de-club-adidas-euro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol de club adidas Euro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2310,11 +2340,20 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_in9371_2_hardware_photography_back_center_view_white.webp&feedId=89032&k=da2edf91e3283a1662816f4459d4003ed7115f57",
         sizes: ["5"],
       },
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44627734294&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_in9372_2_hardware_photography_back_center_view_white.webp&feedId=89032&k=f0f7349eb9dc6024588b48e68ec97b49d38b0483",
+        sizes: ["5"],
+      },
     ],
   },
   {
     id: "adidas-balon-de-futbol-de-club-adidas-euro-2024-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol de club adidas Euro 2024 - Bleu",
     colour: "Bleu",
     offers: [
@@ -2331,7 +2370,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-de-club-adidas-euro-2024-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol de club adidas Euro 2024 - Orange",
     colour: "Orange",
     offers: [
@@ -2348,13 +2387,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-de-club-adidas-euro-2024-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol de club adidas Euro 2024 - Rouge",
     colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645284928&a=3013769&m=65912",
@@ -2365,7 +2404,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-de-entrenamiento-liga-de-campeones-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol de entrenamiento Liga de Campeones - Blanc",
     colour: "Blanc",
     offers: [
@@ -2382,13 +2421,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-domicilio-real-madrid-club-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Domicilio Real Madrid Club 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145695438&a=3013769&m=65912",
@@ -2399,13 +2438,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-ekstraklasa-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Ekstraklasa 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 150.0,
+        price: 149.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184771356&a=3013769&m=65912",
@@ -2416,7 +2455,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-espana-amberes-compeition-euro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol España Amberes Compeition Euro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2433,7 +2472,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-espana-amberes-pro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol España Amberes Pro 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2449,8 +2488,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-fase-de-grupo-adidas-uefa-champions-league-club-2025-26-argente",
+    brand: "Adidas",
+    model: "Balón de fútbol fase de grupo adidas UEFA Champions League Club 2025/26 - Argenté",
+    colour: "Argenté",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45160609472&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp1539_silvmt-dpurpl-turbo_1.webp&feedId=89032&k=8697d35aa4631ff6884298ba8e539f148ef9762c",
+        sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-italia-coupe-du-monde-2026-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Italia Coupe du Monde 2026 - Bleu",
     colour: "Bleu",
     offers: [
@@ -2467,13 +2523,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-liga-de-campeones-adidas-2024-25-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol liga de campeones adidas 2024/25 - Multicolore",
     colour: "Multicolore",
     offers: [
       {
         store: "FootStoreES",
-        price: 26.0,
+        price: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46037720375&a=3013769&m=65912",
@@ -2484,7 +2540,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-liga-de-campeones-adidas-2024-25-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol liga de campeones adidas 2024/25 - Rouge",
     colour: "Rouge",
     offers: [
@@ -2500,14 +2556,31 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-liga-de-campeones-adidas-uefa-bleu",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones adidas UEFA - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 29.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41211985826&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh1286_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=fbb70343a5773c44476ea13440b9518c2523ddf6",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-liga-de-campeones-feminine-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones Féminine - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43935158415&a=3013769&m=65912",
@@ -2518,13 +2591,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-liga-de-campeones-feminine-final-pro-2025-26-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones Féminine Final Pro 2025/26 - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 150.0,
+        price: 114.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232013&a=3013769&m=65912",
@@ -2534,8 +2607,59 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-club-2025-26-blanc",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones Final Club 2025/26 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44269894975&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fx%2Fjx9093.webp&feedId=89032&k=8cff9906ac0a93cb5bcf4c5cee44fc10c5f90b75",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-club-2025-26-jaune",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones Final Club 2025/26 - Jaune",
+    colour: "Jaune",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43935158423&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jx9090-syello-black-1.webp&feedId=89032&k=62f9f5f4e529c867d9658f9576c7f7fcdf3b0d74",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-club-2025-26-noir",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones Final Club 2025/26 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43935158420&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jx9092-black-syello-1.webp&feedId=89032&k=fbe5a83687070fd06f447e9423806b8578cd65c0",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-liga-de-campeones-final-club-2025-26-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones Final Club 2025/26 - Violet",
     colour: "Violet",
     offers: [
@@ -2551,8 +2675,42 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-club-noir",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones Final Club - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44269894973&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fj%2Fx%2Fjx9091.webp&feedId=89032&k=73bc09b72092c875d51a1860050e04cf0a78dd5e",
+        sizes: ["3"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-club-rose",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones Final Club - Rose",
+    colour: "Rose",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44651310280&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jx9094-teshpk-white-1.webp&feedId=89032&k=611f482295cf669868e411293f4b10238ea10774",
+        sizes: ["3"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-liga-de-campeones-final-foil-competition-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones Final Foil Competition - Violet",
     colour: "Violet",
     offers: [
@@ -2569,13 +2727,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-liga-de-campeones-final-foil-training-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones Final Foil Training - Multicolore",
     colour: "Multicolore",
     offers: [
       {
         store: "FootStoreES",
-        price: 35.0,
+        price: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43935158427&a=3013769&m=65912",
@@ -2585,14 +2743,31 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-training-2025-26-multicolore",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones Final Training 2025/26 - Multicolore",
+    colour: "Multicolore",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 29.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44033378825&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jx9089_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=d3e7e8e28757fcb52bb951e30e8eee5ba27af48b",
+        sizes: ["3", "4"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-liga-de-campeones-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 105.0,
+        price: 104.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797447266&a=3013769&m=65912",
@@ -2603,7 +2778,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-liga-de-campeones-real-madrid-2024-25-beige",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol liga de campeones Real Madrid 2024/25 - Beige",
     colour: "Beige",
     offers: [
@@ -2620,7 +2795,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-liga-de-campeones-ucl-knockout-stages-foil-2024-25-multicolore",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Liga de Campeones UCL Knockout Stages Foil 2024/25 - Multicolore",
     colour: "Multicolore",
     offers: [
@@ -2636,8 +2811,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-liga-de-campeones-uefa-gris",
+    brand: "Adidas",
+    model: "Balón de fútbol Liga de Campeones UEFA - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 29.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089286644&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh1283_ironmt-white-hiregr_1.webp&feedId=89032&k=8c705eafc15dfe35289dca3830b9ad14915295dd",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-local-alemania-trionda-coupe-du-monde-2026-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Local Alemania Trionda Coupe du Monde 2026 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2654,7 +2846,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-local-arsenal-2024-25-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Local Arsenal 2024/25 - Rouge",
     colour: "Rouge",
     offers: [
@@ -2671,7 +2863,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-local-juventus-turin-2024-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Local Juventus Turín 2024/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2688,13 +2880,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-mujer-adidas-euro-25-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol mujer adidas Euro 25 Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 77.0,
+        price: 76.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529806144&a=3013769&m=65912",
@@ -2705,7 +2897,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-mujer-adidas-uefa-ligue-des-champions-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol mujer adidas UEFA Ligue des Champions 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2721,8 +2913,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-torfabrik-adidas-bundesliga-2026-27-blanc",
+    brand: "Adidas",
+    model: "Balón de fútbol Torfabrik adidas Bundesliga 2026/27 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 57.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45184771361&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kg6045-white-black-solred-panton-6a444dc79929d-1.webp&feedId=89032&k=84102a6e67104d62f3f6118e54637d9f8d5927ea",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-de-futbol-training-adidas-major-league-2025-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol Training adidas Major League 2025 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2739,7 +2948,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balon-de-futbol-uwcl-adidas-2024-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balón de fútbol UWCL adidas 2024/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2756,7 +2965,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-2025-major-league-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas 2025 Major League Club - Blanc",
     colour: "Blanc",
     offers: [
@@ -2772,8 +2981,42 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-club-2026-27-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Bundesliga Torfabrik Club 2026/27 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 27.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44914986392&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kg6044_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=4df899b2cc65478ad265ae08a4cd8200ad721a58",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-club-2026-27-noir",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Bundesliga Torfabrik Club 2026/27 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 28.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44914986387&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_kv4045_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=3fcdb6e6275a43ab703164b9d4f30662c10db0bb",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-league-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Bundesliga Torfabrik League 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2790,7 +3033,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-league-boxed-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Bundesliga Torfabrik League Boxed 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -2806,8 +3049,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-training-2026-27-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Bundesliga Torfabrik Training 2026/27 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 30.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45018629122&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fg%2Fkg6040.webp&feedId=89032&k=e57ba3a1735454b94bb51fb0d80180d17c058ac2",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-club-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Club - Argenté",
     colour: "Argenté",
     offers: [
@@ -2824,13 +3084,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-conext26-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Conext26 Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 147.0,
+        price: 145.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44896720481&a=3013769&m=65912",
@@ -2841,13 +3101,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Coupe du Monde 2026 Trionda Club - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 26.0,
+        price: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42663844303&a=3013769&m=65912",
@@ -2858,13 +3118,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-league-box-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Coupe du Monde 2026 Trionda League Box - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42721414112&a=3013769&m=65912",
@@ -2875,7 +3135,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-training-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Coupe du Monde 2026 Trionda Training - Blanc",
     colour: "Blanc",
     offers: [
@@ -2892,7 +3152,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-des-clubs-de-la-fifa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Coupe du monde des clubs de la FIFA - Blanc",
     colour: "Blanc",
     offers: [
@@ -2908,14 +3168,31 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-ekstraklasa-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Ekstraklasa - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 17.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44746185778&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-jy1296-white-3.webp&feedId=89032&k=c72daadced9af636442864af0f9b72e6c564db94",
+        sizes: ["mini"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-ekstraklasa-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Ekstraklasa Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 141.0,
+        price: 138.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44480981276&a=3013769&m=65912",
@@ -2925,8 +3202,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-epp-dore",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas EPP - Doré",
+    colour: "Doré",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43348644124&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jw4010_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=d1fb5e81b6e0247905fe69ca8801efb414be3f45",
+        sizes: ["3"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-euro-2024-trn-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Euro 2024 TRN - Blanc",
     colour: "Blanc",
     offers: [
@@ -2943,7 +3237,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-euro-2025-26-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Euro 2025/26 - Violet",
     colour: "Violet",
     offers: [
@@ -2960,13 +3254,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-euro-pro-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Euro Pro 2024 - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 105.0,
+        price: 104.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44380171546&a=3013769&m=65912",
@@ -2977,24 +3271,30 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-fifa-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Fifa Club - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 19.0,
+        priceMax: 23.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529842881&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529842879&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd3821_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=e6aebf25e58b2710ae830f3dbe1d54d4c717cf91",
-        sizes: ["5"],
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 19.0, url: "https://www.awin1.com/pclick.php?p=42529842879&a=3013769&m=65912" },
+          { size: "4", price: 23.0, url: "https://www.awin1.com/pclick.php?p=42529842880&a=3013769&m=65912" },
+          { size: "5", price: 19.0, url: "https://www.awin1.com/pclick.php?p=42529842881&a=3013769&m=65912" },
+        ],
       },
     ],
   },
   {
     id: "adidas-balones-de-futbol-adidas-fifa-club-world-cup-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Fifa Club World Cup - Blanc",
     colour: "Blanc",
     offers: [
@@ -3009,9 +3309,29 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk2: BallProduct[] = [
+  {
+    id: "adidas-balones-de-futbol-adidas-ile-de-foot-24-club-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Ile-De-Foot 24 Club - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 29.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089286265&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iw6328_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=aece1f06a1dd61d2643fdd8ec0a5c207163aa694",
+        sizes: ["3", "5"],
+      },
+    ],
+  },
   {
     id: "adidas-balones-de-futbol-adidas-ile-de-foot-24-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Île-De-Foot 24 Pro - Blanc",
     colour: "Blanc",
     offers: [
@@ -3027,25 +3347,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-ligue-des-champions-de-l-uefa-lge-2025-26-blanc",
-    brand: "adidas",
-    model: "Balones de Fútbol adidas Ligue des champions de l'UEFA LGE 2025/26 - Blanc",
-    colour: "Blanc",
+    id: "adidas-balones-de-futbol-adidas-messi-club-beige",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Messi Club - Beige",
+    colour: "Beige",
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42541425685&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp1548_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=9807d9ddb03f3bd12bf3ba2efa2f806c545aef27",
-        sizes: ["5"],
+        url: "https://www.awin1.com/pclick.php?p=45184771349&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ke7538-ivory-seblbu-iceblu-goldmt-6a444d5f8ae05-1.webp&feedId=89032&k=317558bfa255f56dcfdf75aca6afc1aea3a4a75a",
+        sizes: ["3"],
       },
     ],
   },
   {
     id: "adidas-balones-de-futbol-adidas-messi-club-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Messi Club - Bleu",
     colour: "Bleu",
     offers: [
@@ -3061,8 +3381,42 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-messi-league-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Messi League - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 36.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43994232012&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ka5266-white-flaaqu-halmin-lucpnk-1.webp&feedId=89032&k=d265d693cb935df1bf83e769ab053cc9444e74fe",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-mls-25-club-argente",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas MLS 25 Club - Argenté",
+    colour: "Argenté",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 23.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529797166&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh1307_silvmt-green_1.webp&feedId=89032&k=834a3d2b2e2c6ee8256cca5e41ce165c0848fea9",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-mls-club-2024-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas MLS Club 2024 - Blanc",
     colour: "Blanc",
     offers: [
@@ -3078,8 +3432,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-mundial-clubes-fifa-25-club-noir",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Mundial Clubes Fifa 25 Club - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529822095&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd3822_white-black-lucred_4.webp&feedId=89032&k=7032224ad92a04adf777be77c81b9c9f5a1ddc01",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-mundial-clubes-fifa-25-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Mundial Clubes Fifa 25 League - Blanc",
     colour: "Blanc",
     offers: [
@@ -3096,7 +3467,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-olympics-clb-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Olympics Clb - Blanc",
     colour: "Blanc",
     offers: [
@@ -3113,7 +3484,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-olympics-trn-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Olympics Trn - Blanc",
     colour: "Blanc",
     offers: [
@@ -3135,7 +3506,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-pro-2024-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Pro 2024/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -3152,7 +3523,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-queens-league-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Queens League - Blanc",
     colour: "Blanc",
     offers: [
@@ -3165,11 +3536,37 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji8977_white-panton-silvmt_1.webp&feedId=89032&k=3e8f604f41170ccd360870d865382fab71e5cfb6",
         sizes: ["5"],
       },
+      {
+        store: "FootStoreES",
+        price: 36.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43877229035&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ke8232-white-purple-reatea-1.webp&feedId=89032&k=195f8fc7332661734108e3122b095b9395725cb1",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-starlancer-argente",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Starlancer - Argenté",
+    colour: "Argenté",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43479569651&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jw1358_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=fb0848a807eea13cec4fe80cd27f3a07cae42038",
+        sizes: ["5"],
+      },
     ],
   },
   {
     id: "adidas-balones-de-futbol-adidas-starlancer-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Starlancer - Blanc",
     colour: "Blanc",
     offers: [
@@ -3185,8 +3582,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-starlancer-club-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Starlancer Club - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43717950722&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ip1646_white-sopink_1.webp&feedId=89032&k=ccd48187476d37753dcf307879d612f2477ba45c",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-starlancer-club-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Starlancer Club - Bleu",
     colour: "Bleu",
     offers: [
@@ -3212,24 +3626,32 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-starlancer-club-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Starlancer Club - Vert",
     colour: "Vert",
     offers: [
       {
         store: "FootStoreES",
         price: 9.66,
-        priceMax: 21.0,
+        priceMax: 20.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39158357367&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it6382_luclem-black_1.webp&feedId=89032&k=28e88c4671f6362319adeadac65e21fde2125513",
-        sizes: ["3", "4", "5"],
+        sizes: ["4", "5"],
         sizePrices: [
-          { size: "3", price: 21.0, url: "https://www.awin1.com/pclick.php?p=43795263178&a=3013769&m=65912" },
-          { size: "4", price: 21.0, url: "https://www.awin1.com/pclick.php?p=39158357366&a=3013769&m=65912" },
+          { size: "4", price: 20.0, url: "https://www.awin1.com/pclick.php?p=39158357366&a=3013769&m=65912" },
           { size: "5", price: 9.66, url: "https://www.awin1.com/pclick.php?p=39158357367&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "FootStoreES",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529553925&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_it6383_1_hardware_photography_front_center_view_white-nw112824.webp&feedId=89032&k=56a6805d26e85b7933b282bf98c7b1a56dd91205",
+        sizes: ["5"],
       },
       {
         store: "SportIsGoodES",
@@ -3244,24 +3666,47 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-tango-glider-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Tango Glider - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 18.0,
+        price: 17.0,
+        priceMax: 21.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41968031459&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2F1%2Fs12241_hdw_photo_back-center_white.webp&feedId=89032&k=156e06439f2c5cb35bacc4f33a405334f5c5499a",
-        sizes: ["5"],
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42124886206&a=3013769&m=65912" },
+          { size: "4", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42000310563&a=3013769&m=65912" },
+          { size: "5", price: 17.0, url: "https://www.awin1.com/pclick.php?p=41968031459&a=3013769&m=65912" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-tiro-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Tiro - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089283998&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hz4168_2_hardware_photography_back_center_view_white.webp&feedId=89032&k=cfff8714877fc2b9773e8a613b39bfde855349ff",
+        sizes: ["3", "5"],
       },
     ],
   },
   {
     id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Tiro Compétition - Blanc",
     colour: "Blanc",
     offers: [
@@ -3277,8 +3722,25 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-tiro-league-thermal-bonded-vert",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Tiro League Thermal Bonded - Vert",
+    colour: "Vert",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 33.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46089286238&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hz1296_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=f49f905936205ff02f003357674469a00fdce5ba",
+        sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-tiro-match-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Tiro Match - Blanc",
     colour: "Blanc",
     offers: [
@@ -3304,13 +3766,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-tiro-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Tiro Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 86.0,
+        price: 85.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46061451596&a=3013769&m=65912",
@@ -3319,7 +3781,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 93.0,
+        price: 92.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914987780&a=3013769&m=65912",
@@ -3330,13 +3792,13 @@ const minedBallProductsChunk1: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-tiro-pro-winter-orange",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Tiro Pro Winter - Orange",
     colour: "Orange",
     offers: [
       {
         store: "FootStoreES",
-        price: 81.0,
+        price: 80.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44093081192&a=3013769&m=65912",
@@ -3345,12 +3807,9 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-ucl-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UCL 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -3363,11 +3822,20 @@ const minedBallProductsChunk2: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-ke9771-blanc-multco-6a5e40a508a4d-1.webp&feedId=89032&k=d5389dd897b69391e297c0c4ab10d7d75d11267d",
         sizes: ["5"],
       },
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45348247452&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke9765_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=0fffb62e7d22ba6a496aa197efdff155feccf653",
+        sizes: ["5"],
+      },
     ],
   },
   {
     id: "adidas-balones-de-futbol-adidas-ucl-2026-27-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UCL 2026/27 - Vert",
     colour: "Vert",
     offers: [
@@ -3377,12 +3845,12 @@ const minedBallProductsChunk2: BallProduct[] = [
         priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45376240338&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45381241358&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ky5573_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=f4b6957f64bb588b121bb2db4d908bd589c8b795",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45381241358&a=3013769&m=65912" },
-          { size: "5", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45376240338&a=3013769&m=65912" },
+          { size: "4", price: 41.0, url: "https://www.awin1.com/pclick.php?p=45381241358&a=3013769&m=65912" },
+          { size: "5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45376240338&a=3013769&m=65912" },
         ],
       },
       {
@@ -3398,18 +3866,18 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-ucl-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UCL - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529907595&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jp1534_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=34063411831682e1d50735862722fc214f5a815d",
-        sizes: ["5"],
+        sizes: ["4", "5"],
       },
       {
         store: "FootStoreES",
@@ -3424,13 +3892,13 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-ucl-league-violet",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UCL League - Violet",
     colour: "Violet",
     offers: [
       {
         store: "FootStoreES",
-        price: 42.0,
+        price: 41.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269890784&a=3013769&m=65912",
@@ -3441,13 +3909,13 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-ucl-pro-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UCL Pro 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 136.0,
+        price: 133.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247383&a=3013769&m=65912",
@@ -3457,8 +3925,25 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-uefa-champions-league-26-27-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas UEFA Champions League 26/27 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 60.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45348247453&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ke9766_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=4fd74b0bb899b254768f989af6c70634371ade45",
+        sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-uefa-champions-league-competition-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UEFA Champions League Competition - Blanc",
     colour: "Blanc",
     offers: [
@@ -3475,7 +3960,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-uefa-champions-league-pro-3rd-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UEFA Champions League Pro 3RD - Blanc",
     colour: "Blanc",
     offers: [
@@ -3491,14 +3976,31 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-uefa-champions-league-pro-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas UEFA Champions League Pro - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 150.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44695077702&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd0190_white-shopnk-syello_2.webp&feedId=89032&k=1a396dbe42f92ffa23a4443d37bd0e0073a81d01",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-uefa-champions-league-pro-winter-jaune",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Uefa Champions League Pro Winter - Jaune",
     colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
-        price: 139.0,
+        price: 137.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940201765&a=3013769&m=65912",
@@ -3509,7 +4011,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-uefa-nations-league-2026-27-bleu",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UEFA Nations League 2026/27 - Bleu",
     colour: "Bleu",
     offers: [
@@ -3526,13 +4028,13 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-uefa-womens-champions-league-pro-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UEFA Womens Champions League Pro - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 105.0,
+        price: 104.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695074833&a=3013769&m=65912",
@@ -3542,8 +4044,25 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-univers-blanc",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Univers - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 17.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41773059320&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_iw3729_white-black_1.webp&feedId=89032&k=4cff55736b0b74abc9664bcec981722f3822f5ea",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-uwcl-league-24-25-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UWCL League 24/25 - Blanc",
     colour: "Blanc",
     offers: [
@@ -3560,7 +4079,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-uwcl-pro-void-2022-23-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas UWCL Pro Void 2022/23 - Argenté",
     colour: "Argenté",
     offers: [
@@ -3577,24 +4096,47 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-balones-de-futbol-adidas-women-euro-2025-club-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Women Euro 2025 Club - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 26.0,
+        price: 19.0,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41817344081&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh1270_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=f4534c8b05cedecddee8b4a9578082209e32142a",
         sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 19.0, url: "https://www.awin1.com/pclick.php?p=41817344081&a=3013769&m=65912" },
+          { size: "4", price: 26.0, url: "https://www.awin1.com/pclick.php?p=41817344082&a=3013769&m=65912" },
+          { size: "5", price: 26.0, url: "https://www.awin1.com/pclick.php?p=41817344083&a=3013769&m=65912" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-women-euro-2025-club-rouge",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Women Euro 2025 Club - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 23.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529775583&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jh1268_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=398dc95f9f7d884eaf9f9a745773ecb16a97a63b",
+        sizes: ["3"],
       },
     ],
   },
   {
     id: "adidas-balones-de-futbol-adidas-women-euro-2025-lge-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Balones de Fútbol adidas Women Euro 2025 LGE - Blanc",
     colour: "Blanc",
     offers: [
@@ -3610,8 +4152,25 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-world-cup-26-trionda-pro-winter-vert",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas World Cup 26 Trionda Pro Winter - Vert",
+    colour: "Vert",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 133.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42671911541&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jd8023_1_hardware_photography_front_center_view_white.webp&feedId=89032&k=75b0d91522ea112130a2386bf2cfdae521c72a6c",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-futbol-formativo-adidas-ekstraklasa-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Fútbol formativo adidas Ekstraklasa - Blanc",
     colour: "Blanc",
     offers: [
@@ -3628,7 +4187,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-futbol-formativo-adidas-predator-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Fútbol formativo adidas Predator - Blanc",
     colour: "Blanc",
     offers: [
@@ -3643,7 +4202,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44223822117&a=3013769&m=65912",
@@ -3654,7 +4213,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-futbol-formativo-adidas-predator-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Fútbol formativo adidas Predator - Rouge",
     colour: "Rouge",
     offers: [
@@ -3671,7 +4230,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-mini-ballon-de-football-adidas-torfabrik-bundesliga-2026-27-blanc",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Mini ballon de football adidas Torfabrik Bundesliga 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
@@ -3688,7 +4247,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-mini-ballon-de-football-adidas-ucl-rm-vert",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Mini Ballon de football adidas UCL RM - Vert",
     colour: "Vert",
     offers: [
@@ -3705,7 +4264,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-mini-ballon-de-football-domicile-adidas-liverpool-fc-rouge",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Mini Ballon de football Domicile adidas Liverpool FC - Rouge",
     colour: "Rouge",
     offers: [
@@ -3722,7 +4281,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   },
   {
     id: "adidas-mini-ballon-de-football-euro-2024-final-adidas-argente",
-    brand: "adidas",
+    brand: "Adidas",
     model: "Mini Ballon de football Euro 2024 final adidas - Argenté",
     colour: "Argenté",
     offers: [
@@ -3734,6 +4293,23 @@ const minedBallProductsChunk2: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix4048-mini-ballon-de-football-euro-2024-final-adidas-silvmt-goldmt-black-solre-taille-1",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ix4048_1_hardware_photography_front_center_view_white.webp",
         sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "adidas-minibalon-de-futbol-adidas-torfabrik-bundesliga-2026-27-blanc",
+    brand: "Adidas",
+    model: "Minibalón de fútbol adidas Torfabrik Bundesliga 2026/27 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45184773494&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas-kg6039-white-black-solred-6a444bbf447af-1.webp&feedId=89032&k=9460c32aa511681cc1fe2a000ee6c89d282cf625",
+        sizes: ["mini"],
       },
     ],
   },
@@ -5170,6 +5746,23 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "derbystar-balones-de-futbol-derbystar-replica-bundesliga-blanc",
+    brand: "Derbystar",
+    model: "Balones de Fútbol Derbystar Replica Bundesliga - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43829767412&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fd%2Fe%2Fderbystar_f17669_blanc-rouge-bleu_1.webp&feedId=89032&k=2cdd8aa4994245416ff55075c1ff8298200a4f12",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "derbystar-balones-de-futbol-derbystar-stratos-light-jaune",
     brand: "Derbystar",
     model: "Balones de Fútbol Derbystar Stratos Light - Jaune",
@@ -5288,16 +5881,16 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "GigasportCH",
-        price: 39.01,
-        priceMax: 39.87,
+        price: 45.9,
+        priceMax: 46.9,
         shipping: 3.95,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45170514996&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fderbystar-1-768_1024_100-7807861_1.jpg&feedId=51705&k=dd9a5255396c0369a70d8955de5f3b4e846474f9",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 39.01, url: "https://www.awin1.com/pclick.php?p=45170514996&a=3013769&m=22149" },
-          { size: "5", price: 39.87, url: "https://www.awin1.com/pclick.php?p=45170514993&a=3013769&m=22149" },
+          { size: "4", price: 45.9, url: "https://www.awin1.com/pclick.php?p=45170514996&a=3013769&m=22149" },
+          { size: "5", price: 46.9, url: "https://www.awin1.com/pclick.php?p=45170514993&a=3013769&m=22149" },
         ],
       },
     ],
@@ -5900,7 +6493,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529570178&a=3013769&m=65912",
@@ -6064,6 +6657,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "erima-balones-de-futbol-erima-senzor-star-lite-290-jaune",
     brand: "erima",
@@ -6627,6 +7223,41 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "errea-balones-de-futbol-errea-college-id-blanc",
+    brand: "Errea",
+    model: "Balones de Fútbol Errea College ID - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 17.44,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41984765342&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferrea_ga1h0z77840_1.webp&feedId=89032&k=51a5d2b663b2e1affb611b0609afcc7f33bf88d3",
+        sizes: ["3"],
+      },
+      {
+        store: "FootStoreES",
+        price: 17.44,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529464293&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferrea_ga1h0z00410_1.webp&feedId=89032&k=f2b291a1c408ea0d0c5f483512c5475d5ca604d0",
+        sizes: ["3"],
+      },
+      {
+        store: "FootStoreES",
+        price: 17.44,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41297912636&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferrea_ga1h0z45550_1.webp&feedId=89032&k=ee841d2e1310e7ca17c308e35c83db3bf36545b0",
+        sizes: ["3"],
+      },
+    ],
+  },
+  {
     id: "errea-balones-de-futbol-errea-huran-hybrid-heritage-blanc",
     brand: "Errea",
     model: "Balones de Fútbol Errea Huran Hybrid Heritage - Blanc",
@@ -6805,9 +7436,6 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "errea-balones-de-futbol-errea-ra-heritage-bleu",
     brand: "Errea",
@@ -9600,6 +10228,9 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "hummel-balones-de-futbol-hummel-inspire-lite-350-noir",
     brand: "Hummel",
@@ -10253,9 +10884,6 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "joma-ballon-de-football-joma-dali-ii-rose",
     brand: "Joma",
@@ -10701,7 +11329,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 66.0,
+        price: 67.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529497205&a=3013769&m=65912",
@@ -11928,6 +12556,23 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
+    id: "macron-suiza-sfl-macron-fifa-basic-balon-de-futbol-60005754-blanco",
+    brand: "Macron",
+    model: "Suiza SFL macron FIFA Basic Balón de fútbol 60005754 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 17.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46090530072&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa3%2Fd8%2F77%2F60005754-1_600x600.jpg&feedId=99907&k=6c268ed111f60a4129a72af338332291f3a022e3",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "megaform-ballon-de-football-en-caoutchouc-megaform-eco-noir",
     brand: "Megaform",
     model: "Ballon de football en caoutchouc Megaform Eco - Noir",
@@ -12325,32 +12970,6 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
-    id: "mikasa-ballon-de-football-mikasa-ft-5ybk-fq-noir",
-    brand: "Mikasa",
-    model: "Ballon de football Mikasa FT-5YBK-FQ - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 56.43,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fft-5ybk-fq-ballon-de-football-mikasa-ft-5ybk-fq-noir-jaune-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mikasa_10-003.048_noir-jaune_1.webp",
-        sizes: ["5"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 57.54,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fft-5ybk-fq-ballon-de-football-mikasa-ft-5ybk-fq-noir-jaune-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mikasa_10-003.048_noir-jaune_1.webp",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "mikasa-ballon-de-football-mikasa-ft558b-yp-blanc",
     brand: "Mikasa",
     model: "Ballon de football Mikasa FT558B-YP - Blanc",
@@ -12399,6 +13018,23 @@ const minedBallProductsChunk4: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45889188672&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmikasa-ft-5r-fq-blanc-6a89d0dc2cfe3-1.webp&feedId=89044&k=73963b5e158fce5ccbc68c6a770042737c490763",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "mikasa-balon-de-futbol-de-cuero-sintetico-mikasa-mikasa-regateador-rouge",
+    brand: "Mikasa",
+    model: "Balón de fútbol de cuero sintético Mikasa Mikasa Regateador - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45361881435&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmikasa_99292_blanco-rojo-negro_1.webp&feedId=89032&k=cbdc09af7009d378855285f3b4d76f18974b9b77",
+        sizes: ["7"],
       },
     ],
   },
@@ -12500,15 +13136,6 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40844623994&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmikasa_10-003.048_noir-jaune_1.webp&feedId=89032&k=54bfca6ae21fd28d08acb1dfb6b01abce8d9e603",
-        sizes: ["5"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 59.51,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44930052126&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fm%2Fi%2Fmikasa_10-003.048_noir-jaune_1.webp&feedId=89044&k=54bfca6ae21fd28d08acb1dfb6b01abce8d9e603",
         sizes: ["5"],
       },
     ],
@@ -13151,6 +13778,9 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "mizuno-balones-de-futbol-mizuno-team-rb-x12-blanc",
     brand: "Mizuno",
@@ -13774,9 +14404,6 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "molten-balones-de-futbol-molten-fn-st-blanc",
     brand: "Molten",
@@ -14967,9 +15594,9 @@ const minedBallProductsChunk5: BallProduct[] = [
         price: 23.84,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45663288433&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45663288434&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-iq0657-707-metallic-gold-clear-jade-persian-violet-6a8313d0474d3-1.webp&feedId=89032&k=24da300ee51314e5feddcecefbfa9e36c47f473d",
-        sizes: ["4", "5"],
+        sizes: ["5"],
       },
     ],
   },
@@ -14999,17 +15626,11 @@ const minedBallProductsChunk5: BallProduct[] = [
       {
         store: "FootStoreES",
         price: 28.83,
-        priceMax: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44078833770&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike-hv4387-101-3-white-lt-blue-fury-black-1.webp&feedId=89032&k=ff0328f657b179413ac3ca7d7f8f0925bcf68a75",
-        sizes: ["3", "4", "5"],
-        sizePrices: [
-          { size: "3", price: 34.0, url: "https://www.awin1.com/pclick.php?p=44078833769&a=3013769&m=65912" },
-          { size: "4", price: 28.83, url: "https://www.awin1.com/pclick.php?p=44078833770&a=3013769&m=65912" },
-          { size: "5", price: 28.83, url: "https://www.awin1.com/pclick.php?p=44078833771&a=3013769&m=65912" },
-        ],
+        sizes: ["4", "5"],
       },
       {
         store: "FootStoreES",
@@ -15116,7 +15737,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 132.0,
+        price: 134.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829757609&a=3013769&m=65912",
@@ -15228,6 +15849,15 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreES",
+        price: 29.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46050197759&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_fz3036-100_blanc-blue-fury-blackened-blue_1.webp&feedId=89032&k=2b359153e543612775b175b3c073e48d12e2f081",
+        sizes: ["5"],
+      },
+      {
+        store: "FootStoreES",
         price: 16.67,
         shipping: 7.99,
         currency: "EUR",
@@ -15288,7 +15918,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.0,
+        price: 22.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44086759059&a=3013769&m=65912",
@@ -15416,7 +16046,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45062603986&a=3013769&m=65912",
@@ -16653,6 +17283,9 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "puma-balones-de-futbol-puma-orbita-7-ms-jaune",
     brand: "Puma",
@@ -16809,6 +17442,23 @@ const minedBallProductsChunk5: BallProduct[] = [
     ],
   },
   {
+    id: "puma-balones-de-futbol-puma-stellar-cup-pl-reactivity-wp-blanc",
+    brand: "Puma",
+    model: "Balones de Fútbol Puma Stellar Cup PL Reactivity WP - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 22.17,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45795638328&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-085129-01-6a8e04330ceaa-1.webp&feedId=89032&k=15a5b72fca2510c20ad7463f3326aecab5286f96",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "puma-balones-de-futbol-puma-stellar-goal-blanc",
     brand: "Puma",
     model: "Balones de Fútbol Puma Stellar Goal - Blanc",
@@ -16822,23 +17472,6 @@ const minedBallProductsChunk5: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45663295362&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-085064-01-white-black-lime-6a831fb3ed63b-1.webp&feedId=89032&k=b6dbd54988aea47bec7fa8392691f768e867ba6f",
         sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "puma-balones-de-futbol-puma-stellar-match-blanc",
-    brand: "Puma",
-    model: "Balones de Fútbol Puma Stellar Match - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 28.38,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45698877027&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-085062-01-white-6a842109070e1-1.webp&feedId=89032&k=80fa59daf3e5a202581453df149f30ef5cca3743",
-        sizes: ["4"],
       },
     ],
   },
@@ -17321,9 +17954,6 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "rebond-balones-de-futbol-rebond-the-feebles-bleu",
     brand: "Rebond",
@@ -18012,6 +18642,23 @@ const minedBallProductsChunk6: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45137700411&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fe%2Fselect-l330009-130-white-red-6a3bbb8bdef3e-1.webp&feedId=89032&k=017f35c86bcc144bbc19b789bb3c957bf577df7f",
         sizes: ["52.5/54.5 cm"],
+      },
+    ],
+  },
+  {
+    id: "select-balones-de-futbol-select-talento-13-v26-28-blanc",
+    brand: "Select",
+    model: "Balones de Fútbol Select Talento 13 V26_28 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 19.02,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45456958632&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fe%2Fselect-l330010-160-white-blue-6a3bbb8c03e27-1.webp&feedId=89032&k=5f515c2782a68d92da08ef73ecb11443b0f2bb29",
+        sizes: ["57/59 cm"],
       },
     ],
   },
@@ -19990,6 +20637,9 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk7: BallProduct[] = [
   {
     id: "sport-one-ballon-de-football-sport-one-axen-multicolore",
     brand: "Sport One",
@@ -20683,9 +21333,6 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk7: BallProduct[] = [
   {
     id: "team-merchandise-balones-de-futbol-team-merchandise-champions-league-orange",
     brand: "Team Merchandise",
@@ -21509,16 +22156,15 @@ const minedBallProductsChunk7: BallProduct[] = [
       {
         store: "FootStoreFR",
         price: 10.1,
-        priceMax: 11.7,
+        priceMax: 10.35,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177505-ballon-de-football-uhlsport-team-blanc-bleu-marine-bleu-ciel-clair-taille-3",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100177505_blanc-bleu-marine-bleu-ciel-clair_1.webp",
-        sizes: ["3", "4", "5"],
+        sizes: ["3", "4"],
         sizePrices: [
           { size: "3", price: 10.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177505-ballon-de-football-uhlsport-team-blanc-bleu-marine-bleu-ciel-clair-taille-3" },
           { size: "4", price: 10.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177503-ballon-de-football-uhlsport-team-blanc-bleu-marine-jaune-fluo-taille-4" },
-          { size: "5", price: 11.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177501-ballon-de-football-uhlsport-team-blanc-bleu-marine-orange-fluo-taille-5" },
         ],
       },
       {
@@ -21820,6 +22466,23 @@ const minedBallProductsChunk7: BallProduct[] = [
     ],
   },
   {
+    id: "uhlsport-balones-de-futbol-uhlsport-player-vert",
+    brand: "uhlsport",
+    model: "Balones de Fútbol Uhlsport Player - Vert",
+    colour: "Vert",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43493194477&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_100177604_vert-noir-jaune-fluo_1.webp&feedId=89032&k=a3e7865e42a3a27bd7a52a53bb9eca2ee5824b91",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-balones-de-futbol-uhlsport-reflex-jaune",
     brand: "uhlsport",
     model: "Balones de Fútbol Uhlsport Reflex - Jaune",
@@ -21859,6 +22522,23 @@ const minedBallProductsChunk7: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45018628196&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport-100178701-white-fluo-orange-black-69bac27251b08-1.webp&feedId=89032&k=396d1e535abc561a527d858fcac948bf4a3567b9",
         sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-balones-de-futbol-uhlsport-resist-synergy-blanc",
+    brand: "uhlsport",
+    model: "Balones de Fútbol Uhlsport Resist Synergy - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40944592335&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fu%2Fh%2Fuhlsport_100176801_blanc-noir-orange-fluo_1.webp&feedId=89032&k=8a1e2581f69077b8df9fdabe17385819128d3e3b",
+        sizes: ["4"],
       },
     ],
   },
