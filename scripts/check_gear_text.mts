@@ -3,7 +3,7 @@
 // en inglés, las traducciones malas del propio feed español, y que un
 // prefijo desconocido caiga al texto original en vez de a medias.
 import assert from "node:assert";
-import { localizeGearModel as L, localizeGearColour as C } from "../src/lib/gearText.ts";
+import { localizeGearModel as L, localizeGearColour as C } from "../src/lib/gearText";
 
 const cases: [string, string, "es" | "en" | "pt" | "fr" | "it", string][] = [
   ["Pantalón corto Nike Dri-FIT - Noir", "Nike", "en", "Shorts Nike Dri-FIT - Black"],
