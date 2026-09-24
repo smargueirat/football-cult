@@ -26,7 +26,7 @@ import {
   QUICK_PICK_TEAMS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
-import { BOOT_TIER_LABEL, BOOT_TIER_ORDER } from "@/lib/bootTier";
+import { BOOT_TIER_ORDER } from "@/lib/bootTier";
 import { BOOT_GROUND_TYPE_INFO, BOOT_GROUND_TYPE_ORDER } from "@/lib/bootGroundType";
 import { COLOR_LABEL_KEY, COLOR_ORDER, COLOR_SWATCH } from "@/lib/colorClassify";
 import Chip from "./Chip";
@@ -299,7 +299,7 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
                       onClick={() => toggleBootTierFilter(tier)}
                       className="flex-shrink-0 whitespace-nowrap"
                     >
-                      {BOOT_TIER_LABEL[tier]}
+                      {t.botas.tiers[tier]}
                     </Chip>
                   ))}
                 </ScrollArrowRow>

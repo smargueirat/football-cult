@@ -382,6 +382,11 @@ export interface Translations {
     sectionAll: string;
     sectionJerseys: string;
     sectionBoots: string;
+    // Etiquetas del filtro Tier de botas. Antes vivían hardcodeadas en
+    // español en src/lib/bootTier.ts (BOOT_TIER_LABEL), así que en
+    // inglés/francés/etc. el filtro mostraba "Súper Élite", "Iniciación"
+    // -- reportado real por el usuario 2026-09-24.
+    tiers: { "1+": string; "1": string; "2": string; "3": string; "4": string };
   };
   guantes: {
     navLabel: string;
@@ -883,6 +888,7 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "Todo",
       sectionJerseys: "Camisetas",
       sectionBoots: "Botas",
+      tiers: { "1+": "Tier 1+ (Súper Élite)", "1": "Tier 1 (Élite)", "2": "Tier 2 (Semipro)", "3": "Tier 3 (Amateur)", "4": "Tier 4 (Iniciación)" },
     },
     guantes: {
       navLabel: "Guantes",
@@ -1381,6 +1387,7 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "Tudo",
       sectionJerseys: "Camisas",
       sectionBoots: "Chuteiras",
+      tiers: { "1+": "Tier 1+ (Super Elite)", "1": "Tier 1 (Elite)", "2": "Tier 2 (Semipro)", "3": "Tier 3 (Amador)", "4": "Tier 4 (Iniciação)" },
     },
     guantes: {
       navLabel: "Luvas",
@@ -1879,6 +1886,7 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "All",
       sectionJerseys: "Jerseys",
       sectionBoots: "Boots",
+      tiers: { "1+": "Tier 1+ (Super Elite)", "1": "Tier 1 (Elite)", "2": "Tier 2 (Semi-pro)", "3": "Tier 3 (Amateur)", "4": "Tier 4 (Entry level)" },
     },
     guantes: {
       navLabel: "Gloves",
@@ -2377,6 +2385,7 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "Tout",
       sectionJerseys: "Maillots",
       sectionBoots: "Chaussures",
+      tiers: { "1+": "Tier 1+ (Super Élite)", "1": "Tier 1 (Élite)", "2": "Tier 2 (Semi-pro)", "3": "Tier 3 (Amateur)", "4": "Tier 4 (Débutant)" },
     },
     guantes: {
       navLabel: "Gants",
@@ -2875,6 +2884,7 @@ export const translations: Record<Locale, Translations> = {
       sectionAll: "Tutto",
       sectionJerseys: "Maglie",
       sectionBoots: "Scarpini",
+      tiers: { "1+": "Tier 1+ (Super Élite)", "1": "Tier 1 (Élite)", "2": "Tier 2 (Semipro)", "3": "Tier 3 (Amatoriale)", "4": "Tier 4 (Base)" },
     },
     guantes: {
       navLabel: "Guanti",

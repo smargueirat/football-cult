@@ -18,6 +18,10 @@ export type BootTier = "1+" | "1" | "2" | "3" | "4";
 
 export const BOOT_TIER_ORDER: BootTier[] = ["1+", "1", "2", "3", "4"];
 
+// SOLO fallback (y para scripts/node, que no tienen contexto de idioma).
+// La UI debe usar t.botas.tiers[tier] -- este objeto estaba hardcodeado en
+// español y se mostraba igual en inglés/francés/portugués/italiano dentro
+// del filtro de botas (reportado real por el usuario 2026-09-24).
 export const BOOT_TIER_LABEL: Record<BootTier, string> = {
   "1+": "Tier 1+ (Súper Élite)",
   "1": "Tier 1 (Élite)",

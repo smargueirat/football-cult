@@ -36,7 +36,7 @@ import {
   QUICK_PICK_TEAMS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
-import { BOOT_TIER_LABEL, BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
+import { BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
 import { BOOT_GROUND_TYPE_INFO, BOOT_GROUND_TYPE_ORDER, bootMatchesGroundType } from "@/lib/bootGroundType";
 import ScrollArrowRow from "./ScrollArrowRow";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -1042,7 +1042,7 @@ export default function SearchExplorer({
                           onClick={() => toggleBootTierFilter(tier)}
                           className="flex-shrink-0 whitespace-nowrap"
                         >
-                          {BOOT_TIER_LABEL[tier]}
+                          {t.botas.tiers[tier]}
                         </Chip>
                       ))}
                     </ScrollArrowRow>
