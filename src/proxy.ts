@@ -1,17 +1,35 @@
 import { NextRequest, NextResponse } from "next/server";
-import { countries } from "@/data/products";
-import { DEFAULT_LOCALE, isLocale } from "@/lib/i18n/locales";
+import { DEFAULT_LOCALE, isLocale, LOCALES } from "@/lib/i18n/locales";
 
-// Deja una cookie con el país detectado por geolocalización de IP (header
-// que Vercel agrega automáticamente en el borde de su red, no depende de
-// esta versión de Next.js) para que CountryContext la use como país por
-// defecto en la primera visita. Solo se escribe una vez -- una elección
-// explícita del usuario en el CountrySelector se guarda aparte, en
-// localStorage, y esa siempre tiene prioridad (ver CountryContext.tsx).
-const GEO_COOKIE = "football-cult-geo-country";
-const VALID_CODES = new Set<string>(countries.map((c) => c.code));
-
+// ÚNICA tarea del proxy: mandar a una URL con idioma a quien entra sin
+// uno. Nada más.
+//
+// Antes también dejaba una cookie con el país geolocalizado, y por eso
+// corría en CADA request. Desde Next 16 el proxy dejó de correr en el
+// edge y corre como función de Node (ver
+// node_modules/next/dist/docs/.../proxy.md: "Proxy defaults to the
+// Node.js runtime", y el runtime no se puede configurar), así que eso
+// era una invocación de función por visita -- incluidos los bots, que
+// son casi todo el tráfico y nunca iban a leer esa cookie. Se veía
+// directo en el panel: Fluid Active CPU 193% del límite e invocaciones
+// 120%, con "Edge Middleware Invocations" en 0 (2026-09-24).
+//
+// El país lo resuelve ahora el cliente contra /api/geo, una sola vez por
+// visitante (ver CountryContext.tsx). La elección explícita del usuario
+// en el CountrySelector sigue mandando: se guarda en localStorage.
 const LOCALE_COOKIE = "football-cult-locale";
+
+// El matcher de abajo tiene que ser un literal (Next lo analiza en build,
+// no puede interpolar), así que la lista de idiomas está escrita a mano
+// ahí. Esto avisa en desarrollo si alguna vez deja de coincidir con
+// LOCALES, que es el bug silencioso obvio: un idioma nuevo que nunca
+// recibe su redirección.
+const MATCHER_LOCALES = "es|en|pt|fr|it";
+if (process.env.NODE_ENV !== "production" && MATCHER_LOCALES !== LOCALES.join("|")) {
+  throw new Error(
+    `proxy.ts: el matcher ("${MATCHER_LOCALES}") no coincide con LOCALES ("${LOCALES.join("|")}")`,
+  );
+}
 
 // Parsea "Accept-Language: fr-FR,fr;q=0.9,en;q=0.8" -> primer idioma
 // soportado por orden de preferencia real del navegador. Sin librerías
@@ -50,27 +68,24 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
-  if (request.cookies.has(GEO_COOKIE)) {
-    return NextResponse.next();
-  }
-  const geoCountry = request.headers.get("x-vercel-ip-country");
-  if (!geoCountry || !VALID_CODES.has(geoCountry)) {
-    return NextResponse.next();
-  }
-  const response = NextResponse.next();
-  response.cookies.set(GEO_COOKIE, geoCountry, {
-    maxAge: 60 * 60 * 24 * 30,
-    path: "/",
-  });
-  return response;
+  return NextResponse.next();
 }
 
 export const config = {
   matcher: [
-    // Todo excepto: rutas de API, los feeds de Merchant Center (URLs
-    // fijas que Google ya tiene registradas, sin locale), los archivos
-    // especiales de metadata, assets estáticos de Next y cualquier
-    // archivo con extensión (favicon.ico, icon.png, etc).
-    "/((?!api|feed.*\\.xml|robots\\.txt|sitemap\\.xml|_next/static|_next/image|.*\\..*).*)",
+    // Solo rutas que NO empiezan por un idioma: esas son las únicas que
+    // hay que redirigir. Todo lo demás (el sitemap, los enlaces internos,
+    // lo que rastrea Googlebot) ya viene con /es, /en, /pt, /fr o /it y
+    // se sirve sin ejecutar nada.
+    //
+    // El `(?:/|$)` detrás de los idiomas es el detalle que importa: sin
+    // él, "/estudios" empieza por "es" y se saltearía la redirección.
+    // Así, "/es" y "/es/..." quedan fuera pero "/estudios" entra.
+    //
+    // Se excluyen además, como antes: rutas de API, los feeds de Merchant
+    // Center (URLs fijas sin idioma que Google ya tiene registradas), los
+    // archivos de metadata, los assets de Next y cualquier archivo con
+    // extensión (favicon.ico, icon.png...).
+    "/((?!(?:es|en|pt|fr|it)(?:/|$)|api|feed.*\\.xml|robots\\.txt|sitemap\\.xml|_next/static|_next/image|.*\\..*).*)",
   ],
 };

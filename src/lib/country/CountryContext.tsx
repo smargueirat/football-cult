@@ -59,7 +59,29 @@ export function CountryProvider({ children }: { children: ReactNode }) {
       setCountryCodeState(geo);
       return;
     }
+    // Sin dato guardado: se muestra ya la conjetura por idioma del
+    // navegador (para no dejar la interfaz esperando) y en paralelo se
+    // pregunta el país real, que es más fiable -- un navegador en inglés
+    // dentro de España daba "US" y con eso los envíos salían mal.
     setCountryCodeState(detectCountry());
+    let cancelled = false;
+    fetch("/api/geo")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { country?: string } | null) => {
+        const code = data?.country;
+        if (cancelled || !code || !countries.some((c) => c.code === code)) return;
+        setCountryCodeState(code as CountryCode);
+        // Se guarda en el mismo cookie que antes escribía el proxy, así
+        // las visitas siguientes no vuelven a preguntar (y DaznLayout,
+        // que lo lee por su cuenta, sigue funcionando igual).
+        document.cookie = `${GEO_COOKIE}=${code}; path=/; max-age=${60 * 60 * 24 * 30}; samesite=lax`;
+      })
+      .catch(() => {
+        // Sin red o con la ruta caída se queda la conjetura por idioma.
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   function setCountryCode(code: CountryCode) {
