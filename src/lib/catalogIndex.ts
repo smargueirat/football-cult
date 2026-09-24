@@ -75,7 +75,23 @@ function gearEntries(
   }));
 }
 
+// Se cachea por seccion+idioma: cada pagina de indice llamaba a esto de
+// nuevo (y generateMetadata otra vez via pageCount), o sea filtrar+mapear+
+// ordenar el catalogo entero 445 veces. En local no se nota; el build de
+// Vercel corre con UN worker y pasó de 1.100 páginas cada 15 s a 100 cada
+// minuto. Mismo patrón que priceStudy().
+const cache = new Map<string, IndexEntry[]>();
+
 export function indexEntries(section: IndexSection, locale: HubLocale): IndexEntry[] {
+  const key = `${section}:${locale}`;
+  const hit = cache.get(key);
+  if (hit) return hit;
+  const built = buildEntries(section, locale);
+  cache.set(key, built);
+  return built;
+}
+
+function buildEntries(section: IndexSection, locale: HubLocale): IndexEntry[] {
   switch (section) {
     case "camisetas":
       return ordered(
