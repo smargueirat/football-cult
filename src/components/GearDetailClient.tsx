@@ -6,6 +6,7 @@ import BackToCatalogLink from "./BackToCatalogLink";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { localizeGearModel } from "@/lib/gearText";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
@@ -42,7 +43,7 @@ export default function GearDetailClient({
   basePath: "guantes" | "pelotas" | "ropa" | "entrenamiento";
   sizeLabel: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(item.id);
@@ -73,7 +74,7 @@ export default function GearDetailClient({
           <Image
             key={selectedOffer.imageUrl}
             src={getDisplaySrc(selectedOffer.imageUrl, 1200)}
-            alt={item.model}
+            alt={localizeGearModel(item.model, item.brand, locale)}
             fill
             unoptimized
             className="object-contain p-6"
@@ -100,7 +101,7 @@ export default function GearDetailClient({
         </div>
         <div>
           <span className="text-xs uppercase tracking-wide text-[#B8933F]">{item.brand}</span>
-          <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{item.model}</h1>
+          <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{localizeGearModel(item.model, item.brand, locale)}</h1>
           <p className="mt-2 text-sm text-[#675c44]">
             {t.botas.bestPrice}: {cheapestOffer.priceMax ? `${t.botas.from} ` : ""}
             {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}

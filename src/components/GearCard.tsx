@@ -4,6 +4,7 @@ import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { localizeGearModel } from "@/lib/gearText";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
@@ -40,7 +41,7 @@ export default function GearCard({
   basePath: "guantes" | "pelotas" | "ropa" | "entrenamiento";
   priority?: boolean;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(item.id);
@@ -80,7 +81,7 @@ export default function GearCard({
           src={getDisplaySrc(photo, 500)}
           srcSet={`${getDisplaySrc(photo, 260)} 260w, ${getDisplaySrc(photo, 420)} 420w, ${getDisplaySrc(photo, 600)} 600w`}
           sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 22vw"
-          alt={item.model}
+          alt={localizeGearModel(item.model, item.brand, locale)}
           loading={priority ? "eager" : "lazy"}
           fetchPriority={priority ? "high" : "auto"}
           decoding="async"
@@ -160,7 +161,7 @@ export default function GearCard({
 
       <div className="flex flex-col gap-0.5 px-2 py-1.5 sm:p-4">
         <h3 className="font-card-title text-xs leading-snug text-[#1a1a1a] sm:text-lg">
-          {item.model}
+          {localizeGearModel(item.model, item.brand, locale)}
         </h3>
         <p className="text-[10px] text-[#675c44] sm:text-xs">
           {t.product.inStores.replace("{n}", String(item.offers.length))}

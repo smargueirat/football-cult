@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { apparelProducts } from "@/data/apparel";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { localizeGearModel } from "@/lib/gearText";
 import ApparelDetailPageClient from "./ApparelDetailPageClient";
 
 const SITE_URL = "https://football-cult.com";
@@ -56,8 +57,8 @@ export async function generateMetadata({
   if (!item) return {};
 
   const tmpl = META_TEMPLATE[locale];
-  const title = tmpl.title.replace("{model}", item.model);
-  const description = tmpl.description.replace("{model}", item.model);
+  const title = tmpl.title.replace("{model}", localizeGearModel(item.model, item.brand, locale));
+  const description = tmpl.description.replace("{model}", localizeGearModel(item.model, item.brand, locale));
   const image = item.offers[0]?.imageUrl;
 
   return {
@@ -74,14 +75,15 @@ export default async function ApparelDetailPage({
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const { locale, id } = await params;
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const item = findApparel(id);
   if (!item) notFound();
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: item.model,
+    name: localizeGearModel(item.model, item.brand, locale),
     image: item.offers[0]?.imageUrl ? [item.offers[0].imageUrl] : undefined,
     url: `${SITE_URL}/${locale}/ropa/${item.id}`,
     brand: { "@type": "Brand", name: item.brand },

@@ -8,6 +8,7 @@ import ScrollArrowRow from "./ScrollArrowRow";
 import FilterSheet from "./FilterSheet";
 import SortDropdown from "./SortDropdown";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { localizeGearColour } from "@/lib/gearText";
 import { markCatalogVisited } from "@/lib/search/catalogVisit";
 
 // Listado para guantes y pelotas. No se integró en SearchExplorer.tsx a
@@ -50,7 +51,7 @@ export default function GearListClient({
   pageTitle: string;
   pageSubtitle: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -224,7 +225,7 @@ export default function GearListClient({
             </Chip>
             {colours.map((c) => (
               <Chip key={c} active={colourFilter === c} onClick={() => { setColourFilter(c); setVisible(PAGE_SIZE); }} className="flex-shrink-0 whitespace-nowrap">
-                {c}
+                {localizeGearColour(c, locale)}
               </Chip>
             ))}
           </ScrollArrowRow>

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ballProducts } from "@/data/balls";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { localizeGearModel } from "@/lib/gearText";
 import BallDetailPageClient from "./BallDetailPageClient";
 
 const SITE_URL = "https://football-cult.com";
@@ -56,8 +57,8 @@ export async function generateMetadata({
   if (!ball) return {};
 
   const tmpl = META_TEMPLATE[locale];
-  const title = tmpl.title.replace("{model}", ball.model);
-  const description = tmpl.description.replace("{model}", ball.model);
+  const title = tmpl.title.replace("{model}", localizeGearModel(ball.model, ball.brand, locale));
+  const description = tmpl.description.replace("{model}", localizeGearModel(ball.model, ball.brand, locale));
   const image = ball.offers[0]?.imageUrl;
 
   return {
@@ -74,14 +75,15 @@ export default async function BallDetailPage({
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const { locale, id } = await params;
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const ball = findBall(id);
   if (!ball) notFound();
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: ball.model,
+    name: localizeGearModel(ball.model, ball.brand, locale),
     image: ball.offers[0]?.imageUrl ? [ball.offers[0].imageUrl] : undefined,
     url: `${SITE_URL}/${locale}/pelotas/${ball.id}`,
     brand: { "@type": "Brand", name: ball.brand },

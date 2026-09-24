@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { gloveProducts } from "@/data/gloves";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { localizeGearModel } from "@/lib/gearText";
 import GloveDetailPageClient from "./GloveDetailPageClient";
 
 const SITE_URL = "https://football-cult.com";
@@ -56,8 +57,8 @@ export async function generateMetadata({
   if (!glove) return {};
 
   const tmpl = META_TEMPLATE[locale];
-  const title = tmpl.title.replace("{model}", glove.model);
-  const description = tmpl.description.replace("{model}", glove.model);
+  const title = tmpl.title.replace("{model}", localizeGearModel(glove.model, glove.brand, locale));
+  const description = tmpl.description.replace("{model}", localizeGearModel(glove.model, glove.brand, locale));
   const image = glove.offers[0]?.imageUrl;
 
   return {
@@ -74,14 +75,15 @@ export default async function GloveDetailPage({
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const { locale, id } = await params;
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const glove = findGlove(id);
   if (!glove) notFound();
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: glove.model,
+    name: localizeGearModel(glove.model, glove.brand, locale),
     image: glove.offers[0]?.imageUrl ? [glove.offers[0].imageUrl] : undefined,
     url: `${SITE_URL}/${locale}/guantes/${glove.id}`,
     brand: { "@type": "Brand", name: glove.brand },

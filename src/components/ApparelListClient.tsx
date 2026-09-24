@@ -8,6 +8,7 @@ import ScrollArrowRow from "./ScrollArrowRow";
 import FilterSheet from "./FilterSheet";
 import SortDropdown from "./SortDropdown";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { localizeGearColour } from "@/lib/gearText";
 import { markCatalogVisited } from "@/lib/search/catalogVisit";
 
 // Variante de GearListClient para ropa: misma UI (grilla + búsqueda +
@@ -77,7 +78,7 @@ export default function ApparelListClient({
   typeFilterLabel: string;
   basePath?: "ropa" | "entrenamiento";
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -276,7 +277,7 @@ export default function ApparelListClient({
             </Chip>
             {colours.map((c) => (
               <Chip key={c} active={colourFilter === c} onClick={() => { setColourFilter(c); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
-                {c}
+                {localizeGearColour(c, locale)}
               </Chip>
             ))}
           </ScrollArrowRow>
