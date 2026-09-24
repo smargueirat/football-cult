@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "@/lib/i18n/LocaleLink";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import {
   Product,
   SIZES,
@@ -14,7 +14,9 @@ import {
   teamNames,
   typeNames,
 } from "@/data/products";
-import { formatOfferMoney, previousOfferTotal } from "@/lib/offerMoney";
+import { formatOfferMoney, offerTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
+import { isComparableStore } from "@/lib/officialStores";
+import { variantKey } from "@/lib/jerseyVersion";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -56,6 +58,32 @@ export default function ProductCard3D({
   const storeCount = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
   ).length;
+  // Ahorro de la tarjeta: la diferencia entre la más barata y la más cara
+  // de la MISMA variante (versión y manga) y solo entre minoristas
+  // oficiales -- exactamente el mismo filtro que la ficha. Sin él, la
+  // tarjeta anunciaría ahorros comparando una réplica contra una camiseta
+  // oficial, que es el error que hubo que corregir en la ficha el
+  // 2026-09-24. Si no hay 2 tiendas comparables, no se promete nada.
+  const cardSaving = useMemo(() => {
+    const usable = product.offers.filter(
+      (o) => o.inStock && offerShipsTo(o.store, countryCode) && isComparableStore(o.store)
+    );
+    if (usable.length < 2) return null;
+    const groups = new Map<string, typeof usable>();
+    for (const o of usable) {
+      const k = variantKey(o);
+      groups.set(k, [...(groups.get(k) ?? []), o]);
+    }
+    const main = [...groups.values()].sort(
+      (a, b) => new Set(b.map((o) => o.store)).size - new Set(a.map((o) => o.store)).size
+    )[0];
+    if (!main || new Set(main.map((o) => o.store)).size < 2) return null;
+    const totals = main.map((o) => offerTotalInEUR(o)).sort((a, b) => a - b);
+    const lo = totals[0];
+    const hi = totals[totals.length - 1];
+    if (hi <= 0 || hi - lo < 1) return null;
+    return { stores: new Set(main.map((o) => o.store)).size, pct: Math.round(((hi - lo) / hi) * 100) };
+  }, [product, countryCode]);
   const sizes = availableSizesForCountry(product, countryCode);
   const sizeRange =
     sizes.length > 0
@@ -334,10 +362,27 @@ export default function ProductCard3D({
           {displayName}
         </h3>
         {best ? (
-          <p className="text-[10px] text-[#675c44] sm:text-xs">
-            {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
-            {t.product.sizesRange.replace("{range}", sizeRange)}
-          </p>
+          <>
+            {/* "Compara en N tiendas" pasa de texto gris diminuto a ficha
+                con borde: es la única señal de que acá hay algo que la
+                tienda suelta no da. El ahorro va al lado cuando existe. */}
+            <div className="mt-1 flex flex-wrap items-center gap-1.5">
+              {cardSaving && (
+                <span className="font-card-title rounded-full border border-[#1B3B2B]/30 bg-[#1B3B2B]/10 px-2 py-0.5 text-[10px] tracking-wide text-[#1B3B2B] sm:text-[11px]">
+                  {t.product.cardCompare.replace("{n}", String(cardSaving.stores))}
+                </span>
+              )}
+              {cardSaving && cardSaving.pct >= 5 && (
+                <span className="font-card-title rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] tracking-wide text-[#F3E9C9] sm:text-[11px]">
+                  {t.product.cardSaving.replace("{pct}", String(cardSaving.pct))}
+                </span>
+              )}
+            </div>
+            <p className="mt-1 text-[10px] text-[#675c44] sm:text-xs">
+              {!cardSaving && `${t.product.inStores.replace("{n}", String(storeCount))} · `}
+              {t.product.sizesRange.replace("{range}", sizeRange)}
+            </p>
+          </>
         ) : (
           <p className="text-[10px] text-[#675c44] sm:text-xs">{t.countryPanel.notAvailable}</p>
         )}

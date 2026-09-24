@@ -156,6 +156,8 @@ export interface Translations {
     hideStores: string;
     inStores: string;
     sizesRange: string;
+    cardCompare: string;
+    cardSaving: string;
     shippingIncluded: string;
   };
   detail: {
@@ -679,6 +681,8 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Ocultar tiendas",
       inStores: "En {n} tiendas",
       sizesRange: "Tallas {range}",
+      cardCompare: "Compara en {n} tiendas",
+      cardSaving: "hasta -{pct}%",
       shippingIncluded: "envío incl.",
     },
     detail: {
@@ -1202,6 +1206,8 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Ocultar lojas",
       inStores: "Em {n} lojas",
       sizesRange: "Tamanhos {range}",
+      cardCompare: "Compara em {n} lojas",
+      cardSaving: "até -{pct}%",
       shippingIncluded: "frete incl.",
     },
     detail: {
@@ -1725,6 +1731,8 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Hide stores",
       inStores: "At {n} stores",
       sizesRange: "Sizes {range}",
+      cardCompare: "Compare {n} stores",
+      cardSaving: "up to -{pct}%",
       shippingIncluded: "shipping incl.",
     },
     detail: {
@@ -2248,6 +2256,8 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Masquer les boutiques",
       inStores: "Dans {n} boutiques",
       sizesRange: "Tailles {range}",
+      cardCompare: "Compare {n} boutiques",
+      cardSaving: "jusqu'à -{pct}%",
       shippingIncluded: "livraison incl.",
     },
     detail: {
@@ -2771,6 +2781,8 @@ export const translations: Record<Locale, Translations> = {
       hideStores: "Nascondi negozi",
       inStores: "In {n} negozi",
       sizesRange: "Taglie {range}",
+      cardCompare: "Confronta {n} negozi",
+      cardSaving: "fino a -{pct}%",
       shippingIncluded: "spedizione incl.",
     },
     detail: {
