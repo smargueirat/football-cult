@@ -2674,8 +2674,10 @@ sitting uncommitted; mined properly today, 13 offers + 1 conflict merge) + the
 batch per marketplace (US cycle 4 at 120/384, IT cycle 1 at 180/384, ES at
 183/384 -- 60 teams each, **zero 429s**). Soicos skipped again -- no
 `claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten FTP
-listing (9th pass). 43 new products (2 CSV-feed, 2 eBay current, 0 kids,
-36 eBay retro, 3 `-2` none); `tsc`/dupe-id/duplicate-offer-URL/build all clean.
+listing (9th pass). **40 new products** (2 CSV-feed, 2 eBay current, 0 kids,
+36 eBay retro -- 6529 -> 6569 blocks; the commit subject's "43" is wrong,
+the block count is the number to trust); `tsc`/dupe-id/duplicate-offer-URL/
+build all clean.
 
 **A `while read` loop split `"Futbol Factory"` on the space and wrote 23
 offers with `store: ""Futbol"` / `currency: "Factory" EUR"`.** The per-store
