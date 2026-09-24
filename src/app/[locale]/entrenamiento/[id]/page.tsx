@@ -1,0 +1,104 @@
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { trainingProducts } from "@/data/training";
+import { Locale } from "@/lib/i18n/translations";
+import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import TrainingDetailPageClient from "./TrainingDetailPageClient";
+
+const SITE_URL = "https://football-cult.com";
+
+const META_TEMPLATE: Record<Locale, { title: string; description: string }> = {
+  es: {
+    title: "{model} — Comparar precios | Football Cult",
+    description: "Compará precios de {model} entre distintas tiendas y comprá donde te convenga.",
+  },
+  en: {
+    title: "{model} — Compare Prices | Football Cult",
+    description: "Compare prices for {model} across stores and buy wherever suits you best.",
+  },
+  pt: {
+    title: "{model} — Comparar Preços | Football Cult",
+    description: "Compare preços de {model} entre lojas e compre onde for melhor para você.",
+  },
+  fr: {
+    title: "{model} — Comparer les prix | Football Cult",
+    description: "Comparez les prix de {model} entre boutiques et achetez où cela vous convient.",
+  },
+  it: {
+    title: "{model} — Confronta i prezzi | Football Cult",
+    description: "Confronta i prezzi di {model} tra i negozi e acquista dove preferisci.",
+  },
+};
+
+function findTraining(id: string) {
+  return trainingProducts.find((p) => p.id === id);
+}
+
+// ISR sin prerender, mismo criterio que el resto de las fichas (ver el
+// comentario largo en ropa/[id]/page.tsx).
+export const revalidate = 86400;
+export function generateStaticParams() {
+  return [];
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
+  const item = findTraining(id);
+  if (!item) return {};
+
+  const tmpl = META_TEMPLATE[locale];
+  const title = tmpl.title.replace("{model}", item.model);
+  const description = tmpl.description.replace("{model}", item.model);
+  const image = item.offers[0]?.imageUrl;
+
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, `/entrenamiento/${item.id}`),
+    openGraph: { title, description, type: "website", images: image ? [image] : undefined },
+    twitter: { card: "summary_large_image", title, description, images: image ? [image] : undefined },
+  };
+}
+
+export default async function TrainingDetailPage({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}) {
+  const { locale, id } = await params;
+  const item = findTraining(id);
+  if (!item) notFound();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: item.model,
+    image: item.offers[0]?.imageUrl ? [item.offers[0].imageUrl] : undefined,
+    url: `${SITE_URL}/${locale}/entrenamiento/${item.id}`,
+    brand: { "@type": "Brand", name: item.brand },
+    offers: item.offers.map((o) => ({
+      "@type": "Offer",
+      url: o.url,
+      price: o.price,
+      priceCurrency: o.currency,
+      availability: "https://schema.org/InStock",
+      seller: { "@type": "Organization", name: o.store },
+    })),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <TrainingDetailPageClient item={item} />
+    </>
+  );
+}

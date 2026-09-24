@@ -6,6 +6,7 @@ const NOUN: Record<GearSection, Record<HubLocale, string>> = {
   guantes: { es: "Guantes de arquero", en: "Goalkeeper gloves", pt: "Luvas de goleiro", fr: "Gants de gardien", it: "Guanti da portiere" },
   pelotas: { es: "Pelotas de fútbol", en: "Footballs", pt: "Bolas de futebol", fr: "Ballons de football", it: "Palloni da calcio" },
   ropa: { es: "Ropa de fútbol", en: "Football apparel", pt: "Roupas de futebol", fr: "Vêtements de football", it: "Abbigliamento da calcio" },
+  entrenamiento: { es: "Equipamiento de entrenamiento", en: "Training equipment", pt: "Material de treino", fr: "Matériel d'entraînement", it: "Materiale da allenamento" },
 };
 
 // Nombre del terreno en cada idioma (el código FG/AG/... queda entre paréntesis).

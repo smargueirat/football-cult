@@ -5,6 +5,7 @@ import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
 import { apparelProducts } from "@/data/apparel";
+import { trainingProducts } from "@/data/training";
 import { LOCALES } from "@/lib/i18n/locales";
 import { COUNTRY_SLUGS, LEAGUES } from "@/data/teamMeta";
 import { countryTeams, leagueTeams, teamKeysWithItems } from "@/lib/hubs";
@@ -48,6 +49,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/pelotas",
     "/tickets",
     "/ropa",
+    "/entrenamiento",
     "/selecciones",
     "/clubes",
     "/retro",
@@ -79,10 +81,11 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/guia/camiseta-original",
     "/guia/talle-fan-vs-jugador",
     ...seasonList().flatMap((se) => [`/temporada/${seasonSlug(se)}`, ...seasonTypes(se).map((t) => `/temporada/${seasonSlug(se)}/${t.type}`)]),
-    ...(["botas", "guantes", "pelotas", "ropa"] as const).flatMap((sec) => brandFacets(sec).map((b) => `/${sec}/marca/${b.slug}`)),
+    ...(["botas", "guantes", "pelotas", "ropa", "entrenamiento"] as const).flatMap((sec) => brandFacets(sec).map((b) => `/${sec}/marca/${b.slug}`)),
     ...groundFacets().map((g) => `/botas/terreno/${g.slug}`),
     ...brandGroundCombos().map((c) => `/botas/marca/${c.brandSlug}/${groundSlug(c.ground)}`),
     ...typeFacets().map((t) => `/ropa/tipo/${t.slug}`),
+    ...typeFacets("entrenamiento").map((t) => `/entrenamiento/tipo/${t.slug}`),
   ];
   const hubRoutes = hubPaths.flatMap((path) =>
     LOCALES.map((locale) => ({
@@ -156,7 +159,15 @@ function allRoutes(): MetadataRoute.Sitemap {
     }));
   });
 
-  return [...staticRoutes, ...hubRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes, ...ticketRoutes, ...apparelRoutes];
+  const trainingRoutes = trainingProducts.flatMap((item) => {
+    const path = `/entrenamiento/${item.id}`;
+    return LOCALES.map((locale) => ({
+      url: `${BASE_URL}/${locale}${path}`,
+      alternates: { languages: languagesFor(path) },
+    }));
+  });
+
+  return [...staticRoutes, ...hubRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes, ...ticketRoutes, ...apparelRoutes, ...trainingRoutes];
 }
 
 // Google rechaza (con error real, confirmado en Search Console 2026-09-17)

@@ -12,7 +12,7 @@ import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 // comparten exactamente la misma forma de datos (brand/model/offers con
 // store/price/shipping/currency/sizes, siempre EUR, sin groundType), así
 // que en vez de duplicar BootCard.tsx dos veces se generaliza acá: un
-// solo componente, parametrizado por basePath ("guantes"/"pelotas") para
+// solo componente, parametrizado por basePath ("guantes"/"pelotas"/"ropa"/"entrenamiento") para
 // el link y sizeLabel para el texto de tallas (glove sizes vs. talla de
 // pelota no son lo mismo, cada página pasa el suyo).
 interface GearOffer {
@@ -37,7 +37,7 @@ export default function GearCard({
   priority = false,
 }: {
   item: GearProductLike;
-  basePath: "guantes" | "pelotas" | "ropa";
+  basePath: "guantes" | "pelotas" | "ropa" | "entrenamiento";
   priority?: boolean;
 }) {
   const { t } = useLanguage();

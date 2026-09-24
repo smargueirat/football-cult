@@ -2,6 +2,7 @@ import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { apparelProducts } from "@/data/apparel";
+import { trainingProducts } from "@/data/training";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 
 // Datos de los hubs de botas / guantes / pelotas / ropa (marca, terreno,
@@ -9,7 +10,7 @@ import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 // largo en src/lib/offerMoney.ts sobre por qué no desde componentes de
 // cliente).
 
-export type GearSection = "botas" | "guantes" | "pelotas" | "ropa";
+export type GearSection = "botas" | "guantes" | "pelotas" | "ropa" | "entrenamiento";
 export const MIN_HUB_ITEMS = 6; // menos que esto es una página delgada: no se genera
 
 export interface GearItem {
@@ -26,7 +27,7 @@ export interface GearItem {
   stores: number;
   storeNames: string[];
   ground?: string; // botas
-  type?: string; // ropa
+  type?: string; // ropa / entrenamiento
 }
 
 export function slugify(s: string): string {
@@ -105,7 +106,9 @@ export function gearItems(section: GearSection): GearItem[] {
         ? (gloveProducts as unknown as Raw[])
         : section === "pelotas"
           ? (ballProducts as unknown as Raw[])
-          : (apparelProducts as unknown as Raw[]);
+          : section === "entrenamiento"
+            ? (trainingProducts as unknown as Raw[])
+            : (apparelProducts as unknown as Raw[]);
   return (cache[section] = build(section, raws));
 }
 
@@ -137,12 +140,14 @@ export const groundFromSlug = (slug: string) => GROUND_CODES.find((g) => groundS
 export const groundFacets = () =>
   facets(gearItems("botas"), (i) => (i.ground && (GROUND_CODES as readonly string[]).includes(i.ground) ? [groundSlug(i.ground), i.ground] : null));
 
-export const typeFacets = () => facets(gearItems("ropa"), (i) => (i.type ? [i.type, i.type] : null));
+export const typeFacets = (section: GearSection = "ropa") =>
+  facets(gearItems(section), (i) => (i.type ? [i.type, i.type] : null));
 
 export const byBrand = (s: GearSection, brandSlug: string) => gearItems(s).filter((i) => i.brandSlug === brandSlug);
 export const byGround = (ground: string) => gearItems("botas").filter((i) => i.ground === ground);
 export const byBrandGround = (brandSlug: string, ground: string) => byBrand("botas", brandSlug).filter((i) => i.ground === ground);
-export const byType = (type: string) => gearItems("ropa").filter((i) => i.type === type);
+export const byType = (type: string, section: GearSection = "ropa") =>
+  gearItems(section).filter((i) => i.type === type);
 
 // Combinaciones marca x terreno con suficiente producto (las de mayor
 // intención de búsqueda: "botas nike césped artificial").

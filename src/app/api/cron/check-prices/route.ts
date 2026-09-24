@@ -10,6 +10,7 @@ import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { apparelProducts } from "@/data/apparel";
+import { trainingProducts } from "@/data/training";
 import { ticketProducts } from "@/data/tickets";
 
 const SITE_URL = "https://football-cult.com";
@@ -255,6 +256,15 @@ const CATALOG_CONFIGS: {
     urlPath: (id) => `ropa/${id}`,
     nameOf: (id) => {
       const p = apparelProducts.find((x) => x.id === id);
+      return p ? `${p.brand} ${p.model}` : null;
+    },
+  },
+  {
+    category: "training",
+    items: trainingProducts,
+    urlPath: (id) => `entrenamiento/${id}`,
+    nameOf: (id) => {
+      const p = trainingProducts.find((x) => x.id === id);
       return p ? `${p.brand} ${p.model}` : null;
     },
   },

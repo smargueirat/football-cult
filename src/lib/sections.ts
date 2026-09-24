@@ -1,11 +1,11 @@
-// Las 10 secciones del catálogo (5 de camisetas + botas + guantes +
+// Las 11 secciones del catálogo (5 de camisetas + botas + guantes +
 // pelotas + tickets + ropa), compartidas entre HeroCarousel y CategorySections
 // para no repetir las mismas fotos curadas dos veces. El índice de cada
 // entrada coincide con el índice de heroSlides en translations.ts --
 // mismo orden en los dos lugares. Guantes/pelotas/tickets sumados
 // 2026-09-18 (pedido explícito del usuario: "tiene que estar como
 // agregamos las botas... banner principal, secciones, categoría").
-export const SECTION_PATHS = ["/selecciones", "/clubes", "/retro", "/mujer", "/ninos", "/botas", "/guantes", "/pelotas", "/tickets", "/ropa"] as const;
+export const SECTION_PATHS = ["/selecciones", "/clubes", "/retro", "/mujer", "/ninos", "/botas", "/guantes", "/pelotas", "/tickets", "/ropa", "/entrenamiento"] as const;
 
 // Fotos para los círculos de navegación (CategorySections/SectionsMenu):
 // foto real de producto puesta en modelo (fondo de estudio), pensada
@@ -27,6 +27,7 @@ export const SECTION_PHOTOS: string[] = [
   "https://cdn.blazimg.com/1800/product/a/d/adidas_ht2452_1_hardware_photography_front_center_view_white.webp", // pelotas: foto de producto real de nuestro propio catálogo (adidas Starlancer Training), fondo blanco de estudio
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/671361_v2.jpg", // tickets: campaña adidas FUSSBALLLIEBE FINALE -- trofeo UEFA Euro + pelota oficial, tribuna real de fondo
   "https://cdn.blazimg.com/1800/product/n/i/nike_dj7745-608-phsfm001_new.webp", // ropa: foto de producto real de nuestro propio catálogo (short + medias Nike de Liverpool puestos), fondo blanco de estudio
+  "https://cdn.blazimg.com/1800/product/a/d/adidas_ji6405_white-black_1.webp", // entrenamiento: foto de producto real de nuestro propio catálogo (peto adidas BIB22), fondo blanco de estudio
 ];
 
 // Fotos anchas de campaña real de prensa oficial (adidas news /

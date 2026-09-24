@@ -728,6 +728,7 @@ export default function SearchExplorer({
               { href: SECTION_PATHS[6], label: t.guantes.navLabel },
               { href: SECTION_PATHS[7], label: t.pelotas.navLabel },
               { href: SECTION_PATHS[9], label: t.ropa.navLabel },
+              { href: SECTION_PATHS[10], label: t.entrenamiento.navLabel },
               { href: SECTION_PATHS[8], label: t.tickets.navLabel },
             ]
           ).map((opt) => (

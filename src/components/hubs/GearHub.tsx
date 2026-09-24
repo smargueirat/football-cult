@@ -48,12 +48,15 @@ function resolve(spec: GearSpec, locale: HubLocale) {
     items = byGround(ground);
     headline = groundHeadline(ground, locale);
     path = `/botas/terreno/${spec.ground}`;
-  } else if (section === "ropa" && spec.type) {
-    items = byType(spec.type);
-    const tn = (translations[locale].ropa.types as Record<string, string>)[spec.type];
+  } else if ((section === "ropa" || section === "entrenamiento") && spec.type) {
+    items = byType(spec.type, section);
+    const typeNames = (
+      section === "entrenamiento" ? translations[locale].entrenamiento.types : translations[locale].ropa.types
+    ) as Record<string, string>;
+    const tn = typeNames[spec.type];
     if (!tn) return null;
     headline = typeHeadline(tn, locale);
-    path = `/ropa/tipo/${spec.type}`;
+    path = `/${section}/tipo/${spec.type}`;
   } else if (spec.brandSlug) {
     items = byBrand(section, spec.brandSlug);
     if (!items.length) return null;

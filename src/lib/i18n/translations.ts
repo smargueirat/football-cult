@@ -416,7 +416,14 @@ export interface Translations {
     pageTitle: string;
     pageSubtitle: string;
     typeLabel: string;
-    types: { shorts: string; jacket: string; pants: string; socks: string; sweatshirt: string; polo: string; set: string; tshirt: string; shinguards: string; bag: string; armband: string; bib: string; baselayer: string };
+    types: { shorts: string; jacket: string; pants: string; socks: string; sweatshirt: string; polo: string; set: string; tshirt: string; shinguards: string; bag: string; armband: string; baselayer: string };
+  };
+  entrenamiento: {
+    navLabel: string;
+    pageTitle: string;
+    pageSubtitle: string;
+    typeLabel: string;
+    types: { conos: string; petos: string; redes: string; elasticos: string; material: string; tactica: string; silbatos: string; aros: string; vallas: string; escaleras: string; marcadores: string; porterias: string; infladores: string };
   };
 }
 
@@ -545,6 +552,13 @@ export const translations: Record<Locale, Translations> = {
         title: "Para vestir la pasión",
         subtitle: "Shorts, chaquetas, pantalones y medias comparados entre tiendas reales.",
         cta: "Ver ropa",
+      },
+      {
+        eyebrow: "Entrenamiento",
+        title: "Todo para la práctica",
+        subtitle:
+          "Petos, conos, vallas, escaleras de agilidad y material de entrenamiento real, comparado entre tiendas.",
+        cta: "Ver entrenamiento",
       },
     ],
     featured: {
@@ -903,7 +917,14 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Ropa y accesorios de fútbol",
       pageSubtitle: "{n} prendas reales de tiendas aprobadas.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias", sweatshirt: "Sudaderas", polo: "Polos", set: "Conjuntos", tshirt: "Remeras", shinguards: "Canilleras", bag: "Bolsos y mochilas", armband: "Cintas de capitán", bib: "Petos", baselayer: "Térmica y compresión" },
+      types: { shorts: "Shorts", jacket: "Chaquetas", pants: "Pantalones", socks: "Medias", sweatshirt: "Sudaderas", polo: "Polos", set: "Conjuntos", tshirt: "Remeras", shinguards: "Canilleras", bag: "Bolsos y mochilas", armband: "Cintas de capitán", baselayer: "Térmica y compresión" },
+    },
+    entrenamiento: {
+      navLabel: "Entrenamiento",
+      pageTitle: "Equipamiento de entrenamiento",
+      pageSubtitle: "{n} artículos reales de tiendas aprobadas.",
+      typeLabel: "Tipo",
+      types: { conos: "Conos", petos: "Petos", redes: "Redes", elasticos: "Bandas elásticas", material: "Material variado", tactica: "Pizarras tácticas", silbatos: "Silbatos", aros: "Aros", vallas: "Vallas", escaleras: "Escaleras de agilidad", marcadores: "Marcadores", porterias: "Accesorios de portería", infladores: "Infladores" },
     },
   },
   pt: {
@@ -1029,6 +1050,13 @@ export const translations: Record<Locale, Translations> = {
         title: "Para vestir a paixão",
         subtitle: "Shorts, jaquetas, calças e meias comparados entre lojas reais.",
         cta: "Ver roupas",
+      },
+      {
+        eyebrow: "Treino",
+        title: "Tudo para o treino",
+        subtitle:
+          "Coletes, cones, barreiras, escadas de agilidade e material de treino real, comparado entre lojas.",
+        cta: "Ver material de treino",
       },
     ],
     featured: {
@@ -1387,7 +1415,14 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Roupas e acessórios de futebol",
       pageSubtitle: "{n} peças reais de lojas aprovadas.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias", sweatshirt: "Moletons", polo: "Polos", set: "Conjuntos", tshirt: "Camisetas", shinguards: "Caneleiras", bag: "Bolsas e mochilas", armband: "Braçadeiras de capitão", bib: "Coletes", baselayer: "Segunda pele e compressão" },
+      types: { shorts: "Shorts", jacket: "Jaquetas", pants: "Calças", socks: "Meias", sweatshirt: "Moletons", polo: "Polos", set: "Conjuntos", tshirt: "Camisetas", shinguards: "Caneleiras", bag: "Bolsas e mochilas", armband: "Braçadeiras de capitão", baselayer: "Segunda pele e compressão" },
+    },
+    entrenamiento: {
+      navLabel: "Treino",
+      pageTitle: "Material de treino",
+      pageSubtitle: "{n} artigos reais de lojas aprovadas.",
+      typeLabel: "Tipo",
+      types: { conos: "Cones", petos: "Coletes", redes: "Redes", elasticos: "Elásticos", material: "Material variado", tactica: "Pranchetas táticas", silbatos: "Apitos", aros: "Arcos", vallas: "Barreiras", escaleras: "Escadas de agilidade", marcadores: "Marcadores", porterias: "Acessórios de baliza", infladores: "Bombas de ar" },
     },
   },
   en: {
@@ -1513,6 +1548,13 @@ export const translations: Record<Locale, Translations> = {
         title: "Wear the passion",
         subtitle: "Shorts, jackets, pants and socks compared across real stores.",
         cta: "See apparel",
+      },
+      {
+        eyebrow: "Training",
+        title: "Everything for the session",
+        subtitle:
+          "Training bibs, cones, hurdles, agility ladders and real coaching gear, compared across stores.",
+        cta: "See training gear",
       },
     ],
     featured: {
@@ -1871,7 +1913,14 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Football apparel & accessories",
       pageSubtitle: "{n} real items from approved stores.",
       typeLabel: "Type",
-      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks", sweatshirt: "Sweatshirts", polo: "Polos", set: "Sets", tshirt: "T-shirts", shinguards: "Shin guards", bag: "Bags", armband: "Captain armbands", bib: "Training bibs", baselayer: "Base layers & compression" },
+      types: { shorts: "Shorts", jacket: "Jackets", pants: "Pants", socks: "Socks", sweatshirt: "Sweatshirts", polo: "Polos", set: "Sets", tshirt: "T-shirts", shinguards: "Shin guards", bag: "Bags", armband: "Captain armbands", baselayer: "Base layers & compression" },
+    },
+    entrenamiento: {
+      navLabel: "Training",
+      pageTitle: "Training equipment",
+      pageSubtitle: "{n} real items from approved stores.",
+      typeLabel: "Type",
+      types: { conos: "Cones", petos: "Training bibs", redes: "Nets", elasticos: "Resistance bands", material: "Assorted gear", tactica: "Tactic boards", silbatos: "Whistles", aros: "Agility hoops", vallas: "Hurdles", escaleras: "Agility ladders", marcadores: "Floor markers", porterias: "Goal accessories", infladores: "Ball pumps" },
     },
   },
   fr: {
@@ -1997,6 +2046,13 @@ export const translations: Record<Locale, Translations> = {
         title: "Pour porter la passion",
         subtitle: "Shorts, vestes, pantalons et chaussettes comparés entre boutiques réelles.",
         cta: "Voir les vêtements",
+      },
+      {
+        eyebrow: "Entraînement",
+        title: "Tout pour la séance",
+        subtitle:
+          "Chasubles, cônes, haies, échelles de rythme et matériel d'entraînement réel, comparés entre boutiques.",
+        cta: "Voir le matériel",
       },
     ],
     featured: {
@@ -2355,7 +2411,14 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Vêtements et accessoires de football",
       pageSubtitle: "{n} articles réels de boutiques approuvées.",
       typeLabel: "Type",
-      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes", sweatshirt: "Sweats", polo: "Polos", set: "Ensembles", tshirt: "T-shirts", shinguards: "Protège-tibias", bag: "Sacs", armband: "Brassards de capitaine", bib: "Chasubles", baselayer: "Sous-vêtements techniques" },
+      types: { shorts: "Shorts", jacket: "Vestes", pants: "Pantalons", socks: "Chaussettes", sweatshirt: "Sweats", polo: "Polos", set: "Ensembles", tshirt: "T-shirts", shinguards: "Protège-tibias", bag: "Sacs", armband: "Brassards de capitaine", baselayer: "Sous-vêtements techniques" },
+    },
+    entrenamiento: {
+      navLabel: "Entraînement",
+      pageTitle: "Matériel d'entraînement",
+      pageSubtitle: "{n} articles réels de boutiques approuvées.",
+      typeLabel: "Type",
+      types: { conos: "Cônes", petos: "Chasubles", redes: "Filets", elasticos: "Bandes de résistance", material: "Matériel divers", tactica: "Tableaux tactiques", silbatos: "Sifflets", aros: "Cerceaux", vallas: "Haies", escaleras: "Échelles de rythme", marcadores: "Marquage au sol", porterias: "Accessoires de but", infladores: "Pompes" },
     },
   },
   it: {
@@ -2481,6 +2544,13 @@ export const translations: Record<Locale, Translations> = {
         title: "Per vestire la passione",
         subtitle: "Shorts, giacche, pantaloni e calzettoni confrontati tra negozi reali.",
         cta: "Vedi abbigliamento",
+      },
+      {
+        eyebrow: "Allenamento",
+        title: "Tutto per l'allenamento",
+        subtitle:
+          "Casacche, coni, ostacoli, scale di agilità e materiale da allenamento reale, confrontati tra negozi.",
+        cta: "Vedi materiale",
       },
     ],
     featured: {
@@ -2839,7 +2909,14 @@ export const translations: Record<Locale, Translations> = {
       pageTitle: "Abbigliamento e accessori da calcio",
       pageSubtitle: "{n} capi reali da negozi approvati.",
       typeLabel: "Tipo",
-      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni", sweatshirt: "Felpe", polo: "Polo", set: "Completi", tshirt: "Magliette", shinguards: "Parastinchi", bag: "Borse e zaini", armband: "Fasce da capitano", bib: "Casacche", baselayer: "Intimo tecnico e compressione" },
+      types: { shorts: "Shorts", jacket: "Giacche", pants: "Pantaloni", socks: "Calzettoni", sweatshirt: "Felpe", polo: "Polo", set: "Completi", tshirt: "Magliette", shinguards: "Parastinchi", bag: "Borse e zaini", armband: "Fasce da capitano", baselayer: "Intimo tecnico e compressione" },
+    },
+    entrenamiento: {
+      navLabel: "Allenamento",
+      pageTitle: "Materiale da allenamento",
+      pageSubtitle: "{n} articoli reali da negozi approvati.",
+      typeLabel: "Tipo",
+      types: { conos: "Coni", petos: "Casacche", redes: "Reti", elasticos: "Elastici di resistenza", material: "Materiale vario", tactica: "Lavagne tattiche", silbatos: "Fischietti", aros: "Cerchi", vallas: "Ostacoli", escaleras: "Scale di agilità", marcadores: "Segnaposto", porterias: "Accessori porta", infladores: "Pompe" },
     },
   },
 };

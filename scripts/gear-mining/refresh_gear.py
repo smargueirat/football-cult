@@ -44,6 +44,15 @@ TARGETS = [
         "type_name": "ApparelProduct",
         "chunk_var": "minedApparelProductsChunk",
     },
+    {
+        "name": "entrenamiento",
+        "ts_path": os.path.join(REPO_ROOT, "src", "data", "training.ts"),
+        "mined_path": os.path.join(SCRIPT_DIR, "mined_training.json"),
+        "sentinel": "// ===AUTO-GENERATED-TRAINING-BELOW===",
+        "export_name": "trainingProducts",
+        "type_name": "TrainingProduct",
+        "chunk_var": "minedTrainingProductsChunk",
+    },
 ]
 CHUNK_SIZE = 180
 

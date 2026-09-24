@@ -22,8 +22,11 @@ import { markCatalogVisited } from "@/lib/search/catalogVisit";
 // números sueltos (parseFloat) y rompería con letras, así que hace
 // falta su propio comparador acá en vez de forzar uno solo para los 3
 // tipos de producto.
-const APPAREL_TYPES = ["shorts", "jacket", "pants", "socks", "sweatshirt", "polo", "set", "tshirt", "shinguards", "bag", "armband", "bib", "baselayer"] as const;
-type ApparelType = (typeof APPAREL_TYPES)[number];
+// La lista de tipos ya NO es fija acá: entra por prop, porque este mismo
+// componente sirve la sección Ropa y la sección Entrenamiento (2026-09-24),
+// que tienen tipos propios. Duplicar 270 líneas para cambiar una lista de
+// chips no tenía sentido.
+export const APPAREL_TYPES = ["shorts", "jacket", "pants", "socks", "sweatshirt", "polo", "set", "tshirt", "shinguards", "bag", "armband", "baselayer"] as const;
 
 const LETTER_SIZE_ORDER = ["XXS", "XS", "S", "M", "L", "XL", "XXL", "2XL", "3XL", "4XL", "5XL"];
 function sizeSortKey(s: string): number {
@@ -50,7 +53,7 @@ interface ApparelProductLike {
   brand: string;
   model: string;
   colour: string;
-  type: ApparelType;
+  type: string;
   offers: ApparelOffer[];
 }
 
@@ -61,17 +64,25 @@ export default function ApparelListClient({
   items,
   pageTitle,
   pageSubtitle,
+  types,
+  typeLabel,
+  typeFilterLabel,
+  basePath = "ropa",
 }: {
   items: ApparelProductLike[];
   pageTitle: string;
   pageSubtitle: string;
+  types: readonly string[];
+  typeLabel: (ty: string) => string;
+  typeFilterLabel: string;
+  basePath?: "ropa" | "entrenamiento";
 }) {
   const { t } = useLanguage();
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
-  const [typeFilter, setTypeFilter] = useState<ApparelType | "">("");
+  const [typeFilter, setTypeFilter] = useState<string>("");
   const [brandFilter, setBrandFilter] = useState("");
   const [sizeFilter, setSizeFilter] = useState("");
   const [colourFilter, setColourFilter] = useState("");
@@ -80,7 +91,6 @@ export default function ApparelListClient({
     markCatalogVisited();
   }, []);
 
-  const typeLabel = (ty: ApparelType) => t.ropa.types[ty];
   const activeFilterCount = [typeFilter, brandFilter, sizeFilter, colourFilter].filter(Boolean).length;
   function clearAllFilters() {
     setTypeFilter("");
@@ -195,7 +205,7 @@ export default function ApparelListClient({
 
       <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-5">
         {filtered.slice(0, visible).map((item, i) => (
-          <GearCard key={item.id} item={item} basePath="ropa" priority={i < 4} />
+          <GearCard key={item.id} item={item} basePath={basePath} priority={i < 4} />
         ))}
       </div>
 
@@ -217,12 +227,12 @@ export default function ApparelListClient({
         onClear={clearAllFilters}
       >
         <div className="flex flex-col gap-1.5">
-          <span className="text-xs text-[#675c44]">{t.ropa.typeLabel}:</span>
+          <span className="text-xs text-[#675c44]">{typeFilterLabel}:</span>
           <ScrollArrowRow className="-mx-5 gap-2 px-5">
             <Chip active={typeFilter === ""} onClick={() => { setTypeFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
               {t.search.allCategories}
             </Chip>
-            {APPAREL_TYPES.map((ty) => (
+            {types.map((ty) => (
               <Chip key={ty} active={typeFilter === ty} onClick={() => { setTypeFilter(ty); setBrandFilter(""); setSizeFilter(""); setColourFilter(""); resetPage(); }} className="flex-shrink-0 whitespace-nowrap">
                 {typeLabel(ty)}
               </Chip>

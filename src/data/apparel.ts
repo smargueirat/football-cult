@@ -14709,114 +14709,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-chasuble-adidas-bib22-blanc",
-    brand: "adidas",
-    model: "Chasuble adidas BIB22 - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji6405-chasuble-adidas-bib22-white-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji6405_white-black_1.webp",
-        sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chasuble-adidas-bleu",
-    brand: "adidas",
-    model: "Chasuble adidas - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0733_1_apparel_photography_-_ecommerce_front_view_white.webp",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chasuble-adidas-rose",
-    brand: "adidas",
-    model: "Chasuble adidas - Rose",
-    colour: "Rose",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0734_1_apparel_photography_-_ecommerce_front_view_white.webp",
-        sizes: ["XS", "S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chasuble-adidas-vert",
-    brand: "adidas",
-    model: "Chasuble adidas - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0732-chasuble-adidas-teassg",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0732_1_apparel_photography_-_ecommerce_front_view_white.webp",
-        sizes: ["S", "M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chasuble-adidas-violet",
-    brand: "adidas",
-    model: "Chasuble adidas - Violet",
-    colour: "Violet",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0735_1_apparel_photography_-_ecommerce_front_view_white.webp",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chasuble-training-adidas-rose",
-    brand: "adidas",
-    model: "Chasuble training adidas - Rose",
-    colour: "Rose",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffi4187-chasuble-training-adidas-rose-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_fi4187_2_apparel_photography_front_center_view_white-nw112824.webp",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-chaussettes-adidas-23-blanc",
     brand: "adidas",
     model: "Chaussettes adidas 23 - Blanc",
@@ -16603,9 +16495,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chubasquero-bayern-munich-graphic-bleu",
     brand: "adidas",
@@ -16752,6 +16641,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chubasquero-real-madrid-tiro-2024-25-competition-bleu",
     brand: "adidas",
@@ -20792,9 +20684,6 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-manguito-para-pierna-adidas-milano-noir",
     brand: "adidas",
@@ -20928,6 +20817,9 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-medias-1a-equipacion-real-madrid-2026-27-blanc",
     brand: "adidas",
@@ -24968,9 +24860,6 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-primera-equipacion-manchester-united-2024-25-blanc",
     brand: "adidas",
@@ -25119,6 +25008,9 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-tejidos-adidas-tiro-25-essentials-bleu",
     brand: "adidas",
@@ -29546,9 +29438,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-prematch-juventus-de-turin-2025-26-noir",
     brand: "adidas",
@@ -29710,6 +29599,9 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-prematch-mexico-copa-america-2024-violet",
     brand: "adidas",
@@ -33703,9 +33595,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-survetement-bayern-munich-condivo-2022-23-gris",
     brand: "adidas",
@@ -33849,6 +33738,9 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-survetement-bayern-munich-tiro-23-noir",
     brand: "adidas",
@@ -38071,9 +37963,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalones-de-chandal-arsenal-tiro-23-noir",
     brand: "adidas",
@@ -38182,6 +38071,9 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalones-de-chandal-boca-juniors-icons-bleu",
     brand: "adidas",
@@ -39579,114 +39471,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjv6562-parka-tiro-stadium-liverpool-fc-2025-26-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jv6562_1_apparel_photography_front_center_view_white.webp",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-peto-adidas-bib22-blanc",
-    brand: "adidas",
-    model: "Peto adidas BIB22 - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529680197&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_ji6405_white-black_1.webp&feedId=89032&k=48b8480b80360f39976d3c2d65c30ffcf4c669ff",
-        sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-peto-adidas-bleu",
-    brand: "adidas",
-    model: "Peto adidas - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469234&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hp0733_1_apparel_photography_-_ecommerce_front_view_white.webp&feedId=89032&k=beb8e64f139a42f74b2d60be2257d2fcaf39ec63",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-peto-adidas-rose",
-    brand: "adidas",
-    model: "Peto adidas - Rose",
-    colour: "Rose",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41855850303&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hp0734_1_apparel_photography_-_ecommerce_front_view_white.webp&feedId=89032&k=b510288d58ddfad3cde1230c0fdb0686412f0c3a",
-        sizes: ["XS", "S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-peto-adidas-vert",
-    brand: "adidas",
-    model: "Peto adidas - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469242&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hp0732_1_apparel_photography_-_ecommerce_front_view_white.webp&feedId=89032&k=8f7aaa509627ba5c0469c46dbd03c74e0dc4e738",
-        sizes: ["S", "M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-peto-adidas-violet",
-    brand: "adidas",
-    model: "Peto adidas - Violet",
-    colour: "Violet",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469229&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_hp0735_1_apparel_photography_-_ecommerce_front_view_white.webp&feedId=89032&k=24586a814959b06e41c4fc9b39818baa5deac104",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-peto-de-entrenamiento-adidas-rose",
-    brand: "adidas",
-    model: "Peto de entrenamiento adidas - Rose",
-    colour: "Rose",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44645278110&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_fi4187_2_apparel_photography_front_center_view_white-nw112824.webp&feedId=89032&k=902ee15129174c28fddf058b6ee48e08d9b83b32",
         sizes: ["XL"],
       },
     ],
@@ -42409,9 +42193,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-protege-tibias-adidas-x-speedportal-rose",
     brand: "adidas",
@@ -42642,6 +42423,9 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-sac-de-sport-adidas-defender-duffle-noir",
     brand: "adidas",
@@ -46481,9 +46265,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-short-de-portero-local-alemania-coupe-du-monde-2026-vert",
     brand: "adidas",
@@ -46783,6 +46564,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-short-domicile-authentique-italie-coupe-du-monde-2026-blanc",
     brand: "adidas",
@@ -50659,9 +50443,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-sudadera-alemania-coupe-du-monde-2026-noir",
     brand: "adidas",
@@ -50953,6 +50734,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-adidas-entrada-22-blanc",
     brand: "adidas",
@@ -54501,9 +54285,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-sweatshirt-a-capuche-femme-espagne-coupe-du-monde-2026-bleu",
     brand: "adidas",
@@ -54763,6 +54544,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-sweatshirt-a-capuche-los-angeles-fc-travel-2021-22-beige",
     brand: "adidas",
@@ -58369,9 +58153,6 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-t-shirt-manches-longues-adidas-techfit-rouge",
     brand: "adidas",
@@ -58638,6 +58419,9 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-t-shirt-real-madrid-2025-26-gris",
     brand: "adidas",
@@ -62456,9 +62240,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-adidas-tiro-25-vert",
     brand: "adidas",
@@ -62727,6 +62508,9 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-allemagne-originals-coupe-du-monde-2026-turquoise",
     brand: "adidas",
@@ -66758,9 +66542,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-real-madrid-dna-2026-27-bleu",
     brand: "adidas",
@@ -67041,6 +66822,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-training-femme-adidas-tiro-24-vert",
     brand: "adidas",
@@ -68948,132 +68732,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
     ],
   },
   {
-    id: "avento-chasuble-avento-bleu",
-    brand: "Avento",
-    model: "Chasuble Avento - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.81,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oc-bla-chasuble-avento-blue-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oc-bla-blue-69e090955acd5-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "avento-chasuble-avento-jaune",
-    brand: "Avento",
-    model: "Chasuble Avento - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.81,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oc-gee-chasuble-avento-fluorescent-yellow-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oc-gee-fluorescent-yellow-69e090aa4cf3f-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "avento-chasuble-avento-orange",
-    brand: "Avento",
-    model: "Chasuble Avento - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.81,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oc-ora-chasuble-avento-fluorescent-orange-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oc-ora-fluorescent-orange-69e0909e027bf-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "avento-chasuble-avento-rose",
-    brand: "Avento",
-    model: "Chasuble Avento - Rose",
-    colour: "Rose",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.81,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oc-flr-chasuble-avento-fluorescent-pink-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oc-flr-fluorescent-pink-69e090a59d3cf-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "avento-chasuble-avento-vert",
-    brand: "Avento",
-    model: "Chasuble Avento - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.81,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oc-gro-chasuble-avento-fluorescent-green-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oc-gro-fluorescent-green-69e0909860372-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "avento-chasuble-reversible-avento-jaune",
-    brand: "Avento",
-    model: "Chasuble réversible Avento - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 9.21,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oi-fgb-chasuble-reversible-avento-fluorescent-yellow-blue-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oi-fgb-fluorescent-yellow-blue-69e090cc31814-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "avento-chasuble-reversible-avento-vert",
-    brand: "Avento",
-    model: "Chasuble réversible Avento - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 9.21,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75oi-fgo-chasuble-reversible-avento-fluorescent-green-fluorescent-orange-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-75oi-fgo-fluorescent-green-fluorescent-orange-69e090c7575ce-1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
     id: "avento-chaussettes-football-avento-blanc",
     brand: "Avento",
     model: "Chaussettes football Avento - Blanc",
@@ -69259,132 +68917,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44507730215&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-74kq-roo-red-69e090719eb5b-1.webp&feedId=89032&k=550578cb5a4395344a14b055d1abffe184302dcb",
         sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-avento-bleu",
-    brand: "Avento",
-    model: "Peto Avento - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.97,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729871&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oc-bla-blue-69e090955acd5-1.webp&feedId=89032&k=6603dc884f3ae9f1841c2e5f1f032ca72fbd1c0c",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-avento-jaune",
-    brand: "Avento",
-    model: "Peto Avento - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.97,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729875&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oc-gee-fluorescent-yellow-69e090aa4cf3f-1.webp&feedId=89032&k=213f1c076e5de3200f03aa2cbb06718521b8ce44",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-avento-orange",
-    brand: "Avento",
-    model: "Peto Avento - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.97,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729873&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oc-ora-fluorescent-orange-69e0909e027bf-1.webp&feedId=89032&k=fe828e726c9c5767b02e9c86d4685070d4870311",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-avento-rose",
-    brand: "Avento",
-    model: "Peto Avento - Rose",
-    colour: "Rose",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.97,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729874&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oc-flr-fluorescent-pink-69e090a59d3cf-1.webp&feedId=89032&k=89e0b1221c51e6021cd580868848b80554f09c0e",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-avento-vert",
-    brand: "Avento",
-    model: "Peto Avento - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.97,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729872&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oc-gro-fluorescent-green-69e0909860372-1.webp&feedId=89032&k=3a8dab43fea7b6453a1dccfdad01802dc5ac14fb",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-reversible-avento-jaune",
-    brand: "Avento",
-    model: "Peto reversible Avento - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.72,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729891&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oi-fgb-fluorescent-yellow-blue-69e090cc31814-1.webp&feedId=89032&k=e71b9040ceadce1b35280c462f4fa270e67a42f1",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "avento-peto-reversible-avento-vert",
-    brand: "Avento",
-    model: "Peto reversible Avento - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.72,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729890&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fv%2Favento-75oi-fgo-fluorescent-green-fluorescent-orange-69e090c7575ce-1.webp&feedId=89032&k=adc391b33a4056cb5fbacb831c38574a2704b8e2",
-        sizes: [],
       },
     ],
   },
@@ -70423,9 +69955,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-bordada-brasil-legends-blanc",
     brand: "Copa Football",
@@ -70912,6 +70441,9 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-copa-football-ground-from-above-blanc",
     brand: "Copa Football",
@@ -73772,9 +73304,6 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "copa-football-plumifero-largo-con-capucha-copa-bench-noir",
     brand: "Copa Football",
@@ -74261,6 +73790,9 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "copa-football-sudadera-con-capucha-inglaterra-legends-gris",
     brand: "Copa Football",
@@ -77150,9 +76682,6 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "craft-calcetines-craft-squad-solid-bleu",
     brand: "Craft",
@@ -77667,6 +77196,9 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "erima-brassard-erima-blanc",
     brand: "erima",
@@ -81479,9 +81011,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "erima-protege-tibias-erima-evo-flex-noir",
     brand: "erima",
@@ -82110,6 +81639,9 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "erima-short-femme-erima-5-cubes-rouge",
     brand: "erima",
@@ -84646,42 +84178,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
     ],
   },
   {
-    id: "errea-casulla-de-mujer-errea-smith-bleu",
-    brand: "Errea",
-    model: "Casulla de mujer Errea smith - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 32.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529023247&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ff%2Fm%2Ffm770s15270_1.webp&feedId=89032&k=56282a15ca3d6b15d3ba7e2c080317e146bebde5",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "errea-casulla-errea-bib-rouge",
-    brand: "Errea",
-    model: "Casulla Errea bib - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923801375&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2F9%2Fa980000002.webp&feedId=89032&k=6e1fde090892b3010b4d6250fe034ee217365ae5",
-        sizes: [],
-      },
-    ],
-  },
-  {
     id: "errea-chaqueta-con-capucha-errea-miage-bleu",
     brand: "Errea",
     model: "Chaqueta con capucha Errea Miage - Bleu",
@@ -85557,113 +85053,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
     ],
   },
   {
-    id: "errea-chasuble-errea-bib-double-blanc",
-    brand: "Errea",
-    model: "Chasuble Errea Bib double - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 14.94,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc990000028-chasuble-errea-bib-double-blanc-bleu-marine",
-        imageUrl: "https://cdn.blazimg.com/1800/product/c/9/c990000026_2_1.webp",
-        sizes: ["M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "errea-chasuble-errea-bib-double-orange",
-    brand: "Errea",
-    model: "Chasuble Errea Bib double - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 14.94,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc990001810-chasuble-errea-bib-double-orange-fluo-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea_c990001810_0-nw121724.webp",
-        sizes: ["M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "errea-chasuble-errea-bib-double-rouge",
-    brand: "Errea",
-    model: "Chasuble Errea Bib double - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 10.27,
-        priceMax: 14.94,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc990000050-chasuble-errea-bib-double-rouge-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/c/9/c990000050_1_1.webp",
-        sizes: ["M", "XL"],
-        sizePrices: [
-          { size: "M", price: 14.94, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc990000050-chasuble-errea-bib-double-rouge-blanc" },
-          { size: "XL", price: 10.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fc990000050-chasuble-errea-bib-double-rouge-blanc" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 10.27,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fc990000050-chasuble-errea-bib-double-rouge-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/c/9/c990000050_1_1.webp",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "errea-chasuble-errea-bib-rouge",
-    brand: "Errea",
-    model: "Chasuble Errea bib - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.77,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fchasuble-errea-bib-rouge-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/9/a980000002.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "errea-chasuble-femme-errea-smith-bleu",
-    brand: "Errea",
-    model: "Chasuble femme Errea smith - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 32.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffm770s15270-chasuble-femme-errea-smith-bleu-blanc",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/f/m/fm770s15270_1.jpg",
-        sizes: ["S"],
-      },
-    ],
-  },
-];
-
-const minedApparelProductsChunk22: ApparelProduct[] = [
-  {
     id: "errea-chaussettes-enfant-errea-best-noir",
     brand: "Errea",
     model: "Chaussettes enfant Errea best - Noir",
@@ -86339,6 +85728,9 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "errea-mallas-para-mujer-errea-marlene-noir",
     brand: "Errea",
@@ -89202,74 +88594,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
     ],
   },
   {
-    id: "errea-peto-errea-bib-double-blanc",
-    brand: "Errea",
-    model: "Peto Errea Bib double - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.91,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923792423&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2F9%2Fc990000026_2_1.webp&feedId=89032&k=1c7793bbb6a95d0e6473215827f1c7b5bc883035",
-        sizes: ["M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "errea-peto-errea-bib-double-orange",
-    brand: "Errea",
-    model: "Peto Errea Bib double - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.91,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39808404954&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fe%2Fr%2Ferrea_c990001810_0-nw121724.webp&feedId=89032&k=094f9c506940ee8596a7ca0ef5c708c389092e28",
-        sizes: ["M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "errea-peto-errea-bib-double-rouge",
-    brand: "Errea",
-    model: "Peto Errea Bib double - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 10.36,
-        priceMax: 16.91,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36485365202&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2F9%2Fc990000050_1_1.webp&feedId=89032&k=a224ae485e1d5651fec04b131fe55047aebaa171",
-        sizes: ["M", "XL"],
-        sizePrices: [
-          { size: "M", price: 16.91, url: "https://www.awin1.com/pclick.php?p=36485365201&a=3013769&m=65912" },
-          { size: "XL", price: 10.36, url: "https://www.awin1.com/pclick.php?p=36485365202&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 10.36,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45390606964&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2F9%2Fc990000050_1_1.webp&feedId=89044&k=a224ae485e1d5651fec04b131fe55047aebaa171",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "errea-polo-de-mujer-errea-jana-rouge",
     brand: "Errea",
     model: "Polo de mujer Errea Jana - Rouge",
@@ -89918,9 +89242,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "errea-sac-a-dos-errea-thor-bleu",
     brand: "Errea",
@@ -90685,6 +90006,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "errea-short-errea-transfer-3-0-noir",
     brand: "Errea",
@@ -94227,9 +93551,6 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "givova-calcetines-de-futbol-givova-rose",
     brand: "Givova",
@@ -94953,6 +94274,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "givova-conjunto-de-polo-y-pantalon-pantalon-corto-givova-easy-rouge",
     brand: "Givova",
@@ -97817,9 +97141,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "huari-short-huari-barracas-ii-rouge",
     brand: "Huari",
@@ -98686,6 +98007,9 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "hummel-calcetines-de-rayas-hummel-essential-blanc",
     brand: "Hummel",
@@ -99868,123 +99192,6 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45195669328&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel-238453-7026-marine-1.webp&feedId=89032&k=b8f198edd86593826d3d87a5da3c78a52303ec7c",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "hummel-chasuble-hummel-training-fundamental-blanc",
-    brand: "Hummel",
-    model: "Chasuble Hummel Training Fundamental - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 7.48,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-9001-chasuble-hummel-training-fundamental-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-9001_2-nw1226.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-chasuble-hummel-training-fundamental-bleu",
-    brand: "Hummel",
-    model: "Chasuble Hummel Training Fundamental - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 5.4,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-7649_2-nw1226.webp",
-        sizes: ["XL"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 5.4,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-7649_2-nw1226.webp",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-chasuble-hummel-training-fundamental-jaune",
-    brand: "Hummel",
-    model: "Chasuble Hummel Training Fundamental - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 7.48,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-5009-chasuble-hummel-training-fundamental-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-5009_2-nw1226.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-chasuble-hummel-training-fundamental-orange",
-    brand: "Hummel",
-    model: "Chasuble Hummel Training Fundamental - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 7.48,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-5179-chasuble-hummel-training-fundamental-orange-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-5179_2-nw1226.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-chasuble-hummel-training-fundamental-rouge",
-    brand: "Hummel",
-    model: "Chasuble Hummel Training Fundamental - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 7.48,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-3062-chasuble-hummel-training-fundamental-rouge",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-3062-nw1226.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-chasuble-hummel-training-fundamental-vert",
-    brand: "Hummel",
-    model: "Chasuble Hummel Training Fundamental - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-6057-chasuble-hummel-training-fundamental-vert-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-6057_2-nw1226.webp",
         sizes: ["S"],
       },
     ],
@@ -102051,9 +101258,6 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "hummel-conjunto-de-porteros-hummel-hmlcore-bleu",
     brand: "Hummel",
@@ -103071,6 +102275,9 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "hummel-medias-dinamarca-2022-23-vert",
     brand: "Hummel",
@@ -104168,128 +103375,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45195640559&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F2%2F0%2F208352-9001.webp&feedId=89032&k=afef6462643a1a8f8113ab07a1709fdf49a208c3",
         sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "hummel-peto-hummel-training-fundamental-blanc",
-    brand: "Hummel",
-    model: "Peto Hummel Training Fundamental - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.74,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281325&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-9001_2-nw1226.webp&feedId=89032&k=c50a9979a8779b460c4ce491759102a81c8fabef",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-peto-hummel-training-fundamental-bleu",
-    brand: "Hummel",
-    model: "Peto Hummel Training Fundamental - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.2,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281327&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-7649_2-nw1226.webp&feedId=89032&k=8bd31d0d955cb7a93f3c1f041bd22b38419eee17",
-        sizes: ["XL"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 7.59,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45546580740&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-7649_2-nw1226.webp&feedId=89044&k=8bd31d0d955cb7a93f3c1f041bd22b38419eee17",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-peto-hummel-training-fundamental-jaune",
-    brand: "Hummel",
-    model: "Peto Hummel Training Fundamental - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.74,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281328&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-5009_2-nw1226.webp&feedId=89032&k=233f7c6d12a245deea353c878ff43b89e8d51ded",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-peto-hummel-training-fundamental-orange",
-    brand: "Hummel",
-    model: "Peto Hummel Training Fundamental - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.74,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45783092380&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-5179_2-nw1226.webp&feedId=89032&k=e83dcee965b656aad8a0de7147f16b6d1b7b8f96",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-peto-hummel-training-fundamental-rouge",
-    brand: "Hummel",
-    model: "Peto Hummel Training Fundamental - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.74,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281330&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-3062-nw1226.webp&feedId=89032&k=2b3d8d7f0d3ea2d2a24a1179c3fcefafeffea3a3",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "hummel-peto-hummel-training-fundamental-vert",
-    brand: "Hummel",
-    model: "Peto Hummel Training Fundamental - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.74,
-        priceMax: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281333&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fh%2Fu%2Fhummel_005002-6057_2-nw1226.webp&feedId=89032&k=1d4507949af5aa4a94df3bb15addbc98db3d0745",
-        sizes: ["S", "XL"],
-        sizePrices: [
-          { size: "S", price: 16.0, url: "https://www.awin1.com/pclick.php?p=43839281332&a=3013769&m=65912" },
-          { size: "XL", price: 7.74, url: "https://www.awin1.com/pclick.php?p=43839281333&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -106210,9 +105295,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "jako-brassard-de-capitaine-jako-team-rouge",
     brand: "Jako",
@@ -107409,6 +106491,9 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "jako-calcetines-jako-mi-longues-blanc",
     brand: "Jako",
@@ -110543,9 +109628,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "jako-cuissard-jako-mi-long-comfort-2-0-blanc",
     brand: "Jako",
@@ -111555,6 +110637,9 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "jako-pantalon-corto-de-entrenamiento-jako-active-noir",
     brand: "Jako",
@@ -114662,9 +113747,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-survetement-jako-jogging-base-avec-bord-bleu",
     brand: "Jako",
@@ -115722,6 +114804,9 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "jako-pantalon-jako-entrainement-premium-gris-2",
     brand: "Jako",
@@ -118502,9 +117587,6 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "jako-t-shirt-jako-classico-vert",
     brand: "Jako",
@@ -119784,6 +118866,9 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-chandal-con-capucha-joma-eco-supernova-rouge",
     brand: "Joma",
@@ -123235,9 +122320,6 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "joma-conjunto-guardian-joma-pro-noir",
     brand: "Joma",
@@ -124344,6 +123426,9 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "joma-ensemble-maillot-et-short-d-entrainement-joma-victory-jaune",
     brand: "Joma",
@@ -127592,9 +126677,6 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-joma-tokyo-violet",
     brand: "Joma",
@@ -128850,6 +127932,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "joma-pantalon-de-survetement-joma-championship-vii-noir",
     brand: "Joma",
@@ -132289,9 +131374,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "joma-short-long-joma-nobel-rouge",
     brand: "Joma",
@@ -133633,6 +132715,9 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "joma-sweatshirt-joma-winner-turquoise",
     brand: "Joma",
@@ -136921,9 +136006,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "kappa-camiseta-kappa-jenno-blanc",
     brand: "Kappa",
@@ -138036,6 +137118,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-metz-ablas-pro-8-2024-25-vert",
     brand: "Kappa",
@@ -140917,9 +140002,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "kappa-pantalon-corto-red-star-fc-ahorazip-pro-8-2024-25-noir",
     brand: "Kappa",
@@ -141896,6 +140978,9 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "kappa-pantalon-de-survetement-deportivo-la-corogne-miragi-pro-2025-26-bleu",
     brand: "Kappa",
@@ -144869,9 +143954,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "kappa-short-metz-ahorazip-pro-8-2024-25-noir",
     brand: "Kappa",
@@ -145900,6 +144982,9 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "kappa-sudadera-con-capucha-ogc-nice-fligrood-noir",
     brand: "Kappa",
@@ -148904,9 +147989,6 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "le-coq-sportif-short-le-coq-sportif-paris-2024-n2-noir",
     brand: "Le Coq Sportif",
@@ -149964,6 +149046,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "macron-polo-macron-jazz-gris",
     brand: "Macron",
@@ -153254,9 +152339,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-corto-mcdavid-hex-noir",
     brand: "McDavid",
@@ -154350,6 +153432,9 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "mizuno-chaqueta-mizuno-morelia-off-noir",
     brand: "Mizuno",
@@ -157215,9 +156300,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "nike-calcetines-de-casa-noruega-coupe-du-monde-2026-bleu",
     brand: "Nike",
@@ -158264,6 +157346,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "nike-calcetines-nike-matchfit-crew-team-otc-vert",
     brand: "Nike",
@@ -160951,9 +160036,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "nike-camiseta-nike-trainning-academy-noir",
     brand: "Nike",
@@ -161557,24 +160639,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-casulla-nike-u-dynamic-fit-park20-vert",
-    brand: "Nike",
-    model: "Casulla Nike U Dynamic Fit Park20 - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 27.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44444968416&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fc%2Fw%2Fcw3845-313-phsfh001.webp&feedId=89032&k=db816ea4a0469767aea7d956d0614c228b6642a6",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
     id: "nike-chaleco-3a-equipacion-tottenham-2024-25-marron",
     brand: "Nike",
     model: "Chaleco 3ª Equipación Tottenham 2024/25 - Marron",
@@ -161916,6 +160980,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-authentique-psg-gxta-gris",
     brand: "Nike",
@@ -164489,9 +163556,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "nike-chaqueta-impermeable-tottenham-awf-3r-2023-24-gris",
     brand: "Nike",
@@ -164974,24 +164038,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46089287531&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fn%2Fi%2Fnike_hm3332-010_black-photo-blue-sport-red-white_1.webp&feedId=89032&k=582c1df38808d5919d295bc9e16a2d7222c2db9c",
         sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-chasuble-nike-u-dynamic-fit-park20-vert",
-    brand: "Nike",
-    model: "Chasuble Nike U Dynamic Fit Park20 - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 27.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw3845-313-chasuble-nike-u-dynamic-fit-park20-vert-action-noir",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/c/w/cw3845-313-phsfh001.jpg",
-        sizes: ["L"],
       },
     ],
   },
@@ -165536,6 +164582,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "nike-chaussettes-domicile-france-coupe-du-monde-2026-rouge",
     brand: "Nike",
@@ -168251,9 +167300,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "nike-doudoune-nike-tf-acdpr24-fall-bleu",
     brand: "Nike",
@@ -169364,6 +168410,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "nike-medias-1a-equipacion-inglaterra-coupe-du-monde-2026-blanc",
     brand: "Nike",
@@ -172104,9 +171153,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "nike-pantalon-d-entrainement-third-fc-barcelone-strike-2023-24-bleu",
     brand: "Nike",
@@ -173064,6 +172110,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-liverpool-fc-dri-fit-standard-issue-taper-2024-25-beige",
     brand: "Nike",
@@ -175664,9 +174713,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-survetement-chelsea-2024-25-noir",
     brand: "Nike",
@@ -176667,6 +175713,9 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-survetement-femme-pays-bas-bleu",
     brand: "Nike",
@@ -179315,9 +178364,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-survetement-third-liverpool-fc-dri-fit-strike-kp-2023-24-gris",
     brand: "Nike",
@@ -180267,6 +179313,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "nike-pantalones-de-chandal-chelsea-kpzks-2022-23-noir",
     brand: "Nike",
@@ -183216,9 +182265,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "nike-puno-nike-band-2-0-jaune",
     brand: "Nike",
@@ -184296,6 +183342,9 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "nike-short-de-domicile-chelsea-stadium-2025-26-bleu",
     brand: "Nike",
@@ -186878,9 +185927,6 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "nike-short-mujer-fc-barcelona-strike-2026-27-bleu",
     brand: "Nike",
@@ -187991,6 +187037,9 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "nike-short-nike-strike-bleu",
     brand: "Nike",
@@ -190745,9 +189794,6 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk48: ApparelProduct[] = [
   {
     id: "nike-sudadera-psg-hoop-2025-26-gris",
     brand: "Nike",
@@ -191831,6 +190877,9 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk48: ApparelProduct[] = [
   {
     id: "nike-sweatshirt-a-capuche-nike-dri-fit-standard-issue-blanc",
     brand: "Nike",
@@ -194556,9 +193605,6 @@ const minedApparelProductsChunk48: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk49: ApparelProduct[] = [
   {
     id: "nike-t-shirt-nike-fc-home-noir",
     brand: "Nike",
@@ -195542,6 +194588,9 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk49: ApparelProduct[] = [
   {
     id: "nike-tercera-corto-tottenham-2026-27-noir",
     brand: "Nike",
@@ -198135,9 +197184,6 @@ const minedApparelProductsChunk49: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk50: ApparelProduct[] = [
   {
     id: "nike-veste-de-survetement-third-atletico-madrid-2026-27-bleu",
     brand: "Nike",
@@ -199141,6 +198187,9 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk50: ApparelProduct[] = [
   {
     id: "nike-veste-impermeable-third-liverpool-fc-2024-25-gris",
     brand: "Nike",
@@ -201264,344 +200313,6 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
     ],
   },
   {
-    id: "powershot-camisetas-de-entrenamiento-reversibles-powershot-orange",
-    brand: "Powershot",
-    model: "Camisetas de entrenamiento reversibles PowerShot - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.92,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839280469&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093_ta093-1-0.webp&feedId=89032&k=2c2bd01a12416527bd04dadb730f51c81c9279ef",
-        sizes: [],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 6.3,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46035074187&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093_ta093-1-0.webp&feedId=89044&k=2c2bd01a12416527bd04dadb730f51c81c9279ef",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-para-adultos-powershot-bleu",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.03,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40109625401&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta092_chasuble-bleu_1.webp&feedId=89032&k=e4fe0cd4a6b69cd97805964349c967a68afcda02",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-para-adultos-powershot-jaune",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.03,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923791858&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta922_chasuble-jaune-fluo-dos_1.webp&feedId=89032&k=6c1aafe0b5cb785b7ce867adfd52b6ffc02087cf",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-para-adultos-powershot-noir",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Noir",
-    colour: "Noir",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.03,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40109625402&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta923_chasuble-noir-dos_2.webp&feedId=89032&k=45a5eec3ad0cbd6f452767ece97efe3b083f845b",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-para-adultos-powershot-rouge",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.03,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923791857&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta921_chasuble-rouge-dos_1.webp&feedId=89032&k=dd4d29f03b96700d9c5ab79985edff9d7eb5e81f",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-para-adultos-powershot-vert",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.03,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38819844533&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta924_chasuble-vert-2_1.webp&feedId=89032&k=d1566e7fca55c66a5504b9d518090e807588c9a5",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-reversible-amarillo-y-naranja-powershot-jaune",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento reversible amarillo y naranja PowerShot - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.5,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45469967331&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093-2--0.webp&feedId=89032&k=cfe011b059a6bb4e5dddf03230ad18a428daa992",
-        sizes: ["M/L"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 6.82,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45544761916&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093-2--0.webp&feedId=89044&k=cfe011b059a6bb4e5dddf03230ad18a428daa992",
-        sizes: ["M/L"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-reversible-en-blanco-y-negro-powershot-noir",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento reversible en blanco y negro PowerShot - Noir",
-    colour: "Noir",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 5.92,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923871566&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.webp&feedId=89032&k=009842db65d7346cbf79d4f599d45f7d9e93c238",
-        sizes: ["M"],
-      },
-      {
-        store: "FootStoreES",
-        price: 6.64,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923871568&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.webp&feedId=89032&k=009842db65d7346cbf79d4f599d45f7d9e93c238",
-        sizes: ["XL"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 6.3,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45524234909&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.webp&feedId=89044&k=009842db65d7346cbf79d4f599d45f7d9e93c238",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chaleco-de-entrenamiento-reversible-morado-y-verde-powershot-vert",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento reversible morado y verde PowerShot - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.5,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40249035132&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093pgy_1.webp&feedId=89032&k=55bd682ee7b71b101efb2b6a130a832f5783d5c9",
-        sizes: ["XL/2XL"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 6.5,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46009712244&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fa%2Fta093pgy_1.webp&feedId=89044&k=55bd682ee7b71b101efb2b6a130a832f5783d5c9",
-        sizes: ["XL/2XL"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chasuble-d-entrainement-reversible-jaune-et-orange-powershot",
-    brand: "Powershot",
-    model: "Chasuble d'entraînement réversible jaune et orange PowerShot",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 5.51,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093yom-chasuble-d-entrainement-reversible-jaune-et-orange-powershot-jaune-orange-m-l",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093-2--0.webp",
-        sizes: ["M/L"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 5.35,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093yom-chasuble-d-entrainement-reversible-jaune-et-orange-powershot-jaune-orange-m-l",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093-2--0.webp",
-        sizes: ["M/L"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chasuble-d-entrainement-reversible-noir-et-blanc-powershot",
-    brand: "Powershot",
-    model: "Chasuble d'entraînement réversible noir et blanc PowerShot",
-    colour: "Noir",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 4.12,
-        priceMax: 6.48,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093bwm_1-0_2.webp",
-        sizes: ["M", "XL"],
-        sizePrices: [
-          { size: "M", price: 4.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m" },
-          { size: "XL", price: 6.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093bwx-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-xl" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 4.12,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093bwm_1-0_2.webp",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chasuble-d-entrainement-reversible-violet-et-vert-powershot",
-    brand: "Powershot",
-    model: "Chasuble d'entraînement réversible violet et vert PowerShot",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 4.96,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093pgx-chasuble-d-entrainement-reversible-violet-et-vert-powershot-violet-vert-xl-2xl",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093pgy_1.webp",
-        sizes: ["XL/2XL"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 4.81,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093pgx-chasuble-d-entrainement-reversible-violet-et-vert-powershot-violet-vert-xl-2xl",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093pgy_1.webp",
-        sizes: ["XL/2XL"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chasuble-dentrainement-adulte-powershot-bleu",
-    brand: "Powershot",
-    model: "Chasuble d’entraînement adulte PowerShot - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 4.89,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta092-chasuble-d-entrainement-adulte-powershot-bleu-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta092_chasuble-bleu_1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "powershot-chasubles-dentrainement-reversibles-powershot-orange",
-    brand: "Powershot",
-    model: "Chasubles d’entraînement réversibles PowerShot - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 4.12,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093yoy-chasubles-d-entrainement-reversibles-powershot-orange-jaune-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093_ta093-1-0.webp",
-        sizes: ["TU"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 4.12,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093yoy-chasubles-d-entrainement-reversibles-powershot-orange-jaune-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093_ta093-1-0.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
     id: "powershot-filet-de-rangement-12-ballons-powershot-noir",
     brand: "Powershot",
     model: "Filet de rangement (12 ballons) PowerShot - Noir",
@@ -201763,9 +200474,6 @@ const minedApparelProductsChunk50: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk51: ApparelProduct[] = [
   {
     id: "precision-bolsa-para-balones-precision-tubular-noir",
     brand: "Precision",
@@ -202829,24 +201537,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
     ],
   },
   {
-    id: "precision-chasuble-precision-gaa-officials-orange",
-    brand: "Precision",
-    model: "Chasuble Precision GAA Officials - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.58,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprb351oa-chasuble-precision-gaa-officials-dochtuir-fluo-orange-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prb351oa_dochtuir-fluo-orange_1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
     id: "precision-chaussettes-3-stripe-precision-precision-pro-blanc",
     brand: "Precision",
     model: "Chaussettes 3 stripe Precision Precision Pro - Blanc",
@@ -203237,6 +201927,9 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk51: ApparelProduct[] = [
   {
     id: "precision-chaussettes-precision-plain-pro-marron",
     brand: "Precision",
@@ -204279,42 +202972,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529645098&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_01738g_vert-vert_1.webp&feedId=89032&k=6573c880f02aa3018b9968d31c73b95410deb3fe",
         sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "precision-peto-precision-gaa-officials-orange",
-    brand: "Precision",
-    model: "Peto Precision GAA Officials - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 8.76,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529645224&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prb351oa_dochtuir-fluo-orange_1.webp&feedId=89032&k=6fc1a77a18b97dd2052fa1655ae37934e4cf8eae",
-        sizes: [],
-      },
-      {
-        store: "FootStoreES",
-        price: 8.76,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529645225&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prb353oa_maor-uisce-fluo-orange_1.webp&feedId=89032&k=f9ac488d1e61ec04d5484c9ca13a3bf12c7ab684",
-        sizes: [],
-      },
-      {
-        store: "FootStoreES",
-        price: 8.76,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529645226&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fr%2Fprecision_prb352oa_physio-fluo-orange_1.webp&feedId=89032&k=cf57144f4af1e5ed2f7a6084d4025748d49c5cb3",
-        sizes: [],
       },
     ],
   },
@@ -205941,9 +204598,6 @@ const minedApparelProductsChunk51: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk52: ApparelProduct[] = [
   {
     id: "puma-calcetines-puma-teamfinal-blanc",
     brand: "Puma",
@@ -207324,6 +205978,9 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk52: ApparelProduct[] = [
   {
     id: "puma-camiseta-del-stade-rennais-2026-27-noir",
     brand: "Puma",
@@ -209963,9 +208620,6 @@ const minedApparelProductsChunk52: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk53: ApparelProduct[] = [
   {
     id: "puma-chaqueta-de-chandal-puma-velocity-vert",
     brand: "Puma",
@@ -210490,96 +209144,6 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44415315819&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F5%2F657234-05_0_puma__pum-657234-05__imagefront.webp&feedId=89044&k=01466f9ce098b1b8745ba3c56e2e3c633d5a8ec8",
         sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-chasuble-puma-bib-rouge",
-    brand: "Puma",
-    model: "Chasuble Puma Bib - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 7.5,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F657251-45-chasuble-puma-bib-rouge",
-        imageUrl: "https://cdn.blazimg.com/1800/product/6/5/657251-45_1.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-chasuble-puma-teamadditions-blanc",
-    brand: "Puma",
-    model: "Chasuble Puma teamADDITIONS - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.69,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660717-04-chasuble-puma-teamadditions-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-660717-04-6a8e10eea21b4-1.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-chasuble-puma-teamadditions-bleu",
-    brand: "Puma",
-    model: "Chasuble Puma teamADDITIONS - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.69,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660717-30-chasuble-puma-teamadditions-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-660717-30-6a8e10fd2a67d-1.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-chasuble-puma-teamadditions-orange",
-    brand: "Puma",
-    model: "Chasuble Puma teamADDITIONS - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.69,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660717-46-chasuble-puma-teamadditions-orange",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-660717-46-6a8e11041ecb4-1.webp",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-chasuble-puma-teamadditions-rouge",
-    brand: "Puma",
-    model: "Chasuble Puma teamADDITIONS - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.69,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660717-29-chasuble-puma-teamadditions-red",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-660717-29-6a8e10f533a3d-1.webp",
-        sizes: ["S", "XL"],
       },
     ],
   },
@@ -211584,6 +210148,9 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk53: ApparelProduct[] = [
   {
     id: "puma-chaussettes-puma-teamgoal-vert",
     brand: "Puma",
@@ -213883,9 +212450,6 @@ const minedApparelProductsChunk53: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk54: ApparelProduct[] = [
   {
     id: "puma-pantalon-corto-puma-individualrise-team-rise-bleu",
     brand: "Puma",
@@ -215611,6 +214175,9 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk54: ApparelProduct[] = [
   {
     id: "puma-pantalon-de-chandal-om-king-anthem-2025-26-noir",
     brand: "Puma",
@@ -218303,9 +216870,6 @@ const minedApparelProductsChunk54: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk55: ApparelProduct[] = [
   {
     id: "puma-pantalones-de-chandal-manchester-city-2025-26-bleu",
     brand: "Puma",
@@ -218679,96 +217243,6 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44862587677&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_781435-66_noir_1.webp&feedId=89032&k=ee658c4d39eaa4882f635ce593fe5e5c749942cf",
         sizes: ["XS", "S"],
-      },
-    ],
-  },
-  {
-    id: "puma-peto-puma-bib-rouge",
-    brand: "Puma",
-    model: "Peto Puma Bib - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.76,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44981376314&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F6%2F5%2F657251-45_1.webp&feedId=89032&k=0e4343c8d06fcf44168022efc0997ed2f5a34ed4",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-peto-puma-teamadditions-blanc",
-    brand: "Puma",
-    model: "Peto Puma teamADDITIONS - Blanc",
-    colour: "Blanc",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638335&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-660717-04-6a8e10eea21b4-1.webp&feedId=89032&k=73de6865953db310e6a1ce89d51b2293437ec293",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-peto-puma-teamadditions-bleu",
-    brand: "Puma",
-    model: "Peto Puma teamADDITIONS - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638329&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-660717-30-6a8e10fd2a67d-1.webp&feedId=89032&k=7256e097f507e8ff6572f90027a7814984b81e46",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-peto-puma-teamadditions-orange",
-    brand: "Puma",
-    model: "Peto Puma teamADDITIONS - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638331&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-660717-46-6a8e11041ecb4-1.webp&feedId=89032&k=9b0c8cdcea52c67ddf767e787116b69dc9586b22",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-peto-puma-teamadditions-rouge",
-    brand: "Puma",
-    model: "Peto Puma teamADDITIONS - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638333&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma-660717-29-6a8e10f533a3d-1.webp&feedId=89032&k=d87b313e2894d94a962390d3bf461ae4a547c395",
-        sizes: ["S", "XL"],
       },
     ],
   },
@@ -220266,6 +218740,9 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk55: ApparelProduct[] = [
   {
     id: "puma-short-de-compression-puma-noir",
     brand: "Puma",
@@ -222560,9 +221037,6 @@ const minedApparelProductsChunk55: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk56: ApparelProduct[] = [
   {
     id: "puma-short-puma-team-liga-noir",
     brand: "Puma",
@@ -224241,6 +222715,9 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk56: ApparelProduct[] = [
   {
     id: "puma-sweatshirt-a-capuche-femme-puma-teamgoal-noir",
     brand: "Puma",
@@ -226490,9 +224967,6 @@ const minedApparelProductsChunk56: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk57: ApparelProduct[] = [
   {
     id: "puma-veste-de-survetement-maroc-coupe-du-monde-2026-noir",
     brand: "Puma",
@@ -228431,6 +226905,9 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk57: ApparelProduct[] = [
   {
     id: "puma-veste-sans-manche-puma-teamwinter-noir",
     brand: "Puma",
@@ -230441,9 +228918,6 @@ const minedApparelProductsChunk57: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk58: ApparelProduct[] = [
   {
     id: "rinat-chaussettes-rinat-antideslizante-al-rouge",
     brand: "Rinat",
@@ -232043,6 +230517,9 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk58: ApparelProduct[] = [
   {
     id: "sol-s-camiseta-sol-s-imperial-gris",
     brand: "Sol's",
@@ -232355,294 +230832,6 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
     ],
   },
   {
-    id: "sporti-chaleco-numerado-del-1-al-10-sporti-x10-bleu",
-    brand: "Sporti",
-    model: "Chaleco numerado del 1 al 10 Sporti (x10) - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 26.15,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463261&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063120-royal_royal_1.webp&feedId=89032&k=d135381c88c9672233e4d6372d921b9744409208",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-1-al-10-sporti-x10-jaune",
-    brand: "Sporti",
-    model: "Chaleco numerado del 1 al 10 Sporti (x10) - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 26.15,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463255&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063120-jaune-fluo-_-fluo-yellow_jaune-fluo-fluo-yellow_1.webp&feedId=89032&k=e38def3f65f57f24eeea8c78a78847b26342861e",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-1-al-10-sporti-x10-rouge",
-    brand: "Sporti",
-    model: "Chaleco numerado del 1 al 10 Sporti (x10) - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 26.15,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463258&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063120-rouge-_-red_rouge-red_1.webp&feedId=89032&k=e7a9f323f105ec6df7749aa5bf0decdbfbfe69a2",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-1-al-10-sporti-x10-vert",
-    brand: "Sporti",
-    model: "Chaleco numerado del 1 al 10 Sporti (x10) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 26.15,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463264&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063120-vert-fluo_vert-fluo_1.webp&feedId=89032&k=9a4b7f21918856cb701a2b623d139dbc24c4f282",
-        sizes: ["XS", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-11-al-15-sporti-x5-bleu",
-    brand: "Sporti",
-    model: "Chaleco numerado del 11 al 15 Sporti (x5) - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463273&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063122-royal_royal_1.webp&feedId=89032&k=972f952ce917e5c96b4a412a6a1143bbf7618a7e",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-11-al-15-sporti-x5-jaune",
-    brand: "Sporti",
-    model: "Chaleco numerado del 11 al 15 Sporti (x5) - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463267&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063122-jaune-fluo-_-fluo-yellow_jaune-fluo-fluo-yellow_1.webp&feedId=89032&k=ff8bdfbf3f57db02bf2328effae978bb97908471",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-11-al-15-sporti-x5-rouge",
-    brand: "Sporti",
-    model: "Chaleco numerado del 11 al 15 Sporti (x5) - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463270&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063122-rouge-_-red_rouge-red_1.webp&feedId=89032&k=4f52b956bb704b4d3440c312b505ea209b45201c",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-11-al-15-sporti-x5-vert",
-    brand: "Sporti",
-    model: "Chaleco numerado del 11 al 15 Sporti (x5) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463276&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063122-vert-fluo_vert-fluo_1.webp&feedId=89032&k=c1522fb930f5bbfe1d7e430ab5362505e8dfb98e",
-        sizes: ["XS", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-16-al-20-sporti-x5-bleu",
-    brand: "Sporti",
-    model: "Chaleco numerado del 16 al 20 Sporti (x5) - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463285&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063123-royal_royal_1.webp&feedId=89032&k=052d6556f0e7ca296c789b3241c8c325aa07fa95",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-16-al-20-sporti-x5-jaune",
-    brand: "Sporti",
-    model: "Chaleco numerado del 16 al 20 Sporti (x5) - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463279&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063123-jaune-fluo-_-fluo-yellow_aune-fluo-fluo-yellow_1.webp&feedId=89032&k=fc51197664060459041874b71b6a6ae5245c2654",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-16-al-20-sporti-x5-rouge",
-    brand: "Sporti",
-    model: "Chaleco numerado del 16 al 20 Sporti (x5) - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463282&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063123-rouge-_-red_rouge-red_1.webp&feedId=89032&k=297935d1834d50700e71200f756b7d2cff6b8d78",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chaleco-numerado-del-16-al-20-sporti-x5-vert",
-    brand: "Sporti",
-    model: "Chaleco numerado del 16 al 20 Sporti (x5) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 14.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463288&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063123-vert-fluo_vert-fluo_1.webp&feedId=89032&k=848cb395bcc39916df1fcb8dc7eadf4efec274b7",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chalecos-reversibles-numerados-sporti-n-1-noir",
-    brand: "Sporti",
-    model: "Chalecos reversibles numerados Sporti N° 1 - Noir",
-    colour: "Noir",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 54.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45764457112&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063237-noir_blanc_noir-blanc_1.webp&feedId=89032&k=324bd37f1f2dfb133c9927b8456886b36a193285",
-        sizes: ["XS", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chalecos-reversibles-numerados-sporti-n-1-rouge",
-    brand: "Sporti",
-    model: "Chalecos reversibles numerados Sporti N° 1 - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 54.45,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41695386780&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063237-rouge_bleu_rouge-bleu_1.webp&feedId=89032&k=02d1451a9025fbf1c9bcd98566a034ffc555cfd1",
-        sizes: ["XS", "M"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chasubles-reversibles-numerotees-sporti-n-1-noir",
-    brand: "Sporti",
-    model: "Chasubles réversibles numérotées Sporti N° 1 - Noir",
-    colour: "Noir",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 52.17,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063237-noir-blanc-chasubles-reversibles-numerotees-sporti-n-1-10-x10-noir-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/p/sporti_063237-noir_blanc_noir-blanc_1.webp",
-        sizes: ["M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "sporti-chasubles-reversibles-numerotees-sporti-n-1-rouge",
-    brand: "Sporti",
-    model: "Chasubles réversibles numérotées Sporti N° 1 - Rouge",
-    colour: "Rouge",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 52.17,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063237-rouge-bleu-chasubles-reversibles-numerotees-sporti-n-1-10-x10-rouge-bleu",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/p/sporti_063237-rouge_bleu_rouge-bleu_1.jpg",
-        sizes: ["XS", "M"],
-      },
-    ],
-  },
-  {
     id: "sporti-filet-de-sac-pour-5-6-ballons-sporti-bleu",
     brand: "Sporti",
     model: "Filet de sac pour 5-6 ballons Sporti - Bleu",
@@ -232729,24 +230918,6 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529614732&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_078002_0.webp&feedId=89032&k=6b67b9442889488b156975c24e34996cb088d440",
         sizes: [],
-      },
-    ],
-  },
-  {
-    id: "sporti-peto-sporti-violet",
-    brand: "Sporti",
-    model: "Peto Sporti - Violet",
-    colour: "Violet",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 4.77,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42536463291&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fs%2Fp%2Fsporti_063209-violet_violet_1.webp&feedId=89032&k=f7836e6802a156811fb22f43274ad6087d757c6d",
-        sizes: ["XS", "M", "XL"],
       },
     ],
   },
@@ -234428,9 +232599,6 @@ const minedApparelProductsChunk58: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk59: ApparelProduct[] = [
   {
     id: "stanno-chaussettes-stanno-uni-ii-violet",
     brand: "Stanno",
@@ -236366,6 +234534,9 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk59: ApparelProduct[] = [
   {
     id: "tremblay-ct-brassard-capitaine-fluo-jaune",
     brand: "Tremblay CT",
@@ -236471,258 +234642,6 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=37923796066&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fr%2Ftremblay_brassard.webp&feedId=89032&k=6b7cefcbf315f77df32f4df38f8fcc3fa3694f1f",
         sizes: ["Junior", "Senior"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-numerados-del-11-al-15-tremblay-ct-x5-orange",
-    brand: "Tremblay CT",
-    model: "Chalecos numerados del 11 al 15 Tremblay CT (x5) - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 22.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529386056&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fr%2Ftremblay-ct_te1511-1-40_bleu_1.webp&feedId=89032&k=d6139e930bd8079f75611e4846ef8567a7da2dab",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-numerados-del-11-al-15-tremblay-ct-x5-vert",
-    brand: "Tremblay CT",
-    model: "Chalecos numerados del 11 al 15 Tremblay CT (x5) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 22.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529386057&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fr%2Ftremblay-ct_te1511-1-40_bleu_1.webp&feedId=89032&k=d6139e930bd8079f75611e4846ef8567a7da2dab",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-numerados-del-16-al-20-tremblay-ct-x5-orange",
-    brand: "Tremblay CT",
-    model: "Chalecos numerados del 16 al 20 Tremblay CT (x5) - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 22.49,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529386058&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fr%2Ftremblay-ct_te1511-1-40_bleu_1.webp&feedId=89032&k=d6139e930bd8079f75611e4846ef8567a7da2dab",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-tremblay-numerados-del-1-al-10-x10-bleu",
-    brand: "Tremblay CT",
-    model: "Chalecos Tremblay numerados del 1 al 10 (x10) - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 40.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38018919028&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fe%2Fte1510_1.webp&feedId=89032&k=29b818b8a5ea6c82c96f27ed60f685dd8226f653",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-tremblay-numerados-del-1-al-10-x10-jaune",
-    brand: "Tremblay CT",
-    model: "Chalecos Tremblay numerados del 1 al 10 (x10) - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 40.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923871713&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fe%2Fte1510_1.webp&feedId=89032&k=29b818b8a5ea6c82c96f27ed60f685dd8226f653",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-tremblay-numerados-del-1-al-10-x10-orange",
-    brand: "Tremblay CT",
-    model: "Chalecos Tremblay numerados del 1 al 10 (x10) - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 40.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38018919030&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fe%2Fte1510_1.webp&feedId=89032&k=29b818b8a5ea6c82c96f27ed60f685dd8226f653",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chalecos-tremblay-numerados-del-1-al-10-x10-vert",
-    brand: "Tremblay CT",
-    model: "Chalecos Tremblay numerados del 1 al 10 (x10) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 40.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38018919029&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Ft%2Fe%2Fte1510.webp&feedId=89032&k=aa17aa37db2ff70b106937c9eeeafd9f16cb89c4",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-numerotees-de-11-a-15-tremblay-ct-x5-orange",
-    brand: "Tremblay CT",
-    model: "Chasubles numérotées de 11 à 15 Tremblay CT (x5) - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.47,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1511-2-52-chasubles-numerotees-de-11-a-15-tremblay-ct-x5-orange-l",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/r/tremblay-ct_te1511-1-40_bleu_1.jpg",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-numerotees-de-11-a-15-tremblay-ct-x5-vert",
-    brand: "Tremblay CT",
-    model: "Chasubles numérotées de 11 à 15 Tremblay CT (x5) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.47,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1511-1-70-chasubles-numerotees-de-11-a-15-tremblay-ct-x5-vert-s",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/r/tremblay-ct_te1511-1-40_bleu_1.jpg",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-numerotees-de-16-a-20-tremblay-ct-x5-orange",
-    brand: "Tremblay CT",
-    model: "Chasubles numérotées de 16 à 20 Tremblay CT (x5) - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 20.47,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1516-1-52-chasubles-numerotees-de-16-a-20-tremblay-ct-x5-orange-s",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/r/tremblay-ct_te1511-1-40_bleu_1.jpg",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-tremblay-numerotees-de-1-a-10-x10-bleu",
-    brand: "Tremblay CT",
-    model: "Chasubles Tremblay numérotées de 1 à 10 (x10) - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 37.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1510-chasubles-tremblay-numerotees-de-1-a-10-x10-bleu",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/e/te1510_1.jpg",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-tremblay-numerotees-de-1-a-10-x10-jaune",
-    brand: "Tremblay CT",
-    model: "Chasubles Tremblay numérotées de 1 à 10 (x10) - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 37.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1510-chasubles-tremblay-numerotees-de-1-a-10-x10-jaune",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/e/te1510_1.jpg",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-tremblay-numerotees-de-1-a-10-x10-orange",
-    brand: "Tremblay CT",
-    model: "Chasubles Tremblay numérotées de 1 à 10 (x10) - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 37.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1510-chasubles-tremblay-numerotees-de-1-a-10-x10-orange",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/te1510_1.webp",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "tremblay-ct-chasubles-tremblay-numerotees-de-1-a-10-x10-vert",
-    brand: "Tremblay CT",
-    model: "Chasubles Tremblay numérotées de 1 à 10 (x10) - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 37.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fte1510-chasubles-tremblay-numerotees-de-1-a-10-x10-vert",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/e/te1510.jpg",
-        sizes: ["L"],
       },
     ],
   },
@@ -238305,9 +236224,6 @@ const minedApparelProductsChunk59: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk60: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-pro-player-bleu",
     brand: "uhlsport",
@@ -241001,6 +238917,9 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk60: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-uhlsport-essential-noir",
     brand: "uhlsport",
@@ -241615,148 +239534,6 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=39867988882&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100519304.webp&feedId=89032&k=7fbade2cc1e601dc26c9e6724cfdff220bd8e6e6",
         sizes: ["S", "L", "2XL", "3XL"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-chasuble-reversible-uhlsport-training-bleu",
-    brand: "uhlsport",
-    model: "Chasuble réversible Uhlsport Training - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 8.69,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100321801-chasuble-reversible-uhlsport-training-bleu-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100321801_change.webp",
-        sizes: ["M/L", "XL/2XL", "12/14 ans"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-chasuble-reversible-uhlsport-training-orange",
-    brand: "uhlsport",
-    model: "Chasuble réversible Uhlsport Training - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 19.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100321802-chasuble-reversible-uhlsport-training-orange-vert",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100321801.webp",
-        sizes: ["12/14 ans"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-chasuble-uhlsport-training-bib-bleu",
-    brand: "uhlsport",
-    model: "Chasuble Uhlsport Training Bib - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.9,
-        priceMax: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335302-chasuble-uhlsport-training-bib-cyan",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100335302.webp",
-        sizes: ["XS/S", "XL/2XL"],
-        sizePrices: [
-          { size: "XS/S", price: 6.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335302-chasuble-uhlsport-training-bib-cyan" },
-          { size: "XL/2XL", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335302-chasuble-uhlsport-training-bib-cyan" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-chasuble-uhlsport-training-bib-jaune",
-    brand: "uhlsport",
-    model: "Chasuble Uhlsport Training Bib - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 3.67,
-        priceMax: 16.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335301-chasuble-uhlsport-training-bib-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100335301.webp",
-        sizes: ["M/L", "XL/2XL"],
-        sizePrices: [
-          { size: "M/L", price: 3.67, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335301-chasuble-uhlsport-training-bib-jaune-fluo" },
-          { size: "XL/2XL", price: 16.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335301-chasuble-uhlsport-training-bib-jaune-fluo" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 3.67,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F100335301-chasuble-uhlsport-training-bib-jaune-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100335301.webp",
-        sizes: ["M/L"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-chasuble-uhlsport-training-bib-orange",
-    brand: "uhlsport",
-    model: "Chasuble Uhlsport Training Bib - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 6.9,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335304-chasuble-uhlsport-training-bib-orange-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100335304.webp",
-        sizes: ["XS/S"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-chasuble-uhlsport-training-bib-vert",
-    brand: "uhlsport",
-    model: "Chasuble Uhlsport Training Bib - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 5.53,
-        priceMax: 6.9,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100335303.webp",
-        sizes: ["XS/S", "M/L", "XL/2XL"],
-        sizePrices: [
-          { size: "XS/S", price: 6.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
-          { size: "M/L", price: 5.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
-          { size: "XL/2XL", price: 6.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 5.37,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100335303.webp",
-        sizes: ["M/L"],
       },
     ],
   },
@@ -242955,9 +240732,6 @@ const minedApparelProductsChunk60: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk61: ApparelProduct[] = [
   {
     id: "uhlsport-chubasquero-uhlsport-score-bleu",
     brand: "uhlsport",
@@ -245997,6 +243771,9 @@ const minedApparelProductsChunk61: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk61: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-corto-de-compresion-uhlsport-pro-tights-blanc",
     brand: "uhlsport",
@@ -247849,9 +245626,6 @@ const minedApparelProductsChunk61: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk62: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-survetement-moderne-uhlsport-essential-gris",
     brand: "uhlsport",
@@ -248383,148 +246157,6 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44415315706&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100314403_fv_1_1.webp&feedId=89044&k=75f3c35f310f0f96af2f64a2e4c115b972af31f8",
         sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-peto-reversible-uhlsport-training-bleu",
-    brand: "uhlsport",
-    model: "Peto reversible Uhlsport Training - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.35,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39783212267&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100321801_change.webp&feedId=89032&k=b3d841a09d0e3e69ba886457236e71c53cf33d5c",
-        sizes: ["M/L", "XL/2XL", "12/14 ans"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-peto-reversible-uhlsport-training-orange",
-    brand: "uhlsport",
-    model: "Peto reversible Uhlsport Training - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 19.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923786394&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100321801.webp&feedId=89032&k=3bf405673352d9aefa7dfdc1d75e675435f57128",
-        sizes: ["12/14 ans"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-peto-uhlsport-training-bib-bleu",
-    brand: "uhlsport",
-    model: "Peto Uhlsport Training Bib - Bleu",
-    colour: "Bleu",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.06,
-        priceMax: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923789114&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335302.webp&feedId=89032&k=d4c4e91562dc7ed992848a4508dec1c1e6f2f04d",
-        sizes: ["XS/S", "XL/2XL"],
-        sizePrices: [
-          { size: "XS/S", price: 7.06, url: "https://www.awin1.com/pclick.php?p=37923789114&a=3013769&m=65912" },
-          { size: "XL/2XL", price: 16.0, url: "https://www.awin1.com/pclick.php?p=37923789116&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-peto-uhlsport-training-bib-jaune",
-    brand: "uhlsport",
-    model: "Peto Uhlsport Training Bib - Jaune",
-    colour: "Jaune",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 3.94,
-        priceMax: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923789112&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335301.webp&feedId=89032&k=0145eded4df0cb3e04d6365dc609ca97d08018e8",
-        sizes: ["M/L", "XL/2XL"],
-        sizePrices: [
-          { size: "M/L", price: 3.94, url: "https://www.awin1.com/pclick.php?p=37923789112&a=3013769&m=65912" },
-          { size: "XL/2XL", price: 16.0, url: "https://www.awin1.com/pclick.php?p=37923789113&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 4.25,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37924334955&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335301.webp&feedId=89044&k=0145eded4df0cb3e04d6365dc609ca97d08018e8",
-        sizes: ["M/L"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-peto-uhlsport-training-bib-orange",
-    brand: "uhlsport",
-    model: "Peto Uhlsport Training Bib - Orange",
-    colour: "Orange",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.06,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923789120&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335304.webp&feedId=89032&k=a90383e91d1197f4c2dc2568240380aa8fd12e40",
-        sizes: ["XS/S"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-peto-uhlsport-training-bib-vert",
-    brand: "uhlsport",
-    model: "Peto Uhlsport Training Bib - Vert",
-    colour: "Vert",
-    type: "bib",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.06,
-        priceMax: 7.33,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40663921805&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335303.webp&feedId=89032&k=e8fa144edf71f62bcdeeb9ff35b2ca6391450b84",
-        sizes: ["XS/S", "M/L", "XL/2XL"],
-        sizePrices: [
-          { size: "XS/S", price: 7.06, url: "https://www.awin1.com/pclick.php?p=40663921805&a=3013769&m=65912" },
-          { size: "M/L", price: 7.33, url: "https://www.awin1.com/pclick.php?p=37923789118&a=3013769&m=65912" },
-          { size: "XL/2XL", price: 7.06, url: "https://www.awin1.com/pclick.php?p=37923789119&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 7.93,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45667363838&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2F1%2F0%2F100335303.webp&feedId=89044&k=e8fa144edf71f62bcdeeb9ff35b2ca6391450b84",
-        sizes: ["M/L"],
       },
     ],
   },
@@ -251445,6 +249077,9 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk62: ApparelProduct[] = [
   {
     id: "uhlsport-short-uhlsport-center-basic-ftp-vert",
     brand: "uhlsport",
@@ -253213,9 +250848,6 @@ const minedApparelProductsChunk62: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk63: ApparelProduct[] = [
   {
     id: "uhlsport-t-shirt-promo-uhlsport-essential-jaune",
     brand: "uhlsport",
@@ -256360,6 +253992,9 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk63: ApparelProduct[] = [
   {
     id: "umbro-pantalon-de-survetement-umbro-sb-gris",
     brand: "Umbro",
@@ -257768,9 +255403,6 @@ const minedApparelProductsChunk63: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk64: ApparelProduct[] = [
   {
     id: "under-armour-pantalon-de-chandal-under-armour-challenger-pro-bleu",
     brand: "Under Armour",
@@ -259280,5 +256912,4 @@ export const apparelProducts: ApparelProduct[] = [
   ...minedApparelProductsChunk61,
   ...minedApparelProductsChunk62,
   ...minedApparelProductsChunk63,
-  ...minedApparelProductsChunk64,
 ];

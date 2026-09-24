@@ -26,10 +26,12 @@ FEEDS = "/tmp/feeds"
 BALLS_OUT = os.path.join(SCRIPT_DIR, "mined_balls.json")
 GLOVES_OUT = os.path.join(SCRIPT_DIR, "mined_gloves.json")
 APPAREL_OUT = os.path.join(SCRIPT_DIR, "mined_apparel.json")
+TRAINING_OUT = os.path.join(SCRIPT_DIR, "mined_training.json")
 
 balls_results = []
 gloves_results = []
 apparel_results = []
+training_results = []
 
 # Mismo motivo que mine_boots.py: "fútbol americano" comparte la palabra
 # "balón"/"ball" en varios idiomas con el fútbol real.
@@ -60,25 +62,38 @@ def clean_size(v):
 # merchant_category confiable ("Football > Ballon de football > Adulte >
 # ..." / "Football > Gants de gardien > Adulte > ..."), parent_product_id
 # agrupa colorway real (una fila por talla).
-def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=None):
+def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=None, cat_ok=None, type_of=None):
     if not os.path.exists(f"{FEEDS}/{fname}"):
         print(f'{store_label}: feed not found, skipped')
         return
     groups = {}
+    cat_by_key = {}
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             mc = row.get('merchant_category') or ''
-            # Encontrado 2026-09-18 armando ropa: categorías genéricas de
-            # una palabra ("Short", "Chaussettes") también existen como
-            # hoja bajo OTROS departamentos del mismo feed ("Training >
-            # Short", "Running > Chaussettes" -- ej. Puma Hyrox, Lenz
-            # running), así que un simple "in mc" dejaba pasar ropa de
-            # fitness/running sin nada de fútbol. Guantes/pelotas no
-            # tenían este problema porque su category_kw ya era una frase
-            # larga sin ambigüedad ("Gants de gardien", "Ballon de
-            # football") -- acá hace falta exigir el departamento real.
-            if not mc.startswith('Football > ') or category_kw not in mc or '> Adulte' not in mc:
+            # cat_ok: filtro alternativo para equipamiento de entrenamiento,
+            # que NO vive solo bajo "Football > " (hay conos/vallas/aros
+            # reales bajo "Training > " y "Multisports > ") y no siempre
+            # trae "> Adulte" porque un cono no tiene talla. Ver
+            # TRAINING_LEAVES.
+            #
+            # Rama normal (ropa/guantes/pelotas), encontrada 2026-09-18
+            # armando ropa: categorías genéricas de una palabra ("Short",
+            # "Chaussettes") también existen como hoja bajo OTROS
+            # departamentos del mismo feed ("Training > Short", "Running >
+            # Chaussettes" -- ej. Puma Hyrox, Lenz running), así que un
+            # simple "in mc" dejaba pasar ropa de fitness/running sin nada
+            # de fútbol. Guantes/pelotas no tenían este problema porque su
+            # category_kw ya era una frase larga sin ambigüedad ("Gants de
+            # gardien", "Ballon de football") -- acá hace falta exigir el
+            # departamento real.
+            if cat_ok is not None:
+                if not cat_ok(mc):
+                    continue
+            elif not mc.startswith('Football > ') or category_kw not in mc or '> Adulte' not in mc:
                 continue
+            _key_pre = row.get('parent_product_id') or row.get('merchant_product_id') or (row.get('product_name') or '')
+            cat_by_key.setdefault(_key_pre, mc)
             title = row.get('product_name') or ''
             if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title):
                 continue
@@ -118,24 +133,33 @@ def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=
         if price_max > price:
             entry['priceMax'] = price_max
             entry['sizePrices'] = size_prices
+        if type_of is not None:
+            entry['type'] = type_of(cat_by_key.get(key, ''))
         out_list.append(entry)
         n += 1
     print(f'{store_label}:', n)
 
 # ---------- ESQUEMA GOOGLE SHOPPING (Foot-Store FR, Sport is Good FR) ----------
-def mine_google_shopping_category(fname, store_label, category_kw, out_list, exclude_extra=None):
+def mine_google_shopping_category(fname, store_label, category_kw, out_list, exclude_extra=None, cat_ok=None, type_of=None):
     if not os.path.exists(f"{FEEDS}/{fname}"):
         print(f'{store_label}: feed not found, skipped')
         return
     groups = {}
+    cat_by_key = {}
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             pt = row.get('product_type') or ''
-            # Mismo motivo que mine_blaz_category: exigir el departamento
-            # real "Football" (no solo que el texto de la categoría
-            # contenga la palabra suelta) para no dejar pasar ropa de
-            # Running/Training sin nada de fútbol.
-            if not pt.startswith('Football > ') or category_kw not in pt or 'Adulte' not in pt:
+            # cat_ok: ver el comentario en mine_blaz_category (equipamiento
+            # de entrenamiento vive también bajo Training/Multisports).
+            #
+            # Rama normal: mismo motivo que mine_blaz_category -- exigir el
+            # departamento real "Football" (no solo que el texto de la
+            # categoría contenga la palabra suelta) para no dejar pasar
+            # ropa de Running/Training sin nada de fútbol.
+            if cat_ok is not None:
+                if not cat_ok(pt):
+                    continue
+            elif not pt.startswith('Football > ') or category_kw not in pt or 'Adulte' not in pt:
                 continue
             title = row.get('title') or ''
             if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title):
@@ -155,6 +179,7 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
             key = row.get('item_group_id') or f"{row.get('brand', '')}|{row.get('title', '')}|{row.get('color', '')}"
             if not key:
                 continue
+            cat_by_key.setdefault(key, pt)
             groups.setdefault(key, []).append(row)
     n = 0
     for key, rows in groups.items():
@@ -189,6 +214,8 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
         if price_max > price:
             entry['priceMax'] = price_max
             entry['sizePrices'] = size_prices
+        if type_of is not None:
+            entry['type'] = type_of(cat_by_key.get(key, ''))
         out_list.append(entry)
         n += 1
     print(f'{store_label}:', n)
@@ -388,6 +415,80 @@ def merge_by_model(results):
 # aplicado), solo se etiqueta el `type` después. Deporte Outlet/Gigasport
 # quedan afuera de esta primera carga (sin categoría de ropa confiable
 # verificada todavía) -- mismo criterio que "ship lo pedido, no de más".
+# ---------- ENTRENAMIENTO (equipamiento real, sección propia 2026-09-24) ----------
+# Hoja de categoría real del feed -> tipo nuestro. Se filtra por HOJA, no
+# por departamento, porque el mismo cono existe bajo "Training > ",
+# "Multisports > " y "Football > " según la tienda, y un cono no trae
+# "> Adulte" (no tiene talla) -- por eso esto no puede usar el filtro
+# normal de mine_blaz_category/mine_google_shopping_category.
+#
+# Deliberadamente AFUERA:
+#  - Ballon / Ballon d'entraînement / Mini ballon -> ya son su propia
+#    sección (balls.ts / "Pelotas"), meterlos acá los duplicaría.
+#  - Haltère, Barre/Disque de musculation, Tapis -> gimnasio genérico,
+#    no fútbol (mismo criterio que dejó Running/Training fuera de ropa).
+#  - Sac à ballon, Protège-tibias -> siguen en ropa (types bag/shinguards).
+TRAINING_LEAVES = {
+    "Cône d'entraînement": 'conos',
+    'Chasuble': 'petos',
+    'Filet': 'redes',
+    'Filet football': 'redes',
+    'Bande de résistance': 'elasticos',
+    'Bandes élastique': 'elasticos',
+    'Élastique de résistance': 'elasticos',
+    "Matériel d'entraînement": 'material',
+    'Tableau tactique': 'tactica',
+    'Sifflet': 'silbatos',
+    'Cerceau': 'aros',
+    'Haie': 'vallas',
+    'Échelle': 'escaleras',
+    'Échelle de rythme': 'escaleras',
+    'Marquage': 'marcadores',
+    'Disque de marquage': 'marcadores',
+    'Accessoire de marquage': 'marcadores',
+    'Accessoire but de football': 'porterias',
+    'Pompe': 'infladores',
+    'Poignée de pompe': 'infladores',
+}
+TRAINING_DEPARTMENTS = ('Football', 'Training', 'Multisports')
+
+
+def _training_leaf(category_path):
+    """Hoja real (2do segmento) si la categoría es equipamiento nuestro."""
+    parts = [p.strip() for p in (category_path or '').split('>')]
+    if len(parts) < 2 or parts[0] not in TRAINING_DEPARTMENTS:
+        return None
+    # "Football > Boutique du supporter > Marquage > Adulte" es el
+    # marcado/serigrafía de camisetas de la tienda del hincha, NO
+    # marcadores de entrenamiento -- misma palabra, otra cosa.
+    if 'Boutique du supporter' in category_path:
+        return None
+    # Junior: el equipamiento de entrenamiento no se cataloga por edad,
+    # así que un "> Junior" acá es ropa mal ubicada (ej. chasuble junior).
+    if '> Junior' in category_path:
+        return None
+    return TRAINING_LEAVES.get(parts[1])
+
+
+def training_cat_ok(category_path):
+    return _training_leaf(category_path) is not None
+
+
+def training_type_of(category_path):
+    return _training_leaf(category_path) or 'material'
+
+
+def mine_training(out_list):
+    mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', None, out_list,
+                       cat_ok=training_cat_ok, type_of=training_type_of)
+    mine_blaz_category('SPORTISGOOD_ES.csv', 'SportIsGoodES', None, out_list,
+                       cat_ok=training_cat_ok, type_of=training_type_of)
+    mine_google_shopping_category('FOOTSTORE_FR.csv', 'FootStoreFR', None, out_list,
+                                  cat_ok=training_cat_ok, type_of=training_type_of)
+    mine_google_shopping_category('SPORTISGOOD_FR.csv', 'SportIsGoodFR', None, out_list,
+                                  cat_ok=training_cat_ok, type_of=training_type_of)
+
+
 def mine_apparel_type(type_key, category_kw, out_list):
     tmp = []
     mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', category_kw, tmp)
@@ -439,25 +540,36 @@ if __name__ == '__main__':
     for kw in ('Sac de sport', 'Sac à dos', 'Sac à ballon'):
         mine_apparel_type('bag', kw, apparel_results)
     mine_apparel_type('armband', 'Brassard', apparel_results)
-    mine_apparel_type('bib', 'Chasuble', apparel_results)
+    # 'Chasuble' (petos) salió de ropa el 2026-09-24 por pedido explícito
+    # del usuario -- es equipamiento de entrenamiento, ahora se mina en la
+    # sección Entrenamiento de abajo (type 'petos').
     for kw in ('Sous maillot', 'Legging', 'Cuissard', 'Manchon jambe'):
         mine_apparel_type('baselayer', kw, apparel_results)
+
+    print('=== ENTRENAMIENTO ===')
+    mine_training(training_results)
 
     drop_no_image(gloves_results, 'guantes')
     drop_no_image(balls_results, 'pelotas')
     drop_no_image(apparel_results, 'ropa')
+    drop_no_image(training_results, 'entrenamiento')
     canonicalize_brands(gloves_results)
     canonicalize_brands(balls_results)
     canonicalize_brands(apparel_results)
+    canonicalize_brands(training_results)
     gloves_merged = merge_by_model(gloves_results)
     balls_merged = merge_by_model(balls_results)
     apparel_merged = merge_by_model(apparel_results)
+    training_merged = merge_by_model(training_results)
     print('TOTAL guantes:', len(gloves_results), '->', len(gloves_merged), 'productos tras fundir por tienda')
     print('TOTAL pelotas:', len(balls_results), '->', len(balls_merged), 'productos tras fundir por tienda')
     print('TOTAL ropa:', len(apparel_results), '->', len(apparel_merged), 'productos tras fundir por tienda')
+    print('TOTAL entrenamiento:', len(training_results), '->', len(training_merged), 'productos tras fundir por tienda')
     with open(GLOVES_OUT, 'w') as f:
         json.dump(gloves_merged, f, ensure_ascii=False, indent=1)
     with open(BALLS_OUT, 'w') as f:
         json.dump(balls_merged, f, ensure_ascii=False, indent=1)
     with open(APPAREL_OUT, 'w') as f:
         json.dump(apparel_merged, f, ensure_ascii=False, indent=1)
+    with open(TRAINING_OUT, 'w') as f:
+        json.dump(training_merged, f, ensure_ascii=False, indent=1)
