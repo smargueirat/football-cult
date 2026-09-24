@@ -89,6 +89,9 @@ export interface Translations {
     eyebrow: string;
     title: string;
   };
+  sections: {
+    vintage: string;
+  };
   steps: {
     title1: string;
     text1: string;
@@ -613,6 +616,9 @@ export const translations: Record<Locale, Translations> = {
     featured: {
       eyebrow: "Joyas del catálogo",
       title: "Camisetas destacadas",
+    },
+    sections: {
+      vintage: "Vintage",
     },
     steps: {
       title1: "Buscá",
@@ -1139,6 +1145,9 @@ export const translations: Record<Locale, Translations> = {
       eyebrow: "Joias do catálogo",
       title: "Camisas em destaque",
     },
+    sections: {
+      vintage: "Vintage",
+    },
     steps: {
       title1: "Busque",
       text1: "Digite o nome do seu time, seleção ou liga.",
@@ -1663,6 +1672,9 @@ export const translations: Record<Locale, Translations> = {
     featured: {
       eyebrow: "Catalog gems",
       title: "Featured jerseys",
+    },
+    sections: {
+      vintage: "Vintage",
     },
     steps: {
       title1: "Search",
@@ -2189,6 +2201,9 @@ export const translations: Record<Locale, Translations> = {
       eyebrow: "Pépites du catalogue",
       title: "Maillots en vedette",
     },
+    sections: {
+      vintage: "Vintage",
+    },
     steps: {
       title1: "Recherchez",
       text1: "Tapez votre club, votre sélection ou votre championnat.",
@@ -2713,6 +2728,9 @@ export const translations: Record<Locale, Translations> = {
     featured: {
       eyebrow: "Perle del catalogo",
       title: "Maglie in evidenza",
+    },
+    sections: {
+      vintage: "Vintage",
     },
     steps: {
       title1: "Cerca",
