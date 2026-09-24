@@ -45,3 +45,17 @@ export function trustStats(): TrustStats {
   cached = { comparedProducts: compared, stores: stores.size };
   return cached;
 }
+
+// Separador de miles a mano, sin Intl.
+//
+// `(7584).toLocaleString("es")` devuelve "7584" sin separador: el Node de
+// build trae ICU reducido (solo en-GB) y el formateo por idioma degrada
+// EN SILENCIO, que es lo peor que puede hacer -- no tira error, solo
+// escribe mal el número. Verificado el 2026-09-24 en vivo.
+export function groupThousands(n: number, locale: string): string {
+  const digits = String(Math.round(n));
+  const grouped = digits.replace(/\B(?=(\d{3})+(?!\d))/g, "\u00A0");
+  // Inglés usa coma; el resto de nuestros idiomas, punto. El espacio
+  // duro intermedio evita tener que escapar el separador dos veces.
+  return grouped.replace(/\u00A0/g, locale === "en" ? "," : ".");
+}

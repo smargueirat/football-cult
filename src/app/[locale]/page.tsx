@@ -8,7 +8,7 @@ import LeagueShortcuts from "@/components/LeagueShortcuts";
 import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { translations } from "@/lib/i18n/translations";
 import { heroSuggestions } from "@/lib/heroSuggestions";
-import { trustStats } from "@/lib/trustStrip";
+import { groupThousands, trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
 import {
   SEASONS,
@@ -143,7 +143,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <ul className="mt-7 grid gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4">
               {[
                 t.hero.trustCompared
-                  .replace("{n}", trust.comparedProducts.toLocaleString(locale))
+                  .replace("{n}", groupThousands(trust.comparedProducts, locale))
                   .replace("{s}", String(trust.stores)),
                 t.hero.trustShipping,
                 t.hero.trustFresh,
