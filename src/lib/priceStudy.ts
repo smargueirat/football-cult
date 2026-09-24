@@ -1,3 +1,4 @@
+import { splitByVersion } from "@/lib/jerseyVersion";
 import { products } from "@/data/products";
 
 // Estudio de dispersión de precios, calculado EN BUILD desde el catálogo
@@ -73,7 +74,19 @@ export function priceStudy(): PriceStudy {
   for (const p of products) {
     if (p.typeKey === "retro") continue;
     if (!CURRENT_SEASONS.includes(p.season)) continue;
-    const offers = p.offers.filter((o) => o.currency === "EUR" && !EXCLUDED_STORES.has(o.store));
+    const eligible = p.offers.filter((o) => o.currency === "EUR" && !EXCLUDED_STORES.has(o.store));
+
+    // Solo se comparan ofertas de la MISMA versión. La de jugador y la de
+    // hincha son prendas distintas que las marcas separan por 50-70 EUR,
+    // así que mezclarlas no mide dispersión de precio: mide la diferencia
+    // entre dos productos. Se veía justo donde más duele -- 6 de los 10
+    // ejemplos destacados eran mezclas, porque el estudio ordena por la
+    // diferencia más grande y estas siempre ganan (auditoría 2026-09-24).
+    // Se toma el grupo con más tiendas; a igualdad, el de hincha, que es
+    // el que busca la mayoría.
+    const groups = splitByVersion(eligible);
+    const offers =
+      groups.player.length > groups.fan.length ? groups.player : groups.fan;
     const storeNames = new Set(offers.map((o) => o.store));
     if (storeNames.size < 2) continue;
 

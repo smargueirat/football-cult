@@ -62,6 +62,10 @@ export interface Translations {
     title: string;
     subtitle: string;
     cta: string;
+    /** H1 fijo de la home: explica qué es el sitio. El copy emotivo vive
+     *  en heroSlides, que rota; esto no. */
+    h1: string;
+    h1Sub: string;
   };
   heroSlides: {
     eyebrow: string;
@@ -174,6 +178,9 @@ export interface Translations {
     pricesUpdatedOn: string;
     priceAlertCtaOff: string;
     priceAlertCtaOn: string;
+    savings: string;
+    versionPlayer: string;
+    versionFan: string;
   };
   footer: {
     about: string;
@@ -499,6 +506,8 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Comparamos precios de camisetas de selecciones, clubes y ligas de todo el mundo. Vos comprás directo donde quieras.",
       cta: "Ver catálogo",
+      h1: "Comparador de camisetas y material de fútbol: el precio final, con envío incluido",
+      h1Sub: "Buscamos el mismo producto oficial en 14 tiendas europeas y te mostramos cuánto cuesta de verdad en cada una, con el envío ya sumado. Camisetas, botas, guantes, balones, ropa y material de entrenamiento. Gratis y sin registrarte.",
     },
     heroSlides: [
       {
@@ -676,6 +685,9 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Precios actualizados el {date}",
       priceAlertCtaOff: "🔔 Avisame si baja de precio",
       priceAlertCtaOn: "✓ Te avisamos por mail si baja",
+      savings: "Ahorrás {amount} ({pct}%) frente a la tienda más cara",
+      versionPlayer: "Versión jugador",
+      versionFan: "Versión hincha",
     },
     footer: {
       priceStudy: "Estudio de precios",
@@ -1002,6 +1014,8 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Comparamos preços de camisas de seleções, clubes e ligas do mundo todo. Você compra direto onde quiser.",
       cta: "Ver catálogo",
+      h1: "Comparador de camisolas e material de futebol: o preço final, com portes incluídos",
+      h1Sub: "Procuramos o mesmo produto oficial em 14 lojas europeias e mostramos quanto custa mesmo em cada uma, com os portes já somados. Camisolas, chuteiras, luvas, bolas, roupa e material de treino. Grátis e sem registo.",
     },
     heroSlides: [
       {
@@ -1178,6 +1192,9 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Preços atualizados em {date}",
       priceAlertCtaOff: "🔔 Avise-me se o preço cair",
       priceAlertCtaOn: "✓ Avisamos por e-mail se cair",
+      savings: "Poupas {amount} ({pct}%) face à loja mais cara",
+      versionPlayer: "Versão jogador",
+      versionFan: "Versão adepto",
     },
     footer: {
       priceStudy: "Estudo de preços",
@@ -1504,6 +1521,8 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "We compare prices on national team, club, and league jerseys from all over the world. You buy directly wherever you want.",
       cta: "Shop now",
+      h1: "Football shirt and gear price comparison: the final price, shipping included",
+      h1Sub: "We find the same official product across 14 European stores and show what it really costs at each one, with shipping already added. Shirts, boots, gloves, balls, apparel and training equipment. Free, no sign-up.",
     },
     heroSlides: [
       {
@@ -1680,6 +1699,9 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Prices updated on {date}",
       priceAlertCtaOff: "🔔 Notify me if the price drops",
       priceAlertCtaOn: "✓ We'll email you if it drops",
+      savings: "You save {amount} ({pct}%) versus the dearest store",
+      versionPlayer: "Player version",
+      versionFan: "Fan version",
     },
     footer: {
       priceStudy: "Price study",
@@ -2006,6 +2028,8 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Nous comparons les prix des maillots de sélections, de clubs et de championnats du monde entier. Vous achetez directement où vous voulez.",
       cta: "Acheter maintenant",
+      h1: "Comparateur de maillots et d'équipement de football : le prix final, livraison comprise",
+      h1Sub: "Nous cherchons le même produit officiel dans 14 boutiques européennes et montrons ce qu'il coûte vraiment dans chacune, livraison déjà incluse. Maillots, chaussures, gants, ballons, vêtements et matériel d'entraînement. Gratuit, sans inscription.",
     },
     heroSlides: [
       {
@@ -2182,6 +2206,9 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Prix mis à jour le {date}",
       priceAlertCtaOff: "🔔 Prévenez-moi si le prix baisse",
       priceAlertCtaOn: "✓ On vous préviendra par mail",
+      savings: "Vous économisez {amount} ({pct}%) face à la boutique la plus chère",
+      versionPlayer: "Version joueur",
+      versionFan: "Version supporter",
     },
     footer: {
       priceStudy: "Étude des prix",
@@ -2508,6 +2535,8 @@ export const translations: Record<Locale, Translations> = {
       subtitle:
         "Confrontiamo i prezzi delle maglie di nazionali, club e campionati di tutto il mondo. Acquisti direttamente dove vuoi.",
       cta: "Acquista ora",
+      h1: "Comparatore di maglie e materiale da calcio: il prezzo finale, spedizione inclusa",
+      h1Sub: "Cerchiamo lo stesso prodotto ufficiale in 14 negozi europei e mostriamo quanto costa davvero in ciascuno, spedizione già inclusa. Maglie, scarpini, guanti, palloni, abbigliamento e materiale da allenamento. Gratis e senza registrarsi.",
     },
     heroSlides: [
       {
@@ -2684,6 +2713,9 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Prezzi aggiornati il {date}",
       priceAlertCtaOff: "🔔 Avvisami se il prezzo scende",
       priceAlertCtaOn: "✓ Ti avviseremo via email",
+      savings: "Risparmi {amount} ({pct}%) rispetto al negozio più caro",
+      versionPlayer: "Versione giocatore",
+      versionFan: "Versione tifoso",
     },
     footer: {
       priceStudy: "Studio sui prezzi",

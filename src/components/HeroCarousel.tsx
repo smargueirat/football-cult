@@ -207,9 +207,14 @@ export default function HeroCarousel() {
             <span className="font-tagline text-[11px] uppercase text-[#E7C567] sm:text-sm">
               {slide.eyebrow}
             </span>
-            <h1 className="font-vintage text-2xl leading-tight text-[#F3E9C9] sm:text-5xl lg:text-6xl">
+            {/* El título de cada diapositiva pasó a <p>: el <h1> ahora es
+                fijo y está debajo del carrusel. Rotaba con la diapositiva,
+                así que ni el visitante ni Google sabían de qué va el sitio
+                -- "Los colores que elegiste de chico" es lindo pero no dice
+                que esto compara precios (auditoría 2026-09-24). */}
+            <p className="font-vintage text-2xl leading-tight text-[#F3E9C9] sm:text-5xl lg:text-6xl">
               {slide.title}
-            </h1>
+            </p>
             <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:max-w-lg sm:text-base">
               {slide.subtitle}
             </p>

@@ -38,16 +38,50 @@ function productJsonLd(product: Product, locale: string) {
     image: image ? [image] : undefined,
     url: `${SITE_URL}/${locale}/camiseta/${product.id}`,
     ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
-    offers: product.offers.map((o) => ({
-      "@type": "Offer",
-      url: o.url,
-      price: o.price,
-      priceCurrency: o.currency,
-      availability: o.inStock
-        ? "https://schema.org/InStock"
-        : "https://schema.org/OutOfStock",
-      seller: { "@type": "Organization", name: o.store },
-    })),
+    offers: aggregateOffer(product.offers),
+  };
+}
+
+// AggregateOffer envolviendo las ofertas individuales, no en lugar de
+// ellas: es el marcado que Google pide para una página que compara varias
+// tiendas, y es lo que habilita el resultado enriquecido con rango de
+// precios ("desde 39,99 EUR"). Se sigue listando cada Offer real con su
+// tienda y su disponibilidad -- nunca un precio único inventado, que era
+// el motivo por el que esto no se había puesto antes.
+//
+// lowPrice/highPrice se calculan SOLO sobre la moneda mayoritaria: mezclar
+// EUR con USD en un mismo rango daría un número sin sentido, y priceCurrency
+// admite una sola moneda.
+function aggregateOffer(offers: Product["offers"]) {
+  const byCurrency = new Map<string, Product["offers"]>();
+  for (const o of offers) {
+    const list = byCurrency.get(o.currency) ?? [];
+    list.push(o);
+    byCurrency.set(o.currency, list);
+  }
+  const [currency, main] = [...byCurrency.entries()].sort(
+    (a, b) => b[1].length - a[1].length,
+  )[0];
+
+  const individual = offers.map((o) => ({
+    "@type": "Offer",
+    url: o.url,
+    price: o.price,
+    priceCurrency: o.currency,
+    availability: o.inStock
+      ? "https://schema.org/InStock"
+      : "https://schema.org/OutOfStock",
+    seller: { "@type": "Organization", name: o.store },
+  }));
+
+  const totals = main.map((o) => o.price);
+  return {
+    "@type": "AggregateOffer",
+    priceCurrency: currency,
+    lowPrice: Math.min(...totals),
+    highPrice: Math.max(...totals),
+    offerCount: offers.length,
+    offers: individual,
   };
 }
 

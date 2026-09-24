@@ -26,7 +26,7 @@ export default function CompareOfferRow({
       onClick={() =>
         trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
       }
-      rel="noopener noreferrer sponsored"
+      rel="noopener noreferrer nofollow sponsored"
       className={`flex flex-col gap-1.5 rounded-xl border p-3 transition-colors ${
         isBest
           ? "border-[#1B3B2B]/40 bg-[#1B3B2B]/[0.06]"

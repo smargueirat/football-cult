@@ -19,6 +19,7 @@ import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney"
 import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
+import { offerVersion, splitByVersion } from "@/lib/jerseyVersion";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -172,8 +173,36 @@ export default function JerseyDetailClient({
   const shippableCount = product.offers.filter(
     (o) => o.inStock && shipsHere(o)
   ).length;
-  const bestOffer = sortedOffers.find((o) => o.inStock && shipsHere(o));
+  // La versión de jugador y la de hincha son prendas distintas (las
+  // marcas las separan 50-70 EUR), así que el "mejor precio" y el ahorro
+  // se calculan SOLO dentro de una de las dos. Se toma la que tiene más
+  // tiendas; a igualdad, la de hincha, que es la que busca la mayoría.
+  const versions = splitByVersion(sortedOffers as { store: string; title?: string }[]);
+  const mainVersion: "player" | "fan" =
+    versions.player.length > versions.fan.length ? "player" : "fan";
+  const inMainVersion = (o: Offer) => offerVersion(o) === mainVersion;
+
+  const comparable = sortedOffers.filter(
+    (o) => o.inStock && shipsHere(o) && inMainVersion(o)
+  );
+  const bestOffer = comparable[0];
   const bestStore = bestOffer?.store;
+  // Ahorro real frente a la oferta más cara de la MISMA versión: es el
+  // número que justifica que el usuario esté acá y no comprando directo
+  // en la primera tienda que encontró. Solo se muestra si hay 2+ tiendas
+  // de verdad con las que comparar.
+  const dearest = comparable.length > 1 ? comparable[comparable.length - 1] : undefined;
+  const savings =
+    bestOffer && dearest
+      ? {
+          abs: offerTotalInEUR(dearest) - offerTotalInEUR(bestOffer),
+          pct: Math.round(
+            ((offerTotalInEUR(dearest) - offerTotalInEUR(bestOffer)) /
+              offerTotalInEUR(dearest)) *
+              100
+          ),
+        }
+      : undefined;
   // Fecha real del último snapshot de precio (track_price_drops.py corre
   // a diario, ver PriceHistorySparkline más abajo) -- nunca un texto tipo
   // "actualizado a diario" inventado, solo se muestra si hay un dato real
@@ -329,6 +358,13 @@ export default function JerseyDetailClient({
             >
               {t.detail.authenticityGuideLink}
             </Link>
+            {savings && savings.abs >= 1 && (
+              <p className="mt-2 inline-flex rounded-lg bg-[#1B3B2B]/10 px-3 py-1.5 text-sm font-medium text-[#1B3B2B]">
+                {t.detail.savings
+                  .replace("{amount}", formatOfferMoney(savings.abs, "EUR"))
+                  .replace("{pct}", String(savings.pct))}
+              </p>
+            )}
             {lastUpdatedDate && (
               <p className="text-xs text-[#9a9a94]">
                 {t.detail.pricesUpdatedOn.replace(
@@ -512,6 +548,23 @@ export default function JerseyDetailClient({
                             <div>
                               <div className="flex flex-wrap items-center gap-2">
                                 <p className="font-card-title text-base tracking-wide text-[#1B3B2B]">{offer.store}</p>
+                                {/* La versión se muestra SIEMPRE que la ficha
+                                    tenga las dos: si no se ve, el usuario cree
+                                    que la de jugador a 150 EUR y la de hincha a
+                                    90 EUR son la misma prenda. */}
+                                {versions.mixed && (
+                                  <span
+                                    className={`rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+                                      offerVersion(offer) === "player"
+                                        ? "bg-[#1B3B2B] text-[#F3E9C9]"
+                                        : "border border-[#C9A24B]/50 bg-white text-[#675c44]"
+                                    }`}
+                                  >
+                                    {offerVersion(offer) === "player"
+                                      ? t.detail.versionPlayer
+                                      : t.detail.versionFan}
+                                  </span>
+                                )}
                                 <button
                                   onClick={() => toggleCompare(product.id, offer.store)}
                                   disabled={!isComparing(product.id, offer.store) && maxReached}
@@ -623,7 +676,7 @@ export default function JerseyDetailClient({
                                   currency: offer.currency,
                                 })
                               }
-                              rel="noopener noreferrer sponsored"
+                              rel="noopener noreferrer nofollow sponsored"
                               className="group/btn flex items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#1B3B2B] px-3.5 py-2 text-sm font-medium leading-none text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
                             >
                               {t.detail.viewInStore}

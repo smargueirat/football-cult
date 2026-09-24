@@ -66,6 +66,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             cargada -- reemplaza la placa chica de siempre. */}
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-3 sm:px-8 sm:pt-6">
           <HeroCarousel />
+          {/* H1 fijo con la propuesta de valor. Antes el H1 era el título
+              del carrusel y rotaba con él, así que ni el visitante ni
+              Google llegaban a saber qué hace el sitio: el copy de las
+              diapositivas es emotivo ("Los colores que elegiste de chico")
+              y nunca dice que esto compara precios. El copy emotivo se
+              queda arriba, en las diapositivas; la explicación va acá
+              (auditoría 2026-09-24). */}
+          <h1 className="font-vintage mt-5 text-xl leading-snug text-[#1B3B2B] sm:text-3xl">
+            {t.hero.h1}
+          </h1>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-[#5b5442] sm:text-base">
+            {t.hero.h1Sub}
+          </p>
         </section>
 
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-4 sm:px-8">
