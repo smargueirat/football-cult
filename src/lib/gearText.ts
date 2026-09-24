@@ -334,6 +334,37 @@ function norm(s: string): string {
     .trim();
 }
 
+// Del más largo al más corto: quedarse con el primero que encaje hace que
+// "de mujer" pierda contra "mujer" y el resto ya no sea un término
+// conocido ("pantalon corto de"). Costó 2 puntos de cobertura al
+// escribirlo al revés.
+const SUFFIX_KEYS = Object.keys(SUFFIXES).sort((a, b) => b.length - a.length);
+
+/** Pela modificadores del final hasta dar con un término conocido:
+ *  "chaleco reversible de malla" = "chaleco" + "reversible" + "de malla".
+ *  Pelar uno solo dejaba sin traducir todo lo que lleva dos (visto en la
+ *  primera versión publicada). Tope de 3 para no quedarse dando vueltas. */
+function composed(key: string, locale: HubLocale): string | undefined {
+  const found: string[] = [];
+  let rest = key;
+  for (let depth = 0; depth < 3; depth += 1) {
+    const suffix = SUFFIX_KEYS.find((s) => rest.endsWith(` ${s}`));
+    if (!suffix) return undefined;
+    found.unshift(SUFFIXES[suffix][locale]);
+    rest = rest.slice(0, -suffix.length - 1);
+    const base = TERMS[rest]?.[locale];
+    if (!base) continue;
+    // En inglés los modificadores van delante ("Women's shorts"), en el
+    // resto detrás ("Pantalón corto de mujer").
+    if (locale !== "en") return `${base} ${found.join(" ")}`;
+    const mods = found.map((m, i) =>
+      i === 0 ? `${m.charAt(0).toUpperCase()}${m.slice(1)}` : `${m.charAt(0).toLowerCase()}${m.slice(1)}`,
+    );
+    return `${mods.join(" ")} ${base.charAt(0).toLowerCase()}${base.slice(1)}`;
+  }
+  return undefined;
+}
+
 export function localizeGearColour(colour: string, locale: HubLocale): string {
   return COLOURS[norm(colour)]?.[locale] ?? colour;
 }
@@ -367,22 +398,7 @@ export function localizeGearModel(
   const head = words.slice(0, prefixWords).join(" ");
   const after = words.slice(prefixWords).join(" ");
   const key = norm(head);
-  let out = TERMS[key]?.[locale];
-  if (!out) {
-    for (const [suf, tr] of Object.entries(SUFFIXES)) {
-      if (!key.endsWith(` ${suf}`)) continue;
-      const base = TERMS[key.slice(0, -suf.length - 1)]?.[locale];
-      if (base) {
-        // En inglés el modificador va delante ("Women's shorts"), en el
-        // resto detrás ("Pantalón corto de mujer").
-        out =
-          locale === "en"
-            ? `${tr.en.charAt(0).toUpperCase()}${tr.en.slice(1)} ${base.charAt(0).toLowerCase()}${base.slice(1)}`
-            : `${base} ${tr[locale]}`;
-        break;
-      }
-    }
-  }
+  const out = TERMS[key]?.[locale] ?? composed(key, locale);
   if (!out) return rest + tail;
   return `${out}${after ? ` ${after}` : ""}${tail}`;
 }

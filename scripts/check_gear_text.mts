@@ -35,3 +35,19 @@ for (const [model, brand, locale, want] of cases) {
 assert.strictEqual(C("Argenté", "pt"), "Prateado");
 assert.strictEqual(C("Fucsia inventado", "en"), "Fucsia inventado");
 console.log(`OK: ${cases.length + 2} casos`);
+
+// Dos modificadores encadenados: "chaleco" + "reversible" + "de malla".
+// Pelando uno solo esto quedaba sin traducir.
+assert.strictEqual(
+  L("Chaleco reversible de malla Precision - Rose", "Precision", "es"),
+  "Chaleco reversible de malla Precision - Rosa",
+);
+assert.strictEqual(
+  L("Chaleco reversible de malla Precision - Rose", "Precision", "it"),
+  "Gilet reversibile in rete Precision - Rosa",
+);
+assert.strictEqual(
+  L("Chaleco reversible de malla Precision - Rose", "Precision", "en"),
+  "Reversible mesh gilet Precision - Pink",
+);
+console.log("OK: encadenado de modificadores");

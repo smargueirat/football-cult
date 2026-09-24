@@ -53,33 +53,38 @@ function comparable<T extends { offers: unknown[] }>(items: T[]): T[] {
   return items.filter((i) => i.offers.length >= 2);
 }
 
+// El orden se fija con las etiquetas en castellano y se reusa en los 5
+// idiomas. Ordenar por la etiqueta ya traducida parece más prolijo, pero
+// deja /es/indice/x/3 y /it/indice/x/3 con productos distintos mientras el
+// hreflang los declara traducción uno del otro (visto en vivo el 24/09).
+function ordered<T>(items: T[], sortKey: (i: T) => string): T[] {
+  return [...items].sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+}
+
 function gearEntries(
   items: { id: string; brand: string; model: string }[],
   basePath: string,
   locale: HubLocale,
 ): IndexEntry[] {
-  return comparable(items as unknown as { offers: unknown[] }[])
-    .map((raw) => {
-      const item = raw as unknown as { id: string; brand: string; model: string };
-      return {
-        href: `/${basePath}/${item.id}`,
-        label: localizeGearModel(item.model, item.brand, locale),
-      };
-    })
-    .sort((a, b) => a.label.localeCompare(b.label));
+  const list = comparable(items as unknown as { offers: unknown[] }[]).map(
+    (raw) => raw as unknown as { id: string; brand: string; model: string },
+  );
+  return ordered(list, (i) => localizeGearModel(i.model, i.brand, "es")).map((item) => ({
+    href: `/${basePath}/${item.id}`,
+    label: localizeGearModel(item.model, item.brand, locale),
+  }));
 }
 
 export function indexEntries(section: IndexSection, locale: HubLocale): IndexEntry[] {
   switch (section) {
     case "camisetas":
-      return comparable(products)
-        .map((p) => ({
-          href: `/camiseta/${p.id}`,
-          label: `${teamName(p.teamKey, locale)} ${
-            typeName(p.typeKey, locale)
-          } ${p.season}`,
-        }))
-        .sort((a, b) => a.label.localeCompare(b.label));
+      return ordered(
+        comparable(products),
+        (p) => `${teamName(p.teamKey, "es")} ${typeName(p.typeKey, "es")} ${p.season}`,
+      ).map((p) => ({
+        href: `/camiseta/${p.id}`,
+        label: `${teamName(p.teamKey, locale)} ${typeName(p.typeKey, locale)} ${p.season}`,
+      }));
     case "botas":
       return gearEntries(bootProducts, "botas", locale);
     case "ropa":
