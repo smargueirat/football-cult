@@ -39,3 +39,15 @@ assert.strictEqual(g.fan.length, 1);
 assert.strictEqual(g.mixed, true);
 
 console.log("OK: detector de version jugador/hincha");
+
+// Manga larga vs corta: el segundo atributo que colisionaba igual.
+import { offerSleeve, variantKey } from "../src/lib/jerseyVersion";
+assert.strictEqual(offerSleeve({ title: "Camiseta manga larga Barcelona" }), "long");
+assert.strictEqual(offerSleeve({ title: "Maillot manches longues FC Barcelone" }), "long");
+assert.strictEqual(offerSleeve({ title: "Maglia maniche lunghe Inter" }), "long");
+assert.strictEqual(offerSleeve({ title: "Camiseta segunda equipacion FC Barcelone" }), "short");
+// " LS " suelto no cuenta: aparece en nombres y codigos
+assert.strictEqual(offerSleeve({ title: "Camiseta LS Lopez 2025" }), "short");
+assert.strictEqual(variantKey({ store: "AdidasES", title: "Italia Authentic manga larga" }), "player|long");
+assert.strictEqual(variantKey({ store: "eBay", title: "Italy 2024 home shirt" }), "fan|short");
+console.log("OK: manga y clave de variante");

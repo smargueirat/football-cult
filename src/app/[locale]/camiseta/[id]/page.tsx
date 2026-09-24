@@ -174,8 +174,19 @@ export default async function JerseyDetailPage({
   // más el país detectado en el navegador) no se puede precalcular acá
   // de la misma forma -- ver el fetch a /api/related-by-size en
   // JerseyDetailClient.tsx.
+  // Se priorizan las que SÍ comparan varias tiendas. En una ficha de una
+  // sola oferta -- el 77% del catálogo son listados sueltos de eBay, que
+  // por naturaleza no se comparan con nada -- este carrusel es el único
+  // puente hacia una página donde el sitio hace lo que promete. Antes
+  // salían en el orden del catálogo, así que podía llevar de una ficha
+  // pobre a otra igual de pobre (auditoría 2026-09-24).
   const sameTeamProducts = products
     .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
+    .sort(
+      (a, b) =>
+        new Set(b.offers.map((o) => o.store)).size -
+        new Set(a.offers.map((o) => o.store)).size,
+    )
     .slice(0, 10);
 
   return (

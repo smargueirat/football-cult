@@ -19,7 +19,7 @@ import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney"
 import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
-import { offerVersion, splitByVersion } from "@/lib/jerseyVersion";
+import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
 import { isComparableStore } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
@@ -27,6 +27,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import DiscoveryCarousel from "./DiscoveryCarousel";
 import HeritageStory from "./HeritageStory";
 import JerseyGallery from "./JerseyGallery";
+import PriceAlertInline from "./PriceAlertInline";
 import PriceHistorySparkline from "./PriceHistorySparkline";
 import ReportProductModal from "./ReportProductModal";
 
@@ -179,9 +180,17 @@ export default function JerseyDetailClient({
   // se calculan SOLO dentro de una de las dos. Se toma la que tiene más
   // tiendas; a igualdad, la de hincha, que es la que busca la mayoría.
   const versions = splitByVersion(sortedOffers as { store: string; title?: string }[]);
-  const mainVersion: "player" | "fan" =
-    versions.player.length > versions.fan.length ? "player" : "fan";
-  const inMainVersion = (o: Offer) => offerVersion(o) === mainVersion;
+  // El grupo principal se elige por la clave de variante completa
+  // (versión + manga): son los que de verdad son la misma prenda.
+  const byVariant = new Map<string, Offer[]>();
+  for (const o of sortedOffers) {
+    const k = variantKey(o);
+    byVariant.set(k, [...(byVariant.get(k) ?? []), o]);
+  }
+  const mainKey = [...byVariant.entries()].sort(
+    (a, b) => new Set(b[1].map((o) => o.store)).size - new Set(a[1].map((o) => o.store)).size,
+  )[0]?.[0];
+  const inMainVersion = (o: Offer) => variantKey(o) === mainKey;
 
   // "Mejor precio" mira TODAS las tiendas que envían acá, marketplaces
   // incluidos: si eBay es lo más barato, eso es lo que el usuario quiere
@@ -396,10 +405,16 @@ export default function JerseyDetailClient({
                 triggerHaptic();
                 toggleFavorite(product.id);
               }}
-              className="self-start text-left text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+              className="hidden"
+              aria-hidden
             >
               {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
             </button>
+            {/* Pedir una alerta ya no obliga a crear cuenta: con sesión
+                sigue siendo el favorito de siempre, sin ella alcanza el
+                mail (auditoría 2026-09-24, era la fricción más cara del
+                sitio para la función que más retiene). */}
+            <PriceAlertInline productId={product.id} />
           </div>
         </div>
 
@@ -498,14 +513,15 @@ export default function JerseyDetailClient({
               <div id={OFFERS_SECTION_ID} className="scroll-mt-24">
                 <p className="font-tagline mb-3 text-sm not-italic text-[#5b5442]">
                   {selectedSize
-                    ? t.detail.storesCompared.replace(
-                        "{n}",
-                        String(
-                          sortedOffers.filter(
-                            (o) => o.inStock && shipsHere(o) && matchesSize(o)
-                          ).length
-                        )
-                      )
+                    ? (() => {
+                        // Con una sola tienda decía "1 tiendas comparadas".
+                        const n = sortedOffers.filter(
+                          (o) => o.inStock && shipsHere(o) && matchesSize(o)
+                        ).length;
+                        return n === 1
+                          ? t.detail.storesComparedOne
+                          : t.detail.storesCompared.replace("{n}", String(n));
+                      })()
                     : t.detail.allSizes}
                 </p>
                 <p className="mb-3 text-xs text-[#5b5442]">{t.detail.currencyNote}</p>
@@ -520,7 +536,7 @@ export default function JerseyDetailClient({
                   {sortedOffers.filter((offer) => offer.inStock).length === 0 && (
                     <p className="text-sm text-[#8a8a84]">{t.detail.allSoldOut}</p>
                   )}
-                  {sortedOffers.filter((offer) => offer.inStock).map((offer) => {
+                  {sortedOffers.filter((offer) => offer.inStock).map((offer, idx) => {
                     const ships = shipsHere(offer);
                     const match = offer.inStock && ships && matchesSize(offer);
                     const isBest = offer.store === bestStore && match;
@@ -683,6 +699,10 @@ export default function JerseyDetailClient({
                               target="_blank"
                               onClick={() =>
                                 trackOfferClick({
+                                  productId: product.id,
+                                  position: idx + 1,
+                                  isBest: isBest,
+                                  version: offerVersion(offer),
                                   store: offer.store,
                                   url: offer.url,
                                   price: displayTotal,

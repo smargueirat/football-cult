@@ -160,6 +160,7 @@ export interface Translations {
     notAvailableInCountry: string;
     allSoldOut: string;
     storesCompared: string;
+    storesComparedOne: string;
     priceHistoryLabel: string;
     basePrice: string;
     shipping: string;
@@ -184,6 +185,11 @@ export interface Translations {
     pricesUpdatedOn: string;
     priceAlertCtaOff: string;
     priceAlertCtaOn: string;
+    priceAlertPrompt: string;
+    priceAlertPlaceholder: string;
+    priceAlertSubmit: string;
+    priceAlertDone: string;
+    priceAlertError: string;
     savings: string;
     versionPlayer: string;
     versionFan: string;
@@ -671,6 +677,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "No disponible para envíos a {country}",
       allSoldOut: "Todas las ofertas de esta camiseta están agotadas por ahora.",
       storesCompared: "{n} tiendas comparadas",
+      storesComparedOne: "1 tienda con esta talla",
       priceHistoryLabel: "Evolución de precio (últimos {n} días)",
       basePrice: "Precio",
       shipping: "Envío",
@@ -695,6 +702,11 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Precios actualizados el {date}",
       priceAlertCtaOff: "🔔 Avisame si baja de precio",
       priceAlertCtaOn: "✓ Te avisamos por mail si baja",
+      priceAlertPrompt: "Dejanos tu mail y te avisamos si baja",
+      priceAlertPlaceholder: "tu@mail.com",
+      priceAlertSubmit: "Avisarme",
+      priceAlertDone: "Listo. Te escribimos si baja de precio.",
+      priceAlertError: "No se pudo guardar. Probá de nuevo.",
       savings: "Ahorrás {amount} ({pct}%) frente a la tienda más cara",
       versionPlayer: "Versión jugador",
       versionFan: "Versión hincha",
@@ -1182,6 +1194,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "Não disponível para envio a {country}",
       allSoldOut: "Todas as ofertas desta camisa estão esgotadas por enquanto.",
       storesCompared: "{n} lojas comparadas",
+      storesComparedOne: "1 loja com este tamanho",
       priceHistoryLabel: "Evolução de preço (últimos {n} dias)",
       basePrice: "Preço",
       shipping: "Frete",
@@ -1206,6 +1219,11 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Preços atualizados em {date}",
       priceAlertCtaOff: "🔔 Avise-me se o preço cair",
       priceAlertCtaOn: "✓ Avisamos por e-mail se cair",
+      priceAlertPrompt: "Deixa o teu e-mail e avisamos se baixar",
+      priceAlertPlaceholder: "o.teu@mail.com",
+      priceAlertSubmit: "Avisar-me",
+      priceAlertDone: "Pronto. Escrevemos-te se baixar de preço.",
+      priceAlertError: "Não foi possível guardar. Tenta de novo.",
       savings: "Poupas {amount} ({pct}%) face à loja mais cara",
       versionPlayer: "Versão jogador",
       versionFan: "Versão adepto",
@@ -1693,6 +1711,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "Not available for shipping to {country}",
       allSoldOut: "All offers for this jersey are sold out for now.",
       storesCompared: "{n} stores compared",
+      storesComparedOne: "1 store with this size",
       priceHistoryLabel: "Price history (last {n} days)",
       basePrice: "Price",
       shipping: "Shipping",
@@ -1717,6 +1736,11 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Prices updated on {date}",
       priceAlertCtaOff: "🔔 Notify me if the price drops",
       priceAlertCtaOn: "✓ We'll email you if it drops",
+      priceAlertPrompt: "Leave your email and we'll tell you if it drops",
+      priceAlertPlaceholder: "you@mail.com",
+      priceAlertSubmit: "Notify me",
+      priceAlertDone: "Done. We'll email you if the price drops.",
+      priceAlertError: "Couldn't save that. Try again.",
       savings: "You save {amount} ({pct}%) versus the dearest store",
       versionPlayer: "Player version",
       versionFan: "Fan version",
@@ -2204,6 +2228,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "Livraison non disponible vers {country}",
       allSoldOut: "Toutes les offres pour ce maillot sont épuisées pour le moment.",
       storesCompared: "{n} boutiques comparées",
+      storesComparedOne: "1 boutique dans cette taille",
       priceHistoryLabel: "Évolution du prix (derniers {n} jours)",
       basePrice: "Prix",
       shipping: "Livraison",
@@ -2228,6 +2253,11 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Prix mis à jour le {date}",
       priceAlertCtaOff: "🔔 Prévenez-moi si le prix baisse",
       priceAlertCtaOn: "✓ On vous préviendra par mail",
+      priceAlertPrompt: "Laissez votre e-mail et on vous prévient si ça baisse",
+      priceAlertPlaceholder: "vous@mail.com",
+      priceAlertSubmit: "Me prévenir",
+      priceAlertDone: "C'est fait. On vous écrit si le prix baisse.",
+      priceAlertError: "Enregistrement impossible. Réessayez.",
       savings: "Vous économisez {amount} ({pct}%) face à la boutique la plus chère",
       versionPlayer: "Version joueur",
       versionFan: "Version supporter",
@@ -2715,6 +2745,7 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInCountry: "Spedizione non disponibile verso {country}",
       allSoldOut: "Tutte le offerte per questa maglia sono esaurite per ora.",
       storesCompared: "{n} negozi confrontati",
+      storesComparedOne: "1 negozio con questa taglia",
       priceHistoryLabel: "Andamento del prezzo (ultimi {n} giorni)",
       basePrice: "Prezzo",
       shipping: "Spedizione",
@@ -2739,6 +2770,11 @@ export const translations: Record<Locale, Translations> = {
       pricesUpdatedOn: "Prezzi aggiornati il {date}",
       priceAlertCtaOff: "🔔 Avvisami se il prezzo scende",
       priceAlertCtaOn: "✓ Ti avviseremo via email",
+      priceAlertPrompt: "Lasciaci la tua email e ti avvisiamo se scende",
+      priceAlertPlaceholder: "tua@mail.com",
+      priceAlertSubmit: "Avvisami",
+      priceAlertDone: "Fatto. Ti scriviamo se il prezzo scende.",
+      priceAlertError: "Non è stato possibile salvare. Riprova.",
       savings: "Risparmi {amount} ({pct}%) rispetto al negozio più caro",
       versionPlayer: "Versione giocatore",
       versionFan: "Versione tifoso",

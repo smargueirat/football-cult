@@ -54,6 +54,31 @@ export function offerVersion(offer: { store: string; title?: string }): JerseyVe
   return "fan";
 }
 
+// MANGA LARGA vs CORTA: el segundo atributo que colisionaba igual que
+// jugador/hincha -- 43 fichas comparables mezclaban las dos (auditoría
+// 2026-09-24). Es otra prenda y cuesta más.
+//
+// No se incluye " LS " suelto a propósito: aparece dentro de nombres y
+// códigos y etiquetaría mal. La lección la dejó "Neymar Jr", que una
+// regla ingenua de "junior" marcaba como camiseta infantil.
+const LONG_SLEEVE =
+  /\b(manga\s*larga|mangas\s*largas|manga\s*comprida|long\s*sleeves?|manches\s*longues|maniche\s*lunghe|langarm)\b/;
+
+export type Sleeve = "long" | "short";
+
+export function offerSleeve(offer: { title?: string }): Sleeve {
+  return LONG_SLEEVE.test(normalize(offer.title ?? "")) ? "long" : "short";
+}
+
+/** Clave de variante: dos ofertas solo son comparables si coinciden en
+ *  TODOS los atributos que hacen que sean la misma prenda. Empezó siendo
+ *  solo la versión; se generalizó al aparecer la manga. Para sumar otro
+ *  (reedición oficial vs vintage, match worn) se agrega acá y lo heredan
+ *  el estudio y la ficha, que ya agrupan por esta clave. */
+export function variantKey(offer: { store: string; title?: string }): string {
+  return `${offerVersion(offer)}|${offerSleeve(offer)}`;
+}
+
 /** Agrupa las ofertas por versión. La de hincha va primero porque es la
  *  que busca la mayoría y la que marca el precio de referencia. */
 export function splitByVersion<T extends { store: string; title?: string }>(

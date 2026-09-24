@@ -1,4 +1,4 @@
-import { splitByVersion } from "@/lib/jerseyVersion";
+import { variantKey } from "@/lib/jerseyVersion";
 import { isComparableStore } from "@/lib/officialStores";
 import { products } from "@/data/products";
 
@@ -87,9 +87,18 @@ export function priceStudy(): PriceStudy {
     // diferencia más grande y estas siempre ganan (auditoría 2026-09-24).
     // Se toma el grupo con más tiendas; a igualdad, el de hincha, que es
     // el que busca la mayoría.
-    const groups = splitByVersion(eligible);
-    const offers =
-      groups.player.length > groups.fan.length ? groups.player : groups.fan;
+    // Se agrupa por la clave de variante completa (versión + manga) y se
+    // compara dentro del grupo más grande. Empezó siendo solo la versión;
+    // la manga larga mezclaba otras 43 fichas por el mismo motivo.
+    const byVariant = new Map<string, typeof eligible>();
+    for (const o of eligible) {
+      const k = variantKey(o);
+      byVariant.set(k, [...(byVariant.get(k) ?? []), o]);
+    }
+    const offers = [...byVariant.values()].sort(
+      (a, b) => new Set(b.map((o) => o.store)).size - new Set(a.map((o) => o.store)).size,
+    )[0];
+    if (!offers) continue;
     const storeNames = new Set(offers.map((o) => o.store));
     if (storeNames.size < 2) continue;
 
