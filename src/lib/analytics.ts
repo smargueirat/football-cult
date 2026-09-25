@@ -1,3 +1,5 @@
+import { commissionRate } from "@/lib/commissionRates";
+
 // Único punto de tracking para clicks en "Ver oferta" (el evento que de
 // verdad importa: sin esto no hay forma de saber, en GA4, qué páginas/
 // tiendas/productos generan clicks reales hacia las tiendas afiliadas --
@@ -20,11 +22,21 @@ export function trackOfferClick(params: {
 }) {
   if (typeof window === "undefined") return;
   const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+  // `value` sigue siendo el PRECIO, como hasta ahora, para no cortar la
+  // serie histórica del evento. La comisión va en sus propios parámetros:
+  // sin esto GA4 sabe cuántos clics salieron pero no cuánto valen, y no se
+  // puede decidir en qué sección insistir. Un clic a una bota deja del
+  // orden de cuatro veces lo que deja uno a una camiseta de eBay, y hoy el
+  // informe los cuenta igual. Es una ESTIMACIÓN: las tarifas de
+  // commissionRates.ts son las típicas de cada red, todavía no las
+  // nuestras confirmadas en Awin.
   gtag?.("event", "click_offer", {
     store: params.store,
     link_url: params.url,
     value: params.price,
     currency: params.currency,
+    commission_rate: commissionRate(params.store),
+    est_commission: Math.round(params.price * commissionRate(params.store) * 100) / 100,
     product_id: params.productId,
     position: params.position,
     is_best: params.isBest,
