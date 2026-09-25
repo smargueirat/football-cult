@@ -146,6 +146,14 @@ export default async function RootLayout({
             HTMLMetaElement
           >)}
         />
+        {/* Bing Webmaster Tools (2026-09-25). Bing no tenía NADA nuestro
+            indexado -- buscar "football-cult.com" devolvía thefootballcult.com,
+            otro sitio -- y de Bing dependen también Yahoo, DuckDuckGo, Ecosia
+            y la búsqueda de ChatGPT. Se verificó por meta tag a propósito, en
+            vez de "importar desde Google Search Console", para no darle a
+            Microsoft acceso OAuth a la cuenta de Google del usuario. No quitar
+            este tag: Bing revalida cada tanto. */}
+        <meta name="msvalidate.01" content="4794153D9E81BF227BB66093F5CB5A80" />
         <meta name="verify-admitad" content="2666c15826" />
         <meta name="fo-verify" content="474f9e3b-cac4-4cea-9223-473788483f72" />
         {/* Ahorra el DNS+TLS de la primera foto en vez de pagarlo recién
