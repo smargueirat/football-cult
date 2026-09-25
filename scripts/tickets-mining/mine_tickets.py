@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Mina entradas reales de partidos de fútbol de los 3 feeds regionales
-de Football TicketNet en Awin (DE/EUR, UK/GBP, US/USD -- aid 109000,
-109002, 109004, aprobados 2026-09-14/antes) -- cache /tmp/feeds/*.csv del
-scan diario, sin descarga propia. Escribe mined_tickets.json, entrada de
+"""Mina entradas reales de partidos de fútbol de los feeds regionales
+de Football TicketNet en Awin (UK/GBP aid 109002, US/USD aid 109004) --
+cache /tmp/feeds/*.csv del scan diario, sin descarga propia. El feed DE
+(aid 109000) ya no se lee: ese programa cerró el 2026-09-01 y sus ofertas
+se quitaron del catálogo. Escribe mined_tickets.json, entrada de
 refresh_tickets.py.
 
 A diferencia de camisetas/botas/guantes/pelotas, acá SÍ tiene sentido
