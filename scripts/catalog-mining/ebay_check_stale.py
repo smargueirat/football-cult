@@ -86,11 +86,13 @@ def main():
     client._ensure_token()
 
     dead_urls = []
+    checked = 0
     for url, item_id in batch:
         result = is_dead(client, item_id)
         if result is None:
             print("Stopping early: quota hit or network trouble.")
             break
+        checked += 1
         if result:
             dead_urls.append(url)
             print(f"  DEAD: {url}")
@@ -107,10 +109,15 @@ def main():
     if dead_urls:
         open(PRODUCTS_TS, "w", encoding="utf-8").write(new_content)
 
-    state["cursor"] = (cursor + len(batch)) % len(offers) if offers else 0
+    # Avanzar solo por lo REALMENTE chequeado, no por el tamanio del lote:
+    # si la cuota se agota en la primera llamada (pasa cuando el cron corre
+    # despues de ebay_mine_cycle.py, visto el 2026-09-25), sumar len(batch)
+    # daba por revisadas 200 ofertas que nadie miro, y no vuelven a tocarse
+    # hasta que el cursor da la vuelta al catalogo entero (~28 dias).
+    state["cursor"] = (cursor + checked) % len(offers) if offers else 0
     save_state(state)
 
-    print(f"Checked {len(batch)} offers, {len(dead_urls)} deactivated.")
+    print(f"Checked {checked} of {len(batch)} offers, {len(dead_urls)} deactivated.")
 
 
 if __name__ == "__main__":

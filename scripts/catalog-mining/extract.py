@@ -470,6 +470,9 @@ EXCLUDE_RE = re.compile(
     r"marvel|avengers|disney|maradona|"
     r"fan\b|aficionado|réplica infantil|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
+    # Un "Minishirt" es una camiseta en miniatura de exhibición, no una
+    # prenda: el \bmini\b de arriba no lo agarra porque es una sola palabra.
+    r"\bminishirts?\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
     # Sleeveless training vests are never match jerseys, and "Spyro" is a
     # generic crestless goalkeeper line whose colourways are named after
@@ -490,6 +493,12 @@ EXCLUDE_RE = re.compile(
     # not an actual garment) found the same pass -- explicit task
     # instruction false-positive class, first real hits caught here.
     r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
+    # Toulouse tiene club de fútbol Y de balonmano, y Sport is Good ES/FR
+    # vende los dos: "Maillot Gardien Fenix Toulouse Handball 2026/27" entró
+    # como producto nuevo `toulouse|goalkeeper` el 2026-09-25. "balonmano" ya
+    # cae de rebote por el "balon" de la línea de accesorios; las grafías
+    # inglesa/francesa/portuguesa/italiana no caían por ningún lado.
+    r"\bhandball\b|\bh?andebol\b|pallamano|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b|"
     # Low-trust eBay dropship template: bare "{Country} Football Soccer
     # Jersey {year} {Home/Away/Third}" with nothing else (no brand, no
@@ -515,6 +524,7 @@ KIDS_EXCLUDE_RE = re.compile(
     r"marvel|avengers|disney|maradona|"
     r"fan\b|aficionado|"
     r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
+    r"\bminishirts?\b|"
     r"\bconcept\b|\bairo\b|\bjelex\b|"
     # Sleeveless training vests are never match jerseys, and "Spyro" is a
     # generic crestless goalkeeper line whose colourways are named after
@@ -526,6 +536,7 @@ KIDS_EXCLUDE_RE = re.compile(
     # false positive needs a text rule here instead.
     r"sin mangas|sleeveless|sans manches|\bspyro\b|"
     r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
+    r"\bhandball\b|\bh?andebol\b|pallamano|"
     r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b",
     re.I,
 )

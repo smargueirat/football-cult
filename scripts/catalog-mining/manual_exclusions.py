@@ -243,6 +243,38 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # Penarol home 2024 -- footyheadlines.com-watermarked press render as the
     # listing photo, same seller/class as the 09-22 drop (2026-09-24).
     "ebay.com/itm/397901284083",
+    # Eslovaquia home+away (Deporte Outlet / sportspar, Macron, EUR19.99):
+    # crest real y foto real, pero el producto no lleva temporada en NINGUN
+    # lado -- ni titulo, ni descripcion del feed, ni la pagina del merchant
+    # (cuyo unico año plausible es 2024). Es stock viejo de outlet sin fecha,
+    # no una camiseta de temporada actual. Descartado a mano el 2026-09-22,
+    # el 09-24 y el 09-25; a la tercera va la entrada. El `pclick.php?p=` no
+    # sirve (cambia por pull), el numero de articulo de sportspar en la URL
+    # de imagen si es estable.
+    "60004581-1_600x600.jpg",
+    "60004584-1_600x600.jpg",
+    # 2026-09-25, los tres candidatos "nuevos" de eBay US de esta pasada,
+    # todos del mismo molde dropship (foto de telefono sobre el piso, USD
+    # 28.98-29.99, titulo plantilla "JERSEY <equipo> <temporada>"):
+    # Schalke 04 GK 26/27 y Paris FC away 26/27 llevan el trefoil de adidas
+    # Originals (linea lifestyle, no de juego) y el Schalke ademas dice
+    # CLIMACOOL en el ruedo, tecnologia retirada anios antes de esa
+    # temporada. El Salvador home 26/27 no tiene escudo de federacion (solo
+    # las letras "ES") ni marca por ningun lado -- misma plantilla generica
+    # que el El Salvador away 2023 ya bloqueado mas arriba.
+    "ebay.com/itm/227531276227",
+    "ebay.com/itm/820163504044",
+    "ebay.com/itm/147430864671",
+    # 2026-09-25, pasada kids de eBay US. Los dos primeros son conjuntos
+    # (camiseta + short), no camisetas, y ninguno lleva el escudo real de su
+    # federacion: El Salvador usa el escudo nacional impreso y una marca
+    # generica; el de Guatemala es marca "Guate". Es la clase de "kit sets"
+    # sin escudo real que el instructivo nombra explicitamente.
+    "ebay.com/itm/152528857600",
+    "ebay.com/itm/147543127669",
+    # Camiseta de Brasil archivada bajo la clave `jordania` porque el titulo
+    # dice "Jordan" (la marca, no el pais) -- misma colision que el 09-24.
+    "ebay.com/itm/298686687863",
 ]
 
 

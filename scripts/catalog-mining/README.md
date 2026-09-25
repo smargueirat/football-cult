@@ -2789,3 +2789,120 @@ ForumSport's `barcelona|prematch` photo is dated 2024 in its own filename.
 `ebay_check_stale.py`: 23 of 200 (11.5%), normal band. DecathlonIE and ProSoccer
 genuine zeros as always. Rakuten FTP needed its usual per-file reconnect
 (LojaPST timed out once and was recovered on retry).
+
+## Daily pass (2026-09-25) -- the three eBay marketplaces share one quota, and the stale-checker was skipping what it never checked
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace. Soicos skipped again --
+no `claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten FTP
+listing (10th pass). **6 new products** (1 CSV-feed, 0 eBay current, 0 kids,
+5 eBay retro -- 6569 -> 6575 blocks); `tsc`/dupe-id/build all clean.
+
+**The three eBay marketplaces are not independent daily batches -- they share
+one app credential, so they share one daily Browse API quota.** EBAY_US ran
+first at batch 60, completed 42 of its 60 teams, and exhausted the day's quota;
+EBAY_IT and EBAY_ES then took 40 consecutive 429s each and advanced **zero**
+teams. A probe ~40 minutes later still 429'd, so this is the hard daily cap,
+not a short burst window. The damage is cumulative and was already visible in
+the state files before this pass: **US was on cycle 4 (162/384) while IT and ES
+were both still on cycle 1** (140 and 143), because US has gone first every
+night since IT/ES were added on 09-22. `daily_scan.sh` now says batch **20**
+for all three and to **rotate which marketplace goes first** (day-of-year mod
+3), so a bad-quota day starves a different one each time instead of the same
+two forever. **When a new marketplace/region of an existing source is added,
+check whether it shares the original's rate limit before treating it as an
+independent daily job.**
+
+**`ebay_check_stale.py` advanced its cursor by the whole batch size even when
+the quota stopped it on the first call.** Today it "checked" 200 offers,
+actually checked 0, and moved the cursor 3700 -> 3900 -- those 200 offers would
+not have been looked at again until the cursor wrapped the entire 5610-offer
+catalog, about 28 days. Now it counts what it actually checked and advances by
+that (`checked`, not `len(batch)`), and prints "Checked N of M". The bad cursor
+move was reverted before committing. **This only surfaced because the miner ran
+first and ate the quota** -- the ordering that made the bug visible is the same
+ordering the fix above changes, so it could easily have stayed hidden.
+
+**`handball` was not excluded anywhere -- only `rugby` was.** Sport is Good
+ES *and* FR both sell Fenix Toulouse *Handball* kit, and "Maillot Gardien Fenix
+Toulouse Handball 2026/27" came through as a brand-new `toulouse|goalkeeper`
+product on both stores. `balonmano` only ever matched by accident (the `balon`
+of the accessories line); the English/French/Portuguese/Italian spellings
+matched nothing. Added `\bhandball\b|\bh?andebol\b|pallamano`. Same root cause
+as the 09-24 `donna`/`wmn`/`mujer` gap and the 09-16 `portiere`/`bambino` one:
+**the sport/gender/age filters were written against Spanish titles and
+under-match the moment another language shows up.** adidas feeds were immune
+only because they have a real `custom_2` sport-category column.
+
+**Shop Real Betis' "Minishirt" got picked as that store's `third` for the
+second pass running.** It is a miniature shirt on a hanger, a display item. The
+existing `\bmini\b` never matched it -- it is one word. Added `\bminishirts?\b`;
+with it out of the way the picker returned the real 25/26 third kit instead, so
+this was costing a genuine offer, not just adding a junk one.
+
+**Slovakia's undated DeporteOutlet pair went to the blocklist on its third
+drop.** `eslovaquia|home`+`|away` (Macron, real SFZ crest, EUR19.99, no season
+anywhere) had been hand-dropped 09-22 and 09-24. The Awin `pclick.php?p=` id
+is not stable, but `is_manually_excluded` is also passed the **image** URL, and
+sportspar's article number lives in that path -- so `60004581-1_600x600.jpg` /
+`60004584-1_600x600.jpg` are what hold it down.
+
+**Photo review, 8 drops.** The three eBay current candidates were all the same
+dropship mould (phone photo on a floor, $28.98-29.99, "JERSEY <team> <season>"
+title): Schalke 04 GK 26/27 and Paris FC away 26/27 both wear the adidas
+**trefoil** (Originals lifestyle, not the performance mark) and the Schalke
+also says **CLIMACOOL** on the hem, a technology retired years before that
+season; El Salvador home 26/27 has no federation crest at all, just the letters
+"ES". Two kids picks were unlicensed **kit sets** (shirt + shorts, no real
+crest): El Salvador home and a "TRAJECITO DE GUATEMALA". Plus three collision
+drops. **But the $28.98 template price is NOT by itself a drop signal** -- 11
+of the 50 eBay ADD offers had that exact title shape and price, and the four
+sampled by photo (Canada away, Albania home, Uzbekistan home, Finland home) all
+showed real Nike/Macron marks and real federation crests. Drop on what the
+photo shows, not on the title template.
+
+`team_collision_scan.py`: 0 flags on every CSV-feed set (NEW, ADD and CONFLICT
+alike), 14 on eBay. 9 were real and dropped -- **5 `jordania` retro picks that
+are all Air Jordan PSG shirts** and 1 kids Brazil shirt under the same key
+(the brand-vs-country collision, 3rd pass running), a `finlandia|home|2020`
+that is actually a Denmark Eriksen shirt, and `india|away|2022`/`india|third|
+2022/23` which are Kerala Blasters and NorthEast United, Indian *clubs*, not
+the national team. The other 5 were the documented filler-name keepers
+(Burnley/England, Parma/ITALY x4).
+
+**Crystal Palace 26/27 home+away were left unapplied on purpose.** Both are
+unambiguously real (Macron, real crest, the new **Temporal** sponsor that
+replaced NET88, so genuinely not old stock) and both showed up in two stores --
+but one is white with a red/blue sash and the other is black, and Palace's home
+kit is red-and-blue stripes, which is what the 25/26 home on file looks like.
+The only slot evidence is the merchant's own "Domicile"/"Extérieur" label, and
+both merchant pages just echo the feed title back. Filing a white sash shirt as
+`crystalpalace-home-202627` is a guess, so they stay skipped per the standing
+"skip rather than guess" rule -- flagged for the user to settle the slot once.
+
+The one CSV-feed find was **Udinese home 26/27** (Macron `400125330001`, in
+FootStoreFR and SportIsGoodFR), confirmed against the 25/26 on file as a
+genuinely different design. It arrived as a season_conflict, not as a new
+product. Its second offer had to be inserted by hand: `refresh.py` correctly
+refused it as ambiguous once both `udinese-home-202526` and `-202627` existed
+and neither carried SportIsGoodFR yet.
+
+**Rakuten's FTP truncates every file and rejects range resume** (`550 ...
+InvalidRange`, status 416), so `curl` and `ftplib` alike end with "transfer
+closed with N bytes remaining". The data is fine anyway: every one of the five
+decompressed with its `TRL|` line present and a record count matching the rows
+exactly. **Check the TRL count before treating a short Rakuten transfer as a
+failed one** -- the server under-delivers gzip padding, not records.
+
+Heritage scan: 4 real hits kept out of the ADD sets (`chile|home` "93/94" on
+AdidasES, `liverpool|away` "95" on BSTN IT *and* UK, `manutd|away` "90/92" on
+BSTN UK). The DeporteOutlet hits that scan also prints (`...-01`, `-02`, `-03`)
+are style codes, not years -- that regex cannot tell them apart, so read the
+titles rather than excluding the whole list. Retro: 251 raw, 8 collision +
+8 `\bretro\b` reproductions + 6 price outliers dropped, 224 merged into
+existing products (179 of those already on file with the same URL, 43 price
+refreshes, 2 genuinely new offers), 5 new products. `honduras|third|2024` was
+re-keyed to `2024/25`, which is what its own title says (the 09-19 single-year
+rule). Store and currency censuses clean. DecathlonIE and ProSoccer genuine
+zeros as always. All venue lookups this pass were Wikidata misses, so
+`venue_cities.json` is unchanged.
