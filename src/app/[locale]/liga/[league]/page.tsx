@@ -60,7 +60,7 @@ export default async function LeagueHub({ params }: P) {
             { name: s.home, path: "" },
             { name: countryName, path: `/pais/${d.league.country}` },
             { name },
-          ]),
+          ], `/liga/${slug}`),
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",

@@ -42,7 +42,7 @@ export default async function SeasonHub({ params }: P) {
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
       <JsonLd
         data={[
-          breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: h1 }]),
+          breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: h1 }], `/temporada/${slug}`),
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",

@@ -73,7 +73,7 @@ export default async function TeamHub({ params }: P) {
             { name: s.home, path: "" },
             ...(league && countryKey ? [{ name: teamName(countryKey, locale), path: `/pais/${countryKey}` }, { name: leagueName(league, locale), path: `/liga/${league.slug}` }] : []),
             { name },
-          ]),
+          ], `/equipo/${team}`),
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",

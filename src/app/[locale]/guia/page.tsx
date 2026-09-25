@@ -21,7 +21,7 @@ export default async function GuidesIndex({ params }: P) {
   const ui = GUIDE_UI[locale];
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-6 sm:px-8">
-      <JsonLd data={breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.index }])} />
+      <JsonLd data={breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.index }], "/guia")} />
       <Crumbs locale={locale} trail={[{ label: ui.index }]} />
       <HubHeader h1={ui.index} intro={ui.indexIntro} />
       <ul className="grid gap-4 sm:grid-cols-2">

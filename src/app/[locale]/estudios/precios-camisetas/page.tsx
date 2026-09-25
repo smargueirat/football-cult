@@ -62,7 +62,7 @@ export default async function PriceStudyPage({ params }: P) {
     <div className="mx-auto w-full max-w-4xl px-4 py-6 sm:px-8">
       <JsonLd
         data={[
-          breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: c.title }]),
+          breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: c.title }], PATH),
           {
             "@context": "https://schema.org",
             "@type": "Article",

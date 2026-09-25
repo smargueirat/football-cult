@@ -67,9 +67,12 @@ export default async function CatalogIndexPage({ params }: P) {
       <JsonLd
         data={breadcrumbLd(locale, [
           { name: HUB[locale].home, path: "" },
-          { name: ui.index },
+          // El nivel "Índice del catálogo" no tiene página propia, así
+          // que apunta a la página 1 de esta misma sección: es un padre
+          // real de la página N, no una URL inventada.
+          { name: ui.index, path: `/indice/${section}/1` },
           { name: ui.section[section] },
-        ])}
+        ], `/indice/${section}/${page}`)}
       />
       <Crumbs locale={locale} trail={[{ label: `${ui.index} · ${ui.section[section]}` }]} />
       <HubHeader

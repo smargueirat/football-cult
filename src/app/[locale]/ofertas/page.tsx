@@ -26,7 +26,7 @@ export default async function Offers({ params }: P) {
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
-      <JsonLd data={breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.offersH1 }])} />
+      <JsonLd data={breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.offersH1 }], "/ofertas")} />
       <Crumbs locale={locale} trail={[{ label: ui.offersH1 }]} />
       <HubHeader h1={ui.offersH1} intro={drops.length ? ui.offersIntro(drops.length) : ui.offersEmpty} />
       {drops.length > 0 && <JerseyGrid items={drops} locale={locale} showTeam badges={badges} />}

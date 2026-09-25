@@ -26,7 +26,7 @@ export default async function LeaguesIndex({ params }: P) {
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
-      <JsonLd data={breadcrumbLd(locale, [{ name: s.home, path: "" }, { name: s.leaguesIndex }])} />
+      <JsonLd data={breadcrumbLd(locale, [{ name: s.home, path: "" }, { name: s.leaguesIndex }], "/ligas")} />
       <Crumbs locale={locale} trail={[{ label: s.leaguesIndex }]} />
       <HubHeader h1={s.leaguesIndex} intro={s.indexIntro} />
       <Section title={s.browseLeagues}>

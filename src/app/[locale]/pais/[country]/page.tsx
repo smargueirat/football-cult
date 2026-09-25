@@ -53,7 +53,7 @@ export default async function CountryHub({ params }: P) {
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
       <JsonLd
         data={[
-          breadcrumbLd(locale, [{ name: s.home, path: "" }, { name: s.leaguesIndex, path: "/ligas" }, { name }]),
+          breadcrumbLd(locale, [{ name: s.home, path: "" }, { name: s.leaguesIndex, path: "/ligas" }, { name }], `/pais/${country}`),
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",

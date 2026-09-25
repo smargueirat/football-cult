@@ -38,7 +38,7 @@ export default async function GuidePage({ params }: P) {
     <div className="mx-auto w-full max-w-3xl px-4 py-6 sm:px-8">
       <JsonLd
         data={[
-          breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.index, path: "/guia" }, { name: g.title }]),
+          breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.index, path: "/guia" }, { name: g.title }], `/guia/${slug}`),
           { "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.description, inLanguage: locale, mainEntityOfPage: `${SITE_URL}/${locale}/guia/${slug}`, publisher: { "@type": "Organization", name: "Football Cult" } },
         ]}
       />

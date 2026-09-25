@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import GearHubLinks from "@/components/hubs/GearHubLinks";
-import { asLocale } from "@/lib/hubPages";
+import { asLocale, breadcrumbLd } from "@/lib/hubPages";
+import { HUB } from "@/lib/hubStrings";
+import { JsonLd } from "@/components/hubs/HubParts";
 import GuantesPageClient from "./GuantesPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
@@ -41,10 +43,27 @@ export async function generateMetadata({
   };
 }
 
+const SECTION_NAME: Record<Locale, string> = {
+  es: META.es.title.split(" —")[0].split(" |")[0],
+  en: META.en.title.split(" —")[0].split(" |")[0],
+  pt: META.pt.title.split(" —")[0].split(" |")[0],
+  fr: META.fr.title.split(" —")[0].split(" |")[0],
+  it: META.it.title.split(" —")[0].split(" |")[0],
+};
+
 export default async function GuantesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   return (
     <>
+      {/* Estas páginas de categoría no tenían breadcrumb: Google no
+          veía la jerarquía inicio -> sección (Search Console, 25/09). */}
+      <JsonLd
+        data={breadcrumbLd(
+          asLocale(locale),
+          [{ name: HUB[asLocale(locale)].home, path: "" }, { name: SECTION_NAME[asLocale(locale)] }],
+          "/guantes",
+        )}
+      />
       <GuantesPageClient />
       <GearHubLinks section="guantes" locale={asLocale(locale)} />
     </>
