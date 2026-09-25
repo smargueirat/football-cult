@@ -520,23 +520,13 @@ export function isVintageRetro(product: Product): boolean {
   return seasonSortValue(product.season) <= 2006;
 }
 
-// Invariante: isPriceDropped/priceDropPercent comparan SIEMPRE
-// previousPrice vs price del MISMO offer, en su moneda nativa, sin
-// envío -- quien llame a esto para pintar el badge junto a un par de
-// precios tachado/actual tiene que usar ese mismo offer para ambos (ver
-// previousOfferTotal en offerMoney.ts, que mantiene el tachado en la
-// misma base de envío/extras que el total actual mostrado).
-export function isPriceDropped(offer: Offer): boolean {
-  return offer.previousPrice != null && offer.previousPrice > offer.price;
-}
-
-// Redondeado a entero -- una baja de precio real casi siempre es de
-// varios puntos porcentuales; mostrar decimales (ej "4.7%") suma ruido
-
-export function priceDropPercent(offer: Offer): number {
-  if (!isPriceDropped(offer) || !offer.previousPrice) return 0;
-  return Math.round(((offer.previousPrice - offer.price) / offer.previousPrice) * 100);
-}
+// Las implementaciones reales viven en src/lib/priceDrops.ts desde que
+// las bajadas dejaron de ser un campo inyectado en products.ts y pasaron
+// a un mapa por URL que cubre las siete secciones (ver el comentario
+// largo de ese archivo). Se re-exportan acá, y products.ts las
+// re-exporta a su vez, para no romper a nadie que ya las importaba --
+// mismo patrón que offerTotalInEUR.
+export { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
 
 export function bestOfferForCountry(
   product: Product,

@@ -25,7 +25,7 @@ interface PriceDropsSectionProps {
 }
 
 // "Mercado de Pases" -- las camisetas cuya mejor oferta bajó de precio
-// desde el snapshot diario anterior (ver track_price_drops.py). Vive
+// desde el snapshot diario anterior (ver src/lib/priceDrops.ts). Vive
 // en la home, fuera de SearchExplorer a propósito: no depende de los
 // filtros/búsqueda que el usuario esté usando en el catálogo, siempre
 // muestra el mismo destacado.

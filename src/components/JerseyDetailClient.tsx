@@ -225,7 +225,7 @@ export default function JerseyDetailClient({
           ),
         }
       : undefined;
-  // Fecha real del último snapshot de precio (track_price_drops.py corre
+  // Fecha real del último snapshot de precio (track_price_drops.mts corre
   // a diario, ver PriceHistorySparkline más abajo) -- nunca un texto tipo
   // "actualizado a diario" inventado, solo se muestra si hay un dato real
   // para esta oferta puntual.

@@ -3,7 +3,8 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
 import { BootProduct } from "@/data/boots";
-import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { formatOfferMoney, bootOfferTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
+import { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
@@ -45,6 +46,8 @@ export default function BootCard({
   const cheapest = boot.offers.reduce((a, b) =>
     bootOfferTotalInEUR(a) <= bootOfferTotalInEUR(b) ? a : b
   );
+  const cheapestTotal = cheapest.price + cheapest.shipping;
+  const dropped = isPriceDropped(cheapest);
   const sizes = [...new Set(boot.offers.flatMap((o) => o.sizes))].sort((a, b) => parseFloat(a) - parseFloat(b));
   const sizeRange = sizes.length > 0 ? (sizes[0] === sizes[sizes.length - 1] ? sizes[0] : `${sizes[0]}–${sizes[sizes.length - 1]}`) : "";
   const photo = cheapest.imageUrl;
@@ -91,12 +94,25 @@ export default function BootCard({
           <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
             {boot.brand}
           </span>
+          {/* Misma pila y mismo sello que ProductCard3D. Hasta ahora una
+              bota no podía mostrar rebaja porque el rastreo nocturno solo
+              escribía bajadas de camisetas (ver src/lib/priceDrops.ts). */}
+          {dropped && (
+            <span className="shadow-vintage-sm rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+              {t.priceDrop.badge.replace("{n}", String(priceDropPercent(cheapest)))}
+            </span>
+          )}
         </span>
 
         <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
+          {dropped && (
+            <span className="text-[9px] leading-none line-through opacity-60 sm:text-[10px]">
+              {formatOfferMoney(previousOfferTotal(cheapest, cheapestTotal), cheapest.currency)}
+            </span>
+          )}
           <span className="text-sm font-semibold">
             {cheapest.priceMax ? `${t.botas.from} ` : ""}
-            {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
+            {formatOfferMoney(cheapestTotal, cheapest.currency)}
           </span>
           {cheapest.shipping > 0 && (
             <span className="text-[9px] font-medium uppercase leading-none opacity-70">

@@ -1,0 +1,16 @@
+# El build solo necesita src/, public/ y la config: nada de acá se importa
+# desde la aplicación (comprobado 2026-09-25: ningún archivo de src/ ni
+# next.config.ts referencia scripts/). Son 26 MB de scripts de minería y
+# de sus cachés de estado que se subían en CADA despliegue, y en Hobby el
+# límite que de verdad ajusta es el almacenamiento de despliegues -- el
+# snapshot diario de precios pasó de 2,7 a 7,2 MB al cubrir las siete
+# secciones, así que esto gana más de lo que cuesta.
+#
+# Ojo: estos archivos SÍ hacen falta en el checkout del Mini PC, que es
+# donde corre el escaneo nocturno (scripts/daily_scan.sh). Esto solo saca
+# archivos del paquete que se sube a Vercel, no del repo.
+scripts/
+
+# Logs y transcripciones que quedan sueltos en la raíz del checkout.
+*.log
+bridge-transcript-*.jsonl

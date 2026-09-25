@@ -16,6 +16,8 @@
 // Los tipos de moneda quedan como uniones estructurales locales (no se
 // importa Offer/BootOffer desde los archivos grandes) para que este
 // archivo no dependa de ellos en ningún sentido.
+import { previousPriceOf } from "@/lib/priceDrops";
+
 export type OfferCurrencyCode = "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
 export type BootCurrencyCode = "EUR" | "USD" | "CLP" | "ARS" | "BRL";
 
@@ -79,10 +81,10 @@ export function offerTotal(offer: { price: number; shipping: number }): number {
 // Invariante: previousOfferTotal y currentTotal siempre comparten la
 // misma base de envío/extras, sea cual sea (estática o en vivo).
 export function previousOfferTotal(
-  offer: { price: number; previousPrice?: number },
+  offer: { url: string; price: number },
   currentTotal: number
 ): number {
-  return (offer.previousPrice ?? offer.price) + (currentTotal - offer.price);
+  return (previousPriceOf(offer) ?? offer.price) + (currentTotal - offer.price);
 }
 
 const BOOT_CURRENCY_TO_EUR: Record<BootCurrencyCode, number> = {

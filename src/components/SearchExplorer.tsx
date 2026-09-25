@@ -1,5 +1,6 @@
 "use client";
 
+import { isPriceDropped } from "@/lib/priceDrops";
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
   AgeGroup,
@@ -423,6 +424,17 @@ export default function SearchExplorer({
         const withinMax = priceRange[1] === PRICE_RANGE_MAX || cheapest <= priceRange[1];
         return cheapest >= priceRange[0] && withinMax;
       })();
+      // El chip "en baja" no hacía NADA en botas: el rastreo nocturno
+      // solo marcaba bajadas de camisetas, así que el filtro ni se
+      // escribió acá. Con priceDrops.ts cubriendo las siete secciones ya
+      // tiene sentido, y se mide sobre la MISMA oferta que la tarjeta
+      // muestra (la más barata), igual que hace el filtro de camisetas
+      // con bestOfferForCountry.
+      const matchesOnSale =
+        !onSaleFilter ||
+        isPriceDropped(
+          b.offers.reduce((x, y) => (bootOfferTotalInEUR(x) <= bootOfferTotalInEUR(y) ? x : y))
+        );
       return (
         matchesQuery &&
         matchesBrand &&
@@ -430,7 +442,8 @@ export default function SearchExplorer({
         matchesColor &&
         matchesTier &&
         matchesGroundType &&
-        matchesPriceRange
+        matchesPriceRange &&
+        matchesOnSale
       );
     });
 
@@ -460,6 +473,7 @@ export default function SearchExplorer({
     bootTierFilter,
     bootGroundTypeFilter,
     priceRange,
+    onSaleFilter,
     sortBy,
   ]);
 
