@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Script from "next/script";
 import { notFound } from "next/navigation";
 import { SessionProvider } from "next-auth/react";
@@ -13,6 +14,7 @@ import { CountryProvider } from "@/lib/country/CountryContext";
 import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
 import { CompareProvider } from "@/lib/compare/CompareContext";
 import CompareBar from "@/components/CompareBar";
+import SearchQueryUrlSync from "@/components/SearchQueryUrlSync";
 import { Locale } from "@/lib/i18n/translations";
 import { LOCALES, OG_LOCALE, buildAlternates, isLocale } from "@/lib/i18n/locales";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -168,6 +170,14 @@ export default async function RootLayout({
             <CountryProvider>
               <FavoritesProvider>
                 <SearchFilterProvider>
+                  {/* El <Suspense> no es decorativo: useSearchParams
+                      renderiza en cliente todo el árbol hasta el
+                      boundary más cercano, y acá abajo está el sitio
+                      entero. Con el boundary pegado, lo que deja de
+                      prerenderizarse es exactamente un null. */}
+                  <Suspense fallback={null}>
+                    <SearchQueryUrlSync />
+                  </Suspense>
                   <CompareProvider>
                     <Header />
                     <main className="flex flex-1 flex-col">{children}</main>

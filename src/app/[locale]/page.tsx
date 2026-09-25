@@ -71,11 +71,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           Bing devolvía thefootballcult.com, otro sitio que compite por la
           misma marca (comprobado 2026-09-25).
 
-          NO se declara un SearchAction (la caja de búsqueda en los
-          resultados de Google) a propósito: haría falta que el buscador
-          respondiera a una URL tipo ?q=..., y hoy el estado de búsqueda
-          es solo de cliente. Declarar un endpoint que no existe es peor
-          que no declarar nada. */}
+          El SearchAction recién se agregó cuando el endpoint existe de
+          verdad: /es?q=... ahora filtra el catálogo (ver
+          SearchQueryUrlSync.tsx). Antes no estaba a propósito, porque
+          declarar un endpoint inexistente es peor que no declarar nada.
+          Lo que gana no es el sitelinks searchbox de Google (esa función
+          la retiró Google, y de todos modos solo aparecía en consultas de
+          marca fuertes, que todavía no tenemos): es que la búsqueda pasó
+          a tener URL propia, así que un resultado se puede compartir,
+          enlazar y volver a él con el botón "atrás". */}
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
@@ -96,6 +100,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               url: `${SITE_URL}/${locale}`,
               inLanguage: locale,
               publisher: { "@type": "Organization", name: t.brand },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: `${SITE_URL}/${locale}?q={search_term_string}`,
+                },
+                "query-input": "required name=search_term_string",
+              },
             },
           ]),
         }}

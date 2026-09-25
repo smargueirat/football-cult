@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 import type { HeroSuggestion } from "@/lib/heroSuggestions";
@@ -16,14 +15,17 @@ import type { HeroSuggestion } from "@/lib/heroSuggestions";
 //
 // Los atajos salen del catálogo (ver heroSuggestions.ts), no escritos a
 // mano: si no, en unas semanas alguno deja de devolver resultados.
+//
+// El input está atado directo a `query` del contexto y ya no a un useState
+// local. El local era un segundo estado que decía lo mismo, y se notaba:
+// al entrar por un link con ?q= (ver SearchQueryUrlSync) el catálogo
+// aparecía filtrado pero esta caja quedaba vacía, sin explicar por qué.
 export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestion[] }) {
   const { t } = useLanguage();
-  const { setQuery } = useSearchFilter();
-  const [value, setValue] = useState("");
+  const { query, setQuery } = useSearchFilter();
 
   function run(q: string) {
     setQuery(q);
-    setValue(q);
     document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -32,7 +34,7 @@ export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestio
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          run(value.trim());
+          run(query.trim());
         }}
         className="flex max-w-2xl flex-wrap gap-2"
         role="search"
@@ -43,8 +45,8 @@ export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestio
         <input
           id="hero-search"
           type="search"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
           placeholder={t.hero.searchPlaceholder}
           className="min-w-0 flex-1 rounded-full border border-[#C9A24B]/50 bg-white/90 px-5 py-3 text-[15px] text-[#1a1a1a] shadow-sm outline-none transition-colors focus:border-[#1B3B2B]"
         />

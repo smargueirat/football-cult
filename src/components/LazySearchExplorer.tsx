@@ -2,6 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import { useSearchFilter } from "@/lib/search/SearchFilterContext";
 
 // Mismo patrón que FloatingFilterButton.tsx: SearchExplorer necesita el
 // catálogo completo del cliente (~1.1MB JS/315KB gzip) para poder buscar
@@ -19,6 +20,12 @@ const SearchExplorer = dynamic(() => import("./SearchExplorer"), {
 
 export default function LazySearchExplorer() {
   const [visible, setVisible] = useState(false);
+  // Si hay algo buscado, el chunk se pide ya, sin esperar el scroll: o el
+  // usuario está tipeando en el buscador del hero (y va a apretar Enter
+  // en un segundo), o entró por un link con ?q= y los resultados son lo
+  // único que vino a ver.
+  const { query } = useSearchFilter();
+  const wanted = query.trim().length > 0;
 
   useEffect(() => {
     if (visible) return;
@@ -30,6 +37,6 @@ export default function LazySearchExplorer() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [visible]);
 
-  if (!visible) return <div className="h-16 w-full animate-pulse rounded-2xl bg-[#f6efdd]" />;
+  if (!visible && !wanted) return <div className="h-16 w-full animate-pulse rounded-2xl bg-[#f6efdd]" />;
   return <SearchExplorer />;
 }
