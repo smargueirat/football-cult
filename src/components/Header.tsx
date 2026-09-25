@@ -36,9 +36,9 @@ export default function Header() {
             <Image
               src="/logo-badge.png"
               alt={t.brand}
-              width={56}
-              height={56}
-              className="h-10 w-10 shrink-0 sm:h-14 sm:w-14"
+              width={160}
+              height={160}
+              className="h-11 w-11 shrink-0 sm:h-16 sm:w-16 lg:h-[72px] lg:w-[72px]"
               priority
               unoptimized
             />
@@ -48,10 +48,10 @@ export default function Header() {
                 achica solo, se sigue estirando por más ancho de lo que
                 el header le puede dar. */}
             <span className="flex min-w-0 flex-col leading-none">
-              <span className="font-vintage truncate text-sm leading-none text-[#1B3B2B] sm:text-xl">
+              <span className="font-vintage truncate text-base leading-none text-[#1B3B2B] sm:text-2xl lg:text-3xl">
                 {t.brand}
               </span>
-              <span className="font-tagline hidden text-[10px] leading-none text-[#B8933F] sm:mt-1 sm:block sm:text-xs">
+              <span className="font-tagline hidden text-[10px] leading-none text-[#B8933F] sm:mt-1.5 sm:block sm:text-xs lg:text-sm">
                 {t.brandTagline}
               </span>
             </span>

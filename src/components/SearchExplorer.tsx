@@ -39,6 +39,7 @@ import {
 import { BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
 import { BOOT_GROUND_TYPE_ORDER, bootMatchesGroundType } from "@/lib/bootGroundType";
 import ScrollArrowRow from "./ScrollArrowRow";
+import SectionIcon from "./SectionIcon";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import {
   CATALOG_PAGE_SIZE,
@@ -696,20 +697,21 @@ export default function SearchExplorer({
       <div className="flex flex-wrap gap-2">
         {(
             [
-              { key: "all" as const, label: t.botas.sectionAll },
-              { key: "jerseys" as const, label: t.botas.sectionJerseys },
-              { key: "boots" as const, label: t.botas.sectionBoots },
+              { key: "all" as const, label: t.botas.sectionAll, icon: "all" as const },
+              { key: "jerseys" as const, label: t.botas.sectionJerseys, icon: "jerseys" as const },
+              { key: "boots" as const, label: t.botas.sectionBoots, icon: "boots" as const },
             ]
           ).map((opt) => (
             <button
               key={opt.key}
               onClick={() => setSectionFilter(opt.key)}
-              className={`rounded-full border px-4 py-1.5 text-xs font-semibold transition-colors ${
+              className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-semibold transition-colors ${
                 effectiveSection === opt.key
                   ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
                   : "border-[#C9A24B]/30 bg-[#FFFDF8] text-[#675c44] hover:border-[#1B3B2B]/40"
               }`}
             >
+              <SectionIcon name={opt.icon} className="h-4 w-4 shrink-0" />
               {opt.label}
             </button>
           ))}
@@ -725,18 +727,19 @@ export default function SearchExplorer({
               y otras naveguen. */}
           {(
             [
-              { href: SECTION_PATHS[6], label: t.guantes.navLabel },
-              { href: SECTION_PATHS[7], label: t.pelotas.navLabel },
-              { href: SECTION_PATHS[9], label: t.ropa.navLabel },
-              { href: SECTION_PATHS[10], label: t.entrenamiento.navLabel },
-              { href: SECTION_PATHS[8], label: t.tickets.navLabel },
+              { href: SECTION_PATHS[6], label: t.guantes.navLabel, icon: "gloves" as const },
+              { href: SECTION_PATHS[7], label: t.pelotas.navLabel, icon: "balls" as const },
+              { href: SECTION_PATHS[9], label: t.ropa.navLabel, icon: "apparel" as const },
+              { href: SECTION_PATHS[10], label: t.entrenamiento.navLabel, icon: "training" as const },
+              { href: SECTION_PATHS[8], label: t.tickets.navLabel, icon: "tickets" as const },
             ]
           ).map((opt) => (
             <Link
               key={opt.href}
               href={opt.href}
-              className="rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-4 py-1.5 text-xs font-semibold text-[#675c44] transition-colors hover:border-[#1B3B2B]/40"
+              className="flex items-center gap-1.5 rounded-full border border-[#C9A24B]/30 bg-[#FFFDF8] px-3.5 py-1.5 text-xs font-semibold text-[#675c44] transition-colors hover:border-[#1B3B2B]/40"
             >
+              <SectionIcon name={opt.icon} className="h-4 w-4 shrink-0" />
               {opt.label}
             </Link>
           ))}

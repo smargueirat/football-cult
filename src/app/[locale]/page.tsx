@@ -86,7 +86,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               jerarquía y, siendo lo primero que se ve, parecía un
               documento de texto. */}
           <div className="mt-6 sm:mt-9">
-            <span className="font-tagline text-[10px] uppercase text-[#B8933F] sm:text-xs">
+            {/* La volanta estaba en 10px dorado claro sobre crema: casi
+                no se leía. Sube de tamaño y baja a un dorado más oscuro,
+                que sobre el fondo claro sí contrasta. */}
+            <span className="font-tagline text-[11px] uppercase text-[#8a6a1f] sm:text-sm">
               {t.hero.h1Eyebrow}
             </span>
 
@@ -105,7 +108,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
             <div className="vintage-divider mt-6 max-w-2xl sm:mt-7" />
 
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#4a4438] sm:text-base">
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#3f3a2f] sm:text-lg">
               {/* El número de tiendas sale del contador real, no escrito
                   a mano: la volanta decía "14 tiendas" (las del estudio de
                   camisetas en euros) mientras la franja de abajo contaba
@@ -117,12 +120,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {t.hero.h1Items.map((item) => (
                 <li
                   key={item}
-                  className="font-card-title rounded-full border border-[#C9A24B]/45 bg-white/60 px-3 py-1 text-[11px] tracking-wide text-[#5b5442] sm:text-xs"
+                  className="font-card-title rounded-full border border-[#C9A24B]/45 bg-white/70 px-3.5 py-1.5 text-xs tracking-wide text-[#4a4438] sm:text-[13px]"
                 >
                   {item}
                 </li>
               ))}
-              <li className="font-card-title rounded-full bg-[#1B3B2B] px-3 py-1 text-[11px] tracking-wide text-[#F3E9C9] sm:text-xs">
+              <li className="font-card-title rounded-full bg-[#1B3B2B] px-3.5 py-1.5 text-xs tracking-wide text-[#F3E9C9] sm:text-[13px]">
                 {t.hero.h1Free}
               </li>
             </ul>
@@ -150,7 +153,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               ].map((line) => (
                 <li
                   key={line}
-                  className="vintage-card flex items-start gap-2.5 rounded-xl px-3.5 py-3 text-[13px] leading-snug text-[#4a4438] sm:text-sm"
+                  className="vintage-card flex items-start gap-2.5 rounded-xl px-4 py-3.5 text-sm leading-snug text-[#3f3a2f] sm:text-[15px]"
                 >
                   <span aria-hidden className="mt-px text-[#B8933F]">
                     ◆
