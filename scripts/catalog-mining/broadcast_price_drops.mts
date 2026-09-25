@@ -103,7 +103,7 @@ function collect(): Candidate[] {
         section,
         title,
         url: `${SITE}/${routeBase}/${id}`,
-        imageUrl: o.imageUrl ?? fallbackImage,
+        imageUrl: telegramPhoto(o.imageUrl ?? fallbackImage),
         store: o.store,
         price: o.price,
         previousPrice: prev,
@@ -130,6 +130,36 @@ function ticketTitle(t: (typeof ticketProducts)[number]): string {
   // `event` ya viene como "Local vs Visitante"; la fecha la agrega el
   // mensaje porque una entrada sin fecha no dice nada.
   return `${t.event} · ${t.date}`;
+}
+
+// La foto que se publica NO es siempre la que guarda el catálogo.
+//
+// Las ofertas de Awin traen la imagen a través de images2.productserve.com,
+// que sirve un thumbnail de 200x200 y 5 KB: en el sitio alcanza (la card
+// es chica y weserv la cachea), pero en Telegram, que la muestra a ancho
+// completo, se ve borrosa. Dentro de esa URL viaja, en el parámetro `url`,
+// la foto original del comercio -- la misma de adidas a 1080x1080 y 54 KB.
+// Se desenvuelve solo para publicar; el sitio sigue usando lo de siempre.
+//
+// El prefijo `ssl:` es la forma que tiene productserve de marcar https.
+function broadcastImage(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  if (!url.includes("productserve.com")) return url;
+  const inner = new URL(url).searchParams.get("url");
+  if (!inner) return url;
+  const full = inner.replace(/^ssl:/, "https://").replace(/^http:/, "https:");
+  return /^https:\/\//.test(full) ? full : url;
+}
+
+// Todo lo que se publica pasa por weserv (el mismo proxy que ya usa el
+// sitio, ver src/lib/images.ts) forzando JPEG a 1280 px. Dos motivos: hay
+// tiendas que sirven .webp (cdn.blazimg.com) y sendPhoto no lo trata como
+// foto normal, y así ninguna imagen se pasa de los límites de Telegram sin
+// tener que comprobar el tamaño de cada una.
+function telegramPhoto(url: string | undefined): string | undefined {
+  const full = broadcastImage(url);
+  if (!full) return undefined;
+  return `https://images.weserv.nl/?url=${encodeURIComponent(full)}&w=1280&output=jpg`;
 }
 
 function money(amount: number, currency: string): string {
@@ -215,6 +245,7 @@ async function main() {
 
   for (const c of picks) {
     console.log(`\n--- ${c.section} · score ${c.score.toFixed(1)} ---\n${caption(c)}`);
+    console.log(`[foto] ${c.imageUrl ?? "sin foto -- se publica como texto"}`);
     if (dryRun) continue;
     await send(token!, chat!, c);
     state[c.key] = new Date().toISOString();
