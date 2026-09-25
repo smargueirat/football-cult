@@ -7,6 +7,7 @@ import PriceDropsSection from "@/components/PriceDropsSection";
 import LeagueShortcuts from "@/components/LeagueShortcuts";
 import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { translations } from "@/lib/i18n/translations";
+import { SITE_URL } from "@/lib/hubPages";
 import { heroSuggestions } from "@/lib/heroSuggestions";
 import { groupThousands, trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
@@ -64,6 +65,41 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
   return (
     <>
+      {/* La home no tenía NINGÚN dato estructurado. Organization es lo que
+          le dice a Google (y a los buscadores de IA) qué entidad es este
+          sitio, y pesa especialmente acá: buscar "football-cult.com" en
+          Bing devolvía thefootballcult.com, otro sitio que compite por la
+          misma marca (comprobado 2026-09-25).
+
+          NO se declara un SearchAction (la caja de búsqueda en los
+          resultados de Google) a propósito: haría falta que el buscador
+          respondiera a una URL tipo ?q=..., y hoy el estado de búsqueda
+          es solo de cliente. Declarar un endpoint que no existe es peor
+          que no declarar nada. */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: t.brand,
+              url: `${SITE_URL}/${locale}`,
+              logo: `${SITE_URL}/logo-badge.png`,
+              description: t.hero.h1Sub.replace("{s}", String(trust.stores)),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: t.brand,
+              url: `${SITE_URL}/${locale}`,
+              inLanguage: locale,
+              publisher: { "@type": "Organization", name: t.brand },
+            },
+          ]),
+        }}
+      />
       <div className="flex flex-1 flex-col">
         {/* Hero: carrusel dinámico que va rotando entre las secciones
             reales del catálogo (selecciones, clubes, retro, mujer,
