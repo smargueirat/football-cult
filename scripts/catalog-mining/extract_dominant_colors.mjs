@@ -280,6 +280,22 @@ async function main() {
   let pairs = extractProductImagePairs(src, null);
   console.error(`products with an image: ${pairs.length}`);
 
+  // Incremental por defecto, igual que el equivalente de botas dentro de
+  // refresh_boots.py. Antes re-bajaba las ~6.500 fotos en cada corrida y
+  // SOBREESCRIBÍA el archivo entero con lo que hubiera salido bien esa vez,
+  // así que una corrida parcial (red caída a mitad) borraba miles de
+  // entradas buenas. Por eso nunca se metió en el scan nocturno y el
+  // archivo quedó congelado desde 2026-08-21: 1.312 de 6.575 productos sin
+  // color real, cayendo al colorHex "de marca" del equipo en el filtro.
+  // `--all` fuerza la re-extracción completa.
+  const existing = fs.existsSync(OUT_PATH)
+    ? JSON.parse(fs.readFileSync(OUT_PATH, "utf8"))
+    : {};
+  if (!sampleSize && !args.includes("--all")) {
+    pairs = pairs.filter((p) => !(p.id in existing));
+    console.error(`ya clasificados: ${Object.keys(existing).length}, nuevos a bajar: ${pairs.length}`);
+  }
+
   if (sampleSize) {
     // Muestra dispersa (no las primeras N, para cubrir variedad de
     // equipos/tipos) tomando 1 de cada K.
@@ -309,7 +325,7 @@ async function main() {
   if (sampleSize) {
     console.log(JSON.stringify(results, null, 2));
   } else {
-    fs.writeFileSync(OUT_PATH, JSON.stringify(out, null, 0));
+    fs.writeFileSync(OUT_PATH, JSON.stringify({ ...existing, ...out }, null, 0));
     console.error(`wrote ${OUT_PATH}`);
   }
 }

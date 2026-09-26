@@ -2906,3 +2906,145 @@ re-keyed to `2024/25`, which is what its own title says (the 09-19 single-year
 rule). Store and currency censuses clean. DecathlonIE and ProSoccer genuine
 zeros as always. All venue lookups this pass were Wikidata misses, so
 `venue_cities.json` is unchanged.
+
+## Daily pass (2026-09-26) -- the eBay quota is already gone by 06:07 UTC, and the jersey colour index had been frozen for five weeks
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation ES, US, IT --
+day-of-year 269 mod 3 = 2). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (11th pass).
+**1 new product** (6575 -> 6576 blocks); `tsc`/dupe-id/duplicate-URL/build all
+clean. Store and currency censuses clean.
+
+**The shared eBay quota is already exhausted when the 06:07 UTC cron fires.**
+Yesterday's rotation fix worked as designed -- ES went first and got its batch
+in ahead of the others -- but ES still only completed **2 of 20 teams** before
+three consecutive teams 429'd, and US and IT then advanced **zero**. This is
+not the rotation failing; it is that there is almost no quota left at that hour.
+Probed the bare Browse API by hand four times between 06:40 and 06:45 UTC: 429
+every time, with no mining running. `ebay_check_stale.py` likewise checked 0 of
+200 (the 09-25 cursor fix held -- cursor stayed at 3700 instead of skipping 200
+offers for a month).
+
+**Stop guessing at this from 429s -- eBay will just tell you.** The Developer
+Analytics API reports the real counter, costs one call, and needs no extra
+credential or scope beyond the `client_credentials` token this pipeline already
+mints:
+
+```bash
+# GET https://api.ebay.com/developer/analytics/v1_beta/rate_limit/
+#   -> Browse / buy.browse: limit=5000 remaining=0 reset=2026-09-27T07:00:00.000Z window=86400s
+```
+
+That single call settled what three days of 429-reading had not. **The limit is
+5000 Browse calls per day and it resets at 07:00 UTC**, and at 07:06 UTC today
+-- minutes into a fresh window, with all mining stopped -- `remaining` was
+already **0**. First hypothesis this run was that the 06:07 UTC cron simply
+lands in the dregs of the previous window, so moving it past 07:00 would fix
+it; polling the API by hand every ~90s from 06:46 through 07:06 UTC
+**disproved that** (429 straight through the boundary), and the counter says the
+new window is exhausted too. Note `buy.browse.item.bulk` sits untouched at
+5000/5000, so the accounting is per-resource and real.
+
+So the quota is not being eaten by this scan: today's mining spent roughly
+**250 of 5000** calls. The other consumer sharing the credential is the live
+site -- `src/app/api/ebay-shipping/route.ts` calls Browse `getItem` per
+(item, buyer country) on real traffic. It does cache (`next: { revalidate: 3600 }`),
+but the key space is ~6.2k eBay offers x every visitor country, so an hourly
+TTL over that many keys can still burn thousands of calls a day. **Not changed
+here** -- it is a production behaviour change on an inference, and the standing
+rule is to hand those to the user. Two cheap options, in order of laziness:
+raise that `revalidate` from 3600 to 86400 (shipping charges are eBay's own
+estimates; the comment above it already says they do not move minute to minute),
+which cuts that route's consumption ~24x for a one-line diff; or ask eBay to
+raise the 5000/day cap. Until one of them happens, **expect the nightly eBay
+batches to keep returning near-zero regardless of batch size or rotation** --
+and re-read the rate_limit endpoint first thing next time rather than inferring
+from 429s.
+
+**`productDominantColors.json` had not been regenerated since 2026-08-21 --
+1312 of 6575 products (20%) had no real colour.** `productColorKey()`
+(`src/lib/colorClassify.ts`) falls back to `classifyColor(colorHex)` for any id
+missing from that file, and `colorHex` is a **team brand** colour shared by
+every one of that team's shirts -- so a fifth of the catalog was being filtered
+by its club's colour rather than by the actual garment. Root cause is why the
+step was never in the nightly scan: `extract_dominant_colors.mjs` re-downloaded
+all ~6.5k photos every run *and* overwrote the output with only that run's
+successes, so one flaky-network run would have destroyed thousands of good
+entries. Fixed by making it incremental and merge-not-overwrite (`--all` forces
+a full re-extract), exactly the pattern `refresh_boots.py`'s equivalent already
+used; 1304 new products extracted, 0 errors, 9 left (no image at all), and it
+is now wired into `daily_scan.sh` with `src/data/productDominantColors.json`
+added to the safety-net allowlist. **When a data file has a generator that
+isn't in the nightly scan, ask why -- here the answer was a real hazard in the
+generator, and the file silently rotted for five weeks.**
+
+**Editing `daily_scan.sh` from inside its own run corrupts that run.** Bash
+reads a script incrementally by byte offset, so the 09-25 session's in-place
+edit shifted everything after the cursor and the log ends in
+`syntax error near unexpected token ')'` -- the whole safety net and the
+teamMeta check never ran that night. Write the new content to a temp file,
+`bash -n` it, and `mv` it into place: rename gives the file a new inode and the
+running shell keeps reading the old one through its open descriptor. Did it
+that way this time.
+
+**Two blocklisted kids listings were still in `products.ts`.** The unlicensed
+El Salvador and Guatemala "kit sets" added to `manual_exclusions.py` on 09-25
+were blocklisted but never actually removed from the catalog -- blocklisting
+only stops *future* mining. Removed both offers (each product had a second
+offer, so no product was orphaned). **Adding to `manual_exclusions.py` is half
+the job; re-run the post-refresh blocklist grep and delete what is already
+on file.**
+
+**A machine-translated eBay ES title said "visitante" over a home shirt.**
+`chequia|away|2022/23` (EUR62.67) is a red Puma shirt with the FACR lion --
+Czechia's home kit; their away is white. Filing it would have created a bogus
+`chequia-retro-202223-away`. Re-keyed to `chequia|home|2022/23`, which already
+exists on file, so it landed as a real offer instead. eBay ES titles are
+auto-translated from English and the home/away word is exactly the kind of
+thing that survives translation while pointing at the wrong garment -- **on
+EBAY_IT/EBAY_ES, treat the slot word in the title as weaker evidence than the
+photo's colour.** First instance of a marketplace-specific false positive for
+IT/ES, which the 09-22 notes had recorded as "none found so far".
+
+**Crystal Palace 26/27 home+away stay unapplied for a second day**, but the
+question is now sharper than 09-25 left it. Both are real (Macron, real eagle
+crest, Temporal sponsor) and appear in FootStoreFR and SportIsGoodFR. The one
+the feed calls **Domicile** is white with a red/blue sash, and Palace's home is
+red-and-blue stripes -- which is what `crystalpalace-home-202526` on file
+actually looks like -- so the feed's label is **provably wrong** for it, and
+that makes the "Extérieur" label on the black one untrustworthy too. Checked
+the raw feed rows directly this time: `product_type`, `color` and the
+description carry no slot information beyond echoing the title. So these are
+almost certainly the away and third kits in some order, and picking which is a
+coin flip. Still skipped per "skip rather than guess" -- **this needs the user
+to name the two slots once** (style codes: white `600153340001`, black
+`600153380001`).
+
+Heritage scan: the same 4 real hits as 09-25, all kept out of the ADD sets
+(`chile|home` "93/94" on AdidasES, `liverpool|away` "95" on BSTN IT *and* UK,
+`manutd|away` "90/92" on BSTN UK). `team_collision_scan.py`: **0 flags on every
+CSV-feed set and on the eBay ES sets** -- note the scan takes an out_dir and
+looks for `current/kids/retro_picks.json` inside it, so pointing it at a
+per-store pick *file* silently reports 0 for everything; call `flag()` directly
+for the CSV stores. Season conflicts were all the documented noise: 5 whose
+exact link and decoded image are already on file (AdidasPT Tiro 25 x2, Inter
+Miami on both BSTNs, ForumSport Alaves), `noruega|home` 2025 (**11th** pass),
+`internacional|home` 25/26 and `realbetis|training` 25/26 as older stock, and
+the ForumSport `barcelona|prematch` 2024-dated photo. The one CSV-feed find was
+**Forward Madison FC away 2025/26** (hummel, real flamingo crest, Dairyland
+sponsor) in the FootStoreFR/SportIsGoodFR mirror pair -- the club had only retro
+products until now. Shop Real Betis returned the real 25/26 third kit this time,
+confirming the 09-25 `\bminishirts?\b` fix recovered a genuine offer.
+DecathlonIE and ProSoccer genuine zeros as always. Rakuten's five files all
+arrived with a `TRL|` count matching their rows exactly.
+
+**Gear ids embed the feed's language, so mirror-store flips churn them daily.**
+Noted, not fixed. `balls.ts` went 777 -> 1258 with 390 ids gone and 871 new in
+one run, and the ids are brand+title+colour slugs built from whichever mirror
+supplied the row that day -- `nike-ballon-de-football-...` (FR) vs
+`nike-balones-de-futbol-...` (ES) are the same real ball. Same class as the
+09-24 products.ts mirror-fusion fix (`d0089ef`), not yet applied to gear. This
+breaks stable URLs/favourites for the gear sections; it is a design change with
+real blast radius, so it is flagged for a deliberate pass rather than done
+unattended at 06:00.
