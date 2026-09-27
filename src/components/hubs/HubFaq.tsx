@@ -17,20 +17,26 @@ export default function HubFaq({
   locale,
   subject,
   facts,
+  variant = "jersey",
 }: {
   locale: HubLocale;
-  /** De qué se habla: el nombre del equipo, de la liga o del país. */
+  /** De qué se habla: el nombre del equipo, la liga, el país o el titular
+   *  del hub de equipamiento ("Botas Nike"). */
   subject: string;
   facts: HubFacts;
+  /** Los hubs de equipamiento usan preguntas sin género y sin temporada:
+   *  un solo juego de textos sirve para botas, guantes, ropa y pelotas. */
+  variant?: "jersey" | "gear";
 }) {
   const s = HUB[locale];
   const money = (eur: number) => formatOfferMoney(eur, "EUR");
 
+  const gear = variant === "gear";
   const qa: { q: string; a: string }[] = [];
   if (facts.cheapest) {
     qa.push({
-      q: s.faqPriceQ(subject),
-      a: s.faqPriceA({
+      q: gear ? s.faqGearPriceQ(subject) : s.faqPriceQ(subject),
+      a: (gear ? s.faqGearPriceA : s.faqPriceA)({
         price: money(facts.cheapest.eur),
         store: facts.cheapest.store,
         n: facts.count,
@@ -38,13 +44,16 @@ export default function HubFaq({
       }),
     });
     qa.push({
-      q: s.faqWhereQ(subject),
-      a: s.faqWhereA({ store: facts.cheapest.store, price: money(facts.cheapest.eur) }),
+      q: gear ? s.faqGearWhereQ(subject) : s.faqWhereQ(subject),
+      a: (gear ? s.faqGearWhereA : s.faqWhereA)({
+        store: facts.cheapest.store,
+        price: money(facts.cheapest.eur),
+      }),
     });
   }
   if (facts.spread) {
     qa.push({
-      q: s.faqSaveQ(subject),
+      q: gear ? s.faqGearSaveQ(subject) : s.faqSaveQ(subject),
       a: s.faqSaveA({
         abs: money(facts.spread.abs),
         pct: facts.spread.pct,

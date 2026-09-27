@@ -4,6 +4,8 @@ import { ballProducts } from "@/data/balls";
 import { apparelProducts } from "@/data/apparel";
 import { trainingProducts } from "@/data/training";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { isComparableStore } from "@/lib/officialStores";
+import type { HubFacts } from "@/lib/hubFaq";
 
 // Datos de los hubs de botas / guantes / pelotas / ropa (marca, terreno,
 // tipo). SOLO servidor -- importa los catálogos enteros (ver el comentario
@@ -26,6 +28,12 @@ export interface GearItem {
   eur: number;
   stores: number;
   storeNames: string[];
+  /** Tienda de la oferta más barata: hace falta para responder "¿qué
+   *  tienda tiene el precio más bajo?" en el bloque de preguntas del hub. */
+  bestStore: string;
+  /** Diferencia real entre la tienda más barata y la más cara de ESTA
+   *  ficha, solo entre minoristas comparables (ver officialStores.ts). */
+  spread?: { abs: number; pct: number; cheapStore: string; dearStore: string };
   ground?: string; // botas
   type?: string; // ropa / entrenamiento
 }
@@ -56,6 +64,24 @@ interface Raw {
 }
 
 const cache: Partial<Record<GearSection, GearItem[]>> = {};
+
+// Igual que en las fichas y en los hubs de camiseta: el ahorro se mide
+// SOLO entre minoristas comparables. Con marketplaces o tiendas de
+// réplicas dentro, el número se dispara comparando cosas distintas (ver
+// el comentario largo de officialStores.ts).
+function spreadOf(offers: Raw["offers"]): GearItem["spread"] {
+  const comp = offers
+    .filter((o) => isComparableStore(o.store))
+    .map((o) => ({ store: o.store, eur: bootOfferTotalInEUR(o) }))
+    .sort((a, b) => a.eur - b.eur);
+  if (comp.length < 2) return undefined;
+  const lo = comp[0];
+  const hi = comp[comp.length - 1];
+  const abs = hi.eur - lo.eur;
+  // Menos de un euro no es una historia que valga la pena contar.
+  if (abs < 1) return undefined;
+  return { abs, pct: Math.round((abs / hi.eur) * 100), cheapStore: lo.store, dearStore: hi.store };
+}
 
 function build(section: GearSection, raws: Raw[]): GearItem[] {
   // La grafía de marca más frecuente gana ("Adidas" 992 vs "adidas" 868).
@@ -89,6 +115,8 @@ function build(section: GearSection, raws: Raw[]): GearItem[] {
       eur: bootOfferTotalInEUR(best),
       stores: r.offers.length,
       storeNames: [...new Set(r.offers.map((o) => o.store))],
+      bestStore: best.store,
+      spread: spreadOf(r.offers),
       ground: r.groundType || undefined,
       type: r.type,
     });
@@ -165,4 +193,26 @@ export function brandGroundCombos(): { brandSlug: string; brand: string; ground:
 
 export function cheapestFirst(items: GearItem[]): GearItem[] {
   return [...items].sort((a, b) => a.eur - b.eur);
+}
+
+
+// Los mismos hechos que hubFaq() calcula para los hubs de camiseta, pero
+// desde GearItem (que es una vista aplanada: ya no tiene las ofertas
+// crudas, por eso bestStore y spread se calculan al construirla).
+export function gearFacts(items: GearItem[]): HubFacts {
+  const stores = new Set<string>();
+  let cheapest: HubFacts["cheapest"];
+  let spread: HubFacts["spread"];
+  for (const it of items) {
+    for (const s of it.storeNames) stores.add(s);
+    if (!cheapest || it.eur < cheapest.eur) {
+      cheapest = { store: it.bestStore, eur: it.eur, productId: it.id };
+    }
+    if (it.spread && (!spread || it.spread.abs > spread.abs)) {
+      spread = { ...it.spread, productId: it.id };
+    }
+  }
+  // Sin temporadas: no aplican al equipamiento, así que esa pregunta no se
+  // dibuja (HubFaq omite las que no tienen dato).
+  return { count: items.length, stores: stores.size, cheapest, spread };
 }

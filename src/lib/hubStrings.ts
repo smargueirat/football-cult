@@ -44,6 +44,15 @@ type S = {
   faqSeasonsA: (o: { oldest: string; newest: string; n: number }) => string;
   faqUpdated: (date: string) => string;
   faqStudyLink: string;
+  // Variante de equipamiento. Redactadas SIN género a propósito: un solo
+  // juego de textos sirve para botas (f.), guantes (m.), ropa (f.) y
+  // pelotas (f.), y el titular del hub va dentro de la pregunta para que
+  // no sean 210 páginas con la misma pregunta idéntica.
+  faqGearPriceQ: (headline: string) => string;
+  faqGearPriceA: (o: { price: string; store: string; n: number; stores: number }) => string;
+  faqGearWhereQ: (headline: string) => string;
+  faqGearWhereA: (o: { store: string; price: string }) => string;
+  faqGearSaveQ: (headline: string) => string;
 };
 
 export const HUB: Record<HubLocale, S> = {
@@ -90,6 +99,13 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsA: ({ oldest, newest, n }) => `De ${oldest} a ${newest}, ${n} camisetas en total.`,
     faqUpdated: (d) => `Precios revisados el ${d}.`,
     faqStudyLink: "Ver el estudio completo de diferencias de precio",
+    faqGearPriceQ: (h) => `${h}: ¿cuál es el precio más bajo?`,
+    faqGearPriceA: ({ price, store, n, stores }) =>
+      `Hoy, ${price} con envío incluido, en ${store}. Es el más bajo de ${n} ${n === 1 ? "producto comparado" : "productos comparados"} entre ${stores} ${stores === 1 ? "tienda" : "tiendas"}.`,
+    faqGearWhereQ: (h) => `${h}: ¿qué tienda tiene el precio más bajo?`,
+    faqGearWhereA: ({ store, price }) =>
+      `${store}, a ${price}. Comparamos el total con envío, no solo el precio de lista, porque es lo que termina pagando.`,
+    faqGearSaveQ: (h) => `${h}: ¿cuánto se ahorra comparando?`,
   },
   en: {
     home: "Home",
@@ -134,6 +150,13 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsA: ({ oldest, newest, n }) => `From ${oldest} to ${newest}, ${n} shirts in total.`,
     faqUpdated: (d) => `Prices checked on ${d}.`,
     faqStudyLink: "See the full price-gap study",
+    faqGearPriceQ: (h) => `${h}: what is the lowest price?`,
+    faqGearPriceA: ({ price, store, n, stores }) =>
+      `Today, ${price} including delivery, at ${store}. That is the lowest of ${n} ${n === 1 ? "product compared" : "products compared"} across ${stores} ${stores === 1 ? "store" : "stores"}.`,
+    faqGearWhereQ: (h) => `${h}: which store has the lowest price?`,
+    faqGearWhereA: ({ store, price }) =>
+      `${store}, at ${price}. We compare the total with delivery, not just the list price, because that is what you actually pay.`,
+    faqGearSaveQ: (h) => `${h}: how much can you save by comparing?`,
   },
   pt: {
     home: "Início",
@@ -178,6 +201,13 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsA: ({ oldest, newest, n }) => `De ${oldest} a ${newest}, ${n} camisas no total.`,
     faqUpdated: (d) => `Preços verificados em ${d}.`,
     faqStudyLink: "Ver o estudo completo de diferenças de preço",
+    faqGearPriceQ: (h) => `${h}: qual é o preço mais baixo?`,
+    faqGearPriceA: ({ price, store, n, stores }) =>
+      `Hoje, ${price} com envio incluído, na ${store}. É o mais baixo entre ${n} ${n === 1 ? "produto comparado" : "produtos comparados"} em ${stores} ${stores === 1 ? "loja" : "lojas"}.`,
+    faqGearWhereQ: (h) => `${h}: qual loja tem o preço mais baixo?`,
+    faqGearWhereA: ({ store, price }) =>
+      `${store}, por ${price}. Comparamos o total com envio, não apenas o preço de tabela, porque é o que você paga no fim.`,
+    faqGearSaveQ: (h) => `${h}: quanto dá para economizar comparando?`,
   },
   fr: {
     home: "Accueil",
@@ -222,6 +252,13 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsA: ({ oldest, newest, n }) => `De ${oldest} à ${newest}, ${n} maillots au total.`,
     faqUpdated: (d) => `Prix vérifiés le ${d}.`,
     faqStudyLink: "Voir l'étude complète des écarts de prix",
+    faqGearPriceQ: (h) => `${h} : quel est le prix le plus bas ?`,
+    faqGearPriceA: ({ price, store, n, stores }) =>
+      `Aujourd'hui, ${price} livraison comprise, chez ${store}. C'est le plus bas sur ${n} ${n === 1 ? "produit comparé" : "produits comparés"} dans ${stores} ${stores === 1 ? "boutique" : "boutiques"}.`,
+    faqGearWhereQ: (h) => `${h} : quelle boutique a le prix le plus bas ?`,
+    faqGearWhereA: ({ store, price }) =>
+      `${store}, à ${price}. Nous comparons le total livraison comprise, pas seulement le prix affiché, car c'est ce que vous payez vraiment.`,
+    faqGearSaveQ: (h) => `${h} : combien peut-on économiser en comparant ?`,
   },
   it: {
     home: "Home",
@@ -266,5 +303,12 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsA: ({ oldest, newest, n }) => `Dal ${oldest} al ${newest}, ${n} maglie in totale.`,
     faqUpdated: (d) => `Prezzi verificati il ${d}.`,
     faqStudyLink: "Vedi lo studio completo sulle differenze di prezzo",
+    faqGearPriceQ: (h) => `${h}: qual è il prezzo più basso?`,
+    faqGearPriceA: ({ price, store, n, stores }) =>
+      `Oggi, ${price} con spedizione inclusa, su ${store}. È il più basso fra ${n} ${n === 1 ? "prodotto confrontato" : "prodotti confrontati"} in ${stores} ${stores === 1 ? "negozio" : "negozi"}.`,
+    faqGearWhereQ: (h) => `${h}: quale negozio ha il prezzo più basso?`,
+    faqGearWhereA: ({ store, price }) =>
+      `${store}, a ${price}. Confrontiamo il totale con la spedizione, non solo il prezzo di listino, perché è quello che si paga davvero.`,
+    faqGearSaveQ: (h) => `${h}: quanto si risparmia confrontando?`,
   },
 };

@@ -20,9 +20,11 @@ import {
   typeFacets,
   type GearItem,
   type GearSection,
+  gearFacts,
 } from "@/lib/gearHubs";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
+import HubFaq from "@/components/hubs/HubFaq";
 
 export interface GearSpec {
   section: GearSection;
@@ -135,6 +137,8 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
           ))}
         </ul>
       </Section>
+
+      <HubFaq locale={locale} subject={r.headline} facts={gearFacts(r.items)} variant="gear" />
 
       {grounds.length > 0 && (
         <Section title={ui.byGround}>
