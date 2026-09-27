@@ -3048,3 +3048,126 @@ supplied the row that day -- `nike-ballon-de-football-...` (FR) vs
 breaks stable URLs/favourites for the gear sections; it is a design change with
 real blast radius, so it is flagged for a deliberate pass rather than done
 unattended at 06:00.
+
+## Daily pass (2026-09-27) -- the blocklist never applied retroactively, and the Telegram channel had been dry-running for two days
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation US, IT, ES --
+day-of-year 270 mod 3 = 0). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (12th pass).
+**10 new products** (1 eBay IT current, 9 eBay retro -- 6576 -> 6586 blocks);
+`tsc`/dupe-id/build all clean. Store and currency censuses clean, `teamMeta`
+clean (361 teams, every club has a league).
+
+**`ebay_mine_cycle.py`'s pick files accumulate across days, so a blocklist
+entry never applied retroactively.** The miner's own `is_manually_excluded()`
+check only stops an item being *re-mined*; anything already written to
+`current/kids/retro_picks.json` stays there forever. Cost: the same three fake
+dropship listings blocklisted on 09-25 (Schalke 04 GK, Paris FC away,
+El Salvador home) came back through the nightly photo review **by their same
+item ids**, two passes running, plus the two blocklisted kids "kit sets".
+`is_manually_excluded` returned `True` for all of them the whole time. Fixed by
+re-applying the blocklist on load (`drop_excluded()` in `ebay_mine_cycle.py`) --
+5 stale entries evicted immediately. **A blocklist that only filters new data
+is half a blocklist when the data file is cumulative.**
+
+**`broadcast_price_drops.mts` read `process.env` directly and never loaded
+`.env.local`, so the Telegram channel published nothing after 09-25.** Every
+other credentialed script here reads `.env.local` itself, and this file's own
+runbook line says "sin TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID **en
+.env.local** hace un ENSAYO" -- but under cron `process.env` is empty, so it
+took the dry-run branch every night and exited 0. Nothing could catch this,
+because "ENSAYO" is *also* the correct behaviour when the vars genuinely don't
+exist: the failure and the success print the same line. Now it reads the file
+if the vars aren't already exported (exporting still wins). Published 3.
+**When "misconfigured" and "correctly disabled" produce identical output, the
+feature will silently stay off.**
+
+**The eBay quota is drained by the live site within a minute of the window
+opening -- confirmed, not inferred.** Read the rate_limit endpoint first thing
+(06:08 UTC): `remaining=1010`, so the US batch ran immediately and completed all
+20 teams, and IT got 17 of 20 before the quota went. Then at **07:01:44 UTC** --
+44 seconds into a brand-new window (`reset` had already rolled to 09-28), with
+all mining stopped -- `remaining` was **0**, and `buy.browse.item.bulk` sat
+untouched at 5000/5000. That settles the 09-26 open question: it is
+`src/app/api/ebay-shipping/route.ts` on real traffic, not the nightly scan
+(which spent ~350 of 5000). ES therefore advanced **0 teams for the second day**
+(still 145/384, cycle 1) while US reached 182/384 cycle 4. **The rotation cannot
+fix this** -- it only chooses who starves. Still needs the user's call on the
+two options from 09-26: raise that route's `revalidate` from 3600 to 86400
+(one-line, ~24x less consumption) or ask eBay to raise the 5000/day cap.
+Worth knowing: `ebay_check_stale.py` checked **200 of 200** (19 dead, 9.5%,
+normal band) on a quota that was nominally exhausted -- its `getItem` calls bill
+to a different resource than search.
+
+**Shop Real Betis' feed has a real `stock` column and the converter was
+throwing it away.** 1149 of its 1931 rows are `stock=0`, and both of its picks
+this pass were sold out -- including a EUR109.95 "Camiseta Portero Real Betis
+Forever Green 2025" (real hummel/Parley shirt, genuinely not the navy maze-print
+25/26 GK on file) that would have been added as a new product nobody can buy.
+This is the third pass in a row this store's picker chose something unbuyable
+or non-wearable (09-25: a minishirt; earlier: a stock=0 replica) -- the README
+already said "give this one extra scrutiny", but the actual fix was one
+condition in the conversion step. With sold-out rows dropped the picker returned
+the store's real home/away/third/GK/training instead. **Extra scrutiny is not a
+substitute for filtering out what the feed already tells you is unbuyable.**
+
+**Photo review, 9 drops.** Besides the three relisted fakes above (adidas
+**trefoil** on a match jersey and CLIMACOOL on the hem for Schalke/Paris FC; no
+federation crest at all, just "ES", for El Salvador): `colombia|third` was a
+**Deportivo Cali** shirt (club-vs-country, blocklisted; note `colombia-third-2025`
+already on file is an **Atlético Nacional** from an earlier pass -- same bug,
+not fixed here). In the retro set, `colombia|home|2016` is **white** and
+Colombia's home is yellow, `italia|third|2014/15` is orange with a **#1** so it
+is the goalkeeper shirt (re-keyed, Italy had no orange third),
+`manutd|third|2019/20` is visibly the **2015/16** third (Chevrolet + climacool,
+retired long before 2019), `inglaterra|home|1998/99` is an "ALL SIZES"
+made-to-order reproduction, and `guatemala|away|2023/24` (EUR16.07) carries no
+brand mark anywhere and a generic crest. **Confirming the 09-25 finding again:
+the $28.98 template price is not a drop signal** -- the sampled ADD offers at
+that price (Guatemala training, Albania away, Bolivia home) all showed real
+Umbro/Macron/Marathon marks and real federation crests.
+
+`team_collision_scan.py`: **0 flags on every CSV-feed set**, 47 on eBay, of
+which 42 were real and dropped (the documented filler-name keepers are
+Burnley/England and Parma/ITALY x4 as always). Biggest clusters: `espana|third`
+x7 all clubs (Valencia, Real Madrid, Real Betis, Barcelona x3, Sevilla -- 4th
+pass confirming bare "Spain" never means the national team on a third shirt),
+`jordania` x8 all Air Jordan PSG, `portugal|third` x4, `francia|third` x4.
+Heritage scan: the same 4 real hits as 09-25 and 09-26 (`chile|home` 93/94 on
+AdidasES, `liverpool|away` 95 on BSTN IT *and* UK, `manutd|away` 90/92 on
+BSTN UK), all kept out of the ADD sets. All 15 CSV-feed season conflicts were
+documented noise: AdidasPT Tiro 25 x2, Inter Miami on both BSTNs and ForumSport
+Alaves (exact link already on file), `noruega|home` 2025 (**12th** pass),
+`internacional|home` 25/26 and `realbetis|training` 25/26 as older stock, and
+the ForumSport `barcelona|prematch` 2024-dated photo.
+
+**One product carried the same offer twice.** `levante-away-202526` already had
+two ForumSport offers at HEAD (two different `pclick.php?p=` ids for one real
+product -- the documented unstable-id problem), and today's refresh rewrote both
+to the same current pick, turning a near-duplicate into a byte-identical one.
+Removed; a one-pass check for identical offer lines within a block found no
+others. **`refresh.py` replaces per store, so any pre-existing double-insert
+becomes an exact duplicate the moment both rows point at the same live product.**
+
+**Crystal Palace 26/27 home+away stay unapplied for a third day**, unchanged
+from the 09-26 analysis: both real (Macron, real eagle crest, Temporal sponsor),
+both in FootStoreFR and SportIsGoodFR, and the feed's "Domicile" label is
+provably wrong for the white sashed one since Palace's home is red-and-blue
+stripes. Almost certainly the away and third in some order. **Still needs the
+user to name the two slots once** (style codes: white `600153340001`, black
+`600153380001`).
+
+`refresh_boots.py`: 82 new, 177 dropped, 371 price changes, FutbolEmotion feed
+refreshed cleanly (no WARNING line), legacy `{fe_kept: 60, forum_kept: 60}`.
+`refresh_gear.py`: guantes 6 new / 45 dropped / 59 price changes, pelotas 14 /
+42 / 49, ropa 146 / 470 / 755, entrenamiento 31 / 46 / 32. Tickets: 2 new
+events, 13 dropped (past/sold out); every venue lookup was a Wikidata miss again
+so `venue_cities.json` is unchanged. Price drops: 4514 across all seven sections
+(camisetas 238, botas 35, entradas 3691, ropa 491, guantes 24, pelotas 27,
+entrenamiento 8). Dominant colours: 10 new, 0 errors. DecathlonIE and ProSoccer
+genuine zeros as always. Rakuten's five files all arrived with a `TRL|` count
+matching their rows exactly -- but **bound the FTP transfer**: `curl` with no
+`--max-time` hung for 5+ minutes on the last bytes of the first file and the
+run had to be restarted (`--max-time 150` is enough for four of them, Santos
+needs more).

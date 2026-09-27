@@ -56,6 +56,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import TEAM_PATTERNS
 import ebay_mine_full as emf
 from ebay_mine import EbayClient
+from manual_exclusions import is_manually_excluded
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -80,6 +81,18 @@ def save_state(state, marketplace_id):
     with open(state_path_for(marketplace_id), "w") as f:
         json.dump(state, f, indent=2, sort_keys=True)
         f.write("\n")
+
+
+def drop_excluded(picks):
+    """Strip blocklisted entries from an accumulated pick file.
+
+    All three files (current/kids/retro) are flat {key: offer_dict}, so
+    one filter covers them.
+    """
+    return {
+        k: v for k, v in picks.items()
+        if not is_manually_excluded(v.get("link"), v.get("image"))
+    }
 
 
 def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE, marketplace_id="EBAY_US"):
@@ -109,7 +122,14 @@ def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE, marketplace_id="EBAY_US")
         "kids": os.path.join(out_dir, "kids_picks.json"),
         "retro": os.path.join(out_dir, "retro_picks.json"),
     }
-    picks = {k: emf.load(p) for k, p in paths.items()}
+    # These files ACCUMULATE across days (see the docstring), so an entry
+    # mined before it was blocklisted survives in them forever: the miner's
+    # own is_manually_excluded() check only stops it being re-mined, never
+    # evicts what's already on disk. Real cost (2026-09-27): the same three
+    # fake dropship listings blocklisted on 09-25 came back through the
+    # nightly review, by their SAME item ids, two passes running. Re-apply
+    # the blocklist on load so a blocklist entry takes effect retroactively.
+    picks = {k: drop_excluded(emf.load(p)) for k, p in paths.items()}
 
     consecutive_rate_limited = 0
     newly_done = []

@@ -34,6 +34,19 @@ const HERE = import.meta.dirname;
 const STATE_PATH = path.join(HERE, "telegram_posted.json");
 const SITE = "https://football-cult.com/es";
 
+// Las credenciales viven en .env.local, igual que las de Awin/eBay/Rakuten,
+// y el runbook nocturno dice justamente "sin ... en .env.local hace un
+// ENSAYO". Pero esto solo miraba process.env, que en el cron está vacío:
+// el canal quedó en ensayo desde el 2026-09-25 sin que nada fallara, porque
+// "ENSAYO" es tambien el comportamiento correcto cuando de verdad faltan.
+// Se leen del archivo si no vienen ya exportadas (exportar sigue ganando).
+for (const line of fs.existsSync(path.join(HERE, "../../.env.local"))
+  ? fs.readFileSync(path.join(HERE, "../../.env.local"), "utf-8").split("\n")
+  : []) {
+  const m = /^(TELEGRAM_BOT_TOKEN|TELEGRAM_CHANNEL_ID)=(.+)$/.exec(line.trim());
+  if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim();
+}
+
 /** Cuántas bajadas se publican por corrida. */
 const PER_RUN = 3;
 /** Mínimo para que valga la pena molestar a un suscriptor. */

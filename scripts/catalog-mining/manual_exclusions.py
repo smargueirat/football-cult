@@ -275,6 +275,12 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # Camiseta de Brasil archivada bajo la clave `jordania` porque el titulo
     # dice "Jordan" (la marca, no el pais) -- misma colision que el 09-24.
     "ebay.com/itm/298686687863",
+    # Camiseta de Deportivo Cali (club colombiano) archivada bajo la clave
+    # `colombia` porque el titulo nombra al pais -- misma clase de colision
+    # club-vs-seleccion que india/Kerala Blasters y espana/Valencia. Nota
+    # aparte: `colombia-third-2025` que ya esta en products.ts es un
+    # Atletico Nacional por la misma razon, entro en una pasada anterior.
+    "ebay.com/itm/820135186242",
 ]
 
 
