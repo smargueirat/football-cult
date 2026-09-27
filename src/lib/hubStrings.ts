@@ -53,6 +53,8 @@ type S = {
   faqGearWhereQ: (headline: string) => string;
   faqGearWhereA: (o: { store: string; price: string }) => string;
   faqGearSaveQ: (headline: string) => string;
+  /** Enlace a la guía de tapones desde los hubs de terreno de botas. */
+  studsGuideLink: string;
 };
 
 export const HUB: Record<HubLocale, S> = {
@@ -106,6 +108,7 @@ export const HUB: Record<HubLocale, S> = {
     faqGearWhereA: ({ store, price }) =>
       `${store}, a ${price}. Comparamos el total con envío, no solo el precio de lista, porque es lo que termina pagando.`,
     faqGearSaveQ: (h) => `${h}: ¿cuánto se ahorra comparando?`,
+    studsGuideLink: "¿Qué tapones necesito para mi campo? Guía por terreno",
   },
   en: {
     home: "Home",
@@ -157,6 +160,7 @@ export const HUB: Record<HubLocale, S> = {
     faqGearWhereA: ({ store, price }) =>
       `${store}, at ${price}. We compare the total with delivery, not just the list price, because that is what you actually pay.`,
     faqGearSaveQ: (h) => `${h}: how much can you save by comparing?`,
+    studsGuideLink: "Which studs do I need for my pitch? Guide by surface",
   },
   pt: {
     home: "Início",
@@ -208,6 +212,7 @@ export const HUB: Record<HubLocale, S> = {
     faqGearWhereA: ({ store, price }) =>
       `${store}, por ${price}. Comparamos o total com envio, não apenas o preço de tabela, porque é o que você paga no fim.`,
     faqGearSaveQ: (h) => `${h}: quanto dá para economizar comparando?`,
+    studsGuideLink: "Que travas preciso para o meu campo? Guia por terreno",
   },
   fr: {
     home: "Accueil",
@@ -259,6 +264,7 @@ export const HUB: Record<HubLocale, S> = {
     faqGearWhereA: ({ store, price }) =>
       `${store}, à ${price}. Nous comparons le total livraison comprise, pas seulement le prix affiché, car c'est ce que vous payez vraiment.`,
     faqGearSaveQ: (h) => `${h} : combien peut-on économiser en comparant ?`,
+    studsGuideLink: "Quels crampons pour mon terrain ? Guide par surface",
   },
   it: {
     home: "Home",
@@ -310,5 +316,6 @@ export const HUB: Record<HubLocale, S> = {
     faqGearWhereA: ({ store, price }) =>
       `${store}, a ${price}. Confrontiamo il totale con la spedizione, non solo il prezzo di listino, perché è quello che si paga davvero.`,
     faqGearSaveQ: (h) => `${h}: quanto si risparmia confrontando?`,
+    studsGuideLink: "Quali tacchetti servono per il mio campo? Guida per terreno",
   },
 };

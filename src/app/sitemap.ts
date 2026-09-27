@@ -13,6 +13,7 @@ import { seasonSortValue } from "@/lib/productMeta";
 import { brandFacets, brandGroundCombos, groundFacets, groundSlug, typeFacets } from "@/lib/gearHubs";
 import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
 import { indexPaths } from "@/lib/catalogIndex";
+import { GUIDE_SLUGS } from "@/lib/guides";
 
 const BASE_URL = "https://football-cult.com";
 // Dos límites reales, no solo el de Google (50.000 URLs/sitemap,
@@ -127,8 +128,11 @@ function allRoutes(): MetadataRoute.Sitemap {
     // terreno, tipo): solo los que tienen suficiente producto hoy.
     "/ofertas",
     "/guia",
-    "/guia/camiseta-original",
-    "/guia/talle-fan-vs-jugador",
+    // Derivado de GUIDE_SLUGS y no escrito a mano: estaban listadas solo
+    // dos de las cuatro guías (faltaban la de tapones y la de retro), que
+    // es lo que pasa cuando una lista se copia. Ahora no se puede
+    // desincronizar al agregar una guía nueva.
+    ...GUIDE_SLUGS.map((g) => `/guia/${g}`),
     "/estudios/precios-camisetas",
     // Índice rastreable del catálogo: 445 URLs que le dan a 8.680 fichas
     // su primer enlace interno real (ver src/lib/catalogIndex.ts).

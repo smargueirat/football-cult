@@ -25,6 +25,7 @@ import {
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
+import { HUB } from "@/lib/hubStrings";
 
 export interface GearSpec {
   section: GearSection;
@@ -153,6 +154,17 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
                 : grounds.map((g) => ({ href: `/${locale}/botas/terreno/${g.slug}`, name: groundName(g.name, locale), count: g.count }))
             }
           />
+          {/* La guía de tapones existe desde hace semanas y no la enlazaba
+              nadie: acá es donde alguien que está mirando botas por
+              terreno de verdad se pregunta qué significa FG o AG. */}
+          <p className="mt-4 text-sm">
+            <a
+              className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
+              href={`/${locale}/guia/tapones-botas-segun-terreno`}
+            >
+              {HUB[locale].studsGuideLink} →
+            </a>
+          </p>
         </Section>
       )}
       {types.length > 0 && (
