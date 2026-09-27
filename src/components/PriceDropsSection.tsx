@@ -54,6 +54,21 @@ export default function PriceDropsSection({ dropProducts, dropIdsByCountry }: Pr
         </span>
         <h2 className="font-vintage text-lg text-[#1B3B2B] sm:text-2xl">{t.priceDrop.title}</h2>
       </div>
+      {/* El canal publica estas mismas bajadas todas las mañanas, así que
+          se ofrece acá y no en un banner suelto: quien está mirando la
+          sección de rebajas es exactamente quien quiere que le lleguen
+          solas. rel="noopener" y target en blanco porque sale del sitio. */}
+      <p className="mb-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#675c44] sm:text-sm">
+        <span>{t.priceDrop.channelCta}</span>
+        <a
+          href="https://t.me/FootballCultOfertas"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
+        >
+          {t.priceDrop.channelLink} →
+        </a>
+      </p>
       <div className="relative">
         {/* Mismo scroll horizontal nativo y misma card liviana que
             DiscoveryCarousel -- ProductCard3D (tilt 3D por mousemove,

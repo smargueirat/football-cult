@@ -299,6 +299,11 @@ export interface Translations {
     title: string;
     badge: string;
     filterLabel: string;
+    // Canal de Telegram: se ofrece justo acá, donde el visitante ya está
+    // mirando bajadas de precio, que es el único momento en que suscribirse
+    // a un canal de bajadas de precio tiene sentido.
+    channelCta: string;
+    channelLink: string;
   };
   heritage: {
     eyebrow: string;
@@ -828,6 +833,8 @@ export const translations: Record<Locale, Translations> = {
       title: "Bajaron de Precio",
       badge: "Bajó {n}%",
       filterLabel: "Bajaron de precio",
+      channelCta: "Las bajadas del día, en tu teléfono",
+      channelLink: "Seguir el canal",
     },
     heritage: {
       eyebrow: "Del archivo",
@@ -1356,6 +1363,8 @@ export const translations: Record<Locale, Translations> = {
       title: "Baixaram de Preço",
       badge: "Caiu {n}%",
       filterLabel: "Baixaram de preço",
+      channelCta: "As quedas de preço do dia, no seu telefone",
+      channelLink: "Seguir o canal",
     },
     heritage: {
       eyebrow: "Do arquivo",
@@ -1884,6 +1893,8 @@ export const translations: Record<Locale, Translations> = {
       title: "Price Drops",
       badge: "Down {n}%",
       filterLabel: "Price drops",
+      channelCta: "Today's price drops, on your phone",
+      channelLink: "Follow the channel",
     },
     heritage: {
       eyebrow: "From the archive",
@@ -2412,6 +2423,8 @@ export const translations: Record<Locale, Translations> = {
       title: "Baisses de prix",
       badge: "-{n}%",
       filterLabel: "Baisses de prix",
+      channelCta: "Les baisses de prix du jour, sur votre téléphone",
+      channelLink: "Suivre le canal",
     },
     heritage: {
       eyebrow: "Depuis les archives",
@@ -2940,6 +2953,8 @@ export const translations: Record<Locale, Translations> = {
       title: "Prezzi in calo",
       badge: "-{n}%",
       filterLabel: "Prezzi in calo",
+      channelCta: "I cali di prezzo di oggi, sul telefono",
+      channelLink: "Segui il canale",
     },
     heritage: {
       eyebrow: "Dall'archivio",

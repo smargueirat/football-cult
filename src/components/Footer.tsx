@@ -36,6 +36,17 @@ export default function Footer() {
           <Link href="/guia-de-tallas" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.sizeGuide}
           </Link>
+          {/* Enlace saliente al canal de bajadas de precio: es el único
+              canal propio que tenemos y hasta ahora no se enlazaba desde
+              ninguna página. */}
+          <a
+            href="https://t.me/FootballCultOfertas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#F3E9C9]"
+          >
+            {t.priceDrop.channelLink}
+          </a>
           <Link href="/guantes" className="transition-colors hover:text-[#F3E9C9]">
             {t.guantes.navLabel}
           </Link>
