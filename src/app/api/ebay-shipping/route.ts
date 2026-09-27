@@ -78,9 +78,25 @@ export async function GET(req: NextRequest) {
         "X-EBAY-C-ENDUSERCTX": `contextualLocation=country=${encodeURIComponent(country)}`,
       },
       // Los cargos son estimaciones del lado de eBay, no cambian minuto a
-      // minuto -- cachear una hora reduce el uso de la cuota diaria de la
-      // API sin mostrar datos viejos de verdad.
-      next: { revalidate: 3600 },
+      // minuto -- cachear reduce el uso de la cuota diaria de la API sin
+      // mostrar datos viejos de verdad.
+      //
+      // Subido de 1 hora a 24 el 2026-09-27. La cuota de eBay es de 5.000
+      // llamadas Browse por dia y se reinicia a las 07:00 UTC; el escaneo
+      // nocturno probo que a los 44 segundos de abrirse una ventana nueva,
+      // con toda la mineria detenida, `remaining` ya era 0, mientras
+      // buy.browse.item.bulk seguia intacto en 5.000. O sea que la gasta
+      // esta ruta, no la mineria (que usa ~350). Consecuencia real: EBAY_ES
+      // no avanzo ni un equipo en dos dias y la fuente mas grande del
+      // catalogo dejo de crecer.
+      //
+      // Esta ruta se llama desde el navegador (useLiveOfferCosts,
+      // useLiveOfferTotal y la ficha), asi que la dispara el trafico real
+      // -- incluido Googlebot, que si ejecuta JavaScript.
+      //
+      // Contrapartida aceptada: una estimacion de envio puede tener hasta
+      // un dia. Volver a 3600 es una linea si alguna vez molesta.
+      next: { revalidate: 86400 },
     });
     if (!res.ok) {
       return NextResponse.json({ error: "ebay_error" }, { status: 502 });
