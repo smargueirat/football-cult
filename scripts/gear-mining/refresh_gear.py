@@ -11,7 +11,7 @@ sumar lo decorativo si hace falta después").
 
 Uso: python3 scripts/gear-mining/refresh_gear.py
 """
-import json, re, os, subprocess, sys, unicodedata
+import json, re, os, subprocess, sys, unicodedata, urllib.parse
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
@@ -55,6 +55,51 @@ TARGETS = [
     },
 ]
 CHUNK_SIZE = 180
+
+# Registro permanente "foto -> id". Es lo unico que evita que una URL se
+# mueva cuando un proveedor cambia como escribe sus titulos.
+#
+# El 2026-09-27 Foot-Store hizo dos cosas a la vez sin avisar: mudo sus
+# fotos de cdn.blazimg.com a b2c.spacefoot.com y empezo a mandar los
+# colores en castellano en vez de frances. Como el id se derivaba del
+# texto del titulo, 5.912 URLs de equipamiento (el 37% de la seccion)
+# murieron en 48 horas y nacieron otras 9.275 en su lugar. Para Google eso
+# es un sitio donde la mitad de las direcciones no llega a la semana, y el
+# presupuesto de rastreo es justo nuestro cuello de botella.
+#
+# La foto SI es estable: al mudarse de CDN el nombre del archivo no cambio
+# (es el SKU del fabricante). Se comprobo sobre el churn real -- el 93% de
+# las URLs muertas tenian una sucesora que compartia nombre de foto.
+IDS_PATH = os.path.join(SCRIPT_DIR, "gear_ids.json")
+
+
+def photo_keys(entry):
+    """Nombre del archivo de cada foto, sin servidor, carpeta ni extension.
+    Mismo criterio que mine_gear._img_key -- ver alli el porque."""
+    out = set()
+    for o in entry.get("offers", []):
+        u = o.get("imageUrl") or ""
+        m = re.search(r"url=([^&\"]+)", u)
+        raw = urllib.parse.unquote(m.group(1)) if m else u
+        base = os.path.splitext(os.path.basename(raw.split("?")[0]))[0].lower()
+        # Un nombre corto ("1", "img") no identifica nada.
+        if len(base) >= 6:
+            out.add(base)
+    return out
+
+
+def load_ids():
+    if not os.path.exists(IDS_PATH):
+        return {}
+    return json.load(open(IDS_PATH, encoding="utf-8"))
+
+
+def save_ids(registry):
+    # Ordenado para que el diff de git sea legible y estable.
+    out = {sec: dict(sorted(m.items())) for sec, m in sorted(registry.items())}
+    with open(IDS_PATH, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=0, sort_keys=True)
+        f.write("\n")
 
 
 def slugify(s):
@@ -117,7 +162,7 @@ def split_ts(ts_path, sentinel):
     return prefix
 
 
-def build_entries(mined, used_ids):
+def build_entries(mined, used_ids, known=None):
     # mine_gear.py ya funde las tiendas espejo (Foot-Store/Sport is Good
     # ES+FR) por (marca, modelo) antes de escribir el JSON -- acá cada
     # `d` es un producto con 1+ ofertas reales, no una fila por tienda.
@@ -130,14 +175,26 @@ def build_entries(mined, used_ids):
     # entre dias, asi que sin esto el .ts se reescribe entero cada scan y
     # el sufijo "-2" de desempate se reparte distinto cada vez.
     mined = sorted(mined, key=lambda d: (slugify(f"{d['brand']}-{d['model']}"), d['offers'][0]['url']))
+    known = {} if known is None else known
     for d in mined:
-        base = slugify(f"{d['brand']}-{d['model']}")
-        sid = base
-        i = 2
-        while sid in seen_ids:
-            sid = f"{base}-{i}"
-            i += 1
+        keys = photo_keys(d)
+        # Si alguna de sus fotos ya tuvo id, se reusa: la URL no se mueve
+        # aunque el proveedor haya reescrito el titulo entero. Ordenado
+        # para que la eleccion no dependa del orden de un set.
+        sid = next((known[k] for k in sorted(keys)
+                    if k in known and known[k] not in seen_ids), None)
+        if sid is None:
+            base = slugify(f"{d['brand']}-{d['model']}")
+            sid = base
+            i = 2
+            while sid in seen_ids:
+                sid = f"{base}-{i}"
+                i += 1
         seen_ids.add(sid)
+        # Se registran TODAS sus fotos, no solo la que acerto: manana el
+        # feed puede traer otra de las mismas y tiene que reconocerla.
+        for k in keys:
+            known.setdefault(k, sid)
         entry = {
             "id": sid,
             "brand": d["brand"],
@@ -181,14 +238,14 @@ def write_ts(ts_path, prefix, entries, export_name, type_name, chunk_var):
         f.write("".join(out))
 
 
-def refresh_one(target, mined):
+def refresh_one(target, mined, registry):
     prefix = split_ts(target["ts_path"], target["sentinel"])
     full_old_src = open(target["ts_path"], encoding="utf-8").read()
     old_auto_section = full_old_src[full_old_src.find(target["sentinel"]):]
     old_prices = old_prices_by_id(old_auto_section)
     old_ids = set(old_prices.keys())
 
-    entries = build_entries(mined, set())
+    entries = build_entries(mined, set(), registry)
     write_ts(target["ts_path"], prefix, entries, target["export_name"], target["type_name"], target["chunk_var"])
 
     new_ids = {e["id"] for e in entries}
@@ -208,9 +265,14 @@ def refresh_one(target, mined):
 
 def main():
     run_mine_gear()
+    registry = load_ids()
     for target in TARGETS:
         mined = json.load(open(target["mined_path"], encoding="utf-8"))
-        refresh_one(target, mined)
+        known = registry.setdefault(target["name"], {})
+        before = len(known)
+        refresh_one(target, mined, known)
+        print(f"ids conocidos: {before} -> {len(known)}")
+    save_ids(registry)
 
 
 if __name__ == "__main__":

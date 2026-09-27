@@ -18,6 +18,7 @@ import unicodedata
 import urllib.parse
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 sys_path_boots = os.path.join(SCRIPT_DIR, "..", "boots-mining")
 import sys
 sys.path.insert(0, os.path.abspath(sys_path_boots))
@@ -406,10 +407,52 @@ def merge_by_model(results):
 
 ES_STORES = ('FootStoreES', 'SportIsGoodES')
 
+# Colores equivalentes entre idiomas, leidos del MISMO glosario que usa
+# la web (src/lib/gearText.ts) para no mantener dos listas que se
+# desincronizan. La tabla de alla ya mapea "blanc" y "blanco" al mismo
+# castellano, que es justo la clase de equivalencia que hace falta aca.
+def _load_colour_canon():
+    src = open(os.path.join(REPO_ROOT, 'src', 'lib', 'gearText.ts'),
+               encoding='utf-8').read()
+    out = {}
+    for k, es in re.findall(r'"([^"]+)":\s*\{\s*es:\s*"([^"]+)"', src):
+        out[_norm(k)] = _norm(es)
+    if not out:
+        raise SystemExit('gearText.ts: no se pudo leer la tabla de colores '
+                         '-- cambio su formato, revisar _load_colour_canon')
+    return out
+
+_COLOUR_CANON = None
+
+def _canon_colour(s):
+    global _COLOUR_CANON
+    if _COLOUR_CANON is None:
+        _COLOUR_CANON = _load_colour_canon()
+    return _COLOUR_CANON.get(_norm(s), _norm(s))
+
+def _canon_colour_words(text):
+    """Cada palabra que sea un color conocido pasa a su forma castellana.
+    El feed de Foot-Store cambio de servir "bleu" a servir "azul" sin
+    avisar (2026-09-27), asi que el texto crudo no sirve como identidad."""
+    global _COLOUR_CANON
+    if _COLOUR_CANON is None:
+        _COLOUR_CANON = _load_colour_canon()
+    return ' '.join(_COLOUR_CANON.get(w, w) for w in _norm(text).split())
+
 def _img_key(u):
+    """SOLO el nombre del archivo, sin servidor, carpeta ni extension.
+
+    Foot-Store mudo sus fotos de cdn.blazimg.com/1800/product/a/c/X.webp a
+    b2c.spacefoot.com/media/catalog/product/a/c/X.jpg el 2026-09-27: mismo
+    archivo, misma X (que es el SKU del fabricante), otra URL. Comparando
+    la URL entera la fusion de tiendas espejo dejo de encontrar nada y el
+    catalogo de equipamiento se lleno de fichas duplicadas."""
     m = re.search(r'url=([^&"]+)', u or '')
     raw = urllib.parse.unquote(m.group(1)) if m else (u or '')
-    return re.sub(r'^(ssl:|https?://)', '', raw).split('?')[0].lower()
+    base = os.path.splitext(os.path.basename(raw.split('?')[0]))[0].lower()
+    # Un nombre corto ("1", "img", "foto") no identifica nada: mejor no
+    # fusionar que fusionar dos productos distintos.
+    return base if len(base) >= 6 else None
 
 def _norm(s):
     s = unicodedata.normalize('NFKD', (s or '').lower())
@@ -430,17 +473,33 @@ def _tail(model, brand):
     if not b:
         return None
     i = t.find(b)
-    return t[i:] if i >= 0 else None
+    # El color va DENTRO de la cola ("acerbis 4 etoiles bleu"), y desde
+    # que el feed lo cambia de idioma solo hay que compararlo canonizado.
+    # El resto de la cola (linea de producto) el feed no lo traduce.
+    return _canon_colour_words(t[i:]) if i >= 0 else None
 
 def mirror_key(entry):
-    tail = _tail(entry['model'], entry.get('brand'))
-    if tail is None:
+    """Identidad del producto que NO depende del idioma del feed.
+
+    Antes incluia _tail() -- el texto desde la marca en adelante -- con la
+    idea de que el feed no traducia esa parte. Es falso: Foot-Store publica
+    "Pantalon corto partido PSV" y "Short match PSV", o "Cono extraflexible
+    de 18 cm" y "Cone extra-souple 18 cm". Con esa condicion el 54% del
+    catalogo de equipamiento quedaba duplicado en dos fichas del mismo
+    producto, una por idioma.
+
+    Lo que queda es suficiente para los dos falsos positivos que el
+    historial documenta: los conos Megaform comparten foto entre
+    Bleu/Jaune/Rouge/Vert (los separa el color canonizado) y las redes
+    Powershot entre medidas (las separan los numeros del titulo). Y sigue
+    en pie la guarda de merge_mirror_locales: dos filas de la MISMA tienda
+    nunca se funden."""
+    imgs = tuple(sorted(k for k in {_img_key(o.get('imageUrl'))
+                                    for o in entry['offers']} if k))
+    if not imgs:
         return None
-    imgs = tuple(sorted({_img_key(o.get('imageUrl')) for o in entry['offers']}))
-    if not imgs or not imgs[0]:
-        return None
-    return (entry.get('type'), _norm(entry.get('colour')), imgs,
-            _digits(entry['model']), tail)
+    return (entry.get('type'), _canon_colour(entry.get('colour')), imgs,
+            _digits(entry['model']))
 
 def merge_mirror_locales(merged):
     """Foot-Store / Sport is Good publican el MISMO producto en su tienda
