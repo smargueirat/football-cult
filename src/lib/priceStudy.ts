@@ -56,6 +56,10 @@ export interface PriceStudy {
   shareOver10: number;
   shareSamePrice: number;
   examples: StudyExample[];
+  /** Las 549 filas completas, no solo los diez ejemplos destacados. Existe
+   *  para el CSV descargable: lo primero que pide quien quiere citar el
+   *  estudio es la tabla entera, y sin ella el dato no es verificable. */
+  rows: StudyExample[];
   storeRanking: StoreRank[];
 }
 
@@ -142,6 +146,7 @@ export function priceStudy(): PriceStudy {
     shareOver10: share((x) => x >= 10),
     shareSamePrice: share((x) => x < 0.5),
     examples: [...rows].sort((a, b) => b.gapAbs - a.gapAbs).slice(0, 10),
+    rows: [...rows].sort((a, b) => b.gapAbs - a.gapAbs),
     storeRanking: [...appearances.entries()]
       .filter(([, n]) => n >= 10)
       .map(([store, n]) => ({

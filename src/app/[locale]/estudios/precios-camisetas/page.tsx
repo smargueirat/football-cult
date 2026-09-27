@@ -186,6 +186,16 @@ export default async function PriceStudyPage({ params }: P) {
                 {PATH}
               </span>
             </p>
+            {/* La tabla entera, descargable. Es lo primero que pide quien
+                quiere citar un dato: sin ella el número no es verificable
+                y no lo publica nadie (ver datos.csv/route.ts). */}
+            <a
+              href={`/${locale}${PATH}/datos.csv`}
+              download
+              className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
+            >
+              {c.citeCsv(s.products)} ↓
+            </a>
           </div>
           {/* Tarjeta con las cifras, para guardar o compartir. Se sirve a
               1000x1500 (ver tarjeta.png/route.tsx) aunque se muestre

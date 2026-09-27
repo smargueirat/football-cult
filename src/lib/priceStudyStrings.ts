@@ -39,6 +39,7 @@ export interface StudyCopy {
   citeTitle: string;
   citeText: string;
   citeLine: string;
+  citeCsv: (n: number) => string;
   cardAlt: string;
 }
 
@@ -90,6 +91,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "Los datos son libres de citar. Si los usás en una nota o un artículo, te agradecemos el enlace a esta página, que se actualiza sola y siempre muestra el número vigente.",
     citeLine: "Football Cult, «{title}», datos de {date}.",
+    citeCsv: (n) => `Descargar la tabla completa (${n} camisetas, CSV)`,
     cardAlt: "Tarjeta con las cifras del estudio de precios",
   },
   en: {
@@ -139,6 +141,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "The data is free to cite. If you use it in an article, we'd appreciate a link to this page, which updates itself and always shows the current figure.",
     citeLine: "Football Cult, “{title}”, data from {date}.",
+    citeCsv: (n) => `Download the full table (${n} shirts, CSV)`,
     cardAlt: "Card with the key figures of the price study",
   },
   pt: {
@@ -188,6 +191,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "Os dados são livres de citar. Se os usares num artigo, agradecemos a ligação para esta página, que se atualiza sozinha e mostra sempre o número atual.",
     citeLine: "Football Cult, «{title}», dados de {date}.",
+    citeCsv: (n) => `Baixar a tabela completa (${n} camisas, CSV)`,
     cardAlt: "Cartão com os números do estudo de preços",
   },
   fr: {
@@ -237,6 +241,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "Les données sont libres de citation. Si vous les utilisez dans un article, un lien vers cette page est apprécié : elle se met à jour seule et affiche toujours le chiffre en vigueur.",
     citeLine: "Football Cult, « {title} », données du {date}.",
+    citeCsv: (n) => `Télécharger le tableau complet (${n} maillots, CSV)`,
     cardAlt: "Carte avec les chiffres de l'étude de prix",
   },
   it: {
@@ -286,6 +291,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     citeText:
       "I dati sono liberi da citare. Se li usi in un articolo, ti saremmo grati per un link a questa pagina, che si aggiorna da sola e mostra sempre il dato attuale.",
     citeLine: "Football Cult, «{title}», dati del {date}.",
+    citeCsv: (n) => `Scarica la tabella completa (${n} maglie, CSV)`,
     cardAlt: "Scheda con i numeri dello studio sui prezzi",
   },
 };
