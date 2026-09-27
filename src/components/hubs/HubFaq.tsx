@@ -80,7 +80,20 @@ export default function HubFaq({
           </div>
         ))}
       </dl>
-      <p className="mt-3 text-xs text-[#8a8577]">{s.faqUpdated(updated)}</p>
+      <p className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#8a8577]">
+        <span>{s.faqUpdated(updated)}</span>
+        {/* El estudio de precios es nuestro único activo pensado para que
+            alguien lo enlace, y hasta ahora solo se llegaba a él desde el
+            pie. Enlazarlo justo debajo de la respuesta que habla de
+            diferencias de precio le da un enlace interno contextual desde
+            los 400+ hubs, que es donde tiene sentido. */}
+        <a
+          href={`/${locale}/estudios/precios-camisetas`}
+          className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
+        >
+          {s.faqStudyLink} →
+        </a>
+      </p>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

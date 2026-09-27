@@ -43,6 +43,7 @@ type S = {
   faqSeasonsQ: (subject: string) => string;
   faqSeasonsA: (o: { oldest: string; newest: string; n: number }) => string;
   faqUpdated: (date: string) => string;
+  faqStudyLink: string;
 };
 
 export const HUB: Record<HubLocale, S> = {
@@ -88,6 +89,7 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsQ: (x) => `¿Qué temporadas de ${x} hay?`,
     faqSeasonsA: ({ oldest, newest, n }) => `De ${oldest} a ${newest}, ${n} camisetas en total.`,
     faqUpdated: (d) => `Precios revisados el ${d}.`,
+    faqStudyLink: "Ver el estudio completo de diferencias de precio",
   },
   en: {
     home: "Home",
@@ -131,6 +133,7 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsQ: (x) => `Which ${x} seasons are available?`,
     faqSeasonsA: ({ oldest, newest, n }) => `From ${oldest} to ${newest}, ${n} shirts in total.`,
     faqUpdated: (d) => `Prices checked on ${d}.`,
+    faqStudyLink: "See the full price-gap study",
   },
   pt: {
     home: "Início",
@@ -174,6 +177,7 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsQ: (x) => `Quais temporadas do ${x} existem?`,
     faqSeasonsA: ({ oldest, newest, n }) => `De ${oldest} a ${newest}, ${n} camisas no total.`,
     faqUpdated: (d) => `Preços verificados em ${d}.`,
+    faqStudyLink: "Ver o estudo completo de diferenças de preço",
   },
   fr: {
     home: "Accueil",
@@ -217,6 +221,7 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsQ: (x) => `Quelles saisons de ${x} sont disponibles ?`,
     faqSeasonsA: ({ oldest, newest, n }) => `De ${oldest} à ${newest}, ${n} maillots au total.`,
     faqUpdated: (d) => `Prix vérifiés le ${d}.`,
+    faqStudyLink: "Voir l'étude complète des écarts de prix",
   },
   it: {
     home: "Home",
@@ -260,5 +265,6 @@ export const HUB: Record<HubLocale, S> = {
     faqSeasonsQ: (x) => `Quali stagioni del ${x} ci sono?`,
     faqSeasonsA: ({ oldest, newest, n }) => `Dal ${oldest} al ${newest}, ${n} maglie in totale.`,
     faqUpdated: (d) => `Prezzi verificati il ${d}.`,
+    faqStudyLink: "Vedi lo studio completo sulle differenze di prezzo",
   },
 };
