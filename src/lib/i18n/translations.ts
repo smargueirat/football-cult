@@ -294,6 +294,8 @@ export interface Translations {
     heritageText: string;
     note: string;
   };
+  /** Texto del enlace a la guía de retro, en la cabecera de /retro. */
+  retroGuideLink: string;
   priceDrop: {
     eyebrow: string;
     title: string;
@@ -828,6 +830,7 @@ export const translations: Record<Locale, Translations> = {
       heritageText: "El catálogo tiene dos camisetas con la etiqueta 'La Crónica de la Prenda' de dos finales mundialistas de Italia: la de 1994 (0-0 ante Brasil, recordada por el penal errado de Roberto Baggio) y la de 2006 (1-1 ante Francia, resuelta en penales tras la expulsión de Zidane por el cabezazo a Materazzi).",
       note: "Football Cult no vende directamente: te redirigimos a la tienda para completar la compra ahí.",
     },
+    retroGuideLink: "¿Qué cuenta como retro? Leer la guía",
     priceDrop: {
       eyebrow: "Ofertas del día",
       title: "Bajaron de Precio",
@@ -1358,6 +1361,7 @@ export const translations: Record<Locale, Translations> = {
       heritageText: "O catálogo traz duas camisas com o selo 'A Crônica da Camisa' de duas finais mundiais da Itália: a de 1994 (0 a 0 contra o Brasil, lembrada pelo pênalti perdido de Roberto Baggio) e a de 2006 (1 a 1 contra a França, decidida nos pênaltis após a expulsão de Zidane pela cabeçada em Materazzi).",
       note: "A Football Cult não vende diretamente: redirecionamos você para a loja para concluir a compra lá.",
     },
+    retroGuideLink: "O que conta como retrô? Ler o guia",
     priceDrop: {
       eyebrow: "Ofertas do dia",
       title: "Baixaram de Preço",
@@ -1888,6 +1892,7 @@ export const translations: Record<Locale, Translations> = {
       heritageText: "The catalog carries two jerseys with the \"Shirt's Chronicle\" label from two Italy World Cup finals: the 1994 shirt (a 0-0 draw with Brazil, remembered for Roberto Baggio's missed penalty) and the 2006 shirt (a 1-1 draw with France, decided on penalties after Zidane was sent off for headbutting Materazzi).",
       note: "Football Cult doesn't sell directly — we redirect you to the store to complete your purchase there.",
     },
+    retroGuideLink: "What counts as retro? Read the guide",
     priceDrop: {
       eyebrow: "Today's deals",
       title: "Price Drops",
@@ -2418,6 +2423,7 @@ export const translations: Record<Locale, Translations> = {
       heritageText: "Le catalogue compte deux maillots portant le label « La Chronique du Maillot » issus de deux finales de Coupe du Monde de l'Italie : celui de 1994 (0-0 face au Brésil, resté dans les mémoires pour le penalty manqué de Roberto Baggio) et celui de 2006 (1-1 face à la France, décidé aux tirs au but après l'expulsion de Zidane pour son coup de tête sur Materazzi).",
       note: "Football Cult ne vend pas directement : nous vous redirigeons vers la boutique pour finaliser votre achat là-bas.",
     },
+    retroGuideLink: "Qu'est-ce qui compte comme rétro ? Lire le guide",
     priceDrop: {
       eyebrow: "Les offres du jour",
       title: "Baisses de prix",
@@ -2948,6 +2954,7 @@ export const translations: Record<Locale, Translations> = {
       heritageText: "Il catalogo ha due maglie con l'etichetta \"La Cronaca della Maglia\" di due finali mondiali dell'Italia: quella del 1994 (0-0 contro il Brasile, ricordata per il rigore sbagliato da Roberto Baggio) e quella del 2006 (1-1 contro la Francia, decisa ai rigori dopo l'espulsione di Zidane per la testata a Materazzi).",
       note: "Football Cult non vende direttamente: ti reindirizziamo al negozio per completare l'acquisto lì.",
     },
+    retroGuideLink: "Che cosa conta come retrò? Leggi la guida",
     priceDrop: {
       eyebrow: "Le offerte di oggi",
       title: "Prezzi in calo",

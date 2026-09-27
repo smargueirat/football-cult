@@ -14,5 +14,11 @@ export async function generateMetadata({
 }
 
 export default function RetroPage() {
-  return <CategoryCatalogPage sectionIndex={2} type="retro" />;
+  return (
+    <CategoryCatalogPage
+      sectionIndex={2}
+      type="retro"
+      guideSlug="que-es-una-camiseta-retro"
+    />
+  );
 }
