@@ -6,7 +6,7 @@ import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
 import { apparelProducts } from "@/data/apparel";
 import { trainingProducts } from "@/data/training";
-import { LOCALES } from "@/lib/i18n/locales";
+import { DEFAULT_LOCALE, LOCALES } from "@/lib/i18n/locales";
 import { COUNTRY_SLUGS, LEAGUES } from "@/data/teamMeta";
 import { countryTeams, leagueTeams, teamKeysWithItems } from "@/lib/hubs";
 import { seasonSortValue } from "@/lib/productMeta";
@@ -24,7 +24,13 @@ const BASE_URL = "https://football-cult.com";
 // build local -- apenas 2 MB de margen, y el catálogo suma productos
 // todas las noches. 15.000 deja más aire para no volver a romper esto
 // en unas semanas.
-const CHUNK_SIZE = 15000;
+// Bajado de 15.000 a 5.000 el 2026-09-27, cuando el sitemap pasó a listar
+// una sola entrada por página en vez de cinco: con 13.485 URLs entraba
+// todo en UN archivo de 12 MB, que es lento de rastrear y además habría
+// dejado en 404 los cuatro sitemaps ya enviados a Google y a Bing. Con
+// 5.000 quedan tres archivos de ~4 MB, cómodos de leer y sin acercarse a
+// ninguno de los dos límites de arriba.
+const CHUNK_SIZE = 5000;
 
 // PODA DEL SITEMAP (2026-09-24). Le estábamos pidiendo a Google 150.335
 // URLs y tenía 4.080 indexadas (3%): 46.835 quedaban en "descubierta,
@@ -44,10 +50,34 @@ function comparable<T extends { offers: unknown[] }>(items: T[]): T[] {
   return items.filter((i) => i.offers.length >= 2);
 }
 
+// UNA entrada por página, no cinco (2026-09-27).
+//
+// Cada página existe en los cinco idiomas, así que el sitemap listaba las
+// cinco: 13.485 páginas reales pedían 67.425 URLs. Search Console dice que
+// 46.770 estaban en "descubierta: actualmente sin indexar" -- Google las
+// encontró y decidió no gastar rastreo en ellas -- contra 4.100 indexadas.
+//
+// Y Google ya nos dijo por qué, en el informe "Duplicada: Google ha
+// elegido una versión canónica diferente": los 47 ejemplos son TODOS
+// páginas /en/botas/... cuyo contenido es idéntico al /es/ (el nombre de
+// una bota no se traduce). O sea que estábamos gastando cuatro quintos
+// del presupuesto en copias que Google ya considera la misma página.
+//
+// No se desindexa ni se desenlaza nada: las cinco versiones siguen vivas,
+// el selector de idioma las enlaza y el hreflang de cada entrada las
+// declara igual que antes (eso lo hace languagesFor, que SÍ usa LOCALES).
+// Lo único que cambia es a cuál le pedimos rastreo primero. Reversible
+// volviendo esta constante a LOCALES.
+const SITEMAP_LOCALES = [DEFAULT_LOCALE];
+
 function languagesFor(path: string) {
-  return Object.fromEntries(
-    LOCALES.map((l) => [l, `${BASE_URL}/${l}${path}`])
-  ) as Record<string, string>;
+  return Object.fromEntries([
+    ...LOCALES.map((l) => [l, `${BASE_URL}/${l}${path}`]),
+    // Mismo x-default que ya declara el <head> de cada página
+    // (buildAlternates en locales.ts): sin él, el sitemap y la página
+    // decían cosas distintas sobre qué versión mostrar por defecto.
+    ["x-default", `${BASE_URL}/${DEFAULT_LOCALE}${path}`],
+  ]) as Record<string, string>;
 }
 
 function allRoutes(): MetadataRoute.Sitemap {
@@ -78,7 +108,7 @@ function allRoutes(): MetadataRoute.Sitemap {
   ];
 
   const staticRoutes = staticPaths.flatMap((path) =>
-    LOCALES.map((locale) => ({
+    SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
@@ -111,7 +141,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     ...typeFacets("entrenamiento").map((t) => `/entrenamiento/tipo/${t.slug}`),
   ];
   const hubRoutes = hubPaths.flatMap((path) =>
-    LOCALES.map((locale) => ({
+    SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
@@ -136,7 +166,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const productRoutes = orderedProducts.flatMap((product) => {
     const path = `/camiseta/${product.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
@@ -144,7 +174,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const bootRoutes = comparable(bootProducts).flatMap((boot) => {
     const path = `/botas/${boot.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
@@ -152,7 +182,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const gloveRoutes = comparable(gloveProducts).flatMap((glove) => {
     const path = `/guantes/${glove.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
@@ -160,7 +190,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const ballRoutes = comparable(ballProducts).flatMap((ball) => {
     const path = `/pelotas/${ball.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
@@ -168,7 +198,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const ticketRoutes = comparable(ticketProducts).flatMap((ticket) => {
     const path = `/tickets/${ticket.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
@@ -176,7 +206,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const apparelRoutes = comparable(apparelProducts).flatMap((item) => {
     const path = `/ropa/${item.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
@@ -184,7 +214,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 
   const trainingRoutes = comparable(trainingProducts).flatMap((item) => {
     const path = `/entrenamiento/${item.id}`;
-    return LOCALES.map((locale) => ({
+    return SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
       alternates: { languages: languagesFor(path) },
     }));
