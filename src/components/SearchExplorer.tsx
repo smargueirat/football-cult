@@ -492,6 +492,28 @@ export default function SearchExplorer({
     if (effectiveSection === "jerseys") return jerseyItems;
     if (effectiveSection === "boots") return bootItems;
 
+    // Un filtro que solo existe en una sección no lo puede cumplir la
+    // otra, así que en la vista mezclada la otra no va. Con "Retro"
+    // activo el listado seguía mostrando las botas enteras (reportado por
+    // el usuario), y al revés pasaba lo mismo: elegir un tipo de tapón
+    // dejaba igual las miles de camisetas.
+    //
+    // Solo se aplica en "all". Si el usuario ELIGIÓ una sección, el
+    // filtro de la otra simplemente no le aplica y se ignora -- si no, un
+    // "Retro" que quedó puesto en el home dejaría la página de botas
+    // vacía, porque estos filtros viven en un contexto que sobrevive a la
+    // navegación (ver SearchFilterContext).
+    const jerseyOnlyActive =
+      effectiveTypeFilter.length > 0 ||
+      effectiveCategoryFilter.length > 0 ||
+      seasonFilter.length > 0 ||
+      effectiveAgeGroupFilter.length > 0 ||
+      sizeFilter.length > 0;
+    const bootOnlyActive =
+      bootSizeFilter.length > 0 || bootTierFilter.length > 0 || bootGroundTypeFilter.length > 0;
+    if (jerseyOnlyActive) return jerseyItems;
+    if (bootOnlyActive) return bootItems;
+
     if (bootItems.length === 0) return jerseyItems;
     const BOOT_EVERY = 8;
     const mixed: CatalogItem[] = [];
@@ -508,7 +530,19 @@ export default function SearchExplorer({
       bootIdx++;
     }
     return mixed;
-  }, [results, filteredBoots, effectiveSection]);
+  }, [
+    results,
+    filteredBoots,
+    effectiveSection,
+    effectiveTypeFilter,
+    effectiveCategoryFilter,
+    effectiveAgeGroupFilter,
+    seasonFilter,
+    sizeFilter,
+    bootSizeFilter,
+    bootTierFilter,
+    bootGroundTypeFilter,
+  ]);
 
   // Cuando el usuario cambia de verdad los filtros/orden/búsqueda mientras
   // está en esta página, volvemos a mostrar solo la primera tanda. OJO:
