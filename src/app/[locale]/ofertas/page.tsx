@@ -3,11 +3,29 @@ import { HUB } from "@/lib/hubStrings";
 import { SEASON_UI } from "@/lib/seasonStrings";
 import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { priceDrops } from "@/lib/seasonHubs";
-import { Crumbs, HubHeader, JerseyGrid, JsonLd } from "@/components/hubs/HubParts";
+import { sectionDrops } from "@/lib/offersFeed";
+import { translations } from "@/lib/i18n/translations";
+import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section } from "@/components/hubs/HubParts";
+import BootCard from "@/components/BootCard";
+import GearCard from "@/components/GearCard";
+import TicketCard from "@/components/TicketCard";
+import { bootProducts } from "@/data/boots";
+import { ticketProducts } from "@/data/tickets";
+import { apparelProducts } from "@/data/apparel";
+import { gloveProducts } from "@/data/gloves";
+import { ballProducts } from "@/data/balls";
+import { trainingProducts } from "@/data/training";
 
 // Se recalcula cada hora: los precios se controlan una vez al día pero la
 // lista debe quedar al día apenas corre el scan diario.
 export const revalidate = 3600;
+
+// Cuántas fichas por sección. Las camisetas siguen con 120 (son la
+// sección más grande); el resto va acotado para que la página no se
+// vuelva infinita -- de cada una se muestran las de mayor descuento.
+const PER_SECTION = 24;
+
+const GRID = "grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-6";
 
 type P = { params: Promise<{ locale: string }> };
 
@@ -21,15 +39,69 @@ export default async function Offers({ params }: P) {
   const { locale: raw } = await params;
   const locale = asLocale(raw);
   const ui = SEASON_UI[locale];
+  const t = translations[locale];
+
   const drops = priceDrops().slice(0, 120);
   const badges = Object.fromEntries(drops.map((d) => [d.product.id, `-${d.pct}%`]));
+
+  // Las secciones que no son camisetas, cada una con su tarjeta ya
+  // existente en vez de una nueva (ver offersFeed.ts para el porqué de
+  // incluirlas). Botas y entradas van primero de las no-camisetas: son
+  // las de precio medio más alto, así que son las que un visitante que
+  // viene a ver rebajas agradece más.
+  const boots = sectionDrops(bootProducts, PER_SECTION);
+  const tickets = sectionDrops(ticketProducts, PER_SECTION);
+  const gear = [
+    { label: t.ropa.navLabel, base: "ropa" as const, items: sectionDrops(apparelProducts, PER_SECTION) },
+    { label: t.guantes.navLabel, base: "guantes" as const, items: sectionDrops(gloveProducts, PER_SECTION) },
+    { label: t.pelotas.navLabel, base: "pelotas" as const, items: sectionDrops(ballProducts, PER_SECTION) },
+    { label: t.entrenamiento.navLabel, base: "entrenamiento" as const, items: sectionDrops(trainingProducts, PER_SECTION) },
+  ].filter((g) => g.items.length > 0);
+
+  const total =
+    drops.length + boots.length + tickets.length + gear.reduce((n, g) => n + g.items.length, 0);
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
       <JsonLd data={breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.offersH1 }], "/ofertas")} />
       <Crumbs locale={locale} trail={[{ label: ui.offersH1 }]} />
-      <HubHeader h1={ui.offersH1} intro={drops.length ? ui.offersIntro(drops.length) : ui.offersEmpty} />
-      {drops.length > 0 && <JerseyGrid items={drops} locale={locale} showTeam badges={badges} />}
+      <HubHeader h1={ui.offersH1} intro={total ? ui.offersIntro(total) : ui.offersEmpty} />
+
+      {drops.length > 0 && (
+        <Section title={t.botas.sectionJerseys}>
+          <JerseyGrid items={drops} locale={locale} showTeam badges={badges} />
+        </Section>
+      )}
+
+      {boots.length > 0 && (
+        <Section title={t.botas.navLabel}>
+          <div className={GRID}>
+            {boots.map((b, i) => (
+              <BootCard key={b.id} boot={b} priority={i < 4} />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {tickets.length > 0 && (
+        <Section title={t.tickets.navLabel}>
+          <div className={GRID}>
+            {tickets.map((x, i) => (
+              <TicketCard key={x.id} ticket={x} priority={i < 4} />
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {gear.map((g) => (
+        <Section key={g.base} title={g.label}>
+          <div className={GRID}>
+            {g.items.map((x, i) => (
+              <GearCard key={x.id} item={x} basePath={g.base} priority={i < 4} />
+            ))}
+          </div>
+        </Section>
+      ))}
     </div>
   );
 }
