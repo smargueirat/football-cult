@@ -8,6 +8,8 @@ import { SEASON_UI } from "@/lib/seasonStrings";
 import { seasonList, seasonSlug } from "@/lib/seasonHubs";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
+import HubFaq from "@/components/hubs/HubFaq";
+import { hubFacts } from "@/lib/hubFaq";
 
 // ISR: nada se prerenderiza (no suma storage al deploy) pero cada URL queda
 // cacheada un día en el CDN -- mismo criterio que las fichas de producto
@@ -109,6 +111,7 @@ export default async function TeamHub({ params }: P) {
           <JerseyGrid items={list} locale={locale} />
         </section>
       ))}
+      <HubFaq locale={locale} subject={name} facts={hubFacts(items)} />
       {league && countryKey && (
         <Section title={s.otherTeams(leagueName(league, locale))}>
           <TeamLinks

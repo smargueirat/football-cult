@@ -6,6 +6,8 @@ import { cheapest, countryTeams, leagueTeams, statsOf, teamItems, teamName } fro
 import { COUNTRY_SLUGS, leagueName, leaguesOfCountry } from "@/data/teamMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
+import HubFaq from "@/components/hubs/HubFaq";
+import { hubFacts } from "@/lib/hubFaq";
 
 export const revalidate = 86400;
 export function generateStaticParams() {
@@ -90,6 +92,7 @@ export default async function CountryHub({ params }: P) {
       <Section title={s.bestDeals}>
         <JerseyGrid items={cheapest(d.items, 12)} locale={locale} showTeam />
       </Section>
+      <HubFaq locale={locale} subject={name} facts={hubFacts(d.items)} />
     </div>
   );
 }
