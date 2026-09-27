@@ -5,10 +5,11 @@ import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { priceDrops } from "@/lib/seasonHubs";
 import { sectionDrops } from "@/lib/offersFeed";
 import { translations } from "@/lib/i18n/translations";
+import { localizeGearModel } from "@/lib/gearText";
+import type { OfferCurrencyCode } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section } from "@/components/hubs/HubParts";
-import BootCard from "@/components/BootCard";
-import GearCard from "@/components/GearCard";
-import TicketCard from "@/components/TicketCard";
+import DealCard from "@/components/hubs/DealCard";
+import { isPriceDropped } from "@/lib/priceDrops";
 import { bootProducts } from "@/data/boots";
 import { ticketProducts } from "@/data/tickets";
 import { apparelProducts } from "@/data/apparel";
@@ -26,6 +27,12 @@ export const revalidate = 3600;
 const PER_SECTION = 24;
 
 const GRID = "grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-6";
+
+/** La oferta que de verdad bajó y es la más barata de las que bajaron. */
+function bestDrop<T extends { offers: { store: string; price: number; shipping?: number; currency: OfferCurrencyCode; url: string; imageUrl?: string }[] }>(x: T) {
+  const dropped = x.offers.filter((o) => isPriceDropped(o));
+  return dropped.sort((a, b) => a.price - b.price)[0] ?? x.offers[0];
+}
 
 type P = { params: Promise<{ locale: string }> };
 
@@ -76,9 +83,22 @@ export default async function Offers({ params }: P) {
       {boots.length > 0 && (
         <Section title={t.botas.navLabel}>
           <div className={GRID}>
-            {boots.map((b, i) => (
-              <BootCard key={b.id} boot={b} priority={i < 4} />
-            ))}
+            {boots.map((b, i) => {
+              const o = bestDrop(b);
+              return (
+                <DealCard
+                  key={b.id}
+                  href={`/${locale}/botas/${b.id}`}
+                  title={`${b.brand} ${b.model}`}
+                  image={o.imageUrl ?? ""}
+                  price={o.price + (o.shipping ?? 0)}
+                  currency={o.currency}
+                  pct={b.pct}
+                  store={o.store}
+                  priority={i < 4}
+                />
+              );
+            })}
           </div>
         </Section>
       )}
@@ -86,9 +106,22 @@ export default async function Offers({ params }: P) {
       {tickets.length > 0 && (
         <Section title={t.tickets.navLabel}>
           <div className={GRID}>
-            {tickets.map((x, i) => (
-              <TicketCard key={x.id} ticket={x} priority={i < 4} />
-            ))}
+            {tickets.map((x, i) => {
+              const o = bestDrop(x);
+              return (
+                <DealCard
+                  key={x.id}
+                  href={`/${locale}/tickets/${x.id}`}
+                  title={`${x.event} · ${x.date}`}
+                  image={x.imageUrl}
+                  price={o.price}
+                  currency={o.currency}
+                  pct={x.pct}
+                  store={o.store}
+                  priority={i < 4}
+                />
+              );
+            })}
           </div>
         </Section>
       )}
@@ -96,9 +129,22 @@ export default async function Offers({ params }: P) {
       {gear.map((g) => (
         <Section key={g.base} title={g.label}>
           <div className={GRID}>
-            {g.items.map((x, i) => (
-              <GearCard key={x.id} item={x} basePath={g.base} priority={i < 4} />
-            ))}
+            {g.items.map((x, i) => {
+              const o = bestDrop(x);
+              return (
+                <DealCard
+                  key={x.id}
+                  href={`/${locale}/${g.base}/${x.id}`}
+                  title={localizeGearModel(x.model, x.brand, locale)}
+                  image={o.imageUrl ?? ""}
+                  price={o.price + (o.shipping ?? 0)}
+                  currency={o.currency}
+                  pct={x.pct}
+                  store={o.store}
+                  priority={i < 4}
+                />
+              );
+            })}
           </div>
         </Section>
       ))}
