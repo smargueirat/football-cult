@@ -11,6 +11,7 @@ import {
 import { ColorKey, productColorKey } from "@/lib/colorClassify";
 import { HUB } from "@/lib/hubStrings";
 import type { HubLocale } from "@/data/teamMeta";
+import { gtinFor } from "@/lib/offerGtin";
 
 // Mismo bucketeo de color que ya usa el filtro del catálogo (ColorKey),
 // solo traducido a texto plano para el feed -- no es un dato nuevo.
@@ -172,6 +173,14 @@ export function buildShoppingFeedXml(
       // acepta un solo valor consolidado con "/" en vez de coma (spec
       // oficial), así que se manda el array real de talles de ESTA oferta
       // puntual (ya viene del feed/eBay real, no se inventa nada acá).
+      // Google prioriza los artículos con GTIN correcto: es como empareja el
+      // mismo producto entre comercios. Solo se manda donde la tienda lo
+      // publica de verdad en su feed; donde no, se declara que no existe, que
+      // es lo que corresponde y lo que se venía mandando para todo.
+      const gtin = gtinFor(offer.url);
+      const gtinTag = gtin
+        ? `<g:gtin>${escapeXml(gtin)}</g:gtin>`
+        : "<g:identifier_exists>no</g:identifier_exists>";
       const sizeTag =
         offer.sizes.length > 0
           ? `<g:size>${escapeXml(offer.sizes.join("/"))}</g:size>\n    `
@@ -188,7 +197,7 @@ export function buildShoppingFeedXml(
     <g:price>${offer.price.toFixed(2)} ${offer.currency}</g:price>
     <g:condition>new</g:condition>
     ${sizeTag}${product.brand ? `<g:brand>${escapeXml(product.brand)}</g:brand>` : ""}
-    <g:identifier_exists>no</g:identifier_exists>
+    ${gtinTag}
     <g:google_product_category>Apparel &amp; Accessories &gt; Clothing &gt; Shirts &amp; Tops</g:google_product_category>
     <g:color>${escapeXml(colorName)}</g:color>
     <g:gender>${GENDER_MAP[ageGroup]}</g:gender>
