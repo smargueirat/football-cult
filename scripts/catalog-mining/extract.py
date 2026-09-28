@@ -469,7 +469,7 @@ EXCLUDE_RE = re.compile(
     # age-range fallback below either, since "24/26" wasn't at the end of
     # the title and 24 isn't a plausible kid age) sailed through as an
     # adult "home" pick. Added.
-    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bchild\b|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bchild\b|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|\bwmns\b|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
@@ -524,7 +524,7 @@ EXCLUDE_RE = re.compile(
 KIDS_EXCLUDE_RE = re.compile(
     r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|árbitro|arbitro|\breferee\b|arbitre|"
     r"bebé|bebe|\bbaby\b|\bmois\b|"
-    r"mujer|women|dama|f[ée]minin|femenin|\bfemme\b|"
+    r"mujer|women|\bwmns\b|dama|f[ée]minin|femenin|\bfemme\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
     r"marvel|avengers|disney|maradona|"
