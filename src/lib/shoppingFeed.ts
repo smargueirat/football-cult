@@ -9,23 +9,41 @@ import {
   typeNames,
 } from "@/data/products";
 import { ColorKey, productColorKey } from "@/lib/colorClassify";
+import { HUB } from "@/lib/hubStrings";
+import type { HubLocale } from "@/data/teamMeta";
 
 // Mismo bucketeo de color que ya usa el filtro del catálogo (ColorKey),
 // solo traducido a texto plano para el feed -- no es un dato nuevo.
-const COLOR_NAME_ES: Record<ColorKey, string> = {
-  black: "Negro",
-  white: "Blanco",
-  gray: "Gris",
-  red: "Rojo",
-  orange: "Naranja",
-  yellow: "Amarillo",
-  green: "Verde",
-  teal: "Verde azulado",
-  blue: "Celeste",
-  navy: "Azul marino",
-  purple: "Violeta",
-  pink: "Rosa",
+//
+// En los cinco idiomas desde el 2026-09-28: el feed de Reino Unido mandaba
+// <g:color>Celeste</g:color> a un comprador inglés. Describir el producto en
+// un idioma que su mercado no habla es, para Merchant Center, un dato malo.
+const COLOR_NAME: Record<ColorKey, Record<HubLocale, string>> = {
+  black:  { es: "Negro",         en: "Black",      pt: "Preto",         fr: "Noir",        it: "Nero" },
+  white:  { es: "Blanco",        en: "White",      pt: "Branco",        fr: "Blanc",       it: "Bianco" },
+  gray:   { es: "Gris",          en: "Gray",       pt: "Cinza",         fr: "Gris",        it: "Grigio" },
+  red:    { es: "Rojo",          en: "Red",        pt: "Vermelho",      fr: "Rouge",       it: "Rosso" },
+  orange: { es: "Naranja",       en: "Orange",     pt: "Laranja",       fr: "Orange",      it: "Arancione" },
+  yellow: { es: "Amarillo",      en: "Yellow",     pt: "Amarelo",       fr: "Jaune",       it: "Giallo" },
+  green:  { es: "Verde",         en: "Green",      pt: "Verde",         fr: "Vert",        it: "Verde" },
+  teal:   { es: "Verde azulado", en: "Teal",       pt: "Verde-azulado", fr: "Sarcelle",    it: "Verde acqua" },
+  blue:   { es: "Celeste",       en: "Light Blue", pt: "Azul-claro",    fr: "Bleu clair",  it: "Azzurro" },
+  navy:   { es: "Azul marino",   en: "Navy",       pt: "Azul-marinho",  fr: "Bleu marine", it: "Blu navy" },
+  purple: { es: "Violeta",       en: "Purple",     pt: "Roxo",          fr: "Violet",      it: "Viola" },
+  pink:   { es: "Rosa",          en: "Pink",       pt: "Rosa",          fr: "Rose",        it: "Rosa" },
 };
+
+// Dos tiendas distintas sirven LA MISMA foto a través del proxy de Awin, y
+// lo único que cambia en la URL es el feedId de cada tienda. Mandarle a
+// Google la misma imagen varias veces como si fueran distintas es
+// exactamente lo contrario de "más imágenes por producto", así que se
+// deduplica por la imagen de destino real (el parámetro url=), no por la
+// URL del proxy.
+function underlyingImage(u: string): string {
+  const m = /[?&]url=([^&]+)/.exec(u);
+  const raw = m ? decodeURIComponent(m[1]) : u;
+  return raw.split("?")[0].toLowerCase();
+}
 
 // Google exige valores fijos para gender/age_group -- getAgeGroup() ya
 // existe en el sitio (default "men" cuando el producto no especifica).
@@ -97,7 +115,7 @@ export function buildShoppingFeedXml(
   currency: Offer["currency"],
   country: CountryCode,
   requireExplicitWorldwide = false,
-  locale: string = "es"
+  locale: HubLocale = "es"
 ): string {
   const items = products
     .map((product) => {
@@ -111,14 +129,44 @@ export function buildShoppingFeedXml(
       // producto no tiene nada honesto para mostrarle a este mercado.
       if (!offer || !offer.imageUrl) return null;
 
-      const team = teamNames[product.teamKey].es;
-      const type = typeNames[product.typeKey].es;
+      // Estaban cableados en español aunque la función ya recibía el idioma
+      // y lo usaba para el link: los feeds de Reino Unido, Estados Unidos y
+      // Brasil mandaban título y descripción en español. Mismo fallo que
+      // tenía la ficha de camiseta hasta el 2026-09-28 (commit 3ab5b8e), y
+      // para Merchant Center es calidad de datos: describir un producto en
+      // un idioma que su mercado no habla.
+      const team = teamNames[product.teamKey][locale];
+      const type = typeNames[product.typeKey][locale];
       const title = `${team} ${type} ${product.season}`;
-      const description = `Camiseta ${type.toLowerCase()} de ${team}, temporada ${product.season}. Comparación de precio real en Football Cult.`;
+      const description = HUB[locale].metaJersey({ team, type, season: product.season });
       const link = `${SITE_URL}/${locale}/camiseta/${product.id}`;
       const ageGroup = getAgeGroup(product);
-      const colorName = COLOR_NAME_ES[productColorKey(product)];
+      const colorName = COLOR_NAME[productColorKey(product)][locale];
       const imageUrl = upsizeIfResizable(offer.imageUrl);
+      // Fotos ADICIONALES del mismo producto: cada tienda que lo vende trae
+      // la suya, y hasta ahora el feed mandaba solo una y tiraba el resto.
+      // Merchant Center lo pide explícitamente ("Añade más imágenes por
+      // producto") y la spec admite hasta 10.
+      //
+      // Honestidad de la medida: esto sube el promedio de 1,00 a 1,38 fotos
+      // por ficha, NO a las 2,0 que Google pide para que esa métrica llegue
+      // a "Aceptable" -- el 77% del catálogo son fichas de una sola tienda y
+      // por lo tanto de una sola foto. No hay forma de llegar a 2 sin
+      // inventar imágenes, así que no se llega.
+      const seenImages = new Set([underlyingImage(imageUrl)]);
+      const extraImages: string[] = [];
+      for (const o of product.offers) {
+        if (extraImages.length >= 6) break;
+        if (o.inStock === false || !o.imageUrl) continue;
+        const up = upsizeIfResizable(o.imageUrl);
+        const key = underlyingImage(up);
+        if (seenImages.has(key)) continue;
+        seenImages.add(key);
+        extraImages.push(up);
+      }
+      const extraImageTags = extraImages
+        .map((u) => `<g:additional_image_link>${escapeXml(u)}</g:additional_image_link>\n    `)
+        .join("");
       // Merchant Center flaggeó "falta la talla" en el 100% del catálogo --
       // el feed nunca mandaba <g:size>. Google no exige un item por talla:
       // acepta un solo valor consolidado con "/" en vez de coma (spec
@@ -135,6 +183,7 @@ export function buildShoppingFeedXml(
     <description>${escapeXml(description)}</description>
     <link>${escapeXml(link)}</link>
     <g:image_link>${escapeXml(imageUrl)}</g:image_link>
+    ${extraImageTags}
     <g:availability>in stock</g:availability>
     <g:price>${offer.price.toFixed(2)} ${offer.currency}</g:price>
     <g:condition>new</g:condition>
