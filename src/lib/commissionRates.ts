@@ -49,6 +49,9 @@ const RATES: Record<string, number> = {
   eBay: 0.02,
   "eBay ES": 0.02,
   "eBay IT": 0.02,
+  // Reino Unido, agregado 2026-09-28 para el retro: es el mayor mercado de
+  // camisetas retro y el que más anuncios del mismo modelo tiene.
+  "eBay GB": 0.02,
   "eBay US": 0.02,
 
   // Awin, tiendas de fútbol especializadas.

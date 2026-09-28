@@ -32,6 +32,7 @@ const MARKETPLACES = new Set([
   "eBay",
   "eBay ES",
   "eBay IT",
+  "eBay GB",
   "eBay US",
   "Amazon",
   "FansJerseyHub",

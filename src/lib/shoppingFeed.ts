@@ -11,7 +11,7 @@ import {
 import { ColorKey, productColorKey } from "@/lib/colorClassify";
 import { HUB } from "@/lib/hubStrings";
 import type { HubLocale } from "@/data/teamMeta";
-import { gtinFor } from "@/lib/offerGtin";
+import { gtinFor, mpnFor } from "@/lib/offerGtin";
 
 // Mismo bucketeo de color que ya usa el filtro del catálogo (ColorKey),
 // solo traducido a texto plano para el feed -- no es un dato nuevo.
@@ -173,14 +173,18 @@ export function buildShoppingFeedXml(
       // acepta un solo valor consolidado con "/" en vez de coma (spec
       // oficial), así que se manda el array real de talles de ESTA oferta
       // puntual (ya viene del feed/eBay real, no se inventa nada acá).
-      // Google prioriza los artículos con GTIN correcto: es como empareja el
-      // mismo producto entre comercios. Solo se manda donde la tienda lo
-      // publica de verdad en su feed; donde no, se declara que no existe, que
-      // es lo que corresponde y lo que se venía mandando para todo.
-      const gtin = gtinFor(offer.url);
-      const gtinTag = gtin
-        ? `<g:gtin>${escapeXml(gtin)}</g:gtin>`
-        : "<g:identifier_exists>no</g:identifier_exists>";
+      // Identificador del producto. El EAN es de UNA talla concreta, y este
+      // artículo agrupa todas las tallas de la oferta ("S/M/L/XL"): mandar el
+      // EAN de la M para todo eso es un identificador equivocado (corregido
+      // el mismo 2026-09-28 en que se agregó). Lo correcto para un artículo
+      // de varias tallas es marca + código del fabricante (MPN), que no
+      // depende de la talla. El EAN va solo cuando la oferta es de una talla.
+      const gtin = offer.sizes.length === 1 ? gtinFor(offer.url) : undefined;
+      const mpn = mpnFor(offer.url);
+      const gtinTag =
+        [gtin && `<g:gtin>${escapeXml(gtin)}</g:gtin>`, mpn && `<g:mpn>${escapeXml(mpn)}</g:mpn>`]
+          .filter(Boolean)
+          .join("\n    ") || "<g:identifier_exists>no</g:identifier_exists>";
       const sizeTag =
         offer.sizes.length > 0
           ? `<g:size>${escapeXml(offer.sizes.join("/"))}</g:size>\n    `

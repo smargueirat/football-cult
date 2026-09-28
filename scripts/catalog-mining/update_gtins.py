@@ -23,6 +23,14 @@ csv.field_size_limit(10**9)
 HERE = os.path.dirname(os.path.abspath(__file__))
 PRODUCTS_TS = os.path.join(HERE, "..", "..", "src", "data", "products.ts")
 OUT = os.path.join(HERE, "..", "..", "src", "data", "offerGtins.json")
+OUT_MPN = os.path.join(HERE, "..", "..", "src", "data", "offerMpns.json")
+
+# Codigo del fabricante (MPN): "KC3993", "784273-03", "100447.040". A
+# diferencia del EAN, NO depende de la talla, que es lo que necesitamos: una
+# ficha nuestra agrupa todas las tallas, y el EAN es de UNA sola. Algunos
+# feeds (PlanetFoot) pegan la talla al final ("HR4607XS"); se le saca.
+SIZE_TAIL = re.compile(r"(?<=[0-9A-Z])(XXS|XS|XXL|XL|2XL|3XL|4XL|S|M|L)$")
+VALID_MPN = re.compile(r"^[A-Z0-9][A-Z0-9.\-]{3,19}$")
 
 # Nombre de la columna del GTIN por feed: NO se llama igual en todos.
 # Verificado leyendo la cabecera real de cada CSV el 2026-09-28.
@@ -48,6 +56,7 @@ def main(feed_dir="/tmp/feeds"):
     print(f"URLs de oferta en el catalogo: {len(wanted)}")
 
     out, rejected = {}, 0
+    mpns = {}
     for name, col in sorted(GTIN_COL.items()):
         path = os.path.join(feed_dir, f"{name}.csv")
         if not os.path.exists(path):
@@ -66,6 +75,10 @@ def main(feed_dir="/tmp/feeds"):
                 url = (r.get(link_col) or "").strip()
                 if url not in wanted:
                     continue
+                mpn = (r.get("mpn") or "").strip().upper()
+                mpn = SIZE_TAIL.sub("", mpn)
+                if VALID_MPN.match(mpn):
+                    mpns[url] = mpn
                 g = (r.get(col) or "").strip().lstrip("'")
                 if not g:
                     continue
@@ -88,6 +101,12 @@ def main(feed_dir="/tmp/feeds"):
     print(f"\nofertas con GTIN: {len(merged)} de {len(wanted)} "
           f"({100*len(merged)/max(1,len(wanted)):.1f}%)  descartados por formato: {rejected}")
     print(f"-> {OUT}")
+
+    prev_m = json.load(open(OUT_MPN, encoding="utf-8")) if os.path.exists(OUT_MPN) else {}
+    merged_m = {k: v for k, v in {**prev_m, **mpns}.items() if k in wanted}
+    json.dump(dict(sorted(merged_m.items())), open(OUT_MPN, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=0)
+    print(f"ofertas con codigo del fabricante: {len(merged_m)} -> {OUT_MPN}")
 
 
 if __name__ == "__main__":

@@ -76,6 +76,9 @@ MARKETPLACE_CURRENCY = {
     "EBAY_US": "USD",
     "EBAY_IT": "EUR",
     "EBAY_ES": "EUR",
+    # 2026-09-28: Reino Unido, solo para completar fichas retro que ya
+    # existen (ver ebay_gb_retro.py), no para minar de cero.
+    "EBAY_GB": "GBP",
 }
 
 

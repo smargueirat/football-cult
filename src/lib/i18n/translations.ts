@@ -180,6 +180,11 @@ export interface Translations {
     photoPlaceholder: string;
     currencyNote: string;
     replicaBadge: string;
+    marketplaceBadge: string;
+    marketplaceHint: string;
+    trustLine: string;
+    trustLink: string;
+    manufacturerCode: string;
     bestPriceBadge: string;
     retroBadge: string;
     from: string;
@@ -715,6 +720,11 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Foto de producto próximamente",
       currencyNote: "Precio real de cada tienda en su moneda de origen. La tienda puede mostrarte otra moneda según tu ubicación, pero cobra este mismo precio.",
       replicaBadge: "Réplica (no oficial)",
+      marketplaceBadge: "Marketplace",
+      marketplaceHint: "Lo vende un vendedor independiente dentro de un marketplace: el precio y el estado los pone cada vendedor. Revisá su reputación antes de comprar.",
+      trustLine: "Comparamos tiendas oficiales y autorizadas, y también marketplaces. Te marcamos cada réplica y cada vendedor de marketplace antes de que hagas clic.",
+      trustLink: "Cómo reconocer una camiseta original",
+      manufacturerCode: "Código del fabricante",
       bestPriceBadge: "Oferta Top",
       retroBadge: "Retro / Colección",
       from: "Desde",
@@ -1246,6 +1256,11 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Foto do produto em breve",
       currencyNote: "Preço real de cada loja na sua moeda de origem. A loja pode te mostrar outra moeda de acordo com sua localização, mas cobra esse mesmo preço.",
       replicaBadge: "Réplica (não oficial)",
+      marketplaceBadge: "Marketplace",
+      marketplaceHint: "Vendido por um vendedor independente dentro de um marketplace: o preço e o estado são definidos por cada vendedor. Confira a reputação dele antes de comprar.",
+      trustLine: "Comparamos lojas oficiais e autorizadas, e também marketplaces. Marcamos cada réplica e cada vendedor de marketplace antes de você clicar.",
+      trustLink: "Como reconhecer uma camisa original",
+      manufacturerCode: "Código do fabricante",
       bestPriceBadge: "Oferta Top",
       retroBadge: "Retrô / Coleção",
       from: "A partir de",
@@ -1777,6 +1792,11 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Product photo coming soon",
       currencyNote: "Real price from each store in its original currency. The store may show you a different currency based on your location, but charges this same price.",
       replicaBadge: "Replica (unofficial)",
+      marketplaceBadge: "Marketplace",
+      marketplaceHint: "Sold by an independent seller on a marketplace: each seller sets the price and condition. Check their feedback before you buy.",
+      trustLine: "We compare official and authorised stores, plus marketplaces. We flag every replica and every marketplace seller before you click.",
+      trustLink: "How to spot a genuine shirt",
+      manufacturerCode: "Manufacturer code",
       bestPriceBadge: "Top Deal",
       retroBadge: "Retro / Collection",
       from: "From",
@@ -2308,6 +2328,11 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Photo du produit bientôt disponible",
       currencyNote: "Prix réel de chaque boutique dans sa devise d'origine. La boutique peut vous afficher une autre devise selon votre localisation, mais facture ce même prix.",
       replicaBadge: "Réplique (non officielle)",
+      marketplaceBadge: "Marketplace",
+      marketplaceHint: "Vendu par un vendeur indépendant sur une marketplace : chaque vendeur fixe le prix et l'état. Vérifiez ses avis avant d'acheter.",
+      trustLine: "Nous comparons des boutiques officielles et agréées, ainsi que des marketplaces. Nous signalons chaque réplique et chaque vendeur de marketplace avant que vous cliquiez.",
+      trustLink: "Comment reconnaître un maillot authentique",
+      manufacturerCode: "Référence fabricant",
       bestPriceBadge: "Meilleure offre",
       retroBadge: "Rétro / Collection",
       from: "À partir de",
@@ -2839,6 +2864,11 @@ export const translations: Record<Locale, Translations> = {
       photoPlaceholder: "Foto del prodotto in arrivo",
       currencyNote: "Prezzo reale di ogni negozio nella sua valuta originale. Il negozio potrebbe mostrarti un'altra valuta in base alla tua posizione, ma addebita questo stesso prezzo.",
       replicaBadge: "Replica (non ufficiale)",
+      marketplaceBadge: "Marketplace",
+      marketplaceHint: "Venduto da un venditore indipendente su un marketplace: prezzo e condizioni li decide ogni venditore. Controlla i suoi feedback prima di comprare.",
+      trustLine: "Confrontiamo negozi ufficiali e autorizzati, e anche marketplace. Segnaliamo ogni replica e ogni venditore di marketplace prima che tu clicchi.",
+      trustLink: "Come riconoscere una maglia originale",
+      manufacturerCode: "Codice produttore",
       bestPriceBadge: "Migliore offerta",
       retroBadge: "Retrò / Collezione",
       from: "Da",

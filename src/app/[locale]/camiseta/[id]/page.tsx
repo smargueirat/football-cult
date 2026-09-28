@@ -14,6 +14,7 @@ import priceHistoryData from "@/data/priceHistory.json";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { HUB } from "@/lib/hubStrings";
 import { TITLE_SUFFIX, ageGroupLabel } from "@/lib/categoryMeta";
+import { productMpn } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
 
 const SITE_URL = "https://football-cult.com";
@@ -48,6 +49,10 @@ function productJsonLd(product: Product, locale: HubLocale) {
     image: image ? [image] : undefined,
     url: `${SITE_URL}/${locale}/camiseta/${product.id}`,
     ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+    // Código del fabricante: con marca + mpn Google puede identificar el
+    // producto exacto, que es lo que un comparador quiere. No se manda el EAN
+    // porque es de UNA talla y esta ficha agrupa todas (ver offerGtin.ts).
+    ...(productMpn(product.offers) ? { mpn: productMpn(product.offers) } : {}),
     offers: aggregateOffer(product.offers),
   };
 }
@@ -225,7 +230,12 @@ export default async function JerseyDetailPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product, locale)) }}
       />
-      <JerseyDetailClient product={product} priceHistory={priceHistory} sameTeamProducts={sameTeamProducts} />
+      <JerseyDetailClient
+        product={product}
+        priceHistory={priceHistory}
+        sameTeamProducts={sameTeamProducts}
+        manufacturerCode={productMpn(product.offers)}
+      />
       <JerseyFaq product={product} locale={locale} />
     </>
   );

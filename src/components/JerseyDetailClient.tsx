@@ -20,7 +20,7 @@ import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
-import { isComparableStore } from "@/lib/officialStores";
+import { isComparableStore, isMarketplace } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -68,10 +68,13 @@ export default function JerseyDetailClient({
   product,
   priceHistory,
   sameTeamProducts,
+  manufacturerCode,
 }: {
   product: Product;
   priceHistory: Record<string, { date: string; price: number }[]>;
   sameTeamProducts: Product[];
+  /** Código del fabricante ("KC3993"), si alguna tienda lo publica. */
+  manufacturerCode?: string;
 }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
@@ -525,6 +528,25 @@ export default function JerseyDetailClient({
                     : t.detail.allSizes}
                 </p>
                 <p className="mb-3 text-xs text-[#5b5442]">{t.detail.currencyNote}</p>
+                {/* La promesa que SÍ podemos cumplir. "Solo camisetas oficiales"
+                    sería falso: listamos marketplaces y una tienda de réplicas
+                    (ver officialStores.ts). Lo verdadero, y lo que nos separa de
+                    las tiendas de réplicas que dominan la búsqueda en español,
+                    es decir de cada oferta qué es antes del clic. */}
+                <p className="mb-3 text-xs text-[#5b5442]">
+                  {t.detail.trustLine}{" "}
+                  <Link href="/autenticidad" className="underline underline-offset-2 hover:text-[#1B3B2B]">
+                    {t.detail.trustLink}
+                  </Link>
+                </p>
+                {/* Visible y no solo en los datos estructurados: hay gente que
+                    busca por el código de la etiqueta, y uno ya nos puso en la
+                    posición 8 de Google ("s08244", Search Console, sept. 2026). */}
+                {manufacturerCode && (
+                  <p className="mb-3 text-xs text-[#5b5442]">
+                    {t.detail.manufacturerCode}: <span className="font-mono">{manufacturerCode}</span>
+                  </p>
+                )}
 
                 <div className="flex flex-col gap-3">
                   {/* Las ofertas agotadas (inStock: false) no se muestran --
@@ -632,6 +654,14 @@ export default function JerseyDetailClient({
                                 {offer.store === "FansJerseyHub" && (
                                   <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
                                     {t.detail.replicaBadge}
+                                  </span>
+                                )}
+                                {isMarketplace(offer.store) && (
+                                  <span
+                                    title={t.detail.marketplaceHint}
+                                    className="rounded-full border border-[#675c44]/40 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#5b5442]"
+                                  >
+                                    {t.detail.marketplaceBadge}
                                   </span>
                                 )}
                               </div>

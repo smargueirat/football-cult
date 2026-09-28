@@ -18,6 +18,7 @@ export const NON_COMPARABLE_STORES = new Set([
   "eBay",
   "eBay ES",
   "eBay IT",
+  "eBay GB",
   "eBay US",
   "Amazon",
   "FansJerseyHub",
@@ -25,4 +26,16 @@ export const NON_COMPARABLE_STORES = new Set([
 
 export function isComparableStore(store: string): boolean {
   return !NON_COMPARABLE_STORES.has(store);
+}
+
+// Marketplaces: el precio lo pone cada vendedor independiente, no la
+// tienda. Se marca en cada oferta con su propia chapa (2026-09-28), igual
+// que ya se marcaban las réplicas: un comprador no tiene por qué saber que
+// "eBay GB" no es una tienda sino miles de vendedores. FansJerseyHub NO va
+// acá -- no es un marketplace sino una tienda de réplicas, y ya tiene su
+// propia chapa.
+const MARKETPLACE_STORES = new Set(["eBay", "eBay ES", "eBay IT", "eBay US", "eBay GB", "Amazon"]);
+
+export function isMarketplace(store: string): boolean {
+  return MARKETPLACE_STORES.has(store);
 }
