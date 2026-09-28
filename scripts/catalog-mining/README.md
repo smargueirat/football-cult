@@ -3171,3 +3171,149 @@ matching their rows exactly -- but **bound the FTP transfer**: `curl` with no
 `--max-time` hung for 5+ minutes on the last bytes of the first file and the
 run had to be restarted (`--max-time 150` is enough for four of them, Santos
 needs more).
+
+## Daily pass (2026-09-28) -- the eBay quota was finally there, and a reproduction seller hides behind a back-only photo
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation IT, ES, US --
+day-of-year 271 mod 3 = 1). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (13th pass).
+**66 new products** (4 current, 0 kids, 62 eBay retro -- 6586 -> 6652 blocks);
+`tsc`/dupe-id/duplicate-URL/build all clean. Store and currency censuses clean,
+`teamMeta` clean (361 teams, every club has a league).
+
+**The quota problem did not happen today, and reading `rate_limit/` first is
+why we know that rather than guessing.** At 06:08 UTC the endpoint reported
+`buy.browse remaining=4790/5000`, so all three marketplaces ran their full
+20-team batch back to back and **all three completed 20/20 with zero 429s** --
+IT 177/384 cycle 1, ES 165/384 cycle 1, US 202/384 cycle 4. The counter read
+4860 at the end of the run. That is the opposite of 09-26 (`remaining=0` at
+07:06, minutes into a fresh window) and of 09-27 (`remaining=0` at 07:01:44),
+both of which pinned the drain on `src/app/api/ebay-shipping/route.ts` under
+real traffic. So that drain is **bursty, not constant** -- which matters for
+the pending decision: the one-line `revalidate` 3600 -> 86400 change is still
+worth making, but "the batches always return near-zero" (09-26's prediction) is
+not true every day. **Keep reading the endpoint at the start of every run**;
+three days of data now say the answer changes day to day.
+
+**New false-positive class: the back-only-photo reproduction seller.** Three
+IT retro picks (`argentina|home|1994` Batistuta, `francia|away|2000` Zidane,
+`italia|away|2000` Totti) are the same operation -- a pristine "vintage" shirt
+on a **wooden hanger against a plain white slat wall, photographed only from
+the back**, with a keyword-stuffed title of the shape
+`PAÍS Maglia HOME/AWAY Shirt <torneo> <año> <JUGADOR> <N> Soccer Jersey <más
+jugadores>`. Every famous shirt, every famous player, never a crest or a brand
+mark in frame, all around €55-60 for shirts that cost hundreds when real. The
+regex `Maglia\s+(HOME|AWAY)\s+Shirt` found all three at once. This is the
+`\bretro\b`-reproduction rule wearing a different hat: **the tell is not the
+word "retro" in the title, it is that the photo never shows the front.** A
+front photo is what the whole verification step depends on -- treat its absence
+as a drop, not as "inconclusive".
+
+**Crystal Palace 26/27 resolved and applied after three days pending.** The
+user's answer settled it: the Palace **inverted its colours this season** --
+white at home, stripes away -- so the feed's "Domicile" label on the white
+sashed shirt was right all along and the 09-26 reasoning ("Palace's home is
+red-and-blue stripes, therefore the label is provably wrong") rested on an
+assumption that stopped being true for 26/27. Applied `600153340001` (white
+"Eagle Sash") as **home** and `600153380001` (black "Eagle Black") as **away**,
+each with its FootStoreFR + SportIsGoodFR offers; eBay US separately produced
+the **third** ("Eagle Wings", the diagonal lightning print), which is a genuine
+new product the CSV feeds did not carry. **A club's own colour convention is
+evidence with an expiry date** -- when a feed label contradicts what you know
+about a team, consider that the team changed, not only that the feed is wrong.
+
+**Photo review, 6 current drops, all blocklisted.** `jordania|goalkeeper` on
+**both** IT and ES is a **Brazil** CBF shirt (Jordan the brand); `mali|home` is
+a real Airness Mali with a real FMF crest but an unmistakably ~2010-2012 design
+sold as "2026" (retro-titled-as-current, the 09-10 class);
+`boca|training` at the $28.98 template price shows the adidas **2024** training
+top under a "26-27" title; `riverplate|training` is a CARP-monogram tee with
+**no supplier mark anywhere** (River is adidas) plus "Ask for available sizes";
+`como|away` invents a "Champions League Edition" for a club that is not in the
+Champions League and carries CLIMACOOL on the hem; `argentina|away` is an
+adidas **Originals trefoil** filigree lifestyle jersey, same class as the 09-24
+Japan prematch. Also dropped the eBay offer for the (real) Crystal Palace home
+because that listing says **"All Sizes"** -- the 09-27 made-to-order tell -- so
+the product landed with its two genuine store offers instead.
+
+**The `jordania` collision is not automatic: one of them was really Jordan.**
+`jordania|away` on eBay US is a **Kelme** shirt with the real JFA crest reading
+"JORDAN" -- Jordan qualified for the 2026 World Cup and Kelme is their actual
+supplier, so it stayed in the ADD set. Four passes of Air Jordan noise under
+this key make it tempting to drop the whole team; **check the crest before
+excluding a key wholesale.**
+
+**Six ambiguous season conflicts skipped rather than guessed**, which is the
+documented outcome and worth naming so they are not re-litigated every night:
+`espana|training` (teal Euro-2024-era adidas top titled 26/27),
+`inglaterra|away` (a real Nike red graffiti-print England away that cannot be
+dated confidently against the black 2025 on file), `iraq|home` (a genuinely
+different Jako Iraq home from the one on file, but the title only says "26"),
+`caboverde|home` (real Tempo shirt, but the listing sells home *and* away),
+`manutd|goalkeeper` (2025/26 against the 2026/27 on file -- older stock), and
+`brasil|prematch`, whose eBay item id was already on the product.
+
+**Three of today's retro products were bare-year twins of a two-year season and
+had to be un-created.** `brasil-retro-2006-home`, `colombia-retro-2014-home` and
+`honduras-retro-2024-third` each pointed at the same eBay item as an existing
+`…-200607-…`/`…-201415-…`/`…-202425-…` product -- the 09-19 single-year rule,
+which the NEW-vs-MERGE classifier does not apply because it compares the exact
+generated id. The post-insertion duplicate-URL diff against
+`git show HEAD:src/data/products.ts` caught all three plus three *pre-existing*
+bare-year twins that today's merge had written the same offer into
+(astonvilla 2018, liverpool 2007 and 2011); in every one of the six the offer
+**title's own season was the two-year form**, so the two-year product kept it.
+Net 262 cross-product duplicate URLs, **below** HEAD's 264. **Run that diff
+after every pass** -- it is still the only thing that catches this.
+
+**CSV feeds: zero new products for the 8th time**, all 15 stores plus the 2
+TradeTracker and the 5 Rakuten ones, apart from the two Crystal Palace shirts
+that were already sitting in the conflict set. All season conflicts were the
+documented noise: exact link and image already on file (AdidasPT Tiro 25 x2,
+Inter Miami on both BSTNs, ForumSport Alaves), `noruega|home` 2025 (**13th**
+pass), `internacional|home` 25/26 and `realbetis|training` 25/26 as older stock,
+and the ForumSport `barcelona|prematch` photo dated 2024 in its own filename.
+Shop Real Betis' in-stock filter (added 09-27) held -- 782 of 1931 rows, real
+home/away/third/GK/training picks, no minishirt and no sold-out row.
+DecathlonIE and ProSoccer genuine zeros as always. Rakuten's five files all
+arrived with a `TRL|` count matching their rows, but **every one of them needed
+all three `curl` retries** -- the transfer completes and then the connection
+hangs, so the retry loop is doing real work even though the first attempt's
+file was already good. Bound it and check the trailer rather than the exit code.
+
+`team_collision_scan.py`: **0 flags on every CSV-feed set**, 47 on eBay. The
+real ones were dropped (PSG under `jordania` x6 across IT and ES, Kerala
+Blasters under `india` x2, Peñarol/Nacional/Boca under `uruguay` x4, Zakho SC
+under `iraq`, CSD Municipal under `guatemala`, Gabrovo under `bulgaria`, EC
+Vitória under `brasil`, three Thai clubs under `tailandia`, a MIFA **Malaysia**
+shirt under `india`, and an **Arsenal** shirt under `inglaterra` that was in the
+IT *ADD* set, not NEW). The documented filler-name keepers are Burnley/England,
+Parma/ITALY x4, Everton/England x4 and Fulham/England as always. One the scan
+could not see: **`newcastle|home|2019` is Newcastle United *Jets*, the Australian
+A-League club** -- the flag said `australia`, which reads like the usual
+country-word noise, and only the title makes it a different club.
+`ebay_check_stale.py`: **31 of 200 (15.5%)**, above the 9.5-12% band of the last
+week but not an outlier worth acting on yet.
+
+**`retro_extract.py` still reads "Como 1907" as the season 1907.** Two picks
+(`como|home|1907`, `como|away|1907`, both at the $28.98 template price) came
+through with that season. The README's own false-positive list says this was
+fixed by masking the matched `TEAM_PATTERNS` span before season detection, and
+the mainline `pick.py` path does not show it -- so the mask is either not
+applied or not effective on the retro path. Dropped by hand this pass;
+**worth a real look next time rather than another hand-drop.**
+
+`refresh_boots.py`: 77 new, 43 dropped, 213 price changes, FutbolEmotion feed
+refreshed cleanly (no WARNING line), legacy `{fe_kept: 60, forum_kept: 58,
+forum_dropped: 2, products_removed: 1}` -- but its colour step reported
+**`ok: 0, errors: 8`** on the 8 new boot photos, the first nonzero error count
+in a while; not blocking (those boots fall back to a brand colour) but if it
+repeats it is a real extractor or CDN problem. `refresh_gear.py`: guantes 3 new
+/ 5 dropped / 29 price changes, pelotas 1 / 10 / 23, ropa 29 / 140 / 330,
+entrenamiento 6 / 10 / 21; `check_gear_ids.py` OK. Tickets: 5 new events, 10
+dropped, every venue lookup a Wikidata miss again so `venue_cities.json` is
+unchanged. Price drops: 664 across the seven sections (camisetas 57, botas 19,
+entradas 542, ropa 38, guantes 3, pelotas 4, entrenamiento 1); Telegram
+published 3 -- the `.env.local` fix from 09-27 is holding. Dominant colours:
+66 new, 0 errors.
