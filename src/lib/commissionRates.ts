@@ -1,12 +1,37 @@
 // Comisión estimada por tienda, como fracción del precio del producto.
 //
-// PROVISIONAL: son las tarifas típicas de cada red/programa, NO las
-// nuestras confirmadas una por una en el panel de Awin. Sirven para lo
-// que se usan hoy, que es ORDENAR (qué oferta ofrecer primero entre dos
-// precios casi iguales, qué bajada publicar antes en el canal): para eso
-// basta con que el orden relativo sea correcto. NO sirven para prometerle
-// a nadie un ingreso concreto. Cuando estén los porcentajes reales, se
-// cambian los números acá y nada más.
+// Sirven para ORDENAR (qué oferta ofrecer primero entre dos precios casi
+// iguales, qué bajada publicar antes en el canal). NO sirven para
+// prometerle a nadie un ingreso concreto.
+//
+// CONTRASTADAS CONTRA DATOS REALES DE AWIN el 2026-09-28. El panel no
+// publica el porcentaje de cada programa en un sitio parseable, pero sí
+// publica algo mejor: el EPC medido (lo que ese anunciante paga por clic,
+// promediado sobre TODOS los publishers de la red, así que ya mezcla
+// comisión con tasa de conversión). Leído en el directorio, pestaña
+// "Joined", región EUR:
+//
+//   anunciante          conversión    EPC
+//   FansJerseyHub         10,57%    USD 0,43   <- el mejor con diferencia
+//   adidas ES              3,90%    EUR 0,16
+//   Foot-Store ES          2,36%    EUR 0,08
+//   BSTN ES                1,91%    EUR 0,08
+//   Forum Sport ES         2,22%    EUR 0,07
+//   Sport is good ES       0,74%    EUR 0,03
+//   Deporte Outlet ES      0,51%    EUR 0,01   <- el peor
+//
+// Dos correcciones que salieron de ahí, porque los había sobreestimado:
+// Deporte Outlet y Sport is Good estaban en 6% y son, medidos, los dos
+// que menos dejan por clic de toda nuestra lista.
+//
+// Y un porcentaje real, ese sí publicado en los términos de su programa:
+// BSTN ES paga 8% a precio completo y 5% en rebajas (3% en lanzamientos,
+// 4% a sitios de cupones). Como casi todo lo que mostramos de ellos está
+// rebajado, 5% es el número que corresponde.
+//
+// OJO con el EPC: es el promedio de la red, no el nuestro. Nuestro
+// tráfico puede convertir distinto. Sirve para ordenar, que es para lo
+// que se usa.
 //
 // Por qué existe este archivo: un clic a una bota deja del orden de
 // cuatro veces lo que deja un clic a una camiseta de eBay (mediana €98 al
@@ -27,19 +52,27 @@ const RATES: Record<string, number> = {
   "eBay US": 0.02,
 
   // Awin, tiendas de fútbol especializadas.
-  FootStoreES: 0.06,
-  FootStoreFR: 0.06,
-  SportIsGoodES: 0.06,
-  SportIsGoodFR: 0.06,
+  // Medido: EPC EUR 0,08. Las dos tiendas son el mismo minorista en dos
+  // países, así que comparten tarifa.
+  FootStoreES: 0.05,
+  FootStoreFR: 0.05,
+  // Medido: EPC EUR 0,03 y 0,74% de conversión -- de los más flojos.
+  // Estaba en 0.06.
+  SportIsGoodES: 0.03,
+  SportIsGoodFR: 0.03,
   PlanetFoot: 0.06,
-  DeporteOutlet: 0.06,
-  DeporteOutletES: 0.06,
+  // Medido: EPC EUR 0,01 y 0,51% de conversión, lo más bajo de toda
+  // nuestra lista. Estaba en 0.06, que era una sobreestimación grande.
+  DeporteOutlet: 0.02,
+  DeporteOutletES: 0.02,
   FansJerseyHub: 0.08,
 
   // Marcas y grandes superficies: pagan menos que las especializadas.
   AdidasES: 0.06,
   AdidasPT: 0.06,
   DecathlonIE: 0.03,
+  // Publicado en sus propios términos: 8% a precio completo, 5% en
+  // rebajas. Casi todo lo que mostramos de ellos está rebajado.
   BSTNIT: 0.05,
   BSTNUK: 0.05,
   GigasportDE: 0.05,
