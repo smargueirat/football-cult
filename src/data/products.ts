@@ -37233,18 +37233,6 @@ const productsData = [
     ],
   },
 {
-    id: "colombia-third-2025",
-    teamKey: "colombia",
-    season: "2025",
-    typeKey: "third",
-    colorHex: "#FCD116",
-    colorHexSecondary: "#003893",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 59.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147478832807?_skw=Colombia+third+soccer+jersey+2025+2026&hash=item22566c66a7%3Ag%3A6WoAAeSwe41qb6lO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NIKE ATLETICO NACIONAL COLOMBIA 2025 2026 THIRD SOCCER JERSEY KIT SIZE SMALL NEW", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/6WoAAeSwe41qb6lO/s-l1600.jpg" },
-    ],
-  },
-{
     id: "corinthians-third-202526",
     teamKey: "corinthians",
     season: "2025/26",
@@ -49777,6 +49765,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 37.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398037849578?_skw=Atl%C3%A9tico+Nacional+third+soccer+jersey+2025+2026&hash=item5cace795ea%3Ag%3A0qYAAeSwROFqJafJ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Atlético Nacional Third Football Jersey 2025/2026 size M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/0qYAAeSwROFqJafJ/s-l1600.jpg" },
+      { store: "eBay", price: 59.95, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147478832807?_skw=Colombia+third+soccer+jersey+2025+2026&hash=item22566c66a7%3Ag%3A6WoAAeSwe41qb6lO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NIKE ATLETICO NACIONAL COLOMBIA 2025 2026 THIRD SOCCER JERSEY KIT SIZE SMALL NEW", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/6WoAAeSwe41qb6lO/s-l1600.jpg" },
     ],
   },
 {
