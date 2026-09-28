@@ -3,10 +3,10 @@ import { notFound } from "next/navigation";
 import {
   Product,
   findProduct,
+  kitTypeName,
   productImage,
   products,
   teamNames,
-  typeNames,
 } from "@/data/products";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
@@ -26,7 +26,11 @@ function productJsonLd(product: Product, locale: HubLocale) {
   // producto que ve Google era el mismo en /fr/ que en /es/.
   const team = teamNames[product.teamKey][locale];
   const age = ageGroupLabel(locale, product.ageGroup);
-  const type = age ? `${typeNames[product.typeKey][locale]} ${age}` : typeNames[product.typeKey][locale];
+  // Para las fichas retro esto lee además la equipación del id: si no,
+  // las seis variantes de un mismo equipo/temporada salen con el mismo
+  // título (ver kitTypeName en src/lib/productMeta.ts).
+  const kit = kitTypeName(product, locale);
+  const type = age ? `${kit} ${age}` : kit;
   const image = productImage(product);
 
   // Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
@@ -129,7 +133,11 @@ export async function generateMetadata({
   // La ficha de mujer y la de niños comparten equipo/tipo/temporada con la de
   // adulto: sin el sufijo salían con el mismo título y la misma descripción.
   const age = ageGroupLabel(locale, product.ageGroup);
-  const type = age ? `${typeNames[product.typeKey][locale]} ${age}` : typeNames[product.typeKey][locale];
+  // Para las fichas retro esto lee además la equipación del id: si no,
+  // las seis variantes de un mismo equipo/temporada salen con el mismo
+  // título (ver kitTypeName en src/lib/productMeta.ts).
+  const kit = kitTypeName(product, locale);
+  const type = age ? `${kit} ${age}` : kit;
   const title = `${team} ${type} ${product.season} — ${TITLE_SUFFIX[locale]} | Football Cult`;
   const description = HUB[locale].metaJersey({ team, type, season: product.season });
   const image = productImage(product);
@@ -193,12 +201,20 @@ export default async function JerseyDetailPage({
   // puente hacia una página donde el sitio hace lo que promete. Antes
   // salían en el orden del catálogo, así que podía llevar de una ficha
   // pobre a otra igual de pobre (auditoría 2026-09-24).
+  // Y se cuentan solo las tiendas con stock: ordenar por el total de
+  // ofertas ponía primero una ficha con tres ofertas agotadas antes que una
+  // con una sola oferta viva, o sea recomendaba algo que no se puede
+  // comprar. Pasaba en 94 fichas, y en 77 de ellas había una alternativa
+  // viva disponible para poner en su lugar (medido 2026-09-28).
+  const liveStores = (p: Product) =>
+    new Set(p.offers.filter((o) => o.inStock !== false).map((o) => o.store)).size;
   const sameTeamProducts = products
     .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
     .sort(
       (a, b) =>
+        liveStores(b) - liveStores(a) ||
         new Set(b.offers.map((o) => o.store)).size -
-        new Set(a.offers.map((o) => o.store)).size,
+          new Set(a.offers.map((o) => o.store)).size,
     )
     .slice(0, 10);
 
