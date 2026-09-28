@@ -281,6 +281,32 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # aparte: `colombia-third-2025` que ya esta en products.ts es un
     # Atletico Nacional por la misma razon, entro en una pasada anterior.
     "ebay.com/itm/820135186242",
+    # 2026-09-28. Camiseta de BRASIL (escudo CBF, marca Jordan) archivada bajo
+    # `jordania` -- la enesima colision Air Jordan / Jordania. Aparecio en IT y ES.
+    "/itm/327279998023",
+    # 2026-09-28. Mali Airness real (escudo FMF autentico) pero el diseno es de
+    # la era ~2010-2012 y el titulo lo vende como "2026": retro etiquetado como
+    # actual, misma clase que el 09-10 de FansJerseyHub.
+    "/itm/318871848098",
+    # 2026-09-28. Boca "training 26-27" al precio plantilla de $28.98: el diseno
+    # es el training adidas de 2024, la temporada del titulo no se sostiene.
+    "ebay.com/itm/377485736668",
+    # 2026-09-28. River Plate "training 2026": remera con monograma CARP y SIN
+    # marca de proveedor por ningun lado (River es adidas) + "Ask for available
+    # sizes" = merchandising no licenciado hecho a pedido.
+    "ebay.com/itm/277854561514",
+    # 2026-09-28. Como 1907 away: el titulo inventa una "Champions League
+    # Edition" (el Como no juega la Champions) y la prenda lleva CLIMACOOL en el
+    # bajo. Replica.
+    "ebay.com/itm/307193936823",
+    # 2026-09-28. Argentina "away 2026/27": trefoil de adidas Originals +
+    # CLIMACOOL + estampa de filigrana = camiseta lifestyle, no la de partido.
+    # Misma clase que el Japon prematch del 09-24.
+    "/itm/237058077886",
+    # 2026-09-28. Crystal Palace home 26/27 "All Sizes": la camiseta es real y
+    # entro al catalogo por FootStoreFR/SportIsGoodFR, pero ESTA publicacion es
+    # del tipo hecho-a-pedido (misma senal que el Inglaterra 1998/99 del 09-27).
+    "ebay.com/itm/318901058359",
 ]
 
 

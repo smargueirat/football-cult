@@ -502,6 +502,11 @@
   "desc": "stadium in Mainz, Rhineland-Palatinate, Germany",
   "qid": "Q392494"
  },
+ "Panthessaliko Stadium": {
+  "city": "Nea Ionia",
+  "desc": "stadium in Nea Ionia, Volos, Greece",
+  "qid": "Q930369"
+ },
  "Parc des Princes": {
   "city": "Paris",
   "desc": "multipurpose sports venue in Paris, France",
@@ -825,6 +830,11 @@
   "qid": "Q55074091"
  },
  "Toughsheet Community Stadium": null,
+ "Toumba Stadium": {
+  "city": "Thessaloniki",
+  "desc": "football stadium in Thessaloniki, Greece",
+  "qid": "Q1141292"
+ },
  "Trolli Arena": {
   "city": "Bavaria",
   "desc": "football stadium in Bavaria, Germany",
