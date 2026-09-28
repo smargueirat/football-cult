@@ -511,6 +511,40 @@ export const typeNames: Record<TypeKey, Record<Locale, string>> = {
   retro: { es: "Retro", en: "Retro", pt: "Retrô", fr: "Rétro", it: "Retrò" },
 };
 
+// Las fichas retro NO guardan en ningún campo qué equipación son: su
+// typeKey es literalmente "retro" y la variante (titular / suplente /
+// tercera / arquero / entrenamiento / prematch) vive SOLO en el id, que
+// la minería arma como `<equipo>-retro-<temporada>-<variante>` (a veces
+// con una cola de colorway: `-euroskit`, `-sunsetglow`, `-mens`).
+//
+// Real bug found (2026-09-28): psg-retro-202324-home, -away, -third,
+// -goalkeeper, -training y -prematch salían las SEIS con el mismo
+// <title>, la misma meta descripción y el mismo `name` en el JSON-LD.
+// Es la misma señal de "Duplicada: Google ha elegido una versión
+// canónica diferente" que ya se arregló para las copias por idioma
+// (3ab5b8e) y para mujer/niños (61346ed). Medido sobre el catálogo:
+// 1.113 grupos de fichas con título idéntico, 2.551 fichas; leyendo la
+// variante del id quedan 31 grupos / 73 fichas. Esos 31 son otro
+// problema -- colorways que solo se distinguen por una cola del id
+// (bay-home-2025 vs bay-home-heritage-2025), 29 de fichas no retro y 2
+// de retro (-euroskit, -sunsetglow) -- y no se tocan acá.
+//
+// La palabra "Retro" se mantiene DELANTE de la variante en vez de
+// reemplazarla: sin ella, "bayern-retro-202425-training" pasaría a
+// llamarse igual que el "bayern-training-*" real de esa temporada, o
+// sea cambiaríamos un duplicado por otro.
+const RETRO_KIT = /-(home|away|third|goalkeeper|training|prematch)(?:-|$)/;
+
+export function kitTypeName(product: Product, locale: Locale): string {
+  const kit =
+    product.typeKey === "retro"
+      ? (product.id.match(RETRO_KIT)?.[1] as TypeKey | undefined)
+      : undefined;
+  return kit
+    ? `${typeNames.retro[locale]} ${typeNames[kit][locale]}`
+    : typeNames[product.typeKey][locale];
+}
+
 export function seasonSortValue(season: string): number {
   const match = season.match(/\d{4}/);
   return match ? parseInt(match[0], 10) : 0;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Product } from "@/data/products";
-import { bestOffer, teamNames, typeNames } from "@/data/products";
+import { bestOffer, kitTypeName, teamNames } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import type { HubLocale } from "@/data/teamMeta";
 import { FAQ_LINKS, FAQ_TITLE, buildFaq } from "@/lib/jerseyFaq";
@@ -16,7 +16,7 @@ export default function JerseyFaq({ product, locale }: { product: Product; local
   const team = teamNames[product.teamKey][locale];
   const faq = buildFaq(locale, {
     team,
-    type: typeNames[product.typeKey][locale].toLowerCase(),
+    type: kitTypeName(product, locale).toLowerCase(),
     season: product.season,
     price: best ? formatOfferMoney(best.price + best.shipping, best.currency) : "",
     store: best?.store ?? "",

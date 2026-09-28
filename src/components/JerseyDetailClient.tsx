@@ -11,9 +11,9 @@ import {
   displayTitleForCountry,
   getAgeGroup,
   isVintageRetro,
+  kitTypeName,
   offerShipsTo,
   teamNames,
-  typeNames,
 } from "@/lib/productMeta";
 import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
@@ -83,7 +83,7 @@ export default function JerseyDetailClient({
   const favorite = isFavorite(product.id);
 
   const team = teamNames[product.teamKey][locale];
-  const type = typeNames[product.typeKey][locale];
+  const type = kitTypeName(product, locale);
   const sizes = availableSizesForCountry(product, countryCode);
   const ageGroup = getAgeGroup(product);
 

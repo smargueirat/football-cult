@@ -158,3 +158,16 @@ if printf '%s' "$TEAM_LEAGUE_OUT" | grep -q '^AVISO teamMeta:'; then
 
 Agregarlo a TEAM_LEAGUE en src/data/teamMeta.ts (y la liga a LEAGUES si no existe todavía). Si a propósito no va a tener liga, sumarlo a KNOWN_WITHOUT_LEAGUE en scripts/check_team_leagues.py con el motivo."
 fi
+
+# Las fichas retro no guardan en ningún campo qué equipación son: el
+# typeKey es "retro" para las 5.234 y la variante vive solo en el sufijo
+# del id, que es de donde la lee kitTypeName (src/lib/productMeta.ts).
+# Si una pasada genera un id retro con un sufijo que no está en esa
+# lista, la ficha vuelve a compartir <title>, meta descripción y JSON-LD
+# con las otras equipaciones del mismo equipo y temporada -- en silencio,
+# que es justo como estuvo hasta el 2026-09-28. Ver el comentario largo
+# de scripts/check_retro_kit.mts.
+RETRO_KIT_OUT="$(npx tsx scripts/check_retro_kit.mts 2>&1)" || send_alert "Daily scan: ficha retro sin equipación en el id" "$RETRO_KIT_OUT
+
+Arreglar el id en src/data/products.ts para que termine en una de las seis equipaciones (-home/-away/-third/-goalkeeper/-training/-prematch, con cola de colorway opcional). Si de verdad apareció una equipación nueva que no estaba contemplada, sumar el sufijo a RETRO_KIT en src/lib/productMeta.ts y traducirlo en typeNames."
+echo "$RETRO_KIT_OUT"

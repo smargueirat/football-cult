@@ -26,6 +26,7 @@ import {
   getAgeGroup,
   isPriceDropped,
   isVintageRetro,
+  kitTypeName,
   offerShipsTo,
   priceDropPercent,
   seasonSortValue,
@@ -48,6 +49,7 @@ export {
   getAgeGroup,
   isPriceDropped,
   isVintageRetro,
+  kitTypeName,
   offerShipsTo,
   priceDropPercent,
   seasonSortValue,
@@ -760,6 +762,13 @@ export interface Product {
 // se asume 0 hasta tener ese dato. FansJerseyHub reporta "out_of_stock" para
 // TODO su catálogo en el feed (bug de su lado) por lo que inStock se fuerza
 // a true para esa tienda; PlanetFoot sí usa su disponibilidad real.
+// OJO al tocar la forma de este literal: TypeScript infiere el tipo de las
+// 6.729 fichas y de cada una de sus ofertas, y está al borde del límite de
+// complejidad. Probado el 2026-09-28: anotarlo como `Product[]`, o sumarle un
+// campo opcional más a las ofertas, revienta con "Expression produces a union
+// type that is too complex to represent". Por eso el EAN/GTIN vive en un mapa
+// aparte (src/data/offerGtins.json) y no dentro de cada oferta -- mismo
+// motivo, y mismo patrón, que las bajadas de precio en src/lib/priceDrops.ts.
 const productsData = [
 {
     id: "minnesotaunited-third-202526",
