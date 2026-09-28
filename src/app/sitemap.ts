@@ -127,6 +127,9 @@ function allRoutes(): MetadataRoute.Sitemap {
     // Hubs de temporada, ofertas y de botas/guantes/pelotas/ropa (marca,
     // terreno, tipo): solo los que tienen suficiente producto hoy.
     "/ofertas",
+    // Puerta de entrada por presupuesto (regalos): una sola URL, no una por
+    // tramo -- ver el comentario de la propia página.
+    "/regalos",
     "/guia",
     // Derivado de GUIDE_SLUGS y no escrito a mano: estaban listadas solo
     // dos de las cuatro guías (faltaban la de tapones y la de retro), que

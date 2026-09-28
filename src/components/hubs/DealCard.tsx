@@ -29,7 +29,9 @@ export default function DealCard({
   image: string;
   price: number;
   currency: OfferCurrencyCode;
-  pct: number;
+  /** Porcentaje de bajada. Sin él no se pinta la chapa: /regalos lista
+   *  productos por presupuesto, no rebajas. */
+  pct?: number;
   store: string;
   priority?: boolean;
 }) {
@@ -47,9 +49,11 @@ export default function DealCard({
           decoding="async"
           className="h-full w-full object-contain"
         />
-        <span className="shadow-vintage-sm absolute left-2 top-2 rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
-          -{pct}%
-        </span>
+        {pct != null && (
+          <span className="shadow-vintage-sm absolute left-2 top-2 rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+            -{pct}%
+          </span>
+        )}
       </div>
       <div className="flex flex-1 flex-col gap-1 p-3">
         <span className="text-sm font-medium leading-snug text-[#1B3B2B]">{title}</span>
