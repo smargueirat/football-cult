@@ -174,6 +174,16 @@ RETRO_KIT_OUT="$(npx tsx scripts/check_retro_kit.mts 2>&1)" || send_alert "Daily
 Arreglar el id en src/data/products.ts para que termine en una de las seis equipaciones (-home/-away/-third/-goalkeeper/-training/-prematch, con cola de colorway opcional). Si de verdad apareció una equipación nueva que no estaba contemplada, sumar el sufijo a RETRO_KIT en src/lib/productMeta.ts y traducirlo en typeNames."
 echo "$RETRO_KIT_OUT"
 
+# Fecha de alta de cada ficha, para /novedades (agregado 2026-09-28). Sale del
+# historial de git y no de la historia de precios, cuyas URLs de Awin cambian
+# entre descargas y reinician la fecha. Va ANTES de IndexNow para que la página
+# de novedades ya tenga las fichas de hoy cuando se avisa a Bing.
+python3 scripts/catalog-mining/first_seen.py 2>&1 | tail -2
+if ! git diff --quiet -- src/data/productFirstSeen.json; then
+  git add src/data/productFirstSeen.json
+  git commit -q -m "chore(novedades): fechas de alta del $(date +%Y-%m-%d)" && git push -q origin "$(git rev-parse --abbrev-ref HEAD)"
+fi
+
 # IndexNow (Bing, Yandex, Seznam, Naver) -- agregado 2026-09-28. Hasta ese
 # día solo se había mandado a mano, dos veces. Bing tenía 61,7K URLs nuestras
 # descubiertas y CERO indexadas, y es el índice que alimenta Yahoo,

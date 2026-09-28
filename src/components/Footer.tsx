@@ -5,6 +5,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { HUB } from "@/lib/hubStrings";
 import { SEASON_UI } from "@/lib/seasonStrings";
 import { GIFTS_UI } from "@/lib/giftStrings";
+import { NEW_UI } from "@/lib/newStrings";
 import { GUIDE_UI } from "@/lib/guideUi";
 import { LEAGUES, leagueName } from "@/data/teamMeta";
 
@@ -101,6 +102,9 @@ export default function Footer() {
         </Link>
         <Link href="/regalos" className="transition-colors hover:text-[#F3E9C9]">
           {GIFTS_UI[locale].h1}
+        </Link>
+        <Link href="/novedades" className="transition-colors hover:text-[#F3E9C9]">
+          {NEW_UI[locale].h1}
         </Link>
         {FOOTER_LEAGUES.map((slug) => {
           const l = LEAGUES.find((x) => x.slug === slug);

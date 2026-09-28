@@ -1,3 +1,4 @@
+import firstSeen from "@/data/productFirstSeen.json";
 import { bestOffer, products, teamNames, typeNames } from "@/data/products";
 import type { Offer, Product, TeamKey, TypeKey } from "@/data/products";
 import { getAgeGroup, seasonSortValue } from "@/lib/productMeta";
@@ -91,3 +92,24 @@ export function kindsLabel(items: HubItem[], locale: "es" | "en" | "pt" | "fr" |
 }
 
 export { LEAGUES };
+
+// Camisetas de temporada que entraron al catálogo en los últimos `days` días,
+// de la más nueva a la más vieja (para /novedades). La fecha de alta sale de
+// productFirstSeen.json, que arma scripts/catalog-mining/first_seen.py desde
+// el historial de git -- NO de la historia de precios, cuyas URLs de Awin
+// cambian entre descargas y reinician la fecha.
+export function newArrivals(days = 30): (HubItem & { since: string })[] {
+  const cutoff = new Date(Date.now() - days * 86_400_000).toISOString().slice(0, 10);
+  const out: (HubItem & { since: string })[] = [];
+  for (const product of products) {
+    // Solo la temporada en curso: una camiseta 2025/26 que NOSOTROS sumamos
+    // hace poco (las de mujer del 28-09, por ejemplo) no es una camiseta nueva.
+    if (product.typeKey === "retro" || !/^(2026\/27|2026)$/.test(product.season)) continue;
+    const since = (firstSeen as Record<string, string>)[product.id];
+    if (!since || since < cutoff) continue;
+    const offer = bestOffer(product);
+    if (!offer) continue;
+    out.push({ product, offer, eur: offerTotalInEUR(offer), since });
+  }
+  return out.sort((a, b) => b.since.localeCompare(a.since) || a.eur - b.eur);
+}

@@ -11,7 +11,7 @@ import re, sys, json, urllib.request
 
 KEY = "24f76c1eeb9a510ee614e31ee9825725"
 HOST = "football-cult.com"
-HUB = re.compile(r"/(?:es|en|pt|fr|it)(?:/(?:equipo|liga|pais|ligas|temporada|ofertas|botas/marca|botas/terreno|guantes/marca|pelotas/marca|ropa/marca|ropa/tipo|guia)(?:/|$)|$|/(?:botas|guantes|pelotas|ropa|tickets|selecciones|clubes|retro|mujer|ninos)$)")
+HUB = re.compile(r"/(?:es|en|pt|fr|it)(?:/(?:equipo|liga|pais|ligas|temporada|ofertas|novedades|regalos|botas/marca|botas/terreno|guantes/marca|pelotas/marca|ropa/marca|ropa/tipo|guia)(?:/|$)|$|/(?:botas|guantes|pelotas|ropa|tickets|selecciones|clubes|retro|mujer|ninos)$)")
 
 def sitemap_urls():
     urls = []

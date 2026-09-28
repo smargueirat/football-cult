@@ -130,6 +130,9 @@ function allRoutes(): MetadataRoute.Sitemap {
     // Puerta de entrada por presupuesto (regalos): una sola URL, no una por
     // tramo -- ver el comentario de la propia página.
     "/regalos",
+    // Camisetas recién salidas: cambia a diario, es la que más conviene que
+    // Google revisite.
+    "/novedades",
     "/guia",
     // Derivado de GUIDE_SLUGS y no escrito a mano: estaban listadas solo
     // dos de las cuatro guías (faltaban la de tapones y la de retro), que
