@@ -1,4 +1,4 @@
-import { variantKey } from "@/lib/jerseyVersion";
+import { mpnFor } from "@/lib/offerGtin";
 import { isComparableStore } from "@/lib/officialStores";
 import { products } from "@/data/products";
 
@@ -56,7 +56,7 @@ export interface PriceStudy {
   shareOver10: number;
   shareSamePrice: number;
   examples: StudyExample[];
-  /** Las 549 filas completas, no solo los diez ejemplos destacados. Existe
+  /** Todas las filas, no solo los diez ejemplos destacados. Existe
    *  para el CSV descargable: lo primero que pide quien quiere citar el
    *  estudio es la tabla entera, y sin ella el dato no es verificable. */
   rows: StudyExample[];
@@ -83,23 +83,27 @@ export function priceStudy(): PriceStudy {
     if (!CURRENT_SEASONS.includes(p.season)) continue;
     const eligible = p.offers.filter((o) => o.currency === "EUR" && isComparableStore(o.store));
 
-    // Solo se comparan ofertas de la MISMA versión. La de jugador y la de
-    // hincha son prendas distintas que las marcas separan por 50-70 EUR,
-    // así que mezclarlas no mide dispersión de precio: mide la diferencia
-    // entre dos productos. Se veía justo donde más duele -- 6 de los 10
-    // ejemplos destacados eran mezclas, porque el estudio ordena por la
-    // diferencia más grande y estas siempre ganan (auditoría 2026-09-24).
-    // Se toma el grupo con más tiendas; a igualdad, el de hincha, que es
-    // el que busca la mayoría.
-    // Se agrupa por la clave de variante completa (versión + manga) y se
-    // compara dentro del grupo más grande. Empezó siendo solo la versión;
-    // la manga larga mezclaba otras 43 fichas por el mismo motivo.
-    const byVariant = new Map<string, typeof eligible>();
+    // Solo se comparan ofertas con el MISMO CÓDIGO DE FABRICANTE (MPN).
+    //
+    // Antes se agrupaba por versión y manga leídas del título (variantKey),
+    // y no alcanzaba: adidas escribe "Oficial" tanto en la versión de jugador
+    // (150 EUR) como en la de hincha (90 EUR), y otras tiendas no escriben
+    // nada. Resultado, medido el 2026-09-28: los tres ejemplos principales
+    // eran mezclas -- "Italia mujer" comparaba la de hincha a 60 EUR (código
+    // JY7586) con la de jugador a 150 (KA193) -- y la diferencia media
+    // publicada daba 17,5% cuando, comparando la misma prenda, es 7,6%.
+    //
+    // El código del fabricante no se adivina: lo publica cada tienda en su
+    // feed y es distinto para cada versión. Dos ofertas con el mismo código
+    // son la misma prenda, sin interpretación. Es menos muestra (se quedan
+    // afuera las ofertas sin código), pero cada fila del estudio se puede
+    // verificar, que es lo que necesita quien quiera citarlo.
+    const byMpn = new Map<string, typeof eligible>();
     for (const o of eligible) {
-      const k = variantKey(o);
-      byVariant.set(k, [...(byVariant.get(k) ?? []), o]);
+      const m = mpnFor(o.url);
+      if (m) byMpn.set(m, [...(byMpn.get(m) ?? []), o]);
     }
-    const offers = [...byVariant.values()].sort(
+    const offers = [...byMpn.values()].sort(
       (a, b) => new Set(b.map((o) => o.store)).size - new Set(a.map((o) => o.store)).size,
     )[0];
     if (!offers) continue;

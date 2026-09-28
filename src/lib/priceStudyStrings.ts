@@ -36,6 +36,7 @@ export interface StudyCopy {
   method2: string;
   method3: string;
   method4: string;
+  method5: string;
   citeTitle: string;
   citeText: string;
   citeLine: string;
@@ -73,9 +74,9 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colStore: "Tienda",
     colWins: "Veces más barata",
     colWinPct: "% de victorias",
-    brandTitle: "La tienda de la marca no suele ser la más barata",
+    brandTitle: "La misma camiseta de adidas cambia de precio según el país",
     brandText:
-      "Uno de los resultados más constantes: las tiendas oficiales de las marcas quedan primeras en precio solo en una minoría de los casos. Comprar en la tienda del fabricante da tranquilidad, pero rara vez da el mejor precio.",
+      "adidas vende la misma prenda, con el mismo código de fabricante, en su tienda de España y en la de Portugal, y el precio final no coincide. A veces la diferencia es solo el envío; en otras es de decenas de euros, y no siempre gana la misma tienda.",
     methodTitle: "Cómo se calculó",
     methodIntro:
       "El estudio se recalcula solo con cada actualización del catálogo. Estos son los criterios, elegidos para no inflar el resultado:",
@@ -87,6 +88,8 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
       "Solo minoristas oficiales. Se excluyen los marketplaces, donde el precio depende del vendedor y del estado del artículo, y las tiendas de réplicas no licenciadas.",
     method4:
       "Precio final, no precio de etiqueta: se suma el envío. Una tienda barata con envío caro puede terminar saliendo más.",
+    method5:
+      "Solo la misma prenda: se comparan únicamente ofertas con el mismo código de fabricante, que cada tienda publica y que es distinto para la versión de jugador y la de hincha. Así no se mezclan dos productos distintos, y cada fila de la tabla se puede verificar.",
     citeTitle: "Usar estos datos",
     citeText:
       "Los datos son libres de citar. Si los usás en una nota o un artículo, te agradecemos el enlace a esta página, que se actualiza sola y siempre muestra el número vigente.",
@@ -123,9 +126,9 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colStore: "Store",
     colWins: "Times cheapest",
     colWinPct: "Win rate",
-    brandTitle: "The brand's own store is rarely the cheapest",
+    brandTitle: "The same adidas shirt costs different amounts by country",
     brandText:
-      "One of the most consistent findings: the manufacturers' own stores come out cheapest only in a minority of cases. Buying from the brand gives peace of mind, but it rarely gives the best price.",
+      "adidas sells the same item, with the same manufacturer code, in its Spanish store and its Portuguese store, and the final price doesn't match. Sometimes the gap is just shipping; other times it's tens of euros, and the same store doesn't always win.",
     methodTitle: "How it was calculated",
     methodIntro:
       "The study recalculates itself with every catalogue update. These are the criteria, chosen so the result isn't inflated:",
@@ -137,6 +140,8 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
       "Official retailers only. Marketplaces are excluded, where price depends on the seller and the item's condition, as are unlicensed replica shops.",
     method4:
       "Final price, not sticker price: shipping is added. A cheap store with expensive shipping can end up costing more.",
+    method5:
+      "Identical items only: we compare only offers that share the same manufacturer code, which each store publishes and which differs between the player and fan versions. That way two different products are never mixed, and every row in the table can be checked.",
     citeTitle: "Using this data",
     citeText:
       "The data is free to cite. If you use it in an article, we'd appreciate a link to this page, which updates itself and always shows the current figure.",
@@ -173,9 +178,9 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colStore: "Loja",
     colWins: "Vezes mais barata",
     colWinPct: "% de vitórias",
-    brandTitle: "A loja da marca raramente é a mais barata",
+    brandTitle: "A mesma camisa da adidas muda de preço conforme o país",
     brandText:
-      "Um dos resultados mais constantes: as lojas oficiais das marcas ficam em primeiro no preço apenas numa minoria dos casos. Comprar na loja do fabricante dá tranquilidade, mas raramente dá o melhor preço.",
+      "A adidas vende a mesma peça, com o mesmo código do fabricante, na loja da Espanha e na de Portugal, e o preço final não coincide. Às vezes a diferença é só o frete; em outras é de dezenas de euros, e nem sempre ganha a mesma loja.",
     methodTitle: "Como foi calculado",
     methodIntro:
       "O estudo recalcula-se sozinho a cada atualização do catálogo. Estes são os critérios, escolhidos para não inflacionar o resultado:",
@@ -187,6 +192,8 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
       "Só retalhistas oficiais. Excluem-se os marketplaces, onde o preço depende do vendedor e do estado do artigo, e as lojas de réplicas não licenciadas.",
     method4:
       "Preço final, não preço de etiqueta: somam-se os portes. Uma loja barata com portes caros pode acabar por sair mais cara.",
+    method5:
+      "Só a mesma peça: comparamos apenas ofertas com o mesmo código do fabricante, que cada loja publica e que é diferente para a versão de jogador e a de torcedor. Assim não se misturam dois produtos diferentes, e cada linha da tabela pode ser verificada.",
     citeTitle: "Usar estes dados",
     citeText:
       "Os dados são livres de citar. Se os usares num artigo, agradecemos a ligação para esta página, que se atualiza sozinha e mostra sempre o número atual.",
@@ -223,9 +230,9 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colStore: "Boutique",
     colWins: "Fois la moins chère",
     colWinPct: "% de victoires",
-    brandTitle: "La boutique de la marque est rarement la moins chère",
+    brandTitle: "Le même maillot adidas change de prix selon le pays",
     brandText:
-      "L'un des résultats les plus constants : les boutiques officielles des marques n'arrivent en tête sur le prix que dans une minorité de cas. Acheter chez le fabricant rassure, mais donne rarement le meilleur prix.",
+      "adidas vend le même article, avec la même référence fabricant, dans sa boutique espagnole et dans sa boutique portugaise, et le prix final n'est pas le même. Parfois l'écart n'est que la livraison ; parfois il atteint des dizaines d'euros, et ce n'est pas toujours la même boutique qui gagne.",
     methodTitle: "Comment c'est calculé",
     methodIntro:
       "L'étude se recalcule seule à chaque mise à jour du catalogue. Voici les critères, choisis pour ne pas gonfler le résultat :",
@@ -237,6 +244,8 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
       "Uniquement les détaillants officiels. Les marketplaces sont exclues, où le prix dépend du vendeur et de l'état de l'article, ainsi que les boutiques de répliques non licenciées.",
     method4:
       "Prix final, pas prix affiché : la livraison est incluse. Une boutique bon marché avec une livraison chère peut revenir plus cher au total.",
+    method5:
+      "Uniquement le même article : nous ne comparons que des offres avec la même référence fabricant, que chaque boutique publie et qui diffère entre la version joueur et la version supporter. Ainsi deux produits différents ne sont jamais mélangés, et chaque ligne du tableau est vérifiable.",
     citeTitle: "Utiliser ces données",
     citeText:
       "Les données sont libres de citation. Si vous les utilisez dans un article, un lien vers cette page est apprécié : elle se met à jour seule et affiche toujours le chiffre en vigueur.",
@@ -273,9 +282,9 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colStore: "Negozio",
     colWins: "Volte più economico",
     colWinPct: "% di vittorie",
-    brandTitle: "Il negozio del marchio raramente è il più economico",
+    brandTitle: "La stessa maglia adidas cambia prezzo a seconda del paese",
     brandText:
-      "Uno dei risultati più costanti: i negozi ufficiali dei marchi risultano primi sul prezzo solo in una minoranza di casi. Comprare dal produttore dà tranquillità, ma raramente dà il prezzo migliore.",
+      "adidas vende lo stesso articolo, con lo stesso codice produttore, nel negozio spagnolo e in quello portoghese, e il prezzo finale non coincide. A volte la differenza è solo la spedizione; altre volte è di decine di euro, e non vince sempre lo stesso negozio.",
     methodTitle: "Come è stato calcolato",
     methodIntro:
       "Lo studio si ricalcola da solo a ogni aggiornamento del catalogo. Questi sono i criteri, scelti per non gonfiare il risultato:",
@@ -287,6 +296,8 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
       "Solo rivenditori ufficiali. Sono esclusi i marketplace, dove il prezzo dipende dal venditore e dalle condizioni dell'articolo, e i negozi di repliche non ufficiali.",
     method4:
       "Prezzo finale, non prezzo di listino: la spedizione è inclusa. Un negozio economico con spedizione cara può costare di più alla fine.",
+    method5:
+      "Solo lo stesso articolo: confrontiamo soltanto offerte con lo stesso codice produttore, che ogni negozio pubblica e che è diverso tra la versione giocatore e quella tifoso. Così non si mescolano due prodotti diversi, e ogni riga della tabella si può verificare.",
     citeTitle: "Usare questi dati",
     citeText:
       "I dati sono liberi da citare. Se li usi in un articolo, ti saremmo grati per un link a questa pagina, che si aggiorna da sola e mostra sempre il dato attuale.",

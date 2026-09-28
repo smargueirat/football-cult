@@ -164,7 +164,7 @@ export default async function PriceStudyPage({ params }: P) {
         <h2 className="font-vintage text-xl text-[#1B3B2B] sm:text-2xl">{c.methodTitle}</h2>
         <p className="mt-2 text-sm leading-relaxed text-[#675c44]">{c.methodIntro}</p>
         <ul className="mt-4 flex flex-col gap-2.5">
-          {[c.method1, c.method2, c.method3, c.method4].map((m, i) => (
+          {[c.method5, c.method1, c.method2, c.method3, c.method4].map((m, i) => (
             <li key={i} className="flex gap-2.5 text-sm leading-relaxed text-[#3a3a36]">
               <span aria-hidden className="mt-0.5 text-[#C9A24B]">▸</span>
               <span>{m}</span>
