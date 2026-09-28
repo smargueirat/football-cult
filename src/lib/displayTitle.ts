@@ -41,6 +41,47 @@ function titleCaseWord(word: string): string {
   return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
 }
 
+// Ruido de VENDEDOR, no nombre de producto. El título real de la tienda
+// sigue siendo la fuente de verdad y no se reemplaza nunca por uno armado
+// por nosotros (feedback_realname_primary.md) -- esto solo le saca los
+// trozos que no nombran nada: jerga de estado de eBay, promesas de envío y
+// afirmaciones de autenticidad que además no podemos verificar.
+//
+// Medido sobre los 11.051 títulos del catálogo (2026-09-28): 1.341 traen
+// BNIB/BNWT/NWT, 206 "new with tags", 54 "100% original/authentic" y 3 una
+// promesa de envío. La jerga de eBay es, de lejos, la que más pesa.
+//
+// Deliberadamente NO se toca:
+//   - "New" suelto (1.008 títulos): es parte de nombres reales -- New York
+//     City FC, New Balance.
+//   - La talla ("Size M", "S-2XL", 85 títulos): en un listado suelto de
+//     eBay puede ser el único ejemplar que existe, así que sacarla puede
+//     quitar información de verdad. La ficha ya muestra las tallas aparte.
+const SELLER_NOISE: RegExp[] = [
+  /\b(bnib|bnwt|bnwot|nwot|nwt)\b/gi,
+  /\bbrand\s+new\s+(?:with\s+|w\/\s*)?tags?(?:\s+on)?\b/gi,
+  /\bnew\s+with\s+tags?\b/gi,
+  /\bwith\s+tags\s+on\b/gi,
+  /\bcon\s+etiquetas\b/gi,
+  /\b(?:fast|free|quick|express)\s+(?:domestic\s+)?shipping\b!*/gi,
+  /\benv[ií]o\s+gratis\b/gi,
+  /\b100\s*%\s*(?:original|authentic|genuine)\b/gi,
+];
+
+// Sacar un trozo del medio deja separadores huérfanos ("Jersey - - Qatar",
+// "Shirt |", "Camiseta ,"). Esto los recompone en vez de dejar el título
+// peor de lo que estaba.
+function tidySeparators(title: string): string {
+  return title
+    .replace(/\s{2,}/g, " ")
+    .replace(/\s*([-–|,/])\s*(?:\1\s*)+/g, " $1 ")
+    .replace(/\(\s*\)|\[\s*\]/g, "")
+    .replace(/^[\s\-–|,/!.]+/, "")
+    .replace(/[\s\-–|,/]+$/, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 export function cleanDisplayTitle(title: string): string {
   let result = title
     .split(" ")
@@ -51,5 +92,12 @@ export function cleanDisplayTitle(title: string): string {
     result = dedupeGroup(result, pattern);
   }
 
-  return result.replace(/\s{2,}/g, " ").trim();
+  for (const pattern of SELLER_NOISE) {
+    result = result.replace(pattern, " ");
+  }
+
+  // Si la limpieza se comió el título entero (un listado que solo decía
+  // "BNWT NEW"), se devuelve el original: mejor ruidoso que vacío.
+  const tidied = tidySeparators(result);
+  return tidied.length >= 3 ? tidied : title.trim();
 }
