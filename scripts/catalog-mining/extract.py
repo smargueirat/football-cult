@@ -440,9 +440,15 @@ TYPE_PATTERNS = {
     # entrenamiento" no tiene un color titular/suplente definido, así que
     # si se la clasificara por esos patrones podría quedar mal etiquetada.
     "training": r"entrenamiento|\btraining\b|treino|calentamiento|calenta",
+    # third va ANTES de home/away por el mismo motivo que goalkeeper va
+    # primero, y es un bug que estuvo vivo hasta el 2026-09-28: FansJerseyHub
+    # llama a la tercera equipación "Third Away" ("Leeds United Third Away
+    # Soccer Jersey 2025/26"), y como away se evaluaba antes, 355 títulos de
+    # ese feed entraban al catálogo como si fueran la suplente. Un título que
+    # dice "third" es la tercera, aunque además diga "away".
+    "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b",
     "home": r"\blocal\b|\bhome\b|\bdomicile\b|titular|\b1[ºª]?\s*equipaci[oó]n\b|primera equipaci[oó]n|principal\b",
     "away": r"\bexterior\b|\bext[ée]rieur\b|\bvisitante\b|\baway\b|segunda equipaci[oó]n|\b2[ºª]?\s*equipaci[oó]n\b|alternativ[oa]\b",
-    "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b",
 }
 
 # "camisa" (Brazilian Portuguese for jersey/shirt -- distinct from
@@ -557,6 +563,68 @@ KIDS_SIGNAL_RE = re.compile(
     re.I,
 )
 KIDS_AGE_RE = re.compile(r"\b(\d{1,2})\s*[/-]\s*(\d{1,2})\b")
+
+# ---------------------------------------------------------------------------
+# Camisetas de MUJER.
+#
+# Hasta el 2026-09-28, "mujer|women|dama|féminin|femenin|femme" estaba en
+# EXCLUDE_RE *y* en KIDS_EXCLUDE_RE, así que ninguna pasada de minería de
+# ninguna tienda podía traer una camiseta de mujer: las 64 que había en el
+# catálogo estaban todas sembradas a mano por el pipeline retro. Mientras
+# tanto el sitio publica /mujer como sección propia.
+#
+# Es la misma clase de bug que el de "junior" documentado arriba en
+# EXCLUDE_RE (excluía todo el Boca Juniors): un término de exclusión que
+# hace más daño del que se le pidió. La diferencia es que acá no alcanza con
+# sacar el término -- si se saca sin más, las camisetas de mujer compiten
+# por el mismo (equipo, tipo) que las de hombre y pick.py se queda con una
+# sola de las dos. Necesitan su propia dimensión, igual que los niños.
+WOMEN_EXCLUDE_RE = re.compile(
+    r"protecci[oó]n|mcdavid|\bhex\b|new england|nouvelle-angleterre|nouvelle angleterre|árbitro|arbitro|\breferee\b|arbitre|"
+    # El espejo de KIDS_EXCLUDE_RE: acá lo que sobra son los niños, no las
+    # mujeres. Mismos bordes de palabra que en EXCLUDE_RE, por el mismo
+    # motivo (Boca Juniors, BSC Young Boys).
+    r"infantil|\bniñ|\bnino|bebé|bebe|\bbaby\b|\bmois\b|kids?\b|\bchild\b|\bjunior\b|\byouth\b|\bjuvenil\b|\benfant|crian[çc]a|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
+    r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
+    # Ropa que sí es de mujer pero no es una camiseta de partido: el feed de
+    # las marcas mezcla la equipación con el resto de la línea femenina.
+    r"\bbra\b|\btop\b|legging|\bmalla\b|\bbody\b|\bvestido\b|\bdress\b|\bfalda\b|\bskirt\b|"
+    # CORTE de hombre de la camiseta de un equipo FEMENINO. Son dos cosas
+    # distintas y el titulo las dice juntas: "USWNT Men's Home Soccer Jersey
+    # 2025 - Women's Team" y "Maillot Allemagne Exterieur (Equipe feminine)
+    # Homme" son camisetas de hombre de la seleccion femenina, y entraban
+    # porque la senal de mujer aparece en el titulo. Van a la ficha unisex,
+    # no a la de mujer. ("Women's" no matchea \bmen's\b: la "o" de antes es
+    # caracter de palabra y rompe el borde.)
+    r"\bmen'?s\b|\bhomme\b|\bhombre\b|\buomo\b|\bherren\b|masculin|"
+    # La "cropped" es una camiseta de mujer real, pero es otra prenda que la
+    # estandar: mezclarlas en la misma ficha repite el bug de comparar
+    # version jugador contra version hincha (ver el estudio de precios).
+    r"\bcropp?ed\b|"
+    r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
+    r"marvel|avengers|disney|maradona|"
+    r"fan\b|aficionado|"
+    r"poster|toalla|bufanda|gorra|llavero|taza|funda|mochila|balón|balon|\bstreet\b|"
+    r"\bminishirts?\b|"
+    r"\bconcept\b|\bairo\b|\bjelex\b|"
+    r"sin mangas|sleeveless|sans manches|\bspyro\b|"
+    r"personali[sz]ed|\btowel\b|\bblanket\b|\bcushion\b|\bpillow\b|"
+    r"\bhandball\b|\bh?andebol\b|pallamano|"
+    r"\brugby\b|dkali|ruckfield|eden park|canterbury|\bkooga\b|xv de france|xv du coq|6 nations|\b6nt\b",
+    re.I,
+)
+# Sin abreviaturas de una letra ("W", "F", "D") a propósito: aparecen en
+# demasiados nombres de producto legítimos de hombre y no hay forma de
+# distinguirlas por contexto en un título de feed.
+#
+# "Féminin(es)" no se recorta a "femin" porque los equipos femeninos reales
+# se llaman así ("Olympique Lyonnais Féminines"): esos SON camisetas de
+# mujer y tienen que entrar.
+WOMEN_SIGNAL_RE = re.compile(
+    r"\bwomen'?s?\b|\bwoman\b|\bmujer\b|\bdama\b|\bdamen\b|\bdonna\b|"
+    r"femenin[ao]s?|feminin[ao]s?|f[ée]minin[es]*|\bfemme\b|\bwmns\b",
+    re.I,
+)
 # Detecta cualquier mención de temporada en el título ("2024/25", "24/25",
 # "24-25", "2026", "95" de un aniversario retro no cuenta acá porque no
 # matchea ninguno de estos patrones de temporada real) y devuelve True si
@@ -645,7 +713,14 @@ def match_team(title, teams):
         return tk, m
     return first
 
-def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_col="aw_deep_link", image_col="aw_image_url", encoding="utf-8-sig"):
+def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_col="aw_deep_link", image_col="aw_image_url", encoding="utf-8-sig", exclude_re=None, signal_re=None):
+    """Candidatos (equipo, tipo) de un feed.
+
+    `exclude_re` / `signal_re` permiten reusar esta misma funcion para una
+    dimension distinta de la de adultos sin duplicarla: la pasada de mujer
+    pasa WOMEN_EXCLUDE_RE + WOMEN_SIGNAL_RE. Sin ellos se comporta igual que
+    siempre (EXCLUDE_RE, sin senal obligatoria).
+    """
     rows = list(csv.DictReader(open(csv_path, encoding=encoding)))
     teams = team_re_all()
     types = type_re_all()
@@ -656,7 +731,9 @@ def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_c
         title = r.get(title_col) or ""
         if not JERSEY_RE.search(title):
             continue
-        if EXCLUDE_RE.search(title):
+        if (exclude_re or EXCLUDE_RE).search(title):
+            continue
+        if signal_re is not None and not signal_re.search(title):
             continue
         if is_manually_excluded(r.get(link_col), r.get(image_col)):
             continue

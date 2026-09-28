@@ -1,8 +1,13 @@
-"""Generates products.ts TS blocks for KIDS products from a picks file
+"""Generates products.ts TS blocks for KIDS (or WOMEN) products from a picks file
 (same {team|type: {...}} shape as gen_new_teams.py's input). Separate
 script because gen_new_teams.py doesn't emit ageGroup, and the id
 convention for kids products drops the season (id: "{team}-{type}-kids",
 matching the existing hand-authored kids blocks) instead of embedding it.
+
+Sirve igual para la dimension de mujer (`age_group="women"`, 5to argumento):
+lo unico que cambia es el sufijo del id, el valor de ageGroup y que la
+temporada se lee del titulo en vez de fijarse, porque una camiseta de mujer
+si tiene temporada propia. Se parametrizo en vez de copiar el archivo.
 """
 import json, re, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -41,16 +46,16 @@ def colors_for_team(content, team):
     return None
 
 
-def existing_kids(content):
-    """(team, type) pairs that already have a kids block, so a re-run
-    doesn't duplicate -- same purpose as split_picks.py's existing()
-    check, but scoped to ageGroup:"kids" blocks specifically (those are
-    the ones split_picks.py's own check explicitly skips)."""
+def existing_kids(content, age_group="kids"):
+    """(team, type) pairs that already have a block for this ageGroup, so a
+    re-run doesn't duplicate -- same purpose as split_picks.py's existing()
+    check, but scoped to ageGroup blocks specifically (those are the ones
+    split_picks.py's own check explicitly skips)."""
     from refresh import split_blocks
     _, blocks, _ = split_blocks(content)
     out = set()
     for b in blocks:
-        if 'ageGroup: "kids"' not in b:
+        if f'ageGroup: "{age_group}"' not in b:
             continue
         teamm = re.search(r'teamKey: "([a-z0-9]+)"', b)
         typem = re.search(r'typeKey: "([a-z]+)"', b)
@@ -59,16 +64,16 @@ def existing_kids(content):
     return out
 
 
-def gen(picks_path, store_name, currency, out_path):
+def gen(picks_path, store_name, currency, out_path, age_group="kids"):
     picks = json.load(open(picks_path, encoding="utf-8"))
     content = open(PRODUCTS_TS, encoding="utf-8").read()
-    already = existing_kids(content)
+    already = existing_kids(content, age_group)
 
     blocks = []
     for key, d in sorted(picks.items()):
         team, typ = key.split("|")
         if (team, typ) in already:
-            print(f"SKIP (kids block already exists): {key}")
+            print(f"SKIP ({age_group} block already exists): {key}")
             continue
         colors = colors_for_team(content, team)
         if not colors:
@@ -83,19 +88,26 @@ def gen(picks_path, store_name, currency, out_path):
             continue
         c1, c2 = colors
         sizes_ts = ", ".join(f'"{s}"' for s in d["sizes"])
-        pid = f"{team}-{typ}-kids"
+        pid = f"{team}-{typ}-{age_group}"
+        if age_group == "kids":
+            # Las fichas de ninos no llevan temporada en el id ni dato real de
+            # temporada por producto: se dejan en "2026" como las escritas a mano.
+            season = "2026"
+        else:
+            from split_picks import detect_season
+            season = detect_season(d["title"]) or "2025/26"
         link = d["link"].replace('"', '\\"')
         image = (d["image"] or "").replace('"', '\\"')
         title_escaped = d["title"].replace('"', '\\"')
         block = f'''  {{
     id: "{pid}",
     teamKey: "{team}",
-    season: "2026",
+    season: "{season}",
     typeKey: "{typ}",
     colorHex: "{c1}",
     colorHexSecondary: "{c2}",
     jerseyPattern: "solid",
-    ageGroup: "kids",
+    ageGroup: "{age_group}",
     offers: [
       {{ store: "{store_name}", price: {d["price"]}, shipping: {d["shipping"]}, currency: "{currency}", url: "{link}", title: "{title_escaped}", inStock: true, sizes: [{sizes_ts}], imageUrl: "{image}" }},
     ],
@@ -103,8 +115,8 @@ def gen(picks_path, store_name, currency, out_path):
 '''
         blocks.append(block)
     open(out_path, "w", encoding="utf-8").write("".join(blocks))
-    print(f"Generated {len(blocks)} kids products -> {out_path}")
+    print(f"Generated {len(blocks)} {age_group} products -> {out_path}")
 
 
 if __name__ == "__main__":
-    gen(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    gen(*sys.argv[1:5], age_group=(sys.argv[5] if len(sys.argv) > 5 else "kids"))

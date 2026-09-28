@@ -5,7 +5,7 @@ from refresh import split_blocks
 
 PRODUCTS_TS = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src', 'data', 'products.ts')
 
-def existing_products():
+def existing_products(age_group=None):
     """team|type -> the set of every season already on file for that key.
 
     Real bug found 2026-08-18: a team+type key isn't unique to one product
@@ -40,7 +40,15 @@ def existing_products():
         seasonm = re.search(r'season: "([^"]+)"', b)
         if not teamm or not typem:
             continue
-        if 'ageGroup: "kids"' in b:
+        # Un bloque con ageGroup es otra dimension (ninos, mujer), nunca el
+        # producto de adulto: comparar contra el mezclaria los mundos. Con
+        # age_group se invierte el filtro y se compara SOLO contra esa
+        # dimension, que es lo que necesita la pasada de mujer -- si no, un
+        # pick de mujer encontraria la ficha de hombre, se clasificaria como
+        # add_offer y terminaria colgando una camiseta de mujer de la pagina
+        # de hombre.
+        b_age = re.search(r'ageGroup: "([a-z]+)"', b)
+        if (b_age.group(1) if b_age else None) != age_group:
             continue
         key = f"{teamm.group(1)}|{typem.group(1)}"
         existing[key].add(seasonm.group(1))
@@ -107,9 +115,9 @@ def seasons_equivalent(a, b):
     ea, eb = season_end_year(a), season_end_year(b)
     return ea is not None and ea == eb
 
-def split(picks_path):
+def split(picks_path, age_group=None):
     picks = json.load(open(picks_path, encoding='utf-8'))
-    existing = existing_products()
+    existing = existing_products(age_group)
     new_products = {}
     add_offers = {}
     season_conflict = {}
@@ -136,7 +144,10 @@ def split(picks_path):
     return new_products, add_offers, season_conflict, no_image
 
 if __name__ == "__main__":
-    new_products, add_offers, season_conflict, no_image = split(sys.argv[1])
+    # --women compara contra las fichas de mujer, no contra las de hombre.
+    age_group = "women" if "--women" in sys.argv else None
+    sys.argv = [a for a in sys.argv if a != "--women"]
+    new_products, add_offers, season_conflict, no_image = split(sys.argv[1], age_group)
     print(f"new_products: {len(new_products)}")
     print(f"add_offers: {len(add_offers)}")
     print(f"no_image (sin foto, descartados): {no_image}")

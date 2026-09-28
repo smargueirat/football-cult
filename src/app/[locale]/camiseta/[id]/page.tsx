@@ -13,7 +13,7 @@ import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { HUB } from "@/lib/hubStrings";
-import { TITLE_SUFFIX } from "@/lib/categoryMeta";
+import { TITLE_SUFFIX, ageGroupLabel } from "@/lib/categoryMeta";
 import type { HubLocale } from "@/data/teamMeta";
 
 const SITE_URL = "https://football-cult.com";
@@ -25,7 +25,8 @@ function productJsonLd(product: Product, locale: HubLocale) {
   // Estaba cableado en español para los cinco idiomas: el nombre del
   // producto que ve Google era el mismo en /fr/ que en /es/.
   const team = teamNames[product.teamKey][locale];
-  const type = typeNames[product.typeKey][locale];
+  const age = ageGroupLabel(locale, product.ageGroup);
+  const type = age ? `${typeNames[product.typeKey][locale]} ${age}` : typeNames[product.typeKey][locale];
   const image = productImage(product);
 
   // Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
@@ -125,7 +126,10 @@ export async function generateMetadata({
   // es justo lo que hace que Google marque una página como duplicada de
   // otra (lo reportó: los 47 ejemplos de "Duplicada" eran páginas /en/).
   const team = teamNames[product.teamKey][locale];
-  const type = typeNames[product.typeKey][locale];
+  // La ficha de mujer y la de niños comparten equipo/tipo/temporada con la de
+  // adulto: sin el sufijo salían con el mismo título y la misma descripción.
+  const age = ageGroupLabel(locale, product.ageGroup);
+  const type = age ? `${typeNames[product.typeKey][locale]} ${age}` : typeNames[product.typeKey][locale];
   const title = `${team} ${type} ${product.season} — ${TITLE_SUFFIX[locale]} | Football Cult`;
   const description = HUB[locale].metaJersey({ team, type, season: product.season });
   const image = productImage(product);

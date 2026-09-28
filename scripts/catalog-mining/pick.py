@@ -2,7 +2,7 @@ import csv, re, sys
 import os
 from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from extract import analyze, SIZE_MAP
+from extract import analyze, SIZE_MAP, WOMEN_EXCLUDE_RE, WOMEN_SIGNAL_RE
 
 PENALTY_RE = [
     (re.compile(r"auténtic|authentic", re.I), 5),
@@ -25,8 +25,12 @@ def score(title):
             s += pen * 20
     return s
 
-def pick_best(csv_path, price_col="search_price", size_col="custom_1", link_col="aw_deep_link", image_col="aw_image_url", shipping_col=None, title_col="product_name", encoding="utf-8-sig", only=None, sport_category_col=None):
-    candidates, rows = analyze(csv_path, price_col, encoding=encoding, link_col=link_col, image_col=image_col, title_col=title_col)
+def pick_best(csv_path, price_col="search_price", size_col="custom_1", link_col="aw_deep_link", image_col="aw_image_url", shipping_col=None, title_col="product_name", encoding="utf-8-sig", only=None, sport_category_col=None, women=False):
+    # women=True cambia las dos reglas de texto y nada mas: el resto del
+    # pick (tallas, precio, penalizaciones de titulo) es identico, porque una
+    # camiseta de mujer se elige con los mismos criterios que una de hombre.
+    extra = dict(exclude_re=WOMEN_EXCLUDE_RE, signal_re=WOMEN_SIGNAL_RE) if women else {}
+    candidates, rows = analyze(csv_path, price_col, encoding=encoding, link_col=link_col, image_col=image_col, title_col=title_col, **extra)
     results = {}
     for (team, typ), items in candidates.items():
         if only and team not in only:
@@ -107,6 +111,10 @@ def pick_best(csv_path, price_col="search_price", size_col="custom_1", link_col=
 
 if __name__ == "__main__":
     import json
+    # --women en cualquier posicion: los demas argumentos son posicionales y
+    # ya son nueve, agregar un decimo era pedir que alguien lo pise.
+    women = "--women" in sys.argv
+    sys.argv = [a for a in sys.argv if a != "--women"]
     path = sys.argv[1]
     price_col = sys.argv[2] if len(sys.argv) > 2 else "search_price"
     shipping_col = sys.argv[3] if len(sys.argv) > 3 else None
@@ -116,7 +124,7 @@ if __name__ == "__main__":
     link_col = sys.argv[7] if len(sys.argv) > 7 else "aw_deep_link"
     image_col = sys.argv[8] if len(sys.argv) > 8 else "aw_image_url"
     sport_category_col = sys.argv[9] if len(sys.argv) > 9 else None
-    res = pick_best(path, price_col, size_col=size_col, link_col=link_col, image_col=image_col, shipping_col=shipping_col, title_col=title_col, sport_category_col=sport_category_col)
+    res = pick_best(path, price_col, size_col=size_col, link_col=link_col, image_col=image_col, shipping_col=shipping_col, title_col=title_col, sport_category_col=sport_category_col, women=women)
     for (team, typ), d in sorted(res.items()):
         print(f"{team:15s} {typ:12s} price={d['price']:<8} ship={d['shipping']:<6} sizes={d['sizes']} n={d['n_variants']:3d}  {d['title']}")
         print(f"                 link: {d['link']}")
