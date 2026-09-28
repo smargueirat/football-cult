@@ -12,15 +12,20 @@ import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { HUB } from "@/lib/hubStrings";
+import { TITLE_SUFFIX } from "@/lib/categoryMeta";
+import type { HubLocale } from "@/data/teamMeta";
 
 const SITE_URL = "https://football-cult.com";
 
 // Product/Offer structured data para Google Shopping / resultados
 // enriquecidos -- una oferta por tienda real (nunca AggregateOffer con un
 // solo priceCurrency inventado, las tiendas cobran en monedas distintas).
-function productJsonLd(product: Product, locale: string) {
-  const team = teamNames[product.teamKey].es;
-  const type = typeNames[product.typeKey].es;
+function productJsonLd(product: Product, locale: HubLocale) {
+  // Estaba cableado en español para los cinco idiomas: el nombre del
+  // producto que ve Google era el mismo en /fr/ que en /es/.
+  const team = teamNames[product.teamKey][locale];
+  const type = typeNames[product.typeKey][locale];
   const image = productImage(product);
 
   // Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
@@ -115,10 +120,14 @@ export async function generateMetadata({
   const product = findProduct(id);
   if (!product) return {};
 
-  const team = teamNames[product.teamKey].es;
-  const type = typeNames[product.typeKey].es;
-  const title = `${team} ${type} ${product.season} — Comparar precios | Football Cult`;
-  const description = `Compará precios de la camiseta ${type.toLowerCase()} de ${team} (${product.season}) entre distintas tiendas y comprá donde te convenga.`;
+  // El <title> y la descripción estaban cableados en español para los
+  // cinco idiomas. Son 6.651 fichas x 5 idiomas con el MISMO título, que
+  // es justo lo que hace que Google marque una página como duplicada de
+  // otra (lo reportó: los 47 ejemplos de "Duplicada" eran páginas /en/).
+  const team = teamNames[product.teamKey][locale];
+  const type = typeNames[product.typeKey][locale];
+  const title = `${team} ${type} ${product.season} — ${TITLE_SUFFIX[locale]} | Football Cult`;
+  const description = HUB[locale].metaJersey({ team, type, season: product.season });
   const image = productImage(product);
 
   return {

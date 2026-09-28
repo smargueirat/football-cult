@@ -7,7 +7,9 @@ import { buildAlternates } from "@/lib/i18n/locales";
 // heroSlides (ya traducido a los 5 idiomas) en vez de escribir 25
 // strings nuevas a mano, así el <title>/description del SEO nunca se
 // desalinea del texto real que ve el usuario en la página.
-const TITLE_SUFFIX: Record<Locale, string> = {
+// Exportado: lo reusa la ficha de camiseta, que tenía su propio
+// "Comparar precios" cableado en español para los cinco idiomas.
+export const TITLE_SUFFIX: Record<Locale, string> = {
   es: "Comparar precios",
   en: "Compare Prices",
   pt: "Comparar Preços",

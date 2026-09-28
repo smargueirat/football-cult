@@ -27,6 +27,9 @@ type S = {
   browseLeagues: string;
   indexIntro: string;
   metaTeam: (team: string, price: string) => string;
+  /** Descripción de la ficha de una camiseta. Vive acá y no en la propia
+   *  página porque estaba cableada en español para los cinco idiomas. */
+  metaJersey: (o: { team: string; type: string; season: string }) => string;
   metaGeneric: (name: string, n: number, price: string) => string;
   seasonLabel: string;
   // Preguntas frecuentes del hub. Todo lo que responden sale del catálogo
@@ -85,6 +88,7 @@ export const HUB: Record<HubLocale, S> = {
     browseLeagues: "Explorar por liga",
     indexIntro: "Elegí una liga o un país para ver todos sus equipos y comparar el precio de cada camiseta entre tiendas.",
     metaTeam: (t, p) => `Camisetas de ${t}: compará precios entre tiendas. Desde ${p}. Titular, suplente y tercera de todas las temporadas.`,
+    metaJersey: ({ team, type, season }) => `Compará precios de la camiseta ${type.toLowerCase()} de ${team} (${season}) entre distintas tiendas y comprá donde te convenga.`,
     metaGeneric: (n, c, p) => `${n}: ${c} camisetas de fútbol comparadas entre tiendas. Desde ${p}.`,
     seasonLabel: "Temporada",
     faqTitle: "Preguntas frecuentes",
@@ -137,6 +141,7 @@ export const HUB: Record<HubLocale, S> = {
     browseLeagues: "Browse by league",
     indexIntro: "Pick a league or a country to see all its teams and compare each shirt's price across stores.",
     metaTeam: (t, p) => `${t} football shirts: compare prices across stores. From ${p}. Home, away and third kits from every season.`,
+    metaJersey: ({ team, type, season }) => `Compare prices for the ${team} ${type.toLowerCase()} shirt (${season}) across stores and buy where it suits you.`,
     metaGeneric: (n, c, p) => `${n}: ${c} football shirts compared across stores. From ${p}.`,
     seasonLabel: "Season",
     faqTitle: "Frequently asked questions",
@@ -189,6 +194,7 @@ export const HUB: Record<HubLocale, S> = {
     browseLeagues: "Explorar por liga",
     indexIntro: "Escolha uma liga ou um país para ver todos os times e comparar o preço de cada camisa entre lojas.",
     metaTeam: (t, p) => `Camisas do ${t}: compare preços entre lojas. A partir de ${p}. Titular, reserva e terceira de todas as temporadas.`,
+    metaJersey: ({ team, type, season }) => `Compare preços da camisa ${type.toLowerCase()} do ${team} (${season}) entre lojas e compre onde for melhor.`,
     metaGeneric: (n, c, p) => `${n}: ${c} camisas de futebol comparadas entre lojas. A partir de ${p}.`,
     seasonLabel: "Temporada",
     faqTitle: "Perguntas frequentes",
@@ -241,6 +247,7 @@ export const HUB: Record<HubLocale, S> = {
     browseLeagues: "Explorer par ligue",
     indexIntro: "Choisissez une ligue ou un pays pour voir toutes ses équipes et comparer le prix de chaque maillot entre boutiques.",
     metaTeam: (t, p) => `Maillots ${t} : comparez les prix entre boutiques. Dès ${p}. Domicile, extérieur et third de toutes les saisons.`,
+    metaJersey: ({ team, type, season }) => `Comparez les prix du maillot ${type.toLowerCase()} de ${team} (${season}) entre plusieurs boutiques et achetez au meilleur endroit.`,
     metaGeneric: (n, c, p) => `${n} : ${c} maillots de football comparés entre boutiques. Dès ${p}.`,
     seasonLabel: "Saison",
     faqTitle: "Questions fréquentes",
@@ -293,6 +300,7 @@ export const HUB: Record<HubLocale, S> = {
     browseLeagues: "Esplora per campionato",
     indexIntro: "Scegli un campionato o un paese per vedere tutte le squadre e confrontare il prezzo di ogni maglia tra i negozi.",
     metaTeam: (t, p) => `Maglie ${t}: confronta i prezzi tra negozi. Da ${p}. Prima, seconda e terza maglia di ogni stagione.`,
+    metaJersey: ({ team, type, season }) => `Confronta i prezzi della maglia ${type.toLowerCase()} del ${team} (${season}) fra i negozi e compra dove conviene.`,
     metaGeneric: (n, c, p) => `${n}: ${c} maglie da calcio confrontate tra negozi. Da ${p}.`,
     seasonLabel: "Stagione",
     faqTitle: "Domande frequenti",
