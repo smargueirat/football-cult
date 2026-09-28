@@ -173,3 +173,16 @@ RETRO_KIT_OUT="$(npx tsx scripts/check_retro_kit.mts 2>&1)" || send_alert "Daily
 
 Arreglar el id en src/data/products.ts para que termine en una de las seis equipaciones (-home/-away/-third/-goalkeeper/-training/-prematch, con cola de colorway opcional). Si de verdad apareció una equipación nueva que no estaba contemplada, sumar el sufijo a RETRO_KIT en src/lib/productMeta.ts y traducirlo en typeNames."
 echo "$RETRO_KIT_OUT"
+
+# IndexNow (Bing, Yandex, Seznam, Naver) -- agregado 2026-09-28. Hasta ese
+# día solo se había mandado a mano, dos veces. Bing tenía 61,7K URLs nuestras
+# descubiertas y CERO indexadas, y es el índice que alimenta Yahoo,
+# DuckDuckGo, Ecosia y la búsqueda de ChatGPT: el canal donde nuestra falta de
+# autoridad pesa menos. Todas las noches van los hubs (unos cientos, cambian
+# con el catálogo); los lunes va el sitemap entero, para no mandar 14K URLs
+# idénticas cada día, que IndexNow puede leer como abuso.
+if [ "$(date +%u)" = "1" ]; then
+  python3 scripts/indexnow.py --all 2>&1 | tail -3
+else
+  python3 scripts/indexnow.py 2>&1 | tail -3
+fi
