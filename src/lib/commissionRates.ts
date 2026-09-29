@@ -110,6 +110,10 @@ const RATES: Record<string, number> = {
   NikeAR: 0,
   PumaAR: 0,
   "Pro:Direct Soccer": 0,
+  // Pro:Direct España: enlace directo que monetiza Skimlinks (Pro:Direct paga
+  // 3% en esa red; Skimlinks se queda una parte). Su programa en Awin (ID
+  // 6667) figura inactivo al 2026-09-29.
+  "Pro:Direct ES": 0.02,
   "Classic Football Shirts": 0,
   "UK Soccer Shop": 0,
 };

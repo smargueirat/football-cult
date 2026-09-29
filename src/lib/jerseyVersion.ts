@@ -62,8 +62,14 @@ export function offerVersion(offer: { store: string; title?: string }): JerseyVe
 // No se incluye " LS " suelto a propósito: aparece dentro de nombres y
 // códigos y etiquetaría mal. La lección la dejó "Neymar Jr", que una
 // regla ingenua de "junior" marcaba como camiseta infantil.
+//
+// "ML" sí se incluye (2026-09-29): es como Pro:Direct escribe manga larga
+// ("Camiseta adidas Bayern Munich 26/27 Primera equipación ML", 100 EUR frente
+// a 90 de la de manga corta). A diferencia de "LS", al agregarlo no había
+// NINGUNA oferta del catálogo con "ML" suelto, así que no etiqueta mal nada
+// que ya existía.
 const LONG_SLEEVE =
-  /\b(manga\s*larga|mangas\s*largas|manga\s*comprida|long\s*sleeves?|manches\s*longues|maniche\s*lunghe|langarm)\b/;
+  /\b(manga\s*larga|mangas\s*largas|manga\s*comprida|long\s*sleeves?|manches\s*longues|maniche\s*lunghe|langarm|ml)\b/;
 
 export type Sleeve = "long" | "short";
 

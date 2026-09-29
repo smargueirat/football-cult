@@ -37,6 +37,23 @@ def split_blocks(content):
         i += 1
     return content[:start], blocks, content[end:]
 
+_SEASON_FIELD = re.compile(r'season: "([^"]+)"')
+
+
+def _only_same_season(indices, blocks, pick):
+    """El unico indice cuya temporada coincide con la del titulo del pick, o
+    None si no hay exactamente uno (sin temporada detectable, o varias fichas
+    de esa misma temporada -- colorways --, que siguen siendo ambiguas de
+    verdad y no se adivinan)."""
+    from split_picks import detect_season
+    season = detect_season(pick.get("title") or "")
+    if not season:
+        return None
+    same = [i for i in indices
+            if (m := _SEASON_FIELD.search(blocks[i])) and m.group(1) == season]
+    return same[0] if len(same) == 1 else None
+
+
 def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_run=True, exclude_keys=None, kids=False, age_group=None):
     content = open(products_ts_path, encoding="utf-8").read()
     picks = json.load(open(picks_json_path, encoding="utf-8"))
@@ -96,6 +113,14 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
             target_index[key] = with_store[0]
         elif len(with_store) == 0 and len(indices) == 1:
             target_index[key] = indices[0]
+        elif len(with_store) == 0 and (season_hit := _only_same_season(indices, blocks, picks[key])) is not None:
+            # Varias fichas del mismo equipo y tipo -- lo normal en septiembre,
+            # cuando conviven la 25/26 y la 26/27 -- y antes TODAS se saltaban
+            # como ambiguas, para todas las tiendas y todas las noches. Si la
+            # temporada que dice el titulo de la oferta deja una sola ficha,
+            # es esa. Medido el 2026-09-29 con Pro:Direct: de 153 ofertas, 101
+            # quedaban afuera por esto.
+            target_index[key] = season_hit
         else:
             target_index[key] = None
             skipped_ambiguous.append((key, [ID_RE.search(blocks[i]).group(1) if ID_RE.search(blocks[i]) else "?" for i in indices]))

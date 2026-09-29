@@ -443,6 +443,16 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   // Verificado en foot-store.es/tarifas-y-opciones-de-envio (tabla real de
   // tarifas por país). Cubre prácticamente toda Europa + Turquía + EE.UU.
   // continental, pero no Norteamérica/Latam/Asia/África/Oceanía.
+  // Pro:Direct España (prodirectsport.es): sale de República Checa y envía a
+  // la UE. Envío estándar 3,62 EUR medido el 2026-09-29 con el estimador de
+  // Shopify de la propia tienda a ES, IT, FR y DE. Solo países de la UE:
+  // a Suiza y Noruega también envía pero con aduana a cargo del comprador,
+  // y el costo no está medido. OJO: la web de Reino Unido (prodirectsport.com)
+  // NO envía a la UE; son tiendas distintas.
+  "Pro:Direct ES": [
+    "ES", "FR", "DE", "IT", "PT", "NL", "BE", "AT", "IE", "GR", "FI", "SE",
+    "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI",
+  ],
   FootStoreES: [
     "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
     "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",

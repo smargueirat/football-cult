@@ -435,7 +435,11 @@ TYPE_PATTERNS = {
     # queda en training porque en la mayoría de las tiendas ES describe
     # la remera de calentamiento del conjunto de entrenamiento, no la
     # prenda que se usa el día del partido.
-    "prematch": r"pr[eé].?-?match|prematch",
+    # "prepartido": como la escribe Pro:Direct España ("Camiseta adidas
+    # Originals Argentina 2026 Prepartido Segunda equipación"). Sin esto la
+    # camiseta de calentamiento entraba como suplente, porque el título
+    # también dice "Segunda equipación" (2026-09-29).
+    "prematch": r"pr[eé].?-?match|prematch|pre.?partido",
     # training también se chequea antes que home/away/third: "Camiseta de
     # entrenamiento" no tiene un color titular/suplente definido, así que
     # si se la clasificara por esos patrones podría quedar mal etiquetada.

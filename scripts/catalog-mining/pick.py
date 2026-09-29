@@ -6,7 +6,7 @@ from extract import analyze, SIZE_MAP, WOMEN_EXCLUDE_RE, WOMEN_SIGNAL_RE
 
 PENALTY_RE = [
     (re.compile(r"auténtic|authentic", re.I), 5),
-    (re.compile(r"manga larga|mangas largas|long.?sleeve", re.I), 4),
+    (re.compile(r"manga larga|mangas largas|long.?sleeve|\bML\b", re.I), 4),
     (re.compile(r"academy|dri-?fit|stadium|strike", re.I), 3),
     (re.compile(r"ronaldo|messi|jordan|mbapp|neymar", re.I), 3),
     (re.compile(r"protección|hex|mcdavid", re.I), 6),
