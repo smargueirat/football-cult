@@ -7323,18 +7323,6 @@ const productsData = [
     ],
   },
 {
-    id: "como-retro-1907-third",
-    teamKey: "como",
-    season: "1907",
-    typeKey: "retro",
-    colorHex: "#0F3460",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 28.98, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/187953721218?_skw=Como+1907+third+soccer+jersey&hash=item2bc2ea2f82%3Ag%3A31MAAeSw40tpaFOe&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Como 1907 Third Mens", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/31MAAeSw40tpaFOe/s-l1600.jpg" },
-    ],
-  },
-{
     id: "coreadelsur-retro-2018-away",
     teamKey: "coreadelsur",
     season: "2018",
