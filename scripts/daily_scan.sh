@@ -193,8 +193,8 @@ fi
 # autoridad pesa menos. Todas las noches van los hubs (unos cientos, cambian
 # con el catálogo); los lunes va el sitemap entero, para no mandar 14K URLs
 # idénticas cada día, que IndexNow puede leer como abuso.
-if [ "$(date +%u)" = "1" ]; then
-  python3 scripts/indexnow.py --all 2>&1 | tail -3
-else
-  python3 scripts/indexnow.py 2>&1 | tail -3
-fi
+# SOLO hubs, nunca --all: el 2026-09-29 Vercel pausó el sitio entero por
+# superar el plan Hobby (escrituras ISR 7,5x el límite, solicitudes CDN 3x).
+# Mandar 14.000 URLs a Bing invita a rastrearlas todas, y cada ficha que no
+# está en caché se regenera: es una escritura ISR y CPU por URL.
+python3 scripts/indexnow.py 2>&1 | tail -3
