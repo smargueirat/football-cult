@@ -26,24 +26,38 @@ def parse_size(opt):
     return ""
 
 
-def fetch_page(domain, page):
-    url = f"https://{domain}/products.json?limit=250&page={page}"
+def fetch_page(domain, page, collection=None):
+    # Con colección se baja solo esa parte del catálogo: Pro:Direct tiene
+    # decenas de miles de productos (running, rugby, tenis) y el catálogo
+    # entero no entra en las 40 páginas de abajo.
+    base = f"https://{domain}/collections/{collection}" if collection else f"https://{domain}"
+    url = f"{base}/products.json?limit=250&page={page}"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.load(resp)["products"]
 
 
-def build(domain, awinmid, out_csv):
+def build(domain, awinmid, out_csv, collections=None):
     rows = []
-    for page in range(1, 41):
-        products = fetch_page(domain, page)
+    seen = set()
+    for collection in (collections or [None]):
+      for page in range(1, 41):
+        products = fetch_page(domain, page, collection)
         if not products:
             break
         for p in products:
+            # Un mismo producto aparece en varias colecciones (club, liga,
+            # "home kits"...): se escribe una sola vez.
+            if p["id"] in seen:
+                continue
+            seen.add(p["id"])
             title = p["title"]
             product_url = f"https://{domain}/products/{p['handle']}"
             image = p["images"][0]["src"] if p.get("images") else ""
-            deep_link = (
+            # awinmid "raw": enlace directo a la tienda, sin Awin. Para tiendas
+            # que monetiza el script de Skimlinks que ya carga el sitio (p. ej.
+            # Pro:Direct), que convierte el enlace al hacer clic.
+            deep_link = product_url if awinmid == "raw" else (
                 f"https://www.awin1.com/cread.php?awinmid={awinmid}"
                 f"&awinaffid={AWINAFFID}&ued={urllib.parse.quote(product_url, safe='')}"
             )
@@ -69,4 +83,6 @@ def build(domain, awinmid, out_csv):
 
 if __name__ == "__main__":
     domain, awinmid, out_csv = sys.argv[1], sys.argv[2], sys.argv[3]
-    build(domain, awinmid, out_csv)
+    # 4to argumento opcional: colecciones separadas por coma.
+    cols = sys.argv[4].split(",") if len(sys.argv) > 4 and sys.argv[4] else None
+    build(domain, awinmid, out_csv, cols)

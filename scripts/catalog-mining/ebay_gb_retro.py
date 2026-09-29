@@ -38,10 +38,26 @@ from refresh import split_blocks
 from retro_extract import RETRO_EXCLUDE_RE, parse_retro_season
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+META_TS = os.path.join(HERE, "..", "..", "src", "lib", "productMeta.ts")
 PRODUCTS_TS = os.path.join(HERE, "..", "..", "src", "data", "products.ts")
 STATE = os.path.join(HERE, "ebay_gb_retro_state.json")
 STORE = "eBay GB"
 KITS = {"home", "away", "third", "goalkeeper"}
+# Sufijo de CLUB en el titulo. Segundo filtro contra la colision pais/club,
+# para los clubes que no estan en TEAM_PATTERNS: "Sint-Truidense HVV ...
+# Belgium", "FC Chaves ... Portugal", "GWANGJU FC (South Korea)". Solo se
+# aplica a fichas de seleccion. SIN "united"/"city" a proposito: chocan con
+# "United States" y descartaban camisetas legitimas de EE.UU.
+CLUB_SUFFIX_RE = re.compile(
+    r"\b(FC|CF|AFC|SC|HVV|SV|BK|CD|SD|UD|RC|VfB|VfL|FK|NK|HSV|CSKA)\b|calcio|rovers|wanderers", re.I
+)
+
+
+def national_teams():
+    """Claves de seleccion nacional, leidas de teamCategory en productMeta.ts."""
+    src = open(META_TS, encoding="utf-8").read()
+    m = re.search(r"export const teamCategory[^=]*=\s*\{(.*?)\n\};", src, re.S)
+    return set(re.findall(r'(\w+):\s*"national"', m.group(1)))
 
 
 def retro_targets(content):
@@ -66,7 +82,7 @@ def retro_targets(content):
     return out
 
 
-def search_model(client, t, team_en, teams, types):
+def search_model(client, t, team_en, teams, types, nationals):
     """El anuncio más barato de eBay UK que es de verdad ese mismo modelo."""
     year = t["season"][:4]
     kit_word = "goalkeeper" if t["kit"] == "goalkeeper" else t["kit"]
@@ -79,6 +95,22 @@ def search_model(client, t, team_en, teams, types):
         hit = extract.match_team(title, teams)
         if not hit or hit[0] != t["team"]:
             continue
+        # Colision pais/club: una camiseta de club que NOMBRA al pais entraba
+        # como si fuera de la seleccion. Reales encontrados el 2026-09-29:
+        # "Rangers FC (Scotland) 2024/25 Home Shirt" -> Escocia, "ISCO 22#
+        # Malaga away ... LA LIGA SPAIN" -> Espana, "AC Milan 2023/2024 Crespo
+        # Italy Third" -> Italia, "England 1990/92 Third Shirt Umbro Italia 90"
+        # -> Italia. Es la misma clase que el caso Ucrania/Shakhtar del README.
+        #
+        # Regla: si la ficha es de SELECCION y el titulo nombra a cualquier
+        # otro equipo, se descarta. Pierde alguna legitima (una camiseta de
+        # Suecia que menciona el club del jugador), pero en un comparador una
+        # camiseta equivocada cuesta mucho mas que una que falta.
+        if t["team"] in nationals:
+            if any(k != t["team"] and pat.search(title) for k, pat in teams.items()):
+                continue
+            if CLUB_SUFFIX_RE.search(title):
+                continue
         kit = next((k for k, p in types.items() if p.search(title)), None)
         if kit != t["kit"]:
             continue
@@ -148,11 +180,12 @@ def main(batch, do_apply):
     client = EbayClient("EBAY_GB")
     names = get_team_en_names()
     teams, types = extract.team_re_all(), extract.type_re_all()
+    nationals = national_teams()
     found = 0
     for n, t in enumerate(todo[:batch], 1):
         team_en = names.get(t["team"])
         if team_en:
-            pick = search_model(client, t, team_en, teams, types)
+            pick = search_model(client, t, team_en, teams, types, nationals)
             if client.rate_limited:
                 print("eBay devolvió 429: se corta la tanda para no gastar la cuota de mañana", flush=True)
                 break
