@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import {
   Product,
   findProduct,
@@ -177,6 +177,14 @@ export default async function JerseyDetailPage({
 
   if (!product) {
     notFound();
+  }
+
+  // Un id viejo (renombrado o fusionado, ver productAliases.ts) redirige al
+  // actual con un 308 en vez de servir la misma página en otra URL. Antes
+  // findProduct resolvía el alias y la ficha se mostraba igual en las dos
+  // direcciones: contenido duplicado para Google, con 3.744 alias en la lista.
+  if (product.id !== id) {
+    permanentRedirect(`/${locale}/camiseta/${product.id}`);
   }
 
   // Solo se manda al cliente la porción de historial que corresponde a

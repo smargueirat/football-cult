@@ -22252,6 +22252,7 @@ const productsData = [
       { store: "BSTNIT", price: 64.99, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=41699021834&a=3013769&m=104981", title: "JUVENTUS 25/26 AWAY JERSEY", inStock: true, sizes: ["L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-juve-a-jersey-jj4323-0328681%2FJJ4323%2FJJ4323-01.jpg&feedId=99415&k=c6dc32804daaf4160b288c3198255dda08df5b10" },
       { store: "FootStoreFR", price: 100.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr4647-maillot-exterieur-juventus-turin-2026-27-rosaut-noir", title: "Maillot Extérieur Juventus Turin 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kr4647-rosaut-noir-6a60cdc068db2-1.webp" },
       { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206478941858?_skw=Juventus+away+soccer+jersey&hash=item30131a9ea2%3Ag%3AT3IAAeSwiiFqeThi&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYWYeQ7PZgW3TWtnYptg8nE5RkMr9QVhpA4yhuo6jLlLlzFb86iPRkIscnfrbKd2cyBaeuyl3Lj0S6sjMaf%2Bv9jDrI9pbnkB0dyWh1CFhL4LDK46WZlCG9N3F2WZKG9Id2u9eqQqnkiyO7e0W%2BlDMX8UOuCxpQrGxy%2FTP34hGv0S0YgfCF94jLyfKDTuNubE%2BSNTH744pALawLJl4Nk%2FSgUPdio7xPVv%2FUYnnJYSc7f9LKA32fCoRe7S7QTae1OKkVLxx6XcYT19RWqfER3bRNUVie%2BFhGSDVVpl%2FcESA9ePw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Juventus FC Away Jersey Pink Color Size Medium 26/27 Mens", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/T3IAAeSwiiFqeThi/s-l1600.jpg" },
+      { store: "Amazon", price: 50.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0DLL4RRNT?tag=footballcu047-21", title: "adidas Performance Juventus Away Shirt 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71YxANWC2cL._AC_SL1500_.jpg" },
     ],
   },
 {
@@ -22285,6 +22286,7 @@ const productsData = [
       { store: "FootStoreFR", price: 66.13, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhj4589-496-maillot-domicile-chelsea-2025-26-rush-blue-white-speed-red-white", title: "Maillot Domicile Chelsea 2025/26", inStock: true, sizes: ["XS"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_nike_hj4589-496_1.webp" },
       { store: "eBay", price: 100.0, shipping: 7.2, currency: "USD", url: "https://www.ebay.com/itm/327377028282?_skw=Chelsea+home+soccer+jersey&hash=item4c393104ba%3Ag%3AiXAAAeSw9QBo%7EkHE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men’s Medium Chelsea FC Estevao 25-26 Home Soccer Kit Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/iXAAAeSw9QBo~kHE/s-l1600.jpg" },
       { store: "Amazon", price: 116.03, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FHKZ5VFR?tag=footballcult-21", title: "Nike FC Chelsea 2025/26 Match Home Authentic Dri-FIT ADV Camiseta de fútbol para Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71uREd4Ch2L._AC_UL1000_.jpg" },
+      { store: "Amazon", price: 169.38, shipping: 0.0, currency: "EUR", url: "https://www.amazon.co.uk/dp/B0FHKZ5VFR?tag=footballcu0d7-21", title: "Nike FC Chelsea 2025/26 Match Home Authentic Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71uREd4Ch2L._AC_SL1500_.jpg" },
     ],
   },
 {
@@ -54821,19 +54823,6 @@ const productsData = [
     ],
   },
 {
-    id: "chelsea-home-202526",
-    teamKey: "chelsea",
-    season: "2025/26",
-    typeKey: "home",
-    colorHex: "#034694",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "nike",
-    offers: [
-      { store: "Amazon", price: 169.38, shipping: 0.0, currency: "EUR", url: "https://www.amazon.co.uk/dp/B0FHKZ5VFR?tag=footballcu0d7-21", title: "Nike FC Chelsea 2025/26 Match Home Authentic Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71uREd4Ch2L._AC_SL1500_.jpg" },
-    ],
-  },
-{
     id: "chequia-retro-2022-home",
     teamKey: "chequia",
     season: "2022",
@@ -72408,18 +72397,6 @@ const productsData = [
     ],
   },
 {
-    id: "juventus-away-202526",
-    teamKey: "juventus",
-    season: "2025/26",
-    typeKey: "away",
-    colorHex: "#A7D8E8",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "Amazon", price: 50.0, shipping: 0.0, currency: "EUR", url: "https://www.amazon.it/dp/B0DLL4RRNT?tag=footballcu047-21", title: "adidas Performance Juventus Away Shirt 2025/2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/71YxANWC2cL._AC_SL1500_.jpg" },
-    ],
-  },
-{
     id: "benfica-training-202627",
     teamKey: "benfica",
     season: "2026/27",
@@ -76214,18 +76191,6 @@ const productsData = [
     offers: [
       { store: "eBay", price: 165.99, shipping: 51.75, currency: "USD", url: "https://www.ebay.com/itm/206424692974?_skw=Yokohama+F.+Marinos+home+soccer+jersey&hash=item300fded8ee%3Ag%3AlJ4AAeSw0ZZqXCbO&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2024/25 Yokohama F. Marinos Home Jersey BNWT J-League SIZE Japanese L  ", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/lJ4AAeSw0ZZqXCbO/s-l1600.jpg" },
       { store: "eBay ES", price: 172.95, shipping: 63.11, currency: "EUR", url: "https://www.ebay.es/itm/206424692974?_skw=Yokohama+F.+Marinos+home+soccer+jersey&hash=item300fded8ee%3Ag%3AlJ4AAeSw0ZZqXCbO&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "2024/25 Yokohama F. Marinos Home Jersey BNWT J-League SIZE Japanese L  ", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/lJ4AAeSw0ZZqXCbO/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "paisesbajos-away-2026",
-    teamKey: "paisesbajos",
-    season: "2026",
-    typeKey: "away",
-    colorHex: "#FF6600",
-    colorHexSecondary: "#1B3A6B",
-    jerseyPattern: "solid",
-    brand: "nike",
-    offers: [
     ],
   },
 {
@@ -90784,7 +90749,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fparis-fc-x-jefe-third-away-soccer-jersey-2025-26%3Fvariant%3D42737777377385", title: "Paris FC X Jefe Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Paris_FC_X_Jefe_Third_Jersey_202526_4.webp?v=1765265242" },
     ],
   },
-  {
+{
     id: "palermo-training-202627",
     teamKey: "palermo",
     season: "2026/27",

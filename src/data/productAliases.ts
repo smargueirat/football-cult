@@ -10,6 +10,13 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-09-29: la tarea automática de Amazon creaba una ficha NUEVA con el id
+  // largo en vez de sumar la oferta a la existente, que usa el id corto viejo
+  // (juv-, che-, ned-). Quedaban dos páginas de la misma camiseta, una con 6
+  // tiendas y otra solo con Amazon (la de Países Bajos, vacía).
+  "juventus-away-202526": "juv-away-2025",
+  "chelsea-home-202526": "che-home-2025",
+  "paisesbajos-away-2026": "ned-away-2026",
   // 2026-09-17: "stetienne" y "asse" eran DOS claves de equipo para el mismo
   // club real (AS Saint-Étienne) -- sus regexes en TEAM_PATTERNS se pisaban
   // ("saint-étienne" matcheaba ambas), así que cada mina archivaba el mismo
