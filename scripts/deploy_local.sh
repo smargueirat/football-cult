@@ -13,8 +13,13 @@ NEW="$HOME/fc-prod-a"; [ "$CUR" = "$NEW" ] && NEW="$HOME/fc-prod-b"
 
 rm -rf "$NEW"
 git clone -q --branch main /home/piojo/football-cult "$NEW"
-cp /home/piojo/football-cult/.env.local "$NEW/.env.local"
 cd "$NEW"
+# Solo las variables que el código del sitio lee (más las AUTH_* que next-auth
+# lee por su cuenta). .env.local tiene además las claves de minería (Awin,
+# eBay, Amazon, Telegram...) y no tienen por qué vivir en un proceso público.
+keys=$( (grep -rhoE "process\.env\.[A-Z_0-9]+" src | sed 's/process\.env\.//'; \
+         printf '%s\n' AUTH_SECRET AUTH_GOOGLE_ID AUTH_GOOGLE_SECRET AUTH_TRUST_HOST) | sort -u | paste -sd'|')
+grep -E "^($keys)=" /home/piojo/football-cult/.env.local > .env.local
 npm ci --no-audit --no-fund --silent
 NODE_OPTIONS=--max-old-space-size=8192 npx next build > build.log 2>&1 || { tail -30 build.log; exit 1; }
 
