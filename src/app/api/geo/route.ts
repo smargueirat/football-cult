@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 
-// País del visitante, leído de la cabecera que pone Vercel.
+// País del visitante, leído de la cabecera que pone el CDN: Cloudflare
+// (cf-ipcountry) desde el 2026-09-29, que el sitio se sirve desde nuestra PC
+// por un túnel; Vercel (x-vercel-ip-country) antes. Cloudflare usa "XX" para
+// desconocido y "T1" para Tor: ninguno es un país.
 //
 // Antes esto lo resolvía el proxy, que corría en CADA request para dejar
 // un cookie que solo lee el navegador -- o sea que se pagaba una función
@@ -16,7 +19,9 @@ import { headers } from "next/headers";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const country = (await headers()).get("x-vercel-ip-country") ?? "";
+  const h = await headers();
+  const raw = h.get("cf-ipcountry") ?? h.get("x-vercel-ip-country") ?? "";
+  const country = raw === "XX" || raw === "T1" ? "" : raw;
   return NextResponse.json(
     { country },
     // Es específico de quien pregunta: nunca cachear en un CDN compartido.
