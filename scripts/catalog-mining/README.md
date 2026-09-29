@@ -3317,3 +3317,180 @@ unchanged. Price drops: 664 across the seven sections (camisetas 57, botas 19,
 entradas 542, ropa 38, guantes 3, pelotas 4, entrenamiento 1); Telegram
 published 3 -- the `.env.local` fix from 09-27 is holding. Dominant colours:
 66 new, 0 errors.
+
+## Daily pass (2026-09-29) -- "Bayern Monaco" is Munich, and the back-only photo is the single biggest retro false positive
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation ES, US, IT --
+day-of-year 272 mod 3 = 2). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (14th pass).
+**116 new products** (10 FansJerseyHub current, 0 kids, 0 women, 106 eBay retro
+-- 6729 -> 6842 blocks after three merges); `tsc`/dupe-id/duplicate-URL/build
+all clean. Store and currency censuses clean, `teamMeta` clean after one fix.
+Quota was healthy all night: `rate_limit/` read 3040/5000 at 06:08 UTC and
+4640/5000 after the window rolled, **all three marketplaces completed 20/20
+with zero 429s** -- ES 185/384 cycle 1, US 222/384 cycle 4, IT 197/384 cycle 1.
+
+**`team_collision_scan.py` has a language false positive worth naming: in
+Italian, Bayern Munich is "Bayern Monaco".** 20 of the 35 eBay IT flags were
+`bayern|* -> monaco ('Monaco')` on perfectly genuine Bayern shirts, because
+`monaco`'s `TEAM_PATTERNS` entry matches the Italian name of the *city*. Two of
+them (`bayern|home|1975`, `bayern|home|1991/93`) were nearly dropped by an
+automated re-run of the same heuristic over the retro NEW set before the titles
+were read. **Any scan that compares a team name against another team's pattern
+needs to survive the fact that one club's name is another club's city in a
+third language** -- do not act on this scan's output without reading the title.
+Of 90 eBay flags total, 51 were real and dropped (PSG under `jordania` x8,
+Spanish/Italian/English clubs under their country keys, Peñarol/Nacional/Boca
+under `uruguay`, Kerala Blasters under `india`, Gabrovo under `bulgaria`); the
+documented filler-name keepers (Burnley/England, Parma/ITALY x4, Everton x4,
+Fulham/England, PSG/Qatar Airways) held. **0 flags on every CSV-feed set**, as
+always.
+
+**The back-only photo is not one seller's quirk -- it is the single largest
+false-positive class in eBay retro.** The 09-28 entry found it as a three-listing
+pattern (`Maglia HOME Shirt ...`, wooden hanger, white slat wall) and wrote the
+rule "the tell is not the word retro, it is that the photo never shows the
+front". Reviewing all 189 retro candidates by photo this pass, **25 of the 59
+hand-drops were back-only photos** across at least a dozen unrelated sellers --
+more than every other reason combined. The shape is always the same: a player
+name and number fill the frame, so the listing looks informative while showing
+nothing that can be verified. There is no title signal for it, so it cannot be
+automated; **budget for the photo pass, it is where the value of this step is.**
+A related sub-class: a back-only photo often *also* hides a different club --
+`italia|away|1995/96` (Del Piero) and `italia|away|1997/98` (Zidane) are
+**Juventus**, `italia|home|1998/99` (Totti) is **AS Roma**, `italia|third|2006/07`
+(Pirlo) is **AC Milan**. One seller files Serie A club shirts under `italia` and
+photographs only the back; the national-team crest would have settled all four
+instantly had the front been shown.
+
+**Three new title filters, all cheap and all real.** Added to the retro pre-pass
+(not to `extract.py` -- these only matter for the retro dimension):
+- **reissue/reprint**: `ristampa` (Italian), `reimpresión`, `reprint`, `reissue`.
+  Caught 3 outright plus, by eye, a "Score Draw official retro" England 1996/97,
+  an adidas **Originals** Real Madrid 1984 Zanussi and an Umbro Man Utd 1998 --
+  same call as the Denmark-86 heritage reissue already on the blocklist.
+- **signed/match-worn**: `firmata`/`firmado`/`signed`/`autograf*`, `match worn`.
+  A signed Aston Villa 2021 at EUR160.94 is priced for the signature, not the
+  garment -- useless on a price-comparison site, same reasoning as the $699
+  Sevilla ceiling that produced `MAX_JERSEY_PRICE`.
+- **women's cut leaking into the men's retro pass**: `RETRO_EXCLUDE_RE` does not
+  filter women's the way `EXCLUDE_RE` does (deliberate -- those are real
+  products), but since 2026-09-28 women's is its own dimension with its own
+  miner, so a `donna`/`mujer`/`women's` title in the *men's* retro set is now
+  simply misfiled. 11 caught by regex and 1 more by eye (`Woman L`, singular --
+  the regex wanted `women`).
+
+**`retro_extract.py` still reads "Como 1907" as the season 1907** -- third pass
+running, `como|home|1907` and `como|away|1907` again. Dropped by hand again. The
+README has claimed since August that masking the matched `TEAM_PATTERNS` span
+before season detection fixed this; it demonstrably has not on the retro path.
+Also seen once more: `juventus|home|1905/05` out of "Juventus 2005 Home
+Centenario 1905-2005".
+
+**Shop Real Betis' `size` column is now empty in every one of its 1931 rows**,
+so `pick.py` returned **zero** picks -- the exact silent-failure mode the README
+warns about ("running with wrong columns doesn't error, it returns zero picks").
+It only surfaced because yesterday's pick file was still on disk and showed a
+fixed `S,M,L,XL,XXL` range, which is `pick_no_size.py`'s fallback, not a real
+size list. Re-run with `pick_no_size.py` it produced the same 5 real picks as
+every other day. **Check a zero against yesterday's file, not against
+plausibility** -- this store legitimately returns few picks, so "0" did not look
+wrong on its own. The 09-27 `stock=0` filter held: 1149 of 1931 rows sold out,
+782 kept.
+
+**`ebay_check_stale.py` reports "quota hit or network trouble" for both, and
+they need different responses.** It stopped after 41 of 200 offers; reading
+`rate_limit/` immediately after showed `buy.browse remaining=4200/5000`, so it
+was network, not quota -- a plain re-run then completed 200/200. Combined 241
+checked, 21 dead (8.7%), just under the 9.5-12% band. **Read the rate-limit
+endpoint before believing that message**; one of its two branches is retryable
+in the same run and the other is not.
+
+**The 09-28 "Third Away" fix produced this pass's only new current products.**
+FansJerseyHub calls the third kit "Third Away"; with `third` now beating `away`,
+9 genuinely new third kits appeared that the catalog had never had a slot for
+(Nottingham Forest, Olympiacos, Paris FC x Jefe, Cruzeiro, Fulham, Palmeiras,
+Haiti, Málaga, Braga) -- all photo-verified with correct crest, supplier and
+sponsor, and none of those teams had *any* third on file. A 10th
+(`atleticonacional|third` 2026/27) came out of the season-conflict set and is a
+genuinely different shirt: grey/black Nike against the green 2025/26 already on
+file, confirmed against that product's own photo. **This is what a
+classification fix looks like a day later -- not a diff, a gap that fills in.**
+
+**eBay current produced zero new products.** Three listings were blocklisted by
+photo: an "England third" on eBay ES that is a **New England Revolution** shirt
+("EST. 1996", tag reads `NE 3 JSY AU` -- the Revolution are not a TeamKey, so
+there is nothing to re-file it under), a Como 1907 away invented as an "Edizione
+Champions League" for a club not in the Champions League (same tell as 09-28),
+and a Croatia away 2026/27 that is an adidas **Originals trefoil** lifestyle
+jersey (the 09-24 Japan / 09-28 Argentina class). Conflicts skipped as
+documented noise: `manutd|goalkeeper` on all three marketplaces (older stock),
+`espana|training` and `inglaterra|away` (unverifiable season, 2nd pass),
+`iraq|home`, `caboverde|home` (sells home *and* away), `brasil|prematch` (item
+id already on the product), `riverplate|training`, `celtavigo|third` (older
+stock). `wolves|home` 2026/27 was skipped for a reason worth recording: real
+SUDU shirt with the real MIDNITE sponsor, but printed **RAUL #9** -- Jiménez
+left Wolves in 2024 -- and a heraldic coat of arms where the current crest is a
+wolf head. **Two anachronisms beat one plausible supplier.**
+
+**The duplicate-URL diff earned its keep again: 3 new collisions, all the
+bare-year-twin class.** `brasil-retro-2006-home` vs `…-200607-home`,
+`astonvilla-retro-2018-third` vs `…-201819-third` (the classifier compares the
+exact generated id, so it cannot see these), plus
+`pumasunam-away-202526`, whose only offer was the FansJerseyHub "Third Away"
+that now correctly belongs to `pumasunam-third-202526`. All three un-created,
+the Brazil one's unique eBay ES offer moved onto the two-year product, and **all
+three given `PRODUCT_ID_ALIASES` entries** -- these are merges, not deletions of
+things that should never have existed, so the favorite has a legitimate
+successor. Net 259 cross-product duplicate URLs, **below** HEAD's 261.
+
+**`brighton` had no `TEAM_LEAGUE` entry and nothing had noticed for lack of a
+product.** Creating `brighton-retro-201314-away` was the first Brighton product
+in the catalog, and `check_team_leagues.py` immediately flagged it -- without an
+entry, `teamMeta` treats a key as a *national team*, so Brighton would have been
+served as a country. Added `brighton: "premier-league"`. **A new team key is a
+metadata change, not just a product** -- run that check after any pass that
+creates a team's first product.
+
+`ebay_gb_retro.py`: 300 fichas reviewed, **103 with the same model on eBay UK**
+(34%, in line with the ~40% of the 09-28 first batch), 2882 single-store retro
+products left to check. Three were dropped before applying -- two youth sizes
+("Youths Small 128", "Boys") and one `Ladies` -- so this pass needs the same
+kids/women filter the main retro pass has; 100 applied. Spot-checked 5 by photo
+(Sweden 24/25 away, Roma 14/15 away, Valencia 22/23 away, Real Madrid 14/15 and
+19/20 thirds), all genuine and correctly matched on team, kit and season.
+
+**CSV feeds: zero new products for the 9th time** apart from the FansJerseyHub
+thirds above, across all 15 Awin stores, the 2 TradeTracker and the 5 Rakuten
+ones. All season conflicts were documented noise, and six were verified as the
+*exact same offer already on file* rather than assumed (AdidasPT Tiro 25 x2,
+Inter Miami on both BSTNs, ForumSport Alaves, FansJerseyHub Sunderland);
+`noruega|home` 2025 is now the **14th** pass, the ForumSport `barcelona|prematch`
+photo is still dated `20240702` in its own filename, and `internacional|home`
+and `realbetis|training` are older stock as always. DecathlonIE and ProSoccer
+genuine zeros as always. Rakuten's five files all arrived with a matching `TRL|`
+count (Santos needed 2 attempts).
+
+Women's pass: 189 picks across 13 stores, **0 new products**, offers refreshed
+in 9. One conflict is structurally unresolvable and should stop being
+re-litigated: `barcelona|third` women's 2026/27 against the 2025/26 on file --
+the women's id convention (`{team}-{type}-women`) **has no season in it**, so a
+new season cannot become a new product and the only options are overwrite or
+skip. Skipped.
+
+Kids: exactly one new candidate across all three marketplaces
+(`brasil|away` on eBay ES), dropped -- "infantil 9-12M" is **babywear**, not the
+kids sizing this catalog uses. 117 existing kids offers refreshed/inserted.
+
+`refresh_boots.py`: 99 new, 33 dropped, 294 price changes, FutbolEmotion feed
+refreshed cleanly (no WARNING line), legacy `{fe_kept: 59, forum_kept: 58,
+fe_dropped: 1, products_removed: 1}`; colour step `ok: 16, errors: 0` -- back to
+zero after 09-28's first nonzero count, so that was transient.
+`refresh_gear.py`: guantes 20 new / 6 dropped / 37 price changes, pelotas 16 / 0
+/ 33, ropa 206 / 39 / 291, entrenamiento 26 / 12 / 43; `check_gear_ids.py` OK.
+Tickets: **0 new and 0 dropped** out of 2573 events, and every venue lookup was
+a Wikidata miss again so `venue_cities.json` is unchanged (5th pass). Price
+drops: 4673 across the seven sections (camisetas 79, botas 14, entradas 4407,
+ropa 143, guantes 13, pelotas 13, entrenamiento 4); Telegram published 3.
+Dominant colours: 194 new, 0 errors. GTINs: 2264 of 12273 offers (18.4%).

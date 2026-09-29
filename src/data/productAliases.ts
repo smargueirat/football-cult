@@ -3776,8 +3776,13 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "wdk-partner-ballon-de-football-wdk-partner-t5-portugal-vert": "wdk-partner-balones-de-futbol-wdk-partner-t5-portugal-vert",
   "wilson-ballon-de-football-wilson-pentagon-blanc": "wilson-balones-de-futbol-wilson-pentagon-blanc",
   "wilson-ballon-de-football-wilson-pentagon-bleu": "wilson-balones-de-futbol-wilson-pentagon-bleu",
+  // Pasada diaria 2026-09-29: gemelos de ano suelto y una tercera archivada
+  // como suplente, fusionados contra la ficha que se queda (ver el diff de
+  // URLs duplicadas del README).
+  "brasil-retro-2006-home": "brasil-retro-200607-home",
+  "astonvilla-retro-2018-third": "astonvilla-retro-201819-third",
+  "pumasunam-away-202526": "pumasunam-third-202526",
 };
-
 // Resolves an id through the alias map (one hop -- every alias points at a
 // real current id, never at another alias, so this never needs to loop).
 export function resolveProductId(id: string): string {

@@ -67,6 +67,7 @@ export const TEAM_LEAGUE: Record<string, string> = {
   burnley: "premier-league",
   chelsea: "premier-league",
   crystalpalace: "premier-league",
+  brighton: "premier-league",
   everton: "premier-league",
   fulham: "premier-league",
   leeds: "premier-league",

@@ -307,6 +307,21 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # entro al catalogo por FootStoreFR/SportIsGoodFR, pero ESTA publicacion es
     # del tipo hecho-a-pedido (misma senal que el Inglaterra 1998/99 del 09-27).
     "ebay.com/itm/318901058359",
+    # Daily pass 2026-09-29, eBay current picks dropped by photo:
+    # "England third" on eBay ES is a NEW ENGLAND REVOLUTION (MLS) shirt --
+    # "EST. 1996", tag reads "NE 3 JSY AU". The country/club collision class,
+    # and the Revolution are not a TeamKey, so there is nothing to re-file it
+    # under.
+    "ebay.es/itm/820066764651",
+    # Como 1907 away "Edizione Champions League" on eBay IT: Como are not in
+    # the Champions League, and the sleeve badge is a generic star, not the
+    # UCL starball. Same invented-competition tell as the listing dropped
+    # 2026-09-28 under this same key.
+    "ebay.it/itm/307193936823",
+    # Croatia away 2026/27: real HNS crest but an adidas ORIGINALS trefoil
+    # lifestyle jersey, not the match kit -- same class as the Japan prematch
+    # (2026-09-24) and the Argentina away (2026-09-28).
+    "ebay.es/itm/800700704692",
 ]
 
 
