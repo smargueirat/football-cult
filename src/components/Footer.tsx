@@ -49,6 +49,14 @@ export default function Footer() {
           >
             {t.priceDrop.channelLink}
           </a>
+          <a
+            href="https://x.com/FootballCultCom"
+            target="_blank"
+            rel="noopener noreferrer me"
+            className="transition-colors hover:text-[#F3E9C9]"
+          >
+            X · @FootballCultCom
+          </a>
           <Link href="/guantes" className="transition-colors hover:text-[#F3E9C9]">
             {t.guantes.navLabel}
           </Link>

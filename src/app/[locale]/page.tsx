@@ -92,6 +92,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               url: `${SITE_URL}/${locale}`,
               logo: `${SITE_URL}/logo-badge.png`,
               description: t.hero.h1Sub.replace("{s}", String(trust.stores)),
+              // Perfiles oficiales de la marca. Es lo que usa Google para
+              // saber que la cuenta de X y el canal de Telegram son de este
+              // sitio y no de otro "Football Cult" (hay varios).
+              sameAs: ["https://x.com/FootballCultCom", "https://t.me/FootballCultOfertas"],
             },
             {
               "@context": "https://schema.org",
