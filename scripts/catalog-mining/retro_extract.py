@@ -63,12 +63,34 @@ RETRO_EXCLUDE_RE = re.compile(
 TITLE_SIZE_SUFFIX_RE = re.compile(r"^(.*?)\s*-\s*(XXS|XS|S|M|L|XL|2XL|XXL|3XL|4XL)\s*$", re.I)
 
 
+_TEAM_YEAR_RES = None
+
+
+def _mask_team_years(title):
+    """Borra del título los nombres de equipo que llevan un número."""
+    global _TEAM_YEAR_RES
+    if _TEAM_YEAR_RES is None:
+        from extract import team_re_all
+        _TEAM_YEAR_RES = [p for p in team_re_all().values() if re.search(r"\d", p.pattern)]
+    for p in _TEAM_YEAR_RES:
+        title = p.sub(" ", title)
+    return title
+
+
 def parse_retro_season(title):
     """Returns a normalized season string with a REAL 4-digit start year
     (e.g. "1991/92", "1998"), or None if no clear historic season is
     found in the title. Handles 2-digit pairs by century-guessing
     (>=50 -> 19xx, <50 -> 20xx), unlike split_picks.py's detect_season
-    (which assumes 20xx always and is only meant for modern seasons)."""
+    (which assumes 20xx always and is only meant for modern seasons).
+
+    Los equipos con un año en el nombre ("Como 1907", "Munich 1860",
+    "Salernitana 1919") se enmascaran ACÁ y no en cada llamador: hasta el
+    2026-09-29 solo lo hacía analyze(), y las pasadas retro de eBay
+    (ebay_mine_full.py, ebay_gb_retro.py) llaman directo con el título crudo,
+    así que "Como 1907 Home Shirt" seguía saliendo como temporada 1907 y el
+    escaneo lo descartaba a mano noche tras noche."""
+    title = _mask_team_years(title)
     m = re.search(r"\b(19\d\d|20\d\d)[/-](19\d\d|20\d\d)\b", title)
     if m:
         return f"{m.group(1)}/{m.group(2)[-2:]}"
