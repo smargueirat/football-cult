@@ -191,10 +191,13 @@ fi
 # descubiertas y CERO indexadas, y es el índice que alimenta Yahoo,
 # DuckDuckGo, Ecosia y la búsqueda de ChatGPT: el canal donde nuestra falta de
 # autoridad pesa menos. Todas las noches van los hubs (unos cientos, cambian
-# con el catálogo); los lunes va el sitemap entero, para no mandar 14K URLs
-# idénticas cada día, que IndexNow puede leer como abuso.
+# con el catálogo).
 # SOLO hubs, nunca --all: el 2026-09-29 Vercel pausó el sitio entero por
 # superar el plan Hobby (escrituras ISR 7,5x el límite, solicitudes CDN 3x).
 # Mandar 14.000 URLs a Bing invita a rastrearlas todas, y cada ficha que no
 # está en caché se regenera: es una escritura ISR y CPU por URL.
 python3 scripts/indexnow.py 2>&1 | tail -3
+
+# Publicar en el servidor de esta PC (desde 2026-09-29; antes lo hacía Vercel
+# al recibir el push). Va al final para incluir todos los commits de la noche.
+scripts/deploy_local.sh 2>&1 | tail -5
