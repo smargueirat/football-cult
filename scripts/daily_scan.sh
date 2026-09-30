@@ -199,6 +199,14 @@ fi
 # está en caché se regenera: es una escritura ISR y CPU por URL.
 python3 scripts/indexnow.py 2>&1 | tail -3
 
+# El mismo anuncio en dos fichas (año suelto vs temporada): lo deja solo en la
+# de su temporada real. Agregado 2026-09-30, ver el docstring del script.
+if python3 scripts/catalog-mining/dedupe_same_url.py --apply | tail -1 | grep -q "aplicado"; then
+  git add src/data/products.ts src/data/productAliases.ts && \
+    git commit -q -m "chore(catalogo): mismo anuncio en dos fichas, deduplicado ($(date +%Y-%m-%d))" && \
+    git push -q origin "$(git rev-parse --abbrev-ref HEAD)"
+fi
+
 # Publicar en el servidor de esta PC (desde 2026-09-29; antes lo hacía Vercel
 # al recibir el push). Va al final para incluir todos los commits de la noche.
 scripts/deploy_local.sh 2>&1 | tail -5
