@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { bootProducts } from "@/data/boots";
+import bootAliases from "@/data/bootAliases.json";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { brandFacets, brandGroundCombos, byBrand, byBrandGround, byGround, cheapestFirst, groundFacets } from "@/lib/gearHubs";
@@ -102,7 +103,14 @@ export default async function BootDetailPage({
 }) {
   const { locale, id } = await params;
   const boot = findBoot(id);
-  if (!boot) notFound();
+  if (!boot) {
+    // Ficha fundida con otra (misma bota en otra tienda, ver merge_by_code en
+    // scripts/boots-mining/refresh_boots.py): su URL vieja redirige a la que
+    // la absorbió en vez de dar 404.
+    const target = (bootAliases as Record<string, string>)[id];
+    if (target && findBoot(target)) permanentRedirect(`/${locale}/botas/${target}`);
+    notFound();
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",

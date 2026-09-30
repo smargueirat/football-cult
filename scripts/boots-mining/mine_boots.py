@@ -265,6 +265,8 @@ def mine_adidas_es():
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            'eans': sorted({(r.get('ean') or '').strip() for r in rows} - {''}),
+            'style': style,
         })
         n += 1
     print('AdidasES:', n)
@@ -335,6 +337,10 @@ def mine_blaz_awin(fname, store_label):
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            # EAN por talla: es lo que permite fundir esta bota con la MISMA
+            # que vende otra tienda (Pro:Direct, adidas), ver refresh_boots.py.
+            'eans': sorted({(r.get('ean') or '').strip() for r in rows} - {''}),
+            'style': (rep.get('mpn') or '').strip(),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -445,6 +451,8 @@ def mine_google_shopping_fr(fname, store_label):
             'price': price, 'shipping': shipping,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'), 'sizes': sizes,
+            'eans': sorted({(r.get('gtin') or '').strip() for r in rows} - {''}),
+            'style': (rep.get('mpn') or '').strip(),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -876,6 +884,51 @@ def mine_futbolemotion(legacy_model_names):
         n += 1
     print('FutbolEmotion:', n)
 
+# ---------- PRO:DIRECT ESPAÑA (Shopify, sin feed de afiliados) ----------
+# prodirect_es_boots_feed.py deja el JSON (sábado todo el sitemap, las demás
+# noches solo lo que tenía stock). Enlace directo: lo monetiza Skimlinks.
+# Envío estándar a la UE 3,62 EUR, medido con el estimador de Shopify.
+PRODIRECT_GROUND = {"firmground": "FG", "softground": "SG", "artificialgrass": "AG",
+                    "astroturf": "TF", "multiground": "MG", "turf": "TF"}
+
+
+def _prodirect_size(v):
+    # Pro:Direct escribe las tallas de adidas con fracciones Unicode ("39 ⅓");
+    # el resto del catálogo usa "39 1/3" (adidas) y "42.5" (Foot-Store).
+    return dot_size(v.replace(' ⅓', ' 1/3').replace(' ⅔', ' 2/3').replace(' ½', '.5'))
+
+
+def mine_prodirect():
+    path = f"{FEEDS}/PRODIRECT_ES_BOOTS.json"
+    if not os.path.exists(path):
+        print('ProDirectES: feed not found, skipped')
+        return
+    n = 0
+    for p in json.load(open(path)):
+        title = p.get('title') or ''
+        if EXCLUDE_KEYWORDS.search(title):
+            continue
+        vs = p['variants']
+        sizes = sorted({_prodirect_size(v['size']) for v in vs}, key=size_sort_key)
+        price = min(v['price'] for v in vs)
+        price_max = max(v['price'] for v in vs)
+        ground = infer_ground(title) or PRODIRECT_GROUND.get(p.get('ground') or '', '')
+        entry = {
+            'store': 'Pro:Direct ES', 'brand': p.get('brand') or 'N/D', 'model': title, 'groundType': ground,
+            'price': price, 'shipping': 3.62, 'currency': 'EUR',
+            'url': p['url'], 'imageUrl': p.get('image') or '', 'sizes': sizes,
+            'eans': sorted({v['ean'] for v in vs} - {''}),
+            'style': p.get('style') or '',
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+            entry['sizePrices'] = sorted(({'size': _prodirect_size(v['size']), 'price': v['price'], 'url': p['url']} for v in vs),
+                                         key=lambda sp: size_sort_key(sp['size']))
+        results.append(entry)
+        n += 1
+    print('ProDirectES:', n)
+
+
 def legacy_model_names_from_boots_ts():
     """Nombres (en minúscula) de los 71 legacy, para que
     mine_futbolemotion() no los duplique. Lee boots.ts directo en vez de
@@ -902,8 +955,11 @@ if __name__ == '__main__':
     mine_gigasport('GIGASPORT_FR.csv', 'GigasportFR', GIGASPORT_FR_BOOT_CATS)
     mine_clovis()
     mine_futbolemotion(legacy_model_names_from_boots_ts())
+    # Último a propósito: si una bota de Pro:Direct es la misma (EAN) que una
+    # de otra tienda, se suma a esa ficha y la ficha conserva su id.
+    mine_prodirect()
 
-    # Guardia real, un solo punto para las 12 tiendas de arriba (mismo
+    # Guardia real, un solo punto para las 13 tiendas de arriba (mismo
     # espíritu que EXCLUDE_KEYWORDS): sin foto la card sale como caja
     # beige vacía (pedido explícito del usuario, 2026-09-22) -- se
     # descarta acá antes de escribir el JSON en vez de en cada mine_*.

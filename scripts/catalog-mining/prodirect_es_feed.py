@@ -19,8 +19,15 @@ Envío: 3,62 EUR estándar a ES/IT/FR/DE, medido con el estimador de Shopify.
 Tarda ~30 min (~2,4 s por producto, con pausa para no molestar a la tienda).
 
 Uso: python3 -u prodirect_es_feed.py /tmp/feeds/PRODIRECT_ES.csv
+     python3 -u prodirect_es_feed.py --uk /tmp/feeds/PRODIRECT_UK.csv
 Después va por el camino de siempre: pick.py -> split_picks.py -> refresh.py /
-gen_new_teams.py con tienda "Pro:Direct ES" y moneda EUR.
+gen_new_teams.py con tienda "Pro:Direct ES" y moneda EUR (o, con --uk,
+"Pro:Direct Soccer" y GBP).
+
+--uk (2026-09-30): la web de Reino Unido (prodirectsport.com) es OTRA tienda,
+en libras, y no envía ni a la UE ni a EE.UU.: sirve para los visitantes de
+Reino Unido. Envío estándar a Reino Unido 4,99 GBP. Los títulos vienen en
+inglés, que pick.py ya entiende.
 """
 import csv, json, re, sys, time, urllib.request
 
@@ -28,7 +35,8 @@ sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(_
 import extract
 from shopify_feed_to_csv import parse_size
 
-DOM = "www.prodirectsport.es"
+SITES = {"es": ("www.prodirectsport.es", "3.62"), "uk": ("www.prodirectsport.com", "4.99")}
+DOM, SHIP = SITES["es"]
 UA = {"User-Agent": "Mozilla/5.0"}
 KIT = re.compile(r"\b(shirt|jersey|camiseta)\b")
 BAD = re.compile(r"\b(t shirt|tee|training|pre match|prematch|warm up|gk|goalkeeper|polo|base layer|baselayer|"
@@ -88,7 +96,7 @@ def main(out_path):
             for v in p.get("variants", []):
                 if v.get("available"):
                     w.writerow({"product_name": p["title"], "price": f"{v['price'] / 100:.2f}",
-                                "delivery_cost": "3.62", "custom_1": parse_size(v.get("option1")),
+                                "delivery_cost": SHIP, "custom_1": parse_size(v.get("option1")),
                                 "aw_deep_link": url, "aw_image_url": img, "brand": p.get("vendor", "")})
                     rows += 1
             ok += 1
@@ -98,4 +106,7 @@ def main(out_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "/tmp/feeds/PRODIRECT_ES.csv")
+    args = [a for a in sys.argv[1:] if a != "--uk"]
+    if "--uk" in sys.argv:
+        DOM, SHIP = SITES["uk"]
+    main(args[0] if args else f"/tmp/feeds/PRODIRECT_{'UK' if '--uk' in sys.argv else 'ES'}.csv")

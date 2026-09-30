@@ -453,6 +453,10 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
     "ES", "FR", "DE", "IT", "PT", "NL", "BE", "AT", "IE", "GR", "FI", "SE",
     "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI",
   ],
+  // Pro:Direct Reino Unido (prodirectsport.com): libras, NO envía a la UE ni a
+  // EE.UU. Envío estándar a Reino Unido 4,99 GBP; al resto del mundo cobra
+  // otra tarifa (~11 GBP) que la oferta no refleja, así que solo Reino Unido.
+  "Pro:Direct Soccer": ["GB"],
   FootStoreES: [
     "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
     "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",

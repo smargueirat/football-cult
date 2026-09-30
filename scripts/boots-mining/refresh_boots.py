@@ -213,7 +213,43 @@ def merge_mirror_offers(mined):
             groups[key] = []
             order.append(key)
         groups[key].append(d)
-    return [groups[k] for k in order]
+    return merge_by_code([groups[k] for k in order])
+
+
+def _codes(d):
+    """EANs de la oferta + su código de fabricante (estilo-color)."""
+    codes = set(d.get("eans", ()))
+    if d.get("style"):
+        codes.add("style:" + d["style"].upper())
+    return codes
+
+
+def merge_by_code(groups):
+    """Segunda pasada (2026-09-30): funde grupos que venden EXACTAMENTE la
+    misma bota, por dos llaves:
+    - EAN: código de barras de una talla de un colorway. Pero cada tienda
+      solo lista los talles que tiene en stock, así que dos tiendas con la
+      misma bota muchas veces no comparten ningún EAN.
+    - Código de fabricante estilo-color (Nike "FJ2586-002", adidas "IH7161"),
+      igual para todos los talles: el `mpn` de Foot-Store / Sport is Good, el
+      prefijo del id de adidas y una etiqueta de Pro:Direct.
+    Primer caso real: Nike Phantom GX II Elite SG FJ2586-002, 269 EUR en
+    Foot-Store y 90 EUR en Pro:Direct. La foto (`_image_key`) solo sirve entre
+    tiendas espejo; esto sirve entre cualquiera. Nunca junta dos ofertas de
+    la misma tienda en una ficha."""
+    out, by_code = [], {}
+    for g in groups:
+        codes = set().union(*(_codes(d) for d in g))
+        stores = {d["store"] for d in g}
+        target = next((by_code[c] for c in codes if c in by_code
+                       and not stores & {d["store"] for d in out[by_code[c]]}), None)
+        if target is None:
+            target = len(out)
+            out.append([])
+        out[target].extend(g)
+        for c in codes:
+            by_code.setdefault(c, target)
+    return out
 
 
 def build_entries(mined, used_ids):
@@ -229,10 +265,23 @@ def build_entries(mined, used_ids):
         merge_mirror_offers(mined),
         key=lambda g: (slugify(f"{g[0]['store']}-{g[0]['brand']}-{g[0]['model']}-{g[0]['groundType']}"), g[0]['url']),
     )
+    def base_of(g):
+        d = g[0]
+        return slugify(f"{d['store']}-{d['brand']}-{d['model']}-{d['groundType']}")
+
+    base_count = {}
+    for g in groups:
+        base_count[base_of(g)] = base_count.get(base_of(g), 0) + 1
     for group in groups:
         d = group[0]
-        base = slugify(f"{d['store']}-{d['brand']}-{d['model']}-{d['groundType']}")
-        sid = base
+        base = base_of(group)
+        # Varios colorways con el mismo nombre: el sufijo es su código de
+        # fabricante ("-ih7161"), que no cambia, en vez de un contador que
+        # dependía del orden del feed y podía hacer que "-4" mostrara otra
+        # bota al día siguiente (2026-09-30). El contador queda solo para los
+        # que no traen código.
+        style = next((slugify(x["style"]) for x in group if x.get("style")), "")
+        sid = f"{base}-{style}" if base_count[base] > 1 and style else base
         i = 2
         while sid in seen_ids:
             sid = f"{base}-{i}"
@@ -440,6 +489,39 @@ def run_color_extraction():
     subprocess.run(["node", os.path.join(SCRIPT_DIR, "extract_boot_colors.mjs")], check=True)
 
 
+ALIASES_PATH = os.path.join(SCRIPT_DIR, "..", "..", "src", "data", "bootAliases.json")
+
+
+def update_aliases(old_auto_section, entries):
+    """Id que desaparece -> id de la ficha que hoy tiene alguna de sus mismas
+    ofertas (misma URL de tienda). Pasa cuando merge_by_code funde dos fichas
+    en una: sin esto, la URL vieja (indexada, en favoritos) daría 404. Se
+    acumula entre corridas; nunca se guarda un alias de un id vivo y las
+    cadenas (a -> b -> c) se resuelven a su destino final."""
+    aliases = json.load(open(ALIASES_PATH)) if os.path.exists(ALIASES_PATH) else {}
+    live = {e["id"] for e in entries}
+    url_to_id = {o["url"]: e["id"] for e in entries for o in e["offers"]}
+    added = 0
+    for m in re.finditer(r'\n  \{\n    id: "([^"]+)"(.*?)(?=\n  \{\n    id: "|\Z)', old_auto_section, re.S):
+        old_id = m.group(1)
+        if old_id in live:
+            continue
+        target = next((url_to_id[u] for u in re.findall(r'url: "([^"]+)"', m.group(2)) if u in url_to_id), None)
+        if target and aliases.get(old_id) != target:
+            aliases[old_id] = target
+            added += 1
+    for k in list(aliases):
+        seen = {k}
+        while aliases.get(k) in aliases and aliases[k] not in seen:
+            seen.add(aliases[k])
+            aliases[k] = aliases[aliases[k]]
+        if k in live:
+            del aliases[k]
+    with open(ALIASES_PATH, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(aliases.items())), f, ensure_ascii=False, indent=0)
+    return added
+
+
 def main():
     download_futbolemotion()
     run_mine_boots()
@@ -464,6 +546,7 @@ def main():
     write_boots_ts(prefix, entries)
 
     new_ids = {e["id"] for e in entries}
+    n_alias = update_aliases(old_auto_section, entries)
     added = new_ids - old_auto_ids
     removed = old_auto_ids - new_ids
     price_changed = 0
@@ -482,6 +565,7 @@ def main():
     print(f"products missing from today's feed (dropped, see docstring): {len(removed)}")
     print(f"existing products with a price change: {price_changed}")
     print(f"legacy offers refreshed against today's feeds: {legacy_stats}")
+    print(f"fichas fundidas con otra (URL vieja -> redirección 308): {n_alias}")
 
 
 if __name__ == "__main__":

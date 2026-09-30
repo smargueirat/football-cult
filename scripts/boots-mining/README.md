@@ -14,6 +14,27 @@ viven aparte, en `legacyBootProducts` dentro de `boots.ts`, y este
 pipeline nunca los toca. Lo mismo para `browserMinedBootProducts`
 (Nike CL, Nike AR, Puma AR) -- ver la sección dedicada más abajo.
 
+## Pro:Direct España y la fusión por EAN (2026-09-30)
+
+Pro:Direct no tiene feed de afiliados: es un Shopify abierto y el enlace
+directo lo monetiza Skimlinks. `prodirect_es_boots_feed.py` arma
+`/tmp/feeds/PRODIRECT_ES_BOOTS.json` desde el sitemap (el único listado
+completo) y `/products/<handle>.js` (el único que dice qué talle hay en
+stock). Todo el sitemap tarda ~5 h: el sábado a las 20:00 va completo
+(`--all`) y las demás noches a las 00:30 solo se refrescan las que tenían
+stock, por crontab. `mine_prodirect()` lo lee; envío 3,62 EUR a la UE.
+
+Cada talle de Pro:Direct, Foot-Store, Sport is Good y adidas trae su **EAN**,
+y cada colorway su **código de fabricante** (Nike "FJ2586-002", adidas
+"IH7161"). `merge_by_code()` (refresh_boots.py) funde en una sola ficha los
+grupos que comparten cualquiera de los dos: es la misma bota exacta en otra
+tienda, que es la comparación que le da sentido al sitio. Hace falta el
+código además del EAN porque cada tienda solo lista los talles que tiene, y
+dos tiendas con la misma bota a menudo no comparten ningún talle. Primer
+caso real: FJ2586-002 a 269 EUR en Foot-Store y 90 EUR en Pro:Direct. La foto (`_image_key`) solo sirve
+entre tiendas espejo; el EAN sirve entre cualquiera. Nunca junta dos
+ofertas de la misma tienda. Prueba: `python3 check_merge_by_code.py`.
+
 ## Monedas reales por tienda
 
 Todas las tiendas ES/IE/FR/DE/CH cobran en EUR. Pro Soccer cobra en USD
