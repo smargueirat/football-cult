@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { gearAlias } from "@/lib/gearAliases";
 import { trainingProducts } from "@/data/training";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
@@ -74,7 +75,11 @@ export default async function TrainingDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const item = findTraining(id);
-  if (!item) notFound();
+  if (!item) {
+    const target = gearAlias("entrenamiento", id);
+    if (target && findTraining(target)) permanentRedirect(`/${locale}/entrenamiento/${target}`);
+    notFound();
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",

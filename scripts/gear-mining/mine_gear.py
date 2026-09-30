@@ -132,6 +132,7 @@ def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            'eans': _eans(rows, 'ean'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -213,6 +214,7 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
             'price': price, 'shipping': shipping,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'), 'sizes': sizes,
+            'eans': _eans(rows, 'gtin'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -269,6 +271,7 @@ def mine_deporte_outlet_category(title_keywords, store_label, out_list, check_ki
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            'eans': _eans(rows, 'ean'),
         })
         n += 1
     print(f'{store_label}:', n)
@@ -313,6 +316,7 @@ def mine_gigasport_category(fname, store_label, cats, out_list):
             'price': price, 'shipping': parse_price(rep_row.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep_row.get('aw_deep_link'), 'imageUrl': rep_row.get('aw_image_url'), 'sizes': sizes,
+            'eans': _eans([r for r, _, _ in items], 'ean'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -379,6 +383,15 @@ def merge_by_model(results):
         # marca+modelo por casualidad); ausente en guantes/pelotas, no
         # cambia nada ahí (siempre la misma tupla vacía-equivalente).
         key = (d['brand'].strip().lower(), re.sub(r'\s+', ' ', d['model'].strip().lower()), d.get('type'))
+        # Dos publicaciones de la MISMA tienda con el mismo nombre no son el
+        # mismo producto (cada una es otro parent_product_id): "Guantes Nike
+        # Academy - Negro" juntaba 8 publicaciones con 8 fotos distintas y
+        # precios de 15 a 32 EUR (2026-09-30). Por nombre solo se junta entre
+        # tiendas distintas; la identidad fuerte la dan la foto y el EAN.
+        n = 0
+        while key in groups and any(x['store'] == d['store'] for x in groups[key]):
+            n += 1
+            key = key[:3] + (n,)
         if key not in groups:
             groups[key] = []
             order.append(key)
@@ -401,6 +414,7 @@ def merge_by_model(results):
         }
         if 'type' in rep:
             merged_entry['type'] = rep['type']
+        merged_entry['eans'] = sorted({e for r in rows for e in r.get('eans', ())})
         merged.append(merged_entry)
     return merged
 
@@ -549,7 +563,38 @@ def merge_mirror_locales(merged):
                     seen.add(o['url'])
                     offers.append(o)
             rep['offers'] = offers
+            rep['eans'] = sorted({e for r in rows for e in r.get('eans', ())})
         out.append(rep)
+    return out
+
+
+def _eans(rows, col):
+    return sorted({(r.get(col) or '').strip() for r in rows} - {''})
+
+
+def merge_by_ean(products):
+    """Tercera pasada (2026-09-30): funde productos que comparten un EAN, o
+    sea el mismo artículo exacto (mismo modelo, color y talla) vendido por
+    tiendas distintas -- Deporte Outlet o Gigasport con Foot-Store, por
+    ejemplo --, que las dos pasadas de arriba no juntan porque el título y
+    la foto cambian de una tienda a otra. Solo EAN: el código de fabricante
+    de las marcas chicas a veces es del modelo y no del color. Nunca junta
+    dos ofertas de la misma tienda; el producto que queda es el primero
+    (el que ya tenía su id) y los demás suman sus ofertas."""
+    out, by_ean = [], {}
+    for p in products:
+        stores = {o['store'] for o in p['offers']}
+        tgt = next((by_ean[e] for e in p.get('eans', ()) if e in by_ean
+                    and not stores & {o['store'] for o in out[by_ean[e]]['offers']}), None)
+        if tgt is None:
+            by_idx = len(out)
+            out.append(dict(p))
+            tgt = by_idx
+        else:
+            out[tgt] = dict(out[tgt], offers=out[tgt]['offers'] + p['offers'],
+                            eans=sorted(set(out[tgt].get('eans', ())) | set(p.get('eans', ()))))
+        for e in p.get('eans', ()):
+            by_ean.setdefault(e, tgt)
     return out
 
 # ---------- ROPA DE FÚTBOL (shorts, chaquetas, pantalones, medias) ----------
@@ -707,10 +752,10 @@ if __name__ == '__main__':
     canonicalize_brands(balls_results)
     canonicalize_brands(apparel_results)
     canonicalize_brands(training_results)
-    gloves_merged = merge_mirror_locales(merge_by_model(gloves_results))
-    balls_merged = merge_mirror_locales(merge_by_model(balls_results))
-    apparel_merged = merge_mirror_locales(merge_by_model(apparel_results))
-    training_merged = merge_mirror_locales(merge_by_model(training_results))
+    gloves_merged = merge_by_ean(merge_mirror_locales(merge_by_model(gloves_results)))
+    balls_merged = merge_by_ean(merge_mirror_locales(merge_by_model(balls_results)))
+    apparel_merged = merge_by_ean(merge_mirror_locales(merge_by_model(apparel_results)))
+    training_merged = merge_by_ean(merge_mirror_locales(merge_by_model(training_results)))
     print('TOTAL guantes:', len(gloves_results), '->', len(gloves_merged), 'productos tras fundir por tienda')
     print('TOTAL pelotas:', len(balls_results), '->', len(balls_merged), 'productos tras fundir por tienda')
     print('TOTAL ropa:', len(apparel_results), '->', len(apparel_merged), 'productos tras fundir por tienda')

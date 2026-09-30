@@ -238,6 +238,40 @@ def write_ts(ts_path, prefix, entries, export_name, type_name, chunk_var):
         f.write("".join(out))
 
 
+ALIASES_PATH = os.path.join(REPO_ROOT, "src", "data", "gearAliases.json")
+
+
+def update_aliases(section, old_auto_section, entries):
+    """Id que desaparece -> id del producto que hoy tiene alguna de sus mismas
+    URLs de oferta (merge_by_ean lo fundió con otro). Mismo criterio que
+    refresh_boots.update_aliases: acumulativo, nunca un id vivo, cadenas
+    resueltas al destino final. La página /<sección>/[id] redirige con 308."""
+    all_aliases = json.load(open(ALIASES_PATH)) if os.path.exists(ALIASES_PATH) else {}
+    aliases = all_aliases.setdefault(section, {})
+    live = {e["id"] for e in entries}
+    url_to_id = {o["url"]: e["id"] for e in entries for o in e["offers"]}
+    added = 0
+    for m in re.finditer(r'\n  \{\n    id: "([^"]+)"(.*?)(?=\n  \{\n    id: "|\Z)', old_auto_section, re.S):
+        old_id = m.group(1)
+        if old_id in live:
+            continue
+        target = next((url_to_id[u] for u in re.findall(r'url: "([^"]+)"', m.group(2)) if u in url_to_id), None)
+        if target and aliases.get(old_id) != target:
+            aliases[old_id] = target
+            added += 1
+    for k in list(aliases):
+        seen = {k}
+        while aliases.get(k) in aliases and aliases[k] not in seen:
+            seen.add(aliases[k])
+            aliases[k] = aliases[aliases[k]]
+        if k in live:
+            del aliases[k]
+    all_aliases[section] = dict(sorted(aliases.items()))
+    with open(ALIASES_PATH, "w", encoding="utf-8") as f:
+        json.dump(dict(sorted(all_aliases.items())), f, ensure_ascii=False, indent=0)
+    return added
+
+
 def refresh_one(target, mined, registry):
     prefix = split_ts(target["ts_path"], target["sentinel"])
     full_old_src = open(target["ts_path"], encoding="utf-8").read()
@@ -249,6 +283,7 @@ def refresh_one(target, mined, registry):
     write_ts(target["ts_path"], prefix, entries, target["export_name"], target["type_name"], target["chunk_var"])
 
     new_ids = {e["id"] for e in entries}
+    n_alias = update_aliases(target["name"], old_auto_section, entries)
     added = new_ids - old_ids
     removed = old_ids - new_ids
     price_changed = sum(
@@ -261,6 +296,7 @@ def refresh_one(target, mined, registry):
     print(f"new products (not seen before): {len(added)}")
     print(f"products missing from today's feed (dropped): {len(removed)}")
     print(f"existing products with a price change: {price_changed}")
+    print(f"fundidos con otro (URL vieja -> redirección 308): {n_alias}")
 
 
 def main():

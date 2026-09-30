@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { gearAlias } from "@/lib/gearAliases";
 import { apparelProducts } from "@/data/apparel";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
@@ -78,7 +79,11 @@ export default async function ApparelDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const item = findApparel(id);
-  if (!item) notFound();
+  if (!item) {
+    const target = gearAlias("ropa", id);
+    if (target && findApparel(target)) permanentRedirect(`/${locale}/ropa/${target}`);
+    notFound();
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",

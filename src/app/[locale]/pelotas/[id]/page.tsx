@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { gearAlias } from "@/lib/gearAliases";
 import { ballProducts } from "@/data/balls";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
@@ -78,7 +79,11 @@ export default async function BallDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const ball = findBall(id);
-  if (!ball) notFound();
+  if (!ball) {
+    const target = gearAlias("pelotas", id);
+    if (target && findBall(target)) permanentRedirect(`/${locale}/pelotas/${target}`);
+    notFound();
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",

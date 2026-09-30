@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
+import { gearAlias } from "@/lib/gearAliases";
 import { gloveProducts } from "@/data/gloves";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
@@ -78,7 +79,11 @@ export default async function GloveDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const glove = findGlove(id);
-  if (!glove) notFound();
+  if (!glove) {
+    const target = gearAlias("guantes", id);
+    if (target && findGlove(target)) permanentRedirect(`/${locale}/guantes/${target}`);
+    notFound();
+  }
 
   const jsonLd = {
     "@context": "https://schema.org",
