@@ -322,6 +322,14 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # lifestyle jersey, not the match kit -- same class as the Japan prematch
     # (2026-09-24) and the Argentina away (2026-09-28).
     "ebay.es/itm/800700704692",
+    # Hamburger SV away 2026/27 (FansJerseyHub, 2026-09-30): real HSV crest,
+    # real HanseMerkur sponsor and Plan International sleeve patch, but the
+    # adidas mark is the Originals TREFOIL on both the chest and the neck
+    # label, with CLIMACOOL on the hem and "MADE IN THAILAND" -- the exact
+    # fake-dropship class already blocklisted for Schalke/Paris FC (09-27),
+    # Argentina/Como (09-28) and Croatia (09-29). A match jersey never
+    # carries the trefoil.
+    "hamburger-sv-away-soccer-jersey-2026-27",
 ]
 
 
