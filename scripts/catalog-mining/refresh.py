@@ -45,8 +45,8 @@ def _only_same_season(indices, blocks, pick):
     None si no hay exactamente uno (sin temporada detectable, o varias fichas
     de esa misma temporada -- colorways --, que siguen siendo ambiguas de
     verdad y no se adivinan)."""
-    from split_picks import detect_season
-    season = detect_season(pick.get("title") or "")
+    from split_picks import explicit_season
+    season = explicit_season(pick.get("title") or "")
     if not season:
         return None
     same = [i for i in indices
@@ -103,11 +103,27 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
     skipped_ambiguous = []
     found_keys = set(key_to_indices.keys())
     target_index = {}  # key -> block index to touch, or None to skip
+    from split_picks import explicit_season, seasons_equivalent
+    skipped_season = []
     for key, indices in key_to_indices.items():
         if key not in picks or key in exclude_keys:
             continue
         if is_manually_excluded(picks[key].get("link"), picks[key].get("image")):
             continue
+        # Si el título dice la temporada, la oferta solo puede ir a una ficha
+        # de ESA temporada. Sin esto, en cuanto salía la camiseta 26/27 el
+        # refresco nocturno reescribía la oferta que la tienda tenía en la
+        # ficha 25/26 con la camiseta nueva: 61 fichas quedaron mostrando la
+        # camiseta del año siguiente (hallado por código de fabricante el
+        # 2026-09-30, ej. ajax-home-202526 con "Ajax 2026/27" a 100 EUR). Si
+        # no hay ficha de esa temporada, split_picks la manda a crear.
+        pick_season = explicit_season(picks[key].get("title") or "")
+        if pick_season:
+            indices = [i for i in indices
+                       if (m := _SEASON_FIELD.search(blocks[i])) and seasons_equivalent(m.group(1), pick_season)]
+            if not indices:
+                skipped_season.append(key)
+                continue
         with_store = [i for i in indices if store_offer_re.search(blocks[i])]
         if len(with_store) == 1:
             target_index[key] = with_store[0]
@@ -164,6 +180,8 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
 
     missing_product = [k for k in picks if k not in found_keys and k not in exclude_keys]
     print(f"Inserted: {inserted}, Replaced: {replaced}, blocks found: {len(blocks)}, No matching product: {missing_product}")
+    if skipped_season:
+        print(f"Skipped (no hay ficha de la temporada que dice el título -- va por NEW): {skipped_season}")
     if skipped_ambiguous:
         print(f"Skipped (ambiguous -- multiple products share this team+type, none or several already carry {store_name}):")
         for key, ids in skipped_ambiguous:

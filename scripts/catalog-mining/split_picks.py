@@ -54,7 +54,7 @@ def existing_products(age_group=None):
         existing[key].add(seasonm.group(1))
     return existing
 
-def detect_season(title):
+def detect_season(title, explicit=False):
     # Real bug found: a kids age-range suffix like "13-14 YEARS" was
     # matching the generic 2-digit "NN-NN" pattern below and getting read
     # as season "2013/14" -- on an Italy jersey whose real season ("2026 -
@@ -91,10 +91,20 @@ def detect_season(title):
         return m.group(1)
     # títulos de selección estilo "Italy 26 Away Jersey" (año de mundial
     # suelto, sin barra) -> temporada "2026", no el default de clubes.
+    if explicit:
+        return None
     m = re.search(r'\b(2[4-7])\b', stripped)
     if m:
         return f"20{m.group(1)}"
     return "2025/26"
+
+
+def explicit_season(title):
+    """La temporada solo si el título la ESCRIBE ("2026/27", "26/27", "2026").
+    detect_season() cae a "2025/26" cuando no encuentra nada y lee un "26"
+    suelto como año: sirve para bautizar una ficha nueva, no para decidir que
+    una oferta está en la ficha equivocada (ver refresh.py)."""
+    return detect_season(title, explicit=True)
 
 def season_end_year(season):
     """Canonical ending year of a season string, so "2026" (our bare-year

@@ -10,6 +10,18 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-09-30: misma camiseta en dos fichas (temporada o variante mal
+  // asignada por el refresco nocturno, ver refresh.py); la vacía redirige.
+  "costamarfil-home-2025": "costamarfil-home-2026",
+  "chivas-away-202526": "chivas-away-202627",
+  "sunderland-away-202526": "sunderland-away-202627",
+  "realmadrid-prematch-202627": "realmadrid-prematch-202526",
+  "newcastle-home-202627": "newcastle-home-202526",
+  "athleticbilbao-prematch-202627": "athleticbilbao-prematch-202526",
+  "jamaica-prematch-black-2026": "jamaica-prematch-2026",
+  "espana-prematch-maroon-2026": "espana-prematch-2026",
+  "juv-goalkeeper-202526": "juv-goalkeeper-third-202526",
+  "juventus-prematch-heritage-202627": "juventus-prematch-202627",
   // 2026-09-29: la tarea automática de Amazon creaba una ficha NUEVA con el id
   // largo en vez de sumar la oferta a la existente, que usa el id corto viejo
   // (juv-, che-, ned-). Quedaban dos páginas de la misma camiseta, una con 6
