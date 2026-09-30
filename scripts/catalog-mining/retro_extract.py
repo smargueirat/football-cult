@@ -14,6 +14,7 @@ Then merge_all.py combines every store's <out_json> into one picks file.
 import csv, json, re, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import (
+    club_listing_for_national,
     TEAM_PATTERNS,
     TYPE_PATTERNS,
     JERSEY_RE,
@@ -210,6 +211,8 @@ def mine(csv_path, fmt, store_name):
             if not hit:
                 continue
             team_match = hit[0]
+            if club_listing_for_national(title, team_match, teams):
+                continue
             team_pat = teams[team_match]
             type_match = None
             for tyk, pat in types.items():

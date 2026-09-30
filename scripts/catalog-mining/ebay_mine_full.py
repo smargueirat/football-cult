@@ -26,6 +26,7 @@ import json, os, re, sys, time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import (
+    club_listing_for_national,
     JERSEY_RE,
     EXCLUDE_RE,
     KIDS_EXCLUDE_RE,
@@ -234,6 +235,8 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
             if ACCESSORY_RE.search(title):
                 continue
             if not teams_re[team_key].search(title):
+                continue
+            if club_listing_for_national(title, team_key, teams_re):
                 continue
             type_match = None
             for tyk, pat in types_re.items():

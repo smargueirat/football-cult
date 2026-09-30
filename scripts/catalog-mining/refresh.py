@@ -117,7 +117,10 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
         # camiseta del año siguiente (hallado por código de fabricante el
         # 2026-09-30, ej. ajax-home-202526 con "Ajax 2026/27" a 100 EUR). Si
         # no hay ficha de esa temporada, split_picks la manda a crear.
-        pick_season = explicit_season(picks[key].get("title") or "")
+        # Las fichas de niños no tienen temporada real (una por equipo y tipo,
+        # siempre "2026", ver gen_kids_teams.py): ahí no se filtra.
+        pick_season = None if (age_group or ("kids" if kids else None)) == "kids" else \
+            explicit_season(picks[key].get("title") or "")
         if pick_season:
             indices = [i for i in indices
                        if (m := _SEASON_FIELD.search(blocks[i])) and seasons_equivalent(m.group(1), pick_season)]

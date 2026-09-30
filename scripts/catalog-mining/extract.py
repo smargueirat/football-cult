@@ -1,4 +1,4 @@
-import csv, re, sys, json
+import csv, os, re, sys, json
 from collections import defaultdict
 from manual_exclusions import is_manually_excluded
 
@@ -693,6 +693,40 @@ def split_title_size(title):
     if m:
         return m.group(1).strip(), f"{int(m.group(2))}-{int(m.group(3))}"
     return title, None
+
+# Choque selección/club (2026-09-30): las pasadas retro buscan "Scotland away
+# jersey" y eBay devuelve camisetas de Rangers o Celtic que NOMBRAN al país;
+# "Jordan" (la marca de Nike) trae PSG. 75 fichas de selección terminaron
+# conteniendo solo camisetas de club. Una camiseta de club se reconoce porque
+# nombra a un club conocido o lleva sufijo de club, y no habla de la selección.
+CLUB_SUFFIX_RE = re.compile(r"\b(FC|CF|AFC|SC|HVV|SV|BK|CD|SD|UD|RC|VfB|VfL|FK|NK|HSV|CSKA)\b|rovers|wanderers")
+NATIONAL_CTX_RE = re.compile(
+    r"national|nacional|selecci[oó]n|nazionale|sele[cç][aã]o|nationalmannschaft|world cup|mundial|"
+    r"mondial|copa am[eé]rica|euro ?20\d\d|\beuros?\b|fifa", re.I)
+_NATIONALS = None
+
+
+def national_teams():
+    """Claves de selección nacional, leídas de teamCategory en productMeta.ts."""
+    global _NATIONALS
+    if _NATIONALS is None:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "src", "lib", "productMeta.ts")
+        m = re.search(r"export const teamCategory[^=]*=\s*\{(.*?)\n\};", open(path, encoding="utf-8").read(), re.S)
+        _NATIONALS = set(re.findall(r'(\w+):\s*"national"', m.group(1)))
+    return _NATIONALS
+
+
+def club_listing_for_national(title, team_key, teams):
+    """True si `team_key` es una selección y el título es de una camiseta de
+    club. Pierde alguna legítima que nombra el club de un jugador sin decir
+    "selección" (Colombia de Luis Díaz "Bayern"): en un comparador una camiseta
+    equivocada cuesta más que una que falta."""
+    nationals = national_teams()
+    if team_key not in nationals or NATIONAL_CTX_RE.search(title):
+        return False
+    return bool(CLUB_SUFFIX_RE.search(title)
+                or any(k not in nationals and p.search(title) for k, p in teams.items()))
+
 
 def match_team(title, teams):
     """First team whose pattern matches `title`, as (key, match) or None.

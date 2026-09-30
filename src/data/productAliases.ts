@@ -10,6 +10,54 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-09-30: fichas de selección que solo tenían camisetas de club (Rangers en
+  // Escocia, "Jordan" PSG en Jordania...); redirigen a la ficha del club que las tiene.
+  "alemania-retro-201718-third": "schalke04-retro-201718-third",
+  "alemania-retro-202122-third": "schalke04-retro-202122-third",
+  "arabiasaudita-retro-202324-home": "alhilal-retro-202324-home",
+  "arabiasaudita-retro-2024-home": "alhilal-retro-2024-home",
+  "argelia-retro-200607-home": "jskabylie-retro-200607-home",
+  "brasil-retro-2005-third": "flamengo-retro-2005-third",
+  "croacia-retro-202425-third": "dinamozagreb-retro-202425-third",
+  "escocia-retro-198991-away": "celtic-retro-198991-away",
+  "escocia-retro-201011-away": "celtic-retro-201011-away",
+  "escocia-retro-201112-third": "celtic-retro-201112-third",
+  "escocia-retro-201819-third": "rangers-retro-201819-third",
+  "escocia-retro-202122-away": "rangers-retro-202122-away",
+  "escocia-retro-202425-third": "celtic-retro-202425-third",
+  "francia-retro-201112-third": "marseille-retro-201112-third",
+  "gales-retro-202223-away": "swansea-retro-202223-away",
+  "india-retro-202223-third": "northeastunited-retro-202223-third",
+  "inglaterra-retro-201213-third": "everton-retro-201213-third",
+  "inglaterra-retro-201819-third": "mancity-retro-201819-third",
+  "inglaterra-retro-202223-third": "wolves-retro-202223-third",
+  "inglaterra-retro-202324-third": "westham-retro-202324-third",
+  "italia-retro-202122-third": "juventus-retro-202122-third",
+  "italia-retro-202324-third": "acmilan-retro-202324-third",
+  "japon-retro-2019-third": "kawasakifrontale-retro-2019-third",
+  "jordania-retro-201819-home": "psg-retro-201819-home",
+  "jordania-retro-201819-third": "psg-retro-201819-third",
+  "jordania-retro-201920-away": "psg-retro-201920-away",
+  "jordania-retro-2020-away": "psg-retro-2020-away",
+  "jordania-retro-2022-away": "psg-retro-2022-away",
+  "jordania-retro-202223-away": "psg-retro-202223-away",
+  "paisesbajos-retro-200911-away": "psveindhoven-retro-200911-away",
+  "portugal-retro-2024-third": "acmilan-retro-2024-third",
+  "turquia-retro-202021-away": "fenerbahce-retro-202021-away",
+  "turquia-retro-202021-home": "fenerbahce-retro-202021-home",
+  // 2026-09-30: anuncio retro repetido en dos fichas; la vacía redirige. (escocia-retro-202123-third
+  // solo tenía una camiseta del Hearts, un club: no redirige.)
+  "manutd-retro-202223-third-mens": "manutd-retro-202223-third",
+  "dortmund-retro-202334-third": "dortmund-retro-202324-third",
+  "dinamarca-retro-2006-away": "dinamarca-retro-200608-away",
+  "elsalvador-retro-2022-away": "elsalvador-retro-202224-away",
+  "suiza-retro-2008-away": "suiza-retro-200810-away",
+  // 2026-09-30: fichas "2026" y "2026/27" de la misma camiseta (código o título).
+  "levante-home-2026": "levante-home-202627",
+  "torino-third-2026": "torino-third-202627",
+  "japon-home-202627": "japon-home-2026",
+  "cruzazul-home-2026": "cruzazul-home-202627",
+  "nashvillesc-third-202526": "nashvillesc-third-2025",
   // 2026-09-30: el mismo anuncio estaba en dos fichas (año suelto vs
   // temporada); la que quedó vacía redirige a la de su temporada real.
   "acmilan-retro-2018-away": "acmilan-retro-201819-away",

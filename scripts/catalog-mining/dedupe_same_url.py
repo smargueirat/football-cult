@@ -41,8 +41,9 @@ for url, occ in where.items():
                    lambda m: f"{m[1]}/{m[2][-2:]}" if int(m[2]) == int(m[1]) + 1 else m[0], title)
     retro = 'typeKey: "retro"' in blocks[idx[occ[0][0]]]
     season = parse_retro_season(title) if retro else explicit_season(title)
-    # "2023/2034" es una errata, no una temporada: no se decide con eso
-    if season and "/" in season and int(season[-2:]) != (int(season[2:4]) + 1) % 100:
+    # "2023/2034" es una errata, no una temporada: no se decide con eso. Los
+    # kits de selección de 2-3 años ("2006-08", "2022-24") sí son reales.
+    if season and "/" in season and not 1 <= (int(season[-2:]) - int(season[2:4])) % 100 <= 3:
         season = None
     good = [p for p, _ in occ if season and fld(blocks[idx[p]], "season") == season]
     if len(good) != 1:

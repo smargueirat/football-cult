@@ -24,4 +24,9 @@ for title, expect in (("Camisa de local Ajax 2026/27", "https://x/old"), ("Camis
     json.dump({"ajax|home": {"title": title, "price": 80, "shipping": 0, "link": "https://x/new",
                              "image": "i", "sizes": ["M"]}}, open(k, "w"))
     assert expect in refresh(p, k, "FootStoreES", "EUR", dry_run=True), title
+# Niños: sus fichas no tienen temporada real, así que una 26/27 sí actualiza.
+open(p, "w").write(TS.replace('season: "2025/26",', 'season: "2026",\n    ageGroup: "kids",'))
+json.dump({"ajax|home": {"title": "Ajax niño 2026/27", "price": 80, "shipping": 0, "link": "https://x/new",
+                         "image": "i", "sizes": ["M"]}}, open(k, "w"))
+assert "https://x/new" in refresh(p, k, "FootStoreES", "EUR", dry_run=True, kids=True)
 print("ok")
