@@ -3494,3 +3494,127 @@ a Wikidata miss again so `venue_cities.json` is unchanged (5th pass). Price
 drops: 4673 across the seven sections (camisetas 79, botas 14, entradas 4407,
 ropa 143, guantes 13, pelotas 13, entrenamiento 4); Telegram published 3.
 Dominant colours: 194 new, 0 errors. GTINs: 2264 of 12273 offers (18.4%).
+
+## Daily pass (2026-09-30) -- the eBay quota was gone before the run started, and the 24h cache is not enough
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores. Soicos skipped again -- no `claude-in-chrome`. Umbro (MID 41001) still
+absent from the Rakuten FTP listing (15th pass). Pro:Direct ES skipped as
+designed (its cron is Sunday 04:00 and it was added 09-29, so the file does not
+exist yet; next build 2026-10-04). **3 new products** (2 CSV current, 1 women's,
+0 kids, 0 eBay -- 6839 -> 6842 blocks); `tsc`/dupe-id/duplicate-URL/build all
+clean, `teamMeta` clean (362 teams), `check_retro_kit`/`check_women_type`/
+`check_gear_ids` all OK.
+
+**All three eBay marketplaces advanced ZERO teams, and so did every other eBay
+step.** `rate_limit/` read `buy.browse 0/5000` at 06:08 UTC and **still 0/5000
+at 08:30** -- ninety minutes after the window rolled at 07:00. US, IT and ES
+each stopped after 3 consecutive rate-limited teams (US stays 222/384 cycle 4,
+IT 197/384 cycle 1, ES 185/384 cycle 1); no cycle-state file changed, so there
+was nothing to commit. `ebay_gb_retro.py` cut its batch at 0 fichas and
+`ebay_check_stale.py` checked **0 of 200**.
+
+**That last one corrects the 09-27 note.** It claimed the stale checker's
+`getItem` calls "bill to a different resource than search". Today every other
+resource was untouched at full limit -- `buy.browse.item.bulk` 5000/5000,
+`buy.feed` 10000/10000, the whole TradingAPI list at 5000/5000 -- and
+`buy.browse` alone was 0. The stale checker got nothing. **`getItem` on the
+Browse API bills to `buy.browse` like search does**; 09-27's 200/200 run
+happened on a quota that was not really exhausted, not on a separate budget.
+
+**The `revalidate` 3600 -> 86400 fix is already in place (b8c2495, 09-27) and
+the quota still drained.** It held for two days (09-28 `remaining=4790`, 09-29
+`3040` then `4640`) and then stopped holding. The arithmetic says why it cannot
+be relied on: the catalog carries **7132 distinct eBay item ids**, and
+`/api/ebay-shipping` caches per item id, so a single complete crawl of the
+product pages costs 7132 calls against a 5000/day cap -- **over the limit even
+with a perfect 24-hour cache and zero repeat visitors**. Raising the TTL again
+changes nothing; the fix has to cut the number of *distinct* items fetched or
+raise the cap. Options worth the user's call, cheapest first: skip the live
+lookup for crawler user-agents (Googlebot executes JS and is named in b8c2495's
+own message as a trigger); only fetch on user interaction rather than on render;
+precompute shipping into a data file the way `offerGtins.json` works; or ask
+eBay to raise the 5000/day application limit. **Do not just bump `revalidate`
+again -- that lever is already pulled.**
+
+Because no new eBay teams were mined, the accumulated `current/kids/retro_picks.json`
+files hold exactly yesterday's data, so the eBay insertion paths were skipped
+on purpose: re-running them would re-apply identical offers at prices that are
+days old. **A cumulative pick file with zero new rows is not a reason to
+re-import it.**
+
+**CSV feeds produced two genuinely new current products, both out of the
+season-conflict set, both verified against the existing product's own photo.**
+`corinthians-away-202627` (FootStoreES, Nike IM7010-010): the 25/26 on file is
+plain black with white raglan panels and a centred crest, the 26/27 is black
+with white pinstripes and a left-chest crest. `feyenoord-home-202627`
+(FansJerseyHub): same red/white halves as the 25/26, but the new one adds
+**black shoulder yokes and black collar trim** that the 25/26 does not have --
+the existing product's stored photo is a BACK view, so a front view had to be
+pulled from the same store's image series before the call could be made.
+**When the photo on file is a back view, fetch another one rather than
+comparing a front against a back.**
+
+**One new product candidate dropped and blocklisted: `hamburg|away` 2026/27.**
+Real HSV diamond crest, real HanseMerkur sponsor, real Plan International sleeve
+patch -- and the adidas mark is the **Originals trefoil** on both the chest and
+the neck label, with **CLIMACOOL** on the hem and "MADE IN THAILAND" inside.
+Fourth pass in a row for this exact class (Schalke/Paris FC 09-27, Argentina/
+Como 09-28, Croatia 09-29). **A match jersey never carries the trefoil**, and
+the real crest and real sponsor are what make these worth blocklisting by slug
+rather than trusting the next pass to catch them again.
+
+**The four documented heritage reissues showed up again and were kept out of
+the ADD sets**: `chile|home` 93/94 on both adidas feeds, `liverpool|away` 95 on
+both BSTNs, `manutd|away` 90/92 on BSTN UK, `dinamarca|goalkeeper` 86 on
+FootStoreES. The bare-2-digit-suffix scan also flagged 5 DeporteOutlet rows that
+are **style codes, not seasons** (`756502-03`, `773344-01`, `P2GABX08-43`) --
+that regex ends on `\d{2}$`, so any title ending in a hyphenated SKU trips it.
+Read the suffix before dropping.
+
+**Of 21 CSV season conflicts, 5 were verified as the byte-identical offer
+already on file** (ForumSport Alaves, AdidasPT Newcastle + Juventus "Tiro 25",
+Inter Miami on both BSTNs -- same URL, same product id), rather than assumed.
+The rest were older stock: `noruega|home` 2025 is now the **15th** pass, plus
+the FansJerseyHub "Third Away" 25/26 set (Benfica, Porto, Sunderland, Crystal
+Palace, Inter Miami, Panama) against 26/27 already on file, `internacional|home`,
+`realbetis|training` and the ForumSport `barcelona|prematch` photo still dated
+2024 in its own filename.
+
+**`team_collision_scan.py` takes a DIRECTORY, not a pick file** -- pointing it
+at `/tmp/picks/X_ADD.json` prints `0 flagged` three times and scans nothing. The
+zero looked exactly like the genuine zero this scan has produced on CSV feeds
+for nine passes, which is what made it worth catching. Re-run against a merged
+`current_picks.json` in a temp dir, and **sanity-check the scan by feeding it a
+known collision first** (an "Arsenal FC England" title under `inglaterra` must
+flag `arsenal`): 0 flags on every CSV-feed set, now actually measured.
+
+**Shop Real Betis: `size` is empty in all 1931 rows for the second pass running**,
+so `pick_no_size.py` again, and the same 5 real picks came out. The 09-27
+`stock=0` filter held (1149 sold out, 782 kept). New this pass: its **home and
+away picks both have an empty `imageURL`** in the feed and were correctly
+dropped by `split_picks.py`'s `no_image` guard, leaving only GK and third in the
+ADD set. Not a pipeline bug -- the feed row genuinely has no photo.
+
+Women's pass: 195 picks across 13 stores, **1 new product**
+(`barcelona-training-women`, Nike HJ6998-552 Strike Dri-FIT, real crest and real
+Spotify sponsor, women's cut on a female model), offers refreshed in 9 stores.
+The structurally-unresolvable conflict is unchanged and should stop being
+re-litigated, but it now has a **newer-season** instance worth naming: ForumSport
+offers Real Madrid women's **26/27** against the 25/26 on file, and because the
+women's id convention (`{team}-{type}-women`) carries no season, the only options
+are overwrite or skip. Skipped, consistent with 09-29's Barcelona third -- but
+note the trade-off differs when the pick is *newer* than what is on file, since
+skipping leaves the product permanently showing a stale season.
+
+`refresh_boots.py`: 73 new, 30 dropped, 1027 price changes, legacy
+`{fe_kept: 59, forum_kept: 58}`, colour step `ok: 21, errors: 0`. **It printed
+the `WARNING: no se pudo refrescar el feed de FutbolEmotion` line (read
+timeout)**, so that store's sizes/stock are a day stale.
+`refresh_gear.py`: guantes 7 new / 3 dropped / 250 price changes, pelotas 19 /
+3 / 479, ropa 158 / 41 / 3973, entrenamiento 19 / 14 / 1087; `check_gear_ids.py`
+OK. Tickets: 6 new events, 12 dropped, of 2567; every venue lookup a Wikidata
+miss again so `venue_cities.json` is unchanged (6th pass). Price drops: 7466
+across the seven sections (camisetas 165, botas 92, entradas 3713, ropa 2286,
+guantes 52, pelotas 301, entrenamiento 859); Telegram published 3. Dominant
+colours: 4 new, 0 errors. GTINs: 2279 of 12667 offers (18.0%).
