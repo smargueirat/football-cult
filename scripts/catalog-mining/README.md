@@ -3618,3 +3618,200 @@ miss again so `venue_cities.json` is unchanged (6th pass). Price drops: 7466
 across the seven sections (camisetas 165, botas 92, entradas 3713, ropa 2286,
 guantes 52, pelotas 301, entrenamiento 859); Telegram published 3. Dominant
 colours: 4 new, 0 errors. GTINs: 2279 of 12667 offers (18.0%).
+
+## Daily pass (2026-10-01) -- `retro_offer_merge.py` had no ageGroup guard, and the eBay stale rate tripled
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + Pro:Direct UK + one `ebay_mine_cycle.py` batch per marketplace
+(rotation IT, ES, US -- day-of-year 274 mod 3 = 1). Soicos skipped again -- no
+`claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten FTP listing
+(16th pass). Pro:Direct ES skipped as designed (no `/tmp/feeds/PRODIRECT_ES.csv`;
+its Sunday 04:00 cron next builds 2026-10-04). **115 new products** (19 CSV
+current, 13 women, 0 kids, 2 eBay current, 76 eBay retro net of merges -- 6655
+-> 6753 blocks after the un-creations below); `tsc`/dupe-id/duplicate-URL/build
+all clean, `check_retro_kit`/`check_women_type`/`check_gear_ids` OK, `teamMeta`
+clean (362 teams).
+
+**All three eBay marketplaces completed 20/20 with zero 429s** -- IT 217/384
+cycle 1, ES 205/384 cycle 1, US 242/384 cycle 4. `rate_limit/` read
+`buy.browse remaining=4740/5000` at 08:08 UTC before the batches and **4999/5000
+after them**, having spent well over a thousand calls in between. The counter
+went UP across a run that definitely consumed quota, so **the rate-limit endpoint
+is not a reliable live meter** -- useful as a rough go/no-go signal at the start
+of a run (09-30's flat `0` was real), useless for attributing consumption. Do not
+reason about what a run cost from the delta.
+
+**The real find: `retro_offer_merge.py` writes men's picks into women's and kids
+retro products.** Its identity key is the generated id
+`{team}-retro-{seasonSlug}-{type}`, which carries no age group, so a men's eBay
+retro pick lands on whichever block has that id -- and the catalog has
+age-grouped retro products sharing exactly those ids. **19 blocks were hit
+tonight** (13 women's, 6 kids), and `roma-retro-202324-home` (an `ageGroup:
+"women"` product) had its *only* offer replaced by a men's eBay one, leaving a
+women's product advertising a men's shirt. All 19 reverted to their HEAD
+content, and the script now skips any block containing `ageGroup:` -- the same
+guard `refresh.py` has had for kids since the start. This was invisible to every
+existing check: ids were unique, the TS compiled, and the duplicate-URL diff
+only caught it because the men's offer *also* landed on the men's twin. **An id
+that does not encode a dimension cannot be used as that dimension's key.**
+
+**`ebay_check_stale.py`: 80 of 200 dead (40%)**, against a 9.5-12% band all
+month and an 18% all-time high on 2026-08-28. Checked rather than assumed: five
+of the reported-dead ids were re-queried directly against Browse `getItem` and
+all five returned a real `errorId 11001 "The specified item Id was not found"`,
+so the rate is genuine churn, not a checker fault. Worth watching -- if it holds
+at this level the catalog's eBay half goes stale roughly three times faster than
+the stale checker's 200/day cycle can walk it.
+
+**`retro_gen.py` run once per marketplace produces duplicate ids.** The same
+retro shirt listed on two eBay sites generates the same `{team}-retro-{season}-
+{type}` id twice, and the per-marketplace loop inserted both. 12 duplicate ids
+this pass (13 of the 114 retro candidates shared an image URL across IT/ES);
+merged into one block each with both offers. **Dedupe across marketplaces before
+generating, not after.**
+
+**The duplicate-URL diff earned its keep again: 11 new collisions.** Seven were
+the bare-year-twin class the NEW-vs-MERGE classifier structurally cannot see
+(`dortmund-retro-2021-third` vs `...-202122-third`, same for intermilan 2021,
+lazio 2018, rbleipzig 2020 home+away, roma 2019, fiorentina 1992) -- all seven
+were created tonight, all seven un-created, and in every case the offer was
+already on the two-year product so nothing was lost and no
+`PRODUCT_ID_ALIASES` entry was needed. The other four were pre-existing sibling
+pairs that tonight's refresh wrote a second copy into
+(`juv-goalkeeper-third-202526`/`juventus-goalkeeper-home-202627`, the two
+Flamengo away twins, `estunis`/`tunez` third, the two Roma 2023/24 homes); each
+had exactly one side where the URL was new tonight, so removing that side
+restored HEAD's assignment. Net cross-product duplicate URLs **3, below HEAD's
+4**. The four pre-existing sibling pairs are a real structural duplicate worth
+a separate look, not a nightly fix.
+
+**`ComoFC` vs `ComoFCShop` -- the double-spelling trap, caught the same night
+instead of a week later.** `refresh.py` reported `Inserted: 6, Replaced: 0` for
+Como, which is impossible for a store that already had offers on those exact
+products. The store-name census said why: the catalog spells it `ComoFCShop`
+(15 offers) and the pipeline had just created 6 orphans under `ComoFC`. Removed
+and re-applied under the right name (`Replaced: 6`). **A pure-insert count on a
+store that should mostly refresh is the tell** -- this is the third merchant
+(after the two found 09-15 and 09-16) where the feed name and the catalog name
+differ, so check the census before applying a store you have not touched
+recently.
+
+**`apply_women.py`'s dry-run summary lies.** Without `--apply` it printed
+`SECO: 0 fichas nuevas`; with `--apply` the same input produced **13 new
+products** (all real, all photo-verified: Arsenal home/away/training, Juventus
+home/away/third, Hungary home/away, Barcelona and Real Madrid prematch,
+Frankfurt third, Roma third, Strasbourg home -- every one a women's cut on a
+female model with the right crest and sponsor). The per-store `new_products:`
+lines are correct; only the final summary line is wrong. **Do not use the dry
+run to decide whether a women's pass needs photo review** -- it will tell you
+there is nothing to review.
+
+**One rugby shirt caught at the photo gate.** Pro:Direct UK's "Macron Scotland
+26/27 Home Replica Shirt" under `escocia|home` is **Scottish Rugby**: the crest
+is the SRU thistle, not the SFA lion rampant, the sponsor is Arnold Clark and the
+supplier Macron (Scotland's football team is adidas). Exactly the class the
+README has warned about since August, and the first one in weeks that got all
+the way to a generated block before the photo stopped it.
+
+**Other drops, all photo-verified**: `croacia|prematch` on FootStoreES is an
+adidas **Originals trefoil** shirt (4th instance of that class, after Japan
+09-24, Argentina/Como 09-28, Croatia 09-29 -- and note this one came from a
+*licensed retailer*, not a dropship eBay seller, so the tell is the garment, not
+the source); `dinamarca|goalkeeper` 86 is the documented heritage reissue, 2nd
+pass; `liverpool|away` 95 on both BSTNs kept out of the ADD sets as always.
+On eBay: VfB Stuttgart "third" and "away" 26/27 from the $28.98 template line --
+the seller's "away" is a black/gold shirt while the catalog already holds
+Stuttgart's REAL 26/27 away (red/white geometric), which makes the matched
+gold colourway sold as "third" unverifiable; **the same seller's Stuttgart HOME
+is the genuine white Jako shirt, so this is a per-listing drop, not a per-seller
+one**. Also `como|away` 2026/27 (trefoil + a UCL sleeve patch for a club not in
+the Champions League, 3rd pass under this key) and a **Juventus** shirt that
+`team_collision_scan.py` found sitting under `torino|away` -- "Torino City Flag"
+in the title, and it had already been applied before the scan ran. All
+blocklisted.
+
+**Run `team_collision_scan.py` BEFORE applying, not after.** The Juventus/Torino
+offer above was in the ADD set, applied, and then flagged -- it had to be pulled
+out of `products.ts` by hand. The scan is cheap and the fix after the fact is
+not. Sanity-checked the scan again by planting an "Arsenal FC England" title
+under `inglaterra` (it flagged); **0 flags on every CSV-feed set** for the tenth
+pass, 31 on eBay of which the real ones were dropped (Leeds under `bournemouth`,
+an AliExpress Fulham, Newcastle **Jets** under `newcastle`, an Italy/Zaccagni
+shirt under `lazio`) and the documented filler-name keepers held (Everton/
+England, Lazio/Italy, Sunderland/England, PSG/Jordan-the-brand).
+
+**eBay retro photo pass: 114 candidates, 31 dropped, and back-only photos were
+again the single biggest class (17 of 31)** -- the 09-29 finding reproduces
+exactly. The rest: 6 malformed season keys (`1905/05` from "Centenario
+1905-2005", `2015/15`, `2015/17`, `2023/23`, `2024/45`, `2023/34` -- all from
+`detect_season` reading two unrelated years as a range), 3 where the photo
+showed a different kit type than the title claimed (a navy AIA Spurs **away**
+sold as 2018 home, a yellow Arsenal **away** sold as a 2023 third), 1 wrong team
+(an **Ecuador** shirt under `valencia` -- "Enner Valencia" is a player name, the
+same class as Jordan/Brazil), 1 reissue ("reedición", a word `RETRO_EXCLUDE_RE`
+did not have), 1 signed (visible autographs, title said only "auténtica"), 1
+kids/amateur reprint, and 1 that was **not a garment at all**: a $18.99 "Name
+Set Heat Transfer Choose Player" -- lettering, not a shirt, the same class as
+the sponsor patch that produced `MIN_JERSEY_PRICE` back in August.
+
+**`ebay_gb_retro.py`: 300 fichas reviewed, 66 with the same model on eBay UK
+(22%)**, below the ~34-40% of the first two batches; 1959 single-store retro
+products still unchecked. The kids/women filter the 09-29 entry asked for still
+is not there, and it cost two offers again (a "Boys" Club Tijuana and a Castore
+"Size 12UK"), both pulled by hand after insertion. Spot-checked 4 by photo
+(Ajax 24/25 away, Blackburn 18/19 home, Algeria 2022 home, Arsenal 16/17 away),
+all genuine and correctly matched.
+
+**CSV feeds produced 19 new products, the most in a month, and 15 of them are
+Pro:Direct UK's first real nightly pass** (added 09-30, 198 offers inserted
+against the 18 it had). Genuinely new kits with no slot on file: Wolves away and
+third (SUDU/DEBET), Gladbach third (125 Jahre), Lens third (120ème
+anniversaire), Shakhtar third, Lille prematch, Athens Kallithea third, plus
+eight 26/27 kits that came out of the season-conflict set and are visibly
+different shirts from what is on file (Chelsea home, Everton away + third,
+Feyenoord away + third, Fenerbahçe third, Galatasaray away, Marseille home).
+AdidasES gave Japan 26/27 home, AdidasPT Newcastle 26/27 home, FootStoreES
+Chivas 26/27 home and Croatia's Tiro 26 training. The rest of the 42 conflicts
+were documented noise: `noruega|home` 2025 is now the **16th** pass, the
+ForumSport `barcelona|prematch` photo still dated 2024, `internacional|home` and
+`realbetis|training` older stock, the FansJerseyHub "Third Away" 25/26 set
+against 26/27 on file, and the AdidasPT Tiro 25 / Inter Miami / Alaves exact
+duplicates. DecathlonIE and ProSoccer genuine zeros as always.
+
+**Rakuten: check the trailer, not curl's exit code -- the README said so and the
+first attempt ignored it.** A fetch loop that keyed on `curl`'s status reported
+`FAIL` for all five Brazil stores; the files were fine. Re-run with the trailer
+check, **all five arrived on the first attempt** with `TRL|` counts matching
+their rows (Santos 8380, Inter 4138, Cruzeiro 979, Timão 431, PST 2970).
+
+**Shop Real Betis' `size` column is empty in all 1931 rows for the third pass**,
+so `pick_no_size.py` again (note its argument order differs from `pick.py`:
+`csv price title link image out`, not `csv price shipping out ...`); the same 5
+real picks, and the 09-27 `stock=0` filter held (1149 sold out, 782 kept).
+
+Women's pass: 219 picks across 13 stores, **13 new products** (see above),
+offers refreshed in 9 stores. The structurally-unresolvable conflict is
+unchanged and was skipped again without re-litigating (`realmadrid|home` and
+`barcelona|third` 26/27 against 25/26 on file -- the `{team}-{type}-women` id
+has no season).
+
+Kids: **zero new products** -- all 35 eBay kids picks mapped to existing kids
+blocks (17 offers inserted, 13 refreshed). Six picks dropped first: two
+shirt-and-shorts **sets** with a printed Son #7, three player-printed shirts
+(Declan Rice, Haaland in toddler 3T, Burkardt) and nothing else. Worth noting a
+regex overreach caught in review: a `\bkit\b.*\b(size|talla)\b` filter also
+matched a perfectly normal "Fiorentina ... Home **Kit** NWT **Size** 8Y", which
+is one jersey. **"Kit" in an eBay title usually means the shirt, not a set** --
+the set tell is "shorts"/"set corto"/"conjunto".
+
+`refresh_boots.py`: 69 new, 61 dropped, 115 price changes, legacy
+`{fe_kept: 58, forum_kept: 55, forum_dropped: 3, products_removed: 1}`, 47
+products fused via 308 redirects, colour step `ok: 44, errors: 0`, and **no**
+FutbolEmotion WARNING line (feed refreshed cleanly).
+`refresh_gear.py`: guantes 41 new / 3 dropped / 87 price changes, pelotas 51 /
+10 / 157, ropa 319 / 52 / 1035, entrenamiento 15 / 10 / 688; `check_gear_ids.py`
+OK. Tickets: 62 new events, 37 dropped, of 2592; every venue lookup a Wikidata
+miss again (7th pass) so `venue_cities.json` is unchanged. Price drops: 5650
+across the seven sections (camisetas 107, botas 34, entradas 4370, ropa 1000,
+guantes 35, pelotas 84, entrenamiento 20); Telegram published 3. Dominant
+colours: 90 new, 0 errors. GTINs: 2347 of 13617 offers (17.2%).

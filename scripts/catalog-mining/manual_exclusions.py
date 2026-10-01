@@ -330,6 +330,30 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # Argentina/Como (09-28) and Croatia (09-29). A match jersey never
     # carries the trefoil.
     "hamburger-sv-away-soccer-jersey-2026-27",
+    # VfB Stuttgart "third" 26/27 and "away" 26/27 on eBay US (2026-10-01),
+    # both from the $28.98 template line: a matched gold-on-black /
+    # black-on-gold pair with the real VfB crest, real JAKO mark and real
+    # LBBW sponsor. The catalog already carries Stuttgart's REAL 26/27 away
+    # (red/white geometric, stuttgart-away-202627), so this seller's "away"
+    # is provably a different garment -- which makes its "third" colourway
+    # unverifiable as the official third rather than a special/fan line.
+    # The same seller's Stuttgart HOME is the real white Jako shirt, so this
+    # is a per-listing drop, not a per-seller one.
+    "ebay.com/itm/267791870857",
+    "ebay.com/itm/267791870887",
+    # Como 1907 away 2026/27 on eBay ES (2026-10-01), EUR 351: white shirt
+    # with the adidas ORIGINALS TREFOIL on the chest AND a UCL starball
+    # sleeve patch for a club that is not in the Champions League, plus
+    # CLIMACOOL on the hem. Third pass of this exact invented-competition +
+    # trefoil combination under this key (09-28 eBay IT, 09-29 eBay ES).
+    "ebay.es/itm/128076222447",
+    # "Juventus Jersey Men XL Ash Blue Adidas Authentic Away Kit Torino City
+    # Flag 25/26" (eBay US, 2026-10-01): a JUVENTUS shirt that only matched
+    # the `torino` key because Juventus are also from Turin and the seller
+    # put "Torino City Flag" in the title. team_collision_scan.py flagged it;
+    # it had already been applied as an offer on torino-away-* and was
+    # removed by hand. Same class as the 09-28 torino/Juventus pair.
+    "ebay.com/itm/158253976643",
 ]
 
 

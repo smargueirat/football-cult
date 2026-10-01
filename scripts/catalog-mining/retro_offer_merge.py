@@ -34,6 +34,15 @@ def merge(products_path, picks_path, apply=False):
             continue
         o = offers[0]
         block = blocks[idx]
+        # The generated id carries no age group, so a MEN'S retro pick lands on a
+        # women's/kids retro product whose id happens to match (real damage on
+        # 2026-10-01: 19 age-grouped retro blocks got men's eBay offers, and one
+        # women's product had its only offer overwritten by a men's one). Same
+        # class as refresh.py's kids guard -- these dimensions have their own
+        # miners, so a men's pick must never touch them.
+        if "ageGroup:" in block:
+            missing += 1
+            continue
         if o["link"] in block:
             same += 1
             continue

@@ -86,7 +86,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.96,
+        price: 42.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46037729666&a=3013769&m=65912",
@@ -95,7 +95,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 41.22,
+        price: 41.82,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F30-6-095-cerceau-avec-poids-abisal-fh02-pink-tu",
@@ -224,7 +224,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.0,
+        price: 11.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38743170302&a=3013769&m=65912",
@@ -233,7 +233,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.0,
+        price: 9.93,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz9556-pompe-a-ballons-adidas-noir-blanc-rouge-solaire-tu",
@@ -254,26 +254,18 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469236&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529469237&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0733_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=0c41a58c5c809605dcf938cfe018d238721bc386",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
       {
         store: "FootStoreFR",
         price: 14.0,
-        priceMax: 15.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0733_1_apparel_photography_-_ecommerce_front_view_white.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan" },
-          { size: "M", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan" },
-          { size: "L", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan" },
-          { size: "XL", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan" },
-          { size: "2XL", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0733-chasuble-adidas-brcyan" },
-        ],
       },
     ],
   },
@@ -289,7 +281,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529680197&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529680200&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ji6405_white-black_1.jpg&feedId=89032&k=8fc13acf187d077d2b796b01ccc2cf638617701c",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
@@ -316,27 +308,18 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41855850305&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41855850307&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0734_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=09aefa95e7682f563b84d64447123d6e4ad30cfe",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
       },
       {
         store: "FootStoreFR",
         price: 14.0,
-        priceMax: 15.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0734_1_apparel_photography_-_ecommerce_front_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "XS", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre" },
-          { size: "S", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre" },
-          { size: "M", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre" },
-          { size: "L", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre" },
-          { size: "XL", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre" },
-          { size: "2XL", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0734-chasuble-adidas-ltflre" },
-        ],
       },
     ],
   },
@@ -352,25 +335,18 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469241&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529469243&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0732_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=50ec3d940c56571c7030cc0e099ca2528d5e6651",
         sizes: ["S", "M", "XL", "2XL"],
       },
       {
         store: "FootStoreFR",
         price: 14.0,
-        priceMax: 15.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0732-chasuble-adidas-teassg",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0732_1_apparel_photography_-_ecommerce_front_view_white.webp",
         sizes: ["S", "M", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0732-chasuble-adidas-teassg" },
-          { size: "M", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0732-chasuble-adidas-teassg" },
-          { size: "XL", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0732-chasuble-adidas-teassg" },
-          { size: "2XL", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0732-chasuble-adidas-teassg" },
-        ],
       },
     ],
   },
@@ -386,26 +362,18 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469231&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529469232&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0735_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=9bbba470264b7dc7ea6e2c5f6e970b06607d41b3",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
       {
         store: "FootStoreFR",
         price: 14.0,
-        priceMax: 15.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hp0735_1_apparel_photography_-_ecommerce_front_view_white.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
-        sizePrices: [
-          { size: "S", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur" },
-          { size: "M", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur" },
-          { size: "L", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur" },
-          { size: "XL", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur" },
-          { size: "2XL", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhp0735-chasuble-adidas-actpur" },
-        ],
       },
     ],
   },
@@ -472,7 +440,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.57,
+        price: 23.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157551&a=3013769&m=65912",
@@ -481,7 +449,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.98,
+        price: 23.35,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa5506-bandes-elastique-airex-trexercise-x3-multicolore-60x5-cm",
@@ -733,7 +701,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.99,
+        price: 5.67,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45pe-blk-pompe-a-ballons-double-action-avento-black-tu",
@@ -787,7 +755,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.99,
+        price: 4.04,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730155&a=3013769&m=65912",
@@ -999,7 +967,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.63,
+        price: 3.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730012&a=3013769&m=65912",
@@ -1008,7 +976,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.21,
+        price: 3.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75ma-wir-filet-football-2-avento-white-red-tu",
@@ -1026,7 +994,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.63,
+        price: 3.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730010&a=3013769&m=65912",
@@ -1035,7 +1003,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.21,
+        price: 3.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75ma-kog-filet-football-2-avento-cobalt-blue-yellow-tu",
@@ -1053,7 +1021,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.63,
+        price: 3.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730011&a=3013769&m=65912",
@@ -1062,7 +1030,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.21,
+        price: 3.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F75ma-grw-filet-football-2-avento-green-white-tu",
@@ -1080,7 +1048,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.67,
+        price: 2.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730009&a=3013769&m=65912",
@@ -1512,7 +1480,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 511.69,
+        price: 518.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fspor-1544-0-kit-pack-de-base-blazepod-gris-bleu-tu",
@@ -1530,7 +1498,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 683.28,
+        price: 692.12,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fspor-1545-0-kit-pack-ultime-blazepod-gris-bleu-tu",
@@ -1548,7 +1516,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 324.47,
+        price: 328.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552705111&a=3013769&m=65912",
@@ -1557,7 +1525,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 321.39,
+        price: 325.59,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl3216-ensemble-de-base-en-mousse-dans-un-panier-pe-blockx-x20-multicolore-49x8-2x15-cm",
@@ -1575,7 +1543,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 431.25,
+        price: 436.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45171887706&a=3013769&m=65912",
@@ -1584,7 +1552,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 427.3,
+        price: 432.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl3211-ensemble-de-haies-blockx-multicolore-50x15x9-cm",
@@ -1602,7 +1570,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 305.01,
+        price: 309.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44702286618&a=3013769&m=65912",
@@ -1611,7 +1579,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 302.09,
+        price: 306.04,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl3212-ensemble-de-base-en-mousse-pe-blockx-x20-multicolore-49x8-2x15-cm",
@@ -1629,7 +1597,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 130.36,
+        price: 132.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443795001&a=3013769&m=65912",
@@ -1638,12 +1606,30 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 128.88,
+        price: 130.61,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl3214-pieds-de-haie-en-mousse-blockx-x10-bleu-tu",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/b/l/blockx_l3214_bleu_1.jpg",
         sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "bodytone-elastico-de-resistencia-de-alta-densidad-con-mango-bodytone-noir",
+    brand: "Bodytone",
+    model: "Elástico de resistencia de alta densidad con mango Bodytone - Noir",
+    colour: "Noir",
+    type: "elasticos",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 14.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45081945663&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fb%2Fo%2Fbodytone-ga2-noir-1.jpg&feedId=89032&k=adffdce95a082ac9f4509f4b008f2cfe6e06409e",
+        sizes: ["120 cm"],
       },
     ],
   },
@@ -2358,7 +2344,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.06,
+        price: 33.56,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856379&a=3013769&m=65912",
@@ -2367,7 +2353,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.39,
+        price: 32.88,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg4463-bande-lumineuse-deuser-black-red-1-5x100-cm",
@@ -2385,7 +2371,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.14,
+        price: 17.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856395&a=3013769&m=65912",
@@ -2394,7 +2380,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.6,
+        price: 16.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3399-bandes-pour-4-niveaux-de-resistance-digi-extend-black-tu",
@@ -2412,7 +2398,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 146.76,
+        price: 148.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857893&a=3013769&m=65912",
@@ -2421,7 +2407,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 145.15,
+        price: 147.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3398-kit-d-entrainement-manuel-digi-extend-black-tu",
@@ -2439,7 +2425,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.74,
+        price: 33.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857906&a=3013769&m=65912",
@@ -2448,7 +2434,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.07,
+        price: 32.56,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3393-materiel-d-entrainement-pour-les-mains-digi-flex-blue-13x7x1-5-cm",
@@ -2466,7 +2452,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.74,
+        price: 33.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857905&a=3013769&m=65912",
@@ -2475,7 +2461,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.07,
+        price: 32.56,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3394-materiel-d-entrainement-pour-les-mains-digi-flex-black-13x7x1-5-cm",
@@ -2493,7 +2479,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.74,
+        price: 33.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857908&a=3013769&m=65912",
@@ -2502,7 +2488,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.07,
+        price: 32.56,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3391-materiel-d-entrainement-pour-les-mains-digi-flex-red-13x7x1-5-cm",
@@ -2520,7 +2506,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.74,
+        price: 33.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857907&a=3013769&m=65912",
@@ -2529,7 +2515,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.07,
+        price: 32.56,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3392-materiel-d-entrainement-pour-les-mains-digi-flex-green-13x7x1-5-cm",
@@ -2628,7 +2614,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.67,
+        price: 21.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856388&a=3013769&m=65912",
@@ -2637,7 +2623,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.11,
+        price: 20.44,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk1752-bandes-de-resistance-dittmann-yellow-105-cm",
@@ -2655,7 +2641,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.49,
+        price: 40.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856384&a=3013769&m=65912",
@@ -2664,7 +2650,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.77,
+        price: 39.34,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk1754-bandes-de-resistance-dittmann-blue-105-cm",
@@ -2682,7 +2668,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.43,
+        price: 60.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856386&a=3013769&m=65912",
@@ -2691,7 +2677,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 58.55,
+        price: 59.37,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk1769-bandes-de-resistance-dittmann-orange-105-cm",
@@ -2709,7 +2695,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.42,
+        price: 18.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856383&a=3013769&m=65912",
@@ -2718,7 +2704,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.88,
+        price: 18.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk1751-bandes-de-resistance-dittmann-black-105-cm",
@@ -2736,7 +2722,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.24,
+        price: 14.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856387&a=3013769&m=65912",
@@ -2745,7 +2731,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.73,
+        price: 13.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk1750-bandes-de-resistance-dittmann-red-105-cm",
@@ -2763,7 +2749,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.91,
+        price: 28.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856385&a=3013769&m=65912",
@@ -2772,7 +2758,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.29,
+        price: 27.71,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk1753-bandes-de-resistance-dittmann-green-105-cm",
@@ -3186,7 +3172,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 62.22,
+        price: 61.32,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065069-filet-but-a-8-transportable-par-paire-noir-tu",
@@ -3330,7 +3316,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.6,
+        price: 51.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40965026465&a=3013769&m=65912",
@@ -3348,7 +3334,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.6,
+        price: 51.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fechelle-de-coordination-erima-flex-orange-fluo-noir-tu",
@@ -3369,8 +3355,8 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
   {
     id: "erima-sifflet-darbitre-classic-erima-40-noir",
     brand: "erima",
-    model: "Silbato arbitral clásico Erima fox 40 - Verde",
-    colour: "Verde",
+    model: "Silbato arbitral clásico Erima fox 40 - Azul",
+    colour: "Azul",
     type: "silbatos",
     offers: [
       {
@@ -3378,8 +3364,8 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 6.6,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923790723&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F3%2F732306.jpg&feedId=89032&k=1946ed96b6bd434299989f854fc1f09e848f512f",
+        url: "https://www.awin1.com/pclick.php?p=40109625318&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F3%2F732305.jpg&feedId=89032&k=26ab3765e127173239f5177be8edc12f1366073f",
         sizes: [],
       },
       {
@@ -3394,19 +3380,11 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       {
         store: "FootStoreFR",
         price: 6.6,
-        priceMax: 15.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F732304-sifflet-d-arbitre-classic-erima-40-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/3/732304.webp",
         sizes: ["TU"],
-        sizePrices: [
-          { size: "TU", price: 6.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F732304-sifflet-d-arbitre-classic-erima-40-noir-tu" },
-          { size: "TU", price: 6.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F732305-sifflet-d-arbitre-classic-erima-fox-40-bleu-tu" },
-          { size: "TU", price: 6.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F732306-sifflet-d-arbitre-classic-erima-fox-40-vert-fonce-tu" },
-          { size: "TU", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F732308-sifflet-d-arbitre-classic-erima-fox-40-rouge-tu" },
-          { size: "TU", price: 6.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F732307-sifflet-d-arbitre-classic-erima-fox-40-jaune-tu" },
-        ],
       },
       {
         store: "SportIsGoodFR",
@@ -3578,7 +3556,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 21.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143867&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143868&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm910s00120_1.jpg&feedId=89032&k=6a9d45cefe8d14eef7005f21cdd4d2ad773c6114",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       },
@@ -3740,7 +3718,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 17.23,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923792423&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923792424&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fc%2F9%2Fc990000026_2_1.jpg&feedId=89032&k=f76df3331572e9aed96ae8e56859a84d66c7759a",
         sizes: ["M", "XL"],
       },
@@ -3849,7 +3827,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 21.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46089281234&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143862&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea_fm910s00070_0-nw121724.jpg&feedId=89032&k=db7e011f9a0c05310dcdcfccc756a2ea58022171",
         sizes: ["S", "M", "L", "2XL", "3XL"],
       },
@@ -3884,7 +3862,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 21.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143877&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143878&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm910s00130_1.jpg&feedId=89032&k=5ee3ce8fcebb6594735605ace908b12d27cd93f1",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       },
@@ -3911,7 +3889,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 21.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923855708&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143870&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm910s00120_1.jpg&feedId=89032&k=6a9d45cefe8d14eef7005f21cdd4d2ad773c6114",
         sizes: ["S", "M", "L", "XL", "4XL"],
       },
@@ -4001,7 +3979,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 21.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143856&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143854&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea_fm910s00040_0-nw121724.jpg&feedId=89032&k=8a17cbde72b60891d19a2b3706077d0eb2e3a19f",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       },
@@ -4205,7 +4183,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.55,
+        price: 43.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857955&a=3013769&m=65912",
@@ -4214,7 +4192,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 41.8,
+        price: 42.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2317-multi-bande-de-resistance-moyenne-flexvit-vert-tu",
@@ -4232,7 +4210,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.55,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552705115&a=3013769&m=65912",
@@ -4241,7 +4219,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.92,
+        price: 28.36,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2306-multi-bande-de-resistance-facile-a-utiliser-flexvit-gris-200x5-8-cm",
@@ -4259,7 +4237,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.55,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857956&a=3013769&m=65912",
@@ -4277,7 +4255,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.92,
+        price: 28.36,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2308-multi-bande-de-resistance-resistante-flexvit-gris-200x5-8-cm",
@@ -4304,7 +4282,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.67,
+        price: 21.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324744139&a=3013769&m=65912",
@@ -4313,7 +4291,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.11,
+        price: 20.44,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2328-multi-bande-de-resistance-flexvit-anchor-marron-noir-11-8x7-7-cm-60x3-cm",
@@ -4331,7 +4309,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.55,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857944&a=3013769&m=65912",
@@ -4340,7 +4318,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.92,
+        price: 28.36,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2307-multi-bande-de-resistance-flexvit-bleu-200x5-8-cm",
@@ -4358,7 +4336,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.22,
+        price: 42.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857945&a=3013769&m=65912",
@@ -4367,7 +4345,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 41.48,
+        price: 42.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2322-multi-bande-de-resistance-flexvit-marron-320x3-8-cm",
@@ -4385,7 +4363,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.55,
+        price: 29.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857946&a=3013769&m=65912",
@@ -4394,7 +4372,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.92,
+        price: 28.36,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2309-multi-bande-de-resistance-flexvit-noir-200x5-8-cm",
@@ -4412,7 +4390,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.18,
+        price: 25.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857949&a=3013769&m=65912",
@@ -4421,7 +4399,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.57,
+        price: 24.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2323-multi-bande-de-resistance-flexvit-revolve-bleu-100x3-cm-100x4-cm",
@@ -4439,7 +4417,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.18,
+        price: 25.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686642458&a=3013769&m=65912",
@@ -4448,7 +4426,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.57,
+        price: 24.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2324-multi-bande-de-resistance-flexvit-revolve-gris-100x3-cm-100x4-cm",
@@ -4466,7 +4444,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.18,
+        price: 25.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686642459&a=3013769&m=65912",
@@ -4475,7 +4453,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.57,
+        price: 24.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2326-multi-bande-de-resistance-flexvit-revolve-noir-100x3-cm-100x4-cm",
@@ -4493,7 +4471,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.18,
+        price: 25.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857952&a=3013769&m=65912",
@@ -4502,7 +4480,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.57,
+        price: 24.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2325-multi-bande-de-resistance-flexvit-revolve-vert-100x3-cm-100x4-cm",
@@ -4520,7 +4498,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 85.65,
+        price: 86.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686642460&a=3013769&m=65912",
@@ -4529,7 +4507,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 84.54,
+        price: 85.71,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2491-multi-bande-de-resistance-flexvit-revolve-x4-gris-vert-bleu-noir-100x3-cm-100x4-cm",
@@ -4547,7 +4525,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 115.08,
+        price: 116.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857947&a=3013769&m=65912",
@@ -4556,7 +4534,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 113.73,
+        price: 115.27,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2492-multi-bande-de-resistance-flexvit-x3-bleu-vert-orange-275x3-cm-275x4-cm",
@@ -4574,7 +4552,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 103.18,
+        price: 104.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552705116&a=3013769&m=65912",
@@ -4583,7 +4561,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 101.93,
+        price: 103.31,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2493-multi-bande-de-resistance-flexvit-x4-bleu-noir-gris-marron-190x5-8-cm",
@@ -4601,7 +4579,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.65,
+        price: 40.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857954&a=3013769&m=65912",
@@ -4610,7 +4588,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.93,
+        price: 39.51,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2346-multi-bande-de-resistance-forte-flexvit-vert-tu",
@@ -4628,7 +4606,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.55,
+        price: 43.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856389&a=3013769&m=65912",
@@ -4637,7 +4615,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 41.8,
+        price: 42.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2318-bandes-elastique-flexvit-bleu-tu",
@@ -4655,7 +4633,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.98,
+        price: 17.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857931&a=3013769&m=65912",
@@ -4664,7 +4642,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.44,
+        price: 16.73,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2300-mini-bande-de-resistance-flexvit-jaune-32x5-7-cm",
@@ -4682,7 +4660,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.98,
+        price: 17.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857928&a=3013769&m=65912",
@@ -4691,7 +4669,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.44,
+        price: 16.73,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2304-mini-bande-de-resistance-flexvit-bleu-32x5-7-cm",
@@ -4709,7 +4687,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.05,
+        price: 15.32,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857929&a=3013769&m=65912",
@@ -4718,7 +4696,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.53,
+        price: 14.79,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2339-mini-bande-de-resistance-flexvit-dore-26x5-cm",
@@ -4736,7 +4714,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.98,
+        price: 17.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857933&a=3013769&m=65912",
@@ -4745,7 +4723,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.44,
+        price: 16.73,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2301-mini-bande-de-resistance-flexvit-orange-32x5-7-cm",
@@ -4763,7 +4741,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.98,
+        price: 17.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857932&a=3013769&m=65912",
@@ -4772,7 +4750,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.44,
+        price: 16.73,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2305-mini-bande-de-resistance-flexvit-noir-32x5-7-cm",
@@ -4790,7 +4768,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.98,
+        price: 17.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857934&a=3013769&m=65912",
@@ -4799,7 +4777,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.44,
+        price: 16.73,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2302-mini-bande-de-resistance-flexvit-rouge-32x5-7-cm",
@@ -4817,7 +4795,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.98,
+        price: 17.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857930&a=3013769&m=65912",
@@ -4835,7 +4813,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.05,
+        price: 15.32,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857935&a=3013769&m=65912",
@@ -4844,44 +4822,17 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.53,
-        priceMax: 16.44,
+        price: 14.79,
+        priceMax: 16.73,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2340-mini-bande-de-resistance-flexvit-vert-26x5-cm",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/f/l/flexvit_k2340_vert_1.jpg",
         sizes: ["26x5 cm", "32x5.7 cm"],
         sizePrices: [
-          { size: "26x5 cm", price: 14.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2340-mini-bande-de-resistance-flexvit-vert-26x5-cm" },
-          { size: "32x5.7 cm", price: 16.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2303-mini-bande-de-resistance-flexvit-green-32x5-7-cm" },
+          { size: "26x5 cm", price: 14.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2340-mini-bande-de-resistance-flexvit-vert-26x5-cm" },
+          { size: "32x5.7 cm", price: 16.73, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2303-mini-bande-de-resistance-flexvit-green-32x5-7-cm" },
         ],
-      },
-    ],
-  },
-  {
-    id: "flexvit-mini-banda-de-resistencia-flexvit-x10-naranja",
-    brand: "FLEXVIT",
-    model: "Mini banda de resistencia FLEXVIT (x10) - Naranja",
-    colour: "Naranja",
-    type: "elasticos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 135.18,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45783105317&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fl%2Fflexvit_k2311_orange_1.jpg&feedId=89032&k=4220684736f123f77d90ad7e02f8c0425e1d3999",
-        sizes: ["32x5.7 cm"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 133.67,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2311-mini-bande-de-resistance-flexvit-x10-orange-32x5-7-cm",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/f/l/flexvit_k2311_orange_1.jpg",
-        sizes: ["32x5.7 cm"],
       },
     ],
   },
@@ -4894,7 +4845,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.81,
+        price: 40.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857937&a=3013769&m=65912",
@@ -4903,7 +4854,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.09,
+        price: 39.67,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2342-mini-bande-de-resistance-flexvit-x3-jaune-vert-bleu-26x5-cm",
@@ -4921,7 +4872,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 80.02,
+        price: 81.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857938&a=3013769&m=65912",
@@ -4930,7 +4881,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 78.96,
+        price: 80.05,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2490-mini-bande-de-resistance-flexvit-x6-noir-bleu-vert-rouge-orange-jaune-32x5-7-cm",
@@ -4948,7 +4899,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.55,
+        price: 43.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857943&a=3013769&m=65912",
@@ -4957,7 +4908,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 41.8,
+        price: 42.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk2316-multi-bande-de-resistance-facile-flexvit-orange-tu",
@@ -5104,7 +5055,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 13.3,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40480598358&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40480598357&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2FC%2FT%2FCT08-0028.jpg&feedId=89032&k=bb8b3595054e9458ea6cd48de46e59bcf85d34bd",
         sizes: ["S/M", "L/XL"],
       },
@@ -5131,7 +5082,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 13.3,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923964162&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529386159&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2FC%2FT%2FCT08-0012.jpg&feedId=89032&k=d6c8d58ec58afb91b400bd11efb1a1385e703dad",
         sizes: ["S/M", "L/XL"],
       },
@@ -5161,7 +5112,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 13.3,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529386157&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529386158&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2FC%2FT%2FCT08-0006.jpg&feedId=89032&k=39f0d9ee666554ae38c078b0c8eaefc1c711ab39",
         sizes: ["S/M", "L/XL"],
       },
@@ -5260,7 +5211,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 12.24,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41949205962&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923964165&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_ct02-0107.jpg&feedId=89032&k=a90c4f534a6d7a5bb8182a6cc46b35a021691ce5",
         sizes: ["S", "XL"],
       },
@@ -5305,7 +5256,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 12.24,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38650241320&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44245759257&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_ct02-1204.jpg&feedId=89032&k=975d5e585d1309846b0ed0bff3587ed9a1b1c774",
         sizes: ["S", "XL"],
       },
@@ -5347,7 +5298,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 53.8,
+        price: 54.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857851&a=3013769&m=65912",
@@ -5356,7 +5307,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 52.96,
+        price: 53.72,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk9396-fermetures-d-entrainement-gymway-argente-tu",
@@ -5374,7 +5325,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.02,
+        price: 25.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857846&a=3013769&m=65912",
@@ -5383,7 +5334,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.42,
+        price: 24.8,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3388-entraineur-manuel-pour-les-mains-handmaster-plus-orange-tu",
@@ -5401,7 +5352,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.02,
+        price: 25.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46014579854&a=3013769&m=65912",
@@ -5410,7 +5361,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.42,
+        price: 24.8,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3387-entraineur-manuel-pour-les-mains-handmaster-plus-rouge-tu",
@@ -5428,7 +5379,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.62,
+        price: 50.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857848&a=3013769&m=65912",
@@ -5437,7 +5388,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 48.82,
+        price: 49.52,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3389-entraineur-manuel-pour-les-mains-handmaster-plus-x3-rouge-bleu-orange-tu",
@@ -5617,7 +5568,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782000&a=3013769&m=65912",
@@ -5626,7 +5577,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-562-cerceau-avec-poids-et-compteur-hms-hhw06-black-tu",
@@ -5644,7 +5595,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782002&a=3013769&m=65912",
@@ -5653,7 +5604,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-561-cerceau-avec-poids-et-compteur-hms-hhw06-pink-tu",
@@ -5671,7 +5622,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782001&a=3013769&m=65912",
@@ -5680,7 +5631,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-560-cerceau-avec-poids-et-compteur-hms-hhw06-green-tu",
@@ -5698,7 +5649,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.67,
+        price: 40.26,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46128834933&a=3013769&m=65912",
@@ -5707,7 +5658,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.95,
+        price: 39.52,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-574-cerceau-avec-poids-hms-hhm13-dore-tu",
@@ -5725,7 +5676,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.19,
+        price: 35.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782004&a=3013769&m=65912",
@@ -5734,7 +5685,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 34.5,
+        price: 35.02,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-520-cerceau-avec-poids-hms-hhw01-blue-tu",
@@ -5752,7 +5703,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.19,
+        price: 35.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782003&a=3013769&m=65912",
@@ -5761,7 +5712,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 34.5,
+        price: 35.02,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-521-cerceau-avec-poids-hms-hhw01-black-tu",
@@ -5779,7 +5730,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.19,
+        price: 35.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782005&a=3013769&m=65912",
@@ -5788,7 +5739,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 34.5,
+        price: 35.02,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-518-cerceau-avec-poids-hms-hhw01-green-tu",
@@ -5806,7 +5757,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.07,
+        price: 22.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40343737155&a=3013769&m=65912",
@@ -5815,7 +5766,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.49,
+        price: 21.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-530-cerceau-avec-poids-hms-hhw02-black-tu",
@@ -5833,7 +5784,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.07,
+        price: 22.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40184133108&a=3013769&m=65912",
@@ -5842,7 +5793,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.49,
+        price: 21.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-531-cerceau-avec-poids-hms-hhw02-light-pink-tu",
@@ -5914,7 +5865,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.93,
+        price: 39.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40125131209&a=3013769&m=65912",
@@ -5923,7 +5874,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.22,
+        price: 38.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-526-cerceau-avec-poids-hms-hhw12-gt-black-tu",
@@ -5941,7 +5892,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.93,
+        price: 39.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782007&a=3013769&m=65912",
@@ -5950,7 +5901,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.22,
+        price: 38.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-525-cerceau-avec-poids-hms-hhw12-gt-violet-tu",
@@ -5968,7 +5919,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.95,
+        price: 27.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45254166883&a=3013769&m=65912",
@@ -5977,7 +5928,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.33,
+        price: 26.74,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-502-cerceau-hms-hhp002-red-grey-100-cm",
@@ -5995,7 +5946,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.3,
+        price: 33.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45254166884&a=3013769&m=65912",
@@ -6004,7 +5955,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.63,
+        price: 33.12,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-503-cerceau-hms-hhp003-green-grey-100-cm",
@@ -6022,7 +5973,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.68,
+        price: 28.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654203027&a=3013769&m=65912",
@@ -6031,7 +5982,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.06,
+        price: 27.48,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-506-cerceau-hms-hhp006-black-blue-98-cm",
@@ -6049,7 +6000,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.93,
+        price: 39.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782014&a=3013769&m=65912",
@@ -6058,7 +6009,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.22,
+        price: 38.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-575-cerceau-magnetique-avec-poids-et-compteur-hms-hhm13-green-tu",
@@ -6076,7 +6027,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.93,
+        price: 39.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782015&a=3013769&m=65912",
@@ -6085,7 +6036,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.22,
+        price: 38.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-576-cerceau-magnetique-avec-poids-et-compteur-hms-hhm13-violet-tu",
@@ -6157,7 +6108,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40707551164&a=3013769&m=65912",
@@ -6166,7 +6117,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-582-cerceau-magnetique-avec-poids-et-compteur-hms-hhm15-blue-tu",
@@ -6184,7 +6135,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782018&a=3013769&m=65912",
@@ -6193,7 +6144,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-583-cerceau-magnetique-avec-poids-et-compteur-hms-hhm15-black-tu",
@@ -6211,7 +6162,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782019&a=3013769&m=65912",
@@ -6220,7 +6171,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-580-cerceau-magnetique-avec-poids-et-compteur-hms-hhm15-pink-tu",
@@ -6238,7 +6189,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.42,
+        price: 47.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43444403338&a=3013769&m=65912",
@@ -6247,7 +6198,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.64,
+        price: 46.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-581-cerceau-magnetique-avec-poids-et-compteur-hms-hhm15-green-tu",
@@ -6265,7 +6216,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.37,
+        price: 77.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41219759953&a=3013769&m=65912",
@@ -6274,7 +6225,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 75.34,
+        price: 76.38,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-585-cerceau-magnetique-avec-poids-et-compteur-hms-hhm16-white-tu",
@@ -6292,7 +6243,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.37,
+        price: 77.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41567362310&a=3013769&m=65912",
@@ -6301,7 +6252,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 75.34,
+        price: 76.38,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-586-cerceau-magnetique-avec-poids-et-compteur-hms-hhm16-black-pink-tu",
@@ -6319,7 +6270,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 101.08,
+        price: 102.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782021&a=3013769&m=65912",
@@ -6328,7 +6279,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 99.85,
+        price: 101.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-588-cerceau-magnetique-avec-poids-et-compteur-hms-hhm17-white-violet-tu",
@@ -6346,7 +6297,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 101.08,
+        price: 102.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782020&a=3013769&m=65912",
@@ -6355,7 +6306,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 99.85,
+        price: 101.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-589-cerceau-magnetique-avec-poids-et-compteur-hms-hhm17-black-turquoise-tu",
@@ -6373,7 +6324,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 119.79,
+        price: 121.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782023&a=3013769&m=65912",
@@ -6382,7 +6333,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 118.46,
+        price: 120.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-597-cerceau-magnetique-en-tpe-avec-poids-et-compteur-hms-hhm21-white-orange-tu",
@@ -6400,7 +6351,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 119.79,
+        price: 121.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782022&a=3013769&m=65912",
@@ -6409,7 +6360,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 118.46,
+        price: 120.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-598-cerceau-magnetique-en-tpe-avec-poids-et-compteur-hms-hhm21-black-yellow-tu",
@@ -6427,7 +6378,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.42,
+        price: 5.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529781871&a=3013769&m=65912",
@@ -6436,7 +6387,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.98,
+        price: 5.12,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-011-bande-de-resistance-caoutchouc-hms-gu04-red-50x600x0-7-mm",
@@ -6454,7 +6405,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.58,
+        price: 5.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645289624&a=3013769&m=65912",
@@ -6463,7 +6414,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.14,
+        price: 5.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-004-bande-de-resistance-hms-gu01-blue-1200-120-0-4-mm",
@@ -6481,7 +6432,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.36,
+        price: 6.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645289625&a=3013769&m=65912",
@@ -6490,7 +6441,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.91,
+        price: 6.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-005-bande-de-resistance-hms-gu02-blue-1200x120x0-5-mm",
@@ -6535,7 +6486,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.0,
+        price: 48.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46157590052&a=3013769&m=65912",
@@ -6544,7 +6495,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 46.0,
+        price: 47.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-027-bande-de-resistance-hms-gu05-orange-101x2080x4-5-mm",
@@ -6580,7 +6531,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 27.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46157592306&a=3013769&m=65912",
@@ -6589,7 +6540,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 26.0,
         priceMax: 44.0,
         shipping: 6.99,
         currency: "EUR",
@@ -6597,7 +6548,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/h/m/hms_17-33-024_green_1.webp",
         sizes: ["45x2080x4.5 mm", "83x2080x4.5 mm"],
         sizePrices: [
-          { size: "45x2080x4.5 mm", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-024-bande-de-resistance-hms-gu05-green-45x2080x4-5-mm" },
+          { size: "45x2080x4.5 mm", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-024-bande-de-resistance-hms-gu05-green-45x2080x4-5-mm" },
           { size: "83x2080x4.5 mm", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-026-bande-de-resistance-hms-gu05-lime-83x2080x4-5-mm" },
         ],
       },
@@ -6612,7 +6563,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.72,
+        price: 16.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529781882&a=3013769&m=65912",
@@ -6621,7 +6572,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.19,
+        price: 15.46,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-032-bande-de-resistance-hms-gu06-blue-21x2250x5-mm",
@@ -6639,16 +6590,16 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.36,
+        price: 6.52,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44645289627&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44645289628&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2Fm%2Fhms_17-33-090_noir-gris_1.jpg&feedId=89032&k=a9b00639eeba9ca4e690af7ceecd56fbe63b8d56",
         sizes: ["S", "M"],
       },
       {
         store: "FootStoreFR",
-        price: 5.91,
+        price: 6.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-092-bandes-elastique-hms-hb12-noir-gris",
@@ -6666,7 +6617,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.08,
+        price: 96.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529781917&a=3013769&m=65912",
@@ -6675,7 +6626,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 93.9,
+        price: 95.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-57-005-barre-de-musculation-et-haltere-hms-sbp15-multicolore-tu",
@@ -6693,7 +6644,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.65,
+        price: 49.36,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782012&a=3013769&m=65912",
@@ -6702,7 +6653,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 47.85,
+        price: 48.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-620-cerceau-laste-et-support-de-taille-hms-hhw12-violet-46-125-cm",
@@ -6720,7 +6671,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.19,
+        price: 26.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782045&a=3013769&m=65912",
@@ -6729,7 +6680,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.58,
+        price: 25.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-102-cone-d-entrainement-hms-gtr50-premium-multicolore-20x5-cm",
@@ -6747,7 +6698,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 554.1,
+        price: 561.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41843982275&a=3013769&m=65912",
@@ -6756,7 +6707,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 549.13,
+        price: 556.24,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-53-514-echelle-de-gymnastique-multifonctionnelle-hms-dw2708-noir-120-400-cm",
@@ -6774,7 +6725,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.68,
+        price: 34.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782123&a=3013769&m=65912",
@@ -6783,7 +6734,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 33.0,
+        price: 33.5,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-101-echelle-rapide-hms-dk06-premium-jaune-noir-600x47-cm",
@@ -6801,7 +6752,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 198.42,
+        price: 201.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529783114&a=3013769&m=65912",
@@ -6810,7 +6761,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 196.39,
+        price: 198.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-061-rack-hms-hms-str18-jaune-noir-tu",
@@ -6828,7 +6779,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 188.69,
+        price: 191.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529783115&a=3013769&m=65912",
@@ -6837,7 +6788,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 187.66,
+        price: 189.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-097-rack-pour-accessoires-commercial-hms-str33-noir-gris-tu",
@@ -6855,7 +6806,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.65,
+        price: 49.36,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41485388890&a=3013769&m=65912",
@@ -6864,7 +6815,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 47.85,
+        price: 48.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-089-rack-pour-tapis-commercial-hms-str30-gris-tu",
@@ -6882,7 +6833,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 112.31,
+        price: 113.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41921116354&a=3013769&m=65912",
@@ -6891,7 +6842,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 110.98,
+        price: 112.48,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-095-rack-pour-tapis-commercial-hms-str31-gris-tu",
@@ -6909,7 +6860,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 188.69,
+        price: 191.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529783117&a=3013769&m=65912",
@@ -6918,7 +6869,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 187.66,
+        price: 189.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-62-096-rack-pour-disques-de-poids-commercial-hms-str32-noir-gris-tu",
@@ -6936,7 +6887,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.07,
+        price: 22.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45177312740&a=3013769&m=65912",
@@ -6945,7 +6896,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.49,
+        price: 21.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-45-001-poignee-de-pompe-hms-pu01-x2-noir-tu",
@@ -6990,7 +6941,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 80.11,
+        price: 81.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45171887415&a=3013769&m=65912",
@@ -6999,7 +6950,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 79.05,
+        price: 80.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-45-010-poignee-de-pompe-hms-pw20-x2-noir-620x360x755-mm",
@@ -7017,7 +6968,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 168.46,
+        price: 170.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529783081&a=3013769&m=65912",
@@ -7026,7 +6977,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 167.34,
+        price: 168.88,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-45-014-poignee-de-pompe-hms-pw30-pro-noir-72x52x87-cm",
@@ -7044,7 +6995,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 132.52,
+        price: 134.3,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529783082&a=3013769&m=65912",
@@ -7053,7 +7004,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 131.24,
+        price: 132.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-53-501-poignee-de-pompe-hms-pwl8306-premium-noir-88x66-5x107-cm",
@@ -7071,7 +7022,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 301.01,
+        price: 304.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40184133109&a=3013769&m=65912",
@@ -7080,7 +7031,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 300.48,
+        price: 302.02,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-53-508-poignee-de-pompe-hms-pwl8324-noir-172x95x236-cm",
@@ -7206,7 +7157,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.71,
+        price: 5.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027510306&a=3013769&m=65912",
@@ -7215,7 +7166,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.27,
+        price: 5.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000215642-sifflet-huari-swist-red-tu",
@@ -7233,7 +7184,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.72,
+        price: 15.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970715&a=3013769&m=65912",
@@ -7242,7 +7193,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.21,
+        price: 14.47,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1966-cordon-de-fixation-pour-filets-de-but-football-huck-green",
@@ -7260,7 +7211,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.36,
+        price: 6.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970730&a=3013769&m=65912",
@@ -7269,7 +7220,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.91,
+        price: 6.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd1280-filet-a-ballon-1-a-3-balles-huck-yellow-2-5-mm-5-cm",
@@ -7287,7 +7238,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.26,
+        price: 9.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970731&a=3013769&m=65912",
@@ -7296,7 +7247,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.78,
+        price: 8.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd1283-filet-a-ballon-10-a-12-balles-huck-yellow-2-5-mm-5-cm",
@@ -7314,7 +7265,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.33,
+        price: 7.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970732&a=3013769&m=65912",
@@ -7323,7 +7274,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.87,
+        price: 7.04,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd1281-filet-a-ballon-6-balles-huck-yellow-2-5-mm-5-cm",
@@ -7341,7 +7292,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.29,
+        price: 8.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970733&a=3013769&m=65912",
@@ -7350,7 +7301,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.83,
+        price: 8.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd1282-filet-a-ballon-9-balles-huck-yellow-2-5-mm-5-cm",
@@ -7368,7 +7319,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 134.95,
+        price: 135.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45783110118&a=3013769&m=65912",
@@ -7395,7 +7346,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 134.95,
+        price: 135.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324746643&a=3013769&m=65912",
@@ -7476,7 +7427,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 141.45,
+        price: 143.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45873903020&a=3013769&m=65912",
@@ -7485,7 +7436,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 139.95,
+        price: 141.76,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1951-filet-de-but-a-mailles-carrees-huck-blanc-7-50x2-50-m",
@@ -7504,28 +7455,28 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 124.95,
-        priceMax: 133.25,
+        priceMax: 135.04,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970739&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhuck_f1061_white_1.jpg&feedId=89032&k=5d2fe8259730128ce0849e237b908e7f602b381a",
         sizes: ["5.15x2.05 m", "80/150 cm"],
         sizePrices: [
-          { size: "5.15x2.05 m", price: 133.25, url: "https://www.awin1.com/pclick.php?p=42761970740&a=3013769&m=65912" },
+          { size: "5.15x2.05 m", price: 135.04, url: "https://www.awin1.com/pclick.php?p=42761970740&a=3013769&m=65912" },
           { size: "80/150 cm", price: 124.95, url: "https://www.awin1.com/pclick.php?p=42761970739&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
         price: 124.95,
-        priceMax: 132.95,
+        priceMax: 133.52,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1061-filet-de-but-de-football-huck-square-mesh-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/h/u/huck_f1061_white_1.jpg",
         sizes: ["5.15x2.05 m", "80/150 cm"],
         sizePrices: [
-          { size: "5.15x2.05 m", price: 132.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1061-filet-de-but-de-football-huck-square-mesh-white" },
+          { size: "5.15x2.05 m", price: 133.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1061-filet-de-but-de-football-huck-square-mesh-white" },
           { size: "80/150 cm", price: 124.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1061-filet-de-but-de-football-huck-square-mesh-white" },
         ],
       },
@@ -7675,7 +7626,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.58,
+        price: 5.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43397420783&a=3013769&m=65912",
@@ -7756,7 +7707,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.2,
+        price: 7.38,
         priceMax: 14.0,
         shipping: 7.99,
         currency: "EUR",
@@ -7765,7 +7716,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         sizes: ["S", "XL"],
         sizePrices: [
           { size: "S", price: 14.0, url: "https://www.awin1.com/pclick.php?p=43839281326&a=3013769&m=65912" },
-          { size: "XL", price: 7.2, url: "https://www.awin1.com/pclick.php?p=43839281327&a=3013769&m=65912" },
+          { size: "XL", price: 7.38, url: "https://www.awin1.com/pclick.php?p=43839281327&a=3013769&m=65912" },
         ],
       },
       {
@@ -7779,16 +7730,16 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.4,
-        priceMax: 15.0,
+        price: 5.54,
+        priceMax: 14.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-7649_2-nw1226.webp",
         sizes: ["S", "XL"],
         sizePrices: [
-          { size: "S", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo" },
-          { size: "XL", price: 5.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo" },
+          { size: "S", price: 14.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo" },
+          { size: "XL", price: 5.54, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-7649-chasuble-hummel-training-fundamental-bleu-fluo" },
         ],
       },
       {
@@ -7814,7 +7765,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 7.93,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281325&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43945404054&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-9001_2-nw1226.jpg&feedId=89032&k=8b7d0d3759c731d40aa101056d8c563f1afd9b7d",
         sizes: ["S", "XL"],
       },
@@ -7841,7 +7792,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 7.93,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281329&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45783092380&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-5179_2-nw1226.jpg&feedId=89032&k=5f7f37c8002d5c0335875c4f7512d2d02fc035b3",
         sizes: ["S", "XL"],
       },
@@ -7868,7 +7819,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 7.93,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281331&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43839281330&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-3062-nw1226.jpg&feedId=89032&k=199faa0498c0538d58251efb0dd73d781ff8a21f",
         sizes: ["S", "XL"],
       },
@@ -7906,17 +7857,12 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.0,
-        priceMax: 15.0,
+        price: 14.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-6057-chasuble-hummel-training-fundamental-vert-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_005002-6057_2-nw1226.webp",
-        sizes: ["S", "XL"],
-        sizePrices: [
-          { size: "S", price: 15.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-6057-chasuble-hummel-training-fundamental-vert-fluo" },
-          { size: "XL", price: 6.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-6057-chasuble-hummel-training-fundamental-vert-fluo" },
-        ],
+        sizes: ["S"],
       },
     ],
   },
@@ -7929,7 +7875,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.03,
+        price: 3.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44383400556&a=3013769&m=65912",
@@ -7938,7 +7884,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.71,
+        price: 2.72,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhur500n-filet-football-hurley-master-net-noir-tu",
@@ -7956,7 +7902,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.03,
+        price: 3.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44078833915&a=3013769&m=65912",
@@ -7965,7 +7911,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.71,
+        price: 2.72,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhur500e-filet-football-hurley-master-x10-noir-tu",
@@ -8037,10 +7983,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827495&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091250&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_03.jpg&feedId=89032&k=303a6582c948e6fdca30e4a923e9159c6ca34c68",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8064,10 +8010,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827504&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923827503&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_45.jpg&feedId=89032&k=29edc993c25bbf6d616c770f5d3a86b02f86bd80",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8091,10 +8037,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091256&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091255&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_40.jpg&feedId=89032&k=92b9ff0eb91a2a9b8e0131aa80642c07af7585a3",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8118,7 +8064,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529091254&a=3013769&m=65912",
@@ -8145,10 +8091,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827489&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091246&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_01.jpg&feedId=89032&k=785a926d1acb67614b72a85808942c737b39e33a",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8172,7 +8118,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529091249&a=3013769&m=65912",
@@ -8199,10 +8145,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.39,
+        price: 12.64,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827507&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923827505&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2618_03.jpg&feedId=89032&k=32e1bf37bac51b710e8e788edf1d50c04840d903",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8226,10 +8172,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.39,
+        price: 12.64,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827509&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091258&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2618_19.jpg&feedId=89032&k=fe86f2893ff97b0678e25ef0c2a0b96710bb503d",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8253,7 +8199,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529091260&a=3013769&m=65912",
@@ -8280,10 +8226,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.15,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091261&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091262&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2619_19.jpg&feedId=89032&k=0383b2e20b46c4b29f7301a8810cb4ba33ae5619",
         sizes: ["Adulte", "Junior"],
       },
@@ -8310,7 +8256,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.35,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44323044514&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44323044515&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_102699.100_noir_1.jpg&feedId=89032&k=1bd14672197dbb0b795f248ddfa0f1ada9093eaa",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
@@ -8334,7 +8280,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.9,
+        price: 33.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443799397&a=3013769&m=65912",
@@ -8343,7 +8289,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.23,
+        price: 32.72,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh2219-accessoire-but-de-football-kuebler-sport-argente-80x80-mm-35-cm",
@@ -8361,7 +8307,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.24,
+        price: 5.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856226&a=3013769&m=65912",
@@ -8370,7 +8316,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.8,
+        price: 4.94,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1416-adaptateur-de-piquets-kuebler-sport-yellow-o-25-mm",
@@ -8388,7 +8334,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.36,
+        price: 53.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856423&a=3013769&m=65912",
@@ -8397,7 +8343,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 51.53,
+        price: 52.27,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fw7916-cerceau-de-plongee-kuebler-sport-x3-rouge-75x75-cm",
@@ -8415,7 +8361,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.56,
+        price: 5.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856393&a=3013769&m=65912",
@@ -8424,7 +8370,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.12,
+        price: 5.26,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd6190-05-bandes-elastique-kuebler-sport-white-3-8-cmx10-m",
@@ -8442,7 +8388,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.9,
+        price: 42.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857996&a=3013769&m=65912",
@@ -8451,7 +8397,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 40.1,
+        price: 40.69,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg4188-pompe-electrique-kuebler-sport-noir-230-v",
@@ -8469,7 +8415,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.0,
+        price: 7.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857747&a=3013769&m=65912",
@@ -8478,7 +8424,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.55,
+        price: 6.71,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1121-04-cone-d-entrainement-kuebler-sport-black",
@@ -8497,7 +8443,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 79.0,
-        priceMax: 121.03,
+        priceMax: 122.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857768&a=3013769&m=65912",
@@ -8505,13 +8451,13 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         sizes: ["28 cm", "40 cm"],
         sizePrices: [
           { size: "28 cm", price: 79.0, url: "https://www.awin1.com/pclick.php?p=42529857768&a=3013769&m=65912" },
-          { size: "40 cm", price: 121.03, url: "https://www.awin1.com/pclick.php?p=42529857767&a=3013769&m=65912" },
+          { size: "40 cm", price: 122.66, url: "https://www.awin1.com/pclick.php?p=42529857767&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
         price: 79.0,
-        priceMax: 119.63,
+        priceMax: 121.24,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11310-cone-d-entrainement-kuebler-sport-xxl-x18-multicolore",
@@ -8519,7 +8465,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         sizes: ["28 cm", "40 cm"],
         sizePrices: [
           { size: "28 cm", price: 79.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11310-cone-d-entrainement-kuebler-sport-xxl-x18-multicolore" },
-          { size: "40 cm", price: 119.63, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11310-cone-d-entrainement-kuebler-sport-xxl-x18-multicolore" },
+          { size: "40 cm", price: 121.24, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11310-cone-d-entrainement-kuebler-sport-xxl-x18-multicolore" },
         ],
       },
     ],
@@ -8533,30 +8479,30 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 99.16,
-        priceMax: 172.81,
+        price: 100.51,
+        priceMax: 175.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857770&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fk%2Fu%2Fkuebler-sport_f11301_multicolore_1.jpg&feedId=89032&k=996561cd1628009d3426d10371951e64dbce3289",
         sizes: ["28 cm", "40 cm"],
         sizePrices: [
-          { size: "28 cm", price: 99.16, url: "https://www.awin1.com/pclick.php?p=42529857770&a=3013769&m=65912" },
-          { size: "40 cm", price: 172.81, url: "https://www.awin1.com/pclick.php?p=42529857769&a=3013769&m=65912" },
+          { size: "28 cm", price: 100.51, url: "https://www.awin1.com/pclick.php?p=42529857770&a=3013769&m=65912" },
+          { size: "40 cm", price: 175.11, url: "https://www.awin1.com/pclick.php?p=42529857769&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 99.0,
-        priceMax: 170.99,
+        price: 99.27,
+        priceMax: 173.26,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11311-cone-d-entrainement-kuebler-sport-xxl-x27-multicolore",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/k/u/kuebler-sport_f11301_multicolore_1.jpg",
         sizes: ["28 cm", "40 cm"],
         sizePrices: [
-          { size: "28 cm", price: 99.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11311-cone-d-entrainement-kuebler-sport-xxl-x27-multicolore" },
-          { size: "40 cm", price: 170.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11311-cone-d-entrainement-kuebler-sport-xxl-x27-multicolore" },
+          { size: "28 cm", price: 99.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11311-cone-d-entrainement-kuebler-sport-xxl-x27-multicolore" },
+          { size: "40 cm", price: 173.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11311-cone-d-entrainement-kuebler-sport-xxl-x27-multicolore" },
         ],
       },
     ],
@@ -8570,7 +8516,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.95,
+        price: 13.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857746&a=3013769&m=65912",
@@ -8579,7 +8525,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.45,
+        price: 12.69,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1515-03-cone-d-entrainement-avec-trous-kuebler-sport-yellow-37-cm",
@@ -8597,7 +8543,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.95,
+        price: 13.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857743&a=3013769&m=65912",
@@ -8606,7 +8552,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.45,
+        price: 12.69,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1515-01-cone-d-entrainement-avec-trous-kuebler-sport-blue-37-cm",
@@ -8624,7 +8570,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.95,
+        price: 13.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829762988&a=3013769&m=65912",
@@ -8633,7 +8579,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.45,
+        price: 12.69,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1515-02-cone-d-entrainement-avec-trous-kuebler-sport-red-37-cm",
@@ -8651,7 +8597,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.95,
+        price: 13.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857744&a=3013769&m=65912",
@@ -8660,7 +8606,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.45,
+        price: 12.69,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1515-07-cone-d-entrainement-avec-trous-kuebler-sport-green-37-cm",
@@ -8678,7 +8624,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857812&a=3013769&m=65912",
@@ -8705,7 +8651,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857805&a=3013769&m=65912",
@@ -8732,7 +8678,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857807&a=3013769&m=65912",
@@ -8750,7 +8696,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857811&a=3013769&m=65912",
@@ -8777,7 +8723,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857808&a=3013769&m=65912",
@@ -8804,7 +8750,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857804&a=3013769&m=65912",
@@ -8831,7 +8777,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857810&a=3013769&m=65912",
@@ -8858,7 +8804,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857809&a=3013769&m=65912",
@@ -8885,7 +8831,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.82,
+        price: 2.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857806&a=3013769&m=65912",
@@ -8912,7 +8858,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.22,
+        price: 42.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829762989&a=3013769&m=65912",
@@ -8921,7 +8867,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 41.48,
+        price: 42.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1110-disque-de-marquage-kuebler-sport-x50-multicolore-6-cm",
@@ -8993,7 +8939,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.47,
+        price: 36.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857825&a=3013769&m=65912",
@@ -9002,7 +8948,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 34.95,
+        price: 35.3,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff14601-echelle-de-rythme-en-plastique-kuebler-sport-jaune-noir-4-m",
@@ -9047,32 +8993,32 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 70.69,
-        priceMax: 90.15,
+        price: 71.68,
+        priceMax: 91.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443794999&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fk%2Fu%2Fkuebler-sport_f1277_argente_1.jpg&feedId=89032&k=ab87b2511a2d5f3d91d90b854deb0e387d20eea3",
         sizes: ["40/60 cm", "55/84 cm", "66/106 cm"],
         sizePrices: [
-          { size: "40/60 cm", price: 70.69, url: "https://www.awin1.com/pclick.php?p=45443794999&a=3013769&m=65912" },
-          { size: "55/84 cm", price: 82.95, url: "https://www.awin1.com/pclick.php?p=45443795000&a=3013769&m=65912" },
-          { size: "66/106 cm", price: 90.15, url: "https://www.awin1.com/pclick.php?p=42529857879&a=3013769&m=65912" },
+          { size: "40/60 cm", price: 71.68, url: "https://www.awin1.com/pclick.php?p=45443794999&a=3013769&m=65912" },
+          { size: "55/84 cm", price: 84.06, url: "https://www.awin1.com/pclick.php?p=45443795000&a=3013769&m=65912" },
+          { size: "66/106 cm", price: 91.39, url: "https://www.awin1.com/pclick.php?p=42529857879&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 69.95,
-        priceMax: 89.95,
+        price: 70.68,
+        priceMax: 90.23,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/k/u/kuebler-sport_f1277_argente_1.jpg",
         sizes: ["40/60 cm", "55/84 cm", "66/106 cm"],
         sizePrices: [
-          { size: "40/60 cm", price: 69.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente" },
-          { size: "55/84 cm", price: 82.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente" },
-          { size: "66/106 cm", price: 89.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente" },
+          { size: "40/60 cm", price: 70.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente" },
+          { size: "55/84 cm", price: 82.96, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente" },
+          { size: "66/106 cm", price: 90.23, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1277-haie-d-entrainement-kuebler-sport-argente" },
         ],
       },
     ],
@@ -9113,7 +9059,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.47,
+        price: 12.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44852075612&a=3013769&m=65912",
@@ -9122,7 +9068,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.97,
+        price: 12.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Flp8412-bandes-elastique-livepro-x4-multicolor-tu",
@@ -9140,7 +9086,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.12,
+        price: 13.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44852075622&a=3013769&m=65912",
@@ -9149,7 +9095,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.61,
+        price: 12.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Flp8618-cone-d-entrainement-livepro-x4-multicolor-tu",
@@ -9167,7 +9113,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.92,
+        price: 34.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44852075636&a=3013769&m=65912",
@@ -9176,7 +9122,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 33.24,
+        price: 33.74,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Flp8615-haie-de-vitesse-livepro-x5-bleu-noir-tu",
@@ -9194,7 +9140,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 55.36,
+        price: 56.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44852075676&a=3013769&m=65912",
@@ -9212,7 +9158,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 54.51,
+        price: 55.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Flp8160-poignee-de-pompe-livepro-noir-tu",
@@ -9239,7 +9185,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.62,
+        price: 20.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44852075661&a=3013769&m=65912",
@@ -9248,7 +9194,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.06,
+        price: 20.39,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Flp8612-materiel-d-entrainement-anneaux-d-agilite-livepro-blue-tu",
@@ -9347,7 +9293,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.98,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507465&a=3013769&m=65912",
@@ -9365,7 +9311,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.96,
+        price: 7.13,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta100f-sifflet-d-arbitre-lynx-sport-fox-40-noir-tu",
@@ -9392,7 +9338,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.95,
+        price: 3.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507464&a=3013769&m=65912",
@@ -9698,7 +9644,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.63,
+        price: 7.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930573&a=3013769&m=65912",
@@ -9707,7 +9653,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.17,
+        price: 7.34,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000136630-bande-de-resistance-martes-dark-grey-tu",
@@ -9725,7 +9671,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.8,
+        price: 6.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509160&a=3013769&m=65912",
@@ -9734,7 +9680,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.35,
+        price: 6.51,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000281121-bande-de-resistance-martes-orange-tu",
@@ -9752,7 +9698,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.8,
+        price: 6.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509163&a=3013769&m=65912",
@@ -9761,7 +9707,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.35,
+        price: 6.51,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000293855-bande-de-resistance-martes-powerband-ii-yellow-tu",
@@ -9833,7 +9779,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.45,
+        price: 8.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41662754603&a=3013769&m=65912",
@@ -9842,7 +9788,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.99,
+        price: 8.17,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F86249-multicol-bande-de-resistance-martes-tensileband-multicolore-80x4-cm",
@@ -9860,7 +9806,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.63,
+        price: 7.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509159&a=3013769&m=65912",
@@ -9869,7 +9815,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.17,
+        price: 7.34,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000281120-bande-de-resistance-martes-green-tu",
@@ -9941,7 +9887,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.63,
+        price: 7.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42995719762&a=3013769&m=65912",
@@ -9950,7 +9896,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.17,
+        price: 7.34,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000146098-cone-d-entrainement-martes-termio-multicolour-tu",
@@ -9968,7 +9914,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.02,
+        price: 13.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44761064573&a=3013769&m=65912",
@@ -9977,7 +9923,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.52,
+        price: 12.76,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000146098-cone-d-entrainement-martes-essentials-saridi-multicolore-tu",
@@ -9995,7 +9941,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.63,
+        price: 7.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529932236&a=3013769&m=65912",
@@ -10079,7 +10025,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.93,
+        price: 30.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471632&a=3013769&m=65912",
@@ -10106,7 +10052,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.56,
+        price: 24.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471634&a=3013769&m=65912",
@@ -10133,10 +10079,10 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.31,
+        price: 30.78,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471635&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529471636&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m415131.jpg&feedId=89032&k=88ceada78fa12dcd857ce1a06dbefdbf600b6b26",
         sizes: ["L", "XL"],
       },
@@ -10160,7 +10106,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.49,
+        price: 8.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923981470&a=3013769&m=65912",
@@ -10169,16 +10115,16 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.02,
-        priceMax: 14.9,
+        price: 8.2,
+        priceMax: 15.17,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422103-cone-a-trous-megaform-yellow-30-cm",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/m/e/megaform_m40422100.jpg",
         sizes: ["30 cm", "50 cm"],
         sizePrices: [
-          { size: "30 cm", price: 8.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422103-cone-a-trous-megaform-yellow-30-cm" },
-          { size: "50 cm", price: 14.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422203-cone-a-trous-megaform-jaune-50-cm" },
+          { size: "30 cm", price: 8.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422103-cone-a-trous-megaform-yellow-30-cm" },
+          { size: "50 cm", price: 15.17, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422203-cone-a-trous-megaform-jaune-50-cm" },
         ],
       },
     ],
@@ -10192,7 +10138,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.42,
+        price: 15.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471638&a=3013769&m=65912",
@@ -10210,7 +10156,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.49,
+        price: 8.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923981469&a=3013769&m=65912",
@@ -10219,16 +10165,16 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.02,
-        priceMax: 14.9,
+        price: 8.2,
+        priceMax: 15.17,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422101-cone-a-trous-megaform-blue-30-cm",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/m/e/megaform_m40422100.jpg",
         sizes: ["30 cm", "50 cm"],
         sizePrices: [
-          { size: "30 cm", price: 8.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422101-cone-a-trous-megaform-blue-30-cm" },
-          { size: "50 cm", price: 14.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422201-cone-a-trous-megaform-bleu-50-cm" },
+          { size: "30 cm", price: 8.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422101-cone-a-trous-megaform-blue-30-cm" },
+          { size: "50 cm", price: 15.17, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422201-cone-a-trous-megaform-bleu-50-cm" },
         ],
       },
     ],
@@ -10242,7 +10188,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.42,
+        price: 15.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44365394524&a=3013769&m=65912",
@@ -10260,7 +10206,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.49,
+        price: 8.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471639&a=3013769&m=65912",
@@ -10269,7 +10215,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.02,
+        price: 8.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422100-cone-a-trous-megaform-red-30-cm",
@@ -10287,7 +10233,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.49,
+        price: 8.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471637&a=3013769&m=65912",
@@ -10296,7 +10242,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.02,
+        price: 8.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422102-cone-a-trous-megaform-green-30-cm",
@@ -10314,7 +10260,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.12,
+        price: 3.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471642&a=3013769&m=65912",
@@ -10323,17 +10269,17 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.78,
-        priceMax: 6.17,
+        price: 2.81,
+        priceMax: 6.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404202-cone-de-delimitation-classique-megaform-jaune-23-cm",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/m/e/megaform_m404201.jpg",
         sizes: ["23 cm", "30 cm", "40 cm"],
         sizePrices: [
-          { size: "23 cm", price: 2.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404202-cone-de-delimitation-classique-megaform-jaune-23-cm" },
-          { size: "30 cm", price: 3.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404206-cone-de-delimitation-classique-megaform-yellow-30-cm" },
-          { size: "40 cm", price: 6.17, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404208-cone-de-delimitation-classique-megaform-jaune-yellow-40-cm" },
+          { size: "23 cm", price: 2.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404202-cone-de-delimitation-classique-megaform-jaune-23-cm" },
+          { size: "30 cm", price: 3.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404206-cone-de-delimitation-classique-megaform-yellow-30-cm" },
+          { size: "40 cm", price: 6.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404208-cone-de-delimitation-classique-megaform-jaune-yellow-40-cm" },
         ],
       },
     ],
@@ -10347,7 +10293,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.62,
+        price: 6.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471643&a=3013769&m=65912",
@@ -10365,7 +10311,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.12,
+        price: 4.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471646&a=3013769&m=65912",
@@ -10383,7 +10329,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.62,
+        price: 6.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37950466657&a=3013769&m=65912",
@@ -10401,7 +10347,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.12,
+        price: 4.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471644&a=3013769&m=65912",
@@ -10419,7 +10365,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.12,
+        price: 3.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471645&a=3013769&m=65912",
@@ -10428,17 +10374,17 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.78,
-        priceMax: 6.17,
+        price: 2.81,
+        priceMax: 6.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404201-cone-de-delimitation-classique-megaform-rouge-23-cm",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/m/e/megaform_m404201.jpg",
         sizes: ["23 cm", "30 cm", "40 cm"],
         sizePrices: [
-          { size: "23 cm", price: 2.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404201-cone-de-delimitation-classique-megaform-rouge-23-cm" },
-          { size: "30 cm", price: 3.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404205-cone-de-delimitation-classique-megaform-red-30-cm" },
-          { size: "40 cm", price: 6.17, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404207-cone-de-delimitation-classique-megaform-rouge-red-40-cm" },
+          { size: "23 cm", price: 2.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404201-cone-de-delimitation-classique-megaform-rouge-23-cm" },
+          { size: "30 cm", price: 3.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404205-cone-de-delimitation-classique-megaform-red-30-cm" },
+          { size: "40 cm", price: 6.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404207-cone-de-delimitation-classique-megaform-rouge-red-40-cm" },
         ],
       },
     ],
@@ -10452,7 +10398,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.28,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43087819637&a=3013769&m=65912",
@@ -10470,7 +10416,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.27,
+        price: 5.42,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fwh-2bk-sifflet-mikasa-wh-2bk-noir-tu",
@@ -10491,8 +10437,8 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "mizuno-lot-de-6-chasubles-mizuno-rb-bleu",
     brand: "Mizuno",
-    model: "Lote de 6 petos Mizuno RB - Amarillo",
-    colour: "Amarillo",
+    model: "Lote de 6 petos Mizuno RB - Azul",
+    colour: "Azul",
     type: "petos",
     offers: [
       {
@@ -10501,9 +10447,24 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         priceMax: 42.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42360037688&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p2ea954044_jaune-fluo_1.jpg&feedId=89032&k=1bfd4c2ec0d9b8436e440053d8c117aa46a9493e",
+        url: "https://www.awin1.com/pclick.php?p=42360037687&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p2ea954022_bleu-royal_1.jpg&feedId=89032&k=d1f600c161072248443d562053aa66abbad80282",
         sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 34.02,
+        priceMax: 42.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954022-lot-de-6-chasubles-mizuno-rb-bleu-royal-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p2ea954022_bleu-royal_1.webp",
+        sizes: ["TU"],
+        sizePrices: [
+          { size: "TU", price: 34.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954022-lot-de-6-chasubles-mizuno-rb-bleu-royal-tu" },
+          { size: "TU", price: 34.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954044-lot-de-6-chasubles-mizuno-rb-jaune-fluo-tu" },
+          { size: "TU", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954063-lot-de-6-chasubles-mizuno-rb-rose-fluo-tu" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -10522,21 +10483,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fp2ea954063-lot-de-6-chasubles-mizuno-rb-rose-fluo-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p2ea954063_rose-fluo_1.webp",
         sizes: ["TU"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 34.02,
-        priceMax: 42.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954022-lot-de-6-chasubles-mizuno-rb-bleu-royal-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p2ea954022_bleu-royal_1.webp",
-        sizes: ["TU"],
-        sizePrices: [
-          { size: "TU", price: 34.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954022-lot-de-6-chasubles-mizuno-rb-bleu-royal-tu" },
-          { size: "TU", price: 34.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954044-lot-de-6-chasubles-mizuno-rb-jaune-fluo-tu" },
-          { size: "TU", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2ea954063-lot-de-6-chasubles-mizuno-rb-rose-fluo-tu" },
-        ],
       },
     ],
   },
@@ -10657,7 +10603,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.0,
+        price: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444968416&a=3013769&m=65912",
@@ -10666,7 +10612,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.0,
+        price: 25.0,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcw3845-313-chasuble-nike-u-dynamic-fit-park20-vert-action-noir",
@@ -10753,6 +10699,24 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fn1000749-010-poignet-de-pompe-nike-grip-3-0-black-white-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/1/n1000749-010_0.webp",
         sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "olive-tiburon-o-live-rouge",
+    brand: "Olive",
+    model: "Tiburón O'Live - Rouge",
+    colour: "Rouge",
+    type: "vallas",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 142.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44719157574&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fo%2F-%2Fo-live-k1749-rourge-69fdf0ea7ff90-1.jpg&feedId=89032&k=7dfb4e8284810d9aa2a3d9f6e048efa4234d36df",
+        sizes: ["60x38x73 cm"],
       },
     ],
   },
@@ -11409,7 +11373,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.2,
+        price: 20.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529782024&a=3013769&m=65912",
@@ -11418,7 +11382,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.63,
+        price: 19.96,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-596-cerceau-one-fitness-oha02-hula-hop-pink-tu",
@@ -11436,7 +11400,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.48,
+        price: 9.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530035066&a=3013769&m=65912",
@@ -11445,7 +11409,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.01,
+        price: 9.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-221-bande-de-resistance-slim-one-fitness-pbf-x2-multicolore-tu",
@@ -11463,7 +11427,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.42,
+        price: 5.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529781890&a=3013769&m=65912",
@@ -11472,7 +11436,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.98,
+        price: 5.12,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-200-bande-de-resistance-one-fitness-gt10-noir-0-04x12x120-cm",
@@ -11490,7 +11454,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.36,
+        price: 6.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529781899&a=3013769&m=65912",
@@ -11499,7 +11463,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.91,
+        price: 6.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-099-bandes-elastique-reglable-one-fitness-hb010-gris-tu",
@@ -11517,7 +11481,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.08,
+        price: 37.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45888241830&a=3013769&m=65912",
@@ -11526,7 +11490,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 36.38,
+        price: 36.92,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk8838-materiel-d-entrainement-pedalo-blue-2-8-cm",
@@ -11544,7 +11508,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 160.27,
+        price: 162.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43780404789&a=3013769&m=65912",
@@ -11553,7 +11517,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 158.55,
+        price: 160.66,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fk8899-poignee-de-pompe-a-4-niveaux-pedalo-beige-38x16-6x17-5-cm",
@@ -11598,7 +11562,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 132.93,
+        price: 134.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552705846&a=3013769&m=65912",
@@ -11607,7 +11571,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 131.44,
+        price: 133.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl2768-materiel-d-entrainement-polanik-silver-tu",
@@ -11625,7 +11589,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.59,
+        price: 62.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075022573&a=3013769&m=65912",
@@ -11634,7 +11598,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 60.69,
+        price: 61.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0492-022-materiel-d-entrainement-poolbiking-poolbag-xl-transaparent-rouge-20-l",
@@ -11652,7 +11616,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.59,
+        price: 62.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075022574&a=3013769&m=65912",
@@ -11661,7 +11625,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 60.69,
+        price: 61.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0492-024-materiel-d-entrainement-poolbiking-poolball-transaparent-rouge-15-l",
@@ -11679,7 +11643,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2600.0,
+        price: 2623.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075022571&a=3013769&m=65912",
@@ -11688,7 +11652,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2600.0,
+        price: 2601.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0492-028-materiel-d-entrainement-aquatique-poolbiking-basic-argente-tu",
@@ -11706,7 +11670,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3100.0,
+        price: 3127.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45075022572&a=3013769&m=65912",
@@ -11715,7 +11679,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3100.0,
+        price: 3101.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0492-029-materiel-d-entrainement-aquatique-poolbiking-premium-argente-tu",
@@ -11733,7 +11697,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.96,
+        price: 45.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44927110441&a=3013769&m=65912",
@@ -11742,39 +11706,12 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 44.19,
+        price: 44.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft3065-exerciseur-pour-les-mains-power-web-yellow-38-cm",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/o/power-web_t3065_yellow_1.jpg",
         sizes: ["38 cm"],
-      },
-    ],
-  },
-  {
-    id: "powershot-accesorio-para-porterias-de-futbol-powershot-vise-a-sol-76-amarillo",
-    brand: "Powershot",
-    model: "Accesorio para porterías de fútbol Powershot vise à sol 76% - Amarillo",
-    colour: "Amarillo",
-    type: "porterias",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 50.44,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529519853&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fo%2Fpowershot_fa146_0.jpg&feedId=89032&k=2629bb42eaa346b5da5fc5f7b1e96bd31f16b030",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 49.58,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa146-accessoire-but-de-football-powershot-vise-a-sol-76-jaune-tu",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/o/powershot_fa146_0.jpg",
-        sizes: ["TU"],
       },
     ],
   },
@@ -11841,7 +11778,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.92,
+        price: 6.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43839280469&a=3013769&m=65912",
@@ -11859,7 +11796,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.12,
+        price: 4.25,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093yoy-chasubles-d-entrainement-reversibles-powershot-orange-jaune-tu",
@@ -11886,7 +11823,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906604&a=3013769&m=65912",
@@ -11913,7 +11850,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229037&a=3013769&m=65912",
@@ -11934,17 +11871,17 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "powershot-chasuble-dentrainement-adulte-powershot-bleu",
     brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Rojo",
-    colour: "Rojo",
+    model: "Chaleco de entrenamiento para adultos PowerShot - Azul",
+    colour: "Azul",
     type: "petos",
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923791857&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta921_chasuble-rouge-dos_1.jpg&feedId=89032&k=245c11bfaa0be3b3de23b14b552587b198a0d1f3",
+        url: "https://www.awin1.com/pclick.php?p=40109625401&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta092_chasuble-bleu_1.jpg&feedId=89032&k=151e81b16de152a66f4934cfdcecf22176fb3aeb",
         sizes: [],
       },
       {
@@ -11967,7 +11904,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.5,
+        price: 6.6,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45469967331&a=3013769&m=65912",
@@ -11985,7 +11922,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.51,
+        price: 5.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093yom-chasuble-d-entrainement-reversible-jaune-et-orange-powershot-jaune-orange-m-l",
@@ -12012,7 +11949,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.92,
+        price: 6.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923871566&a=3013769&m=65912",
@@ -12030,7 +11967,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.12,
+        price: 4.25,
         priceMax: 4.98,
         shipping: 6.99,
         currency: "EUR",
@@ -12038,7 +11975,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093bwm_1-0_2.webp",
         sizes: ["M", "XL"],
         sizePrices: [
-          { size: "M", price: 4.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m" },
+          { size: "M", price: 4.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m" },
           { size: "XL", price: 4.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093bwx-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-xl" },
         ],
       },
@@ -12098,7 +12035,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.96,
+        price: 4.66,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta093pgx-chasuble-d-entrainement-reversible-violet-et-vert-powershot-violet-vert-xl-2xl",
@@ -12113,6 +12050,33 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093pgx-chasuble-d-entrainement-reversible-violet-et-vert-powershot-violet-vert-xl-2xl",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093pgy_1.webp",
         sizes: ["XL/2XL"],
+      },
+    ],
+  },
+  {
+    id: "powershot-conos-de-agilidad-con-barras-powershot-x4-negro",
+    brand: "Powershot",
+    model: "Conos de agilidad con barras PowerShot (x4) - Negro",
+    colour: "Negro",
+    type: "conos",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.01,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45177305557&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fi%2Fm%2Fimage_2024_11_19t08_18_07_926z.jpg&feedId=89032&k=9ad2cd93d69ba1fe52269008c099937c21495906",
+        sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 24.37,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta037-cones-d-agilite-avec-barres-powershot-x4-noir-jaune-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/i/m/image_2024_11_19t08_18_07_926z.webp",
+        sizes: ["TU"],
       },
     ],
   },
@@ -12238,6 +12202,33 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta001-echelle-d-agilite-4metres-powershot-jaune-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta001_agility_ladder_4_m_1.webp",
+        sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "powershot-escala-de-agilidad-octogonal-powershot-amarillo",
+    brand: "Powershot",
+    model: "Escala de agilidad octogonal PowerShot - Amarillo",
+    colour: "Amarillo",
+    type: "escaleras",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 33.41,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45983282175&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fs%2Fdsc00165-0_1.jpg&feedId=89032&k=0928d961dc45294ed3444fbc156036dc2283cf9b",
+        sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 32.69,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta215-echelle-d-agilite-octogonale-powershot-jaune-fluo-tu",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/d/s/dsc00165-0_1.jpg",
         sizes: ["TU"],
       },
     ],
@@ -12521,7 +12512,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.77,
+        price: 20.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta018-haies-d-entrainement-foot-30cm-powershot-x5-multicolore-tu",
@@ -12566,7 +12557,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.38,
+        price: 38.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta020-haies-d-agilite-pliables-powershot-x6-jaune-noir-tu",
@@ -12585,24 +12576,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
-    id: "powershot-kit-d-entrainement-d-exterieur-powershot-multicolore",
-    brand: "Powershot",
-    model: "Kit d'entraînement d'extérieur PowerShot - Multicolore",
-    colour: "Multicolore",
-    type: "material",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 100.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta014-kit-d-entrainement-d-exterieur-powershot-multicolore-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta014_outdoor_training_kit.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
     id: "powershot-kit-de-25-implantes-de-marcapasos-powershot-blanco",
     brand: "Powershot",
     model: "Kit de 25 implantes de marcapasos PowerShot - Blanco",
@@ -12611,7 +12584,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.35,
+        price: 39.94,
         priceMax: 41.8,
         shipping: 7.99,
         currency: "EUR",
@@ -12630,7 +12603,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.63,
+        price: 39.2,
         priceMax: 41.01,
         shipping: 6.99,
         currency: "EUR",
@@ -12640,7 +12613,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         sizePrices: [
           { size: "TU", price: 41.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa024o-kit-de-25-implants-pitchmarker-powershot-orange-tu" },
           { size: "TU", price: 41.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa024b-kit-de-25-implants-pitchmarker-powershot-bleu-tu" },
-          { size: "TU", price: 38.63, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa024w-kit-de-25-implants-pitchmarker-powershot-blanc-tu" },
+          { size: "TU", price: 39.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa024w-kit-de-25-implants-pitchmarker-powershot-blanc-tu" },
           { size: "TU", price: 41.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa024y-kit-de-25-implants-pitchmarker-powershot-jaune-tu" },
         ],
       },
@@ -13102,6 +13075,60 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
+    id: "powershot-muro-de-futbol-powershot-amarillo",
+    brand: "Powershot",
+    model: "Muro de fútbol PowerShot - Amarillo",
+    colour: "Amarillo",
+    type: "material",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.76,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43839285516&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta160ybu_0.jpg&feedId=89032&k=4391bdd682ff3bbede504ff495c832137701b8dc",
+        sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.16,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta160ybu-soccer-wall-powershot-jaune-noir-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta160ybu_0.webp",
+        sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "powershot-muro-de-futbol-powershot-azul",
+    brand: "Powershot",
+    model: "Muro de fútbol PowerShot - Azul",
+    colour: "Azul",
+    type: "material",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.76,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45983282268&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta160bwu_1.jpg&feedId=89032&k=7ede9a18f821f490439341888e95018a5a04fa1a",
+        sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.16,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta160bwu-soccer-wall-powershot-bleu-blanc-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta160bwu_1.webp",
+        sizes: ["TU"],
+      },
+    ],
+  },
+  {
     id: "powershot-muro-de-tiro-autobalastrado-powershot-negro",
     brand: "Powershot",
     model: "Muro de tiro autobalastrado Powershot - Negro",
@@ -13272,7 +13299,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.17,
+        price: 4.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471813&a=3013769&m=65912",
@@ -13299,7 +13326,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40249035390&a=3013769&m=65912",
@@ -13326,7 +13353,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906605&a=3013769&m=65912",
@@ -13353,7 +13380,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38794529274&a=3013769&m=65912",
@@ -13371,7 +13398,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229036&a=3013769&m=65912",
@@ -13398,7 +13425,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.89,
+        price: 4.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229038&a=3013769&m=65912",
@@ -13419,8 +13446,8 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "powershot-pintura-de-marcaje-de-campo-powershot-rojo",
     brand: "Powershot",
-    model: "Pintura de marcaje de campo PowerShot - Amarillo",
-    colour: "Amarillo",
+    model: "Pintura de marcaje de campo PowerShot - Rojo",
+    colour: "Rojo",
     type: "marcadores",
     offers: [
       {
@@ -13428,7 +13455,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         price: 113.38,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42528984322&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42528984321&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fa%2Ffa021_fa021_et_fa022_1.jpg&feedId=89032&k=3d7ab41e6ba39dc5d5cf5a0aea1aa192b82bc5ca",
         sizes: [],
       },
@@ -13521,6 +13548,33 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftk073-powercart-equipe-plus-kit-premium-powershot-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/o/powershot-tk073-noir-1.webp",
         sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "powershot-red-de-aluminio-para-minigol-powershot-1-50m-x-1m-blanco",
+    brand: "Powershot",
+    model: "Red de aluminio para minigol Powershot (1,50m x 1m) - Blanco",
+    colour: "Blanco",
+    type: "redes",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 28.63,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45983282376&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fy%2Flynx-sport_fgm18n_0.jpg&feedId=89032&k=c796b271152eab408f2df934d766ad65f477f60a",
+        sizes: ["1.5x1 m"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 27.96,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffgm18n-filet-pour-mini-but-en-aluminiuim-powershot-1-50m-x-1m-blanc-1-5x1-m",
+        imageUrl: "https://cdn.blazimg.com/1800/product/l/y/lynx-sport_fgm18n_0.webp",
+        sizes: ["1.5x1 m"],
       },
     ],
   },
@@ -13810,14 +13864,23 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fy%2Flynx-sport_fn702u_0.jpg&feedId=89032&k=3a00a0f6082d260a5abd5a2ca6ecf89ef0ead540",
         sizes: ["6 x 2.1 m Ø3 mm"],
       },
+    ],
+  },
+  {
+    id: "powershot-red-de-futbol-powershot-blanc",
+    brand: "Powershot",
+    model: "Red de fútbol Powershot - Blanc",
+    colour: "Blanc",
+    type: "redes",
+    offers: [
       {
-        store: "FootStoreFR",
-        price: 45.91,
-        shipping: 6.99,
+        store: "FootStoreES",
+        price: 39.33,
+        shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn702u-filet-de-foot-powershot-6-x-2-1-m-diametre-3-mm-blanc-6-x-2-1-m-o3-mm",
-        imageUrl: "https://cdn.blazimg.com/1800/product/l/y/lynx-sport_fn702u_0.webp",
-        sizes: ["6 x 2.1 m Ø3 mm"],
+        url: "https://www.awin1.com/pclick.php?p=45983288807&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fo%2Fpowershot-fgm05n-blanc-6a9e6ad061eb5-1.jpg&feedId=89032&k=207d083859f540a8595f773ab1e76d44669378e8",
+        sizes: ["5x2 m"],
       },
     ],
   },
@@ -13845,9 +13908,10 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffgm04n-filet-football-powershot-white-3-7x2-m",
         imageUrl: "https://cdn.blazimg.com/1800/product/l/y/lynx-sport_fgm04n_0.webp",
-        sizes: ["3.7x2 m", "6x2.1 m", "7.32x2.44 m"],
+        sizes: ["3.7x2 m", "5x2 m", "6x2.1 m", "7.32x2.44 m"],
         sizePrices: [
           { size: "3.7x2 m", price: 31.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffgm04n-filet-football-powershot-white-3-7x2-m" },
+          { size: "5x2 m", price: 38.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffgm05n-filet-football-powershot-blanc-5x2-m" },
           { size: "6x2.1 m", price: 45.91, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn702rwu-filet-football-powershot-blanc-rouge-6x2-1-m" },
           { size: "7.32x2.44 m", price: 71.61, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffn1109u-filet-football-powershot-blanc-bleu-7-32x2-44-m" },
         ],
@@ -13976,7 +14040,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.08,
+        price: 6.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41368853553&a=3013769&m=65912",
@@ -14219,7 +14283,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.98,
+        price: 21.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802468&a=3013769&m=65912",
@@ -14237,7 +14301,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.41,
+        price: 20.75,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta225-haie-souple-30-cm-powershot-bleu-tu",
@@ -14471,7 +14535,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.98,
+        price: 4.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40082064101&a=3013769&m=65912",
@@ -14480,7 +14544,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.56,
+        price: 3.68,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fedb026y-attrape-gobelet-et-balle-pre-sport-yellow-tu",
@@ -14498,7 +14562,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.98,
+        price: 4.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529617962&a=3013769&m=65912",
@@ -14507,7 +14571,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.56,
+        price: 3.68,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fedb026p-attrape-gobelet-et-balle-pre-sport-purple-tu",
@@ -14687,7 +14751,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.12,
+        price: 5.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717959814&a=3013769&m=65912",
@@ -14706,6 +14770,24 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
+    id: "precision-accesorio-para-porterias-de-futbol-precision-match-gris-2",
+    brand: "Precision",
+    model: "Accesorio para porterías de fútbol Precision Match - Gris",
+    colour: "Gris",
+    type: "porterias",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 5.27,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163887358&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trg3ccon_grey_1.jpg&feedId=89032&k=c9fcb64e31f42a231c2fbdeb8fb67ea3c559b15b",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "precision-accesorio-para-porterias-de-futbol-precision-match-top-elbow-gris",
     brand: "Precision",
     model: "Accesorio para porterías de fútbol Precision Match Top Elbow - Gris",
@@ -14714,7 +14796,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.68,
+        price: 5.84,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930529&a=3013769&m=65912",
@@ -14723,7 +14805,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.24,
+        price: 5.39,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrg3telb-accessoire-but-de-football-precision-match-top-elbow-gris-tu",
@@ -14840,6 +14922,9 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk4: TrainingProduct[] = [
   {
     id: "precision-bomba-precision-stirrup-plateado",
     brand: "Precision",
@@ -15002,9 +15087,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk4: TrainingProduct[] = [
   {
     id: "precision-conjunto-de-conos-de-entrenamiento-de-agilidad-y-velocidad-precision-rojo",
     brand: "Precision",
@@ -15068,7 +15150,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.48,
+        price: 5.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645397&a=3013769&m=65912",
@@ -15077,7 +15159,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.04,
+        price: 5.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr315y-cone-d-entrainement-soucoupe-avec-manches-precision-x10-yellow-tu",
@@ -15095,7 +15177,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.48,
+        price: 5.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40345951110&a=3013769&m=65912",
@@ -15104,7 +15186,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.04,
+        price: 5.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr315r-cone-d-entrainement-soucoupe-avec-manches-precision-x10-blue-tu",
@@ -15122,7 +15204,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.48,
+        price: 5.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645396&a=3013769&m=65912",
@@ -15131,7 +15213,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.04,
+        price: 5.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr315w-cone-d-entrainement-soucoupe-avec-manches-precision-x10-white-tu",
@@ -15149,7 +15231,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.48,
+        price: 5.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41981191310&a=3013769&m=65912",
@@ -15158,7 +15240,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.04,
+        price: 5.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr315o-cone-d-entrainement-soucoupe-avec-manches-precision-x10-orange-tu",
@@ -15176,7 +15258,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.48,
+        price: 5.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40345951111&a=3013769&m=65912",
@@ -15185,7 +15267,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.04,
+        price: 5.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr315s-cone-d-entrainement-soucoupe-avec-manches-precision-x10-red-tu",
@@ -15284,7 +15366,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.82,
+        price: 6.99,
         priceMax: 15.77,
         shipping: 7.99,
         currency: "EUR",
@@ -15292,14 +15374,14 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_tr565_orange_1.jpg&feedId=89032&k=42558455965560dd2289464996a5bc6c908178bc",
         sizes: ["23 cm", "31 cm", "38 cm"],
         sizePrices: [
-          { size: "23 cm", price: 11.0, url: "https://www.awin1.com/pclick.php?p=42529645393&a=3013769&m=65912" },
+          { size: "23 cm", price: 11.07, url: "https://www.awin1.com/pclick.php?p=42529645393&a=3013769&m=65912" },
           { size: "31 cm", price: 15.77, url: "https://www.awin1.com/pclick.php?p=42529645394&a=3013769&m=65912" },
-          { size: "38 cm", price: 6.82, url: "https://www.awin1.com/pclick.php?p=42529645395&a=3013769&m=65912" },
+          { size: "38 cm", price: 6.99, url: "https://www.awin1.com/pclick.php?p=42529645395&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 6.37,
+        price: 6.53,
         priceMax: 15.2,
         shipping: 6.99,
         currency: "EUR",
@@ -15309,7 +15391,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         sizePrices: [
           { size: "23 cm", price: 11.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr701-cone-d-entrainement-pliables-precision-x4-orange" },
           { size: "31 cm", price: 15.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr701-cone-d-entrainement-pliables-precision-x4-orange" },
-          { size: "38 cm", price: 6.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr701-cone-d-entrainement-pliables-precision-x4-orange" },
+          { size: "38 cm", price: 6.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr701-cone-d-entrainement-pliables-precision-x4-orange" },
         ],
       },
     ],
@@ -15539,7 +15621,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 155.24,
+        price: 157.32,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529932225&a=3013769&m=65912",
@@ -15557,7 +15639,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 153.57,
+        price: 155.61,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr717-materiel-d-entrainement-precision-ultimate-speed-jaune-tu",
@@ -16175,7 +16257,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.12,
+        price: 16.81,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr652-mini-cone-d-entrainement-precision-pro-x60-multicolore-12-5-cm",
@@ -16202,7 +16284,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713864&a=3013769&m=65912",
@@ -16229,7 +16311,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713869&a=3013769&m=65912",
@@ -16256,7 +16338,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43021947632&a=3013769&m=65912",
@@ -16274,7 +16356,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713870&a=3013769&m=65912",
@@ -16301,7 +16383,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.61,
+        price: 8.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645224&a=3013769&m=65912",
@@ -16328,7 +16410,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.61,
+        price: 8.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645225&a=3013769&m=65912",
@@ -16346,7 +16428,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.61,
+        price: 8.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645226&a=3013769&m=65912",
@@ -16364,7 +16446,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713863&a=3013769&m=65912",
@@ -16391,7 +16473,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713868&a=3013769&m=65912",
@@ -16418,7 +16500,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713866&a=3013769&m=65912",
@@ -16445,7 +16527,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713865&a=3013769&m=65912",
@@ -16472,7 +16554,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713867&a=3013769&m=65912",
@@ -16580,7 +16662,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.6,
+        price: 6.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529932227&a=3013769&m=65912",
@@ -16589,7 +16671,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.15,
+        price: 6.31,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrg400f-pieces-de-rechange-pour-buts-en-acier-precision-x10-blanc-tu",
@@ -16784,7 +16866,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 41.07,
         priceMax: 55.0,
         shipping: 7.99,
         currency: "EUR",
@@ -16792,7 +16874,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trg310net_blanc_1.jpg&feedId=89032&k=d81fb3215963eb0ca621982623a1439add873102",
         sizes: ["153x92 cm", "244x122 cm"],
         sizePrices: [
-          { size: "153x92 cm", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529646149&a=3013769&m=65912" },
+          { size: "153x92 cm", price: 41.07, url: "https://www.awin1.com/pclick.php?p=42529646149&a=3013769&m=65912" },
           { size: "244x122 cm", price: 55.0, url: "https://www.awin1.com/pclick.php?p=43994224730&a=3013769&m=65912" },
         ],
       },
@@ -16903,14 +16985,15 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.44,
+        price: 76.98,
         priceMax: 122.09,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643569&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trn4112_white_1.jpg&feedId=89032&k=36c9819b7eb1f80d4f20bab02b6f88028ad1e821",
-        sizes: ["487.68x213.36 cm", "640.08x213.36 cm", "731.52x243.84 cm"],
+        url: "https://www.awin1.com/pclick.php?p=46163917515&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trn4112_white_1.jpg&feedId=89032&k=22411311574b3d72dd01dd78199035402d2255ef",
+        sizes: ["365.76x182.88 cm", "487.68x213.36 cm", "640.08x213.36 cm", "731.52x243.84 cm"],
         sizePrices: [
+          { size: "365.76x182.88 cm", price: 76.98, url: "https://www.awin1.com/pclick.php?p=46163917515&a=3013769&m=65912" },
           { size: "487.68x213.36 cm", price: 95.44, url: "https://www.awin1.com/pclick.php?p=42529643569&a=3013769&m=65912" },
           { size: "640.08x213.36 cm", price: 108.93, url: "https://www.awin1.com/pclick.php?p=42529643566&a=3013769&m=65912" },
           { size: "731.52x243.84 cm", price: 122.09, url: "https://www.awin1.com/pclick.php?p=42529643567&a=3013769&m=65912" },
@@ -16918,14 +17001,15 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 94.21,
+        price: 75.9,
         priceMax: 120.64,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrn4121-filet-de-but-de-football-precision-x2-white",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_trn4112_white_1.jpg",
-        sizes: ["487.68x213.36 cm", "640.08x213.36 cm", "731.52x243.84 cm"],
+        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_trn4112_white_1.webp",
+        sizes: ["365.76x182.88 cm", "487.68x213.36 cm", "640.08x213.36 cm", "731.52x243.84 cm"],
         sizePrices: [
+          { size: "365.76x182.88 cm", price: 75.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrn4121-filet-de-but-de-football-precision-x2-white" },
           { size: "487.68x213.36 cm", price: 94.21, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrn4121-filet-de-but-de-football-precision-x2-white" },
           { size: "640.08x213.36 cm", price: 107.59, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrn4121-filet-de-but-de-football-precision-x2-white" },
           { size: "731.52x243.84 cm", price: 120.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftrn4121-filet-de-but-de-football-precision-x2-white" },
@@ -17346,7 +17430,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638329&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45795638330&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-660717-30-6a8e10fd2a67d-1.jpg&feedId=89032&k=a6ad07dc029359d3eac667258b48aad2a8dd965e",
         sizes: ["S", "XL"],
       },
@@ -17373,7 +17457,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638331&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45795638332&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-660717-46-6a8e11041ecb4-1.jpg&feedId=89032&k=0658015517591e9d593349c876c25d0e53ab6533",
         sizes: ["S", "XL"],
       },
@@ -17400,7 +17484,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638334&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45795638333&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-660717-29-6a8e10f533a3d-1.jpg&feedId=89032&k=8d0e88692dc3d045ee3cdabf084a00f40aff4f2f",
         sizes: ["S", "XL"],
       },
@@ -17424,7 +17508,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.13,
+        price: 10.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529427064&a=3013769&m=65912",
@@ -17451,7 +17535,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.23,
+        price: 8.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903596&a=3013769&m=65912",
@@ -17586,7 +17670,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.13,
+        price: 10.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903647&a=3013769&m=65912",
@@ -17613,7 +17697,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.13,
+        price: 10.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903650&a=3013769&m=65912",
@@ -17825,7 +17909,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104833091&a=3013769&m=65912",
@@ -17852,7 +17936,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.99,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529503043&a=3013769&m=65912",
@@ -17879,7 +17963,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.99,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529501545&a=3013769&m=65912",
@@ -17906,7 +17990,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.99,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529501548&a=3013769&m=65912",
@@ -17933,7 +18017,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.99,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529503042&a=3013769&m=65912",
@@ -18170,7 +18254,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 4.4,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41736203353&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39041451408&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fb%2Fi%2Fbib_basic_select_royalblue-500x500.jpg&feedId=89032&k=4a7c1631361ace0052b612ce21b833bd6ac41872",
         sizes: ["Junior", "Talla 0", "2XL"],
       },
@@ -18215,8 +18299,8 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
   {
     id: "select-peto-select-bib-basic-rojo",
     brand: "Select",
-    model: "Peto Select Bib Basic - Rojo",
-    colour: "Rojo",
+    model: "Peto Select Bib Basic - Violeta",
+    colour: "Violeta",
     type: "petos",
     offers: [
       {
@@ -18224,8 +18308,8 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 4.4,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923867795&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fb%2Fi%2Fbib_basic_select_bordeaux-500x500.jpg&feedId=89032&k=36190ba1dc5aff7697917206ba4ac7af2ff8842d",
+        url: "https://www.awin1.com/pclick.php?p=37923867796&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fb%2Fi%2Fbib_basic_select_purple-500x500.jpg&feedId=89032&k=fd5e90290a9c77f84148a608f593b40be003caf2",
         sizes: ["Adulte"],
       },
       {
@@ -18473,7 +18557,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 167.51,
+        price: 169.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857898&a=3013769&m=65912",
@@ -18491,7 +18575,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 136.95,
+        price: 138.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857899&a=3013769&m=65912",
@@ -18500,17 +18584,17 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 135.42,
-        priceMax: 207.19,
+        price: 137.24,
+        priceMax: 209.93,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7002-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-yellow-16x20-m",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/soccer-place_f7000_blanc-orange-jaune_1.webp",
         sizes: ["16x20 m", "20x26 m"],
         sizePrices: [
-          { size: "16x20 m", price: 135.42, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7002-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-yellow-16x20-m" },
-          { size: "20x26 m", price: 165.73, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7000-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-jaune-20x26-m" },
-          { size: "20x26 m", price: 207.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7001-marquage-de-terrain-2-contre-2-soccer-place-white-orange-jaune-20x26-m" },
+          { size: "16x20 m", price: 137.24, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7002-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-yellow-16x20-m" },
+          { size: "20x26 m", price: 167.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7000-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-jaune-20x26-m" },
+          { size: "20x26 m", price: 209.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7001-marquage-de-terrain-2-contre-2-soccer-place-white-orange-jaune-20x26-m" },
         ],
       },
     ],
@@ -18524,7 +18608,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 209.32,
+        price: 212.09,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857900&a=3013769&m=65912",
@@ -18542,32 +18626,32 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 189.15,
-        priceMax: 246.73,
+        price: 191.65,
+        priceMax: 249.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688485&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsodex-sport_s12922kl_noir_1.jpg&feedId=89032&k=16e3e8c399d4bf020e9d1a0841dc0d97a335cbbf",
         sizes: ["7.5x2.5x0.8x2.0 m", "7.5x2.5x2.0x2.0 m"],
         sizePrices: [
-          { size: "7.5x2.5x0.8x2.0 m", price: 246.73, url: "https://www.awin1.com/pclick.php?p=42529688489&a=3013769&m=65912" },
-          { size: "7.5x2.5x0.8x2.0 m", price: 189.15, url: "https://www.awin1.com/pclick.php?p=42529688485&a=3013769&m=65912" },
-          { size: "7.5x2.5x2.0x2.0 m", price: 206.16, url: "https://www.awin1.com/pclick.php?p=42529688488&a=3013769&m=65912" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 249.97, url: "https://www.awin1.com/pclick.php?p=42529688489&a=3013769&m=65912" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 191.65, url: "https://www.awin1.com/pclick.php?p=42529688485&a=3013769&m=65912" },
+          { size: "7.5x2.5x2.0x2.0 m", price: 208.89, url: "https://www.awin1.com/pclick.php?p=42529688488&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 187.19,
-        priceMax: 244.29,
+        price: 189.67,
+        priceMax: 247.5,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/sodex-sport_s12922kl_noir_1.webp",
         sizes: ["7.5x2.5x0.8x2.0 m", "7.5x2.5x2.0x2.0 m"],
         sizePrices: [
-          { size: "7.5x2.5x0.8x2.0 m", price: 187.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir" },
-          { size: "7.5x2.5x0.8x2.0 m", price: 244.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir" },
-          { size: "7.5x2.5x2.0x2.0 m", price: 204.06, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 189.67, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 247.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir" },
+          { size: "7.5x2.5x2.0x2.0 m", price: 206.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923kl-filets-de-foot-a-11-tpp-sodex-sport-noir" },
         ],
       },
     ],
@@ -18581,30 +18665,30 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 136.5,
-        priceMax: 170.78,
+        price: 138.33,
+        priceMax: 173.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688486&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsodex-sport_s12862kl_noir_1.jpg&feedId=89032&k=f5e7272649a7e34ae4ae208e53fe51f1d2d4cdb6",
         sizes: ["7.44x2.52x0.84x2.04 m", "7.44x2.52x2.04x2.04 m"],
         sizePrices: [
-          { size: "7.44x2.52x0.84x2.04 m", price: 136.5, url: "https://www.awin1.com/pclick.php?p=42529688486&a=3013769&m=65912" },
-          { size: "7.44x2.52x2.04x2.04 m", price: 170.78, url: "https://www.awin1.com/pclick.php?p=42529688487&a=3013769&m=65912" },
+          { size: "7.44x2.52x0.84x2.04 m", price: 138.33, url: "https://www.awin1.com/pclick.php?p=42529688486&a=3013769&m=65912" },
+          { size: "7.44x2.52x2.04x2.04 m", price: 173.05, url: "https://www.awin1.com/pclick.php?p=42529688487&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 134.98,
-        priceMax: 168.97,
+        price: 136.78,
+        priceMax: 171.21,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862kl-filets-de-foot-a-11-tpp-sans-noeud-sodex-sport-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/o/sodex-sport_s12862kl_noir_1.jpg",
         sizes: ["7.44x2.52x0.84x2.04 m", "7.44x2.52x2.04x2.04 m"],
         sizePrices: [
-          { size: "7.44x2.52x0.84x2.04 m", price: 134.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862kl-filets-de-foot-a-11-tpp-sans-noeud-sodex-sport-noir" },
-          { size: "7.44x2.52x2.04x2.04 m", price: 168.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862kl-filets-de-foot-a-11-tpp-sans-noeud-sodex-sport-noir" },
+          { size: "7.44x2.52x0.84x2.04 m", price: 136.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862kl-filets-de-foot-a-11-tpp-sans-noeud-sodex-sport-noir" },
+          { size: "7.44x2.52x2.04x2.04 m", price: 171.21, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862kl-filets-de-foot-a-11-tpp-sans-noeud-sodex-sport-noir" },
         ],
       },
     ],
@@ -18618,7 +18702,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 151.91,
+        price: 153.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688492&a=3013769&m=65912",
@@ -18627,7 +18711,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 150.26,
+        price: 152.26,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12782-filets-de-foot-a-8-tpe-maille-simple-sodex-sport-vert-6-0x2-1x0-8x1-5-m",
@@ -18645,7 +18729,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 64.0,
+        price: 64.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39382737806&a=3013769&m=65912",
@@ -18654,7 +18738,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 63.08,
+        price: 63.96,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12730-filets-de-foot-a-8-cpe-en-polyethylene-sodex-sport-noir-6-0x2-1x0-8x1-6-m",
@@ -18672,7 +18756,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 109.25,
+        price: 110.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688500&a=3013769&m=65912",
@@ -18681,7 +18765,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 107.95,
+        price: 109.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762kl-filets-de-foot-a-8-tpp-sans-noeud-sodex-sport-noir-6-0x2-1x0-8x1-5-m",
@@ -18699,7 +18783,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 69.85,
+        price: 70.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529772045&a=3013769&m=65912",
@@ -18708,7 +18792,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 68.88,
+        price: 69.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12598-accessoire-but-de-football-sodex-sport-dore-120x100-mm",
@@ -18771,7 +18855,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 1447.89,
+        price: 1466.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688537&a=3013769&m=65912",
@@ -18780,7 +18864,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 1435.53,
+        price: 1454.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12631-relevages-filet-premium-en-aluminium-pour-1-paire-de-buts-a-11-en-aluminium-sodex-sport-blanc-7-5x2-m",
@@ -18798,7 +18882,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 271.35,
+        price: 274.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529772055&a=3013769&m=65912",
@@ -18807,7 +18891,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 268.71,
+        price: 272.24,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12963kl-filets-de-foot-a-11-sodex-sport-noir-120-mm",
@@ -18825,7 +18909,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 189.76,
+        price: 192.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688517&a=3013769&m=65912",
@@ -18834,7 +18918,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 187.8,
+        price: 190.29,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12540-25-implants-pour-marquage-sodex-sport-noir-tu",
@@ -18852,7 +18936,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 65.36,
+        price: 66.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688503&a=3013769&m=65912",
@@ -18861,7 +18945,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 64.42,
+        price: 65.32,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12708w-filets-pour-mini-but-sodex-sport-145-mm-blanc-3-19x2-03x0-87x1-01-m",
@@ -18924,7 +19008,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 144.76,
+        price: 146.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688469&a=3013769&m=65912",
@@ -18933,7 +19017,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 143.17,
+        price: 145.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12820-filets-de-foot-a-11-cpe-sodex-sport-blanc-7-5x2-6x0-8x2-0-m",
@@ -18951,7 +19035,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 214.79,
+        price: 217.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688470&a=3013769&m=65912",
@@ -18960,7 +19044,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 212.62,
+        price: 215.43,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12822-filets-de-foot-a-11-cpe-sodex-sport-noir-7-5x2-6x0-8x2-0-m",
@@ -18978,30 +19062,30 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 290.5,
-        priceMax: 365.22,
+        price: 294.3,
+        priceMax: 369.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688471&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsodex-sport_s12921tri_multicolore_1.jpg&feedId=89032&k=721eb530143172b7770c14bd540f23611112bea5",
         sizes: ["7.50x2.50x2.00x2.00 m", "7.5x2.6x2.0x2.0 m"],
         sizePrices: [
-          { size: "7.50x2.50x2.00x2.00 m", price: 290.5, url: "https://www.awin1.com/pclick.php?p=42529688471&a=3013769&m=65912" },
-          { size: "7.5x2.6x2.0x2.0 m", price: 365.22, url: "https://www.awin1.com/pclick.php?p=42529688472&a=3013769&m=65912" },
+          { size: "7.50x2.50x2.00x2.00 m", price: 294.3, url: "https://www.awin1.com/pclick.php?p=42529688471&a=3013769&m=65912" },
+          { size: "7.5x2.6x2.0x2.0 m", price: 369.98, url: "https://www.awin1.com/pclick.php?p=42529688472&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 287.7,
-        priceMax: 361.8,
+        price: 291.47,
+        priceMax: 366.52,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923bi-filets-de-foot-a-11-tpe-sodex-sport-multicolore",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/o/sodex-sport_s12921tri_multicolore_1.jpg",
         sizes: ["7.50x2.50x2.00x2.00 m", "7.5x2.6x2.0x2.0 m"],
         sizePrices: [
-          { size: "7.50x2.50x2.00x2.00 m", price: 287.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923bi-filets-de-foot-a-11-tpe-sodex-sport-multicolore" },
-          { size: "7.5x2.6x2.0x2.0 m", price: 361.8, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923bi-filets-de-foot-a-11-tpe-sodex-sport-multicolore" },
+          { size: "7.50x2.50x2.00x2.00 m", price: 291.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923bi-filets-de-foot-a-11-tpe-sodex-sport-multicolore" },
+          { size: "7.5x2.6x2.0x2.0 m", price: 366.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923bi-filets-de-foot-a-11-tpe-sodex-sport-multicolore" },
         ],
       },
     ],
@@ -19015,7 +19099,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 127.62,
+        price: 129.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688473&a=3013769&m=65912",
@@ -19024,26 +19108,26 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 126.17,
-        priceMax: 316.07,
+        price: 127.87,
+        priceMax: 320.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12860-filets-de-foot-a-11-tpe-sodex-sport-noir-7-50x2-50x0-8-m",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/sodex-sport_s12860_noir_1.webp",
         sizes: ["2.5x7.5x0.8 m", "2.5x7.5x2 m", "7.50x2.50x0.8 m", "7.50x2.50x2.00 m", "7.50x2.50x2.00x2.00 m", "7.5x2.5x0.8x2.0 m", "7.5x2.5x2.0x2.0 m", "7.5x2.6x0.8x2.0 m", "7.5x2.6x2 m", "7.5x2.6x2.0 m", "7.5x2.6x2.0x2.0 m"],
         sizePrices: [
-          { size: "2.5x7.5x0.8 m", price: 141.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862-filets-de-foot-a-11-tpe-sodex-sport-noir-black-2-5x7-5x0-8-m" },
-          { size: "2.5x7.5x2 m", price: 181.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12863-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-black-2-5x7-5x2-m" },
-          { size: "7.50x2.50x0.8 m", price: 126.17, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12860-filets-de-foot-a-11-tpe-sodex-sport-noir-7-50x2-50x0-8-m" },
-          { size: "7.50x2.50x2.00 m", price: 190.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12863rc-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-noir-noir-7-50x2-50x2-00-m" },
-          { size: "7.50x2.50x2.00x2.00 m", price: 316.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12924-filets-de-foot-a-11-tpe-sodex-sport-noir-black-black-black-7-50x2-50x2-00x2-00-m" },
-          { size: "7.5x2.5x0.8x2.0 m", price: 141.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12869-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-7-5x2-5x0-8x2-0-m" },
-          { size: "7.5x2.5x0.8x2.0 m", price: 232.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12922-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-black-black-7-5x2-5x0-8x2-0-m" },
-          { size: "7.5x2.5x2.0x2.0 m", price: 258.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923-filets-de-foot-a-11-tpe-sodex-sport-noir-black-noir-black-7-5x2-5x2-0x2-0-m" },
-          { size: "7.5x2.6x0.8x2.0 m", price: 181.56, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12920-filets-de-foot-a-11-tpe-sodex-sport-noir-black-noir-7-5x2-6x0-8x2-0-m" },
-          { size: "7.5x2.6x2 m", price: 145.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12861-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-noir-7-5x2-6x2-m" },
-          { size: "7.5x2.6x2.0 m", price: 152.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12861rc-filets-de-foot-a-11-tpe-sodex-sport-noir-black-black-7-5x2-6x2-0-m" },
-          { size: "7.5x2.6x2.0x2.0 m", price: 229.13, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12921-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-noir-black-7-5x2-6x2-0x2-0-m" },
+          { size: "2.5x7.5x0.8 m", price: 143.84, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12862-filets-de-foot-a-11-tpe-sodex-sport-noir-black-2-5x7-5x0-8-m" },
+          { size: "2.5x7.5x2 m", price: 183.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12863-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-black-2-5x7-5x2-m" },
+          { size: "7.50x2.50x0.8 m", price: 127.87, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12860-filets-de-foot-a-11-tpe-sodex-sport-noir-7-50x2-50x0-8-m" },
+          { size: "7.50x2.50x2.00 m", price: 192.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12863rc-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-noir-noir-7-50x2-50x2-00-m" },
+          { size: "7.50x2.50x2.00x2.00 m", price: 320.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12924-filets-de-foot-a-11-tpe-sodex-sport-noir-black-black-black-7-50x2-50x2-00x2-00-m" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 143.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12869-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-7-5x2-5x0-8x2-0-m" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 235.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12922-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-black-black-7-5x2-5x0-8x2-0-m" },
+          { size: "7.5x2.5x2.0x2.0 m", price: 261.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12923-filets-de-foot-a-11-tpe-sodex-sport-noir-black-noir-black-7-5x2-5x2-0x2-0-m" },
+          { size: "7.5x2.6x0.8x2.0 m", price: 183.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12920-filets-de-foot-a-11-tpe-sodex-sport-noir-black-noir-7-5x2-6x0-8x2-0-m" },
+          { size: "7.5x2.6x2 m", price: 147.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12861-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-noir-7-5x2-6x2-m" },
+          { size: "7.5x2.6x2.0 m", price: 154.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12861rc-filets-de-foot-a-11-tpe-sodex-sport-noir-black-black-7-5x2-6x2-0-m" },
+          { size: "7.5x2.6x2.0x2.0 m", price: 232.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12921-filets-de-foot-a-11-tpe-sodex-sport-noir-noir-noir-black-7-5x2-6x2-0x2-0-m" },
         ],
       },
     ],
@@ -19057,7 +19141,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 143.53,
+        price: 145.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688474&a=3013769&m=65912",
@@ -19075,7 +19159,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 154.13,
+        price: 156.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688475&a=3013769&m=65912",
@@ -19093,7 +19177,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 319.1,
+        price: 323.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688476&a=3013769&m=65912",
@@ -19111,7 +19195,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 183.47,
+        price: 185.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688477&a=3013769&m=65912",
@@ -19129,7 +19213,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 261.15,
+        price: 264.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688478&a=3013769&m=65912",
@@ -19147,7 +19231,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 143.4,
+        price: 145.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688479&a=3013769&m=65912",
@@ -19165,7 +19249,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 183.35,
+        price: 185.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688480&a=3013769&m=65912",
@@ -19183,7 +19267,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 234.4,
+        price: 237.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688481&a=3013769&m=65912",
@@ -19201,7 +19285,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 146.86,
+        price: 148.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688482&a=3013769&m=65912",
@@ -19219,7 +19303,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 231.44,
+        price: 234.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688483&a=3013769&m=65912",
@@ -19237,7 +19321,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 192.35,
+        price: 194.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688484&a=3013769&m=65912",
@@ -19255,7 +19339,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 102.72,
+        price: 104.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688490&a=3013769&m=65912",
@@ -19264,7 +19348,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 101.47,
+        price: 102.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12740-filets-de-foot-a-8-cpe-sodex-sport-noir-6-0x2-1x0-8x1-6-m",
@@ -19282,38 +19366,38 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 80.64,
-        priceMax: 141.8,
+        price: 81.76,
+        priceMax: 143.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688495&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsodex-sport_s12759_noir_1.jpg&feedId=89032&k=b189412b139c1c1d8c1aff7e313ce670a8282b96",
         sizes: ["6.0x2.0x0.6x1.6 m", "6.0x2.0x1.5 m", "6.0x2.1x0.5x1.6 m", "6.0x2.1x0.8x1.5 m.", "6.0x2.1x0.8x1.6 m", "6.0x2.1x1.6 m"],
         sizePrices: [
-          { size: "6.0x2.0x0.6x1.6 m", price: 98.89, url: "https://www.awin1.com/pclick.php?p=42529688498&a=3013769&m=65912" },
-          { size: "6.0x2.0x1.5 m", price: 80.64, url: "https://www.awin1.com/pclick.php?p=42529688495&a=3013769&m=65912" },
-          { size: "6.0x2.1x0.5x1.6 m", price: 86.07, url: "https://www.awin1.com/pclick.php?p=42529688497&a=3013769&m=65912" },
-          { size: "6.0x2.1x0.8x1.5 m.", price: 122.81, url: "https://www.awin1.com/pclick.php?p=42529688493&a=3013769&m=65912" },
-          { size: "6.0x2.1x0.8x1.6 m", price: 141.8, url: "https://www.awin1.com/pclick.php?p=42529688494&a=3013769&m=65912" },
-          { size: "6.0x2.1x1.6 m", price: 81.26, url: "https://www.awin1.com/pclick.php?p=42529688496&a=3013769&m=65912" },
+          { size: "6.0x2.0x0.6x1.6 m", price: 100.24, url: "https://www.awin1.com/pclick.php?p=42529688498&a=3013769&m=65912" },
+          { size: "6.0x2.0x1.5 m", price: 81.76, url: "https://www.awin1.com/pclick.php?p=42529688495&a=3013769&m=65912" },
+          { size: "6.0x2.1x0.5x1.6 m", price: 87.26, url: "https://www.awin1.com/pclick.php?p=42529688497&a=3013769&m=65912" },
+          { size: "6.0x2.1x0.8x1.5 m.", price: 124.47, url: "https://www.awin1.com/pclick.php?p=42529688493&a=3013769&m=65912" },
+          { size: "6.0x2.1x0.8x1.6 m", price: 143.7, url: "https://www.awin1.com/pclick.php?p=42529688494&a=3013769&m=65912" },
+          { size: "6.0x2.1x1.6 m", price: 82.39, url: "https://www.awin1.com/pclick.php?p=42529688496&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 79.58,
-        priceMax: 140.23,
+        price: 80.68,
+        priceMax: 142.11,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/o/sodex-sport_s12759_noir_1.jpg",
         sizes: ["6.0x2.0x0.6x1.6 m", "6.0x2.0x1.5 m", "6.0x2.1x0.5x1.6 m", "6.0x2.1x0.8x1.5 m.", "6.0x2.1x0.8x1.6 m", "6.0x2.1x1.6 m"],
         sizePrices: [
-          { size: "6.0x2.0x0.6x1.6 m", price: 97.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
-          { size: "6.0x2.0x1.5 m", price: 79.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
-          { size: "6.0x2.1x0.5x1.6 m", price: 84.96, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
-          { size: "6.0x2.1x0.8x1.5 m.", price: 121.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
-          { size: "6.0x2.1x0.8x1.6 m", price: 140.23, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
-          { size: "6.0x2.1x1.6 m", price: 80.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
+          { size: "6.0x2.0x0.6x1.6 m", price: 99.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
+          { size: "6.0x2.0x1.5 m", price: 80.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
+          { size: "6.0x2.1x0.5x1.6 m", price: 86.13, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
+          { size: "6.0x2.1x0.8x1.5 m.", price: 123.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
+          { size: "6.0x2.1x0.8x1.6 m", price: 142.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
+          { size: "6.0x2.1x1.6 m", price: 81.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762rc-filets-de-foot-a-8-tpe-sodex-sport-noir" },
         ],
       },
     ],
@@ -19327,7 +19411,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 117.02,
+        price: 118.6,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688499&a=3013769&m=65912",
@@ -19336,7 +19420,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 115.66,
+        price: 117.22,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12762-filets-de-foot-a-8-tpe-sodex-sport-vert-6-0x2-1x0-8x1-5-m",
@@ -19354,30 +19438,30 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 125.4,
-        priceMax: 171.76,
+        price: 127.09,
+        priceMax: 174.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688501&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsodex-sport_s12781kl_noir_1.jpg&feedId=89032&k=6f86f3a555f359d9dfa30bcc4c8146d916f5feeb",
         sizes: ["6.0x2.0x0.8x1.5 m", "6.0x2.1x0.8x1.6 m"],
         sizePrices: [
-          { size: "6.0x2.0x0.8x1.5 m", price: 171.76, url: "https://www.awin1.com/pclick.php?p=42529688502&a=3013769&m=65912" },
-          { size: "6.0x2.1x0.8x1.6 m", price: 125.4, url: "https://www.awin1.com/pclick.php?p=42529688501&a=3013769&m=65912" },
+          { size: "6.0x2.0x0.8x1.5 m", price: 174.05, url: "https://www.awin1.com/pclick.php?p=42529688502&a=3013769&m=65912" },
+          { size: "6.0x2.1x0.8x1.6 m", price: 127.09, url: "https://www.awin1.com/pclick.php?p=42529688501&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 123.97,
-        priceMax: 169.95,
+        price: 125.64,
+        priceMax: 172.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12782kl-filets-de-foot-a-8-tpp-sodex-sport-noir",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/s/o/sodex-sport_s12781kl_noir_1.jpg",
         sizes: ["6.0x2.0x0.8x1.5 m", "6.0x2.1x0.8x1.6 m"],
         sizePrices: [
-          { size: "6.0x2.0x0.8x1.5 m", price: 169.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12782kl-filets-de-foot-a-8-tpp-sodex-sport-noir" },
-          { size: "6.0x2.1x0.8x1.6 m", price: 123.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12782kl-filets-de-foot-a-8-tpp-sodex-sport-noir" },
+          { size: "6.0x2.0x0.8x1.5 m", price: 172.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12782kl-filets-de-foot-a-8-tpp-sodex-sport-noir" },
+          { size: "6.0x2.1x0.8x1.6 m", price: 125.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12782kl-filets-de-foot-a-8-tpp-sodex-sport-noir" },
         ],
       },
     ],
@@ -19391,7 +19475,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 92.97,
+        price: 94.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688491&a=3013769&m=65912",
@@ -19400,7 +19484,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 91.81,
+        price: 93.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12760-filets-de-foot-a-8-tpe-en-polyethylene-sodex-sport-vert-6-0x2-1x0-8x1-5-m",
@@ -19418,7 +19502,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 83.11,
+        price: 84.26,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40588826771&a=3013769&m=65912",
@@ -19427,7 +19511,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 82.03,
+        price: 83.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs16863w-filets-de-hand-maille-simple-sodex-sport-blanc-3-1x1-9x1-0-x1-m",
@@ -19445,7 +19529,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 521.56,
+        price: 528.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688536&a=3013769&m=65912",
@@ -19454,7 +19538,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 516.85,
+        price: 523.55,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12611-relevages-filet-en-acier-galvanise-pour-1-paire-de-buts-a-11-ou-a-8-joueurs-sodex-sport-vert-5-7-45x1-55-2-83-m",
@@ -19472,7 +19556,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.09,
+        price: 5.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285901&a=3013769&m=65912",
@@ -19481,7 +19565,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.66,
+        price: 4.79,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0010895-cerceau-en-mousse-softee-rouge-tu",
@@ -19499,7 +19583,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.14,
+        price: 16.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40920841575&a=3013769&m=65912",
@@ -19508,7 +19592,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.8,
+        price: 15.88,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009706-cerceau-softee-acier-inox-vacio-gris-tu",
@@ -19526,7 +19610,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.03,
+        price: 19.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37936448665&a=3013769&m=65912",
@@ -19553,7 +19637,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.07,
+        price: 9.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285902&a=3013769&m=65912",
@@ -19562,7 +19646,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.6,
+        price: 8.79,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009703-cerceau-softee-hula-multicolore-tu",
@@ -19580,7 +19664,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443783282&a=3013769&m=65912",
@@ -19589,7 +19673,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.55,
+        price: 5.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24235-004-751-cerceau-softee-hula-vert-tu",
@@ -19607,7 +19691,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.9,
+        price: 20.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285904&a=3013769&m=65912",
@@ -19634,7 +19718,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.9,
+        price: 20.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285905&a=3013769&m=65912",
@@ -19653,24 +19737,6 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     ],
   },
   {
-    id: "softee-aro-softee-pilates-verde",
-    brand: "Softee",
-    model: "Aro Softee Pilates - Verde",
-    colour: "Verde",
-    type: "aros",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 23.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285903&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24167.004.385.jpg&feedId=89032&k=9bb6f5c8fe7af3ee20592e274daa1c8242b7efee",
-        sizes: ["Ø38.5 cm"],
-      },
-    ],
-  },
-  {
     id: "softee-aro-softee-pvc-multicolor",
     brand: "Softee",
     model: "Aro Softee pvc - Multicolor",
@@ -19679,7 +19745,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.8,
+        price: 12.03,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285908&a=3013769&m=65912",
@@ -19688,7 +19754,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.31,
+        price: 11.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0010006-cerceau-softee-pvc-multicolore-tu",
@@ -19706,7 +19772,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.07,
+        price: 43.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285909&a=3013769&m=65912",
@@ -19724,7 +19790,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 42.31,
+        price: 42.93,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0019132-cerceau-softee-slalom-multicolore-tu",
@@ -19751,7 +19817,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.61,
+        price: 12.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519167&a=3013769&m=65912",
@@ -19760,7 +19826,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.11,
+        price: 12.35,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa006153-028-064-bande-de-resistance-en-tpe-softee-azul-6-4-cm",
@@ -19778,7 +19844,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.03,
+        price: 19.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519168&a=3013769&m=65912",
@@ -19805,7 +19871,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.14,
+        price: 16.43,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519170&a=3013769&m=65912",
@@ -19832,7 +19898,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.48,
+        price: 4.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519172&a=3013769&m=65912",
@@ -19841,7 +19907,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.05,
+        price: 4.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa006153-003-130-bande-de-resistance-en-tpe-softee-rojo-1-30-cm",
@@ -19850,33 +19916,9 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
     ],
   },
-  {
-    id: "softee-banda-de-resistencia-en-tpe-softee-violet",
-    brand: "Softee",
-    model: "Banda de resistencia en Tpe Softee - Violet",
-    colour: "Violet",
-    type: "elasticos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44572519169&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee-a006153-060-044-morado-69eb24589cc19-1.jpg&feedId=89032&k=9395e067fafc92c91a3e3d075cb7684428e6669c",
-        sizes: ["4.4 cm"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 8.53,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa006153-060-044-bande-de-resistance-en-tpe-softee-morado-4-4-cm",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee-a006153-060-044-morado-69eb24589cc19-1.webp",
-        sizes: ["4.4 cm"],
-      },
-    ],
-  },
+];
+
+const minedTrainingProductsChunk5: TrainingProduct[] = [
   {
     id: "softee-banda-de-resistencia-softee-amarillo",
     brand: "Softee",
@@ -19886,7 +19928,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39883207666&a=3013769&m=65912",
@@ -19895,7 +19937,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.55,
+        price: 5.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24358-005-1-bande-de-resistance-softee-jaune-0-65-cm",
@@ -19985,9 +20027,6 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk5: TrainingProduct[] = [
   {
     id: "softee-banda-de-resistencia-softee-verde",
     brand: "Softee",
@@ -19997,7 +20036,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.88,
+        price: 22.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284451&a=3013769&m=65912",
@@ -20024,7 +20063,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.46,
+        price: 17.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45873897423&a=3013769&m=65912",
@@ -20051,7 +20090,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.18,
+        price: 8.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284461&a=3013769&m=65912",
@@ -20060,7 +20099,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.72,
+        price: 7.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009231-bandes-de-hanche-softee-rose-gris-noir-tu",
@@ -20078,7 +20117,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.36,
+        price: 8.55,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44536059245&a=3013769&m=65912",
@@ -20087,7 +20126,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.9,
+        price: 8.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009232-bandes-elastique-softee-hip-74x8cm-bleu-tu",
@@ -20105,7 +20144,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.36,
+        price: 9.56,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284463&a=3013769&m=65912",
@@ -20114,7 +20153,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.89,
+        price: 9.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009233-bandes-elastique-softee-hip-84x8cm-rose-tu",
@@ -20132,7 +20171,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 3.06,
+        price: 3.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa006153-005-065-bande-de-resistance-en-tpe-softee-jaune-0-65-cm",
@@ -20150,7 +20189,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 6.74,
+        price: 6.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa006473-bandes-elastique-a-sauter-softee-rouge-150x2-5-cm",
@@ -20195,7 +20234,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.8,
+        price: 7.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529516994&a=3013769&m=65912",
@@ -20204,7 +20243,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.35,
+        price: 7.52,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24430-019-1-base-pour-piquet-et-cerceau-softee-amarillo-fluor-tu",
@@ -20222,7 +20261,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.03,
+        price: 4.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529288410&a=3013769&m=65912",
@@ -20249,7 +20288,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.0,
+        price: 9.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120415&a=3013769&m=65912",
@@ -20312,7 +20351,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004776-tableau-tactique-softee-couverture-tableau-polyvalent-multideport-blanc-tu",
@@ -20330,7 +20369,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.8,
+        price: 42.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921572&a=3013769&m=65912",
@@ -20339,7 +20378,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 42.58,
+        price: 43.21,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24429-1-222-tableau-tactique-softee-diamond-vert-unique-tu",
@@ -20366,7 +20405,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.28,
+        price: 15.43,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004688-tableau-tactique-softee-elite-noir-tu",
@@ -20420,7 +20459,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.74,
+        price: 6.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004610-tableau-tactique-softee-plus-blanc-tu",
@@ -20438,7 +20477,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41654514674&a=3013769&m=65912",
@@ -20465,7 +20504,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285921&a=3013769&m=65912",
@@ -20492,7 +20531,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529166&a=3013769&m=65912",
@@ -20519,7 +20558,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104835203&a=3013769&m=65912",
@@ -20546,7 +20585,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44038764332&a=3013769&m=65912",
@@ -20573,7 +20612,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717943489&a=3013769&m=65912",
@@ -20627,7 +20666,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.38,
+        price: 9.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38674807853&a=3013769&m=65912",
@@ -20636,7 +20675,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.9,
+        price: 9.1,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-005-50-haie-softee-50-x-15-cm-jaune-tu",
@@ -20654,7 +20693,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.38,
+        price: 9.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38674807852&a=3013769&m=65912",
@@ -20663,37 +20702,10 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.9,
+        price: 9.1,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-50-haie-softee-50-x-15-cm-noir-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24199.001.50.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-cobertura-softee-50-x-15-cm-rojo",
-    brand: "Softee",
-    model: "Cobertura Softee 50 x 15 cm - Rojo",
-    colour: "Rojo",
-    type: "vallas",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.38,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921486&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24199.001.50.jpg&feedId=89032&k=ba506101022ea2eb25341371739f33ef812b229f",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 8.9,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-50-haie-softee-50-x-15-cm-rouge-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24199.001.50.webp",
         sizes: ["TU"],
       },
@@ -20708,7 +20720,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.38,
+        price: 9.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921485&a=3013769&m=65912",
@@ -20717,7 +20729,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.9,
+        price: 9.1,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-50-haie-softee-50-x-15-cm-vert-tu",
@@ -20762,7 +20774,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.83,
+        price: 5.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44809652996&a=3013769&m=65912",
@@ -20771,7 +20783,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.39,
+        price: 5.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25514-005-150-haie-softee-flex-13cm-jaune-13-cm",
@@ -20789,7 +20801,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.46,
+        price: 7.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127472455&a=3013769&m=65912",
@@ -20798,7 +20810,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.0,
+        price: 7.17,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25514-005-300-haie-softee-flex-15cm-jaune-15-cm",
@@ -20816,7 +20828,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.91,
+        price: 9.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921488&a=3013769&m=65912",
@@ -20825,7 +20837,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.44,
+        price: 8.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0011430-haie-softee-pliable-vert-citron-tu",
@@ -20843,7 +20855,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.44,
+        price: 10.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40806687898&a=3013769&m=65912",
@@ -20852,7 +20864,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.96,
+        price: 10.17,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009652-jeu-de-filet-softee-jaune-noir-tu",
@@ -20870,7 +20882,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.49,
+        price: 2.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515396&a=3013769&m=65912",
@@ -20897,7 +20909,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.49,
+        price: 2.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515397&a=3013769&m=65912",
@@ -20924,7 +20936,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.38,
+        price: 3.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515406&a=3013769&m=65912",
@@ -20933,7 +20945,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.98,
+        price: 3.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-230-cone-d-entrainement-semi-rigide-softee-vert-23-cm",
@@ -20978,7 +20990,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285959&a=3013769&m=65912",
@@ -20987,7 +20999,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99227-005-230-cone-d-entrainement-softee-lombaires-jaune-23-cm",
@@ -21005,7 +21017,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.15,
+        price: 4.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285962&a=3013769&m=65912",
@@ -21014,7 +21026,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.72,
+        price: 3.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24208-028-1-cone-d-entrainement-softee-maxi-bleu-tu",
@@ -21032,7 +21044,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529570187&a=3013769&m=65912",
@@ -21059,7 +21071,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38993936916&a=3013769&m=65912",
@@ -21068,7 +21080,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99224-022-230-cone-d-entrainement-softee-salto-naranja-fluor-23-cm",
@@ -21086,7 +21098,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44845079326&a=3013769&m=65912",
@@ -21095,7 +21107,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99223-005-230-cone-d-entrainement-softee-sprint-jaune-23-cm",
@@ -21140,7 +21152,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42928188767&a=3013769&m=65912",
@@ -21149,7 +21161,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99211-022-230-cone-d-entrainement-addition-softee-naranja-fluor-23-cm",
@@ -21167,7 +21179,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.49,
+        price: 2.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515398&a=3013769&m=65912",
@@ -21194,7 +21206,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.49,
+        price: 2.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027430891&a=3013769&m=65912",
@@ -21221,7 +21233,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.49,
+        price: 2.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46014577417&a=3013769&m=65912",
@@ -21248,7 +21260,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37961972731&a=3013769&m=65912",
@@ -21257,7 +21269,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99220-022-230-cone-d-entrainement-ours-softee-naranja-fluor-23-cm",
@@ -21275,7 +21287,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529169&a=3013769&m=65912",
@@ -21284,7 +21296,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99213-022-230-cone-d-entrainement-egal-softee-naranja-fluor-23-cm",
@@ -21302,7 +21314,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529168&a=3013769&m=65912",
@@ -21311,7 +21323,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99214-022-230-cone-d-entrainement-de-multiplication-softee-naranja-fluor-23-cm",
@@ -21329,7 +21341,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.38,
+        price: 3.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529440769&a=3013769&m=65912",
@@ -21338,7 +21350,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.98,
+        price: 3.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-230-cone-d-entrainement-semirigide-softee-amarillo-23-cm",
@@ -21356,7 +21368,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.38,
+        price: 3.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529440771&a=3013769&m=65912",
@@ -21365,7 +21377,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.98,
+        price: 3.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-230-cone-d-entrainement-semirigide-softee-azul-azul-23-cm",
@@ -21383,7 +21395,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.38,
+        price: 3.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529171&a=3013769&m=65912",
@@ -21392,7 +21404,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.98,
+        price: 3.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-230-cone-d-entrainement-semi-rigide-softee-naranja-fluor-23-cm",
@@ -21410,7 +21422,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.38,
+        price: 3.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515404&a=3013769&m=65912",
@@ -21419,7 +21431,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.98,
+        price: 3.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-230-cone-d-entrainement-semi-rigide-softee-rouge-23-cm",
@@ -21437,7 +21449,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.08,
+        price: 4.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285934&a=3013769&m=65912",
@@ -21446,7 +21458,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.65,
+        price: 3.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-310-cone-d-entrainement-softee-31cm-jaune-31-cm",
@@ -21464,7 +21476,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.08,
+        price: 4.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921444&a=3013769&m=65912",
@@ -21473,7 +21485,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.65,
+        price: 3.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-310-cone-d-entrainement-softee-31cm-bleu-31-cm",
@@ -21491,7 +21503,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.08,
+        price: 4.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285933&a=3013769&m=65912",
@@ -21500,7 +21512,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.65,
+        price: 3.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-310-cone-d-entrainement-softee-31cm-orange-fluor-31-cm",
@@ -21518,7 +21530,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.08,
+        price: 4.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285932&a=3013769&m=65912",
@@ -21527,7 +21539,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.65,
+        price: 3.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-310-cone-d-entrainement-softee-31cm-rouge-31-cm",
@@ -21545,7 +21557,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.08,
+        price: 4.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921443&a=3013769&m=65912",
@@ -21554,7 +21566,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.65,
+        price: 3.78,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-310-cone-d-entrainement-softee-31cm-vert-31-cm",
@@ -21572,7 +21584,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.7,
+        price: 6.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285936&a=3013769&m=65912",
@@ -21581,7 +21593,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.25,
+        price: 6.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24184-006-320-cone-d-entrainement-softee-32cm-royal-32-cm",
@@ -21599,7 +21611,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.7,
+        price: 6.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285935&a=3013769&m=65912",
@@ -21608,7 +21620,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.25,
+        price: 6.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24184-004-320-cone-d-entrainement-softee-32cm-vert-32-cm",
@@ -21626,7 +21638,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.53,
+        price: 11.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285939&a=3013769&m=65912",
@@ -21635,7 +21647,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.04,
+        price: 11.26,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24184-006-500-cone-d-entrainement-softee-50cm-royal-50-cm",
@@ -21653,7 +21665,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.53,
+        price: 11.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285938&a=3013769&m=65912",
@@ -21662,7 +21674,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.04,
+        price: 11.26,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24184-004-500-cone-d-entrainement-softee-50cm-vert-50-cm",
@@ -21707,7 +21719,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285943&a=3013769&m=65912",
@@ -21716,7 +21728,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99221-005-230-cone-d-entrainement-softee-caracol-jaune-23-cm",
@@ -21788,7 +21800,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285944&a=3013769&m=65912",
@@ -21797,7 +21809,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99217-005-230-cone-d-entrainement-softee-crocodile-jaune-23-cm",
@@ -21815,7 +21827,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921445&a=3013769&m=65912",
@@ -21824,7 +21836,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99217-022-230-cone-d-entrainement-softee-crocodile-orange-fluor-23-cm",
@@ -21842,7 +21854,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285948&a=3013769&m=65912",
@@ -21851,7 +21863,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99215-005-230-cone-d-entrainement-softee-division-jaune-23-cm",
@@ -21869,7 +21881,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285947&a=3013769&m=65912",
@@ -21878,7 +21890,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99215-022-230-cone-d-entrainement-softee-division-orange-fluor-23-cm",
@@ -21896,7 +21908,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.19,
+        price: 4.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755732297&a=3013769&m=65912",
@@ -21905,7 +21917,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.76,
+        price: 3.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24464-028-150-cone-d-entrainement-softee-flexi-bleu-15-cm",
@@ -21923,7 +21935,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.19,
+        price: 4.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755732296&a=3013769&m=65912",
@@ -21932,7 +21944,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.76,
+        price: 3.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24464-003-150-cone-d-entrainement-softee-flexi-rouge-15-cm",
@@ -21950,7 +21962,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.77,
+        price: 3.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285952&a=3013769&m=65912",
@@ -21959,7 +21971,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.35,
+        price: 3.47,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24163-003-230-cone-d-entrainement-softee-flexible-rouge-23-cm",
@@ -21977,7 +21989,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285954&a=3013769&m=65912",
@@ -21986,7 +21998,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99222-005-230-cone-d-entrainement-softee-flexing-jaune-23-cm",
@@ -22031,7 +22043,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285956&a=3013769&m=65912",
@@ -22040,7 +22052,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99219-005-230-cone-d-entrainement-softee-hipopotamo-jaune-23-cm",
@@ -22058,7 +22070,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285955&a=3013769&m=65912",
@@ -22067,7 +22079,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99219-022-230-cone-d-entrainement-softee-hipopotamo-orange-fluor-23-cm",
@@ -22085,7 +22097,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285957&a=3013769&m=65912",
@@ -22094,7 +22106,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99213-005-230-cone-d-entrainement-softee-igual-jaune-23-cm",
@@ -22112,7 +22124,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285958&a=3013769&m=65912",
@@ -22121,7 +22133,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99227-022-230-cone-d-entrainement-softee-lombaires-orange-fluor-23-cm",
@@ -22139,7 +22151,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.15,
+        price: 4.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285960&a=3013769&m=65912",
@@ -22148,7 +22160,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.72,
+        price: 3.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24208-003-1-cone-d-entrainement-softee-maxi-rouge-tu",
@@ -22166,7 +22178,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285963&a=3013769&m=65912",
@@ -22175,7 +22187,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99214-005-230-cone-d-entrainement-softee-multiplication-jaune-23-cm",
@@ -22193,7 +22205,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285964&a=3013769&m=65912",
@@ -22202,7 +22214,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99201-005-230-cone-d-entrainement-softee-n-0-23cm-jaune-23-cm",
@@ -22220,7 +22232,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529172&a=3013769&m=65912",
@@ -22229,7 +22241,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99201-022-230-cone-d-entrainement-softee-n-0-naranja-fluor-23-cm",
@@ -22247,7 +22259,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529173&a=3013769&m=65912",
@@ -22256,7 +22268,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99202-022-230-cone-d-entrainement-softee-n-1-naranja-fluor-23-cm",
@@ -22274,7 +22286,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285966&a=3013769&m=65912",
@@ -22283,7 +22295,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99203-005-230-cone-d-entrainement-softee-n-2-23cm-jaune-23-cm",
@@ -22301,7 +22313,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529174&a=3013769&m=65912",
@@ -22310,7 +22322,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99203-022-230-cone-d-entrainement-softee-n-2-naranja-fluor-23-cm",
@@ -22328,7 +22340,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529175&a=3013769&m=65912",
@@ -22337,7 +22349,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99204-022-230-cone-d-entrainement-softee-n-3-naranja-fluor-23-cm",
@@ -22355,7 +22367,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41740154708&a=3013769&m=65912",
@@ -22364,7 +22376,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99205-005-230-cone-d-entrainement-softee-n-4-23cm-jaune-23-cm",
@@ -22382,7 +22394,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529176&a=3013769&m=65912",
@@ -22391,7 +22403,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99205-022-230-cone-d-entrainement-softee-n-4-naranja-fluor-23-cm",
@@ -22409,7 +22421,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285969&a=3013769&m=65912",
@@ -22418,7 +22430,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99207-005-230-cone-d-entrainement-softee-n-6-23cm-jaune-23-cm",
@@ -22436,7 +22448,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285970&a=3013769&m=65912",
@@ -22445,7 +22457,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99208-005-230-cone-d-entrainement-softee-n-7-23cm-jaune-23-cm",
@@ -22463,7 +22475,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529179&a=3013769&m=65912",
@@ -22472,7 +22484,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99208-022-230-cone-d-entrainement-softee-n-7-naranja-fluor-23-cm",
@@ -22490,7 +22502,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285971&a=3013769&m=65912",
@@ -22499,7 +22511,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99209-005-230-cone-d-entrainement-softee-n-8-23cm-jaune-23-cm",
@@ -22517,7 +22529,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529180&a=3013769&m=65912",
@@ -22526,7 +22538,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99209-022-230-cone-d-entrainement-softee-n-8-naranja-fluor-23-cm",
@@ -22544,7 +22556,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529181&a=3013769&m=65912",
@@ -22553,7 +22565,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99210-022-230-cone-d-entrainement-softee-n-9-naranja-fluor-23-cm",
@@ -22571,7 +22583,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285973&a=3013769&m=65912",
@@ -22580,7 +22592,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99216-005-230-cone-d-entrainement-softee-pig-jaune-23-cm",
@@ -22598,7 +22610,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.49,
+        price: 5.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285976&a=3013769&m=65912",
@@ -22607,16 +22619,16 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.05,
-        priceMax: 6.81,
+        price: 5.19,
+        priceMax: 6.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-380-cone-d-entrainement-softee-semirigide-jaune-38-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24179.005.150.webp",
         sizes: ["38 cm", "46 cm"],
         sizePrices: [
-          { size: "38 cm", price: 5.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-380-cone-d-entrainement-softee-semirigide-jaune-38-cm" },
-          { size: "46 cm", price: 6.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-46-cone-d-entrainement-softee-semirigide-jaune-46-cm" },
+          { size: "38 cm", price: 5.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-380-cone-d-entrainement-softee-semirigide-jaune-38-cm" },
+          { size: "46 cm", price: 6.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-46-cone-d-entrainement-softee-semirigide-jaune-46-cm" },
         ],
       },
     ],
@@ -22630,7 +22642,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285980&a=3013769&m=65912",
@@ -22648,7 +22660,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921449&a=3013769&m=65912",
@@ -22666,7 +22678,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.49,
+        price: 5.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285977&a=3013769&m=65912",
@@ -22675,16 +22687,16 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.05,
-        priceMax: 6.81,
+        price: 5.19,
+        priceMax: 6.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-380-cone-d-entrainement-softee-semirigide-bleu-38-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24179.028.150.webp",
         sizes: ["38 cm", "46 cm"],
         sizePrices: [
-          { size: "38 cm", price: 5.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-380-cone-d-entrainement-softee-semirigide-bleu-38-cm" },
-          { size: "46 cm", price: 6.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-46-cone-d-entrainement-softee-semirigide-bleu-46-cm" },
+          { size: "38 cm", price: 5.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-380-cone-d-entrainement-softee-semirigide-bleu-38-cm" },
+          { size: "46 cm", price: 6.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-46-cone-d-entrainement-softee-semirigide-bleu-46-cm" },
         ],
       },
     ],
@@ -22698,7 +22710,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.49,
+        price: 5.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285975&a=3013769&m=65912",
@@ -22707,16 +22719,16 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.05,
-        priceMax: 6.81,
+        price: 5.19,
+        priceMax: 6.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-380-cone-d-entrainement-softee-semirigide-orange-fluor-38-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24179.022.230.webp",
         sizes: ["38 cm", "46 cm"],
         sizePrices: [
-          { size: "38 cm", price: 5.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-380-cone-d-entrainement-softee-semirigide-orange-fluor-38-cm" },
-          { size: "46 cm", price: 6.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-46-cone-d-entrainement-softee-semirigide-orange-fluor-46-cm" },
+          { size: "38 cm", price: 5.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-380-cone-d-entrainement-softee-semirigide-orange-fluor-38-cm" },
+          { size: "46 cm", price: 6.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-46-cone-d-entrainement-softee-semirigide-orange-fluor-46-cm" },
         ],
       },
     ],
@@ -22730,7 +22742,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285979&a=3013769&m=65912",
@@ -22748,7 +22760,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.49,
+        price: 5.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921447&a=3013769&m=65912",
@@ -22757,7 +22769,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.05,
+        price: 5.19,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-001-380-cone-d-entrainement-softee-semirigide-noir-38-cm",
@@ -22775,7 +22787,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921448&a=3013769&m=65912",
@@ -22793,7 +22805,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.49,
+        price: 5.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285974&a=3013769&m=65912",
@@ -22802,16 +22814,16 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.05,
-        priceMax: 6.81,
+        price: 5.19,
+        priceMax: 6.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-380-cone-d-entrainement-softee-semirigide-rouge-38-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24179.003.150.webp",
         sizes: ["38 cm", "46 cm"],
         sizePrices: [
-          { size: "38 cm", price: 5.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-380-cone-d-entrainement-softee-semirigide-rouge-38-cm" },
-          { size: "46 cm", price: 6.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-46-cone-d-entrainement-softee-semirigide-rouge-46-cm" },
+          { size: "38 cm", price: 5.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-380-cone-d-entrainement-softee-semirigide-rouge-38-cm" },
+          { size: "46 cm", price: 6.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-46-cone-d-entrainement-softee-semirigide-rouge-46-cm" },
         ],
       },
     ],
@@ -22825,7 +22837,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.49,
+        price: 5.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921446&a=3013769&m=65912",
@@ -22834,16 +22846,16 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.05,
-        priceMax: 6.81,
+        price: 5.19,
+        priceMax: 6.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-380-cone-d-entrainement-softee-semirigide-vert-38-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24179.004.150.webp",
         sizes: ["38 cm", "46 cm"],
         sizePrices: [
-          { size: "38 cm", price: 5.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-380-cone-d-entrainement-softee-semirigide-vert-38-cm" },
-          { size: "46 cm", price: 6.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-46-cone-d-entrainement-softee-semirigide-vert-46-cm" },
+          { size: "38 cm", price: 5.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-380-cone-d-entrainement-softee-semirigide-vert-38-cm" },
+          { size: "46 cm", price: 6.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-46-cone-d-entrainement-softee-semirigide-vert-46-cm" },
         ],
       },
     ],
@@ -22857,7 +22869,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285978&a=3013769&m=65912",
@@ -22902,7 +22914,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285984&a=3013769&m=65912",
@@ -22911,7 +22923,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99212-005-230-cone-d-entrainement-softee-soustraction-jaune-23-cm",
@@ -22929,7 +22941,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285983&a=3013769&m=65912",
@@ -22938,7 +22950,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99212-022-230-cone-d-entrainement-softee-soustraction-orange-fluor-23-cm",
@@ -22983,7 +22995,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.39,
+        price: 4.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42928187253&a=3013769&m=65912",
@@ -22992,7 +23004,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.96,
+        price: 4.09,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99211-005-230-cone-d-entrainement-softee-sum-23cm-jaune-23-cm",
@@ -23010,7 +23022,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.59,
+        price: 4.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285989&a=3013769&m=65912",
@@ -23019,7 +23031,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99229-005-230-cone-d-entrainement-softee-twist-jaune-23-cm",
@@ -23091,7 +23103,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.88,
+        price: 11.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921463&a=3013769&m=65912",
@@ -23100,7 +23112,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.39,
+        price: 10.6,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24177-005-4-echelle-de-rythme-softee-4-m-jaune-400-cm",
@@ -23118,7 +23130,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.49,
+        price: 14.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921464&a=3013769&m=65912",
@@ -23127,7 +23139,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.98,
+        price: 14.23,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0011862-echelle-de-rythme-softee-6-vert-noir-tu",
@@ -23145,7 +23157,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.96,
+        price: 19.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286047&a=3013769&m=65912",
@@ -23172,7 +23184,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.9,
+        price: 20.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44592084169&a=3013769&m=65912",
@@ -23199,7 +23211,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.19,
+        price: 7.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519277&a=3013769&m=65912",
@@ -23208,7 +23220,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.74,
+        price: 6.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F9040-echelle-d-agilite-softee-multicolor-45-cm",
@@ -23235,7 +23247,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.22,
+        price: 11.44,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004605-dossier-tactique-pour-entraineur-de-football-softee-a4-noir-tu",
@@ -23307,7 +23319,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.79,
+        price: 14.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41362190786&a=3013769&m=65912",
@@ -23334,7 +23346,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.6,
+        price: 15.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529448334&a=3013769&m=65912",
@@ -23361,7 +23373,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.83,
+        price: 3.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517016&a=3013769&m=65912",
@@ -23388,7 +23400,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.83,
+        price: 3.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517017&a=3013769&m=65912",
@@ -23415,7 +23427,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.24,
+        price: 13.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347369&a=3013769&m=65912",
@@ -23424,7 +23436,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.74,
+        price: 12.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24233-a14-24-lot-de-24-cones-avec-ceinture-softee-negro-amarillo-fluor-tu",
@@ -23442,7 +23454,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.67,
+        price: 18.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347373&a=3013769&m=65912",
@@ -23496,7 +23508,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.1,
+        price: 22.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347377&a=3013769&m=65912",
@@ -23550,7 +23562,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.21,
+        price: 4.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529448337&a=3013769&m=65912",
@@ -23577,7 +23589,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.21,
+        price: 4.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38310819253&a=3013769&m=65912",
@@ -23604,7 +23616,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.21,
+        price: 4.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44536061259&a=3013769&m=65912",
@@ -23631,7 +23643,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.21,
+        price: 4.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517018&a=3013769&m=65912",
@@ -23658,7 +23670,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.96,
+        price: 21.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347443&a=3013769&m=65912",
@@ -23685,7 +23697,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.52,
+        price: 12.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923949966&a=3013769&m=65912",
@@ -23694,7 +23706,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.02,
+        price: 12.25,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009197-lot-de-6-marqueurs-de-delimitation-ligne-polyvinyle-softee-multicolore-tu",
@@ -23739,7 +23751,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.04,
+        price: 20.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286125&a=3013769&m=65912",
@@ -23775,7 +23787,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.91,
+        price: 14.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004680-planche-softee-football-diamond-noir-tu",
@@ -23802,7 +23814,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.9,
+        price: 15.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004604-planche-softee-professionnel-bleu-tu",
@@ -23829,7 +23841,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.9,
+        price: 15.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004601-planche-softee-professionnel-vert-tu",
@@ -23856,7 +23868,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.45,
+        price: 6.61,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004653-planche-softee-veleda-gris-tu",
@@ -23963,6 +23975,15 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
         sizes: [],
       },
       {
+        store: "SportIsGoodES",
+        price: 16.52,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43301577676&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79008.004.2.jpg&feedId=89044&k=d83920ccd2b78f4e92294a895d1984a5a1d97f36",
+        sizes: [],
+      },
+      {
         store: "FootStoreFR",
         price: 16.38,
         shipping: 6.99,
@@ -23996,15 +24017,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286144&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
-        sizes: [],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 16.52,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301577676&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79008.004.2.jpg&feedId=89044&k=d83920ccd2b78f4e92294a895d1984a5a1d97f36",
         sizes: [],
       },
       {
@@ -24747,6 +24759,9 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk6: TrainingProduct[] = [
   {
     id: "softee-lote-de-5-petos-numerados-del-6-al-10-softee-verde",
     brand: "Softee",
@@ -24828,9 +24843,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk6: TrainingProduct[] = [
   {
     id: "softee-etui-tactique-softee-diamond-noir",
     brand: "Softee",
@@ -24849,7 +24861,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.91,
+        price: 14.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004689-etui-tactique-softee-diamond-noir-vert-tu",
@@ -24894,7 +24906,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.9,
+        price: 15.07,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004611-etui-tactique-softee-premier-noir-tu",
@@ -24912,32 +24924,32 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.12,
-        priceMax: 9.38,
+        price: 6.29,
+        priceMax: 9.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38455038752&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24199.004.15_verde_1.jpg&feedId=89032&k=ea901638e5036e243e8be4c5fad2315f7ffad602",
         sizes: ["50x15 cm", "50x30 cm", "50x50 cm"],
         sizePrices: [
-          { size: "50x15 cm", price: 6.12, url: "https://www.awin1.com/pclick.php?p=38455038752&a=3013769&m=65912" },
-          { size: "50x30 cm", price: 7.57, url: "https://www.awin1.com/pclick.php?p=38455038753&a=3013769&m=65912" },
-          { size: "50x50 cm", price: 9.38, url: "https://www.awin1.com/pclick.php?p=38455038754&a=3013769&m=65912" },
+          { size: "50x15 cm", price: 6.29, url: "https://www.awin1.com/pclick.php?p=38455038752&a=3013769&m=65912" },
+          { size: "50x30 cm", price: 7.75, url: "https://www.awin1.com/pclick.php?p=38455038753&a=3013769&m=65912" },
+          { size: "50x50 cm", price: 9.58, url: "https://www.awin1.com/pclick.php?p=38455038754&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 5.68,
-        priceMax: 8.9,
+        price: 5.83,
+        priceMax: 9.1,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24199.004.15_verde_1.webp",
         sizes: ["50x15 cm", "50x30 cm", "50x50 cm"],
         sizePrices: [
-          { size: "50x15 cm", price: 5.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde" },
-          { size: "50x30 cm", price: 7.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde" },
-          { size: "50x50 cm", price: 8.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde" },
+          { size: "50x15 cm", price: 5.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde" },
+          { size: "50x30 cm", price: 7.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde" },
+          { size: "50x50 cm", price: 9.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-004-15-haie-d-entrainement-anti-blessure-softee-verde" },
         ],
       },
     ],
@@ -24951,7 +24963,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.15,
+        price: 13.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38403638477&a=3013769&m=65912",
@@ -24960,7 +24972,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.65,
+        price: 12.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0013225-materiel-d-entrainement-softee-1500-x-500-x-8-mm-bleu-tu",
@@ -24978,7 +24990,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 8.71,
+        price: 8.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa004205-materiel-d-entrainement-pompons-en-silicone-softee-x3-multicolore-6-5-cm",
@@ -24996,7 +25008,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.12,
+        price: 18.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395603650&a=3013769&m=65912",
@@ -25041,7 +25053,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.96,
+        price: 16.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515444&a=3013769&m=65912",
@@ -25050,7 +25062,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.6,
+        price: 15.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24174p-028-10u-lot-de-10-cones-rond-d-entrainement-softee-azul-tu",
@@ -25068,7 +25080,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.96,
+        price: 16.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515445&a=3013769&m=65912",
@@ -25077,7 +25089,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.6,
+        price: 15.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24174p-022-10u-lot-de-10-cones-rond-d-entrainement-softee-naranja-fluor-tu",
@@ -25095,7 +25107,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.96,
+        price: 16.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515446&a=3013769&m=65912",
@@ -25104,7 +25116,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.6,
+        price: 15.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24174p-001-10u-lot-de-10-cones-rond-d-entrainement-softee-negro-tu",
@@ -25122,7 +25134,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.96,
+        price: 16.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515447&a=3013769&m=65912",
@@ -25131,7 +25143,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.6,
+        price: 15.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24174p-003-10u-lot-de-10-cones-rond-d-entrainement-softee-rojo-tu",
@@ -25149,7 +25161,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286043&a=3013769&m=65912",
@@ -25176,7 +25188,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43297250137&a=3013769&m=65912",
@@ -25203,7 +25215,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43297250138&a=3013769&m=65912",
@@ -25230,7 +25242,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717949248&a=3013769&m=65912",
@@ -25248,7 +25260,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.19,
+        price: 4.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285926&a=3013769&m=65912",
@@ -25275,7 +25287,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.19,
+        price: 4.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41079148752&a=3013769&m=65912",
@@ -25302,7 +25314,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.19,
+        price: 4.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285924&a=3013769&m=65912",
@@ -25329,7 +25341,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.19,
+        price: 4.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285925&a=3013769&m=65912",
@@ -25356,7 +25368,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485368852&a=3013769&m=65912",
@@ -25389,7 +25401,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41654514676&a=3013769&m=65912",
@@ -25407,7 +25419,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529164&a=3013769&m=65912",
@@ -25425,7 +25437,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285922&a=3013769&m=65912",
@@ -25452,7 +25464,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.26,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529529165&a=3013769&m=65912",
@@ -25560,21 +25572,12 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.65,
+        price: 6.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921470&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_0004117.jpg&feedId=89032&k=dc32513dd21b593775a8701d3786e847f9106324",
         sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 6.2,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004117-filet-porte-20-ballons-softee-rouge-blanc-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_0004117.webp",
-        sizes: ["TU"],
       },
     ],
   },
@@ -25587,7 +25590,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.24,
+        price: 10.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286056&a=3013769&m=65912",
@@ -25596,7 +25599,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.76,
+        price: 9.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0504102-filet-softee-100-x-65-blanc-tu",
@@ -25641,7 +25644,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.71,
+        price: 8.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286062&a=3013769&m=65912",
@@ -25650,7 +25653,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.24,
+        price: 8.42,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004119-filet-softee-deluxe-blanc-bleu-tu",
@@ -25668,7 +25671,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.54,
+        price: 6.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921472&a=3013769&m=65912",
@@ -25677,7 +25680,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.09,
+        price: 6.25,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004115-filet-softee-deluxe-rouge-blanc-tu",
@@ -25749,7 +25752,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.89,
+        price: 15.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286065&a=3013769&m=65912",
@@ -25758,38 +25761,11 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.42,
+        price: 14.63,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0504106-filet-softee-maille-45-blanc-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_0504102.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-red-softee-polyvalent-15m-negro",
-    brand: "Softee",
-    model: "Red Softee polyvalent 15m - Negro",
-    colour: "Negro",
-    type: "redes",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 59.78,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286066&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F0%2F0013591.jpg&feedId=89032&k=75078e27ecf345448d4ea9fcb2371d74ca515406",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 58.84,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0013591-filet-softee-polyvalent-15m-noir-blanc-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/0/0/0013591.webp",
         sizes: ["TU"],
       },
     ],
@@ -25803,7 +25779,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.26,
+        price: 10.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572505504&a=3013769&m=65912",
@@ -25884,7 +25860,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.12,
+        price: 13.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286052&a=3013769&m=65912",
@@ -25911,7 +25887,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.25,
+        price: 9.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572505505&a=3013769&m=65912",
@@ -25938,7 +25914,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.84,
+        price: 20.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286081&a=3013769&m=65912",
@@ -25947,7 +25923,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.28,
+        price: 19.61,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24393-019-1-haie-reglable-softee-diamond-jaune-fluo-tu",
@@ -25965,7 +25941,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.82,
+        price: 9.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44809655018&a=3013769&m=65912",
@@ -25983,7 +25959,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.12,
+        price: 6.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127474181&a=3013769&m=65912",
@@ -25992,17 +25968,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.68,
-        priceMax: 8.35,
+        price: 5.83,
+        priceMax: 8.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-15-haie-anti-blessure-softee-naranja-fluor-50x15-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24199.022.15_naranja-fluor_1.webp",
         sizes: ["50x15 cm", "50x30 cm", "50x40 cm"],
         sizePrices: [
-          { size: "50x15 cm", price: 5.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-15-haie-anti-blessure-softee-naranja-fluor-50x15-cm" },
-          { size: "50x30 cm", price: 7.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-30-haie-anti-blessure-softee-naranja-fluor-50x30-cm" },
-          { size: "50x40 cm", price: 8.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-40-haie-anti-blessure-softee-orange-fluor-50x40-cm" },
+          { size: "50x15 cm", price: 5.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-15-haie-anti-blessure-softee-naranja-fluor-50x15-cm" },
+          { size: "50x30 cm", price: 7.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-30-haie-anti-blessure-softee-naranja-fluor-50x30-cm" },
+          { size: "50x40 cm", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-022-40-haie-anti-blessure-softee-orange-fluor-50x40-cm" },
         ],
       },
     ],
@@ -26016,7 +25992,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.57,
+        price: 7.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127474948&a=3013769&m=65912",
@@ -26034,7 +26010,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.82,
+        price: 9.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517007&a=3013769&m=65912",
@@ -26052,7 +26028,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.12,
+        price: 6.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517010&a=3013769&m=65912",
@@ -26061,17 +26037,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.68,
-        priceMax: 8.35,
+        price: 5.83,
+        priceMax: 8.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-15-haie-anti-blessure-softee-negro-50x15-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24199.001.15_negro_1.webp",
         sizes: ["50x15 cm", "50x30 cm", "50x40 cm"],
         sizePrices: [
-          { size: "50x15 cm", price: 5.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-15-haie-anti-blessure-softee-negro-50x15-cm" },
-          { size: "50x30 cm", price: 7.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-30-haie-anti-blessure-softee-noir-50x30-cm" },
-          { size: "50x40 cm", price: 8.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-40-haie-anti-blessure-softee-black-50x40-cm" },
+          { size: "50x15 cm", price: 5.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-15-haie-anti-blessure-softee-negro-50x15-cm" },
+          { size: "50x30 cm", price: 7.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-30-haie-anti-blessure-softee-noir-50x30-cm" },
+          { size: "50x40 cm", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-001-40-haie-anti-blessure-softee-black-50x40-cm" },
         ],
       },
     ],
@@ -26085,7 +26061,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.57,
+        price: 7.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517011&a=3013769&m=65912",
@@ -26103,7 +26079,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.57,
+        price: 7.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517013&a=3013769&m=65912",
@@ -26121,7 +26097,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.12,
+        price: 6.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44809655019&a=3013769&m=65912",
@@ -26130,17 +26106,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.68,
-        priceMax: 8.35,
+        price: 5.83,
+        priceMax: 8.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-15-haie-anti-blessure-softee-rojo-50x15-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/4/24199.003.15.webp",
         sizes: ["50x15 cm", "50x30 cm", "50x40 cm"],
         sizePrices: [
-          { size: "50x15 cm", price: 5.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-15-haie-anti-blessure-softee-rojo-50x15-cm" },
-          { size: "50x30 cm", price: 7.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-30-haie-anti-blessure-softee-red-50x30-cm" },
-          { size: "50x40 cm", price: 8.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-40-haie-anti-blessure-softee-rouge-50x40-cm" },
+          { size: "50x15 cm", price: 5.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-15-haie-anti-blessure-softee-rojo-50x15-cm" },
+          { size: "50x30 cm", price: 7.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-30-haie-anti-blessure-softee-red-50x30-cm" },
+          { size: "50x40 cm", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-003-40-haie-anti-blessure-softee-rouge-50x40-cm" },
         ],
       },
     ],
@@ -26154,7 +26130,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.82,
+        price: 9.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127474527&a=3013769&m=65912",
@@ -26172,7 +26148,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.82,
+        price: 9.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517008&a=3013769&m=65912",
@@ -26190,7 +26166,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.57,
+        price: 7.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529517015&a=3013769&m=65912",
@@ -26208,7 +26184,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.12,
+        price: 6.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44809655020&a=3013769&m=65912",
@@ -26217,17 +26193,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.68,
-        priceMax: 8.35,
+        price: 5.83,
+        priceMax: 8.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-15-haie-anti-blessure-softee-verde-sft-50x15-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/4/24199.135.15.webp",
         sizes: ["50x15 cm", "50x30 cm", "50x40 cm"],
         sizePrices: [
-          { size: "50x15 cm", price: 5.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-15-haie-anti-blessure-softee-verde-sft-50x15-cm" },
-          { size: "50x30 cm", price: 7.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-30-haie-anti-blessure-softee-vert-sft-50x30-cm" },
-          { size: "50x40 cm", price: 8.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-40-haie-anti-blessure-softee-green-sft-50x40-cm" },
+          { size: "50x15 cm", price: 5.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-15-haie-anti-blessure-softee-verde-sft-50x15-cm" },
+          { size: "50x30 cm", price: 7.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-30-haie-anti-blessure-softee-vert-sft-50x30-cm" },
+          { size: "50x40 cm", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-135-40-haie-anti-blessure-softee-green-sft-50x40-cm" },
         ],
       },
     ],
@@ -26241,7 +26217,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.98,
+        price: 12.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347435&a=3013769&m=65912",
@@ -26250,16 +26226,16 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.49,
-        priceMax: 13.28,
+        price: 11.71,
+        priceMax: 13.52,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25023-002-130-haie-d-entrainement-antilesion-bicolore-softee-blanco-30-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/5/25023.002.130.webp",
         sizes: ["30 cm", "50 cm"],
         sizePrices: [
-          { size: "30 cm", price: 11.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25023-002-130-haie-d-entrainement-antilesion-bicolore-softee-blanco-30-cm" },
-          { size: "50 cm", price: 13.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25023-002-150-haie-d-entrainement-antilesion-bicolore-softee-blanco-50-cm" },
+          { size: "30 cm", price: 11.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25023-002-130-haie-d-entrainement-antilesion-bicolore-softee-blanco-30-cm" },
+          { size: "50 cm", price: 13.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25023-002-150-haie-d-entrainement-antilesion-bicolore-softee-blanco-50-cm" },
         ],
       },
     ],
@@ -26273,7 +26249,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.79,
+        price: 14.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347436&a=3013769&m=65912",
@@ -26291,7 +26267,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.43,
+        price: 15.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347361&a=3013769&m=65912",
@@ -26300,7 +26276,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.02,
+        price: 15.18,
         priceMax: 22.72,
         shipping: 6.99,
         currency: "EUR",
@@ -26309,7 +26285,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         sizes: ["20x120 cm", "20x60 cm", "30x120 cm", "30x60 cm", "40x120 cm", "40x60 cm", "50x60 cm"],
         sizePrices: [
           { size: "20x120 cm", price: 18.16, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24231-002-216-haie-d-entrainement-renforce-pvc-softee-blanco-20x120-cm" },
-          { size: "20x60 cm", price: 15.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24231-002-213-haie-d-entrainement-renforce-pvc-softee-blanco-20x60-cm" },
+          { size: "20x60 cm", price: 15.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24231-002-213-haie-d-entrainement-renforce-pvc-softee-blanco-20x60-cm" },
           { size: "30x120 cm", price: 19.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24231-002-215-haie-d-entrainement-renforce-pvc-softee-blanco-30x120-cm" },
           { size: "30x60 cm", price: 16.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24231-002-212-haie-d-entrainement-renforce-pvc-softee-blanco-30x60-cm" },
           { size: "40x120 cm", price: 22.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24231-002-214-haie-d-entrainement-renforce-pvc-softee-blanco-40x120-cm" },
@@ -26328,7 +26304,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.0,
+        price: 17.3,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347362&a=3013769&m=65912",
@@ -26346,7 +26322,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.27,
+        price: 18.59,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347363&a=3013769&m=65912",
@@ -26364,7 +26340,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.81,
+        price: 19.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347364&a=3013769&m=65912",
@@ -26382,7 +26358,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.3,
+        price: 19.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347365&a=3013769&m=65912",
@@ -26400,7 +26376,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.72,
+        price: 22.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347367&a=3013769&m=65912",
@@ -26418,7 +26394,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.64,
+        price: 20.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347366&a=3013769&m=65912",
@@ -26436,7 +26412,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.82,
+        price: 9.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38735626103&a=3013769&m=65912",
@@ -26445,16 +26421,16 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.35,
-        priceMax: 8.9,
+        price: 8.53,
+        priceMax: 9.1,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-019-40-haie-d-entrainement-softee-jaune-fluo-50x40-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_24199.019.40.webp",
         sizes: ["50x40 cm", "50x50 cm"],
         sizePrices: [
-          { size: "50x40 cm", price: 8.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-019-40-haie-d-entrainement-softee-jaune-fluo-50x40-cm" },
-          { size: "50x50 cm", price: 8.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-019-50-haie-d-entrainement-softee-amarillo-fluor-50x50-cm" },
+          { size: "50x40 cm", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-019-40-haie-d-entrainement-softee-jaune-fluo-50x40-cm" },
+          { size: "50x50 cm", price: 9.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24199-019-50-haie-d-entrainement-softee-amarillo-fluor-50x50-cm" },
         ],
       },
     ],
@@ -26468,7 +26444,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.38,
+        price: 9.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127474625&a=3013769&m=65912",
@@ -26513,7 +26489,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.18,
+        price: 8.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515646&a=3013769&m=65912",
@@ -26522,7 +26498,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.16,
+        price: 7.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25509-001-1-sifflet-hygienique-softee-negro-tu",
@@ -26540,7 +26516,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921558&a=3013769&m=65912",
@@ -26567,7 +26543,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921557&a=3013769&m=65912",
@@ -26594,7 +26570,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.55,
+        price: 4.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921556&a=3013769&m=65912",
@@ -26621,7 +26597,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.18,
+        price: 8.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921553&a=3013769&m=65912",
@@ -26630,7 +26606,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.16,
+        price: 7.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25509-007-1-sifflet-softee-orange-tu",
@@ -26648,7 +26624,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.18,
+        price: 8.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921552&a=3013769&m=65912",
@@ -26657,7 +26633,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.16,
+        price: 7.33,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25509-003-1-sifflet-softee-rouge-tu",
@@ -26711,7 +26687,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.91,
+        price: 14.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004686-planche-handball-football-softee-diamond-noir-tu",
@@ -26738,7 +26714,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.42,
+        price: 9.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004609-planche-reversible-football-handball-softee-blanc-bleu-tu",
@@ -26765,7 +26741,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.42,
+        price: 9.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0004608-planche-football-softee-blanc-vert-tu",
@@ -26837,7 +26813,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.94,
+        price: 6.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921410&a=3013769&m=65912",
@@ -26846,7 +26822,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.5,
+        price: 5.65,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0009199-bandes-softee-marquer-champs-rouge-tu",
@@ -26990,7 +26966,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.52,
+        price: 2.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791938&a=3013769&m=65912",
@@ -27332,7 +27308,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.3,
+        price: 4.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44188985318&a=3013769&m=65912",
@@ -27386,7 +27362,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.16,
+        price: 3.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894246&a=3013769&m=65912",
@@ -27593,7 +27569,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.33,
+        price: 4.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229012&a=3013769&m=65912",
@@ -27620,11 +27596,11 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.33,
+        price: 4.47,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894211&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti-france_063116-33716_mag2370870_1.jpg&feedId=89032&k=97e85957d54d2567c325a02314ee068761b8ba4f",
+        url: "https://www.awin1.com/pclick.php?p=42529229013&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063116-33714.jpg&feedId=89032&k=6640c0316adcfad9aba7882ef7576313f627d01c",
         sizes: ["XS", "S", "M", "L"],
       },
       {
@@ -27647,10 +27623,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.33,
+        price: 4.47,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894214&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923894213&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063116-33715_1.jpg&feedId=89032&k=772cc8f9c152842d39db6f4815cef419e3251302",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -27675,17 +27651,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 1.81,
-        priceMax: 4.33,
+        priceMax: 4.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485367107&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti-france_063116-33716_mag2370870_1.jpg&feedId=89032&k=97e85957d54d2567c325a02314ee068761b8ba4f",
         sizes: ["XS", "S", "M", "L"],
         sizePrices: [
-          { size: "XS", price: 4.33, url: "https://www.awin1.com/pclick.php?p=42529229010&a=3013769&m=65912" },
+          { size: "XS", price: 4.47, url: "https://www.awin1.com/pclick.php?p=42529229010&a=3013769&m=65912" },
           { size: "S", price: 1.81, url: "https://www.awin1.com/pclick.php?p=36485367107&a=3013769&m=65912" },
-          { size: "M", price: 4.33, url: "https://www.awin1.com/pclick.php?p=37923894216&a=3013769&m=65912" },
-          { size: "L", price: 4.33, url: "https://www.awin1.com/pclick.php?p=37923894217&a=3013769&m=65912" },
+          { size: "M", price: 4.47, url: "https://www.awin1.com/pclick.php?p=37923894216&a=3013769&m=65912" },
+          { size: "L", price: 4.47, url: "https://www.awin1.com/pclick.php?p=37923894217&a=3013769&m=65912" },
         ],
       },
       {
@@ -27733,11 +27709,11 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444788&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063209.jpg&feedId=89032&k=cbc8a41c5123be3a7f2c584a9eb916d69842bfa0",
+        url: "https://www.awin1.com/pclick.php?p=40985444787&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063209.jpg&feedId=89032&k=ebbde2873ae6b86772a599f237bce2f6d45f1935",
         sizes: ["XS", "M", "XL"],
       },
       {
@@ -27760,10 +27736,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444786&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43810787206&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063209_4.jpg&feedId=89032&k=eb64eb7890a8eb187626d94cb29dfef5de53346e",
         sizes: ["XS", "M", "XL"],
       },
@@ -27787,11 +27763,11 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43810791344&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63209_2.jpg&feedId=89032&k=32d0d43e50e44f0caf319aa13d53dece5099ac37",
+        url: "https://www.awin1.com/pclick.php?p=43810791346&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F6%2F3%2F63209_2.jpg&feedId=89032&k=b4cd1f62fdb4776f32652fb6bd45e255b753a1c2",
         sizes: ["XS", "M", "XL"],
       },
       {
@@ -27814,7 +27790,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985446214&a=3013769&m=65912",
@@ -27841,10 +27817,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444762&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444753&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63209_1.jpg&feedId=89032&k=5d85b659f8d36cd839875d84337edf24e10d4056",
         sizes: ["XS", "M", "XL"],
       },
@@ -27868,10 +27844,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985446457&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444792&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fs%2Fps-063209-sf-noir_chasuble-sporti-ref-.jpg&feedId=89032&k=56c0e2d2825c0cb703a14714a243f26f191ea167",
         sizes: ["XS", "M", "XL"],
       },
@@ -27895,10 +27871,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444750&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444751&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063209_1.jpg&feedId=89032&k=5c9d9ab22efe46ca156043ab6e572ed6817b4244",
         sizes: ["XS", "M", "XL"],
       },
@@ -27922,10 +27898,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444755&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444793&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63209_1_1.jpg&feedId=89032&k=4298b86d140a18c0900b999e6eaee1500418e76e",
         sizes: ["M", "XL"],
       },
@@ -27949,10 +27925,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.56,
+        price: 3.69,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985446216&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444761&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063209_2_1.jpg&feedId=89032&k=a1c5b24182fed8cb403178a1da36f4dd84b46dc9",
         sizes: ["XS", "M", "XL"],
       },
@@ -28006,7 +27982,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 55.26,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41505482939&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41442417628&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti_063237-noir_blanc_noir-blanc_1.jpg&feedId=89032&k=df05b41e2cc4ca9ca541b8d8a6cd2e3ea633e07c",
         sizes: ["M", "XL"],
       },
@@ -28033,8 +28009,8 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 55.26,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41695386781&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti_063237-rouge_bleu_rouge-bleu_1.jpg&feedId=89032&k=b6732c491ea5306d081f21fcc8d3b75950391efc",
+        url: "https://www.awin1.com/pclick.php?p=41695386780&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti_063237-rouge_bleu_rouge-bleu_1.jpg&feedId=89032&k=c83dbb78f6302773ef610996055e0fb2244434aa",
         sizes: ["XS", "M"],
       },
       {
@@ -28060,7 +28036,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 6.38,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985446151&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985446152&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063250-chasubles-rversibles-sporti-ref-_1.jpg&feedId=89032&k=37c1619f7ebdcbf7a03140dd8e2afc5d80faaf02",
         sizes: ["Adulte", "Junior", "Kid", "Mini"],
       },
@@ -28141,15 +28117,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.73,
+        price: 6.38,
         priceMax: 6.55,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444745&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985446153&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63250_1__4.jpg&feedId=89032&k=cb33f6bc36522929d8161f5700a7e25cb97734ac",
         sizes: ["Adulte", "Junior", "Kid", "Mini"],
         sizePrices: [
-          { size: "Adulte", price: 5.73, url: "https://www.awin1.com/pclick.php?p=40985444745&a=3013769&m=65912" },
+          { size: "Adulte", price: 6.38, url: "https://www.awin1.com/pclick.php?p=40985444745&a=3013769&m=65912" },
           { size: "Junior", price: 6.55, url: "https://www.awin1.com/pclick.php?p=40985444746&a=3013769&m=65912" },
           { size: "Kid", price: 6.38, url: "https://www.awin1.com/pclick.php?p=40985446153&a=3013769&m=65912" },
           { size: "Mini", price: 6.38, url: "https://www.awin1.com/pclick.php?p=40985446154&a=3013769&m=65912" },
@@ -28171,7 +28147,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.93,
+        price: 4.32,
         priceMax: 4.83,
         shipping: 6.99,
         currency: "EUR",
@@ -28179,8 +28155,8 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/6/3/63250_1__4.jpg",
         sizes: ["Adulte", "Junior", "Kid", "Mini"],
         sizePrices: [
-          { size: "Adulte", price: 3.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063250-rouge-bleu-chasuble-reversible-rouge-bleu" },
-          { size: "Junior", price: 4.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063250-rouge-bleu-chasuble-reversible-rouge-bleu" },
+          { size: "Adulte", price: 4.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063250-rouge-bleu-chasuble-reversible-rouge-bleu" },
+          { size: "Junior", price: 4.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063250-rouge-bleu-chasuble-reversible-rouge-bleu" },
           { size: "Kid", price: 4.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063250-rouge-bleu-chasuble-reversible-rouge-bleu" },
           { size: "Mini", price: 4.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063250-rouge-bleu-chasuble-reversible-rouge-bleu" },
         ],
@@ -28240,7 +28216,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 28.78,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894316&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923894317&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063238-33746_0.jpg&feedId=89032&k=baead2cdbfcdb0a63449beef21457869e84d0085",
         sizes: ["XS", "M", "XL"],
       },
@@ -28255,12 +28231,18 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.68,
+        price: 26.25,
+        priceMax: 26.68,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33746-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-noir-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/0/6/063238-33746_0.jpg",
         sizes: ["XS", "M", "XL"],
+        sizePrices: [
+          { size: "XS", price: 26.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33746-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-noir-blanc" },
+          { size: "M", price: 26.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33746-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-noir-blanc" },
+          { size: "XL", price: 26.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33746-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-noir-blanc" },
+        ],
       },
       {
         store: "SportIsGoodFR",
@@ -28320,7 +28302,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         sizes: ["XS", "M", "XL"],
         sizePrices: [
           { size: "XS", price: 26.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33749-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-rouge-bleu" },
-          { size: "M", price: 26.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33749-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-rouge-bleu" },
+          { size: "M", price: 26.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33749-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-rouge-bleu" },
           { size: "XL", price: 22.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063238-33749-chasubles-reversibles-numerotees-n-11-a-15-sporti-x5-rouge-bleu" },
         ],
       },
@@ -28352,7 +28334,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 28.78,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894322&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923894321&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063236-34951_0.jpg&feedId=89032&k=94e560e7e49eb8d155cf718fec74f633c1de1ede",
         sizes: ["XS", "M", "XL"],
       },
@@ -28379,7 +28361,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 28.78,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894324&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923894326&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063236-34948_0.jpg&feedId=89032&k=f3739ce21d0c2eaf76b9e08b621cc98d07eb8128",
         sizes: ["XS", "M", "XL"],
       },
@@ -28457,7 +28439,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.29,
+        price: 4.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229014&a=3013769&m=65912",
@@ -28466,7 +28448,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.86,
+        price: 3.98,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063331-cone-a-bande-sporti-orange-blanc-tu",
@@ -28484,7 +28466,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.55,
+        price: 2.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104832697&a=3013769&m=65912",
@@ -28511,7 +28493,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.55,
+        price: 2.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41122040542&a=3013769&m=65912",
@@ -28547,7 +28529,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.44,
+        price: 5.58,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063301-crayons-taktifol-1-rouge-et-1-noir-x2-rouge-noir-tu",
@@ -28808,7 +28790,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.21,
+        price: 5.36,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214786&a=3013769&m=65912",
@@ -28943,7 +28925,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.25,
+        price: 3.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923889263&a=3013769&m=65912",
@@ -28952,7 +28934,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.89,
+        price: 2.94,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F060042-crocher-filet-pour-but-acier-sporti-bleu-tu",
@@ -28988,7 +28970,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 8.27,
+        price: 7.71,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F025032-haie-reglable-3-hauteurs-rouge-jaune-bleu-tu",
@@ -29042,7 +29024,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.84,
+        price: 3.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894272&a=3013769&m=65912",
@@ -29069,7 +29051,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.84,
+        price: 3.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894271&a=3013769&m=65912",
@@ -29096,7 +29078,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.84,
+        price: 3.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894270&a=3013769&m=65912",
@@ -29123,7 +29105,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.84,
+        price: 3.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894273&a=3013769&m=65912",
@@ -29258,7 +29240,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 163.79,
+        price: 165.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214790&a=3013769&m=65912",
@@ -29267,7 +29249,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 162.05,
+        price: 164.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F060032-jeu-de-4-fourreaux-sporti-gris-tu",
@@ -29573,7 +29555,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.8,
+        price: 10.58,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063174-multimarqueurs-classiques-lot-de-40-sporti-multi-couleur",
@@ -29663,6 +29645,9 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-paire-de-filets-foot-a-11-europeen-bicolore-pp-tresse-4mm-simple-maille-120-nid-d-abeille-sporti-blanc",
     brand: "Sporti",
@@ -29708,9 +29693,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-par-de-redes-de-futbol-11-europeo-bicolor-pp-trenzado-4mm-simple-malla-120-nido-de-abeja-sporti-blanco-3",
     brand: "Sporti",
@@ -29819,7 +29801,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 738.74,
+        price: 748.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41877228485&a=3013769&m=65912",
@@ -29828,7 +29810,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 732.24,
+        price: 741.7,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F060039-paire-de-systeme-de-relevage-du-filet-but-a-11-sporti-vert-tu",
@@ -29846,7 +29828,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 592.18,
+        price: 599.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214818&a=3013769&m=65912",
@@ -29855,7 +29837,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 586.89,
+        price: 594.49,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F060038-paire-de-systeme-de-relevage-du-filet-but-a-8-sporti-vert-tu",
@@ -29900,7 +29882,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.2,
+        price: 5.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38644193382&a=3013769&m=65912",
@@ -29957,7 +29939,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 167.14,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44002221217&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40329628635&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F065210_1.jpg&feedId=89032&k=3cd021e1c03a0387bc7d32a046920ee2b074f511",
         sizes: [],
       },
@@ -29981,7 +29963,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 124.32,
+        price: 125.99,
         priceMax: 131.29,
         shipping: 7.99,
         currency: "EUR",
@@ -30000,7 +29982,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 122.89,
+        price: 124.55,
         priceMax: 129.77,
         shipping: 6.99,
         currency: "EUR",
@@ -30010,7 +29992,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         sizePrices: [
           { size: "TU", price: 129.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065116-jaune-noir-filet-de-foot-a-11-sporti-bicolore-jaune-noir-tu" },
           { size: "TU", price: 129.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065116-blanc-bleu-filet-de-foot-a-11-sporti-bicolore-blanc-bleu-tu" },
-          { size: "TU", price: 122.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065116-blanc-vert-filet-de-foot-a-11-sporti-bicolore-blanc-vert-tu" },
+          { size: "TU", price: 124.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065116-blanc-vert-filet-de-foot-a-11-sporti-bicolore-blanc-vert-tu" },
           { size: "TU", price: 129.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065116-blanc-rouge-filet-de-foot-a-11-sporti-bicolore-blanc-rouge-tu" },
           { size: "TU", price: 129.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065116-rouge-noir-filet-de-foot-a-11-sporti-bicolore-rouge-noir-tu" },
         ],
@@ -30089,7 +30071,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.12,
+        price: 21.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42536463295&a=3013769&m=65912",
@@ -30107,7 +30089,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.55,
+        price: 20.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F064064f-filet-de-football-pliable-aluminium-sporti-blanc-120x90x70-cm",
@@ -30431,7 +30413,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.64,
+        price: 4.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229015&a=3013769&m=65912",
@@ -30440,7 +30422,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.21,
+        price: 4.34,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F065132-filet-pare-ballons-de-foot-sporti-gris-tu",
@@ -30458,7 +30440,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.2,
+        price: 5.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985449653&a=3013769&m=65912",
@@ -30467,7 +30449,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.8,
+        price: 4.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063185-haie-souple-23cm-sporti-jaune-tu",
@@ -30485,7 +30467,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.46,
+        price: 5.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985449654&a=3013769&m=65912",
@@ -30512,7 +30494,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.01,
+        price: 5.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894372&a=3013769&m=65912",
@@ -30539,7 +30521,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.88,
+        price: 3.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43183965593&a=3013769&m=65912",
@@ -30620,7 +30602,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.2,
+        price: 6.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43139497637&a=3013769&m=65912",
@@ -30647,7 +30629,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.2,
+        price: 6.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43139497636&a=3013769&m=65912",
@@ -30674,7 +30656,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.2,
+        price: 6.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940201628&a=3013769&m=65912",
@@ -30701,7 +30683,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.2,
+        price: 6.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46089286757&a=3013769&m=65912",
@@ -30830,8 +30812,8 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-sifflet-fox-sporti-jaune",
     brand: "Sporti",
-    model: "silbato de zorro Sporti - Rojo",
-    colour: "Rojo",
+    model: "silbato de zorro Sporti - Verde",
+    colour: "Verde",
     type: "silbatos",
     offers: [
       {
@@ -30839,7 +30821,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 7.36,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40109625062&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923811425&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063088-sifflet-fox.jpg&feedId=89032&k=8e06f9d69fb9030e5419dff25f8de25ca0e713ab",
         sizes: [],
       },
@@ -30890,7 +30872,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.84,
+        price: 3.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43183965650&a=3013769&m=65912",
@@ -30908,7 +30890,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 2.85,
+        price: 2.96,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F063194-sifflet-sporti-acier-cordon-gris-tu",
@@ -31124,7 +31106,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.26,
+        price: 2.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906562&a=3013769&m=65912",
@@ -31178,7 +31160,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.49,
+        price: 101.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894425&a=3013769&m=65912",
@@ -31196,7 +31178,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 99.27,
+        price: 100.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F064226-tchoukball-sporti-noir-tu",
@@ -31223,7 +31205,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.52,
+        price: 4.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698831429&a=3013769&m=65912",
@@ -31250,7 +31232,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.2,
+        price: 5.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38644193199&a=3013769&m=65912",
@@ -31277,7 +31259,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.94,
+        price: 3.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38256659012&a=3013769&m=65912",
@@ -31529,7 +31511,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.99,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923991870&a=3013769&m=65912",
@@ -31586,7 +31568,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529503052&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529503051&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Ft%2Fstanno_419103-4004_1.jpg&feedId=89032&k=1dc0673cfedbc4e26c6ed3770bc2f769113ab7d9",
         sizes: ["Junior", "Mini"],
       },
@@ -31613,7 +31595,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529503045&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529503046&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freece-australia_419103-5550_4.jpg&feedId=89032&k=0a4ed69d3718cdc4e3b663ef21f4968a91c42e3b",
         sizes: ["Junior", "Mini"],
       },
@@ -31640,7 +31622,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529503048&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529503047&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freece-australia_419103-3003_1.jpg&feedId=89032&k=1488e952b0d382d78a56f23ed5fea121e01e8766",
         sizes: ["Junior", "Mini"],
       },
@@ -31718,7 +31700,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.92,
+        price: 5.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38008618573&a=3013769&m=65912",
@@ -31727,7 +31709,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.49,
+        price: 4.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F489910-2000-filet-a-balles-1-piece-stanno-white-tu",
@@ -31745,7 +31727,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.99,
+        price: 8.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529499869&a=3013769&m=65912",
@@ -31772,7 +31754,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.98,
+        price: 33.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528998537&a=3013769&m=65912",
@@ -31781,7 +31763,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.86,
+        price: 31.26,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpoignees-amovibles-pour-exercices-sveltus-noir-tu",
@@ -31826,7 +31808,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.53,
+        price: 6.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529875708&a=3013769&m=65912",
@@ -31835,7 +31817,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.08,
+        price: 6.23,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0569-bande-de-resistance-sveltus-power-turquoise-6-5-cm",
@@ -31880,7 +31862,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.85,
+        price: 6.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515601007&a=3013769&m=65912",
@@ -31907,7 +31889,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.31,
+        price: 21.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923949941&a=3013769&m=65912",
@@ -31916,7 +31898,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.74,
+        price: 21.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0149-0-bandes-elastiques-en-sachets-sveltus-x4-bleu-rouge-noir-vert-tu",
@@ -31934,7 +31916,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.5,
+        price: 14.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923797843&a=3013769&m=65912",
@@ -31961,7 +31943,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.78,
+        price: 4.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784673&a=3013769&m=65912",
@@ -31988,16 +31970,16 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 578.25,
-        priceMax: 674.71,
+        price: 585.74,
+        priceMax: 683.44,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4000-cage-de-cross-training-sveltus-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/4/0/4000-cage_cross_training.webp",
         sizes: ["TU"],
         sizePrices: [
-          { size: "TU", price: 578.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4000-cage-de-cross-training-sveltus-noir-tu" },
-          { size: "TU", price: 674.71, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcage-de-cross-training-noir-orange-sveltus" },
+          { size: "TU", price: 585.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F4000-cage-de-cross-training-sveltus-noir-tu" },
+          { size: "TU", price: 683.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcage-de-cross-training-noir-orange-sveltus" },
         ],
       },
     ],
@@ -32011,7 +31993,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.69,
+        price: 7.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784667&a=3013769&m=65912",
@@ -32038,7 +32020,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.67,
+        price: 8.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784668&a=3013769&m=65912",
@@ -32065,7 +32047,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.64,
+        price: 9.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784669&a=3013769&m=65912",
@@ -32092,7 +32074,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.83,
+        price: 2.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515661611&a=3013769&m=65912",
@@ -32119,7 +32101,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.18,
+        price: 8.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43846836558&a=3013769&m=65912",
@@ -32128,7 +32110,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.72,
+        price: 7.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2759-cone-d-entrainement-sveltus-x4-jaune-17-50-cm",
@@ -32146,7 +32128,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.18,
+        price: 8.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43846836559&a=3013769&m=65912",
@@ -32155,7 +32137,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.72,
+        price: 7.89,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2758-cone-d-entrainement-sveltus-x4-orange-17-50-cm",
@@ -32200,7 +32182,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.16,
+        price: 23.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923797839&a=3013769&m=65912",
@@ -32227,7 +32209,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784645&a=3013769&m=65912",
@@ -32254,7 +32236,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515600821&a=3013769&m=65912",
@@ -32281,7 +32263,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.38,
+        price: 15.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515600823&a=3013769&m=65912",
@@ -32308,7 +32290,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.21,
+        price: 21.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784649&a=3013769&m=65912",
@@ -32335,7 +32317,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.32,
+        price: 17.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784642&a=3013769&m=65912",
@@ -32362,7 +32344,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.46,
+        price: 12.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784647&a=3013769&m=65912",
@@ -32443,7 +32425,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.53,
+        price: 6.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923982084&a=3013769&m=65912",
@@ -32470,7 +32452,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.22,
+        price: 10.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923982085&a=3013769&m=65912",
@@ -32547,7 +32529,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.75,
+        price: 5.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923982087&a=3013769&m=65912",
@@ -32574,7 +32556,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.31,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515601019&a=3013769&m=65912",
@@ -32583,7 +32565,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.79,
+        price: 14.05,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fechelle-d-agilite-sveltus-noir-jaune",
@@ -32601,7 +32583,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.17,
+        price: 26.59,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515601018&a=3013769&m=65912",
@@ -32610,7 +32592,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.56,
+        price: 25.97,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fechelle-training-sveltus-rouge",
@@ -32628,7 +32610,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.17,
+        price: 26.59,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529011728&a=3013769&m=65912",
@@ -32655,7 +32637,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.5,
+        price: 14.77,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784718&a=3013769&m=65912",
@@ -32682,7 +32664,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.47,
+        price: 15.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784719&a=3013769&m=65912",
@@ -32709,7 +32691,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.45,
+        price: 16.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784720&a=3013769&m=65912",
@@ -32736,7 +32718,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.64,
+        price: 9.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784717&a=3013769&m=65912",
@@ -32763,7 +32745,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.61,
+        price: 10.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36939775039&a=3013769&m=65912",
@@ -32790,7 +32772,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.58,
+        price: 11.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784716&a=3013769&m=65912",
@@ -32844,7 +32826,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.12,
+        price: 10.34,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39667381847&a=3013769&m=65912",
@@ -32853,7 +32835,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.65,
+        price: 9.85,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2751-kit-de-20-cones-d-entrainement-sveltus-multicolore-tu",
@@ -32871,7 +32853,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.47,
+        price: 15.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529524599&a=3013769&m=65912",
@@ -32889,7 +32871,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 15.22,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2752-kit-de-40-cones-d-entrainement-sveltus-multicolore-tu",
@@ -32943,7 +32925,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.32,
+        price: 17.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515600822&a=3013769&m=65912",
@@ -32970,7 +32952,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.14,
+        price: 13.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784721&a=3013769&m=65912",
@@ -32997,7 +32979,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.38,
+        price: 15.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784639&a=3013769&m=65912",
@@ -33024,7 +33006,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.38,
+        price: 15.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528964186&a=3013769&m=65912",
@@ -33051,7 +33033,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.35,
+        price: 16.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784640&a=3013769&m=65912",
@@ -33078,7 +33060,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.28,
+        price: 22.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784641&a=3013769&m=65912",
@@ -33105,7 +33087,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.21,
+        price: 21.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784638&a=3013769&m=65912",
@@ -33132,7 +33114,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.43,
+        price: 13.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784648&a=3013769&m=65912",
@@ -33159,7 +33141,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.84,
+        price: 24.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784672&a=3013769&m=65912",
@@ -33186,7 +33168,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.01,
+        price: 25.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784687&a=3013769&m=65912",
@@ -33213,7 +33195,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.2,
+        price: 18.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515601008&a=3013769&m=65912",
@@ -33240,7 +33222,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.32,
+        price: 3.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515602631&a=3013769&m=65912",
@@ -33321,7 +33303,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.64,
+        price: 9.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39643740870&a=3013769&m=65912",
@@ -33348,7 +33330,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.71,
+        price: 10.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784732&a=3013769&m=65912",
@@ -33375,7 +33357,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.58,
+        price: 4.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784650&a=3013769&m=65912",
@@ -33402,7 +33384,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.46,
+        price: 12.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39643740871&a=3013769&m=65912",
@@ -33429,7 +33411,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.99,
+        price: 17.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784733&a=3013769&m=65912",
@@ -33483,7 +33465,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.59,
+        price: 20.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529858039&a=3013769&m=65912",
@@ -33492,7 +33474,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.54,
+        price: 21.9,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fu6547-tableau-tactique-taktifol-adhesive-blanc-60x80-cm",
@@ -33510,7 +33492,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157505&a=3013769&m=65912",
@@ -33537,7 +33519,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157508&a=3013769&m=65912",
@@ -33564,7 +33546,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157507&a=3013769&m=65912",
@@ -33591,7 +33573,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157506&a=3013769&m=65912",
@@ -33618,7 +33600,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.37,
+        price: 15.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157509&a=3013769&m=65912",
@@ -33627,7 +33609,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 15.11,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2962-01-accessoire-de-marquage-coin-au-sol-tanga-sports-x5-blue-27x27-cm",
@@ -33645,7 +33627,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.37,
+        price: 15.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157512&a=3013769&m=65912",
@@ -33654,7 +33636,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 15.11,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2962-03-accessoire-de-marquage-coin-au-sol-tanga-sports-x5-yellow-27x27-cm",
@@ -33672,7 +33654,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.37,
+        price: 15.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157511&a=3013769&m=65912",
@@ -33681,7 +33663,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 15.11,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2962-02-accessoire-de-marquage-coin-au-sol-tanga-sports-x5-red-27x27-cm",
@@ -33699,7 +33681,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.37,
+        price: 15.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157510&a=3013769&m=65912",
@@ -33708,7 +33690,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 15.11,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2962-07-accessoire-de-marquage-coin-au-sol-tanga-sports-x5-green-27x27-cm",
@@ -33726,7 +33708,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157513&a=3013769&m=65912",
@@ -33735,7 +33717,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2957-01-accessoire-de-marquage-ligne-au-sol-tanga-sports-x5-blue-35x7-cm",
@@ -33753,7 +33735,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157516&a=3013769&m=65912",
@@ -33762,7 +33744,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2957-03-accessoire-de-marquage-ligne-au-sol-tanga-sports-x5-yellow-35x7-cm",
@@ -33780,7 +33762,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157514&a=3013769&m=65912",
@@ -33789,7 +33771,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2957-07-accessoire-de-marquage-ligne-au-sol-tanga-sports-x5-green-35x7-cm",
@@ -33807,7 +33789,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157501&a=3013769&m=65912",
@@ -33816,7 +33798,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2959-01-accessoire-de-marquage-au-sol-tanga-sports-x5-blue-9x18-cm",
@@ -33834,7 +33816,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157504&a=3013769&m=65912",
@@ -33843,7 +33825,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2959-03-accessoire-de-marquage-au-sol-tanga-sports-x5-yellow-9x18-cm",
@@ -33861,7 +33843,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157503&a=3013769&m=65912",
@@ -33870,7 +33852,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2959-02-accessoire-de-marquage-au-sol-tanga-sports-x5-red-9x18-cm",
@@ -33888,7 +33870,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157502&a=3013769&m=65912",
@@ -33897,7 +33879,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2959-07-accessoire-de-marquage-au-sol-tanga-sports-x5-green-9x18-cm",
@@ -33915,7 +33897,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157517&a=3013769&m=65912",
@@ -33924,7 +33906,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2958-01-accessoire-de-marquage-main-au-sol-tanga-sports-x5-blue-11x16-cm",
@@ -33942,7 +33924,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157520&a=3013769&m=65912",
@@ -33951,7 +33933,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2958-03-accessoire-de-marquage-main-au-sol-tanga-sports-x5-yellow-11x16-cm",
@@ -33969,7 +33951,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157519&a=3013769&m=65912",
@@ -33978,7 +33960,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2958-02-accessoire-de-marquage-main-au-sol-tanga-sports-x5-red-11x16-cm",
@@ -33996,7 +33978,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.4,
+        price: 14.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157518&a=3013769&m=65912",
@@ -34005,7 +33987,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.95,
+        price: 14.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2958-07-accessoire-de-marquage-main-au-sol-tanga-sports-x5-green-11x16-cm",
@@ -34023,7 +34005,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.84,
+        price: 7.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970711&a=3013769&m=65912",
@@ -34032,7 +34014,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.39,
+        price: 6.55,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff11221-02-baton-de-gymnastique-tanga-sports-red-80-cm-25-mm",
@@ -34050,7 +34032,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.58,
+        price: 18.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42028071926&a=3013769&m=65912",
@@ -34158,7 +34140,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291083419&a=3013769&m=65912",
@@ -34185,30 +34167,30 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.67,
-        priceMax: 75.03,
+        price: 21.02,
+        priceMax: 76.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970750&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fh%2Fthera-band_g2160_yellow_1.jpg&feedId=89032&k=fababc00a95c353f00280131c36bd107e0d6232b",
         sizes: ["7.5 cm", "30.5 m"],
         sizePrices: [
-          { size: "7.5 cm", price: 20.67, url: "https://www.awin1.com/pclick.php?p=42761970750&a=3013769&m=65912" },
-          { size: "30.5 m", price: 75.03, url: "https://www.awin1.com/pclick.php?p=42761970751&a=3013769&m=65912" },
+          { size: "7.5 cm", price: 21.02, url: "https://www.awin1.com/pclick.php?p=42761970750&a=3013769&m=65912" },
+          { size: "30.5 m", price: 76.08, url: "https://www.awin1.com/pclick.php?p=42761970751&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 20.11,
-        priceMax: 74.02,
+        price: 20.44,
+        priceMax: 75.04,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2160-materiel-d-entrainement-accessoire-de-musculation-thera-band-yellow",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/h/thera-band_g2160_yellow_1.jpg",
         sizes: ["7.5 cm", "30.5 m"],
         sizePrices: [
-          { size: "7.5 cm", price: 20.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2160-materiel-d-entrainement-accessoire-de-musculation-thera-band-yellow" },
-          { size: "30.5 m", price: 74.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2160-materiel-d-entrainement-accessoire-de-musculation-thera-band-yellow" },
+          { size: "7.5 cm", price: 20.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2160-materiel-d-entrainement-accessoire-de-musculation-thera-band-yellow" },
+          { size: "30.5 m", price: 75.04, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2160-materiel-d-entrainement-accessoire-de-musculation-thera-band-yellow" },
         ],
       },
     ],
@@ -34222,7 +34204,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.43,
+        price: 27.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970749&a=3013769&m=65912",
@@ -34231,7 +34213,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.81,
+        price: 27.23,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg5611-materiel-d-entrainement-accessoire-de-musculation-ballon-de-lestage-souple-thera-band-yellow-tu",
@@ -34249,7 +34231,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.44,
+        price: 22.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856373&a=3013769&m=65912",
@@ -34258,7 +34240,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.86,
+        price: 22.22,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2180-bande-de-resistance-therapeutique-thera-band-jaune-5-5-m",
@@ -34276,7 +34258,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.59,
+        price: 28.03,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41211985821&a=3013769&m=65912",
@@ -34285,7 +34267,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.97,
+        price: 27.39,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2183s-bande-de-resistance-therapeutique-thera-band-blue",
@@ -34303,7 +34285,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.57,
+        price: 23.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42517845654&a=3013769&m=65912",
@@ -34312,7 +34294,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.98,
+        price: 23.35,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2181-bande-de-resistance-therapeutique-thera-band-red-5-5-m",
@@ -34330,7 +34312,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.66,
+        price: 26.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41515023890&a=3013769&m=65912",
@@ -34339,7 +34321,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.05,
+        price: 25.45,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2182s-bande-de-resistance-therapeutique-thera-band-green",
@@ -34357,7 +34339,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.46,
+        price: 17.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444981219&a=3013769&m=65912",
@@ -34366,7 +34348,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.92,
+        price: 17.21,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2192-bande-de-resistance-therapeutique-vendu-individuellement-thera-band-black-250x12-8-cm",
@@ -34384,7 +34366,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.46,
+        price: 17.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856376&a=3013769&m=65912",
@@ -34393,7 +34375,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.92,
+        price: 17.21,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2188-bande-de-resistance-therapeutique-vendu-individuellement-thera-band-green-250x12-8-cm",
@@ -34411,7 +34393,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.8,
+        price: 22.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323058691&a=3013769&m=65912",
@@ -34420,7 +34402,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.23,
+        price: 21.57,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2840-bandes-elastique-individuel-thera-band-clx-yellow-tu",
@@ -34438,7 +34420,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.3,
+        price: 26.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856390&a=3013769&m=65912",
@@ -34447,7 +34429,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.69,
+        price: 26.1,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2843-bandes-elastique-individuel-thera-band-clx-blue-tu",
@@ -34465,7 +34447,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.93,
+        price: 23.3,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43755743149&a=3013769&m=65912",
@@ -34474,7 +34456,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.34,
+        price: 22.71,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2841-bandes-elastique-individuel-thera-band-clx-red-tu",
@@ -34492,7 +34474,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.05,
+        price: 24.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323058690&a=3013769&m=65912",
@@ -34501,7 +34483,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.46,
+        price: 23.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2842-bandes-elastique-individuel-thera-band-clx-green-tu",
@@ -34519,7 +34501,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 105.27,
+        price: 106.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45983286453&a=3013769&m=65912",
@@ -34528,7 +34510,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 104.0,
+        price: 105.41,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2241-bandes-elastique-therapeutique-sans-latex-thera-band-red-10-cm-22-86-m",
@@ -34546,7 +34528,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 112.02,
+        price: 113.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127476656&a=3013769&m=65912",
@@ -34555,7 +34537,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 110.7,
+        price: 112.2,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2242-bandes-elastique-therapeutique-sans-latex-thera-band-green-10-cm-22-86-m",
@@ -34573,7 +34555,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.8,
+        price: 22.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552707606&a=3013769&m=65912",
@@ -34582,7 +34564,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.23,
+        price: 21.57,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg5602-entraineur-de-main-thera-band-green-5-cm",
@@ -34591,6 +34573,9 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "togu-cojin-de-pelota-togu-dynair-azul",
     brand: "Togu",
@@ -34600,7 +34585,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.19,
+        price: 43.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45171887705&a=3013769&m=65912",
@@ -34609,7 +34594,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 42.44,
+        price: 43.06,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2500-01-coussin-de-balle-togu-dynair-blue-30x7-cm",
@@ -34627,7 +34612,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.94,
+        price: 50.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44790771243&a=3013769&m=65912",
@@ -34636,7 +34621,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 49.14,
+        price: 49.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2501-21-coussin-de-balle-togu-dynair-orange-o-33-cm",
@@ -34645,9 +34630,6 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "togu-cojin-de-pelota-togu-dynair-negro",
     brand: "Togu",
@@ -34657,7 +34639,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.94,
+        price: 50.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45888241302&a=3013769&m=65912",
@@ -34666,7 +34648,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 49.14,
+        price: 49.84,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2501-04-coussin-de-balle-togu-dynair-black-o-33-cm",
@@ -34684,7 +34666,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.36,
+        price: 62.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45923723480&a=3013769&m=65912",
@@ -34693,7 +34675,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 60.46,
+        price: 61.31,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2503-08-coussin-de-balle-togu-dynair-senso-turquoise-36-cm",
@@ -34711,7 +34693,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.36,
+        price: 62.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857799&a=3013769&m=65912",
@@ -34720,7 +34702,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 60.46,
+        price: 61.31,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2503-02-coussin-de-balle-togu-dynair-senso-red-36-cm",
@@ -34738,7 +34720,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.33,
+        price: 39.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857911&a=3013769&m=65912",
@@ -34747,7 +34729,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.61,
+        price: 39.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fw2919-materiel-d-entrainement-togu-brasil-aqua-x2-green-tu",
@@ -34765,7 +34747,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.36,
+        price: 53.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45242363109&a=3013769&m=65912",
@@ -34774,7 +34756,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 51.53,
+        price: 52.27,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg4154-materiel-d-entrainement-togu-brasil-base-green-60x40-cm",
@@ -34792,7 +34774,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.7,
+        price: 34.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857912&a=3013769&m=65912",
@@ -34801,7 +34783,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 33.03,
+        price: 33.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg41690-materiel-d-entrainement-togu-brasil-berry-x2-magenta-11x4-5-cm",
@@ -34819,7 +34801,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.7,
+        price: 34.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746536622&a=3013769&m=65912",
@@ -34828,7 +34810,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 33.03,
+        price: 33.53,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg4169-materiel-d-entrainement-togu-brasil-x2-green-11x4-5-cm",
@@ -34846,7 +34828,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.33,
+        price: 39.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829762993&a=3013769&m=65912",
@@ -34855,7 +34837,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 38.61,
+        price: 39.18,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2776-materiel-d-entrainement-togu-moonhopper-pink-blue-40x30-cm",
@@ -34873,7 +34855,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.23,
+        price: 28.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857915&a=3013769&m=65912",
@@ -34882,7 +34864,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.6,
+        price: 28.04,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl2964-materiel-d-entrainement-togu-noppenball-yellow-600-g",
@@ -34900,7 +34882,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.32,
+        price: 30.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857914&a=3013769&m=65912",
@@ -34909,12 +34891,66 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 29.68,
+        price: 30.14,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl2965-materiel-d-entrainement-togu-noppenball-red-800-g",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/o/togu_l2965_red_1.jpg",
         sizes: ["800 g"],
+      },
+    ],
+  },
+  {
+    id: "toolz-escala-de-coordinacion-toolz-negro",
+    brand: "Toolz",
+    model: "escala de coordinación Toolz - Negro",
+    colour: "Negro",
+    type: "material",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163944196&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fo%2Ftoolz_tec2_0.jpg&feedId=89032&k=50b578884bbe07d04b1da04beb36e2fbdb21965e",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "toolz-juego-de-4-circulos-de-marcado-toolz-verde",
+    brand: "Toolz",
+    model: "Juego de 4 círculos de marcado Toolz - Verde",
+    colour: "Verde",
+    type: "marcadores",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 15.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163832391&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fo%2Ftoolz_tc4_vert-bleu-rouge-jaune_1.jpg&feedId=89032&k=0f911415a54b97ff4f3fd697421decd557928d3a",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "toolz-paquete-de-20-conos-de-entrenamiento-toolz-verde",
+    brand: "Toolz",
+    model: "Paquete de 20 conos de entrenamiento Toolz - Verde",
+    colour: "Verde",
+    type: "conos",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 19.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163965980&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fo%2Ftoolz_tcmt20_vert-bleu-rouge-jaune_2.jpg&feedId=89032&k=becca0537063000bd6a7a795d8cc10576f0ab353",
+        sizes: [],
       },
     ],
   },
@@ -35107,7 +35143,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.92,
+        price: 5.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795286&a=3013769&m=65912",
@@ -35134,7 +35170,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.85,
+        price: 3.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795284&a=3013769&m=65912",
@@ -35350,7 +35386,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.23,
+        price: 4.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795285&a=3013769&m=65912",
@@ -35395,7 +35431,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.44,
+        price: 27.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffi5-bandes-elastique-tremblay-ct-bleu-20-kg",
@@ -35422,7 +35458,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.27,
+        price: 12.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38259046873&a=3013769&m=65912",
@@ -35431,7 +35467,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.8,
+        price: 12.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffi0170-push-up-bar-tremblay-x2-noir-tu",
@@ -35476,7 +35512,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.29,
+        price: 8.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795179&a=3013769&m=65912",
@@ -35485,7 +35521,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.83,
+        price: 8.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsocle-caoutchouc-tremblay-noir-tu",
@@ -35503,7 +35539,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.52,
+        price: 8.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784739&a=3013769&m=65912",
@@ -35512,7 +35548,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.06,
+        price: 8.24,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsocle-multi-activites",
@@ -35557,7 +35593,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.66,
+        price: 11.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923787910&a=3013769&m=65912",
@@ -35584,7 +35620,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.84,
+        price: 6.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38532986937&a=3013769&m=65912",
@@ -35611,7 +35647,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.31,
+        price: 4.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923786953&a=3013769&m=65912",
@@ -35665,7 +35701,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.92,
+        price: 5.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625576&a=3013769&m=65912",
@@ -35692,7 +35728,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.92,
+        price: 5.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529024575&a=3013769&m=65912",
@@ -35719,10 +35755,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.77,
+        price: 4.91,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923783825&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485364769&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F5%2F1506.jpg&feedId=89032&k=9e6a91733f99ccaa5af41671d6f2b284487b21e8",
         sizes: ["S", "L"],
       },
@@ -35746,10 +35782,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.77,
+        price: 4.91,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36617199079&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36617199078&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F5%2F1506.jpg&feedId=89032&k=9e6a91733f99ccaa5af41671d6f2b284487b21e8",
         sizes: ["S", "L"],
       },
@@ -35773,7 +35809,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.77,
+        price: 4.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37991529216&a=3013769&m=65912",
@@ -35800,7 +35836,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.69,
+        price: 5.84,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530110284&a=3013769&m=65912",
@@ -36019,8 +36055,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 3.7,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38713844706&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_bleu.jpg&feedId=89032&k=df6fe9495fff0c7ed2833ce06c6a7b99e1f2fb3e",
+        url: "https://www.awin1.com/pclick.php?p=38018918182&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_6.jpg&feedId=89032&k=02dac09a6149a8b7d24fb41bba76970c5efe9be1",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36046,7 +36082,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 3.7,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37890064168&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923787291&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_blanc.jpg&feedId=89032&k=2a01c2ae71816ae59f8647cad6f93a9c9b6558e6",
         sizes: ["XS", "S", "L"],
       },
@@ -36073,7 +36109,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 3.7,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923782925&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39125139424&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_orange.jpg&feedId=89032&k=c1a7d045f9de7b35ec7b7f2db682fc2492e3b954",
         sizes: ["XS", "S"],
       },
@@ -36154,8 +36190,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 3.7,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38797029685&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_4_1.jpg&feedId=89032&k=896db460f187e48e6fe1dac436ad07aefceb442a",
+        url: "https://www.awin1.com/pclick.php?p=39125139425&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_rose.jpg&feedId=89032&k=f0642a1569af0f39dc5d7a32f34ca1dc6f0a48e1",
         sizes: ["S", "L"],
       },
       {
@@ -36181,8 +36217,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 3.7,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39232242658&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_vert.jpg&feedId=89032&k=598fe27801c21779a54146d1b190c82d09e7f7ad",
+        url: "https://www.awin1.com/pclick.php?p=37078614384&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_5_1.jpg&feedId=89032&k=6710938794e05e5dc07bde3c7903b67f4ef2cb94",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36208,8 +36244,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 3.7,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923783659&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F153-violet.jpg&feedId=89032&k=344bc6cfdc7cf39247ba06a572676e439ede0b2b",
+        url: "https://www.awin1.com/pclick.php?p=37514082800&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_3_1.jpg&feedId=89032&k=77a0d1eaa8a6d65c96b2a5ef739ec194393d5ac8",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36232,7 +36268,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.84,
+        price: 4.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530110276&a=3013769&m=65912",
@@ -36259,7 +36295,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.84,
+        price: 4.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530110277&a=3013769&m=65912",
@@ -36286,7 +36322,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.84,
+        price: 4.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530110278&a=3013769&m=65912",
@@ -36313,7 +36349,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.84,
+        price: 4.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530110279&a=3013769&m=65912",
@@ -36334,8 +36370,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "tremblay-ct-cono-40-cm-amarillo",
     brand: "Tremblay CT",
-    model: "Cono 40 cm - Azul",
-    colour: "Azul",
+    model: "Cono 40 cm - Verde",
+    colour: "Verde",
     type: "conos",
     offers: [
       {
@@ -36343,7 +36379,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 6.18,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37687540350&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40109625056&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Fac600_1.jpg&feedId=89032&k=f6d5d7c76e5b6ab5e1cc9f42b9007c3f5bcba0f4",
         sizes: [],
       },
@@ -36367,7 +36403,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.92,
+        price: 5.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530112947&a=3013769&m=65912",
@@ -36376,7 +36412,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.49,
+        price: 4.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen429-0-54-cone-d-entrainement-extra-souple-tremblay-ct-violet-18-cm",
@@ -36394,7 +36430,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.54,
+        price: 4.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625058&a=3013769&m=65912",
@@ -36403,7 +36439,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.11,
+        price: 4.24,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen429-0-50-cone-extra-souple-18-cm-rouge",
@@ -36448,7 +36484,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.39,
+        price: 3.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530112949&a=3013769&m=65912",
@@ -36457,7 +36493,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.0,
+        price: 3.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen130-0-30-cone-d-entrainement-souples-mini-tremblay-ct-jaune-5x5x9-cm",
@@ -36475,7 +36511,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.39,
+        price: 3.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530112948&a=3013769&m=65912",
@@ -36484,7 +36520,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.0,
+        price: 3.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen130-0-40-cone-d-entrainement-souples-mini-tremblay-ct-bleu-5x5x9-cm",
@@ -36502,7 +36538,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.39,
+        price: 3.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530112950&a=3013769&m=65912",
@@ -36511,7 +36547,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.0,
+        price: 3.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen130-0-52-cone-d-entrainement-souples-mini-tremblay-ct-orange-5x5x9-cm",
@@ -36529,7 +36565,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.39,
+        price: 3.52,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530112951&a=3013769&m=65912",
@@ -36538,7 +36574,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 3.0,
+        price: 3.08,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen130-0-70-cone-d-entrainement-souples-mini-tremblay-ct-vert-5x5x9-cm",
@@ -36610,7 +36646,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 80.0,
+        price: 80.3,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795178&a=3013769&m=65912",
@@ -36637,7 +36673,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.89,
+        price: 12.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37813430407&a=3013769&m=65912",
@@ -36646,7 +36682,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.4,
+        price: 11.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fej805-desinfectant-et-desodorisant-blanc-tu",
@@ -36679,6 +36715,33 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen253-0-30-double-echelle-d-entr-4-m-jaune-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/a/napapijri_np0a4g5g-gae_001.webp",
         sizes: ["TU"],
+      },
+    ],
+  },
+  {
+    id: "tremblay-ct-escala-de-ritmo-simple-azul",
+    brand: "Tremblay CT",
+    model: "Echelle de rythme simple - Jaune",
+    colour: "Jaune",
+    type: "escaleras",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 14.49,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen252-0-30-echelle-de-rythme-simple-4-m-jaune-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/n/en252.webp",
+        sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 15.05,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40109625120&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fr%2Ftremblay-ct_en252_bleu_1.jpg&feedId=89032&k=faddde85185dfaddc77b2035c9214519517a5dcd",
+        sizes: [],
       },
     ],
   },
@@ -36791,33 +36854,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-escala-de-ritmo-simple-amarillo",
-    brand: "Tremblay CT",
-    model: "Escala de ritmo simple - Amarillo",
-    colour: "Amarillo",
-    type: "escaleras",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 15.05,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40109625065&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fn%2Fen252.jpg&feedId=89032&k=babb8be7860c96f6b38c54d77c450a1eba44da9a",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 14.49,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen252-0-30-echelle-de-rythme-simple-4-m-jaune-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/n/en252.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
     id: "tremblay-ct-escala-de-ritmos-cruzados-de-tremblay-amarillo",
     brand: "Tremblay CT",
     model: "Escala de ritmos cruzados de Tremblay - Amarillo",
@@ -36907,7 +36943,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.81,
+        price: 12.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795183&a=3013769&m=65912",
@@ -36916,7 +36952,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.32,
+        price: 11.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fechelle-de-rythme-simple-tremblay-jaune-tu",
@@ -37006,7 +37042,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.01,
+        price: 26.58,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fent350-0-30-implants-et-enfoncoir-marquage-sol-tremblay-ct-x25-jaune-tu",
@@ -37060,7 +37096,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 2.85,
+        price: 2.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791935&a=3013769&m=65912",
@@ -37114,7 +37150,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.92,
+        price: 5.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38469642454&a=3013769&m=65912",
@@ -37132,7 +37168,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.49,
+        price: 4.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhaie-tremblay-15-cm-jaune-tu",
@@ -37159,7 +37195,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.28,
+        price: 10.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795177&a=3013769&m=65912",
@@ -37168,7 +37204,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.8,
+        price: 10.01,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpochette-support-pedagogique-tremblay-jaune-tu",
@@ -37261,17 +37297,17 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "tremblay-ct-latte-de-marquage-orange",
     brand: "Tremblay CT",
-    model: "Listón de marcado - Naranja",
-    colour: "Naranja",
+    model: "Listón de marcado - Azul",
+    colour: "Azul",
     type: "marcadores",
     offers: [
       {
         store: "FootStoreES",
-        price: 3.31,
+        price: 3.44,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923802113&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fy%2Fgy22_1.jpg&feedId=89032&k=229e9f8c09971b2efdff113d9506e723070e7711",
+        url: "https://www.awin1.com/pclick.php?p=37923784596&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fy%2Fgy22_3.jpg&feedId=89032&k=21efdebda0a1cfb0c46b036ffaa98e18f96a52df",
         sizes: [],
       },
       {
@@ -37510,7 +37546,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.54,
+        price: 3.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386070&a=3013769&m=65912",
@@ -37537,7 +37573,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.54,
+        price: 3.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386069&a=3013769&m=65912",
@@ -37564,7 +37600,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.54,
+        price: 3.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386071&a=3013769&m=65912",
@@ -37591,7 +37627,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.54,
+        price: 3.67,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386072&a=3013769&m=65912",
@@ -37618,7 +37654,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.6,
+        price: 9.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784750&a=3013769&m=65912",
@@ -37637,18 +37673,18 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-marcado-temporal-de-tremblay-rojo",
+    id: "tremblay-ct-marcado-temporal-de-tremblay-blanco",
     brand: "Tremblay CT",
-    model: "Marcado temporal de Tremblay - Rojo",
-    colour: "Rojo",
+    model: "Marcado temporal de Tremblay - Blanco",
+    colour: "Blanco",
     type: "marcadores",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.6,
+        price: 9.8,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923795301&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40109625572&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Ft%2Fat007.jpg&feedId=89032&k=0389001f2995ce57668e3effaf06ea6d482be94a",
         sizes: [],
       },
@@ -37681,7 +37717,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.8,
+        price: 5.93,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fen312-f-feutres-pour-taktifol-x2-noir-tu",
@@ -37699,7 +37735,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.31,
+        price: 3.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386073&a=3013769&m=65912",
@@ -37834,7 +37870,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.62,
+        price: 3.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386068&a=3013769&m=65912",
@@ -37915,7 +37951,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.92,
+        price: 6.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923880993&a=3013769&m=65912",
@@ -38062,7 +38098,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 6.5,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923796069&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923783573&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1504_1.jpg&feedId=89032&k=891ca166adcbe6c0370a77499d191c3c553345d5",
         sizes: ["S", "L"],
       },
@@ -38248,10 +38284,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.47,
+        price: 3.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787901&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485364944&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38275,10 +38311,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.47,
+        price: 3.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36509151595&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923787906&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38302,10 +38338,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.47,
+        price: 3.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787908&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39523385041&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38329,10 +38365,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.47,
+        price: 3.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787904&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923787905&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38356,10 +38392,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.47,
+        price: 3.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37936445553&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485364947&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38383,10 +38419,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.47,
+        price: 3.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787902&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923787900&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38464,7 +38500,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.37,
+        price: 7.55,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37890064122&a=3013769&m=65912",
@@ -38482,7 +38518,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.44,
+        price: 8.62,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F21001-plaquette-d-entrainement-recto-verso-avec-demi-terrain-vert-blanc-tu",
@@ -38689,7 +38725,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.97,
+        price: 11.49,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiffd-sifflet-avec-attache-doigt-tremblay-ct-fox-40-noir-tu",
@@ -38770,7 +38806,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.07,
+        price: 7.24,
         priceMax: 7.5,
         shipping: 7.99,
         currency: "EUR",
@@ -38789,7 +38825,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.05,
+        price: 6.21,
         priceMax: 6.69,
         shipping: 6.99,
         currency: "EUR",
@@ -38799,7 +38835,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         sizePrices: [
           { size: "TU", price: 6.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-50-sifflet-fox-40-rouge-tu" },
           { size: "TU", price: 6.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-40-sifflet-fox-40-bleu-tu" },
-          { size: "TU", price: 6.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-37-sifflet-fox-40-jaune-fluo-tu" },
+          { size: "TU", price: 6.21, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-37-sifflet-fox-40-jaune-fluo-tu" },
           { size: "TU", price: 6.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-52-sifflet-fox-40-orange-tu" },
           { size: "TU", price: 6.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-20-sifflet-fox-40-blanc-tu" },
           { size: "TU", price: 6.69, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsiff-0-54-sifflet-fox-40-violet-tu" },
@@ -38846,10 +38882,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-silbato-tremblay-fox-40-sharx-negro",
+    id: "tremblay-ct-silbato-tremblay-fox-40-sharx-amarillo",
     brand: "Tremblay CT",
-    model: "Silbato Tremblay fox 40 sharx - Negro",
-    colour: "Negro",
+    model: "Silbato Tremblay fox 40 sharx - Amarillo",
+    colour: "Amarillo",
     type: "silbatos",
     offers: [
       {
@@ -38857,7 +38893,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 14.73,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40109625566&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40109625565&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fi%2Fsiffs.jpg&feedId=89032&k=c7d215f8b9cd335d017ef2411fb552578b080892",
         sizes: [],
       },
@@ -39025,7 +39061,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.29,
+        price: 8.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795289&a=3013769&m=65912",
@@ -39052,7 +39088,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.91,
+        price: 7.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795287&a=3013769&m=65912",
@@ -39079,7 +39115,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.6,
+        price: 7.78,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795288&a=3013769&m=65912",
@@ -39106,7 +39142,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.23,
+        price: 5.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40174224113&a=3013769&m=65912",
@@ -39115,7 +39151,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.9,
+        price: 4.93,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhaie-tremblay-30-cm-vert-tu",
@@ -39133,7 +39169,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.45,
+        price: 6.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44672101142&a=3013769&m=65912",
@@ -39142,7 +39178,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.0,
+        price: 6.16,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7350105780202-bandes-elastique-trend-rehab-x3-noir-bleu-rouge-15-11-11-cm",
@@ -39192,15 +39228,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642866&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fu%2Ff%2Fufe_ufa198l_yellow_1.jpg&feedId=89032&k=254343f719150675aeca3810757694ff34c2e647",
-        sizes: ["200 cm"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 3.98,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa198l-bande-de-resistance-en-tissu-ufe-yellow-200-cm",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/u/f/ufe_ufa198l_yellow_1.jpg",
         sizes: ["200 cm"],
       },
     ],
@@ -39268,7 +39295,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.3,
+        price: 8.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642869&a=3013769&m=65912",
@@ -39277,7 +39304,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.0,
+        price: 8.02,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa219m-bande-de-resistance-en-tpe-ufe-red-200-cm",
@@ -39295,7 +39322,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.04,
+        price: 7.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642868&a=3013769&m=65912",
@@ -39304,7 +39331,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 6.59,
+        price: 6.75,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa219l-bande-de-resistance-en-tpe-ufe-purple-200-cm",
@@ -39322,7 +39349,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.58,
+        price: 4.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642870&a=3013769&m=65912",
@@ -39331,16 +39358,16 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
-        priceMax: 6.49,
+        price: 4.28,
+        priceMax: 6.65,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197xs-bande-de-resistance-ufe-bleu-xs",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/u/f/ufe_ufa197xs_bleu_1.jpg",
         sizes: ["XS", "150 cm"],
         sizePrices: [
-          { size: "XS", price: 4.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197xs-bande-de-resistance-ufe-bleu-xs" },
-          { size: "150 cm", price: 6.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa193l-bande-de-resistance-ufe-blue-150-cm" },
+          { size: "XS", price: 4.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197xs-bande-de-resistance-ufe-bleu-xs" },
+          { size: "150 cm", price: 6.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa193l-bande-de-resistance-ufe-blue-150-cm" },
         ],
       },
     ],
@@ -39354,7 +39381,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.94,
+        price: 7.11,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642871&a=3013769&m=65912",
@@ -39372,7 +39399,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.19,
+        price: 12.43,
         priceMax: 24.0,
         shipping: 7.99,
         currency: "EUR",
@@ -39382,8 +39409,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         sizePrices: [
           { size: "XS", price: 17.35, url: "https://www.awin1.com/pclick.php?p=42529642875&a=3013769&m=65912" },
           { size: "S", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529642874&a=3013769&m=65912" },
-          { size: "M", price: 16.05, url: "https://www.awin1.com/pclick.php?p=42529642873&a=3013769&m=65912" },
-          { size: "L", price: 12.19, url: "https://www.awin1.com/pclick.php?p=42529642872&a=3013769&m=65912" },
+          { size: "M", price: 16.34, url: "https://www.awin1.com/pclick.php?p=42529642873&a=3013769&m=65912" },
+          { size: "L", price: 12.43, url: "https://www.awin1.com/pclick.php?p=42529642872&a=3013769&m=65912" },
         ],
       },
       {
@@ -39413,7 +39440,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.58,
+        price: 4.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642876&a=3013769&m=65912",
@@ -39422,16 +39449,16 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
-        priceMax: 7.38,
+        price: 4.28,
+        priceMax: 7.55,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197m-bande-de-resistance-ufe-rouge-tu",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/u/f/ufe_ufa197m_rouge_1.jpg",
         sizes: ["TU"],
         sizePrices: [
-          { size: "TU", price: 7.38, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa193m-bande-de-resistance-ufe-rouge-rouge-tu" },
-          { size: "TU", price: 4.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197m-bande-de-resistance-ufe-rouge-tu" },
+          { size: "TU", price: 7.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa193m-bande-de-resistance-ufe-rouge-rouge-tu" },
+          { size: "TU", price: 4.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197m-bande-de-resistance-ufe-rouge-tu" },
         ],
       },
     ],
@@ -39445,7 +39472,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.84,
+        price: 8.03,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642877&a=3013769&m=65912",
@@ -39454,6 +39481,9 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk9: TrainingProduct[] = [
   {
     id: "ufe-banda-de-resistencia-ufe-verde",
     brand: "UFE",
@@ -39463,7 +39493,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.58,
+        price: 4.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642878&a=3013769&m=65912",
@@ -39472,16 +39502,16 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
-        priceMax: 8.36,
+        price: 4.28,
+        priceMax: 8.54,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197s-bande-de-resistance-ufe-vert-tu",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/u/f/ufe_ufa197s_vert_1.jpg",
         sizes: ["TU", "150 cm"],
         sizePrices: [
-          { size: "TU", price: 4.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197s-bande-de-resistance-ufe-vert-tu" },
-          { size: "150 cm", price: 8.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa193s-bande-de-resistance-ufe-vert-vert-150-cm" },
+          { size: "TU", price: 4.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197s-bande-de-resistance-ufe-vert-tu" },
+          { size: "150 cm", price: 8.54, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa193s-bande-de-resistance-ufe-vert-vert-150-cm" },
         ],
       },
     ],
@@ -39495,7 +39525,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.83,
+        price: 9.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642879&a=3013769&m=65912",
@@ -39513,7 +39543,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.58,
+        price: 4.72,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642880&a=3013769&m=65912",
@@ -39522,7 +39552,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 4.15,
+        price: 4.28,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fufa197l-bande-de-resistance-ufe-violet-tu",
@@ -39585,9 +39615,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk9: TrainingProduct[] = [
   {
     id: "ufe-mango-de-la-bomba-ufe-negro",
     brand: "UFE",
@@ -39942,7 +39969,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
         price: 9.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39262204033&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39783212267&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100321801_change.jpg&feedId=89032&k=07e80baf5227d23294ec3e9198f1cd5ed596c0eb",
         sizes: ["M/L", "XL/2XL", "12/14 ans"],
       },
@@ -39966,7 +39993,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.0,
+        price: 17.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923786394&a=3013769&m=65912",
@@ -40116,7 +40143,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
         priceMax: 7.33,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40663921805&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923789119&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100335303.jpg&feedId=89032&k=f1e218bed31099d7976a1b2c33b1ecbf318f922b",
         sizes: ["XS/S", "M/L", "XL/2XL"],
         sizePrices: [
@@ -40136,8 +40163,8 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.4,
-        priceMax: 5.53,
+        price: 5.22,
+        priceMax: 5.4,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo",
@@ -40145,7 +40172,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
         sizes: ["XS/S", "M/L", "XL/2XL"],
         sizePrices: [
           { size: "XS/S", price: 5.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
-          { size: "M/L", price: 5.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
+          { size: "M/L", price: 5.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
           { size: "XL/2XL", price: 5.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335303-chasuble-uhlsport-training-bib-vert-fluo" },
         ],
       },
@@ -40632,7 +40659,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 65.08,
+        price: 66.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610323&a=3013769&m=65912",
@@ -40641,7 +40668,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 64.15,
+        price: 65.05,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fvf08003-materiel-d-entrainement-virtufit-xl-zwart-65x65x65-cm",
