@@ -39,7 +39,12 @@ export default function SectionsMenu() {
     { label: t.tickets.navLabel, href: SECTION_PATHS[8], photo: SECTION_PHOTOS[8] },
     { label: t.ropa.navLabel, href: SECTION_PATHS[9], photo: SECTION_PHOTOS[9] },
     { label: t.entrenamiento.navLabel, href: SECTION_PATHS[10], photo: SECTION_PHOTOS[10] },
-  ].sort((a, b) => (a.label ?? "").localeCompare(b.label ?? ""));
+  ].sort(
+    (a, b) =>
+      // Botas siempre arriba (la que más deja por clic); el resto, alfabético.
+      Number(b.href === SECTION_PATHS[5]) - Number(a.href === SECTION_PATHS[5]) ||
+      (a.label ?? "").localeCompare(b.label ?? ""),
+  );
 
   useEffect(() => {
     if (!open) return;

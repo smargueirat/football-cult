@@ -6,6 +6,7 @@ import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { brandFacets, brandGroundCombos, byBrand, byBrandGround, byGround, cheapestFirst, groundFacets } from "@/lib/gearHubs";
 import BootDetailClient from "./BootDetailClient";
+import { archiveStatsFor } from "@/lib/priceArchive";
 
 const SITE_URL = "https://football-cult.com";
 
@@ -136,7 +137,7 @@ export default async function BootDetailPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <BootDetailClient boot={boot} />
+      <BootDetailClient boot={boot} archiveStats={archiveStatsFor(boot.offers.map((o) => o.url))} />
     </>
   );
 }

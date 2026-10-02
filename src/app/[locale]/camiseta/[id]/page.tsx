@@ -11,6 +11,7 @@ import {
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
+import { archiveStatsFor } from "@/lib/priceArchive";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { HUB } from "@/lib/hubStrings";
 import { TITLE_SUFFIX, ageGroupLabel } from "@/lib/categoryMeta";
@@ -244,6 +245,7 @@ export default async function JerseyDetailPage({
         product={product}
         priceHistory={priceHistory}
         sameTeamProducts={sameTeamProducts}
+        archiveStats={archiveStatsFor(product.offers.map((o) => o.url))}
         manufacturerCode={productMpn(product.offers)}
       />
       <JerseyFaq product={product} locale={locale} />

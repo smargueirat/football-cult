@@ -30,6 +30,10 @@ import HeritageStory from "./HeritageStory";
 import JerseyGallery from "./JerseyGallery";
 import PriceAlertInline from "./PriceAlertInline";
 import PriceHistorySparkline from "./PriceHistorySparkline";
+import PriceArchiveLine from "./PriceArchiveLine";
+import StickyBestOfferBar from "./StickyBestOfferBar";
+import { savingsVsMedian } from "@/lib/offerStats";
+import type { OfferPriceStats } from "@/lib/priceArchive";
 import ReportProductModal from "./ReportProductModal";
 
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
@@ -70,12 +74,16 @@ export default function JerseyDetailClient({
   priceHistory,
   sameTeamProducts,
   manufacturerCode,
+  archiveStats = {},
 }: {
   product: Product;
   priceHistory: Record<string, { date: string; price: number }[]>;
   sameTeamProducts: Product[];
   /** Código del fabricante ("KC3993"), si alguna tienda lo publica. */
   manufacturerCode?: string;
+  /** Mínimo/mediana del archivo durable de precios, por URL de oferta.
+   *  Solo trae las ofertas con historial suficiente (>= 14 días). */
+  archiveStats?: Record<string, OfferPriceStats>;
 }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
@@ -228,6 +236,21 @@ export default function JerseyDetailClient({
               100
           ),
         }
+      : undefined;
+  // Ahorro frente a la MEDIANA de las tiendas (no frente a la más cara, que
+  // suele ser un valor atípico). Hace falta 1 oferta por tienda real (los
+  // espejos cuentan una) y al menos 3 tiendas; con menos, se cae al
+  // ahorro simple de arriba, que con 2 tiendas ES la comparación contra la
+  // otra.
+  const medianSavings = savingsVsMedian(
+    comparable.map((o) => ({ store: o.store, total: offerTotalInEUR(o) })),
+  );
+  const shownSavings = medianSavings
+    ? medianSavings.abs >= 1
+      ? { abs: medianSavings.abs, pct: medianSavings.pct, text: t.detail.savingsVsMedian.replace("{n}", String(medianSavings.stores)) }
+      : undefined
+    : savings && savings.abs >= 1
+      ? { abs: savings.abs, pct: savings.pct, text: t.detail.savings }
       : undefined;
   // Fecha real del último snapshot de precio (track_price_drops.mts corre
   // a diario, ver PriceHistorySparkline más abajo) -- nunca un texto tipo
@@ -384,13 +407,14 @@ export default function JerseyDetailClient({
             >
               {t.detail.authenticityGuideLink}
             </Link>
-            {savings && savings.abs >= 1 && (
+            {shownSavings && (
               <p className="mt-2 inline-flex rounded-lg bg-[#1B3B2B]/10 px-3 py-1.5 text-sm font-medium text-[#1B3B2B]">
-                {t.detail.savings
-                  .replace("{amount}", formatOfferMoney(savings.abs, "EUR"))
-                  .replace("{pct}", String(savings.pct))}
+                {shownSavings.text
+                  .replace("{amount}", formatOfferMoney(shownSavings.abs, "EUR"))
+                  .replace("{pct}", String(shownSavings.pct))}
               </p>
             )}
+            <PriceArchiveLine stats={bestOffer ? (archiveStats[bestOffer.url] ?? null) : null} />
             {lastUpdatedDate && (
               <p className="text-xs text-[#9a9a94]">
                 {t.detail.pricesUpdatedOn.replace(
@@ -399,6 +423,17 @@ export default function JerseyDetailClient({
                 )}
               </p>
             )}
+            {/* Canal público de bajadas. No hay "seguir a este equipo" a
+                propósito: el bot no tiene servidor que reciba el /start
+                (ver el informe), así que no se promete aviso por equipo. */}
+            <a
+              href="https://t.me/FootballCultOfertas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[#675c44] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+            >
+              {t.priceDrop.channelCta} · {t.priceDrop.channelLink} →
+            </a>
             {/* Mismo toggleFavorite que el corazón de la foto (favoritar YA
                 suscribe a la alerta de precio por mail, ver
                 FavoritesContext.tsx) -- esto solo lo hace visible acá, en
@@ -817,36 +852,48 @@ export default function JerseyDetailClient({
         />
       )}
 
-      {/* Barra fija inferior en mobile: precio mínimo siempre a la vista
-          mientras se navega la página, con acceso directo a la
-          comparativa completa sin tener que buscarla. */}
-      {bestOffer && (
-        <div className="shadow-vintage-lg fixed inset-x-0 bottom-0 z-40 border-t border-[#C9A24B]/30 bg-[#fffdf8]/95 backdrop-blur-md lg:hidden">
-          <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-            <div>
-              <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
-                {t.detail.from}
-              </p>
-              <p className="text-lg font-semibold text-[#B45309]">
-                {(() => {
-                  const bestLive = isEbayStore(bestOffer.store) ? liveEbayCosts[bestOffer.url] : null;
-                  const bestLiveTotal =
-                    bestLive && bestLive.currency === bestOffer.currency
-                      ? bestOffer.price + bestLive.shipping + (bestLive.importCharges ?? 0)
-                      : null;
-                  return formatOfferMoney(bestLiveTotal ?? offerTotal(bestOffer), bestOffer.currency);
-                })()}
-              </p>
-            </div>
-            <a
-              href={`#${OFFERS_SECTION_ID}`}
-              className="flex items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 py-2.5 text-sm font-medium text-[#F3E9C9]"
-            >
-              {t.detail.viewFullComparison}
-            </a>
-          </div>
-        </div>
-      )}
+      {/* Barra fija inferior en mobile: UN toque va a la mejor tienda, con
+          la tienda y el total a la vista (antes llevaba a la comparativa y
+          había que tocar otra vez). La comparativa completa sigue abajo. */}
+      {bestOffer &&
+        (() => {
+          const bestLive = isEbayStore(bestOffer.store) ? liveEbayCosts[bestOffer.url] : null;
+          const bestLiveTotal =
+            bestLive && bestLive.currency === bestOffer.currency
+              ? bestOffer.price + bestLive.shipping + (bestLive.importCharges ?? 0)
+              : null;
+          const barTotal = bestLiveTotal ?? offerTotal(bestOffer);
+          return (
+            <StickyBestOfferBar
+              hideFrom="lg"
+              store={bestOffer.store}
+              total={formatOfferMoney(barTotal, bestOffer.currency)}
+              fromLabel={t.detail.total}
+              goLabel={t.detail.goToStore.replace("{store}", bestOffer.store)}
+              href={goHref({
+                kind: "j",
+                productId: product.id,
+                url: bestOffer.url,
+                locale,
+                origin: "ficha",
+                position: 1,
+                isBest: true,
+              })}
+              onClick={() =>
+                trackOfferClick({
+                  productId: product.id,
+                  position: 1,
+                  isBest: true,
+                  version: offerVersion(bestOffer),
+                  store: bestOffer.store,
+                  url: bestOffer.url,
+                  price: barTotal,
+                  currency: bestOffer.currency,
+                })
+              }
+            />
+          );
+        })()}
     </div>
   );
 }

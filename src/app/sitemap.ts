@@ -14,6 +14,9 @@ import { brandFacets, brandGroundCombos, groundFacets, groundSlug, typeFacets } 
 import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
 import { indexPaths } from "@/lib/catalogIndex";
 import { GUIDE_SLUGS } from "@/lib/guides";
+import { archive, lastChangeDate } from "@/lib/priceArchive";
+import { retailerFamilyLocal } from "@/lib/retailerFamilyLocal";
+import firstSeen from "@/data/productFirstSeen.json";
 
 const BASE_URL = "https://football-cult.com";
 // Dos límites reales, no solo el de Google (50.000 URLs/sitemap,
@@ -47,8 +50,55 @@ const CHUNK_SIZE = 5000;
 // desindexa nada: esas páginas siguen existiendo, siguen enlazadas desde
 // las categorías y cualquiera puede entrar -- simplemente dejamos de
 // pedirle a Google que gaste rastreo en ellas.
-function comparable<T extends { offers: unknown[] }>(items: T[]): T[] {
-  return items.filter((i) => i.offers.length >= 2);
+// (Era `comparable()`: filtraba por offers.length >= 2. Reemplazado por los
+// tiers de abajo, que cuentan tiendas distintas y no ofertas.)
+
+// TIERS POR CALIDAD REAL (2026-10-02). La poda de arriba separaba "2+
+// ofertas" de "el resto" contando ofertas, y eso no es lo que Google
+// valora: dos ofertas de FootStoreES y FootStoreFR son UNA tienda
+// (espejo), y una ficha sin foto o sin precio vigente es delgada aunque
+// tenga tres ofertas. Ahora cada ficha cae en un tier y cada tier va en
+// archivos de sitemap propios, en este orden:
+//   A  2+ tiendas DISTINTAS (familias, no nombres) + foto real + precio
+//      vigente: lo único que de verdad compara. Va en los primeros
+//      archivos, pegado a las páginas fijas y los hubs.
+//   B  el resto de las que tienen al menos un precio vigente.
+//   C  tienen ofertas pero ninguna con precio > 0 (hoy no muestran nada).
+// Las fichas SIN ofertas no entran (no hay qué comparar).
+// Nada se borra: las páginas siguen existiendo y enlazadas. Cada tier va en
+// archivos separados a propósito -- Search Console reporta indexación por
+// archivo, así se mide cuál rinde, y si B o C estorbaran al rastreo se
+// apagan quitándolos de SITEMAP_TIERS sin tocar nada más.
+const SITEMAP_TIERS = ["A", "B", "C"] as const;
+type Tier = (typeof SITEMAP_TIERS)[number];
+
+type Tierable = {
+  id: string;
+  offers: readonly { store: string; price: number; imageUrl?: string; url: string }[];
+};
+
+function tierOf(item: Tierable): Tier | null {
+  const priced = item.offers.filter((o) => o.price > 0);
+  if (item.offers.length === 0) return null;
+  if (priced.length === 0) return "C";
+  const families = new Set(priced.map((o) => retailerFamilyLocal(o.store)));
+  const hasPhoto = priced.some((o) => !!o.imageUrl);
+  return families.size >= 2 && hasPhoto ? "A" : "B";
+}
+
+/** Fecha REAL de la última modificación de la ficha: el último cambio de
+ *  precio (o oferta nueva) archivado en alguna de sus ofertas, o el día en
+ *  que apareció. undefined si no hay ninguna: sin fecha antes que una
+ *  inventada (poner "hoy" en decenas de miles de URLs enseña a Google a
+ *  ignorar el campo). */
+function lastModOf(item: Tierable): string | undefined {
+  const a = archive();
+  let best = (firstSeen as Record<string, string>)[item.id] ?? "";
+  for (const o of item.offers) {
+    const d = lastChangeDate(o.url, a);
+    if (d && d > best) best = d;
+  }
+  return best || undefined;
 }
 
 // UNA entrada por página, no cinco (2026-09-27).
@@ -81,7 +131,7 @@ function languagesFor(path: string) {
   ]) as Record<string, string>;
 }
 
-function allRoutes(): MetadataRoute.Sitemap {
+function buildGroups(): { groups: MetadataRoute.Sitemap[]; counts: Record<Tier, number> } {
   const staticPaths = [
     "",
     "/sobre-nosotros",
@@ -113,7 +163,6 @@ function allRoutes(): MetadataRoute.Sitemap {
   const staticRoutes = staticPaths.flatMap((path) =>
     SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
       alternates: { languages: languagesFor(path) },
     }))
   );
@@ -142,6 +191,7 @@ function allRoutes(): MetadataRoute.Sitemap {
     // desincronizar al agregar una guía nueva.
     ...GUIDE_SLUGS.map((g) => `/guia/${g}`),
     "/estudios/precios-camisetas",
+    "/estudios/indice-precios",
     // Índice rastreable del catálogo: 445 URLs que le dan a 8.680 fichas
     // su primer enlace interno real (ver src/lib/catalogIndex.ts).
     ...indexPaths().map(({ section, page }) => `/indice/${section}/${page}`),
@@ -152,10 +202,14 @@ function allRoutes(): MetadataRoute.Sitemap {
     ...typeFacets().map((t) => `/ropa/tipo/${t.slug}`),
     ...typeFacets("entrenamiento").map((t) => `/entrenamiento/tipo/${t.slug}`),
   ];
+  // Sin lastModified inventado (antes: new Date() en todas). Solo estas dos
+  // cambian con cada corrida del scan, y su fecha real es la de la última
+  // corrida registrada en el archivo de precios.
+  const lastRun = archive().lastDate || undefined;
   const hubRoutes = hubPaths.flatMap((path) =>
     SITEMAP_LOCALES.map((locale) => ({
       url: `${BASE_URL}/${locale}${path}`,
-      lastModified: new Date(),
+      ...(path === "/ofertas" || path === "/novedades" ? { lastModified: lastRun } : {}),
       alternates: { languages: languagesFor(path) },
     }))
   );
@@ -163,12 +217,10 @@ function allRoutes(): MetadataRoute.Sitemap {
   // Camisetas: equipos con más catálogo primero, y dentro de cada equipo la
   // temporada más nueva primero. Google ignora <priority> y no garantiza
   // orden de rastreo, pero el orden estable deja los primeros archivos con
-  // lo más valioso y hace comparable la cobertura entre corridas. Sin
-  // lastModified a propósito: no tenemos una fecha real por producto y
-  // poner "hoy" en 100k URLs le enseña a Google a ignorar el campo.
+  // lo más valioso y hace comparable la cobertura entre corridas.
   const teamSize = new Map<string, number>();
   for (const p of products) teamSize.set(p.teamKey, (teamSize.get(p.teamKey) ?? 0) + 1);
-  const orderedProducts = comparable(products).sort(
+  const orderedProducts = [...products].sort(
     (a, b) =>
       (teamSize.get(b.teamKey) ?? 0) - (teamSize.get(a.teamKey) ?? 0) ||
       a.teamKey.localeCompare(b.teamKey) ||
@@ -176,63 +228,56 @@ function allRoutes(): MetadataRoute.Sitemap {
       a.id.localeCompare(b.id)
   );
 
-  const productRoutes = orderedProducts.flatMap((product) => {
-    const path = `/camiseta/${product.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
+  const sections: { base: string; items: readonly Tierable[] }[] = [
+    { base: "/camiseta", items: orderedProducts },
+    { base: "/botas", items: bootProducts },
+    { base: "/guantes", items: gloveProducts },
+    { base: "/pelotas", items: ballProducts },
+    { base: "/tickets", items: ticketProducts },
+    { base: "/ropa", items: apparelProducts },
+    { base: "/entrenamiento", items: trainingProducts },
+  ];
 
-  const bootRoutes = comparable(bootProducts).flatMap((boot) => {
-    const path = `/botas/${boot.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
+  const byTier: Record<Tier, MetadataRoute.Sitemap> = { A: [], B: [], C: [] };
+  for (const { base, items } of sections) {
+    for (const item of items) {
+      const tier = tierOf(item);
+      if (!tier) continue;
+      const path = `${base}/${item.id}`;
+      const lastModified = lastModOf(item);
+      for (const locale of SITEMAP_LOCALES) {
+        byTier[tier].push({
+          url: `${BASE_URL}/${locale}${path}`,
+          ...(lastModified ? { lastModified } : {}),
+          alternates: { languages: languagesFor(path) },
+        });
+      }
+    }
+  }
 
-  const gloveRoutes = comparable(gloveProducts).flatMap((glove) => {
-    const path = `/guantes/${glove.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
+  // Un grupo por tier; las páginas fijas y los hubs abren el primero.
+  const groups: MetadataRoute.Sitemap[] = [];
+  const open = SITEMAP_TIERS.filter((t) => byTier[t].length > 0);
+  for (const t of open) groups.push(t === open[0] ? [...staticRoutes, ...hubRoutes, ...byTier[t]] : byTier[t]);
+  return { groups, counts: Object.fromEntries(SITEMAP_TIERS.map((t) => [t, byTier[t].length])) as Record<Tier, number> };
+}
 
-  const ballRoutes = comparable(ballProducts).flatMap((ball) => {
-    const path = `/pelotas/${ball.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
+// Cada grupo se corta en archivos de CHUNK_SIZE y NUNCA se mezcla con el
+// siguiente: así un archivo contiene un solo tier (salvo el primero, que
+// además lleva fijas y hubs).
+let chunksCache: MetadataRoute.Sitemap[] | null = null;
+function chunks(): MetadataRoute.Sitemap[] {
+  if (chunksCache) return chunksCache;
+  const out: MetadataRoute.Sitemap[] = [];
+  for (const g of buildGroups().groups) {
+    for (let i = 0; i < g.length; i += CHUNK_SIZE) out.push(g.slice(i, i + CHUNK_SIZE));
+  }
+  return (chunksCache = out.length ? out : [[]]);
+}
 
-  const ticketRoutes = comparable(ticketProducts).flatMap((ticket) => {
-    const path = `/tickets/${ticket.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
-
-  const apparelRoutes = comparable(apparelProducts).flatMap((item) => {
-    const path = `/ropa/${item.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
-
-  const trainingRoutes = comparable(trainingProducts).flatMap((item) => {
-    const path = `/entrenamiento/${item.id}`;
-    return SITEMAP_LOCALES.map((locale) => ({
-      url: `${BASE_URL}/${locale}${path}`,
-      alternates: { languages: languagesFor(path) },
-    }));
-  });
-
-  return [...staticRoutes, ...hubRoutes, ...productRoutes, ...bootRoutes, ...gloveRoutes, ...ballRoutes, ...ticketRoutes, ...apparelRoutes, ...trainingRoutes];
+/** Para reportes: cuántas URLs de ficha cayeron en cada tier. */
+export function sitemapTierCounts() {
+  return buildGroups().counts;
 }
 
 // Google rechaza (con error real, confirmado en Search Console 2026-09-17)
@@ -246,7 +291,7 @@ function allRoutes(): MetadataRoute.Sitemap {
 // Compartido con robots.ts, que necesita listar cada archivo de sitemap
 // explícitamente (ver el comentario ahí).
 export function sitemapChunkCount(): number {
-  return Math.max(1, Math.ceil(allRoutes().length / CHUNK_SIZE));
+  return chunks().length;
 }
 
 export async function generateSitemaps() {
@@ -259,6 +304,5 @@ export default async function sitemap({
   id: Promise<string>;
 }): Promise<MetadataRoute.Sitemap> {
   const chunkId = Number(await id);
-  const start = chunkId * CHUNK_SIZE;
-  return allRoutes().slice(start, start + CHUNK_SIZE);
+  return chunks()[chunkId] ?? [];
 }

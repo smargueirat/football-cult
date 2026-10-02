@@ -16,7 +16,9 @@ export default function PriceHistorySparkline({
   // Un solo punto (o ninguno) no dibuja una línea de nada -- no tiene
   // sentido mostrar el gráfico hasta que haya al menos 2 días de datos
   // reales acumulados por track_price_drops.mts.
-  if (history.length < 2) return null;
+  // Menos de 5 puntos no es una tendencia, es una línea entre dos o tres
+  // días que parece una caída o una subida fuerte sin serlo.
+  if (history.length < 5) return null;
 
   const prices = history.map((h) => h.price);
   const min = Math.min(...prices);

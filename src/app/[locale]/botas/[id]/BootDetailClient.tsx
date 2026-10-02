@@ -11,8 +11,19 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, upsizeBootDetailPhoto } from "@/lib/images";
+import StickyBestOfferBar from "@/components/StickyBestOfferBar";
+import PriceArchiveLine from "@/components/PriceArchiveLine";
+import { savingsVsMedian } from "@/lib/offerStats";
+import type { OfferPriceStats } from "@/lib/priceArchive";
 
-export default function BootDetailClient({ boot }: { boot: BootProduct }) {
+export default function BootDetailClient({
+  boot,
+  archiveStats = {},
+}: {
+  boot: BootProduct;
+  /** Mínimo/mediana del archivo durable de precios, por URL de oferta. */
+  archiveStats?: Record<string, OfferPriceStats>;
+}) {
   const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
@@ -25,6 +36,15 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   );
   const cheapestOffer = sortedOffers[0];
   const cheapestTotal = cheapestOffer.price + cheapestOffer.shipping;
+
+  // Ahorro frente a la MEDIANA de las tiendas (no la más cara). ProSoccer
+  // queda afuera: su envío internacional no figura en el feed y su "total"
+  // sería menor al real. Con menos de 3 tiendas distintas no se muestra.
+  const medianSavings = savingsVsMedian(
+    sortedOffers
+      .filter((o) => o.store !== "ProSoccer")
+      .map((o) => ({ store: o.store, total: bootOfferTotalInEUR(o) })),
+  );
 
   // La foto grande arrancaba siempre en offers[0] (la primera tienda del
   // feed, orden arbitrario) mientras que BootCard.tsx en el catálogo usa
@@ -63,7 +83,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   }
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-3 py-8 sm:px-6">
+    <div className="mx-auto w-full max-w-6xl px-3 pt-8 pb-28 sm:px-6 sm:pb-8">
       <BackToCatalogLink fallbackHref="/botas" />
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-[3fr_2fr]">
         <div>
@@ -115,6 +135,16 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
             {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
           </p>
 
+          {medianSavings && medianSavings.abs >= 1 && (
+            <p className="mt-2 inline-flex rounded-lg bg-[#1B3B2B]/10 px-3 py-1.5 text-sm font-medium text-[#1B3B2B]">
+              {t.detail.savingsVsMedian
+                .replace("{n}", String(medianSavings.stores))
+                .replace("{amount}", formatOfferMoney(medianSavings.abs, "EUR"))
+                .replace("{pct}", String(medianSavings.pct))}
+            </p>
+          )}
+          <PriceArchiveLine stats={archiveStats[cheapestOffer.url] ?? null} />
+
           {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
               precio por mail (ver FavoritesContext.tsx y check-prices).
               Botas tiene su propio componente separado de
@@ -125,6 +155,15 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
           >
             {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
           </button>
+
+          <a
+            href="https://t.me/FootballCultOfertas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 block text-xs text-[#675c44] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+          >
+            {t.priceDrop.channelCta} · {t.priceDrop.channelLink} →
+          </a>
 
           {hasDistinctPhotos && (
             <p className="mt-4 text-xs text-[#675c44]">{t.botas.differentPhotosNote}</p>
@@ -256,6 +295,30 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
           </div>
         </div>
       </div>
+
+      {/* Barra fija en celular: un toque a la mejor tienda, con tienda y
+          total a la vista. En botas la lista de ofertas queda debajo de una
+          foto cuadrada de pantalla completa, así que sin esto había que
+          scrollear para encontrar dónde comprar. */}
+      {(() => {
+        const sp = activeSizePrice(cheapestOffer);
+        const barUrl = sp ? sp.url : cheapestOffer.url;
+        const barPrice = sp ? sp.price : cheapestOffer.price;
+        const barTotal = barPrice + (cheapestOffer.store === "ProSoccer" ? 0 : cheapestOffer.shipping);
+        return (
+          <StickyBestOfferBar
+            hideFrom="sm"
+            store={cheapestOffer.store}
+            total={`${!sp && cheapestOffer.priceMax ? `${t.botas.from} ` : ""}${formatOfferMoney(barTotal, cheapestOffer.currency)}`}
+            fromLabel={t.botas.bestPrice}
+            goLabel={t.detail.goToStore.replace("{store}", cheapestOffer.store)}
+            href={barUrl}
+            onClick={() =>
+              trackOfferClick({ store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
+            }
+          />
+        );
+      })()}
     </div>
   );
 }

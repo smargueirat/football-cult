@@ -208,6 +208,12 @@ export interface Translations {
     priceAlertDone: string;
     priceAlertError: string;
     savings: string;
+    savingsVsMedian: string;
+    goToStore: string;
+    priceMinLine: string;
+    priceBelowMedian: string;
+    priceAboveMedian: string;
+    priceStable: string;
     versionPlayer: string;
     versionFan: string;
   };
@@ -750,6 +756,12 @@ export const translations: Record<Locale, Translations> = {
       priceAlertDone: "Listo. Te escribimos si baja de precio.",
       priceAlertError: "No se pudo guardar. Probá de nuevo.",
       savings: "Ahorrás {amount} ({pct}%) frente a la tienda más cara",
+      savingsVsMedian: "Ahorrás {amount} ({pct}%) frente al precio mediano de {n} tiendas",
+      goToStore: "Ir a {store}",
+      priceMinLine: "Mínimo registrado en {days} días: {price}",
+      priceBelowMedian: "Hoy está un {pct}% por debajo de su precio mediano",
+      priceAboveMedian: "Hoy está un {pct}% por encima de su precio mediano",
+      priceStable: "Sin cambios de precio en {days} días",
       versionPlayer: "Versión jugador",
       versionFan: "Versión hincha",
     },
@@ -1288,6 +1300,12 @@ export const translations: Record<Locale, Translations> = {
       priceAlertDone: "Pronto. Escrevemos-te se baixar de preço.",
       priceAlertError: "Não foi possível guardar. Tenta de novo.",
       savings: "Poupas {amount} ({pct}%) face à loja mais cara",
+      savingsVsMedian: "Poupas {amount} ({pct}%) face ao preço mediano de {n} lojas",
+      goToStore: "Ir para {store}",
+      priceMinLine: "Mínimo registado em {days} dias: {price}",
+      priceBelowMedian: "Hoje está {pct}% abaixo do seu preço mediano",
+      priceAboveMedian: "Hoje está {pct}% acima do seu preço mediano",
+      priceStable: "Sem alterações de preço há {days} dias",
       versionPlayer: "Versão jogador",
       versionFan: "Versão adepto",
     },
@@ -1826,6 +1844,12 @@ export const translations: Record<Locale, Translations> = {
       priceAlertDone: "Done. We'll email you if the price drops.",
       priceAlertError: "Couldn't save that. Try again.",
       savings: "You save {amount} ({pct}%) versus the dearest store",
+      savingsVsMedian: "You save {amount} ({pct}%) versus the median price across {n} stores",
+      goToStore: "Go to {store}",
+      priceMinLine: "Lowest recorded in {days} days: {price}",
+      priceBelowMedian: "Today it is {pct}% below its median price",
+      priceAboveMedian: "Today it is {pct}% above its median price",
+      priceStable: "No price change in {days} days",
       versionPlayer: "Player version",
       versionFan: "Fan version",
     },
@@ -2364,6 +2388,12 @@ export const translations: Record<Locale, Translations> = {
       priceAlertDone: "C'est fait. On vous écrit si le prix baisse.",
       priceAlertError: "Enregistrement impossible. Réessayez.",
       savings: "Vous économisez {amount} ({pct}%) face à la boutique la plus chère",
+      savingsVsMedian: "Vous économisez {amount} ({pct}%) par rapport au prix médian de {n} boutiques",
+      goToStore: "Aller chez {store}",
+      priceMinLine: "Plus bas enregistré en {days} jours : {price}",
+      priceBelowMedian: "Aujourd'hui {pct}% sous son prix médian",
+      priceAboveMedian: "Aujourd'hui {pct}% au-dessus de son prix médian",
+      priceStable: "Aucun changement de prix depuis {days} jours",
       versionPlayer: "Version joueur",
       versionFan: "Version supporter",
     },
@@ -2902,6 +2932,12 @@ export const translations: Record<Locale, Translations> = {
       priceAlertDone: "Fatto. Ti scriviamo se il prezzo scende.",
       priceAlertError: "Non è stato possibile salvare. Riprova.",
       savings: "Risparmi {amount} ({pct}%) rispetto al negozio più caro",
+      savingsVsMedian: "Risparmi {amount} ({pct}%) rispetto al prezzo mediano di {n} negozi",
+      goToStore: "Vai a {store}",
+      priceMinLine: "Minimo registrato in {days} giorni: {price}",
+      priceBelowMedian: "Oggi è il {pct}% sotto il suo prezzo mediano",
+      priceAboveMedian: "Oggi è il {pct}% sopra il suo prezzo mediano",
+      priceStable: "Nessuna variazione di prezzo da {days} giorni",
       versionPlayer: "Versione giocatore",
       versionFan: "Versione tifoso",
     },

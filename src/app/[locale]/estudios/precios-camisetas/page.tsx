@@ -6,6 +6,7 @@ import { formatOfferMoney } from "@/lib/offerMoney";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { Crumbs, HubHeader, JsonLd } from "@/components/hubs/HubParts";
 import { HUB } from "@/lib/hubStrings";
+import { INDEX } from "@/lib/priceIndexStrings";
 
 // Página de estudio: server component puro, sin JavaScript de cliente.
 // Es contenido pensado para ser citado y enlazado, así que tiene que
@@ -195,6 +196,12 @@ export default async function PriceStudyPage({ params }: P) {
               className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
             >
               {c.citeCsv(s.products)} ↓
+            </a>
+            <a
+              href={`/${locale}/estudios/indice-precios`}
+              className="mt-2 block text-sm font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
+            >
+              {INDEX[locale].linkFromStudy} →
             </a>
           </div>
           {/* Tarjeta con las cifras, para guardar o compartir. Se sirve a
