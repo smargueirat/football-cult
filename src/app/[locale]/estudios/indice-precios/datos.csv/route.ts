@@ -49,6 +49,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ loc
     headers: {
       "Content-Type": "text/csv; charset=utf-8",
       "Content-Disposition": `attachment; filename="football-cult-indice-precios.csv"`,
+      Link: '<https://creativecommons.org/licenses/by/4.0/>; rel="license"',
     },
   });
 }

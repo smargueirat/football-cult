@@ -21,6 +21,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ loc
     name: "Football Cult - football shirt price index",
     url: `${SITE_URL}/${locale}/estudios/indice-precios`,
     currency: "EUR",
+    license: { name: "CC BY 4.0", url: "https://creativecommons.org/licenses/by/4.0/", attribution: "Football Cult (football-cult.com)" },
     archive: { from: ix.archiveFrom, to: ix.archiveTo },
     sample: { shirts: ix.sample, avg_gap_pct: round(ix.avgGapPct, 1), median_gap_pct: round(ix.medianGapPct, 1) },
     series: ix.series && {
@@ -47,6 +48,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ loc
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Content-Disposition": `attachment; filename="football-cult-indice-precios.json"`,
+      Link: '<https://creativecommons.org/licenses/by/4.0/>; rel="license"',
     },
   });
 }

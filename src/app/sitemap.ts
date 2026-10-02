@@ -69,7 +69,7 @@ const CHUNK_SIZE = 5000;
 // archivos separados a propósito -- Search Console reporta indexación por
 // archivo, así se mide cuál rinde, y si B o C estorbaran al rastreo se
 // apagan quitándolos de SITEMAP_TIERS sin tocar nada más.
-const SITEMAP_TIERS = ["A", "B", "C"] as const;
+const SITEMAP_TIERS = ["A"] as ("A" | "B" | "C")[];
 type Tier = (typeof SITEMAP_TIERS)[number];
 
 type Tierable = {
