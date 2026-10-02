@@ -5,6 +5,7 @@ import { useState } from "react";
 import BackToCatalogLink from "./BackToCatalogLink";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref, type GoKind } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearModel } from "@/lib/gearText";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -33,6 +34,13 @@ interface GearProductLike {
   model: string;
   offers: GearOffer[];
 }
+
+const GEAR_KIND: Record<"guantes" | "pelotas" | "ropa" | "entrenamiento", GoKind> = {
+  guantes: "g",
+  pelotas: "p",
+  ropa: "a",
+  entrenamiento: "e",
+};
 
 export default function GearDetailClient({
   item,
@@ -219,7 +227,7 @@ export default function GearDetailClient({
                     </div>
                   </div>
                   <a
-                    href={rowUrl}
+                    href={goHref({ kind: GEAR_KIND[basePath], productId: item.id, url: rowUrl, locale, origin: "ficha", position: i + 1, isBest: i === 0 })}
                     target="_blank"
                     rel="noopener noreferrer nofollow sponsored"
                     onClick={(e) => {

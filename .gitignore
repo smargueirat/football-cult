@@ -46,3 +46,6 @@ __pycache__/
 # cron logs
 scripts/daily_scan.log
 scripts/boots-mining/image_ok.json
+
+# click log (outbound redirect /go/)
+/data/clicks/

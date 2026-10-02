@@ -17,6 +17,7 @@ import {
 } from "@/lib/productMeta";
 import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
@@ -725,7 +726,15 @@ export default function JerseyDetailClient({
                               </p>
                             </div>
                             <a
-                              href={offer.url}
+                              href={goHref({
+                                kind: "j",
+                                productId: product.id,
+                                url: offer.url,
+                                locale,
+                                origin: "ficha",
+                                position: idx + 1,
+                                isBest,
+                              })}
                               target="_blank"
                               onClick={() =>
                                 trackOfferClick({

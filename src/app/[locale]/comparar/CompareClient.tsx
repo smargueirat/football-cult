@@ -254,7 +254,7 @@ export default function CompareClient() {
                   <div className="vintage-divider" />
                   <div className="flex flex-col gap-3 p-4">
                     <h2 className="font-card-title text-lg text-[#1a1a1a]">{boot.model}</h2>
-                    <CompareBootOfferRow offer={offer} isBest={isBest} />
+                    <CompareBootOfferRow offer={offer} isBest={isBest} kind="b" productId={productId} />
                     <Link
                       href={`/botas/${productId}`}
                       className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
@@ -296,7 +296,7 @@ export default function CompareClient() {
                   <div className="vintage-divider" />
                   <div className="flex flex-col gap-3 p-4">
                     <h2 className="font-card-title text-lg text-[#1a1a1a]">{gearItem.model}</h2>
-                    <CompareBootOfferRow offer={offer} isBest={isBest} />
+                    <CompareBootOfferRow offer={offer} isBest={isBest} kind={card.kind === "glove" ? "g" : card.kind === "ball" ? "p" : "a"} productId={productId} />
                     <Link
                       href={`/${basePath}/${productId}`}
                       className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
@@ -398,7 +398,7 @@ export default function CompareClient() {
                   <h2 className="font-card-title text-lg text-[#1a1a1a]">
                     {displayName}
                   </h2>
-                  <CompareOfferRow offer={offer} countryCode={countryCode} isBest={isBest} />
+                  <CompareOfferRow offer={offer} countryCode={countryCode} isBest={isBest} productId={productId} />
                   <Link
                     href={`/camiseta/${productId}`}
                     className="mt-1 flex items-center justify-center rounded-full bg-[#1B3B2B] py-2 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"

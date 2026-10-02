@@ -6,13 +6,14 @@ import BackToCatalogLink from "@/components/BackToCatalogLink";
 import { BootProduct, BootOffer } from "@/data/boots";
 import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, upsizeBootDetailPhoto } from "@/lib/images";
 
 export default function BootDetailClient({ boot }: { boot: BootProduct }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(boot.id);
@@ -238,7 +239,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
                     </div>
                   </div>
                   <a
-                    href={rowUrl}
+                    href={goHref({ kind: "b", productId: boot.id, url: rowUrl, locale, origin: "ficha", position: i + 1, isBest: i === 0 })}
                     target="_blank"
                     rel="noopener noreferrer nofollow sponsored"
                     onClick={(e) => {

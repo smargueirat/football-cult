@@ -82,10 +82,11 @@ export const config = {
     // él, "/estudios" empieza por "es" y se saltearía la redirección.
     // Así, "/es" y "/es/..." quedan fuera pero "/estudios" entra.
     //
-    // Se excluyen además, como antes: rutas de API, los feeds de Merchant
+    // Se excluyen además, como antes: rutas de API, /go (redirect de salida
+    // a las tiendas: no es una página, no lleva idioma), los feeds de Merchant
     // Center (URLs fijas sin idioma que Google ya tiene registradas), los
     // archivos de metadata, los assets de Next y cualquier archivo con
     // extensión (favicon.ico, icon.png...).
-    "/((?!(?:es|en|pt|fr|it)(?:/|$)|api|feed.*\\.xml|robots\\.txt|sitemap\\.xml|_next/static|_next/image|.*\\..*).*)",
+    "/((?!(?:es|en|pt|fr|it|go)(?:/|$)|api|feed.*\\.xml|robots\\.txt|sitemap\\.xml|_next/static|_next/image|.*\\..*).*)",
   ],
 };

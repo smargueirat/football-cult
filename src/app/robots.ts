@@ -17,7 +17,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", ...LOCALES.map((l) => `/${l}/favoritos`)],
+        disallow: ["/api/", "/go/", ...LOCALES.map((l) => `/${l}/favoritos`)],
       },
       // Crawlers de SEO/scraping sin valor para el sitio que rastrean
       // decenas de miles de URLs dinámicas (cada una una invocación de

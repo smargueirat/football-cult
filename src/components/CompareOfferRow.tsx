@@ -5,23 +5,26 @@ import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useLiveOfferCosts } from "@/lib/useLiveOfferCosts";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref } from "@/lib/go";
 
 export default function CompareOfferRow({
   offer,
   countryCode,
   isBest,
+  productId,
 }: {
   offer: Offer;
   countryCode: string;
   isBest: boolean;
+  productId: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { shipping, importCharges } = useLiveOfferCosts(offer, countryCode);
   const total = offer.price + shipping + importCharges;
 
   return (
     <a
-      href={offer.url}
+      href={goHref({ kind: "j", productId, url: offer.url, locale, origin: "comparar", isBest })}
       target="_blank"
       onClick={() =>
         trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
