@@ -10,6 +10,7 @@ import { formatOfferMoney } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
 import { hubFacts } from "@/lib/hubFaq";
+import { botDeepLink } from "@/lib/telegramBot";
 
 // ISR: nada se prerenderiza (no suma storage al deploy) pero cada URL queda
 // cacheada un día en el CDN -- mismo criterio que las fichas de producto
@@ -98,6 +99,16 @@ export default async function TeamHub({ params }: P) {
         h1={s.teamH1(name)}
         intro={s.teamIntro({ team: name, n: stats.count, stores: stats.stores, price: priceOf(items), kinds })}
       />
+      <p className="-mt-5 mb-8 text-sm">
+        <a
+          href={botDeepLink(team)}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          className="text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
+        >
+          {s.telegramFollow}
+        </a>
+      </p>
       {seasons.map(({ season, list }) => (
         <section key={season} id={`s-${seasonSlug(season)}`} className="mb-10 scroll-mt-24">
           <h2 className="font-vintage mb-4 text-xl text-[#1B3B2B] sm:text-2xl">
