@@ -15,7 +15,7 @@ import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
 import { indexPaths } from "@/lib/catalogIndex";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { archive, lastChangeDate } from "@/lib/priceArchive";
-import { retailerFamilyLocal } from "@/lib/retailerFamilyLocal";
+import { getRetailerFamily } from "@/lib/retailerFamily";
 import firstSeen from "@/data/productFirstSeen.json";
 
 const BASE_URL = "https://football-cult.com";
@@ -81,7 +81,7 @@ function tierOf(item: Tierable): Tier | null {
   const priced = item.offers.filter((o) => o.price > 0);
   if (item.offers.length === 0) return null;
   if (priced.length === 0) return "C";
-  const families = new Set(priced.map((o) => retailerFamilyLocal(o.store)));
+  const families = new Set(priced.map((o) => getRetailerFamily(o.store)));
   const hasPhoto = priced.some((o) => !!o.imageUrl);
   return families.size >= 2 && hasPhoto ? "A" : "B";
 }

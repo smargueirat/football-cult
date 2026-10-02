@@ -1,4 +1,4 @@
-import { retailerFamilyLocal } from "./retailerFamilyLocal";
+import { getRetailerFamily } from "./retailerFamily";
 
 export interface MedianSavings {
   /** Cuánto menos que la mediana cuesta la mejor oferta, en EUR. */
@@ -26,7 +26,7 @@ export function savingsVsMedian(offers: readonly { store: string; total: number 
   const byFamily = new Map<string, number>();
   for (const o of offers) {
     if (!(o.total > 0)) continue;
-    const f = retailerFamilyLocal(o.store);
+    const f = getRetailerFamily(o.store);
     byFamily.set(f, Math.min(byFamily.get(f) ?? Infinity, o.total));
   }
   if (byFamily.size < 3) return undefined;
