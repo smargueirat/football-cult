@@ -79,7 +79,7 @@ export default async function ApparelDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const item = findApparel(id);
-  if (!item) {
+  if (!item?.offers.length) {
     const target = gearAlias("ropa", id);
     if (target && findApparel(target)) permanentRedirect(`/${locale}/ropa/${target}`);
     notFound();

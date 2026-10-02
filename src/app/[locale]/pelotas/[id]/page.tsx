@@ -79,7 +79,7 @@ export default async function BallDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const ball = findBall(id);
-  if (!ball) {
+  if (!ball?.offers.length) {
     const target = gearAlias("pelotas", id);
     if (target && findBall(target)) permanentRedirect(`/${locale}/pelotas/${target}`);
     notFound();

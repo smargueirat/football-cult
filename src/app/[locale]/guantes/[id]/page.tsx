@@ -79,7 +79,7 @@ export default async function GloveDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const glove = findGlove(id);
-  if (!glove) {
+  if (!glove?.offers.length) {
     const target = gearAlias("guantes", id);
     if (target && findGlove(target)) permanentRedirect(`/${locale}/guantes/${target}`);
     notFound();

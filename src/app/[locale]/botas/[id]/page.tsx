@@ -103,7 +103,7 @@ export default async function BootDetailPage({
 }) {
   const { locale, id } = await params;
   const boot = findBoot(id);
-  if (!boot) {
+  if (!boot?.offers.length) {
     // Ficha fundida con otra (misma bota en otra tienda, ver merge_by_code en
     // scripts/boots-mining/refresh_boots.py): su URL vieja redirige a la que
     // la absorbió en vez de dar 404.

@@ -75,7 +75,7 @@ export default async function TrainingDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const item = findTraining(id);
-  if (!item) {
+  if (!item?.offers.length) {
     const target = gearAlias("entrenamiento", id);
     if (target && findTraining(target)) permanentRedirect(`/${locale}/entrenamiento/${target}`);
     notFound();

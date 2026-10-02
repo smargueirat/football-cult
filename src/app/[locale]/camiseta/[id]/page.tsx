@@ -175,7 +175,9 @@ export default async function JerseyDetailPage({
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const product = findProduct(id);
 
-  if (!product) {
+  // Sin ofertas no hay nada que comparar (y aggregateOffer no tiene moneda
+  // que elegir): 404 en vez del 500 que daba antes.
+  if (!product?.offers.length) {
     notFound();
   }
 

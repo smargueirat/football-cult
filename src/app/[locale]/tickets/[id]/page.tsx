@@ -76,7 +76,7 @@ export default async function TicketDetailPage({
 }) {
   const { locale, id } = await params;
   const ticket = findTicket(id);
-  if (!ticket) notFound();
+  if (!ticket?.offers.length) notFound();
 
   // Campos que Search Console marcó como faltantes (2026-09-19, "problemas
   // no críticos" de Eventos): eventStatus, performer, offers.validFrom,
