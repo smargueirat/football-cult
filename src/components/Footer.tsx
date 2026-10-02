@@ -7,6 +7,8 @@ import { SEASON_UI } from "@/lib/seasonStrings";
 import { GIFTS_UI } from "@/lib/giftStrings";
 import { NEW_UI } from "@/lib/newStrings";
 import { GUIDE_UI } from "@/lib/guideUi";
+import { LEGAL } from "@/lib/legalStrings";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 import { LEAGUES, leagueName } from "@/data/teamMeta";
 
 // Ligas principales enlazadas desde el footer de TODAS las páginas: enlaces
@@ -35,6 +37,16 @@ export default function Footer() {
           <Link href="/terminos" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.terms}
           </Link>
+          <Link href="/aviso-legal" className="transition-colors hover:text-[#F3E9C9]">
+            {LEGAL[locale].footer.legal}
+          </Link>
+          <Link href="/como-ganamos-dinero" className="transition-colors hover:text-[#F3E9C9]">
+            {LEGAL[locale].footer.money}
+          </Link>
+          <CookieSettingsButton
+            label={LEGAL[locale].footer.cookies}
+            className="transition-colors hover:text-[#F3E9C9]"
+          />
           <Link href="/guia-de-tallas" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.sizeGuide}
           </Link>

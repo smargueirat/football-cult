@@ -88,6 +88,8 @@ function allRoutes(): MetadataRoute.Sitemap {
     "/contacto",
     "/privacidad",
     "/terminos",
+    "/aviso-legal",
+    "/como-ganamos-dinero",
     "/guia-de-tallas",
     "/autenticidad",
     "/brasil",

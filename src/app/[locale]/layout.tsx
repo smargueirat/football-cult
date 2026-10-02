@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 import { SessionProvider } from "next-auth/react";
 import { Inter, Alfa_Slab_One, Cormorant_Garamond } from "next/font/google";
@@ -15,6 +14,7 @@ import { SearchFilterProvider } from "@/lib/search/SearchFilterContext";
 import { CompareProvider } from "@/lib/compare/CompareContext";
 import CompareBar from "@/components/CompareBar";
 import SearchQueryUrlSync from "@/components/SearchQueryUrlSync";
+import ConsentBanner from "@/components/ConsentBanner";
 import { Locale } from "@/lib/i18n/translations";
 import { LOCALES, OG_LOCALE, buildAlternates, isLocale } from "@/lib/i18n/locales";
 
@@ -182,37 +182,16 @@ export default async function RootLayout({
                     <main className="flex flex-1 flex-col">{children}</main>
                     <Footer />
                     <CompareBar />
+                    {/* Google Analytics y Skimlinks ya NO se cargan aquí:
+                        los carga ConsentBanner solo tras el consentimiento
+                        (Consent Mode v2, denegado por defecto). */}
+                    <ConsentBanner />
                   </CompareProvider>
                 </SearchFilterProvider>
               </FavoritesProvider>
             </CountryProvider>
           </LanguageProvider>
         </SessionProvider>
-        <script
-          type="text/javascript"
-          src="https://s.skimresources.com/js/307104X1795379.skimlinks.js"
-        />
-        {/* Google Analytics -- Measurement ID de la propiedad GA4 creada
-            2026-09-03 (analytics.google.com), seteado en Vercel como
-            NEXT_PUBLIC_GA_MEASUREMENT_ID (mismo patrón que
-            GOOGLE_SITE_VERIFICATION arriba: sin la env var, no se
-            imprime nada). */}
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-          </>
-        )}
       </body>
     </html>
   );
