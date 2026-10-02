@@ -14,7 +14,13 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 // el `loading` solo se llegaría a ver en una navegación client-side, no
 // en la carga inicial con HTML ya renderizado.
 const SearchExplorer = dynamic(() => import("@/components/SearchExplorer"), {
-  loading: () => <div className="h-16 w-full animate-pulse rounded-2xl bg-[#f6efdd]" />,
+  // min-h de una pantalla: el catálogo real mide miles de px y empuja los
+  // enlaces de GearHubLinks hacia abajo; sin esta reserva se veían saltar (CLS 0,67).
+  loading: () => (
+    <div className="min-h-[100svh]">
+      <div className="h-16 w-full animate-pulse rounded-2xl bg-[#f6efdd]" />
+    </div>
+  ),
 });
 
 // Antes: grid propio, sin buscador ni filtros -- viable con 71 modelos,
