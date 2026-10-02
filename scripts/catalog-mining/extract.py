@@ -451,8 +451,19 @@ TYPE_PATTERNS = {
     # ese feed entraban al catálogo como si fueran la suplente. Un título que
     # dice "third" es la tercera, aunque además diga "away".
     "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b",
-    "home": r"\blocal\b|\bhome\b|\bdomicile\b|titular|\b1[ºª]?\s*equipaci[oó]n\b|primera equipaci[oó]n|principal\b",
-    "away": r"\bexterior\b|\bext[ée]rieur\b|\bvisitante\b|\baway\b|segunda equipaci[oó]n|\b2[ºª]?\s*equipaci[oó]n\b|alternativ[oa]\b",
+    # "Domicilio" y "de casa" (2026-10-02): FootStore/SportIsGood ES traducen
+    # el "Domicile" del feed frances literal, y el patron solo conocia la
+    # grafia francesa. ~37 titulos del feed (Liverpool, PSG, Atalanta,
+    # Turquia ...) no encontraban tipo y se tiraban enteros, noche tras
+    # noche. "Fuera de Casa" es la SUPLENTE: el lookbehind evita leerla
+    # como titular.
+    "home": r"\blocal\b|\bhome\b|\bdomicile\b|\bdomicilio\b|(?<!fuera )\bde casa\b|titular|\b1[ºª]?\s*equipaci[oó]n\b|primera equipaci[oó]n|principal\b",
+    # "Visita", "Fuera", "Externo", "Alternate" (2026-10-02): mismas
+    # traducciones literales de FootStore/SportIsGood ES ("Camiseta de Visita
+    # Tunez", "Maillot Externo Bournemouth", "Camisa de Fuera Liverpool") y el
+    # "Alternate" de Castore (Inglaterra). Sin esto ~60 titulos vigentes
+    # quedaban sin tipo.
+    "away": r"\bexterior\b|\bext[ée]rieur\b|\bvisitante\b|\bvisita\b|\bfuera\b|\bexterno\b|\baway\b|segunda equipaci[oó]n|\b2[ºª]?\s*equipaci[oó]n\b|alternativ[oa]\b|\balternate\b",
 }
 
 # "camisa" (Brazilian Portuguese for jersey/shirt -- distinct from
