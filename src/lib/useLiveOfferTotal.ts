@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Offer } from "@/data/products";
-import { offerTotal } from "@/lib/offerMoney";
+import { isEbayStore, offerTotal } from "@/lib/offerMoney";
 
 // Misma lógica que ya se usa en la ficha de la camiseta (JerseyDetailClient):
 // el envío cargado en el catálogo para ofertas de eBay es un placeholder en
@@ -21,13 +21,13 @@ export function useLiveOfferTotal(
   offer: Offer | undefined,
   countryCode: string,
   enabled = true
-): number {
+): { total: number; live: boolean } {
   const [liveTotal, setLiveTotal] = useState<number | null>(null);
   const staticTotal = offer ? offerTotal(offer) : 0;
 
   useEffect(() => {
     setLiveTotal(null);
-    if (!offer || offer.store !== "eBay" || !enabled) return;
+    if (!offer || !isEbayStore(offer.store) || !enabled) return;
     let cancelled = false;
 
     // El catálogo monta las ~24 cards de una sola vez (no son lazy como
@@ -59,5 +59,5 @@ export function useLiveOfferTotal(
     };
   }, [offer, countryCode, enabled]);
 
-  return liveTotal ?? staticTotal;
+  return { total: liveTotal ?? staticTotal, live: liveTotal != null };
 }

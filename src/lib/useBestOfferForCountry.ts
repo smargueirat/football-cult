@@ -3,12 +3,15 @@
 import { useMemo } from "react";
 import type { CountryCode, Offer, Product } from "@/data/products";
 import { offerShipsTo } from "@/lib/productMeta";
-import { offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
+import { isEbayStore, offerTotal, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
 import { useLiveOfferTotal } from "./useLiveOfferTotal";
 
 interface BestOfferResult {
   offer: Offer | undefined;
   total: number;
+  // true si el envío de `offer` no se conoce (eBay con 0 sin chequeo en vivo):
+  // `total` no incluye envío y no hay que presentarlo como precio final.
+  shippingUnknown: boolean;
 }
 
 // bestOfferForCountry() (products.ts) elige la "mejor oferta" comparando
@@ -55,19 +58,21 @@ export function useBestOfferForCountry(
     [eligible]
   );
   const staticBest = sortedByStatic[0];
-  const ebayToVerify = staticBest?.store === "eBay" ? staticBest : undefined;
+  const ebayToVerify = staticBest && isEbayStore(staticBest.store) ? staticBest : undefined;
 
-  const liveEbayTotal = useLiveOfferTotal(ebayToVerify, countryCode, inView);
+  const { total: liveEbayTotal, live: ebayLive } = useLiveOfferTotal(ebayToVerify, countryCode, inView);
 
   return useMemo(() => {
-    if (!staticBest) return { offer: undefined, total: 0 };
-    if (!ebayToVerify) return { offer: staticBest, total: offerTotal(staticBest) };
+    if (!staticBest) return { offer: undefined, total: 0, shippingUnknown: false };
+    if (!ebayToVerify) {
+      return { offer: staticBest, total: offerTotal(staticBest), shippingUnknown: shippingUnknown(staticBest) };
+    }
 
     const liveEbayEUR = offerTotalInEUR({ ...ebayToVerify, price: liveEbayTotal, shipping: 0 });
     const runnerUp = sortedByStatic[1];
     if (runnerUp && offerTotalInEUR(runnerUp) < liveEbayEUR) {
-      return { offer: runnerUp, total: offerTotal(runnerUp) };
+      return { offer: runnerUp, total: offerTotal(runnerUp), shippingUnknown: shippingUnknown(runnerUp) };
     }
-    return { offer: ebayToVerify, total: liveEbayTotal };
-  }, [staticBest, ebayToVerify, liveEbayTotal, sortedByStatic]);
+    return { offer: ebayToVerify, total: liveEbayTotal, shippingUnknown: !ebayLive && shippingUnknown(ebayToVerify) };
+  }, [staticBest, ebayToVerify, liveEbayTotal, ebayLive, sortedByStatic]);
 }

@@ -15,7 +15,7 @@ import {
   offerShipsTo,
   teamNames,
 } from "@/lib/productMeta";
-import { formatOfferMoney, offerTotal, offerTotalInEUR } from "@/lib/offerMoney";
+import { formatOfferMoney, isEbayStore, offerTotal, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
@@ -100,7 +100,7 @@ export default function JerseyDetailClient({
     Record<string, { shipping: number; currency: string; importCharges: number | null } | null>
   >({});
   useEffect(() => {
-    const ebayOffers = product.offers.filter((o) => o.store === "eBay");
+    const ebayOffers = product.offers.filter((o) => isEbayStore(o.store));
     if (ebayOffers.length === 0) return;
     let cancelled = false;
     setLiveEbayCosts({});
@@ -109,12 +109,12 @@ export default function JerseyDetailClient({
         const res = await fetch(
           `/api/ebay-shipping?url=${encodeURIComponent(offer.url)}&country=${countryCode}`
         );
-        if (!res.ok) return;
         const data = await res.json();
-        if (cancelled || data.shipping == null) return;
+        if (cancelled) return;
         setLiveEbayCosts((prev) => ({
           ...prev,
-          [offer.url]: {
+          // null = eBay no pudo calcularlo: el envío sigue desconocido.
+          [offer.url]: data.shipping == null ? null : {
             shipping: data.shipping,
             currency: data.currency ?? offer.currency,
             importCharges: data.importCharges ?? null,
@@ -137,7 +137,7 @@ export default function JerseyDetailClient({
   // costando más que otra tienda.
   const sortedOffers = useMemo(() => {
     function totalInEUR(offer: Offer): number {
-      const live = offer.store === "eBay" ? liveEbayCosts[offer.url] : null;
+      const live = isEbayStore(offer.store) ? liveEbayCosts[offer.url] : null;
       if (live && live.currency === offer.currency) {
         const liveTotal = offer.price + live.shipping + (live.importCharges ?? 0);
         return offerTotalInEUR({ ...offer, price: liveTotal, shipping: 0 });
@@ -571,12 +571,14 @@ export default function JerseyDetailClient({
                     // monedas distintas: se mantiene el total con el
                     // placeholder minado, y la línea de abajo sigue
                     // mostrando el dato real por separado.
-                    const liveCost = offer.store === "eBay" ? liveEbayCosts[offer.url] : null;
+                    const liveCost = isEbayStore(offer.store) ? liveEbayCosts[offer.url] : null;
                     const liveTotal =
                       liveCost && liveCost.currency === offer.currency
                         ? offer.price + liveCost.shipping + (liveCost.importCharges ?? 0)
                         : null;
                     const displayTotal = liveTotal ?? offerTotal(offer);
+                    // eBay con envío 0 sin dato real: no es gratis, es desconocido.
+                    const noShipping = liveTotal == null && shippingUnknown(offer);
                     return (
                       <div
                         key={offer.store}
@@ -675,12 +677,16 @@ export default function JerseyDetailClient({
                               ) : (
                                 <>
                                   <p className="text-xs text-[#675c44]">
-                                    {formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}
+                                    {noShipping ? (
+                                      <>{formatOfferMoney(offer.price, offer.currency)} · {t.detail.shipping}: {t.compare.shippingToCheck}</>
+                                    ) : (
+                                      <>{formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}</>
+                                    )}
                                     {offer.sizes.length > 0 && (
                                       <> · {offer.sizes.join(", ")}</>
                                     )}
                                   </p>
-                                  {offer.store === "eBay" && (
+                                  {isEbayStore(offer.store) && (
                                     <p className="text-[11px] text-[#9C7A2E]">
                                       {liveEbayCosts[offer.url] ? (
                                         <>
@@ -701,7 +707,7 @@ export default function JerseyDetailClient({
                                           )}
                                           {liveTotal != null && <> ({t.detail.includedInTotal})</>}
                                         </>
-                                      ) : (
+                                      ) : liveEbayCosts[offer.url] === null ? null : (
                                         t.detail.checkingRealShipping
                                       )}
                                     </p>
@@ -714,7 +720,7 @@ export default function JerseyDetailClient({
                           <div className="flex items-center justify-between gap-4 sm:justify-end">
                             <div className="text-right">
                               <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
-                                {t.detail.total}
+                                {noShipping ? t.detail.from : t.detail.total}
                               </p>
                               <p
                                 className={`text-lg font-semibold ${
@@ -814,7 +820,7 @@ export default function JerseyDetailClient({
               </p>
               <p className="text-lg font-semibold text-[#B45309]">
                 {(() => {
-                  const bestLive = bestOffer.store === "eBay" ? liveEbayCosts[bestOffer.url] : null;
+                  const bestLive = isEbayStore(bestOffer.store) ? liveEbayCosts[bestOffer.url] : null;
                   const bestLiveTotal =
                     bestLive && bestLive.currency === bestOffer.currency
                       ? bestOffer.price + bestLive.shipping + (bestLive.importCharges ?? 0)

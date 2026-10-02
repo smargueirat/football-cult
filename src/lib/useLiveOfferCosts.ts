@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Offer } from "@/data/products";
+import { isEbayStore } from "@/lib/offerMoney";
 
 interface LiveCosts {
   shipping: number;
@@ -19,7 +20,7 @@ export function useLiveOfferCosts(offer: Offer, countryCode: string): LiveCosts 
 
   useEffect(() => {
     setLive(null);
-    if (offer.store !== "eBay") return;
+    if (!isEbayStore(offer.store)) return;
     let cancelled = false;
     fetch(`/api/ebay-shipping?url=${encodeURIComponent(offer.url)}&country=${countryCode}`)
       .then((res) => (res.ok ? res.json() : null))

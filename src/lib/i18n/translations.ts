@@ -162,6 +162,7 @@ export interface Translations {
     cardCompare: string;
     cardSaving: string;
     shippingIncluded: string;
+    shippingNotIncluded: string;
   };
   detail: {
     backToCatalog: string;
@@ -402,6 +403,7 @@ export interface Translations {
     taxes: string;
     taxesIncluded: string;
     freeShipping: string;
+    shippingToCheck: string;
     total: string;
     sellersLabel: string;
     noSellers: string;
@@ -702,6 +704,7 @@ export const translations: Record<Locale, Translations> = {
       cardCompare: "Compara en {n} tiendas",
       cardSaving: "hasta -{pct}%",
       shippingIncluded: "envío incl.",
+      shippingNotIncluded: "envío no incl.",
     },
     detail: {
       backToCatalog: "Volver al catálogo",
@@ -947,6 +950,7 @@ export const translations: Record<Locale, Translations> = {
       taxes: "Impuestos",
       taxesIncluded: "Incluidos",
       freeShipping: "Gratis",
+      shippingToCheck: "Consultar en la tienda",
       total: "Total",
       sellersLabel: "Vendedores",
       noSellers: "Sin ofertas disponibles",
@@ -1238,6 +1242,7 @@ export const translations: Record<Locale, Translations> = {
       cardCompare: "Compara em {n} lojas",
       cardSaving: "até -{pct}%",
       shippingIncluded: "frete incl.",
+      shippingNotIncluded: "frete não incl.",
     },
     detail: {
       backToCatalog: "Voltar ao catálogo",
@@ -1483,6 +1488,7 @@ export const translations: Record<Locale, Translations> = {
       taxes: "Impostos",
       taxesIncluded: "Incluídos",
       freeShipping: "Grátis",
+      shippingToCheck: "Consultar na loja",
       total: "Total",
       sellersLabel: "Vendedores",
       noSellers: "Nenhuma oferta disponível",
@@ -1774,6 +1780,7 @@ export const translations: Record<Locale, Translations> = {
       cardCompare: "Compare {n} stores",
       cardSaving: "up to -{pct}%",
       shippingIncluded: "shipping incl.",
+      shippingNotIncluded: "shipping not incl.",
     },
     detail: {
       backToCatalog: "Back to catalog",
@@ -2019,6 +2026,7 @@ export const translations: Record<Locale, Translations> = {
       taxes: "Taxes",
       taxesIncluded: "Included",
       freeShipping: "Free",
+      shippingToCheck: "Check at the store",
       total: "Total",
       sellersLabel: "Sellers",
       noSellers: "No offers available",
@@ -2310,6 +2318,7 @@ export const translations: Record<Locale, Translations> = {
       cardCompare: "Compare {n} boutiques",
       cardSaving: "jusqu'à -{pct}%",
       shippingIncluded: "livraison incl.",
+      shippingNotIncluded: "livraison non incl.",
     },
     detail: {
       backToCatalog: "Retour au catalogue",
@@ -2555,6 +2564,7 @@ export const translations: Record<Locale, Translations> = {
       taxes: "Taxes",
       taxesIncluded: "Incluses",
       freeShipping: "Gratuite",
+      shippingToCheck: "À voir sur le site",
       total: "Total",
       sellersLabel: "Vendeurs",
       noSellers: "Aucune offre disponible",
@@ -2846,6 +2856,7 @@ export const translations: Record<Locale, Translations> = {
       cardCompare: "Confronta {n} negozi",
       cardSaving: "fino a -{pct}%",
       shippingIncluded: "spedizione incl.",
+      shippingNotIncluded: "spedizione non incl.",
     },
     detail: {
       backToCatalog: "Torna al catalogo",
@@ -3091,6 +3102,7 @@ export const translations: Record<Locale, Translations> = {
       taxes: "Tasse",
       taxesIncluded: "Incluse",
       freeShipping: "Gratuita",
+      shippingToCheck: "Da verificare sul sito",
       total: "Totale",
       sellersLabel: "Venditori",
       noSellers: "Nessuna offerta disponibile",

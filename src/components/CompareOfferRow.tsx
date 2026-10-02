@@ -1,7 +1,7 @@
 "use client";
 
 import type { Offer } from "@/data/products";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { formatOfferMoney, shippingUnknown } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useLiveOfferCosts } from "@/lib/useLiveOfferCosts";
 import { trackOfferClick } from "@/lib/analytics";
@@ -16,7 +16,9 @@ export default function CompareOfferRow({
   isBest: boolean;
 }) {
   const { t } = useLanguage();
-  const { shipping, importCharges } = useLiveOfferCosts(offer, countryCode);
+  const { shipping, importCharges, isLive } = useLiveOfferCosts(offer, countryCode);
+  // eBay con envío 0 sin chequeo en vivo: no es gratis, es desconocido.
+  const noShipping = !isLive && shippingUnknown(offer);
   const total = offer.price + shipping + importCharges;
 
   return (
@@ -56,11 +58,15 @@ export default function CompareOfferRow({
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.shippingCost}</span>
         <span className="font-medium text-[#1a1a1a]">
-          {shipping > 0 ? formatOfferMoney(shipping, offer.currency) : t.compare.freeShipping}
+          {noShipping
+            ? t.compare.shippingToCheck
+            : shipping > 0
+              ? formatOfferMoney(shipping, offer.currency)
+              : t.compare.freeShipping}
         </span>
       </div>
       <div className="mt-0.5 flex justify-between border-t border-[#C9A24B]/15 pt-1.5 text-sm">
-        <span className="font-medium text-[#675c44]">{t.compare.total}</span>
+        <span className="font-medium text-[#675c44]">{noShipping ? t.detail.from : t.compare.total}</span>
         <span className="font-semibold text-[#B45309]">
           {formatOfferMoney(total, offer.currency)}
         </span>

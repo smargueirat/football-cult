@@ -34,7 +34,7 @@ export default function ProductCard({ product }: { product: Product }) {
   // scroll) igual disparan su pedido en vivo a eBay apenas montan.
   const cardRef = useRef<HTMLAnchorElement>(null);
   const inView = useInView(cardRef);
-  const { offer: best, total: bestTotal } = useBestOfferForCountry(product, countryCode, inView);
+  const { offer: best, total: bestTotal, shippingUnknown: noShipping } = useBestOfferForCountry(product, countryCode, inView);
   const storeCount = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
   ).length;
@@ -193,9 +193,9 @@ export default function ProductCard({ product }: { product: Product }) {
             <span className="text-sm font-semibold">
               {formatOfferMoney(bestTotal, best.currency)}
             </span>
-            {best.shipping > 0 && (
+            {(noShipping || bestTotal > best.price) && (
               <span className="text-[9px] font-medium uppercase leading-none opacity-70">
-                {t.product.shippingIncluded}
+                {noShipping ? t.product.shippingNotIncluded : t.product.shippingIncluded}
               </span>
             )}
           </div>

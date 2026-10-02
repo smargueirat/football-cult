@@ -68,6 +68,19 @@ export function offerTotal(offer: { price: number; shipping: number }): number {
   return offer.price + offer.shipping;
 }
 
+// Todas las variantes de eBay (eBay, eBay GB/ES/IT): el envío real depende del
+// país del comprador y se consulta en vivo (/api/ebay-shipping).
+export function isEbayStore(store: string): boolean {
+  return store.startsWith("eBay");
+}
+
+// En eBay `shipping: 0` en el catálogo NO significa gratis: la minería guarda
+// 0.0 cuando eBay no pudo calcular el envío (ebay_mine_full.py). Es "desconocido"
+// hasta que el chequeo en vivo confirme un valor. Otras tiendas: 0 se toma como gratis.
+export function shippingUnknown(offer: { store: string; shipping: number }): boolean {
+  return isEbayStore(offer.store) && offer.shipping === 0;
+}
+
 // Total "anterior" para el par tachado/actual de una tarjeta con badge de
 // baja de precio. `currentTotal` puede no ser simplemente price+shipping
 // del offer -- para eBay puede ser un total EN VIVO (useLiveOfferTotal)
