@@ -5,13 +5,14 @@ import BackToCatalogLink from "./BackToCatalogLink";
 import type { TicketProduct, TicketOffer } from "@/data/tickets";
 import { formatOfferMoney, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
 
 export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(ticket.id);
@@ -107,7 +108,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
                   <p className="text-xs text-[#675c44]">{formatOfferMoney(offer.price, offer.currency)}</p>
                 </div>
                 <a
-                  href={offer.url}
+                  href={goHref({ kind: "t", productId: ticket.id, url: offer.url, locale, origin: "ficha" })}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
                   onClick={() =>

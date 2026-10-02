@@ -18,6 +18,7 @@ assert.strictEqual(runs("/estudios"), true, "/estudios NO es el locale es");
 assert.strictEqual(runs("/entrenamiento"), true, "/entrenamiento NO es el locale en");
 assert.strictEqual(runs("/italia"), true, "/italia NO es el locale it");
 assert.strictEqual(runs("/francia"), true, "/francia NO es el locale fr");
+assert.strictEqual(runs("/gold"), true, "/gold NO es /go")
 assert.strictEqual(runs("/ptqueseayo"), true, "no es el locale pt");
 
 // No entra: ya tiene idioma -> se sirve sin ejecutar nada
@@ -25,7 +26,7 @@ for (const p of ["/es", "/en", "/pt", "/fr", "/it", "/es/botas", "/en/indice/cam
   assert.strictEqual(runs(p), false, `no deberia ejecutar el proxy: ${p}`);
 }
 // No entra: excluidos de siempre
-for (const p of ["/api/geo", "/robots.txt", "/sitemap.xml", "/feed-us.xml", "/_next/static/chunk.js", "/favicon.ico", "/icon.png"]) {
+for (const p of ["/api/geo", "/go/abc123", "/robots.txt", "/sitemap.xml", "/feed-us.xml", "/_next/static/chunk.js", "/favicon.ico", "/icon.png"]) {
   assert.strictEqual(runs(p), false, `no deberia ejecutar el proxy: ${p}`);
 }
 console.log("OK: matcher del proxy");

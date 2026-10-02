@@ -4,6 +4,7 @@ import { BootOffer } from "@/data/boots";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref, type GoKind } from "@/lib/go";
 
 // Mismo layout visual que CompareOfferRow.tsx, pero para una BootOffer
 // real en vez de una Offer de camiseta: sin useLiveOfferCosts (esa
@@ -16,17 +17,21 @@ import { trackOfferClick } from "@/lib/analytics";
 export default function CompareBootOfferRow({
   offer,
   isBest,
+  kind,
+  productId,
 }: {
   offer: BootOffer;
   isBest: boolean;
+  kind: GoKind;
+  productId: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const total = offer.price + offer.shipping;
   const isProSoccer = offer.store === "ProSoccer";
 
   return (
     <a
-      href={offer.url}
+      href={goHref({ kind, productId, url: offer.url, locale, origin: "comparar", isBest })}
       target="_blank"
       onClick={() =>
         trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })

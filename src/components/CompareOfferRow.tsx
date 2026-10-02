@@ -5,17 +5,20 @@ import { formatOfferMoney, shippingUnknown } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useLiveOfferCosts } from "@/lib/useLiveOfferCosts";
 import { trackOfferClick } from "@/lib/analytics";
+import { goHref } from "@/lib/go";
 
 export default function CompareOfferRow({
   offer,
   countryCode,
   isBest,
+  productId,
 }: {
   offer: Offer;
   countryCode: string;
   isBest: boolean;
+  productId: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { shipping, importCharges, isLive } = useLiveOfferCosts(offer, countryCode);
   // eBay con envío 0 sin chequeo en vivo: no es gratis, es desconocido.
   const noShipping = !isLive && shippingUnknown(offer);
@@ -23,7 +26,7 @@ export default function CompareOfferRow({
 
   return (
     <a
-      href={offer.url}
+      href={goHref({ kind: "j", productId, url: offer.url, locale, origin: "comparar", isBest })}
       target="_blank"
       onClick={() =>
         trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })

@@ -4,9 +4,9 @@ import { commissionRate } from "@/lib/commissionRates";
 // verdad importa: sin esto no hay forma de saber, en GA4, qué páginas/
 // tiendas/productos generan clicks reales hacia las tiendas afiliadas --
 // confirmado 2026-09-17 que este evento no existía en absoluto (GA4
-// mostraba "Eventos clave: 0"). gtag ya se carga condicionalmente en
-// layout.tsx vía NEXT_PUBLIC_GA_MEASUREMENT_ID -- esto no rompe nada si
-// esa env var no está seteada (ej. en dev), simplemente no manda nada.
+// mostraba "Eventos clave: 0"). window.gtag solo existe si el usuario aceptó la analítica
+// (src/lib/consent.ts) y hay NEXT_PUBLIC_GA_MEASUREMENT_ID; si no, esto
+// simplemente no manda nada.
 export function trackOfferClick(params: {
   store: string;
   url: string;
