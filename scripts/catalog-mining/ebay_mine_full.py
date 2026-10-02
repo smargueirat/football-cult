@@ -31,6 +31,7 @@ from extract import (
     EXCLUDE_RE,
     KIDS_EXCLUDE_RE,
     KIDS_SIGNAL_RE,
+    WOMEN_SIGNAL_RE,
     TEAM_PATTERNS,
     team_re_all,
     type_re_all,
@@ -231,6 +232,15 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
             if not JERSEY_RE.search(title):
                 continue
             if RETRO_EXCLUDE_RE.search(title):
+                continue
+            # Women's cuts have their own dimension (mine_women.py/apply_women.py),
+            # so one must never become a MEN'S retro product. "mujer|women|dama|
+            # feminin" left EXCLUDE_RE on 2026-09-28 to unblock the women's pass,
+            # which silently opened this path: 4 women's shirts (Forest 23/24,
+            # Sunderland 07/08, Spurs 21/22, Atletico 17/18 "taglia Donna M")
+            # reached generated blocks on 2026-10-02 before a title scan caught
+            # them. Same gap ebay_gb_retro.py has had open since 09-29.
+            if WOMEN_SIGNAL_RE.search(title):
                 continue
             if ACCESSORY_RE.search(title):
                 continue

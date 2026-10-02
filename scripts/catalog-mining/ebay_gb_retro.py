@@ -43,6 +43,13 @@ PRODUCTS_TS = os.path.join(HERE, "..", "..", "src", "data", "products.ts")
 STATE = os.path.join(HERE, "ebay_gb_retro_state.json")
 STORE = "eBay GB"
 KITS = {"home", "away", "third", "goalkeeper"}
+# "boys"/"girls" y las tallas britanicas de nino ("Size 12UK") NO estan en
+# KIDS_SIGNAL_RE a proposito: un \bboys\b suelto marcaria todos los anuncios
+# del BSC Young Boys, que es un club real del catalogo (misma clase de
+# auto-colision que el bug de "Boca Juniors" vs \bjunior\b del README). Por
+# eso va aca, acotado a este script, con el lookbehind que salva al club.
+GB_KIDS_EXTRA_RE = re.compile(r"(?<!young )\b(?:boys|girls)\b|\bsize\s*\d{1,2}\s*uk\b", re.I)
+
 # Sufijo de CLUB en el titulo. Segundo filtro contra la colision pais/club,
 # para los clubes que no estan en TEAM_PATTERNS: "Sint-Truidense HVV ...
 # Belgium", "FC Chaves ... Portugal", "GWANGJU FC (South Korea)". Solo se
@@ -91,6 +98,15 @@ def search_model(client, t, team_en, teams, types, nationals):
     for item in results:
         title = item.get("title") or ""
         if not JERSEY_RE.search(title) or RETRO_EXCLUDE_RE.search(title) or ACCESSORY_RE.search(title):
+            continue
+        # Las fichas retro de este script son de HOMBRE: una talla de mujer o de
+        # nino es OTRA dimension, con su propio pipeline. Pedido el 2026-09-29 y
+        # otra vez el 10-01, cuando volvio a costar dos ofertas sacadas a mano
+        # (un Club Tijuana "Boys" y un Castore "Size 12UK"). Mismo guard que
+        # ebay_mine_full.py's mine_retro.
+        if extract.WOMEN_SIGNAL_RE.search(title) or extract.KIDS_SIGNAL_RE.search(title):
+            continue
+        if GB_KIDS_EXTRA_RE.search(title):
             continue
         hit = extract.match_team(title, teams)
         if not hit or hit[0] != t["team"]:

@@ -253,8 +253,10 @@ currency code — confirmed live that real IT/ES search results already
 carry `"currency": "EUR"` themselves, so this fallback rarely matters in
 practice. Same team/type extraction (`extract.py`), same exclusion
 filters, same price floor/ceiling, same manual-exclusions blocklist
-(matched by `ebay.com/itm/<id>` substring, which is identical across
-marketplaces since it's the same global item id) — nothing
+(matched by a bare `/itm/<id>` substring — **this used to say
+`ebay.com/itm/<id>` and that was WRONG, see the 2026-10-02 entry: the
+item id is global but the domain is not, so every entry carrying
+`ebay.com` was silently dead on eBay IT and eBay ES**) — nothing
 marketplace-specific needed touching any of those.
 
 `ebay_mine_cycle.py` takes `marketplace_id` as an optional 3rd
@@ -3815,3 +3817,172 @@ miss again (7th pass) so `venue_cities.json` is unchanged. Price drops: 5650
 across the seven sections (camisetas 107, botas 34, entradas 4370, ropa 1000,
 guantes 35, pelotas 84, entrenamiento 20); Telegram published 3. Dominant
 colours: 90 new, 0 errors. GTINs: 2347 of 13617 offers (17.2%).
+
+## Daily pass (2026-10-02) -- the eBay blocklist never worked on IT/ES, and women's cuts were becoming men's retro fichas
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation ES, US, IT --
+day-of-year 275 mod 3 = 2). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (17th pass).
+Pro:Direct ES skipped as designed (no `/tmp/feeds/PRODIRECT_ES.csv`; Sunday
+04:00 cron next builds 2026-10-04) and **Pro:Direct UK skipped too** -- its file
+is from 09-30 18:59, ~35h old, past the documented 24h rule. **23 new products**
+(0 CSV current, 0 women, 0 kids, 1 eBay current, 22 eBay retro -- 6753 -> 6776
+blocks); `tsc`/dupe-id/duplicate-URL/build all clean, `check_retro_kit`/
+`check_women_type`/`check_gear_ids` OK, `teamMeta` clean (362 teams).
+
+**All three eBay marketplaces completed 20/20 with zero 429s** -- ES 225/384
+cycle 1, US 262/384 cycle 4, IT 237/384 cycle 1. `rate_limit/` read
+`buy.browse 4400/5000` at 06:12 UTC, which is why the eBay batches were run
+FIRST and the CSV work second: the window rolls at 07:00 and 09-26/09-30 both
+lost the whole night to a quota that was already drained by the live site.
+Reading it again at 07:22 gave a flat `5000/5000` straight after the roll, so
+10-01's "not a reliable live meter" stands -- it is a go/no-go signal only.
+
+**The real find: every eBay blocklist entry was dead on eBay IT and eBay ES.**
+The entries were written `ebay.com/itm/<id>`, but an IT link is `ebay.it/itm/
+<id>` and an ES link `ebay.es/itm/<id>` -- so the substring never matched and
+`is_manually_excluded()` returned False on the other two marketplaces. **This
+file's own multi-marketplace section asserted the opposite** ("matched by
+`ebay.com/itm/<id>` substring, which is identical across marketplaces since it
+is the same global item id") -- the item id is global, the domain is not.
+Proved by the Juventus-under-`torino` shirt blocklisted on 10-01 after it had
+to be pulled out of `products.ts` by hand: it came straight back the next
+night through eBay IT. All 57 entries normalised to a bare `/itm/<id>`, which
+holds on every marketplace; the id is 12 digits and globally unique, so there
+is no false-match risk. **Blocklist an eBay item by `/itm/<id>`, never with a
+domain in front.**
+
+**Women's cuts were silently becoming MEN'S retro products.** Four reached
+generated blocks before a title scan caught them (Nottingham Forest 23/24 away,
+Sunderland 07/08 home, Spurs 21/22 away, and an Atletico 17/18 whose title says
+`taglia Donna M` outright). Root cause is dated: `mujer|women|dama|feminin`
+left `EXCLUDE_RE` on 2026-09-28 so the women's pass could exist at all, and
+nothing replaced it on the men's retro path. `WOMEN_SIGNAL_RE` already existed
+and matches all four with no false positive on a men's title, so the fix is one
+guard in `ebay_mine_full.py`'s `mine_retro` -- plus the same guard in
+`ebay_gb_retro.py`, which is the kids/women filter asked for on 09-29 and again
+on 10-01 after it cost two hand-pulled offers a second time. **`"boys"`/
+`"girls"` had to go in a script-local regex, NOT `KIDS_SIGNAL_RE`**: a bare
+`\bboys\b` would flag every **BSC Young Boys** listing, which is a real club in
+the catalog -- the same self-collision class as the `\bjunior\b` vs "Boca
+Juniors" bug. `GB_KIDS_EXTRA_RE` uses a `(?<!young )` lookbehind and also
+catches British kid sizing (`"Size 12UK"`). While the detector was fresh it was
+run over the whole catalog: **9 kids/women `eBay GB` offers from earlier passes
+were still sitting on men's retro fichas** (including the exact Club Tijuana
+"Boys" and Castore "Size 12UK" that 10-01 pulled by hand) -- all 9 removed,
+every product kept another offer.
+
+**Bare-year twins, caught BEFORE creation this time: 30 of 82 candidates.**
+10-01 created seven of these and un-created them via the duplicate-URL diff;
+checking the generated id against `products.ts` first is strictly cheaper, and
+their offers were re-keyed to the real two-year season and merged (21 landed, 8
+were already on file). **New sub-class worth naming: an INTRA-BATCH twin.**
+`roma-retro-2012-home` and `roma-retro-201112-home` were both about to be
+created in the same run, so neither was on file yet and a check against
+`products.ts` structurally cannot see it -- found only by re-scanning the
+candidate set against itself. The bare-year one was dropped and its offer
+re-keyed into the two-year ficha, so nothing was lost.
+
+**A slug blocklist cannot hold FootStoreES.** The Denmark goalkeeper "86"
+heritage reissue reached the NEW set for the third pass running: it IS
+blocklisted, but by FootStoreFR's `ued=` slug, and FootStoreES links are
+unstable `pclick.php?p=` ids that carry no slug at all (documented 09-11).
+`extract.py` already passes the image URL to `is_manually_excluded()`, so the
+fix was only to blocklist the part that is stable in BOTH stores -- the bare
+hummel style code `222880-3389`, which sits in the image filename. Same move
+for the Croatia "prematch" 2026 (`kf4656`), an adidas **Originals trefoil**
+shirt with a real HNS crest -- 5th instance of that class and 2nd pass for this
+exact shirt. **Blocklist the manufacturer style code, not the store's slug.**
+
+**CSV feeds produced ZERO new products**, and that is a measured zero, not a
+skipped review: all 3 NEW and all 17 season conflicts were resolved by hand.
+**6 of the 17 were verified byte-identical to an offer already on file** (same
+URL string, not merely the same product): AdidasPT Newcastle + Juventus "Tiro
+25", Inter Miami on both BSTNs, ForumSport Alaves and PlanetFoot Nashville.
+`flamengo|home` "2026/27" on FootStoreES is adidas **JM5651 against JM5652 on
+file -- the replica of the same 2026 kit whose authentic version is already
+there**, confirmed by photo (identical hoops, crest, gold star and collar; only
+the fabric and cut differ), so the "2026/27" in the title is the store's error.
+The rest were older stock: `noruega|home` 2025 is now the **17th** pass, the
+ForumSport `barcelona|prematch` photo still dated 2024 in its own filename, plus
+`internacional|home`, `realbetis|training` and the FansJerseyHub "Third Away"
+25/26 set against 26/27 on file.
+
+**The one new eBay current product came out of the conflict set, not the NEW
+set**: `riverplate-training-2026` (adidas Tiro 26, real CARP shield, adidas
+PERFORMANCE logo -- note the CLIMACOOL on the hem is NOT a tell on its own, the
+09-30 Hamburg drop was trefoil *plus* CLIMACOOL). The actual NEW-set entry was
+dropped: `mainz|third` is the **same seller reusing one photo across two
+listings**, one titled "away" (already on file as `mainz-away-202526`) and one
+"third" -- byte-identical image id, so at least one of the two is mislabelled
+and the shirt is already in the catalog. **A shared image id across two listings
+of different kit types makes both unverifiable.**
+
+**eBay retro photo pass: 43 candidates after the id/text filters, and back-only
+photos were AGAIN the biggest class -- 16 of 43 (37%)**, the third pass running
+that this reproduces. Text filters first removed 9: six malformed season keys
+(`2015/15`, `2015/17`, `2023/34`, `1905/05` from "centenario 1905-2005",
+`2023/23`, `2024/45`), one `REEDICIÓN`, one `firmada` (signed), and one that is
+not a garment at all -- another `"Name Set ... Heat Transfer Choose Player"` at
+$18.99, the identical listing class to 10-01's. A `"parches EPL"` Chelsea
+Drogba shirt tripped the not-a-garment filter as a FALSE positive (those are
+sleeve patches ON a real shirt) and was only settled by the photo, which turned
+out to be back-only anyway. **`retro_offer_merge.py`'s ageGroup guard (added
+10-01) did its job: 35 age-grouped blocks were correctly skipped.**
+
+`team_collision_scan.py` run BEFORE applying, as 10-01 insisted: sanity-checked
+again with a planted "Arsenal FC England" title under `inglaterra` (flagged),
+**0 flags on every CSV-feed set for the eleventh pass**, and 49 on eBay. The
+real ones were dropped and blocklisted -- Italy/Zaccagni under `lazio`,
+Italy/Buongiorno under `napoli`, Man City/De Bruyne under `napoli`,
+Chile/Zamorano and Racing Club/Lautaro under `intermilan`, Leeds under
+`bournemouth` and Newcastle **Jets** under `newcastle` (both 2nd pass), an
+AliExpress Fulham, a signed Monaco, and a Monaco listing titled both "Away" and
+"Third". The documented filler-name keepers held (Everton/England, Lazio/Italy,
+Napoli/Italia, Torino/Italia, Sunderland/England, Monaco/France, Lens/France,
+Elche/Spain, PSG/Jordan-the-brand, PSG kids/Qatar-the-sponsor).
+
+**`ebay_check_stale.py`: 51 of 200 dead (25.5%)** -- down from 10-01's 40% but
+still double the 9.5-12% band the rest of the month held.
+
+`ebay_gb_retro.py`: 300 fichas reviewed, **84 with the same model on eBay UK
+(28%)**, up from 22% on 10-01; 86 offers inserted, 1561 single-store retro
+fichas still unchecked. Spot-checked 4 by photo (Iceland 22/23 and 18/19 away,
+Crystal Palace 24/25 away, Egypt 24/25 away) -- all genuine, all front views,
+right crest and right supplier.
+
+**DecathlonIE's zero was measured, not assumed** (the standing rule): its
+`Fashion:size` is populated on all 41689 rows and its 25 licensed club jersey
+rows are all 23/24 or 24/25, which `analyze()` correctly drops as old stock.
+ProSoccer footwear-only as always. **Shop Real Betis' `size` column is empty in
+all 1931 rows for the fourth pass** (`pick_no_size.py` again, argument order
+`csv price title link image out`), the 09-27 `stock=0` filter held with the
+identical 1149 sold out / 782 kept split, and its home and away picks again
+have an empty `imageURL` and were dropped by `split_picks.py`'s `no_image`
+guard. **Rakuten: all five Brazil feeds arrived first try** with `TRL|` counts
+matching their rows (Santos 8380, Inter 4138, Cruzeiro 979, Timão 431, PST
+2970), checked on the trailer and not on curl's exit code.
+
+**`ComoFCShop` applied under the right name** this time -- the store-name census
+was read BEFORE applying rather than after a suspicious `Inserted: 6,
+Replaced: 0`, and every CSV store came back a pure refresh (`Inserted: 0`) as a
+store already in the catalog should.
+
+Women's pass: 213 picks across 13 stores, **0 new products**, offers refreshed
+in 9 stores. 10-01 warned that `apply_women.py`'s dry run lies, so the zero was
+confirmed the only way that holds -- by diffing the block ids before and after
+`--apply`, not by reading its summary line.
+
+`refresh_boots.py`: 108 new, 173 dropped, 713 price changes, legacy
+`{fe_kept: 45, fe_dropped: 13, forum_kept: 55, products_removed: 1}`, 98
+products fused via 308 redirects, colour step `ok: 68, errors: 0`, and **no**
+FutbolEmotion WARNING (it mined 476 offers, so that feed was live).
+`refresh_gear.py`: ropa 71 new / 215 dropped / 2393 price changes,
+entrenamiento 16 / 17 / 262, pelotas 19 dropped / 276 price changes;
+`check_gear_ids.py` OK. Tickets: 4 new events, 8 dropped, of 2588 -- and
+**`venue_cities.json` finally moved after 7 straight passes of total Wikidata
+misses**: Gürsel Aksel Stadium resolved to İzmir (Q5995439). Price drops: 5169
+across the seven sections (camisetas 131, botas 323, entradas 3676, ropa 912,
+guantes 60, pelotas 39, entrenamiento 28); Telegram published 3. Dominant
+colours: 23 new, 0 errors. GTINs: 2362 of 14066 offers (16.8%).
