@@ -107,3 +107,35 @@ export function bootOfferTotalInEUR(offer: { price: number; shipping: number; cu
 export function ticketOfferTotalInEUR(offer: { price: number; currency: OfferCurrencyCode }): number {
   return offer.price / OFFER_CURRENCY_TO_EUR[offer.currency];
 }
+
+// Football TicketNet UK y US son la MISMA tienda: el precio US es el UK x 1,33
+// en 2587 de 2588 partidos (medido 2026-10-02), o sea una oferta en dos
+// monedas, no dos tiendas. Una comparación real de entradas necesita al menos
+// DOS vendedores distintos (hoy: Football TicketNet y Gigsberg), y eso es lo
+// que decide si la UI puede hablar de "mejor precio" o no.
+const TICKET_SELLER: Record<string, string> = {
+  FootballTicketNetUK: "Football TicketNet",
+  FootballTicketNetUS: "Football TicketNet",
+  Gigsberg: "Gigsberg",
+};
+const TICKET_STORE_LABEL: Record<string, string> = {
+  FootballTicketNetUK: "Football TicketNet (UK)",
+  FootballTicketNetUS: "Football TicketNet (US)",
+  Gigsberg: "Gigsberg",
+};
+
+export function ticketSeller(store: string): string {
+  return TICKET_SELLER[store] ?? store;
+}
+
+export function ticketStoreLabel(store: string): string {
+  return TICKET_STORE_LABEL[store] ?? store;
+}
+
+export function ticketSellers(offers: { store: string }[]): string[] {
+  return [...new Set(offers.map((o) => ticketSeller(o.store)))];
+}
+
+export function ticketHasRealComparison(offers: { store: string }[]): boolean {
+  return ticketSellers(offers).length > 1;
+}

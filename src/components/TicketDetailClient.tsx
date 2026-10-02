@@ -3,7 +3,7 @@
 import Image from "next/image";
 import BackToCatalogLink from "./BackToCatalogLink";
 import type { TicketProduct, TicketOffer } from "@/data/tickets";
-import { formatOfferMoney, ticketOfferTotalInEUR } from "@/lib/offerMoney";
+import { formatOfferMoney, ticketOfferTotalInEUR, ticketStoreLabel, ticketSellers, ticketHasRealComparison } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -20,6 +20,8 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
     (a, b) => ticketOfferTotalInEUR(a) - ticketOfferTotalInEUR(b)
   );
   const cheapest = sortedOffers[0];
+  // Comparar solo tiene sentido entre vendedores distintos (UK y US son la misma tienda).
+  const compared = ticketHasRealComparison(ticket.offers);
 
   const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(undefined, {
     weekday: "long",
@@ -62,8 +64,15 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
             {dateLabel} · {timeLabel} · {ticket.venue}{ticket.city ? `, ${ticket.city}` : ""}
           </p>
           <p className="mt-2 text-sm text-[#675c44]">
-            {t.botas.bestPrice}: {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
+            {compared ? `${t.botas.bestPrice}: ` : ""}
+            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
           </p>
+          {!compared && (
+            <p className="mt-1 text-xs text-[#675c44]">
+              {t.tickets.singleSourceDetail.replace("{store}", ticketSellers(ticket.offers)[0])}
+              {ticket.offers.length > 1 ? ` ${t.tickets.sameShopNote}` : ""}
+            </p>
+          )}
 
           {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
               precio por mail (ver FavoritesContext.tsx y check-prices). */}
@@ -83,8 +92,8 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
                 <div>
                   <div className="flex flex-wrap items-center gap-2">
                     <p className="text-sm font-medium text-[#1a1a1a]">
-                      {offer.store}
-                      {i === 0 && (
+                      {ticketStoreLabel(offer.store)}
+                      {compared && i === 0 && (
                         <span className="ml-2 rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#F3E9C9]">
                           {t.botas.bestPrice}
                         </span>

@@ -91,6 +91,9 @@ const RATES: Record<string, number> = {
   // €91, así que por clic paga más que una camiseta.
   FootballTicketNetUK: 0.04,
   FootballTicketNetUS: 0.04,
+  // Gigsberg ES: EPC medido EUR 0,11 el 2026-09-28 (0,47% de conversión), el
+  // peor de la lista; solo sirve para desempatar, no para prometer ingresos.
+  Gigsberg: 0.01,
 
   // Tiendas oficiales de club (Rakuten y programas propios).
   SantosStore: 0.05,

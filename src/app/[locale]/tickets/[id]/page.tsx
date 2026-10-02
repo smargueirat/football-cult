@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ticketProducts } from "@/data/tickets";
+import { ticketSeller, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import TicketDetailPageClient from "./TicketDetailPageClient";
@@ -10,23 +11,23 @@ const SITE_URL = "https://football-cult.com";
 const META_TEMPLATE: Record<Locale, { title: string; description: string }> = {
   es: {
     title: "{event} — Entradas | Football Cult",
-    description: "Compará precios de entradas para {event} entre distintas tiendas y comprá donde te convenga.",
+    description: "Entradas para {event}: precio, fecha, estadio y enlace directo a la tienda.",
   },
   en: {
     title: "{event} — Tickets | Football Cult",
-    description: "Compare ticket prices for {event} across stores and buy wherever suits you best.",
+    description: "Tickets for {event}: price, date, venue and a direct link to the store.",
   },
   pt: {
     title: "{event} — Ingressos | Football Cult",
-    description: "Compare preços de ingressos para {event} entre lojas e compre onde for melhor para você.",
+    description: "Ingressos para {event}: preço, data, estádio e link direto para a loja.",
   },
   fr: {
     title: "{event} — Billets | Football Cult",
-    description: "Comparez les prix des billets pour {event} entre boutiques et achetez où cela vous convient.",
+    description: "Billets pour {event} : prix, date, stade et lien direct vers la boutique.",
   },
   it: {
     title: "{event} — Biglietti | Football Cult",
-    description: "Confronta i prezzi dei biglietti per {event} tra i negozi e acquista dove preferisci.",
+    description: "Biglietti per {event}: prezzo, data, stadio e link diretto al negozio.",
   },
 };
 
@@ -84,11 +85,14 @@ export default async function TicketDetailPage({
   // el nombre del estadio (dato real) en vez de inventar una ciudad.
   const [homeTeam, awayTeam] = ticket.event.split(/\s+vs\s+/i);
   const teams = [homeTeam, awayTeam].filter(Boolean).map((n) => ({ "@type": "SportsTeam", name: n.trim() }));
+  const offersBySeller = [...ticket.offers]
+    .sort((a, b) => ticketOfferTotalInEUR(a) - ticketOfferTotalInEUR(b))
+    .filter((o, i, arr) => arr.findIndex((x) => ticketSeller(x.store) === ticketSeller(o.store)) === i);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
     name: ticket.event,
-    description: `${ticket.event} -- ${ticket.competition}, ${ticket.venue}, ${ticket.date}. Compará precios de entradas entre tiendas reales.`,
+    description: `${ticket.event} -- ${ticket.competition}, ${ticket.venue}, ${ticket.date}.`,
     startDate: `${ticket.date}T${ticket.time}`,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
@@ -97,14 +101,16 @@ export default async function TicketDetailPage({
     ...(teams.length === 2 ? { homeTeam: teams[0], awayTeam: teams[1] } : {}),
     image: ticket.imageUrl ? [ticket.imageUrl] : undefined,
     url: `${SITE_URL}/${locale}/tickets/${ticket.id}`,
-    offers: ticket.offers.map((o) => ({
+    // Una Offer por vendedor distinto (la más barata): UK y US son la misma
+    // tienda y no deben figurar como dos ofertas independientes.
+    offers: offersBySeller.map((o) => ({
       "@type": "Offer",
       url: o.url,
       price: o.price,
       priceCurrency: o.currency,
       availability: "https://schema.org/InStock",
       validFrom: new Date().toISOString().slice(0, 10),
-      seller: { "@type": "Organization", name: o.store },
+      seller: { "@type": "Organization", name: ticketSeller(o.store) },
     })),
   };
 

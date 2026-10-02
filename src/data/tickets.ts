@@ -5,11 +5,11 @@
 // feeds regionales de Football TicketNet en Awin (aid 109000 DE/EUR,
 // 109002 UK/GBP, 109004 US/USD) -- ver scripts/tickets-mining/.
 //
-// A diferencia de camisetas/botas/guantes/pelotas, acá el mismo evento
-// real (mismo merchant_product_id en las 3 tiendas, confirmado real)
-// tiene un precio genuinamente distinto según el país de venta -- por
-// eso SÍ vale la pena comparar entre las 3 "tiendas" regionales, exacto
-// mismo espíritu que Pro Soccer (USD) entre las botas.
+// Honestidad de la comparación (2026-10-02): UK y US son LA MISMA tienda
+// (precio USD = precio GBP x 1,33 en 2587 de 2588 eventos), así que no
+// cuentan como comparación; el DE cerró. Comparar de verdad exige otro
+// vendedor: Gigsberg (Awin, mismo partido por equipos + fecha exactos),
+// ver ticketHasRealComparison en src/lib/offerMoney.ts.
 //
 // ticketOfferTotalInEUR vive en src/lib/offerMoney.ts, NO acá -- mismo
 // motivo que bootOfferTotalInEUR: este archivo es el catálogo entero
@@ -21,7 +21,7 @@ import { ticketOfferTotalInEUR } from "@/lib/offerMoney";
 export { ticketOfferTotalInEUR };
 
 export interface TicketOffer {
-  store: "FootballTicketNetDE" | "FootballTicketNetUK" | "FootballTicketNetUS";
+  store: "FootballTicketNetDE" | "FootballTicketNetUK" | "FootballTicketNetUS" | "Gigsberg";
   price: number;
   currency: "EUR" | "GBP" | "USD";
   url: string;

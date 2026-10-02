@@ -5,24 +5,24 @@ import TicketsPageClient from "./TicketsPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
-    title: "Entradas de fútbol — Comparar precios | Football Cult",
-    description: "Comparativa de entradas de partidos de fútbol entre tiendas reales: Premier League, LaLiga, Champions League y más.",
+    title: "Entradas de fútbol | Football Cult",
+    description: "Entradas de partidos de fútbol con precio y enlace directo a la tienda: Premier League, LaLiga, Champions League y más.",
   },
   en: {
-    title: "Football Tickets — Compare Prices | Football Cult",
-    description: "Real football match ticket comparison across stores: Premier League, LaLiga, Champions League and more.",
+    title: "Football Tickets | Football Cult",
+    description: "Football match tickets with price and a direct link to the store: Premier League, LaLiga, Champions League and more.",
   },
   pt: {
-    title: "Ingressos de Futebol — Comparar Preços | Football Cult",
-    description: "Comparação real de ingressos de partidas de futebol entre lojas: Premier League, LaLiga, Champions League e mais.",
+    title: "Ingressos de Futebol | Football Cult",
+    description: "Ingressos de partidas de futebol com preço e link direto para a loja: Premier League, LaLiga, Champions League e mais.",
   },
   fr: {
-    title: "Billets de Football — Comparer les Prix | Football Cult",
-    description: "Comparatif réel de billets de matchs de football entre boutiques : Premier League, LaLiga, Ligue des Champions et plus.",
+    title: "Billets de Football | Football Cult",
+    description: "Billets de matchs de football avec prix et lien direct vers la boutique : Premier League, LaLiga, Ligue des Champions et plus.",
   },
   it: {
-    title: "Biglietti di Calcio — Confronta i Prezzi | Football Cult",
-    description: "Confronto reale di biglietti per partite di calcio tra negozi: Premier League, LaLiga, Champions League e altri.",
+    title: "Biglietti di Calcio | Football Cult",
+    description: "Biglietti per partite di calcio con prezzo e link diretto al negozio: Premier League, LaLiga, Champions League e altri.",
   },
 };
 
