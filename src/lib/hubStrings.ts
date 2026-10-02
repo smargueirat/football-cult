@@ -14,6 +14,8 @@ type S = {
   countryIntro: (o: { country: string; leagues: number; teams: number; n: number; price: string }) => string;
   allJerseys: string;
   otherTeams: (league: string) => string;
+  /** Enlace discreto al bot de Telegram para recibir bajadas de ese equipo. */
+  telegramFollow: string;
   leaguesOf: (country: string) => string;
   bestDeals: string;
   teams: string;
@@ -75,6 +77,7 @@ export const HUB: Record<HubLocale, S> = {
       `${n} camisetas de ${country}: la selección y ${teams} equipos en ${leagues} ${leagues === 1 ? "liga" : "ligas"}, comparadas entre varias tiendas. Precio más bajo hoy: ${price}.`,
     allJerseys: "Todas las camisetas",
     otherTeams: (l) => `Otros equipos de ${l}`,
+    telegramFollow: "🔔 Recibir avisos de este equipo por Telegram",
     leaguesOf: (c) => `Ligas de ${c}`,
     bestDeals: "Los precios más bajos",
     teams: "Equipos",
@@ -128,6 +131,7 @@ export const HUB: Record<HubLocale, S> = {
       `${n} shirts from ${country}: the national team and ${teams} clubs across ${leagues} ${leagues === 1 ? "league" : "leagues"}, compared across several stores. Lowest price today: ${price}.`,
     allJerseys: "All shirts",
     otherTeams: (l) => `Other ${l} teams`,
+    telegramFollow: "🔔 Get price-drop alerts for this team on Telegram",
     leaguesOf: (c) => `Leagues in ${c}`,
     bestDeals: "Lowest prices",
     teams: "Teams",
@@ -181,6 +185,7 @@ export const HUB: Record<HubLocale, S> = {
       `${n} camisas — ${country}: a seleção e ${teams} times em ${leagues} ${leagues === 1 ? "liga" : "ligas"}, comparadas entre várias lojas. Menor preço hoje: ${price}.`,
     allJerseys: "Todas as camisas",
     otherTeams: (l) => `Outros times — ${l}`,
+    telegramFollow: "🔔 Receber avisos deste time pelo Telegram",
     leaguesOf: (c) => `Ligas — ${c}`,
     bestDeals: "Os menores preços",
     teams: "Times",
@@ -234,6 +239,7 @@ export const HUB: Record<HubLocale, S> = {
       `${n} maillots — ${country} : la sélection et ${teams} clubs dans ${leagues} ${leagues === 1 ? "ligue" : "ligues"}, comparés entre plusieurs boutiques. Prix le plus bas aujourd'hui : ${price}.`,
     allJerseys: "Tous les maillots",
     otherTeams: (l) => `Autres équipes — ${l}`,
+    telegramFollow: "🔔 Recevoir les alertes de cette équipe sur Telegram",
     leaguesOf: (c) => `Ligues — ${c}`,
     bestDeals: "Les prix les plus bas",
     teams: "Équipes",
@@ -287,6 +293,7 @@ export const HUB: Record<HubLocale, S> = {
       `${n} maglie — ${country}: la nazionale e ${teams} squadre in ${leagues} ${leagues === 1 ? "campionato" : "campionati"}, confrontate tra vari negozi. Prezzo più basso oggi: ${price}.`,
     allJerseys: "Tutte le maglie",
     otherTeams: (l) => `Altre squadre — ${l}`,
+    telegramFollow: "🔔 Ricevi gli avvisi di questa squadra su Telegram",
     leaguesOf: (c) => `Campionati — ${c}`,
     bestDeals: "I prezzi più bassi",
     teams: "Squadre",

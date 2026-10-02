@@ -29,6 +29,13 @@ import { ballProducts } from "../../src/data/balls";
 import { trainingProducts } from "../../src/data/training";
 import { previousPriceOf, priceDropPercent } from "../../src/lib/priceDrops";
 import { commissionRate } from "../../src/lib/commissionRates";
+import {
+  dataDir,
+  readFollowers,
+  readJson,
+  removeChat,
+  writeJsonAtomic,
+} from "../../src/lib/telegramFollowers";
 
 const HERE = import.meta.dirname;
 const STATE_PATH = path.join(HERE, "telegram_posted.json");
@@ -51,6 +58,10 @@ for (const line of fs.existsSync(path.join(HERE, "../../.env.local"))
 const PER_RUN = 3;
 /** Mínimo para que valga la pena molestar a un suscriptor. */
 const MIN_DROP_PCT = 10;
+/** Máximo de mensajes privados por seguidor y corrida. */
+const PER_FOLLOWER = 3;
+/** Pausa entre envíos: el Bot API tolera ~30 msg/s en total, vamos a 10. */
+const PAUSE_MS = 100;
 /** Días que se recuerda una bajada ya publicada, para no repetirla. */
 const STATE_DAYS = 30;
 
@@ -76,6 +87,8 @@ interface Candidate {
   previousPrice: number;
   currency: string;
   dropPct: number;
+  /** Equipo de la camiseta (solo camisetas: botas, ropa, etc. no son de un equipo). */
+  teamKey?: string;
   /** Descuento por comisión esperada: una bota al 30% vale mucho más que un cono al 30%. */
   score: number;
 }
@@ -96,7 +109,8 @@ function collect(): Candidate[] {
     title: string,
     offers: readonly { store: string; price: number; currency: string; url: string; imageUrl?: string; inStock?: boolean }[],
     // Las entradas traen la foto en el producto, no en la oferta.
-    fallbackImage?: string
+    fallbackImage?: string,
+    teamKey?: string
   ) => {
     for (const o of offers) {
       // inStock solo cuenta cuando la sección lo trae: en varias el feed
@@ -122,12 +136,13 @@ function collect(): Candidate[] {
         previousPrice: prev,
         currency: o.currency,
         dropPct: pct,
+        teamKey,
         score: pct * eur,
       });
     }
   };
 
-  for (const p of products) push("camisetas", "camiseta", p.id, jerseyTitle(p), p.offers);
+  for (const p of products) push("camisetas", "camiseta", p.id, jerseyTitle(p), p.offers, undefined, p.teamKey);
   for (const b of bootProducts) push("botas", "botas", b.id, `${b.brand} ${b.model}`, b.offers);
   for (const t of ticketProducts)
     push("entradas", "tickets", t.id, ticketTitle(t), t.offers, t.imageUrl);
@@ -213,6 +228,12 @@ interface State {
   [key: string]: string; // key -> fecha ISO de publicación
 }
 
+class TelegramError extends Error {
+  constructor(public status: number, public retryAfter: number | undefined, detail: string) {
+    super(`Telegram ${status}: ${detail}`);
+  }
+}
+
 async function send(token: string, chat: string, c: Candidate): Promise<void> {
   const base = `https://api.telegram.org/bot${token}`;
   const body = c.imageUrl
@@ -226,6 +247,90 @@ async function send(token: string, chat: string, c: Candidate): Promise<void> {
   if (!res.ok) throw new Error(`Telegram ${res.status}: ${(await res.text()).slice(0, 200)}`);
 }
 
+// Mensaje privado a un seguidor: mismo texto y enlace a NUESTRA ficha que el
+// canal, más una línea para darse de baja. Va como texto (no como foto): la
+// vista previa del enlace ya muestra la imagen de la ficha, y un mensaje
+// privado no puede fallar por una foto que Telegram rechace.
+async function sendPrivate(token: string, chat: string, c: Candidate): Promise<void> {
+  const text = `${caption(c)}\n\n<i>Sigues a ${escapeHtml(teamNames[c.teamKey as keyof typeof teamNames]?.es ?? c.teamKey ?? "")} · /stop para no recibir más avisos</i>`;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ chat_id: chat, text, parse_mode: "HTML" }),
+    });
+    if (res.ok) return;
+    const detail = await res.text();
+    let retryAfter: number | undefined;
+    try {
+      retryAfter = JSON.parse(detail)?.parameters?.retry_after;
+    } catch {}
+    // 429: Telegram dice cuánto esperar; se respeta una vez y se reintenta.
+    if (res.status === 429 && attempt === 0 && retryAfter && retryAfter <= 60) {
+      await new Promise((r) => setTimeout(r, retryAfter * 1000 + 200));
+      continue;
+    }
+    throw new TelegramError(res.status, retryAfter, detail.slice(0, 200));
+  }
+}
+
+// Avisos a seguidores. Aparte del canal: aquí NO vale el tope PER_RUN (que es
+// para no inundar un canal público); cada seguidor recibe como máximo
+// PER_FOLLOWER de las bajadas >=MIN_DROP_PCT de los equipos que sigue.
+// "Ya enviado" se recuerda por chat en el directorio de datos (fuera del repo,
+// porque son ids de personas), de modo que lo que no cupo hoy sale mañana.
+async function notifyFollowers(token: string | undefined, all: Candidate[]): Promise<void> {
+  const followers = readFollowers();
+  const chats = Object.keys(followers);
+  const sentPath = path.join(dataDir(), "telegram_followers_sent.json");
+  const sent: Record<string, State> = readJson(sentPath, {});
+  const cutoff = new Date(Date.now() - STATE_DAYS * 864e5).toISOString();
+  for (const chat of Object.keys(sent)) {
+    if (!followers[chat]) delete sent[chat];
+    else for (const k of Object.keys(sent[chat])) if (sent[chat][k] < cutoff) delete sent[chat][k];
+  }
+
+  const byTeam = new Map<string, Candidate[]>();
+  for (const c of all) if (c.teamKey) byTeam.set(c.teamKey, [...(byTeam.get(c.teamKey) ?? []), c]);
+
+  console.log(`\nSeguidores: ${chats.length} chats.`);
+  let delivered = 0;
+  for (const chat of chats) {
+    const seen = new Set<string>();
+    const picks = followers[chat]
+      .flatMap((t) => byTeam.get(t) ?? [])
+      .filter((c) => !sent[chat]?.[c.key])
+      .sort((a, b) => b.score - a.score)
+      .filter((c) => !seen.has(c.url) && seen.add(c.url))
+      .slice(0, PER_FOLLOWER);
+    if (!picks.length) continue;
+    if (!token) {
+      console.log(`[ensayo] ${picks.length} avisos para un seguidor de ${followers[chat].join(", ")}`);
+      continue;
+    }
+    for (const c of picks) {
+      try {
+        await sendPrivate(token, chat, c);
+        (sent[chat] ??= {})[c.key] = new Date().toISOString();
+        delivered++;
+      } catch (e) {
+        // 403 = el usuario bloqueó el bot (o lo borró): se quita del almacén.
+        if (e instanceof TelegramError && e.status === 403) {
+          removeChat(chat);
+          delete sent[chat];
+          console.log("Un seguidor bloqueó el bot: eliminado.");
+        } else {
+          console.log(`Fallo enviando a un seguidor: ${(e as Error).message}`);
+        }
+        break;
+      }
+      await new Promise((r) => setTimeout(r, PAUSE_MS));
+    }
+  }
+  if (token) writeJsonAtomic(sentPath, sent);
+  console.log(`Avisos privados ${token ? "enviados" : "que se enviarían"}: ${token ? delivered : "ensayo"}.`);
+}
+
 async function main() {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chat = process.env.TELEGRAM_CHANNEL_ID;
@@ -237,7 +342,8 @@ async function main() {
   const cutoff = new Date(Date.now() - STATE_DAYS * 864e5).toISOString();
   for (const k of Object.keys(state)) if (state[k] < cutoff) delete state[k];
 
-  const candidates = collect()
+  const everything = collect();
+  const candidates = everything
     .filter((c) => !state[c.key])
     .sort((a, b) => b.score - a.score);
 
@@ -268,12 +374,15 @@ async function main() {
 
   if (dryRun) {
     console.log(
-      "\nENSAYO: no se publicó nada. Faltan TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID (ver .env.local)."
+      "\nENSAYO: no se publicó nada en el canal. Faltan TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID (ver .env.local)."
     );
-    return;
+  } else {
+    fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 1) + "\n");
+    console.log(`\nPublicadas ${picks.length}. Estado: ${Object.keys(state).length} bajadas recordadas.`);
   }
-  fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 1) + "\n");
-  console.log(`\nPublicadas ${picks.length}. Estado: ${Object.keys(state).length} bajadas recordadas.`);
+
+  // Los avisos privados solo necesitan el token (no el canal). Sin token: ensayo.
+  await notifyFollowers(token, everything);
 }
 
 main();
