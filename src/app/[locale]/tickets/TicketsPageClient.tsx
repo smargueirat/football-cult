@@ -10,6 +10,7 @@ import FilterSheet from "@/components/FilterSheet";
 import SortDropdown from "@/components/SortDropdown";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { markCatalogVisited } from "@/lib/search/catalogVisit";
+import { ticketHasRealComparison } from "@/lib/offerMoney";
 
 const PAGE_SIZE = 24;
 
@@ -36,6 +37,7 @@ type SortKey = "dateAsc" | "dateDesc";
 
 export default function TicketsPageClient() {
   const { t } = useLanguage();
+  const comparedCount = useMemo(() => ticketProducts.filter((p) => ticketHasRealComparison(p.offers)).length, []);
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -102,6 +104,11 @@ export default function TicketsPageClient() {
       <BackToCatalogLink />
       <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{t.tickets.pageTitle}</h1>
       <p className="mt-1 text-sm text-[#675c44]">{t.tickets.pageSubtitle.replace("{n}", String(ticketProducts.length))}</p>
+      <p className="mt-1 text-xs text-[#675c44]">
+        {comparedCount > 0
+          ? t.tickets.partialSourceList.replace("{n}", String(comparedCount))
+          : t.tickets.singleSourceList}
+      </p>
 
       <div className="vintage-card mt-5 flex flex-col gap-4 rounded-3xl p-5 sm:p-6">
         <div className="flex flex-col gap-2">

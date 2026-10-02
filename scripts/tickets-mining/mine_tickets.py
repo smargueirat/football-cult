@@ -6,13 +6,13 @@ cache /tmp/feeds/*.csv del scan diario, sin descarga propia. El feed DE
 se quitaron del catálogo. Escribe mined_tickets.json, entrada de
 refresh_tickets.py.
 
-A diferencia de camisetas/botas/guantes/pelotas, acá SÍ tiene sentido
-comparar precio por evento entre las 3 regiones: es el MISMO partido real
-(mismo merchant_product_id en las 3 tiendas -- confirmado real,
-ej. "Bayer Leverkusen vs SC Freiburg" id 128881: £132.84 en la tienda UK,
-€155 en la DE) a precio genuinamente distinto según el país de venta, así
-que se agrupa por ese id real en vez de tratarlas como 3 catálogos
-separados.
+OJO: UK y US son la MISMA tienda (USD = GBP x 1,33 en casi todos los
+eventos), no una comparación. La comparación real viene de Gigsberg
+(Awin, feed 117210): se agrega como oferta extra SOLO a eventos ya
+minados de Football TicketNet, con el mismo "Equipo A vs Equipo B" + fecha
+exactos (nunca difuso; ambiguo = se omite) y precio dentro de [1/3, 3]x.
+Si el feed de Gigsberg tiene más de GIGSBERG_MAX_AGE_DAYS (7) días desde
+su última importación, NO se usa (precios viejos).
 
 Fecha/venue: no vienen en columnas propias, están embebidos en el campo
 description con el formato fijo "Event Type: Football, {venue}, Date:
@@ -152,6 +152,130 @@ def canonicalize_teams(merged):
             d["event"] = f"{a} vs {b}"
 
 
+# ---------------------------------------------------------------------------
+# Segunda fuente: Gigsberg (Awin aid 102705, feed ES en EUR, id 117210).
+#
+# Football TicketNet UK y US son la MISMA tienda: el precio US es el UK x 1,33
+# en 2587 de 2588 partidos (medido 2026-10-02), o sea una sola oferta en dos
+# monedas, no una comparacion. Gigsberg es otro mercado secundario, con
+# precio propio e independiente, asi que es el unico candidato real a
+# comparar que ya esta aprobado (active) en nuestra cuenta Awin.
+#
+# Reglas, todas pensadas para NO inventar una comparacion:
+#  1. Emparejado SOLO por nombre exacto de equipos (sin acentos/mayusculas/
+#     puntuacion) + misma fecha. Nunca difuso. Si el par es ambiguo (dos
+#     partidos del mismo nombre y dia en cualquiera de las dos fuentes) se
+#     descarta. Gigsberg NO crea partidos nuevos: solo suma oferta a uno
+#     que Football TicketNet ya trae.
+#  2. Frescura: el feed de Gigsberg estuvo congelado desde 2026-09-09 (campo
+#     "Last Imported" del listado de feeds de Awin, 23 dias de atraso el
+#     2026-10-02; contra la pagina real: la mitad de los precios coincide y
+#     el resto se movio hasta un 40%). Comparar un precio de hoy contra uno
+#     de hace 3 semanas y decir "mas barato" seria mentir, asi que si el
+#     feed tiene mas de GIGSBERG_MAX_AGE_DAYS (7 por defecto) NO se usa y ni
+#     se descarga. Se reactiva solo cuando Awin lo vuelva a importar.
+#  3. Precios incomparables: si el precio de Gigsberg es <1/3 o >3x el de
+#     Football TicketNet (en EUR) casi seguro son categorias de asiento
+#     distintas, y ese partido no se empareja.
+# ---------------------------------------------------------------------------
+GIGSBERG_FEED_ID = "117210"
+GIGSBERG_MAX_AGE_DAYS = float(os.environ.get("GIGSBERG_MAX_AGE_DAYS", "7"))
+GIGSBERG_RATIO_BOUNDS = (1 / 3, 3)
+TO_EUR = {"EUR": 1, "GBP": 1 / 0.86, "USD": 1 / 1.08}  # misma tabla que OFFER_CURRENCY_TO_EUR en src/lib/offerMoney.ts
+GIGSBERG_DESC_RE = re.compile(r"Venue:\s*(.+?),\s*Date:\s*(\d{4}-\d{2}-\d{2}),\s*Time:\s*([\d:]+)")
+
+
+def event_key(event, event_date):
+    s = strip_accents(event).lower()
+    return (" ".join(re.sub(r"[^a-z0-9 ]", " ", s).split()), event_date)
+
+
+def awin_api_key():
+    m = re.search(r"apikey/([A-Za-z0-9]+)", os.environ.get("AWIN_FEED_URL_TICKETNET_UK", ""))
+    if m:
+        return m.group(1)
+    for env_path in (os.path.join(SCRIPT_DIR, "..", "..", ".env.local"), os.path.expanduser("~/football-cult/.env.local")):
+        if os.path.exists(env_path):
+            m = re.search(r"AWIN_FEED_URL_TICKETNET_UK=.*?apikey/([A-Za-z0-9]+)", open(env_path, encoding="utf-8").read())
+            if m:
+                return m.group(1)
+    return None
+
+
+def fetch_gigsberg_feed():
+    """Devuelve la ruta del CSV de Gigsberg ES, o None si no esta fresco/no se pudo bajar."""
+    import urllib.request, gzip, io
+    key = awin_api_key()
+    if not key:
+        print("Gigsberg: no Awin api key found, skipped")
+        return None
+    try:
+        with urllib.request.urlopen(f"https://productdata.awin.com/datafeed/list/apikey/{key}", timeout=60) as r:
+            listing = list(csv.DictReader(io.StringIO(r.read().decode("utf-8", errors="replace"))))
+        row = next((x for x in listing if x["Feed ID"] == GIGSBERG_FEED_ID and x["Membership Status"] == "active"), None)
+        if not row:
+            print("Gigsberg: feed not active in the Awin list, skipped")
+            return None
+        age = (datetime.now() - datetime.strptime(row["Last Imported"], "%Y-%m-%d %H:%M:%S")).total_seconds() / 86400
+        if age > GIGSBERG_MAX_AGE_DAYS:
+            print(f"Gigsberg: feed last imported {row['Last Imported']} ({age:.0f} days ago, limit {GIGSBERG_MAX_AGE_DAYS:g}) -> stale, NOT used")
+            return None
+        dest = f"{FEEDS}/GIGSBERG_ES.csv"
+        with urllib.request.urlopen(row["URL"], timeout=180) as r:
+            data = r.read()
+        if data[:2] == b"\x1f\x8b":
+            data = gzip.decompress(data)
+        with open(dest, "wb") as f:
+            f.write(data)
+        return dest
+    except Exception as e:  # red/Awin caidos: el miner sigue sin segunda fuente, nunca rompe la corrida
+        print(f"Gigsberg: could not fetch ({e}), skipped")
+        return None
+
+
+def add_gigsberg_offers(merged):
+    path = fetch_gigsberg_feed()
+    if not path:
+        return 0
+    today = date.today().isoformat()
+    index = {}
+    for d in merged.values():
+        index.setdefault(event_key(d["event"], d["date"]), []).append(d)
+    seen = {}
+    with open(path, newline="", encoding="utf-8", errors="replace") as f:
+        for row in csv.DictReader(f):
+            if "/sport-tickets/football/" not in (row.get("merchant_deep_link") or ""):
+                continue
+            m = GIGSBERG_DESC_RE.search(row.get("description") or "")
+            if not m or m.group(2) < today:
+                continue
+            try:
+                price = round(float(row.get("search_price") or ""), 2)
+            except ValueError:
+                continue
+            if not price or row.get("currency") != "EUR" or not row.get("aw_deep_link"):
+                continue
+            k = event_key(row.get("product_name") or "", m.group(2))
+            seen.setdefault(k, []).append((price, row["aw_deep_link"]))
+    added = skipped_ambiguous = skipped_price = 0
+    for k, offers in seen.items():
+        targets = index.get(k)
+        if not targets:
+            continue
+        if len(offers) > 1 or len(targets) > 1:
+            skipped_ambiguous += 1
+            continue
+        price, url = offers[0]
+        tn_eur = min(o["price"] * TO_EUR[o["currency"]] for o in targets[0]["offers"])
+        if not GIGSBERG_RATIO_BOUNDS[0] <= price / tn_eur <= GIGSBERG_RATIO_BOUNDS[1]:
+            skipped_price += 1
+            continue
+        targets[0]["offers"].append({"store": "Gigsberg", "price": price, "currency": "EUR", "url": url})
+        added += 1
+    print(f"Gigsberg: {added} events matched by exact teams+date (skipped: {skipped_ambiguous} ambiguous, {skipped_price} incomparable price)")
+    return added
+
+
 if __name__ == "__main__":
     regions = [
         # Football TicketNet DE: programa Awin CERRADO el 2026-09-01 (el nombre del
@@ -176,6 +300,7 @@ if __name__ == "__main__":
                 }
             merged[key]["offers"].append(d["offer"])
 
+    add_gigsberg_offers(merged)
     canonicalize_teams(merged)
     results = list(merged.values())
     print("TOTAL distinct events:", len(results))

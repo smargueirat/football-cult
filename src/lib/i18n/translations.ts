@@ -471,6 +471,10 @@ export interface Translations {
     dateToLabel: string;
     soonestFirst: string;
     latestFirst: string;
+    singleSourceList: string;
+    partialSourceList: string;
+    singleSourceDetail: string;
+    sameShopNote: string;
   };
   ropa: {
     navLabel: string;
@@ -617,7 +621,7 @@ export const translations: Record<Locale, Translations> = {
       {
         eyebrow: "Entradas de fútbol",
         title: "Viví el partido en vivo",
-        subtitle: "Premier League, LaLiga, Champions League y más -- comparado entre 3 regiones reales.",
+        subtitle: "Premier League, LaLiga, Champions League y más, con enlace directo a la tienda.",
         cta: "Ver entradas",
       },
       {
@@ -1019,6 +1023,10 @@ export const translations: Record<Locale, Translations> = {
       dateToLabel: "Hasta",
       soonestFirst: "Fecha: más próximos primero",
       latestFirst: "Fecha: más lejanos primero",
+      singleSourceList: "Por ahora los precios son de Football TicketNet; todavía no hay otra tienda para comparar.",
+      partialSourceList: "{n} partidos tienen precio de dos tiendas para comparar; el resto, solo de Football TicketNet.",
+      singleSourceDetail: "Precio de {store}; todavía no hay otra tienda para comparar.",
+      sameShopNote: "Las versiones UK y US son la misma tienda: es el mismo precio en otra moneda, no una comparación.",
     },
     ropa: {
       navLabel: "Ropa",
@@ -1162,7 +1170,7 @@ export const translations: Record<Locale, Translations> = {
       {
         eyebrow: "Ingressos de futebol",
         title: "Viva a partida ao vivo",
-        subtitle: "Premier League, LaLiga, Champions League e mais -- comparado entre 3 regiões reais.",
+        subtitle: "Premier League, LaLiga, Champions League e mais, com link direto para a loja.",
         cta: "Ver ingressos",
       },
       {
@@ -1564,6 +1572,10 @@ export const translations: Record<Locale, Translations> = {
       dateToLabel: "Até",
       soonestFirst: "Data: mais próximos primeiro",
       latestFirst: "Data: mais distantes primeiro",
+      singleSourceList: "Por enquanto os preços são da Football TicketNet; ainda não há outra loja para comparar.",
+      partialSourceList: "{n} jogos têm preço de duas lojas para comparar; os demais, só da Football TicketNet.",
+      singleSourceDetail: "Preço da {store}; ainda não há outra loja para comparar.",
+      sameShopNote: "As versões UK e US são a mesma loja: é o mesmo preço em outra moeda, não uma comparação.",
     },
     ropa: {
       navLabel: "Roupas",
@@ -1707,7 +1719,7 @@ export const translations: Record<Locale, Translations> = {
       {
         eyebrow: "Football tickets",
         title: "Live the match in person",
-        subtitle: "Premier League, LaLiga, Champions League and more -- compared across 3 real regions.",
+        subtitle: "Premier League, LaLiga, Champions League and more, with a direct link to the store.",
         cta: "Shop tickets",
       },
       {
@@ -2109,6 +2121,10 @@ export const translations: Record<Locale, Translations> = {
       dateToLabel: "To",
       soonestFirst: "Date: soonest first",
       latestFirst: "Date: latest first",
+      singleSourceList: "For now prices come from Football TicketNet; there is no other store to compare yet.",
+      partialSourceList: "{n} matches have prices from two stores to compare; the rest are from Football TicketNet only.",
+      singleSourceDetail: "Price from {store}; there is no other store to compare yet.",
+      sameShopNote: "The UK and US versions are the same store: the same price in another currency, not a comparison.",
     },
     ropa: {
       navLabel: "Apparel",
@@ -2252,7 +2268,7 @@ export const translations: Record<Locale, Translations> = {
       {
         eyebrow: "Billets de football",
         title: "Vivez le match en direct",
-        subtitle: "Premier League, LaLiga, Ligue des Champions et plus -- comparé entre 3 régions réelles.",
+        subtitle: "Premier League, LaLiga, Ligue des Champions et plus, avec lien direct vers la boutique.",
         cta: "Voir les billets",
       },
       {
@@ -2654,6 +2670,10 @@ export const translations: Record<Locale, Translations> = {
       dateToLabel: "Au",
       soonestFirst: "Date : les plus proches d'abord",
       latestFirst: "Date : les plus lointaines d'abord",
+      singleSourceList: "Pour l'instant, les prix viennent de Football TicketNet ; il n'y a pas encore d'autre boutique à comparer.",
+      partialSourceList: "{n} matchs ont le prix de deux boutiques à comparer ; les autres viennent uniquement de Football TicketNet.",
+      singleSourceDetail: "Prix de {store} ; il n'y a pas encore d'autre boutique à comparer.",
+      sameShopNote: "Les versions UK et US sont la même boutique : le même prix dans une autre devise, pas une comparaison.",
     },
     ropa: {
       navLabel: "Vêtements",
@@ -2797,7 +2817,7 @@ export const translations: Record<Locale, Translations> = {
       {
         eyebrow: "Biglietti di calcio",
         title: "Vivi la partita dal vivo",
-        subtitle: "Premier League, LaLiga, Champions League e altro -- confrontato tra 3 regioni reali.",
+        subtitle: "Premier League, LaLiga, Champions League e altro, con link diretto al negozio.",
         cta: "Vedi i biglietti",
       },
       {
@@ -3199,6 +3219,10 @@ export const translations: Record<Locale, Translations> = {
       dateToLabel: "A",
       soonestFirst: "Data: più vicine prima",
       latestFirst: "Data: più lontane prima",
+      singleSourceList: "Per ora i prezzi sono di Football TicketNet; non c'è ancora un altro negozio con cui confrontarli.",
+      partialSourceList: "{n} partite hanno il prezzo di due negozi da confrontare; le altre solo di Football TicketNet.",
+      singleSourceDetail: "Prezzo di {store}; non c'è ancora un altro negozio con cui confrontarlo.",
+      sameShopNote: "Le versioni UK e US sono lo stesso negozio: stesso prezzo in un'altra valuta, non un confronto.",
     },
     ropa: {
       navLabel: "Abbigliamento",
