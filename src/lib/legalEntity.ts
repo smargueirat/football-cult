@@ -18,7 +18,7 @@ export const LEGAL_ENTITY = {
   /** NIF/DNI/NIE del titular. */
   nif: PENDING,
   /** Domicilio completo (calle, CP, localidad, provincia, país). */
-  address: PENDING,
+  address: "Agatha Christie 6, 28523 Rivas-Vaciamadrid (Madrid), España",
   /** Fecha de la última revisión de los textos legales. */
   updated: "2026-10-02",
 } as const;
