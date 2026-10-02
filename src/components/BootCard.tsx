@@ -11,6 +11,7 @@ import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import BootSkeleton from "./BootSkeleton";
 
+import { retailerCountText } from "@/lib/retailerFamily";
 // Mismo "chrome" visual que ProductCard3D (misma tarjeta, mismo badge de
 // arriba a la izquierda, mismo precio abajo a la derecha, misma línea de
 // info debajo, mismos botones de favorito/comparar) -- pedido explícito
@@ -177,7 +178,7 @@ export default function BootCard({
           {boot.model}
         </h3>
         <p className="text-[10px] text-[#675c44] sm:text-xs">
-          {t.product.inStores.replace("{n}", String(boot.offers.length))}
+          {retailerCountText(boot.offers, t.product)}
           {sizeRange && (
             <>
               {" "}

@@ -1,4 +1,5 @@
 import { offerTotalInEUR, type OfferCurrencyCode } from "@/lib/offerMoney";
+import { countDistinctRetailers } from "@/lib/retailerFamily";
 
 // Selección de regalos por rango de precio.
 //
@@ -75,7 +76,7 @@ export function giftPicks<T extends Giftable>(
     if (!pick) continue;
     const eur = total(pick);
     if (eur < band.min || eur >= band.max) continue;
-    const stores = new Set(item.offers.filter((o) => o.inStock !== false).map((o) => o.store)).size;
+    const stores = countDistinctRetailers(item.offers.filter((o) => o.inStock !== false));
     scored.push({ ...item, pick, eur, stores });
   }
   // Más tiendas primero; a igualdad, lo más barato del tramo.

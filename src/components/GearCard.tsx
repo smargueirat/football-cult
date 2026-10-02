@@ -9,6 +9,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 
+import { retailerCountText } from "@/lib/retailerFamily";
 // Mismo "chrome" visual que BootCard/ProductCard3D -- guantes y pelotas
 // comparten exactamente la misma forma de datos (brand/model/offers con
 // store/price/shipping/currency/sizes, siempre EUR, sin groundType), así
@@ -164,7 +165,7 @@ export default function GearCard({
           {localizeGearModel(item.model, item.brand, locale)}
         </h3>
         <p className="text-[10px] text-[#675c44] sm:text-xs">
-          {t.product.inStores.replace("{n}", String(item.offers.length))}
+          {retailerCountText(item.offers, t.product)}
           {sizeRange && (
             <>
               {" "}

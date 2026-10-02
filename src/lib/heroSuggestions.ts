@@ -3,6 +3,7 @@ import { bootProducts } from "@/data/boots";
 import { isVintageRetro } from "@/lib/productMeta";
 import type { HubLocale } from "@/data/teamMeta";
 
+import { countDistinctRetailers } from "@/lib/retailerFamily";
 // Atajos del buscador del hero, SACADOS DEL CATÁLOGO, no escritos a mano.
 //
 // Escribirlos a mano ("Real Madrid 2002", "Boca 1998") parece más
@@ -28,7 +29,7 @@ function topTeams(n: number): TeamKey[] {
   for (const p of products) {
     // Solo cuentan los que comparan: un atajo que lleva a una ficha de
     // una sola tienda no muestra lo que el sitio sabe hacer.
-    if (new Set(p.offers.map((o) => o.store)).size < 2) continue;
+    if (countDistinctRetailers(p.offers) < 2) continue;
     count.set(p.teamKey, (count.get(p.teamKey) ?? 0) + 1);
   }
   return [...count.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(([k]) => k);

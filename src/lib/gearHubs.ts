@@ -7,6 +7,7 @@ import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { isComparableStore } from "@/lib/officialStores";
 import type { HubFacts } from "@/lib/hubFaq";
 
+import { bestPerRetailer, countDistinctRetailers, distinctRetailerLabels } from "@/lib/retailerFamily";
 // Datos de los hubs de botas / guantes / pelotas / ropa (marca, terreno,
 // tipo). SOLO servidor -- importa los catálogos enteros (ver el comentario
 // largo en src/lib/offerMoney.ts sobre por qué no desde componentes de
@@ -70,10 +71,13 @@ const cache: Partial<Record<GearSection, GearItem[]>> = {};
 // réplicas dentro, el número se dispara comparando cosas distintas (ver
 // el comentario largo de officialStores.ts).
 function spreadOf(offers: Raw["offers"]): GearItem["spread"] {
-  const comp = offers
-    .filter((o) => isComparableStore(o.store))
-    .map((o) => ({ store: o.store, eur: bootOfferTotalInEUR(o) }))
-    .sort((a, b) => a.eur - b.eur);
+  // Una cifra por tienda: el espejo ES/FR de un mismo minorista no cuenta.
+  const comp = bestPerRetailer(
+    offers
+      .filter((o) => isComparableStore(o.store))
+      .map((o) => ({ store: o.store, eur: bootOfferTotalInEUR(o) })),
+    (a, b) => a.eur < b.eur,
+  ).sort((a, b) => a.eur - b.eur);
   if (comp.length < 2) return undefined;
   const lo = comp[0];
   const hi = comp[comp.length - 1];
@@ -113,8 +117,8 @@ function build(section: GearSection, raws: Raw[]): GearItem[] {
       shipping: best.shipping,
       currency: best.currency,
       eur: bootOfferTotalInEUR(best),
-      stores: r.offers.length,
-      storeNames: [...new Set(r.offers.map((o) => o.store))],
+      stores: countDistinctRetailers(r.offers),
+      storeNames: distinctRetailerLabels(r.offers),
       bestStore: best.store,
       spread: spreadOf(r.offers),
       ground: r.groundType || undefined,

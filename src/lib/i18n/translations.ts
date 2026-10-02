@@ -157,7 +157,8 @@ export interface Translations {
     soldOut: string;
     viewStores: string;
     hideStores: string;
-    inStores: string;
+    onlyIn: string;
+    comparingStores: string;
     sizesRange: string;
     cardCompare: string;
     cardSaving: string;
@@ -697,7 +698,8 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Agotado",
       viewStores: "Ver otras tiendas ({n})",
       hideStores: "Ocultar tiendas",
-      inStores: "En {n} tiendas",
+      onlyIn: "Solo en {store}",
+      comparingStores: "Comparando {n} tiendas",
       sizesRange: "Tallas {range}",
       cardCompare: "Compara en {n} tiendas",
       cardSaving: "hasta -{pct}%",
@@ -1233,7 +1235,8 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Esgotado",
       viewStores: "Ver outras lojas ({n})",
       hideStores: "Ocultar lojas",
-      inStores: "Em {n} lojas",
+      onlyIn: "Só na {store}",
+      comparingStores: "Comparando {n} lojas",
       sizesRange: "Tamanhos {range}",
       cardCompare: "Compara em {n} lojas",
       cardSaving: "até -{pct}%",
@@ -1769,7 +1772,8 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Sold out",
       viewStores: "Other stores ({n})",
       hideStores: "Hide stores",
-      inStores: "At {n} stores",
+      onlyIn: "Only at {store}",
+      comparingStores: "Comparing {n} stores",
       sizesRange: "Sizes {range}",
       cardCompare: "Compare {n} stores",
       cardSaving: "up to -{pct}%",
@@ -2305,7 +2309,8 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Épuisé",
       viewStores: "Autres boutiques ({n})",
       hideStores: "Masquer les boutiques",
-      inStores: "Dans {n} boutiques",
+      onlyIn: "Seulement chez {store}",
+      comparingStores: "Comparaison de {n} boutiques",
       sizesRange: "Tailles {range}",
       cardCompare: "Compare {n} boutiques",
       cardSaving: "jusqu'à -{pct}%",
@@ -2841,7 +2846,8 @@ export const translations: Record<Locale, Translations> = {
       soldOut: "Esaurito",
       viewStores: "Altri negozi ({n})",
       hideStores: "Nascondi negozi",
-      inStores: "In {n} negozi",
+      onlyIn: "Solo su {store}",
+      comparingStores: "Confronto tra {n} negozi",
       sizesRange: "Taglie {range}",
       cardCompare: "Confronta {n} negozi",
       cardSaving: "fino a -{pct}%",

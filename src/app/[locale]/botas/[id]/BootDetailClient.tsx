@@ -11,6 +11,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, upsizeBootDetailPhoto } from "@/lib/images";
 
+import { retailerCountText } from "@/lib/retailerFamily";
 export default function BootDetailClient({ boot }: { boot: BootProduct }) {
   const { t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -101,7 +102,7 @@ export default function BootDetailClient({ boot }: { boot: BootProduct }) {
               fecha de último refresh cargada acá, a diferencia de
               camisetas -- ver JerseyDetailClient.tsx). */}
           <div className="vintage-card mt-3 flex items-center gap-1.5 rounded-2xl p-4 text-sm font-medium text-[#1B3B2B]">
-            {t.product.inStores.replace("{n}", String(sortedOffers.length))}
+            {retailerCountText(sortedOffers, t.product)}
           </div>
         </div>
         <div>

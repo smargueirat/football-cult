@@ -5,6 +5,7 @@ import { ballProducts } from "@/data/balls";
 import { apparelProducts } from "@/data/apparel";
 import { trainingProducts } from "@/data/training";
 
+import { getRetailerFamily } from "@/lib/retailerFamily";
 // Números de la franja de confianza, contados del catálogo en build.
 //
 // La propuesta original decía "+10.000 artículos comparados" y "tiendas
@@ -37,7 +38,7 @@ export function trustStats(): TrustStats {
   ];
   for (const list of all) {
     for (const p of list as { offers: { store: string }[] }[]) {
-      const own = new Set(p.offers.map((o) => o.store));
+      const own = new Set(p.offers.map((o) => getRetailerFamily(o.store)));
       for (const s of own) stores.add(s);
       if (own.size >= 2) compared += 1;
     }
