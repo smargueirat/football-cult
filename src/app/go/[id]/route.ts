@@ -2,6 +2,7 @@ import { after, type NextRequest } from "next/server";
 import { GO_KINDS, offerHash, type GoKind } from "@/lib/go";
 import { isLocale } from "@/lib/i18n/locales";
 import { logClick, summarizeUserAgent } from "@/lib/clickLog";
+import { AFFILIATE_COOKIE, SKIMLINKS_PUB_ID } from "@/lib/consent";
 
 // Redirect de salida: /go/<hash de la URL de la oferta>?k=<tipo>&p=<producto>
 // Ver src/lib/go.ts. Resuelve la oferta contra el catálogo (el destino
@@ -24,6 +25,11 @@ async function catalog(kind: GoKind): Promise<Productish[]> {
     case "t": return (await import("@/data/tickets")).ticketProducts;
   }
 }
+
+// Tiendas sin etiqueta propia en la URL: solo las monetiza Skimlinks, que en
+// un enlace /go/ ya no puede reescribirlo en el navegador. Se envuelven en el
+// servidor, y solo si la persona aceptó la afiliación.
+const SKIM_HOSTS = /^https?:\/\/(www\.prodirectsport\.(es|com)|ar\.puma\.com|www\.nike\.(cl|com\.ar))\//;
 
 const NOINDEX = { "X-Robots-Tag": "noindex, nofollow", "Cache-Control": "no-store" };
 
@@ -75,7 +81,11 @@ export async function GET(req: NextRequest, ctx: { params: Promise<{ id: string 
     }),
   );
 
-  if (url && /^https?:\/\//.test(url)) return redirect(url);
+  if (url && /^https?:\/\//.test(url)) {
+    if (SKIM_HOSTS.test(url) && req.cookies.get(AFFILIATE_COOKIE)?.value === "1")
+      return redirect(`https://go.skimresources.com/?id=${SKIMLINKS_PUB_ID}&xs=1&url=${encodeURIComponent(url)}`);
+    return redirect(url);
+  }
   if (valid && known) return redirect(`/${locale}/${GO_KINDS[kind]}/${productId}`);
   return redirect(`/${locale}`);
 }

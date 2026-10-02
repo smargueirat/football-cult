@@ -3,6 +3,8 @@
 // con el almacenamiento bloqueado lanza (entonces el banner reaparece en
 // cada página, que es lo correcto: sin elección guardada no se carga nada).
 export const CONSENT_KEY = "fc-consent-v1";
+export const AFFILIATE_COOKIE = "fc_aff";
+export const SKIMLINKS_PUB_ID = "307104X1795379";
 /** Evento que dispara el enlace del pie para reabrir el panel. */
 export const CONSENT_OPEN_EVENT = "fc:open-consent";
 
@@ -25,10 +27,13 @@ export function writeConsent(c: Consent): void {
   } catch {
     /* sin almacenamiento: la elección vale solo para esta carga */
   }
+  // Cookie de preferencia (no rastrea): deja que /go/ sepa en el servidor si
+  // puede envolver el enlace en Skimlinks.
+  document.cookie = `${AFFILIATE_COOKIE}=${c.affiliate ? 1 : 0}; Max-Age=31536000; Path=/; SameSite=Lax; Secure`;
 }
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-const SKIMLINKS_SRC = "https://s.skimresources.com/js/307104X1795379.skimlinks.js";
+const SKIMLINKS_SRC = `https://s.skimresources.com/js/${SKIMLINKS_PUB_ID}.skimlinks.js`;
 
 type W = Window & { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
 
