@@ -28,6 +28,7 @@ import { apparelProducts } from "../../src/data/apparel";
 import { gloveProducts } from "../../src/data/gloves";
 import { ballProducts } from "../../src/data/balls";
 import { trainingProducts } from "../../src/data/training";
+import { appendChanges } from "../../src/lib/priceArchive";
 
 const HERE = import.meta.dirname;
 const REPO_ROOT = path.join(HERE, "..", "..");
@@ -114,12 +115,25 @@ function main() {
   // discontinuada): si vuelve más adelante, retoma su propia historia.
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(sorted(history)) + "\n");
 
+  // Archivo DURABLE (data/price-history/AAAA-MM.jsonl, nunca se recorta):
+  // solo las ofertas cuyo precio cambió desde su último registro, de las
+  // siete secciones. No altera nada de lo de arriba; si falla, que no
+  // tumbe el resto del rastreo nocturno (el snapshot y los drops ya están
+  // escritos).
+  let archiveNote = "";
+  try {
+    const r = appendChanges(sections.flatMap((s) => s.offers), today);
+    archiveNote = `; archivo: +${r.added} líneas (${r.changed} cambios, ${r.firstSeen} ofertas nuevas)`;
+  } catch (err) {
+    console.error("archivo de precios: NO se pudo escribir:", err);
+  }
+
   const total = Object.keys(current).length;
   const dropped = Object.keys(drops).length;
   const detail = sections
     .map(({ section }) => `${section} ${droppedBySection.get(section) ?? 0}`)
     .join(", ");
-  console.log(`${total} ofertas en el snapshot de hoy, ${dropped} bajadas (${detail})`);
+  console.log(`${total} ofertas en el snapshot de hoy, ${dropped} bajadas (${detail})${archiveNote}`);
 }
 
 main();
