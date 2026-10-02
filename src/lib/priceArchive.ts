@@ -238,3 +238,17 @@ export function priceOn(arr: ArchivePoint[], date: string): ArchivePoint | null 
   }
   return r;
 }
+
+/** Stats de varias ofertas de una vez, solo las que ya tienen cobertura
+ *  suficiente. Es lo que las fichas (server) le pasan al cliente: el cliente
+ *  elige la mejor oferta según país y talla, así que se mandan todas las de
+ *  la ficha (unas pocas, ~200 bytes cada una). */
+export function archiveStatsFor(urls: readonly string[]): Record<string, OfferPriceStats> {
+  const a = archive();
+  const out: Record<string, OfferPriceStats> = {};
+  for (const u of urls) {
+    const s = offerPriceStats(u, a);
+    if (s) out[u] = s;
+  }
+  return out;
+}

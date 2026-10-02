@@ -23,13 +23,15 @@ export default function MobileMenu() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
 
+  // Botas va primero y resaltada: es la sección que más deja por clic.
+  // Nada se quita; solo cambia el lugar.
   const sectionLinks = [
+    { photo: SECTION_PHOTOS[5], label: t.botas.navLabel, href: SECTION_PATHS[5] },
     { photo: SECTION_PHOTOS[0], label: t.categoriesMenu.national, href: SECTION_PATHS[0] },
     { photo: SECTION_PHOTOS[1], label: t.categoriesMenu.clubs, href: SECTION_PATHS[1] },
     { photo: SECTION_PHOTOS[2], label: t.categoriesMenu.retro, href: SECTION_PATHS[2] },
     { photo: SECTION_PHOTOS[3], label: t.heroSlides[3]?.eyebrow, href: SECTION_PATHS[3] },
     { photo: SECTION_PHOTOS[4], label: t.heroSlides[4]?.eyebrow, href: SECTION_PATHS[4] },
-    { photo: SECTION_PHOTOS[5], label: t.botas.navLabel, href: SECTION_PATHS[5] },
     { photo: SECTION_PHOTOS[6], label: t.guantes.navLabel, href: SECTION_PATHS[6] },
     { photo: SECTION_PHOTOS[7], label: t.pelotas.navLabel, href: SECTION_PATHS[7] },
     { photo: SECTION_PHOTOS[8], label: t.tickets.navLabel, href: SECTION_PATHS[8] },
@@ -126,7 +128,9 @@ export default function MobileMenu() {
                       e.preventDefault();
                       go(link.href);
                     }}
-                    className="flex items-center gap-3 rounded-xl py-2 pl-6 pr-3 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10"
+                    className={`flex items-center gap-3 rounded-xl py-2 pl-6 pr-3 text-base text-[#1a1a1a] transition-colors hover:bg-[#C9A24B]/10 ${
+                      link.href === SECTION_PATHS[5] ? "bg-[#C9A24B]/15 font-semibold" : ""
+                    }`}
                   >
                     <span className="relative h-8 w-8 shrink-0 overflow-hidden rounded-full border border-[#C9A24B]/40 bg-[#F3EEDD]">
                       <Image src={getDisplaySrc(link.photo, 100)} alt="" fill unoptimized className="object-cover" />

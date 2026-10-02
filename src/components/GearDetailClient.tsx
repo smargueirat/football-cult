@@ -10,6 +10,7 @@ import { localizeGearModel } from "@/lib/gearText";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
+import StickyBestOfferBar from "./StickyBestOfferBar";
 
 // Mismo patrón que BootDetailClient.tsx (foto grande + selector de
 // oferta + selector de talla real por oferta), generalizado para
@@ -67,7 +68,7 @@ export default function GearDetailClient({
   }
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-3 py-8 sm:px-6">
+    <div className="mx-auto w-full max-w-6xl px-3 pt-8 pb-28 sm:px-6 sm:pb-8">
       <BackToCatalogLink fallbackHref={`/${basePath}`} />
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-[3fr_2fr]">
         <div className="relative aspect-square w-full overflow-hidden rounded-2xl bg-white">
@@ -236,6 +237,27 @@ export default function GearDetailClient({
           </div>
         </div>
       </div>
+
+      {/* Barra fija en celular: un toque a la mejor tienda (tienda + total),
+          igual que en botas. */}
+      {(() => {
+        const sp = activeSizePrice(cheapestOffer);
+        const barUrl = sp ? sp.url : cheapestOffer.url;
+        const barPrice = sp ? sp.price : cheapestOffer.price;
+        return (
+          <StickyBestOfferBar
+            hideFrom="sm"
+            store={cheapestOffer.store}
+            total={`${!sp && cheapestOffer.priceMax ? `${t.botas.from} ` : ""}${formatOfferMoney(barPrice + cheapestOffer.shipping, cheapestOffer.currency)}`}
+            fromLabel={t.botas.bestPrice}
+            goLabel={t.detail.goToStore.replace("{store}", cheapestOffer.store)}
+            href={barUrl}
+            onClick={() =>
+              trackOfferClick({ store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
+            }
+          />
+        );
+      })()}
     </div>
   );
 }
