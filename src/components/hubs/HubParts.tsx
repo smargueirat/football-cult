@@ -8,6 +8,7 @@ import { teamNames, typeNames } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { getDisplaySrc } from "@/lib/images";
 
+import { countDistinctRetailers } from "@/lib/retailerFamily";
 // Piezas de servidor de las páginas hub: HTML puro con <a> reales para
 // que Google siga los enlaces sin ejecutar JavaScript.
 
@@ -60,7 +61,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
         const team = teamNames[product.teamKey][locale];
         const label = `${showTeam ? `${team} · ` : ""}${typeNames[product.typeKey][locale]} ${product.season}`;
         const photo = offer.imageUrl;
-        const stores = new Set(product.offers.filter((o) => o.inStock).map((o) => o.store)).size;
+        const stores = countDistinctRetailers(product.offers.filter((o) => o.inStock));
         return (
           <li key={product.id}>
             <Link

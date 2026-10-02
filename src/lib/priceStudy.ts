@@ -2,6 +2,7 @@ import { mpnFor } from "@/lib/offerGtin";
 import { isComparableStore } from "@/lib/officialStores";
 import { products } from "@/data/products";
 
+import { bestPerRetailer, countDistinctRetailers, getRetailerFamily } from "@/lib/retailerFamily";
 // Estudio de dispersión de precios, calculado EN BUILD desde el catálogo
 // real -- no hay números escritos a mano en ningún lado. Cada vez que el
 // scan nocturno actualiza products.ts y se redespliega, el estudio se
@@ -109,17 +110,20 @@ export function priceStudy(): PriceStudy {
       if (m) byMpn.set(m, [...(byMpn.get(m) ?? []), o]);
     }
     const offers = [...byMpn.values()].sort(
-      (a, b) => new Set(b.map((o) => o.store)).size - new Set(a.map((o) => o.store)).size,
+      (a, b) => countDistinctRetailers(b) - countDistinctRetailers(a),
     )[0];
     if (!offers) continue;
-    const storeNames = new Set(offers.map((o) => o.store));
+    // Minoristas distintos, no feeds: FootStoreES y FootStoreFR son la
+    // misma tienda y su diferencia de precio no es una comparación.
+    const storeNames = new Set(offers.map((o) => getRetailerFamily(o.store)));
     if (storeNames.size < 2) continue;
 
     // Total real: precio + envío. Comparar solo el precio escondería que
     // una tienda barata con envío caro termina saliendo más.
-    const totals = offers
-      .map((o) => ({ store: o.store, total: o.price + o.shipping }))
-      .sort((a, b) => a.total - b.total);
+    const totals = bestPerRetailer(
+      offers.map((o) => ({ store: o.store, total: o.price + o.shipping })),
+      (a, b) => a.total < b.total,
+    ).sort((a, b) => a.total - b.total);
     const low = totals[0];
     const high = totals[totals.length - 1];
     if (low.total <= 0) continue;

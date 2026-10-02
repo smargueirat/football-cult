@@ -6,6 +6,7 @@ import type { HubLocale } from "@/data/teamMeta";
 import { FAQ_LINKS, FAQ_TITLE, buildFaq } from "@/lib/jerseyFaq";
 import { JsonLd } from "@/components/hubs/HubParts";
 
+import { countDistinctRetailers } from "@/lib/retailerFamily";
 // Bloque de servidor (HTML plano, cero JS de cliente) al pie de la ficha.
 export default function JerseyFaq({ product, locale }: { product: Product; locale: HubLocale }) {
   const best = bestOffer(product);
@@ -20,7 +21,7 @@ export default function JerseyFaq({ product, locale }: { product: Product; local
     season: product.season,
     price: best ? formatOfferMoney(best.price + best.shipping, best.currency) : "",
     store: best?.store ?? "",
-    stores: new Set(product.offers.filter((o) => o.inStock).map((o) => o.store)).size,
+    stores: countDistinctRetailers(product.offers.filter((o) => o.inStock)),
     sizes,
     showVersionQ: ["home", "away", "third", "goalkeeper"].includes(product.typeKey),
   });

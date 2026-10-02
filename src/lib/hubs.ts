@@ -5,6 +5,7 @@ import { getAgeGroup, seasonSortValue } from "@/lib/productMeta";
 import { offerTotalInEUR } from "@/lib/offerMoney";
 import { LEAGUES, TEAM_LEAGUE, leaguesOfCountry } from "@/data/teamMeta";
 
+import { getRetailerFamily } from "@/lib/retailerFamily";
 // Datos de las páginas hub (equipo / liga / país). SOLO servidor: importa
 // el catálogo entero, no usar desde componentes "use client" (ver el
 // comentario largo en src/lib/offerMoney.ts sobre por qué).
@@ -69,7 +70,7 @@ export function statsOf(items: HubItem[]): HubStats {
   const stores = new Set<string>();
   let min: HubItem | undefined;
   for (const it of items) {
-    for (const o of it.product.offers) if (o.inStock) stores.add(o.store);
+    for (const o of it.product.offers) if (o.inStock) stores.add(getRetailerFamily(o.store));
     if (!min || it.eur < min.eur) min = it;
   }
   return { count: items.length, stores: stores.size, minEur: min?.eur ?? 0, minOffer: min?.offer };

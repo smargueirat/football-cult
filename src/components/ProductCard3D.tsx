@@ -27,6 +27,7 @@ import { useCompare } from "@/lib/compare/CompareContext";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
+import { bestPerRetailer, countDistinctRetailers, retailerCountText } from "@/lib/retailerFamily";
 const MAX_TILT_DEG = 9;
 
 // Variante experimental: misma tarjeta de siempre, pero con inclinación
@@ -55,9 +56,10 @@ export default function ProductCard3D({
   const cardRef = useRef<HTMLAnchorElement>(null);
   const inView = useInView(cardRef);
   const { offer: best, total: bestTotal, shippingUnknown: noShipping } = useBestOfferForCountry(product, countryCode, inView);
-  const storeCount = product.offers.filter(
+  // Tiendas DISTINTAS, no ofertas: FootStoreES + FootStoreFR es una sola.
+  const liveOffers = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
-  ).length;
+  );
   // Ahorro de la tarjeta: la diferencia entre la más barata y la más cara
   // de la MISMA variante (versión y manga) y solo entre minoristas
   // oficiales -- exactamente el mismo filtro que la ficha. Sin él, la
@@ -75,14 +77,18 @@ export default function ProductCard3D({
       groups.set(k, [...(groups.get(k) ?? []), o]);
     }
     const main = [...groups.values()].sort(
-      (a, b) => new Set(b.map((o) => o.store)).size - new Set(a.map((o) => o.store)).size
+      (a, b) => countDistinctRetailers(b) - countDistinctRetailers(a)
     )[0];
-    if (!main || new Set(main.map((o) => o.store)).size < 2) return null;
-    const totals = main.map((o) => offerTotalInEUR(o)).sort((a, b) => a - b);
+    if (!main || countDistinctRetailers(main) < 2) return null;
+    // Una cifra por tienda (la más barata de cada una): el ahorro es entre
+    // minoristas, no entre los espejos regionales de uno mismo.
+    const totals = bestPerRetailer(main, (a, b) => offerTotalInEUR(a) < offerTotalInEUR(b))
+      .map((o) => offerTotalInEUR(o))
+      .sort((a, b) => a - b);
     const lo = totals[0];
     const hi = totals[totals.length - 1];
     if (hi <= 0 || hi - lo < 1) return null;
-    return { stores: new Set(main.map((o) => o.store)).size, pct: Math.round(((hi - lo) / hi) * 100) };
+    return { stores: countDistinctRetailers(main), pct: Math.round(((hi - lo) / hi) * 100) };
   }, [product, countryCode]);
   const sizes = availableSizesForCountry(product, countryCode);
   const sizeRange =
@@ -379,7 +385,7 @@ export default function ProductCard3D({
               )}
             </div>
             <p className="mt-1 text-[10px] text-[#675c44] sm:text-xs">
-              {!cardSaving && `${t.product.inStores.replace("{n}", String(storeCount))} · `}
+              {!cardSaving && `${retailerCountText(liveOffers, t.product)} · `}
               {t.product.sizesRange.replace("{range}", sizeRange)}
             </p>
           </>

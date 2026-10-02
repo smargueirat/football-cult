@@ -24,6 +24,7 @@ import { useInView } from "@/lib/useInView";
 import JerseyIcon from "./JerseyIcon";
 import JerseySkeleton from "./JerseySkeleton";
 
+import { retailerCountText } from "@/lib/retailerFamily";
 export default function ProductCard({ product }: { product: Product }) {
   const { locale, t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -35,9 +36,10 @@ export default function ProductCard({ product }: { product: Product }) {
   const cardRef = useRef<HTMLAnchorElement>(null);
   const inView = useInView(cardRef);
   const { offer: best, total: bestTotal, shippingUnknown: noShipping } = useBestOfferForCountry(product, countryCode, inView);
-  const storeCount = product.offers.filter(
+  // Tiendas DISTINTAS, no ofertas: FootStoreES + FootStoreFR es una sola.
+  const liveOffers = product.offers.filter(
     (o) => o.inStock && offerShipsTo(o.store, countryCode)
-  ).length;
+  );
   const sizes = availableSizesForCountry(product, countryCode);
   const sizeRange =
     sizes.length > 0
@@ -234,7 +236,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </h3>
         {best ? (
           <p className="text-[10px] text-[#675c44] sm:text-xs">
-            {t.product.inStores.replace("{n}", String(storeCount))} ·{" "}
+            {retailerCountText(liveOffers, t.product)} ·{" "}
             {t.product.sizesRange.replace("{range}", sizeRange)}
           </p>
         ) : (

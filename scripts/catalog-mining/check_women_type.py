@@ -31,6 +31,16 @@ TIPOS = [
     ("Maillot de gardien third Chelsea", "goalkeeper"),
     ("Camiseta de entrenamiento mujer PSG 2026/27", "training"),
     ("Maillot Prematch femme Angleterre", "prematch"),
+    # FootStore/SportIsGood ES traducen el feed francés al pie de la letra:
+    # Domicile -> Domicilio, Extérieur -> Visita/Externo/Fuera (2026-10-02)
+    ("Camiseta de Visita Túnez Coupe du Monde 2026", "away"),
+    ("Maillot Externo AFC Bournemouth 2026/27", "away"),
+    ("Maillot Domicilio Atalanta 2025/26", "home"),
+    ("Camiseta Fuera de Casa Argentina 2026", "away"),
+    ("Camiseta de casa Liverpool 2025/26", "home"),
+    ("Camisa de Fuera del Liverpool 2025/26", "away"),
+    ("Castore England 25/26 Alternate Replica Shirt", "away"),
+    ("Camiseta Domicilio de Portero PSG 2025/26", "goalkeeper"),
 ]
 
 MUJER = [

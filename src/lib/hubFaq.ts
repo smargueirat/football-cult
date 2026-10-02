@@ -3,6 +3,7 @@ import { isComparableStore } from "@/lib/officialStores";
 import { offerTotalInEUR } from "@/lib/offerMoney";
 import { seasonSortValue } from "@/lib/productMeta";
 
+import { bestPerRetailer, getRetailerFamily } from "@/lib/retailerFamily";
 // Datos para el bloque de preguntas frecuentes de los hubs.
 //
 // Por qué existe: Search Console dice que 46.770 URLs estan en
@@ -34,7 +35,7 @@ export function hubFacts(items: HubItem[]): HubFacts {
   let newest: string | undefined;
 
   for (const it of items) {
-    for (const o of it.product.offers) if (o.inStock) stores.add(o.store);
+    for (const o of it.product.offers) if (o.inStock) stores.add(getRetailerFamily(o.store));
 
     // El precio del titular se mide SOLO entre minoristas oficiales, por
     // el mismo motivo que el ahorro: la oferta mas barata de Boca es un
@@ -59,10 +60,14 @@ export function hubFacts(items: HubItem[]): HubFacts {
     // a anunciar "Ahorras 90,21 EUR (76%)" comparando una replica de 27,77
     // contra una camiseta oficial de 117,98 (ver officialStores.ts). Aca
     // el numero es todavia mas visible, asi que aplica igual.
-    const comparable = it.product.offers
-      .filter((o) => o.inStock && isComparableStore(o.store))
-      .map((o) => ({ store: o.store, eur: offerTotalInEUR(o) }))
-      .sort((a, b) => a.eur - b.eur);
+    // Una cifra por tienda (la más barata): FootStoreES contra su espejo
+    // FootStoreFR no es un ahorro entre minoristas.
+    const comparable = bestPerRetailer(
+      it.product.offers
+        .filter((o) => o.inStock && isComparableStore(o.store))
+        .map((o) => ({ store: o.store, eur: offerTotalInEUR(o) })),
+      (a, b) => a.eur < b.eur,
+    ).sort((a, b) => a.eur - b.eur);
     if (comparable.length < 2) continue;
     const lo = comparable[0];
     const hi = comparable[comparable.length - 1];

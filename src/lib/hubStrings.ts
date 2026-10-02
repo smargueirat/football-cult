@@ -68,7 +68,7 @@ export const HUB: Record<HubLocale, S> = {
     leagueH1: (l) => `Camisetas de ${l}`,
     countryH1: (c) => `Camisetas de fútbol de ${c}`,
     teamIntro: ({ team, n, stores, price, kinds }) =>
-      `Comparamos ${n} camisetas de ${team} en ${stores} tiendas online (${kinds}). El precio más bajo hoy es ${price}, con envío incluido. Los precios se actualizan todos los días y cada enlace lleva directo a la tienda.`,
+      `${stores === 1 ? `Reunimos ${n} camisetas de ${team} de una sola tienda online` : `Comparamos ${n} camisetas de ${team} en ${stores} tiendas online`} (${kinds}). El precio más bajo hoy es ${price}, con envío incluido. Los precios se actualizan todos los días y cada enlace lleva directo a la tienda.`,
     leagueIntro: ({ league, teams, n, price }) =>
       `${n} camisetas de ${teams} equipos de ${league}, comparadas entre varias tiendas. Precio más bajo hoy: ${price}.`,
     countryIntro: ({ country, leagues, teams, n, price }) =>
@@ -121,7 +121,7 @@ export const HUB: Record<HubLocale, S> = {
     leagueH1: (l) => `${l} football shirts`,
     countryH1: (c) => `Football shirts from ${c}`,
     teamIntro: ({ team, n, stores, price, kinds }) =>
-      `We compare ${n} ${team} shirts across ${stores} online stores (${kinds}). The lowest price today is ${price}, shipping included. Prices are updated every day and every link goes straight to the store.`,
+      `${stores === 1 ? `We list ${n} ${team} shirts from a single online store` : `We compare ${n} ${team} shirts across ${stores} online stores`} (${kinds}). The lowest price today is ${price}, shipping included. Prices are updated every day and every link goes straight to the store.`,
     leagueIntro: ({ league, teams, n, price }) =>
       `${n} shirts from ${teams} ${league} teams, compared across several stores. Lowest price today: ${price}.`,
     countryIntro: ({ country, leagues, teams, n, price }) =>
@@ -174,7 +174,7 @@ export const HUB: Record<HubLocale, S> = {
     leagueH1: (l) => `Camisas — ${l}`,
     countryH1: (c) => `Camisas de futebol — ${c}`,
     teamIntro: ({ team, n, stores, price, kinds }) =>
-      `Comparamos ${n} camisas do ${team} em ${stores} lojas online (${kinds}). O menor preço hoje é ${price}, com frete incluído. Os preços são atualizados todos os dias e cada link leva direto à loja.`,
+      `${stores === 1 ? `Reunimos ${n} camisas do ${team} de uma única loja online` : `Comparamos ${n} camisas do ${team} em ${stores} lojas online`} (${kinds}). O menor preço hoje é ${price}, com frete incluído. Os preços são atualizados todos os dias e cada link leva direto à loja.`,
     leagueIntro: ({ league, teams, n, price }) =>
       `${n} camisas de ${teams} times de ${league}, comparadas entre várias lojas. Menor preço hoje: ${price}.`,
     countryIntro: ({ country, leagues, teams, n, price }) =>
@@ -227,7 +227,7 @@ export const HUB: Record<HubLocale, S> = {
     leagueH1: (l) => `Maillots ${l}`,
     countryH1: (c) => `Maillots de football — ${c}`,
     teamIntro: ({ team, n, stores, price, kinds }) =>
-      `Nous comparons ${n} maillots ${team} dans ${stores} boutiques en ligne (${kinds}). Le prix le plus bas aujourd'hui est ${price}, livraison incluse. Les prix sont mis à jour chaque jour et chaque lien mène directement à la boutique.`,
+      `${stores === 1 ? `Nous réunissons ${n} maillots ${team} d'une seule boutique en ligne` : `Nous comparons ${n} maillots ${team} dans ${stores} boutiques en ligne`} (${kinds}). Le prix le plus bas aujourd'hui est ${price}, livraison incluse. Les prix sont mis à jour chaque jour et chaque lien mène directement à la boutique.`,
     leagueIntro: ({ league, teams, n, price }) =>
       `${n} maillots de ${teams} équipes de ${league}, comparés entre plusieurs boutiques. Prix le plus bas aujourd'hui : ${price}.`,
     countryIntro: ({ country, leagues, teams, n, price }) =>
@@ -280,7 +280,7 @@ export const HUB: Record<HubLocale, S> = {
     leagueH1: (l) => `Maglie ${l}`,
     countryH1: (c) => `Maglie da calcio — ${c}`,
     teamIntro: ({ team, n, stores, price, kinds }) =>
-      `Confrontiamo ${n} maglie ${team} in ${stores} negozi online (${kinds}). Il prezzo più basso oggi è ${price}, spedizione inclusa. I prezzi si aggiornano ogni giorno e ogni link porta direttamente al negozio.`,
+      `${stores === 1 ? `Raccogliamo ${n} maglie ${team} da un solo negozio online` : `Confrontiamo ${n} maglie ${team} in ${stores} negozi online`} (${kinds}). Il prezzo più basso oggi è ${price}, spedizione inclusa. I prezzi si aggiornano ogni giorno e ogni link porta direttamente al negozio.`,
     leagueIntro: ({ league, teams, n, price }) =>
       `${n} maglie di ${teams} squadre di ${league}, confrontate tra vari negozi. Prezzo più basso oggi: ${price}.`,
     countryIntro: ({ country, leagues, teams, n, price }) =>

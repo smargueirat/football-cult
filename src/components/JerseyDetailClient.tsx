@@ -36,6 +36,7 @@ import { savingsVsMedian } from "@/lib/offerStats";
 import type { OfferPriceStats } from "@/lib/priceArchive";
 import ReportProductModal from "./ReportProductModal";
 
+import { bestPerRetailer, countDistinctRetailers, retailerCountText } from "@/lib/retailerFamily";
 const BADGE_COLORS = ["#1F6F4C", "#B45309", "#2563EB", "#7C3AED", "#DB2777", "#0891B2"];
 
 function badgeColor(store: string) {
@@ -184,9 +185,10 @@ export default function JerseyDetailClient({
     return !selectedSize || offer.sizes.includes(selectedSize);
   }
 
-  const shippableCount = product.offers.filter(
-    (o) => o.inStock && shipsHere(o)
-  ).length;
+  // Tiendas DISTINTAS (FootStoreES + FootStoreFR = una), ver retailerFamily.ts.
+  const shippableOffers = product.offers.filter((o) => o.inStock && shipsHere(o));
+  const storesLabel =
+    retailerCountText(shippableOffers, t.product) || t.detail.storesCompared.replace("{n}", "0");
   // La versión de jugador y la de hincha son prendas distintas (las
   // marcas las separan 50-70 EUR), así que el "mejor precio" y el ahorro
   // se calculan SOLO dentro de una de las dos. Se toma la que tiene más
@@ -200,7 +202,7 @@ export default function JerseyDetailClient({
     byVariant.set(k, [...(byVariant.get(k) ?? []), o]);
   }
   const mainKey = [...byVariant.entries()].sort(
-    (a, b) => new Set(b[1].map((o) => o.store)).size - new Set(a[1].map((o) => o.store)).size,
+    (a, b) => countDistinctRetailers(b[1]) - countDistinctRetailers(a[1]),
   )[0]?.[0];
   const inMainVersion = (o: Offer) => variantKey(o) === mainKey;
 
@@ -223,7 +225,12 @@ export default function JerseyDetailClient({
   // mismo error de categoría que mezclar versiones, y en el número más
   // visible de la página. Las ofertas se siguen listando todas; lo que no
   // se hace es prometer un ahorro apoyado en ellas.
-  const comparable = shippableHere.filter((o) => isComparableStore(o.store));
+  // Una oferta por tienda (la más barata): comparar FootStoreES contra su
+  // espejo FootStoreFR no es un ahorro, es la misma tienda.
+  const comparable = bestPerRetailer(
+    shippableHere.filter((o) => isComparableStore(o.store)),
+    (a, b) => offerTotalInEUR(a) < offerTotalInEUR(b),
+  ).sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b));
   const cheapestOfficial = comparable[0];
   const dearest = comparable.length > 1 ? comparable[comparable.length - 1] : undefined;
   const savings =
@@ -399,7 +406,7 @@ export default function JerseyDetailClient({
           <div className="vintage-card mt-3 flex flex-col gap-2 rounded-2xl p-4 text-sm">
             <p className="flex items-center gap-1.5 font-medium text-[#1B3B2B]">
               <span>{country.flag}</span>
-              {t.detail.storesCompared.replace("{n}", String(shippableCount))}
+              {storesLabel}
             </p>
             <Link
               href="/guia/camiseta-original"
@@ -470,7 +477,7 @@ export default function JerseyDetailClient({
               </h1>
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
                 <span>{country.flag}</span>
-                {t.detail.storesCompared.replace("{n}", String(shippableCount))}
+                {storesLabel}
               </p>
               <Link
                 href={`/equipo/${product.teamKey}`}
@@ -511,7 +518,7 @@ export default function JerseyDetailClient({
             </div>
           </div>
 
-          {shippableCount === 0 ? (
+          {shippableOffers.length === 0 ? (
             <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#675c44]">
               {t.countryPanel.notAvailable}
             </p>
@@ -554,9 +561,9 @@ export default function JerseyDetailClient({
                   {selectedSize
                     ? (() => {
                         // Con una sola tienda decía "1 tiendas comparadas".
-                        const n = sortedOffers.filter(
-                          (o) => o.inStock && shipsHere(o) && matchesSize(o)
-                        ).length;
+                        const n = countDistinctRetailers(
+                          sortedOffers.filter((o) => o.inStock && shipsHere(o) && matchesSize(o))
+                        );
                         return n === 1
                           ? t.detail.storesComparedOne
                           : t.detail.storesCompared.replace("{n}", String(n));

@@ -11,6 +11,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
 
+import { retailerCountText } from "@/lib/retailerFamily";
 export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }) {
   const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -65,6 +66,8 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
           <p className="mt-2 text-sm text-[#675c44]">
             {t.botas.bestPrice}: {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
           </p>
+          {/* Los dos "vendedores" son la misma empresa en dos regiones. */}
+          <p className="mt-1 text-xs text-[#675c44]">{retailerCountText(ticket.offers, t.product)}</p>
 
           {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
               precio por mail (ver FavoritesContext.tsx y check-prices). */}

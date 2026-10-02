@@ -16,6 +16,7 @@ import PriceArchiveLine from "@/components/PriceArchiveLine";
 import { savingsVsMedian } from "@/lib/offerStats";
 import type { OfferPriceStats } from "@/lib/priceArchive";
 
+import { retailerCountText } from "@/lib/retailerFamily";
 export default function BootDetailClient({
   boot,
   archiveStats = {},
@@ -122,7 +123,7 @@ export default function BootDetailClient({
               fecha de último refresh cargada acá, a diferencia de
               camisetas -- ver JerseyDetailClient.tsx). */}
           <div className="vintage-card mt-3 flex items-center gap-1.5 rounded-2xl p-4 text-sm font-medium text-[#1B3B2B]">
-            {t.product.inStores.replace("{n}", String(sortedOffers.length))}
+            {retailerCountText(sortedOffers, t.product)}
           </div>
         </div>
         <div>

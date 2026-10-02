@@ -18,6 +18,7 @@ import { TITLE_SUFFIX, ageGroupLabel } from "@/lib/categoryMeta";
 import { productMpn } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
 
+import { countDistinctRetailers } from "@/lib/retailerFamily";
 const SITE_URL = "https://football-cult.com";
 
 // Product/Offer structured data para Google Shopping / resultados
@@ -223,14 +224,13 @@ export default async function JerseyDetailPage({
   // comprar. Pasaba en 94 fichas, y en 77 de ellas había una alternativa
   // viva disponible para poner en su lugar (medido 2026-09-28).
   const liveStores = (p: Product) =>
-    new Set(p.offers.filter((o) => o.inStock !== false).map((o) => o.store)).size;
+    countDistinctRetailers(p.offers.filter((o) => o.inStock !== false));
   const sameTeamProducts = products
     .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
     .sort(
       (a, b) =>
         liveStores(b) - liveStores(a) ||
-        new Set(b.offers.map((o) => o.store)).size -
-          new Set(a.offers.map((o) => o.store)).size,
+        countDistinctRetailers(b.offers) - countDistinctRetailers(a.offers),
     )
     .slice(0, 10);
 
