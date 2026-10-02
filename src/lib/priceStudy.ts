@@ -36,6 +36,11 @@ export interface StudyExample {
   highStore: string;
   gapPct: number;
   gapAbs: number;
+  /** Marca de la camiseta y URLs de las ofertas que se compararon (mismo
+   *  código de fabricante). Las usa el índice mensual para seguir ESAS
+   *  mismas ofertas en el archivo de precios. */
+  brand: string;
+  urls: string[];
 }
 
 export interface StoreRank {
@@ -133,6 +138,8 @@ export function priceStudy(): PriceStudy {
       highStore: high.store,
       gapPct: ((high.total - low.total) / high.total) * 100,
       gapAbs: high.total - low.total,
+      brand: p.brand ?? "",
+      urls: offers.map((o) => o.url),
     });
   }
 
