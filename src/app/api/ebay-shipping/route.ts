@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { countries } from "@/data/countries";
 
 // eBay's Browse API can't compute a shipping estimate at all without a
 // destination -- calling /item/{id} with no X-EBAY-C-ENDUSERCTX header
@@ -45,12 +46,64 @@ async function getToken(): Promise<string | null> {
   return cachedToken.token;
 }
 
+// Solo los cuatro sitios de eBay que tiene el catálogo; el marketplace de la
+// consulta sigue al sitio de la oferta para que la moneda coincida (si no,
+// una oferta de ebay.es en EUR recibiría USD y el cliente la descartaría).
+const MARKETPLACE: Record<string, string> = {
+  "www.ebay.com": "EBAY_US",
+  "www.ebay.co.uk": "EBAY_GB",
+  "www.ebay.es": "EBAY_ES",
+  "www.ebay.it": "EBAY_IT",
+};
+const COUNTRY_CODES = new Set<string>(countries.map((c) => c.code));
+
 // eBay item URLs look like https://www.ebay.com/itm/158171810957?... --
 // the Browse API's own itemId format for a non-variation listing is
 // just that legacy numeric id wrapped as "v1|<id>|0".
-function extractItemId(ebayUrl: string): string | null {
-  const match = ebayUrl.match(/\/itm\/(\d+)/);
-  return match ? `v1|${match[1]}|0` : null;
+function parseItem(ebayUrl: string): { itemId: string; marketplace: string } | null {
+  let u: URL;
+  try {
+    u = new URL(ebayUrl);
+  } catch {
+    return null;
+  }
+  const marketplace = MARKETPLACE[u.hostname];
+  const match = u.protocol === "https:" ? u.pathname.match(/^\/itm\/(\d{9,15})(?:\/|$)/) : null;
+  return marketplace && match ? { itemId: `v1|${match[1]}|0`, marketplace } : null;
+}
+
+// TOPE: 1.500 llamadas a eBay por día (de las 5.000 de la cuota Browse, que se
+// reinicia 07:00 UTC; el resto queda para la minería nocturna) y 30 por IP por minuto.
+const DAILY_CAP = 1500;
+const IP_LIMIT = 30;
+const OK_TTL = 24 * 3600_000;
+const MISS_TTL = 3600_000; // sin dato / error / ítem inexistente: no reintentar enseguida
+const CACHE_MAX = 20000;
+
+type Result = { status: number; body: Record<string, unknown> };
+const cache = new Map<string, { expires: number; result: Result }>();
+const ipHits = new Map<string, { n: number; resetAt: number }>();
+let quota = { day: -1, used: 0 };
+
+function overQuota(): boolean {
+  const day = Math.floor((Date.now() - 7 * 3600_000) / 86400_000);
+  if (quota.day !== day) quota = { day, used: 0 };
+  return quota.used >= DAILY_CAP;
+}
+
+function ipLimited(ip: string): boolean {
+  const now = Date.now();
+  if (ipHits.size > 10000) for (const [k, v] of ipHits) if (v.resetAt < now) ipHits.delete(k);
+  const hit = ipHits.get(ip);
+  if (!hit || hit.resetAt < now) {
+    ipHits.set(ip, { n: 1, resetAt: now + 60_000 });
+    return false;
+  }
+  return ++hit.n > IP_LIMIT;
+}
+
+function reply({ status, body }: Result) {
+  return NextResponse.json(body, { status, headers: { "Cache-Control": "public, max-age=3600" } });
 }
 
 export async function GET(req: NextRequest) {
@@ -59,10 +112,23 @@ export async function GET(req: NextRequest) {
   if (!url || !country) {
     return NextResponse.json({ error: "missing_params" }, { status: 400 });
   }
+  if (!COUNTRY_CODES.has(country)) {
+    return NextResponse.json({ error: "bad_country" }, { status: 400 });
+  }
 
-  const itemId = extractItemId(url);
-  if (!itemId) {
+  const item = parseItem(url);
+  if (!item) {
     return NextResponse.json({ error: "not_ebay_item" }, { status: 400 });
+  }
+
+  const key = `${item.marketplace}|${item.itemId}|${country}`;
+  const hit = cache.get(key);
+  if (hit && hit.expires > Date.now()) return reply(hit.result);
+
+  // Solo los pedidos que llegarían a eBay cuentan para el límite por IP.
+  const ip = req.headers.get("cf-connecting-ip") ?? req.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "?";
+  if (ipLimited(ip) || overQuota()) {
+    return NextResponse.json({ error: "rate_limited" }, { status: 429, headers: { "Retry-After": "60" } });
   }
 
   const token = await getToken();
@@ -70,48 +136,43 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "not_configured" }, { status: 503 });
   }
 
+  quota.used++;
+  let result: Result;
+  let ttl = MISS_TTL;
   try {
-    const res = await fetch(`${ITEM_URL}${encodeURIComponent(itemId)}`, {
+    const res = await fetch(`${ITEM_URL}${encodeURIComponent(item.itemId)}`, {
       headers: {
         Authorization: `Bearer ${token}`,
-        "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
-        "X-EBAY-C-ENDUSERCTX": `contextualLocation=country=${encodeURIComponent(country)}`,
+        "X-EBAY-C-MARKETPLACE-ID": item.marketplace,
+        "X-EBAY-C-ENDUSERCTX": `contextualLocation=country=${country}`,
       },
-      // Los cargos son estimaciones del lado de eBay, no cambian minuto a
-      // minuto -- cachear reduce el uso de la cuota diaria de la API sin
-      // mostrar datos viejos de verdad.
-      //
-      // Subido de 1 hora a 24 el 2026-09-27. La cuota de eBay es de 5.000
-      // llamadas Browse por dia y se reinicia a las 07:00 UTC; el escaneo
-      // nocturno probo que a los 44 segundos de abrirse una ventana nueva,
-      // con toda la mineria detenida, `remaining` ya era 0, mientras
-      // buy.browse.item.bulk seguia intacto en 5.000. O sea que la gasta
-      // esta ruta, no la mineria (que usa ~350). Consecuencia real: EBAY_ES
-      // no avanzo ni un equipo en dos dias y la fuente mas grande del
-      // catalogo dejo de crecer.
-      //
-      // Esta ruta se llama desde el navegador (useLiveOfferCosts,
-      // useLiveOfferTotal y la ficha), asi que la dispara el trafico real
-      // -- incluido Googlebot, que si ejecuta JavaScript.
-      //
-      // Contrapartida aceptada: una estimacion de envio puede tener hasta
-      // un dia. Volver a 3600 es una linea si alguna vez molesta.
+      // La caché en memoria de arriba es la que manda (cuenta las llamadas
+      // reales); esta además sobrevive a un reinicio del servidor.
       next: { revalidate: 86400 },
     });
     if (!res.ok) {
-      return NextResponse.json({ error: "ebay_error" }, { status: 502 });
+      result = { status: 502, body: { error: "ebay_error" } };
+    } else {
+      const data = await res.json();
+      const option = data.shippingOptions?.[0];
+      if (!option?.shippingCost) {
+        result = { status: 200, body: { shipping: null, importCharges: null, currency: null } };
+      } else {
+        ttl = OK_TTL;
+        result = {
+          status: 200,
+          body: {
+            shipping: Number(option.shippingCost.value),
+            currency: option.shippingCost.currency ?? null,
+            importCharges: option.importCharges ? Number(option.importCharges.value) : null,
+          },
+        };
+      }
     }
-    const data = await res.json();
-    const option = data.shippingOptions?.[0];
-    if (!option?.shippingCost) {
-      return NextResponse.json({ shipping: null, importCharges: null, currency: null });
-    }
-    return NextResponse.json({
-      shipping: Number(option.shippingCost.value),
-      currency: option.shippingCost.currency ?? null,
-      importCharges: option.importCharges ? Number(option.importCharges.value) : null,
-    });
   } catch {
-    return NextResponse.json({ error: "request_failed" }, { status: 502 });
+    result = { status: 502, body: { error: "request_failed" } };
   }
+  if (cache.size >= CACHE_MAX) cache.delete(cache.keys().next().value!);
+  cache.set(key, { expires: Date.now() + ttl, result });
+  return reply(result);
 }
