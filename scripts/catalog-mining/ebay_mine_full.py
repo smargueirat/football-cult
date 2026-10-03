@@ -31,6 +31,7 @@ from extract import (
     EXCLUDE_RE,
     KIDS_EXCLUDE_RE,
     KIDS_SIGNAL_RE,
+    KIDS_EXTRA_RE,
     WOMEN_SIGNAL_RE,
     TEAM_PATTERNS,
     team_re_all,
@@ -241,6 +242,11 @@ def mine_retro(client, team_key, team_en, teams_re, types_re):
             # reached generated blocks on 2026-10-02 before a title scan caught
             # them. Same gap ebay_gb_retro.py has had open since 09-29.
             if WOMEN_SIGNAL_RE.search(title):
+                continue
+            # Same gap as the women's one above, found 2026-10-03: the retro
+            # path had no KIDS guard at all (ebay_gb_retro.py has checked both
+            # since 10-02), so youth shirts landed on men's retro fichas.
+            if KIDS_SIGNAL_RE.search(title) or KIDS_EXTRA_RE.search(title):
                 continue
             if ACCESSORY_RE.search(title):
                 continue

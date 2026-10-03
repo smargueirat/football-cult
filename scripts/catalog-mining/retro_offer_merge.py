@@ -32,36 +32,42 @@ def merge(products_path, picks_path, apply=False):
         if idx is None:
             missing += 1
             continue
-        o = offers[0]
-        block = blocks[idx]
         # The generated id carries no age group, so a MEN'S retro pick lands on a
         # women's/kids retro product whose id happens to match (real damage on
         # 2026-10-01: 19 age-grouped retro blocks got men's eBay offers, and one
         # women's product had its only offer overwritten by a men's one). Same
         # class as refresh.py's kids guard -- these dimensions have their own
         # miners, so a men's pick must never touch them.
-        if "ageGroup:" in block:
+        if "ageGroup:" in blocks[idx]:
             missing += 1
             continue
-        if o["link"] in block:
-            same += 1
-            continue
-        store = o.get("store", "eBay")
-        sizes = ", ".join(f'"{s}"' for s in o.get("sizes") or ["M", "L"])
-        title = o["title"].replace("\\", "\\\\").replace('"', '\\"')
-        line = (
-            f'      {{ store: "{store}", price: {o["price"]}, '
-            f'shipping: {o.get("shipping", 0.0)}, currency: "{o.get("currency", "USD")}", '
-            f'url: "{o["link"]}", title: "{title}", inStock: true, '
-            f'sizes: [{sizes}], imageUrl: "{o["image"]}" }},\n'
-        )
-        ebay_re = re.compile(r'^      \{ store: "' + re.escape(store) + r'",.*\n', re.M)
-        if ebay_re.search(block):
-            blocks[idx] = ebay_re.sub(line, block, count=1)
-            replaced += 1
-        else:
-            blocks[idx] = re.sub(r"(    \],\n  \},\n?)$", line + r"\1", block)
-            inserted += 1
+        # El mismo modelo retro suele estar listado en VARIOS marketplaces
+        # (eBay US/IT/ES) y cada uno es una oferta real distinta, con su propio
+        # precio y envio. Hasta el 2026-10-03 esto hacia `o = offers[0]` y
+        # descartaba el resto en silencio: 55 ofertas de IT/ES perdidas en una
+        # sola pasada. Cada tienda tiene su propio regex de reemplazo, asi que
+        # recorrerlas todas inserta/refresca una por tienda sin pisarse.
+        for o in offers:
+            block = blocks[idx]
+            if o["link"] in block:
+                same += 1
+                continue
+            store = o.get("store", "eBay")
+            sizes = ", ".join(f'"{s}"' for s in o.get("sizes") or ["M", "L"])
+            title = o["title"].replace("\\", "\\\\").replace('"', '\\"')
+            line = (
+                f'      {{ store: "{store}", price: {o["price"]}, '
+                f'shipping: {o.get("shipping", 0.0)}, currency: "{o.get("currency", "USD")}", '
+                f'url: "{o["link"]}", title: "{title}", inStock: true, '
+                f'sizes: [{sizes}], imageUrl: "{o["image"]}" }},\n'
+            )
+            ebay_re = re.compile(r'^      \{ store: "' + re.escape(store) + r'",.*\n', re.M)
+            if ebay_re.search(block):
+                blocks[idx] = ebay_re.sub(line, block, count=1)
+                replaced += 1
+            else:
+                blocks[idx] = re.sub(r"(    \],\n  \},\n?)$", line + r"\1", block)
+                inserted += 1
 
     print(f"Inserted: {inserted}, Replaced: {replaced}, "
           f"already on file (same url): {same}, no such product: {missing}")

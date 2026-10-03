@@ -574,10 +574,26 @@ KIDS_SIGNAL_RE = re.compile(
     r"\b(?:[0-9]|1[0-7])\s*[/-]\s*(?:[0-9]|1[0-7])\s*(ans|years|anos|años)?\s*$|"
     # "Y" as a bare abbreviation for "years" (eBay listings like "13-14Y")
     # found 2026-08-10 -- Union Berlin kids shirt slipped through as adult.
-    r"\b\d{1,2}-\d{1,2}\s*(ans|years|anos|años|y)\b",
+    # `anni` (Italian for "years") added 2026-10-03: eBay IT spells kids
+    # sizing "TAGLIA 11 - 12 ANNI" / "ADIDAS YOUNG M 11-12 ANNI", with
+    # SPACES around the dash, which neither branch matched. Four shirts got
+    # through on 10-03 -- three Union Berlin youth shirts whose age range
+    # detect_season then read as three different retro SEASONS (one 2020/21
+    # shirt became 2011/12, 2013/14 and 2015/16), and a Lyon kids shirt
+    # headed for the men's `lyon-retro-202223-home` ficha.
+    r"\b\d{1,2}\s*[-/]\s*\d{1,2}\s*(ans|years|anos|años|anni|y)\b",
     re.I,
 )
 KIDS_AGE_RE = re.compile(r"\b(\d{1,2})\s*[/-]\s*(\d{1,2})\b")
+
+# "boys"/"girls" y las tallas britanicas de nino ("Size 12UK") NO pueden ir
+# en KIDS_SIGNAL_RE: un \bboys\b suelto marcaria todos los anuncios del BSC
+# Young Boys, que es un club real del catalogo (misma clase de auto-colision
+# que "Boca Juniors" vs \bjunior\b). El lookbehind salva al club. Vivia
+# dentro de ebay_gb_retro.py hasta el 2026-10-03; se movio aca cuando
+# mine_retro() tambien necesito el mismo filtro, para tener UNA definicion
+# en vez de dos copias que se desincronizan.
+KIDS_EXTRA_RE = re.compile(r"(?<!young )\b(?:boys|girls)\b|\bsize\s*\d{1,2}\s*uk\b", re.I)
 
 # ---------------------------------------------------------------------------
 # Camisetas de MUJER.

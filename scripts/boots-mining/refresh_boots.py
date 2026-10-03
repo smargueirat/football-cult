@@ -542,6 +542,29 @@ def main():
     old_auto_ids = set(old_prices.keys())
 
     mined = drop_dead_images(mined)
+
+    # Una tienda que HOY no aporta ni una oferta, pero que ayer tenia ofertas
+    # en boots.ts, casi nunca significa "se quedo sin stock": significa que su
+    # feed no estaba. mine_boots.py imprime "<tienda>: feed not found, skipped"
+    # y sigue, y como boots.ts se reconstruye entero desde lo minado, esa
+    # tienda desaparece del catalogo sin que nada falle.
+    # Paso de verdad el 2026-10-03: /tmp estaba vacio (se limpia al reiniciar),
+    # faltaba /tmp/feeds/PRODIRECT_ES_BOOTS.json, y la corrida borro las 1.104
+    # ofertas de Pro:Direct ES y 692 fichas enteras -- sin un solo error.
+    # FutbolEmotion ya tenia su propia red (usa el snapshot anterior y avisa);
+    # esto es la misma idea para cualquier tienda: antes que publicar un
+    # catalogo mutilado, parar y decir cual feed falta.
+    old_stores = set(re.findall(r'store: "([^"]+)"', old_auto_section))
+    today_stores = {b["store"] for b in mined if b.get("store")}
+    vanished = old_stores - today_stores
+    if vanished:
+        sys.exit(
+            "ABORTADO: estas tiendas tenian ofertas en boots.ts y hoy aportaron CERO: "
+            f"{sorted(vanished)}.\nCasi seguro falta su feed en /tmp/feeds (mira las lineas "
+            "'feed not found, skipped' de arriba). No se reescribe boots.ts: publicarlo "
+            "borraria esas ofertas del sitio. Reconstrui el feed que falte y volve a correr."
+        )
+
     entries = build_entries(mined, legacy_ids)
     write_boots_ts(prefix, entries)
 

@@ -391,6 +391,45 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/198601510713",  # Declan Rice Arsenal away, player-printed
     "/itm/178423886558",  # Haaland Man City third, player-printed, toddler 3T
     "/itm/377156867000",  # Burkardt Eintracht Frankfurt third, player-printed
+    # team_collision_scan drops, 2026-10-03 -- the scan was run BEFORE
+    # applying (as 10-01 insisted). Four are a more specific CLUB sitting
+    # under a national-team key, one is the OPPONENT named in a match
+    # shirt's title.
+    "/itm/198608432262",  # Colo-Colo 2026 home under `chile`
+    "/itm/336797992792",  # Colo-Colo 2026 goalkeeper (Vozinha) under `chile`
+    "/itm/860000426355",  # Real Madrid 25/26 third under `japon` ("Blue Japan" colourway)
+    "/itm/145035723265",  # Chivas Guadalajara kids third under `mexico`, also player-printed (Alexis Vega)
+    "/itm/267734730589",  # BECKHAM #7 ENGLAND shirt under `suecia` ("England v Sweden" 2006)
+    # eBay current-pass drops, 2026-10-03 (photo-verified)
+    "/itm/178533753238",  # UNIVERSIDAD DE CHILE (club) under `chile|third` -- team_collision_scan
+                          # structurally cannot flag this: the club is not in TEAM_PATTERNS at all
+    "/itm/198517560808",  # "Ecuador 26/27 third": navy polo, FEF crest but NO Marathon wordmark
+                          # anywhere -- unlicensed replica (the real Ecuador kits all carry it)
+    "/itm/198573703256",  # Mexico 26/27 home, player-printed (Gilberto Mora #10) AND long sleeve
+    "/itm/198494025481",  # Mexico 26/27 away, player-printed (Raul Jimenez #9)
+    "/itm/157101073358",  # Gladbach 25/26 away, older stock against the 26/27 on file
+    # eBay kids-pass drops, 2026-10-03 (all photo-verified)
+    "/itm/158300298879",  # IFK GOTEBORG (club) 1980s retro under `suecia|home`
+    "/itm/297664294770",  # SD DEPORTIVO QUITO (club) under `ecuador|away`
+    "/itm/358828663936",  # Norway 2026 home, player-printed (#9)
+    "/itm/127905570405",  # Peru away, player-printed (Guerrero #9)
+    "/itm/336722039175",  # Morocco 2026 away, player-printed (Brahim 10) and a SET
+    "/itm/287431992799",  # Senegal 2026 home, player-printed (Mane #10)
+    "/itm/128087310382",  # Mexico kids "Sports Uniform" -- photo is a shirt-AND-SHORTS set.
+                          # New wording for the documented set class: "uniform" is the tell
+                          # here, the title never says shorts/conjunto, so only the photo caught it.
+    "/itm/336596444486",  # Belgium "Sizes Youth to Adult" template -- adult-cut hanger shot,
+                          # not a kids garment, and the kit pictured is not the current one
+    # eBay retro-pass drops, 2026-10-03 (photo-verified). The first three are
+    # the night's recurring class: a CLUB whose title also names its country
+    # lands on the country's key, and team_collision_scan.py structurally
+    # cannot flag any of them because none of these clubs is in TEAM_PATTERNS.
+    "/itm/168511234098",  # dinamarca-retro-2011-home: SonderjyskE (Danish CLUB) under `dinamarca`
+    "/itm/158319086039",  # dinamarca-retro-201213-away: FC Nordsjaelland (Danish CLUB) under `dinamarca`
+    "/itm/237068267639",  # suiza-retro-201920-away: Grasshoppers Zurich (Swiss CLUB) under `suiza`
+    "/itm/355122697509",  # intermilan-retro-2012-third: title says both "Visitante" and "Tercera" -- type unresolvable
+    "/itm/146449629398",  # lille-retro-201617-home: white shirt sold as Lille HOME (Lille home is red) -- type mismatch
+    "/itm/157770038668",  # acmilan-retro-200405-third: anachronistic print (RONALDO 99 on a 2004/05 Milan third; he joined in 2007)
 ]
 
 

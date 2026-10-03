@@ -43,12 +43,7 @@ PRODUCTS_TS = os.path.join(HERE, "..", "..", "src", "data", "products.ts")
 STATE = os.path.join(HERE, "ebay_gb_retro_state.json")
 STORE = "eBay GB"
 KITS = {"home", "away", "third", "goalkeeper"}
-# "boys"/"girls" y las tallas britanicas de nino ("Size 12UK") NO estan en
-# KIDS_SIGNAL_RE a proposito: un \bboys\b suelto marcaria todos los anuncios
-# del BSC Young Boys, que es un club real del catalogo (misma clase de
-# auto-colision que el bug de "Boca Juniors" vs \bjunior\b del README). Por
-# eso va aca, acotado a este script, con el lookbehind que salva al club.
-GB_KIDS_EXTRA_RE = re.compile(r"(?<!young )\b(?:boys|girls)\b|\bsize\s*\d{1,2}\s*uk\b", re.I)
+GB_KIDS_EXTRA_RE = extract.KIDS_EXTRA_RE  # definicion compartida, ver extract.py
 
 # Sufijo de CLUB en el titulo. Segundo filtro contra la colision pais/club,
 # para los clubes que no estan en TEAM_PATTERNS: "Sint-Truidense HVV ...
