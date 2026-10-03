@@ -3986,3 +3986,183 @@ misses**: Gürsel Aksel Stadium resolved to İzmir (Q5995439). Price drops: 5169
 across the seven sections (camisetas 131, botas 323, entradas 3676, ropa 912,
 guantes 60, pelotas 39, entrenamiento 28); Telegram published 3. Dominant
 colours: 23 new, 0 errors. GTINs: 2362 of 14066 offers (16.8%).
+
+## Daily pass (2026-10-03) -- three separate bugs that deleted real data without failing
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation US, IT, ES --
+day-of-year 276 mod 3 = 0). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (18th pass).
+**Pro:Direct ES and UK both skipped, and that is the headline**: `/tmp` was
+empty at the start of the run (it is cleared on reboot), so neither weekly
+file existed -- see the boots section below for what that cost.
+**26 new products** (1 CSV current, 0 women, 0 kids, 1 eBay current, 24 eBay
+retro -- 6776 -> 6802 blocks); `tsc`/dupe-id/duplicate-URL/build all clean,
+`check_retro_kit`/`check_women_type`/`check_gear_ids` OK, `teamMeta` clean
+(362 teams).
+
+**All three eBay marketplaces completed 20/20 with zero 429s** -- US 282/384
+cycle 4, IT 257/384 cycle 1, ES 245/384 cycle 1. `rate_limit/` read
+`buy.browse 4300/5000` at 08:5x UTC before the batches and **2750/5000 after**
+them. That delta (~1550) is in the right direction and roughly the right size,
+unlike 10-01's counter that went UP across a run -- but one well-behaved
+reading does not overturn 10-01/10-02: still treat it as a go/no-go signal
+only, not a meter.
+
+### 1. A missing feed made `refresh_boots.py` publish a mutilated catalog
+
+`mine_boots.py` prints `<store>: feed not found, skipped` and carries on, and
+`boots.ts` is rebuilt **entirely** from what was mined -- so a store whose feed
+is absent simply ceases to exist. With no `/tmp/feeds/PRODIRECT_ES_BOOTS.json`
+the run deleted **all 1.104 Pro:Direct ES offers and 692 whole products**
+(3497 -> 2805) and reported it as a cheerful `products missing from today's
+feed (dropped): 750`. Nothing errored. FutbolEmotion has had a guard for this
+since 09-21 (falls back to the previous snapshot and prints a WARNING); no
+other store did.
+
+Fixed in `refresh_boots.py`: before writing, any store that **has** offers in
+the auto-generated section of `boots.ts` but contributed **zero** today aborts
+the run instead of rewriting the file. Scoped to the `AUTO-GENERATED-BOOTS-BELOW`
+sentinel on purpose -- the hand-seeded Soicos blocks (NikeCL/NikeAR/PumaAR) and
+ForumSport live above it and would otherwise trip the guard every single night.
+Verified both ways: with the feed missing it aborts naming `Pro:Direct ES` and
+leaves `boots.ts` byte-identical, and the 12 stores that did mine are not
+flagged. **Boots were therefore NOT refreshed tonight** -- the three boots
+files were reverted to HEAD rather than commit the deletion, and the Saturday
+20:00 `--all` cron rebuilds the feed. `refresh_gear.py` and `refresh_tickets.py`
+read feeds that were all present, so neither was affected.
+
+Do not "fix" this next time by rebuilding the feed inline: with no previous
+JSON, `prodirect_es_boots_feed.py` falls back to the full sitemap walk
+(`if full or not os.path.exists(out_path)`), which is ~7.000 products at 0.5s
+each -- about 5 hours. It was started, measured, and killed.
+
+### 2. The retro miner had no kids filter at all, and Italian age sizes became seasons
+
+`mine_retro()` in `ebay_mine_full.py` grew a `WOMEN_SIGNAL_RE` guard on 10-02
+but never a kids one -- `ebay_gb_retro.py` has checked both since that day, so
+the two retro paths disagreed. On top of that `KIDS_SIGNAL_RE` did not know
+`anni` (Italian for "years") and its units-word branch required the dash to
+have **no spaces**, so eBay IT's `"TAGLIA 11 - 12 ANNI"` matched nothing.
+
+The damage is the interesting part: `detect_season` then read the age range as
+a season, so **one** Union Berlin 2020/21 youth shirt (its own title says
+`HOME FOOTBALL SHIRT 2020 2021 ADIDAS YOUNG M 11-12 ANNI`) was about to become
+**three** retro products -- `unionberlin-retro-201112-home`, `-201314-` and
+`-201516-` -- two of them sharing one image id. A Lyon `11 - 12 ANNI` kids
+shirt was also headed for the men's `lyon-retro-202223-home`, which is exactly
+the 10-01 damage class. **A kids age range is also a fake-season generator, not
+just a kids leak.**
+
+Fixed in three places: `anni` added and the dash loosened to `\s*[-/]\s*` in
+`KIDS_SIGNAL_RE`; the kids guard added to `mine_retro()`; and `GB_KIDS_EXTRA_RE`
+(the `boys`/`girls`/`Size 12UK` regex with the `(?<!young )` lookbehind that
+saves BSC Young Boys) **moved out of `ebay_gb_retro.py` into `extract.py` as
+`KIDS_EXTRA_RE`**, since the retro miner now needs the same filter and two
+copies of that lookbehind would drift apart. Regression-checked that
+`26-27`/`2024-25` seasons and `BSC Young Boys` still do **not** match.
+
+### 3. `retro_offer_merge.py` kept one offer per product and silently dropped the rest
+
+It did `o = offers[0]`. The same retro model is routinely listed on eBay US,
+IT and ES, and each is a genuinely different offer with its own price and
+shipping -- so **55 real IT/ES offers were being thrown away every pass**.
+Now it loops the list; each store has its own replacement regex, so they do
+not overwrite each other. Re-running after the fix inserted 42 more and
+refreshed 12. Its `no such product: 11` is **not** a failure count, by the way:
+that counter is shared with the ageGroup guard, so those 11 are age-grouped
+retro blocks correctly refused.
+
+**The night's false-positive class: a CLUB whose title also names its country.**
+Five of them, and `team_collision_scan.py` is structurally blind to every one
+because **none of these clubs is in `TEAM_PATTERNS`** -- the scan can only
+report a collision between two teams it already knows. Universidad de Chile
+under `chile|third` (it was the *only* NEW eBay current candidate), SD
+Deportivo Quito under `ecuador|away` (kids), SonderjyskE and FC Nordsjaelland
+under `dinamarca`, Grasshoppers Zurich under `suiza`. The tell is always the
+title, never the key. Worth remembering before trusting a clean scan: **0 flags
+means no collision between known teams, not no collision.**
+
+**eBay retro photo pass: 46 candidates after the id/text filters, 20 dropped,
+and back-only photos were AGAIN the biggest class -- 11 of 46 (24%)**, the
+fourth pass running that this reproduces. Text filters first removed 11: four
+malformed season keys (`2017/17`, `2023/23` x2, `2023/34` from "2023/2034"),
+three reissues (`reedicion`, two "Reissue"), four kids. Note the malformed-season
+rule must only reject **impossible** ranges (second year <= first, or a gap over
+3): a first attempt at "second must be first+1" also threw out `2006-08`,
+`2008-10` and `2010/12`, which are real national-team kit cycles. Other drops:
+an AC Milan 2004/05 third printed `RONALDO 99` (he joined Milan in 2007), an
+Inter listing titled both "Visitante" **and** "Tercera" (type unresolvable, same
+class as the blocklisted Monaco 2018), and a white shirt sold as a Lille HOME
+(Lille's home is red).
+
+**Bare-year twins, 17 caught before creation**, all against two-year fichas
+already on file, offers re-keyed. But the twin check only ran on the NEW set,
+and **the duplicate-URL diff then found 8 collisions the twin check cannot
+see** -- 4 where the *merge* path wrote one listing onto both a bare-year and a
+two-year existing ficha (peru 2018, estadosunidos 2022, escocia 2020/21-vs-2020/22,
+turquia 2006-vs-2006/08) and the 4 documented pre-existing sibling pairs. In
+every one, exactly one side's URL was new tonight; removing that side restored
+HEAD's assignment, and two blocks created tonight were un-created. **Run the
+twin check over the MERGE set too, not just the NEW set.**
+
+Careful with the removal: two blocks came out **empty**, because `refresh.py`
+had *replaced* that store's existing offer line with the duplicate URL, so
+deleting the line deleted the product's only offer. Both were restored to their
+HEAD content (`estadosunidos-retro-2022-home`, `juventus-training-art-202526`).
+Net cross-product duplicate URLs **3, exactly HEAD's 3, zero new**.
+
+**CSV feeds produced exactly one new product, and the conflicts were the usual
+noise, measured not assumed.** `croacia|prematch` arrived from BOTH Foot-Store
+feeds as adidas **kf4659** -- and this is a KEEP, not a repeat of the `kf4656`
+blocklisted on 10-02: the chest logo is the adidas **Performance** three-bars,
+not the Originals trefoil, with a real HNS checkerboard crest and a `CRO` sleeve
+wordmark. **The style code is the identity; two codes one digit apart are two
+different garments.** Of the 19 conflicts, 5 were verified byte-identical to an
+offer already on file (AdidasPT Newcastle + Juventus "Tiro 25", Inter Miami on
+both BSTNs, ForumSport Alaves, PlanetFoot Nashville); `flamengo|home` "2026/27"
+is **again** adidas JM5651, the replica of the JM5652 already on file (2nd pass,
+photo-confirmed by the style code in the image filename); the ForumSport
+`barcelona|prematch` photo is **still** dated `20240702` in its own filename;
+`noruega|home` 2025 did **not** appear this pass after 17 straight.
+
+**Four eBay season conflicts were the same kit with the seller's season wrong**,
+confirmed by comparing against the on-file product's own photo: noruega away
+(blacked-out NORGE, identical neck tape and hem tag), ecuador away (gold
+Marathon wordmark and crest, identical polo collar), chile away (adidas
+Originals pink floral, identical), japon prematch. `refresh.py` refuses these
+by design -- its season guard only lets an offer land on a ficha of the season
+the **title** claims -- so they were inserted straight onto the verified product
+ids instead, keeping the real listing title. The Ecuador **third** from the same
+set was dropped: navy polo with the FEF crest but **no Marathon wordmark
+anywhere**, which the real Ecuador kits all carry -- unlicensed replica.
+
+**Kids: 25 picks, zero new products**, all mapped to existing kids blocks (US 15
+refreshed, ES 10 inserted, IT 0 picks). Eight dropped first, and the photo
+caught one the title could not: a Mexico listing calling itself a `"Sports
+Uniform"` is a **shirt-and-shorts SET** -- the documented set tell is
+"shorts"/"conjunto", and this title has neither. Also a Belgium `"Sizes Youth to
+Adult"` template photographed as an adult hanger shot, two more clubs-under-
+countries, and four player-printed.
+
+Women's pass: 208 picks across 13 stores, **0 new products**, offers refreshed
+in 9 stores -- and per 10-01 the zero was confirmed by diffing the block ids
+before and after `--apply`, not by reading the summary line. Note
+`mine_women.py` wants `/tmp/feeds/FORUMSPORT_jerseys.csv` (plural), which is
+not the name the ForumSport prefilter step naturally produces.
+
+`ebay_check_stale.py`: **57 of 200 dead (28.5%)**, up from 10-02's 25.5% and
+still well above the 9.5-12% band the month held before 10-01's 40% spike.
+
+`ebay_gb_retro.py`: 300 fichas reviewed, **86 with the same model on eBay UK
+(28.7%)**, 95 offers inserted, 960 single-store retro fichas still unchecked.
+
+Gear: ropa 43 new / 243 dropped / 158 price changes, entrenamiento 4 / 6 / 4,
+guantes and pelotas both a flat 0/0/0; `check_gear_ids.py` OK. Tickets: 1 new
+event, 9 dropped, of 2580 -- and **the Gigsberg feed was refused as stale**
+(last imported 09-09, 24 days, limit 7), so it contributed nothing. Every venue
+lookup a Wikidata miss again (59 of them), so `venue_cities.json` is unchanged
+for the 8th pass out of 9. Price drops: 4485 across the seven sections
+(camisetas 55, botas **0** -- boots.ts was not rewritten, see above --, entradas
+4391, ropa 24, guantes 1, pelotas 13, entrenamiento 1); Telegram published 3.
+Dominant colours: 26 new, 0 errors. GTINs: 2407 of 14678 offers (16.4%).
