@@ -217,15 +217,13 @@ class EbayClient:
         for sel in data.get("variesBy", {}).get("aspectsImageVariesBy", []):
             pass  # sizes for multi-variation listings need /item/{id}?fieldgroups — skipped, single-size fallback below
         sorted_sizes = sorted(sizes, key=lambda s: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"].index(s))
-        shipping_cost = None
+        costs = []
         for opt in data.get("shippingOptions", []):
-            cost = (opt.get("shippingCost") or {}).get("value")
-            if cost is not None:
-                try:
-                    shipping_cost = float(cost)
-                    break  # first option is eBay's primary/cheapest shipping choice
-                except (TypeError, ValueError):
-                    continue
+            try:
+                costs.append(float((opt.get("shippingCost") or {}).get("value")))
+            except (TypeError, ValueError):
+                continue
+        shipping_cost = min(costs) if costs else None  # la 1ª opción no siempre es la más barata
         return sorted_sizes, shipping_cost
 
 

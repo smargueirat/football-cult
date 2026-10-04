@@ -154,7 +154,15 @@ export async function GET(req: NextRequest) {
       result = { status: 502, body: { error: "ebay_error" } };
     } else {
       const data = await res.json();
-      const option = data.shippingOptions?.[0];
+      // eBay lista varias opciones y la primera no siempre es la más barata
+      // (ej. 267752462352: USPS Priority 70,40 USD antes que eBay
+      // International Shipping 25,75 + 3,38 de importación): se elige la de
+      // menor total, que es lo que paga quien compra.
+      type Opt = { shippingCost?: { value: string; currency?: string }; importCharges?: { value: string } };
+      const total = (o: Opt) => Number(o.shippingCost!.value) + Number(o.importCharges?.value ?? 0);
+      const option = ((data.shippingOptions ?? []) as Opt[])
+        .filter((o) => o.shippingCost && Number.isFinite(Number(o.shippingCost.value)))
+        .sort((a, b) => total(a) - total(b))[0];
       if (!option?.shippingCost) {
         result = { status: 200, body: { shipping: null, importCharges: null, currency: null } };
       } else {
