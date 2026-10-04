@@ -868,6 +868,21 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/237007941212",  # china-retro-2014-home: WRONG_TEAM -- camiseta del club Shanghai Shenhua (azul), no de la seleccion de China
     "/itm/178500626771",  # mancity-retro-201920-home: WRONG_KIT -- camiseta gris plateada, no la local celeste del City
     "/itm/800686479002",  # colombia-retro-2016-home: WRONG_KIT -- camiseta blanca, la local de Colombia es amarilla
+    # Barrido de fotos 2026-10-04 (todas las fotos del catálogo, verificadas a mano):
+    "/itm/277526675543",  # caboverde-retro-1989-home: AI_RENDER -- Modelo estilo IA en calle colonial desenfocada, camiseta verde generica con texto Terra di Morabeza, sin marca ni diseno real del retro 1989
+    "/itm/267752462352",  # tottenham-retro-1980-away: AI_RENDER -- Imagen de referencia: modelo IA en gimnasio con remera amarilla lisa y escudo pegado; no es la Score Draw 1980-82 away
+    "/itm/407134873626",  # esp-home-2026: AI_RENDER -- Modelo IA en cancha desenfocada; camiseta roja/azul genérica sin logo adidas ni detalles reales de la España 2026
+    "/itm/406991543200",  # ale-home-2026: AI_RENDER -- Modelo IA en cancha; prenda estilo Alemania 1990 sin marca, no es el diseño adidas 2026
+    "/itm/406991584990",  # ing-home-2026: AI_RENDER -- Modelo IA en cancha; remera blanca lisa con escudo pegado, sin swoosh Nike ni diseño real de Inglaterra 2026
+    "/itm/800355711650",  # noruega-home-2026: AI_RENDER -- mock-up digital de camiseta personalizada "YOUR NAME 9" (print-on-demand), no es la camiseta oficial
+    "/itm/358338453846",  # guatemala-retro-1996-away: AI_RENDER -- render plano digital print-on-demand (polo azul con rayas diagonales, sin costuras/etiqueta/pliegues), no es foto de una camiseta física; diseño probabl
+    "/itm/358497468718",  # guatemala-retro-1998-home: AI_RENDER -- render plano sublimado print-on-demand (polo blanco 'ABA sport' con ilustración gigante de león/figura maya), no es foto de camiseta física y el diseño 
+    "/itm/358522332207",  # uruguay-retro-1992-home: AI_RENDER -- ilustracion/render plano vectorial sin costuras ni etiqueta, marca inventada; titulo tipo print-on-demand 'men gift', no es la camiseta real
+    "/itm/358621979028",  # uruguay-retro-1994-home: AI_RENDER -- ilustracion/render plano vectorial sin costuras ni etiqueta, marca inventada; titulo tipo print-on-demand 'team apparel men gift', no es la camiseta real
+    "/itm/406991618283",  # canada-home-2026: AI_RENDER -- modelo estilo IA en campo desenfocado (arcos de futbol americano), remera roja generica con escudo pegado, sin marca Nike ni diseno real del Canada 2026
+    "/itm/405040181169",  # inglaterra-retro-2014-home: AI_RENDER -- remera blanca lisa con el escudo de Inglaterra pegado en el centro del pecho, sin Nike ni detalles del diseño 2014
+    "/itm/128039439945",  # clubtijuana-retro-202425-home: AI_RENDER -- mock-up digital "Custom Name ... Shirt 3D" print-on-demand, render plano, no es la camiseta oficial
+    "/itm/318591943530",  # pumasunam-away-202627: AI_RENDER -- mock-up digital 3D de "maglia personalizzata ... design" print-on-demand, no es foto de la camiseta fisica
 ]
 
 
