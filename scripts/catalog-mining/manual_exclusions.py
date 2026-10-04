@@ -12,6 +12,71 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # 2026-10-04, Pro:Direct UK: mined as `escocia|home` but this is
+    # SCOTLAND RUGBY, not football -- Macron (SRU supplier), "Arnold Clark"
+    # (SRU sponsor), the thistle crest and stag-antler sleeves. The football
+    # shirt on file is adidas with the SFA lion rampant. Classic
+    # rugby-shares-a-team-name false positive; only the photo settles it.
+    "macron-scotland-26-27-home-replica-shirt-navy-mens-replica-1043581",
+
+    # 2026-10-04: mined under `ajax|third|2023`, but the title names TWO teams
+    # ("Adidas Jamaica Third ... Bob Marley ... Ajax") and the only photo is
+    # BACK-ONLY, so the crest -- the one thing that would settle it -- is not
+    # visible. Carries a "BOB MARLEY 10" name print on top. Unverifiable by the
+    # documented standard, so it goes regardless of which team it really is.
+    "/itm/405840571001",
+
+    # --- Daily pass 2026-10-04, RETRO candidates ---
+    # Clubs mined under a NATIONAL-TEAM key (scan-invisible, see above):
+    "/itm/406991751356",  # ecuador|home|1999: LDU Quito (CLUB) under `ecuador`, + player name Hurtado
+    "/itm/184553760599",  # noruega|away|2011: Valerenga (CLUB) under `noruega`
+    "/itm/157900157992",  # suiza|home|2011/12: FC Sion (CLUB) under `suiza`
+    "/itm/317755329787",  # ucrania|home|2020/21: Dynamo Kiev (CLUB) under `ucrania`
+    # Player-printed shirts, not the plain kit:
+    "/itm/136594309990",  # ajax|home|2013/14: player print "Klaassen #18"
+    "/itm/158202538381",  # estadosunidos|away|2005: USWNT (women) + player print "Wambach #20"
+    "/itm/278406729350",  # feyenoord|away|2023/24: player print "#29 GIMENEZ"
+    "/itm/146449720468",  # suecia|home|2016/17: player print "#9 Kallstrom"
+    # Caught only by the PHOTO, not the title:
+    "/itm/168742635584",  # australia|home|2019: WOMEN'S cut -- 2019 was the Women's World Cup (Matildas); fitted silhouette
+    "/itm/168648135484",  # belgica|away|2020/21: player print "#15" (Meunier) across the chest
+    "/itm/358383013072",  # mexico|away|1986: modern adidas ORIGINALS reproduction sold as retro, $31 new
+
+    # --- Daily pass 2026-10-04, KIDS picks ---
+    # Club Santos Laguna (Mexico) under `santos` (= Santos FC Brazil here)
+    # AGAIN, this time in the kids set -- crest, Soriana/Penoles sponsors.
+    "/itm/388517730284",
+    # USWNT 2019 AWAY ("ONE NATION ONE TEAM", 4 stars over the shield) filed
+    # as the MEN'S `estadosunidos|home` kids shirt -- wrong team AND wrong kit.
+    "/itm/136725794185",
+    # Not a garment of the right kind at all: a cotton graphic TEE with a
+    # "MEXICO" wordmark print, no kit design. The Italian title said
+    # "Maglietta" (t-shirt), not "maglia" -- only the photo settled it.
+    "/itm/398057729349",
+
+    # --- Daily pass 2026-10-04 ---
+    # Clubs mined under a NATIONAL-TEAM key. team_collision_scan.py is
+    # structurally blind to these: none of these clubs is in TEAM_PATTERNS,
+    # so the scan can only ever report collisions between teams it knows.
+    # The tell is always the title, never the key (see 2026-10-03 notes).
+    "/itm/298727004635",  # Shakhtar Donetsk filed under `ucrania` (Ukraine)
+    "/itm/158275613938",  # FC Basel filed under `suiza` (Switzerland)
+    # Club Santos Laguna (MEXICO) mined under `santos`, which in this
+    # catalog is Santos FC (BRAZIL, the Rakuten store). Same-name club in
+    # a different country -- a new instance of the cross-name collision class.
+    "/itm/137752536611",  # Santos Laguna home
+    "/itm/137752536610",  # Santos Laguna away
+    # Player-printed shirts (name+number on the back), not the plain kit.
+    "/itm/168597426484",  # Ajax third, "Ko Itakura #4"
+    "/itm/820191956714",  # Mexico home, "Raul Jimenez"
+    "/itm/137789428926",  # Belgium away, "De Bruyne #7"
+    # Turkey home: title hid it as "stampa marmo audace #10", but the photo
+    # is a BACK-ONLY shot of a CALHANOGLU #10 print -- both drop classes at
+    # once, and only the photo settled it.
+    "/itm/117411173236",
+    # Kids shirt leaking into the men's current set: "GIOVANI/BAMBINI XL 15-16".
+    "/itm/227441091139",  # Chile home, youth sizing
+
     # Wales home 2025/26: title says "NWT ADIDAS" but Wales's real
     # supplier is Macron (confirmed by this same product's legit
     # SportIsGoodFR offer) -- wrong/mismatched eBay listing.
