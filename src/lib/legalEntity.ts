@@ -16,7 +16,7 @@ export const LEGAL_ENTITY = {
   /** Mismo buzón que ya publica /contacto y que usa MAIL_FROM. */
   email: "contact@football-cult.com",
   /** NIF/DNI/NIE del titular. */
-  nif: PENDING,
+  nif: "Z0372360H",
   /** Domicilio completo (calle, CP, localidad, provincia, país). */
   address: "Agatha Christie 6, 28523 Rivas-Vaciamadrid (Madrid), España",
   /** Fecha de la última revisión de los textos legales. */
