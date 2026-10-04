@@ -18,7 +18,7 @@ team+type, budget accordingly against eBay's daily call limit).
 import base64, json, re, sys, os, time, urllib.request, urllib.parse, urllib.error
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from extract import JERSEY_RE, EXCLUDE_RE, TEAM_PATTERNS, TYPE_PATTERNS, team_re_all, type_re_all
+from extract import club_listing_for_national, JERSEY_RE, EXCLUDE_RE, TEAM_PATTERNS, TYPE_PATTERNS, team_re_all, type_re_all
 from manual_exclusions import is_manually_excluded
 
 _REPO_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
@@ -242,6 +242,8 @@ def pick_for_team_type(client, team_key, team_en, type_key, teams_re, types_re):
         if not SEASON_OK_RE.search(title):
             continue
         if not teams_re[team_key].search(title):
+            continue
+        if club_listing_for_national(title, team_key, teams_re):
             continue
         type_match = None
         for tyk, pat in types_re.items():

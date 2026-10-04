@@ -120,7 +120,7 @@ def search_model(client, t, team_en, teams, types, nationals):
         if t["team"] in nationals:
             if any(k != t["team"] and pat.search(title) for k, pat in teams.items()):
                 continue
-            if CLUB_SUFFIX_RE.search(title):
+            if CLUB_SUFFIX_RE.search(title) or extract.CLUB_WORD_RE.search(title):
                 continue
         kit = next((k for k, p in types.items() if p.search(title)), None)
         if kit != t["kit"]:

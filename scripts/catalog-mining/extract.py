@@ -727,6 +727,15 @@ def split_title_size(title):
 # conteniendo solo camisetas de club. Una camiseta de club se reconoce porque
 # nombra a un club conocido o lleva sufijo de club, y no habla de la selección.
 CLUB_SUFFIX_RE = re.compile(r"\b(FC|CF|AFC|SC|HVV|SV|BK|CD|SD|UD|RC|VfB|VfL|FK|NK|HSV|CSKA)\b|rovers|wanderers")
+# Palabras de club sin distinguir mayúsculas: el barrido de fotos del 2026-10-04
+# encontró 111 camisetas de club en fichas de selección y CLUB_SUFFIX_RE (en
+# mayúsculas) + TEAM_PATTERNS no atrapaba ninguna ("Maccabi Netanya ... Israel",
+# "Club Universidad de Chile", "Malmo Fc ... Sweden"). "United" no cuenta en
+# United States / Arab Emirates / Kingdom, ni "Sporting" en "Le Coq Sporting".
+CLUB_WORD_RE = re.compile(
+    r"\b(club|clube|athletic|atl[eé]tico|deportivo|deportes|dynamo|dinamo|maccabi|hapoel|beitar|"
+    r"universidad|universitario|olimpia|municipal|comunicaciones|rapid|wien|thistle|city|fc|s\.c\.)\b"
+    r"|\bal-\w+|(?<!coq )\bsporting\b|\bunited\b(?!\s+(?:states|arab|kingdom))", re.I)
 NATIONAL_CTX_RE = re.compile(
     r"national|nacional|selecci[oó]n|nazionale|sele[cç][aã]o|nationalmannschaft|world cup|mundial|"
     r"mondial|copa am[eé]rica|euro ?20\d\d|\beuros?\b|fifa", re.I)
@@ -751,7 +760,7 @@ def club_listing_for_national(title, team_key, teams):
     nationals = national_teams()
     if team_key not in nationals or NATIONAL_CTX_RE.search(title):
         return False
-    return bool(CLUB_SUFFIX_RE.search(title)
+    return bool(CLUB_SUFFIX_RE.search(title) or CLUB_WORD_RE.search(title)
                 or any(k not in nationals and p.search(title) for k, p in teams.items()))
 
 
