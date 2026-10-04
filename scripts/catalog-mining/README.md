@@ -4166,3 +4166,193 @@ for the 8th pass out of 9. Price drops: 4485 across the seven sections
 (camisetas 55, botas **0** -- boots.ts was not rewritten, see above --, entradas
 4391, ropa 24, guantes 1, pelotas 13, entrenamiento 1); Telegram published 3.
 Dominant colours: 26 new, 0 errors. GTINs: 2407 of 14678 offers (16.4%).
+## Daily pass (2026-10-04) -- `team_collision_scan.py` reports a clean 0 when you hand it a file
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + Pro:Direct ES **and** UK (both rebuilt by the Sunday 04:00 cron
+this morning, 3h and 2h old) + one `ebay_mine_cycle.py` batch per marketplace
+(rotation IT, ES, US -- day-of-year 277 mod 3 = 1). Soicos skipped again --
+no `claude-in-chrome`. Umbro (MID 41001) still absent from the Rakuten FTP
+listing (19th pass). **24 new products** (0 CSV current, 0 women, 0 kids,
+0 eBay current, 19 eBay retro, 5 Pro:Direct -- 6802 -> 6826 blocks);
+`tsc`/dupe-id/duplicate-URL/build all clean, `check_retro_kit`/
+`check_women_type`/`check_gear_ids` OK.
+
+**All three eBay marketplaces completed 20/20 with zero 429s** -- IT 277/384
+cycle 1, ES 265/384 cycle 1, US 302/384 cycle 4. `rate_limit/` read
+`buy.browse 4970/5000` at 06:08 UTC (before the 07:00 roll) and 4930/5000
+after the roll, with the three batches charged to the *previous* window.
+Read it as a go/no-go signal only, as 10-01/10-02/10-03 all insist.
+
+### The bug: a file path makes the collision scan silently vacuous
+
+`team_collision_scan.py` takes a **DIRECTORY** and reads
+`<dir>/current_picks.json`, `<dir>/kids_picks.json`, `<dir>/retro_picks.json`.
+Hand it a file path -- the obvious thing to do, and what this pass did first --
+and `flag()` hits its `if not os.path.exists(path): return []` guard three
+times and prints a perfectly healthy-looking:
+
+```
+== current: 0 flagged
+== kids: 0 flagged
+== retro: 0 flagged
+```
+
+It does not error, does not warn, and is indistinguishable from a genuinely
+clean run. Every eBay and CSV scan this pass ran that way at first and all
+"passed". Caught only by the 10-02 habit of **planting a known collision**
+(`"Arsenal FC England"` under `inglaterra`) as a sanity check -- the plant
+came back 0 flagged too, which is the only reason the invocation got a second
+look. **Always plant a positive control; a scan that cannot fail is not a
+scan.** Re-run correctly: **25 real flags** (US 20, IT 2, ES 3, all on the
+retro set bar one current).
+
+Most flags were the documented filler-name keepers -- a CLUB whose title also
+names its country (Santos/Brazil, Gremio/Brazil, Penarol/Uruguay,
+Porto+Benfica/Portugal, PSV/Netherlands, Celtic/Scotland, Lens/Francia) or a
+PLAYER whose name collides with a club (Everton Cebolinha at Gremio, Enner
+Valencia at Ecuador, Federico Valverde at Penarol, Dest/USMNT at Ajax). Those
+are scan false positives: the garment really is that team's. The one real
+collision was **a Jamaica "Bob Marley" third mined under `ajax|third|2023`** --
+and note Ajax *also* had a Bob Marley third, so the kit alone cannot settle
+it; the photo is **back-only**, so the crest is invisible, and it carries a
+`BOB MARLEY 10` name print. Dropped as unverifiable on the back-only rule
+rather than on team identity. The twin check had already dropped it as an
+ambiguous bare-year, so nothing had to be pulled out of `products.ts`.
+
+### Clubs under national-team keys, again -- now six in one night
+
+`escocia|home` from **Pro:Direct UK is a SCOTLAND RUGBY shirt**: Macron (SRU
+supplier), `Arnold Clark` (SRU sponsor), the thistle crest and stag-antler
+sleeves, against the adidas SFA lion rampant on file. First rugby false
+positive in weeks and the title gives away nothing -- "Macron Scotland 26/27
+Home Replica Shirt" reads like football. Also Shakhtar Donetsk under
+`ucrania`, FC Basel under `suiza`, LDU Quito under `ecuador`, Valerenga under
+`noruega`, FC Sion under `suiza`, Dynamo Kiev under `ucrania`. **Club Santos
+Laguna (MEXICO) under `santos` (= Santos FC, BRAZIL) three separate times**
+-- current home, current away and a kids shirt (Puma, Soriana/Penoles
+sponsors, "CLUB SANTOS LAGUNA" crest). A same-name club in another country is
+now a recurring class, not a one-off.
+
+### Other drops the title could not catch
+
+- A kids **USWNT 2019 AWAY** (`ONE NATION ONE TEAM`, four stars) filed as the
+  men's `estadosunidos|home` kids shirt -- wrong team *and* wrong kit.
+- A Mexico kids "jersey" that is a **cotton graphic TEE**. The Italian title
+  said `Maglietta` (t-shirt), not `maglia`. New tell worth keeping.
+- `turquia|home`: the title hid a player print as `"stampa marmo audace #10"`;
+  the photo is a back-only CALHANOGLU 10.
+- An `australia|home|2019` retro that is a **women's cut** -- 2019 was the
+  Women's World Cup, so a "2019 World Cup Australia" shirt is a Matildas shirt
+  by default. Worth a standing check on that year.
+- A `mexico|away|1986` that is a modern adidas **Originals reproduction**, new
+  at $31.
+- Six player-printed shirts (Klaassen, Gimenez, Kallstrom, Wambach, Raul
+  Jimenez, De Bruyne, Meunier #15 on the chest).
+
+All 19 blocklisted by bare `/itm/<id>` (or the store slug for Pro:Direct),
+per the 10-02 rule.
+
+### Retro: zero back-only photos, breaking a four-pass streak
+
+486 distinct retro keys / 498 offers. 444 landed on existing fichas (193
+inserted, 99 refreshed, 166 already on file by URL, **3 age-grouped blocks
+correctly refused** by the 10-01 guard). Of 42 NEW candidates: 1 text drop
+(the Chile `XL 15-16` kids shirt whose age range became season `2015/16` --
+the 10-03 fake-season class, same listing that also leaked into the current
+set), 11 twins, 11 verified drops, **19 created**. The malformed-season rule
+(`second <= first`, or gap > 3) was regression-checked against the README's
+own list and correctly keeps `2006-08`/`2008-10`/`2010/12` and `1999/00`.
+
+**Back-only photos were 0 of 22 this pass**, after 24%/37%/24% on the three
+previous ones. No change was made to explain it; worth watching rather than
+concluding the class is gone.
+
+Twins: 5 bare-year NEW picks re-keyed onto the existing two-year ficha, and
+**6 dropped as genuinely ambiguous** -- `santos|home|2012`, `gremio|home|2022`,
+`ajax|home|2023`, `ajax|third|2022`, `ajax|third|2023`,
+`estadosunidos|away|2015` all had BOTH candidate seasons already on file, so
+there is no non-guessing way to pick one. Three picks were re-keyed the other
+way, to the season their own title states: Ukraine home+away `2002` -> `2002/04`
+("2002-04" in both titles) and Ecuador home `2009` -> `2009/10`.
+
+### Pro:Direct conflicts split cleanly into "older stock" and "real new kit"
+
+24 season conflicts across ES+UK, and the split is worth naming because it is
+not the usual all-noise: 10 are the pick being OLDER than the ficha on file
+(gladbach, manutd GK, inter GK, leverkusen, palermo, valencia, lille,
+kallithea) -- skip; 5 are a genuinely NEWER kit with no ficha, confirmed by
+photo against the on-file shirt and **created** (RB Leipzig away red/gold vs
+navy pinstripes on file, RB Leipzig third, Lazio third navy/gold art-deco polo
+vs blue geometric crew on file, Fenerbahce away white/gold 1907-2027
+anniversary polo vs yellow/navy on file, Senegal prematch 2026); and 4 are the
+SAME kit under a different season convention -- MLS plays calendar year, so
+`nyredbulls|home` "2026" and `lafc|home` "2026" are the truer label for fichas
+filed as `2026/27`, plus `galatasaray|home` and `rangers|third`. Those 4 were
+inserted onto the verified existing id, keeping the real listing title, same
+move as the eBay national-team conflicts.
+
+Same treatment for 3 eBay IT conflicts (Sweden home, Chile away adidas
+Originals floral, Ecuador away Marathon polo) -- all photo-confirmed the same
+kit as the on-file 2026 ficha with the seller's "26/27" wrong. The 4th,
+`saopaulo|goalkeeper`, needed nothing: **its URL was already in `products.ts`**,
+the same listing on the same ficha.
+
+### Everything else
+
+**CSV feeds produced zero new products, measured.** All 14 conflicts resolved:
+5 byte-identical to an offer already on file (AdidasPT Newcastle + Juventus
+"Tiro 25", Inter Miami on both BSTNs, ForumSport Alaves, PlanetFoot Nashville),
+`flamengo|home` is adidas **JM5651 against JM5652 on file** for the 3rd pass
+(replica vs authentic of one kit -- the style code in the image filename is the
+identity), the ForumSport `barcelona|prematch` photo is **still** dated
+`20240702` in its own filename (4th pass), rest older stock. DecathlonIE's zero
+measured again: `Fashion:size` populated on all 41689 rows, every dated jersey
+row 2022-24/25 old stock.
+
+**Rakuten: INTER's first download was truncated** -- 3219 lines ending on a
+product row with no `TRL|` trailer, and curl exited 0. Re-downloaded clean at
+4138, matching 10-02 exactly. This is precisely why the rule is to check the
+trailer and not the exit code; it has now actually fired. Other four fine.
+Shop Real Betis reproduces for the 5th pass: `size` empty in all 1931 rows,
+identical 1149 sold-out / 782 kept split, home+away dropped by the `no_image`
+guard.
+
+**Duplicate-URL diff found 5 new cross-product collisions**, all with exactly
+one side new tonight, all reverted to HEAD's assignment: a Juventus GK URL on
+both `juv-` and `juventus-` keys and a Tunisia one on both `estunis-` and
+`tunez-` (two live instances of the one-club-two-keys class), `flamengo-away`
+bare-year vs two-year, and `gremio-retro-202021-home`, which came out EMPTY on
+removal and was restored to its HEAD block -- the exact 10-03 trap, caught by
+checking before writing. Net 3 duplicates, exactly HEAD's 3.
+
+Worth flagging separately: **117 products carry no offer at all** (118 at
+HEAD, so pre-existing and slightly improved tonight, not caused by this pass).
+They render as empty cards. Nothing in the pipeline currently prunes or
+refills them.
+
+`ebay_check_stale.py`: **52 of 200 dead (26%)**, in line with 10-02's 25.5%
+and 10-03's 28.5%, still roughly double the 9.5-12% the month held before
+10-01.
+
+`ebay_gb_retro.py`: 300 fichas reviewed, **75 with the same model on eBay UK
+(25%)**, 75 offers inserted, 920 single-store retro fichas still unchecked.
+Sampled 4 by photo, all genuine front views -- note the Samsunspor 23/24 away
+"100" badge is the **Turkiye centenary** (1923-2023) that Turkish clubs wore
+that season, not a club anniversary, so it is correct for that ficha.
+
+Boots: 107 new / 169 dropped / 57 price changes, legacy
+`{fe_kept: 44, forum_kept: 50, fe_dropped: 1, forum_dropped: 5,
+products_removed: 1}`, 67 fused via 308s, colour `ok: 59, errors: 0`, no
+FutbolEmotion WARNING. **ProSoccer mined 0** ("respuesta no JSON" on page 13)
+and the 10-03 abort guard did NOT fire -- correctly: ProSoccer has zero offers
+in `boots.ts` at HEAD too, it only appears in the store union type, so there
+was nothing to lose. Verified by a full store census against HEAD; every store
+still present, Pro:Direct ES even grew 1104 -> 1124. Gear: guantes 1/1/0,
+pelotas 1/1/4, ropa 21/13/62, entrenamiento 5/5/2. Tickets: 1 new, 6 dropped,
+of 2575 -- **Gigsberg refused as stale again** (last import 09-09, 25 days,
+limit 7). Wikidata missed all 59 venues, so `venue_cities.json` is unchanged
+for the 10th pass out of 11. Price drops: 1949 across the seven sections
+(camisetas 47, botas 16, entradas 1886, resto 0); Telegram published 3.
+Dominant colours: 25 new, 0 errors. GTINs: 2415 of 15038 offers (16.1%).
+
