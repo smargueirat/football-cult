@@ -495,6 +495,379 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/355122697509",  # intermilan-retro-2012-third: title says both "Visitante" and "Tercera" -- type unresolvable
     "/itm/146449629398",  # lille-retro-201617-home: white shirt sold as Lille HOME (Lille home is red) -- type mismatch
     "/itm/157770038668",  # acmilan-retro-200405-third: anachronistic print (RONALDO 99 on a 2004/05 Milan third; he joined in 2007)
+    # Barrido de fotos 2026-10-04 (todas las fotos del catálogo, verificadas a mano):
+    "Retro_Manchester_United_Away_Jersey_199294_1_1.webp",  # manutd-retro-199294-away: WRONG_KIT -- camiseta verde/amarilla Newton Heath = tercera 1992/94; la visitante 92/94 es la azul
+    "/itm/318475554643",  # curacao-home-2026: WRONG_KIT -- camiseta amarilla = visitante de Curazao; la local es azul
+    "756502-03-1_600x600.jpg&feedId=99907&k=555c20fd43f7a7f797e384d466e125bf6e143cce",  # chequia-away-2026: WRONG_KIT -- camiseta amarillo fluor lisa (arquero/entreno); la visitante 2026 es blanca con dorado como las ot
+    "71ABj3T8hBL._AC_SL1400_.jpg",  # dortmund-third-202627: WRONG_KIT -- camiseta amarilla/negra estilo local; la tercera 26/27 es violeta como las demas fotos
+    "/itm/307117902868",  # tailandia-away-2026: WRONG_TEAM -- camiseta del club Chiang Rai United (Singha), no de la seleccion de Tailandia
+    "/itm/307117967745",  # tailandia-home-2026: WRONG_TEAM -- camiseta naranja del club Chiang Rai United (Singha), no de la seleccion de Tailandia
+    "/itm/336688992428",  # vietnam-home-2026: NO_PRODUCT -- captura de pantalla de app/promo con jugador y botones de interfaz, no foto del producto
+    "/itm/287402237773",  # arsenal-retro-202324-third: WRONG_KIT -- amarillo fluor con remolinos negros = visitante 23/24; la tercera es la verde azulada de las fotos 3-4
+    "/itm/298699324661",  # astonvilla-retro-202324-away: NO_PRODUCT -- primer plano de etiqueta y escudo, no se ve la camiseta
+    "Camisola_Alternativa_24-25_do_Aston_Villa_FC_Branco_JK4034_21_model.jpg&feedId=92150&k=29024e0b1e7704829238bf21ab263325e4ad6476",  # astonvilla-retro-202425-away: NO_PRODUCT -- placeholder 'No image available'
+    "/itm/406745785301",  # astonvilla-retro-202425-away: WRONG_KIT -- camiseta negra; la visitante 24/25 es blanca (fotos oficiales adidas 10-11, 14)
+    "/itm/257352568181",  # astonvilla-retro-202223-home: WRONG_KIT -- camiseta celeste camuflada BK8 (alternativa 23/24); la local 22/23 es granate Cazoo
+    "/itm/227125397691",  # atalanta-retro-202223-home: WRONG_KIT -- camiseta blanca = visitante; la local de Atalanta es a rayas azules y negras
+    "/itm/295564190170",  # australia-retro-2015-away: NOT_JERSEY -- solo el set de nombre y numero termoadhesivo (KERR 20), no una camiseta
+    "/itm/203996348233",  # australia-retro-2018-away: WRONG_KIT -- camiseta amarilla = local de Australia 2018; la visitante es oscura
+    "/itm/278410856754",  # barcelona-retro-202425-away: WRONG_KIT -- camiseta rosa/celeste = tercera 24/25; la visitante 24/25 es negra como las fotos 0 y 2
+    "/itm/167711204577",  # bayern-retro-201516-away: WRONG_KIT -- rayas rojas y azules = local 2014/15; la visitante 15/16 es la blanca de las fotos 17 y 19
+    "/itm/198594859288",  # bayern-retro-202324-away: WRONG_KIT -- blanca con mangas rojas = local 23/24; la visitante 23/24 es la negra de las fotos 24, 25 y 27
+    "/itm/377158989396",  # benfica-retro-202324-away: WRONG_KIT -- camiseta blanca/crema = tercera 23/24; la visitante 23/24 es la negra de las fotos 14 y 16
+    "/itm/266920229019",  # brasil-retro-2016-third: WRONG_TEAM -- camiseta verde del club Chapecoense (Umbro), no de la seleccion de Brasil
+    "/itm/800556538613",  # chelsea-retro-201011-away: NOT_JERSEY -- solo el set termoadhesivo de nombre y numero (DROGBA 11), no una camiseta
+    "/itm/117281417468",  # chelsea-retro-2012-home: NO_PRODUCT -- foto de partido de un jugador festejando con el trofeo, no foto del producto
+    "/itm/394816053864",  # chelsea-retro-202223-home: KIDS_MISMATCH -- nina con conjunto infantil (titulo 13-15 anos); la ficha no es de ninos
+    "/itm/407176945134",  # chile-retro-2020-away: WRONG_TEAM -- camiseta de Universidad de Chile (escudo U, Petrobras), ficha es la selección de Chile
+    "/itm/366476392229",  # chile-retro-2023-away: WRONG_TEAM -- camiseta de Universidad Católica (Under Armour, BCE), ficha es la selección de Chile
+    "/itm/137741734048",  # colombia-retro-2024-away: WRONG_TEAM -- camiseta del Deportivo Cali (Kappa), ficha es la selección de Colombia
+    "/itm/226445890639",  # colombia-retro-2018-third: WRONG_TEAM -- camiseta de Deportes Tolima, ficha es la selección de Colombia
+    "/itm/188345595204",  # corinthians-retro-202425-away: NO_PRODUCT -- captura de pantalla de un celular (resultado de búsqueda), no foto del producto
+    "/itm/117023540434",  # dinamarca-retro-201920-away: WRONG_TEAM -- camiseta naranja del club Aarhus AGF (Hummel, Bravida), ficha es la selección de Dinamarca
+    "/itm/234689761297",  # escocia-retro-201819-away: WRONG_TEAM -- camiseta del club Partick Thistle (Joma), ficha es la selección de Escocia
+    "/itm/336601591774",  # escocia-retro-202021-home: WRONG_TEAM -- camiseta del club East Fife (Joma, tartán amarillo), ficha es la selección de Escocia
+    "/itm/158063372166",  # escocia-retro-202425-home: WRONG_KIT -- camiseta blanca/violeta = la away 24/25 de Escocia, ficha es home (azul marino)
+    "/itm/236820169456",  # everton-retro-202122-home: WRONG_KIT -- camiseta a rayas negras/amarillas, no la local azul de Everton 21/22
+    "/itm/257190241731",  # everton-retro-201617-third: WRONG_TEAM -- camiseta de Everton de Viña del Mar (Chile), ficha es Everton inglés
+    "/itm/188489102552",  # feyenoord-retro-2004-away: WRONG_KIT -- camiseta mitad roja/blanca = la local de Feyenoord, ficha es away
+    "/itm/168511236872",  # finlandia-retro-2007-home: WRONG_KIT -- camiseta azul (sponsor Zest, partido benéfico), la local de Finlandia es blanca
+    "macron_60004631_rouge-blanc_1.webp",  # gales-retro-202425-home: NOT_JERSEY -- camiseta de RUGBY de Gales (Macron, Vodafone, 6 Nations)
+    "/itm/335030316427",  # gremio-retro-202223-away: NO_PRODUCT -- foto de un jugador con un trofeo en el estadio, no foto del producto
+    "/itm/256890638862",  # gremio-retro-202223-home: WRONG_KIT -- camiseta blanca = la away de Grêmio, ficha es home (rayas azul/negro)
+    "/itm/137308122872",  # guatemala-retro-2021-away: WRONG_TEAM -- camiseta del club CSD Municipal (Banrural), ficha es la selección de Guatemala
+    "/itm/315781449031",  # guatemala-retro-2022-away: WRONG_TEAM -- camiseta del club CSD Municipal (Banrural, betcris), ficha es la selección de Guatemala
+    "/itm/257319194460",  # guatemala-retro-202425-away: WRONG_TEAM -- camiseta del club Comunicaciones (Kelme, Banrural), ficha es la selección de Guatemala
+    "/itm/257009497184",  # india-retro-202122-away: WRONG_TEAM -- camiseta del club Real Kashmir (Six5Six), ficha es la selección de India
+    "/itm/318563694899",  # indonesia-retro-2017-away: WRONG_TEAM -- camiseta del club Persiba Balikpapan, ficha es la selección de Indonesia
+    "/itm/358914667997",  # inglaterra-retro-202425-away: WRONG_KIT -- camiseta blanca = la local de Inglaterra, la away 24/25 es violeta
+    "/itm/257409359540",  # inglaterra-retro-202122-third: WRONG_TEAM -- camiseta del club Torquay United (rayas negras/doradas), ficha es la selección de Inglaterra
+    "/itm/257641763193",  # intermilan-retro-202021-away: WRONG_KIT -- camiseta gris a rayas = la tercera del Inter 20/21, ficha es away (blanca)
+    "/itm/175387770025",  # iraq-retro-202021-away: WRONG_TEAM -- camiseta del club Naft Al-Wasat (Bird), ficha es la selección de Irak
+    "/itm/358399139913",  # iraq-retro-201920-home: WRONG_TEAM -- camiseta del club Naft Al-Wasat (Bird), ficha es la selección de Irak
+    "/itm/187550911520",  # israel-retro-202122-away: WRONG_TEAM -- camiseta del club Maccabi Netanya (Lotto, sponsor en hebreo), ficha es la selección de Israel
+    "/itm/186573876170",  # israel-retro-202324-away: WRONG_TEAM -- camiseta del club Maccabi Netanya (Lotto), ficha es la selección de Israel
+    "/itm/187503065175",  # israel-retro-202223-home: WRONG_TEAM -- camiseta amarilla del club Maccabi Netanya (Lotto), ficha es la selección de Israel
+    "/itm/186573835298",  # israel-retro-202324-home: WRONG_TEAM -- camiseta amarilla del club Maccabi Netanya (Lotto), ficha es la selección de Israel
+    "/itm/186861695804",  # israel-retro-201718-third: WRONG_TEAM -- camiseta de un club israelí (título: Maccabi Tel Aviv), ficha es la selección de Israel
+    "/itm/188462846319",  # israel-retro-202324-third: WRONG_TEAM -- camiseta del club Maccabi Netanya (Lotto), ficha es la selección de Israel
+    "/itm/178135470328",  # italia-retro-200809-away: WRONG_KIT -- camiseta azul = la local de Italia, ficha es away (blanca)
+    "/itm/174768740126",  # italia-retro-201617-third: WRONG_TEAM -- camiseta del club US Avellino (Givova), ficha es la selección de Italia
+    "/itm/334331140562",  # italia-retro-201617-third: WRONG_TEAM -- camiseta del club US Avellino (Givova), ficha es la selección de Italia
+    "/itm/205199791029",  # italia-retro-201718-third: WRONG_TEAM -- camiseta del club Chievo Verona (Givova), ficha es la selección de Italia
+    "/itm/800468707348",  # jordania-retro-2024-home: WRONG_TEAM -- camiseta del club Al-Hussein (Kelme, amarilla), ficha es la selección de Jordania
+    "/itm/137222741915",  # juventus-retro-201920-home: WRONG_KIT -- camiseta blanca con rayas rosas (away 23/24), ficha es la local 19/20 (blanca/negra mitad)
+    "/itm/298575036900",  # lazio-retro-202425-home: WRONG_TEAM -- camiseta de la selección de Italia (adidas, escudo FIGC, #20 Zaccagni), ficha es Lazio
+    "Camiseta_primera_equipacion_Leeds_United_FC_24-25_Adolescentes_Blanco_IV9677_21_model.jpg&feedId=92152&k=7793c04708ee4858a1a7557747ada415dd7ad9f1",  # leeds-retro-202425-home: KIDS_MISMATCH -- foto de dos niños con 
+    "/itm/398362891958",  # liverpool-retro-2016-away: WRONG_KIT -- camiseta roja Firmino 11 = la local, ficha es away
+    "/itm/206431800713",  # liverpool-retro-202223-third: WRONG_KIT -- camiseta blanca con remolinos = la away 2022/23, ficha es third
+    "/itm/178207769789",  # mallorca-retro-2008-home: WRONG_KIT -- camiseta blanca, la local del Mallorca es roja; parece la visitante
+    "/itm/358222765271",  # mancity-retro-202324-third: NO_PRODUCT -- captura de pantalla de una app de compras, no foto del producto
+    "/itm/405572006138",  # marruecos-retro-202223-away: WRONG_TEAM -- camiseta visitante de España (escudo RFEF, Busquets), ficha es Marruecos
+    "/itm/366466466032",  # marruecos-retro-202223-away: WRONG_TEAM -- título y diseño negro/amarillo del club MAS Fès, no de la selección de Marruecos
+    "/itm/146593409898",  # napoli-retro-2007-home: WRONG_KIT -- camiseta gris con dorado, la local del Napoli es celeste
+    "/itm/266000869291",  # napoli-retro-201011-home: WRONG_KIT -- camiseta gris/plateada, no la local celeste del Napoli
+    "/itm/146555089543",  # napoli-retro-2011-home: WRONG_KIT -- camiseta amarilla Cavani 7, la local del Napoli es celeste
+    "/itm/235030235882",  # newcastle-retro-199596-home: NOT_JERSEY -- alfombrilla de bar Newcastle Brown Ale con botellas, no una camiseta
+    "/itm/358781835788",  # noruega-retro-202425-home: WRONG_KIT -- camiseta blanca Haaland 9 = la visitante de Noruega, la local es roja
+    "/itm/325694150232",  # peru-retro-2012-away: WRONG_TEAM -- camiseta del club César Vallejo (UCV), no de la selección de Perú
+    "/itm/325694150222",  # peru-retro-2013-away: WRONG_TEAM -- camiseta del club Juan Aurich, no de la selección de Perú
+    "/itm/325694150236",  # peru-retro-2014-away: WRONG_TEAM -- camiseta del club UTC Cajamarca, no de la selección de Perú
+    "/itm/357674810534",  # peru-retro-2022-away: WRONG_TEAM -- camiseta del club Alianza Lima, no de la selección de Perú
+    "/itm/358711961404",  # peru-retro-2022-home: WRONG_TEAM -- camiseta rosa del club Sport Boys, no de la selección de Perú
+    "/itm/397766697011",  # peru-retro-2022-third: WRONG_TEAM -- camiseta verde del club Sporting Cristal, no de la selección de Perú
+    "/itm/177218463150",  # porto-retro-202122-away: WRONG_TEAM -- camiseta del Internacional de Porto Alegre (Banrisul), ficha es FC Porto
+    "/itm/273201542539",  # porto-retro-201617-home: WRONG_KIT -- camiseta naranja de arquero (título dice Goal Keeper), ficha es la local de jugador
+    "/itm/158350515444",  # portugal-retro-201819-home: WRONG_TEAM -- camiseta del club GD Chaves (título y escudo), no de la selección de Portugal
+    "/itm/127190029916",  # realbetis-retro-202324-away: WRONG_KIT -- camiseta a rayas verdiblancas (sponsor Gree) = una local del Betis, ficha es away
+    "/itm/188764338762",  # realmadrid-retro-202223-home: NO_PRODUCT -- foto de Benzema festejando en un partido, no foto del producto
+    "5183EhxAjnL._AC_UL1000_.jpg",  # riverplate-retro-202324-third: WRONG_KIT -- diseño de dientes blancos sobre rojo = la away 23/24 (igual que n0/n1), la third es negra con banda roja (n13)
+    "/itm/236750662486",  # suecia-retro-200203-away: WRONG_TEAM -- camiseta del club Helsingborgs IF (título y escudo), no de la selección de Suecia
+    "/itm/236748960704",  # suecia-retro-200203-home: WRONG_TEAM -- camiseta a rayas celestes/azules del club Djurgardens (título), no de la selección de Suecia
+    "/itm/357321213629",  # suecia-retro-201415-home: WRONG_TEAM -- camiseta negra del club AIK (título y escudo), no de la selección de Suecia
+    "/itm/820078842059",  # suiza-retro-2008-home: NOT_JERSEY -- remera roja de hincha con estampado suisse08, no la camiseta de juego
+    "/itm/157829244658",  # suiza-retro-201617-home: WRONG_TEAM -- camiseta negra del club FC Lugano (título y escudo), no de la selección de Suiza
+    "/itm/267497734722",  # tottenham-retro-201819-home: WRONG_KIT -- camiseta azul marino/violeta = la visitante 18/19, ficha es home (blanca)
+    "/itm/188205857542",  # tottenham-retro-202021-third: WRONG_KIT -- camiseta blanca manga larga, la third 20/21 es amarilla
+    "/itm/176000817467",  # turquia-retro-201011-away: WRONG_TEAM -- camiseta del Galatasaray (Türk Telekom), ficha es selección de Turquía
+    "/itm/157900079713",  # turquia-retro-202122-away: WRONG_TEAM -- camiseta del Karsiyaka, ficha es selección de Turquía
+    "/itm/147493858992",  # turquia-retro-202324-away: WRONG_TEAM -- camiseta del MKE Ankaragucu, ficha es selección de Turquía
+    "/itm/336150968325",  # turquia-retro-2019-home: WRONG_TEAM -- camiseta del Goztepe (rayas amarillas y rojas), ficha es selección de Turquía
+    "/itm/227001555677",  # turquia-retro-202021-third: WRONG_TEAM -- camiseta del Adana Demirspor, ficha es selección de Turquía
+    "/itm/318285788358",  # ucrania-retro-201415-away: WRONG_TEAM -- camiseta del club Metalurh (Sobol 55), ficha es selección de Ucrania
+    "/itm/236968167186",  # ucrania-retro-2015-away: WRONG_TEAM -- camiseta del Dynamo Kyiv, ficha es selección de Ucrania
+    "/itm/317805241980",  # ucrania-retro-202021-third: WRONG_TEAM -- camiseta del Dynamo Kiev (New Balance), ficha es selección de Ucrania
+    "/itm/266920229888",  # ucrania-retro-202122-third: WRONG_TEAM -- camiseta del Shakhtar (Mariupol 4), ficha es selección de Ucrania
+    "/itm/298212527441",  # ucrania-retro-202425-third: WRONG_TEAM -- camiseta del Shakhtar segun titulo, ficha es selección de Ucrania
+    "/itm/287585886901",  # valencia-retro-202223-away: WRONG_TEAM -- camiseta de Ecuador con E. Valencia 13, ficha es Valencia CF
+    "/itm/267206129228",  # wolves-retro-202425-away: WRONG_KIT -- camiseta amarilla/dorada = la local 24/25 de Wolves, la visitante es negra
+    "/itm/227318653330",  # zambia-retro-202021-home: WRONG_TEAM -- camiseta del club Nkana (betway), ficha es selección de Zambia
+    "ArgentinaHomeWorldCupJerseysKit2026_1.png",  # arg-home-2026: NOT_JERSEY -- conjunto camiseta+short (Jersey Kit)
+    "2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=5ef7dc6adfdf590831224a5088ebf2ea2c9ca7a5",  # fra-home-2026: NOT_JERSEY -- camiseta de RUGBY de Francia (adidas, Altrad)
+    "2025_12_adidas_kf1712_1_apparel_photography_front_center_view_white.webp",  # fra-home-2026: NOT_JERSEY -- camiseta de RUGBY de Francia (adidas, Altrad)
+    "1039537_main.jpg",  # fra-home-2026: NOT_JERSEY -- camiseta de RUGBY de Francia (adidas, Altrad); la de fútbol es Nike
+    "Germany_Home_Jersey_Kit_World_Cup_2026_1.webp",  # ale-home-2026: NOT_JERSEY -- conjunto camiseta+short (Jersey Kit)
+    "adidas_jy5633_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=f3985470a63963b42b5110fa1d681585348e516b",  # ita-home-2026: WRONG_KIT -- camiseta blanca con dorado = la visitante; la local de Italia 
+    "adidas_jy5633_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=f3985470a63963b42b5110fa1d681585348e516b",  # ita-home-2026: WRONG_KIT -- camiseta blanca con dorado = la visitante; la local de Italia 
+    "adidas_jy5633_1_apparel_photography_front_center_view_white.webp",  # ita-home-2026: WRONG_KIT -- camiseta blanca con dorado = la visitante; la local de Italia es azul
+    "/itm/298525888367",  # ing-home-2026: AI_RENDER -- mock-up digital 'Re-Printed Jersey by Fan Made', no es foto del producto
+    "1031188_main.jpg",  # ing-home-2026: NOT_JERSEY -- camiseta de RUGBY de Inglaterra (Castore, O2, rosa)
+    "medias-1001053778-00-P-X-20251022162949.jpg",  # bar-home-2025: WRONG_KIT -- camiseta con rayas finas onduladas (pre-match/entrenamiento), no la local 25/26 a franjas
+    "ii1690-101.webp",  # psg-home-2026: WRONG_KIT -- camiseta blanca = la visitante del PSG; la local es azul con franja roja
+    "/itm/318324603521",  # che-home-2025: NO_PRODUCT -- captura de pantalla de celular (barra de estado visible), producto diminuto
+    "/itm/820002300174",  # ale-goalkeeper-2026: WRONG_KIT -- camiseta de arquero naranja = la visitante (titulo 'Away Goalkeeper'), ficha es la de arquero local verde
+    "1034363_list.jpg",  # bar-third-202526: NOT_JERSEY -- buzo de manga larga azul marino (Total 90), no la camiseta third naranja
+    "1034430_main.jpg",  # che-third-202526: NOT_JERSEY -- buzo de manga larga negro (Total 90), no la camiseta
+    "/itm/318931203260",  # col-away-2026: WRONG_KIT -- camiseta amarilla = la local de Colombia, ficha es away (azul)
+    "2025_12_adidas_jy0843_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=9f752ee8a571be6b3bf25b4aa9a036710d3586b4",  # fra-away-2026: NOT_JERSEY -- camiseta de RUGBY de Francia (adidas, Altrad)
+    "adidas_jp4334_2_apparel_photography_front_center_view_white.webp",  # fra-away-2026: NOT_JERSEY -- camiseta de RUGBY de Francia (adidas, Caisse d'Epargne); la de fútbol es Nike
+    "1031189_main.jpg",  # ing-away-2026: NOT_JERSEY -- camiseta de RUGBY de Inglaterra (Castore, O2, rosa)
+    "KA8093-01.jpg&feedId=99415&k=696ae3a53402fc81af06a03450da7a2aaa5f64d5",  # liv-away-202526: WRONG_KIT -- reedición retro 'Away Jersey 95' verde/blanca Carlsberg, no la visitante 25/26
+    "KA8093-01.jpg&feedId=99347&k=696ae3a53402fc81af06a03450da7a2aaa5f64d5",  # liv-away-202526: WRONG_KIT -- reedición retro 'Away Jersey 95' verde/blanca Carlsberg, no la visitante 25/26
+    "JM5495-01.jpg&feedId=99347&k=094283ea374da70801417bbb1eedd0b39c7b498d",  # manutd-away-202526: WRONG_KIT -- reedición retro 'Away Jersey 90/92' azul con Sharp, no la visitante 25/26
+    "71K4inPLuJL._AC_SL1400_.jpg",  # por-away-2026: WRONG_KIT -- camiseta roja = la local de Portugal 2026, ficha es away
+    "PSG_Fourth_Away_Soccer_Jersey_202526_2.webp",  # psg-away-202526: WRONG_KIT -- titulo y foto son la cuarta (negra Jordan), no la visitante
+    "nike_hm3606-101_white-global-red_1.jpg&feedId=89032&k=4bc19f136a2ae93516e64844414e7de3aefc2b44",  # psg-third-202526: WRONG_KIT -- top de entrenamiento Strike blanco manga larga, la third 25/26 es roja
+    "nike_hm3606-101_white-global-red_1.webp",  # psg-third-202526: WRONG_KIT -- top de entrenamiento Strike blanco manga larga, la third 25/26 es roja
+    "1034562_main.jpg",  # psg-third-202526: NOT_JERSEY -- buzo de manga larga negro (Total 90), no la camiseta
+    "/itm/318218519008",  # barcelona-away-kids: WRONG_TEAM -- camiseta del Barcelona SC de Ecuador (sponsor Pony Malta), ficha es FC Barcelona
+    "/itm/116378559686",  # barcelona-home-kids: NOT_JERSEY -- remera de fan genérica azul marino con mangas rojas y escudo, sin marca ni diseño de la local
+    "/itm/406060278569",  # espana-home-kids: NOT_JERSEY -- remera souvenir roja con texto ESPAÑA estampado, sin escudo RFEF ni marca
+    "/itm/386881438318",  # francia-home-kids: NOT_JERSEY -- remera souvenir genérica con FRANCE 10 estampado, sin escudo FFF ni marca
+    "/itm/318897992133",  # manutd-away-kids: AI_RENDER -- mock-up frente/espalda con leyenda "Item VAULT AI Generated", no es foto real
+    "2025_10_adidas_kd4339_1_apparel_photography_front_view_white.webp&feedId=89044&k=601325266f3232753331f6382b38b5061387f0f6",  # realmadrid-home-kids: NOT_JERSEY -- camiseta sin mangas de básquet del Real Madrid
+    "2025_10_adidas_kd4339_1_apparel_photography_front_view_white.webp",  # realmadrid-home-kids: NOT_JERSEY -- camiseta sin mangas de básquet del Real Madrid
+    "errea_smkh6c20960pow_01.jpg&feedId=89044&k=5c166829812700a3e267d60ff79045f9d7b6bdc2",  # acmilan-away-202526: NOT_JERSEY -- camiseta de vóley del Allianz Powervolley Milano (Errea, Enercom, DeniCar), no es del AC Mi
+    "errea_smkh6c20960pow_01.webp",  # acmilan-away-202526: NOT_JERSEY -- camiseta de vóley del Allianz Powervolley Milano (Errea, Enercom, DeniCar), no es del AC Milan
+    "errea_smkh6c0041300pow_01.jpg&feedId=89044&k=f2070802b602a9676d1713baa3f6d68b968afab2",  # acmilan-home-202526: NOT_JERSEY -- camiseta de vóley del Allianz Powervolley Milano (Errea, Enercom, DeniCar), no es del AC 
+    "errea_smkh6c0041300pow_01.webp",  # acmilan-home-202526: NOT_JERSEY -- camiseta de vóley del Allianz Powervolley Milano (Errea, Enercom, DeniCar), no es del AC Milan
+    "1034540_list.jpg",  # tottenham-third-202526: NOT_JERSEY -- buzo/sudadera celeste de cuello redondo con puños y cintura elastizados, no la camiseta third
+    "/itm/377245703924",  # intermilan-third-202526: WRONG_KIT -- camiseta azul/negra con logo Le Coq Sportif, no es la third Nike 25/26 azul marino y naranja
+    "1034447_main.jpg",  # intermilan-third-202526: NOT_JERSEY -- buzo/sudadera gris de cuello redondo con puños elastizados, no la camiseta third
+    "JapanHomeWorldCupJerseysKit2026_1.png",  # japon-home-2026: NOT_JERSEY -- conjunto camiseta + short (kit), ficha adulta de camiseta
+    "/itm/398259494251",  # mexico-third-2026: AI_RENDER -- imagen generada: maniquí en tienda irreal, bandera pegada en lugar del escudo, sin logo adidas
+    "/itm/158275836297",  # suecia-away-2026: WRONG_TEAM -- camiseta suplente gris Puma del Malmö FF (lo dice el título), ficha es la selección de Suecia
+    "FCKolnhomejersey2627_1.webp",  # koln-home-202627: WRONG_KIT -- camiseta roja a rayas finas, la local 26/27 es la blanca (fotos adidas 2-4)
+    "macron_400074240001_red_1.webp",  # gales-home-202526: NOT_JERSEY -- camiseta de RUGBY de Gales (Macron, Vodafone, plumas WRU)
+    "1027156_list.jpg",  # gales-home-202526: NOT_JERSEY -- camiseta de RUGBY de Gales (Macron, Vodafone, plumas WRU)
+    "/itm/284176063304",  # japon-away-2026: NO_PRODUCT -- solo la etiqueta y el cuello, no se ve la camiseta
+    "Camiseta_primera_equipacion_Chile_93-94_Rojo_JN3716_db21_model.tiff.jpg&feedId=92152&k=eefa5449fefc6e63ed35acd2fa608cef1df921d5",  # chile-home-2026: WRONG_KIT -- retro Chile 93/94 (titulo lo dice), ficha es local 2
+    "Camisola_Principal_93-94_do_Chile_Vermelho_JN3716_db21_model.tiff.jpg&feedId=92150&k=d125a4efdd0f93208395f31670131c93b5b1659d",  # chile-home-2026: WRONG_KIT -- retro Chile 93/94 (titulo lo dice), ficha es local 202
+    "1027157_list.jpg",  # gales-away-2026: NOT_JERSEY -- camiseta de RUGBY de Gales (Macron, Vodafone, plumas WRU)
+    "adidas_jz0265_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=cac99181e7b7bb0726fcefe08d3a6301a09b389e",  # argelia-home-2026: WRONG_KIT -- diseño marmolado con mangas verdes (Preshi/prematch), dist
+    "adidas_jz0265_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=cac99181e7b7bb0726fcefe08d3a6301a09b389e",  # argelia-home-2026: WRONG_KIT -- diseño marmolado con mangas verdes (Preshi/prematch), dist
+    "adidas_jz0265_1_apparel_photography_front_center_view_white.webp",  # argelia-home-2026: WRONG_KIT -- diseño marmolado con mangas verdes (Preshi/prematch), distinto de la local blanca 2026 (fotos 24-28)
+    "617Peh3FvxL._AC_SL1200_.jpg",  # dortmund-training-202526: WRONG_KIT -- camiseta de partido negra con franja amarilla 1&1 (visitante), no la de entrenamiento
+    "adidas_jp1667_white_4.webp",  # juventus-prematch-mural-202526: WRONG_KIT -- prematch de rayas pastel, la ficha es la variante mural gris (fotos 3-5)
+    "/itm/206538278086",  # juventus-prematch-mural-202526: WRONG_KIT -- prematch de rayas pastel, la ficha es la variante mural gris (fotos 3-5)
+    "/itm/188699131523",  # juventus-prematch-mural-202526: WRONG_KIT -- prematch de rayas pastel, la ficha es la variante mural gris (fotos 3-5)
+    "errea_fm816c00010frv_0.jpg&feedId=89044&k=2773894e7e3a55954b483236ecb3b7267f00ec2f",  # francia-training-202526: NOT_JERSEY -- camiseta Errea con MAIF de otro deporte (la FFF viste Nike), no es de futbol
+    "errea_fm816c00010frv_0.webp",  # francia-training-202526: NOT_JERSEY -- camiseta Errea con MAIF de otro deporte (la FFF viste Nike), no es de futbol
+    "Camisola_de_Treino_Terrace_Icons_da_AS_Roma_Branco_JM2127_21_model.jpg&feedId=92150&k=681c79bc001599c092e14f270084ced887a3d251",  # roma-training-202526: NOT_JERSEY -- chaqueta de chandal blanca con cierre (Terrace 
+    "Camisola_de_Fato_de_Treino_Inter_Miami_Originals_Branco_KG9610_21_model.jpg&feedId=92150&k=6bbd721917fe4015d5bb86dbbc127c824376157e",  # intermiami-training-202526: NOT_JERSEY -- chaqueta de chandal blanca con cierr
+    "/itm/358741585511",  # grecia-away-2026: WRONG_KIT -- camiseta blanca con detalles azules = la local de Grecia; la visitante 2026 es azul (fotos 1-6)
+    "/itm/820116366864",  # alnassr-home-202526: NOT_JERSEY -- conjunto camiseta + short (short azul con el 7 en primer plano)
+    "canterbury-qa009625bk3-blanc-de-blanc-cadmium-green-1.webp",  # irlanda-away-202526: NOT_JERSEY -- camiseta de rugby de Irlanda (Canterbury, Vodafone)
+    "/itm/117356287506",  # irlanda-away-202526: WRONG_TEAM -- título y escudo de Irlanda del Norte, ficha es Irlanda
+    "/itm/407132376246",  # mancity-away-202526: WRONG_KIT -- camiseta celeste = la local del City, ficha es away
+    "Retro_Soccer_Jersey_AC_Milan_Away_201314_1__1.webp",  # acmilan-retro-201314-away: WRONG_KIT -- camiseta dorada = la tercera 2013/14 del Milan, la away era blanca
+    "/itm/117225379894",  # acmilan-retro-199394-home: NO_PRODUCT -- foto/póster de Van Basten con escudos superpuestos, no es foto del producto
+    "/itm/227331204113",  # acmilan-retro-202425-third: NO_PRODUCT -- solo se ve la etiqueta de precio en una mano, no la camiseta
+    "Camiseta_segunda_equipacion_Ajax_24-25_Adolescentes_Azul_IT3493_21_model.jpg&feedId=92152&k=68a1f3bedfad837082d7c028ffb7cbaef5781d10",  # ajax-retro-202425-away: KIDS_MISMATCH -- niño con la camiseta, título dice Ad
+    "623_-_image1_-_ddr-1543.webp&feedId=89044&k=5cfc7f661fea272cc1aff5d11634cd2e775db3ed",  # alemania-retro-1974-home: WRONG_TEAM -- camiseta azul de la DDR (Alemania del Este), título lo confirma; ficha es Alemania
+    "623_-_image1_-_ddr-1543.webp&feedId=89032&k=5cfc7f661fea272cc1aff5d11634cd2e775db3ed",  # alemania-retro-1974-home: WRONG_TEAM -- camiseta azul de la DDR (Alemania del Este), título lo confirma; ficha es Alemania
+    "623_-_image1_-_ddr-1543.webp",  # alemania-retro-1974-home: WRONG_TEAM -- camiseta azul de la DDR (Alemania del Este), título lo confirma; ficha es Alemania
+    "/itm/407100224075",  # argentina-retro-1994-away: NO_PRODUCT -- captura de pantalla de celular con la camiseta chiquita
+    "/itm/358858900268",  # arsenal-retro-200405-away: NO_PRODUCT -- primer plano del logo de Nike, no se ve la camiseta
+    "/itm/137081106985",  # atleticomadrid-retro-202425-home: NOT_JERSEY -- top corto sin mangas (crop tank) con el diseño, no es la camiseta
+    "nike_fq2609-418-phsfm001.webp&feedId=89032&k=aba351d9aab5f2057f4e58e23edbcc94315c7604",  # barcelona-retro-202425-third: WRONG_KIT -- camiseta azul de entrenamiento Strike, no la tercera 24/25
+    "nike_fq2609-418-phsfm001.jpg",  # barcelona-retro-202425-third: WRONG_KIT -- camiseta azul de entrenamiento Strike, no la tercera 24/25
+    "/itm/318246617096",  # bayern-retro-202223-home: WRONG_KIT -- camiseta bordó con dorado = edición Oktoberfest, no la local roja con rayas blancas 22/23
+    "/itm/117218479816",  # brasil-retro-1994-home: NO_PRODUCT -- captura de foto de partido de Romario (marca FIFA), no es foto del producto
+    "/itm/318447398571",  # brasil-retro-1998-home: WRONG_TEAM -- camiseta blanca con TOTTI 20 en azul (Italia), ficha es Brasil local
+    "nike_dz0782-354-phsfm001.webp&feedId=89032&k=bbf898e6e076d4d5ff0e51e076ef2e59bb315af6",  # chelsea-retro-202324-third: WRONG_KIT -- camiseta de entrenamiento Strike con sponsor trivago, no la tercera 23/24 (Infinite
+    "nike_dz0782-354-phsfm001.webp",  # chelsea-retro-202324-third: WRONG_KIT -- camiseta de entrenamiento Strike con sponsor trivago, no la tercera 23/24 (Infinite Athlete)
+    "/itm/117123842883",  # dinamarca-retro-202223-home: NOT_JERSEY -- remera roja de algodón con estampado 'EM 2024', no es camiseta de fútbol
+    "614ElEbIqHL._AC_SL1500_.jpg",  # dortmund-retro-202425-away: WRONG_KIT -- camiseta amarilla = la local 24/25 del Dortmund, ficha es away (negra)
+    "/itm/407245261252",  # espana-retro-2006-away: WRONG_KIT -- camiseta roja (colores de local), la away 2006 era blanca
+    "/itm/117301962785",  # fiorentina-retro-199899-home: NOT_JERSEY -- conjunto camiseta + short (título 'Shirt Suit')
+    "adidas_jg8160-001a_white_1.webp&feedId=89044&k=7b494a45025c4b562db5545d9451d2534eb2381b",  # francia-retro-202425-away: NOT_JERSEY -- camiseta de rugby XV de Francia (Altrad), título lo confirma
+    "France1980_84awaylongjersey_1.webp",  # francia-retro-1980-home: WRONG_KIT -- camiseta blanca rayada = la visitante, la local de Francia es azul
+    "maillot_xv_de_france_1-photoroom.png-photoroom.webp&feedId=89044&k=93c9fd22845d9596a5912be96865e4e60e99bb85",  # francia-retro-202324-home: NOT_JERSEY -- camiseta de rugby XV de Francia (Le Coq Sportif, Altrad)
+    "/itm/168693350010",  # francia-retro-202324-home: NOT_JERSEY -- camiseta adidas de Francia = rugby (la de fútbol es Nike)
+    "adidas_jg3533-043a_dark-blue_1.webp&feedId=89044&k=996ec18f1a7d4cd0030063af18263c80023e5e91",  # francia-retro-202425-home: NOT_JERSEY -- camiseta de rugby XV de Francia (adidas, Altrad), título lo confirma
+    "umbro_885172-60-1_white_1.webp&feedId=89044&k=1ec91527e2775d4e43fe672f023133d8e2911a85",  # inglaterra-retro-202324-home: NOT_JERSEY -- camiseta de rugby de Inglaterra (Umbro, O2, rosa)
+    "umbro_885172-60-1_white_1.jpg",  # inglaterra-retro-202324-home: NOT_JERSEY -- camiseta de rugby de Inglaterra (Umbro, O2, rosa)
+    "/itm/167753269347",  # intermiami-retro-202324-home: WRONG_KIT -- camiseta negra = la away 23/24, la local es rosa
+    "/itm/287402100966",  # intermilan-retro-202324-away: WRONG_KIT -- camiseta gris/negra con naranja, la away 23/24 es blanca con banda azul
+    "/itm/257467130496",  # intermilan-retro-202324-away: WRONG_KIT -- camiseta gris/negra con naranja, la away 23/24 es blanca con banda azul
+    "/itm/406818421372",  # intermilan-retro-202425-home: WRONG_TEAM -- camiseta roja de Albania (Macron), ficha es Inter local
+    "/itm/206408455241",  # intermilan-retro-202324-third: WRONG_KIT -- camiseta negra con sponsor Qatar Airways (Total 90), no la tercera naranja 23/24
+    "macron_58571508_bleu_1.webp",  # italia-retro-202324-home: NOT_JERSEY -- polo Macron de algodón de la selección italiana de RUGBY, no camiseta de fútbol (Italia fútbol es adidas)
+    "/itm/407172264687",  # italia-retro-202324-home: WRONG_TEAM -- camiseta negra del Frattese 1928 (Zeus), ficha es Italia local
+    "Camiseta_tercera_equipacion_Juventus_24-25_Adolescentes_Azul_IY5249_21_model.jpg&feedId=92152&k=59e1b05c0b3fb3a90aabcb50c3b9abad64988026",  # juventus-retro-202425-third: KIDS_MISMATCH -- foto con dos niños y título
+    "Camiseta_calentamiento_Juventus_24-25_Adolescentes_Amarillo_JE4309_21_model.jpg&feedId=92152&k=c2b6e928b0bb5cb70c24c8c3029504b738294318",  # juventus-retro-202425-training: KIDS_MISMATCH -- foto de niño con conjunto
+    "/itm/278379677383",  # manutd-retro-202223-away: WRONG_KIT -- camiseta verde fluo = tercera 22/23, la visitante 22/23 es blanca
+    "/itm/407130473065",  # manutd-retro-202223-away-mens: WRONG_KIT -- camiseta verde fluo = tercera 22/23, la visitante 22/23 es blanca
+    "/itm/278412177727",  # manutd-retro-202324-away: WRONG_KIT -- blanca con franja roja/negra y sponsor Snapdragon (tercera 24/25), no la visitante verde a rayas 23/24 TeamViewer
+    "Camiseta_calentamiento_Manchester_United_24-25_Adolescentes_Negro_JD7146_21_model.jpg&feedId=92152&k=c3d29b625ff4c473d5f821b84c8f167c3f202f69",  # manutd-retro-202425-training: KIDS_MISMATCH -- foto de niño con conj
+    "/itm/318895545153",  # mexico-retro-2010-home: WRONG_KIT -- camiseta negra #4 = visitante 2010, la local 2010 es verde
+    "/itm/158155179594",  # portugal-retro-2010-away: WRONG_KIT -- camiseta roja con franja verde = la LOCAL 2010 (igual a n=9/10), ficha es visitante
+    "/itm/128021598273",  # psg-retro-201819-away: WRONG_KIT -- camiseta negra Neymar 10 (Jordan/tercera 18/19), la visitante 18/19 es blanca
+    "/itm/117029486211",  # psg-retro-201819-home: WRONG_KIT -- camiseta negra Jordan de Champions (tercera 18/19), ficha es local azul
+    "nike_21848753.webp&feedId=89044&k=e0e160e49abc04d0db2f74e1f5afa0768cba30c5",  # psg-retro-202425-home: NOT_JERSEY -- título dice camiseta oficial PSG HANDBALL 24/25, no es la de fútbol
+    "nike_21848753.webp",  # psg-retro-202425-home: NOT_JERSEY -- título dice maillot officiel PSG HANDBALL 24/25, no es la de fútbol
+    "nike_fq2625-013_black-rust-pink-rust-pink_1.webp&feedId=89032&k=01671f3e42993ac5abd5da441b165b1f75047bec",  # psg-retro-202425-third: WRONG_KIT -- buzo negro manga larga Strike Drill de entrenamiento, la tercera 24/
+    "nike_fq2625-013_black-rust-pink-rust-pink_1.jpg",  # psg-retro-202425-third: WRONG_KIT -- buzo negro manga larga Strike Drill de entrenamiento, la tercera 24/25 es rosa
+    "/itm/820035987553",  # qatar-retro-202223-home: WRONG_TEAM -- camiseta del PSG Mbappé 7 (título PSG), ficha es selección de Qatar
+    "Camiseta_segunda_equipacion_Real_Madrid_24-25_Adolescentes_Naranja_IT5177_21_model.jpg&feedId=92152&k=965e35a8d592804856d8fa5e723b8b21b1c1dab3",  # realmadrid-retro-202425-away: KIDS_MISMATCH -- foto de niño y títul
+    "/itm/158287204831",  # westham-retro-202425-away: WRONG_KIT -- título dice 3rd y la foto es la camiseta clara (tercera 24/25), la visitante 24/25 es negra
+    "/itm/116288096669",  # westham-retro-202324-home: WRONG_KIT -- dos camisetas blancas, la local 23/24 del West Ham es bordó
+    "/itm/176505922181",  # wolves-retro-202122-home: WRONG_KIT -- camiseta blanca ManBetX (no la local dorada 21/22, compárese n=10/11)
+    "/itm/800633754547",  # cruzazul-away-202526: NOT_JERSEY -- collage promocional con seis camisetas distintas de Cruz Azul, no se sabe cuál es la visitante
+    "/itm/358765808266",  # egipto-away-2026: WRONG_KIT -- camiseta roja Salah 10 = la LOCAL 2026 (igual a n=9), la visitante es blanca
+    "/itm/336651922296",  # ghana-home-2026: WRONG_KIT -- camiseta amarilla estampada, la local 2026 de Ghana es blanca (n=25/27-29)
+    "/itm/397681308783",  # botafogo-home-2026: NOT_JERSEY -- dos camisetas juntas (local + tercera) en un mismo anuncio
+    "/itm/178335321376",  # freiburg-away-202526: WRONG_KIT -- camiseta roja = la local del Freiburg, ficha es away (negra)
+    "/itm/146703376205",  # finlandia-retro-2009-home: WRONG_KIT -- camiseta azul = la visitante de Finlandia, ficha es home (blanca)
+    "/itm/298686653948",  # jordania-away-2026: WRONG_TEAM -- camiseta de Brasil marca Jordan (Nike), ficha es la selección de Jordania
+    "/itm/820028210194",  # jordania-away-2026: WRONG_TEAM -- camiseta de Brasil marca Air Jordan (Raphinha 11), ficha es la selección de Jordania
+    "4013715_main.jpg",  # jordania-home-2026: WRONG_TEAM -- camiseta del Bromma IF (club sueco) marca Jordan, ficha es la selección de Jordania
+    "/itm/385735127006",  # georgia-retro-2022-away: NOT_JERSEY -- dos camisetas distintas (roja y negra) en la misma foto
+    "/itm/188229444076",  # coreadelsur-goalkeeper-2026: NOT_JERSEY -- remera de algodón negra lifestyle (Premium T-Shirt), no camiseta de arquero
+    "/itm/236729030617",  # riverplate-training-2025: WRONG_KIT -- camiseta blanca con banda roja = la titular de River, ficha es de entrenamiento
+    "/itm/296973317522",  # astonvilla-home-kids: WRONG_KIT -- camiseta amarilla manga larga de arquero, ficha es la local bordó/celeste
+    "/itm/316694447809",  # chivas-home-kids: AI_RENDER -- mock-up de camiseta personalizada impresa '3D' rosa, no foto del producto real
+    "/itm/318843279987",  # newcastle-home-kids: WRONG_KIT -- camiseta azul = la tercera 25/26 (el título dice Third), ficha es la local a rayas
+    "/itm/287479488265",  # acmilan-retro-2007-home: WRONG_KIT -- camiseta blanca = la visitante del Milan, ficha es home rossonera
+    "/itm/407245289033",  # arsenal-retro-200102-away: WRONG_KIT -- camiseta roja Dreamcast = la local del Arsenal, ficha es away (dorada)
+    "/itm/178207757543",  # austria-retro-2002-away: WRONG_TEAM -- título y camiseta del Rapid Wien (club), ficha es la selección de Austria
+    "/itm/186039153265",  # brentford-retro-1989-home: NOT_JERSEY -- almohadón con forma de camiseta, no es una camiseta
+    "/itm/204446309289",  # brentford-retro-1989-home: NOT_JERSEY -- fundas para apoyacabezas de auto, no es una camiseta
+    "/itm/336274767318",  # chile-retro-1996-home: WRONG_TEAM -- camiseta azul de Universidad de Chile (club), ficha es la selección de Chile
+    "/itm/177274087140",  # chile-retro-1998-home: WRONG_TEAM -- camiseta azul de Universidad de Chile (club), ficha es la selección de Chile
+    "/itm/157982708708",  # clubamerica-retro-200607-home: NO_PRODUCT -- primer plano de la etiqueta sobre la tela, no se ve la camiseta
+    "/itm/286434156997",  # clubamerica-retro-202122-home: WRONG_KIT -- camiseta gris/negra = la alternativa, ficha es la local amarilla
+    "/itm/158051166584",  # dinamarca-retro-201213-home: WRONG_TEAM -- camiseta celeste del FC Nordsjaelland (club), ficha es la selección de Dinamarca
+    "/itm/318625158284",  # estadosunidos-retro-199495-home: WRONG_KIT -- camiseta 'denim' de estrellas = la visitante del 94, ficha es la local a rayas
+    "/itm/158282039150",  # italia-retro-200607-away: WRONG_TEAM -- camiseta del AC Milan final Champions 2007 (parches UCL), ficha es italia
+    "/itm/157164898302",  # japon-retro-201415-away: WRONG_KIT -- camiseta amarillo fluor de arquero, la away 2014 de Japon es blanca
+    "/itm/235030242408",  # newcastle-retro-199395-home: NOT_JERSEY -- alfombrilla de bar (bar mat runner), no es camiseta
+    "/itm/355311641897",  # psg-retro-1992-home: WRONG_KIT -- camiseta blanca Muller = la visitante del PSG, la local 92/93 es azul marino
+    "/itm/168220072133",  # senegal-retro-2002-home: WRONG_KIT -- camiseta verde Le Coq Sportif = la visitante 2002 de Senegal, la local es blanca
+    "/itm/336414957204",  # werderbremen-retro-201920-home: WRONG_KIT -- camiseta negra = la tercera 19/20 (igual a n=12/13), la local es verde
+    "/itm/389487781388",  # westham-retro-1999-third: WRONG_KIT -- camiseta bordo con mangas celestes Fila Dr Martens = la local, ficha es third
+    "/itm/236909919042",  # canada-retro-2017-away: WRONG_TEAM -- camiseta del club Impact Montreal (BMO), ficha es seleccion de canada
+    "/itm/157839864142",  # eslovenia-retro-201112-home: WRONG_TEAM -- camiseta violeta del club NK Maribor (Andjelkovic), ficha es seleccion de eslovenia
+    "/itm/158049739885",  # honduras-retro-202223-away: WRONG_TEAM -- camiseta roja del club Real Espana (Claro), ficha es seleccion de honduras
+    "/itm/277854758497",  # paraguay-retro-202425-away: WRONG_TEAM -- camiseta del club Cerro Porteno (ueno, tigo), ficha es seleccion de paraguay
+    "/itm/397705254609",  # paraguay-retro-2023-third: WRONG_TEAM -- camiseta del club Olimpia (escudo y tigo), ficha es seleccion de paraguay
+    "/itm/226715094524",  # bolivia-retro-2024-home: WRONG_TEAM -- camiseta celeste del club Bolivar (Suzuki), ficha es seleccion de bolivia
+    "/itm/267622121684",  # alemania-prematch-2026: WRONG_KIT -- pre-match visitante menta/azul, el resto de la ficha es la pre-match local roja/negra/dorada
+    "1054106_list.jpg",  # argelia-prematch-2026: WRONG_KIT -- pre-match segunda (estampado crema/verde), la ficha es la pre-match local blanca con mangas verdes
+    "Argentina2026WorldCupPre-MatchShirt_1.webp",  # argentina-prematch-2026: WRONG_KIT -- pre-match local blanca con rayos celestes/azules, la ficha es la pre-match visitante azul/negra
+    "/itm/168504992304",  # mexico-prematch-2026: WRONG_KIT -- pre-match visitante negra/verde, el resto de la ficha es la pre-match local verde estampada
+    "/itm/327300964300",  # barcelona-prematch-202526: WRONG_KIT -- pre-match away negra edicion Kobe Bryant, la ficha es la Academy Pro local morada/azul
+    "adidas-jd7410-bleu-marine-1.jpg&feedId=89032&k=04ce039c772a3353a7d53ed3a354ee79c9060a3b",  # parisfc-home-202526: NOT_JERSEY -- foto de un short azul solo, no camiseta
+    "adidas-jd7410-bleu-marine-1.jpg&feedId=89044&k=04ce039c772a3353a7d53ed3a354ee79c9060a3b",  # parisfc-home-202526: NOT_JERSEY -- foto de un short azul solo, no camiseta
+    "/itm/335525911724",  # santos-retro-2024-home: WRONG_TEAM -- camiseta del Santos Laguna de Mexico (Soriana, verde y blanca), ficha es Santos de Brasil
+    "/itm/406951283143",  # acmilan-retro-199900-away: WRONG_KIT -- camiseta negra/roja a rayas, la away del Milan 99/00 es blanca
+    "/itm/315927023786",  # alittihad-retro-201718-home: WRONG_TEAM -- titulo y foto son del Al-Ittihad Tripoli (Libia), roja con Afriqiyah; ficha es Al-Ittihad saudi
+    "/itm/277854759450",  # almirantebrown-retro-2024-away: WRONG_KIT -- bastones amarillos y negros = la local de Almirante Brown, ficha away
+    "/itm/178207752073",  # austria-retro-2008-away: WRONG_TEAM -- titulo y escudo del club Austria Wien (naranja Nike), ficha es la seleccion de Austria
+    "/itm/158120608057",  # austria-retro-1999-home: WRONG_TEAM -- titulo Austria Wien FAK, camiseta violeta del club; ficha es la seleccion de Austria
+    "/itm/117211217527",  # braga-retro-202223-home: WRONG_KIT -- camiseta dorada/beige con laterales negros, la local del Braga es roja
+    "/itm/318721803772",  # brasil-retro-201819-home: WRONG_KIT -- camiseta BLANCA de Brasil, la local es amarilla
+    "/itm/206151395653",  # brescia-retro-200304-home: WRONG_KIT -- camiseta blanca con V azul = la away del Brescia, ficha home (azul)
+    "/itm/128107599301",  # celtic-retro-202324-home: WRONG_KIT -- camiseta verde lisa con una franja blanca, no es la local a aros del Celtic
+    "/itm/157870709796",  # coreadelsur-retro-200203-away: WRONG_KIT -- camisetas ROJAS de Corea 2002 = la local, la away era blanca
+    "/itm/366574346949",  # cruzazul-retro-2024-home: AI_RENDER -- mock-up digital frente/espalda "ANY NAME 00" de camiseta custom 3D, no es foto real
+    "/itm/375275915909",  # estadosunidos-retro-2022-away: NO_PRODUCT -- primer plano de la etiqueta interior Nike, no se ve la camiseta
+    "/itm/188836375567",  # fiorentina-retro-199900-home: WRONG_KIT -- camiseta BLANCA Fila Toyota = la away de la Fiorentina, la local es violeta
+    "/itm/318248081378",  # galatasaray-retro-1998-home: WRONG_KIT -- camiseta NEGRA con detalles naranja, la local del Galatasaray es rojo/amarilla
+    "/itm/318740512438",  # gales-retro-2023-home: WRONG_TEAM -- titulo 'Wales Bonner Jamaica': camiseta amarilla de JAMAICA, no de Gales
+    "/itm/406793240910",  # ghana-retro-202223-home: WRONG_TEAM -- titulo y escudo del club Bibiani Goldstars (Ghana), ficha es la seleccion de Ghana
+    "/itm/355287627373",  # hullcity-retro-201617-away: NOT_JERSEY -- conjunto camiseta+short+medias, no camiseta sola
+    "/itm/236729242418",  # independiente-retro-202223-home: WRONG_KIT -- camiseta blanca = alternativa de Independiente, ficha es home (roja)
+    "/itm/158338014641",  # italia-retro-200203-away: WRONG_TEAM -- camiseta del AC Milan final Champions 2003 (Maldini, starball), no de Italia
+    "/itm/387289457446",  # japon-retro-2024-home: WRONG_TEAM -- camiseta del Thespa Gunma (Kelme, CAINZ), no de la seleccion de Japon
+    "/itm/287213127806",  # lagalaxy-retro-1997-third: NOT_JERSEY -- solo set de estampados (nombre/numero/sponsor Campos 9), no una camiseta
+    "/itm/198379870337",  # leicester-retro-201415-away: WRONG_TEAM -- camiseta amarilla Fly Emirates del Arsenal, titulo dice Arsenal
+    "/itm/224480514160",  # leicester-retro-201617-home: WRONG_KIT -- camiseta roja Puma = la visitante 2016/17, ficha es home (azul)
+    "/itm/264951509343",  # liverpool-retro-1978-away: WRONG_KIT -- camiseta roja Hitachi = la local del Liverpool, ficha es away
+    "/itm/800504662476",  # mancity-retro-201516-home: WRONG_KIT -- camiseta oscura con detalles turquesa = visitante 2015/16, ficha es home (celeste)
+    "/itm/820131581920",  # norwich-retro-201516-home: WRONG_KIT -- camiseta verde con rayas amarillas = la alternativa, la local de Norwich es amarilla
+    "/itm/318076866406",  # nuevazelanda-retro-202425-home: NOT_JERSEY -- camiseta de RUGBY de los All Blacks (adidas, Altrad)
+    "/itm/147521503737",  # nuevazelanda-retro-202425-home: NOT_JERSEY -- camiseta de RUGBY de los All Blacks (adidas, Altrad)
+    "/itm/326729037809",  # perugia-retro-202425-home: NOT_JERSEY -- camiseta de VOLEY del Sir Safety Perugia (Ishikawa 14), no de futbol
+    "/itm/315651050074",  # prestonnorthend-retro-2021-home: WRONG_KIT -- camiseta amarilla (codigo -719), la local del Preston es blanca
+    "/itm/128030852129",  # pumasunam-retro-2023-away: AI_RENDER -- mock-up digital de remera 3D personalizada, no foto real del producto
+    "/itm/366623989137",  # leon-retro-202425-away: AI_RENDER -- mock-up digital de remera 3D personalizada (mismo vendedor Custom Name 3D), no foto real
+    "/itm/178484239244",  # pumasunam-retro-2023-away: NO_PRODUCT -- imagen placeholder de foto rota, sin producto
+    "/itm/377465756728",  # pumasunam-retro-202324-away: AI_RENDER -- mock-up digital con 'ANY NAME 00', no es foto del producto
+    "/itm/174509700126",  # racingclub-retro-201314-away: WRONG_TEAM -- camiseta del RC Lens, ficha es Racing Club
+    "/itm/277854759444",  # racingclub-retro-2023-home: WRONG_TEAM -- Racing de Cordoba (GEA, Bancor), ficha es Racing Club Avellaneda
+    "/itm/266920231211",  # racingclub-retro-202122-third: WRONG_TEAM -- camiseta del RC Lens (Auchan), ficha es Racing Club
+    "/itm/134922098478",  # rangers-retro-201819-away: WRONG_KIT -- camiseta azul = la local del Rangers, ficha es away
+    "/itm/155883201701",  # sanjoseearthquakes-retro-2020-home: NOT_JERSEY -- gorra New Era snapback, no camiseta
+    "/itm/168260072179",  # stlouiscity-retro-202425-home: WRONG_KIT -- camiseta blanca = la away 24/25 (identica a las fichas away), local es roja
+    "/itm/257291460256",  # stlouiscity-retro-202425-home: WRONG_KIT -- camiseta blanca = la away 24/25 (identica a las fichas away), local es roja
+    "/itm/188801578431",  # tottenham-retro-2023-away: WRONG_KIT -- camiseta gris/taupe = la third 23/24 (titulo dice 3rd kit), away 23/24 es azul marino
+    "/itm/366118101783",  # venezia-retro-202223-away: WRONG_KIT -- celeste con mangas negras = la third 21/22 (igual a n=23/24), away 22/23 es blanca
+    "/itm/398313735643",  # venezuela-retro-202425-away: WRONG_TEAM -- camiseta del club Academia Puerto Cabello (titulo), ficha es la seleccion de Venezuela
+    "/itm/178393947318",  # watford-retro-202122-home: NO_PRODUCT -- captura de pantalla de celular (barra de estado, '1 of 5') con la camiseta diminuta
+    "/itm/336596438723",  # austria-home-kids: NOT_JERSEY -- conjunto camiseta+short ('KIDS SET'), no camiseta sola
+    "/itm/366246587112",  # leon-away-kids: NOT_JERSEY -- camiseta + gorra juntas (varios articulos), titulo 'Jersey & Hat'
+    "/itm/178386866333",  # mancity-home-202627: WRONG_KIT -- camiseta gris con banda dorada, no es la local celeste del City
+    "/itm/336814470584",  # marruecos-away-2026: KIDS_MISMATCH -- conjunto infantil camiseta+short (boy size 16 set), ficha adulto
+    "/itm/336642383627",  # ghana-away-2026: WRONG_KIT -- camiseta blanca = la local de Ghana; la visitante es amarilla (fotos 5 y 7)
+    "/itm/188881396027",  # clubtijuana-home-202526: AI_RENDER -- mock-up digital de personalizacion (Any Name 00), no foto real
+    "4002759_list.jpg",  # intermilan-away-202627: NOT_JERSEY -- camisa de beisbol con botones (NSW Surf Baseball Shirt), no camiseta de futbol
+    "nike-iu4543-330-gorge-green-6a033e2eeea1c-1.jpg&feedId=89044&k=d507ad8a82797f34a27177b5bbfda525bbf943ea",  # sudafrica-home-202627: NOT_JERSEY -- camiseta de RUGBY de los Springboks (cuello polo, emblema springbok)
+    "nike-ib6784-331-gorge-green-6a2fb9fe99f5c-1.webp",  # sudafrica-home-202627: NOT_JERSEY -- camiseta de RUGBY de los Springboks (FNB, emblema springbok)
+    "1045513_list.jpg",  # sudafrica-home-202627: NOT_JERSEY -- camiseta de RUGBY Springboks, el titulo lo dice (South Africa Springboks Home Replica)
+    "/itm/407190629885",  # leeds-third-202627: NO_PRODUCT -- captura de pantalla de una pagina web con miniaturas
+    "/itm/407222766778",  # chelsea-away-202627: WRONG_KIT -- camiseta azul = la local del Chelsea; la visitante 26/27 es negra (fotos 9,11,12)
+    "adidas-km2005-actpnk-6a6926d56e90d-1.jpg&feedId=89032&k=93d9343325f8025e9bbc4b8cff08918f5019ad7f",  # lyon-away-202627: WRONG_TEAM -- titulo y foto son de OL Lyonnes (club femenino, escudo y sponsor Mastercard disti
+    "adidas-km2005-actpnk-6a6926d56e90d-1.webp",  # lyon-away-202627: WRONG_TEAM -- titulo y foto son de OL Lyonnes (club femenino, escudo y sponsor Mastercard distintos), no del Olympique Lyonnais
+    "/itm/189020334005",  # tottenham-away-202627: WRONG_KIT -- camiseta violeta a rayas verticales en bolsa = la tercera 26/27; la visitante es azul marino con lineas diagonales
+    "camiseta-nike-sporting-portugal-tercera-equipacion-120-aniversario-2026-2027-green-1.jpg",  # portugal-third-202627: WRONG_TEAM -- es del Sporting CP (titulo Sporting Portugal 120 aniversario, sponsor Super Bock), f
+    "259594_1.jpg",  # westham-training-202627: WRONG_TEAM -- camiseta del Everton (escudo Everton, sponsor CMC Markets), ficha es West Ham
+    "/itm/267768897902",  # swansea-retro-2017-home: WRONG_KIT -- camiseta granate/azul marino = la visitante 17/18; la local del Swansea es blanca
+    "/itm/377442404285",  # bolivia-retro-2024-away: WRONG_TEAM -- camiseta del club Always Ready, no de la seleccion de Bolivia
+    "/itm/227474416890",  # botswana-retro-202122-third: WRONG_TEAM -- camiseta del club Township Rollers, no de la seleccion de Botswana
+    "/itm/398196822285",  # brasil-retro-2002-home: NOT_JERSEY -- mini camiseta de coleccion en vitrina, no es una camiseta para usar
+    "/itm/278062879781",  # clubtijuana-retro-202122-home: WRONG_KIT -- camiseta negra (titulo dice 3rd), la local de Tijuana es roja/negra a rayas
+    "/itm/327138761932",  # georgia-retro-2023-third: WRONG_TEAM -- camiseta de Atlanta United (MLS), ficha es la seleccion de Georgia
+    "/itm/267534994765",  # israel-retro-200001-home: WRONG_TEAM -- camiseta del club Maccabi Netanya, no de la seleccion de Israel
+    "/itm/800597531482",  # jordania-retro-2022-home: WRONG_TEAM -- camiseta del club Al-Wehdat, no de la seleccion de Jordania
+    "/itm/137421114557",  # myanmar-retro-2012-home: WRONG_TEAM -- camiseta del club Yangon United, no de la seleccion de Myanmar
+    "/itm/405180569315",  # acmilan-retro-201718-home: WRONG_KIT -- camiseta negra (Lapadula 9), no la local rojinegra a rayas
+    "/itm/196445461732",  # australia-retro-202425-home: NOT_JERSEY -- camiseta amarilla Asics de rugby (Wallabies), no la de futbol Nike de Australia
+    "/itm/336587245711",  # belgica-retro-201213-away: WRONG_TEAM -- camiseta del club Standard Lieja (Joma), no de la seleccion de Belgica
+    "/itm/336368157015",  # belgica-retro-201819-third: WRONG_TEAM -- camiseta del club Standard Lieja (New Balance), no de la seleccion de Belgica
+    "/itm/389705785996",  # chelsea-retro-201920-home: WRONG_KIT -- camiseta gris/blanca de Chelsea, no la local azul
+    "/itm/137699206992",  # chile-retro-2017-away: WRONG_TEAM -- camiseta del club Colo-Colo (Under Armour), no de la seleccion de Chile
+    "/itm/137428715472",  # escocia-retro-2020-home: WRONG_TEAM -- camiseta del club Hibernian (verde, Macron), no de la seleccion de Escocia
+    "/itm/800651673984",  # estadosunidos-retro-2015-home: WRONG_KIT -- camiseta azul degradada (suplente), la local de USA es blanca
+    "/itm/226944134120",  # gales-retro-201618-away: WRONG_TEAM -- camiseta del Cardiff City (Malaysia), no de la seleccion de Gales
+    "/itm/407034608865",  # japon-retro-202122-home: WRONG_TEAM -- camiseta del club Urawa Red Diamonds, no de la seleccion de Japon
+    "/itm/325694289472",  # peru-retro-1999-away: WRONG_TEAM -- camiseta del club Alianza Lima, no de la seleccion de Peru
+    "/itm/325694150251",  # peru-retro-2019-away: WRONG_TEAM -- camiseta de un club peruano (titulo Atletico Grau, sponsor Caja Huancayo), no de la seleccion
+    "/itm/357674508652",  # peru-retro-2020-away: WRONG_TEAM -- camiseta del club Alianza Lima (negra Nike), no de la seleccion de Peru
+    "/itm/357703680788",  # peru-retro-2021-away: WRONG_TEAM -- camiseta del club Sporting Cristal, no de la seleccion de Peru
+    "/itm/178459163933",  # realmadrid-retro-1999-away: WRONG_KIT -- camiseta blanca Teka = la local del Madrid, ficha es visitante
+    "/itm/188489128738",  # realsociedad-retro-2014-away: WRONG_KIT -- rayas azul/blanco = la local de la Real Sociedad, ficha es visitante
+    "/itm/188836387017",  # saopaulo-retro-1992-away: WRONG_KIT -- camiseta blanca con franja tricolor = la local del Sao Paulo, ficha es visitante
+    "/itm/800548014830",  # sunderland-retro-200102-home: WRONG_KIT -- camiseta azul/roja (la misma visitante de n=5), la local del Sunderland es a rayas rojiblancas
+    "/itm/267430753823",  # turquia-retro-2021-away: WRONG_TEAM -- camiseta del club Kocaelispor, no de la seleccion de Turquia
+    "/itm/193494698019",  # turquia-retro-201819-home: WRONG_TEAM -- camiseta del Galatasaray, no de la seleccion de Turquia
+    "/itm/304174318670",  # turquia-retro-201920-home: WRONG_TEAM -- camiseta del club Goztepe (rayas rojo/amarillo), no de la seleccion de Turquia
+    "/itm/206299265157",  # ucrania-retro-2012-away: WRONG_KIT -- camiseta amarilla = la local de Ucrania, ficha es visitante (azul)
+    "/itm/356355371931",  # ucrania-retro-2024-home: WRONG_TEAM -- camiseta del club Nyva Ternopil, no de la seleccion de Ucrania
+    "/itm/237007941212",  # china-retro-2014-home: WRONG_TEAM -- camiseta del club Shanghai Shenhua (azul), no de la seleccion de China
+    "/itm/178500626771",  # mancity-retro-201920-home: WRONG_KIT -- camiseta gris plateada, no la local celeste del City
+    "/itm/800686479002",  # colombia-retro-2016-home: WRONG_KIT -- camiseta blanca, la local de Colombia es amarilla
 ]
 
 
