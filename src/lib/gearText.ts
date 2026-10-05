@@ -69,6 +69,7 @@ const TERMS: Record<string, Record<HubLocale, string>> = {
   "calcetines de futbol": { es: "Calcetines de fútbol", en: "Football socks", pt: "Meias de futebol", fr: "Chaussettes de football", it: "Calzettoni da calcio" },
   "calcetines tecnicos antideslizantes": { es: "Calcetines técnicos antideslizantes", en: "Non-slip technical socks", pt: "Meias técnicas antiderrapantes", fr: "Chaussettes techniques antidérapantes", it: "Calzettoni tecnici antiscivolo" },
   "camiseta": { es: "Camiseta", en: "Shirt", pt: "Camisola", fr: "Maillot", it: "Maglia" },
+  "camiseta de aficionado": { es: "Camiseta de aficionado", en: "Fan T-shirt", pt: "T-shirt de adepto", fr: "T-shirt de supporter", it: "T-shirt da tifoso" },
   "camiseta de compresion": { es: "Camiseta de compresión", en: "Compression shirt", pt: "Camisola de compressão", fr: "Maillot de compression", it: "Maglia a compressione" },
   "camiseta de manga larga": { es: "Camiseta de manga larga", en: "Long-sleeve shirt", pt: "Camisola de manga comprida", fr: "Maillot manches longues", it: "Maglia a maniche lunghe" },
   "camiseta interior de manga larga": { es: "Camiseta interior de manga larga", en: "Long-sleeve base layer", pt: "Camisola interior de manga comprida", fr: "Sous-maillot manches longues", it: "Maglia intima a maniche lunghe" },

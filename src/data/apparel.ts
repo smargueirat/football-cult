@@ -21,7 +21,7 @@
 // Gigasport quedan afuera de esta primera carga (sin categoría de ropa
 // confiable verificada todavía).
 export interface ApparelOffer {
-  store: "FootStoreES" | "SportIsGoodES" | "FootStoreFR" | "SportIsGoodFR";
+  store: "FootStoreES" | "SportIsGoodES" | "FootStoreFR" | "SportIsGoodFR" | "Reebok DE";
   price: number;
   priceMax?: number;
   shipping: number;
@@ -210022,6 +210022,546 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
     ],
   },
   {
+    id: "reebok-camiseta-de-aficionado-reebok-alemania-negro",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Alemania - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 21.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295521&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272689_168113_FR_Model_eCom.jpg%3Fv%3D1773397687&feedId=112608&k=39b2d28d3b342683e8bf93fa5e6dc33d4361a15c",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-argentina-azul",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Argentina - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295216&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272691_168115_FR_Model_eCom.jpg%3Fv%3D1773397490&feedId=112608&k=548c64c0eb464329ddd3f58ad4ff2fa4b681e6c5",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-brasil-amarillo",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Brasil - Amarillo",
+    colour: "Amarillo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295421&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272681_168105_FR_Model_eCom.jpg%3Fv%3D1773398777&feedId=112608&k=bdc6324a9581f53cfa17c37f2ee5d6ee55df4210",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-canada-rojo",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Canadá - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295595&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272692_168116_FR_Model_eCom.jpg%3Fv%3D1773397380&feedId=112608&k=d684f602ae521e8e01f27f0e905765423eb2c808",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-espana-rojo",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok España - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295609&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272682_168106_FR_Model_eCom.jpg%3Fv%3D1773398272&feedId=112608&k=497a309a0a2d79704e2b6439d1c66c54587bb72c",
+        sizes: ["2XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-estados-unidos-azul",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Estados Unidos - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295548&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272680_168104_FR_Model_eCom.jpg%3Fv%3D1773399398&feedId=112608&k=007b8ffe58b36f3ffd5609b7b545fea39db8e1fa",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-francia-azul",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Francia - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44269078541&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272688_168112_FR_Model_eCom.jpg%3Fv%3D1773397749&feedId=112608&k=c6702a6123beebbf933ffeda89090af48b34d797",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-inglaterra-blanco",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Inglaterra - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295588&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272685_168109_FR_Model_eCom.jpg%3Fv%3D1773398135&feedId=112608&k=01fe6a5946bd84c35ed17c6e0649854d332d33ea",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-italia-azul",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Italia - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295393&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272686_168110_FR_Model_eCom.jpg%3Fv%3D1773398064&feedId=112608&k=464dbcfc564f6d2267fefd31461aa754b41f6b86",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-paises-bajos-naranja",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Países Bajos - Naranja",
+    colour: "Naranja",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295335&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272684_168108_FR_Model_eCom.jpg%3Fv%3D1773398209&feedId=112608&k=8d72e9d183eb36bc3ed29c9da508d01a7a54c6eb",
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-polonia-blanco",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Polonia - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295282&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272687_168111_FR_Model_eCom.jpg%3Fv%3D1773397988&feedId=112608&k=fa04914cccf99d6d4e113e7f6023630753e88ea4",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-de-aficionado-reebok-portugal-rojo",
+    brand: "Reebok",
+    model: "Camiseta de aficionado Reebok Portugal - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 17.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295365&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272690_168114_FR_Model_eCom.jpg%3Fv%3D1773397627&feedId=112608&k=1f53278abac89a57483b4fc4b30693e88b8fc2f2",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-reebok-id-football-sidewinder-blanco",
+    brand: "Reebok",
+    model: "Camiseta Reebok ID Football Sidewinder - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 30.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45803189331&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100267562_165865_FR_Model_eCom.jpg%3Fv%3D1787755505&feedId=112608&k=1332f9a06da1434d88480250d5ede6e40dcc3c6b",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-reebok-id-football-sidewinder-negro",
+    brand: "Reebok",
+    model: "Camiseta Reebok ID Football Sidewinder - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 30.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45803189318&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100267568_165865_FR_Model_eCom.jpg%3Fv%3D1787754920&feedId=112608&k=962ca0c3e4ed664eebdfc2c0494c400d7f065e77",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-reebok-sidewinder-negro",
+    brand: "Reebok",
+    model: "Camiseta Reebok Sidewinder - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 35.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45690322579&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100273534_166597_FR_Model_eCom.jpg%3Fv%3D1787148514&feedId=112608&k=7e3a164d9b35c0a34dacf1a8e93ddea4a1462bef",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-reebok-street-sport-negro",
+    brand: "Reebok",
+    model: "Camiseta Reebok Street Sport - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 39.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44031998471&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100254020_155105_FR_Model_eCom.jpg%3Fv%3D1771597806&feedId=112608&k=d41e1278a0381adf69df2df2d7076d35d324fb9d",
+        sizes: ["2XS", "XS", "S", "M", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-camiseta-reebok-street-sport-rojo",
+    brand: "Reebok",
+    model: "Camiseta Reebok Street Sport - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 39.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44031998432&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100254022_155105_FR_Model_eCom.jpg%3Fv%3D1771599890&feedId=112608&k=f9e620d292476f1ac02e0200b5af1cc10e100c7e",
+        sizes: ["2XS", "XS", "M", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-chaqueta-de-chandal-reebok-football-verde",
+    brand: "Reebok",
+    model: "Chaqueta de chándal Reebok Football - Verde",
+    colour: "Verde",
+    type: "jacket",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 60.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44379216056&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FSOCCERTRACKJACKET_1.jpg%3Fv%3D1775126785&feedId=112608&k=172d84f4cf78c0c4423a60d17b2e2ea69bb1e73c",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-chaqueta-de-chandal-reebok-id-football-negro",
+    brand: "Reebok",
+    model: "Chaqueta de chándal Reebok ID Football - Negro",
+    colour: "Negro",
+    type: "jacket",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 28.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43993584584&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100254284_155320_FR_Model_eCom.jpg%3Fv%3D1770918341&feedId=112608&k=0d7e75e69035c1c18123e195d55af6be00ae5062",
+        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-corto-de-mujer-reebok-sidewinder-gris",
+    brand: "Reebok",
+    model: "Pantalón corto de mujer Reebok Sidewinder - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 31.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45373835557&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100273532_166589_FR_Model_eCom.jpg%3Fv%3D1784897852&feedId=112608&k=a964f040df116adf91b7d6abe354bf92e3fb506c",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-corto-reebok-id-football-gris",
+    brand: "Reebok",
+    model: "Pantalón corto Reebok ID Football - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 20.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44215295472&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100255060_155672_FR_Model_eCom.jpg%3Fv%3D1773402886&feedId=112608&k=ecf50b2ecb67dec7dc11899244d49eadc758ee25",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-corto-reebok-id-football-negro",
+    brand: "Reebok",
+    model: "Pantalón corto Reebok ID Football - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 24.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43993584745&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100255057_155672_FR_Model_eCom.jpg%3Fv%3D1770921932&feedId=112608&k=e8d1f0e684691cd60e4397aefee91c9f3c00556d",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-corto-reebok-sidewinder-blanco",
+    brand: "Reebok",
+    model: "Pantalón corto Reebok Sidewinder - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 31.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45373835485&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100269152_166578_FR_Model_eCom.jpg%3Fv%3D1784897520&feedId=112608&k=e6cad8fc36c9ba2ac83c41bc509685a7728af34f",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-corto-reebok-sidewinder-negro",
+    brand: "Reebok",
+    model: "Pantalón corto Reebok Sidewinder - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 31.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45256486586&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100273527_166578_FR_Model_eCom.jpg%3Fv%3D1783096781&feedId=112608&k=661621d9fb34a6678cd581b3d19938d5b2d888e4",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-de-entrenamiento-reebok-football-verde",
+    brand: "Reebok",
+    model: "Pantalón de entrenamiento Reebok Football - Verde",
+    colour: "Verde",
+    type: "pants",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 54.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44379216060&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FSOCCERTRACKPANTS_1.jpg%3Fv%3D1775127146&feedId=112608&k=a6113a1d2793f38ec747a44751dd311eee9fbe2c",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-pantalon-de-entrenamiento-reebok-id-football-negro",
+    brand: "Reebok",
+    model: "Pantalón de entrenamiento Reebok ID Football - Negro",
+    colour: "Negro",
+    type: "pants",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 22.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43993584547&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100254205_155286_FR_Model_eCom.jpg%3Fv%3D1770918220&feedId=112608&k=910ebaaadd6410ea4f99dc5d555db6f4491c02d1",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-sudadera-con-capucha-reebok-sidewinder-negro",
+    brand: "Reebok",
+    model: "Sudadera con capucha Reebok Sidewinder - Negro",
+    colour: "Negro",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 59.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45670580030&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100269160_166583_FR_Model_eCom.jpg%3Fv%3D1787060892&feedId=112608&k=aa97ae355b9f2e2c70ca648f812db368849c6e55",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-sudadera-de-cuello-redondo-reebok-sidewinder-blanco",
+    brand: "Reebok",
+    model: "Sudadera de cuello redondo Reebok Sidewinder - Blanco",
+    colour: "Blanco",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 75.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45373835564&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100272910_166584_FR_Model_eCom_fadc3083-d694-496c-a059-be86b2e7ab46.jpg%3Fv%3D1784816576&feedId=112608&k=c6b5bf7c4d5b9d310b83e4171df3b5802dd5e107",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-sudadera-de-cuello-redondo-reebok-sidewinder-gris",
+    brand: "Reebok",
+    model: "Sudadera de cuello redondo Reebok Sidewinder - Gris",
+    colour: "Gris",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 52.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45373835318&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100269173_166595_FR_Model_eCom.jpg%3Fv%3D1784894374&feedId=112608&k=7f6314b86dc8c06a7488d5ec677707a1ed30df0f",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "reebok-top-de-entrenamiento-con-1-4-de-cremallera-de-mujer-reebok-id-football-gris",
+    brand: "Reebok",
+    model: "Top de entrenamiento con 1/4 de cremallera de mujer Reebok ID Football - Gris",
+    colour: "Gris",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "Reebok DE",
+        price: 35.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45670580023&a=3013769&m=121508",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100267577_165871_FR_Model_eCom.jpg%3Fv%3D1787061044&feedId=112608&k=4e6def25d6082a2d7a9066ce100fe874a354fb16",
+        sizes: ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
     id: "reece-australia-calcetines-reece-australia-springs-amarillo",
     brand: "Reece Australia",
     model: "Calcetines Reece Australia Springs - Amarillo",
@@ -212267,6 +212807,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "softee-calcetines-de-futbol-softee-negro",
     brand: "Softee",
@@ -213185,9 +213728,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "stanno-calcetines-de-futbol-stanno-uni-ii-rojo",
     brand: "Stanno",
@@ -217586,6 +218126,9 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-pro-essential-amarillo",
     brand: "Uhlsport",
@@ -218522,9 +219065,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-pro-essential-verde-2",
     brand: "Uhlsport",
@@ -223934,6 +224474,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-uhlsport-offense-23-poly-azul-2",
     brand: "Uhlsport",
@@ -224880,9 +225423,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "uhlsport-conjunto-de-camisa-y-pantalon-corto-uhlsport-score-26-azul",
     brand: "Uhlsport",
@@ -230428,6 +230968,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-chandal-uhlsport-score-classic-negro-2",
     brand: "Uhlsport",
@@ -231562,9 +232105,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "uhlsport-polo-uhlsport-essential-negro",
     brand: "Uhlsport",
@@ -236275,6 +236815,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "under-armour-pantalon-corto-under-armour-challenger-core-negro",
     brand: "Under Armour",
@@ -237248,9 +237791,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "under-armour-pantalon-de-chandal-under-armour-velociti-storm-gris-2",
     brand: "Under Armour",

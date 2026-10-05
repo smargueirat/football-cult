@@ -4300,7 +4300,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "GigasportCH",
-        price: 30.87,
+        price: 30.16,
         shipping: 3.95,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44858731082&a=3013769&m=22149",

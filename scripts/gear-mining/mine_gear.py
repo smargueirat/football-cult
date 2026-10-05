@@ -695,6 +695,106 @@ def mine_apparel_type(type_key, category_kw, out_list):
     out_list.extend(tmp)
     print(f'{type_key}:', len(tmp))
 
+# ---------- REEBOK DE (Awin 121508, aprobada 2026-10-04) ----------
+# Feed en alemán, UNA fila por talla, categorías VACÍAS: se clasifica por
+# product_name. Solo la ropa de fútbol (líneas Sidewinder / ID Football y
+# las remeras de aficionado con bandera); las botas ("Fußballschuhe") van
+# por boots-mining y las camisetas de club (Hibernian, Hansa Rostock...)
+# por catalog-mining. El modelo se arma como "<prefijo del glosario>
+# Reebok <línea> - <color>" para que gearText.ts lo traduzca.
+REEBOK_FOOTBALL_RE = re.compile(r'fu(ß|ss)ball|football', re.I)
+REEBOK_SKIP_RE = re.compile(r'schuhe|sneaker|basketball|heimtrikot|ausw[äa]rts|torwart|pre-match', re.I)
+# Primer patrón que encaja gana: (regex, type, prefijo castellano del glosario)
+REEBOK_TYPES = [
+    (r'hoodie', 'sweatshirt', 'Sudadera con capucha'),
+    (r'sweatshirt', 'sweatshirt', 'Sudadera de cuello redondo'),
+    (r'viertelrei(ß|ss)verschluss', 'sweatshirt', 'Top de entrenamiento con 1/4 de cremallera'),
+    (r'trainingsjacke', 'jacket', 'Chaqueta de chándal'),
+    (r'trainingshose', 'pants', 'Pantalón de entrenamiento'),
+    (r'shorts?\b', 'shorts', 'Pantalón corto'),
+    (r'shirt|trikot', 'tshirt', 'Camiseta'),
+]
+# "Argentinien Fußball T-Shirt": remera de algodón de aficionado con
+# bandera, NO la camiseta de la selección (Reebok no viste a ninguna).
+REEBOK_FAN_RE = re.compile(r'^Reebok - (?!ID\b|Street\b)(\w+) (?:Fu(?:ß|ss)ball|Football)[- ]?(?:T-Shirt|Shirt|trikot)', re.I)
+REEBOK_COUNTRIES = {'argentinien': 'Argentina', 'brasilien': 'Brasil', 'deutschland': 'Alemania',
+                    'england': 'Inglaterra', 'france': 'Francia', 'italien': 'Italia', 'kanada': 'Canadá',
+                    'niederlande': 'Países Bajos', 'polska': 'Polonia', 'spanien': 'España',
+                    'usa': 'Estados Unidos'}
+# Color dominante = el primero que nombra el feed ("BLACK/DIGITAL LIME" -> Negro).
+REEBOK_COLOURS = [('black', 'Negro'), ('white', 'Blanco'), ('grey', 'Gris'), ('gray', 'Gris'),
+                  ('navy', 'Azul'), ('blue', 'Azul'), ('red', 'Rojo'), ('cherry', 'Rojo'),
+                  ('green', 'Verde'), ('lime', 'Verde'), ('yellow', 'Amarillo'), ('orange', 'Naranja'),
+                  ('gold', 'Dorado'), ('pink', 'Rosa'), ('purple', 'Violeta'), ('brown', 'Marrón')]
+
+
+def _reebok_colour(raw):
+    hits = [(m.start(), es) for en, es in REEBOK_COLOURS for m in [re.search(en, raw or '', re.I)] if m]
+    return min(hits)[1] if hits else (raw or 'N/D').strip().title()
+
+
+def reebok_classify(title):
+    """product_name -> (type, model sin color) o None si no es ropa de fútbol."""
+    if not REEBOK_FOOTBALL_RE.search(title) or REEBOK_SKIP_RE.search(title) or KIDS_RE.search(title):
+        return None
+    m = REEBOK_FAN_RE.match(title)
+    if m:
+        country = REEBOK_COUNTRIES.get(m.group(1).lower(), m.group(1))
+        return 'tshirt', f'Camiseta de aficionado Reebok {country}'
+    for rx, typ, prefix in REEBOK_TYPES:
+        if re.search(rx, title, re.I):
+            break
+    else:
+        return None
+    if re.search(r'damen', title, re.I):
+        prefix += ' de mujer'
+    line = 'ID Football' if re.search(r'\bID (Football|Fu(ß|ss)ball)', title, re.I) else ''
+    if re.search(r'sidewinder', title, re.I):
+        line = (line + ' Sidewinder').strip()
+    if re.search(r'street sport', title, re.I):
+        line = 'Street Sport'
+    return typ, f'{prefix} Reebok {line or "Football"}'
+
+
+def mine_reebok(out_list):
+    fname = 'REEBOK_DE.csv'
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print('Reebok DE: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            title = row.get('product_name') or ''
+            cls = reebok_classify(title)
+            if not cls or not parse_price(row.get('search_price')):
+                continue
+            key = row.get('parent_product_id') or re.sub(r',\s*Größe:.*$', '', title)
+            groups.setdefault(key, (cls, []))[1].append(row)
+    for (typ, model), rows in groups.values():
+        rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
+        price = parse_price(rep.get('search_price'))
+        price_max = max(parse_price(r.get('search_price')) for r in rows)
+        colour = _reebok_colour(rep.get('colour'))
+        entry = {
+            'store': 'Reebok DE', 'brand': 'Reebok', 'model': f'{model} - {colour}',
+            'colour': colour, 'type': typ,
+            # delivery_cost del feed es falso (0/vacío): reebok.eu cobra 5,99
+            # por debajo de 50 EUR y envía gratis desde 50 (medido 2026-10-05).
+            'price': price, 'shipping': 0 if price >= 50 else 5.99,
+            'currency': 'EUR',
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
+            'sizes': sorted({r['Fashion:size'].strip() for r in rows if (r.get('Fashion:size') or '').strip()}, key=size_sort_key),
+            'eans': _eans(rows, 'product_GTIN'),
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+            entry['sizePrices'] = sorted(
+                ({'size': r['Fashion:size'].strip(), 'price': parse_price(r.get('search_price')), 'url': r.get('aw_deep_link')}
+                 for r in rows if (r.get('Fashion:size') or '').strip()),
+                key=lambda sp: size_sort_key(sp['size']))
+        out_list.append(entry)
+    print('Reebok DE:', len(groups))
+
 
 if __name__ == '__main__':
     print('=== GUANTES DE ARQUERO ===')
@@ -740,6 +840,7 @@ if __name__ == '__main__':
     # sección Entrenamiento de abajo (type 'petos').
     for kw in ('Sous maillot', 'Legging', 'Cuissard', 'Manchon jambe'):
         mine_apparel_type('baselayer', kw, apparel_results)
+    mine_reebok(apparel_results)
 
     print('=== ENTRENAMIENTO ===')
     mine_training(training_results)
