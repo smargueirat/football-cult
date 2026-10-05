@@ -31,6 +31,9 @@ TEAM_PATTERNS = {
     "westbrom": r"west bromwich albion|\bwest brom\b|\bwba\b",
     "huddersfield": r"huddersfield town|\bhuddersfield\b",
     "mkdons": r"\bmk dons\b",
+    "hibernian": r"\bhibernian\b|\bhibs\b",
+    "hansarostock": r"hansa rostock",
+    "charlton": r"charlton athletic|\bcharlton\b",
     "birminghamcity": r"birmingham city",
     "prestonnorthend": r"preston north end|\bpreston\b",
     "peterboroughunited": r"peterborough united",
@@ -425,7 +428,7 @@ TEAM_PATTERNS = {
 TYPE_PATTERNS = {
     # goalkeeper se chequea primero: títulos como "Maillot de portero
     # local" contienen "local" pero son de arquero, no de titular.
-    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere|goleiro",
+    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere|goleiro|torwart",
     # prematch se chequea antes que training: son productos distintos
     # (remera de calentamiento pre-partido vs. buzo/conjunto de
     # entrenamiento) aunque durante un tiempo compartieron el mismo
@@ -439,31 +442,31 @@ TYPE_PATTERNS = {
     # Originals Argentina 2026 Prepartido Segunda equipación"). Sin esto la
     # camiseta de calentamiento entraba como suplente, porque el título
     # también dice "Segunda equipación" (2026-09-29).
-    "prematch": r"pr[eé].?-?match|prematch|pre.?partido",
+    "prematch": r"pr[eé].?-?match|prematch|pre.?partido|vor dem spiel",
     # training también se chequea antes que home/away/third: "Camiseta de
     # entrenamiento" no tiene un color titular/suplente definido, así que
     # si se la clasificara por esos patrones podría quedar mal etiquetada.
-    "training": r"entrenamiento|\btraining\b|treino|calentamiento|calenta",
+    "training": r"entrenamiento|\btraining\b|treino|calentamiento|calenta|\btrainings?\b|trainings-",
     # third va ANTES de home/away por el mismo motivo que goalkeeper va
     # primero, y es un bug que estuvo vivo hasta el 2026-09-28: FansJerseyHub
     # llama a la tercera equipación "Third Away" ("Leeds United Third Away
     # Soccer Jersey 2025/26"), y como away se evaluaba antes, 355 títulos de
     # ese feed entraban al catálogo como si fueran la suplente. Un título que
     # dice "third" es la tercera, aunque además diga "away".
-    "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b",
+    "third": r"\btercer[ao]?\b|\bthird\b|troisi[eè]me|3[ºª]?\s*equipaci[oó]n|\bterceiro\b|\bdritte[sr]?\b",
     # "Domicilio" y "de casa" (2026-10-02): FootStore/SportIsGood ES traducen
     # el "Domicile" del feed frances literal, y el patron solo conocia la
     # grafia francesa. ~37 titulos del feed (Liverpool, PSG, Atalanta,
     # Turquia ...) no encontraban tipo y se tiraban enteros, noche tras
     # noche. "Fuera de Casa" es la SUPLENTE: el lookbehind evita leerla
     # como titular.
-    "home": r"\blocal\b|\bhome\b|\bdomicile\b|\bdomicilio\b|(?<!fuera )\bde casa\b|titular|\b1[ºª]?\s*equipaci[oó]n\b|primera equipaci[oó]n|principal\b",
+    "home": r"\blocal\b|\bhome\b|\bdomicile\b|\bdomicilio\b|(?<!fuera )\bde casa\b|titular|\b1[ºª]?\s*equipaci[oó]n\b|primera equipaci[oó]n|principal\b|\bheim(?:trikot|-?spielertrikot|-trikot)?\b",
     # "Visita", "Fuera", "Externo", "Alternate" (2026-10-02): mismas
     # traducciones literales de FootStore/SportIsGood ES ("Camiseta de Visita
     # Tunez", "Maillot Externo Bournemouth", "Camisa de Fuera Liverpool") y el
     # "Alternate" de Castore (Inglaterra). Sin esto ~60 titulos vigentes
     # quedaban sin tipo.
-    "away": r"\bexterior\b|\bext[ée]rieur\b|\bvisitante\b|\bvisita\b|\bfuera\b|\bexterno\b|\baway\b|segunda equipaci[oó]n|\b2[ºª]?\s*equipaci[oó]n\b|alternativ[oa]\b|\balternate\b",
+    "away": r"\bexterior\b|\bext[ée]rieur\b|\bvisitante\b|\bvisita\b|\bfuera\b|\bexterno\b|\baway\b|segunda equipaci[oó]n|\b2[ºª]?\s*equipaci[oó]n\b|alternativ[oa]\b|\balternate\b|ausw[äa]rts",
 }
 
 # "camisa" (Brazilian Portuguese for jersey/shirt -- distinct from
@@ -562,7 +565,7 @@ KIDS_EXCLUDE_RE = re.compile(
     re.I,
 )
 KIDS_SIGNAL_RE = re.compile(
-    r"infantil|\bniñ|\bnino|\bkids?\b|\bchild\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
+    r"infantil|\bjungen\b|\bkinder\b|\bniñ|\bnino|\bkids?\b|\bchild\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
     # "youth" only, NOT "young" -- BSC Young Boys is a real club in the
     # catalog and a bare "young" would flag every one of its own listings.
     r"\byouth\b|"

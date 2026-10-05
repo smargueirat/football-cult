@@ -56,6 +56,9 @@ export const teamNames: Record<TeamKey, Record<Locale, string>> = {
   westbrom: { es: "West Bromwich Albion", en: "West Bromwich Albion", pt: "West Bromwich Albion", fr: "West Bromwich Albion", it: "West Bromwich Albion" },
   huddersfield: { es: "Huddersfield Town", en: "Huddersfield Town", pt: "Huddersfield Town", fr: "Huddersfield Town", it: "Huddersfield Town" },
   mkdons: { es: "MK Dons", en: "MK Dons", pt: "MK Dons", fr: "MK Dons", it: "MK Dons" },
+  hibernian: { es: "Hibernian", en: "Hibernian", pt: "Hibernian", fr: "Hibernian", it: "Hibernian" },
+  hansarostock: { es: "Hansa Rostock", en: "Hansa Rostock", pt: "Hansa Rostock", fr: "Hansa Rostock", it: "Hansa Rostock" },
+  charlton: { es: "Charlton Athletic", en: "Charlton Athletic", pt: "Charlton Athletic", fr: "Charlton Athletic", it: "Charlton Athletic" },
   birminghamcity: { es: "Birmingham City", en: "Birmingham City", pt: "Birmingham City", fr: "Birmingham City", it: "Birmingham City" },
   prestonnorthend: { es: "Preston North End", en: "Preston North End", pt: "Preston North End", fr: "Preston North End", it: "Preston North End" },
   peterboroughunited: { es: "Peterborough United", en: "Peterborough United", pt: "Peterborough United", fr: "Peterborough United", it: "Peterborough United" },
@@ -457,6 +460,14 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   // EE.UU. Envío estándar a Reino Unido 4,99 GBP; al resto del mundo cobra
   // otra tarifa (~11 GBP) que la oferta no refleja, así que solo Reino Unido.
   "Pro:Direct Soccer": ["GB"],
+  // Reebok (reebok.eu, feed Awin "Reebok DE"): selector de país de la tienda
+  // cruzado con los países del sitio. Envío estándar 5,99 EUR por debajo de
+  // 50 EUR (9,95 a CZ/CH, 5,99 GBP a GB), gratis desde 50 -- medido en
+  // reebok.eu/pages/shipping-delivery el 2026-10-05.
+  "Reebok DE": [
+    "DE", "AT", "BE", "BG", "CH", "CZ", "DK", "ES", "FI", "FR", "GB", "GR",
+    "HR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "RO", "SE", "SK",
+  ],
   FootStoreES: [
     "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
     "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
@@ -654,6 +665,9 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
   westbrom: "club",
   huddersfield: "club",
   mkdons: "club",
+  hibernian: "club",
+  hansarostock: "club",
+  charlton: "club",
   birminghamcity: "club",
   prestonnorthend: "club",
   peterboroughunited: "club",
@@ -1041,6 +1055,9 @@ export const teamFlags: Record<TeamKey, string> = {
   westbrom: "⚪",
   huddersfield: "🔵",
   mkdons: "⚪",
+  hibernian: "🟢",
+  hansarostock: "🔵",
+  charlton: "🔴",
   birminghamcity: "🔵",
   prestonnorthend: "⚪",
   peterboroughunited: "⚪",
@@ -1429,6 +1446,9 @@ export const teamColors: Record<TeamKey, [string, string]> = {
   westbrom: ["#122F67", "#FFFFFF"],
   huddersfield: ["#0E63AD", "#FFFFFF"],
   mkdons: ["#FFFFFF", "#000000"],
+  hibernian: ["#00843D", "#FFFFFF"],
+  hansarostock: ["#004B9B", "#FFFFFF"],
+  charlton: ["#D4021D", "#FFFFFF"],
   birminghamcity: ["#0053A0", "#FFFFFF"],
   prestonnorthend: ["#FFFFFF", "#002453"],
   peterboroughunited: ["#1D3F8F", "#FFFFFF"],
@@ -1819,5 +1839,6 @@ export const brandNames: Record<Brand, string> = {
   lotto: "Lotto",
   mizuno: "Mizuno",
   scoredraw: "Score Draw",
+  reebok: "Reebok",
   other: "Other",
 };
