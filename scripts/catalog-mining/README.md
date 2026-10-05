@@ -4527,3 +4527,13 @@ and `src/lib/productMeta.ts` gained three team keys and a "Reebok DE"
 files were deliberately left uncommitted here. If concurrent sessions become
 normal, this pass needs the same kind of guard the 09-22 `ebay_check_stale.py`
 clobber got.
+
+### Barrido retroactivo de la lista negra (misma pasada 10-05)
+
+Con la guardia de `apply()` puesta, se barrió el catálogo entero contra
+`MANUAL_EXCLUDE_LINK_SUBSTRINGS`: **10 ofertas bloqueadas en pasadas
+anteriores seguían vivas** en fichas que conservan otras ofertas, y se
+sacaron. Quedan **18**, todas únicas de su ficha: sacarlas dejaría 18 cartas
+vacías nuevas (ya hay 117 y nada las poda), así que se dejan a propósito y se
+anotan acá en vez de cambiar ese comportamiento de callado. Duplicados entre
+fichas: **112, uno menos que HEAD**.
