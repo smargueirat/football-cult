@@ -4,6 +4,7 @@ Keeps `src/data/boots.ts` prices/tallas/fotos actualizados contra los
 feeds Awin/Google-Shopping ya aprobados que tienen botas reales: adidas
 ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda, Deporte
 Outlet, Pro Soccer (USD), Gigasport DE/CH/FR, Clovis Calçados BR (BRL),
+Reebok DE,
 más FutbolEmotion (TradeTracker) desde un snapshot manual. Reusa el
 mismo cache de feeds (`/tmp/feeds/*.csv`) que el scan diario de
 camisetas ya descarga -- no hace su propia descarga.
@@ -34,6 +35,17 @@ dos tiendas con la misma bota a menudo no comparten ningún talle. Primer
 caso real: FJ2586-002 a 269 EUR en Foot-Store y 90 EUR en Pro:Direct. La foto (`_image_key`) solo sirve
 entre tiendas espejo; el EAN sirve entre cualquiera. Nunca junta dos
 ofertas de la misma tienda. Prueba: `python3 check_merge_by_code.py`.
+
+## Reebok DE (2026-10-05)
+
+Awin aid 121508, feed mixto en alemán (camisetas, ropa, zapatillas) que el
+scan ya baja a `/tmp/feeds/REEBOK_DE.csv`. `mine_reebok_de()` toma las filas
+con "Fußballschuh" en el título (6 colorways: Sidewinder 26 Elite/Pro/League
+FG, Touch TF/MG), una oferta por `parent_product_id` (= color). El
+`delivery_cost` del feed es falso (siempre 0): envío medido en reebok.eu,
+gratis desde 50 EUR, si no 5,99. Lo que Reebok llama Elite/League,
+Pro:Direct lo llama Premier/Club: el EAN las funde igual. Se mina después de
+Pro:Direct para que esas fichas conserven su id.
 
 ## Monedas reales por tienda
 

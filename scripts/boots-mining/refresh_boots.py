@@ -415,6 +415,14 @@ def run_tier_classification():
             ("3", ["aguila col", "prop lite", "prop.lite"]),
             ("4", ["toledo", "dribling"]),
         ],
+        # Reebok: Elite (Pro:Direct la llama "Premier") > Pro > League
+        # (Pro:Direct: "Club", mismo EAN) > Touch (de entrada, 50 EUR).
+        "reebok": [
+            ("1", ["elite", "premier"]),
+            ("2", ["pro"]),
+            ("3", ["league", "club"]),
+            ("4", ["touch"]),
+        ],
         "kipsta": [
             ("1+", ["viralto iv", "traxium"]),
             ("1", ["viralto iv"]),

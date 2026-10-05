@@ -45,6 +45,7 @@ const FEED_URLS: Record<string, string | undefined> = {
   GigasportDE: process.env.AWIN_FEED_URL_GIGASPORT_DE,
   GigasportCH: process.env.AWIN_FEED_URL_GIGASPORT_CH,
   GigasportFR: process.env.AWIN_FEED_URL_GIGASPORT_FR,
+  "Reebok DE": process.env.AWIN_FEED_URL_REEBOK_DE,
   FootballTicketNetDE: process.env.AWIN_FEED_URL_TICKETNET_DE,
   FootballTicketNetUK: process.env.AWIN_FEED_URL_TICKETNET_UK,
   FootballTicketNetUS: process.env.AWIN_FEED_URL_TICKETNET_US,

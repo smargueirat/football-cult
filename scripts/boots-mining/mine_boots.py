@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Mina botas de fútbol adulto reales de los feeds Awin ya aprobados
 (adidas ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda,
-Deporte Outlet, Pro Soccer, Gigasport DE/CH/FR, Clovis Calçados BR)
-desde el cache de feeds del scan diario (/tmp/feeds/*.csv), más
+Deporte Outlet, Pro Soccer, Gigasport DE/CH/FR, Clovis Calçados BR,
+Reebok DE) desde el cache de feeds del scan diario (/tmp/feeds/*.csv), más
 FutbolEmotion (TradeTracker) desde un snapshot manual -- ver la nota en
 mine_futbolemotion() sobre por qué esa no se refresca sola todavía.
 Escribe scripts/boots-mining/mined_boots.json -- entrada de
@@ -929,6 +929,55 @@ def mine_prodirect():
     print('ProDirectES:', n)
 
 
+# ---------- REEBOK DE (Awin aid 121508, aprobado 2026-10-04) ----------
+# Feed MIXTO (camisetas, ropa, zapatillas) sin categoría útil: las botas se
+# reconocen por "Fußballschuh" en el título ("Reebok - Sidewinder 26 Elite FG
+# Fußballschuhe, NEON CHERRY/..., Größe: 42"). Una fila por talla; se agrupa
+# por parent_product_id (= colorway, cada color es su propia oferta). El
+# código de artículo Reebok de la URL (".../sidewinder-26-elite-fg-100261669-
+# 261669") es el código de fabricante del colorway; product_GTIN funde con
+# Pro:Direct (que llama "Premier"/"Club" a lo que Reebok llama Elite/League).
+def mine_reebok_de():
+    if not os.path.exists(f"{FEEDS}/REEBOK_DE.csv"):
+        print('Reebok DE: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/REEBOK_DE.csv", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            title = row.get('product_name') or ''
+            if 'Fußballschuh' not in title or row.get('in_stock') != '1':
+                continue
+            if EXCLUDE_KEYWORDS.search(title) or GIGASPORT_KIDS_RE.search(title):
+                continue
+            if parse_price(row.get('search_price')) and row.get('parent_product_id'):
+                groups.setdefault(row['parent_product_id'], []).append(row)
+    n = 0
+    for rows in groups.values():
+        rows.sort(key=lambda r: size_sort_key(r.get('Fashion:size', '')))
+        rep = min(rows, key=lambda r: parse_price(r['search_price']))
+        model = re.sub(r'^Reebok\s*-\s*', '', rep['product_name'].split(',')[0])
+        model = re.sub(r'\s*Fußballschuhe?\b', '', model).strip()
+        code = re.search(r'-(\d{9})-\d+\?', rep.get('merchant_deep_link') or '')
+        prices = [parse_price(r['search_price']) for r in rows]
+        entry = {
+            'store': 'Reebok DE', 'brand': 'Reebok', 'model': model, 'groundType': infer_ground(model),
+            # delivery_cost del feed siempre 0/vacío y es falso. Medido en
+            # reebok.eu/pages/shipping-delivery: gratis desde 50 EUR, si no 5,99.
+            'price': min(prices), 'shipping': 0 if min(prices) >= 50 else 5.99,
+            'currency': 'EUR',
+            'url': rep['aw_deep_link'], 'imageUrl': rep['aw_image_url'],
+            'sizes': [dot_size(r['Fashion:size']) for r in rows if r.get('Fashion:size')],
+            'eans': sorted({(r.get('product_GTIN') or '').strip() for r in rows} - {''}),
+            'style': code.group(1) if code else '',
+        }
+        if max(prices) > min(prices):
+            entry['priceMax'] = max(prices)
+            entry['sizePrices'] = [{'size': dot_size(r['Fashion:size']), 'price': p, 'url': r['aw_deep_link']}
+                                   for r, p in zip(rows, prices)]
+        results.append(entry)
+        n += 1
+    print('Reebok DE:', n)
+
 def legacy_model_names_from_boots_ts():
     """Nombres (en minúscula) de los 71 legacy, para que
     mine_futbolemotion() no los duplique. Lee boots.ts directo en vez de
@@ -958,6 +1007,9 @@ if __name__ == '__main__':
     # Último a propósito: si una bota de Pro:Direct es la misma (EAN) que una
     # de otra tienda, se suma a esa ficha y la ficha conserva su id.
     mine_prodirect()
+    # Después de Pro:Direct: las Reebok que ya tenía (mismo EAN) suman su
+    # oferta a esa ficha y la ficha conserva su id.
+    mine_reebok_de()
 
     # Guardia real, un solo punto para las 13 tiendas de arriba (mismo
     # espíritu que EXCLUDE_KEYWORDS): sin foto la card sale como caja

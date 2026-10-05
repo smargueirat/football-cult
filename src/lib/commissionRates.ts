@@ -86,6 +86,8 @@ const RATES: Record<string, number> = {
   ForumSport: 0.04,
   "Futbol Factory": 0.05,
   ClovisCalcadosBR: 0.05,
+  // Awin aid 121508, aprobado 2026-10-04: 8,23% publicado.
+  "Reebok DE": 0.08,
 
   // Entradas: porcentaje parecido al retail pero sobre un ticket medio de
   // €91, así que por clic paga más que una camiseta.
