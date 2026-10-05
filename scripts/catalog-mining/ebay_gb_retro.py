@@ -167,6 +167,13 @@ def apply(picks):
         if not m or m.group(1) not in picks or f'store: "{STORE}"' in b:
             continue
         d = picks[m.group(1)]
+        # `picks` es el estado ACUMULADO de todas las corridas, y el filtro de
+        # is_manually_excluded() solo corre al BUSCAR -- así que un pick cacheado
+        # antes de que lo bloquearan volvía a insertarse en cada corrida, para
+        # siempre (22 reaparecidos el 2026-10-05, todos WRONG_KIT/NOT_JERSEY de
+        # pasadas anteriores). Revisar acá hace la lista negra retroactiva.
+        if is_manually_excluded(d["link"]):
+            continue
         sizes = ", ".join(f'"{s}"' for s in d["sizes"])
         line = (
             f'      {{ store: "{STORE}", price: {d["price"]}, shipping: {d["shipping"]}, '

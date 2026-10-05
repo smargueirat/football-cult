@@ -4356,3 +4356,174 @@ for the 10th pass out of 11. Price drops: 1949 across the seven sections
 (camisetas 47, botas 16, entradas 1886, resto 0); Telegram published 3.
 Dominant colours: 25 new, 0 errors. GTINs: 2415 of 15038 offers (16.1%).
 
+
+## Daily pass (2026-10-05) -- a cached pick list makes the blocklist non-retroactive, and three rugby shirts in one night
+
+All 15 Awin jersey feeds + the 5 Rakuten Brazil stores + the 2 TradeTracker
+stores + one `ebay_mine_cycle.py` batch per marketplace (rotation ES, US, IT --
+day-of-year 278 mod 3 = 2). Soicos skipped again -- no `claude-in-chrome`.
+Umbro (MID 41001) still absent from the Rakuten FTP listing (20th pass).
+**Pro:Direct ES and UK both skipped**: their weekly files are 26.6h and 26.0h
+old, just past the documented 24h rule. **41 new products** (1 CSV current,
+0 women, 0 kids, 4 eBay current, 36 eBay retro, minus 2 un-created by the
+duplicate-URL diff -- 6667 -> 6706 blocks); `tsc`/dupe-id/duplicate-URL/build
+all clean, `check_women_type`/`check_retro_season`/`check_club_in_national`/
+`check_gear_ids` OK.
+
+**All three eBay marketplaces completed 20/20 with zero 429s** -- ES 285/384
+cycle 1, US 322/384 cycle 4, IT 297/384 cycle 1. `rate_limit/` read
+`buy.browse 4190/5000` at 06:09 UTC (before the 07:00 roll) and a flat
+`5000/5000` after it, with all three batches charged to the previous window --
+the same behaviour 10-01/10-02/10-04 describe. Go/no-go signal only.
+
+### The real find: `ebay_gb_retro.py` re-applies its whole cached pick list
+
+`main()` ends with `apply(state["picks"])`, and `state["picks"]` is the
+**accumulated** dict of every pick the script has ever found -- not just this
+batch's. `is_manually_excluded()` is only consulted at SEARCH time (line 138),
+so any pick cached *before* it was blocklisted gets re-inserted on every
+subsequent run, forever. That is why the run reported `75 fichas con el mismo
+modelo` but `insertadas en products.ts: 103`, and why **22 offers blocklisted
+in earlier passes for WRONG_KIT/NOT_JERSEY came straight back** (Aston Villa
+22/23, Barcelona 24/25, the Suiza 2008 fan tee, the Tottenham 23/24 third sold
+as away, ...). Fixed with one guard in `apply()`. All 22 removed again.
+**A script that applies a cached list must re-check the blocklist at apply
+time, not only at fetch time.**
+
+### The GB pass has no player-print, back-only or not-a-garment filter
+
+It has had kids/women filters since 10-03, and nothing else. A 4-item photo
+spot-check turned up a **back-only "KAKA' 22"**; a title scan over all 103
+inserts then found **19 bad ones** -- two that are not garments at all
+(`Drogba 11 Nameset ... Heat Transfer`, `Verratti 6 Nameset Heat Press
+Transfer`, the same class as the 10-01/10-02 "Name Set" drops), one kids tee
+(`T Shirt ... 13-15yrs`), and 16 player prints (Henry, Messi, Paqueta,
+Naismith, Gunter, Rabiot, Alexander-Arnold, Haaland, Heinze, Neymar, Totti x2,
+Kane, Elmohamady, a bare `#4`). All removed and blocklisted. The retro miner
+proper drops these; this script still does not.
+
+### Three rugby shirts and a volleyball shirt, all from Sport is Good
+
+The CSV feeds produced **zero** new current products from the NEW sets, but
+four conflict picks were other sports, all from the ES/FR mirror pair and all
+invisible to `team_collision_scan.py` (0 flags on every CSV set again, control
+planted and firing): `sudafrica|home` x2 is the Nike **SPRINGBOKS** (one crest
+literally reads "SOUTH AFRICA RUGBY"), `gales|home` is the Macron **WRU**
+shirt with Vodafone, and `francia|away` is Errea **FRANCE VOLLEYBALL** (MAIF +
+Betclic, no FFF cockerel anywhere). Blocklisted by manufacturer style code
+(`ib6784`, `iu4543`, `600155310001`, `smkh6c0041100frv`) per the 10-02 rule,
+with the real adidas `ky2209` South Africa shirt and Crystal Palace's
+`600153340001` checked as negative controls. **The supplier is the tell: a
+national team that plays football in adidas does not wear a Nike shirt.**
+
+### Copa America shirts carry a FRONT number -- it is not a player print
+
+Nearly dropped three good retro shirts over this. Peru 2015 (`9`), Ecuador
+2024/25 (`23`) and the Paraguay 2019 shirt all show a number on the chest,
+which on a UEFA shirt would mean a squad/player shirt. For CONMEBOL it is the
+tournament convention. Kept all three; still dropped `gales|home|2006/07`,
+which has a chest number AND no supplier mark at all.
+
+### Retro: 36 of 60 kept, and back-only photos fell to 12%
+
+617 distinct retro keys / 668 offers across the three marketplaces. Text
+filters removed 9 (2 malformed `2020/24`, 4 reissues, 2 signed, and note
+`2022/24` is correctly KEPT -- gap 2, a real national-team cycle). 524 keys
+merged into existing fichas (352 inserted, 81 refreshed, 136 already on file by
+URL, **7 age-grouped blocks correctly refused** by the 10-01 guard). Of 77 NEW:
+10 bare-year twins re-keyed onto the two-year ficha on file, 4 dropped as
+genuinely ambiguous (both seasons already on file), 1 intra-batch twin folded,
+2 dropped on the collision scan, 60 photo-reviewed -> **36 created**.
+**Back-only was 7 of 60 (12%)**, against 24%/37%/24%/0% on the four previous
+passes. The other 17 drops: 5 clubs or wrong teams under a national key
+(Celtic and an SPFL club under `escocia`, Kryvbas and Shakhtar under `ucrania`,
+and a **PARAGUAY** shirt under `palmeiras` -- green club, red-and-white
+striped photo, caught only by the photo), 4 player prints, 2 print-on-demand
+mockups (one showing `ANY NAME 00`), 2 unlicensed repros with no supplier mark,
+plus a pair of **SHORTS**, a **SUPER FALCONS** (women's Nigeria) shirt on the
+men's key, a signed Sweden shirt whose title never said so, a maroon Mexico
+**training** top sold as home, and a Nike **pre-match** top sold as Norway away.
+
+### Do not compare eBay URLs including their tracking params
+
+The duplicate-URL check initially compared full URLs and reported 0 collisions;
+`chile|home|2015` and `peru|home|2015` are the **same eBay item** (375890699865)
+differing only in `_skw=`. It was briefly blocklisted as a Chile false positive
+-- which would have killed the real Peru offer it had correctly landed on.
+**Compare the bare `/itm/<id>`.** Re-run that way, the diff found 7 new
+cross-product duplicates: 3 bare-year-vs-two-year pairs where the NEW ficha was
+the duplicate (penarol 2022, peru 2018, ucrania 2002 -- the 10-03 class the twin
+check cannot see because it only runs on NEW *bare-year* keys, not on NEW
+*two-year* keys against an existing bare-year ficha), plus the 4 documented
+pre-existing sibling pairs. Two blocks un-created, net duplicates **113,
+exactly HEAD's 113**. Blocks with zero offers: **117, same as HEAD**.
+
+### eBay current and kids
+
+4 new current products, all photo-verified: **Club Leon home 2026** (Charly,
+Telcel + Cementos Fortaleza), and three out of the CONFLICT set where the photo
+showed a genuinely different kit from the ficha on file -- Chivas GK 26/27
+(**Nike**, where the 25/26 on file is **Puma**: a real supplier change), Cruz
+Azul away 26/27 (blue polo collar vs the 25/26 V-neck), Tigres home 26/27.
+4 more conflict offers were the SAME kit with the seller's season wrong and
+went onto the verified existing id (LA Galaxy away -> `-2025`, MLS being
+calendar-year; Norway away, Chile away and Japan prematch, the last three
+reproducing 10-03 exactly). 6 dropped: a Tigres all-over-print TEE and an
+Estudiantes **cotton ringer** tee sold as training, the Tigres away in adidas
+**Originals trefoil with no crest**, a Santos "home" that is the striped second
+kit, a `chile|third` whose own retail tag reads **"ANFP A JSY"** (it is the away
+already on file), and a Mexico listing that is a **collage of five kits**.
+Kids: 41 picks, **zero new products** (both NEW candidates were drops), 7
+dropped first -- including a New Era **9TWENTY baseball CAP** mined as
+`vancouverwhitecaps|third`, a `sanlorenzo|away` whose title says
+**"ENNERRE - VOLLEY"**, and two USWNT shirts on the men's key (one with
+**four stars** over the crest, which the men's team does not have).
+
+### Everything else
+
+**CSV feeds: one new product** -- a Real Betis "Forever Green" 2025 goalkeeper
+shirt from the club's own store (hummel, coral/seaweed print, clearly not the
+navy-maze 25/26 GK on file). Of 23 conflicts, **6 verified byte-identical to an
+offer already on file** (AdidasPT Newcastle + Juventus "Tiro 25", Inter Miami on
+both BSTNs, ForumSport Alaves, PlanetFoot Nashville); `flamengo|home` is adidas
+**JM5651 against JM5652** for the 4th pass; the ForumSport `barcelona|prematch`
+photo is **still** dated `20240702` (5th pass); two Spain 26/27 picks are
+**"Lamine Yamal 19"** player prints; the rest older stock. The FansJerseyHub
+Inter Miami third was photo-matched against the on-file adidas KA7502 and
+inserted on the existing ficha. DecathlonIE's zero measured again (`Fashion:size`
+on all 41689 rows, every dated jersey 2022-24/25). **Shop Real Betis' `size`
+column is empty in all 1931 rows for the 6th pass** (`pick_no_size.py`).
+**Rakuten: all five Brazil feeds passed the `TRL|` trailer check on the first
+try while `curl` exited 18 ("transfer closed") on every one of them** -- the
+clearest demonstration yet of why the rule is to check the trailer and not the
+exit code.
+
+Women's pass: 208 picks across 13 stores, **0 new products**, offers refreshed
+in 9 stores -- zero confirmed by diffing block ids before and after `--apply`,
+per 10-01, not by the summary line.
+
+`ebay_check_stale.py`: **31 of 200 dead (15.5%)**, down from 26%/28.5%/25.5%/40%
+on the four previous passes and back near the 9.5-12% band the month held
+before 10-01.
+
+Boots: 26 new / 42 dropped / 10 price changes, legacy `{fe_kept: 44,
+forum_kept: 50}`, 0 fused via 308s, colour `ok: 9, errors: 0`, no FutbolEmotion
+WARNING, and the 10-03 abort guard did not fire (Pro:Direct ES boots JSON was
+rebuilt at 02:50). Note `boots.ts` and the gear `.ts` files came out
+**byte-identical to HEAD** despite non-zero new/dropped counters -- those
+counters are measured against the untracked `mined_*.json` state, while the
+catalog itself is rebuilt deterministically; worth a look but not chased here.
+Gear: ropa 30 new / 0 dropped / 0 price changes, entrenamiento 0/0/0.
+Tickets: 4 new events, 11 dropped, of 2568 -- **Gigsberg refused as stale again**
+(last import 09-09, 26 days, limit 7). Wikidata missed all 59 venues, so
+`venue_cities.json` is unchanged for the 11th pass out of 12. Price drops: 912
+across the seven sections (camisetas 8, botas 1, entradas 902, guantes 1);
+Telegram published 3. Dominant colours: 37 new, 0 errors. GTINs: 2386 of 15108
+offers (15.8%).
+
+**Another session was editing this repo at the same time** (`src/data/teamMeta.ts`
+and `src/lib/productMeta.ts` gained three team keys and a "Reebok DE"
+`storeShipping` entry measured today, none of it from this pass). Those two
+files were deliberately left uncommitted here. If concurrent sessions become
+normal, this pass needs the same kind of guard the 09-22 `ebay_check_stale.py`
+clobber got.

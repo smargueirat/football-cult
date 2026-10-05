@@ -883,6 +883,95 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/405040181169",  # inglaterra-retro-2014-home: AI_RENDER -- remera blanca lisa con el escudo de Inglaterra pegado en el centro del pecho, sin Nike ni detalles del diseño 2014
     "/itm/128039439945",  # clubtijuana-retro-202425-home: AI_RENDER -- mock-up digital "Custom Name ... Shirt 3D" print-on-demand, render plano, no es la camiseta oficial
     "/itm/318591943530",  # pumasunam-away-202627: AI_RENDER -- mock-up digital 3D de "maglia personalizzata ... design" print-on-demand, no es foto de la camiseta fisica
+    # --- Daily pass 2026-10-05, CSV feeds: three rugby shirts and one
+    # volleyball shirt, all from Sport is Good ES/FR, all mined under a
+    # NATIONAL-TEAM football key and only settled by the photo. Blocklisted
+    # by MANUFACTURER STYLE CODE (stable across both mirror stores and both
+    # languages), per the 2026-10-02 rule -- the store slug is not stable.
+    "ib6784",            # sudafrica|home: Nike SPRINGBOKS rugby, crest reads "SOUTH AFRICA RUGBY", FNB sponsor
+    "iu4543",            # sudafrica|home: Nike Springboks rugby polo, springbok crest, yellow collar
+    "600155310001",      # gales|home: Macron WRU (Welsh Rugby Union), Vodafone sponsor, feathers crest
+    "smkh6c0041100frv",  # francia|away: Errea FRANCE VOLLEYBALL (MAIF + Betclic, no FFF cockerel crest)
+
+    # --- Daily pass 2026-10-05, eBay CURRENT drops (bare /itm/<id>, per 10-02) ---
+    "/itm/287625719346",  # tigresuanl|training: all-over sublimated "NUEVO LEON TIGRES DE MEXICO" text TEE, no club crest, floor photo -- unlicensed repro, not a training jersey
+    "/itm/117404434836",  # tigresuanl|away 26/27: adidas ORIGINALS trefoil and NO club crest (only a "U") -- the documented Originals-lifestyle class, not the match kit
+    "/itm/237014499846",  # estudiantes|training 2026: grey COTTON ringer t-shirt with an EdeLP patch, no supplier logo, no sponsor -- lifestyle tee, same class as the 10-04 Mexico kids "Maglietta"
+    "/itm/398156613262",  # santos|home 26/27: photo is the BLACK/WHITE STRIPED shirt while Santos' home on file is plain white -- type unverifiable, skip rather than guess
+    "/itm/168752181571",  # chile|third: its own retail tag reads "ANFP A JSY AU" (AWAY) and the garment is identical to chile-away-2026 already on file -- wrong type, already in catalog
+    "/itm/198642658222",  # mexico|third: a COLLAGE of 5 different Mexico kits in one listing, every one player-numbered -- template listing, type unresolvable
+
+    # --- Daily pass 2026-10-05, eBay KIDS drops ---
+    "/itm/236728990335",  # sanlorenzo|away kids: title says "ENNERRE - VOLLEY" -- a VOLLEYBALL shirt, not football
+    "/itm/178288447157",  # lagalaxy|home kids: player-printed "Riqui Puig 26/27"
+    "/itm/820000544938",  # vancouverwhitecaps|third kids: NOT A GARMENT -- a New Era 9TWENTY baseball CAP, confirmed by photo
+    "/itm/128113157807",  # escocia|away kids: player-printed "Scott McTominay"
+    "/itm/117318213863",  # estadosunidos|home kids: USWNT (women's team) + player print "Lindsey Horan #10", filed on the men's key
+    "/itm/175793531677",  # estadosunidos|away kids: FOUR STARS over the USA crest = USWNT, not the men's team (photo); also the 2020 blue-camo kit
+    "/itm/377483027161",  # japon|home kids: "Conjunto corto y camiseta" = shirt-and-shorts SET, plus a "Mitoma #7" print
+
+    # --- Daily pass 2026-10-05, eBay RETRO drops (bare /itm/<id>, per 10-02) ---
+    "/itm/116629601689",  # australia|away|2023/24: SHORTS, not a jersey
+    "/itm/314816556407",  # australia|home|2019: Football TASMANIA (state body), not the Socceroos
+    "/itm/317734654841",  # coreadelsur|away|2023/24: match-detail shirt, #7 printed, AFC Asian Cup semi-final detailing
+    "/itm/117424535187",  # coreadelsur|away|2024/26: BACK-ONLY photo + "KANGIN 18" player print
+    "/itm/116860840928",  # coreadelsur|home|2020/22: BACK-ONLY photo + "H M SON 7" player print
+    "/itm/128044881413",  # cruzazul|third|2024/25: print-on-demand MOCKUP render showing "ANY NAME 00"
+    "/itm/157963326835",  # escocia|away|1994/95: BACK-ONLY photo + "DONNELLY 7" player print
+    "/itm/168379725681",  # escocia|home|1982: unlicensed repro -- no supplier mark anywhere, modern shiny polyester
+    "/itm/168313966553",  # escocia|third|2011/12: CELTIC (club) under a national key, BACK-ONLY, "STOKES 10"
+    "/itm/257417557240",  # escocia|third|2021/23: club shirt (SPFL number badges) under a national key, BACK-ONLY, "HENDERSON 22"
+    "/itm/117238558571",  # flamengo|away|1996: BACK-ONLY photo + "ROMARIO 11" player print
+    "/itm/157915615743",  # gales|home|2006/07: unlicensed repro -- no supplier mark, throwback styling
+    "/itm/366623993739",  # leon|home|2024/25: AI/print-on-demand MOCKUP render, seller watermark
+    "/itm/377511057850",  # mexico|away|2014/15: BACK-ONLY photo + "C. BLANCO 10" player print
+    "/itm/377007080059",  # mexico|home|2017: maroon adidas TRAINING top, not the green home kit
+    "/itm/157202019176",  # nigeria|home|2002/04: "KANU 4" player print, front and back
+    "/itm/227321387334",  # nigeria|home|2023/24: neck tape reads SUPER FALCONS = the WOMEN national team, on the men key
+    "/itm/178402529203",  # noruega|away|2022: Nike PRE-MATCH top (big swoosh graphic), not the away kit
+    "/itm/406550893610",  # palmeiras|home|2019: it is a PARAGUAY shirt (APF crest, Copa America Brasil 2019) -- wrong team
+    "/itm/257780314196",  # suecia|home|2007: SIGNED -- visible autograph on the chest, the title never said so
+    "/itm/358864891571",  # turquia|home|2006/08: generic Nike "Turkiye" shirt with a flag patch and NO TFF crest
+    "/itm/168453369244",  # ucrania|away|2021: KRYVBAS (club) under a national key, BACK-ONLY, "P'YATOV 5"
+    "/itm/266920231197",  # ucrania|third|2021: SHAKHTAR (club) under a national key, BACK-ONLY, "MYKOLAIV 3"
+    "/itm/188946250669",  # velez|home|1996/97: modern reproduction sold as retro at $28.98 (documented template line)
+    "/itm/157915617695",  # ucrania|away|2004: match-worn ENGLAND vs UKRAINE shirt -- which team it is cannot be settled
+    # chile|home|2015 was dropped, but NOT blocklisted: it is the SAME eBay item
+    # as peru|home|2015 (only the _skw tracking param differs), and it landed
+    # correctly on peru-retro-2015-home. Blocklisting it would have killed the
+    # real Peru offer. Compare the bare /itm/<id>, not the full tracked URL.
+    "/itm/366464301890",  # gremio|home|2020/21: player print "Everton Cebolinha 11"
+    "/itm/406349343532",  # penarol|home|2015: player print "Federico Valverde"
+    "/itm/405840040677",  # penarol|home|2014: player print "Federico Valverde"
+    "/itm/405840527030",  # penarol|home|2022: player print "Pablo Bengoechea"
+    "/itm/127988762754",  # ajax|away|2020/21: player print "Sergino Dest"
+    "/itm/227379515811",  # ecuador|home|2022: player print "Enner Valencia"
+
+    # --- Daily pass 2026-10-05, eBay GB retro (ebay_gb_retro.py) ---
+    # The GB pass filters kids/women (KIDS_EXTRA_RE, 10-03) but has NO player-print,
+    # no back-only and no not-a-garment check, so 19 of its 103 inserts tonight were
+    # printed shirts or bare namesets. Found by a title scan after a 4-item photo
+    # spot-check turned up a back-only "KAKA 22". Worth a real filter in that script.
+    "/itm/800556538613",  # chelsea-retro-201011-away: Drogba 11 NAMESET heat transfer -- not a garment
+    "/itm/394816053864",  # chelsea-retro-202223-home: kids "T Shirt ... 13-15yrs" -- kids tee, not the men shirt
+    "/itm/358858900268",  # arsenal-retro-200405-away: player print "No 14 Henry On The Back"
+    "/itm/167753269347",  # intermiami-retro-202324-home: player print "Messi 10"
+    "/itm/158287204831",  # westham-retro-202425-away: player print "10#PAQUETA"
+    "/itm/820131581920",  # norwich-retro-201516-home: player print "Naismith #7", match issue
+    "/itm/377544186592",  # acmilan-retro-2007-away: BACK-ONLY photo + player print "KAKA 22" (confirmed by photo)
+    "/itm/237102428885",  # gales-retro-2020-away: player print "gunter 2 on the back"
+    "/itm/298342268448",  # juventus-retro-199596-home: player number print "#4"
+    "/itm/405648425238",  # juventus-retro-2019-home: player print "RABIOT #25", player issue
+    "/itm/157782272070",  # liverpool-retro-202324-third: player print "Alexander-Arnold #66"
+    "/itm/168573089763",  # mancity-retro-2022-home: player print "Haaland 9"
+    "/itm/235880049779",  # manutd-retro-200506-home: player print "Gabriel Heinze #4"
+    "/itm/178364438400",  # psg-retro-2018-home: player print "Neymar JR 10"
+    "/itm/800561637275",  # psg-retro-201920-third: Verratti 6 NAMESET heat press transfer -- not a garment
+    "/itm/298611735731",  # roma-retro-199798-home: player print "Francesco Totti 10"
+    "/itm/147202331914",  # roma-retro-201415-home: player print "Totti #10"
+    "/itm/278210765932",  # tottenham-retro-2020-home: player print "KANE 10"
+    "/itm/358103130098",  # egipto-retro-2018-home: player print "ELMOHAMADY 3"
+
 ]
 
 
