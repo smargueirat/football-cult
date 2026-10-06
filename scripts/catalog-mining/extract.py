@@ -790,6 +790,50 @@ def match_team(title, teams):
         return tk, m
     return first
 
+# El feed de varias tiendas (Sport is Good ES/FR sobre todo) trae una
+# `description` que dice el DEPORTE con todas las letras -- "la pasion del
+# rugby sudafricano", "los apasionados del balonmano" -- mientras el titulo
+# dice solo "Maillot Domicile France 2025/26" y no hay columna de categoria
+# usable (category_name viene vacia en esos feeds). Asi entraron camisetas de
+# balonmano, rugby y voleibol de Francia/Italia/Sudafrica a las fichas de
+# FUTBOL de esas selecciones: 6 estaban VIVAS en products.ts el 2026-10-06,
+# metidas por pasadas anteriores, y 15 picks mas iban a entrar esa noche.
+# La pista que documenta el 2026-10-05 es el proveedor (Francia juega al
+# futbol de NIKE, Italia y Sudafrica de ADIDAS), pero eso no es
+# automatizable; la descripcion si.
+#
+# Regla: se descarta si la descripcion nombra otro deporte Y NO nombra futbol
+# en ninguna forma. Las dos mitades importan -- medido sobre los 2259 picks de
+# esa noche con descripcion legible, rechaza 11 y los 11 son reales, con 0
+# falsos positivos: la segunda de Barcelona 25/26 (homenaje a Kobe Bryant, la
+# copia habla de "baloncesto") y la de Estados Unidos del Mundial 2026 (cuya
+# copia traducida dice "futbol americano") sobreviven las dos porque su
+# descripcion tambien dice futbol/LaLiga/Mundial.
+OTHER_SPORT_RE = re.compile(
+    r"\b(rugby|balonmano|handball|handbol|voleibol|volley|volei|baloncesto"
+    r"|basket|hockey|cricket|netball)\b", re.I)
+# OJO con las palabras sueltas: la primera version de esto usaba `coupe` y
+# `premier`, y en frances "la coupe moderne et ajustee" es el CORTE de la
+# prenda, no la Copa -- un maillot de rugby de Francia (adidas KF1713) paso
+# el filtro por eso mismo. "premier" en frances es "primero". Cada termino de
+# aca tiene que ser inequivoco en los idiomas de los feeds (es/fr/it/pt/de/en),
+# asi que las copas van con su nombre completo.
+FOOTBALL_WORD_RE = re.compile(
+    r"\b(f[u\u00fa]tbol|football|soccer|calcio|fussball|fu\u00dfball|voetbal"
+    r"|laliga|la liga|bundesliga|serie a|ligue 1|eredivisie"
+    r"|premier league|champions league|europa league|libertadores"
+    r"|copa del mundo|copa am[e\u00e9]rica|coupe du monde|world cup|mundial"
+    r"|eurocopa|euro 20\d\d|fifa|uefa|conmebol|concacaf)\b", re.I)
+
+
+def is_other_sport(row):
+    """True si la descripcion del feed delata que no es una camiseta de futbol."""
+    desc = row.get("description") or ""
+    if not desc:
+        return False
+    return bool(OTHER_SPORT_RE.search(desc)) and not FOOTBALL_WORD_RE.search(desc)
+
+
 def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_col="aw_deep_link", image_col="aw_image_url", encoding="utf-8-sig", exclude_re=None, signal_re=None):
     """Candidatos (equipo, tipo) de un feed.
 
@@ -813,6 +857,8 @@ def analyze(csv_path, price_col, size_col=None, title_col="product_name", link_c
         if signal_re is not None and not signal_re.search(title):
             continue
         if is_manually_excluded(r.get(link_col), r.get(image_col)):
+            continue
+        if is_other_sport(r):
             continue
         hit = match_team(title, teams)
         if not hit:
@@ -860,6 +906,8 @@ def analyze_kids(csv_path, price_col, size_col=None, title_col="product_name", l
         if KIDS_EXCLUDE_RE.search(title):
             continue
         if is_manually_excluded(r.get(link_col), r.get(image_col)):
+            continue
+        if is_other_sport(r):
             continue
         size_raw = (r.get(size_col) or "") if size_col else ""
         if not KIDS_SIGNAL_RE.search(title) and not KIDS_AGE_RE.search(size_raw):

@@ -972,6 +972,158 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/278210765932",  # tottenham-retro-2020-home: player print "KANE 10"
     "/itm/358103130098",  # egipto-retro-2018-home: player print "ELMOHAMADY 3"
 
+    # --- Daily pass 2026-10-06: Sport is Good ES/FR, OTHER SPORTS on football
+    # national-team keys. Found by scanning each pick's own feed `description`,
+    # which states the sport outright ("la pasión del rugby sudafricano", "los
+    # apasionados del balonmano") while the TITLE says only "Maillot Domicile
+    # France 2025/26" and the collision scan sees nothing. The supplier is the
+    # same tell 10-05 named: France football is NIKE, Italy football is ADIDAS,
+    # South Africa football is ADIDAS -- so an adidas "France", a Macron
+    # "Italie" and a Nike "Sudáfrica" are all a different sport's shirt.
+    # 6 of these 9 picks were ALREADY LIVE on the real football fichas from
+    # earlier nightly passes (fra-home-2026, fra-away-2026, ita-home-2026,
+    # francia-training-202526) and were removed in this pass.
+    # Blocklisted by manufacturer style code per the 10-02 rule -- the ES
+    # mirror's deep link is an opaque `pclick.php?p=<id>`, so the code only
+    # appears in its aw_image_url, which is exactly why is_manually_excluded()
+    # takes the image URL alongside the link.
+    "iu4616",        # Nike South Africa RUGBY (Springboks) LS home 26/27 -- mined as sudafrica|home
+    "kg7514",        # adidas France HANDBALL away 26/27 -- mined as francia|away
+    "jp4334",        # adidas France HANDBALL home 25/26 (ES listing) -- mined as francia|home
+    "jp4335",        # adidas France HANDBALL home 25/26 (FR listing, same shirt) -- francia|home
+    "jp4256",        # adidas France HANDBALL training 25/26 (both mirrors) -- francia|training
+    "jy0843",        # adidas France RUGBY away 25/26 -- mined as francia|away
+    "700092080001",  # Macron ITALY RUGBY home 25/26 -- mined as italia|home
+
+    # 2026-10-06, PlanetFoot: the Spain 26/27 home+away sold as a "Lamine
+    # Yamal 19" PLAYER PRINT, not the plain kit. 10-05 flagged exactly these
+    # two and dropped them by hand; they came straight back, so per the
+    # README's own rule a class that recurs gets a blocklist entry. One
+    # substring covers both colourways and any future variant of it.
+    "-lamine-yamal-19-",
+
+    # 2026-10-06, segunda vuelta del mismo barrido: la pasada de MUJER tenia
+    # la misma contaminacion y nadie la habia mirado. `francia-third-women` y
+    # `francia-training-women` estaban hechas ENTERAS de camisetas de balonmano
+    # femenino de Francia (sus dos unicas ofertas cada una), asi que las dos
+    # fichas se borraron -- no son cartas vacias, son productos que no debian
+    # existir, y el README dice explicitamente que en ese caso NO va alias.
+    # KF1713 aparecio al re-correr el pick: con el balonmano fuera, el
+    # siguiente candidato de `francia|home` era la camiseta de RUGBY autentica
+    # de Francia. Es la razon por la que este filtro se mide dos veces -- sacar
+    # un falso positivo puede destapar otro abajo.
+    "kl2448",          # adidas Francia BALONMANO femenino third 26/27
+    "jp4290",          # adidas Francia BALONMANO femenino entrenamiento 25/26
+    "kf1713",          # adidas Francia RUGBY home autentica 25/26
+    "smug6s00490frv",  # Macron Francia VOLEIBOL femenino visitante ("FRV" = France Volley)
+    "smug6s06800frv",  # Macron Francia VOLEIBOL femenino local
+
+    # --- Daily pass 2026-10-06, eBay US/IT/ES ---
+    # CURRENT: equipos equivocados y prendas que no son la camiseta del kit.
+    "/itm/407145733240",  # egipto|third: es el LIVERPOOL third con estampado "Mohamed Salah" (Salah es egipcio)
+    "/itm/920002876538",  # qatar|away: adidas ORIGINALS (trefoil + "climacool"), prenda de calle, no el kit Nike de la QFA
+    "/itm/800187841012",  # costamarfil|home: el titulo vende "Home / Away" en un solo anuncio y la foto es la BLANCA (away)
+    "/itm/336494790316",  # celtic|away IT: el titulo dice "DIFETTO" -- prenda con falla, ademas temporada vieja
+    "/itm/318851042431",  # intermiami|home IT: estampado de jugador "Lionel Messi #10"
+    "/itm/407208681946",  # chivas|away IT: "personalizzata" -- camiseta ya personalizada con nombre/numero
+    # RETRO: colisiones de nombre que solo vio el team_collision_scan, mas repros.
+    # OJO -- las colisiones Qatar/PSG y Qatar/Argentina de esta noche NO van en
+    # esta lista, por la misma razon que las dos de Irlanda del Norte de mas
+    # arriba: los cuatro anuncios (PSG third /itm/127925627465, PSG prematch
+    # /itm/117117031483, PSG juvenil /itm/389944753123 y Argentina 2023
+    # /itm/126714555022) son camisetas LEGITIMAS de equipos que SI estan en el
+    # catalogo, y dos de ellas ya estaban vivas en su ficha correcta
+    # (`psg-home-kids` y `argentina-retro-2023-home`). Bloquear por id las
+    # habria matado ahi tambien, y ademas refresh.py habria dejado de
+    # refrescarles el precio para siempre.
+    #
+    # REGLA, de esta pasada: el id del anuncio solo va a la lista negra cuando
+    # la prenda es mala en CUALQUIER clave -- estampado de jugador, no es una
+    # prenda, reproduccion, foto que no muestra la camiseta, talle de nino en
+    # ficha de adulto, otro deporte. Si el problema es solo que se minó bajo la
+    # clave equivocada y el equipo de verdad existe en el catalogo, lo que se
+    # excluye es la CLAVE (5o argumento de refresh.py), nunca el anuncio.
+    # OJO -- dos anuncios de IRLANDA DEL NORTE minados tambien bajo `irlanda`
+    # (/itm/318888620547 current y /itm/396561239768 retro 2020) NO van en esta
+    # lista, aunque la colision de equipo sea real: los dos son camisetas
+    # GENUINAS que el mismo barrido fileteo correctamente bajo
+    # `irlandadelnorte`, que es un TeamKey que si existe en el catalogo. Esta
+    # lista casa por URL y no sabe de claves, asi que bloquear el item por id
+    # habria borrado tambien la oferta BUENA. Para una colision donde el equipo
+    # de verdad SI esta en el catalogo, lo que corresponde es excluir la clave
+    # equivocada (5o argumento de refresh.py), no el anuncio. Distinto del caso
+    # LDU Quito/Kerala Blasters mas arriba, donde el club real no existe aca y
+    # el anuncio no tiene ninguna ficha correcta a la que ir.
+    "/itm/388913928460",  # iran|home|2022: es INGLATERRA con estampado Rashford ("World Cup Vs Iran")
+    "/itm/178421219869",  # celtic|home|2024/25: "AliExpress ... Sublimata" -- repro sublimada sin licencia (mismo item en IT y ES)
+    "/itm/397555334594",  # celtic|home|2006: estampado de jugador "Shunsuke Nakamura"
+    # Seis camisetas del INTER DE MILAN minadas bajo `internacional` (Inter de
+    # Porto Alegre), todas ademas con estampado "#9 Icardi". La colision de
+    # nombre Internacional/Inter no estaba documentada todavia; va aca entera.
+    "/itm/158307975077",  # internacional|home|2014/15 -> Inter de Milan #9 Icardi
+    "/itm/158307956076",  # internacional|home|2015/16 -> Inter de Milan #9 Icardi
+    "/itm/158310565096",  # internacional|home|2017/18 -> Inter de Milan #9 Icardi
+    "/itm/158173904347",  # internacional|away|2018/19 -> Inter de Milan #9 Icardi
+    "/itm/158158536075",  # internacional|away|2013/14 -> Inter de Milan #9 Icardi
+    "/itm/158194960717",  # internacional|third|2015/16 -> Inter de Milan #9 Icardi
+
+    # --- Daily pass 2026-10-06, eBay KIDS ---
+    "/itm/297303150327",  # irlanda|home kids: Umbro con patrocinio EIRCOM (1996-2008) -- retro en la pasada actual,
+                          # y las fichas de ninos llevan season "2026" fija, asi que entraria fechada mal
+    "/itm/204247419112",  # chivas|home kids: roja lisa con "GUADALAJARA" al pecho -- la primera de Chivas es a RAYAS
+                          # rojiblancas; esta es una alternativa, y de una temporada vieja
+    "/itm/318032057089",  # clubamerica|home kids: "ALVARO FIDALGO NOME SET NUMERI" -- lleva nombre y numero estampados
+    "/itm/236792022317",  # intermiami|away kids: la foto es ROSA, que es la PRIMERA de Inter Miami, no la suplente
+
+    # --- Daily pass 2026-10-06, RETRO descartados (21 claves / 21 anuncios) ---
+    "/itm/158233687935",  # camerun|away|2016/17: ANTALYASPOR (club turco) bajo clave de Camerun + estampado "#9 Eto'o"
+    "/itm/158185197769",  # camerun|home|2015/16: ANTALYASPOR + estampado "#9 Eto'o"
+    "/itm/158240131475",  # camerun|home|2016/17: ANTALYASPOR + estampado "#9 Eto'o"
+    "/itm/156483440373",  # camerun|home|2020/21: "Forces Armees Et Police" -- equipo militar/policial, no la seleccion
+    "/itm/257395446445",  # egipto|away|2020/21: AL AHLY (club) bajo clave de seleccion; el club no existe como TeamKey
+    "/itm/278360551610",  # egipto|home|2021/22: AL AHLY (club) bajo clave de seleccion
+    "/itm/315860674909",  # guinea|home|2015/16: estampado de jugador "HEITA #15"
+    "/itm/304090566471",  # hibernian|away|2019/20: estampado de jugador "Christian Doidge"
+    "/itm/185870160992",  # iran|home|2016/17: MALAVAN (club irani) bajo clave de seleccion
+    "/itm/188889958159",  # lagalaxy|away|2007: estampado de jugador "Beckham #23"
+    "/itm/404777153620",  # orlandocity|home|2018: estampado de jugador "Yoshimar Yotun"
+    "/itm/407269014547",  # palmeiras|third|2017: el titulo dice "Replica (Nueva)" -- reproduccion moderna vendida como retro
+    "/itm/236723044880",  # portlandtimbers|away|2023/24: "giovane" = talle juvenil
+    "/itm/387169359979",  # porto|home|2019/20: "Giovanile (Bambini)" = ninos; el filtro de texto tenia "bambino" pero no "bambini"
+    "/itm/168511233943",  # rangers|away|1989: es QPR (QUEENS PARK RANGERS), no el Rangers de Glasgow
+    "/itm/226822301314",  # rangers|away|2013: es QPR otra vez, ademas con "#42"
+    "/itm/396647995674",  # rangers|away|1990: "SCORE DRAW" -- marca de reproducciones retro con licencia, no la prenda de epoca
+    "/itm/267778035809",  # charlton|away|2003/05: la foto es la camiseta ROJA con escudo del Charlton = su PRIMERA, no la suplente
+    "/itm/335710717959",  # hibernian|away|2020/21: la unica foto es la BOLSA Macron precintada: la prenda no se ve nunca
+    "/itm/168304250079",  # qatar|away|2022/23: la unica foto es una bolsa precintada con una etiqueta de papel: la prenda no se ve
+    "/itm/257770547452",  # rangers|away|2011/12: foto SOLO DE ESPALDA, estampado "BUTCHER 6", y ademas AZUL (color de la primera)
+
+    # --- Daily pass 2026-10-06, eBay GB retro: 20 de 106 con estampado de
+    # jugador o talle de nino. El filtro nuevo (has_player_print /
+    # GB_SINGLE_AGE_RE en ebay_gb_retro.py) habria refusado 18 de estos 20
+    # en origen; van igual a la lista negra porque el state file guarda los
+    # picks ya encontrados y apply() los re-chequea contra esta lista.
+    "/itm/236619315959",  # alhilal-retro-201415-away: AL Hilal Long Sleeve Away Football Shirt 2014-2015 (M) #77 Samaras Jer
+    "/itm/178538467108",  # argentina-retro-200607-home: Argentina Football Shirt 2006/2007/2008 Messi 19 Reissue Home Mens 3XL
+    "/itm/189038811132",  # portugal-retro-2016-away: 🚨 LAST ONE | Portugal Nike Away 2016 T-shirt | Ronaldo #7 ⭐️ | Small ✅
+    "/itm/800436393055",  # tottenham-retro-1991-home: Tottenham Hotspur 1991 Home Shirt Sheringham #10 Umbro NWT XL
+    "/itm/257516483694",  # inglaterra-retro-2004-away: Original England Away Football Shirt Jersey 2004 Beckham 7 Adults XL W
+    "/itm/377387363219",  # manutd-retro-200910-home: Manchester United Rooney #10 Football Shirt Home Kit 2009/10 Size Medi
+    "/itm/366333243086",  # chelsea-retro-2011-away: Chelsea Football Club 2011 2012 Away Shirt Fernando Torres 9  Adidas S
+    "/itm/137796825754",  # chelsea-retro-2021-away: Chelsea Away 2021 Football Shirt - UK Size 13 Years (XL) - RRP £64.99.
+    "/itm/376374696965",  # juventus-retro-2024-home: JUVENTUS 2024 2025 HOME FOOTBALL SHIRT #4 GATTI ADIDAS JERSEY SIZE M
+    "/itm/137722361574",  # arsenal-retro-2006-away: Nike Arsenal 2006 away Shirt Vieira 4 Burgundy Adult Size M Long Sleev
+    "/itm/366695241279",  # arsenal-retro-201112-away: Arsenal 2011/12 Away Jersey Mikel Arteta #8 125th Anniversary Edition 
+    "/itm/278072039106",  # arsenal-retro-2024-away: NWT 2024 2025 Arsenal Adidas away football shirt SAKA 7 mens Large
+    "/itm/157996671853",  # chelsea-retro-201314-away: BNWT CHELSEA 2013/2014 AWAY  SHIRT - Adidas - Men’s Small #10 MATA
+    "/itm/398041385825",  # manutd-retro-201718-third: Manchester United 2017/18 Third Shirt Dewitt 10 XL New Tags Defects
+    "/itm/157270917443",  # realmadrid-retro-200405-away: RONALDO 9 Real Madrid Shirt  XL - 2004/2005 - Adidas Away Jersey authe
+    "/itm/117416415041",  # villarreal-retro-201011-home: 2010-11 Villarreal Home Shirt Cazorla #8
+    "/itm/398431466587",  # juventus-retro-200304-away: BNWT Juventus 2003/04 Away Shirt Del Piero 10 (L)
+    "/itm/287257495598",  # atleticomadrid-retro-201415-home: BNWT Nike Atlético Madrid Griezmann 7 2014/15 home Football Shirt Play
+    "/itm/206604950998",  # acmilan-retro-199798-home: AC Milan Maldini Home 1997-98 Retro Football Shirt Jersey Lotto 23\" P
+    "/itm/178325023362",  # mexico-retro-201516-away: Adidas Mexico Away Shirt 2015/16 #14 Chicharito Football Shirt
+
 ]
 
 

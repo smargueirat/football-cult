@@ -45,6 +45,13 @@ STORE = "eBay GB"
 KITS = {"home", "away", "third", "goalkeeper"}
 GB_KIDS_EXTRA_RE = extract.KIDS_EXTRA_RE  # definicion compartida, ver extract.py
 
+# La edad suelta SIN rango. KIDS_SIGNAL_RE de extract.py exige un RANGO
+# ("13-14 Years") justamente para no confundirlo con una temporada, pero eBay
+# UK escribe tambien el talle unico: "Chelsea Away 2021 Football Shirt - UK
+# Size 13 Years (XL)" entro como camiseta de adulto el 2026-10-06. Pide la
+# palabra "year(s)" pegada al numero, que una temporada nunca lleva.
+GB_SINGLE_AGE_RE = re.compile(r"\b(?:size\s*)?([0-9]|1[0-7])\s*(?:yrs?|years?)\b", re.I)
+
 # Sufijo de CLUB en el titulo. Segundo filtro contra la colision pais/club,
 # para los clubes que no estan en TEAM_PATTERNS: "Sint-Truidense HVV ...
 # Belgium", "FC Chaves ... Portugal", "GWANGJU FC (South Korea)". Solo se
@@ -101,7 +108,9 @@ def search_model(client, t, team_en, teams, types, nationals):
         # ebay_mine_full.py's mine_retro.
         if extract.WOMEN_SIGNAL_RE.search(title) or extract.KIDS_SIGNAL_RE.search(title):
             continue
-        if GB_KIDS_EXTRA_RE.search(title):
+        if GB_KIDS_EXTRA_RE.search(title) or GB_SINGLE_AGE_RE.search(title):
+            continue
+        if has_player_print(title) or NOT_A_GARMENT_RE.search(title):
             continue
         hit = extract.match_team(title, teams)
         if not hit or hit[0] != t["team"]:
@@ -149,6 +158,55 @@ def search_model(client, t, team_en, teams, types, nationals):
         best["sizes"] = sizes or ["M", "L"]
         best["shipping"] = shipping if shipping is not None else 0.0
     return best
+
+
+
+# --- Estampado de jugador / prenda que no es la camiseta (agregado 2026-10-06) ---
+# Esta pasada no tenia NINGUN filtro de estampado: el 10-05 se cayeron 19 de 103
+# a mano y el 10-06 otros 20 de 106 (~19% las dos veces), siempre lo mismo
+# -- "Vieira 4", "Arteta #8", "RONALDO 9", "#14 Chicharito", "MALDINI 3". El
+# miner retro normal no las trae; este si, porque busca el MODELO de una ficha
+# que ya existe y el vendedor le pone el nombre del jugador al titulo.
+#
+# Dos formas: "#N" suelto (un numero con almohadilla es practicamente siempre
+# dorsal) y "<Palabra> N". La segunda necesita lista de parada o se come la
+# marca y la talla: medido sobre los 106 titulos de esta noche, sin ella marca
+# de mas "Lotto 23\" Pit to Pit" (medida en pulgadas) y "Football Shirt 1 Star"
+# (la estrella del escudo). Con ella: 19 de 20 reales, 0 falsos positivos.
+PRINT_STOPWORDS = {
+    # marcas
+    "lotto", "adidas", "nike", "puma", "umbro", "kappa", "castore", "joma",
+    "macron", "hummel", "mizuno", "errea", "score", "draw", "diadora",
+    "newbalance", "balance", "reebok", "charly", "mitre", "admiral",
+    # palabras de catalogo / talle / medida
+    "shirt", "jersey", "size", "sizes", "years", "year", "edition", "anniversary",
+    "kit", "home", "away", "third", "season", "age", "chest", "pit", "width",
+    "length", "boys", "girls", "men", "mens", "women", "womens", "small",
+    "medium", "large", "vintage", "retro", "football", "soccer", "maglia",
+    "camiseta", "maillot", "trikot", "top", "number", "sleeve", "cup", "world",
+    "league", "serie", "liga", "rrp", "bnwt", "nwt", "new", "tags", "player",
+    "version", "authentic", "replica", "star", "stars", "fc", "afc", "cf",
+}
+_NAME_NUM_RE = re.compile(r"\b([A-Za-z][A-Za-z'\-]{2,})\s+#?(\d{1,2})\b(?!\s*[\"\u2033])")
+_HASH_NUM_RE = re.compile(r"#\s?\d{1,2}\b")
+NOT_A_GARMENT_RE = re.compile(
+    r"name\s*set|nameset|heat\s*(press|transfer)|\bonly\s+patch\b|\bbadge\s+only\b", re.I)
+
+
+def has_player_print(title):
+    """True si el titulo delata un dorsal/nombre estampado."""
+    if _HASH_NUM_RE.search(title):
+        return True
+    for m in _NAME_NUM_RE.finditer(title):
+        word = m.group(1).lower()
+        if word in PRINT_STOPWORDS:
+            continue
+        # un ano suelto ("Shirt 2024 25") no es dorsal: group(2) ya limita a 2
+        # digitos, pero "19" puede ser parte de "1997-98" partido por el regex
+        if re.search(re.escape(m.group(0)) + r"\s*[/-]\s*\d", title):
+            continue
+        return True
+    return False
 
 
 def esc(s):

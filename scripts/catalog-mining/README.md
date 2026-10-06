@@ -4537,3 +4537,201 @@ sacaron. Quedan **18**, todas únicas de su ficha: sacarlas dejaría 18 cartas
 vacías nuevas (ya hay 117 y nada las poda), así que se dejan a propósito y se
 anotan acá en vez de cambiar ese comportamiento de callado. Duplicados entre
 fichas: **112, uno menos que HEAD**.
+
+## Daily pass (2026-10-06) -- la descripción del feed dice el deporte, y bloquear por id de anuncio no sabe de claves
+
+Los 16 feeds Awin de camisetas + las 5 tiendas Rakuten de Brasil + las 2 de
+TradeTracker + una tanda de `ebay_mine_cycle.py` por mercado (rotación US, IT,
+ES -- día del año 279 mod 3 = 0). Soicos salteado otra vez -- no hay
+`claude-in-chrome`. Umbro (MID 41001) sigue ausente del listado FTP de Rakuten
+(21ª pasada). **Pro:Direct ES y UK salteados**: sus archivos semanales tienen
+~50 h, muy por encima de la regla de 24 h. **29 fichas nuevas netas**
+(0 CSV, 1 mujer, 1 niños, 4 eBay current, 24 eBay retro, menos 2 fichas de
+otro deporte borradas y 3 des-creadas por el diff de URLs duplicadas --
+6731 -> 6756 bloques); `tsc`/id duplicado/URL duplicada/build limpios,
+`check_women_type`/`check_retro_season`/`check_club_in_national`/
+`check_retro_kit`/`check_gear_ids` OK.
+
+**Los tres mercados de eBay completaron 20/20 con cero 429** -- US 342/387
+ciclo 4, IT 317/387 ciclo 1, ES 305/387 ciclo 1. `rate_limit/` marcaba
+`buy.browse 4340/5000` a las 06:10 UTC (antes del corte de las 07:00). Señal
+de go/no-go nada más, como insisten las pasadas anteriores.
+
+### El hallazgo: la `description` del feed dice el deporte, y nadie la leía
+
+Sport is Good ES/FR (y Foot-Store) traen una `description` que nombra el
+deporte con todas las letras -- *"la pasión del rugby sudafricano"*, *"los
+apasionados del balonmano"* -- mientras el TÍTULO dice solamente "Maillot
+Domicile France 2025/26" y `category_name` viene VACÍA. Ni el título, ni
+`team_collision_scan.py`, ni la foto en miniatura delatan nada.
+
+Resultado: **15 picks de otro deporte esta noche** (9 adultos + 6 de mujer), y
+**10 ya estaban VIVOS en `products.ts`** metidos por pasadas anteriores --
+balonmano de Francia en `fra-home-2026` y `francia-training-202526`, rugby de
+Francia en `fra-away-2026`, rugby de Italia en `ita-home-2026`. Las fichas
+`francia-third-women` y `francia-training-women` estaban hechas **enteras** de
+camisetas de balonmano femenino (sus dos únicas ofertas cada una): se borraron
+como productos, sin alias, que es lo que manda la sección de estabilidad de ids
+para algo que no debía existir.
+
+La pista que ya nombraba el 10-05 es el PROVEEDOR -- Francia juega al fútbol de
+NIKE, Italia y Sudáfrica de ADIDAS, así que una "France" de adidas, una
+"Italie" de Macron y una "Sudáfrica" de Nike son de otro deporte -- pero eso no
+se automatiza. La descripción sí. `extract.py` ahora tiene `is_other_sport()`,
+llamado en los dos bucles de pick (adulto y niños) justo al lado de
+`is_manually_excluded()`:
+
+**regla: se descarta si la descripción nombra otro deporte Y NO nombra fútbol.**
+
+Las dos mitades importan. Medido sobre los 2259 picks de la noche con
+descripción legible: rechaza 11 y los 11 son reales, **0 falsos positivos**. La
+segunda del Barcelona 25/26 (homenaje a Kobe Bryant, la copia habla de
+"baloncesto") y la de Estados Unidos del Mundial 2026 (cuya copia traducida
+dice "fútbol americano") sobreviven las dos porque su descripción también dice
+fútbol/LaLiga/Mundial.
+
+**La primera versión del filtro tenía un bug que se vio solo al re-correr**:
+usaba `coupe` y `premier` como palabras de fútbol, y en francés *"la coupe
+moderne et ajustée"* es el CORTE de la prenda, no la Copa. Un maillot de RUGBY
+de Francia (adidas KF1713) pasó limpio por eso. Peor: KF1713 apareció recién
+**después** de sacar el balonmano, porque `pick_best` eligió el siguiente
+candidato, que también era rugby. **Sacar un falso positivo puede destapar
+otro abajo: hay que volver a medir, no asumir.** Ahora las copas van con nombre
+completo (`coupe du monde`, `copa del mundo`) y `premier` es `premier league`.
+14 controles positivos/negativos verificados antes de aplicar.
+
+### Bloquear por id de anuncio no sabe de claves -- y eso borra ofertas buenas
+
+`manual_exclusions.py` casa por SUBSTRING DE URL, así que una entrada
+`/itm/<id>` vale para TODAS las claves a la vez. Dos anuncios de **Irlanda del
+Norte** se minaron bajo `irlanda` (uno current, en el set ADD; uno retro 2020)
+y los bloqueé por id. El re-armado del retro lo destapó: el mismo item se había
+minado **también** bajo `irlandadelnorte`, que es un TeamKey real del catálogo,
+donde la camiseta es CORRECTA. La entrada habría matado las dos.
+
+Al barrer el catálogo después salió que el problema era más grande: entre las
+entradas nuevas de la noche había 4 que bloqueaban camisetas legítimas, **dos
+de ellas vivas en su ficha correcta** (`psg-home-kids` y
+`argentina-retro-2023-home`, de las colisiones Qatar/PSG y Qatar/Argentina).
+Además de borrarlas, `refresh.py` habría dejado de refrescarles el precio para
+siempre, porque también consulta esta lista.
+
+**Regla nueva, escrita en el archivo**: el id del anuncio va a la lista negra
+sólo cuando la prenda es mala en CUALQUIER clave -- estampado de jugador, no es
+una prenda, reproducción, foto que no muestra la camiseta, talle de niño en
+ficha de adulto, otro deporte. Si el problema es sólo que se minó bajo la clave
+equivocada **y el equipo de verdad existe en el catálogo**, se excluye la CLAVE
+(5º argumento de `refresh.py`), nunca el anuncio. Distinto del caso LDU
+Quito/Kerala Blasters, donde el club real no está acá y el anuncio no tiene
+ninguna ficha correcta a la que ir.
+
+### `ebay_gb_retro.py` no tenía filtro de estampado: 20 de 106, otra vez
+
+El 10-05 se cayeron 19 de 103 a mano; esta noche **20 de 106** (~19% las dos
+veces), siempre lo mismo: "Vieira 4", "Arteta #8", "RONALDO 9", "#14
+Chicharito". Tercera pasada consecutiva arreglándolo a mano, así que ahora el
+script lo filtra: `has_player_print()` (un `#N` suelto, o `<Palabra> N` con
+lista de parada) más `NOT_A_GARMENT_RE` y `GB_SINGLE_AGE_RE` (la edad suelta
+sin rango -- `KIDS_SIGNAL_RE` exige un RANGO para no confundirlo con una
+temporada, y "UK Size 13 Years (XL)" entró como adulto).
+
+Medido sobre los 106 títulos reales de la noche: **refusa 18, exactamente los
+que había que refusar, 0 colaterales**. La lista de parada no es opcional --
+sin ella marca `Lotto 23" Pit to Pit` (medida en pulgadas) y `Football Shirt 1
+Star` (la estrella del escudo). Los 2 que el filtro NO caza siguen siendo
+cosa de la foto: un `AC Milan Maldini Home 1997-98` cuya foto es **sólo de
+espalda** con "MALDINI 3" -- el título nombra al jugador pero nunca el dorsal.
+
+### `npm run build` se quedó sin heap
+
+El build falló con `FATAL ERROR: Ineffective mark-compacts near heap limit` en
+el paso de TypeScript, a ~2046 MB, que es el heap por defecto de Node.
+`npx tsc --noEmit` solo pasa limpio: no son los tipos, es el tamaño del
+catálogo. Con `--max-old-space-size=8192` compila sin problema. Como el cron
+nocturno corre `npm run build` pelado y habría fallado igual todas las noches,
+la bandera quedó dentro del script `build` de `package.json`.
+
+### El resto
+
+**Los feeds CSV dieron CERO productos nuevos**, medido. De 26 conflictos de
+temporada: 6 byte-idénticos a una oferta ya en archivo (AdidasPT Newcastle +
+Juventus "Tiro 25", Inter Miami en los dos BSTN, PlanetFoot Nashville) y el
+link del Alavés de ForumSport también ya estaba; `noruega|home` de Foot-Store
+ES/FR es el mismo descarte de stock viejo desde el 09-13 (**12ª** pasada);
+`flamengo|home` es adidas **JM5651 contra JM5652** por 5ª vez; la foto de
+`barcelona|prematch` de ForumSport sigue fechada `20240702` en su propio
+nombre de archivo (**6ª** pasada); y las dos de España 26/27 de PlanetFoot son
+estampados **"Lamine Yamal 19"** -- el 10-05 las descartó a mano y volvieron,
+así que ahora hay entrada en la lista negra. Shop Real Betis repite por **7ª**
+vez: `size` vacío en las 1931 filas, mismo corte 1149 agotadas / 782 vivas.
+DecathlonIE y ProSoccer, ceros genuinos como siempre.
+
+**Rakuten: las cinco pasaron el chequeo del trailer `TRL|` a la primera
+mientras `curl` salía 18 ("transfer closed") en las cinco** -- otra vez la
+demostración de por qué la regla es mirar el trailer y no el código de salida.
+
+eBay current: **4 fichas nuevas** -- Hibernian away 25/26 (Joma, escudo de 150
+años, patrocinio Bevvy.com), Botafogo third 2026 y Fluminense third 2026 (las
+dos con proveedor y patrocinador correctos), y **Botafogo arquero 2026**, que
+venía como conflicto pero la foto muestra un **Mizuno** contra el **Reebok**
+25 en archivo: cambio real de proveedor, misma clase que el arquero de Chivas
+del 10-05. 3 conflictos verificados como la MISMA camiseta fueron a la ficha
+existente (Atlético Mineiro local y visitante, Fluminense visitante: Brasil
+juega por año calendario). 9 descartes: Liverpool con estampado de Salah bajo
+`egipto`, PSG bajo `qatar` tres veces (Qatar Airways es su patrocinador), un
+"Ivory Coast Home / Away" cuyo anuncio vende las dos camisetas y cuya foto es
+la blanca, un Qatar de adidas **Originals** (trefoil + "climacool"), un Celtic
+que el título marca "DIFETTO", un Inter Miami con "Messi #10" y un Chivas
+"personalizzata". Niños: 16 picks, **1 ficha nueva** (Austria local, Puma,
+escudo de la ÖFB), 5 descartes -- incluido un Inter Miami "away" cuya foto es
+**ROSA**, que es su primera, y un Irlanda genuino pero con patrocinio **eircom**
+(1996-2008) sobre una ficha que lleva `season: "2026"` fijo.
+
+Retro: 434 claves distintas / 473 ofertas; la lista negra refusó 12 picks al
+armar. 368 claves fueron a fichas existentes (266 insertadas, 46 refrescadas,
+92 ya en archivo por URL, **4 bloques con ageGroup correctamente rechazados**
+por la guarda del 10-01). De 64 NEW: 10 gemelas de año simple re-claveadas
+sobre la ficha de dos años, 8 descartadas por ambiguas, 1 plegada intra-tanda,
+45 revisadas por foto -> **24 creadas**. De los 21 descartes, 17 salieron del
+título (Antalyaspor con "#9 Eto'o" bajo `camerun` ×3, Al Ahly bajo `egipto` ×2,
+**QPR bajo `rangers` ×2**, Malavan bajo `iran`, un equipo militar como selección
+de Camerún, estampados, "Score Draw" que es marca de reproducciones) y 4 de la
+foto: un Charlton vendido como visitante que es su **primera roja**, un
+back-only con "BUTCHER 6" que además es AZUL, y **dos cuya única foto es la
+bolsa precintada** -- la prenda no se ve nunca.
+
+El diff de URLs duplicadas encontró **6 colisiones nuevas**, todas resueltas:
+3 fichas de dos años creadas esta noche que duplicaban una de año simple ya en
+archivo (Peñarol 2022, Club América 1988 y 2001 -- la clase del 10-03 que el
+chequeo de gemelas no ve porque sólo corre sobre claves NUEVAS de año simple),
+una oferta de PSV repetida, un Pulisic de EE.UU. que se había colado en una
+ficha de Qatar, y el item de Irlanda del Norte que **había pisado la oferta
+real de Irlanda** en `irlanda-retro-201920-away` -- restaurada desde HEAD, la
+trampa exacta que describe el 10-04. Neto **115 duplicados, igual que HEAD**.
+Bloques sin ninguna oferta: **116, uno menos que los 117 de HEAD**.
+
+Barrido retroactivo de la lista negra: 11 ofertas sacadas (las 6 de otro
+deporte más 5 que quedaron tras bloquear los Icardi y el Celtic de AliExpress).
+Quedan **31 ofertas en 20 fichas** donde son la única oferta: sacarlas crearía
+20 cartas vacías nuevas, así que se dejan a propósito, igual que el 10-05.
+
+`ebay_check_stale.py`: **16 de 200 muertas (8%)**, de vuelta debajo de la banda
+9,5-12% del mes, después del 15,5%-40% de la última semana.
+
+Botas: 149 nuevas / 118 bajas / 790 cambios de precio, legacy `{fe_kept: 44,
+forum_kept: 50}`, 70 fundidas vía 308, color `ok: 11, errors: 0`, sin WARNING
+de FutbolEmotion, y la guarda de aborto del 10-03 no saltó. ProSoccer minó 0
+otra vez (tiene 0 ofertas en `boots.ts` también en HEAD). Equipamiento: guantes
+16/6/348, pelotas 22/14/597, ropa 305/164/5231, entrenamiento 13/13/1324.
+Entradas: 21 altas, 19 bajas, de 2570 -- **Gigsberg rechazada por vieja otra
+vez** (última importación 09-09, 27 días, límite 7). Wikidata no resolvió
+ninguno de los 59 estadios, así que `venue_cities.json` queda igual por 12ª vez
+de 13. Bajadas de precio: 15570 en las siete secciones (camisetas 287, botas
+744, entradas 3689, ropa 8292, guantes 491, pelotas 880, entrenamiento 1191);
+Telegram publicó 3. Colores dominantes: 54 nuevos, 0 errores. GTIN: 2385 de
+15555 ofertas (15,3%).
+
+Nota operativa: el enumerado genérico de `AWIN_FEED_URL_*` sigue bajando
+`TICKETNET_DE` (2,4 MB) aunque el programa cerró el 2026-09-01 y
+`mine_tickets.py` sólo usa UK y US. La variable sigue en `.env.local`; sacarla
+de ahí es lo que corta la descarga.
