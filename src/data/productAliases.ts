@@ -10,6 +10,9 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-06: el mismo anuncio estaba en dos fichas
+  // (dedupe_same_url.py); la que quedó vacía redirige a la de su temporada.
+  "juventus-goalkeeper-home-202627": "juv-goalkeeper-third-202526",
   // 2026-09-30: fichas de selección que solo tenían camisetas de club (Rangers en
   // Escocia, "Jordan" PSG en Jordania...); redirigen a la ficha del club que las tiene.
   "alemania-retro-201718-third": "schalke04-retro-201718-third",
