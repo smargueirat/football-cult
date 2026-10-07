@@ -510,6 +510,8 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   // productos no comprables a usuarios fuera de España/Portugal.
   AdidasES: ["ES"],
   AdidasPT: ["PT"],
+  // adidas.cl (feed Awin 79922, aprobado 2026-10-06): solo envía dentro de Chile.
+  AdidasCL: ["CL"],
   // Decathlon operates separate regional storefronts per country
   // (decathlon.ie for Ireland, decathlon.co.uk for the UK, etc.), same
   // pattern as adidas's regional sites above -- decathlon.ie's own order
@@ -605,6 +607,7 @@ export const STORE_LOCALE: Partial<Record<string, Locale>> = {
   FootStoreES: "es",
   SportIsGoodES: "es",
   AdidasPT: "pt",
+  AdidasCL: "es",
   FansJerseyHub: "en",
   FootStoreFR: "fr",
   SportIsGoodFR: "fr",

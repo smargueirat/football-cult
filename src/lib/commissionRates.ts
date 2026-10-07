@@ -73,6 +73,8 @@ const RATES: Record<string, number> = {
   // Marcas y grandes superficies: pagan menos que las especializadas.
   AdidasES: 0.06,
   AdidasPT: 0.06,
+  // Sin dato publicado para adidas CL: se asume igual que AdidasES/PT hasta ver el EPC real en Awin.
+  AdidasCL: 0.06,
   DecathlonIE: 0.03,
   // Publicado en sus propios términos: 8% a precio completo, 5% en
   // rebajas. Casi todo lo que mostramos de ellos está rebajado.
