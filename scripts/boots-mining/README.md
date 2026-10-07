@@ -4,7 +4,7 @@ Keeps `src/data/boots.ts` prices/tallas/fotos actualizados contra los
 feeds Awin/Google-Shopping ya aprobados que tienen botas reales: adidas
 ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda, Deporte
 Outlet, Pro Soccer (USD), Gigasport DE/CH/FR, Clovis Calçados BR (BRL),
-Reebok DE,
+Reebok DE, adidas CL (CLP),
 más FutbolEmotion (TradeTracker) desde un snapshot manual. Reusa el
 mismo cache de feeds (`/tmp/feeds/*.csv`) que el scan diario de
 camisetas ya descarga -- no hace su propia descarga.
@@ -47,10 +47,25 @@ gratis desde 50 EUR, si no 5,99. Lo que Reebok llama Elite/League,
 Pro:Direct lo llama Premier/Club: el EAN las funde igual. Se mina después de
 Pro:Direct para que esas fichas conserven su id.
 
+## adidas Chile (2026-10-07)
+
+Awin aid 79922, feed en español de Chile (`/tmp/feeds/ADIDAS_CL.csv`, una fila
+por talla, precios en CLP, que el scan ya baja por la enumeración de
+`AWIN_FEED_URL_*`). `mine_adidas_cl()` toma `merchant_category` "Zapatos de
+Fútbol/..." con `custom_1 == "Adult"` (las de niño son "Kids") y agrupa por
+estilo (= color, código de fabricante como el de adidas ES, ej. "IH7154"): por
+eso se funde con adidas ES/PT por `style` en `merge_by_code()`. Trampas: el
+`product_name` viene duplicado y con un bug de reemplazo de color en la segunda
+mitad ("PRojoator"), se usa solo la primera mitad; las tallas son "US 8.5" /
+"US H 8.5 / M 9.5" (hombre) o "US 5" (Mujer = hombre + 1.5) y se pasan a EU con
+la tabla UK->EU de adidas (formato "42 2/3" como adidas ES). Envío: el feed no
+trae costo y adidas.cl bloquea el fetch (WAF 403), no se pudo medir -> 0 =
+"no publicado", mismo criterio que Decathlon IE/Clovis.
+
 ## Monedas reales por tienda
 
 Todas las tiendas ES/IE/FR/DE/CH cobran en EUR. Pro Soccer cobra en USD
-(su storefront real, no un EUR fabricado). Nike CL cobra en CLP, Nike AR
+(su storefront real, no un EUR fabricado). Nike CL y adidas CL cobran en CLP, Nike AR
 y Puma AR en ARS. Clovis Calçados BR cobra en BRL (único store de botas
 en reales, mismo motivo que Pro Soccer en USD). `BootCurrency`/
 `BOOT_CURRENCY_TO_EUR` en `boots.ts`/`src/lib/offerMoney.ts` siguen el
@@ -214,7 +229,7 @@ vale la pena.
   `mine_footstore_awin`, `mine_decathlon_ie` (esquema Awin clásico),
   `mine_google_shopping_fr` (Foot-Store FR/Sport is Good FR, esquema
   Google Shopping), `mine_deporte_outlet`, `mine_prosoccer` (USD),
-  `mine_gigasport` (DE/CH/FR), `mine_clovis` (BR, BRL, ver sección
+  `mine_gigasport` (DE/CH/FR), `mine_adidas_cl` (CL, CLP, ver sección dedicada arriba), `mine_clovis` (BR, BRL, ver sección
   dedicada arriba), `mine_futbolemotion` (TradeTracker, ver snapshot
   manual arriba).
 - `refresh_boots.py` — orquesta todo el pipeline de arriba, es el único

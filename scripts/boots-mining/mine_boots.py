@@ -978,6 +978,86 @@ def mine_reebok_de():
         n += 1
     print('Reebok DE:', n)
 
+# ---------- adidas Chile (Awin 79922, aprobado 2026-10-07) ----------
+# Feed en pesos chilenos (CLP), una fila por talla. Botas = categoría
+# "Zapatos de Fútbol/..." con custom_1 == "Adult" (las de niño son "Kids").
+# El product_name del feed viene duplicado y con un bug de reemplazo de
+# color ("PRojoator" por Predator) en la segunda mitad: se usa solo la primera.
+# Tallas "US 8.5" / "US H 8.5 / M 9.5" (hombre) o "US 5" (Mujer = hombre + 1.5);
+# se pasan a EU con la tabla real de adidas (UK -> EU, 1 UK = 4/3 EU), mismo
+# formato "42 2/3" que adidas ES. Talla desconocida: se omite, no se inventa.
+# El feed no trae costo de envío y adidas.cl está detrás de un WAF que bloquea
+# el fetch (403), así que no se pudo medir: shipping 0 = "no publicado", mismo
+# criterio que DecathlonIE/Clovis (no se inventa un número).
+CL_PREFIX_RE = re.compile(r'^(zapatos|zapatillas|calzado)(\s+de)?(\s+f[uú]t?bo[lL])?\s+', re.I)
+
+def cl_model(title):
+    t = re.sub(r'^adidas\s+', '', title.strip(), flags=re.I)
+    first = t.split()[0].lower()
+    parts = re.split(rf'\s+(?={re.escape(first)}\s)', t, maxsplit=1, flags=re.I)
+    return CL_PREFIX_RE.sub('', parts[0]).strip()
+
+def cl_eu_size(v, female):
+    m = re.match(r'US\s+(?:H\s+)?(\d+(?:\.\d+)?)', v.strip())
+    if not m:
+        return None
+    uk = float(m.group(1)) - (1.5 if female else 0.5)
+    eu = 36 + (uk - 3.5) * 4 / 3
+    if uk < 3.5 or uk > 14 or abs(uk * 2 - round(uk * 2)) > 1e-9:
+        return None
+    whole, frac = int(eu + 1e-9), round(eu - int(eu + 1e-9), 2)
+    return str(whole) + {0.0: '', 0.33: ' 1/3', 0.67: ' 2/3'}[frac]
+
+def infer_ground_cl(title):
+    t = title.lower()
+    if re.search(r'terreno firme\s*/\s*(pasto|terreno) artificial', t):
+        return 'FG/AG'
+    if re.search(r'terreno firme|firm ground', t):
+        return 'FG'
+    if re.search(r'pasto (artificial|sint[eé]tico)|terreno artificial', t):
+        return 'AG'
+    return 'MG' if 'multiterreno' in t else ''
+
+def mine_adidas_cl():
+    if not os.path.exists(f"{FEEDS}/ADIDAS_CL.csv"):
+        print('AdidasCL: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/ADIDAS_CL.csv", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            if not (row.get('merchant_category') or '').startswith('Zapatos de Fútbol') or row.get('custom_1') != 'Adult':
+                continue
+            if row.get('in_stock') != '1' or EXCLUDE_KEYWORDS.search(row.get('product_name') or ''):
+                continue
+            style = (row.get('merchant_product_id') or '').rsplit('-', 1)[0]
+            if style and parse_price(row.get('search_price')):
+                groups.setdefault(style, []).append(row)
+    n = 0
+    for style, rows in groups.items():
+        rep = min(rows, key=lambda r: parse_price(r['search_price']))
+        model = cl_model(rep['product_name'])
+        female = rep.get('Fashion:suitable_for') == 'Female'
+        sizes = {}
+        for r in rows:
+            eu = cl_eu_size(r.get('Fashion:size', ''), female)
+            if eu:
+                sizes[eu] = r
+        sizes = dict(sorted(sizes.items(), key=lambda kv: size_sort_key(kv[0])))
+        prices = [parse_price(r['search_price']) for r in sizes.values()] or [parse_price(rep['search_price'])]
+        entry = {
+            'store': 'AdidasCL', 'brand': 'Adidas', 'model': model, 'groundType': infer_ground_cl(model),
+            'price': min(prices), 'shipping': 0, 'currency': 'CLP',
+            'url': rep['aw_deep_link'], 'imageUrl': rep['aw_image_url'], 'sizes': list(sizes),
+            'eans': sorted({(r.get('product_GTIN') or '').strip() for r in rows} - {''}),
+            'style': style,
+        }
+        if max(prices) > min(prices):
+            entry['priceMax'] = max(prices)
+            entry['sizePrices'] = [{'size': k, 'price': p, 'url': r['aw_deep_link']} for (k, r), p in zip(sizes.items(), prices)]
+        results.append(entry)
+        n += 1
+    print('AdidasCL:', n)
+
 def legacy_model_names_from_boots_ts():
     """Nombres (en minúscula) de los 71 legacy, para que
     mine_futbolemotion() no los duplique. Lee boots.ts directo en vez de
@@ -1010,6 +1090,8 @@ if __name__ == '__main__':
     # Después de Pro:Direct: las Reebok que ya tenía (mismo EAN) suman su
     # oferta a esa ficha y la ficha conserva su id.
     mine_reebok_de()
+    # adidas CL (CLP): sus botas comparten código de estilo con adidas ES/PT.
+    mine_adidas_cl()
 
     # Guardia real, un solo punto para las 13 tiendas de arriba (mismo
     # espíritu que EXCLUDE_KEYWORDS): sin foto la card sale como caja
