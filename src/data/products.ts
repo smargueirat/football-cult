@@ -189,6 +189,7 @@ export type TeamKey =
   | "penarol"
   | "nacional"
   | "colocolo"
+  | "udechile"
   | "ajax"
   | "psveindhoven"
   | "feyenoord"
@@ -2650,6 +2651,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-third-soccer-jersey-2026%3Fvariant%3D67561601335401", title: "Germany Third Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/GermanyThirdShirt2026.jpg?v=1790646464" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-germany-2026-third-shirt-black-mens-replica-4005130", title: "adidas Originals Germany 2026 Third Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005130_list.jpg?v=1791068532" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=46230293481&a=3013769&m=79922", title: "Tercera Camiseta Alemania 26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2d709c95d64448459c2d62670a91fe96_9366%2FTercera_Camiseta_Alemania_26_Negro_KS5261_21_model.jpg&feedId=95016&k=c9cd40d00b0b29668b23d8cbda3f33ab9f6d5d40" },
     ],
   },
 {
@@ -20675,6 +20677,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 80.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-argentina-2026-primera-equipacion-blanco-azul-hielo-azul-claro-equipaciones-oficiales-para-hombre-1042912", title: "Camiseta adidas Argentina 2026 Primera equipación", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1042912_main.jpg?v=1790768682" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-argentina-2026-home-shirt-white-icey-blue-light-blue-mens-replica-1042912", title: "adidas Argentina 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1042912_main.jpg?v=1790767611" },
       { store: "FansJerseyHub", price: 31.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fla-albiceleste-home-soccer-jersey-2026-world-cup%3Fvariant%3D43253849358441", title: "La Albiceleste Home Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/argentinahomefan.jpg?v=1781665665" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087120966&a=3013769&m=79922", title: "Camiseta Local Selección Argentina 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F841749a208934f2ab4a0cfa1a8ae237d_9366%2FCamiseta_Local_Seleccion_Argentina_26_Blanco_JM8396_21_model.jpg&feedId=95016&k=a4d2593a2e231aefc0beea4afd3d0086c2a2b9d4" },
     ],
   },
 {
@@ -20699,6 +20702,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 60.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46028206684&a=3013769&m=65906", title: "Camiseta Fuera de Casa Argentina Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2026_03_adidas_jm8395_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=0aae546cca90829dff61f38cbe004f520dea4b42" },
       { store: "eBay ES", price: 53.2, shipping: 22.02, currency: "EUR", url: "https://www.ebay.es/itm/137698414854?_skw=Argentina+away+soccer+jersey&hash=item200f771106%3Ag%3AlbYAAeSwYspqms6n&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Adidas Argentina 2026 Mundial para hombre talla XL", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/lbYAAeSwYspqms6n/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-argentina-2026-away-shirt-black-lucid-blue-blue-burst-mens-replica-1042932", title: "adidas Originals Argentina 2026 Away Shirt", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1042932_list.jpg?v=1791066208" },
+      { store: "AdidasCL", price: 53990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269449995&a=3013769&m=79922", title: "Camiseta Visitante Selección Argentina 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8379c4f319d34f948399a95e6f4b28ac_9366%2FCamiseta_Visitante_Seleccion_Argentina_26_Negro_JM8395_21_model.jpg&feedId=95016&k=ef5879776deefc145ace4844d5b4f4c0d1d3bf8e" },
     ],
   },
 {
@@ -20750,6 +20754,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 80.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-espana-2026-primera-equipacion-rojo-vivo-equipaciones-oficiales-para-hombre-1043103", title: "Camiseta adidas España 2026 Primera equipación", inStock: true, sizes: ["L"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1043103_main.jpg?v=1790675663" },
       { store: "BSTNUK", price: 115.99, shipping: 0.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=45950118541&a=3013769&m=104985", title: "Spain 26 Home Authentic Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aimg.bstn.com%2Fpdp-zoom%2Fadidas%2Fadidas-spain-home-authentic-jersey-jn4366-0345534%2FJN4366%2FJN4366-01.jpg&feedId=99347&k=0885b4c4390c3a37728511e742db3000c9c0c078" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-spain-2026-home-shirt-vivid-red-mens-replica-1043103", title: "adidas Spain 2026 Home Shirt", inStock: true, sizes: ["S", "M", "L", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043103_main.jpg?v=1790675269" },
+      { store: "AdidasCL", price: 84990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43138374889&a=3013769&m=79922", title: "Camiseta Local España 26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F866664f412bb4443bca790fed9c9f0a3_9366%2FCamiseta_Local_Espana_26_Rojo_JN4390_21_model.jpg&feedId=95016&k=4a7f3b3b4185a67b418f171fb263297f7cfcc13e" },
     ],
   },
 {
@@ -20812,6 +20817,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44926291670&a=3013769&m=77026", title: "Camisola Real Madrid 26/27 Home", inStock: true, sizes: ["M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc548a2002b64469790374b51af279885_9366%2FCamisola_Real_Madrid_26-27_Home_Branco_KC3989_21_model.jpg&feedId=92150&k=8f217614e6a25c2336cc2f9eecd936094e887866" },
       { store: "Amazon", price: 90.1, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FWJGXGVF?tag=footballcult-21", title: "adidas Jersey Local Real Madrid 26/27 para Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/61fRhKFxU5L._AC_UL1000_.jpg" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Freal-madrid-primera-equipacion-2026-2027-white", title: "Camiseta adidas Real Madrid Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/327179/750/camiseta-adidas-real-madrid-primera-equipacion-2026-2027-white-1.jpg" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44916006905&a=3013769&m=79922", title: "Camiseta Local Real Madrid 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd469289ff63043dfa85dda7aac99125f_9366%2FCamiseta_Local_Real_Madrid_26-27_Blanco_JZ7206_21_model.jpg&feedId=95016&k=f69feee49b07d01b20080e4a9ebcc8e5f6b85eed" },
     ],
   },
 {
@@ -20875,6 +20881,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 70.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-alemania-2026-primera-equipacion-blanco-equipaciones-oficiales-para-hombre-1042961", title: "Camiseta adidas Alemania 2026 Primera equipación", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1042961_main.jpg?v=1790840610" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-germany-2026-home-shirt-white-mens-replica-1042961", title: "adidas Germany 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1042961_main.jpg?v=1790840572" },
       { store: "FansJerseyHub", price: 48.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgermany-home-full-soccer-jersey-kit-2026-world-cup%3Fvariant%3D42748816556137", title: "Germany Home Full Soccer Jersey Kit 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Germany_Home_Jersey_Full_Kit_World_Cup_2026_2.webp?v=1765780949" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087120787&a=3013769&m=79922", title: "Camiseta Local Alemania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fad8d788b983145b9913d29c68367ecd6_9366%2FCamiseta_Local_Alemania_26_Blanco_KD8363_21_model.jpg&feedId=95016&k=f7083ae65fe7cf792c52610e5f2a97a14036c86f" },
     ],
   },
 {
@@ -20902,6 +20909,7 @@ const productsData = [
       { store: "FootStoreES", price: 71.44, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43087831527&a=3013769&m=65912", title: "Camisa Local Italia Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jl6937-boblue-6a847fe833c5a-1.jpg&feedId=89032&k=88e58418f29dcaa8cc05de9af4aec4c8c480191f" },
       { store: "FootStoreFR", price: 68.05, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjl6937-maillot-domicile-italie-coupe-du-monde-2026-boblue", title: "Maillot Domicile Italie Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jl6937-boblue-6a847fe833c5a-1.webp" },
       { store: "SportIsGoodES", price: 44.99, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43301927934&a=3013769&m=65906", title: "Camisa Local Italia Coupe du Monde 2026", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jl6937-boblue-6a847fe833c5a-1.jpg&feedId=89044&k=88e58418f29dcaa8cc05de9af4aec4c8c480191f" },
+      { store: "AdidasCL", price: 33990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121013&a=3013769&m=79922", title: "Camiseta Local Italia 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa470ba4060364cb19104c2870b69de5b_9366%2FCamiseta_Local_Italia_26_Azul_JL6937_21_model.jpg&feedId=95016&k=043d92d7ce3f3710f1fd7d15c9d3ea57a4b0da36" },
     ],
   },
 {
@@ -21239,6 +21247,7 @@ const productsData = [
       { store: "eBay IT", price: 53.54, shipping: 22.91, currency: "EUR", url: "https://www.ebay.it/itm/147501192686?_skw=Germany+away+soccer+jersey&hash=item2257c195ee%3Ag%3AP5IAAeSw0KxqfS6s&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Germany DFB Deutschland 2026 Adidas Away Soccer Jersey Shirt Kit JN2074 Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/P5IAAeSw0KxqfS6s/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 65.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-originals-alemania-2026-segunda-equipacion-azul-marino-equipaciones-oficiales-para-hombre-1042983", title: "Camiseta adidas Originals Alemania 2026 Segunda equipación", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1042983_list.jpg?v=1790840612" },
       { store: "Pro:Direct Soccer", price: 70.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-germany-2026-away-shirt-collegiate-navy-mens-replica-1042983", title: "adidas Originals Germany 2026 Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1042983_list.jpg?v=1790840503" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450426&a=3013769&m=79922", title: "Camiseta Visitante Alemania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa3eb6fcc22434146abe924050e0a91ad_9366%2FCamiseta_Visitante_Alemania_26_Azul_JN2074_21_model.jpg&feedId=95016&k=3476b0bc32a39a9af317e85927d11a20dcd58925" },
     ],
   },
 {
@@ -21660,6 +21669,7 @@ const productsData = [
       { store: "eBay ES", price: 63.84, shipping: 25.29, currency: "EUR", url: "https://www.ebay.es/itm/377527364920?_skw=Italy+away+soccer+jersey&hash=item57e6626d38%3Ag%3ANJ8AAeSw-zpquZMR&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol visitante Italia Italia FIGC Adidas auténtica 2026 JL6938 2XL XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/NJ8AAeSw-zpquZMR/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 65.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-originals-italia-2026-segunda-equipacion-azul-aereo-equipaciones-oficiales-para-hombre-1043020", title: "Camiseta adidas Originals Italia 2026 Segunda equipación", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1043020_list.jpg?v=1791070115" },
       { store: "Pro:Direct Soccer", price: 70.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-italy-2026-away-shirt-aero-blue-mens-replica-1043020", title: "adidas Originals Italy 2026 Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043020_list.jpg?v=1791069694" },
+      { store: "AdidasCL", price: 33990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450233&a=3013769&m=79922", title: "Camiseta Visitante Italia 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F946cf4b72eb24d3ba83fbddcfe4ec3f0_9366%2FCamiseta_Visitante_Italia_26_Azul_KC8704_21_model.jpg&feedId=95016&k=60df42c605235d3dad5668091cada9a245e38222" },
     ],
   },
 {
@@ -22230,6 +22240,7 @@ const productsData = [
       { store: "eBay", price: 47.25, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/128012593855?_skw=Argentina+home+soccer+jersey+kids+youth&hash=item1dce252abf%3Ag%3APvIAAeSwrptqc4Al&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbeB99IzA6jGs6wZ8dMGMo4vFvbpKEek7m5IuJQYX2VIwJu7A%2B3mz2i2QvY89evFZ%2BwuFP1jg42GTXGahahMu64zPwO0gN%2B7qyfdrfGy9x3nP8EKNvIjcP0r%2FnUBWpIJLN4ZrIPFPYY0pZuaBS3s4M1eXB%2BeEXaCmOwC9pgD4JK8AOacqzyQ%2F5kOCpGEXMtnYHxsNU7WkXohLHUjhQjGP%2FIti1lpIbYfu%2FWl8brFMZDd4H9S%2F3dE3jSJovYZSEyWjog8pMFvVZ0oe%2BQIgi9hYe8T9MMcCdhpNJn%2BgxgV8da9qe9xJz7Ig2PTJhHwkuKDXY%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ARGENTINA 26 HOME AUTHENTIC KIDS JERSEY KA4285 NWT Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/PvIAAeSwrptqc4Al/s-l1600.jpg" },
       { store: "eBay IT", price: 64.26, shipping: 24.34, currency: "EUR", url: "https://www.ebay.it/itm/198553243082?_skw=Argentina+home+soccer+jersey+kids+youth&hash=item2e3ab20dca%3Ag%3AHVsAAeSwQOlqdWV4&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia Adidas Youth Kids Argentina Lionel Messi #10 2026 Home Replica. Taglia - XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/HVsAAeSwQOlqdWV4/s-l1600.jpg" },
       { store: "eBay ES", price: 37.24, shipping: 15.13, currency: "EUR", url: "https://www.ebay.es/itm/820093090380?_skw=Argentina+home+soccer+jersey+kids+youth&hash=itembef15b7a4c%3Ag%3AOjEAAeSw7zhqnOWG&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYpZknwqkezat1U%2FK8ZX8yzQGSSsowx2mK6he9jv7szjjMuPGJkliYYuSDWPwFMrBOo%2FSl7sFVdo9RbEOCEGLOjHvWLww%2BAqZV883kpAC9L%2BYkYXenbaUhx6TRxtuXutDztPr9ihOYkY3KCXl86oECOE0UPGwAqwCq4GeRJ31LH42hilSmJ%2FvD8uG%2BSBrG8JiPI12qGq5vl%2BHYe5DNbJE966O5paXvN8%2FCtwtuD87cuctcZrbbUpdFBrtoj%2BOTFdDDWzu6juT1uUIHjt69dLDxOFFOavp%2BGPteAOdQWk6xz6cZxNEoyzoobaa%2BvSz7hNmg%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta y conjunto corto de fútbol local de Argentina para niños jóvenes Lionel Messi #10 tallas 18-28", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/OjEAAeSw7zhqnOWG/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121143&a=3013769&m=79922", title: "Camiseta Local Selección Argentina 26 Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Faaf8ea7f53fb4a29821f76c49604fa73_9366%2FCamiseta_Local_Seleccion_Argentina_26_Ninos_Blanco_KA8119_20_01_model.jpg&feedId=95016&k=68577f3c04d0cc2df3063d5b5392aa9a98442d2b" },
     ],
   },
 {
@@ -22326,6 +22337,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 45.49, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn8525-maillot-domicile-enfant-bayern-munich-2025-26-red", title: "Maillot Domicile enfant Bayern Munich 2025/26", inStock: false, sizes: ["7-8"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn8525_3_apparel_on_model_standard_view_white.jpg" },
       { store: "eBay", price: 24.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/314266609586?_skw=Bayern+Munich+home+soccer+jersey+kids+youth&hash=item492bbfe7b2%3Ag%3AfOwAAOSwi1hjkz4p&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Official FC Bayern Munchen Home Jersey #17  Sadio Mane Red Youth L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/fOwAAOSwi1hjkz4p/s-l1600.jpg" },
       { store: "eBay ES", price: 26.59, shipping: 27.01, currency: "EUR", url: "https://www.ebay.es/itm/314266609586?_skw=Bayern+Munich+home+soccer+jersey+kids+youth&hash=item492bbfe7b2%3Ag%3AfOwAAOSwi1hjkz4p&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nueva Camiseta Oficial FC Bayern Munchen local #17 Sadio Mane roja juvenil L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/fOwAAOSwi1hjkz4p/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44747405456&a=3013769&m=79922", title: "Camiseta Local FC Bayern 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa3d8247aec33406fa9a7c0d577b06bdc_9366%2FCamiseta_Local_FC_Bayern_26-27_Ninos_Rojo_JZ3098_20_01_model.jpg&feedId=95016&k=4048273e74343f7db4c6204db89d8feb307d46c4" },
     ],
   },
 {
@@ -22650,6 +22662,7 @@ const productsData = [
       { store: "eBay", price: 32.8, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/298449081200?_skw=Juventus+home+soccer+jersey+kids+youth&hash=item457cf39370%3Ag%3AWIAAAeSw6MZqPBb0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Juventus Home Soccer Jersey Youth 11-12Y FK2882", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/WIAAAeSw6MZqPBb0/s-l1600.jpg" },
       { store: "eBay IT", price: 42.91, shipping: 15.3, currency: "EUR", url: "https://www.ebay.it/itm/297729352318?_skw=Juventus+home+soccer+jersey+kids+youth&hash=item45520d627e%3Ag%3ABHcAAOSwrdRoEXqt&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Juventus Maglia Calcio Home Youth Taglia L JSY IB0490 Nuova con etichette", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BHcAAOSwrdRoEXqt/s-l1600.jpg" },
       { store: "eBay ES", price: 42.71, shipping: 15.34, currency: "EUR", url: "https://www.ebay.es/itm/297729352318?_skw=Juventus+home+soccer+jersey+kids+youth&hash=item45520d627e%3Ag%3ABHcAAOSwrdRoEXqt&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Adidas Juventus local juvenil talla L JSY IB0490 NUEVA CON ETIQUETAS", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/BHcAAOSwrdRoEXqt/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44721282001&a=3013769&m=79922", title: "Camiseta Local Juventus 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4951aed01920412ebb3c5a1c58e3781f_9366%2FCamiseta_Local_Juventus_26-27_Ninos_Blanco_KB8836_20_01_model.jpg&feedId=95016&k=bdbd482aa6e87885ea2b4f7c54a0acb2176266b7" },
     ],
   },
 {
@@ -22686,6 +22699,7 @@ const productsData = [
       { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/146732942863?_skw=Liverpool+away+soccer+jersey+kids+youth&hash=item2229f7060f%3Ag%3AMGMAAeSwlvxohW1E&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGarNfe7g6JyXZLo2ZAjiQwZN8oAsO17aK27QIx1rQf3Amy5vC9WhY0G0ItBOA5pz5lJK83%2By2Pej8fZwtZtJhk7D5x%2BMcMPI5iYSnwVR7C02soE9HlLbipJCTZ4jUsYz9%2B3vzd3HhUWyX%2FsV0UaHw4nHSsErOSz3ySwXTyKY8oBhdm8ZNzhLX0Wn5NMkk9n8XRuD25KGk1KuVDj5qN%2BJTxLnPpf8y%2BCTm9ju0ZHtDxagrlo2UrbpKC4ZEtoo9tcEFNyKbejy35NUsqMkfIduvzL0Hmx%2FhrRlz%2B36X61Bdm3FAptT6TQtt%2FiNgUsdzcKiGA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Liverpool FC Jersey Attard Youth Medium Purple Soccer Away LFC ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/MGMAAeSwlvxohW1E/s-l1600.jpg" },
       { store: "eBay IT", price: 45.6, shipping: 15.36, currency: "EUR", url: "https://www.ebay.it/itm/117051112402?_skw=Liverpool+away+soccer+jersey+kids+youth&hash=item1b40ca3bd2%3Ag%3AivEAAOSwVidh4JeT&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio Nike Youth Unisex Liverpool Away. Unisex ragazzo taglia: XSmall", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/ivEAAOSwVidh4JeT/s-l1600.jpg" },
       { store: "eBay ES", price: 42.56, shipping: 21.67, currency: "EUR", url: "https://www.ebay.es/itm/146732942863?_skw=Liverpool+away+soccer+jersey+kids+youth&hash=item2229f7060f%3Ag%3AMGMAAeSwlvxohW1E&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGarNfe7g6JyXZLo2ZAjiQwZN8oAsO17aK27QIx1rQf3Amy5vC9WhY0G0ItBOA5pz5lJK83%2By2Pej8fZwtZtJhk7D5x%2BMcMPI5iYSnwVR7C02soE9HlLbipJCTZ4jUsYz99EvMURjBmWSGpitKBuoKPqh5KCmpEaYhk9ZHwkqObPzIIQcx3D5C6CG6NwcEu0tW99XV49z2nEBXfUGBPT3mZs5xmAjVq1FeFo9%2BxfhrwwIRbQZXke8BeiWfRYJ3gxpUI%2F5HXuJ4%2BuRWu%2FlB4iB2PNekLHUDWPVuY9cuHe7EzurYx06gtyejJa04CAgE1T4UQ%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nueva Camiseta Liverpool FC Attard Juvenil Mediana Púrpura Fútbol Visitante LFC ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/MGMAAeSwlvxohW1E/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45405663525&a=3013769&m=79922", title: "Camiseta Visitante Liverpool FC 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdcfc203786ad4bffb2bd0a9b10431d4b_9366%2FCamiseta_Visitante_Liverpool_FC_26-27_Ninos_Blanco_KB8302_21_model.jpg&feedId=95016&k=73ae9bde0a98a5d4a7d08d8a4db6945b2c7f57c6" },
     ],
   },
 {
@@ -22722,6 +22736,7 @@ const productsData = [
       { store: "eBay", price: 44.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178144288469?_skw=Liverpool+home+soccer+jersey+kids+youth&hash=item297a3a1ed5%3Ag%3AfpAAAeSwJy5qCo8z&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Liverpool FC 25/26 Long Sleeve Home Jersey Youth Sz SM 9-10 yrs", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/fpAAAeSwJy5qCo8z/s-l1600.jpg" },
       { store: "eBay IT", price: 64.31, shipping: 27.57, currency: "EUR", url: "https://www.ebay.it/itm/168536425143?_skw=Liverpool+home+soccer+jersey+kids+youth&hash=item273d8dc2b7%3Ag%3AT-cAAeSwkB5qVuoF&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZO7MWDndKz1T1jlCRpKUgCKTo24lIIXFivD7uqp%2FFvSxYSH5QrsD8ocb8lLiiBbcKxLcSv0VffgfxTgW6UK0fVuZ4AM8Hr%2BKiW3LPNgTa1BAcg3YxCMFCWtML0uKQW8bDw0aL3R9wSp%2BZaSWRtuQ%2FILQ6fKZyPWLuKVSyctN6EVfhHqHQpy%2Fa9r34LCPpF9S4n8%2F9cuFB7DoF6aRdnX64NV%2BoUPC5JOkm33tlVvZ4hXxOPUclOMSyXcdwYlVMPSFkkEbZZwR%2FqjmKDLjsM8CcR1evJmD1A1fyB8WcDQ60Efd8gvlsBfBADbLNV1K1G49A%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia Adidas Liverpool FC Youth Small Red Wirtz 7 Home Kit JV6436 maglia calcio", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/T-cAAeSwkB5qVuoF/s-l1600.jpg" },
       { store: "eBay ES", price: 47.88, shipping: 28.18, currency: "EUR", url: "https://www.ebay.es/itm/178144288469?_skw=Liverpool+home+soccer+jersey+kids+youth&hash=item297a3a1ed5%3Ag%3AfpAAAeSwJy5qCo8z&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva local Adidas Liverpool FC 25/26 manga larga juvenil talla SM 9-10 años", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/fpAAAeSwJy5qCo8z/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44786004467&a=3013769&m=79922", title: "Camiseta Local Liverpool FC 26/27 para Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5976e8a41d794362b46f462733af5e27_9366%2FCamiseta_Local_Liverpool_FC_26-27_para_Ninos_Granate_KB8255_20_01_model.jpg&feedId=95016&k=1c143bcbb67d348ff4393480f3bd9052416c52e6" },
     ],
   },
 {
@@ -22793,6 +22808,7 @@ const productsData = [
       { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/277211381379?_skw=Manchester+United+home+soccer+jersey+kids+youth&hash=item408b15fe83%3Ag%3AkVoAAeSwXotoT6Df&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Manchester United Home Football Soccer Jersey Shirt Premier League Kids", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/kVoAAeSwXotoT6Df/s-l1600.jpg" },
       { store: "eBay IT", price: 64.37, shipping: 18.54, currency: "EUR", url: "https://www.ebay.it/itm/137745975665?_skw=Manchester+United+home+soccer+jersey+kids+youth&hash=item20124cc971%3Ag%3AtoYAAeSwPKNqq1ry&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nuova con etichette - Maglia calcio Adidas Manchester United Home taglia XS 7-8 Youth Premier League", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/toYAAeSwPKNqq1ry/s-l1600.jpg" },
       { store: "eBay ES", price: 31.92, shipping: 21.4, currency: "EUR", url: "https://www.ebay.es/itm/277211381379?_skw=Manchester+United+home+soccer+jersey+kids+youth&hash=item408b15fe83%3Ag%3AkVoAAeSwXotoT6Df&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol local Adidas Manchester United Premier League niños", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/kVoAAeSwXotoT6Df/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44757869384&a=3013769&m=79922", title: "Camiseta Local Manchester United 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F903f6db12f8b4ec4af8adeb9f1e6c289_9366%2FCamiseta_Local_Manchester_United_26-27_Ninos_Rojo_KC4796_20_01_model.jpg&feedId=95016&k=36f3a00e1e7e4fedec51d01a00da7547cd40bf3c" },
     ],
   },
 {
@@ -22913,6 +22929,7 @@ const productsData = [
       { store: "eBay", price: 48.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267302933389?_skw=Real+Madrid+away+soccer+jersey+kids+youth&hash=item3e3c7f138d%3Ag%3A9EcAAeSwTHlpXCLx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Real Madrid Youth Stadium Away Soccer Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/9EcAAeSwTHlpXCLx/s-l1600.jpg" },
       { store: "eBay IT", price: 85.82, shipping: 28.73, currency: "EUR", url: "https://www.ebay.it/itm/365750238207?_skw=Real+Madrid+away+soccer+jersey+kids+youth&hash=item552869bbff%3Ag%3AaugAAeSwfk9ofsgF&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas KROOS Real Madrid Maglia Calcio Away, CG0570, Tech Onix, Youth Taglia XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/augAAeSwfk9ofsgF/s-l1600.jpg" },
       { store: "eBay ES", price: 70.75, shipping: 17.64, currency: "EUR", url: "https://www.ebay.es/itm/168715630241?_skw=Real+Madrid+away+soccer+jersey+kids+youth&hash=item27483c36a1%3Ag%3Ay%7EcAAeSw1yVqeolx&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Adidas Real Madrid 2026/27 nueva con etiqueta niños jóvenes 11-12 M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/y~cAAeSw1yVqeolx/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45369150748&a=3013769&m=79922", title: "Camiseta Visitante Real Madrid 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6088cccdf65b43489c5891a823e83d22_9366%2FCamiseta_Visitante_Real_Madrid_26-27_Ninos_Verde_KC3991_20_01_model.jpg&feedId=95016&k=233cc53fd94cb1be70eb2aa5c46a3d944d3bfde3" },
     ],
   },
 {
@@ -22947,6 +22964,7 @@ const productsData = [
       { store: "eBay", price: 34.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188841103021?_skw=Real+Madrid+home+soccer+jersey+kids+youth&hash=item2bf7ce8ead%3Ag%3AFkQAAeSwhYZqjhgm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Sizes/ Vinicius Jr 7 Real Madrid Home Jersey Set (Kid Size 18)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/FkQAAeSwhYZqjhgm/s-l1600.jpg" },
       { store: "eBay IT", price: 53.59, shipping: 18.29, currency: "EUR", url: "https://www.ebay.it/itm/267752048126?_skw=Real+Madrid+home+soccer+jersey+kids+youth&hash=item3e574405fe%3Ag%3AQpoAAeSwZy5qeK3u&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Real Madrid 2025/26 Home Jersey Taglia Youth 13-14Y Nuova con etichette $80", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/QpoAAeSwZy5qeK3u/s-l1600.jpg" },
       { store: "eBay ES", price: 36.18, shipping: 21.47, currency: "EUR", url: "https://www.ebay.es/itm/188841102151?_skw=Real+Madrid+home+soccer+jersey+kids+youth&hash=item2bf7ce8b47%3Ag%3AFkQAAeSwhYZqjhgm&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZ%2BQbDKaYAbHly%2Bzb7bF9QTm%2Ft6P%2FqF25gEcmRD6kSKunb%2FrCrhWdNv7PGkEsis3qwkJbd3XDrgiSIMrxK4xxeA4NxSIU2wqgX75%2FTb6nK0hXGl91TqbpZqWGFqq7QI5xrH8VMPNKg%2B9kHJ4Eb78eXquLDWOfxnhIEIjpb8qZSqhHy6wQ7kfojUZl%2FXY8sMCGsunvmjeXJD42ik6O5E5L%2B7g4%2FmJHWP39o4Aum%2BcD7YKUuvsWHeHizN5nfBB3p55ly%2FuOueDJKbPk6rhBaRSB%2Btt1xpi8BF6AnfKKBFiv9hXJ%2Fw1OW6KcuGaC04%2F5ZnJyg%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Conjunto de camiseta local del Real Madrid tallas juveniles/Vinicius Jr 7 (talla infantil 16)", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/FkQAAeSwhYZqjhgm/s-l1600.jpg" },
+      { store: "AdidasCL", price: 24990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=41533029505&a=3013769&m=79922", title: "Camiseta Local Real Madrid 25/26", inStock: true, sizes: ["7-8", "9-10", "13-14"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F279a309bfe484183ac7cc90f4f1b6a1a_9366%2FCamiseta_Local_Real_Madrid_25-26_Blanco_JN8887_21_model.jpg&feedId=95016&k=b58378961fc3a8e6f3f4041f4b552e3b4c0678fe" },
     ],
   },
 {
@@ -22967,6 +22985,7 @@ const productsData = [
       { store: "PlanetFoot", price: 49.95, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-real-madrid-third-junior-2025-26-bleu%3Fvariant%3D51325515858261", title: "Maillot Real Madrid Third Junior 2025/26 Bleu", inStock: false, sizes: ["5-6", "7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-third-real-madrid-25-26-junior-adidas-planetfoot1.webp?v=1756477772" },
       { store: "eBay", price: 30.0, shipping: 7.25, currency: "USD", url: "https://www.ebay.com/itm/128100440967?_skw=Real+Madrid+third+soccer+jersey+kids+youth&hash=item1dd3619b87%3Ag%3AcuoAAeSwGGtquC0v&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Kylian Mbappé Youth 9-10 Real Madrid 25/26 Third Replica Player Jersey", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/cuoAAeSwGGtquC0v/s-l1600.jpg" },
       { store: "eBay ES", price: 31.92, shipping: 24.1, currency: "EUR", url: "https://www.ebay.es/itm/128100440967?_skw=Real+Madrid+third+soccer+jersey+kids+youth&hash=item1dd3619b87%3Ag%3AcuoAAeSwGGtquC0v&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva Adidas Kylian Mbappé juvenil 9-10 Real Madrid 25/26 tercera réplica jugador", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/cuoAAeSwGGtquC0v/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45585745252&a=3013769&m=79922", title: "Tercera Camiseta Real Madrid 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc7ac103029af49b99d7a0e13c6a534e1_9366%2FTercera_Camiseta_Real_Madrid_26-27_Ninos_Rosado_KC3966_20_01_model.jpg&feedId=95016&k=562eaa7a5a04e5bbbe4938981d81dc3b600186d3" },
     ],
   },
 {
@@ -23131,6 +23150,7 @@ const productsData = [
       { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800336153955?_skw=Arsenal+home+soccer+jersey&hash=itemba57c08d63%3Ag%3AZ7YAAeSwVDJqVWF%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Arsenal FC 2026/27 Home Soccer Jersey Kit Men's M L XL XXL New", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/Z7YAAeSwVDJqVWF~/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Farsenal-fc-primera-equipacion-2026-2027-better-scarlet", title: "Camiseta adidas Arsenal Fc Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/327030/750/camiseta-adidas-arsenal-fc-primera-equipacion-2026-2027-better-scarlet-1.jpg" },
       { store: "Pro:Direct ES", price: 90.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-arsenal-26-27-primera-equipacion-better-escarlata-equipaciones-oficiales-para-hombre-1054044", title: "Camiseta adidas Arsenal 26/27 Primera equipación", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1054044_list.jpg?v=1791063888" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44763500727&a=3013769&m=79922", title: "Camiseta Local Arsenal FC 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe6528a9d23f348579a16aa05dba72d2b_9366%2FCamiseta_Local_Arsenal_FC_26-27_Rojo_JZ3168_21_model.jpg&feedId=95016&k=e9963687752b87e8d19945ae3841b1a2a26e76ce" },
     ],
   },
 {
@@ -24511,6 +24531,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fel-tri-third-away-soccer-jersey-2026-world-cup%3Fvariant%3D47753112977513", title: "El Tri Third Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/mexicothird-1.jpg?v=1783246272" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-mexico-2026-third-shirt-black-mens-replica-1043903", title: "adidas Mexico 2026 Third Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043903_main.jpg?v=1790493167" },
       { store: "eBay IT", price: 135.45, shipping: 20.42, currency: "EUR", url: "https://www.ebay.it/itm/158242917445?_skw=Mexico+third+soccer+jersey&hash=item24d8034c45%3Ag%3ABq4AAeSwedVqtu4E&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYVlE5TMEtTAqc%2F0sXS%2BdS8D6KLVjHsZzos6KD0CtgZQBk%2FbmIPhuNOyOQEl%2B0HzY8lsQFEAISEPFs8EqnmmACuSHdRaWXWFgzTapmjkP3tKgyJOTmaCeBZ%2Fw%2BQeVrWNoPG33B%2FYCslRuOv41eT2KiRuCytoAc6RZvrDtdI56ewKj3rxH%2B1G6Bx%2Fj4AvL9xfjhTtHXWt5xixEGpaycGHT0NpK8Bwg92%2BQZSZwqoTn5WU9Asj3ASGR%2B5trwVPPklSf5wfWB2MQ8Y%2B3Prg9XyLwzOFkg9%2FNfykDQM71pKhvfw9Q%3D%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Mexico 26 Third Maglia Calcio JL8545 Manica Corta Nero - Uomo Taglia L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Bq4AAeSwedVqtu4E/s-l1600.jpg" },
+      { store: "AdidasCL", price: 84990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44892007662&a=3013769&m=79922", title: "Tercera Camiseta Selección Nacional de México 26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F00f27f4296f44de4be9ee2fde171f5e8_9366%2FTercera_Camiseta_Seleccion_Nacional_de_Mexico_26_Negro_JL8582_21_model.jpg&feedId=95016&k=f04167748757cc039f5b8e2aa1570516cab7abef" },
     ],
   },
 {
@@ -24898,6 +24919,7 @@ const productsData = [
       { store: "eBay", price: 40.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377345099039?_skw=Wales+home+soccer+jersey&hash=item57db85451f%3Ag%3ArXoAAeSwgblqaRYY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Wales National Team Soccer Jersey 2026 World Cup Home Red Cymru Large NWT", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/rXoAAeSwgblqaRYY/s-l1600.jpg" },
       { store: "eBay IT", price: 61.78, shipping: 29.27, currency: "EUR", url: "https://www.ebay.it/itm/278429914734?_skw=Wales+home+soccer+jersey&hash=item40d3b7566e%3Ag%3A98cAAeSw03dqwF8p&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Wales 26 Home Autentica Maglia Calcio Uomo KC2959 FIFA $150", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/98cAAeSw03dqwF8p/s-l1600.jpg" },
       { store: "eBay ES", price: 53.2, shipping: 15.78, currency: "EUR", url: "https://www.ebay.es/itm/128058264756?_skw=Wales+home+soccer+jersey&hash=item1dd0de0cb4%3Ag%3AgsUAAeSwvk9qmI3K&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol local Gales Adidas 2026 JL6925 Climacool talla XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/gsUAAeSwvk9qmI3K/s-l1600.jpg" },
+      { store: "AdidasCL", price: 33990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43365355903&a=3013769&m=79922", title: "Camiseta Local Gales 26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb140f2fc75b1455ebf0c9d69ff81c144_9366%2FCamiseta_Local_Gales_26_Rojo_JL6925_21_model.jpg&feedId=95016&k=5bf6526488d277849b9b3282fdf30d7eae3b68d9" },
     ],
   },
 {
@@ -24975,6 +24997,7 @@ const productsData = [
       { store: "eBay", price: 35.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/307062341404?_skw=Peru+away+soccer+jersey&hash=item477e577f1c%3Ag%3AtikAAeSwmaVqVU%7E9&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbWNm4lX2L1eZCf2PvHhzNIGb5FQ6qGBS6cmaDhUC0fKE7%2FiIosXSuW9g0bX2EOvE2%2BLkiPOuhfJx0XwkVkv7SBbCp%2FJIikHWoDvTdOB8GjcObuyk7EBXQZ9Cy4acSC8811RqmcDa%2FSB8dB8ZRG7Ae45GHEZv23884c7MlLYJaTXvPMxVEsAvRHZU9ovfp1ScPBF2dw8BD%2FIMJl4yKKP%2FKq%2FP3je2Y4nOWiRVI76jr%2BIygV%2Fx7i3qLwDO0wtySuNtBdectYgO8U6RMxFHjGXsaYHoN4XhjTiZn9QVUF%2BtTqHA%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Peru National Team adidas 2026 Away Jersey Black", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/tikAAeSwmaVqVU~9/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-peru-2026-away-shirt-black-mens-replica-1043100", title: "adidas Originals Peru 2026 Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043100_list.jpg?v=1791069238" },
       { store: "eBay ES", price: 38.69, shipping: 28.27, currency: "EUR", url: "https://www.ebay.es/itm/307062341404?_skw=Peru+away+soccer+jersey&hash=item477e577f1c%3Ag%3AtikAAeSwmaVqVU%7E9&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbWNm4lX2L1eZCf2PvHhzNIGb5FQ6qGBS6cmaDhUC0fKE7%2FiIosXSuW9g0bX2EOvE2%2BLkiPOuhfJx0XwkVkv7SBbCp%2FJIikHWoDvTdOB8GjcObuyk7EBXQZ9Cy4acSC88134gOGZq2B%2BPqR05zlFsnQAucOteLLck7dXgbrELBgVzapSMxCtvlHOlu4sMpoOd0UDew8U0AsoLGDAIs5RHRPm%2BB4v0agB%2BFCl0RQQWLhRCSScWMjFQQUJIYljx8jTFxUmf%2F3iFZsbMqZRzKVIrroeMccvM5S5jtJjx6Te2TJvw%3D%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de visitante adidas 2026 de la Selección Perú negra", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/tikAAeSwmaVqVU~9/s-l1600.jpg" },
+      { store: "AdidasCL", price: 38990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450228&a=3013769&m=79922", title: "Camiseta Visitante Selección Peruana 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F80e5b2631079420b90ee605feaf8c0bf_9366%2FCamiseta_Visitante_Seleccion_Peruana_26_Negro_JL8660_21_model.jpg&feedId=95016&k=bc9cf2df43a4117c9b6eab33c990a381eb9d9030" },
     ],
   },
 {
@@ -24996,6 +25019,7 @@ const productsData = [
       { store: "FootStoreES", price: 97.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44269897563&a=3013769&m=65912", title: "Maillot Externo Auténtico Chile Coupe du Monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kc6088_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=10ee99ae388fb8ad57b09ac09b5762d3a7f4c6cb" },
       { store: "SportIsGoodES", price: 80.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44270365728&a=3013769&m=65906", title: "Maillot Exterior Chile Coupe du Monde 2026", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fa%2Fd%2Fadidas_jl8739_1_apparel_photography_front_center_view_white.webp&feedId=89044&k=9ed50fee97cde8f0ea8177b2c5c915ad3946e5cb" },
       { store: "eBay IT", price: 91.27, shipping: 36.12, currency: "EUR", url: "https://www.ebay.it/itm/377529808437?_skw=Chile+away+soccer+jersey&hash=item57e687b635%3Ag%3AU10AAeSw03dquuiX&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Chile National Team 2026/27 Away Authentic Soccer Jersey Size Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/U10AAeSw03dquuiX/s-l1600.jpg" },
+      { store: "AdidasCL", price: 69990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450020&a=3013769&m=79922", title: "Camiseta Visitante Selección Chilena 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3df1214c894e4d88994b8b22e2c1d7c5_9366%2FCamiseta_Visitante_Seleccion_Chilena_26_Beige_JL8739_21_model.jpg&feedId=95016&k=471020c45a82a66128da4173152333893efb13cf" },
     ],
   },
 {
@@ -25020,6 +25044,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-chile-2026-primera-equipacion-rojo-activo-equipaciones-oficiales-para-hombre-1042952", title: "Camiseta adidas Chile 2026 Primera equipación", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1042952_main.jpg?v=1791067058" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-chile-2026-home-shirt-active-red-mens-replica-1042952", title: "adidas Chile 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1042952_main.jpg?v=1791064921" },
       { store: "eBay ES", price: 37.71, shipping: 15.09, currency: "EUR", url: "https://www.ebay.es/itm/236962217823?_skw=Chile+home+soccer+jersey&hash=item372c0c7f5f%3Ag%3AEDEAAeSwvdxqZLJ9&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT AUTHENTIC Adidas Chile 2026 Basic Home Jersey - Men (M)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/EDEAAeSwvdxqZLJ9/s-l1600.jpg" },
+      { store: "AdidasCL", price: 27990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121251&a=3013769&m=79922", title: "Camiseta Local Selección Chilena 26", inStock: true, sizes: ["XS", "S", "M", "L", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe97a4ed1e4b242a3887823128963104d_9366%2FCamiseta_Local_Seleccion_Chilena_26_Rojo_KG8542_21_model.jpg&feedId=95016&k=0bb99de855fb278b6c69c592273c79f0415ae7d5" },
     ],
   },
 {
@@ -25038,6 +25063,7 @@ const productsData = [
       { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198646714366?_skw=Scotland+away+soccer+jersey&hash=item2e40444ffe%3Ag%3A3oAAAeSwaGNqiLVB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Scotland Climacool 2026 Adidas Away Soccer Jersey Shirt Kit JL6901 NWT Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/3oAAAeSwaGNqiLVB/s-l1600.jpg" },
       { store: "eBay IT", price: 65.04, shipping: 28.87, currency: "EUR", url: "https://www.ebay.it/itm/377512988587?_skw=Scotland+away+soccer+jersey&hash=item57e5870fab%3Ag%3A%7EpkAAeSwICxqsT%7EC&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Scotland Climacool 2026 kit maglia calcio away taglia small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/~pkAAeSwICxqsT~C/s-l1600.jpg" },
       { store: "eBay ES", price: 64.5, shipping: 27.65, currency: "EUR", url: "https://www.ebay.es/itm/377512988587?_skw=Scotland+away+soccer+jersey&hash=item57e5870fab%3Ag%3A%7EpkAAeSwICxqsT%7EC&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol visitante Adidas Scotland Climacool 2026 kit talla pequeña", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/~pkAAeSwICxqsT~C/s-l1600.jpg" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450411&a=3013769&m=79922", title: "Camiseta Visitante Escocia 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F120ed2e552ee42358f6c390c1ed6cca2_9366%2FCamiseta_Visitante_Escocia_26_Rojo_JL6901_21_model.jpg&feedId=95016&k=fdca58de20ac7a611569691e8dd315915fa56e89" },
     ],
   },
 {
@@ -25076,6 +25102,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 80.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-peru-2026-primera-equipacion-blanco-equipaciones-oficiales-para-hombre-1043098", title: "Camiseta adidas Perú 2026 Primera equipación", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1043098_main.jpg?v=1790761926" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-peru-2026-home-shirt-white-mens-replica-1043098", title: "adidas Peru 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043098_main.jpg?v=1790762444" },
       { store: "eBay ES", price: 38.69, shipping: 24.2, currency: "EUR", url: "https://www.ebay.es/itm/306650675984?_skw=Peru+home+soccer+jersey&hash=item4765cdfb10%3Ag%3ARW4AAeSwexRpOMHR&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Selección Perú Home 2026 Hombre", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/RW4AAeSwexRpOMHR/s-l1600.jpg" },
+      { store: "AdidasCL", price: 38990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121141&a=3013769&m=79922", title: "Camiseta Local Selección Peruana 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F21283e1da2fc4df58f59c38a16038a49_9366%2FCamiseta_Local_Seleccion_Peruana_26_Blanco_JL8651_21_model.jpg&feedId=95016&k=5ef55ad35103803ea3500f16a6a9cb50f55c4c03" },
     ],
   },
 {
@@ -25490,6 +25517,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fcosta-rica-primera-equipacion-mundial-2026-red", title: "Camiseta adidas Costa Rica Primera Equipación Mundial 2026", inStock: true, sizes: ["S", "M", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/287366/750/camiseta-adidas-costa-rica-primera-equipacion-mundial-2026-red-1.jpg" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-costa-rica-2026-primera-equipacion-colegiado-rojo-equipaciones-oficiales-para-hombre-1043264", title: "Camiseta adidas Costa Rica 2026 Primera equipación", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1043264_main.jpg?v=1791068039" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-costa-rica-2026-home-shirt-collegiate-red-mens-replica-1043264", title: "adidas Costa Rica 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043264_main.jpg?v=1791065981" },
+      { store: "AdidasCL", price: 38990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087120911&a=3013769&m=79922", title: "Camiseta Local Costa Rica 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff89305e70a504bfa8ac64b9586d7335d_9366%2FCamiseta_Local_Costa_Rica_26_Rojo_KA4039_21_model.jpg&feedId=95016&k=d659ed9dccfe66eaebe6f79f25ca0a7c4a3d9f71" },
     ],
   },
 {
@@ -25526,6 +25554,7 @@ const productsData = [
       { store: "FootStoreFR", price: 68.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka1906-maillot-prematch-espagne-coupe-du-monde-2026-dark-blue", title: "Maillot Prematch Espagne Coupe du Monde 2026", inStock: true, sizes: ["S", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ka1906_1_apparel_photography_front_center_view_white.webp" },
       { store: "Futbol Factory", price: 48.95, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=32066&m=2551751&a=514692&r=&u=https%3A%2F%2Fwww.futbolfactory.es%2Fcomprar-camiseta-de-entrenamiento-de-futbol-espana-2026-home-pre-match-jersey-hombre-adidas-azul-255787", title: "Camiseta de entrenamiento de fútbol España 2026 Home Pre Match Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://static.futbolfactory.es/products/255787_1.jpg" },
       { store: "Pro:Direct ES", price: 55.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-local-de-prepartido-de-adidas-espana-2026-azul-oscuro-replica-para-hombre-1043915", title: "adidas Spain 2026 Home Pre-Match Shirt", inStock: true, sizes: ["S"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1043915_list.jpg?v=1791066221" },
+      { store: "AdidasCL", price: 59990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45655841060&a=3013769&m=79922", title: "Camiseta Prepartido Local España 26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F94f99ff487ef4b25968405571e84fc58_9366%2FCamiseta_Prepartido_Local_Espana_26_Azul_KA1906_21_model.jpg&feedId=95016&k=05f94cddd421d13ad955a1ba24df05e2a6b94aa1" },
     ],
   },
 {
@@ -25637,6 +25666,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 96.8, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjn8479-maillot-third-authentique-inter-miami-fc-2025-26-seblbu", title: "Maillot Third Authentique Inter Miami FC 2025/26", inStock: true, sizes: ["M", "L"], imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn8479_1_apparel_photography_front_center_view_white.jpg" },
       { store: "Pro:Direct ES", price: 115.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-tercera-del-adidas-inter-miami-2026-con-el-numero-10-de-messi-blanca-replica-para-hombre-4005158", title: "adidas Inter Miami 2026 Third Shirt with Messi 10", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005158_list.jpg?v=1791080746" },
       { store: "Pro:Direct Soccer", price: 95.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-inter-miami-2026-third-shirt-with-messi-10-white-mens-replica-4005158", title: "adidas Inter Miami 2026 Third Shirt with Messi 10", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005158_list.jpg?v=1791089161" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45418971505&a=3013769&m=79922", title: "Tercera Camiseta Inter Miami CF 2026 Messi", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb3b4410a93fc4daea7554192df60ee97_9366%2FTercera_Camiseta_Inter_Miami_CF_2026_Messi_Blanco_KE6326_21_model.jpg&feedId=95016&k=470460f5b26f1d296fabbbf1fafb9c2483222ce7" },
     ],
   },
 {
@@ -25668,6 +25698,7 @@ const productsData = [
     offers: [
       { store: "PlanetFoot", price: 69.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-pre-match-domicile-italie-homme-2026-blanc-coupe-du-monde%3Fvariant%3D53957407506773", title: "Maillot Pré-Match Domicile Italie Homme 2026 Blanc - Coupe du Monde", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-pre-match-domicile-italie-homme-2026-blanc-climacool-jy5633-1.webp?v=1784375371" },
       { store: "eBay", price: 21.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/278091717799?_skw=Italy+pre-match+soccer+jersey&hash=item40bf8edca7%3Ag%3AhEgAAeSwwsJqMCPS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Italy 26 pre match jersey SIZE LARGE", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/hEgAAeSwwsJqMCPS/s-l1600.jpg" },
+      { store: "AdidasCL", price: 26990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45187585171&a=3013769&m=79922", title: "Camiseta Prepartido Local Italia 26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F252856df2974457b8f54a1a393bedc20_9366%2FCamiseta_Prepartido_Local_Italia_26_Blanco_JY5633_21_model.jpg&feedId=95016&k=652a63c6bae85b95bcd33a49622b1e03964b9e9a" },
     ],
   },
 {
@@ -25743,6 +25774,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 79.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fjamaica-primera-equipacion-mundial-2026-bold-gold", title: "Camiseta adidas Jamaica Primera Equipación Mundial 2026", inStock: true, sizes: ["M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/292193/750/camiseta-adidas-jamaica-primera-equipacion-mundial-2026-bold-gold-1.jpg" },
       { store: "Pro:Direct ES", price: 85.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-jamaica-2026-primera-equipacion-dorado-intenso-equipaciones-oficiales-para-hombre-1043039", title: "Camiseta adidas Jamaica 2026 Primera equipación", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1043039_list.jpg?v=1791066746" },
       { store: "Pro:Direct Soccer", price: 68.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-jamaica-2026-home-shirt-bold-gold-mens-replica-1043039", title: "adidas Jamaica 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043039_list.jpg?v=1791063543" },
+      { store: "AdidasCL", price: 40990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43972716466&a=3013769&m=79922", title: "Camiseta Local Jamaica 26 x Bob Marley 10", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd23aa9b1e89f4c3a952a1b2f31cbd25c_9366%2FCamiseta_Local_Jamaica_26_x_Bob_Marley_10_Amarillo_KC8785_21_model.jpg&feedId=95016&k=eab18a161fc6a653474edd8d20b7550f69907b7e" },
     ],
   },
 {
@@ -26117,6 +26149,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fqatar-home-football-jersey-2026-world-cup%3Fvariant%3D42713359745129", title: "Qatar Home Football Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Qatar_Home_Jersey_World_Cup_2026_2.webp?v=1765766690" },
       { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/377359826545?_skw=Qatar+home+soccer+jersey&hash=item57dc65fe71%3Ag%3AFy4AAeSwhVlqg7wY&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb5upDI4ErVEbfcjC8lDm3%2FUYX5Mk2TTvHyqA0Mp8rOTCVGQZ7OFoSFp1B%2BxNz%2BuvpHwUMdW%2BwEBLs%2Bh7bDxuOWx536yuYNmoeDSB9eulTaJn51AfO3otlX3fnvKRbT9VFTvxRirqdrAIW3Cn1Jyj2P7ny25XEqLLYZ42Hg%2F6KRh%2BRSHrKQvhc7%2FrXHXGXwemutpO3rXM3mXMfSgC2IjLfEXPCHV6ZKcw8wc05mwQTyNes013D6yMfirDnHLslwHgFtZpZ6%2B9CaAwOgCGOE4nV6AoW1WVodDgpwJqkrYi99ng%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Replica Soccer Jersey 2026 World Cup Qatar National Team Home NWT Large", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Fy4AAeSwhVlqg7wY/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-qatar-2026-home-shirt-noble-maroon-mens-replica-1043261", title: "adidas Qatar 2026 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043261_list.jpg?v=1790870478" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43963482417&a=3013769&m=79922", title: "Camiseta Local Catar 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0304f036c25c47ed939dbecf15a8f3a4_9366%2FCamiseta_Local_Catar_26_Granate_KF0824_21_model.jpg&feedId=95016&k=5c68d5b6a10758bcd965b230ffca7a4d822c9a5c" },
     ],
   },
 {
@@ -26367,6 +26400,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fclub-america-primera-equipacion-2026-2027-impact-yellow-legend-ink", title: "Camiseta adidas Club America Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332267/750/camiseta-adidas-club-america-primera-equipacion-2026-2027-impact-yellow-legend-ink-1.jpg" },
       { store: "FootStoreES", price: 107.57, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46163942621&a=3013769&m=65912", title: "Camiseta Local Auténtica Club América 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-kb9024-impyel-legink-6a5a6bab3be46-1.jpg&feedId=89032&k=84d7a231a9eb55db0e39b6883d96b4e1692df644" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-club-america-26-27-home-shirt-impact-yellow-legend-ink-mens-replica-4005119", title: "adidas Club America 26/27 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005119_list.jpg?v=1791065516" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45276465916&a=3013769&m=79922", title: "Camiseta Local Club América 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F81a1bebd95234b9d9aa5f742e8836893_9366%2FCamiseta_Local_Club_America_26-27_Amarillo_KB9016_21_model.jpg&feedId=95016&k=17dcbf23cbf788661714762117dd6a71308116b0" },
     ],
   },
 {
@@ -26625,6 +26659,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096957803&a=3013769&m=77026", title: "Camisola Principal 26 da Irlanda do Norte", inStock: true, sizes: ["M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdbddae454688405cb2e25c7d4a00309e_9366%2FCamisola_Principal_26_da_Irlanda_do_Norte_Verde_JL6919_21_model.jpg&feedId=92150&k=c75a8df9c826057413384bf03ba7b740391d4e13" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fnorthern-ireland-home-football-jersey-2026-world-cup%3Fvariant%3D42724205101161", title: "Northern Ireland Home Football Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/NorthernIrelandHomeSoccerJerseyWorldCup2026_1.png?v=1764761958" },
       { store: "eBay", price: 29.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/267722916959?_skw=Northern+Ireland+home+soccer+jersey&hash=item3e5587845f%3Ag%3A42kAAeSwmshqKJjt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Northern Ireland 26 Home Jersey Sz Large, Slim Fit Adult", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/42kAAeSwmshqKJjt/s-l1600.jpg" },
+      { store: "AdidasCL", price: 33990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121270&a=3013769&m=79922", title: "Camiseta Local Irlanda del Norte 26", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdbddae454688405cb2e25c7d4a00309e_9366%2FCamiseta_Local_Irlanda_del_Norte_26_Verde_JL6919_21_model.jpg&feedId=95016&k=875b55e8179a718ad363142826e8195ca8a1a3a6" },
     ],
   },
 {
@@ -26658,6 +26693,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fqatar-away-soccer-jersey-2026-world-cup%3Fvariant%3D43238578192489", title: "Qatar Away Soccer Jersey 2026 World Cup", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/QatarAwayJerseyWorldCup2026_2.webp?v=1779436332" },
       { store: "eBay", price: 99.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/137509515681?_skw=Qatar+away+soccer+jersey&hash=item200434b1a1%3Ag%3ApZMAAeSwaTJqVRu1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Qatar Adidas 2026 Away Soccer Football Jersey Shirt  XLarge Slim Fit", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/pZMAAeSwaTJqVRu1/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-qatar-2026-away-shirt-white-mens-replica-1043262", title: "adidas Originals Qatar 2026 Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043262_list.jpg?v=1790940692" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450016&a=3013769&m=79922", title: "Camiseta Visitante Catar 26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1a112b6f0e494d26896eb5a30b1b595f_9366%2FCamiseta_Visitante_Catar_26_Blanco_KF0828_21_model.jpg&feedId=95016&k=3746cb2fc16b2d8b9d2a6086172777d8028c5a39" },
     ],
   },
 {
@@ -26924,6 +26960,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fvenezuela-2026-world-cup-home-jersey%3Fvariant%3D42670295777385", title: "Venezuela 2026 World Cup Home Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Venezuela_26_Home_Jersey.png?v=1762670669" },
       { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188927506687?_skw=Venezuela+home+soccer+jersey&hash=item2bfcf4f8ff%3Ag%3AT54AAeSwFx9qp1ER&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Venezuela 2026 Home Soccer Jersey - MENS XL - Adidas - La Vinotinto - NWT", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/T54AAeSwFx9qp1ER/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-venezuela-2026-home-shirt-team-coll-burgundy-2-mens-replica-1043270", title: "adidas Venezuela 2026 Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1043270_main.jpg?v=1791063856" },
+      { store: "AdidasCL", price: 84990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087120926&a=3013769&m=79922", title: "Camiseta Local Venezuela 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6cde6d065fa340fc8f14197bfb9d5ec3_9366%2FCamiseta_Local_Venezuela_26_Granate_KB3723_21_model.jpg&feedId=95016&k=eeed5bd7d4b0afbc4ef3100c68a18c5e92ee3fb3" },
     ],
   },
 {
@@ -28529,6 +28566,7 @@ const productsData = [
       { store: "FootStoreFR", price: 110.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz6941-maillot-retro-exterieur-allemagne-1994-power-green", title: "Maillot rétro Extérieur Allemagne 1994", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jz6941-power-green-6a0fe5d3ec0a3-1.webp" },
       { store: "eBay IT", price: 53.54, shipping: 21.74, currency: "EUR", url: "https://www.ebay.it/itm/227524971938?_skw=Germany+away+soccer+jersey&hash=item34f98b8da2%3Ag%3AZ30AAeSwjBpqqyI4&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nuovissima maglia calcio Adidas Germany 1994 ristampa away uomo taglia large ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Z30AAeSwjBpqqyI4/s-l1600.jpg" },
       { store: "eBay ES", price: 43.62, shipping: 15.32, currency: "EUR", url: "https://www.ebay.es/itm/318905183997?_skw=Germany+away+soccer+jersey&hash=item4a403aeefd%3Ag%3AsncAAeSwraNqsuPt&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Adidas Alemania 1994 FIFA (JZ6941) verde para hombre", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/sncAAeSwraNqsuPt/s-l1600.jpg" },
+      { store: "AdidasCL", price: 44990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44854027625&a=3013769&m=79922", title: "Camiseta Visitante Alemania 1994", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe3674192162b44949b5b9ad02fe77706_faec%2FCamiseta_Visitante_Alemania_1994_Verde_JZ6941_db21_model.tiff.jpg&feedId=95016&k=0de4e2faa70d706ab1136e06a27b50a4a719ba7d" },
     ],
   },
 {
@@ -28649,6 +28687,7 @@ const productsData = [
       { store: "FootStoreFR", price: 109.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn3705-maillot-retro-domicile-allemagne-1994-blanc", title: "Maillot rétro Domicile Allemagne 1994", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jn3705-blanc-6a0fe5cf9efa8-1.webp" },
       { store: "eBay IT", price: 58.9, shipping: 15.65, currency: "EUR", url: "https://www.ebay.it/itm/158314237189?_skw=Germany+home+soccer+jersey&hash=item24dc438d05%3Ag%3AqcUAAeSw2MBqsCfK&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: " Adidas Germany Home Maglia Calcio Uomo 1994 JN3705 (1)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/qcUAAeSw2MBqsCfK/s-l1600.jpg" },
       { store: "eBay ES", price: 47.88, shipping: 26.24, currency: "EUR", url: "https://www.ebay.es/itm/278418844280?_skw=Germany+home+soccer+jersey&hash=item40d30e6a78%3Ag%3AkroAAeSwt-dqux2t&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas Alemania local 1994 reedición fútbol hombre grande nueva con etiquetas ", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/kroAAeSwt-dqux2t/s-l1600.jpg" },
+      { store: "AdidasCL", price: 44990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44854029199&a=3013769&m=79922", title: "Camiseta Local Alemania 1994", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6cc8cbe905f5444ab3032a2a9c4fec00_faec%2FCamiseta_Local_Alemania_1994_Blanco_JN3705_db21_model.jpg&feedId=95016&k=290309f314f1a29d08b25952852af8ed498b596a" },
     ],
   },
 {
@@ -28709,6 +28748,7 @@ const productsData = [
       { store: "AdidasES", price: 110.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44644264714&a=3013769&m=77008", title: "Camiseta primera equipación Alemania 2006", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F75fe4ad7e599460a953d931af1aecf51_9366%2FCamiseta_primera_equipacion_Alemania_2006_Blanco_KD3998_21_model.jpg&feedId=92152&k=6158bffd87f9bfaea46b520eb8be456cb550b0f4" },
       { store: "AdidasPT", price: 110.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44644264990&a=3013769&m=77026", title: "Camisola Principal 2006 da Alemanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F75fe4ad7e599460a953d931af1aecf51_9366%2FCamisola_Principal_2006_da_Alemanha_Branco_KD3998_21_model.jpg&feedId=92150&k=a72dae6e78e2665d2cbbd01c67f16e2fd2c95ee3" },
       { store: "eBay IT", price: 96.39, shipping: 9.64, currency: "EUR", url: "https://www.ebay.it/itm/318698544721?_skw=Germany+home+soccer+jersey&hash=item4a33e9de51%3Ag%3AaW0AAeSwms5qb0JC&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio uomo Adidas Germany Deutschland 2006 2007 home football XXL nuova con etichetta", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/aW0AAeSwms5qb0JC/s-l1600.jpg" },
+      { store: "AdidasCL", price: 53990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44648103371&a=3013769&m=79922", title: "Camiseta Local Alemania 2006", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F75fe4ad7e599460a953d931af1aecf51_9366%2FCamiseta_Local_Alemania_2006_Blanco_KD3998_21_model.jpg&feedId=95016&k=eb00feb001d7ad2335d8f2b240bbba9383905818" },
     ],
   },
 {
@@ -28997,6 +29037,7 @@ const productsData = [
       { store: "FootStoreFR", price: 109.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf0322-maillot-domicile-argentine-2006-white-clblue", title: "Maillot Domicile Argentine 2006", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kf0322_1_apparel_photography_front_center_view_white.webp" },
       { store: "eBay IT", price: 61.04, shipping: 25.07, currency: "EUR", url: "https://www.ebay.it/itm/158303891363?_skw=Argentina+home+soccer+jersey&hash=item24dba5afa3%3Ag%3AW10AAeSwDUFolN8W&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia Messi #19 2006 Manica Lunga Argentina Home Grande Calcio Calcio Calcio Retro L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/W10AAeSwDUFolN8W/s-l1600.jpg" },
       { store: "eBay ES", price: 60.65, shipping: 25.19, currency: "EUR", url: "https://www.ebay.es/itm/158350142389?_skw=Argentina+home+soccer+jersey&hash=item24de676bb5%3Ag%3AW10AAeSwDUFolN8W&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol retro Messi #19 2006 manga larga Argentina local mediana M", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/W10AAeSwDUFolN8W/s-l1600.jpg" },
+      { store: "AdidasCL", price: 53990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43683855439&a=3013769&m=79922", title: "Camiseta Local Selección Argentina 2006 Messi", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fff5576202ba948afa33668ff0603ed2f_faec%2FCamiseta_Local_Seleccion_Argentina_2006_Messi_Blanco_JN3708_db21_model.tiff.jpg&feedId=95016&k=19f69ef9409ac3433353fc63613688af6fba2322" },
     ],
   },
 {
@@ -33908,6 +33949,7 @@ const productsData = [
       { store: "AdidasPT", price: 110.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43692250300&a=3013769&m=77026", title: "Camisola Principal 1986 do México", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F26532f3fa2694a5cad55644a8c2fc27f_9366%2FCamisola_Principal_1986_do_Mexico_Verde_JN3710_HM53.jpg&feedId=92150&k=38c4f6b1ef4107ecdab7f6ea0cfbc9be38de5825" },
       { store: "eBay IT", price: 54.19, shipping: 37.08, currency: "EUR", url: "https://www.ebay.it/itm/318943133516?_skw=Mexico+home+soccer+jersey&hash=item4a427dff4c%3Ag%3A64AAAeSwKrJqvoUV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGabzBPk%2BGQJCdVsiVnwo11Sp0LbOObJBWfknLp7sZkTAWOphH%2B35qrbpYcrRM9IprhQ3ZB7g9%2FylU4IZK0NFqLB1DEk%2FJXy5RniUbxoJHX6tDCoiD7Hpd9YLchFnwefAQwkIy51FE0TEUl1AHbOtmCWXhRW4wWiA%2B%2BwswoAi4%2FR2HcoA09mZy8%2F3WFoiCiDOb%2BlCjcTnDiejt7eEvqnSv4snapJwOOPXBODLetROPvKc23g7q4oDgt6hDJqVntLMsxU9JxoTsZ4y6aYdyi5%2FghH1sH6Bb4URvYNFPdcfvJx6Q%3D%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia retro Mexico Home 1986 Hugo Sanchez S-3X", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/64AAAeSwKrJqvoUV/s-l1600.jpg" },
       { store: "eBay ES", price: 164.37, shipping: 28.64, currency: "EUR", url: "https://www.ebay.es/itm/398355989631?_skw=Mexico+home+soccer+jersey&hash=item5cbfde047f%3Ag%3A0KoAAeSwJm1qmdEe&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbUPUIp17AjYVzmcZ4zxgUEWrpKy6tr3RRhDsMC9bUhEXXi70S1D5tJU8%2FMpOTyysbkNk5qEkFbgnJO66U7FA78zxhfDyg2LClCvKFk5AwMp%2B7Yjy80dOhsLqYvQmHTbsxlLwPVf6yBR6Wu0Uwu8g5etU6t6m5isxlHHE8l6%2F%2BTgbybX01QNMhDqAu%2Fru6t84zv1qsIQQf7fLiK8qmCNTwk6YtF9s5SMK4uWFjFNrafal%2BBbk0ssPeJOJnwH5oTS%2FvNEnDAdB4uOMxVMyR%2BqAXjeqccoTkLsqaqlqlSxBLqdA%3D%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol local Adidas para hombre 2XL México 1986 Copa Mundial", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/0KoAAeSwJm1qmdEe/s-l1600.jpg" },
+      { store: "AdidasCL", price: 44990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43683855433&a=3013769&m=79922", title: "Camiseta Local Selección Nacional de México 1986", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0128c24c71d34bfabb7bb87032b70a2f_faec%2FCamiseta_Local_Seleccion_Nacional_de_Mexico_1986_Verde_JN3710_db21_model.tiff.jpg&feedId=95016&k=90a9f594857f8f0e527f47ff3ede075ca4b58bf6" },
     ],
   },
 {
@@ -37343,6 +37385,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45455603296&a=3013769&m=77026", title: "Camisola do Terceiro Equipamento do Arsenal FC 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2d11500df09747559697e0d4917f2ddd_9366%2FCamisola_do_Terceiro_Equipamento_do_Arsenal_FC_26-27_Amarelo_KQ6512_21_model.jpg&feedId=92150&k=1471d2aaa300631594ed00ca132e0ea164f8f13e" },
       { store: "Pro:Direct ES", price: 90.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-tercera-del-arsenal-de-adidas-para-la-temporada-26-27-casi-amarillo-replica-para-hombre-4004920", title: "adidas Arsenal 26/27 Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004920_list.jpg?v=1791064987" },
       { store: "Pro:Direct Soccer", price: 72.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-arsenal-26-27-third-shirt-almost-yellow-mens-replica-4004920", title: "adidas Arsenal 26/27 Third Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4004920_list.jpg?v=1791063490" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45802187655&a=3013769&m=79922", title: "Tercera Camiseta Arsenal FC 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2d11500df09747559697e0d4917f2ddd_9366%2FTercera_Camiseta_Arsenal_FC_26-27_Amarillo_KQ6512_21_model.jpg&feedId=95016&k=e0307238544625774243725de07411a3baa54e41" },
     ],
   },
 {
@@ -37499,6 +37542,7 @@ const productsData = [
       { store: "eBay", price: 31.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776744?_skw=Colo-Colo+away+soccer+jersey&hash=item34e933aaa8%3Ag%3ApiMAAeSwZyJpsRL6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Away Men LS 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/piMAAeSwZyJpsRL6/s-l1600.jpg" },
       { store: "eBay IT", price: 34.68, shipping: 0.0, currency: "EUR", url: "https://www.ebay.it/itm/227250776744?_skw=Colo-Colo+away+soccer+jersey&hash=item34e933aaa8%3Ag%3ApiMAAeSwZyJpsRL6&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "MAGLIA COLO-COLO AWAY UOMO LS 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/piMAAeSwZyJpsRL6/s-l1600.jpg" },
       { store: "eBay ES", price: 34.49, shipping: 0.0, currency: "EUR", url: "https://www.ebay.es/itm/227250776744?_skw=Colo-Colo+away+soccer+jersey&hash=item34e933aaa8%3Ag%3ApiMAAeSwZyJpsRL6&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo visitante hombre LS 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/piMAAeSwZyJpsRL6/s-l1600.jpg" },
+      { store: "AdidasCL", price: 69990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43787045834&a=3013769&m=79922", title: "Camiseta Visitante Colo-Colo 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0b1c51d2f507439389735cbc822d7b2e_9366%2FCamiseta_Visitante_Colo-Colo_26_Negro_JL6690_21_model.jpg&feedId=95016&k=9c0e88e54eb2054418896f407edb33f0f66c975e" },
     ],
   },
 {
@@ -37513,6 +37557,7 @@ const productsData = [
       { store: "eBay", price: 31.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/227250776770?_skw=Colo-Colo+home+soccer+jersey&hash=item34e933aac2%3Ag%3AHVAAAeSwv6JpsRL9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Colo-Colo Home Men LS 2026", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/HVAAAeSwv6JpsRL9/s-l1600.jpg" },
       { store: "eBay IT", price: 34.68, shipping: 0.0, currency: "EUR", url: "https://www.ebay.it/itm/227250776770?_skw=Colo-Colo+home+soccer+jersey&hash=item34e933aac2%3Ag%3AHVAAAeSwv6JpsRL9&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "MAGLIA COLO-COLO HOME UOMO LS 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/HVAAAeSwv6JpsRL9/s-l1600.jpg" },
       { store: "eBay ES", price: 34.49, shipping: 0.0, currency: "EUR", url: "https://www.ebay.es/itm/227250776770?_skw=Colo-Colo+home+soccer+jersey&hash=item34e933aac2%3Ag%3AHVAAAeSwv6JpsRL9&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Colo-Colo Home Hombre LS 2026", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/HVAAAeSwv6JpsRL9/s-l1600.jpg" },
+      { store: "AdidasCL", price: 29990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43787045822&a=3013769&m=79922", title: "Camiseta Local de Colo-Colo 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F10b69bb163b14947bf7559efd02742ae_9366%2FCamiseta_Local_de_Colo-Colo_26_Blanco_JL6689_21_model.jpg&feedId=95016&k=8cced93500c767c395c1018c5fcd493cb65d43d7" },
     ],
   },
 {
@@ -37541,6 +37586,7 @@ const productsData = [
       { store: "eBay", price: 28.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/377304427536?_skw=Costa+Rica+away+soccer+jersey&hash=item57d918ac10%3Ag%3AbCAAAeSwvAFqQoI2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Costa Rica Away 2026 Mens Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/bCAAAeSwvAFqQoI2/s-l1600.jpg" },
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45543976223&a=3013769&m=77008", title: "Camiseta segunda equipación Costa Rica 26", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe303c09e3add49d5a237232e1a282be9_9366%2FCamiseta_segunda_equipacion_Costa_Rica_26_Azul_KA4044_21_model.jpg&feedId=92152&k=2a9aa7a5e65e83aaf892f24c14e95d0fdb667df7" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45543974302&a=3013769&m=77026", title: "Camisola Alternativa 26 da Costa Rica", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe303c09e3add49d5a237232e1a282be9_9366%2FCamisola_Alternativa_26_da_Costa_Rica_Azul_KA4044_21_model.jpg&feedId=92150&k=032c3896352d134d862db5dc7080ad264cd57733" },
+      { store: "AdidasCL", price: 38990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450033&a=3013769&m=79922", title: "Camiseta Visitante Costa Rica 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe303c09e3add49d5a237232e1a282be9_9366%2FCamiseta_Visitante_Costa_Rica_26_Azul_KA4044_21_model.jpg&feedId=95016&k=276a0749497701d4d58828635fafdd03a621f9f1" },
     ],
   },
 {
@@ -39707,6 +39753,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "eBay", price: 34.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206288404317?_skw=Al-Nassr+FC+home+soccer+jersey+kids+youth&hash=item3007bf3f5d%3Ag%3A5YgAAeSw0rNqDoDE&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Size Youth XL (Code 28)/ Ronaldo 7/ Al Nassr Home Jersey Set", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/5YgAAeSw0rNqDoDE/s-l1600.jpg" },
+      { store: "AdidasCL", price: 59990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45484111967&a=3013769&m=79922", title: "Camiseta Local Al Nassr FC 26/27 N&N Niños", inStock: true, sizes: ["9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F253051bb6f3242538af056c23e2dd4a9_9366%2FCamiseta_Local_Al_Nassr_FC_26-27_NandN_Ninos_Amarillo_KC7407_20_01_model.jpg&feedId=95016&k=e3ad6d7f416eb10c5168e19da395b54aab9c1a31" },
     ],
   },
 {
@@ -39734,6 +39781,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800541254727?_skw=Arsenal+home+soccer+jersey+kids+youth&hash=itemba63fa2447%3Ag%3A2f0AAeSw4C1qh0eG&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Arsenal FC 2026/27 Youth Home Jersey", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/2f0AAeSw4C1qh0eG/s-l1600.jpg" },
       { store: "eBay ES", price: 85.43, shipping: 75.19, currency: "EUR", url: "https://www.ebay.es/itm/800541254727?_skw=Arsenal+home+soccer+jersey+kids+youth&hash=itemba63fa2447%3Ag%3A2f0AAeSw4C1qh0eG&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva local juvenil adidas Arsenal FC 2026/27", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/2f0AAeSw4C1qh0eG/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44763500732&a=3013769&m=79922", title: "Camiseta Local Arsenal FC 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1325721aea024ff189048544d8a8d3f4_9366%2FCamiseta_Local_Arsenal_FC_26-27_Ninos_Rojo_KB9947_20_01_model.jpg&feedId=95016&k=743f1d3756bb5d018e035ae03fa51489923556aa" },
     ],
   },
 {
@@ -40017,6 +40065,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "eBay", price: 36.84, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198636960195?_skw=Inter+Miami+CF+third+soccer+jersey+kids+youth&hash=item2e3faf79c3%3Ag%3Ai3QAAeSwZJxpmz%7Ep&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Miami CF 25/26 Third Jersey Kids junior size L", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/i3QAAeSwZJxpmz~p/s-l1600.jpg" },
+      { store: "AdidasCL", price: 59990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45405663940&a=3013769&m=79922", title: "Tercera Camiseta Inter Miami CF 26 Messi Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F79b3d37c060b4a43b83c47a503021cbf_9366%2FTercera_Camiseta_Inter_Miami_CF_26_Messi_Ninos_Blanco_KE6329_20_01_model.jpg&feedId=95016&k=e64ca518af5e257a4fe30b6330b22ec08a08ae8f" },
     ],
   },
 {
@@ -40600,6 +40649,7 @@ const productsData = [
       { store: "AdidasPT", price: 110.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44644264997&a=3013769&m=77026", title: "Camisola Alternativa 1990 da Alemanha", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8c88cf711a5b4f6bac4fb7cf4a9908d9_9366%2FCamisola_Alternativa_1990_da_Alemanha_Verde_KD3999_21_model.jpg&feedId=92150&k=298fe1b0b68e3ca6b557fb819fc3eb0da0ae2b58" },
       { store: "eBay IT", price: 80.33, shipping: 22.58, currency: "EUR", url: "https://www.ebay.it/itm/327374607388?_skw=Germany+away+soccer+jersey&hash=item4c390c141c%3Ag%3ADaMAAeSwxxxqtvm0&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia Adidas Germany Away 1990 grande riedizione nuova con etichetta", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/DaMAAeSwxxxqtvm0/s-l1600.jpg" },
       { store: "eBay ES", price: 60.65, shipping: 21.57, currency: "EUR", url: "https://www.ebay.es/itm/336814788150?_skw=Germany+away+soccer+jersey&hash=item4e6bb9ce36%3Ag%3ALRwAAeSwRddquHix&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Alemania 1990 visitante Talla M Adidas Originals reedición camiseta fútbol Deutschland", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/LRwAAeSwRddquHix/s-l1600.jpg" },
+      { store: "AdidasCL", price: 53990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=46194188867&a=3013769&m=79922", title: "Camiseta Visitante Alemania 1990", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8c88cf711a5b4f6bac4fb7cf4a9908d9_9366%2FCamiseta_Visitante_Alemania_1990_Verde_KD3999_21_model.jpg&feedId=95016&k=4089a413b9af62e290395b8c30e6f1ce302304ff" },
     ],
   },
 {
@@ -41854,6 +41904,7 @@ const productsData = [
       { store: "AdidasPT", price: 110.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45434366728&a=3013769&m=77026", title: "Camisola Alternativa 1990 da Colômbia", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5b2651f42746efa22ee859a0cf0dba_9366%2FCamisola_Alternativa_1990_da_Colombia_Amarelo_JN3713_HM53.jpg&feedId=92150&k=72270511fe0e953e2eee0ee2c84dde1f1b1846aa" },
       { store: "eBay IT", price: 107.09, shipping: 16.8, currency: "EUR", url: "https://www.ebay.it/itm/800350286618?_skw=Colombia+away+soccer+jersey&hash=itemba5898331a%3Ag%3AJhEAAeSwtPhqWGAK&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZPSAqx2gxK%2FkB1HSGUrJXXSfT4XCTkVULj285wGexspiTqvFSBbbQcEGY3wbktYgLJgjhi2HBD9%2BV2OE0LDda4%2BspDPLbJyz%2BgPjD1TCc%2Bx7oWIP4PiXxnKaGCxFqrvm%2FWzmM3yHLKZfaEUyZYQAzrz7TtIzX5vo1bjwDhBoRxdnCco4s8%2BAsSB%2BKWVHJMmr%2FbinsTpM41dVSKvxDnomFZiwljFiMjFiaBv42SYwjhV0i9CPGDCh9BNsYY%2FfawoqiQu2aEh9%2FEhTqBjNe7zLx8Ynt4jabSygPklkd8HWj7Bg%3D%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Taglia S - Maglia gialla Adidas Colombia Nazionale 1990 Mondiali Away JN3713 nuova con etichetta", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/JhEAAeSwtPhqWGAK/s-l1600.jpg" },
       { store: "eBay ES", price: 85.13, shipping: 23.05, currency: "EUR", url: "https://www.ebay.es/itm/168587013721?_skw=Colombia+away+soccer+jersey&hash=item274091ae59%3Ag%3AJtAAAeSwMndqcVfW&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaqu9RyDd1VqxIR13YYTFPysXLd%2BbgPLcPZ5SW5yi8lVmVzxoIfHIH77%2B2R%2BbM4b8KZGHHy7Ujrz%2Bp6eo8cbboUW2KymYLWEvUNmMkFA1tEc75WRCS6kTzI32wD3Yxe3x51AJmbWK5LVbf%2BXLFbSgpwljm%2FMG5UbJjYk5TD4LdBR2dLl5rPbcrhAJNEWLod3LIMvTXGvHWH3bOB3b95cBrUK1T3bgZypDowXGObLQeMSMgYawXJ0lNEyF0I5gIM5vgqv7P4L7SC%2BJ4o%2BEz8jSLdlS6PXLEPi12hLH1rzWQf%2FA%3D%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta adidas Colombia visitante 1990", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/JtAAAeSwMndqcVfW/s-l1600.jpg" },
+      { store: "AdidasCL", price: 44990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43683855405&a=3013769&m=79922", title: "Camiseta Visitante Selección Colombia 1990", inStock: true, sizes: ["XS", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9d84c5086f3b46798e53355fbf220ba9_faec%2FCamiseta_Visitante_Seleccion_Colombia_1990_Amarillo_JN3713_db21_model.jpg&feedId=95016&k=a100763798f441b0e12b1922ad25c38fdd5236fe" },
     ],
   },
 {
@@ -42238,6 +42289,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/227504608464?_skw=Spain+home+soccer+jersey&hash=item34f854d4d0%3Ag%3AE4wAAeSw131qmee2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Spain Home  Jersey 1994 World Cup Bringback Size MEDIUM JN3707", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/E4wAAeSw131qmee2/s-l1600.jpg" },
       { store: "eBay GB", price: 31.9, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/358843173356?_skw=Spain+1994+home+shirt&hash=item538cb849ec%3Ag%3AnmkAAeSw86VqZQK%7E&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbTQqKZFgTzP9ecBClcGbIb5NFZ3Py4MwzOWlexTnt7Vlw2YZVPh4YnO1Zp%2BIqSnq3eYyuzl7S%2F%2BEyomxggTnMamabM3M4YZaKnGZkB5Njs6WKc6Atz1GEs0LQdhdcBqT0DY7Et8ZFqyfjgQVTNwkKtepqfXI75Dc%2B8eRIRLdwqKqCMte562NrQ9pW8fWKpcjl7K0%2F09aqH%2BC1W9akAgJXuQTaJAmZCZFKxHky79Z4TQJgUy9nHpuIv0feg4YoV5jQ%2F%2B8seqz3OCn%2BV6G9fnsAiBX0iRHt8lRGEvBviY4p34A%3D%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Spain 1994 World Cup Retro Home Shirt", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/nmkAAeSw86VqZQK~/s-l1600.jpg" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44854029205&a=3013769&m=79922", title: "Camiseta Local España 1994", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F15b53940bc074bd4a54a7daab941bd41_faec%2FCamiseta_Local_Espana_1994_Rojo_JN3707_db21_model.tiff.jpg&feedId=95016&k=9d8c661da36967856ddcfcfd3068f7d989b56d45" },
     ],
   },
 {
@@ -43570,6 +43622,7 @@ const productsData = [
       { store: "AdidasPT", price: 120.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44851259837&a=3013769&m=77026", title: "Camisola Principal de Manga Comprida 1993 do Japão", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc302019e917d4018b4ed18bd30ec5c98_9366%2FCamisola_Principal_de_Manga_Comprida_1993_do_Japao_Azul_KT0827_HM1.jpg&feedId=92150&k=382354a67d73f2706b643d188e6b739f22b42aac" },
       { store: "eBay IT", price: 270.99, shipping: 73.86, currency: "EUR", url: "https://www.ebay.it/itm/407146590042?_skw=Japan+home+soccer+jersey&hash=item5ecbd3ef5a%3Ag%3A%7EZ4AAeSwguZqi5X7&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia Calcio Adidas Japan Home 1993 Kazuyoshi Miura Uomo L King Kazu", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/~Z4AAeSwguZqi5X7/s-l1600.jpg" },
       { store: "eBay ES", price: 118.26, shipping: 31.93, currency: "EUR", url: "https://www.ebay.es/itm/820178559906?_skw=Japan+home+soccer+jersey&hash=itembef673a3a2%3Ag%3A6SsAAeSw0O5quTlQ&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas Japón Home Manga Larga 1993 KT0827-210 Nueva Con Etiquetas", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/6SsAAeSw0O5quTlQ/s-l1600.jpg" },
+      { store: "AdidasCL", price: 44990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44844011628&a=3013769&m=79922", title: "Camiseta Local Japón 1993 de Manga Larga", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F94167b8dda774ad7b23ddf5e5fa27218_faec%2FCamiseta_Local_Japon_1993_de_Manga_Larga_Azul_KT0827_db21_model.jpg&feedId=95016&k=3acfa58a6a41e77b3adc7aaeb39e21f761760b05" },
     ],
   },
 {
@@ -45717,6 +45770,7 @@ const productsData = [
       { store: "eBay GB", price: 29.87, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/318614377378?_skw=Sweden+1994+home+shirt&hash=item4a2ee593a2%3Ag%3ARvQAAeSwYG9qX0pA&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Sweden Home Jersey 1994 retro shirt LARSSON #7 BROLIN #11 New", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/RvQAAeSwYG9qX0pA/s-l1600.jpg" },
       { store: "eBay IT", price: 98.87, shipping: 33.62, currency: "EUR", url: "https://www.ebay.it/itm/800514443847?_skw=Sweden+home+soccer+jersey&hash=itemba62610a47%3Ag%3A5EgAAeSw1cJqgN-Y&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Sweden Adidas 1994 Home Soccer Football JN3714 Jersey Men Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/5EgAAeSw1cJqgN-Y/s-l1600.jpg" },
       { store: "eBay ES", price: 37.63, shipping: 21.55, currency: "EUR", url: "https://www.ebay.es/itm/358874756829?_skw=Sweden+home+soccer+jersey&hash=item538e9a36dd%3Ag%3AjKAAAeSwRRNqb07-&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Adidas Suecia 1994 SVFF Copa Mundial amarilla local grande", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/jKAAAeSwRRNqb07-/s-l1600.jpg" },
+      { store: "AdidasCL", price: 44990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45408146378&a=3013769&m=79922", title: "Camiseta Local Suecia 1994", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7e8b5a16d5af4f0b819fc3db5e8587fc_faec%2FCamiseta_Local_Suecia_1994_Amarillo_JN3714_db21_model.jpg&feedId=95016&k=9c298ce311d3c39df647d232e689942d8e584948" },
     ],
   },
 {
@@ -48069,6 +48123,7 @@ const productsData = [
       { store: "FootStoreFR", price: 59.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz4577-maillot-prematch-allemagne-2026-black", title: "Maillot Prematch Allemagne 2026", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz4577_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 49.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44852683081&a=3013769&m=65906", title: "Maillot Prematch Alemania 2026", inStock: true, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jz4577_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=d15313fae567216e8c0169eacdb49257f08b2b2b" },
       { store: "SportIsGoodFR", price: 49.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjz4577-maillot-prematch-allemagne-2026-black", title: "Maillot Prematch Allemagne 2026", inStock: true, sizes: ["XS", "S"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jz4577_1_apparel_photography_front_center_view_white.webp" },
+      { store: "AdidasCL", price: 29990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45411236444&a=3013769&m=79922", title: "Camiseta Prepartido Local Alemania 26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1366a24ee5474402ad96230b084a4f41_9366%2FCamiseta_Prepartido_Local_Alemania_26_Negro_JZ4577_21_model.jpg&feedId=95016&k=d9d7f1fbee92a9bf43ad0141ac331bea0cb54a69" },
     ],
   },
 {
@@ -48119,6 +48174,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 45.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-originals-argentina-2026-prepartido-segunda-equipacion-azul-lucido-equipaciones-oficiales-para-hombre-1042936", title: "Camiseta adidas Originals Argentina 2026 Prepartido Segunda equipación", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1042936_main.jpg?v=1790940490" },
       { store: "Amazon", price: 62.25, shipping: 0.0, currency: "EUR", url: "https://www.amazon.de/dp/B0H1JZV551?tag=footballcul07-21", title: "adidas Argentina 2026 Away Pre-Match Jersey JY9535", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/41C6-2sbpLL._AC_SL1024_.jpg" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fargentina-pre-match-soccer-jersey-world-cup-2026-navy%3Fvariant%3D42799238807657", title: "Argentina Pre-Match Soccer Jersey World Cup 2026 Navy", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Argentina_Pre-Match_Soccer_Jersey_World_Cup_2026_Navy_1.webp?v=1767929543" },
+      { store: "AdidasCL", price: 35990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44801249586&a=3013769&m=79922", title: "Camiseta Local Prepartido Selección Argentina 26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F14c9843c33c54a86878657560c0aa07b_9366%2FCamiseta_Local_Prepartido_Seleccion_Argentina_26_Blanco_JY9530_21_model.jpg&feedId=95016&k=755de323537574537cf34b13ce1027320f567188" },
     ],
   },
 {
@@ -68932,6 +68988,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267501301885?_skw=Chile+home+soccer+jersey+kids+youth&hash=item3e4851f07d%3Ag%3Asf4AAeSwAzJpXCKg&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026 Chile Youth Stadium Home Soccer Jersey", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/sf4AAeSwAzJpXCKg/s-l1600.jpg" },
       { store: "eBay ES", price: 86.0, shipping: 34.69, currency: "EUR", url: "https://www.ebay.es/itm/389307352829?_skw=Chile+home+soccer+jersey+kids+youth&hash=item5aa486c6fd%3Ag%3A2%7E0AAeSwi7ppK1sX&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas Chile Youth Stadium Home 2026 - Roja", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/2~0AAeSwi7ppK1sX/s-l1600.jpg" },
+      { store: "AdidasCL", price: 22990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121240&a=3013769&m=79922", title: "Camiseta Local Selección Chilena 26 Niños", inStock: true, sizes: ["9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff164629a17c140748ba24c63199f4160_9366%2FCamiseta_Local_Seleccion_Chilena_26_Ninos_Rojo_KG8545_20_01_model.jpg&feedId=95016&k=64307415e4cfbc0a73aff0e369120d67f074663f" },
     ],
   },
 {
@@ -69659,6 +69716,7 @@ const productsData = [
     ageGroup: "kids",
     offers: [
       { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267466161789?_skw=Venezuela+home+soccer+jersey+kids+youth&hash=item3e4639be7d%3Ag%3A048AAeSwhF9pXCMk&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026 Venezuela Youth Stadium Home Jersey", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/048AAeSwhF9pXCMk/s-l1600.jpg" },
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121148&a=3013769&m=79922", title: "Camiseta Local Venezuela 26 Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff0d90a874bab4aab97d35f25dab98227_9366%2FCamiseta_Local_Venezuela_26_Ninos_Granate_JY5075_01_laydown.jpg&feedId=95016&k=2f0e7568044b55d108aae682797509147a65c51e" },
     ],
   },
 {
@@ -69734,6 +69792,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45367090845&a=3013769&m=77026", title: "Camisola Ajax Amsterdam 26/27 Away", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcf67d99d1d60464ea555e5d53a56f4b3_9366%2FCamisola_Ajax_Amsterdam_26-27_Away_Preto_JZ4693_21_model.jpg&feedId=92150&k=284261b35dbc86c8d7b71d00dc3c67b3c57de4e0" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fajax-segunda-equipacion-2026-2027-blackhazy-orange", title: "Camiseta adidas Ajax Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332178/750/camiseta-adidas-ajax-segunda-equipacion-2026-2027-blackhazy-orange-1.jpg" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-visitante-del-ajax-26-27-de-adidas-originals-negro-naranja-difuminado-replica-para-hombre-4005174", title: "adidas Originals Ajax 26/27 Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005174_list.jpg?v=1790168192" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45363817009&a=3013769&m=79922", title: "Camiseta Visitante Ajax Amsterdam 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcf67d99d1d60464ea555e5d53a56f4b3_9366%2FCamiseta_Visitante_Ajax_Amsterdam_26-27_Negro_JZ4693_21_model.jpg&feedId=95016&k=e0d3ac37bdae512dc9fc5195240423bd3724472a" },
     ],
   },
 {
@@ -69793,6 +69852,7 @@ const productsData = [
       { store: "PlanetFoot", price: 114.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-domicile-al-nassr-ronaldo-7-homme-2026-27-jaune-kb2014%3Fvariant%3D54723780739413", title: "Maillot Domicile Al Nassr Ronaldo 7 Homme 2026/27 Jaune", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-domicile-al-nassr-ronaldo-7-homme-2026-27-jaune-kb2014-2.avif?v=1790092750" },
       { store: "FootStoreES", price: 80.5, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45456957950&a=3013769&m=65912", title: "Maillot Domicile Al Nassr FC 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-kb2014-jauimp-6a79cdb7a7190-1.jpg&feedId=89032&k=25d7a7d595ae617cfc6227119a5b1335b8c23ed2" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-local-del-al-nassr-26-27-de-adidas-amarillo-impact-replica-para-hombre-4005168", title: "adidas Al Nassr 26/27 Home Shirt With Ronaldo 7", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005168_list.jpg?v=1791064135" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45418971307&a=3013769&m=79922", title: "Camiseta Local Al Nassr FC 26/27 N&N", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc9e89d37534345e4bb7470ddb1705db8_9366%2FCamiseta_Local_Al_Nassr_FC_26-27_NandN_Amarillo_KB2014_21_model.jpg&feedId=95016&k=5d5d86d0aa17c865f08e3184bbf90910b334b814" },
     ],
   },
 {
@@ -69833,6 +69893,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgunners-away-soccer-jersey-2026-27%3Fvariant%3D43253821145193", title: "Gunners Away Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Arsenalawayfan202627.jpg?v=1784620166" },
       { store: "eBay ES", price: 57.65, shipping: 23.76, currency: "EUR", url: "https://www.ebay.es/itm/298716129356?_skw=Arsenal+away+soccer+jersey&hash=item458cde684c%3Ag%3AigcAAeSw-8lqk1rC&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol para hombre mediana 2026/27 EPL Arsenal FC visitante DECLAN ARROZ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/igcAAeSw-8lqk1rC/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-visitante-del-arsenal-26-27-de-adidas-originals-azul-marino-collegiate-replica-para-hombre-4004898", title: "adidas Originals Arsenal 26/27 Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004898_list.jpg?v=1791067120" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45375966193&a=3013769&m=79922", title: "Camiseta Visitante Arsenal FC 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c0919c0a7874e708f0640f4b53fc1b9_9366%2FCamiseta_Visitante_Arsenal_FC_26-27_Azul_JZ3160_21_model.jpg&feedId=95016&k=1e1f0ad4541a67e4aa5806ebd0de9357afa03d7c" },
     ],
   },
 {
@@ -69922,6 +69983,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Ffc-bayern-segunda-equipacion-2026-2027-white", title: "Camiseta adidas Fc Bayern Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332286/750/camiseta-adidas-fc-bayern-segunda-equipacion-2026-2027-white-1.jpg" },
       { store: "ForumSport", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45677083855&a=3013769&m=23805", title: "Adidas bayern de munich 26/27 segunda equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102035-00-S-M-20260727103834.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc4NXxpbWFnZS9qcGVnfGFHVXlMMmd3TlM4eE16a3hOalV4T0RZeE16QXlNaTl0WldScFlYTmZNVEF3TVRFd01qQXpOVjh3TUY5VFgwMHRNakF5TmpBM01qY3hNRE00TXpRdWFuQm58ZTQyMWFhY2JmNjZlMmE3Zjg4NzJjOTE0ZmU5ZGJkZGMzMjY3YzMzZmU4ZTA4ZjIyMDhiY2YyN2NmZjkzMDExZA&feedId=58083&k=40d40d5b1963e2acc2e591fffcd657cdf41b080a" },
       { store: "Pro:Direct ES", price: 90.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-visitante-del-bayern-de-munich-de-adidas-originals-temporada-26-27-blanca-replica-para-hombre-4004861", title: "adidas Originals Bayern Munich 26/27 Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004861_list.jpg?v=1791066424" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45351692948&a=3013769&m=79922", title: "Camiseta Visitante FC Bayern 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F51bd64b7e93246a4805fbff5f3cbfe10_9366%2FCamiseta_Visitante_FC_Bayern_26-27_Blanco_JZ3069_21_model.jpg&feedId=95016&k=c65028ed11d853a05beb7903db99eaffce2aa806" },
     ],
   },
 {
@@ -69943,6 +70005,7 @@ const productsData = [
       { store: "SportIsGoodES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44769657257&a=3013769&m=65906", title: "Camiseta Local Bayern Múnich 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kq6513_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=1f0be75682e585f4e622d69b8b7266bc7d3be196" },
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398382874837?_skw=Bayern+Munich+home+soccer+jersey&hash=item5cc17840d5%3Ag%3ABOMAAeSwCuxqo23q&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Bayern Munich Home Jersey 26/27 - Player Version", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/BOMAAeSwCuxqo23q/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-adidas-bayern-munich-26-27-primera-equipacion-ml-better-escarlata-blanco-equipaciones-oficiales-para-hombre-1054154", title: "Camiseta adidas Bayern Munich 26/27 Primera equipación ML", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1054154_list.jpg?v=1790493489" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44747405329&a=3013769&m=79922", title: "Camiseta Local FC Bayern 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9ed01db78013461c8fe9c18647c23c6f_9366%2FCamiseta_Local_FC_Bayern_26-27_Rojo_KQ6513_21_model.jpg&feedId=95016&k=97e37ba358c3efa883cbc4791f3c268e4ac609cf" },
     ],
   },
 {
@@ -69991,6 +70054,7 @@ const productsData = [
       { store: "FootStoreFR", price: 70.43, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkm2270-maillot-domicile-benfica-lisbonne-2026-27-rohare-blanc", title: "Maillot Domicile Benfica Lisbonne 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_km2270_1_apparel_photography_front_center_view_white.webp" },
       { store: "SportIsGoodES", price: 77.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46118340381&a=3013769&m=65906", title: "Camiseta local de manga larga Benfica de Lisboa 2026/27", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-km2271-hirere-white-6a69269e4982d-1.jpg&feedId=89044&k=3f12e17bbff03599e639b0f003a92a3ce8fcc5e7" },
       { store: "SportIsGoodFR", price: 77.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkm2271-maillot-domicile-manches-longues-benfica-lisbonne-2026-27-hirere-white", title: "Maillot Domicile manches longues Benfica Lisbonne 2026/27", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-km2271-hirere-white-6a69269e4982d-1.webp" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44963930994&a=3013769&m=79922", title: "Camiseta Local SL Benfica 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc2962d00608b4a0e8a223a1bc63cefd6_9366%2FCamiseta_Local_SL_Benfica_26-27_Blanco_KB2021_21_model.jpg&feedId=95016&k=e4ad56edc6e7876a18e4243f837529ba50d8d4ff" },
     ],
   },
 {
@@ -70010,6 +70074,7 @@ const productsData = [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45461767426&a=3013769&m=77008", title: "Camiseta primera equipación Boca Juniors 26/27", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff03ae8c3a50f49bc8cbfa7a670c0c16d_9366%2FCamiseta_primera_equipacion_Boca_Juniors_26-27_Azul_KB4380_21_model.jpg&feedId=92152&k=a9422ec4a52acc8982fa729fbcb4d5f368a669e2" },
       { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/227517990529?_skw=Boca+Juniors+home+soccer+jersey&hash=item34f9210681%3Ag%3AILYAAeSwKm1qpP2q&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Boca Juniors Home Mens 26-27", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ILYAAeSwKm1qpP2q/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-boca-juniors-26-27-home-shirt-victory-blue-bold-gold-mens-replica-4005165", title: "adidas Boca Juniors 26/27 Home Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005165_list.jpg?v=1791064646" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45466009899&a=3013769&m=79922", title: "Camiseta Local Boca Juniors 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff03ae8c3a50f49bc8cbfa7a670c0c16d_9366%2FCamiseta_Local_Boca_Juniors_26-27_Azul_KB4380_21_model.jpg&feedId=95016&k=303444f2013a5f5f6efc857c47f8646381c603c5" },
     ],
   },
 {
@@ -70200,6 +70265,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-exterieur-juventus-homme-2026-27-rose-noir-kr4647%3Fvariant%3D54723781198165", title: "Maillot Extérieur Juventus Homme 2026/27 Rose Noir", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-juventus-homme-2026-27-rose-noir-kr4647-1.avif?v=1790093893" },
       { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206478941858?_skw=Juventus+away+soccer+jersey&hash=item30131a9ea2%3Ag%3AT3IAAeSwiiFqeThi&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYWYeQ7PZgW3TWtnYptg8nE5RkMr9QVhpA4yhuo6jLlLlzFb86iPRkIscnfrbKd2cyBaeuyl3Lj0S6sjMaf%2Bv9jDrI9pbnkB0dyWh1CFhL4LDK46WZlCG9N3F2WZKG9Id2u9eqQqnkiyO7e0W%2BlDMX8UOuCxpQrGxy%2FTP34hGv0S0YgfCF94jLyfKDTuNubE%2BSNTH744pALawLJl4Nk%2FSgUPdio7xPVv%2FUYnnJYSc7f9LKA32fCoRe7S7QTae1OKkVLxx6XcYT19RWqfER3bRNUVie%2BFhGSDVVpl%2FcESA9ePw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Juventus FC Away Jersey Pink Color Size Medium 26/27 Mens", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/T3IAAeSwiiFqeThi/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-visitante-de-la-juventus-26-27-de-adidas-originals-rosa-autentico-negro-replica-para-hombre-4005085", title: "adidas Originals Juventus 26/27 Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005085_list.jpg?v=1790941046" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45357708782&a=3013769&m=79922", title: "Camiseta Visitante Juventus 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0c6aa623c7494fd98228ec22625ef41e_9366%2FCamiseta_Visitante_Juventus_26-27_Rosado_KR4647_21_model.jpg&feedId=95016&k=770d4baf3420e4cbc8245a2c7ac66a635bcdc53e" },
     ],
   },
 {
@@ -70230,6 +70296,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fturin-black-white-home-soccer-jersey-2026-27-home-soccer-jersey-2026-27%3Fvariant%3D47844103585897", title: "Turin Black & White Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/juventushomefan2026_27.jpg?v=1785316680" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44729066353&a=3013769&m=77026", title: "Camisola Juventus 26/27 Home", inStock: true, sizes: ["XS", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc9f22503c4904177b823f5d550912a45_9366%2FCamisola_Juventus_26-27_Home_Branco_KB8823_21_model.jpg&feedId=92150&k=4002d8d094743e2f472afa6a3ecb4e1d44923289" },
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398379461232?_skw=Juventus+home+soccer+jersey&hash=item5cc1442a70%3Ag%3AnE0AAeSwKpJqoh3k&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Juventus Home Jersey 26/27 - Player Version", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/nE0AAeSwKpJqoh3k/s-l1600.jpg" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44731601937&a=3013769&m=79922", title: "Camiseta Local Juventus 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5cdfd5682cb0474a9fbaad71778f2092_9366%2FCamiseta_Local_Juventus_26-27_Blanco_KC2285_21_model.jpg&feedId=95016&k=30b2e229e7ea3d85f91d41ca326801c37639c412" },
     ],
   },
 {
@@ -70346,6 +70413,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-exterieur-liverpool-fc-homme-2026-27-blanc-ka6860%3Fvariant%3D54723779854677", title: "Maillot Extérieur Liverpool FC Homme 2026/27 Blanc", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-liverpool-fc-homme-2026-27-blanc-ka6860-1.avif?v=1790091794" },
       { store: "eBay", price: 35.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/188918091061?_skw=Liverpool+away+soccer+jersey&hash=item2bfc654d35%3Ag%3AeasAAeSwpalqpHKo&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool 26/27 season away Jersey  Size: XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/easAAeSwpalqpHKo/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 90.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-visitante-del-liverpool-26-27-de-adidas-originals-blanca-replica-para-hombre-4004790", title: "adidas Originals Liverpool 26/27 Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004790_list.jpg?v=1790604561" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45405664114&a=3013769&m=79922", title: "Camiseta Visitante Liverpool FC 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9a14f898beaf4889a1610dd52347684e_9366%2FCamiseta_Visitante_Liverpool_FC_26-27_Blanco_KA6860_21_model.jpg&feedId=95016&k=d4b817a6280f19374e434542cc39ffa7869d2618" },
     ],
   },
 {
@@ -70443,6 +70511,7 @@ const productsData = [
       { store: "PlanetFoot", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmaillot-exterieur-manchester-united-homme-2026-27-bleu-ka6861%3Fvariant%3D54723780477269", title: "Maillot Extérieur Manchester United Homme 2026/27 Bleu", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/maillot-exterieur-manchester-united-homme-2026-27-bleu-ka6861-1.avif?v=1790092547" },
       { store: "eBay", price: 85.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336796898073?_skw=Manchester+United+away+soccer+jersey&hash=item4e6aa8d319%3Ag%3Aa-0AAeSwbLhqquYt&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United Away  Soccer Jersey 26/27 - 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/a-0AAeSwbLhqquYt/s-l1600.jpg" },
       { store: "Pro:Direct ES", price: 90.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-de-visitante-del-manchester-united-de-la-temporada-26-27-de-adidas-originals-azul-real-del-equipo-replica-para-hombre-4005017", title: "adidas Originals Manchester United 26/27 Away Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005017_list.jpg?v=1790940661" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45363821779&a=3013769&m=79922", title: "Camiseta Visitante Manchester United 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Feec2ddd0517947eaafc7bc4f9758a978_9366%2FCamiseta_Visitante_Manchester_United_26-27_Azul_KA6861_21_model.jpg&feedId=95016&k=961f64a0667d8b1c91c569f2ca75dc1e331bcb76" },
     ],
   },
 {
@@ -70696,6 +70765,7 @@ const productsData = [
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45367100599&a=3013769&m=77026", title: "Camisola Real Madrid 26/27 Away", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1bcda831cfe846dbb9673c76fa8ead5d_9366%2FCamisola_Real_Madrid_26-27_Away_Verde_JZ7205_21_model.jpg&feedId=92150&k=c0f6f0598f6f80cce1b4b566d45910e4785a76af" },
       { store: "Amazon", price: 99.95, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FWK1LWSG?tag=footballcult-21", title: "adidas Jersey Visitante Real Madrid 26/27 para Hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/711yW007R8L._AC_UL1000_.jpg" },
       { store: "eBay", price: 43.0, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/267795791212?_skw=Real+Madrid+away+soccer+jersey&hash=item3e59df7d6c%3Ag%3A888AAeSwDONqtt-O&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "real madrid jersey 26/27 away green", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/888AAeSwDONqtt-O/s-l1600.jpg" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45369150792&a=3013769&m=79922", title: "Camiseta Visitante Real Madrid 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1bcda831cfe846dbb9673c76fa8ead5d_9366%2FCamiseta_Visitante_Real_Madrid_26-27_Verde_JZ7205_21_model.jpg&feedId=95016&k=7135d621f2ccb9c26d9cc864b313d1084edadffa" },
     ],
   },
 {
@@ -70714,6 +70784,7 @@ const productsData = [
       { store: "Pro:Direct ES", price: 90.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-tercera-del-real-madrid-de-adidas-26-27-rosa-salvaje-replica-para-hombre-4004968", title: "adidas Real Madrid 26/27 Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004968_list.jpg?v=1791065648" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-third-away-soccer-jersey-2026-27%3Fvariant%3D43253816819817", title: "Los Blancos Third Away Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/realmadridthirdfan2026_27.jpg?v=1785210185" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-real-madrid-26-27-third-shirt-wild-pink-mens-replica-4004968", title: "adidas Real Madrid 26/27 Third Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4004968_list.jpg?v=1791068008" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45585745005&a=3013769&m=79922", title: "Tercera Camiseta Real Madrid 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9f12c77f72d14b158c5477da37fc901e_9366%2FTercera_Camiseta_Real_Madrid_26-27_Rosado_IA7520_21_model.jpg&feedId=95016&k=5cea2d2a274af3d37fb2710740fa76fd37a49422" },
     ],
   },
 {
@@ -70727,6 +70798,7 @@ const productsData = [
     brand: "other",
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Friver-plate-home-soccer-jersey-2026-27%3Fvariant%3D47868791554153", title: "River Plate Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RiverPlatehomefan2026_27.webp?v=1785835751" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45418971510&a=3013769&m=79922", title: "Camiseta Local River Plate 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F37b6f0afc17940c981d65f2d9dffa9f3_9366%2FCamiseta_Local_River_Plate_26-27_Blanco_KB2050_21_model.jpg&feedId=95016&k=50f3a078686a5ec5bb17d19d74f93c950aadb7f5" },
     ],
   },
 {
@@ -70758,6 +70830,7 @@ const productsData = [
       { store: "FootStoreFR", price: 106.24, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjz7275-maillot-domicile-authentique-as-roma-2026-27-tmvire", title: "Maillot Domicile Authentique AS Roma 2026/27", inStock: true, sizes: ["XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/j/z/jz7275.webp" },
       { store: "FootStoreES", price: 107.57, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46163806995&a=3013769&m=65912", title: "Maillot Domicile Auténtico AS Roma 2026/27", inStock: true, sizes: ["XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fz%2Fjz7275.jpg&feedId=89032&k=0dffbdee9018e5fb6a467dcd1863ae552710daa3" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fas-roma-primera-equipacion-2026-2027-team-victory-red", title: "Camiseta adidas As Roma Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/339057/750/camiseta-adidas-as-roma-primera-equipacion-2026-2027-team-victory-red-1.jpg" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45357708406&a=3013769&m=79922", title: "Camiseta Local AS Roma 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb8ac325ec4c944bd8c7ba79841d145f2_9366%2FCamiseta_Local_AS_Roma_26-27_Granate_KW4631_21_model.jpg&feedId=95016&k=ae18f9fa841ddf0d933dfdd13fe19619f1eefb50" },
     ],
   },
 {
@@ -71371,6 +71444,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fmanchester-united-primera-equipacion-2026-2027-red", title: "Camiseta adidas Manchester United Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/327148/750/camiseta-adidas-manchester-united-primera-equipacion-2026-2027-red-1.jpg" },
       { store: "AdidasPT", price: 85.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44745842331&a=3013769&m=77026", title: "Camisola Curta Manchester United FC 26/27 Home", inStock: true, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F76d03fbbd5dc4624ac1b596f1332392b_9366%2FCamisola_Curta_Manchester_United_FC_26-27_Home_Vermelho_KC4787_21_model.jpg&feedId=92150&k=bd38a62fe40532df2e28492319b75d4cfd40b44e" },
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398382848864?_skw=Manchester+United+home+soccer+jersey&hash=item5cc177db60%3Ag%3A4ZsAAeSwyZ9qo2mY&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Manchester United Home Jersey 26/27 - Player Version", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/4ZsAAeSwyZ9qo2mY/s-l1600.jpg" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44757870153&a=3013769&m=79922", title: "Camiseta Local Manchester United 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff7eaae60d3ea488796a6be104acbe9a4_9366%2FCamiseta_Local_Manchester_United_26-27_Rojo_KA6871_21_model.jpg&feedId=95016&k=6c39b54c4c376438ae9022f52a98f3f7d082d8c7" },
     ],
   },
 {
@@ -71413,6 +71487,7 @@ const productsData = [
       { store: "Amazon", price: 31.99, shipping: 0.0, currency: "EUR", url: "https://www.amazon.es/dp/B0FWJ61LPR?tag=footballcult-21", title: "adidas Liverpool FC Local Camiseta de manga corta para hombre", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://m.media-amazon.com/images/I/713mPApkD7L._AC_SL1500_.jpg" },
       { store: "AdidasPT", price: 100.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44781951403&a=3013769&m=77026", title: "Camisola Principal 26/27 do Liverpool FC", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7e083827b22844499db6244f9b547763_9366%2FCamisola_Principal_26-27_do_Liverpool_FC_Bordo_KA6852_21_model.jpg&feedId=92150&k=e151c849c6a01fc569e7e9624dc3d27106470848" },
       { store: "eBay", price: 39.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198625099666?_skw=Liverpool+home+soccer+jersey&hash=item2e3efa7f92%3Ag%3ACj4AAeSw-1lqnsv%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool FC Home Jersey Red/White 2027", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Cj4AAeSw-1lqnsv~/s-l1600.jpg" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44778294256&a=3013769&m=79922", title: "Camiseta Local Liverpool FC 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7e083827b22844499db6244f9b547763_9366%2FCamiseta_Local_Liverpool_FC_26-27_Granate_KA6852_21_model.jpg&feedId=95016&k=3e9a346d459ac81ae0d1b171c0781df246a271aa" },
     ],
   },
 {
@@ -72620,6 +72695,7 @@ const productsData = [
       { store: "ForumSport", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45692358355&a=3013769&m=23805", title: "Adidas juventus 26/27 tercera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102050-00-S-M-20260727103834.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU1MnxpbWFnZS9qcGVnfGFHSmtMMmcyTVM4eE16a3hOalV5TnpNeU9UTXhNQzl0WldScFlYTmZNVEF3TVRFd01qQTFNRjh3TUY5VFgwMHRNakF5TmpBM01qY3hNRE00TXpRdWFuQm58NTA5ZGYxZTIwYWFlZjRlNjgzNzY0MDk3ZDJiNGNlN2FkMmQ5NDRhNzNmMTJlN2U1MWJhNTlkYzFiYmQ1YjJjMA&feedId=58083&k=3f707d4c8978856a9a711ff24f68538fe3bd6ea1" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-tercera-de-la-juventus-de-adidas-para-la-temporada-26-27-negra-replica-para-hombre-4005100", title: "adidas Juventus 26/27 Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005100_list.jpg?v=1791067640" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-juventus-26-27-third-shirt-black-mens-replica-4005100", title: "adidas Juventus 26/27 Third Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005100_list.jpg?v=1791069361" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45525817275&a=3013769&m=79922", title: "Tercera Camiseta Juventus 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff200533b111a43e09305508640e24366_9366%2FTercera_Camiseta_Juventus_26-27_Negro_KC2297_000_plp_model.jpg&feedId=95016&k=bd9c74b73360d4b8cce7d4cc85542dfa49eca792" },
     ],
   },
 {
@@ -73085,6 +73161,7 @@ const productsData = [
       { store: "ForumSport", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45789738110&a=3013769&m=23805", title: "Adidas manchester united 26/27 tercera equipacion camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102043-00-S-M-20260803133427.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgxN3xpbWFnZS9qcGVnfGFEVTVMMmhoTVM4eE16a3pNVGc1TXpBMk16Y3hNQzl0WldScFlYTmZNVEF3TVRFd01qQTBNMTh3TUY5VFgwMHRNakF5TmpBNE1ETXhNek0wTWpjdWFuQm58YTJlYzlkOTcwOTkyZTQxM2QyYmU2NDRlMDY5NmE2OTNlODI0MjIyMTFkMTg5NmYzM2FmMzYyMDAxM2VmYjEyZg&feedId=58083&k=7508730cc8b773590231ab194ec0f28ee758059a" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-tercera-del-manchester-united-de-adidas-temporada-26-27-marfil-replica-para-hombre-4005039", title: "adidas Manchester United 26/27 Third Shirt", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005039_list.jpg?v=1791065266" },
       { store: "Pro:Direct Soccer", price: 72.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-manchester-united-26-27-third-shirt-ivory-mens-replica-4005039", title: "adidas Manchester United 26/27 Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005039_list.jpg?v=1791068251" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45655838398&a=3013769&m=79922", title: "Tercera Camiseta Manchester United 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F68337ff75b35441aa6d284c88f941ede_9366%2FTercera_Camiseta_Manchester_United_26-27_Beige_KA6876_21_model.jpg&feedId=95016&k=77012469d7fa7d5bca629013b129e16a6389d891" },
     ],
   },
 {
@@ -73201,6 +73278,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fboca-juniors-segunda-equipacion-2026-2027-whiteshadow-navy", title: "Camiseta adidas Boca Juniors Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/332251/750/camiseta-adidas-boca-juniors-segunda-equipacion-2026-2027-whiteshadow-navy-1.jpg" },
       { store: "eBay", price: 28.98, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/267782204540?_skw=Boca+Juniors+away+soccer+jersey&hash=item3e59102c7c%3Ag%3AxX8AAeSwHPVqo6vu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Boca Juniors Away Mens 26-27", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/xX8AAeSwHPVqo6vu/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 85.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-originals-boca-juniors-26-27-away-shirt-white-shadow-navy-mens-replica-4005167", title: "adidas Originals Boca Juniors 26/27 Away Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4005167_main.jpg?v=1791065977" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45818658067&a=3013769&m=79922", title: "Camiseta Visitante Boca Juniors 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9033c9c83e784fa0a1d78d9b43d0273e_9366%2FCamiseta_Visitante_Boca_Juniors_26-27_Blanco_KD1518_21_model.jpg&feedId=95016&k=c0670670eccc5f7e643fbf12a8076e719d327b52" },
     ],
   },
 {
@@ -73216,6 +73294,7 @@ const productsData = [
       { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45803587337&a=3013769&m=77008", title: "Camiseta tercera equipación Liverpool FC 26/27 Oficial", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff7556178159a441ca454503363dabff7_9366%2FCamiseta_tercera_equipacion_Liverpool_FC_26-27_Oficial_Negro_KA6858_HM51.jpg&feedId=92152&k=37552de5ac16ec346c1035c58348f37a33b59afb" },
       { store: "Pro:Direct ES", price: 100.0, shipping: 3.62, currency: "EUR", url: "https://www.prodirectsport.es/products/camiseta-tercera-del-liverpool-26-27-de-adidas-negra-replica-para-hombre-4004801", title: "adidas Liverpool 26/27 Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004801_list.jpg?v=1791067593" },
       { store: "Pro:Direct Soccer", price: 72.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/adidas-liverpool-26-27-third-shirt-black-mens-replica-4004801", title: "adidas Liverpool 26/27 Third Shirt", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/4004801_list.jpg?v=1791065406" },
+      { store: "AdidasCL", price: 79990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45805741892&a=3013769&m=79922", title: "Tercera Camiseta Liverpool FC 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9134448803f6442fa15f7be2cbde2908_9366%2FTercera_Camiseta_Liverpool_FC_26-27_Negro_KA6855_21_model.jpg&feedId=95016&k=b2aa81072e58a7e16dce77eb00389b54640904f9" },
     ],
   },
 {
@@ -75032,6 +75111,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 49.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/158299921939?_skw=Germany+away+soccer+jersey&hash=item24db691e13%3Ag%3AUPEAAeSwy4Nqqyp6&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Germany National Team Away Replica Jersey 2014 JZ6959", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/UPEAAeSwy4Nqqyp6/s-l1600.jpg" },
       { store: "eBay ES", price: 53.2, shipping: 15.65, currency: "EUR", url: "https://www.ebay.es/itm/158299921939?_skw=Germany+away+soccer+jersey&hash=item24db691e13%3Ag%3AUPEAAeSwy4Nqqyp6&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas Selección Alemania Visitante Réplica 2014 JZ6959 (2)", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/UPEAAeSwy4Nqqyp6/s-l1600.jpg" },
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44854033328&a=3013769&m=79922", title: "Camiseta Visitante Alemania 2014", inStock: true, sizes: ["XS", "S", "M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5ddcf9c15aaa4d36bd106d8787bc15ee_faec%2FCamiseta_Visitante_Alemania_2014_Negro_JZ6959_db21_model.jpg&feedId=95016&k=5417215a0270010c07ba824fd39289aa0ea1878e" },
     ],
   },
 {
@@ -86577,6 +86657,7 @@ const productsData = [
       { store: "FootStoreES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45381240451&a=3013769&m=65912", title: "Camisa de visitante mujer Alemania Coupe du Monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jz4568_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=3884f343f7f15ca0fbe3584ca4b104fce9e618c3" },
       { store: "SportIsGoodES", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45380187900&a=3013769&m=65906", title: "Camisa de visitante mujer Alemania Coupe du Monde 2026", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jz4568_1_apparel_photography_front_center_view_white.jpg&feedId=89044&k=3884f343f7f15ca0fbe3584ca4b104fce9e618c3" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwomens-germany-away-soccer-jersey-2026%3Fvariant%3D42971470463081", title: "Women's Germany Away Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/Women_sGermanyAwaySoccerJersey2026_1.webp?v=1773142539" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450064&a=3013769&m=79922", title: "Camiseta Visitante Alemania 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb77fff63a8db4413b9422887ffa0ccfe_9366%2FCamiseta_Visitante_Alemania_26_Azul_JZ4568_21_model.jpg&feedId=95016&k=b3a065cf151eb0377e561e15a2fd6d0f65f10c0b" },
     ],
   },
 {
@@ -86596,6 +86677,7 @@ const productsData = [
       { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094293636&a=3013769&m=77008", title: "Camiseta primera equipación auténtica Alemania 26 selección femenina", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb4fdde8012e454682622c5cfdba8b27_faec%2FCamiseta_primera_equipacion_autentica_Alemania_26_seleccion_femenina_Blanco_JZ9656_db21_model.jpg&feedId=92152&k=b9644b3ea3d8d7452e451c6b5766d81f439a5bdd" },
       { store: "AdidasPT", price: 105.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096964561&a=3013769&m=77026", title: "Camisola Principal Oficial Germany 26 Seleção Feminina", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb4fdde8012e454682622c5cfdba8b27_faec%2FCamisola_Principal_Oficial_Germany_26_Selecao_Feminina_Branco_JZ9656_db21_model.jpg&feedId=92150&k=1bcdabce0daeb920102f57b552480f2fb7f9c4a4" },
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwomens-germany-home-soccer-jersey-2026%3Fvariant%3D43111696957545", title: "Women's Germany Home Soccer Jersey 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/womengermanyhome2026_1.webp?v=1775638838" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121004&a=3013769&m=79922", title: "Camiseta Local Alemania 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F55d6d19cfd744793a99f054c23c39de4_9366%2FCamiseta_Local_Alemania_26_Blanco_JZ4559_21_model.jpg&feedId=95016&k=9efbaf80aadc340d5cfc8cce7a25f914f49acb8a" },
     ],
   },
 {
@@ -86901,6 +86983,7 @@ const productsData = [
       { store: "SportIsGoodFR", price: 60.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjy7586-maillot-domicile-femme-italie-coupe-du-monde-2026-boblue", title: "Maillot Domicile femme Italie Coupe du Monde 2026", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy7586_3_apparel_on_model_standard_view_white.webp" },
       { store: "AdidasES", price: 150.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094298254&a=3013769&m=77008", title: "Camiseta primera equipación auténtica Italia 26 selección femenina", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0cac292a6725404c87460885f16f37ae_faec%2FCamiseta_primera_equipacion_autentica_Italia_26_seleccion_femenina_Azul_JY5643_db21_model.jpg&feedId=92152&k=c76dc9208571b43b1894fbb7241201efff439d10" },
       { store: "AdidasPT", price: 150.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43096966067&a=3013769&m=77026", title: "Camisola Principal Oficial Italy 26 Seleção Feminina", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0cac292a6725404c87460885f16f37ae_faec%2FCamisola_Principal_Oficial_Italy_26_Selecao_Feminina_Azul_JY5643_db21_model.jpg&feedId=92150&k=a6bbb3383627333728a6d7d5b7e28bbdbc7473c1" },
+      { store: "AdidasCL", price: 33990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087120985&a=3013769&m=79922", title: "Camiseta Local Italia 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9716cb1d4ca14ca8a3ee4af6a3e2c31f_9366%2FCamiseta_Local_Italia_26_Azul_JY7586_21_model.jpg&feedId=95016&k=1630eda44de591ccfe5f07f1f4a4d774bd031863" },
     ],
   },
 {
@@ -87209,6 +87292,7 @@ const productsData = [
       { store: "FootStoreFR", price: 83.0, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5982-maillot-domicile-crop-femme-argentine-coupe-du-monde-2026-white-iceblu-ltblue", title: "Maillot Domicile crop femme Argentine Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_ke5982_1_apparel_photography_front_center_view_white.webp" },
       { store: "FansJerseyHub", price: 31.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwomens-la-albiceleste-home-jersey-world-cup-2026%3Fvariant%3D43253846474857", title: "Women's La Albiceleste Home Jersey World Cup 2026", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/argentinahomewomen.jpg?v=1781675976" },
       { store: "FootStoreES", price: 85.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45888243173&a=3013769&m=65912", title: "Maillot Domicilio crop mujer Argentina Coupe du Monde 2026", inStock: true, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_11_12_adidas_ke5982_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=d59e4a17f2dadf40acd5a42ade85e1a7753559c4" },
+      { store: "AdidasCL", price: 99990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121193&a=3013769&m=79922", title: "Camiseta Local Selección Argentina 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2ac91f8ac51b40f48e8d2d1260c7ec1d_9366%2FCamiseta_Local_Seleccion_Argentina_26_Blanco_KA8125_21_model.jpg&feedId=95016&k=ed9c91586f4d960c2a423edded37d76d6bf966a8" },
     ],
   },
 {
@@ -90239,6 +90323,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "AdidasES", price: 100.0, shipping: 0.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43094299981&a=3013769&m=77008", title: "Camiseta primera equipación Japón 26/27", inStock: true, sizes: ["S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc7017caf8161419691a16357f4270a7e_9366%2FCamiseta_primera_equipacion_Japon_26-27_Azul_KD3345_21_model.jpg&feedId=92152&k=51f0bb58106e01815414467f057f9046e0284f18" },
+      { store: "AdidasCL", price: 42990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121008&a=3013769&m=79922", title: "Camiseta Local Japón 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc7017caf8161419691a16357f4270a7e_9366%2FCamiseta_Local_Japon_26-27_Azul_KD3345_21_model.jpg&feedId=95016&k=7ec7f8203a3c760382378112029ee62f45378f28" },
     ],
   },
 {
@@ -92519,6 +92604,334 @@ const productsData = [
     offers: [
       { store: "eBay", price: 99.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/116197059403?_skw=Serbia+home+soccer+jersey&hash=item1b0de26b4b%3Ag%3A7jYAAOSwXfZmVQiS&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "mint SERBIA 2010-11 home football shirt Nike M jersey World Cup", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/7jYAAOSwXfZmVQiS/s-l1600.jpg" },
       { store: "eBay GB", price: 26.69, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/407250212746?_skw=Serbia+2010+home+shirt&hash=item5ed201178a%3Ag%3AkGIAAeSws%7ElpwD-6&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Original Authentic Serbia 2010/11 Nike Home Shirt Near Mint Condition Size Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/kGIAAeSws~lpwD-6/s-l1600.jpg" },
+    ],
+  },
+{
+    id: "colocolo-training-202526",
+    teamKey: "colocolo",
+    season: "2025/26",
+    typeKey: "training",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 38990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43600498298&a=3013769&m=79922", title: "Camiseta de entrenamiento Colo-Colo Tiro26 Competition", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7f3b89136bdb4098b55005bcfda4afea_9366%2FCamiseta_de_entrenamiento_Colo-Colo_Tiro26_Competition_Rojo_JW2640_21_model.jpg&feedId=95016&k=b962cb08e35587ff7d12d55c70aef0b2ef8ffb9b" },
+    ],
+  },
+{
+    id: "udechile-away-2026",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 34990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921023&a=3013769&m=79922", title: "Camiseta Visitante Universidad de Chile 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd934e47226f84424a2b6948e1b329135_9366%2FCamiseta_Visitante_Universidad_de_Chile_26_Blanco_JL6696_21_model.jpg&feedId=95016&k=9ed661ade9eee4063619d27821ccd36ba4916ce2" },
+    ],
+  },
+{
+    id: "udechile-home-2026",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 41990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921040&a=3013769&m=79922", title: "Camiseta Local Universidad de Chile 26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe8785b89623540aca4c18d54216758d3_9366%2FCamiseta_Local_Universidad_de_Chile_26_Azul_JL6695_21_model.jpg&feedId=95016&k=6a5863cb94c157d7f17b7c3f6b552db4c43dca01" },
+    ],
+  },
+{
+    id: "udechile-prematch-2026",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "prematch",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 30990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921434&a=3013769&m=79922", title: "Camiseta prepartido de Universidad de Chile 26", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F36ee36da2298443f9e6f11b5b644c4e2_9366%2FCamiseta_prepartido_de_Universidad_de_Chile_26_Negro_JW4404_21_model.jpg&feedId=95016&k=08c3c70ed00cb94859bfdfcaa401356a690ff663" },
+    ],
+  },
+{
+    id: "udechile-third-202627",
+    teamKey: "udechile",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 69990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45805744868&a=3013769&m=79922", title: "Tercera Camiseta Universidad de Chile 26/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F69e19ebb3ae04a48a106787bed16c10e_9366%2FTercera_Camiseta_Universidad_de_Chile_26-27_Rojo_KA2351_21_model.jpg&feedId=95016&k=9513350afb283c51efba87e41703e94c2c01e6dd" },
+    ],
+  },
+{
+    id: "udechile-training-202526",
+    teamKey: "udechile",
+    season: "2025/26",
+    typeKey: "training",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 21990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43600494074&a=3013769&m=79922", title: "Camiseta de entrenamiento Universidad de Chile Tiro26 Competition", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9f7a22fd78624661b413dbff5516fdde_9366%2FCamiseta_de_entrenamiento_Universidad_de_Chile_Tiro26_Competition_Morado_JW4398_21_model.jpg&feedId=95016&k=d582b1db660036d35de666b0bbbce4f2d2ee60cf" },
+    ],
+  },
+{
+    id: "realmadrid-prematch-202627",
+    teamKey: "realmadrid",
+    season: "2026/27",
+    typeKey: "prematch",
+    colorHex: "#F5F5F5",
+    colorHexSecondary: "#8FB8E8",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 59990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=46194189050&a=3013769&m=79922", title: "Camiseta Prepartido Real Madrid 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F047b23ef43094a1db6ce959db37fd7f3_9366%2FCamiseta_Prepartido_Real_Madrid_26-27_Rosado_KG1351_21_model.jpg&feedId=95016&k=4788de977f564398d7ad311b1ee167fe55862a5a" },
+    ],
+  },
+{
+    id: "riverplate-away-202627",
+    teamKey: "riverplate",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#F5F5F5",
+    colorHexSecondary: "#E30613",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "AdidasCL", price: 89990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45609291063&a=3013769&m=79922", title: "Camiseta Visitante River Plate 26/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7637bce99fa8486bbe6302e565c9cd6c_9366%2FCamiseta_Visitante_River_Plate_26-27_Blanco_KD1519_21_model.jpg&feedId=95016&k=aa3ed514a27a8a18493539eb34c619b6deab883c" },
+    ],
+  },
+{
+    id: "argentina-away-women",
+    teamKey: "argentina",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#75AADB",
+    colorHexSecondary: "#F4F7FA",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 53990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450051&a=3013769&m=79922", title: "Camiseta Visitante Selección Argentina 26", inStock: true, sizes: ["XS", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F41a856121b6a4af0bcd6dcdea87182c6_9366%2FCamiseta_Visitante_Seleccion_Argentina_26_Negro_KB0639_21_model.jpg&feedId=95016&k=499f6039bfefc85da28efc78fcdcc7a3af3a030e" },
+    ],
+  },
+{
+    id: "chile-home-women",
+    teamKey: "chile",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#D52B1E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 27990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43087121189&a=3013769&m=79922", title: "Camiseta Local Selección Chilena 26", inStock: true, sizes: ["XS", "S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2516d4104f994607ac2ef5936b0ded99_9366%2FCamiseta_Local_Seleccion_Chilena_26_Rojo_KH1019_21_model.jpg&feedId=95016&k=da5f47e92167cfd318e1c07944e58e9887df792f" },
+    ],
+  },
+{
+    id: "colocolo-away-women",
+    teamKey: "colocolo",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 45990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43787045784&a=3013769&m=79922", title: "Camiseta Visitante Colo-Colo 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2c9f591d19fd4fbdbb9e087b70563246_9366%2FCamiseta_Visitante_Colo-Colo_26_Negro_JW5164_21_model.jpg&feedId=95016&k=bbd2a4c275703759df1a602bf61845adb5f6fcb4" },
+    ],
+  },
+{
+    id: "colocolo-home-women",
+    teamKey: "colocolo",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 29990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43787045892&a=3013769&m=79922", title: "Camiseta Local Colo-Colo 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fefcf62984c7c40d4b3a6deaee6f3032d_9366%2FCamiseta_Local_Colo-Colo_26_Blanco_JW5168_21_model.jpg&feedId=95016&k=25c63edf5a04ebb38f30a6e55fe5488c97eea667" },
+    ],
+  },
+{
+    id: "colocolo-third-women",
+    teamKey: "colocolo",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 64990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45655838648&a=3013769&m=79922", title: "Tercera Camiseta Colo-Colo 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0dd7e7f751214397895c7b819d14460f_9366%2FTercera_Camiseta_Colo-Colo_26-27_Blanco_KB9781_21_model.jpg&feedId=95016&k=fce302c445fce3a81bfcdcb9e833523292c25c5d" },
+    ],
+  },
+{
+    id: "udechile-away-women",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 29990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921419&a=3013769&m=79922", title: "Camiseta Visitante Universidad de Chile 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F601908fab1da463b861b02f6df250a10_9366%2FCamiseta_Visitante_Universidad_de_Chile_26_Blanco_JW6786_21_model.jpg&feedId=95016&k=ddea53ca32116289ee4df0caf3902c37ee362646" },
+    ],
+  },
+{
+    id: "udechile-home-women",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 38990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921050&a=3013769&m=79922", title: "Camiseta Local Universidad de Chile 26", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F687fbfcce3ea4797923d0f339884e42f_9366%2FCamiseta_Local_Universidad_de_Chile_26_Azul_JW6788_21_model.jpg&feedId=95016&k=89e5f76703993b4abfcdfe908d7fc30b801f5966" },
+    ],
+  },
+{
+    id: "udechile-third-women",
+    teamKey: "udechile",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasCL", price: 64990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45805741872&a=3013769&m=79922", title: "Tercera Camiseta Universidad de Chile 26/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4ee3efc7c619475db13a3522a2308060_9366%2FTercera_Camiseta_Universidad_de_Chile_26-27_Blanco_KC2246_21_model.jpg&feedId=95016&k=870bb73eb9dd715158a03ed325d70abc3eb17c30" },
+    ],
+  },
+{
+    id: "chile-away-kids",
+    teamKey: "chile",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#D52B1E",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450249&a=3013769&m=79922", title: "Camiseta Visitante Selección Chilena 26 Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1c43bac349e8440c8909c62f7a093dd2_9366%2FCamiseta_Visitante_Seleccion_Chilena_26_Ninos_Beige_KB3429_21_model.jpg&feedId=95016&k=e6a90ad641fe76eb8dae4cb37de4ce6a277daf35" },
+    ],
+  },
+{
+    id: "colocolo-away-kids",
+    teamKey: "colocolo",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43787045776&a=3013769&m=79922", title: "Camiseta Visitante Colo-Colo 2026 Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F07e69efa5dda49a887c437f97797b4de_9366%2FCamiseta_Visitante_Colo-Colo_2026_Ninos_Negro_JW5165_20_01_model.jpg&feedId=95016&k=d20fc4eaa3693bcc5bd34c1df5bc222fad2aa91b" },
+    ],
+  },
+{
+    id: "colocolo-home-kids",
+    teamKey: "colocolo",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 22990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43787045874&a=3013769&m=79922", title: "Camiseta Local Colo-Colo 26 para Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8436393edac44f17a7c3e625bb39f5fd_9366%2FCamiseta_Local_Colo-Colo_26_para_Ninos_Blanco_JW5166_01_laydown.jpg&feedId=95016&k=c70123c83005c0494d02f3533f2de220284a3487" },
+    ],
+  },
+{
+    id: "colocolo-third-kids",
+    teamKey: "colocolo",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#FFFFFF",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45655838651&a=3013769&m=79922", title: "Tercera Camiseta Colo-Colo 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fadeb6cd092224af6bc76087105272eac_9366%2FTercera_Camiseta_Colo-Colo_26-27_Ninos_Blanco_KB9782_01_laydown.jpg&feedId=95016&k=3b621ebe2a5ffb5b1ed30190401590d03ae48b50" },
+    ],
+  },
+{
+    id: "realmadrid-training-kids",
+    teamKey: "realmadrid",
+    season: "2026",
+    typeKey: "training",
+    colorHex: "#F5F5F5",
+    colorHexSecondary: "#8FB8E8",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 39990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44977447832&a=3013769&m=79922", title: "Camiseta Entrenamiento Tiro 26 Competition Real Madrid 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2a4dd83533f44d76a192d8e95c32ffd7_9366%2FCamiseta_Entrenamiento_Tiro_26_Competition_Real_Madrid_26-27_Ninos_Verde_KB6382_01_laydown.jpg&feedId=95016&k=ff03d14ce3fe0d359011c7ec7cf0243c72677a15" },
+    ],
+  },
+{
+    id: "udechile-away-kids",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "away",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 22990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921420&a=3013769&m=79922", title: "Camiseta Visitante Universidad de Chile 26 para Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F36e1eafee2a743ea816226ed1f059fe3_9366%2FCamiseta_Visitante_Universidad_de_Chile_26_para_Ninos_Blanco_JW6785_20_01_model.jpg&feedId=95016&k=5967c95848de036c492957db0427d55d2350c37b" },
+    ],
+  },
+{
+    id: "udechile-home-kids",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 29990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=43716921053&a=3013769&m=79922", title: "Camiseta Local Universidad de Chile 26 para Niños", inStock: true, sizes: ["7-8", "9-10"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1396f5fd0d404fd4abc392f665060018_9366%2FCamiseta_Local_Universidad_de_Chile_26_para_Ninos_Azul_JW6787_20_01_model.jpg&feedId=95016&k=0f5273c9ce2cb9b7677550e804486d3e74db35a3" },
+    ],
+  },
+{
+    id: "udechile-third-kids",
+    teamKey: "udechile",
+    season: "2026",
+    typeKey: "third",
+    colorHex: "#0B3C8C",
+    colorHexSecondary: "#D31E2B",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    ageGroup: "kids",
+    offers: [
+      { store: "AdidasCL", price: 49990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=45805741865&a=3013769&m=79922", title: "Tercera Camiseta Universidad de Chile 26/27 Niños", inStock: true, sizes: ["7-8", "9-10", "11-12", "13-14", "15-16"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F55221c49c14b48c09178d18704f5a26e_9366%2FTercera_Camiseta_Universidad_de_Chile_26-27_Ninos_Blanco_KC2247_01_laydown.jpg&feedId=95016&k=7b313734dbfd225b1ab8be988b94e52f47e7b48e" },
     ],
   },
 ];

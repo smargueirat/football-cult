@@ -297,6 +297,7 @@ export const TEAM_LEAGUE: Record<string, string> = {
   vancouverwhitecaps: "mls",
   atleticonacional: "liga-colombia",
   colocolo: "liga-chile",
+  udechile: "liga-chile",
   nacional: "liga-uruguay",
   penarol: "liga-uruguay",
   alhilal: "saudi-pro-league",

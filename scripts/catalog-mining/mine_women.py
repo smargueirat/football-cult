@@ -36,6 +36,8 @@ STORES = [
     # camisetas de rugby/balonmano/voleibol como si fueran de futbol.
     ("ADIDAS_ES",          "AdidasES",      "EUR", "search_price", "delivery_cost", "product_name", "Fashion:size", "aw_deep_link", "aw_image_url", "custom_2"),
     ("ADIDAS_PT",          "AdidasPT",      "EUR", "search_price", "delivery_cost", "product_name", "Fashion:size", "aw_deep_link", "aw_image_url", "custom_2"),
+    # adidas Chile (CLP): sin custom_2 ni delivery_cost; el feed mezcla calzado/ropa, pero el filtro de titulo ya deja solo camisetas.
+    ("ADIDAS_CL",          "AdidasCL",      "CLP", "search_price", "delivery_cost", "product_name", "Fashion:size", "aw_deep_link", "aw_image_url", None),
     ("PLANETFOOT",         "PlanetFoot",    "EUR", "price",        "shipping",      "title",        "size",         "aw_deep_link", "image_link",   None),
     # ForumSport NO lleva columna de categoria deportiva: su custom_2 es una
     # FECHA ("20260902"), no un deporte -- pasarla dejaba la tienda en cero

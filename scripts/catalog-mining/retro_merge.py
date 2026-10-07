@@ -12,6 +12,7 @@ STORE_META = {
     "SportIsGoodFR": (6.99, "EUR"),
     "AdidasES": (0.0, "EUR"),
     "AdidasPT": (4.99, "EUR"),
+    "AdidasCL": (0.0, "CLP"),
     "PlanetFoot": (0.0, "EUR"),
     "FansJerseyHub": (0.0, "USD"),
     "ComoFCShop": (0.0, "EUR"),

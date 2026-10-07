@@ -3,6 +3,7 @@ from collections import defaultdict
 from manual_exclusions import is_manually_excluded
 
 TEAM_PATTERNS = {
+    "udechile": r"universidad de chile|\bu\.? de chile\b",
     "sportrecife": r"sport (club )?recife|\bsport recife\b",
     "almirantebrown": r"almirante brown",
     # Real collision found 2026-08-19 (eBay full mine): "Club Almagro"'s
@@ -311,8 +312,10 @@ TEAM_PATTERNS = {
     "noruega": r"\bnoruega\b|\bnorway\b|\bnorv[eè]ge\b",
     "turquia": r"\bturqu[ií]a\b|\bturkey\b|\bturquie\b",
     "ecuador": r"\becuador\b|\b[eé]quateur\b",
-    "chile": r"\bchile\b|\bchili\b",
-    "peru": r"\bper[uú]\b|\bp[ée]rou\b",
+    # El club va ANTES que la seleccion: "Universidad de Chile" contiene \bchile\b y
+    # adidas CL (2026-10-07) lo metia como si fuera la camiseta de Chile.
+    "chile": r"\bchile\b|\bchili\b|\bchilena\b",
+    "peru": r"\bper[uú]\b|\bp[ée]rou\b|\bperuana\b",
     "mexico": r"\bm[eé]xico\b|\bmexico\b|\bmexique\b|\bel tri\b",
     "estadosunidos": r"\bestados unidos\b|\busa\b|\bunited states\b|\b[eé]tats-unis\b|\buswnt\b|\busmnt\b",
     "japon": r"\bjap[oó]n\b|\bjapan\b|\bjap[aã]o\b",
@@ -715,7 +718,17 @@ TITLE_KIDS_AGE_SUFFIX_RE = re.compile(
     re.I,
 )
 
+# adidas Chile: "<titulo> <titulo> Hombre XS - Hombre Futbol XS" / "... Nino 9-10 anos - Nino
+# Futbol 9-10 anos" (publico + talla + " - " + deporte + la talla otra vez). Sin quitar
+# esto cada talla era un titulo distinto y todas las fichas salian con UNA talla.
+TITLE_CL_SUFFIX_RE = re.compile(r"^(.*?)\s+(?:Hombre|Mujer|Ni[ñn][oa]s?|Unisex)\s+(.+?)\s+-\s+.*?\2\s*$", re.I)
+
 def split_title_size(title):
+    m = TITLE_CL_SUFFIX_RE.match(title)
+    if m:
+        k = re.match(r"(\d{1,2})-(\d{1,2})", m.group(2))
+        base = re.sub(r"^(?:adidas )?(.+?)\s+\1$", r"\1", m.group(1).strip())  # titulo doblado
+        return base, f"{int(k.group(1))}-{int(k.group(2))}" if k else m.group(2).upper()
     m = TITLE_SIZE_SUFFIX_RE.match(title)
     if m:
         return m.group(1).strip(), m.group(2).upper()

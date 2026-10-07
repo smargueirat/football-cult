@@ -19,6 +19,8 @@ from extract import (
     TYPE_PATTERNS,
     JERSEY_RE,
     TITLE_KIDS_AGE_SUFFIX_RE,
+    TITLE_CL_SUFFIX_RE,
+    split_title_size as _split_title_size,
     match_team,
     team_re_all,
     type_re_all,
@@ -124,6 +126,8 @@ def season_start_year(season):
 
 
 def split_title_size(title):
+    if TITLE_CL_SUFFIX_RE.match(title):  # adidas CL: mismo formato que extract.split_title_size
+        return _split_title_size(title)
     m = TITLE_SIZE_SUFFIX_RE.match(title)
     if m:
         return m.group(1).strip(), m.group(2).upper()

@@ -39,6 +39,7 @@ export function getAgeGroup(product: { ageGroup?: AgeGroup }): AgeGroup {
 }
 
 export const teamNames: Record<TeamKey, Record<Locale, string>> = {
+  udechile: { es: "Universidad de Chile", en: "Universidad de Chile", pt: "Universidad de Chile", fr: "Universidad de Chile", it: "Universidad de Chile" },
   nurnberg: { es: "1. FC Nürnberg", en: "1. FC Nürnberg", pt: "1. FC Nürnberg", fr: "1. FC Nürnberg", it: "1. FC Nürnberg" },
   schalke04: { es: "FC Schalke 04", en: "FC Schalke 04", pt: "FC Schalke 04", fr: "FC Schalke 04", it: "FC Schalke 04" },
   sportrecife: { es: "Sport Recife", en: "Sport Recife", pt: "Sport Recife", fr: "Sport Recife", it: "Sport Recife" },
@@ -651,6 +652,7 @@ export function availableSizesForCountry(
 // FloatingFilterButton.tsx ("use client") necesita sin arrastrar el
 // catalogo completo. Movidas aca desde @/data/products el 2026-09-22.
 export const teamCategory: Record<TeamKey, CategoryKey> = {
+  udechile: "club",
   nurnberg: "club",
   schalke04: "club",
   sportrecife: "club",
@@ -1041,6 +1043,7 @@ export const teamCategory: Record<TeamKey, CategoryKey> = {
 };
 
 export const teamFlags: Record<TeamKey, string> = {
+  udechile: "🔵",
   nurnberg: "🔴",
   schalke04: "🔵",
   sportrecife: "🔴",
@@ -1432,6 +1435,7 @@ export const teamFlags: Record<TeamKey, string> = {
 
 // Colores icónicos por equipo, usados en los accesos rápidos y avatares.
 export const teamColors: Record<TeamKey, [string, string]> = {
+  udechile: ["#0B3C8C", "#D31E2B"],
   nurnberg: ["#9E1B32", "#000000"],
   schalke04: ["#004D9D", "#FFFFFF"],
   sportrecife: ["#C8102E", "#000000"],

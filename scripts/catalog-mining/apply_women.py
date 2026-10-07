@@ -26,7 +26,7 @@ PRODUCTS_TS = os.path.join(HERE, "..", "..", "src", "data", "products.ts")
 # porque abrevia y usa nombres alternativos ("La Albiceleste", "El Tri"), que
 # sirven como oferta pero no como nombre de la ficha.
 ORDEN = ["FootStoreES", "FootStoreFR", "SportIsGoodES", "SportIsGoodFR",
-         "AdidasES", "AdidasPT", "ForumSport", "PlanetFoot",
+         "AdidasES", "AdidasPT", "AdidasCL", "ForumSport", "PlanetFoot",
          "FansJerseyHub", "ComoFCShop", "BSTNIT", "BSTNUK", "DecathlonIE"]
 
 

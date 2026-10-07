@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import analyze, SIZE_MAP, WOMEN_EXCLUDE_RE, WOMEN_SIGNAL_RE
 
 PENALTY_RE = [
-    (re.compile(r"auténtic|authentic", re.I), 5),
+    (re.compile(r"auténtic|authentic|versi[oó]n jugador", re.I), 5),
     (re.compile(r"manga larga|mangas largas|long.?sleeve|\bML\b", re.I), 4),
     (re.compile(r"academy|dri-?fit|stadium|strike", re.I), 3),
     (re.compile(r"ronaldo|messi|jordan|mbapp|neymar", re.I), 3),
@@ -13,9 +13,9 @@ PENALTY_RE = [
     (re.compile(r"\bpro\b|match\b", re.I), 1),
     # sufijos numéricos de 2 dígitos sueltos (ej. "Manchester United 90",
     # "Liverpool FC 95") suelen ser ediciones especiales/heritage, no la
-    # camiseta estándar de la temporada actual (24/25/26 sí son válidos:
+    # camiseta estándar de la temporada actual (24/25/26/27 sí son válidos -- "26/27" acaba en 27:
     # año de mundial/euro para selecciones).
-    (re.compile(r"\b(?!24\b|25\b|26\b)\d{2}\b\s*$"), 4),
+    (re.compile(r"\b(?!24\b|25\b|26\b|27\b)\d{2}\b\s*$"), 4),
 ]
 
 def score(title):
