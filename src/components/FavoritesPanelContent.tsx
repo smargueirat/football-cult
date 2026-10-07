@@ -15,7 +15,7 @@ import { ballProducts } from "@/data/balls";
 import { ticketProducts } from "@/data/tickets";
 import { apparelProducts } from "@/data/apparel";
 import { ticketOfferTotalInEUR } from "@/lib/offerMoney";
-import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { formatOfferMoney, bootOfferTotalInEUR, offerTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -102,7 +102,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
               const gearItem = item.kind === "glove" ? item.glove : item.kind === "ball" ? item.ball : item.apparel;
               const basePath = item.kind === "glove" ? "guantes" : item.kind === "ball" ? "pelotas" : "ropa";
               const cheapest = gearItem.offers.reduce((a, b) =>
-                a.price + a.shipping <= b.price + b.shipping ? a : b
+                offerTotalInEUR(a) <= offerTotalInEUR(b) ? a : b
               );
               return (
                 <li key={item.id}>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import BackToCatalogLink from "./BackToCatalogLink";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { formatOfferMoney, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref, type GoKind } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -23,7 +23,7 @@ interface GearOffer {
   price: number;
   priceMax?: number;
   shipping: number;
-  currency: "EUR";
+  currency: "EUR" | "CLP";
   url: string;
   imageUrl: string;
   sizes: string[];
@@ -57,7 +57,7 @@ export default function GearDetailClient({
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(item.id);
 
-  const sortedOffers = [...item.offers].sort((a, b) => a.price + a.shipping - (b.price + b.shipping));
+  const sortedOffers = [...item.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b));
   const cheapestOffer = sortedOffers[0];
   const cheapestTotal = cheapestOffer.price + cheapestOffer.shipping;
 
@@ -112,8 +112,8 @@ export default function GearDetailClient({
           <span className="text-xs uppercase tracking-wide text-[#B8933F]">{item.brand}</span>
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{localizeGearModel(item.model, item.brand, locale)}</h1>
           <p className="mt-2 text-sm text-[#675c44]">
-            {t.botas.bestPrice}: {cheapestOffer.priceMax ? `${t.botas.from} ` : ""}
-            {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
+            {t.botas.bestPrice}: {cheapestOffer.priceMax || shippingUnknown(cheapestOffer) ? `${t.botas.from} ` : ""}
+            {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {shippingUnknown(cheapestOffer) ? "" : t.botas.shippingIncluded}
           </p>
 
           {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
@@ -221,9 +221,11 @@ export default function GearDetailClient({
                       <p className="text-xs text-[#675c44]">
                         {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
                         {formatOfferMoney(rowPrice, offer.currency)}
-                        {offer.shipping > 0
-                          ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
-                          : ` · ${t.botas.freeShipping}`}
+                        {shippingUnknown(offer)
+                          ? ` · ${t.detail.shipping}: ${t.compare.shippingToCheck}`
+                          : offer.shipping > 0
+                            ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
+                            : ` · ${t.botas.freeShipping}`}
                       </p>
                     </div>
                   </div>

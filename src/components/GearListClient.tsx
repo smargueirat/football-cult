@@ -9,6 +9,7 @@ import FilterSheet from "./FilterSheet";
 import SortDropdown from "./SortDropdown";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearColour } from "@/lib/gearText";
+import { offerTotalInEUR } from "@/lib/offerMoney";
 import { markCatalogVisited } from "@/lib/search/catalogVisit";
 
 // Listado para guantes y pelotas. No se integró en SearchExplorer.tsx a
@@ -25,7 +26,7 @@ interface GearOffer {
   store: string;
   price: number;
   shipping: number;
-  currency: "EUR";
+  currency: "EUR" | "CLP";
   imageUrl: string;
   sizes: string[];
 }
@@ -100,7 +101,7 @@ export default function GearListClient({
       if (sizeFilter && !i.offers.some((o) => o.sizes.includes(sizeFilter))) return false;
       return true;
     });
-    const total = (p: GearProductLike) => Math.min(...p.offers.map((o) => o.price + o.shipping));
+    const total = (p: GearProductLike) => Math.min(...p.offers.map(offerTotalInEUR));
     return [...base].sort((a, b) => (sortBy === "priceAsc" ? total(a) - total(b) : total(b) - total(a)));
   }, [items, query, brandFilter, sizeFilter, colourFilter, sortBy]);
 

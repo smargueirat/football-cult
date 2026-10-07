@@ -796,6 +796,176 @@ def mine_reebok(out_list):
     print('Reebok DE:', len(groups))
 
 
+# ---------- ADIDAS CL (Awin 79922, aprobada 2026-10-07) ----------
+# Feed en español de Chile, precios en CLP, UNA fila por talla, sin
+# categoría de deporte propia: el deporte viaja al final del título
+# ("... - Hombre Fútbol M"). Se minan solo las filas "Fútbol" adultas que
+# NO son camiseta ni bota (esas van por catalog-mining / boots-mining) ni
+# calzado. El título viene duplicado ("adidas X X Hombre M - Hombre
+# Fútbol M") y la segunda copia a veces corrupta ("PRojoator": su
+# traductor de colores tocó "red"), por eso se usa la primera copia.
+# El modelo se arma "<sustantivo del glosario> adidas <resto> - <color>"
+# para que gearText.ts lo traduzca (mismo patrón que Reebok DE).
+ADIDAS_CL_GENDER = r'(?:Hombre|Mujer|Niño|Niña|Niños|Niñas|Unisex)'
+# Línea lifestyle / fan / retro con la etiqueta "Fútbol" (Originals, EQT,
+# ADN/DNA, OG, colaboraciones, aniversarios, Mundial de aficionado,
+# reediciones con año): no es equipamiento de fútbol.
+ADIDAS_CL_LIFESTYLE_RE = re.compile(
+    r'originals|\beqt\b|\badn\b|\bdna\b|\bog\b|bob marley|avengers|aniversario|mascota|\btour\b'
+    r'|estampad|emblema|copa mundial|\b(?:19\d\d|20[01]\d)\b', re.I)
+ADIDAS_CL_APPAREL = {  # categoría -> type de apparel.ts
+    'Calcetines': 'socks', 'Canilleras': 'shinguards', 'Shorts': 'shorts', 'Poleras': 'tshirt',
+    'Pantalones': 'pants', 'Bolsos y mochilas': 'bag', 'Chaquetas': 'jacket', 'Polerones': 'sweatshirt',
+}
+ADIDAS_CL_COLOURS = [  # primer color que nombra el feed -> color canónico
+    (r'negro|onix|carbon|black', 'Negro'), (r'blanco|ivory|white|crystal', 'Blanco'),
+    (r'azul|navy|royal|aqua|sky|blue', 'Azul'), (r'rojo|maroon|crimson|burgundy', 'Rojo'),
+    (r'verde|ivy|lime|slime|mint', 'Verde'), (r'amarillo|lemon|solar turbo|gold|oro', 'Amarillo'),
+    (r'naranja|orange|tangerine', 'Naranja'), (r'gris|plata|silver|grey|gray|iron', 'Gris'),
+    (r'rosa|magenta|pink', 'Rosa'), (r'violeta|purple|burst', 'Violeta'), (r'marr[oó]n|brown', 'Marrón'),
+]
+ADIDAS_CL_SMALL = {'de', 'del', 'con', 'para', 'y', 'la', 'el', 'en', 'a'}
+_TERM_KEYS = None
+
+
+def _gear_terms():
+    """Claves de TERMS y SUFFIXES de gearText.ts (misma fuente que la web)."""
+    global _TERM_KEYS
+    if _TERM_KEYS is None:
+        src = open(os.path.join(REPO_ROOT, 'src', 'lib', 'gearText.ts'), encoding='utf-8').read()
+        a, b, c = src.index('const TERMS'), src.index('const SUFFIXES'), src.index('const COLOURS')
+        key = lambda s: set(re.findall(r'^\s+"([^"]+)":\s*\{\s*es:', s, re.M))
+        _TERM_KEYS = (key(src[a:b]), key(src[b:c]))
+    return _TERM_KEYS
+
+
+def _translatable(k):
+    """Espejo de TERMS[key] ?? composed(key) en gearText.ts."""
+    terms, sufs = _gear_terms()
+    if k in terms:
+        return True
+    rest = k
+    for _ in range(3):
+        s = next((s for s in sorted(sufs, key=len, reverse=True) if rest.endswith(' ' + s)), None)
+        if not s:
+            return False
+        rest = rest[:-len(s) - 1]
+        if rest in terms:
+            return True
+    return False
+
+
+def adidas_cl_name(row):
+    """product_name -> título limpio, o None."""
+    head, _, _ = (row.get('product_name') or '').rpartition(' - ')
+    size = (row.get('Fashion:size') or '').strip()
+    head = re.sub(r'\s+' + ADIDAS_CL_GENDER + r'\s+' + re.escape(size) + r'$', '', head)
+    head = re.sub(r'(?i)\badidas\s+', '', head, count=1).strip()
+    w = head.split()
+    n = len(w) // 2
+    # primera copia si el título está duplicado (la 2ª puede venir corrupta)
+    if len(w) % 2 == 0 and n and sum(x.lower() == y.lower() for x, y in zip(w[:n], w[n:])) >= n - 1:
+        w = w[:n]
+    w = [x for x in w if x.lower() != 'unisex']  # "Pelota Unisex Football" (nombre real del feed)
+    if ' '.join(w).isupper():
+        w = [x.lower() if x.lower() in ADIDAS_CL_SMALL else x.capitalize() for x in w]
+        w[0] = w[0].capitalize()
+    return ' '.join(w) or None
+
+
+def adidas_cl_model(name, colour, mujer):
+    """Sustantivo conocido por el glosario + adidas + resto + color."""
+    w = name.split()
+    k = next((k for k in range(len(w), 0, -1) if _translatable(_norm(' '.join(w[:k])))), 0)
+    if k == 0:
+        return f'adidas {name} - {colour}'
+    noun = ' '.join(w[:k])
+    if mujer and 'mujer' not in name.lower() and _translatable(_norm(noun + ' de mujer')):
+        noun += ' de Mujer'
+    return ' '.join([noun, 'adidas'] + w[k:]) + f' - {colour}'
+
+
+def adidas_cl_colour(raw):
+    hits = [(m.start(), es) for rx, es in ADIDAS_CL_COLOURS for m in [re.search(rx, raw or '', re.I)] if m]
+    return min(hits)[1] if hits else 'Multicolor'
+
+
+def adidas_cl_sizes(rows):
+    out = {}
+    for r in rows:
+        s = (r.get('Fashion:size') or '').strip()
+        m = re.search(r'\((XS|S|M|L|XL|XXL)\)', s)  # medias: "US 5-6 (S)" -> "S"
+        s = m.group(1) if m else s
+        if not s or 'ÚNICA' in s.upper() or re.search(r'ni[ñn]o|k\b', s, re.I):
+            continue
+        p = parse_price(r.get('search_price'))
+        if p and s not in out:
+            out[s] = (p, r.get('aw_deep_link'))
+    return out
+
+
+def mine_adidas_cl(gloves, balls, apparel):
+    fname = 'ADIDAS_CL.csv'
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print('AdidasCL: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            title = row.get('product_name') or ''
+            sport = title.rpartition(' - ')[2]
+            cat = (row.get('merchant_category') or '').split('/')[0]
+            if row.get('custom_1') != 'Adult' or not re.search(r'f[úu]tbol', sport, re.I) or not parse_price(row.get('search_price')):
+                continue
+            if cat == 'Guantes':
+                dest = 'gloves'
+            elif cat == 'Pelotas':
+                dest = 'balls'
+            elif cat in ADIDAS_CL_APPAREL:
+                dest = 'apparel'
+            else:
+                continue  # camisetas/botas/zapatillas van en otros pipelines; gorras, botellas, etc. sin sección
+            name = adidas_cl_name(row)
+            if not name or EXCLUDE_KEYWORDS.search(name) or AMERICAN_FOOTBALL_RE.search(name):
+                continue
+            if dest == 'apparel' and ADIDAS_CL_LIFESTYLE_RE.search(name):
+                continue
+            if dest == 'gloves' and not re.search(r'arquero|portero', name, re.I):
+                continue
+            # mismo código de modelo = mismo colorway; el sufijo -000N es la talla
+            key = (row.get('merchant_product_id') or '').split('_')[0].split('-')[0]
+            if key:
+                groups.setdefault(key, (dest, cat, name, []))[3].append(row)
+    n = {'gloves': 0, 'balls': 0, 'apparel': 0}
+    for dest, cat, name, rows in groups.values():
+        sz = adidas_cl_sizes(rows)
+        rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
+        price = parse_price(rep.get('search_price'))
+        price_max = max(parse_price(r.get('search_price')) for r in rows)
+        colour = adidas_cl_colour(rep.get('colour'))
+        mujer = (rep.get('merchant_category') or '').endswith('/Mujer')
+        sort = lambda d: dict(sorted(d.items(), key=lambda kv: size_sort_key(kv[0])))
+        entry = {
+            'store': 'AdidasCL', 'brand': 'Adidas', 'model': adidas_cl_model(name, colour, mujer),
+            'colour': colour,
+            # delivery_cost no viene en el feed y adidas.cl bloquea el acceso
+            # automático (403): el costo real no se pudo medir, 0 = "a verificar"
+            # (la ficha lo muestra con shippingUnknown, no como envío gratis).
+            'price': price, 'shipping': 0, 'currency': 'CLP',
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
+            'sizes': list(sort(sz)),
+            'eans': _eans(rows, 'product_GTIN'),
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+            entry['sizePrices'] = [{'size': s, 'price': p, 'url': u} for s, (p, u) in sort(sz).items()]
+        if dest == 'apparel':
+            entry['type'] = 'jacket' if cat == 'Polerones' and name.lower().startswith('chaqueta') else ADIDAS_CL_APPAREL[cat]
+        {'gloves': gloves, 'balls': balls, 'apparel': apparel}[dest].append(entry)
+        n[dest] += 1
+    print('AdidasCL:', n)
+
+
 if __name__ == '__main__':
     print('=== GUANTES DE ARQUERO ===')
     mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', 'Gants de gardien', gloves_results)
@@ -841,6 +1011,7 @@ if __name__ == '__main__':
     for kw in ('Sous maillot', 'Legging', 'Cuissard', 'Manchon jambe'):
         mine_apparel_type('baselayer', kw, apparel_results)
     mine_reebok(apparel_results)
+    mine_adidas_cl(gloves_results, balls_results, apparel_results)
 
     print('=== ENTRENAMIENTO ===')
     mine_training(training_results)

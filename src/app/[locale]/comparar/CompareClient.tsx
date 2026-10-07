@@ -15,7 +15,7 @@ import { GloveOffer, GloveProduct, gloveProducts } from "@/data/gloves";
 import { BallOffer, BallProduct, ballProducts } from "@/data/balls";
 import { TicketOffer, TicketProduct, ticketProducts } from "@/data/tickets";
 import { ApparelOffer, ApparelProduct, apparelProducts } from "@/data/apparel";
-import { bootOfferTotalInEUR, ticketOfferTotalInEUR } from "@/lib/offerMoney";
+import { bootOfferTotalInEUR, offerTotalInEUR, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -190,7 +190,7 @@ export default function CompareClient() {
           ? bootOfferTotalInEUR(c.offer)
           : c.kind === "ticket"
             ? ticketOfferTotalInEUR(c.offer)
-            : c.offer.price + c.offer.shipping;
+            : offerTotalInEUR(c.offer);
     const cheapest = list.reduce((a, b) => (total(a) <= total(b) ? a : b));
     cheapest.isBest = true;
   }

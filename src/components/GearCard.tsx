@@ -2,7 +2,7 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { formatOfferMoney, offerTotalInEUR } from "@/lib/offerMoney";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearModel } from "@/lib/gearText";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -22,7 +22,7 @@ interface GearOffer {
   price: number;
   priceMax?: number;
   shipping: number;
-  currency: "EUR";
+  currency: "EUR" | "CLP";
   imageUrl: string;
   sizes: string[];
 }
@@ -46,7 +46,7 @@ export default function GearCard({
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(item.id);
-  const cheapest = item.offers.reduce((a, b) => (a.price + a.shipping <= b.price + b.shipping ? a : b));
+  const cheapest = item.offers.reduce((a, b) => (offerTotalInEUR(a) <= offerTotalInEUR(b) ? a : b));
   const sizes = [...new Set(item.offers.flatMap((o) => o.sizes))];
   const sizeRange = sizes.length > 0 ? (sizes.length === 1 ? sizes[0] : `${sizes[0]}–${sizes[sizes.length - 1]}`) : "";
   const photo = cheapest.imageUrl;

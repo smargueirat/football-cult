@@ -6,7 +6,7 @@ import { priceDrops } from "@/lib/seasonHubs";
 import { sectionDrops } from "@/lib/offersFeed";
 import { translations } from "@/lib/i18n/translations";
 import { localizeGearModel } from "@/lib/gearText";
-import type { OfferCurrencyCode } from "@/lib/offerMoney";
+import { offerTotalInEUR, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section } from "@/components/hubs/HubParts";
 import DealCard from "@/components/hubs/DealCard";
 import { isPriceDropped } from "@/lib/priceDrops";
@@ -31,7 +31,7 @@ const GRID = "grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:g
 /** La oferta que de verdad bajó y es la más barata de las que bajaron. */
 function bestDrop<T extends { offers: { store: string; price: number; shipping?: number; currency: OfferCurrencyCode; url: string; imageUrl?: string }[] }>(x: T) {
   const dropped = x.offers.filter((o) => isPriceDropped(o));
-  return dropped.sort((a, b) => a.price - b.price)[0] ?? x.offers[0];
+  return dropped.sort((a, b) => offerTotalInEUR({ ...a, shipping: 0 }) - offerTotalInEUR({ ...b, shipping: 0 }))[0] ?? x.offers[0];
 }
 
 type P = { params: Promise<{ locale: string }> };

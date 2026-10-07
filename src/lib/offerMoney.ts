@@ -77,8 +77,12 @@ export function isEbayStore(store: string): boolean {
 // En eBay `shipping: 0` en el catálogo NO significa gratis: la minería guarda
 // 0.0 cuando eBay no pudo calcular el envío (ebay_mine_full.py). Es "desconocido"
 // hasta que el chequeo en vivo confirme un valor. Otras tiendas: 0 se toma como gratis.
+// adidas CL: el feed no trae costo de envío y adidas.cl bloquea la consulta
+// automática, así que su shipping 0 también es "desconocido", no gratis.
+const UNKNOWN_SHIPPING_STORES = new Set(["AdidasCL"]);
+
 export function shippingUnknown(offer: { store: string; shipping: number }): boolean {
-  return isEbayStore(offer.store) && offer.shipping === 0;
+  return (isEbayStore(offer.store) || UNKNOWN_SHIPPING_STORES.has(offer.store)) && offer.shipping === 0;
 }
 
 // Total "anterior" para el par tachado/actual de una tarjeta con badge de
