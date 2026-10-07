@@ -8,6 +8,8 @@ import { trackOfferClick } from "@/lib/analytics";
 import { goHref, type GoKind } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearModel } from "@/lib/gearText";
+import { useCountry } from "@/lib/country/CountryContext";
+import { offersForCountry } from "@/lib/productMeta";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
@@ -55,13 +57,17 @@ export default function GearDetailClient({
   const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
+  const { countryCode, country } = useCountry();
   const favorite = isFavorite(item.id);
 
   const sortedOffers = [...item.offers].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b));
-  const cheapestOffer = sortedOffers[0];
+  // Ofertas que no envían al país del visitante: siguen listadas, atenuadas,
+  // y nunca son "mejor precio" (salvo que ninguna envíe: entonces todas valen).
+  const shippable = offersForCountry(sortedOffers, countryCode);
+  const cheapestOffer = shippable[0];
   const cheapestTotal = cheapestOffer.price + cheapestOffer.shipping;
 
-  const [selectedOffer, setSelectedOffer] = useState<GearOffer>(sortedOffers[0]);
+  const [selectedOffer, setSelectedOffer] = useState<GearOffer>(cheapestOffer);
   const hasDistinctPhotos = new Set(item.offers.map((o) => o.imageUrl)).size > 1;
 
   const [selectedSize, setSelectedSize] = useState<Record<string, string>>({});
@@ -133,6 +139,7 @@ export default function GearDetailClient({
 
           <div className="mt-3 flex flex-col gap-3">
             {sortedOffers.map((offer, i) => {
+              const ships = shippable.includes(offer);
               const isSelected = offer.imageUrl === selectedOffer.imageUrl;
               const sp = activeSizePrice(offer);
               const rowUrl = sp ? sp.url : offer.url;
@@ -141,9 +148,9 @@ export default function GearDetailClient({
                 <div
                   key={offer.store}
                   onClick={() => setSelectedOffer(offer)}
-                  className={`glass-panel flex w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-colors ${
+                  className={`glass-panel relative flex w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-colors ${
                     hasDistinctPhotos ? "cursor-pointer" : ""
-                  } ${
+                  } ${ships ? "" : "pointer-events-none opacity-40"} ${
                     hasDistinctPhotos && isSelected
                       ? "border-[#1B3B2B] ring-1 ring-[#1B3B2B]"
                       : "border-[#C9A24B]/25"
@@ -159,7 +166,7 @@ export default function GearDetailClient({
                       <div className="flex flex-wrap items-center gap-2">
                         <p className="text-sm font-medium text-[#1a1a1a]">
                           {offer.store}
-                          {i === 0 && (
+                          {offer === cheapestOffer && (
                             <span className="ml-2 rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#F3E9C9]">
                               {t.botas.bestPrice}
                             </span>
@@ -230,7 +237,7 @@ export default function GearDetailClient({
                     </div>
                   </div>
                   <a
-                    href={goHref({ kind: GEAR_KIND[basePath], productId: item.id, url: rowUrl, locale, origin: "ficha", position: i + 1, isBest: i === 0 })}
+                    href={goHref({ kind: GEAR_KIND[basePath], productId: item.id, url: rowUrl, locale, origin: "ficha", position: i + 1, isBest: offer === cheapestOffer })}
                     target="_blank"
                     rel="noopener noreferrer nofollow sponsored"
                     onClick={(e) => {
@@ -241,6 +248,11 @@ export default function GearDetailClient({
                   >
                     {t.botas.viewOffer}
                   </a>
+                  {!ships && (
+                    <span className="shadow-vintage-sm pointer-events-none absolute right-3 top-3 z-10 rounded border border-[#675c44]/60 bg-[#fffdf8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#675c44]">
+                      {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+                    </span>
+                  )}
                 </div>
               );
             })}

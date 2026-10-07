@@ -7,6 +7,8 @@ import Chip from "./Chip";
 import ScrollArrowRow from "./ScrollArrowRow";
 import FilterSheet from "./FilterSheet";
 import SortDropdown from "./SortDropdown";
+import { useCountry } from "@/lib/country/CountryContext";
+import { offersForCountry } from "@/lib/productMeta";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearColour } from "@/lib/gearText";
 import { offerTotalInEUR } from "@/lib/offerMoney";
@@ -80,6 +82,7 @@ export default function ApparelListClient({
   basePath?: "ropa" | "entrenamiento";
 }) {
   const { t, locale } = useLanguage();
+  const { countryCode } = useCountry();
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -135,9 +138,9 @@ export default function ApparelListClient({
       if (sizeFilter && !i.offers.some((o) => o.sizes.includes(sizeFilter))) return false;
       return true;
     });
-    const total = (p: ApparelProductLike) => Math.min(...p.offers.map(offerTotalInEUR));
+    const total = (p: ApparelProductLike) => Math.min(...offersForCountry(p.offers, countryCode).map(offerTotalInEUR));
     return [...base].sort((a, b) => (sortBy === "priceAsc" ? total(a) - total(b) : total(b) - total(a)));
-  }, [items, query, typeFilter, brandFilter, sizeFilter, colourFilter, sortBy]);
+  }, [items, query, typeFilter, brandFilter, sizeFilter, colourFilter, sortBy, countryCode]);
 
   function resetPage() {
     setVisible(PAGE_SIZE);

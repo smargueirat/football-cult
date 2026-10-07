@@ -6,6 +6,8 @@ import { BootProduct } from "@/data/boots";
 import { formatOfferMoney, bootOfferTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
 import { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { useCountry } from "@/lib/country/CountryContext";
+import { offersForCountry } from "@/lib/productMeta";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
@@ -40,11 +42,12 @@ export default function BootCard({
   const { t } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
+  const { countryCode } = useCountry();
   const favorite = isFavorite(boot.id);
   // bootOfferTotalInEUR (no el precio bruto) porque Pro Soccer factura en
   // USD -- comparar números crudos de monedas distintas daría "más barato"
   // al que simplemente tiene el número más chico, sin importar la moneda.
-  const cheapest = boot.offers.reduce((a, b) =>
+  const cheapest = offersForCountry(boot.offers, countryCode).reduce((a, b) =>
     bootOfferTotalInEUR(a) <= bootOfferTotalInEUR(b) ? a : b
   );
   const cheapestTotal = cheapest.price + cheapest.shipping;

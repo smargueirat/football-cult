@@ -29,6 +29,7 @@ import {
 } from "@/data/products";
 import { BootProduct, bootProducts } from "@/data/boots";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { offersForCountry } from "@/lib/productMeta";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
@@ -420,7 +421,7 @@ export default function SearchExplorer({
         if (priceRange[0] === PRICE_RANGE_MIN && priceRange[1] === PRICE_RANGE_MAX) return true;
         // bootOfferTotalInEUR (no el precio bruto) porque el slider está en
         // EUR y Pro Soccer factura en USD -- ver el comentario en boots.ts.
-        const cheapest = Math.min(...b.offers.map(bootOfferTotalInEUR));
+        const cheapest = Math.min(...offersForCountry(b.offers, countryCode).map(bootOfferTotalInEUR));
         const withinMax = priceRange[1] === PRICE_RANGE_MAX || cheapest <= priceRange[1];
         return cheapest >= priceRange[0] && withinMax;
       })();
@@ -433,7 +434,7 @@ export default function SearchExplorer({
       const matchesOnSale =
         !onSaleFilter ||
         isPriceDropped(
-          b.offers.reduce((x, y) => (bootOfferTotalInEUR(x) <= bootOfferTotalInEUR(y) ? x : y))
+          offersForCountry(b.offers, countryCode).reduce((x, y) => (bootOfferTotalInEUR(x) <= bootOfferTotalInEUR(y) ? x : y))
         );
       return (
         matchesQuery &&
@@ -458,8 +459,8 @@ export default function SearchExplorer({
     // priceAsc/priceDesc; el resto se deja en el orden filtrado tal cual.
     if (sortBy === "priceAsc" || sortBy === "priceDesc") {
       return [...filtered].sort((a, b) => {
-        const cheapestA = Math.min(...a.offers.map(bootOfferTotalInEUR));
-        const cheapestB = Math.min(...b.offers.map(bootOfferTotalInEUR));
+        const cheapestA = Math.min(...offersForCountry(a.offers, countryCode).map(bootOfferTotalInEUR));
+        const cheapestB = Math.min(...offersForCountry(b.offers, countryCode).map(bootOfferTotalInEUR));
         return sortBy === "priceAsc" ? cheapestA - cheapestB : cheapestB - cheapestA;
       });
     }
@@ -475,6 +476,7 @@ export default function SearchExplorer({
     priceRange,
     onSaleFilter,
     sortBy,
+    countryCode,
   ]);
 
   type CatalogItem =

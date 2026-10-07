@@ -529,6 +529,14 @@ export function offerShipsTo(store: string, country: CountryCode): boolean {
   return shipping === "all" || shipping.includes(country);
 }
 
+// Ofertas que sí envían a `country`. Si NINGUNA envía devuelve todas (la ficha
+// no desaparece; es el comportamiento previo). Botas y equipamiento: sin esto
+// "la más barata" podía ser una tienda solo-CL para un visitante en España.
+export function offersForCountry<T extends { store: string }>(offers: readonly T[], country: CountryCode): T[] {
+  const ships = offers.filter((o) => offerShipsTo(o.store, country));
+  return ships.length > 0 ? ships : [...offers];
+}
+
 export const typeNames: Record<TypeKey, Record<Locale, string>> = {
   home: { es: "Titular", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
   away: { es: "Suplente", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },

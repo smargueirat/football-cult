@@ -19,6 +19,7 @@ import { formatOfferMoney, bootOfferTotalInEUR, offerTotalInEUR } from "@/lib/of
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
+import { offersForCountry } from "@/lib/productMeta";
 
 // Separado de FavoritesButton.tsx a propósito -- ver el comentario
 // largo ahí. Este archivo (y sólo este) importa products.ts, así que
@@ -61,7 +62,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
         <ul className="flex max-h-72 flex-col gap-1 overflow-y-auto">
           {savedItems.map((item) => {
             if (item.kind === "boot") {
-              const cheapest = item.boot.offers.reduce((a, b) =>
+              const cheapest = offersForCountry(item.boot.offers, countryCode).reduce((a, b) =>
                 bootOfferTotalInEUR(a) <= bootOfferTotalInEUR(b) ? a : b
               );
               return (
@@ -101,7 +102,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
             if (item.kind === "glove" || item.kind === "ball" || item.kind === "apparel") {
               const gearItem = item.kind === "glove" ? item.glove : item.kind === "ball" ? item.ball : item.apparel;
               const basePath = item.kind === "glove" ? "guantes" : item.kind === "ball" ? "pelotas" : "ropa";
-              const cheapest = gearItem.offers.reduce((a, b) =>
+              const cheapest = offersForCountry([...gearItem.offers], countryCode).reduce((a, b) =>
                 offerTotalInEUR(a) <= offerTotalInEUR(b) ? a : b
               );
               return (
