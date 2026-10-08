@@ -35,3 +35,7 @@ if [ "$code" != "200" ]; then
   exit 1
 fi
 echo "publicado $(git -C "$NEW" log --oneline -1)"
+
+# Copia de respaldo en Oracle (ver scripts/sync_vm.sh): en segundo plano y sin
+# afectar al resultado de este deploy.
+nohup bash /home/piojo/football-cult/scripts/sync_vm.sh >> /home/piojo/football-cult/scripts/sync_vm.log 2>&1 &
