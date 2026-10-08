@@ -1124,6 +1124,42 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/206604950998",  # acmilan-retro-199798-home: AC Milan Maldini Home 1997-98 Retro Football Shirt Jersey Lotto 23\" P
     "/itm/178325023362",  # mexico-retro-201516-away: Adidas Mexico Away Shirt 2015/16 #14 Chicharito Football Shirt
 
+    # --- Daily pass 2026-10-08, eBay current ---
+    "/itm/117141099094",  # ES current intermiami|third: player print Messi #10
+    "/itm/117396430018",  # ES current clubamerica|away: personalizada, sin marca
+    "/itm/237062477342",  # ES current chivas|home: personalizada (custom print)
+    "/itm/318591989998",  # ES current tigresuanl|home: personalizada (custom print)
+    "/itm/377495100441",  # ES current cruzazul|third: personalizada (custom print)
+    "/itm/398247787068",  # US current rdcongo|away: player print Bakambu #17
+    "/itm/137584565454",  # US current alnassr|home: player print Ronaldo #7
+    "/itm/267706776222",  # US current alnassr|third: player print RONALDO 7
+    "/itm/198412970396",  # US current panama|third: Reebok-labelled Panama fake (Panama is New Balance)
+    "/itm/307106252268",  # IT current tigresuanl|home: personalizzata (custom print)
+    "/itm/188850339320",  # IT current argelia|home: Messi #10 Argentina shirt filed under Algeria: wrong team + player print
+    "/itm/117349522401",  # IT current egipto|home: player print Salah #10
+    "/itm/206398318491",  # IT current cruzazul|away: kids size + #8 MIRAYA print
+    "/itm/227517990518",  # IT current atleticomineiro|training: training VEST (gilet), not a jersey
+    "/itm/136551009470",  # IT current fluminense|home: player print J. Arias
+    "/itm/137752536630",  # ES current clubamerica|third: template/unverified brown "Aguilas" shirt labelled America third 26-27
+    "/itm/307106243401",  # ES current tigresuanl|away: custom navy/gold home-style shirt titled away
+    "/itm/206361070829",  # US current rdcongo|home: player print WISSA #20 + multi-kit template
+    "/itm/336774961905",  # US current alnassr|away: player print Ronaldo 7 custom
+    "/itm/198389718288",  # US current panama|home: Reebok-labelled Panama fake
+    "/itm/198412966890",  # US current panama|away: Reebok-labelled Panama fake
+    # --- Daily pass 2026-10-08, eBay kids ---
+    "/itm/204224450943",  # ES kids: "GUADALAJARA" training-style shirt, not the home kit
+    "/itm/366477551838",  # US kids: Nike 2021/22-era Galatasaray (club is Puma now), old stock
+    "/itm/178282680919",  # ES kids: Messi #10 player print
+    "/itm/206288404317",  # US kids: Ronaldo 7 print, jersey set
+    # --- Daily pass 2026-10-08, eBay retro ---
+    "/itm/257760371772",  # retro rangers|away|2011/12: back-only photo + BUTCHER 6 print
+    "/itm/167402066892",  # retro rangers|away|2017: Queens Park Rangers (QPR) under rangers
+    "/itm/158310281713",  # retro austria|away|2010: Wacker Innsbruck (club) under austria
+    "/itm/387467508552",  # retro cruzazul|home|2019/20: kids (giovanile/bambini)
+    "/itm/387464954679",  # retro cruzazul|away|2020/21: kids (giovanile/bambini)
+    "/itm/176892033970",  # retro leon|away|2023/24: back-only photo with GUARDADO 17 print
+    # --- Daily pass 2026-10-08, eBay GB ---
+    "/itm/318567698306",  # GB retro: "Score Draw" reproduction sold as RETRO rangers|away|1990
 ]
 
 

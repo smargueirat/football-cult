@@ -4744,3 +4744,33 @@ Feed `ADIDAS_CL.csv` (22.161 filas, UNA POR TALLA, CLP). Columnas para pick.py: 
 - **`pick.py` penalizaba "26/27"**: el sufijo de 2 digitos suelto (heritage "Liverpool 95") no incluia 27, asi que "Camiseta Local Liverpool FC 26/27" perdia contra "... Version Jugador" (titulo que no acaba en numero) y la ficha de hincha salia con el precio de la de jugador (119.990 en vez de 79.990). Arreglado (27 en el set cercano + "version jugador" penalizada como "authentic").
 - **"Universidad de Chile" se archivaba como la seleccion de Chile** (`\bchile\b`): 5 ofertas de club iban a `chile-home-2026`. Equipo nuevo `udechile` (batch17, antes de `chile` en TEAM_PATTERNS). "Seleccion Chilena" / "Seleccion Peruana" no matcheaban (`chilena`, `peruana` agregados).
 - Falsos positivos que NO entran solos: rugby All Blacks (sin patron de equipo), Mercedes/Audi F1, Fortnite, `Polera EQT`/`LFSTLR`/`Originals` sin tipo local/visitante (sin tipo no hay pick), conjuntos camiseta+short. Foto de `japon|prematch` (conflicto de temporada): la ficha existente (eBay, negra/blanca Originals) es OTRO diseno que el azul de CL, no se mezclaron. `italia|prematch` y `alemania|prematch` tienen varias fichas por colorway: `refresh.py` las salta como ambiguas; la oferta CL se puso a mano en `italia-prematch-white-2026` y `alemania-prematch-2026` (foto comparada), asi que cada noche el refresh vuelve a saltarlas sin tocar la oferta.
+
+## Daily pass (2026-10-08) -- manual run, the cron's OAuth session had expired
+
+The 06:07 cron run died at start with `Failed to authenticate: OAuth session
+expired` and the 10-07 run never happened (PC off), so this pass was run by
+hand from an interactive session following the `daily_scan.sh` prompt. eBay
+rotation ES, US, IT (day-of-year 281 mod 3 = 2), 20/20 teams each, zero 429s.
+`/tmp/feeds` survived (it was rebuilt 10-07) but every feed was re-downloaded.
+
+- CSV feeds (17 Awin + 5 Rakuten BR + Futbol Factory + Shop Real Betis): zero
+  NEW products; 26 season conflicts, 4 were real new-season kits and were
+  created (Como GK 26/27, Nice home 26/27 Kappa 34286MW, RB Leipzig home 26/27
+  Puma 784042-01, RB Salzburg away 26/27 Puma 784374-02 maroon). The FansJerseyHub
+  Salzburg 26/27 is a DIFFERENT (navy/light-blue) shirt from the real maroon
+  one -- not added. Palmeiras third "2026/27" from FansJerseyHub is the 2002/03
+  retro. Besiktas 26-27 x3 ($28.98 template, Nike) not added. Umbro MID 41001
+  still absent from the Rakuten FTP (22nd pass).
+- Women's pass: 1 new ficha (realmadrid-third-women, adidas KC3958).
+- eBay current: 2 new (Chivas training 26/27 Nike, New Zealand prematch Puma),
+  3 same-kit conflicts inserted on the existing ids (LA Galaxy away 2025, Atletico
+  Mineiro home/away on the 26/27 ids). 15 current + 6 conflict picks blocklisted
+  (custom-print "personalizada", Messi/Ronaldo/Salah/Bakambu prints, a Reebok-
+  labelled Panama fake, a training VEST, a kids shirt in the adult set).
+- eBay kids: 1 new (South Africa youth home KY2221). eBay retro: 440 raw, 359
+  after text filters (player print 44, "retro"/reissue 37), 8 re-keyed onto the
+  two-year ficha on file, 13 created.
+- ebay_gb_retro.py ran out of work (14 unreviewed single-store retro fichas
+  left); its first inserted offer was a "Score Draw RETRO" reproduction
+  (rangers 1990) -- removed and blocklisted.
+- ebay_check_stale: 6 of 200 dead (3%).

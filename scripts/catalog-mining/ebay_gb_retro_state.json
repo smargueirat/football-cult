@@ -148,6 +148,7 @@
 "argelia-retro-2022-home",
 "argelia-retro-202223-away",
 "argelia-retro-2024-home",
+"argelia-retro-202425-away",
 "argentina-retro-1996-home",
 "argentina-retro-1998-away",
 "argentina-retro-1998-home",
@@ -309,6 +310,8 @@
 "austria-retro-2008-home",
 "austria-retro-201011-away",
 "austria-retro-201012-home",
+"austria-retro-201415-home",
+"austria-retro-201617-away",
 "austria-retro-201617-home",
 "austria-retro-2020-away",
 "austria-retro-202021-home",
@@ -766,6 +769,7 @@
 "chivas-retro-1997-away",
 "chivas-retro-199900-away",
 "chivas-retro-199900-home",
+"chivas-retro-2000-third",
 "chivas-retro-200001-home",
 "chivas-retro-200304-home",
 "chivas-retro-200405-home",
@@ -818,6 +822,7 @@
 "clubamerica-retro-2004-home",
 "clubamerica-retro-2005-home",
 "clubamerica-retro-200506-away",
+"clubamerica-retro-200607-away",
 "clubamerica-retro-200607-home",
 "clubamerica-retro-200708-home",
 "clubamerica-retro-200809-away",
@@ -971,6 +976,7 @@
 "cruzazul-retro-1998-away",
 "cruzazul-retro-1998-home",
 "cruzazul-retro-200405-away",
+"cruzazul-retro-200910-home",
 "cruzazul-retro-2010-home",
 "cruzazul-retro-201516-away",
 "cruzazul-retro-201516-third",
@@ -1075,6 +1081,7 @@
 "egipto-retro-2012-home",
 "egipto-retro-2018-home",
 "egipto-retro-201920-home",
+"egipto-retro-2022-home",
 "egipto-retro-202223-away",
 "egipto-retro-2024-away",
 "egipto-retro-202425-away",
@@ -1837,6 +1844,7 @@
 "jamaica-retro-2018-away",
 "jamaica-retro-202122-away",
 "jamaica-retro-202122-home",
+"jamaica-retro-202223-home",
 "jamaica-retro-2023-away",
 "jamaica-retro-202324-away",
 "jamaica-retro-2024-away",
@@ -1979,6 +1987,7 @@
 "lagalaxy-retro-201819-away",
 "lagalaxy-retro-201820-home",
 "lagalaxy-retro-2019-away",
+"lagalaxy-retro-2019-home",
 "lagalaxy-retro-201920-away",
 "lagalaxy-retro-2020-home",
 "lagalaxy-retro-202021-away",
@@ -2112,6 +2121,7 @@
 "leon-retro-201617-home",
 "leon-retro-201718-away",
 "leon-retro-201718-home",
+"leon-retro-202223-away",
 "leon-retro-202223-home",
 "leon-retro-202324-home",
 "leon-retro-2024-away",
@@ -2681,6 +2691,7 @@
 "palmeiras-retro-2024-away",
 "palmeiras-retro-202425-home",
 "palmeiras-retro-202425-third",
+"panama-retro-200405-home",
 "panama-retro-200506-home",
 "panama-retro-201113-away",
 "panama-retro-201516-home",
@@ -2921,6 +2932,7 @@
 "racingclub-retro-2023-home",
 "racingclub-retro-2024-home",
 "rangers-retro-1989-home",
+"rangers-retro-1990-away",
 "rangers-retro-1992-home",
 "rangers-retro-1992-third",
 "rangers-retro-199293-away",
@@ -2937,6 +2949,7 @@
 "rangers-retro-201617-away",
 "rangers-retro-201819-away",
 "rangers-retro-201819-third",
+"rangers-retro-202021-away",
 "rangers-retro-202021-home",
 "rangers-retro-202122-away",
 "rangers-retro-202122-home",
@@ -3469,6 +3482,7 @@
 "tigresuanl-retro-201819-home",
 "tigresuanl-retro-202021-home",
 "tigresuanl-retro-202021-third",
+"tigresuanl-retro-202223-away",
 "tigresuanl-retro-202223-home",
 "tigresuanl-retro-2023-third",
 "tigresuanl-retro-202324-away",
@@ -18470,6 +18484,66 @@
 "S"
 ],
 "shipping": 2.94
+},
+"rangers-retro-202021-away": {
+"title": "Glasgow Rangers 2020/21 away  Football Shirt Size  (M) NEW",
+"price": 28.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/406885010286?_skw=Rangers+FC+2020+away+shirt&hash=item5ebc3c8b6e%3Ag%3AV08AAeSwv2hp7NDS&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|406885010286|0",
+"image": "https://i.ebayimg.com/images/g/V08AAeSwv2hp7NDS/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"austria-retro-201617-away": {
+"title": "AUSTRIA 2016/17 Away Football Shirt Soccer Jersey Österreich  Men  XXL Puma New ",
+"price": 42.29,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/375513677532?_skw=Austria+2016+away+shirt&hash=item576e5bfedc%3Ag%3AyUQAAOSwYeJmgbyE&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|375513677532|0",
+"image": "https://i.ebayimg.com/images/g/yUQAAOSwYeJmgbyE/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.7
+},
+"egipto-retro-2022-home": {
+"title": "Original Puma Egypt 2022 2023 National home football soccer shirt Medium",
+"price": 39.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/128048732256?_skw=Egypt+2022+home+shirt&hash=item1dd04c9860%3Ag%3AwV8AAeSwgW9qkUkp&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|128048732256|0",
+"image": "https://i.ebayimg.com/images/g/wV8AAeSwgW9qkUkp/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.99
+},
+"jamaica-retro-202223-home": {
+"title": "Jamaica Home 2022/23 Football Shirt BNWT XXL",
+"price": 64.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/327333160246?_skw=Jamaica+2022+home+shirt&hash=item4c3693a536%3Ag%3AdaUAAeSwvdxqWOaN&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|327333160246|0",
+"image": "https://i.ebayimg.com/images/g/daUAAeSwvdxqWOaN/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 3.75
+},
+"rangers-retro-1990-away": {
+"title": "GLASGOW RANGERS 1990 AWAY RETRO FOOTBALL SHIRT SCORE DRAW SIZE XL BRAND NEW",
+"price": 19.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/318567698306?_skw=Rangers+FC+1990+away+shirt&hash=item4a2c1d4f82%3Ag%3AJnIAAeSwDodqUQ0G&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|318567698306|0",
+"image": "https://i.ebayimg.com/images/g/JnIAAeSwDodqUQ0G/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 4.65
 }
 }
 }

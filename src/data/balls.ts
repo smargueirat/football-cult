@@ -942,15 +942,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8029_1_hardware_photography_front_center_view_white.webp",
         sizes: ["4"],
       },
-      {
-        store: "AdidasCL",
-        price: 11990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=45585745953&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7a755ef5ec4e43e084559fd6efd5ce78_9366%2FPelota_Trionda_Club_Copa_Mundial_de_la_FIFA_26tm_Rosado_JD8029_01_00_standard.jpg&feedId=95016&k=d0d663ead0dd8ce46ac7a889cf07715e689322bb",
-        sizes: ["3"],
-      },
     ],
   },
   {
