@@ -1154,6 +1154,82 @@ def mine_adidas_cl():
         n += 1
     print('AdidasCL:', n)
 
+# ---------- FORUM SPORT (Awin 23805) ----------
+# Hasta 2026-10-09 solo entraban sus botas cruzadas a mano en los 71 legacy;
+# el resto (≈1.150 colorways, ~400 de niño y ~260 de sala) nunca. Categoría
+# fiable en product_type ("fútbol > botas de futbol [niño] <terreno>",
+# "fútbol > botas fútbol sala [niño]"), una fila por talla y parent_product_id
+# = colorway (un solo precio y color por padre, medido). El nombre lleva la
+# categoría pegada al final ("Adidas f50 elite ag botas de futbol cesped
+# artificial") y ese terreno de la categoría no es fiable (la Copa Mundial FG
+# figura como "cesped artificial"): el terreno sale del código del nombre y la
+# categoría solo como último recurso. mpn: solo el de adidas ("JQ0399") es
+# estilo-color; el de Nike/Puma suele ser solo estilo (todos los colores), así
+# que no se usa para fundir -- para eso están los EAN.
+FORUM_CAT_GROUND = (('cesped natural', 'FG'), ('artificial', 'AG'), ('multitaco', 'TF'))
+FORUM_CODE_RE = re.compile(r'^(?:fg|ag|tf|mg|sg|ic|in|it|tt|mxsg|ll|ii|iii|iv|vi|vii|viii|ix|xi|xii|xg)$', re.I)
+
+
+def forum_model(name):
+    base = re.sub(r'\s+botas?\s+(de\s+)?f[uú]tbol\b.*$', '', name.strip(), flags=re.I)
+    return ' '.join('/'.join(p.upper() if FORUM_CODE_RE.match(p) else p[:1].upper() + p[1:] for p in w.split('/'))
+                    for w in base.split())
+
+
+def legacy_forum_parents(by_parent):
+    """Padres del feed que ya son ofertas ForumSport de los 71 legacy (por el
+    p=<aw_product_id> del enlace), para no mostrar la misma bota dos veces."""
+    boots_ts = os.path.join(SCRIPT_DIR, "..", "..", "src", "data", "boots.ts")
+    if not os.path.exists(boots_ts):
+        return set()
+    src = open(boots_ts, encoding='utf-8').read()
+    legacy = src[:src.find('// ===AUTO-GENERATED-BOOTS-BELOW===')]
+    pids = set(re.findall(r'pclick\.php\?p=(\d+)&a=\d+&m=23805', legacy))
+    return {p for p, rows in by_parent.items() if any(r['aw_product_id'] in pids for r in rows)}
+
+
+def mine_forumsport():
+    path = f"{FEEDS}/FORUMSPORT.csv"
+    if not os.path.exists(path):
+        print('ForumSport: feed not found, skipped')
+        return
+    by_parent = {}
+    with open(path, newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            if not (row.get('product_type') or '').startswith('fútbol > botas'):
+                continue
+            if (row.get('stock_status') or 'in_stock') != 'in_stock' or not parse_price(row.get('search_price')):
+                continue
+            if not classify(row.get('product_name')):
+                continue
+            by_parent.setdefault(row.get('parent_product_id') or row.get('aw_product_id'), []).append(row)
+    skip = legacy_forum_parents(by_parent)
+    n = 0
+    for parent, rows in by_parent.items():
+        if parent in skip:
+            continue
+        rep = min(rows, key=lambda r: (parse_price(r.get('search_price')), r.get('aw_product_id')))
+        cat = rep.get('product_type') or ''
+        sizes = sorted({dot_size(r.get('Fashion:size') or '') for r in rows if re.match(r'^\d', (r.get('Fashion:size') or '').strip())},
+                       key=size_sort_key)
+        if not sizes:
+            continue
+        model = forum_model(rep.get('product_name') or '')
+        ground = infer_ground(model) or next((g for k, g in FORUM_CAT_GROUND if k in cat), '')
+        mpn = (rep.get('mpn') or '').strip()
+        results.append(tag({
+            'store': 'ForumSport', 'brand': (rep.get('brand_name') or model.split(' ')[0]).strip(), 'model': model,
+            'groundType': ground,
+            'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
+            'currency': 'EUR',
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            'eans': sorted({(r.get('product_GTIN') or '').strip() for r in rows} - {''}),
+            **({'style': mpn} if rep.get('brand_name') == 'Adidas' and re.fullmatch(r'[A-Z]{2}\d{4}', mpn) else {}),
+        }, *classify(model, kids='niño' in cat or rep.get('Fashion:suitable_for') == 'INFANTIL', indoor='sala' in cat)))
+        n += 1
+    print(f'ForumSport: {n} (legacy ya cruzadas, omitidas: {len(skip)})')
+
+
 def legacy_model_names_from_boots_ts():
     """Nombres (en minúscula) de los 71 legacy, para que
     mine_futbolemotion() no los duplique. Lee boots.ts directo en vez de
@@ -1180,6 +1256,7 @@ if __name__ == '__main__':
     mine_gigasport('GIGASPORT_FR.csv', 'GigasportFR', GIGASPORT_FR_BOOT_CATS)
     mine_clovis()
     mine_futbolemotion(legacy_model_names_from_boots_ts())
+    mine_forumsport()
     # Último a propósito: si una bota de Pro:Direct es la misma (EAN) que una
     # de otra tienda, se suma a esa ficha y la ficha conserva su id.
     mine_prodirect()
