@@ -29,7 +29,7 @@ import {
 } from "@/data/products";
 import { BootProduct, bootProducts } from "@/data/boots";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
-import { offersForCountry } from "@/lib/productMeta";
+import { offerShipsTo, offersForCountry } from "@/lib/productMeta";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
@@ -462,7 +462,12 @@ export default function SearchExplorer({
     // SORT_OPTIONS más abajo), así que acá solo hace falta cubrir
     // priceAsc/priceDesc; el resto se deja en el orden filtrado tal cual.
     if (sortBy === "priceAsc" || sortBy === "priceDesc") {
+      // Botas que no envían al país del visitante (p. ej. Clovis BR desde
+      // España) al final: si no, "más barato primero" abría con ellas.
+      const shipsHere = (p: (typeof filtered)[number]) => p.offers.some((o) => offerShipsTo(o.store, countryCode));
       return [...filtered].sort((a, b) => {
+        const byShipping = Number(shipsHere(b)) - Number(shipsHere(a));
+        if (byShipping) return byShipping;
         const cheapestA = Math.min(...offersForCountry(a.offers, countryCode).map(bootOfferTotalInEUR));
         const cheapestB = Math.min(...offersForCountry(b.offers, countryCode).map(bootOfferTotalInEUR));
         return sortBy === "priceAsc" ? cheapestA - cheapestB : cheapestB - cheapestA;

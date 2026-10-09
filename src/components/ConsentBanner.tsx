@@ -81,12 +81,13 @@ export default function ConsentBanner() {
       aria-label={c.region}
       className="fixed inset-x-0 bottom-0 z-[100] max-h-[90vh] overflow-y-auto border-t border-[#C9A24B]/40 bg-[#1b1812] px-4 py-3 text-[#F3E9C9] sm:py-4 shadow-[0_-8px_30px_rgba(0,0,0,0.45)] sm:px-8"
     >
-      <div className="mx-auto max-w-4xl">
-        {/* Móvil: título en línea con el texto, letra más chica y botones en
-            una fila (medido: el banner tapaba 280 de 844 px). Mismo texto, y
-            Aceptar y Rechazar siguen con el mismo peso. */}
-        <h2 className="inline text-xs font-semibold text-[#E9D38F] sm:block sm:text-base">{c.title}</h2>{" "}
-        <p className="inline text-xs leading-snug text-[#D8CFB6] sm:mt-1 sm:block sm:text-sm sm:leading-relaxed">
+      {/* Móvil: título en línea con el texto, letra más chica y botones en
+          una fila (medido: el banner tapaba 280 de 844 px). Mismo texto, y
+          Aceptar y Rechazar siguen con el mismo peso. El interlineado va en
+          el contenedor: en un <p> inline no reduce la altura de la línea. */}
+      <div className="mx-auto max-w-4xl text-xs leading-snug sm:text-sm sm:leading-relaxed">
+        <h2 className="inline font-semibold text-[#E9D38F] sm:block sm:text-base">{c.title}</h2>{" "}
+        <p className="inline text-[#D8CFB6] sm:mt-1 sm:block">
           {c.body}{" "}
           <Link href="/privacidad" className="underline underline-offset-2 hover:text-[#F3E9C9]">
             {c.moreInfo}
