@@ -1,6 +1,7 @@
 import { createHash, timingSafeEqual } from "node:crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { teamNames } from "@/lib/productMeta";
+import { getRedis, isRedisConfigured } from "@/lib/redis";
 import { follow, removeChat, teamsOf, unfollow, MAX_TEAMS_PER_CHAT } from "@/lib/telegramFollowers";
 
 // Webhook del bot: cada visitante sigue a SU equipo y el envío nocturno
@@ -100,6 +101,21 @@ function notFoundMsg(r: { options: string[] }, verb: string): string {
   return `Hay varios equipos que coinciden, escribe el nombre completo:\n${list}`;
 }
 
+// Avisos de caída del sitio al dueño (scripts/ops/notify.mjs lee este set).
+// El primer chat que manda "/start alertas" queda como administrador; los
+// demás reciben un "no" (para cambiarlo: DEL opsAlertChats en Redis).
+const OPS_ALERT_CHATS = "opsAlertChats";
+
+async function registerOpsAlerts(chatId: string): Promise<string> {
+  if (!isRedisConfigured()) return "No puedo guardar el registro ahora mismo.";
+  const redis = await getRedis();
+  const current = await redis.sMembers(OPS_ALERT_CHATS);
+  if (current.includes(chatId)) return "Ya estás registrado: te aviso aquí si football-cult.com se cae y cuando vuelve.";
+  if (current.length) return "Las alertas del sitio ya tienen un administrador registrado.";
+  await redis.sAdd(OPS_ALERT_CHATS, chatId);
+  return "✅ Registrado como administrador: te aviso aquí si football-cult.com se cae y cuando vuelve.";
+}
+
 async function handle(chatId: string, text: string): Promise<void> {
   const m = /^\/(\w+)(?:@\w+)?(?:\s+([\s\S]*))?$/.exec(text.trim());
   if (!m) return reply(chatId, HELP);
@@ -107,7 +123,10 @@ async function handle(chatId: string, text: string): Promise<void> {
   const arg = (m[2] ?? "").trim();
 
   switch (cmd) {
+    case "alertas":
+      return reply(chatId, await registerOpsAlerts(chatId));
     case "start": {
+      if (arg === "alertas") return reply(chatId, await registerOpsAlerts(chatId));
       const payload = /^equipo_([A-Za-z0-9_-]{1,64})$/.exec(arg);
       if (payload && isTeamKey(payload[1])) return reply(chatId, followMsg(chatId, payload[1]));
       return reply(chatId, HELP);
