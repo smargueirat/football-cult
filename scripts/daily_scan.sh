@@ -13,7 +13,17 @@ echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily scan start ==="
 # cron never actually did anything. Hardcoded full path now.
 CLAUDE_BIN="/home/piojo/.local/bin/claude"
 
+# Refresco determinista SIN Claude (2026-10-09): descarga los feeds y refresca
+# precio/stock/tallas de camisetas (por oferta), botas y equipamiento, y lo
+# commitea. Va antes de Claude para que una noche en que Claude no arranca
+# (16 de 62 hasta el 10-08) el catálogo igual quede al día. Ver el script.
+SCAN_MARK="$(mktemp)"
+REFRESH_OUT="$(scripts/daily_refresh.sh 2>&1)"
+echo "$REFRESH_OUT"
+
 "$CLAUDE_BIN" -p "Daily football-cult.com catalog scan: find and add any real football jerseys still missing from the site, across ALL currently-connected sources.
+
+YA HECHO antes de esta sesión, sin LLM (scripts/daily_refresh.sh, 2026-10-09; su salida está al final de scripts/daily_scan.log): todos los feeds de abajo ya están descargados en /tmp/feeds (download_feeds.py), cada oferta de camiseta de tienda con feed ya tiene el precio/stock/tallas de hoy (refresh_offers.py, que además marca inStock:false lo que ya no está en el feed de su tienda -- no lo deshagas), y botas y equipamiento ya se refrescaron (refresh_boots.py, refresh_gear.py), todo commiteado. No vuelvas a descargar un feed de /tmp/feeds que tenga menos de 6 h ni vuelvas a correr refresh_boots.py/refresh_gear.py, salvo que esa salida diga FAIL/ABORTADO/WARNING para ellos; tu trabajo es la minería de productos y ofertas NUEVAS (y los pasos de eBay, Rakuten, tickets, GTIN, colores y bajadas de precio de abajo). Archivos derivados como FORUMSPORT_jerseys.csv sí los tienes que generar tú.
 
 Repo: /home/piojo/football-cult. Reusable tooling: scripts/catalog-mining/ (read its README.md first — it documents the whole pipeline, false-positive classes found, and the standing safety rule). Enumerate connected Awin stores fresh via \`grep '^AWIN_FEED_URL_' .env.local\` rather than assuming a fixed list — plus eBay (Partner Network + Browse API) which isn't in that env-var list. Do NOT mine Mystery Shirt Club anymore — its Awin affiliate programme (aid 124324) closed 2026-09-16, its 313 offers were already removed from products.ts, and any link generated through that aid is dead even if the Shopify product feed itself still responds.
 
@@ -95,6 +105,19 @@ send_alert() {
 
 if [[ $CLAUDE_EXIT -ne 0 ]]; then
   send_alert "Daily scan failed (exit $CLAUDE_EXIT)" "The headless run at $(date -u +%Y-%m-%dT%H:%M:%SZ) exited with code $CLAUDE_EXIT. Check scripts/daily_scan.log on the Mini PC for details."
+  # Precios y stock ya los dejó el refresco determinista de arriba; lo que
+  # Claude hace al final (bajadas de precio, historial) se hace aquí, salvo
+  # que Claude llegara a hacerlo antes de fallar (snapshot ya tocado).
+  if [[ ! scripts/catalog-mining/price_snapshot.json -nt "$SCAN_MARK" ]]; then
+    npx tsx scripts/catalog-mining/track_price_drops.mts 2>&1 | tail -2
+  fi
+fi
+rm -f "$SCAN_MARK"
+
+if printf '%s' "$REFRESH_OUT" | grep -q '^AVISO amazon:'; then
+  send_alert "Amazon: ofertas sin verificar a punto de caducar" "$(printf '%s' "$REFRESH_OUT" | grep -A200 '^AVISO amazon:' | grep -E '^(AVISO|    )')
+
+Sin PA-API no se puede leer el precio de Amazon en bloque: cada oferta caduca (inStock:false) a los 14 días sin verificar. Abrir cada enlace, corregir el precio en src/data/products.ts si cambió y marcarla verificada con el comando de arriba."
 fi
 
 if [[ -n "$(git status --porcelain)" ]]; then
@@ -109,6 +132,7 @@ if [[ -n "$(git status --porcelain)" ]]; then
     src/data/products.ts \
     src/data/productDominantColors.json \
     src/data/priceHistory.json \
+    src/data/priceDrops.json \
     src/data/boots.ts \
     src/data/bootTierData.json \
     src/data/bootDominantColors.json \

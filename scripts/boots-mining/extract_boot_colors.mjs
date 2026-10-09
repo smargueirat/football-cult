@@ -14,7 +14,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "/home/piojo/football-cult/node_modules/sharp/lib/index.js";
+import sharp from "sharp";
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const PAIRS_PATH = path.join(SCRIPT_DIR, "boot_image_pairs.json");
