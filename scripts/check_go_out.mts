@@ -2,7 +2,7 @@
 //   npx tsx scripts/check_go_out.mts
 // Los enlaces de ejemplo son reales del catálogo (oct-2026).
 import assert from "node:assert";
-import { botReason, resetBotState, untracked, withSubId } from "../src/lib/goOut";
+import { botReason, resetBotState, soicosLink, untracked, withSubId } from "../src/lib/goOut";
 
 const src = { section: "camiseta", locale: "es", country: "ES", origin: "ficha3b", productId: "rma-home-202526" };
 const ALL = "camiseta_es_ES_ficha3b_rma-home-202526";
@@ -45,6 +45,14 @@ assert.strictEqual(untracked(cases[8][1]), "https://www.nike.cl/x/p");
 assert.strictEqual(untracked(cases[7][1]), "https://www.amazon.es/dp/B09HN39LXJ");
 assert.doesNotMatch(untracked(cases[2][1])!, /campid|mkevt|customid|toolid|mkrid|mkcid/);
 assert.match(untracked(cases[2][1])!, /^https:\/\/www\.ebay\.es\/itm\/137722044673\?_skw=/);
+
+// Soicos: Nike CL/AR y Puma AR directos se envuelven; lo demás, y lo ya envuelto, igual.
+assert.strictEqual(soicosLink("https://www.nike.cl/x%C2%A0y/p"), "https://ad.soicos.com/sclick?aid=56058&pid=14271&dl=https%3A%2F%2Fwww.nike.cl%2Fx%25C2%25A0y%2Fp");
+assert.match(soicosLink("https://www.nike.com.ar/x/p"), /pid=14661&/);
+assert.match(soicosLink("https://ar.puma.com/x.html"), /pid=14084&/);
+assert.strictEqual(soicosLink(cases[8][1]), cases[8][1]);
+assert.strictEqual(soicosLink(cases[9][1]), cases[9][1]);
+assert.strictEqual(untracked(soicosLink("https://www.nike.cl/x%C2%A0y/p")), "https://www.nike.cl/x%C2%A0y/p");
 
 // ---- Filtro de bots
 const CHROME = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36";
