@@ -45,7 +45,7 @@ Also mine the 2 TradeTracker (not Awin) jersey stores the same way as any Awin s
 
 STANDING RULE, applies from 2026-09-22 onward: any new recurring data source added to this project (a new store, a new feed, a new scraping/mining script, a new marketplace of an existing source like eBay IT/ES) must be wired into this same nightly scan the same day it's built — either by adding it to the generic \`AWIN_FEED_URL_*\` enumeration if it fits that pattern, or by adding an explicit paragraph here otherwise. A one-off manual mining pass that never gets added here WILL go stale (this exact thing happened to Futbol Factory/Shop Real Betis above, and to FutbolEmotion boots before 2026-09-21) — do not repeat that mistake. If a future session adds a new source and does not have time to also automate it same-day, it must say so explicitly to the user rather than silently leaving it manual-only.
 
-Also run \`python3 scripts/catalog-mining/ebay_check_stale.py\` (no args = default 200/day batch) — eBay listings get sold/delisted after we mine them, and nothing else re-checks an already-mined offer, so this catches ones that have since gone dead (confirmed real 2026-08-28: 54 of the first 300 checked, ~18%, were genuine 404s from eBay's own API) and flips them to \`inStock: false\` directly in products.ts. It persists its cycle position in ebay_stale_check_state.json (next to the script) — git add and commit that file alongside products.ts every time, same reason as ebay_full_cycle_state.json above (losing it just repeats the same batch instead of progressing through the catalog).
+Do NOT run \`scripts/catalog-mining/ebay_check_stale.py\` yourself (changed 2026-10-09): this shell script runs it by itself right after you finish, over ALL eBay marketplaces (eBay/ES/IT/GB), spending whatever Browse API quota your eBay mining left minus a reserve for the site, and commits products.ts + ebay_stale_check_state.json on its own. Running it here too would burn the quota the mining above needs and race with your own edits to products.ts.
 
 Also run \`python3 scripts/boots-mining/refresh_boots.py\` (read scripts/boots-mining/README.md first) — refreshes src/data/boots.ts against the same Awin feed cache used above (adidas ES, Sport is Good ES, Foot-Store ES, Decathlon Irlanda boots, Gigasport DE/CH/FR, Clovis Calçados BR, Reebok DE), which used to only ever get re-mined by hand and had started drifting from real store prices. Clovis Calçados BR (aid 107702, added 2026-09-22) is a general Brazilian footwear retailer — category_id/category_name are always empty in its feed, so mine_clovis() filters on product_type == \"Masculino - Chuteira\" (its dedicated men's football-boots category; \"Infantil - Menino - Chuteira\" is kids' and stays excluded same as every other store), then drops Futsal/Indoor titles via the existing EXCLUDE_KEYWORDS (already covers those words) and keeps Society/Campo (real outdoor ground types, ~AG/~FG) — prices are real BRL, shown natively like Pro Soccer's USD. Reebok DE (aid 121508, added 2026-10-05) needs nothing extra: its feed is a MIXED one already downloaded to /tmp/feeds/REEBOK_DE.csv by the normal AWIN_FEED_URL_* enumeration (it also goes through the jersey pipeline, unlike Gigasport/Clovis), and mine_reebok_de() picks the boots out of it by \"Fußballschuh\" in the title. It's a single self-contained script (mines, rebuilds boots.ts, reclassifies Tier/Horma, extracts dominant color for any new photos) — just run it and git add its three output files (src/data/boots.ts, src/data/bootTierData.json, src/data/bootDominantColors.json) alongside everything else. Ids are deterministic so this is safe to run every day even with zero real changes (produces a byte-identical file). Since 2026-09-21 it ALSO downloads the FutbolEmotion (TradeTracker) feed itself, re-applies today's sizes/prices/stock to the 71 legacy models (legacy_stock.py) and mines ProSoccer per-size stock — so sold-out boots and vanished sizes leave the catalog every night; if its output contains a \`WARNING: no se pudo refrescar el feed de FutbolEmotion\` line, mention it in your summary (that store's sizes are then a day stale). Print its summary (new/dropped/price-changed counts and the legacy-refresh line) in your own summary at the end.
 
@@ -200,8 +200,25 @@ fi
 # está en caché se regenera: es una escritura ISR y CPU por URL.
 python3 scripts/indexnow.py 2>&1 | tail -3
 
-# El mismo anuncio en dos fichas (año suelto vs temporada): lo deja solo en la
-# de su temporada real. Agregado 2026-09-30, ver el docstring del script.
+# Anuncios eBay muertos, en los cuatro sitios (eBay/ES/IT/GB), por id de
+# anuncio y en rotación (estado en ebay_stale_check_state.json). Va aquí y no
+# dentro de la sesión de Claude (2026-10-09): así corre aunque Claude falle,
+# y después de la minería, con la cuota de Browse que esta haya dejado menos
+# una reserva para /api/ebay-shipping. Si products.ts quedó sin commitear
+# (la red de seguridad lo deja así a propósito para revisión), no se toca.
+# Va ANTES del dedupe: este propaga "muerto" a todas las copias de un id.
+if git diff --quiet -- src/data/products.ts; then
+  python3 -u scripts/catalog-mining/ebay_check_stale.py 2>&1 | grep -v '^  unknown' | tail -4
+  git add src/data/products.ts scripts/catalog-mining/ebay_stale_check_state.json
+  git diff --cached --quiet || { git commit -q -m "chore(ebay): anuncios terminados fuera de stock ($(date +%Y-%m-%d))" && \
+    git push -q origin "$(git rev-parse --abbrev-ref HEAD)"; }
+else
+  echo "=== ebay_check_stale: products.ts tiene cambios sin commitear, se salta ==="
+fi
+
+# El mismo anuncio en varias filas (copias eBay/ES/IT/GB del mismo /itm/<id>,
+# o el mismo anuncio en dos fichas): una fila, en la ficha de su temporada.
+# Agregado 2026-09-30, por id de anuncio desde 2026-10-09; ver el docstring.
 if python3 scripts/catalog-mining/dedupe_same_url.py --apply | tail -1 | grep -q "aplicado"; then
   git add src/data/products.ts src/data/productAliases.ts && \
     git commit -q -m "chore(catalogo): mismo anuncio en dos fichas, deduplicado ($(date +%Y-%m-%d))" && \
