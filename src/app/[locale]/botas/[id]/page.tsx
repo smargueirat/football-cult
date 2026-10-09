@@ -4,9 +4,34 @@ import { bootProducts } from "@/data/boots";
 import bootAliases from "@/data/bootAliases.json";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { brandFacets, brandGroundCombos, byBrand, byBrandGround, byGround, cheapestFirst, groundFacets } from "@/lib/gearHubs";
+import { brandFacets, brandGroundCombos, byBrand, byBrandGround, byGround, cheapestFirst, groundFacets, groundSlug, slugify } from "@/lib/gearHubs";
 import BootDetailClient from "./BootDetailClient";
 import { archiveStatsFor } from "@/lib/priceArchive";
+import { HubBacklinks } from "@/components/hubs/HubLinkParts";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { lineFacets } from "@/lib/extraHubs";
+import { bootLinesOf, isKidsBoot } from "@/lib/bootLines";
+import { brandHeadline, groundName } from "@/lib/gearHubStrings";
+import { asLocale } from "@/lib/hubPages";
+import type { HubLocale } from "@/data/teamMeta";
+
+// Enlaces de la ficha a sus hubs (marca, línea, terreno, niño/sala): solo a
+// los que existen hoy (los mismos facets que generan esas páginas).
+function bootHubLinks(boot: NonNullable<ReturnType<typeof findBoot>>, locale: HubLocale) {
+  const x = EXTRA[locale];
+  const out: { href: string; label: string }[] = [];
+  const brand = brandFacets("botas").find((b) => b.slug === slugify(boot.brand));
+  if (brand) out.push({ href: `/${locale}/botas/marca/${brand.slug}`, label: brandHeadline("botas", brand.name, locale) });
+  const mine = new Set(bootLinesOf(boot));
+  for (const l of lineFacets()) if (mine.has(l.slug)) out.push({ href: `/${locale}/botas/linea/${l.slug}`, label: brandHeadline("botas", l.name, locale) });
+  if (isKidsBoot(boot)) out.push({ href: `/${locale}/botas/ninos`, label: x.kidsH1 });
+  else if (boot.groundType === "IC") out.push({ href: `/${locale}/botas/futbol-sala`, label: x.futsalH1 });
+  else {
+    const g = groundFacets().find((f) => f.name === boot.groundType);
+    if (g) out.push({ href: `/${locale}/botas/terreno/${groundSlug(g.name)}`, label: groundName(g.name, locale) });
+  }
+  return out;
+}
 
 const SITE_URL = "https://football-cult.com";
 
@@ -138,6 +163,7 @@ export default async function BootDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <BootDetailClient boot={boot} archiveStats={archiveStatsFor(boot.offers.map((o) => o.url))} />
+      <HubBacklinks label={EXTRA[asLocale(locale)].explore} items={bootHubLinks(boot, asLocale(locale))} />
     </>
   );
 }

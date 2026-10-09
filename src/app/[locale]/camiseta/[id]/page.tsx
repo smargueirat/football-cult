@@ -16,6 +16,10 @@ import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { HUB } from "@/lib/hubStrings";
 import { TITLE_SUFFIX, ageGroupLabel } from "@/lib/categoryMeta";
 import { productMpn } from "@/lib/offerGtin";
+import { HubBacklinks } from "@/components/hubs/HubLinkParts";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { decadeOf, retroDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
+import { isVintageRetro, teamCategory } from "@/lib/productMeta";
 import type { HubLocale } from "@/data/teamMeta";
 
 import { countDistinctRetailers } from "@/lib/retailerFamily";
@@ -24,6 +28,19 @@ const SITE_URL = "https://football-cult.com";
 // Product/Offer structured data para Google Shopping / resultados
 // enriquecidos -- una oferta por tienda real (nunca AggregateOffer con un
 // solo priceCurrency inventado, las tiendas cobran en monedas distintas).
+// Camiseta retro (temporada <= 2006) -> sus hubs retro de equipo y de
+// década, solo si existen hoy.
+function retroHubLinks(product: Product, locale: HubLocale) {
+  if (!isVintageRetro(product)) return [];
+  const x = EXTRA[locale];
+  const d = decadeOf(product.season);
+  const out: { href: string; label: string }[] = [];
+  if (retroTeamFacets().some((f) => f.team === product.teamKey))
+    out.push({ href: `/${locale}/retro/${product.teamKey}`, label: x.retroTeamH1(teamNames[product.teamKey][locale], teamCategory[product.teamKey] === "national") });
+  if (retroDecadeFacets().some((f) => f.decade === d)) out.push({ href: `/${locale}/retro/decada/${d}`, label: x.retroDecadeH1(d) });
+  return out;
+}
+
 function productJsonLd(product: Product, locale: HubLocale) {
   // Estaba cableado en español para los cinco idiomas: el nombre del
   // producto que ve Google era el mismo en /fr/ que en /es/.
@@ -249,6 +266,7 @@ export default async function JerseyDetailPage({
         manufacturerCode={productMpn(product.offers)}
       />
       <JerseyFaq product={product} locale={locale} />
+      <HubBacklinks label={EXTRA[locale].explore} items={retroHubLinks(product, locale)} />
     </>
   );
 }

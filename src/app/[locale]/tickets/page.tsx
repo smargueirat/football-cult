@@ -2,6 +2,11 @@ import { Metadata } from "next";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import TicketsPageClient from "./TicketsPageClient";
+import { asLocale } from "@/lib/hubPages";
+import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets } from "@/lib/extraHubs";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { teamName } from "@/lib/hubs";
+import { LinkChipRow } from "@/components/hubs/HubLinkParts";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -39,6 +44,26 @@ export async function generateMetadata({
   };
 }
 
-export default function TicketsPage() {
-  return <TicketsPageClient />;
+export default async function TicketsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const locale = asLocale((await params).locale);
+  const x = EXTRA[locale];
+  const label = (name: string) => {
+    const k = teamKeyForTicketName(name);
+    return k ? teamName(k, locale) : name;
+  };
+  return (
+    <>
+      <TicketsPageClient />
+      {/* Hubs por competición y por equipo (2026-10-09). */}
+      <nav aria-label={x.explore} className="mx-auto w-full max-w-[1800px] px-4 pb-10 sm:px-8">
+        <LinkChipRow title={x.ticketByComp} items={ticketCompetitionFacets().map((f) => ({ href: `/${locale}/tickets/competicion/${f.slug}`, label: f.name }))} />
+        <LinkChipRow
+          title={x.ticketByTeam}
+          items={ticketTeamFacets()
+            .map((f) => ({ href: `/${locale}/tickets/equipo/${f.slug}`, label: label(f.name) }))
+            .sort((a, b) => a.label.localeCompare(b.label))}
+        />
+      </nav>
+    </>
+  );
 }

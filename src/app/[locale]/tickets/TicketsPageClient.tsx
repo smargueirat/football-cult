@@ -35,9 +35,23 @@ function splitTeams(event: string): [string, string] {
 
 type SortKey = "dateAsc" | "dateDesc";
 
-export default function TicketsPageClient() {
+// Hubs (2026-10-09, /tickets/equipo/x y /tickets/competicion/x): recortan
+// el listado a un equipo o competición (nombre tal cual viene en el feed) y
+// el H1 lo pone la página de servidor, así que aquí se omite la cabecera.
+export default function TicketsPageClient({
+  forcedClub,
+  forcedCompetition,
+}: { forcedClub?: string; forcedCompetition?: string } = {}) {
   const { t } = useLanguage();
-  const comparedCount = useMemo(() => ticketProducts.filter((p) => ticketHasRealComparison(p.offers)).length, []);
+  const isHub = !!(forcedClub || forcedCompetition);
+  const pool = useMemo(
+    () =>
+      ticketProducts.filter(
+        (tk) => (!forcedClub || splitTeams(tk.event).includes(forcedClub)) && (!forcedCompetition || tk.competition === forcedCompetition),
+      ),
+    [forcedClub, forcedCompetition],
+  );
+  const comparedCount = useMemo(() => pool.filter((p) => ticketHasRealComparison(p.offers)).length, [pool]);
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -65,25 +79,25 @@ export default function TicketsPageClient() {
   }
 
   const clubs = useMemo(
-    () => [...new Set(ticketProducts.flatMap((tk) => splitTeams(tk.event)))].filter(Boolean).sort((a, b) => a.localeCompare(b)),
-    [],
+    () => [...new Set(pool.flatMap((tk) => splitTeams(tk.event)))].filter((c) => c && c !== forcedClub).sort((a, b) => a.localeCompare(b)),
+    [pool, forcedClub],
   );
   const leagues = useMemo(
-    () => [...new Set(ticketProducts.map((tk) => tk.competition))].sort((a, b) => a.localeCompare(b)),
-    [],
+    () => [...new Set(pool.map((tk) => tk.competition))].sort((a, b) => a.localeCompare(b)),
+    [pool],
   );
   const cities = useMemo(
-    () => [...new Set(ticketProducts.map((tk) => tk.city).filter((c): c is string => !!c))].sort((a, b) => a.localeCompare(b)),
-    [],
+    () => [...new Set(pool.map((tk) => tk.city).filter((c): c is string => !!c))].sort((a, b) => a.localeCompare(b)),
+    [pool],
   );
   const venues = useMemo(
-    () => [...new Set(ticketProducts.map((tk) => tk.venue))].sort((a, b) => a.localeCompare(b)),
-    [],
+    () => [...new Set(pool.map((tk) => tk.venue))].sort((a, b) => a.localeCompare(b)),
+    [pool],
   );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const base = ticketProducts.filter((tk) => {
+    const base = pool.filter((tk) => {
       if (q && !`${tk.event} ${tk.competition} ${tk.venue} ${tk.city ?? ""}`.toLowerCase().includes(q)) return false;
       if (clubFilter && !splitTeams(tk.event).includes(clubFilter)) return false;
       if (leagueFilter && tk.competition !== leagueFilter) return false;
@@ -97,13 +111,17 @@ export default function TicketsPageClient() {
       const cmp = `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`);
       return sortBy === "dateAsc" ? cmp : -cmp;
     });
-  }, [query, clubFilter, leagueFilter, venueFilter, cityFilter, dateFrom, dateTo, sortBy]);
+  }, [pool, query, clubFilter, leagueFilter, venueFilter, cityFilter, dateFrom, dateTo, sortBy]);
 
   return (
-    <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
-      <BackToCatalogLink />
-      <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{t.tickets.pageTitle}</h1>
-      <p className="mt-1 text-sm text-[#675c44]">{t.tickets.pageSubtitle.replace("{n}", String(ticketProducts.length))}</p>
+    <div className={isHub ? "mb-10" : "mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8"}>
+      {!isHub && (
+        <>
+          <BackToCatalogLink />
+          <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{t.tickets.pageTitle}</h1>
+          <p className="mt-1 text-sm text-[#675c44]">{t.tickets.pageSubtitle.replace("{n}", String(ticketProducts.length))}</p>
+        </>
+      )}
       <p className="mt-1 text-xs text-[#675c44]">
         {comparedCount > 0
           ? t.tickets.partialSourceList.replace("{n}", String(comparedCount))
@@ -240,6 +258,7 @@ export default function TicketsPageClient() {
           </ScrollArrowRow>
         </div>
 
+        {!forcedCompetition && (
         <div className="flex flex-col gap-1.5">
           <span className="text-xs text-[#675c44]">{t.tickets.leagueLabel}:</span>
           <ScrollArrowRow className="-mx-5 gap-2 px-5">
@@ -253,6 +272,7 @@ export default function TicketsPageClient() {
             ))}
           </ScrollArrowRow>
         </div>
+        )}
 
         {/* Fecha: única excepción al formato de chips -- rango real con
             dos <input type="date"> (calendario nativo del navegador/SO

@@ -5,6 +5,28 @@ import { ticketSeller, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import TicketDetailPageClient from "./TicketDetailPageClient";
+import { HubBacklinks } from "@/components/hubs/HubLinkParts";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets, ticketTeams } from "@/lib/extraHubs";
+import { slugify } from "@/lib/gearHubs";
+import { asLocale } from "@/lib/hubPages";
+import { teamName } from "@/lib/hubs";
+import type { HubLocale } from "@/data/teamMeta";
+import type { TicketProduct } from "@/data/tickets";
+
+// Partido -> hubs de sus dos equipos y de su competición (solo los que existen).
+function ticketHubLinks(ticket: TicketProduct, locale: HubLocale) {
+  const x = EXTRA[locale];
+  const out: { href: string; label: string }[] = [];
+  for (const n of ticketTeams(ticket.event)) {
+    const f = ticketTeamFacets().find((t) => t.slug === slugify(n));
+    const k = teamKeyForTicketName(n);
+    if (f) out.push({ href: `/${locale}/tickets/equipo/${f.slug}`, label: x.ticketsOf(k ? teamName(k, locale) : n) });
+  }
+  const c = ticketCompetitionFacets().find((t) => t.name === ticket.competition);
+  if (c) out.push({ href: `/${locale}/tickets/competicion/${c.slug}`, label: x.ticketsOf(c.name) });
+  return out;
+}
 
 const SITE_URL = "https://football-cult.com";
 
@@ -122,6 +144,7 @@ export default async function TicketDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <TicketDetailPageClient ticket={ticket} />
+      <HubBacklinks label={EXTRA[asLocale(locale)].explore} items={ticketHubLinks(ticket, asLocale(locale))} />
     </>
   );
 }

@@ -11,6 +11,10 @@ import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/com
 import HubFaq from "@/components/hubs/HubFaq";
 import { hubFacts } from "@/lib/hubFaq";
 import { botDeepLink } from "@/lib/telegramBot";
+import { retroTeamFacets, ticketTeamSlugForKey } from "@/lib/extraHubs";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { teamCategory } from "@/lib/productMeta";
+import type { TeamKey } from "@/data/products";
 
 // ISR: nada se prerenderiza (no suma storage al deploy) pero cada URL queda
 // cacheada un día en el CDN -- mismo criterio que las fichas de producto
@@ -63,6 +67,9 @@ export default async function TeamHub({ params }: P) {
         .slice(0, 24)
     : [];
 
+  const hasRetroHub = retroTeamFacets().some((f) => f.team === team);
+  const ticketSlug = ticketTeamSlugForKey(team);
+
   const trail = [
     ...(league && countryKey ? [{ label: teamName(countryKey, locale), href: `/${locale}/pais/${countryKey}` }, { label: leagueName(league, locale), href: `/${locale}/liga/${league.slug}` }] : []),
     { label: name },
@@ -109,6 +116,20 @@ export default async function TeamHub({ params }: P) {
           {s.telegramFollow}
         </a>
       </p>
+      {(hasRetroHub || ticketSlug) && (
+        <p className="-mt-5 mb-8 flex flex-wrap gap-4 text-sm">
+          {hasRetroHub && (
+            <a className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/retro/${team}`}>
+              {EXTRA[locale].retroTeamH1(name, teamCategory[team as TeamKey] === "national")} →
+            </a>
+          )}
+          {ticketSlug && (
+            <a className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/tickets/equipo/${ticketSlug}`}>
+              {EXTRA[locale].ticketsOf(name)} →
+            </a>
+          )}
+        </p>
+      )}
       {seasons.map(({ season, list }) => (
         <section key={season} id={`s-${seasonSlug(season)}`} className="mb-10 scroll-mt-24">
           <h2 className="font-vintage mb-4 text-xl text-[#1B3B2B] sm:text-2xl">
