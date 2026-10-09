@@ -28,6 +28,7 @@ assert.equal(offerShipsTo("NikeAR", "ES"), false);
 assert.equal(offerShipsTo("NikeAR", "AR"), true);
 assert.equal(offerShipsTo("ClovisCalcadosBR", "ES"), false);
 assert.equal(offerShipsTo("eBay ES", "AR"), true); // eBay: envío real en vivo
+assert.equal(offerShipsTo("Futbol Emotion", "IT"), true); // envía a todo el mundo
 
 // "≈" en la moneda del visitante; nada si ya está en ella; EUR si no la soportamos.
 const approx = (...a: Parameters<typeof approxPriceLabel>) => approxPriceLabel(...a)?.replace(/\s/g, " ") ?? null;
