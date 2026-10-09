@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { brandNames, findProduct, teamNames, kitTypeName } from "@/data/products";
 import { productImage } from "@/lib/productPhoto";
+import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 
 export const alt = "Football Cult Archive";
 export const size = { width: 1200, height: 630 };
@@ -45,7 +46,8 @@ export default async function Image({
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const { id } = await params;
+  const { id, locale: rawLocale } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const product = findProduct(id);
 
   if (!product) {
@@ -70,8 +72,8 @@ export default async function Image({
     );
   }
 
-  const team = teamNames[product.teamKey].es;
-  const type = kitTypeName(product, "es");
+  const team = teamNames[product.teamKey][locale];
+  const type = kitTypeName(product, locale);
   const brand = product.brand ? brandNames[product.brand] : null;
   const photo = productImage(product);
   const titleText = `${team} ${type}`;

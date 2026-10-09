@@ -10,11 +10,11 @@ import { leagueOfTeam } from "@/data/teamMeta";
 //    cambios), siguiendo EXACTAMENTE las mismas ofertas de cada fila.
 //
 // Cómo se mide la serie, para que sea defendible:
-//  - Panel fijo: las filas cuyas ofertas tienen todas precio registrado en la
-//    fecha base. Así el índice no cambia porque entren o salgan camisetas,
-//    solo porque cambian precios.
+//  - Panel fijo: las filas con precio registrado en la fecha base, cada una
+//    con las ofertas que ya tenía ese día. Así el índice no cambia porque
+//    entren o salgan camisetas u ofertas, solo porque cambian precios.
 //  - Fecha base = la primera en que >= 80% de las filas del estudio tienen
-//    todas sus ofertas registradas. No se inventan datos anteriores.
+//    alguna oferta registrada. No se inventan datos anteriores.
 //  - Para cada fila, el precio del día = el más bajo entre sus ofertas
 //    (sin envío: el archivo guarda el precio de lista, el envío se asume
 //    constante). Índice(d) = mediana de precio(d)/precio(base) * 100.
@@ -131,16 +131,25 @@ export function priceIndex(a: Archive = archive()): PriceIndex {
   if (a.firstDate && a.lastDate && rows.length) {
     const first = dayNum(a.firstDate);
     const last = dayNum(a.lastDate);
-    // Fecha base: la primera con cobertura suficiente del panel.
+    // Fecha base: la primera en que >= 80% de las filas tienen AL MENOS una
+    // oferta con precio. Hasta el 2026-10-09 se exigían TODAS: cada oferta
+    // nueva de una fila (Futbol Emotion entró el 2026-10-08 en 51 filas)
+    // corría la base a su primer día y el índice decía "2 días de historia"
+    // con 22 días de archivo detrás (los mismos que cita la ficha, "mínimo
+    // registrado en 22 días"). Ahora cada fila sigue solo las ofertas que ya
+    // tenían precio en la base: una oferta que entra después no mueve el
+    // índice ni acorta la serie. Comprobación: scripts/check_data_pages.mts.
+    const knownOn = (s: ArchivePoint[][], date: string) => s.filter((arr) => arr.length && arr[0].d <= date);
     let base: string | null = null;
     for (let d = first; d <= last && !base; d++) {
       const date = dateOf(d);
-      const covered = per.filter((x) => lowOn(x.s, date) !== null).length;
+      const covered = per.filter((x) => lowOn(knownOn(x.s, date), date) !== null).length;
       if (covered / rows.length >= MIN_COVERAGE) base = date;
     }
     if (base) {
       const panel = per
-        .map((x) => ({ id: x.r.id, s: x.s, base: lowOn(x.s, base!) }))
+        .map((x) => ({ id: x.r.id, s: knownOn(x.s, base!) }))
+        .map((x) => ({ ...x, base: lowOn(x.s, base!) }))
         .filter((x): x is { id: string; s: ArchivePoint[][]; base: number } => x.base !== null);
       const points: IndexPoint[] = [];
       for (let d = dayNum(base); d <= last; d++) {

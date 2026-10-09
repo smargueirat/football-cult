@@ -6,6 +6,9 @@
 import { titleCode, productCode } from "../src/lib/offerGtin";
 import { gearMpn } from "../src/lib/seoMeta";
 import { priceStudy } from "../src/lib/priceStudy";
+import { priceIndex } from "../src/lib/priceIndex";
+import { offerPriceStats } from "../src/lib/priceArchive";
+import { GET as csvGET } from "../src/app/[locale]/estudios/precios-camisetas/datos.csv/route";
 import { LOW_MIN_DAYS, archiveDates, historicLowRows, verifiedDropRows, weeklyRows } from "../src/lib/dealsData";
 import { guideQa } from "../src/components/GuideData";
 import { GUIDE_SLUGS } from "../src/lib/guides";
@@ -57,6 +60,31 @@ ok(st.products > 0 && winsSum === st.products, `estudio: victorias ${winsSum} !=
 ok(st.storeRanking.length === st.stores, `estudio: ${st.storeRanking.length} filas de tiendas, la cabecera dice ${st.stores}`);
 for (const r of st.storeRanking) ok(r.wins <= r.appearances && r.appearances > 0, `estudio: ${r.store} ${r.wins}/${r.appearances}`);
 ok(st.rows.every((r) => r.low <= r.high && r.gapPct >= 0), "estudio: fila con low > high");
+// CSV del estudio: público y versión en cada fila, para que la de niño y la
+// de adulto del mismo equipo no parezcan dos precios de la misma camiseta.
+{
+  const res = await csvGET(new Request("http://x"), { params: Promise.resolve({ locale: "es" }) });
+  const lines = (await res.text()).replace(/^﻿/, "").trim().split("\n");
+  const head = lines[0].split(",");
+  const [ia, iv] = [head.indexOf("publico"), head.indexOf("version")];
+  ok(ia > 0 && iv > 0 && lines.length === st.rows.length + 1, `csv estudio: cabecera ${lines[0]}`);
+  const vals = lines.slice(1).map((l) => l.split(","));
+  ok(vals.every((v) => ["adulto", "niño", "mujer"].includes(v[ia]) && ["jugador", "aficionado"].includes(v[iv])), "csv estudio: público/versión fuera de lista");
+  const count = (i: number) => JSON.stringify(Object.fromEntries([...new Set(vals.map((v) => v[i]))].map((k) => [k, vals.filter((v) => v[i] === k).length])));
+  console.log(`csv estudio: ${vals.length} filas, público ${count(ia)}, versión ${count(iv)}`);
+}
+
+// Índice de precios: la serie cubre el archivo real, no se acorta porque una
+// fila sume una oferta nueva. La ficha cita "mínimo registrado en N días"
+// con la cobertura de cada oferta (offerPriceStats); el índice no puede
+// decir menos días que la cobertura habitual de sus propias ofertas.
+{
+  const ix = priceIndex();
+  const cov = st.rows.flatMap((r) => r.urls.map((u) => offerPriceStats(u, undefined, 0)?.coverageDays ?? 0)).sort((a, b) => a - b);
+  const med = cov[Math.floor(cov.length / 2)];
+  ok(!!ix.series && ix.series.days >= med, `índice: ${ix.series?.days ?? 0} días de serie, las ofertas tienen ${med} de mediana`);
+  console.log(`índice: base ${ix.series?.baseDate}, ${ix.series?.days} días, panel ${ix.series?.panel}/${ix.sample}; cobertura mediana de sus ofertas ${med} días`);
+}
 console.log(`estudio: ${st.products} camisetas, ${st.stores} tiendas, media ${st.avgGapPct.toFixed(1)} %, ganadoras: ${st.storeRanking.map((r) => `${r.store} ${r.wins}/${r.appearances}`).join(", ")}`);
 
 const bad = /NaN|undefined|Infinity/;
