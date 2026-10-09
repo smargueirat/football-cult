@@ -50,7 +50,7 @@ in <out_dir>) accumulate picks the same way ebay_mine_full.py's own
 resume support does -- safe to call this repeatedly against the same
 out_dir within one day if a run gets interrupted.
 """
-import json, os, sys
+import json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract import TEAM_PATTERNS
@@ -59,6 +59,22 @@ from ebay_mine import EbayClient
 from manual_exclusions import is_manually_excluded
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# eBay Reino Unido (EBAY_GB), agregado 2026-10-09: SOLO temporada actual y
+# SOLO clubes británicos. Por qué: Brighton tenía 1 ficha (2013/14) y ninguna
+# camiseta actual, Burnley 0 de 25/26. Ningún feed los trae (son Nike/Castore,
+# las tiendas Awin no los venden) y en eBay EE.UU./IT/ES casi no hay anuncios
+# nuevos; en eBay UK sí ("Nike Brighton & Hove Albion 2025/26 Away Shirt",
+# "BNWT Burnley FC Home Shirt 2025/26"). Ni niños ni retro: lo retro de GB ya
+# lo cubre ebay_gb_retro.py, y la cuota de la Browse API es compartida.
+GB_LEAGUES = {"premier-league", "efl", "scottish-premiership"}
+
+
+def gb_teams():
+    tm = open(os.path.join(SCRIPT_DIR, "..", "..", "src", "data", "teamMeta.ts"), encoding="utf-8").read()
+    tm = tm[tm.index("TEAM_LEAGUE"):]
+    league = dict(re.findall(r'^  "?([a-z0-9]+)"?: "([a-z0-9-]+)",$', tm[:tm.index("\n};")], re.M))
+    return {t for t, lg in league.items() if lg in GB_LEAGUES}
 
 DEFAULT_BATCH_SIZE = 60
 MAX_CONSECUTIVE_RATE_LIMITED = 3
@@ -97,7 +113,11 @@ def drop_excluded(picks):
 
 def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE, marketplace_id="EBAY_US"):
     state = load_state(marketplace_id)
+    current_only = marketplace_id == "EBAY_GB"
     all_teams = list(TEAM_PATTERNS.keys())
+    if current_only:
+        uk = gb_teams()
+        all_teams = [t for t in all_teams if t in uk]
     done = set(state["done_teams"])
     pending = [t for t in all_teams if t not in done]
 
@@ -147,15 +167,16 @@ def mine_batch(out_dir, batch_size=DEFAULT_BATCH_SIZE, marketplace_id="EBAY_US")
         for k, v in found.items():
             print(f"[current] {k}: {v['title'][:65]} ${v['price']}")
 
-        found = emf.mine_kids(client, team_key, en, teams_re, types_re)
-        picks["kids"].update(found)
-        for k, v in found.items():
-            print(f"[kids] {k}: {v['title'][:65]} ${v['price']}")
+        if not current_only:
+            found = emf.mine_kids(client, team_key, en, teams_re, types_re)
+            picks["kids"].update(found)
+            for k, v in found.items():
+                print(f"[kids] {k}: {v['title'][:65]} ${v['price']}")
 
-        found = emf.mine_retro(client, team_key, en, teams_re, types_re)
-        picks["retro"].update(found)
-        for k, v in found.items():
-            print(f"[retro] {k}: {v['title'][:65]} ${v['price']}")
+            found = emf.mine_retro(client, team_key, en, teams_re, types_re)
+            picks["retro"].update(found)
+            for k, v in found.items():
+                print(f"[retro] {k}: {v['title'][:65]} ${v['price']}")
 
         for k, p in paths.items():
             emf.save(picks[k], p)
