@@ -167,7 +167,10 @@ def write_product_aliases(new, why, today):
 
 def retire_sold_out_jerseys():
     today = datetime.date.today()
-    if subprocess.run(["git", "-C", REPO, "diff", "--quiet", "--", "src/data/products.ts"]).returncode:
+    # SOLD_OUT_ALLOW_DIRTY=1: lo usa scripts/fixes/tanda3_catalogo.sh, que corre
+    # esto después de otros pasos que ya tocaron products.ts.
+    if not os.environ.get("SOLD_OUT_ALLOW_DIRTY") and \
+            subprocess.run(["git", "-C", REPO, "diff", "--quiet", "--", "src/data/products.ts"]).returncode:
         return "camisetas: products.ts tiene cambios sin commitear, no se retira nada hoy"
     head, blocks, tail = jersey_blocks(open(PRODUCTS, encoding="utf-8").read())
     sold = sold_out_ids(blocks)

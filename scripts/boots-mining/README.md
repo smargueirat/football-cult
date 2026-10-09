@@ -15,6 +15,17 @@ viven aparte, en `legacyBootProducts` dentro de `boots.ts`, y este
 pipeline nunca los toca. Lo mismo para `browserMinedBootProducts`
 (Nike CL, Nike AR, Puma AR) -- ver la sección dedicada más abajo.
 
+## Forum Sport (2026-10-09)
+
+`mine_forumsport()`: hasta esta fecha solo estaban las 49 botas cruzadas a mano
+en los legacy. Lee `product_type` ("fútbol > botas de futbol [niño] <terreno>",
+"fútbol > botas fútbol sala [niño]"), un colorway por `parent_product_id`. El
+terreno sale del código del nombre (la categoría de Forum Sport no es fiable) y
+la categoría solo si el nombre no trae ninguno. Funde con las otras tiendas por
+EAN (`product_GTIN`); el `mpn` solo cuenta si es estilo-color de adidas
+("JQ0399"): el de Nike/Puma es el estilo sin color. Omite las ya cruzadas en
+los legacy (por el `p=` de su enlace). Primera corrida: 5.540 -> 6.068 fichas.
+
 ## Botas de niño y de fútbol sala (2026-10-09)
 
 Hasta esta fecha se excluían; ahora entran marcadas (`classify()` / `tag()` en
