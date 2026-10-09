@@ -72,6 +72,8 @@ def ts_entry(e, indent=2):
     lines.append(f"{pad}  brand: {ts_string(e['brand'])},")
     lines.append(f"{pad}  model: {ts_string(e['model'])},")
     lines.append(f"{pad}  groundType: {ts_string(e['groundType'])},")
+    if e.get('ageGroup'):
+        lines.append(f"{pad}  ageGroup: {ts_string(e['ageGroup'])},")
     lines.append(f"{pad}  offers: [")
     for o in e['offers']:
         lines.append(f"{pad}    {{")
@@ -148,6 +150,28 @@ def split_boots_ts():
     return prefix
 
 
+AGE_FIELD = '  ageGroup?: "kids";\n'
+
+
+def ensure_age_field(prefix):
+    """El header de boots.ts (que este script nunca reescribe) tiene que
+    declarar `ageGroup` en BootProduct antes de que se escriba la primera
+    bota de niño, o el build falla con "Object literal may only specify
+    known properties". Se agrega solo si falta: idempotente."""
+    if AGE_FIELD in prefix:
+        return prefix
+    anchor = "  groundType: string;\n  offers: BootOffer[];\n}"
+    if anchor not in prefix:
+        raise SystemExit("No encuentro la interfaz BootProduct en el header de boots.ts para declarar ageGroup.")
+    return prefix.replace(
+        anchor,
+        '  groundType: string;\n'
+        '  // Botas de niño (2026-10-09, ver mine_boots.py): ausente = adulto.\n'
+        + AGE_FIELD + "  offers: BootOffer[];\n}",
+        1,
+    )
+
+
 def existing_legacy_ids(prefix):
     return set(re.findall(r'id: "([^"]+)"', prefix))
 
@@ -204,7 +228,7 @@ def merge_mirror_offers(mined):
     order, groups = [], {}
     for d in mined:
         ik = _image_key(d.get("imageUrl"))
-        key = (d["brand"].lower(), d["model"].lower(), d["groundType"], ik) if ik else ("solo", len(order))
+        key = (d["brand"].lower(), d["model"].lower(), d["groundType"], d.get("ageGroup"), ik) if ik else ("solo", len(order))
         # una tienda no puede aportar dos ofertas al mismo producto (la
         # UI las identifica por tienda) -- si ya está, queda aparte.
         if key in groups and any(x["store"] == d["store"] for x in groups[key]):
@@ -241,7 +265,10 @@ def merge_by_code(groups):
     for g in groups:
         codes = set().union(*(_codes(d) for d in g))
         stores = {d["store"] for d in g}
+        # niño con adulto nunca (tallas distintas), aunque un código coincida
+        age = g[0].get("ageGroup")
         target = next((by_code[c] for c in codes if c in by_code
+                       and out[by_code[c]][0].get("ageGroup") == age
                        and not stores & {d["store"] for d in out[by_code[c]]}), None)
         if target is None:
             target = len(out)
@@ -267,7 +294,11 @@ def build_entries(mined, used_ids):
     )
     def base_of(g):
         d = g[0]
-        return slugify(f"{d['store']}-{d['brand']}-{d['model']}-{d['groundType']}")
+        # "-ninos" en las de niño: adidas ES titula igual la de niño y la de
+        # adulto, y sin el sufijo su id competiría con el de la adulta
+        # (que pasaría a "-<estilo>" y perdería su URL).
+        kids = "-ninos" if d.get("ageGroup") == "kids" else ""
+        return slugify(f"{d['store']}-{d['brand']}-{d['model']}-{d['groundType']}") + kids
 
     base_count = {}
     for g in groups:
@@ -292,6 +323,7 @@ def build_entries(mined, used_ids):
             "brand": d["brand"],
             "model": d["model"],
             "groundType": d["groundType"],
+            **({"ageGroup": d["ageGroup"]} if d.get("ageGroup") else {}),
             "offers": [{
                 "store": g["store"],
                 "price": g["price"],
@@ -535,7 +567,7 @@ def main():
     run_mine_boots()
     mined = json.load(open(MINED_JSON_PATH, encoding="utf-8"))
 
-    prefix = split_boots_ts()
+    prefix = ensure_age_field(split_boots_ts())
     # Los 71 legacy no se reconstruyen: se les re-aplican tallas/precio/stock
     # de los feeds de hoy y se sacan las ofertas agotadas (ver legacy_stock.py).
     from legacy_stock import refresh_legacy

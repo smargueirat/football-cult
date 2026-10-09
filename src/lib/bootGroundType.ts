@@ -13,9 +13,13 @@
 // el código base (bootMatchesGroundType hace match por segmento
 // separado por "/", más un prefijo "AG-" para "AG-PRO"), evitar
 // fragmentar el filtro por un puñado de productos.
-export type BootGroundType = "FG" | "AG" | "SG" | "TF" | "MG";
+//
+// "IC" (2026-10-09): fútbol sala / indoor. Hasta entonces el minado lo
+// excluía; ahora entra con ese código (ver classify() en
+// scripts/boots-mining/mine_boots.py) y tiene su propio chip.
+export type BootGroundType = "FG" | "AG" | "SG" | "TF" | "MG" | "IC";
 
-export const BOOT_GROUND_TYPE_ORDER: BootGroundType[] = ["FG", "AG", "SG", "TF", "MG"];
+export const BOOT_GROUND_TYPE_ORDER: BootGroundType[] = ["FG", "AG", "SG", "TF", "MG", "IC"];
 
 // SOLO fallback / referencia (y para scripts sin contexto de idioma). La
 // UI debe usar t.botas.grounds[code] -- esto estaba hardcodeado en español
@@ -45,6 +49,10 @@ export const BOOT_GROUND_TYPE_INFO: Record<BootGroundType, { label: string; desc
     label: "MG · Múltiple",
     description:
       "Multi-Ground (Terreno Múltiple): híbrido de césped natural duro y césped artificial.",
+  },
+  IC: {
+    label: "IC · Sala",
+    description: "Indoor Court (Fútbol Sala): pista cubierta de parqué o sintético liso; suela plana de goma.",
   },
 };
 

@@ -22,6 +22,7 @@ import {
 import {
   AGE_GROUP_FILTERS,
   BOOT_SIZES,
+  BOOT_KIDS_SIZES,
   BRAND_FILTERS,
   QUICK_PICK_TEAMS,
   TYPE_FILTERS,
@@ -71,6 +72,8 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
     bootGroundTypeFilter,
     toggleBootGroundTypeFilter,
     setBootGroundTypeFilter,
+    bootKidsFilter,
+    setBootKidsFilter,
     priceRange,
     setPriceRange,
     activeFilterCount,
@@ -260,6 +263,25 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
           {sectionFilter !== "jerseys" && (
             <>
               <div className="flex flex-col gap-1.5">
+                <p className="text-xs text-[#9a9a94]">{t.search.ageGroupLabel}</p>
+                <ScrollArrowRow className="gap-1.5">
+                  <Chip active={!bootKidsFilter} onClick={() => setBootKidsFilter(false)} className="flex-shrink-0 whitespace-nowrap">
+                    {t.botas.ageAdult}
+                  </Chip>
+                  <Chip
+                    active={bootKidsFilter}
+                    onClick={() => {
+                      setBootKidsFilter(true);
+                      setBootSizeFilter([]);
+                    }}
+                    className="flex-shrink-0 whitespace-nowrap"
+                  >
+                    {t.search.ageGroupKids}
+                  </Chip>
+                </ScrollArrowRow>
+              </div>
+
+              <div className="flex flex-col gap-1.5">
                 <p className="text-xs text-[#9a9a94]">{t.search.bootSizeLabel}</p>
                 <ScrollArrowRow className="gap-1.5">
                   <Chip
@@ -269,7 +291,7 @@ export default function FloatingFilterButtonContent({ seasons }: { seasons: stri
                   >
                     {t.search.allCategories}
                   </Chip>
-                  {BOOT_SIZES.map((size) => (
+                  {(bootKidsFilter ? BOOT_KIDS_SIZES : BOOT_SIZES).map((size) => (
                     <Chip
                       key={size}
                       active={bootSizeFilter.includes(size)}

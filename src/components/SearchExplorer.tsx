@@ -34,12 +34,14 @@ import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
   BOOT_SIZES,
+  BOOT_KIDS_SIZES,
   BRAND_FILTERS,
   QUICK_PICK_TEAMS,
   TYPE_FILTERS,
 } from "@/lib/search/filterOptions";
 import { BOOT_TIER_ORDER, bootTierInfo } from "@/lib/bootTier";
-import { BOOT_GROUND_TYPE_ORDER, bootMatchesGroundType } from "@/lib/bootGroundType";
+import { BOOT_GROUND_TYPE_ORDER, BootGroundType, bootMatchesGroundType } from "@/lib/bootGroundType";
+import { bootLinesOf, isKidsBoot } from "@/lib/bootLines";
 import ScrollArrowRow from "./ScrollArrowRow";
 import SectionIcon from "./SectionIcon";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -85,7 +87,7 @@ function normalizeSearchText(text: string): string {
 }
 
 
-interface SearchExplorerProps {
+export interface SearchExplorerProps {
   // Fuerzan una sección (usado por las páginas de categoría dedicadas:
   // /clubes, /selecciones, /retro, /mujer, /ninos) evaluándose ya en el
   // primer render -- no dependen de un efecto post-hidratación, así el
@@ -95,6 +97,15 @@ interface SearchExplorerProps {
   forcedType?: TypeKey;
   forcedAgeGroup?: AgeGroup;
   forcedSection?: SectionKey;
+  // Hubs (2026-10-09): recortan el catálogo de base y dejan el resto de
+  // filtros y el orden funcionando encima. Botas: línea (/botas/linea/x),
+  // niño (/botas/ninos) y sala (/botas/futbol-sala). Camisetas: equipo y
+  // década (/retro/[equipo], /retro/decada/[d]).
+  forcedBootLine?: string;
+  forcedBootKids?: boolean;
+  forcedBootGround?: BootGroundType;
+  forcedTeam?: TeamKey;
+  forcedDecade?: number;
 }
 
 export default function SearchExplorer({
@@ -102,6 +113,11 @@ export default function SearchExplorer({
   forcedType,
   forcedAgeGroup,
   forcedSection,
+  forcedBootLine,
+  forcedBootKids,
+  forcedBootGround,
+  forcedTeam,
+  forcedDecade,
 }: SearchExplorerProps = {}) {
   const { locale, t } = useLanguage();
   const {
@@ -137,6 +153,8 @@ export default function SearchExplorer({
     bootGroundTypeFilter,
     toggleBootGroundTypeFilter,
     setBootGroundTypeFilter,
+    bootKidsFilter,
+    setBootKidsFilter,
     sectionFilter,
     setSectionFilter,
     priceRange,
@@ -234,6 +252,11 @@ export default function SearchExplorer({
   const effectiveCategoryFilter = forcedCategory ? [forcedCategory] : categoryFilter;
   const effectiveAgeGroupFilter = forcedAgeGroup ? [forcedAgeGroup] : ageGroupFilter;
   const effectiveSection: SectionKey = forcedSection ?? sectionFilter;
+  const effectiveBootKids = forcedBootKids ?? bootKidsFilter;
+  const effectiveBootGrounds = useMemo(
+    () => (forcedBootGround ? [forcedBootGround] : bootGroundTypeFilter),
+    [forcedBootGround, bootGroundTypeFilter],
+  );
 
   const results = useMemo(() => {
     const queryWords = normalizeSearchText(deferredQuery.trim())
@@ -290,6 +313,9 @@ export default function SearchExplorer({
         });
       const matchesCategory =
         effectiveCategoryFilter.length === 0 || effectiveCategoryFilter.includes(teamCategory[p.teamKey]);
+      const matchesForced =
+        (!forcedTeam || p.teamKey === forcedTeam) &&
+        (!forcedDecade || Math.floor(seasonSortValue(p.season) / 10) * 10 === forcedDecade);
       const matchesSeason = seasonFilter.length === 0 || seasonFilter.includes(p.season);
       const matchesAgeGroup =
         effectiveAgeGroupFilter.length === 0 || effectiveAgeGroupFilter.includes(getAgeGroup(p));
@@ -315,6 +341,7 @@ export default function SearchExplorer({
         matchesQuery &&
         matchesType &&
         matchesCategory &&
+        matchesForced &&
         matchesSeason &&
         matchesAgeGroup &&
         matchesBrand &&
@@ -376,6 +403,8 @@ export default function SearchExplorer({
     locale,
     effectiveTypeFilter,
     effectiveCategoryFilter,
+    forcedTeam,
+    forcedDecade,
     seasonFilter,
     effectiveAgeGroupFilter,
     brandFilter,
@@ -409,6 +438,10 @@ export default function SearchExplorer({
     if (effectiveSection === "jerseys") return [];
     const queryWords = normalizeSearchText(deferredQuery.trim()).split(/\s+/).filter(Boolean);
     const filtered = bootProducts.filter((b) => {
+      // Niño o adulto, nunca mezclados: otras tallas, y "más baratas
+      // primero" abría con botas de niño a 20 EUR.
+      if (isKidsBoot(b) !== effectiveBootKids) return false;
+      if (forcedBootLine && !bootLinesOf(b).includes(forcedBootLine)) return false;
       const matchesQuery =
         queryWords.length === 0 ||
         queryWords.every((w) => normalizeSearchText(`${b.brand} ${b.model}`).includes(w));
@@ -428,8 +461,8 @@ export default function SearchExplorer({
         return info !== null && bootTierFilter.includes(info.tier);
       })();
       const matchesGroundType =
-        bootGroundTypeFilter.length === 0 ||
-        bootGroundTypeFilter.some((code) =>
+        effectiveBootGrounds.length === 0 ||
+        effectiveBootGrounds.some((code) =>
           bootMatchesGroundType(b.groundType, code as (typeof BOOT_GROUND_TYPE_ORDER)[number])
         );
       const matchesPriceRange = (() => {
@@ -492,7 +525,9 @@ export default function SearchExplorer({
     bootSizeFilter,
     colorFilter,
     bootTierFilter,
-    bootGroundTypeFilter,
+    effectiveBootGrounds,
+    effectiveBootKids,
+    forcedBootLine,
     priceRange,
     onSaleFilter,
     sortBy,
@@ -532,7 +567,7 @@ export default function SearchExplorer({
       effectiveAgeGroupFilter.length > 0 ||
       sizeFilter.length > 0;
     const bootOnlyActive =
-      bootSizeFilter.length > 0 || bootTierFilter.length > 0 || bootGroundTypeFilter.length > 0;
+      bootSizeFilter.length > 0 || bootTierFilter.length > 0 || bootGroundTypeFilter.length > 0 || bootKidsFilter;
     if (jerseyOnlyActive) return jerseyItems;
     if (bootOnlyActive) return bootItems;
 
@@ -564,6 +599,7 @@ export default function SearchExplorer({
     bootSizeFilter,
     bootTierFilter,
     bootGroundTypeFilter,
+    bootKidsFilter,
   ]);
 
   // Cuando el usuario cambia de verdad los filtros/orden/búsqueda mientras
@@ -583,7 +619,7 @@ export default function SearchExplorer({
     }
     setVisibleCount(CATALOG_PAGE_SIZE);
     sessionStorage.removeItem(SCROLL_KEY);
-  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, bootGroundTypeFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
+  }, [query, typeFilter, categoryFilter, seasonFilter, ageGroupFilter, brandFilter, sizeFilter, bootSizeFilter, colorFilter, bootTierFilter, bootGroundTypeFilter, bootKidsFilter, sectionFilter, priceRange, onSaleFilter, countryCode, sortBy]);
 
   // Restaura la posición de scroll al volver de una camiseta -- Next.js
   // solo restaura scroll nativamente en navegación "atrás" del navegador,
@@ -946,6 +982,7 @@ export default function SearchExplorer({
                   exclusivos de botas. */}
               {effectiveSection !== "boots" && (
                 <>
+                  {!forcedTeam && (
                   <div className="flex flex-col gap-1.5">
                     <span className="text-xs text-[#675c44]">{t.search.quickSelectLabel}:</span>
                     <ScrollArrowRow className="-mx-5 gap-2 px-5">
@@ -969,6 +1006,7 @@ export default function SearchExplorer({
                       })}
                     </ScrollArrowRow>
                   </div>
+                  )}
 
                   <div className="flex flex-col gap-1.5">
                     <Chip
@@ -1075,6 +1113,27 @@ export default function SearchExplorer({
                   no solo cuando se aisla la sección Botas. */}
               {effectiveSection !== "jerseys" && (
                 <>
+                  {forcedBootKids === undefined && (
+                    <div className="flex flex-col gap-1.5">
+                      <span className="text-xs text-[#675c44]">{t.search.ageGroupLabel}:</span>
+                      <ScrollArrowRow className="-mx-5 gap-2 px-5">
+                        <Chip active={!bootKidsFilter} onClick={() => setBootKidsFilter(false)} className="flex-shrink-0 whitespace-nowrap">
+                          {t.botas.ageAdult}
+                        </Chip>
+                        <Chip
+                          active={bootKidsFilter}
+                          onClick={() => {
+                            setBootKidsFilter(true);
+                            setBootSizeFilter([]);
+                          }}
+                          className="flex-shrink-0 whitespace-nowrap"
+                        >
+                          {t.search.ageGroupKids}
+                        </Chip>
+                      </ScrollArrowRow>
+                    </div>
+                  )}
+
                   <div className="flex flex-col gap-1.5">
                     <span className="text-xs text-[#675c44]">{t.search.bootSizeLabel}:</span>
                     <ScrollArrowRow className="-mx-5 gap-2 px-5">
@@ -1085,7 +1144,7 @@ export default function SearchExplorer({
                       >
                         {t.search.allCategories}
                       </Chip>
-                      {BOOT_SIZES.map((size) => (
+                      {(effectiveBootKids ? BOOT_KIDS_SIZES : BOOT_SIZES).map((size) => (
                         <Chip
                           key={size}
                           active={bootSizeFilter.includes(size)}
@@ -1121,6 +1180,7 @@ export default function SearchExplorer({
                     </ScrollArrowRow>
                   </div>
 
+                  {!forcedBootGround && (
                   <div className="flex flex-col gap-1.5">
                     <span className="text-xs text-[#675c44]">{t.search.bootGroundTypeLabel}:</span>
                     <ScrollArrowRow className="-mx-5 gap-2 px-5">
@@ -1144,6 +1204,7 @@ export default function SearchExplorer({
                       ))}
                     </ScrollArrowRow>
                   </div>
+                  )}
                 </>
               )}
 

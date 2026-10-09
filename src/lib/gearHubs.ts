@@ -36,6 +36,8 @@ export interface GearItem {
    *  ficha, solo entre minoristas comparables (ver officialStores.ts). */
   spread?: { abs: number; pct: number; cheapStore: string; dearStore: string };
   ground?: string; // botas
+  /** Bota de niño (ver src/lib/bootLines.ts). */
+  kids?: boolean;
   type?: string; // ropa / entrenamiento
 }
 
@@ -61,6 +63,7 @@ interface Raw {
   model: string;
   offers: RawOffer[];
   groundType?: string;
+  ageGroup?: string;
   type?: string;
 }
 
@@ -122,13 +125,23 @@ function build(section: GearSection, raws: Raw[]): GearItem[] {
       bestStore: best.store,
       spread: spreadOf(r.offers),
       ground: r.groundType || undefined,
+      ...(r.ageGroup === "kids" ? { kids: true } : {}),
       type: r.type,
     });
   }
   return out;
 }
 
+// Las botas de niño (2026-10-09) tienen su propio hub (/botas/ninos): los de
+// marca/terreno/línea son de adulto, como el listado por defecto de /botas.
+// Sin esto "los más baratos" de cada hub abría con botas de niño a 20 EUR.
+const adultCache: Partial<Record<GearSection, GearItem[]>> = {};
 export function gearItems(section: GearSection): GearItem[] {
+  return (adultCache[section] ??= allGearItems(section).filter((i) => !i.kids));
+}
+export const kidsBootItems = () => allGearItems("botas").filter((i) => i.kids);
+
+function allGearItems(section: GearSection): GearItem[] {
   const hit = cache[section];
   if (hit) return hit;
   const raws: Raw[] =

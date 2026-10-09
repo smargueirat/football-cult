@@ -449,7 +449,9 @@ export interface Translations {
     tiers: { "1+": string; "1": string; "2": string; "3": string; "4": string };
     // Etiquetas + tooltip del filtro Tipo de suela. Mismo problema que
     // tiers: BOOT_GROUND_TYPE_INFO estaba hardcodeado en español.
-    grounds: Record<"FG" | "AG" | "SG" | "TF" | "MG", { label: string; description: string }>;
+    grounds: Record<"FG" | "AG" | "SG" | "TF" | "MG" | "IC", { label: string; description: string }>;
+    // Chip "Adulto" del filtro Edad de botas (el de niño reusa search.ageGroupKids).
+    ageAdult: string;
   };
   guantes: {
     navLabel: string;
@@ -1013,7 +1015,8 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Camisetas",
       sectionBoots: "Botas",
       tiers: { "1+": "Tier 1+ (Súper Élite)", "1": "Tier 1 (Élite)", "2": "Tier 2 (Semipro)", "3": "Tier 3 (Amateur)", "4": "Tier 4 (Iniciación)" },
-      grounds: { FG: { label: "FG · Firme", description: "Firm Ground (Terreno Firme): césped natural seco o ligeramente húmedo y compacto." }, AG: { label: "AG · Sintético", description: "Artificial Grass (Césped Sintético): césped artificial moderno (3G/4G)." }, SG: { label: "SG · Blando", description: "Soft Ground (Terreno Blando): césped natural muy mojado, embarrado o con barro abundante." }, TF: { label: "TF · Turf/Moqueta", description: "Turf / Moqueta: moqueta sintética, cemento pulido o campos de tierra dura." }, MG: { label: "MG · Múltiple", description: "Multi-Ground (Terreno Múltiple): híbrido de césped natural duro y césped artificial." } },
+      grounds: { FG: { label: "FG · Firme", description: "Firm Ground (Terreno Firme): césped natural seco o ligeramente húmedo y compacto." }, AG: { label: "AG · Sintético", description: "Artificial Grass (Césped Sintético): césped artificial moderno (3G/4G)." }, SG: { label: "SG · Blando", description: "Soft Ground (Terreno Blando): césped natural muy mojado, embarrado o con barro abundante." }, TF: { label: "TF · Turf/Moqueta", description: "Turf / Moqueta: moqueta sintética, cemento pulido o campos de tierra dura." }, MG: { label: "MG · Múltiple", description: "Multi-Ground (Terreno Múltiple): híbrido de césped natural duro y césped artificial." }, IC: { label: "IC · Sala", description: "Indoor Court (Fútbol Sala): pista cubierta de parqué o sintético liso; suela plana de goma." } },
+      ageAdult: "Adulto",
     },
     guantes: {
       navLabel: "Guantes",
@@ -1574,7 +1577,8 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Camisas",
       sectionBoots: "Chuteiras",
       tiers: { "1+": "Tier 1+ (Super Elite)", "1": "Tier 1 (Elite)", "2": "Tier 2 (Semipro)", "3": "Tier 3 (Amador)", "4": "Tier 4 (Iniciação)" },
-      grounds: { FG: { label: "FG · Firme", description: "Firm Ground (Terreno Firme): grama natural seca ou levemente úmida e compacta." }, AG: { label: "AG · Sintético", description: "Artificial Grass (Grama Sintética): grama artificial moderna (3G/4G)." }, SG: { label: "SG · Macio", description: "Soft Ground (Terreno Macio): grama natural muito molhada, encharcada ou com muita lama." }, TF: { label: "TF · Society", description: "Turf / Society: grama sintética curta, cimento liso ou campos de terra batida." }, MG: { label: "MG · Múltiplo", description: "Multi-Ground (Terreno Múltiplo): híbrido de grama natural dura e grama artificial." } },
+      grounds: { FG: { label: "FG · Firme", description: "Firm Ground (Terreno Firme): grama natural seca ou levemente úmida e compacta." }, AG: { label: "AG · Sintético", description: "Artificial Grass (Grama Sintética): grama artificial moderna (3G/4G)." }, SG: { label: "SG · Macio", description: "Soft Ground (Terreno Macio): grama natural muito molhada, encharcada ou com muita lama." }, TF: { label: "TF · Society", description: "Turf / Society: grama sintética curta, cimento liso ou campos de terra batida." }, MG: { label: "MG · Múltiplo", description: "Multi-Ground (Terreno Múltiplo): híbrido de grama natural dura e grama artificial." }, IC: { label: "IC · Futsal", description: "Indoor Court (Futsal): quadra coberta de madeira ou piso liso; sola plana de borracha." } },
+      ageAdult: "Adulto",
     },
     guantes: {
       navLabel: "Luvas",
@@ -2135,7 +2139,8 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Jerseys",
       sectionBoots: "Boots",
       tiers: { "1+": "Tier 1+ (Super Elite)", "1": "Tier 1 (Elite)", "2": "Tier 2 (Semi-pro)", "3": "Tier 3 (Amateur)", "4": "Tier 4 (Entry level)" },
-      grounds: { FG: { label: "FG · Firm", description: "Firm Ground: dry or slightly damp, compact natural grass." }, AG: { label: "AG · Artificial", description: "Artificial Grass: modern synthetic turf (3G/4G)." }, SG: { label: "SG · Soft", description: "Soft Ground: very wet, muddy natural grass." }, TF: { label: "TF · Turf", description: "Turf: synthetic carpet, polished concrete or hard dirt pitches." }, MG: { label: "MG · Multi", description: "Multi-Ground: hybrid for hard natural grass and artificial turf." } },
+      grounds: { FG: { label: "FG · Firm", description: "Firm Ground: dry or slightly damp, compact natural grass." }, AG: { label: "AG · Artificial", description: "Artificial Grass: modern synthetic turf (3G/4G)." }, SG: { label: "SG · Soft", description: "Soft Ground: very wet, muddy natural grass." }, TF: { label: "TF · Turf", description: "Turf: synthetic carpet, polished concrete or hard dirt pitches." }, MG: { label: "MG · Multi", description: "Multi-Ground: hybrid for hard natural grass and artificial turf." }, IC: { label: "IC · Futsal", description: "Indoor Court (Futsal): indoor hall with wooden or smooth synthetic floor; flat rubber sole." } },
+      ageAdult: "Adult",
     },
     guantes: {
       navLabel: "Gloves",
@@ -2696,7 +2701,8 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Maillots",
       sectionBoots: "Chaussures",
       tiers: { "1+": "Tier 1+ (Super Élite)", "1": "Tier 1 (Élite)", "2": "Tier 2 (Semi-pro)", "3": "Tier 3 (Amateur)", "4": "Tier 4 (Débutant)" },
-      grounds: { FG: { label: "FG · Terrain sec", description: "Firm Ground (Terrain Ferme) : pelouse naturelle sèche ou légèrement humide et compacte." }, AG: { label: "AG · Synthétique", description: "Artificial Grass (Gazon Synthétique) : gazon synthétique moderne (3G/4G)." }, SG: { label: "SG · Terrain gras", description: "Soft Ground (Terrain Souple) : pelouse naturelle très humide, boueuse ou détrempée." }, TF: { label: "TF · Turf/Moquette", description: "Turf / Moquette : moquette synthétique, béton lisse ou terrains en terre battue dure." }, MG: { label: "MG · Multi-terrain", description: "Multi-Ground (Terrain Multiple) : hybride pelouse naturelle dure et gazon artificiel." } },
+      grounds: { FG: { label: "FG · Terrain sec", description: "Firm Ground (Terrain Ferme) : pelouse naturelle sèche ou légèrement humide et compacte." }, AG: { label: "AG · Synthétique", description: "Artificial Grass (Gazon Synthétique) : gazon synthétique moderne (3G/4G)." }, SG: { label: "SG · Terrain gras", description: "Soft Ground (Terrain Souple) : pelouse naturelle très humide, boueuse ou détrempée." }, TF: { label: "TF · Turf/Moquette", description: "Turf / Moquette : moquette synthétique, béton lisse ou terrains en terre battue dure." }, MG: { label: "MG · Multi-terrain", description: "Multi-Ground (Terrain Multiple) : hybride pelouse naturelle dure et gazon artificiel." }, IC: { label: "IC · Futsal", description: "Indoor Court (Futsal) : salle couverte en parquet ou sol synthétique lisse ; semelle plate en caoutchouc." } },
+      ageAdult: "Adulte",
     },
     guantes: {
       navLabel: "Gants",
@@ -3257,7 +3263,8 @@ export const translations: Record<Locale, Translations> = {
       sectionJerseys: "Maglie",
       sectionBoots: "Scarpini",
       tiers: { "1+": "Tier 1+ (Super Élite)", "1": "Tier 1 (Élite)", "2": "Tier 2 (Semipro)", "3": "Tier 3 (Amatoriale)", "4": "Tier 4 (Base)" },
-      grounds: { FG: { label: "FG · Compatto", description: "Firm Ground (Terreno Fermo): erba naturale asciutta o leggermente umida e compatta." }, AG: { label: "AG · Sintetico", description: "Artificial Grass (Erba Sintetica): erba sintetica moderna (3G/4G)." }, SG: { label: "SG · Morbido", description: "Soft Ground (Terreno Morbido): erba naturale molto bagnata o fangosa." }, TF: { label: "TF · Turf", description: "Turf / Moquette: moquette sintetica, cemento levigato o campi in terra battuta dura." }, MG: { label: "MG · Multi", description: "Multi-Ground (Terreno Multiplo): ibrido tra erba naturale dura ed erba artificiale." } },
+      grounds: { FG: { label: "FG · Compatto", description: "Firm Ground (Terreno Fermo): erba naturale asciutta o leggermente umida e compatta." }, AG: { label: "AG · Sintetico", description: "Artificial Grass (Erba Sintetica): erba sintetica moderna (3G/4G)." }, SG: { label: "SG · Morbido", description: "Soft Ground (Terreno Morbido): erba naturale molto bagnata o fangosa." }, TF: { label: "TF · Turf", description: "Turf / Moquette: moquette sintetica, cemento levigato o campi in terra battuta dura." }, MG: { label: "MG · Multi", description: "Multi-Ground (Terreno Multiplo): ibrido tra erba naturale dura ed erba artificiale." }, IC: { label: "IC · Futsal", description: "Indoor Court (Calcio a 5): palestra coperta con parquet o fondo sintetico liscio; suola piatta in gomma." } },
+      ageAdult: "Adulto",
     },
     guantes: {
       navLabel: "Guanti",
