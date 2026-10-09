@@ -1,6 +1,29 @@
 import type { NextConfig } from "next";
+import path from "node:path";
+
+// CSP en modo Report-Only (2026-10-09): no bloquea nada, solo avisa en la
+// consola del navegador de lo que bloquearía. Next mete scripts en línea
+// (hidratación, JSON-LD), GA4 y Skimlinks se cargan tras el consentimiento y
+// las fotos vienen de decenas de CDNs de tiendas: activarla a ciegas puede
+// romper la medición o los enlaces de afiliado. Cuando la consola quede limpia
+// unos días, se pasa a "Content-Security-Policy".
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.skimresources.com https://*.skimlinks.com",
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://*.skimresources.com https://*.skimlinks.com",
+  "img-src 'self' data: blob: https:",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self' data:",
+  "frame-ancestors 'self'",
+  "base-uri 'self'",
+  "form-action 'self' https://accounts.google.com",
+  "object-src 'none'",
+].join("; ");
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  // Las 404 no se guardan en la caché ISR (ver cache-handler.mjs).
+  cacheHandler: path.resolve("cache-handler.mjs"),
   // www y sin-www servían las dos 200 sin redirigir entre sí (confirmado
   // 2026-09-02) -- Google podía indexar el mismo contenido en dos
   // dominios distintos. sitemap.ts/robots.ts/feed.xml/el JSON-LD de
@@ -14,26 +37,41 @@ const nextConfig: NextConfig = {
         destination: "https://football-cult.com/:path*",
         permanent: true,
       },
+      // http -> https. El túnel le entrega todo al origen por http, así que
+      // el único dato del esquema real es X-Forwarded-Proto, que pone
+      // Cloudflare ("http" si el visitante entró sin TLS). Sin la cabecera
+      // (curl local, el health check de deploy_local.sh) no se redirige:
+      // así no hay bucle posible. Va acá y no en proxy.ts porque el proxy
+      // solo corre en URLs sin idioma y esto tiene que cubrir todas.
+      {
+        source: "/:path*",
+        has: [{ type: "header", key: "x-forwarded-proto", value: "http" }],
+        destination: "https://football-cult.com/:path*",
+        statusCode: 301,
+      },
     ];
   },
-  images: {
-    // Largest actual render on the site is the detail page at ~90vw on a
-    // ~1024px viewport (~920px); nothing needs the default 3840/2048px
-    // buckets. Fewer buckets means fewer distinct Image Optimization
-    // transformations per source image (each is billed once, then cached).
-    deviceSizes: [400, 640, 828, 1080],
-    imageSizes: [64, 128, 256],
-    remotePatterns: [
-      { protocol: "https", hostname: "cdn.shopify.com" },
-      { protocol: "https", hostname: "lh3.googleusercontent.com" },
-      { protocol: "https", hostname: "images2.productserve.com" },
-      { protocol: "https", hostname: "cdn.blazimg.com" },
-      { protocol: "https", hostname: "b2c.spacefoot.com" },
-      { protocol: "https", hostname: "www.sportspar.de" },
-      { protocol: "https", hostname: "i.ebayimg.com" },
-      { protocol: "https", hostname: "images.weserv.nl" },
-    ],
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          { key: "Content-Security-Policy-Report-Only", value: CSP },
+        ],
+      },
+    ];
   },
+  // Todas las <Image> del sitio llevan `unoptimized` (y las fotos de
+  // producto pasan por weserv, ver src/lib/images.ts), así que /_next/image
+  // no servía a nadie y era un proxy abierto: con images.weserv.nl en
+  // remotePatterns descargaba y procesaba con sharp cualquier imagen de
+  // internet (informe 2026-10-08, hallazgo 18). Con esto responde 404.
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

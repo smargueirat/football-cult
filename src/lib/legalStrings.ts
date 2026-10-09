@@ -49,7 +49,7 @@ export interface LegalStrings {
 export const LEGAL: Record<Locale, LegalStrings> = {
   es: {
     updatedLabel: "Última actualización",
-    dateLabel: "2 de octubre de 2026",
+    dateLabel: "9 de octubre de 2026",
     entityLabels: { owner: "Titular", nif: "NIF", address: "Domicilio", email: "Correo electrónico", site: "Sitio web" },
     footer: { legal: "Aviso legal", money: "Cómo ganamos dinero", cookies: "Preferencias de cookies" },
     consent: {
@@ -91,12 +91,12 @@ export const LEGAL: Record<Locale, LegalStrings> = {
           { h: "Responsable del tratamiento", p: ["El responsable es el titular indicado más abajo. Para cualquier cuestión sobre tus datos escribe a {email}."] },
           { h: "Qué datos tratamos y para qué", p: [
             "Navegación. Al cargar el sitio, el servidor y Cloudflare (que nos sirve la web) procesan tu dirección IP y datos técnicos para entregarte las páginas y protegerlas de abusos. Base jurídica: interés legítimo en la seguridad del servicio.",
-            "Clics hacia tiendas. Cuando pulsas «Ver oferta» pasas por un enlace nuestro (/go/) que anota el clic: fecha, producto, tienda, idioma, tipo de página y un resumen del navegador (por ejemplo «Chrome, Android, móvil»). No guarda tu IP ni ningún identificador. Sirve para saber qué enlaces funcionan y retirar los que están rotos.",
+            "Clics hacia tiendas. Cuando pulsas «Ver oferta» pasas por un enlace nuestro (/go/) que anota el clic: fecha, producto, tienda, idioma, tipo de página, país aproximado (lo indica Cloudflare) y un resumen del navegador (por ejemplo «Chrome, Android, móvil»). No guarda tu IP ni ningún identificador: para descartar robots la IP solo se mira en memoria, menos de una hora, y nunca se escribe. Al mandarte a la tienda añadimos al enlace un código de origen (sección, idioma, país y producto) que no identifica a nadie, para saber qué páginas generan ventas. Sirve para saber qué enlaces funcionan y retirar los que están rotos.",
             "Analítica (solo si la aceptas). Google Analytics 4 mide visitas, páginas vistas y clics a tiendas. Base jurídica: tu consentimiento.",
             "Afiliación (solo si la aceptas). Skimlinks convierte enlaces a algunas tiendas en enlaces de afiliado para que podamos cobrar comisión. Base jurídica: tu consentimiento.",
-            "Alertas de precio. Si pides un aviso, guardamos tu correo y el producto hasta que te des de baja (cada aviso incluye un enlace para hacerlo). Base jurídica: tu solicitud.",
+            "Alertas de precio. Si pides un aviso sin haber iniciado sesión, te enviamos un correo de confirmación y la alerta solo se activa cuando abres su enlace y pulsas «Confirmar alerta» (si no lo haces, caduca a los 7 días). Si has iniciado sesión, marcar un favorito activa el aviso de ese producto sin confirmación, porque tu correo ya está verificado. Guardamos tu correo, el producto y el idioma en que lo pediste, y una vez por semana comparamos los precios del catálogo para ese producto; si alguno baja, te escribimos. Cada aviso incluye un enlace para darte de baja (y tu programa de correo puede ofrecerte «Cancelar suscripción» directamente), que borra tu correo de esa alerta. Los enlaces llevan un código aleatorio, nunca tu correo. Para evitar abusos, contamos cuántos correos de confirmación se envían a cada dirección; ese contador se borra solo a las 24 horas. Base jurídica: tu consentimiento.",
             "Cuenta. Si inicias sesión con Google o con un enlace enviado a tu correo, tratamos tu correo y, con Google, tu nombre y foto de perfil. Tus favoritos viajan en tu sesión. Base jurídica: ejecución del servicio que pides.",
-            "Contacto y reportes. Si nos escribes o reportas un producto, usamos tu mensaje y tu correo para responderte. El envío lo realiza Resend.",
+            "Contacto y avisos de error. Si nos escribes o nos avisas de un error en un producto, usamos tu mensaje y tu correo para responderte. El envío lo realiza Resend.",
           ] },
           { h: "Cookies y almacenamiento local", p: [
             "Necesarias (no requieren consentimiento): cookie de idioma (football-cult-locale, 1 año), cookie del país detectado (football-cult-geo-country, 30 días), cookie de sesión si inicias sesión, y en tu navegador tu elección de cookies, país, favoritos, comparador y vistos recientemente.",
@@ -108,7 +108,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
             "Al pulsar «Ver oferta» sales a la tienda o a su red de afiliación (Awin, eBay Partner Network, TradeTracker, Rakuten Advertising, Amazon, Soicos u otras). Desde ese momento rigen su política de privacidad y sus cookies. No vendemos tus datos.",
           ] },
           { h: "Transferencias internacionales", p: ["Algunos de estos proveedores están fuera del Espacio Económico Europeo (por ejemplo en EE. UU. o Reino Unido). Se apoyan en una decisión de adecuación (como el Marco de Privacidad de Datos UE-EE. UU.) o en cláusulas contractuales tipo de cada proveedor."] },
-          { h: "Cuánto tiempo los conservamos", p: ["Alertas: hasta que te des de baja. Mensajes de contacto: el tiempo necesario para atenderlos. Analítica: el periodo configurado en la propiedad de Google Analytics. El registro de clics no contiene datos personales."] },
+          { h: "Cuánto tiempo los conservamos", p: ["Alertas: hasta que te des de baja (o quites el favorito). Mensajes de contacto: el tiempo necesario para atenderlos. Analítica: el periodo configurado en la propiedad de Google Analytics. El registro de clics no contiene datos personales."] },
           { h: "Tus derechos", p: ["Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad de tus datos, y retirar tu consentimiento en cualquier momento, escribiendo a {email}. Si consideras que no tratamos tus datos correctamente, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es)."] },
           { h: "Cambios", p: ["Si cambia algo de lo anterior (por ejemplo, un servicio nuevo), actualizaremos esta página y su fecha."] },
         ],
@@ -134,7 +134,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
   },
   en: {
     updatedLabel: "Last updated",
-    dateLabel: "2 October 2026",
+    dateLabel: "9 October 2026",
     entityLabels: { owner: "Owner", nif: "Tax ID (NIF)", address: "Address", email: "Email", site: "Website" },
     footer: { legal: "Legal notice", money: "How we make money", cookies: "Cookie settings" },
     consent: {
@@ -176,10 +176,10 @@ export const LEGAL: Record<Locale, LegalStrings> = {
           { h: "Data controller", p: ["The controller is the owner listed below. For anything about your data, write to {email}."] },
           { h: "What data we process and why", p: [
             "Browsing. When you load the site, our server and Cloudflare (which delivers the site to you) process your IP address and technical data to serve the pages and protect them from abuse. Legal basis: legitimate interest in the security of the service.",
-            "Clicks to stores. When you press \"View offer\" you go through our own link (/go/), which records the click: date, product, store, language, page type and a summary of your browser (for example \"Chrome, Android, mobile\"). It does not store your IP or any identifier. It is used to find out which links work and to remove broken ones.",
+            "Clicks to stores. When you press \"View offer\" you go through our own link (/go/), which records the click: date, product, store, language, page type, approximate country (provided by Cloudflare) and a summary of your browser (for example \"Chrome, Android, mobile\"). It does not store your IP or any identifier: to filter out bots the IP is only checked in memory, for less than an hour, and never written down. When sending you to the store we add a source code to the link (section, language, country and product) that identifies no one, so we can tell which pages lead to sales. It is used to find out which links work and to remove broken ones.",
             "Analytics (only if you accept). Google Analytics 4 measures visits, page views and clicks to stores. Legal basis: your consent.",
             "Affiliate links (only if you accept). Skimlinks turns links to some stores into affiliate links so that we can earn a commission. Legal basis: your consent.",
-            "Price alerts. If you ask for an alert, we store your email and the product until you unsubscribe (every alert includes a link to do so). Legal basis: your request.",
+            "Price alerts. If you ask for an alert without being signed in, we send you a confirmation email and the alert only turns on when you open its link and press “Confirm alert” (if you don't, the link expires after 7 days). If you are signed in, saving a favorite turns on the alert for that product without confirmation, because your email is already verified. We store your email, the product and the language you used, and once a week we compare the catalog prices for that product; if one drops, we email you. Every alert includes an unsubscribe link (and your email app may offer “Unsubscribe” directly) that deletes your email from that alert. Links carry a random code, never your email. To prevent abuse we count how many confirmation emails go to each address; that counter deletes itself after 24 hours. Legal basis: your consent.",
             "Account. If you sign in with Google or with a link sent to your email, we process your email and, with Google, your name and profile picture. Your favourites travel in your session. Legal basis: performing the service you ask for.",
             "Contact and reports. If you write to us or report a product, we use your message and email to reply. Resend delivers the email.",
           ] },
@@ -193,7 +193,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
             "When you press \"View offer\" you leave for the store or its affiliate network (Awin, eBay Partner Network, TradeTracker, Rakuten Advertising, Amazon, Soicos or others). From that point their privacy policy and cookies apply. We do not sell your data.",
           ] },
           { h: "International transfers", p: ["Some of these providers are outside the European Economic Area (for example in the US or the UK). They rely on an adequacy decision (such as the EU-US Data Privacy Framework) or on each provider's standard contractual clauses."] },
-          { h: "How long we keep it", p: ["Alerts: until you unsubscribe. Contact messages: as long as needed to deal with them. Analytics: the period set in the Google Analytics property. The click log contains no personal data."] },
+          { h: "How long we keep it", p: ["Alerts: until you unsubscribe (or remove the favorite). Contact messages: as long as needed to deal with them. Analytics: the period set in the Google Analytics property. The click log contains no personal data."] },
           { h: "Your rights", p: ["You can ask for access, rectification, erasure, objection, restriction and portability of your data, and withdraw your consent at any time, by writing to {email}. If you believe we are not handling your data properly, you can complain to the Spanish Data Protection Agency (aepd.es) or to your local authority."] },
           { h: "Changes", p: ["If anything above changes (for example a new service), we will update this page and its date."] },
         ],
@@ -219,7 +219,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
   },
   pt: {
     updatedLabel: "Última atualização",
-    dateLabel: "2 de outubro de 2026",
+    dateLabel: "9 de outubro de 2026",
     entityLabels: { owner: "Titular", nif: "NIF", address: "Endereço", email: "E-mail", site: "Site" },
     footer: { legal: "Aviso legal", money: "Como ganhamos dinheiro", cookies: "Preferências de cookies" },
     consent: {
@@ -261,10 +261,10 @@ export const LEGAL: Record<Locale, LegalStrings> = {
           { h: "Responsável pelo tratamento", p: ["O responsável é o titular indicado abaixo. Para qualquer assunto sobre seus dados, escreva para {email}."] },
           { h: "Quais dados tratamos e para quê", p: [
             "Navegação. Ao carregar o site, o servidor e a Cloudflare (que entrega o site a você) processam seu endereço IP e dados técnicos para servir as páginas e protegê-las de abusos. Base jurídica: interesse legítimo na segurança do serviço.",
-            "Cliques para lojas. Quando você toca em «Ver oferta», passa por um link nosso (/go/) que registra o clique: data, produto, loja, idioma, tipo de página e um resumo do navegador (por exemplo «Chrome, Android, celular»). Não guarda seu IP nem nenhum identificador. Serve para saber quais links funcionam e retirar os quebrados.",
+            "Cliques para lojas. Quando você toca em «Ver oferta», passa por um link nosso (/go/) que registra o clique: data, produto, loja, idioma, tipo de página, país aproximado (informado pela Cloudflare) e um resumo do navegador (por exemplo «Chrome, Android, celular»). Não guarda seu IP nem nenhum identificador: para descartar robôs o IP só é verificado em memória, por menos de uma hora, e nunca é gravado. Ao enviar você à loja, acrescentamos ao link um código de origem (seção, idioma, país e produto) que não identifica ninguém, para saber quais páginas geram vendas. Serve para saber quais links funcionam e retirar os quebrados.",
             "Análise (só se você aceitar). O Google Analytics 4 mede visitas, páginas vistas e cliques para lojas. Base jurídica: seu consentimento.",
             "Afiliação (só se você aceitar). O Skimlinks transforma links de algumas lojas em links de afiliado para que possamos receber comissão. Base jurídica: seu consentimento.",
-            "Alertas de preço. Se você pedir um aviso, guardamos seu e-mail e o produto até você cancelar (cada aviso traz um link para isso). Base jurídica: seu pedido.",
+            "Alertas de preço. Se você pedir um aviso sem ter iniciado sessão, enviamos um e-mail de confirmação e o alerta só é ativado quando você abre o link e clica em «Confirmar alerta» (se não fizer isso, ele expira em 7 dias). Se você iniciou sessão, marcar um favorito ativa o aviso desse produto sem confirmação, porque seu e-mail já está verificado. Guardamos seu e-mail, o produto e o idioma em que você pediu, e uma vez por semana comparamos os preços do catálogo desse produto; se algum baixar, escrevemos para você. Cada aviso traz um link para cancelar (e seu programa de e-mail pode oferecer «Cancelar inscrição» diretamente), que apaga seu e-mail desse alerta. Os links levam um código aleatório, nunca seu e-mail. Para evitar abusos, contamos quantos e-mails de confirmação são enviados a cada endereço; esse contador se apaga sozinho em 24 horas. Base jurídica: seu consentimento.",
             "Conta. Se você entrar com o Google ou com um link enviado ao seu e-mail, tratamos seu e-mail e, com o Google, seu nome e foto de perfil. Seus favoritos viajam na sua sessão. Base jurídica: execução do serviço que você pede.",
             "Contato e denúncias. Se você nos escrever ou denunciar um produto, usamos sua mensagem e seu e-mail para responder. O envio é feito pela Resend.",
           ] },
@@ -278,7 +278,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
             "Ao tocar em «Ver oferta» você sai para a loja ou sua rede de afiliação (Awin, eBay Partner Network, TradeTracker, Rakuten Advertising, Amazon, Soicos ou outras). A partir daí valem a política de privacidade e os cookies deles. Não vendemos seus dados.",
           ] },
           { h: "Transferências internacionais", p: ["Alguns desses provedores estão fora do Espaço Econômico Europeu (por exemplo, nos EUA ou no Reino Unido). Eles se apoiam em uma decisão de adequação (como o Marco de Privacidade de Dados UE-EUA) ou nas cláusulas contratuais padrão de cada provedor."] },
-          { h: "Por quanto tempo guardamos", p: ["Alertas: até você cancelar. Mensagens de contato: o tempo necessário para atendê-las. Análise: o período configurado na propriedade do Google Analytics. O registro de cliques não contém dados pessoais."] },
+          { h: "Por quanto tempo guardamos", p: ["Alertas: até você cancelar (ou remover o favorito). Mensagens de contato: o tempo necessário para atendê-las. Análise: o período configurado na propriedade do Google Analytics. O registro de cliques não contém dados pessoais."] },
           { h: "Seus direitos", p: ["Você pode pedir acesso, retificação, exclusão, oposição, limitação e portabilidade dos seus dados, e retirar o consentimento a qualquer momento, escrevendo para {email}. Se achar que não tratamos seus dados corretamente, pode reclamar à Agência Espanhola de Proteção de Dados (aepd.es) ou à autoridade do seu país."] },
           { h: "Alterações", p: ["Se algo do que está acima mudar (por exemplo, um novo serviço), atualizaremos esta página e a sua data."] },
         ],
@@ -304,7 +304,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
   },
   fr: {
     updatedLabel: "Dernière mise à jour",
-    dateLabel: "2 octobre 2026",
+    dateLabel: "9 octobre 2026",
     entityLabels: { owner: "Titulaire", nif: "NIF", address: "Adresse", email: "E-mail", site: "Site web" },
     footer: { legal: "Mentions légales", money: "Comment nous gagnons de l'argent", cookies: "Préférences cookies" },
     consent: {
@@ -346,10 +346,10 @@ export const LEGAL: Record<Locale, LegalStrings> = {
           { h: "Responsable du traitement", p: ["Le responsable est le titulaire indiqué ci-dessous. Pour toute question sur vos données, écrivez à {email}."] },
           { h: "Quelles données nous traitons et pourquoi", p: [
             "Navigation. Quand vous chargez le site, notre serveur et Cloudflare (qui vous délivre le site) traitent votre adresse IP et des données techniques pour servir les pages et les protéger contre les abus. Base juridique : intérêt légitime à la sécurité du service.",
-            "Clics vers les boutiques. Quand vous appuyez sur « Voir l'offre », vous passez par un lien à nous (/go/) qui enregistre le clic : date, produit, boutique, langue, type de page et un résumé du navigateur (par exemple « Chrome, Android, mobile »). Il ne conserve ni votre IP ni aucun identifiant. Il sert à savoir quels liens fonctionnent et à retirer ceux qui sont cassés.",
+            "Clics vers les boutiques. Quand vous appuyez sur « Voir l'offre », vous passez par un lien à nous (/go/) qui enregistre le clic : date, produit, boutique, langue, type de page, pays approximatif (fourni par Cloudflare) et un résumé du navigateur (par exemple « Chrome, Android, mobile »). Il ne conserve ni votre IP ni aucun identifiant : pour écarter les robots, l'IP n'est consultée qu'en mémoire, moins d'une heure, et n'est jamais écrite. En vous envoyant vers la boutique, nous ajoutons au lien un code d'origine (section, langue, pays et produit) qui n'identifie personne, pour savoir quelles pages génèrent des ventes. Il sert à savoir quels liens fonctionnent et à retirer ceux qui sont cassés.",
             "Mesure d'audience (seulement si vous acceptez). Google Analytics 4 mesure les visites, les pages vues et les clics vers les boutiques. Base juridique : votre consentement.",
             "Affiliation (seulement si vous acceptez). Skimlinks transforme les liens vers certaines boutiques en liens d'affiliation pour que nous puissions toucher une commission. Base juridique : votre consentement.",
-            "Alertes de prix. Si vous demandez une alerte, nous conservons votre e-mail et le produit jusqu'à votre désinscription (chaque alerte contient un lien pour cela). Base juridique : votre demande.",
+            "Alertes de prix. Si vous demandez une alerte sans être connecté, nous vous envoyons un e-mail de confirmation et l'alerte n'est activée que lorsque vous ouvrez son lien et cliquez sur « Confirmer l'alerte » (sinon, il expire au bout de 7 jours). Si vous êtes connecté, ajouter un favori active l'alerte de ce produit sans confirmation, car votre e-mail est déjà vérifié. Nous conservons votre e-mail, le produit et la langue utilisée, et une fois par semaine nous comparons les prix du catalogue pour ce produit ; si l'un d'eux baisse, nous vous écrivons. Chaque alerte contient un lien de désinscription (et votre messagerie peut proposer « Se désabonner » directement), qui supprime votre e-mail de cette alerte. Les liens contiennent un code aléatoire, jamais votre e-mail. Pour éviter les abus, nous comptons les e-mails de confirmation envoyés à chaque adresse ; ce compteur s'efface tout seul au bout de 24 heures. Base juridique : votre consentement.",
             "Compte. Si vous vous connectez avec Google ou avec un lien envoyé à votre e-mail, nous traitons votre e-mail et, avec Google, votre nom et votre photo de profil. Vos favoris voyagent dans votre session. Base juridique : exécution du service demandé.",
             "Contact et signalements. Si vous nous écrivez ou signalez un produit, nous utilisons votre message et votre e-mail pour vous répondre. L'envoi est assuré par Resend.",
           ] },
@@ -363,7 +363,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
             "Quand vous appuyez sur « Voir l'offre », vous quittez le site pour la boutique ou son réseau d'affiliation (Awin, eBay Partner Network, TradeTracker, Rakuten Advertising, Amazon, Soicos ou autres). À partir de là, leur politique de confidentialité et leurs cookies s'appliquent. Nous ne vendons pas vos données.",
           ] },
           { h: "Transferts internationaux", p: ["Certains de ces prestataires sont hors de l'Espace économique européen (par exemple aux États-Unis ou au Royaume-Uni). Ils s'appuient sur une décision d'adéquation (comme le cadre de protection des données UE-États-Unis) ou sur les clauses contractuelles types de chaque prestataire."] },
-          { h: "Durée de conservation", p: ["Alertes : jusqu'à votre désinscription. Messages de contact : le temps nécessaire pour les traiter. Mesure d'audience : la durée configurée dans la propriété Google Analytics. Le journal des clics ne contient aucune donnée personnelle."] },
+          { h: "Durée de conservation", p: ["Alertes : jusqu'à votre désinscription (ou la suppression du favori). Messages de contact : le temps nécessaire pour les traiter. Mesure d'audience : la durée configurée dans la propriété Google Analytics. Le journal des clics ne contient aucune donnée personnelle."] },
           { h: "Vos droits", p: ["Vous pouvez demander l'accès, la rectification, l'effacement, l'opposition, la limitation et la portabilité de vos données, et retirer votre consentement à tout moment, en écrivant à {email}. Si vous estimez que vos données ne sont pas traitées correctement, vous pouvez saisir l'Agence espagnole de protection des données (aepd.es) ou la CNIL."] },
           { h: "Modifications", p: ["Si l'un de ces points change (par exemple un nouveau service), nous mettrons à jour cette page et sa date."] },
         ],
@@ -389,7 +389,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
   },
   it: {
     updatedLabel: "Ultimo aggiornamento",
-    dateLabel: "2 ottobre 2026",
+    dateLabel: "9 ottobre 2026",
     entityLabels: { owner: "Titolare", nif: "NIF", address: "Indirizzo", email: "E-mail", site: "Sito web" },
     footer: { legal: "Note legali", money: "Come guadagniamo", cookies: "Preferenze cookie" },
     consent: {
@@ -431,10 +431,10 @@ export const LEGAL: Record<Locale, LegalStrings> = {
           { h: "Titolare del trattamento", p: ["Il titolare è la persona indicata di seguito. Per qualsiasi questione sui tuoi dati scrivi a {email}."] },
           { h: "Quali dati trattiamo e perché", p: [
             "Navigazione. Quando carichi il sito, il nostro server e Cloudflare (che ti consegna il sito) trattano il tuo indirizzo IP e dati tecnici per servire le pagine e proteggerle dagli abusi. Base giuridica: legittimo interesse alla sicurezza del servizio.",
-            "Clic verso i negozi. Quando premi «Vedi offerta» passi da un nostro link (/go/) che registra il clic: data, prodotto, negozio, lingua, tipo di pagina e un riepilogo del browser (ad esempio «Chrome, Android, mobile»). Non conserva il tuo IP né alcun identificativo. Serve a sapere quali link funzionano e a rimuovere quelli rotti.",
+            "Clic verso i negozi. Quando premi «Vedi offerta» passi da un nostro link (/go/) che registra il clic: data, prodotto, negozio, lingua, tipo di pagina, paese approssimativo (fornito da Cloudflare) e un riepilogo del browser (ad esempio «Chrome, Android, mobile»). Non conserva il tuo IP né alcun identificativo: per escludere i robot l'IP viene controllato solo in memoria, per meno di un'ora, e non viene mai scritto. Quando ti mandiamo al negozio aggiungiamo al link un codice di origine (sezione, lingua, paese e prodotto) che non identifica nessuno, per sapere quali pagine generano vendite. Serve a sapere quali link funzionano e a rimuovere quelli rotti.",
             "Analisi (solo se accetti). Google Analytics 4 misura visite, pagine viste e clic verso i negozi. Base giuridica: il tuo consenso.",
             "Affiliazione (solo se accetti). Skimlinks trasforma i link ad alcuni negozi in link di affiliazione perché possiamo ricevere una commissione. Base giuridica: il tuo consenso.",
-            "Avvisi di prezzo. Se richiedi un avviso, conserviamo la tua e-mail e il prodotto finché non annulli l'iscrizione (ogni avviso contiene un link per farlo). Base giuridica: la tua richiesta.",
+            "Avvisi di prezzo. Se richiedi un avviso senza aver effettuato l'accesso, ti inviamo un'e-mail di conferma e l'avviso si attiva solo quando apri il link e premi «Conferma avviso» (altrimenti scade dopo 7 giorni). Se hai effettuato l'accesso, aggiungere un preferito attiva l'avviso per quel prodotto senza conferma, perché la tua e-mail è già verificata. Conserviamo la tua e-mail, il prodotto e la lingua usata, e una volta alla settimana confrontiamo i prezzi del catalogo per quel prodotto; se uno scende, ti scriviamo. Ogni avviso contiene un link per cancellarti (e il tuo programma di posta può offrire «Annulla iscrizione» direttamente), che elimina la tua e-mail da quell'avviso. I link contengono un codice casuale, mai la tua e-mail. Per evitare abusi contiamo quante e-mail di conferma vengono inviate a ogni indirizzo; il contatore si cancella da solo dopo 24 ore. Base giuridica: il tuo consenso.",
             "Account. Se accedi con Google o con un link inviato alla tua e-mail, trattiamo la tua e-mail e, con Google, nome e foto del profilo. I tuoi preferiti viaggiano nella tua sessione. Base giuridica: esecuzione del servizio richiesto.",
             "Contatto e segnalazioni. Se ci scrivi o segnali un prodotto, usiamo il tuo messaggio e la tua e-mail per risponderti. L'invio è effettuato da Resend.",
           ] },
@@ -448,7 +448,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
             "Quando premi «Vedi offerta» esci verso il negozio o la sua rete di affiliazione (Awin, eBay Partner Network, TradeTracker, Rakuten Advertising, Amazon, Soicos o altre). Da quel momento valgono la loro informativa e i loro cookie. Non vendiamo i tuoi dati.",
           ] },
           { h: "Trasferimenti internazionali", p: ["Alcuni di questi fornitori si trovano fuori dallo Spazio economico europeo (ad esempio negli USA o nel Regno Unito). Si basano su una decisione di adeguatezza (come il quadro UE-USA per la protezione dei dati) o sulle clausole contrattuali tipo di ciascun fornitore."] },
-          { h: "Per quanto tempo li conserviamo", p: ["Avvisi: finché non annulli l'iscrizione. Messaggi di contatto: il tempo necessario a gestirli. Analisi: il periodo configurato nella proprietà di Google Analytics. Il registro dei clic non contiene dati personali."] },
+          { h: "Per quanto tempo li conserviamo", p: ["Avvisi: finché non annulli l'iscrizione (o rimuovi il preferito). Messaggi di contatto: il tempo necessario a gestirli. Analisi: il periodo configurato nella proprietà di Google Analytics. Il registro dei clic non contiene dati personali."] },
           { h: "I tuoi diritti", p: ["Puoi chiedere accesso, rettifica, cancellazione, opposizione, limitazione e portabilità dei tuoi dati, e revocare il consenso in qualsiasi momento, scrivendo a {email}. Se ritieni che i tuoi dati non siano trattati correttamente, puoi presentare reclamo all'Agenzia spagnola per la protezione dei dati (aepd.es) o al Garante per la protezione dei dati personali."] },
           { h: "Modifiche", p: ["Se qualcosa di quanto sopra cambia (ad esempio un nuovo servizio), aggiorneremo questa pagina e la sua data."] },
         ],

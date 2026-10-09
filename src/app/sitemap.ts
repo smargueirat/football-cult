@@ -74,15 +74,19 @@ type Tier = (typeof SITEMAP_TIERS)[number];
 
 type Tierable = {
   id: string;
-  offers: readonly { store: string; price: number; imageUrl?: string; url: string }[];
+  // Las entradas guardan la foto en la ficha (la del estadio), no en cada
+  // oferta: sin mirar acá, las 2.570 quedaban en B y fuera del sitemap.
+  imageUrl?: string;
+  offers: readonly { store: string; price: number; imageUrl?: string; url: string; inStock?: boolean }[];
 };
 
 function tierOf(item: Tierable): Tier | null {
-  const priced = item.offers.filter((o) => o.price > 0);
+  // Una oferta agotada no compara nada: no cuenta para subir a A.
+  const priced = item.offers.filter((o) => o.price > 0 && o.inStock !== false);
   if (item.offers.length === 0) return null;
   if (priced.length === 0) return "C";
   const families = new Set(priced.map((o) => getRetailerFamily(o.store)));
-  const hasPhoto = priced.some((o) => !!o.imageUrl);
+  const hasPhoto = !!item.imageUrl || priced.some((o) => !!o.imageUrl);
   return families.size >= 2 && hasPhoto ? "A" : "B";
 }
 

@@ -9,8 +9,8 @@ import GuantesPageClient from "./GuantesPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
-    title: "Guantes de arquero — Comparar precios | Football Cult",
-    description: "Comparativa de guantes de arquero entre tiendas reales: Uhlsport, Reusch, adidas y más.",
+    title: "Guantes de portero — Comparar precios | Football Cult",
+    description: "Comparativa de guantes de portero entre tiendas reales: Uhlsport, Reusch, adidas y más.",
   },
   en: {
     title: "Goalkeeper Gloves — Compare Prices | Football Cult",

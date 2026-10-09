@@ -1,7 +1,8 @@
 "use client";
 
 import { BootOffer } from "@/data/boots";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { formatOfferMoney, shippingUnknown } from "@/lib/offerMoney";
+import { useCountry } from "@/lib/country/CountryContext";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref, type GoKind } from "@/lib/go";
@@ -27,14 +28,15 @@ export default function CompareBootOfferRow({
 }) {
   const { t, locale } = useLanguage();
   const total = offer.price + offer.shipping;
-  const isProSoccer = offer.store === "ProSoccer";
+  const { countryCode } = useCountry();
+  const noShipping = shippingUnknown(offer, countryCode);
 
   return (
     <a
       href={goHref({ kind, productId, url: offer.url, locale, origin: "comparar", isBest })}
       target="_blank"
       onClick={() =>
-        trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
+        trackOfferClick({ productId, isBest, store: offer.store, url: offer.url, price: total, currency: offer.currency })
       }
       rel="noopener noreferrer nofollow sponsored"
       className={`flex flex-col gap-1.5 rounded-xl border p-3 transition-colors ${
@@ -61,7 +63,7 @@ export default function CompareBootOfferRow({
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.shippingCost}</span>
         <span className="font-medium text-[#1a1a1a]">
-          {isProSoccer
+          {noShipping
             ? t.botas.shippingCalculatedAtStore
             : offer.shipping > 0
               ? formatOfferMoney(offer.shipping, offer.currency)
@@ -73,7 +75,7 @@ export default function CompareBootOfferRow({
         <span className="font-semibold text-[#B45309]">
           {offer.priceMax ? `${t.botas.from} ` : ""}
           {formatOfferMoney(total, offer.currency)}
-          {isProSoccer && "+"}
+          {noShipping && "+"}
         </span>
       </div>
     </a>

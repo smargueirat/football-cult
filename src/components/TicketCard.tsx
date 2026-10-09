@@ -4,6 +4,7 @@ import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
 import type { TicketProduct } from "@/data/tickets";
 import { formatOfferMoney, ticketOfferTotalInEUR } from "@/lib/offerMoney";
+import ApproxPrice from "@/components/ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
@@ -73,6 +74,7 @@ export default function TicketCard({ ticket, priority = false }: { ticket: Ticke
           <span className="text-sm font-semibold">
             {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
           </span>
+          <ApproxPrice amount={cheapest.price} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
         </div>
 
         <button

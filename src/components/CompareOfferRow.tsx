@@ -20,8 +20,9 @@ export default function CompareOfferRow({
 }) {
   const { t, locale } = useLanguage();
   const { shipping, importCharges, isLive } = useLiveOfferCosts(offer, countryCode);
-  // eBay con envío 0 sin chequeo en vivo: no es gratis, es desconocido.
-  const noShipping = !isLive && shippingUnknown(offer);
+  // eBay con envío 0 sin chequeo en vivo, o tienda sin dato para este país:
+  // no es gratis, es desconocido.
+  const noShipping = !isLive && shippingUnknown(offer, countryCode);
   const total = offer.price + shipping + importCharges;
 
   return (
@@ -29,7 +30,7 @@ export default function CompareOfferRow({
       href={goHref({ kind: "j", productId, url: offer.url, locale, origin: "comparar", isBest })}
       target="_blank"
       onClick={() =>
-        trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
+        trackOfferClick({ productId, isBest, store: offer.store, url: offer.url, price: total, currency: offer.currency })
       }
       rel="noopener noreferrer nofollow sponsored"
       className={`flex flex-col gap-1.5 rounded-xl border p-3 transition-colors ${

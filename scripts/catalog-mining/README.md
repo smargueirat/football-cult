@@ -23,6 +23,22 @@ flow used (`client_credentials` grant, app-level token) is server-to-
 server with our own issued API keys — not a user login, same read-only
 posture as everything else here.
 
+**Listing identity and dead listings (2026-10-09).** One eBay listing =
+one `/itm/<id>`, whatever the site (`eBay`, `eBay ES`, `eBay IT`, `eBay GB`
+copies) or tracking params (`_skw=`, `hash=`, `amdata=`).
+`dedupe_same_url.py` keeps one row per id per ficha (ES > IT > GB > US: the
+European copy's price includes VAT, the US one doesn't; the European row keeps
+its own static shipping) and one ficha per id.
+`ebay_check_stale.py` checks every live id across all four sites in a
+rotation (`last_id` in `ebay_stale_check_state.json`), budgeted from the
+real remaining `buy.browse` quota (Analytics `rate_limit` API, 5000/day,
+resets 07:00 UTC, shared with mining, `ebay_gb_retro.py` and
+`/api/ebay-shipping`). Dead = `getItem` 404 errorId 11001 (global: same
+answer under every marketplace header) or `OUT_OF_STOCK`, and it flips
+every copy of that id. Both run from the bash part of `daily_scan.sh`,
+after the Claude session, not inside it. Bulk `getItems` (20 ids/call)
+answers 403 for our app: Limited Release, not available.
+
 Unlike every Awin store (one bulk feed to filter), eBay has **no bulk
 feed** — `ebay_mine.py` runs one Browse API search per (team, type),
 picks the cheapest result that survives filtering, then makes one more
@@ -355,9 +371,9 @@ homepage HTML and grepping for `awin-shopify-integration-code.js?aid=` —
 the `aid` query param is the `awinmid` to use in
 `https://www.awin1.com/cread.php?awinmid=<aid>&awinaffid=3013769&ued=<url-encoded product url>`.
 Mystery Shirt Club's `aid` is `124324`, domain `mysteryshirtclub.com`.
-Price re-checks for it are wired into
-`src/app/api/cron/check-prices/route.ts`'s `SHOPIFY_STORES` map/
-`fetchShopifyFeed`, parallel to `FEED_URLS`/`fetchFeed` for CSV stores.
+(Its price re-check lived in the old `src/app/api/cron/check-prices/route.ts`,
+removed 2026-10-09: price alerts now read the catalog, see
+`scripts/check_price_alerts.mts`.)
 
 `shopify_feed_to_csv.py <domain> <awinmid> <out_csv>` turns the Shopify
 JSON into a CSV with the same column names `pick.py`/`extract.py` expect
@@ -510,7 +526,7 @@ open('/tmp/footstore_es.csv', 'wb').write(data)
 "
 
 # 2. Extract best picks (column args vary per store — Awin format vs Google format;
-#    see FEED_URLS / the price-parsing comment in src/app/api/cron/check-prices/route.ts)
+#    Google-format feeds: real price in sale_price (list price in price); Awin format: search_price)
 python3 pick.py /tmp/footstore_es.csv search_price delivery_cost /tmp/picks.json
 
 # 3. Split against current catalog
@@ -538,10 +554,9 @@ python3 refresh.py ../../src/data/products.ts /tmp/picks_ADD.json FootStoreES EU
 
 Repeat per store: FootStoreES, FootStoreFR, SportIsGoodES, SportIsGoodFR,
 PlanetFoot, AdidasES, AdidasPT, BSTNIT, ComoFC, DeporteOutlet,
-FansJerseyHub, ForumSport — each has a slightly different column layout, see the
-`FEED_URLS`/`FeedRow` handling in `src/app/api/cron/check-prices/route.ts`
-for the price-field quirks (Google-format feeds put the real charged
-price in `sale_price`, not `price`).
+FansJerseyHub, ForumSport — each has a slightly different column layout and
+price-field quirks (Google-format feeds put the real charged
+price in `sale_price`, not `price`; Awin-format feeds use `search_price`).
 
 **Exact `pick.py` column args per store**, verified 2026-08-07 (running
 with wrong columns doesn't error — it silently returns zero picks, since
@@ -1984,6 +1999,8 @@ and does not fit the CSV-feed pattern:**
    outside Argentina will always look "broken" even when it isn't —
    don't treat that as a bug to chase without first confirming from an
    AR vantage point.
+
+**Boots too (2026-10-09):** every Nike CL/AR and Puma AR offer in ANY section must be stored as the Soicos link, not the direct store URL (`soicosLink()` in `src/lib/goOut.ts` builds it; `scripts/fixes/tanda2_soicos_boots.mts` rewrites existing data idempotently; `/go/` also wraps any direct link it still finds).
 
 ### What's done vs. still open
 

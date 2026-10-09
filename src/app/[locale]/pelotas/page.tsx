@@ -9,8 +9,8 @@ import PelotasPageClient from "./PelotasPageClient";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
-    title: "Pelotas de fútbol — Comparar precios | Football Cult",
-    description: "Comparativa de pelotas de fútbol entre tiendas reales: adidas, Nike, Erima y más.",
+    title: "Balones de fútbol — Comparar precios | Football Cult",
+    description: "Comparativa de balones de fútbol entre tiendas reales: adidas, Nike, Erima y más.",
   },
   en: {
     title: "Football Balls — Compare Prices | Football Cult",

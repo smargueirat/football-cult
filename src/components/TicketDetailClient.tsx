@@ -4,6 +4,7 @@ import Image from "next/image";
 import BackToCatalogLink from "./BackToCatalogLink";
 import type { TicketProduct, TicketOffer } from "@/data/tickets";
 import { formatOfferMoney, ticketOfferTotalInEUR, ticketStoreLabel, ticketSellers, ticketHasRealComparison } from "@/lib/offerMoney";
+import ApproxPrice from "@/components/ApproxPrice";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -63,7 +64,8 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
           </p>
           <p className="mt-2 text-sm text-[#675c44]">
             {compared ? `${t.botas.bestPrice}: ` : ""}
-            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
+            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}{" "}
+            <ApproxPrice amount={cheapest.price} currency={cheapest.currency} className="text-xs" />
           </p>
           {compared ? (
             <p className="mt-1 text-xs text-[#675c44]">{retailerCountText(ticket.offers, t.product)}</p>
@@ -113,14 +115,17 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
                       {isComparing(ticket.id, offer.store) ? t.compare.remove : t.compare.add}
                     </button>
                   </div>
-                  <p className="text-xs text-[#675c44]">{formatOfferMoney(offer.price, offer.currency)}</p>
+                  <p className="text-xs text-[#675c44]">
+                    {formatOfferMoney(offer.price, offer.currency)}{" "}
+                    <ApproxPrice amount={offer.price} currency={offer.currency} />
+                  </p>
                 </div>
                 <a
                   href={goHref({ kind: "t", productId: ticket.id, url: offer.url, locale, origin: "ficha" })}
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
                   onClick={() =>
-                    trackOfferClick({ store: offer.store, url: offer.url, price: offer.price, currency: offer.currency })
+                    trackOfferClick({ productId: ticket.id, store: offer.store, url: offer.url, price: offer.price, currency: offer.currency })
                   }
                   className="vintage-plaque shrink-0 rounded-xl px-4 py-2 text-sm font-semibold"
                 >

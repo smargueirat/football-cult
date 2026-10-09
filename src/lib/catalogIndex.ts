@@ -50,7 +50,9 @@ const typeName = (key: string, locale: HubLocale): string =>
   (typeNames as Record<string, Record<string, string>>)[key]?.[locale] ?? key;
 
 function comparable<T extends { offers: unknown[] }>(items: T[]): T[] {
-  return items.filter((i) => i.offers.length >= 2);
+  return items.filter(
+    (i) => (i.offers as { inStock?: boolean }[]).filter((o) => o.inStock !== false).length >= 2,
+  );
 }
 
 // El orden se fija con las etiquetas en castellano y se reusa en los 5

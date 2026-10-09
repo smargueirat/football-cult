@@ -15,8 +15,11 @@ import { studyUnits } from "@/lib/priceStudyStrings";
 export const revalidate = 86400;
 
 const PATH = "/estudios/indice-precios";
-const pct = (n: number) => `${n.toFixed(1)}%`;
-const signed = (n: number) => `${n > 0 ? "+" : ""}${n.toFixed(1)}%`;
+// Coma decimal y fecha día/mes/año en todos los idiomas menos inglés.
+const num = (n: number, d: number, l: string) => (l === "en" ? n.toFixed(d) : n.toFixed(d).replace(".", ","));
+const pct = (n: number, l: string) => `${num(n, 1, l)}%`;
+const signed = (n: number, l: string) => `${n > 0 ? "+" : ""}${num(n, 1, l)}%`;
+const day = (iso: string, l: string) => (l === "en" ? iso : iso.split("-").reverse().join("/"));
 
 function fill(s: string, vars: Record<string, string>) {
   return Object.entries(vars).reduce((acc, [k, v]) => acc.replaceAll(`{${k}}`, v), s);
@@ -52,11 +55,13 @@ function GroupTable({
   label,
   c,
   showChange,
+  locale,
 }: {
   rows: GroupRow[];
   label: (key: string) => string;
   c: (typeof INDEX)["es"];
   showChange: boolean;
+  locale: string;
 }) {
   return (
     <div className="vintage-card mt-5 overflow-x-auto rounded-2xl">
@@ -75,11 +80,11 @@ function GroupTable({
             <tr key={r.key} className="border-b border-[#C9A24B]/12 last:border-0">
               <td className="px-4 py-2.5 font-medium text-[#1a1a1a]">{label(r.key)}</td>
               <td className="px-4 py-2.5 text-right tabular-nums text-[#675c44]">{r.n}</td>
-              <td className="px-4 py-2.5 text-right tabular-nums font-medium text-[#1B3B2B]">{pct(r.avgGapPct)}</td>
-              <td className="px-4 py-2.5 text-right tabular-nums text-[#675c44]">{pct(r.medianGapPct)}</td>
+              <td className="px-4 py-2.5 text-right tabular-nums font-medium text-[#1B3B2B]">{pct(r.avgGapPct, locale)}</td>
+              <td className="px-4 py-2.5 text-right tabular-nums text-[#675c44]">{pct(r.medianGapPct, locale)}</td>
               {showChange && (
                 <td className="px-4 py-2.5 text-right tabular-nums text-[#675c44]">
-                  {r.changePct === null ? "–" : signed(r.changePct)}
+                  {r.changePct === null ? "–" : signed(r.changePct, locale)}
                 </td>
               )}
             </tr>
@@ -144,9 +149,9 @@ export default async function PriceIndexPage({ params }: P) {
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
         <div className="vintage-card rounded-2xl p-4 sm:p-5">
-          <p className="font-vintage text-2xl text-[#1B3B2B] sm:text-4xl">{pct(ix.avgGapPct)}</p>
+          <p className="font-vintage text-2xl text-[#1B3B2B] sm:text-4xl">{pct(ix.avgGapPct, locale)}</p>
           <p className="mt-1 text-sm font-medium text-[#3a3a36]">{c.statGap}</p>
-          <p className="mt-1.5 text-xs leading-relaxed text-[#675c44]">{fill(c.statGapNote, { median: ix.medianGapPct.toFixed(1) })}</p>
+          <p className="mt-1.5 text-xs leading-relaxed text-[#675c44]">{fill(c.statGapNote, { median: num(ix.medianGapPct, 1, locale) })}</p>
         </div>
         <div className="vintage-card rounded-2xl p-4 sm:p-5">
           <p className="font-vintage text-2xl text-[#1B3B2B] sm:text-4xl">{ix.sample}</p>
@@ -191,8 +196,8 @@ export default async function PriceIndexPage({ params }: P) {
               <tbody>
                 {rowsShown.map((p) => (
                   <tr key={p.date} className="border-b border-[#C9A24B]/12 last:border-0">
-                    <td className="px-4 py-2 tabular-nums text-[#3a3a36]">{p.date}</td>
-                    <td className="px-4 py-2 text-right tabular-nums font-medium text-[#1B3B2B]">{p.index.toFixed(2)}</td>
+                    <td className="px-4 py-2 tabular-nums text-[#3a3a36]">{day(p.date, locale)}</td>
+                    <td className="px-4 py-2 text-right tabular-nums font-medium text-[#1B3B2B]">{num(p.index, 2, locale)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -202,7 +207,7 @@ export default async function PriceIndexPage({ params }: P) {
             <ul className="mt-3 flex flex-col gap-1 text-sm text-[#3a3a36]">
               {s.monthly.map((p) => (
                 <li key={p.date}>
-                  {c.colMonth} {p.date.slice(0, 7)}: <strong className="tabular-nums text-[#1B3B2B]">{p.index.toFixed(2)}</strong>
+                  {c.colMonth} {day(p.date.slice(0, 7), locale)}: <strong className="tabular-nums text-[#1B3B2B]">{num(p.index, 2, locale)}</strong>
                 </li>
               ))}
             </ul>
@@ -215,13 +220,13 @@ export default async function PriceIndexPage({ params }: P) {
       <section className="mt-12">
         <h2 className="font-vintage text-xl text-[#1B3B2B] sm:text-2xl">{c.leagueTitle}</h2>
         <p className="mt-2 text-sm leading-relaxed text-[#675c44]">{c.leagueIntro}</p>
-        <GroupTable rows={ix.byLeague} label={leagueLabel} c={c} showChange={showChange} />
+        <GroupTable rows={ix.byLeague} label={leagueLabel} c={c} showChange={showChange} locale={locale} />
       </section>
 
       <section className="mt-12">
         <h2 className="font-vintage text-xl text-[#1B3B2B] sm:text-2xl">{c.brandTitle}</h2>
         <p className="mt-2 text-sm leading-relaxed text-[#675c44]">{c.brandIntro}</p>
-        <GroupTable rows={ix.byBrand} label={brandLabel} c={c} showChange={showChange} />
+        <GroupTable rows={ix.byBrand} label={brandLabel} c={c} showChange={showChange} locale={locale} />
       </section>
 
       <section className="mt-12">

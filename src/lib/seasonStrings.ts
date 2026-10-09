@@ -2,12 +2,12 @@ import type { HubLocale } from "@/data/teamMeta";
 import type { TypeKey } from "@/data/products";
 
 const TYPE_PLURAL: Record<TypeKey, Record<HubLocale, string>> = {
-  home: { es: "Camisetas titulares", en: "Home shirts", pt: "Camisas titulares", fr: "Maillots domicile", it: "Maglie casa" },
-  away: { es: "Camisetas suplentes", en: "Away shirts", pt: "Camisas reservas", fr: "Maillots extérieur", it: "Maglie trasferta" },
-  third: { es: "Terceras camisetas", en: "Third shirts", pt: "Terceiras camisas", fr: "Maillots third", it: "Terze maglie" },
-  goalkeeper: { es: "Camisetas de arquero", en: "Goalkeeper shirts", pt: "Camisas de goleiro", fr: "Maillots de gardien", it: "Maglie da portiere" },
+  home: { es: "Primeras equipaciones", en: "Home shirts", pt: "Camisas titulares", fr: "Maillots domicile", it: "Maglie casa" },
+  away: { es: "Segundas equipaciones", en: "Away shirts", pt: "Camisas reservas", fr: "Maillots extérieur", it: "Maglie trasferta" },
+  third: { es: "Terceras equipaciones", en: "Third shirts", pt: "Terceiras camisas", fr: "Maillots third", it: "Terze maglie" },
+  goalkeeper: { es: "Camisetas de portero", en: "Goalkeeper shirts", pt: "Camisas de goleiro", fr: "Maillots de gardien", it: "Maglie da portiere" },
   training: { es: "Camisetas de entrenamiento", en: "Training shirts", pt: "Camisas de treino", fr: "Maillots d'entraînement", it: "Maglie da allenamento" },
-  prematch: { es: "Camisetas pre-match", en: "Pre-match shirts", pt: "Camisas pré-jogo", fr: "Maillots d'avant-match", it: "Maglie pre-partita" },
+  prematch: { es: "Camisetas prepartido", en: "Pre-match shirts", pt: "Camisas pré-jogo", fr: "Maillots d'avant-match", it: "Maglie pre-partita" },
   retro: { es: "Camisetas retro", en: "Retro shirts", pt: "Camisas retrô", fr: "Maillots rétro", it: "Maglie retrò" },
 };
 
@@ -38,14 +38,14 @@ export const SEASON_UI: Record<
     typeH1: (t, s) => `${t} ${s}`,
     seasonIntro: ({ season, n, teams, price }) => `${n} camisetas de la temporada ${season} de ${teams} equipos, comparadas entre varias tiendas. Precio más bajo hoy: ${price}.`,
     typeIntro: ({ type, season, n, price }) => `${type} de la temporada ${season}: ${n} modelos comparados entre varias tiendas. Precio más bajo hoy: ${price}.`,
-    meta: ({ h1, n, price }) => `${h1}: compará ${n} camisetas entre tiendas. Desde ${price}.`,
+    meta: ({ h1, n, price }) => `${h1}: compara ${n} camisetas entre tiendas. Desde ${price}.`,
     byType: "Por tipo de camiseta",
     cheapestOf: (t) => `${t}: las más baratas`,
     teams: "Equipos con camisetas de esta temporada",
-    offersH1: "Todo lo que bajó de precio hoy",
-    offersIntro: (n) => `${n} productos bajaron de precio desde el último control diario: camisetas, botas, entradas, ropa, guantes, pelotas y entrenamiento. Ordenados por porcentaje de baja dentro de cada sección.`,
-    offersEmpty: "Hoy no hay bajas de precio nuevas. Volvé mañana: los precios se controlan todos los días.",
-    offersMeta: "Camisetas, botas, entradas y equipamiento de fútbol que bajaron de precio hoy, ordenados por porcentaje de baja.",
+    offersH1: "Todo lo que ha bajado de precio hoy",
+    offersIntro: (n) => `${n} productos han bajado de precio desde el último control diario: camisetas, botas, entradas, ropa, guantes, balones y entrenamiento. Ordenados por porcentaje de bajada dentro de cada sección.`,
+    offersEmpty: "Hoy no hay bajadas de precio nuevas. Vuelve mañana: los precios se revisan todos los días.",
+    offersMeta: "Camisetas, botas, entradas y material de fútbol que han bajado de precio hoy, ordenados por porcentaje de bajada.",
     seasons: "Temporadas",
   },
   en: {

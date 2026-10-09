@@ -29,7 +29,7 @@ import {
 } from "@/data/products";
 import { BootProduct, bootProducts } from "@/data/boots";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
-import { offersForCountry } from "@/lib/productMeta";
+import { offerShipsTo, offersForCountry } from "@/lib/productMeta";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
@@ -62,6 +62,17 @@ import Link from "@/lib/i18n/LocaleLink";
 import { SECTION_PATHS } from "@/lib/sections";
 
 const SCROLL_KEY = "football-cult-catalog-scroll";
+
+// Sinónimos latinoamericanos de la equipación: el texto de /es ya dice
+// "primera/segunda equipación" y "portero", pero quien busque "titular",
+// "suplente" o "arquero" tiene que seguir encontrando la camiseta.
+const TYPE_SEARCH_ALIASES: Partial<Record<TypeKey, string>> = {
+  home: "titular local",
+  away: "suplente visitante alternativa",
+  third: "alternativa",
+  goalkeeper: "arquero",
+  prematch: "pre-match",
+};
 
 // Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
 // (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para
@@ -144,6 +155,9 @@ export default function SearchExplorer({
   const [sortOpen, setSortOpen] = useState(false);
   const sortButtonRef = useRef<HTMLButtonElement>(null);
   const sortPanelRef = useRef<HTMLDivElement>(null);
+  // Sheet móvil de "Ordenar por": si no se exime del click-afuera, el
+  // mousedown sobre una opción lo desmonta antes de que llegue el click.
+  const sortSheetRef = useRef<HTMLDivElement>(null);
   const [sortPanelPos, setSortPanelPos] = useState({ top: 0, right: 0 });
 
   // Primer intento: dropdown posicionado con position:absolute dentro del
@@ -174,7 +188,8 @@ export default function SearchExplorer({
         sortButtonRef.current &&
         !sortButtonRef.current.contains(target) &&
         sortPanelRef.current &&
-        !sortPanelRef.current.contains(target)
+        !sortPanelRef.current.contains(target) &&
+        !sortSheetRef.current?.contains(target)
       ) {
         setSortOpen(false);
       }
@@ -249,7 +264,7 @@ export default function SearchExplorer({
               const typeWords =
                 p.typeKey === "retro" && !isVintageRetro(p)
                   ? []
-                  : [typeNames[p.typeKey].es, typeNames[p.typeKey].en, typeNames[p.typeKey].pt];
+                  : [typeNames[p.typeKey].es, typeNames[p.typeKey].en, typeNames[p.typeKey].pt, TYPE_SEARCH_ALIASES[p.typeKey] ?? ""];
               const haystack = normalizeSearchText(
                 [
                   teamNames[p.teamKey].es,
@@ -458,7 +473,12 @@ export default function SearchExplorer({
     // SORT_OPTIONS más abajo), así que acá solo hace falta cubrir
     // priceAsc/priceDesc; el resto se deja en el orden filtrado tal cual.
     if (sortBy === "priceAsc" || sortBy === "priceDesc") {
+      // Botas que no envían al país del visitante (p. ej. Clovis BR desde
+      // España) al final: si no, "más barato primero" abría con ellas.
+      const shipsHere = (p: (typeof filtered)[number]) => p.offers.some((o) => offerShipsTo(o.store, countryCode));
       return [...filtered].sort((a, b) => {
+        const byShipping = Number(shipsHere(b)) - Number(shipsHere(a));
+        if (byShipping) return byShipping;
         const cheapestA = Math.min(...offersForCountry(a.offers, countryCode).map(bootOfferTotalInEUR));
         const cheapestB = Math.min(...offersForCountry(b.offers, countryCode).map(bootOfferTotalInEUR));
         return sortBy === "priceAsc" ? cheapestA - cheapestB : cheapestB - cheapestA;
@@ -1252,7 +1272,7 @@ export default function SearchExplorer({
             className="fixed inset-0 z-40 bg-black/30 md:hidden"
             onClick={() => setSortOpen(false)}
           />
-          <div className="fixed inset-x-0 bottom-0 z-50 flex flex-col rounded-t-3xl bg-[#FFFDF8] shadow-[0_-16px_40px_-12px_rgba(0,0,0,0.25)] md:hidden">
+          <div ref={sortSheetRef} className="fixed inset-x-0 bottom-0 z-50 flex flex-col rounded-t-3xl bg-[#FFFDF8] shadow-[0_-16px_40px_-12px_rgba(0,0,0,0.25)] md:hidden">
             <div className="flex items-center justify-between border-b border-[#C9A24B]/20 px-5 py-4">
               <p className="font-card-title text-lg text-[#1a1a1a]">{t.search.sortLabel}</p>
               <button

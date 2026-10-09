@@ -15,9 +15,11 @@ import {
   offerShipsTo,
   teamNames,
 } from "@/lib/productMeta";
-import { formatOfferMoney, isEbayStore, offerTotal, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
+import { approxPriceLabel, formatOfferMoney, isEbayStore, offerTotal, offerTotalInEUR, shippingNotMeasured, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref } from "@/lib/go";
+import { rankOffers } from "@/lib/offerOrder";
+import ApproxPrice from "./ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
@@ -154,8 +156,10 @@ export default function JerseyDetailClient({
       }
       return offerTotalInEUR(offer);
     }
-    return [...product.offers].sort((a, b) => totalInEUR(a) - totalInEUR(b));
-  }, [product.offers, liveEbayCosts]);
+    // Las que envían al país van primero; dentro, precio total y, solo en
+    // empate (±1 %), comisión (offerOrder.ts).
+    return rankOffers(product.offers, totalInEUR, (o) => offerShipsTo(o.store, countryCode), (o) => !shippingNotMeasured(o, countryCode));
+  }, [product.offers, liveEbayCosts, countryCode]);
 
   useEffect(() => {
     addRecentlyViewed(product.id);
@@ -212,8 +216,12 @@ export default function JerseyDetailClient({
   const shippableHere = sortedOffers.filter(
     (o) => o.inStock && shipsHere(o) && inMainVersion(o)
   );
-  const bestOffer = shippableHere[0];
-  const bestStore = bestOffer?.store;
+  // Con talla elegida, la destacada (y la barra fija) es la más barata que
+  // TIENE esa talla: primero en la versión principal, si no en cualquiera.
+  const bestOffer =
+    shippableHere.find(matchesSize) ??
+    sortedOffers.find((o) => o.inStock && shipsHere(o) && matchesSize(o)) ??
+    shippableHere[0];
   // Ahorro real frente a la oferta más cara de la MISMA versión: es el
   // número que justifica que el usuario esté acá y no comprando directo
   // en la primera tienda que encontró. Solo se muestra si hay 2+ tiendas
@@ -226,9 +234,10 @@ export default function JerseyDetailClient({
   // visible de la página. Las ofertas se siguen listando todas; lo que no
   // se hace es prometer un ahorro apoyado en ellas.
   // Una oferta por tienda (la más barata): comparar FootStoreES contra su
-  // espejo FootStoreFR no es un ahorro, es la misma tienda.
+  // espejo FootStoreFR no es un ahorro, es la misma tienda. Sin envío medido
+  // para este país el total no es comparable (no se cuenta como 0 €).
   const comparable = bestPerRetailer(
-    shippableHere.filter((o) => isComparableStore(o.store)),
+    shippableHere.filter((o) => isComparableStore(o.store) && !shippingNotMeasured(o, countryCode)),
     (a, b) => offerTotalInEUR(a) < offerTotalInEUR(b),
   ).sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b));
   const cheapestOfficial = comparable[0];
@@ -321,6 +330,286 @@ export default function JerseyDetailClient({
   }, [product.id, selectedSize, countryCode]);
 
   const isRetro = isVintageRetro(product);
+
+  // Comprables aquí (las que tienen la talla elegida primero) y, aparte y al
+  // final, las que no envían al país: nunca pueden ser "mejor precio".
+  const inStockOffers = sortedOffers.filter((o) => o.inStock);
+  const buyableOffers = inStockOffers
+    .filter(shipsHere)
+    .sort((a, b) => Number(matchesSize(b)) - Number(matchesSize(a)));
+  const elsewhereOffers = inStockOffers.filter((o) => !shipsHere(o));
+
+  // Datos del CTA principal (barra fija en móvil, caja arriba en escritorio):
+  // la misma oferta destacada, con el total real de eBay si ya llegó.
+  const bestCta = bestOffer
+    ? (() => {
+        const live = isEbayStore(bestOffer.store) ? liveEbayCosts[bestOffer.url] : null;
+        const liveTotal =
+          live && live.currency === bestOffer.currency
+            ? bestOffer.price + live.shipping + (live.importCharges ?? 0)
+            : null;
+        const total = liveTotal ?? offerTotal(bestOffer);
+        return {
+          totalText: formatOfferMoney(total, bestOffer.currency),
+          approx: approxPriceLabel(total, bestOffer.currency, country.currency),
+          label: liveTotal == null && shippingUnknown(bestOffer, countryCode) ? t.detail.from : t.detail.total,
+          storeLabel: selectedSize ? `${bestOffer.store} · ${selectedSize}` : bestOffer.store,
+          goLabel: t.detail.goToStore.replace("{store}", bestOffer.store),
+          href: goHref({
+            kind: "j",
+            productId: product.id,
+            url: bestOffer.url,
+            locale,
+            origin: "ficha",
+            position: 1,
+            isBest: true,
+          }),
+          track: () =>
+            trackOfferClick({
+              productId: product.id,
+              position: 1,
+              isBest: true,
+              version: offerVersion(bestOffer),
+              store: bestOffer.store,
+              url: bestOffer.url,
+              price: total,
+              currency: bestOffer.currency,
+            }),
+        };
+      })()
+    : undefined;
+
+  function renderOfferCard(offer: Offer, idx: number) {
+    const ships = shipsHere(offer);
+    const match = offer.inStock && ships && matchesSize(offer);
+    const isBest = offer === bestOffer && match;
+    // Cuando eBay devolvió un costo real de envío (+ impuestos
+    // si aplica) en la misma moneda que el precio del
+    // producto, se suma directo al TOTAL en vez de quedar
+    // solo como un dato informativo aparte -- si la moneda
+    // no coincide (eBay a veces localiza el envío a la
+    // moneda del país de destino), no se suman números de
+    // monedas distintas: se mantiene el total con el
+    // placeholder minado, y la línea de abajo sigue
+    // mostrando el dato real por separado.
+    const liveCost = isEbayStore(offer.store) ? liveEbayCosts[offer.url] : null;
+    const liveTotal =
+      liveCost && liveCost.currency === offer.currency
+        ? offer.price + liveCost.shipping + (liveCost.importCharges ?? 0)
+        : null;
+    const displayTotal = liveTotal ?? offerTotal(offer);
+    // eBay con envío 0 sin dato real: no es gratis, es desconocido.
+    const noShipping = liveTotal == null && shippingUnknown(offer, countryCode);
+    return (
+      <div
+        key={offer.store}
+        className={`vintage-card relative overflow-hidden rounded-2xl transition-opacity duration-300 ${
+          isBest ? "border-[#B8923F]/70 ring-1 ring-[#C9A24B]/30" : ""
+        }`}
+      >
+        <div
+          className={`flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between ${
+            match ? "" : "pointer-events-none opacity-40"
+          }`}
+        >
+          <div className="flex items-center gap-3">
+            <span
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
+              style={{ backgroundColor: badgeColor(offer.store) }}
+            >
+              {offer.store.charAt(0)}
+            </span>
+            <div>
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="font-card-title text-base tracking-wide text-[#1B3B2B]">{offer.store}</p>
+                {/* La versión se muestra SIEMPRE que la ficha
+                    tenga las dos: si no se ve, el usuario cree
+                    que la de jugador a 150 EUR y la de hincha a
+                    90 EUR son la misma prenda. */}
+                {versions.mixed && (
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+                      offerVersion(offer) === "player"
+                        ? "bg-[#1B3B2B] text-[#F3E9C9]"
+                        : "border border-[#C9A24B]/50 bg-white text-[#675c44]"
+                    }`}
+                  >
+                    {offerVersion(offer) === "player"
+                      ? t.detail.versionPlayer
+                      : t.detail.versionFan}
+                  </span>
+                )}
+                <button
+                  onClick={() => toggleCompare(product.id, offer.store)}
+                  disabled={!isComparing(product.id, offer.store) && maxReached}
+                  title={
+                    !isComparing(product.id, offer.store) && maxReached
+                      ? t.compare.maxReached
+                      : undefined
+                  }
+                  className={`flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                    isComparing(product.id, offer.store)
+                      ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                      : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40 hover:text-[#1a1a1a]"
+                  }`}
+                >
+                  <svg className="h-3 w-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                    />
+                  </svg>
+                  {t.compare.add}
+                </button>
+              </div>
+              {/* Fila de badges con altura reservada fija -- así todas
+                  las ofertas guardan el mismo ritmo vertical, tengan o
+                  no badge, en vez de que el nombre de la tienda salte
+                  de línea distinto según cuántos badges le tocaron. */}
+              <div className="flex min-h-[20px] flex-wrap items-center gap-1.5">
+                {isBest && (
+                  <span className="rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
+                    {t.detail.bestPriceBadge}
+                  </span>
+                )}
+                {offer.store === "FansJerseyHub" && (
+                  <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
+                    {t.detail.replicaBadge}
+                  </span>
+                )}
+                {isMarketplace(offer.store) && (
+                  <span
+                    title={t.detail.marketplaceHint}
+                    className="rounded-full border border-[#675c44]/40 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#5b5442]"
+                  >
+                    {t.detail.marketplaceBadge}
+                  </span>
+                )}
+              </div>
+              <p className="text-xs text-[#a8926a]">
+                {offer.title ? translateTitleVocabulary(offer.title, locale) : `${team} ${type}`}
+              </p>
+              {!ships ? null : !matchesSize(offer) ? (
+                <p className="text-xs text-[#b3aa8f]">
+                  {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
+                </p>
+              ) : (
+                <>
+                  <p className="text-xs text-[#675c44]">
+                    {noShipping ? (
+                      <>{formatOfferMoney(offer.price, offer.currency)} · {t.detail.shipping}: {t.compare.shippingToCheck}</>
+                    ) : (
+                      <>{formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}</>
+                    )}
+                    {offer.sizes.length > 0 && (
+                      <> · {offer.sizes.join(", ")}</>
+                    )}
+                  </p>
+                  {isEbayStore(offer.store) && (
+                    <p className="text-[11px] text-[#9C7A2E]">
+                      {liveEbayCosts[offer.url] ? (
+                        <>
+                          {t.detail.realShippingTo.replace("{country}", country.name[locale])}:{" "}
+                          {formatMaybeKnownMoney(
+                            liveEbayCosts[offer.url]!.shipping,
+                            liveEbayCosts[offer.url]!.currency
+                          )}
+                          {liveEbayCosts[offer.url]!.importCharges != null && (
+                            <>
+                              {" + "}
+                              {formatMaybeKnownMoney(
+                                liveEbayCosts[offer.url]!.importCharges!,
+                                liveEbayCosts[offer.url]!.currency
+                              )}{" "}
+                              {t.detail.importCharges.toLowerCase()}
+                            </>
+                          )}
+                          {liveTotal != null && <> ({t.detail.includedInTotal})</>}
+                        </>
+                      ) : liveEbayCosts[offer.url] === null ? null : (
+                        t.detail.checkingRealShipping
+                      )}
+                    </p>
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between gap-4 sm:justify-end">
+            <div className="text-right">
+              <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
+                {noShipping ? t.detail.from : t.detail.total}
+              </p>
+              <p
+                className={`text-lg font-semibold ${
+                  isBest ? "text-[#B45309]" : "text-[#3a3a36]"
+                }`}
+              >
+                {formatOfferMoney(displayTotal, offer.currency)}
+              </p>
+              <ApproxPrice amount={displayTotal} currency={offer.currency} />
+            </div>
+            <a
+              href={goHref({
+                kind: "j",
+                productId: product.id,
+                url: offer.url,
+                locale,
+                origin: "ficha",
+                position: idx + 1,
+                isBest,
+              })}
+              target="_blank"
+              onClick={() =>
+                trackOfferClick({
+                  productId: product.id,
+                  position: idx + 1,
+                  isBest: isBest,
+                  version: offerVersion(offer),
+                  store: offer.store,
+                  url: offer.url,
+                  price: displayTotal,
+                  currency: offer.currency,
+                })
+              }
+              rel="noopener noreferrer nofollow sponsored"
+              className="group/btn flex min-h-11 items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#1B3B2B] px-3.5 py-2 text-sm font-medium leading-none text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
+            >
+              {t.detail.viewInStore}
+              <svg
+                className="h-3.5 w-3.5 flex-shrink-0 transition-transform group-hover/btn:translate-x-0.5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        {/* Antes era un sello centrado que tapaba toda la
+            fila (rotado, con fondo propio) -- la fila ya
+            queda atenuada al 40% de opacidad por el wrapper
+            de arriba, así que un sello más chico en la
+            esquina alcanza para avisar sin ocultar el precio
+            y la tienda de abajo. */}
+        {!ships && (
+          <span className="shadow-vintage-sm pointer-events-none absolute right-3 top-3 z-10 rounded border border-[#675c44]/60 bg-[#fffdf8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#675c44]">
+            {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+          </span>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto w-full max-w-6xl flex-1 px-6 py-10 pb-28 lg:pb-10">
@@ -517,6 +806,34 @@ export default function JerseyDetailClient({
             </div>
           </div>
 
+          {/* Escritorio: la barra fija no se muestra desde lg y la tabla
+              quedaba en el borde del pliegue; esta caja deja precio, tienda
+              y botón a la vista bajo el título. */}
+          {bestCta && (
+            <div className="hidden items-center justify-between gap-4 rounded-2xl border border-[#B8923F]/60 bg-white/70 p-4 ring-1 ring-[#C9A24B]/30 lg:flex">
+              <div className="min-w-0">
+                <p className="text-[11px] uppercase tracking-wide text-[#675c44]">{bestCta.label}</p>
+                <p className="text-2xl font-semibold leading-tight text-[#B45309]">
+                  {bestCta.totalText}
+                  {bestCta.approx && (
+                    <span className="ml-2 text-sm font-normal text-[#675c44]">{bestCta.approx}</span>
+                  )}
+                </p>
+                <p className="truncate text-sm text-[#675c44]">{bestCta.storeLabel}</p>
+              </div>
+              <a
+                href={bestCta.href}
+                target="_blank"
+                rel="noopener noreferrer nofollow sponsored"
+                onClick={bestCta.track}
+                className="flex min-h-11 shrink-0 items-center gap-1.5 rounded-full bg-[#1B3B2B] px-5 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
+              >
+                {bestCta.goLabel}
+                <span aria-hidden>→</span>
+              </a>
+            </div>
+          )}
+
           {shippableOffers.length === 0 ? (
             <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#675c44]">
               {t.countryPanel.notAvailable}
@@ -600,236 +917,17 @@ export default function JerseyDetailClient({
                   {sortedOffers.filter((offer) => offer.inStock).length === 0 && (
                     <p className="text-sm text-[#8a8a84]">{t.detail.allSoldOut}</p>
                   )}
-                  {sortedOffers.filter((offer) => offer.inStock).map((offer, idx) => {
-                    const ships = shipsHere(offer);
-                    const match = offer.inStock && ships && matchesSize(offer);
-                    const isBest = offer.store === bestStore && match;
-                    // Cuando eBay devolvió un costo real de envío (+ impuestos
-                    // si aplica) en la misma moneda que el precio del
-                    // producto, se suma directo al TOTAL en vez de quedar
-                    // solo como un dato informativo aparte -- si la moneda
-                    // no coincide (eBay a veces localiza el envío a la
-                    // moneda del país de destino), no se suman números de
-                    // monedas distintas: se mantiene el total con el
-                    // placeholder minado, y la línea de abajo sigue
-                    // mostrando el dato real por separado.
-                    const liveCost = isEbayStore(offer.store) ? liveEbayCosts[offer.url] : null;
-                    const liveTotal =
-                      liveCost && liveCost.currency === offer.currency
-                        ? offer.price + liveCost.shipping + (liveCost.importCharges ?? 0)
-                        : null;
-                    const displayTotal = liveTotal ?? offerTotal(offer);
-                    // eBay con envío 0 sin dato real: no es gratis, es desconocido.
-                    const noShipping = liveTotal == null && shippingUnknown(offer);
-                    return (
-                      <div
-                        key={offer.store}
-                        className={`vintage-card relative overflow-hidden rounded-2xl transition-opacity duration-300 ${
-                          isBest ? "border-[#B8923F]/70 ring-1 ring-[#C9A24B]/30" : ""
-                        }`}
-                      >
-                        <div
-                          className={`flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between ${
-                            match ? "" : "pointer-events-none opacity-40"
-                          }`}
-                        >
-                          <div className="flex items-center gap-3">
-                            <span
-                              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white"
-                              style={{ backgroundColor: badgeColor(offer.store) }}
-                            >
-                              {offer.store.charAt(0)}
-                            </span>
-                            <div>
-                              <div className="flex flex-wrap items-center gap-2">
-                                <p className="font-card-title text-base tracking-wide text-[#1B3B2B]">{offer.store}</p>
-                                {/* La versión se muestra SIEMPRE que la ficha
-                                    tenga las dos: si no se ve, el usuario cree
-                                    que la de jugador a 150 EUR y la de hincha a
-                                    90 EUR son la misma prenda. */}
-                                {versions.mixed && (
-                                  <span
-                                    className={`rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
-                                      offerVersion(offer) === "player"
-                                        ? "bg-[#1B3B2B] text-[#F3E9C9]"
-                                        : "border border-[#C9A24B]/50 bg-white text-[#675c44]"
-                                    }`}
-                                  >
-                                    {offerVersion(offer) === "player"
-                                      ? t.detail.versionPlayer
-                                      : t.detail.versionFan}
-                                  </span>
-                                )}
-                                <button
-                                  onClick={() => toggleCompare(product.id, offer.store)}
-                                  disabled={!isComparing(product.id, offer.store) && maxReached}
-                                  title={
-                                    !isComparing(product.id, offer.store) && maxReached
-                                      ? t.compare.maxReached
-                                      : undefined
-                                  }
-                                  className={`flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                                    isComparing(product.id, offer.store)
-                                      ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-                                      : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40 hover:text-[#1a1a1a]"
-                                  }`}
-                                >
-                                  <svg className="h-3 w-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={2}
-                                      d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-                                    />
-                                  </svg>
-                                  {t.compare.add}
-                                </button>
-                              </div>
-                              {/* Fila de badges con altura reservada fija -- así todas
-                                  las ofertas guardan el mismo ritmo vertical, tengan o
-                                  no badge, en vez de que el nombre de la tienda salte
-                                  de línea distinto según cuántos badges le tocaron. */}
-                              <div className="flex min-h-[20px] flex-wrap items-center gap-1.5">
-                                {isBest && (
-                                  <span className="rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
-                                    {t.detail.bestPriceBadge}
-                                  </span>
-                                )}
-                                {offer.store === "FansJerseyHub" && (
-                                  <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
-                                    {t.detail.replicaBadge}
-                                  </span>
-                                )}
-                                {isMarketplace(offer.store) && (
-                                  <span
-                                    title={t.detail.marketplaceHint}
-                                    className="rounded-full border border-[#675c44]/40 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#5b5442]"
-                                  >
-                                    {t.detail.marketplaceBadge}
-                                  </span>
-                                )}
-                              </div>
-                              <p className="text-xs text-[#a8926a]">
-                                {offer.title ? translateTitleVocabulary(offer.title, locale) : `${team} ${type}`}
-                              </p>
-                              {!ships ? null : !matchesSize(offer) ? (
-                                <p className="text-xs text-[#b3aa8f]">
-                                  {t.detail.notAvailableInSize.replace("{size}", selectedSize ?? "")}
-                                </p>
-                              ) : (
-                                <>
-                                  <p className="text-xs text-[#675c44]">
-                                    {noShipping ? (
-                                      <>{formatOfferMoney(offer.price, offer.currency)} · {t.detail.shipping}: {t.compare.shippingToCheck}</>
-                                    ) : (
-                                      <>{formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}</>
-                                    )}
-                                    {offer.sizes.length > 0 && (
-                                      <> · {offer.sizes.join(", ")}</>
-                                    )}
-                                  </p>
-                                  {isEbayStore(offer.store) && (
-                                    <p className="text-[11px] text-[#9C7A2E]">
-                                      {liveEbayCosts[offer.url] ? (
-                                        <>
-                                          {t.detail.realShippingTo.replace("{country}", country.name[locale])}:{" "}
-                                          {formatMaybeKnownMoney(
-                                            liveEbayCosts[offer.url]!.shipping,
-                                            liveEbayCosts[offer.url]!.currency
-                                          )}
-                                          {liveEbayCosts[offer.url]!.importCharges != null && (
-                                            <>
-                                              {" + "}
-                                              {formatMaybeKnownMoney(
-                                                liveEbayCosts[offer.url]!.importCharges!,
-                                                liveEbayCosts[offer.url]!.currency
-                                              )}{" "}
-                                              {t.detail.importCharges.toLowerCase()}
-                                            </>
-                                          )}
-                                          {liveTotal != null && <> ({t.detail.includedInTotal})</>}
-                                        </>
-                                      ) : liveEbayCosts[offer.url] === null ? null : (
-                                        t.detail.checkingRealShipping
-                                      )}
-                                    </p>
-                                  )}
-                                </>
-                              )}
-                            </div>
-                          </div>
-
-                          <div className="flex items-center justify-between gap-4 sm:justify-end">
-                            <div className="text-right">
-                              <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">
-                                {noShipping ? t.detail.from : t.detail.total}
-                              </p>
-                              <p
-                                className={`text-lg font-semibold ${
-                                  isBest ? "text-[#B45309]" : "text-[#3a3a36]"
-                                }`}
-                              >
-                                {formatOfferMoney(displayTotal, offer.currency)}
-                              </p>
-                            </div>
-                            <a
-                              href={goHref({
-                                kind: "j",
-                                productId: product.id,
-                                url: offer.url,
-                                locale,
-                                origin: "ficha",
-                                position: idx + 1,
-                                isBest,
-                              })}
-                              target="_blank"
-                              onClick={() =>
-                                trackOfferClick({
-                                  productId: product.id,
-                                  position: idx + 1,
-                                  isBest: isBest,
-                                  version: offerVersion(offer),
-                                  store: offer.store,
-                                  url: offer.url,
-                                  price: displayTotal,
-                                  currency: offer.currency,
-                                })
-                              }
-                              rel="noopener noreferrer nofollow sponsored"
-                              className="group/btn flex items-center justify-center gap-1 whitespace-nowrap rounded-full bg-[#1B3B2B] px-3.5 py-2 text-sm font-medium leading-none text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
-                            >
-                              {t.detail.viewInStore}
-                              <svg
-                                className="h-3.5 w-3.5 flex-shrink-0 transition-transform group-hover/btn:translate-x-0.5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2}
-                                  d="M9 5l7 7-7 7"
-                                />
-                              </svg>
-                            </a>
-                          </div>
-                        </div>
-
-                        {/* Antes era un sello centrado que tapaba toda la
-                            fila (rotado, con fondo propio) -- la fila ya
-                            queda atenuada al 40% de opacidad por el wrapper
-                            de arriba, así que un sello más chico en la
-                            esquina alcanza para avisar sin ocultar el precio
-                            y la tienda de abajo. */}
-                        {!ships && (
-                          <span className="shadow-vintage-sm pointer-events-none absolute right-3 top-3 z-10 rounded border border-[#675c44]/60 bg-[#fffdf8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#675c44]">
-                            {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
-                          </span>
-                        )}
+                  {buyableOffers.map(renderOfferCard)}
+                  {elsewhereOffers.length > 0 && (
+                    <details className="rounded-2xl border border-[#C9A24B]/25 bg-white/40 p-3">
+                      <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-[#675c44]">
+                        {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])} ({elsewhereOffers.length})
+                      </summary>
+                      <div className="mt-3 flex flex-col gap-3">
+                        {elsewhereOffers.map((o, i) => renderOfferCard(o, buyableOffers.length + i))}
                       </div>
-                    );
-                  })}
+                    </details>
+                  )}
                 </div>
               </div>
             </>
@@ -861,45 +959,18 @@ export default function JerseyDetailClient({
       {/* Barra fija inferior en mobile: UN toque va a la mejor tienda, con
           la tienda y el total a la vista (antes llevaba a la comparativa y
           había que tocar otra vez). La comparativa completa sigue abajo. */}
-      {bestOffer &&
-        (() => {
-          const bestLive = isEbayStore(bestOffer.store) ? liveEbayCosts[bestOffer.url] : null;
-          const bestLiveTotal =
-            bestLive && bestLive.currency === bestOffer.currency
-              ? bestOffer.price + bestLive.shipping + (bestLive.importCharges ?? 0)
-              : null;
-          const barTotal = bestLiveTotal ?? offerTotal(bestOffer);
-          return (
-            <StickyBestOfferBar
-              hideFrom="lg"
-              store={bestOffer.store}
-              total={formatOfferMoney(barTotal, bestOffer.currency)}
-              fromLabel={t.detail.total}
-              goLabel={t.detail.goToStore.replace("{store}", bestOffer.store)}
-              href={goHref({
-                kind: "j",
-                productId: product.id,
-                url: bestOffer.url,
-                locale,
-                origin: "ficha",
-                position: 1,
-                isBest: true,
-              })}
-              onClick={() =>
-                trackOfferClick({
-                  productId: product.id,
-                  position: 1,
-                  isBest: true,
-                  version: offerVersion(bestOffer),
-                  store: bestOffer.store,
-                  url: bestOffer.url,
-                  price: barTotal,
-                  currency: bestOffer.currency,
-                })
-              }
-            />
-          );
-        })()}
+      {bestCta && (
+        <StickyBestOfferBar
+          hideFrom="lg"
+          store={bestCta.storeLabel}
+          total={bestCta.totalText}
+          approx={bestCta.approx}
+          fromLabel={bestCta.label}
+          goLabel={bestCta.goLabel}
+          href={bestCta.href}
+          onClick={bestCta.track}
+        />
+      )}
     </div>
   );
 }

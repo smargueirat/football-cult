@@ -15,6 +15,7 @@ import {
   typeNames,
 } from "@/lib/productMeta";
 import { formatOfferMoney, previousOfferTotal } from "@/lib/offerMoney";
+import ApproxPrice from "@/components/ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -196,6 +197,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <span className="text-sm font-semibold">
               {formatOfferMoney(bestTotal, best.currency)}
             </span>
+            <ApproxPrice amount={bestTotal} currency={best.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
             {(noShipping || bestTotal > best.price) && (
               <span className="text-[9px] font-medium uppercase leading-none opacity-70">
                 {noShipping ? t.product.shippingNotIncluded : t.product.shippingIncluded}

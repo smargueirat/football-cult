@@ -1,8 +1,13 @@
 // Comisión estimada por tienda, como fracción del precio del producto.
 //
-// Sirven para ORDENAR (qué oferta ofrecer primero entre dos precios casi
-// iguales, qué bajada publicar antes en el canal). NO sirven para
-// prometerle a nadie un ingreso concreto.
+// Sirven para DESEMPATAR (src/lib/offerOrder.ts: entre dos ofertas cuyo
+// total con envío difiere <= 1 %, va primero la de mayor comisión; nunca
+// por encima de una más barata) y para elegir qué bajada publicar antes en
+// el canal. NO sirven para prometerle a nadie un ingreso concreto.
+//
+// Revisión 2026-10-09 (informe football-cult-review/2026-10-08/
+// monetizacion.md, H12): Gigsberg, adidas ES/PT, Nike/Puma (Soicos) y los
+// enlaces de Sovrn estaban mal; corregidos abajo con su fuente.
 //
 // CONTRASTADAS CONTRA DATOS REALES DE AWIN el 2026-09-28. El panel no
 // publica el porcentaje de cada programa en un sitio parseable, pero sí
@@ -45,7 +50,8 @@
 const RATES: Record<string, number> = {
   // eBay Partner Network: la tarifa más baja de todas las que tenemos, y
   // el mayor volumen del catálogo. Las tres variantes regionales pagan
-  // igual.
+  // igual. POR VERIFICAR en el panel de EPN: fuentes secundarias publican
+  // ~4 % para "Clothing, Shoes & Accessories"; se deja 2 % hasta verlo.
   eBay: 0.02,
   "eBay ES": 0.02,
   "eBay IT": 0.02,
@@ -70,10 +76,13 @@ const RATES: Record<string, number> = {
   DeporteOutletES: 0.02,
   FansJerseyHub: 0.08,
 
-  // Marcas y grandes superficies: pagan menos que las especializadas.
-  AdidasES: 0.06,
-  AdidasPT: 0.06,
-  // Sin dato publicado para adidas CL: se asume igual que AdidasES/PT hasta ver el EPC real en Awin.
+  // adidas ES: venta REAL del 2026-09-21 en Awin, EUR 6,63 sobre EUR 82,85
+  // = 8 % (estaba en 6 %). PT es el mismo programa de adidas en Awin.
+  AdidasES: 0.08,
+  AdidasPT: 0.08,
+  // adidas CL (Awin 79922, aprobado 2026-10-06): PROVISIONAL, sin EPC ni
+  // venta medida todavía. 6 % = por debajo de lo medido en adidas ES, a
+  // propósito. Revisar en el directorio de Awin cuando haya EPC.
   AdidasCL: 0.06,
   DecathlonIE: 0.03,
   // Publicado en sus propios términos: 8% a precio completo, 5% en
@@ -95,9 +104,11 @@ const RATES: Record<string, number> = {
   // €91, así que por clic paga más que una camiseta.
   FootballTicketNetUK: 0.04,
   FootballTicketNetUS: 0.04,
-  // Gigsberg ES: EPC medido EUR 0,11 el 2026-09-28 (0,47% de conversión), el
-  // peor de la lista; solo sirve para desempatar, no para prometer ingresos.
-  Gigsberg: 0.01,
+  // Gigsberg ES: EPC EUR 0,11 con 0,47 % de conversión (Awin, 2026-09-28)
+  // => EPC/conversión = ~EUR 23 de comisión por pedido. Con la entrada
+  // mediana de Gigsberg en EUR 103 (tickets.ts, 2026-10-09) y pedidos de ~2
+  // entradas, eso es ~11 %. Estaba en 1 %, que la subestimaba ~20 veces.
+  Gigsberg: 0.1,
 
   // Tiendas oficiales de club (Rakuten y programas propios).
   SantosStore: 0.05,
@@ -110,19 +121,24 @@ const RATES: Record<string, number> = {
 
   Amazon: 0.03,
 
-  // Sin programa de afiliado: el clic no paga nada por sí mismo (a lo
-  // sumo lo recupera Skimlinks). Van explícitas en 0 para que se vea que
-  // están consideradas y no simplemente ausentes.
-  NikeCL: 0,
-  NikeAR: 0,
-  PumaAR: 0,
+  // Nike CL/AR y Puma AR: programas de Soicos (cuenta aprobada 2026-08-27,
+  // aid 56058, pid 14271/14661/14084; patrón de enlace en
+  // scripts/catalog-mining/README.md "Soicos"). Estaban en 0 ("sin
+  // programa"), falso. Soicos no publica la tarifa: se usa la de por
+  // defecto (3 %). OJO: las botas de estas tiendas todavía llevan el enlace
+  // directo, sin envolver con Soicos (monetizacion.md H10).
+  NikeCL: 0.03,
+  NikeAR: 0.03,
+  PumaAR: 0.03,
   // Pro:Direct España y Reino Unido: enlace directo que monetiza Skimlinks
   // (Pro:Direct paga 3% en esa red; Skimlinks se queda una parte). Su
   // programa en Awin (ID 6667) figura inactivo al 2026-09-29.
   "Pro:Direct ES": 0.02,
   "Pro:Direct Soccer": 0.02,
-  "Classic Football Shirts": 0,
-  "UK Soccer Shop": 0,
+  // Enlaces sovrn.co (Sovrn Commerce): SÍ monetizan (estaban en 0); tarifa
+  // no publicada, se usa la de por defecto.
+  "Classic Football Shirts": 0.03,
+  "UK Soccer Shop": 0.03,
 };
 
 // Conservador a propósito: una tienda que no está en la tabla no debería

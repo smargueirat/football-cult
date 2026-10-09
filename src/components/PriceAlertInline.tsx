@@ -15,12 +15,12 @@ import { trackPriceAlertSignup } from "@/lib/analytics";
 //    camiseta también aparece en /favoritos);
 //  - sin sesión, se despliega un campo de mail y listo.
 export default function PriceAlertInline({ productId }: { productId: string }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { status } = useSession();
   const { isFavorite, toggleFavorite } = useFavorites();
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [state, setState] = useState<"idle" | "sending" | "pending" | "done" | "error">("idle");
 
   const favorited = isFavorite(productId);
 
@@ -35,9 +35,13 @@ export default function PriceAlertInline({ productId }: { productId: string }) {
     );
   }
 
-  if (state === "done") {
+  if (state === "done" || state === "pending") {
+    // Sin sesión hay doble opt-in: la alerta no está activa hasta que se
+    // pulsa el enlace del correo de confirmación.
     return (
-      <p className="mt-2 text-sm font-medium text-[#1B3B2B]">{t.detail.priceAlertDone}</p>
+      <p className="mt-2 text-sm font-medium text-[#1B3B2B]">
+        {state === "pending" ? t.detail.priceAlertConfirm : t.detail.priceAlertDone}
+      </p>
     );
   }
 
@@ -59,11 +63,12 @@ export default function PriceAlertInline({ productId }: { productId: string }) {
       const res = await fetch("/api/price-alerts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ productId, subscribe: true, email }),
+        body: JSON.stringify({ productId, subscribe: true, email, locale }),
       });
       if (!res.ok) throw new Error("failed");
+      const { pending } = (await res.json()) as { pending?: boolean };
       trackPriceAlertSignup({ productId, loggedIn: false });
-      setState("done");
+      setState(pending ? "pending" : "done");
     } catch {
       setState("error");
     }

@@ -13,7 +13,17 @@ echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily scan start ==="
 # cron never actually did anything. Hardcoded full path now.
 CLAUDE_BIN="/home/piojo/.local/bin/claude"
 
+# Refresco determinista SIN Claude (2026-10-09): descarga los feeds y refresca
+# precio/stock/tallas de camisetas (por oferta), botas y equipamiento, y lo
+# commitea. Va antes de Claude para que una noche en que Claude no arranca
+# (16 de 62 hasta el 10-08) el catálogo igual quede al día. Ver el script.
+SCAN_MARK="$(mktemp)"
+REFRESH_OUT="$(scripts/daily_refresh.sh 2>&1)"
+echo "$REFRESH_OUT"
+
 "$CLAUDE_BIN" -p "Daily football-cult.com catalog scan: find and add any real football jerseys still missing from the site, across ALL currently-connected sources.
+
+YA HECHO antes de esta sesión, sin LLM (scripts/daily_refresh.sh, 2026-10-09; su salida está al final de scripts/daily_scan.log): todos los feeds de abajo ya están descargados en /tmp/feeds (download_feeds.py), cada oferta de camiseta de tienda con feed ya tiene el precio/stock/tallas de hoy (refresh_offers.py, que además marca inStock:false lo que ya no está en el feed de su tienda -- no lo deshagas), y botas y equipamiento ya se refrescaron (refresh_boots.py, refresh_gear.py), todo commiteado. No vuelvas a descargar un feed de /tmp/feeds que tenga menos de 6 h ni vuelvas a correr refresh_boots.py/refresh_gear.py, salvo que esa salida diga FAIL/ABORTADO/WARNING para ellos; tu trabajo es la minería de productos y ofertas NUEVAS (y los pasos de eBay, Rakuten, tickets, GTIN, colores y bajadas de precio de abajo). Archivos derivados como FORUMSPORT_jerseys.csv sí los tienes que generar tú.
 
 Repo: /home/piojo/football-cult. Reusable tooling: scripts/catalog-mining/ (read its README.md first — it documents the whole pipeline, false-positive classes found, and the standing safety rule). Enumerate connected Awin stores fresh via \`grep '^AWIN_FEED_URL_' .env.local\` rather than assuming a fixed list — plus eBay (Partner Network + Browse API) which isn't in that env-var list. Do NOT mine Mystery Shirt Club anymore — its Awin affiliate programme (aid 124324) closed 2026-09-16, its 313 offers were already removed from products.ts, and any link generated through that aid is dead even if the Shopify product feed itself still responds.
 
@@ -47,7 +57,7 @@ Also mine the 2 TradeTracker (not Awin) jersey stores the same way as any Awin s
 
 STANDING RULE, applies from 2026-09-22 onward: any new recurring data source added to this project (a new store, a new feed, a new scraping/mining script, a new marketplace of an existing source like eBay IT/ES) must be wired into this same nightly scan the same day it's built — either by adding it to the generic \`AWIN_FEED_URL_*\` enumeration if it fits that pattern, or by adding an explicit paragraph here otherwise. A one-off manual mining pass that never gets added here WILL go stale (this exact thing happened to Futbol Factory/Shop Real Betis above, and to FutbolEmotion boots before 2026-09-21) — do not repeat that mistake. If a future session adds a new source and does not have time to also automate it same-day, it must say so explicitly to the user rather than silently leaving it manual-only.
 
-Also run \`python3 scripts/catalog-mining/ebay_check_stale.py\` (no args = default 200/day batch) — eBay listings get sold/delisted after we mine them, and nothing else re-checks an already-mined offer, so this catches ones that have since gone dead (confirmed real 2026-08-28: 54 of the first 300 checked, ~18%, were genuine 404s from eBay's own API) and flips them to \`inStock: false\` directly in products.ts. It persists its cycle position in ebay_stale_check_state.json (next to the script) — git add and commit that file alongside products.ts every time, same reason as ebay_full_cycle_state.json above (losing it just repeats the same batch instead of progressing through the catalog).
+Do NOT run \`scripts/catalog-mining/ebay_check_stale.py\` yourself (changed 2026-10-09): this shell script runs it by itself right after you finish, over ALL eBay marketplaces (eBay/ES/IT/GB), spending whatever Browse API quota your eBay mining left minus a reserve for the site, and commits products.ts + ebay_stale_check_state.json on its own. Running it here too would burn the quota the mining above needs and race with your own edits to products.ts.
 
 Also run \`python3 scripts/boots-mining/refresh_boots.py\` (read scripts/boots-mining/README.md first) — refreshes src/data/boots.ts against the same Awin feed cache used above (adidas ES, Sport is Good ES, Foot-Store ES, Decathlon Irlanda boots, Gigasport DE/CH/FR, Clovis Calçados BR, Reebok DE), which used to only ever get re-mined by hand and had started drifting from real store prices. Clovis Calçados BR (aid 107702, added 2026-09-22) is a general Brazilian footwear retailer — category_id/category_name are always empty in its feed, so mine_clovis() filters on product_type == \"Masculino - Chuteira\" (its dedicated men's football-boots category; \"Infantil - Menino - Chuteira\" is kids' and stays excluded same as every other store), then drops Futsal/Indoor titles via the existing EXCLUDE_KEYWORDS (already covers those words) and keeps Society/Campo (real outdoor ground types, ~AG/~FG) — prices are real BRL, shown natively like Pro Soccer's USD. Reebok DE (aid 121508, added 2026-10-05) needs nothing extra: its feed is a MIXED one already downloaded to /tmp/feeds/REEBOK_DE.csv by the normal AWIN_FEED_URL_* enumeration (it also goes through the jersey pipeline, unlike Gigasport/Clovis), and mine_reebok_de() picks the boots out of it by \"Fußballschuh\" in the title. It's a single self-contained script (mines, rebuilds boots.ts, reclassifies Tier/Horma, extracts dominant color for any new photos) — just run it and git add its three output files (src/data/boots.ts, src/data/bootTierData.json, src/data/bootDominantColors.json) alongside everything else. Ids are deterministic so this is safe to run every day even with zero real changes (produces a byte-identical file). Since 2026-09-21 it ALSO downloads the FutbolEmotion (TradeTracker) feed itself, re-applies today's sizes/prices/stock to the 71 legacy models (legacy_stock.py) and mines ProSoccer per-size stock — so sold-out boots and vanished sizes leave the catalog every night; if its output contains a \`WARNING: no se pudo refrescar el feed de FutbolEmotion\` line, mention it in your summary (that store's sizes are then a day stale). Print its summary (new/dropped/price-changed counts and the legacy-refresh line) in your own summary at the end.
 
@@ -55,7 +65,7 @@ Also run \`node scripts/catalog-mining/extract_dominant_colors.mjs\` after every
 
 Also download the TICKETNET feeds to /tmp/feeds/TICKETNET_{UK,US}.csv (TICKETS-ONLY -- solo UK y US: el programa DE (aid 109000) cerró el 2026-09-01 y sus ofertas ya se quitaron del catálogo, pero Awin sigue sirviendo su feed, así que se bajaban 2,4 MB cada noche para nada. Si alguna vez reabre, volver a sumar AWIN_FEED_URL_TICKETNET_DE acá, see the comment above them in .env.local -- do NOT run the jersey/boots/gear pipeline on these) and run \`python3 scripts/tickets-mining/refresh_tickets.py\` — refreshes src/data/tickets.ts, added 2026-09-17. Real football match tickets (Bundesliga, LaLiga, Premier League, Champions League, etc.), same event compared across the 3 regional currencies (EUR/GBP/USD) since it's genuinely the same match at a different real price per region. Past events (date already gone) are dropped automatically by the miner, so a nonzero "dropped" count here is normal/expected, not an error. Then run \`python3 scripts/tickets-mining/resolve_venue_cities.py\` (only queries Wikidata for NEW stadiums, ~1s each, cached in venue_cities.json; unresolved ones can be added by hand to venue_city_overrides.json) and re-run refresh_tickets.py so new venues get their city. git add src/data/tickets.ts scripts/tickets-mining/venue_cities.json scripts/tickets-mining/venue_city_overrides.json alongside everything else. Print its summary too.
 
-Finally, run \`npx tsx scripts/catalog-mining/track_price_drops.mts\` LAST, after every other store/offer update above has already landed in the data files — it diffs today's prices against yesterday's snapshot (price_snapshot.json, next to the script) and writes src/data/priceDrops.json with every offer that got cheaper, which is what powers the site's price-drop badge/section/filter (\"Bajaron de Precio\"). Since 2026-09-25 it covers ALL SEVEN sections (camisetas, botas, entradas, ropa, guantes, pelotas, entrenamiento), not just camisetas: it replaced track_price_drops.py, which only rewrote products.ts with regex and therefore never flagged a boot or a ticket — ver src/lib/priceDrops.ts. It also appends today's price to a rolling per-offer history (src/data/priceHistory.json, capped at the last 14 days, SOLO camisetas: ese archivo ya pesa 8 MB con una sección y el límite que ajusta en Hobby es el almacenamiento), which is what powers the price-history sparkline on the product detail page (src/components/PriceHistorySparkline.tsx) — It ALSO appends every price CHANGE (all seven sections, change-only, never trimmed) to the durable archive data/price-history/YYYY-MM.jsonl (added 2026-10-02; read by src/lib/priceArchive.ts for the "mínimo histórico" line on the product page, the monthly price index and the sitemap lastmod) — git add that directory too. git add and commit price_snapshot.json, src/data/priceDrops.json AND src/data/priceHistory.json alongside the data files every time, same reason as the other state files: losing alguno just means tomorrow's run (or the sparkline) loses a day of real data, not a crash. Then run \`npx tsx scripts/catalog-mining/broadcast_price_drops.mts\` (added 2026-09-25) — publica las mejores bajadas al canal de Telegram, ordenadas por descuento POR comisión esperada (una bota al 30% vale mucho más que un cono al 30%, ver src/lib/commissionRates.ts). Sin TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID en .env.local hace un ENSAYO: imprime los mensajes y no publica nada, que es el comportamiento correcto hasta que existan esas dos variables. git add scripts/catalog-mining/telegram_posted.json (el estado que evita repetir una bajada ya publicada) cuando exista.
+Finally, run \`npx tsx scripts/catalog-mining/track_price_drops.mts\` LAST, after every other store/offer update above has already landed in the data files — it appends today's prices to the durable archive and writes src/data/priceDrops.json with every VERIFIED drop (since 2026-10-09: previous price held 5+ days in our archive and equal to its usual price, current = lowest of 30 days, no store-wide feed changes, no ticket template prices -- see verifiedDrop in src/lib/priceArchive.ts; it no longer depends on yesterday's snapshot, so re-running it is harmless), which is what powers the site's price-drop badge/section/filter (\"Bajaron de Precio\"). Since 2026-09-25 it covers ALL SEVEN sections (camisetas, botas, entradas, ropa, guantes, pelotas, entrenamiento), not just camisetas: it replaced track_price_drops.py, which only rewrote products.ts with regex and therefore never flagged a boot or a ticket — ver src/lib/priceDrops.ts. It also appends today's price to a rolling per-offer history (src/data/priceHistory.json, capped at the last 14 days, SOLO camisetas: ese archivo ya pesa 8 MB con una sección y el límite que ajusta en Hobby es el almacenamiento), which is what powers the price-history sparkline on the product detail page (src/components/PriceHistorySparkline.tsx) — It ALSO appends every price CHANGE (all seven sections, change-only, never trimmed) to the durable archive data/price-history/YYYY-MM.jsonl (added 2026-10-02; read by src/lib/priceArchive.ts for the "mínimo histórico" line on the product page, the monthly price index and the sitemap lastmod) — git add that directory too. git add and commit price_snapshot.json, src/data/priceDrops.json AND src/data/priceHistory.json alongside the data files every time, same reason as the other state files: losing alguno just means tomorrow's run (or the sparkline) loses a day of real data, not a crash. Then run \`npx tsx scripts/catalog-mining/broadcast_price_drops.mts\` (added 2026-09-25) — publica al canal de Telegram solo bajadas VERIFICADAS contra nuestro propio archivo de precios (precio anterior vigente 5+ días, mínimo de 30 días, >=15 % y >=5 EUR, tope por sección, en stock y con envío a España), con cuota por sección (camisetas/botas/equipamiento primero; entradas como mucho 1 de cada 10) y sin repetir un producto en 14 días; ver el comentario de cabecera del script. Para ver qué saldría sin publicar: --dry-run. Sin TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID en .env.local hace un ENSAYO: imprime los mensajes y no publica nada, que es el comportamiento correcto hasta que existan esas dos variables. git add scripts/catalog-mining/telegram_posted.json (el estado que evita repetir una bajada ya publicada) cuando exista.
 
 Tras refrescar equipamiento, corre \`python3 scripts/gear-mining/check_gear_ids.py\` (agregado 2026-09-27): comprueba que la URL de una ficha de equipamiento NO se mueve cuando el proveedor cambia de CDN, de idioma o reescribe el titulo. Eso paso de verdad el 27-09 (Foot-Store hizo las dos cosas a la vez) y mato 5.912 URLs en 48 horas; el registro scripts/gear-mining/gear_ids.json es lo que lo impide, y HAY QUE COMMITEARLO siempre junto a los .ts de equipamiento -- si se pierde, todas las URLs se vuelven a sortear. RESUELTO 2026-09-27 (Crystal Palace 26/27, que quedo sin aplicar tres dias): el Palace **invirtio sus colores esta temporada**, juega de BLANCO en casa y a rayas fuera, asi que la etiqueta "Domicile" del feed para la camiseta blanca con banda era CORRECTA -- la suposicion de que la primera del Palace son rayas rojiazules ya no vale para 26/27. Codigo de estilo blanco 600153340001 = **HOME** ("Eagle Sash", vuelve la banda diagonal 50 anos despues, confirmado por cpfc.co.uk y about.macron.com). Codigo negro 600153380001 = **AWAY** ("Eagle Black", base negra con detalles rojos y azules). La tercera de esta temporada es la "Eagle Wings" (rayas diagonales tipo rayo), que es OTRA camiseta y no ninguna de estas dos. Aplicarlas con esos dos slots.
 
@@ -97,6 +107,19 @@ send_alert() {
 
 if [[ $CLAUDE_EXIT -ne 0 ]]; then
   send_alert "Daily scan failed (exit $CLAUDE_EXIT)" "The headless run at $(date -u +%Y-%m-%dT%H:%M:%SZ) exited with code $CLAUDE_EXIT. Check scripts/daily_scan.log on the Mini PC for details."
+  # Precios y stock ya los dejó el refresco determinista de arriba; lo que
+  # Claude hace al final (bajadas de precio, historial) se hace aquí, salvo
+  # que Claude llegara a hacerlo antes de fallar (snapshot ya tocado).
+  if [[ ! scripts/catalog-mining/price_snapshot.json -nt "$SCAN_MARK" ]]; then
+    npx tsx scripts/catalog-mining/track_price_drops.mts 2>&1 | tail -2
+  fi
+fi
+rm -f "$SCAN_MARK"
+
+if printf '%s' "$REFRESH_OUT" | grep -q '^AVISO amazon:'; then
+  send_alert "Amazon: ofertas sin verificar a punto de caducar" "$(printf '%s' "$REFRESH_OUT" | grep -A200 '^AVISO amazon:' | grep -E '^(AVISO|    )')
+
+Sin PA-API no se puede leer el precio de Amazon en bloque: cada oferta caduca (inStock:false) a los 14 días sin verificar. Abrir cada enlace, corregir el precio en src/data/products.ts si cambió y marcarla verificada con el comando de arriba."
 fi
 
 if [[ -n "$(git status --porcelain)" ]]; then
@@ -111,6 +134,7 @@ if [[ -n "$(git status --porcelain)" ]]; then
     src/data/products.ts \
     src/data/productDominantColors.json \
     src/data/priceHistory.json \
+    src/data/priceDrops.json \
     src/data/boots.ts \
     src/data/bootTierData.json \
     src/data/bootDominantColors.json \
@@ -203,8 +227,25 @@ fi
 # está en caché se regenera: es una escritura ISR y CPU por URL.
 python3 scripts/indexnow.py 2>&1 | tail -3
 
-# El mismo anuncio en dos fichas (año suelto vs temporada): lo deja solo en la
-# de su temporada real. Agregado 2026-09-30, ver el docstring del script.
+# Anuncios eBay muertos, en los cuatro sitios (eBay/ES/IT/GB), por id de
+# anuncio y en rotación (estado en ebay_stale_check_state.json). Va aquí y no
+# dentro de la sesión de Claude (2026-10-09): así corre aunque Claude falle,
+# y después de la minería, con la cuota de Browse que esta haya dejado menos
+# una reserva para /api/ebay-shipping. Si products.ts quedó sin commitear
+# (la red de seguridad lo deja así a propósito para revisión), no se toca.
+# Va ANTES del dedupe: este propaga "muerto" a todas las copias de un id.
+if git diff --quiet -- src/data/products.ts; then
+  python3 -u scripts/catalog-mining/ebay_check_stale.py 2>&1 | grep -v '^  unknown' | tail -4
+  git add src/data/products.ts scripts/catalog-mining/ebay_stale_check_state.json
+  git diff --cached --quiet || { git commit -q -m "chore(ebay): anuncios terminados fuera de stock ($(date +%Y-%m-%d))" && \
+    git push -q origin "$(git rev-parse --abbrev-ref HEAD)"; }
+else
+  echo "=== ebay_check_stale: products.ts tiene cambios sin commitear, se salta ==="
+fi
+
+# El mismo anuncio en varias filas (copias eBay/ES/IT/GB del mismo /itm/<id>,
+# o el mismo anuncio en dos fichas): una fila, en la ficha de su temporada.
+# Agregado 2026-09-30, por id de anuncio desde 2026-10-09; ver el docstring.
 if python3 scripts/catalog-mining/dedupe_same_url.py --apply | tail -1 | grep -q "aplicado"; then
   git add src/data/products.ts src/data/productAliases.ts && \
     git commit -q -m "chore(catalogo): mismo anuncio en dos fichas, deduplicado ($(date +%Y-%m-%d))" && \

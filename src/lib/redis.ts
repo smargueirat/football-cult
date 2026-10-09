@@ -19,7 +19,15 @@ export function getRedis(): Promise<RedisClientType> {
     }
     const client: RedisClientType = createClient({ url });
     client.on("error", (err) => console.error("Redis client error", err));
-    clientPromise = client.connect().then(() => client);
+    // Si la conexión falla, se olvida la promesa: si no, cada llamada
+    // posterior heredaba el mismo rechazo hasta reiniciar el proceso.
+    clientPromise = client.connect().then(
+      () => client,
+      (err) => {
+        clientPromise = null;
+        throw err;
+      }
+    );
   }
   return clientPromise;
 }

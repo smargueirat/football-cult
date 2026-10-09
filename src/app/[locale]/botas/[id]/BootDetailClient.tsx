@@ -4,12 +4,14 @@ import Image from "next/image";
 import { useState } from "react";
 import BackToCatalogLink from "@/components/BackToCatalogLink";
 import { BootProduct, BootOffer } from "@/data/boots";
-import { formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { approxPriceLabel, formatOfferMoney, bootOfferTotalInEUR, shippingNotMeasured, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
-import { offersForCountry } from "@/lib/productMeta";
+import { offerShipsTo } from "@/lib/productMeta";
+import { rankOffers } from "@/lib/offerOrder";
+import ApproxPrice from "@/components/ApproxPrice";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, upsizeBootDetailPhoto } from "@/lib/images";
@@ -33,23 +35,24 @@ export default function BootDetailClient({
   const { countryCode, country } = useCountry();
   const favorite = isFavorite(boot.id);
 
-  // bootOfferTotalInEUR (no el precio bruto) porque Pro Soccer factura en
-  // USD -- ver el comentario largo en boots.ts.
-  const sortedOffers = [...boot.offers].sort(
-    (a, b) => bootOfferTotalInEUR(a) - bootOfferTotalInEUR(b)
-  );
-  // Ofertas que no envían al país del visitante: siguen listadas, atenuadas,
-  // y nunca son "mejor precio" (salvo que ninguna envíe: entonces todas valen).
-  const shippable = offersForCountry(sortedOffers, countryCode);
-  const cheapestOffer = shippable[0];
-  const cheapestTotal = cheapestOffer.price + cheapestOffer.shipping;
+  // Las que envían al país primero; dentro, precio total y, solo en empate
+  // (±1 %), comisión (offerOrder.ts). Las que no envían van aparte, al final,
+  // y nunca son "mejor precio": si ninguna envía, no hay mejor precio.
+  const ships = (o: BootOffer) => offerShipsTo(o.store, countryCode);
+  const sortedOffers = rankOffers(boot.offers, bootOfferTotalInEUR, ships, (o) => !shippingNotMeasured(o, countryCode));
+  const shippable = sortedOffers.filter(ships);
+  const elsewhere = sortedOffers.filter((o) => !ships(o));
+  const cheapestOffer: BootOffer | undefined = shippable[0];
+  const leadOffer = cheapestOffer ?? sortedOffers[0];
+  const cheapestTotal = leadOffer.price + leadOffer.shipping;
 
   // Ahorro frente a la MEDIANA de las tiendas (no la más cara). ProSoccer
   // queda afuera: su envío internacional no figura en el feed y su "total"
-  // sería menor al real. Con menos de 3 tiendas distintas no se muestra.
+  // sería menor al real (igual que cualquier tienda sin envío medido para el
+  // país). Con menos de 3 tiendas distintas no se muestra.
   const medianSavings = savingsVsMedian(
     shippable
-      .filter((o) => o.store !== "ProSoccer")
+      .filter((o) => !shippingNotMeasured(o, countryCode))
       .map((o) => ({ store: o.store, total: bootOfferTotalInEUR(o) })),
   );
 
@@ -69,7 +72,7 @@ export default function BootDetailClient({
   // color" separada, se deja elegir la foto real de cada tienda tocando
   // su oferta -- mismo dato que ya se mostraba, solo se lo conecta a la
   // foto grande.
-  const [selectedOffer, setSelectedOffer] = useState<BootOffer>(cheapestOffer);
+  const [selectedOffer, setSelectedOffer] = useState<BootOffer>(leadOffer);
   const hasDistinctPhotos = new Set(boot.offers.map((o) => o.imageUrl)).size > 1;
 
   // Selector de talla real: algunas tiendas (ver el comentario largo de
@@ -87,6 +90,134 @@ export default function BootDetailClient({
     if (!offer.sizePrices || offer.sizePrices.length === 0) return null;
     const sel = selectedSize[offer.store] ?? cheapestSize(offer);
     return offer.sizePrices.find((sp) => sp.size === sel) ?? offer.sizePrices[0];
+  }
+
+  function renderRow(offer: BootOffer, i: number) {
+    const ships = shippable.includes(offer);
+    const isSelected = offer.imageUrl === selectedOffer.imageUrl;
+    const sp = activeSizePrice(offer);
+    const rowUrl = sp ? sp.url : offer.url;
+    const rowPrice = sp ? sp.price : offer.price;
+    return (
+      // div, no button: ya trae adentro un <a> real (ver oferta) y un
+      // <button> real (comparar) -- anidar cualquiera de los dos
+      // dentro de un <button> es HTML inválido. El click en la fila
+      // (fuera de esos dos controles, que llevan stopPropagation)
+      // elige la foto de esta oferta como foto grande.
+      <div
+        key={offer.store}
+        onClick={() => setSelectedOffer(offer)}
+        className={`glass-panel relative flex w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-colors ${
+          hasDistinctPhotos ? "cursor-pointer" : ""
+        } ${ships ? "" : "pointer-events-none opacity-40"} ${
+          hasDistinctPhotos && isSelected
+            ? "border-[#1B3B2B] ring-1 ring-[#1B3B2B]"
+            : "border-[#C9A24B]/25"
+        }`}
+      >
+        <div className="flex items-center gap-3">
+          {hasDistinctPhotos && (
+            <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-[#C9A24B]/30 bg-white">
+              <Image src={offer.imageUrl} alt={offer.store} fill unoptimized className="object-contain p-1" />
+            </span>
+          )}
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-sm font-medium text-[#1a1a1a]">
+                {offer.store}
+                {offer === cheapestOffer && (
+                  <span className="ml-2 rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#F3E9C9]">
+                    {t.botas.bestPrice}
+                  </span>
+                )}
+              </p>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleCompare(boot.id, offer.store);
+                }}
+                disabled={!isComparing(boot.id, offer.store) && maxReached}
+                title={!isComparing(boot.id, offer.store) && maxReached ? t.compare.maxReached : undefined}
+                className={`flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                  isComparing(boot.id, offer.store)
+                    ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                    : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40 hover:text-[#1a1a1a]"
+                }`}
+              >
+                <svg className="h-3 w-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
+                  />
+                </svg>
+                {isComparing(boot.id, offer.store) ? t.compare.remove : t.compare.add}
+              </button>
+            </div>
+            {offer.sizes.length > 0 && (
+              <p className="text-xs text-[#675c44]">
+                {t.botas.sizesEU}: {offer.sizes[0]}–{offer.sizes[offer.sizes.length - 1]}
+              </p>
+            )}
+            {offer.sizePrices && (
+              <div className="mt-1 flex flex-wrap gap-1" onClick={(e) => e.stopPropagation()}>
+                {offer.sizePrices.map((sizeOpt) => {
+                  const isSizeSelected = (selectedSize[offer.store] ?? cheapestSize(offer)) === sizeOpt.size;
+                  return (
+                    <button
+                      key={sizeOpt.size}
+                      type="button"
+                      onClick={() =>
+                        setSelectedSize((prev) => ({ ...prev, [offer.store]: sizeOpt.size }))
+                      }
+                      className={`rounded border px-1.5 py-0.5 text-[10px] font-medium transition-colors ${
+                        isSizeSelected
+                          ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
+                          : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40"
+                      }`}
+                    >
+                      {sizeOpt.size}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+            <p className="text-xs text-[#675c44]">
+              {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
+              {formatOfferMoney(rowPrice, offer.currency)}{" "}
+              <ApproxPrice amount={rowPrice} currency={offer.currency} />
+              {shippingUnknown(offer, countryCode)
+                ? // Sin dato de envío de esta tienda para este país (ver
+                  // SHIPPING_KNOWN_FOR en offerMoney.ts): decir "envío
+                  // gratis" acá sería un dato falso, no una aproximación.
+                  ` · ${t.botas.shippingCalculatedAtStore}`
+                : offer.shipping > 0
+                  ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
+                  : ` · ${t.botas.freeShipping}`}
+            </p>
+          </div>
+        </div>
+        <a
+          href={goHref({ kind: "b", productId: boot.id, url: rowUrl, locale, origin: "ficha", position: i + 1, isBest: offer === cheapestOffer })}
+          target="_blank"
+          rel="noopener noreferrer nofollow sponsored"
+          onClick={(e) => {
+            e.stopPropagation();
+            trackOfferClick({ productId: boot.id, position: i + 1, isBest: offer === cheapestOffer, store: offer.store, url: rowUrl, price: rowPrice, currency: offer.currency });
+          }}
+          className="vintage-plaque shrink-0 rounded-xl px-4 py-2 text-sm font-semibold"
+        >
+          {t.botas.viewOffer}
+        </a>
+        {!ships && (
+          <span className="shadow-vintage-sm pointer-events-none absolute right-3 top-3 z-10 rounded border border-[#675c44]/60 bg-[#fffdf8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#675c44]">
+            {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
+          </span>
+        )}
+      </div>
+    );
   }
 
   return (
@@ -137,10 +268,15 @@ export default function BootDetailClient({
             {boot.brand} · {boot.groundType}
           </span>
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{boot.model}</h1>
-          <p className="mt-2 text-sm text-[#675c44]">
-            {t.botas.bestPrice}: {cheapestOffer.priceMax ? `${t.botas.from} ` : ""}
-            {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}
-          </p>
+          {cheapestOffer ? (
+            <p className="mt-2 text-sm text-[#675c44]">
+              {t.botas.bestPrice}: {cheapestOffer.priceMax ? `${t.botas.from} ` : ""}
+              {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {shippingUnknown(cheapestOffer, countryCode) ? "" : t.botas.shippingIncluded}{" "}
+              <ApproxPrice amount={cheapestTotal} currency={cheapestOffer.currency} className="text-xs" />
+            </p>
+          ) : (
+            <p className="mt-2 text-sm text-[#675c44]">{t.countryPanel.notAvailable}</p>
+          )}
 
           {medianSavings && medianSavings.abs >= 1 && (
             <p className="mt-2 inline-flex rounded-lg bg-[#1B3B2B]/10 px-3 py-1.5 text-sm font-medium text-[#1B3B2B]">
@@ -150,7 +286,7 @@ export default function BootDetailClient({
                 .replace("{pct}", String(medianSavings.pct))}
             </p>
           )}
-          <PriceArchiveLine stats={archiveStats[cheapestOffer.url] ?? null} />
+          <PriceArchiveLine stats={cheapestOffer ? (archiveStats[cheapestOffer.url] ?? null) : null} />
 
           {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
               precio por mail (ver FavoritesContext.tsx y check-prices).
@@ -177,134 +313,17 @@ export default function BootDetailClient({
           )}
 
           <div className="mt-3 flex flex-col gap-3">
-            {sortedOffers.map((offer, i) => {
-              const ships = shippable.includes(offer);
-              const isSelected = offer.imageUrl === selectedOffer.imageUrl;
-              const sp = activeSizePrice(offer);
-              const rowUrl = sp ? sp.url : offer.url;
-              const rowPrice = sp ? sp.price : offer.price;
-              return (
-                // div, no button: ya trae adentro un <a> real (ver oferta) y un
-                // <button> real (comparar) -- anidar cualquiera de los dos
-                // dentro de un <button> es HTML inválido. El click en la fila
-                // (fuera de esos dos controles, que llevan stopPropagation)
-                // elige la foto de esta oferta como foto grande.
-                <div
-                  key={offer.store}
-                  onClick={() => setSelectedOffer(offer)}
-                  className={`glass-panel relative flex w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-colors ${
-                    hasDistinctPhotos ? "cursor-pointer" : ""
-                  } ${ships ? "" : "pointer-events-none opacity-40"} ${
-                    hasDistinctPhotos && isSelected
-                      ? "border-[#1B3B2B] ring-1 ring-[#1B3B2B]"
-                      : "border-[#C9A24B]/25"
-                  }`}
-                >
-                  <div className="flex items-center gap-3">
-                    {hasDistinctPhotos && (
-                      <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-lg border border-[#C9A24B]/30 bg-white">
-                        <Image src={offer.imageUrl} alt={offer.store} fill unoptimized className="object-contain p-1" />
-                      </span>
-                    )}
-                    <div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <p className="text-sm font-medium text-[#1a1a1a]">
-                          {offer.store}
-                          {offer === cheapestOffer && (
-                            <span className="ml-2 rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] font-semibold uppercase text-[#F3E9C9]">
-                              {t.botas.bestPrice}
-                            </span>
-                          )}
-                        </p>
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleCompare(boot.id, offer.store);
-                          }}
-                          disabled={!isComparing(boot.id, offer.store) && maxReached}
-                          title={!isComparing(boot.id, offer.store) && maxReached ? t.compare.maxReached : undefined}
-                          className={`flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                            isComparing(boot.id, offer.store)
-                              ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-                              : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40 hover:text-[#1a1a1a]"
-                          }`}
-                        >
-                          <svg className="h-3 w-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"
-                            />
-                          </svg>
-                          {isComparing(boot.id, offer.store) ? t.compare.remove : t.compare.add}
-                        </button>
-                      </div>
-                      {offer.sizes.length > 0 && (
-                        <p className="text-xs text-[#675c44]">
-                          {t.botas.sizesEU}: {offer.sizes[0]}–{offer.sizes[offer.sizes.length - 1]}
-                        </p>
-                      )}
-                      {offer.sizePrices && (
-                        <div className="mt-1 flex flex-wrap gap-1" onClick={(e) => e.stopPropagation()}>
-                          {offer.sizePrices.map((sizeOpt) => {
-                            const isSizeSelected = (selectedSize[offer.store] ?? cheapestSize(offer)) === sizeOpt.size;
-                            return (
-                              <button
-                                key={sizeOpt.size}
-                                type="button"
-                                onClick={() =>
-                                  setSelectedSize((prev) => ({ ...prev, [offer.store]: sizeOpt.size }))
-                                }
-                                className={`rounded border px-1.5 py-0.5 text-[10px] font-medium transition-colors ${
-                                  isSizeSelected
-                                    ? "border-[#1B3B2B] bg-[#1B3B2B] text-[#F3E9C9]"
-                                    : "border-[#C9A24B]/40 bg-white/60 text-[#675c44] hover:border-[#1B3B2B]/40"
-                                }`}
-                              >
-                                {sizeOpt.size}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      )}
-                      <p className="text-xs text-[#675c44]">
-                        {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
-                        {formatOfferMoney(rowPrice, offer.currency)}
-                        {offer.store === "ProSoccer"
-                          ? // Tienda de EE.UU. -- el feed no da un costo de envío
-                            // internacional real, y su propia política dice
-                            // explícitamente que el envío gratis NO aplica a
-                            // pedidos internacionales -- decir "envío gratis"
-                            // acá sería un dato falso, no una aproximación.
-                            ` · ${t.botas.shippingCalculatedAtStore}`
-                          : offer.shipping > 0
-                            ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
-                            : ` · ${t.botas.freeShipping}`}
-                      </p>
-                    </div>
-                  </div>
-                  <a
-                    href={goHref({ kind: "b", productId: boot.id, url: rowUrl, locale, origin: "ficha", position: i + 1, isBest: offer === cheapestOffer })}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow sponsored"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      trackOfferClick({ store: offer.store, url: rowUrl, price: rowPrice, currency: offer.currency });
-                    }}
-                    className="vintage-plaque shrink-0 rounded-xl px-4 py-2 text-sm font-semibold"
-                  >
-                    {t.botas.viewOffer}
-                  </a>
-                  {!ships && (
-                    <span className="shadow-vintage-sm pointer-events-none absolute right-3 top-3 z-10 rounded border border-[#675c44]/60 bg-[#fffdf8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#675c44]">
-                      {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])}
-                    </span>
-                  )}
+            {shippable.map(renderRow)}
+            {elsewhere.length > 0 && (
+              <details className="rounded-xl border border-[#C9A24B]/25 bg-white/40 p-3">
+                <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-[#675c44]">
+                  {t.detail.notAvailableInCountry.replace("{country}", country.name[locale])} ({elsewhere.length})
+                </summary>
+                <div className="mt-3 flex flex-col gap-3">
+                  {elsewhere.map((o, i) => renderRow(o, shippable.length + i))}
                 </div>
-              );
-            })}
+              </details>
+            )}
           </div>
         </div>
       </div>
@@ -313,21 +332,22 @@ export default function BootDetailClient({
           total a la vista. En botas la lista de ofertas queda debajo de una
           foto cuadrada de pantalla completa, así que sin esto había que
           scrollear para encontrar dónde comprar. */}
-      {(() => {
+      {cheapestOffer && (() => {
         const sp = activeSizePrice(cheapestOffer);
         const barUrl = sp ? sp.url : cheapestOffer.url;
         const barPrice = sp ? sp.price : cheapestOffer.price;
-        const barTotal = barPrice + (cheapestOffer.store === "ProSoccer" ? 0 : cheapestOffer.shipping);
+        const barTotal = barPrice + cheapestOffer.shipping;
         return (
           <StickyBestOfferBar
             hideFrom="sm"
             store={cheapestOffer.store}
             total={`${!sp && cheapestOffer.priceMax ? `${t.botas.from} ` : ""}${formatOfferMoney(barTotal, cheapestOffer.currency)}`}
+            approx={approxPriceLabel(barTotal, cheapestOffer.currency, country.currency)}
             fromLabel={t.botas.bestPrice}
             goLabel={t.detail.goToStore.replace("{store}", cheapestOffer.store)}
-            href={barUrl}
+            href={goHref({ kind: "b", productId: boot.id, url: barUrl, locale, origin: "ficha", position: 1, isBest: true })}
             onClick={() =>
-              trackOfferClick({ store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
+              trackOfferClick({ productId: boot.id, position: 1, isBest: true, store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
             }
           />
         );

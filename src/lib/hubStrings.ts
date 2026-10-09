@@ -89,9 +89,9 @@ export const HUB: Record<HubLocale, S> = {
     women: "Mujer",
     browseCountries: "Explorar por país",
     browseLeagues: "Explorar por liga",
-    indexIntro: "Elegí una liga o un país para ver todos sus equipos y comparar el precio de cada camiseta entre tiendas.",
-    metaTeam: (t, p) => `Camisetas de ${t}: compará precios entre tiendas. Desde ${p}. Titular, suplente y tercera de todas las temporadas.`,
-    metaJersey: ({ team, type, season }) => `Compará precios de la camiseta ${type.toLowerCase()} de ${team} (${season}) entre distintas tiendas y comprá donde te convenga.`,
+    indexIntro: "Elige una liga o un país para ver todos sus equipos y comparar el precio de cada camiseta entre tiendas.",
+    metaTeam: (t, p) => `Camisetas de ${t}: compara precios entre tiendas. Desde ${p}. Primera, segunda y tercera equipación de todas las temporadas.`,
+    metaJersey: ({ team, type, season }) => `Compara precios de la camiseta de ${team} ${season} (${type.toLowerCase()}) entre distintas tiendas y compra donde más te convenga.`,
     metaGeneric: (n, c, p) => `${n}: ${c} camisetas de fútbol comparadas entre tiendas. Desde ${p}.`,
     seasonLabel: "Temporada",
     faqTitle: "Preguntas frecuentes",
@@ -100,7 +100,7 @@ export const HUB: Record<HubLocale, S> = {
       `Hoy, desde ${price} con envío incluido, en ${store}. Es el precio más bajo de ${n} ${n === 1 ? "camiseta comparada" : "camisetas comparadas"} entre ${stores} ${stores === 1 ? "tienda" : "tiendas"}.`,
     faqWhereQ: (x) => `¿Dónde está más barata la camiseta de ${x}?`,
     faqWhereA: ({ store, price }) =>
-      `En ${store}, a ${price}. Comparamos el total con envío, no solo el precio de lista, porque es lo que termina pagando.`,
+      `En ${store}, a ${price}. Comparamos el total con envío, no solo el precio de lista, porque es lo que acabas pagando.`,
     faqSaveQ: (x) => `¿Cuánto se ahorra comparando camisetas de ${x}?`,
     faqSaveA: ({ abs, pct, cheap, dear }) =>
       `En la camiseta con más diferencia, ${abs} (${pct}%): ${cheap} contra ${dear}. Solo se comparan tiendas oficiales entre sí; los marketplaces y las réplicas quedan fuera de esta cuenta porque no son el mismo producto.`,
@@ -113,7 +113,7 @@ export const HUB: Record<HubLocale, S> = {
       `Hoy, ${price} con envío incluido, en ${store}. Es el más bajo de ${n} ${n === 1 ? "producto comparado" : "productos comparados"} entre ${stores} ${stores === 1 ? "tienda" : "tiendas"}.`,
     faqGearWhereQ: (h) => `${h}: ¿qué tienda tiene el precio más bajo?`,
     faqGearWhereA: ({ store, price }) =>
-      `${store}, a ${price}. Comparamos el total con envío, no solo el precio de lista, porque es lo que termina pagando.`,
+      `${store}, a ${price}. Comparamos el total con envío, no solo el precio de lista, porque es lo que acabas pagando.`,
     faqGearSaveQ: (h) => `${h}: ¿cuánto se ahorra comparando?`,
     studsGuideLink: "¿Qué tapones necesito para mi campo? Guía por terreno",
   },

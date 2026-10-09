@@ -71,7 +71,10 @@ function productJsonLd(product: Product, locale: HubLocale) {
 // admite una sola moneda.
 function aggregateOffer(offers: Product["offers"]) {
   const byCurrency = new Map<string, Product["offers"]>();
-  for (const o of offers) {
+  // El rango ("desde X") sale solo de lo que se puede comprar; las agotadas
+  // siguen listadas abajo como OutOfStock. Si no queda ninguna, todas.
+  const live = offers.filter((o) => o.inStock);
+  for (const o of live.length > 0 ? live : offers) {
     const list = byCurrency.get(o.currency) ?? [];
     list.push(o);
     byCurrency.set(o.currency, list);

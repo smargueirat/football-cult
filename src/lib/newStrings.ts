@@ -25,8 +25,8 @@ export const NEW_UI: Record<HubLocale, {
     h1: "Camisetas nuevas",
     metaTitle: "Camisetas de fútbol nuevas — Comparar precios",
     metaDescription: "Las camisetas de la temporada 2026/27 que acaban de salir, con el precio de cada tienda que ya las tiene.",
-    intro: (n) => `${n} camisetas de temporada que entraron al catálogo en los últimos 30 días, de la más nueva a la más vieja. Cuando sale una camiseta nueva, la sumamos en menos de un día con el precio de cada tienda que ya la vende.`,
-    empty: "No entraron camisetas nuevas en los últimos 30 días.",
+    intro: (n) => `${n} camisetas de temporada que han entrado en el catálogo en los últimos 30 días, de la más nueva a la más antigua. Cuando sale una camiseta nueva, la añadimos en menos de un día con el precio de cada tienda que ya la vende.`,
+    empty: "No ha entrado ninguna camiseta nueva en los últimos 30 días.",
     badge: (d) => `Nueva · ${d}`,
   },
   en: {
