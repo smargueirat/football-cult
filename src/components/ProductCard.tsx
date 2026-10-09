@@ -20,6 +20,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
+import { mainPhoto } from "@/lib/officialStores";
 import { useBestOfferForCountry } from "@/lib/useBestOfferForCountry";
 import { useInView } from "@/lib/useInView";
 import JerseyIcon from "./JerseyIcon";
@@ -59,7 +60,7 @@ export default function ProductCard({ product }: { product: Product }) {
   // oferta más barata. El nombre armado queda solo como respaldo para
   // los pocos casos sin oferta cargada todavía.
   const displayName = displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
-  const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
+  const photo = mainPhoto(best, product.offers);
   const [imageLoaded, setImageLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   // Si el navegador ya tenía la imagen en caché, puede terminar de

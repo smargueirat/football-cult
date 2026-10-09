@@ -16,7 +16,7 @@ import {
 } from "@/data/products";
 import { formatOfferMoney, offerTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
 import ApproxPrice from "@/components/ApproxPrice";
-import { isComparableStore } from "@/lib/officialStores";
+import { isComparableStore, mainPhoto } from "@/lib/officialStores";
 import { variantKey } from "@/lib/jerseyVersion";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -104,7 +104,7 @@ export default function ProductCard3D({
   const isKids = ageGroup === "kids";
   const isWomen = ageGroup === "women";
   const displayName = displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
-  const photo = best?.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
+  const photo = mainPhoto(best, product.offers);
   const [imageLoaded, setImageLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {

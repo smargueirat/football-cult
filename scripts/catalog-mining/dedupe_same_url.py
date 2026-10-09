@@ -18,7 +18,16 @@ URL entera, como siempre.
    su envío propio (el envío en vivo por país de /api/ebay-shipping es solo
    para store "eBay"). Si alguna copia estaba `inStock: false`, la que queda
    también (un id muerto en eBay está muerto en todos los sitios).
-Fichas que quedan vacías: borradas + alias en productAliases.ts.
+3. Ficha de año suelto de un club de liga de temporada partida ("2024") con
+   gemela de temporada ("2023/24" o "2024/25", mismo equipo, equipación,
+   variante y público) -> sus anuncios pasan a la gemela: a la que nombra el
+   título, o a la única gemela si el título no dice nada. Si hay dos gemelas
+   y el título no decide, o el título nombra otra temporada, el anuncio se
+   queda. 2026-10-08: 459 fichas gemelas ("celtic-retro-2024-away" junto a
+   "celtic-retro-202425-away"); los parsers leían "2024 / 2025" como 2024
+   suelto (arreglado en extract.normalize_season_text).
+Fichas que quedan vacías: borradas + alias en productAliases.ts (la URL vieja
+hace 301 a la buena, ver camiseta/[id]/page.tsx).
 
 Por qué: 2026-09-30, 182 anuncios en la ficha de año suelto y en la de
 temporada; 2026-10-09, 3.548 filas eBay redundantes en 2.493 fichas y 111
@@ -146,26 +155,95 @@ for p in removed:
     if not OFFER_RE.findall(blocks[idx[p]]):
         aliases[p] = kept_in[p]
         blocks[idx[p]] = ""
+
+# 3. ficha de año suelto con gemela de temporada
+tm = open(ROOT + "/src/data/teamMeta.ts", encoding="utf-8").read()
+tm = tm[tm.index("TEAM_LEAGUE"):]
+TEAM_LEAGUE = dict(re.findall(r'^  "?([a-z0-9]+)"?: "([a-z0-9-]+)",$', tm[:tm.index("\n};")], re.M))
+# Ligas de año natural: ahí "2024" ES la temporada, no un duplicado.
+CALENDAR_LEAGUES = {"mls", "brasileirao", "liga-argentina", "j-league", "liga-colombia", "liga-chile", "liga-uruguay"}
+
+
+def core(pid, season):
+    """Id sin la temporada: "celtic-retro-2024-away" y "celtic-retro-202425-away" -> "celtic-retro-*-away"."""
+    return re.sub(r"-mens$", "", pid.replace("-" + season.replace("/", ""), "-*", 1))
+
+
+twin_groups = collections.defaultdict(list)
+for pid, i in idx.items():
+    if blocks[i]:
+        b = blocks[i]
+        twin_groups[(core(pid, fld(b, "season")), fld(b, "typeKey"), fld(b, "ageGroup"))].append(pid)
+
+moved = already = undecided = 0
+twin_aliases = {}
+for pid, i in idx.items():
+    b = blocks[i]
+    season, team, age = fld(b, "season"), fld(b, "teamKey"), fld(b, "ageGroup")
+    # niños: una ficha por equipo y tipo con temporada fija, no son gemelas reales
+    if not b or not re.fullmatch(r"\d{4}", season) or age == "kids" \
+            or TEAM_LEAGUE.get(team) in (None, *CALENDAR_LEAGUES):
+        continue
+    y = int(season)
+    split_seasons = {f"{y - 1}/{str(y)[2:]}", f"{y}/{str(y + 1)[2:]}"}
+    twins = {fld(blocks[idx[q]], "season"): q for q in twin_groups[(core(pid, season), fld(b, "typeKey"), age)]
+             if q != pid and fld(blocks[idx[q]], "season") in split_seasons}
+    if not twins:
+        continue
+    retro = fld(b, "typeKey") == "retro"
+    got = collections.Counter()
+    for line in OFFER_RE.findall(b):
+        said = title_season((re.search(r'title: "([^"]*)"', line) or [None, ""])[1], retro)
+        if said in twins:
+            target = twins[said]
+        elif said in (None, season) and len(twins) == 1:
+            target = next(iter(twins.values()))
+        else:
+            undecided += 1
+            continue
+        t = idx[target]
+        blocks[i] = blocks[i].replace(line, "", 1)
+        if any(key_of(l) == key_of(line) for l in OFFER_RE.findall(blocks[t])):
+            already += 1
+        else:
+            cut = blocks[t].rindex("    ],\n")
+            blocks[t] = blocks[t][:cut] + line + blocks[t][cut:]
+            moved += 1
+        got[target] += 1
+    if got and not OFFER_RE.findall(blocks[i]):
+        twin_aliases[pid] = got.most_common(1)[0][0]
+        blocks[i] = ""
+        print(f"{pid}: fundida en {twin_aliases[pid]}")
+
 eb_after = sum(1 for b in blocks for l in OFFER_RE.findall(b) if ITM.search(l))
 print(f"\nfilas eBay: {eb_before} -> {eb_after}; repetidas dentro de la ficha quitadas: {in_ficha}")
 print(f"anuncios duplicados entre fichas resueltos: {sum(removed.values())} filas"
       f" (dudosos: {doubtful}), sin decidir: {skipped}, fichas vaciadas: {len(aliases)}")
-if APPLY and (removed or in_ficha):
+print(f"fichas de año suelto fundidas con su temporada: {len(twin_aliases)} "
+      f"(anuncios movidos: {moved}, ya estaban: {already}, sin decidir: {undecided})")
+
+
+def write_aliases(new, why):
+    """Una sola escritura para las dos pasadas. Una ficha que ya era alias y la
+    minería resucitó se reapunta en su entrada (una clave repetida rompe tsc)."""
+    A = ROOT + "/src/data/productAliases.ts"
+    s = open(A, encoding="utf-8").read()
+    marker = "export const PRODUCT_ID_ALIASES: Record<string, string> = {\n"
+    old = {k for k in new if re.search(rf'^  "{re.escape(k)}": ', s, re.M)}
+    for k in old:
+        s = re.sub(rf'^(  "{re.escape(k)}": )"[^"]*",', lambda m: f'{m[1]}"{new[k]}",', s, flags=re.M)
+    fresh = [k for k in new if k not in old]
+    if fresh:
+        s = s.replace(marker, marker + f"  // {datetime.date.today()}: {why}\n"
+                      + "".join(f'  "{k}": "{new[k]}",\n' for k in fresh), 1)
+    for k, v in new.items():  # apuntar siempre al id vigente, nunca a otro alias
+        s = s.replace(f': "{k}",', f': "{v}",')
+    open(A, "w", encoding="utf-8").write(s)
+
+if APPLY and (removed or in_ficha or moved or already):
     open(P, "w", encoding="utf-8").write(head + "".join(blocks) + tail)
-    if aliases:
-        A = ROOT + "/src/data/productAliases.ts"
-        s = open(A, encoding="utf-8").read()
-        marker = "export const PRODUCT_ID_ALIASES: Record<string, string> = {\n"
-        # una ficha que ya era alias y la minería resucitó: se reapunta la
-        # entrada existente (una clave repetida rompe tsc)
-        old = {k: v for k, v in aliases.items() if re.search(rf'^  "{re.escape(k)}": ', s, re.M)}
-        for k, v in old.items():
-            s = re.sub(rf'^(  "{re.escape(k)}": )"[^"]*",', lambda m: f'{m[1]}"{v}",', s, flags=re.M)
-        add = (f"  // {datetime.date.today()}: el mismo anuncio estaba en dos fichas\n"
-               "  // (dedupe_same_url.py); la que quedó vacía redirige a la que se quedó.\n"
-               + "".join(f'  "{k}": "{v}",\n' for k, v in aliases.items() if k not in old))
-        s = s.replace(marker, marker + add, 1)
-        for k, v in aliases.items():
-            s = s.replace(f': "{k}",', f': "{v}",')
-        open(A, "w", encoding="utf-8").write(s)
+    if aliases or twin_aliases:
+        write_aliases({**aliases, **twin_aliases},
+                      "fichas fundidas por dedupe_same_url.py (mismo anuncio en dos\n"
+                      "  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.")
     print("aplicado")

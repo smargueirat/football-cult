@@ -10,6 +10,7 @@ import { offerTotalInEUR, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section } from "@/components/hubs/HubParts";
 import DealCard from "@/components/hubs/DealCard";
 import { isPriceDropped } from "@/lib/priceDrops";
+import { shortDate } from "@/lib/newStrings";
 import { bootProducts } from "@/data/boots";
 import { ticketProducts } from "@/data/tickets";
 import { apparelProducts } from "@/data/apparel";
@@ -112,7 +113,7 @@ export default async function Offers({ params }: P) {
                 <DealCard
                   key={x.id}
                   href={`/${locale}/tickets/${x.id}`}
-                  title={`${x.event} · ${x.date}`}
+                  title={`${x.event} · ${shortDate(x.date, locale)}`}
                   image={x.imageUrl}
                   price={o.price}
                   currency={o.currency}
