@@ -718,6 +718,21 @@ TITLE_KIDS_AGE_SUFFIX_RE = re.compile(
     re.I,
 )
 
+def normalize_season_text(title):
+    """Junta las temporadas escritas con espacios para que los parsers de
+    temporada las lean enteras: "2024 / 2025" -> "2024/2025", "2023 -24" ->
+    "2023-24", "2022 2023" -> "2022/23". Sin esto se leía solo el primer año y
+    la minería creaba una ficha de año suelto ("celtic-retro-2024-away") al
+    lado de la de temporada (459 fichas gemelas, auditoría 2026-10-08). Solo
+    une si el segundo año es 1-3 después del primero (kits de 2-3 años sí
+    existen); "2022 - 30 goles" no se toca."""
+    title = re.sub(r"\b(19\d\d|20\d\d)\s*([-/])\s*(19\d\d|20\d\d|\d{2})\b",
+                   lambda m: f"{m[1]}{m[2]}{m[3]}" if 1 <= (int(m[3][-2:]) - int(m[1])) % 100 <= 3 else m[0],
+                   title)
+    return re.sub(r"\b(19\d\d|20\d\d) (19\d\d|20\d\d)\b",
+                  lambda m: f"{m[1]}/{m[2][-2:]}" if int(m[2]) == int(m[1]) + 1 else m[0], title)
+
+
 # adidas Chile: "<titulo> <titulo> Hombre XS - Hombre Futbol XS" / "... Nino 9-10 anos - Nino
 # Futbol 9-10 anos" (publico + talla + " - " + deporte + la talla otra vez). Sin quitar
 # esto cada talla era un titulo distinto y todas las fichas salian con UNA talla.
