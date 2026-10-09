@@ -3,8 +3,9 @@ import type { ReactNode } from "react";
 import type { HubItem } from "@/lib/hubs";
 import { HUB } from "@/lib/hubStrings";
 import type { HubLocale } from "@/data/teamMeta";
-import { getAgeGroup } from "@/lib/productMeta";
-import { teamNames, typeNames } from "@/data/products";
+// teamNames/typeNames de productMeta, no del barrel @/data/products: importar
+// de ahí arrastra el catálogo entero a cualquier página que use estas piezas.
+import { getAgeGroup, teamNames, typeNames } from "@/lib/productMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { getDisplaySrc } from "@/lib/images";
 import { mainPhoto } from "@/lib/officialStores";

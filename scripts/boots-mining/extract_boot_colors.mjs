@@ -14,6 +14,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+// Por nombre de paquete, como extract_dominant_colors.mjs: la ruta fija a
+// node_modules/sharp/lib/index.js dejó de existir con sharp 0.35 (npm audit
+// fix del 2026-10-09, ahora es dist/index.mjs) y rompía refresh_boots.py.
 import sharp from "sharp";
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));

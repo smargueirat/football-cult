@@ -14,6 +14,7 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 import BootSkeleton from "./BootSkeleton";
+import { isKidsBoot } from "@/lib/bootLines";
 
 import { retailerCountText } from "@/lib/retailerFamily";
 // Mismo "chrome" visual que ProductCard3D (misma tarjeta, mismo badge de
@@ -101,6 +102,13 @@ export default function BootCard({
           <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
             {boot.brand}
           </span>
+          {/* adidas ES titula igual la de niño y la de adulto: sin esto
+              no se distinguen en el listado. */}
+          {isKidsBoot(boot) && (
+            <span className="vintage-plaque rounded px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider">
+              {t.search.ageGroupKids}
+            </span>
+          )}
           {/* Misma pila y mismo sello que ProductCard3D. Hasta ahora una
               bota no podía mostrar rebaja porque el rastreo nocturno solo
               escribía bajadas de camisetas (ver src/lib/priceDrops.ts). */}

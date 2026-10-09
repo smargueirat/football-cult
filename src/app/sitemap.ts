@@ -13,6 +13,7 @@ import { seasonSortValue } from "@/lib/productMeta";
 import { brandFacets, brandGroundCombos, groundFacets, groundSlug, typeFacets } from "@/lib/gearHubs";
 import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
 import { indexPaths } from "@/lib/catalogIndex";
+import { extraHubPaths } from "@/lib/extraHubs";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { archive, lastChangeDate } from "@/lib/priceArchive";
 import { getRetailerFamily } from "@/lib/retailerFamily";
@@ -205,6 +206,9 @@ function buildGroups(): { groups: MetadataRoute.Sitemap[]; counts: Record<Tier, 
     ...brandGroundCombos().map((c) => `/botas/marca/${c.brandSlug}/${groundSlug(c.ground)}`),
     ...typeFacets().map((t) => `/ropa/tipo/${t.slug}`),
     ...typeFacets("entrenamiento").map((t) => `/entrenamiento/tipo/${t.slug}`),
+    // Botas por línea / niño / sala, retro por equipo y década, entradas por
+    // equipo y competición (2026-10-09, src/lib/extraHubs.ts).
+    ...extraHubPaths().map((h) => h.path),
   ];
   // Sin lastModified inventado (antes: new Date() en todas). Solo estas dos
   // cambian con cada corrida del scan, y su fecha real es la de la última

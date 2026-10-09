@@ -17,13 +17,17 @@ modelo que ya esté en esos 71 legacy, para no mostrar la misma bota dos
 veces.
 
 Reglas de exclusión (dos pasadas reales, ver el header de boots.ts para
-la historia completa): rugby/Kakari, fútbol americano, fútbol
-sala/futsal/indoor (incluyendo "IC" como código de suela al final del
-nombre, ej. "Nike Street Gato IC" -- no es la palabra completa "indoor").
-Ampliadas 2026-09-12 (nuevas tiendas) con el equivalente en francés
-("salle") -- Foot-Store FR/Sport is Good FR categorizan mal algunos
-productos de futsal bajo "Chaussures de football > Adulte", igual que
-ya pasaba en las tiendas ES.
+la historia completa): rugby/Kakari, fútbol americano.
+
+Niño y fútbol sala (2026-10-09): hasta entonces se excluían; ahora entran
+marcados -- `ageGroup: "kids"` (categoría de la tienda: Junior/Baby,
+"Kids", "Children's", "Ninos", "Infantil", o Jr/junior/niño en el título)
+y `groundType: "IC"` (sala/futsal/indoor/salle o el código de suela
+"IC"/"IN"). La web los separa: las de niño no salen en el listado por
+defecto ni en los hubs de adulto (filtro "Edad" y /botas/ninos), las de
+sala tienen su chip de tapón y /botas/futbol-sala. Siguen solo adulto y
+de campo ProSoccer, Reebok DE y adidas CL (EXCLUDE_KEYWORDS) y la sala de
+Gigasport (su categoría mezcla balonmano y voley).
 """
 import csv, re, json, unicodedata, os
 
@@ -179,6 +183,36 @@ US_TO_EU = {
 def _fmt_eu(eu):
     return str(int(eu)) if eu == int(eu) else str(eu)
 
+# Tallas de niño de FutbolEmotion: "1,5Y" (US juvenil), "3,5 UK" / "12 UK"
+# (UK infantil), "33 EUR" o "33" a secas. Tablas estándar de calzado juvenil
+# de Nike/adidas (no medidas por modelo, igual que UK_TO_EU). "10C" (bebé) no
+# tiene equivalencia fiable y se descarta.
+US_YOUTH_TO_EU = {
+    1: 32, 1.5: 33, 2: 33.5, 2.5: 34, 3: 35, 3.5: 35.5, 4: 36, 4.5: 36.5,
+    5: 37.5, 5.5: 38, 6: 38.5, 6.5: 39, 7: 40,
+}
+UK_KIDS_TO_EU = {
+    10: 28, 10.5: 28.5, 11: 29, 11.5: 30, 12: 30.5, 12.5: 31, 13: 31.5, 13.5: 32,
+    1: 33, 1.5: 33.5, 2: 34, 2.5: 35, 3: 35.5, 3.5: 36,
+}
+
+def eu_size_from_futbolemotion_kids(v):
+    v = v.strip()
+    m = re.match(r'([\d,.]+)\s*(UK|USA|EUR|Y)?$', v, re.I)
+    if not m:
+        return None
+    num = float(m.group(1).replace(',', '.'))
+    unit = (m.group(2) or 'EUR').upper()
+    if unit == 'EUR':
+        return _fmt_eu(num) if 16 <= num <= 40 else None
+    if unit == 'Y':
+        eu = US_YOUTH_TO_EU.get(num)
+    elif unit == 'UK':
+        eu = UK_KIDS_TO_EU.get(num, UK_TO_EU.get(num))
+    else:
+        eu = US_TO_EU.get(num)
+    return _fmt_eu(eu) if eu is not None else None
+
 def eu_size_from_futbolemotion(v):
     # FutbolEmotion (TradeTracker) mezcla varios sistemas en el mismo
     # feed: "9 UK", "7.5 USA", "42,5 EUR", y también "... Y"/"... C"
@@ -198,29 +232,51 @@ def eu_size_from_futbolemotion(v):
     eu = table.get(num)
     return _fmt_eu(eu) if eu is not None else None
 
-EXCLUDE_KEYWORDS = re.compile(
+# Otro deporte: siempre fuera.
+SPORT_EXCLUDE = re.compile(
     r'\brugby\b|\bhockey\b|\bb[ée]isbol\b|\bkakari\b'
     r'|f[uú]tbol\s+american[oa]\b|\bamerican\s+football\b|football\s+am[ée]ricain\b'
-    r'|\bsala\b|f[uú]tbol\s+sala\b|\bfutsal\b|\bindoor\b|\bsalle\b|int[ée]rieur'
-    # "IC" (Indoor Court) como código de suela al final del nombre --
-    # mismo motivo que "indoor": calzado plano de calle/cancha dura, sin
-    # tacos, no es una bota de fútbol de pasto (ej. "Nike Street Gato
-    # IC", "Predator Pro IC"). Encontrado al armar el filtro de tapón
-    # (2026-09-11): se había colado porque el exclude solo miraba la
-    # palabra "indoor" completa, no esta abreviatura.
-    r'|\bIC\b'
-    # "IN" (Indoor) como código de suela al final del nombre -- mismo
-    # motivo que "IC", encontrado en Foot-Store FR/Sport is Good FR
-    # (2026-09-12, ej. "adidas Predator Freak.3 IN", "Mizuno MRL Sala
-    # Club In"). Confirmado real antes de excluir: 166 filas, todas
-    # calzado de sala/indoor genuino, cero falsos positivos revisados.
-    r'|\bIN\b'
-    # exclusiones de junior/niño -- algunas tiendas nuevas (2026-09-12)
-    # no tienen un campo de edad confiable, así que el título es la
-    # única señal real disponible.
-    r'|\bjr\b|\bjunior\b|\bni[ñn]o\b|\bkids?\b',
+    # "adidas Predator Crib" (tallas 16-19): patucos de bebé de la categoría
+    # "Baby" de Foot-Store, no una bota.
+    r'|\bcrib\b',
     re.I,
 )
+# Fútbol sala / indoor. Hasta 2026-10-09 se EXCLUÍA; ahora entra con
+# groundType "IC" (ver classify()). "IC" (Indoor Court, "Nike Street Gato
+# IC") e "IN" ("adidas Predator Freak.3 IN") son códigos de suela al final
+# del nombre: van en mayúscula estricta, si no "in" de "Made in Japan"
+# contaba como sala.
+INDOOR_RE = re.compile(
+    r'\bsala\b|\bfutsal\b|\bindoor\b|\bsalle\b|int[ée]rieur|(?-i:\bIC\b|\bIN\b|\bI\.C\b)',
+    re.I,
+)
+# Niño/junior en el título: algunas tiendas no tienen un campo de edad
+# confiable, así que el título es la única señal real disponible.
+KIDS_RE = re.compile(
+    r'\bjr\b|\bjunior\b|\bni[ñn][oa]s?\b|\bkids?\b|\bkinder\b|\benfants?\b|\binfantil\b|\byouth\b',
+    re.I,
+)
+# Tiendas que siguen siendo solo adulto y de campo (ProSoccer, Reebok DE,
+# adidas CL: tallas de niño en US/CL sin tabla fiable, o casi nada de sala).
+EXCLUDE_KEYWORDS = re.compile('|'.join(r.pattern for r in (SPORT_EXCLUDE, INDOOR_RE, KIDS_RE)), re.I)
+
+
+def classify(title, kids=False, indoor=False):
+    """None si el título es de otro deporte; si no, (kids, indoor) combinando
+    la señal de categoría de la tienda con la del título."""
+    if SPORT_EXCLUDE.search(title or ''):
+        return None
+    return kids or bool(KIDS_RE.search(title or '')), indoor or bool(INDOOR_RE.search(title or ''))
+
+
+def tag(entry, kids, indoor):
+    """Marca la entrada como niño y/o sala. Sala pisa el terreno inferido: una
+    "Predator Club IN" no es FG aunque la descripción hable de césped."""
+    if indoor:
+        entry['groundType'] = 'IC'
+    if kids:
+        entry['ageGroup'] = 'kids'
+    return entry
 
 results = []
 
@@ -233,9 +289,10 @@ def mine_adidas_es():
         for row in csv.DictReader(f):
             if 'tbol' not in (row.get('merchant_category') or ''):
                 continue
-            if row.get('custom_1') != 'Adult':
+            # custom_1: "Adult" / "Kids" (las de niño entran desde 2026-10-09)
+            if row.get('custom_1') not in ('Adult', 'Kids'):
                 continue
-            if EXCLUDE_KEYWORDS.search(row.get('product_name') or ''):
+            if not classify(row.get('product_name')):
                 continue
             price = parse_price(row.get('search_price'))
             if not price:
@@ -260,14 +317,14 @@ def mine_adidas_es():
         brand = (rep.get('brand_name') or 'adidas').strip()
         model = rep.get('product_name', '').strip()
         ground = infer_ground(model, rep.get('description', ''))
-        results.append({
+        results.append(tag({
             'store': 'AdidasES', 'brand': brand, 'model': model, 'groundType': ground,
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
             'eans': sorted({(r.get('ean') or '').strip() for r in rows} - {''}),
             'style': style,
-        })
+        }, *classify(model, kids=rep.get('custom_1') == 'Kids')))
         n += 1
     print('AdidasES:', n)
 
@@ -279,9 +336,9 @@ def mine_blaz_awin(fname, store_label):
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             mc = row.get('merchant_category') or ''
-            if 'Chaussures de football' not in mc or '> Adulte' not in mc:
+            if not blaz_boot_category(mc):
                 continue
-            if EXCLUDE_KEYWORDS.search(row.get('product_name') or ''):
+            if not classify(row.get('product_name')):
                 continue
             price = parse_price(row.get('search_price'))
             if not price:
@@ -346,9 +403,23 @@ def mine_blaz_awin(fname, store_label):
             entry['priceMax'] = price_max
         if price_max > price:
             entry['sizePrices'] = size_prices
-        results.append(entry)
+        mc = rep.get('merchant_category') or ''
+        results.append(tag(entry, *classify(title, kids=blaz_is_kids(mc), indoor='Chaussures indoor' in mc)))
         n += 1
     print(f'{store_label}:', n)
+
+# Taxonomía de Foot-Store / Sport is Good (ES y FR, mismo backend Blaz):
+# "Football > Chaussures de football > Adulte|Junior|Baby > ..." y
+# "Football > Chaussures indoor > ..." (sala). Fuera de "Football >" hay
+# "Chaussures indoor" de baloncesto/voley: no entran.
+# Ojo: también hay "Football > Boutique du supporter > Chaussures de
+# football > Adulte" y "Football/Chaussures de football/Adulte/Mixte".
+def blaz_boot_category(cat):
+    boot = 'Chaussures de football' in cat or (cat.startswith('Football') and 'Chaussures indoor' in cat)
+    return boot and bool(re.search(r'\b(Adulte|Junior|Baby)\b', cat))
+
+def blaz_is_kids(cat):
+    return bool(re.search(r'\b(Junior|Baby)\b', cat))
 
 def mine_decathlon():
     if not os.path.exists(f"{FEEDS}/DECATHLONIE.csv"):
@@ -358,22 +429,24 @@ def mine_decathlon():
     with open(f"{FEEDS}/DECATHLONIE.csv", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             mc = row.get('merchant_category') or ''
-            if not mc.startswith("Adult") or 'Football Boots' not in mc or 'Accessories' in mc:
+            # "Adult's|Children's Football Boots ..." y "... Futsal Shoes"
+            if not mc.startswith(("Adult", "Children")) or not ('Football Boots' in mc or 'Futsal Shoes' in mc) or 'Accessories' in mc:
                 continue
-            if EXCLUDE_KEYWORDS.search(row.get('product_name') or ''):
+            if not classify(row.get('product_name')):
                 continue
             price = parse_price(row.get('search_price'))
             if not price:
                 continue
-            key = (row.get('brand_name', ''), row.get('product_name', ''))
+            # la categoría en la llave: el mismo nombre existe en adulto y niño
+            key = (row.get('brand_name', ''), row.get('product_name', ''), mc.startswith('Children'), 'Futsal' in mc)
             groups.setdefault(key, []).append(row)
     n = 0
-    for (brand, model), rows in groups.items():
+    for (brand, model, kids, indoor), rows in groups.items():
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')) or 1e9)
         sizes = sorted({dot_size(eu_size_from_uk_eu(r.get('Fashion:size', ''))) for r in rows if 'EU' in (r.get('Fashion:size') or '')},
                         key=size_sort_key)
         ground = infer_ground(rep.get('merchant_category', ''), model)
-        results.append({
+        results.append(tag({
             'store': 'DecathlonIE', 'brand': brand or 'Kipsta', 'model': model, 'groundType': ground,
             # el feed no trae costo de envio por item -- Decathlon IE aplica
             # envio gratis a partir de un monto minimo real, 0 es la mejor
@@ -381,7 +454,7 @@ def mine_decathlon():
             'price': parse_price(rep.get('search_price')), 'shipping': 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url') or rep.get('merchant_image_url'), 'sizes': sizes,
-        })
+        }, *classify(model, kids=kids, indoor=indoor)))
         n += 1
     print('DecathlonIE:', n)
 
@@ -413,10 +486,10 @@ def mine_google_shopping_fr(fname, store_label):
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             pt = row.get('product_type') or ''
-            if 'Chaussures de football' not in pt or 'Adulte' not in pt:
+            if not blaz_boot_category(pt):
                 continue
             title = row.get('title') or ''
-            if EXCLUDE_KEYWORDS.search(title):
+            if not classify(title):
                 continue
             price = gs_price(row)
             if not price:
@@ -468,7 +541,10 @@ def mine_google_shopping_fr(fname, store_label):
             entry['priceMax'] = price_max
         if price_max > price:
             entry['sizePrices'] = size_prices
-        results.append(entry)
+        pt = rep.get('product_type') or ''
+        # el título entero: el prefijo que se cortó ("Chaussures de futsal")
+        # es justo lo que dice que es de sala.
+        results.append(tag(entry, *classify(rep.get('title'), kids=blaz_is_kids(pt), indoor='Chaussures indoor' in pt)))
         n += 1
     print(f'{store_label}:', n)
 
@@ -490,10 +566,7 @@ def mine_deporte_outlet():
             tl = title.lower()
             if 'bota' not in tl or 'fútbol' not in tl:
                 continue
-            if EXCLUDE_KEYWORDS.search(title):
-                continue
-            gender = (row.get('custom_2') or '').strip().lower()
-            if 'nino' in gender or 'niño' in gender:
+            if not classify(title):
                 continue
             price = parse_price(row.get('search_price'))
             if not price:
@@ -520,12 +593,13 @@ def mine_deporte_outlet():
         brand = (rep.get('brand_name') or '').strip()
         model = norm_title(rep.get('product_name') or '')
         ground = infer_ground(model, rep.get('description', ''))
-        results.append({
+        gender = (rep.get('custom_2') or '').strip().lower()
+        results.append(tag({
             'store': 'DeporteOutlet', 'brand': brand or 'N/D', 'model': model, 'groundType': ground,
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
-        })
+        }, *classify(rep.get('product_name'), kids='nino' in gender or 'niño' in gender)))
         n += 1
     print('DeporteOutlet:', n)
 
@@ -686,7 +760,9 @@ def mine_gigasport(fname, store_label, boot_cats):
             if not any(c in cat for c in boot_cats):
                 continue
             title = row.get('product_name') or ''
-            if EXCLUDE_KEYWORDS.search(title) or GIGASPORT_KIDS_RE.search(title):
+            # Sala de Gigasport NO entra: su categoría "Hallenschuhe" / "futsal"
+            # mezcla balonmano y voley (ASICS Gel-Rocket, Kempa). Niño sí.
+            if not classify(title) or INDOOR_RE.search(title):
                 continue
             m = re.match(r'^(.*)\s\|\s([^|]+)$', title)
             if not m:
@@ -712,8 +788,14 @@ def mine_gigasport(fname, store_label, boot_cats):
         model = norm_title(base_title)
         if brand:
             model = re.sub(r'^' + re.escape(brand) + r'\s+', '', model, flags=re.I)
-        model = re.sub(r'^(herren|damen)\s+f[uü]ßballschuhe\s+', '', model, flags=re.I)
-        model = re.sub(r'^chaussures\s+de\s+football\s+pour\s+(hommes?|femmes?)\s+', '', model, flags=re.I)
+        model = re.sub(r'^(herren|damen|kinder)\s+f[uü]ßballschuhe\s+', '', model, flags=re.I)
+        model = re.sub(r'^chaussures\s+de\s+football\s+pour\s+(hommes?|femmes?|enfants?)\s+', '', model, flags=re.I)
+        kids = bool(GIGASPORT_KIDS_RE.search(base_title))
+        if kids and not KIDS_RE.search(model):
+            # el prefijo "Kinder"/"enfant" que se acaba de quitar era la única
+            # marca de niño del nombre: sin esto la ficha de niño se titula
+            # igual que la de adulto.
+            model += ' Kinder' if store_label != 'GigasportFR' else ' enfant'
         ground = infer_ground(base_title, rep_row.get('description', '')) or next(
             (code for pat, code in GIGASPORT_GROUND_EXTRA
              if re.search(pat, base_title + ' ' + (rep_row.get('description') or ''), re.I)),
@@ -733,7 +815,7 @@ def mine_gigasport(fname, store_label, boot_cats):
                 ({'size': dot_size(sz), 'price': p, 'url': r.get('aw_deep_link')} for r, sz, p in items),
                 key=lambda sp: size_sort_key(sp['size']),
             )
-        results.append(entry)
+        results.append(tag(entry, kids, False))
         n += 1
     print(f'{store_label}:', n)
 
@@ -744,14 +826,12 @@ def mine_gigasport(fname, store_label, boot_cats):
 # de fútbol de hombre ("Masculino - Chuteira") -- el resto del feed
 # (8.198 productos) es calzado general BR: tenis, sandalias, tamancos,
 # bolsas, mochilas, chinelos, etc, nada de eso pasa este filtro.
-# "Infantil - Menino - Chuteira" (71 filas, botas de fútbol de niño) se
-# descarta a propósito -- mismo criterio adulto-only que el resto del
-# catálogo de botas.
+# "Infantil - Menino - Chuteira" (botas de niño) entra desde 2026-10-09
+# con ageGroup "kids", igual que el resto de tiendas.
 #
 # Dentro de "Masculino - Chuteira" el título real distingue el terreno en
-# portugués: "Futsal"/"Indoor" (cancha techada, tacos de goma chicos) ya
-# caen en EXCLUDE_KEYWORDS (que ya excluye esas palabras en inglés/
-# español/francés), "Society" (césped sintético de 7, tipo AG) y "Campo"
+# portugués: "Futsal"/"Indoor" (cancha techada) va como sala (groundType
+# "IC", ver classify()), "Society" (césped sintético de 7, tipo AG) y "Campo"
 # (césped natural, tipo FG) son terreno real de fútbol al aire libre y sí
 # se incluyen -- confirmado por foto un muestreo de 8 productos
 # distintos (Penalty/Umbro/Topper/Dalponte/Nike, Society y Campo): todas
@@ -788,10 +868,11 @@ def mine_clovis():
     n = 0
     with open(f"{FEEDS}/CLOVIS_BR.csv", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
-            if row.get('product_type') != 'Masculino - Chuteira':
+            if row.get('product_type') not in ('Masculino - Chuteira', 'Infantil - Menino - Chuteira'):
                 continue
             title = row.get('product_name') or ''
-            if EXCLUDE_KEYWORDS.search(title):
+            flags = classify(title, kids=row.get('product_type', '').startswith('Infantil'))
+            if not flags:
                 continue
             if row.get('in_stock') != '1':
                 continue
@@ -799,7 +880,7 @@ def mine_clovis():
             if not price:
                 continue
             size = (row.get('Fashion:size') or '').strip()
-            results.append({
+            results.append(tag({
                 'store': 'ClovisCalcadosBR',
                 'brand': (row.get('brand_name') or '').strip() or 'N/D',
                 'model': clean_clovis_model(title),
@@ -814,7 +895,7 @@ def mine_clovis():
                 'url': row.get('aw_deep_link'),
                 'imageUrl': row.get('aw_image_url'),
                 'sizes': [size] if size else [],
-            })
+            }, *flags))
             n += 1
     print('ClovisCalcadosBR:', n)
 
@@ -842,12 +923,12 @@ def mine_futbolemotion(legacy_model_names):
     with open(FUTBOLEMOTION_SNAPSHOT, newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f, delimiter=';'):
             cat = row.get('categoryPath') or ''
-            if not cat.startswith('Botas de fútbol'):
+            if not cat.startswith(('Botas de fútbol', 'Zapatillas fútbol sala')):
                 continue
             name = (row.get('name') or '').strip()
             if not name or name.lower() in legacy_model_names:
                 continue
-            if EXCLUDE_KEYWORDS.search(name):
+            if not classify(name):
                 continue
             price = parse_price(row.get('price'))
             if not price:
@@ -876,8 +957,10 @@ def mine_futbolemotion(legacy_model_names):
         rep = min(rows, key=lambda r: parse_price(r.get('price')) or 1e9)
         name = (rep.get('name') or '').strip()
         brand = (rep.get('brand') or name.split(' ')[0]).strip()
+        kids, indoor = classify(name, indoor=(rep.get('categoryPath') or '').startswith('Zapatillas fútbol sala'))
+        to_eu = eu_size_from_futbolemotion_kids if kids else eu_size_from_futbolemotion
         sizes = sorted(
-            {s for s in (eu_size_from_futbolemotion(r.get('size', '')) for r in rows) if s},
+            {s for s in (to_eu(r.get('size', '')) for r in rows) if s},
             key=size_sort_key,
         )
         if not sizes:
@@ -885,12 +968,12 @@ def mine_futbolemotion(legacy_model_names):
             # sin talla real no hay forma de filtrar ni de saber qué queda.
             continue
         ground = infer_ground(name, rep.get('categories', ''))
-        results.append({
+        results.append(tag({
             'store': 'FutbolEmotion', 'brand': brand, 'model': name, 'groundType': ground,
             'price': parse_price(rep.get('price')), 'shipping': 0,
             'currency': 'EUR',
             'url': rep.get('productURL'), 'imageUrl': rep.get('imageURL_large') or rep.get('imageURL'), 'sizes': sizes,
-        })
+        }, kids, indoor))
         n += 1
     print('FutbolEmotion:', n)
 
@@ -916,7 +999,10 @@ def mine_prodirect():
     n = 0
     for p in json.load(open(path)):
         title = p.get('title') or ''
-        if EXCLUDE_KEYWORDS.search(title):
+        # "para niños" en el título; sala por la etiqueta de terreno "indoor"
+        # (17 botas, antes entraban sin terreno).
+        flags = classify(title, indoor=p.get('ground') == 'indoor')
+        if not flags:
             continue
         vs = p['variants']
         sizes = sorted({_prodirect_size(v['size']) for v in vs}, key=size_sort_key)
@@ -934,7 +1020,7 @@ def mine_prodirect():
             entry['priceMax'] = price_max
             entry['sizePrices'] = sorted(({'size': _prodirect_size(v['size']), 'price': v['price'], 'url': p['url']} for v in vs),
                                          key=lambda sp: size_sort_key(sp['size']))
-        results.append(entry)
+        results.append(tag(entry, *flags))
         n += 1
     print('ProDirectES:', n)
 
