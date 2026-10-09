@@ -242,7 +242,7 @@ export default function GearDetailClient({
                     rel="noopener noreferrer nofollow sponsored"
                     onClick={(e) => {
                       e.stopPropagation();
-                      trackOfferClick({ store: offer.store, url: rowUrl, price: rowPrice, currency: offer.currency });
+                      trackOfferClick({ productId: item.id, position: i + 1, isBest: offer === cheapestOffer, store: offer.store, url: rowUrl, price: rowPrice, currency: offer.currency });
                     }}
                     className="vintage-plaque shrink-0 rounded-xl px-4 py-2 text-sm font-semibold"
                   >
@@ -273,9 +273,9 @@ export default function GearDetailClient({
             total={`${!sp && cheapestOffer.priceMax ? `${t.botas.from} ` : ""}${formatOfferMoney(barPrice + cheapestOffer.shipping, cheapestOffer.currency)}`}
             fromLabel={t.botas.bestPrice}
             goLabel={t.detail.goToStore.replace("{store}", cheapestOffer.store)}
-            href={barUrl}
+            href={goHref({ kind: GEAR_KIND[basePath], productId: item.id, url: barUrl, locale, origin: "ficha", isBest: true })}
             onClick={() =>
-              trackOfferClick({ store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
+              trackOfferClick({ productId: item.id, isBest: true, store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
             }
           />
         );

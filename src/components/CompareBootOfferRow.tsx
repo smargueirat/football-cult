@@ -34,7 +34,7 @@ export default function CompareBootOfferRow({
       href={goHref({ kind, productId, url: offer.url, locale, origin: "comparar", isBest })}
       target="_blank"
       onClick={() =>
-        trackOfferClick({ store: offer.store, url: offer.url, price: total, currency: offer.currency })
+        trackOfferClick({ productId, isBest, store: offer.store, url: offer.url, price: total, currency: offer.currency })
       }
       rel="noopener noreferrer nofollow sponsored"
       className={`flex flex-col gap-1.5 rounded-xl border p-3 transition-colors ${

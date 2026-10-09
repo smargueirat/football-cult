@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { LEGAL } from "@/lib/legalStrings";
+import { markGoClicks } from "@/lib/go";
 import {
   CONSENT_OPEN_EVENT,
   applyConsent,
@@ -28,6 +29,7 @@ export default function ConsentBanner() {
 
   // Arranque: defaults denegados siempre; si ya hay elección, se aplica.
   useEffect(() => {
+    markGoClicks(); // no es analítica ni cookie: solo marca el /go/ tocado
     setConsentDefaults();
     const saved = readConsent();
     if (saved) {

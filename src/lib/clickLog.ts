@@ -33,6 +33,19 @@ export type ClickRecord = {
   n?: number;
   b?: boolean;
   ua: string;
+  // Desde 2026-10-09 (las filas anteriores no los tienen; ver
+  // scripts/clicks_report.py). La IP solo se usa en memoria para contar
+  // ráfagas (src/lib/goOut.ts) y nunca se escribe.
+  /** Persona probable (false = robot: no se mandó a la red con nuestro id). */
+  h?: boolean;
+  /** Por qué se clasificó como robot (BotReason). */
+  bot?: string;
+  /** País de Cloudflare (cf-ipcountry); XX = desconocido. */
+  cc?: string;
+  /** Sec-Fetch-Site del navegador ("-" = no vino). */
+  sf?: string;
+  /** El enlace lo tocó un puntero/clic en la página (j=1). */
+  j?: boolean;
 };
 
 export async function logClick(rec: ClickRecord): Promise<void> {

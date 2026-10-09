@@ -124,7 +124,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
                   target="_blank"
                   rel="noopener noreferrer nofollow sponsored"
                   onClick={() =>
-                    trackOfferClick({ store: offer.store, url: offer.url, price: offer.price, currency: offer.currency })
+                    trackOfferClick({ productId: ticket.id, store: offer.store, url: offer.url, price: offer.price, currency: offer.currency })
                   }
                   className="vintage-plaque shrink-0 rounded-xl px-4 py-2 text-sm font-semibold"
                 >

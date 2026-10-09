@@ -3,6 +3,7 @@ import { GO_KINDS, offerHash, type GoKind } from "@/lib/go";
 import { isLocale } from "@/lib/i18n/locales";
 import { logClick, summarizeUserAgent } from "@/lib/clickLog";
 import { AFFILIATE_COOKIE, SKIMLINKS_PUB_ID } from "@/lib/consent";
+import { botReason, untracked, withSubId } from "@/lib/goOut";
 
 // Redirect de salida: /go/<hash de la URL de la oferta>?k=<tipo>&p=<producto>
 // Ver src/lib/go.ts. Resuelve la oferta contra el catálogo (el destino
@@ -65,6 +66,15 @@ export async function GET(req: NextRequest, ctx: { params: Promise<{ id: string 
   }
 
   const n = Number(q.get("n"));
+  const pos = Number.isInteger(n) && n > 0 && n < 100 ? n : undefined;
+  const origin = (q.get("o") ?? "").replace(/[^a-z-]/g, "").slice(0, 16) || "?";
+  const js = q.get("j") === "1";
+  const bot = botReason(req.headers, js);
+  const cc = (req.headers.get("cf-ipcountry") ?? "").replace(/[^A-Z0-9]/g, "").slice(0, 2) || "XX";
+  // Precarga: el navegador nunca debe recibir un 2xx que luego reutilice
+  // como respuesta al clic de verdad. No es un clic: no se anota.
+  if (bot === "prefetch") return new Response(null, { status: 403, headers: NOINDEX });
+
   after(() =>
     logClick({
       t: new Date().toISOString(),
@@ -74,20 +84,32 @@ export async function GET(req: NextRequest, ctx: { params: Promise<{ id: string 
       s: offer?.store,
       u: url,
       l: locale,
-      o: (q.get("o") ?? "").replace(/[^a-z-]/g, "").slice(0, 16) || "?",
-      n: Number.isInteger(n) && n > 0 && n < 100 ? n : undefined,
+      o: origin,
+      n: pos,
       b: q.get("b") === "1" || undefined,
       ua: summarizeUserAgent(req.headers.get("user-agent")),
+      h: !bot,
+      bot,
+      cc,
+      sf: (req.headers.get("sec-fetch-site") ?? "-").slice(0, 12),
+      j: js || undefined,
     }),
   );
 
+  const page = valid && known ? `/${locale}/${GO_KINDS[kind]}/${productId}` : `/${locale}`;
   if (url && /^https?:\/\//.test(url)) {
+    // Robot: la tienda sin nuestro id (o la ficha si el destino solo lo
+    // conoce la red). Un UA que se declara robot no recibe nada.
+    if (bot) {
+      const clean = untracked(url) ?? (bot === "ua" ? null : page);
+      return clean ? redirect(clean) : new Response(null, { status: 403, headers: NOINDEX });
+    }
+    const src = { section: GO_KINDS[kind!], locale, country: cc, origin: `${origin}${pos ?? ""}${q.get("b") === "1" ? "b" : ""}`, productId };
     if (SKIM_HOSTS.test(url) && req.cookies.get(AFFILIATE_COOKIE)?.value === "1")
-      return redirect(`https://go.skimresources.com/?id=${SKIMLINKS_PUB_ID}&xs=1&url=${encodeURIComponent(url)}`);
-    return redirect(url);
+      return redirect(withSubId(`https://go.skimresources.com/?id=${SKIMLINKS_PUB_ID}&xs=1&url=${encodeURIComponent(url)}`, src));
+    return redirect(withSubId(url, src));
   }
-  if (valid && known) return redirect(`/${locale}/${GO_KINDS[kind]}/${productId}`);
-  return redirect(`/${locale}`);
+  return redirect(page);
 }
 
 // HEAD (previsualizadores, chequeos de enlaces) no es un clic: no se anota.

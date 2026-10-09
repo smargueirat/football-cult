@@ -36,7 +36,7 @@ for (const f of files) {
     let r;
     try { r = JSON.parse(line); } catch { continue; }
     total++;
-    if (r.ua === "bot") { bots++; continue; }
+    if (r.ua === "bot" || r.h === false) { bots++; continue; }
     if (!r.ok || !r.u) { unresolved++; continue; }
     const e = byUrl.get(r.u) ?? { clicks: 0, store: r.s, product: r.p, kind: r.k };
     e.clicks++;
