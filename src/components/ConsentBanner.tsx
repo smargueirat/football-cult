@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { LEGAL } from "@/lib/legalStrings";
+import { markGoClicks } from "@/lib/go";
 import {
   CONSENT_OPEN_EVENT,
   applyConsent,
@@ -28,6 +29,11 @@ export default function ConsentBanner() {
 
   // Arranque: defaults denegados siempre; si ya hay elección, se aplica.
   useEffect(() => {
+    // Siempre, ANTES y FUERA de cualquier consentimiento: j=1 es un parámetro
+    // funcional propio (no cookie, no seguimiento) y el filtro de robots de
+    // /go/ lo necesita también de quien rechaza o no responde al banner.
+    // Este componente se monta en todas las páginas aunque el banner esté cerrado.
+    markGoClicks();
     setConsentDefaults();
     const saved = readConsent();
     if (saved) {

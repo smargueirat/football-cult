@@ -51,3 +51,20 @@ export function goHref(p: {
   if (p.isBest) q.set("b", "1");
   return `/go/${offerHash(p.url)}?${q}`;
 }
+
+// Marca `j=1` en el /go/ que la persona toca (puntero: ratón, dedo, botón
+// central o derecho; o clic/Enter). Un robot que sigue los href del HTML
+// no la trae; en plena ráfaga es lo que separa a la persona (ver
+// botReason en src/lib/goOut.ts). Se instala una vez, desde ConsentBanner.
+let marking = false;
+export function markGoClicks(): void {
+  if (marking) return;
+  marking = true;
+  const mark = (e: Event) => {
+    const a = (e.target as Element | null)?.closest?.('a[href^="/go/"]');
+    const href = a?.getAttribute("href");
+    if (a && href && !/[?&]j=1/.test(href)) a.setAttribute("href", `${href}&j=1`);
+  };
+  document.addEventListener("pointerdown", mark, true);
+  document.addEventListener("click", mark, true);
+}
