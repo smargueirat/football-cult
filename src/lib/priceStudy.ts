@@ -1,6 +1,7 @@
 import { mpnFor } from "@/lib/offerGtin";
 import { isComparableStore } from "@/lib/officialStores";
 import { products } from "@/data/products";
+import { offerVersion, type JerseyVersion } from "@/lib/jerseyVersion";
 
 import { bestPerRetailer, countDistinctRetailers, getRetailerFamily, getRetailerLabel } from "@/lib/retailerFamily";
 // Estudio de dispersión de precios, calculado EN BUILD desde el catálogo
@@ -42,6 +43,11 @@ export interface StudyExample {
    *  mismas ofertas en el archivo de precios. */
   brand: string;
   urls: string[];
+  /** Público de la ficha (la de niño es otra prenda y otro precio) y
+   *  versión de las ofertas comparadas. Van en el CSV para que "Italia 2026
+   *  primera" a 40 EUR (niño) y a 90 (adulto) no parezcan la misma camiseta. */
+  audience: "adult" | "kids" | "women";
+  version: JerseyVersion;
 }
 
 export interface StoreRank {
@@ -152,6 +158,10 @@ export function priceStudy(): PriceStudy {
       gapAbs: high.total - low.total,
       brand: p.brand ?? "",
       urls: offers.map((o) => o.url),
+      audience: p.ageGroup === "kids" || p.ageGroup === "women" ? p.ageGroup : "adult",
+      // Mismo código de fabricante = misma prenda; basta con que un título
+      // diga "jugador" (offerVersion da hincha si el título no dice nada).
+      version: offers.some((o) => offerVersion(o) === "player") ? "player" : "fan",
     });
   }
 

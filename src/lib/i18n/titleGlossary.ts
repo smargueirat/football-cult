@@ -60,11 +60,49 @@ const ENTRIES: GlossaryEntry[] = [
 // Traduce el título real, palabra de vocabulario por palabra de
 // vocabulario -- nunca arma un nombre nuevo desde cero. Si no reconoce
 // ninguna palabra (título ya en el idioma correcto, o solo tiene nombres
-// propios), devuelve el título sin tocar.
-export function translateTitleVocabulary(title: string, locale: Locale): string {
-  let result = title;
+// propios), devuelve el título sin tocar. Con `team` (teamNames[teamKey] de
+// la ficha) también cambia el nombre ESPAÑOL del equipo por el del idioma
+// de la página ("Olympique Marsella" -> "Olympique de Marseille" en /fr).
+export function translateTitleVocabulary(title: string, locale: Locale, team?: Record<Locale, string>): string {
+  let result = team ? localizeTeamName(title, team, locale) : title;
   for (const entry of ENTRIES) {
     result = result.replace(entry.pattern, entry[locale]);
   }
   return result;
+}
+
+const fold = (s: string) => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** Formas españolas del nombre que hay que cambiar: el nombre en español y
+ *  el mismo sin " de " ("Olympique Marsella", el de Futbol Emotion). Solo si
+ *  esa forma es propia del español: si el inglés usa la misma ("Napoli",
+ *  "Paraguay") es el nombre oficial y se deja. */
+export function spanishTeamForms(team: Record<Locale, string>): string[] {
+  const others = new Set((["en", "pt", "fr", "it"] as const).map((l) => team[l]));
+  return [...new Set([team.es, team.es.replace(/ de /g, " ")])]
+    .filter((f) => f !== team.en && !others.has(f))
+    .sort((a, b) => b.length - a.length);
+}
+
+/** Cambia la forma española del nombre del equipo por la del idioma
+ *  pedido. Compara sin tildes ni mayúsculas (eBay ES escribe "Japon",
+ *  "Mexico"); si el título ya trae el nombre correcto, no lo toca. */
+export function localizeTeamName(title: string, team: Record<Locale, string>, locale: Locale): string {
+  const target = team[locale];
+  if (locale === "es" || !target) return title;
+  title = title.normalize("NFC");
+  for (const form of spanishTeamForms(team)) {
+    const folded = fold(title);
+    // "Inter de Milán" -> "Inter": el nombre corto va dentro del largo.
+    const inside = fold(form) !== fold(target) && fold(form).includes(fold(target));
+    // Con tildes: "Croacia" no es el "Croácia" de /pt.
+    if (!inside && title.toLowerCase().includes(target.toLowerCase())) break;
+    const re = new RegExp(`(?<![\\p{L}\\p{N}])${escapeRe(fold(form))}(?![\\p{L}\\p{N}])`, "u");
+    const m = re.exec(folded);
+    // Con el título en NFC, fold() deja una letra por letra: los índices
+    // del texto plegado sirven para cortar el original.
+    if (m && folded.length === title.length) title = title.slice(0, m.index) + target + title.slice(m.index + m[0].length);
+  }
+  return title;
 }

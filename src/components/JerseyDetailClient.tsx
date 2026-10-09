@@ -489,7 +489,7 @@ export default function JerseyDetailClient({
                 )}
               </div>
               <p className="text-xs text-[#a8926a]">
-                {offer.title ? translateTitleVocabulary(offer.title, locale) : `${team} ${type}`}
+                {offer.title ? translateTitleVocabulary(offer.title, locale, teamNames[product.teamKey]) : `${team} ${type}`}
               </p>
               {!ships ? null : !matchesSize(offer) ? (
                 <p className="text-xs text-[#b3aa8f]">

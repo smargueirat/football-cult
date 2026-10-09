@@ -1,5 +1,5 @@
 import { LOCALES } from "@/lib/i18n/locales";
-import { priceStudy } from "@/lib/priceStudy";
+import { priceStudy, type StudyExample } from "@/lib/priceStudy";
 import { teamNames, typeNames } from "@/lib/productMeta";
 import { asLocale } from "@/lib/hubPages";
 import type { HubLocale } from "@/data/teamMeta";
@@ -21,11 +21,28 @@ export function generateStaticParams() {
 }
 
 const HEAD: Record<HubLocale, string[]> = {
-  es: ["equipo", "temporada", "tipo", "precio_mas_bajo_eur", "tienda_mas_barata", "precio_mas_alto_eur", "tienda_mas_cara", "diferencia_eur", "diferencia_pct", "ficha"],
-  en: ["team", "season", "kit", "lowest_price_eur", "cheapest_store", "highest_price_eur", "dearest_store", "gap_eur", "gap_pct", "page"],
-  pt: ["time", "temporada", "tipo", "preco_mais_baixo_eur", "loja_mais_barata", "preco_mais_alto_eur", "loja_mais_cara", "diferenca_eur", "diferenca_pct", "pagina"],
-  fr: ["equipe", "saison", "type", "prix_le_plus_bas_eur", "boutique_moins_chere", "prix_le_plus_haut_eur", "boutique_plus_chere", "ecart_eur", "ecart_pct", "page"],
-  it: ["squadra", "stagione", "tipo", "prezzo_piu_basso_eur", "negozio_piu_economico", "prezzo_piu_alto_eur", "negozio_piu_caro", "differenza_eur", "differenza_pct", "pagina"],
+  es: ["equipo", "temporada", "tipo", "publico", "version", "precio_mas_bajo_eur", "tienda_mas_barata", "precio_mas_alto_eur", "tienda_mas_cara", "diferencia_eur", "diferencia_pct", "ficha"],
+  en: ["team", "season", "kit", "audience", "version", "lowest_price_eur", "cheapest_store", "highest_price_eur", "dearest_store", "gap_eur", "gap_pct", "page"],
+  pt: ["time", "temporada", "tipo", "publico", "versao", "preco_mais_baixo_eur", "loja_mais_barata", "preco_mais_alto_eur", "loja_mais_cara", "diferenca_eur", "diferenca_pct", "pagina"],
+  fr: ["equipe", "saison", "type", "public", "version", "prix_le_plus_bas_eur", "boutique_moins_chere", "prix_le_plus_haut_eur", "boutique_plus_chere", "ecart_eur", "ecart_pct", "page"],
+  it: ["squadra", "stagione", "tipo", "pubblico", "versione", "prezzo_piu_basso_eur", "negozio_piu_economico", "prezzo_piu_alto_eur", "negozio_piu_caro", "differenza_eur", "differenza_pct", "pagina"],
+};
+
+// Público y versión: sin ellos, la de niño y la de adulto (o la de jugador y
+// la de aficionado) del mismo equipo parecen dos precios de la misma camiseta.
+const AUDIENCE: Record<HubLocale, Record<StudyExample["audience"], string>> = {
+  es: { adult: "adulto", kids: "niño", women: "mujer" },
+  en: { adult: "adult", kids: "kids", women: "women" },
+  pt: { adult: "adulto", kids: "infantil", women: "feminina" },
+  fr: { adult: "adulte", kids: "enfant", women: "femme" },
+  it: { adult: "adulto", kids: "bambino", women: "donna" },
+};
+const VERSION: Record<HubLocale, Record<StudyExample["version"], string>> = {
+  es: { player: "jugador", fan: "aficionado" },
+  en: { player: "player", fan: "fan" },
+  pt: { player: "jogador", fan: "torcedor" },
+  fr: { player: "joueur", fan: "supporter" },
+  it: { player: "giocatore", fan: "tifoso" },
 };
 
 // Comillas dobles duplicadas, que es como se escapa en CSV (RFC 4180).
@@ -49,6 +66,8 @@ export async function GET(
         teamNames[r.teamKey as keyof typeof teamNames]?.[locale] ?? r.teamKey,
         r.season,
         typeNames[r.typeKey as keyof typeof typeNames]?.[locale] ?? r.typeKey,
+        AUDIENCE[locale][r.audience],
+        VERSION[locale][r.version],
         r.low.toFixed(2),
         r.lowStore,
         r.high.toFixed(2),
