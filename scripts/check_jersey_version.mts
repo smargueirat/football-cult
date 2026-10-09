@@ -48,6 +48,9 @@ assert.strictEqual(offerSleeve({ title: "Maglia maniche lunghe Inter" }), "long"
 assert.strictEqual(offerSleeve({ title: "Camiseta segunda equipacion FC Barcelone" }), "short");
 // " LS " suelto no cuenta: aparece en nombres y codigos
 assert.strictEqual(offerSleeve({ title: "Camiseta LS Lopez 2025" }), "short");
+// "M/L": manga larga en tienda (Futbol Emotion), talla en un marketplace
+assert.strictEqual(offerSleeve({ store: "Futbol Emotion", title: "Camiseta adidas Real Madrid Primera Equipación M/L 2025-2026" }), "long");
+assert.strictEqual(offerSleeve({ store: "eBay", title: "Leeds United adults M/L 2011 home football shirt" }), "short");
 assert.strictEqual(variantKey({ store: "AdidasES", title: "Italia Authentic manga larga" }), "player|long");
 assert.strictEqual(variantKey({ store: "eBay", title: "Italy 2024 home shirt" }), "fan|short");
 console.log("OK: manga y clave de variante");

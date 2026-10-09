@@ -121,6 +121,13 @@ def size_of(raw, title=""):
     first = s.split()[0] if s else ""
     if first in ADULT_MAP:
         return ADULT_MAP[first]
+    # Niño en Futbol Emotion: altura ("140 cm") o "T 10" (años), a la escala de
+    # edades del catálogo (tabla estándar de adidas/Nike: 140 cm = 9-10 años).
+    m = re.match(r"^(\d{3})\s*CM$", s) or re.match(r"^T\s*(\d{1,2})$", s)
+    if m:
+        n = int(m.group(1))
+        n = n if n < 100 else {116: 6, 128: 8, 140: 10, 152: 12, 164: 14, 176: 16}.get(n, 0)
+        return f"{n - 1}-{n}" if n in (6, 8, 10, 12, 14, 16) else ""
     k = KIDS_RE.search(s)
     return f"{int(k.group(1))}-{int(k.group(2))}" if k else ""
 
