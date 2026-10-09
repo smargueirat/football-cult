@@ -10,6 +10,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
+import { longDate } from "@/lib/ticketDate";
 
 import { retailerCountText } from "@/lib/retailerFamily";
 export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }) {
@@ -25,12 +26,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
   // Comparar solo tiene sentido entre vendedores distintos (UK y US son la misma tienda).
   const compared = ticketHasRealComparison(ticket.offers);
 
-  const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(undefined, {
-    weekday: "long",
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-  });
+  const dateLabel = longDate(ticket.date, locale);
   const timeLabel = ticket.time.slice(0, 5);
 
   return (
