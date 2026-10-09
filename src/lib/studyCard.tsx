@@ -50,7 +50,7 @@ export function studyCard(locale: HubLocale, portrait: boolean) {
   // Mismas tres cifras y mismas etiquetas que la página, para que la
   // tarjeta no diga nunca algo distinto de lo publicado.
   const stats: [string, string, string][] = [
-    [`${s.avgGapPct.toFixed(1)}%`, t.statAvgGap, t.statAvgGapNote],
+    [`${locale === "en" ? s.avgGapPct.toFixed(1) : s.avgGapPct.toFixed(1).replace(".", ",")}%`, t.statAvgGap, t.statAvgGapNote],
     [`${Math.round(s.shareOver20)}%`, t.statOver20, t.statOver20Note],
     [`${Math.round(s.maxGapAbs)} EUR`, t.statMaxGap, t.statMaxGapNote],
   ];

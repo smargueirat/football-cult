@@ -25,7 +25,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
   // Comparar solo tiene sentido entre vendedores distintos (UK y US son la misma tienda).
   const compared = ticketHasRealComparison(ticket.offers);
 
-  const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(undefined, {
+  const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(locale, {
     weekday: "long",
     day: "2-digit",
     month: "long",

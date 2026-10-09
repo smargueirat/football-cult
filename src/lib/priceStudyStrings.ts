@@ -87,12 +87,12 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     method3:
       "Solo minoristas oficiales. Se excluyen los marketplaces, donde el precio depende del vendedor y del estado del artículo, y las tiendas de réplicas no licenciadas.",
     method4:
-      "Precio final, no precio de etiqueta: se suma el envío. Una tienda barata con envío caro puede terminar saliendo más.",
+      "Precio final, no precio de etiqueta: se suma el envío. Una tienda barata con envío caro puede acabar saliendo más cara.",
     method5:
-      "Solo la misma prenda: se comparan únicamente ofertas con el mismo código de fabricante, que cada tienda publica y que es distinto para la versión de jugador y la de hincha. Así no se mezclan dos productos distintos, y cada fila de la tabla se puede verificar.",
+      "Solo la misma prenda: se comparan únicamente ofertas con el mismo código de fabricante, que cada tienda publica y que es distinto para la versión de jugador y la de aficionado. Así no se mezclan dos productos distintos, y cada fila de la tabla se puede verificar.",
     citeTitle: "Usar estos datos",
     citeText:
-      "Los datos son libres de citar. Si los usás en una nota o un artículo, te agradecemos el enlace a esta página, que se actualiza sola y siempre muestra el número vigente.",
+      "Los datos son libres de citar. Si los usas en una noticia o un artículo, te agradecemos el enlace a esta página, que se actualiza sola y siempre muestra el número vigente.",
     citeLine: "Football Cult, «{title}», datos de {date}.",
     citeCsv: (n) => `Descargar la tabla completa (${n} camisetas, CSV)`,
     cardAlt: "Tarjeta con las cifras del estudio de precios",

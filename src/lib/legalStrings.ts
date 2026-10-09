@@ -96,7 +96,7 @@ export const LEGAL: Record<Locale, LegalStrings> = {
             "Afiliación (solo si la aceptas). Skimlinks convierte enlaces a algunas tiendas en enlaces de afiliado para que podamos cobrar comisión. Base jurídica: tu consentimiento.",
             "Alertas de precio. Si pides un aviso, guardamos tu correo y el producto hasta que te des de baja (cada aviso incluye un enlace para hacerlo). Base jurídica: tu solicitud.",
             "Cuenta. Si inicias sesión con Google o con un enlace enviado a tu correo, tratamos tu correo y, con Google, tu nombre y foto de perfil. Tus favoritos viajan en tu sesión. Base jurídica: ejecución del servicio que pides.",
-            "Contacto y reportes. Si nos escribes o reportas un producto, usamos tu mensaje y tu correo para responderte. El envío lo realiza Resend.",
+            "Contacto y avisos de error. Si nos escribes o nos avisas de un error en un producto, usamos tu mensaje y tu correo para responderte. El envío lo realiza Resend.",
           ] },
           { h: "Cookies y almacenamiento local", p: [
             "Necesarias (no requieren consentimiento): cookie de idioma (football-cult-locale, 1 año), cookie del país detectado (football-cult-geo-country, 30 días), cookie de sesión si inicias sesión, y en tu navegador tu elección de cookies, país, favoritos, comparador y vistos recientemente.",

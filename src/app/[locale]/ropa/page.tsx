@@ -10,7 +10,7 @@ import RopaPageClient from "./RopaPageClient";
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
     title: "Ropa de fútbol — Comparar precios | Football Cult",
-    description: "Comparativa de shorts, chaquetas, pantalones y medias de fútbol entre tiendas reales.",
+    description: "Comparativa de pantalones cortos, chaquetas, pantalones y medias de fútbol entre tiendas reales.",
   },
   en: {
     title: "Football Apparel — Compare Prices | Football Cult",

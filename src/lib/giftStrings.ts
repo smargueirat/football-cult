@@ -23,9 +23,9 @@ export const GIFTS_UI: Record<HubLocale, GiftsUi> = {
     h1: "Regalos de fútbol por presupuesto",
     metaTitle: "Regalos de fútbol por presupuesto — Comparar precios",
     metaDescription:
-      "Ideas de regalo para un hincha, ordenadas por lo que querés gastar: camisetas, botas, balones y equipamiento, con el precio de varias tiendas comparado.",
+      "Ideas de regalo para un aficionado al fútbol, ordenadas por lo que quieras gastar: camisetas, botas, balones y equipamiento, con el precio de varias tiendas comparado.",
     intro: (n) =>
-      `${n} ideas de regalo para alguien a quien le gusta el fútbol, agrupadas por presupuesto. Cada una muestra el precio de todas las tiendas que la tienen, envío incluido, así que podés ver de una si entra en lo que querés gastar.`,
+      `${n} ideas de regalo para alguien a quien le gusta el fútbol, agrupadas por presupuesto. Cada una muestra el precio de todas las tiendas que la tienen, envío incluido, así que ves de un vistazo si entra en lo que quieres gastar.`,
     empty: "No hay regalos disponibles en este momento.",
     upTo25: "Por menos de 25 €",
     upTo50: "Entre 25 y 50 €",

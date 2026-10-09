@@ -12,7 +12,7 @@ const SITE_URL = "https://football-cult.com";
 const META_TEMPLATE: Record<Locale, { title: string; description: string }> = {
   es: {
     title: "{model} — Comparar precios | Football Cult",
-    description: "Compará precios de {model} entre distintas tiendas y comprá donde te convenga.",
+    description: "Compara precios de {model} entre distintas tiendas y compra donde más te convenga.",
   },
   en: {
     title: "{model} — Compare Prices | Football Cult",

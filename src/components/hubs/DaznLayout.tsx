@@ -32,7 +32,7 @@ function visitorCountry(): string | null {
 }
 
 const T = {
-  es: { ad: "Publicidad · enlace de afiliado", title: (l: string) => `Mirá ${l} en DAZN`, body: "Suscripción de pago de un servicio de terceros.", cta: "Ver en DAZN" },
+  es: { ad: "Publicidad · enlace de afiliado", title: (l: string) => `Mira ${l} en DAZN`, body: "Suscripción de pago de un servicio de terceros.", cta: "Ver en DAZN" },
   en: { ad: "Advertisement · affiliate link", title: (l: string) => `Watch ${l} on DAZN`, body: "Paid subscription from a third-party service.", cta: "Watch on DAZN" },
   pt: { ad: "Publicidade · link de afiliado", title: (l: string) => `Veja ${l} na DAZN`, body: "Assinatura paga de um serviço de terceiros.", cta: "Ver na DAZN" },
   fr: { ad: "Publicité · lien d'affiliation", title: (l: string) => `Regardez ${l} sur DAZN`, body: "Abonnement payant d'un service tiers.", cta: "Voir sur DAZN" },

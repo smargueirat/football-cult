@@ -4,11 +4,11 @@ import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import SobreNosotrosClient from "./SobreNosotrosClient";
 
 const META: Record<Locale, { title: string; description?: string }> = {
-  es: { title: "Sobre nosotros | Football Cult", description: "Football Cult es un comparador de precios de camisetas de fútbol. Conocé cómo funciona el sitio." },
-  en: { title: "About Us | Football Cult", description: "Football Cult is a football shirt price comparison site. Find out how it works." },
-  pt: { title: "Sobre Nós | Football Cult", description: "Football Cult é um comparador de preços de camisas de futebol. Saiba como funciona o site." },
-  fr: { title: "À Propos | Football Cult", description: "Football Cult est un comparateur de prix de maillots de football. Découvrez comment fonctionne le site." },
-  it: { title: "Chi Siamo | Football Cult", description: "Football Cult è un comparatore di prezzi di maglie da calcio. Scopri come funziona il sito." },
+  es: { title: "Sobre nosotros | Football Cult", description: "Un pequeño equipo de aficionados que compara precios de camisetas, botas y material de fútbol. Cómo elegimos las ofertas y cómo nos financiamos." },
+  en: { title: "About Us | Football Cult", description: "A small team of football fans comparing prices of shirts, boots and gear. How we pick offers and how we are funded." },
+  pt: { title: "Sobre Nós | Football Cult", description: "Uma pequena equipe de fãs que compara preços de camisas, chuteiras e material de futebol. Como escolhemos as ofertas e como nos financiamos." },
+  fr: { title: "À Propos | Football Cult", description: "Une petite équipe de passionnés qui compare les prix des maillots, crampons et équipements de football. Comment nous choisissons les offres et comment nous nous finançons." },
+  it: { title: "Chi Siamo | Football Cult", description: "Una piccola squadra di appassionati che confronta i prezzi di maglie, scarpe e attrezzatura da calcio. Come scegliamo le offerte e come ci finanziamo." },
 };
 
 export async function generateMetadata({

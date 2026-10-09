@@ -13,7 +13,7 @@ import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
 // vez de talles (un ticket no tiene talla) y comparando 3 monedas
 // reales en vez de una sola (ver ticketOfferTotalInEUR).
 export default function TicketCard({ ticket, priority = false }: { ticket: TicketProduct; priority?: boolean }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const favorite = isFavorite(ticket.id);
@@ -34,7 +34,7 @@ export default function TicketCard({ ticket, priority = false }: { ticket: Ticke
     prefetchDetailPhoto(photo);
   }
 
-  const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(undefined, {
+  const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(locale, {
     day: "2-digit",
     month: "short",
   });

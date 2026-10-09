@@ -63,6 +63,17 @@ import { SECTION_PATHS } from "@/lib/sections";
 
 const SCROLL_KEY = "football-cult-catalog-scroll";
 
+// Sinónimos latinoamericanos de la equipación: el texto de /es ya dice
+// "primera/segunda equipación" y "portero", pero quien busque "titular",
+// "suplente" o "arquero" tiene que seguir encontrando la camiseta.
+const TYPE_SEARCH_ALIASES: Partial<Record<TypeKey, string>> = {
+  home: "titular local",
+  away: "suplente visitante alternativa",
+  third: "alternativa",
+  goalkeeper: "arquero",
+  prematch: "pre-match",
+};
+
 // Saca tildes/diacríticos y pasa a minúsculas -- para que buscar "Japon"
 // (sin acento, como escribe la mayoría) encuentre "Japón" igual, y para
 // que la búsqueda no dependa de en qué idioma esté puesta la página.
@@ -249,7 +260,7 @@ export default function SearchExplorer({
               const typeWords =
                 p.typeKey === "retro" && !isVintageRetro(p)
                   ? []
-                  : [typeNames[p.typeKey].es, typeNames[p.typeKey].en, typeNames[p.typeKey].pt];
+                  : [typeNames[p.typeKey].es, typeNames[p.typeKey].en, typeNames[p.typeKey].pt, TYPE_SEARCH_ALIASES[p.typeKey] ?? ""];
               const haystack = normalizeSearchText(
                 [
                   teamNames[p.teamKey].es,

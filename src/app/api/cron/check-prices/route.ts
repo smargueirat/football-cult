@@ -343,8 +343,8 @@ export async function GET(req: NextRequest) {
           // Resend permite varios destinatarios en un mismo envío -- un
           // mail por corrida por producto, no uno por suscriptor.
           to: subscribers,
-          subject: `Bajó de precio: ${name}`,
-          text: `${name} bajó de ${fromMoney} a ${toMoney} en ${drop.store}.\n\nVerla: ${url}`,
+          subject: `Ha bajado de precio: ${name}`,
+          text: `${name} ha bajado de ${fromMoney} a ${toMoney} en ${drop.store}.\n\nVer la oferta: ${url}`,
         });
         alertsSent += subscribers.length;
       } catch (err) {

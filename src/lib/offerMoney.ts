@@ -40,10 +40,11 @@ export function formatOfferMoney(amount: number, currency: OfferCurrencyCode): s
   // convertido a SU propia moneda (ej. Shopify detecta la ubicación y
   // muestra euros en vez de dólares), y un símbolo ambiguo hace parecer
   // que el precio no coincide cuando en realidad es el mismo precio real.
+  // El euro es la excepción: "€" no es ambiguo, y así /es lee "1.234,56 €".
   return new Intl.NumberFormat(OFFER_CURRENCY_LOCALE[currency], {
     style: "currency",
     currency,
-    currencyDisplay: "code",
+    currencyDisplay: currency === "EUR" ? "symbol" : "code",
     maximumFractionDigits,
   }).format(amount);
 }

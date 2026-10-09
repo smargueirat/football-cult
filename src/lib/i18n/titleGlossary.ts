@@ -29,17 +29,17 @@ const ENTRIES: GlossaryEntry[] = [
   // dejando "equipación" colgado sin traducir.
   { pattern: /coupe du monde|copa (do|del) mundo|world cup/gi, es: "Copa del Mundo", en: "World Cup", pt: "Copa do Mundo", fr: "Coupe du Monde", it: "Coppa del Mondo" },
   { pattern: /manches? longues?|manga larga|manga longa|long ?sleeve/gi, es: "Manga Larga", en: "Long Sleeve", pt: "Manga Longa", fr: "Manches Longues", it: "Manica Lunga" },
-  { pattern: /pr[eé].?-?match|prematch/gi, es: "Pre-Match", en: "Pre-Match", pt: "Pré-Jogo", fr: "Avant-Match", it: "Pre-Partita" },
-  { pattern: /primera equipaci[oó]n/gi, es: "Titular", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
-  { pattern: /segunda equipaci[oó]n/gi, es: "Visitante", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
-  { pattern: /tercera equipaci[oó]n/gi, es: "Tercera", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
+  { pattern: /pr[eé].?-?match|prematch/gi, es: "Prepartido", en: "Pre-Match", pt: "Pré-Jogo", fr: "Avant-Match", it: "Pre-Partita" },
+  { pattern: /primera equipaci[oó]n/gi, es: "Primera Equipación", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
+  { pattern: /segunda equipaci[oó]n/gi, es: "Segunda Equipación", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
+  { pattern: /tercera equipaci[oó]n/gi, es: "Tercera Equipación", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
 
   // Tipo de camiseta (mismo vocabulario que TYPE_PATTERNS en extract.py).
-  { pattern: /\bportero\b|\bgardien\b|\bgoalkeeper\b|\bgoleiro\b|\bportiere\b/gi, es: "Arquero", en: "Goalkeeper", pt: "Goleiro", fr: "Gardien", it: "Portiere" },
+  { pattern: /\bportero\b|\bgardien\b|\bgoalkeeper\b|\bgoleiro\b|\bportiere\b/gi, es: "Portero", en: "Goalkeeper", pt: "Goleiro", fr: "Gardien", it: "Portiere" },
   { pattern: /\bentrenamiento\b|\btraining\b|\btreino\b/gi, es: "Entrenamiento", en: "Training", pt: "Treino", fr: "Entraînement", it: "Allenamento" },
-  { pattern: /\bdomicile\b|\btitular\b|\bhome\b/gi, es: "Titular", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
-  { pattern: /\bext[ée]rieur\b|\bvisitante\b|\baway\b/gi, es: "Visitante", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
-  { pattern: /\btercer[ao]?\b|\bthird\b|\btroisi[eè]me\b|\bterceir[ao]\b/gi, es: "Tercera", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
+  { pattern: /\bdomicile\b|\btitular\b|\bhome\b/gi, es: "Primera Equipación", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
+  { pattern: /\bext[ée]rieur\b|\bvisitante\b|\baway\b/gi, es: "Segunda Equipación", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },
+  { pattern: /\btercer[ao]?\b(?! equipaci)|\bthird\b|\btroisi[eè]me\b|\bterceir[ao]\b/gi, es: "Tercera Equipación", en: "Third", pt: "Terceira", fr: "Troisième", it: "Terza" },
 
   // Jersey/camiseta como palabra en sí (JERSEY_RE). "camiseta" (ES) faltaba
   // -- \bcamisa\b no la matchea porque no es un límite de palabra dentro de

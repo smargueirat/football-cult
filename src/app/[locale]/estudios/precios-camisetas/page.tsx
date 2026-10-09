@@ -17,7 +17,7 @@ export const revalidate = 86400;
 
 const PATH = "/estudios/precios-camisetas";
 const eur = (n: number) => formatOfferMoney(n, "EUR");
-const pct = (n: number) => `${n.toFixed(1)}%`;
+const pct = (n: number, l: string) => `${l === "en" ? n.toFixed(1) : n.toFixed(1).replace(".", ",")}%`;
 
 function fill(s: string, vars: Record<string, string>) {
   return Object.entries(vars).reduce((acc, [k, v]) => acc.replaceAll(`{${k}}`, v), s);
@@ -53,7 +53,7 @@ export default async function PriceStudyPage({ params }: P) {
     } ${e.season}`;
 
   const stats = [
-    { big: pct(s.avgGapPct), label: c.statAvgGap, note: c.statAvgGapNote },
+    { big: pct(s.avgGapPct, locale), label: c.statAvgGap, note: c.statAvgGapNote },
     { big: `${s.shareOver20.toFixed(0)}%`, label: c.statOver20, note: c.statOver20Note },
     { big: eur(s.maxGapAbs), label: c.statMaxGap, note: c.statMaxGapNote },
     { big: `${s.shareSamePrice.toFixed(0)}%`, label: c.statSamePrice, note: c.statSamePriceNote },

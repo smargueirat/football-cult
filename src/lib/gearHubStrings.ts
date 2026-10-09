@@ -3,8 +3,8 @@ import type { GearSection } from "@/lib/gearHubs";
 
 const NOUN: Record<GearSection, Record<HubLocale, string>> = {
   botas: { es: "Botas de fútbol", en: "Football boots", pt: "Chuteiras de futebol", fr: "Chaussures de football", it: "Scarpe da calcio" },
-  guantes: { es: "Guantes de arquero", en: "Goalkeeper gloves", pt: "Luvas de goleiro", fr: "Gants de gardien", it: "Guanti da portiere" },
-  pelotas: { es: "Pelotas de fútbol", en: "Footballs", pt: "Bolas de futebol", fr: "Ballons de football", it: "Palloni da calcio" },
+  guantes: { es: "Guantes de portero", en: "Goalkeeper gloves", pt: "Luvas de goleiro", fr: "Gants de gardien", it: "Guanti da portiere" },
+  pelotas: { es: "Balones de fútbol", en: "Footballs", pt: "Bolas de futebol", fr: "Ballons de football", it: "Palloni da calcio" },
   ropa: { es: "Ropa de fútbol", en: "Football apparel", pt: "Roupas de futebol", fr: "Vêtements de football", it: "Abbigliamento da calcio" },
   entrenamiento: { es: "Equipamiento de entrenamiento", en: "Training equipment", pt: "Material de treino", fr: "Matériel d'entraînement", it: "Materiale da allenamento" },
 };
@@ -62,7 +62,7 @@ export const UI: Record<
   es: {
     home: "Inicio",
     intro: ({ headline, n, stores, price }) => `${headline}: ${n} productos ${stores === 1 ? "de una sola tienda" : `comparados entre ${stores} tiendas`}. Precio más bajo hoy: ${price}. Los precios se actualizan todos los días.`,
-    meta: ({ headline, n, price }) => `${headline}: compará ${n} productos entre tiendas. Desde ${price}.`,
+    meta: ({ headline, n, price }) => `${headline}: compara ${n} productos entre tiendas. Desde ${price}.`,
     cheapest: "Los más baratos",
     all: "Todos los productos",
     otherBrands: "Otras marcas",

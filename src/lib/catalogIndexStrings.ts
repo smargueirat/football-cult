@@ -16,7 +16,7 @@ export const CATALOG_INDEX: Record<HubLocale, IndexCopy> = {
   es: {
     index: "Índice del catálogo",
     intro: "Todos los productos que comparamos en al menos dos tiendas, ordenados alfabéticamente. Es la lista completa, sin filtros.",
-    section: { camisetas: "Camisetas", botas: "Botas", ropa: "Ropa", entrenamiento: "Entrenamiento", guantes: "Guantes", pelotas: "Pelotas" },
+    section: { camisetas: "Camisetas", botas: "Botas", ropa: "Ropa", entrenamiento: "Entrenamiento", guantes: "Guantes", pelotas: "Balones" },
     page: "Página",
     prev: "Anterior",
     next: "Siguiente",

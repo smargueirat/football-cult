@@ -6,7 +6,7 @@ const REASON_LABELS: Record<string, string> = {
   wrongPhoto: "La foto no corresponde",
   wrongPrice: "El precio está mal",
   wrongName: "El nombre o equipo está mal",
-  brokenLink: "El link a la tienda no funciona",
+  brokenLink: "El enlace a la tienda no funciona",
   other: "Otro",
 };
 

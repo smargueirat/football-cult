@@ -43,7 +43,7 @@ const SITE_META: Record<Locale, { title: string; description: string }> = {
   es: {
     title: "Football Cult — Comparador de precios de camisetas de fútbol",
     description:
-      "Buscá camisetas de fútbol de tu selección, club o liga favorita y compará precios entre distintas tiendas antes de comprar.",
+      "Busca camisetas de fútbol de tu selección, club o liga favorita y compara precios entre distintas tiendas antes de comprar.",
   },
   en: {
     title: "Football Cult — Football Shirt Price Comparison",
