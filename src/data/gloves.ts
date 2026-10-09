@@ -2985,24 +2985,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     colour: "Negro",
     offers: [
       {
-        store: "FootStoreES",
-        price: 111.88,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003660_black_1.jpg&feedId=89032&k=39d40af9c095e1e214186570d7347c7e1cc2dd7f",
-        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 107.62,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport_el4003660_black_1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-      {
         store: "SportIsGoodFR",
         price: 104.74,
         priceMax: 110.65,
@@ -3020,22 +3002,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 104.74, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
         ],
       },
-    ],
-  },
-  {
-    id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-negro-2",
-    brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Negro",
-    colour: "Negro",
-    offers: [
       {
-        store: "FootStoreES",
-        price: 115.08,
-        shipping: 8.99,
+        store: "FootStoreFR",
+        price: 107.62,
+        priceMax: 109.11,
+        shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530112994&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003840_black-aqua_1.jpg&feedId=89032&k=c3cad772a2233722e285933128dd763e86043354",
-        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/l/elite-sport_el4003660_black_1.webp",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+        sizePrices: [
+          { size: "6", price: 107.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "7", price: 107.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "8", price: 107.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "9", price: 107.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "10", price: 107.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+          { size: "11", price: 107.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003660-gants-de-gardien-elite-sport-neo-revolution-black" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -3056,13 +3039,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         ],
       },
       {
-        store: "FootStoreFR",
-        price: 109.11,
-        shipping: 6.99,
+        store: "FootStoreES",
+        price: 111.88,
+        priceMax: 115.08,
+        shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel4003840-gants-de-gardien-elite-sport-neo-revolution-black-aqua",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/e/l/elite-sport_el4003840_black-aqua_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
+        url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003660_black_1.jpg&feedId=89032&k=39d40af9c095e1e214186570d7347c7e1cc2dd7f",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+        sizePrices: [
+          { size: "Talla 10", price: 111.88, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+          { size: "Talla 11", price: 111.88, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+          { size: "Talla 6", price: 111.88, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+          { size: "Talla 7", price: 111.88, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+          { size: "Talla 8", price: 111.88, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+          { size: "Talla 9", price: 111.88, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -5541,9 +5533,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-orange",
     brand: "Joma",
@@ -5570,6 +5559,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-rouge",
     brand: "Joma",
@@ -7940,37 +7932,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro",
-    brand: "Precision",
-    model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 23.49,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=b79d230da2299dcf60c5b2b8df478fb5574dcff5",
-        sizes: ["Talla 11"],
-      },
-    ],
-  },
-  {
     id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro-2",
     brand: "Precision",
     model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro",
     colour: "Negro",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 27.0,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643602&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=8f515926d6f7f26b7fe22c65a761f52ffd422619",
-        sizes: ["Talla 10"],
-      },
       {
         store: "FootStoreFR",
         price: 20.67,
@@ -7980,22 +7946,19 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/p/r/precision_prg15811_black-fluo-yellow_1.jpg",
         sizes: ["8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo",
-    brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo",
-    colour: "Amarillo",
-    offers: [
       {
         store: "FootStoreES",
-        price: 16.03,
+        price: 23.49,
+        priceMax: 27.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646161&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
-        sizes: ["Talla 9"],
+        url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=b79d230da2299dcf60c5b2b8df478fb5574dcff5",
+        sizes: ["Talla 10", "Talla 11"],
+        sizePrices: [
+          { size: "Talla 10", price: 27.0, url: "https://www.awin1.com/pclick.php?p=42529643602&a=3013769&m=65912" },
+          { size: "Talla 11", price: 23.49, url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -8006,15 +7969,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     colour: "Amarillo",
     offers: [
       {
-        store: "FootStoreES",
-        price: 16.03,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44552703290&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
-        sizes: ["Talla 8"],
-      },
-      {
         store: "FootStoreFR",
         price: 14.04,
         shipping: 6.99,
@@ -8023,39 +7977,14 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg16011_fluo-yellow-black_1.webp",
         sizes: ["8", "9", "10", "11"],
       },
-    ],
-  },
-  {
-    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo-3",
-    brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo",
-    colour: "Amarillo",
-    offers: [
       {
         store: "FootStoreES",
         price: 16.03,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45145688512&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529646161&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
-        sizes: ["Talla 11"],
-      },
-    ],
-  },
-  {
-    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo-4",
-    brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.03,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45145688513&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
-        sizes: ["Talla 10"],
+        sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
     ],
   },
@@ -8382,71 +8311,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.86,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646209&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
-        sizes: ["Talla 10.5"],
-      },
-    ],
-  },
-  {
-    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-2",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.86,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646210&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
-        sizes: ["Talla 9.5"],
-      },
-    ],
-  },
-  {
-    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-3",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 43.86,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646211&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
-        sizes: ["Talla 10"],
-      },
-    ],
-  },
-  {
     id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-4",
     brand: "Precision",
     model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco",
     colour: "Blanco",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 43.86,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646212&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
-        sizes: ["Talla 9"],
-      },
       {
         store: "FootStoreFR",
         price: 40.33,
@@ -8456,22 +8325,14 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15208_black-white_1.webp",
         sizes: ["9", "9.5", "10", "10.5", "11"],
       },
-    ],
-  },
-  {
-    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-5",
-    brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco",
-    colour: "Blanco",
-    offers: [
       {
         store: "FootStoreES",
         price: 43.86,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43219400798&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529646209&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
-        sizes: ["Talla 11"],
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 9", "Talla 9.5"],
       },
     ],
   },
@@ -9836,7 +9697,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "reusch-gants-de-gardien-reusch-attrakt-solid-noir",
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-negro",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Solid - Negro",
     colour: "Negro",
@@ -9866,35 +9727,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-2290-gants-de-gardien-reusch-attrakt-solid-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-2290_black_1.webp",
         sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "reusch-guantes-de-portero-reusch-attrakt-solid-negro",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 18.77,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43413518616&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-2290_black_1.jpg&feedId=89032&k=28beb95e0bfa2505535481307c8dfe0756460878",
-        sizes: ["Talla 10", "Talla 11", "Talla 7.5", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
       {
         store: "SportIsGoodES",
@@ -9906,22 +9741,13 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["Talla 8"],
       },
       {
-        store: "FootStoreFR",
-        price: 20.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-2290-gants-de-gardien-reusch-attrakt-solid-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-2290_black_1.webp",
-        sizes: ["7.5", "8.5", "9", "9.5", "10", "11"],
-      },
-      {
         store: "SportIsGoodFR",
         price: 20.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
-        sizes: ["9.5", "10.5"],
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
+        sizes: ["8", "9.5", "10.5"],
       },
     ],
   },
@@ -10586,9 +10412,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-aries-turf-bleu",
     brand: "Rinat",
@@ -10863,6 +10686,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-egotiko-prime-orange",
     brand: "Rinat",
@@ -12828,24 +12654,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39277402210&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35052.019.11_amarillo-fluor-jaune_4.jpg&feedId=89032&k=b1c3b6ab8bf48ada09736027bf2e2e7519b6d4d9",
-        sizes: ["Talla 9"],
-      },
-    ],
-  },
-  {
-    id: "softee-guantes-de-portero-softee-america-amarillo-2",
-    brand: "Softee",
-    model: "Guantes de portero Softee América - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 12.99,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529515544&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35052.019.11_amarillo-fluor-jaune_4.jpg&feedId=89032&k=b1c3b6ab8bf48ada09736027bf2e2e7519b6d4d9",
-        sizes: ["Talla 8"],
+        sizes: ["Talla 8", "Talla 9"],
       },
     ],
   },
@@ -12964,24 +12773,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515545&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_1.jpg&feedId=89032&k=fa9ae23f85d1653e56122a04ed05cf67339f0c3e",
-        sizes: ["Talla 7"],
-      },
-    ],
-  },
-  {
-    id: "softee-guantes-de-portero-softee-europa-blanco-3",
-    brand: "Softee",
-    model: "Guantes de portero Softee Europa - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 12.99,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529515546&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_1.jpg&feedId=89032&k=fa9ae23f85d1653e56122a04ed05cf67339f0c3e",
-        sizes: ["Talla 9"],
+        sizes: ["Talla 7", "Talla 9"],
       },
     ],
   },
@@ -16097,9 +15889,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-prediction-soft-pro-azul",
     brand: "uhlsport",
@@ -16503,6 +16292,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-starter-resist-naranja",
     brand: "uhlsport",

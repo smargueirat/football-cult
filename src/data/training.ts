@@ -2273,24 +2273,6 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     ],
   },
   {
-    id: "deep-breath-banda-de-resistencia-deep-breath-x5-rose-3",
-    brand: "Deep Breath",
-    model: "Banda de resistencia Deep Breath (x5) - Rose",
-    colour: "Rose",
-    type: "elasticos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 31.09,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45047904245&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fdeep-breath-ze5-pink-pasion-6a2fbeffd0b42-2.jpg&feedId=89032&k=e2d2b3dca7ffa4307bd827ff9520140104622428",
-        sizes: ["31.5x63x5.5 cm"],
-      },
-    ],
-  },
-  {
     id: "deportium-materiel-d-entrainement-machine-de-pilates-deportium-venus-gris",
     brand: "Deportium",
     model: "Matériel d'entraînement machine de pilates Deportium Venus - Gris",
@@ -5096,9 +5078,6 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk2: TrainingProduct[] = [
   {
     id: "givova-peto-givova-pro-rosa",
     brand: "Givova",
@@ -5144,6 +5123,9 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk2: TrainingProduct[] = [
   {
     id: "givova-peto-reversible-givova-blanco",
     brand: "Givova",
@@ -9886,9 +9868,6 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "macron-filet-a-balles-macron-turbolence-x10-noir",
     brand: "Macron",
@@ -9907,6 +9886,9 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "macron-pompe-a-ballons-macron-noir",
     brand: "Macron",
@@ -10428,15 +10410,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     type: "conos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 9.08,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923981470&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m40422100.jpg&feedId=89032&k=4edf093c20ded1271134310b5bb6c92e458e0cfd",
-        sizes: ["30 cm"],
-      },
-      {
         store: "FootStoreFR",
         price: 8.39,
         priceMax: 15.44,
@@ -10450,23 +10423,19 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
           { size: "50 cm", price: 15.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422203-cone-a-trous-megaform-jaune-50-cm" },
         ],
       },
-    ],
-  },
-  {
-    id: "megaform-cono-con-agujeros-megaform-amarillo-2",
-    brand: "Megaform",
-    model: "Cono con agujeros Megaform - Amarillo",
-    colour: "Amarillo",
-    type: "conos",
-    offers: [
       {
         store: "FootStoreES",
-        price: 16.29,
+        price: 9.08,
+        priceMax: 16.29,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471638&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923981470&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m40422100.jpg&feedId=89032&k=4edf093c20ded1271134310b5bb6c92e458e0cfd",
-        sizes: ["50 cm"],
+        sizes: ["30 cm", "50 cm"],
+        sizePrices: [
+          { size: "30 cm", price: 9.08, url: "https://www.awin1.com/pclick.php?p=37923981470&a=3013769&m=65912" },
+          { size: "50 cm", price: 16.29, url: "https://www.awin1.com/pclick.php?p=42529471638&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -10477,15 +10446,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     colour: "Azul",
     type: "conos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 9.08,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923981469&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m40422100.jpg&feedId=89032&k=4edf093c20ded1271134310b5bb6c92e458e0cfd",
-        sizes: ["30 cm"],
-      },
       {
         store: "FootStoreFR",
         price: 8.39,
@@ -10500,23 +10460,19 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
           { size: "50 cm", price: 15.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40422201-cone-a-trous-megaform-bleu-50-cm" },
         ],
       },
-    ],
-  },
-  {
-    id: "megaform-cono-con-agujeros-megaform-azul-2",
-    brand: "Megaform",
-    model: "Cono con agujeros Megaform - Azul",
-    colour: "Azul",
-    type: "conos",
-    offers: [
       {
         store: "FootStoreES",
-        price: 16.29,
+        price: 9.08,
+        priceMax: 16.29,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44365394524&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m40422100.jpg&feedId=89032&k=b6a8c77ca0efb6839595244dde3d9c9915d03c75",
-        sizes: ["50 cm"],
+        url: "https://www.awin1.com/pclick.php?p=37923981469&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m40422100.jpg&feedId=89032&k=4edf093c20ded1271134310b5bb6c92e458e0cfd",
+        sizes: ["30 cm", "50 cm"],
+        sizePrices: [
+          { size: "30 cm", price: 9.08, url: "https://www.awin1.com/pclick.php?p=37923981469&a=3013769&m=65912" },
+          { size: "50 cm", price: 16.29, url: "https://www.awin1.com/pclick.php?p=44365394524&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -10582,15 +10538,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     type: "conos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 3.5,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471642&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m404201.jpg&feedId=89032&k=fbcc177a719670b4169d629a9dfe772c09c4aba8",
-        sizes: ["23 cm"],
-      },
-      {
         store: "FootStoreFR",
         price: 2.93,
         priceMax: 6.49,
@@ -10605,23 +10552,19 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
           { size: "40 cm", price: 6.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404208-cone-de-delimitation-classique-megaform-jaune-yellow-40-cm" },
         ],
       },
-    ],
-  },
-  {
-    id: "megaform-cono-limite-clasico-megaform-amarillo",
-    brand: "Megaform",
-    model: "Cono límite clásico Megaform - Amarillo",
-    colour: "Amarillo",
-    type: "conos",
-    offers: [
       {
         store: "FootStoreES",
-        price: 7.14,
+        price: 3.5,
+        priceMax: 7.14,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471643&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529471642&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m404201.jpg&feedId=89032&k=fbcc177a719670b4169d629a9dfe772c09c4aba8",
-        sizes: ["40 cm"],
+        sizes: ["23 cm", "40 cm"],
+        sizePrices: [
+          { size: "23 cm", price: 3.5, url: "https://www.awin1.com/pclick.php?p=42529471642&a=3013769&m=65912" },
+          { size: "40 cm", price: 7.14, url: "https://www.awin1.com/pclick.php?p=42529471643&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -10644,57 +10587,12 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
-    id: "megaform-cono-limite-clasico-megaform-rojo",
-    brand: "Megaform",
-    model: "Cono límite clásico Megaform - Rojo",
-    colour: "Rojo",
-    type: "conos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.14,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37950466657&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m404201.jpg&feedId=89032&k=fbcc177a719670b4169d629a9dfe772c09c4aba8",
-        sizes: ["40 cm"],
-      },
-    ],
-  },
-  {
-    id: "megaform-cono-limite-clasico-megaform-rojo-2",
-    brand: "Megaform",
-    model: "Cono límite clásico Megaform - Rojo",
-    colour: "Rojo",
-    type: "conos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 4.54,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471644&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m404201.jpg&feedId=89032&k=fbcc177a719670b4169d629a9dfe772c09c4aba8",
-        sizes: ["30 cm"],
-      },
-    ],
-  },
-  {
     id: "megaform-cono-limite-clasico-megaform-rojo-3",
     brand: "Megaform",
     model: "Cono límite clásico Megaform - Rojo",
     colour: "Rojo",
     type: "conos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 3.5,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471645&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m404201.jpg&feedId=89032&k=fbcc177a719670b4169d629a9dfe772c09c4aba8",
-        sizes: ["23 cm"],
-      },
       {
         store: "FootStoreFR",
         price: 2.93,
@@ -10708,6 +10606,21 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
           { size: "23 cm", price: 2.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404201-cone-de-delimitation-classique-megaform-rouge-23-cm" },
           { size: "30 cm", price: 3.94, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404205-cone-de-delimitation-classique-megaform-red-30-cm" },
           { size: "40 cm", price: 6.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm404207-cone-de-delimitation-classique-megaform-rouge-red-40-cm" },
+        ],
+      },
+      {
+        store: "FootStoreES",
+        price: 3.5,
+        priceMax: 7.14,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529471645&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m404201.jpg&feedId=89032&k=fbcc177a719670b4169d629a9dfe772c09c4aba8",
+        sizes: ["23 cm", "30 cm", "40 cm"],
+        sizePrices: [
+          { size: "23 cm", price: 3.5, url: "https://www.awin1.com/pclick.php?p=42529471645&a=3013769&m=65912" },
+          { size: "30 cm", price: 4.54, url: "https://www.awin1.com/pclick.php?p=42529471644&a=3013769&m=65912" },
+          { size: "40 cm", price: 7.14, url: "https://www.awin1.com/pclick.php?p=37950466657&a=3013769&m=65912" },
         ],
       },
     ],
@@ -12282,24 +12195,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
-    id: "powershot-chaleco-de-entrenamiento-reversible-en-blanco-y-negro-powershot",
-    brand: "Powershot",
-    model: "Chaleco de entrenamiento reversible en blanco y negro PowerShot",
-    colour: "Negro",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 6.41,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923871566&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.jpg&feedId=89032&k=13894c7c5c760097b0587a52d43d60d831aadb8c",
-        sizes: ["M/L"],
-      },
-    ],
-  },
-  {
     id: "powershot-chaleco-de-entrenamiento-reversible-en-blanco-y-negro-powershot-2",
     brand: "Powershot",
     model: "Chaleco de entrenamiento reversible en blanco y negro PowerShot",
@@ -12307,22 +12202,13 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 6.5,
-        shipping: 8.99,
+        store: "SportIsGoodFR",
+        price: 4.12,
+        shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923871568&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.jpg&feedId=89032&k=13894c7c5c760097b0587a52d43d60d831aadb8c",
-        sizes: ["2XL"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 6.3,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45524234909&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.jpg&feedId=89044&k=13894c7c5c760097b0587a52d43d60d831aadb8c",
-        sizes: ["M/L"],
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093bwm_1-0_2.webp",
+        sizes: ["M"],
       },
       {
         store: "FootStoreFR",
@@ -12339,13 +12225,27 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         ],
       },
       {
-        store: "SportIsGoodFR",
-        price: 4.12,
-        shipping: 6.99,
+        store: "SportIsGoodES",
+        price: 6.3,
+        shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta093bwm-chasuble-d-entrainement-reversible-noir-et-blanc-powershot-noir-blanc-m",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta093bwm_1-0_2.webp",
-        sizes: ["M"],
+        url: "https://www.awin1.com/pclick.php?p=45524234909&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.jpg&feedId=89044&k=13894c7c5c760097b0587a52d43d60d831aadb8c",
+        sizes: ["M/L"],
+      },
+      {
+        store: "FootStoreES",
+        price: 6.41,
+        priceMax: 6.5,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923871566&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta093bwm_1-0_2.jpg&feedId=89032&k=13894c7c5c760097b0587a52d43d60d831aadb8c",
+        sizes: ["M/L", "2XL"],
+        sizePrices: [
+          { size: "M/L", price: 6.41, url: "https://www.awin1.com/pclick.php?p=37923871566&a=3013769&m=65912" },
+          { size: "2XL", price: 6.5, url: "https://www.awin1.com/pclick.php?p=37923871568&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -12773,29 +12673,15 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       {
         store: "FootStoreFR",
         price: 19.72,
+        priceMax: 27.45,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta018-haies-d-entrainement-foot-30cm-powershot-x5-multicolore-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta016_gre_6426.webp",
         sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "powershot-haies-d-entrainement-foot-multicolore-2",
-    brand: "Powershot",
-    model: "Haies d'entraînement foot - Multicolore",
-    colour: "Multicolore",
-    type: "vallas",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 27.45,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta019-haies-d-entrainement-foot-45cm-powershot-x5-multicolore-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta016_gre_6426.webp",
-        sizes: ["TU"],
+        sizePrices: [
+          { size: "TU", price: 19.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fta018-haies-d-entrainement-foot-30cm-powershot-x5-multicolore-tu" },
+        ],
       },
     ],
   },
@@ -12908,66 +12794,12 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
-    id: "powershot-juego-de-5-vallas-de-entrenamiento-de-futbol-multicolor",
-    brand: "Powershot",
-    model: "Juego de 5 vallas de entrenamiento de fútbol - Multicolor",
-    colour: "Multicolor",
-    type: "vallas",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 21.04,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38018918304&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta016_gre_6426.jpg&feedId=89032&k=f6613da0b00cc1a9b6a1d5661a5d7532b0cb153c",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "powershot-juego-de-5-vallas-de-entrenamiento-de-futbol-multicolor-2",
-    brand: "Powershot",
-    model: "Juego de 5 vallas de entrenamiento de fútbol - Multicolor",
-    colour: "Multicolor",
-    type: "vallas",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 19.7,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38840207521&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta016_gre_6428.jpg&feedId=89032&k=cfaa984df93b4472d0a13dea14e33c4c08853b26",
-        sizes: [],
-      },
-    ],
-  },
-  {
     id: "powershot-juego-de-5-vallas-de-entrenamiento-de-futbol-multicolor-3",
     brand: "Powershot",
     model: "Juego de 5 vallas de entrenamiento de fútbol - Multicolor",
     colour: "Multicolor",
     type: "vallas",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 29.04,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43945397743&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta016_gre_6426.jpg&feedId=89032&k=f6613da0b00cc1a9b6a1d5661a5d7532b0cb153c",
-        sizes: [],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 21.83,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46079831830&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta016_gre_6426.jpg&feedId=89044&k=f6613da0b00cc1a9b6a1d5661a5d7532b0cb153c",
-        sizes: [],
-      },
       {
         store: "FootStoreFR",
         price: 18.75,
@@ -12978,6 +12810,16 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         sizes: ["TU"],
       },
       {
+        store: "FootStoreES",
+        price: 19.7,
+        priceMax: 29.04,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38840207521&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta016_gre_6428.jpg&feedId=89032&k=cfaa984df93b4472d0a13dea14e33c4c08853b26",
+        sizes: [],
+      },
+      {
         store: "SportIsGoodFR",
         price: 21.53,
         shipping: 6.99,
@@ -12985,6 +12827,15 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fta018-haies-d-entrainement-foot-30cm-powershot-x5-multicolore-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/a/ta016_gre_6426.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 21.83,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46079831830&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta016_gre_6426.jpg&feedId=89044&k=f6613da0b00cc1a9b6a1d5661a5d7532b0cb153c",
+        sizes: [],
       },
     ],
   },
@@ -13319,15 +13170,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     type: "material",
     offers: [
       {
-        store: "FootStoreES",
-        price: 502.77,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43318507447&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fo%2Fpowershot-tk080-noir-jaune-1.jpg&feedId=89032&k=894a1eb138b346e5094d02475e2d7c003f2c7973",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 491.45,
         priceMax: 557.37,
@@ -13341,21 +13183,13 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
           { size: "TU", price: 557.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftk081-materiel-d-entrainement-defenseur-avec-ballons-powershot-noir-jaune-vert-tu" },
         ],
       },
-    ],
-  },
-  {
-    id: "powershot-material-de-entrenamiento-defensor-con-balones-powershot-noir-2",
-    brand: "Powershot",
-    model: "Material de entrenamiento defensor con balones Powershot - Noir",
-    colour: "Noir",
-    type: "material",
-    offers: [
       {
         store: "FootStoreES",
-        price: 577.83,
+        price: 502.77,
+        priceMax: 577.83,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43318507448&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43318507447&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fo%2Fpowershot-tk080-noir-jaune-1.jpg&feedId=89032&k=894a1eb138b346e5094d02475e2d7c003f2c7973",
         sizes: [],
       },
@@ -14687,9 +14521,6 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk4: TrainingProduct[] = [
   {
     id: "powershot-seto-flexible-23-cm-powershot-rojo",
     brand: "Powershot",
@@ -14996,6 +14827,9 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk4: TrainingProduct[] = [
   {
     id: "pre-sport-taza-y-recogepelotas-pre-sport-violeta",
     brand: "Pre-Sport",
@@ -18998,39 +18832,12 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     ],
   },
   {
-    id: "soccer-place-marcado-de-campo-2-contra-2-soccer-place-blanco",
-    brand: "Soccer Place",
-    model: "Marcado de campo 2 contra 2 Soccer Place - Blanco",
-    colour: "Blanco",
-    type: "marcadores",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 174.37,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529857898&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoccer-place_f7000_blanc-orange-jaune_1.jpg&feedId=89032&k=4b0121b7cd1295820ca5a23eeb2f326e60ef729b",
-        sizes: ["20x26 m"],
-      },
-    ],
-  },
-  {
     id: "soccer-place-marcado-de-campo-2-contra-2-soccer-place-blanco-2",
     brand: "Soccer Place",
     model: "Marcado de campo 2 contra 2 Soccer Place - Blanco",
     colour: "Blanco",
     type: "marcadores",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 142.61,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529857899&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoccer-place_f7000_blanc-orange-jaune_1.jpg&feedId=89032&k=c28bb06ef508de840cf3d40db23a2a76547022a2",
-        sizes: ["16x20 m"],
-      },
       {
         store: "FootStoreFR",
         price: 139.1,
@@ -19044,6 +18851,20 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
           { size: "16x20 m", price: 139.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7002-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-yellow-16x20-m" },
           { size: "20x26 m", price: 170.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7000-marquage-de-terrain-2-contre-2-soccer-place-blanc-orange-jaune-20x26-m" },
           { size: "20x26 m", price: 212.73, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff7001-marquage-de-terrain-2-contre-2-soccer-place-white-orange-jaune-20x26-m" },
+        ],
+      },
+      {
+        store: "FootStoreES",
+        price: 142.61,
+        priceMax: 174.37,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529857899&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoccer-place_f7000_blanc-orange-jaune_1.jpg&feedId=89032&k=c28bb06ef508de840cf3d40db23a2a76547022a2",
+        sizes: ["16x20 m", "20x26 m"],
+        sizePrices: [
+          { size: "16x20 m", price: 142.61, url: "https://www.awin1.com/pclick.php?p=42529857899&a=3013769&m=65912" },
+          { size: "20x26 m", price: 174.37, url: "https://www.awin1.com/pclick.php?p=42529857898&a=3013769&m=65912" },
         ],
       },
     ],
@@ -19671,9 +19492,6 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk5: TrainingProduct[] = [
   {
     id: "sodex-sport-redes-de-futbol-11-tpe-sodex-sport-negro-6",
     brand: "Sodex Sport",
@@ -19972,6 +19790,9 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk5: TrainingProduct[] = [
   {
     id: "sodex-sport-soportes-de-red-de-acero-galvanizado-para-1-par-de-porterias-de-11-u-8-jugadores-sodex-sport-verde",
     brand: "Sodex Sport",
@@ -23148,15 +22969,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     type: "conos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 5.96,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285976&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.005.150.jpg&feedId=89032&k=b4e8c6ace761eb44cef13e4948b40b8f12bef6ac",
-        sizes: ["38 cm"],
-      },
-      {
         store: "FootStoreFR",
         price: 5.34,
         priceMax: 7.14,
@@ -23170,41 +22982,19 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
           { size: "46 cm", price: 7.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-005-46-cone-d-entrainement-softee-semirigide-jaune-46-cm" },
         ],
       },
-    ],
-  },
-  {
-    id: "softee-cono-de-entrenamiento-softee-semirigide-amarillo-2",
-    brand: "Softee",
-    model: "Cono de entrenamiento Softee Semirigide - Amarillo",
-    colour: "Amarillo",
-    type: "conos",
-    offers: [
       {
         store: "FootStoreES",
-        price: 7.81,
+        price: 5.96,
+        priceMax: 7.81,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285980&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529285976&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.005.150.jpg&feedId=89032&k=b4e8c6ace761eb44cef13e4948b40b8f12bef6ac",
-        sizes: ["46 cm."],
-      },
-    ],
-  },
-  {
-    id: "softee-cono-de-entrenamiento-softee-semirigide-azul",
-    brand: "Softee",
-    model: "Cono de entrenamiento Softee Semirigide - Azul",
-    colour: "Azul",
-    type: "conos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.81,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921449&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.028.150.jpg&feedId=89032&k=b241d7f6d9a587b7c36066a1fc296b61d4385236",
-        sizes: ["46 cm."],
+        sizes: ["38 cm", "46 cm."],
+        sizePrices: [
+          { size: "38 cm", price: 5.96, url: "https://www.awin1.com/pclick.php?p=42529285976&a=3013769&m=65912" },
+          { size: "46 cm.", price: 7.81, url: "https://www.awin1.com/pclick.php?p=42529285980&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -23215,15 +23005,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     colour: "Azul",
     type: "conos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 5.96,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285977&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.028.150.jpg&feedId=89032&k=b241d7f6d9a587b7c36066a1fc296b61d4385236",
-        sizes: ["38 cm"],
-      },
       {
         store: "FootStoreFR",
         price: 5.34,
@@ -23238,6 +23019,20 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
           { size: "46 cm", price: 7.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-028-46-cone-d-entrainement-softee-semirigide-bleu-46-cm" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 5.96,
+        priceMax: 7.81,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529285977&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.028.150.jpg&feedId=89032&k=b241d7f6d9a587b7c36066a1fc296b61d4385236",
+        sizes: ["38 cm", "46 cm."],
+        sizePrices: [
+          { size: "38 cm", price: 5.96, url: "https://www.awin1.com/pclick.php?p=42529285977&a=3013769&m=65912" },
+          { size: "46 cm.", price: 7.81, url: "https://www.awin1.com/pclick.php?p=37923921449&a=3013769&m=65912" },
+        ],
+      },
     ],
   },
   {
@@ -23247,15 +23042,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     colour: "Naranja",
     type: "conos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 5.96,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285975&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.022.230.jpg&feedId=89032&k=1637a96ad5ac9d52f2c9ed1acb4bf5db37ec92ba",
-        sizes: ["38 cm"],
-      },
       {
         store: "FootStoreFR",
         price: 5.34,
@@ -23270,23 +23056,19 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
           { size: "46 cm", price: 7.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-022-46-cone-d-entrainement-softee-semirigide-orange-fluor-46-cm" },
         ],
       },
-    ],
-  },
-  {
-    id: "softee-cono-de-entrenamiento-softee-semirigide-naranja-2",
-    brand: "Softee",
-    model: "Cono de entrenamiento Softee Semirigide - Naranja",
-    colour: "Naranja",
-    type: "conos",
-    offers: [
       {
         store: "FootStoreES",
-        price: 7.81,
+        price: 5.96,
+        priceMax: 7.81,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285979&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529285975&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.022.230.jpg&feedId=89032&k=1637a96ad5ac9d52f2c9ed1acb4bf5db37ec92ba",
-        sizes: ["46 cm."],
+        sizes: ["38 cm", "46 cm."],
+        sizePrices: [
+          { size: "38 cm", price: 5.96, url: "https://www.awin1.com/pclick.php?p=42529285975&a=3013769&m=65912" },
+          { size: "46 cm.", price: 7.81, url: "https://www.awin1.com/pclick.php?p=42529285979&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -23318,39 +23100,12 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     ],
   },
   {
-    id: "softee-cono-de-entrenamiento-softee-semirigide-rojo",
-    brand: "Softee",
-    model: "Cono de entrenamiento Softee Semirigide - Rojo",
-    colour: "Rojo",
-    type: "conos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 7.81,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921448&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.003.150.jpg&feedId=89032&k=f8f3b9b8227ed1a825cff530a9441adc68d95ad0",
-        sizes: ["46 cm."],
-      },
-    ],
-  },
-  {
     id: "softee-cono-de-entrenamiento-softee-semirigide-rojo-2",
     brand: "Softee",
     model: "Cono de entrenamiento Softee Semirigide - Rojo",
     colour: "Rojo",
     type: "conos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 5.96,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285974&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.003.150.jpg&feedId=89032&k=f8f3b9b8227ed1a825cff530a9441adc68d95ad0",
-        sizes: ["38 cm"],
-      },
       {
         store: "FootStoreFR",
         price: 5.34,
@@ -23365,6 +23120,20 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
           { size: "46 cm", price: 7.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-003-46-cone-d-entrainement-softee-semirigide-rouge-46-cm" },
         ],
       },
+      {
+        store: "FootStoreES",
+        price: 5.96,
+        priceMax: 7.81,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529285974&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.003.150.jpg&feedId=89032&k=f8f3b9b8227ed1a825cff530a9441adc68d95ad0",
+        sizes: ["38 cm", "46 cm."],
+        sizePrices: [
+          { size: "38 cm", price: 5.96, url: "https://www.awin1.com/pclick.php?p=42529285974&a=3013769&m=65912" },
+          { size: "46 cm.", price: 7.81, url: "https://www.awin1.com/pclick.php?p=37923921448&a=3013769&m=65912" },
+        ],
+      },
     ],
   },
   {
@@ -23374,15 +23143,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     colour: "Verde",
     type: "conos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 5.96,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921446&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.004.150.jpg&feedId=89032&k=f2109cb8ffd5dafe213a53e0dfb20d215050bca7",
-        sizes: ["38 cm"],
-      },
       {
         store: "FootStoreFR",
         price: 5.34,
@@ -23397,23 +23157,19 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
           { size: "46 cm", price: 7.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24179-004-46-cone-d-entrainement-softee-semirigide-vert-46-cm" },
         ],
       },
-    ],
-  },
-  {
-    id: "softee-cono-de-entrenamiento-softee-semirigide-verde-2",
-    brand: "Softee",
-    model: "Cono de entrenamiento Softee Semirigide - Verde",
-    colour: "Verde",
-    type: "conos",
-    offers: [
       {
         store: "FootStoreES",
-        price: 7.81,
+        price: 5.96,
+        priceMax: 7.81,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529285978&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923921446&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_24179.004.150.jpg&feedId=89032&k=f2109cb8ffd5dafe213a53e0dfb20d215050bca7",
-        sizes: ["46 cm."],
+        sizes: ["38 cm", "46 cm."],
+        sizePrices: [
+          { size: "38 cm", price: 5.96, url: "https://www.awin1.com/pclick.php?p=37923921446&a=3013769&m=65912" },
+          { size: "46 cm.", price: 7.81, url: "https://www.awin1.com/pclick.php?p=42529285978&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -24443,9 +24199,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk6: TrainingProduct[] = [
   {
     id: "softee-lot-de-5-chasubles-numerotes-du-1-a-5-softee-jaune",
     brand: "Softee",
@@ -24454,42 +24207,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921513&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-019-7-lot-de-5-chasubles-numerotes-du-1-a-5-softee-jaune-fluor-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79008.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-1-al-5-softee-amarillo",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 1 al 5 Softee - Amarillo",
-    colour: "Amarillo",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286148&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -24497,6 +24214,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-019-1-lot-de-5-chasubles-numerotes-du-1-au-5-softee-jaune-fluor-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79008.003.1.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923921513&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
+        sizes: [],
       },
     ],
   },
@@ -24553,42 +24279,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286144&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-004-7-lot-de-5-chasubles-numerotes-du-1-a-5-softee-vert-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79008.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-1-al-5-softee-verde-2",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 1 al 5 Softee - Verde",
-    colour: "Verde",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286146&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -24596,6 +24286,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-004-1-lot-de-5-chasubles-numerotes-du-1-au-5-softee-vert-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79008.003.1.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529286144&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
+        sizes: [],
       },
     ],
   },
@@ -24661,42 +24360,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921515&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79010.004.7.jpg&feedId=89032&k=fdef4f67470e0200b4574ccd7f620b098280cfe6",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79010-028-7-lot-de-5-chasubles-numerotes-du-11-a-15-softee-bleu-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79010.004.7.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-11-al-15-softee-azul-2",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 11 al 15 Softee - Azul",
-    colour: "Azul",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921516&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79010.004.7.jpg&feedId=89032&k=fdef4f67470e0200b4574ccd7f620b098280cfe6",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -24704,6 +24367,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79010-028-1-lot-de-5-chasubles-numerotes-du-11-au-15-softee-bleu-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79010.004.7.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923921515&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79010.004.7.jpg&feedId=89032&k=fdef4f67470e0200b4574ccd7f620b098280cfe6",
+        sizes: [],
       },
     ],
   },
@@ -24735,48 +24407,12 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     ],
   },
   {
-    id: "softee-lot-de-5-chasubles-numerotes-du-11-a-15-softee-rouge",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 11 al 15 Softee - Rojo",
-    colour: "Rojo",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286150&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79010.003.1.jpg&feedId=89032&k=0265fce902934fdada251067fb21595fb24ada09",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79010-003-7-lot-de-5-chasubles-numerotes-du-11-a-15-softee-rouge-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/7/9/79010.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
     id: "softee-lote-de-5-petos-numerados-del-11-al-15-softee-rojo",
     brand: "Softee",
     model: "Lote de 5 petos numerados del 11 al 15 Softee - Rojo",
     colour: "Rojo",
     type: "petos",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286153&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79010.003.1.jpg&feedId=89032&k=0265fce902934fdada251067fb21595fb24ada09",
-        sizes: [],
-      },
       {
         store: "FootStoreFR",
         price: 23.63,
@@ -24785,6 +24421,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79010-003-1-lot-de-5-chasubles-numerotes-du-11-au-15-softee-rouge-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/9/79010.003.1.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529286150&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79010.003.1.jpg&feedId=89032&k=0265fce902934fdada251067fb21595fb24ada09",
+        sizes: [],
       },
     ],
   },
@@ -24904,42 +24549,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921518&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79012-019-7-lot-de-5-chasubles-numerotes-du-16-a-20-softee-jaune-fluor-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-16-al-20-softee-amarillo",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 16 al 20 Softee - Amarillo",
-    colour: "Amarillo",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286156&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -24947,6 +24556,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79012-019-1-lot-de-5-chasubles-numerotes-du-16-au-20-softee-jaune-fluor-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923921518&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
+        sizes: [],
       },
     ],
   },
@@ -24985,42 +24603,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36485368860&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79012-028-7-lot-de-5-chasubles-numerotes-du-16-a-20-softee-bleu-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-16-al-20-softee-azul-2",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 16 al 20 Softee - Azul",
-    colour: "Azul",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286157&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -25028,6 +24610,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79012-028-1-lot-de-5-chasubles-numerotes-du-16-au-20-softee-bleu-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36485368860&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
+        sizes: [],
       },
     ],
   },
@@ -25066,42 +24657,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921517&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79012-003-7-lot-de-5-chasubles-numerotes-du-16-a-20-softee-rouge-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-16-al-20-softee-rojo-2",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 16 al 20 Softee - Rojo",
-    colour: "Rojo",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921520&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -25110,8 +24665,20 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
         sizes: ["TU"],
       },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923921517&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
+        sizes: [],
+      },
     ],
   },
+];
+
+const minedTrainingProductsChunk6: TrainingProduct[] = [
   {
     id: "softee-lot-de-5-chasubles-numerotees-de-16-a-20-softee-rouge",
     brand: "Softee",
@@ -25147,15 +24714,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923921519&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -25164,32 +24722,14 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
         sizes: ["TU"],
       },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-16-al-20-softee-verde-2",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 16 al 20 Softee - Verde",
-    colour: "Verde",
-    type: "petos",
-    offers: [
       {
         store: "FootStoreES",
         price: 25.67,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286155&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923921519&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79012.003.1.jpg&feedId=89032&k=5eac0e78534e7e6e2d6bef9a4413aa695763acae",
         sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79012-004-7-lot-de-5-chasubles-numerotes-du-16-a-20-softee-vert-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79012.003.1.webp",
-        sizes: ["TU"],
       },
     ],
   },
@@ -25228,6 +24768,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
+        store: "FootStoreFR",
+        price: 23.63,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79009-019-1-lot-de-5-chasubles-numerotes-du-6-au-10-softee-jaune-fluor-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79009.003.1.webp",
+        sizes: ["TU"],
+      },
+      {
         store: "FootStoreES",
         price: 25.67,
         shipping: 8.99,
@@ -25235,15 +24784,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=37923921521&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79009.003.1.jpg&feedId=89032&k=ab24255ecc2a5c889432a5528ca7dac5811935f9",
         sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79009-019-7-lot-de-5-chasubles-numerotes-du-6-a-10-softee-jaune-fluor-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79009.003.1.webp",
-        sizes: ["TU"],
       },
     ],
   },
@@ -25270,33 +24810,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79009-019-2-lot-de-5-chasubles-numerotees-de-6-a-10-softee-amarillo-fluor-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/9/79009.004.2.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-6-al-10-softee-amarillo",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 6 al 10 Softee - Amarillo",
-    colour: "Amarillo",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286160&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79009.003.1.jpg&feedId=89032&k=ab24255ecc2a5c889432a5528ca7dac5811935f9",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79009-019-1-lot-de-5-chasubles-numerotes-du-6-au-10-softee-jaune-fluor-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79009.003.1.webp",
         sizes: ["TU"],
       },
     ],
@@ -25336,42 +24849,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286158&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79009.003.1.jpg&feedId=89032&k=ab24255ecc2a5c889432a5528ca7dac5811935f9",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79009-004-7-lot-de-5-chasubles-numerotes-du-6-a-10-softee-vert-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79009.003.1.webp",
-        sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-6-al-10-softee-verde-3",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 6 al 10 Softee - Verde",
-    colour: "Verde",
-    type: "petos",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.67,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286159&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79009.003.1.jpg&feedId=89032&k=ab24255ecc2a5c889432a5528ca7dac5811935f9",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 23.63,
         shipping: 6.99,
@@ -25379,6 +24856,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79009-004-1-lot-de-5-chasubles-numerotes-du-6-au-10-softee-vert-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79009.003.1.webp",
         sizes: ["TU"],
+      },
+      {
+        store: "FootStoreES",
+        price: 25.67,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529286158&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79009.003.1.jpg&feedId=89032&k=ab24255ecc2a5c889432a5528ca7dac5811935f9",
+        sizes: [],
       },
     ],
   },
@@ -29332,9 +28818,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-escalera-de-velocidad-simple-sporti-4m-rojo",
     brand: "Sporti",
@@ -30073,6 +29556,9 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-munequeras-de-entrenamiento-sporti-x10-blanco",
     brand: "Sporti",
@@ -34241,9 +33727,6 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "tanga-sports-accesorio-de-marcaje-de-linea-en-el-suelo-tanga-sports-x5-vert",
     brand: "Tanga sports",
@@ -34988,6 +34471,9 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "thera-band-bandas-elasticas-terapeuticas-sin-latex-thera-band-rojo",
     brand: "Thera-Band",
@@ -39180,9 +38666,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk9: TrainingProduct[] = [
   {
     id: "tremblay-ct-silbato-fox-40-amarillo",
     brand: "Tremblay CT",
@@ -39925,6 +39408,9 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk9: TrainingProduct[] = [
   {
     id: "ufe-banda-de-resistencia-ufe-x5-multicolor",
     brand: "UFE",
