@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import BackToCatalogLink from "./BackToCatalogLink";
-import { approxPriceLabel, formatOfferMoney, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
+import { approxPriceLabel, formatOfferMoney, offerTotalInEUR, shippingNotMeasured, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref, type GoKind } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -66,7 +66,7 @@ export default function GearDetailClient({
   // (±1 %), comisión (offerOrder.ts). Las que no envían van aparte, al final,
   // y nunca son "mejor precio": si ninguna envía, no hay mejor precio.
   const ships = (o: GearOffer) => offerShipsTo(o.store, countryCode);
-  const sortedOffers = rankOffers(item.offers, offerTotalInEUR, ships);
+  const sortedOffers = rankOffers(item.offers, offerTotalInEUR, ships, (o) => !shippingNotMeasured(o, countryCode));
   const shippable = sortedOffers.filter(ships);
   const elsewhere = sortedOffers.filter((o) => !ships(o));
   const cheapestOffer: GearOffer | undefined = shippable[0];
@@ -178,7 +178,7 @@ export default function GearDetailClient({
               {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
               {formatOfferMoney(rowPrice, offer.currency)}{" "}
               <ApproxPrice amount={rowPrice} currency={offer.currency} />
-              {shippingUnknown(offer)
+              {shippingUnknown(offer, countryCode)
                 ? ` · ${t.detail.shipping}: ${t.compare.shippingToCheck}`
                 : offer.shipping > 0
                   ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
@@ -245,8 +245,8 @@ export default function GearDetailClient({
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{localizeGearModel(item.model, item.brand, locale)}</h1>
           {cheapestOffer ? (
             <p className="mt-2 text-sm text-[#675c44]">
-              {t.botas.bestPrice}: {cheapestOffer.priceMax || shippingUnknown(cheapestOffer) ? `${t.botas.from} ` : ""}
-              {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {shippingUnknown(cheapestOffer) ? "" : t.botas.shippingIncluded}{" "}
+              {t.botas.bestPrice}: {cheapestOffer.priceMax || shippingUnknown(cheapestOffer, countryCode) ? `${t.botas.from} ` : ""}
+              {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {shippingUnknown(cheapestOffer, countryCode) ? "" : t.botas.shippingIncluded}{" "}
               <ApproxPrice amount={cheapestTotal} currency={cheapestOffer.currency} className="text-xs" />
             </p>
           ) : (

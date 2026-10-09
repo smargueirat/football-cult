@@ -3,7 +3,8 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
 import { BootProduct } from "@/data/boots";
-import { formatOfferMoney, bootOfferTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
+import { formatOfferMoney, bootOfferTotalInEUR, previousOfferTotal, shippingNotMeasured } from "@/lib/offerMoney";
+import { rankOffers } from "@/lib/offerOrder";
 import ApproxPrice from "@/components/ApproxPrice";
 import { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -48,9 +49,10 @@ export default function BootCard({
   // bootOfferTotalInEUR (no el precio bruto) porque Pro Soccer factura en
   // USD -- comparar números crudos de monedas distintas daría "más barato"
   // al que simplemente tiene el número más chico, sin importar la moneda.
-  const cheapest = offersForCountry(boot.offers, countryCode).reduce((a, b) =>
-    bootOfferTotalInEUR(a) <= bootOfferTotalInEUR(b) ? a : b
-  );
+  // Un envío sin dato para este país no cuenta como 0 € (offerOrder.ts).
+  const cheapest = rankOffers(offersForCountry(boot.offers, countryCode), bootOfferTotalInEUR, undefined, (o) =>
+    !shippingNotMeasured(o, countryCode)
+  )[0];
   const cheapestTotal = cheapest.price + cheapest.shipping;
   const dropped = isPriceDropped(cheapest);
   const sizes = [...new Set(boot.offers.flatMap((o) => o.sizes))].sort((a, b) => parseFloat(a) - parseFloat(b));
@@ -120,9 +122,9 @@ export default function BootCard({
             {formatOfferMoney(cheapestTotal, cheapest.currency)}
           </span>
           <ApproxPrice amount={cheapestTotal} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
-          {cheapest.shipping > 0 && (
+          {(cheapest.shipping > 0 || shippingNotMeasured(cheapest, countryCode)) && (
             <span className="text-[9px] font-medium uppercase leading-none opacity-70">
-              {t.product.shippingIncluded}
+              {shippingNotMeasured(cheapest, countryCode) ? t.product.shippingNotIncluded : t.product.shippingIncluded}
             </span>
           )}
         </div>

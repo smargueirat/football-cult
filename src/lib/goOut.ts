@@ -48,6 +48,23 @@ export function withSubId(url: string, s: ClickSource): string {
   return url;
 }
 
+// Soicos (cuenta aid 56058; ver "Soicos" en scripts/catalog-mining/README.md):
+// programas aprobados Nike CL 14271, Nike AR 14661 y Puma AR 14084. El enlace
+// es plano y reconstruible: sclick?aid&pid&dl=<URL de la tienda codificada>.
+// Las camisetas ya se guardan así; las botas minadas a mano quedaron con el
+// enlace directo (sin comisión), y esto las envuelve: en el catálogo con
+// scripts/fixes/tanda2_soicos_boots.mts y, por si entra otra a mano, en /go/.
+const SOICOS_PID: [RegExp, number][] = [
+  [/^https:\/\/www\.nike\.cl\//, 14271],
+  [/^https:\/\/www\.nike\.com\.ar\//, 14661],
+  [/^https:\/\/ar\.puma\.com\//, 14084],
+];
+
+export function soicosLink(url: string): string {
+  const pid = SOICOS_PID.find(([re]) => re.test(url))?.[1];
+  return pid ? `https://ad.soicos.com/sclick?aid=56058&pid=${pid}&dl=${encodeURIComponent(url)}` : url;
+}
+
 /**
  * La misma tienda sin nuestro tracking, para los clics de robot: el destino
  * real va dentro del enlace (Awin `ued`, TradeTracker `u`, Rakuten `murl`,
