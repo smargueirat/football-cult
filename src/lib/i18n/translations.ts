@@ -172,6 +172,8 @@ export interface Translations {
     notAvailableInSize: string;
     notAvailableInCountry: string;
     allSoldOut: string;
+    soldOutTitle: string;
+    soldOutAlternatives: string;
     storesCompared: string;
     storesComparedOne: string;
     priceHistoryLabel: string;
@@ -734,6 +736,8 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInSize: "No disponible en talla {size}",
       notAvailableInCountry: "No disponible para envíos a {country}",
       allSoldOut: "Todas las ofertas de esta camiseta están agotadas por ahora.",
+      soldOutTitle: "Agotada ahora mismo",
+      soldOutAlternatives: "Alternativas del mismo equipo con stock:",
       storesCompared: "{n} tiendas comparadas",
       storesComparedOne: "1 tienda con esta talla",
       priceHistoryLabel: "Evolución de precio (últimos {n} días)",
@@ -1296,6 +1300,8 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInSize: "Não disponível no tamanho {size}",
       notAvailableInCountry: "Não disponível para envio a {country}",
       allSoldOut: "Todas as ofertas desta camisa estão esgotadas por enquanto.",
+      soldOutTitle: "Esgotada neste momento",
+      soldOutAlternatives: "Alternativas do mesmo time com estoque:",
       storesCompared: "{n} lojas comparadas",
       storesComparedOne: "1 loja com este tamanho",
       priceHistoryLabel: "Evolução de preço (últimos {n} dias)",
@@ -1858,6 +1864,8 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInSize: "Not available in size {size}",
       notAvailableInCountry: "Not available for shipping to {country}",
       allSoldOut: "All offers for this jersey are sold out for now.",
+      soldOutTitle: "Sold out right now",
+      soldOutAlternatives: "In-stock alternatives from the same team:",
       storesCompared: "{n} stores compared",
       storesComparedOne: "1 store with this size",
       priceHistoryLabel: "Price history (last {n} days)",
@@ -2420,6 +2428,8 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInSize: "Non disponible en taille {size}",
       notAvailableInCountry: "Livraison non disponible vers {country}",
       allSoldOut: "Toutes les offres pour ce maillot sont épuisées pour le moment.",
+      soldOutTitle: "Épuisé pour le moment",
+      soldOutAlternatives: "Alternatives du même club en stock :",
       storesCompared: "{n} boutiques comparées",
       storesComparedOne: "1 boutique dans cette taille",
       priceHistoryLabel: "Évolution du prix (derniers {n} jours)",
@@ -2982,6 +2992,8 @@ export const translations: Record<Locale, Translations> = {
       notAvailableInSize: "Non disponibile in taglia {size}",
       notAvailableInCountry: "Spedizione non disponibile verso {country}",
       allSoldOut: "Tutte le offerte per questa maglia sono esaurite per ora.",
+      soldOutTitle: "Esaurita in questo momento",
+      soldOutAlternatives: "Alternative della stessa squadra disponibili:",
       storesCompared: "{n} negozi confrontati",
       storesComparedOne: "1 negozio con questa taglia",
       priceHistoryLabel: "Andamento del prezzo (ultimi {n} giorni)",

@@ -12,6 +12,21 @@ Sport is Good ES/FR, adidas ES/PT, BSTN IT — plus **Mystery Shirt Club**
 (Shopify, not Awin) and **eBay** (Partner Network, not Awin either), both
 onboarded without an `AWIN_FEED_URL_*` entry (see below).
 
+## Futbol Emotion camisetas (TradeTracker, 2026-10-09)
+
+`mine_futbolemotion_jerseys.py --apply`, en `scripts/daily_refresh.sh` (sin
+LLM). Antes nunca se minaban: no es un `AWIN_FEED_URL_*`, el scan lo daba por
+"solo botas" y sus títulos no dicen "camiseta" (falla `JERSEY_RE`). Clasifica
+cada colorway (equipo, equipación, temporada escrita y vigente, niño/mujer) con
+los mismos patrones de `extract.py`, descarta sin mangas, ediciones especiales,
+colaboraciones "x ..." y camisetas con jugador; la versión jugador y la manga
+larga van a la misma ficha (la web las separa por título). Destino: misma
+referencia de fabricante (`offerMpns.json`) o la única ficha del mismo equipo,
+equipación, temporada y público; si ya tiene una oferta de Futbol Emotion de esa
+variante o hay varias candidatas, no adivina ("dudosa" en el resumen). Si no
+hay ficha, la crea. También sincroniza la unión `TeamKey` de products.ts con
+`teamNames` de productMeta.ts (un club nuevo en el código no rompe tsc).
+
 ## eBay (Partner Network + Browse API — not Awin)
 
 Approved separately from Awin: eBay Partner Network (EPN, for affiliate

@@ -73,8 +73,15 @@ const LONG_SLEEVE =
 
 export type Sleeve = "long" | "short";
 
-export function offerSleeve(offer: { title?: string }): Sleeve {
-  return LONG_SLEEVE.test(normalize(offer.title ?? "")) ? "long" : "short";
+// "M/L" (2026-10-09): así escribe Futbol Emotion la manga larga ("Real Madrid
+// Primera Equipación M/L 2025-2026", 109,99 frente a 89,99). En un marketplace
+// es una talla ("adults M/L", "Size M/L"), así que ahí no cuenta.
+const LONG_SLEEVE_SHOP = /\bm\/l\b/;
+
+export function offerSleeve(offer: { store?: string; title?: string }): Sleeve {
+  const t = normalize(offer.title ?? "");
+  const shop = offer.store !== undefined && !MARKETPLACES.has(offer.store);
+  return LONG_SLEEVE.test(t) || (shop && LONG_SLEEVE_SHOP.test(t)) ? "long" : "short";
 }
 
 /** Clave de variante: dos ofertas solo son comparables si coinciden en

@@ -26,6 +26,7 @@ Idempotente: nunca toca un alias que ya apunta a una ficha viva ni crea alias
 de un id vivo. Lo que escribe lo conserva refresh_gear.py/refresh_boots.py
 (sus update_aliases son acumulativos).
 """
+import datetime
 import json
 import os
 import re
@@ -93,7 +94,128 @@ def parse(src):
     return out
 
 
+# ---------------------------------------------------------------- camisetas
+# Fichas de camiseta con TODAS las ofertas agotadas (2026-10-09): ya no salen en
+# listados, sitemap ni /indice y llevan noindex, pero la URL sigue viva por si el
+# stock vuelve. Si llevan SOLD_OUT_DAYS días así y nadie hizo clic en ellas en
+# CLICK_DAYS días, se retiran: fuera de products.ts y 308 a la ficha viva más
+# parecida (mismo equipo, equipación y público; temporada más cercana) vía
+# productAliases.ts. Sin equivalente, camiseta/[id]/page.tsx ya manda la URL
+# retirada al hub del equipo.
+# "Desde cuándo" vive en SOLD_OUT_STATE (no versionado, como offer_seen.json);
+# la primera vez se siembra con la versión de products.ts de hace SOLD_OUT_DAYS
+# días en git: si ya estaba agotada entonces, cuenta desde esa fecha.
+PRODUCTS = os.path.join(REPO, "src", "data", "products.ts")
+PRODUCT_ALIASES = os.path.join(REPO, "src", "data", "productAliases.ts")
+SOLD_OUT_STATE = os.path.join(REPO, "scripts", "catalog-mining", "soldout_since.json")
+SOLD_OUT_DAYS = int(os.environ.get("SOLD_OUT_DAYS", "14"))
+CLICK_DAYS = 30
+CLICK_DIR = os.environ.get("CLICK_LOG_DIR", "/home/piojo/fc-data/clicks")
+
+
+def jersey_blocks(src):
+    sys.path.insert(0, os.path.join(REPO, "scripts", "catalog-mining"))
+    from refresh import split_blocks
+    return split_blocks(src)
+
+
+def jfield(block, name):
+    m = re.search(rf'\n    {name}: "([^"]*)"', block)
+    return m.group(1) if m else None
+
+
+def sold_out_ids(blocks):
+    return {jfield(b, "id"): b for b in blocks
+            if "\n      { store: " in b and "inStock: true" not in b}
+
+
+def clicked_jerseys(today):
+    import glob
+    cutoff = (today - datetime.timedelta(days=CLICK_DAYS)).isoformat()
+    out = set()
+    for f in glob.glob(os.path.join(CLICK_DIR, "*.jsonl")):
+        for line in open(f, encoding="utf-8"):
+            try:
+                r = json.loads(line)
+            except ValueError:
+                continue
+            if r.get("k") == "j" and r.get("ua") != "bot" and r.get("t", "") >= cutoff:
+                out.add(r.get("p"))
+    return out
+
+
+def season_value(s):
+    m = re.match(r"(\d{4})", s or "")
+    return int(m.group(1)) if m else 0
+
+
+def write_product_aliases(new, why, today):
+    """Mismo formato que dedupe_same_url.write_aliases (ese módulo corre al
+    importarlo): una clave ya presente se reapunta; nunca alias de alias."""
+    s = open(PRODUCT_ALIASES, encoding="utf-8").read()
+    marker = "export const PRODUCT_ID_ALIASES: Record<string, string> = {\n"
+    old = {k for k in new if re.search(rf'^  "{re.escape(k)}": ', s, re.M)}
+    for k in old:
+        s = re.sub(rf'^(  "{re.escape(k)}": )"[^"]*",', lambda m: f'{m[1]}"{new[k]}",', s, flags=re.M)
+    fresh = [k for k in new if k not in old]
+    if fresh:
+        s = s.replace(marker, marker + f"  // {today}: {why}\n" + "".join(f'  "{k}": "{new[k]}",\n' for k in fresh), 1)
+    for k, v in new.items():
+        s = s.replace(f': "{k}",', f': "{v}",')
+    open(PRODUCT_ALIASES, "w", encoding="utf-8").write(s)
+
+
+def retire_sold_out_jerseys():
+    today = datetime.date.today()
+    # SOLD_OUT_ALLOW_DIRTY=1: lo usa scripts/fixes/tanda3_catalogo.sh, que corre
+    # esto después de otros pasos que ya tocaron products.ts.
+    if not os.environ.get("SOLD_OUT_ALLOW_DIRTY") and \
+            subprocess.run(["git", "-C", REPO, "diff", "--quiet", "--", "src/data/products.ts"]).returncode:
+        return "camisetas: products.ts tiene cambios sin commitear, no se retira nada hoy"
+    head, blocks, tail = jersey_blocks(open(PRODUCTS, encoding="utf-8").read())
+    sold = sold_out_ids(blocks)
+    state = json.load(open(SOLD_OUT_STATE)) if os.path.exists(SOLD_OUT_STATE) else {}
+    state = {k: v for k, v in state.items() if k in sold}  # volvió el stock: se reinicia
+    unseeded = [k for k in sold if k not in state]
+    if unseeded:
+        then = (today - datetime.timedelta(days=SOLD_OUT_DAYS)).isoformat()
+        rev = git("log", "--format=%H", f"--before={then}", "-1", "--", "src/data/products.ts").strip()
+        old = set(sold_out_ids(jersey_blocks(git("show", f"{rev}:src/data/products.ts"))[1])) if rev else set()
+        for k in unseeded:
+            state[k] = then if k in old else today.isoformat()
+    clicked = clicked_jerseys(today)
+    due = [k for k in sold if (today - datetime.date.fromisoformat(state[k])).days >= SOLD_OUT_DAYS]
+    retire = {k for k in due if k not in clicked}
+
+    live = [b for b in blocks if "inStock: true" in b]
+    # La equipación de una "retro" va en el id (kitOf en productMeta.ts).
+    kit = lambda b: jfield(b, "typeKey") if jfield(b, "typeKey") != "retro" else \
+        (re.search(r"-(home|away|third|goalkeeper|training|prematch)(?:-|$)", jfield(b, "id")) or [None, "retro"])[1]
+
+    def twin(k):
+        b = sold[k]
+        team, age, y = jfield(b, "teamKey"), jfield(b, "ageGroup"), season_value(jfield(b, "season"))
+        cands = [x for x in live if jfield(x, "teamKey") == team and kit(x) == kit(b) and jfield(x, "ageGroup") == age]
+        cands.sort(key=lambda x: (abs(season_value(jfield(x, "season")) - y), -x.count("inStock: true")))
+        return jfield(cands[0], "id") if cands else None
+
+    aliases = {k: t for k in retire if (t := twin(k))}
+    summary = (f"camisetas: {len(sold)} fichas agotadas, {len(due)} con >= {SOLD_OUT_DAYS} días, "
+               f"retiradas {len(retire)} ({len(aliases)} -> ficha equivalente, {len(retire) - len(aliases)} -> hub del equipo), "
+               f"con clics en {CLICK_DAYS} días (se quedan): {len(set(due) & clicked)}")
+    if DRY:
+        return summary
+    json.dump({k: v for k, v in sorted(state.items()) if k not in retire}, open(SOLD_OUT_STATE, "w"), indent=0)
+    if retire:
+        open(PRODUCTS, "w", encoding="utf-8").write(head + "".join(b for b in blocks if jfield(b, "id") not in retire) + tail)
+        if aliases:
+            write_product_aliases(aliases, f"agotadas {SOLD_OUT_DAYS}+ días y sin clics, retiradas por\n"
+                                  "  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.", today)
+    return summary
+
+
 def main():
+    print(retire_sold_out_jerseys())
     gear_aliases = json.load(open(GEAR_ALIASES, encoding="utf-8"))
     boot_aliases = json.load(open(BOOT_ALIASES, encoding="utf-8"))
     registry = json.load(open(GEAR_IDS, encoding="utf-8")) if os.path.exists(GEAR_IDS) else {}

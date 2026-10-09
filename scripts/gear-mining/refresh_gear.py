@@ -11,7 +11,7 @@ sumar lo decorativo si hace falta después").
 
 Uso: python3 scripts/gear-mining/refresh_gear.py
 """
-import json, re, os, subprocess, sys, unicodedata, urllib.parse
+import json, re, os, subprocess, sys, time, unicodedata, urllib.parse
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
@@ -208,6 +208,70 @@ def build_entries(mined, used_ids, known=None):
     return entries
 
 
+def _merge_offers(a, b):
+    """Dos ofertas de la MISMA tienda para el mismo artículo (la tienda lo
+    lista en dos grupos, p. ej. tallas de niño y de adulto a precios
+    distintos): una sola, con el precio por talla y su enlace."""
+    sys.path.insert(0, os.path.join(SCRIPT_DIR, "..", "boots-mining"))
+    from mine_boots import size_sort_key
+    lo, hi = sorted((a, b), key=lambda o: (o["price"], o["url"]))
+    per_size = {}
+    for o in (hi, lo):  # la más barata pisa
+        for sp in o.get("sizePrices") or [{"size": s, "price": o["price"], "url": o["url"]} for s in o["sizes"]]:
+            if sp["size"] not in per_size or sp["price"] <= per_size[sp["size"]]["price"]:
+                per_size[sp["size"]] = sp
+    top = max(o.get("priceMax") or o["price"] for o in (a, b))
+    out = {k: v for k, v in lo.items() if k not in ("priceMax", "sizePrices")}
+    out["sizes"] = sorted(per_size, key=size_sort_key)
+    if top > lo["price"]:
+        out["priceMax"] = top
+        out["sizePrices"] = [per_size[s] for s in out["sizes"]]
+    return out
+
+
+def merge_same_product(entries):
+    """Fichas que son el MISMO artículo y quedaron separadas (2026-10-09): mismo
+    modelo y color y al menos una foto en común (el nombre de la foto es el SKU
+    del fabricante, la clave de gear_ids.json). Hasta hoy solo se distinguían
+    poniendo la tienda en el <title>. Se queda el id con más tiendas (a
+    igualdad, el más corto) y el otro pasa a alias (308). Devuelve
+    (entries, {id_fundido: id_que_queda})."""
+    key = lambda e: (e["brand"].lower(), e["model"].lower(), e["colour"].lower(), e.get("type"))
+    parent = {}
+
+    def find(i):
+        while parent.get(i, i) != i:
+            i = parent[i]
+        return i
+
+    by_photo = {}
+    for i, e in enumerate(entries):
+        for p in photo_keys(e):
+            j = by_photo.setdefault((key(e), p), i)
+            if find(j) != find(i):
+                parent[find(i)] = find(j)
+    groups = {}
+    for i in range(len(entries)):
+        groups.setdefault(find(i), []).append(entries[i])
+    out, merged = [], {}
+    for g in groups.values():
+        if len(g) == 1:
+            out.append(g[0])
+            continue
+        g.sort(key=lambda e: (-len({o["store"] for o in e["offers"]}), len(e["id"]), e["id"]))
+        keep = dict(g[0], offers=[])
+        by_store = {}
+        for e in g:
+            for o in e["offers"]:
+                by_store[o["store"]] = _merge_offers(by_store[o["store"]], o) if o["store"] in by_store else o
+        keep["offers"] = sorted(by_store.values(), key=lambda o: (o["price"], o["store"]))
+        out.append(keep)
+        for e in g[1:]:
+            merged[e["id"]] = keep["id"]
+    order = {e["id"]: n for n, e in enumerate(entries)}
+    return sorted(out, key=lambda e: order[e["id"]]), merged
+
+
 def old_prices_by_id(auto_section_src):
     prices = {}
     for m in re.finditer(r'id: "([^"]+)".*?price: ([\d.]+),', auto_section_src, re.S):
@@ -241,7 +305,7 @@ def write_ts(ts_path, prefix, entries, export_name, type_name, chunk_var):
 ALIASES_PATH = os.path.join(REPO_ROOT, "src", "data", "gearAliases.json")
 
 
-def update_aliases(section, old_auto_section, entries):
+def update_aliases(section, old_auto_section, entries, merged=None):
     """Id que desaparece -> id del producto que hoy tiene alguna de sus mismas
     URLs de oferta (merge_by_ean lo fundió con otro). Mismo criterio que
     refresh_boots.update_aliases: acumulativo, nunca un id vivo, cadenas
@@ -255,7 +319,8 @@ def update_aliases(section, old_auto_section, entries):
         old_id = m.group(1)
         if old_id in live:
             continue
-        target = next((url_to_id[u] for u in re.findall(r'url: "([^"]+)"', m.group(2)) if u in url_to_id), None)
+        target = (merged or {}).get(old_id) or \
+            next((url_to_id[u] for u in re.findall(r'url: "([^"]+)"', m.group(2)) if u in url_to_id), None)
         if target and aliases.get(old_id) != target:
             aliases[old_id] = target
             added += 1
@@ -272,7 +337,7 @@ def update_aliases(section, old_auto_section, entries):
     return added
 
 
-def refresh_one(target, mined, registry):
+def refresh_one(target, mined, registry, bad=None):
     prefix = split_ts(target["ts_path"], target["sentinel"])
     full_old_src = open(target["ts_path"], encoding="utf-8").read()
     old_auto_section = full_old_src[full_old_src.find(target["sentinel"]):]
@@ -280,10 +345,15 @@ def refresh_one(target, mined, registry):
     old_ids = set(old_prices.keys())
 
     entries = build_entries(mined, set(), registry)
+    if bad:
+        kept = keep_old_offers(entries, parse_entries(old_auto_section), bad)
+        print(f"{target['name']}: {kept} ofertas de ayer conservadas ({', '.join(sorted(bad))})")
+    entries, merged = merge_same_product(entries)
     write_ts(target["ts_path"], prefix, entries, target["export_name"], target["type_name"], target["chunk_var"])
 
     new_ids = {e["id"] for e in entries}
-    n_alias = update_aliases(target["name"], old_auto_section, entries)
+    n_alias = update_aliases(target["name"], old_auto_section, entries, merged)
+    print(f"{target['name']}: mismo artículo en dos fichas, fundidas: {len(merged)}")
     added = new_ids - old_ids
     removed = old_ids - new_ids
     price_changed = sum(
@@ -299,16 +369,94 @@ def refresh_one(target, mined, registry):
     print(f"fundidos con otro (URL vieja -> redirección 308): {n_alias}")
 
 
+# GUARDA por tienda (2026-10-09), misma regla que catalog-mining/refresh_offers.py:
+# la sección se reconstruye entera con lo minado hoy, así que un feed que no se
+# bajó (o vino cortado) borraba todas las fichas de esa tienda y sus URLs. Si el
+# feed no tiene <20 h y >= 80 % de las líneas de la última vez que pasó la
+# guarda, sus ofertas de hoy se descartan y se conservan las de ayer tal cual.
+FEED_DIR = os.environ.get("FEED_DIR", "/tmp/feeds")
+MAX_AGE_H = float(os.environ.get("FEED_MAX_AGE_H", "20"))
+MIN_RATIO = 0.8
+ROWS_STATE = os.path.join(SCRIPT_DIR, "gear_feed_rows.json")  # no versionado
+STORE_FEED = {
+    "FootStoreES": "FOOTSTORE_ES.csv", "FootStoreFR": "FOOTSTORE_FR.csv",
+    "SportIsGoodES": "SPORTISGOOD_ES.csv", "SportIsGoodFR": "SPORTISGOOD_FR.csv",
+    "DeporteOutlet": "DEPORTEOUTLET.csv", "GigasportDE": "GIGASPORT_DE.csv",
+    "GigasportCH": "GIGASPORT_CH.csv", "GigasportFR": "GIGASPORT_FR.csv",
+    "Reebok DE": "REEBOK_DE.csv", "AdidasCL": "ADIDAS_CL.csv",
+}
+
+
+def feed_problem(fname, last_rows):
+    """None si el feed vale; si no, el motivo. Cuenta líneas (rápido): la
+    proporción solo se compara consigo misma."""
+    path = os.path.join(FEED_DIR, fname)
+    if not os.path.exists(path):
+        return "feed ausente"
+    age_h = (time.time() - os.path.getmtime(path)) / 3600
+    if age_h > MAX_AGE_H:
+        return f"feed de hace {age_h:.0f} h (no se descargó hoy)"
+    with open(path, "rb") as f:
+        n = sum(chunk.count(b"\n") for chunk in iter(lambda: f.read(1 << 24), b""))
+    prev = last_rows.get(fname)
+    if n < 50:
+        return f"feed casi vacío ({n} líneas)"
+    if prev and n < MIN_RATIO * prev:
+        return f"feed truncado ({n} líneas, la última vez {prev})"
+    last_rows[fname] = n
+    return None
+
+
+def parse_entries(auto_src):
+    """Entradas de la sección auto-generada (formato de ts_entry) como dicts."""
+    body = re.sub(r"^const \w+: \w+\[\] = \[$|^\];$|^export const[\s\S]*", "", auto_src, flags=re.M)
+    body = body[body.find("\n  {"):] if "\n  {" in body else ""
+    body = re.sub(r'^(\s*)(\w+): ', r'\1"\2": ', body, flags=re.M)
+    body = re.sub(r'\{ size: (.*?), price: (.*?), url: ', r'{ "size": \1, "price": \2, "url": ', body)
+    body = re.sub(r",(\s*[\]}])", r"\1", body)
+    return json.loads("[" + body.strip().rstrip(",") + "]") if body.strip() else []
+
+
+def keep_old_offers(entries, old_entries, bad):
+    """Devuelve a `entries` las ofertas de ayer de las tiendas `bad`."""
+    by_id = {e["id"]: e for e in entries}
+    kept = 0
+    for old in old_entries:
+        offers = [o for o in old["offers"] if o["store"] in bad]
+        if not offers:
+            continue
+        kept += len(offers)
+        if old["id"] in by_id:
+            have = {o["url"] for o in by_id[old["id"]]["offers"]}
+            by_id[old["id"]]["offers"].extend(o for o in offers if o["url"] not in have)
+        else:
+            e = dict(old, offers=offers)
+            entries.append(e)
+            by_id[e["id"]] = e
+    return kept
+
+
 def main():
     run_mine_gear()
+    last_rows = json.load(open(ROWS_STATE)) if os.path.exists(ROWS_STATE) else {}
+    bad = {}
+    for store, fname in STORE_FEED.items():
+        why = feed_problem(fname, last_rows)
+        if why:
+            bad[store] = why
+            print(f"{store:14} SALTADA: {why} -- se conservan sus ofertas de ayer")
     registry = load_ids()
     for target in TARGETS:
         mined = json.load(open(target["mined_path"], encoding="utf-8"))
+        if bad:
+            mined = [dict(d, offers=[o for o in d["offers"] if o["store"] not in bad]) for d in mined]
+            mined = [d for d in mined if d["offers"]]
         known = registry.setdefault(target["name"], {})
         before = len(known)
-        refresh_one(target, mined, known)
+        refresh_one(target, mined, known, bad)
         print(f"ids conocidos: {before} -> {len(known)}")
     save_ids(registry)
+    json.dump(last_rows, open(ROWS_STATE, "w"), indent=1, sort_keys=True)
 
 
 if __name__ == "__main__":

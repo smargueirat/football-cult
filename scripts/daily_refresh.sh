@@ -20,6 +20,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) daily refresh start ==="
 [[ -n "${NO_DOWNLOAD:-}" ]] || python3 -u scripts/catalog-mining/download_feeds.py
 python3 -u scripts/catalog-mining/refresh_offers.py --apply
+# Camisetas nuevas de Futbol Emotion (2026-10-09): mismo feed y misma guarda;
+# solo añade ofertas/fichas, el precio y stock de mañana los pone refresh_offers.
+python3 -u scripts/catalog-mining/mine_futbolemotion_jerseys.py --apply
 python3 -u scripts/boots-mining/refresh_boots.py 2>&1 | grep -E "WARNING|ABORT|Error|===|^(total|new|products|existing|legacy|fichas)" || true
 python3 -u scripts/gear-mining/refresh_gear.py 2>&1 | tail -8
 if ! python3 scripts/gear-mining/check_gear_ids.py; then
