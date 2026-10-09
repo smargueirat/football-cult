@@ -9,6 +9,7 @@ import { localizeGearModel } from "@/lib/gearText";
 import { offerTotalInEUR, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section } from "@/components/hubs/HubParts";
 import DealCard from "@/components/hubs/DealCard";
+import { DealsRelated } from "@/components/hubs/DealParts";
 import { isPriceDropped } from "@/lib/priceDrops";
 import { shortDate } from "@/lib/newStrings";
 import { bootProducts } from "@/data/boots";
@@ -149,6 +150,7 @@ export default async function Offers({ params }: P) {
           </div>
         </Section>
       ))}
+      <DealsRelated locale={locale} current="/ofertas" />
     </div>
   );
 }

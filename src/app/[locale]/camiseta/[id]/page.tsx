@@ -7,7 +7,7 @@ import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
 import { archiveStatsFor } from "@/lib/priceArchive";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { productMpn } from "@/lib/offerGtin";
+import { productCode, singleSizeGtin } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
 import { offerTotalInEUR } from "@/lib/offerMoney";
 import { OG_LOCALE, SITE_URL, aggregateOfferLd, jerseyBrand, jerseyDescription, jerseyName, jerseyTitle, ldImage, ogImages } from "@/lib/seoMeta";
@@ -28,7 +28,7 @@ function productJsonLd(product: Product, locale: HubLocale) {
   const url = `${SITE_URL}/${locale}/camiseta/${product.id}`;
   const image = ldImage(productImage(product));
   const brand = jerseyBrand(product);
-  const mpn = productMpn(product.offers);
+  const mpn = productCode(product.offers);
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -37,10 +37,10 @@ function productJsonLd(product: Product, locale: HubLocale) {
     url,
     ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
     // Código del fabricante: con marca + mpn Google puede identificar el
-    // producto exacto. No se manda el EAN porque es de UNA talla y esta
-    // ficha agrupa todas (ver offerGtin.ts).
+    // producto exacto. El EAN es de UNA talla y esta ficha agrupa todas: solo
+    // va en la Offer de una oferta de talla única (ver offerGtin.ts).
     ...(mpn ? { mpn } : {}),
-    offers: aggregateOfferLd(product.offers, url, offerTotalInEUR),
+    offers: aggregateOfferLd(product.offers, url, offerTotalInEUR, singleSizeGtin),
   };
 }
 
@@ -189,7 +189,7 @@ export default async function JerseyDetailPage({
         priceHistory={priceHistory}
         sameTeamProducts={sameTeamProducts}
         archiveStats={archiveStatsFor(product.offers.map((o) => o.url))}
-        manufacturerCode={productMpn(product.offers)}
+        manufacturerCode={productCode(product.offers)}
       />
       <JerseyFaq product={product} locale={locale} />
       <RelatedLinks related={jerseyRelated(product, locale)} />

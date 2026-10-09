@@ -11,7 +11,7 @@ import { brandNames, isVintageRetro, kitOf, offerShipsTo, typeNames } from "@/li
 import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { countDistinctRetailers } from "@/lib/retailerFamily";
 import { localizeGearModel, localizeGearColour } from "@/lib/gearText";
-import { productMpn } from "@/lib/offerGtin";
+import { productCode, productMpn } from "@/lib/offerGtin";
 import { bootColorKey, COLOR_LABEL_KEY } from "@/lib/colorClassify";
 import { upsizeBootDetailPhoto } from "@/lib/images";
 import { translations } from "@/lib/i18n/translations";
@@ -100,13 +100,16 @@ const DESC: Record<
     `${subject}: ${n > 1 ? `confronta ${n} negozi` : "prezzo in 1 negozio"}${price ? `, da ${price} con spedizione in ${country}` : ""}. Prezzi controllati ogni giorno, link diretto al negozio.`,
 };
 
-export function describe(subject: string, offers: readonly MoneyOffer[], locale: HubLocale): string {
-  return DESC[locale]({
+const CODE_LABEL: Record<HubLocale, string> = { es: "Código del fabricante:", en: "Manufacturer code:", pt: "Código do fabricante:", fr: "Référence fabricant :", it: "Codice produttore:" };
+
+export function describe(subject: string, offers: readonly MoneyOffer[], locale: HubLocale, code?: string): string {
+  const d = DESC[locale]({
     subject,
     n: Math.max(1, liveStores(offers)),
     price: fromPrice(offers, locale),
     country: findCountry(MARKET[locale]).name[locale],
   });
+  return code ? `${d} ${CODE_LABEL[locale]} ${code}.` : d;
 }
 
 // ---------------------------------------------------------------- unicidad
@@ -277,7 +280,7 @@ function jerseyTitles(locale: HubLocale) {
           .map((w) => (w in typeNames ? typeNames[w as keyof typeof typeNames][locale].toLowerCase() : w));
         return tail.length ? tail.join(" ") : undefined;
       },
-      (p) => productMpn(p.offers),
+      (p) => productCode(p.offers),
     ]),
   );
 }
@@ -285,8 +288,17 @@ function jerseyTitles(locale: HubLocale) {
 /** Nombre canónico de la ficha (sin la marca del sitio): H1 secundario,
  *  JSON-LD `name`, migas. */
 export const jerseyName = (p: Product, locale: HubLocale) => jerseyTitles(locale).get(p.id) ?? jerseyBase(p, locale);
-export const jerseyTitle = (p: Product, locale: HubLocale) => withBrand(jerseyName(p, locale));
-export const jerseyDescription = (p: Product, locale: HubLocale) => describe(jerseyName(p, locale), p.offers, locale);
+export const jerseyTitle = (p: Product, locale: HubLocale) => withCode(jerseyName(p, locale), productCode(p.offers));
+export const jerseyDescription = (p: Product, locale: HubLocale) => describe(jerseyName(p, locale), p.offers, locale, productCode(p.offers));
+
+/** El código del fabricante es una consulta real ("893873 euros", posición
+ *  6,8 en Search Console): va en el <title> si cabe en TITLE_MAX; si no, el
+ *  nombre manda y el código queda en la descripción y en la ficha. */
+function withCode(name: string, code: string | undefined): string {
+  if (!code || name.toLowerCase().includes(code.toLowerCase())) return withBrand(name);
+  const t = `${name} ${code}`;
+  return t.length <= TITLE_MAX ? withBrand(t) : withBrand(name);
+}
 
 // ---------------------------------------------------------------- equipamiento
 
@@ -377,6 +389,19 @@ function gearBase(section: GearSection, item: GearLike, locale: HubLocale): stri
 
 // Nike "fq8331-800", Puma "109139-01", adidas "ie1802", y el genérico.
 const SKU_TAIL = /-([a-z]{2}\d{4}-\d{3}|\d{6}-\d{2}|(?=[a-z0-9]*\d)(?=[a-z0-9]*[a-z])[a-z0-9]{5,12}|\d{6,})$/;
+/** Código de fabricante de una ficha de equipamiento que se puede MOSTRAR
+ *  (texto, <title>, JSON-LD `mpn`): el MPN del feed o, si no, el de gearCode
+ *  solo con forma de código real de adidas ("IE1802"), Nike ("FQ8331-800",
+ *  "893873-100") o Puma ("107771-01"). gearCode a secas también devuelve
+ *  restos del nombre de la foto ("2025-12", "033200-FTW") que sirven para
+ *  desempatar títulos pero no como dato. */
+export function gearMpn(item: GearLike): string | undefined {
+  const mpn = productMpn([...item.offers]);
+  if (mpn) return mpn.toUpperCase();
+  const c = gearCode(item);
+  return c && /^(?:[A-Z]{2}\d{4}(?:-\d{3})?|\d{6}-\d{2,3})$/.test(c) ? c : undefined;
+}
+
 function gearCode(item: GearLike): string | undefined {
   const mpn = productMpn([...item.offers]);
   if (mpn) return mpn.toUpperCase();
@@ -420,9 +445,9 @@ function gearTitles(section: GearSection, locale: HubLocale) {
 
 export const gearName = (section: GearSection, item: GearLike, locale: HubLocale) =>
   gearTitles(section, locale).get(item.id) ?? gearBase(section, item, locale);
-export const gearTitle = (section: GearSection, item: GearLike, locale: HubLocale) => withBrand(gearName(section, item, locale));
+export const gearTitle = (section: GearSection, item: GearLike, locale: HubLocale) => withCode(gearName(section, item, locale), gearMpn(item));
 export const gearDescription = (section: GearSection, item: GearLike, locale: HubLocale) =>
-  describe(gearName(section, item, locale), item.offers, locale);
+  describe(gearName(section, item, locale), item.offers, locale, gearMpn(item));
 
 // ---------------------------------------------------------------- entradas
 
