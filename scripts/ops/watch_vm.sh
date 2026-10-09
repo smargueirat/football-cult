@@ -38,7 +38,7 @@ fi
 pc=$(curl -s -o /dev/null -m 10 -w "%{http_code}" http://127.0.0.1:3100/es)
 if [ "$cf" = active ] && [ "$pc" = 200 ] && systemctl --user is-active --quiet fc-tunnel; then
   # La VM sirve una copia que puede ir por detrás de main: se apaga sola (2026-10-09).
-  ssh $K $V 'sudo systemctl stop fc-cloudflared' 2>/dev/null \
+  ssh -i "$HOME/.ssh/oracle_fc" -o BatchMode=yes -o ConnectTimeout=15 -o LogLevel=ERROR "${FC_VM:-opc@51.170.44.144}" 'sudo systemctl stop fc-cloudflared' 2>/dev/null \
     && notify "🟢 La Mini PC volvió: apagué el respaldo de Oracle" "El sitio vuelve a salir solo de la Mini PC." \
     && log "conector VM apagado"
 elif [ "$cf" = inactive ]; then
