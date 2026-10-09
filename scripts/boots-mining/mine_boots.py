@@ -395,6 +395,16 @@ def mine_decathlon():
 # (confirmado con un caso real, "Chaussures de Futsal Joma Top Flex"),
 # así que además del category-match se aplica el mismo EXCLUDE_KEYWORDS
 # de siempre sobre el título real.
+# En el esquema Google Shopping `price` es el precio de LISTA y el que cobra
+# la tienda está en `sale_price` (vacío si no hay rebaja). Usar `price` mostraba
+# las botas FR a precio de lista: JR2821 Copa Pure III Elite a 240 EUR en el
+# catálogo contra 172 EUR del feed / 174 EUR en foot-store.fr (2026-10-08;
+# 12.401 de 15.604 filas de botas del feed FR traen sale_price, siempre menor).
+def gs_price(r):
+    sale = parse_price(r.get('sale_price'))
+    price = parse_price(r.get('price'))
+    return sale if sale and (not price or sale < price) else price
+
 def mine_google_shopping_fr(fname, store_label):
     if not os.path.exists(f"{FEEDS}/{fname}"):
         print(f'{store_label}: feed not found, skipped')
@@ -408,7 +418,7 @@ def mine_google_shopping_fr(fname, store_label):
             title = row.get('title') or ''
             if EXCLUDE_KEYWORDS.search(title):
                 continue
-            price = parse_price(row.get('price'))
+            price = gs_price(row)
             if not price:
                 continue
             key = row.get('item_group_id') or row.get('id')
@@ -417,7 +427,7 @@ def mine_google_shopping_fr(fname, store_label):
             groups.setdefault(key, []).append(row)
     n = 0
     for key, rows in groups.items():
-        rep = min(rows, key=lambda r: parse_price(r.get('price')) or 1e9)
+        rep = min(rows, key=lambda r: gs_price(r) or 1e9)
         sizes = sorted({dot_size(r.get('size', '').strip()) for r in rows if r.get('size', '').strip()},
                         key=size_sort_key)
         brand = (rep.get('brand') or '').strip()
@@ -427,12 +437,12 @@ def mine_google_shopping_fr(fname, store_label):
         # está en el segundo campo separado por ":::".
         ship_m = re.search(r':::\s*([\d.]+)\s*EUR', rep.get('shipping', ''))
         shipping = float(ship_m.group(1)) if ship_m else 0
-        price = parse_price(rep.get('price'))
+        price = gs_price(rep)
         # mismo caso que mine_blaz_awin: dentro de un colorway real,
         # alguna talla puede costar más -- price sigue siendo la más
         # barata (el link real de siempre), priceMax solo se manda si hay
         # diferencia real.
-        price_max = max((parse_price(r.get('price')) or 0) for r in rows)
+        price_max = max((gs_price(r) or 0) for r in rows)
         # precio real por talla (mismo motivo que mine_blaz_awin) -- en
         # este esquema (Google Shopping) el link es el mismo para todas
         # las tallas de un colorway (no hay una URL por talla como en
@@ -440,9 +450,9 @@ def mine_google_shopping_fr(fname, store_label):
         # real por talla, así que igual vale mostrarlo.
         size_prices = sorted(
             (
-                {'size': dot_size(r.get('size', '').strip()), 'price': parse_price(r.get('price')), 'url': r.get('aw_deep_link')}
+                {'size': dot_size(r.get('size', '').strip()), 'price': gs_price(r), 'url': r.get('aw_deep_link')}
                 for r in rows
-                if r.get('size', '').strip() and parse_price(r.get('price')) is not None
+                if r.get('size', '').strip() and gs_price(r) is not None
             ),
             key=lambda sp: size_sort_key(sp['size']),
         )
