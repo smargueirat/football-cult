@@ -1984,6 +1984,8 @@ and does not fit the CSV-feed pattern:**
    don't treat that as a bug to chase without first confirming from an
    AR vantage point.
 
+**Boots too (2026-10-09):** every Nike CL/AR and Puma AR offer in ANY section must be stored as the Soicos link, not the direct store URL (`soicosLink()` in `src/lib/goOut.ts` builds it; `scripts/fixes/tanda2_soicos_boots.mts` rewrites existing data idempotently; `/go/` also wraps any direct link it still finds).
+
 ### What's done vs. still open
 
 - **Nike (CL): 7 add-offers** (Brasil home + goalkeeper, Inglaterra

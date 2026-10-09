@@ -15,6 +15,6 @@ npx tsx scripts/fixes/tanda2_soicos_boots.mts
 npx tsx scripts/catalog-mining/track_price_drops.mts
 
 # 3) Qué saldría hoy en el canal, sin publicar nada.
-npx tsx scripts/catalog-mining/broadcast_price_drops.mts --dry-run | head -3
+npx tsx scripts/catalog-mining/broadcast_price_drops.mts --dry-run
 
 git status --short src/data data scripts/catalog-mining/price_snapshot.json
