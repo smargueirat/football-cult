@@ -46,21 +46,21 @@ export function buildFaq(locale: HubLocale, v: FaqVars): Qa[] {
         a: `El precio más bajo hoy es ${v.price} en ${v.store}, comparando ${v.stores} ${v.stores === 1 ? "tienda" : "tiendas"}. Actualizamos los precios todos los días; el precio final y el envío se confirman en la tienda.`,
       });
     out.push({
-      q: "¿Qué talle elegir?",
-      a: `Las camisetas de fútbol suelen calzar más ajustadas en la versión de jugador y más holgadas en la de hincha. Si dudás entre dos talles, elegí el más grande, y compará con una camiseta que ya te quede bien usando la tabla de medidas de la tienda.${v.sizes ? ` Talles disponibles hoy: ${v.sizes}.` : ""}`,
+      q: "¿Qué talla elijo?",
+      a: `Las camisetas de fútbol suelen calzar más ajustadas en la versión de jugador y más holgadas en la de aficionado. Si dudas entre dos tallas, elige la más grande y compárala con una camiseta que ya te quede bien usando la tabla de medidas de la tienda.${v.sizes ? ` Tallas disponibles hoy: ${v.sizes}.` : ""}`,
     });
     if (v.showVersionQ)
       out.push({
-        q: "¿Cuál es la diferencia entre la versión fan y la de jugador?",
-        a: "La versión fan (réplica o \"stadium\") tiene un corte más suelto y materiales pensados para el uso diario. La versión de jugador (\"authentic\" o \"match\") tiene corte ajustado, tejidos más livianos y detalles como escudos termosellados, y suele costar bastante más. La ficha de cada tienda indica cuál vende.",
+        q: "¿Qué diferencia hay entre la versión aficionado y la de jugador?",
+        a: "La versión aficionado (réplica o \"stadium\") tiene un corte más suelto y materiales pensados para el uso diario. La versión de jugador (\"authentic\" o \"match\") tiene corte ajustado, tejidos más ligeros y detalles como escudos termosellados, y suele costar bastante más. La ficha de cada tienda indica cuál vende.",
       });
     out.push({
       q: "¿Cómo sé si la camiseta es original?",
-      a: "Fijate en la tienda que la vende y en lo que dice su ficha (licencia oficial, marca fabricante). En nuestra guía de autenticidad explicamos qué revisar antes de comprar.",
+      a: "Fíjate en la tienda que la vende y en lo que dice su ficha (licencia oficial, marca fabricante). En nuestra guía de autenticidad explicamos qué revisar antes de comprar.",
     });
     out.push({
       q: "¿Hacen envíos a mi país?",
-      a: "Depende de cada tienda. En la comparación mostramos el costo de envío calculado para tu país cuando está disponible, y las tiendas que no envían ahí no cuentan en el precio.",
+      a: "Depende de cada tienda. En la comparación mostramos el coste de envío calculado para tu país cuando está disponible, y las tiendas que no envían ahí no cuentan en el precio.",
     });
   } else if (locale === "en") {
     if (v.price)
@@ -159,7 +159,7 @@ export function buildFaq(locale: HubLocale, v: FaqVars): Qa[] {
   // en Resend (2026-09-21) -- antes el email solo le llegaba al dueño de la
   // cuenta, por eso esta pregunta se había sacado.
   const alertQa: Record<HubLocale, Qa> = {
-    es: { q: "¿Puedo recibir un aviso si baja el precio?", a: "Sí. Iniciá sesión y guardá la camiseta en favoritos: te avisamos por email si baja de precio." },
+    es: { q: "¿Puedo recibir un aviso si baja el precio?", a: "Sí. Inicia sesión y guarda la camiseta en favoritos: te avisamos por correo si baja de precio." },
     en: { q: "Can I get an alert if the price drops?", a: "Yes. Sign in and save the shirt to your favourites: we email you if the price goes down." },
     pt: { q: "Posso receber um aviso se o preço cair?", a: "Sim. Faça login e salve a camisa nos favoritos: avisamos por email se o preço baixar." },
     fr: { q: "Puis-je être alerté si le prix baisse ?", a: "Oui. Connectez-vous et ajoutez le maillot à vos favoris : nous vous prévenons par email si le prix baisse." },

@@ -61,7 +61,7 @@ export const INDEX: Record<HubLocale, IndexCopy> = {
     statSampleNote: "mismo código de fabricante, temporada actual, solo euros y tiendas oficiales",
     statDays: "días de historia",
     statDaysNote: "del archivo de precios que alimenta la serie temporal",
-    honestyTitle: "Qué tan largo es el historial",
+    honestyTitle: "Cuánto historial hay",
     honestyShort: (days, from, to) =>
       `El archivo de precios de las ofertas de este índice cubre ${days} días (${from} a ${to}). Es poco: una serie mensual necesita varios meses, así que por ahora publicamos la serie diaria desde que hay datos suficientes y no mostramos tendencias. La comparación entre tiendas, por liga y por marca, sí es del día y no depende del historial. Esta página se actualiza sola con cada actualización del catálogo.`,
     honestyNone: "Todavía no hay historial suficiente para publicar una serie de precios. La comparación entre tiendas, por liga y por marca, sí es del día.",
@@ -69,7 +69,7 @@ export const INDEX: Record<HubLocale, IndexCopy> = {
     seriesIntro:
       "Mediana de la variación del precio más bajo de cada camiseta respecto de la fecha base (base = 100). Se siguen las mismas ofertas de la tabla de abajo; no entran ni salen camisetas, solo cambian precios.",
     seriesNoChart: (n) => `Hay ${n} puntos diarios: con menos de 5 no dibujamos un gráfico, porque una línea corta parecería una tendencia sin serlo. La tabla muestra todos los valores.`,
-    seriesMonthlyPending: "La serie mensual aparece cuando el archivo cubra al menos dos meses calendario completos.",
+    seriesMonthlyPending: "La serie mensual aparece cuando el archivo cubra al menos dos meses naturales completos.",
     colDate: "Fecha",
     colIndex: "Índice (base 100)",
     colMonth: "Mes cerrado",
@@ -85,7 +85,7 @@ export const INDEX: Record<HubLocale, IndexCopy> = {
     otherBrand: "Otras marcas",
     methodTitle: "Metodología",
     methodItems: [
-      "Misma prenda: solo se comparan ofertas con el mismo código de fabricante (MPN), que cada tienda publica y que es distinto para la versión de jugador y la de hincha. Es la misma muestra que usa el estudio de precios.",
+      "Misma prenda: solo se comparan ofertas con el mismo código de fabricante (MPN), que cada tienda publica y que es distinto para la versión de jugador y la de aficionado. Es la misma muestra que usa el estudio de precios.",
       "Solo camisetas de temporada actual, en euros y de minoristas oficiales. Se excluyen retro, marketplaces y tiendas de réplicas.",
       "Diferencia entre tiendas: (precio final más alto − más bajo) / más alto, con envío incluido. Se promedia y se calcula la mediana por grupo.",
       "Serie temporal: sale del archivo durable de precios (solo se anotan los cambios, nunca se borra). Panel fijo de las camisetas con precio registrado en la fecha base; la fecha base es la primera en que al menos el 80% de la muestra tiene todas sus ofertas registradas. No se inventan datos anteriores.",

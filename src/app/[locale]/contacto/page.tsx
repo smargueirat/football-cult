@@ -4,7 +4,7 @@ import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import ContactoClient from "./ContactoClient";
 
 const META: Record<Locale, { title: string; description?: string }> = {
-  es: { title: "Contacto | Football Cult", description: "Escribinos si encontraste un precio desactualizado o una tienda que deberíamos sumar." },
+  es: { title: "Contacto | Football Cult", description: "Escríbenos si has encontrado un precio desactualizado o una tienda que deberíamos añadir." },
   en: { title: "Contact | Football Cult", description: "Write to us if you found an outdated price or a store we should add." },
   pt: { title: "Contato | Football Cult", description: "Escreva para nós se encontrou um preço desatualizado ou uma loja que deveríamos adicionar." },
   fr: { title: "Contact | Football Cult", description: "Écrivez-nous si vous avez trouvé un prix obsolète ou une boutique que nous devrions ajouter." },
