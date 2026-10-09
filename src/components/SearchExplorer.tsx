@@ -144,6 +144,9 @@ export default function SearchExplorer({
   const [sortOpen, setSortOpen] = useState(false);
   const sortButtonRef = useRef<HTMLButtonElement>(null);
   const sortPanelRef = useRef<HTMLDivElement>(null);
+  // Sheet móvil de "Ordenar por": si no se exime del click-afuera, el
+  // mousedown sobre una opción lo desmonta antes de que llegue el click.
+  const sortSheetRef = useRef<HTMLDivElement>(null);
   const [sortPanelPos, setSortPanelPos] = useState({ top: 0, right: 0 });
 
   // Primer intento: dropdown posicionado con position:absolute dentro del
@@ -174,7 +177,8 @@ export default function SearchExplorer({
         sortButtonRef.current &&
         !sortButtonRef.current.contains(target) &&
         sortPanelRef.current &&
-        !sortPanelRef.current.contains(target)
+        !sortPanelRef.current.contains(target) &&
+        !sortSheetRef.current?.contains(target)
       ) {
         setSortOpen(false);
       }
@@ -1252,7 +1256,7 @@ export default function SearchExplorer({
             className="fixed inset-0 z-40 bg-black/30 md:hidden"
             onClick={() => setSortOpen(false)}
           />
-          <div className="fixed inset-x-0 bottom-0 z-50 flex flex-col rounded-t-3xl bg-[#FFFDF8] shadow-[0_-16px_40px_-12px_rgba(0,0,0,0.25)] md:hidden">
+          <div ref={sortSheetRef} className="fixed inset-x-0 bottom-0 z-50 flex flex-col rounded-t-3xl bg-[#FFFDF8] shadow-[0_-16px_40px_-12px_rgba(0,0,0,0.25)] md:hidden">
             <div className="flex items-center justify-between border-b border-[#C9A24B]/20 px-5 py-4">
               <p className="font-card-title text-lg text-[#1a1a1a]">{t.search.sortLabel}</p>
               <button
