@@ -74,6 +74,9 @@ type Tier = (typeof SITEMAP_TIERS)[number];
 
 type Tierable = {
   id: string;
+  // Las entradas guardan la foto en la ficha (la del estadio), no en cada
+  // oferta: sin mirar acá, las 2.570 quedaban en B y fuera del sitemap.
+  imageUrl?: string;
   offers: readonly { store: string; price: number; imageUrl?: string; url: string }[];
 };
 
@@ -82,7 +85,7 @@ function tierOf(item: Tierable): Tier | null {
   if (item.offers.length === 0) return null;
   if (priced.length === 0) return "C";
   const families = new Set(priced.map((o) => getRetailerFamily(o.store)));
-  const hasPhoto = priced.some((o) => !!o.imageUrl);
+  const hasPhoto = !!item.imageUrl || priced.some((o) => !!o.imageUrl);
   return families.size >= 2 && hasPhoto ? "A" : "B";
 }
 
