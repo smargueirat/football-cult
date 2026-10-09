@@ -2,6 +2,7 @@
 
 import { createContext, ReactNode, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import FavoritesSignInModal from "@/components/FavoritesSignInModal";
 import { resolveProductId } from "@/data/productAliases";
 
@@ -28,6 +29,7 @@ function readLocalFavorites(): string[] {
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
   const { data: session, status, update } = useSession();
+  const { locale } = useLanguage();
   const [localFavorites, setLocalFavorites] = useState<string[]>([]);
   const [showSignIn, setShowSignIn] = useState(false);
   const mergedOnLogin = useRef(false);
@@ -74,7 +76,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
     update({ favorites: next });
 
     // Favoritos duplica el registro en Redis (además del JWT de arriba)
-    // solo para esto: es lo que permite que /api/cron/check-prices sepa a
+    // solo para esto: es lo que permite que scripts/check_price_alerts.mts sepa a
     // quién avisarle por mail cuando una de sus camisetas favoritas baja
     // de precio, sin depender de que esa persona tenga sesión activa en
     // ese momento. No bloquea el toggle si falla -- el favorito en sí ya
@@ -82,7 +84,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
     fetch("/api/price-alerts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ productId: id, subscribe: !currentlyFavorited }),
+      body: JSON.stringify({ productId: id, subscribe: !currentlyFavorited, locale }),
     }).catch(() => {});
   }
 
@@ -101,7 +103,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   // visible en el catálogo -- aunque `favorites` no haya cambiado.
   const value = useMemo(
     () => ({ favorites, toggleFavorite, isFavorite }),
-    [favorites, status, update]
+    [favorites, status, update, locale]
   );
 
   return (

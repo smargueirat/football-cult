@@ -207,6 +207,7 @@ export interface Translations {
     priceAlertPlaceholder: string;
     priceAlertSubmit: string;
     priceAlertDone: string;
+    priceAlertConfirm: string;
     priceAlertError: string;
     savings: string;
     savingsVsMedian: string;
@@ -754,13 +755,14 @@ export const translations: Record<Locale, Translations> = {
       includedInTotal: "incluido en el total",
       authenticityGuideLink: "¿Cómo saber si es original?",
       pricesUpdatedOn: "Precios actualizados el {date}",
-      priceAlertCtaOff: "🔔 Avisame si baja de precio",
-      priceAlertCtaOn: "✓ Te avisamos por mail si baja",
-      priceAlertPrompt: "Dejanos tu mail y te avisamos si baja",
-      priceAlertPlaceholder: "tu@mail.com",
+      priceAlertCtaOff: "🔔 Avísame si baja de precio",
+      priceAlertCtaOn: "✓ Te avisamos por email si baja",
+      priceAlertPrompt: "Déjanos tu email y te avisamos si baja",
+      priceAlertPlaceholder: "tu@email.com",
       priceAlertSubmit: "Avisarme",
-      priceAlertDone: "Listo. Te escribimos si baja de precio.",
-      priceAlertError: "No se pudo guardar. Probá de nuevo.",
+      priceAlertDone: "Listo. Te escribiremos si baja de precio.",
+      priceAlertConfirm: "Casi listo: te hemos enviado un email. Pulsa el enlace para activar la alerta.",
+      priceAlertError: "No se ha podido guardar. Prueba de nuevo.",
       savings: "Ahorrás {amount} ({pct}%) frente a la tienda más cara",
       savingsVsMedian: "Ahorrás {amount} ({pct}%) frente al precio mediano de {n} tiendas",
       goToStore: "Ir a {store}",
@@ -1309,6 +1311,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertPlaceholder: "o.teu@mail.com",
       priceAlertSubmit: "Avisar-me",
       priceAlertDone: "Pronto. Escrevemos-te se baixar de preço.",
+      priceAlertConfirm: "Quase pronto: enviámos-te um e-mail. Clica no link para ativar o alerta.",
       priceAlertError: "Não foi possível guardar. Tenta de novo.",
       savings: "Poupas {amount} ({pct}%) face à loja mais cara",
       savingsVsMedian: "Poupas {amount} ({pct}%) face ao preço mediano de {n} lojas",
@@ -1858,6 +1861,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertPlaceholder: "you@mail.com",
       priceAlertSubmit: "Notify me",
       priceAlertDone: "Done. We'll email you if the price drops.",
+      priceAlertConfirm: "Almost done: we've sent you an email. Click the link to turn the alert on.",
       priceAlertError: "Couldn't save that. Try again.",
       savings: "You save {amount} ({pct}%) versus the dearest store",
       savingsVsMedian: "You save {amount} ({pct}%) versus the median price across {n} stores",
@@ -2407,6 +2411,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertPlaceholder: "vous@mail.com",
       priceAlertSubmit: "Me prévenir",
       priceAlertDone: "C'est fait. On vous écrit si le prix baisse.",
+      priceAlertConfirm: "Presque fini : nous vous avons envoyé un e-mail. Cliquez sur le lien pour activer l'alerte.",
       priceAlertError: "Enregistrement impossible. Réessayez.",
       savings: "Vous économisez {amount} ({pct}%) face à la boutique la plus chère",
       savingsVsMedian: "Vous économisez {amount} ({pct}%) par rapport au prix médian de {n} boutiques",
@@ -2956,6 +2961,7 @@ export const translations: Record<Locale, Translations> = {
       priceAlertPlaceholder: "tua@mail.com",
       priceAlertSubmit: "Avvisami",
       priceAlertDone: "Fatto. Ti scriviamo se il prezzo scende.",
+      priceAlertConfirm: "Quasi fatto: ti abbiamo inviato un'email. Clicca sul link per attivare l'avviso.",
       priceAlertError: "Non è stato possibile salvare. Riprova.",
       savings: "Risparmi {amount} ({pct}%) rispetto al negozio più caro",
       savingsVsMedian: "Risparmi {amount} ({pct}%) rispetto al prezzo mediano di {n} negozi",

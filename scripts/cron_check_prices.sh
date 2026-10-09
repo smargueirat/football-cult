@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
-# Alertas de precio semanales. En Vercel lo disparaba vercel.json ("0 9 * * 1");
-# desde 2026-09-29 el sitio corre en esta PC y lo dispara el crontab.
-SECRET=$(grep '^CRON_SECRET=' /home/piojo/football-cult/.env.local | cut -d= -f2-)
-curl -s -m 300 -H "Authorization: Bearer $SECRET" http://127.0.0.1:3100/api/cron/check-prices
-echo
+# Alertas de precio semanales (crontab: lunes 11:00, salida a scripts/check_prices.log).
+# Antes hacía curl a /api/cron/check-prices: el trabajo corría dentro del proceso
+# web y nunca terminaba en los 300 s del curl. Ahora es un script aparte que solo
+# mira los productos con suscriptores (ver check_price_alerts.mts).
+#   scripts/cron_check_prices.sh --dry-run   # ensayo: no envía ni escribe nada
+set -uo pipefail
+cd "$(dirname "$0")/.." || exit 1
+echo "[$(date -u +%FT%TZ)] start $*"
+timeout 600 npx --yes tsx scripts/check_price_alerts.mts "$@"
+rc=$?
+[ "$rc" -eq 124 ] && echo "timeout (600 s)"
+echo "[$(date -u +%FT%TZ)] end exit=$rc"
+exit "$rc"
