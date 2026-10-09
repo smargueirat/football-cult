@@ -15,6 +15,7 @@ import { productMpn } from "@/lib/offerGtin";
 import { bootColorKey, COLOR_LABEL_KEY } from "@/lib/colorClassify";
 import { upsizeBootDetailPhoto } from "@/lib/images";
 import { translations } from "@/lib/i18n/translations";
+import { shortDate } from "@/lib/newStrings";
 import type { GearSection } from "@/lib/gearHubs";
 
 // <title>, meta description y piezas del JSON-LD de las fichas (2026-10-09,
@@ -295,6 +296,7 @@ export interface GearLike {
   model: string;
   colour?: string;
   groundType?: string;
+  ageGroup?: string;
   type?: string;
   offers: readonly (MoneyOffer & { url: string; imageUrl?: string })[];
 }
@@ -342,9 +344,26 @@ function bootCore(item: GearLike): string {
   return m.trim();
 }
 
+// Fútbol sala (groundType IC): se buscan como "zapatillas", no "botas".
+const FUTSAL_TITLE: Record<HubLocale, (b: string, m: string) => string> = {
+  es: (b, m) => `Zapatillas de fútbol sala ${b} ${m}`,
+  en: (b, m) => `${b} ${m} futsal shoes`,
+  pt: (b, m) => `Chuteiras de futsal ${b} ${m}`,
+  fr: (b, m) => `Chaussures de futsal ${b} ${m}`,
+  it: (b, m) => `Scarpe da calcetto ${b} ${m}`,
+};
+const KIDS_IN_TEXT = /\b(niñ[oa]s?|kids?|junior|jr|enfants?|bambin[oi]|infantil|criança)\b/i;
+
 function gearBase(section: GearSection, item: GearLike, locale: HubLocale): string {
   const brand = brandLabel(item.brand);
-  if (section === "botas") return BOOT_TITLE[locale](brand, bootCore(item) || item.model);
+  if (section === "botas") {
+    const raw = bootCore(item) || item.model;
+    const core = item.groundType === "IC" ? raw.replace(/\s+IC$/, "") : raw;
+    const t = (item.groundType === "IC" ? FUTSAL_TITLE : BOOT_TITLE)[locale](brand, core);
+    // Botas de niño (ageGroup "kids"): que el título lo diga, o chocan con
+    // la de adulto del mismo modelo.
+    return item.ageGroup === "kids" && !KIDS_IN_TEXT.test(t) ? `${t} ${AGE[locale].kids}` : t;
+  }
   // Equipamiento: el glosario ya traduce el sustantivo y el color
   // ("Chaqueta de chándal Acerbis 4 étoiles - Azul"). Se le mete la marca si
   // el texto del feed no la trae.
@@ -414,13 +433,9 @@ const TICKET_TITLE: Record<HubLocale, (e: string, d: string) => string> = {
   fr: (e, d) => `Billets ${e}, ${d}`,
   it: (e, d) => `Biglietti ${e}, ${d}`,
 };
-// "9 oct 2026" en todos los idiomas (el formato largo de pt, "9 de out. de
-// 2026", dejaba 637 títulos por encima de 60 caracteres).
-const ticketDate = (t: TicketProduct, locale: HubLocale) => {
-  const d = new Date(`${t.date}T00:00:00Z`);
-  const month = new Intl.DateTimeFormat(locale, { month: "short", timeZone: "UTC" }).format(d).replace(".", "");
-  return `${d.getUTCDate()} ${month} ${d.getUTCFullYear()}`;
-};
+// "9 oct 2026" en todos los idiomas, con los meses de newStrings.ts (el ICU
+// del servidor no es fiable; el formato largo de pt dejaba 637 títulos > 60).
+const ticketDate = (t: TicketProduct, locale: HubLocale) => `${shortDate(t.date, locale)} ${t.date.slice(0, 4)}`;
 
 export const ticketName = (t: TicketProduct, locale: HubLocale) => TICKET_TITLE[locale](t.event, ticketDate(t, locale));
 export const ticketTitle = (t: TicketProduct, locale: HubLocale) => withBrand(ticketName(t, locale));
@@ -477,7 +492,10 @@ export function aggregateOfferLd<T extends MoneyOffer & { url: string }>(
   const avail = pool.filter((o) => o.inStock !== false);
   const best = [...(avail.length ? avail : pool)].sort((a, b) => toEur(a) - toEur(b))[0];
   const same = pool.filter((o) => o.currency === best.currency);
-  const prices = same.map((o) => o.price);
+  // El rango sale de lo que se puede comprar; las agotadas siguen listadas
+  // como OutOfStock (mismo criterio que main, 2026-10-09).
+  const buyable = same.filter((o) => o.inStock !== false);
+  const prices = (buyable.length ? buyable : same).map((o) => o.price);
   return {
     "@type": "AggregateOffer",
     priceCurrency: best.currency,

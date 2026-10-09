@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound, permanentRedirect, redirect } from "next/navigation";
-import { Product, findProduct, productImage, products, teamNames } from "@/data/products";
+import { Product, findProduct, products, teamNames } from "@/data/products";
+import { productImage } from "@/lib/productPhoto";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";

@@ -19,6 +19,10 @@ import { translations } from "@/lib/i18n/translations";
 import { brandFacets, groundFromSlug } from "@/lib/gearHubs";
 import { groundName, sectionNoun } from "@/lib/gearHubStrings";
 import { GUIDES, type GuideSlug } from "@/lib/guides";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { bootLineBySlug } from "@/lib/bootLines";
+import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets } from "@/lib/ticketHubs";
+import { teamCategory } from "@/lib/productMeta";
 
 // MAPA DEL SITIO (2026-10-09). Enlazado desde el pie de TODAS las páginas,
 // así que todo lo que lista queda a 2 clics de la home: las páginas del
@@ -81,6 +85,18 @@ function label(path: string, locale: HubLocale): string {
     const season = b.replace("-", "/");
     const kit = c ? ((typeNames as Record<string, Record<HubLocale, string>>)[c]?.[locale] ?? humanize(c)) : "";
     return kit ? `${season} · ${kit}` : `${HUB[locale].seasonLabel} ${season}`;
+  }
+  const x = EXTRA[locale];
+  if (a === "botas" && b === "linea" && c) return bootLineBySlug(c)?.name ?? humanize(c);
+  if (a === "botas" && b === "ninos" && !c) return x.kidsH1;
+  if (a === "botas" && b === "futbol-sala" && !c) return x.futsalH1;
+  if (a === "retro" && b === "decada" && c) return x.retroDecadeH1(Number(c));
+  if (a === "retro" && b) return x.retroTeamH1(team(b) ?? humanize(b), teamCategory[b as keyof typeof teamCategory] === "national");
+  if (a === "tickets" && b === "competicion" && c) return x.ticketsOf(ticketCompetitionFacets().find((f) => f.slug === c)?.name ?? humanize(c));
+  if (a === "tickets" && b === "equipo" && c) {
+    const name = ticketTeamFacets().find((f) => f.slug === c)?.name ?? humanize(c);
+    const k = teamKeyForTicketName(name);
+    return x.ticketsOf(k ? (team(k) ?? name) : name);
   }
   if (a === "guia" && b) return GUIDES[b as GuideSlug]?.[locale]?.title ?? humanize(b);
   if ((a === "botas" || a === "guantes" || a === "pelotas" || a === "ropa" || a === "entrenamiento") && b === "marca" && c) {

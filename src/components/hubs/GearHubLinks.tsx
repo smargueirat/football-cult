@@ -3,6 +3,8 @@ import type { HubLocale } from "@/data/teamMeta";
 import { translations } from "@/lib/i18n/translations";
 import { UI, groundName } from "@/lib/gearHubStrings";
 import { brandFacets, groundFacets, typeFacets, type GearSection } from "@/lib/gearHubs";
+import { lineFacets } from "@/lib/extraHubs";
+import { EXTRA } from "@/lib/extraHubStrings";
 
 // Bloque de enlaces rastreables al pie de las páginas de sección
 // (botas / guantes / pelotas / ropa) hacia sus hubs por marca, terreno y tipo.
@@ -29,7 +31,17 @@ export default function GearHubLinks({ section, locale }: { section: GearSection
   return (
     <nav aria-label={ui.explore} className="mx-auto w-full max-w-[1800px] px-4 pb-10 sm:px-8">
       {section === "botas" && (
-        <Chips title={ui.byGround} items={groundFacets().map((g) => ({ href: `/${locale}/botas/terreno/${g.slug}`, label: groundName(g.name, locale) }))} />
+        <>
+          <Chips title={ui.byGround} items={groundFacets().map((g) => ({ href: `/${locale}/botas/terreno/${g.slug}`, label: groundName(g.name, locale) }))} />
+          <Chips title={EXTRA[locale].byLine} items={lineFacets().map((l) => ({ href: `/${locale}/botas/linea/${l.slug}`, label: l.name }))} />
+          <Chips
+            title={EXTRA[locale].kidsAndFutsal}
+            items={[
+              { href: `/${locale}/botas/ninos`, label: EXTRA[locale].kidsH1 },
+              { href: `/${locale}/botas/futbol-sala`, label: EXTRA[locale].futsalH1 },
+            ]}
+          />
+        </>
       )}
       {(section === "ropa" || section === "entrenamiento") && (
         <Chips

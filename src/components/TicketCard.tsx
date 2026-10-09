@@ -9,6 +9,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc, prefetchDetailPhoto } from "@/lib/images";
+import { shortDate } from "@/lib/newStrings";
 
 // Mismo "chrome" visual que BootCard/GearCard, pero con fecha/venue en
 // vez de talles (un ticket no tiene talla) y comparando 3 monedas
@@ -35,10 +36,7 @@ export default function TicketCard({ ticket, priority = false }: { ticket: Ticke
     prefetchDetailPhoto(photo);
   }
 
-  const dateLabel = new Date(`${ticket.date}T${ticket.time}`).toLocaleDateString(locale, {
-    day: "2-digit",
-    month: "short",
-  });
+  const dateLabel = shortDate(ticket.date, locale);
 
   return (
     <Link

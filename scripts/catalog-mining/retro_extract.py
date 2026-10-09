@@ -22,6 +22,7 @@ from extract import (
     TITLE_CL_SUFFIX_RE,
     split_title_size as _split_title_size,
     match_team,
+    normalize_season_text,
     team_re_all,
     type_re_all,
 )
@@ -93,7 +94,7 @@ def parse_retro_season(title):
     (ebay_mine_full.py, ebay_gb_retro.py) llaman directo con el título crudo,
     así que "Como 1907 Home Shirt" seguía saliendo como temporada 1907 y el
     escaneo lo descartaba a mano noche tras noche."""
-    title = _mask_team_years(title)
+    title = normalize_season_text(_mask_team_years(title))
     m = re.search(r"\b(19\d\d|20\d\d)[/-](19\d\d|20\d\d)\b", title)
     if m:
         return f"{m.group(1)}/{m.group(2)[-2:]}"

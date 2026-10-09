@@ -78,6 +78,10 @@ interface SearchFilterValue {
   bootGroundTypeFilter: string[];
   toggleBootGroundTypeFilter: (g: string) => void;
   setBootGroundTypeFilter: (g: string[]) => void;
+  // Botas de niño (2026-10-09). false = adulto: las de niño no se mezclan
+  // por defecto (otras tallas, y "más baratas primero" abría con ellas).
+  bootKidsFilter: boolean;
+  setBootKidsFilter: (k: boolean) => void;
   // "all" (por defecto) mezcla camisetas y botas; "jerseys"/"boots"
   // aíslan una sola sección. Las páginas de categoría (clubes, retro,
   // etc.) fuerzan "jerseys" al montar -- ahí las botas no pintan nada.
@@ -122,6 +126,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
   const [colorFilter, setColorFilter] = useState<ColorKey[]>([]);
   const [bootTierFilter, setBootTierFilter] = useState<string[]>([]);
   const [bootGroundTypeFilter, setBootGroundTypeFilter] = useState<string[]>([]);
+  const [bootKidsFilter, setBootKidsFilter] = useState(false);
   const [sectionFilter, setSectionFilter] = useState<SectionKey>("all");
   const [priceRange, setPriceRange] = useState<PriceRange>([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
   const [onSaleFilter, setOnSaleFilter] = useState(false);
@@ -139,6 +144,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
     (colorFilter.length > 0 ? 1 : 0) +
     (bootTierFilter.length > 0 ? 1 : 0) +
     (bootGroundTypeFilter.length > 0 ? 1 : 0) +
+    (bootKidsFilter ? 1 : 0) +
     (priceRange[0] !== PRICE_RANGE_MIN || priceRange[1] !== PRICE_RANGE_MAX ? 1 : 0) +
     (onSaleFilter ? 1 : 0);
 
@@ -177,6 +183,8 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
         bootGroundTypeFilter,
         toggleBootGroundTypeFilter: (g) => setBootGroundTypeFilter((cur) => toggle(cur, g)),
         setBootGroundTypeFilter,
+        bootKidsFilter,
+        setBootKidsFilter,
         sectionFilter,
         setSectionFilter,
         priceRange,
@@ -198,6 +206,7 @@ export function SearchFilterProvider({ children }: { children: ReactNode }) {
           setColorFilter([]);
           setBootTierFilter([]);
           setBootGroundTypeFilter([]);
+          setBootKidsFilter(false);
           setSectionFilter("all");
           setPriceRange([PRICE_RANGE_MIN, PRICE_RANGE_MAX]);
           setOnSaleFilter(false);

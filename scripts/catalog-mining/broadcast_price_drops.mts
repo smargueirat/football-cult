@@ -1,34 +1,49 @@
 // Publicador de bajadas de precio a un canal de Telegram.
 //
-//   npx tsx scripts/catalog-mining/broadcast_price_drops.mts          # ensayo, no publica
-//   TELEGRAM_BOT_TOKEN=... TELEGRAM_CHANNEL_ID=@micanal npx tsx ...   # publica de verdad
+//   npx tsx scripts/catalog-mining/broadcast_price_drops.mts --dry-run   # ensayo, no publica nada
+//   npx tsx scripts/catalog-mining/broadcast_price_drops.mts             # publica si hay credenciales
 //
 // Corre DESPUÉS de track_price_drops.mts, como último paso del escaneo
-// nocturno: lee src/data/priceDrops.json, elige las mejores bajadas y las
-// publica.
+// nocturno: elige las mejores bajadas y las publica.
 //
-// Por qué existe: el sitio no recibe visitas de búsqueda orgánica (0
-// sesiones en GA4) y Google indexa 4.098 de ~51.000 URLs porque no
-// tenemos enlaces entrantes. Un canal de chollos no necesita autoridad de
-// dominio ni esperar seis meses, y el dato que lo alimenta ya se calcula
-// todas las noches. Es la única palanca de audiencia que no depende de
-// nadie más.
+// Por qué existe: el sitio no recibe visitas de búsqueda orgánica y un canal
+// de chollos no necesita autoridad de dominio. Pero un canal que publica
+// basura pierde a sus suscriptores: hasta el 2026-10-09 el 89 % de lo
+// publicado eran entradas de reventa con "bajadas" que eran ruido de
+// cotización (una de £45.312 -> £24.723), porque la puntuación era
+// % x precio x comisión, sin tope ni cuota. Ahora solo sale una bajada que
+// se puede defender (ver qualifies()):
+//   - el precio anterior lo vimos NOSOTROS (data/price-history) al menos
+//     MIN_PREVIOUS_DAYS días seguidos, nunca el "precio tachado" del feed, y
+//     el actual es el más bajo de los últimos 30 días (verifiedDrop);
+//   - bajada >= MIN_DROP_PCT y >= MIN_DROP_EUR, precio <= MAX_EUR de su
+//     sección, en stock, con envío a España (el canal es en español de
+//     España) y como mucho MAX_DAYS_SINCE_DROP días desde la bajada;
+//   - entradas: nunca un precio de plantilla (el mismo importe en decenas de
+//     partidos), estable 2 corridas, partido futuro, y como mucho 1 de cada
+//     TICKET_EVERY mensajes; primero camisetas, botas y equipamiento (QUOTA);
+//   - ni un día en que la tienda bajó de golpe gran parte de la sección
+//     (massDropDays: cambio del feed, como el paso de precio de lista a
+//     precio de venta de Foot-Store FR el 2026-10-09);
+//   - el mismo producto no se repite en REPEAT_DAYS días.
 //
-// Se enlaza NUESTRA ficha, no el link de afiliado directo. Por dos
-// razones, y las dos importan: varios programas de Awin prohíben publicar
-// sus deep links fuera del sitio aprobado, y la ficha es la que muestra la
-// comparación completa (de ahí pueden salir varios clics, no uno).
+// Se enlaza NUESTRA ficha, no el link de afiliado directo: varios programas
+// de Awin prohíben publicar sus deep links fuera del sitio aprobado, y la
+// ficha muestra la comparación completa.
 import fs from "node:fs";
 import path from "node:path";
-import { products, teamNames, typeNames } from "../../src/data/products";
+import { products, teamNames } from "../../src/data/products";
 import { bootProducts } from "../../src/data/boots";
 import { ticketProducts } from "../../src/data/tickets";
 import { apparelProducts } from "../../src/data/apparel";
 import { gloveProducts } from "../../src/data/gloves";
 import { ballProducts } from "../../src/data/balls";
 import { trainingProducts } from "../../src/data/training";
-import { previousPriceOf, priceDropPercent } from "../../src/lib/priceDrops";
+import { kitTypeName, offerShipsTo } from "../../src/lib/productMeta";
+import { localizeGearModel } from "../../src/lib/gearText";
 import { commissionRate } from "../../src/lib/commissionRates";
+import { offerTotalInEUR, shippingUnknown, ticketTemplatePrices, type OfferCurrencyCode } from "../../src/lib/offerMoney";
+import { loadArchive, massDropDays, verifiedDrop } from "../../src/lib/priceArchive";
 import {
   dataDir,
   readFollowers,
@@ -38,66 +53,151 @@ import {
 } from "../../src/lib/telegramFollowers";
 
 const HERE = import.meta.dirname;
+const REPO_ROOT = path.join(HERE, "..", "..");
 const STATE_PATH = path.join(HERE, "telegram_posted.json");
 const SITE = "https://football-cult.com/es";
+const ARGS = process.argv.slice(2);
+const FORCE_DRY_RUN = ARGS.includes("--dry-run") || process.env.DRY_RUN === "1";
 
-// Las credenciales viven en .env.local, igual que las de Awin/eBay/Rakuten,
-// y el runbook nocturno dice justamente "sin ... en .env.local hace un
-// ENSAYO". Pero esto solo miraba process.env, que en el cron está vacío:
-// el canal quedó en ensayo desde el 2026-09-25 sin que nada fallara, porque
-// "ENSAYO" es tambien el comportamiento correcto cuando de verdad faltan.
-// Se leen del archivo si no vienen ya exportadas (exportar sigue ganando).
-for (const line of fs.existsSync(path.join(HERE, "../../.env.local"))
-  ? fs.readFileSync(path.join(HERE, "../../.env.local"), "utf-8").split("\n")
-  : []) {
-  const m = /^(TELEGRAM_BOT_TOKEN|TELEGRAM_CHANNEL_ID)=(.+)$/.exec(line.trim());
-  if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim();
+// Las credenciales viven en .env.local (el cron no las exporta); exportarlas
+// sigue ganando. Con --dry-run ni se leen ni se usan: un ensayo nunca publica.
+if (FORCE_DRY_RUN) {
+  delete process.env.TELEGRAM_BOT_TOKEN;
+  delete process.env.TELEGRAM_CHANNEL_ID;
+} else {
+  const envFile = path.join(REPO_ROOT, ".env.local");
+  for (const line of fs.existsSync(envFile) ? fs.readFileSync(envFile, "utf-8").split("\n") : []) {
+    const m = /^(TELEGRAM_BOT_TOKEN|TELEGRAM_CHANNEL_ID)=(.+)$/.exec(line.trim());
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim();
+  }
 }
 
-/** Cuántas bajadas se publican por corrida. */
-const PER_RUN = 3;
-/** Mínimo para que valga la pena molestar a un suscriptor. */
-const MIN_DROP_PCT = 10;
+/** Mensajes al canal por corrida (como máximo; con menos bajadas, menos). */
+const PER_RUN = Number(ARGS[ARGS.indexOf("--max") + 1]) || 10;
+/** Cuota por grupo dentro de PER_RUN; lo que sobre lo llenan los demás (nunca entradas). */
+const QUOTA: Record<string, number> = { camisetas: 4, botas: 3, equipamiento: 3 };
+/** Entradas: como mucho 1 de cada TICKET_EVERY mensajes publicados. */
+const TICKET_EVERY = 10;
+/** País del canal: envío y textos. */
+const CHANNEL_COUNTRY = "ES";
+/** Días que el precio anterior tuvo que estar vigente en nuestro archivo. */
+const MIN_PREVIOUS_DAYS = 5;
+const MIN_DROP_PCT = 15;
+const MIN_DROP_EUR = 5;
+/** Una bajada más vieja ya no es noticia. */
+const MAX_DAYS_SINCE_DROP = 7;
+/** Tope de cordura por sección, en EUR (por encima es un dato raro o reventa). */
+const MAX_EUR: Record<string, number> = {
+  camisetas: 250,
+  botas: 350,
+  ropa: 250,
+  guantes: 150,
+  pelotas: 200,
+  entrenamiento: 150,
+  entradas: 400,
+};
+/** El mismo producto no vuelve al canal en estos días. */
+const REPEAT_DAYS = 14;
 /** Máximo de mensajes privados por seguidor y corrida. */
 const PER_FOLLOWER = 3;
 /** Pausa entre envíos: el Bot API tolera ~30 msg/s en total, vamos a 10. */
 const PAUSE_MS = 100;
-/** Días que se recuerda una bajada ya publicada, para no repetirla. */
+/** Días que se recuerda lo publicado. */
 const STATE_DAYS = 30;
 
-// Solo para ordenar entre monedas, no para mostrar importes convertidos:
-// cada mensaje muestra el precio en la moneda real de la tienda.
-const TO_EUR: Record<string, number> = {
-  EUR: 1,
-  USD: 0.92,
-  GBP: 1.17,
-  BRL: 0.17,
-  CLP: 0.001,
-  ARS: 0.0008,
+const GROUP: Record<string, string> = {
+  camisetas: "camisetas",
+  botas: "botas",
+  entradas: "entradas",
+  ropa: "equipamiento",
+  guantes: "equipamiento",
+  pelotas: "equipamiento",
+  entrenamiento: "equipamiento",
 };
 
 interface Candidate {
+  /** Nuestra ficha: identifica el producto para no repetirlo. */
   key: string;
   section: string;
   title: string;
   url: string;
   imageUrl?: string;
   store: string;
+  offerUrl: string;
   price: number;
   previousPrice: number;
+  previousDays: number;
   currency: string;
   dropPct: number;
-  /** Equipo de la camiseta (solo camisetas: botas, ropa, etc. no son de un equipo). */
+  /** Línea de envío a España (no aplica a entradas). */
+  shippingLine?: string;
+  /** Tiendas distintas en la ficha. */
+  stores: number;
+  /** Equipo de la camiseta (solo camisetas). */
   teamKey?: string;
-  /** Descuento por comisión esperada: una bota al 30% vale mucho más que un cono al 30%. */
+  /** Bajada en EUR x comisión: lo que vale de verdad la bajada. */
   score: number;
 }
 
-function jerseyTitle(p: (typeof products)[number]): string {
-  const team = teamNames[p.teamKey]?.es ?? p.teamKey;
-  const kind = typeNames[p.typeKey]?.es ?? "";
-  return `Camiseta ${team} ${p.season} ${kind}`.replace(/\s+/g, " ").trim();
+type AnyOffer = {
+  store: string;
+  price: number;
+  currency: string;
+  url: string;
+  shipping?: number;
+  imageUrl?: string;
+  inStock?: boolean;
+};
+
+const archive = loadArchive(path.join(REPO_ROOT, "data", "price-history"));
+const templates = ticketTemplatePrices(ticketProducts);
+// Días en que una tienda bajó de golpe gran parte de una sección: cambio del
+// feed o de nuestra minería (precio de lista -> de venta), no una rebaja.
+const MASS: Record<string, Set<string>> = Object.fromEntries(
+  (
+    [
+      ["camisetas", products],
+      ["botas", bootProducts],
+      ["entradas", ticketProducts],
+      ["ropa", apparelProducts],
+      ["guantes", gloveProducts],
+      ["pelotas", ballProducts],
+      ["entrenamiento", trainingProducts],
+    ] as const
+  ).map(([s, list]) => [s, massDropDays((list as readonly { offers: readonly AnyOffer[] }[]).flatMap((p) => p.offers), archive)]),
+);
+const tomorrow = new Date(Date.now() + 864e5).toISOString().slice(0, 10);
+
+function toEUR(amount: number, currency: string): number {
+  return offerTotalInEUR({ price: amount, shipping: 0, currency: currency as OfferCurrencyCode });
 }
+
+/** Por qué una oferta NO va al canal ({why}), o la bajada verificada si va. */
+function qualifies(section: string, o: AnyOffer, eventDate?: string) {
+  if (o.inStock === false) return { why: "sin stock" };
+  // eBay: solo el marketplace español (las demás no siempre envían a España
+  // y su envío/aduana es una incógnita).
+  if (o.store.startsWith("eBay") ? o.store !== "eBay ES" : !offerShipsTo(o.store, CHANNEL_COUNTRY))
+    return { why: "no envía a España" };
+  if (commissionRate(o.store) <= 0) return { why: "sin afiliación" };
+  const drop = verifiedDrop(o.url, o.price, o.currency, archive, MIN_PREVIOUS_DAYS);
+  if (!drop) return { why: "sin bajada verificada" };
+  const dropEUR = toEUR(drop.previous - o.price, o.currency);
+  if (drop.pct < MIN_DROP_PCT || dropEUR < MIN_DROP_EUR) return { why: "bajada pequeña" };
+  if (toEUR(o.price, o.currency) > (MAX_EUR[section] ?? 200)) return { why: "precio sobre el tope" };
+  if (drop.daysAtCurrent > MAX_DAYS_SINCE_DROP) return { why: "bajada antigua" };
+  if (MASS[section]?.has(`${o.store}|${drop.since}`)) return { why: "bajada masiva de la tienda (cambio del feed)" };
+  if (section === "entradas") {
+    if (templates.has(`${o.store}|${o.price}`) || templates.has(`${o.store}|${drop.previous}`))
+      return { why: "precio de relleno" };
+    if (drop.daysAtCurrent < 2) return { why: "entrada sin confirmar" };
+    if (!eventDate || eventDate < tomorrow) return { why: "partido pasado" };
+  }
+  return { drop, dropEUR };
+}
+
+/** Descartes por motivo (solo de ofertas que sí tenían una bajada de algún tipo). */
+const rejected = new Map<string, number>();
 
 function collect(): Candidate[] {
   const out: Candidate[] = [];
@@ -107,57 +207,77 @@ function collect(): Candidate[] {
     routeBase: string,
     id: string,
     title: string,
-    offers: readonly { store: string; price: number; currency: string; url: string; imageUrl?: string; inStock?: boolean }[],
+    offers: readonly AnyOffer[],
     // Las entradas traen la foto en el producto, no en la oferta.
     fallbackImage?: string,
-    teamKey?: string
+    teamKey?: string,
+    eventDate?: string,
   ) => {
+    const stores = new Set(offers.map((o) => o.store)).size;
     for (const o of offers) {
-      // inStock solo cuenta cuando la sección lo trae: en varias el feed
-      // no da disponibilidad fiable y forzar el filtro las dejaría fuera.
-      if (o.inStock === false) continue;
-      const prev = previousPriceOf(o);
-      if (prev === undefined) continue;
-      const pct = priceDropPercent(o);
-      if (pct < MIN_DROP_PCT) continue;
-      const rate = commissionRate(o.store);
-      // Una tienda sin programa de afiliado no paga el clic: no se
-      // promociona, aunque la bajada sea espectacular.
-      if (rate <= 0) continue;
-      const eur = (o.price * (TO_EUR[o.currency] ?? 1)) * rate;
+      const q = qualifies(section, o, eventDate);
+      if (!q.drop) {
+        if (q.why !== "sin bajada verificada" && q.why !== "sin stock" && q.why !== "no envía a España" && q.why !== "sin afiliación")
+          rejected.set(`${section}: ${q.why}`, (rejected.get(`${section}: ${q.why}`) ?? 0) + 1);
+        continue;
+      }
+      const url = `${SITE}/${routeBase}/${id}`;
       out.push({
-        key: `${o.url}|${prev}`,
+        key: url,
         section,
         title,
-        url: `${SITE}/${routeBase}/${id}`,
+        url,
         imageUrl: telegramPhoto(o.imageUrl ?? fallbackImage),
         store: o.store,
+        offerUrl: o.url,
         price: o.price,
-        previousPrice: prev,
+        previousPrice: q.drop.previous,
+        previousDays: q.drop.previousDays,
         currency: o.currency,
-        dropPct: pct,
+        dropPct: Math.round(q.drop.pct),
+        shippingLine: section === "entradas" ? undefined : shippingLine(o),
+        stores,
         teamKey,
-        score: pct * eur,
+        score: q.dropEUR * commissionRate(o.store),
       });
     }
   };
 
-  for (const p of products) push("camisetas", "camiseta", p.id, jerseyTitle(p), p.offers, undefined, p.teamKey);
-  for (const b of bootProducts) push("botas", "botas", b.id, `${b.brand} ${b.model}`, b.offers);
+  for (const p of products)
+    push(
+      "camisetas",
+      "camiseta",
+      p.id,
+      `Camiseta ${teamNames[p.teamKey]?.es ?? p.teamKey} ${p.season} ${kitTypeName(p, "es")}`,
+      p.offers,
+      undefined,
+      p.teamKey,
+    );
+  for (const b of bootProducts) push("botas", "botas", b.id, named(b.brand, b.model, "Botas"), b.offers);
   for (const t of ticketProducts)
-    push("entradas", "tickets", t.id, ticketTitle(t), t.offers, t.imageUrl);
-  for (const a of apparelProducts) push("ropa", "ropa", a.id, `${a.brand} ${a.model}`, a.offers);
-  for (const g of gloveProducts) push("guantes", "guantes", g.id, `${g.brand} ${g.model}`, g.offers);
-  for (const b of ballProducts) push("pelotas", "pelotas", b.id, `${b.brand} ${b.model}`, b.offers);
-  for (const t of trainingProducts) push("entrenamiento", "entrenamiento", t.id, `${t.brand} ${t.model}`, t.offers);
+    push("entradas", "tickets", t.id, `Entradas ${t.event} · ${t.date.split("-").reverse().join("/")}`, t.offers, t.imageUrl, undefined, t.date);
+  const gear = (section: string, list: readonly { id: string; brand: string; model: string; offers: readonly AnyOffer[] }[]) => {
+    for (const g of list) push(section, section, g.id, named(g.brand, localizeGearModel(g.model, g.brand, "es")), g.offers);
+  };
+  gear("ropa", apparelProducts);
+  gear("guantes", gloveProducts);
+  gear("pelotas", ballProducts);
+  gear("entrenamiento", trainingProducts);
 
   return out;
 }
 
-function ticketTitle(t: (typeof ticketProducts)[number]): string {
-  // `event` ya viene como "Local vs Visitante"; la fecha la agrega el
-  // mensaje porque una entrada sin fecha no dice nada.
-  return `${t.event} · ${t.date}`;
+// El modelo de algunas tiendas ya trae "Botas de fútbol <marca> ...": no se
+// antepone otra vez ni la marca ni el tipo.
+function named(brand: string, model: string, kind = ""): string {
+  const m = model.toLowerCase().includes(brand.toLowerCase()) ? model : `${brand} ${model}`;
+  return kind && !m.toLowerCase().startsWith(kind.toLowerCase()) ? `${kind} ${m}` : m;
+}
+
+function shippingLine(o: AnyOffer): string {
+  if (shippingUnknown({ store: o.store, shipping: o.shipping ?? 0, url: o.url }, CHANNEL_COUNTRY))
+    return "Envío a España: a calcular en la tienda";
+  return o.shipping ? `Envío a España: ${money(o.shipping, o.currency)}` : "Envío gratis a España";
 }
 
 // La foto que se publica NO es siempre la que guarda el catálogo.
@@ -190,13 +310,21 @@ function telegramPhoto(url: string | undefined): string | undefined {
   return `https://images.weserv.nl/?url=${encodeURIComponent(full)}&w=1280&output=jpg`;
 }
 
+const CURRENCY: Record<string, { symbol: string; name: string }> = {
+  EUR: { symbol: "€", name: "" },
+  USD: { symbol: "US$", name: "dólares" },
+  GBP: { symbol: "£", name: "libras" },
+  BRL: { symbol: "R$", name: "reales" },
+  CLP: { symbol: "CLP", name: "pesos chilenos" },
+  ARS: { symbol: "ARS", name: "pesos argentinos" },
+};
+
+// Formato de España: "1.234,56 €". Sin toLocaleString: este Node corre con
+// ICU reducido (solo en-GB) y toLocaleString("es") descarta los separadores
+// en silencio -- bug ya encontrado en trustStrip.ts.
 function money(amount: number, currency: string): string {
-  const symbol: Record<string, string> = { EUR: "€", USD: "US$", GBP: "£", BRL: "R$", CLP: "$", ARS: "$" };
-  // Sin toLocaleString: este Node corre con ICU reducido (solo en-GB) y
-  // toLocaleString("es") descarta los separadores en silencio -- bug ya
-  // encontrado en trustStrip.ts.
-  const body = amount.toFixed(2).replace(".", ",");
-  return `${symbol[currency] ?? currency + " "}${body}`;
+  const [int, dec] = amount.toFixed(2).split(".");
+  return `${int.replace(/\B(?=(\d{3})+(?!\d))/g, ".")},${dec} ${CURRENCY[currency]?.symbol ?? currency}`;
 }
 
 const EMOJI: Record<string, string> = {
@@ -210,13 +338,16 @@ const EMOJI: Record<string, string> = {
 };
 
 function caption(c: Candidate): string {
+  const foreign = CURRENCY[c.currency]?.name;
   return [
     `${EMOJI[c.section] ?? "⚽"} <b>${escapeHtml(c.title)}</b>`,
     ``,
-    `<s>${money(c.previousPrice, c.currency)}</s> → <b>${money(c.price, c.currency)}</b> (-${c.dropPct}%)`,
-    `en ${escapeHtml(c.store)}`,
+    `<b>${money(c.price, c.currency)}</b> en ${escapeHtml(c.store)} · antes <s>${money(c.previousPrice, c.currency)}</s> (−${c.dropPct} %)`,
+    `Precio anterior visto ${c.previousDays} días seguidos en nuestro historial.`,
+    ...(foreign ? [`Precio en ${foreign}, tal como lo cobra la tienda.`] : []),
+    ...(c.shippingLine ? [c.shippingLine] : []),
     ``,
-    `👉 ${c.url}`,
+    `👉 ${c.stores > 1 ? `Compara ${c.stores} tiendas` : "Ver la oferta"}: ${c.url}`,
   ].join("\n");
 }
 
@@ -225,7 +356,10 @@ function escapeHtml(s: string): string {
 }
 
 interface State {
-  [key: string]: string; // key -> fecha ISO de publicación
+  // ficha -> fecha ISO de publicación. Hasta el 2026-10-09 la clave era
+  // "<url de la oferta>|<precio anterior>"; esas siguen contando para no
+  // repetir hasta que caduquen.
+  [key: string]: string;
 }
 
 class TelegramError extends Error {
@@ -274,9 +408,9 @@ async function sendPrivate(token: string, chat: string, c: Candidate): Promise<v
   }
 }
 
-// Avisos a seguidores. Aparte del canal: aquí NO vale el tope PER_RUN (que es
+// Avisos a seguidores. Aparte del canal: aquí NO valen las cuotas (que son
 // para no inundar un canal público); cada seguidor recibe como máximo
-// PER_FOLLOWER de las bajadas >=MIN_DROP_PCT de los equipos que sigue.
+// PER_FOLLOWER de las bajadas verificadas de los equipos que sigue.
 // "Ya enviado" se recuerda por chat en el directorio de datos (fuera del repo,
 // porque son ids de personas), de modo que lo que no cupo hoy sale mañana.
 async function notifyFollowers(token: string | undefined, all: Candidate[]): Promise<void> {
@@ -331,39 +465,67 @@ async function notifyFollowers(token: string | undefined, all: Candidate[]): Pro
   console.log(`Avisos privados ${token ? "enviados" : "que se enviarían"}: ${token ? delivered : "ensayo"}.`);
 }
 
+/** Elige los mensajes del canal: cuota por grupo, relleno sin entradas y,
+ *  al final, como mucho una entrada si toca (1 de cada TICKET_EVERY). */
+function pick(candidates: Candidate[], state: State): Candidate[] {
+  const repeatCutoff = new Date(Date.now() - REPEAT_DAYS * 864e5).toISOString();
+  const recentOfferUrls = new Set(
+    Object.entries(state)
+      .filter(([k, d]) => d >= repeatCutoff && !k.startsWith(SITE))
+      .map(([k]) => k.split("|")[0]),
+  );
+  const fresh = candidates
+    .filter((c) => !(state[c.key] >= repeatCutoff) && !recentOfferUrls.has(c.offerUrl))
+    .sort((a, b) => b.score - a.score);
+  // Una sola oferta por producto (la de más valor).
+  const seen = new Set<string>();
+  const best = fresh.filter((c) => !seen.has(c.key) && seen.add(c.key));
+
+  const picks: Candidate[] = [];
+  const taken = new Set<Candidate>();
+  const take = (c: Candidate) => (picks.push(c), taken.add(c));
+  for (const [group, quota] of Object.entries(QUOTA))
+    best.filter((c) => GROUP[c.section] === group).slice(0, quota).forEach(take);
+  for (const c of best) {
+    if (picks.length >= PER_RUN) break;
+    if (!taken.has(c) && GROUP[c.section] !== "entradas") take(c);
+  }
+  picks.splice(PER_RUN);
+
+  // Mensajes sin entrada desde la última entrada publicada (nuevo formato).
+  const history = Object.entries(state)
+    .filter(([k]) => k.startsWith(SITE))
+    .sort((a, b) => b[1].localeCompare(a[1]));
+  const lastTicket = history.findIndex(([k]) => k.includes("/tickets/"));
+  const sinceTicket = lastTicket === -1 ? Infinity : lastTicket;
+  const ticket = best.find((c) => c.section === "entradas");
+  if (ticket && picks.length < PER_RUN && sinceTicket + picks.length >= TICKET_EVERY - 1) picks.push(ticket);
+  return picks;
+}
+
 async function main() {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chat = process.env.TELEGRAM_CHANNEL_ID;
-  const dryRun = !token || !chat;
+  const dryRun = FORCE_DRY_RUN || !token || !chat;
 
-  const state: State = fs.existsSync(STATE_PATH)
-    ? JSON.parse(fs.readFileSync(STATE_PATH, "utf-8"))
-    : {};
+  const state: State = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, "utf-8")) : {};
   const cutoff = new Date(Date.now() - STATE_DAYS * 864e5).toISOString();
   for (const k of Object.keys(state)) if (state[k] < cutoff) delete state[k];
 
   const everything = collect();
-  const candidates = everything
-    .filter((c) => !state[c.key])
-    .sort((a, b) => b.score - a.score);
+  const picks = pick(everything, state);
 
-  // Una sola bajada por producto por corrida: dos tiendas del mismo
-  // producto en el canal es el mismo mensaje dos veces.
-  const seen = new Set<string>();
-  const picks: Candidate[] = [];
-  for (const c of candidates) {
-    if (seen.has(c.url)) continue;
-    seen.add(c.url);
-    picks.push(c);
-    if (picks.length >= PER_RUN) break;
-  }
-
-  console.log(
-    `${candidates.length} bajadas candidatas (>=${MIN_DROP_PCT}%, con afiliación, sin repetir), publico ${picks.length}`
-  );
+  const bySection = (list: Candidate[]) => {
+    const n = new Map<string, number>();
+    for (const c of list) n.set(c.section, (n.get(c.section) ?? 0) + 1);
+    return [...n].map(([s, k]) => `${s} ${k}`).join(", ");
+  };
+  console.log(`Archivo de precios hasta ${archive.lastDate}. Bajadas verificadas que cumplen: ${everything.length} (${bySection(everything)}).`);
+  console.log(`Descartadas: ${[...rejected].map(([k, n]) => `${k} ${n}`).join("; ") || "ninguna"}.`);
+  console.log(`Publico ${picks.length} (${bySection(picks)}).`);
 
   for (const c of picks) {
-    console.log(`\n--- ${c.section} · score ${c.score.toFixed(1)} ---\n${caption(c)}`);
+    console.log(`\n--- ${c.section} · valor ${c.score.toFixed(2)} ---\n${caption(c)}`);
     console.log(`[foto] ${c.imageUrl ?? "sin foto -- se publica como texto"}`);
     if (dryRun) continue;
     await send(token!, chat!, c);
@@ -374,11 +536,13 @@ async function main() {
 
   if (dryRun) {
     console.log(
-      "\nENSAYO: no se publicó nada en el canal. Faltan TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID (ver .env.local)."
+      FORCE_DRY_RUN
+        ? "\nENSAYO (--dry-run): no se publicó nada ni se tocó el estado."
+        : "\nENSAYO: no se publicó nada en el canal. Faltan TELEGRAM_BOT_TOKEN y TELEGRAM_CHANNEL_ID (ver .env.local).",
     );
   } else {
     fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 1) + "\n");
-    console.log(`\nPublicadas ${picks.length}. Estado: ${Object.keys(state).length} bajadas recordadas.`);
+    console.log(`\nPublicadas ${picks.length}. Estado: ${Object.keys(state).length} publicaciones recordadas.`);
   }
 
   // Los avisos privados solo necesitan el token (no el canal). Sin token: ensayo.

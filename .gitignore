@@ -49,3 +49,7 @@ scripts/boots-mining/image_ok.json
 
 # click log (outbound redirect /go/)
 /data/clicks/
+
+# estado local del refresco por oferta (refresh_offers.py)
+scripts/catalog-mining/feed_rows.json
+scripts/catalog-mining/offer_seen.json

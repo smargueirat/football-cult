@@ -37,8 +37,10 @@ export function trustStats(): TrustStats {
     trainingProducts,
   ];
   for (const list of all) {
-    for (const p of list as { offers: { store: string }[] }[]) {
-      const own = new Set(p.offers.map((o) => getRetailerFamily(o.store)));
+    for (const p of list as { offers: { store: string; inStock?: boolean }[] }[]) {
+      const own = new Set(
+        p.offers.filter((o) => o.inStock !== false).map((o) => getRetailerFamily(o.store)),
+      );
       for (const s of own) stores.add(s);
       if (own.size >= 2) compared += 1;
     }

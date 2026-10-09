@@ -61,8 +61,8 @@ def detect_season(title, explicit=False):
     # 2027") was right there in the same title. Strip a trailing age
     # suffix (same regex the retro pipeline already uses for this) before
     # any season pattern runs.
-    from extract import TITLE_KIDS_AGE_SUFFIX_RE
-    stripped = TITLE_KIDS_AGE_SUFFIX_RE.sub(r'\1', title)
+    from extract import TITLE_KIDS_AGE_SUFFIX_RE, normalize_season_text
+    stripped = normalize_season_text(TITLE_KIDS_AGE_SUFFIX_RE.sub(r'\1', title))
 
     # Real bug found 2026-08-19 (eBay full mine): a player squad number
     # written "#27" was matching the bare-2-digit season fallback below

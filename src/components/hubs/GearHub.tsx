@@ -26,6 +26,8 @@ import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { gearHubFrom } from "@/lib/seoMeta";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
+import { lineFacets } from "@/lib/extraHubs";
+import { EXTRA } from "@/lib/extraHubStrings";
 import { HUB } from "@/lib/hubStrings";
 
 export interface GearSpec {
@@ -174,6 +176,15 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
             locale={locale}
             countLabel={String}
             items={types.map((t) => ({ href: `/${locale}/ropa/tipo/${t.slug}`, name: (translations[locale].ropa.types as Record<string, string>)[t.slug] ?? t.slug, count: t.count }))}
+          />
+        </Section>
+      )}
+      {section === "botas" && lineFacets(spec.brandSlug).length > 0 && (
+        <Section title={EXTRA[locale].byLine}>
+          <TeamLinks
+            locale={locale}
+            countLabel={String}
+            items={lineFacets(spec.brandSlug).map((l) => ({ href: `/${locale}/botas/linea/${l.slug}`, name: brandHeadline("botas", l.name, locale), count: l.count }))}
           />
         </Section>
       )}

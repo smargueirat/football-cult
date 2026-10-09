@@ -1,13 +1,18 @@
 import { products, teamNames, type Product } from "@/data/products";
 import { ticketProducts, type TicketProduct } from "@/data/tickets";
 import { leagueName, leagueOfTeam, type HubLocale } from "@/data/teamMeta";
-import { kitOf, seasonSortValue, teamCategory } from "@/lib/productMeta";
+import { isVintageRetro, kitOf, seasonSortValue, teamCategory } from "@/lib/productMeta";
 import { bootOfferTotalInEUR, ticketOfferTotalInEUR, type BootCurrencyCode } from "@/lib/offerMoney";
 import { translations } from "@/lib/i18n/translations";
 import { brandFacets, brandGroundCombos, groundFacets, groundSlug, slugify, typeFacets, type GearSection } from "@/lib/gearHubs";
 import { brandHeadline, groundHeadline, groundName, sectionNoun } from "@/lib/gearHubStrings";
 import { seasonList, seasonSlug } from "@/lib/seasonHubs";
 import { HUB } from "@/lib/hubStrings";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { MIN_HUB_ITEMS } from "@/lib/gearHubs";
+import { decadeOf, futsalItems, kidsBootItems, lineFacets, retroDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
+import { bootLinesOf, isKidsBoot } from "@/lib/bootLines";
+import { teamKeyForTicketName, ticketCompetitionFacets, ticketSlug, ticketTeamFacets, ticketTeams } from "@/lib/ticketHubs";
 import { brandLabel, gearName, jerseyName, ticketName, type GearLike } from "@/lib/seoMeta";
 
 // Migas de pan y enlaces "relacionados" de las fichas (2026-10-09, revisión
@@ -17,11 +22,10 @@ import { brandLabel, gearName, jerseyName, ticketName, type GearLike } from "@/l
 // BreadcrumbList) y a 6-16 fichas hermanas reales, así que ninguna depende
 // de una cadena de paginación.
 //
-// Hubs nuevos (líneas de bota, retro por equipo/década, entradas por
-// equipo/competición, botas niño/sala): se enganchan agregando su nivel en
-// la función *Trail correspondiente (y su enlace en *Related.hubs). Ojo: un
-// hub solo debe entrar si existe para ESE producto (mismo criterio de
-// mínimo de fichas que use su página), o la miga apunta a un 404.
+// Los hubs de extraHubs.ts (líneas de bota, botas niño/sala, retro por
+// equipo/década, entradas por equipo/competición) entran en las migas y en
+// los enlaces solo si existen hoy para ESE producto (mismos facets que
+// generan esas páginas), o la miga apuntaría a un 404.
 
 export interface Crumb {
   name: string;
@@ -122,7 +126,30 @@ export function jerseyTrail(p: Product, locale: HubLocale): Crumb[] {
       : teamCategory[p.teamKey] === "national"
         ? [{ name: T[locale].nationalTeams, path: "/selecciones" }]
         : [];
+  // Retro (<= 2006): Inicio > Retro > Retro del equipo, si ese hub existe.
+  if (isVintageRetro(p)) {
+    const x = EXTRA[locale];
+    const teamHub = retroTeamFacets().some((f) => f.team === p.teamKey);
+    return [
+      { name: s.home, path: "" },
+      { name: x.retroAll, path: "/retro" },
+      ...(teamHub ? [{ name: x.retroTeamH1(team(p.teamKey, locale), teamCategory[p.teamKey] === "national"), path: `/retro/${p.teamKey}` }] : []),
+      { name: jerseyName(p, locale) },
+    ];
+  }
   return [{ name: s.home, path: "" }, ...up, { name: team(p.teamKey, locale), path: `/equipo/${p.teamKey}` }, { name: jerseyName(p, locale) }];
+}
+
+function retroHubs(p: Product, locale: HubLocale): LinkItem[] {
+  if (!isVintageRetro(p)) return [];
+  const x = EXTRA[locale];
+  const d = decadeOf(p.season);
+  return [
+    ...(retroTeamFacets().some((f) => f.team === p.teamKey)
+      ? [{ href: `/${locale}/retro/${p.teamKey}`, label: x.retroTeamH1(team(p.teamKey, locale), teamCategory[p.teamKey] === "national") }]
+      : []),
+    ...(retroDecadeFacets().some((f) => f.decade === d) ? [{ href: `/${locale}/retro/decada/${d}`, label: x.retroDecadeH1(d) }] : []),
+  ];
 }
 
 let byTeam: Map<string, Product[]> | null = null;
@@ -154,6 +181,7 @@ export function jerseyRelated(p: Product, locale: HubLocale): Related {
       { title: T[locale].otherSeasons(name), links: otherSeasons.map((x) => jerseyLink(x, locale)) },
     ],
     hubs: [
+      ...retroHubs(p, locale),
       { href: `/${locale}/equipo/${p.teamKey}`, label: HUB[locale].teamH1(name) },
       ...(league ? [{ href: `/${locale}/liga/${league.slug}`, label: HUB[locale].leagueH1(leagueName(league, locale)) }] : []),
       ...(season ? [{ href: `/${locale}/temporada/${seasonSlug(season)}`, label: `${HUB[locale].seasonLabel} ${season}` }] : []),
@@ -168,18 +196,38 @@ const brandHub = (section: GearSection, brand: string) => brandFacets(section).f
 export function gearTrail(section: GearSection, item: GearLike, locale: HubLocale): Crumb[] {
   const out: Crumb[] = [{ name: HUB[locale].home, path: "" }, { name: sectionNoun(section, locale), path: `/${section}` }];
   const b = brandHub(section, item.brand);
-  if ((section === "ropa" || section === "entrenamiento") && item.type && typeFacets(section).some((t) => t.slug === item.type)) {
+  const special = section === "botas" ? bootSpecialHub(item, locale) : undefined;
+  if (special) {
+    out.push({ name: special.label, path: special.path });
+  } else if ((section === "ropa" || section === "entrenamiento") && item.type && typeFacets(section).some((t) => t.slug === item.type)) {
     const names = translations[locale][section].types as Record<string, string>;
     out.push({ name: names[item.type] ?? item.type, path: `/${section}/tipo/${item.type}` });
   } else if (b) {
     out.push({ name: brandLabel(b.name), path: `/${section}/marca/${b.slug}` });
     const g = item.groundType;
-    if (section === "botas" && g && brandGroundCombos().some((c) => c.brandSlug === b.slug && c.ground === g)) {
+    const lines = section === "botas" ? bootLineHubs(item) : [];
+    // Botas: Marca > línea ("Nike Mercurial" > "Nike Mercurial Superfly")
+    // si existe; si no, Marca > terreno.
+    if (lines.length) for (const l of lines) out.push({ name: l.name, path: `/botas/linea/${l.slug}` });
+    else if (section === "botas" && g && brandGroundCombos().some((c) => c.brandSlug === b.slug && c.ground === g)) {
       out.push({ name: groundName(g, locale), path: `/botas/marca/${b.slug}/${groundSlug(g)}` });
     }
   }
   out.push({ name: gearName(section, item, locale) });
   return out;
+}
+
+/** Líneas con hub de esta bota, de la general a la concreta. */
+const bootLineHubs = (item: GearLike) => {
+  const mine = new Set(bootLinesOf(item));
+  return lineFacets().filter((l) => mine.has(l.slug)).sort((a, b) => (a.parent ? 1 : 0) - (b.parent ? 1 : 0));
+};
+
+/** Botas de niño y de sala cuelgan de su propio hub, no del de marca/terreno. */
+function bootSpecialHub(item: GearLike, locale: HubLocale): { path: string; label: string } | undefined {
+  if (isKidsBoot(item) && kidsBootItems().length >= MIN_HUB_ITEMS) return { path: "/botas/ninos", label: EXTRA[locale].kidsH1 };
+  if (item.groundType === "IC" && futsalItems().length >= MIN_HUB_ITEMS) return { path: "/botas/futbol-sala", label: EXTRA[locale].futsalH1 };
+  return undefined;
 }
 
 // "Línea" = marca + las dos primeras palabras del modelo sin marca ni
@@ -220,6 +268,11 @@ export function gearRelated(section: GearSection, item: GearLike, all: readonly 
   const hubs: LinkItem[] = [];
   const b = brandHub(section, item.brand);
   if (b) hubs.push({ href: `/${locale}/${section}/marca/${b.slug}`, label: brandHeadline(section, brandLabel(b.name), locale) });
+  if (section === "botas") {
+    for (const l of bootLineHubs(item)) hubs.push({ href: `/${locale}/botas/linea/${l.slug}`, label: brandHeadline("botas", l.name, locale) });
+    const sp = bootSpecialHub(item, locale);
+    if (sp) hubs.push({ href: `/${locale}${sp.path}`, label: sp.label });
+  }
   const g = item.groundType;
   if (section === "botas" && g) {
     if (b && brandGroundCombos().some((c) => c.brandSlug === b.slug && c.ground === g))
@@ -236,8 +289,29 @@ export function gearRelated(section: GearSection, item: GearLike, all: readonly 
 
 // ---------------------------------------------------------------- entradas
 
+const ticketComp = (t: TicketProduct) => ticketCompetitionFacets().find((c) => c.name === t.competition);
+
 export function ticketTrail(t: TicketProduct, locale: HubLocale): Crumb[] {
-  return [{ name: HUB[locale].home, path: "" }, { name: T[locale].tickets, path: "/tickets" }, { name: ticketName(t, locale) }];
+  const c = ticketComp(t);
+  return [
+    { name: HUB[locale].home, path: "" },
+    { name: T[locale].tickets, path: "/tickets" },
+    ...(c ? [{ name: c.name, path: `/tickets/competicion/${c.slug}` }] : []),
+    { name: ticketName(t, locale) },
+  ];
+}
+
+function ticketHubs(t: TicketProduct, locale: HubLocale): LinkItem[] {
+  const x = EXTRA[locale];
+  const out: LinkItem[] = [];
+  for (const n of ticketTeams(t.event)) {
+    const f = ticketTeamFacets().find((f) => f.slug === ticketSlug(n));
+    const k = teamKeyForTicketName(n);
+    if (f) out.push({ href: `/${locale}/tickets/equipo/${f.slug}`, label: x.ticketsOf(k ? team(k, locale) : n) });
+  }
+  const c = ticketComp(t);
+  if (c) out.push({ href: `/${locale}/tickets/competicion/${c.slug}`, label: x.ticketsOf(c.name) });
+  return out;
 }
 
 const minEur = (t: TicketProduct) => Math.min(...t.offers.map((o) => ticketOfferTotalInEUR(o)));
@@ -257,5 +331,5 @@ export function ticketRelated(t: TicketProduct, locale: HubLocale): Related {
     links: take(live.filter((x) => x.event.split(/\s+vs\s+/i).some((s) => s.trim() === side)), 6),
   }));
   groups.push({ title: T[locale].competition(t.competition), links: take(live.filter((x) => x.competition === t.competition), 8) });
-  return { groups, hubs: [{ href: `/${locale}/tickets`, label: T[locale].tickets }] };
+  return { groups, hubs: [...ticketHubs(t, locale), { href: `/${locale}/tickets`, label: T[locale].tickets }] };
 }

@@ -224,6 +224,113 @@ export function offerPriceStats(
   };
 }
 
+// ------------------------------------------------------ bajadas verificadas
+
+export interface VerifiedDrop {
+  /** Precio que la oferta mantuvo justo antes de bajar (el "antes" que se muestra). */
+  previous: number;
+  /** Días que estuvo vigente ese precio anterior en NUESTRO archivo. */
+  previousDays: number;
+  /** Días desde que se vio el precio actual por primera vez (1 = hoy). */
+  daysAtCurrent: number;
+  /** Fecha de la bajada (para cruzar con massDropDays). */
+  since: string;
+  /** Bajada en %, sin redondear. */
+  pct: number;
+}
+
+/** Ventana para "mínimo reciente": el precio actual tiene que ser el más bajo
+ *  que vimos en estos días, si no es un vaivén (sube y vuelve), no una bajada. */
+export const DROP_WINDOW_DAYS = 30;
+/** Días mínimos que el precio anterior tiene que haber estado vigente. */
+export const MIN_PREVIOUS_DAYS = 5;
+/** Cuánto puede separarse el precio anterior de la mediana de la ventana. */
+const USUAL_TOLERANCE = 0.05;
+
+/**
+ * Bajada REAL de una oferta, medida solo con nuestro propio archivo (nunca con
+ * el "precio tachado" del feed): el precio anterior estuvo vigente al menos
+ * `minPreviousDays` días, el actual es el que tiene hoy el catálogo y es el
+ * más bajo de los últimos DROP_WINDOW_DAYS días. null si no se cumple.
+ *
+ * Por qué tanto: el rastreo comparaba contra "ayer", y una entrada de reventa
+ * que sube y baja cada día (o una tienda que alterna dos precios) salía como
+ * "-45 %" todas las semanas.
+ */
+export function verifiedDrop(
+  url: string,
+  price: number,
+  currency: string,
+  a: Archive = archive(),
+  minPreviousDays = MIN_PREVIOUS_DAYS,
+): VerifiedDrop | null {
+  const arr = a.byKey.get(offerKey(url));
+  if (!arr || arr.length < 2 || !a.lastDate) return null;
+  const cur = arr[arr.length - 1];
+  // El archivo tiene que estar al día con el catálogo (mismo precio y moneda).
+  if (cur.p !== price || cur.c !== currency) return null;
+  const prev = arr[arr.length - 2];
+  if (prev.c !== currency || !(prev.p > price)) return null;
+  const previousDays = dayNum(cur.d) - dayNum(prev.d);
+  if (previousDays < minPreviousDays) return null;
+  // Mínimo de la ventana: ningún precio de los últimos N días (incluido el que
+  // regía al empezar la ventana) puede ser igual o menor que el actual.
+  // Y el precio anterior tiene que ser el HABITUAL de esa ventana (mediana
+  // por días), no un pico: Foot-Store ES tuvo una camiseta a 50 € casi un
+  // mes, la subió a 77 € cinco días y la "bajó" a 47,42: eso es -5 %, no -38 %.
+  const from = dayNum(a.lastDate) - DROP_WINDOW_DAYS;
+  const segs: { p: number; w: number }[] = [];
+  for (let i = 0; i < arr.length - 1; i++) {
+    const until = dayNum(arr[i + 1].d); // ese precio rigió hasta este día
+    if (until <= from || arr[i].c !== currency) continue;
+    if (arr[i].p <= price) return null;
+    segs.push({ p: arr[i].p, w: until - Math.max(dayNum(arr[i].d), from) });
+  }
+  if (!segs.length) return null;
+  const usual = weightedMedian(segs);
+  if (Math.abs(prev.p - usual) / usual > USUAL_TOLERANCE) return null;
+  return {
+    previous: prev.p,
+    previousDays,
+    daysAtCurrent: dayNum(a.lastDate) - dayNum(cur.d) + 1,
+    since: cur.d,
+    pct: ((prev.p - price) / prev.p) * 100,
+  };
+}
+
+/** Parte de las ofertas de una tienda (en una sección) que tienen que bajar el
+ *  mismo día para considerarlo un cambio del feed o de nuestra minería y no
+ *  una rebaja: p. ej. el 2026-10-09 las botas de Foot-Store FR pasaron del
+ *  precio de lista al de venta (1.636 de 1.932, -30 % de mediana). */
+export const MASS_DROP_SHARE = 0.25;
+const MASS_DROP_MIN = 20;
+
+/** Días "tienda|fecha" en que bajó de golpe una parte grande de la tienda.
+ *  Se llama por sección: `offers` = las ofertas vivas de UNA sección. */
+export function massDropDays(
+  offers: readonly { store: string; url: string }[],
+  a: Archive = archive(),
+): Set<string> {
+  const total = new Map<string, number>();
+  const drops = new Map<string, number>();
+  for (const o of offers) {
+    total.set(o.store, (total.get(o.store) ?? 0) + 1);
+    const arr = a.byKey.get(offerKey(o.url));
+    if (!arr) continue;
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i].c !== arr[i - 1].c || arr[i].p >= arr[i - 1].p) continue;
+      const k = `${o.store}|${arr[i].d}`;
+      drops.set(k, (drops.get(k) ?? 0) + 1);
+    }
+  }
+  const out = new Set<string>();
+  for (const [k, n] of drops) {
+    const t = total.get(k.slice(0, k.lastIndexOf("|"))) ?? 0;
+    if (n >= MASS_DROP_MIN && n >= t * MASS_DROP_SHARE) out.add(k);
+  }
+  return out;
+}
+
 /** Serie de una oferta, para quien arme índices (fecha, precio). */
 export function offerSeries(url: string, a: Archive = archive()): ArchivePoint[] {
   return a.byKey.get(offerKey(url)) ?? [];

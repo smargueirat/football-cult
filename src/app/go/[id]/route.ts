@@ -3,7 +3,7 @@ import { GO_KINDS, offerHash, type GoKind } from "@/lib/go";
 import { isLocale } from "@/lib/i18n/locales";
 import { logClick, summarizeUserAgent } from "@/lib/clickLog";
 import { AFFILIATE_COOKIE, SKIMLINKS_PUB_ID } from "@/lib/consent";
-import { botReason, untracked, withSubId } from "@/lib/goOut";
+import { botReason, soicosLink, untracked, withSubId } from "@/lib/goOut";
 
 // Redirect de salida: /go/<hash de la URL de la oferta>?k=<tipo>&p=<producto>
 // Ver src/lib/go.ts. Resuelve la oferta contra el catálogo (el destino
@@ -29,8 +29,9 @@ async function catalog(kind: GoKind): Promise<Productish[]> {
 
 // Tiendas sin etiqueta propia en la URL: solo las monetiza Skimlinks, que en
 // un enlace /go/ ya no puede reescribirlo en el navegador. Se envuelven en el
-// servidor, y solo si la persona aceptó la afiliación.
-const SKIM_HOSTS = /^https?:\/\/(www\.prodirectsport\.(es|com)|ar\.puma\.com|www\.nike\.(cl|com\.ar))\//;
+// servidor, y solo si la persona aceptó la afiliación. Nike CL/AR y Puma AR
+// ya no: tienen programa propio en Soicos (soicosLink).
+const SKIM_HOSTS = /^https?:\/\/www\.prodirectsport\.(es|com)\//;
 
 const NOINDEX = { "X-Robots-Tag": "noindex, nofollow", "Cache-Control": "no-store" };
 
@@ -98,6 +99,7 @@ export async function GET(req: NextRequest, ctx: { params: Promise<{ id: string 
 
   const page = valid && known ? `/${locale}/${GO_KINDS[kind]}/${productId}` : `/${locale}`;
   if (url && /^https?:\/\//.test(url)) {
+    url = soicosLink(url);
     // Robot: la tienda sin nuestro id (o la ficha si el destino solo lo
     // conoce la red). Un UA que se declara robot no recibe nada.
     if (bot) {

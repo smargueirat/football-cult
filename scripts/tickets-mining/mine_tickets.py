@@ -25,7 +25,8 @@ liga (ver COMPETITION_NAMES).
 Eventos pasados (date < hoy) se excluyen -- una entrada vencida no sirve
 para nada, y el feed sí trae alguna fecha ya pasada de forma inconsistente.
 """
-import csv, re, json, os, unicodedata
+import csv, re, json, os, statistics, unicodedata
+from collections import Counter
 from datetime import date, datetime
 
 FEEDS = "/tmp/feeds"
@@ -63,7 +64,37 @@ COMPETITION_NAMES = {
     "europa-league": "UEFA Europa League",
     "europa-conference-league": "UEFA Conference League",
     "afc-champions-league-elite": "AFC Champions League Elite",
+    "dfb-pokal": "DFB-Pokal",
+    "fa-cup": "FA Cup",
+    "nations-league": "UEFA Nations League",
+    "women-champions-league": "UEFA Women's Champions League",
+    "spanish-super-cup": "Supercopa de España",
+    "taca-da-liga": "Taça da Liga",
+    "campeonato-brasileiro": "Brasileirão",
 }
+
+# Deportes que NO son fútbol. El feed los marca igual ("Event Type:
+# Football", category_name "Football": la tienda llama Football al de la
+# NFL), así que la única categoría real que los separa es el segmento de
+# competición de la URL de la tienda (ej. "nfl-international-games",
+# Bengals-Falcons en el Bernabéu, 2026-11-08). Se filtra por esa
+# categoría, nunca por nombre de equipo.
+NON_SOCCER_COMPETITION_RE = re.compile(r"^(nfl|nba|nhl|mlb|american-football|rugby)")
+
+# Precios de relleno (medido 2026-10-09 en TICKETNET_UK/US): Football
+# TicketNet pone un tope fijo cuando no tiene precio real -- 423,17 GBP
+# en 128 partidos (109 de 157 de 2. Bundesliga), 847,19 en 37, 999 en 19
+# (todos Sheffield United), y el mismo patrón x1,32 en el feed US. El
+# siguiente precio repetido más alto (253,56, 29 partidos, ~3,4x la
+# mediana) sí es un precio real de categoría. Regla: un valor que se
+# repite en >= PLACEHOLDER_MIN_REPEATS partidos y está a >= 5x la mediana
+# del feed es relleno; y cualquier precio >= 10.000 EUR (un 1. FC Köln -
+# Union Berlin de Copa a 42.461 GBP) también. Una final de Champions a
+# ~6.300 GBP sigue siendo real. Esas ofertas se descartan; el partido
+# solo queda si Gigsberg trae un precio real para él.
+PLACEHOLDER_MIN_REPEATS = 10
+PLACEHOLDER_MEDIAN_FACTOR = 5
+PRICE_CEILING_EUR = 10000
 
 
 def humanize_competition(slug):
@@ -72,19 +103,33 @@ def humanize_competition(slug):
     return " ".join(w.capitalize() for w in slug.split("-"))
 
 
+def placeholder_prices(prices):
+    """Valores de precio de relleno de un feed (ver PLACEHOLDER_*)."""
+    if not prices:
+        return set()
+    med = statistics.median(prices)
+    return {p for p, n in Counter(prices).items()
+            if n >= PLACEHOLDER_MIN_REPEATS and p >= PLACEHOLDER_MEDIAN_FACTOR * med}
+
+
+def is_soccer(sport, comp_slug):
+    return sport.strip().lower() == "football" and not NON_SOCCER_COMPETITION_RE.match(comp_slug)
+
+
 def mine_region(fname, store_label, currency):
     if not os.path.exists(f"{FEEDS}/{fname}"):
         print(f"{store_label}: feed not found, skipped")
         return {}
     today = date.today().isoformat()
-    picks = {}
+    rows = []
+    skipped = Counter()
     with open(f"{FEEDS}/{fname}", newline="", encoding="utf-8", errors="replace") as f:
         for row in csv.DictReader(f):
             desc = row.get("description") or ""
             m = DESC_RE.search(desc)
             if not m:
                 continue
-            _sport, venue, event_date, event_time = m.groups()
+            sport, venue, event_date, event_time = m.groups()
             if event_date < today:
                 continue
             price_raw = row.get("search_price") or ""
@@ -98,22 +143,33 @@ def mine_region(fname, store_label, currency):
             if not key:
                 continue
             comp_m = COMP_RE.search(row.get("merchant_deep_link") or "")
-            competition = humanize_competition(comp_m.group(1)) if comp_m else ""
-            picks[key] = {
-                "event": (row.get("product_name") or "").strip(),
-                "venue": venue.strip(),
-                "date": event_date,
-                "time": event_time,
-                "competition": competition,
-                "imageUrl": row.get("aw_image_url"),
-                "offer": {
-                    "store": store_label,
-                    "price": price,
-                    "currency": currency,
-                    "url": row.get("aw_deep_link"),
-                },
-            }
-    print(f"{store_label}: {len(picks)}")
+            comp_slug = comp_m.group(1) if comp_m else ""
+            if not is_soccer(sport, comp_slug):
+                skipped[comp_slug or sport] += 1
+                continue
+            rows.append((row, key, venue, event_date, event_time, comp_slug, price))
+    fillers = placeholder_prices([r[-1] for r in rows])
+    picks = {}
+    n_filler = 0
+    for row, key, venue, event_date, event_time, comp_slug, price in rows:
+        filler = price in fillers or price * TO_EUR[currency] >= PRICE_CEILING_EUR
+        n_filler += filler
+        picks[key] = {
+            "event": (row.get("product_name") or "").strip(),
+            "venue": venue.strip(),
+            "date": event_date,
+            "time": event_time,
+            "competition": humanize_competition(comp_slug) if comp_slug else "",
+            "imageUrl": row.get("aw_image_url"),
+            # None = precio de relleno: el partido existe pero esta oferta no se publica.
+            "offer": None if filler else {
+                "store": store_label,
+                "price": price,
+                "currency": currency,
+                "url": row.get("aw_deep_link"),
+            },
+        }
+    print(f"{store_label}: {len(picks)} (placeholder prices dropped: {n_filler}, values {sorted(fillers)}; non-soccer skipped: {dict(skipped)})")
     return picks
 
 
@@ -266,8 +322,10 @@ def add_gigsberg_offers(merged):
             skipped_ambiguous += 1
             continue
         price, url = offers[0]
-        tn_eur = min(o["price"] * TO_EUR[o["currency"]] for o in targets[0]["offers"])
-        if not GIGSBERG_RATIO_BOUNDS[0] <= price / tn_eur <= GIGSBERG_RATIO_BOUNDS[1]:
+        # Sin precio real de Football TicketNet (era de relleno) no hay con qué
+        # comparar: el de Gigsberg queda como único precio real del partido.
+        tn_eur = min((o["price"] * TO_EUR[o["currency"]] for o in targets[0]["offers"]), default=None)
+        if tn_eur and not GIGSBERG_RATIO_BOUNDS[0] <= price / tn_eur <= GIGSBERG_RATIO_BOUNDS[1]:
             skipped_price += 1
             continue
         targets[0]["offers"].append({"store": "Gigsberg", "price": price, "currency": "EUR", "url": url})
@@ -298,11 +356,13 @@ if __name__ == "__main__":
                     "imageUrl": d["imageUrl"],
                     "offers": [],
                 }
-            merged[key]["offers"].append(d["offer"])
+            if d["offer"]:
+                merged[key]["offers"].append(d["offer"])
 
     add_gigsberg_offers(merged)
     canonicalize_teams(merged)
-    results = list(merged.values())
+    results = [d for d in merged.values() if d["offers"]]
+    print("events dropped (only placeholder prices, no real offer):", len(merged) - len(results))
     print("TOTAL distinct events:", len(results))
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=1)

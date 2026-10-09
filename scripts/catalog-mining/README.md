@@ -23,6 +23,22 @@ flow used (`client_credentials` grant, app-level token) is server-to-
 server with our own issued API keys — not a user login, same read-only
 posture as everything else here.
 
+**Listing identity and dead listings (2026-10-09).** One eBay listing =
+one `/itm/<id>`, whatever the site (`eBay`, `eBay ES`, `eBay IT`, `eBay GB`
+copies) or tracking params (`_skw=`, `hash=`, `amdata=`).
+`dedupe_same_url.py` keeps one row per id per ficha (ES > IT > GB > US: the
+European copy's price includes VAT, the US one doesn't; the European row keeps
+its own static shipping) and one ficha per id.
+`ebay_check_stale.py` checks every live id across all four sites in a
+rotation (`last_id` in `ebay_stale_check_state.json`), budgeted from the
+real remaining `buy.browse` quota (Analytics `rate_limit` API, 5000/day,
+resets 07:00 UTC, shared with mining, `ebay_gb_retro.py` and
+`/api/ebay-shipping`). Dead = `getItem` 404 errorId 11001 (global: same
+answer under every marketplace header) or `OUT_OF_STOCK`, and it flips
+every copy of that id. Both run from the bash part of `daily_scan.sh`,
+after the Claude session, not inside it. Bulk `getItems` (20 ids/call)
+answers 403 for our app: Limited Release, not available.
+
 Unlike every Awin store (one bulk feed to filter), eBay has **no bulk
 feed** — `ebay_mine.py` runs one Browse API search per (team, type),
 picks the cheapest result that survives filtering, then makes one more
@@ -1983,6 +1999,8 @@ and does not fit the CSV-feed pattern:**
    outside Argentina will always look "broken" even when it isn't —
    don't treat that as a bug to chase without first confirming from an
    AR vantage point.
+
+**Boots too (2026-10-09):** every Nike CL/AR and Puma AR offer in ANY section must be stored as the Soicos link, not the direct store URL (`soicosLink()` in `src/lib/goOut.ts` builds it; `scripts/fixes/tanda2_soicos_boots.mts` rewrites existing data idempotently; `/go/` also wraps any direct link it still finds).
 
 ### What's done vs. still open
 

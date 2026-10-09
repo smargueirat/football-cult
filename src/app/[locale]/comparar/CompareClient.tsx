@@ -20,6 +20,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
 import { getDisplaySrc } from "@/lib/images";
+import { mainPhoto } from "@/lib/officialStores";
 import JerseyIcon from "@/components/JerseyIcon";
 import CompareOfferRow from "@/components/CompareOfferRow";
 import CompareBootOfferRow from "@/components/CompareBootOfferRow";
@@ -356,7 +357,7 @@ export default function CompareClient() {
             const { product, offer } = card;
             const team = teamNames[product.teamKey][locale];
             const type = kitTypeName(product, locale);
-            const photo = offer.imageUrl ?? product.offers.find((o) => o.imageUrl)?.imageUrl;
+            const photo = mainPhoto(offer, product.offers);
             const displayName =
               displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;
 

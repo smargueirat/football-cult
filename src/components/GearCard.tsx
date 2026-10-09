@@ -2,7 +2,8 @@
 
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
-import { formatOfferMoney, offerTotalInEUR } from "@/lib/offerMoney";
+import { formatOfferMoney, offerTotalInEUR, shippingNotMeasured } from "@/lib/offerMoney";
+import { rankOffers } from "@/lib/offerOrder";
 import ApproxPrice from "@/components/ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearModel } from "@/lib/gearText";
@@ -50,7 +51,8 @@ export default function GearCard({
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const { countryCode } = useCountry();
   const favorite = isFavorite(item.id);
-  const cheapest = offersForCountry(item.offers, countryCode).reduce((a, b) => (offerTotalInEUR(a) <= offerTotalInEUR(b) ? a : b));
+  // Un envío sin dato para este país no cuenta como 0 € (offerOrder.ts).
+  const cheapest = rankOffers(offersForCountry(item.offers, countryCode), offerTotalInEUR, undefined, (o) => !shippingNotMeasured(o, countryCode))[0];
   const sizes = [...new Set(item.offers.flatMap((o) => o.sizes))];
   const sizeRange = sizes.length > 0 ? (sizes.length === 1 ? sizes[0] : `${sizes[0]}–${sizes[sizes.length - 1]}`) : "";
   const photo = cheapest.imageUrl;
@@ -107,9 +109,9 @@ export default function GearCard({
             {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
           </span>
           <ApproxPrice amount={cheapest.price + cheapest.shipping} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
-          {cheapest.shipping > 0 && (
+          {(cheapest.shipping > 0 || shippingNotMeasured(cheapest, countryCode)) && (
             <span className="text-[9px] font-medium uppercase leading-none opacity-70">
-              {t.product.shippingIncluded}
+              {shippingNotMeasured(cheapest, countryCode) ? t.product.shippingNotIncluded : t.product.shippingIncluded}
             </span>
           )}
         </div>

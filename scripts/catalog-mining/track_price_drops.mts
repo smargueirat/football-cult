@@ -5,11 +5,17 @@
 // de "hoy" que guarda al final ya refleja el catálogo del día, listo para
 // ser el "ayer" de mañana.
 //
-// Compara el precio de cada oferta (la URL identifica a una oferta
-// concreta: misma tienda, mismo producto) contra el snapshot del día
-// anterior y escribe src/data/priceDrops.json con las que bajaron. Se
-// recalcula entero en cada corrida: el dato es "bajó desde ayer", no un
-// historial que se acumula.
+// Anota los precios de hoy en el archivo durable (data/price-history) y
+// escribe src/data/priceDrops.json con las bajadas VERIFICADAS de cada
+// oferta (la URL identifica a una oferta concreta: misma tienda, mismo
+// producto): precio anterior vigente al menos MIN_PREVIOUS_DAYS días en
+// nuestro archivo, igual a su precio habitual, y precio actual el más bajo
+// de los últimos 30 días (ver verifiedDrop en src/lib/priceArchive.ts); se
+// descartan los días en que media tienda bajó a la vez (massDropDays). Hasta el 2026-10-09 era
+// "bajó desde ayer", y las entradas de reventa que suben y bajan cada día
+// llenaban las bajadas (94 %) y el canal de Telegram. Se recalcula entero
+// en cada corrida y no depende del snapshot de ayer: correrlo dos veces
+// el mismo día da lo mismo.
 //
 // Reemplaza a track_price_drops.py, que solo cubría camisetas porque
 // inyectaba un campo `previousPrice` con expresiones regulares dentro de
@@ -28,7 +34,8 @@ import { apparelProducts } from "../../src/data/apparel";
 import { gloveProducts } from "../../src/data/gloves";
 import { ballProducts } from "../../src/data/balls";
 import { trainingProducts } from "../../src/data/training";
-import { appendChanges } from "../../src/lib/priceArchive";
+import { appendChanges, loadArchive, massDropDays, verifiedDrop } from "../../src/lib/priceArchive";
+import { ticketTemplatePrices } from "../../src/lib/offerMoney";
 
 const HERE = import.meta.dirname;
 const REPO_ROOT = path.join(HERE, "..", "..");
@@ -49,7 +56,7 @@ interface Snapshot {
   [url: string]: { price: number; currency: string };
 }
 
-type RawOffer = { price: number; currency: string; url: string };
+type RawOffer = { price: number; currency: string; url: string; store?: string };
 
 /** Todas las ofertas del catálogo, sección por sección. */
 function allOffers(): { section: string; offers: RawOffer[] }[] {
@@ -73,23 +80,42 @@ function readJson<T>(file: string, fallback: T): T {
 
 function main() {
   const sections = allOffers();
-  const previous = readJson<Snapshot>(SNAPSHOT_PATH, {});
+  const today = new Date().toISOString().slice(0, 10);
+  const archiveDir = path.join(REPO_ROOT, "data", "price-history");
+
+  // Primero el archivo: las bajadas se miden contra él. Si falla no tumba
+  // el resto del rastreo (sin el dato de hoy simplemente no hay bajadas).
+  let archiveNote = "";
+  try {
+    const r = appendChanges(sections.flatMap((s) => s.offers), today, archiveDir);
+    archiveNote = `; archivo: +${r.added} líneas (${r.changed} cambios, ${r.firstSeen} ofertas nuevas)`;
+  } catch (err) {
+    console.error("archivo de precios: NO se pudo escribir:", err);
+  }
+  const arch = loadArchive(archiveDir);
+  const templates = ticketTemplatePrices(ticketProducts);
 
   const current: Snapshot = {};
   const drops: Record<string, number> = {};
   const droppedBySection = new Map<string, number>();
 
   for (const { section, offers } of sections) {
+    // Medio catálogo de una tienda bajando el mismo día es un cambio del feed
+    // o de la minería (precio de lista -> de venta), no una rebaja.
+    const mass = massDropDays(offers.filter((o) => o.url && o.store) as { store: string; url: string }[], arch);
     for (const o of offers) {
       if (!o.url || !(o.price > 0)) continue;
       current[o.url] = { price: o.price, currency: o.currency };
-      const old = previous[o.url];
-      // Misma moneda a propósito: un cambio de moneda de la tienda no es
-      // una bajada de precio, y compararlo mostraría rebajas inventadas.
-      if (old && old.currency === o.currency && old.price > o.price) {
-        drops[o.url] = old.price;
-        droppedBySection.set(section, (droppedBySection.get(section) ?? 0) + 1);
+      const d = verifiedDrop(o.url, o.price, o.currency, arch);
+      if (!d || mass.has(`${o.store}|${d.since}`)) continue;
+      // Entradas: ni precio de plantilla (antes o ahora) ni un precio visto
+      // una sola vez; la reventa cambia cada día.
+      if (section === "entradas") {
+        if (templates.has(`${o.store}|${o.price}`) || templates.has(`${o.store}|${d.previous}`)) continue;
+        if (d.daysAtCurrent < 2) continue;
       }
+      drops[o.url] = d.previous;
+      droppedBySection.set(section, (droppedBySection.get(section) ?? 0) + 1);
     }
   }
 
@@ -104,7 +130,6 @@ function main() {
 
   // Historial solo de camisetas (ver HISTORY_DAYS arriba).
   const history = readJson<Record<string, { date: string; price: number }[]>>(HISTORY_PATH, {});
-  const today = new Date().toISOString().slice(0, 10);
   for (const o of sections[0].offers) {
     if (!o.url || !(o.price > 0)) continue;
     const days = (history[o.url] ?? []).filter((d) => d.date !== today);
@@ -114,19 +139,6 @@ function main() {
   // No borra URLs que ya no están en el catálogo de hoy (oferta
   // discontinuada): si vuelve más adelante, retoma su propia historia.
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(sorted(history)) + "\n");
-
-  // Archivo DURABLE (data/price-history/AAAA-MM.jsonl, nunca se recorta):
-  // solo las ofertas cuyo precio cambió desde su último registro, de las
-  // siete secciones. No altera nada de lo de arriba; si falla, que no
-  // tumbe el resto del rastreo nocturno (el snapshot y los drops ya están
-  // escritos).
-  let archiveNote = "";
-  try {
-    const r = appendChanges(sections.flatMap((s) => s.offers), today);
-    archiveNote = `; archivo: +${r.added} líneas (${r.changed} cambios, ${r.firstSeen} ofertas nuevas)`;
-  } catch (err) {
-    console.error("archivo de precios: NO se pudo escribir:", err);
-  }
 
   const total = Object.keys(current).length;
   const dropped = Object.keys(drops).length;

@@ -12,7 +12,7 @@ import type { CountryCode } from "@/data/countries";
 import type { Locale } from "@/lib/i18n/translations";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { cleanDisplayTitle } from "@/lib/displayTitle";
-import { offerTotalInEUR } from "@/lib/offerMoney";
+import { offerTotalInEUR, shippingNotMeasured } from "@/lib/offerMoney";
 import { rankOffers } from "@/lib/offerOrder";
 import type {
   AgeGroup,
@@ -679,6 +679,8 @@ export function bestOfferForCountry(
   return rankOffers(
     product.offers.filter((o) => o.inStock && offerShipsTo(o.store, country)),
     offerTotalInEUR,
+    undefined,
+    (o) => !shippingNotMeasured(o, country),
   )[0];
 }
 

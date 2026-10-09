@@ -13,6 +13,7 @@ import { seasonSortValue } from "@/lib/productMeta";
 import { brandFacets, brandGroundCombos, groundFacets, groundSlug, typeFacets } from "@/lib/gearHubs";
 import { seasonList, seasonSlug, seasonTypes } from "@/lib/seasonHubs";
 import { indexPaths } from "@/lib/catalogIndex";
+import { extraHubPaths } from "@/lib/extraHubs";
 import { GUIDE_SLUGS } from "@/lib/guides";
 import { archive, lastChangeDate } from "@/lib/priceArchive";
 import { getRetailerFamily } from "@/lib/retailerFamily";
@@ -77,11 +78,12 @@ type Tierable = {
   // Las entradas guardan la foto en la ficha (la del estadio), no en cada
   // oferta: sin mirar acá, las 2.570 quedaban en B y fuera del sitemap.
   imageUrl?: string;
-  offers: readonly { store: string; price: number; imageUrl?: string; url: string }[];
+  offers: readonly { store: string; price: number; imageUrl?: string; url: string; inStock?: boolean }[];
 };
 
 function tierOf(item: Tierable): Tier | null {
-  const priced = item.offers.filter((o) => o.price > 0);
+  // Una oferta agotada no compara nada: no cuenta para subir a A.
+  const priced = item.offers.filter((o) => o.price > 0 && o.inStock !== false);
   if (item.offers.length === 0) return null;
   if (priced.length === 0) return "C";
   const families = new Set(priced.map((o) => getRetailerFamily(o.store)));
@@ -204,6 +206,9 @@ function buildGroups(): { groups: MetadataRoute.Sitemap[]; counts: Record<Tier, 
     ...brandGroundCombos().map((c) => `/botas/marca/${c.brandSlug}/${groundSlug(c.ground)}`),
     ...typeFacets().map((t) => `/ropa/tipo/${t.slug}`),
     ...typeFacets("entrenamiento").map((t) => `/entrenamiento/tipo/${t.slug}`),
+    // Botas por línea / niño / sala, retro por equipo y década, entradas por
+    // equipo y competición (2026-10-09, src/lib/extraHubs.ts).
+    ...extraHubPaths().map((h) => h.path),
   ];
   // Sin lastModified inventado (antes: new Date() en todas). Solo estas dos
   // cambian con cada corrida del scan, y su fecha real es la de la última

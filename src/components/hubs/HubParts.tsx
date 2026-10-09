@@ -3,10 +3,12 @@ import type { ReactNode } from "react";
 import type { HubItem } from "@/lib/hubs";
 import { HUB } from "@/lib/hubStrings";
 import type { HubLocale } from "@/data/teamMeta";
-import { getAgeGroup } from "@/lib/productMeta";
-import { teamNames, kitTypeName } from "@/data/products";
+// teamNames/kitTypeName de productMeta, no del barrel @/data/products: importar
+// de ahí arrastra el catálogo entero a cualquier página que use estas piezas.
+import { getAgeGroup, teamNames, kitTypeName } from "@/lib/productMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { getDisplaySrc } from "@/lib/images";
+import { mainPhoto } from "@/lib/officialStores";
 
 import { countDistinctRetailers } from "@/lib/retailerFamily";
 // Piezas de servidor de las páginas hub: HTML puro con <a> reales para
@@ -60,7 +62,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
         const age = getAgeGroup(product);
         const team = teamNames[product.teamKey][locale];
         const label = `${showTeam ? `${team} · ` : ""}${kitTypeName(product, locale)} ${product.season}`;
-        const photo = offer.imageUrl;
+        const photo = mainPhoto(offer, product.offers);
         const stores = countDistinctRetailers(product.offers.filter((o) => o.inStock));
         return (
           <li key={product.id}>

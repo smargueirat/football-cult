@@ -15,6 +15,24 @@ viven aparte, en `legacyBootProducts` dentro de `boots.ts`, y este
 pipeline nunca los toca. Lo mismo para `browserMinedBootProducts`
 (Nike CL, Nike AR, Puma AR) -- ver la sección dedicada más abajo.
 
+## Botas de niño y de fútbol sala (2026-10-09)
+
+Hasta esta fecha se excluían; ahora entran marcadas (`classify()` / `tag()` en
+`mine_boots.py`): `ageGroup: "kids"` (categoría Junior/Baby de Foot-Store y
+Sport is Good, `custom_1 == "Kids"` de adidas ES, "Children's" de Decathlon,
+"Ninos" de Deporte Outlet, "Infantil - Menino" de Clovis, o Jr/junior/niño en
+el título) y `groundType: "IC"` (sala/futsal/indoor/salle, los códigos de suela
+"IC"/"IN"/"I.C" en mayúscula estricta, "Football > Chaussures indoor", "Futsal
+Shoes" de Decathlon, "Zapatillas fútbol sala" de FutbolEmotion, ground
+"indoor" de Pro:Direct). Siguen fuera: rugby/americano, los patucos "Crib", la
+sala de Gigasport (su categoría mezcla balonmano y voley) y el niño de
+ProSoccer/Reebok/adidas CL. El id de una bota de niño lleva "-ninos" para no
+quitarle el id a la adulta del mismo nombre, y `merge_by_code` nunca funde
+niño con adulto. `refresh_boots.py` declara `ageGroup` en el header de
+boots.ts si falta. En la web: filtro Edad (adulto por defecto) y chip IC, hubs
+`/botas/ninos` y `/botas/futbol-sala`. Prueba: `python3 check_kids_futsal.py`.
+Primera corrida: 3.485 -> 5.536 fichas (1.689 de niño, 690 de sala).
+
 ## Pro:Direct España y la fusión por EAN (2026-09-30)
 
 Pro:Direct no tiene feed de afiliados: es un Shopify abierto y el enlace

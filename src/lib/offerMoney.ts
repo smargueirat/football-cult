@@ -91,15 +91,79 @@ export function isEbayStore(store: string): boolean {
   return store.startsWith("eBay");
 }
 
+// El `shipping` de una oferta es lo que cobra la tienda en SU país (el del
+// feed). Al abrir tiendas a otros países, ese número no vale para el resto:
+// Futbol Emotion "+0 € envío" a un visitante de Argentina era falso. Aquí,
+// por tienda, los países para los que el dato es el coste real; fuera de
+// ellos el envío es "a calcular en la tienda" (nunca 0 €/gratis) y no cuenta
+// como 0 para elegir la mejor oferta (ver shippingNotMeasured).
+//   []    = ningún país: la minería guarda 0 porque la tienda no lo publica
+//           (adidas CL, Decathlon IE, Clovis: ver mine_boots.py; Nike/Puma
+//           minadas a mano; Como FC lo calcula en el checkout).
+//   "all" = vale en todos (FansJerseyHub: "FREE Shipping Worldwide!", 2026-10-09).
+// Tienda que no está aquí (y no es eBay): desconocido en todos los países.
+export const SHIPPING_KNOWN_FOR: Record<string, readonly string[] | "all"> = {
+  FansJerseyHub: "all",
+  FootStoreES: ["ES"],
+  SportIsGoodES: ["ES"],
+  AdidasES: ["ES"],
+  "Futbol Emotion": ["ES"],
+  FutbolEmotion: ["ES"],
+  ForumSport: ["ES"],
+  DeporteOutlet: ["ES"],
+  "Futbol Factory": ["ES"],
+  "Shop Real Betis": ["ES"],
+  FootStoreFR: ["FR"],
+  SportIsGoodFR: ["FR"],
+  PlanetFoot: ["FR"], // "Livraison Gratuite après 30€" (Francia)
+  GigasportFR: ["FR"],
+  GigasportDE: ["DE"],
+  GigasportCH: ["CH"],
+  AdidasPT: ["PT"],
+  "Pro:Direct Soccer": ["GB"],
+  BSTNUK: ["GB"],
+  "UK Soccer Shop": ["GB"],
+  "Classic Football Shirts": ["GB"],
+  // Medido con el estimador de la tienda (productMeta.ts).
+  "Pro:Direct ES": ["ES", "IT", "FR", "DE"],
+  // reebok.eu: 5,99 EUR / gratis desde 50 en la UE; CZ y CH pagan 9,95, GB en GBP.
+  "Reebok DE": ["DE", "AT", "BE", "BG", "DK", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "RO", "SE", "SK"],
+  // El feed IT (EUR) es la tarifa de la UE.
+  BSTNIT: ["ES", "FR", "DE", "IT", "PT", "NL", "BE", "AT", "IE", "GR", "FI", "SE", "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI"],
+  AdidasCL: [],
+  DecathlonIE: [],
+  ClovisCalcadosBR: [],
+  ComoFCShop: [],
+  NikeCL: [],
+  NikeAR: [],
+  PumaAR: [],
+  SantosStore: [],
+  InterStore: [],
+  CruzeiroStore: [],
+  ShopTimao: [],
+  LojaPST: [],
+};
+
+// Amazon: cada oferta es de un marketplace; su envío vale para ese país.
+const AMAZON_TLD: Record<string, string> = { es: "ES", de: "DE", it: "IT", fr: "FR", "co.uk": "GB" };
+
+/** El envío guardado NO es el coste real a `country` (tienda+país sin dato).
+ *  eBay queda fuera: su envío se consulta en vivo (ver shippingUnknown). */
+export function shippingNotMeasured(offer: { store: string; url?: string }, country: string): boolean {
+  if (isEbayStore(offer.store)) return false;
+  if (offer.store === "Amazon") {
+    const tld = offer.url?.match(/^https:\/\/www\.amazon\.([a-z.]+)\//)?.[1];
+    return !tld || AMAZON_TLD[tld] !== country;
+  }
+  const known = SHIPPING_KNOWN_FOR[offer.store];
+  return !known || (known !== "all" && !known.includes(country));
+}
+
 // En eBay `shipping: 0` en el catálogo NO significa gratis: la minería guarda
 // 0.0 cuando eBay no pudo calcular el envío (ebay_mine_full.py). Es "desconocido"
-// hasta que el chequeo en vivo confirme un valor. Otras tiendas: 0 se toma como gratis.
-// adidas CL: el feed no trae costo de envío y adidas.cl bloquea la consulta
-// automática, así que su shipping 0 también es "desconocido", no gratis.
-const UNKNOWN_SHIPPING_STORES = new Set(["AdidasCL"]);
-
-export function shippingUnknown(offer: { store: string; shipping: number }): boolean {
-  return (isEbayStore(offer.store) || UNKNOWN_SHIPPING_STORES.has(offer.store)) && offer.shipping === 0;
+// hasta que el chequeo en vivo confirme un valor. El resto: ver SHIPPING_KNOWN_FOR.
+export function shippingUnknown(offer: { store: string; shipping: number; url?: string }, country: string): boolean {
+  return (isEbayStore(offer.store) && offer.shipping === 0) || shippingNotMeasured(offer, country);
 }
 
 // Total "anterior" para el par tachado/actual de una tarjeta con badge de
@@ -168,6 +232,20 @@ export function ticketStoreLabel(store: string): string {
 
 export function ticketSellers(offers: { store: string }[]): string[] {
   return [...new Set(offers.map((o) => ticketSeller(o.store)))];
+}
+
+// Precios "de relleno" de las entradas: Football TicketNet repite el mismo
+// importe en decenas de partidos (423,17 GBP en 128 partidos distintos el
+// 2026-10-09), es una tarifa de plantilla, no el precio de ese partido. Un
+// salto entre dos de esas plantillas no es una bajada. Clave: tienda|precio.
+export function ticketTemplatePrices(
+  tickets: readonly { offers: readonly { store: string; price: number }[] }[],
+  minEvents = 3,
+): Set<string> {
+  const count = new Map<string, number>();
+  for (const t of tickets)
+    for (const k of new Set(t.offers.map((o) => `${o.store}|${o.price}`))) count.set(k, (count.get(k) ?? 0) + 1);
+  return new Set([...count].filter(([, n]) => n >= minEvents).map(([k]) => k));
 }
 
 export function ticketHasRealComparison(offers: { store: string }[]): boolean {

@@ -53,6 +53,17 @@ export const BOOT_SIZES: string[] = [
   "46 2/3", "47", "47 1/3", "47.5", "48", "48.5", "48 2/3",
 ];
 
+// Tallas de bota de niño (filtro Edad = Niño). Mismo criterio que la lista
+// de arriba: estática, sacada del minado real del 2026-10-09 (tallas con 3+
+// ofertas, de 24 a 40; las pocas de niño en 41+ son errores de tienda).
+export const BOOT_KIDS_SIZES: string[] = [
+  "24", "25", "25.5", "26", "26.5", "27", "27.5", "28", "28 1/2", "28.5",
+  "29", "29.5", "30", "30 1/2", "30.5", "31", "31 1/2", "31.5", "32",
+  "32.5", "33", "33 1/2", "33.5", "34", "34.5", "35", "35 1/2", "35.5",
+  "36", "36.5", "36 2/3", "37", "37 1/3", "37.5", "38", "38.5", "38 2/3",
+  "39", "39 1/3", "40", "40 2/3",
+];
+
 // Selecciones/clubes más buscados: son un atajo, no un listado completo
 // (para eso ya está el buscador de texto), así que se mantiene corta a
 // propósito en vez de mostrar los ~90 equipos del catálogo. Mismo motivo

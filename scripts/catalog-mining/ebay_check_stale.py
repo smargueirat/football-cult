@@ -1,24 +1,37 @@
 """Daily hygiene pass: eBay listings get sold/delisted after we mine
-them, but nothing re-checks an offer once it's in products.ts -- a dead
-listing just sits there `inStock: true` forever, sending real visitors
-to a 404 on eBay's side (found 2026-08-28 investigating two persistent
-502s from /api/ebay-shipping: both were genuine "item not found" from
-eBay's own API, not a bug in our shipping-fetch code).
+them, and a dead listing just sits there `inStock: true` forever, sending
+real visitors to a 404 on eBay's side (found 2026-08-28).
 
-eBay's Browse API has a real daily call quota (mining a full team pass
-is ~4600+ calls and reliably exhausts it, see README's eBay section) --
-5,114 eBay offers currently in the catalog is too many to re-check in
-one run without competing with that day's actual mining pass for quota.
-Same fix as ebay_mine_cycle.py: check a small batch per day, persist
-position in a state file, cycle back to the start once the whole list's
-been covered.
+Covers ALL eBay marketplaces in products.ts (eBay, eBay ES, eBay IT,
+eBay GB) since 2026-10-09 -- until then only `store: "eBay"` (ebay.com)
+was ever re-checked and the ~5.600 ES/IT/GB offers never were.
+
+How it works:
+  1. The unit is the eBay item id (`/itm/<id>`), not the offer: the same
+     listing shows up as eBay / eBay ES / eBay IT / eBay GB copies. Browse
+     `getItem` 404 errorId 11001 is global (verified 2026-10-09: a dead id
+     gives the same 404 under EBAY_US and EBAY_ES), so a dead id is dead
+     in every marketplace.
+  2. Propagation, no API calls: any id with a copy already `inStock:
+     false` gets all its other copies flipped too.
+  3. Rotation: live ids sorted numerically, walk from the id after
+     `last_id` (state file) and wrap around, so new ids slot in without
+     shifting a positional cursor. One getItem call per id, with the
+     marketplace header of its first live copy.
+  4. Budget: buy.browse is 5000 calls/day shared with mining, ebay_gb_retro
+     and the site's /api/ebay-shipping. The run reads the real remaining
+     quota from the Analytics rate_limit API and spends `remaining -
+     reserve` at most (capped by max_calls). Stops on the first 429.
+  5. Dead = 404 errorId 11001 or estimatedAvailabilityStatus
+     OUT_OF_STOCK. Anything else (network, 5xx, other 4xx) changes
+     nothing. products.ts is re-read right before writing, so edits made
+     while the checks ran are kept.
 
 Usage:
-    python3 ebay_check_stale.py [batch_size]   (default 200/day --> full
-    catalog cycles roughly every 4 weeks, plenty for offers that don't
-    go stale on their own within days)
+    python3 ebay_check_stale.py [max_calls] [--reserve N] [--no-api]
+    (defaults: max_calls 4000, reserve 600; --no-api = propagation only)
 """
-import json, os, re, sys, time, urllib.error
+import datetime, json, os, re, sys, time, urllib.error, urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ebay_mine import EbayClient
@@ -28,96 +41,145 @@ PRODUCTS_TS = os.path.join(_REPO_ROOT, "src", "data", "products.ts")
 STATE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ebay_stale_check_state.json")
 
 ITEM_URL = "https://api.ebay.com/buy/browse/v1/item/"
-OFFER_RE = re.compile(
-    r'\{ store: "eBay", .*?url: "(https://www\.ebay\.com/itm/(\d+)[^"]*)".*?inStock: (true|false).*? \},'
-)
+RATE_URL = "https://api.ebay.com/developer/analytics/v1_beta/rate_limit/?api_name=browse&api_context=buy"
+LINE_RE = re.compile(r'\{ store: "(eBay(?: [A-Z]{2})?)", [^\n]*?url: "https://www\.ebay\.[a-z.]+/itm/(\d+)[^\n]*?inStock: (true|false)')
+MARKETPLACE = {"eBay": "EBAY_US", "eBay ES": "EBAY_ES", "eBay IT": "EBAY_IT", "eBay GB": "EBAY_GB"}
+
+
+def scan(content):
+    """{id: {"live": [store, ...], "dead": bool}} for every eBay offer line."""
+    ids = {}
+    for m in LINE_RE.finditer(content):
+        d = ids.setdefault(m[2], {"live": [], "dead": False})
+        if m[3] == "true":
+            d["live"].append(m[1])
+        else:
+            d["dead"] = True
+    return ids
+
+
+def flip(content, dead):
+    """Every `inStock: true` eBay line whose id is in `dead` -> false."""
+    n = 0
+    out = []
+    for line in content.split("\n"):
+        m = LINE_RE.search(line)
+        if m and m[3] == "true" and m[2] in dead:
+            line = line.replace("inStock: true", "inStock: false", 1)
+            n += 1
+        out.append(line)
+    return "\n".join(out), n
+
+
+def remaining_quota(client):
+    req = urllib.request.Request(RATE_URL, headers={"Authorization": f"Bearer {client.token}"})
+    data = json.loads(urllib.request.urlopen(req, timeout=20).read())
+    for rl in data.get("rateLimits", []):
+        for r in rl.get("resources", []):
+            if r.get("name") == "buy.browse":
+                return r["rates"][0]["remaining"]
+    return None
+
+
+def check(client, item_id, marketplace):
+    """True = dead, False = alive, None = unknown, "quota" = 429."""
+    url = f"{ITEM_URL}v1|{item_id}|0?fieldgroups=COMPACT"
+    headers = {"Authorization": f"Bearer {client.token}", "X-EBAY-C-MARKETPLACE-ID": marketplace}
+    for _ in range(2):
+        try:
+            data = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=20).read())
+            status = {a.get("estimatedAvailabilityStatus") for a in data.get("estimatedAvailabilities", [])}
+            return status == {"OUT_OF_STOCK"}
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                return "quota"
+            if e.code == 404:
+                return True if b"11001" in e.read() else None
+            if e.code < 500:
+                return None
+        except Exception:
+            pass
+        time.sleep(1)
+    return None
 
 
 def load_state():
-    if os.path.exists(STATE_PATH):
+    try:
         return json.load(open(STATE_PATH, encoding="utf-8"))
-    return {"cursor": 0}
-
-
-def save_state(state):
-    json.dump(state, open(STATE_PATH, "w", encoding="utf-8"), indent=1)
-
-
-def is_dead(client, item_id, retries=2):
-    for attempt in range(retries):
-        try:
-            req_headers = {
-                "Authorization": f"Bearer {client.token}",
-                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
-            }
-            import urllib.request
-            req = urllib.request.Request(f"{ITEM_URL}v1|{item_id}|0", headers=req_headers)
-            urllib.request.urlopen(req, timeout=20)
-            return False
-        except urllib.error.HTTPError as e:
-            if e.code == 404:
-                return True
-            if e.code == 429:
-                return None  # quota hit -- stop the whole run, don't mark anything dead on a guess
-            time.sleep(1)
-        except Exception:
-            time.sleep(1)
-    return None  # network flaky after retries -- don't deactivate on uncertainty
+    except (OSError, ValueError):
+        return {}
 
 
 def main():
-    batch_size = int(sys.argv[1]) if len(sys.argv) > 1 else 200
+    argv = sys.argv[1:]
+    reserve = 600
+    if "--reserve" in argv:
+        i = argv.index("--reserve")
+        reserve = int(argv[i + 1])
+        del argv[i:i + 2]
+    no_api = "--no-api" in argv
+    argv = [a for a in argv if a != "--no-api"]
+    max_calls = int(argv[0]) if argv else 4000
+
+    ids = scan(open(PRODUCTS_TS, encoding="utf-8").read())
+    zombies = {i for i, d in ids.items() if d["dead"] and d["live"]}
+    live = sorted((i for i, d in ids.items() if d["live"] and not d["dead"]), key=int)
+    print(f"{len(ids)} eBay item ids, {len(live)} live, {len(zombies)} zombies (dead copy elsewhere)")
+
+    dead, checked, state = set(zombies), 0, load_state()
+    state.pop("cursor", None)  # pre-2026-10-09 positional cursor, meaningless now
+    if not no_api and live:
+        client = EbayClient()
+        client._ensure_token()
+        try:
+            rem = remaining_quota(client)
+        except Exception as e:
+            rem = None
+            print(f"rate_limit API failed ({e}), using a conservative 500-call budget")
+        budget = max(0, min(max_calls, (rem if rem is not None else 500 + reserve) - reserve))
+        print(f"buy.browse remaining: {rem}, reserve {reserve} -> budget {budget} calls")
+
+        last = int(state.get("last_id", 0))
+        start = next((k for k, i in enumerate(live) if int(i) > last), 0)
+        order = live[start:] + live[:start]
+        deadline, unknown = time.time() + 45 * 60, 0
+        for item_id in order[:budget]:
+            if time.time() > deadline:
+                print("Stopping: 45 min wall-clock cap.")
+                break
+            r = check(client, item_id, MARKETPLACE[ids[item_id]["live"][0]])
+            if r == "quota":
+                print("Stopping: 429 quota hit.")
+                break
+            if r is None:
+                unknown += 1
+                print(f"  unknown (left as is): {item_id}")
+                if unknown >= 20:
+                    print("Stopping: 20 unknown answers, network or API trouble.")
+                    break
+                continue
+            unknown = 0
+            checked += 1
+            if r:
+                dead.add(item_id)
+            if int(item_id) < int(state.get("last_id", 0)):  # wrapped: new cycle
+                state["cycle"] = state.get("cycle", 1) + 1
+                state["cycle_started"] = str(datetime.date.today())
+            state["last_id"] = item_id
+        state.setdefault("cycle", 1)
+        state.setdefault("cycle_started", str(datetime.date.today()))
+        state["last_run"] = {"date": str(datetime.date.today()), "checked": checked,
+                             "dead": len(dead - zombies), "live_ids": len(live)}
+        open(STATE_PATH, "w", encoding="utf-8").write(json.dumps(state, indent=1) + "\n")
+
+    # re-read: anything written to products.ts during the checks survives
     content = open(PRODUCTS_TS, encoding="utf-8").read()
-
-    offers = [
-        (m.group(1), m.group(2))
-        for m in OFFER_RE.finditer(content)
-        if m.group(3) == "true"
-    ]
-    print(f"{len(offers)} live eBay offers in catalog")
-
-    state = load_state()
-    cursor = state.get("cursor", 0) % max(len(offers), 1)
-    batch = offers[cursor : cursor + batch_size]
-    if len(batch) < batch_size:
-        batch += offers[: batch_size - len(batch)]  # wrap around
-
-    client = EbayClient()
-    client._ensure_token()
-
-    dead_urls = []
-    checked = 0
-    for url, item_id in batch:
-        result = is_dead(client, item_id)
-        if result is None:
-            print("Stopping early: quota hit or network trouble.")
-            break
-        checked += 1
-        if result:
-            dead_urls.append(url)
-            print(f"  DEAD: {url}")
-
-    new_content = content
-    for url in dead_urls:
-        escaped = re.escape(url)
-        new_content = re.sub(
-            rf'(url: "{escaped}".*?)inStock: true',
-            r"\1inStock: false",
-            new_content,
-            count=1,
-        )
-    if dead_urls:
-        open(PRODUCTS_TS, "w", encoding="utf-8").write(new_content)
-
-    # Avanzar solo por lo REALMENTE chequeado, no por el tamanio del lote:
-    # si la cuota se agota en la primera llamada (pasa cuando el cron corre
-    # despues de ebay_mine_cycle.py, visto el 2026-09-25), sumar len(batch)
-    # daba por revisadas 200 ofertas que nadie miro, y no vuelven a tocarse
-    # hasta que el cursor da la vuelta al catalogo entero (~28 dias).
-    state["cursor"] = (cursor + checked) % len(offers) if offers else 0
-    save_state(state)
-
-    print(f"Checked {checked} of {len(batch)} offers, {len(dead_urls)} deactivated.")
+    new, n = flip(content, dead)
+    if n:
+        open(PRODUCTS_TS, "w", encoding="utf-8").write(new)
+    days = f"~{-(-len(live) // checked)} days" if checked else "n/a"
+    print(f"Checked {checked} ids, {len(dead - zombies)} dead, {len(zombies)} zombies propagated, "
+          f"{n} offers -> inStock: false. Full rotation at this rate: {days}.")
 
 
 if __name__ == "__main__":

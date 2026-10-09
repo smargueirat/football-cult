@@ -15,7 +15,7 @@ import {
   offerShipsTo,
   teamNames,
 } from "@/lib/productMeta";
-import { approxPriceLabel, formatOfferMoney, isEbayStore, offerTotal, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
+import { approxPriceLabel, formatOfferMoney, isEbayStore, offerTotal, offerTotalInEUR, shippingNotMeasured, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref } from "@/lib/go";
 import { rankOffers } from "@/lib/offerOrder";
@@ -23,7 +23,7 @@ import ApproxPrice from "./ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
-import { isComparableStore, isMarketplace } from "@/lib/officialStores";
+import { isComparableStore, isMarketplace, photoOrder } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -158,7 +158,7 @@ export default function JerseyDetailClient({
     }
     // Las que envían al país van primero; dentro, precio total y, solo en
     // empate (±1 %), comisión (offerOrder.ts).
-    return rankOffers(product.offers, totalInEUR, (o) => offerShipsTo(o.store, countryCode));
+    return rankOffers(product.offers, totalInEUR, (o) => offerShipsTo(o.store, countryCode), (o) => !shippingNotMeasured(o, countryCode));
   }, [product.offers, liveEbayCosts, countryCode]);
 
   useEffect(() => {
@@ -234,9 +234,10 @@ export default function JerseyDetailClient({
   // visible de la página. Las ofertas se siguen listando todas; lo que no
   // se hace es prometer un ahorro apoyado en ellas.
   // Una oferta por tienda (la más barata): comparar FootStoreES contra su
-  // espejo FootStoreFR no es un ahorro, es la misma tienda.
+  // espejo FootStoreFR no es un ahorro, es la misma tienda. Sin envío medido
+  // para este país el total no es comparable (no se cuenta como 0 €).
   const comparable = bestPerRetailer(
-    shippableHere.filter((o) => isComparableStore(o.store)),
+    shippableHere.filter((o) => isComparableStore(o.store) && !shippingNotMeasured(o, countryCode)),
     (a, b) => offerTotalInEUR(a) < offerTotalInEUR(b),
   ).sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b));
   const cheapestOfficial = comparable[0];
@@ -284,11 +285,10 @@ export default function JerseyDetailClient({
   // Galería: todas las fotos distintas entre ofertas (algunas tiendas
   // fotografían la misma camiseta distinto), la de la mejor oferta
   // primero para que nunca se vea una camiseta distinta a la que el
-  // usuario termina comprando.
+  // usuario termina comprando. Excepción: si esa foto lleva marca de agua
+  // (tienda de réplicas, ver photoOrder) y hay otra limpia, va al final.
   const photos = useMemo(() => {
-    const ordered = bestOffer
-      ? [bestOffer, ...sortedOffers.filter((o) => o !== bestOffer)]
-      : sortedOffers;
+    const ordered = photoOrder(bestOffer, sortedOffers);
     const seen = new Set<string>();
     const list: string[] = [];
     for (const o of ordered) {
@@ -352,7 +352,7 @@ export default function JerseyDetailClient({
         return {
           totalText: formatOfferMoney(total, bestOffer.currency),
           approx: approxPriceLabel(total, bestOffer.currency, country.currency),
-          label: liveTotal == null && shippingUnknown(bestOffer) ? t.detail.from : t.detail.total,
+          label: liveTotal == null && shippingUnknown(bestOffer, countryCode) ? t.detail.from : t.detail.total,
           storeLabel: selectedSize ? `${bestOffer.store} · ${selectedSize}` : bestOffer.store,
           goLabel: t.detail.goToStore.replace("{store}", bestOffer.store),
           href: goHref({
@@ -399,7 +399,7 @@ export default function JerseyDetailClient({
         : null;
     const displayTotal = liveTotal ?? offerTotal(offer);
     // eBay con envío 0 sin dato real: no es gratis, es desconocido.
-    const noShipping = liveTotal == null && shippingUnknown(offer);
+    const noShipping = liveTotal == null && shippingUnknown(offer, countryCode);
     return (
       <div
         key={offer.store}

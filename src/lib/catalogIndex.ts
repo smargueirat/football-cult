@@ -56,7 +56,10 @@ export interface IndexEntry {
 const teamName = (key: string, locale: HubLocale): string =>
   (teamNames as Record<string, Record<string, string>>)[key]?.[locale] ?? key;
 
-const withOffers = <T extends { offers: readonly unknown[] }>(items: readonly T[]): T[] => items.filter((i) => i.offers.length > 0);
+// Agotadas fuera (igual que main en sitemap/trustStrip): solo fichas con al
+// menos una oferta en stock.
+const withOffers = <T extends { offers: readonly unknown[] }>(items: readonly T[]): T[] =>
+  items.filter((i) => (i.offers as readonly { inStock?: boolean }[]).some((o) => o.inStock !== false));
 
 // El orden se fija con las etiquetas en castellano y se reusa en los 5
 // idiomas. Ordenar por la etiqueta ya traducida parece más prolijo, pero
