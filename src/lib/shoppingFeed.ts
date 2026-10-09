@@ -6,7 +6,7 @@ import {
   products,
   storeShipping,
   teamNames,
-  typeNames,
+  kitTypeName,
 } from "@/data/products";
 import { ColorKey, productColorKey } from "@/lib/colorClassify";
 import { HUB } from "@/lib/hubStrings";
@@ -137,7 +137,7 @@ export function buildShoppingFeedXml(
       // para Merchant Center es calidad de datos: describir un producto en
       // un idioma que su mercado no habla.
       const team = teamNames[product.teamKey][locale];
-      const type = typeNames[product.typeKey][locale];
+      const type = kitTypeName(product, locale);
       const title = `${team} ${type} ${product.season}`;
       const description = HUB[locale].metaJersey({ team, type, season: product.season });
       const link = `${SITE_URL}/${locale}/camiseta/${product.id}`;

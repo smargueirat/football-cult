@@ -12,7 +12,7 @@ import {
   offerShipsTo,
   priceDropPercent,
   teamNames,
-  typeNames,
+  kitTypeName,
 } from "@/lib/productMeta";
 import { formatOfferMoney, previousOfferTotal } from "@/lib/offerMoney";
 import ApproxPrice from "@/components/ApproxPrice";
@@ -50,7 +50,7 @@ export default function ProductCard({ product }: { product: Product }) {
         : `${sizes[0]}–${sizes[sizes.length - 1]}`
       : SIZES[0];
   const team = teamNames[product.teamKey][locale];
-  const type = typeNames[product.typeKey][locale];
+  const type = kitTypeName(product, locale);
   const ageGroup = getAgeGroup(product);
   const isKids = ageGroup === "kids";
   const isWomen = ageGroup === "women";

@@ -19,7 +19,7 @@
 // sufijo), kitTypeName cae en silencio al "Retro" pelado de antes y los
 // duplicados vuelven sin que nadie se entere. Eso es lo que este chequeo
 // impide.
-import { products, kitTypeName, typeNames } from "../src/data/products";
+import { products, kitTypeName, typeNames, isVintageRetro } from "../src/data/products";
 
 const retro = products.filter((p) => p.typeKey === "retro");
 const sinEquipacion = retro.filter(
@@ -37,6 +37,18 @@ if (sinEquipacion.length > 0) {
   process.exit(1);
 }
 console.log(`OK: las ${retro.length} fichas retro exponen su equipación en el id`);
+
+// "Retro" solo si isVintageRetro() (temporada <= 2006, regla fija del dueño):
+// el 2026-10-08 salía en el título/JSON-LD/FAQ de 3.911 fichas de 2007-2025.
+const retroModernas = products.filter((p) => !isVintageRetro(p) && kitTypeName(p, "es").startsWith(typeNames.retro.es));
+if (retroModernas.length > 0) {
+  console.error(
+    `ERROR: ${retroModernas.length} fichas de temporada > 2006 se llaman "Retro":\n` +
+      retroModernas.slice(0, 20).map((p) => `  ${p.id}: ${kitTypeName(p, "es")}`).join("\n"),
+  );
+  process.exit(1);
+}
+console.log("OK: ninguna ficha de temporada > 2006 se llama Retro");
 
 // Informativo, NO bloquea ni alerta: cuántas fichas siguen compartiendo
 // título. Al 2026-09-28 son 31 grupos / 73 fichas, y son OTRO problema

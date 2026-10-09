@@ -7,7 +7,7 @@ import {
   findProduct,
   offerTotal,
   teamNames,
-  typeNames,
+  kitTypeName,
 } from "@/data/products";
 import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
@@ -124,7 +124,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
             const best = bestOfferForCountry(product, countryCode);
             const displayName =
               displayTitleForCountry(product, countryCode, locale) ??
-              `${teamNames[product.teamKey][locale]} ${typeNames[product.typeKey][locale]}`;
+              `${teamNames[product.teamKey][locale]} ${kitTypeName(product, locale)}`;
             return (
               <li key={item.id}>
                 <Link

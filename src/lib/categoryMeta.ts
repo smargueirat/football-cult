@@ -30,9 +30,22 @@ export function ageGroupLabel(locale: Locale, ageGroup: string | undefined): str
   return null;
 }
 
+// <title> con la consulta de compra (revisión SEO 2026-10-09, H26): el
+// eyebrow del slide ("Los aficionados más pequeños — Comparar precios") no
+// dice qué se vende. Mismo orden que heroSlides: selecciones, clubes, retro,
+// mujer, niños.
+const CATEGORY_TITLE: Record<Locale, string[]> = {
+  es: ["Camisetas de selecciones de fútbol: compara precios", "Camisetas de clubes de fútbol: compara precios", "Camisetas retro de fútbol (hasta 2006)", "Camisetas de fútbol de mujer: compara precios", "Camisetas de fútbol para niños: compara precios"],
+  en: ["National team football shirts: compare prices", "Club football shirts: compare prices", "Retro football shirts (up to 2006)", "Women's football shirts: compare prices", "Kids' football shirts: compare prices"],
+  pt: ["Camisas de seleções de futebol: compare preços", "Camisas de clubes de futebol: compare preços", "Camisas retrô de futebol (até 2006)", "Camisas de futebol femininas: compare preços", "Camisas de futebol infantis: compare preços"],
+  fr: ["Maillots des sélections nationales : comparer les prix", "Maillots de clubs de football : comparer les prix", "Maillots rétro de football (jusqu'en 2006)", "Maillots de football femme : comparer les prix", "Maillots de football enfant : comparer les prix"],
+  it: ["Maglie delle nazionali di calcio: confronta i prezzi", "Maglie dei club di calcio: confronta i prezzi", "Maglie retrò da calcio (fino al 2006)", "Maglie da calcio donna: confronta i prezzi", "Maglie da calcio bambino: confronta i prezzi"],
+};
+
 export function buildCategoryMetadata(locale: Locale, sectionIndex: number, path: string): Metadata {
   const slide = translations[locale].heroSlides[sectionIndex];
-  const title = `${slide.eyebrow} — ${TITLE_SUFFIX[locale]} | Football Cult`;
+  const base = CATEGORY_TITLE[locale][sectionIndex] ?? `${slide.eyebrow} — ${TITLE_SUFFIX[locale]}`;
+  const title = base.length + 16 <= 60 ? `${base} | Football Cult` : base;
   return {
     title,
     description: slide.subtitle,

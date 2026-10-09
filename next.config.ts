@@ -49,6 +49,13 @@ const nextConfig: NextConfig = {
         destination: "https://football-cult.com/:path*",
         statusCode: 301,
       },
+      // Guía renombrada a "talla" (español de España, 2026-10-09). El slug es
+      // el mismo en los cinco idiomas, así que redirigen los cinco.
+      {
+        source: "/:locale(es|en|pt|fr|it)/guia/talle-fan-vs-jugador",
+        destination: "/:locale/guia/talla-fan-vs-jugador",
+        permanent: true,
+      },
     ];
   },
   async headers() {

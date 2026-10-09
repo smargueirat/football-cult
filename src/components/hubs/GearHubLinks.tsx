@@ -43,13 +43,15 @@ export default function GearHubLinks({ section, locale }: { section: GearSection
           />
         </>
       )}
-      {section === "ropa" && (
+      {(section === "ropa" || section === "entrenamiento") && (
         <Chips
           title={ui.byType}
-          items={typeFacets().map((t) => ({ href: `/${locale}/ropa/tipo/${t.slug}`, label: (translations[locale].ropa.types as Record<string, string>)[t.slug] ?? t.slug }))}
+          items={typeFacets(section).map((t) => ({ href: `/${locale}/${section}/tipo/${t.slug}`, label: (translations[locale][section].types as Record<string, string>)[t.slug] ?? t.slug }))}
         />
       )}
-      <Chips title={ui.byBrand} items={brandFacets(section).slice(0, 30).map((b) => ({ href: `/${locale}/${section}/marca/${b.slug}`, label: b.name }))} />
+      {/* Todas las marcas con hub, no las 30 primeras: el crawl del 08-10
+          encontró hubs de marca del sitemap sin ningún enlace entrante. */}
+      <Chips title={ui.byBrand} items={brandFacets(section).map((b) => ({ href: `/${locale}/${section}/marca/${b.slug}`, label: b.name }))} />
     </nav>
   );
 }

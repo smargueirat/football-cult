@@ -4,7 +4,7 @@ import { GIFTS_UI } from "@/lib/giftStrings";
 import { GIFT_BANDS, giftPicks } from "@/lib/giftPicks";
 import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { localizeGearModel } from "@/lib/gearText";
-import { teamNames, typeNames } from "@/lib/productMeta";
+import { teamNames, kitTypeName } from "@/lib/productMeta";
 import { Crumbs, HubHeader, JsonLd, Section } from "@/components/hubs/HubParts";
 import DealCard from "@/components/hubs/DealCard";
 import { products } from "@/data/products";
@@ -79,7 +79,7 @@ export default async function Gifts({ params }: P) {
               <DealCard
                 key={p.id}
                 href={`/${locale}/camiseta/${p.id}`}
-                title={`${teamNames[p.teamKey][locale]} ${typeNames[p.typeKey][locale]} ${p.season}`}
+                title={`${teamNames[p.teamKey][locale]} ${kitTypeName(p, locale)} ${p.season}`}
                 image={p.pick.imageUrl ?? ""}
                 price={p.pick.price + (p.pick.shipping ?? 0)}
                 currency={p.pick.currency}

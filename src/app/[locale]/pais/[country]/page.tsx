@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { hubFrom } from "@/lib/seoMeta";
 import type { Metadata } from "next";
 import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const d = load(country);
   if (!d) return {};
   const name = teamName(country, locale);
-  return hubMetadata(locale, `/pais/${country}`, HUB[locale].countryH1(name), HUB[locale].metaGeneric(name, d.stats.count, money(d.stats.minOffer)));
+  return hubMetadata(locale, `/pais/${country}`, HUB[locale].countryH1(name), HUB[locale].metaGeneric(name, d.stats.count, hubFrom(d.items, locale)));
 }
 
 export default async function CountryHub({ params }: P) {

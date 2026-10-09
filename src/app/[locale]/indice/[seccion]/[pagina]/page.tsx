@@ -12,6 +12,7 @@ import {
   indexEntries,
   indexPaths,
   pageCount,
+  pageRanges,
   type IndexSection,
 } from "@/lib/catalogIndex";
 
@@ -67,14 +68,11 @@ export default async function CatalogIndexPage({ params }: P) {
       <JsonLd
         data={breadcrumbLd(locale, [
           { name: HUB[locale].home, path: "" },
-          // El nivel "Índice del catálogo" no tiene página propia, así
-          // que apunta a la página 1 de esta misma sección: es un padre
-          // real de la página N, no una URL inventada.
-          { name: ui.index, path: `/indice/${section}/1` },
+          { name: ui.index, path: "/indice" },
           { name: ui.section[section] },
         ], `/indice/${section}/${page}`)}
       />
-      <Crumbs locale={locale} trail={[{ label: `${ui.index} · ${ui.section[section]}` }]} />
+      <Crumbs locale={locale} trail={[{ label: ui.index, href: `/${locale}/indice` }, { label: ui.section[section] }]} />
       <HubHeader
         h1={`${ui.section[section]} — ${ui.index}`}
         intro={`${ui.intro} ${ui.count.replace("{n}", String(entries.length))}.`}
@@ -106,24 +104,29 @@ export default async function CatalogIndexPage({ params }: P) {
         ))}
       </ul>
 
-      <nav className="mt-8 flex items-center justify-between gap-4 text-sm">
-        {page > 1 ? (
-          <Link href={`/${locale}/indice/${section}/${page - 1}`} className="rounded-full border border-[#C9A24B]/40 px-4 py-2 text-[#1B3B2B] hover:border-[#1B3B2B]">
-            ← {ui.prev}
-          </Link>
-        ) : (
-          <span />
-        )}
-        <span className="text-[#675c44]">
+      {/* Todas las páginas de la sección, no solo anterior/siguiente: la
+          cadena prev/next dejaba la página 70 de ropa a 71 clics. */}
+      <nav aria-label={ui.pages} className="mt-8 text-sm">
+        <h2 className="mb-2 font-medium text-[#1B3B2B]">
           {ui.page} {page} {ui.of} {total}
-        </span>
-        {page < total ? (
-          <Link href={`/${locale}/indice/${section}/${page + 1}`} className="rounded-full border border-[#C9A24B]/40 px-4 py-2 text-[#1B3B2B] hover:border-[#1B3B2B]">
-            {ui.next} →
-          </Link>
-        ) : (
-          <span />
-        )}
+        </h2>
+        <ul className="flex flex-wrap gap-1.5">
+          {pageRanges(section).map((r) => (
+            <li key={r.page}>
+              {r.page === page ? (
+                <span className="inline-block rounded-full border border-[#1B3B2B] bg-[#1B3B2B] px-3 py-1 text-[#F3E9C9]">{r.page}</span>
+              ) : (
+                <Link
+                  href={`/${locale}/indice/${section}/${r.page}`}
+                  title={r.label}
+                  className="inline-block rounded-full border border-[#C9A24B]/40 px-3 py-1 text-[#1B3B2B] hover:border-[#1B3B2B]"
+                >
+                  {r.page}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   );

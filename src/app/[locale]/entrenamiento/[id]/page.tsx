@@ -2,110 +2,48 @@ import { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { gearAlias } from "@/lib/gearAliases";
 import { trainingProducts } from "@/data/training";
-import { Locale } from "@/lib/i18n/translations";
-import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { localizeGearModel } from "@/lib/gearText";
+import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { GearDetailFrame, gearDetailMetadata } from "@/components/GearDetailSeo";
 import TrainingDetailPageClient from "./TrainingDetailPageClient";
 
-const SITE_URL = "https://football-cult.com";
+const find = (id: string) => trainingProducts.find((p) => p.id === id);
 
-const META_TEMPLATE: Record<Locale, { title: string; description: string }> = {
-  es: {
-    title: "{model} — Comparar precios | Football Cult",
-    description: "Compara precios de {model} entre distintas tiendas y compra donde más te convenga.",
-  },
-  en: {
-    title: "{model} — Compare Prices | Football Cult",
-    description: "Compare prices for {model} across stores and buy wherever suits you best.",
-  },
-  pt: {
-    title: "{model} — Comparar Preços | Football Cult",
-    description: "Compare preços de {model} entre lojas e compre onde for melhor para você.",
-  },
-  fr: {
-    title: "{model} — Comparer les prix | Football Cult",
-    description: "Comparez les prix de {model} entre boutiques et achetez où cela vous convient.",
-  },
-  it: {
-    title: "{model} — Confronta i prezzi | Football Cult",
-    description: "Confronta i prezzi di {model} tra i negozi e acquista dove preferisci.",
-  },
-};
-
-function findTraining(id: string) {
-  return trainingProducts.find((p) => p.id === id);
-}
-
-// ISR sin prerender, mismo criterio que el resto de las fichas (ver el
-// comentario largo en ropa/[id]/page.tsx).
+// ISR (2026-09-20): sin generateStaticParams estas páginas eran ƒ
+// (cache-control no-store): cada visita de un usuario o de Googlebot
+// ejecutaba una función que carga el catálogo entero -- la causa más
+// probable de que la cuenta Hobby llegara al 100% de Fluid Active CPU.
+// Con esto no se prerenderiza nada (no suma storage al deploy), pero la
+// primera visita a cada URL queda cacheada en el CDN por un día.
 export const revalidate = 86400;
 export function generateStaticParams() {
   return [];
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string; id: string }>;
-}): Promise<Metadata> {
+type P = { params: Promise<{ locale: string; id: string }> };
+
+export async function generateMetadata({ params }: P): Promise<Metadata> {
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
-  const item = findTraining(id);
-  if (!item) return {};
-
-  const tmpl = META_TEMPLATE[locale];
-  const title = tmpl.title.replace("{model}", localizeGearModel(item.model, item.brand, locale));
-  const description = tmpl.description.replace("{model}", localizeGearModel(item.model, item.brand, locale));
-  const image = item.offers[0]?.imageUrl;
-
-  return {
-    title,
-    description,
-    alternates: buildAlternates(locale, `/entrenamiento/${item.id}`),
-    openGraph: { title, description, type: "website", images: image ? [image] : undefined },
-    twitter: { card: "summary_large_image", title, description, images: image ? [image] : undefined },
-  };
+  const item = find(id);
+  return item ? gearDetailMetadata("entrenamiento", item, locale) : {};
 }
 
-export default async function TrainingDetailPage({
-  params,
-}: {
-  params: Promise<{ locale: string; id: string }>;
-}) {
+export default async function TrainingDetailPage({ params }: P) {
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
-  const item = findTraining(id);
+  const item = find(id);
   if (!item?.offers.length) {
+    // Ficha fundida o retirada: a la que la reemplaza o, si ya no hay
+    // equivalente, al hub más cercano (ver gearAliases.ts).
     const target = gearAlias("entrenamiento", id);
-    if (target && findTraining(target)) permanentRedirect(`/${locale}/entrenamiento/${target}`);
+    if (target?.startsWith("/")) permanentRedirect(`/${locale}${target}`);
+    if (target && find(target)) permanentRedirect(`/${locale}/entrenamiento/${target}`);
     notFound();
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: localizeGearModel(item.model, item.brand, locale),
-    image: item.offers[0]?.imageUrl ? [item.offers[0].imageUrl] : undefined,
-    url: `${SITE_URL}/${locale}/entrenamiento/${item.id}`,
-    brand: { "@type": "Brand", name: item.brand },
-    offers: item.offers.map((o) => ({
-      "@type": "Offer",
-      url: o.url,
-      price: o.price,
-      priceCurrency: o.currency,
-      availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: o.store },
-    })),
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <GearDetailFrame section="entrenamiento" item={item} all={trainingProducts} locale={locale}>
       <TrainingDetailPageClient item={item} />
-    </>
+    </GearDetailFrame>
   );
 }

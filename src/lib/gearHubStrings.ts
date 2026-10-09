@@ -62,7 +62,7 @@ export const UI: Record<
   es: {
     home: "Inicio",
     intro: ({ headline, n, stores, price }) => `${headline}: ${n} productos ${stores === 1 ? "de una sola tienda" : `comparados entre ${stores} tiendas`}. Precio más bajo hoy: ${price}. Los precios se actualizan todos los días.`,
-    meta: ({ headline, n, price }) => `${headline}: compara ${n} productos entre tiendas. Desde ${price}.`,
+    meta: ({ headline, n, price }) => `${headline}: compara ${n} productos entre tiendas.${price ? ` Desde ${price}.` : ""}`,
     cheapest: "Los más baratos",
     all: "Todos los productos",
     otherBrands: "Otras marcas",
@@ -76,7 +76,7 @@ export const UI: Record<
   en: {
     home: "Home",
     intro: ({ headline, n, stores, price }) => `${headline}: ${n} products ${stores === 1 ? "from a single store" : `compared across ${stores} stores`}. Lowest price today: ${price}. Prices are updated every day.`,
-    meta: ({ headline, n, price }) => `${headline}: compare ${n} products across stores. From ${price}.`,
+    meta: ({ headline, n, price }) => `${headline}: compare ${n} products across stores.${price ? ` From ${price}.` : ""}`,
     cheapest: "Lowest prices",
     all: "All products",
     otherBrands: "Other brands",
@@ -90,7 +90,7 @@ export const UI: Record<
   pt: {
     home: "Início",
     intro: ({ headline, n, stores, price }) => `${headline}: ${n} produtos ${stores === 1 ? "de uma única loja" : `comparados em ${stores} lojas`}. Menor preço hoje: ${price}. Os preços são atualizados todos os dias.`,
-    meta: ({ headline, n, price }) => `${headline}: compare ${n} produtos entre lojas. A partir de ${price}.`,
+    meta: ({ headline, n, price }) => `${headline}: compare ${n} produtos entre lojas.${price ? ` A partir de ${price}.` : ""}`,
     cheapest: "Os mais baratos",
     all: "Todos os produtos",
     otherBrands: "Outras marcas",
@@ -104,7 +104,7 @@ export const UI: Record<
   fr: {
     home: "Accueil",
     intro: ({ headline, n, stores, price }) => `${headline} : ${n} produits ${stores === 1 ? "d'une seule boutique" : `comparés dans ${stores} boutiques`}. Prix le plus bas aujourd'hui : ${price}. Les prix sont mis à jour chaque jour.`,
-    meta: ({ headline, n, price }) => `${headline} : comparez ${n} produits entre boutiques. Dès ${price}.`,
+    meta: ({ headline, n, price }) => `${headline} : comparez ${n} produits entre boutiques.${price ? ` Dès ${price}.` : ""}`,
     cheapest: "Les moins chers",
     all: "Tous les produits",
     otherBrands: "Autres marques",
@@ -118,7 +118,7 @@ export const UI: Record<
   it: {
     home: "Home",
     intro: ({ headline, n, stores, price }) => `${headline}: ${n} prodotti ${stores === 1 ? "di un solo negozio" : `confrontati in ${stores} negozi`}. Prezzo più basso oggi: ${price}. I prezzi si aggiornano ogni giorno.`,
-    meta: ({ headline, n, price }) => `${headline}: confronta ${n} prodotti tra negozi. Da ${price}.`,
+    meta: ({ headline, n, price }) => `${headline}: confronta ${n} prodotti tra negozi.${price ? ` Da ${price}.` : ""}`,
     cheapest: "I più economici",
     all: "Tutti i prodotti",
     otherBrands: "Altre marche",

@@ -8,7 +8,7 @@ import {
   findProduct,
   offerTotal,
   teamNames,
-  typeNames,
+  kitTypeName,
 } from "@/data/products";
 import { BootOffer, BootProduct, bootProducts } from "@/data/boots";
 import { GloveOffer, GloveProduct, gloveProducts } from "@/data/gloves";
@@ -356,7 +356,7 @@ export default function CompareClient() {
 
             const { product, offer } = card;
             const team = teamNames[product.teamKey][locale];
-            const type = typeNames[product.typeKey][locale];
+            const type = kitTypeName(product, locale);
             const photo = mainPhoto(offer, product.offers);
             const displayName =
               displayTitleForCountry(product, countryCode, locale) ?? `${team} ${type}`;

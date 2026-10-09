@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import type { HubItem } from "@/lib/hubs";
 import { HUB } from "@/lib/hubStrings";
 import type { HubLocale } from "@/data/teamMeta";
-// teamNames/typeNames de productMeta, no del barrel @/data/products: importar
+// teamNames/kitTypeName de productMeta, no del barrel @/data/products: importar
 // de ahí arrastra el catálogo entero a cualquier página que use estas piezas.
-import { getAgeGroup, teamNames, typeNames } from "@/lib/productMeta";
+import { getAgeGroup, teamNames, kitTypeName } from "@/lib/productMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { getDisplaySrc } from "@/lib/images";
 import { mainPhoto } from "@/lib/officialStores";
@@ -61,7 +61,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
       {items.map(({ product, offer }) => {
         const age = getAgeGroup(product);
         const team = teamNames[product.teamKey][locale];
-        const label = `${showTeam ? `${team} · ` : ""}${typeNames[product.typeKey][locale]} ${product.season}`;
+        const label = `${showTeam ? `${team} · ` : ""}${kitTypeName(product, locale)} ${product.season}`;
         const photo = mainPhoto(offer, product.offers);
         const stores = countDistinctRetailers(product.offers.filter((o) => o.inStock));
         return (
@@ -75,7 +75,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={getDisplaySrc(photo, 400)}
-                    alt={`${team} ${typeNames[product.typeKey][locale]} ${product.season}`}
+                    alt={`${team} ${kitTypeName(product, locale)} ${product.season}`}
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-contain"

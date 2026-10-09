@@ -637,14 +637,21 @@ export const typeNames: Record<TypeKey, Record<Locale, string>> = {
 // sea cambiaríamos un duplicado por otro.
 const RETRO_KIT = /-(home|away|third|goalkeeper|training|prematch)(?:-|$)/;
 
+/** Equipación real de la ficha: la del typeKey o, en las retro, la del id. */
+export function kitOf(product: Product): Exclude<TypeKey, "retro"> | undefined {
+  if (product.typeKey !== "retro") return product.typeKey;
+  return product.id.match(RETRO_KIT)?.[1] as Exclude<TypeKey, "retro"> | undefined;
+}
+
+// 2026-10-09: "Retro" solo si isVintageRetro() (temporada <= 2006, regla
+// fija del dueño). 3.911 fichas typeKey "retro" de 2007-2025 (segunda mano
+// de eBay) salían "Celtic FC Retro Suplente 2024/25" en título, JSON-LD y
+// FAQ. Si eso las hace chocar con la ficha actual de la misma temporada, lo
+// desambigua seoMeta.ts (uniqueTitles), no esta palabra.
 export function kitTypeName(product: Product, locale: Locale): string {
-  const kit =
-    product.typeKey === "retro"
-      ? (product.id.match(RETRO_KIT)?.[1] as TypeKey | undefined)
-      : undefined;
-  return kit
-    ? `${typeNames.retro[locale]} ${typeNames[kit][locale]}`
-    : typeNames[product.typeKey][locale];
+  const kit = product.typeKey === "retro" ? kitOf(product) : undefined;
+  if (!kit) return typeNames[product.typeKey][locale];
+  return isVintageRetro(product) ? `${typeNames.retro[locale]} ${typeNames[kit][locale]}` : typeNames[kit][locale];
 }
 
 export function seasonSortValue(season: string): number {

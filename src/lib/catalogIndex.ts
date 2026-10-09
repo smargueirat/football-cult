@@ -4,8 +4,11 @@ import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
 import { apparelProducts } from "@/data/apparel";
 import { trainingProducts } from "@/data/training";
-import { teamNames, typeNames } from "@/lib/productMeta";
+import { ticketProducts } from "@/data/tickets";
+import { kitTypeName, teamNames } from "@/lib/productMeta";
 import { localizeGearModel } from "@/lib/gearText";
+import { brandLabel, gearName, jerseyName, ticketName, type GearLike } from "@/lib/seoMeta";
+import type { GearSection } from "@/lib/gearHubs";
 import type { HubLocale } from "@/data/teamMeta";
 
 // ÍNDICE RASTREABLE DEL CATÁLOGO (2026-09-24)
@@ -22,10 +25,12 @@ import type { HubLocale } from "@/data/teamMeta";
 // función, que es el otro problema abierto -- de hecho descargan al
 // servidor en vez de cargarlo.
 //
-// Se indexan los mismos productos que entran al sitemap (2+ tiendas),
-// por coherencia con la poda del mismo día: si decidimos no gastarle
-// rastreo a las fichas de una sola tienda, tampoco tiene sentido
-// empujarlas desde acá. Siguen existiendo y enlazadas desde su categoría.
+// 2026-10-09: TODAS las fichas con ofertas (antes solo las de 2+ ofertas)
+// y también las entradas. El crawl del 08-10 midió 4.461 fichas sin ningún
+// enlace HTML -- 2.523 de ellas entradas -- y la cadena prev/next dejaba
+// /indice/ropa/70 a 71 clics de la home. Ahora cada página enlaza a todas
+// las de su sección y /indice las lista todas: cualquier ficha queda a 3
+// clics (home -> /indice -> página -> ficha).
 
 export const INDEX_SECTIONS = [
   "camisetas",
@@ -34,6 +39,7 @@ export const INDEX_SECTIONS = [
   "entrenamiento",
   "guantes",
   "pelotas",
+  "tickets",
 ] as const;
 export type IndexSection = (typeof INDEX_SECTIONS)[number];
 
@@ -42,38 +48,34 @@ export const PER_PAGE = 100;
 export interface IndexEntry {
   href: string;
   label: string;
+  /** Clave de orden (en castellano, igual en los 5 idiomas): de acá salen
+   *  los rangos "A–C" de /indice. */
+  key: string;
 }
 
 const teamName = (key: string, locale: HubLocale): string =>
   (teamNames as Record<string, Record<string, string>>)[key]?.[locale] ?? key;
-const typeName = (key: string, locale: HubLocale): string =>
-  (typeNames as Record<string, Record<string, string>>)[key]?.[locale] ?? key;
 
-function comparable<T extends { offers: unknown[] }>(items: T[]): T[] {
-  return items.filter(
-    (i) => (i.offers as { inStock?: boolean }[]).filter((o) => o.inStock !== false).length >= 2,
-  );
-}
+// Agotadas fuera (igual que main en sitemap/trustStrip): solo fichas con al
+// menos una oferta en stock.
+const withOffers = <T extends { offers: readonly unknown[] }>(items: readonly T[]): T[] =>
+  items.filter((i) => (i.offers as readonly { inStock?: boolean }[]).some((o) => o.inStock !== false));
 
 // El orden se fija con las etiquetas en castellano y se reusa en los 5
 // idiomas. Ordenar por la etiqueta ya traducida parece más prolijo, pero
 // deja /es/indice/x/3 y /it/indice/x/3 con productos distintos mientras el
 // hreflang los declara traducción uno del otro (visto en vivo el 24/09).
-function ordered<T>(items: T[], sortKey: (i: T) => string): T[] {
-  return [...items].sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
+function ordered<T>(items: T[], sortKey: (i: T) => string): { item: T; key: string }[] {
+  return items.map((item) => ({ item, key: sortKey(item) })).sort((a, b) => a.key.localeCompare(b.key));
 }
 
-function gearEntries(
-  items: { id: string; brand: string; model: string }[],
-  basePath: string,
-  locale: HubLocale,
-): IndexEntry[] {
-  const list = comparable(items as unknown as { offers: unknown[] }[]).map(
-    (raw) => raw as unknown as { id: string; brand: string; model: string },
-  );
-  return ordered(list, (i) => localizeGearModel(i.model, i.brand, "es")).map((item) => ({
-    href: `/${basePath}/${item.id}`,
-    label: localizeGearModel(item.model, item.brand, locale),
+function gearEntries(items: readonly GearLike[], section: GearSection, locale: HubLocale): IndexEntry[] {
+  // Por marca y modelo (no por el sustantivo "Botas de fútbol…", que es igual
+  // en todas): así los saltos de /indice dicen algo ("adidas Copa–adidas F50").
+  return ordered(withOffers(items), (i) => `${brandLabel(i.brand)} ${localizeGearModel(i.model, i.brand, "es")}`).map(({ item, key }) => ({
+    href: `/${section}/${item.id}`,
+    label: gearName(section, item, locale),
+    key,
   }));
 }
 
@@ -96,12 +98,16 @@ export function indexEntries(section: IndexSection, locale: HubLocale): IndexEnt
 function buildEntries(section: IndexSection, locale: HubLocale): IndexEntry[] {
   switch (section) {
     case "camisetas":
-      return ordered(
-        comparable(products),
-        (p) => `${teamName(p.teamKey, "es")} ${typeName(p.typeKey, "es")} ${p.season}`,
-      ).map((p) => ({
-        href: `/camiseta/${p.id}`,
-        label: `${teamName(p.teamKey, locale)} ${typeName(p.typeKey, locale)} ${p.season}`,
+      return ordered(withOffers(products), (p) => `${teamName(p.teamKey, "es")} ${p.season} ${kitTypeName(p, "es")} ${p.id}`).map(({ item, key }) => ({
+        href: `/camiseta/${item.id}`,
+        label: jerseyName(item, locale),
+        key,
+      }));
+    case "tickets":
+      return ordered(withOffers(ticketProducts), (t) => `${t.date} ${t.event}`).map(({ item, key }) => ({
+        href: `/tickets/${item.id}`,
+        label: ticketName(item, locale),
+        key,
       }));
     case "botas":
       return gearEntries(bootProducts, "botas", locale);
@@ -128,6 +134,21 @@ export function indexPaths(): { section: IndexSection; page: number }[] {
   for (const section of INDEX_SECTIONS) {
     const total = pageCount(section, "es");
     for (let page = 1; page <= total; page += 1) out.push({ section, page });
+  }
+  return out;
+}
+
+/** Qué cubre cada página: "Ac–Al" (o fechas, en entradas), para los saltos
+ *  de /indice y de la paginación. */
+export function pageRanges(section: IndexSection): { page: number; label: string }[] {
+  const entries = indexEntries(section, "es");
+  const cut = (k: string) =>
+    section === "tickets" ? `${k.slice(8, 10)}/${k.slice(5, 7)}` : k.split(/\s+/).slice(0, 2).join(" ").slice(0, 18);
+  const out: { page: number; label: string }[] = [];
+  for (let i = 0; i < entries.length; i += PER_PAGE) {
+    const a = cut(entries[i].key);
+    const b = cut(entries[Math.min(i + PER_PAGE, entries.length) - 1].key);
+    out.push({ page: i / PER_PAGE + 1, label: a === b ? a : `${a}–${b}` });
   }
   return out;
 }
