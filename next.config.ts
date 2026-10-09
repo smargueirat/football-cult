@@ -22,6 +22,9 @@ const CSP = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // 4 workers de build, no 15: cada uno carga el catálogo entero y con 15 la PC
+  // (14 GB) se quedaba sin memoria y el build moría (2026-10-09).
+  experimental: { cpus: 4 },
   // Las 404 no se guardan en la caché ISR (ver cache-handler.mjs).
   cacheHandler: path.resolve("cache-handler.mjs"),
   // www y sin-www servían las dos 200 sin redirigir entre sí (confirmado
