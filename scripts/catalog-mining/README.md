@@ -26,8 +26,9 @@ posture as everything else here.
 **Listing identity and dead listings (2026-10-09).** One eBay listing =
 one `/itm/<id>`, whatever the site (`eBay`, `eBay ES`, `eBay IT`, `eBay GB`
 copies) or tracking params (`_skw=`, `hash=`, `amdata=`).
-`dedupe_same_url.py` keeps one row per id per ficha (US first: the only one
-with live per-country shipping; then ES > IT > GB) and one ficha per id.
+`dedupe_same_url.py` keeps one row per id per ficha (ES > IT > GB > US: the
+European copy's price includes VAT, the US one doesn't; the European row keeps
+its own static shipping) and one ficha per id.
 `ebay_check_stale.py` checks every live id across all four sites in a
 rotation (`last_id` in `ebay_stale_check_state.json`), budgeted from the
 real remaining `buy.browse` quota (Analytics `rate_limit` API, 5000/day,

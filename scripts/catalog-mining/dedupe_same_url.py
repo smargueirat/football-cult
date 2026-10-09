@@ -11,10 +11,12 @@ URL entera, como siempre.
    coincidencia (equipación y año del título, luego la que más ofertas tiene)
    y se imprime como "DUDOSO" para revisarlo. Si no es eBay y el título no
    decide, no se toca (comportamiento de siempre).
-2. Dentro de una ficha: una fila por anuncio eBay. Se queda la de eBay (EE.
-   UU.) si existe -- es la única con envío en vivo por país del visitante
-   (/api/ebay-shipping) y la más barata en ~9 de cada 10 pares --, si no
-   ES > IT > GB. Si alguna copia estaba `inStock: false`, la que queda
+2. Dentro de una ficha: una fila por anuncio eBay, con preferencia
+   ES > IT > GB > US. El mercado principal es España/UE y el precio de la
+   copia europea ya lleva IVA, que es lo que paga de verdad el visitante; el
+   de eBay US sale sin IVA y más barato de lo real. La copia europea va con
+   su envío propio (el envío en vivo por país de /api/ebay-shipping es solo
+   para store "eBay"). Si alguna copia estaba `inStock: false`, la que queda
    también (un id muerto en eBay está muerto en todos los sitios).
 Fichas que quedan vacías: borradas + alias en productAliases.ts.
 
@@ -36,7 +38,7 @@ P = ROOT + "/src/data/products.ts"
 head, blocks, tail = split_blocks(open(P, encoding="utf-8").read())
 OFFER_RE = re.compile(r'      \{ store: [^\n]*\},\n')
 ITM = re.compile(r'url: "https://www\.ebay\.[a-z.]+/itm/(\d+)')
-STORE_RANK = {"eBay": 0, "eBay ES": 1, "eBay IT": 2, "eBay GB": 3}
+STORE_RANK = {"eBay ES": 0, "eBay IT": 1, "eBay GB": 2, "eBay": 3}
 KIT_WORDS = {
     "home": r"home|local|casa|domicile|1st",
     "away": r"away|visitante|trasferta|suplente|ext[ée]rieur|2nd",
