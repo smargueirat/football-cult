@@ -5,7 +5,7 @@ import { buildAlternates } from "@/lib/i18n/locales";
 import { bootOfferTotalInEUR, type BootCurrencyCode } from "@/lib/offerMoney";
 import { productMpn } from "@/lib/offerGtin";
 import type { GearSection } from "@/lib/gearHubs";
-import { SITE_URL, aggregateOfferLd, brandLabel, gearDescription, gearName, gearTitle, ldImage, ogImages, type GearLike } from "@/lib/seoMeta";
+import { OG_LOCALE, SITE_URL, aggregateOfferLd, brandLabel, gearDescription, gearName, gearTitle, ldImage, ogImages, type GearLike } from "@/lib/seoMeta";
 import { gearRelated, gearTrail } from "@/lib/detailLinks";
 import { JsonLd } from "@/components/hubs/HubParts";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
@@ -25,7 +25,7 @@ export function gearDetailMetadata(section: GearSection, item: GearLike, locale:
     title,
     description,
     alternates: buildAlternates(locale, path),
-    openGraph: { title, description, type: "website", url: `${SITE_URL}/${locale}${path}`, siteName: "Football Cult", locale, images },
+    openGraph: { title, description, type: "website", url: `${SITE_URL}/${locale}${path}`, siteName: "Football Cult", locale: OG_LOCALE[locale], images },
     twitter: { card: "summary_large_image", title, description, images: images?.map((i) => i.url) },
   };
 }

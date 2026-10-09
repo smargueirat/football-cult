@@ -9,7 +9,7 @@ import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { productMpn } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
 import { offerTotalInEUR } from "@/lib/offerMoney";
-import { SITE_URL, aggregateOfferLd, jerseyBrand, jerseyDescription, jerseyName, jerseyTitle, ldImage, ogImages } from "@/lib/seoMeta";
+import { OG_LOCALE, SITE_URL, aggregateOfferLd, jerseyBrand, jerseyDescription, jerseyName, jerseyTitle, ldImage, ogImages } from "@/lib/seoMeta";
 import { jerseyRelated, jerseyTrail } from "@/lib/detailLinks";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
 
@@ -90,7 +90,7 @@ export async function generateMetadata({
       type: "website",
       url: `${SITE_URL}/${locale}/camiseta/${product.id}`,
       siteName: "Football Cult",
-      locale,
+      locale: OG_LOCALE[locale],
       images,
     },
     twitter: {

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ticketProducts } from "@/data/tickets";
 import { ticketSeller, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { SITE_URL, ldImage, ogImages, ticketDescription, ticketTitle } from "@/lib/seoMeta";
+import { OG_LOCALE, SITE_URL, ldImage, ogImages, ticketDescription, ticketTitle } from "@/lib/seoMeta";
 import { ticketRelated, ticketTrail } from "@/lib/detailLinks";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
 import TicketDetailPageClient from "./TicketDetailPageClient";
@@ -51,7 +51,7 @@ export async function generateMetadata({
     title,
     description,
     alternates: buildAlternates(locale, `/tickets/${ticket.id}`),
-    openGraph: { title, description, type: "website", url, siteName: "Football Cult", locale, images },
+    openGraph: { title, description, type: "website", url, siteName: "Football Cult", locale: OG_LOCALE[locale], images },
     twitter: { card: "summary_large_image", title, description, images: images?.map((i) => i.url) },
   };
 }

@@ -37,6 +37,9 @@ export const TITLE_MAX = 60;
 /** Mercado de cada idioma para el "desde X €". */
 export const MARKET: Record<HubLocale, CountryCode> = { es: "ES", en: "IE", pt: "PT", fr: "FR", it: "IT" };
 
+/** og:locale en formato idioma_PAÍS. */
+export const OG_LOCALE: Record<HubLocale, string> = { es: "es_ES", en: "en_IE", pt: "pt_PT", fr: "fr_FR", it: "it_IT" };
+
 export const withBrand = (t: string) => (t.length + BRAND.length <= TITLE_MAX ? t + BRAND : t);
 
 interface MoneyOffer {
