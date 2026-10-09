@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import BackToCatalogLink from "@/components/BackToCatalogLink";
 import { BootProduct, BootOffer } from "@/data/boots";
-import { approxPriceLabel, formatOfferMoney, bootOfferTotalInEUR } from "@/lib/offerMoney";
+import { approxPriceLabel, formatOfferMoney, bootOfferTotalInEUR, shippingNotMeasured, shippingUnknown } from "@/lib/offerMoney";
 import { trackOfferClick } from "@/lib/analytics";
 import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -39,7 +39,7 @@ export default function BootDetailClient({
   // (±1 %), comisión (offerOrder.ts). Las que no envían van aparte, al final,
   // y nunca son "mejor precio": si ninguna envía, no hay mejor precio.
   const ships = (o: BootOffer) => offerShipsTo(o.store, countryCode);
-  const sortedOffers = rankOffers(boot.offers, bootOfferTotalInEUR, ships);
+  const sortedOffers = rankOffers(boot.offers, bootOfferTotalInEUR, ships, (o) => !shippingNotMeasured(o, countryCode));
   const shippable = sortedOffers.filter(ships);
   const elsewhere = sortedOffers.filter((o) => !ships(o));
   const cheapestOffer: BootOffer | undefined = shippable[0];
@@ -48,10 +48,11 @@ export default function BootDetailClient({
 
   // Ahorro frente a la MEDIANA de las tiendas (no la más cara). ProSoccer
   // queda afuera: su envío internacional no figura en el feed y su "total"
-  // sería menor al real. Con menos de 3 tiendas distintas no se muestra.
+  // sería menor al real (igual que cualquier tienda sin envío medido para el
+  // país). Con menos de 3 tiendas distintas no se muestra.
   const medianSavings = savingsVsMedian(
     shippable
-      .filter((o) => o.store !== "ProSoccer")
+      .filter((o) => !shippingNotMeasured(o, countryCode))
       .map((o) => ({ store: o.store, total: bootOfferTotalInEUR(o) })),
   );
 
@@ -187,12 +188,10 @@ export default function BootDetailClient({
               {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
               {formatOfferMoney(rowPrice, offer.currency)}{" "}
               <ApproxPrice amount={rowPrice} currency={offer.currency} />
-              {offer.store === "ProSoccer"
-                ? // Tienda de EE.UU. -- el feed no da un costo de envío
-                  // internacional real, y su propia política dice
-                  // explícitamente que el envío gratis NO aplica a
-                  // pedidos internacionales -- decir "envío gratis"
-                  // acá sería un dato falso, no una aproximación.
+              {shippingUnknown(offer, countryCode)
+                ? // Sin dato de envío de esta tienda para este país (ver
+                  // SHIPPING_KNOWN_FOR en offerMoney.ts): decir "envío
+                  // gratis" acá sería un dato falso, no una aproximación.
                   ` · ${t.botas.shippingCalculatedAtStore}`
                 : offer.shipping > 0
                   ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
@@ -272,7 +271,7 @@ export default function BootDetailClient({
           {cheapestOffer ? (
             <p className="mt-2 text-sm text-[#675c44]">
               {t.botas.bestPrice}: {cheapestOffer.priceMax ? `${t.botas.from} ` : ""}
-              {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {t.botas.shippingIncluded}{" "}
+              {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {shippingUnknown(cheapestOffer, countryCode) ? "" : t.botas.shippingIncluded}{" "}
               <ApproxPrice amount={cheapestTotal} currency={cheapestOffer.currency} className="text-xs" />
             </p>
           ) : (
@@ -337,7 +336,7 @@ export default function BootDetailClient({
         const sp = activeSizePrice(cheapestOffer);
         const barUrl = sp ? sp.url : cheapestOffer.url;
         const barPrice = sp ? sp.price : cheapestOffer.price;
-        const barTotal = barPrice + (cheapestOffer.store === "ProSoccer" ? 0 : cheapestOffer.shipping);
+        const barTotal = barPrice + cheapestOffer.shipping;
         return (
           <StickyBestOfferBar
             hideFrom="sm"

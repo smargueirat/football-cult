@@ -1,10 +1,10 @@
-// Chequeo del orden de ofertas (offerOrder.ts), del "≈" en otra moneda y de
+// Chequeo del orden de ofertas (offerOrder.ts), del envío por destino, del "≈" y de
 // que toda tienda del catálogo tenga entrada en storeShipping:
 //   npx tsx scripts/check_offer_order.mts
 import assert from "node:assert";
 import { readFileSync } from "node:fs";
 import { rankOffers } from "../src/lib/offerOrder";
-import { approxPriceLabel } from "../src/lib/offerMoney";
+import { approxPriceLabel, shippingUnknown, SHIPPING_KNOWN_FOR } from "../src/lib/offerMoney";
 import { offerShipsTo, storeShipping } from "../src/lib/productMeta";
 
 type O = { store: string; total: number };
@@ -30,6 +30,23 @@ assert.equal(offerShipsTo("ClovisCalcadosBR", "ES"), false);
 assert.equal(offerShipsTo("eBay ES", "AR"), true); // eBay: envío real en vivo
 assert.equal(offerShipsTo("Futbol Emotion", "IT"), true); // envía a todo el mundo
 
+// Envío según destino: el dato del feed vale en su país, fuera es "a calcular".
+assert.equal(shippingUnknown({ store: "Futbol Emotion", shipping: 0 }, "ES"), false);
+assert.equal(shippingUnknown({ store: "Futbol Emotion", shipping: 0 }, "AR"), true);
+assert.equal(shippingUnknown({ store: "FansJerseyHub", shipping: 0 }, "AR"), false); // gratis a todo el mundo
+assert.equal(shippingUnknown({ store: "AdidasCL", shipping: 0 }, "CL"), true); // la tienda no lo publica
+assert.equal(shippingUnknown({ store: "eBay ES", shipping: 0 }, "ES"), true); // en vivo
+assert.equal(shippingUnknown({ store: "eBay ES", shipping: 5 }, "AR"), false);
+assert.equal(shippingUnknown({ store: "Amazon", shipping: 0, url: "https://www.amazon.es/dp/X?tag=y" }, "ES"), false);
+assert.equal(shippingUnknown({ store: "Amazon", shipping: 0, url: "https://www.amazon.de/dp/X?tag=y" }, "ES"), true);
+assert.equal(shippingUnknown({ store: "TiendaNueva", shipping: 0 }, "ES"), true);
+// Un 0 € "a calcular" no gana a un total medido más caro; entre iguales, precio.
+const ar = (o: O) => !shippingUnknown({ store: o.store, shipping: 0 }, "AR");
+assert.deepStrictEqual(
+  rankOffers([{ store: "Futbol Emotion", total: 60 }, { store: "FansJerseyHub", total: 80 }], (o) => o.total, undefined, ar).map((o) => o.store),
+  ["FansJerseyHub", "Futbol Emotion"],
+);
+
 // "≈" en la moneda del visitante; nada si ya está en ella; EUR si no la soportamos.
 const approx = (...a: Parameters<typeof approxPriceLabel>) => approxPriceLabel(...a)?.replace(/\s/g, " ") ?? null;
 assert.equal(approx(108, "USD", "EUR"), "≈ 100 EUR");
@@ -46,5 +63,14 @@ for (const f of ["products", "boots", "apparel", "gloves", "balls", "training", 
   }
 }
 assert.deepStrictEqual([...missing], [], `tiendas sin storeShipping: ${[...missing].join(", ")}`);
+
+// Toda tienda con envío (no eBay, no entradas, no Amazon) tiene dato de envío por país.
+const noShipData = new Set<string>();
+for (const f of ["products", "boots", "apparel", "gloves", "balls", "training"]) {
+  const src = readFileSync(new URL(`../src/data/${f}.ts`, import.meta.url), "utf8");
+  for (const m of src.matchAll(/"?store"?: ?"([^"]+)"/g))
+    if (!m[1].startsWith("eBay") && m[1] !== "Amazon" && !(m[1] in SHIPPING_KNOWN_FOR)) noShipData.add(m[1]);
+}
+assert.deepStrictEqual([...noShipData], [], `tiendas sin SHIPPING_KNOWN_FOR: ${[...noShipData].join(", ")}`);
 
 console.log("ok");

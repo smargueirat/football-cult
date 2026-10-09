@@ -20,8 +20,9 @@ export default function CompareOfferRow({
 }) {
   const { t, locale } = useLanguage();
   const { shipping, importCharges, isLive } = useLiveOfferCosts(offer, countryCode);
-  // eBay con envío 0 sin chequeo en vivo: no es gratis, es desconocido.
-  const noShipping = !isLive && shippingUnknown(offer);
+  // eBay con envío 0 sin chequeo en vivo, o tienda sin dato para este país:
+  // no es gratis, es desconocido.
+  const noShipping = !isLive && shippingUnknown(offer, countryCode);
   const total = offer.price + shipping + importCharges;
 
   return (

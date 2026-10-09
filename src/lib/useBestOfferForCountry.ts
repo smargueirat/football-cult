@@ -3,14 +3,15 @@
 import { useMemo } from "react";
 import type { CountryCode, Offer, Product } from "@/data/products";
 import { offerShipsTo } from "@/lib/productMeta";
-import { isEbayStore, offerTotal, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
+import { isEbayStore, offerTotal, offerTotalInEUR, shippingNotMeasured, shippingUnknown } from "@/lib/offerMoney";
 import { useLiveOfferTotal } from "./useLiveOfferTotal";
 import { rankOffers } from "@/lib/offerOrder";
 
 interface BestOfferResult {
   offer: Offer | undefined;
   total: number;
-  // true si el envío de `offer` no se conoce (eBay con 0 sin chequeo en vivo):
+  // true si el envío de `offer` no se conoce (eBay con 0 sin chequeo en vivo, o
+  // tienda sin dato de envío para este país):
   // `total` no incluye envío y no hay que presentarlo como precio final.
   shippingUnknown: boolean;
 }
@@ -55,8 +56,8 @@ export function useBestOfferForCountry(
   );
 
   const sortedByStatic = useMemo(
-    () => rankOffers(eligible, offerTotalInEUR),
-    [eligible]
+    () => rankOffers(eligible, offerTotalInEUR, undefined, (o) => !shippingNotMeasured(o, countryCode)),
+    [eligible, countryCode]
   );
   const staticBest = sortedByStatic[0];
   const ebayToVerify = staticBest && isEbayStore(staticBest.store) ? staticBest : undefined;
@@ -66,14 +67,14 @@ export function useBestOfferForCountry(
   return useMemo(() => {
     if (!staticBest) return { offer: undefined, total: 0, shippingUnknown: false };
     if (!ebayToVerify) {
-      return { offer: staticBest, total: offerTotal(staticBest), shippingUnknown: shippingUnknown(staticBest) };
+      return { offer: staticBest, total: offerTotal(staticBest), shippingUnknown: shippingUnknown(staticBest, countryCode) };
     }
 
     const liveEbayEUR = offerTotalInEUR({ ...ebayToVerify, price: liveEbayTotal, shipping: 0 });
     const runnerUp = sortedByStatic[1];
     if (runnerUp && offerTotalInEUR(runnerUp) < liveEbayEUR) {
-      return { offer: runnerUp, total: offerTotal(runnerUp), shippingUnknown: shippingUnknown(runnerUp) };
+      return { offer: runnerUp, total: offerTotal(runnerUp), shippingUnknown: shippingUnknown(runnerUp, countryCode) };
     }
-    return { offer: ebayToVerify, total: liveEbayTotal, shippingUnknown: !ebayLive && shippingUnknown(ebayToVerify) };
-  }, [staticBest, ebayToVerify, liveEbayTotal, ebayLive, sortedByStatic]);
+    return { offer: ebayToVerify, total: liveEbayTotal, shippingUnknown: !ebayLive && shippingUnknown(ebayToVerify, countryCode) };
+  }, [staticBest, ebayToVerify, liveEbayTotal, ebayLive, sortedByStatic, countryCode]);
 }
