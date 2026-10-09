@@ -49,8 +49,8 @@ export function formatOfferMoney(amount: number, currency: OfferCurrencyCode): s
 }
 
 // Tasas aproximadas de cada moneda respecto al EUR, usadas ÚNICAMENTE
-// para poder comparar/ordenar ofertas de distinta moneda entre sí
-// (nunca para mostrarle un precio convertido al usuario).
+// para poder comparar/ordenar ofertas de distinta moneda entre sí y para el
+// "≈" orientativo de approxPriceLabel (nunca en lugar del precio real).
 const OFFER_CURRENCY_TO_EUR: Record<OfferCurrencyCode, number> = {
   EUR: 1,
   USD: 1.08,
@@ -62,6 +62,22 @@ const OFFER_CURRENCY_TO_EUR: Record<OfferCurrencyCode, number> = {
 
 export function offerTotalInEUR(offer: { price: number; shipping: number; currency: OfferCurrencyCode }): number {
   return (offer.price + offer.shipping) / OFFER_CURRENCY_TO_EUR[offer.currency];
+}
+
+// Equivalente aproximado ("≈ 54 EUR") de un importe en otra moneda, con las
+// mismas tasas fijas del orden. Va SIEMPRE junto al precio real de la tienda,
+// nunca en su lugar. `to` es la moneda del país del visitante; si no la
+// soportamos (CHF, MXN...) se usa EUR. null si ya está en esa moneda.
+export function approxPriceLabel(amount: number, from: OfferCurrencyCode, to: string): string | null {
+  const target: OfferCurrencyCode = to in OFFER_CURRENCY_TO_EUR ? (to as OfferCurrencyCode) : "EUR";
+  if (target === from) return null;
+  const value = (amount / OFFER_CURRENCY_TO_EUR[from]) * OFFER_CURRENCY_TO_EUR[target];
+  return `≈ ${new Intl.NumberFormat(OFFER_CURRENCY_LOCALE[target], {
+    style: "currency",
+    currency: target,
+    currencyDisplay: "code",
+    maximumFractionDigits: 0,
+  }).format(value)}`;
 }
 
 export function offerTotal(offer: { price: number; shipping: number }): number {

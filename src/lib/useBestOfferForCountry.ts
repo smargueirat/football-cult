@@ -5,6 +5,7 @@ import type { CountryCode, Offer, Product } from "@/data/products";
 import { offerShipsTo } from "@/lib/productMeta";
 import { isEbayStore, offerTotal, offerTotalInEUR, shippingUnknown } from "@/lib/offerMoney";
 import { useLiveOfferTotal } from "./useLiveOfferTotal";
+import { rankOffers } from "@/lib/offerOrder";
 
 interface BestOfferResult {
   offer: Offer | undefined;
@@ -54,7 +55,7 @@ export function useBestOfferForCountry(
   );
 
   const sortedByStatic = useMemo(
-    () => [...eligible].sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b)),
+    () => rankOffers(eligible, offerTotalInEUR),
     [eligible]
   );
   const staticBest = sortedByStatic[0];

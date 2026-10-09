@@ -13,6 +13,7 @@ import type { Locale } from "@/lib/i18n/translations";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { cleanDisplayTitle } from "@/lib/displayTitle";
 import { offerTotalInEUR } from "@/lib/offerMoney";
+import { rankOffers } from "@/lib/offerOrder";
 import type {
   AgeGroup,
   Brand,
@@ -521,6 +522,47 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   // fetches), inferred from Decathlon's known per-country storefront model
   // -- safer than the implicit "ships everywhere" default.
   DecathlonIE: ["IE"],
+
+  // Revisión 2026-10-09: TODAS las tiendas del catálogo tienen entrada (una que
+  // falte cae en "envía a todos lados", y así una bota de Nike AR salía como
+  // "mejor precio con envío incluido" a un visitante de España). Las de abajo
+  // NO están verificadas contra la política de cada tienda: regla "si hay
+  // duda, solo el país de origen", que además es el país para el que vale el
+  // envío guardado en la oferta.
+  // Soicos: el enlace de Nike AR responde "Campaña no válida para tu país de
+  // residencia" fuera de Argentina (scripts/catalog-mining/README.md, Soicos).
+  NikeAR: ["AR"],
+  PumaAR: ["AR"],
+  NikeCL: ["CL"],
+  // Clovis Calçados (Awin 107702): tienda brasileña, precios en BRL.
+  ClovisCalcadosBR: ["BR"],
+  // Gigasport: un feed por región (el DE es el del anunciante "AT/DE").
+  GigasportDE: ["DE", "AT"],
+  GigasportCH: ["CH"],
+  GigasportFR: ["FR"],
+  // Tiendas españolas: envío guardado medido para España.
+  "Futbol Emotion": ["ES"],
+  FutbolEmotion: ["ES"],
+  ForumSport: ["ES"],
+  DeporteOutlet: ["ES"],
+  "Futbol Factory": ["ES"],
+  "Shop Real Betis": ["ES"],
+  // BSTN: cada feed regional es su tienda de ese país.
+  BSTNIT: ["IT"],
+  BSTNUK: ["GB"],
+  "UK Soccer Shop": ["GB"],
+  "Classic Football Shirts": ["GB"],
+  // Amazon: una sola clave para .es/.de/.it/.fr/.co.uk; se limita a esos países.
+  Amazon: ["ES", "DE", "IT", "FR", "GB"],
+  // eBay (eBay, eBay ES/IT/GB) queda SIN entrada a propósito: cada vendedor
+  // decide, el envío real se pide en vivo (/api/ebay-shipping) y sin dato se
+  // muestra "envío a verificar". No se pone "all" porque shoppingFeed.ts trata
+  // "all" explícito como envío mundial verificado.
+  // Entradas: electrónicas o enviadas por el vendedor a cualquier país.
+  FootballTicketNetUK: "all",
+  FootballTicketNetUS: "all",
+  FootballTicketNetDE: "all",
+  Gigsberg: "all",
 };
 
 export function offerShipsTo(store: string, country: CountryCode): boolean {
@@ -602,9 +644,11 @@ export function bestOfferForCountry(
   product: Product,
   country: CountryCode
 ): Offer | undefined {
-  return [...product.offers]
-    .filter((o) => o.inStock && offerShipsTo(o.store, country))
-    .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
+  // Precio total primero; la comisión solo desempata dentro de ±1 % (offerOrder.ts).
+  return rankOffers(
+    product.offers.filter((o) => o.inStock && offerShipsTo(o.store, country)),
+    offerTotalInEUR,
+  )[0];
 }
 
 // Idioma "natural" de cada tienda, según en qué mercado vende. Ya NO se usa
