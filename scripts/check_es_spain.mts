@@ -4,9 +4,9 @@
 // 2) El glosario de títulos no duplica "Equipación" al traducir.
 // 3) El euro se muestra como "1.234,56 €".
 import assert from "node:assert/strict";
-import { translations } from "../src/lib/i18n/translations.ts";
-import { translateTitleVocabulary } from "../src/lib/i18n/titleGlossary.ts";
-import { formatOfferMoney } from "../src/lib/offerMoney.ts";
+import { translations } from "../src/lib/i18n/translations";
+import { translateTitleVocabulary } from "../src/lib/i18n/titleGlossary";
+import { formatOfferMoney } from "../src/lib/offerMoney";
 
 const BAD =
   /(?<![\p{L}])(buscá|compará|comprá|elegí|probá|tocá|explorá|revisá|iniciá|escribí|describí|intentá|tenés|podés|querés|sabés|comprás|ahorrás|vos|acá|talles?|arquero|titular(?! del)|suplente|remera|canilleras|hincha|avisame|escribinos|contanos|dejanos|pelotas?)(?![\p{L}])/iu;
