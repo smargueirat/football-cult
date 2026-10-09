@@ -32,7 +32,7 @@ import gearAliases from "../src/data/gearAliases.json";
 import { formatOfferMoney, type OfferCurrencyCode } from "../src/lib/offerMoney";
 import { isLocale } from "../src/lib/i18n/locales";
 import type { Locale } from "../src/lib/i18n/translations";
-import { EMAIL_COPY, SITE_URL, lastKey, localeKey, subsKey, unsubscribeUrl } from "../src/lib/priceAlerts";
+import { EMAIL_COPY, SITE_URL, lastKey, localeKey, oneClickUrl, pageUrl, subsKey, unsubscribeToken } from "../src/lib/priceAlerts";
 
 const DRY = process.argv.includes("--dry-run");
 /** Mismo mínimo que el sello "bajó" del sitio (src/lib/priceDrops.ts). */
@@ -42,7 +42,7 @@ const MIN_DROP = 0.005;
 // igual que broadcast_price_drops.mts.
 const ENV = path.join(import.meta.dirname, "../.env.local");
 for (const line of fs.existsSync(ENV) ? fs.readFileSync(ENV, "utf-8").split("\n") : []) {
-  const m = /^(REDIS_URL|RESEND_API_KEY|RESEND_FROM|AUTH_SECRET)=(.+)$/.exec(line.trim());
+  const m = /^(REDIS_URL|RESEND_API_KEY|RESEND_FROM)=(.+)$/.exec(line.trim());
   if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim();
 }
 // Después de cargar el entorno: mailFrom lee RESEND_FROM al importarse.
@@ -128,7 +128,10 @@ for (const key of keys) {
       const l: Locale = isLocale(locales[email] ?? "") ? (locales[email] as Locale) : "es";
       const copy = EMAIL_COPY[l];
       const name = hit.section.name(hit.item as never, l);
-      const unsub = unsubscribeUrl(email, productId, l);
+      // Token de baja aleatorio, uno por suscripción (se crea la primera vez
+      // que se envía; en el ensayo no se escribe nada en Redis).
+      const token = DRY ? "<token-de-ensayo>" : await unsubscribeToken(redis, email, productId, l);
+      const unsub = pageUrl(token, l);
       const msg = {
         from: MAIL_FROM,
         to: email,
@@ -143,7 +146,7 @@ for (const key of keys) {
         }),
         // Un correo por destinatario (antes iban todos juntos en "to" y
         // cada uno veía los correos de los demás) con su baja de un clic.
-        headers: { "List-Unsubscribe": `<${unsub}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" },
+        headers: { "List-Unsubscribe": `<${oneClickUrl(token)}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" },
       };
       if (DRY) {
         console.log(`--- [ensayo] para ${email} (${l})\n${JSON.stringify(msg.headers)}\n${msg.subject}\n${msg.text}\n`);

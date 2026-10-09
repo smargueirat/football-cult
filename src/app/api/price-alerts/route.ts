@@ -8,10 +8,12 @@ import {
   EMAIL_COPY,
   PRODUCT_ID_RE,
   activate,
-  confirmUrl,
+  applyToken,
+  createConfirmToken,
   deactivate,
+  pageUrl,
+  readToken,
   subsKey,
-  verifyToken,
 } from "@/lib/priceAlerts";
 
 // Registro de alertas de precio: un set de emails por producto en Redis
@@ -20,12 +22,14 @@ import {
 //
 // - Con sesión iniciada (favoritos) el alta es directa: el correo ya está
 //   verificado por el propio login (Google o enlace mágico).
-// - Sin sesión, doble opt-in: se manda un correo con un enlace firmado y la
-//   alerta solo se activa al pulsarlo. Antes se activaba al instante, así
-//   que cualquiera podía apuntar el correo de otro.
-// - La baja sin sesión solo se hace con el enlace firmado de cada aviso
-//   (GET, o POST "one-click" de la cabecera List-Unsubscribe, RFC 8058).
-//   Antes cualquiera podía dar de baja cualquier correo con subscribe:false.
+// - Sin sesión, doble opt-in: se manda un correo con un enlace (token
+//   aleatorio en Redis) y la alerta solo se activa al confirmar. Antes se
+//   activaba al instante, así que cualquiera podía apuntar el correo de otro.
+// - La baja sin sesión solo se hace con el token de cada aviso. Antes
+//   cualquiera podía dar de baja cualquier correo con subscribe:false.
+// - Los enlaces de los correos abren /[locale]/alerta-precio, que muestra
+//   un botón; la acción llega aquí por POST (?t=). Un GET nunca cambia nada:
+//   los escáneres de correo abren los enlaces solos.
 const EMAIL_RE = /^[^@\s]+@[^@\s.]+\.[^@\s]{2,}$/;
 const CONFIRMS_PER_DAY = 5;
 
@@ -35,34 +39,41 @@ function redirect(dest: string) {
   return new Response(null, { status: 303, headers: { ...NOINDEX, Location: dest } });
 }
 
+// GET ?t= (p. ej. un cliente de correo que abre la URL de List-Unsubscribe
+// en el navegador): solo lleva a la página del botón, no hace nada.
 export async function GET(req: NextRequest) {
-  const tok = verifyToken(req.nextUrl.searchParams.get("t"));
-  const locale = tok?.l ?? "es";
-  if (!tok || !isRedisConfigured()) return redirect(`/${locale}/alerta-precio?r=invalid`);
+  const t = req.nextUrl.searchParams.get("t") ?? "";
+  let locale = "es";
   try {
-    const redis = await getRedis();
-    if (tok.a === "c") await activate(redis, tok.e, tok.p, tok.l);
-    else await deactivate(redis, tok.e, tok.p);
-  } catch (err) {
-    console.error("price-alerts link", err);
-    return redirect(`/${locale}/alerta-precio?r=error`);
-  }
-  return redirect(`/${locale}/alerta-precio?r=${tok.a === "c" ? "confirmed" : "unsubscribed"}`);
+    if (isRedisConfigured()) locale = (await readToken(await getRedis(), t))?.l ?? "es";
+  } catch {}
+  return redirect(`/${locale}/alerta-precio?t=${encodeURIComponent(t)}`);
 }
 
 export async function POST(req: NextRequest) {
-  // Baja "one-click" desde el cliente de correo (List-Unsubscribe-Post).
+  // POST ?t=: el botón de /[locale]/alerta-precio (formulario HTML, se
+  // responde con redirección a la página de resultado) o la baja one-click
+  // del cliente de correo (cuerpo "List-Unsubscribe=One-Click", RFC 8058;
+  // se responde 200 sin redirección).
   const t = req.nextUrl.searchParams.get("t");
-  if (t) {
-    const tok = verifyToken(t);
-    if (!tok || tok.a !== "u") return NextResponse.json({ error: "invalid_token" }, { status: 400 });
-    if (!isRedisConfigured()) return NextResponse.json({ error: "unavailable" }, { status: 503 });
+  if (t !== null) {
+    const form = await req.formData().catch(() => null);
+    const oneClick = form?.get("List-Unsubscribe") === "One-Click";
+    let done: Awaited<ReturnType<typeof applyToken>> = null;
     try {
-      await deactivate(await getRedis(), tok.e, tok.p);
-    } catch {
-      return NextResponse.json({ error: "unavailable" }, { status: 503 });
+      if (isRedisConfigured()) {
+        const redis = await getRedis();
+        // One-click solo puede dar de baja, nunca confirmar un alta.
+        if (!oneClick || (await readToken(redis, t))?.a === "u") done = await applyToken(redis, t);
+      }
+    } catch (err) {
+      console.error("price-alerts token", err);
+      if (oneClick) return NextResponse.json({ error: "unavailable" }, { status: 503 });
+      return redirect(`/es/alerta-precio?r=error`);
     }
-    return NextResponse.json({ ok: true });
+    if (oneClick) return NextResponse.json(done ? { ok: true } : { error: "invalid_token" }, { status: done ? 200 : 400 });
+    if (!done) return redirect(`/es/alerta-precio?r=invalid`);
+    return redirect(`/${done.l}/alerta-precio?r=${done.a === "c" ? "confirmed" : "unsubscribed"}`);
   }
 
   if (Number(req.headers.get("content-length") ?? 0) > 2000) {
@@ -115,7 +126,7 @@ export async function POST(req: NextRequest) {
   if (sent === 1) await redis.expire(counter, 24 * 3600);
   if (sent > CONFIRMS_PER_DAY) return NextResponse.json({ error: "too_many" }, { status: 429 });
 
-  const link = confirmUrl(email, productId, locale);
+  const link = pageUrl(await createConfirmToken(redis, email, productId, locale), locale);
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.warn("[price-alerts] sin RESEND_API_KEY; enlace de confirmación:", link);
