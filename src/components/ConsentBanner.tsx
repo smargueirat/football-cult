@@ -29,7 +29,11 @@ export default function ConsentBanner() {
 
   // Arranque: defaults denegados siempre; si ya hay elección, se aplica.
   useEffect(() => {
-    markGoClicks(); // no es analítica ni cookie: solo marca el /go/ tocado
+    // Siempre, ANTES y FUERA de cualquier consentimiento: j=1 es un parámetro
+    // funcional propio (no cookie, no seguimiento) y el filtro de robots de
+    // /go/ lo necesita también de quien rechaza o no responde al banner.
+    // Este componente se monta en todas las páginas aunque el banner esté cerrado.
+    markGoClicks();
     setConsentDefaults();
     const saved = readConsent();
     if (saved) {
