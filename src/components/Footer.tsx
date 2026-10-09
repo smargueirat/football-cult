@@ -7,6 +7,7 @@ import { SEASON_UI } from "@/lib/seasonStrings";
 import { GIFTS_UI } from "@/lib/giftStrings";
 import { NEW_UI } from "@/lib/newStrings";
 import { GUIDE_UI } from "@/lib/guideUi";
+import { DEALS_NAV } from "@/lib/dealsNav";
 import { LEGAL } from "@/lib/legalStrings";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
 import { LEAGUES, leagueName } from "@/data/teamMeta";
@@ -119,6 +120,21 @@ export default function Footer() {
         </Link>
         <Link href="/ofertas" className="transition-colors hover:text-[#F3E9C9]">
           {SEASON_UI[locale].offersH1}
+        </Link>
+        <Link href="/ofertas-de-la-semana" className="transition-colors hover:text-[#F3E9C9]">
+          {DEALS_NAV[locale].week}
+        </Link>
+        <Link href="/bajadas-de-precio" className="transition-colors hover:text-[#F3E9C9]">
+          {DEALS_NAV[locale].drops}
+        </Link>
+        <Link href="/minimos-historicos" className="transition-colors hover:text-[#F3E9C9]">
+          {DEALS_NAV[locale].lows}
+        </Link>
+        <Link href="/guia/camisetas-mundial-2026" className="transition-colors hover:text-[#F3E9C9]">
+          {GUIDE_UI[locale].worldCup}
+        </Link>
+        <Link href="/guia/cuando-bajan-de-precio-las-camisetas" className="transition-colors hover:text-[#F3E9C9]">
+          {GUIDE_UI[locale].whenDrop}
         </Link>
         <Link href="/regalos" className="transition-colors hover:text-[#F3E9C9]">
           {GIFTS_UI[locale].h1}

@@ -14,5 +14,5 @@ export async function generateMetadata({
 }
 
 export default function SeleccionesPage() {
-  return <CategoryCatalogPage sectionIndex={0} category="national" />;
+  return <CategoryCatalogPage sectionIndex={0} category="national" guideSlug="camisetas-mundial-2026" />;
 }

@@ -8,6 +8,9 @@ import { cheapest, statsOf, teamName } from "@/lib/hubs";
 import { seasonFromSlug, seasonItems, seasonSlug, seasonTeams, seasonTypeItems, seasonTypes } from "@/lib/seasonHubs";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
+import { LinkChipRow } from "@/components/hubs/HubLinkParts";
+import { GUIDES } from "@/lib/guides";
+import { GUIDE_UI } from "@/lib/guideUi";
 
 export const revalidate = 86400;
 export function generateStaticParams() {
@@ -82,6 +85,14 @@ export default async function SeasonHub({ params }: P) {
           items={teams.slice(0, 80).map((t) => ({ href: `/${locale}/equipo/${t.team}#s-${seasonSlug(season)}`, name: teamName(t.team, locale), count: t.count }))}
         />
       </Section>
+      <LinkChipRow
+        title={GUIDE_UI[locale].index}
+        items={[
+          ...(season === "2026" ? [{ href: `/${locale}/guia/camisetas-mundial-2026`, label: GUIDE_UI[locale].worldCup }] : []),
+          { href: `/${locale}/guia/cuando-bajan-de-precio-las-camisetas`, label: GUIDE_UI[locale].whenDrop },
+          { href: `/${locale}/guia/talla-fan-vs-jugador`, label: GUIDES["talla-fan-vs-jugador"][locale].title },
+        ]}
+      />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import BackToCatalogLink from "./BackToCatalogLink";
 import SearchExplorer from "./SearchExplorer";
 import type { AgeGroup, CategoryKey, TypeKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { GUIDE_UI } from "@/lib/guideUi";
 
 interface Props {
   // Índice en t.heroSlides (mismo orden que src/lib/sections.ts) -- el
@@ -17,7 +18,7 @@ interface Props {
    *  ya existe en los cinco idiomas y al que solo se llegaba por el pie.
    *  Solo el slug: el texto del enlace vive en translations, porque es
    *  este componente el que conoce el idioma. */
-  guideSlug?: "que-es-una-camiseta-retro";
+  guideSlug?: "que-es-una-camiseta-retro" | "camisetas-mundial-2026";
 }
 
 // Página delgada para cada sección de camisetas (clubes, selecciones,
@@ -44,7 +45,7 @@ export default function CategoryCatalogPage({ sectionIndex, category, type, ageG
             className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 transition-colors hover:text-[#8a6a1f]"
             href={`/${locale}/guia/${guideSlug}`}
           >
-            {t.retroGuideLink} →
+            {guideSlug === "que-es-una-camiseta-retro" ? t.retroGuideLink : GUIDE_UI[locale].worldCup} →
           </a>
         </p>
       )}

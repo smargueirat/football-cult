@@ -46,9 +46,11 @@ const SITE_META: Record<Locale, { title: string; description: string }> = {
       "Busca camisetas de fútbol de tu selección, club o liga favorita y compara precios entre distintas tiendas antes de comprar.",
   },
   en: {
-    title: "Football Cult — Football Shirt Price Comparison",
+    // "football price comparison" ya sale en página 1 (posición 7,6 en Search
+    // Console, sep-oct 2026): el título lleva la consulta tal cual.
+    title: "Football Price Comparison: Shirts, Boots & Tickets | Football Cult",
     description:
-      "Search for football shirts from your national team, club, or favorite league and compare prices between different stores before buying.",
+      "Football price comparison: shirts, boots, goalkeeper gloves, balls and match tickets across stores, with delivery to your country included. Prices checked every night.",
   },
   pt: {
     title: "Football Cult — Comparador de Preços de Camisas de Futebol",

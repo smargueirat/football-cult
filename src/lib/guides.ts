@@ -19,8 +19,21 @@ export const GUIDE_SLUGS = [
   "talla-fan-vs-jugador",
   "tapones-botas-segun-terreno",
   "que-es-una-camiseta-retro",
+  // Con tablas del catálogo de hoy (components/GuideData.tsx), 2026-10-09.
+  "camisetas-mundial-2026",
+  "cuando-bajan-de-precio-las-camisetas",
 ] as const;
 export type GuideSlug = (typeof GUIDE_SLUGS)[number];
+
+/** Fecha de publicación (primer commit de cada guía), para el Article. */
+export const GUIDE_PUBLISHED: Record<GuideSlug, string> = {
+  "camiseta-original": "2026-09-21",
+  "talla-fan-vs-jugador": "2026-09-21",
+  "tapones-botas-segun-terreno": "2026-09-23",
+  "que-es-una-camiseta-retro": "2026-09-23",
+  "camisetas-mundial-2026": "2026-10-09",
+  "cuando-bajan-de-precio-las-camisetas": "2026-10-09",
+};
 
 export const GUIDES: Record<GuideSlug, Record<HubLocale, Guide>> = {
   "camiseta-original": {
@@ -283,6 +296,113 @@ export const GUIDES: Record<GuideSlug, Record<HubLocale, Guide>> = {
         { h: "Perché una retro a volte costa di più", p: ["Lo stock reale di maglie d'epoca si riduce nel tempo -- meno pezzi autentici di una vecchia stagione restano in circolazione, più sale il prezzo nell'usato e nei negozi specializzati. Una riedizione moderna, invece, continua a essere prodotta e di solito costa meno."] },
         { h: "Versione tifoso vs versione giocatore anche nelle retro", p: ["La distinzione tra versione tifoso (fan) e versione giocatore vale anche per le maglie retro: le versioni giocatore d'epoca sono di solito più difficili da trovare e più costose delle versioni tifoso della stessa stagione. Guarda la nostra guida taglie tifoso vs giocatore se non sai quale scegliere."] },
         { h: "Come lo mostriamo nel comparatore", p: ["Quando una maglia rispetta il criterio (stagione 2006/07 o precedente), la segniamo con l'etichetta \"Retro\" nella scheda e compare nella sezione retro del catalogo. Se non vedi quell'etichetta su un design classico rilanciato, è perché tecnicamente è una riedizione di una stagione recente, non il pezzo retro originale."] },
+      ],
+    },
+  },
+  // Las cifras de estas dos guías NO van en el texto: las calcula
+  // GuideData.tsx con el catálogo de cada día. El texto solo explica cómo
+  // leerlas y qué no podemos afirmar todavía.
+  "camisetas-mundial-2026": {
+    es: {
+      title: "Camisetas del Mundial 2026: dónde comprarlas más baratas",
+      description: "El precio más bajo de hoy de cada camiseta de selección del Mundial 2026 (primera, segunda y tercera equipación), en qué tienda, en cuántas tiendas está y qué tallas quedan, con envío a España.",
+      intro: "Las camisetas de selección de 2026 se siguen vendiendo en tiendas oficiales y en tiendas de deporte, y el mismo modelo no cuesta lo mismo en todas. Esta guía reúne el precio más bajo de hoy de cada una, calculado con el catálogo del comparador.",
+      sections: [
+        { h: "Cómo leer la tabla", p: ["El precio es el total más barato con el envío a tu país sumado, entre tiendas oficiales de la marca y tiendas de deporte. No entran eBay, Amazon ni tiendas de réplicas: ahí el precio depende de cada vendedor o la camiseta no es la oficial.", "Las tallas son las que tiene en stock la tienda más barata en la última revisión; pueden cambiar de un día para otro."] },
+        { h: "Aficionado o jugador", p: ["La tabla compara la versión aficionado, la más vendida. Cuando alguna tienda vende también la versión jugador, su precio aparece aparte: es otra prenda, con otro corte y otro precio, y nunca la mezclamos con la de aficionado. Si dudas con la talla, mira la guía de tallas aficionado vs jugador."] },
+        { h: "Antes de comprar", p: ["Comprueba en la ficha el código del fabricante, que identifica el modelo exacto, y las condiciones de devolución de la tienda. Si quieres esperar a que baje, activa una alerta de precio en la ficha de la camiseta."] },
+      ],
+    },
+    en: {
+      title: "2026 World Cup shirts: where to buy them cheapest",
+      description: "Today's lowest price for every 2026 World Cup national team shirt (home, away and third), at which store, how many stores stock it and which sizes are left.",
+      intro: "National team shirts from 2026 are still sold by official brand stores and sports retailers, and the same model does not cost the same everywhere. This guide gathers today's lowest price for each one, calculated from the comparison catalogue.",
+      sections: [
+        { h: "How to read the table", p: ["The price is the cheapest total with delivery to your country added, across official brand stores and sports retailers. eBay, Amazon and replica stores are left out: there the price depends on each seller or the shirt is not the official one.", "Sizes are the ones in stock at the cheapest store at the last check; they can change from one day to the next."] },
+        { h: "Fan or player version", p: ["The table compares the fan version, the best-selling one. When a store also sells the player version, its price is shown separately: it is a different garment with a different cut and price, and we never mix it with the fan version. If you are unsure about sizing, see the fan vs player size guide."] },
+        { h: "Before you buy", p: ["Check the manufacturer code on the product page, which identifies the exact model, and the store's returns policy. If you would rather wait for a drop, set a price alert on the shirt's page."] },
+      ],
+    },
+    pt: {
+      title: "Camisas do Mundial 2026: onde comprar mais barato",
+      description: "O preço mais baixo de hoje de cada camisa de seleção do Mundial 2026 (principal, alternativa e terceira), em que loja, em quantas lojas está e que tamanhos restam.",
+      intro: "As camisas de seleção de 2026 continuam à venda em lojas oficiais e lojas de desporto, e o mesmo modelo não custa o mesmo em todas. Este guia reúne o preço mais baixo de hoje de cada uma, calculado com o catálogo do comparador.",
+      sections: [
+        { h: "Como ler a tabela", p: ["O preço é o total mais barato com o envio para o teu país incluído, entre lojas oficiais da marca e lojas de desporto. Ficam de fora o eBay, a Amazon e as lojas de réplicas: aí o preço depende de cada vendedor ou a camisa não é a oficial.", "Os tamanhos são os que a loja mais barata tem em stock na última verificação; podem mudar de um dia para o outro."] },
+        { h: "Torcedor ou jogador", p: ["A tabela compara a versão torcedor, a mais vendida. Quando alguma loja vende também a versão jogador, o preço aparece à parte: é outra peça, com outro corte e outro preço, e nunca a misturamos com a de torcedor. Se tiveres dúvidas com o tamanho, vê o guia de tamanhos torcedor vs jogador."] },
+        { h: "Antes de comprar", p: ["Confirma na ficha o código do fabricante, que identifica o modelo exato, e as condições de devolução da loja. Se preferires esperar por uma baixa, ativa um alerta de preço na ficha da camisa."] },
+      ],
+    },
+    fr: {
+      title: "Maillots de la Coupe du monde 2026 : où les acheter moins cher",
+      description: "Le prix le plus bas du jour pour chaque maillot de sélection de la Coupe du monde 2026 (domicile, extérieur et third), dans quelle boutique, dans combien de boutiques et quelles tailles restent.",
+      intro: "Les maillots de sélection 2026 sont toujours vendus par les boutiques officielles et les enseignes de sport, et le même modèle ne coûte pas le même prix partout. Ce guide réunit le prix le plus bas du jour pour chacun, calculé à partir du catalogue du comparateur.",
+      sections: [
+        { h: "Comment lire le tableau", p: ["Le prix est le total le moins cher, livraison vers votre pays comprise, entre les boutiques officielles des marques et les enseignes de sport. eBay, Amazon et les boutiques de répliques sont exclus : le prix y dépend de chaque vendeur ou le maillot n'est pas l'officiel.", "Les tailles sont celles en stock chez la boutique la moins chère au dernier contrôle ; elles peuvent changer d'un jour à l'autre."] },
+        { h: "Supporter ou joueur", p: ["Le tableau compare la version supporter, la plus vendue. Quand une boutique vend aussi la version joueur, son prix est affiché à part : c'est un autre vêtement, avec une autre coupe et un autre prix, et nous ne le mélangeons jamais avec la version supporter. En cas de doute sur la taille, consultez le guide des tailles supporter vs joueur."] },
+        { h: "Avant d'acheter", p: ["Vérifiez sur la fiche la référence fabricant, qui identifie le modèle exact, et les conditions de retour de la boutique. Si vous préférez attendre une baisse, créez une alerte de prix sur la fiche du maillot."] },
+      ],
+    },
+    it: {
+      title: "Maglie dei Mondiali 2026: dove comprarle al prezzo più basso",
+      description: "Il prezzo più basso di oggi per ogni maglia di nazionale dei Mondiali 2026 (home, away e third), in quale negozio, in quanti negozi si trova e quali taglie restano.",
+      intro: "Le maglie delle nazionali 2026 sono ancora in vendita negli store ufficiali e nei negozi sportivi, e lo stesso modello non costa uguale ovunque. Questa guida raccoglie il prezzo più basso di oggi di ciascuna, calcolato con il catalogo del comparatore.",
+      sections: [
+        { h: "Come leggere la tabella", p: ["Il prezzo è il totale più basso con la spedizione nel tuo paese inclusa, tra store ufficiali del marchio e negozi sportivi. Restano fuori eBay, Amazon e i negozi di repliche: lì il prezzo dipende da ogni venditore o la maglia non è quella ufficiale.", "Le taglie sono quelle disponibili nel negozio più economico all'ultimo controllo; possono cambiare da un giorno all'altro."] },
+        { h: "Tifoso o giocatore", p: ["La tabella confronta la versione tifoso, la più venduta. Quando un negozio vende anche la versione giocatore, il suo prezzo compare a parte: è un altro capo, con un altro taglio e un altro prezzo, e non lo mescoliamo mai con quella da tifoso. Se hai dubbi sulla taglia, guarda la guida taglie tifoso vs giocatore."] },
+        { h: "Prima di comprare", p: ["Controlla nella scheda il codice del produttore, che identifica il modello esatto, e le condizioni di reso del negozio. Se preferisci aspettare un ribasso, attiva un avviso di prezzo nella scheda della maglia."] },
+      ],
+    },
+  },
+  "cuando-bajan-de-precio-las-camisetas": {
+    es: {
+      title: "Cuándo bajan de precio las camisetas de fútbol",
+      description: "Lo que dice nuestro historial de precios: cuántas camisetas han bajado desde que las seguimos, cuánto suelen bajar, qué tiendas rebajan más a menudo y cuánto menos cuesta la temporada anterior.",
+      intro: "Cada noche guardamos el precio de cada oferta del comparador. Con ese archivo, y no con los precios tachados de las tiendas, esta guía responde con datos a cuándo merece la pena esperar para comprar una camiseta.",
+      sections: [
+        { h: "Qué medimos", p: ["Solo tiendas oficiales y tiendas de deporte, sin eBay, Amazon ni réplicas. Una bajada es un precio más bajo que el anterior de la misma oferta. No contamos los días en que una parte grande de una tienda cambia de precio a la vez, porque suele ser un cambio de catálogo y no una rebaja."] },
+        { h: "Lo que todavía no podemos decir", p: ["Nuestro archivo es reciente: aún no podemos decir en qué mes del año baja más una camiseta ni cuánto baja de media desde su lanzamiento. Lo publicaremos aquí cuando el historial cubra una temporada completa. Hasta entonces, las cifras de abajo son las de los días registrados."] },
+        { h: "Cómo aprovecharlo", p: ["Si el modelo no te corre prisa, compara con la temporada anterior del mismo equipo: abajo ves cuánto cuesta hoy cada una. Para un modelo concreto, activa una alerta de precio en su ficha o consulta las bajadas verificadas y los mínimos históricos, que se actualizan cada día."] },
+      ],
+    },
+    en: {
+      title: "When do football shirts drop in price?",
+      description: "What our price history shows: how many shirts have dropped since we started tracking them, how much they usually drop, which stores cut prices most often and how much less last season's shirt costs.",
+      intro: "Every night we save the price of every offer in the comparison. Using that archive, not the stores' crossed-out prices, this guide answers with data when it is worth waiting to buy a shirt.",
+      sections: [
+        { h: "What we measure", p: ["Only official brand stores and sports retailers, no eBay, Amazon or replicas. A drop is a lower price than the previous one for the same offer. We ignore days when a large share of a store changes price at once, because that is usually a catalogue change, not a sale."] },
+        { h: "What we cannot say yet", p: ["Our archive is recent: we cannot yet say in which month a shirt drops the most, or how much it drops on average after launch. We will publish that here once the history covers a full season. Until then, the figures below are for the days recorded."] },
+        { h: "How to use it", p: ["If you are in no hurry, compare with last season's shirt from the same team: below you can see what each costs today. For a specific model, set a price alert on its page or check the verified price drops and lowest recorded prices, updated daily."] },
+      ],
+    },
+    pt: {
+      title: "Quando baixam de preço as camisas de futebol",
+      description: "O que mostra o nosso histórico de preços: quantas camisas baixaram desde que as seguimos, quanto costumam baixar, que lojas fazem mais promoções e quanto menos custa a temporada anterior.",
+      intro: "Todas as noites guardamos o preço de cada oferta do comparador. Com esse arquivo, e não com os preços riscados das lojas, este guia responde com dados a quando vale a pena esperar para comprar uma camisa.",
+      sections: [
+        { h: "O que medimos", p: ["Só lojas oficiais e lojas de desporto, sem eBay, Amazon nem réplicas. Uma baixa é um preço mais baixo do que o anterior da mesma oferta. Não contamos os dias em que uma grande parte de uma loja muda de preço ao mesmo tempo, porque costuma ser uma mudança de catálogo e não uma promoção."] },
+        { h: "O que ainda não podemos dizer", p: ["O nosso arquivo é recente: ainda não podemos dizer em que mês do ano uma camisa baixa mais nem quanto baixa em média desde o lançamento. Publicaremos isso aqui quando o histórico cobrir uma temporada completa. Até lá, os números abaixo são os dos dias registados."] },
+        { h: "Como aproveitar", p: ["Se não tens pressa, compara com a temporada anterior da mesma equipa: abaixo vês quanto custa hoje cada uma. Para um modelo concreto, ativa um alerta de preço na ficha ou consulta as baixas verificadas e os mínimos históricos, atualizados todos os dias."] },
+      ],
+    },
+    fr: {
+      title: "Quand les maillots de foot baissent-ils de prix ?",
+      description: "Ce que montre notre historique de prix : combien de maillots ont baissé depuis que nous les suivons, de combien ils baissent en général, quelles boutiques baissent le plus souvent et combien coûte en moins la saison précédente.",
+      intro: "Chaque nuit, nous enregistrons le prix de chaque offre du comparateur. À partir de cette archive, et non des prix barrés des boutiques, ce guide répond avec des données à la question : quand vaut-il la peine d'attendre pour acheter un maillot ?",
+      sections: [
+        { h: "Ce que nous mesurons", p: ["Uniquement les boutiques officielles et les enseignes de sport, sans eBay, Amazon ni répliques. Une baisse est un prix inférieur au précédent pour la même offre. Nous ignorons les jours où une grande partie d'une boutique change de prix d'un coup, car c'est en général un changement de catalogue et non une promotion."] },
+        { h: "Ce que nous ne pouvons pas encore dire", p: ["Notre archive est récente : nous ne pouvons pas encore dire à quel mois de l'année un maillot baisse le plus, ni de combien il baisse en moyenne après sa sortie. Nous le publierons ici quand l'historique couvrira une saison complète. D'ici là, les chiffres ci-dessous portent sur les jours enregistrés."] },
+        { h: "Comment en profiter", p: ["Si vous n'êtes pas pressé, comparez avec le maillot de la saison précédente de la même équipe : vous voyez ci-dessous combien coûte chacun aujourd'hui. Pour un modèle précis, créez une alerte de prix sur sa fiche ou consultez les baisses vérifiées et les prix les plus bas relevés, mis à jour chaque jour."] },
+      ],
+    },
+    it: {
+      title: "Quando scendono di prezzo le maglie da calcio",
+      description: "Cosa mostra il nostro storico dei prezzi: quante maglie sono scese da quando le seguiamo, di quanto scendono di solito, quali negozi abbassano più spesso e quanto costa in meno la stagione precedente.",
+      intro: "Ogni notte salviamo il prezzo di ogni offerta del comparatore. Con questo archivio, e non con i prezzi barrati dei negozi, la guida risponde con i dati a quando conviene aspettare per comprare una maglia.",
+      sections: [
+        { h: "Cosa misuriamo", p: ["Solo store ufficiali e negozi sportivi, senza eBay, Amazon o repliche. Un ribasso è un prezzo più basso del precedente per la stessa offerta. Non contiamo i giorni in cui una parte grande di un negozio cambia prezzo insieme, perché di solito è un cambio di catalogo e non uno sconto."] },
+        { h: "Cosa non possiamo ancora dire", p: ["Il nostro archivio è recente: non possiamo ancora dire in quale mese dell'anno una maglia scende di più né di quanto scende in media dopo l'uscita. Lo pubblicheremo qui quando lo storico coprirà una stagione intera. Fino ad allora, i numeri qui sotto sono quelli dei giorni registrati."] },
+        { h: "Come approfittarne", p: ["Se non hai fretta, confronta con la maglia della stagione precedente della stessa squadra: qui sotto vedi quanto costa oggi ciascuna. Per un modello preciso, attiva un avviso di prezzo nella sua scheda o guarda i ribassi verificati e i minimi storici, aggiornati ogni giorno."] },
       ],
     },
   },

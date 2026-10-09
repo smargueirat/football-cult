@@ -70,7 +70,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colGap: "Diferencia",
     storesTitle: "Qué tienda gana más veces",
     storesIntro:
-      "De todas las camisetas que vende cada tienda y que además están en otra, cuántas veces es la más barata. Solo tiendas presentes en 10 o más comparaciones.",
+      "De todas las camisetas que vende cada tienda y que además están en otra, cuántas veces es la más barata. Las espejo de una misma tienda en otro país (FootStore ES y FR, adidas ES y PT) cuentan como una. Con pocas comparaciones, el porcentaje dice poco: fíjate en la columna de comparaciones.",
     colStore: "Tienda",
     colWins: "Veces más barata",
     colWinPct: "% de victorias",
@@ -122,7 +122,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colGap: "Gap",
     storesTitle: "Which store wins most often",
     storesIntro:
-      "Of all the shirts each store sells that are also sold elsewhere, how often it comes out cheapest. Only stores appearing in 10 or more comparisons.",
+      "Of all the shirts each store sells that are also sold elsewhere, how often it comes out cheapest. Regional mirrors of the same store (FootStore ES and FR, adidas ES and PT) count as one. With few comparisons the percentage says little: check the comparisons column.",
     colStore: "Store",
     colWins: "Times cheapest",
     colWinPct: "Win rate",
@@ -174,7 +174,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colGap: "Diferença",
     storesTitle: "Que loja ganha mais vezes",
     storesIntro:
-      "De todas as camisas que cada loja vende e que também estão noutra, quantas vezes é a mais barata. Só lojas presentes em 10 ou mais comparações.",
+      "De todas as camisas que cada loja vende e que também estão noutra, quantas vezes é a mais barata. As versões regionais da mesma loja (FootStore ES e FR, adidas ES e PT) contam como uma. Com poucas comparações a percentagem diz pouco: vê a coluna de comparações.",
     colStore: "Loja",
     colWins: "Vezes mais barata",
     colWinPct: "% de vitórias",
@@ -226,7 +226,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colGap: "Écart",
     storesTitle: "Quelle boutique gagne le plus souvent",
     storesIntro:
-      "Sur tous les maillots que chaque boutique vend et qui sont aussi ailleurs, combien de fois elle est la moins chère. Seulement les boutiques présentes dans 10 comparaisons ou plus.",
+      "Sur tous les maillots que chaque boutique vend et qui sont aussi ailleurs, combien de fois elle est la moins chère. Les déclinaisons régionales d'une même boutique (FootStore ES et FR, adidas ES et PT) comptent pour une. Avec peu de comparaisons, le pourcentage ne dit pas grand-chose : regardez la colonne des comparaisons.",
     colStore: "Boutique",
     colWins: "Fois la moins chère",
     colWinPct: "% de victoires",
@@ -278,7 +278,7 @@ export const STUDY: Record<HubLocale, StudyCopy> = {
     colGap: "Differenza",
     storesTitle: "Quale negozio vince più spesso",
     storesIntro:
-      "Di tutte le maglie che ogni negozio vende e che sono anche altrove, quante volte è il più economico. Solo negozi presenti in 10 o più confronti.",
+      "Di tutte le maglie che ogni negozio vende e che sono anche altrove, quante volte è il più economico. Le versioni regionali dello stesso negozio (FootStore ES e FR, adidas ES e PT) contano come una. Con pochi confronti la percentuale dice poco: guarda la colonna dei confronti.",
     colStore: "Negozio",
     colWins: "Volte più economico",
     colWinPct: "% di vittorie",

@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { GUIDES, GUIDE_SLUGS, GUIDE_UI, type GuideSlug } from "@/lib/guides";
+import { GUIDES, GUIDE_PUBLISHED, GUIDE_SLUGS, GUIDE_UI, type GuideSlug } from "@/lib/guides";
+import GuideData, { hasGuideData } from "@/components/GuideData";
+import { archiveDates } from "@/lib/dealsData";
 import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { Crumbs, HubHeader, JsonLd } from "@/components/hubs/HubParts";
@@ -39,7 +41,19 @@ export default async function GuidePage({ params }: P) {
       <JsonLd
         data={[
           breadcrumbLd(locale, [{ name: HUB[locale].home, path: "" }, { name: ui.index, path: "/guia" }, { name: g.title }], `/guia/${slug}`),
-          { "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.description, inLanguage: locale, mainEntityOfPage: `${SITE_URL}/${locale}/guia/${slug}`, publisher: { "@type": "Organization", name: "Football Cult" } },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: g.title,
+            description: g.description,
+            inLanguage: locale,
+            mainEntityOfPage: `${SITE_URL}/${locale}/guia/${slug}`,
+            datePublished: GUIDE_PUBLISHED[slug],
+            // Las guías con datos cambian con cada corrida del scan.
+            dateModified: hasGuideData(slug) ? archiveDates().last || GUIDE_PUBLISHED[slug] : GUIDE_PUBLISHED[slug],
+            author: { "@type": "Organization", name: "Football Cult", url: SITE_URL },
+            publisher: { "@type": "Organization", name: "Football Cult", url: SITE_URL, logo: { "@type": "ImageObject", url: `${SITE_URL}/logo-badge.png` } },
+          },
         ]}
       />
       <Crumbs locale={locale} trail={[{ label: ui.index, href: `/${locale}/guia` }, { label: g.title }]} />
@@ -55,6 +69,7 @@ export default async function GuidePage({ params }: P) {
             ))}
           </section>
         ))}
+        <GuideData slug={slug} locale={locale} />
       </article>
       <aside className="mt-10 rounded-2xl border border-[#C9A24B]/35 bg-[#fffdf8] p-5">
         <h2 className="font-vintage mb-3 text-lg text-[#1B3B2B]">{ui.related}</h2>

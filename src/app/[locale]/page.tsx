@@ -11,6 +11,11 @@ import { SITE_URL } from "@/lib/hubPages";
 import { heroSuggestions } from "@/lib/heroSuggestions";
 import { groupThousands, trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
+import { siteFaq } from "@/lib/siteFacts";
+import { DEALS_NAV } from "@/lib/dealsNav";
+import { GUIDE_UI } from "@/lib/guideUi";
+import { QaList } from "@/components/hubs/HubParts";
+import { LinkChipRow } from "@/components/hubs/HubLinkParts";
 import {
   SEASONS,
   bestOfferForCountry,
@@ -62,6 +67,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const suggestions = heroSuggestions(locale);
   const trust = trustStats();
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
+  const faq = siteFaq(locale);
 
   return (
     <>
@@ -249,6 +255,26 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <p className="text-sm text-[#B8AF98]">{step.text}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Qué es y cómo elige precios, con cifras de hoy: la respuesta corta
+            que un buscador (o ChatGPT, que ya nos trae más visitas que Bing)
+            puede citar, y enlaces a las páginas de bajadas (2026-10-09). */}
+        <section className="mx-auto w-full max-w-4xl px-4 py-12 sm:px-8">
+          <h2 className="font-vintage mb-5 text-2xl text-[#1B3B2B]">{faq.h2}</h2>
+          <QaList items={faq.qa} />
+          <div className="mt-8">
+            <LinkChipRow
+              title={GUIDE_UI[locale].related}
+              items={[
+                { href: `/${locale}/ofertas-de-la-semana`, label: DEALS_NAV[locale].week },
+                { href: `/${locale}/bajadas-de-precio`, label: DEALS_NAV[locale].drops },
+                { href: `/${locale}/minimos-historicos`, label: DEALS_NAV[locale].lows },
+                { href: `/${locale}/guia`, label: GUIDE_UI[locale].index },
+                { href: `/${locale}/estudios/precios-camisetas`, label: t.footer.priceStudy },
+              ]}
+            />
           </div>
         </section>
       </div>

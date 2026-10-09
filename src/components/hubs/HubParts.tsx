@@ -162,6 +162,21 @@ export function LinkChips({ items, locale, countLabel }: { items: TeamLink[]; lo
   );
 }
 
+/** Preguntas y respuestas visibles (sin FAQPage: Google ya no lo muestra a
+ *  sitios como este; lo que vale es el texto citable). */
+export function QaList({ items }: { items: { q: string; a: string }[] }) {
+  return (
+    <dl className="space-y-4">
+      {items.map((x) => (
+        <div key={x.q}>
+          <dt className="font-semibold text-[#1B3B2B]">{x.q}</dt>
+          <dd className="mt-1 text-sm leading-relaxed text-[#3a3a36] sm:text-base">{x.a}</dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
 export function JsonLd({ data }: { data: unknown }) {
   return (
     <script
