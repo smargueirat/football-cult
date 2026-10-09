@@ -206,6 +206,7 @@
 "asse-retro-200910-home",
 "asse-retro-201516-away",
 "asse-retro-202324-home",
+"asse-retro-202425-home",
 "astonvilla-retro-1982-home",
 "astonvilla-retro-198485-home",
 "astonvilla-retro-1990-away",
@@ -758,6 +759,7 @@
 "china-retro-1986-away",
 "china-retro-200002-home",
 "china-retro-2016-away",
+"china-retro-2018-home",
 "china-retro-202223-away",
 "china-retro-202223-home",
 "china-retro-2023-away",
@@ -1455,6 +1457,7 @@
 "genoa-retro-199900-away",
 "genoa-retro-199900-home",
 "genoa-retro-200405-away",
+"genoa-retro-2019-home",
 "genoa-retro-202021-third",
 "genoa-retro-202425-home",
 "georgia-retro-202324-third",
@@ -1476,6 +1479,7 @@
 "ghana-retro-202223-away",
 "ghana-retro-202223-home",
 "ghana-retro-2024-home",
+"ghana-retro-202425-away",
 "ghana-retro-202425-home",
 "gimnasiajujuy-retro-2021-home",
 "girona-retro-2018-away",
@@ -1505,6 +1509,7 @@
 "grecia-retro-2004-home",
 "grecia-retro-200608-away",
 "grecia-retro-2008-home",
+"grecia-retro-200809-away",
 "grecia-retro-2010-home",
 "grecia-retro-201012-away",
 "grecia-retro-2012-away",
@@ -2568,6 +2573,7 @@
 "nottinghamforest-retro-2023-third",
 "nottinghamforest-retro-202324-third",
 "nuevazelanda-retro-2003-home",
+"nuevazelanda-retro-2014-away",
 "nuevazelanda-retro-2018-home",
 "nuevazelanda-retro-2022-home",
 "nuevazelanda-retro-202223-home",
@@ -18544,6 +18550,43 @@
 "XL"
 ],
 "shipping": 4.65
+},
+"china-retro-2018-home": {
+"title": "NEW Shirt BEIJING BG (S) KELME 2018 Trikot home CHINA Beijing Sport University",
+"price": 20.39,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/267226990279?_skw=China+2018+home+shirt&hash=item3e37f846c7%3Ag%3A6FUAAOSw13lmLW8K&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|267226990279|0",
+"image": "https://i.ebayimg.com/images/g/6FUAAOSw13lmLW8K/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 7.2
+},
+"ghana-retro-202425-away": {
+"title": "Puma Ghana Away Jersey 2024/25 | Official GFA Black Stars Football Shirt | Kente",
+"price": 29.82,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/127944926579?_skw=Ghana+2024+away+shirt&hash=item1dca1ca573%3Ag%3AM98AAeSwE2hqPt9U&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|127944926579|429130417335",
+"image": "https://i.ebayimg.com/images/g/M98AAeSwE2hqPt9U/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 2.94
+},
+"grecia-retro-200809-away": {
+"title": "Greece National Football Shirt Away Kit 2008/2009 Adidas Jersey Soccer L Hellas",
+"price": 59.98,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227287191461?_skw=Greece+2008+away+shirt&hash=item34eb5f4fa5%3Ag%3AhxoAAeSwQKxp0UBp&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227287191461|0",
+"image": "https://i.ebayimg.com/images/g/hxoAAeSwQKxp0UBp/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
 }
 }
 }

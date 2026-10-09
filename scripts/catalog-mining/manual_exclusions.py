@@ -12,6 +12,11 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-09, eBay current ---
+    "/itm/800400177797",  # vascodagama|training: sleeveless training VEST, not a shirt
+    "/itm/137617437632",  # egipto|away: "Salah" print, big #10 on the front
+    "/itm/267226990279",  # eBay GB china-retro-2018-home: ELME Beijing Sport University team shirt, not the national kit
+    "/itm/198447450653",  # ghana|away: bagged custom/bootleg set with a seller sticker, no brand mark
     # 2026-10-04, Pro:Direct UK: mined as `escocia|home` but this is
     # SCOTLAND RUGBY, not football -- Macron (SRU supplier), "Arnold Clark"
     # (SRU sponsor), the thistle crest and stag-antler sleeves. The football
