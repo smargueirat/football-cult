@@ -21,7 +21,9 @@ keys=$( (grep -rhoE "process\.env\.[A-Z_0-9]+" src | sed 's/process\.env\.//'; \
          printf '%s\n' AUTH_SECRET AUTH_GOOGLE_ID AUTH_GOOGLE_SECRET AUTH_TRUST_HOST) | sort -u | paste -sd'|')
 grep -E "^($keys)=" /home/piojo/football-cult/.env.local > .env.local
 npm ci --no-audit --no-fund --silent
-NODE_OPTIONS=--max-old-space-size=8192 npx next build > build.log 2>&1 || { tail -30 build.log; exit 1; }
+# choom 1000: si falta memoria, el kernel mata este build y no fc-web (el
+# 2026-10-09 mató fc-web 4 veces durante un deploy y el respaldo de Oracle saltó).
+choom -n 1000 -- env NODE_OPTIONS=--max-old-space-size=8192 npx next build > build.log 2>&1 || { tail -30 build.log; exit 1; }
 
 cd "$HOME"
 ln -sfn "$NEW" fc-prod.tmp && mv -T fc-prod.tmp fc-prod
