@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { hubFrom } from "@/lib/seoMeta";
 import type { Metadata } from "next";
 import { HUB } from "@/lib/hubStrings";
 import { SEASON_UI, typePlural } from "@/lib/seasonStrings";
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   if (!season) return {};
   const items = seasonItems(season);
   const h1 = SEASON_UI[locale].seasonH1(season);
-  return hubMetadata(locale, `/temporada/${slug}`, h1, SEASON_UI[locale].meta({ h1, n: items.length, price: money(statsOf(items).minOffer) }));
+  return hubMetadata(locale, `/temporada/${slug}`, h1, SEASON_UI[locale].meta({ h1, n: items.length, price: hubFrom(items, locale) }));
 }
 
 export default async function SeasonHub({ params }: P) {

@@ -16,7 +16,7 @@ export interface Guide {
 
 export const GUIDE_SLUGS = [
   "camiseta-original",
-  "talle-fan-vs-jugador",
+  "talla-fan-vs-jugador",
   "tapones-botas-segun-terreno",
   "que-es-una-camiseta-retro",
 ] as const;
@@ -90,7 +90,7 @@ export const GUIDES: Record<GuideSlug, Record<HubLocale, Guide>> = {
       ],
     },
   },
-  "talle-fan-vs-jugador": {
+  "talla-fan-vs-jugador": {
     es: {
       title: "Qué talla elegir: versión aficionado vs versión jugador",
       description: "Diferencias entre la versión aficionado (réplica) y la de jugador (authentic), cómo medirte y cómo elegir la talla para que la camiseta te quede bien.",

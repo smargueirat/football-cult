@@ -2,34 +2,19 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ticketProducts } from "@/data/tickets";
 import { ticketSeller, ticketOfferTotalInEUR } from "@/lib/offerMoney";
-import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { SITE_URL, ldImage, ogImages, ticketDescription, ticketTitle } from "@/lib/seoMeta";
+import { ticketRelated, ticketTrail } from "@/lib/detailLinks";
+import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
 import TicketDetailPageClient from "./TicketDetailPageClient";
 
-const SITE_URL = "https://football-cult.com";
-
-const META_TEMPLATE: Record<Locale, { title: string; description: string }> = {
-  es: {
-    title: "{event} — Entradas | Football Cult",
-    description: "Entradas para {event}: precio, fecha, estadio y enlace directo a la tienda.",
-  },
-  en: {
-    title: "{event} — Tickets | Football Cult",
-    description: "Tickets for {event}: price, date, venue and a direct link to the store.",
-  },
-  pt: {
-    title: "{event} — Ingressos | Football Cult",
-    description: "Ingressos para {event}: preço, data, estádio e link direto para a loja.",
-  },
-  fr: {
-    title: "{event} — Billets | Football Cult",
-    description: "Billets pour {event} : prix, date, stade et lien direct vers la boutique.",
-  },
-  it: {
-    title: "{event} — Biglietti | Football Cult",
-    description: "Biglietti per {event}: prezzo, data, stadio e link diretto al negozio.",
-  },
-};
+/** Una oferta por vendedor distinto (la más barata): UK y US son la misma
+ *  tienda y no deben figurar como dos ofertas independientes. */
+function offersBySeller(ticket: NonNullable<ReturnType<typeof findTicket>>) {
+  return [...ticket.offers]
+    .sort((a, b) => ticketOfferTotalInEUR(a) - ticketOfferTotalInEUR(b))
+    .filter((o, i, arr) => arr.findIndex((x) => ticketSeller(x.store) === ticketSeller(o.store)) === i);
+}
 
 function findTicket(id: string) {
   return ticketProducts.find((p) => p.id === id);
@@ -56,17 +41,18 @@ export async function generateMetadata({
   const ticket = findTicket(id);
   if (!ticket) return {};
 
-  const tmpl = META_TEMPLATE[locale];
-  const title = tmpl.title.replace("{event}", ticket.event);
-  const description = tmpl.description.replace("{event}", ticket.event);
-  const image = ticket.imageUrl;
+  const title = ticketTitle(ticket, locale);
+  const sellers = offersBySeller(ticket);
+  const description = ticketDescription(ticket, locale, sellers.length, sellers[0]);
+  const images = ogImages(ticket.imageUrl);
+  const url = `${SITE_URL}/${locale}/tickets/${ticket.id}`;
 
   return {
     title,
     description,
     alternates: buildAlternates(locale, `/tickets/${ticket.id}`),
-    openGraph: { title, description, type: "website", images: image ? [image] : undefined },
-    twitter: { card: "summary_large_image", title, description, images: image ? [image] : undefined },
+    openGraph: { title, description, type: "website", url, siteName: "Football Cult", locale, images },
+    twitter: { card: "summary_large_image", title, description, images: images?.map((i) => i.url) },
   };
 }
 
@@ -75,9 +61,12 @@ export default async function TicketDetailPage({
 }: {
   params: Promise<{ locale: string; id: string }>;
 }) {
-  const { locale, id } = await params;
+  const { locale: rawLocale, id } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const ticket = findTicket(id);
   if (!ticket?.offers.length) notFound();
+  const url = `${SITE_URL}/${locale}/tickets/${ticket.id}`;
+  const image = ldImage(ticket.imageUrl);
 
   // Campos que Search Console marcó como faltantes (2026-09-19, "problemas
   // no críticos" de Eventos): eventStatus, performer, offers.validFrom,
@@ -85,9 +74,6 @@ export default async function TicketDetailPage({
   // el nombre del estadio (dato real) en vez de inventar una ciudad.
   const [homeTeam, awayTeam] = ticket.event.split(/\s+vs\s+/i);
   const teams = [homeTeam, awayTeam].filter(Boolean).map((n) => ({ "@type": "SportsTeam", name: n.trim() }));
-  const offersBySeller = [...ticket.offers]
-    .sort((a, b) => ticketOfferTotalInEUR(a) - ticketOfferTotalInEUR(b))
-    .filter((o, i, arr) => arr.findIndex((x) => ticketSeller(x.store) === ticketSeller(o.store)) === i);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
@@ -96,16 +82,18 @@ export default async function TicketDetailPage({
     startDate: `${ticket.date}T${ticket.time}`,
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    location: { "@type": "Place", name: ticket.venue, address: ticket.city ? `${ticket.venue}, ${ticket.city}` : ticket.venue },
+    location: {
+      "@type": "Place",
+      name: ticket.venue,
+      address: { "@type": "PostalAddress", ...(ticket.city ? { addressLocality: ticket.city } : { streetAddress: ticket.venue }) },
+    },
     performer: teams,
     ...(teams.length === 2 ? { homeTeam: teams[0], awayTeam: teams[1] } : {}),
-    image: ticket.imageUrl ? [ticket.imageUrl] : undefined,
-    url: `${SITE_URL}/${locale}/tickets/${ticket.id}`,
-    // Una Offer por vendedor distinto (la más barata): UK y US son la misma
-    // tienda y no deben figurar como dos ofertas independientes.
-    offers: offersBySeller.map((o) => ({
+    image: image ? [image.url] : undefined,
+    url,
+    offers: offersBySeller(ticket).map((o) => ({
       "@type": "Offer",
-      url: o.url,
+      url,
       price: o.price,
       priceCurrency: o.currency,
       availability: "https://schema.org/InStock",
@@ -121,7 +109,9 @@ export default async function TicketDetailPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <DetailCrumbs locale={locale} trail={ticketTrail(ticket, locale)} current={`/tickets/${ticket.id}`} />
       <TicketDetailPageClient ticket={ticket} />
+      <RelatedLinks related={ticketRelated(ticket, locale)} />
     </>
   );
 }

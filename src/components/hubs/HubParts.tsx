@@ -4,7 +4,7 @@ import type { HubItem } from "@/lib/hubs";
 import { HUB } from "@/lib/hubStrings";
 import type { HubLocale } from "@/data/teamMeta";
 import { getAgeGroup } from "@/lib/productMeta";
-import { teamNames, typeNames } from "@/data/products";
+import { teamNames, kitTypeName } from "@/data/products";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { getDisplaySrc } from "@/lib/images";
 
@@ -59,7 +59,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
       {items.map(({ product, offer }) => {
         const age = getAgeGroup(product);
         const team = teamNames[product.teamKey][locale];
-        const label = `${showTeam ? `${team} · ` : ""}${typeNames[product.typeKey][locale]} ${product.season}`;
+        const label = `${showTeam ? `${team} · ` : ""}${kitTypeName(product, locale)} ${product.season}`;
         const photo = offer.imageUrl;
         const stores = countDistinctRetailers(product.offers.filter((o) => o.inStock));
         return (
@@ -73,7 +73,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={getDisplaySrc(photo, 400)}
-                    alt={`${team} ${typeNames[product.typeKey][locale]} ${product.season}`}
+                    alt={`${team} ${kitTypeName(product, locale)} ${product.season}`}
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-contain"

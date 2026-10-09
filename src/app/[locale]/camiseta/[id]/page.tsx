@@ -1,104 +1,45 @@
 import { Metadata } from "next";
-import { notFound, permanentRedirect } from "next/navigation";
-import {
-  Product,
-  findProduct,
-  kitTypeName,
-  productImage,
-  products,
-  teamNames,
-} from "@/data/products";
+import { notFound, permanentRedirect, redirect } from "next/navigation";
+import { Product, findProduct, productImage, products, teamNames } from "@/data/products";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
 import { archiveStatsFor } from "@/lib/priceArchive";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { HUB } from "@/lib/hubStrings";
-import { TITLE_SUFFIX, ageGroupLabel } from "@/lib/categoryMeta";
 import { productMpn } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
+import { offerTotalInEUR } from "@/lib/offerMoney";
+import { SITE_URL, aggregateOfferLd, jerseyBrand, jerseyDescription, jerseyName, jerseyTitle, ldImage, ogImages } from "@/lib/seoMeta";
+import { jerseyRelated, jerseyTrail } from "@/lib/detailLinks";
+import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
 
 import { countDistinctRetailers } from "@/lib/retailerFamily";
-const SITE_URL = "https://football-cult.com";
 
 // Product/Offer structured data para Google Shopping / resultados
-// enriquecidos -- una oferta por tienda real (nunca AggregateOffer con un
-// solo priceCurrency inventado, las tiendas cobran en monedas distintas).
+// enriquecidos. Nombre, marca, imagen y AggregateOffer de una sola moneda
+// salen de seoMeta.ts (revisión 2026-10-09: "other" como marca en el 19 %,
+// monedas mezcladas en el 73 %, fotos de 200x200).
+//
+// Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
+// están agotadas Google sigue exigiendo "offers": se declaran todas con su
+// disponibilidad real, sin inventar stock.
 function productJsonLd(product: Product, locale: HubLocale) {
-  // Estaba cableado en español para los cinco idiomas: el nombre del
-  // producto que ve Google era el mismo en /fr/ que en /es/.
-  const team = teamNames[product.teamKey][locale];
-  const age = ageGroupLabel(locale, product.ageGroup);
-  // Para las fichas retro esto lee además la equipación del id: si no,
-  // las seis variantes de un mismo equipo/temporada salen con el mismo
-  // título (ver kitTypeName en src/lib/productMeta.ts).
-  const kit = kitTypeName(product, locale);
-  const type = age ? `${kit} ${age}` : kit;
-  const image = productImage(product);
-
-  // Real bug found (Search Console, 2026-09-08): cuando TODAS las ofertas
-  // de un producto están agotadas, esto antes omitía "offers" del todo --
-  // Google exige que un Product declare "offers", "review" o
-  // "aggregateRating" (ninguno de los otros dos existe acá), así que esas
-  // páginas quedaban con datos estructurados inválidos. Se listan todas
-  // las ofertas reales (no solo las in-stock) marcando la disponibilidad
-  // real de cada una -- sigue siendo precio/tienda genuinos, no inventa
-  // stock que no existe.
+  const url = `${SITE_URL}/${locale}/camiseta/${product.id}`;
+  const image = ldImage(productImage(product));
+  const brand = jerseyBrand(product);
+  const mpn = productMpn(product.offers);
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: `${team} ${type} ${product.season}`,
-    image: image ? [image] : undefined,
-    url: `${SITE_URL}/${locale}/camiseta/${product.id}`,
-    ...(product.brand ? { brand: { "@type": "Brand", name: product.brand } } : {}),
+    name: jerseyName(product, locale),
+    image: image ? [image.url] : undefined,
+    url,
+    ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
     // Código del fabricante: con marca + mpn Google puede identificar el
-    // producto exacto, que es lo que un comparador quiere. No se manda el EAN
-    // porque es de UNA talla y esta ficha agrupa todas (ver offerGtin.ts).
-    ...(productMpn(product.offers) ? { mpn: productMpn(product.offers) } : {}),
-    offers: aggregateOffer(product.offers),
-  };
-}
-
-// AggregateOffer envolviendo las ofertas individuales, no en lugar de
-// ellas: es el marcado que Google pide para una página que compara varias
-// tiendas, y es lo que habilita el resultado enriquecido con rango de
-// precios ("desde 39,99 EUR"). Se sigue listando cada Offer real con su
-// tienda y su disponibilidad -- nunca un precio único inventado, que era
-// el motivo por el que esto no se había puesto antes.
-//
-// lowPrice/highPrice se calculan SOLO sobre la moneda mayoritaria: mezclar
-// EUR con USD en un mismo rango daría un número sin sentido, y priceCurrency
-// admite una sola moneda.
-function aggregateOffer(offers: Product["offers"]) {
-  const byCurrency = new Map<string, Product["offers"]>();
-  for (const o of offers) {
-    const list = byCurrency.get(o.currency) ?? [];
-    list.push(o);
-    byCurrency.set(o.currency, list);
-  }
-  const [currency, main] = [...byCurrency.entries()].sort(
-    (a, b) => b[1].length - a[1].length,
-  )[0];
-
-  const individual = offers.map((o) => ({
-    "@type": "Offer",
-    url: o.url,
-    price: o.price,
-    priceCurrency: o.currency,
-    availability: o.inStock
-      ? "https://schema.org/InStock"
-      : "https://schema.org/OutOfStock",
-    seller: { "@type": "Organization", name: o.store },
-  }));
-
-  const totals = main.map((o) => o.price);
-  return {
-    "@type": "AggregateOffer",
-    priceCurrency: currency,
-    lowPrice: Math.min(...totals),
-    highPrice: Math.max(...totals),
-    offerCount: offers.length,
-    offers: individual,
+    // producto exacto. No se manda el EAN porque es de UNA talla y esta
+    // ficha agrupa todas (ver offerGtin.ts).
+    ...(mpn ? { mpn } : {}),
+    offers: aggregateOfferLd(product.offers, url, offerTotalInEUR),
   };
 }
 
@@ -132,22 +73,12 @@ export async function generateMetadata({
   const product = findProduct(id);
   if (!product) return {};
 
-  // El <title> y la descripción estaban cableados en español para los
-  // cinco idiomas. Son 6.651 fichas x 5 idiomas con el MISMO título, que
-  // es justo lo que hace que Google marque una página como duplicada de
-  // otra (lo reportó: los 47 ejemplos de "Duplicada" eran páginas /en/).
-  const team = teamNames[product.teamKey][locale];
-  // La ficha de mujer y la de niños comparten equipo/tipo/temporada con la de
-  // adulto: sin el sufijo salían con el mismo título y la misma descripción.
-  const age = ageGroupLabel(locale, product.ageGroup);
-  // Para las fichas retro esto lee además la equipación del id: si no,
-  // las seis variantes de un mismo equipo/temporada salen con el mismo
-  // título (ver kitTypeName en src/lib/productMeta.ts).
-  const kit = kitTypeName(product, locale);
-  const type = age ? `${kit} ${age}` : kit;
-  const title = `${team} ${type} ${product.season} — ${TITLE_SUFFIX[locale]} | Football Cult`;
-  const description = HUB[locale].metaJersey({ team, type, season: product.season });
-  const image = productImage(product);
+  // Título/descripción por idioma, únicos en todo el catálogo y con lo que
+  // se busca ("Camiseta Real Madrid primera equipación 2026/27"), ver
+  // seoMeta.ts y scripts/check_seo_titles.mts.
+  const title = jerseyTitle(product, locale);
+  const description = jerseyDescription(product, locale);
+  const images = ogImages(productImage(product));
 
   return {
     title,
@@ -157,13 +88,16 @@ export async function generateMetadata({
       title,
       description,
       type: "website",
-      images: image ? [image] : undefined,
+      url: `${SITE_URL}/${locale}/camiseta/${product.id}`,
+      siteName: "Football Cult",
+      locale,
+      images,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: image ? [image] : undefined,
+      images: images?.map((i) => i.url),
     },
   };
 }
@@ -180,6 +114,13 @@ export default async function JerseyDetailPage({
   // Sin ofertas no hay nada que comparar (y aggregateOffer no tiene moneda
   // que elegir): 404 en vez del 500 que daba antes.
   if (!product?.offers.length) {
+    // Ficha retirada (o sin ofertas hoy): al hub de su equipo en vez de un
+    // 404. Temporal si la ficha existe (puede volver a tener ofertas),
+    // permanente si el id ya no está en el catálogo.
+    const teamKey = (product?.teamKey ?? id.split("-")[0]) as keyof typeof teamNames;
+    if (teamNames[teamKey] && products.some((p) => p.teamKey === teamKey && p.offers.length)) {
+      (product ? redirect : permanentRedirect)(`/${locale}/equipo/${teamKey}`);
+    }
     notFound();
   }
 
@@ -241,6 +182,7 @@ export default async function JerseyDetailPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(product, locale)) }}
       />
+      <DetailCrumbs locale={locale} trail={jerseyTrail(product, locale)} current={`/camiseta/${product.id}`} />
       <JerseyDetailClient
         product={product}
         priceHistory={priceHistory}
@@ -249,6 +191,7 @@ export default async function JerseyDetailPage({
         manufacturerCode={productMpn(product.offers)}
       />
       <JerseyFaq product={product} locale={locale} />
+      <RelatedLinks related={jerseyRelated(product, locale)} />
     </>
   );
 }

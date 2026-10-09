@@ -23,6 +23,7 @@ import {
   gearFacts,
 } from "@/lib/gearHubs";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
+import { gearHubFrom } from "@/lib/seoMeta";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
 import { HUB } from "@/lib/hubStrings";
@@ -77,7 +78,7 @@ const money = (i: GearItem) => formatOfferMoney(i.price + i.shipping, i.currency
 export function gearMetadata(spec: GearSpec, locale: HubLocale): Metadata {
   const r = resolve(spec, locale);
   if (!r) return {};
-  return hubMetadata(locale, r.path, r.headline, UI[locale].meta({ headline: r.headline, n: r.items.length, price: money(r.min) }));
+  return hubMetadata(locale, r.path, r.headline, UI[locale].meta({ headline: r.headline, n: r.items.length, price: gearHubFrom(spec.section, r.items.map((i) => i.id), locale) }));
 }
 
 export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubLocale }) {
@@ -98,7 +99,7 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
       <JsonLd
         data={[
-          breadcrumbLd(locale, [{ name: ui.home, path: "" }, { name: noun, path: `/${section}` }, { name: r.headline }]),
+          breadcrumbLd(locale, [{ name: ui.home, path: "" }, { name: noun, path: `/${section}` }, { name: r.headline }], r.path),
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",

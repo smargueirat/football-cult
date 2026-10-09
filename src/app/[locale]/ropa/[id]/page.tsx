@@ -2,39 +2,11 @@ import { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { gearAlias } from "@/lib/gearAliases";
 import { apparelProducts } from "@/data/apparel";
-import { Locale } from "@/lib/i18n/translations";
-import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { localizeGearModel } from "@/lib/gearText";
+import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
+import { GearDetailFrame, gearDetailMetadata } from "@/components/GearDetailSeo";
 import ApparelDetailPageClient from "./ApparelDetailPageClient";
 
-const SITE_URL = "https://football-cult.com";
-
-const META_TEMPLATE: Record<Locale, { title: string; description: string }> = {
-  es: {
-    title: "{model} — Comparar precios | Football Cult",
-    description: "Compara precios de {model} entre distintas tiendas y compra donde más te convenga.",
-  },
-  en: {
-    title: "{model} — Compare Prices | Football Cult",
-    description: "Compare prices for {model} across stores and buy wherever suits you best.",
-  },
-  pt: {
-    title: "{model} — Comparar Preços | Football Cult",
-    description: "Compare preços de {model} entre lojas e compre onde for melhor para você.",
-  },
-  fr: {
-    title: "{model} — Comparer les prix | Football Cult",
-    description: "Comparez les prix de {model} entre boutiques et achetez où cela vous convient.",
-  },
-  it: {
-    title: "{model} — Confronta i prezzi | Football Cult",
-    description: "Confronta i prezzi di {model} tra i negozi e acquista dove preferisci.",
-  },
-};
-
-function findApparel(id: string) {
-  return apparelProducts.find((p) => p.id === id);
-}
+const find = (id: string) => apparelProducts.find((p) => p.id === id);
 
 // ISR (2026-09-20): sin generateStaticParams estas páginas eran ƒ
 // (cache-control no-store): cada visita de un usuario o de Googlebot
@@ -47,69 +19,31 @@ export function generateStaticParams() {
   return [];
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string; id: string }>;
-}): Promise<Metadata> {
+type P = { params: Promise<{ locale: string; id: string }> };
+
+export async function generateMetadata({ params }: P): Promise<Metadata> {
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
-  const item = findApparel(id);
-  if (!item) return {};
-
-  const tmpl = META_TEMPLATE[locale];
-  const title = tmpl.title.replace("{model}", localizeGearModel(item.model, item.brand, locale));
-  const description = tmpl.description.replace("{model}", localizeGearModel(item.model, item.brand, locale));
-  const image = item.offers[0]?.imageUrl;
-
-  return {
-    title,
-    description,
-    alternates: buildAlternates(locale, `/ropa/${item.id}`),
-    openGraph: { title, description, type: "website", images: image ? [image] : undefined },
-    twitter: { card: "summary_large_image", title, description, images: image ? [image] : undefined },
-  };
+  const item = find(id);
+  return item ? gearDetailMetadata("ropa", item, locale) : {};
 }
 
-export default async function ApparelDetailPage({
-  params,
-}: {
-  params: Promise<{ locale: string; id: string }>;
-}) {
+export default async function ApparelDetailPage({ params }: P) {
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
-  const item = findApparel(id);
+  const item = find(id);
   if (!item?.offers.length) {
+    // Ficha fundida o retirada: a la que la reemplaza o, si ya no hay
+    // equivalente, al hub más cercano (ver gearAliases.ts).
     const target = gearAlias("ropa", id);
-    if (target && findApparel(target)) permanentRedirect(`/${locale}/ropa/${target}`);
+    if (target?.startsWith("/")) permanentRedirect(`/${locale}${target}`);
+    if (target && find(target)) permanentRedirect(`/${locale}/ropa/${target}`);
     notFound();
   }
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: localizeGearModel(item.model, item.brand, locale),
-    image: item.offers[0]?.imageUrl ? [item.offers[0].imageUrl] : undefined,
-    url: `${SITE_URL}/${locale}/ropa/${item.id}`,
-    brand: { "@type": "Brand", name: item.brand },
-    offers: item.offers.map((o) => ({
-      "@type": "Offer",
-      url: o.url,
-      price: o.price,
-      priceCurrency: o.currency,
-      availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: o.store },
-    })),
-  };
-
   return (
-    <>
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+    <GearDetailFrame section="ropa" item={item} all={apparelProducts} locale={locale}>
       <ApparelDetailPageClient item={item} />
-    </>
+    </GearDetailFrame>
   );
 }

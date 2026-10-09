@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { hubFrom } from "@/lib/seoMeta";
 import type { Metadata } from "next";
 import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const items = teamItems(team);
   if (!items.length) return {};
   const name = teamName(team, locale);
-  return hubMetadata(locale, `/equipo/${team}`, HUB[locale].teamH1(name), HUB[locale].metaTeam(name, priceOf(items)));
+  return hubMetadata(locale, `/equipo/${team}`, HUB[locale].teamH1(name), HUB[locale].metaTeam(name, hubFrom(items, locale)));
 }
 
 export default async function TeamHub({ params }: P) {

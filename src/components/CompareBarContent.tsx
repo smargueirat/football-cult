@@ -4,7 +4,7 @@ import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useCountry } from "@/lib/country/CountryContext";
-import { displayTitleForCountry, findProduct, teamNames, typeNames } from "@/data/products";
+import { displayTitleForCountry, findProduct, teamNames, kitTypeName } from "@/data/products";
 import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
@@ -61,7 +61,7 @@ export default function CompareBarContent() {
                       : item.kind === "ticket"
                         ? item.ticket.event
                         : displayTitleForCountry(item.product, countryCode, locale) ??
-                        `${teamNames[item.product.teamKey][locale]} ${typeNames[item.product.typeKey][locale]}`;
+                        `${teamNames[item.product.teamKey][locale]} ${kitTypeName(item.product, locale)}`;
             return (
             <span
               key={`${item.entry.productId}-${item.entry.store}`}
