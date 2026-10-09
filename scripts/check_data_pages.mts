@@ -5,6 +5,7 @@
 // Falla (exit 1) si algo no cumple su propia regla o si sale NaN/undefined.
 import { titleCode, productCode } from "../src/lib/offerGtin";
 import { gearMpn } from "../src/lib/seoMeta";
+import { priceStudy } from "../src/lib/priceStudy";
 import { LOW_MIN_DAYS, archiveDates, historicLowRows, verifiedDropRows, weeklyRows } from "../src/lib/dealsData";
 import { guideQa } from "../src/components/GuideData";
 import { GUIDE_SLUGS } from "../src/lib/guides";
@@ -46,6 +47,17 @@ for (const [s, n] of perSection) ok(n <= 12, `semana: ${n} en ${s}`);
 
 const lows = historicLowRows();
 for (const r of lows) ok(r.section !== "tickets" && r.price <= r.before * 0.97 + 1e-9 && (r.days ?? 0) >= LOW_MIN_DAYS, `mínimo fuera de regla ${r.section}/${r.item.id}`);
+
+// Estudio de precios (/estudios/precios-camisetas): cada fila tiene UN
+// ganador, así que las victorias suman las filas; la tabla de tiendas tiene
+// tantas filas como dice la cabecera; y nadie gana más de lo que compara.
+const st = priceStudy();
+const winsSum = st.storeRanking.reduce((n, r) => n + r.wins, 0);
+ok(st.products > 0 && winsSum === st.products, `estudio: victorias ${winsSum} != camisetas ${st.products}`);
+ok(st.storeRanking.length === st.stores, `estudio: ${st.storeRanking.length} filas de tiendas, la cabecera dice ${st.stores}`);
+for (const r of st.storeRanking) ok(r.wins <= r.appearances && r.appearances > 0, `estudio: ${r.store} ${r.wins}/${r.appearances}`);
+ok(st.rows.every((r) => r.low <= r.high && r.gapPct >= 0), "estudio: fila con low > high");
+console.log(`estudio: ${st.products} camisetas, ${st.stores} tiendas, media ${st.avgGapPct.toFixed(1)} %, ganadoras: ${st.storeRanking.map((r) => `${r.store} ${r.wins}/${r.appearances}`).join(", ")}`);
 
 const bad = /NaN|undefined|Infinity/;
 for (const l of LOCALES) {

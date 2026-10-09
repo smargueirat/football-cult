@@ -2,7 +2,7 @@ import { mpnFor } from "@/lib/offerGtin";
 import { isComparableStore } from "@/lib/officialStores";
 import { products } from "@/data/products";
 
-import { bestPerRetailer, countDistinctRetailers, getRetailerFamily } from "@/lib/retailerFamily";
+import { bestPerRetailer, countDistinctRetailers, getRetailerFamily, getRetailerLabel } from "@/lib/retailerFamily";
 // Estudio de dispersión de precios, calculado EN BUILD desde el catálogo
 // real -- no hay números escritos a mano en ningún lado. Cada vez que el
 // scan nocturno actualiza products.ts y se redespliega, el estudio se
@@ -83,6 +83,7 @@ export function priceStudy(): PriceStudy {
   const rows: StudyExample[] = [];
   const appearances = new Map<string, number>();
   const wins = new Map<string, number>();
+  const labelOf = new Map<string, string>();
 
   for (const p of products) {
     if (p.typeKey === "retro") continue;
@@ -117,6 +118,7 @@ export function priceStudy(): PriceStudy {
     // misma tienda y su diferencia de precio no es una comparación.
     const storeNames = new Set(offers.map((o) => getRetailerFamily(o.store)));
     if (storeNames.size < 2) continue;
+    for (const o of offers) labelOf.set(getRetailerFamily(o.store), getRetailerLabel(o.store));
 
     // Total real: precio + envío. Comparar solo el precio escondería que
     // una tienda barata con envío caro termina saliendo más.
@@ -128,8 +130,14 @@ export function priceStudy(): PriceStudy {
     const high = totals[totals.length - 1];
     if (low.total <= 0) continue;
 
+    // Las dos cuentas por FAMILIA (getRetailerFamily). Hasta el 2026-10-09
+    // las apariciones iban por familia ("footstore") y las victorias por el
+    // nombre del feed ("FootStoreES"): nunca coincidían y la tabla "qué tienda
+    // gana más veces" salía al 0 % en todas (regresión de 547c94d, que pasó
+    // storeNames a familias). Comprobación: scripts/check_data_pages.mts.
     for (const s of storeNames) appearances.set(s, (appearances.get(s) ?? 0) + 1);
-    wins.set(low.store, (wins.get(low.store) ?? 0) + 1);
+    const winner = getRetailerFamily(low.store);
+    wins.set(winner, (wins.get(winner) ?? 0) + 1);
 
     rows.push({
       id: p.id,
@@ -162,15 +170,17 @@ export function priceStudy(): PriceStudy {
     shareSamePrice: share((x) => x < 0.5),
     examples: [...rows].sort((a, b) => b.gapAbs - a.gapAbs).slice(0, 10),
     rows: [...rows].sort((a, b) => b.gapAbs - a.gapAbs),
+    // TODAS las tiendas del estudio (antes solo las de 10+ comparaciones): la
+    // cabecera dice "N tiendas" y la tabla tiene que tener esas N filas. La
+    // columna "ganadas / comparaciones" ya deja ver cuándo la muestra es chica.
     storeRanking: [...appearances.entries()]
-      .filter(([, n]) => n >= 10)
-      .map(([store, n]) => ({
-        store,
+      .map(([family, n]) => ({
+        store: labelOf.get(family) ?? family,
         appearances: n,
-        wins: wins.get(store) ?? 0,
-        winPct: ((wins.get(store) ?? 0) / n) * 100,
+        wins: wins.get(family) ?? 0,
+        winPct: ((wins.get(family) ?? 0) / n) * 100,
       }))
-      .sort((a, b) => b.winPct - a.winPct),
+      .sort((a, b) => b.winPct - a.winPct || b.appearances - a.appearances),
   };
   return cached;
 }
