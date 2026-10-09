@@ -3,6 +3,7 @@
 import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
 import { formatOfferMoney, offerTotalInEUR } from "@/lib/offerMoney";
+import ApproxPrice from "@/components/ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearModel } from "@/lib/gearText";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -105,6 +106,7 @@ export default function GearCard({
             {cheapest.priceMax ? `${t.botas.from} ` : ""}
             {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
           </span>
+          <ApproxPrice amount={cheapest.price + cheapest.shipping} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
           {cheapest.shipping > 0 && (
             <span className="text-[9px] font-medium uppercase leading-none opacity-70">
               {t.product.shippingIncluded}

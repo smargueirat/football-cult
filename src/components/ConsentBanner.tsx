@@ -73,17 +73,20 @@ export default function ConsentBanner() {
   if (!open) return null;
 
   const btn =
-    "min-h-11 flex-1 rounded-full border px-5 py-2 text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E9D38F] sm:flex-none";
+    "min-h-11 flex-1 rounded-full border px-2 py-2 text-sm font-semibold sm:px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E9D38F] sm:flex-none";
 
   return (
     <div
       role="region"
       aria-label={c.region}
-      className="fixed inset-x-0 bottom-0 z-[100] max-h-[90vh] overflow-y-auto border-t border-[#C9A24B]/40 bg-[#1b1812] px-4 py-4 text-[#F3E9C9] shadow-[0_-8px_30px_rgba(0,0,0,0.45)] sm:px-8"
+      className="fixed inset-x-0 bottom-0 z-[100] max-h-[90vh] overflow-y-auto border-t border-[#C9A24B]/40 bg-[#1b1812] px-4 py-3 text-[#F3E9C9] sm:py-4 shadow-[0_-8px_30px_rgba(0,0,0,0.45)] sm:px-8"
     >
       <div className="mx-auto max-w-4xl">
-        <h2 className="text-base font-semibold text-[#E9D38F]">{c.title}</h2>
-        <p className="mt-1 text-sm leading-relaxed text-[#D8CFB6]">
+        {/* Móvil: título en línea con el texto, letra más chica y botones en
+            una fila (medido: el banner tapaba 280 de 844 px). Mismo texto, y
+            Aceptar y Rechazar siguen con el mismo peso. */}
+        <h2 className="inline text-xs font-semibold text-[#E9D38F] sm:block sm:text-base">{c.title}</h2>{" "}
+        <p className="inline text-xs leading-snug text-[#D8CFB6] sm:mt-1 sm:block sm:text-sm sm:leading-relaxed">
           {c.body}{" "}
           <Link href="/privacidad" className="underline underline-offset-2 hover:text-[#F3E9C9]">
             {c.moreInfo}
@@ -126,7 +129,7 @@ export default function ConsentBanner() {
           </div>
         )}
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-2 flex gap-2 sm:mt-4 sm:flex-wrap">
           <button
             type="button"
             ref={firstRef}

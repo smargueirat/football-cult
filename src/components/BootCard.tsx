@@ -4,6 +4,7 @@ import Link from "@/lib/i18n/LocaleLink";
 import { useEffect, useRef, useState } from "react";
 import { BootProduct } from "@/data/boots";
 import { formatOfferMoney, bootOfferTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
+import ApproxPrice from "@/components/ApproxPrice";
 import { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { useCountry } from "@/lib/country/CountryContext";
@@ -118,6 +119,7 @@ export default function BootCard({
             {cheapest.priceMax ? `${t.botas.from} ` : ""}
             {formatOfferMoney(cheapestTotal, cheapest.currency)}
           </span>
+          <ApproxPrice amount={cheapestTotal} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
           {cheapest.shipping > 0 && (
             <span className="text-[9px] font-medium uppercase leading-none opacity-70">
               {t.product.shippingIncluded}
