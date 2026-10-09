@@ -13,6 +13,7 @@ import type { Locale } from "@/lib/i18n/translations";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { cleanDisplayTitle } from "@/lib/displayTitle";
 import { offerTotalInEUR } from "@/lib/offerMoney";
+import { rankOffers } from "@/lib/offerOrder";
 import type {
   AgeGroup,
   Brand,
@@ -521,6 +522,71 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   // fetches), inferred from Decathlon's known per-country storefront model
   // -- safer than the implicit "ships everywhere" default.
   DecathlonIE: ["IE"],
+
+  // Revisión 2026-10-09: TODAS las tiendas del catálogo tienen entrada (una que
+  // falte cae en "envía a todos lados", y así una bota de Nike AR salía como
+  // "mejor precio con envío incluido" a un visitante de España). Donde se pudo,
+  // se leyó la página pública de envíos de la tienda (fuente al lado); donde no,
+  // regla "si hay duda, solo el país de origen". OJO: el `shipping` guardado en
+  // cada oferta es el del país de origen; a otro país la tienda cobra su tarifa.
+  // Soicos: el enlace de Nike AR responde "Campaña no válida para tu país de
+  // residencia" fuera de Argentina (scripts/catalog-mining/README.md, Soicos).
+  // Sin verificar en la tienda: solo país de origen.
+  NikeAR: ["AR"],
+  PumaAR: ["AR"],
+  NikeCL: ["CL"],
+  // Clovis Calçados (Awin 107702): tienda brasileña, precios en BRL. Sin verificar.
+  ClovisCalcadosBR: ["BR"],
+  // Gigasport (gigasport.at/faqs-hilfe/versand-lieferung-faq-hilfe/, leído
+  // 2026-10-09): "Versandländer": AT, BE, DE, FR, IT, HR, LU, CH, SK, SI, ES,
+  // CZ, HU; a BE/HR/LU/SK/SI/CZ/HU solo desde la tienda austríaca. El feed DE
+  // (anunciante "AT/DE") cubre entonces DE/AT/FR/IT/CH/ES. CH y FR son tiendas
+  // regionales aparte, sin verificar: solo su país.
+  GigasportDE: ["DE", "AT", "FR", "IT", "CH", "ES"],
+  GigasportCH: ["CH"],
+  GigasportFR: ["FR"],
+  // Futbol Emotion (futbolemotion.com/es/international: "Realizamos envíos a
+  // todo el mundo"; /es/informacioncompra/envio: "a casi todos los países del
+  // mundo", con aviso de aduana alta en AR, VE, CU, BR, UY). Leído 2026-10-09.
+  "Futbol Emotion": "all",
+  FutbolEmotion: "all",
+  // Forum Sport (forumsport.com/es-es/costes-de-envio, leído 2026-10-09):
+  // tabla de tarifas para la UE + Reino Unido (p. ej. PT 4,48, FR 7,14,
+  // DE 6,92, GB 13,10 EUR); no lista países fuera de Europa.
+  ForumSport: [
+    "ES", "PT", "FR", "DE", "IT", "NL", "BE", "AT", "IE", "GR", "FI", "SE",
+    "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI", "GB",
+  ],
+  // Sin verificar (deporteoutlet.es no respondió; futbolfactory.es/help/envios
+  // menciona "envíos internacionales" sin lista de países legible): solo ES.
+  DeporteOutlet: ["ES"],
+  "Futbol Factory": ["ES"],
+  "Shop Real Betis": ["ES"],
+  // BSTN (bstn.com/eu_en/service/shipping, leído 2026-10-09): "Worldwide
+  // shipping", pero con precio por región (UK/CH con su IVA incluido, fuera de
+  // la UE sin IVA alemán). El feed IT es idéntico, en EUR, al de DACH/FR/NL/ES
+  // (memoria del proyecto), así que vale para la UE; el UK es el precio en GBP
+  // para Reino Unido.
+  BSTNIT: [
+    "ES", "FR", "DE", "IT", "PT", "NL", "BE", "AT", "IE", "GR", "FI", "SE",
+    "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI",
+  ],
+  BSTNUK: ["GB"],
+  // Sin verificar (classicfootballshirts.co.uk devuelve 403 a peticiones
+  // automáticas): solo GB. Una oferta cada una.
+  "UK Soccer Shop": ["GB"],
+  "Classic Football Shirts": ["GB"],
+  // Amazon: una sola clave para .es/.de/.it/.fr/.co.uk; se limita a esos países.
+  Amazon: ["ES", "DE", "IT", "FR", "GB"],
+  // eBay (eBay, eBay ES/IT/GB) queda SIN entrada a propósito: cada vendedor
+  // decide, el envío real se pide en vivo (/api/ebay-shipping) y sin dato se
+  // muestra "envío a verificar". No se pone "all" porque shoppingFeed.ts trata
+  // "all" explícito como envío mundial verificado.
+  // Entradas: electrónicas o enviadas por el vendedor a cualquier país.
+  FootballTicketNetUK: "all",
+  FootballTicketNetUS: "all",
+  FootballTicketNetDE: "all",
+  Gigsberg: "all",
 };
 
 export function offerShipsTo(store: string, country: CountryCode): boolean {
@@ -602,9 +668,11 @@ export function bestOfferForCountry(
   product: Product,
   country: CountryCode
 ): Offer | undefined {
-  return [...product.offers]
-    .filter((o) => o.inStock && offerShipsTo(o.store, country))
-    .sort((a, b) => offerTotalInEUR(a) - offerTotalInEUR(b))[0];
+  // Precio total primero; la comisión solo desempata dentro de ±1 % (offerOrder.ts).
+  return rankOffers(
+    product.offers.filter((o) => o.inStock && offerShipsTo(o.store, country)),
+    offerTotalInEUR,
+  )[0];
 }
 
 // Idioma "natural" de cada tienda, según en qué mercado vende. Ya NO se usa

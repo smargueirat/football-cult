@@ -15,6 +15,7 @@ import {
   typeNames,
 } from "@/data/products";
 import { formatOfferMoney, offerTotalInEUR, previousOfferTotal } from "@/lib/offerMoney";
+import ApproxPrice from "@/components/ApproxPrice";
 import { isComparableStore } from "@/lib/officialStores";
 import { variantKey } from "@/lib/jerseyVersion";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -294,6 +295,7 @@ export default function ProductCard3D({
             <span className="text-xs font-semibold sm:text-sm">
               {formatOfferMoney(bestTotal, best.currency)}
             </span>
+            <ApproxPrice amount={bestTotal} currency={best.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
             {(noShipping || bestTotal > best.price) && (
               <span className="text-[8px] font-medium uppercase leading-none opacity-70 sm:text-[9px]">
                 {noShipping ? t.product.shippingNotIncluded : t.product.shippingIncluded}

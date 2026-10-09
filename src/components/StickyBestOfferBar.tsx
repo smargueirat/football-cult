@@ -21,6 +21,7 @@ export default function StickyBestOfferBar({
   href,
   onClick,
   hideFrom,
+  approx,
 }: {
   store: string;
   total: string;
@@ -31,6 +32,8 @@ export default function StickyBestOfferBar({
   onClick: () => void;
   /** Breakpoint desde el que la barra se oculta (la ficha ya muestra la oferta a la vista). */
   hideFrom: "sm" | "lg";
+  /** Equivalente aproximado en la moneda del visitante ("≈ 54 EUR"), si aplica. */
+  approx?: string | null;
 }) {
   const [footerVisible, setFooterVisible] = useState(false);
 
@@ -53,7 +56,10 @@ export default function StickyBestOfferBar({
         <div className="min-w-0">
           <p className="text-[10px] uppercase tracking-wide text-[#a8926a]">{fromLabel}</p>
           <p className="truncate text-lg font-semibold leading-tight text-[#B45309]">{total}</p>
-          <p className="truncate text-[11px] leading-tight text-[#675c44]">{store}</p>
+          <p className="truncate text-[11px] leading-tight text-[#675c44]">
+            {store}
+            {approx ? ` · ${approx}` : ""}
+          </p>
         </div>
         <a
           href={href}
