@@ -11,7 +11,8 @@ import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/com
 import HubFaq from "@/components/hubs/HubFaq";
 import { hubFacts } from "@/lib/hubFaq";
 import { botDeepLink } from "@/lib/telegramBot";
-import { retroTeamFacets, ticketTeamSlugForKey } from "@/lib/extraHubs";
+import { retroTeamFacets } from "@/lib/extraHubs";
+import { ticketTeamSlugForKey } from "@/lib/ticketHubs";
 import { EXTRA } from "@/lib/extraHubStrings";
 import { teamCategory } from "@/lib/productMeta";
 import type { TeamKey } from "@/data/products";

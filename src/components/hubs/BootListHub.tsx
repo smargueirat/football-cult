@@ -36,7 +36,9 @@ function resolve(spec: BootHubSpec, locale: HubLocale) {
   return { items, line: undefined, headline: kids ? ui.kidsH1 : ui.futsalH1, path: kids ? "/botas/ninos" : "/botas/futbol-sala", kidsCount: 0 };
 }
 
-const money = (i: GearItem) => formatOfferMoney(i.price + i.shipping, i.currency);
+// En EUR (total con envío convertido), no en la moneda de la tienda: un
+// "Desde BRL 99,99" en /es no le dice nada a nadie (seo-tecnico F4).
+const money = (i: GearItem) => formatOfferMoney(i.eur, "EUR");
 
 export function bootHubMetadata(spec: BootHubSpec, locale: HubLocale): Metadata {
   const r = resolve(spec, locale);

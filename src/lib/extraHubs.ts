@@ -1,10 +1,9 @@
-import { products, bestOffer, teamNames } from "@/data/products";
-import type { TeamKey } from "@/data/products";
-import { ticketProducts, type TicketProduct } from "@/data/tickets";
+import { products, bestOffer } from "@/data/products";
 import { BOOT_LINES, bootLinesOf } from "@/lib/bootLines";
-import { MIN_HUB_ITEMS, gearItems, kidsBootItems, slugify, type GearItem } from "@/lib/gearHubs";
+import { MIN_HUB_ITEMS, gearItems, kidsBootItems, type GearItem } from "@/lib/gearHubs";
 import type { HubItem } from "@/lib/hubs";
-import { offerTotalInEUR, ticketOfferTotalInEUR, ticketSellers } from "@/lib/offerMoney";
+import { offerTotalInEUR } from "@/lib/offerMoney";
+import { ticketCompetitionFacets, ticketTeamFacets } from "@/lib/ticketHubs";
 import { isVintageRetro, seasonSortValue } from "@/lib/productMeta";
 
 // Hubs nuevos del 2026-10-09: botas por línea de modelo, de niño y de sala;
@@ -59,71 +58,6 @@ export const retroDecadeFacets = () =>
   countBy(vintage(), (i) => decadeOf(i.product.season))
     .map(([decade, count]) => ({ decade, count }))
     .sort((a, b) => a.decade - b.decade);
-
-// ---------- entradas ----------
-
-export const TICKET_MIN = MIN_HUB_ITEMS;
-export const ticketTeams = (event: string) => event.split(/\s+vs\s+/i).map((s) => s.trim()).filter(Boolean);
-
-// Nombre del feed ("Inter Milan", "FC Barcelona") -> clave de equipo del
-// catálogo de camisetas, para enlazar entradas <-> camisetas del mismo club.
-// Sin coincidencia exacta tras quitar siglas, no se enlaza: mejor nada que
-// mandar al Sporting de Gijón desde el Sporting de Lisboa.
-const normTeam = (s: string) =>
-  s
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase()
-    .replace(/\b(fc|cf|afc|sc|ac|as|ssc|club|de|cd|rcd|ud|sd|ca|sl|vfb|vfl|tsg|bv|rb)\b/g, "")
-    .replace(/[^a-z0-9]+/g, "");
-let teamIndex: Map<string, TeamKey> | null = null;
-export function teamKeyForTicketName(name: string): TeamKey | undefined {
-  if (!teamIndex) {
-    teamIndex = new Map();
-    for (const [k, v] of Object.entries(teamNames) as [TeamKey, Record<string, string>][]) {
-      for (const n of Object.values(v)) if (!teamIndex.has(normTeam(n))) teamIndex.set(normTeam(n), k);
-    }
-  }
-  return teamIndex.get(normTeam(name));
-}
-
-function ticketFacets(key: (t: TicketProduct) => string[]) {
-  const m = new Map<string, { slug: string; name: string; count: number }>();
-  for (const t of ticketProducts) {
-    for (const name of key(t)) {
-      const slug = slugify(name);
-      if (!slug) continue;
-      const f = m.get(slug) ?? { slug, name, count: 0 };
-      f.count++;
-      m.set(slug, f);
-    }
-  }
-  return [...m.values()].filter((f) => f.count >= TICKET_MIN).sort((a, b) => b.count - a.count);
-}
-let teamFacetCache: ReturnType<typeof ticketFacets> | null = null;
-let compFacetCache: ReturnType<typeof ticketFacets> | null = null;
-export const ticketTeamFacets = () => (teamFacetCache ??= ticketFacets((t) => ticketTeams(t.event)));
-export const ticketCompetitionFacets = () => (compFacetCache ??= ticketFacets((t) => [t.competition]));
-
-const byDate = (a: TicketProduct, b: TicketProduct) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`);
-export const ticketTeamItems = (slug: string) => ticketProducts.filter((t) => ticketTeams(t.event).some((n) => slugify(n) === slug)).sort(byDate);
-export const ticketCompetitionItems = (slug: string) => ticketProducts.filter((t) => slugify(t.competition) === slug).sort(byDate);
-
-export function ticketTeamSlugForKey(key: string): string | undefined {
-  return ticketTeamFacets().find((f) => teamKeyForTicketName(f.name) === key)?.slug;
-}
-
-/** Datos del hub de entradas: nº de partidos, primera/última fecha, vendedores
- *  distintos y el precio más bajo (EUR, el que compara el resto del sitio). */
-export function ticketStats(items: TicketProduct[]) {
-  let min = Infinity;
-  const sellers = new Set<string>();
-  for (const t of items) {
-    for (const s of ticketSellers(t.offers)) sellers.add(s);
-    for (const o of t.offers) min = Math.min(min, ticketOfferTotalInEUR(o));
-  }
-  return { n: items.length, first: items[0]?.date ?? "", last: items[items.length - 1]?.date ?? "", sellers: sellers.size, minEur: min };
-}
 
 // ---------- sitemap ----------
 

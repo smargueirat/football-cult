@@ -39,10 +39,8 @@ function resolve(spec: RetroSpec, locale: HubLocale) {
   return { items, team: undefined, decade, name: x.decadeName(decade), headline: x.retroDecadeH1(decade), path: `/retro/decada/${decade}` };
 }
 
-const priceOf = (items: HubItem[]) => {
-  const o = statsOf(items).minOffer;
-  return o ? formatOfferMoney(o.price + o.shipping, o.currency) : "";
-};
+// En EUR, como en BootListHub.
+const priceOf = (items: HubItem[]) => (items.length ? formatOfferMoney(statsOf(items).minEur, "EUR") : "");
 
 export function retroMetadata(spec: RetroSpec, locale: HubLocale): Metadata {
   const r = resolve(spec, locale);

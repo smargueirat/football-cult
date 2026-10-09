@@ -7,10 +7,9 @@ import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import TicketDetailPageClient from "./TicketDetailPageClient";
 import { HubBacklinks } from "@/components/hubs/HubLinkParts";
 import { EXTRA } from "@/lib/extraHubStrings";
-import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets, ticketTeams } from "@/lib/extraHubs";
-import { slugify } from "@/lib/gearHubs";
+import { teamKeyForTicketName, ticketCompetitionFacets, ticketSlug, ticketTeamFacets, ticketTeams } from "@/lib/ticketHubs";
 import { asLocale } from "@/lib/hubPages";
-import { teamName } from "@/lib/hubs";
+import { teamNames } from "@/lib/productMeta";
 import type { HubLocale } from "@/data/teamMeta";
 import type { TicketProduct } from "@/data/tickets";
 
@@ -19,9 +18,9 @@ function ticketHubLinks(ticket: TicketProduct, locale: HubLocale) {
   const x = EXTRA[locale];
   const out: { href: string; label: string }[] = [];
   for (const n of ticketTeams(ticket.event)) {
-    const f = ticketTeamFacets().find((t) => t.slug === slugify(n));
+    const f = ticketTeamFacets().find((t) => t.slug === ticketSlug(n));
     const k = teamKeyForTicketName(n);
-    if (f) out.push({ href: `/${locale}/tickets/equipo/${f.slug}`, label: x.ticketsOf(k ? teamName(k, locale) : n) });
+    if (f) out.push({ href: `/${locale}/tickets/equipo/${f.slug}`, label: x.ticketsOf(k ? teamNames[k][locale] : n) });
   }
   const c = ticketCompetitionFacets().find((t) => t.name === ticket.competition);
   if (c) out.push({ href: `/${locale}/tickets/competicion/${c.slug}`, label: x.ticketsOf(c.name) });

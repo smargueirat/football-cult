@@ -3,9 +3,9 @@ import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import TicketsPageClient from "./TicketsPageClient";
 import { asLocale } from "@/lib/hubPages";
-import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets } from "@/lib/extraHubs";
+import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets } from "@/lib/ticketHubs";
 import { EXTRA } from "@/lib/extraHubStrings";
-import { teamName } from "@/lib/hubs";
+import { teamNames } from "@/lib/productMeta";
 import { LinkChipRow } from "@/components/hubs/HubLinkParts";
 
 const META: Record<Locale, { title: string; description: string }> = {
@@ -49,7 +49,7 @@ export default async function TicketsPage({ params }: { params: Promise<{ locale
   const x = EXTRA[locale];
   const label = (name: string) => {
     const k = teamKeyForTicketName(name);
-    return k ? teamName(k, locale) : name;
+    return k ? teamNames[k][locale] : name;
   };
   return (
     <>

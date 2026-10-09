@@ -3,11 +3,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { HubLocale } from "@/data/teamMeta";
 import { formatOfferMoney } from "@/lib/offerMoney";
-import { teamCategory } from "@/lib/productMeta";
 import { translations } from "@/lib/i18n/translations";
 import {
   TICKET_MIN,
-  retroTeamFacets,
   teamKeyForTicketName,
   ticketCompetitionFacets,
   ticketCompetitionItems,
@@ -15,9 +13,9 @@ import {
   ticketTeamFacets,
   ticketTeamItems,
   ticketTeams,
-} from "@/lib/extraHubs";
+} from "@/lib/ticketHubs";
 import { EXTRA } from "@/lib/extraHubStrings";
-import { teamItems, teamName } from "@/lib/hubs";
+import { teamNames } from "@/lib/productMeta";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
@@ -37,7 +35,7 @@ function resolve(spec: TicketSpec, locale: HubLocale) {
     if (!facet) return null;
     const items = ticketTeamItems(spec.team);
     const key = teamKeyForTicketName(facet.name);
-    const name = key ? teamName(key, locale) : facet.name;
+    const name = key ? teamNames[key][locale] : facet.name;
     return { items, raw: facet.name, key, name, headline: x.ticketTeamH1(name), path: `/tickets/equipo/${spec.team}`, isTeam: true };
   }
   const facet = ticketCompetitionFacets().find((f) => f.slug === spec.competition);
@@ -68,7 +66,6 @@ export default function TicketHub({ spec, locale }: { spec: TicketSpec; locale: 
   const teams = new Set(r.items.flatMap((t) => ticketTeams(t.event)));
   const compLinks = ticketCompetitionFacets().filter((f) => f.name !== r.raw && (!r.isTeam || comps.has(f.name)));
   const teamLinks = ticketTeamFacets().filter((f) => f.name !== r.raw && teams.has(f.name));
-  const hasRetro = r.key ? retroTeamFacets().some((f) => f.team === r.key) : false;
 
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
@@ -90,18 +87,12 @@ export default function TicketHub({ spec, locale }: { spec: TicketSpec; locale: 
       />
       <Crumbs locale={locale} trail={[{ label: ticketsName, href: `/${locale}/tickets` }, { label: r.headline }]} />
       <HubHeader h1={r.headline} intro={x.ticketIntro({ subject: r.headline, n: s.n, first: s.first, last: s.last, sellers: s.sellers, price: eur(s.minEur) })} />
-      {r.key && (teamItems(r.key).length > 0 || hasRetro) && (
-        <p className="-mt-5 mb-6 flex flex-wrap gap-4 text-sm">
-          {teamItems(r.key).length > 0 && (
-            <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/equipo/${r.key}`}>
-              {HUB[locale].teamH1(r.name)} →
-            </Link>
-          )}
-          {hasRetro && (
-            <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/retro/${r.key}`}>
-              {x.retroTeamH1(r.name, teamCategory[r.key] === "national")} →
-            </Link>
-          )}
+      {/* Equipo también en el catálogo de camisetas: enlace a su hub. */}
+      {r.key && (
+        <p className="-mt-5 mb-6 text-sm">
+          <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/equipo/${r.key}`}>
+            {HUB[locale].teamH1(r.name)} →
+          </Link>
         </p>
       )}
 
@@ -118,7 +109,7 @@ export default function TicketHub({ spec, locale }: { spec: TicketSpec; locale: 
             countLabel={String}
             items={teamLinks.slice(0, 48).map((f) => {
               const k = teamKeyForTicketName(f.name);
-              return { href: `/${locale}/tickets/equipo/${f.slug}`, name: k ? teamName(k, locale) : f.name, count: f.count };
+              return { href: `/${locale}/tickets/equipo/${f.slug}`, name: k ? teamNames[k][locale] : f.name, count: f.count };
             })}
           />
         </Section>
