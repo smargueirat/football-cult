@@ -4774,3 +4774,12 @@ rotation ES, US, IT (day-of-year 281 mod 3 = 2), 20/20 teams each, zero 429s.
   left); its first inserted offer was a "Score Draw RETRO" reproduction
   (rangers 1990) -- removed and blocklisted.
 - ebay_check_stale: 6 of 200 dead (3%).
+
+## Daily pass (2026-10-09)
+
+eBay rotation US, IT, ES (day-of-year 282 mod 3 = 0), 20/20 teams each, zero 429s. CSV feeds (22 Awin + 5 Rakuten BR + Futbol Factory + Shop Real Betis): zero NEW products; of ~25 season conflicts one was real (SportIsGoodES AC Milan training 26/27, Puma 786639-20, photo-checked, created as `acmilan-training-202627`). Croatia/Alavés/Nashville conflicts were already on file by URL. BSTN UK `manutd|away` "90/92" long-sleeve heritage shirt would have been refreshed into the current away ficha -- excluded by hand via refresh.py's exclude arg. Umbro MID 41001 still absent from the Rakuten FTP (23rd pass). DeporteOutlet's feed download timed out once and needed a retry.
+
+- eBay current: 1 new (Columbus Crew home 26/27, polo collar/3 stars, not the 22/23 or 24/25 shirts on file), 44 offers inserted. PSG listings filed under `qatar` (2 NEW), a Zamalek shirt under `egipto`, a vest, a "Salah"-printed Egypt away and a bagged bootleg Ghana set were dropped (3 blocklisted). `team_collision_scan.py` does NOT catch PSG-under-Qatar (shorter match than the queried key).
+- eBay retro: 315 raw offers, text filters + by-eye review dropped ~63 (name prints, retro/reissue wording, kids cuts, club shirts under national keys, Pulisic USA/Argentina/Barcelona shirts under `qatar`); 5 bare-year/two-year twins re-keyed; 172 inserted/20 refreshed on existing ids, 6 new fichas after photo review (3 more dropped by photo: SDFC "2024/25" is the 2025 shirt, an NZ shirt with a front number, a $446 Venezuela LS).
+- `ebay_gb_retro.py`: only 6 single-store fichas left; 3 inserted, 1 removed (ELME Beijing Sport University team shirt under `china-retro-2018-home`).
+- Women: 237 picks, 0 new. Stale check 8/200 dead (4%). `offerMpns.json` is now written by `update_gtins.py` as well -- commit it. `bootAliases.json`/`gearAliases.json` change when products fuse; commit them too (they hold the 308 redirects).
