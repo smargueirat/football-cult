@@ -21,7 +21,7 @@ import { goHref } from "@/lib/go";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
-import { isComparableStore, isMarketplace } from "@/lib/officialStores";
+import { isComparableStore, isMarketplace, photoOrder } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -276,11 +276,10 @@ export default function JerseyDetailClient({
   // Galería: todas las fotos distintas entre ofertas (algunas tiendas
   // fotografían la misma camiseta distinto), la de la mejor oferta
   // primero para que nunca se vea una camiseta distinta a la que el
-  // usuario termina comprando.
+  // usuario termina comprando. Excepción: si esa foto lleva marca de agua
+  // (tienda de réplicas, ver photoOrder) y hay otra limpia, va al final.
   const photos = useMemo(() => {
-    const ordered = bestOffer
-      ? [bestOffer, ...sortedOffers.filter((o) => o !== bestOffer)]
-      : sortedOffers;
+    const ordered = photoOrder(bestOffer, sortedOffers);
     const seen = new Set<string>();
     const list: string[] = [];
     for (const o of ordered) {

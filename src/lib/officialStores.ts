@@ -39,3 +39,30 @@ const MARKETPLACE_STORES = new Set(["eBay", "eBay ES", "eBay IT", "eBay US", "eB
 export function isMarketplace(store: string): boolean {
   return MARKETPLACE_STORES.has(store);
 }
+
+// Tiendas que ponen marca de agua en sus fotos. FansJerseyHub estampa
+// "Fanjerseyhub" + su logo varias veces sobre la camiseta (visto 2026-10-08
+// en manutd-home-202627, que salía así en og:image y Product.image por ser
+// la oferta más barata). Es una tienda de réplicas: su foto solo sirve de
+// principal si ninguna otra oferta de la ficha trae foto. La detección es
+// por tienda y no por dominio: su CDN (cdn.shopify.com) es el mismo que el
+// de PlanetFoot, Pro:Direct o el Betis, que no marcan nada.
+const WATERMARKED_PHOTO_STORES = new Set(["FansJerseyHub"]);
+
+export function hasWatermarkedPhotos(store: string): boolean {
+  return WATERMARKED_PHOTO_STORES.has(store);
+}
+
+type PhotoOffer = { store: string; imageUrl?: string; inStock?: boolean };
+
+/** Ofertas con foto, la de `preferred` primero y las de tiendas con marca de agua al final. */
+export function photoOrder<T extends PhotoOffer>(preferred: T | undefined, offers: T[]): T[] {
+  const pool = [...(preferred ? [preferred] : []), ...offers.filter((o) => o !== preferred && o.inStock !== false),
+    ...offers.filter((o) => o !== preferred && o.inStock === false)].filter((o) => o.imageUrl);
+  return [...pool.filter((o) => !hasWatermarkedPhotos(o.store)), ...pool.filter((o) => hasWatermarkedPhotos(o.store))];
+}
+
+/** Foto principal (tarjeta, ficha, og:image, Product.image): la de la oferta elegida salvo que lleve marca de agua y otra oferta tenga foto limpia. */
+export function mainPhoto<T extends PhotoOffer>(preferred: T | undefined, offers: T[]): string | undefined {
+  return photoOrder(preferred, offers)[0]?.imageUrl;
+}

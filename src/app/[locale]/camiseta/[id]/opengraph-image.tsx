@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { brandNames, findProduct, productImage, teamNames, typeNames } from "@/data/products";
+import { brandNames, findProduct, teamNames, typeNames } from "@/data/products";
+import { productImage } from "@/lib/productPhoto";
 
 export const alt = "Football Cult Archive";
 export const size = { width: 1200, height: 630 };

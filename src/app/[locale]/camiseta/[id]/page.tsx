@@ -4,10 +4,10 @@ import {
   Product,
   findProduct,
   kitTypeName,
-  productImage,
   products,
   teamNames,
 } from "@/data/products";
+import { productImage } from "@/lib/productPhoto";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
