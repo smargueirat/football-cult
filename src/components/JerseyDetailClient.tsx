@@ -834,7 +834,31 @@ export default function JerseyDetailClient({
             </div>
           )}
 
-          {shippableOffers.length === 0 ? (
+          {shippableOffers.length === 0 && !product.offers.some((o) => o.inStock) ? (
+            // Todo agotado: decirlo así (antes salía "ninguna tienda envía a
+            // este país", que es otro problema) y dar salida a lo que sí hay.
+            <div className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#675c44]">
+              <p className="font-semibold text-[#1B3B2B]">{t.detail.soldOutTitle}</p>
+              <p className="mt-1">{t.detail.allSoldOut}</p>
+              {sameTeamProducts.length > 0 && (
+                <>
+                  <p className="mt-3">{t.detail.soldOutAlternatives}</p>
+                  <ul className="mt-1 list-disc pl-5">
+                    {sameTeamProducts.slice(0, 4).map((p) => (
+                      <li key={p.id}>
+                        <Link
+                          href={`/camiseta/${p.id}`}
+                          className="text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#8a6a1f]"
+                        >
+                          {`${teamNames[p.teamKey][locale]} ${kitTypeName(p, locale)} ${p.season}`}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          ) : shippableOffers.length === 0 ? (
             <p className="rounded-2xl border border-[#C9A24B]/25 bg-white/60 p-4 text-sm text-[#675c44]">
               {t.countryPanel.notAvailable}
             </p>

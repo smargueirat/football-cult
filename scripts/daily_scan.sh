@@ -253,8 +253,12 @@ if python3 scripts/catalog-mining/dedupe_same_url.py --apply | tail -1 | grep -q
 fi
 
 # Fichas retiradas esta noche -> 308 a la ficha equivalente o al hub (2026-10-09).
-python3 scripts/fixes/seo_redirects.py | tail -1
-git add src/data/productAliases.ts src/data/bootAliases.json src/data/gearAliases.json && \
+# Desde 2026-10-09 también retira las camisetas agotadas 14+ días y sin clics
+# (308 a la ficha más parecida). Solo toca products.ts si estaba commiteado,
+# y solo entonces se añade aquí (no arrastrar cambios de la red de seguridad).
+PRODUCTS_CLEAN=$(git diff --quiet -- src/data/products.ts && echo 1)
+python3 scripts/fixes/seo_redirects.py | sed -n '1p;$p'
+git add src/data/productAliases.ts src/data/bootAliases.json src/data/gearAliases.json ${PRODUCTS_CLEAN:+src/data/products.ts} && \
   { git diff --cached --quiet || git commit -q -m "chore(seo): redirecciones de fichas retiradas ($(date +%Y-%m-%d))"; }
 
 # Publicar en el servidor de esta PC (desde 2026-09-29; antes lo hacía Vercel

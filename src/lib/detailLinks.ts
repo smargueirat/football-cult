@@ -113,7 +113,8 @@ const T: Record<
 };
 
 const team = (k: string, l: HubLocale) => (teamNames as Record<string, Record<HubLocale, string>>)[k]?.[l] ?? k;
-const hasItems = (p: Product) => p.offers.length > 0;
+// Agotadas fuera de los enlaces relacionados (2026-10-09).
+const hasItems = (p: Product) => p.offers.some((o) => o.inStock);
 
 // ---------------------------------------------------------------- camisetas
 

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound, permanentRedirect, redirect } from "next/navigation";
-import { Product, findProduct, products, teamNames } from "@/data/products";
+import { Product, findProduct, products, seasonSortValue, teamNames } from "@/data/products";
 import { productImage } from "@/lib/productPhoto";
 import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
@@ -84,6 +84,11 @@ export async function generateMetadata({
   return {
     title,
     description,
+    // Todas las ofertas agotadas: la página sigue (dice "agotada" y da
+    // alternativas, y vuelve sola si reaparece el stock), pero no se pide
+    // indexarla. Las que siguen así semanas y sin clics las retira el scan
+    // con un 308 (scripts/fixes/seo_redirects.py).
+    ...(product.offers.some((o) => o.inStock) ? {} : { robots: { index: false, follow: true } }),
     alternates: buildAlternates(locale, `/camiseta/${product.id}`),
     openGraph: {
       title,
@@ -167,10 +172,21 @@ export default async function JerseyDetailPage({
   // viva disponible para poner en su lugar (medido 2026-09-28).
   const liveStores = (p: Product) =>
     countDistinctRetailers(p.offers.filter((o) => o.inStock !== false));
+  // Agotadas fuera (2026-10-09): eran el final de la lista, pero seguían
+  // ahí. Si ESTA ficha está agotada, primero lo más parecido (misma
+  // equipación y público, temporada más cercana): son sus alternativas.
+  const soldOut = !product.offers.some((o) => o.inStock);
+  const near = (p: Product) =>
+    soldOut
+      ? Number(p.typeKey !== product.typeKey) * 2 + Number((p.ageGroup ?? "men") !== (product.ageGroup ?? "men"))
+      : 0;
   const sameTeamProducts = products
-    .filter((p) => p.id !== product.id && p.teamKey === product.teamKey)
+    .filter((p) => p.id !== product.id && p.teamKey === product.teamKey && liveStores(p) > 0)
     .sort(
       (a, b) =>
+        near(a) - near(b) ||
+        (soldOut ? Math.abs(seasonSortValue(a.season) - seasonSortValue(product.season)) -
+          Math.abs(seasonSortValue(b.season) - seasonSortValue(product.season)) : 0) ||
         liveStores(b) - liveStores(a) ||
         countDistinctRetailers(b.offers) - countDistinctRetailers(a.offers),
     )

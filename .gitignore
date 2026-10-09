@@ -54,3 +54,4 @@ scripts/boots-mining/image_ok.json
 scripts/catalog-mining/feed_rows.json
 scripts/catalog-mining/offer_seen.json
 scripts/gear-mining/gear_feed_rows.json
+scripts/catalog-mining/soldout_since.json
