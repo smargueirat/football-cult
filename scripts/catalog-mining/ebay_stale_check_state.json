@@ -1,3 +1,11 @@
 {
- "cursor": 798
+ "last_id": "158350142389",
+ "cycle": 1,
+ "cycle_started": "2026-10-09",
+ "last_run": {
+  "date": "2026-10-09",
+  "checked": 1440,
+  "dead": 248,
+  "live_ids": 7315
+ }
 }

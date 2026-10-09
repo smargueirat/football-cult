@@ -44,20 +44,6 @@ export interface TicketProduct {
 
 const minedTicketProductsChunk1: TicketProduct[] = [
   {
-    id: "eintracht-braunschweig-vs-holstein-kiel-2026-10-09",
-    event: "Eintracht Braunschweig vs Holstein Kiel",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2026-10-09",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391212&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228519&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-heidenheim-vs-fc-kaiserslautern-2026-10-09",
     event: "FC Heidenheim vs FC Kaiserslautern",
     venue: "Voith-Arena",
@@ -153,7 +139,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 58.51, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391211&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228518&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 78.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954586&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 68.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954586&a=3013769&m=102705" },
     ],
   },
   {
@@ -211,7 +197,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 154.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391218&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 203.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228525&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 191.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953590&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 187.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953590&a=3013769&m=102705" },
     ],
   },
   {
@@ -245,48 +231,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-magdeburg-vs-hannover-96-2026-10-10",
-    event: "FC Magdeburg vs Hannover 96",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2026-10-10",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391244&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228551&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-fc-energie-cottbus-2026-10-10",
-    event: "SV Darmstadt 98 vs FC Energie Cottbus",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2026-10-10",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391242&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228549&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-dynamo-dresden-2026-10-10",
-    event: "VfL Osnabruck vs Dynamo Dresden",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2026-10-10",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391245&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228552&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "rayo-vallecano-vs-athletic-bilbao-2026-10-10",
     event: "Rayo Vallecano vs Athletic Bilbao",
     venue: "Campo de Futbol de Vallecas",
@@ -312,7 +256,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391220&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228527&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952684&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952684&a=3013769&m=102705" },
     ],
   },
   {
@@ -402,7 +346,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391223&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 105.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228530&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953489&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 82.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953489&a=3013769&m=102705" },
     ],
   },
   {
@@ -429,8 +373,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923432&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923345&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806379&a=3013769&m=102705" },
     ],
   },
@@ -503,8 +445,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391235&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228542&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954674&a=3013769&m=102705" },
     ],
   },
@@ -533,8 +473,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391236&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228543&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954704&a=3013769&m=102705" },
     ],
   },
@@ -580,7 +518,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 109.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391219&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 144.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228526&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953767&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 110.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953767&a=3013769&m=102705" },
     ],
   },
   {
@@ -595,7 +533,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391253&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 43.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228560&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 46.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957796&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957796&a=3013769&m=102705" },
     ],
   },
   {
@@ -610,7 +548,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 228.97, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391255&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 302.71, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228562&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 305.35, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963563&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 305.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963563&a=3013769&m=102705" },
     ],
   },
   {
@@ -699,7 +637,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 71.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391251&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 94.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228558&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 104.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958653&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958653&a=3013769&m=102705" },
     ],
   },
   {
@@ -729,7 +667,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 106.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391228&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 140.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228535&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952668&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 102.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952668&a=3013769&m=102705" },
     ],
   },
   {
@@ -773,48 +711,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391262&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228570&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "hertha-berlin-sc-vs-spvgg-greuther-furth-2026-10-11",
-    event: "Hertha Berlin SC vs SpVgg Greuther Furth",
-    venue: "Olympiastadion",
-    city: "Berlin",
-    date: "2026-10-11",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F129%2Fthumbnail.jpg&feedId=117951&k=a0ff3bce0ee8ce838fd6bc60202b13b2383214af",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391268&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227724&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-karlsruher-sc-2026-10-11",
-    event: "St Pauli vs Karlsruher SC",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2026-10-11",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391270&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227726&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-dsc-arminia-bielefeld-2026-10-11",
-    event: "VfL Bochum vs DSC Arminia Bielefeld",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2026-10-11",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391269&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227725&a=3013769&m=109004" },
     ],
   },
   {
@@ -1049,6 +945,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391286&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 106.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227742&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 117.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806577&a=3013769&m=102705" },
     ],
   },
   {
@@ -1063,7 +960,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391283&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 67.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227739&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963349&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963349&a=3013769&m=102705" },
     ],
   },
   {
@@ -1092,7 +989,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 12.72, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391273&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 16.82, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227729&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 20.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956302&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 20.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956302&a=3013769&m=102705" },
     ],
   },
   {
@@ -1151,7 +1048,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 119.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391288&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 157.32, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227744&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 150.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806631&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 144.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806631&a=3013769&m=102705" },
     ],
   },
   {
@@ -1299,7 +1196,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 120.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391303&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 158.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227759&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 160.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536187&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 164.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536187&a=3013769&m=102705" },
     ],
   },
   {
@@ -1374,7 +1271,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391300&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227756&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 30.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536194&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 31.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536194&a=3013769&m=102705" },
     ],
   },
   {
@@ -1449,7 +1346,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 97.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391318&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 128.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227774&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536225&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 110.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536225&a=3013769&m=102705" },
     ],
   },
   {
@@ -1553,7 +1450,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 288.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391311&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 381.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227767&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 305.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536218&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 303.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536218&a=3013769&m=102705" },
     ],
   },
   {
@@ -1598,7 +1495,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 101.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391326&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 134.54, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227782&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 147.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536248&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 110.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536248&a=3013769&m=102705" },
     ],
   },
   {
@@ -1657,7 +1554,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 150.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391330&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 198.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227786&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 217.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806741&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 160.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806741&a=3013769&m=102705" },
     ],
   },
   {
@@ -1732,7 +1629,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 253.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46235545228&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 335.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46235545176&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 364.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806734&a=3013769&m=102705" },
     ],
   },
   {
@@ -1763,34 +1659,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 197.59, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391327&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 261.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227783&a=3013769&m=109004" },
       { store: "Gigsberg", price: 284.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536245&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "fc-energie-cottbus-vs-fc-nurnberg-2026-10-16",
-    event: "FC Energie Cottbus vs FC Nurnberg",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2026-10-16",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391334&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227790&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-hertha-berlin-sc-2026-10-16",
-    event: "Holstein Kiel vs Hertha Berlin SC",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2026-10-16",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391333&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227789&a=3013769&m=109004" },
     ],
   },
   {
@@ -1922,34 +1790,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 126.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391358&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 167.05, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227815&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-eintracht-braunschweig-2026-10-17",
-    event: "SpVgg Greuther Furth vs Eintracht Braunschweig",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2026-10-17",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391360&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227817&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-fc-heidenheim-2026-10-17",
-    event: "VfL Wolfsburg vs FC Heidenheim",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2026-10-17",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391359&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227816&a=3013769&m=109004" },
     ],
   },
   {
@@ -2321,7 +2161,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 149.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391390&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 197.32, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227824&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 215.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963335&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 170.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963335&a=3013769&m=102705" },
     ],
   },
   {
@@ -2349,20 +2189,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 148.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391369&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 196.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227830&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "hannover-96-vs-st-pauli-2026-10-17",
-    event: "Hannover 96 vs St Pauli",
-    venue: "HDI-Arena",
-    city: "Hannover",
-    date: "2026-10-17",
-    time: "20:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F128%2Fthumbnail.jpg&feedId=117951&k=af1a784788d3e012c6923304dd1680aa99c1cac8",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391357&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227814&a=3013769&m=109004" },
     ],
   },
   {
@@ -2438,48 +2264,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 33.77, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391386&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226596&a=3013769&m=109004" },
       { store: "Gigsberg", price: 45.31, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957951&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "dsc-arminia-bielefeld-vs-vfl-osnabruck-2026-10-18",
-    event: "DSC Arminia Bielefeld vs VfL Osnabruck",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2026-10-18",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391376&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226586&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dynamo-dresden-vs-fc-magdeburg-2026-10-18",
-    event: "Dynamo Dresden vs FC Magdeburg",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2026-10-18",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391375&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226585&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "karlsruher-sc-vs-sv-darmstadt-98-2026-10-18",
-    event: "Karlsruher SC vs SV Darmstadt 98",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2026-10-18",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391374&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226584&a=3013769&m=109004" },
     ],
   },
   {
@@ -2685,9 +2469,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
       { store: "Gigsberg", price: 68.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954596&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk2: TicketProduct[] = [
   {
     id: "ac-milan-vs-atalanta-2026-10-18",
     event: "AC Milan vs Atalanta",
@@ -2907,6 +2688,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
       { store: "Gigsberg", price: 137.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536430&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk2: TicketProduct[] = [
   {
     id: "manchester-city-vs-aek-athens-2026-10-20",
     event: "Manchester City vs AEK Athens",
@@ -2978,7 +2762,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 415.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391405&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 549.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226610&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 440.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536426&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 440.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536426&a=3013769&m=102705" },
     ],
   },
   {
@@ -2993,7 +2777,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391411&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226616&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 78.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536424&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536424&a=3013769&m=102705" },
     ],
   },
   {
@@ -3097,7 +2881,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 229.75, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391415&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 303.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226620&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 300.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536447&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 308.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536447&a=3013769&m=102705" },
     ],
   },
   {
@@ -3112,7 +2896,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 131.45, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391416&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 173.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226621&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 190.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536449&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 147.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536449&a=3013769&m=102705" },
     ],
   },
   {
@@ -3142,7 +2926,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 62.75, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391418&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 82.97, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226623&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252808069&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 53.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252808069&a=3013769&m=102705" },
     ],
   },
   {
@@ -3157,7 +2941,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 114.48, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391413&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226618&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 165.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536448&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 165.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536448&a=3013769&m=102705" },
     ],
   },
   {
@@ -3288,34 +3072,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391425&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226630&a=3013769&m=109004" },
       { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939536475&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-st-pauli-2026-10-23",
-    event: "SV Darmstadt 98 vs St Pauli",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2026-10-23",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391433&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226638&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-vfl-wolfsburg-2026-10-23",
-    event: "VfL Bochum vs VfL Wolfsburg",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2026-10-23",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391434&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226639&a=3013769&m=109004" },
     ],
   },
   {
@@ -3457,8 +3213,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923428&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923341&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252808854&a=3013769&m=102705" },
     ],
   },
@@ -3474,20 +3228,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 168.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391461&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226666&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-magdeburg-vs-karlsruher-sc-2026-10-24",
-    event: "FC Magdeburg vs Karlsruher SC",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2026-10-24",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391460&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226665&a=3013769&m=109004" },
     ],
   },
   {
@@ -3544,7 +3284,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 157.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391437&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 208.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226642&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 207.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953589&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 228.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953589&a=3013769&m=102705" },
     ],
   },
   {
@@ -3780,8 +3520,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391451&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226656&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954723&a=3013769&m=102705" },
     ],
   },
@@ -3957,7 +3695,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391469&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226674&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957878&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 44.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957878&a=3013769&m=102705" },
     ],
   },
   {
@@ -3988,48 +3726,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 50.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391498&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 67.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226274&a=3013769&m=109004" },
       { store: "Gigsberg", price: 67.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957787&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "eintracht-braunschweig-vs-hannover-96-2026-10-25",
-    event: "Eintracht Braunschweig vs Hannover 96",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2026-10-25",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391484&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226689&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-dynamo-dresden-2026-10-25",
-    event: "Holstein Kiel vs Dynamo Dresden",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2026-10-25",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391483&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226688&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-spvgg-greuther-furth-2026-10-25",
-    event: "VfL Osnabruck vs SpVgg Greuther Furth",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2026-10-25",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391485&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226690&a=3013769&m=109004" },
     ],
   },
   {
@@ -4145,7 +3841,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 216.25, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391476&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 285.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226681&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 311.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952700&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 305.35, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952700&a=3013769&m=102705" },
     ],
   },
   {
@@ -4517,7 +4213,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Rio de Janeiro",
     date: "2026-10-26",
     time: "20:00:00",
-    competition: "Campeonato Brasileiro",
+    competition: "Brasileirão",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F360%2Fthumbnail.jpg&feedId=117951&k=9c97a71f1b20d3042519f7e634f601caeac9cd6f",
     offers: [
       { store: "FootballTicketNetUK", price: 148.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46244427197&a=3013769&m=109002" },
@@ -4588,26 +4284,12 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Lisbon",
     date: "2026-10-27",
     time: "20:15:00",
-    competition: "Taca Da Liga",
+    competition: "Taça da Liga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F189%2Fthumbnail.jpg&feedId=117951&k=ceac3df9afb1abcec42322e44a68b9544866f5a7",
     offers: [
       { store: "FootballTicketNetUK", price: 29.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391512&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226288&a=3013769&m=109004" },
       { store: "Gigsberg", price: 44.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952442&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "1-fc-koln-vs-fc-union-berlin-2026-10-27",
-    event: "1. FC Koln vs FC Union Berlin",
-    venue: "RheinEnergieStadion",
-    city: "Cologne",
-    date: "2026-10-27",
-    time: "20:45:00",
-    competition: "Dfb Pokal",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F132%2Fthumbnail.jpg&feedId=117951&k=4a77d3fede826239a3d047ec7f29ab767bc004d3",
-    offers: [
-      { store: "FootballTicketNetUK", price: 42461.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46188466305&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 56136.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46188464780&a=3013769&m=109004" },
     ],
   },
   {
@@ -4632,7 +4314,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Dortmund",
     date: "2026-10-27",
     time: "20:45:00",
-    competition: "Dfb Pokal",
+    competition: "DFB-Pokal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F124%2Fthumbnail.jpg&feedId=117951&k=8d7bd0a1a8f0862c81c8f81bc848aa2400193c29",
     offers: [
       { store: "FootballTicketNetUK", price: 50.03, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391520&a=3013769&m=109002" },
@@ -4661,7 +4343,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Freiburg",
     date: "2026-10-28",
     time: "18:00:00",
-    competition: "Dfb Pokal",
+    competition: "DFB-Pokal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5682%2Fthumbnail.jpg&feedId=117951&k=5466f4abc91cc72e804627eb5cdd0716a22c9f20",
     offers: [
       { store: "FootballTicketNetUK", price: 253.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46235545230&a=3013769&m=109002" },
@@ -4836,7 +4518,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Porto",
     date: "2026-10-28",
     time: "20:30:00",
-    competition: "Taca Da Liga",
+    competition: "Taça da Liga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F188%2Fthumbnail.jpg&feedId=117951&k=a333b1f8df822f6704581fc804b05d57377b0268",
     offers: [
       { store: "FootballTicketNetUK", price: 24.59, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391511&a=3013769&m=109002" },
@@ -4865,7 +4547,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Leverkusen",
     date: "2026-10-28",
     time: "20:45:00",
-    competition: "Dfb Pokal",
+    competition: "DFB-Pokal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F122%2Fthumbnail.jpg&feedId=117951&k=e0d391a32a17bd6e28bf2dde40aaa19eb3126c47",
     offers: [
       { store: "FootballTicketNetUK", price: 168.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46235545229&a=3013769&m=109002" },
@@ -4879,7 +4561,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Munich",
     date: "2026-10-28",
     time: "20:45:00",
-    competition: "Dfb Pokal",
+    competition: "DFB-Pokal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F123%2Fthumbnail.jpg&feedId=117951&k=9511ef106ba262f83d0309e992c0dba155299b96",
     offers: [
       { store: "FootballTicketNetUK", price: 91.59, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391531&a=3013769&m=109002" },
@@ -4937,7 +4619,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Manchester",
     date: "2026-10-29",
     time: "20:00:00",
-    competition: "Women Champions League",
+    competition: "UEFA Women's Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5414%2Fthumbnail.jpg&feedId=117951&k=1700be100b53024b5338983173d933d5f7e0e7f7",
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46030967610&a=3013769&m=109002" },
@@ -4966,7 +4648,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     city: "Lisbon",
     date: "2026-10-29",
     time: "20:45:00",
-    competition: "Taca Da Liga",
+    competition: "Taça da Liga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F187%2Fthumbnail.jpg&feedId=117951&k=577de8cf7c4bcb59d9e91cb5a5c850ac30dccc09",
     offers: [
       { store: "FootballTicketNetUK", price: 32.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391513&a=3013769&m=109002" },
@@ -4988,34 +4670,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     ],
   },
   {
-    id: "dsc-arminia-bielefeld-vs-eintracht-braunschweig-2026-10-30",
-    event: "DSC Arminia Bielefeld vs Eintracht Braunschweig",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2026-10-30",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391535&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226313&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-energie-cottbus-vs-vfl-bochum-2026-10-30",
-    event: "FC Energie Cottbus vs VfL Bochum",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2026-10-30",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391536&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226314&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "le-havre-ac-vs-paris-saint-germain-2026-10-30",
     event: "Le Havre AC vs Paris Saint-Germain",
     venue: "Stade Oceane",
@@ -5027,19 +4681,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 168.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391538&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226316&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sheffield-united-vs-wrexham-fc-2026-10-30",
-    event: "Sheffield United vs Wrexham FC",
-    venue: "Bramall Lane",
-    date: "2026-10-30",
-    time: "20:00:00",
-    competition: "EFL Championship",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
-    offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923437&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923350&a=3013769&m=109004" },
     ],
   },
   {
@@ -5127,34 +4768,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 126.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391589&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 167.05, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226347&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-fc-magdeburg-2026-10-31",
-    event: "SV Darmstadt 98 vs FC Magdeburg",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2026-10-31",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391588&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226346&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-vfl-osnabruck-2026-10-31",
-    event: "VfL Wolfsburg vs VfL Osnabruck",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2026-10-31",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391591&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226349&a=3013769&m=109004" },
     ],
   },
   {
@@ -5306,9 +4919,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
       { store: "Gigsberg", price: 71.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953690&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk3: TicketProduct[] = [
   {
     id: "millwall-vs-derby-county-2026-10-31",
     event: "Millwall vs Derby County",
@@ -5692,20 +5302,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
-    id: "karlsruher-sc-vs-fc-heidenheim-2026-10-31",
-    event: "Karlsruher SC vs FC Heidenheim",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2026-10-31",
-    time: "20:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391590&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226348&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "ac-milan-vs-inter-milan-2026-10-31",
     event: "AC Milan vs Inter Milan",
     venue: "Giuseppe Meazza",
@@ -5720,6 +5316,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
       { store: "Gigsberg", price: 196.24, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957809&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk3: TicketProduct[] = [
   {
     id: "anderlecht-vs-westerlo-2026-10-31",
     event: "Anderlecht vs Westerlo",
@@ -5838,48 +5437,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
-    id: "hannover-96-vs-dynamo-dresden-2026-11-01",
-    event: "Hannover 96 vs Dynamo Dresden",
-    venue: "HDI-Arena",
-    city: "Hannover",
-    date: "2026-11-01",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F128%2Fthumbnail.jpg&feedId=117951&k=af1a784788d3e012c6923304dd1680aa99c1cac8",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391608&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226366&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-holstein-kiel-2026-11-01",
-    event: "SpVgg Greuther Furth vs Holstein Kiel",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2026-11-01",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391592&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226350&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-fc-nurnberg-2026-11-01",
-    event: "St Pauli vs FC Nurnberg",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2026-11-01",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391609&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226367&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "frosinone-calcio-vs-torino-2026-11-01",
     event: "Frosinone Calcio vs Torino",
     venue: "Stadio Benito Stirpe",
@@ -5962,8 +5519,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391607&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226365&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954658&a=3013769&m=102705" },
     ],
   },
@@ -6037,7 +5592,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391614&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226372&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.35, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956483&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956483&a=3013769&m=102705" },
     ],
   },
   {
@@ -6198,7 +5753,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391633&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 71.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226391&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 32.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957652&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 32.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957652&a=3013769&m=102705" },
     ],
   },
   {
@@ -6416,7 +5971,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     city: "Rio de Janeiro",
     date: "2026-11-04",
     time: "19:30:00",
-    competition: "Campeonato Brasileiro",
+    competition: "Brasileirão",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F360%2Fthumbnail.jpg&feedId=117951&k=9c97a71f1b20d3042519f7e634f601caeac9cd6f",
     offers: [
       { store: "FootballTicketNetUK", price: 148.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46258245321&a=3013769&m=109002" },
@@ -6750,34 +6305,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
-    id: "dynamo-dresden-vs-spvgg-greuther-furth-2026-11-06",
-    event: "Dynamo Dresden vs SpVgg Greuther Furth",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2026-11-06",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391671&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226429&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "eintracht-braunschweig-vs-fc-energie-cottbus-2026-11-06",
-    event: "Eintracht Braunschweig vs FC Energie Cottbus",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2026-11-06",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391672&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226430&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "derby-county-vs-bolton-wanderers-2026-11-06",
     event: "Derby County vs Bolton Wanderers",
     venue: "Pride Park Stadium",
@@ -6875,7 +6402,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391675&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 67.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226433&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 75.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957979&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 75.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957979&a=3013769&m=102705" },
     ],
   },
   {
@@ -6938,34 +6465,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
-    id: "holstein-kiel-vs-dsc-arminia-bielefeld-2026-11-07",
-    event: "Holstein Kiel vs DSC Arminia Bielefeld",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2026-11-07",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391700&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226458&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-fc-kaiserslautern-2026-11-07",
-    event: "VfL Osnabruck vs FC Kaiserslautern",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2026-11-07",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391701&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226459&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "arsenal-vs-hull-city-2026-11-07",
     event: "Arsenal vs Hull City",
     venue: "Emirates Stadium",
@@ -6977,7 +6476,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 160.97, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391676&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 212.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226434&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 232.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953596&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 230.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953596&a=3013769&m=102705" },
     ],
   },
   {
@@ -7142,7 +6641,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 293.85, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391694&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 388.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226452&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 274.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954824&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 244.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954824&a=3013769&m=102705" },
     ],
   },
   {
@@ -7170,8 +6669,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391695&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226453&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954712&a=3013769&m=102705" },
     ],
   },
@@ -7350,34 +6847,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-magdeburg-vs-st-pauli-2026-11-08",
-    event: "FC Magdeburg vs St Pauli",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2026-11-08",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391717&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227447&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-karlsruher-sc-2026-11-08",
-    event: "VfL Bochum vs Karlsruher SC",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2026-11-08",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391716&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227446&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "brighton-hove-albion-vs-brentford-2026-11-08",
     event: "Brighton & Hove Albion vs Brentford",
     venue: "American Express Stadium",
@@ -7445,7 +6914,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391723&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227453&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956372&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956372&a=3013769&m=102705" },
     ],
   },
   {
@@ -7520,20 +6989,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 108.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391711&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 143.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227441&a=3013769&m=109004" },
       { store: "Gigsberg", price: 145.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954740&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "cincinnati-bengals-vs-atlanta-falcons-2026-11-08",
-    event: "Cincinnati Bengals vs Atlanta Falcons",
-    venue: "Santiago Bernabeu",
-    city: "Madrid",
-    date: "2026-11-08",
-    time: "15:30:00",
-    competition: "Nfl International Games",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F62%2Fthumbnail.jpg&feedId=117951&k=dc0d05447f50e8f463a3401e3e0dd38fd6c31c13",
-    offers: [
-      { store: "FootballTicketNetUK", price: 329.79, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46148214844&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 436.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46148214846&a=3013769&m=109004" },
     ],
   },
   {
@@ -7826,7 +7281,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391720&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227450&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956445&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956445&a=3013769&m=102705" },
     ],
   },
   {
@@ -7841,7 +7296,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391710&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 105.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227440&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 116.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954787&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954787&a=3013769&m=102705" },
     ],
   },
   {
@@ -7871,7 +7326,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.25, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391722&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 47.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227452&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956252&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956252&a=3013769&m=102705" },
     ],
   },
   {
@@ -7938,7 +7393,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     city: "London",
     date: "2026-11-12",
     time: "19:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F21%2Fthumbnail.jpg&feedId=117951&k=5f74940cfbe3ec73e8cd3becccdc269a38954be3",
     offers: [
       { store: "FootballTicketNetUK", price: 56.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391748&a=3013769&m=109002" },
@@ -7946,9 +7401,6 @@ const minedTicketProductsChunk3: TicketProduct[] = [
       { store: "Gigsberg", price: 52.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537316&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk4: TicketProduct[] = [
   {
     id: "turkey-vs-belgium-2026-11-12",
     event: "Turkey vs Belgium",
@@ -7956,7 +7408,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "İzmir",
     date: "2026-11-12",
     time: "20:00:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4652%2Fthumbnail.jpg&feedId=117951&k=8a5ccd82d0a3ee0707ffaa73d30456cddd5e5976",
     offers: [
       { store: "FootballTicketNetUK", price: 212.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46195147410&a=3013769&m=109002" },
@@ -7970,12 +7422,12 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Prague",
     date: "2026-11-12",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F226%2Fthumbnail.jpg&feedId=117951&k=fbfb9c05f006cbe04b90740297d7c5ca058372a5",
     offers: [
       { store: "FootballTicketNetUK", price: 174.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391747&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 230.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227224&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537320&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537320&a=3013769&m=102705" },
     ],
   },
   {
@@ -7985,12 +7437,12 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Milan",
     date: "2026-11-12",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
       { store: "FootballTicketNetUK", price: 46.63, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391749&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227226&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 68.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537319&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 67.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537319&a=3013769&m=102705" },
     ],
   },
   {
@@ -8000,7 +7452,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Glasgow",
     date: "2026-11-13",
     time: "19:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F245%2Fthumbnail.jpg&feedId=117951&k=82ae09586a457f27d4c589d997b62926c31a7e02",
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391752&a=3013769&m=109002" },
@@ -8015,7 +7467,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Luxembourg",
     date: "2026-11-13",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4650%2Fthumbnail.jpg&feedId=117951&k=b17c81925e8b0a05d6e41b294418da7bdb4b23c8",
     offers: [
       { store: "FootballTicketNetUK", price: 55.12, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146434&a=3013769&m=109002" },
@@ -8030,7 +7482,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Amsterdam",
     date: "2026-11-13",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F143%2Fthumbnail.jpg&feedId=117951&k=c017c4f092c6695a2b0d6a79324b849578da7425",
     offers: [
       { store: "FootballTicketNetUK", price: 103.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391750&a=3013769&m=109002" },
@@ -8045,7 +7497,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Košice",
     date: "2026-11-13",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5824%2Fthumbnail.jpg&feedId=117951&k=257f17b7e2f7488b36903a076f6c4f36c091004d",
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146433&a=3013769&m=109002" },
@@ -8060,7 +7512,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Ljubljana",
     date: "2026-11-13",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F534%2Fthumbnail.jpg&feedId=117951&k=6136264b08d3843d2b89aec074e3e2ec085dd25c",
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146432&a=3013769&m=109002" },
@@ -8075,7 +7527,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Braga",
     date: "2026-11-14",
     time: "19:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F186%2Fthumbnail.jpg&feedId=117951&k=7365ad0cd89d4f3367031d11e2d9c83cb18fd405",
     offers: [
       { store: "FootballTicketNetUK", price: 106.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391754&a=3013769&m=109002" },
@@ -8089,7 +7541,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     venue: "Telia 5G Areena",
     date: "2026-11-15",
     time: "19:00:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F225%2Fthumbnail.jpg&feedId=117951&k=cd857d66911e4e54a31292345b4fec1f69e89226",
     offers: [
       { store: "FootballTicketNetUK", price: 55.12, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146426&a=3013769&m=109002" },
@@ -8104,7 +7556,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Brussels",
     date: "2026-11-15",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F243%2Fthumbnail.jpg&feedId=117951&k=591423ae2f5fd2cc549758041d7fad4952c5ae1d",
     offers: [
       { store: "FootballTicketNetUK", price: 150.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391755&a=3013769&m=109002" },
@@ -8119,7 +7571,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Bordeaux",
     date: "2026-11-15",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F744%2Fthumbnail.jpg&feedId=117951&k=9cc6127954614e153d65a71f4be13fb3b9b765cd",
     offers: [
       { store: "FootballTicketNetUK", price: 114.49, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391756&a=3013769&m=109002" },
@@ -8134,7 +7586,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Madrid",
     date: "2026-11-15",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1230%2Fthumbnail.jpg&feedId=117951&k=5bd5ec2fcd7357f9b352ae72fe07c16eeb96d832",
     offers: [
       { store: "FootballTicketNetUK", price: 55.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391757&a=3013769&m=109002" },
@@ -8149,7 +7601,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Tórshavn",
     date: "2026-11-16",
     time: "15:00:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F694%2Fthumbnail.jpg&feedId=117951&k=52a9a20b940f657bd7a346644bc375a876a960d4",
     offers: [
       { store: "FootballTicketNetUK", price: 50.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146427&a=3013769&m=109002" },
@@ -8164,7 +7616,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Reykjavík",
     date: "2026-11-16",
     time: "17:00:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F693%2Fthumbnail.jpg&feedId=117951&k=a3722408039f0fcddf493bf926bf0fad59add436",
     offers: [
       { store: "FootballTicketNetUK", price: 59.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46216625719&a=3013769&m=109002" },
@@ -8179,7 +7631,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Kaunas",
     date: "2026-11-16",
     time: "19:00:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2795%2Fthumbnail.jpg&feedId=117951&k=cddcda5dd512c6228557225a2fcbaf4be455a6cd",
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146428&a=3013769&m=109002" },
@@ -8194,7 +7646,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Berlin",
     date: "2026-11-16",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F129%2Fthumbnail.jpg&feedId=117951&k=a0ff3bce0ee8ce838fd6bc60202b13b2383214af",
     offers: [
       { store: "FootballTicketNetUK", price: 59.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391759&a=3013769&m=109002" },
@@ -8209,7 +7661,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Nea Ionia",
     date: "2026-11-16",
     time: "21:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4647%2Fthumbnail.jpg&feedId=117951&k=a566d812682e2b136de262c447af917e74ac40e4",
     offers: [
       { store: "FootballTicketNetUK", price: 106.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46134726387&a=3013769&m=109002" },
@@ -8223,7 +7675,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Cardiff",
     date: "2026-11-17",
     time: "19:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F27%2Fthumbnail.jpg&feedId=117951&k=480c50f1bd694f1db067ae77edf1453d28f6f5bd",
     offers: [
       { store: "FootballTicketNetUK", price: 200.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391760&a=3013769&m=109002" },
@@ -8238,7 +7690,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Copenhagen",
     date: "2026-11-17",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F761%2Fthumbnail.jpg&feedId=117951&k=1ef8f0bae612f15d5cc99788b58eb06496d32513",
     offers: [
       { store: "FootballTicketNetUK", price: 458.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46121478793&a=3013769&m=109002" },
@@ -8253,7 +7705,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Budapest",
     date: "2026-11-17",
     time: "20:45:00",
-    competition: "Nations League",
+    competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F520%2Fthumbnail.jpg&feedId=117951&k=79f70e1428e52faa32ccf750c3929330c6794f77",
     offers: [
       { store: "FootballTicketNetUK", price: 72.08, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391761&a=3013769&m=109002" },
@@ -8268,39 +7720,11 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     city: "Rio de Janeiro",
     date: "2026-11-17",
     time: "21:00:00",
-    competition: "Campeonato Brasileiro",
+    competition: "Brasileirão",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F360%2Fthumbnail.jpg&feedId=117951&k=9c97a71f1b20d3042519f7e634f601caeac9cd6f",
     offers: [
       { store: "FootballTicketNetUK", price: 148.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46248882223&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 196.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46248882227&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dsc-arminia-bielefeld-vs-fc-magdeburg-2026-11-20",
-    event: "DSC Arminia Bielefeld vs FC Magdeburg",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2026-11-20",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391766&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227243&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-fc-heidenheim-2026-11-20",
-    event: "SV Darmstadt 98 vs FC Heidenheim",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2026-11-20",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391765&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227242&a=3013769&m=109004" },
     ],
   },
   {
@@ -8315,7 +7739,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391764&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227241&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954664&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954664&a=3013769&m=102705" },
     ],
   },
   {
@@ -8403,34 +7827,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 168.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391793&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227270&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "hannover-96-vs-spvgg-greuther-furth-2026-11-21",
-    event: "Hannover 96 vs SpVgg Greuther Furth",
-    venue: "HDI-Arena",
-    city: "Hannover",
-    date: "2026-11-21",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F128%2Fthumbnail.jpg&feedId=117951&k=af1a784788d3e012c6923304dd1680aa99c1cac8",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391792&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227269&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-holstein-kiel-2026-11-21",
-    event: "VfL Wolfsburg vs Holstein Kiel",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2026-11-21",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391794&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227271&a=3013769&m=109004" },
     ],
   },
   {
@@ -8567,6 +7963,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
       { store: "Gigsberg", price: 52.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568881&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk4: TicketProduct[] = [
   {
     id: "ss-lazio-vs-lecce-2026-11-21",
     event: "SS Lazio vs Lecce",
@@ -8591,8 +7990,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923439&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923352&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814428&a=3013769&m=102705" },
     ],
   },
@@ -8800,7 +8197,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 58.3, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391787&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227264&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 77.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954736&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 81.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954736&a=3013769&m=102705" },
     ],
   },
   {
@@ -8816,20 +8213,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 61.48, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391782&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 81.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227259&a=3013769&m=109004" },
       { store: "Gigsberg", price: 90.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952756&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-vfl-bochum-2026-11-21",
-    event: "St Pauli vs VfL Bochum",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2026-11-21",
-    time: "20:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391795&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227272&a=3013769&m=109004" },
     ],
   },
   {
@@ -8937,20 +8320,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-energie-cottbus-vs-hertha-berlin-sc-2026-11-22",
-    event: "FC Energie Cottbus vs Hertha Berlin SC",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2026-11-22",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391812&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227289&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-kaiserslautern-vs-dynamo-dresden-2026-11-22",
     event: "FC Kaiserslautern vs Dynamo Dresden",
     venue: "Fritz Walter Stadion",
@@ -8962,20 +8331,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 126.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391810&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 167.05, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227287&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "karlsruher-sc-vs-vfl-osnabruck-2026-11-22",
-    event: "Karlsruher SC vs VfL Osnabruck",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2026-11-22",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391811&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227288&a=3013769&m=109004" },
     ],
   },
   {
@@ -9252,7 +8607,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 130.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391817&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 172.62, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227294&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957645&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 118.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957645&a=3013769&m=102705" },
     ],
   },
   {
@@ -9351,8 +8706,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923440&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923353&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814842&a=3013769&m=102705" },
     ],
   },
@@ -9368,7 +8721,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 169.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391839&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227316&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 244.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539129&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 230.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539129&a=3013769&m=102705" },
     ],
   },
   {
@@ -9487,7 +8840,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 114.48, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391837&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227314&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 169.71, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539131&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 169.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539131&a=3013769&m=102705" },
     ],
   },
   {
@@ -9695,7 +9048,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 139.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391852&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 184.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227329&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 231.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539153&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 231.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539153&a=3013769&m=102705" },
     ],
   },
   {
@@ -9828,7 +9181,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46013117276&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227344&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 100.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815158&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 93.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815158&a=3013769&m=102705" },
     ],
   },
   {
@@ -9918,20 +9271,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     ],
   },
   {
-    id: "vfl-bochum-vs-sv-darmstadt-98-2026-11-27",
-    event: "VfL Bochum vs SV Darmstadt 98",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2026-11-27",
-    time: "18:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391870&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227349&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "nottingham-forest-vs-chelsea-2026-11-27",
     event: "Nottingham Forest vs Chelsea",
     venue: "City Ground",
@@ -9990,20 +9329,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     ],
   },
   {
-    id: "dynamo-dresden-vs-st-pauli-2026-11-28",
-    event: "Dynamo Dresden vs St Pauli",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2026-11-28",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391902&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227381&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "hertha-berlin-sc-vs-karlsruher-sc-2026-11-28",
     event: "Hertha Berlin SC vs Karlsruher SC",
     venue: "Olympiastadion",
@@ -10015,20 +9340,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391901&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227380&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-fc-kaiserslautern-2026-11-28",
-    event: "Holstein Kiel vs FC Kaiserslautern",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2026-11-28",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391903&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227382&a=3013769&m=109004" },
     ],
   },
   {
@@ -10133,7 +9444,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 115.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391874&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 153.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227353&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 160.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953758&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 160.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953758&a=3013769&m=102705" },
     ],
   },
   {
@@ -10280,9 +9591,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F127%2Fthumbnail.jpg&feedId=117951&k=e188da378b779b9b14289d567db4911292220987",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391892&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227371&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 478.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954587&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 279.88, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954587&a=3013769&m=102705" },
     ],
   },
   {
@@ -10309,8 +9618,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391894&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227373&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954738&a=3013769&m=102705" },
     ],
   },
@@ -10416,20 +9723,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 76.32, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391889&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 100.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227368&a=3013769&m=109004" },
       { store: "Gigsberg", price: 111.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952701&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-hannover-96-2026-11-28",
-    event: "VfL Osnabruck vs Hannover 96",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2026-11-28",
-    time: "20:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391904&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227383&a=3013769&m=109004" },
     ],
   },
   {
@@ -10550,51 +9843,6 @@ const minedTicketProductsChunk4: TicketProduct[] = [
       { store: "Gigsberg", price: 67.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957945&a=3013769&m=102705" },
     ],
   },
-  {
-    id: "eintracht-braunschweig-vs-vfl-wolfsburg-2026-11-29",
-    event: "Eintracht Braunschweig vs VfL Wolfsburg",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2026-11-29",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391921&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227400&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-magdeburg-vs-fc-energie-cottbus-2026-11-29",
-    event: "FC Magdeburg vs FC Energie Cottbus",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2026-11-29",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391920&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227399&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-dsc-arminia-bielefeld-2026-11-29",
-    event: "SpVgg Greuther Furth vs DSC Arminia Bielefeld",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2026-11-29",
-    time: "13:30:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391922&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227401&a=3013769&m=109004" },
-    ],
-  },
-];
-
-const minedTicketProductsChunk5: TicketProduct[] = [
   {
     id: "brighton-hove-albion-vs-newcastle-united-2026-11-29",
     event: "Brighton & Hove Albion vs Newcastle United",
@@ -10956,7 +10204,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391925&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227404&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956325&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956325&a=3013769&m=102705" },
     ],
   },
   {
@@ -11110,7 +10358,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     city: "Rio de Janeiro",
     date: "2026-12-01",
     time: "21:00:00",
-    competition: "Campeonato Brasileiro",
+    competition: "Brasileirão",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F360%2Fthumbnail.jpg&feedId=117951&k=9c97a71f1b20d3042519f7e634f601caeac9cd6f",
     offers: [
       { store: "FootballTicketNetUK", price: 148.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146425&a=3013769&m=109002" },
@@ -11355,6 +10603,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
       { store: "FootballTicketNetUS", price: 56.06, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46253969326&a=3013769&m=109004" },
     ],
   },
+];
+
+const minedTicketProductsChunk5: TicketProduct[] = [
   {
     id: "galatasaray-vs-caykur-rizespor-2026-12-04",
     event: "Galatasaray vs Çaykur Rizespor",
@@ -11367,19 +10618,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 165.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392015&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 218.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228879&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sheffield-united-vs-west-ham-united-2026-12-04",
-    event: "Sheffield United vs West Ham United",
-    venue: "Bramall Lane",
-    date: "2026-12-04",
-    time: "20:00:00",
-    competition: "EFL Championship",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
-    offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923427&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923340&a=3013769&m=109004" },
     ],
   },
   {
@@ -11410,34 +10648,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391975&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228839&a=3013769&m=109004" },
       { store: "Gigsberg", price: 131.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953561&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "dsc-arminia-bielefeld-vs-dynamo-dresden-2026-12-05",
-    event: "DSC Arminia Bielefeld vs Dynamo Dresden",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2026-12-05",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391999&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228863&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-energie-cottbus-vs-vfl-osnabruck-2026-12-05",
-    event: "FC Energie Cottbus vs VfL Osnabruck",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2026-12-05",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392002&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228866&a=3013769&m=109004" },
     ],
   },
   {
@@ -11480,62 +10690,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 55.12, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391994&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 72.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228858&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "karlsruher-sc-vs-holstein-kiel-2026-12-05",
-    event: "Karlsruher SC vs Holstein Kiel",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2026-12-05",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391998&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228862&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-eintracht-braunschweig-2026-12-05",
-    event: "SV Darmstadt 98 vs Eintracht Braunschweig",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2026-12-05",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391995&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228859&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-fc-heidenheim-2026-12-05",
-    event: "St Pauli vs FC Heidenheim",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2026-12-05",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392001&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228865&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-fc-magdeburg-2026-12-05",
-    event: "VfL Wolfsburg vs FC Magdeburg",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2026-12-05",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392000&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228864&a=3013769&m=109004" },
     ],
   },
   {
@@ -11819,7 +10973,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392007&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228871&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958636&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 26.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958636&a=3013769&m=102705" },
     ],
   },
   {
@@ -12042,8 +11196,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391986&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228850&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954655&a=3013769&m=102705" },
     ],
   },
@@ -12367,7 +11519,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.28, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392024&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 53.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228888&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956263&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956263&a=3013769&m=102705" },
     ],
   },
   {
@@ -12382,7 +11534,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392021&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228885&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592964689&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592964689&a=3013769&m=102705" },
     ],
   },
   {
@@ -12412,7 +11564,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 19.08, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392020&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 25.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228884&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 29.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956442&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 29.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956442&a=3013769&m=102705" },
     ],
   },
   {
@@ -12442,7 +11594,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392022&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228886&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956272&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956272&a=3013769&m=102705" },
     ],
   },
   {
@@ -12650,7 +11802,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 101.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392055&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 134.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228919&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 147.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540727&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 147.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540727&a=3013769&m=102705" },
     ],
   },
   {
@@ -13127,62 +12279,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     ],
   },
   {
-    id: "dsc-arminia-bielefeld-vs-fc-kaiserslautern-2026-12-12",
-    event: "DSC Arminia Bielefeld vs FC Kaiserslautern",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392173&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226697&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dynamo-dresden-vs-fc-energie-cottbus-2026-12-12",
-    event: "Dynamo Dresden vs FC Energie Cottbus",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392171&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226695&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "eintracht-braunschweig-vs-karlsruher-sc-2026-12-12",
-    event: "Eintracht Braunschweig vs Karlsruher SC",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392175&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226699&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-magdeburg-vs-fc-nurnberg-2026-12-12",
-    event: "FC Magdeburg vs FC Nurnberg",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392174&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226698&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "hertha-berlin-sc-vs-sv-darmstadt-98-2026-12-12",
     event: "Hertha Berlin SC vs SV Darmstadt 98",
     venue: "Olympiastadion",
@@ -13194,65 +12290,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392169&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226693&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-hannover-96-2026-12-12",
-    event: "Holstein Kiel vs Hannover 96",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392172&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226696&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-vfl-wolfsburg-2026-12-12",
-    event: "SpVgg Greuther Furth vs VfL Wolfsburg",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392177&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226701&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-fc-heidenheim-2026-12-12",
-    event: "VfL Bochum vs FC Heidenheim",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392170&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226694&a=3013769&m=109004" },
-    ],
-  },
-];
-
-const minedTicketProductsChunk6: TicketProduct[] = [
-  {
-    id: "vfl-osnabruck-vs-st-pauli-2026-12-12",
-    event: "VfL Osnabruck vs St Pauli",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2026-12-12",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392176&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226700&a=3013769&m=109004" },
     ],
   },
   {
@@ -13417,7 +12454,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 71.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392147&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 94.0, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228948&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953635&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953635&a=3013769&m=102705" },
     ],
   },
   {
@@ -13564,8 +12601,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923436&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923349&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817075&a=3013769&m=102705" },
     ],
   },
@@ -13686,7 +12721,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 98.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392160&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228961&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 131.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955987&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 131.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955987&a=3013769&m=102705" },
     ],
   },
   {
@@ -13714,8 +12749,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392165&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228966&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954741&a=3013769&m=102705" },
     ],
   },
@@ -13862,7 +12895,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.61, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392202&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226726&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957799&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957799&a=3013769&m=102705" },
     ],
   },
   {
@@ -14055,7 +13088,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 61.48, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392198&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 81.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226722&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568902&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 90.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568902&a=3013769&m=102705" },
     ],
   },
   {
@@ -14070,7 +13103,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392197&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226721&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956332&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956332&a=3013769&m=102705" },
     ],
   },
   {
@@ -14085,7 +13118,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392191&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226715&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 50.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956356&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 50.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956356&a=3013769&m=102705" },
     ],
   },
   {
@@ -14100,7 +13133,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392196&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226720&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956446&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956446&a=3013769&m=102705" },
     ],
   },
   {
@@ -14130,7 +13163,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.83, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392194&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 38.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226718&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956390&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 43.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956390&a=3013769&m=102705" },
     ],
   },
   {
@@ -14233,9 +13266,12 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 45.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392200&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 60.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226724&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 39.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957644&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 39.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957644&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk6: TicketProduct[] = [
   {
     id: "juventus-vs-ac-monza-2026-12-14",
     event: "Juventus vs AC Monza",
@@ -14426,20 +13462,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-energie-cottbus-vs-holstein-kiel-2026-12-19",
-    event: "FC Energie Cottbus vs Holstein Kiel",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2026-12-19",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392261&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226785&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-heidenheim-vs-eintracht-braunschweig-2026-12-19",
     event: "FC Heidenheim vs Eintracht Braunschweig",
     venue: "Voith-Arena",
@@ -14479,76 +13501,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 55.12, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392253&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 72.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226777&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "karlsruher-sc-vs-dynamo-dresden-2026-12-19",
-    event: "Karlsruher SC vs Dynamo Dresden",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2026-12-19",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392257&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226781&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-spvgg-greuther-furth-2026-12-19",
-    event: "SV Darmstadt 98 vs SpVgg Greuther Furth",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2026-12-19",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392254&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226778&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-hertha-berlin-sc-2026-12-19",
-    event: "St Pauli vs Hertha Berlin SC",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2026-12-19",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392260&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226784&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-fc-magdeburg-2026-12-19",
-    event: "VfL Bochum vs FC Magdeburg",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2026-12-19",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392256&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226780&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-dsc-arminia-bielefeld-2026-12-19",
-    event: "VfL Wolfsburg vs DSC Arminia Bielefeld",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2026-12-19",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392258&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226782&a=3013769&m=109004" },
     ],
   },
   {
@@ -14889,8 +13841,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392244&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226768&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954641&a=3013769&m=102705" },
     ],
   },
@@ -14906,7 +13856,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 98.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392243&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226767&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 131.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954835&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 131.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954835&a=3013769&m=102705" },
     ],
   },
   {
@@ -15288,7 +14238,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392276&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226800&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 46.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956280&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956280&a=3013769&m=102705" },
     ],
   },
   {
@@ -15303,7 +14253,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392273&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226797&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956241&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956241&a=3013769&m=102705" },
     ],
   },
   {
@@ -15318,7 +14268,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392271&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 109.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226795&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956282&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 121.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956282&a=3013769&m=102705" },
     ],
   },
   {
@@ -15348,7 +14298,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392274&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226798&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956251&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956251&a=3013769&m=102705" },
     ],
   },
   {
@@ -15363,7 +14313,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 51.59, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392270&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 68.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226794&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 76.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956376&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 76.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956376&a=3013769&m=102705" },
     ],
   },
   {
@@ -15421,7 +14371,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.3, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392277&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 111.44, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226801&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957651&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957651&a=3013769&m=102705" },
     ],
   },
   {
@@ -15461,8 +14411,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923435&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923348&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818179&a=3013769&m=102705" },
     ],
   },
@@ -15787,7 +14735,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 68.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392325&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 90.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227040&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 100.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956478&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 100.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956478&a=3013769&m=102705" },
     ],
   },
   {
@@ -15802,7 +14750,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 27.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392324&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 35.82, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227039&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 41.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956313&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 41.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956313&a=3013769&m=102705" },
     ],
   },
   {
@@ -15817,7 +14765,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392317&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227032&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 50.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956355&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 50.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956355&a=3013769&m=102705" },
     ],
   },
   {
@@ -15862,7 +14810,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392320&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227035&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 50.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956402&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 50.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956402&a=3013769&m=102705" },
     ],
   },
   {
@@ -15895,9 +14843,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
       { store: "Gigsberg", price: 78.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956458&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk7: TicketProduct[] = [
   {
     id: "crystal-palace-vs-arsenal-2026-12-27",
     event: "Crystal Palace vs Arsenal",
@@ -16608,7 +15553,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392357&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227072&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 86.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954357&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 82.88, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954357&a=3013769&m=102705" },
     ],
   },
   {
@@ -16726,7 +15671,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.67, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392379&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227094&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957798&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957798&a=3013769&m=102705" },
     ],
   },
   {
@@ -16979,6 +15924,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
       { store: "Gigsberg", price: 105.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957976&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk7: TicketProduct[] = [
   {
     id: "arsenal-vs-brentford-2027-01-05",
     event: "Arsenal vs Brentford",
@@ -17061,7 +16009,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392409&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227124&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 36.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957806&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 32.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957806&a=3013769&m=102705" },
     ],
   },
   {
@@ -17121,7 +16069,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 45.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392403&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 60.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227118&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957641&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957641&a=3013769&m=102705" },
     ],
   },
   {
@@ -17387,8 +16335,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392421&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227136&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954700&a=3013769&m=102705" },
     ],
   },
@@ -17673,7 +16619,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392432&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227147&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956269&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956269&a=3013769&m=102705" },
     ],
   },
   {
@@ -17688,7 +16634,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392430&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227145&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956248&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956248&a=3013769&m=102705" },
     ],
   },
   {
@@ -17703,7 +16649,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.28, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392428&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 53.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227143&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956291&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956291&a=3013769&m=102705" },
     ],
   },
   {
@@ -17733,7 +16679,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 121.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392427&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 160.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227142&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 176.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956341&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 176.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956341&a=3013769&m=102705" },
     ],
   },
   {
@@ -17878,8 +16824,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392457&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227172&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954668&a=3013769&m=102705" },
     ],
   },
@@ -17895,7 +16839,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 98.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392456&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227171&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 131.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954828&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 131.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954828&a=3013769&m=102705" },
     ],
   },
   {
@@ -17958,48 +16902,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     ],
   },
   {
-    id: "dsc-arminia-bielefeld-vs-hannover-96-2027-01-16",
-    event: "DSC Arminia Bielefeld vs Hannover 96",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392490&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227458&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dynamo-dresden-vs-vfl-wolfsburg-2027-01-16",
-    event: "Dynamo Dresden vs VfL Wolfsburg",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392488&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227456&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "eintracht-braunschweig-vs-st-pauli-2027-01-16",
-    event: "Eintracht Braunschweig vs St Pauli",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392492&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227460&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-kaiserslautern-vs-fc-energie-cottbus-2027-01-16",
     event: "FC Kaiserslautern vs FC Energie Cottbus",
     venue: "Fritz Walter Stadion",
@@ -18014,20 +16916,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-magdeburg-vs-fc-heidenheim-2027-01-16",
-    event: "FC Magdeburg vs FC Heidenheim",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392491&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227459&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "hertha-berlin-sc-vs-fc-nurnberg-2027-01-16",
     event: "Hertha Berlin SC vs FC Nurnberg",
     venue: "Olympiastadion",
@@ -18039,48 +16927,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392487&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227455&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-vfl-bochum-2027-01-16",
-    event: "Holstein Kiel vs VfL Bochum",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392489&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227457&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-karlsruher-sc-2027-01-16",
-    event: "SpVgg Greuther Furth vs Karlsruher SC",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392494&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227462&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-sv-darmstadt-98-2027-01-16",
-    event: "VfL Osnabruck vs SV Darmstadt 98",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2027-01-16",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392493&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227461&a=3013769&m=109004" },
     ],
   },
   {
@@ -18334,7 +17180,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392500&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227468&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958647&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 26.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958647&a=3013769&m=102705" },
     ],
   },
   {
@@ -18391,8 +17237,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923431&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923344&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818647&a=3013769&m=102705" },
     ],
   },
@@ -18555,14 +17399,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392485&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227200&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954727&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk8: TicketProduct[] = [
   {
     id: "sv-werder-bremen-vs-sv-elversberg-2027-01-16",
     event: "SV Werder Bremen vs SV Elversberg",
@@ -18575,7 +17414,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 55.12, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392484&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 72.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227199&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45593819608&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 100.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45593819608&a=3013769&m=102705" },
     ],
   },
   {
@@ -18649,7 +17488,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 120.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392511&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 158.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227479&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957653&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957653&a=3013769&m=102705" },
     ],
   },
   {
@@ -18887,7 +17726,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392507&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227475&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956296&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956296&a=3013769&m=102705" },
     ],
   },
   {
@@ -18902,7 +17741,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.15, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392510&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.86, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227478&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956337&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956337&a=3013769&m=102705" },
     ],
   },
   {
@@ -18947,7 +17786,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.15, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392509&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.86, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227477&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956255&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956255&a=3013769&m=102705" },
     ],
   },
   {
@@ -18962,7 +17801,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392505&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227473&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956347&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956347&a=3013769&m=102705" },
     ],
   },
   {
@@ -19127,7 +17966,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 148.24, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392541&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 195.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227509&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 214.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542943&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 214.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542943&a=3013769&m=102705" },
     ],
   },
   {
@@ -19411,48 +18250,6 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     ],
   },
   {
-    id: "dsc-arminia-bielefeld-vs-karlsruher-sc-2027-01-23",
-    event: "DSC Arminia Bielefeld vs Karlsruher SC",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2027-01-23",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392588&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227556&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dynamo-dresden-vs-fc-nurnberg-2027-01-23",
-    event: "Dynamo Dresden vs FC Nurnberg",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2027-01-23",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392586&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227554&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "eintracht-braunschweig-vs-fc-magdeburg-2027-01-23",
-    event: "Eintracht Braunschweig vs FC Magdeburg",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2027-01-23",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392589&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227557&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-kaiserslautern-vs-vfl-wolfsburg-2027-01-23",
     event: "FC Kaiserslautern vs VfL Wolfsburg",
     venue: "Fritz Walter Stadion",
@@ -19492,48 +18289,6 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392585&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227553&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-sv-darmstadt-98-2027-01-23",
-    event: "Holstein Kiel vs SV Darmstadt 98",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2027-01-23",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392587&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227555&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-st-pauli-2027-01-23",
-    event: "SpVgg Greuther Furth vs St Pauli",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2027-01-23",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392591&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227559&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-fc-heidenheim-2027-01-23",
-    event: "VfL Osnabruck vs FC Heidenheim",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2027-01-23",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392590&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227558&a=3013769&m=109004" },
     ],
   },
   {
@@ -19836,6 +18591,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
       { store: "Gigsberg", price: 138.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953358&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk8: TicketProduct[] = [
   {
     id: "queens-park-rangers-vs-southampton-2027-01-23",
     event: "Queens Park Rangers vs Southampton",
@@ -19908,7 +18666,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 82.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392555&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227523&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954358&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954358&a=3013769&m=102705" },
     ],
   },
   {
@@ -20041,8 +18799,6 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392580&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227548&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954718&a=3013769&m=102705" },
     ],
   },
@@ -20327,7 +19083,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392611&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227579&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956385&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956385&a=3013769&m=102705" },
     ],
   },
   {
@@ -20447,7 +19203,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392612&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227580&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956275&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956275&a=3013769&m=102705" },
     ],
   },
   {
@@ -20477,7 +19233,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392605&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227573&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 50.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956353&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 50.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956353&a=3013769&m=102705" },
     ],
   },
   {
@@ -20492,7 +19248,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392610&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227578&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 57.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956448&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956448&a=3013769&m=102705" },
     ],
   },
   {
@@ -20507,7 +19263,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392607&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227575&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 109.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956316&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956316&a=3013769&m=102705" },
     ],
   },
   {
@@ -20522,7 +19278,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.83, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392608&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 38.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227576&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956392&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 43.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956392&a=3013769&m=102705" },
     ],
   },
   {
@@ -20552,7 +19308,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392609&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227577&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956447&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956447&a=3013769&m=102705" },
     ],
   },
   {
@@ -20607,8 +19363,6 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923422&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923336&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819662&a=3013769&m=102705" },
     ],
   },
@@ -20997,7 +19751,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392704&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227707&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 113.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543638&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543638&a=3013769&m=102705" },
     ],
   },
   {
@@ -21012,7 +19766,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 20.72, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392699&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 27.39, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227702&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 31.88, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543635&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 31.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543635&a=3013769&m=102705" },
     ],
   },
   {
@@ -21176,20 +19930,6 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-energie-cottbus-vs-dsc-arminia-bielefeld-2027-01-30",
-    event: "FC Energie Cottbus vs DSC Arminia Bielefeld",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392737&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228717&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-heidenheim-vs-hertha-berlin-sc-2027-01-30",
     event: "FC Heidenheim vs Hertha Berlin SC",
     venue: "Voith-Arena",
@@ -21201,107 +19941,6 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 168.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392735&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228715&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-magdeburg-vs-vfl-osnabruck-2027-01-30",
-    event: "FC Magdeburg vs VfL Osnabruck",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392733&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228713&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-nurnberg-vs-spvgg-greuther-furth-2027-01-30",
-    event: "FC Nurnberg vs SpVgg Greuther Furth",
-    venue: "Max-Morlock-Stadion",
-    city: "Nürnberg",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F764%2Fthumbnail.jpg&feedId=117951&k=f18a1cfebf6a730d7291f6b942c58dd7d74e45c5",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392730&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228710&a=3013769&m=109004" },
-    ],
-  },
-];
-
-const minedTicketProductsChunk9: TicketProduct[] = [
-  {
-    id: "karlsruher-sc-vs-fc-kaiserslautern-2027-01-30",
-    event: "Karlsruher SC vs FC Kaiserslautern",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392732&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228712&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-dynamo-dresden-2027-01-30",
-    event: "SV Darmstadt 98 vs Dynamo Dresden",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392729&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228709&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-holstein-kiel-2027-01-30",
-    event: "St Pauli vs Holstein Kiel",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392736&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228716&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-eintracht-braunschweig-2027-01-30",
-    event: "VfL Bochum vs Eintracht Braunschweig",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392731&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228711&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-hannover-96-2027-01-30",
-    event: "VfL Wolfsburg vs Hannover 96",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2027-01-30",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392734&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228714&a=3013769&m=109004" },
     ],
   },
   {
@@ -21597,8 +20236,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923423&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923337&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819731&a=3013769&m=102705" },
     ],
   },
@@ -21807,8 +20444,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392725&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228705&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954643&a=3013769&m=102705" },
     ],
   },
@@ -22180,7 +20815,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392761&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228741&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956247&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956247&a=3013769&m=102705" },
     ],
   },
   {
@@ -22210,7 +20845,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.15, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392760&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.86, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228740&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956315&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956315&a=3013769&m=102705" },
     ],
   },
   {
@@ -22225,7 +20860,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 169.61, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392758&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 224.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228738&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 244.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956237&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 244.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956237&a=3013769&m=102705" },
     ],
   },
   {
@@ -22254,7 +20889,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392759&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228739&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956262&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956262&a=3013769&m=102705" },
     ],
   },
   {
@@ -22269,7 +20904,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392755&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228735&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956373&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956373&a=3013769&m=102705" },
     ],
   },
   {
@@ -22294,7 +20929,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     city: "Istanbul",
     date: "2027-02-02",
     time: "22:00:00",
-    competition: "Spanish Super Cup",
+    competition: "Supercopa de España",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F211%2Fthumbnail.jpg&feedId=117951&k=02ab372953230b4f9b8e9dcaf76dcdec4c5e71a0",
     offers: [
       { store: "FootballTicketNetUK", price: 339.22, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392784&a=3013769&m=109002" },
@@ -22384,7 +21019,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     city: "Istanbul",
     date: "2027-02-03",
     time: "22:00:00",
-    competition: "Spanish Super Cup",
+    competition: "Supercopa de España",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F852%2Fthumbnail.jpg&feedId=117951&k=bc6e3def90857c105cefb7902ea654b083b6275d",
     offers: [
       { store: "FootballTicketNetUK", price: 330.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392783&a=3013769&m=109002" },
@@ -22435,34 +21070,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     ],
   },
   {
-    id: "dsc-arminia-bielefeld-vs-fc-nurnberg-2027-02-06",
-    event: "DSC Arminia Bielefeld vs FC Nurnberg",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2027-02-06",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392822&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228809&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dynamo-dresden-vs-fc-heidenheim-2027-02-06",
-    event: "Dynamo Dresden vs FC Heidenheim",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2027-02-06",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392820&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228807&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-kaiserslautern-vs-st-pauli-2027-02-06",
     event: "FC Kaiserslautern vs St Pauli",
     venue: "Fritz Walter Stadion",
@@ -22502,62 +21109,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392819&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228806&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-fc-magdeburg-2027-02-06",
-    event: "Holstein Kiel vs FC Magdeburg",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2027-02-06",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392821&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228808&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-fc-energie-cottbus-2027-02-06",
-    event: "SpVgg Greuther Furth vs FC Energie Cottbus",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2027-02-06",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392825&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228812&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-vfl-bochum-2027-02-06",
-    event: "VfL Osnabruck vs VfL Bochum",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2027-02-06",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392824&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228811&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-karlsruher-sc-2027-02-06",
-    event: "VfL Wolfsburg vs Karlsruher SC",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2027-02-06",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392823&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228810&a=3013769&m=109004" },
     ],
   },
   {
@@ -22677,7 +21228,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 121.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392794&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 160.09, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228781&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 161.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953627&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 161.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953627&a=3013769&m=102705" },
     ],
   },
   {
@@ -22710,6 +21261,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
       { store: "Gigsberg", price: 44.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958028&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk9: TicketProduct[] = [
   {
     id: "leeds-united-vs-bournemouth-2027-02-06",
     event: "Leeds United vs Bournemouth",
@@ -22856,7 +21410,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 82.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392793&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228780&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954344&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954344&a=3013769&m=102705" },
     ],
   },
   {
@@ -22989,8 +21543,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392814&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228801&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954690&a=3013769&m=102705" },
     ],
   },
@@ -23019,8 +21571,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392815&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228802&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954754&a=3013769&m=102705" },
     ],
   },
@@ -23060,7 +21610,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     city: "Istanbul",
     date: "2027-02-06",
     time: "22:00:00",
-    competition: "Spanish Super Cup",
+    competition: "Supercopa de España",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F212%2Fthumbnail.jpg&feedId=117951&k=4dac830c49586ec6137d3ae4fa856b7b2f92d160",
     offers: [
       { store: "FootballTicketNetUK", price: 466.42, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392835&a=3013769&m=109002" },
@@ -23395,7 +21945,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.85, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392841&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228220&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956421&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956421&a=3013769&m=102705" },
     ],
   },
   {
@@ -23708,34 +22258,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     ],
   },
   {
-    id: "eintracht-braunschweig-vs-vfl-osnabruck-2027-02-13",
-    event: "Eintracht Braunschweig vs VfL Osnabruck",
-    venue: "Eintracht-Stadion",
-    city: "Braunschweig",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F429%2Fthumbnail.jpg&feedId=117951&k=dc5da61c68a9ce6c77e5161dbb680d44343fc20f",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392901&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228280&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-energie-cottbus-vs-vfl-wolfsburg-2027-02-13",
-    event: "FC Energie Cottbus vs VfL Wolfsburg",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392904&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228283&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-heidenheim-vs-spvgg-greuther-furth-2027-02-13",
     event: "FC Heidenheim vs SpVgg Greuther Furth",
     venue: "Voith-Arena",
@@ -23750,20 +22272,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     ],
   },
   {
-    id: "fc-magdeburg-vs-hertha-berlin-sc-2027-02-13",
-    event: "FC Magdeburg vs Hertha Berlin SC",
-    venue: "MDCC Arena",
-    city: "Magdeburg",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1243%2Fthumbnail.jpg&feedId=117951&k=5ae4f6d5ffde3f412539682782e6f40caafd15c6",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392900&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228279&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-nurnberg-vs-holstein-kiel-2027-02-13",
     event: "FC Nurnberg vs Holstein Kiel",
     venue: "Max-Morlock-Stadion",
@@ -23775,62 +22283,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 168.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392897&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228276&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "karlsruher-sc-vs-hannover-96-2027-02-13",
-    event: "Karlsruher SC vs Hannover 96",
-    venue: "Wildparkstadion",
-    city: "Karlsruhe",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F876%2Fthumbnail.jpg&feedId=117951&k=6d8c7fcca9afed899d628894934bc94cca08c2f1",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392899&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228278&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sv-darmstadt-98-vs-fc-kaiserslautern-2027-02-13",
-    event: "SV Darmstadt 98 vs FC Kaiserslautern",
-    venue: "Merck-Stadion am Bollenfalltor",
-    city: "Darmstadt",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F751%2Fthumbnail.jpg&feedId=117951&k=d6669978d1ea1e11faaa2458057201581df3e7ea",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392896&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228275&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "st-pauli-vs-dsc-arminia-bielefeld-2027-02-13",
-    event: "St Pauli vs DSC Arminia Bielefeld",
-    venue: "Millerntor-Stadion",
-    city: "Hamburg",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2629%2Fthumbnail.jpg&feedId=117951&k=11ff060df5da1143213f42e4ffcf032067f1d403",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392903&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228282&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-bochum-vs-dynamo-dresden-2027-02-13",
-    event: "VfL Bochum vs Dynamo Dresden",
-    venue: "Vonovia Ruhrstadion",
-    city: "Bochum",
-    date: "2027-02-13",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F140%2Fthumbnail.jpg&feedId=117951&k=81ae24487bb5009671906bc9f2ac285f774bc087",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392898&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228277&a=3013769&m=109004" },
     ],
   },
   {
@@ -23893,9 +22345,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
       { store: "Gigsberg", price: 45.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307690&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk10: TicketProduct[] = [
   {
     id: "fc-lorient-vs-le-havre-ac-2027-02-13",
     event: "FC Lorient vs Le Havre AC",
@@ -24028,7 +22477,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392912&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228291&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958648&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 26.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958648&a=3013769&m=102705" },
     ],
   },
   {
@@ -24191,8 +22640,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392892&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228271&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954627&a=3013769&m=102705" },
     ],
   },
@@ -24566,7 +23013,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392928&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228307&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956238&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956238&a=3013769&m=102705" },
     ],
   },
   {
@@ -24581,7 +23028,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392925&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228304&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956297&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956297&a=3013769&m=102705" },
     ],
   },
   {
@@ -24596,7 +23043,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392927&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228306&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956322&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956322&a=3013769&m=102705" },
     ],
   },
   {
@@ -24611,7 +23058,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 52.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392923&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 69.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228302&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 77.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660479&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 77.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660479&a=3013769&m=102705" },
     ],
   },
   {
@@ -24641,7 +23088,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392926&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228305&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956268&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956268&a=3013769&m=102705" },
     ],
   },
   {
@@ -24671,7 +23118,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392921&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228300&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956439&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956439&a=3013769&m=102705" },
     ],
   },
   {
@@ -24713,8 +23160,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923429&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923342&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820786&a=3013769&m=102705" },
     ],
   },
@@ -24852,48 +23297,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     ],
   },
   {
-    id: "dsc-arminia-bielefeld-vs-sv-darmstadt-98-2027-02-20",
-    event: "DSC Arminia Bielefeld vs SV Darmstadt 98",
-    venue: "Bielefelder Alm",
-    city: "Bielefeld",
-    date: "2027-02-20",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F712%2Fthumbnail.jpg&feedId=117951&k=1b5de2aa4710584d8cf9b3b77a200a5299f68691",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392988&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226881&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "dynamo-dresden-vs-eintracht-braunschweig-2027-02-20",
-    event: "Dynamo Dresden vs Eintracht Braunschweig",
-    venue: "Rudolf-Harbig-Stadion",
-    city: "Dresden",
-    date: "2027-02-20",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F759%2Fthumbnail.jpg&feedId=117951&k=329febc4c2c3913b6e2b1b398a817bbb3e9c7b78",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392986&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226879&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-energie-cottbus-vs-karlsruher-sc-2027-02-20",
-    event: "FC Energie Cottbus vs Karlsruher SC",
-    venue: "Stadion der Freundschaft",
-    city: "Cottbus",
-    date: "2027-02-20",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F540%2Fthumbnail.jpg&feedId=117951&k=764c3932794049beb5152303f4b712bc925d6607",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392990&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226883&a=3013769&m=109004" },
-    ],
-  },
-  {
     id: "fc-kaiserslautern-vs-fc-magdeburg-2027-02-20",
     event: "FC Kaiserslautern vs FC Magdeburg",
     venue: "Fritz Walter Stadion",
@@ -24933,48 +23336,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392985&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226878&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "holstein-kiel-vs-fc-heidenheim-2027-02-20",
-    event: "Holstein Kiel vs FC Heidenheim",
-    venue: "Holstein-Stadion",
-    city: "Kiel",
-    date: "2027-02-20",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2270%2Fthumbnail.jpg&feedId=117951&k=5291ed67e659158c2984d6d825b0b20c48fd8aec",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392987&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226880&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "spvgg-greuther-furth-vs-vfl-bochum-2027-02-20",
-    event: "SpVgg Greuther Furth vs VfL Bochum",
-    venue: "Trolli Arena",
-    city: "Fürth",
-    date: "2027-02-20",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F257%2Fthumbnail.jpg&feedId=117951&k=4c7207f106243ab7c2e3f3db7803527af695c352",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392991&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226884&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-wolfsburg-vs-st-pauli-2027-02-20",
-    event: "VfL Wolfsburg vs St Pauli",
-    venue: "Volkswagen Arena",
-    city: "Wolfsburg",
-    date: "2027-02-20",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F138%2Fthumbnail.jpg&feedId=117951&k=9b40c7e91b711e2d521dc31544d03713fec45ffe",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392989&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226882&a=3013769&m=109004" },
     ],
   },
   {
@@ -25343,8 +23704,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923430&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923343&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820861&a=3013769&m=102705" },
     ],
   },
@@ -25405,7 +23764,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 82.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392960&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228339&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954352&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954352&a=3013769&m=102705" },
     ],
   },
   {
@@ -25478,8 +23837,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F125%2Fthumbnail.jpg&feedId=117951&k=596dbaa97c49cbb311a2679723c12564aa4da708",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392979&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228358&a=3013769&m=109004" },
       { store: "Gigsberg", price: 266.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954607&a=3013769&m=102705" },
     ],
   },
@@ -25572,6 +23929,9 @@ const minedTicketProductsChunk10: TicketProduct[] = [
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46225630104&a=3013769&m=109004" },
     ],
   },
+];
+
+const minedTicketProductsChunk10: TicketProduct[] = [
   {
     id: "west-ham-united-vs-millwall-2027-02-21",
     event: "West Ham United vs Millwall",
@@ -25763,7 +24123,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393012&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226905&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 57.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956377&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956377&a=3013769&m=102705" },
     ],
   },
   {
@@ -25926,7 +24286,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 169.61, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393011&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 224.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226904&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 245.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956245&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 244.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956245&a=3013769&m=102705" },
     ],
   },
   {
@@ -25971,7 +24331,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393008&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 119.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226901&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 131.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956314&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 131.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956314&a=3013769&m=102705" },
     ],
   },
   {
@@ -26101,20 +24461,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393063&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 78.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226956&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "vfl-osnabruck-vs-holstein-kiel-2027-02-27",
-    event: "VfL Osnabruck vs Holstein Kiel",
-    venue: "Stadion an der Bremer Brucke",
-    city: "Osnabrück",
-    date: "2027-02-27",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2823%2Fthumbnail.jpg&feedId=117951&k=6a1890ea2494f3e2f8a0319a70e44cd4270a137b",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393064&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226957&a=3013769&m=109004" },
     ],
   },
   {
@@ -26567,9 +24913,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
       { store: "Gigsberg", price: 118.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954579&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk11: TicketProduct[] = [
   {
     id: "fc-augsburg-vs-sv-elversberg-2027-02-27",
     event: "FC Augsburg vs SV Elversberg",
@@ -26640,8 +24983,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393061&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226954&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954730&a=3013769&m=102705" },
     ],
   },
@@ -26956,7 +25297,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393087&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226980&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 106.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956286&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956286&a=3013769&m=102705" },
     ],
   },
   {
@@ -26971,7 +25312,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 104.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393090&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226983&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 151.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660486&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 151.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660486&a=3013769&m=102705" },
     ],
   },
   {
@@ -27001,7 +25342,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 20.14, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393085&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 26.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226978&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 31.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660478&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 31.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660478&a=3013769&m=102705" },
     ],
   },
   {
@@ -27016,7 +25357,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.31, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393086&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226979&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956393&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956393&a=3013769&m=102705" },
     ],
   },
   {
@@ -27222,8 +25563,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393131&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226834&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954648&a=3013769&m=102705" },
     ],
   },
@@ -27267,8 +25606,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393135&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226838&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954767&a=3013769&m=102705" },
     ],
   },
@@ -27296,8 +25633,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923424&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923338&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821751&a=3013769&m=102705" },
     ],
   },
@@ -27549,7 +25884,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 46.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393160&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226863&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 68.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958004&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 93.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958004&a=3013769&m=102705" },
     ],
   },
   {
@@ -27654,7 +25989,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393161&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226864&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 44.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958634&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 26.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958634&a=3013769&m=102705" },
     ],
   },
   {
@@ -27892,8 +26227,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393154&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226857&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1133.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954721&a=3013769&m=102705" },
     ],
   },
@@ -28270,6 +26603,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
       { store: "Gigsberg", price: 50.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956358&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk11: TicketProduct[] = [
   {
     id: "gd-estoril-praia-vs-academico-de-viseu-2027-03-07",
     event: "GD Estoril Praia vs Academico de Viseu",
@@ -28282,7 +26618,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393220&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226872&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956455&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956455&a=3013769&m=102705" },
     ],
   },
   {
@@ -28297,7 +26633,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393218&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226870&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956319&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956319&a=3013769&m=102705" },
     ],
   },
   {
@@ -28666,7 +27002,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393280&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227672&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958639&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 26.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958639&a=3013769&m=102705" },
     ],
   },
   {
@@ -28723,8 +27059,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923425&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923339&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822131&a=3013769&m=102705" },
     ],
   },
@@ -28755,7 +27089,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 82.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393250&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227642&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954348&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954348&a=3013769&m=102705" },
     ],
   },
   {
@@ -28813,8 +27147,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F122%2Fthumbnail.jpg&feedId=117951&k=e0d391a32a17bd6e28bf2dde40aaa19eb3126c47",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393265&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227657&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 139.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954802&a=3013769&m=102705" },
     ],
   },
   {
@@ -28887,8 +27220,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393268&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227660&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954665&a=3013769&m=102705" },
     ],
   },
@@ -28917,8 +27248,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393271&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227663&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954739&a=3013769&m=102705" },
     ],
   },
@@ -29202,7 +27531,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393294&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227686&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956236&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956236&a=3013769&m=102705" },
     ],
   },
   {
@@ -29250,9 +27579,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
       { store: "Gigsberg", price: 34.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956335&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk12: TicketProduct[] = [
   {
     id: "fc-famalicao-vs-rio-ave-2027-03-14",
     event: "FC Famalicao vs Rio Ave",
@@ -29265,7 +27591,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 52.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393289&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 69.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227681&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 77.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660477&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 77.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660477&a=3013769&m=102705" },
     ],
   },
   {
@@ -29325,7 +27651,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393287&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227679&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 50.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956435&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 50.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956435&a=3013769&m=102705" },
     ],
   },
   {
@@ -29931,8 +28257,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F132%2Fthumbnail.jpg&feedId=117951&k=4a77d3fede826239a3d047ec7f29ab767bc004d3",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393345&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228410&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954725&a=3013769&m=102705" },
     ],
   },
@@ -29976,8 +28300,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F127%2Fthumbnail.jpg&feedId=117951&k=e188da378b779b9b14289d567db4911292220987",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393344&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228409&a=3013769&m=109004" },
       { store: "Gigsberg", price: 509.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954652&a=3013769&m=102705" },
     ],
   },
@@ -30021,8 +28343,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393347&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228412&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954709&a=3013769&m=102705" },
     ],
   },
@@ -30098,7 +28418,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 126.77, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393370&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 167.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228435&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957649&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.88, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957649&a=3013769&m=102705" },
     ],
   },
   {
@@ -30128,7 +28448,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393372&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228437&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 49.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957788&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 49.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957788&a=3013769&m=102705" },
     ],
   },
   {
@@ -30203,7 +28523,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393367&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228432&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956384&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956384&a=3013769&m=102705" },
     ],
   },
   {
@@ -30336,7 +28656,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 24.81, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393368&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 32.79, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228433&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956265&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956265&a=3013769&m=102705" },
     ],
   },
   {
@@ -30351,7 +28671,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 169.61, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393365&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 224.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228430&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 244.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956239&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 244.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956239&a=3013769&m=102705" },
     ],
   },
   {
@@ -30380,7 +28700,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 54.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393364&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 72.15, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228429&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956387&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956387&a=3013769&m=102705" },
     ],
   },
   {
@@ -30749,8 +29069,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923433&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923346&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822851&a=3013769&m=102705" },
     ],
   },
@@ -30883,8 +29201,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393405&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228470&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954649&a=3013769&m=102705" },
     ],
   },
@@ -30913,8 +29229,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393407&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228472&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954774&a=3013769&m=102705" },
     ],
   },
@@ -30944,9 +29258,12 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390532&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 44.83, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227977&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957813&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 43.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957813&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk12: TicketProduct[] = [
   {
     id: "as-roma-vs-bologna-2027-04-04",
     event: "AS Roma vs Bologna",
@@ -31199,7 +29516,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390527&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227972&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 123.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956244&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956244&a=3013769&m=102705" },
     ],
   },
   {
@@ -31229,7 +29546,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390526&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 65.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227971&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 72.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956482&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 72.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956482&a=3013769&m=102705" },
     ],
   },
   {
@@ -31274,7 +29591,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390522&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227967&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956329&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956329&a=3013769&m=102705" },
     ],
   },
   {
@@ -31304,7 +29621,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 43.22, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390521&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 57.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227966&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 64.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956368&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 64.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956368&a=3013769&m=102705" },
     ],
   },
   {
@@ -31436,8 +29753,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923434&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923347&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822921&a=3013769&m=102705" },
     ],
   },
@@ -31764,7 +30079,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 143.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390553&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 190.35, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227998&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 191.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953768&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 192.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953768&a=3013769&m=102705" },
     ],
   },
   {
@@ -31932,9 +30247,6 @@ const minedTicketProductsChunk12: TicketProduct[] = [
       { store: "Gigsberg", price: 102.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953709&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk13: TicketProduct[] = [
   {
     id: "wrexham-fc-vs-swansea-city-2027-04-10",
     event: "Wrexham FC vs Swansea City",
@@ -32005,8 +30317,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F133%2Fthumbnail.jpg&feedId=117951&k=d032a1dba8397ee025f4295b21f0b66495323edf",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390573&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228018&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 283.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954826&a=3013769&m=102705" },
     ],
   },
   {
@@ -32021,20 +30332,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 253.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390575&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 335.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228020&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "sc-paderborn-07-vs-bayern-munich-2027-04-10",
-    event: "SC Paderborn 07 vs Bayern Munich",
-    venue: "Benteler Arena",
-    city: "Paderborn",
-    date: "2027-04-10",
-    time: "15:30:00",
-    competition: "Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
-    offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390578&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228023&a=3013769&m=109004" },
     ],
   },
   {
@@ -32259,7 +30556,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.28, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390600&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 53.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228045&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956375&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956375&a=3013769&m=102705" },
     ],
   },
   {
@@ -32377,7 +30674,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390601&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228046&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956267&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956267&a=3013769&m=102705" },
     ],
   },
   {
@@ -32392,7 +30689,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390598&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228043&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956249&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956249&a=3013769&m=102705" },
     ],
   },
   {
@@ -32437,7 +30734,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390599&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228044&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956258&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956258&a=3013769&m=102705" },
     ],
   },
   {
@@ -32452,7 +30749,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 51.04, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390595&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 67.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228040&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 75.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956374&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 75.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956374&a=3013769&m=102705" },
     ],
   },
   {
@@ -32482,20 +30779,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 39.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390646&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 51.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228091&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-kaiserslautern-vs-holstein-kiel-2027-04-17",
-    event: "FC Kaiserslautern vs Holstein Kiel",
-    venue: "Fritz Walter Stadion",
-    city: "Kaiserslautern",
-    date: "2027-04-17",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F131%2Fthumbnail.jpg&feedId=117951&k=62049671bc136382477e2e34c4e641736e8ff821",
-    offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390647&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228092&a=3013769&m=109004" },
     ],
   },
   {
@@ -32791,8 +31074,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923438&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923351&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823259&a=3013769&m=102705" },
     ],
   },
@@ -32940,8 +31221,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390643&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228088&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954638&a=3013769&m=102705" },
     ],
   },
@@ -32970,8 +31249,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5682%2Fthumbnail.jpg&feedId=117951&k=5466f4abc91cc72e804627eb5cdd0716a22c9f20",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390644&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228089&a=3013769&m=109004" },
       { store: "Gigsberg", price: 453.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954681&a=3013769&m=102705" },
     ],
   },
@@ -32985,8 +31262,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390645&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228090&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954762&a=3013769&m=102705" },
     ],
   },
@@ -33047,7 +31322,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 54.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390663&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 72.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228108&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957656&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957656&a=3013769&m=102705" },
     ],
   },
   {
@@ -33257,7 +31532,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390659&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228104&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956290&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956290&a=3013769&m=102705" },
     ],
   },
   {
@@ -33272,7 +31547,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 125.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390662&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 166.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228107&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 183.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956476&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 182.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956476&a=3013769&m=102705" },
     ],
   },
   {
@@ -33302,7 +31577,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390655&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228100&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956354&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956354&a=3013769&m=102705" },
     ],
   },
   {
@@ -33347,7 +31622,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 74.63, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390656&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 98.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228101&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956436&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956436&a=3013769&m=102705" },
     ],
   },
   {
@@ -33362,7 +31637,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390660&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 65.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228105&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 72.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956456&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 72.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956456&a=3013769&m=102705" },
     ],
   },
   {
@@ -33660,6 +31935,9 @@ const minedTicketProductsChunk13: TicketProduct[] = [
       { store: "FootballTicketNetUS", price: 61.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228168&a=3013769&m=109004" },
     ],
   },
+];
+
+const minedTicketProductsChunk13: TicketProduct[] = [
   {
     id: "aston-villa-vs-coventry-city-2027-04-24",
     event: "Aston Villa vs Coventry City",
@@ -33982,8 +32260,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F46%2Fthumbnail.jpg&feedId=117951&k=5136c92a2c5680d12c5fb5665dd699b05cd614f0",
     offers: [
-      { store: "FootballTicketNetUK", price: 999.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923442&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1320.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923355&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1431.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823603&a=3013769&m=102705" },
     ],
   },
@@ -34102,8 +32378,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F125%2Fthumbnail.jpg&feedId=117951&k=596dbaa97c49cbb311a2679723c12564aa4da708",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390718&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228163&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 168.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954619&a=3013769&m=102705" },
     ],
   },
   {
@@ -34146,8 +32421,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390722&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228167&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954714&a=3013769&m=102705" },
     ],
   },
@@ -34161,8 +32434,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F137%2Fthumbnail.jpg&feedId=117951&k=f50e257bc29985159f72ae61b1141701db79e7bc",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390721&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228166&a=3013769&m=109004" },
       { store: "Gigsberg", price: 338.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954683&a=3013769&m=102705" },
     ],
   },
@@ -34357,7 +32628,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390741&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228186&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956379&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956379&a=3013769&m=102705" },
     ],
   },
   {
@@ -34372,7 +32643,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390738&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228183&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956306&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956306&a=3013769&m=102705" },
     ],
   },
   {
@@ -34417,7 +32688,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390737&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 65.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228182&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 72.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642013778&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 72.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642013778&a=3013769&m=102705" },
     ],
   },
   {
@@ -34432,7 +32703,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390740&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228185&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956273&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956273&a=3013769&m=102705" },
     ],
   },
   {
@@ -34447,7 +32718,7 @@ const minedTicketProductsChunk13: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 127.21, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390736&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 168.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228181&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 184.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956342&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 184.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956342&a=3013769&m=102705" },
     ],
   },
   {
@@ -34614,9 +32885,6 @@ const minedTicketProductsChunk13: TicketProduct[] = [
       { store: "Gigsberg", price: 424.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953737&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk14: TicketProduct[] = [
   {
     id: "as-monaco-vs-fc-lorient-2027-05-01",
     event: "AS Monaco vs FC Lorient",
@@ -34689,7 +32957,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 81.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390757&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 107.09, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228202&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 104.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953638&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953638&a=3013769&m=102705" },
     ],
   },
   {
@@ -34929,7 +33197,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 126.77, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390787&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 167.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227849&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 139.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957646&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 139.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957646&a=3013769&m=102705" },
     ],
   },
   {
@@ -35168,7 +33436,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390785&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227847&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 35.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956320&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 35.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956320&a=3013769&m=102705" },
     ],
   },
   {
@@ -35183,7 +33451,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390779&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227841&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956343&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956343&a=3013769&m=102705" },
     ],
   },
   {
@@ -35213,7 +33481,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.44, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390781&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227843&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956326&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956326&a=3013769&m=102705" },
     ],
   },
   {
@@ -35258,21 +33526,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390783&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 65.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227845&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 72.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956459&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "fc-kaiserslautern-vs-dsc-arminia-bielefeld-2027-05-08",
-    event: "FC Kaiserslautern vs DSC Arminia Bielefeld",
-    venue: "Fritz Walter Stadion",
-    city: "Kaiserslautern",
-    date: "2027-05-08",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F131%2Fthumbnail.jpg&feedId=117951&k=62049671bc136382477e2e34c4e641736e8ff821",
-    offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390824&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227886&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 72.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956459&a=3013769&m=102705" },
     ],
   },
   {
@@ -35362,7 +33616,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390810&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.39, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227872&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953646&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953646&a=3013769&m=102705" },
     ],
   },
   {
@@ -35466,7 +33720,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 38.16, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390830&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 50.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227892&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958638&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 44.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958638&a=3013769&m=102705" },
     ],
   },
   {
@@ -35524,8 +33778,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F122%2Fthumbnail.jpg&feedId=117951&k=e0d391a32a17bd6e28bf2dde40aaa19eb3126c47",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390818&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227880&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 150.71, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954800&a=3013769&m=102705" },
     ],
   },
   {
@@ -35568,8 +33821,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390821&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227883&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954662&a=3013769&m=102705" },
     ],
   },
@@ -35583,8 +33834,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F133%2Fthumbnail.jpg&feedId=117951&k=d032a1dba8397ee025f4295b21f0b66495323edf",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390820&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227882&a=3013769&m=109004" },
       { store: "Gigsberg", price: 481.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954825&a=3013769&m=102705" },
     ],
   },
@@ -35613,8 +33862,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5682%2Fthumbnail.jpg&feedId=117951&k=5466f4abc91cc72e804627eb5cdd0716a22c9f20",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390822&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227884&a=3013769&m=109004" },
       { store: "Gigsberg", price: 607.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954688&a=3013769&m=102705" },
     ],
   },
@@ -35628,8 +33875,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390823&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227885&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954746&a=3013769&m=102705" },
     ],
   },
@@ -35928,7 +34173,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 61.48, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390839&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 81.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227901&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956277&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 90.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956277&a=3013769&m=102705" },
     ],
   },
   {
@@ -35943,7 +34188,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390837&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227899&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 123.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956243&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956243&a=3013769&m=102705" },
     ],
   },
   {
@@ -35958,7 +34203,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390835&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227897&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 109.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568901&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568901&a=3013769&m=102705" },
     ],
   },
   {
@@ -36033,20 +34278,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390877&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 64.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227939&a=3013769&m=109004" },
-    ],
-  },
-  {
-    id: "fc-kaiserslautern-vs-hannover-96-2027-05-15",
-    event: "FC Kaiserslautern vs Hannover 96",
-    venue: "Fritz Walter Stadion",
-    city: "Kaiserslautern",
-    date: "2027-05-15",
-    time: "13:00:00",
-    competition: "2. Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F131%2Fthumbnail.jpg&feedId=117951&k=62049671bc136382477e2e34c4e641736e8ff821",
-    offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390878&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227940&a=3013769&m=109004" },
     ],
   },
   {
@@ -36268,8 +34499,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F127%2Fthumbnail.jpg&feedId=117951&k=e188da378b779b9b14289d567db4911292220987",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390874&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227936&a=3013769&m=109004" },
       { store: "Gigsberg", price: 509.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954661&a=3013769&m=102705" },
     ],
   },
@@ -36283,8 +34512,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F513%2Fthumbnail.jpg&feedId=117951&k=8ffa0f3045ddd9811493dbe0f5ae67717fe8eeac",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390876&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227938&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954720&a=3013769&m=102705" },
     ],
   },
@@ -36298,8 +34525,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F137%2Fthumbnail.jpg&feedId=117951&k=f50e257bc29985159f72ae61b1141701db79e7bc",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390875&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227937&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 225.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954719&a=3013769&m=102705" },
     ],
   },
   {
@@ -36327,8 +34553,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F136%2Fthumbnail.jpg&feedId=117951&k=b595aabcef93da28a1a8fe4f678b7fbf0a0919fe",
     offers: [
-      { store: "FootballTicketNetUK", price: 423.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390869&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 559.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227931&a=3013769&m=109004" },
       { store: "Gigsberg", price: 481.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954804&a=3013769&m=102705" },
     ],
   },
@@ -36377,6 +34601,9 @@ const minedTicketProductsChunk14: TicketProduct[] = [
       { store: "Gigsberg", price: 45.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957834&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk14: TicketProduct[] = [
   {
     id: "as-monaco-vs-paris-fc-2027-05-16",
     event: "AS Monaco vs Paris FC",
@@ -36614,7 +34841,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390887&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 109.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227949&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956363&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 121.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956363&a=3013769&m=102705" },
     ],
   },
   {
@@ -36807,7 +35034,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390883&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227945&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956331&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956331&a=3013769&m=102705" },
     ],
   },
   {
@@ -36822,7 +35049,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.31, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390884&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227946&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956396&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956396&a=3013769&m=102705" },
     ],
   },
   {
@@ -36852,7 +35079,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 62.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390885&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 82.4, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227947&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956451&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956451&a=3013769&m=102705" },
     ],
   },
   {
@@ -37045,8 +35272,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F424%2Fthumbnail.jpg&feedId=117951&k=ce97de510e7534692bf629716f8a051bc01b1044",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390924&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228610&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954651&a=3013769&m=102705" },
     ],
   },
@@ -37060,8 +35285,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F133%2Fthumbnail.jpg&feedId=117951&k=d032a1dba8397ee025f4295b21f0b66495323edf",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390923&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228609&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 283.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954827&a=3013769&m=102705" },
     ],
   },
   {
@@ -37089,8 +35313,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5682%2Fthumbnail.jpg&feedId=117951&k=5466f4abc91cc72e804627eb5cdd0716a22c9f20",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390926&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228612&a=3013769&m=109004" },
       { store: "Gigsberg", price: 594.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954657&a=3013769&m=102705" },
     ],
   },
@@ -37104,8 +35326,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 847.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390927&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 1120.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228613&a=3013769&m=109004" },
       { store: "Gigsberg", price: 1213.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954744&a=3013769&m=102705" },
     ],
   },
@@ -37165,7 +35385,7 @@ const minedTicketProductsChunk14: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 101.32, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390949&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 133.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228635&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957648&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957648&a=3013769&m=102705" },
     ],
   },
   {
@@ -37303,9 +35523,6 @@ const minedTicketProductsChunk14: TicketProduct[] = [
       { store: "Gigsberg", price: 101.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957791&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk15: TicketProduct[] = [
   {
     id: "leeds-united-vs-sunderland-2027-05-23",
     event: "Leeds United vs Sunderland",
@@ -38085,5 +36302,4 @@ export const ticketProducts: TicketProduct[] = [
   ...minedTicketProductsChunk12,
   ...minedTicketProductsChunk13,
   ...minedTicketProductsChunk14,
-  ...minedTicketProductsChunk15,
 ];
