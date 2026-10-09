@@ -24,7 +24,7 @@ import sys
 sys.path.insert(0, os.path.abspath(sys_path_boots))
 from mine_boots import parse_price, dot_size, size_sort_key, norm_title, EXCLUDE_KEYWORDS  # noqa: E402
 
-FEEDS = "/tmp/feeds"
+FEEDS = os.environ.get("FEED_DIR", "/tmp/feeds")
 
 BALLS_OUT = os.path.join(SCRIPT_DIR, "mined_balls.json")
 GLOVES_OUT = os.path.join(SCRIPT_DIR, "mined_gloves.json")
