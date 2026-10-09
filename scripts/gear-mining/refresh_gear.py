@@ -208,6 +208,70 @@ def build_entries(mined, used_ids, known=None):
     return entries
 
 
+def _merge_offers(a, b):
+    """Dos ofertas de la MISMA tienda para el mismo artículo (la tienda lo
+    lista en dos grupos, p. ej. tallas de niño y de adulto a precios
+    distintos): una sola, con el precio por talla y su enlace."""
+    sys.path.insert(0, os.path.join(SCRIPT_DIR, "..", "boots-mining"))
+    from mine_boots import size_sort_key
+    lo, hi = sorted((a, b), key=lambda o: (o["price"], o["url"]))
+    per_size = {}
+    for o in (hi, lo):  # la más barata pisa
+        for sp in o.get("sizePrices") or [{"size": s, "price": o["price"], "url": o["url"]} for s in o["sizes"]]:
+            if sp["size"] not in per_size or sp["price"] <= per_size[sp["size"]]["price"]:
+                per_size[sp["size"]] = sp
+    top = max(o.get("priceMax") or o["price"] for o in (a, b))
+    out = {k: v for k, v in lo.items() if k not in ("priceMax", "sizePrices")}
+    out["sizes"] = sorted(per_size, key=size_sort_key)
+    if top > lo["price"]:
+        out["priceMax"] = top
+        out["sizePrices"] = [per_size[s] for s in out["sizes"]]
+    return out
+
+
+def merge_same_product(entries):
+    """Fichas que son el MISMO artículo y quedaron separadas (2026-10-09): mismo
+    modelo y color y al menos una foto en común (el nombre de la foto es el SKU
+    del fabricante, la clave de gear_ids.json). Hasta hoy solo se distinguían
+    poniendo la tienda en el <title>. Se queda el id con más tiendas (a
+    igualdad, el más corto) y el otro pasa a alias (308). Devuelve
+    (entries, {id_fundido: id_que_queda})."""
+    key = lambda e: (e["brand"].lower(), e["model"].lower(), e["colour"].lower(), e.get("type"))
+    parent = {}
+
+    def find(i):
+        while parent.get(i, i) != i:
+            i = parent[i]
+        return i
+
+    by_photo = {}
+    for i, e in enumerate(entries):
+        for p in photo_keys(e):
+            j = by_photo.setdefault((key(e), p), i)
+            if find(j) != find(i):
+                parent[find(i)] = find(j)
+    groups = {}
+    for i in range(len(entries)):
+        groups.setdefault(find(i), []).append(entries[i])
+    out, merged = [], {}
+    for g in groups.values():
+        if len(g) == 1:
+            out.append(g[0])
+            continue
+        g.sort(key=lambda e: (-len({o["store"] for o in e["offers"]}), len(e["id"]), e["id"]))
+        keep = dict(g[0], offers=[])
+        by_store = {}
+        for e in g:
+            for o in e["offers"]:
+                by_store[o["store"]] = _merge_offers(by_store[o["store"]], o) if o["store"] in by_store else o
+        keep["offers"] = sorted(by_store.values(), key=lambda o: (o["price"], o["store"]))
+        out.append(keep)
+        for e in g[1:]:
+            merged[e["id"]] = keep["id"]
+    order = {e["id"]: n for n, e in enumerate(entries)}
+    return sorted(out, key=lambda e: order[e["id"]]), merged
+
+
 def old_prices_by_id(auto_section_src):
     prices = {}
     for m in re.finditer(r'id: "([^"]+)".*?price: ([\d.]+),', auto_section_src, re.S):
@@ -241,7 +305,7 @@ def write_ts(ts_path, prefix, entries, export_name, type_name, chunk_var):
 ALIASES_PATH = os.path.join(REPO_ROOT, "src", "data", "gearAliases.json")
 
 
-def update_aliases(section, old_auto_section, entries):
+def update_aliases(section, old_auto_section, entries, merged=None):
     """Id que desaparece -> id del producto que hoy tiene alguna de sus mismas
     URLs de oferta (merge_by_ean lo fundió con otro). Mismo criterio que
     refresh_boots.update_aliases: acumulativo, nunca un id vivo, cadenas
@@ -255,7 +319,8 @@ def update_aliases(section, old_auto_section, entries):
         old_id = m.group(1)
         if old_id in live:
             continue
-        target = next((url_to_id[u] for u in re.findall(r'url: "([^"]+)"', m.group(2)) if u in url_to_id), None)
+        target = (merged or {}).get(old_id) or \
+            next((url_to_id[u] for u in re.findall(r'url: "([^"]+)"', m.group(2)) if u in url_to_id), None)
         if target and aliases.get(old_id) != target:
             aliases[old_id] = target
             added += 1
@@ -283,10 +348,12 @@ def refresh_one(target, mined, registry, bad=None):
     if bad:
         kept = keep_old_offers(entries, parse_entries(old_auto_section), bad)
         print(f"{target['name']}: {kept} ofertas de ayer conservadas ({', '.join(sorted(bad))})")
+    entries, merged = merge_same_product(entries)
     write_ts(target["ts_path"], prefix, entries, target["export_name"], target["type_name"], target["chunk_var"])
 
     new_ids = {e["id"] for e in entries}
-    n_alias = update_aliases(target["name"], old_auto_section, entries)
+    n_alias = update_aliases(target["name"], old_auto_section, entries, merged)
+    print(f"{target['name']}: mismo artículo en dos fichas, fundidas: {len(merged)}")
     added = new_ids - old_ids
     removed = old_ids - new_ids
     price_changed = sum(
