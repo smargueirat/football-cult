@@ -333,7 +333,9 @@ const tame = (s: string) =>
 function bootCore(item: GearLike): string {
   const brand = item.brand.trim();
   let m = item.model.replace(/\s+-\s+[^-]+$/, ""); // " - Black/Red": el color va aparte
-  m = m.replace(BOOT_NOUN, "");
+  // DeporteOutlet mete el sustantivo en medio: "adidas Predator Club FG/MG
+  // Hombre Botas de fútbol ID1324".
+  m = m.replace(BOOT_NOUN, "").replace(/\s+(?:hombre|botas?\s+de\s+f[uú]tbol)\b/gi, "");
   if (brand) m = m.replace(new RegExp(`\\b${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "gi"), " ");
   m = tame(m.replace(/\s+/g, " ").trim());
   if (item.groundType && !GROUND_IN_TEXT.test(m)) m = `${m} ${item.groundType}`;
