@@ -10,6 +10,10 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-10: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "napoli-retro-1984-home": "napoli-retro-198485-home",
+  "fenerbahce-retro-2020-away": "fenerbahce-retro-202021-away",
   // 2026-10-09: Cremonese 2025 -> temporada 2025/26 (liga de temporada partida).
   "cremonese-home-2025": "cremonese-home-202526",
   // 2026-10-09: agotadas 14+ días y sin clics, retiradas por
