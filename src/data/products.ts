@@ -2331,19 +2331,6 @@ const productsData = [
     ],
   },
 {
-    id: "swansea-retro-202223-home",
-    teamKey: "swansea",
-    season: "2022/23",
-    typeKey: "retro",
-    colorHex: "#FFFFFF",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/175959314124?_skw=Swansea+City+home+soccer+jersey&hash=item28f7fe0ecc%3Ag%3As1MAAOSw6cVlKCCz&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SWANSEA CITY 2022/23 HOME (2XL,XL,L,M) WHITE JOMA WALES  SOCCER FOOTBALL SHIRT", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/s1MAAOSw6cVlKCCz/s-l1600.jpg" },
-      { store: "eBay GB", price: 21.98, shipping: 4.4, currency: "GBP", url: "https://www.ebay.co.uk/itm/185863607544?_skw=Swansea+City+2022+home+shirt&hash=item2b465594f8%3Ag%3AtwwAAOSwFfNkQZn8&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "SWANSEA AFC football shirt SIZE LARGE Home 2022/23 Soccer Jersey  Joma", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/twwAAOSwFfNkQZn8/s-l1600.jpg" },
-    ],
-  },
-{
     id: "unionomaha-retro-202425-home",
     teamKey: "unionomaha",
     season: "2024/25",
@@ -15816,18 +15803,6 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 36.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsantos-fc-2012-home-retro-football-jersey%3Fvariant%3D42557215801449", title: "Santos FC 2012 Home Retro Football Jersey", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/9cd90b5439aef36dd9c992b4221c80d4.png?v=1758074300" },
       { store: "eBay ES", price: 59.3, shipping: 24.02, currency: "EUR", url: "https://www.ebay.es/itm/358642810556?_skw=Santos+FC+home+soccer+jersey&hash=item5380c6febc%3Ag%3AOCsAAeSwE8pqIyTU&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Neymar Jr Santos 2012/13 Home Kit Retro - NUEVA - Blanca - M-XL", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/OCsAAeSwE8pqIyTU/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "santos-retro-2022-home",
-    teamKey: "santos",
-    season: "2022",
-    typeKey: "retro",
-    colorHex: "#FFFFFF",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 80.66, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/178541099696?_skw=Santos+FC+home+soccer+jersey&hash=item2991e0fab0%3Ag%3AeNgAAeSw-npoyS8K&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "SANTOS Umbro Home Football Shirt 2022 NEW Mens Sizes Jersey Camisa Brazil BNIB", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/eNgAAeSw-npoyS8K/s-l1600.jpg" },
     ],
   },
 {
@@ -49082,18 +49057,6 @@ const productsData = [
     ],
   },
 {
-    id: "costarica-retro-2024-home",
-    teamKey: "costarica",
-    season: "2024",
-    typeKey: "retro",
-    colorHex: "#002B7F",
-    colorHexSecondary: "#CE1126",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay IT", price: 65.29, shipping: 22.55, currency: "EUR", url: "https://www.ebay.it/itm/127997962422?_skw=Costa+Rica+home+soccer+jersey&hash=item1dcd45e8b6%3Ag%3A-MQAAeSw9apqaMkG&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Costa Rica Home Jersey 2024 2025 Copa America Red Shirt Uomo Camiseta de Futbol", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/-MQAAeSw9apqaMkG/s-l1600.jpg" },
-    ],
-  },
-{
     id: "croacia-retro-1998-away",
     teamKey: "croacia",
     season: "1998",
@@ -51182,19 +51145,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/397440722971?_skw=Huddersfield+Town+away+soccer+jersey&hash=item5c8950281b%3Ag%3AC-AAAeSwlklpUgPn&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Huddersfield Town 2018-19 away football shirt in red and black stripes", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/C-AAAeSwlklpUgPn/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "huddersfield-retro-202425-away",
-    teamKey: "huddersfield",
-    season: "2024/25",
-    typeKey: "retro",
-    colorHex: "#0E63AD",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 84.49, shipping: 69.86, currency: "USD", url: "https://www.ebay.com/itm/820055608688?_skw=Huddersfield+Town+away+soccer+jersey&hash=itembeef1f8d70%3Ag%3AczEAAeSw6uFpYseg&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZg3V3qPl%2BIUZoB8%2FOsro5LvVRhens7Z73pNayIw2Vu1mkbvcg4o8dvodCrOrsGYAxxyTuu1x%2Fg0JlqvqrzaAVV2v0LNYHxTCo0yunyC1kfJXyAEChHuIMq8xTKXCFPoiAbyvMnXiB78d1eVEr0EVzMrZ2peXrjyIDcXtvg0ZsPfFibbJMsQ%2F0saCGe8E36y7y%2FYumC4QU5MoiZFXmDyHSNFsNhlNmQ7PhC5nscPMDmfEFRAeEA1ChMD2%2FDx73CfNfhea4B94XDLvoUOrQJxBmNLhVFWdpEipJSoczDXiUF%2BGK8r9MfWs6jYsE9H3VnuKs%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Huddersfield Town Away Jersey 24/25 Terriers Third Shirt M - 3XL", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/czEAAeSw6uFpYseg/s-l1600.jpg" },
-      { store: "eBay GB", price: 16.77, shipping: 4.65, currency: "GBP", url: "https://www.ebay.co.uk/itm/187522476250?_skw=Huddersfield+Town+2024+away+shirt&hash=item2ba935e8da%3Ag%3AD4UAAeSwbHlorxL-&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Huddersfield Town Away Shirt Mens XXL 2024/25 Umbro Teal Magenta Terriers", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/D4UAAeSwbHlorxL-/s-l1600.jpg" },
     ],
   },
 {
