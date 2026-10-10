@@ -12,6 +12,70 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-10, eBay US/IT/ES/GB ---
+    "/itm/267746188311",  # eBay GB croacia-retro-2020-away: Modric #10 print
+    "/itm/267768253339",  # eBay GB inglaterra-retro-2002-home: "Retro Replica" reproduction
+    "/itm/178492026437",  # eBay GB italia-retro-202021-home: Pellegrini print
+    "/itm/227214053818",  # eBay GB napoli-retro-202122-third: Insigne #24 print
+    "/itm/358145490814",  # eBay GB santos-retro-2023-home: Soteldo #10 print
+    "/itm/257768261719",  # eBay GB brasil-retro-2002-away: "Retro Shirt" reproduction
+    "/itm/389374314754",  # eBay GB mexico-retro-202425-home: PACHUCA (club) under mexico
+    "/itm/298607294774",  # eBay GB paisesbajos-retro-2014-away: Robben print
+    "/itm/157198182513",  # eBay GB portugal-retro-202021-away: photo shows RONALDO 7 on the back
+    "/itm/318766836762",  # eBay GB psg-retro-201718-home: Neymar Jr print
+    "/itm/177274889152",  # eBay GB alemania-retro-1984-away: "Retro Shirt" reproduction
+    "/itm/257616258237",  # eBay GB arsenal-retro-2004-home: custom names & numbers
+    "/itm/800436971183",  # eBay GB italia-retro-1994-home: Baresi SIGNED
+    "/itm/377453945244",  # eBay GB hellasverona-retro-202021-home: matchworn Lasagna
+    "/itm/135606934979",  # eBay GB barcelona-retro-199597-home: Kappa reissue
+    "/itm/336417905375",  # eBay GB burnley-retro-2023-home: signed
+    "/itm/398369261469",  # eBay GB croacia-retro-1998-away: "Retro Replica" reproduction
+    "/itm/188545338598",  # eBay GB manutd-retro-2022-third: women's cut
+    "/itm/366669483601",  # eBay GB orlandocity-retro-2024-away: Jansson 6 print
+    "/itm/128081426122",  # eBay GB peru-retro-2024-away: Guerrero 9 print
+    "/itm/800755283084",  # eBay GB realmadrid-retro-201112-home: CR7 Ronaldo print, "Retro"
+    "/itm/800635311303",  # eBay GB realmadrid-retro-201112-third: "Retro" GBP21 likely reproduction
+    "/itm/326727163589",  # eBay GB sunderland-retro-199799-home: signed
+    "/itm/366655212760",  # eBay GB parmacalcio-retro-201213-home: signed
+    "/itm/168715654561",  # alnassr|home: player -- Camiseta de fútbol local Adidas Al Nassr FC Ronaldo 2025/26 
+    "/itm/137567416561",  # alnassr|home: print -- Camiseta deportiva Adidas Youth XL Al-Nassr FC Cristiano Ron
+    "/itm/820212129145",  # alnassr|third: print -- RONALDO #7 AL NASSR FC 2026/27 TERCERA CAMISETA VERSIÓN PART
+    "/itm/366356525636",  # millwall|third: print -- Millwall 2025/26 Third Shirt L - Cooper 5 - New - Never Worn
+    "/itm/168541553922",  # redstarbelgrade|away|2006: print -- RED STAR BELGRADE 2006 2008 AWAY FOOTBALL SHIRT SIZE XL ADUL
+    "/itm/147481438150",  # redstarbelgrade|third|2023/24: print -- Red Star Belgrade 2023/24 Dragovic #15 Third Jersey M
+    "/itm/388609242130",  # lafc|home|2018: print -- adidas LAFC Men's Home Jersey 2018 Legend Beitashour #3 - Bl
+    "/itm/389039314292",  # lafc|away|2021/22: print -- adidas Los Angeles FC Away Jersey 21/22 Chicho #9 Medium - B
+    "/itm/307046059266",  # youngboys|away|2004/05: print -- Camiseta de fútbol Gems Young Boys 2004/05 visitante Gems ma
+    "/itm/187339415640",  # realvalladolid|away|2022/23: print -- Camiseta Adidas Real Valladolid 22/23 Visitante Auténtica - 
+    "/itm/125420813796",  # hullcity|home|2004: print -- Camiseta Hull City FC (Retro) - Camiseta local 2004 de Diado
+    "/itm/298146730742",  # speziacalcio|home|2021/22: print -- CAMISETA DE FUTBOL LOCAL SPEZIA CALCIO NUEVA CON ETIQUETA 20
+    "/itm/188575227273",  # jskabylie|home|2006/07: player -- Maglia Vintage JS KABYLIE Home Retrò H. Yacef JSK Peugeot 20
+    "/itm/188639833748",  # jskabylie|away|2005/06: print -- Autentica maglia LOTTO Italia JS KABYLIE JSK Away HARKAT 5 2
+    "/itm/158285097257",  # jamaica|away|2016/17: print -- Camiseta visitante Jamaica 2016/17 #10 Marley mediana Romai 
+    "/itm/800123869622",  # panama|home|2018: print -- Camiseta de fútbol local New Balance Panamá 2018 Román Torre
+    "/itm/158236911481",  # sudafrica|away|2018/19: print -- Camiseta 2018/19 Sudáfrica Visitante #10 TSHABALALA Mediana 
+    "/itm/168511209748",  # sudafrica|away|2010/11: print -- CAMISETA DE FUTBOL INGLATERRA 2010 2011 VISITANTE TALLA S (3
+    "/itm/157788295750",  # fenerbahce|third|2021/22: print -- Tercera camiseta 2021/22 Fenerbahce #10 Mesut Ozil mediana P
+    "/itm/187852566719",  # galatasaray|home|2009/10: print -- Camiseta de fútbol Adidas original local Milan Baros #15 Gal
+    "/itm/158174521156",  # galatasaray|home|2021/22: print -- Camiseta local 2021/22 Galatasaray #9 Falcao pequeña Nike fú
+    "/itm/158174522633",  # galatasaray|away|2021/22: print -- Camiseta deportiva visitante 2021/22 Galatasaray #9 Falcao p
+    "/itm/357579249448",  # alnassr|third|2023/24: player -- Camiseta Cristiano Ronaldo Al Nassr 23/24 Tercera Equipación
+    "/itm/366503220806",  # millwall|away: only photo is the sealed bag
+    "/itm/147401086704",  # haiti|home: listing sells home AND away
+    "/itm/188632216998",  # galatasaray|home: Nike = pre-2023, ficha is Puma
+    "/itm/146489669822",  # lafc|home|2010: LAFC did not exist in 2010
+    "/itm/227406178289",  # costarica|home|2024: player name
+    "/itm/226792882413",  # costarica|away|2018: player name
+    "/itm/156275947947",  # venezuela|home|2024/25: sells home AND away
+    "/itm/177391779552",  # venezuela|away|2015: player name
+    "/itm/406958920660",  # granada|home|2022: player name
+    "/itm/168011643810",  # sampdoria|home|1993/94: 28.98 template repro
+    "/itm/377343944931",  # sampdoria|home|2003/04: 28.98 template repro
+    "/itm/168085769361",  # hullcity|home|1981/82: 31-EUR template repro
+    "/itm/185938295409",  # jamaica|away|2015/16: damaged logo
+    "/itm/157639194865",  # hungria|home|2022/23: asian sizes, likely fake
+    "/itm/317921166118",  # venezuela|away|2012: CLUB under national key
+    "/itm/303514481339",  # fenerbahce|away|2018/19: crest unreadable, kids-size cut
     # --- Daily pass 2026-10-09, eBay current ---
     "/itm/800400177797",  # vascodagama|training: sleeveless training VEST, not a shirt
     "/itm/137617437632",  # egipto|away: "Salah" print, big #10 on the front

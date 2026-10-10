@@ -1,4 +1,25 @@
 {
   "cycle": 1,
-  "done_teams": []
+  "done_teams": [
+    "airdrie",
+    "birminghamcity",
+    "blackburn",
+    "charlton",
+    "hartlepool",
+    "heartsofoak",
+    "hibernian",
+    "huddersfield",
+    "leicester",
+    "millwall",
+    "mkdons",
+    "norwich",
+    "peterboroughunited",
+    "prestonnorthend",
+    "reading",
+    "rotherhamunited",
+    "southampton",
+    "swansea",
+    "watford",
+    "westbrom"
+  ]
 }

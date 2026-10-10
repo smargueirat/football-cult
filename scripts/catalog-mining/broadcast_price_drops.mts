@@ -378,7 +378,14 @@ async function send(token: string, chat: string, c: Candidate): Promise<void> {
     headers: { "content-type": "application/json" },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(`Telegram ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  if (res.ok) return;
+  const detail = (await res.text()).slice(0, 200);
+  // Telegram baja la foto él mismo; si la tienda la quitó (404 detrás del
+  // proxy, 2026-10-10 con una de ForumSport) va como texto en vez de cortar la tanda.
+  if (c.imageUrl && res.status === 400 && /HTTP URL content|wrong type of the web page|IMAGE_PROCESS_FAILED/i.test(detail)) {
+    return send(token, chat, { ...c, imageUrl: undefined });
+  }
+  throw new Error(`Telegram ${res.status}: ${detail}`);
 }
 
 // Mensaje privado a un seguidor: mismo texto y enlace a NUESTRA ficha que el
@@ -530,6 +537,9 @@ async function main() {
     if (dryRun) continue;
     await send(token!, chat!, c);
     state[c.key] = new Date().toISOString();
+    // Se guarda tras CADA envío: si uno falla a mitad de tanda, los ya
+    // publicados quedan recordados y mañana no se repiten (pasó el 2026-10-10).
+    fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 1) + "\n");
     // El límite del Bot API es ~20 mensajes por minuto a un canal.
     await new Promise((r) => setTimeout(r, 3500));
   }

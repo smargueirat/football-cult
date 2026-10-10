@@ -93,6 +93,7 @@
   "qid": "Q285074"
  },
  "Bramall Lane": null,
+ "Brann Stadion": null,
  "Bursa Buyuksehir Belediye Stadyumu": null,
  "Campo de Futbol de Vallecas": null,
  "Cardiff City Stadium": null,
@@ -137,15 +138,22 @@
   "desc": "football stadium in Kaunas, Lithuania",
   "qid": "Q1583616"
  },
+ "De Grolsch Veste": null,
  "De Kuip": {
   "city": "Rotterdam",
   "desc": "stadium in Rotterdam, Netherlands",
   "qid": "Q330298"
  },
+ "Den Dreef": null,
  "Dens Park": {
   "city": "Dundee",
   "desc": "football stadium in Dundee, Scotland, UK",
   "qid": "Q615561"
+ },
+ "Doosan Arena": {
+  "city": "Plzeň",
+  "desc": "multi-purpose stadium in Plzeň, Czech Republic",
+  "qid": "Q2116283"
  },
  "Easter Road": {
   "city": "Edinburgh",
@@ -328,10 +336,16 @@
   "desc": "football stadium in Bergamo, Italy",
   "qid": "Q780526"
  },
+ "Ghelamco Arena": null,
  "Giuseppe Meazza": {
   "city": "Milan",
   "desc": "multisports venue in Milan, Italy",
   "qid": "Q133566"
+ },
+ "Goffertstadion": {
+  "city": "Nijmegen",
+  "desc": "football stadium in Nijmegen, the Netherlands",
+  "qid": "Q720983"
  },
  "Groupama Arena": {
   "city": "Ferencváros",
@@ -725,6 +739,11 @@
   "desc": "stadium in Monza, Italy",
   "qid": "Q1851616"
  },
+ "Stadio Cornaredo": {
+  "city": "Lugano",
+  "desc": "multi-purpose stadium in Lugano, Switzerland",
+  "qid": "Q671287"
+ },
  "Stadio Diego Armando Maradona": {
   "city": "Naples",
   "desc": "multi-use stadium in Naples, Italy",
@@ -760,6 +779,18 @@
   "qid": "Q684727"
  },
  "Stadion An der Alten Foersterei": null,
+ "Stadion Celje": null,
+ "Stadion Maksimir": {
+  "city": "Maksimir",
+  "desc": "stadium in Maksimir, Croatia",
+  "qid": "Q723603"
+ },
+ "Stadion Miejski Bialystok": null,
+ "Stadion Miejski Poznan": {
+  "city": "Poznań",
+  "desc": "association football stadium in Poznań, Poland",
+  "qid": "Q188699"
+ },
  "Stadion Poljud": {
   "city": "Split",
   "desc": "football stadium in Split, Croatia",
@@ -770,6 +801,11 @@
   "city": "Cottbus",
   "desc": "football stadium in Cottbus, Germany",
   "qid": "Q290234"
+ },
+ "Stadionul Ion Oblemenco": {
+  "city": "Craiova",
+  "desc": "football stadium in Craiova, Romania",
+  "qid": "Q1409157"
  },
  "Stadium Municipal": {
   "city": "Toulouse",
@@ -786,6 +822,7 @@
   "desc": "association football stadium in London, England",
   "qid": "Q171458"
  },
+ "Stayen": null,
  "Stockhorn Arena": null,
  "Stozice Stadium": null,
  "Swansea.com Stadium": null,
@@ -848,6 +885,11 @@
   "qid": "Q684301"
  },
  "Turf Moor": null,
+ "Tynecastle Park": {
+  "city": "Edinburgh",
+  "desc": "Football stadium in Edinburgh, Scotland, UK",
+  "qid": "Q1326446"
+ },
  "Tynecastle Stadium": {
   "city": "Edinburgh",
   "desc": "Football stadium in Edinburgh, Scotland, UK",
