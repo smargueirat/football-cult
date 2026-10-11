@@ -1229,6 +1229,28 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/176892033970",  # retro leon|away|2023/24: back-only photo with GUARDADO 17 print
     # --- Daily pass 2026-10-08, eBay GB ---
     "/itm/318567698306",  # GB retro: "Score Draw" reproduction sold as RETRO rangers|away|1990
+    # --- Daily pass 2026-10-11, eBay ---
+    "/itm/198642796126",  # current arminiabielefeld|home: $28.98 no-brand dropship template "JERSEY ... 26-27"
+    "/itm/198642796114",  # current arminiabielefeld|away: $28.98 no-brand dropship template "JERSEY ... 26-27"
+    "/itm/267768668495",  # current asse|home (eBay ES): same no-brand dropship template "JERSEY ... 26-27"
+    "/itm/398011411095",  # retro seattlesounders|home|2024/25: Camiseta Adidas Seattle Sounders Player Home 2024-2025 | XS 
+    "/itm/267462668875",  # retro seattlesounders|away|2023/24: Camiseta Adidas Para Hombre M Roja Seattle Sounders FC 2024 
+    "/itm/227469700069",  # retro genoa|away|1999/00: Camisa Jersey Kappa 1999-2000 Genoa CFC Reedición Visitante 
+    "/itm/880001931707",  # retro nycfc|away|2015: Camiseta Adidas New York City FC 2015 Inaugural Para Hombre 
+    "/itm/396254038704",  # retro nycfc|away|2022/23: Camiseta Adidas New York City FC 22/23 Sean Johnson visitant
+    "/itm/388693466942",  # retro nyredbulls|home|2023/24: Auténtica camiseta Adidas New York Red Bulls local 2023/24 D
+    "/itm/226497436353",  # retro nyredbulls|home|2019: Camiseta de fútbol local grande Amir Murillo Adidas New York
+    "/itm/226497438048",  # retro nyredbulls|away|2019: Camiseta de fútbol Amir Murillo Adidas New York Red Bulls 20
+    "/itm/167678190298",  # retro nyredbulls|away|2023/24: Camiseta de visitante Daniel Patrick 23/24 de los New York R
+    "/itm/158010291254",  # retro nyredbulls|home|2011/12: CAMISETA DE FUTBOL LOCAL NEW YORK RED BULLS MLS 2011/2012 14
+    "/itm/206596463153",  # retro nyredbulls|home|2012: Camiseta de fútbol New York Red Bulls pequeña blanca Home Ki
+    "/itm/198683287655",  # retro wrexham|away|2024/25: only photo is the sealed bag
+    "/itm/135070014832",  # retro wrexham|home|2024: press/model photo; same kit as 2024/25 key
+    "/itm/206181331861",  # retro sandiegofc|home|2024/25: SDFC first season is 2025, this is the 2025 shirt (10-09 class)
+    # --- Daily pass 2026-10-11, Pro:Direct Soccer: RUGBY shirts on football keys ---
+    "castore-england-26-27-home-replica-shirt",  # England RUGBY (Castore, O2, rose) under inglaterra|home
+    "castore-england-26-27-alternate-replica-shirt",  # England RUGBY alternate under inglaterra|away
+    "macron-wales-26-27-home-replica-shirt",  # Wales RUGBY (Macron, Vodafone, WRU) under gales|home
 ]
 
 
