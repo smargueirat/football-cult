@@ -10,6 +10,15 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-12: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "barcelona-retro-199900-home": "barcelona-retro-199899-home",
+  "cruzazul-retro-201920-away": "cruzazul-retro-2018-away",
+  "liverpool-retro-200405-home": "liverpool-retro-200506-home",
+  "cruzazul-retro-202122-away": "cruzazul-retro-202425-away",
+  "leeds-retro-201213-home": "leeds-retro-201112-home",
+  "celtic-retro-199395-away": "celtic-retro-1994-away",
+  "argelia-retro-201415-home": "argelia-retro-2018-home",
   // 2026-10-10: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "swansea-retro-202223-home": "swansea-retro-202122-home",
@@ -124,7 +133,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "stpauli-retro-1997-away": "stpauli-retro-202425-away",
   "irlanda-retro-1991-away": "irlanda-retro-199092-away",
   "espana-retro-2002-away": "espana-retro-2000-away",
-  "cruzazul-retro-202223-away": "cruzazul-retro-202122-away",
+  "cruzazul-retro-202223-away": "cruzazul-retro-202425-away",
   "hungria-retro-202223-home": "hungria-home-2026",
   "chile-retro-1998-home": "chile-retro-1994-home",
   "aekathens-retro-199495-home": "aekathens-retro-200708-home",
@@ -378,7 +387,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "clubtijuana-retro-2014-home": "clubtijuana-retro-201415-home",
   "clubtijuana-retro-2017-home": "clubtijuana-retro-201718-home",
   "clubtijuana-retro-2020-home": "clubtijuana-retro-201920-home",
-  "cruzazul-retro-2021-away": "cruzazul-retro-202122-away",
+  "cruzazul-retro-2021-away": "cruzazul-retro-202425-away",
   "cruzazul-retro-2024-away": "cruzazul-retro-202425-away",
   "cruzazul-retro-1997-home": "cruzazul-retro-199798-home",
   "cruzazul-retro-2010-home": "cruzazul-retro-200910-home",

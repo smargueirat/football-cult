@@ -11249,19 +11249,6 @@ const productsData = [
     ],
   },
 {
-    id: "leeds-retro-201213-home",
-    teamKey: "leeds",
-    season: "2012/13",
-    typeKey: "retro",
-    colorHex: "#FFFFFF",
-    colorHexSecondary: "#1D428A",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay GB", price: 39.99, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/358390800182?_skw=Leeds+United+2012+home+shirt&hash=item5371c19f36%3Ag%3AI9AAAeSwuidpym-j&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "2012-13 Leeds United Home Shirt [Good] L", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/I9AAAeSwuidpym-j/s-l1600.jpg" },
-      { store: "eBay ES", price: 74.75, shipping: 29.16, currency: "EUR", url: "https://www.ebay.es/itm/174941198842?_skw=Leeds+United+home+soccer+jersey&hash=item28bb4ed9fa%3Ag%3AqoQAAOSw3RZaMXkH&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "CAMISETA DE FUTBOL LEEDS UNITED 2012/13 LOCAL (M) MACRON BLANCA MANGA S/", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/qoQAAOSw3RZaMXkH/s-l1600.jpg" },
-    ],
-  },
-{
     id: "leeds-retro-201415-home",
     teamKey: "leeds",
     season: "2014/15",
@@ -11648,19 +11635,6 @@ const productsData = [
       { store: "eBay", price: 45.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/335590840767?_skw=Liverpool+away+soccer+jersey&hash=item4e22c5d9bf%3Ag%3AW7gAAOSw6dJm9VDD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2022-23 Nike Men’s Liverpool Away Soccer Jersey Large L YNWA", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/W7gAAOSw6dJm9VDD/s-l1600.jpg" },
       { store: "eBay GB", price: 17.22, shipping: 2.96, currency: "GBP", url: "https://www.ebay.co.uk/itm/366599393184?_skw=Liverpool+2022+away+shirt&hash=item555b06cfa0%3Ag%3AROcAAeSw3xtqe1bT&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbBgdqWZN2CKWXfVAfyuszRG6lox%2BmOGfOYuhccA5cRANtolsokN2AEoRHoHafGhmO3l97Ic1dOXtNamKKtOu7mTGyWhaMdgDTvJYzV5rpqOm81OlIugvY5t9dfHhWITBkhrlU4V9jAi1nyDoiNIDcpSzKMO6IM71NTClNlZxqFuOs7qKFEEOpwKMEl0x21ZBODOwXMP37EDNW2OyA44t25zsB9QiFO6XuiIuegUU467%2Bg%2B%2FrT0K5H%2BD6lGJWRUsocxQi7jbUjWH78utX1EfsOh5N6EmlcDfd1BfggfAUeZLOZRwaKlFiE5NO%2FbNmj%2FaWA%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Liverpool FC Away Football Shirt 2022/23 Swirl Design Blank Jersey", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/ROcAAeSw3xtqe1bT/s-l1600.jpg" },
       { store: "eBay ES", price: 56.41, shipping: 19.74, currency: "EUR", url: "https://www.ebay.es/itm/227541810262?_skw=Liverpool+away+soccer+jersey&hash=item34fa8c7c56%3Ag%3AwZUAAeSw4g9o4VBk&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Nike Liverpool visitante 2022/23 oficial nueva con etiquetas para hombre mediana", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/wZUAAeSw4g9o4VBk/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "liverpool-retro-200405-home",
-    teamKey: "liverpool",
-    season: "2004/05",
-    typeKey: "retro",
-    colorHex: "#C8102E",
-    colorHexSecondary: "#F6EB61",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327298468757?_skw=Liverpool+home+soccer+jersey&hash=item4c34824b95%3Ag%3AeZ4AAeSw%7EbxqdQqb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool Gerrard #8 2004/05 Reebok Home Jersey UCL Final Football Soccer Shirt", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/eZ4AAeSw~bxqdQqb/s-l1600.jpg" },
-      { store: "eBay GB", price: 29.82, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/237084329072?_skw=Liverpool+2004+home+shirt&hash=item373353c470%3Ag%3ArcYAAeSwlOpqqb2I&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool FC 2004-2005 Home Champions League Shirt. Gerrard 8. Size Large", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/rcYAAeSwlOpqqb2I/s-l1600.jpg" },
     ],
   },
 {
@@ -27311,20 +27285,6 @@ const productsData = [
     ],
   },
 {
-    id: "barcelona-retro-199900-home",
-    teamKey: "barcelona",
-    season: "1999/00",
-    typeKey: "retro",
-    colorHex: "#004D98",
-    colorHexSecondary: "#A50044",
-    jerseyPattern: "stripes",
-    brand: "other",
-    offers: [
-      { store: "eBay", price: 53.52, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127399225442?_skw=FC+Barcelona+home+soccer+jersey+retro+vintage&hash=item1da995e862%3Ag%3AJDgAAeSweIJo2K8C&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona Retro Home Jersey Vintage 100th Anniversary 1899-1999 Sizes M,L,XL", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/JDgAAeSweIJo2K8C/s-l1600.jpg" },
-      { store: "eBay GB", price: 33.98, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/227482550747?_skw=FC+Barcelona+1999+home+shirt&hash=item34f70441db%3Ag%3AUCcAAeSw3EVqhahg&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "FC Barcelona 1999-2000 Centenary Home Football Shirt Medium Kit Pre-Owned", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/UCcAAeSw3EVqhahg/s-l1600.jpg" },
-    ],
-  },
-{
     id: "barcelona-retro-200102-home",
     teamKey: "barcelona",
     season: "2001/02",
@@ -38230,19 +38190,6 @@ const productsData = [
     ],
   },
 {
-    id: "celtic-retro-199395-away",
-    teamKey: "celtic",
-    season: "1993/95",
-    typeKey: "retro",
-    colorHex: "#018749",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/147284917895?_skw=Celtic+FC+away+soccer+jersey&hash=item224add7e87%3Ag%3AupAAAeSwutRqwPzV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Celtic FC Mens Shirt Kit Jersey 1993/95 Away Retro OFFICIAL Soccer Gift", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/upAAAeSwutRqwPzV/s-l1600.jpg" },
-      { store: "eBay GB", price: 39.99, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/406882974686?_skw=Celtic+FC+1993+away+shirt&hash=item5ebc1d7bde%3Ag%3AOtgAAeSwl%7EpquIAV&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Celtic FC Mens Shirt Kit 1993/95 Away Retro OFFICIAL Football Gift", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/OtgAAeSwl~pquIAV/s-l1600.jpg" },
-    ],
-  },
-{
     id: "celtic-retro-1994-away",
     teamKey: "celtic",
     season: "1994",
@@ -46336,18 +46283,6 @@ const productsData = [
     ],
   },
 {
-    id: "argelia-retro-201415-home",
-    teamKey: "argelia",
-    season: "2014/15",
-    typeKey: "retro",
-    colorHex: "#006233",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 20.9, shipping: 18.13, currency: "USD", url: "https://www.ebay.com/itm/326487081746?_skw=Algeria+home+soccer+jersey&hash=item4c04258312%3Ag%3Aw-wAAeSwveRn1QB%7E&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa61JV7W5iQNno2tfKiVQjNbjYWF8nGPV9YpFEsWX6%2Bu%2BcssmYT1e81isL%2B1MvuYDKLWO32ZCXuI2Iu4NMB59ozUV2%2BfsAtsIob0ZeCGt%2B4xeKbXBIaLdwgiXywHU4BRWoQKjweWpmnebWTruZZQGQEn8MwcmUihI%2FHkYj38SY9RU4h2vwURn6DjcMFl47vWSTqlfqI1CNryU5YG33lIxMU%2FBwxZuzb9RVfdy%2FOqwhG4h%2B1zJ%2FQkgI7hd%2FvbxdtWVcKfTHEMOGj4dZUlMuUtXjly8OeuvM0KxEaiBIzmhT5zg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2014-15 Mens Algeria Home Soccer Football Shirt Jersey New/Tags Sizes S M L XL", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/w-wAAeSwveRn1QB~/s-l1600.jpg" },
-    ],
-  },
-{
     id: "argelia-retro-2018-home",
     teamKey: "argelia",
     season: "2018",
@@ -49146,33 +49081,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 86.44, shipping: 23.8, currency: "EUR", url: "https://www.ebay.es/itm/156905517041?_skw=Cruz+Azul+away+soccer+jersey&hash=item24884c2ff1%3Ag%3A2Z4AAOSwZotoAsBI&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta visitante del equipo de fútbol Joma Cruz Azul para hombre temporada 2018 nueva con etiquetas manga S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/2Z4AAOSwZotoAsBI/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "cruzazul-retro-201920-away",
-    teamKey: "cruzazul",
-    season: "2019/20",
-    typeKey: "retro",
-    colorHex: "#0033A0",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 93.49, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/157949939267?_skw=Cruz+Azul+away+soccer+jersey&hash=item24c68cce43%3Ag%3AohMAAeSw-LBqGJz1&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Men's Cruz Azul Away Soccer Jersey 19/20 (Authentic)", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/ohMAAeSw-LBqGJz1/s-l1600.jpg" },
-      { store: "eBay IT", price: 54.47, shipping: 26.36, currency: "EUR", url: "https://www.ebay.it/itm/387465002511?_skw=Cruz+Azul+away+soccer+jersey&hash=item5a36b6be0f%3Ag%3A0a8AAOSw9GxnBy0L&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio giovanile Joma Cruz Azul Away 19-20 bianco-blu", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/0a8AAOSw9GxnBy0L/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "cruzazul-retro-202122-away",
-    teamKey: "cruzazul",
-    season: "2021/22",
-    typeKey: "retro",
-    colorHex: "#0033A0",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 43.22, shipping: 26.33, currency: "EUR", url: "https://www.ebay.es/itm/156298604935?_skw=Cruz+Azul+away+soccer+jersey&hash=item24641f7187%3Ag%3ALRYAAOSwznhmiywZ&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Cruz Azul 2021/22 visitante Joma LigaMX nueva", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/LRYAAOSwznhmiywZ/s-l1600.jpg" },
-      { store: "eBay IT", price: 87.16, shipping: 25.89, currency: "EUR", url: "https://www.ebay.it/itm/275298519093?_skw=Cruz+Azul+away+soccer+jersey&hash=item4019120835%3Ag%3AS6kAAOSw86tiRe-R&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "maglia cruz azul joma 2021-2022 autentica away jersey adulto uomo ", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/S6kAAOSw86tiRe-R/s-l1600.jpg" },
-      { store: "eBay", price: 89.99, shipping: 3.99, currency: "USD", url: "https://www.ebay.com/itm/154642507329?_skw=Cruz+Azul+away+soccer+jersey&hash=item2401696641%3Ag%3Ai7AAAOSwgPBhX1HC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Cruz Azul Officially Licensed Away Jersey 2021 White/Royal", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/i7AAAOSwgPBhX1HC/s-l1600.jpg" },
     ],
   },
 {
