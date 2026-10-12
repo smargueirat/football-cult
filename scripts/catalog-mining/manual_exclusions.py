@@ -1251,6 +1251,61 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "castore-england-26-27-home-replica-shirt",  # England RUGBY (Castore, O2, rose) under inglaterra|home
     "castore-england-26-27-alternate-replica-shirt",  # England RUGBY alternate under inglaterra|away
     "macron-wales-26-27-home-replica-shirt",  # Wales RUGBY (Macron, Vodafone, WRU) under gales|home
+    # --- Daily pass 2026-10-12, ebay_gb_retro.py (cached re-apply must not bring these back) ---
+    "/itm/318408630458",  # arsenal-retro-200607-home: player print Henry; Arsenal Nike 2006/2007 Henry Home Football Shirt Size XL Sphere Dry Ne
+    "/itm/257695379132",  # bayern-retro-201819-home: photo does not match 18/19 kit; Bayern Munich Football Shirt Jersey 2018/19 Home (M) 1682
+    "/itm/406593112863",  # chelsea-retro-200608-home: signed Lampard; FRANK LAMPARD SIGNED CHELSEA 2006/08 HOME SHIRT (ACG CERT AG17429)
+    "/itm/257745284195",  # flamengo-retro-202223-third: player print David Luiz; NEW 2022 2023 Flamengo David Luiz Adidas Third Jersey Shirt Kit Red Ho
+    "/itm/407101470033",  # gladbach-retro-201213-home: long sleeve; Borussia Mönchengladbach L/s  Home Shirt 2012/13 SIZE Small bnwt
+    "/itm/407059313067",  # liverpool-retro-200708-home: signed Gerrard; STEVEN GERRARD SIGNED LIVERPOOL FC 2007/08 HOME SHIRT (ACG CERT AG1921
+    "/itm/277710834096",  # lyon-retro-202021-home: women cut; adidas Ladies Olympique Lyonnais Home Jersey 2020-21 Size M RRP £70 Br
+    "/itm/178458556466",  # manutd-retro-200607-away: long sleeve; Manchester United 2006/07 Away Shirt Long Sleeve Adult Small - NEW 
+    "/itm/377025680146",  # psg-retro-2020-away: player; RARE PARIS ST GERMAIN 2020 AIR JORDAN PINK PURPLE AWAY SHIRT NEYMAR JR
+    "/itm/168647120700",  # realmadrid-retro-2022-home: player print Vinicius; Real Madrid Vinicius Jr 20 Home Jersey 2022 23 Adidas Size 4/M UEFA
+    "/itm/406614009756",  # suiza-retro-2024-home: signed Schar; Fabian Schär switzerland 2024 25 Signed Home Shirt with proof
+    "/itm/820188422363",  # sportingcp-retro-202425-home: player print Gyokeres; BNWT Sporting CP Original Nike Super Bock Gyokeres 2024/25 Home Shirt 
+    "/itm/304421813536",  # francia-retro-2018-away: kids size 7-8; France National Team 2018 Away Football Shirt Size 7-8 Nike Euros Rare
+    "/itm/188458254797",  # inglaterra-retro-1982-away: Admiral x Rolling Stones reproduction; Admiral x The Rolling Stones England 1982 Away Shirt Jersey Red S M L 
+    "/itm/227204390424",  # bayern-retro-202122-away: player print Kimmich; FC Bayern Munich 2021 2022 Away Jersey Shirt Kimmich Adidas Bundesliga
+    "/itm/178482502488",  # bournemouth-retro-202425-home: template render no sponsor; Men's Home Football Shirt Red 2024-2025 Bournemouth Soccer Sport Jerse
+    "/itm/365631068903",  # alemania-retro-200405-home: 4-star modern shirt, not 2004; Germany National Team Jersey 2004/05 Home Football Shirt Piet Adidas S
+    "/itm/306679094295",  # alemania-retro-199496-away: repro/custom/vest; 1994/96 Germany Away Jersey Shirt Mens L Teal Soccer Football Adidas D
+    "/itm/128069241919",  # arsenal-retro-200204-home: repro/custom/vest; Arsenal 2002/04 Home Retro Nike Invincibles Shirt Size L -XL- XXL BNWT
+    "/itm/398358978555",  # chelsea-retro-1997-home: repro/custom/vest; Chelsea 1997 Score Draw Home Football Shirt Blue Men's Large
+    "/itm/127958709973",  # realmadrid-retro-201920-home: player print Benzema; Real Madrid 2019-20 Home Shirt 9 Benzema
+    "/itm/800595642754",  # atleticomadrid-retro-199596-home: repro/custom/vest; Retro Atletico Madrid 1995 1996 Home Football Shirt Puma Marbella Size
+    "/itm/820062025967",  # lazio-retro-199900-away: repro/custom/vest; Lazio 1999/00 Away Large Retro Football Shirt Vintage Jersey
+    "/itm/178464685575",  # acmilan-retro-199596-away: repro/custom/vest; AC MILAN MILAN HISTORICAL AWAY JERSEY 1995/96 Reissue Men’s Size 3XL
+    "/itm/257618321285",  # lazio-retro-202021-home: player print Immobile; Lazio 2020/21 Champions League Home shirt size Medium Immobile
+    # --- Daily pass 2026-10-12, AdidasES: Man Utd 26/27 WARM-UP shirts (4 colourways) were
+    # replacing the Tiro training shirt KC4872 on manutd-training-202627 (different garment) ---
+    "Camiseta_calentamiento_Manchester_United_26-27",
+    # --- Daily pass 2026-10-12, eBay GB current, by title/photo ---
+    "/itm/318767470265",  # gb current liverpool|away: player print Robertson 26; Liverpool 25/26 Away jersey Size Medium Robertson 26 On The Back
+    "/itm/147577777389",  # gb current chelsea|goalkeeper: name print Bonetti No.1; Chelsea 2025-26 Nike Goalkeeper Shirt. XL. Bonetti No.1. NWT
+    "/itm/206607763823",  # gb current everton|third: player print 11 Barry; Everton FC 2025/26 Third Shirt 11 Barry BNWT Authentic Size M
+    "/itm/366705954979",  # gb current arsenal|home: template collage seller, Player Edition at 19 GBP; Arsenal Home Shirt 26/27 Player Edition Size Large Men’s
+    "/itm/168751715810",  # gb current crystalpalace|away: red-blue lightning = 26/27 THIRD (Eagle Wings), away is black; Crystal Palace Away Red and Blue Shirt Adults Medium 26/27 season
+    "/itm/198696181991",  # gb current chelsea|home: sponsorless unverifiable 26/27; Chelsea FC Home Jersey Size M Blue Yellow Aero-Fit Soccer Shirt NEW 26
+    "/itm/318886884048",  # gb current nottinghamforest|away: only photo is the sealed bag; Nottingham Forest Away Shirt Medium 2026
+    "/itm/327383102751",  # gb current ipswichtown|third: long sleeve; Ipswich Town 2025/26 Third Away Long Sleeve Football Shirt XL BNWT
+    "/itm/398446867427",  # gb current ipswichtown|goalkeeper: UK 12 = women/kids size; Ipswich Town Purple Goalkeeper Football Shirt 2025/26 BNWT Size  UK 🇬🇧
+    "/itm/298535172268",  # gb current burnley|home: wire-mesh replica-factory backdrop, 22 GBP; Burnley F.C. Home Jersey 25/26
+    # --- Daily pass 2026-10-12, eBay retro, by title/photo ---
+    "/itm/388693448234",  # retro nyredbulls|home|2023/24: player name Daniel Patrick; Autentica maglia Adidas New York Red Bulls Home 2023/24 Daniel Patrick
+    "/itm/820150453261",  # retro nyredbulls|away|2022/23: kids 14Y; Adidas New York Red Bulls Maglia Calcio Away Blu 2022/2023 Giovanile 1
+    "/itm/265089699630",  # retro lafc|home|2020: kids; Maglia calcio Adidas MLS Los Angeles FC home 2020 giovanile nuova con 
+    "/itm/366628236890",  # retro lafc|home|2020: long sleeve; Camiseta de manga larga LAFC 2020 Home nueva con etiquetas
+    "/itm/226806591834",  # retro cerclebrugge|home|2013/14: long sleeve; Maglia calcio nuova con etichette Cercle Brugge 2013/14 L Home Masita 
+    "/itm/226806591834",  # retro cerclebrugge|home|2013/14: long sleeve; NUEVO CON ETIQUETAS CERCLE BRUGGE 2013/14 L Home Masita L/S Camiseta d
+    "/itm/198341250478",  # retro sandiegofc|away|2024: SDFC first season is 2025, not 2024 (10-09/10-11 class); Adidas San Diego FC 2024 maglia away 'bianca' nuova con etichetta tagl
+    "/itm/318398065998",  # retro sandiegofc|away|2024: SDFC first season is 2025, not 2024 (10-09/10-11 class); Adidas x San Diego FC 24/25 Autentica Maglia Away Bianca - Taglia - X-
+    "/itm/157915621235",  # retro portsmouth|home|2015/16: long sleeve; CAMISETA DE FUTBOL LOCAL PORTSMOUTH 2015/2016 SONDICO TALLA L ADULTO L
+    "/itm/317858904420",  # retro dynamokyiv|away|2011/13: signed match-issue Shevchenko; DYNAMO KIEV SHEVCHENKO 2011/2013 MATCH ISSUE FOOTBALL JERSEY AWAY ADID
+    "/itm/236934666665",  # retro dynamokyiv|away|2017/18: long sleeve; Dynamo Kyiv 2017 2018 Away Shirt Longsleeve Football Soccer Jersey Adi
+    "/itm/196285888957",  # retro dynamokyiv|away|2013/14: long sleeve (photo); Dynamo Kiev 2013 - 2014 Away football Adidas jersey size Small
+    "/itm/800761078303",  # retro lafc|home|2021/22: long sleeve; Adidas Maglia Calcio Uomo Los Angeles FC Home Manica Lunga 2021/22 Tag
+    "/itm/800761078303",  # retro lafc|home|2021/22: long sleeve; Camiseta de fútbol de manga larga para hombre Adidas Los Angeles FC Ho
 ]
 
 
