@@ -155,7 +155,7 @@ export default function HeroCarousel() {
               abajo (y de paso centra la foto en vez de pegarla arriba
               con object-top, que en "contain" no tiene ningún efecto
               porque no había margen vertical para desplazar). */}
-          {/* SECTION_HERO_TRANSFORM (sólo botas) va en este wrapper, no
+          {/* SECTION_HERO_TRANSFORM (botas y mujer) va en este wrapper, no
               en la foto -- la foto ya tiene su propia animación
               (hero-photo-kenburns) puesta por transform, y un transform
               inline en el mismo elemento se pisaría con las keyframes

@@ -46,11 +46,13 @@ export const SECTION_PHOTOS: string[] = [
 // (news.adidas.com/football/adidas-and-real-madrid-reveal-white-home-kit-rooted-in-tradition-for-2024-25-season)
 // Retro: adidas + Arsenal, "Bring-Back" 1992-94 (colección retro real)
 // (news.adidas.com/football/adidas-and-arsenal-launch-iconic-1992-1994-bring-back-home-jersey)
-// Mujer: adidas + Arsenal Women, segunda equipación real puesta por
-// varias jugadoras del plantel (Blackstenius, Miedema, Maanum, etc.),
-// repartidas en todo el ancho de la foto -- así que siempre hay alguna
-// con la camiseta bien visible caiga donde caiga el degradé del texto
-// (news.adidas.com/football/adidas-and-arsenal-unveil-first-away-kit-with-stella-mccartney-for-arsenal-women)
+// Mujer: Athenea del Castillo (Real Madrid Femenino) con la tercera
+// equipación real 2023/24 puesta, fondo amarillo de estudio de la
+// campaña -- reemplaza al grupo de Arsenal Women en la rotación
+// quincenal (2026-10-12), Real Madrid pega más en una audiencia de habla
+// hispana. Ella está casi centrada en la foto original: se corre con
+// SECTION_HERO_TRANSFORM (ver ahí) para sacarla del degradé
+// (news.adidas.com/football/adidas-and-real-madrid-celebrate-iconic-crest-and-hallowed-nights-with-bold-new-third-kit)
 // Niños: chico real con la camiseta infantil de Real Madrid puesta,
 // de la sesión "family photo" del lanzamiento 2023/24 (reemplazo
 // pedido explícitamente, la foto de Son Heung-Min no gustó)
@@ -79,7 +81,7 @@ export const HERO_PHOTOS: string[] = [
   SECTION_PHOTOS[0],
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/669240_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/705622_v2.jpg",
-  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/650936_v2.jpg",
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/647944_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/644816.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/696580.jpg",
   SECTION_PHOTOS[6],
@@ -125,13 +127,15 @@ export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cov
 //   borde de la zona visible (probado top/30%/50%/70%/bottom).
 // Guantes/pelotas: sin efecto real con fit "contain" (object-position
 // sólo importa con "cover"), queda "center" como valor sin uso.
+// - Mujer: "50% 15%" deja la cara arriba y baja lo justo para que en
+//   celular entre el "Emirates" del pecho antes del degradé de abajo.
 // Tickets: foto ya panorámica (1920x1080, casi el ratio real del
 // banner) con el trofeo+pelota en el medio vertical, ni arriba ni
 // abajo del todo -- "50% 40%" deja algo de margen para el degradé
 // oscuro de abajo sin cortar el trofeo por arriba.
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50% 40%", "50% 50%", "center", "center", "50% 40%", "center"];
+export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "50% 15%", "50% 40%", "50% 50%", "center", "center", "50% 40%", "center"];
 
-// Transform extra (solo Botas): pedido explícito del usuario -- quería
+// Transform extra (Botas y Mujer): pedido explícito del usuario -- quería
 // ver más de las dos botas, no sólo la suela asomando en el borde del
 // degradé. En un recuadro tan ancho como el nuestro, object-position
 // horizontal no tiene ningún efecto real (cover ya usa el 100% del
@@ -146,11 +150,19 @@ export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "top", "50%
 // escala x 0%/6%/8%/12% de desplazamiento): 1.2/8% mostraba las dos
 // botas con buen detalle (raya de adidas en la de arriba, suela con
 // colores en la de abajo) sin comerse todo el degradé de cielo.
+// Mujer (2026-10-12): mismo truco -- la jugadora está casi centrada y en
+// escritorio quedaba bajo el degradé. Probado 1.15/15%, 1.2/8% y 1.3/11%
+// con el degradé real a 1736x460 y 360x300: 1.15/15% dejaba una franja
+// vacía a la izquierda en celular (el desplazamiento supera el margen
+// que crea la escala), 1.2/8% dejaba media cara en el degradé; 1.3/11%
+// muestra escudo y "RMCF" del cuello fuera del degradé en escritorio y
+// la camiseta entera en celular, sin franja vacía.
 export const SECTION_HERO_TRANSFORM: (string | undefined)[] = [
   undefined,
   undefined,
   undefined,
   undefined,
+  "scale(1.3) translateX(11%)",
   undefined,
   "scale(1.2) translateX(8%)",
   undefined,
